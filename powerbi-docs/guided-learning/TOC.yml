@@ -1,0 +1,16 @@
+- name: Komma igång
+  href: 'gettingstarted.yml#step-0'
+- name: Hämta data
+  href: 'gettingdata.yml#step-0'
+- name: Modellering
+  href: 'modeling.yml#step-0'
+- name: Visualiseringar
+  href: 'visualizations.yml#step-0'
+- name: Utforska data
+  href: 'exploringdata.yml#step-0'
+- name: Power BI och Excel
+  href: 'powerbiandexcel.yml#step-0'
+- name: Publicera och dela
+  href: 'publishingandsharing.yml#step-0'
+- name: Introduktion till DAX
+  href: 'introductiontodax.yml#step-0'

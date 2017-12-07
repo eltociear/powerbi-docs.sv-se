@@ -1,0 +1,74 @@
+documentType: Tutorial
+title: Modellering
+metadata:
+  title: Modellering | Microsoft Power BI
+  description: "Ansluta till flera datakällor och kombinera dem sedan på ett sätt som skapar en unik modell som passar dina behov."
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: visualizations
+  nextTutorialTitle: Visualiseringar
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: "Ansluta till flera datakällor och kombinera dem sedan på ett sätt som skapar en unik modell som passar dina behov.\n"
+  ms.openlocfilehash: 6486ec39aa624f4387c6006637b9b77e47fe0c2a
+  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 11/15/2017
+- title: Introduktion till att modellera data
+  durationInMinutes: 3
+  content: >
+    > [!Video https://www.youtube.com/embed/VM1K15aEnm4?rel=0]
+
+
+    [!INCLUDE [](includes/2-1-intro-modeling-data.md)]
+- title: Hur du hanterar dina datarelationer
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/MqNX5olPGGI?rel=0]
+
+
+    [!INCLUDE [](includes/2-2-manage-data-relationships.md)]
+- title: "Skapa beräknade kolumner"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/GarBXef0Vew?rel=0]
+
+
+    [!INCLUDE [](includes/2-3-create-calculated-columns.md)]
+- title: Optimera datamodeller
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/tDcrfnjjlgk?rel=0]
+
+
+    [!INCLUDE [](includes/2-4-optimize-data-models.md)]
+- title: "Skapa beräknade mått"
+  durationInMinutes: 14
+  content: >
+    > [!Video https://www.youtube.com/embed/yn2bXVQJLx8?rel=0]
+
+
+    [!INCLUDE [](includes/2-5-create-calculated-measures.md)]
+- title: "Skapa beräknade tabeller"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/aKX1E3krl4I?rel=0]
+
+
+    [!INCLUDE [](includes/2-6-create-calculated-tables.md)]
+- title: Utforska dina tidsbaserade data
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/MNAaHw4PxzE?rel=0]
+
+
+    [!INCLUDE [](includes/2-6a-explore-time-based-data.md)]
+- content: "Du har slutfört avsnittet **Modellering** i den interaktiva utbildningen för Microsoft Power BI.\0"

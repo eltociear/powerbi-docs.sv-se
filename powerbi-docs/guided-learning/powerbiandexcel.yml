@@ -1,0 +1,60 @@
+documentType: Tutorial
+title: Power BI och Excel
+metadata:
+  title: Power BI och Excel | Microsoft Power BI
+  description: "Använd Excel och Power BI tillsammans och skapa kraftfulla kopplade rapporter och visuella objekt."
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: publishingandsharing
+  nextTutorialTitle: Publicera och dela
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: "Använd Excel och Power BI tillsammans och skapa kraftfulla kopplade rapporter och visuella objekt.\n"
+  ms.openlocfilehash: 2d734b12d3ff197addff0a0cf39b1f399d70e3a6
+  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 11/15/2017
+- title: "Introduktion till att använda Excel-data i Power BI"
+  durationInMinutes: 2
+  content: >
+    > [!Video https://www.youtube.com/embed/TWVqSlkjVPw?rel=0]
+
+
+    [!INCLUDE [](includes/5-1-intro-excel-data.md)]
+- title: Ladda upp Excel-data till Power BI
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/8-z6QoaNL3A?rel=0]
+
+
+    [!INCLUDE [](includes/5-2-upload-excel.md)]
+- title: Importera Power View och Power Pivot till Power BI
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/nVkpj0tB4Yk?rel=0]
+
+
+    [!INCLUDE [](includes/5-3-import-powerpivot-powerview.md)]
+- title: "Ansluta OneDrive för företag till Power BI"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/WK7OZF-hVZA?rel=0]
+
+
+    [!INCLUDE [](includes/5-4-connect-onedrive-for-business.md)]
+- title: "Excel i Power BI – sammanfattning"
+  durationInMinutes: 2
+  content: >
+    > [!Video https://www.youtube.com/embed/HNhK9XMuyO4?rel=0]
+
+
+    [!INCLUDE [](includes/5-8-excel-data-summary.md)]
+- content: "Du har slutfört avsnittet **Power BI och Excel** i den interaktiva utbildningen för Microsoft Power BI.\0"

@@ -1,0 +1,95 @@
+documentType: Tutorial
+title: Utforska data
+metadata:
+  title: Utforska data | Microsoft Power BI
+  description: "Lär dig att hitta, ansluta till och interagera med data i Power BI."
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: powerbiandexcel
+  nextTutorialTitle: Power BI och Excel
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: "Lär dig att hitta, ansluta till och interagera med data i Power BI.\n"
+  ms.openlocfilehash: 04fc3f0a47ab4194031b6e2bb65eacc0ac89d5f5
+  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 11/15/2017
+- title: "Introduktion till Power BI-tjänsten"
+  durationInMinutes: 2
+  content: >
+    > [!Video https://www.youtube.com/embed/B2vd4MQrz4M?rel=0]
+
+
+    [!INCLUDE [](includes/4-0-intro-power-bi-service.md)]
+- title: Snabba insikter i Power BI
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/et_MLSL2sA8?rel=0]
+
+
+    [!INCLUDE [](includes/4-1a-quick-insights.md)]
+- title: Skapa och konfigurera en instrumentpanel
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/lJKgWnvl6bQ?rel=0]
+
+
+    [!INCLUDE [](includes/4-2-create-configure-dashboards.md)]
+- title: "Ställa frågor om dina data med naturligt språk"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/qMf7OLJfCz8?rel=0]
+
+
+    [!INCLUDE [](includes/4-3-asking-questions-natural-language.md)]
+- title: "Skapa anpassade förslag på frågor och svar"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/E1mIAyEXuF4?rel=0]
+
+
+    [!INCLUDE [](includes/4-3a-suggested-questions.md)]
+- title: Dela instrumentpaneler med din organisation
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/0tUwn8DHo3s?rel=0]
+
+
+    [!INCLUDE [](includes/4-4-share-dashboards.md)]
+- title: "Visa visuell information och paneler i helskärmsläge"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/LoApjhwTse0?rel=0]
+
+
+    [!INCLUDE [](includes/4-4b-display-visuals-tiles-fullscreen.md)]
+- title: "Redigera paneldetaljer och lägga till widgetar"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/XhqVbHqd5jQ?rel=0]
+
+
+    [!INCLUDE [](includes/4-4d-change-tile-details.md)]
+- title: "Få mer utrymme på instrumentpanelen"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/c31gZkyvC54?rel=0]
+
+
+    [!INCLUDE [](includes/4-4e-get-more-dashboard-space.md)]
+- title: Installera och konfigurera en personlig gateway
+  durationInMinutes: 11
+  content: >
+    > [!Video https://www.youtube.com/embed/xjcO5tNvjGs?rel=0]
+
+
+    [!INCLUDE [](includes/4-6-install-configure-personal-gateway.md)]
+- content: "Du har slutfört avsnittet **Utforska data** i den interaktiva utbildningen för Microsoft Power BI.\0"

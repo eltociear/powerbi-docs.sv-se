@@ -1,0 +1,51 @@
+documentType: Tutorial
+title: "Komma igång"
+metadata:
+  title: "Komma igång | Microsoft Power BI"
+  description: "Lär dig vad Power BI är, hur dess komponenter samspelar och hur du kan använda dem för att få insikter i dina data."
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: gettingdata
+  nextTutorialTitle: "Hämta data"
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: "Lär dig vad Power BI är, hur dess komponenter samspelar och hur du kan använda dem för att få insikter i dina data.\n"
+  ms.openlocfilehash: 398c10dfbcd935276b98f3d50df172d6b0d2af48
+  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 11/15/2017
+- title: Introduktion till BI
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](includes/0-0-what-is-power-bi.md)]
+- title: "Använda Power BI"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/1c01r_pAZdk?rel=0]
+
+
+    [!INCLUDE [](includes/0-1-intro-using-power-bi.md)]
+- title: Byggstenarna i Power BI
+  durationInMinutes: 6
+  content: >
+    [!INCLUDE [](includes/0-0b-building-blocks-power-bi.md)]
+- title: "En titt på Power BI-tjänsten"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/5srP3h3RJf8?rel=0]
+
+
+    [!INCLUDE [](includes/0-3-dashboards-cloud-services.md)]
+- title: "Sammanfattning och nästa steg"
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](includes/0-4-summary-of-intro-to-power-bi.md)]
+- content: "Du har slutfört avsnittet **Komma igång** i den interaktiva utbildningen för Microsoft Power BI.\0"
