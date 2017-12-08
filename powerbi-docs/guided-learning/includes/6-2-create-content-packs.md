@@ -1,4 +1,4 @@
-Under den här lektionen skapar vi ett *innehållspaket* med befintliga artefakter som vi redan har i Power BI och delar dem sedan med kollegor.
+Under den här lektionen skapar vi ett *innehållspaket* med befintliga artefakter som vi redan har i Power BI och delar dem sedan med kollegor. 
 
 I **Min arbetsyta** jag har en instrumentpanel, rapporten visas undertill, och datauppsättningen. Jag vill dela dem som ett paket med personer i min organisation så att de kan återanvända dem.
 
