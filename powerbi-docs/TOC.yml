@@ -252,8 +252,6 @@
           href: service-insight-types.md
         - name: Optimera dina data för snabba insikter i Power BI
           href: service-insights-optimize.md
-        - name: Visa en panel på instrumentpanelen i helskärmsläge (TV-läge)
-          href: service-tile-fullscreen-mode.md
         - name: Aktuella instrumentpaneler i Power BI
           href: service-dashboard-featured.md
         - name: Skapa en telefonvy av en instrumentpanel
