@@ -7,7 +7,7 @@ Som alltid i den här kursen har utbildningen samma struktur som arbetsflödet i
 ## <a name="an-overview-of-power-bi-desktop"></a>En översikt över Power BI Desktop
 Power BI Desktop är ett verktyg för att ansluta till, rensa och visualisera dina data. Med Power BI Desktop kan du ansluta till data och sedan modellera och visualisera den på olika sätt. De flesta användare som arbetar med Business Intelligence-projekt kommer att tillbringa merparten av sin tid med Power BI Desktop.
 
-Du kan hämta Power BI Desktop [från webben](http://go.microsoft.com/fwlink/?LinkID=521662) eller från Power BI-tjänsten. Välj först knappen med nedåtpilen i det övre högra hörnet av Power BI och sedan Power BI Desktop.
+Du kan hämta Power BI Desktop [från webben](http://go.microsoft.com/fwlink/?LinkID=521662), du kan också installera **Power BI Desktop** som en app från [**Windows Store**](http://aka.ms/pbidesktopstore), eller så kan du hämta den från Power BI-tjänsten. För att hämta **Power BI Desktop** i tjänsten så väljer du bara nedpilen på den övre högra sidan av Power BI och välj sedan Power BI Desktop.
 
 ![](media/1-1-overview-of-power-bi-desktop/1-1_1.png)
 
