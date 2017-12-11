@@ -784,8 +784,8 @@
           href: desktop-inline-hierarchy-labels.md
         - name: Använda numeriskt intervallutsnitt
           href: desktop-slicer-numeric-range.md
-        - name: Använda relativt datumutsnitt
-          href: desktop-slicer-filter-date-range.md
+        - name: Skapa ett dynamiskt utsnitt som du kan ändra storlek på
+          href: power-bi-slicer-filter-responsive.md
         - name: Skapa anpassade Power BI Cortana-svarskort
           href: service-cortana-answer-cards.md
         - name: Säkerhet på radnivå
