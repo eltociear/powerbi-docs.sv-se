@@ -32,5 +32,5 @@ Men om du vill kan du redigera instrumentpanelen, rapporten och t.o.m. dataupps�
 
 Så innehållspaketen representerar ett enkelt sätt på vilket du kan återanvända innehåll som har skapats av andra personer i din organisation.
 
-Vidare till nästa lektion: [Skapa ett innehållspaketet i Power BI](6-4-update-content-pack.md).
+Till nästa lektion!
 

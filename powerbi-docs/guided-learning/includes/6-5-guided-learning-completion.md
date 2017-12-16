@@ -4,13 +4,13 @@ Du klarade det! **Grattis!** Du har slutfört kursen **Interaktiv utbildning** f
 
 Detta är det sista avsnittet (och det sista ämnet, om du inte vill veta mer om DAX) i kursen, så om du har gått igenom alla dessa avsnitt i ordning, kan du känna dig nöjd med dig själv. Bra jobbat! Du är nu väl insatt i alla dessa **viktiga koncept**:
 
-* Vad [Power BI är](0-0-what-is-power-bi.md)
-* [Byggstenarna](0-0b-building-blocks-power-bi.md) i Power BI
-* [Hämta](1-2-connect-to-data-sources-in-power-bi-desktop.md) och [modellera](2-1-intro-modeling-data.md) data
-* [Visualiseringar](3-1-intro-visualizations.md)
-* [Utforska data](4-0-intro-power-bi-service.md) i Power BI-tjänsten
-* Använda [Excel och Power BI](5-1-intro-excel-data.md) tillsammans
-* Och [publicera och dela](6-0-intro-content-packs-groups.md) ditt arbete
+* Vad [Power BI är](../gettingstarted.yml#step-1)
+* [Byggstenarna](../gettingstarted.yml#step-3) i Power BI
+* [Hämta](../gettingdata.yml#step-3) och [modellera](../modeling.yml#step-1) data
+* [Visualiseringar](../visualizations.yml#step-1)
+* [Utforska data](../exploringdata.yml#step-1) i Power BI-tjänsten
+* Använda [Excel och Power BI](../powerbiandexcel.yml#step-1) tillsammans
+* Och [publicera och dela](../publishingandsharing.yml#step-1) ditt arbete
 
 Det är mycket kunskaper och nu när du har allt detta i huvudet är du redo att använda det! Här följer några **länkar för att hämta filer** eller för att ansluta din webbläsare **till Power BI-tjänsten**:
 
