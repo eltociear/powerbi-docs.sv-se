@@ -15,15 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 11/28/2017
 ms.author: asaxton
-ms.openlocfilehash: a17bd787a37b7e26ac0b01ab5fc595b835e50b58
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 49df0d0a44ceae3e36f45f6523f39a0b5bb1b6a0
+ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Lär dig hur du kan övervaka och undersöka åtgärder genom att använda granskning med Power BI. Du kan använda säkerhets- och efterlevnadscentret eller PowerShell.
@@ -34,45 +35,43 @@ Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpane
 
 > [!NOTE]
 > Granskningsfunktionen i Power BI är tillgänglig för förhandsvisning i alla dataområden.
-> 
-> 
 
 ## <a name="enabling-auditing-functionality-in-the-power-bi-admin-portal"></a>Aktivera granskningsfunktionen i Power BI-administratörsportalen
+
 Du måste aktivera granskning för din organisation för att kunna arbeta med rapporterna. Du kan göra detta i administratörsportalens klientinställningar.
 
 1. Välj **kugghjulsikonen** i det övre högra hörnet.
+
 2. Välj **Administratörsportalen**.
    
    ![](media/service-admin-auditing/powerbi-admin.png)
+
 3. Välj **Klientinställningar**.
    
    ![](media/service-admin-auditing/powerbi-admin-tenant-settings.png)
+
 4. Aktivera **Skapa granskningsloggar för intern aktivitetsgranskning och efterlervnadssysften**.
+
 5. Välj **Tillämpa**.
 
 Power BI börjar logga olika aktiviteter som dina användare utför i Power BI. Det dröjer upp till 48 timmar innan loggarna visas i O365 säkerhets- och efterlevnadscenter. Mer information om vilka aktiviteter som loggas finns i [Lista över aktiviteter som granskas av Power BI](#list-of-activities-audited-by-power-bi).
 
-## <a name="licensing-requirements"></a>Licenskrav
-Granskning är en funktion i Power BI Pro, och granskningshändelser är bara tillgängliga för Power BI Pro-användare.  Användare med (kostnadsfria) Power BI-licenser visas som **Fri användare**.
-
-Mer information om hur du kan skaffa och tilldela Power BI Pro-licenser till användare i din organisation finns i [Köpa Power BI Pro](service-admin-purchasing-power-bi-pro.md).
-
-Mer information om hur du begränsar fria användare från att registrera sig finns i [Aktivera eller inaktivera enskilda användaren från att registrera sig i Azure Active Directory](service-admin-service-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory).
-
 > [!NOTE]
 > Om du vill aktivera granskning för Power BI i din klient, så måste du ha minst en Exchange-postlådelicens i din klient.
-> 
-> 
 
 ## <a name="accessing-your-audit-logs"></a>Öppna dina granskningsloggar
+
 Om du vill granska dina Power BI-loggar måste du gå till säkerhets- och efterlevnadscentret i O365.
 
 1. Välj **kugghjulsikonen** i det övre högra hörnet.
+
 2. Välj **Administratörsportalen**.
    
    ![](media/service-admin-auditing/powerbi-admin.png)
+
 3. Välj **Granskningsloggar**.
-4. Välj **Gå till administrationscentret för O365**.
+4. 
+5. Välj **Gå till administrationscentret för O365**.
    
    ![](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
@@ -80,43 +79,43 @@ Du kan också bläddra till [Office 365 | Säkerhet och efterlevnad](https://pro
 
 > [!NOTE]
 > Om du vill ge åtkomst till granskningsloggen för icke-administratörskonton, så måste du tilldela behörigheter i administrationscentret för Exchange Online. Du skulle t.ex. kunna tilldela en befintlig rollgrupp, som Organisationens ledning, en användare, eller så skulle du kunna skapa en ny rollgrupp med rollen Granskningsloggar. Mer information finns i [Behörigheter i Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
-> 
-> 
 
 ## <a name="search-only-power-bi-activities"></a>Sök endast efter Power BI-aktiviteter
+
 Du kan begränsa resultaten till enbart Power BI-aktiviteter genom att göra följande.
 
 1. Välj den nedrullningsbara listrutan för **Aktiviteter** under **Sök** på sidan **Sök i granskningslogg**.
+
 2. Välj **PowerBI-aktiviteter**.
    
    ![](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+
 3. Stäng markeringsrutan genom att klicka någonstans utanför den.
 
 Dina sökningar filtreras nu enbart efter Power BI-aktiviteter.
 
 ## <a name="search-the-audit-logs-by-date"></a>Sök efter datum i granskningsloggarna
+
 Du kan söka i loggarna efter datumintervall med hjälp av fälten Startdatum och Slutdatum. De senaste sju dagarna markeras som standard. Datum och tid som visas i UTC-format (Coordinated Universal Time). Det maximala datumintervall som du kan ange är 90 dagar. Ett felmeddelande visas om det valda datumintervallet är längre än 90 dagar.
 
 > [!NOTE]
 > Om du använder det maximala datumintervallet 90 dagar, så välj den aktuella tiden som startdatum. I annat fall får du ett felmeddelande som säger att startdatumet är senare än slutdatumet. Om du har aktiverat granskning under de senaste 90 dagarna, kan det maximala datumintervallet inte starta före det datum då granskningen aktiverades.
-> 
-> 
 
 ![](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Sök i granskningsloggarna efter användare
+
 Du kan söka efter granskningsloggposter för aktiviteter som utförts av specifika användare. Om du vill göra detta, så ange ett eller flera användarnamn i fältet Användare.  Det handlar om de användarnamn som användarna använder när de loggar in på Power BI. Det ser ut som en e-postadress.
 Om du lämnar den här rutan tom returneras poster för alla användare (och tjänstkonton) i organisationen.
 
 ![](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="viewing-search-results"></a>Visa sökresultat
+
 När du klickar på sökknappen läses sökresultaten in och strax därpå visas de under Resultat. När sökningen är klar visas antalet funna träffar. 
 
 > [!NOTE]
 > Högst 1000 händelser visas. Om fler än 1000 händelser uppfyller sökvillkoren visas de 1000 senaste händelserna.
-> 
-> 
 
 Resultaten innehåller följande information om varje händelse som returneras av sökningen.
 
@@ -131,57 +130,39 @@ Resultaten innehåller följande information om varje händelse som returneras a
 
 > [!NOTE]
 > Sortera resultaten genom att välja en kolumnrubrik under Resultat. Du kan sortera resultaten från A till Ö eller Ö till A. Klicka på rubriken Datum om du vill sortera resultaten från tidigast till senast eller senast till tidigast.
-> 
-> 
 
 ## <a name="view-the-details-for-an-event"></a>Visa information om en händelse
+
 Du kan visa mer information om en händelse genom att markera händelseposten i listan med sökresultat. En sida med information visas med detaljerade egenskaper från händelseposten. Vilka egenskaper som visas beror på i vilken Office 365-tjänst som händelsen inträffar. Om du vill visa ytterligare information väljer du **Mer information**.
 
 Följande tabell innehåller information om vad som kan visas.
 
-| **Parameter** | **Beskrivning** |
-| --- | --- |
-| ID |En granskningsposts unika identifierare. |
-| RecordType |Den typ av åtgärd som indikeras av posten. Tabellen AuditLogRecordType innehåller information om de olika typerna av poster i granskningsloggen. |
-| CreationTime |Det datum och den tid enligt UTC (Coordinated Universal Time) då användaren utförde aktiviteten. |
-| Operation |Namnet på användarens eller administratörens aktivitet. |
-| OrganizationId |GUID för organisationens Office 365-tjänst där händelsen inträffade. |
-| UserType |Den typ av användaren som utförde åtgärden. Tabellen Användartyp innehåller information om olika användartyper. |
-| UserKey |Unikt Passport-ID för den användare som utförde aktiviteten. |
-| ResultStatus |Anger om åtgärden (som anges i egenskapen Operation) lyckades eller inte. De möjliga värdena är Succeeded, PartiallySucceded eller Failed. |
-| ObjectId |Den fullständiga sökvägen för den fil eller mapp som används av användaren i samband med en SharePoint- eller OneDrive för företag-aktivitet. |
-| UserId |UPN (User Principal Name) för den användare som utförde åtgärden (anges i egenskapen Operation) som resulterade i posten loggades, t.ex. my_name@my_domain_name. Observera att poster för aktiviteter som utförs av systemkonton (som SHAREPOINT\system eller NT AUTHORITY\SYSTEM) också inkluderas. |
-| ClientIp |IP-adressen för den enhet som användes när aktiviteten loggades. IP-adressen visas i IPv4- eller IPv6-adressformat. |
-
-Följande tabell innehåller information om händelser som kan visas.
-
-| **Händelse** | **Beskrivning** | **Ytterligare information** |
+| **Parameter eller händelse** | **Beskrivning** | **Ytterligare information** |
 | --- | --- | --- |
-| Power BI-rapport hämtades |Den här aktiviteten loggas varje gång som en rapport hämtas |Rapportnamn, namn på datauppsättning |
-| Skapa rapport |Den här aktiviteten loggas varje gång som en ny rapport skapas. |Rapportnamn, namn på datauppsättning |
+| Power BI-rapport hämtades |Den här aktiviteten loggas varje gång en rapport hämtas |Rapportnamn, namn på datauppsättning |
+| Skapa rapport |Den här aktiviteten loggas varje gång en ny rapport skapas. |Rapportnamn, namn på datauppsättning |
 | Redigera rapport |Den här aktiviteten loggas varje gång som en rapport redigeras. |Rapportnamn, namn på datauppsättning |
-| Skapa datauppsättning |Den här aktiviteten loggas varje gång som en datauppsättning skapas. |Namn på datauppsättning, DataConnectivityMode |
-| Ta bort datauppsättning |Den här aktiviteten loggas varje gång som en datauppsättning tas bort. |Namn på datauppsättning, DataConnectivityMode |
-| Skapa Power BI-app |Den här aktiviteten loggas varje gång som en Power BI-app skapas |Appnamn, behörigheter, namn på arbetsyta |
-| Installera Power BI-app |Den här aktiviteten loggas varje gång som en Power BI-app installeras |Appnamn |
-| Uppdatera Power BI-app |Den här aktiviteten loggas varje gång som en Power BI-app uppdateras |Appnamn, behörigheter, namn på arbetsyta |
-| En utökad utvärderingsversion av Power BI har startats |Den här aktiviteten loggas varje gång som en användare accepterar den utökade Pro-utvärderingsversionen som körs fram till den 31 maj 2018 | |
-| Power BI-datauppsättning analyserades |Den här aktiviteten loggas varje gång som en Power BI-datauppsättning analyseras i Excel. | |
-| Power BI-gateway skapades |Den här aktiviteten loggas varje gång som en ny gateway skapas. |Gatewaynamn, gatewaytyp |
-| Power BI-gateway togs bort |Den här aktiviteten loggas varje gång som en gateway tas bort. |Gatewaynamn, gatewaytyp |
-| En datakälla lades till i Power BI-gatewayen |Den här aktiviteten loggas varje gång som en datakälla läggs till i gatewayen |Gatewaynamn, gatewaytyp, namn på datakälla, typ av datakälla |
-| En datakälla togs bort från Power BI-gatewayen |Den här aktiviteten loggas varje gång som en datakälla tas bort från en gateway |Gatewaynamn, gatewaytyp, namn på datakälla, typ av datakälla |
-| Power BI gateway-administratörer ändrades |Den här aktiviteten loggas varje gång som administratörer för en gateway ändras (läggs till eller tas bort) |Gatewaynamn, tillagda användare, borttagna användare |
-| Användare av Power IB-gatewayens datakälla ändrades |Den här aktiviteten loggas varje gång som en gateways användare ändras (läggs till eller tas bort) |Gatewaynamn, tillagda användare, borttagna användare |
-| SetScheduledRefresh |Den här aktiviteten loggas varje gång som en ny uppdatering schemaläggs för en datauppsättning |Namn på datauppsättning, uppdateringsfrekvens (i minuter) |
+| Skapa datauppsättning |Den här aktiviteten loggas varje gång en datauppsättning skapas. |Namn på datauppsättning, DataConnectivityMode |
+| Ta bort datauppsättning |Den här aktiviteten loggas varje gång en datauppsättning raderas. |Namn på datauppsättning, DataConnectivityMode |
+| Skapa Power BI-app |Den här aktiviteten loggas varje gång en Power BI-app skapas |Appnamn, behörigheter, namn på arbetsyta |
+| Installera Power BI-app |Den här aktiviteten loggas varje gång en Power BI-app installeras |Appnamn |
+| Uppdatera Power BI-app |Den här aktiviteten loggas varje gång en Power BI-app uppdateras |Appnamn, behörigheter, namn på arbetsyta |
+| En utökad utvärderingsversion av Power BI har startats |Den här aktiviteten loggas varje gång en användare accepterar den utökade Pro-utvärderingsversionen som körs fram till den 31 maj 2018 | |
+| Power BI-datauppsättning analyserades |Den här aktiviteten loggas varje gång en Power BI-datauppsättning analyseras i Excel. | |
+| Power BI-gateway skapades |Den här aktiviteten loggas varje gång en ny gateway skapas. |Gatewaynamn, gatewaytyp |
+| Power BI-gateway togs bort |Den här aktiviteten loggas varje gång en gateway tas bort. |Gatewaynamn, gatewaytyp |
+| En datakälla lades till i Power BI-gatewayen |Den här aktiviteten loggas varje gång en datakälla läggs till i gatewayen |Gatewaynamn, gatewaytyp, namn på datakälla, typ av datakälla |
+| En datakälla togs bort från Power BI-gatewayen |Den här aktiviteten loggas varje gång en datakälla tas bort från en gateway |Gatewaynamn, gatewaytyp, namn på datakälla, typ av datakälla |
+| Power BI gateway-administratörer ändrades |Den här aktiviteten loggas varje gång administratörer för en gateway ändras (läggs till eller tas bort) |Gatewaynamn, tillagda användare, borttagna användare |
+| Användare av Power IB-gatewayens datakälla ändrades |Den här aktiviteten loggas varje gång användare för en gateway ändras (läggs till eller tas bort) |Gatewaynamn, tillagda användare, borttagna användare |
+| SetScheduledRefresh |Den här aktiviteten loggas varje gång en ny uppdatering schemaläggs för en datauppsättning |Namn på datauppsättning, uppdateringsfrekvens (i minuter) |
 
 ## <a name="using-powershell-to-search"></a>Söka med PowerShell
+
 Du kan använda PowerShell för att få åtkomst till granskningsloggarna utifrån din inloggning. Detta gör du genom att öppna Exchange Online. Här följer ett exempel på ett kommando som används för att hämta poster till Power BI-granskningsloggen.
 
 > [!NOTE]
 > Om ditt konto ska kunna använda kommandot New-PSSession måste det ha tilldelats en Exchange Online-licens och du måste ha åtkomst till din klients granskningslogg.
-> 
-> 
 
 ```
 Set-ExecutionPolicy RemoteSigned
@@ -201,19 +182,23 @@ Mer information om parametrar och om hur man använder kommandot Search-UnifiedA
 Om du vill se ett exempel på hur man kan använda PowerShell för att söka i granskningsloggen och sedan tilldela Power BI Pro-licenser utifrån poster finns i [Använda Power BI-granskningsloggen och PowerShell för att tilldela Power BI Pro-licenser](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## <a name="export-the-power-bi-audit-log"></a>Exportera Power BI-granskningsloggen
+
 Du kan exportera Power BI-granskningsloggen till en csv-fil.
 
 1. Välj **Exportera resultat**.
+
 2. Välj **Spara inlästa resultat** eller **Hämta alla resultat**.
    
    ![](media/service-admin-auditing/export-auditing-results.png)
 
 ## <a name="record-and-user-types"></a>Post- och användartyper
+
 Granskningsloggsposterna innehåller RecordType och UserType som en del av informationen om varje post. Alla Power BI-poster har en RecordType på 20.
 
 En fullständig lista finns i [Detaljerade egenskaper i Office 365-granskningsloggen](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="list-of-activities-audited-by-power-bi"></a>Lista med aktiviteter som granskas av Power BI
+
 | Aktivitet | Beskrivning | Ytterligare information |
 | --- | --- | --- |
 | CreateDashboard |Den här aktiviteten loggas varje gång som en ny instrumentpanel skapas. |– Namn på instrumentpanel. |
@@ -237,6 +222,7 @@ En fullständig lista finns i [Detaljerade egenskaper i Office 365-granskningslo
 | OptInForProTrial |Den här händelsen loggas när en användare väljer att testa Power BI Pro i tjänsten. |– e-postadress |
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Power BI-administratörsportalen](service-admin-portal.md)  
 [Power BI Premium – vad är det?](service-premium.md)  
 [Köpa Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
@@ -246,4 +232,3 @@ En fullständig lista finns i [Detaljerade egenskaper i Office 365-granskningslo
 [Detaljerade egenskaper i Office 365-granskningsloggen](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

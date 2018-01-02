@@ -1,6 +1,6 @@
 ---
-title: "Visa instrumentpaneler, paneler på instrumentpaneler och rapportsidor i fullskärmsläge"
-description: "Visa instrumentpaneler, paneler på instrumentpaneler och rapportsidor i fullskärmsläge, det vill säga *TV-läge*."
+title: "Visa instrumentpaneler, paneler på instrumentpaneler, rapportsidor och rapportvisualiseringar i fullskärmsläge"
+description: "Visa instrumentpaneler, paneler på instrumentpaneler, rapportvisualiseringar och rapportsidor i fullskärmsläge, det vill säga *TV-läge*."
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/09/2017
+ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: 87fbe780991969f5fe3e9a31af58e54015d13678
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: a8d1a49a341b98778a6ad08c823397f420b2475e
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="full-screen-mode-in-power-bi"></a>Fullskärmsläge i Power BI
 ## <a name="what-is-full-screen-mode"></a>Vad är fullskärmsläge?
@@ -46,7 +46,7 @@ Titta på hur Amanda öppnar och navigerar sin instrumentpanel i fullskärmsläg
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c31gZkyvC54" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="dashboards-and-report-pages-in-full-screen-mode"></a>Instrumentpaneler och rapporter i fullskärmsläge
-1. Välj **helskärmsikonen**![](media/service-fullscreen-mode/power-bi-full-screen-icon.png) från Power BI-menyraden ovanför din instrumentpanel eller rapport. Din instrumentpanelsarbetsyta eller rapportsida fyller hela skärmen. Exemplet nedan är en instrumentpanel.
+1. Välj **fullskärmsikonen** ![fullskärmsikon](media/service-fullscreen-mode/power-bi-full-screen-icon.png) från Power BI-menyraden ovanför din instrumentpanel eller rapport. Din instrumentpanelsarbetsyta eller rapportsida fyller hela skärmen. Exemplet nedan är en instrumentpanel.
    
       ![Instrumentpanelen i helskärm](media/service-fullscreen-mode/power-bi-dash-full-screen.png)
 2. I fullskärmsläge har du flera menyalternativ.  Om du vill visa menyn flyttar du bara musen eller markören. 
@@ -75,7 +75,7 @@ Titta på hur Amanda öppnar och navigerar sin instrumentpanel i fullskärmsläg
    
     ![Ikonen Rapportnavigering](media/service-fullscreen-mode/power-bi-report-nav2.png)       
     Använd de här pilarna i helskärmsrapporter för att gå mellan sidorna i rapporten.    
-3. Om du vill avsluta fullskärmsläget väljer du ikonen **Avsluta fullskärmsläge** .
+3. Om du vill avsluta fullskärmsläget väljer du ikonen **Avsluta fullskärmsläge**.
    
       ![](media/service-fullscreen-mode/exit-fullscreen-new.png)
 
@@ -89,7 +89,7 @@ Titta på hur Amanda öppnar och navigerar sin instrumentpanel i fullskärmsläg
 
 ## <a name="next-steps"></a>Nästa steg
 [Instrumentpaneler i Power BI](service-dashboards.md)  
-[Fokusläge för instrumentpaneler och dess paneler](service-focus-mode.md)    
+[Fokusläge](service-focus-mode.md)    
 
 Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
 

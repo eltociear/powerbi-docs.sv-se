@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: c51984aed112b62143ab132672b331cd0f97c7a1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 878738eb3f588c461b687451062a1641479e77ed
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur
 **Exemplet på affärsmöjlighetsspårning** innehåller en instrumentpanel (och associerade rapport) för ett programvaruföretag som har 2 försäljningskanaler: *direkt* och *partner*. Säljchefen skapade den här instrumentpanelen för att spåra affärsmöjligheter och intäkter efter region, avtalsstorlek och kanal.
@@ -38,7 +38,8 @@ Säljchefen förlitar sig på 2 intäktsmått:
 
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats.
 
-Du kan också [ladda ned enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529782).  
+>[!Note] 
+Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529782). Arbetsboken innehåller Power View-blad som du kan visa och ändra.  Om du vill se rådata, väljer du **Power Pivot > Hantera**. 
 
 ![](media/sample-opportunity-analysis/opportunity1.png)
 
@@ -94,7 +95,7 @@ Vår ekonomichef använder den här sidan för att hantera arbetsbelastning. Gen
 * Filtrering per månad (genom att välja månadsnamnet i det vänstra utsnittet) visar att januari har en hög andel stora avtal i slutför-steget med beräknade intäkter på 75 miljoner dollar. Å andra sidan hade februari främst medelstora avtal i lösnings- och förslagstegen.
 * Generellt sätt, varierar de beräknade intäktssiffrorna baserat på säljsteg, antal affärsmöjligheter och avtalsstorlek. Lägg till filter (med filterfönstret till höger) för de här faktorerna för att upptäcka ytterligare insikter.
 
-Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Men om du sparar dem, kan du alltid gå till **hämta data** för en ny kopia av det här exemplet.
+Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Men om du sparar dem, kan du alltid gå till **Hämta data** för en ny kopia av det här exemplet.
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: anslut till dina data
 Vi hoppas att den här rundturen har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om data för affärsmöjlighetsspårning. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).

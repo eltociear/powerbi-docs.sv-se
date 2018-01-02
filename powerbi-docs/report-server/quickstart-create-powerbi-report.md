@@ -15,32 +15,47 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: e492d31a8e1ed57a769c9a36f515d99369f6d6dc
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: fa844004911f41a179542dcfff702f371cc951f8
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="quickstart-create-a-power-bi-report-for-power-bi-report-server"></a>Snabbstart: Skapa en Power BI-rapport för Power BI-rapportserver
 Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-rapportserver, precis som du kan lagra Power BI-rapporter i molnet i Power BI-tjänsten (https://powerbi.com). Du skapar och redigerar rapporter i Power BI Desktop och publicerar dem till webbportalen. Rapportläsare i din organisation kan sedan se dem i webbläsaren eller i en Power BI-mobilapp på en mobilenhet.
 
 ![Power BI-rapport i webbportalen](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
 
-Om du redan har skapat Power BI-rapporter i Power BI Desktop är du redo att skapa Power BI-rapporter för Power BI-rapportserver. Annars kan du följa de här fyra stegen för att komma igång.
+Här är fyra steg för att komma igång snabbt.
 
-## <a name="step-1-install-power-bi-desktop-report-server"></a>Steg 1: Installera Power BI Desktop (rapportserver)
-Du kanske redan har installerat Power BI Desktop för att skapa rapporter för Power BI-tjänsten. Vi rekommenderar att du installerar versionen av Power BI Desktop som är optimerad för Power BI-rapportserver så att du vet att servern och appen alltid är synkroniserade. Du kan ha bägge versionerna av Power BI Desktop på samma dator.
+## <a name="step-1-install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Steg 1: Installera Power BI Desktop som har optimerats för Microsoft Power BI-rapportserver
 
-1. I webbportalen för Power BI-rapportserver, väljer du **ny** > **Power BI-rapport**.
+Om du redan har skapat Power BI-rapporter i Power BI Desktop är du nästan redo att skapa Power BI-rapporter för Power BI-rapportserver. Vi rekommenderar att du installerar versionen av Power BI Desktop som är optimerad för Power BI-rapportserver så att du vet att servern och appen alltid är synkroniserade. Du kan ha bägge versionerna av Power BI Desktop på samma dator.
+
+1. I webbportalen för rapportservern väljer du pilen **Hämta** > **Power BI Desktop**.
+
+    ![Hämta Power BI Desktop från webbportalen](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
+
+    Eller så du kan gå direkt till [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (optimerad för Power BI-rapportserver – oktober 2017) i Microsoft Download Center.
+
+2. På sidan Download Center väljer du **Hämta**.
+
+3. Beroende på din dator, väljer du:
+
+    - **PBIDesktopRS.msi** (32-bitarsversionen) eller
+
+    - **PBIDesktopRS_x64.msi** (64-bitarsversionen).
+
+4. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop (oktober 2017).
+
+2. I slutet av installationen, markerar du **Starta Power BI Desktop nu**.
    
-    ![Ny Power BI-rapport](media/quickstart-create-powerbi-report/report-server-web-portal-new-powerbi-report.png)
-   
-    Om du inte har åtkomst till en webbportal för Power BI-rapportserver, går du till Microsoft Download Center och hämtar [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=837581) (optimerad för Power BI-rapportserver – juni 2017 GA).
-2. I slutet av installationsprocessen, markerar du **starta Power BI Desktop nu**.
-   
-    Det startar automatiskt och du är redo att sätta igång. Du kan se att du har rätt version eftersom det står Power BI Desktop (rapportserver) i namnlisten.
+    Det startar automatiskt och du är redo att sätta igång. Du kan se att du har rätt version eftersom det står Power BI Desktop (oktober 2017) i namnlisten.
+
+    ![Power BI Desktop version oktober 2017](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
+
 3. Om du inte är bekant med Power BI Desktop, bör du titta på videoklippen på välkomstskärmen.
    
     ![Startskärmen för Power BI Desktop](media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png)
@@ -121,7 +136,7 @@ Det finns många bra resurser för att skapa rapporter i Power BI Desktop. De h�
 * Interaktiv inlärning: [Kom igång med Power BI Desktop](../guided-learning/gettingdata.yml#step-2)
 
 ### <a name="power-bi-report-server"></a>Power BI-rapportserver
-* [Installera Power BI Desktop optimerad för Power BI-rapportserver](install-powerbi-desktop.md)  
+* [Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
 * [Användarhandbok för Power BI-rapportserver](user-handbook-overview.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

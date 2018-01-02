@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/17/2017
-ms.author: jaimeta
-ms.openlocfilehash: e56976943e58aba8c9ef36c576a16ab5eba4c796
-ms.sourcegitcommit: 7d4ad2ba92a932d7cc6637348e0774be6623559e
+ms.date: 12/11/2017
+ms.author: tankas
+ms.openlocfilehash: ced415662c2dc39b6491cb79d121f3cd77719fe4
+ms.sourcegitcommit: be55922d7f43f458aea0160ec8fdfb1a0b5a0c00
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -32,6 +32,10 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 ## <a name="october-2017"></a>Oktober 2017
 
 - **Power BI-rapportserver**
+    - *Version 1.1.6551.5155 (Build 14.0.600.438), Utgiven: 11 december 2017*
+        - Felkorrigeringar
+            - Det gick inte att spara data efter uppdatering för vissa Power BI Desktop-rapporter.
+
     - *Version 1.1.6530.30789 (build-nr 14.0.600.437), publicerat: 17 november 2017*
         - Felkorrigeringar
             - Korrigering för grundläggande autentisering 

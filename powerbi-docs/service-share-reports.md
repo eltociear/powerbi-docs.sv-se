@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 022f085d12d7dc872052ca9205deca264b1c0418
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 2a7b4cc652e600b9a368f6f7eda657c06e131da3
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="share-power-bi-reports-with-your-coworkers"></a>Dela Power BI-rapporter med dina medarbetare
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. I Power BI finns [flera olika sätt att samarbeta och distribuera rapporter](service-how-to-collaborate-distribute-dashboards-reports.md) – att dela är bara en av dem.
@@ -68,13 +68,14 @@ Hur gör du om du vill dela en filtrerad version av en rapport? Kanske en rappor
    
    I vårt exempel är namnet på tabellen **Butik**, namnet på fältet är **Område** och värdet som vi vill filtrera på är **NC**:
    
-    ?filter=Butik/Område eq NC
+    ?filter=Butik/Område eq 'NC'
    
    ![Filtrerad rapport-URL](media/service-share-reports/power-bi-filter-url3.png)
    
-   Webbläsaren lägger till specialtecken som motsvarar snedstreck och blanksteg, så resultatet blir:
+   Webbläsaren lägger till specialtecken som motsvarar snedstreck, blanksteg och apostrofer, så resultatet blir:
    
-   app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-10a61f70f2f5/ReportSection2?filter=Butik%252FOmråde%20eq%20NC
+   app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-10a61f70f2f5/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+
 3. Skicka denna URL till dina medarbetare. 
    
    När de väljer länken öppnas en skrivskyddad version av den filtrerade rapporten i Power BI.

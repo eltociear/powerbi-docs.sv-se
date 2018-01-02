@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: 576ddfbbf52a2738dd32597479ffd03d554a5256
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 957e7c05907f1fc75eddeb271c664f898203e591
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på anskaffningsanalys för Power BI: Ta en rundtur
 Detta exempel på en instrumentpanel och dess underliggande rapport analyserar ett tillverkningsföretags leverantörsutgifter efter kategori och plats. I det här exemplet utforskar vi dessa områden:
@@ -36,7 +36,7 @@ Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI
 
 Vill du följa med? I [Power BI-tjänsten](https://powerbi.com), gå till **Hämta data > Exempel > Anskaffningsanalysexempel > Anslut** för att hämta din egna kopia av smakprovet.
 
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529784).
+[!Note] Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529784). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
 
 ## <a name="spending-trends"></a>Utgiftstrender
 Börja med att söka trender i utgifter efter kategori och plats.  

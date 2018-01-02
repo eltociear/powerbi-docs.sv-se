@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: ef064c636880db5d1b6c6106fe742972a7ed3a3c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 0bb540a4c27729999bbb1780a7d5a203d67d3a7c
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exempel på personalfrågor för Power BI: Ta en rundtur
 Personalavdelningen har samma rapporteringsmodell för olika företag, även om de är olika för olika branscher och storlekar. Det här exemplet granskar nya anställningar, aktiva medarbetare, och medarbetare som har lämnat och försöker att hitta trender i anställningsstrategin. Vårt huvudmål är att förstå:
@@ -36,7 +36,7 @@ Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI
 
 Vill du följa med? I [Power BI-tjänsten](https://powerbi.com), gå till **Hämta data > Exempel > Personalexempel > Anslut** för att hämta din egna kopia av smakprovet.
 
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529780).
+Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529780). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
 
 ## <a name="new-hires"></a>Nyanställda
 Låt oss utforska nyanställda först.

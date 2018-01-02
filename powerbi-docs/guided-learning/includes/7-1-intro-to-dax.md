@@ -5,7 +5,7 @@ Välkommen till avsnittet i den **interaktiva utbildningen** om Power BI som har
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX och denna interaktiva videoutbildningsserie
 Syftet med detta avsnitt av den **interaktiva utbildningen** är att lära dig grunderna i DAX – hur du förhåller dig till DAX, hur det fungerar och de mest användbara funktionerna som beskrivs av en världskänd DAX-expert med lång erfarenhet, [ Alberto Ferrari](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
 
-![](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
+![Porträtt av Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
 Videoklippen i detta avsnitt av den **interaktiva utbildningen** om **DAX** lär dig grunderna i DAX med DAX-formelspråket som utgångspunkt. Detta är användbart när du skapar DAX-formler från början, men det är också användbar för att förstå hur Power BI skapar DAX-formler när du skapar frågor i **Frågeredigeraren**.
 

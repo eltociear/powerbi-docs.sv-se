@@ -380,6 +380,8 @@
           href: service-export-to-pbix.md
         - name: 'Filtrera en rapport med frågesträngparametrar i URL:en'
           href: service-url-filters.md
+        - name: Metodtips för att skapa snabba och tillförlitliga rapporter i Power BI
+          href: power-bi-reports-performance.md
     - name: Visualiseringar
       items:
         - name: Visualiseringar i Power BI
@@ -746,6 +748,8 @@
       items:
         - name: Rapportvy i Power BI Desktop
           href: desktop-report-view.md
+        - name: Frågor och svar i Power BI Desktop
+          href: desktop-qna-in-reports.md
         - name: Analytics-fönstret i Power BI Desktop
           href: desktop-analytics-pane.md
         - name: Använda insikter i Power BI Desktop

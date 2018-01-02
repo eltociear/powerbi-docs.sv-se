@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/02/2017
+ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: 61901d0055c22540ec2f10bedbbb8cf641d606e9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 263d85a9db996bd7979c29b9c8919fc63f97b1d0
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimera dina data för Power BI Quick Insights
 Vill du förbättra dina resultat för Quick Insights?  Om du är datauppsättningens ägare kan du försöka med dessa:
@@ -32,7 +32,7 @@ Vill du förbättra dina resultat för Quick Insights?  Om du är datauppsättni
 * Får du ett felmeddelande om att dina data inte är statistiskt signifikanta?  Detta kan inträffa med modeller som är mycket enkla eller som inte har mycket data eller som inte har datum eller numeriska kolumner. Om du vill generera insikter måste datamängden ha minst en dimension och ett mått.
 
 ### <a name="next-steps"></a>Nästa steg
-[Power BI Quick Insights](service-insights.md)
+[Power BI quick insights](service-insights.md)
 
 Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
 

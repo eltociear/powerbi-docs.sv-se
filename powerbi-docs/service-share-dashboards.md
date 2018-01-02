@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.author: maggies
-ms.openlocfilehash: 0b50568e49df8e2594519028b90d5d833d17c6b7
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 276f663b8454ef0938222576cec13fcfb073e2cf
+ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Dela dina Power BI-instrumentpaneler med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder [flera olika sätt att samarbeta och distribuera dina instrumentpaneler](service-how-to-collaborate-distribute-dashboards-reports.md), och dela är bara en.
@@ -91,6 +91,8 @@ Endast en instrumentpanels ägare kan aktivera eller inaktivera omdelning.
    * **Läs** om du vill förhindra den personen från att dela med någon annan.
    * **Ta bort åtkomst** om du vill förhindra personen från att se instrumentpanelen överhuvudtaget.
 
+4. I dialogrutan **Ta bort åtkomst** bestämmer du om du vill ta bort åtkomsten till relaterat innehåll, till exempel rapporter och datauppsättningar. Om du tar bort objekt med en varningsikon ![Power BI-varningsikon](media/service-share-dashboards/power-bi-warning-icon.png), är det bäst att ta bort relaterat innehåll eftersom det inte kommer att visas korrekt.
+
 ## <a name="share-a-dashboard-with-people-outside-your-organization"></a>Dela en instrumentpanel med personer utanför din organisation
 När du delar med personer utanför organisationen, de får ett e-postmeddelande med en länk till den delade instrumentpanelen, och de måste logga in till Power BI för att kunna se instrumentpanelen. Om de inte har någon Power BI Pro-licens kan de registrera sig för en efter att ha klickat på länken.
 
@@ -116,8 +118,35 @@ Saker att tänka på när det gäller att dela instrumentpaneler:
 * Om dina medarbetare redan har åtkomst till en specifik instrumentpanel, kan du skicka en direktlänk till instrumentpanelen genom att kopiera webbadressen när du är i instrumentpanelen. Exempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Om dina medarbetare på motsvarande sätt redan har åtkomst till en specifik instrumentpanel, kan du [skicka en direktlänk till den underliggande rapporten](service-share-reports.md). 
 
+## <a name="troubleshoot-sharing"></a>Felsöka delning
+
+### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Mina instrumentpanelsmottagare ser en låsikon i en panel eller ett meddelande om ”Behörighet krävs”
+
+Om de personer som du delar med ser en låst panel i en instrumentpanel eller ”Behörighet krävs” när de försöker visa en rapport, måste du ge dem behörighet till den underliggande datauppsättningen. Gör så här.
+
+1. Gå till fliken **Datauppsättningar** i listan med innehåll.
+
+1. Välj de tre punkterna (**...** ) bredvid datauppsättningen > **Hantera behörigheter**.
+
+    ![Hantera behörigheter](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
+
+3. Välj **Lägg till användare**.
+
+    ![Välj Lägg till användare](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
+
+1. Ange fullständiga e-postadresser för enskilda användare, distributionsgrupper och säkerhetsgrupper. Du kan inte dela med dynamiska distributionslistor.
+
+    ![Lägg till e-postadresser](media/service-share-dashboards/power-bi-add-user-dataset.png)
+
+5. Välj **Lägg till**.
+
+### <a name="i-cant-share-a-dashboard"></a>Jag kan inte dela en instrumentpanel
+
+Om du vill dela en instrumentpanel måste du ha behörighet att dela det underliggande innehållet – relaterade rapporter och datauppsättningar. Om du ser ett meddelande om att du inte kan dela be rapportskaparen att ge dig behörighet att dela för dessa rapporter och datauppsättningar.
+
+
 ## <a name="next-steps"></a>Nästa steg
-* Vill du ge feedback? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
+* Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 * [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Dela en Power BI-rapport](service-share-reports.md)
 * Har du några frågor? [Testa Power BI Community](http://community.powerbi.com/).

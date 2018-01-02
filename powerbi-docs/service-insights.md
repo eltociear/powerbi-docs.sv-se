@@ -1,6 +1,6 @@
 ---
-title: "Hämta Quick Insights i Power BI"
-description: "Dokumentation för att köra och arbeta med Quick Insights med Power BI-tjänsten."
+title: Skapa automatiskt datainsikter med Power BI
+description: "Lär dig mer om att få insikter om dina datauppsättningar och instrumentpanelers paneler."
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,32 +16,32 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/01/2017
+ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: 8b069f29737992817d20396007864cc8c005ca99
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: fb498f2b3320b96958467a9db851f119dba20ce7
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
-# <a name="quick-insights-with-power-bi"></a>Quick Insights med Power BI
-Har du en ny datauppsättning och vet inte riktigt var du ska börja?  Behöver du skapa en instrumentpanel snabbt?  Vill du snabbt leta efter insikter som du kan ha missat?
+# <a name="automatically-generate-data-insights-with-power-bi"></a>Skapa automatiskt datainsikter med Power BI
+Har du en ny datauppsättning och vet inte riktigt var du ska börja?  Behöver du skapa en instrumentpanel snabbt?  Vill du leta efter insikter som du kan ha missat?
 
-Kör Quick Insights om du vill generera intressanta interaktiva visualiseringar utifrån dina data. Quick Insights kan köras på en hel datauppsättning (Quick Insights) eller på en specifik instrumentpanel (Scoped Insights). Du kan även köra Quick Insights på en insikt!
+Kör Quick Insights om du vill generera intressanta interaktiva visualiseringar utifrån dina data. Quick Insights kan köras på en hel datauppsättning (Quick Insights) eller på en specifik instrumentpanel (Scoped Insights). Du kan även köra insikter på en insikt!
 
-> **Obs**! Quick Insights fungerar inte med DirectQuery – det fungerar bara med data som överförs till Power BI.
+> **Obs**! Insikter fungerar inte med DirectQuery – de fungerar bara med data som överförs till Power BI.
 > 
 > 
 
-Funktionen Quick Insights bygger på en växande [uppsättning avancerade analytiska algoritmer](service-insight-types.md) utvecklade tillsammans med Microsoft Research som vi kommer att fortsätta att använda så att flera användare kan söka efter insikter i sina data på nya och intuitiv sätt.
+Funktionen insikter bygger på en växande [uppsättning avancerade analytiska algoritmer](service-insight-types.md) utvecklade tillsammans med Microsoft Research som vi kommer att fortsätta att använda så att flera användare kan söka efter insikter i sina data på nya och intuitiv sätt.
 
 ## <a name="run-quick-insights-on-a-dataset"></a>Kör Quick Insights på en datauppsättning
-Titta på när Amanda kör Quick Insights på en datauppsättning, öppnar en insikt i Fokusläge, fäster en av dessa snabba insikter som en panel på sin instrumentpanel och sedan får Quick Insights om ett visuellt objekt.
+Titta på när Amanda kör insikter på en datauppsättning, öppnar en insikt i Fokusläge, fäster en av dessa snabba insikter som en panel på sin instrumentpanel och sedan får insikter om en panel på instrumentpanelen.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
-Nu är din tur. Utforska Quick Insights med [exemplet för analys av leverantörskvalitet](sample-supplier-quality.md).
+Nu är din tur. Utforska insikter med [exemplet för analys av leverantörskvalitet](sample-supplier-quality.md).
 
 1. Från fliken **Datauppsättningar**, välj ellipserna (...) och välj **Hämta insikter**.
    
@@ -55,18 +55,18 @@ Nu är din tur. Utforska Quick Insights med [exemplet för analys av leverantör
    
     ![](media/service-insights/pbi_autoinsightsuccess.png)
    
-   > **Obs**! Vissa datauppsättningar kan inte generera Quick Insights eftersom data inte är statistiskt signifikanta.  Läs mer i [Optimera dina data för Quick Insights](service-insights-optimize.md).
+   > **Obs**! Vissa datauppsättningar kan inte generera insikter eftersom data inte är statistiskt signifikanta.  Läs mer i [Optimera dina data för insikter](service-insights-optimize.md).
    > 
    > 
-4. Visualiseringar visas i en särskild arbetsyta för **Quick Insights** med upp till 32 separata insiktskort. Varje kort har ett diagram eller graf samt en kort beskrivning.
+1. Visualiseringar visas i en särskild arbetsyta för **Quick Insights** med upp till 32 separata insiktskort. Varje kort har ett diagram eller graf samt en kort beskrivning.
    
     ![](media/service-insights/power-bi-insights.png)
 
-## <a name="interact-with-the-quick-insight-cards"></a>Interagera med Quick Insight-korten
+## <a name="interact-with-the-insight-cards"></a>Interagera med Insight-korten
   ![](media/service-insights/pbi_hover.png)
 
 1. Hovra över ett kort och välj stiftikonen för att lägga till visualiseringen på en instrumentpanel.
-2. Hovra över ett kort och välj ikonen för Fokusläge för att visa kortet i helskärmsläge.
+2. Hovra över ett kort, välj ellipserna (...) och välj **Visa insikter**. Det här öppnar insikter i fullskärm.
    
     ![](media/service-insights/power-bi-insight-focus.png)
 3. I Fokusläge kan du:
@@ -75,30 +75,24 @@ Nu är din tur. Utforska Quick Insights med [exemplet för analys av leverantör
      
         ![](media/service-insights/power-bi-insights-filter-new.png)
    * Fäst insiktskortet på en instrumentpanel genom att välja stiftikonen ![](media/service-insights/power-bi-pin-icon.png) eller **Fäst visualiseringar**.
-   * Kör Quick Insights på själva kortet. Detta kallas **Scoped Quick Insights**. I det övre högra hörnet väljer du ikonen med en glödlampa ![](media/service-insights/power-bi-bulb-icon.png) eller **Hämta insikter**.
+   * Kör insikter på själva kortet. Detta kallas ofta **omfattade insikter**. I det övre högra hörnet väljer du ikonen med en glödlampa ![](media/service-insights/power-bi-bulb-icon.png) eller **Hämta insikter**.
      
        ![](media/service-insights/pbi-autoinsights-tile.png)
      
-     Quick Insight visas till vänster och nya kort som endast baseras på data i denna enda snabbinsikt visas till höger.
+     Insikten visas till vänster och nya kort som endast baseras på data i denna enda insikt visas till höger.
      
        ![](media/service-insights/power-bi-insights-on-insights-new.png)
-4. Om du vill återgå till den ursprungliga arbetsytan för Quick Insights väljer du **Avsluta Fokusläge** i det övre vänstra hörnet.
+4. Om du vill återgå till den ursprungliga arbetsytan för insikter väljer du **Avsluta Fokusläge** i det övre vänstra hörnet.
 
-## <a name="run-quick-insights-on-a-dashboard-tile"></a>Kör Quick Insights på en panel på instrumentpanelen
-Begränsa sökningen till de data som används för att skapa en enda panel på instrumentpanelen i stället för att söka efter insikter mot en hel datauppsättning. Detta kallas **Scoped Quick Insights**.
+## <a name="run-insights-on-a-dashboard-tile"></a>Kör insikter på en panel på instrumentpanelen
+Begränsa sökningen till de data som används för att skapa en enda panel på instrumentpanelen i stället för att söka efter insikter mot en hel datauppsättning. Detta kallas också för **omfattade insikter**.
 
 1. Öppna en instrumentpanel.
-2. Välj en panel och [öppna panelen i Fokusläge](service-focus-mode.md).
-3. I det övre högra hörnet väljer du **Hämta insikter**.
+2. Hovra över en panel. Välj ellipserna (...) och välj **Visa insikter**. Panelen öppnas i [Fokusläge](service-focus-mode.md) med detta insiktskort visat längst till höger.    
    
-    ![](media/service-insights/pbi-autoinsights-tile.png)
-4. Power BI visar insiktskorten längs höger sida av panelen.
-   
-    ![](media/service-insights/pbi-insights-tile.png)
-5. Fångar ett insiktskort ditt intresse? Välj insiktskortet för att gå djupare. Vald Quick Insight visas till vänster och nya insiktskort som endast baseras på data i denna enda Quick Insight visas till höger.
-6. Fortsätt utforska dina data och när du har hittat en intressant Quick Insight fäster du dess visuella objekt på instrumentpanelen genom att välja **Fäst visualisering** från det övre högra hörnet. Du kan också skicka feedback så att datauppsättningens ägare vet om en viss snabbinsikt var till hjälp eller inte.
-   
-    ![](media/service-insights/useful.png)
+    ![](media/service-insights/pbi-insights-tile.png)    
+4. Fångar ett insiktskort ditt intresse? Välj insiktskortet för att gå djupare. Vald insikt visas till vänster och nya insiktskort som endast baseras på data i denna enda insikt visas till höger.    
+6. Fortsätt utforska dina data och när du har hittat en intressant insikt fäster du den på instrumentpanelen genom att välja **Fäst visualisering** från det övre högra hörnet.
 
 ## <a name="next-steps"></a>Nästa steg
 Om du äger en datauppsättning, [optimera den för Quick Insights](service-insights-optimize.md)

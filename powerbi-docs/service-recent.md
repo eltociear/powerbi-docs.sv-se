@@ -16,21 +16,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/17/2017
+ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: 54c6ba317dbe4fa71c9001f190d724c3afd74313
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 554084b26beff469276709b9e7c7f2c9fa84e65c
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Senaste** innehåll i Power BI-tjänsten
-![](media/service-recent/power-bi-recent-screen.png)
+
 
 ## <a name="what-is-recent-content"></a>Vad är senaste innehåll
-Senaste innehållet är de 20 senaste objekten du besökt.  Detta omfattar: instrumentpaneler, rapporter, appar och arbetsböcker.
+Senaste innehållet är de sista objekten du besökte, max. 20 objekt.  Dessa omfattar: instrumentpaneler, rapporter, appar och arbetsböcker för alla dina arbetsytor.
 
-![](media/service-recent/power-bi-recent.png)
+![](media/service-recent/power-bi-recent-screen.png)
 
 Låt Amanda visa hur innehållslistorna i **Senaste** fylls och följ sedan instruktionerna under videon för att prova själv.
 

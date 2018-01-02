@@ -1,0 +1,61 @@
+---
+title: Ansluta till CSV-filer i Power BI Desktop
+description: "Anslut enkelt till och använd CSV-filer i Power BI Desktop"
+services: powerbi
+documentationcenter: 
+author: davidiseminger
+manager: kfile
+backup: 
+editor: 
+tags: 
+qualityfocus: no
+qualitydate: 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 12/06/2017
+ms.author: davidi
+ms.openlocfilehash: 8fa6870a7ca7b362b9ce71224845a4194805bae8
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 12/06/2017
+---
+# <a name="connect-to-csv-files-in-power-bi-desktop"></a>Ansluta till CSV-filer i Power BI Desktop
+Att ansluta till en CSV-fil (*CSV*) från Power BI Desktop liknar ansluta till en Excel-arbetsbok. Båda processer är enkla och den här artikeln visar hur du ansluter till valfri CSV-fil som du har åtkomst till.
+
+Börja med att välja **Hämta data > CSV** från menyfliksområdet **Start** i Power BI Desktop.
+
+![](media/desktop-connect-csv/connect-to-csv_1.png)
+
+Välj din CSV-fil från dialogrutan **Öppna** dialogrutan som visas.
+
+![](media/desktop-connect-csv/connect-to-csv_2.png)
+
+När du väljer **Öppna** hämtar Power BI Desktop filen och anger vissa attribut, till exempel filens ursprung, avgränsartyp och hur många rader som ska användas för att identifiera datatyper i filen.
+
+Dessa filattribut och alternativ visas i listrutan val överst i dialogrutan **CSV-import** dialogruta som visas nedan. Du kan ändra dessa inställningar manuellt genom att välja ett annat alternativ från någon av listrutorna.
+
+![](media/desktop-connect-csv/connect-to-csv_3.png)
+
+När du är nöjd med dina val kan du välja **Hämta** för att importera filen till Power BI Desktop eller **Redigera** för att öppna **frågeredigeraren** och forma eller redigera dina data ytterligare innan du importerar dem.
+
+När du läser in data i Power BI Desktop kan du se tabellen och kolumnerna (som visas som fält i Power BI Desktop) i fönstret **Fält** fönstret längs till höger i rapportvyn i Power BI Desktop.
+
+![](media/desktop-connect-csv/connect-to-csv_4.png)
+
+Det är allt du behöver göra – data från CSV-filen är nu i Power BI Desktop.
+
+Du kan använda data i Power BI Desktop för att skapa visuell information och rapporter eller interagera med andra data som du kanske vill ansluta till och importera, som Excel-arbetsböcker, databaser eller en annan datakälla.
+
+### <a name="next-steps"></a>Nästa steg
+Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
+
+* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Datakällor i Power BI Desktop](desktop-data-sources.md)
+* [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   
+* [Ange data direkt i Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+

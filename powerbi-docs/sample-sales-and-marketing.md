@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/05/2017
 ms.author: mihart
-ms.openlocfilehash: ecd984ab23c4480b2e615635a8d2f337e2a9a50f
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 7ff8ba4557c829551b97e51f411269e3ba8fbdea
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exempel på försäljning och marknadsföring för Power BI: Ta en rundtur
 **Försäljning och marknadsföringsexemplet** innehåller en instrumentpanel och rapport för ett fiktivt tillverkningsföretag som heter VanArsdel Ltd. Den här instrumentpanelen skapades av marknadsföringschefen (CMO) för VanArsdel för att hålla ett öga på branschen och företagets marknadsandel, produktvolym, försäljning och sentiment.
@@ -30,7 +30,7 @@ VanArsdel har många konkurrenter men är marknadsledande inom sin bransch. CMO:
 
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce (www.obvience.com) som har anonymiserats.
 
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529785).
+[!Note] Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529785). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
 
 ![](media/sample-sales-and-marketing/sales1.png)
 
@@ -108,7 +108,7 @@ Sentimentgap kan vara ett annaat område att utforska: vilka distrikt har det h�
 
 Genom att filtrera visualiseringar efter VanArsdel, efter segment, efter månad och efter region, kan vi identifiera tillväxtmöjligheter för VanArsdel.
 
-Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Men om du sparar dem, kan du alltid gå till **hämta data** för en ny kopia av det här exemplet.
+Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Men om du sparar dem, kan du alltid gå till **Hämta data** för en ny kopia av det här exemplet.
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: anslut till dina data
 Vi hoppas att den här rundturen har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge dig insikter om försäljnings- och marknadsföringsdata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).  
