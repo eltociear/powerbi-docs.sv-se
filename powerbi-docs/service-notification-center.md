@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/26/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: f61ca9c4808cbcf180b60113eeade235b8d28f6d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 430ff5ad86636d96ca693ff7fc1ac1bb0d16b5cc
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="power-bi-notifications"></a>Power BI-meddelanden
 Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, ändringar i din grupparbetsyta, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](service-set-data-alerts.md) samt i Power BI-mobilappar.
@@ -48,5 +48,5 @@ Titta när Amanda granskar meddelanden hon tagit emot, hanterar sina aviseringar
 * [Skapa ett Microsoft Flow som utlöses av en Power BI-dataavisering](service-flow-integration.md)
 * [Ställ in dataaviseringar i iPhone-appen (Power BI för iOS)](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

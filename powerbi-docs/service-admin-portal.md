@@ -18,10 +18,10 @@ ms.workload: powerbi
 ms.date: 11/27/2017
 ms.author: asaxton
 ms.openlocfilehash: d831363d6afa88aa94d78776f59f81ba8ba96299
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.sourcegitcommit: 85302d577895e779466df55aa02e5785ab2e3138
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -150,7 +150,7 @@ Användare i organisationen kan publicera rapporter på webben. [Läs mer](servi
 
 Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen publicera på webben är.
 
-|Aktuell |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
+|Funktion |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
 |**Publicera på webben** under rapportens **Fil**meny.|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
 |**Hantera inbäddade koder** under **Inställningar**|Aktiverad för alla|Aktiverad för alla|Aktiverad för alla<br><br>Alternativet * **Ta bort** endast för behöriga användare eller grupper.<br>* **Hämta koder** aktiverat för alla.|

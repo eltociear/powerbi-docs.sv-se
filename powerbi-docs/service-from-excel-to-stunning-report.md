@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/26/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: d93b98b0a34a0a83efc00a066864709b771c5110
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d0a4a465442ed3a6750ce10ab9a3a40e17b88be1
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Från Excel-arbetsbok till otrolig rapport på nolltid
 Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men den senaste informationen finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och bygga upp en rapport. Du börjar känna dig bekymrad.
@@ -105,5 +105,5 @@ Nästa steg
 * [Kom igång med Power BI-tjänsten](service-get-started.md)
 * [Kom igång med Power BI Desktop](desktop-getting-started.md)
 * [Power BI – grundläggande begrepp](service-basic-concepts.md)
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: dfc7552b1a6035a2e75ded010ddb7c57931c79ad
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 34574cf73d12d91df7a497cf297a9ecda9f5cc57
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fäst en panel på en Power BI-instrumentpanel från en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fästa paneler från en rapport
@@ -74,5 +74,5 @@ Mer information finns i [fäst en hel rapportsida](service-dashboard-pin-live-ti
 
 [Grundläggande begrepp i Power BI](service-basic-concepts.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

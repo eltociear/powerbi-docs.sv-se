@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/14/2017
+ms.date: 12/21/2017
 ms.author: mihart
-ms.openlocfilehash: e3c3f59bc5d27e19bbd6256b6692782fc115ff28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 202f92b9c7089a4bd9bb5dd976051bba47da632e
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Metodtips för design av rapporter och visuella objekt
 <!-- Shared newnav Include -->
@@ -818,5 +818,5 @@ Nu är det dags att börja använda dessa metodtips.  Håll kontakten med oss oc
 ### <a name="book-recommendations"></a>Boktips
 Det finns många bra böcker i dag som kan hjälpa till att förbättra den visuella designtekniken. Stephen Fews bok *Information Dashboard Design* är nästan ett måste att läsa. Han går även på djupet i två andra böcker, *Show Me the Numbers* och *Now You See It*. Både Few och andra författare har hämtat inspiration från Edward R. Tufte, vars bok *The Visual Display of Quantitative Information* betraktas som en klassiker inom detta område. Tufte har också skrivit *Visual Explanations*, *Envisioning Information* och *Beautiful Evidence*. Anders Kirks nya bok *Data Visualization: A Handbook for Data Driven Design* är ett annat bra alternativ. Andra författare som rekommenderas är: Lachlan James, William McKnight och Boris Evelson (Forrester), Darkhorse Analytics.
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
