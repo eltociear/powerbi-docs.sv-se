@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
+ms.date: 11/30/2017
 ms.author: asaxton
-ms.openlocfilehash: 1ab1590146f8b9714a27735cd556dd0203ecc6bf
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: c10ca76ac96090ff1facbdd28210b680392aae8d
+ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Säkerhet på radnivå med inbäddat innehåll i Power BI
 Säkerhet på radnivå (RLS) kan användas för att begränsa åtkomst till data i en rapport eller datauppsättning, vilket gör att flera olika användare kan använda samma rapport när alla se olika data. RLS kan användas för att bädda in rapporter i Power BI.
@@ -130,7 +130,7 @@ Om någon loggar in nu för att visa rapporten när alla delar är tillsammans k
 ## <a name="working-with-analysis-services-live-connections"></a>Arbete med realtidsanslutningar till Analysis Services
 Säkerhet på radnivå kan användas med Analysis Services liveanslutningar för lokala servrar. Det finns några specifika begrepp som du bör känna till när du använder den här typen av anslutning.
 
-Den identitet som har angetts för egenskapen username måste vara en windows-användare med behörighet för Analysis Services-servern.
+Den identitet som har angetts för egenskapen användarnamn måste vara en Windows-användare med behörigheter på Analysis Services-servern.
 
 **Konfiguration för lokal datagateway**
 
@@ -145,7 +145,7 @@ Roller kan tilldelas med en identitet i en inbäddad token. Om ingen roll anges 
 * Medan Power BI-tjänsten inte tillämpar RLS-inställningar för administratörer eller medlemmar som har behörighet att redigera tillämpas identiteter med en inbäddad token på data.
 * Det finns endast stöd för att skicka identitetsinformation när du anropar GenerateToken för läs-/skrivläge. Stöd för andra resurser kommer senare.
 * Analysis Services realtidsanslutningar stöds för lokala servrar.
-* Azure Analysis Services realtidsanslutningar stöds inte.
+* Azure Analysis Services live-anslutningar stöder filtrering efter roller, men inte dynamiska efter användarnamn.
 * Om den underliggande datamängden inte kräver RLS får GenerateToken-begäran **inte** innehålla en effektiv identitet.
 * Om den underliggande datamängden är en molnmodell (cachelagrade modell eller DirectQuery) måste den effektiva identiteten innehålla minst en roll. Annars utförs inte rolltilldelningen.
 * Endast en identitet kan anges i listan över identiteter. Vi använder en lista för att aktivera flera identitetstokens för inbäddning i instrumentpanelen i framtiden.

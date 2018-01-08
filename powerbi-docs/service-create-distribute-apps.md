@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/13/2017
+ms.date: 12/11/2017
 ms.author: maggies
-ms.openlocfilehash: 58af226f6c3d93fffc805e23fcf1bda0d055058d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 27ead0a3104693aff4a6fc3c2641c207ad44dc09
+ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Skapa och publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -32,7 +32,7 @@ Dina företagsanvändare behöver ofta flera Power BI-instrumentpaneler och -rap
 
 Med Power BI-appar, än så länge i en förhandsversion, kan du skapa samlingar av instrumentpaneler och rapporter och publicera dessa appar till hela organisationen eller till särskilda personer eller grupper. För dig som skapare eller administratör av rapporter gör apparna det enklare att hantera behörigheter för samlingar av instrumentpaneler.
 
-Företagsanvändarna får dina appar på ett par olika sätt. Om Power BI-administratören ger dig behörighet kan du installera dem automatiskt på dina medarbetares Power BI-konton. I annat fall kan de installera dina appar från Microsoft AppSource eller så kan du skicka dem en direktlänk. De kan enkelt hitta och gå tillbaka till ditt innehåll eftersom allt finns på samma plats. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Läs mer om [app-upplevelsen för företagsanvändare](service-install-use-apps.md).
+Företagsanvändare installerar de här apparna från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De kan enkelt hitta och gå tillbaka till ditt innehåll eftersom allt finns på samma plats. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Läs mer om [app-upplevelsen för företagsanvändare](service-install-use-apps.md).
 
 ### <a name="apps-and-organizational-content-packs"></a>Appar- och organisationsinnehållspaket
 Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisationsinnehållspaket, fortsätter de att fungera sida vid sida med appar.
@@ -119,15 +119,13 @@ När instrumentpanelerna och rapporterna på din app-arbetsyta är klara, public
    
      ![Appens innehåll](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Till sist bestämmer du under **Åtkomst** vem som ska ha åtkomst till appen: antingen alla i din organisation eller specifika personer eller e-post-distributionslistor. Om du har behörighet kan du välja att installera appen automatiskt för mottagarna.
-   
-     ![Åtkomst till appen](media/service-create-distribute-apps/power-bi-apps-access.png)
+4. Till sist bestämmer du under **Åtkomst** vem som ska ha åtkomst till appen: antingen alla i din organisation, specifika personer eller Active Directory-säkerhetsgrupper. 
 
 5. När du väljer **Slutför**, visas ett meddelande som bekräftar att appen är redo för publicering. I dialogrutan som bekräftar slutförandet kan du kopiera URL:en som är en direktlänk till appen och skicka den till dem som du ska dela den med.
    
      ![Slutföra appen](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-De företagsanvändare för vilka du har publicerat appen kan hitta den på olika sätt. Om du kunde installera appen automatiskt, visas den under Appar på mottagarnas Power BI-konton.  Du kan skicka dem en direktlänk till appen eller så kan de söka efter den i Microsoft AppSource, där de kan se alla appar som de kan komma åt. Därefter kommer de, varje gång de går till Appar, att se den här appen i listan.
+De företagsanvändare som du har publicerat appen åt, kan hitta den på olika sätt. Du kan skicka dem en direktlänk till appen eller så kan de söka efter den i Microsoft AppSource, där de kan se alla appar som de kan komma åt. När de därefter går till Appar, kan de se den här appen i listan.
 
 Läs mer om [app-upplevelsen för företagsanvändare](service-install-use-apps.md).
 

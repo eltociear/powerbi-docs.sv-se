@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
-ms.openlocfilehash: 3e48f08237767a4c0cc5e1a8ddfc70a9087fbc1c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.date: 11/30/2017
+ms.author: mihart
+ms.openlocfilehash: 22d939dbd0a582611f2f4e90e2306456376e211b
+ms.sourcegitcommit: 910258a5ad8b6861e81ae02c57286db221c37375
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Skapa en Azure Active Directory-klient som ska användas med Power BI
 Lär dig hur du skapar en ny Azure AD-klient som ska användas med ditt anpassade program med Power BI REST API:er.
@@ -33,7 +33,7 @@ När du har en Azure AD-klient kan du definiera ett program och tilldela behöri
 Organisationen kanske redan har en Azure AD-klient som du kan använda för programmet. Du kan använda den klienten för dina programbehov eller skapa en ny klient som är specifik för programmet. Artikeln visar hur du skapar en ny klient.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Skapa en Azure Active Directory-klient
-För att kunna integrera Power BI i ditt anpassade program måste du definiera ett program i Azure AD. Därför måste du ha en katalog i Azure AD. Detta är din klient. Om organisationen inte har någon klient än, eftersom de inte använder Power BI eller Office 365, måste du skapa en. Du kan också behöva skapa en om du inte vill att programmet ska blandas ihop med organisationens klient. Detta innebär att du kan hålla saker isolerade.
+För att kunna integrera Power BI i ditt anpassade program måste du definiera ett program i Azure AD. Därför måste du ha en katalog i Azure AD. Detta är din klient. Om din organisation inte har någon klientorganisation än, eftersom de inte använder Power BI eller Office 365 [så måste du skapa en](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du kan också behöva skapa en om du inte vill att programmet ska blandas ihop med organisationens klient. Detta innebär att du kan hålla saker isolerade.
 
 Eller kanske du bara vill skapa en klient i testsyfte.
 

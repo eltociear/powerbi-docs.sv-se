@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: cff6a984f4c3d47bbf7dcd3df43253c318b2bf50
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 97fb3625848210f6222317cf3fc48eea305ef04d
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
 Power BI-mobilappen för Windows 10 ger dig Power BI i din surfplatta eller telefon med uppdaterad, pekaktiverad mobil åtkomst till företagets information. Visa och interagera med dina instrumentpaneler för företaget från valfri plats &#151; direkt från din [Windows-startskärm](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -35,10 +35,8 @@ Sedan interagerar du med dina instrumentpaneler och rapporter, utforskar data oc
 ## <a name="first-things-first"></a>Vi tar det i ordning
 * [**Hämta Power BI-mobilappen för Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store.
   
-  > [!NOTE]
-  > Din enhet måste köra Windows 10. Appen fungerar bäst på enheter med minst 2 GB RAM-minne och 8 GB intern lagring. Den kan köras på enheter med minst 1 GB RAM-minne.
-  > 
-  > 
+  Din enhet måste köra Windows 10. Appen kan köras på enheter med minst 3 GB RAM-minne och 8 GB intern lagring.
+   
 * Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Registrera dig för Power BI-tjänsten på internet

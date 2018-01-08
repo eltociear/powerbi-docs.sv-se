@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: davidi
-ms.openlocfilehash: a5542e7a4c0b1d5014a6fce0042c07fec7398ab4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: e60ff6d06e4ac0cddf398ccfc1d30e4d97e0773c
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi-preview"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI (förhandsversion)
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -152,7 +152,8 @@ Det finns några begränsningar och saker du bör tänka på för den här versi
 * Markering av mellan status för ett rapportfönster sparas *inte* när du skapar ett bokmärke. 
 * Om du lägger till ett visuellt objekt på en rapportsida efter att du har skapat ett bokmärke kommer det visuella objektet att visas i sitt standardläge. Det innebär att om du lägger till ett utsnitt på en sida där du tidigare skapade bokmärken så fungerar utsnittet i standardtillståndet.
 * Flytta runt visuella objekt när ett bokmärke har skapats visas i bokmärket. 
-* Du *måste* ha minst ett bokmärke i rapporten när du publicerar den på **Power BI-tjänsten** för att bokmärken ska vara tillgängliga i tjänsten. Detta är ett krav för varje rapport som du publicerar.
+* Du *måste* ha minst ett bokmärke i din rapport när du publicerar den på **Power BI-tjänsten** för att bokmärken ska vara tillgängliga i tjänsten. Detta är ett krav för varje rapport som du publicerar.
+* Eftersom bokmärken är för tillfället är en förhandsfunktion, är de inte ännu tillgängliga i [**Power BI Desktop för rapportserver**](report-server/quickstart-create-powerbi-report.md).
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om liknande funktioner eller funktioner som interagerar med bokmärken finns i följande artiklar:

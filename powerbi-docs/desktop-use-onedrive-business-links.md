@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/05/2017
 ms.author: davidi
-ms.openlocfilehash: dcb262d110025f2c36c4029227b353132c4dafb6
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 2c249cac17e8fe6da35634c78837e3ca16e70a5c
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Använd OneDrive för företag-länkar i Power BI Desktop
 Många har Excel-arbetsböcker lagrade på sin OneDrive för företag som skulle vara perfekta att använda med Power BI Desktop. Med **Power BI Desktop** kan du använda onlinelänkar för **Excel**-filer som lagras i **OneDrive för företag** till att skapa rapporter och visuella objekt. Du kan använda ett **OneDrive för företag**-gruppkonto eller ditt personliga **OneDrive för företag**-konto.
@@ -37,7 +37,7 @@ Att hämta en onlinelänk från **OneDrive för företag** kräver dock några s
    > 
    
    ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
-2. I **Excel** väljer du först **Arkiv > Information** och sedan länken ovanför knappen **Skydda arbetsbok**. Välj **Kopiera länk till Urklipp**.
+2. I **Excel** väljer du först **Arkiv > Information** och sedan länken ovanför knappen **Skydda arbetsbok**. Välj **Kopiera länken till Urklipp** (i din version kan det stå **Kopiera sökvägen till Urklipp**).
    
    ![](media/desktop-use-onedrive-business-links/odb-links_03.png)
 
