@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 8f009e382321d296191d861245e005c1ffb7ee33
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: c0689b969c1956d0344afb2bc8aef7bda32c159e
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
 Välkommen till **Komma igång-guiden för Power BI Desktop**. Den här korta visningen av Power BI Desktop låter dig bekanta dig med hur den fungerar, visar vad den kan göra och ökar dina möjligheter att skapa robusta datamodeller, tillsammans med häpnadsväckande rapporter, som förstärker din affärsintelligens. 
@@ -43,6 +43,10 @@ Om har bråttom, kan du göra en visuell snabbläsning av den här guiden på et
 
 För en mer ingående förståelse så kan du läsa igenom avsnitten, utföra stegen och få fram din egen Power BI Desktop-fil som är redo för publicering till **Power BI**-tjänsten och delas med andra.
 
+>[!NOTE]
+>Det finns också en separat och specialiserad version av **Power BI** som heter [**Power BI-rapportserver**](report-server/get-started.md), som är till för kunder som behöver ha kvar sina data och rapportering lokalt. Det finns även en specialiserad version av **Power BI Desktop** för användning med den versionen, som heter **Power BI Desktop för Power BI-rapportserver**, som bara fungerar med rapportserver-versionen av Power BI. Den här artikeln beskriver standardversionen av **Power BI Desktop**.
+
+
 ## <a name="how-power-bi-desktop-works"></a>Så här fungerar Power BI Desktop
 Med Power BI Desktop *ansluter du till data* (vanligtvis flera datakällor), *formar data* (med frågor som skapa insiktsfulla, övertygande datamodeller) och använder den modellen för att *skapa rapporter* (som andra kan dra nytta av, bygga vidare på och dela).
 
@@ -51,6 +55,8 @@ När stegen är klara så att du är nöjd – ansluta, forma och rapportera –
 Power BI Desktop centraliserar, förenklar och strömlinjeformar något som annars kan uppfattas som en utspridd, lösryckt och mödosam process med att business intelligence-centrallager och -rapporter.
 
 Är du redo att testa? Då sätter vi igång.
+
+
 
 ## <a name="install-and-run-power-bi-desktop"></a>Installera och kör Power BI Desktop
 Du kan hämta Power BI Desktop från **Power BI**-tjänsten genom att välja **kugghjuls**ikonen och sedan välja **Power BI Desktop**.

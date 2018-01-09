@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 11f233321f9be1db5afccad02edbe33900a555ca
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 1e68f7df5214e038df8bcd1584acb815c0af98bf
+ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disable-privacy-setting-in-power-bi-gateway---personal"></a>Inaktivera sekretessinställningarna i Power BI Gateway – Personal
 > [!NOTE]
@@ -59,7 +59,8 @@ Du kan använda följande steg för att aktivera snabb kombinering som din perso
     Om du inte är administratör är det följande plats.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
-2. Lägg till elementet **&lt;EnableFastCombine&gt; ** med värdet true i config-filen. När du lägger till det här elementet aktiveras **snabb kombinering**.
+    
+2. Lägg till elementet **&lt;EnableFastCombine&gt;** med värdet sant till konfigurationsfilen. När du lägger till det här elementet aktiveras **snabb kombinering**.
    
    <pre><code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code></pre>
    
@@ -77,7 +78,8 @@ Du kan använda följande steg för att aktivera snabb kombinering som din perso
     Om du inte är administratör är det följande plats.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
-2.Ta bort elementet **&lt;EnableFastCombine&gt;** från konfigurationsfilen. När du lägger till det här elementet inaktiveras **snabb kombinering**.
+
+2. Ta bort **&lt;EnableFastCombine&gt;**-elementet från konfigurationsfilen. När du lägger till det här elementet inaktiveras **snabb kombinering**.
 3. Avsluta och starta om konfigurationsskärmen för gatewayen.
 4. Du ser inte längre en status som visar att **snabb kombinering** har aktiverats.
 

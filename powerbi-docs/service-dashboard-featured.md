@@ -1,6 +1,6 @@
 ---
 title: Aktuella instrumentpaneler i Power BI
-description: Information om hur du skapar en aktuell instrumentpanel i Power BI
+description: "Dokumentation om hur du skapar en aktuell instrumentpanel i Power BI-tjänsten"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,27 +16,28 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: f87f13c71d60a8edc831a1fd9cc7d0a1d5656634
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 81ea6b32c6f61299c410325a432c521d8b402549
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="featured-dashboards-in-power-bi"></a>Aktuella instrumentpaneler i Power BI
+# <a name="featured-dashboards-in-power-bi-service"></a>Aktuella instrumentpaneler i Power BI-tjänsten
 ## <a name="create-a-featured-dashboard"></a>Skapa en aktuell instrumentpanel
-Många har en instrumentpanel som de besöker oftare än andra.  Det kan vara instrumentpanelen som du använder för din verksamhet eller en mängd paneler från många olika instrumentpaneler och rapporter.
+Många har en instrumentpanel som de besöker oftare än andra.  Det kan vara instrumentpanelen som du använder för din verksamhet, eller en instrumentpanel som är en sammanslagning av paneler från många olika instrumentpaneler och rapporter.
 
 ![](media/service-dashboard-featured/power-bi-feature-nav.png)
 
 När du väljer en instrumentpanel som *aktuella* kommer den att visas varje gång du öppnar Power BI-tjänsten.  
 
-> **OBS**: Du kan också välja ett par instrumentpaneler och ange dem som *Favoriter*. Se [favoritinstrumentpaneler](service-dashboard-favorite.md).
-> 
-> 
+Du kan även välja ut några instrumentpaneler och ställa in dem som *favorites*. Se [favoritinstrumentpaneler](service-dashboard-favorite.md).
 
-Om du inte har angett en aktuell instrumentpanel öppnas Power BI till den senaste instrumentpanelen som du använde.  
+> [!NOTE] 
+>Det här avsnittet gäller för Power BI-tjänsten och inte för Power BI Desktop.
+
+Om du inte har angett en aktuell instrumentpanel, öppnas Power BI till den senaste instrumentpanelen som du använde.  
 
 ### <a name="to-set-a-dashboard-as-featured"></a>Ange en instrumentpanel som **aktuell**
 Titta på när Amanda skapar en aktuell instrumentpanel och följ sedan anvisningarna under videon för att försöka själv.
@@ -70,6 +71,8 @@ Om du bestämmer dig för att du inte vill att en aktuell instrumentpanel kan du
 2. I menyraden överst, välj **Inaktivera aktuell**.
    
     ![](media/service-dashboard-featured/power-bi-unfeature.png)
+
+Nu öppnas Power BI till den senaste instrumentpanelen som du använde.  
 
 ## <a name="next-steps"></a>Nästa steg
 [Favoritmarkera en instrumentpanel](service-dashboard-favorite.md)

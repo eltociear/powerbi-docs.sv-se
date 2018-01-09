@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/02/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 7038587e567b2d8377f1ef77583f7baa9695fa58
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 6f63dd502e84433c8ecc40e28d0f518845546f90
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="opt-in-for-power-bi-preview-features"></a>Anmäl dig till förhandsversionsfunktioner i Power BI
 ## <a name="what-are-preview-features"></a>Vad är *förhandsversionsfunktioner*?
@@ -33,22 +33,16 @@ Efter hand som vi förbättrar Power BI släpper vi några nya funktioner som *f
 > 
 > 
 
-## <a name="current-previews-available"></a>Aktuella tillgängliga förhandsversioner
-**Förhandsversion av ArcGIS Maps för Power BI**Kombinationen av ArcGIS-kartor och Power BI tar mappningen längre än till bara presentation av punkter på en karta och till en helt ny nivå.
-[Ta en titt på ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop](power-bi-visualization-arcgis.md).
-
-## <a name="turn-the-arcgis-preview-feature-on-and-off"></a>Aktivera (eller inaktivera) förhandsversionsfunktionen ArcGIS
+## <a name="find-previews-and-turn-them-on-and-off"></a>Hitta förhandsversioner och aktivera dem (och inaktivera dem)
 1. Öppna inställningsmenyn genom att välja kugghjulsikonen längst upp till höger på Power BI-skärmen och välj **Inställningar**.
    
    ![](media/service-preview-features/power-bi-settings.png).
-2. Välj fliken **Allmänt** och välj **förhandsversionsfunktioner**.
+2. Välj fliken **allmänt**. Om förhandsgranskningar finns, ser du antingen ett alternativ för **förhandsgranskningsfunktioner** eller så ser du en förhandsgranskningsfunktion listad till vänster.  I det här exemplet har en förhandsgranskning listats för ArcGIS Maps. 
    
    ![](media/service-preview-features/power-bi-preview-arcgis.png)
-3. Välj alternativknappen **På** för att testa den nya upplevelsen. Klicka på **Godkänn**.
-4. För att inaktivera förhandsgranskningsfunktioner, följ steg 1 – 2 ovan. I steg 3, välj **Av** > **Tillämpa**.
+3. Välj alternativknappen **På** eller markera kryssrutan för att testa den nya upplevelsen. Välj därefter **Tillämpa**.
+4. Inaktivera förhandsgranskningsfunktioner genom att följa steg 1-3 ovan och i steg 3, väljer du **Av**, eller ta bort kryssmarkeringen och välj **Tillämpa**.
 
-## <a name="next-steps"></a>Nästa steg
-[Den nya navigeringsupplevelsen i Power BI](service-the-new-power-bi-experience.md)
 
 Har du några frågor eller feedback? [Besök Power BI Community](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/05/2017
+ms.date: 11/28/2017
 ms.author: asaxton
-ms.openlocfilehash: 3ee74e9a7f2f174b37e582089e0d9a1d6c433831
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 180e80ee327342b26849aa63a3910337737ac9ad
+ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="administering-power-bi-in-your-organization"></a>Administrera Power BI i din organisation
 Med Microsoft Power BI kan du visualisera data, dela upptäckter och samarbeta på nya och intuitiva sätt. Läs mer i [Kom igång med Power BI](service-get-started.md).
@@ -60,6 +60,7 @@ Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administra
 * [Bör jag vara medveten om några andra förberedelser?](#are-there-any-additional-things-i-should-be-prepared-for)
 * [Är detta kostnadsfritt? Kommer jag att debiteras för dessa licenser?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Var finns min Power BI-klient?](#where-is-my-power-bi-tenant-located)
+* [Vad är Power BI SLA (serviceavtal)?](#what-is-the-power-bi-sla)
 
 **Säkerhet i Power BI**
 
@@ -255,6 +256,9 @@ Licenser för **Power BI (kostnadsfri)** gäller för den kostnadsfria versionen
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Var finns min Power BI-klient?
 Information om platsen för din Power BI-klient, eller dataregion, finns i [Var finns min Power BI-klient?](service-admin-where-is-my-tenant-located.md)
+
+### <a name="what-is-the-power-bi-sla"></a>Vad är Power BI SLA?
+Mer information om Power BI SLA (serviceavtal) finns i artikeln [Licensvillkor och dokumentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) i avsnittet **Licensiering** på Microsoft Licensing-webbplatsen.
 
 ## <a name="security-in-power-bi"></a>Säkerhet i Power BI
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Uppfyller Power BI nationella, regionala och branschspecifika efterlevnadskrav?

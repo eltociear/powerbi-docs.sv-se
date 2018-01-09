@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: c1801db4135d6d97a940e593de37ca2886194b53
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 17073390cf19b742730712a8d39a353c7d541cd6
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Punktdiagram och bubbeldiagram i Power BI (självstudier)
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Dessa datapunkter kan vara jämnt eller ojämnt fördelade på den horisontala axeln, beroende på datan.
@@ -47,25 +47,30 @@ Ett bubbeldiagram ersätter datapunkterna med bubblor, med en *bubbelstorlek* so
 * att använda med kvadranter.
 
 ## <a name="create-a-scatter-chart"></a>Skapa ett punktdiagram
+Titta på det här videoklippet och se Skapa ett punktdiagram och följ stegen nedan för att skapa en egen.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Öppna Exemplet detaljhandelsanalys i [redigeringsvyn](service-interact-with-a-report-in-editing-view.md) och [lägg till en ny rapportsida](power-bi-report-add-page.md).
-2. Gå till fönstret fält, välj **Försäljning** > **Försäljning per kvadratmeter** och **Försäljning** > **Totalförsäljningsvarians i %**.
-3. I fältpanelen, väljer du **Distrikt > Distrikt**.
+
+Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill följa med kan du [hämta exemplet](sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
+
+1. Starta på en [tom rapportsida ](power-bi-report-add-page.md) och välj fälten **Försäljning** \> **Försäljning per kvm** och **Försäljning** >  **Total försäljningsvarians %**. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
+ 
+2. I fältpanelen, väljer du **Distrikt > Distrikt**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_pre_convert.png)
+    ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 4. Konvertera till ett punktdiagram. På panelen Visualiseringar väljer du ytdiagramsikonen.
    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
 5. Dra **Distrikt** från **Information** till **Förklaring**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_new.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
 
 Nu har vi ett punktdiagram som visar totalförsäljningsvarians i % längs Y-axeln och visar försäljning per kvadratmeter längs X-axeln.  Datapunkternas färger representerar distrikt.  Nu ska vi lägga till en tredje dimension.
 
 ## <a name="create-a-bubble-chart"></a>Skapa ett bubbeldiagram
 1. Dra **Försäljning** > **Försäljning detta år** > **Värdet** till området **Storlek** i fönstret Fält. 
    
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_size.png)
+   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
 2. Håll muspekaren över en bubbla.  Storleken på bubblan reflekterar **försäljning detta år**.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)

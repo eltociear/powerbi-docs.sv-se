@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/19/2017
+ms.date: 12/19/2017
 ms.author: asaxton
-ms.openlocfilehash: 14d4954cd747e7c578c693212401f57806001228
-ms.sourcegitcommit: 6e8fbbbcbe3e1a38207b29a9ca66ea94fb2a51fb
+ms.openlocfilehash: 76435200df843acc4ba60ebab09633aa8f5c258d
+ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Bädda in Power BI-innehåll i instrumentpaneler, rapporter och paneler
 
@@ -140,9 +140,9 @@ Om du bäddar in för kunderna behöver du vill göra följande.
 
 | Kapacitetsnod | Totalt antal kärnor<br/>*(Serverdel + klientdel)* | Serverdelskärnor | Klientdelskärnor | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 v-kärnor |0,5 kärnor, 3GB RAM-minne |0,5 kärnor | |1-300 |
-| A2 |2 v-kärnor |1 kärna, 5GB RAM-minne |1 kärna | |301-600 |
-| A3 |4 v-kärnor |2 kärnor, 10 GB RAM-minne |2 kärnor | |601–1200 |
+| A1 |1 v-kärnor |0,5 kärnor, 3GB RAM-minne |0,5 kärnor | 5 per sekund |1-300 |
+| A2 |2 v-kärnor |1 kärna, 5GB RAM-minne |1 kärna | 10 per sekund |301-600 |
+| A3 |4 v-kärnor |2 kärnor, 10 GB RAM-minne |2 kärnor | 15 per sekund |601–1200 |
 | A4 |8 v-kärnor |4 kärnor, 25 GB RAM-minne |4 kärnor |30 per sekund |1201–2400 |
 | A5 |16 v-kärnor |8 kärnor, 50 GB RAM-minne |8 kärnor |60 per sekund |2401–4800 |
 | A6 |32 v-kärnor |16 kärnor, 100 GB RAM-minne |16 kärnor |120 per sekund |4801–9600 |

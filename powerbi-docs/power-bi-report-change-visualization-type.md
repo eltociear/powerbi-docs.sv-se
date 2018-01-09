@@ -1,6 +1,6 @@
 ---
-title: "Ändra visualiseringstypen i en Power BI-rapport"
-description: "Ändra visualiseringstypen i en Power BI-rapport"
+title: "Ändra visualiseringstypen i en rapport"
+description: "Ändra typen av rapportvisualisering i Power BI-tjänsten och Power BI Desktop"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 629163044a48e15cbd5b2412f4da886cd373c56d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 40ca8c24ec79f61bf0c8b3db71fdd84cdbb6a109
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Ändra visualiseringstypen i en Power BI-rapport
-Prova olika typer av visualiseringar i Power BI för att se vilken som bäst illustrerar dina data. 
+Prova olika typer av visualiseringar i Power BI-tjänsten och Power BI Desktop för att se vilken som bäst illustrerar dina data. 
 
-1. Öppna din [rapport i redigeringsvy](service-reading-view-and-editing-view.md) och [skapa en visualisering](power-bi-report-add-visualizations-i.md) om din rapport inte redan har en.
+1. Öppna en rapport som redan har minst en visualisering.   
 2. I visualiseringspanelen väljer du ny visualiseringstyp.  
    
    ![](media/power-bi-report-change-visualization-type/changeviz.gif)

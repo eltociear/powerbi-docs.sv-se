@@ -1,6 +1,6 @@
 ---
-title: Publicera anpassade visuella objekt i Office Store
-description: "Lär dig hur du kan publicera anpassade visuella objekt i Office för andra att identifiera och använda."
+title: Publicera anpassad visuell information till AppSource
+description: "Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem."
 services: powerbi
 documentationcenter: 
 author: guyinacube
@@ -15,22 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/20/2017
+ms.date: 12/5/2017
 ms.author: asaxton
-ms.openlocfilehash: 13456711e6c3bdce4554df7b7fbc0e4e9943987a
-ms.sourcegitcommit: 12236d08c27c7ee3fabb7ef9d767e9dee693f8aa
+ms.openlocfilehash: 0d3608d30fdf689c2121e65c5c4cafb861c88c2e
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/06/2017
 ---
-# <a name="publish-custom-visuals-to-the-office-store"></a>Publicera anpassade visuella objekt i Office Store
-Lär dig hur du kan publicera anpassade visuella objekt i Office för andra att identifiera och använda.
+# <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
+Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem. office
 
-När du har skapat ditt anpassade visuella objekt vill du kanske publicera på Office Store så att andra kan hitta och använda det. Det finns vissa förberedelser som måste göras innan du kan göra det. Mer information om hur du skapar ett anpassat visuellt objekt finns i [Använda utvecklingsverktyg för att skapa anpassade visuella objekt](../service-custom-visuals-getting-started-with-developer-tools.md).
+När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det på AppSource så att andra kan hitta och använda det. Det finns vissa förberedelser som måste göras innan du kan göra det. Mer information om hur du skapar ett anpassat visuellt objekt finns i [Använda utvecklingsverktyg för att skapa anpassade visuella objekt](../service-custom-visuals-getting-started-with-developer-tools.md).
 
-![](media/office-store/powerbi-custom-visual-store.png)
+![](media/office-store/AppSource_01.jpg)
 
-Vad är Office Store? Kortfattat är detta platsen där du hittar appar (tillägg) för din Office 365-programvara. [Office Store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) ger miljontals Office 365-användare tillgång till lösningar som hjälper dem att utföra sitt arbete effektivare, insiktsfullare eller snyggare än tidigare.
+Vad är AppSource? Enkelt uttryckt är det här stället där du hittar SaaS-appar och tillägg för dina Microsoft-produkter och tjänster. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) ger miljontals användare av Office 365, Dynamics 365, Cortana Intelligence och andra tillgång till lösningar som hjälper dem att få mer jobb gjort på ett effektivare sätt, med mer insikt och snyggare än tidigare.
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Förbereda att skicka ditt anpassade visuella objekt
 När du är klar med att koda och testa ditt anpassade visuella objekt och har förpackat det i en pbiviz-fil bör du ha följande klart för din överföring.
@@ -53,18 +53,18 @@ Publiceringen börjar med att skicka ett e-postmeddelande till Power BI-teamet f
 Bifoga .pbiviz-filen och pbix-filen med exempelrapporten i ditt e-postmeddelande. Power BI-teamet kommer att svara med instruktioner och en XML-appaketsfil att överföra. Det här XML-appaketet krävs för att skicka ditt visuella objekt via Office Developer Center.
 
 > [!NOTE]
-> För att förbättra kvaliteten och säkerställa att befintliga rapporter inte bryts tar det ytterligare 2 veckor för uppdateringar i befintliga visuella objekt att nå produktionsmiljön efter att det har godkänts i Store.
+> För att förbättra kvaliteten och säkerställa att befintliga rapporter inte slutar fungera, tar det ytterligare 2 veckor för uppdateringar i befintliga visuella objekt att nå produktionsmiljön efter att de har godkänts i Store.
 > 
 > 
 
-## <a name="submitting-to-the-office-store"></a>Skickar till Office Store
-När du har hämtat XML-appaketet från Power BI-teamet ska du gå till [Office Developer Center](https://sellerdashboard.microsoft.com/Application/Summary) för att skicka ditt visuella objekt till Office Store.
+## <a name="submitting-to-appsource"></a>Skicka in till AppSource
+När du har hämtat XML-appaketet från Power BI-teamet, går du till [Developer Center](https://sellerdashboard.microsoft.com/Application/Summary) för att skicka ditt visuella objekt till AppSource.
 
 > [!NOTE]
 > Du måste ha ett giltigt Office-utvecklarkonto för att logga in på [Office Developer Center](https://dev.office.com/). Ett Office-utvecklarkonto måste vara ett Microsoft-konto (Live ID, t.ex. hotmail.com eller outlook.com).
 > 
 > [!IMPORTANT]
-> Innan du skickar till Office Store måste du skicka ett e-postmeddelande med .pbiviz-filen och .pbx-filen till Power BI-teamet. På så vis överför Power BI-teamet filerna till en offentlig resursserver. Annars kommer Office Store inte att hämta filerna. Du måste skicka filerna med varje ny överföring, uppdatering i det befintliga visuella objektet och korrigeringar till nekade överföringar i Office Store.
+> Innan du skickar till AppSource, måste du skicka ett e-postmeddelande med .pbiviz-filen och .pbx-filen till Power BI-teamet. På så vis kan Power BI-teamet överföra filerna till en offentlig resursserver. Annars kommer butiken inte att hämta filerna. Du måste skicka filerna med varje ny inlämning av visuella objekt, uppdatering av visuella objekt och korrigeringar av avvisade inlämningar.
 > 
 > 
 

@@ -15,32 +15,33 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 2f428095eb57c5358770f1d6d8572316d2b84c37
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: f3401fac7b0e7e6b5b5404a5a837822772e1d70f
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="doughnut-charts-in-power-bi-tutorial"></a>Ringdiagram i Power BI (självstudier)
 Ett ringdiagram liknar ett cirkeldiagram så till vida att det visar förhållandet mellan delarna och helheten. Den enda skillnaden är att mitten är tom och har utrymme för en etikett eller ikon.
 
 ## <a name="create-a-doughnut-chart"></a>Skapa ett ringdiagram
-Om du vill hänga på loggar du in i Power BI och väljer **Hämta data** \> **Exempel** \> **Exempel på detaljhandelsanalys**\>**Anslut**. 
+De här anvisningarna använder exemplet på detaljhandelsanalys för att skapa ett cirkeldiagram som visar försäljning detta år efter kategori. Om du vill följa med kan du [hämta exemplet](sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.
 
-1. Välj panelen **Totalt antal butiker** från instrumentpanelen för att öppna rapporten ”Exempel på detaljhandelsanalys”.
-2. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
-3. [Lägg till en ny rapportsida](power-bi-report-add-page.md).
-4. Skapa ett ringdiagram som visar årets försäljning efter kategori.
+1. Starta på en [tom rapportsida ](power-bi-report-add-page.md) och välj fältet **SalesStage** \> **Försäljningssteg**. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
+
+2. I Fält-panelen, väljer du **Försäljning** \> **Senaste årets försäljning**.  
    
-   * Välj **Försäljning** \> **Last Year Sales (Förra årets försäljning)** på panelen **Fält**.
-   * Konvertera till ett ringdiagram. Om Last Year Sales (Förra årets försäljning) inte befinner sig i området **Värden** dra du den dit.
+3. I fönstret visualiseringar, väljer du ikonen för cirkeldiagrammet ![cirkeldiagramsikonen]() för att konvertera ditt stapeldiagram till ett cirkeldiagram. Om **Fjolårets försäljning** inte är i **Värden**-området, drar du det dit.
      
-       ![](media/power-bi-visualization-doughnut-charts/convertdonut.png)
-   * Välj **Objekt** \> **Kategori** för att lägga till den i området **Förklaring**. 
+   ![](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-chart.png)
+
+4. Välj **Objekt** \> **Kategori** för att lägga till den i området **Förklaring**. 
      
-       ![](media/power-bi-visualization-doughnut-charts/doughnuttutorial.png)
+    ![](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-done.png)
+
+5. Du kan också [justera storlek och färg för diagramtexten](power-bi-visualization-customize-title-background-and-legend.md). 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * Summan av ringdiagrammets värden måste uppgå till 100 %.

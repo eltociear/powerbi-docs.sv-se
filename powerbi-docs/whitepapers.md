@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/14/2017
 ms.author: asaxton
-ms.openlocfilehash: e6821e20dbbb9b69ec4afa9ef48e1fb78bb8b3f5
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a4ceeda4d56853df42da8e5c644b3946878a89f0
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -37,9 +37,9 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | [Avancerade analyser med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver funktionerna i Power BI, inklusive förutsägelseanalyser, anpassade visualiseringar, R-integrering och data-analysuttryck. |
 | [Dubbelriktad filtrering](desktop-bidirectional-filtering.md) |Förklarar dubbelriktad korsfiltrering i Power BI Desktop (det omfattar även SQL Server Analysis Services 2016, som har samma funktioner). |
 | [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |DirectQuery har gjorts om för avsevärt förbättrad hastighet och prestanda för SQL Server 2016, men det är nu också mer komplext att förstå och implementera. |
-| [Styrning](service-admin-governance.md) |Innehåller ett ramverk för att öka avkastningen på investeringar som rör Power BI |
+| [Styrning](service-admin-governance.md) |Ger ett ramverk för att öka avkastningen på investeringar som rör Power BI. |
 | [Säkerhet](service-admin-power-bi-security.md) |Ge en detaljerad förklaring av säkerheten i Power BI. |
 | [Skydda en Tabular BI-semantikmodell](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Det här dokumentet beskriver säkerhetsmodellen för Tabular BI-semantik och Power BI. Du får lära dig att skapa roller, implementera dynamisk säkerhet, konfigurera inställningar för personifiering, hantera roller och välja en metod för att ansluta till modeller som fungerar i ditt nätverks säkerhetskontext. |
 | [Vägledning för kapacitetsplanering för Power BI-rapportserver](report-server/capacity-planning.md) |Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. |
-
+|[Power BI Premium planering och distribution](https://aka.ms/Premium-Capacity-Planning-Deployment) | Teknisk vitbok med metodtips och riktlinjer för planering, distribution och operationalisering av Power BI Premium. 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

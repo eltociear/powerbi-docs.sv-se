@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/07/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 398658f34a185514906fd5d649ae4117daf94071
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: e2f1ca5abf05c92e76497d7b50600e6ef12e03fc
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Ta bort på nästan vad som helst i Power BI-tjänsten
 Den här artikeln lär dig hur du tar bort en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app, visualisering och arbetsyta i Power BI-tjänsten.
@@ -35,8 +35,8 @@ Instrumentpaneler kan tas bort. När du tar bort en instrumentpanel tas inte den
 
 ### <a name="to-delete-a-dashboard"></a>Ta bort en instrumentpanel
 1. Stanna kvar på arbetsytan och välj fliken **Datauppsättningar**.
-2. Leta upp instrumentpanelen som du vill ta bort och välj ikonen Ta bort ![](media/service-delete/power-bi-delete-icon.png). 
-   
+2. Leta upp instrumentpanelen som du vill ta bort och välj ikonen Ta bort ![](media/service-delete/power-bi-delete-icon.png).
+
     ![](media/service-delete/power-bi-delete-dash.gif)
 
 ## <a name="delete-a-report"></a>Ta bort en rapport
@@ -45,16 +45,16 @@ Oroa dig inte, att ta bort en rapport påverkar inte datauppsättningen som den 
 ### <a name="to-delete-a-report"></a>Så här tar du bort en rapport
 1. Stanna kvar på arbetsytan och välj fliken **Rapporter**.
 2. Leta upp rapporten för att ta bort och välj ikonen Ta bort ![](media/service-delete/power-bi-delete-icon.png).   
-   
+
     ![](media/service-delete/power-bi-delete-reportnew.png)
 3. Bekräfta borttagningen.
-   
+
    ![](media/service-delete/power-bi-delete-report.png)
-   
+
    > [!NOTE]
    > Om rapporten är en del av ett [innehållspaket](service-organizational-content-pack-introduction.md) kan du inte ta bort den med den här metoden.  Se [Ta bort din anslutning till ett organisationsinnehållspaket](service-organizational-content-pack-disconnect.md).
-   > 
-   > 
+   >
+   >
 
 ## <a name="delete-a-workbook"></a>Ta bort en arbetsbok
 Arbetsböcker kan tas bort. Men om du tar bort en arbetsbok tar också bort alla rapporter och instrumentpaneler som innehåller data bort från den här arbetsboken.
@@ -64,46 +64,46 @@ Om arbetsboken lagras på OneDrive för företag raderas den inte från OneDrive
 ### <a name="to-delete-a-workbook"></a>Så här tar du bort en arbetsbok
 1. Stanna kvar på arbetsytan och välj fliken **Arbetsböcker**.
 2. Leta upp arbetsboken att ta bort och välj ikonen Ta bort ![](media/service-delete/power-bi-delete-report2.png).
-   
+
     ![](media/service-delete/power-bi-delete-workbooknew.png)
 3. Bekräfta borttagningen.
-   
+
    ![](media/service-delete/power-bi-delete-confirm.png)
 
 ## <a name="delete-a-dataset"></a>Ta bort en datauppsättning
-Datauppsättningar kan tas bort. Men om du tar bort en datauppsättning tas även alla rapporter och instrumentpaneler bort som innehåller data från denna datauppsättning.
+Datauppsättningar kan tas bort. Men om du tar bort en datauppsättning tas även alla rapporter och instrumentpaneler bort som innehåller data från den datauppsättningen.
 
 Om en datauppsättning är en del av en eller flera [organisationsinnehållspaket](service-organizational-content-pack-disconnect.md) är det enda sättet att ta bort den att ta bort den från innehållshanteringspaketet där den har används, vänta tills den bearbetas och sedan försöka ta bort den igen.
 
 ### <a name="to-delete-a-dataset"></a>Ta bort en datauppsättning
 1. Stanna kvar på arbetsytan och välj fliken **Datauppsättningar**.
 2. Leta upp datauppsättningen att ta bort och välj ellipserna (...).  
-   
+
     ![](media/service-delete/power-bi-delete-datasetnew.png)
 3. I listrutan väljer du **Ta bort**.
-   
+
    ![](media/service-delete/power-bi-delete-datasetnew2.png)
 4. Bekräfta borttagningen.
-   
+
    ![](media/service-delete/power-bi-delete-dataset-confirm.png)
 
 ## <a name="delete-an-app-workspace"></a>Ta bort en apparbetsyta
 > [!WARNING]
-> När du skapar en apparbetsyta skapar du en grupp för Office 365. Och när du tar bort en apparbetsyta tar du bort den gruppen för Office 365. Det innebär att gruppen tas bort från andra O365 produkter som SharePoint och Microsoft-Teams. 
-> 
-> 
+> När du skapar en apparbetsyta skapar du en grupp för Office 365. Och när du tar bort en apparbetsyta tar du bort den gruppen för Office 365. Det innebär att gruppen tas bort från andra O365 produkter som SharePoint och Microsoft-Teams.
+>
+>
 
 Som författare av apparbetsytan kan du ta bort den. När du tar bort den tas den kopplade appen bort för alla medlemmar i gruppen och tas bort från din AppSource om du har publicerat appen till hela organisationen. Att ta bort en apparbetsyta skiljer sig från att lämna en apparbetsyta.
 
 ### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Ta bort en apparbetsyta – om du är administratör
 1. Välj **Arbetsytor** i det vänstra navigeringsfältet
-   
+
     ![](media/service-delete/power-bi-delete-workspace.png)
 2. Välj ellipserna (...) till höger om arbetsytan som ska tas bort och välj **Redigera arbetsyta**.
-   
+
    ![](media/service-delete/power-bi-edit-workspace.png)
 3. I fönstret **Redigera arbetsyta** väljer du **Ta bort arbetsyta** > **Ta bort**.
-   
+
     ![](media/service-delete/power-bi-delete-workspace2.png)
 
 ### <a name="to-remove-an-app-workspace-from-your-list"></a>Ta bort en apparbetsyta från listan
@@ -111,18 +111,18 @@ Om du inte längre vill vara medlem i en apparbetsyta kan du ***lämna*** den s�
 
 > [!IMPORTANT]
 > Om du är den enda administratören för apparbetsytan kommer inte Power BI att låta dig lämna den.
-> 
-> 
+>
+>
 
 1. Börja i apparbetsytan som du vill ta bort.
 2. Välj ellipserna (...) i det övre högra hörnet och välj **Lämna arbetsytan** > **Lämna**.
-   
+
       ![](media/service-delete/power-bi-leave-workspace.png)
-   
+
    > [!NOTE]
    > Vilka alternativ som visas i listrutan beror på om du är en administratör eller medlem i apparbetsytan.
-   > 
-   > 
+   >
+   >
 
 ## <a name="delete-or-remove-an-app"></a>Radera eller ta bort en App
 Appar kan enkelt tas bort från listan med appar. Men endast administratörer kan ta bort en app permanent.
@@ -132,10 +132,10 @@ Om du tar bort en app från applistan tas den inte bort för andra medlemmar.
 
 1. Välj **Appar** i det vänstra navigeringsfältet för att öppna sidan med appar.
 2. Håll muspekaren över en app för att ta bort den och välj ikonen Ta bort ![](media/service-delete/power-bi-delete-report2.png).
-   
+
    ![](media/service-delete/power-bi-delete-app.png)
-   
-   Om du tar bort en app av misstag har du flera alternativ för att få den tillbaka.  Du kan be appskaparen att skicka om den, hitta det ursprungliga aviseringsmeddelandet med länken till appen, kontrollera om aviseringen för appen fortfarande finns i ditt aktivitetscenter eller kontrollera organisationens AppSource.
+
+   Om du tar bort en app av misstag har du flera alternativ för att få den tillbaka.  Du kan be appskaparen att skicka den igen, du kan hitta det ursprungliga e-postmeddelandet med länken till appen, du kan kolla i ditt [Aktivitetscenter](service-notification-center.md) för att se om meddelandet för den appen fortfarande listas eller så kan du kontrollera din organisations [AppSource](service-install-use-apps.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Den här artikeln visar hur du tar bort de primära byggstenarna för Power BI-tjänsten. Men det finns flera saker som du kan ta bort i Power BI.  
@@ -146,5 +146,4 @@ Den här artikeln visar hur du tar bort de primära byggstenarna för Power BI-t
 * [Ta bort en instrument](service-dashboard-edit-tile.md)
 * [Ta bort en rapportvisualisering](service-delete.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/) 
-
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

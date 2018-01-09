@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 231bf7febb19583414d976cc612d06c2caa1e246
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 91c185a082cebc6a9196e0e86898fe366363f8c2
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="funnel-charts-tutorial"></a>Trattdiagram (självstudier)
 Med ett trattdiagram kan du visualisera en linjär process med intilliggande steg. Ett trattdiagram över försäljning som följer kunderna genom stadier: \>Uppslag \> Uppslag med potential \> Kontrakt \> Sälj.  Trattens form ger en översikt över processens tillstånd.
@@ -59,15 +59,15 @@ Se hur Will skapar ett trattdiagram med exemplet på försäljning och marknadsf
 
 Nu kan du skapa ett eget trattdiagram som visar antalet möjligheter i varje försäljningsstadium.
 
-Dessa anvisningar använder sig av Exempel på affärsmöjlighetsanalys. Följ med i instruktionerna genom att [hämta exemplet](sample-datasets.md), logga in till Power BI och välja **Hämta data \> Exempel \> Exempel på affärsmöjlighetsanalys \> Anslut**.
+Dessa anvisningar använder sig av Exempel på affärsmöjlighetsanalys. Om du vill följa med kan du [hämta exemplet](sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
 
-1. Starta på en [tom rapportsida ](power-bi-report-add-page.md)i [redigeringsvyn](service-interact-with-a-report-in-editing-view.md) och välj fältet **SalesStage** \> **Försäljningssteg**.  
+1. Starta på en [tom rapportsida ](power-bi-report-add-page.md) och välj fältet **SalesStage** \> **Försäljningssteg**. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
    
     ![](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Konvertera diagrammet](power-bi-report-change-visualization-type.md) till en tratt. Observera att **Försäljningssteg** är i brunnen **Grupp**. 
 3. Från fönstret **Fält** väljer du **Fakta** \> **Antal affärsmöjligheter**.
    
-    ![](media/power-bi-visualization-funnel-charts/funnelfinal_new.png)
+    ![](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
 4. Håll muspekaren över en stapel för att visa en mängd information.
    
    * Stegets namn
@@ -90,14 +90,13 @@ Om du markerar ett fält i trattdiagrammet korsfiltreras de övriga visualiserin
 2. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](service-reports-visual-interactions.md)
 
 ## <a name="create-a-funnel-chart-in-qa"></a>Skapa ett trattdiagram i frågor och svar
-Markera en instrumentpanel som har minst en visualisering från datauppsättningen ”möjlighetsspårning”.  När du skriver en fråga i Frågor och svar söker Power BI efter svar i alla datauppsättningar som är associerade med (har fästa paneler) den valda instrumentpanelen. Mer information finns i [Power BI – grundläggande koncept](service-basic-concepts.md).
+Öppna instrumentpanelen exempel på analys av affärsmöjligheter eller en instrumentpanel som har minst en visualiseringen fäst från datauppsättningen för exempel på analys av affärsmöjligheter.  När du skriver en fråga i Frågor och svar söker Power BI efter svar i alla datauppsättningar som är associerade med (har fästa paneler) den valda instrumentpanelen. Mer information finns i [Power BI – grundläggande koncept](service-basic-concepts.md).
 
-1. Markera en instrumentpanel som har minst en panel från datauppsättningen ”möjlighetsspårning”.
-2. Skriv din fråga i Frågor och svar.
+1. I instrumentpanelen för exemplet på analys av affärsmöjligheter, skriver du in din fråga i frågerutan Frågor och svar.
    
    ![](media/power-bi-visualization-funnel-charts/funnelfromqna_new.png)
    
-   Var noga med att lägga till ”som tratt” så att Power BI vet vilken typ av visuellt objekt som du föredrar.
+2. Var noga med att lägga till ”som tratt” så att Power BI vet vilken typ av visuellt objekt som du föredrar.
 
 ## <a name="next-steps"></a>Nästa steg
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
