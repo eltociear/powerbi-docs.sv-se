@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/30/2017
+ms.date: 12/21/2017
 ms.author: asaxton
-ms.openlocfilehash: c10ca76ac96090ff1facbdd28210b680392aae8d
-ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
+ms.openlocfilehash: 491be8983967b1a5dce6579411f194117602b00c
+ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Säkerhet på radnivå med inbäddat innehåll i Power BI
-Säkerhet på radnivå (RLS) kan användas för att begränsa åtkomst till data i en rapport eller datauppsättning, vilket gör att flera olika användare kan använda samma rapport när alla se olika data. RLS kan användas för att bädda in rapporter i Power BI.
+Säkerhet på radnivå (RLS) kan användas för att begränsa användares åtkomst till data i instrumentpaneler, paneler, rapporter och datauppsättningar. Flera olika användare kan arbeta med samma artefakter och alla se olika data. Inbäddning har stöd för RLS.
 
-Om du bäddar in för Power BI-användare (appen äger data), vanligtvis är ett ISV-scenario, är den här artikeln rätt för dig! Du behöver konfigurera en inbäddningstoken för användaren och rollen. Läs vidare för att lära dig hur du gör detta.
+Om du bäddar in för användare som inte använder Power BI (appen äger data), vilket vanligtvis är ett ISV-scenario, är det här rätt artikel för dig. Du behöver konfigurera en inbäddningstoken för användaren och rollen. Läs vidare för att lära dig hur du gör detta.
 
 Om du bäddar in till Power BI-användare (användare äger data) i din organisation fungerar RLS på samma sätt som i Power BI-tjänsten. Du behöver inte göra något mer i din app. Mer information finns i [säkerhet på radnivå (RLS) med Power BI](../service-admin-rls.md).
 
@@ -34,7 +34,7 @@ Om du bäddar in till Power BI-användare (användare äger data) i din organisa
 
 För att använda RLS är det viktigt att du förstå tre huvudsakliga koncept: användare, roller och regler. Låt oss ta en närmare titt på var och en:
 
-**Användare** – dessa är de faktiska slutanvändarna som visar rapporter. Användare identifieras av username-egenskapen i en inbäddningstoken i Power BI Embedded.
+**Användare** – slutanvändare visar artefakten (instrumentpanel, panel, rapport eller datauppsättning). Användare identifieras av username-egenskapen i en inbäddningstoken i Power BI Embedded.
 
 **Roller** – användare tillhör roller. En roll är en behållare för regler och har namn som *försäljningschef* eller *säljare*. Du kan skapa roller i Power BI Desktop. Mer information finns i [Säkerhet på radnivå (RLS) med Power BI Desktop](../desktop-rls.md).
 
@@ -85,11 +85,11 @@ Nu när du har konfigurerat din Power BI Desktop-roller måste du vidta vissa å
 
 Användare är autentiserade och auktoriserade av ditt program och bäddar in tokens som används för att bevilja användaren åtkomst till en viss Power BI Embedded-rapport. Power BI Embedded har inte någon särskild information om vem din användare är. För att RLS ska fungera måste du skicka ytterligare kontext som del av din inbäddade token som identiteter. Detta görs med API:et [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
-API:et [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) accepterar en lista med identiteter med information om relevanta datauppsättningar. Endast en identitet kan anges för tillfället. Stöd för flera datauppsättningar för inbäddning i instrumentpanelen kommer att läggas till i framtiden. För att RLS ska fungera måste du skicka följande som en del av identiteten.
+API:et [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) accepterar en lista med identiteter med information om relevanta datauppsättningar. För att RLS ska fungera måste du skicka följande som en del av identiteten.
 
 * **användarnamn (obligatorisk)** – detta är en sträng som kan användas för att identifiera användaren när du använder RLS-regler. Det går bara att lista enskilda användare.
 * **Roller (obligatorisk)** – en sträng som innehåller rollerna som kan väljas vid tillämpning av säkerhet på radnivå. Om du skickar mer än en roll bör de skickas som strängmatris.
-* **Datauppsättning (obligatorisk)** – datauppsättningen som gäller för rapporten du bäddar in. Det går endast att ange en datauppsättning i listan över datauppsättningar. Stöd för flera datauppsättningar för inbäddning i instrumentpanelen kommer att läggas till i framtiden.
+* **datauppsättning (obligatoriskt)** – datauppsättningen som gäller för artefakten du bäddar in. 
 
 Du kan skapa en inbäddningstoken med hjälp av metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**. För närvarande stöds endast rapporter.
 
@@ -125,7 +125,7 @@ Om du anropar REST API accepterar det uppdaterade API:et nu ytterligare en JSON-
 }
 ```
 
-Om någon loggar in nu för att visa rapporten när alla delar är tillsammans kan de bara se de data som de har behörighet att visa enligt definitionen i våra säkerhetsinställningar på radnivå.
+Nu är allt på plats. När någon nu loggar in i programmet för att visa artefakten syns bara de data personen har behörighet att visa enligt vad som definieras av säkerhetsinställningarna på radnivå.
 
 ## <a name="working-with-analysis-services-live-connections"></a>Arbete med realtidsanslutningar till Analysis Services
 Säkerhet på radnivå kan användas med Analysis Services liveanslutningar för lokala servrar. Det finns några specifika begrepp som du bör känna till när du använder den här typen av anslutning.
@@ -143,12 +143,11 @@ Roller kan tilldelas med en identitet i en inbäddad token. Om ingen roll anges 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 * Tilldelningen av användare till roller i Power BI-tjänsten påverkar inte RLS när du använder en inbäddningstoken.
 * Medan Power BI-tjänsten inte tillämpar RLS-inställningar för administratörer eller medlemmar som har behörighet att redigera tillämpas identiteter med en inbäddad token på data.
-* Det finns endast stöd för att skicka identitetsinformation när du anropar GenerateToken för läs-/skrivläge. Stöd för andra resurser kommer senare.
 * Analysis Services realtidsanslutningar stöds för lokala servrar.
 * Azure Analysis Services live-anslutningar stöder filtrering efter roller, men inte dynamiska efter användarnamn.
 * Om den underliggande datamängden inte kräver RLS får GenerateToken-begäran **inte** innehålla en effektiv identitet.
-* Om den underliggande datamängden är en molnmodell (cachelagrade modell eller DirectQuery) måste den effektiva identiteten innehålla minst en roll. Annars utförs inte rolltilldelningen.
-* Endast en identitet kan anges i listan över identiteter. Vi använder en lista för att aktivera flera identitetstokens för inbäddning i instrumentpanelen i framtiden.
+* Om den underliggande datauppsättningen är en molnmodell (cachelagrad modell eller DirectQuery) måste den effektiva identiteten innehålla minst en roll, annars sker ingen rolltilldelning.
+* En lista över identiteter möjliggör flera identitetstoken för inbäddning av instrumentpanelen. För andra artefakter innehåller listan en enstaka identitet.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
