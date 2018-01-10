@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: asaxton
-ms.openlocfilehash: 4dd18fba5b5e3da0f8973a77166551086cc3f3cf
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8285cbbc2d8dee653863cad50036da58362c32d1
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-report-into-an-app-for-your-organization"></a>Integrera en rapport i en app för din organisation
 Lär dig att integrera eller bädda in en rapport i en webbapp med hjälp av REST API-anrop, tillsammans med Power BI:s JavaScript-API vid inbäddning för din organisation.
@@ -41,7 +41,7 @@ Om du vill integrera en rapport i en webbapp använder du **Power BI** REST-API 
 Artikeln visar den kod som används i [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app) på GitHub. Om du vill följa den här genomgången kan du ladda ned exemplet.
 
 ## <a name="step-1---register-an-app-in-azure-ad"></a>Steg 1 – Registrera en app i Azure AD
-Du behöver registrera ditt program med Azure AD för att kunna göra REST API-anrop. Mer information finns i [Registrera en Azure AD-app för att bädda in Power BI-innehåll](register-app.md).
+Du måste registrera ditt program med Azure AD för att kunna göra REST API-anrop. Mer information finns i [Registrera en Azure AD-app för att bädda in Power BI-innehåll](register-app.md).
 
 Om du hämtade [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app) använder du det **klient-ID** och den **klienthemlighet** som du fick efter registreringen, så att exemplet kan autentisera till Azure AD. Om du vill konfigurera exemplet ändrar du **Klient-ID** och **Klienthemlighet** i filen *cloud.config*.
 
@@ -54,7 +54,7 @@ I ditt program måste du först hämta en **åtkomsttoken** från Azure AD innan
 Hämta en **Power BI**-rapport genom att använda åtgärden [Hämta rapporter](https://msdn.microsoft.com/library/mt634543.aspx) som hämtar en lista med **Power BI**-rapporter. Du kan hämta ett rapport-ID från listan med rapporter.
 
 ### <a name="get-reports-using-an-access-token"></a>Hämta rapporter med hjälp av en åtkomsttoken
-Med den **åtkomsttoken** du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta rapporter](https://msdn.microsoft.com/library/mt634543.aspx). Åtgärden [Hämta rapporter](https://msdn.microsoft.com/library/mt634543.aspx) returnerar en lista med rapporter. Du kan hämta en enda rapport från listan med rapporter. Nedan finns en komplett C#-metod för att hämta en rapport. Exempel på hur du använder Power BI REST API finns i [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+Med den **åtkomsttoken** du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta rapporter](https://msdn.microsoft.com/library/mt634543.aspx). Åtgärden [Hämta rapporter](https://msdn.microsoft.com/library/mt634543.aspx) returnerar en lista med rapporter. Du kan hämta en enda rapport från listan med rapporter. Nedan finns en komplett C#-metod för att hämta en rapport. 
 
 Om du vill göra REST API-anrop måste du inkludera en *auktoriserings*rubrik i formatet *Ägare {åtkomsttoken}*.
 

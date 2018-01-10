@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: asaxton
-ms.openlocfilehash: f3968fd9fb89e868754bb6025a23fdbd028a3965
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: fdcefb11187e92063f239967cf4d245347f54683
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Integrera en instrumentpanel i en app för din organisation
 Lär dig att integrera eller bädda in en instrumentpanel i en webbapp med hjälp av REST API-anrop, tillsammans med Power BI JavaScript-API vid inbäddning för din organisation.
@@ -56,7 +56,7 @@ Hämta en **Power BI**-instrumentpanel genom att använda åtgärden [Hämta ins
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### <a name="get-dashboards-using-an-access-token"></a>Hämta instrumentpaneler med hjälp av en åtkomsttoken
-Med den **åtkomsttoken** som du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx). Åtgärden [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx) returnerar en lista över instrumentpaneler. Du kan hämta en enda instrumentpanel från listan över instrumentpaneler. Nedan finns en komplett C#-metod för att hämta en instrumentpanel. Exempel på hur du använder Power BI REST API finns i [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+Med den **åtkomsttoken** som du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx). Åtgärden [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx) returnerar en lista över instrumentpaneler. Du kan hämta en enda instrumentpanel från listan över instrumentpaneler. Nedan finns en komplett C#-metod för att hämta en instrumentpanel. 
 
 Om du vill göra REST API-anrop måste du inkludera en *auktoriserings*rubrik i formatet *Ägare {åtkomsttoken}*.
 

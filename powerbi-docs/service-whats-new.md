@@ -17,17 +17,17 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/01/2017
 ms.author: sirsu
-ms.openlocfilehash: 7f01ed805358b5b74a32ae26fb757f592c617088
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 8b03eb9659d4f2c984200db16daa6de017e73de7
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
 
 * [Nyheter i Power BI Desktop](desktop-latest-update.md)  
-* [Nyheter i mobilappar för Power BI](mobile-whats-new-in-the-mobile-apps.md)  
+* [Nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md)  
 * [Power BI-teamets blogg](https://powerbi.microsoft.com/blog/)
 
 Du kan också besöka våra YouTube-kanaler för information om nyheter och funktioner.
@@ -167,7 +167,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 **28 april 2016**
 
-* [Quick Insights på instrumentpaneler](service-insights.md#run-quick-insights-on-a-dashboard-tile): När du visar en panel i fokusläge kan du klicka på hämta insikter för att söka efter samband, avvikare, trender, säsongsvärden, ändrade punkter i trender och större faktorer automatiskt inom sekunder.
+* [Quick Insights på instrumentpaneler](service-insights.md): När du visar en panel i fokusläge kan du klicka på hämta insikter för att söka efter samband, avvikare, trender, säsongsvärden, ändrade punkter i trender och större faktorer automatiskt inom sekunder.
 
 För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -589,10 +589,6 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 * Få snabba insikter om ditt konto på QuickBooks Online med hjälp av vår [innehållspaket](http://blogs.msdn.com/b/powerbi/archive/2015/05/28/get-quick-insights-into-your-quickbooks-online-account-data.aspx). Mer information om hur du kommer igång finns i dokumentationen för innehållspaketet [Quick Books Online för Power BI](service-connect-to-quickbooks-online.md).
 
-**19 maj 2015**
-
-* Med den här uppdateringen kan du nu ansluta till [Twilio via vårt innehållspaketet](service-connect-to-twilio.md)
-* API:et för Power BI har nya tillägg! Du kan nu visa en [lista över alla tabeller](http://docs.powerbi.apiary.io/#reference/datasets/tables-collection/list-all-tables) och [uppdatera ett befintligt tabellschema](http://docs.powerbi.apiary.io/#reference/datasets/table/update-an-existing-tables-schema)
 
 **13 maj 2015**
 

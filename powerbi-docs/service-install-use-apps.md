@@ -16,11 +16,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 87fd7f9b881c6af482cc3a644e77b0a95ea1743c
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 604aed25b4702525cfbecde9c6fe18ded8c41994
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 I Power BI samordnar *appar* relaterade instrumentpaneler och rapporter på ett och samma ställe. Personer i organisationen kan skapa och distribuera appar med viktig information. [Externa tjänster](service-connect-to-services.md), som du kanske redan använder, t.ex. Google Analytics och Microsoft Dynamics CRM, erbjuder också Power BI-appar. 
@@ -63,7 +63,7 @@ Du kan också söka efter och installera alla program som du har åtkomst till f
 3. Välj **Hämta den nu** om du vill lägga till den på sidan Appar. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagera med instrumentpaneler och rapporter i appen
-Nu kan du utforska data i instrumentpanelerna och rapporterna i appen. Du har åtkomst till alla Power BI-standardinteraktioner som filtrering, syntaxmarkering, sortering och detaljinformation. Läs mer i [Interagera med rapporter i Power BI](service-interact-with-a-report-in-reading-view.md). 
+Nu kan du utforska data i instrumentpanelerna och rapporterna i appen. Du har åtkomst till alla Power BI-standardinteraktioner som filtrering, syntaxmarkering, sortering och detaljinformation. Läs mer i [Interagera med rapporter i Power BI](service-reading-view-and-editing-view.md). 
 
 Du kan inte spara de ändringar du gör, men du kan alltid [exportera data till Excel ](power-bi-visualization-export-data.md) från en tabell eller annat visuellt objekt i en rapport.
 

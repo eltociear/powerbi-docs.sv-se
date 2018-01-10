@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: c8baa19eef8210a375e77acee379389ccd5dbade
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 82519877ac9a9603d87f20fc3f1155af34421078
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report-tutorial"></a>Del 1, Lägga till visualiseringar i en Power BI-rapport (självstudie)
 Den här artikeln ger en snabb introduktion till att skapa en visualisering i en rapport.  För mer avancerat innehåll, se [del II](power-bi-report-add-visualizations-ii.md). Amanda visar ett par sätt att skapa, redigera och formatera visuella objekt på rapportarbetsytan. Prova sedan att skapa en egen rapport med hjälp av den [Försäljning- och marknadsföringsexempel](sample-datasets.md).
@@ -64,7 +64,7 @@ Den här artikeln ger en snabb introduktion till att skapa en visualisering i en
    
    Fortsätta till [Del 2, Lägga till visualiseringar i en Power BI-rapport](power-bi-report-add-visualizations-ii.md)
    
-   [Interagera med visualiseringar](service-interact-with-a-report-in-reading-view.md) i rapporten.
+   [Interagera med visualiseringar](service-reading-view-and-editing-view.md) i rapporten.
    
    [Gör ännu mer med visualiseringar](power-bi-report-visualizations.md).
    

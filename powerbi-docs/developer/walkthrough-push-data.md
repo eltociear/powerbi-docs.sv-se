@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/10/2017
+ms.date: 01/05/2017
 ms.author: asaxton
-ms.openlocfilehash: e62b08614a38502fb79f48f369013d32fd538659
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: aba135a0a790025f732379ecb07157f1150d999c
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 Med Power BI-API:et kan du skicka data till en Power BI-datauppsättning. Om du till exempel vill utöka ett befintligt företagsarbetsflöde för att skicka viktiga data till din datauppsättning. I det här fallet vill du skicka en datauppsättning med försäljning och marknadsföring som har en produkttabell till en datauppsättning.
@@ -38,7 +38,7 @@ Innan du sätter igång med att skicka data till en datauppsättning, behöver d
 Nästa avsnitt är en allmän diskussion av Power BI-API-åtgärder som skickar data.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Power BI-API-åtgärder för att skicka data
-Med Power BI REST API:et kan du skicka datakällor till Power BI. När en app lägger till rader till en datauppsättning, uppdateras paneler på instrumentpanelen automatiskt med uppdaterade data. För att skicka data använder du åtgärden [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) tillsammans med åtgärden [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx). Om du vill hitta en datauppsättning, använder du åtgärden [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx). För vilken som av de här åtgärderna, kan du skicka ett grupp-ID för att arbeta med en grupp. Använd åtgärden [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) för att hämta en lista över grupp-ID:er. Exempel på hur du använder Power BI REST API finns i [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+Med Power BI REST API:et kan du skicka datakällor till Power BI. När en app lägger till rader till en datauppsättning, uppdateras paneler på instrumentpanelen automatiskt med uppdaterade data. För att skicka data använder du åtgärden [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) tillsammans med åtgärden [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx). Om du vill hitta en datauppsättning, använder du åtgärden [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx). För vilken som av de här åtgärderna, kan du skicka ett grupp-ID för att arbeta med en grupp. Använd åtgärden [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) för att hämta en lista över grupp-ID:er.
 
 Här är åtgärderna för att skicka data till en datauppsättning:
 
@@ -126,6 +126,5 @@ Om du vill komma igång med att skicka data till en datauppsättning, se [Steg 1
 [Hämta grupper](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introduktion till JSON](http://json.org/)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API på APIARY](http://docs.powerbi.apiary.io/)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

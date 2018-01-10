@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: b45a6f76a710bc158d0d1763ca10f2125164952a
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 92409e447bf9bc32b83c22650d5b41aef6bb4414
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Steg 3: Skapa en datauppsättning i Power BI
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -32,7 +32,7 @@ För att anropa en REST-resurs kan du använda en webbadress som söker efter re
 
 Lägg till den token som du fick i [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) i en rubrik för begäran för att autentisera Power BI REST-åtgärden:
 
-När du anropar åtgärden [Skapa datauppsättning](https://msdn.microsoft.com/library/mt203562.aspx) skapas en ny datauppsättning. Exempel på hur du använder Power BI REST API finns i [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+När du anropar åtgärden [Skapa datauppsättning](https://msdn.microsoft.com/library/mt203562.aspx) skapas en ny datauppsättning. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -239,7 +239,6 @@ Nedan visas den [fullständiga kodlistan](#code).
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Power BI REST API på APIARY](http://docs.powerbi.apiary.io/)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

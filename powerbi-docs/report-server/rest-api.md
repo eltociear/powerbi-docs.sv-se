@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
-ms.author: asaxton
-ms.openlocfilehash: 27c4d7c6db43a2332fbef4f444a149ebb3098c43
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: ede77374fab911ed77a993cc705b8caa00e48bf0
+ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/06/2018
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Utveckla med REST-API:er för Power BI-rapportservern
 Power BI-rapportservern stöder API:er med REST (Representational State Transfer). REST-API:er är tjänsteslutpunkter som stöder en uppsättning http-åtgärder (metoder) som ger åtkomst till att skapa, hämta, uppdatera eller ta bort resurser i en rapportserver.

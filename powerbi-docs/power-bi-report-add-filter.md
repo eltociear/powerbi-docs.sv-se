@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: d409633129c6c203e897d76c0acf043bf09ea29d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: bd358b8e986313ba665326de0ff2722e0113554d
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="add-a-filter-to-a-power-bi-report-in-editing-view"></a>Lägga till ett filter i en Power BI-rapport (i redigeringsvyn)
 > [!TIP]
@@ -30,13 +30,13 @@ ms.lasthandoff: 11/13/2017
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Vad är skillnaden mellan rapportfiltren i redigeringsvyn jämfört med läsvyn?
-Det finns två lägen för att interagera med rapporter: [Läsvy](service-interact-with-a-report-in-reading-view.md) och [Redigeringsvy](service-interact-with-a-report-in-editing-view.md).  Och vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
+Det finns två lägen för att interagera med rapporter: [Läsvy](service-reading-view-and-editing-view.md) och [Redigeringsvy](service-interact-with-a-report-in-editing-view.md).  Och vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
 
 * Du kan lägga till rapportfilter, sidfilter och visuella filter i redigeringsvyn. När du sparar rapporten, sparas filtren med den. Människor som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till, men inte spara sina ändringar.
 * I läsvyn kan du interagera med alla rapport-, sid- och visuella filter som redan finns i rapporten men du kan inte spara dina filterändringar.
 
 > [!NOTE]
-> Den här artikeln beskriver hur du skapar filter i rapportens **Redigeringsvy**.  Mer information om filter i läsvyn finns i [Interagera med filter i rapportens läsvy](service-interact-with-a-report-in-reading-view.md).
+> Den här artikeln beskriver hur du skapar filter i rapportens **Redigeringsvy**.  Mer information om filter i läsvyn finns i [Interagera med filter i rapportens läsvy](service-reading-view-and-editing-view.md).
 > 
 > 
 
@@ -146,7 +146,7 @@ Kontrollera att du är i rapportens [Redigeringsvy](service-interact-with-a-repo
 
   [Filtrera och markera i rapporter](power-bi-reports-filters-and-highlighting.md)
 
-[Interagera med filter och markeringar i rapportens läsvy](service-interact-with-a-report-in-reading-view.md)
+[Interagera med filter och markeringar i rapportens läsvy](service-reading-view-and-editing-view.md)
 
 [Ändra hur en rapports visuella objekt korsfiltrerar och korsmarkerar varandra](service-reports-visual-interactions.md)
 

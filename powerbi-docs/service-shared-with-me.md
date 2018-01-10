@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 68e1fdfe5fd86b247d05c5d93d9e6b724a8b07ba
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 63497e7d517bed8aeba8abefcc4e48c628e06252
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="display-the-power-bi-dashboards-that-have-been-shared-with-me"></a>Visa Power BI-instrumentpaneler som har delats med mig
 ## <a name="shared-with-me"></a>Delat med mig
@@ -34,7 +34,7 @@ Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
-Du kommer att ha många alternativ för att interagera med instrumentpanelen och dess underliggande rapport, beroende på vilka behörigheter som ägaren ger dig. Det inkluderar att kunna göra kopior av instrumentpanelen, öppna rapporten [i läsvy](service-interact-with-a-report-in-reading-view.md) och att dela vidare till andra kollegor.
+Du kommer att ha många alternativ för att interagera med instrumentpanelen och dess underliggande rapport, beroende på vilka behörigheter som ägaren ger dig. Det inkluderar att kunna göra kopior av instrumentpanelen, öppna rapporten [i läsvy](service-reading-view-and-editing-view.md) och att dela vidare till andra kollegor.
 
 ## <a name="actions-available-from-the-shared-with-me-screen"></a>Åtgärder som är tillgängliga från **delat med mig**-skärmen
 * Välj stjärnikonen för att [favoritmarkera en instrumentpanel](service-dashboard-favorite.md).

@@ -17,16 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: f0ca594b6f87ab2e186909f10a8ba4b7e1bce062
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a9dd782931904ada208b68ccbceeb7e1c0d95ec6
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Steg 4: Hämta en datauppsättning för att lägga till rader i en Power BI-tabell
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
-I **steg 3** av skicka data till en datauppsättning, [Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md), anropade du åtgärden [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) för att skapa en datauppsättning i Power BI. I det här steget, använder du åtgärden [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. Du kan använda datauppsättnings-ID:t i steg 4 för att lägga till rader i en datauppsättning. Exempel på hur du använder Power BI REST API finns i [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+I **steg 3** av skicka data till en datauppsättning, [Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md), anropade du åtgärden [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) för att skapa en datauppsättning i Power BI. I det här steget, använder du åtgärden [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. Du kan använda datauppsättnings-ID:t i steg 4 för att lägga till rader i en datauppsättning. 
 
 Om du vill skicka data till en Power BI-datauppsättning, måste du referera till tabellen i den datauppsättningen. För att referera till en tabell i en datauppsättning, måste du först hämta ett **datauppsättnings-ID**. Du får ett **datauppsättnings-ID** med hjälp av åtgärden [Get Dataset](https://msdn.microsoft.com/library/mt203567.aspx). Åtgärden **Get Dataset** returnerar en JSON-sträng som innehåller en lista över alla datauppsättningar i Power BI. Det rekommenderade sättet att deserialisera en JSON-sträng är med [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
@@ -278,7 +278,6 @@ Nedan visas den [fullständiga kodlistan](#code).
 [Skicka data till Power BI](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Power BI REST API på APIARY](http://docs.powerbi.apiary.io/)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

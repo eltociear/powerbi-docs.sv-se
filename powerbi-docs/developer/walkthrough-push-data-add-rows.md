@@ -17,16 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: d9fa2984eecfac026cf01a47d73ec6c5950e02d3
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 02c0ac505f542d9c4a346ae7aee72533789d5599
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Steg 5: Lägga till rader i en Power BI-tabell
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
-I **steg 4** av Skicka data till en datauppsättning, [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md), använde du åtgärden [Hämta datauppsättningar](https://msdn.microsoft.com/library/mt203567.aspx) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. I det här steget använder du datauppsättnings-ID:t med åtgärden [Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx) för att lägga till rader i en **Power BI**-datauppsättning. Exempel på hur du använder Power BI REST API finns i [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+I **steg 4** av Skicka data till en datauppsättning, [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md), använde du åtgärden [Hämta datauppsättningar](https://msdn.microsoft.com/library/mt203567.aspx) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. I det här steget använder du datauppsättnings-ID:t med åtgärden [Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx) för att lägga till rader i en **Power BI**-datauppsättning. 
 
 När du anropar åtgärden [Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx) läggs rader till i en datauppsättning.
 
@@ -319,6 +319,5 @@ Nedan visas den [fullständiga kodlistan](#code).
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Power BI REST API på APIARY](http://docs.powerbi.apiary.io/)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

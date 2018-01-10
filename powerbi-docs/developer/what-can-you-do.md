@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/20/2017
 ms.author: asaxton
-ms.openlocfilehash: a10cd93a06d14e3e66fd9cce480dc0ec99e67aeb
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: c5dfbbf5150dbf8ddb4388ac64f6c313eedd578e
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Vad kan utvecklare göra med Power BI?
 Power BI erbjuder en mängd olika alternativ för utvecklare. Allt från inbäddning till anpassad visuell information och strömning av datauppsättningar.
@@ -51,7 +51,6 @@ Mer information finns i [skicka data till en instrumentpanel](walkthrough-push-d
 [Publicera anpassade visuella objekt i Office Store](office-store.md)  
 [Power BI Visuals Gallery](https://github.com/Microsoft/PowerBI-visuals)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Power BI-API på Apiary](http://docs.powerbi.apiary.io/#)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
