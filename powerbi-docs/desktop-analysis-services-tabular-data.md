@@ -30,7 +30,7 @@ Låt oss ta en närmare titt.
 
 **Utforska genom att använda en live-anslutning** – När du använder en live-anslutning kommer objekten i din tabellmodell eller ditt perspektiv, t.ex. tabeller, kolumner och mått, visas i listan med Power BI Desktop-fält. Du kan använda Power BI Desktops avancerade visualiserings- och rapportverktyg till att utforska din tabellmodell på nya interaktiva sätt.
 
-När du ansluter live importeras inte några data från tabellmodellen till Power BI Desktop. Varje gång du interagerar med en visualisering frågar Power BI Desktop efter tabellmodellen och beräknar resultatet som visas. Du ser alltid den senaste informationen. Kom ihåg att tabellmodeller är mycket säkra. Vilka objekt som visas i Power BI Desktop beror på din behörighet för tabellmodellen du är ansluten till.
+När du ansluter live importeras inte några data från tabellmodellen till Power BI Desktop. Varje gång du interagerar med en visualisering frågar Power BI Desktop efter tabellmodellen och beräknar resultatet som visas. De data du ser är alltid uppdaterade med den senaste informationen. Kom ihåg att tabellmodeller är mycket säkra. Vilka objekt som visas i Power BI Desktop beror på din behörighet för tabellmodellen du är ansluten till.
 
 När du har skapat dynamiska rapporter i Power BI Desktop kan du dela dem genom att publicera dem på Power BI-webbplatsen. När du publicerar en Power BI Desktop-fil med en live-anslutning till en tabellmodell på Power BI-webbplatsen, måste en lokal datagateway vara installerad och konfigurerad av en administratör. Läs mer i [Lokal datagateway](service-gateway-onprem.md).
 
@@ -51,7 +51,7 @@ När du har skapat dynamiska rapporter i Power BI Desktop kan du dela dem genom 
 * Om du ansluter live i navigatören väljer du en tabellmodell eller ett perspektiv.
   
   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
-* Om du valde Välj objekt och hämta data i navigatören, väljer du en tabellmodell eller ett perspektiv. Du kan sedan välja att endast specifika tabeller eller kolumner ska läsas in. Klicka på Redigera om du vill öppna frågeredigeraren för att utforma dina data innan du läser in dem. När du är klar klickar du på Läs in för att importera datan till Power BI Desktop.
+* Om du valde Välj objekt och hämta data i navigatören, väljer du en tabellmodell eller ett perspektiv. Du kan sedan välja att endast specifika tabeller eller kolumner ska läsas in. Klicka på Redigera om du vill öppna frågeredigeraren för att utforma dina data innan du läser in dem. När du är klar klickar du på Läs in för att importera data till Power BI Desktop.
 
 ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
