@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 4610523d7c18246394974083c948b7bc018b4da1
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 692bcad734c2c011fc81fedf9fb8870d518cab06
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Visa relaterat innehåll i Power BI-tjänsten
 Fönstret **Relaterat innehåll** visar hur din Power BI-tjänsts innehåll – instrumentpaneler, rapporter och datauppsättningar – är sammankopplade.  Och bättre blir det, från det här fönstret kan du utföra vanliga uppgift såsom att uppdatera, byta namn, generera insikter och mycket mer. Välj en relaterad rapport eller instrumentpanel så öppnas den i din Power BI-arbetsyta.   
@@ -74,7 +74,7 @@ I en arbetsyta väljer du fliken **Rapporter** och markerar sedan ikonen **Visa 
 <br>
 **Metod 2**
 
-Öppna rapporten i [Läsvy](service-interact-with-a-report-in-reading-view.md) och välj ![](media/service-related-content/power-bi-view-related-new.png) från den översta menyraden.
+Öppna rapporten i [Läsvy](service-reading-view-and-editing-view.md) och välj ![](media/service-related-content/power-bi-view-related-new.png) från den översta menyraden.
 
 Fönstret **Relaterat innehåll** öppnas. Det visar associerad datauppsättning och alla instrumentpaneler som har minst en panel fäst från rapporten. Det finns visualiseringar fästa på två olika instrumentpaneler för den här rapporten.
 
@@ -97,11 +97,11 @@ Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Vä
 
 ## <a name="limitations-and-troubleshooting"></a>Begränsningar och felsökning
 * Om din webbläsare inte har tillräckligt med utrymme, ser du inte ett alternativ för **Visa relaterade** men du kommer fortfarande att se ikonen Visa relaterade ![](media/service-related-content/power-bi-view-related-icon-new.png). Välj ikonen för att öppna fönstret **Relaterat innehåll**.
-* Om du vill öppna relaterat innehåll för en rapport måste du vara i [Läsvy](service-interact-with-a-report-in-reading-view.md).
+* Om du vill öppna relaterat innehåll för en rapport måste du vara i [Läsvy](service-reading-view-and-editing-view.md).
 * Relaterat innehåll är inte tillgängligt i Power BI Desktop.
 * Funktionen Relaterat innehåll fungerar inte för strömning av datauppsättningar.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Kom igång med Power BI-tjänsten](service-get-started.md)
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

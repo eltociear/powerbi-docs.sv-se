@@ -15,16 +15,23 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/04/2018
 ms.author: maggies
-ms.openlocfilehash: f3e02da2c0e793f3eb334c39852f5cd23534ad3f
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 4f3441e2f933ee8964fc77e3166aeede97bcfba9
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
-När du skapar en Power BI-rapport i Power BI Desktop kan du också skapa en version av [rapporten som optimeras för visning i Power BI-appen på en telefon](desktop-create-phone-report.md).
+
+Gäller för:
+
+| ![iPhone](media/mobile-apps-view-phone-report/ios-logo-40-px.png) | ![Android-telefon](media/mobile-apps-view-phone-report/android-logo-40-px.png) |
+|:--- |:--- |
+| iPhone-telefoner |Android-telefoner |
+
+När du skapar en Power BI-rapport i Power BI Desktop, kan du också [skapa en version av den rapporten optimerad för visning](desktop-create-phone-report.md) i Power BI-appen på en telefon.
 
 När du öppnar en Power BI-rapport på en telefon identifierar Power BI om rapporten har optimerats för telefon och öppnar automatiskt den optimerade rapporten i stående läge.
 

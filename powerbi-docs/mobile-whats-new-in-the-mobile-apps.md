@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/04/2018
 ms.author: maggies
-ms.openlocfilehash: b96ea3b0de070bee292b1d59a5abd9b0739a656a
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b2df6825232f51a53bada3676faf598d6bc5d70b
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -30,24 +30,50 @@ Relaterad information om nyheter finns i:
 * [Nyheter i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](service-whats-new.md)  
 
-## <a name="september-2017"></a>September 2017
-### <a name="filters-for-phone-reports-in-iphones"></a>Filter för telefonrapporter i iPhone
+## <a name="december-2017"></a>December 2017
+### <a name="improved-permission-management"></a>Förbättrad behörighetshantering
+
+Vi har gjort några ändringar som ska ge en bättre hantering av användarbehörigheter för datauppsättningar, instrumentpaneler och rapporter.
+
+### <a name="auto-installed-apps"></a>Automatiskt installerade appar
+
+Du behöver inte installera en del av apparna i Power BI överhuvudtaget. Power BI-appskapare i din organisation kan skapa *appar* som innehåller en samling med instrumentpaneler och rapporter. Sedan kan de publicera appen och ställa in att den ska installeras automatiskt i Power BI-tjänsten och Power BI-mobilappar. När en app är inställd att installeras åt dig, visas den automatiskt i din **Appar**-meny:
+
+![Appar i Power BI-mobilapp](media/mobile-apps-find-content-mobile-devices/power-bi-apps-mobile-apps.png)
+
+## <a name="november-2017"></a>November 2017
+### <a name="iphone-x-optimization"></a>Optimering av iPhone X
+
+Vi har optimerat applayouten för iPhone X så att du kan utforska dina data med stil på varje enhet.
+
+## <a name="october-2017"></a>Oktober 2017
+### <a name="filters-for-phone-reports-in-android"></a>Filter för telefonrapporter i Android
+
+Om du skapar en rapport med telefonoptimerade sidor i Power BI Desktop och rapporten innehåller filter, kan du nu använda dessa filter i telefonrapporten på din Android. Läs mer om filter för Power BI-rapporter på Android.
+
+### <a name="show-data-in-reports"></a>Visa data i rapporter
+
+Du kan växla visuella objekt i dina rapporter till en tabellvy för att visa talen bakom datan. För att komma åt den här funktioner, trycker du på Visa data från visuella objekt-menyn på din rapport, eller ikonen ny på den expanderade åtgärds-menyn för visuella objekt.
+
+## <a name="previous-months"></a>Föregående månader
+
+### <a name="september-2017"></a>September 2017
+#### <a name="filters-for-phone-reports-in-iphones"></a>Filter för telefonrapporter i iPhone
 Om du skapar en rapport med telefonoptimerade sidor i Power BI Desktop och rapporten innehåller filter, kan du nu använda dessa filter i telefonrapporten på din iPhone. Läs mer om [filter för Power BI-rapporter på iPhone](https://powerbi.microsoft.com/blog/filters-coming-for-phone-reports-on-ios/).
 
-## <a name="august-2017"></a>Augusti 2017
-### <a name="ios-proxy-settings-support"></a>Stöd för iOS-proxyinställningar
+### <a name="august-2017"></a>Augusti 2017
+#### <a name="ios-proxy-settings-support"></a>Stöd för iOS-proxyinställningar
 Du kan nu ange proxyinställningar i Power BI:s iOS-mobilapp. Det innebär att Power BI nu fungerar med VPN-anslutningar på din mobila enhet, vilket gör att fler användare och organisationer på ett säkert sätt kan utnyttja kraften i Power BI även när de är i farten.
 
-## <a name="july-2017"></a>Juli 2017
+### <a name="july-2017"></a>Juli 2017
 Läs [funktionssammanfattningen om mobilappar för juli 2017](https://powerbi.microsoft.com/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
 
-### <a name="ios-devices"></a>iOS-enheter
+#### <a name="ios-devices"></a>iOS-enheter
 **Nya frågor och svar i iOS (förhandsversion)** I stället för att bara få ett svar på din fråga, kan du nu använda naturligt språk för att få begränsade insikter. Även om du inte vet vad du letar efter, avslöjar Frågor och svar proaktivt insikter som är relevanta för dina data. Den nya upplevelsen för frågor och svar för mobila enheter, som har utvecklats i samarbete med Microsofts forskningsteam, visar prov på vår produkts kraftfulla tekniker. Prova självstudierna och [ställ frågor om dina data i iOS-mobilapparna](mobile-apps-ios-qna.md).
 
 ### <a name="responsive-visuals"></a>Dynamiska visuella objekt
 **Dynamiska visuella objekt för telefonrapporter och instrumentpaneler** Du kan ställa in de visuella objekten på din instrumentpanel eller i din rapport till att vara *dynamiska*, så att de ändras dynamiskt för att visa maximala mängder data och insikter, oavsett skärmstorlek. Läs [bloggen om dynamiska visuella objekt](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
 
-## <a name="previous-months"></a>Föregående månader
 ### <a name="june-2107"></a>Juni 2107
 #### <a name="all-devices"></a>Alla enheter
 **Lägg till appar som favoriter** Du kan redan lägga till en instrumentpanel som favorit. Nyligen [lade Power BI till appar](service-install-use-apps.md), och nu kan du också lägga till appar som favoriter. 

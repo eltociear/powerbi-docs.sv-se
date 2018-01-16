@@ -1,6 +1,6 @@
 ---
 title: Hitta instrumentpaneler, rapporter, appar i Power BI-mobilappar
-description: "Läs om var du hittar dina instrumentpaneler och rapporter i Power BI-mobilapparna, beroende på var de kom från."
+description: "Läs om var du hittar dina instrumentpaneler, rapporter och appar i Power BI-mobilapparna, beroende på var de kom från."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/04/2018
 ms.author: maggies
-ms.openlocfilehash: 6dca860e4711d85b4b53c31c91ba4cba20bbe6e7
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d63ef5ad9ee59901917fb9bf9c28358c9aa542e8
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="find-your-dashboards-reports-and-apps-in-the-power-bi-mobile-apps"></a>Hitta dina instrumentpaneler, rapporter och appar i Power BI-mobilappar
 Gäller för:
@@ -49,7 +49,7 @@ Du kan ha anslutningar till en eller flera lokala Power BI-rapportservrar eller 
 ## <a name="3-apps"></a>3 Appar
 En app är en samling instrumentpaneler och rapporter som skapats specifikt av din organisation för att leverera nyckelvärden för snabbare och enklare datadrivna beslut. Apparna är lätta att hitta och installera i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). När du installerar dem, kan du visa dem från valfri enhet. 
 
-![Ny Power BI-navigering](media/mobile-apps-find-content-mobile-devices/power-bi-mobile-apps.png)
+![Ny Power BI-navigering](media/mobile-apps-find-content-mobile-devices/power-bi-apps-mobile-apps.png)
 
 Med appar får du automatiskt alla uppdateringar som författaren gör och författaren styr även över hur ofta data kommer att uppdateras. Du behöver inte oroa dig för att hålla dig uppdaterad om författarens ändringar.
 

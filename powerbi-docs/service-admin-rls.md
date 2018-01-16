@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/29/2017
+ms.date: 01/02/2018
 ms.author: asaxton
-ms.openlocfilehash: 338921df57b77b1e79f9b71e814203734ab5971c
-ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
+ms.openlocfilehash: 10695e3a94d2dbc2e9ba2e7de85ef8c9298828e0
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Säkerhet på radnivå (RLS) med Power BI
 <iframe width="560" height="315" src="https://www.youtube.com/embed/67fK0GoVQ80?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -31,6 +31,13 @@ Säkerhet på radnivå (RLS) med Power BI kan användas för att begränsa åtko
 Du kan konfigurera RLS för datamodeller som importerats till Power BI med Power BI Desktop. Du kan också konfigurera RLS på datauppsättningar som använder DirectQuery, till exempel SQL Server. Tidigare kunde du endast att implementera RLS inom lokala Analysis Services-modeller utanför Power BI. För Analysis Services live-anslutningar konfigurerar du säkerhet på radnivå på den lokala modellen. Säkerhetsalternativet visas inte för datauppsättningar med live-anslutning.
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
+
+Som standard använder säkerhetsfiltrering på radnivå sig av enkelriktade filter, oavsett om relationerna är inställda på enkelriktade eller dubbelriktade. Du kan aktivera dubbelriktad korsfiltrering med säkerhet på radnivå manuellt genom att markera relationen och markera kryssrutan **Tillämpa säkerhetsfilter i båda riktningarna**. Du bör markera den här rutan när du implementerar [dynamisk säkerhet på radnivå](https://docs.microsoft.com/en-us/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters), där du anger säkerhet på radnivå baserat på användarnamn eller inloggnings-ID. 
+
+Mer information finns i [dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](desktop-bidirectional-filtering.md) och den tekniska artikeln [skydda Tabular BI-Semantikmodellen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing the Tabular BI Semantic Model.docx).
+
+![Använd säkerhetsfilter](media/service-admin-rls/rls-apply-security-filter.png)
+
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 

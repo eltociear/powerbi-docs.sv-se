@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 01/05/2018
 ms.author: asaxton
-ms.openlocfilehash: a4ceeda4d56853df42da8e5c644b3946878a89f0
-ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
+ms.openlocfilehash: 893f9a9b539b2facd62f74f8ecaebe42a4e7fcaa
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -41,5 +41,6 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | [Säkerhet](service-admin-power-bi-security.md) |Ge en detaljerad förklaring av säkerheten i Power BI. |
 | [Skydda en Tabular BI-semantikmodell](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Det här dokumentet beskriver säkerhetsmodellen för Tabular BI-semantik och Power BI. Du får lära dig att skapa roller, implementera dynamisk säkerhet, konfigurera inställningar för personifiering, hantera roller och välja en metod för att ansluta till modeller som fungerar i ditt nätverks säkerhetskontext. |
 | [Vägledning för kapacitetsplanering för Power BI-rapportserver](report-server/capacity-planning.md) |Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. |
-|[Power BI Premium planering och distribution](https://aka.ms/Premium-Capacity-Planning-Deployment) | Teknisk vitbok med metodtips och riktlinjer för planering, distribution och operationalisering av Power BI Premium. 
+| [Power BI Premium planering och distribution](https://aka.ms/Premium-Capacity-Planning-Deployment)| Det här dokumentet innehåller vägledning och bästa praxis för planering och distribution av Premium-kapacitet för väldefinierade arbetsbelastningar.|
+
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

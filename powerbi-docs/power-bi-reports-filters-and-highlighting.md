@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 57960c3ca46e48f399e0492192c10cba2cfa7ea9
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 0f81b0fa87af5af281b40224bac3b5815461cb9e
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Om filter och markeringar i Power BI-rapporter
 ***Filter*** ta bort allt utan de data som du vill fokusera på.  ***Markering*** är inte detsamma som filtrering eftersom inga data tas bort. Istället markeras en delmängd av synliga data; de data som inte är markerade förblir synliga men nedtonade.
@@ -30,7 +30,7 @@ Det finns många olika metoder för att filtrera och markera rapporter i Power B
 
 * Introduktion till filter och markeringar (den artikel du läser nu)
 * Metoder för att [skapa och använda filter och markeringar i redigeringsvyn/rapporter som du äger](power-bi-report-add-filter.md). När du har redigeringsbehörighet för en rapport, kan du skapa, ändra och ta bort filter och markeringar i rapporter.
-* De sätt på vilka du kan [använda filter och markeringar i en rapport som delas med dig eller i rapportens läsvy](service-interact-with-a-report-in-reading-view.md). Vad du kan göra är mer begränsat, men Power BI ger dig fortfarande tillgång till en mängd olika filtrerings- och markeringsalternativ.  
+* De sätt på vilka du kan [använda filter och markeringar i en rapport som delas med dig eller i rapportens läsvy](service-reading-view-and-editing-view.md). Vad du kan göra är mer begränsat, men Power BI ger dig fortfarande tillgång till en mängd olika filtrerings- och markeringsalternativ.  
 * [En detaljerad genomgång av de filtrerings- och markeringskontroller som är tillgängliga i redigeringsvyn](power-bi-how-to-report-filter.md), inklusive en djupgående inblick i olika typer av filter (till exempel datum och tid, numeriska och text) och skillnaden mellan grundläggande och avancerade alternativ.
 * Nu när du har lärt dig hur filter och markeringar fungerar som standard, [kan du lära dig hur man ändrar hur visualiseringar på en sida kan filtrera och markera varandra](service-reports-visual-interactions.md)
 
@@ -50,9 +50,9 @@ Filter och markeringar kan användas med hjälp av fönstret **Filter** eller ge
 > 
 
 ## <a name="filters-in-reading-view-versus-editing-view"></a>Filter i Läsvy jämfört med Redigeringsvy
-Det finns två lägen för att interagera med rapporter: [Läsvy](service-interact-with-a-report-in-reading-view.md) och [Redigeringsvy](service-interact-with-a-report-in-editing-view.md).  Och vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
+Det finns två lägen för att interagera med rapporter: [Läsvy och Redigeringsvy](service-reading-view-and-editing-view.md).  Och vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
 
-* Du kan lägga till rapport, sida och visuella filter i redigeringsvyn. När du sparar rapporten, sparas filtren med den. Människor som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till, men inte spara ändringarna.
+* Du kan lägga till rapportfilter, sidfilter och visuella filter i redigeringsvyn. När du sparar rapporten, sparas filtren med den. Människor som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till, men inte spara ändringarna.
 * I läsvyn kan du interagera med alla sid- och visuella filter som redan finns i rapporten men du kan inte spara dina filterändringar.
 
 ### <a name="the-filters-pane-in-reading-view"></a>Fönstret Filter i läsvyn
@@ -66,7 +66,7 @@ Välj ett visuellt objekt för att se om det finns några filter på visuell niv
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
-I läsvyn kan du utforska data genom att ändra befintliga filter. Du lär dig hur i artikeln [Interact with filters in Reading view (Interagera med filter i läsvyn)](service-interact-with-a-report-in-reading-view.md)
+I läsvyn kan du utforska data genom att ändra befintliga filter. Du lär dig hur i artikeln [Interact with filters in Reading view (Interagera med filter i läsvyn)](service-reading-view-and-editing-view.md)
 
 ### <a name="the-filters-pane-in-editing-view"></a>Fönstret Filter i redigeringsvyn
 När du har ägarbehörighet för en rapport och öppnar den i redigeringsvyn ser du att **Filter** bara är ett av flera tillgängliga fönster för redigering.
@@ -83,7 +83,7 @@ Välj ett fält på rapportarbetsytan för att filtrera och markera resten av si
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 ## <a name="next-steps"></a>Nästa steg
-[Interagera med filter och markeringar (i läsvyn)](service-interact-with-a-report-in-reading-view.md)
+[Interagera med filter och markeringar (i läsvyn)](service-reading-view-and-editing-view.md)
 
 [Lägga till ett filter i en rapport (i redigeringsvyn)](power-bi-report-add-filter.md)
 
@@ -93,5 +93,5 @@ Välj ett fält på rapportarbetsytan för att filtrera och markera resten av si
 
 Läs mer om [rapporter i Power BI](service-reports.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

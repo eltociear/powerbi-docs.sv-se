@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/29/2017
 ms.author: mihart
-ms.openlocfilehash: 3710b8136a5f8f00d78047d9468dce0d6e68377f
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: da3d4359fab37d1c5ee5f9d214cc5dba0fa9b680
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
 Den här artikeln tar en djup titt på filterrapportfönstret. Du ser fönstret för Power BI-rapporter i redigeringsvyn och i läsvyn.
@@ -29,7 +29,7 @@ Den här artikeln tar en djup titt på filterrapportfönstret. Du ser fönstret 
 Det finns många olika sätt att filtrera data i Power BI och vi rekommenderar att först läsa [Om filter och markering](power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="working-with-filters"></a>Arbeta med filter
-Rapporter kan öppnas i [redigeringsvyn](service-interact-with-a-report-in-editing-view.md) eller [läsvyn](service-interact-with-a-report-in-reading-view.md). I redigeringsvyn kan rapportägare [lägga till filter för en rapport](power-bi-report-add-filter.md) och dessa filter sparas i rapporten. Personer som läser rapporten i läsvyn kan interagera med filtren men de kan inte spara filterändringar i rapporten.
+Rapporter kan öppnas i [redigeringsvyn eller läsvyn](service-reading-view-and-editing-view.md). I redigeringsvyn kan rapportägare [lägga till filter för en rapport](power-bi-report-add-filter.md) och dessa filter sparas i rapporten. Personer som visar rapporten i läsvyn kan interagera med filtren, men de kan inte spara filterändringar i rapporten.
 
 ## <a name="filters-in-reading-view"></a>Filter i läsvyn
 När en rapporten har öppnats i läsläge visar fönsterfiltret längst till höger i rapportarbetsytan. Om du inte ser fönstret väljer du pilen i det övre högra hörnet för att expandera det.
@@ -122,7 +122,7 @@ Om fältvärdena representerar datum och tid, kan du ange en starttid/sluttid me
 
 ## <a name="next-steps"></a>Nästa steg
 [Filtrera och markera i rapporter](power-bi-reports-filters-and-highlighting.md)  
-[Interagera med filter och markeringar i rapportens läsvy](service-interact-with-a-report-in-reading-view.md)  
+[Interagera med filter och markeringar i rapportens läsvy](service-reading-view-and-editing-view.md)  
 [Skapa filter i rapportens redigeringsvy](power-bi-report-add-filter.md)  
 [Ändra hur en rapports visuella objekt korsfiltrerar och korsmarkerar varandra](service-reports-visual-interactions.md)
 

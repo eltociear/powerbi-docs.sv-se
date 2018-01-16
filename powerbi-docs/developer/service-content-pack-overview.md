@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
-ms.openlocfilehash: 4a8ea2acfcfe41192b82addfe52dbe67a0df8088
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.date: 01/04/2018
+ms.author: maghan
+ms.openlocfilehash: 1eaa549bf42c17cd2bd857efd4d50b991e862ea0
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Översikt över Power BI-tjänstens program för innehållspaketet
 Ett innehållspaket är en uppsättning färdigt innehåll som låter användare direkt få insikter från en källa. Ett innehållspaket fokuserar vanligtvis på ett specifikt företagsscenario och ger insikter för en roll, en domän eller ett arbetsflöde.
@@ -49,6 +49,7 @@ Om du vill skapa och skicka in ett innehållspaket för publicering i PowerBI-tj
 * Du har ett SaaS-program som används av företagsanvändare.
 * Ditt SaaS-program har användardata som kan visualiseras i Power BI.
 * Ditt SaaS-program har en API som kan nås via det offentliga Internet. Helst är API:et ett REST-baserat API eller ett OData-flöde. Power BI-innehållspaket stöder flera autentiseringstyper som grundläggande autentisering, OAuth 2.0 och API-nyckel. 
+* Ditt SaaS-program är godkänt för att publicera ett innehållspaket. Skicka din begäran till pbiservicesapps@microsoft.com. Vi granskar varje överföring efter relevans och förväntad användning. 
 * Ett signerat partneravtal. Du kan göra det i [inlämningssteget](template-content-pack-testing.md#submission).
 
 Granska avsnittet [redigering](template-content-pack-authoring.md) för mer information om de tekniska kraven.

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 8faa60dee8c1785d5560ac34c5eb50288488e893
-ms.sourcegitcommit: 910258a5ad8b6861e81ae02c57286db221c37375
+ms.openlocfilehash: 66e75d638595113b2df67650896a407ae5d13e88
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>Prenumerera på en Power BI-rapport eller instrumentpanel
 Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. E-post och ögonblicksbild använder det språk som anges i inställningarna för Power BI. Om inget språk har definierats använder Power BI det aktuella webbläsarspråket.
@@ -65,7 +65,7 @@ Att **skapa** prenumerationer är en Power BI Pro-funktion, och du måste ha vis
    ![](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## <a name="subscribe-to-a-report-page"></a>Prenumerera på en rapportsida
-1. Öppna rapporten i [läsläge](service-report-open-in-reading-view.md).
+1. Öppna rapporten i [läsläge](service-reading-view-and-editing-view.md).
 2. Välj **Prenumerera** på den översta menyraden.
    
    ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
@@ -109,6 +109,7 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanele
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * För närvarande är prenumeration inte tillgängligt för instrumentpaneler och rapporter som kommer från innehållspaket eller Power BI-appar. Men det finns en lösning: kopiera rapporten/instrumentpanelen och lägga till prenumerationer till den versionen istället.
+* Rapportsideprenumerationer är knutna till namnet på rapportsidan. Om du prenumererar på en rapportsida och byter namn på den, måste du återskapa din prenumeration
 * För e-postprenumerationer på live-anslutningsdatauppsättningar får du endast e-postmeddelanden när data ändras. Så om en uppdatering görs, men inga data ändras, så skickar Power BI dig inget e-postmeddelande.
 * E-postprenumerationer har inte stöd för så många [anpassade visuella objekt](power-bi-custom-visuals.md).  Det enda undantaget är de anpassade visuella objekt som har [certifierats](power-bi-custom-visuals-certified.md).  
 * E-postprenumerationer skickas med rapportens standardfilter och utsnittstillstånd. Inga ändringar av standardinställningarna som du gör innan du börjar prenumerera visas i e-postmeddelandet.    

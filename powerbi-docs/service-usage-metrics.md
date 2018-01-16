@@ -18,17 +18,17 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/27/2017
 ms.author: mihart
-ms.openlocfilehash: 0fca4788c29f42390a286509acd0675292fc6684
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 04709b76b8e3e464b5384fa2bf137cd79b0749a7
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
 Om du skapar instrumentpaneler och rapporter kan du med användningsstatistik förstå deras inverkan. Oavsett om du kör användningsstatistik för instrumentpaneler eller rapporter ser du hur dessa instrumentpaneler och rapporter används i hela organisationen – vad som används, av vem och i vilket syfte.  
 
 > [!NOTE]
-> Användningsstatistiken visar användningen när du bäddar in instrumentpaneler och rapporter, men inte när du använder [Publicera på webben](service-publish-to-web.md)
+> Användningsstatistik spårar användningen av rapporter som är inbäddade i SharePoint Online. De spårar även inbäddning av instrumentpaneler och rapporter via flödena användare äger autentiseringsuppgifterna och appen äger autentiseringsuppgifterna. Användningsstatistik spårar inte användning av rapportinbäddning via [publicera till webben](service-publish-to-web.md).
 > 
 > 
 
@@ -177,5 +177,5 @@ S:    Användningsstatistikrapporten innehåller endast rapporter (eller instrum
 ## <a name="next-steps"></a>Nästa steg
 [Favoritmarkera en instrumentpanel](service-dashboard-favorite.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

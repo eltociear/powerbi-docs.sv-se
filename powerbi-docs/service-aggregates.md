@@ -1,5 +1,5 @@
 ---
-title: "Aggregeringar (summa, medelvärde, maximum etc.) i Power BI"
+title: "Aggregeringar (summa, medelvärde, maximum osv.) i visualiseringar"
 description: "Ändra aggregeringen i ett diagram (summa, medelvärde, maximum etc.) i Power BI"
 services: powerbi
 documentationcenter: 
@@ -15,43 +15,63 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/23/2017
+ms.date: 01/04/2018
 ms.author: mihart
-ms.openlocfilehash: c1b926e129e8d82edd9c329a51623908c4e7c9e0
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 40ed3ce1dbb228d8418c8cd5ca7de4bcb0731c2b
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/09/2018
 ---
-# <a name="aggregates-in-power-bi"></a>Aggregeringar i Power BI
+# <a name="aggregates-in-power-bi-visualizations"></a>Aggregeringar i Power BI-visualiseringar
 ## <a name="what-is-an-aggregate"></a>Vad är en aggregering för något?
-Ibland kan du vilja kombinera värden matematiskt för rader i en kolumn. Den matematiska åtgärden kan vara summa, medelvärde, maximum, antal osv. Att kombinera datavärdet i rader i en kolumn kallas aggregering. Resultatet av den matematiska åtgärden blir en *aggregering*. 
+Ibland kan du vilja kombinera värden matematiskt i dina data. Den matematiska åtgärden kan vara summa, medelvärde, maximum, antal osv. När du kombinerar värden i dina data, det kallas för att *aggregera*. Resultatet av den matematiska åtgärden blir en *aggregering*. 
 
-Ett numeriskt fält är ett värde som ska aggregeras (exempelvis summa eller medelvärde) över vissa kategoriska fält.  Till exempel ”försäljningsbelopp per produkt” och ”antal fel per region”. Numeriska fält kallas ofta **mått**. I listan Fält visas måtten med ∑-symbolen. Mer information finns i [Rapportredigeraren... ta en rundtur](service-the-report-editor-take-a-tour.md).
+När Power BI-tjänsten och Power BI Desktop skapar visualiseringar, kan de aggregera dina data. Ofta är det just det aggregatet som du vill ha, men andra gånger kan du vilja aggregera värdena på ett annat sätt.  En summa kontra ett medelvärde till exempel. Det finns flera olika sätt att hantera och ändra den aggregering som används i en visualisering.
 
-Ibland är ett *mått* egentligen ett *beräknat mått*. Beräknade mått i Power BI importeras med datan (som definieras i datamodellen som rapporten baseras på). Varje beräknat mått har en egen hårdkodad formel. Du kan inte ändra aggregeringen som används, till exempel om den är en summa kan den bara vara en summa. I listan Fält anges *beräknade mått* med kalkylatorsymbolen. Mer information om hur beräknade mått skapas finns i [Mått i Power BI Desktop](desktop-measures.md).
+Först ska vi ta en titt på data*typer* eftersom datatypen avgör hur och om den kan sammanställas.
 
-Kategoriska fält är inte numeriska, men de kan ändå aggregeras.  När kategoriska fält placeras i en bucket som är *endast numerisk*, exempelvis **Värden** eller **Knappbeskrivningar**, kan Power BI räkna antalet förekomster i varje kategori eller antal distinkta förekomster i varje kategori.  För strängar och datum har Power BI några fler alternativ för aggregeringen: tidigaste, senaste, första och sista.  
+## <a name="types-of-data"></a>Typer av data
+De flesta datauppsättningar har mer än en typ av data. På den mest grundläggande nivån, är data antingen numeriska eller inte. Numeriska data kan aggregeras med summa, medelvärde, antal, minimum, varians och mycket mer. Även textdata, ofta kallad *kategorisk* data, kan aggregeras. Om du försöker aggregera ett kategoriskt fält (genom att placera det i en bucket som är enbart numerisk, som **Värden**, eller **Knappbeskrivningar**) kommer Power BI räkna antalet förekomster av varje kategori eller räkna distinkta förekomster av varje kategori. Särskilda typer av data som datum, har även de några egna aggregeringsalternativ: tidigaste, senaste, första och sista. 
+
+I exemplet nedan:
+- **Sålda enheter** och **Tillverkningskostnad** är kolumner som innehåller numeriska data
+-  **Segment**, **Land**, **Produkt**, **Månad** och **Månadsnamn** innehåller kategoriska data
+
+   ![](media/service-aggregates/power-bi-aggregate-chart.png)
+
+När du skapar en visualisering i Power BI, aggregeras numeriska fält (standard är *summa*) över vissa kategoriska fält.  Till exempel, Enheter sålda ***per produkt***, Enheter sålda ***per månad*** och Tillverkningskostnad ***per segment***. Vissa numeriska fält kallas **mått**. Det är lätt att identifiera mått i Power BI-rapportredigeraren – mått visas med symbolen ∑ i fältlistan. Mer information finns i [Rapportredigeraren... ta en rundtur](service-the-report-editor-take-a-tour.md).
+
+![](media/service-aggregates/power-bi-aggregate-fields.png)
+
+
 
 ## <a name="why-dont-aggregates-work-the-way-i-want-them-to"></a>Varför fungerar inte aggregeringen som jag vill?
 Att arbeta med aggregeringar i Power BI-tjänsten kan vara förvirrande. Du kanske har ett numeriskt fält och Power BI låter dig inte ändra aggregeringen. Eller så har du t.ex. ett fält med år som du inte vill aggregera, du vill bara räkna antalet förekomster.
 
-Orsaken till problemet är oftast hur fältet har kategoriserats i Power BI-datauppsättningen. Kanske har fältet kategoriserats som text, vilket förklarar varför det inte går att summera eller räkna ut ett medelvärde för. Tyvärr [kan endast datauppsättningens ägare ändra hur ett fält kategoriseras](desktop-measures.md).  
+Ofta är källan till problemet hur fältet har definierats i datauppsättningen. Fältet kanske definierats som text och det förklarar varför det inte kan summeras eller tas ett medelvärde för. Tyvärr [kan endast datauppsättningens ägare ändra hur ett fält kategoriseras](desktop-measures.md). Så om du har ägarbehörighet för datauppsättningen, antingen i Desktop eller det program som användes för att skapa datauppsättningen (t.ex. Excel) kan du lösa problemet. Annars måste du kontakta datauppsättningens ägare för hjälp.  
 
-För att hjälpa dig har vi ett särskilt avsnitt i slutet av den här artikeln som kallas **Tips och felsökning**.  Om du inte hittar svaret där kan du ställa din fråga i [Power BI Community-forumet](http://community.powerbi.com) och få ett snabbt svar direkt från Power BI-teamet.
+För att hjälpa dig med det här, har vi ett särskilt avsnitt i slutet av den här artikeln som kallas **Tips och felsökning**.  Om du inte hittar svaret där kan du ställa din fråga i [Power BI Community-forumet](http://community.powerbi.com) och få ett snabbt svar direkt från Power BI-teamet.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Ändra hur ett numeriskt fält aggregeras
-Vi antar att du har ett diagram som summerar försäljningsdata för olika regioner, men att du hellre vill se medelvärdet. 
+Anta att du har ett diagram som summerar enheter sålda för olika produkter, men du vill hellre ha medelvärdet. 
 
-1. Lägg till måttet i en visualisering i rapportens redigeringsvy.
-2. Sök efter fältet i visualiseringsfönstret, högerklicka och välj den aggregeringstyp som passar. Om du inte ser den aggregering du söker kontaktar du datauppsättningens ägare. Det kan bero på hur fältet har kategoriserats av ägaren.  
+1. Skapa ett diagram som använder en kategori och ett mått. I det här exemplet använder vi enheter sålda per produkt.  Som standard skapar Power BI ett diagram som summerar sålda enheter (mått i Värde-brunnen) för varje produkt (kategori i Axel-brunnen).
+
+   ![](media/service-aggregates/power-bi-aggregate-sum.png)
+
+2. I visualiseringsfönstret, högerklickar du på måttet och väljer den aggregeringstyp som passar. I det här fallet väljer vi Medelvärde. Om du inte ser den aggregering du behöver, finns Tips och felsökning nedan.  
    
-   ![](media/service-aggregates/aggregate_new.png)
+   ![](media/service-aggregates/power-bi-aggregate-average.png)
    
    > [!NOTE]
    > Alternativen i listrutan varierar beroende på 1) vilket fält som valts och 2) hur fältet har kategoriserats av datauppsättningens ägare.
    > 
-   > 
+3. Din visualiseringen använder nu aggregering efter medelvärde.
+
+   ![](media/service-aggregates/power-bi-aggregate-average2.png)
+
+##    <a name="ways-to-aggregate-your-data"></a>Sätt att aggregera dina data
 
 Här visas några av de alternativ som kan vara tillgängliga vid aggregering av ett fält:
 
@@ -91,35 +111,40 @@ Ger följande resultat:
 * **Avvikelse:** 416,666...
 * **Median:** 125
 
-## <a name="use-a-non-aggregated-field-as-a-numeric-field"></a>Att använda ett icke-aggregerat fält som ett numeriskt fält
-Du kan också använda ett icke-aggregerat fält som ett numeriskt fält. Om du exempelvis har fältet Produktnamn kan du lägga till det som ett värde och ange det som **Antal** eller **Distinkt antal**. 
+## <a name="create-an-aggregate-using-a-category-text-field"></a>Skapa en aggregering med hjälp av ett kategorifält (text)
+Du kan även aggregera ett icke-numeriskt fält. Om du exempelvis har ett produktnamnsfält, kan du lägga till det som ett värde och ställa in det som **Antal**, **Distinkt antal**, **Första** eller **Sista**. 
 
-1. Vi antar att du väljer **Butik > Kedja**.
+1. I det här exemplet har vi dragit **Produkt**-fältet till Värden-brunnen. Värden-brunnen används vanligtvis för numeriska fält. Power BI identifierar att det är ett textfält, ställer in aggregeringen till **Summera inte** och ger oss en tabell med en kolumn.
    
-   ![](media/service-aggregates/count-of-chain-do_not_summarize.png)
-2. Om du då ändrar aggregeringen från standardvärdet **Summera inte** till **Antal (distinkta)**, räknar Power BI antalet olika kedjor. I det här fallet finns det två: Fashions Direct och Lindseys.
+   ![](media/service-aggregates/power-bi-aggregate-value.png)
+2. Om vi ändrar aggregeringen från standardvärdet **Summera inte** till **Antal (distinkta)**, räknar Power BI antalet olika produkter. I det här fallet finns det 4.
    
-   ![](media/service-aggregates/aggregates_count.png)
-3. Om du i stället ändrar aggregeringen till **Antal**, räknar Power BI det totala antalet. Det finns i det här fallet 104 poster för **Kedja**. Om du lägger till **Kedja** som ett filter kan du se att det finns 37 rader för Fashions Direct och 67 rader för Lindseys.  
+   ![](media/service-aggregates/power-bi-aggregates-count.png)
+3. Om vi ändrar aggregeringen till **Antal**, räknar Power BI det totala antalet. I det här fallet finns det 7 poster för **Produkt**. 
    
-   ![](media/service-aggregates/count_of_chain_104.png)
+   ![](media/service-aggregates/power-bi-aggregate-count2.png)
 
-## <a name="tips-and-troubleshooting"></a>Tips och felsökning
+4. Genom att dra samma fältet (i det här fallet **Produkt**) till Värden-brunnen och lämna standardaggregeringen **Summera inte**, delar Power BI upp antalet efter produkt.
+
+   ![](media/service-aggregates/power-bi-aggregate-final.png)
+
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 F:    Varför har jag inte alternativet **Summera inte**?
 
-S:    Fältet du har valt är troligen ett beräknat mått. Kom ihåg att varje beräknat mått har sin egen hårdkodade formel. Det går inte att ändra beräkningen.
+S: Det fält du har valt är troligen ett beräknat mått eller avancerat mått som skapats i Excel eller [Power BI Desktop](desktop-measures.md). Varje beräknat mått har en egen hårdkodad formel. Du kan inte ändra den aggregering som används.  Om den till exempel är en summa, kan den bara vara en summa. I listan Fält anges *beräknade mått* med kalkylatorsymbolen.
 
 F:    Mitt fält **är** numeriskt, varför är mina enda alternativ **Antal** och **Distinkt antal**?
 
-S:    Sannolikt är förklaringen att datauppsättningens ägare, oavsiktligt eller avsiktligt *inte* har klassificerat fältet som ett tal. Om en datauppsättning till exempel har fältet **år**, kan datauppsättningens ägare kategorisera det som text eftersom det är troligare att fältet **år** ska räknas (t.ex. antal människor som föddes 1974) i stället för att summeras eller visa ett medelvärde. Om du är ägare kan du öppna datauppsättningen i Power BI Desktop och använda fliken **Modellering** till att ändra datatypen.  
+S1:    Sannolikt är förklaringen att datauppsättningens ägare, oavsiktligt eller avsiktligt *inte* har klassificerat fältet som ett tal. Om en datauppsättning till exempel har fältet **år**, kan datauppsättningens ägare kategorisera det som text eftersom det är troligare att fältet **år** ska räknas (t.ex. antal människor som föddes 1974) i stället för att summeras eller visa ett medelvärde. Om du är ägare kan du öppna datauppsättningen i Power BI Desktop och använda fliken **Modellering** till att ändra datatypen.  
 
-S:    En annan möjlighet är att du har släppt fältet i en *bucket* som endast tillåter kategoriska värden.  I så fall är dina enda alternativ antal och distinkt antal.
+S2: Om fältet har en kalkylatorikon, innebär det att det är ett *beräknat mått* och varje beräknat mått har sin egen hårdkodade formel som bara kan ändras av datauppsättningens ägare. Den beräkning som används kan vara en enkel aggregering, som ett medelvärde eller en summa, men det kan också vara något mer komplicerat som procenten av bidraget till den överordnade kategorin eller totalt antal som körs sedan årets start. Power BI kommer inte summera eller räkna ut ett medelvärde som resultat, utan kommer i stället bara göra en ny beräkning (med den hårdkodade formeln) för varje datapunkt.
 
-S:    Ett tredje alternativ är att du använder fältet som en axel. I ett stapeldiagrams axel visar till exempel Power BI en stapel för varje distinkt värde – den aggregerar inte fältvärdena alls. 
+S3:    En annan möjlighet är att du har släppt fältet i en *bucket* som endast tillåter kategoriska värden.  I så fall är dina enda alternativ antal och distinkt antal.
+
+S4:    Ett tredje alternativ är att du använder fältet som en axel. I ett stapeldiagrams axel visar till exempel Power BI en stapel för varje distinkt värde – den aggregerar inte fältvärdena alls. 
 
 >[!NOTE]
 >Undantaget till denna regel är punktdiagram som *kräver* aggregerade värden för X- och Y-axlarna.
-
 
 F:    Jag har ett punktdiagram och jag vill *inte* att mitt fält ska aggregeras.  Hur gör jag?
 
@@ -129,10 +154,6 @@ F:    När jag lägger till ett numeriskt fält i en visualisering summeras de f
 
 S:    Datauppsättningens ägare har möjlighet att ange en standardsummering för varje fält. Om du är ägare till en datauppsättning kan du ändra standardsummeringen på fliken **Modellering** i Power BI Desktop.
 
-F:    Mitt fält **är** numeriskt, varför har jag inte några aggregeringsalternativ i listrutan?
-
-S:    Om fältet har en kalkylatorikon innebär det att det är ett *beräknat mått*. Varje beräknat mått har sin egen hårdkodade formel som inte kan ändras i Power BI-tjänsten. Beräkningen som används kan vara en enkel aggregering, som t.ex. ett medelvärde eller en summa, men det kan också vara något mer komplicerat som en ”procent av bidraget till överordnad kategori” eller ”totalt antal som körs sedan årets start”. Power BI kommer inte summera eller räkna ut ett medelvärde som resultat, utan kommer i stället bara göra en ny beräkning (med den hårdkodade formeln) för varje datapunkt.
-
 F:    Jag är ägare till en datauppsättning och vill se till att ett fält aldrig aggregeras.
 
 S:    I Power BI Desktop på fliken **Modellering** anger du **Datatyp** som **Text**.
@@ -141,5 +162,5 @@ F:    Jag kan inte se **Summera inte** som ett alternativ i min listruta.
 
 S:    Försök att ta bort fältet och sedan lägga till det igen.
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/4/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 80a5a668056d1a3f3f2b53600e80f399be4a5e08
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 8a818c26a6f9afd134133464b972091faaad093d
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 När du öppnar en rapport i Power BI-tjänsten har varje sida i rapporten en egen unik URL. Du kan använda filterfönstret på rapportarbetsytan om du vill filtrera rapportsidan.  Eller så kan du lägga till frågesträngparametrar i URL:en för att filtrera rapporten. Du kanske har en rapport som du vill visa dina kolleger men du vill filtrera den först åt dem. Ett sätt att göra detta på är att börja med standard-URL:en för rapporten, lägga till filterparametrar och sedan skicka dem hela URL:en med e-post.
@@ -41,7 +41,7 @@ URL?filter=***Tabell***/***Fält*** eq '***värde***'
 * **Tabell** och **Fält** är skiftlägeskänsliga, men **värde** är det inte.
 * Fält som är dolda från rapportvyn kan fortfarande filtreras.
 * **Värdet** måste omges med enkla citattecken.
-* Fälttypen måste vara en sträng.
+* Fälttypen måste vara ett tal eller en sträng
 * Tabell- och fältnamnen får inte innehålla några blanksteg.
 
 Om du fortfarande tycker det är förvirrande kan du fortsätta läsa så förklarar vi mer.  
@@ -108,7 +108,7 @@ Det kan finnas tillfällen när det är användbart, t.ex. när du vill se olika
 Det finns några saker som du bör vara medveten om när du använder frågesträngparametrarna.
 
 * Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md) eller Power BI Embedded.   
-* Fälttypen måste vara en sträng.
+* Fälttypen måste vara ett tal eller en sträng.
 * Tabell- och fältnamnen får inte innehålla några blanksteg.
 
 ## <a name="next-steps"></a>Nästa steg

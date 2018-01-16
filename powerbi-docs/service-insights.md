@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: fb498f2b3320b96958467a9db851f119dba20ce7
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 01e4f19cc1a3a57179be37cf0f36adf15ac47fdc
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="automatically-generate-data-insights-with-power-bi"></a>Skapa automatiskt datainsikter med Power BI
 Har du en ny datauppsättning och vet inte riktigt var du ska börja?  Behöver du skapa en instrumentpanel snabbt?  Vill du leta efter insikter som du kan ha missat?
@@ -71,7 +71,7 @@ Nu är din tur. Utforska insikter med [exemplet för analys av leverantörskvali
     ![](media/service-insights/power-bi-insight-focus.png)
 3. I Fokusläge kan du:
    
-   * [filtrera](service-interact-with-a-report-in-reading-view.md) visualiseringarna.  Välj pilen i det övre högra hörnet för att expandera filterfönstret om du vill visa filtren.
+   * Filtrera visualiseringarna.  Välj pilen i det övre högra hörnet för att expandera filterfönstret om du vill visa filtren.
      
         ![](media/service-insights/power-bi-insights-filter-new.png)
    * Fäst insiktskortet på en instrumentpanel genom att välja stiftikonen ![](media/service-insights/power-bi-pin-icon.png) eller **Fäst visualiseringar**.
@@ -99,5 +99,5 @@ Om du äger en datauppsättning, [optimera den för Quick Insights](service-insi
 
 Lär dig mer om [tillgängliga typer av Quick Insights](service-insight-types.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
