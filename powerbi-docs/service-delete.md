@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/10/2018
 ms.author: mihart
-ms.openlocfilehash: e2f1ca5abf05c92e76497d7b50600e6ef12e03fc
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: 2994e61407bd858792e73019472cd6752abb401d
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Ta bort på nästan vad som helst i Power BI-tjänsten
 Den här artikeln lär dig hur du tar bort en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app, visualisering och arbetsyta i Power BI-tjänsten.
@@ -141,7 +141,7 @@ Om du tar bort en app från applistan tas den inte bort för andra medlemmar.
 Den här artikeln visar hur du tar bort de primära byggstenarna för Power BI-tjänsten. Men det finns flera saker som du kan ta bort i Power BI.  
 
 * [Ta bort din aktuella instrumentpanel](service-dashboard-featured.md#change-the-featured-dashboard)
-* [Ta bort en instrumentpanel från favoriter](service-dashboard-favorite.md#unfavorite-a-dashboard)
+* [Ta bort en instrumentpanel från favoriter](service-dashboard-favorite.md)
 * [Ta bort en rapportsida](service-delete.md)
 * [Ta bort en instrument](service-dashboard-edit-tile.md)
 * [Ta bort en rapportvisualisering](service-delete.md)

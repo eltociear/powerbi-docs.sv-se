@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 01/10/2018
 ms.author: davidi
-ms.openlocfilehash: 4693349715e7a38ae936318e9a8750e0b2f3fab0
-ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
+ms.openlocfilehash: 0e0ad501ed809fc1f7cd8cc66d7f5d13badf7d15
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 Den lokala datagatewayen fungerar som en brygga med snabb och säker dataöverföring mellan lokala data (data som inte finns i molnet) och tjänsterna Power BI, Microsoft Flow, Logic Apps och PowerApps.
@@ -37,7 +37,7 @@ Du kan använda en enda gateway med flera olika tjänster samtidigt. Om du anvä
 [!INCLUDE [gateway-onprem-requirements-include](./includes/gateway-onprem-requirements-include.md)]
 
 ### <a name="limitations-of-analysis-services-live-connections"></a>Begränsningar för Analysis Services realtidsanslutningar
-Du kan använda en realtidsanslutning för tabell- eller flerdimensionella instanser.
+Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionella instanser.
 
 | **Serverversion** | **Obligatorisk SKU** |
 | --- | --- |
@@ -104,5 +104,5 @@ Gå till [Konfigurera proxyinställningar för Power BI-gatewayerna](service-gat
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 [Lokala datagatewayar (personligt läge) – den nya versionen av den personliga gatewayen](service-gateway-personal-mode.md)
 [Konfigurera proxyinställningar för den lokala datagatewayen](service-gateway-proxy.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
