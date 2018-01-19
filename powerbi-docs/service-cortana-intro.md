@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/25/2017
+ms.date: 12/13/2017
 ms.author: mihart
-ms.openlocfilehash: 458c6663697f8c968915c54dba1c80be422c0f80
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d64ab6b9a94171c99eb0956efce89f59b5174d41
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Snabbt hitta och visa dina Power BI-data med hjälp av Cortana för Power BI
 Använd Cortana på alla dina Windows 10-enheter så att du för omedelbara svar på viktiga affärsfrågor. Genom att integrera med Power BI hämtar Cortana viktig information direkt från Power BI-instrumentpaneler och rapporter. Allt du behöver du bara 10 november 2015-versionen eller senare av Windows 10, Cortana, Power BI och åtkomst till minst en datauppsättning.
@@ -85,13 +85,19 @@ När du ställa en fråga i Cortana svarar Power BI från rapportsidor som har u
      ![](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 2. När Cortana är klar, så skriv frågan i Cortanas sökfält eller uttala frågan muntligt. Cortana visar tillgängliga resultat. Om det finns en Power BI-instrumentpanel som matchar frågan, så visas den under **Bästa matchning** eller **Power BI**.
    
-     ![Cortana-sökning hittar Power BI-instrumentpanel](media/service-cortana-intro/power-bi-cortana-searching2.png "Cortana hittar en Power BI-instrumentpanel")
+     ![Cortana-sökning hittar Power BI-instrumentpanel](media/service-cortana-intro/power-bi-cortana-search-hr.png "Cortana hittar en Power BI-instrumentpanel")
    
    > [!NOTE]
    > För tillfället stöds enbart engelska.
    > 
    > 
-3. Öppna instrumentpanelen i Power BI genom att välja dess namn. 
+3. Välj instrumentpanelen för att öppna den i Cortana.
+
+    ![Välj Power BI-instrumentpanelen](media/service-cortana-intro/power-bi-cortana-dashboard.png "Välj Power BI-instrumentpanelen")
+
+    Du kan ändra layouten genom att [redigera instrumentpanelens *telefonvy*](service-create-dashboard-mobile-phone-view.md). 
+
+1. I Cortana har du också alternativet att öppna instrumentpanelen i Power BI-tjänsten eller i Power Bi Mobile. Öppna instrumentpanelen i Power BI-tjänsten genom att välja **Öppna på webben**. 
    
    ![Öppna instrumentpanelen från Cortana](media/service-cortana-intro/power-bi-dashboard-opens.png "Öppna instrumentpanelen från Cortana")   
 4. Nu ska vi söka efter en rapport med hjälp av Cortana. Vi behöver en [rapport som har en sida med ett Cortana-svarskort ](service-cortana-answer-cards.md). I det här exemplet har en rapport med namnet ”Cortana-nya butiker” ett Cortana-svarskortssida med namnet ”cortana-butiker”.  

@@ -1,6 +1,6 @@
 ---
-title: "Typer av Quick Insights som stöds av Power BI"
-description: Quick Insights med Power BI.
+title: "Typer av insikter som stöds av Power BI"
+description: Quick Insights och Visa insikter med Power BI
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,21 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/03/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 13f5614cf121b17d8ae4dff9653f5789372f7f49
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 53e5e67da9bacd9fc9dcbb770747823647aa3a3c
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="types-of-quick-insights-supported-by-power-bi"></a>Typer av Quick Insights som stöds av Power BI
-## <a name="how-does-quick-insights-work"></a>Hur fungerar Quick Insights?
+# <a name="types-of-insights-supported-by-power-bi"></a>Typer av insikter som stöds av Power BI
+## <a name="how-does-insights-work"></a>Hur fungerar insikter?
 Power BI söker snabbt olika delmängder av din datauppsättning samtidigt som en uppsättning avancerade algoritmer används för att identifiera potentiellt intressanta insikter. Power BI söker igenom så mycket av en datauppsättning som möjligt inom tilldelad tid.
 
-Du kan köra Quick Insights mot en datauppsättning eller en panel (relaterade insikter).   
+Du kan köra insikter mot en datauppsättning eller en panel på en instrumentpanel.   
 
-## <a name="what-types-of-quick-insights-can-we-find"></a>Vilka typer av Quick Insights kan vi hitta?
+## <a name="what-types-of-insights-can-we-find"></a>Vilka typer av insikter kan vi hitta?
 Det här är några av de algoritmer som vi använder:
 
 ## <a name="category-outliers-topbottom"></a>Kategoriavvikare (upp/ned)
@@ -78,9 +78,9 @@ För data över en tidsserie, identifierar när det finns specifika datum- och t
 ![](media/service-insight-types/pbi_auto_insight_types_time_series_outliers.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Power BI Quick Insights](service-insights.md)
+[Power BI-insikter](service-insights.md)
 
-Om du äger en datauppsättning, [optimera den för Quick Insights](service-insights-optimize.md)
+Om du äger en datauppsättning kan du [optimera den för insikter](service-insights-optimize.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/31/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 20760bec773c6f1d2a3cbbfaefd0651b97cbe601
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 3aa70a6382164cb8284e1a5f61ae73f66e54d2f3
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Lägg till bild, text, video och mer till din instrumentpanel
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -42,7 +42,7 @@ Kontrollen **lägg till panel** låter dig direkt lägga till en bild, textruta,
 Anta att du vill ha företagets logotyp på instrumentpanelen eller någon annan bild. Du behöver då spara bildfilen online och länka till den. Kontrollera att det inte behövs särskilda autentiseringsuppgifter för att komma åt bildfilen. OneDrive och SharePoint kräver till exempel autentisering så bilder som lagras där går inte att lägga till på en instrumentpanel på det sättet.  
 
 1. Välj **bild** > **nästa**.
-2. Lägg till bildinformation till fönstret **panelinformation**.
+2. Lägg till bildinformation till fönstret **Lägg till bildpanel**.
    
     ![](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
    
@@ -56,16 +56,16 @@ Anta att du vill ha företagets logotyp på instrumentpanelen eller någon annan
 ## <a name="add-a-text-box-or-dashboard-heading"></a>Lägg till en rubrik för en textruta eller instrumentpanel
 1. Välj **textruta > nästa**.
    
-    ![](media/service-dashboard-add-widget/power-bi-add-text-box-new.png)
-   
    > **Obs**: Om du vill lägga till en rubrik för en instrumentpanel, skriver du in rubriken i textrutan och ökar teckensnittet.
-   > 
    > 
 2. Formatera textrutan:
    
    * om du vill visa en rubrik ovanför textrutan, väljer du **visa rubrik och underrubrik** och anger en rubrik och/eller underrubrik.
    * ange och formatera innehållet i textrutan.  
-   * Du kan också ange en anpassad länk för rubriken.  Men i det här exemplet har vi lagt till hyperlänkar i själva textrutan så lämna **ange anpassad länk** avmarkerad.
+   * Du kan också ange en anpassad länk för rubriken. En anpassad länk kan gå till en extern webbplats eller en instrumentpanel eller rapport på arbetsytan. Men i det här exemplet har vi lagt till hyperlänkar i själva textrutan så vi lämnar **Ställ in anpassad länk** avmarkerad.
+
+     ![](media/service-dashboard-add-widget/power-bi-add-textbox.png)
+   
 3. Välj **Tillämpa**.  På instrumentpanelen, ändrar du storlek på och flyttar textrutan efter behov.
    
    ![](media/service-dashboard-add-widget/pbi-widget-text-added-new.png)
@@ -74,7 +74,7 @@ Anta att du vill ha företagets logotyp på instrumentpanelen eller någon annan
 När du lägger till en YouTube eller Vimeo-videopanel på instrumentpanelen, spelar videon direkt på din instrumentpanel.
 
 1. Välj **video > nästa**.
-2. Lägg till videoinformation till fönstret **panelinformation**.
+2. Lägg till videoinformation till panelen **Lägg till videopanel**.
    
     ![](media/service-dashboard-add-widget/power-bi-add-video-new.png)
    
@@ -100,7 +100,7 @@ Klistra in eller skriv in valfritt HTML-innehåll.  Power BI lägger till det, s
    
    * om du vill visa en rubrik ovanför panelen, väljer du *visa rubrik och underrubrik* och anger en rubrik och/eller underrubrik.
    * ange inbäddningskoden. I det här exemplet kopierar vi och klistrar in ett Twitter-flöde.
-   * Välj **Tillämpa**.  På instrumentpanelen, ändrar du storlek på och flyttar webbinnehållspanelen efter behov.
+3. Välj **Tillämpa**.  På instrumentpanelen, ändrar du storlek på och flyttar webbinnehållspanelen efter behov.
      
       ![](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 

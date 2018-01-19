@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/28/2017
+ms.date: 12/12/2017
 ms.author: asaxton
-ms.openlocfilehash: 49df0d0a44ceae3e36f45f6523f39a0b5bb1b6a0
-ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
+ms.openlocfilehash: c4c62ab5c24b7abe2760535da0a6cf69982c7174
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
 
@@ -35,6 +35,16 @@ Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpane
 
 > [!NOTE]
 > Granskningsfunktionen i Power BI är tillgänglig för förhandsvisning i alla dataområden.
+
+## <a name="requirements"></a>Krav
+Du måste uppfylla följande krav för att komma åt granskningsloggar:
+
+- Du måste ha en Exchange Online-licens (ingår i Office 365 Enterprise E3 och E5-prenumerationer) för att komma åt granskningsavsnittet i säkerhet- och efterlevnadscentrumet för Office 365.
+- Du måste antingen vara global administratör eller ha en Exchange-administratörsroll som ger åtkomst till granskningsloggen. 
+
+  Exchange-administratörsrollerna styrs via administrationscentret för Exchange. Mer information finns i [Behörigheter i Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+
+- Om du har åtkomst till granskningsloggen men inte är global administratör eller administratör för Power BI-tjänsten, får du inte åtkomst till Power BI-administratörsportalen. I det här fallet måste du hämta en direktlänk till säkerhet- och efterlevnadscentrumet för Office 365.
 
 ## <a name="enabling-auditing-functionality-in-the-power-bi-admin-portal"></a>Aktivera granskningsfunktionen i Power BI-administratörsportalen
 
@@ -70,8 +80,8 @@ Om du vill granska dina Power BI-loggar måste du gå till säkerhets- och efter
    ![](media/service-admin-auditing/powerbi-admin.png)
 
 3. Välj **Granskningsloggar**.
-4. 
-5. Välj **Gå till administrationscentret för O365**.
+ 
+4. Välj **Gå till administrationscentret för O365**.
    
    ![](media/service-admin-auditing/audit-log-o365-admin-center.png)
 

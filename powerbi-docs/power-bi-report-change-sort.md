@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 37161fab1e19e6ce00eb0f02c96b6e5cbdd60f18
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 13da4602306b1218baee81909d37897524f6dfc9
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
-I Power BI kan du sortera diagram alfabetiskt efter namnen på kategorierna, eller efter de numeriska värdena i varje kategori. Det här diagrammet sorteras exempelvis på butiksnamn.
+I en Power BI-rapport kan du sortera de flesta visualiseringar alfabetiskt efter namnen på kategorierna i diagrammet eller efter de numeriska värdena i varje kategori. Det här diagrammet sorteras exempelvis på butiksnamn.
 
 ![](media/power-bi-report-change-sort/pbi_chartsortcategory.png)
 
-Det är enkelt att sortera från högsta till lägsta försäljning per kvadratfot i stället.
+Det är enkelt att ändra sorteringen från en kategori (lagernamn) till ett värde (försäljning per kvadratmeter) i stället.
 
 1. Välj ellipsen (...) och **Sortera efter försäljning per kvadratfot**.
 2. Om det behövs väljer du sorteringsikonen ![](media/power-bi-report-change-sort/sorticon.png) för att ändra till **Fallande**.

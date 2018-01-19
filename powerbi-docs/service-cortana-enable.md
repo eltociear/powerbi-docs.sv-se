@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 6c096cfb76a1d8697cef3d157efcda41e57a1510
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b18157f28dcaf2e9b130bdc3bd5547312e45a4f9
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Aktivera Cortana för åtkomst till Power BI-rapporter (och deras underliggande datauppsättningar)
 Förmodligen har du läst artikeln [Introduktion till Cortana och Power BI](service-cortana-intro.md) redan. Om du inte har gjort det, så läs den först, och kom sedan tillbaka hit. Och nu kan du prova själv.  Innan du kan ställa frågor på naturligt språk i Cortana och få svar från data som lagras i Power BI-***rapporter***, så måste vissa krav uppfyllas. Du måste i synnerhet göra följande.
@@ -47,11 +47,10 @@ Du måste logga in på Power BI-tjänsten (inte Power BI Desktop) och upprepa de
 2. Den datauppsättning som är associerad med den här rapporten är **Contoso Sales**.
    
     ![Datauppsättningen Contoso Sales](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Välj kugghjulsikonen i det övre högra hörnet av Power BI och välj **Inställningar**.
+3. Till höger om datauppsättningsnamnet väljer du **ellipserna (...) > Inställningar**.  
    
-    ![Välj Inställningar](media/service-cortana-enable/power-bi-cortana-settings.png)
-4. Välj fliken **Datauppsättningar** och välj den datauppsättning som du vill aktivera för Cortana i listan till vänster.
-5. Välj **Frågor och svar och Cortana** > **Ge Cortana åtkomst till den här datauppsättningen** > **Tillämpa**.
+    ![Välj Inställningar](media/service-cortana-enable/power-bi-settings-cortana.png)
+4. Välj **Frågor och svar och Cortana** > **Ge Cortana åtkomst till den här datauppsättningen** > **Tillämpa**.
    
    ![Cortana har åtkomst till datauppsättning](media/service-cortana-enable/power-bi-cortana-enable-new.png)
    
@@ -67,16 +66,19 @@ Du måste logga in på Power BI-tjänsten (inte Power BI Desktop) och upprepa de
 ## <a name="add-your-power-bi-credentials-to-windows"></a>Lägg till dina Power BI-autentiseringsuppgifter i Windows
 Du måste köra Windows 10 version 1511 eller senare.
 
-1. Bestämma vilken Windows 10-version du kör. Öppna **Inställningar** > **System** > **Om**.
-   
+1. Bestämma vilken Windows 10-version du kör. Öppna **Inställningar**.
+    ![Öppna Windows-inställningar](media/service-cortana-enable/power-bi-cortana-windows.png)
+
+    Välj sedan **System > Om**. Längst ned på skärmen ser du **Windows-specifikationer > Version**
+
    * Om du har Windows 10 version 1511 (Windows-uppdateringen från den 10 november 2015) fram till 1607, lägger du till ditt arbets- eller skolkonto och Microsoft-konto (slutför steg 2 och 3 nedan).
    * Om du har Windows 10 version 1607 (Windows-uppdateringen från den 10 juli 2016) eller senare, lägger du till ditt arbets- eller skolkonto (slutför endast steg 2 nedan).
-2. Lägg till arbets-eller skolkonto för Cortana.
+1. Lägg till arbets-eller skolkonto för Cortana.
    
    * Öppna **Inställningar** > **Konton**.
      
        ![Inställningar – Konton](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Bläddra längst ned till botten och välj **Lägg till ett arbets- eller skolkonto**.
+   * Bläddra längst ned till botten och välj **Lägg till ett arbets- eller skolkonto**. Eller så väljer du **Åtkomst till arbete eller skola > Anslut** från sidan **Konton**.
      
      ![Lägg till arbetskonto](media/service-cortana-enable/power-bi-add-work-account2.png)
 
@@ -87,5 +89,5 @@ Cortana använder det här arbets- eller skolkontot för att söka efter potenti
 
 [Felsökning av problem med Cortana och Power BI-integrering](service-cortana-troubleshoot.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

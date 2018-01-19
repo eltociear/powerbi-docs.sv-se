@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: d39fd80b834afc37fb1db43a083f9037a3b83ef1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 33954aab1d6e79efc985f3e0d3c4d026f529b691
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Byt namn på nästan allt i Power BI-tjänsten
 Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app och arbetsyta i Power BI-tjänsten.
@@ -36,11 +36,11 @@ Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, ra
 | Datauppsättning i en arbetsyta |Ja |Nej |
 | Apparbetsyta |Ja, om du är ägare eller har administratörsbehörigheter |Nej |
 | Publicerade appar |Inte från appskärmen, men appnamnet kan ändras från apparbetsytan och publiceras igen med ett nytt namn om du har administratörsbehörigheter |Nej |
-| Appinnehåll (instrumentpanel, rapport, arbetsbok, datauppsättning) |Inte från appskärmen, men appens innehåll kan ändras från apparbetsytan och publiceras igen med ett nytt namn om du har administratörsbehörigheter |Nej |
+| Appinnehåll (instrumentpanel, rapport, arbetsbok, datauppsättning) |Inte från appskärmen, men appens innehåll kan döpas om från apparbetsytan och publiceras igen med ett nytt namn om du har administratörsbehörigheter |Nej |
 | Innehåll i **delat med mig** |Nej |Nej |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Byt namn på en instrumentpanel, rapport eller arbetsbok
-1. Starta i en arbetsyta och välj fliken **instrumentpaneler**, **rapporter** eller **arbetsböcker**. Hovra över objektet du vill byta namn på och välj kugghjulsikonen ![](media/service-rename/powerbi-cog-icon.png).
+1. Starta i en arbetsyta och välj fliken **instrumentpaneler**, **rapporter** eller **arbetsböcker**. Hovra över objektet du vill byta namn på och välj kugghjulsikonen ![](media/service-rename/powerbi-cog-icon.png). Om kugghjulsikonen saknas är du inte behörig att byta namn.
    
    ![](media/service-rename/power-bi-workspace-dashboards.png)
 2. I inställningssidan skriver du det nya namnet och väljer **spara**.
@@ -67,7 +67,7 @@ Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, ra
 Alla med administratörsbehörigheter kan byta namn på en apparbetsyta.
 
 1. Starta i den arbetsyta som du vill byta namn på.
-2. Välj ellipserna (...) i det övre högra hörnet och välj **redigera arbetsytan**.  
+2. Välj ellipserna (...) i det övre högra hörnet och välj **redigera arbetsytan**. Om du inte ser det här alternativet saknar du behörighet för att byta namn på den här arbetsytan. 
    
     ![](media/service-rename/power-bi-edit-workspace.png)
 3. Ange ett nytt arbetsytenamn och välj **spara**.
@@ -93,5 +93,5 @@ Gillar du inte namnet på en sida i din Power BI-rapport?  Ett nytt namn är bar
 * Om objektet som du vill byta namn på har delats med dig, eller är del av ett innehållspaket, visas inte kugghjulsikonen och du har inte tillgång till inställningarna.
 * Om du inte ser ellipserna (...) på fliken **datauppsättningar**, expandera webbläsarfönstret.
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

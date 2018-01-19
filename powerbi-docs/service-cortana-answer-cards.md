@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/29/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 2abaa2ae00b353af46c267083f879cbf9536b397
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 79e10c7d47eb5105e0c3e79bd3451315eae6d27e
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Använda Power BI-tjänsten eller Power BI Desktop för att skapa en anpassad svarssida för Cortana
 Du kan använda alla funktioner i Power BI för att skapa särskilda rapportsidor som kallas *Cortana-svarssidor* (och ibland ”Cortana-svarskort”) som utformats speciellt för att besvara Cortana-frågor.
 
 ![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Om du provar på att använda förhandsgranskningen för Cortana- och Power BI-**instrumentpanelen**, kan du hoppa över resten av den här artikeln. Det finns inga krav på installation för att Cortana ska kunna söka i dina Power BI-instrumentpaneler.
 > 
 > 
@@ -63,7 +63,7 @@ En *Cortana-svarssida* i en rapport är storleksanpassad särskilt för Cortana 
    > Undvik att använda ord som också är kolumnnamn för att förbättra resultaten.
    > 
    > 
-6. Om rapporten som alternativ har filter på sidnivå kan du också ställa in **Kräv enkelt val**. Cortana visar endast den här rapporten som ett svar om ett, och endast ett, av filterobjekten har angetts i frågan.
+6. Om rapporten som alternativ har filter på sidnivå, kan du vilja ställa in **Kräver enstaka markering**. Cortana visar endast den här rapporten som ett svar om ett, och endast ett, av filterobjekten har angetts i frågan. **Kräver enstaka markering** finns längst ned i fönstret **Filter**.
    
    > [!NOTE]
    > Du behöver inte ställa in **Kräv enkelt val** för att be Cortana visa en rapport med filter på sidnivå.  Till exempel kommer ”visa försäljning för Charlotte Lindseys” att visa svarssidan utan hänsyn till inställningen för Kräv enkelt val.
@@ -98,5 +98,5 @@ Resultat med noggranna svar (som en fullständig matchning av ett angivet sidnam
 
 Kan du fortfarande inte få Cortana att fungera med Power BI?  Försök med [felsökning av Cortana](service-cortana-troubleshoot.md).
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

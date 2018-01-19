@@ -1,5 +1,5 @@
 ---
-title: "Fäst en panel på en Power BI-instrumentpanel från frågor och svar"
+title: "Fäst en panel till en instrumentpanel från frågor och svar"
 description: "Dokumentering om hur man fäster en panel på en Power BI-instrumentpanel från frågerutan i frågor och svar"
 services: powerbi
 documentationcenter: 
@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/09/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: f37c0f9e433f1ac8c6bb8f7f3fa4b513fb4b4652
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8a876c5a05fcdadff1a874148f5d56465bcc8c62
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fäst en panel till en instrumentpanel från frågor och svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Så här fäster du en panel från frågor och svar
 Frågor och svar är Power BI:s verktyg för ad hoc-rapportering. Behöver du hitta en viss insikt? Ställ en fråga om dina data och ta emot ett svar i form av en visualisering.
 
-> **Obs**: Om du vill följa med, kan du öppna [exemplet detaljhandelsanalys](sample-retail-analysis.md).
+Frågor och svar är tillgängligt från instrumentpaneler och rapporter. I den här artikeln ska vi öppna Frågor och svar från en instrumentpanel. Instrumentpaneler finns bara tillgängliga i Power BI-tjänsten, inte i Power BI Desktop. Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandelsanalys](sample-retail-analysis.md).
 > 
 > 
 
@@ -40,7 +40,9 @@ Frågor och svar är Power BI:s verktyg för ad hoc-rapportering. Behöver du hi
    ger frågerutan dig förslag.
 4. Om du vill lägga till diagrammet till din instrumentpanel, väljer du fäst ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) längst upp till höger i arbetsytan.
 5. Fäst panelen på en befintlig eller ny instrumentpanel. 
-   
+
+   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
+
    * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan. Dina val begränsas till instrumentpanelerna inom den aktuella arbetsytan.
    * Ny instrumentpanel: ange namnet på den nya instrumentpanelen så läggs den till din aktuella arbetsyta.
 6. Välj **fäst**.
@@ -62,5 +64,5 @@ Frågor och svar är Power BI:s verktyg för ad hoc-rapportering. Behöver du hi
 [Byt namn på, ändra storlek, lägg till en hyperlänk, flytta panelen och mer](service-dashboard-edit-tile.md)    
 [Visa din panel i instrumentpanelen i fokusläge](service-focus-mode.md)     
 [Gå tillbaka till frågor och svar i Power BI](service-q-and-a.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

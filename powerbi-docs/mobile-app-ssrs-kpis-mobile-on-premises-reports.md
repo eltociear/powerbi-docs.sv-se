@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: 99fceab5904deaa510edd213c349dcfb2e38ac28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 5bbd2f09187e9fac16f6cc4b9ac3ff59a888ed7f
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Visa lokala rapportserverrapporter och KPI:er i Power BI-mobilapparna
 Gäller:
@@ -63,7 +63,14 @@ Du kan visa lokala Power BI-rapporter, mobila Reporting Services-rapporter och K
 3. Tryck på **Anslut till server**.
    
     ![Anslut till servern](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
-4. Fyll i serveradressen samt ditt användarnamn och lösenord. Använd följande format för serveradressen:
+
+     Mobilappen behöver åtkomst till servern på något sätt. Det finns några sätt att göra det:
+
+    - Det enklaste är att vara i samma nätverk/använda VPN.
+    - Det är möjligt att använda en webbprogramsproxy för att ansluta från utanför organisationen. Mer information finns i [Använda OAuth för att ansluta till Microsoft SQL Server Reporting Services](mobile-oauth-ssrs.md). 
+    - Öppna en anslutning (port) i brandväggen.
+
+1. Fyll i serveradressen samt ditt användarnamn och lösenord. Använd följande format för serveradressen:
    
      `http://<servername>/reports`
    
@@ -71,10 +78,7 @@ Du kan visa lokala Power BI-rapporter, mobila Reporting Services-rapporter och K
    
      `https://<servername>/reports`
    
-   > [!NOTE]
-   > Inkludera **http** eller **https** framför anslutningssträngen.
-   > 
-   > 
+   Inkludera **http** eller **https** framför anslutningssträngen.
    
     ![Dialogrutan Anslut till servern](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
 5. (Valfritt) Under **Avancerade alternativ** kan du ge servern ett eget namn, om du vill.
@@ -100,7 +104,7 @@ Du kan markera KPI:er och rapporter som favoriter i webbportalen och sedan visa 
 
 * Tryck på **Favoriter**.
   
-   ![Favoriter i det vänstra navigeringsfönstret](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server.png)
+   ![Favoriter i det vänstra navigeringsfönstret](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
    Alla dina favorit-KPI:er och rapporter från webbportalen finns på den här sidan, tillsammans med Power BI-instrumentpaneler i Power BI-tjänsten:
   

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/05/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: d29008365ab7df8f0bcd8297bfd5dc2f41c0e3a4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 4b8a606cd110c13a615be88d49f04e68b3f2cbe6
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Skapa aktuella frågor för Frågor och svar i Power BI
 Om du äger en datauppsättning, kan du lägga till egna aktuella frågor till den datauppsättningen.  Frågor och svar för Power BI kommer att visa dessa frågor till kollegor som använder din datauppsättning.  Aktuella frågor ger dina kollegor idéer om vilka typer av frågor de kan ställa till datauppsättningen. Det är helt upp till dig vilka aktuella frågor du lägger till – lägg till populära frågor, frågor som ger intressanta resultat eller frågor som kan vara svåra att uttrycka rätt.
@@ -32,13 +32,13 @@ Se när Will lägger till några aktuella frågor till frågor och svar i Power 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Aktuella frågor finns även tillgängliga i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile-apps-ios-qna.md).
+> Aktuella frågor för Frågor och svar finns tillgängliga i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile-apps-ios-qna.md) och i förhandsgranskningen för Frågor och svar för Power BI Desktop. Men att skapa frågor går bara i Power BI-tjänsten (app.powerbi.com).
 > 
 > 
 
 Den här artikeln använder sig av [exemplet detaljhandelsanalys](sample-datasets.md).
 
-1. Klicka på rutan frågor och svar.   Observera att frågor och svar redan gjort sig användbart genom att visa en lista över termer som finns i datauppsättningen.
+1. Välj frågerutan för Frågor och svar på instrumentpanelen.   Observera att frågor och svar redan gjort sig användbart genom att visa en lista över termer som finns i datauppsättningen.
 2. Om du vill lägga till i den här listan, väljer du kugghjulsikonen i det övre högra hörnet av Power BI.  
    ![](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
 3. Välj **inställningar**&gt;**datauppsättningar** &gt; **exemplet detaljhandelsanalys** &gt; **aktuella frågor**.  
@@ -57,5 +57,5 @@ Den här artikeln använder sig av [exemplet detaljhandelsanalys](sample-dataset
 [Frågor och svar i Power BI](service-q-and-a.md)  
 [Självstudier: Introduktion till Frågor och svar i Power BI](power-bi-visualization-introduction-to-q-and-a.md)  
 [Power BI – grundläggande begrepp](service-basic-concepts.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

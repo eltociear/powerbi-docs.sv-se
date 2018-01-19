@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/30/2017
 ms.author: asaxton
-ms.openlocfilehash: 83f143427ce74f593ea6e8d99f8a6b127ee4488d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: cf0eeaa16e7dc3576cb774cb7bb7dfef9c4486d0
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="purchasing-power-bi-pro"></a>Köp Power BI Pro
 Power BI Pro är till för användare som publicerar rapporter, delar instrumentpaneler, samarbetar med kollegor i arbetsytor och engagerar sig i andra relaterade aktiviteter som möjligheten att:
@@ -34,7 +34,7 @@ Power BI Pro är till för användare som publicerar rapporter, delar instrument
 
 IT-administratörer har några alternativ för att använda Power BI Pro i organisationen. Du kan köpa Power BI Pro via administrationscentret för Office 365, eller via din Microsoft-representant eller partner. Den här artikeln går igenom de två utvärderingsalternativen som finns tillgängliga för Power BI Pro och hur du köper som en organisation.
 
-Läs mer om Power BI Premium och hur Power BI Pro passar in i Premium-erbjudandet i [Power BI Premium – vad är det?](service-premium.md).
+Läs mer om Power BI Premium och hur Power BI Pro passar in i Premium-erbjudandet i [Power BI Premium – vad är det?](service-premium.md)
 
 ## <a name="pricing"></a>Prissättning
 Den senaste prisinformationen för Power BI Pro och en tabellista över inkluderade funktioner, finns i [Power BI-priser](https://powerbi.microsoft.com/pricing/).
@@ -118,6 +118,11 @@ Under **fakturering** > **prenumerationer**, ser du **Power BI Pro** listat. Om 
 När du använder tjänsten kan du verifiera att du har ett Pro-konto genom att gå till **kugghjulsikonen** och välja **Hantera personlig lagring**.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro3.png)
+
+## <a name="grace-period"></a>Respitperiod
+Det finns en respitperiod på 30 dagar efter att en Power BI Pro-licens har gått ut. 
+
+Power BI Pro har samma prenumerationslivscykel som Office 365. Mer information finns i [Vad händer med mina data och åtkomst när Office 365 för företag-prenumerationen går ut?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="next-steps"></a>Nästa steg
 [Självregistrering för Power BI](service-self-service-signup-for-power-bi.md)  

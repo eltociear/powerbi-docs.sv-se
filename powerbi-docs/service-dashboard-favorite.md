@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 9dc9cb883e1d62c282501e628f52c13267d830b6
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4c4c31f6289f6b3d12b619b7c6c297d861177fbf
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="favorite-dashboards-in-the-power-bi-service"></a>Favoritinstrumentpaneler i Power BI-tjänsten
 När du gör en instrumentpanel till en *favorit*, kommer du att kunna komma åt den från alla dina arbetsytor.  Favoriter är vanligtvis de som du besöker oftast.
@@ -32,7 +32,7 @@ När du gör en instrumentpanel till en *favorit*, kommer du att kunna komma åt
 > 
 > 
 
-Du kan också välja en enda instrumentpanel som en [aktuell instrumentpanel](service-dashboard-featured.md) i Power BI.
+Du kan också välja en enskild instrumentpanel som en [aktuell instrumentpanel](service-dashboard-featured.md) i Power BI-tjänsten.
 
 ## <a name="add-a-dashboard-as-a-favorite"></a>Lägg till en instrumentpanel som en *favorit*
 Se hur Amanda lägger till favoriter till sin arbetsyta och följ sedan de stegvisa anvisningarna under videon för att försöka själv.
@@ -50,7 +50,7 @@ Se hur Amanda lägger till favoriter till sin arbetsyta och följ sedan de stegv
    ![](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
 
 ## <a name="working-with-favorites"></a>Arbeta med *favoriter*
-1. Om du vill se dina fem senaste favoriter från en arbetsyta, väljer du pilen till höger om **favoriter**.  Härifrån kan du välja en favoritinstrumentpanel och öppna den. Endast de senaste fem favoriterna visas (i alfabetisk ordning). Om du har fler än fem favoriter, väljer du **se alla** för att öppna skärmen favoriter (se nr. 2 nedan). 
+1. Om du vill få åtkomst till dina favoriter från valfri arbetsyta, väljer du den utfällbara pilen till höger om **Favoriter**.  Härifrån kan du välja en favoritinstrumentpanel och öppna den. Endast fem favoriter visas (i alfabetisk ordning). Om du har fler än fem favoriter, väljer du **Visa alla** för att öppna skärmen över favoriter (se nr 2 nedan). 
    
    ![](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
 2. Om du vill se **alla** instrumentpaneler som du har lagt till som favoriter i den vänstra navigeringsfönster, väljer du **favoriter** eller favoriter ![](media/service-dashboard-favorite/power-bi-favorites-icon.png)-ikonen.  
@@ -60,7 +60,7 @@ Se hur Amanda lägger till favoriter till sin arbetsyta och följ sedan de stegv
    Härifrån kan du välja en instrumentpanel för att öppna den, eller dela en instrumentpanel med dina kollegor.
 
 ## <a name="unfavorite-a-dashboard"></a>Ta bort en instrumentpanel från favoriter
-Använder du inte längre en instrumentpanel så ofta som du brukade?  Du kan bort den från favoriter. När du tar bort en instrumentpanel från favoriter, tas den bort från dina favoriter men inte från Power BI.
+Använder du inte längre en instrumentpanel så ofta som du brukade?  Du kan bort den från favoriter. När du tar bort en instrumentpanel från listan över favoriter, tas den bort från listan men inte från Power BI.
 
 1. I det vänstra navigeringsfönstret, väljer du **favoriter** för att öppna skärmen **favoriter**.
    
@@ -76,5 +76,5 @@ Använder du inte längre en instrumentpanel så ofta som du brukade?  Du kan bo
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

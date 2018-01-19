@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/02/2017
+ms.date: 12/21/2017
 ms.author: mihart
-ms.openlocfilehash: 30fc0731f819f063aa04e856e8acc75a69f64a59
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 3750d733967301f952fd092d2d1d0a2b9d1b2238
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="analytics-pane-in-power-bi-service"></a>Analytics-fönstret i Power BI-tjänsten
 Med fönstret **Analytics** i **Power BI-tjänsten** kan du lägga till dynamiska *referensrader* i visualiseringar och ange fokus för viktiga trender eller insikter.
@@ -34,46 +34,47 @@ Med fönstret **Analytics** i **Power BI-tjänsten** kan du lägga till dynamisk
 > 
 
 ## <a name="using-the-analytics-pane"></a>Använda fönstret Analytics
-Med fönstret **Analytics** kan du skapa följande typer av dynamiska referensrader (alla rader är inte tillgängliga för alla typer av visuella objekt):
+I fönstret **Analytics** kan du skapa följande typer av dynamiska referenslinjer (alla rader är inte tillgängliga för alla typer av visuella objekt):
 
-* X-axel, konstant rad
-* Y-axel, konstant rad
-* Min rad
-* Max rad
-* Genomsnittlig rad
-* Median rad
-* Percentil rad
+* X-axel konstant linje
+* Y-axel konstant linje
+* Minimilinje
+* Maxlinje
+* Medellinje
+* Medianlinje
+* Percentillinje
 
-Följande avsnitt visar hur du kan använda fönstret **Analytics** och dynamiska referensrader i dina visualiseringar.
 
-Följ dessa steg om du vill visa tillgängliga dynamiska referensrader för någon visualisering:
+Följ dessa steg om du vill visa tillgängliga dynamiska referenslinjer för ett visuellt objekt:
 
 1. Välj eller skapa en visualisering och välj sedan ikonen **Analytics** ![](media/service-analytics-pane/power-bi-analytics-icon.png)från fönstret **Visualiseringar**.
-2. Välj nedpilen för typen av rad som du vill skapa för att visa dess alternativ. I det här fallet väljer vi **Genomsnittlig rad**.
+
+2. Välj nedpilen för typen av rad som du vill skapa för att visa dess alternativ. I det här fallet väljer vi **Medellinje**.
    
-   ![](media/service-analytics-pane/power-bi-add.png)
-3. Om du vill skapa en ny rad, välj **+ Lägg till**. Du kan sedan ange ett namn för raden genom att dubbelklicka på textrutan och sedan skriva in i ditt namn.
+   ![lägg till medellinje](media/service-analytics-pane/power-bi-add.png)
+
+3. Om du vill skapa en ny linje väljer du **+ Lägg till** och bestämmer dig för den åtgärd som ska användas för att skapa linjen.  Listrutan **Mått** fylls automatiskt med tillgängliga data från den valda visualiseringen. Nu ska vi använda **Antal öppna butiker**.
+
+5. Det finns många typer av alternativ för din linje, som färg, genomskinlighet, stil och placering (i förhållande till det visuella objektets dataelement). Om du vill märka raden, ger du den en rubrik och flyttar skjutreglaget för **Dataetikett** till **På**.  I det här fallet ger vi linjen namnet *Snitt # öppna butiker* och anpassar några av de andra alternativen som visas nedan.
    
-   Det finns många typer av alternativ för din rad, till exempel att välja dess *färg*, *genomskinlighet*, *stil* och *position* (i förhållande till visualiseringens dataelement) samt om du vill inkludera etiketten. Du kan dessutom välja vilka **Mått** i visualiseringen som du vill att linjen ska baseras på genom att välja i listrutan **Mått**, som fylls i automatiskt med dataelement från visualiseringen. I det här fallet väljer vi *Antal öppna butiker* som mått, märker den som *Snitt # öppna butiker* och anpassar några av de andra alternativen som visas nedan.
-   
-   ![](media/service-analytics-pane/power-bi-average-line.png)
-4. Om du vill visa dataetiketten flytta du skjutreglaget **Dataetikett** till på. När du gör detta får du en mängd ytterligare alternativ för din dataetikett.
-5. Observera siffran som visas bredvid objektet **Genomsnittlig rad** objektet i fönstret **Analytics**. Detta anger hur många dynamiska rader som finns för ditt visuella objekt samt deras typ. Om vi lägger till en **Konstant rad** som målet 9 för antal butiker kan du se att fönstret **Analytics** visar att vi nu också har en referenslinje för **Konstant rad** som tillämpas på den här visualiseringen.
+   ![anpassa analys av medellinjen](media/service-analytics-pane/power-bi-average-line2.png)
+
+1. Observera siffran som visas bredvid objektet **Medellinje** i fönstret **Analytics**. Detta anger hur många dynamiska rader som finns för ditt visuella objekt samt deras typ. Om vi lägger till en **Konstant rad** som målet 9 för antal butiker kan du se att fönstret **Analytics** visar att vi nu också har en referenslinje för **Konstant rad** som tillämpas på den här visualiseringen.
    
    ![](media/service-analytics-pane/power-bi-reference-lines.png)
    
-   Om det visuella objektet du har valt inte kan ha dynamiska referensrader (i det här fallet **karta**), visas följande när du väljer fönstret **Analytics**.
+
+Det finns många typer av intressanta analyser som du kan lyfta fram genom att skapa dynamiska referenslinjer i fönstret **Analytics**.
+
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+
+Om det visuella objekt som du har valt inte kan ha dynamiska referenslinjer (i det här fallet **Karta**), visas följande när du väljer fönstret **Analytics**.
    
-   ![](media/service-analytics-pane/power-bi-no-lines.png)
+![analys inte tillgänglig](media/service-analytics-pane/power-bi-no-lines.png)
 
-Det finns många typer av intressanta insikter som du kan markera genom att skapa dynamiska referensrader i fönstret **Analytics**.
+Möjligheten att använda dynamiska referenslinjer beror på vilken typ av visuellt objekt som används. I följande lista visas vilka dynamiska linjer som är tillgängliga för de olika visuella objekten:
 
-Vi planerar fler funktioner, inklusive att fler visuella objekt som kan ha dynamiska referenslinjer, så håll ögonen öppna efter nyheter.
-
-## <a name="limitations"></a>Begränsningar
-Möjligheten att använda dynamiska referens raderna beror på vilken typ av visualisering som används. I följande lista visas vilka dynamiska rader som är tillgängliga för vilka visuella objekt:
-
-Alla dynamiska linjer är tillgängliga på följande visuella objekt:
+Alla dynamiska linjer är tillgängliga i följande visuella objekt:
 
 * Ytdiagram
 * Linjediagram
@@ -81,28 +82,28 @@ Alla dynamiska linjer är tillgängliga på följande visuella objekt:
 * Grupperat stående stapeldiagram
 * Grupperat liggande stapeldiagram
 
-Följande visuella objekt kan bara använda en *konstant rad* från fönstret **Analytics**:
+Följande visuella objekt kan bara använda en *konstant linje* från fönstret **Analytics**:
 
 * Staplad yta
 * Liggande stapel
 * Stående stapel
-* 100 % liggande stapel
-* 100 % stående stapel
+* 100 % liggande stapeldiagram
+* 100 % stående stapeldiagram
 
 För följande visuella objekt är *trendlinjen* för närvarande det enda alternativet:
 
 * Ej staplad linje
 * Grupperat stående stapeldiagram
 
-Slutligen, icke-kartesiska visuella objekt går för närvarande inte att använda med dynamiska rader från fönstret **Analytics**, till exempel:
+Slutligen går det för närvarande inte att använda icke-kartesiska visuella objekt med dynamiska linjer från fönstret **Analytics**, till exempel:
 
-* Matrix
+* Matris
 * Cirkeldiagram
-* Toroid
+* Ring
 * Tabell
 
 ## <a name="next-steps"></a>Nästa steg
 [Analytics-fönstret i Power BI Desktop](desktop-analytics-pane.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

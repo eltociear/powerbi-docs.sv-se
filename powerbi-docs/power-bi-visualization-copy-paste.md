@@ -15,16 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 7eea8b8299561b65a6af704489d4c69c33ca27b4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 8b1efc64dc471bafa410f41c94f7e06d638fe9e0
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="copy-and-paste-a-visualization-in-power-bi"></a>Kopiera och klistra in en visualisering i Power BI
-1. Öppna en rapport i Power BI [Redigeringsvy](service-reading-view-and-editing-view.md) och [skapa en visualisering](power-bi-report-add-visualizations-i.md) om rapporten inte redan har en. 
+# <a name="copy-and-paste-a-visualization-in-power-bi-service-and-power-bi-desktop"></a>Kopiera och klistra in en visualisering i Power BI-tjänsten och Power BI Desktop
+Kopiering och inklistring av en visualisering kräver behörighet att redigera rapporten. I Power BI-tjänsten innebär detta att öppna rapporten i [redigeringsvyn](service-reading-view-and-editing-view.md).
+
+1. Öppna en rapport som har minst en visualisering.  
+
 2. Välj visualiseringen och använd **Ctrl + C** för att kopiera och **Ctrl + V** för att klistra in.  
    ![](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 
@@ -33,5 +36,5 @@ Mer om [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)  
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

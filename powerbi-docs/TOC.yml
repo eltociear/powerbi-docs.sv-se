@@ -252,7 +252,7 @@
           href: service-insights.md
         - name: Typer av snabba insikter som stöds av Power BI
           href: service-insight-types.md
-        - name: Optimera dina data för snabba insikter i Power BI
+        - name: Optimera dina data för Power BI Quick Insights
           href: service-insights-optimize.md
         - name: Aktuella instrumentpaneler i Power BI
           href: service-dashboard-featured.md
@@ -454,10 +454,8 @@
           href: power-bi-visualization-treemaps.md
         - name: 'Självstudier: Vattenfallsdiagram i Power BI'
           href: power-bi-visualization-waterfall-charts.md
-        - name: Skapa en stor sifferpanel till en Power BI-instrumentpanel genom att ställa en fråga
-          href: power-bi-visualization-big-number.md
-        - name: Skapa en stor sifferpanel från en Power BI-rapport
-          href: power-bi-visualization-big-number-report.md
+        - name: 'Självstudier: Kort (stora sifferpaneler) i Power BI'
+          href: power-bi-visualization-card.md
         - name: Skapa avancerade analyser och visualiseringar med hjälp av R-skript i Power BI
           href: service-r-visuals.md
     - name: Data från filer
@@ -938,6 +936,8 @@
           href: developer/integrate-report.md
         - name: Integrera innehåll i ditt program (appen äger data)
           href: developer/embed-sample-for-customers.md
+        - name: Bädda in anpassade layouter i en app
+          href: developer/embedded-custom-layout.md
         - name: Skapa en Azure Active Directory-klient
           href: developer/create-an-azure-active-directory-tenant.md
         - name: Registrera ett program

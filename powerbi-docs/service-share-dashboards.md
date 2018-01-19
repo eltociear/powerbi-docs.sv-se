@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: 276f663b8454ef0938222576cec13fcfb073e2cf
-ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
+ms.openlocfilehash: 4cc7f12eb4964c67ae9f91cfcb51eac77d690555
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Dela dina Power BI-instrumentpaneler med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder [flera olika sätt att samarbeta och distribuera dina instrumentpaneler](service-how-to-collaborate-distribute-dashboards-reports.md), och dela är bara en.
@@ -122,7 +122,11 @@ Saker att tänka på när det gäller att dela instrumentpaneler:
 
 ### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Mina instrumentpanelsmottagare ser en låsikon i en panel eller ett meddelande om ”Behörighet krävs”
 
-Om de personer som du delar med ser en låst panel i en instrumentpanel eller ”Behörighet krävs” när de försöker visa en rapport, måste du ge dem behörighet till den underliggande datauppsättningen. Gör så här.
+De personer som du delar med kan se en låst panel på en instrumentpanel eller ett meddelande om att ”behörighet krävs” när de försöker visa en rapport.
+
+![låst panel i Power BI](media/service-share-dashboards/power-bi-locked_tile_small.png)
+
+I så fall behöver ge dem behörighet till den underliggande datauppsättningen. Gör så här.
 
 1. Gå till fliken **Datauppsättningar** i listan med innehåll.
 

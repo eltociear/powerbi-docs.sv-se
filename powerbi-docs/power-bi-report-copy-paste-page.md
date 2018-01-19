@@ -16,17 +16,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: dbf65dba335be077518a46f2a5bafdd7e85dcb79
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: fe85f52bccc164fee896d1fd3e690264867b54fa
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="duplicate-a-report-page-in-power-bi"></a>Duplicera en rapportsida i Power BI
-1. Öppna en rapport i Power BI [Redigeringsvy](service-reading-view-and-editing-view.md) och [skapa en visualisering](power-bi-report-add-visualizations-i.md) om rapporten inte redan har en. 
-2. Gå till det översta kontrollfältet och välj ikonen **Duplicera den här sidan**.
+Duplicering av en rapportsida kräver redigeringsbehörighet för rapporten. I Power BI-tjänsten innebär detta att öppna rapporten i [redigeringsvyn](service-reading-view-and-editing-view.md). 
+
+
+1. Öppna en rapport som har minst en sida i Power BI. 
+
+2. Välj **Duplicera den här sidan** från det översta kontrollfältet.
    
    ![](media/power-bi-report-copy-paste-page/pbi_duplicate_new.png)
    
@@ -37,8 +41,9 @@ ms.lasthandoff: 11/15/2017
 
 ### <a name="next-steps"></a>Nästa steg
 Mer om [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
+[Lägga till en ny sida i en rapport](power-bi-report-add-page.md) 
 
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
+[Power BI – grundläggande begrepp](service-basic-concepts.md) 
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

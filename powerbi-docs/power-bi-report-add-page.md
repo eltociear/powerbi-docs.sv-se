@@ -1,6 +1,6 @@
 ---
-title: "Lägga till en sida i en Power BI-rapport"
-description: "Lägga till en sida i en Power BI-rapport"
+title: "Lägg till en sida eller duplicera en sida i en rapport"
+description: "Lägg till en sida i en Power BI-rapport i Power BI-tjänsten och Power BI Desktop"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,24 +15,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: c40f13975d06879701d8966ef5f97b43a298cce0
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 36962e85528668139a4d5d460936212965032233
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="add-a-page-to-a-power-bi-report"></a>Lägga till en sida i en Power BI-rapport
-## <a name="add-a-new-blank-page"></a>Lägga till en ny tom sida
-Det finns inte någon anledning att fylla en rapportsida – lägg till en ny tom sida i stället.
+# <a name="add-a-page-to-a-power-bi-report-in-power-bi-service-and-power-bi-desktop"></a>Lägg till en sida i en Power BI-rapport i Power BI-tjänsten och Power BI Desktop
+Det finns inte någon anledning att fylla en rapportsida – lägg till en ny tom sida i stället. 
 
+Tillägg och duplicering av rapportsidor kräver redigeringsbehörighet för rapporten. I Power BI-tjänsten innebär detta att öppna rapporten i [redigeringsvyn](service-reading-view-and-editing-view.md). 
+
+## <a name="add-a-new-blank-page"></a>Lägga till en ny tom sida
 Välj den gula plusikonen och skriv sedan ett nytt namn för sidan.  
 
 ![](media/power-bi-report-add-page/reorderpages2.gif)
 
 ## <a name="duplicate-a-page"></a>Duplicera en sida
-Gå till det översta kontrollfältet i [redigeringsläget](service-interact-with-a-report-in-editing-view.md) och välj ikonen **Duplicera den här sidan**.
+Gå till det översta kontrollfältet i [redigeringsvyn](service-interact-with-a-report-in-editing-view.md) och välj ikonen **Duplicera den här sidan**.
 
 ![](media/power-bi-report-add-page/pbi_duplicate.png)
 
@@ -43,5 +45,5 @@ Läs mer om [rapporter i Power BI](service-reports.md)
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
