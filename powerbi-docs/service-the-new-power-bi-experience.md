@@ -16,29 +16,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/28/2017
+ms.date: 01/09/2018
 ms.author: mihart
-ms.openlocfilehash: a876b770d52bb114eaff0f299ce1683119b86cd8
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: c7a782880c2bc3fe4743d635bbc76dfc41660909
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="getting-around-in-power-bi-service"></a>Navigera i Power BI-tjänsten
-
-Om du har använt Power BI-tjänsten en längre tid har du säker märkt att vi har ändrat användargränssnittet avsevärt.  De flesta av de här ändringarna påverkar hur ditt innehåll (instrumentpaneler, rapporter, datauppsättningar) har ordnats och sökvägarna (klick) som du använder för att utföra åtgärder på innehållet. 
+## <a name="the-left-navigation-pane"></a>Det vänstra navigeringsfönstret
 
 ![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
-
-## <a name="how-do-i"></a>Hur gör jag för att...
-För de som är bekanta med det tidigare gränssnittet för Power BI-tjänsten visar den här guiden hur saker går till i det nya gränssnittet. Vi förstår att det kan vara förvirrande i början men vi tror att du kommer att upptäcka många tidsbesparande förbättringar hos den nya layouten med tiden. 
 
 **Snabbguide**
 
 | Åtgärd | Ny (aktuell) väg |
 | --- | --- | --- |
-| Favoritmarkera en instrumentpanel |Arbetsyta > Instrumentpaneler och markera stjärnikonen så att den blir gul |
-| Visa en lista över dina favoritinstrumentpaneler |Välj **Favoriter** från det vänstra navigeringsfönstret |
+| Favoritmarkera en instrumentpanel eller en rapport |Arbetsyta > Instrumentpaneler eller Arbetsyta > Rapporter och markera stjärnikonen så att den blir gul |
+| Favoritmarkera en app | Välj **Appar** i det vänstra navigeringsfönstret och markera stjärnan bredvid appnamnet
+| Visa en lista över dina favoriter |Välj **Favoriter** från det vänstra navigeringsfönstret |
 | Visa en lista över nyligen besökta instrumentpaneler och rapporter |Välj **Senaste** från det vänstra navigeringsfönstret |
 | Visa en lista över instrumentpaneler som har delats med dig |Välj **Delade med mig** från det vänstra navigeringsfönstret |
 | Dela en instrumentpanel |Öppna instrumentpanelen och välj **Dela** eller skapa och publicera en app |
@@ -54,62 +51,57 @@ För de som är bekanta med det tidigare gränssnittet för Power BI-tjänsten v
 | Skapa en app |Arbetsytor > Skapa en apparbetsyta |
 | Visa en lista över alla instrumentpaneler, rapporter och datauppsättningar som du äger |Arbetsytor > Min arbetsyta |
 
-## <a name="why-did-we-change-the-navigation-experience-for-power-bi-service"></a>Varför har vi ändrat navigeringsupplevelsen för Power BI-tjänsten?
-* effektiva listor för instrumentpaneler, rapporter, arbetsböcker och datauppsättningar    
-* snabbare åtkomst med listrutor för favoriter, senaste och val av arbetsyta    
-* nytt sätt att identifiera relaterat innehåll för instrumentpaneler, rapporter och datauppsättningar    
-* separat innehållsområde för arbetsböcker    
-* separat område för dina favoritinstrumentpaneler    
-* separat område för innehåll som har delats med dig 
-* separat område för ditt senaste innehåll  
-* det behövs färre klick för att utföra åtgärder – innehållslistor har kombinerats och åtgärderna som du kan utföra på innehållet visas på samma skärm. Till exempel, att växla mellan instrumentpaneler och rapporter.</td></tr></table>
+## <a name="common-tasks"></a>Vanliga aktiviteter
 
-Låt Amanda visa dig den nya navigeringsmiljön medan hon förklarar och visar förbättringarna.  Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
+Låt Amanda visa dig navigeringsmiljön för Power BI-tjänsten.  Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
-## <a name="weve-added-some-brand-new-features"></a>Vi har lagt till några helt nya funktioner
-Prova sedan själv genom att följa de stegvisa anvisningarna.
 
-### <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Visa innehåll (instrumentpaneler, rapporter, arbetsböcker, datauppsättningar, arbetsytor, appar)
-Låt oss börja med att titta på hur grundläggande innehåll är organiserat (instrumentpaneler, rapporter, datauppsättningar, arbetsböcker). Tidigare var allt ditt innehåll listat i det vänstra navigeringsfönstret. Du kan fortfarande välja det alternativet men standard är att visa enligt innehållstyp inom en arbetsyta. Välj en arbetsyta från det vänstra navigeringsfönstret. Tabeller för det associerade innehållet (instrumentpaneler, rapporter, arbetsböcker och datauppsättningar) kommer att fylla Power BI-arbetsytan till höger.
+## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Visa innehåll (instrumentpaneler, rapporter, arbetsböcker, datauppsättningar, arbetsytor, appar)
+Låt oss börja med att titta på hur grundläggande innehåll är organiserat (instrumentpaneler, rapporter, datauppsättningar, arbetsböcker). Tidigare var allt ditt innehåll listat i det vänstra navigeringsfönstret. Du kan fortfarande välja det alternativet men standard är att visa enligt innehållstyp inom en arbetsyta. Välj en arbetsyta i det vänstra navigeringsfönstret. Tabeller för det tillhörande innehållet (instrumentpaneler, rapporter, arbetsböcker och datauppsättningar) fyller Power BI-arbetsytan till höger.
 
 Om du har Power BI Free kan du bara se en arbetsyta – **Min arbetsyta**.
 
 ![](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
-### <a name="favorite-dashboards"></a>Favoritinstrumentpaneler
-Med **Favoriter** kan du snabbt komma åt de instrumentpaneler som är viktigast för dig.  
+### <a name="favorite-dashboards-reports-and-apps"></a>Favoritmarkera instrumentpaneler, rapporter och appar
+Med **Favoriter** kan du snabbt komma åt det innehåll som är viktigast för dig.  
 
-1. Välj **Favorit** från det övre högra hörnet när instrumentpanelen är öppen.
+1. Välj **Favorit** i det övre högra hörnet när instrumentpanelen eller rapporten är öppen.
    
    ![](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
    
    **Favorit** ändras till **Ej favorit** och stjärnikonen blir gul.
    
    ![](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
-2. Om du vill visa en lista över alla instrumentpaneler som du har lagt till som favoriter i det vänstra navigeringsfältet väljer du pilen till höger om **Favoriter**. Eftersom det vänstra navigeringsfältet är en permanent funktion i Power BI-tjänsten har du åtkomst till den här listan från var som helst i Power BI-tjänsten.
+
+2. För en app väljer du **Appar** i det vänstra navigeringsfönstret, hovrar över appen och markerar stjärnan för att ange den som favorit.
+
+2. Om du vill visa en lista över allt innehåll som du har lagt till som favoriter i det vänstra navigeringsfältet väljer du pilen till höger om **Favoriter**. Eftersom det vänstra navigeringsfältet är en permanent funktion i Power BI-tjänsten har du åtkomst till den här listan från valfri plats i Power BI-tjänsten.
    
     ![](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
    
-    Härifrån kan du välja en instrumentpanel och öppna den.
+    Härifrån kan du välja en instrumentpanel, rapport eller en app och öppna den.
+
 3. Öppna rutan **Favoriter** i det vänstra navigeringsfältet och välj **Favoriter** eller klicka på ikonen Favoriter ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
    
    ![](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
    
-   Här kan du välja en instrumentpanel att öppna, se vem som äger en instrumentpanel, avmarkera en instrumentpanel som favorit eller dela en instrumentpanel med kollegor.
-4. Ett annat sätt att markera en instrumentpanel som en favorit är från fliken **Instrumentpaneler**.  Öppna arbetsytan som innehåller instrumentpanelen och välj stjärnikonen till vänster om instrumentpanelens namn.
+   Härifrån kan du öppna, söka efter innehåll, ta bort favoriter eller dela innehåll med kolleger.
+
+1. Det går även att favoritmarkera en instrumentpanel eller en rapport på arbetsyteflikarna **Instrumentpaneler** eller **Rapporter**.  Öppna arbetsytan för att se innehållsvyn och markera stjärnikonen till vänster om namnet.
    
    ![](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
-Läs mer i [Favoritmarkera en instrumentpanel](service-dashboard-favorite.md)
+Läs mer i [Favoriter](service-dashboard-favorite.md)
 
 ### <a name="recents"></a>Senaste
-Få snabb tillgång rapporter och instrumentpaneler som du nyligen öppnat genom att gå till panelen **Senaste**. Detta omfattar innehåll från alla dina arbetsytor.
+Få snabb tillgång till innehåll som du nyligen öppnat genom att gå till fönstret **Senaste**. Detta omfattar innehåll från alla dina arbetsytor.
 
   ![](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
-Precis som favoriter kan du snabbt komma åt ditt senaste innehåll från var som helst i Power BI-tjänsten genom att välja pilen bredvid **Senaste** i det vänstra navigeringsfältet.
+Precis som i Favoriter kan du snabbt komma åt ditt senaste innehåll från valfri plats i Power BI-tjänsten genom att markera pilen bredvid **Senaste** i det vänstra navigeringsfältet.
 
   ![](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
@@ -123,7 +115,7 @@ En app är en samling av instrumentpaneler och rapporter som används för att l
 Läs mer i **Apparbetsytor** (nedan) och [Vad är Power BI-appar](service-install-use-apps.md).
 
 ### <a name="shared-with-me"></a>Delat med mig
-**Delat med mig** är platsen för alla instrumentpaneler som kollegor har delat med dig.  Filtrera efter instrumentpanelens ägare, använd sökfältet för att hitta relevant information för dig eller sortera objekten efter datum.  Och för delat innehåll som du besöker ofta är det enklare att favoritmarkera det direkt från vyn **Delas med mig**.
+**Delat med mig** är platsen för allt innehåll som kollegor har delat med dig.  Filtrera efter instrumentpanelens ägare, använd sökfältet för att hitta relevant information för dig eller sortera objekten efter datum.  Och för delat innehåll som du besöker ofta är det enklare att favoritmarkera det direkt från vyn **Delas med mig**.
 
 ![](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
@@ -153,7 +145,7 @@ Växla arbetsytor genom att välja **arbetsytor** i det vänstra navigeringsfäl
 ![](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 
 ### <a name="search-and-sort-content"></a>Söka efter och sortera innehåll
-Den nya innehållsvyn gör det lättare att söka efter, filtrera och sortera ditt innehåll. Skriv i sökområdet om du vill söka efter en instrumentpanel, en rapport eller en arbetsbok. Power BI filtrerar fram det innehåll vars namn innehåller din söksträng.
+Med innehållsvyn är det lättare att söka efter, filtrera och sortera ditt innehåll. Skriv i sökområdet om du vill söka efter en instrumentpanel, en rapport eller en arbetsbok. Power BI filtrerar fram det innehåll vars namn innehåller din söksträng.
 
 ![](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
 
@@ -164,5 +156,7 @@ Du kan också sortera innehåll efter namn eller ägare.
 Läs mer i [Power BI-navigering: söka efter, sortera, filtrera](service-navigation-search-filter-sort.md)
 
 ## <a name="next-steps"></a>Nästa steg
+[Grundläggande begrepp](service-basic-concepts.md) för Power BI-tjänsten    
+
 Har du några frågor eller feedback? [Besök Power BI Community](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview)
 

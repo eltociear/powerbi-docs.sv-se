@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 17073390cf19b742730712a8d39a353c7d541cd6
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 44c248d1a99a10c69b3fb7c78e68320fdc5cd2b2
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Punktdiagram och bubbeldiagram i Power BI (självstudier)
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Dessa datapunkter kan vara jämnt eller ojämnt fördelade på den horisontala axeln, beroende på datan.
@@ -75,6 +75,14 @@ Nu har vi ett punktdiagram som visar totalförsäljningsvarians i % längs Y-axe
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Du kan också [formatera visualiseringsfärger, etiketter, rubriker, bakgrund med mera](service-getting-started-with-color-formatting-and-axis-properties.md).
+
+## <a name="accessibility"></a>Hjälpmedel
+
+Du kan göra ditt punktdiagram eller bubbeldiagram mer tillgängligt för personer med funktionsnedsättningar med hjälp av *Markörformer*. 
+
+För att välja markörformen väljer du avsnittet **Format** i rutan **Visualiseringar**, expanderar avsnittet **Former** och väljer sedan en markörform.
+
+![Markörform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 ### <a name="your-scatter-chart-has-only-one-data-point"></a>**Ditt punktdiagram har endast en datapunkt**

@@ -66,7 +66,7 @@ I framtiden kan du starta om *gatewayens Windows-tjänst* från gränssnittets d
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ## <a name="support-for-tls-1112"></a>Stöd för TLS 1.1/1.2
-Från och med augusti 2017-uppdateringen använder den lokala datagatewayen TLS (Transport Layer Security) 1.1 eller 1.2 för att kommunicera med **Power BI-tjänsten** som standard. Tidigare versioner av den lokala datagatewayen använder TLS 1.0 som standard. Stödet för TLS 1.0 avslutas den 15 januari 2018, inklusive gatewayens möjlighet att interagera med **Power BI-tjänsten** med TLS 1.0, så innan dess måste du uppgradera dina lokala datagatewayinstallationer till augusti 2017-versionen eller senare för att säkerställa att din gateway fortsätter att fungera.
+Från och med augusti 2017-uppdateringen använder den lokala datagatewayen TLS (Transport Layer Security) 1.1 eller 1.2 för att kommunicera med **Power BI-tjänsten** som standard. Tidigare versioner av den lokala datagatewayen använder TLS 1.0 som standard. Stödet för TLS 1.0 avslutas den 15 mars 2018, inklusive gatewayens möjlighet att interagera med **Power BI-tjänsten** med TLS 1.0, så innan dess måste du uppgradera dina lokala datagatewayinstallationer till augusti 2017-versionen eller senare för att säkerställa att din gateway fortsätter att fungera.
 
 Det är viktigt att observera att TLS 1.0 fortfarande stöds av den lokala datagatewayen före den 1 november och att den används av gatewayen som en reservmekanism. För att se till att all gatewaytrafik använder TLS 1.1 eller 1.2 (och för att förhindra användningen av TLS 1.0 på din gateway), måste du lägga till eller ändra följande registernycklar på den dator som kör gatewaytjänsten:
 

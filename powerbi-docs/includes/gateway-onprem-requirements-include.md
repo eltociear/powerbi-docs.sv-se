@@ -1,7 +1,7 @@
 ## <a name="requirements"></a>Krav
 **Minimikrav**
 
-* .NET 4.5 Framework
+* .NET 4.6 Framework
 * 64-bitars version av Windows 7 eller Windows Server 2008 R2 (eller senare)
 
 **Rekommenderas:**

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/19/2017
 ms.author: asaxton
-ms.openlocfilehash: 0b2e0208814fdd68ef7c6f0bcc1cf6ffa1fe42da
-ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
+ms.openlocfilehash: 70ffefa9845f8440205460ee0083f8dc334b7c81
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Integrera en panel i en app (användaren äger data)
 Lär dig att integrera eller bädda in en panel i en webbapp med hjälp av REST API-anrop, tillsammans med Power BI JavaScript-API vid inbäddning för din organisation.
@@ -41,7 +41,7 @@ Om du vill integrera en panel i en webbapp använder du **åtkomsttoken** **Powe
 Artikeln visar den kod som användes i [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) på GitHub. Om du vill följa den här genomgången kan du ladda ned exemplet.
 
 ## <a name="step-1---register-an-app-in-azure-ad"></a>Steg 1 – Registrera en app i Azure AD
-Du behöver registrera ditt program med Azure AD för att kunna göra REST API-anrop. Mer information finns i [Registrera en Azure AD-app för att bädda in Power BI-innehåll](register-app.md).
+Du måste registrera ditt program med Azure AD för att kunna göra REST API-anrop. Mer information finns i [Registrera en Azure AD-app för att bädda in Power BI-innehåll](register-app.md).
 
 Om du har hämtat [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) använder du det **Klient-ID** och den **Klienthemlighet** som du får efter registreringen så att exemplet kan autentisera till Azure AD. Om du vill konfigurera exemplet ändrar du **Klient-ID** och **Klienthemlighet** i filen *cloud.config*.
 
@@ -56,7 +56,7 @@ Om du vill hämta en **Power BI**-panel använder du åtgärden [Hämta paneler]
 Du måste hämta ett instrumentpanels-ID först innan du kan hämta panelen. Information om hur du hämtar en instrumentpanel finns i [Integrera en instrumentpanel i en app (användaren äger data)](integrate-dashboard.md).
 
 ### <a name="get-tiles-using-an-access-token"></a>Hämta paneler med hjälp av en åtkomsttoken
-Med den **åtkomsttoken** som du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta paneler](https://msdn.microsoft.com/library/mt465741.aspx). Åtgärden [Hämta paneler](https://msdn.microsoft.com/library/mt465741.aspx) returnerar en lista med paneler. Du kan hämta en enda panel från listan med paneler. Nedan finns en komplett C#-metod för att hämta en panel. Exempel på hur du använder Power BI REST API finns i [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+Med den **åtkomsttoken** som du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta paneler](https://msdn.microsoft.com/library/mt465741.aspx). Åtgärden [Hämta paneler](https://msdn.microsoft.com/library/mt465741.aspx) returnerar en lista med paneler. Du kan hämta en enda panel från listan med paneler. Nedan finns en komplett C#-metod för att hämta en panel. 
 
 Om du vill göra REST API-anrop måste du inkludera en *auktoriserings*rubrik i formatet *Ägare {åtkomsttoken}*.
 

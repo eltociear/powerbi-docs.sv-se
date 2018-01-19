@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/18/2017
+ms.date: 01/08/2018
 ms.author: maggies
-ms.openlocfilehash: 4cc7f12eb4964c67ae9f91cfcb51eac77d690555
-ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
+ms.openlocfilehash: d0fbe2ca891096cf8b1ae2145260c3341c451658
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Dela dina Power BI-instrumentpaneler med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder [flera olika sätt att samarbeta och distribuera dina instrumentpaneler](service-how-to-collaborate-distribute-dashboards-reports.md), och dela är bara en.
@@ -110,7 +110,7 @@ Om du skickar en länk från en Power BI-mobilapp till personer utanför organis
 Saker att tänka på när det gäller att dela instrumentpaneler:
 
 * Normalt ser du och dina kollegor samma data på instrumentpanelen. Så om du har behörighet att se mer data än vad de har, så kan de se alla dina data på din instrumentpanel. Men om [säkerhet på radnivå (RLS)](service-admin-rls.md) tillämpas på instrumentpanelens underliggande datauppsättning, då avgör de enskilda användarnas autentiseringsuppgifter vilka data de har åtkomst till.
-* Alla som du delar din instrumentpanel med kan se den och interagera med dina rapporter i [läsvy](service-report-open-in-reading-view.md). De kan inte skapa rapporter eller spara ändringar i befintliga rapporter.
+* Alla som du delar din instrumentpanel med kan se den och interagera med dina rapporter i [läsvy](service-reading-view-and-editing-view.md). De kan inte skapa rapporter eller spara ändringar i befintliga rapporter.
 * Ingen kan se eller hämta datauppsättningen.
 * Alla kan [uppdatera instrumentpanelens data](refresh-data.md) manuellt.
 * Om du använder Office 365 för e-post kan du dela med medlemmar i en distributionsgrupp genom att ange den e-postadress som är kopplad till distributionsgruppen.

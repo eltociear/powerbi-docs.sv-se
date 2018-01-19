@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 01/15/2018
 ms.author: asaxton
-ms.openlocfilehash: 5f884c9c45627ee3c129daca77e38d17f1223909
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: aa4401a6c913d38e471f83b88fec351308d25870
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -56,6 +56,10 @@ Microsoft rekommenderar att företag köper Power BI Premium, en molnlösning i 
 
 Det kan finnas tillfällen där en ISV (vanligtvis stor) vill använda en P-SKU för dra nytta av ytterligare fördelar med den kompletta Power BI-tjänsten i organisationen samt att bädda in i sina program. Och självklart kan vissa företag välja att använda A-SKU:er i Azure om de bara är intresserad av att bygga program för affärsverksamheten och bädda in analysverktyg i dem och inte är intresserade av att använda den kompletta Power BI-tjänsten.
 
+### <a name="how-many-embed-tokens-can-i-create"></a>Hur många inbäddningstoken kan jag skapa?
+
+Inbäddningstoken med PRO-licenser är avsedda för utveckling och utvecklartestning, så antalet inbäddningstoken ett Power BI-huvudkonto kan generera är begränsat. Du måste [köpa en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera när en kapacitet köps.
+
 ### <a name="when-will-power-bi-embedded-be-available-in-azure"></a>När kommer Power BI Embedded att vara tillgänglig i Azure?
 
 Power BI Embedded är redan tillgänglig.
@@ -70,7 +74,7 @@ Power BI Embedded är en uppsättning API:er som utvecklare kan använda för at
 
 Här är en lista över några skillnader som du kan använda de olika funktionerna.
 
-|Aktuell  |Power BI Embedded<br>(A SKU:er) |Power BI Premium-kapacitet<br>(A SKU:er)  |
+|Visning av aktuellt objekt  |Power BI Embedded<br>(A SKU:er) |Power BI Premium-kapacitet<br>(A SKU:er)  |
 |---------|---------|---------|
 |Bädda in artefakter från Power BI-appens arbetsytor     |Azure-kapacitet |Office 365-kapacitet |
 |Power BI-licens krävs för att använda rapporter |Nej  |Ja |
@@ -87,6 +91,12 @@ Här är en lista över några skillnader som du kan använda de olika funktione
 |Fakturering |Varje timma |Varje månad |Varje månad |
 |Bindningstid  |Ingen bindningstid |Varje år  |Varje månad/varje år |
 |Skillnad |Fullständig elasticitet. Kan skapa upp/ner, pausa/återuppta resurser i Azure Portal eller med API  |Kan användas för att bädda in innehåll i SharePoint Online och Microsoft Teams |Kombinera att bädda in i applikationer och använda Power BI-tjänsten i samma utsträckning |
+
+### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Vilka är kraven för att skapa en PBIE-kapacitet i Azure?
+
+- Du måste logga in i din organisationskatalog (MSA-konton stöds inte).
+- Du måste ha en Power BI-klient. Minst en användare i din katalog måste alltså ha registrerat sig för Power BI. 
+- Du måste ha en Azure-prenumeration i din organisationskatalog.
 
 ### <a name="how-can-i-monitor-capacity-consumption"></a>Hur kan jag övervaka kapacitetsförbrukningen?
 
@@ -130,7 +140,7 @@ Power BI Embedded mäts per timme.
 
 ### <a name="how-does-the-usage-of-power-bi-embedded-show-up-on-my-bill"></a>Hur visas användningen av Power BI Embedded på min faktura?
 
-Power BI Embedded faktureras enligt en förutsägbar timavgift baserat på antalet distribuerade noder.
+Power BI Embedded faktureras enligt en förutsägbar timavgift baserat på antalet distribuerade noder. Observera att du debiteras så länge en resurs är aktiv, även om den inte används. För att sluta bli debiterad måste du aktivt pausa din resurs. Du kan pausa via Azure eller ARM-API:er.
 
 ### <a name="what-happens-if-i-already-purchased-power-bi-premium-and-now-i-want-some-of-the-benefits-of-power-bi-embedded-in-azure"></a>Vad händer om jag redan har köpt Power BI Premium och vill ha några av fördelarna hos Power BI Embedded i Azure?
 
@@ -166,4 +176,4 @@ Power BI Embedded kommer att göras tillgängligt på Azures kommersiella moln n
 
 Ideella organisationer och högskolor kan köpa Azure. Det finns ingen särskild prissättning för dessa typer av kunder i Azure.
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

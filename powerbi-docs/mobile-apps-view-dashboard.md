@@ -1,6 +1,6 @@
 ---
-title: Visa instrumentpaneler i Power BI-appar
-description: "Skapa eller anslut till instrumentpaneler i Power BI-tjänsten. Visa dem sedan i Power BI-appar."
+title: Visa instrumentpaneler och rapporter i Power BI-mobilappar
+description: "Skapa eller anslut till instrumentpaneler och rapporter i Power BI-tjänsten. Visa dem sedan i Power BI-appar."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/18/2017
+ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: 07a514f5d5c5046f8046bb231aef941f201a829b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: e91b9745663ad88d388b410feb83ac8dfdc791b6
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="view-your-dashboards-in-the-power-bi-mobile-apps"></a>Visa dina instrumentpaneler i Power BI-appar
-Gäller:
+# <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
+Gäller för:
 
 | ![iPhone](media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-telefon](media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-surfplatta](media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows 10-enheter](media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
@@ -35,10 +35,10 @@ Instrumentpaneler är en portal till ditt företags livscykel och processer. En 
 ## <a name="create-dashboards-in-the-power-bi-service-httpspowerbicom"></a>Skapa instrumentpaneler i Power BI-tjänsten (https://powerbi.com)
 **Instrumentpaneler skapas inte i mobilapparna.** 
 
-Om du vill visa instrumentpaneler på din mobila enhet måste du skapa eller ansluta dem i en webbläsare. 
+Om du vill visa instrumentpaneler och rapporter på din mobila enhet måste du skapa eller ansluta dem i en webbläsare. 
 
 1. Gå till Power BI-tjänsten ([https://www.powerbi.com](https://www.powerbi.com)) och [registrera dig för ett konto](service-self-service-signup-for-power-bi.md).
-2. [Skapa dina egna Power BI-instrumentpaneler](service-dashboard-create.md), eller anslut till befintligt [innehåll för en mängd olika tjänster](service-connect-to-services.md).
+2. [Skapa egna Power BI-instrumentpaneler och rapporter](service-get-started.md) eller anslut till befintliga [Power BI-appar](service-connect-to-services.md) för en mängd olika tjänster som till exempel [Microsoft Dynamics CRM](service-connect-to-microsoft-dynamics-crm.md) och [Adobe Analyics](service-connect-to-adobe-analytics.md).
 
 Här är en instrumentpanel i Power BI-tjänsten:
 

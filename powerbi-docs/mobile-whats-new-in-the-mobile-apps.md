@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: b2df6825232f51a53bada3676faf598d6bc5d70b
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 9ed87e17d617e7492287f3f0d0c54da1c21b3a53
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -31,6 +31,11 @@ Relaterad information om nyheter finns i:
 * [Nyheter i Power BI-tjänsten](service-whats-new.md)  
 
 ## <a name="december-2017"></a>December 2017
+
+### <a name="improved-security-management"></a>Förbättrad säkerhetshantering 
+
+Vi har lagt till stöd för villkorlig åtkomst (CA) och Microsoft Intune-hantering av mobilenheter (MDM) för Android-enheter för att bättre kunna skydda din organisations data. Detta finns redan tillgängligt på iOS.
+
 ### <a name="improved-permission-management"></a>Förbättrad behörighetshantering
 
 Vi har gjort några ändringar som ska ge en bättre hantering av användarbehörigheter för datauppsättningar, instrumentpaneler och rapporter.

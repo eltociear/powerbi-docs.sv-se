@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: ced415662c2dc39b6491cb79d121f3cd77719fe4
-ms.sourcegitcommit: be55922d7f43f458aea0160ec8fdfb1a0b5a0c00
+ms.openlocfilehash: deff79bba0f7f191a8343629300c725f3150e509
+ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -32,6 +32,13 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 ## <a name="october-2017"></a>Oktober 2017
 
 - **Power BI-rapportserver**
+    - *Version 1.1.6582.41691 (build-nr 14.0.600.442), publicerat: 10 januari 2018*
+        - Säkerhetsuppdateringar
+        - Felkorrigeringar
+            - Korrigering för Model.GetParameters som returnerar 400
+            - Korrigering för att ställa in delad datauppsättning till befintliga sidnumrerade rapporter (RDL)
+            - Korrigering för ExecutionNotFoundException när du exporterar en rapport med olika parametervärden till PDF
+
     - *Version 1.1.6551.5155 (Build 14.0.600.438), Utgiven: 11 december 2017*
         - Felkorrigeringar
             - Det gick inte att spara data efter uppdatering för vissa Power BI Desktop-rapporter.
@@ -61,6 +68,9 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
             - Förbättrad användbarhet
 
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
+    - *Version: 2.51.4885.2501 (oktober 2017), publicerad: 10 januari 2018*
+        - Säkerhetsuppdateringar
+
     - *Version: 2.51.4885.1423 (oktober 2017) publicerat: 17 november 2017*
         - Felkorrigeringar
             - Korrigering för 32-bitars Power BI Desktop som inte kunde köras på x86 OS
@@ -74,6 +84,9 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 ## <a name="june-2017"></a>Juni 2017
 
 - **Power BI-rapportserver**
+    - *Build-nr 14.0.600.309, publicerat: 10 januari 2018*
+        - Säkerhetsuppdateringar
+
     - *Build-nr 14.0.600.305, publicerat: 19 september 2017*  
         - Felkorrigeringar
             - Uppdatering till senaste [webbkontrollen för Bing Maps](https://msdn.microsoft.com/library/mt712542.aspx)
@@ -87,6 +100,10 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
     - *Build-nr 14.0.600.271, publicerat: 12 juni 2017*
         - Ursprunglig utgåva av Power BI-rapportservern
+
+- **Power BI Desktop (optimerad för Power BI-rapportservern)**
+    - *Version: 2.47.4766.4901 (uni 2017), publicerad: 10 januari 2018*
+        - Säkerhetsuppdateringar
 
 ## <a name="next-steps"></a>Nästa steg
 

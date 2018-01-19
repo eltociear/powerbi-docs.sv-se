@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/16/2018
 ms.author: davidi
-ms.openlocfilehash: 70cb015b0f5c4aa952c33c6dd94da5292f9678d7
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 258962cbc9ea60b31676a1bcfb10f7906c6e0f74
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
 I Power BI Desktop skapar du en **formkartan** för att visa relativa jämförelser mellan områden på en karta genom att använda olika färger i olika områden. Jämfört med **kartor** kan **formkartor** inte visa exakta geografiska platser för datapunkter på en karta. Dess huvudsakliga syfte är att visa relativa jämförelser för regioner på en karta genom att markera dem med olika färger.
 
-**Formkartor** är baserade på ESRI/TopoJSON-kartor som kan använda anpassade som du kan skapa, till exempel geografiska kartor, placeringskartor, plankartor med mera. Funktionen med anpassade kartor är inte tillgänglig i den här förhandsversionen av **formkartan**, men anpassade kartor kommer att aktiveras när förhandsversionen upphör, vilket förväntas ske i och med nästa månatliga uppdatering av Power BI Desktop.
+**Formkartor** är baserade på ESRI/TopoJSON-kartor som kan använda anpassade som du kan skapa, till exempel geografiska kartor, placeringskartor, plankartor med mera. Möjligheten att använda anpassade kartor är inte tillgänglig i den här förhandsversionen av **Formkarta**.
 
 ## <a name="creating-shape-maps"></a>Skapa formkartor
 Du kan testa kontrollen **Formkarta** med kartorna som levereras med den här förhandsversionen använda dina egna anpassade kartor förutsatt att de uppfyller kraven som anges i följande avsnitt: **Använda anpassade kartor**.
@@ -95,8 +95,9 @@ Du kan ange en ny kolumn genom att skriva ett nytt kolumnnamn (i den tomma kolum
 Det finns några överväganden och krav för den här förhandsversionen av **Formkarta**:
 
 * **Formkartor** är en förhandsversion och måste aktiveras i Power BI Desktop. För att aktivera **Formkartor** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera sedan kryssrutan bredvid **Bokmärken**.
-* För närvarande, måste bucketen **Värden** vara inställd för att **förklaring**sklassificeringen ska fungera korrekt. Vi planerar att förbättra det här beteendet i slutversionen av **Formkarta**.
-* Slutversionen av **formkartan** har ett användargränssnitt som visar kartnycklarna för den valda kartan; i den här förhandsversionen du kan referera till kartregionsnycklarna i tabellerna i avsnittet **Regionsnycklar** i den här artikeln.
+* För närvarande måste bucketen **Värden** vara inställd för att klassificeringen **Förklaring** ska fungera korrekt
+* Slutversionen av **formkartan** har ett användargränssnitt som visar kartnycklarna för den valda kartan (inget datum har angivits för slutversionen och **formkartan** är fortfarande tillgänglig som förhandsversion). I förhandsversionen finns kartregionsnycklarna i tabellerna i avsnittet **Regionsnycklar** i den här artikeln.
+* Det visuella objektet **Formkarta** ritar upp till 1 000 datapunkter.
 
 ## <a name="region-keys"></a>Regionsnycklar
 Använd följande **Regionsnycklar** i den här förhandsversionen för att testa **formkartan**.

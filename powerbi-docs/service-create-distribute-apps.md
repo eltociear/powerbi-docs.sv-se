@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: 27ead0a3104693aff4a6fc3c2641c207ad44dc09
-ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
+ms.openlocfilehash: 89c376451199aec0a6f464f3298df44d468f37d2
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Skapa och publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -51,14 +51,9 @@ För att skapa appar måste du ha en licens för Power BI Pro. Det finns två al
 ## <a name="app-workspaces"></a>App-arbetsytor
 *App-arbetsytor* är de platser där du skapar appar, så du måste börja med att skapa en app-arbetsyta innan du skapar appen. Om du tidigare har arbetat i en grupparbetsyta i Power BI, kommer app-arbetsytor att kännas bekanta. De är en utveckling av grupparbetsytor – mellanlagringsområden och behållare för innehållet i appen. 
 
-Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. Alla medlemmar och administratörer av app-arbetsytan behöver Power BI Pro-licenser. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik eller hela organisationen. 
+Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. Alla medlemmar och administratörer av app-arbetsytan behöver Power BI Pro-licenser. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att publicera till en bredare publik eller hela organisationen. 
 
-När innehållet är klart publicerar du appen. Du kan skicka en direktlänk till den bredare målgruppen eller så kan de hitta din app på fliken Appar genom att gå till **Ladda ned och utforska fler appar från AppSource**. Dessa personer kan inte ändra innehållet i appen, men de kan interagera med det i antingen Power BI-tjänsten eller i någon av mobilapparna och kan filtrera, markera och sortera data på egen hand. 
-
-### <a name="how-are-app-workspaces-different-from-group-workspaces"></a>Hur skiljer sig app-arbetsytor åt från grupparbetsytor?
-Alla befintliga grupparbetsytor kan fungera som app-arbetsytor och du kan publicera appar från alla dessa arbetsytor. Aapp-arbetsytor och grupparbetsytor skiljer sig bland annat åt på följande sätt: du skapar en app-arbetsyta som en plats för att skapa och inhysa en viss app. Det finns ett 1:1-förhållande mellan appen och innehållet på app-arbetsytan. Allt innehåll på app-arbetsytan kommer att finnas i appen när du publicerar den. 
-
-Nu när du förstår appar och app-arbetsytor, ska vi skapa och publicera en app. 
+När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du appen. Du kan skicka en direktlänk till den bredare målgruppen eller så kan de hitta din app på fliken Appar genom att gå till **Ladda ned och utforska fler appar från AppSource**. Dessa personer kan inte ändra innehållet i appen, men de kan interagera med det i antingen Power BI-tjänsten eller i någon av mobilapparna och kan filtrera, markera och sortera data på egen hand. 
 
 ## <a name="create-an-app-workspace"></a>Skapa en app-arbetsyta
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]

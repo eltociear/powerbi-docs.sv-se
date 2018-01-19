@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/19/2017
+ms.date: 01/11/2018
 ms.author: asaxton
-ms.openlocfilehash: 76435200df843acc4ba60ebab09633aa8f5c258d
-ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
+ms.openlocfilehash: e614273c21dd5c222816700f0d42888e661ba1e0
+ms.sourcegitcommit: e623f8e5f715bd40a049b6448ca57b80de998cb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Bädda in Power BI-innehåll i instrumentpaneler, rapporter och paneler
 
@@ -133,10 +133,13 @@ Gratisanvändare kan använda innehåll som har bäddats in från en apparbetsyt
 
 ### <a name="embedding-for-your-customers"></a>Inbäddning för dina kunder
 
-Om du bäddar in för kunderna behöver du vill göra följande.
+Om du bäddar in för kunderna gör du följande.
 
 * Om du använder en separat klient för utveckling, så måste du kontrollera att dina apparbetsytor, tillsammans med instrumentpaneler och rapporter, är tillgängliga i din produktionsmiljö. Kontrollera att du har skapat programmet i Azure AD för din produktionsklient och tilldelat rätt appbehörigheter, så som beskrivs i steg 1.
 * Köp en kapacitet som passar dina behov. Du kan använda tabellen nedan för att förstå vilken SKU för Power BI Embedded-kapaciteten som du behöver. För mer information, se [White paper om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper). När du är redo att köpa kan du göra detta i [Microsoft Azure-portalen](https://portal.azure.com). Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+
+> [!IMPORTANT]
+> Eftersom inbäddningstoken endast är avsedda för utvecklartestning är antalet inbäddningstoken ett Power BI-huvudkonto kan generera begränsat. En [kapacitet måste köpas](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddningsscenarier för produktion. Det finns ingen gräns för generering av inbäddningstoken när en kapacitet köps.
 
 | Kapacitetsnod | Totalt antal kärnor<br/>*(Serverdel + klientdel)* | Serverdelskärnor | Klientdelskärnor | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning |
 | --- | --- | --- | --- | --- | --- |
@@ -152,6 +155,8 @@ Om du bäddar in för kunderna behöver du vill göra följande.
     ![Tilldela en apparbetsyta till en kapacitet](media/embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Distribuera ditt uppdaterade program till produktion och börja bädda in rapporter och instrumentpaneler från Power BI-tjänsten.
+
+
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 
