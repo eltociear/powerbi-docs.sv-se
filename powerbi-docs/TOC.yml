@@ -12,7 +12,7 @@
           href: service-free-vs-pro.md
         - name: Datakällor för Power BI
           href: service-get-data.md
-        - name: Den nya navigeringsupplevelsen i Power BI
+        - name: Navigera i Power BI-tjänsten – navigeringsupplevelse
           href: service-the-new-power-bi-experience.md
         - name: 10 tips för att få hjälp
           href: service-tips-for-finding-help.md
@@ -68,7 +68,7 @@
           href: sample-retail-analysis.md
     - name: Vanliga aktiviteter
       items:
-        - name: Favoritinstrumentpaneler i Power BI
+        - name: 'Favoritmarkera instrumentpaneler, rapporter och appar i Power BI'
           href: service-dashboard-favorite.md
         - name: 'Skriva ut en instrumentpanel, skriva ut en panel på instrumentpanelen, skriva ut en rapportsida'
           href: service-print.md
@@ -266,26 +266,36 @@
           href: service-data-classification.md
     - name: Ställa frågor om dina data
       items:
-        - name: Frågor och svar i Power BI
-          href: service-q-and-a.md
-        - name: Så använder du Frågor och svar i Power BI
-          href: service-how-to-q-and-a.md
-        - name: 'Självstudier: Kom igång med Frågor och svar i Power BI'
-          href: power-bi-visualization-introduction-to-q-and-a.md
-        - name: Använda Frågor och svar med Power BI Gateway – Företagsdata (Förhandsgranskning)
-          href: service-q-and-a-direct-query.md
-        - name: Få dina data att fungera bra med Frågor och svar i Power BI
-          href: service-prepare-data-for-q-and-a.md
-        - name: Introduktion till Cortana för Power BI
-          href: service-cortana-intro.md
-        - name: Aktivera Cortana för Power BI
-          href: service-cortana-enable.md
-        - name: Skapa aktuella frågor för Frågor och svar i Power BI
-          href: service-q-and-a-create-featured-questions.md
-        - name: Tips för att ställa frågor med Frågor och svar i Power BI
-          href: service-q-and-a-tips.md
-        - name: Felsöka Cortana
-          href: service-cortana-troubleshoot.md
+        - name: Översikt
+          items:
+            - name: Frågor och svar i Power BI
+              href: power-bi-q-and-a.md
+            - name: Introduktion till Cortana för Power BI
+              href: service-cortana-intro.md
+        - name: Snabbstart
+          items:
+            - name: Komma igång med Power BI – vanliga frågor och svar
+              href: power-bi-visualization-introduction-to-q-and-a.md
+        - name: Självstudier
+          items:
+            - name: Använda frågor och svar för att skapa visualiseringar och rapporter
+              href: power-bi-tutorial-q-and-a.md
+        - name: Gör så här
+          items:
+            - name: Använda Frågor och svar med Power BI Gateway – Företagsdata (Förhandsgranskning)
+              href: service-q-and-a-direct-query.md
+            - name: Få dina data att fungera bra med Frågor och svar i Power BI
+              href: service-prepare-data-for-q-and-a.md
+            - name: Aktivera Cortana för Power BI
+              href: service-cortana-enable.md
+            - name: Skapa aktuella frågor för Frågor och svar i Power BI
+              href: service-q-and-a-create-featured-questions.md
+        - name: Resurser
+          items:
+            - name: Tips för att ställa frågor med Frågor och svar i Power BI
+              href: service-q-and-a-tips.md
+            - name: Felsöka Cortana
+              href: service-cortana-troubleshoot.md
     - name: Dela ditt arbete
       items:
         - name: Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?
@@ -348,16 +358,12 @@
           href: power-bi-how-to-report-filter.md
         - name: Analysera i Excel
           href: service-analyze-in-excel.md
-        - name: Ändra hur den visuella informationen interagerar i en rapport
+        - name: Ändra hur visuella objekt interagerar i en rapport
           href: service-reports-visual-interactions.md
-        - name: Öppna en Power BI-rapport i läsvyn
-          href: service-report-open-in-reading-view.md
-        - name: Gå från läsvyn till redigeringsvyn i Power BI
+        - name: Öppna en Power BI-rapport i Läsvyn eller Redigeringsvyn
           href: service-reading-view-and-editing-view.md
         - name: Interagera med en rapport i redigeringsvyn i Power BI
           href: service-interact-with-a-report-in-editing-view.md
-        - name: Interagera med en rapport i läsvyn i Power BI
-          href: service-interact-with-a-report-in-reading-view.md
         - name: Tips om hur du skapar rapporter i Power BI-tjänsten
           href: power-bi-reports-tips-and-tricks-for-creating.md
         - name: Analytics-fönstret
@@ -784,7 +790,7 @@
           href: desktop-add-custom-column.md
         - name: Skapa dynamisk visuell information i Power BI
           href: desktop-create-responsive-visuals.md
-        - name: Använda infogade hierarkietiketter i Power BI Desktop (förhandsgranskning)
+        - name: Använda infogade hierarkietiketter i Power BI Desktop (förhandsversion)
           href: desktop-inline-hierarchy-labels.md
         - name: Använda numeriskt intervallutsnitt
           href: desktop-slicer-numeric-range.md
@@ -1006,8 +1012,6 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Resurser
       items:
-        - name: Apiary
-          href: 'https://go.microsoft.com/fwlink/?linkid=848278'
         - name: JavaScript bädda in demo
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Exempel
@@ -1050,8 +1054,10 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=849021'
         - name: Datakällor som stöds
           href: report-server/data-sources.md
-        - name: Ansluta till datakällor
+        - name: Anslut till datakällor
           href: report-server/connect-data-sources.md
+        - name: 'Åtkomst till delade datauppsättningar som OData-flöden '
+          href: report-server/access-dataset-odata.md
         - name: Konfigurera schemalagd uppdatering
           href: report-server/configure-scheduled-refresh.md
         - name: Lägga till kommentarer i en rapport

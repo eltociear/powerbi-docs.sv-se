@@ -1,6 +1,6 @@
 ---
-title: Interagera med en rapport i redigeringsvyn i Power BI
-description: Interagera med en rapport i redigeringsvyn i Power BI
+title: "Interagera med en rapport i redigeringsvyn (självstudie)"
+description: "Interagera med en rapport i redigeringsvyn för rapporter i Power BI-tjänsten"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,16 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 01/05/2018
 ms.author: mihart
-ms.openlocfilehash: 9cbe01dab4f1019e3943c54685e3da416f1a0ca9
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: da4f81f1c97477f7e141c90bb841b6dcb7bb092c
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/09/2018
 ---
-# <a name="interact-with-a-report-in-editing-view-in-power-bi"></a>Interagera med en rapport i redigeringsvyn i Power BI
-I rapportens [redigeringsvy](service-reading-view-and-editing-view.md), har du många möjligheter att utforska och skapa en rapport. Alla funktionerna från [läsvyn](service-interact-with-a-report-in-reading-view.md) finns tillgängliga – många andra. Redigeringsvyn är endast tillgänglig för den person som skapade rapporten eller kollegor som [samäger en rapport som medlem eller administratör i en apparbetsyta](service-create-distribute-apps.md).
+# <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interagera med en rapport i redigeringsvyn i Power BI-tjänsten
+Rapporter kan redigeras i Power BI-tjänsten och Power BI Desktop, förutsatt att du har ägarbehörigheter. Till skillnad från Desktop har Power BI-tjänsten två olika lägen för att interagera med rapporter – [läsvyn](service-reading-view-and-editing-view.md) för rapport*konsumenter* och redigeringsvyn för ägare och skapare av rapporter. Den här artikelsjälvstudien beskriver redigeringsvyn i Power BI-tjänsten. 
+
+I rapportens redigeringsvy har du många möjligheter att både utforska och skapa en rapport. Alla funktionerna från [läsvyn](service-reading-view-and-editing-view.md) finns tillgängliga – många andra. Redigeringsvyn är endast tillgänglig för den person som skapade rapporten eller kollegor som [samäger en rapport som medlem eller administratör i en apparbetsyta](service-create-distribute-apps.md).
 
 ## <a name="functionality-only-available-in-editing-view"></a>Funktioner som endast är tillgängliga i redigeringsvyn
 Ta en titt på listan med avsnitt under rubriken **Rapporter** i innehållsförteckningen till vänster. Det är en lång lista och många av avsnitten beskriver funktioner *som endast finns tillgängliga om du har redigeringsbehörigheter för en rapport*.  För att hjälpa dig navigera i innehållsförteckningen, krävs redigeringsvyn för följande:
@@ -43,8 +45,6 @@ Ta en titt på listan med avsnitt under rubriken **Rapporter** i innehållsfört
 
 ## <a name="next-steps"></a>Nästa steg
 Gå tillbaka till [Läsvyn och redigeringsvyn i Power BI-tjänsterapporter](service-reading-view-and-editing-view.md)
-
-Vilka funktioner är tillgängliga i [läsvyn för rapporter](service-interact-with-a-report-in-reading-view.md)?
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: 650e02ea7d6f31fce9e5a0a458c41d6daa3fa9e1
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 57c441c489bf71db4b45bdfb96821b3cc2dcdec3
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Sidvisningsinställningar i en Power BI-rapport
 Vi förstår att det är viktigt att hålla din rapportlayout perfekt. Ibland är det kan vara en utmaning, eftersom du och dina kollegor visar rapporterna på era skärmar med olika bredd–höjd-förhållanden och storlekar. 
@@ -45,7 +45,7 @@ I Power BI-tjänsten öppnar du en rapport och väljer **Visa** i den övre vän
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Inställningarna för Sidvisning är tillgängliga i både [Läsvy](service-interact-with-a-report-in-reading-view.md) och [Redigeringsvy](service-interact-with-a-report-in-editing-view.md). I redigeringsvyn kan en rapportägare tilldela sidvisningsinställningar för enskilda rapportsidor och dessa inställningar sparas med rapporten. När en kollegor öppnar rapporten i läsvyn ser de rapportsidevisningen med ägarens inställningar.  I läsvyn kan kollegor ändra *vissa* sidvisningsinställningar men ändringarna sparas inte när de lämnar rapporten.
+Inställningarna för sidvisning är tillgängliga i både [läsvyn och redigeringsvyn](service-reading-view-and-editing-view.md). I redigeringsvyn kan en rapportägare tilldela sidvisningsinställningar för enskilda rapportsidor och dessa inställningar sparas med rapporten. När en kollegor öppnar rapporten i läsvyn ser de rapportsidevisningen med ägarens inställningar.  I läsvyn kan kollegor ändra *vissa* sidvisningsinställningar men ändringarna sparas inte när de lämnar rapporten.
 
 ##    <a name="page-view-settings"></a>Inställningar för Sidvisning
 Den första uppsättningen inställningar för *Sidvisning* styr visningen av din rapportsida i förhållande till webbläsarfönstret.  Välj mellan:

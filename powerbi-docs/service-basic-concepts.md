@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/10/2018
 ms.author: mihart
-ms.openlocfilehash: 6e1e74f26ab1d0a0a59bc33b9d1068807918e18e
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: be245be7c8f83cb363e93a5d2bc452418f436e37
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundläggande begrepp för Power BI-tjänsten
 
@@ -95,7 +95,7 @@ Datauppsättningar kan uppdateras, döpas om, utforskas och tas bort. Du kan anv
 ## <a name="reports"></a>Rapporter
 En Power BI-rapport är en eller flera sidor av visualiseringar (tabeller och diagram som linjediagram, cirkeldiagram, treemaps och många andra). Visualiseringar kallas också ***visuella objekt***. Alla visualiseringar i en rapport kommer från en enda datauppsättning. Rapporter kan skapas från grunden i Power BI, importeras med instrumentpaneler som kollegor delar med dig eller skapas när du ansluter till datauppsättningar från Excel, Power BI Desktop, databaser, SaaS-program och [appar](service-get-data.md).  När du ansluter till en Excel-arbetsbok med Power View-blad, skapar Power BI en rapport baserad på dessa blad. Och när du ansluter till ett SaaS-program, importerar Power BI en förskapad rapport.
 
-Det finns två lägen för att visa och interagera med rapporter: [Läsvy](service-report-open-in-reading-view.md) och [Redigeringsvy](service-interact-with-a-report-in-editing-view.md).  Endast den person som skapade rapporten, delägare och de som beviljats behörighet, har åtkomst till alla funktionerna för utforskning, design, version och delning i rapportens ***Redigeringsvy***. Och de personer som de delar rapporten med kan utforska och interagera med rapporten med hjälp av ***Läsvy***.   
+Det finns två lägen för att visa och interagera med rapporter: [läsvyn och redigeringsvyn](service-reading-view-and-editing-view.md).  Endast den person som skapade rapporten, delägare och de som beviljats behörighet, har åtkomst till alla funktionerna för utforskning, design, version och delning i rapportens ***Redigeringsvy***. Och de personer som de delar rapporten med kan utforska och interagera med rapporten med hjälp av ***Läsvy***.   
 
 När du öppnar en arbetsyta, visas de associerade rapporterna under fliken **Rapporter**. Varje listad rapport representerar en eller flera sidor med visualiseringar baserade på endast en av de underliggande datauppsättningarna. Om du vill öppna en rapport, markerar du den. 
 
@@ -238,6 +238,7 @@ Det här området på skärmen innehåller ytterligare alternativ för att inter
 
 ## <a name="next-steps"></a>Nästa steg
 [Kom igång med Power BI](service-get-started.md)  
+[Navigering: Navigera i Power BI-tjänsten](service-the-new-power-bi-experience.md)
 [Power BI-videor](videos.md)  
 [Rapportredigeraren – ta en rundtur](service-the-report-editor-take-a-tour.md)
 
