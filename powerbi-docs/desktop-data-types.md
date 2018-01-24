@@ -126,7 +126,7 @@ Om till exempel om ett datum används i en subtraktion med någon annan datatyp,
 
 **Multiplikation(*)**
 
-| Operator(*) | INTEGER | CURRENCY | REAL | Datum/tid |
+| Operator(\*) | INTEGER | CURRENCY | REAL | Datum/tid |
 | --- | --- | --- | --- | --- |
 | INTEGER |INTEGER |CURRENCY |REAL |INTEGER |
 | CURRENCY |CURRENCY |REAL |CURRENCY |CURRENCY |

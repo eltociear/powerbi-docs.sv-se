@@ -192,7 +192,7 @@ När du markerar ett objekt i listan kan du välja att ordna om det med hjälp a
 
 ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-entry-selected.png)
 
-### <a name="using-wildcard-"></a>Använda jokertecken (*)
+### <a name="using-wildcard-"></a>Använda jokertecken (\*)
 Du kan använda ett jokertecken för din sträng **Ersätt (ursprungligt namn)**. Det kan bara användas på egen hand och inte med någon annan strängdel. På så vis kan du ta med alla användare och skicka ett enda värde till datakällan. Detta är användbart när du vill att alla användare i din organisation ska använda samma användare i den lokala miljön.
 
 ### <a name="test-a-mapping-rule"></a>Testa en mappningsregel
