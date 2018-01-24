@@ -31,7 +31,7 @@ Det finns många sätt att navigera i innehållet i Power BI-tjänsten. Innehål
 
 ## <a name="navigation-within-workspaces"></a>Navigera i arbetsytorna
 
-Power BI-tjänsten separerar ditt arbetsyteinnehåll efter typ: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar. Den här organisationen visas när du väljer en arbetsyta. I det här exemplet har apparbetsytan fått namnet ”Exempel på försäljning och marknadsföringsapp” och innehåller två instrumentpaneler, sex rapporter, en arbetsbok och fem datauppsättningar.
+Power BI-tjänsten separerar ditt arbetsyteinnehåll efter typ: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar. Den här organisationen visas när du väljer en arbetsyta. I det här exemplet har apparbetsytan fått namnet ”Exempelapp för försäljning och marknadsföring” och innehåller två instrumentpaneler, sex rapporter, en arbetsbok och fem datauppsättningar.
 
 ![](media/service-navigation-search-filter-sort/workspaces.gif)
 
