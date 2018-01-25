@@ -1,6 +1,6 @@
 ---
-title: "Felsöka analysera i Excel i Power BI Desktop"
-description: "Lösningar på vanliga problem för analysera i Excel"
+title: "Felsöka Analysera i Excel i Power BI Desktop"
+description: "Lösningar på vanliga problem för Analysera i Excel"
 services: powerbi
 documentationcenter: 
 author: davidiseminger
@@ -42,7 +42,7 @@ Den här artikeln innehåller följande felsökningsavsnitt:
 * Inga datamodeller
 * Token har upphört att gälla-fel
 * Det går inte att ansluta till lokala Analysis Services
-* Det går inte att dra något till området värden i pivottabeller (inga mått)
+* Det går inte att dra något till området för pivottabellvärden (inga mått)
 
 ## <a name="update-excel-libraries-for-the-ole-db-provider"></a>Uppdatera Excel-bibliotek för OLE DB-providern
 För att använda **Analysera i Excel** måste datorn ha en aktuell installerad AS OLE DB-provider. Denna [community-post](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) är en bra källa för att verifiera installationen av OLE DB-providern eller för att hämta den senaste versionen.
@@ -66,7 +66,7 @@ Om ditt klientbibliotek för Excel OLE DB-providern är uppdaterat visas följan
 
 C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
-Alternativt visas följande dialogruta om du den nya versionen som du installerar är nyare än versionen på din dator:
+Alternativt visas följande dialogruta om den nya versionen som du installerar är nyare än versionen på din dator:
 
 ![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
 
@@ -86,12 +86,12 @@ Om du fortfarande stöter på fel loggar du in på Power BI med kontot som har b
 Om det uppstår ett fel som anger att det **inte går att hitta OLAP-kubmodellen** innebär detta att datauppsättningen som du försöker få åtkomst till inte har någon datamodell och därför inte kan analyseras i Excel.
 
 ## <a name="token-expired-error"></a>Token har upphört att gälla-fel
-Om du ser felet **Token har upphört att gälla** innebär det att du inte har använt funktionen **Analysera i Excel** på datorn som du använder. Ange dina autentiseringsuppgifter igen, öppna filen igen så bör felet försvinna.
+Om du ser felet **Token har upphört att gälla** innebär det att du inte har använt funktionen **Analysera i Excel** på datorn som du använder. Ange dina autentiseringsuppgifter igen och öppna filen igen så bör felet försvinna.
 
 ## <a name="unable-to-access-on-premises-analysis-services"></a>Det går inte att ansluta till lokala Analysis Services
-Om du försöker komma åt en datamängd som har anslutningar till lokala Analysis Services-data kan du få ett felmeddelande. **Analysera i Excel** stöder anslutning till datauppsättningar och rapporter på lokala **Analysis Services** med en anslutningssträng, så länge som datorn tillhör samma domän som **Analysis Services**-servern och ditt konto har åtkomst till den **Analysis Services**-servern.
+Om du försöker komma åt en datauppsättning som har anslutningar till lokala Analysis Services-data kan du få ett felmeddelande. **Analysera i Excel** stöder anslutning till datauppsättningar och rapporter på lokala **Analysis Services** med en anslutningssträng, så länge som datorn tillhör samma domän som **Analysis Services**-servern och ditt konto har åtkomst till den **Analysis Services**-servern.
 
-## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Det går inte att dra något till området värden i pivottabeller (inga mått)
+## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Det går inte att dra något till området för pivottabellvärden (inga mått)
 När **Analysera i Excel** ansluter till en extern OLAP-modell (vilket är hur Excel ansluter till Power BI) kräver *pivottabellen* [att **åtgärder** ska definieras i den externa modellen](https://support.microsoft.com/kb/234700)eftersom alla beräkningar utförs på servern. Detta skiljer sig från när du arbetar med en lokal datakälla (till exempel tabeller i Excel, eller när du arbetar med datauppsättningar i **Power BI Desktop** eller **Power BI-tjänsten**), i vilket fall tabellmodellen är tillgänglig lokalt och [du kan använda införstådda mått](https://msdn.microsoft.com/library/gg399077.aspx), som är mått som genereras dynamiskt och inte lagras i datamodellen. I dessa fall kan Excel bete sig annorlunda än **Power BI Desktop** eller **Power BI-tjänsten**: det kan finnas kolumner i dessa data som kan hanteras som åtgärder i Power BI, men kan inte användas som värden (mått) i Excel.
 
 Det finns ett par alternativ för att hantera det här problemet:
@@ -111,7 +111,7 @@ När din mått har definierats i modellen i Power BI-tjänsten kan du använda d
 
 [Skapa ett mått i PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
 
-[Lägg till arbetsbladdata i en datamodell som använder en länkad tabell](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
+[Lägga till kalkylbladsdata i en datamodell med hjälp av en länkad tabell](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
 [Skillnader mellan OLAP- och icke-OLAP-pivottabeller i Excel](https://support.microsoft.com/kb/234700)
 
