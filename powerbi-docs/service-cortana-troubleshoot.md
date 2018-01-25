@@ -95,7 +95,7 @@ Har du fortfarande problem?  Nu är dags att köra Cortanas felsökningsverktyg 
    Eftersom vi fick ett resultat vet vi nu att Cortana **är** aktiverat i Power BI. Det begränsar problemet till något på Windows-sidan, i språkinställningen för Cortana, eller om det finns fler än 100 datauppsättningar som aktiverats för Cortana.
 
 ### <a name="having-trouble-retrieving-answers-from-a-dashboard"></a>Har du problem med att hämta svar från en instrumentpanel?
-Letar du efter en instrumentpanel som har delats med dig?  Öppna Power BI > **Delas med mig** och leta reda på namnet på instrumentpanelen.  Skriv namnet i fältet *Uttryck**.
+Letar du efter en instrumentpanel som har delats med dig?  Öppna Power BI > **Delas med mig** och leta reda på namnet på instrumentpanelen.  Skriv namnet i fältet *Uttryck* *.
 
 ![Öppna Delat med mig i Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 
