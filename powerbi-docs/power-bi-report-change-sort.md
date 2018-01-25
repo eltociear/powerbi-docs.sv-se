@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 13da4602306b1218baee81909d37897524f6dfc9
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: aeb22c23b0ef22afd44592c1ceb90537878042d9
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
 I en Power BI-rapport kan du sortera de flesta visualiseringar alfabetiskt efter namnen på kategorierna i diagrammet eller efter de numeriska värdena i varje kategori. Det här diagrammet sorteras exempelvis på butiksnamn.
@@ -32,11 +32,12 @@ Det är enkelt att ändra sorteringen från en kategori (lagernamn) till ett vä
 
 1. Välj ellipsen (...) och **Sortera efter försäljning per kvadratfot**.
 2. Om det behövs väljer du sorteringsikonen ![](media/power-bi-report-change-sort/sorticon.png) för att ändra till **Fallande**.
-   
+
    ![](media/power-bi-report-change-sort/sortby.gif)
-   
+
    **Obs**! Det går inte att sortera alla visuella objekt.  Följande visuella objekt går inte att sortera: Trädkarta, Karta, Koropletkarta, Punkt, Mätare, Kort, Flerradskort, Vattenfall.
 
+<a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Sortera med andra kriterier
 Ibland kan du vilja sortera ditt visuella objekt på ett annat fält eller med andra kriterier.  Du kan t.ex. sortera efter månad (i stället för alfabetisk ordning), eller med heltal i stället för siffra (exempelvis 0, 1, 9, 20 och inte 0, 1, 20, 9).  
 
@@ -52,4 +53,3 @@ Mer om [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
 [Power BI – Grundläggande begrepp](service-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

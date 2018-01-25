@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/31/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 81f7b4a68b66a2bfbdf285007ff4ff636c326a6c
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 800808a8c09166b8a5b1389b9a54fb57cfa13b12
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="dashboards-in-power-bi-service"></a>Instrumentpaneler i Power BI-tjänsten
 
@@ -61,7 +61,7 @@ En instrumentpanel är inte bara en fin bild, den är i hög grad interaktiv och
 | Frågor med naturligt språk |Tillgängligt från instrumentpanelen |Inte tillgängligt från rapporter |
 | Det går att ändra visualiseringstyp |Nej. Den fästa visualiseringen på instrumentpanelen uppdateras inte om rapportägaren ändrar visualiseringstyp i rapporten |Ja |
 | Det går att visa tabeller och fält från den underliggande datauppsättningen |Nej. Det går att exportera data men tabeller och fält visas inte i själva instrumentpanelen. |Ja. Det går att visa datauppsättningens tabeller, fält och värden. |
-| Det går att skapa visuella objekt |Det går endast att lägga till widgetar i instrumentpanelen med hjälp av ”Lägg till panel” |Det går att skapa många olika typer av visualiseringar, lägga till anpassade visuella objekt, redigera visualiseringar med mera med Redigera behörigheter |
+| Kan skapa visualiseringar |Det går endast att lägga till widgetar i instrumentpanelen med hjälp av ”Lägg till panel” |Det går att skapa många olika typer av visualiseringar, lägga till anpassade visuella objekt, redigera visualiseringar med mera med Redigera behörigheter |
 | Anpassning |Det går att ändra visualiseringarna (panelerna). Det går att flytta och ordna dem, byta storlek, lägga till länkar, byta namn, ta bort och visa dem i helskärmsläge. Men alla data och visuella objekt är skrivskyddade. |I läsvyn kan du publicera, bädda in, filtrera, exportera, hämta som.pbix, visa relaterat innehåll, generera QR-koder, analysera i Excel och annat.  Du kan göra allt det ovanstående och mycket mer i redigeringsvyn. |
 
 ## <a name="dashboard-creators-and-dashboard-consumers"></a>Skapare av instrumentpaneler och konsumenter av instrumentpaneler
@@ -82,7 +82,7 @@ Power BI Pro krävs för att både dela en instrumentpanel och visa en delad ins
 * Lär dig mer om [panelerna](service-dashboard-tiles.md) och vad som händer när du väljer en.
 * Gillar du inte utseendet på en instrumentpanel?  Du kan [ändra storlek, flytta och byta namn på panelerna](service-dashboard-edit-tile.md).
 * Vill du spåra en enskild panel på instrumentpanelen och får ett e-postmeddelande när den når ett visst tröskelvärde? [Skapa aviseringar för paneler](service-set-data-alerts.md).
-* Roa dig med att ställa frågor till instrumentpanelen. Lär dig hur du använder [Power BI:s frågor och svar](service-how-to-q-and-a.md) för att ställa en fråga om dina data och få ett svar i form av en visualisering.
+* Roa dig med att ställa frågor till instrumentpanelen. Lär dig hur du använder [Power BI:s frågor och svar](power-bi-tutorial-q-and-a.md) för att ställa en fråga om dina data och få ett svar i form av en visualisering.
 
 > [!TIP]
 > Om du inte hittade det du söker efter här, kan du använda innehållsförteckningen till vänster.

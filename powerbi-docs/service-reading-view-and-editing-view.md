@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: e9fda17bd9560ac564cb6b3ae6c34b986a6bc2aa
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: 6948f0e333ba1136f6fda8fa0f62b146cefdd710
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
 I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter. 
@@ -56,7 +56,7 @@ Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänst
 | [Rapport**vy**alternativ](power-bi-report-display-settings.md) | Ja, med vissa undantag. | Ja, alla, inklusive stödlinjer, fästen och lås. |
 | [Skapa ett uppdateringsschema](refresh-data.md) | Nej  | Ja |
 | [Prenumerera på en rapport](service-report-subscribe.md) | Ja | Nej |
-| [Frågor och svar – ställa frågor i rapporter](service-q-and-a.md) | Nej  | Ja |
+| [Frågor och svar – ställa frågor i rapporter](power-bi-q-and-a.md) | Nej  | Ja |
 | [Visa användningsstatistik](service-usage-metrics.md) | Ja, på rapportarbetsytan. | Ja, i rapportlistan (innehållsvyn) |
 | [Visa relaterade](service-related-content.md) | Ja, i rapportarbetsytan. | Ja, i rapportlistan (innehållsvyn) |
 | [Spara en rapport](service-report-save.md) | Ja, men endast genom att använda **Spara som**. | Ja |

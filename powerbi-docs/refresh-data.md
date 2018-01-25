@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: 053afc2c085a045c3fe0c8ce70a541d132966640
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 647b042d10768f4ecbb3083384efa9000202a11f
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 Att se till att du alltid har den senaste informationen är ofta betydelsefullt för att kunna fatta rätt beslut. Du har förmodligen redan använt Hämta data i Power BI för att ansluta till och ladda upp vissa data, skapat vissa rapporter och en instrumentpanel. Nu ska du se till att dina data är verkligen är aktuella och bäst.
@@ -112,7 +112,7 @@ Att behålla sina filer i OneDrive eller SharePoint Online och ansluta till dem 
 | Hämta data (i menyfliksområdet) används för att ansluta till och fråga efter data från alla online-datakällor i listan. |Nej |Ja |Nej (se nedan) |
 | Hämta data används för att ansluta till och utforska en live-databas i Analysis Services. |Ja |Nej |Ja |
 | Hämta data används för att ansluta till och utforska en lokal DirectQuery-datakälla som stöds. |Ja |Nej |Ja |
-| Hämta data används för att ansluta till och fråga efter data från en Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Ja (varje timme) |Nej |Nej |
+| Hämta data används för att ansluta till och fråga efter data från en Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Ja |Ja |Nej |
 | Hämta data används för att ansluta till och fråga efter data från alla lokala datakällor i listan utom Hadoop-filen (HDFS) och Microsoft Exchange. |Nej |Ja |Ja |
 
 > [!NOTE]

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: b94ede61185e2029e259fd851eaa022737346210
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 6d398a7594cfde65d878cbd317a2669b945da9e6
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Använd gruppering i Power BI Desktop
 När **Power BI Desktop** skapar visuella objekt sammanställer den dina data i segment (eller **grupper**) baserat på värdena i underliggande data. Det är ofta bra, men ibland vill du begränsa hur dessa segmentvisas. Du kanske exempelvis vill placera tre produktkategorier i en större kategori (en *grupp*). Du vill kanske se försäljningsfigurer i diskreta enheter motsvarande 1 000 000 kronor istället för jämnt fördelade med 923 983 kronor per grupp.
@@ -69,7 +69,7 @@ När du väljer **OK**, lägg märke till att ett nytt fält visas i rutan **Fä
 
 ![](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-Titta på den här [videon](https://youtu.be/UXEYSvgvMaQ?t=12m17s) för att se hur **diskretisering** går till.
+Titta på den här [videon](https://www.youtube.com/watch?v=BRvdZSfO0DY) för att se hur **diskretisering** går till.
 
 Och så enkelt är det att använda **gruppering** och **diskretisering** så att visuella objekt i dina rapporter visar data precis som du vill.
 

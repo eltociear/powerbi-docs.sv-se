@@ -17,43 +17,43 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 22d490a58fd522b805d9709a1e697d1d2e89df6c
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 408f41e1a50b895166308fcba129d86f5c05d0e7
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Ansluta till Zuora med Power BI
-Med Zuora för Power BI kan du visualisera viktiga intäkter, fakturering och prenumerationsdata. Använd standardinstrumentpanelen och rapporter för att analysera användningstrender, spåra fakturering och betalningar och övervaka återkomma intäkter eller anpassa dem för att uppfylla dina unika behov av instrumentpaneler och rapporter. 
+Med Zuora för Power BI kan du visualisera viktiga intäkter, fakturering och prenumerationsdata. Använd standardinstrumentpanelen och rapporter för att analysera användningstrender, spåra fakturering och betalningar och övervaka återkomma intäkter eller anpassa dem för att uppfylla dina unika behov av instrumentpaneler och rapporter.
 
 Ansluta till [Zuora](https://app.powerbi.com/getdata/services/Zuora) för Power BI.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
 1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
-   
+
    ![](media/service-connect-to-zuora/getdata.png)
 2. I rutan **tjänster** väljer du **Hämta**.
-   
+
    ![](media/service-connect-to-zuora/services.png)
 3. Välj **Zuora** \> **Hämta**.
-   
+
    ![](media/service-connect-to-zuora/zuora.png)
 4. Ange ditt Zuora-URL. Detta är vanligtvis ”https://www.zuora.com”, se information på [hitta de här parametrarna](#FindingParams) nedan.
-   
+
    ![](media/service-connect-to-zuora/params.png)
 5. Som **Autentiseringsmetod** väljer du **Grundläggande** och anger sedan ditt användarnamn och lösenord (skiftlägeskänsliga). Välj sedan **Logga in**.
-   
+
     ![](media/service-connect-to-zuora/creds.png)
-6. Efter att du har godkänt startar importen automatiskt. När den är klar visas en ny instrumentpanel, rapport och modell i navigeringsfönstret. Välj instrumentpanelen för att se dina importerade data.
-   
+6. Efter att du har godkänt startar importen automatiskt. När den är klar visas en ny instrumentpanel, rapport och modell i navigeringsfönstret. Välj instrumentpanelen för att visa dina importerade data.
+
      ![](media/service-connect-to-zuora/dashboard.png)
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](service-q-and-a.md) överst på instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
 * [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning kommer att vara schemalagd att uppdateras dagligen, kan du ändra uppdateringsschemat eller uppdatera på begäran med **Uppdatera nu**
+* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
 
 ## <a name="whats-included"></a>Vad ingår
 Innehållspaketet använder Zuora AQUA API för att hämta följande tabeller:
@@ -111,4 +111,3 @@ Innehållspaketet Zuora hämtar många olika aspekter av ditt Zuora-konto. Om du
 [Kom igång i Power BI](service-get-started.md)
 
 [Hämta data i Power BI](service-get-data.md)
-

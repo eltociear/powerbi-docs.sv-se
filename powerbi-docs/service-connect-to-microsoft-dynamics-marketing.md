@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 5ef00013299be73b809a84bfbc977a3666d7e49c
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 2800dc496d32c099024db0960c87912afb3b79d7
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Anslut till Microsoft Dynamics Marketing med Power BI
 Innehållspaketet Microsoft Dynamics Marketing för Power BI låter dig enkelt komma åt och analysera dina data från Dynamics Marketing. Innehållspaketet använder sig av en beskrivande modell ovanpå OData-flödet, med alla enheter och mått som behövs, till exempel program, kampanjer, marknadsföringskontakter och företag, leads, lead-interaktioner och lead-bedömning, marknadsföringsmail och webbplatser, beteendeobservationer, budgetar, finansiella transaktioner, prestanda-KPI:er och mycket mer. 
@@ -53,10 +53,10 @@ Anslut till [Innehållspaketet Dynamics Marketing](https://app.powerbi.com/getda
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](service-q-and-a.md) överst på instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
 * [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning kommer att vara schemalagd att uppdateras dagligen, kan du ändra uppdateringsschemat eller uppdatera på begäran med **Uppdatera nu**
+* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
 
 ## <a name="system-requirements"></a>Systemkrav
 * Du måste ange en giltig OData-URL för en Dynamics Marketing-instans (innehållspaketet fungerar inte med en lokal CRM-version).  

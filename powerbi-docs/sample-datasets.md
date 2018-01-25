@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 2b5568020d3d99788d4fe2288fbc468d82d4e2bf
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 5087e69190372fe7303fb46254885f7a7a456f70
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Vilka exempeldata är tillgängliga för användning med Power BI?
 Säg att du har använt Power BI och vill prova men inte har några data.  Eller så har du en datauppsättning men eftersom du inte förstår (ännu) hur Power BI fungerar oroar du dig för att du på något sätt ska skada din datauppsättning.
@@ -136,7 +136,7 @@ Varje exempel på innehållspaket är också tillgängligt som en Excel-arbetsbo
    
    * ![](media/sample-datasets/power-bi-local-file2.png)  **Lokalt** – om du sparar filen till en lokal enhet på datorn eller en annan plats i din organisation, från Power BI, kan du importera filen till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen har i själva verket inte importerats till Power BI. Det som händer är att en ny datauppsättning skapas på din Power BI-webbplats samt att data och i vissa fall datamodellen läses in i datauppsättningen. Om din fil har några rapporter kommer de att visas på Power BI-webbplatsen under Rapporter.
    * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive – företag** – om du har OneDrive för företag och du loggar in med samma konto som du loggar in i Power BI med, är detta det mest effektiva sättet att hålla ditt arbete i Excel, Power BI eller en CSV-fil synkroniserat med din datauppsättning, dina rapporter och dina instrumentpaneler i Power BI. Eftersom både Power BI och OneDrive finns i molnet, ansluter Power BI till din fil på OneDrive ungefär en gång per timme. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt.
-   * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive – privat** – om du sparar filer på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in på ditt OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det du använder för att logga in på Power BI. När du loggar in på ditt OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
+   * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive – privat** – om du sparar filer på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in på ditt OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det du använder för att logga in på Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
    * ![](media/sample-datasets/power-bi-sharepoint2.png)**SharePoint-gruppwebbplatser** Spara dina Power BI-filer på SharePoint-gruppwebbplatser på ungefär samma sätt som för OneDrive för företag. Den största skillnaden är hur du ansluter till filen från Power BI. Du kan ange en URL eller ansluta till rotmappen.
 3. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
    
@@ -202,5 +202,5 @@ Varje exempel på innehållspaket är också tillgängligt som en Power BI PBIX-
 
 [Datakällor för Power BI](service-get-data.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

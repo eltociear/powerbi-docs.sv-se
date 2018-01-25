@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/01/2017
 ms.author: sirsu
-ms.openlocfilehash: 8b03eb9659d4f2c984200db16daa6de017e73de7
-ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
+ms.openlocfilehash: 87233cfe4290546478899d81d7a39714c75963eb
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -470,7 +470,7 @@ Besök vår [blogg](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-
 
 **6 oktober 2015**
 
-* Med Power BI Frågor och svar kan du utforska dina data med hjälp av enkla och intuitiva frågor och ta emot svar i form av interaktiva tabeller och diagram. Vi har lagt till en funktion i den här versionen som hjälper dig att komma igång med Power BI Frågor och svar, även om du inte vet något om dina data. För att komma igång, [navigera till en instrumentpanel och klicka på länken ”Hur frågar jag” nära rutan Frågor och svar](service-how-to-q-and-a.md). Power BI ger dig ett antal förslag baserat på dina data.
+* Med Power BI Frågor och svar kan du utforska dina data med hjälp av enkla och intuitiva frågor och ta emot svar i form av interaktiva tabeller och diagram. Vi har lagt till en funktion i den här versionen som hjälper dig att komma igång med Power BI Frågor och svar, även om du inte vet något om dina data. För att komma igång, [navigera till en instrumentpanel och klicka på länken ”Hur frågar jag” nära rutan Frågor och svar](power-bi-tutorial-q-and-a.md). Power BI ger dig ett antal förslag baserat på dina data.
 * För två veckor sedan introducerade vi stöd för att infoga former i rapportarbetsytan i Power BI Desktop. Den här veckan är vi glada över att kunna meddela att du nu kan lägga till former i rapportarbetsytan när du skapar och/eller redigerar rapporter i Power BI-webbappen.
 * Vi har lagt till ett alternativ för att stänga av e-postaviseringar när du delar en instrumentpanel. Det är bara att avmarkera kryssrutan ”Skicka e-postavisering till mottagarna” i dialogrutan för Power BI. En URL kommer att visas – kopiera och dela den med dina kollegor för att ge dem åtkomst till instrumentpanelen.
 * Microsoft Dynamics NAV är en företagshanteringslösning för små och medelstora organisationer. Den är en fullständig lösning som ger kunderna bättre kontroll över sin ekonomi och affärsprocesser. Power BI-innehållspaketet innehåller exempelrapporter för Dynamics NAV-användare, till exempel försäljning och vinst, affärsmöjligheter, lönsamhet och mycket mer. De här måtten ordnas på en instrumentpanel som kan anpassas fullständigt så att du enkelt att ansluta och börja utforska dina data.
