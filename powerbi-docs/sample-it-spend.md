@@ -15,23 +15,53 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: ebf10d6045bc1d0d0c260dffa7fbc68cfbc4528b
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 40bb1c80b1dcc9625bdb3f47ec98b51a7be114fd
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur
+
+## <a name="overview-of-the-it-spend-analysis-sample"></a>Översikt för exemplet för IT-utgiftsanalys
 [Innehållspaketet](service-organizational-content-pack-introduction.md) IT-utgiftsanalys (instrumentpanel, rapport och datauppsättning) analyserar de planerade kontra faktiska kostnaderna för IT-avdelningen. Den här jämförelsen hjälper oss att förstå hur väl företaget planerat för året och undersöka områden med stora avvikelser från planen. Företaget i det här exemplet går igenom en årlig planeringscykel och skapar kvartalsvis en ny senaste uppskattning (LE) för att analysera förändringar i IT-utgifter över räkenskapsåret.
+
+![](media/sample-it-spend/it1.png)
 
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce (<www.obvience.com>) som har anonymiserats.
 
->[!Note] 
-Du kan [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529783). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata. välj **Power Pivot > Hantera**.
+## <a name="prerequisites"></a>Förutsättningar
 
-![](media/sample-it-spend/it1.png)
+ Innan du kan använda exemplet, måste du först hämta det som ett innehållspaket, en .pbix-fil eller en Excel-arbetsbok.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
+
+1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
+2. Längst ned i vänster hörn väljer du **Hämta data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. På sidan Hämta data väljer du ikonen **Exempel**.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Välj **Exempel på IT-utgiftsanalys** och sedan **Anslut**.  
+  
+   ![Hämta data](media/sample-it-spend/it-connect.png)
+   
+5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. 
+   
+   ![Asterisk](media/sample-it-spend/it-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
+
+Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop. 
+
+ * [Exempel på IT-utgiftsanalys](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
+Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529783). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
+
 
 ## <a name="the-it-spend-analysis-sample-dashboard"></a>Exempelinstrumentpanelen IT-utgiftsanalys
 De två sifferpanelerna på instrumentpanelen, **Var Plan %** och **varians senaste uppskattning % kvartal 3**, ger oss en översikt över hur bra det går jämfört med planen och jämfört med senaste kvartalsuppskattningen (LE3 = senaste uppskattning kvartal 3). Generellt sett är vi ungefär 6% över planen. Vi ska undersöka orsaken till den här avvikelsen – när, var, och vilken kategori?
@@ -43,19 +73,19 @@ Om du väljer instrumentpanelen **Var Plan % efter försäljningsregion** kommer
 
 Men det kan vara vilseledande att bara titta på det här diagrammet och dra slutsatser. Vi behöver titta på faktiska dollarbelopp för att få lite perspektiv.
 
-1. Välj diagrammet **Aus och NZ** i Var Plan % efter försäljningsregion och notera diagrammet Var Plan efter IT-område. 
-   
+1. Välj diagrammet **Aus och NZ** i Var Plan % efter försäljningsregion och notera diagrammet Var Plan efter IT-område.
+
    ![](media/sample-it-spend/it3.png)
 2. Välj nu **USA**. Du ser, Australien är en jätteliten del av totala utgifter jämfört med USA.
-   
+
     Så vi har begränsat det till USA, nu då? Vi tar och undersöker vilken kategori i USA som orsakar avvikelsen.
 
 ## <a name="ask-questions-of-the-data"></a>Ställ frågor om dina data
 1. Välj **IT-utgiftsanalysexempel** i det övre navigeringsfältet för att återgå till instrumentpanelerna.
 2. I frågerutan skriver du visa IT-områden, var plan % och var le3% stapeldiagram.
-   
-   ![](media/sample-it-spend/it4.png) 
-   
+
+   ![](media/sample-it-spend/it4.png)
+
    I det första IT-området **infrastruktur**, har procentandelen ändrats dramatiskt mellan den inledande avvikelseplanen avvikelseplanens senaste uppskattning.
 
 ## <a name="ytd-spend-by-cost-elements-page"></a>Sidan utgifter i år efter kostnadselement
@@ -67,14 +97,14 @@ Infrastrukturen står ut med en stor positiv avvikelse jämfört med planen.
 
 1. Klicka på den här panelen för att gå till sidan utgifter i år efter kostnadselement från exempelrapporten IT-utgiftsanalys.
 2. Klicka på menyraden **infrastruktur** i diagrammet Var Plan % och Var LE3 % efter IT-område i det undre vänstre och notera avvikelsen mot planen i Var Plan % efter säljregion till vänster.
-   
+
     ![](media/sample-it-spend/it6.png)
 3. Klicka på namnet för varje kostnadselementgrupp i utsnitt för att hitta kostnadselement med en stor avvikelse.
 4. Med **andra** markerat, klickar du på **infrastruktur** i IT-området och klickar på underavsnitten utsnittet IT-underområde för att hitta det underområde som har störst avvikelse.  
-   
+
    Vi ser en enorm avvikelse i **nätverk**.
-   
-   Uppenbarligen har företaget bestämt sig för att ge sina anställda telefontjänster som en förmån, men det var inte planerat. 
+
+   Uppenbarligen har företaget bestämt sig för att ge sina anställda telefontjänster som en förmån, men det var inte planerat.
 
 ## <a name="plan-variance-analysis-page"></a>Sidan avvikelseanalys för planen
 I rapporten, klickar du på fliken avvikelseanalys för planen längst ner i rapporten för att gå till sida 3 i rapporten.
@@ -97,4 +127,3 @@ Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spa
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: anslut till dina data
 Vi hoppas att den här rundturen har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om IT-utgiftsdata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).
-

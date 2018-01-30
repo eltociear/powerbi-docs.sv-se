@@ -1,5 +1,5 @@
 ---
-title: "Diagram med radiella mätare i Power BI (Självstudie)"
+title: "Självstudie – Diagram med radiella mätare i Power BI"
 description: "Självstudie: Diagram med radiella mätare i Power BI"
 services: powerbi
 documentationcenter: 
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 7299b95cb3dd1fab4edce1764c69e1b2657ef547
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 354bfc01231f0f11aabd533bf29f987dec7c9771
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="radial-gauge-charts-in-power-bi-tutorial"></a>Diagram med radiella mätare i Power BI (Självstudie)
 Ett diagram med radiell mätare har en cirkelformad båge och visar ett värde som mäter framsteg på ett mål/KPI.  Målet, eller målvärdet, representeras av strecket (nålen). Framsteg mot målet representeras av skuggningen.  Och det värde som representerar förloppet visas i fetstil i bågen. Alla möjliga värden är jämnt fördelade längs bågen, från det lägsta (värdet längst till vänster) värdet till det högsta (värdet längst till höger).
@@ -39,17 +39,25 @@ Radiella mätare är ett bra val för att:
 * visa hälsotillståndet för ett enda mått.
 * visa information som går snabbt att genomsöka och förstå.
 
+### <a name="prerequisites"></a>Förutsättningar
+ - Power BI-tjänsten eller Power BI Desktop
+ - Excel-arbetsboken finansiellt exempel: [hämta exempelfilerna direkt](http://go.microsoft.com/fwlink/?LinkID=521962).
+
 ## <a name="create-a-basic-radial-gauge"></a>Skapa en grundläggande radiell mätare
-Dessa anvisningar använder det finansiella exemplet. För att följa instruktionerna, [hämta exempelfilerna](http://go.microsoft.com/fwlink/?LinkID=521962) till datorn, logga in på Power BI och välj **hämta Data \> Filer \> Lokal fil > Öppna**. 
+De här anvisningarna använder Power BI-tjänsten. Om du vill följa med kan du logga in på Power BI och öppna Excel finansiella exempelfilen.  
 
 Du kan också titta på när Will visar hur du skapar ett enskilt visuellt måttobjekt: måttdiagram, kort och KPI:er.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Steg 1: Öppna Excel-filen med finansexemplet.
-1. [Hämta Excel-filen med finansexemplet](sample-financial-download.md).
-2. Öppna filen i Power BI genom att välja **Hämta data \> Filer** och bläddra till den plats där du sparade filen. Välj **Importera**. Finansexemplet läggs till på din arbetsyta som en datauppsättning.
-3. Välj **finansexempel** att öppna den i utforskningsläge.
+### <a name="step-1-open-the-financial-sample-excel-file"></a>Steg 1: Öppna Excel-filen med finansexemplet
+1. [Hämta Excel-filen med finansexemplet](sample-financial-download.md) om du inte redan gjort det. Kom ihåg var du sparade den.
+
+2. Öppna filen i ***Power BI-tjänsten*** genom att välja **Hämta data \> Filer** och bläddra till den plats där du sparade filen. Välj **Importera**. Finansexemplet läggs till på din arbetsyta som en datauppsättning.
+
+3. Från innehållslistan **Datauppsättning**, väljer du **Finansexempel** för att öppna det i Utforska-läge.
+
+    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
 
 ### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Steg 2: Skapa en mätare för att spåra bruttomarginalförsäljning
 1. Välj **bruttomarginalförsäljning** i rutan **Fält**.

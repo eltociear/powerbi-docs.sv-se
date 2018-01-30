@@ -1,6 +1,6 @@
 ---
-title: "Kom igång med Frågor och svar i Power BI (självstudier)"
-description: "Självstudier: Kom igång med Frågor och svar i Power BI-tjänsten med hjälp av Exempel på detaljhandelsanalys"
+title: "Snabbstart – Kom igång med Power BI-frågor och svar"
+description: "Snabbstart: kom igång med frågor och svar i Power BI-tjänsten med hjälp av Exemplet på detaljhandelsanalys"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,17 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 01/16/2018
 ms.author: mihart
-ms.openlocfilehash: 2038fb5bd4a21235c3026c8506ae30b8c3e287e4
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d63c6479ed5f0bb9e882900fc5a653f08ad6a823
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="get-started-with-power-bi-qa-tutorial"></a>Kom igång med Frågor och svar i Power BI (självstudier)
-## <a name="tutorial-use-power-bi-qa-with-the-retail-analysis-sample"></a>Självstudier: Använda Frågor och svar för Power BI med Exempel på detaljhandelsanalys
-Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk.  I den här kursen ska vi titta på två olika sätt att skapa samma visualisering: bygga den i en rapport och ställa en fråga med Frågor och svar.  
+# <a name="get-started-with-power-bi-qa-quickstart"></a>Kom igång med Power BI-frågor och svar (snabbstart)
+## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Använd Power BI-frågor och svar med Exemplet på detaljhandelsanalys
+Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk.  I den här snabbstarten ska vi titta på två olika sätt att skapa samma visualisering: bygga den i en rapport och därefter ställa en fråga med Frågor och svar. Vi använder Power BI-tjänsten, men processen är nästan identisk med Power BI Desktop.
+
+Om du vill följa med, måste du använda en rapport som du kan redigera så vi använder ett av de exempel som finns tillgängliga i Power BI.
 
 ## <a name="method-1-using-the-report-editor"></a>Metod 1: Använda rapportredigeraren
 1. Välj **Hämta data** \> **Exempel** \> **Exempel på detaljhandelsanalys**  >   **Anslut** från din Power BI-arbetsyta.
@@ -61,13 +63,9 @@ Hur skapar vi samma linjediagram med Frågor och svar?
 4. Välj fästikonen ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png) för att fästa diagrammet på din instrumentpanel.
 
 ## <a name="next-steps"></a>Nästa steg
-[Vilken typ av frågor kan jag ställa i Frågor och svar?](service-q-and-a.md)
-
-[Frågor och svar i Power BI](service-q-and-a.md)
+[Frågor och svar i Power BI](power-bi-q-and-a.md)
 
 [Få dina data att fungera bra med Frågor och svar i Power BI](service-prepare-data-for-q-and-a.md)
 
-[Förbereda en arbetsbok för Frågor och svar](service-prepare-data-for-q-and-a.md)
-
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

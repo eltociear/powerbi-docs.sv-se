@@ -1,6 +1,6 @@
 ---
-title: "Kombinationsdiagram i Power BI (självstudier)"
-description: "Den här dokumentationen innehåller självstudier (med video) som visar varför och hur du skapar ett kombinationsdiagram i Power BI."
+title: "Självstudie – kombinationsdiagram"
+description: "Den här självstudien om kombinationsdiagram förklarar när du ska använda dem och hur du skapar dem i Power BI-tjänsten och Desktop."
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: c00ba74501a411743036c4514750bccbbae3eb00
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: ac738b337e7eb1c861347b273c7f1c4571a700a2
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="combo-chart-in-power--tutorial"></a>Kombinationsdiagram i Power BI (självstudier)
 I Power BI är ett kombinationsdiagram en enskild visualisering som kombinerar ett linjediagram med ett stapeldiagram. Om du kombinerar de två diagrammen till ett kan du göra en snabbare jämförelse av dina data.
@@ -38,13 +38,16 @@ Kombinationsdiagram är ett bra alternativ:
 * för att kontrollera om ett mätvärde uppfyller det mål som definieras av ett annat mätvärde,
 * för att spara utrymme på arbetsytan.
 
+### <a name="prerequisites"></a>Förutsättningar
+Kombinationsdiagram finns tillgängliga i Power BI-tjänsten och Power BI Desktop. Den här självstudien använder Power BI-tjänsten för att skapa ett kombinationsdiagram. Om du vill följa med, öppnar du Power BI-tjänsten och ansluter till exemplet Detaljhandelsanalys [anvisningar nedan](#create)).
+
+
 ## <a name="create-a-basic-single-axis-combo-chart"></a>Skapa ett grundläggande kombinationsdiagram med en axel
 Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och marknadsföring.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-
-Om du vill skapa ett eget kombinationsdiagram, loggar du in till Power BI och väljer **Hämta data \> Exempel \> Exempel på detaljhandelsanalys**. 
+<a name="create"></a> Om du vill skapa ditt eget kombinationsdiagram, loggar du in på Power BI-tjänsten och väljer **Hämta data \> Exempel \> Exemplet detaljhandelsanalys > Anslut >Gå till instrumentpanel**. 
 
 1. Välj **Totalt antal butiker** från instrumentpanelen ”Exempel på detaljhandelsanalys” för att öppna rapporten ”Exempel på detaljhandelsanalys”.
 2. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
@@ -58,7 +61,8 @@ Om du vill skapa ett eget kombinationsdiagram, loggar du in till Power BI och v�
     c.  Välj **Tid**\>**FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Axel**. 
    
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)**.
+5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)**. Du kan behöva välja den två gånger för att sortera stigande eller fallande.
+
 6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
    
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
@@ -73,16 +77,16 @@ Om du vill skapa ett eget kombinationsdiagram, loggar du in till Power BI och v�
 ## <a name="create-a-combo-chart-with-two-axes"></a>Skapa ett kombinationsdiagram med två axlar
 I det här steget ska vi jämföra bruttomarginal och försäljning.
 
-1. Skapa ett nytt linjediagram som spårar bruttomarginal % förra året per månad.  I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
+1. Skapa ett nytt linjediagram som spårar **Bruttomarginal förra året %** efter **Månad**.  I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
    
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
-2. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet. Skalan för **GM% Last Year (Bruttomarginal % förra året)** är mycket mindre än skalan för **Försäljning**, vilket gör det svårt att jämföra.      
+2. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet. Skalan för **Bruttomarginal förra året %** är mycket mindre än skalan för **Försäljning** vilket gör det svårt att jämföra.      
    
    ![](media/power-bi-visualization-combo-chart/flatline_new.png)
-3. Konvertera linjediagrammet till ett stående linje- och stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.
+3. Konvertera linjediagrammet till ett Linjediagram och stående stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.
    
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**. Power BI skapar två axlar, vilket medför att datauppsättningarna kan skalas på olika sätt; den till vänster mäter dollar och den till höger procentandel.
+4. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**. Power BI skapar två axlar, vilket medför att datauppsättningarna kan skalas på olika sätt; den till vänster mäter dollar försäljning och den till höger procentandel.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -92,7 +96,7 @@ I det här steget ska vi jämföra bruttomarginal och försäljning.
 3. För **Y-axel (kolumn)** anger du **Position** till **Vänster** och **Rubrik** till **På**,  **Format** till **Visa endast rubriken** och **Visa** som **Miljoner**.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
-4. Under **Y-axeln (kolumn)** ska du också se till att **Visa sekundär** är **På**. Detta visar alternativ för att formatera linjediagramsdelen i kombinationsdiagrammet.
+4. Under **Y-axeln (kolumn)**, bläddrar du ned och kontrollerar att **Visa sekundär** är **På**. Detta visar alternativ för att formatera linjediagramsdelen i kombinationsdiagrammet.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
 5. För **Y-axeln (rad)** lämnar du **Position** som **Höger**, ställer in **Rubrik** till **På** och ställer in **Format** på **Visa endast rubriken**.
@@ -101,26 +105,24 @@ I det här steget ska vi jämföra bruttomarginal och försäljning.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
 
+6. Du kan också ändra teckensnitt, storlek och färg och ställa in andra formateringsalternativ för att förbättra visning och läsbarhet av diagrammet.
+
 Härifrån kan du vilja:
 
 * [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](service-dashboard-tiles.md),
 * [Spara rapporten](service-report-save.md).
 
-## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
-Information om hur du använder fönstret Filter finns i [Lägga till ett filter i en rapport](power-bi-report-add-filter.md).
+## <a name="cross-highlighting-and-cross-filtering"></a>Korsmarkering och korsfiltrering
 
-Om du markerar en kolumn eller linje i ett kombinationsdiagram korsfiltreras de övriga visualiseringarna på sidan, och vice versa.
+Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](visual-interactions.md) för att ändra det här standardbeteendet.
 
 ## <a name="next-steps"></a>Nästa steg
-[Lägga till en visualisering till en rapport](power-bi-report-add-visualizations-i.md)
 
-[Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
+[Översikt över visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)
 
-[Testa – det är kostnadsfritt!](https://powerbi.com/)
-
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

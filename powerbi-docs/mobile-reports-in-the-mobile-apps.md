@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/23/2018
 ms.author: maggies
-ms.openlocfilehash: 3515a57f88db1c8a7b12706680c0aade8b2cdbfa
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 610234a221c5ab1de976f9d554292395760efa0f
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
 
 | ![iPhone](media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android-telefon](media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android-surfplatta](media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10-enheter](media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-enheter |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
+| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
 
 En Power BI-rapport är en interaktiv vy över dina data med visuell information som representerar olika resultat och insikter från dessa data. Att visa rapporter i Power BI-mobilappar är det tredje steget i en trestegsprocess.
 
@@ -50,7 +50,7 @@ Power BI-rapporter lagras på olika ställen i mobilappen, beroende på var du f
   ![Telefonrapport i liggande läge](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Visa rapporter optimerade för telefoner
-Power BI-rapportskribenter kan skapa en rapportlayout som optimerats för telefoner. I en lista över rapporter, har en optimerad rapport en särskild ikon ![Telefonrapportikon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Power BI-rapportskribenter kan skapa en rapportlayout som optimerats för telefoner. Rapportsidor som är optimerade för telefoner har ytterligare funktioner: till exempel kan du öka detaljnivån och sortera i visuella objekt i fokusläge och du kan komma åt de [filter som rapportförfattaren lagt till på rapportsidan](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). I en lista med rapporter, har en optimerad rapport en specialikon ![Telefonrapport-ikonen](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
 ![Öppna telefonrapporten](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -58,7 +58,7 @@ När du visar den rapporten på en telefon, öppnas den i stående vy.
 
 ![Rapport i stående vy](media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
 
-En rapport kan ha en blandning av sidor som inte är optimerade för telefoner. I så fall, kommer vyn att ändras från stående till liggande läge för varje sida, när du bläddrar genom rapporten.
+ En rapport kan ha en blandning av sidor som inte är optimerade för telefoner. I så fall, kommer vyn att ändras från stående till liggande läge för varje sida, när du bläddrar genom rapporten.
 
 Läs mer om [rapporter optimerade för telefonvy](mobile-apps-view-phone-report.md).
 

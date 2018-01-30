@@ -15,16 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/04/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 878738eb3f588c461b687451062a1641479e77ed
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 8ee889246c7ceae82195faa62232a987a541b076
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur
-**Exemplet på affärsmöjlighetsspårning** innehåller en instrumentpanel (och associerade rapport) för ett programvaruföretag som har 2 försäljningskanaler: *direkt* och *partner*. Säljchefen skapade den här instrumentpanelen för att spåra affärsmöjligheter och intäkter efter region, avtalsstorlek och kanal.
+
+## <a name="overview-of-the-opportunity-analysis-sample"></a>Översikt över exemplet för analys av affärsmöjligheter
+**Exemplet analys av affärsmöjligheter** innehåller en instrumentpanel (och associerad rapport) för ett programvaruföretag som har 2 försäljningskanaler: *direkt* och *partner*. Säljchefen skapade den här instrumentpanelen för att spåra affärsmöjligheter och intäkter efter region, avtalsstorlek och kanal.
 
 Säljchefen förlitar sig på 2 intäktsmått:
 
@@ -36,23 +38,51 @@ Säljchefen förlitar sig på 2 intäktsmått:
   * Förslag – 60%  
   * Slutför – 80%
 
+  ![](media/sample-opportunity-analysis/opportunity1.png)
+
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats.
 
->[!Note] 
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529782). Arbetsboken innehåller Power View-blad som du kan visa och ändra.  Om du vill se rådata, väljer du **Power Pivot > Hantera**. 
+## <a name="prerequisites"></a>Förutsättningar
 
-![](media/sample-opportunity-analysis/opportunity1.png)
+ Innan du kan använda exemplet, måste du först hämta det som ett innehållspaket, en .pbix-fil eller en Excel-arbetsbok.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
+
+1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
+2. Längst ned i vänster hörn väljer du **Hämta data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. På sidan Hämta data väljer du ikonen **Exempel**.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Välj **Exempel på detaljhandelsanalys** och sedan **Anslut**.  
+  
+   ![Hämta data](media/sample-opportunity-analysis/opportunity-connect.png)
+   
+5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. 
+   
+   ![Asterisk](media/sample-opportunity-analysis/opportunity-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
+
+Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop. 
+
+ * [Exempel på affärsmöjlighetsanalys](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
+Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529782). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
+
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
 Vår säljchef har skapat en instrumentpanel för att spåra de mått som är viktigast för henne. När hon ser något intressant, kan hon välja en panel för att granska närmare.
 
 1. Företagets intäkter är 2 miljarder dollar och de beräknade intäkterna är 461 miljoner dollar.
 2. Antalet affärsmöjligheter och intäkter följer en bekant trattmönster där summorna minskar för varje efterföljande steg.
-3. De flesta affärsmöjligheterna är i region öst. 
+3. De flesta affärsmöjligheterna är i region öst.
 4. De stora affärsmöjligheterna genererar mer intäkter än de medelstora eller små affärsmöjligheterna.
-5. Stora partneravtal genererar mer intäkter: 8 miljoner dollar i genomsnitt jämfört med 6 miljoner dollar direkt försäljning. 
+5. Stora partneravtal genererar mer intäkter: 8 miljoner dollar i genomsnitt jämfört med 6 miljoner dollar direkt försäljning.
 
-Eftersom ansträngningen för att få till ett avtal är samma oavsett om avtalet klassas som stort, medelstort eller litet, bör vårt företag analysera data för att lära sig mer om stora affärsmöjligheter. 
+Eftersom ansträngningen för att få till ett avtal är samma oavsett om avtalet klassas som stort, medelstort eller litet, bör vårt företag analysera data för att lära sig mer om stora affärsmöjligheter.
 
 Välj panelen **antal affärsmöjligheter efter partnerdrivna och försäljningsfas** för att öppna sida 1 i rapporten.  
 ![](media/sample-opportunity-analysis/opportunity2.png)
@@ -63,8 +93,8 @@ Välj panelen **antal affärsmöjligheter efter partnerdrivna och försäljnings
 
 * Öst är vår största region när det gäller antal affärsmöjligheter.  
 * I cirkeldiagrammet markerar du varje region en åt gången för att filtrera sidan. För varje region, går partners efter betydligt fler stora affärsmöjligheter.   
-* Stapeldiagrammet antal affärsmöjligheter efter partnerdrivna och storlek på affärsmöjligheter visar tydligt att de flesta av de stora affärsmöjligheterna är partnerdrivna och flera av de små och medelstora affärsmöjligheterna inte är partnerdrivna. 
-* Markera varje försäljningssteg i stapeldiagrammet i nedre vänstra hörnet för att se skillnaden i regionala antal och notera att även om öst är vår största region vad det gäller antal så har stegen lösning, förslag och slutför i alla 3 regioner jämförbara antal. Det här betyder att vi väljer en högre procentandel avtal i central och väst. 
+* Stapeldiagrammet antal affärsmöjligheter efter partnerdrivna och storlek på affärsmöjligheter visar tydligt att de flesta av de stora affärsmöjligheterna är partnerdrivna och flera av de små och medelstora affärsmöjligheterna inte är partnerdrivna.
+* Markera varje försäljningssteg i stapeldiagrammet i nedre vänstra hörnet för att se skillnaden i regionala antal och notera att även om öst är vår största region vad det gäller antal så har stegen lösning, förslag och slutför i alla 3 regioner jämförbara antal. Det här betyder att vi väljer en högre procentandel avtal i central och väst.
 
 ### <a name="page-2-of-our-report-is-titled-revenue-overview"></a>Sida 2 av vår rapport heter intäktsöversikt.
 Den här sidan tar en liknande titt på data, men med ett intäktsperspektiv istället för antal.  
@@ -82,8 +112,8 @@ Våra samarbetspartners gör uppenbart ett bättre jobb med att sälja till kund
 Den här sidan visar liknande data men delar upp dem efter region och steg.  
 ![](media/sample-opportunity-analysis/opportunity5.png)
 
-* Om du filtrerar efter öst (välj **öst** i cirkeldiagrammet) så ser du att affärsmöjligheterna i öst nästan är helt jämt uppdelade mellan partnerdrivna och icke-partnerdrivna. 
-* Stora affärsmöjligheter är vanligast i den centrala regionen, små affärsmöjligheter är vanligast i region öst och medelstora affärsmöjligheter är vanligast i region väst. 
+* Om du filtrerar efter öst (välj **öst** i cirkeldiagrammet) så ser du att affärsmöjligheterna i öst nästan är helt jämt uppdelade mellan partnerdrivna och icke-partnerdrivna.
+* Stora affärsmöjligheter är vanligast i den centrala regionen, små affärsmöjligheter är vanligast i region öst och medelstora affärsmöjligheter är vanligast i region väst.
 
 ### <a name="page-4-of-our-report-is-titled-upcoming-opportunities"></a>Sida 4 i vår rapport heter kommande affärsmöjligheter
 Vi tittar än en gång på liknande faktorer, men den här gången från perspektivet datum/tid.  
@@ -101,4 +131,3 @@ Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spa
 Vi hoppas att den här rundturen har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om data för affärsmöjlighetsspårning. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).
 
 [Hämta exempel](sample-datasets.md)  
-

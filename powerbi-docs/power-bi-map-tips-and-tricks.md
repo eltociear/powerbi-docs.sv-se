@@ -16,18 +16,23 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/05/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: f189ab5b195a945b6a21ea868cf29257e30c0d20
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 553e3c417f79d6d1c5a45737ad370d74f72177ca
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips för Power BI-kartvisualiseringar
-Power BI integrerar med Bing Maps för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Tillsammans använder de algoritmer för att identifiera rätt plats, men är det mest en gissning. Om Power BI inte kan skapa en karta på egen hand använder den Bing Maps.  
+Power BI integrerar med Bing Maps för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Tillsammans använder de algoritmer för att identifiera rätt plats, men är det mest en gissning. Om Power BI inte kan skapa en karta på egen hand använder den Bing Maps. 
 
-Du kan använda följande tips för att öka sannolikheten för rätt geo-kodning. Du kan skaffa den första uppsättningen tips för att få åtkomst till datauppsättningen. Den andra uppsättningen av tips är saker du kan göra i Power BI om du inte har åtkomst till datauppsättningen.
+Du eller din administratör kan behöva uppdatera brandväggen för att tillåta åtkomst till de URL:er Bing använder för geokodning.  Dessa URL:er är:
+* https://dev.virtualearth.net/REST/V1/Locations
+* https://platform.bing.com/geo/spatial/v1/public/Geodata
+* https://www.bing.com/api/maps/mapcontrol
+
+Du kan använda följande tips för att öka sannolikheten för rätt geo-kodning. Du kan skaffa den första uppsättningen tips för att få åtkomst till datauppsättningen. Den andra uppsättningen tips är saker du kan göra i Power BI om du inte har åtkomst till datauppsättningen. Och den slutgiltiga uppsättningen är en lista med URL:er
 
 ## <a name="what-is-sent-to-bing-maps"></a>Vad skickas till Bing Maps?
 Power BI-tjänsten och Power BI Desktop skickar Bing geoinformation som behövs för att skapa kartvisualiseringen. Detta kan omfatta data i bucketarna **plats**, **latitud** och **longitud** och geofälten och i någon av filterbucketarna **Rapportnivå**, **Sidonivå** eller **Visualiseringsnivå**. Exakt vad som skickas beror på karttypen. Läs mer i [Bing Maps-sekretess](https://go.microsoft.com/fwlink/?LinkID=248686).

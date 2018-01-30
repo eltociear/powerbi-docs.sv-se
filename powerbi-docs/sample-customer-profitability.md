@@ -15,23 +15,55 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 9a100b7d13c11a8bd066b72a570f45d0c2bc08be
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 82e909962a0ed1db50f2ba3729988fd7aacadc80
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
-Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpanel, en rapport och en datauppsättning för ett företag som tillverkar marknadsföringsmaterial. Den här instrumentpanelen skapades av en ekonomichef för att visa en statistiköversikt för hennes 5 enhetschefer, produkter, kunder och bruttomarginal. I korthet kan hon se vilka faktorer som påverkar lönsamheten.
+Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpanel, en rapport och en datauppsättning för ett företag som tillverkar marknadsföringsmaterial. Den här instrumentpanelen skapades av en ekonomichef för att visa nyckelmått om hennes fem enhetschefer, produkter, kunder och bruttomarginaler. I korthet kan hon se vilka faktorer som påverkar lönsamheten.
 
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats.
 
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529781).  
-![](media/sample-customer-profitability/power-bi-dash.png)
+## <a name="prerequisites"></a>Förutsättningar
+
+Innan du kan använda exemplet, måste du först hämta det som ett innehållspaket, en .pbix-fil eller en Excel-arbetsbok.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
+
+1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
+2. Längst ned i vänster hörn väljer du **Hämta data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. På sidan Hämta data väljer du ikonen **Exempel**.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Välj **Exempel på kundlönsamhet** och välj **Anslut**.  
+   
+   ![Hämta data](media/sample-customer-profitability/get-supplier-sample.png)
+5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. Använd exemplen för att ta en testtur i Power BI.  
+   
+   ![Asterisk](media/sample-customer-profitability/supplier-sample-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
+
+Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop. 
+
+- [Exempel på kundlönsamhet](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
+
+Du kan också enbart hämta datauppsättningen [(Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529781). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata, väljer du **Power Pivot > Hantera**.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
+
+Under **Min arbetsyta**, hittar du instrumentpanelen för Exemplet på kundlönsamhet:
+
+![Instrumentpanelen för Exemplet på kundlönsamhet](media/sample-customer-profitability/power-bi-dash.png)
+
 ### <a name="company-wide-dashboard-tiles"></a>Instrumentpaneler för hela företaget
 Dessa paneler get vår ekonomichef en överblick över de mått för företaget på hög nivå som är viktiga för henne.  När hon ser något intressant, kan hon välja en panel för att granska närmare.
 
@@ -123,6 +155,8 @@ Låt oss ta en titt på branschen *Distribution*.
 Vi kan utforska andra branscher och till och med lägga till kunder i våra visuella objekt för att förstå grunden till Valerys prestationer.
 
 Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Men om du sparar dem, kan du alltid gå till **Hämta data** för en ny kopia av det här exemplet.
+
+Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529781).
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: anslut till dina data
 Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om kunddata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).

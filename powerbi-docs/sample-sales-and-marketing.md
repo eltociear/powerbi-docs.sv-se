@@ -15,24 +15,54 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 7ff8ba4557c829551b97e51f411269e3ba8fbdea
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 473236553513c41e30cb4d48f03f8fc27fd4d647
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exempel på försäljning och marknadsföring för Power BI: Ta en rundtur
+
+## <a name="overview-of-the-sales-and-marketing-sample"></a>Översikt på Exemplet på försäljning och marknadsföring
 **Försäljning och marknadsföringsexemplet** innehåller en instrumentpanel och rapport för ett fiktivt tillverkningsföretag som heter VanArsdel Ltd. Den här instrumentpanelen skapades av marknadsföringschefen (CMO) för VanArsdel för att hålla ett öga på branschen och företagets marknadsandel, produktvolym, försäljning och sentiment.
 
 VanArsdel har många konkurrenter men är marknadsledande inom sin bransch. CMO:n vill öka marknadsandel och identifiera tillväxtmöjligheter. Men av någon anledning har VanArsdels marknadsandel börjat minska med betydande dippar under juni.
 
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce (www.obvience.com) som har anonymiserats.
 
-[!Note] Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529785). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
-
 ![](media/sample-sales-and-marketing/sales1.png)
+
+## <a name="prerequisites"></a>Förutsättningar
+
+ Innan du kan använda exemplet, måste du först hämta det som ett innehållspaket, en .pbix-fil eller en Excel-arbetsbok.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
+
+1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
+2. Längst ned i vänster hörn väljer du **Hämta data**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. På sidan Hämta data väljer du ikonen **Exempel**.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Välj **Exempel på försäljning och marknadsföring** och sedan **Anslut**.  
+  
+   ![Exempel på försäljning och marknadsföring](media/sample-sales-and-marketing/sales9.png)
+   
+5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. 
+   
+   ![Asterisk](media/sample-sales-and-marketing/sales10.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
+
+Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop. 
+
+ * [Exempel på försäljning och marknadsföring](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
+Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529785). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
 Vi ska starta våra rundtur på instrumentpanelen och titta på panelerna som CMO:n har valt att fästa. Vi kan se information om vår marknadsandel, försäljning och sentiment. Och vi ser att data uppdelas efter region, tid och konkurrens.
@@ -48,21 +78,21 @@ Vi ska starta våra rundtur på instrumentpanelen och titta på panelerna som CM
 #### <a name="which-segments-drive-our-sales-does-it-match-the-industry-trend"></a>Vilka segment driver försäljningen? Matchar det branschtrenden?
 1. Välj panelen totalt antal övergripande enheter efter segment vilket öppnar frågor och svar.
 2. Skriv in **för VanArsdel** i slutet av den befintliga frågan. Frågor och svar tolkar frågan och visar ett uppdaterat diagram med svaret. Vår produktvolym kommer från bekvämlighet och måttlighet.
-   
+
    ![](media/sample-sales-and-marketing/sales2.png)
 3. Vår del i kategorierna **måttlighet** och **bekvämlighet** är mycket högt. Det är i de här segmenten vi konkurrerar.
 4. Gå tillbaka till instrumentpanelen genom att välja instrumentpanelens namn i det övre navigeringsfältet (spår).
 
 #### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Hur ser den totala marknadsandelen för enheter ut för kategorin (jämfört med region)?
-1. Lägg märke till panelen totalt antal enheter i år efter tillverkare, region. Jag undrar hur den totala marknadsandelen för enheter ser ut efter kategori? 
-   
+1. Lägg märke till panelen totalt antal enheter i år efter tillverkare, region. Jag undrar hur den totala marknadsandelen för enheter ser ut efter kategori?
+
    ![](media/sample-sales-and-marketing/sales3.png)
 2. I frågerutan högst upp på instrumentpanelen, skriver du in frågan **totalt antal enheter per tillverkare och kategori för 2014 som ett träddiagram**. Observera hur visualiseringen uppdateras när du skriver frågan.
    ![](media/sample-sales-and-marketing/totalunitsbymanufacturerandcategoryfor2014asatreemap-new.png)
 3. Om du vill jämföra resultaten, fäster du diagrammet på din instrumentpanel. Mycket intressant! Under 2014 sålde VanArsdel endast produkter som tillhör kategorin **urban**.
 4. Gå tillbaka till instrumentpanelen.
 
-Instrumentpaneler är också en startpunkt för rapporter.  Om en panel har skapats från en underliggande rapport, öppnas rapporten om du klickar på panelen. 
+Instrumentpaneler är också en startpunkt för rapporter.  Om en panel har skapats från en underliggande rapport, öppnas rapporten om du klickar på panelen.
 
 På vår instrumentpanel visar R12M-linjen (rullande 12 månaders) att vår marknadsandel inte längre ökar med tiden, den minskar till och med lite. Och varför har vi en så stor dipp för marknadsandelar i juni? Klicka på den här visualiseringen för att öppna den underliggande rapporten om du vill undersöka vidare.
 
@@ -72,7 +102,7 @@ På vår instrumentpanel visar R12M-linjen (rullande 12 månaders) att vår mark
 
 1. Titta på stapeldiagrammet totalt antal enheter efter månad och isVanArsdel längst ned. Den svarta kolumnen representerar VanArsdel (våra produkter) och grön är våra konkurrenter. Dippen i juni 2014 som VanArsdel upplevde orsakades inte av konkurrensen.
 2. Stapeldiagrammet total kategorivolym efter segment till höger, filtreras för att visa Vanarsdels viktigaste 2 segment. Ta en titt på hur det här filtret har skapats:  
-   
+
    a.  Expandera fönstret filter till höger.  
    b.  Klicka för att markera visualiseringen.  
    c.  Under visuella nivåfilter, lägg märke till att **segment** filtreras till att enbart inkludera **bekvämlighet** och **måttlighet**.  
@@ -112,4 +142,3 @@ Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spa
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: anslut till dina data
 Vi hoppas att den här rundturen har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge dig insikter om försäljnings- och marknadsföringsdata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).  
-

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 1df7eb485ac9b9de1007cc2fccbf8141ee4fdcc1
-ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
+ms.openlocfilehash: 8567326cb685a03fd1af618aad5310234677ab6d
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 Om du vill se de data som används i en visualisering, kan du [visa dessa data i Power BI](service-reports-show-data.md) eller exportera data till Excel som en XLSX- eller CSV-fil.   
@@ -74,8 +74,7 @@ Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](sam
    
    >[!WARNING]
    >När du exporterar underliggande data kan användare se alla detaljerade data – alla information i datakolumnerna. Power BI administratörer kan inaktivera detta för organisationen. Om du äger datauppsättningen kan du ställa in dina egna kolumner på ”dolda” så att de inte visas i listan Fält i Desktop eller Power BI-tjänsten.
-   > 
-   > 
+   
    
    **Underliggande data**: Välj detta alternativ om din visualisering har en mängd och du vill se all underliggande information. I princip tas mängden bort om du väljer *Underliggande data*. När du väljer **Exportera**, exporteras data till en xlsx-fil och webbläsaren uppmanar dig att spara filen. Öppna filen i Excel när du har sparat den.
    
@@ -85,7 +84,9 @@ Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](sam
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 * Det maximala antalet rader som kan exporteras från **Power BI Desktop** och **Power BI-tjänsten** till .csv är 30 000.
-* Det maximala antalet rader som kan exporteras till en .xlsx-fil när i den **Power BI-tjänsten** är 150 000 för Pro-användare och 30 000 för kostnadsfria användare.
+* Det maximala antalet rader som kan exporteras till .xlsx är 150 000.
+* Export med *Underliggande data* fungerar inte om datakällan är en Analysis Services-liveanslutning och versionen som är äldre än 2016 och tabellerna i modellen inte har en unik nyckel.  
+* Export med *Underliggande data* fungerar inte om alternativet *Visa objekt utan data* är aktiverat för visualiseringen som exporteras.
 * När du använder DirectQuery är den maximala mängden data som kan exporteras 16 MB. Därmed kan mindre än det maximala antalet rader exporteras, särskilt om det finns många kolumner, data som är svåra att komprimera eller andra faktorer som påverkar filstorleken och minskar antalet rader som exporteras.
 * Power BI har endast stöd för att exportera visuella objekt som använder enkla aggregationer. Exportera är inte tillgänglig för grafer med modeller eller rapportmått.
 * Anpassade och R-visualiseringar stöds inte för tillfället.

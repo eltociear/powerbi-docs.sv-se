@@ -1,5 +1,5 @@
 ---
-title: "Använd frågor och svar med live-anslutningar)"
+title: "Använd frågor och svar med live-anslutningar"
 description: "Dokumentation för att använda Power BI frågor och svar med frågor med naturligt språk på live-anslutningar till Analysis Services-data och den lokala datagatewayen."
 services: powerbi
 documentationcenter: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 453a2a9dd4ea5e41d404d3e81cebbff7c35f1b6c
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 49e0b976fcee8c18edc14f80df2786e5ebf3fedc
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="enable-qa-for-live-connections"></a>Aktivera frågor och svar för live-anslutningar
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Vad är den lokala datagatewayen?  Vad är en live-anslutning?
@@ -39,7 +39,7 @@ Eftersom Power BI frågor och svar använder sig av text- och schemavärden frå
 Mer information finns i:
 
 * Vad är den [lokala datagatewayen](service-gateway-onprem.md)?
-* [Introduktion till Power BI frågor och svar](service-q-and-a.md)
+* [Introduktion till Power BI frågor och svar](power-bi-q-and-a.md)
 
 ## <a name="enable-qa"></a>Aktivera frågor och svar
 När du har ställt in datagatewayen, kan du ansluta till dina data från Power BI.  Skapa antingen en instrumentpanel med hjälp av dina lokala data eller ladda upp en .pbix-fil som använder lokala data.  Du kan också redan har lokala data i instrumentpaneler, rapporter och datauppsättningar som har delats med dig.
@@ -55,22 +55,20 @@ När du har ställt in datagatewayen, kan du ansluta till dina data från Power 
     ![](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Vilka data cachelagras och hur skyddas sekretessen?
-När du aktiverar frågor och svar för dina lokala data, cachelagras en delmängd av dina data i tjänsten. Det här görs för att säkerställa att frågor och svar fungerar med en rimlig prestanda. Vi utesluter värden som är längre än 24 tecken från cachelagring. Cachen tas bort inom några timmar när du inaktiverar frågor och svar genom att avmarkera **aktivera frågor och svar för den här datauppsättningen**, eller när du tar bort din datauppsättning.
+När du aktiverar frågor och svar för dina lokala data, cachelagras en delmängd av dina data i tjänsten. Det här görs för att säkerställa att frågor och svar fungerar med en rimlig prestanda. Power BI utesluter värden som är längre än 24 tecken från cachelagring. Cachen tas bort inom några timmar när du inaktiverar frågor och svar genom att avmarkera **aktivera frågor och svar för den här datauppsättningen**, eller när du tar bort din datauppsättning.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Det finns flera begränsningar under förhandsvisningsfasen av den här funktionen:
 
-* Inledningsvis finns funktionen endast tillgänglig för SQL Server 2016 Analysis Services Tabular-datakällor. Funktionen är optimerad för att arbeta med tabelldata. Vissa funktioner är tillgänglig för flerdimensionella datakällor, men den fullständiga frågor och svar-upplevelsen stöds inte ännu för flera dimensioner. Ytterligare datakällor som stöds av den lokala datagatewayen kommer att lanseras löpande under den allmänna förhandsvisningen.
+* Inledningsvis finns funktionen endast tillgänglig för SQL Server 2016 Analysis Services Tabular-datakällor. Funktionen är optimerad för att arbeta med tabelldata. Vissa funktioner är tillgänglig för flerdimensionella datakällor, men den fullständiga frågor och svar-upplevelsen stöds inte ännu för flera dimensioner. Ytterligare datakällor som stöds av den lokala datagatewayen kommer att lanseras löpande.
 * Fullständigt stöd för säkerhet på radnivå som definierats i SQL Server Analysis Services är inte tillgängligt från början i den allmänna förhandsvisningen. När du ställer frågor i frågor och svar, kan automatisk komplettering av frågor medan du skriver visa strängvärden som en användare inte har åtkomst till. RLS som definierats i modellen respekteras dock för visuella objekt i rapporten och diagrammet så inga underliggande numeriska data kan visas. Alternativ för att styra det här beteenden kommer att släppas i kommande uppdateringar.
 * Live-anslutningar stöds bara med den lokala datagatewayen. Därmed kan de inte användas med din den personliga gatewayen.
 
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway](service-gateway-onprem.md)  
 [Hantera din datakälla – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Power BI Quick Insights](service-insights.md)  
-[Optimera dina data för Power BI Quick Insights](service-insights-optimize.md)  
 [Power BI – grundläggande begrepp](service-basic-concepts.md)  
-[Instrumentpaneler i Power BI](service-dashboards.md)  
+[Översikt över Power BI frågor och svar](power-bi-q-and-a.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/23/2018
 ms.author: davidi
-ms.openlocfilehash: 78bac79fc440f0a4efe19947ca7a6e9c53866b0a
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 2832849d887795c2af0750f01e929045f75c12fe
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -45,11 +45,24 @@ Följande funktioner är tillgängliga för dem som använder **Power BI för am
 * Alla data krypteras i Azure SQL- och Blob Storage för Power BI
 * Ansluta till tjänster med [innehållspaket](service-connect-to-services.md)
 
+## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Anslutningen mellan myndigheter och offentliga Azure-molntjänster 
+
+Azure fördelas mellan flera moln. Som standard tillåts klientorganisationer att öppna brandväggsregler till en molnspecifik instans, men nätverk mellan moln är annorlunda och kräver att man öppnar specifika brandväggsregler för kommunikation mellan tjänster. Om du är en Power BI-kund och du har befintliga SQL-instanser i det offentliga molnet som du behöver komma åt, måste du öppna specifika brandväggsregler IP-adressutrymmet för SQL till Azure Government-molnet för följande datacenter:
+
+* USGov Iowa
+* USGov Virginia
+* USGov Texas
+* USGov Arizona
+
+Det finns IP-adressutrymmen tillgängliga i det offentliga molnet, men för myndighetsmolnet, måste du öppna ett Azure Support-ärende för att begära IP-adressintervallen för ovan listade datacenter. 
+
+
 ## <a name="limitations-of-power-bi-us-government"></a>Begränsningar av Power BI-versionen för amerikanska myndigheter
 Några av de funktioner som är tillgängliga i den kommersiella versionen av **Power BI-tjänsten** är *inte* tillgängliga i **Power BI-tjänsten** för amerikanska myndigheter. Power BI-teamet arbetar aktivt med att göra dessa funktioner tillgängliga för kunder som tillhör amerikanska myndigheter och kommer att uppdatera den här artikeln när dessa funktioner blir tillgängliga.
 
 * **Power BI för amerikanska myndigheter** är endast tillgängligy som en **Pro**-licens. Alla referenser till kostnadsfria Power BI-licenser i en administrationsportal (eller som användare) körs i ett kommersiellt Power BI-tjänstmoln.
 * **Granskning** – granskning är inte tillgängligt via portalen för Office 365-säkerhet och regelefterlevnad.
+* **Power BI-innehåll i Cortana** – Power BI-resultat visas inte i sökresultat för Cortana. Det inkluderar resultat för ditt Power BI-innehåll (instrumentpaneler, rapporter, appar) samt resultat som visar Cortana-optimerade rapportsidor för specifika nyckelord.
 
 Om du har kostnadsfria **Power BI**-licenser som tilldelats ditt konto, körs dessa konton i en kommersiell version av **Power BI**-tjänsten, och ingår inte i erbjudandet om **Power BI för amerikanska myndigheter**. För dessa kostnadsfria konton kan följande problem uppstå:
 

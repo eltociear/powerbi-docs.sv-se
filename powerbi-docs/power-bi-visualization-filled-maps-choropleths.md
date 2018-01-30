@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: 08b01048823d928d5c07fd4ad86764bc13921a31
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 2c15cf503a7c66a3b89e45cc338ee5174e5f24e7
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="filled-maps-choropleths-in-power-bi-tutorial"></a>Fyllda kartor (koropletkartor) i Power BI (självstudier)
 En fylld karta använder skuggning, toning eller mönster för att visa hur ett värde skiljer sig åt proportionellt på en geografisk plats eller i en region.  Du kan snabbt visa dessa relativa skillnader med skuggning som sträcker sig från ljus (mindre ofta/lägre) till mörk (mer frekvent/fler).    
@@ -31,6 +31,11 @@ En fylld karta använder skuggning, toning eller mönster för att visa hur ett 
 
 ## <a name="what-is-sent-to-bing"></a>Vad som skickas till Bing
 Power BI integrerar med Bing för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning). När du skapar en kartvisualisering i Power BI-tjänsten eller i Power BI Desktop, skickas dina data i behållarna **Plats**, **Latitud** och **Longitud** (som används för att skapa visualiseringen) till Bing.
+
+Du eller din administratör kan behöva uppdatera brandväggen för att tillåta åtkomst till de URL:er Bing använder för geokodning.  Dessa URL:er är:
+* https://dev.virtualearth.net/REST/V1/Locations
+* https://platform.bing.com/geo/spatial/v1/public/Geodata
+* https://www.bing.com/api/maps/mapcontrol
 
 Mer information om de data som skickas till Bing och tips för bättre geokodning hittar du i [Tips and tricks for map visualizations (Tips och råd om kartvisualiseringar)](power-bi-map-tips-and-tricks.md).
 
@@ -108,5 +113,5 @@ Mer hjälp med kartvisualiseringar finns i [Tips and tricks for map visualizatio
  [Lägga till en visualisering till en rapport](power-bi-report-add-visualizations-i.md)  
  [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Ändra typen av använd visualisering](power-bi-report-change-visualization-type.md)      
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

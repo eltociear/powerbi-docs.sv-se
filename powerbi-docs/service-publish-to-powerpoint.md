@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/22/2018
 ms.author: davidi
-ms.openlocfilehash: ec5d5de3d29ccbe857f6fd40320353c357e6539e
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 6b2002348ae7e8ef2bb2e112eb8be967d0c68545
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Exportera rapporter från Power BI till PowerPoint (förhandsgranskning)
 Med Power BI, kan du nu publicera din rapport till **Microsoft PowerPoint** och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du **exporterar till PowerPoint**, inträffar följande:
 
 * Varje sida i Power BI-rapporten blir en enskild bild i PowerPoint
-* Varje visualisering i Power BI-rapporten exporteras som en högupplöst bild i PowerPoint
+* Varje sida i Power BI-rapporten exporteras som en högupplöst bild i PowerPoint
 * Textrutor i Power BI-rapporten blir redigerbara textrutor i PowerPoint
 * En länk skapas i PowerPoint som länkar till Power BI-rapporten
 
@@ -65,7 +65,11 @@ När du öppnar PowerPoint-filen som Power BI exporterade, hittar du en del häf
 2. Du får även lite användbar information om rapporten, inklusive den *senaste datauppdateringen* som den exporterade rapporten baseras, på och *nedladdad den* med tid och datum, vilket är när Power BI-rapporten exporterades till en PowerPoint-fil.
 3. Varje rapportsida är en separat bild som det visas i det vänstra navigeringsfönstret.
 
-När du går in i en viss bild, ser du att varje visualisering är en oberoende bild (som tidigare nämnts). Du kan därmed kopiera bilden och klistra in den vart du vill.
+När du går in på en specifik bild, ser du att varje rapportsida är en oberoende bild.
+
+>[!NOTE]
+> Att ha en bild för varje rapportsida är ett nytt beteende. Det tidigare beteendet som gav en oberoende bild för varje visuellt objekt implementeras inte längre. 
+ 
 
 ![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_6.png)
 
@@ -85,6 +89,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Sidor i PowerPoint skapas alltid i 9:16 standardstorlek, oavsett ursprungliga sidstorlekar eller dimensioner i Power BI-rapporten.
 * Rapporter som ägs av en användare utanför din Power BI-klientdomänen (som en rapport som ägs av någon utanför organisationen och delas med dig) kan inte publiceras till PowerPoint.
 * Om du delar en instrumentpanel med någon utanför organisationen (och därmed, en användare som inte är i din Power BI-klient), kommer den användaren inte att kunna exportera delade instrumentpanelers associerade rapporter till PowerPoint. Så om du är aaron@contoso.com kan du dela med david@cohowinery.com. Men david@cohowinery.com kan inte exportera de associerade rapporterna till PowerPoint.
+* Som tidigare nämnts, exporteras varje rapportsida som en enskild bild i PowerPoint-filen. 
 
 ## <a name="next-steps"></a>Nästa steg
 [Analysera i Excel](service-analyze-in-excel.md)

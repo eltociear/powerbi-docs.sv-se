@@ -15,17 +15,52 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 1/17/2018
 ms.author: asaxton
-ms.openlocfilehash: f6ffc56f524da84e865d17981faddef58534c785
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: b9917b515971d16cb54a09deff1202c382eb7ef0
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Felsök ditt inbäddade program
 
 Den här artikeln går igenom några vanliga problem som kan uppstå när du bäddar in innehåll från Power BI.
+
+## <a name="tools-for-troubleshooting"></a>Verktyg för felsökning
+
+### <a name="fiddler-trace"></a>Fiddlerspårning
+
+[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se till- och fråntrafiken med Power BI-API:erna från klientdatorn. Detta kan visa fel och annan relaterad information.
+
+![Fiddlerspårning](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
+
+### <a name="f12-in-browser-for-front-end-debugging"></a>F12 i webbläsaren för felsökning av klientdelen
+
+F12 startar utvecklarfönstret i din webbläsare. Detta ger dig möjlighet att titta på nätverkstrafik och annan information.
+
+![F12 webbläsarfelsökning](media/embedded-troubleshoot/browser-f12.png)
+
+### <a name="extracting-error-details-from-power-bi-response"></a>Extrahera felinformation från Power BI-svaret
+
+Det här kodstycket visar hur man extraherar felinformationen från HTTP-undantaget:
+
+```
+public static string GetExceptionText(this HttpOperationException exc)
+{
+    var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
+    exc.Request.Content, exc.Response.StatusCode, (int)exc.Response.StatusCode, exc.Response.Content);
+    if (exc.Response.Headers.ContainsKey("RequestId"))
+    {
+        var requestId = exc.Response.Headers["RequestId"].FirstOrDefault();
+        errorText += string.Format("\r\nRequestId: {0}", requestId);
+    }
+
+    return errorText;
+}
+```
+Vi rekommenderar att du loggar begärande-ID:erna (och felinformationen för felsökning).
+Ange begäran-ID när du tar kontakt med Microsoft-supporten.
 
 ## <a name="app-registration"></a>Appregistrering
 
@@ -105,20 +140,7 @@ Om användaren inte kan se rapporten eller instrumentpanelen, kontrollera att ra
 
 Öppna filen från Power BI Desktop eller på powerbi.com och verifiera att prestandan är acceptabel för att kunna utesluta problem med ditt program eller inbäddnings-API:erna.
 
-## <a name="tools-for-troubleshooting"></a>Verktyg för felsökning
-
-### <a name="fiddler-trace"></a>Fiddlerspårning
-
-[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se till- och fråntrafiken med Power BI-API:erna från klientdatorn. Detta kan visa fel och annan relaterad information.
-
-![Fiddlerspårning](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
-
-### <a name="f12-in-browser-for-front-end-debugging"></a>F12 i webbläsaren för felsökning av klientdelen
-
-F12 startar utvecklarfönstret i din webbläsare. Detta ger dig möjlighet att titta på nätverkstrafik och annan information.
-
-![F12 webbläsarfelsökning](media/embedded-troubleshoot/browser-f12.png)
 
 Svar på vanliga frågor finns i [Power BI Embedded vanliga frågor och svar](embedded-faq.md).
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 44c248d1a99a10c69b3fb7c78e68320fdc5cd2b2
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 2d8ed3c30d289646504071daca098df1f41f6aab
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Punktdiagram och bubbeldiagram i Power BI (självstudier)
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Dessa datapunkter kan vara jämnt eller ojämnt fördelade på den horisontala axeln, beroende på datan.
@@ -31,15 +31,17 @@ Ett bubbeldiagram ersätter datapunkterna med bubblor, med en *bubbelstorlek* so
 
 ![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
+Du kan ange antalet datapunkter  
+
 ## <a name="when-to-use-a-scatter-chart-or-bubble-chart"></a>När du vill använda ett punktdiagram eller bubbeldiagram
 ### <a name="scatter-charts-are-a-great-choice"></a>Punktdiagram är ett bra alternativ:
 * för att visa relationer mellan 2 (punktdiagram) eller 3 (bubbeldiagram) **numeriska** värden.
-* Så här skapar du ett punktdiagram av två grupper med värden som en serie xy-koordinater.
+* för att rita två grupper med värden som en serie xy-koordinater.
 * i stället för ett linjediagram när du vill ändra skalan på den horisontala axeln    
 * för att aktivera den vågräta axeln i en logaritmisk skala.
 * för att visa arbetsbladets data som inkluderar par eller grupperade uppsättningar med värden. Du kan justera oberoende skalor av axlar för att visa mer information om grupperade värden i punktdiagrammet.
 * för att visa mönster i stora mängder data, till exempel genom att visa linjära eller icke-linjära trender, kluster och avvikare.
-* jämföra ett stort antal datapunkter utan hänsyn till tid. Ju mer data som inkluderas i en punktdiagram, desto bättre jämförelser.
+* för att jämföra ett stort antal datapunkter utan hänsyn till tid.  Ju mer data som inkluderas i ett punktdiagram, desto bättre jämförelser kan du göra.
 
 ### <a name="bubble-charts-are-a-great-choice"></a>Bubbeldiagram är ett bra alternativ:
 * m dina data har 3 dataserier som alla innehåller en uppsättning med värden.
@@ -76,13 +78,20 @@ Nu har vi ett punktdiagram som visar totalförsäljningsvarians i % längs Y-axe
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Du kan också [formatera visualiseringsfärger, etiketter, rubriker, bakgrund med mera](service-getting-started-with-color-formatting-and-axis-properties.md).
 
-## <a name="accessibility"></a>Hjälpmedel
+   Du kan också ändra markörformen till en romb, triangel eller kvadrat:
 
-Du kan göra ditt punktdiagram eller bubbeldiagram mer tillgängligt för personer med funktionsnedsättningar med hjälp av *Markörformer*. 
+   ![Kvadratisk markör](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
-För att välja markörformen väljer du avsnittet **Format** i rutan **Visualiseringar**, expanderar avsnittet **Former** och väljer sedan en markörform.
+4. Om du vill ange antalet datapunkter som ska visas i ditt bubbeldiagram, går du till **Format**-avsnittet i panelen **Visualiseringar**, expanderar kortet **Allmänt** och justerar **Datavolym**. Standard är 3 500. 
+ 
+    ![Datavolym](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
-![Markörform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+   > [!NOTE]
+   > Eftersom fler datapunkter kan innebära en längre inläsningstid, bör du testa dina rapporter på webben och mobilt för att säkerställa att prestandan matchar dina användares förväntningar om du väljer att publicera rapporter med gränser i den högre änden av skalan.
+
+5.   Du kan även välja markörform genom att expandera kortet **Former** och välja en markörform.
+
+      ![Markörform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 ### <a name="your-scatter-chart-has-only-one-data-point"></a>**Ditt punktdiagram har endast en datapunkt**

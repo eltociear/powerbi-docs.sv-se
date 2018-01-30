@@ -15,33 +15,38 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: c29ea77eab09657b5c21fe97322464523b0621dc
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4ef3991fc285adc84cdcb5efca00c2f9486e9825
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="power-bi-videos"></a>Power BI-videoklipp
 Vi har en YouTube-kanal för Power BI! Du kan besöka [vår kanal](https://www.youtube.com/user/mspowerbi/videos) och om är ny i Power BI är spellistan [analysera och visualisera data med Power BI](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP) ett bra ställe att börja.
 
-* Den här videon beskriver några tips för att optimera dina data för Power BI. Lär dig det bästa sättet att formatera data innan den överförs till tjänsten.
+Här följer några videoklipp från den spellistan för att komma igång.
+
+* Översikt över Power BI-tjänsten och Power BI Desktop.
   
   <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
-* Det går snabbt och enkelt att överföra filer från din lokala dator med Power BI. Läs hur du gör här!
+* Samarbeta och dela.
   
-  <iframe width="500" height="281" src="https://www.youtube.com/embed/ETj-z3NyY_o" frameborder="0" allowfullscreen></iframe>
-* OneDrive är ett bra sätt att ansluta till dina data och se till att de hålls uppdaterade
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5DABLeJzQYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+* Översikt över Power BI Mobile
   
-  <iframe width="500" height="281" src="https://www.youtube.com/embed/6cOjiV_klrs" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/07uBWhaCo78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+* Power BI för utvecklare
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/47uXJW1GIUY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
 
 ## <a name="watch-some-of-our-new-uploads"></a>Titta på några av vår nya uppladdningar
-* [Tidsintelligens](https://youtu.be/MNAaHw4PxzE)
-* [Gruppering och diskretisering](https://youtu.be/51n2itS7K5I)
-* [SAP HANA](https://youtu.be/FOjJLvsIACc)
+* [Datumutsnitt](https://youtu.be/V7i82ZZm0vw)
+* [Anpassade visualiseringar](https://youtu.be/d-rXAJ3_uAo)
+* [Aviseringar i Power BI-tjänsten](https://youtu.be/JbL2-HJ8clE)
 
-## <a name="more-videos"></a>Fler videoklipp
+## <a name="more-videos"></a>Fler videor
 Kolla in följande uppsättning källor och innehåll för mer videoklipp.
 
 * [Interaktiv inlärning för Power BI](https://powerbi.microsoft.com/guided-learning/) – en sekventiell rundvisning i Power BI i lättsmälta delar

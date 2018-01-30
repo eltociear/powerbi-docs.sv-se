@@ -1,5 +1,5 @@
 ---
-title: "Exportera en rapport från Power BI-tjänsten till skrivbordet (förhandsgranskning)"
+title: "Så här exporterar du en rapport från Power BI-tjänsten till Desktop (förhandsgranskning)"
 description: "Hämta en rapport från Power BI-tjänsten till en Power BI Desktop-fil"
 services: powerbi
 documentationcenter: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 30975e9192633043aed7e4196820ef34044b8fcb
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 259007c76b7b53ba0ea55a28fbdd189469383364
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exportera en rapport från Power BI-tjänsten till skrivbordet (förhandsgranskning)
 I Power BI Desktop kan du exportera (kallas även *hämta*) en rapport till Power BI-tjänsten genom att spara rapporten och välja **Publicera**. Du kan även exportera i omvänd ordning samt och ladda ned en rapport från Power BI-tjänsten till skrivbordet. Filnamnstillägget för filer som exporteras i endera riktningen är *.pbix*.
@@ -45,14 +45,15 @@ Hämta .pbx-filen genom att följa dessa steg:
     ![](media/service-export-to-pbix/power-bi-save-pbix.png)
    
     Nu kan du öppna .pbx-filen i Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.     
-4. Välj **Öppna** om du vill öppna rapporten direkt på skrivbordet.  [Installera Power BI Desktop](desktop-get-the-desktop.md) om du inte redan har gjort det.
+4. Välj **Öppna** om du vill öppna rapporten direkt på skrivbordet. Om du vill spara filen till en specifik plats, väljer du **Spara > Spara som**. [Installera Power BI Desktop](desktop-get-the-desktop.md) om du inte redan har gjort det.
    
     När du öppnar rapporten på skrivbordet visas ett varningsmeddelande om att vissa funktioner som är tillgängliga i rapporten i Power BI-tjänsten kanske inte är tillgängliga i Desktop.
    
     ![](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
-5. Välj **Spara** om du vill öppna rapporten i Power BI-tjänsten, och navigera sedan till den plats där du sparade .pbx-filen genom att använda **Hämta data**.
+
+5. Rapportredigeraren i Desktop liknar rapportredigeraren i Power BI-tjänsten.  
    
-    ![](media/service-export-to-pbix/power-bi-get-data.png)
+    ![](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Det finns några viktiga överväganden och begränsningar att ta hänsyn till när man hämtar (exporterar) en *.pbix*-fil från Power BI-tjänsten.
@@ -78,5 +79,5 @@ När du har installerat **Power BI Desktop** kan du komma igång med hjälp av f
 
 * [Komma igång med Power BI Desktop](desktop-getting-started.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)   
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)   
 

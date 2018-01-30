@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: 5e4788e57bd1836d3d5db10dfb86e2c71c00c34f
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 7d9869c16b88cb410073644bdae94173b9cea023
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-visualiseringar
 Vi planerar nya visualiseringar, håll ögonen öppna!
 
-Och ta en titt på [Office store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) där du hittar en växande lista över anpassade visualiseringar som du kan hämta och använda i dina egna instrumentpaneler och rapporter. Känner du dig kreativ? [Lär dig att skapa och lägga till dina egna visuella objekt i communityn](developer/office-store.md).  
+Kolla även in [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) där du hittar en växande lista med [anpassade visuella objekt](power-bi-custom-visuals.md) som du kan hämta och använda i dina egna instrumentpaneler och rapporter. Känner du dig kreativ? [Läs hur du skapar och lägger till dina egna visuella objekt på den här community-webbplatsen](developer/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
 Alla dessa visuella objekt kan läggas till Power BI-rapporter, anges i frågor och svar och fästas på instrumentpaneler.

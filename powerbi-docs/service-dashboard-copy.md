@@ -1,6 +1,6 @@
 ---
 title: Skapa en kopia av en Power BI-instrumentpanel
-description: 'Duplicera en Power BI-instrumentpanel '
+description: "Så här duplicerar du en Power BI-instrumentpanel "
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,20 +16,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/26/2017
+ms.date: 01/17/2018
 ms.author: mihart
-ms.openlocfilehash: c8d44c7b0f65ad9a7bef0824c0f1bb7494eaff88
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 6527006095e6d716687477e7408a980ee765fb5a
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="create-a-copy-of-a-power-bi-dashboard"></a>Skapa en kopia av en Power BI-instrumentpanel
+# <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Skapa en kopia av en instrumentpanel i Power BI-tjänsten
 ![](media/service-dashboard-copy/power-bi-dashboard.png)
 
-Det finns många olika skäl att göra en kopia av en instrumentpanel som du äger. Kopian sparas till den aktiva arbetsytan (samma). Du kanske vill göra ändringar och testa dess prestanda mot den ursprungliga. Eller skapa något annorlunda versioner för att distribuera efter kollega, region eller team. En kollega kanske beundrar din instrumentpanelsdesign och vill använda den för att rapportera till sina chefer. En annan orsak kan vara om du har en ny databas med samma datastruktur och datatyper och vill återanvända instrumentpanelen som du redan har skapat. Det kan du också göra, men det kräver lite arbete i Power BI Desktop. 
+ Det finns många olika skäl att göra en kopia av en instrumentpanel. Du kanske vill göra ändringar och testa dess prestanda mot den ursprungliga. Eller skapa något annorlunda versioner för att distribuera efter kollega, region eller team. En kollega kanske beundrar din instrumentpanelsdesign och vill använda den för att rapportera till sina chefer. En annan orsak kan vara om du har en ny databas med samma datastruktur och datatyper och vill återanvända instrumentpanelen som du redan har skapat. Det kan du också göra, men det kräver lite arbete i Power BI Desktop. 
 
-Instrumentpaneler som har delats med dig som en app, kan inte dupliceras.
+Instrumentpaneler skapas (och kopieras) med hjälp av Power BI-tjänsten och kan visas i Power BI Mobile och Power BI Embedded.  Instrumentpaneler finns inte tillgängliga i Power BI Desktop. 
+
+Om du vill göra en kopia av en instrumentpanel måste du vara instrumentpanelens *skapare*. Instrumentpaneler som har delats med dig som en app, kan inte dupliceras.
 
 1. Öppna instrumentpanelen.
 2. Välj ellipserna (...) i övre högra hörnet och välj **duplicera instrumentpanelen**.
@@ -42,9 +44,17 @@ Instrumentpaneler som har delats med dig som en app, kan inte dupliceras.
    
    ![](media/service-dashboard-copy/power-bi-copied.png)
 
+5.    Öppna den nya instrumentpanelen och redigera efter behov. Här följer några saker som du kanske vill göra härnäst:    
+    a. [Flytta, byta namn på, ändra storlek på eller ta bort paneler](service-dashboard-edit-tile.md).  
+    b. Redigera panelinformation och hyperlänkar genom att välja panelellipserna (...) och välja **Redigera information**.  
+    c. [Lägg till nya paneler från instrumentpanelens menyrad](service-dashboard-add-widget.md) (**Lägg panel**)  
+    d. Fäst nya paneler [från frågor och svar](service-dashboard-pin-tile-from-q-and-a.md) eller [från rapporter](service-dashboard-pin-tile-from-report.md).  
+    e. Byt namn på instrumentpanelen, aktivera och inaktivera frågor och svar och ställ in panelflödet från instrumentpanelens inställningsfönster.  (välj listmenyn från instrumentpanelens ellips (...) och välj **Inställningar**)  
+    f. Dela din instrumentpanel direkt med kollegor eller som en del av en Power BI-app. 
+
+
 ## <a name="next-steps"></a>Nästa steg
-* [Redigera, ändra storlek på och flytta paneler](service-dashboard-edit-tile.md) 
 * [Tips för att designa en bra instrumentpanel](service-dashboards-design-tips.md) 
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

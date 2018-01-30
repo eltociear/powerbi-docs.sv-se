@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 6d2c14de83fcea1e9067fd3868b7559c3becce14
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: 797b22ed6f07e64d7e4970f8f0dfe5e93a7c0ec4
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagera med ArcGIS-kartor i Power BI
 Det här avsnittet skrivs utifrån perspektivet för en person som *använder* en ArcGIS-karta i Power BI-tjänsten, Desktop eller i en mobil lösning. När en skapare har delat en ArcGIS-karta med dig, finns det många sätt att interagera med den.  Mer information om hur du skapar en ArcGIS-karta finns i [självstudierna om ArcGIS-kartor från Esri](power-bi-visualization-arcgis.md).
@@ -31,7 +31,6 @@ Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara p
 
 > [!TIP]
 > GIS står för Geographic Information Science.
-> 
 > 
 
 Det exempel som vi använder är samma ArcGIS-karta som skapades i [självstudierna om ArcGIS-kartor från Esri](power-bi-visualization-arcgis.md). Den tittar på förra årets försäljning per stad och använder en grundläggande gatukarta, bubbelsymboler för att representera storlek och ett referensskikt för hushållens genomsnittliga inkomst. Kartan innehåller tre stift och en körtidsradie (i lila).
@@ -99,7 +98,7 @@ ArcGIS Maps för Power BI finns tillgängligt i följande tjänster och appar:
 <td>Ja</td>
 </tr>
 <tr>
-<td>Power BI-tjänst (PowerBI.com)</td>
+<td>Power BI-tjänsten (app.powerbi.com)</td>
 <td>Ja</td>
 </tr>
 <tr>

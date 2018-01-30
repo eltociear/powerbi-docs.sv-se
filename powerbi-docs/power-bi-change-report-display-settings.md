@@ -15,27 +15,32 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/25/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: a5cc05e26012f88e889612788d4479a370063d4f
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b154aec7c65b09743484f8f51ae88f9317f651a0
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="change-the-size-of-a-report-page-tutorial"></a>Ändra storleken på en rapportsida (självstudier)
-I den [föregående artikeln och videon](power-bi-report-display-settings.md) fick du lära dig två olika sätt för att styra sidvisningen i Power BI-rapporter: **Visa** och **Sidstorlek**. Nu ska vi prova på det.
+I den [föregående artikeln och videon](power-bi-report-display-settings.md) fick du lära dig två olika sätt för att styra sidvisningen i Power BI-rapporter: **Visa** och **Sidstorlek**. Sidvy och Sidstorlek finns tillgängliga i både Power BI-tjänsten och Power BI Desktop och ser både ut och fungerar nästan på samma sätt. I den här självstudien använder vi dock Power BI-tjänsten. 
+
+### <a name="prerequisites"></a>Förutsättningar
+- Power BI-tjänsten   
+- [Exempel på detaljhandelsanalysrapport](samples-retail-analysis.md)
 
 ## <a name="first-lets-change-the-page-view-setting"></a>Vi börjar med att ändra inställningarna för Sidvisning
-1. Öppna du en rapport i Läsvy eller Redigeringsvy. I det här exemplet används sidan ”New Stores (Nya butiker)” i [Exempel på detaljhandelsanalys](sample-retail-analysis.md).  Den här sidan visas med hjälp av inställningen **Anpassa till sida**.  I det här fallet visar Anpassa till sida rapportsidan utan rullningslister, men vissa detaljer och rubriker är för små för att kunna läsas.
+
+1. Öppna rapporten i läsvyn eller redigeringsvyn och välj rapportfliken för **Nya butiker**. Som standard visas den här sidan med hjälp av inställningen **Anpassa till sidan**.  I det här fallet visar Anpassa till sida rapportsidan utan rullningslister, men vissa detaljer och rubriker är för små för att kunna läsas.
    
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_page.png)
 2. Kontrollera att inga visualiseringar är markerade på arbetsytan. Välj **Visa** och granska visningsalternativen.
 
-* I Läsvy visas följande.
+    * I Läsvy visas följande.
   
      ![](media/power-bi-change-report-display-settings/power-bi-page-view-menu-new.png)
-* I Redigeringsvy visas följande.
+    * I Redigeringsvy visas följande.
   
     ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
 
@@ -51,26 +56,31 @@ I den [föregående artikeln och videon](power-bi-report-display-settings.md) fi
    Ser bättre ut, nu har vi rullningslister och det är lättare att läsa detaljerna.
 
 ## <a name="change-the-default-view-for-a-report-page"></a>Ändra standardvyn för en rapportsida
-Alla Power BI-rapporter visas som standard i vyn **Anpassa till sida**. Hur gör man om man vill att den här rapportsidan alltid ska öppnas i vyn **Faktisk storlek**?
+Om du är en rapport-*skapare*, kan du ändra standardvyn för dina rapportsidor. När du delar din rapport med andra öppnas rapportsidorna med den vyn du har ställt in. Rapport-*konsumenter* kommer att kunna ändra vyn, men kommer inte att kunna spara sina ändringar när de stänger ner rapporten.
 
 1. På sidan **New stores (Nya butiker)** i rapporten växlar du tillbaka till vyn **Faktisk storlek**.
    
    ![](media/power-bi-change-report-display-settings/power-bi-actual-size.png)
-2. Spara rapporten med ett annat namn genom att välja **Arkiv > Spara som**. Du har nu två kopior av den här rapporten. I den ursprungliga rapporten fortsätter **New stores (Nya butiker)** att öppnas i standardvyn men i den nya rapporten öppnas den i vyn **Faktisk storlek**. Nu ska vi se.
+
+2. På rapportsidan **Månatlig försäljning per distrikt**, ställer du in Vyn till **Anpassa till bredden**.
+
+3. På rapportsidan **Översikt**, lämnar du kvar standardinställningen för vyn.
+
+4. Nu sparar du rapporten genom att välja **Fil > Spara**. Nästa gång du öppnar den här rapporten kommer sidorna att visas med de nya Vy-inställningarna. Nu ska vi se.
    
-   ![](media/power-bi-change-report-display-settings/power-bi-save-as.png)
+   ![](media/power-bi-change-report-display-settings/power-bi-save.png)
 3. Välj namnet på den aktuella arbetsytan från det övre navigeringsfältet för att återgå till den arbetsytan.  
    
    ![](media/power-bi-change-report-display-settings/power-bi-my-workspace.png)
-4. Välj fliken **Rapporter** och välj den nya rapporten som du precis skapade (den har en gul asterisk).
+4. Välj fliken **Rapporter** och välj samma rapport (Exempel på detaljhandelsanalys).
    
     ![](media/power-bi-change-report-display-settings/power-bi-new-report2.png)
-5. Rapporten öppnas i **Faktisk storlek**!
+5. Öppna varje sida i rapporten för att se de nya inställningarna.
    
-   ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
+   ![](media/power-bi-change-report-display-settings/power-bi-page-view.gif)
 
 ## <a name="now-lets-explore-the-page-size-setting"></a>Nu ska vi titta närmare på inställningen *Sidstorlek*.
-Inställningarna för sidstorlek är bara tillgängliga i [Redigeringsvy](service-interact-with-a-report-in-editing-view.md). Du måste ha ägarbehörighet för en rapport som du vill öppna i redigeringsvyn. Om du har anslutit till något av våra [exempel](sample-datasets.md), har du ägarbehörighet för dessa rapporter.
+Storleksinställningarna finns bara tillgängliga i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md) så du måste ha redigeringsbehörigheter (*skapare*) till rapporten för att ändra sidstorleksinställningarna. Om du har anslutit till något av våra [exempel](sample-datasets.md), kommer du att ha *skapare*-behörigheter till de rapporterna.
 
 1. Öppna sidan ”District monthly sales (Månadsvis distriktsförsäljning)” i [Exempel på detaljhandelsanalys ](sample-retail-analysis.md) i redigeringsvyn.
 2. Kontrollera att inga visualiseringar är markerade på arbetsytan.  I fönstret **Visualiseringar** väljer du färgrollerikonen![](media/power-bi-change-report-display-settings/power-bi-paintroller.png).
@@ -80,18 +90,15 @@ Inställningarna för sidstorlek är bara tillgängliga i [Redigeringsvy](servic
 4. Välj **Letter**.  På arbetsytan återstår bara det innehåll som passar för 816 x 1056 bildpunkter (Letter-storlek) på den vita delen av arbetsytan.
    
    ![](media/power-bi-change-report-display-settings/power-bi-letter-new.png)
-5. Om vi ändrar **Visa** till ”Anpassa till bredd”, visar nu vår arbetsyta endast det sidinnehåll som passar i Letter-storleken.
-   
-   ![](media/power-bi-change-report-display-settings/power-bi-fit-to-width-new.png)
-6. Välj **Sidstorlek** och förhållandet **16:9**.
+5. Välj **Sidstorlek** och förhållandet **16:9**.
    
    ![](media/power-bi-change-report-display-settings/power-bi-16-to-9-new.png)
    
    Rapportsidan visas med hjälp av ett förhållande på 16 brett med 9 högt. Om du vill visa den faktiska bildpunktsstorlek som används, kan du ta en titt på de gråmarkerade fälten Bredd och Höjd (1 280 x 720). Det är mycket tomt utrymme runt rapportarbetsytan, vilket beror på att vi tidigare ställde in **Visa** på ”Anpassa till bredd”.
 7. Fortsätt att utforska **Sidstorlek**-alternativen.
 
-## <a name="using-page-view-and-page-size-together"></a>Använda Sidvisning och Sidstorlek tillsammans
-Du kan använda Sidvisning och Sidstorlek tillsammans för att skapa en rapport som ser bra ut när den är inbäddad i ett annat program.
+## <a name="use-page-view-and-page-size-together"></a>Använda Sidvisning och Sidstorlek tillsammans
+Du kan använda Sidvisning och Sidstorlek tillsammans för att skapa en rapport som ser bra ut när den delas med kollegor eller är inbäddad i ett annat program.
 
 I den här övningen kommer du att skapa en rapportsida som ska visas i ett program som har utrymme för 500 bildpunkter på bredden och 750 bildpunkter på höjden.
 
@@ -113,7 +120,5 @@ Kom ihåg att vi i det föregående steget såg att rapportsidan för närvarand
 
 Tillbaka till [Sidvisningsinställningar i en Power BI-rapport](power-bi-report-display-settings.md)
 
-Läs mer om [rapporter i Power BI](service-reports.md)
-
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
