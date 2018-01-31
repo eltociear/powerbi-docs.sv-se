@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 58cfc6feb510dc9dc335b473b40ee4a7f341ee10
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 02012b531ba43ec5f17e47f2b273b75ef8b2d9ec
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Hantera din datakälla – Analysis Services
 När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda Analysis Services-datakällan antingen för schemalagd uppdatering eller för realtidsanslutningar.
@@ -216,7 +216,7 @@ Du tar bort en datakälla genom att gå till Datakälla > **Ta bort**.
 ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings6.png)
 
 ## <a name="manage-administrators"></a>Hantera administratörer
-På fliken Administratörer för gatewayen kan du lägga till och ta bort de användare (eller säkerhetsgrupper) som kan administrera gatewayen.
+På fliken Administratörer för gatewayen kan du lägga till och ta bort användare (eller säkerhetsgrupper) som kan administrera gatewayen.
 
 ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings8.png)
 
@@ -224,7 +224,7 @@ På fliken Administratörer för gatewayen kan du lägga till och ta bort de anv
 På fliken Användare för datakällan kan du lägga till och ta bort de användare eller säkerhetsgrupper som kan använda den här datakällan.
 
 > [!NOTE]
-> Användarlistan styr enbart vem som har behörighet att publicera rapporter. Rapportägarna kan skapa instrumentpaneler eller innehållspaket och dela dem med andra användare.
+> Användarlistan styr enbart vem som har behörighet att publicera rapporter. Rapportägare kan skapa instrumentpaneler eller innehållspaket och dela dem med andra användare.
 > 
 > 
 
@@ -254,7 +254,7 @@ Om du finns med på fliken **Användare** i den datakälla som konfigurerats i g
 
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway](service-gateway-onprem.md)  
-[Lokal datagateway – fördjupning](service-gateway-onprem-indepth.md)  
-[Felsökning av lokal datagateway](service-gateway-onprem-tshoot.md)  
+[Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
+[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

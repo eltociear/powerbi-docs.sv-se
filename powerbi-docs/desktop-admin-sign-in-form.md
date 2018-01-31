@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/17/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: eabb59b32234fce1ba5669b95abb41c4f7e04aa2
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 519f8b56b5086292addf577d969a707a6d6efcc8
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-administrators-can-manage-the-power-bi-desktop-sign-in-form"></a>Hur administratörer kan hantera inloggningsformuläret för Power BI Desktop
 Första gången Power BI Desktop startas visas ett inloggningsformulär. Antingen fylls informationen i eller så loggar man in på Power BI för att fortsätta. Administratörer kan hantera det här formuläret med en registernyckel. 

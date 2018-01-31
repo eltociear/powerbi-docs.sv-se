@@ -3,7 +3,7 @@ title: "Har du glömt lösenordet till Power BI?"
 description: "Har du glömt lösenordet till Power BI?"
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: asaxton
-ms.openlocfilehash: db51e8784e099963d8c9185bd6555d4f2637d891
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: 55855d8ecfaacd9134a37e3be2e95caa13a070e3
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Har du glömt lösenordet till Power BI?
 Om du har glömt ditt lösenord, kan du använda följande länk för att begära en lösenordsåterställning.

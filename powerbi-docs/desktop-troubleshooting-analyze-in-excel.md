@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: cf69d4955e466e44cec8a081d34f2ce2f36febc2
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: b7b32bf24734210bda02fab9d716a15cc185c1dc
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Felsöka Analysera i Excel
 Det kan finnas tillfällen när Analysera i Excel ger ett oväntat resultat eller funktionen inte fungerar som väntat. Den här sidan innehåller lösningar för vanliga problem när du använder Analysera i Excel.
@@ -91,7 +91,7 @@ Om du ser felet **Token har upphört att gälla** innebär det att du inte har a
 ## <a name="unable-to-access-on-premises-analysis-services"></a>Det går inte att ansluta till lokala Analysis Services
 Om du försöker komma åt en datauppsättning som har anslutningar till lokala Analysis Services-data kan du få ett felmeddelande. **Analysera i Excel** stöder anslutning till datauppsättningar och rapporter på lokala **Analysis Services** med en anslutningssträng, så länge som datorn tillhör samma domän som **Analysis Services**-servern och ditt konto har åtkomst till den **Analysis Services**-servern.
 
-## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Det går inte att dra något till området för pivottabellvärden (inga mått)
+## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Det går inte att dra något till området värden i pivottabeller (inga mått)
 När **Analysera i Excel** ansluter till en extern OLAP-modell (vilket är hur Excel ansluter till Power BI) kräver *pivottabellen* [att **åtgärder** ska definieras i den externa modellen](https://support.microsoft.com/kb/234700)eftersom alla beräkningar utförs på servern. Detta skiljer sig från när du arbetar med en lokal datakälla (till exempel tabeller i Excel, eller när du arbetar med datauppsättningar i **Power BI Desktop** eller **Power BI-tjänsten**), i vilket fall tabellmodellen är tillgänglig lokalt och [du kan använda införstådda mått](https://msdn.microsoft.com/library/gg399077.aspx), som är mått som genereras dynamiskt och inte lagras i datamodellen. I dessa fall kan Excel bete sig annorlunda än **Power BI Desktop** eller **Power BI-tjänsten**: det kan finnas kolumner i dessa data som kan hanteras som åtgärder i Power BI, men kan inte användas som värden (mått) i Excel.
 
 Det finns ett par alternativ för att hantera det här problemet:

@@ -3,7 +3,7 @@ title: "Hämta en åtkomsttoken för autentisering"
 description: "Genomgång för att skicka data – hämta en åtkomsttoken för autentisering"
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
-ms.openlocfilehash: 068baa78315bfc7e4f7078ed47596a480dbe3765
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.author: maghan
+ms.openlocfilehash: b2bec0ed32133c6882365ec257840cc3bf0b6119
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Steg 2: hämta en åtkomsttoken för autentisering
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).

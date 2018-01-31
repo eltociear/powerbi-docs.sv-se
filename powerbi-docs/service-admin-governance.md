@@ -3,7 +3,7 @@ title: Styrnings- och distributionsmetoder
 description: "White paper om koncept, alternativ och förslag för styrning i Power BI-ekosystemet."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: asaxton
-ms.openlocfilehash: 2a26106bcd27f3be05ff1f0d195c605da8b13c90
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: 574e54aa423c9cdc9b9146fde1a16686303e73f6
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="governance-and-deployment-approaches"></a>Styrnings- och distributionsmetoder
 Under de senaste få årtiondena har företag blivit allt mer medvetna om behovet av att utnyttja sina datatillgångar strategiskt för att dra nytta möjligheterna på marknaden. Genom att utföra konkurrensanalys eller genom att lära sig förstå operativa mönster har många organisationer nu insett att de kan ha fördel av en datastrategi för ligga steget före konkurrenterna.  

@@ -3,7 +3,7 @@ title: "Bädda in med Power BI"
 description: "Power BI erbjuder API:er för att bädda in dina instrumentpaneler och rapporter i program."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/30/17
 ms.author: mihart
-ms.openlocfilehash: 38860e6535f44e8831c62c045e7c5d0e130c35aa
-ms.sourcegitcommit: 910258a5ad8b6861e81ae02c57286db221c37375
+ms.openlocfilehash: 4d112ae4c25f080a3eb90de596c056366da3fe1d
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="embedding-with-power-bi"></a>Bädda in med Power BI
 Power BI erbjuder API:er för att bädda in dina instrumentpaneler och rapporter i program. Power BI-API:erna ger dig en konsekvent uppsättning funktioner och tillgång till de senaste funktionerna i Power BI när du bäddar in funktioner som instrumentpaneler, gatewayer och apparbetsytor.
@@ -56,7 +56,7 @@ Inbäddning för dina kunder ger dig möjligheten att bädda in instrumentpanele
 Om du vill bädda in instrumentpaneler, rapporter och paneler, använder du samma API:er som du använder för att bädda in för din organisation.
 
 > [!IMPORTANT]
-> Även om inbäddning är beroende av Power BI-tjänsten så finns det inget beroende av Power BI för dina kunder. De behöver inte registrera sig för Power BI för att visa det inbäddade innehållet i ditt program.
+> Även om inbäddning är beroende av Power BI-tjänsten så finns det inget beroende av Power BI för dina kunder. De behöver inte registrera sig för Power BI om du vill visa ditt programs inbäddade innehåll.
 > 
 > 
 
@@ -73,7 +73,7 @@ Om du använder tjänsten Power BI-arbetsytesamlingar i Azure, se [Migrera inneh
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Vitbok om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper)  
+[White paper om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: d65bdf17997809cd4bcaa2718da42ba41398bcf4
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: d9702f49b7d1c7589bea06ddb44384e97d6055fc
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-your-sap-hana-data-source"></a>Hantera din SAP HANA-datakälla
 När du har installerat den lokala datagatewayen måste du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda SAP HANA-datakällan för schemalagd uppdatering eller DirectQuery.
@@ -104,7 +104,7 @@ När du har skapat datakällan blir den tillgänglig för användning med anting
 > 
 > 
 
-Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste överensstämma. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop, måste du använda IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANCE* i Power BI Desktop måste du använda samma i datakällan som konfigurerats för gatewayen.
+Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste stämma överens. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop, måste du använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANCE* i Power BI Desktop måste du använda samma i datakällan som konfigurerats för gatewayen.
 
 Detta gäller både DirectQuery och schemalagd uppdatering.
 
@@ -114,7 +114,7 @@ Du måste se till att server- och databasnamnet matchar mellan Power BI Desktop 
 När du har publicerat, antingen från Power BI Desktop eller **Hämta Data**, borde dina rapporter fungera. Det kan ta ett par minuter efter att du har skapat datakällan i gatewayen innan anslutningen kan användas.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Använda datakällan med schemalagd uppdatering
-Om du finns med på fliken **Användare** i den datakälla som konfigurerats inom gatewayen, samt om servern och databasens namn matchar, visas gatewayen som ett alternativ att använda med schemalagd uppdatering.
+Om du finns med på fliken **Användare** i den datakälla som konfigurerats i gatewayen, samt om server- och databasnamnen matchar, visas gatewayen som ett alternativ för schemalagd uppdatering.
 
 ![](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
 
@@ -122,5 +122,5 @@ Om du finns med på fliken **Användare** i den datakälla som konfigurerats ino
 [Lokal datagateway](service-gateway-onprem.md)  
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

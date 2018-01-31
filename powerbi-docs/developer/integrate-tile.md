@@ -3,7 +3,7 @@ title: "Integrera en Power BI-panel i en app för din organisation"
 description: "Genomgång för hur du integrerar en panel i en app, exempelkod"
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/19/2017
-ms.author: asaxton
-ms.openlocfilehash: 70ffefa9845f8440205460ee0083f8dc334b7c81
-ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
+ms.author: maghan
+ms.openlocfilehash: fd33908f907ffac6cbff765e01e4a4321d399ca8
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Integrera en panel i en app (användaren äger data)
 Lär dig att integrera eller bädda in en panel i en webbapp med hjälp av REST API-anrop, tillsammans med Power BI JavaScript-API vid inbäddning för din organisation.

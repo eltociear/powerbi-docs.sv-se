@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/14/2017
+ms.date: 01/29/2018
 ms.author: maggies
-ms.openlocfilehash: a95e1ae0c1311d4db753d3e795dd7691927745d1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d7c27792b9eefc97c39f9211fe246e81d0932a80
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbeta på din Power BI-apparbetsyta
 Power BI-apparbetsytor är bra platser för samarbete med dina kollegor. Där kan ni skapa *appar* genom att aarbeta med instrumentpaneler, rapporter och datauppsättningar. Det är det som arbetsytorna har skapats för – samarbete. När du har avslutat samarbetet med dina kollegor med instrumentpaneler och rapporter är det bara att paketera resultatet som en app, och distribuerar den. Läs mer om att [skapa appar och apparbetsytor i Power BI](service-create-distribute-apps.md). 

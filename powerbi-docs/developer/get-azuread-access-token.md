@@ -3,7 +3,7 @@ title: "Autentisera användare och hämta en Azure AD-åtkomsttoken för ditt pr
 description: "Lär dig hur du registrerar ett program i Azure Active Directory för användning med inbäddning av Power BI-innehåll."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/11/2017
-ms.author: asaxton
-ms.openlocfilehash: ad6f48f5abca9be6f25cfcaab783fdd0829cab46
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: 3ff0fa3c83654ac577e98e730dc68ce3686e1198
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="authenticate-users-and-get-an-azure-ad-access-token-for-your-power-bi-app"></a>Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app
 Lär dig hur du autentiserar användare i Power BI-programmet och hämtar en åtkomsttoken som ska användas med REST API.

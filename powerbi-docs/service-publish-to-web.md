@@ -3,7 +3,7 @@ title: "Publicera på webben från Power BI"
 description: "Med Power BI Publicera på webben kan du enkelt bädda in interaktiva Power BI-visualiseringar online, t.ex. blogginlägg, webbplatser, via e-post eller sociala medier på alla enheter."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/27/2017
-ms.author: asaxton
-ms.openlocfilehash: ced24e81271c414101ddd7027a034814e9a7d609
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.author: maghan
+ms.openlocfilehash: 890c748c7e7502394fd2e6e024521e99082a1c77
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -144,7 +144,7 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder P
 
 Power BI-administratörer kan aktivera eller inaktivera publicering till webbfunktionen. De kan också begränsa åtkomst till specifika grupper. Din möjlighet att skapa en inbäddningskod ändras baserat på den här inställningen.
 
-|Aktuell |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
+|Visning av aktuellt objekt |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
 |**Publicera på webben** under rapportens **Fil**meny.|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
 |**Hantera inbäddade koder** under **Inställningar**|Aktiverad för alla|Aktiverad för alla|Aktiverad för alla<br><br>Alternativet * **Ta bort** endast för behöriga användare eller grupper.<br>* **Hämta koder** aktiverat för alla.|
@@ -180,4 +180,4 @@ När du skapar en inbäddningskod med rapporten **Publicera på webben** syns ra
 
 Cacheminnet är långlivat, så om du uppdaterar rapportdefinitionen (om du t.ex. ändrar läget för dess visningsläge) eller uppdaterar rapportdata, så kan det dröja ungefär en timma innan ändringarna avspeglas i den rapportversion som visas för användarna. Därför rekommenderar vi att du mellanlagrar ditt arbete i förväg och skapa inbäddningskoden för **Publicera på webben** enbart när du är nöjd med inställningarna.
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

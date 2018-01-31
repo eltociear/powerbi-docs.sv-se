@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/17/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: dc9bf86e9399a7d6cf67d225ec38a226bed1b0d3
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 8ef8ffda62fbaedae6f98a1ec98b919c42402185
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det innebär att du kan skapa den perfekta datamodellen i Power BI Desktop, publicera den till Power BI-tjänsten och sedan kan du och andra användare skapa flera olika rapporter (i separata .pbix-filer) från samma gemensamma datamodell. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
