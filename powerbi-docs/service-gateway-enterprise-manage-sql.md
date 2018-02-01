@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 95fccd70b536a26baf93bf4735750e5599e3021f
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 8f8a090714a7dabcc189304428f03161f3d47abc
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-your-data-source---sql-server"></a>Hantera din datakälla – SQL Server
 När du har installerat den lokala datagatewayen kan du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan antingen använda SQL Server-datakällan för schemalagd uppdatering eller för DirectQuery.
@@ -121,7 +121,7 @@ Du måste kontrollera att server- och databasnamnet är likadana i **Power BI De
 När du har publicerat, antingen från Power BI Desktop eller **Hämta Data**, borde dina rapporter fungera. Det kan ta ett par minuter efter att du har skapat datakällan i gatewayen innan anslutningen kan användas.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Använda datakällan med schemalagd uppdatering
-Om du finns med på fliken **Användare** i den datakälla som konfigurerats inom gatewayen, samt om servern och databasens namn matchar, visas gatewayen som ett alternativ att använda med schemalagd uppdatering.
+Om du finns med på fliken **Användare** i den datakälla som konfigurerats i gatewayen, samt om server- och databasnamnen matchar, visas gatewayen som ett alternativ för schemalagd uppdatering.
 
 ![](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
@@ -130,5 +130,5 @@ Om du finns med på fliken **Användare** i den datakälla som konfigurerats ino
 * [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 * [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)
 * [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/14/2017
+ms.date: 01/29/2018
 ms.author: maggies
-ms.openlocfilehash: abaeaab7b033cf528a8e7a3bda1a30633adb63b1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 69e4c9b02a3df65cff93e772b5024d6920aec1a2
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="share-a-dashboard-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel från Power BI-mobilapparna
 Gäller:
 
 | ![iPhone](media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-surfplatta](media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-enheter |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
+| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
 
 Med en [Power BI Pro-licens](service-free-vs-pro.md) kan du bjuda in kollegor att visa dina instrumentpaneler genom att dela länkar från Power BI-appar. Personerna du delar instrumentpaneler med måste finnas på samma e-postdomän som du och ha en licens för Power BI Pro, eller också måste innehållet finnas i en [Premium-kapacitet](service-premium.md).
 

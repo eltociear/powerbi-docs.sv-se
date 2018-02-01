@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: bf814b03c4e973afce7115ae111da520af498347
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 626a99467dc02481e004e0472d38cb733f836332
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="on-premises-data-gateway-faq"></a>Vanliga frågor och svar om lokal datagateway
 <!-- Shared FAQ shared Include -->
@@ -79,5 +79,5 @@ ms.lasthandoff: 11/27/2017
 [Lokal datagateway](service-gateway-onprem.md)  
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

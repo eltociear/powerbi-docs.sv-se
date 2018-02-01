@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 2a499418572582388552e6a258051b2abddfc1bd
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 0d6d66016663ed0e12d8f3da854ec1e9f7da7eae
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan antingen *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller så kan du ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner, däribland följande avsnitt:
