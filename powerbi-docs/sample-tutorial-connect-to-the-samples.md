@@ -1,5 +1,5 @@
 ---
-title: "Använda Power BI-exempel, självstudier."
+title: "Självstudier – Använda Power BI-exempel."
 description: "Självstudier: Använda Power BI-exempel"
 services: powerbi
 documentationcenter: 
@@ -15,40 +15,34 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: d92edce9ae1332c4a0c73be5db93201c9b87dc86
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.openlocfilehash: e8dead8f5ace2c3613c109a16808a6bb4c1ec15d
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="the-power-bi-samples-a-tutorial"></a>Power BI-exempel, självstudier
-<!-- Shared newnav Include -->
-[!INCLUDE [newnavbydefault](./includes/newnavbydefault.md)]
 
 Vi rekommenderar att du börjar med artikeln [Exempel på datauppsättningar för Power BI](sample-datasets.md). I den här artikeln får du lära dig allt om exemplen. Hur du hämtar dem, var du sparar dem, hur du använder dem och några av de budskap som varje exempel kan förmedla. Sedan, när du har ett grepp om grunderna, kan gå tillbaka till de här självstudierna.   
 
-## <a name="about-this-tutorial"></a>Om självstudierna
-I de här självstudierna lär du dig hur du importerar exemplen på innehållspaket, lägger till dem i Power BI-tjänsten och öppnar innehållet. Ett *innehållspaket* är en typ av exempel där datauppsättningen har paketerats med en instrumentpanel och en rapport. Exemplen på innehållspaket är tillgängliga i Power BI med hjälp av **Hämta data**.
-
-> [!NOTE]
-> De här självstudierna handlar om Power BI-tjänsten och inte Power BI Desktop.
-> 
-> 
+### <a name="prerequisites"></a>Förutsättningar
+Exemplen finns tillgängliga för Power BI-tjänsten och Power BI Desktop. Om du vill följa med kommer vi att använda exemplet på detaljhandelsanalysen.
 
 Innehållspaketet för *Exempel på detaljhandelsanalys* som används i de här självstudierna består av en instrumentpanel, en rapport och en datauppsättning.
 Om du vill bekanta dig med det här specifika innehållspaketet och dess scenario, kan du [ta en titt på exemplet på detaljhandelsanalys](sample-retail-analysis.md) innan du börjar.
 
-## <a name="get-data-in-this-case-get-a-sample-content-pack"></a>Hämta data (i det här fallet, hämta ett exempel på ett innehållspaket)
+## <a name="about-this-tutorial"></a>Om självstudierna
+Den här kursen lär du dig hur du 
+- importerar ett exempelinnehållspaket, lägger till det i Power BI-tjänsten och öppnar innehållet. Ett *innehållspaket* är en typ av exempel där datauppsättningen har paketerats med en instrumentpanel och en rapport. 
+-  öppna en PBIX-exempelfil i Power BI Desktop.
+
+
+## <a name="samples-and-power-bi-service"></a>Exempel och Power BI-tjänsten
+
 1. Öppna Power BI-tjänsten och logga in (app.powerbi.com).
-2. Välj en arbetsyta och skapa en ny instrumentpanel.  
-   
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-create-dashboard2.png)
-3. Döp den till **Exempel på detaljhandelsanalys**.
-   
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-name-dashboard.png)
-4. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret. Om du inte ser **Hämta data** kan du expandera navigeringsfönstret genom att välja ![](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+2. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret. Om du inte ser **Hämta data** kan du expandera navigeringsfönstret genom att välja ![](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
    
    ![](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
 5. Välj **Exempel**.  
@@ -59,7 +53,7 @@ Om du vill bekanta dig med det här specifika innehållspaketet och dess scenari
    ![](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
 
 ## <a name="what-exactly-was-imported"></a>Vad exakt importerades?
-När du arbetar med exemplen på innehållspaket och väljer **Anslut**, hämtar Power BI en kopia av det aktuella innehållspaketet och lagrar det åt dig i molnet. Eftersom den person som skapade innehållspaketet inkluderade en datauppsättning, en rapport och en instrumentpanel – är det det som du får när du klickar på **Anslut**.
+När du arbetar med exemplen på innehållspaket och väljer **Anslut**, hämtar Power BI en kopia av det aktuella innehållspaketet och lagrar det åt dig i molnet. Eftersom den person som skapade innehållspaketet inkluderade en datauppsättning, en rapport och en instrumentpanel – är det det som du får när du klickar på **Anslut**. 
 
 1. Power BI skapar den nya instrumentpanelen och visar den på fliken **Instrumentpaneler**. Den gula asterisken visar att den är ny.
    
@@ -91,10 +85,10 @@ Utforska nu instrumentpanelen, datauppsättningen och rapporten på egen hand. D
     ![](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Om panelen hade skapats med hjälp av [Power BI:s frågor och svar](power-bi-q-and-a.md), skulle sidan Frågor och svar öppnats i stället.
+   > Om panelen hade skapats med hjälp av [Power BI:s frågor och svar](power-bi-q-and-a.md), skulle sidan Frågor och svar öppnats i stället. Om panelen hade [fästs från Excel](service-dashboard-pin-tile-from-excel.md), skulle Excel Online ha öppnats i Power BI.
    > 
    > 
-4. Tillbaka på din flik **Datauppsättningar** har du flera alternativ för att utforska din datauppsättning.  Du kommer inte att kunna öppna den och se alla rader och kolumner (som du kan i Power BI Desktop eller Excel).  När någon delar ett innehållspaket med kollegor vill de vanligtvis dela med sig av vissa insikter och inte ge dem direkt åtkomst till specifika data. Men det betyder inte att du inte kan utforska datauppsättningen.  
+1. Tillbaka på din flik **Datauppsättningar** har du flera alternativ för att utforska din datauppsättning.  Du kommer inte att kunna öppna den och se alla rader och kolumner (som du kan i Power BI Desktop eller Excel).  När någon delar ett innehållspaket med kollegor vill de vanligtvis dela med sig av vissa insikter och inte ge dem direkt åtkomst till specifika data. Men det betyder inte att du inte kan utforska datauppsättningen.  
    
    ![](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
    
@@ -104,6 +98,42 @@ Utforska nu instrumentpanelen, datauppsättningen och rapporten på egen hand. D
    * Ett annat sätt att utforska datauppsättningen är att köra [Quick Insights](service-insights.md). Välj ellipserna (...) och välj **Hämta insikter**. När insikterna är klara väljer du **Visa insikter**.
      
        ![](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+
+## <a name="samples-and-power-bi-desktop"></a>Exempel och Power BI Desktop 
+När du först öppnar PBIX-exempelfilen visas den i rapportvyn där du kan utforska, skapa och ändra valfritt antal rapportsidor med visualiseringar. Rapportvyn ger praktiskt taget samma designupplevelse som rapportens redigeringsvy i Power BI-tjänsten. Du kan flytta runt visuella objekt, kopiera och klistra in, sammanfoga och så vidare.
+
+Skillnaden mellan dessa är att när du använder Power BI Desktop kan du arbeta med dina frågor och modellera dina data så att dina data ger de bästa insikterna i dina rapporter. Du kan spara Power BI Desktop-filen var du vill, oavsett om det är en lokal hårddisk eller till molnet.
+
+1. Öppna [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) i Power BI Desktop. 
+
+    ![](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
+
+1. Filen öppnas i rapportvyn. Lägg märke till de 4 flikarna längst ned i rapportredigeraren. Det innebär att det finns 4 sidor i den här rapporten och sidan ”Nya butiker” är markerad. 
+
+    ![](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
+
+3. Mer ingående information om rapportredigeraren finns i [Ta en rundtur i rapportredigeraren](service-the-report-editor-take-a-tour.md)
+
+## <a name="what-exactly-was-imported"></a>Vad exakt importerades?
+När du öppnar PBIX-exempelfilen i Desktop tar faktiskt Power BI in en kopia av dessa data och lagrar dem åt dig i molnet. Från skrivbordet har du åtkomst till rapporten ***och den underliggande datamängden***. När data har lästs in försöker Power BI Desktop hitta och skapa relationer för dig.  
+
+1. Växla till [Datavy](desktop-data-view.md) genom att välja tabellikonen ![](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png) .
+ 
+    ![](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
+
+    Datavyn hjälper dig att inspektera, utforska och förstå data i Power BI Desktop-modellen. Det här skiljer sig från hur du visar tabeller, kolumner och data i frågeredigeraren. I datavyn tittar du på dina data efter att de har lästs in i modellen.
+
+    När du utformar dina data, vill ibland du se vad som faktiskt finns i en tabell eller kolumn utan att skapa ett visuellt objekt på rapportarbetsytan, ofta på radnivå. Detta gäller särskilt när du skapar mått och beräknade kolumner och du behöver identifiera en datatyp eller datakategori.
+
+1. Växla till [Relationsvy](desktop-relationship-view.md) genom att välja ikonen ![](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png) .
+ 
+    ![](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
+
+    Relationsvyn visar alla tabeller, kolumner och relationer i din modell. Härifrån kan du visa, ändra och skapa relationer.
+
+## <a name="explore-your-new-content"></a>Utforska ditt nya innehåll
+Utforska nu datauppsättningen, relationerna och rapporten på egen hand. Du hittar hjälp att komma igång i [Komma igång med Desktop](desktop-getting-started.md).    
+
 
 ## <a name="next-steps"></a>Nästa steg
 [Grundläggande begrepp för Power BI](service-basic-concepts.md)

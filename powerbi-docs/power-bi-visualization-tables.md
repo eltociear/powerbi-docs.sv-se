@@ -1,6 +1,6 @@
 ---
-title: "Tabellvisualiseringar i Power BI-rapporter och instrumentpaneler (självstudier)"
-description: "Tips för att arbeta med tabellvisualiseringar i Power BI-rapporter och instrumentpaneler, inklusive hur du ändrar kolumnbredder."
+title: "Självstudie – Tabellvisualiseringar i Power BI-rapporter och instrumentpaneler (självstudier)"
+description: "Självstudier för att arbeta med tabellvisualiseringar i Power BI-rapporter och instrumentpaneler, inklusive hur du ändrar kolumnbredder."
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: e4a2e162ca193af756e7182fb118bc7e72d38d28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4785df6bbc14bf0da4500a9cffdcd47381e412f4
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards-tutorial"></a>Arbeta med tabeller i Power BI-rapporter och instrumentpaneler (självstudier)
 En tabell är ett rutnät som innehåller relaterade data i en logisk serie med rader och kolumner. Det kan också innehålla rubriker och en rad för summor. Tabeller fungerar bra med kvantitativa jämförelser där du tittar på många värden för en enskild kategori. I den här tabellen visas till exempel 5 olika mått för **Kategori**.
@@ -40,11 +40,16 @@ Tabeller är ett bra alternativ:
 > Om en tabell har för många värden, bör du omvandla den till en matris och/eller ändra detaljnivån.
 > 
 > 
+## <a name="prerequisites"></a>Förutsättningar
+ - Power BI-tjänsten eller Power BI Desktop
+ - Exempel på detaljhandelsanalys
+
 
 ## <a name="create-a-table"></a>Skapa en tabell
-Om du vill hänga på loggar du in i Power BI och väljer **Hämta data > Exempel > Exempel på detaljhandelsanalys**. Vi ska skapa tabellen som visas ovan för att visa försäljningsvärden efter kategori för objektet.
+Vi ska skapa tabellen som visas ovan för att visa försäljningsvärden efter kategori för objektet. Om du vill följa med, loggar du in i Power BI-tjänsten och väljer **Hämta data\> Exempel \> Exempel på detaljhandelsanalys > Anslut** och välj **Gå till instrumentpanel. För att skapa en visualisering krävs behörighet att redigera datauppsättningen och rapporten. Som tur är kan alla Power BI-exemplen redigeras. Om en rapport har delats med dig, kan du inte skapa visualiseringar i rapporten.
 
-1. I **Min arbetsyta** väljer du fliken datauppsättningar och rulla till Exempel på detaljhandelsanalys som du precis lade till.  Välj ikonen **Skapa rapport**.
+1. I det vänstra navigeringsfönstret väljer du **Arbetsytor > Min arbetsyta**.    
+2. Välj fliken Datauppsättningar och rulla till Exempel på detaljhandelsanalys som du precis la till.  Välj ikonen **Skapa rapport**.
    
     ![](media/power-bi-visualization-tables/power-bi-create-report.png)
 2. I rapportredigeraren väljer du **Objekt** > **Kategori**.  Power BI skapar automatiskt en tabell som listar alla kategorier.

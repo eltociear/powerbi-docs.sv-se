@@ -1,5 +1,5 @@
 ---
-title: "Skapa en ny rapport från en datauppsättning "
+title: "Självstudie – Skapa en ny rapport från en datauppsättning "
 description: "Skapa en ny Power BI-rapport från en datauppsättning."
 services: powerbi
 documentationcenter: 
@@ -15,20 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/24/2018
 ms.author: mihart
-ms.openlocfilehash: f4afb1eaa1b3012fdbdb0eff35e9eff695cc32e4
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 7405f2c5663c071d58253f2103c9c7d778ea8299
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Skapa en ny Power BI-rapport genom att importera en datauppsättning
 Du har läst [Rapporter i Power BI](service-reports.md) och nu vill du skapa en egen. Det finns många olika sätt att skapa en rapport och i den här artikeln börjar vi med att skapa en grundläggande rapport från en Excel-datauppsättning. När du förstår grunderna för att skapa en rapport leder **Nästa steg** längst ned till mer avancerade avsnitt om rapporter.  
 
 > **TIPS**: för att skapa en rapport genom att kopiera en befintlig rapport, se [Kopiera en rapport](power-bi-report-copy.md)
 > 
-> 
+### <a name="prerequisites"></a>Förutsättningar
+- Power BI-tjänsten (information om att skapa rapporter med hjälp av Power BI Desktop finns i [Desktop-rapportvy](desktop-report-view.md)   
+- Exempel på detaljhandelsanalys
 
 ## <a name="import-the-dataset"></a>Importera datauppsättningen
 Den här metoden för att skapa en rapport som börjar med en datauppsättning och en tom rapportarbetsyta. För att följa med in instruktionerna kan du [hämta exempeldatauppsättningen Försäljningsanalys för Excel](http://go.microsoft.com/fwlink/?LinkId=529778) och spara den till OneDrive för företag (rekommenderas) eller lokalt.
@@ -83,7 +85,7 @@ Vår marknadschef har några ytterligare frågor för oss att besvara. Hon vill 
 4. Välj **Tid** > **Period** till brunnen **Axel**.
    
     ![](media/service-report-create-new/power-bi-report-step5.png)
-5. Om du vill sortera visualiseringen, väljer du ellipserna och därefter **Sortera efter period**.
+5. Om du vill sortera visualiseringen enligt tidsperiod, väljer du ellipserna och därefter **Sortera efter period**.
 6. Nu ska vi lägga till utsnittet. Markera ett tomt område på arbetsytan och välj Utsnitt ![](media/service-report-create-new/power-bi-slicer-icon.png) mall. Detta lägger till ett tomt utsnitt på vår arbetsyta.
    
     ![](media/service-report-create-new/power-bi-report-step6.png)    
@@ -93,12 +95,11 @@ Vår marknadschef har några ytterligare frågor för oss att besvara. Hon vill 
 8. Använd utsnittet för att leta efter mönster och insikter enligt distrikt.
    
    ![](media/service-report-create-new/power-bi-slicer-video2.gif)  
-9. Du kan också fortsätta att lägga till visualiseringar.
+
+Fortsätt att utforska dina data och lägga till visualiseringar. När du har hittat särskilt intressanta insikter [fäst dem på en instrumentpanel](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Nästa steg
-* [Skapa en kopia av en rapport](power-bi-report-copy.md)
-* [Spara rapporten](service-report-save.md)    
 * [Lägg till en ny sida i rapporten](power-bi-report-add-page.md)  
-* Lär dig hur du [fäster visualiseringar på en instrumentpanel](service-dashboard-pin-tile-from-report.md)    
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Lär dig hur du [fäster visualiseringar på en instrumentpanel](service-dashboard-pin-tile-from-report.md)   
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

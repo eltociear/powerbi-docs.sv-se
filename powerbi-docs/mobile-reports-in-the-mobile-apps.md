@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/23/2018
+ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: 610234a221c5ab1de976f9d554292395760efa0f
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+ms.openlocfilehash: 51006f70d0be13f08de7047f0097f7530d32a470
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -63,7 +63,7 @@ När du visar den rapporten på en telefon, öppnas den i stående vy.
 Läs mer om [rapporter optimerade för telefonvy](mobile-apps-view-phone-report.md).
 
 ## <a name="use-slicers-to-filter-a-report-page"></a>Använd utsnitt för att filtrera en rapportsida
-När du skapar en rapport i Power BI-tjänsten [(https://powerbi.com)](https://powerbi.com), bör du tänka på att på en telefon kan du inte se filterfönstret, men du kan [se utsnitt på en rapportsida](power-bi-visualization-slicers.md). Lägg till utsnitt i en rapport så att du och dina kollegor kan använda utsnitt för att filtrera sidan på en telefon.
+När du skapar en rapport i Power BI Desktop eller Power BI-tjänsten bör du överväga att [lägga till utsnitt till en rapportsida](power-bi-visualization-slicers.md). Du och dina kollegor kan använda utsnitt för att filtrera sidan i en webbläsare och i mobila appar. När du visar rapporten på en telefon kan du se och använda utsnitt i liggande läge och på en sida som är optimerad för telefonens stående läge.
 
 * När du väljer ett värde i ett utsnitt på rapportsidan, filtreras övrig visuell information på sidan.
   

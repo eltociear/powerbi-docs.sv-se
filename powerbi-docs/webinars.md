@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 01/24/2018
 ms.author: maikelson
-ms.openlocfilehash: 7b4f69bc65836d59448ef034f5d655f87d89248e
-ms.sourcegitcommit: 85302d577895e779466df55aa02e5785ab2e3138
+ms.openlocfilehash: 91a629699c782914ec542a2b7a668cf25e47ec27
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -47,13 +47,15 @@ Registrera dig för att lyssna till Power BI-experter och delta i livesända fr�
 
 >[Delta i kommande webbseminarier från Power BI-communityn](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
-- [Förbättra lönsamhet inom hälsovården – 12/12/17](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
+Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
 
 ## <a name="on-demand-webinars"></a>Webbseminarier på begäran
 
 Titta på inspelade sessioner när som helst
 
 >[Bläddra igenom biblioteket med Power BI webbseminarier på begäran från våra experter](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
+
+- [Förbättra lönsamhet inom hälsovården](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
 
 - [Så här implementerar du en lyckad strategi för styrning som gör din organisation säkrare](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
 

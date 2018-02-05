@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: 3e0e06f36bfd229cf482428aa983e7211dbf897c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: e824c1e582b8ed3cf0953b59b790e90271a6d38c
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-iphone-or-ipod-touch"></a>Kom igång med Power BI-mobilappen på en iPhone eller iPod Touch
 Microsofts Power BI-app för iOS på iPhone eller iPod Touch ger dig den mobila BI-upplevelsen för Power BI, Power BI-rapportservern och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. Och hålla dig uppdaterad med dina mest aktuella data på din [Apple Watch](mobile-apple-watch.md).  
@@ -41,7 +41,7 @@ Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-a
 [Hämta iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Hämta iPhone-appen") från Apples App Store till din iPhone och iPod Touch.
 
 > [!NOTE]
-> Du kan köra Power BI för iOS-appen på iPhone 5 och senare, med iOS 9.0 eller senare. Du kan också köra den på en iPod Touch med iOS 9.0 eller senare.
+> Du kan köra Power BI för iOS-appen på iPhone 5 och senare, med iOS 10 eller senare. Du kan också köra den på en iPod Touch med iOS 10 eller senare.
 > 
 > 
 
@@ -105,7 +105,7 @@ På sidan Favoriter i mobilapparna visas alla dina Power BI-favoritinstrumentpan
 
 Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 
-## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Företagsstöd för Power BI-mobilappar
+## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Företagsstöd för Power BI-mobilapparna
 Organisationer kan använda Microsoft Intune för att hantera enheter och program, inklusive Power BI-mobilappar för Android och iOS.
 
 Microsoft Intune låter organisationer kontrollera objekt och kräva en PIN-kod för åtkomst, styra hur data hanteras av programmet och till och med kryptera programdata när appen inte används.

@@ -1,11 +1,11 @@
 ---
-title: "Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter på Power BI?"
+title: Hur samarbetar och delar jag i Power BI?
 description: "I Power BI kan du samarbeta och dela instrumentpaneler, rapporter och paneler på flera olika sätt. Varje sätt har sina fördelar."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
+backup: lukaszp
 editor: 
 tags: 
 qualityfocus: monitoring
@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/24/18
 ms.author: maggies
-ms.openlocfilehash: a77c9a9816ef47ae4b342b2cd3a08b18c90f70de
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 032d07616464dcda8cc4cc38b1440936e5393a98
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-should-i-collaborate-and-share-dashboards-and-reports-in-power-bi"></a>Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter på Power BI?
-Du skapar instrumentpaneler och rapporter. Du kanske även använder dem för att samarbeta med dina kollegor. Då vill du att andra ska ha åtkomst till dem. Vad är det bästa sättet att distribuera dem?
+Du har skapat instrumentpaneler och rapporter. Du kanske även använder dem för att samarbeta med dina kollegor. Då vill du att andra ska ha åtkomst till dem. Vad är det bästa sättet att distribuera dem?
 
 I den här artikeln jämför vi alternativen för att samarbeta och dela i Power BI: 
 
@@ -34,7 +34,7 @@ I den här artikeln jämför vi alternativen för att samarbeta och dela i Power
 * Publicera på webben, där alla kan se och interagera med dem.
 * Skriva ut. 
 
-Oavsett vilket alternativ du väljer för att dela en instrumentpanel behöver du antingen en [Power BI Pro-licens](service-free-vs-pro.md) eller också måste innehållet finnas i en [Premium-kapacitet](service-premium.md). Licenskraven kan variera för kollegorna som ser dina instrumentpaneler, beroende på vilket alternativ du väljer. Det följande avsnittet beskriver detta i större detalj. Förslag? Power BI-teamet är alltid intresserade av din feedback, så gå till [Power BI Community-webbplatsen](https://community.powerbi.com/).
+Oavsett vilket alternativ du väljer för att dela en instrumentpanel behöver du antingen en [Power BI Pro-licens](service-free-vs-pro.md) eller också måste innehållet finnas i en [Premium-kapacitet](service-premium.md). Licenskraven kan variera för kollegorna som ser dina instrumentpaneler, beroende på vilket alternativ du väljer. Det följande avsnittet beskriver detta i större detalj. 
 
 ![Appar i Power BI-tjänsten](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
@@ -54,7 +54,7 @@ Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina 
 
 ![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Läs mer om att [publicera dina appar](service-create-distribute-apps.md#publish-your-app). 
+Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt i dina medarbetares Power BI-konton. Läs mer om att [publicera dina appar](service-create-distribute-apps.md#publish-your-app). 
 
 När de har installerat en app kan de se den i webbläsaren eller på mobilenheten.
 
@@ -69,9 +69,7 @@ Du behöver en Power BI Pro-licens att dela innehåll, liksom de som du delar de
 
 Du kan dela en instrumentpanel med personer utanför din organisation. De kan visa och interagera med den, men de kan inte dela den. 
 
-Mer om att [dela en instrumentpanel](service-share-dashboards.md) från Power BI-tjänsten.
-
-Du kan också [dela en direktlänk till en rapport](service-share-reports.md) och kringgå instrumentpanelen. Du kan lägga till ett filter i länken så att mottagarna ser en filtrerad version av rapporten.
+Mer om att [dela instrumentpaneler och rapporter](service-share-dashboards.md) från Power BI-tjänsten. Du kan också lägga till ett filter till en länk och [dela en filtrerad vy av rapporten](service-share-reports.md).
 
 ## <a name="annotate-and-share-from-the-power-bi-mobile-apps"></a>Kommentera och dela från Power BI-mobilapparna
 Du kan kommentera på en panel, rapport eller visualisering och sedan dela den med vem som helst med hjälp av Power BI-mobilapparna för iOS- och Android-enheter. 

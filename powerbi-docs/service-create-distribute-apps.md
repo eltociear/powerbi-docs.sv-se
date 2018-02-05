@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/16/2018
+ms.date: 01/24/2018
 ms.author: maggies
-ms.openlocfilehash: 89c376451199aec0a6f464f3298df44d468f37d2
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: fadeaedbcc61626b7f1265ac44480c55a60f4fe0
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Skapa och publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -32,7 +32,13 @@ Dina företagsanvändare behöver ofta flera Power BI-instrumentpaneler och -rap
 
 Med Power BI-appar, än så länge i en förhandsversion, kan du skapa samlingar av instrumentpaneler och rapporter och publicera dessa appar till hela organisationen eller till särskilda personer eller grupper. För dig som skapare eller administratör av rapporter gör apparna det enklare att hantera behörigheter för samlingar av instrumentpaneler.
 
-Företagsanvändare installerar de här apparna från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De kan enkelt hitta och gå tillbaka till ditt innehåll eftersom allt finns på samma plats. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Läs mer om [app-upplevelsen för företagsanvändare](service-install-use-apps.md).
+Företagsanvändarna får dina appar på ett par olika sätt. Om Power BI-administratören ger dig behörighet kan du installera dem automatiskt på dina medarbetares Power BI-konton. I annat fall kan de installera dina appar från Microsoft AppSource eller så kan du skicka dem en direktlänk. De kan enkelt hitta och gå tillbaka till ditt innehåll eftersom allt finns på samma plats. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Läs mer om [app-upplevelsen för företagsanvändare](service-install-use-apps.md).
+
+### <a name="licenses-for-apps"></a>Licenser för appar
+För att skapa appar måste du ha en licens för Power BI Pro. Det finns två alternativ för dina app-användare.
+
+* Alternativ 1: Alla företagsanvändare behöver **Power BI Pro**-licenser för att kunna visa din app. 
+* Alternativ 2: Kostnadsfria användare i din organisation kan visa app-innehåll om din app finns i en Power BI Premium-kapacitet. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
 
 ### <a name="apps-and-organizational-content-packs"></a>Appar- och organisationsinnehållspaket
 Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisationsinnehållspaket, fortsätter de att fungera sida vid sida med appar.
@@ -41,12 +47,6 @@ Nu när du har en översikt över appar ska vi prata mer om *app-arbetsytor*, pl
 
 ## <a name="video-apps-and-app-workspaces"></a>Video: Appar och app-arbetsytor
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-## <a name="licenses-for-apps"></a>Licenser för appar
-För att skapa appar måste du ha en licens för Power BI Pro. Det finns två alternativ för dina app-användare.
-
-* Alternativ 1: Alla företagsanvändare behöver **Power BI Pro**-licenser för att kunna visa din app. 
-* Alternativ 2: Kostnadsfria användare i din organisation kan visa app-innehåll om din app finns i en Power BI Premium-kapacitet. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
 
 ## <a name="app-workspaces"></a>App-arbetsytor
 *App-arbetsytor* är de platser där du skapar appar, så du måste börja med att skapa en app-arbetsyta innan du skapar appen. Om du tidigare har arbetat i en grupparbetsyta i Power BI, kommer app-arbetsytor att kännas bekanta. De är en utveckling av grupparbetsytor – mellanlagringsområden och behållare för innehållet i appen. 
@@ -106,21 +106,23 @@ När instrumentpanelerna och rapporterna på din app-arbetsyta är klara, public
    
      ![Publicera app](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-2. Börja med att fylla i en beskrivning under **Information** som hjälper användare att hitta appen. Du kan ange en bakgrundsfärg för att göra den lite personlig.
+2. Fyll i en beskrivning under **Information** som hjälper användare att hitta appen. Du kan ange en bakgrundsfärg för att göra den lite personlig.
    
      ![Information om appar](media/service-create-distribute-apps/power-bi-apps-details.png)
 
-3. Därefter går du till **Innehåll** och tittar på det innehåll som ska publiceras som en del av appen – allt som du har valt på arbetsytan. Du kan också ange en landningssida för appen – den instrumentpanel eller rapport som först visas när någon använder din app. Du kan välja **Ingen**. Då landar de i en lista över allt innehåll i appen. 
+3. Under **Innehåll** ser du det innehåll som ska publiceras som en del av appen – allt som du har valt på arbetsytan. Du kan också ange en landningssida för appen – den instrumentpanel eller rapport som först visas när någon använder din app. Du kan välja **Ingen**. Då landar de i en lista över allt innehåll i appen. 
    
      ![Appens innehåll](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Till sist bestämmer du under **Åtkomst** vem som ska ha åtkomst till appen: antingen alla i din organisation, specifika personer eller Active Directory-säkerhetsgrupper. 
+4. Under **Åtkomst** bestämmer du vem som ska ha åtkomst till appen: antingen alla i din organisation, specifika personer eller Active Directory-säkerhetsgrupper. Om du har behörighet kan du välja att installera appen automatiskt för mottagarna.
+
+    ![Åtkomst till appen](media/service-create-distribute-apps/power-bi-apps-access.png)
 
 5. När du väljer **Slutför**, visas ett meddelande som bekräftar att appen är redo för publicering. I dialogrutan som bekräftar slutförandet kan du kopiera URL:en som är en direktlänk till appen och skicka den till dem som du ska dela den med.
    
      ![Slutföra appen](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-De företagsanvändare som du har publicerat appen åt, kan hitta den på olika sätt. Du kan skicka dem en direktlänk till appen eller så kan de söka efter den i Microsoft AppSource, där de kan se alla appar som de kan komma åt. När de därefter går till Appar, kan de se den här appen i listan.
+De företagsanvändare för vilka du har publicerat appen kan hitta den på olika sätt. Om du kan installera appen automatiskt, visas den under Appar på mottagarnas Power BI-konton. Du kan skicka dem en direktlänk till appen eller så kan de söka efter den i Microsoft AppSource, där de kan se alla appar som de kan komma åt. Oavsett hur de får den, kan de därefter se den här appen i listan när de går till Appar.
 
 Läs mer om [app-upplevelsen för företagsanvändare](service-install-use-apps.md).
 
@@ -137,6 +139,7 @@ När du har publicerat en app kan du vilja ändra eller uppdatera den. Det är e
 1. Gå tillbaka till app-arbetsytans lista över innehåll och markera **Uppdatera app**.
    
      ![Uppdatera app-knappen](media/service-create-distribute-apps/power-bi-app-update-button.png)
+
 4. Uppdatera **Information**, **Innehåll** och **Åtkomst** om du behöver och välj sedan **Uppdatera app**.
    
      ![Uppdatera app-knappen](media/service-create-distribute-apps/power-bi-app-update-complete.png)
@@ -167,7 +170,9 @@ Appar är en utveckling och förenkling av innehållspaket med några viktiga sk
 * Med tiden planerar vi att avveckla användningen av organisationsinnehållspaket, så vi rekommenderar att du skapar appar hädanefter.  
 
 ### <a name="what-about-read-only-members-in-groups"></a>Hur fungerar det med skrivskyddade medlemmar i grupper?
-Du kan lägga till skrivskyddade medlemmar i grupper som bara kan visa innehållet. Det huvudsakliga problemet med den här metoden är att du inte kan lägga till säkerhetsgrupper som medlemmar. Med appar kan man publicera en skrivskyddad version av app-arbetsytan för stora målgrupper, inklusive säkerhetsgrupper. Du kan mellanlagra ändringar till instrumentpaneler och rapporter i appen utan att påverka slutanvändarna. Vi rekommenderar användning av appar på det här sättet i framtiden. Vi planerar att även avveckla användningen av skrivskyddade medlemmar för arbetsytor på längre sikt.  
+Du kan lägga till skrivskyddade medlemmar i grupper som bara kan se innehållet. Det huvudsakliga problemet med den här metoden är att du inte kan lägga till säkerhetsgrupper som medlemmar. 
+
+Med appar kan man publicera en skrivskyddad version av app-arbetsytan för stora målgrupper, inklusive säkerhetsgrupper. Du kan mellanlagra ändringar till instrumentpaneler och rapporter i appen utan att påverka slutanvändarna. Vi rekommenderar användning av appar på det här sättet i framtiden. Vi planerar att även avveckla användningen av skrivskyddade medlemmar för arbetsytor på längre sikt.  
 
 ## <a name="next-steps"></a>Nästa steg
 * [Installera och använda appar i Power BI](service-install-use-apps.md)

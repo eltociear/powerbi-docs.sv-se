@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 424e96c5315bd41fc79999555097602f629a1285
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 52ad27e0f809ed5c3cf4ae22f0d536f88cae0f0c
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds-tutorial"></a>Anpassa visualiseringens rubrik, bakgrund och förklaring (självstudier)
 I den här självstudien lär du dig några olika sätt att anpassa dina visualiseringar.   Det finns många alternativ för att anpassa dina visualiseringar. Det bästa sättet att lära dig om alla är att utforska fönstret Formatering (välj roller-ikonen).  Om du vill komma igång visar i den här artikeln hur du anpassar en visualiserings rubrik, förklaring och bakgrund.  
@@ -33,9 +33,12 @@ Se Amanda anpassa visualiseringar i sin rapport (spola framåt till 4:50 i video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
+### <a name="prerequisites"></a>Förutsättningar
+- Power BI-tjänsten eller Power BI Desktop
+- Exempel på detaljhandelsanalys
 
 ## <a name="customize-visualization-titles-in-reports"></a>Anpassa visualiseringstitlar i rapporter
-Logga in till Power BI-tjänsten och öppna rapporten [Exempel på detaljhandelsanalys](sample-datasets.md) i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
+Logga in till Power BI-tjänsten (app.powerbi.com) och [öppna rapporten Exempel på detaljhandelsanalys](sample-datasets.md) i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
 
 > [!NOTE]
 > När du fäster en visualisering på en instrumentpanel blir den en panel på instrumentpanelen.  Panelerna själva kan också anpassas med [nya rubriker och bildtexter, hyperlänkar samt ändra storlek](service-dashboard-edit-tile.md).
@@ -120,7 +123,6 @@ Expandera alternativet Bakgrund i samma stapeldiagram.
 | vattenfall |ja |ja |ja |
 
 ## <a name="next-steps"></a>Nästa steg
-Mer om [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)  
 [Anpassa x-axeln och y-axeln](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Anpassa färger och axelegenskaper](service-getting-started-with-color-formatting-and-axis-properties.md)  
 [Power BI – grundläggande begrepp](service-basic-concepts.md)  

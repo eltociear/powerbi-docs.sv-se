@@ -1,5 +1,5 @@
 ---
-title: "Fästa en hel rapportsida på en Power BI-instrumentpanel "
+title: "Hur du fäster en hel rapportsida på en Power BI-instrumentpanel "
 description: "Dokumentation om hur du kan fästa en hel liverapportsida på en Power BI-instrumentpanel från en rapport."
 services: powerbi
 documentationcenter: 
@@ -16,16 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: ee8e7541db7f40a5d01607c6551ee734eb9f3d5b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8174a3043d544191032ec65e3b9a1710547b18ab
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fästa en hel rapportsida, som en levande panel, på en Power BI-instrumentpanel
-Ett annat sätt att lägga till en ny [instrumentpanelspanel](service-dashboard-tiles.md) är genom att fästa en rapportsida.  Detta är ett enkelt sätt att fästa flera visualiseringar åt gången.  När du fäster en hel sida är panelerna dessutom *live*. Du kan interagera med dem direkt på instrumentpanelen. Ändringar du gör i någon av visualiseringarna i rapportredigeraren, om du till exempel lägger till ett filter eller ändrar fälten som används i diagrammet, visas då även på instrumentpanelen.  
+Ett annat sätt att lägga till en ny [instrumentpanelspanel](service-dashboard-tiles.md) är genom att fästa en rapportsida. Detta är ett enkelt sätt att fästa flera visualiseringar åt gången.  När du fäster en hel sida är panelerna dessutom *live*. Du kan interagera med dem direkt på instrumentpanelen. Ändringar du gör i någon av visualiseringarna i rapportredigeraren, om du till exempel lägger till ett filter eller ändrar fälten som används i diagrammet, visas då även på instrumentpanelen.  
+
+Att fästa levande brickor från rapporter till instrumentpaneler är endast tillgänglig i Power BI-tjänsten (app.powerbi.com).
 
 > [!NOTE]
 > Du kan fästa paneler från rapporter som delas med dig.
@@ -59,5 +61,5 @@ Se hur Amanda fäster en liverapportsida på en instrumentpanel och följ sedan 
 ## <a name="next-steps"></a>Nästa steg
 [Instrumentpaneler i Power BI](service-dashboards.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

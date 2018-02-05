@@ -3,7 +3,7 @@ title: Installera Power BI-rapportserver
 description: "Läs mer om att installera Power BI-rapportserver. "
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/08/2017
+ms.date: 01/29/2018
 ms.author: maghan
-ms.openlocfilehash: 93a91ae70a43281f9a30292adb8bcdffb3033223
-ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
+ms.openlocfilehash: 340e4a79e4ab0950143ea1af4f1c9a1f9c54b64c
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
@@ -29,7 +29,9 @@ Läs mer om att installera Power BI-rapportserver.
 
  **Hämta** ![hämta](media/install-report-server/download.png "hämta")
 
-Om du vill hämta Power BI-rapportservern, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). För Power BI Desktop optimerad för Power BI-rapportservern, går du till [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581).
+Om du vill hämta Power BI-rapportservern, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). 
+
+Gå till Microsoft Download Center för att hämta [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (optimerad för Power BI-rapportserver – oktober 2017).
 
 ![tips](media/install-report-server/fyi-tip.png "tips") För aktuell viktig information, se [Power BI-rapportserver – viktig information](release-notes.md).
 

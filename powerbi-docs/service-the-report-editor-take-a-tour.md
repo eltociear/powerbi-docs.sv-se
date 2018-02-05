@@ -1,5 +1,5 @@
 ---
-title: Rapportredigeraren... Ta en rundtur
+title: "Snabbstart – Rapportredigeraren ... Ta en rundtur"
 description: Rapportredigeraren... Ta en rundtur.
 services: powerbi
 documentationcenter: 
@@ -16,20 +16,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/23/2018
 ms.author: mihart
-ms.openlocfilehash: e5ee6db22fe0fa7fd1e61ebbfb7dbee9d3458159
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8ecee2c5de9959937b5afa56cdf5b3679c5b9a5e
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapportredigeraren... Ta en rundtur
+## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigera rapporter i Power BI-tjänsten och Power BI Desktop
 Rapportredigeraren i Power BI-tjänsten och rapportredigeraren i Power BI Desktop liknar varandra mycket. Videon visar rapportredigeraren i Power BI Desktop och den här artikeln beskriver rapportredigeraren i Power BI-tjänsten. 
+
+## <a name="the-difference-between-report-creators-and-report-consumers"></a>Skillnaden mellan rapport*skapare* och rapport*konsumenter*
+Möjligheten att skapa och redigera en rapport är begränsad till rapportens ägare (aka *skapare*). Om du *konsumerar* en rapport som har delats med dig kommer du fortfarande att kunna öppna och interagera med rapporten i Power BI-tjänsten [Endast läsvy](service-reading-view-and-editing-view.md), men kommer inte att ha alla stabila och omfattande funktioner som är tillgängliga för rapportskaparen.  
+
+Mer information om rapportens läsvy finns i [Läsvyn och Redigeringsvyn i Power BI-tjänsten](service-reading-view-and-editing-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-I Power BI-tjänsten är *rapportredigeraren* endast tillgänglig i [redigeringsvyn](service-reading-view-and-editing-view.md). Om du vill öppna en rapport i redigeringsvyn måste du vara rapportägare.
+I Power BI-tjänsten är *rapportredigeraren* endast tillgänglig i [redigeringsvyn](service-reading-view-and-editing-view.md). Om du vill öppna en rapport i redigeringsvyn måste du vara rapportägare eller -skapare.
 
 Power BI-Rapportredigeraren består av 3 delar:  
 
@@ -87,7 +93,9 @@ Med fönstret Analytics i Power BI-tjänsten kan du lägga till dynamiska refere
 
 - - -
 ## <a name="the-filters-pane"></a>Fönstret Filter
-Visa, ange och ändra filter för sida, rapport, detaljinformation och visuell nivå.
+Använd fönstret Filter för att visa, ange och ändra beständiga filter för rapporten på sidan, rapporten, visningen av detaljerad information och visuell nivå. Ja, du kan göra ad hoc-filtrering på rapportsidor och visuell information genom att välja element av den visuella informationen eller med hjälp av verktyg som utsnitt, men genom att använda fönstret Filter sparas tillståndet för filtren i rapporten. 
+
+Fönstret Filter har en andra kraftfull funktion – möjlighet att filtrera med ett fält ***som inte redan används i en av visualiseringarna i rapporten***. Låt mig förklara. När du skapar en rapportsida, lägger Power BI automatiskt till alla fält som du använder i din visuella information till filterområdet för visuell information i fönstret Filter.  Men om du vill ange ett filter för visuell information, sida, visning av detaljerad information eller rapport som för närvarande använder ett fält som inte används i en visualisering, bara dra det till ett av filtrets buckets.   
 
 ![](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
@@ -125,13 +133,9 @@ Rapportarbetsytan är den plats där arbetet visas. När du använder fönstren 
 ## <a name="next-steps"></a>Nästa steg:
 [Skapa en rapport](service-report-create-new.md)
 
-[Redigera en rapport](service-interact-with-a-report-in-editing-view.md)
-
-Läs mer om [rapporter i Power BI](service-reports.md)
-
-[Kom igång med Power BI](service-get-started.md)
+Läs mer om rapporter i [Power BI-tjänsten](service-reports.md), [Power BI Desktop](desktop-report-view.md) och [Power BI Mobile](mobile-apps-view-phone-report.md).
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

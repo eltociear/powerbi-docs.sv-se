@@ -15,16 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/23/2018
 ms.author: mihart
-ms.openlocfilehash: 2b3f25c772a049d10bc03941db677c67c844da8b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 40d6ee1f1448856b444201532caffd4b8c904c85
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report-tutorial"></a>Del 2, Lägga till visualiseringar i en Power BI-rapport (självstudier)
 I [del 1](power-bi-report-add-visualizations-ii.md) skapade du en grundläggande visualisering genom att markera kryssrutorna bredvid fältnamnen.  I del 2 får du lära dig hur du använder dra och släpp och drar nytta av panelerna **Fält** och **Visualiseringar** för att skapa och modifiera visualiseringar.
+
+### <a name="prerequisites"></a>Förutsättningar
+- [Del 1](power-bi-report-add-visualizations-ii.md)
+- Power BI-tjänsten – visualiseringar kan läggas till i rapporter med Power BI-tjänsten eller Power BI Desktop. Den här självstudien använder Power BI-tjänsten. 
+- Exempel på detaljhandelsanalys
 
 ## <a name="create-a-new-visualization"></a>Skapa en ny visualisering
 I de här självstudierna tar vi hjälp av vår Retail Analysis-datauppsättning för att skapa några viktiga visualiseringar.
@@ -64,7 +69,6 @@ I de här självstudierna tar vi hjälp av vår Retail Analysis-datauppsättning
 ## <a name="next-steps"></a>Nästa steg
 * Mer information om fältpanelen finns i [Rapportredigeraren... ta en rundtur](service-the-report-editor-take-a-tour.md).   
 * Information om hur du filtrerar och markerar dina visualiseringar finns i [Filter och markeringar i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md).  
-* Du kan läsa mer om hur du använder och ändrar aggregeringar i [Aggregeringar i rapporter](service-aggregates.md).  
 * Du hittar mer i [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md).  
-* Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: 2c15cf503a7c66a3b89e45cc338ee5174e5f24e7
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+ms.openlocfilehash: 1f1db890a9fea9c53575f9b5a263400d6b883693
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="filled-maps-choropleths-in-power-bi-tutorial"></a>Fyllda kartor (koropletkartor) i Power BI (självstudier)
 En fylld karta använder skuggning, toning eller mönster för att visa hur ett värde skiljer sig åt proportionellt på en geografisk plats eller i en region.  Du kan snabbt visa dessa relativa skillnader med skuggning som sträcker sig från ljus (mindre ofta/lägre) till mörk (mer frekvent/fler).    
@@ -49,6 +49,12 @@ Fyllda kartor är ett bra alternativ:
 * när definierade regioner är viktiga,
 * för att få en översikt över distributionen på flera geografiska platser.
 
+### <a name="prerequisites"></a>Förutsättningar
+- Power BI-tjänsten eller Power BI Desktop
+- Exempel på försäljning och marknadsföring
+
+Om du vill följa med använder vi självstudiekursen Power BI-tjänsten och inte Power BI Desktop.
+
 ## <a name="create-a-basic-filled-map"></a>Skapa en grundläggande fylld karta
 I det här videoklippet skapar Kim en grundläggande karta och konverterar den till en fylld karta.
 
@@ -56,27 +62,27 @@ I det här videoklippet skapar Kim en grundläggande karta och konverterar den t
 
 
 1. För att skapa en egen fylld karta [hämtar du försäljnings- och marknadsföringsexemplet](sample-datasets.md) genom att logga in till Power BI och välja **Hämta data \>Exempel \> Försäljning och marknadsföring \> Anslut**.
-2. När det positiva meddelandet visas, väljer du **Visa datauppsättning**. 
-   
+2. När det positiva meddelandet visas, väljer du **Visa datauppsättning**.
+
    ![](media/power-bi-visualization-filled-maps-choropleths/power-bi-view-dataset.png)
 3. Power BI öppnar en tom rapportarbetsyta i [Redigeringsvy](service-interact-with-a-report-in-editing-view.md).
-   
+
     ![](media/power-bi-visualization-filled-maps-choropleths/power-bi-blank-canvas.png)
 4. Fönstret fält, Välj den **Geo** \> **tillstånd** fältet.    
-   
+
    ![](media/power-bi-visualization-filled-maps-choropleths/img002.png)
 5. [Konvertera diagrammet](power-bi-report-change-visualization-type.md) till en fylld karta. Observera att **Stat** nu befinner sig i **platsområdet**. Bing Maps använder fältet i **platsområdet** för att skapa kartan.  Platsen kan vara många olika giltiga platser: länder, stater, regioner, orter, postnummer och andra postkoder och så vidare. Bing Maps tillhandahåller figurer för platser runt om i världen. Power BI kan inte skapa den fyllda kartan utan en giltig post i platsområdet.  
-   
+
    ![](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 6. Filtrera kartan för att visa endast kontinentala USA.
-   
+
    a.  Längst ned i visualiseringsfönstret hittar du området **Filter**.
-   
+
    b.  Hovra över **Stat** och klicka för att expandera sparren.  
    ![](media/power-bi-visualization-filled-maps-choropleths/img004.png)
-   
+
    c.  Sätt en bock bredvid **Alla** och ta bort bocken bredvid **AK**.
-   
+
    ![](media/power-bi-visualization-filled-maps-choropleths/img005.png)
 7. Välj **SalesFact (Säljfakta)** \> **Sentiment** för att lägga till den till området **Färgmättnad**. Fältet i området **Färgmättnad** styr kartskuggningen.  
    ![](media/power-bi-visualization-filled-maps-choropleths/power-bi-color-saturation.png)
@@ -87,9 +93,9 @@ I det här videoklippet skapar Kim en grundläggande karta och konverterar den t
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
 Information om hur du använder fönstret Filter finns i [Lägga till ett filter i en rapport](power-bi-report-add-filter.md).
 
-Om du markerar en plats i en fylld karta korsfiltreras de övriga visualiseringarna på rapportsidan, och vice versa. 
+Om du markerar en plats i en fylld karta korsfiltreras de övriga visualiseringarna på rapportsidan, och vice versa.
 
-Om du vill göra detta kan du kopiera och klistra in din fyllda karta på sidan **Sentiment** i rapporten *Försäljning och marknadsföring*. 
+Om du vill göra detta kan du kopiera och klistra in din fyllda karta på sidan **Sentiment** i rapporten *Försäljning och marknadsföring*.
 
 1. Välj en stat på den fyllda kartan.  Detta markerar de övriga visualiseringarna på sidan. Om jag t.ex. väljer **Texas** ser jag att sentimenten är 74 , att Texas ligger i centraldistrikt \#23 och att den största delen av försäljningsvolymen kommer från segmenten Moderation (Moderering) och Convenience (Bekvämlighet).   
    ![](media/power-bi-visualization-filled-maps-choropleths/img008.png)
@@ -98,7 +104,7 @@ Om du vill göra detta kan du kopiera och klistra in din fyllda karta på sidan 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Kartdata kan vara tvetydiga.  Till exempel finns det ett Paris i Frankrike, men också i Texas. Dina geografiska data lagras sannolikt i separata kolumner – en kolumn för stadsnamn, en kolumn för stats- eller regionnamn och så vidare – så Bing kan förmodligen inte avgöra skillnaden mellan de två olika Paris. Om din datauppsättning redan innehåller data för latitud och longitud, har Power BI speciella fält för att hjälpa till att göra dina kartdata entydiga. Du behöver bara dra fältet som innehåller dina latituddata till området Visualiseringar \> Latitud.  Gör sedan samma sak för dina longituddata.  
-![](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png) 
+![](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
 
 Titta på den här videon för hjälp med tvetydigheter beträffande kartdata om du har behörighet att redigera datauppsättningen i Power BI Desktop.
 
@@ -114,4 +120,3 @@ Mer hjälp med kartvisualiseringar finns i [Tips and tricks for map visualizatio
  [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Ändra typen av använd visualisering](power-bi-report-change-visualization-type.md)      
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

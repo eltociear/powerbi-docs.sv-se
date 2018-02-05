@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: a707a7b590804d24d60d17590408afbdf8f81f4c
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: ef2e89ba2bac451ce0230829bbf4aa0b60713899
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Vanliga frågeuppgifter i Power BI Desktop
 När du arbetar i fönstret **Frågeredigeraren** i Power BI Desktop finns det några återkommande uppgifter. I det här dokumentet får du exempel på dessa återkommande uppgifter och länkar med ytterligare information. 
@@ -69,7 +69,7 @@ Andra dataanslutningar är av liknande slag. Om autentisering krävs för att g�
 En stegvis demonstration av hur man ansluter till data i Power BI Desktop finns i [Anslut till Data i Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635).
 
 ## <a name="shape-and-combine-data"></a>Forma och kombinera data
-Du kan enkelt forma och kombinera data med Frågeredigeraren. Det här avsnittet innehåller några exempel på hur du kan forma data. En mer fullständig demonstration av hur du kan forma och kombinera data finns i ***[Forma och kombinera Data med Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644).
+Du kan enkelt forma och kombinera data med Frågeredigeraren. Det här avsnittet innehåller några exempel på hur du kan forma data. En mer fullständig demonstration av hur du kan forma och kombinera data finns i **[Forma och kombinera Data med Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)**.
 
 I det förra avsnittet anslöt vi till två datauppsättningar – en Excel-arbetsbok och en webbresurs. Efter inläsningen i Frågeredigeraren visas följande, med frågan från den valda webbsidan (från de tillgängliga frågor som visas i rutan **Frågor** längst till vänster i Frågeredigerarens fönster).
 

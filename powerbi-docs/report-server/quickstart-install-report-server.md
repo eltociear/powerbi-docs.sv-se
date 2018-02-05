@@ -3,7 +3,7 @@ title: 'Snabbstart: Installera Power BI-rapportserver'
 description: "Det går mycket snabbt att installera Power BI-rapportservern. Att hämta, installera och konfigurera tar bara några minuter."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/28/2017
+ms.date: 01/29/2018
 ms.author: maghan
-ms.openlocfilehash: 934b4d3f2da44a161cd76d14c9f042aaf697f26d
-ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
+ms.openlocfilehash: 3ddf8870fd4fb3186ff884220fc4a7de7632c78d
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="quickstart-install-power-bi-report-server"></a>Snabbstart: Installera Power BI-rapportserver
 Det går mycket snabbt att installera Power BI-rapportservern. Att hämta, installera och konfigurera tar bara några minuter.
@@ -30,7 +30,9 @@ Det här är en snabbtitt på hur du installerar en rapportserver om du bara vil
 
  **Hämta** ![hämta](media/quickstart-install-report-server/download.png "hämta")
 
-Om du vill hämta Power BI-rapportservern, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). För Power BI Desktop optimerad för Power BI-rapportservern, går du till [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581).
+Om du vill hämta Power BI-rapportservern, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). 
+
+Gå till Microsoft Download Center för att hämta [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (optimerad för Power BI-rapportserver – oktober 2017).
 
 ![tips](media/quickstart-install-report-server/fyi-tip.png "tips") För aktuell viktig information, se [Power BI-rapportserver – viktig information](release-notes.md).
 

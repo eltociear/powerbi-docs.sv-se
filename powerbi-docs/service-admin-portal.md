@@ -3,7 +3,7 @@ title: "Power BI-administratörsportalen"
 description: "I administratörsportalen kan Power BI-klienterna i din organisation hanteras. Den innehåller sådant som användningsstatistik för åtkomst till Office 365-administrationscenter och inställningar."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
-ms.author: asaxton
-ms.openlocfilehash: d831363d6afa88aa94d78776f59f81ba8ba96299
-ms.sourcegitcommit: 85302d577895e779466df55aa02e5785ab2e3138
+ms.date: 01/02/2018
+ms.author: maghan
+ms.openlocfilehash: 36f2b591f53e7d9e930048cdedde114348466147
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -150,7 +150,7 @@ Användare i organisationen kan publicera rapporter på webben. [Läs mer](servi
 
 Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen publicera på webben är.
 
-|Funktion |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
+|Visning av aktuellt objekt |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
 |**Publicera på webben** under rapportens **Fil**meny.|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
 |**Hantera inbäddade koder** under **Inställningar**|Aktiverad för alla|Aktiverad för alla|Aktiverad för alla<br><br>Alternativet * **Ta bort** endast för behöriga användare eller grupper.<br>* **Hämta koder** aktiverat för alla.|
@@ -209,6 +209,16 @@ Användare i organisationen kan använda Excel för att visa och interagera med 
 ### <a name="user-arcgis-maps-for-power-bi-preview"></a>ArcGIS-användarmappning för Power BI (förhandsgranskning)
 
 Användare i organisationen kan använda ArcGIS-mappning för Power BI-visualiseringen (förhandsgranskning) som tillhandahålls av Esri. [Läs mer](power-bi-visualization-arcgis.md)
+
+
+## <a name="custom-visuals-settings"></a>Inställningar för anpassade visuella objekt
+### <a name="enable-custom-visuals-for-the-entire-organization"></a>Aktivera anpassad visuell information för hela organisationen
+Användare i organisationen kan interagera med och dela anpassad visuell information. [Läs mer](power-bi-custom-visuals.md)
+
+![Inställningar för anpassade visuella objekt](media/service-admin-portal/powerbi-admin-custom-visuals.png)
+
+> [!NOTE]
+> Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
 
 ## <a name="r-visuals-settings"></a>Inställningar för R-visualisering
 

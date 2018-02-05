@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/20/2018
+ms.date: 01/24/2018
 ms.author: mihart
-ms.openlocfilehash: 259007c76b7b53ba0ea55a28fbdd189469383364
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+ms.openlocfilehash: 7c0bd2f342385f71fd91bb81a284ef41deb46169
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exportera en rapport från Power BI-tjänsten till skrivbordet (förhandsgranskning)
 I Power BI Desktop kan du exportera (kallas även *hämta*) en rapport till Power BI-tjänsten genom att spara rapporten och välja **Publicera**. Du kan även exportera i omvänd ordning samt och ladda ned en rapport från Power BI-tjänsten till skrivbordet. Filnamnstillägget för filer som exporteras i endera riktningen är *.pbix*.
@@ -37,7 +37,7 @@ Hämta .pbx-filen genom att följa dessa steg:
 2. Välj **Arkiv > Hämta rapport** på menyraden.
    
    > [!NOTE]
-   > Rapporten måste ha [skapats med Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) efter den 23 November 2016 – eller ha uppdaterats sedan dess – för att du ska kunna hämta rapporten. Om så inte är fallet är menyalternativet *Ladda ned rapport* i Power BI-tjänsten nedtonat.
+   > Rapporten måste ha [skapats med Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) efter den 23 november 2016, och ha uppdaterats sedan dess, för att du ska kunna hämta rapporten. Om så inte är fallet är menyalternativet *Ladda ned rapport* i Power BI-tjänsten nedtonat.
    > 
    > 
 3. Medan .pbx-filen skapas, visas förloppet i en statusbanderoll. När filen är klar ombeds du att öppna eller spara .pbx-filen. Filens namn matchar rapportens titel.
@@ -59,7 +59,7 @@ Hämta .pbx-filen genom att följa dessa steg:
 Det finns några viktiga överväganden och begränsningar att ta hänsyn till när man hämtar (exporterar) en *.pbix*-fil från Power BI-tjänsten.
 
 * Du måste ha redigeringsåtkomst till rapporten för att kunna hämta filen
-* Rapporten måste ha sitt ursprung i **Power BI Desktop** och *publicerats* till **Power BI-tjänsten**, eller så måste .pbix-filen ha *laddats upp* till tjänsten.
+* Rapporten måste ha skapats med **Power BI Desktop** och *publicerats* till **Power BI-tjänsten**, eller så måste .pbix-filen ha *laddats upp* till tjänsten.
 * Rapporter måste ha publicerats eller uppdaterats efter den 23 november 2016. Rapporter som publicerats tidigare än så kan inte hämtas.
 * Den här funktionen fungerar inte med rapporter som ursprungligen skapades i **Power BI-tjänsten**, inklusive innehållspaket.
 * Du bör alltid använda den senaste versionen av **Power BI Desktop** när du öppnar filer som hämtats. Hämtade *.pbix*.filer öppnas inte i gamla versioner av **Power BI Desktop**.

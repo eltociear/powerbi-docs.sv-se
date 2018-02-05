@@ -1,27 +1,7 @@
----
-title: Forma och kombinera data i Power BI Desktop
-description: Forma och kombinera data i Power BI Desktop
-services: powerbi
-documentationcenter: 
-author: davidiseminger
-manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
-ms.author: davidi
-ms.openlocfilehash: bb4f910f0ac6240ed2dab987a7076b3f996b86fe
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+--rubrik: Forma och kombinera data i Power BI Desktop-beskrivning: Forma och kombinera data i Power BI Desktop-tjänster: powerbi documentationcenter: '' author: davidiseminger manager: kfile backup: '' editor: '' tags: '' qualityfocus: no qualitydate: ''''
+
+ms.service: powerbi ms.devlang: NA ms.topic: article ms.tgt_pltfrm: NA ms.workload: powerbi ms.date: 01/30/2018 ms.author: davidi
+
 ---
 # <a name="shape-and-combine-data-in-power-bi-desktop"></a>Forma och kombinera data i Power BI Desktop
 Med **Power BI Desktop** kan du ansluta till flera olika typer av datakällor och sedan forma data efter dina behov. *Formatera* data innebär att du omvandlar data – till exempel byter namn på kolumner eller tabeller, ändrar text till tal, tar bort rader, anger den första raden som rubrik och så vidare. *Kombinera* data innebär att kopplar till två eller flera datakällor, formar dem efter behov och sammanfogar dem i en användbar fråga.
@@ -119,9 +99,9 @@ Du kan enkelt ändra tabellnamnet: i rutan **frågeinställningar** under **Egen
 Okej, nu har vi format dessa data efter våra behov. Nu ska vi ansluta till en annan datakälla och kombinera data.
 
 ## <a name="combine-data"></a>Kombinera data
-Våra data om olika delstater är intressanta och är användbara för att skapa mer analysverktyg och -frågor. Men det finns ett problem: de flesta data använder två bokstäver för delstatskoder inte det fullständiga namnet på delstaten. Vi behöver hitta ett sätt att associera delstatsnamn med deras förkortningar.
+Våra data om olika delstater är intressanta och kommer vara användbara för att skapa mer analysverktyg och -frågor. Men det finns ett problem: de flesta data använder en tvåbokstavsförkortning för delstatskoder, inte det fullständiga namnet på delstaten. Vi behöver hitta ett sätt att associera delstatsnamn med deras förkortningar.
 
-Vi har tur: det finns en annan offentlig datakälla som gör just detta, men du måste forma en hel del innan vi kan ansluta det till vår pensioneringstabell. Här är webbresursen för delstatsförkortningar:
+Vi har tur: det finns en annan offentlig datakälla som gör just detta, men den måste formas en hel del innan vi kan ansluta den till vår pensionstabell. Här är webbresursen för delstatsförkortningar:
 
 <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
@@ -176,7 +156,7 @@ Nu när vi har format tabellen Delstatskoder kan vi kombinera de två tabellerna
 
 Det finns två sätt att kombinera frågor – *sammanslagning* och *bifoga*.
 
-När du har en eller flera kolumner som du vill lägga till i en annan fråga kan du **slå samman** frågorna. När du har ytterligare rader med data som du vill lägga till en befintlig fråga kan du **bifoga** frågan.
+När du har en eller flera kolumner som du vill lägga till i en annan fråga kan du **sammanfoga** frågorna. När du har ytterligare rader med data som du vill lägga till en befintlig fråga kan du **bifoga** frågan.
 
 I det här fallet vill vi slå samman frågor. För att komma igång väljer du frågan i frågeredigeraren *där du vill* att den andra frågan ska sammanfogas, i det här fallet *Pensionsstatistik*. Välj sedan **Kombinera \> Sammanfoga frågor** från fliken **Start** på menyfliksområdet.
 
@@ -190,7 +170,7 @@ Därefter visas fönstret **Sammanfoga**, där vi kan välja vilken tabell som v
 
 ![](media/desktop-shape-and-combine-data/shapecombine_merge.png)
 
-En **NyKolumn** skapas i slutet av frågan, vilket är innehållet i tabellen (frågan) som har slagits samman med den befintliga frågan. Alla kolumner från den sammanfogade frågan ryms i **NyKolumn**, men du kan välja att **Expandera** tabellen inkludera alla kolumner du vill.
+En **NewColumn** skapas i slutet av frågan, vilket är innehållet för tabellen (frågan) som har sammanfogats med den befintliga frågan. Alla kolumner från den sammanfogade frågan ryms i **NyKolumn**, men du kan välja att **Expandera** tabellen inkludera alla kolumner du vill.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 

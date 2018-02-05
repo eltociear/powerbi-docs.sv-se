@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 03c5afae78e1688cadfdef9c0a96ca9f24247e12
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 0723b3a7155626f875044fa813a522ef6d4923df
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="tutorial-analyzing-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Analysera försäljningsdata från Excel och en OData-feed
 Med **Power BI Desktop** kan du ansluta till alla typer av datakällor och sedan kombinera och forma dem på ett sätt som gör det lättare att skapa intressant dataanalys och visualiseringar. I den här kursen lär du dig hur du kombinerar data från två datakällor. 
@@ -140,7 +140,7 @@ Beräkna den totala raden för varje **beställnings\_information**-rad:
 
 ### <a name="step-5-set-the-datatype-of-the-linetotal-field"></a>Steg 5: Ange datatyp för fältet LineTotal
 1. Högerklicka på kolumnen **LineTotal**.
-2. Välj **Ändra typ** och välj **Decimalnummer.
+2. Välj **Ändra typ** och välj **Decimalnummer**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
@@ -229,6 +229,5 @@ När du utför de här stegen bör du ha en försäljningsrapport som kombinerar
 * [Se Power BI Desktop-videor](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Besök Power BI-forumet](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Läs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
-
 
 

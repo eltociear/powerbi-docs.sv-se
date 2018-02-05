@@ -3,7 +3,7 @@ title: "Så här migrerar du innehållspaket från Power BI Embedded till Power 
 description: "Lär dig hur du migrerar från Power BI Embedded till Power BI-tjänsten och utnyttjar nyheterna för inbäddning i appar."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/21/2017
-ms.author: asaxton
-ms.openlocfilehash: 430f1d1a49e510bac66c448b2dceaad1f2537073
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.date: 08/24/2018
+ms.author: maghan
+ms.openlocfilehash: 59d395d11839903108f811ff4a6022ea04cadc8f
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-migrate-power-bi-embedded-workspace-collection-content-to-power-bi"></a>Så här migrerar du innehållspaket från Power BI Embedded till Power BI
 Lär dig hur du migrerar från Power BI Embedded till Power BI-tjänsten och utnyttjar nyheterna för inbäddning i appar.
@@ -174,14 +174,11 @@ I ditt program mappar du användare som du hanterar i programmet till ett Power 
 När du är redo att gå vidare till produktion måste du göra följande.
 
 * Om du använder en separat klient för utveckling, så måste du kontrollera att dina apparbetsytor, tillsammans med instrumentpaneler och rapporter, är tillgängliga i din produktionsmiljö. Du måste också kontrollera att du har skapat programmet i Azure AD för din produktionsklient och tilldelat rätt appbehörigheter, så som beskrivs i steg 1.
-* Köp en kapacitet som passar dina behov. Ta reda på vad du behöver med hjälp av [White paper om kapacitetsplanering av inbäddad analys](https://aka.ms/pbiewhitepaper). När du är redo att köpa kan du göra detta i [administrationscentret för Office 365](https://portal.office.com/adminportal/home#/catalog).
-  
-  > [AZURE.INFORMATION] Information om hur du köper Power BI Premium finns i [Så här köper du Power BI Premium](../service-admin-premium-purchase.md).
-  > 
-  > 
+* Köp en kapacitet som passar dina behov. För att bättre förstå den mängd och typ av kapacitet du behöver, se [Vitbok om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper). Du kan [köpa kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
 * Redigera apparbetsytan och tilldela den till en Premium.kapacitet under Avancerat.
-  
+ 
     ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
+    
 * Distribuera ditt uppdaterade program till produktion och börja bädda in rapporter från Power BI-tjänsten.
 
 ## <a name="after-migration"></a>Efter migreringen

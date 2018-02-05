@@ -1,5 +1,5 @@
 ---
-title: "Fästa en panel på en Power BI-instrumentpanel från Excel"
+title: "Hur du fäster en panel på en Power BI-instrumentpanel från Excel"
 description: "Fäst en panel på en Power BI-instrumentpanel från Excel i OneDrive för företag. Fästa intervall, diagram, tabeller"
 services: powerbi
 documentationcenter: 
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/26/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 855ecbe74fa4bf4ab1b1f81f22f2bab278adddb9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 06edf8aae58dbcf2e22cf5d1ea13bf6350465853
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fästa en panel på en Power BI-instrumentpanel från Excel
 Innan du kan fästa en panel från Excel-arbetsboken, ansluter du arbetsboken till Power BI-tjänsten (app.powerbi.com). Att ansluta en arbetsbok innebär i stort sett att använda en länkad skrivskyddad version av arbetsboken i Power BI-tjänsten för att du ska kunna fästa intervall på instrumentpaneler. Du kan även fästa ett helt kalkylblad på en instrumentpanel.  
@@ -40,13 +40,18 @@ När du väljer **Anslut** visas arbetsboken i Power BI precis som den skulle ha
 Du kan inte redigera din arbetsbok i Power BI. Men om du behöver göra ändringar kan du välja pennikonen på fliken **Arbetsböcker** i arbetsytan och sedan välja att redigera din arbetsbok i Excel Online eller öppna den i Excel på datorn. Alla ändringar du gör sparas i arbetsboken på OneDrive.
 
 1. Ladda upp din arbetsbok till ditt OneDrive för företag.
-2. [Anslut till arbetsboken](service-excel-workbook-files.md) från Power BI.
+2. Från Power BI [anslut till arbetsboken](service-excel-workbook-files.md) genom att välja **Hämta Data > Filer > OneDrive – Business** och gå till den plats där du sparade Excel-filen. Markera filen och välj **Anslut > Anslut**.
+
+   ![](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
+
 3. Arbetsboken läggs till på fliken **Arbetsböcker** på arbetsytan i Power BI.  Ikonen ![](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) visar att det är en Excel-arbetsbok och en gul asterisk visar att den är ny.
    
-    Ändringar som du gör i arbetsboken i Power BI sparas inte och påverkar inte den ursprungliga arbetsboken på OneDrive för företag. Om du sorterar, filtrerar eller ändrar värden i Power BI kommer ändringarna inte att sparas eller fästas. Välj pennikonen för att öppna den i Excel Online om du vill uppdatera arbetsboken. Det kan ta några minuter innan ändringar i arbetsboken i Excel Online uppdateras i panelerna.     
-   
+    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Öppna arbetsboken i Power BI genom att välja arbetsbokens namn.
+
+    Ändringar som du gör i arbetsboken i Power BI sparas inte och påverkar inte den ursprungliga arbetsboken på OneDrive för företag. Om du sorterar, filtrerar eller ändrar värden i Power BI kommer ändringarna inte att sparas eller fästas. Om du behöver göra ändringar som ska sparas, väljer du **Redigera** från det övre högra hörnet för att öppna den för redigering i Excel Online eller Excel. Med ändringar som gjorts på det här sättet kan det ta några minuter att uppdatera paneler på instrumentpanelen.
+   
    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
@@ -59,10 +64,10 @@ Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) ä
 2. Välj fästikonen ![](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png). 
 3. Fäst panelen på en befintlig eller ny instrumentpanel. 
    
-   * Befintlig instrumentpanel: Välj instrumentpanelens namn i listrutan.
+   * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan.
    * Ny instrumentpanel: Skriv instrumentpanelens namn.
    
-   ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+    ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Välj **Fäst**. Genom ett meddelande (nära det övre högra hörnet) får du reda på att området har lagts till som en panel på instrumentpanelen. 
    
     ![](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
@@ -80,6 +85,8 @@ En panel som skapas från en tabell eller pivottabell visar hela tabellen.  Om d
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Visa arbetsboken som är länkad till panelen
 Om du väljer en panel i arbetsboken öppnas den länkade arbetsboken i Power BI. Eftersom arbetsboksfilen finns på ägarens OneDrive för företag, måste du ha läsbehörighet för arbetsboken för att kunna se den. Om du inte har behörighet visas ett felmeddelande.  
 
+ ![](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
+
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Funktioner som inte stöds: Power BI använder Excel Services till att hämta arbetsbokens paneler. Eftersom vissa funktioner från Excel inte stöds i Excel Services REST API, kan de därför inte visas på panelerna i Power BI. Till exempel: Miniatyrdiagram, ikonen Ange villkorsstyrd formatering och tidsutsnitt. En fullständig lista med funktioner som inte stöds finns i [Funktioner som inte stöds i Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
@@ -88,7 +95,5 @@ Funktioner som inte stöds: Power BI använder Excel Services till att hämta ar
 
 [Hämta data från Excel-arbetsböcker](service-excel-workbook-files.md)
 
-[Instrumentpaneler i Power BI](service-dashboards.md)
-
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
