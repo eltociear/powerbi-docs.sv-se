@@ -126,13 +126,13 @@ Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data is
 #### <a name="directquery-dataset--report"></a>DirectQuery-datauppsättning och -rapport
 **Flow**
 
-1. Anropa GET https://api.powerbi.com/v1.0/collections/ {collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources och spara den mottagna anslutningssträngen.
+1. Anropa GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources och spara den mottagna anslutningssträngen.
 2. Anropshämta PBIX API från PaaS-arbetsytan.
 3. Spara PBIX.
 4. Anropsimportera PBIX till SaaS-arbetsytan.
-5. Uppdatera anslutningssträngen genom att anropa - POST https://api.powerbi.com/v1.0/myorg/datasets/ {dataset_id}/Default.SetAllConnections
-6. Hämta GW-ID och datakälls-ID genom att anropa - GET https://api.powerbi.com/v1.0/myorg/datasets/ {dataset_id}/Default.GetBoundGatewayDataSources
-7. Uppdatera användarens autentiseringsuppgifter genom att anropa - PATCH https://api.powerbi.com/v1.0/myorg/gateways/ {gateway_id} /datasources/ {datasource_id}
+5. Uppdatera anslutningssträngen genom att anropa - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
+6. Hämta GW-ID och datakälls-ID genom att anropa - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+7. Uppdatera användarens autentiseringsuppgifter genom att anropa - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Gammal datauppsättning och rapporter
 Dessa är datauppsättningar/rapporter som skapats före oktober 2016. PBIX-hämtningen stöder inte PBIX:er som hämtades före oktober 2016
