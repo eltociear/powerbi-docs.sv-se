@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 12/25/2017
 ms.author: davidi
-ms.openlocfilehash: 268c06569199bc00b28918b46a142942c9e03ba6
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: d3643ae398c037c375c8e67360794047a6f66ed7
+ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -61,7 +61,7 @@ Det finns några begränsningar med att använda **DirectQuery**:
 * Som standard är DAX-uttryck begränsade för mått. Se följande stycke (efter punktlistan) för mer information
 * Det finns en begränsning på 1 miljon rader för att returnera data när du använder **DirectQuery**. Detta påverkar inte aggregeringar och beräkningar som används för att skapa datauppsättningen som returneras med **DirectQuery**, utan endast rader returneras. Du kan till exempel sammanställa 10 miljoner rader med din fråga som körs på datakällan och korrekt returnerar resultat som aggregeringar till Power BI med hjälp av **DirectQuery** så länge data som returneras till Power BI är mindre än 1 miljon rader. Om mer än 1 miljoner rader ska returneras från **DirectQuery** returnerar Power BI ett fel.
 
-För att säkerställa att frågor som skickats till den underliggande datakällan har acceptabel prestanda, gäller begränsningar för mått som standard. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar**, sedan **Inställningar > Alternativ > DirectQuery** och därefter alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
+För att säkerställa att frågor som skickats till den underliggande datakällan har acceptabel prestanda, gäller begränsningar för mått som standard. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar**, följt av **Inställningar > Alternativ > DirectQuery** och därefter alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
 
 ## <a name="important-considerations-when-using-directquery"></a>Att tänka på när du använder DirectQuery
 Följande tre punkter ska beaktas när du använder **DirectQuery**:
