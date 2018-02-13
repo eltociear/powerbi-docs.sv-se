@@ -128,8 +128,6 @@
           href: service-connect-to-azure-consumption-insights.md
         - name: Azure Search
           href: service-connect-to-azure-search.md
-        - name: Azure Security Center
-          href: service-connect-to-azure-security-center.md
         - name: Bing
           href: service-connect-to-bing.md
         - name: Circuit ID
@@ -852,51 +850,51 @@
       items:
         - name: Power BI-appar för mobila enheter
           href: mobile-apps-for-mobile-devices.md
-        - name: Hitta dina instrumentpaneler och rapporter på din mobila enhet
+        - name: 'Hitta instrumentpaneler, rapporter och appar på en mobil enhet'
           href: mobile-apps-find-content-mobile-devices.md
-        - name: Nyheter i mobilappar för Power BI
+        - name: Nyheter i mobilapparna
           href: mobile-whats-new-in-the-mobile-apps.md
     - name: Alla mobilappar
       items:
         - name: Power BI för iOS-appar
           href: mobile-ios-ipad-iphone-apps.md
-        - name: 'Visa lokala rapporter och KPI:er i Power BI-mobilappar'
+        - name: 'Visa lokala rapporter och KPI:er i mobilapparna'
           href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-        - name: Instrumentpaneler för mobilt Power BI
+        - name: Instrumentpaneler i mobilapparna
           href: mobile-apps-view-dashboard.md
-        - name: Rapporter i Power BI-mobilappar
+        - name: Rapporter i mobilapparna
           href: mobile-reports-in-the-mobile-apps.md
         - name: Interagera med paneler i mobilapparna
           href: mobile-tiles-in-the-mobile-apps.md
         - name: Dela en instrumentpanel från Power BI-mobilapparna
           href: mobile-share-dashboard-from-the-mobile-apps.md
-        - name: Favoritobjekt i Power BI-mobilapparna
+        - name: Favoriter i mobilapparna
           href: mobile-apps-favorites.md
-        - name: Hämta Power BI-data från den verkliga världen med mobilappar
+        - name: Hämta verkliga Power BI-data med mobilapparna
           href: mobile-apps-data-in-real-world-context.md
-        - name: Skanna en Power BI QR-kod från din telefon
+        - name: Skanna en QR-kod från telefonen
           href: mobile-apps-qr-code.md
-        - name: Få aviseringar i Power BI-mobilapparna
+        - name: Få aviseringar i mobilapparna
           href: mobile-apps-notification-center.md
-        - name: 'Lägga till anteckningar och dela en panel, en rapport eller ett visuellt objekt i mobilapparna'
+        - name: Kommentera och dela i mobilappar
           href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-        - name: Ställa in dataaviseringar i Power BI-mobilapparna
+        - name: Ställ in dataaviseringar i mobilapparna
           href: mobile-set-data-alerts-in-the-mobile-apps.md
-        - name: Filtrera en rapport efter plats i Power BI-mobilapparna
+        - name: Filtrera en rapport efter plats i mobilapparna
           href: mobile-apps-geographic-filtering.md
         - name: Ställa frågor om dina data i iOS-mobilapparna (självstudier)
           href: mobile-apps-ios-qna.md
         - name: Skapa en djuplänk till en specifik plats
           href: mobile-apps-deep-link-specific-location.md
-        - name: Visa dina data offline i Power BI-mobilapparna
+        - name: Visa dina data offline i mobilapparna
           href: mobile-apps-offline-data.md
-        - name: Visa och interagera med Power BI-rapporter som är optimerade för din telefon
+        - name: Visa och interagera med rapporter som är optimerade för telefonen
           href: mobile-apps-view-phone-report.md
         - name: Konfigurera mobilappar med Intune
           href: service-admin-mobile-intune.md
         - name: Använda OAuth för att ansluta till Reporting Services
           href: mobile-oauth-ssrs.md
-        - name: Språk som stöds i Power BI-mobilapparna
+        - name: Språk som stöds i mobilapparna
           href: mobile-apps-supported-languages.md
     - name: iPad-app (Power BI för iOS)
       items:
@@ -906,9 +904,9 @@
       items:
         - name: Kom igång med Power BI för iOS-appen på en iPhone
           href: mobile-iphone-app-get-started.md
-        - name: Power BI Apple Watch-app
+        - name: Power BI-appen för Apple Watch
           href: mobile-apple-watch.md
-        - name: Skanna en streckkod från Power BI-appen på din iPhone
+        - name: Skanna en streckkod från mobilappen på din iPhone
           href: mobile-apps-scan-barcode-iphone.md
     - name: Power BI-app för Android-telefoner
       items:
@@ -924,7 +922,7 @@
       items:
         - name: Kom igång med Power BI-mobilappen för Windows 10
           href: mobile-windows-10-phone-app-get-started.md
-        - name: 'Se mobila rapporter i Reporting Services och KPI:er på Power BI-mobilappen för Windows 10'
+        - name: 'Se mobila rapporter i Reporting Services och KPI:er på mobilappen för Windows 10'
           href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
         - name: Fäst en Power BI-panel eller instrumentpanel på startskärmen
           href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
@@ -980,8 +978,6 @@
       items:
         - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
           href: service-custom-visuals-getting-started-with-developer-tools.md
-        - name: Granska säkerhet och sekretess för anpassade visuella objekt
-          href: service-custom-visuals-review-for-security-and-privacy.md
         - name: Certifiera ett anpassat visuellt objekt
           href: power-bi-custom-visuals-certified.md
     - name: Skicka data till en instrumentpanel
