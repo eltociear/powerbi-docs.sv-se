@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/19/2017
 ms.author: maghan
-ms.openlocfilehash: 99b6391dc48772e21dd64038699a3365225167eb
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 78be1a631a167a3b32ecb7d884a3428dc6a362b0
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -98,12 +98,6 @@ Du kan också ge användarna åtkomst till din rapport genom att göra följande
 
 2. Dela instrumentpanelen med användare som behöver åtkomst till rapporten. Mer information finns i [Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md).
 
-## <a name="allowing-free-users-access-to-reports"></a>Bevilja åtkomst till rapporter för kostandsfria användare
-
-Användare av den kostnadsfria versionen kan visa rapporter som är inbäddade med Power BI-webbdelen för SharePoint Online. Du ger åtkomst till användare av den kostnadsfria versionen på samma sätt som du gör för Pro-användare, vilket beskrivs i [Bevilja åtkomst till rapporter](#granting-access-to-reports) ovan. Arbetsytan där rapporten finns måste ha Power BI Premium-kapacitet. 
-
-Till exempel, om du har en rapport i en apparbetsyta måste du tilldela apparbetsytan till en Power BI Premium-kapacitet. Du måste även lägga till användare av den kostnadsfria versionen i listan över medlemmar i apparbetsytan.
-
 ## <a name="web-part-settings"></a>Inställningar för webbdel
 
 Nedan visas en beskrivning av de inställningar som kan ställas in för Power BI-webbdelen för SharePoint Online.
@@ -160,5 +154,5 @@ Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lö
 [Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md)  
 [Power BI Premium – vad är det?](service-premium.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/) 
 

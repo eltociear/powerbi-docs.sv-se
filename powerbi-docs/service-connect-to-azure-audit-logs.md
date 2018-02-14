@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/16/2017
+ms.date: 02/06/2018
 ms.author: yshoukry
-ms.openlocfilehash: 9a00183a81e549f873fab53807072b1beeaec7c2
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.openlocfilehash: e71b8d16407dccd559037cfe0aecd8079f62175e
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Ansluta till Azure-granskningsloggar med Power BI
 Du kan analysera och visualisera informationen som lagras i granskningsloggarna med Azure-granskningsloggarnas innehållspaket. Power BI hämtar dina data, skapar en färdig instrumentpanel och sedan rapporter baserade på dessa data.
@@ -59,7 +59,7 @@ Du kan analysera och visualisera informationen som lagras i granskningsloggarna 
 * Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
 
 ## <a name="system-requirements"></a>Systemkrav
-Azure-granskningsloggarnas innehållspaket kräver åtkomst till granskningsloggar i Azure Portal. Du hittar mer information [här](https://azure.microsoft.com/en-us/documentation/articles/insights-debugging-with-events/).
+Azure-granskningsloggarnas innehållspaket kräver åtkomst till granskningsloggar i Azure Portal. Du hittar mer information [här](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
 
 <a name="FindingParams"></a>
 

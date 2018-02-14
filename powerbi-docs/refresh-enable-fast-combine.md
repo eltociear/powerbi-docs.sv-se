@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/06/2018
 ms.author: davidi
-ms.openlocfilehash: 1e68f7df5214e038df8bcd1584acb815c0af98bf
-ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
+ms.openlocfilehash: 5d754dbdd5d52e7a5b123755015e656d9fb2cea2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="disable-privacy-setting-in-power-bi-gateway---personal"></a>Inaktivera sekretessinställningarna i Power BI Gateway – Personal
 > [!NOTE]
@@ -45,7 +45,7 @@ Du kan undvika det här felet kan du aktivera **Snabb kombinering**. **Snabb kom
 > 
 
 ## <a name="what-is-fast-combine"></a>Vad är snabb kombinering?
-Se mer information om sekretessnivåer och snabb kombinering i [Sekretessnivåer](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). Som standard är sekretessnivån inställd på privat, vilket kan leda till ovanstående fel. Det beror på att den privata inställningen isolerar datakällan från andra källor. Ett exempel på var detta kan leda till problem är parameterbaserade frågor som hämtar indata från andra datakällor.
+Se mer information om sekretessnivåer och snabb kombinering i [Sekretessnivåer](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). Som standard är sekretessnivån inställd på privat, vilket kan leda till ovanstående fel. Det beror på att den privata inställningen isolerar datakällan från andra källor. Ett exempel på var detta kan leda till problem är parameterbaserade frågor som hämtar indata från andra datakällor.
 
 När du aktiverar snabb kombinering åsidosätts sekretessinställningen så att körningen kan utföras.
 
@@ -85,7 +85,7 @@ Du kan använda följande steg för att aktivera snabb kombinering som din perso
 
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway (personligt läge) – en ny version av den personliga gatewayen för Power BI](service-gateway-personal-mode.md)
-[Säkerhetsnivåer](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
+[Säkerhetsnivåer](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
 [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

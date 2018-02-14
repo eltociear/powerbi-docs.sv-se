@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 02012b531ba43ec5f17e47f2b273b75ef8b2d9ec
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 72445988ff4080b7c24f09f797f2038b957631ef
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Hantera din datakälla – Analysis Services
 När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda Analysis Services-datakällan antingen för schemalagd uppdatering eller för realtidsanslutningar.
@@ -89,17 +89,6 @@ Du kan klicka på **Lägg till** när allt har fyllts i.  Du kan nu använda den
 Du kan konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast för schemalagd uppdatering. Det gäller inte för realtidsanslutningar. [Läs mer](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
 ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings9.png)
-
-## <a name="get-data-experience-for-analysis-services-in-power-bi-site"></a>”Hämta data” för Analysis Services på Power BI-webbplatsen
-Ett unikt alternativ för Analysis Services är att använda Hämta data direkt i Power BI-tjänsten. Du kan ansluta till en Analysis Services-datakälla i realtid som är konfigurerad i gatewayen utan behov av Power BI Desktop. Ditt konto måste anges på fliken **Användare** för datakällan, under gatewayen, för att det ska visas i listan. Du kan göra följande för att ansluta till datakällan.
-
-1. Välj **Hämta data** i Power BI-tjänsten.
-2. Välj **Databaser**.
-3. Välj **SQL Server Analysis Services** > **Anslut**.
-4. Välj en datakälla från listan. Här visas alla Analysis Services-datakällor som du har åtkomst till.
-5. Välj den modell du vill ansluta till. Välj **Anslut**.
-
-En datauppsättning med serverns namn visas. Du kan nu välja den datauppsättningen och börja skapa rapporter med den. Detta kommer att arbeta mot realtidsdata.
 
 ## <a name="usernames-with-analysis-services"></a>Användarnamn med Analysis Services
 Varje gång en användare interagerar med en rapport ansluten till Analysis Services, skickas det effektiva användarnamnet till gatewayen och sedan vidare till den lokala Analysis Services-servern. Den e-postadress som du loggar in i molnet med, är vad vi skickar till Analysis Services som den effektiva användaren. Detta skickas vidare i anslutningsegenskapen [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). E-postadressen måste matcha en definierad UPN i den lokala Active Directory-domänen. UPN är en egenskap för ett Active Directory-konto. Det Windows-kontot måste sedan vara förekomma i en Analysis Services-roll. Om ingen matchning hittas i Active Directory, lyckas inte inloggningen. [Läs mer](https://msdn.microsoft.com/library/ms677605.aspx)
