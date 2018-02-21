@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 1750fc9bec6de6caf17ff3ae6f514efe050f48f1
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 5ae0ef1ec5b13699f3ae5c502d29529841a7a726
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Rapportvy i Power BI Desktop
 Om du har arbetat med Power BI, vet du hur enkelt det är att skapa rapporter som ger dynamisk perspektiv och insikter om dina data. Power BI har också fler avancerade funktioner i Power BI Desktop. Du kan använda Power BI Desktop för att skapa avancerade frågor, blandade data från flera källor, skapa relationer mellan tabeller och mycket mer.
@@ -62,6 +62,24 @@ Om du vill ta bort en sida klickar du på **X** på sidans flik längst ned i ra
 
 > [!NOTE]
 > Rapporter och visuella objekt går inte att fästa på en instrumentpanel från Power BI Desktop. För att göra det måste du [Publicera från Power BI Desktop](desktop-upload-desktop-files.md) till Power BI-platsen.
-> 
-> 
+
+## <a name="hide-report-pages"></a>Dölja rapportsidor
+
+När du skapar en rapport har du även möjlighet att dölja sidor i den. Detta kan vara användbart om du behöver skapa underliggande data eller visuella objekt i en rapport, men inte vill att dessa sidor ska vara synliga för andra, t.ex. när du skapar tabeller eller stödjande visuella objekt som används på andra rapportsidor. Det finns många andra kreativa orsaker till att du kanske vill skapa en rapportsida och sedan dölja den från en rapport som du vill publicera. 
+
+Det är lätt att dölja en rapportsida. Du högerklickar helt enkelt på rapportsidans flik och väljer **Dölj** på den meny som visas.
+
+![](media/desktop-report-view/report-view_05.png)
+
+Det finns vissa saker du bör tänka på när du döljer en rapportsida:
+
+* Du kan fortfarande se en dold rapportvy i **Power BI Desktop**, även om sidans rubrik är nedtonad. I följande bild döljs sida 4.
+
+    ![](media/desktop-report-view/report-view_06.png)
+
+* Du *kan inte* se en dold rapportsida när du visar rapporten i **Power BI-tjänsten**.
+
+* Att dölja en rapportsida är *inte* en säkerhetsåtgärd. Användare kan fortfarande använda sidan, och dess innehåll är fortfarande tillgängligt när du visar detaljerad information eller använder andra metoder.
+
+* När en sida är dold i visningsläge, så visas inga navigeringspilar.
 

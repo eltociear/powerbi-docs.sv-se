@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 10557146b0b640450779049a30dd8f394686f57a
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 8abb327181af031df508f0629cbc09053a9a7927
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery och SAP Business Warehouse (BW)
 Du kan ansluta till **SAP Business Warehouse (BW)**-datakällor direkt med **DirectQuery**. På grund av SAP BW:s OLAP/flerdimensionella natur så finns det många viktiga skillnader mellan DirectQuery över SAP BW jämfört med relationella källor som SQL Server. Dessa skillnader kan sammanfattas på följande sätt:
@@ -74,13 +74,9 @@ I följande tabell listar alla SAP BW-funktioner som inte stöds fullt ut eller 
 | Attribut |Det går inte att komma åt attributen för en egenskap i Power BI. |
 | Språkinställning för slutanvändare |De nationella inställningar som används för att ansluta till SAP BW anges som en del av anslutningsinformationen och återspeglar in de nationella inställningarna för den slutliga rapportkonsumenten. |
 | Textvariabler |SAP BW låter fältnamn innehålla platshållare för variabler (till exempel ”$YEAR$ faktiska”) som sedan ersätts med det valda värdet. Fältet visas till exempel som ”2016 faktiska” i BEX-verktyg, om året 2016 har valts för variabeln. <br/> <br/> Kolumnnamnet i Power BI ändras inte beroende på variabelvärdet och visas därför som ”$YEAR$ faktiska”.  Kolumnnamnet kan dock sedan ändras i Power BI. |
+| Variabler för kundutgång | Variabler för kundutgång visas inte av det offentliga API:t och stöds därför inte i Power BI. |
+| Karakteristiska strukturer | Alla karakteristiska strukturer i underliggande SAP BW-källa resulterar i en ”explosion” av mått som exponeras i Power BI. Till exempel med två de två måtten Sales och Costs och en karakteristisk struktur som innehåller Budget och Actual, exponeras fyra mått: Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
 
-## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-Följande tabell listar begränsningar i betaversionen av SAP BW-anslutningsappen.
-
-| Begränsning | Beskrivning |
-| --- | --- |
-| Ingen uppdatering |Uppdateringsknappen är inaktiverad och visualiseringar/metadata kan inte uppdateras. |
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om DirectQuery finns i följande resurser:

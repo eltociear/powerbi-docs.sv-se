@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/23/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 2832849d887795c2af0750f01e929045f75c12fe
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+ms.openlocfilehash: 2d82817b5dc29cf9764b5b3645c0409f1bfd80a8
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -63,6 +63,7 @@ Några av de funktioner som är tillgängliga i den kommersiella versionen av **
 * **Power BI för amerikanska myndigheter** är endast tillgängligy som en **Pro**-licens. Alla referenser till kostnadsfria Power BI-licenser i en administrationsportal (eller som användare) körs i ett kommersiellt Power BI-tjänstmoln.
 * **Granskning** – granskning är inte tillgängligt via portalen för Office 365-säkerhet och regelefterlevnad.
 * **Power BI-innehåll i Cortana** – Power BI-resultat visas inte i sökresultat för Cortana. Det inkluderar resultat för ditt Power BI-innehåll (instrumentpaneler, rapporter, appar) samt resultat som visar Cortana-optimerade rapportsidor för specifika nyckelord.
+* **Delning med extern användare** – Delning är tillåtet inom en Power BI-klient, men du kan inte dela med användare utanför din Power BI-klient.
 
 Om du har kostnadsfria **Power BI**-licenser som tilldelats ditt konto, körs dessa konton i en kommersiell version av **Power BI**-tjänsten, och ingår inte i erbjudandet om **Power BI för amerikanska myndigheter**. För dessa kostnadsfria konton kan följande problem uppstå:
 

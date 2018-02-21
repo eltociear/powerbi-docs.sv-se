@@ -15,26 +15,24 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: add95532f645c143aea0f58200f9e3b1467320d0
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 02498ff745a2e06a49ed6064a4f7eefebff305f8
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Använda Analytics-fönstret i Power BI Desktop
-Med fönstret **Analytics** i **Power BI Desktop** kan du lägga till dynamiska *referenslinjer* i visuella objekt och ange fokus för viktiga trender eller analyser. Fönstret **Analytics** finns i området **Visualiseringar** i Power BI Desktop, med start från augusti 2016-versionen (version 2.37.4464.321 eller senare), som visas nedan.
+Med fönstret **Analytics** i **Power BI Desktop** kan du lägga till dynamiska *referenslinjer* i visuella objekt och ange fokus för viktiga trender eller analyser. Fönstret **Analystics** finns i området **Visualiseringar** i Power BI Desktop.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
 
 > [!NOTE]
 > Fönstret **Analytics** visas bara när du markerar ett visuellt objekt på arbetsytan för Power BI Desktop.
-> 
-> 
 
-## <a name="enable-forecasting-preview"></a>Aktivera prognostisering (förhandsversion)
-I september 2016-versionen för **Power BI Desktop** (version 2.39.4526.362 eller senare) kan du också utföra *prognostisering* från fönstret **Analytics**. Du måste aktivera denna förhandsversionsfunktion genom att gå till **Arkiv > Alternativ och inställningar > Alternativ** och sedan välja **Förhandsversionsfunktioner** i det vänstra fönstret. Markera kryssrutan bredvid **Prognostisering** för att aktivera funktionen enligt följande bild. Du måste starta om **Power BI Desktop** för att ändringarna ska börja gälla.
+## <a name="search-within-the-analytics-pane"></a>Söka i fönstret Analytics
+Från och med lanseringen av **Power BI Desktop** i februari 2018 (version 2.55.5010.201 eller senare), kan du söka i fönstret **Analytics**, vilket är en underdel av fönstret **Visualiseringar**. Såsom visas på bilden nedan, visas sökrutan när fönstret **Analytics** är markerat.
 
 ![](media/desktop-analytics-pane/analytics-pane_1b.png)
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: ff29fa49cc3ad1a57ae0d09596b6e0d086b4d349
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 0056fe1d5a2881f1415fe5889ab563a27bb8648d
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Använd det visuella matrisobjektet i Power BI Desktop
 Med det visuella **matris**objektet kan du skapa visuell matrisinformation (kallas ibland också *tabeller*) i **Power BI Desktop**-rapporter och markera flera element i matrisen med andra visuella objekt. Dessutom kan du välja rader, kolumner och även enskilda celler och korsmarkeringar. Matrisen har dessutom stöd för stegvis layout för optimal användning av utrymmet.
@@ -34,6 +34,19 @@ Det finns många funktioner som är kopplade till matrisen och vi ska gå igenom
 > Från och med lanseringen i juli 2017 speglar matriser och tabeller i **Power BI Desktop** formatmallar(inklusive färger) från den kopplade **rapportens tema**. Dessa kanske inte är de färger som du förväntar dig för din matris, vilket kan ändras i konfigurationen för ditt **Rapporttema**. Se [**Använda rapportteman i Power BI Desktop**](desktop-report-themes.md) för mer information om teman.
 > 
 > 
+
+## <a name="understanding-how-power-bi-calculates-totals"></a>Beräkning av summor i Power BI
+
+Innan vi går vidare till hur man använder det visuella **matris**objektet är det viktigt att du förstår hur Power BI beräknar total- och delsummor i tabeller och matriser. När det gäller summa- och delsummarader utvärderas måttet för alla rader i underliggande data – det handlar *inte* bara om att lägga till värdena i de tabellrader som syns eller visas. Detta innebär att du kan stå med andra värden än vad du räknat med i totalsummaraden. 
+
+Ta en titt på följande visuella **matris**objekt. 
+
+![](media/desktop-matrix-visual/matrix-visual_3.png)
+
+I det här exemplet visar varje rad i det visuella **matris**objektet längst till höger *Belopp* för varje kombination säljare/datum. Men eftersom en säljare visas för flera datum kan siffrorna visas mer än en gång. Den korrekta totalsumman för underliggande data och den enkla additionen av de synliga värdena överensstämmer därmed inte. Detta är ett vanligt mönster när det värde som du summerar finns på ”ett”-sidan i ett ett-till-många-samband.
+
+Tänk på att dessa värden, när du arbetar med total- och delsummor, baseras på underliggande data och inte enbart på de värden som visas. 
+
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Använd detaljerad vy i matris
 Det finn sen mängd intressanta aktiviteter som ökar detaljnivån i **matrisen** som inte var tillgängliga tidigare. Detta inkluderar möjligheten att specificera med rader, kolumner och även i enskilda avsnitt och celler. Nu ska vi titta på hur var och en av dessa fungerar.
@@ -144,16 +157,12 @@ Båda metoder ger samma resultat. Om du väljer *avancerade kontroller* visas f�
 
 ![](media/desktop-matrix-visual/matrix-visual_19.png)
 
-## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-Det finns några begränsningar och saker du bör tänka på för den här versionen av det visuella objektet **Matris**.
+## <a name="next-steps"></a>Nästa steg
 
-* Du kan endast ändra detaljnivån för kolumner med högerklickmenyn och det finns ingen indikation på det visuella objektet som visar att du kan ändra detaljnivån för rader eller kolumner
-* Du kan endast expandera alla objekt på en nivå åt gången, snarare än att expandera en kategori i taget
-* **Se poster** kan visas på en meny när du högerklickar på en kolumnrubrik, men funktionen är inte aktiv
-* Det finns för närvarande ingen rad med *totalsumman*
-* Det har ingen verkan att stänga av raden delsummor i den stegvisa layouten
-* Kolumnrubriker kan trunkeras om de inre grupperna har kortare text än den yttersta gruppen
-* Om indraget för den stegvisa layouten ändras bör inte en yttersta gruppens indrag ändras
+Följande artiklar kan också vara av intresse för dig:
 
-Vi kan alltid höra dina synpunkter. Vi håller på att utföra en **undersökning** om **matrisen**, så om du har några minuter uppskattar vi om du genomför [ undersökningen](https://www.instant.ly/s/PYXT1).
+* [Använd stödlinjer och fäst till rutnät i Power BI Desktop-rapporter](desktop-gridlines-snap-to-grid.md)
+* [Datakällor i Power BI Desktop](desktop-data-sources.md)
+* [Datatyper i Power BI Desktop](desktop-data-types.md)
 
+ 

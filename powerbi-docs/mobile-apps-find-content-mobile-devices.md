@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 02/06/2018
 ms.author: maggies
-ms.openlocfilehash: d63ef5ad9ee59901917fb9bf9c28358c9aa542e8
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 23a3fc38b1cf284f79b3515b25ec0396b79fb267
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="find-your-dashboards-reports-and-apps-in-the-power-bi-mobile-apps"></a>Hitta dina instrumentpaneler, rapporter och appar i Power BI-mobilappar
 Gäller för:
@@ -41,7 +41,11 @@ Dina instrumentpaneler, rapporter och appar lagras på olika platser i Power BI-
 5. [Arbetsytor](mobile-apps-find-content-mobile-devices.md#5-workspaces)
 
 ## <a name="1-favorites"></a>1 favoriter
-Samla de instrumentpaneler och appar som du oftast visar genom att tagga dem som favoriter. Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
+Samla de instrumentpaneler, rapporter och appar som du oftast visar genom att tagga dem som favoriter. 
+
+![Favoriter i Power BI-mobilappar](media/mobile-apps-find-content-mobile-devices/power-bi-android-favorites-reports.png)
+
+Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 
 ## <a name="2-report-servers"></a>2 rapportservrar
 Du kan ha anslutningar till en eller flera lokala Power BI-rapportservrar eller SQL Server Reporting Services-servrar. Om du har det så visas KPI:er, Power BI-rapporter och sidnumrerade rapporter på servern här. Om du har gjort någon av dem till favoriter på servern, visas de också i din favoriter-lista. Läs mer om [visa lokala KPI:er och rapporter i Power BI-mobilappar](mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
@@ -65,9 +69,9 @@ I Power BI-mobilappar, kan du visa de appar som du redan har installerat. En app
 I Power BI-tjänsten kan du gå till Microsoft AppSource för att söka efter andra appar, men inte från Power BI-mobilappar. 
 
 ## <a name="4-shared-with-me"></a>4 delat med mig
-Här hittar du instrumentpaneler som kollegor har delat med dig. Du kan filtrera efter ägare av instrumentpanelen eller söka för att hitta det du söker. För delat innehåll som du besöker ofta, är det enklare att favoritmarkera det direkt från **delat med mig** genom att trycka på ellipsen (...).
+Här hittar du instrumentpaneler och rapporter som kollegor har delat med dig. Du kan filtrera efter ägare eller söka för att hitta det du söker. För delat innehåll som du besöker ofta, är det enklare att favoritmarkera det direkt från **Delat med mig** genom att trycka på ellipsen (**...**).
 
-![Ny Power BI-navigering](media/mobile-apps-find-content-mobile-devices/power-bi-mobile-shared-with-me-fave.png)
+![Power BI Delat med mig](media/mobile-apps-find-content-mobile-devices/power-bi-android-shared-fave.png)
 
 ## <a name="5-workspaces"></a>5 arbetsytor
 De kallas även *App-arbetsytor* och är mellanlagringsmiljöer i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) där du kan samarbeta med kollegor för att skapa en samling instrumentpaneler och rapporter. Därefter distribuerar du samlingen som en *app*. 

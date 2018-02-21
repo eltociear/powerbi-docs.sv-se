@@ -1,5 +1,5 @@
 ---
-title: "Använda snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar i Power BI (förhandsgranskning)"
+title: "Använda snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar i Power BI"
 description: "Snabbåtgärder är färdiga DAX-formler som snabbt hanterar vanliga beräkningar"
 services: powerbi
 documentationcenter: 
@@ -15,23 +15,24 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: d0fc21c19a574f096c46c26331df3114e8c46c31
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: ce971f980bf1796bfef8439b1ea260190fb678df
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations-preview"></a>Använd snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar (förhandsgranskning)
-Från och med April 2017 version av **Power BI Desktop** kan du använda **snabbmått** för att snabbt och enkelt utföra vanliga, kraftfulla beräkningar. Ett **snabbmått** kör en uppsättning DAX-kommandon i bakgrunden (du behöver inte skriva DAX – det är klart) som bygger på indata som du anger i en dialogruta. Sedan presenteras resultatet i rapporten. Du kan bästa är att du kan se de DAX-kommandon som körs av snabb måttet och komma igång med eller utöka din egen DAX kunskap.
+# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Använd snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar
+Du kan använda **snabbmått** när du snabbt och enkelt vill utföra vanliga och kraftfulla beräkningar. Ett **snabbmått** kör en uppsättning DAX-kommandon i bakgrunden (du behöver inte skriva DAX – det är klart) som bygger på indata som du anger i en dialogruta. Sedan presenteras resultatet i rapporten. Du kan bästa är att du kan se de DAX-kommandon som körs av snabb måttet och komma igång med eller utöka din egen DAX kunskap.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
 
 Du skapar **snabbmått** genom att högerklicka på ett fält i **fältbrunnen** sedan välja **snabbmått** från menyn som visas. Du kan också högerklicka på ett värde i fältet **Värden** på ett befintligt visuellt objekt (till exempel fältet *Värden* i ett *stapeldiagram*). Det finns många tillgängliga kategorier för beräkningar och sätt att ändra varje beräkningen så att den passar dina behov.
 
-### <a name="enable-the-quick-measures-preview"></a>Aktivera förhandsgranskningen av snabbmått
-Du kan prova den nya funktionen **snabbmått** från och med **april 2017**-versionen av **Power BI Desktop**. Aktivera förhandsversionsfunktionen i **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera sedan kryssrutan bredvid **Snabbmått**. Du måste starta om Power BI Desktop när du har gjort valet.
+### <a name="quick-measures-now-generally-available"></a>Snabbmått är nu allmänt tillgängliga
+
+I och med lanseringen av **Power BI Desktop** i februari 2018 är snabbmått allmänt tillgängliga (inte längre i förhandsversion). Om du använder en tidigare version av **Power BI Desktop** kan du testa funktionen **Snabbmått** i den version av **Power BI Desktop** som släpps i **april 2017** genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och sedan markera kryssrutan vid **Snabbmått**.
 
 ![](media/desktop-quick-measures/quick-measures_02b.png)
 
@@ -56,23 +57,23 @@ När du väljer listrutan visas med en lång lista över tillgängliga **snabbm�
 
 Det finns fem olika grupper av beräkningstyper i snabbmått, var och ett med en samling av beräkningar. Dessa grupper och beräkningar är följande:
 
-* **Aggregera inom en kategori**
+* **Sammanställ per kategori**
   * Genomsnitt inom en kategori
   * Varians inom en kategori
   * Maxvärde inom en kategori
   * Minimivärde inom en kategori
   * Viktat genomsnitt per kategori
-* **Filter och baslinjer**
-  * Filtrerat mått
+* **Filter**
+  * Filtrerat värde
   * Skillnad från baslinje
-  * Procentuell skillnad från baslinje
-  * Summor från nya kategorier
+  * Procentuell skillnad från filtrerat värde
+  * Försäljning från nya kategorier
 * **Tidsintelligens**
   * Summa hittills det här året
   * Summa hittills det här kvartalet
   * Summa hittills den här månaden
-  * Årsvis ändring
-  * Kvartalsvis ändring
+  * Ändring från år till år
+  * Ändring från kvartal till kvartal
   * Förändring månad för månad
   * Rullande medelvärde
 * **Summor**
@@ -85,6 +86,7 @@ Det finns fem olika grupper av beräkningstyper i snabbmått, var och ett med en
   * Multiplikation
   * Division
   * Procentuell skillnad
+  * Korrelationskoefficient
 * **Text**
   * Omdöme i stjärnor
   * Sammanlänkad lista med värden
@@ -136,7 +138,7 @@ Det är som att ha en snabb lärare som svarar omedelbart på hypotetiska frågo
 När måttet är perfekt kan du byta namn efter behov med samma högerklicksmeny.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-Det finns några begränsningar och saker du bör tänka på för den här versionen av **snabbmått**.
+Det finns några begränsningar och saker du bör tänka på.
 
 * **Snabbmått** är endast tillgängliga om du kan ändra modellen, vilket inte är fallet när du arbetar med DirectQuery eller de flesta live-anslutningar (SSAS live-anslutningar stöds, som tidigare förklarats).
 * Måttet som har lagts till i brunnen **Fält** kan användas med alla visuella objekt i rapporten.
@@ -152,8 +154,6 @@ Från och med uppdateringen i oktober 2017 av **Power BI Desktop** kan du använ
 
 ### <a name="additional-information-and-examples"></a>Ytterligare information och exempel
 Vi förväntar oss att behöva tillhandahålla exempel och vägledning för varje beräkning i **snabbmått** beräkningar, så det är värt att återkomma för uppdateringar om den fokuserade artikeln.
-
-Eftersom det är en **Förhandsversions**funktion är vi särskilt intresserade av din feedback och dina idéer.
 
 Har du en idé för ett **snabbmått** som inte redan finns? Toppen! Ta en titt på [den här sidan](https://go.microsoft.com/fwlink/?linkid=842906) och skicka uppslag (och DAX-formler) för **snabbmått** du skulle vilja se i **Power BI Desktop** så kan vi att överväga att lägga till den i den angivna listan över **snabbmått** i en framtida version.
 

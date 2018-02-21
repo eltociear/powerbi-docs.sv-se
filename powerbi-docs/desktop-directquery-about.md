@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 0d6d66016663ed0e12d8f3da854ec1e9f7da7eae
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: ceccf00879d3ac17f907f5dce296bb03bb0227d2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan antingen *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller så kan du ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner, däribland följande avsnitt:
@@ -269,14 +269,21 @@ Tänk på följande när du definierar modellen:
 ### <a name="report-design-guidance"></a>Riktlinjer för rapportdesign
 När du skapar en rapport med en DirectQuery-anslutning måste du tänka på följande:
 
+* **Överväg användning av alternativ för Frågereduktion:** Power BI ger alternativ i rapporten för att skicka färre frågor och för att inaktivera vissa interaktioner som skulle leda till en dålig upplevelse om de resulterande frågorna tar lång tid att köra. Du får åtkomst till alternativen i **Power BI Desktop**, gå till **Fil > Alternativ och inställningar > Alternativ** och välj **Frågereduktion**. 
+
+   ![](media/desktop-directquery-about/directquery-about_03b.png)
+
+    Via kryssrutorna i **Frågereduktion** kan du inaktivera korsmarkering i hela rapporten. Du kan också visa knappen *Tillämpa* vid utsnitts- och/eller filterval där du sedan kan göra många utsnitts- och filterval innan du tillämpar dem, vilket innebär att inga frågor skickas förrän du väljer knappen **Tillämpa** på utsnittet. Dina val kan sedan användas för att filtrera data.
+
+    Dessa alternativ gäller för din rapport medan du använder den i **Power BI Desktop**, samt när användarna använder rapporten i **Power BI-tjänsten**.
+
 * **Använd filter först:** Använd alltid alla tillämpliga filter från början när du skapar ett visuellt objekt. Snarare än att använda TotalSalesAmount och ProductName och sedan filtrera till ett visst år, så använd istället filtret Year redan från början. Detta beror på att varje steg i processen att skapa ett visuellt objekt skickar en fråga, och även om det då är möjligt att göra ytterligare en ändring innan den första frågan har slutförts, så innebär detta fortfarande en onödig belastning på den underliggande källan. Om du använder filter tidigt medför det vanligtvis att dessa mellanliggande frågor blir kostnadseffektivare. Om du skulle undlåta att använda dessa filter tidigt, så kan det dessutom leda till att når gränsen på 1 miljon rader.
 * **Begränsa antalet visuella objekt på en sida:** När en sida öppnas (eller vissa sidnivåutsnitt eller filter har ändrats) så uppdateras alla visuella objekt på en sida. Det finns också en gräns för hur många frågor som kan skickas parallellt, och i takt med att antalet visuella objekt ökar, så uppdateras vissa visuella objekt seriellt, vilket ökar den tid det tar att uppdatera hela sidan. Av det skälet rekommenderar vi att du begränsar antalet visuella objekt på en enda sida, och istället har fler, och enklare, sidor.
 * **Överväg att stänga av interaktion mellan visuella objekt:** Som standard kan visualiseringar på en rapportsida användas för korsfilter och korsmarkeringar i andra visualiseringar på sidan. Om du t.ex. har valt ”1999” i cirkeldiagrammet, så korsmarkeras stapeldiagrammet så att försäljningen per kategori 1999 visas.                                                                  
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  Denna interaktion kan dock kontrolleras så som beskrivs [i den här artikeln](service-reports-visual-interactions.md). I DirectQuery kräver sådan korsfiltrering och korsmarkering att frågorna skickas till den underliggande källan. Det innebär att interaktionen bör stängas av om den tid det tar att svara på användarnas val skulle visa sig bli orimligt lång.
-* **Överväg att enbart dela rapporten:** Det finns olika sätt att dela innehållet efter publiceringen i **Power BI-tjänsten**. När det gäller DirectQuery rekommenderar vi att endast den färdiga rapporten delas, snarare än att låta andra användare skapa nya rapporter (och eventuellt stöta på prestandaproblem för de specifika visuella objekt som de skapar).
+  I DirectQuery kräver sådan korsfiltrering och korsmarkering att frågorna skickas till den underliggande källan. Det innebär att interaktionen bör stängas av om den tid det tar att svara på användarnas val skulle visa sig bli orimligt lång. Interaktionen kan emellertid stängas av, antingen för hela rapporten (såsom beskrivs ovan för *Alternativ för frågereduktion*), eller på grundval av fall som beskrivs [i den här artikeln](service-reports-visual-interactions.md).
 
 Utöver listan över förslag ovan, så tänk på att följande rapportfunktioner kan orsaka prestandaproblem:
 
@@ -294,6 +301,8 @@ Utöver listan över förslag ovan, så tänk på att följande rapportfunktione
 * **Medianvärdet:** Normalt skickas alla aggregeringar (Sum, Count Distinct osv) till den underliggande källan. Men detta gäller inte för Median, eftersom den här aggregeringen vanligtvis inte stöds av den underliggande datakällan. I sådana fall hämtas detaljerade data från den underliggande källan och medianvärdet beräknas från de returnerade resultaten. Detta är rimligt när medianvärdet ska beräknas för ett relativt litet antal resultat, men prestandaproblem (eller frågefel som beror på begränsningen på 1 miljon rader) uppstår om kardinaliteten är stor.  Median Country Population kan t.ex. vara rimligt, medan Median Sales Price inte är det.
 * **Avancerade textfilter (”contains” och liknande):** När du filtrerar en textkolumn använder den avancerade filtreringen filter som ”contains”, ”begins with” osv. Dessa filter kan tveklöst resultera i sämre prestanda för vissa datakällor. I synnerhet standardfiltret ”contains” bör inte användas om vad som verkligen krävs är en exakt matchning (”is” eller ”is not”). Även om resultaten kan vara samma, beroende på faktiska data, så kan prestanda avvika drastiskt beroende på användningen av index.
 * **Flervalsutsnitt:** Utsnitt tillåter som standard bara enskilda val. Att tillåta flervalsfilter kan orsaka vissa prestandaproblem, eftersom varje nytt val som du gör när du väljer en uppsättning objekt i utsnittet (t.ex. de tio produkter du finner intressanta) resultera i att frågor skickas till ursprungskällan. Samtidigt som du kan välja nästa objekt innan frågan slutförs, så leder detta till en extra belastning på den underliggande källan.
+
+* **Överväg att inaktivera summor på visualiseringar:** Som standard visar tabeller och matriser summor och delsummor. I många fall skickas separata frågor till underliggande källa för att hämta värden för dessa summor. Detta gäller när du använder *DistinctCount*-aggregering, eller i alla fall när du använder DirectQuery över SAP BW eller SAP HANA. Sådana summor ska inaktiveras (med hjälp av fönstret **Format**) om de inte krävs. 
 
 ### <a name="diagnosing-performance-issues"></a>Diagnostisera prestandaproblem
 I det här avsnittet beskrivs hur du diagnostiserar prestandaproblem eller hämtar mer detaljerad information så att du kan optimera rapporterna.

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/01/2017
-ms.author: sirsu
-ms.openlocfilehash: 87233cfe4290546478899d81d7a39714c75963eb
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.date: 02/07/2018
+ms.author: nikhilga
+ms.openlocfilehash: b60e883d1f5c143270c52bd3ae8a7100593a7dfe
+ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -35,6 +35,23 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
+## <a name="january-2018"></a>Januari 2018
+*   Resurs- och favoritrapporter i Power BI.
+*   Stöd för enkel inloggning med OAuth2- och DirectQuery för Azure SQL Database och Data Warehouse.
+*   Regiongranskning: Granskningsloggarna lagras nu i samma Office 365-region som klientorganisationen.
+*   GA för SharePoint Online [Power BI-rapportwebbdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*   Administratörskontroll för att stänga av visning av anpassade visuella objekt för alla användare i en klientorganisation.
+*   Schemalagt uppdateringsstöd för Azure Analysis Services (AAS).
+
+## <a name="previous-months-2017"></a>Föregående månader (2017)
+## <a name="october-and-november-2017"></a>Oktober och november 2017
+*   Selektiv publicering av innehåll med [Power BI-appar](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+*   Extern användardistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+* Rekommendationer för AI-drivna apprekommendationer.
+* UI-uppdateringar av instrumentpanelen.
+* E-postprenumerationsstöd för appar. 
+* Detaljerad administratörskontroll för [publicering på webben](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
+
 ## <a name="september-2017"></a>September 2017
 * Dela instrumentpaneler med användare som använder den kostnadsfria versionen med hjälp av Premium.
 * Tilldela kapaciteter som passar dina affärsbehov med poolning av virtuella kärnor.
@@ -42,7 +59,6 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) för att enkelt skicka data till REST API:er
 * Bättre prestanda för belastning för [användningsstatistik](service-usage-metrics.md).
 
-## <a name="previous-months-2017"></a>Föregående månader (2017)
 ### <a name="august-2017"></a>Augusti 2017
 * Lär känna din målgrupp med [användningsstatistik per användare](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Kom igång med [Power BI-tjänst](service-connect-to-services.md)appar för onlinetjänster.

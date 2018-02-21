@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: bf65b900f315f74c5ca81980e6371d92923cb97d
-ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
+ms.openlocfilehash: cde5199ad65e69f3304cfe244b549f1e7ae61e97
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Anslut till Project ”Madeira” med Power BI
 Det är enkelt att hämta insikter i dina Project ”Madeira”-data med Power BI och Project ”Madeira”-innehållspaketet. Power BI hämtar dina data, både försäljning och ekonomi, och skapar sedan en instrumentpanel och rapporter baserade på dessa data.
@@ -47,7 +47,7 @@ Anslut till [innehållspaketet Project ”Madeira” Analytics](https://app.powe
     >[!NOTE]
     >Du måste vara en superanvändare i projektet ”Madeira”.
    
-    ![](media/service-connect-to-project-madeira/creds.png)
+   ![](media/service-connect-to-project-madeira/creds.png)
 6. När du är ansluten kommer en instrumentpanel, rapport och datauppsättning automatiskt att läsas in. När du är klar, uppdateras panelerna med data från ditt konto.  
    
     ![](media/service-connect-to-project-madeira/dashboard.png)
@@ -95,12 +95,14 @@ När du väljer OK skapas en nyckel, så kan du kopiera den till lösenordsfält
 ## <a name="troubleshooting"></a>Felsökning
 Power BI-instrumentpanelen är beroende av de publicerade webbtjänster som listas ovan och den visar data från demonstrationsföretaget eller ditt företag om du importerar data från ditt aktuella ekonomisystem. Om något går fel innehåller det här avsnittet lösningar för de flesta vanliga problemen.
 
-** ”Parameterverifieringen misslyckades, kontrollera att alla parametrarna är giltiga” ** Om du ser det här felet när du anger en URL för Project ”Madeira” bör du kontrollera att följande krav är uppfyllda:  
+**”Parameterverifieringen misslyckades. Kontrollera att alla parametrarna är giltiga”**
 
-    - URL:en följer exakt det här mönstret https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company ('*CRONUS % 20US*”)  
-    - Ta bort all text efter företagets namn inom parentes  
-    - Kontrollera att det inte finns något avslutande snedstreck i slutet av URL:en.  
-    - Kontrollera att URL:en använder en säker anslutning som anges av att URL:en börjar med https.  
+Om du ser det här felet när du anger en URL för projektet ”Madeira” bör du kontrollera att följande krav är uppfyllda:  
+
+   - URL:en följer exakt det här mönstret https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company ('*CRONUS % 20US*”)  
+   - Ta bort all text efter företagets namn inom parentes  
+   - Kontrollera att det inte finns något avslutande snedstreck i slutet av URL:en.  
+   - Kontrollera att URL:en använder en säker anslutning som anges av att URL:en börjar med https.  
 
 **”Inloggningen misslyckades”** Om du får felet ”Inloggningen misslyckades” när du loggar in på instrumentpanelen med autentiseringsuppgifter för Project ”Madeira” kan det bero på något av följande problem:  
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 02/05/2018
 ms.author: maghan
-ms.openlocfilehash: eb2072b0beadf3f6f2cf702f35f56441bc38c7ff
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: b2e41884ca799ca07223a4b5444e39b38aa2102a
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – vad är det?
 Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation eller ditt team, vilket ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också frekvent distribution av innehåll utan att du behöver köpa licenser per användare för tittare.
@@ -46,7 +46,7 @@ Det finns två typer av kapaciteter i Power BI. Delad kapacitet och Power BI Pre
 | Inbäddad API och kontroller |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig")<sup>2</sup> |
 | **Publicera Power BI-rapporter lokalt** |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig") |
 
-*<sup>1</sup> Kostnadsfri användarkonsumtion i appar inkluderar tittarinnehåll i webben och mobilt, med hjälp av frågor och svar, Quick Insights, Cortana, exportera till CSV, Excel och PowerPoint.*  
+*<sup>1</sup> Kostnadsfri användarkonsumtion i appar inkluderar tittarinnehåll i webben och mobilt, med hjälp av frågor och svar, Quick Insights, Cortana, exportera till CSV, Excel och PowerPoint. En Pro-licens krävs för andra aktiviteter som inte visas, till exempel att skapa rapporter på delade datauppsättningar och analysera i Excel. Lär dig mer om funktioner i [Power BI kostnadsfritt kontra Pro](service-free-vs-pro.md).*  
 *<sup>2</sup> Framtida förbättringar kommer till Power BI Premium efter GA.*
 
 ### <a name="premium-capacity"></a>Premiumkapacitet

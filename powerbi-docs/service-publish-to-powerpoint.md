@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: davidi
-ms.openlocfilehash: 4ca79e960bc0370789ee735ba6b5391cbb8b110f
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 5ebfa2f54c26c0b4c3321120558e1cccb8bce146
+ms.sourcegitcommit: ed49510adee96042c02d6bdadbfcf8a2e566fbf8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Exportera rapporter från Power BI till PowerPoint (förhandsgranskning)
 Med Power BI, kan du nu publicera din rapport till **Microsoft PowerPoint** och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du **exporterar till PowerPoint**, inträffar följande:
@@ -64,6 +64,8 @@ När du öppnar PowerPoint-filen som Power BI exporterade, hittar du en del häf
 1. Den första sidan i presentationen innehåller namnet på rapporten och en länk så att du kan **visa i Power BI** den rapport som presentationen bygger på.
 2. Du får även lite användbar information om rapporten, inklusive den *senaste datauppdateringen* som den exporterade rapporten baseras, på och *nedladdad den* med tid och datum, vilket är när Power BI-rapporten exporterades till en PowerPoint-fil.
 3. Varje rapportsida är en separat bild som det visas i det vänstra navigeringsfönstret.
+4. Din publicerade rapport återges på det språk som dina Power BI-inställningar anger, eller i annat fall på det språk som anges i webbläsarens språkinställningar. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**. Mer information finns i [Språk och länder/regioner som stöds för Power BI](supported-languages-countries-regions.md).
+5. PowerPoint-presentationen innehåller en omslagsbild för skydd med den exporterade tiden i korrekt tidszon.
 
 När du går in på en specifik bild, ser du att varje rapportsida är en oberoende bild.
 

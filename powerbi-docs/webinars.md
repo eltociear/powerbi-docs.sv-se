@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/30/2018
+ms.date: 02/07/2018
 ms.author: maikelson
-ms.openlocfilehash: 21bd243f56b077c3dfbeaeffd5db108670029937
-ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+ms.openlocfilehash: a16ed05732f5031f0a6f33522d52bb501e241c4f
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -49,6 +49,22 @@ Kom igång med dessa populära webbseminarier på begäran
 
 Registrera dig för att lyssna till Power BI-experter och delta i livesända frågesessioner
 
+**Office 365 Webbseminarier, finansiella fördelar – avsnitt 2: Automatisera återkommande rapporter och aktivera självbetjäning analys**
+<br>av Mark Traverso och Miguel Martinez
+<br>*15 februari, 12:00 PST, 15:00 PM EST*
+
+Lär dig tips, trick och bästa praxis och uppnå därmed mer i ditt dagliga arbete med hjälp av Office 365.
+
+[Registrera dig om du vill titta den 15 februari](https://aka.ms/Office365FinanceProsPBI)
+
+**Säljande BI-lösningar med Microsoft**
+<br>av Tamer Farag
+<br>*15 februari, 8:00 PST, 11:00 GMT*
+
+Gå med i det här webbseminariet för att få mer information om hur du kan samarbeta med Microsoft för att ta tillvara på Business Intelligence-marknadens möjligheter. Få en översikt över våra senaste utbildningsresurser, marknadsföringsmaterial, incitament och erbjudanden för att skapa och utöka din verksamhet. Dessutom lär du dig hur du visas på PowerBI.com och AppSource.com för att säkerställa att dina lösningar och erbjudanden är främst och i led med Microsoft-kunder och -säljare.
+
+[Registrera dig om du vill titta den 15 februari](https://infopedia.eventbuilder.com/event?eventid=l9d4s7)
+
 **Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes** (Lär dig att navigera på en Power BI-instrumentpanel på 20 minuter)
 <br>av Miguel Martinez
 <br>*21 februari, 10:00 PST, 13:00 EST*
@@ -56,6 +72,13 @@ Registrera dig för att lyssna till Power BI-experter och delta i livesända fr�
 Har du någonsin öppnat en Power BI-instrumentpanel och sedan inte riktigt förstått vad du ska göra?  Hur navigerar jag för att hitta de data som är viktiga för mig? Begränsar du användningen av filter och utsnitt för att du är rädd att något ska gå fel?  Var inte det, vi hjälper dig att lära dig hur du navigerar på en Power BI-instrumentpanel. Vi går igenom vanliga funktioner som andra hanterare använder så att du kan fördjupa dig i de data du vill använda, närsomhelst.
 
 [Registrera dig om du vill titta den 21 februari](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Visualisera offentliga eller privata datauppsättningar med den nya Power BI- och data.world-anslutningsappen**
+<br>*22 februari, 10:00 PST, 13:00 EST*
+
+Microsoft har i samarbete med data.world publicerat en ny anslutningsapp som gör att du kan importera data.world-datauppsättningar till Power BI Desktop. Gå med för att få information om hur du kan dra nytta av denna fantastiska ny anslutning och utnyttja kraften i data.world-community genom att dela din historia och samarbeta med andra.
+
+[Registrera dig om du vill titta den 22 februari](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
 >[Delta i kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 

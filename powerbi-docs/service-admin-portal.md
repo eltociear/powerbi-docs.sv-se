@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/02/2018
+ms.date: 02/06/2018
 ms.author: maghan
-ms.openlocfilehash: 36f2b591f53e7d9e930048cdedde114348466147
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 7e19e37bf024ec30db58057de54e3039ed7b80b2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -40,7 +40,7 @@ Ditt konto måste vara markerat som **Global administratör** i Office 365 eller
 
 ![](media/service-admin-portal/powerbi-admin-settings.png)
 
-Det finns fem flikar i portalen. Dessa beskrivs nedan.
+Det finns sex flikar i portalen. Dessa beskrivs nedan.
 
 * [Användningsstatistik](#usage-metrics)
 * [Användare](#users)
@@ -48,6 +48,7 @@ Det finns fem flikar i portalen. Dessa beskrivs nedan.
 * [Klientinställningar](#tenant-settings)
 * [Premiuminställningar](#premium-settings)
 * [Bädda in koder](#embed-codes)
+* [Visuella organisationsobjekt](#Organization-visuals)
 
 ![](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -269,6 +270,46 @@ Mer information om hur du hanterar premiuminställningar finns [hantera Power BI
 
 Som administratör kan du visa de inbäddningskoder som har genererats för din klient. Du har åtgärderna för att visa rapporten och ta bort den inbäddade koden om du vill återkalla den.
 
+## <a name="organization-visuals"></a>Visuella organisationsobjekt
+
+Med fliken för visuella organisationsobjekt kan du distribuera och hantera anpassade visuella objekt i din organisation, så att du lätt kan distribuera egna anpassade visuella objekt i organisationen, och så att rapportförfattare enkelt kan identifiera och importera dessa visuella objekt direkt från Power BI Desktop till sina rapporter.
+ 
+Sidan visar alla de anpassade visuella objekt som för närvarande har distribuerats i organisationens databas.
+ 
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+### <a name="add-a-new-custom-visual"></a>Lägga till ett nytt anpassat visuellt objekt
+
+Om du vill lägga till ett nytt anpassat visuellt objekt i listan väljer du **Lägg till ett anpassat visuellt objekt**
+
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+
+> [!WARNING]
+> Ett anpassat visuellt objekt kan innehålla kod som innebär säkerhets- eller integritetsrisker. Kontrollera att författaren och det visuella objektets källa är betrodda innan du distribuerar till organisationens databas.
+> 
+
+Fyll i fälten:
+ 
+* Välj en .pbiviz-fil (obligatoriskt): välj en fil för ett anpassat visuellt objekt att överföra. Endast versionshanterade visuella API-objekt stöds, och här kan du läsa vad det innebär.
+Innan du överför ett anpassat visuellt objekt bör du granska objektet ur säkerhets- och sekretessynvinkel för att säkerställa att det uppfyller din organisations standarder. Läs mer om säkerhet och anpassade visuella objekt.
+ 
+* Namnge ditt anpassade visuella objekt (obligatoriskt): ge det visuella objektet en kort rubrik så att Power BI Desktop-användare lätt kan förstå hur det fungerar
+ 
+* Ikon (obligatoriskt): den ikonfil som ska visas i användargränssnittet för Power BI Desktop.
+ 
+* Beskrivning: en kort beskrivning av det visuella objektet som ger användaren mer kontext och kunskap
+ 
+Initiera överföringsförfrågan genom att välja Använd. Om detta lyckas visas det nya objektet i listan. Om det inte lyckas får du ett felmeddelande
+ 
+### <a name="delete-a-custom-visual-from-the-list"></a>Ta bort ett anpassat visuellt objekt från listan
+
+Välj papperskorgen om du vill ta bort det visuella objektet permanent från databasen.
+Viktigt: Du kan inte ångra borttagningen. När det visuella objektet väl har tagits bort upphör det omedelbart att återges i befintliga rapporter. Även om du överför samma visuell objekt igen, så ersätter det inte det föregående objekt som tagits bort. Användarna måste importera det nya visuella objektet på nytt och ersätta den instans de har i sina rapporter.
+ 
+### <a name="how-to-update-a-visual"></a>Så här uppdaterar du ett visuellt objekt
+
+Om du vill uppdatera ett visuellt objekt i databasen när det finns en ny version av det (felkorrigeringar, nya funktioner osv), laddar du upp den nya filen (kontrollera att det visuella ID:t är detsamma) som en ny ingång i listan, ser till att ange rätt information i rubriken och beskrivningen (t.ex. Mitt visuella objekt 2.0). Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.
+ 
 ## <a name="next-steps"></a>Nästa steg
 
 [Förstå Power BI-administratörsrollen](service-admin-role.md)  

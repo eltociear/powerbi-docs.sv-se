@@ -16,18 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/03/2018
 ms.author: mihart
-ms.openlocfilehash: fc697437ff9f5fb6b8dd49f6513c728d1b8ddfeb
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: c5776ca5e038a8cab84ab4f225f67f6144afc722
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>Prenumerera på en Power BI-rapport eller instrumentpanel
-Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. E-post och ögonblicksbild använder det språk som anges i inställningarna för Power BI. Om inget språk har definierats använder Power BI det aktuella webbläsarspråket.
+Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. 
 
-Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**.
+E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**. 
 
 ![](media/service-report-subscribe/power-bi-language.png)
 

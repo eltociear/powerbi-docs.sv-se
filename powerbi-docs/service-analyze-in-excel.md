@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 742dcb64e5cec152ee105cbcdfe023788d209a04
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 262245dab44ae904b51d6cb1449082171631dc09
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.
@@ -32,6 +32,7 @@ Det finns några krav för att använda **Analysera i Excel**:
 * **Analysera i Excel** stöds för Microsoft Excel 2010 SP1 och senare.
 * Pivottabeller i Excel stöder inte dra och släpp-aggregering av numeriska fält. Datauppsättningen i Power BI *måste ha fördefinierade mått*.
 * Vissa organisationer kan ha grupprincipregler som förhindrar installation av nödvändiga **Analysera i Excel**-uppdateringar i Excel. Kontrollera med administratören om det inte går att installera uppdateringarna.
+* **Analysera i Excel** kräver en Pro-licens. Om du vill veta mer om skillnader i funktionalitet mellan kostnadsfria licenser och Pro-licenser kan ta en titt på [Power BI kostnadsfritt kontra Pro](service-free-vs-pro.md). 
 
 ## <a name="how-does-it-work"></a>Hur fungerar det?
 När du väljer **Analysera i Excel** på ellipsmenyn (...) som är associerad med en datauppsättning eller en rapport i **Power BI**, skapar Power BI en odc-fil och hämtar den från webbläsaren till din dator.
