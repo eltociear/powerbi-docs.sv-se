@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: e73d0378e9e94bc8fc10402e3e7f4a524f93e5fb
-ms.sourcegitcommit: 433a5625f1d4557c09a7a7382416e2bbdb40c797
+ms.openlocfilehash: 94a01f1d302d455dbcfe52ce39f5cb0b1ac4aa29
+ms.sourcegitcommit: 05018ef2fe8439a9e8f599c696b8c3cee67e3958
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="getting-a-custom-visual-certified"></a>Få anpassade visuella objekt *certifierade*
 ## <a name="what-is-meant-by-certified"></a>Vad menas med begreppet *certifierad*?
@@ -63,6 +63,7 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Beyondsoft-kalender](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie-diagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |
 | [Box and Whisker-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380831) | |
+| [Box- och Whisker-diagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381351) | [Video](https://youtu.be/JoHaFLfhXdo) |
 | [Tegelstensdiagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380836) | [Video](https://youtu.be/hA3DOsvn2xY) |
 | [Bubbeldiagram från Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381340) | |
 | [Bullet Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380755) | [Video](https://youtu.be/AOlsFYkfkcw) |
@@ -102,10 +103,12 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Globdatastaplar](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381344) | |
 | [Hierarkidiagram från Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381333) | [Video](https://youtu.be/0ZGzJaq_KT4) |
 | [Histogramdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380776) | |
+| [Histogram med punkter från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381032) | [Video](https://youtu.be/-ILF--wExrw) |
 | [Vågrät tratt från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380846) | [Video](https://youtu.be/SudZei68PPo) |
 | [Bild från CloudScope](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381297) | |
 | [Bildrutnät](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381355) | |
 | [Infographic Designer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380898) | |
+| [KPI-diagram från Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381432) | |
 | [KPI-indikator](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380832) | |
 | [KPI Ticker från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380946) | [Video](https://youtu.be/cudG4gsZ2V8) |
 | [Linjär mätare från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Video](https://youtu.be/7_jFaM30dkc) |

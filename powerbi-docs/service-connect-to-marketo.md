@@ -3,7 +3,7 @@ title: Anslut till Marketo med Power BI
 description: "Marketo för Power BI"
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: c642b50e1b0e24aa261e68bdca536e6e9e112dd1
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.author: sarinas
+ms.openlocfilehash: d747b357315e275fae2f65d7e4e961f4867807a3
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Anslut till Marketo med Power BI
 Power BI-innehållspaketet för Marketo ger dig insikter om ditt Marketo-konto med data om leads och deras aktiviteter. När du skapar den här anslutningen så hämtas dina data och du får automatiskt en instrumentpanel och rapporter baserade på dem.
@@ -47,7 +47,7 @@ Anslut till [Marketo-innehållspaketet](https://app.powerbi.com/getdata/services
    
    ![](media/service-connect-to-marketo/pbi_marketosignin.png)
    
-   Det här ger innehållspaketet * Marketo för Power BI *åtkomst till din [Marketo-analys](https://powerbi.microsoft.com/integrations/marketo)data och låter dig analysera data i Power BI. Data uppdateras en gång om dagen.
+   Det här ger innehållspaketet *Marketo för Power BI* åtkomst till dina [Marketo-analys](https://powerbi.microsoft.com/integrations/marketo)data och låter dig analysera data i Power BI. Data uppdateras en gång om dagen.
 6. När du har anslutit till ditt Marketo-konto, laddas en instrumentpanel med alla dina data:
    
    ![](media/service-connect-to-marketo/pbi_marketodash.png)
