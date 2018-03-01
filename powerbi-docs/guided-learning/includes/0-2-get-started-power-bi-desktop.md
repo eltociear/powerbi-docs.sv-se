@@ -23,7 +23,7 @@ Du kan börja bygga rapporter i **rapportvyn** i Power BI Desktop.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_3.png)
 
-Du kan dölja fönstren **Visualiseringar** och **Fält** genom att välja den lilla pilen längs kanten, vilket ger mer utrymme i **rapportvyn** för att skapa snygga visualiseringar. När du ändrar visualiseringar visas även pilar som pekar uppåt eller nedåt, vilket innebär att du kan visa respektive dölja motsvarande avsnitt.
+Du kan dölja fönstren **Visualiseringar** och **Fält** genom att välja den lilla pilen längs kanten, vilket ger mer utrymme i **rapportvyn** för att skapa snygga visualiseringar. När du modifierar visualiseringar visas även pilar som pekar uppåt eller nedåt, vilket innebär att du kan visa respektive dölja motsvarande avsnitt.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_4.png)
 

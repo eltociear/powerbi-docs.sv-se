@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/28/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 9a2f191dcf88d3506ab0724c0916064b31fbf3f0
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Get started
+ms.openlocfilehash: 1e6b43efc887550e98bc6195c24af77c61594989
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Vanliga frågor för Power BI för tyska molnkunder
 **Power BI-tjänsten** har en version som är tillgänglig för kunder i EU/Europeiska frihandelsavtalet (EU/EFTA), vilket ofta kallas Microsoft Cloud Deutschland (MCD). Den **Power BI-tjänsten** version som beskrivs i den här artikeln är utformad för kunder som tillhör myndigheter i EU-/EFTA-länder och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten** eller Power BI-tjänster för andra myndigheter.

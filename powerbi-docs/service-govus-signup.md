@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/27/2017
 ms.author: davidi
-ms.openlocfilehash: 8ff1d5be4e360aa5afb8b6bd704f3426957466ef
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Get started
+ms.openlocfilehash: e4015d0de5c11a9726089a62825950dc0532205d
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -45,12 +46,14 @@ Om organisationen är en ny **Office Government Cloud**-kund gör du följande:
 
 > [!NOTE]
 > De här stegen bör utföras av portaladministratören.
-> 
-> 
+>
 
-1. Gå till [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). 
-    >[!NOTE]
-    >Om du inte vill registrera dig för Office Government Cloud just nu bör du prata med din säljrepresentant.
+1. Gå till [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government).
+
+>[!NOTE]
+>Om du inte vill registrera dig för Office Government Cloud just nu bör du prata med din säljrepresentant.
+>
+
 2. Välj Office G3 och fyll i formuläret för en utvärderingsversion av Office
 3. När du är en Office Cloud-kund fortsätter du med stegen nedan för ”befintliga Office Government Cloud-kunder”
 
