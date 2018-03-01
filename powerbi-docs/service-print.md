@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: f505b27043e357b5cf1c01a0779634a948905dfc
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Common tasks
+ms.openlocfilehash: 62796d9eb376ab4c92cc5596176ac501a69c0e62
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="printing-from-power-bi-service"></a>Skriva ut från Power BI-tjänsten
 Skriva ut en hel instrumentpanel, en panel, en rapportsida eller ett visuellt rapportobjekt från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång.
@@ -54,7 +55,7 @@ Se när Amanda skriver ut från sin instrumentpanel och rapport. Följ sedan de 
 1. [Öppna panelen i fokusläge](service-focus-mode.md) genom att välja ellipserna och ikonen Fokus ![](media/service-print/power-bi-focus-icon.png).
    
     ![](media/service-print/menu-options.png)
-2. Öppna panelen i [helskärmsläge](service-tile-fullscreen-mode.md) genom att välja helskärmsikonen ![](media/service-print/power-bi-full-screen-icon.png) i det övre navigeringsfältet.
+2. Öppna panelen i [helskärmsläge](service-fullscreen-mode.md) genom att välja helskärmsikonen ![](media/service-print/power-bi-full-screen-icon.png) i det övre navigeringsfältet.
 3. Hovra över panelen för att visa menyn Alternativ.
    
     ![](media/service-print/menu-options-new.png)
@@ -98,5 +99,5 @@ Det går bara att skriva ut rapporter med en sida i taget.
 ## <a name="next-steps"></a>Nästa steg
 [Dela instrumentpaneler och rapporter med kolleger och andra](service-share-dashboards.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

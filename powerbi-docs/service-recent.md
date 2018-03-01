@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: 554084b26beff469276709b9e7c7f2c9fa84e65c
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+LocalizationGroup: Common tasks
+ms.openlocfilehash: 103edc93dafb9615e08692965258ffc61905baf1
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Senaste** innehåll i Power BI-tjänsten
 
@@ -50,5 +51,5 @@ Härifrån du kan interagera med innehållet som samma sätt som på enskilda fl
 ## <a name="next-steps"></a>Nästa steg
 [Power BI-tjänstens appar](service-install-use-apps.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
