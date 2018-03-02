@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/07/2018
 ms.author: nikhilga
-ms.openlocfilehash: b60e883d1f5c143270c52bd3ae8a7100593a7dfe
-ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
+LocalizationGroup: Get started
+ms.openlocfilehash: b3e12a9bdfa6643351cdfc82ce9051197df6ee1e
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -631,9 +632,9 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **31 mars 2015**
 
-* Instrumentpaneler för ** GitHub ** har nya visuella objekt som fokuserar på communityprojekt, förbättrade beräkningar och förbättrad layout
-* Instrumentpaneler för ** SendGrid ** har nya visuell objekt och en ny layout för att hitta bättre insikter
-* Du kan nu använda **trädkartor i Frågor och svar** med frasen ”som trädkarta i slutet av din fråga
+* **GitHub**-instrumentpanelerna har nya visuella objekt som fokuserar på communityprojekt, förbättrade beräkningar och förbättrad layout
+* **SendGrid**-instrumentpanelerna har nya visuell objekt och en ny layout för att hitta bättre insikter
+* Du kan nu använda **trädkartor i Frågor och svar** med frasen ”som trädkarta” i slutet av din fråga
 * Du kan nu **fästa trädkartor** från frågor och svar och rapporter 
 * Många felkorrigeringar!
 

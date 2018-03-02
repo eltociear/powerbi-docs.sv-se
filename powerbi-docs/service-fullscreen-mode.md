@@ -1,6 +1,6 @@
 ---
 title: "Visa instrumentpaneler, paneler på instrumentpaneler, rapportsidor och rapportvisualiseringar i fullskärmsläge"
-description: "Visa instrumentpaneler, paneler på instrumentpaneler, rapportvisualiseringar och rapportsidor i fullskärmsläge, det vill säga *TV-läge*."
+description: "Visa instrumentpaneler, paneler på instrumentpaneler, rapportvisualiseringar och rapportsidor i fullskärmsläge, dvs *TV-läge*."
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: a8d1a49a341b98778a6ad08c823397f420b2475e
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+LocalizationGroup: Common tasks
+ms.openlocfilehash: bef91085c23ec1aeaea18f6624ea37cb12a374a1
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="full-screen-mode-in-power-bi"></a>Fullskärmsläge i Power BI
 ## <a name="what-is-full-screen-mode"></a>Vad är fullskärmsläge?
@@ -91,5 +92,5 @@ Titta på hur Amanda öppnar och navigerar sin instrumentpanel i fullskärmsläg
 [Instrumentpaneler i Power BI](service-dashboards.md)  
 [Fokusläge](service-focus-mode.md)    
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

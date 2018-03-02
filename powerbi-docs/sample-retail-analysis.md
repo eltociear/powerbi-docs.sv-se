@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/17/2018
 ms.author: mihart
-ms.openlocfilehash: 97c8f3f74bea0629107b68b9e42a4a449863b066
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+LocalizationGroup: Samples
+ms.openlocfilehash: 54a12f7e3b2ecee65701ca6c629d078ad7b9c0c9
+ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: ta en rundtur
 
@@ -31,7 +32,7 @@ Det här branschexemplets instrumentpanel och underliggande rapport analyserar f
 
 ## <a name="prerequisites"></a>Förutsättningar
 
- Innan du kan använda exemplet, måste du först hämta det som ett innehållspaket, en .pbix-fil eller en Excel-arbetsbok.
+ Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](https://docs.microsoft.com/en-us/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), en [.pbix-fil](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) eller en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529778).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
 
@@ -166,7 +167,8 @@ Det här är en säker miljö att testa i. Du kan alltid välja att inte spara �
 Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om detaljhandelsdata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).
 
 ## <a name="next-steps"></a>Nästa steg
-* [Ladda ned innehållspaketet med exempel på detaljhandelsanalys](sample-tutorial-connect-to-the-samples.md)    
+* [Ladda ned innehållspaketet med exempel på detaljhandelsanalys](sample-tutorial-connect-to-the-samples.md)
+* [Hämta en zip-fil med alla exempelfiler](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Ladda ned Excel-arbetsboken för det här Power BI-exemplet](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Hämta data (för Power BI)](service-get-data.md)    
 * [Power BI – grundläggande begrepp](service-basic-concepts.md)    
