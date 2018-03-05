@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 95c46e6efddd9f0bde6be6cbc1e484f0f72452ce
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Get started
+ms.openlocfilehash: f9e30b3feb5f9b85a87686e4484bba035ff839aa
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. När du utforskar data, skapar diagram och instrumentpaneler, eller ställer frågor i Frågor och svar, hämtar alla dessa visualiseringar och svar som du ser sina underliggande data från en datauppsättning. Men var kommer datauppsättningen från? Från en datakälla.
@@ -70,7 +71,7 @@ Vissa datakällor har redan sina data i ett format som är redo för Power BI-tj
 
 I andra fall kan det vara nödvändigt att fråga efter och läsa in de data som du vill använda i en fil. Anta exempelvis att du har logistikdata i en informationslagerdatabas på en server i din organisation. Du kan inte ansluta direkt till databasen i Power BI-tjänsten för att utforska datan (om det inte är en tabellmodelldatabas). Men du kan använda Power BI Desktop eller Excel för att fråga och läsa in logistikdata i en datamodell som du sedan sparar som en fil. Du kan sedan importera filen till Power BI där en datauppsättning skapas.
 
-Du tänker förmodligen ”Men logistikdata i den databasen ändras ju varje dag. Hur kan jag vara säker på att min datauppsättning i Power BI uppdateras?” Anslutningsinformationen från Power BI Desktop eller Excel-filen har importerats till datauppsättningen tillsammans med datan. Om du konfigurerar en schemalagd uppdatering eller gör en manuell uppdatering av datauppsättningen använder Power BI anslutningsinformationen från datauppsättningen, tillsammans med några andra inställningar, till att ansluta direkt till databasen, fråga efter uppdateringar och läsa in uppdateringarna i datauppsättningen. En Power BI-gateway kommer troligen krävas för att skydda all dataöverföring mellan din lokala server och Power BI. Dina visualiseringar i rapporter och instrumentpaneler uppdateras automatiskt.
+Du tänker förmodligen ”Men logistikdata i den databasen ändras ju varje dag. Hur kontrollerar jag att min datauppsättning i Power BI har uppdaterats? – Anslutningsinformationen från Power BI Desktop eller Excel-filen importeras till datauppsättningen tillsammans med informationen. Om du konfigurerar en schemalagd uppdatering eller gör en manuell uppdatering av datauppsättningen använder Power BI anslutningsinformationen från datauppsättningen, tillsammans med några andra inställningar, till att ansluta direkt till databasen, fråga efter uppdateringar och läsa in uppdateringarna i datauppsättningen. En Power BI-gateway kommer troligen krävas för att skydda all dataöverföring mellan din lokala server och Power BI. Dina visualiseringar i rapporter och instrumentpaneler uppdateras automatiskt.
 
 Bara för att du inte kan ansluta till din datakälla direkt från Power BI-tjänsten innebär det alltså inte att du inte kan hämta data till Power BI. Det krävs bara några fler steg och kanske viss hjälp från IT-avdelningen. Se [Datakällor i Power BI Desktop](desktop-data-sources.md) om du vill veta mer.
 

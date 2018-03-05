@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/09/2018
 ms.author: mihart
-ms.openlocfilehash: c7a782880c2bc3fe4743d635bbc76dfc41660909
-ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
+LocalizationGroup: Get started
+ms.openlocfilehash: 38a3923469d64cc0761ea0e1b1b39005f6904d40
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="getting-around-in-power-bi-service"></a>Navigera i Power BI-tjänsten
 ## <a name="the-left-navigation-pane"></a>Det vänstra navigeringsfönstret
@@ -132,7 +133,7 @@ Om du inte är medlem i en arbetsyta i appen eller en administratör kan du kans
 ![](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
 #### <a name="app-workspaces"></a>Apparbetsytor
-Appar och apparbetsytor är en funktion i Power BI Pro. Om du skapar instrumentpaneler och rapporter för andra kommer du att använda apparbetsytor. En apparbetsyta är den plats där du skapar appen, så om du vill skapa en app måste du först skapa en apparbetsyta. De är en utveckling av grupparbetsytor – mellanlagringsområden och behållare för innehållet i din app.  Du och dina kollegor kan samarbeta på instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik eller hela organisationen.
+Appar och apparbetsytor är en funktion i Power BI Pro. Om du skapar instrumentpaneler och rapporter för andra kommer du att använda apparbetsytor. En apparbetsyta är den plats där du skapar appen, så om du vill skapa en app måste du först skapa en apparbetsyta. De är en utveckling av grupparbetsytor – mellanlagringsområden och behållare för innehållet i appen.  Du och dina kollegor kan samarbeta på instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik eller hela organisationen.
 
 För att lära dig mer om detta kan du besöka [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md#app-workspaces).
 
