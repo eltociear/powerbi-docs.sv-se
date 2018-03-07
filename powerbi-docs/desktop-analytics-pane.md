@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 02498ff745a2e06a49ed6064a4f7eefebff305f8
-ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
+LocalizationGroup: Create reports
+ms.openlocfilehash: 24f6f9037937049d24321791046aaf7a14e9fb6f
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Använda Analytics-fönstret i Power BI Desktop
 Med fönstret **Analytics** i **Power BI Desktop** kan du lägga till dynamiska *referenslinjer* i visuella objekt och ange fokus för viktiga trender eller analyser. Fönstret **Analystics** finns i området **Visualiseringar** i Power BI Desktop.

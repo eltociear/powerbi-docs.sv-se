@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 9e2c5bb215ffee880af56a1147dcd4adfbbf17d5
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Create reports
+ms.openlocfilehash: 7408d7f5c0dff6d1f04ea42a3f4dfefc8600524f
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Lägg till en anpassad kolumn i Power BI Desktop
 Du kan enkelt lägga till en ny anpassad kolumn med data till din modell med hjälp av **Frågeredigeraren** i **Power BI Desktop**. Du kan skapa och ändra namn på din anpassade kolumn med enkla knappar för att skapa [M-formler](https://msdn.microsoft.com/library/mt270235.aspx) som definierar din anpassade kolumn. M-formeln har en [omfattande innehållsuppsättning med funktionsreferenser](https://msdn.microsoft.com/library/mt779182.aspx). 

@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/10/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: b4e0e67158237acc70bad5bd3c9528f457cd94b5
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Administration
+ms.openlocfilehash: 50bb742958f5cc9152231f14d176033b328a8976
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 En detaljerad förklaring av Power BI-säkerheten får du om du [laddar ned white paper-dokumentet om Power BI-säkerhet](http://go.microsoft.com/fwlink/?LinkId=829185):

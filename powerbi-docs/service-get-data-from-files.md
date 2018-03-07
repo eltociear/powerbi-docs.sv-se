@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/20/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 08ea8e51c177defeae9ff1f63b73196d1e7ba35a
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Data from files
+ms.openlocfilehash: 3091de0ce4fb08867bcd3eddfae9d7dcee6b8af3
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="get-data-from-files"></a>Hämta data från filer
 ![](media/service-get-data-from-files/file_icons.png)
@@ -51,9 +52,9 @@ Vi kan till och med ta det ett steg längre. En bränsletank i en bil måste fyl
 
 **OneDrive företag**  – om du har OneDrive för företag och du loggar in med samma konto som du använder för Power BI, är detta det mest effektiva sättet att behålla ditt arbete i en Excel-, Power BI Desktop- eller .CSV-fil synkroniserat med din datauppsättning, dina rapporter och dina instrumentpaneler i Power BI. Eftersom både Power BI och OneDrive finns i molnet, ansluter Power BI till din fil på OneDrive ungefär en gång per timme. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt.
 
-**OneDrive – personlig** – om du sparar filer på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in på ditt OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det du använder för att logga in på Power BI. När du loggar in på ditt OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
+**OneDrive – personlig** – Om du sparar filer på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du första gången ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in i OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det konto du använder för att logga in i Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
 
-**SharePoint-gruppwebbplatser** – du sparar Power BI Desktop-filer på SharePoint-gruppwebbplatser ungefär på samma sätt som på OneDrive för företag. Den största skillnaden är hur du ansluter till filen från Power BI. Du kan ange en URL eller ansluta till rotmappen.
+**SharePoint-gruppwebbplatser** – Du sparar Power BI Desktop-filer på SharePoint-gruppwebbplatser ungefär på samma sätt som på OneDrive för företag. Den största skillnaden är hur du ansluter till filen från Power BI. Du kan ange en URL eller ansluta till rotmappen.
 
 ## <a name="ready-to-get-started"></a>Är du redo att sätta igång?
 Se följande artiklar för att lära dig mer om att få din fil till Power BI.

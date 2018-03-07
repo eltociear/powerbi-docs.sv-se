@@ -17,15 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 86d5ddd1643a713e3094ef39d9fbb46f9a1efc69
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: 4e48ce4269def6764630322ac798a8dd0e491861
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Hantera, uppdatera och ta bort organisationsinnehållspaket
 > [!NOTE]
-> Har du hört om de nya *apparna* ännu? Appar är det nya sättet att distribuera innehåll till stora målgrupper i Power BI. Vi rekommenderar att du använder appar istället för innehållspaket för organisationer eller skrivskyddade arbetsytor. Läs [mer om appar](service-install-use-apps.md).
+> Har du hört om de nya *apparna* ännu? Appar är det nya sättet att distribuera innehåll till stora målgrupper i Power BI. Vi rekommenderar att du använder appar istället för organisationsinnehållspaket eller skrivskyddade arbetsytor. Läs [mer om appar](service-install-use-apps.md).
 > 
 > 
 
@@ -94,5 +95,5 @@ Du kan bara ta bort ett innehållspaketet från AppSource om du har skapat det.
 ## <a name="next-steps"></a>Nästa steg
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md)
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

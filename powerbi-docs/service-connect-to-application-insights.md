@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: d2a58de38c15599556419a6ebd219dd3a522c27a
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 04cc92bd33f342097b9952a744d8dfffced22bb3
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Anslut till Application Insights med Power BI
 Använd Power BI för att skapa kraftfulla anpassade instrumentpaneler från telemetrin [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Förutse din apptelemetri på nya sätt. Kombinera mått för flera appar eller komponenttjänster på en instrumentpanel. Den första versionen av Power BI-innehållspaketet för Application Insights innehåller widgetar för vanliga användningsrelaterade mått såsom aktiva användare, sidvy, sessioner, webbläsare och OS-version och geografisk fördelning av användare på en karta.
@@ -78,7 +79,7 @@ Application Insights-innehållspaketet innehåller följande tabeller och mått:
     - SessionsByCountryLast7Days   
     - SessionsByCountryLast30Days   
     - PageViewsByCountryDailyLast30Days  
-        ´´´ 
+    ´´´ 
 
 <a name="FindingAppInsightsParams"></a>
 

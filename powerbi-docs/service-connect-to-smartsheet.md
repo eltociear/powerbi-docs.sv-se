@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: 49d0187336aec4a7cbdd4472355f933a16d5e60e
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: c44df79beea53ffd4900c7016651f876f7a44666
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-smartsheet-with-power-bi"></a>Anslut till Smartsheet med Power BI
 Smartsheet erbjuder en enkel plattform för samarbete och fildelning. Smartsheet-Innehållspaketet för Power BI erbjuder en instrumentpanel, rapporter och datauppsättningar som visar en översikt över ditt Smartsheet-konto. Du kan också använda [Power BI Desktop](desktop-connect-to-data.md) för att ansluta direkt till enskilda blad i ditt konto. 

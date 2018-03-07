@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: d95b9d7ca8cae1e4311ef679093814c51a9ba3c0
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Troubleshooting
+ms.openlocfilehash: 28ec83a12de986d7dab0a2cceb622b62ea16da1b
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Felsöka datakälla utan stöd för uppdatering
 Du kan se ett fel vid försök att konfigurera en datauppsättning för schemalagd uppdatering.

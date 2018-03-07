@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: f03bc074c398796ddf0435662e7ee928799116d0
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: af1a34d280aaa1a795a7a2490c97874e0c4d1838
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Anslut till Acumatica med Power BI
 Med innehållspaketet Power BI Acumatica kan du snabbt få insikter om dina affärsmöjlighetsdata. Power BI hämtar dina data, inklusive affärsmöjligheter, konton och kunder och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data.

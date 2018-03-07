@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 4d7a000095fb954c6b186ab4b2dccab790cd2073
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Model your data
+ms.openlocfilehash: cd0f89766a07d468942735d5da0d99e5c6d1c87f
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
 När du importerar flera tabeller är det möjligt att du kommer att utföra analyser med data från alla tabellerna. Det måste finnas relationer mellan dessa tabeller för att korrekt beräkna resultat och för att rätt information ska visas i dina rapporter. Med Power BI Desktop blir det enkelt att skapa dessa relationer. Det är faktiskt så att du inte behöver göra något alls i de flesta fall, funktionen Identifiera automatiskt gör det åt dig. I vissa fall kan du dock behöva skapa relationerna själv, eller behöva göra vissa ändringar i en relation. Oavsett vilket är det viktigt att förstå relationer i Power BI Desktop, samt hur du skapar och redigerar dem.

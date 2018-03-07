@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: fc061d2f8c85a53028e6de82e4a1e21057be6c75
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Data refresh
+ms.openlocfilehash: a38ee72643f5eb95f0d637dbe7bfbc67e2ee656d
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på en lokal enhet
 ## <a name="whats-supported"></a>Vad stöds?
@@ -68,7 +69,7 @@ Inga problem. När du använder Power Pivot för att ansluta till och fråga eft
 ## <a name="how-do-i-schedule-refresh"></a>Hur gör jag för att schemalägga uppdateringar?
 När du konfigurerar ett uppdateringsschema, ansluter Power BI direkt till datakällorna med anslutningsinformationen och autentiseringsuppgifterna i datauppsättningen för att fråga efter uppdaterade data, och läser sedan in uppdaterade data i datauppsättningen. Även alla visualiseringar i rapporter och på instrumentpaneler baserade på den datauppsättningen i Power BI-tjänsten uppdateras.
 
-Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfigurera Uppdatera schema](refresh-scheduled-refresh.md).
+Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md).
 
 ## <a name="when-things-go-wrong"></a>Om något går fel
 Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in till en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in till dina datakällor igen i datakällans autentiseringsuppgifter.
@@ -86,5 +87,5 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problem
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Nästa steg
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

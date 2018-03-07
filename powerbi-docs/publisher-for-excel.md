@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: f38b567b0ef8b26bcd3631c37d27da69b25b6950
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: efd01bc6afec23d614a9f57b1150681983227350
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="power-bi-publisher-for-excel"></a>Power BI Publisher för Excel
 Med Microsoft **Power BI Publisher för Excel**, kan du ta ögonblicksbilder av dina viktigaste insikter i Excel som pivottabeller, diagram och intervall och fästa dem till instrumentpaneler i Power BI.

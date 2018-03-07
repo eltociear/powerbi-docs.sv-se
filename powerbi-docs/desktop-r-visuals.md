@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: f372903886ab8f92e6954b5bdb370e7f48c204eb
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+LocalizationGroup: Create reports
+ms.openlocfilehash: e2e59e3b9d718fa2e0c8c3411968fd4ab66a5851
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Skapa visuella Power BI-objekt med R
 Med **Power BI Desktop**, kan du använda **R** för att visualisera dina data.

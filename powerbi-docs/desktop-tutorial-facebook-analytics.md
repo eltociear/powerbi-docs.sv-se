@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 3642a252467d504b61eb81f82d0b96f64a24f22b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Learn more
+ms.openlocfilehash: e0bdec7d2774fd5c6641041af14b2170d7223151
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Självstudier: Facebook-analyser med hjälp av Power BI Desktop
 I den här kursen får du lära dig hur du importerar och visualiserar data från **Facebook**. Under kursen lär du dig att ansluta till en viss Facebook-sida (Power BI-sida), använd datatransformationssteg och skapa vissa visuella objekt.

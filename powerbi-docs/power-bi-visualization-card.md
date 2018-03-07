@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: 1136aae9af4481a1d55ca3d11ed300242aab187b
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Visualizations
+ms.openlocfilehash: f38f3bb19be268cba4745c88aa98d09c080c773e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringar
 Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrumentpanelen eller -rapporten, till exempel total försäljning, marknadsandel år för år eller totala affärsmöjligheter. Den här typen av visualisering kallas ett *kort*. Som nästan alla ursprungliga Power BI-visualiseringar, kan kort skapas med hjälp av rapportredigeraren eller Frågor och svar.
@@ -57,7 +58,7 @@ Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill f
 ## <a name="create-a-card-from-the-qa-question-box"></a>Skapa ett kort från frågerutan för frågor och svar
 Att använda frågerutan för frågor och svar är den enklaste metoden för att skapa ett kort. Frågerutan för frågor och svar är tillgänglig i Power BI-tjänsten (app.powerbi.com) från en instrumentpanel eller rapport. Stegen nedan beskriver hur du skapar ett kort från en instrumentpanel i Power BI-tjänsten. Om du vill skapa ett kort med Frågor och svar i Power BI Desktop [, följer du nedanstående instruktioner](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) för Frågor och svar-förhandsgranskning för Desktop-rapporter.
 
-1. Skapa en [instrumentpanel](service-dashboards.md) och [hämta data](service-get-data.md). Det här exemplet använder sig av [Exempel på analys av affärsmöjligheter](sample-opportunity-analysis.md).
+1. Skapa en [instrumentpanel](service-dashboards.md) och [hämta data](service-get-data.md). Det här exemplet använder sig av [exemplet affärsmöjlighetsanalys](sample-opportunity-analysis.md).
 
 1. Börja skriva vad du vill veta om dina data i frågerutan överst på instrumentpanelen. 
 

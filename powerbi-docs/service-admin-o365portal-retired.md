@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: e9a9596c819273b2c74b9ca245b2d583476bae81
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Administration
+ms.openlocfilehash: c83ae371153443f48fa6996e4024119ca3d94d04
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="power-bi-for-office-365-is-retired"></a>Power BI för Office 365 har dragits tillbaka
 Power BI för Office 365, en tidigare version av Power BI har övergått till den aktuella versionen av [Power BI](https://powerbi.microsoft.com). Användare som använde **Power BI för Office 365** kan använda den aktuella versionen av Power BI. Du kan [läsa mer om Power BI](service-get-started.md).

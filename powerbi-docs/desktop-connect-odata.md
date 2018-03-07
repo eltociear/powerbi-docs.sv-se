@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 1bd39965a13ec9d3bfd2aa472a0a720d4cd68c02
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Connect to data
+ms.openlocfilehash: 3b95ccf558484670f8bacd8a031e94f9b0dbbddd
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>Ansluta till en OData-feed i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **OData**-feed och använda underliggande data precis som andra datakällor i Power BI Desktop.

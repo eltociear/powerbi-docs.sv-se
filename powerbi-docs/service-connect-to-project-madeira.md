@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: b75ea1028694a9dab32073ce70180e61798d7d28
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 02b8c2e8ed9a8a4ca0c8aaf9848699f3ca3c24c8
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Anslut till Project ”Madeira” med Power BI
 Det är enkelt att hämta insikter i dina Project ”Madeira”-data med Power BI och Project ”Madeira”-innehållspaketet. Power BI hämtar dina data, både försäljning och ekonomi, och skapar sedan en instrumentpanel och rapporter baserade på dessa data.
@@ -106,8 +107,8 @@ Om du ser det här felet när du anger en URL för projektet ”Madeira” bör 
 
 **”Inloggningen misslyckades”** Om du får felet ”Inloggningen misslyckades” när du loggar in på instrumentpanelen med autentiseringsuppgifter för Project ”Madeira” kan det bero på något av följande problem:  
 
-    - Det konto som du använder har inte behörighet att läsa Project ”Madeira”-data från ditt konto. Verifiera ditt Project ”Madeira”-konto och kontrollera att du har använt rätt web service-åtkomstnyckel som lösenord och försök sedan igen.  
-    - Project ”Madeira”-instansen som du försöker ansluta till har inte ett giltigt SSL-certifikat. I det här fallet visas ett mer detaljerat felmeddelande (”det går inte att upprätta betrodd relation med SSL”). Observera att självsignerade certifikat inte stöds.  
+   - Det konto som du använder har inte behörighet att läsa Project ”Madeira”-data från ditt konto. Verifiera ditt Project ”Madeira”-konto och kontrollera att du har använt rätt web service-åtkomstnyckel som lösenord och försök sedan igen.  
+   - Project ”Madeira”-instansen som du försöker ansluta till har inte ett giltigt SSL-certifikat. I det här fallet visas ett mer detaljerat felmeddelande (”det går inte att upprätta betrodd relation med SSL”). Observera att självsignerade certifikat inte stöds.  
 
 **”Oops”** Om du ser ett”Oops”-fel efter autentiseringsdialogrutan beror detta oftast på problem med att ansluta till data för innehållspaketet. Kontrollera att URL: en följer mönstret som angavs tidigare:  
     https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')

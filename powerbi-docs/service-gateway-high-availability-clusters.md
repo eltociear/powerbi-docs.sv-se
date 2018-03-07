@@ -17,11 +17,12 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: davidi
-ms.openlocfilehash: 0288e9613a187b64e5bc71c952e01d70f1f56012
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Gateways
+ms.openlocfilehash: 717451afc35614e9c356e5748f39f0302fa6244e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Kluster med hög tillgänglighet för lokala datagateway
 Du kan skapa **högtillgängliga kluster** av **lokala datagatewayer**, för att se till att din organisation kan komma åt lokala dataresurser som används i Power BI-rapporter och instrumentpaneler. Sådana kluster gör att gateway-administratörer kan gruppera gatewayer för att undvika enskilda felpunkter för åtkomst av lokala dataresurser. Den här artikeln beskriver de steg du kan vidta för att skapa ett kluster med hög tillgänglighet av lokala datagatewayer och bästa praxis när du konfigurerar dem. Gatewaykluster för hög tillgänglighet kräver uppdateringen från november 2017 eller senare för lokal datagateway.
@@ -92,4 +93,4 @@ När du är klar kan du använda kommandona i följande tabell för att hantera 
 -   [Konfigurera proxyinställningar för den lokala datagatewayen](service-gateway-proxy.md)  
 -   [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
 
-Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

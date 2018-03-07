@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/08/2017
 ms.author: maggies
-ms.openlocfilehash: 0dd906bc1b165793e9ff91f64324eeb8e1d1266c
-ms.sourcegitcommit: b780b7108fd9b52398b8377b52836f0e0fedc96e
+LocalizationGroup: Create reports
+ms.openlocfilehash: ea6da7eb23268e7605ff46281c63030a6d72798c
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Skapa rapporter som är optimerade för Power BI-mobilapparna
 När du [skapar en rapport i Power BI Desktop](desktop-report-view.md) kan du förbättra användningen i mobilappar genom att skapa en version av rapporten som är specifik för mobiltelefoner. Du anpassar rapporten för telefonen genom att arrangera om och ändra storlek på visuella objekt, samt kanske ta bort några för en optimal upplevelse. Du kan dessutom skapa [*dynamiska* visuella objekt](#optimize-a-visual-for-any-size) och [dynamiska utsnitt](#enhance-slicers-to-to-work-well-in-phone-reports) som anpassar sin storlek så att de ser bra ut på en telefon. Om du lägger till filter i din rapport, visas de filtren dessutom automatiskt i telefonrapporten. Dina rapportläsare kan se dem och filtrera rapporten med dem.

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: 3b05064265e951e64d1f34d801555e837fc4d8fb
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 059f842dae35fa7a46094d0ade990df7514908d6
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Anslut till Microsoft Dynamics Marketing med Power BI
 Innehållspaketet Microsoft Dynamics Marketing för Power BI låter dig enkelt komma åt och analysera dina data från Dynamics Marketing. Innehållspaketet använder sig av en beskrivande modell ovanpå OData-flödet, med alla enheter och mått som behövs, till exempel program, kampanjer, marknadsföringskontakter och företag, leads, lead-interaktioner och lead-bedömning, marknadsföringsmail och webbplatser, beteendeobservationer, budgetar, finansiella transaktioner, prestanda-KPI:er och mycket mer. 

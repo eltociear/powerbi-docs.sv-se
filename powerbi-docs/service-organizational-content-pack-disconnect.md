@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: acd8ec1afaa454eaa62f66d09b6e0a2c63cc6289
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: 97ffc337b98dd6a44e823e673b845852398c67d5
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Ta bort din anslutning till ett Power BI-organisationsinnehållspaket
 En medarbetare har skapat ett innehållspaket. Du identifierade det i AppSource och har lagt till det på din Power BI-arbetsyta. Nu behöver du det inte längre.  Hur tar du bort det?
@@ -38,5 +39,5 @@ När du tar bort datauppsättningen tar du också bort alla associerade rapporte
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md) 
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
 * [Grundläggande begrepp för Power BI](service-basic-concepts.md)  
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

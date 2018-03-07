@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 7e959054300dafcab5f38bfce121fe0ac91dca06
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+LocalizationGroup: Learn more
+ms.openlocfilehash: acdaa95908cd03006170eb06ddfc780c836c64ac
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Självstudie: Skapa beräknade kolumner i Power BI Desktop
 Ibland innehåller de data som du analyserar inte det fält som du behöver för att kunna hämta ett visst resultat. Det är därför vi använder beräknade kolumner. Beräknade kolumner använder DAX-formler till att definiera värden för en kolumn. Dessa värden kan bestå av nästan vad som helst, oavsett om det gäller att sammanfoga textvärden från ett antal olika kolumner i modellen, eller att beräkna ett numeriskt värde från andra värden. Anta till exempel att dina data har kolumnerna Stad och Stat (som fält i fältlistan), men du vill ha det enda fältet Plats med båda som ett enda värde, exempelvis Miami, FL. Detta är exakt vad beräknade kolumner är till för.

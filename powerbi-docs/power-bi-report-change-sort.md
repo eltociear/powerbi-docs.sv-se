@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: aeb22c23b0ef22afd44592c1ceb90537878042d9
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 8160011a30b54345d446f352148665e3840323d9
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
 I en Power BI-rapport kan du sortera de flesta visualiseringar alfabetiskt efter namnen på kategorierna i diagrammet eller efter de numeriska värdena i varje kategori. Det här diagrammet sorteras exempelvis på butiksnamn.

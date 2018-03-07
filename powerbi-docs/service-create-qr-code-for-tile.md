@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 73cb9769fad31ad4b12b0df6c9492079d5cecaa8
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 3a01f7c8ab679e2820261c7947a9561ff5513d60
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en panel i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.

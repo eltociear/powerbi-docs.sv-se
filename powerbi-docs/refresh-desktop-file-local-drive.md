@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 3ed7e6dfafe439671d0890154e6b02e1ce81c812
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Data refresh
+ms.openlocfilehash: 69b755b1e4844f5731ecf13a8be154f1684bb8fb
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Uppdatera en datauppsättning som skapats från en Power BI Desktop-fil på en lokal disk
 ## <a name="whats-supported"></a>Vad stöds?

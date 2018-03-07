@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: fd48ed25d2599cfa16c1b3ed1f7c49cadd7304f5
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 6272b3f175d7da851e5d8086c574a91f0f00c933
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-project-online-with-power-bi"></a>Anslut till Project Online med Power BI
 Microsoft Project Online är en flexibel lösning för hantering av projektportföljer (PPM) och dagligt arbete. Project Online låter organisationer komma igång, prioritera investeringar i projektportföljer och leverera det avsedda verksamhetsvärdet. Project Online-innehållspaketet för Power BI låter dig utforska dina projektdata, med mått som portföljstatus och projektefterlevnad.

@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 4e2199aa5569249ec9706ee1ca02a7ca14eac080
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Data from databases
+ms.openlocfilehash: f07abb6b878ba96c1e5a84168ded6e466c8fb18e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="azure-and-power-bi"></a>Azure och Power BI
 Med **Azures** tjänster och **Power BI** kan du förvandla dina bearbetningar till analyser och rapporter som ger inblick i din verksamhet i realtid. Oavsett om din databearbetning är molnbaserad eller lokal, enkel eller komplex, från en källa eller massivt skalad, lagrad eller i realtid, har Azure och Power BI en inbyggd anslutning och integrering som ger dina Business Intelligence-åtgärder liv.

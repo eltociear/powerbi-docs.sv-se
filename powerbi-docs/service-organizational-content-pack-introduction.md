@@ -17,15 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 7ea0fbf09196af9ffecaf5ae54ea0754fdd44a0b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: 00ddec3dbf4087935a7c3583138dabb2a83f0ae5
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
 > [!NOTE]
-> Har du hört om de nya *apparna* ännu? Appar är det nya sättet att distribuera innehåll till stora målgrupper i Power BI. Vi rekommenderar att du använder appar istället för innehållspaket för organisationer eller skrivskyddade arbetsytor. Läs [mer om appar](service-install-use-apps.md).
+> Har du hört om de nya *apparna* ännu? Appar är det nya sättet att distribuera innehåll till stora målgrupper i Power BI. Vi rekommenderar att du använder appar istället för organisationsinnehållspaket eller skrivskyddade arbetsytor. Läs [mer om appar](service-install-use-apps.md).
 > 
 > 
 
@@ -85,5 +86,5 @@ Alla medlemmar i distributionsgruppen har samma behörighet för data som skapar
 * [Skapa och publicera ett organisationsinnehållspaket](service-organizational-content-pack-create-and-publish.md)
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
 * [Power BI – grundläggande begrepp](service-basic-concepts.md)
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

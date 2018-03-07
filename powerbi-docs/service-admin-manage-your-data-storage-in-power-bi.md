@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
-ms.openlocfilehash: 7f9651ef25d8cfe98efc163c67034fedb225dbcb
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: a98fe0d35ad7066d83e17986ce2e3b43341b033a
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="manage-your-data-storage"></a>Hantera din datalagring
 Läs hur du hanterar datalagring individuellt eller i apparbetsytan för att kontrollera att du kan fortsätta att publicera rapporter och datauppsättningar.

@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: ca1761c0708681e6b413ba679980bacb3931e01d
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Gateways
+ms.openlocfilehash: 7283ee62838779590bbc01eb8b4348cfc7873dc1
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
 Det är möjligt för användare i din organisation att ha åtkomst till lokala data (till vilka de redan har åtkomstauktorisering), men innan dessa användare kan ansluta till den lokala datakällan, så måste en lokal datagateway ha installerats och konfigurerats. Gatewayen underlättar snabb och säker dold kommunikation mellan en användare i molnet till din lokala datakälla och sedan tillbaka till molnet.
@@ -37,7 +38,7 @@ Den här artikeln ger inte stegvisa anvisningar om hur du installerar och konfig
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## <a name="sign-in-account"></a>Inloggningskonto
-Användare kan logga in med antingen ett arbets- eller skolkonto. Det här är ditt organisationskonto. Om du har registrerat dig för ett erbjudande för Office 365 och inte angav din faktiska e-post, kan det se ut som nancy@contoso.onmicrosoft.com. Ditt konto, inom en molntjänst, lagras i en klient i Azure Active Directory (AAD). Kontot AAD UPN kommer i de flesta fall att matcha e-postadressen.
+Användarna kan logga in med antingen ett arbets- eller skolkonto. Det här är ditt organisationskonto. Om du har registrerat dig för ett Office 365-erbjudande och inte angav din faktiska e-postadress till arbetet, kan det se ut så här nancy@contoso.onmicrosoft.com. Ditt konto, inom en molntjänst, lagras i en klient i Azure Active Directory (AAD). Kontot AAD UPN kommer i de flesta fall att matcha e-postadressen.
 
 ## <a name="authentication-to-on-premises-data-sources"></a>Autentisering till lokala datakällor
 Lagrade autentiseringsuppgifter används för att ansluta till lokala datakällor från gatewayen med undantag för Analysis Services. Oavsett den enskilda användaren så använder gatewayen lagrade autentiseringsuppgifter för att ansluta.
@@ -67,7 +68,7 @@ För att Analysis Services ska kunna avgöra om en användare som ansluter tillh
 EffectiveUserName kan inte användas på en Analysis Services-server som inte är domänansluten. Analysis Services-servern måste vara ansluten till en domän, så att eventuella fel vid inloggningen undviks.
 
 ## <a name="how-do-i-tell-what-my-upn-is"></a>Hur vet jag vilken UPN jag har?
-Kanske vet du inte vilken din UPN är, och du är kanske inte en domänadministratör. Du kan använda följande kommando från din arbetsstation för att ta reda på ditt kontos UPN-namn.
+Du kanske inte vet vilken din UPN är, och du är kanske inte domänadministratör. Du kan använda följande kommando från din arbetsstation för att ta reda på ditt kontos UPN-namn.
 
     whoami /upn
 
@@ -128,5 +129,5 @@ Istället för att diskutera gatewayfelsökning här, så har vi placerat en ser
 [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

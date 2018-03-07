@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/20/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: a07e6020a18ab525c97069d5c635304e9b32d0d1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Model your data
+ms.openlocfilehash: 00b70b6e56d11d0d7dda959f1983cc4631f53ff9
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
 I **Power BI Desktop** kan du ange datakategori för en kolumn så att Power BI Desktop vet hur den ska hantera dess värden i en visualisering.

@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 2d36e845c5b3c0aade6da37a8c04b1330d1b12cb
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Data from files
+ms.openlocfilehash: 3ebe9edbd77bf1661effd34c798c822305e265ae
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="get-data-from-power-bi-desktop-files"></a>Hämta data från Power BI Desktop-filer
 ![](media/service-desktop-files/pbid_file_icon.png)

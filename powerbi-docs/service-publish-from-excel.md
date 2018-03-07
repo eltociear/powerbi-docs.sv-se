@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 28cd547a1d6f886d23c1fd8aa717189755aa9b19
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Data from files
+ms.openlocfilehash: ad398cedd92350618e0f23a33c85a33e6abd934b
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Publicera till Power BI från Excel 2016
 Med Excel 2016 kan du publicera dina Excel-arbetsböcker direkt till din [Power BI](https://powerbi.microsoft.com)-webbplats, där du kan skapa interaktiva rapporter och instrumentpaneler baserat på data i arbetsboken. Du kan sedan dela dina insikter med andra i din organisation.
@@ -94,5 +95,5 @@ När du är klar kan du gå till Power BI direkt från Excel.
 
 ## <a name="next-steps"></a>Nästa steg
 [Excel-data i Power BI](service-excel-workbook-files.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

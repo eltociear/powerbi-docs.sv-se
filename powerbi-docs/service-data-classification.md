@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: amac
-ms.openlocfilehash: d9693d89561bc0f942226934bc401a587a6ae20d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: aed13e5bc7a21caa87e4c5b25fd61d55dcfc6129
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="dashboard-data-classification"></a>Klassificering av instrumentpanelsdata
 Varje instrumentpanel är olika och beroende på vilka data du är ansluten till kommer du att finna att du och de kollegor du delar data med måste vidta olika säkerhetsåtgärder beroende på hur känsliga dina data är. Vissa instrumentpaneler bör aldrig delas utanför företaget eller skrivas ut, medan andra kan delas fritt. Med hjälp av klassificering av instrumentpanelen kan du öka medvetenheten hos de som använder dina instrumentpaneler om vilken säkerhetsnivå som ska användas. Du kan tagga dina instrumentpaneler med klassificeringar som har definierats av ditt företags IT-avdelning så att alla som ser innehållet har samma förståelse för datans känslighet.

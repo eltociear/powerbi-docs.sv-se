@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 8e7f233ee453de2b220383ae858c3c64fe95d2f6
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 94c1e23fc012e40763247a28e8930a9abdd81425
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="histograms"></a>Histogram
 Du kan skapa histogram på många olika sätt i Power BI. Vi börjar med det enklaste och går vidare därifrån.
@@ -39,7 +40,7 @@ Se till att datatypen är ett tal för den resulterande aggregeringskolumnen. Nu
 ## <a name="defining-a-histogram-that-supports-brushing"></a>Definiera ett histogram som stöder borstning
 Med borstning avses när visuella data länkas samman, så att när en användare väljer en datapunkt i ett visuellt objekt, så markerar eller filtrerar övriga visuella objekt de datapunkter som relaterar till den valda datapunkten.  Eftersom vi hanterar data i databasfrågor, måste vi skapa en relation mellan tabellerna, och se till att vi vet vilka detaljelement som relaterar till bucketen i histogrammet och vice versa.
 
-Starta processen med hjälp av alternativet *Referens* för den fråga som innehåller det fält utifrån vilket du vill skapa ett histogram.  Ge den nya frågan namnet *Bucketar*.  Låt oss i det här exemplet kalla den ursprungliga frågan *Information*.  Ta sedan bort alla kolumner utom den kolumn som du ska använda som bucket för histogrammet.  Använd nu frågefunktionen *Ta bort dubbletter*. Den finns på snabbmenyn som visas när du markerar kolumnen. Det återstående värdena i kolumnen kommer då att vara unika. Om du har decimaltal kan du först använda tipset om hur man definierar bucketar när man skapar histogram för att få en hanterbar uppsättning bucketar.  Nu är det dags att kontrollera de data som visas i frågeförhandsvisningen. Om du ser tomma värden eller nullvärden måste du åtgärda dessa innan du kan skapa någon relation. Mer information finns i ”Skapa en relation om mina data har nullvärden eller tomma värden”. Med det kan vara problematiskt att använda den här metoden på grund av behovet att sortera. Hur du gör för att få bucketarna att sortera korrekt beskrivs i ”Sorteringsordning: få kategorier att visas i önskad ordning”. 
+Starta processen med hjälp av alternativet *Referens* för den fråga som innehåller det fält utifrån vilket du vill skapa ett histogram.  Ge den nya frågan namnet *Bucketar*.  Låt oss i det här exemplet kalla den ursprungliga frågan *Information*.  Ta sedan bort alla kolumner utom den kolumn som du ska använda som bucket för histogrammet.  Använd nu frågefunktionen *Ta bort dubbletter*. Den finns på snabbmenyn som visas när du markerar kolumnen. Det återstående värdena i kolumnen kommer då att vara unika. Om du har decimaltal kan du först använda tipset om hur man definierar bucketar när man skapar histogram för att få en hanterbar uppsättning bucketar.  Nu är det dags att kontrollera de data som visas i frågeförhandsgranskningen. Om du ser tomma värden eller nullvärden måste du åtgärda dessa innan du kan skapa någon relation. Mer information finns i ”Skapa en relation om mina data har nullvärden eller tomma värden”. Med det kan vara problematiskt att använda den här metoden på grund av behovet att sortera. Hur du gör för att få bucketarna att sortera korrekt beskrivs i ”Sorteringsordning: få kategorier att visas i önskad ordning”. 
 
 > [!NOTE]
 > Det kan vara bra att tänka på sorteringsordningen innan du skapar några visuella objekt.   

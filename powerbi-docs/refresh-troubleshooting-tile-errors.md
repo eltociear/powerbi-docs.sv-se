@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: acdf174ecf580593e05a784f49122dd33b484cfa
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Troubleshooting
+ms.openlocfilehash: 26f92ee511b3a03f8e08aae0a33bb6f60c12908b
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="troubleshooting-tile-errors"></a>Felsök panelfel
 Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklaring.
@@ -71,5 +72,5 @@ Om du fortfarande har problem, kan du [kontakta supporten](https://support.power
 ## <a name="next-steps"></a>Nästa steg
 [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Felsök den personliga Power BI-gatewayen](service-admin-troubleshooting-power-bi-personal-gateway.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

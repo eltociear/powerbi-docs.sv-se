@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: f3401fac7b0e7e6b5b5404a5a837822772e1d70f
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Visualizations
+ms.openlocfilehash: dca772fd2a1b8f40fa61f1abc41145e8ff6e5a8a
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="doughnut-charts-in-power-bi-tutorial"></a>Ringdiagram i Power BI (självstudier)
 Ett ringdiagram liknar ett cirkeldiagram så till vida att det visar förhållandet mellan delarna och helheten. Den enda skillnaden är att mitten är tom och har utrymme för en etikett eller ikon.
