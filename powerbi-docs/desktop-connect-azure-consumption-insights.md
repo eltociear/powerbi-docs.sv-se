@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: eb5a41c75e26c0c9c5a6644b2ad0122d2d9623b9
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+LocalizationGroup: Connect to data
+ms.openlocfilehash: 9127f7b2e19a304c514d5e6449cf1ceb7ecddb13
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Ansluta till Azure Consumption Insights i Power BI Desktop (beta)
 Med anslutningsappen **Azure förbrukning Insights** kan du använda **Power BI Desktop** för att ansluta till Azure och få detaljerade data och information om din organisations användning av Azure-tjänster. Du kan också skapa mått, anpassade kolumner och visuella objekt för att rapportera och dela information om organisationens Azure-användning. Den här versionen av **Azure Consumption and Insights** är en beta-version och kan ändras.

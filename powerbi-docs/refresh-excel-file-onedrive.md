@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 0ba7acfd620f589e24cc66ad96b5f0fbb1996107
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Data refresh
+ms.openlocfilehash: c20ba2a33a88ba8c6ab27cf60b02babf3ebb4cad
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på OneDrive eller SharePoint Online
 Du kan importera Excel-arbetsböcker som lagras på din lokala dator eller i lagringsutrymmen i molnet, till exempel OneDrive för företag eller SharePoint Online. Vi ska titta på fördelarna med att använda lagring i molnet för dina Excel-filer. Mer information om hur du importerar Excel-filer till Power BI finns i [Hämta data från Excel-arbetsboksfiler](service-excel-workbook-files.md).
@@ -34,9 +35,9 @@ När du importerar en Excel-arbetsbok från ditt personliga OneDrive, importeras
 Du kan uppdatera på datauppsättningen i Power BI-tjänsten. När du uppdaterar datauppsättningen manuellt eller schemalägger en uppdatering för den, ansluter Power BI direkt till de externa datakällorna för att fråga efter uppdaterade data som Power BI därefter läser in i datauppsättningen. Uppdatering av en datauppsättning inifrån Power BI uppdaterar inte data i arbetsboken på OneDrive eller SharePoint Online. 
 
 ## <a name="whats-supported"></a>Vad stöds?
-I Power BI stöds Uppdatera nu och Uppdatera schema för datauppsättningar som skapas från Power BI Desktop-filer som importerats från en lokal enhet där Hämta data/Frågeredigeraren används för att ansluta till och läsa in data från någon av följande datakällor:  
+I Power BI stöds Uppdatera nu och Schemalägg uppdatering för datauppsättningar som skapas från Power BI Desktop-filer som importerats från en lokal enhet där Hämta data/Frågeredigeraren används för att ansluta till och läsa in data från någon av följande datakällor:  
 
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Alla datakällor online som visas i Hämta data och Frågeredigeraren i Power BI Desktop.
 * Alla lokala datakällor som visas i Hämta data och Frågeredigeraren i Power BI Desktop, förutom Hadoop-filer (HDFS) och Microsoft Exchange.
 
@@ -53,7 +54,7 @@ Om du både har en personlig OneDrive och OneDrive för företag, bör du behål
 
 Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men på din personliga OneDrive loggar du troligen in med ett annat [Microsoft-konto](http://www.microsoft.com/account/default.aspx).
 
-När du loggar in med ditt Microsoft-konto bör du markera Jag vill förbli inloggad. Power BI kan sedan synkronisera alla uppdateringar som du gör i filen i Power BI Desktop med datauppsättningarna i Power BI.  
+När du loggar in med ditt Microsoft-konto bör du markera Jag vill förbli inloggad. Power BI kan sedan synkronisera alla uppdateringar som du gör i filen i Power BI Desktop med datauppsättningarna i Power BI  
     ![](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
 
 Om du gör ändringar i din fil på OneDrive som inte kan synkroniseras med datauppsättningen eller rapporterna i Power BI, eftersom autentiseringsuppgifterna för ditt Microsoft-konto kan ha ändrats, måste du ansluta till och importera din fil igen från din personliga OneDrive.
@@ -92,7 +93,7 @@ Inga problem. När du använder Power Pivot för att ansluta till och fråga eft
 ## <a name="how-do-i-schedule-refresh"></a>Hur gör jag för att schemalägga uppdateringar?
 När du konfigurerar ett uppdateringsschema, ansluter Power BI direkt till datakällorna med anslutningsinformationen och autentiseringsuppgifterna i datauppsättningen för att fråga efter uppdaterade data, och läser sedan in uppdaterade data i datauppsättningen. Även alla visualiseringar i rapporter och på instrumentpaneler baserade på den datauppsättningen i Power BI-tjänsten uppdateras.
 
-Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfigurera Uppdatera schema](refresh-scheduled-refresh.md).
+Mer information om hur du konfigurerar schemalagda uppdateringar finns i [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md).
 
 ## <a name="when-things-go-wrong"></a>Om något går fel
 Om något går fel beror det vanligtvis på att Power BI inte kan logga in till datakällor, eller att gatewayen är offline om datauppsättningen ansluter till en lokal datakälla. Kontrollera att Power BI kan logga in till datakällor. Om det lösenord som du använder för att logga in till en datakälla ändras eller om Power BI loggas ut från en datakälla, bör du försöka logga in till dina datakällor igen i datakällans autentiseringsuppgifter.
@@ -109,5 +110,5 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problem
 
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

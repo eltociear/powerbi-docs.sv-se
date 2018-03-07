@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: d1c247b1c01d87dd273c5a3caca19d4e84ac5392
-ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
+LocalizationGroup: Create reports
+ms.openlocfilehash: d43b9ec0d471c8a824d3c4d081a38f3bea6ad1e9
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Använd R-baserade anpassade visuella objekt i Power BI
 I **Power BI Desktop** och **Power BI-tjänsten** kan du använda R-baserade anpassade visuella objekt utan att ha någon kunskap om R och utan några R-skript. Det innebär att du kan använda den analytiska och visuella kraften i visuella R-objekt och R-skript, utan att du behöver lära dig R eller utföra någon programmering själv.

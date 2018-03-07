@@ -16,11 +16,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: maggies
-ms.openlocfilehash: a833961bd2f9ad3af77c6d90a95c0e5b1c307d1a
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Share your work
+ms.openlocfilehash: 406e1219296c5b2491e3b59d5a8cd6f50cfc2376
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 I Power BI samordnar *appar* relaterade instrumentpaneler och rapporter på ett och samma ställe. Personer i organisationen kan skapa och distribuera appar med viktig information. [Externa tjänster](service-connect-to-services.md), som du kanske redan använder, t.ex. Google Analytics och Microsoft Dynamics CRM, erbjuder också Power BI-appar. 

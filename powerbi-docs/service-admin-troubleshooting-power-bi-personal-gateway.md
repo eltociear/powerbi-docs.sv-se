@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 6fbd9f56099e4053524a04680c0d4c0c366ce068
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Troubleshooting
+ms.openlocfilehash: b94bb40de33ced9b7b7fee811aeff5c18ee43cae
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Felsöka Power BI Gateway – Personal
 Nedan går vi igenom några vanliga problem som kan uppstå när du använder Power BI Gateway – Personal.
@@ -112,11 +113,11 @@ Se följande artikel om det uppstår ett fel med uppdateringen av en panel på i
 
 ## <a name="tools-for-troubleshooting"></a>Verktyg för felsökning
 ### <a name="refresh-history"></a>Uppdateringshistorik
-Med **Uppdateringshistorik** kan du se vilka fel som har inträffat och få användbara data om du behöver skapa en supportbegäran. Du kan visa både schemalagda uppdateringar och sådana som görs på begäran. Så här går du till **Uppdateringshistorik**:
+Med **Uppdateringshistorik** kan du se vilka fel som har inträffat och få användbara data om du behöver skapa en supportbegäran. Du kan visa både schemalagda uppdateringar och sådana som görs på begäran. Så här går du till **Uppdateringshistorik**.
 
-1. I Power BI-navigeringsfönstret i **Datauppsättningar** väljer du en datauppsättning &gt;Öppna meny&gt; **Uppdatera schema**.
+1. I Power BI-navigeringsfönstret i **Datauppsättningar** väljer du en datauppsättning &gt;Öppna meny&gt; **Schemalägg uppdatering**.
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
-2. I **Inställningar för ...** &gt;**Uppdatera schema**, väljer du **Uppdateringshistorik**.  
+2. I **Inställningar för...** &gt;**Uppdatera schema**, väljer du **Uppdateringshistorik**.  
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh-2.png)
    
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/refresh-history.png)
@@ -129,7 +130,7 @@ Det finns flera händelseloggar som kan ge information. De två första, **Data 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Fiddlerspårning
-[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se till- och från-trafiken med Power BI-tjänsten från klientdatorn. Här kan visas fel och annan relaterad information.
+[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se trafiken från och till med Power BI-tjänsten från klientdatorn. Här kan visas fel och annan relaterad information.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -155,5 +156,5 @@ Som alternativ kan du gå till **Temp-mappen** (%temp%) och leta efter filer som
 [Power BI Gateway – Personal](personal-gateway.md)  
 [Felsöka panelfel](refresh-troubleshooting-tile-errors.md)  
 [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

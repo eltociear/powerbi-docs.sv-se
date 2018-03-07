@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: a3e0c927cb669b3af16dde65c10f70e4a7dabe26
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Connect to data
+ms.openlocfilehash: b61285c54d337ce85ab470180f8cfa2a66f0820e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Ansluta till datakällor i Power BI Desktop
 Med Power BI Desktop kan du enkelt ansluta till den ständigt växande världen av data. Om du inte har Power BI Desktop, kan du [hämta](http://go.microsoft.com/fwlink/?LinkID=521662) och installera det.
@@ -42,7 +43,7 @@ Du väljer **Hämta data \> Webb** och anger adressen.
 
 ![](media/desktop-connect-to-data/connecttodata_3.png)
 
-När du väljer **OK** används **Fråge**funktionen i Power BI Desktop. Power BI Desktop kontaktar webbresursen och fönstret **Navigator** returnerar resultatet från den sidan. I det här fallet hittade den en tabell (tabell 0) och ett övergripande dokument. Vi vill använda tabellen så vi väljer den från listan. Fönstret **Navigator** visar en förhandsgranskning.
+När du väljer **OK** används **Fråge**funktionen i Power BI Desktop. Power BI Desktop kontaktar webbresursen och fönstret **Navigator** returnerar resultatet från den sidan. I det här fallet hittade den en tabell (tabell 0) och ett övergripande dokument. Vi vill använda tabellen så vi väljer den från listan. **Navigerings**fönstret visar en förhandsgranskning.
 
 ![](media/desktop-connect-to-data/datasources_fromnavigatordialog.png)
 

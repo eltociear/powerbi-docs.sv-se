@@ -1,7 +1,28 @@
---rubrik: Forma och kombinera data i Power BI Desktop-beskrivning: Forma och kombinera data i Power BI Desktop-tjänster: powerbi documentationcenter: '' author: davidiseminger manager: kfile backup: '' editor: '' tags: '' qualityfocus: no qualitydate: ''''
-
-ms.service: powerbi ms.devlang: NA ms.topic: article ms.tgt_pltfrm: NA ms.workload: powerbi ms.date: 01/30/2018 ms.author: davidi
-
+---
+title: Forma och kombinera data i Power BI Desktop
+description: Forma och kombinera data i Power BI Desktop
+services: powerbi
+documentationcenter: 
+author: davidiseminger
+manager: kfile
+backup: 
+editor: 
+tags: 
+qualityfocus: no
+qualitydate: 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 01/30/2018
+ms.author: davidi
+LocalizationGroup: Transform and shape data
+ms.openlocfilehash: c8f2419ae2898a59907763392eb86b4877b4fd75
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="shape-and-combine-data-in-power-bi-desktop"></a>Forma och kombinera data i Power BI Desktop
 Med **Power BI Desktop** kan du ansluta till flera olika typer av datakällor och sedan forma data efter dina behov. *Formatera* data innebär att du omvandlar data – till exempel byter namn på kolumner eller tabeller, ändrar text till tal, tar bort rader, anger den första raden som rubrik och så vidare. *Kombinera* data innebär att kopplar till två eller flera datakällor, formar dem efter behov och sammanfogar dem i en användbar fråga.

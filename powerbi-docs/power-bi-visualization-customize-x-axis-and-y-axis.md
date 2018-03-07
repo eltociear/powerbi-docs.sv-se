@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 78fa4125c87415629ec4fb7021b97dfe7d5d53b4
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+LocalizationGroup: Visualizations
+ms.openlocfilehash: d4156429b728718fa89131a46ebd0f5dd5aabf67
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="customize-x-axis-and-y-axis-properties-tutorial"></a>Anpassa egenskaper för x-axeln och y-axeln (Självstudier)
 I den här kursen lär du dig många olika sätt att anpassa x-axeln och y-axeln i visuella objekt. Det är inte alla axlar som kan anpassas. Cirkeldiagram, till exempel, har inga axlar. Anpassningsalternativen kan också variera från ett visuellt objekt till ett annat och det finns för många alternativ för att täcka dem i en enda artikel. Så tar vi en titt på några av de mest använda axelanpassningarna så att du kan vänja dig vid att använda fliken visuell formatering i arbetsytan för Power BI-rapporter.  

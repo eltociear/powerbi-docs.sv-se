@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 173c02c2d44236539c81edc2612e944b01641653
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: d8aac093b06910d5d32c2e5d33951db9448757c4
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Hantera din apparbetsyta i Power BI och Office 365
 Som skapare eller administratör för en [apparbetsyta i Power BI](service-install-use-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365. 
@@ -81,5 +82,5 @@ När du distribuerar appen från apparbetsytan bli bilden som du lägger till h�
 ## <a name="next-steps"></a>Nästa steg
 * [Vad är appar i Power BI?](service-install-use-apps.md)
 * [Skapa appar och apparbetsytor i Power BI](service-create-distribute-apps.md)
-* Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 7dc805f8e791a839bc6b69eb07a71496b64844a2
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Create reports
+ms.openlocfilehash: 1b6b1a3ecda7d3f827975da8fcfec5d9d5b67023
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Använd stödlinjer och fäst till rutnät i Power BI Desktop-rapporter
 Rapportarbetsytan för**Power BI Desktop** erbjuder stödlinjer som gör att du snyggt kan justera visuell information på en rapportsida. Den erbjuder även funktionen fäst till rutnät så att visuell information i dina rapporter blir snyggt justerad och jämnt fördelade.

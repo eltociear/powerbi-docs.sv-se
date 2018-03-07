@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 808f8b12a0deda90b74eac2ca45748e16315988f
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Create reports
+ms.openlocfilehash: cb23034c207bd272f716e8074bb3702ea30e893a
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sortera efter kolumn i Power BI Desktop
 I **Power BI Desktop** och **Power BI-tjänsten** kan du ändra utseendet på ett visuellt objekt genom att sortera det enligt olika datafält. Genom att ändra hur du sorterar ett visuellt objekt kan du markera den information som du vill förmedla och vara säker på att det visuella objektet speglar den trend (eller betoning) som du vill förmedla.

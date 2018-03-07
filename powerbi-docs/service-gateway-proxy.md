@@ -17,11 +17,12 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: 1598a2580c24623abc1bbb5fb5a3590ab0f2a6f6
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Gateways
+ms.openlocfilehash: 27b8d36ed870501170efdb81c40edb6cb4727499
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfigurera proxyinställningar för den lokala datagatewayen
 Din arbetsmiljö kan kräva att du går via en proxy för att ansluta till Internet. Detta kan förhindra att den lokala datagatewayen ansluter till tjänsten.
@@ -90,5 +91,5 @@ När du konfigurerar proxyinställningarna till att använda standardautentiseri
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway (personligt läge)](service-gateway-personal-mode.md)
 [Brandväggsinformation](service-gateway-onprem-tshoot.md#firewall-or-proxy)  
-Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

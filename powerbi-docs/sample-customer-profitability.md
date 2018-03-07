@@ -15,21 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 2ce970ee31b06447055d059ed9b604c169713030
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c0aaa29a0d933da9fa61d08628766963144e0f76
+ms.sourcegitcommit: c45498071d582dcca264216863906ffaae382523
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/01/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Översikt av exemplet för kundlönsamhet
 Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpanel, en rapport och en datauppsättning för ett företag som tillverkar marknadsföringsmaterial. Den här instrumentpanelen skapades av en ekonomichef för att visa en statistiköversikt för hennes 5 enhetschefer, produkter, kunder och bruttomarginal. I korthet kan hon se vilka faktorer som påverkar lönsamheten.
 
-<<<<<<< HEAD ![](media/sample-customer-profitability/power-bi-dash.png)
+![](media/sample-customer-profitability/power-bi-dash.png)
 
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats. Data är tillgängliga i flera format: innehållsförpackning/-app, Excel-arbetsbok eller PBIX-fil för Power BI Desktop. Se [Exempeldatauppsättningar](sample-datasets.md).
 
@@ -58,14 +58,7 @@ Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning me
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-<a name="if-you-want-to-dig-into-the-datasource-for-this-sample-its-also-available-as-an-excel-workbookhttpgomicrosoftcomfwlinklinkid529781-the-workbook-contains-power-view-sheets-that-you-can-view-and-modify-to-see-the-raw-data-select-power-pivot--manage"></a>Om du vill gå djupare in i datakällan för det här exemplet, är det också tillgängligt som en [(Excel-arbetsbok)](http://go.microsoft.com/fwlink/?LinkId=529781). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata, väljer du **Power Pivot > Hantera**.
-=======
-
-Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats. Data är tillgängliga i flera format: innehållsförpackning/-app, Excel-arbetsbok eller PBIX-fil för Power BI Desktop. Se [Exempeldatauppsättningar](sample-datasets.md).
-
-### <a name="prerequisites"></a>Förutsättningar
-Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com), gå till **Hämta data > Exempel > Kundlönsamhet > Anslut** för att hämta din egen kopia av exemplet.
->>>>>>> def2c8e086d65b6a3fb92247175730746226ae3e
+Om du vill gå djupare in i datakällan för det här exemplet, är det också tillgängligt som en [(Excel-arbetsbok)](http://go.microsoft.com/fwlink/?LinkId=529781). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata, väljer du **Power Pivot > Hantera**.
 
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
