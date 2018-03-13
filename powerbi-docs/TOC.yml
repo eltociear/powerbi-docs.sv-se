@@ -664,11 +664,13 @@
           href: desktop-ssas-multidimensional.md
         - name: Ansluta till CSV-filer i Power BI Desktop
           href: desktop-connect-csv.md
-        - name: Ansluta till en Impala-databas i Power BI Desktop (förhandsgranskning)
+        - name: Ansluta till Adobe Analytics i Power BI Desktop (förhandsversion)
+          href: desktop-connect-csv.md
+        - name: Anslut till en Impala-databas i Power BI Desktop
           href: desktop-connect-impala.md
         - name: Ansluta till en OData-feed i Power BI Desktop
           href: desktop-connect-odata.md
-        - name: Ansluta till en Amazon Redshift-databas i Power BI Desktop (förhandsgranskning)
+        - name: Ansluta till en Amazon Redshift-databas i Power BI Desktop
           href: desktop-connect-redshift.md
         - name: Ansluta till en webbsida från Power BI Desktop
           href: desktop-connect-to-web.md
@@ -768,6 +770,8 @@
           href: desktop-slicers.md
         - name: Bokmärken i Power BI
           href: desktop-bookmarks.md
+        - name: Skapa anpassade knappbeskrivningar för rapporter (förhandsversion)
+          href: desktop-tooltips.md
         - name: Använda rapportteman
           href: desktop-report-themes.md
         - name: Använda snabbmått
