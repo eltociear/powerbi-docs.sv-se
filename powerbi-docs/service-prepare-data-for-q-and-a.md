@@ -19,10 +19,10 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: b45c259cf90668fea878c220670f3efa76b482fd
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Så här får du dina Excel-data att fungera bra med frågor och svar i Power BI
 Om du är en person som skapar datamodeller eller bygger Excel-arbetsböcker som ska användas med Power BI kan du läsa på...

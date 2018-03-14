@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/04/2018
 ms.author: maggies
-ms.openlocfilehash: 6803c8aa2898c9ab27b515c04d7db813e7d44ea4
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 7285e15b6f63cc53b9221a46e0a524313c413cda
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="take-power-bi-anywhere-in-mobile-apps-for-your-mobile-device"></a>Ta med dig Power BI överallt i apparna för dina mobila enheter
 Du kan visa dina Power BI-instrumentpaneler och -rapporter i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och dina lokala Power BI-rapporter på [Power BI-rapportservern](report-server/get-started.md). Nu kan du ansluta till dina lokala data och molndata från Power BI-mobilapparna. Prova att visa och interagera med dina Power BI-instrumentpaneler och -rapporter på din mobila enhet &#151; både i iOS (iPad, iPhone, iPod Touch och Apple Watch), i Android-telefoner eller -surfplattor och i Windows 10-enheter.
@@ -51,4 +51,5 @@ Läs mer om att [konfigurera Power BI-mobilappar för Android och iOS med Micros
 ## <a name="next-steps"></a>Nästa steg
 * [Power BI, kostnadsfri version jämfört med Pro-licenser](service-free-vs-pro.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+
 
