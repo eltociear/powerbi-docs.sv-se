@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: 94a01f1d302d455dbcfe52ce39f5cb0b1ac4aa29
-ms.sourcegitcommit: 05018ef2fe8439a9e8f599c696b8c3cee67e3958
+ms.openlocfilehash: cc50e4e8830aca3951da6004b8ada3913aff28ed
+ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="getting-a-custom-visual-certified"></a>Få anpassade visuella objekt *certifierade*
 ## <a name="what-is-meant-by-certified"></a>Vad menas med begreppet *certifierad*?
@@ -50,7 +50,9 @@ Gör så här för att skicka ett anpassat visuellt objekt för certifikatutfär
    * Ämne: Begäran om certifiering av visuellt objekt    
    * Länk till GitHub-lagringsplatsen där källkoden för det visuella objektet finns    
    * Uppfyll kraven (se ovan)    
-   * Bli godkänd i kod- och säkerhetsgranskningen    2. Teamet för anpassade visuella objekt hos Microsoft informerar dig när ditt anpassade visuella objekt har certifierats och lagts till i listan över certifierade objekt (nedan) eller avvisats med en rapport som innehåller fel som ska åtgärdas. Det är utvecklarens ansvar för att kommunicera med Microsoft och för att uppdatera sina certifierade visuella objekt vid behov.
+   * Bli godkänt i kod- och säkerhetsgranskningen    
+
+2. Teamet för anpassade visuella objekt hos Microsoft informerar dig när ditt anpassade visuella objekt har certifierats och lagts till i listan över certifierade objekt (nedan) eller avvisats med en rapport som innehåller fel som ska åtgärdas. Det är utvecklarens ansvar för att kommunicera med Microsoft och för att uppdatera sina certifierade visuella objekt vid behov.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Borttagning av Power BI-certifierade anpassade visuella objekt
 Microsoft kan ta bort visuella objekt från listan över certifierade objekt efter eget gottfinnande.  
@@ -117,6 +119,7 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Uppspelningsaxel (dynamiskt utsnitt)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |
 | [Power KPI-matris](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381299) | [Video](https://youtu.be/1enze8pcGzY) |
+| [Kvadrantdiagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381011) | [Video](https://youtu.be/ppBnyhqWNC0) |
 | [Polärdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380771) | |
 | [Ringdiagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824) | [Video](https://youtu.be/pDToHDFHnq8) |
 | [Roterande diagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381007) | [Video](https://youtu.be/d5xBCMmb3hU) |
@@ -129,6 +132,7 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Solstråle](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380767) | |
 | [Termisk tabellkarta](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380818) | |
 | [Tachometer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380937) | [Video](https://youtu.be/C3OXdETbS9o) |
+| [Textfilter](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |
 | [Text Wrapper från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826) | |
 | [Termometer](https://appsource.microsoft.com/en-us/product/office/WA104379807) | |
 | [Tidsseriefördelningsdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380897) | |

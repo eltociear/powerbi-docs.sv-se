@@ -16,17 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 63497e7d517bed8aeba8abefcc4e48c628e06252
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 6c29f0915009fced89c80e05f40b91c467e505ce
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="display-the-power-bi-dashboards-that-have-been-shared-with-me"></a>Visa Power BI-instrumentpaneler som har delats med mig
 ## <a name="shared-with-me"></a>Delat med mig
-![](media/service-shared-with-me/power-bi-share-dash.png)
+![Delningsikon](media/service-shared-with-me/power-bi-share-dash.png)
 
 När en kollega delar en instrumentpanel med dig, läggs dess panel till i din **delat med mig**-lista. Instrumentpanelen är endast tillgänglig från **delat med mig** och inte från en arbetsyta eller från **appar**.
 
@@ -38,8 +39,8 @@ Du kommer att ha många alternativ för att interagera med instrumentpanelen och
 
 ## <a name="actions-available-from-the-shared-with-me-screen"></a>Åtgärder som är tillgängliga från **delat med mig**-skärmen
 * Välj stjärnikonen för att [favoritmarkera en instrumentpanel](service-dashboard-favorite.md).
-* [Ta bort en instrumentpanel](service-delete.md)  ![](media/service-shared-with-me/power-bi-delete-icon.png)
-* Vissa instrumentpaneler kan delas vidare ![](media/service-shared-with-me/power-bi-share-icon-new.png)
+* [Ta bort en instrumentpanel](service-delete.md)  ![papperskorgikonen](media/service-shared-with-me/power-bi-delete-icon.png)
+* Vissa instrumentpaneler kan delas vidare  ![delningsikon](media/service-shared-with-me/power-bi-share-icon-new.png)
 * Om dina listor över instrumentpaneler blir långa, kan du dessutom [använda sökfältet och sortering för att hitta vad du behöver](service-navigation-search-filter-sort.md).
   
   > [!NOTE]
@@ -51,7 +52,7 @@ Du kommer att ha många alternativ för att interagera med instrumentpanelen och
 ## <a name="filter-shared-dashboards-by-owner"></a>Filtrera delade instrumentpaneler efter ägare
 Innehållet i skärmen **delat med mig** kan filtreras ytterligare efter innehållsägare. Om jag till exempel väljer **Amanda**, visas bara den instrumentpanel som Amanda har delat med mig.
 
-![](media/service-shared-with-me/power-bi-owner.png)
+![instrumentpanel filtrerad efter ägare](media/service-shared-with-me/power-bi-owner.png)
 
 ## <a name="next-steps"></a>Nästa steg
 [Power BI – grundläggande begrepp](service-basic-concepts.md)  

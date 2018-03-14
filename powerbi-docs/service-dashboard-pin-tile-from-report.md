@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 34574cf73d12d91df7a497cf297a9ecda9f5cc57
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 8fbc2ecafb34339a68b4ca5ecd0fa063082644a2
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fäst en panel på en Power BI-instrumentpanel från en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fästa paneler från en rapport
@@ -45,7 +46,7 @@ Nu kan du skapa din egen instrumentpanel med en av Power BI-exempelrapporterna.
 
 1. Hovra över den visualisering som du vill fästa och välj fästikonen ![](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png). Power BI öppnar skärmen **fäst på instrumentpanelen**.
    
-     ![](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
+     ![Fönstret Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
 2. Välj om du ska fästa panelen på en befintlig instrumentpanel eller em ny.
    
    * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan. Instrumentpaneler som har delats med dig visas inte i listrutan.
@@ -55,7 +56,7 @@ Nu kan du skapa din egen instrumentpanel med en av Power BI-exempelrapporterna.
    
    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.
    
-   ![](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
+   ![meddelande om slutförande](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
 5. Från navigeringsfönstret, väljer du instrumentpanelen med den nya panelen. Markera panelen för att hoppa tillbaka till rapporten. Eller, [redigera panelens visning och beteende](service-dashboard-edit-tile.md).
 
 ## <a name="pin-an-entire-report-page"></a>Fäst en hel rapportsida

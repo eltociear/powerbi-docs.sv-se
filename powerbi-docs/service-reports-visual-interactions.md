@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: a7c4db0044772c28a3cb7a62649de3001945246c
-ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
+LocalizationGroup: Reports
+ms.openlocfilehash: 7e2ef4a1ec49335a49e7f934a7606b2fe64f755c
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visualization-interactions-in-a-power-bi-report"></a>Visualiseringsinteraktioner i en Power BI-rapport
 Om du har redigeringsbehörighet för en rapport kan du använda **Visuella interaktioner** för att ändra hur visualiseringar på en rapportsida påverkar varandra. 
@@ -44,24 +45,24 @@ Den här artikeln visar hur du använder **Visuella interaktioner** i Power BI-t
 2. Visa alternativen för **Visuella interaktioner**.
     - Välj listrutan på menyraden för rapportering i Power BI-tjänsten.
 
-       ![](media/service-reports-visual-interactions/power-bi-visual-interaction.png)
+       ![Listrutan Visuella interaktioner](media/service-reports-visual-interactions/power-bi-visual-interaction.png)
 
     - På skrivbordet väljer du **Format > Interaktioner**.
 
-        ![](media/service-reports-visual-interactions/pbi-visual-interaction-desktop.png)
+        ![välj Format och Interaktioner](media/service-reports-visual-interactions/pbi-visual-interaction-desktop.png)
 
 3. Välj **Redigera interaktioner** för att aktivera kontroller för visualiseringsinteraktioner. Power BI lägger till ikoner för korsfiltrering och korsmarkering i alla andra visualiseringar på rapportsidan.
    
-    ![](media/service-reports-visual-interactions/power-bi-icons-on.png)
+    ![rapport med Visuella interaktioner aktiverat](media/service-reports-visual-interactions/power-bi-icons-on.png)
 3. Bestäm vilken effekt den valda visualiseringen ska ha på de andra visualiseringarna.  Du kan också upprepa detta för alla andra visualiseringar på rapportsidan.
    
-   * Om du vill korsfiltrera visualiseringen väljer du ikonen **Filter**![](media/service-reports-visual-interactions/pbi-filter-icon-outlined.png).
-   * Om du vill korsmarkera visualiseringen väljer du ikonen **Markera**![](media/service-reports-visual-interactions/pbi-highlight-icon-outlined.png).
-   * Om den inte ska ha någon effekt väljer du ikonen **Ingen inverkan**![](media/service-reports-visual-interactions/pbi-noimpact-icon-outlined.png).
+   * Om du vill korsfiltrera visualiseringen väljer du ikonen **Filter** ![filterikon](media/service-reports-visual-interactions/pbi-filter-icon-outlined.png).
+   * Om du vill korsmarkera visualiseringen väljer du ikonen **Markera** ![ikonen Markera](media/service-reports-visual-interactions/pbi-highlight-icon-outlined.png).
+   * Om den inte ska ha någon effekt väljer du ikonen **Ingen inverkan** ![ikonen Ingen inverkan](media/service-reports-visual-interactions/pbi-noimpact-icon-outlined.png).
 
 4. Om du vill aktivera detaljgranskningskontroller väljer du **Att gå in på detalj filtrerar andra visuella objekt**.  Nu när du ökar detaljnivån i en visualisering ändras de andra visualiseringarna på rapportsidan för att återspegla din aktuella detaljgranskningsmarkering. 
 
-   ![](media/service-reports-visual-interactions/drill2.gif)
+   ![video om aktivering av detaljnivåkontroller](media/service-reports-visual-interactions/drill2.gif)
 
 ### <a name="next-steps"></a>Nästa steg
 [Så här använder du rapportfilter](power-bi-how-to-report-filter.md)

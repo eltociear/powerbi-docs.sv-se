@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: d747b357315e275fae2f65d7e4e961f4867807a3
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 78f128e870bbf775c805438464342612d5ba8382
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Anslut till Marketo med Power BI
 Power BI-innehållspaketet för Marketo ger dig insikter om ditt Marketo-konto med data om leads och deras aktiviteter. När du skapar den här anslutningen så hämtas dina data och du får automatiskt en instrumentpanel och rapporter baserade på dem.
@@ -78,7 +79,7 @@ Alla datum är i UTC. Datumen kan variera beroende på vilken tidszon ditt konto
 
 **Information om API-begränsning**
 
-Import av data från Marketo använder sig av Marketo API:er. Varje Marketo-kund har högst 10 000 API-anrop per dag som delas mellan alla program som använder Marketo API:erna. Du kan använda API:erna för andra integreringar samt för Power BI-integration. Mer information om API:erna finns i: <http://developers.marketo.com/documentation/rest/>.
+Import av data från Marketo använder sig av Marketo API:er. Varje Marketo-kund har högst 10 000 API-anrop per dag som delas mellan alla program som använder Marketo API:erna. Du kan använda API:erna för andra integreringar samt för Power BI-integration. Mer information om API:erna finns på: <http://developers.marketo.com/documentation/rest/>.
 
 Mängden API-anrop som Power BI gör till Marketo beror på mängden data i ditt Marketo-konto. Power BI importerar alla leads och aktiviteter för det senaste året. Här är ett exempel på data från Marketo och mängden API-anrop som används av Power BI när du importerar:  
 

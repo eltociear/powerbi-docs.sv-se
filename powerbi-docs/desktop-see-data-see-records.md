@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/22/2018
 ms.author: davidi
-ms.openlocfilehash: a61a5d46c2f663ff7e8388a862f5649487504092
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Learn more
+ms.openlocfilehash: c44a5140fe40217aac170abb0b351197803b6299
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Använd se Data och se poster i Power BI Desktop
 I **Power BI Desktop** kan du gå in på detaljnivå för all visuell information och se en textrepresentation av data eller enskilda dataelement för en vald visualisering. De här funktionerna kallas ibland för *klicka igenom*, eller *detaljerad information* eller *gå in på detaljnivå*.
@@ -69,6 +70,9 @@ Du kan också fokusera på ett dataelement i en visualisering och gå in på det
 När **Se poster** har valts, fokuserar **Power BI Desktop** på det enskilda dataelementet och dedikerar arbetsytan till att visa data för det elementet som det visas i följande bild.
 
 ![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+
+> [!NOTE]
+> Det går inte att spara ändringar av data som visas (eller ändras av användare) i vyn **Se poster** till en rapport.
 
 Gå tillbaka till rapporten genom att markera knappen **Tillbaka till rapporten** i det övre vänstra hörnet på arbetsytan.
 

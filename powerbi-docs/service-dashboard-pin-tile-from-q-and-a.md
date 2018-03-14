@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/17/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a3df29b478675eeeec876863299c0a33073fb381
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Dashboards
+ms.openlocfilehash: bd9f49c338afc413107ee811bf9ee33c3e9737a4
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fäst en panel till en instrumentpanel från frågor och svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Så här fäster du en panel från frågor och svar
@@ -34,16 +35,16 @@ Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandel
 
 1. Öppna en [instrumentpanel](service-dashboards.md) som har minst en panel fäst från en rapport. När du skriver en fråga, letar Power BI efter svaret i alla datauppsättningar som har en panel fäst på den instrumentpanelen.  Läs mer i [hämta data](service-get-data.md).
 2. Börja skriva vad du vill veta om dina data i frågerutan överst på instrumentpanelen.  
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
+   ![ruta för frågor och svar](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. När du till exempel skriver senaste årets försäljning per månad och område...  
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
+   ![skriv en fråga](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
 
    ger frågerutan dig förslag.
 4. Om du vill lägga till diagrammet till din instrumentpanel, väljer du fäst ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) längst upp till höger i arbetsytan. Om instrumentpanelen inte har delats med dig, kommer du inte kunna fästa några visualiseringar.
 
 5. Fäst panelen på en befintlig eller ny instrumentpanel.
 
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
+   ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
 
    * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan. Dina val begränsas till instrumentpanelerna inom den aktuella arbetsytan.
    * Ny instrumentpanel: ange namnet på den nya instrumentpanelen så läggs den till din aktuella arbetsyta.
@@ -52,15 +53,15 @@ Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandel
 
    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.  
 
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin.png)
+   ![Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin.png)
 7. Välj **gå till instrumentpanel** för att se den nya panelen. Där kan du [byta namn, ändra storlek, lägga till en hyperlänk och flytta panelen och mer](service-dashboard-edit-tile.md) på din instrumentpanel.
 
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
+   ![instrumentpanel med paneler](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * När du börjar skriva en fråga, börjar frågor och svar genast att söka efter det bästa svaret från alla datauppsättningar som är associerade med den aktuella instrumentpanelen.  Den aktuella instrumentpanelen är den instrumentpanel som listas i det övre navigeringsfältet. Den här frågan ställs till exempel i instrumentpanelen **exemplet detaljshandelsanalys** som är en del av **mihart**-apparbetsytan.
 
-  ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
+  ![synliga sökvägar](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **Hur vet frågor och svar vilka datauppsättningar som ska användas**?  Frågor och svar har åtkomst till alla datauppsättningar som har minst en visualisering fäst på den instrumentpanelen.
 
 * **Ser du inte frågerutan**? Kontrollera med din Power BI-administratör. Administratören har möjlighet att inaktivera frågor och svar.

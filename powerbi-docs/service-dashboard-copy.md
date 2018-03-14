@@ -16,16 +16,17 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/17/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 6527006095e6d716687477e7408a980ee765fb5a
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+LocalizationGroup: Dashboards
+ms.openlocfilehash: dda89f4cffd99ae8f7b435133e9be550d7da0339
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Skapa en kopia av en instrumentpanel i Power BI-tjänsten
-![](media/service-dashboard-copy/power-bi-dashboard.png)
+![instrumentpanel](media/service-dashboard-copy/power-bi-dashboard.png)
 
  Det finns många olika skäl att göra en kopia av en instrumentpanel. Du kanske vill göra ändringar och testa dess prestanda mot den ursprungliga. Eller skapa något annorlunda versioner för att distribuera efter kollega, region eller team. En kollega kanske beundrar din instrumentpanelsdesign och vill använda den för att rapportera till sina chefer. En annan orsak kan vara om du har en ny databas med samma datastruktur och datatyper och vill återanvända instrumentpanelen som du redan har skapat. Det kan du också göra, men det kräver lite arbete i Power BI Desktop. 
 
@@ -36,13 +37,13 @@ Om du vill göra en kopia av en instrumentpanel måste du vara instrumentpanelen
 1. Öppna instrumentpanelen.
 2. Välj ellipserna (...) i övre högra hörnet och välj **duplicera instrumentpanelen**.
    
-   ![](media/service-dashboard-copy/power-bi-dulicate.png)
+   ![ellipsmenyn](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Ge instrumentpanelen ett namn och välj **duplicera**. 
    
-   ![](media/service-dashboard-copy/power-bi-name.png)
+   ![Dialogrutan Duplicera instrumentpanel](media/service-dashboard-copy/power-bi-name.png)
 4. Den nya instrumentpanelen sparas i samma arbetsyta som originalet. 
    
-   ![](media/service-dashboard-copy/power-bi-copied.png)
+   ![Fliken Instrumentpaneler](media/service-dashboard-copy/power-bi-copied.png)
 
 5.    Öppna den nya instrumentpanelen och redigera efter behov. Här följer några saker som du kanske vill göra härnäst:    
     a. [Flytta, byta namn på, ändra storlek på eller ta bort paneler](service-dashboard-edit-tile.md).  

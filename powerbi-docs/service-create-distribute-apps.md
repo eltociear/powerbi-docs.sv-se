@@ -14,13 +14,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/06/2018
+ms.date: 02/22/2018
 ms.author: maggies
-ms.openlocfilehash: 23c52f7eb66e4e7b0683a2392f0fc60ad76ea243
-ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
+LocalizationGroup: Share your work
+ms.openlocfilehash: d711e2276f2ac170ed54152d54c023261ca9c0bc
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Skapa och publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -94,7 +95,7 @@ Som standard skapar Power BI en liten färgad cirkel för din app med appens ini
      ![Anpassad bild](media/service-create-distribute-apps/power-bi-apps-image.png)
 
 ## <a name="publish-your-app"></a>Publicera appen
-När instrumentpanelerna och rapporterna på din app-arbetsyta är klara, publicerar du dem som en app. Kom ihåg att du inte behöver publicera alla rapporter och instrumentpaneler på arbetsytan. Du kan välja att bara publicera de som är klara. 
+När instrumentpanelerna och rapporterna på din app-arbetsyta är klara, publicerar du dem som en app. Kom ihåg att du inte behöver publicera alla rapporter och instrumentpaneler på arbetsytan. Du kan välja att bara publicera de som är klara.
 
 1. Bestäm vilka instrumentpaneler och rapporter som du vill ska ingå i appen i arbetsytans listvy.
 
@@ -104,23 +105,23 @@ När instrumentpanelerna och rapporterna på din app-arbetsyta är klara, public
 
      ![Varning om relaterad instrumentpanel](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
-1. Välj knappen **Publicera app** i det övre högra hörnet för att starta processen med att dela allt innehåll på arbetsytan.
+2. Välj knappen **Publicera app** i det övre högra hörnet för att starta processen med att dela allt innehåll på arbetsytan.
    
      ![Publicera app](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-2. Fyll i en beskrivning under **Information** som hjälper användare att hitta appen. Du kan ange en bakgrundsfärg för att göra den lite personlig.
+3. Fyll i en beskrivning under **Information** som hjälper användare att hitta appen. Du kan ange en bakgrundsfärg för att göra den lite personlig.
    
      ![Information om appar](media/service-create-distribute-apps/power-bi-apps-details.png)
 
-3. Under **Innehåll** ser du det innehåll som ska publiceras som en del av appen – allt som du har valt på arbetsytan. Du kan också ange en landningssida för appen – den instrumentpanel eller rapport som först visas när någon använder din app. Du kan välja **Ingen**. Då landar de i en lista över allt innehåll i appen. 
+4. Under **Innehåll** ser du det innehåll som ska publiceras som en del av appen – allt som du har valt på arbetsytan. Du kan också ange en landningssida för appen – den instrumentpanel eller rapport som först visas när någon använder din app. Du kan välja **Ingen**. Då landar de i en lista över allt innehåll i appen. 
    
      ![Appens innehåll](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Under **Åtkomst** bestämmer du vem som ska ha åtkomst till appen: antingen alla i din organisation, specifika personer eller Active Directory-säkerhetsgrupper. Om du har behörighet kan du välja att installera appen automatiskt för mottagarna.
+5. Under **Åtkomst** bestämmer du vem som ska ha åtkomst till appen: antingen alla i din organisation, specifika personer eller Active Directory-säkerhetsgrupper. Om du har behörighet kan du välja att installera appen automatiskt för mottagarna. Du kan aktivera den här inställningen i [Power BI-administratörsportalen](#how-to-enable-pushing-apps). Läs mer om överväganden för att [pusha en app](#how-to-enable-pushing-apps).
 
     ![Åtkomst till appen](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-5. När du väljer **Slutför**, visas ett meddelande som bekräftar att appen är redo för publicering. I dialogrutan som bekräftar slutförandet kan du kopiera URL:en som är en direktlänk till appen och skicka den till dem som du ska dela den med.
+6. När du väljer **Slutför**, visas ett meddelande som bekräftar att appen är redo för publicering. I dialogrutan som bekräftar slutförandet kan du kopiera URL:en som är en direktlänk till appen och skicka den till dem som du ska dela den med.
    
      ![Slutföra appen](media/service-create-distribute-apps/power-bi-apps-success.png)
 
@@ -138,7 +139,7 @@ När du har publicerat en app kan du vilja ändra eller uppdatera den. Det är e
    
      App-arbetsytan är ditt mellanlagringsområde så att ändringarna inte skickas i realtid till appen förrän du gör en ny publicering. På så sätt kan du göra ändringar utan att påverka de publicerade apparna.  
  
-1. Gå tillbaka till app-arbetsytans lista över innehåll och markera **Uppdatera app**.
+3. Gå tillbaka till app-arbetsytans lista över innehåll och markera **Uppdatera app**.
    
      ![Uppdatera app-knappen](media/service-create-distribute-apps/power-bi-app-update-button.png)
 
@@ -147,6 +148,32 @@ När du har publicerat en app kan du vilja ändra eller uppdatera den. Det är e
      ![Uppdatera app-knappen](media/service-create-distribute-apps/power-bi-app-update-complete.png)
 
 De personer som du har publicerat appen för ser automatiskt den uppdaterade versionen av appen. 
+
+# <a name="automatically-install-apps-for-end-users"></a>Installera appar automatiskt för slutanvändare
+Du kan automatiskt installera appar för slutanvändarna. Det gör det enklare att distribuera rätt appar till rätt personer eller grupper.
+
+Appar levererar data som slutanvändarna behöver i sitt arbete. Nu kan du installera de här apparna automatiskt i applistan i stället för att söka efter dem i Microsoft AppSource eller använda en installationslänk. Det gör det lättare för dig att distribuera Power BI-standardinnehåll till dina användare.
+
+## <a name="how-to-install-an-app-automatically-for-end-users"></a>Installera en app automatiskt för slutanvändare
+När administratören har aktiverat funktionen, har apputgivarna ett nytt tillgängligt alternativ för att **installera appen automatiskt**. När rutan är ***markerad*** och apputgivaren väljer **Slutför** (eller **Uppdatera app** för befintliga appar), pushas appen till alla användare och grupper som angetts i avsnittet **Behörigheter** i appen på **åtkomstfliken**.
+
+![Aktivera funktionen för att pusha appar](media/service-create-distribute-apps/power-bi-apps-access.png)
+
+## <a name="how-users-get-the-apps-that-were-pushed-to-them"></a>Så får användarna apparna som pushats till dem
+När du pushat en app visas den i applistan automatiskt. Du kan bestämma vilka appar en användare eller jobbroll i organisationen behöver ha åtkomst till.
+
+![Aktivera funktionen för att pusha appar](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+
+### <a name="considerations-for-automatically-installing-apps"></a>Överväganden för att installera appar automatiskt
+Här är några saker att ha i åtanke när du pushar appar till slutanvändare:
+
+* Det kan ta tid att installera en app automatiskt till användare. De flesta appar installeras omedelbart för användare, men det kan ta tid att pusha appar.  Det beror på antalet objekt i appen och hur många personer som tilldelas åtkomst. Vi rekommenderar att pusha appar efter arbetstid, när det finns gott om tid innan användarna behöver dem. Verifiera med flera användare innan du meddelar många om apparnas tillgänglighet.
+
+* Uppdatera webbläsaren. Innan den pushade appen visas i applistan kan det hända att användarna måste uppdatera, eller stänga och öppna webbläsaren igen.
+
+* Om användarna inte ser appen omedelbart i applistan bör de uppdatera eller stänga och öppna webbläsaren igen.
+
+* Försök att inte överväldiga användarna. Pusha inte för många appar så att användarna uppfattar det som att de förinstallerade apparna är användbara för dem. Det är bäst att kontrollera vem som kan pusha appar till slutanvändarna så att tidsaspekten kan samordnas. Du kan upprätta en kontaktpunkt i organisationen för att hämta appar som pushats till slutanvändarna.
 
 ## <a name="unpublish-an-app"></a>Ta bort en app
 Alla medlemmar i en app-arbetsyta kan ta bort appen.
@@ -167,7 +194,7 @@ Med den här versionen har vi döpt om alla grupparbetsytor till app-arbetsytor.
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Hur skiljer sig appar åt från organisationsinnehållspaket?
 Appar är en utveckling och förenkling av innehållspaket med några viktiga skillnader. 
 
-* När företagsanvändare har installerat ett innehållspaket, förlorar det sin grupperade identitet: det är bara en lista över instrumentpaneler och rapporter bland andra instrumentpaneler och rapporter. Appar, å andra sidan, bevarar sin gruppering och identitet även efter installationen. Det gör det lätt för företagsanvändare att fortsätta att gå tillbaka till dem över tid.  
+* När företagsanvändare har installerat ett innehållspaket, förlorar det sin grupperade identitet: det är bara en lista över instrumentpaneler och rapporter bland andra instrumentpaneler och rapporter. Appar, å andra sidan, bevarar sin gruppering och identitet även efter installationen. Det gör det lätt för företagsanvändare att fortsätta att gå tillbaka till dem över tid.
 * Du kan skapa flera innehållspaket från en arbetsyta, men en app har ett 1:1-förhållande med sin arbetsyta. Vi tror att detta medför att appar blir lättare att förstå och hantera på lång sikt. Mer information om hur vi planerar att förbättra det här området finns i översiktsavsnittet i Power BI-bloggen. 
 * Med tiden planerar vi att avveckla användningen av organisationsinnehållspaket, så vi rekommenderar att du skapar appar hädanefter.  
 
@@ -179,5 +206,5 @@ Med appar kan man publicera en skrivskyddad version av app-arbetsytan för stora
 ## <a name="next-steps"></a>Nästa steg
 * [Installera och använda appar i Power BI](service-install-use-apps.md)
 * [Power BI-appar för externa tjänster](service-connect-to-services.md)
+* [Power BI-administratörsportalen](https://docs.microsoft.com/en-us/power-bi/service-admin-portal)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

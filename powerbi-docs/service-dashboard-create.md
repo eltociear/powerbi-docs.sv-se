@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: eb6c5c5c6ff010e8ed117c643e9763acfa73cfee
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 33e003c4e45cf851dbdf2bc602807a57d1ba49af
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Skapa en Power BI-instrumentpanel från en rapport
 Du har läst [Instrumentpaneler i Power BI](service-dashboards.md) och nu är det dags att du skapar en egen. Det finns många olika sätt för att skapa en instrumentpanel – från en rapport, från början, från en datauppsättning, genom att duplicera en befintlig instrumentpanel, med mera.  
@@ -36,7 +36,7 @@ Skapa en instrumentpanel är en **skapar**funktion och kräver behörighet att r
 >
 > 
 
-![](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
+![instrumentpanel](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 ## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Video: Skapa en instrumentpanel genom att fästa visuella objekt och bilder från en rapport.
 Titta på när Amanda skapar en ny instrumentpanel genom att fästa visualiseringar från en rapport. Följ sedan stegen under videon för att prova själv med hjälp av Exempel på anskaffningsanalys.
@@ -54,62 +54,62 @@ Vi ska importera ett av Power BI:s exempel på datauppsättningar och använda d
 3. Välj **Min arbetsyta**.
 4. Välj **Hämta data** i det vänstra navigeringsfältet.
 
-    ![](media/service-dashboard-create/power-bi-get-data3.png)
+    ![vänster navigeringsfält](media/service-dashboard-create/power-bi-get-data3.png)
 5. Välj **Filer**.
 
-   ![](media/service-dashboard-create/power-bi-select-files.png)
+   ![Hämta filer](media/service-dashboard-create/power-bi-select-files.png)
 6. Gå till den plats där du sparade Excel-filen Exempel på anskaffningsanalys. Markera den och välj **Anslut**.
 
-   ![](media/service-dashboard-create/power-bi-connectnew.png)
+   ![Anslut till filer](media/service-dashboard-create/power-bi-connectnew.png)
 7. För den här övningen väljer vi **Importera**.
 
-    ![](media/service-dashboard-create/power-bi-import.png)
+    ![fönstret OneDrive för företag](media/service-dashboard-create/power-bi-import.png)
 8. När meddelandet om slutförd import visas, väljer du **x** för att stänga det.
 
-   ![](media/service-dashboard-create/power-bi-view-datasetnew.png)
+   ![meddelande om slutförande](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 ### <a name="open-the-report-and-pin-some-tiles-to-a-dashboard"></a>Öppna rapporten och fästa några paneler på en instrumentpanel
 1. Stanna kvar på samma arbetsyta och välj fliken **Rapporter**. Den nyligen importerade rapporten visas med en gul asterisk. Välj rapportens namn för att öppna den.
 
-    ![](media/service-dashboard-create/power-bi-reports.png)
+    ![fliken Rapporter](media/service-dashboard-create/power-bi-reports.png)
 2. Öppna rapporten i [Läsvy](service-reading-view-and-editing-view.md). Observera att den har två flikar längst ned: Rabattanalys och Utgiftsöversikt. Varje flik representerar en sida i rapporten.
     Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
 
-    ![](media/service-dashboard-create/power-bi-reading-view.png)
+    ![rapport i Läsvyn](media/service-dashboard-create/power-bi-reading-view.png)
 3. Hovra över en visualisering för att visa de tillgängliga alternativen. Välj stiftikonen ![](media/service-dashboard-create/power-bi-pin-icon.png) för att lägga till en visualisering på en instrumentpanel.
 
-    ![](media/service-dashboard-create/power-bi-hover.png)
+    ![hovra över panel](media/service-dashboard-create/power-bi-hover.png)
 4. Eftersom vi skapar en ny instrumentpanel, markerar du alternativet **Ny instrumentpanel** och ge den ett namn.
 
-   ![](media/service-dashboard-create/power-bi-pin-tile.png)
+   ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-create/power-bi-pin-tile.png)
 5. När du väljer **Fäst**, skapar Power BI den nya instrumentpanelen på den aktuella arbetsytan. När meddelandet **Fäst på instrumentpanelen** visas, väljer du **Gå till instrumentpanelen**. Om du uppmanas att spara rapporten väljer du **Spara**.
 
-     ![](media/service-dashboard-create/power-bi-pin-success.png)
+     ![meddelande om slutförande](media/service-dashboard-create/power-bi-pin-success.png)
 6. Power BI öppnar den nya instrumentpanelen och där visas en panel – den visualisering som du nyss fäste på den.
 
-   ![](media/service-dashboard-create/power-bi-pinned.png)
+   ![instrumentpanel med en panel](media/service-dashboard-create/power-bi-pinned.png)
 7. Välj panelen för att återgå till rapporten. Fäst några fler paneler på den nya instrumentpanelen. Den här gången när fönstret **Fäst på instrumentpanelen** visas, väljer du **Befintlig instrumentpanel**.  
 
-   ![](media/service-dashboard-create/power-bi-existing-dashboard.png)
+   ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
 ## <a name="pin-an-entire-report-page-to-the-dashboard"></a>Fästa en hel rapportsida på instrumentpanelen
 I stället för att fästa en visualisering i taget kan du [fästa en hel rapportsida som en *levande panel*](service-dashboard-pin-live-tile-from-report.md). Låt oss göra det.
 
 1. I rapportredigeraren väljer du fliken **Utgiftsöversikt** så öppnas sidan 2 i rapporten.
 
-   ![](media/service-dashboard-create/power-bi-page-tab.png)
+   ![rapportflik](media/service-dashboard-create/power-bi-page-tab.png)
 
 2. Du vill ha alla dessa visualiseringar på instrumentpanelen.  I det övre högra hörnet av menyraden väljer du **Fästa live-sida**. På en instrumentpanel uppdateras paneler med live-sidor varje gång sidan uppdateras.
 
-   ![](media/service-dashboard-create/power-bi-pin-live.png)
+   ![längst upp till höger i Rapportredigeraren](media/service-dashboard-create/power-bi-pin-live.png)
 
 3. När fönstret **Fäst på instrumentpanelen** visas, väljer du **Befintlig instrumentpanel**.
 
-   ![](media/service-dashboard-create/power-bi-pin-live2.png)
+   ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-create/power-bi-pin-live2.png)
 
 4. När det visas ett meddelande om att det lyckats, väljer du **Gå till instrumentpanel**. Där ser du de paneler som du har fäst från rapporten. I exemplet nedan har vi fäst 2 paneler från sidan 1 i rapporten och en live-panel som är sidan 2 i rapporten.
 
-   ![](media/service-dashboard-create/power-bi-dashboard.png)
+   ![instrumentpanel](media/service-dashboard-create/power-bi-dashboard.png)
 
 Grattis – du har skapat din första instrumentpanel! Nu när du har en instrumentpanel finns det så mycket mer du kan göra.  Försök med något av de föreslagna **nästa stegen** nedan, eller börja leka lite och utforska på egen hand.   
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: b9d39e2214b20677141a6e6beb9d61b628c320c2
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 2dde59bba1c5d9ded1c82cf2dd1086be14f19304
+ms.sourcegitcommit: d6e013eb6291ae832970e220830d9862a697d1be
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Säkerhet på radnivå med inbäddat innehåll i Power BI
 Säkerhet på radnivå (RLS) kan användas för att begränsa användares åtkomst till data i instrumentpaneler, paneler, rapporter och datauppsättningar. Flera olika användare kan arbeta med samma artefakter och alla se olika data. Inbäddning har stöd för RLS.
@@ -140,6 +140,47 @@ En [lokal datagateway](../service-gateway-onprem.md) används när du arbetar me
 
 Roller kan tilldelas med en identitet i en inbäddad token. Om ingen roll anges kommer det angivna användarnamnet att användas för att lösa de associerade rollerna.
 
+**Använda funktionen CustomData**
+
+CustomData-funktionen tillåter sändning av fritext (sträng) med anslutningssträngegenskapen för CustomData, ett värde som används av AS (via funktionen CUSTOMDATA()).
+Du kan använda den som ett alternativt sätt att anpassa dataförbrukning.
+Du kan använda den i DAX-frågerollen, och den kan användas utan någon roll i en DAX-måttfråga.
+CustomData-funktionen ingår i tokengenereringen för följande artefakter: instrumentpanel, rapport och panel. En instrumentpanel kan ha flera CustomData-identiteter (en per panel/modell).
+
+> [!NOTE]
+> CustomData-funktionen fungerar endast för modeller som finns i Azure Analysis Services, och den fungerar endast i liveläge. Till skillnad från användare och roller kan den anpassade data-funktionen inte anges i en .pbix-fil. Du måste ha ett användarnamn för tokengenerering med den anpassade data-funktionen.
+>
+>
+
+**SDK-tillägg för CustomData**
+
+CustomData-strängegenskapen har lagts till vår effektiva identitet i scenariot för tokengenerering.
+        
+        [JsonProperty(PropertyName = "customData")]
+        public string CustomData { get; set; }
+
+Identiteten kan skapas med anpassade data med hjälp av följande anrop:
+
+        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+
+**SDK-användning för CustomData**
+
+Om du anropar REST-API:t kan du lägga till anpassade data inom varje identitet, t.ex.:
+
+```
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "username": "EffectiveIdentity",
+            "roles": [ "Role1", "Role2" ],
+            "customData": "MyCustomData",
+            "datasets": [ "fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc" ]
+        }
+    ]
+}
+```
+
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 * Tilldelningen av användare till roller i Power BI-tjänsten påverkar inte RLS när du använder en inbäddningstoken.
 * Medan Power BI-tjänsten inte tillämpar RLS-inställningar för administratörer eller medlemmar som har behörighet att redigera tillämpas identiteter med en inbäddad token på data.
@@ -150,4 +191,3 @@ Roller kan tilldelas med en identitet i en inbäddad token. Om ingen roll anges 
 * En lista över identiteter möjliggör flera identitetstoken för inbäddning av instrumentpanelen. För andra artefakter innehåller listan en enstaka identitet.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

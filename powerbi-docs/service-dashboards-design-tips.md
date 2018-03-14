@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 83b813ccdc9ed0ef232f5eede715ad3a795253d0
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 769d669f00c87e6139d8ff2cb8640739d09edf7a
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
@@ -50,7 +51,7 @@ Visa instrumentpanelen i [helskärm](service-fullscreen-mode.md) utan störninga
 
 ### <a name="make-the-most-important-information-biggest"></a>Gör den viktigaste informationen störst
 Om texten och visualiseringarna på instrumentpanelen har samma storlek, får läsaren svårt att fokusera på vad som är viktigt. Till exempel är kortvisualiseringar ett bra sätt att visa upp ett viktigt tal på en framträdande plats:  
-![](media/service-dashboards-design-tips/pbi_card.png)
+![Kortvisualisering](media/service-dashboards-design-tips/pbi_card.png)
 
 Men kom ihåg att tillhandahålla kontexten.  
 

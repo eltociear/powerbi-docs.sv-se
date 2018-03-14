@@ -16,21 +16,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/03/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9a8f4e330ea2188b23f3730b18ee56d7c7f72de2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 11e9a2ba499c6db2c75434d13c62bc53704a7cb3
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>Prenumerera på en Power BI-rapport eller instrumentpanel
 Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. 
 
-E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**. 
+E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning klickar du på kugghjulsikonen ![kugghjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**. 
 
-![](media/service-report-subscribe/power-bi-language.png)
+![Listruta för språk](media/service-report-subscribe/power-bi-language.png)
 
 > [!NOTE]
 > Du kan bara skapa prenumerationer i Power BI-tjänsten. När du tar emot e-postmeddelandet så innehåller det en länk med rubriken ”Gå till rapporten/instrumentpanelen”. Om du väljer den här länken på mobila enheter med installerade Power BI-appar, så startas appen (istället för standardåtgärden att rapporten eller instrumentpanelen på webbplatsen Power BI öppnas).
@@ -45,47 +45,47 @@ Se hur Sirui konfigurerar en e-postprenumeration för en rapport. Prova sedan sj
 Att **skapa** prenumerationer är en Power BI Pro-funktion, och du måste ha visnings- eller redigeringsbehörigheter till innehållet (instrumentpanel eller rapport).
 
 ## <a name="subscribe-to-a-dashboard"></a>Prenumerera på en instrumentpanel
-![](media/service-report-subscribe/power-bi-subscribe-orientation.png)
+![välj ikonen Prenumerera](media/service-report-subscribe/power-bi-subscribe-orientation.png)
 
 1. Öppna instrumentpanelen.
-2. Välj **Prenumerera** på den översta menyraden, eller välj kuvertikonen ![](media/service-report-subscribe/power-bi-icon-envelope.png).
+2. Välj **Prenumerera** på den översta menyraden, eller välj kuvertikonen ![ikonen Prenumerera](media/service-report-subscribe/power-bi-icon-envelope.png).
    
-   ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
+   ![Ikonen Prenumerera](media/service-report-subscribe/power-bi-subscribe-icon.png)
 3. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
    
-   ![](media/service-report-subscribe/power-bi-subscribe-dashboard-new.png)
+   ![Prenumerationsfönster](media/service-report-subscribe/power-bi-subscribe-dashboard-new.png)
 4. Spara prenumerationen genom att välja **Spara och stäng**. Du får ett e-ögonblicksbild av instrumentpanelen varje gång några av de underliggande datauppsättningarna ändras. Om instrumentpanelen uppdateras mer än en gång om dagen, så får du e-postmeddelandet med ögonblicksbilden endast efter den första uppdateringen.
    
-   ![](media/service-report-subscribe/power-bi-dashboard-email-new.png)
+   ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/service-report-subscribe/power-bi-dashboard-email-new.png)
    
    > [!TIP]
-   > Vill du se e-postmeddelandet direkt? Utlös ett e-postmeddelande genom att uppdatera en av de datauppsättningar som är associerade med instrumentpanelen. (Om du inte har behörighet att redigera till datauppsättningen, så måste du be någon som har de behörigheterna att göra det åt dig.) Om du vill ta reda på vilka datauppsättningar som används för att skapa instrumentpanelen, så välj ikonen **Visa relaterade** på instrumentpanelen, ![](media/service-report-subscribe/power-bi-view-related.png) så öppnas **Relaterat innehåll**, och välj sedan uppdateringsikonen ![](media/service-report-subscribe/power-bi-refresh.png). 
+   > Vill du se e-postmeddelandet direkt? Utlös ett e-postmeddelande genom att uppdatera en av de datauppsättningar som är associerade med instrumentpanelen. (Om du inte har behörighet att redigera till datauppsättningen, så måste du be någon som har de behörigheterna att göra det åt dig.) Om du vill ta reda på vilka datauppsättningar som används för att skapa instrumentpanelen väljer du ikonen **Visa relaterade** ![Ikonen Visa relaterade](media/service-report-subscribe/power-bi-view-related.png) på instrumentpanelen, så öppnas **Relaterat innehåll** och du kan välja uppdateringsikonen ![uppdateringsikon](media/service-report-subscribe/power-bi-refresh.png). 
    > 
    > 
    
-   ![](media/service-report-subscribe/power-bi-view-related-screen.png)
+   ![Relaterade datauppsättningar](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## <a name="subscribe-to-a-report-page"></a>Prenumerera på en rapportsida
 1. Öppna rapporten i [läsläge](service-reading-view-and-editing-view.md).
 2. Välj **Prenumerera** på den översta menyraden.
    
-   ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
+   ![Ikonen Prenumerera](media/service-report-subscribe/power-bi-subscribe-icon.png)
 3. Du kan prenumerera på en rapportsida i taget. Välj rapportsidan i listrutan.
    
-   ![](media/service-report-subscribe/power-bi-subscribe-dialog.png)
+   ![Prenumerationsfönster](media/service-report-subscribe/power-bi-subscribe-dialog.png)
    
    Fortsätta att lägga till rapportsidor.
 4. Aktivera eller inaktivera prenumerationen för respektive rapportsida med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
    
-   ![](media/service-report-subscribe/power-bi-slider.png)
+   ![aktivera Prenumeration](media/service-report-subscribe/power-bi-slider.png)
 5. Spara prenumerationen genom att välja **Spara och stäng**. Du får ett e-ögonblicksbild av varje rapportsida när rapporten uppdateras. Om rapporten inte uppdateras får du inte du något e-postmeddelande med ögonblicksbild.  Om rapporten uppdateras mer än en gång om dagen, så får du e-postmeddelandet med ögonblicksbilden endast efter den första uppdateringen.
    
-   ![](media/service-report-subscribe/power-bi-subscription-email.png)
+   ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/service-report-subscribe/power-bi-subscription-email.png)
    
    > [!TIP]
    > Vill du se e-postmeddelandet direkt? Utlös ett e-postmeddelande genom att öppna din datauppsättning och välja **Uppdatera nu**. Om du inte har behörighet att redigera till datauppsättningen, så måste du be någon som har de behörigheterna att göra det åt dig.
    > 
-   > ![](media/service-report-subscribe/power-bi-refresh-now.png)
+   > ![Uppdatera nu-ikonen på fliken Datauppsättningar](media/service-report-subscribe/power-bi-refresh-now.png)
    > 
    > 
 
@@ -98,13 +98,13 @@ I följande tabell beskrivs hur ofta du får ett e-postmeddelande. Det beror hel
 | **Hur stor kontroll har användaren över schemat för e-postprenumeration?** |Alternativen är: varje dag eller varje vecka |Inga alternativ: användarna får ett e-postmeddelande om rapporten uppdateras, men inte mer än en gång per dag. |Om uppdateringsschemat är varje dag, så är alternativen dagliga och veckovisa.  Om uppdateringsschemat är varje vecka så är endast veckoalternativet tillgängligt. |Inga alternativ: användaren skickas ett e-postmeddelande när datauppsättnngen har uppdaterats, men inte mer än en gång per dag. |
 
 ## <a name="manage-your-subscriptions"></a>Hantera dina prenumerationer
-Det finns 2 vägar till skärmen för att hantera dina prenumerationer.  Den första hittar du genom att välja **Hantera alla prenumerationer** i dialogrutan **Prenumerera på e-postmeddelanden** (se steg 3 ovan). Den andra hittar du genom att välja kugghjulsikonen i Power BI ![](media/service-report-subscribe/power-bi-settings-icon.png) från den översta menyraden och sedan välja **Inställningar**.
+Det finns 2 vägar till skärmen för att hantera dina prenumerationer.  Den första hittar du genom att välja **Hantera alla prenumerationer** i dialogrutan **Prenumerera på e-postmeddelanden** (se steg 3 ovan). Den andra hittar du genom att välja kugghjulsikonen i Power BI ![kugghjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) på den översta menyraden sedan välja **Inställningar**.
 
-![](media/service-report-subscribe/power-bi-subscribe-settings.png)
+![välj Inställningar](media/service-report-subscribe/power-bi-subscribe-settings.png)
 
 Vilka enskilda prenumerationer som visas beror på vilken arbetsyta som för närvarande är aktiv.  Om du vill se alla dina prenumerationer på en gång för alla arbetsytor, så kontrollera att **Min arbetsyta** är aktiv. Om du vill ha hjälp med att förstå hur arbetsytor fungerar, så gå till [Arbetsytor i Power BI](service-create-distribute-apps.md).
 
-![](media/service-report-subscribe/power-bi-subscriptions.png)
+![se alla prenumerationer i Min arbetsyta](media/service-report-subscribe/power-bi-subscriptions.png)
 
 En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanelen eller rapporten tas bort av ägaren eller om det användarkonto som använts för att skapa prenumerationen raderas.
 
@@ -120,7 +120,7 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanele
 * På grund av storleksbegränsningar i e-posten kan prenumerationer på instrumentpaneler och rapporter som innehåller extremt stora bilder misslyckas.    
 * Power BI pausar automatiskt uppdateringat för datauppsättningar som är associerade med instrumentpaneler och rapporter som inte har besökts på över två månader.  Men om du lägger till en prenumeration på en instrumentpanel eller en rapport, så pausas den inte, även om den förblir obesökt.    
 * Om du inte får någon e-post angående prenumerationen, så kontrollera att ditt UPN (User Principal Name) kan ta emot e-postmeddelanden. [Power BI-teamet arbetar med att släppa på det här kravet](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), så håll dig uppdaterad. 
-* Skickade rapporter och instrumentpaneler använder språkinställningarna du har i Power BI. Standardspråk är engelska. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**.
+* Skickade rapporter och instrumentpaneler använder språkinställningarna du har i Power BI. Standardspråk är engelska. Om du vill se eller ange din språkinställning klickar du på kugghjulsikonen ![kugghjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**.
 
 ## <a name="next-steps"></a>Nästa steg
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)    

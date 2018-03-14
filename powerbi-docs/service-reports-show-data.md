@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: b9e72c57ccd165ed02424e303c5ec54f179868e0
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Visualizations
+ms.openlocfilehash: b85fe5cf70c915a3355c80a61f01a32216450f03
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Visa data som används för att skapa visualiseringen
 ## <a name="show-data"></a>Visa data
@@ -38,16 +39,16 @@ Du kan också exportera de data som används för att skapa visualiseringen som 
 1. I Power BI-tjänsten, öppnar du en rapport i [Läsvyn eller Redigeringsvyn](service-reading-view-and-editing-view.md) och väljer ett visuellt objekt.  Öppna rapportvyn i Power BI Desktop.
 2. Om du vill visa bakomliggande data, välj **Utforska** > **Visa data**.
    
-   ![](media/service-reports-show-data/power-bi-show-data.png)
+   ![välj Visa data](media/service-reports-show-data/power-bi-show-data.png)
 3. Som standard visas data under visualiseringen.
    
-   ![](media/service-reports-show-data/power-bi-explore-show-data.png)
+   ![visning av visuellt objekt och lodräta data](media/service-reports-show-data/power-bi-explore-show-data.png)
 4. Välj om du vill ändra orientering väljer du lodrät layout ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) från det övre högra hörnet av visualiseringen.
    
-   ![](media/service-reports-show-data/power-bi-explore-show-data2.png)
+   ![visning av visuellt objekt och vågräta data](media/service-reports-show-data/power-bi-explore-show-data2.png)
 5. Om du vill exportera data till en .csv-fil väljer du ellipserna och sedan **Exportera data**.
    
-    ![](media/service-reports-show-data/power-bi-export-data-new.png)
+    ![välj Exportera data](media/service-reports-show-data/power-bi-export-data-new.png)
    
     Mer information om att exportera data till Excel finns i [Exportera data från visualiseringar i Power BI](power-bi-visualization-export-data.md).
 6. Om du vill dölja data avmarkerar du **Utforska** > **Visa data**.

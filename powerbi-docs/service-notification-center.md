@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 430ff5ad86636d96ca693ff7fc1ac1bb0d16b5cc
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Dashboards
+ms.openlocfilehash: afa3753d04cfb74c2673d222a0b1e6b07a1f5118
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="power-bi-notifications"></a>Power BI-meddelanden
 Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, ändringar i din grupparbetsyta, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](service-set-data-alerts.md) samt i Power BI-mobilappar.
@@ -34,13 +35,13 @@ Titta när Amanda granskar meddelanden hon tagit emot, hanterar sina aviseringar
 
 1. När du loggar in till Power BI, läggs de nya meddelanden som har skickats till dig när du var offline till ditt flöde. Om du har nya meddelanden, visar Power BI en gul bubbla med antal nya objekt.
    
-   ![](media/service-notification-center/power-bi-new-notification.png)
+   ![ikonen Nytt meddelande](media/service-notification-center/power-bi-new-notification.png)
 2. Välj meddelandeikonen i Power BI-menyraden.
    
-   ![](media/service-notification-center/power-bi-notifications-icon.png)
+   ![översta menyraden med meddelandeikonen markerad](media/service-notification-center/power-bi-notifications-icon.png)
 3. Meddelanden visas med de senaste överst och olästa meddelanden markerade. Meddelanden behålls i 90 dagar, om du inte tar bort dem tidigare eller når maxgränsen på 100.
    
-   ![](media/service-notification-center/power-bi-notifications.png)
+   ![Meddelandecenter](media/service-notification-center/power-bi-notifications.png)
 4. Välj X-ikonen för att stänga en avisering.
 
 ### <a name="next-steps"></a>Nästa steg

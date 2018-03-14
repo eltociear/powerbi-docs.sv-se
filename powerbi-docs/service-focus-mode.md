@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 1a4290d06d623b21b64e1ff03fb0382a55dc2a3c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 40ef141046db4b8dac9cf47f7f043ca306d2fadb
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="display-a-dashboard-tile-or-report-visual-in-focus-mode"></a>Visa instrumentpanelen eller rapportvisualiseringen i läget Fokus
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
@@ -36,39 +36,41 @@ Med läget ***Fokus*** kan du expandera (frigöra) en instrumentpanel eller rapp
 > Fokus skiljer sig från [helskärmsläge](service-fullscreen-mode.md).
 > 
 ## <a name="focus-mode-for-dashboard-tiles"></a>Fokusläge för instrumentpaneler
-1. Hovra över visualiseringspanelen, välj ellipserna (...) och välj **Öppna i fokusläge** ![](media/service-focus-mode/power-bi-dashboard-focus-mode.png).  
+1. Hovra över visualiseringspanelen, välj ellipsen (...) och välj **Öppna i fokusläge** 
+
+    ![panelens ellipsmeny](media/service-focus-mode/power-bi-dashboard-focus-mode.png).
    
 2. Panelen öppnas och fyller hela rapportarbetsytan. 
 
-   ![](media/service-focus-mode/power-bi-tile-focus.png)
+   ![panelen fyller rapportarbetsytan](media/service-focus-mode/power-bi-tile-focus.png)
 
 3. Expandera fönstret Filter om du vill se alla filter för den här visualiseringen.
    
-   ![](media/service-focus-mode/power-bi-focus-filters.png)
+   ![fokusläge med filterfönster](media/service-focus-mode/power-bi-focus-filters.png)
 
 4. Utforska ytterligare genom att ändra filtren och om du upptäcker något intressant fäst det visuella objektet till en instrumentpanel.
 
 5. Lämna Fokusläget och återgå till instrumentpanelen genom att välja **< Avsluta Fokusläge** (i det övre vänstra hörnet av visualiseringen).
    
-    ![](media/service-focus-mode/power-bi-tile-exit-focus.png)    
+    ![avsluta fokusläge](media/service-focus-mode/power-bi-tile-exit-focus.png)    
 
 
 ## <a name="focus-mode-for-report-visualizations"></a>Fokusläge för rapportvisualiseringar
 
-1. Hovra över visualiseringen och välj ikonen **Fokusläge**![](media/service-focus-mode/pbi_popout.jpg).  
+1. Hovra över rapportvisualiseringen och välj ikonen för **fokusläge** ![ikonen Fokusläge](media/service-focus-mode/pbi_popout.jpg).  
    
-   ![](media/service-focus-mode/power-bi-hover-focus.png)
+   ![fokusikon visas på panel](media/service-focus-mode/power-bi-hover-focus.png)
 2. Visualiseringen öppnas och fyller hela arbetsytan. 
 
    
-   ![](media/service-focus-mode/power-bi-display-focus-newer2.png)
+   ![visualisering i fokusläge](media/service-focus-mode/power-bi-display-focus-newer2.png)
 3. Expandera fönstret Filter om du vill se alla filter för den här visualiseringen.
    
-   ![](media/service-focus-mode/power-bi-display-focus-filters.png)
+   ![fokusläge med filterfönster](media/service-focus-mode/power-bi-display-focus-filters.png)
 4. Utforska ytterligare genom att ändra filtren och om du upptäcker något intressant fäst det visuella objektet till en instrumentpanel.   
 5. Lämna Fokusläget och gå tillbaka till rapporten genom att välja **Tillbaka till rapporten** (i det övre vänstra hörnet av visualiseringen). 
    
-    ![](media/service-focus-mode/power-bi-exit-focus-report.png)  
+    ![avsluta fokusläge](media/service-focus-mode/power-bi-exit-focus-report.png)  
 
 ## <a name="go-from-focus-mode-to-full-screen-mode"></a>Gå från Fokusläget till fullskärmsläget
 När du är i Fokusläget, kan panelen eller visualiseringen [visas på fullskärm (TV-läge.)](service-fullscreen-mode.md) Fullskärmsläget visas utan störande menyer och navigeringsknappar.

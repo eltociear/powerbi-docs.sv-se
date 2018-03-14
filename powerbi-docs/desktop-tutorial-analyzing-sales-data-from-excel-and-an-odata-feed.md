@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 0723b3a7155626f875044fa813a522ef6d4923df
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Learn more
+ms.openlocfilehash: 4cab3ed114d03d42c6acf1bf62f70e7d920e16b2
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="tutorial-analyzing-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Analysera försäljningsdata från Excel och en OData-feed
 Med **Power BI Desktop** kan du ansluta till alla typer av datakällor och sedan kombinera och forma dem på ett sätt som gör det lättare att skapa intressant dataanalys och visualiseringar. I den här kursen lär du dig hur du kombinerar data från två datakällor. 
@@ -34,7 +35,7 @@ Den slutgiltiga produkten ser ut så här:
 
 ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
-Följ stegen i den här självstudiekursen om du behöver produktarbetsboken, som du kan hämta**:** [ klicka](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[här](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[ för att hämta](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[.](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)
+Du behöver produktarbetsboken för att följa stegen i den här självstudiekursen. Gör så här för att hämta den: **[Klicka här för att hämta Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**
 
 I dialogrutan **Spara som** namnger du filen **Products.xlsx**.
 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/5/2017
 ms.author: maghan
-ms.openlocfilehash: 03be98e9aa2bd4d91357cc00208d82bd0116f69c
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 761f6a85d0f975f4178adfce830a6c73578aec73
+ms.sourcegitcommit: 20dd809a2ef8c0d6c6f677baadb5f57f41438cbe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
 Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem. office
@@ -86,7 +86,7 @@ Slutför överföringen genom att följa stegen.
    * *Överföringsrubrik:* namnet din överföring får i Developer Center
    * *Version:* versionsnumret är automatiskt ifylld från appaketet.
    * *Utgivningsdatum (UTC):* välja ett datum då din app ska lanseras i store. Om du väljer ett datum i framtiden blir appen inte tillgängligt i store förrän detta datum har nåtts.
-   * *Kategori:* första kategorin fylls i automatiskt som ”Datavisualisering + BI”. Så här kommer alla anpassade visuella Power BI-objekt att markeras. Du kan ange upp till 2 ytterligare kategorier som hjälper användare att söka efter ditt visuella objekt
+   * *Kategori:* första kategorin fylls i automatiskt som ”Datavisualisering + BI”. Så här markeras alla anpassade visuella Power BI-objekt. Du kan ange upp till 2 ytterligare kategorier som hjälper användare att söka efter ditt visuella objekt
    * *Testanteckningar:* valfritt om du vill ge anvisningar till testarna på Microsoft
    * *Min app anropar, stöder, innehåller eller använder kryptografi eller kryptering:* lämna alternativet omarkerat
    * *Gör det här tillägget tillgängligt i Office-tillägg-katalogen på iPad:* lämna alternativet omarkerat
@@ -121,7 +121,7 @@ Slutför överföringen genom att följa stegen.
     > Om du väljer något annat alternativ än kostnadsfri eller har inköp i appinnehåll i det skickade visuella objektet, kommer överföringen att avvisas.
     > 
     > 
-17. Nu kan du välja **Spara som utkast ”och skicka senare, eller välja **Överför för godkännande** för att skicka det visuella objektet till Office Store.
+17. Nu kan du välja **Spara som utkast** och skicka senare, eller välja **Överför för godkännande** för att skicka det anpassade visuella objektet till Office Store.
 
 ## <a name="tracking-submission-status-and-usage"></a>Spåra sändningsstatus och användning
 Du kan granska [verifieringsprinciperna](https://dev.office.com/officestore/docs/validation-policies#13-power-bi-custom-visuals).

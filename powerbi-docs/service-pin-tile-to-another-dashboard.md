@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: bf0146bf8cd57c515b0572b6a485e8da1a50f159
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 4784a5d07cab1f637afa6cf6622ea00fd264d501
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fäst en panel från en instrumentpanel till en annan instrumentpanel
 Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) är genom att kopiera den från en annan instrumentpanel. Var och en av de här panelerna, när de klickas på, länkar tillbaka till där de skapades – antingen i frågor och svar eller i en rapport. 
@@ -34,17 +35,17 @@ Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) ä
 2. Öppna en [instrumentpanel](service-dashboards.md).
 3. Hovra över den panel du vill fästa, välj ellipserna (...) och välj **Fäst panel**.  
    
-   ![](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
+   ![ellipsmenyn](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
 4. Fäst panelen på en befintlig eller ny instrumentpanel. 
    
    * **Befintlig instrumentpanel**: Markera instrumentpanelens namn i listrutan.
    * **Ny instrumentpanel**: Skriv instrumentpanelens namn.
    
-   ![](media/service-pin-tile-to-another-dashboard/pbi_pintoanotherdash.png)
+   ![Dialogrutan Fäst på instrumentpanelen](media/service-pin-tile-to-another-dashboard/pbi_pintoanotherdash.png)
 5. Välj **fäst**.
    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel på den valda instrumentpanelen.
    
-   ![](media/service-pin-tile-to-another-dashboard/power-bi-pin-success.png)
+   ![Fönstret Fäst på instrumentpanelen](media/service-pin-tile-to-another-dashboard/power-bi-pin-success.png)
 6. Välj **gå till instrumentpanel** för att se den fästa panelen. Härifrån kan du [byta namn, ändra storlek, länka och flytta](service-dashboard-edit-tile.md) den fästa visualiseringen.
 
 ## <a name="next-steps"></a>Nästa steg

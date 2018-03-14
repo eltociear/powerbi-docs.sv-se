@@ -16,21 +16,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ca03513bd79925c9ed927945b54d545450bff35b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 43dffab862173779068f1180f83bc6c92bf98013
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Visa relaterat innehåll i Power BI-tjänsten
 Fönstret **Relaterat innehåll** visar hur din Power BI-tjänsts innehåll – instrumentpaneler, rapporter och datauppsättningar – är sammankopplade.  Och bättre blir det, från det här fönstret kan du utföra vanliga uppgift såsom att uppdatera, byta namn, generera insikter och mycket mer. Välj en relaterad rapport eller instrumentpanel så öppnas den i din Power BI-arbetsyta.   
 
 Som du förmodligen redan har upptäckt, skapas rapporter på datauppsättningar. Rapportens visualiseringar fästs sedan på instrumentpaneler och instrumentpanelens visuella objekt länkar tillbaka till rapporter. Men hur vet du vilka instrumentpaneler som är värdar för visualiseringar från marknadsföringsrapporten? Och hur hittar du dessa instrumentpaneler? Använder din instrumentpanel för Anskaffning visualiseringar från mer än en datauppsättning? I så fall, vad heter de och hur kan du öppna och redigera dem? Används datauppsättningen för HR i några rapporter och instrumentpaneler alls eller kan den flyttas utan att orsaka några brutna länkar? Frågor som dessa kan alla besvaras på fönstret **Relaterat innehåll**.  Fönstret visar inte bara relaterat innehåll, det låter dig också vidta åtgärder för innehållet och enkelt navigera mellan relaterat innehåll.
 
-![](media/service-related-content/power-bi-view-related-dashboard-new.png)
+![relaterat innehåll](media/service-related-content/power-bi-view-related-dashboard-new.png)
 
 > [!NOTE]
 > Funktionen relaterat innehåll fungerar inte för strömning av datauppsättningar.
@@ -47,19 +47,19 @@ Du behöver minst behörighet att *visa* för en instrumentpanel för att öppna
 
 **Metod 1**
 
-I en arbetsyta väljer du fliken **Instrumentpaneler** och markerar sedan ikonen **Visa relaterade**![](media/service-related-content/power-bi-view-related-icon-new.png).
+I en arbetsyta väljer du fliken **Instrumentpaneler** och därefter ikonen **Visa relaterade** ![ikonen Visa relaterade](media/service-related-content/power-bi-view-related-icon-new.png).
 
-![](media/service-related-content/power-bi-view-related-dash-newer.png)
+![Fliken Instrumentpanel](media/service-related-content/power-bi-view-related-dash-newer.png)
 
 <br>
 
 **Metod 2**
 
-Med en instrumentpanel öppen väljer du ![](media/service-related-content/power-bi-view-related-new.png) från den översta menyraden.
+I en öppen instrumentpanel väljer du   ![Ikonen Visa relaterade](media/service-related-content/power-bi-view-related-new.png) på den översta menyraden.
 
 Fönstret **Relaterat innehåll** öppnas. Det visar alla rapporter som har visualiseringar fästa på instrumentpanelen och deras associerade datauppsättningar. För den här instrumentpanelen finns visualiseringar fästa från tre olika rapporter och dessa rapporter baseras på tre olika datauppsättningar.
 
-![](media/service-related-content/power-bi-view-related-dashboard-new.png)
+![Fönstret Relaterat innehåll](media/service-related-content/power-bi-view-related-dashboard-new.png)
 
 Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Välj exempelvis ett rapportnamn för att öppna det.  Välj en ikon för en rapport på listan för att [analysera i Excel](service-analyze-in-excel.md), [byta namn](service-rename.md) eller [hämta insikter](service-insights.md). Välja en ikon för en datauppsättning för att [skapa en ny rapport](service-report-create-new.md), [uppdatera](refresh-data.md), byta namn[, analysera i Excel](service-analyze-in-excel.md), [hämta insikter](service-insights.md) eller öppna fönstret  **Inställningar** för datauppsättningen.  
 
@@ -68,27 +68,28 @@ Du behöver minst behörighet att *visa* för en rapport för att öppna fönstr
 
 **Metod 1**
 
-I en arbetsyta väljer du fliken **Rapporter** och markerar sedan ikonen **Visa relaterade**![](media/service-related-content/power-bi-view-related-icon-new.png).
+I en arbetsyta väljer du fliken **Rapporter** och därefter ikonen **Visa relaterade** ![ikonen Visa relaterade](media/service-related-content/power-bi-view-related-icon-new.png).
 
-![](media/service-related-content/power-bi-view-related-report-newer.png)
+![Fliken Rapporter](media/service-related-content/power-bi-view-related-report-newer.png)
 
 <br>
+
 **Metod 2**
 
-Öppna rapporten i [Läsvy](service-reading-view-and-editing-view.md) och välj ![](media/service-related-content/power-bi-view-related-new.png) från den översta menyraden.
+Öppna rapporten i [Läsvyn](service-reading-view-and-editing-view.md) och välj ![ikonen Visa relaterade](media/service-related-content/power-bi-view-related-new.png) på den översta menyraden.
 
 Fönstret **Relaterat innehåll** öppnas. Det visar associerad datauppsättning och alla instrumentpaneler som har minst en panel fäst från rapporten. Det finns visualiseringar fästa på två olika instrumentpaneler för den här rapporten.
 
-![](media/service-related-content/power-bi-view-related-report.png)
+![Fönstret Relaterat innehåll](media/service-related-content/power-bi-view-related-report.png)
 
 Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Välj exempelvis ett instrumentpanelsnamn för att öppna det.  Välj en ikon för någon instrumentpanel i listan för att [dela instrumentpanelen med andra](service-share-dashboards.md) eller öppna fönstret **Inställningar** för instrumentpanelen. Välja en ikon för datauppsättningen för att [skapa en ny rapport](service-report-create-new.md), [uppdatera](refresh-data.md), byta namn[, analysera i Excel](service-analyze-in-excel.md), [hämta insikter](service-insights.md) eller öppna fönstret  **Inställningar** för datauppsättningen.  
 
 ## <a name="view-related-content-for-a-dataset"></a>Visa relaterat innehåll för en datauppsättning
 Du behöver minst behörighet att *visa* för en datauppsättning för att öppna fönstret **Relaterat innehåll**. I det här exemplet använder vi [Exemplet på anskaffningsanalys](sample-procurement.md).
 
-I en arbetsyta väljer du fliken **Datauppsättningar** och letar sedan upp ikonen **Visa relaterade**![](media/service-related-content/power-bi-view-related-icon-new.png).
+I en arbetsyta väljer du fliken **Datauppsättningar** och letar sedan upp ikonen **Visa relaterade**![ikonen Visa relaterade](media/service-related-content/power-bi-view-related-icon-new.png).
 
-![](media/service-related-content/power-bi-view-related-dataset-newer.png)
+![Fliken Datauppsättningar](media/service-related-content/power-bi-view-related-dataset-newer.png)
 
 Välj ikonen för att öppna fönstret **Relaterat innehåll**.
 
@@ -97,7 +98,7 @@ Välj ikonen för att öppna fönstret **Relaterat innehåll**.
 Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Välj exempelvis ett namn på en instrumentpanel eller rapport för att öppna den.  Välj en ikon för någon instrumentpanel i listan för att [dela instrumentpanelen med andra](service-share-dashboards.md) eller öppna fönstret **Inställningar** för instrumentpanelen. Välj en ikon för en rapport för att [analysera i Excel](service-analyze-in-excel.md), [byta namn](service-rename.md) eller [hämta insikter](service-insights.md).  
 
 ## <a name="limitations-and-troubleshooting"></a>Begränsningar och felsökning
-* Om din webbläsare inte har tillräckligt med utrymme, ser du inte ett alternativ för **Visa relaterade** men du kommer fortfarande att se ikonen Visa relaterade ![](media/service-related-content/power-bi-view-related-icon-new.png). Välj ikonen för att öppna fönstret **Relaterat innehåll**.
+* Om din webbläsare inte har tillräckligt med utrymme, ser du inte ett alternativ för **Visa relaterade** men du kommer fortfarande att se ikonen Visa relaterade ![ikonen Visa relaterade](media/service-related-content/power-bi-view-related-icon-new.png). Välj ikonen för att öppna fönstret **Relaterat innehåll**.
 * Om du vill öppna relaterat innehåll för en rapport måste du vara i [Läsvy](service-reading-view-and-editing-view.md).
 * Relaterat innehåll är inte tillgängligt i Power BI Desktop.
 * Funktionen Relaterat innehåll fungerar inte för strömning av datauppsättningar.

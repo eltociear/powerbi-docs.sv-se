@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/27/2017
 ms.author: maghan
-ms.openlocfilehash: 890c748c7e7502394fd2e6e024521e99082a1c77
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Share your work
+ms.openlocfilehash: ee1b403eaa8456266b452ff34814dc4f4059d9a6
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -135,7 +136,7 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder P
 **Publicera på webben** stöds för merparten av alla datakällor och rapporter i Power BI-tjänsten. Men följande stöds dock inte för närvarande eller är inte tillgängligt med Publicera på webben:
 
 1. Rapporter som använder säkerhet på radnivå.
-2. Rapporter som använder Analysis Services-tabeller lokalt.
+2. Rapporter som använder en datakälla för Live-anslutning, som Analysis Services Tabular på lokala flerdimensionella Analysis Services, Azure Analysis Services och Power BI-tjänsten.
 3. Rapporter om delas med dig direkt eller via ett organisationsinnehållspaket.
 4. Rapporter i en grupp som du inte är redigeringsmedlem i.
 5. Visuella R-objekt stöds för närvarande inte i Publicera på webben-rapporter.

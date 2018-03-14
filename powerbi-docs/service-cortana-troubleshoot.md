@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 352efd894eb58823c9f506089ee28b7d11b30687
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 80fb45e8f0d181779c699c081006b6610248dc50
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Felsöka Cortana för Power BI
 Den här artikeln ingår i en serie. Om du inte redan har gjort det rekommenderar vi att du läser följande tre artiklar.
@@ -95,7 +96,7 @@ Har du fortfarande problem?  Nu är dags att köra Cortanas felsökningsverktyg 
    Eftersom vi fick ett resultat vet vi nu att Cortana **är** aktiverat i Power BI. Det begränsar problemet till något på Windows-sidan, i språkinställningen för Cortana, eller om det finns fler än 100 datauppsättningar som aktiverats för Cortana.
 
 ### <a name="having-trouble-retrieving-answers-from-a-dashboard"></a>Har du problem med att hämta svar från en instrumentpanel?
-Letar du efter en instrumentpanel som har delats med dig?  Öppna Power BI > **Delas med mig** och leta reda på namnet på instrumentpanelen.  Skriv namnet i fältet *Uttryck* *.
+Letar du efter en instrumentpanel som har delats med dig?  Öppna Power BI > **Delas med mig** och leta reda på namnet på instrumentpanelen.  Skriv namnet i fältet **Uttryck**.
 
 ![Öppna Delat med mig i Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 
