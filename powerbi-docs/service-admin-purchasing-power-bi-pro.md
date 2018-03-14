@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/30/2017
 ms.author: maghan
-ms.openlocfilehash: 6019cde4864087c75b22663ff5461790d4e24961
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: c4fa2e0e2927f8050648884e1833adf618a7d4f5
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="purchasing-power-bi-pro"></a>Köp Power BI Pro
 Power BI Pro är till för användare som publicerar rapporter, delar instrumentpaneler, samarbetar med kollegor i arbetsytor och engagerar sig i andra relaterade aktiviteter som möjligheten att:
@@ -63,7 +64,7 @@ Sedan kan du välja **Starta utvärdering**.
 > Tillgängligheten av Power BI Premium och de ändringar som gjorts i den kostnadsfria versionen av Power BI den 1 juni 2017 innebär att du är berättigad till en utökad Pro-utvärderingsversion. Mer information finns i [Aktivering av utökad Pro-utvärderingsversion](service-extended-pro-trial.md).
 
 ### <a name="what-this-looks-like-within-the-service"></a>Så här ser det ut i tjänsten
-När du använder tjänsten kan du kontrollera att du har ett konto för en utvärderingsversion av Pro genom att gå till **kugghjulsikonen* och välja **Hantera personlig lagring**.
+När du använder tjänsten kan du kontrollera att du har ett konto för en utvärderingsversion av Pro genom att gå till **kugghjulsikonen** och välja **Hantera personlig lagring**.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial3.png)
 

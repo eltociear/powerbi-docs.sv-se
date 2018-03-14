@@ -16,19 +16,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 81ea6b32c6f61299c410325a432c521d8b402549
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: efa6d0266ae6fc8418ff4a6f2f78e47f5481d166
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="featured-dashboards-in-power-bi-service"></a>Aktuella instrumentpaneler i Power BI-tjänsten
 ## <a name="create-a-featured-dashboard"></a>Skapa en aktuell instrumentpanel
 Många har en instrumentpanel som de besöker oftare än andra.  Det kan vara instrumentpanelen som du använder för din verksamhet, eller en instrumentpanel som är en sammanslagning av paneler från många olika instrumentpaneler och rapporter.
 
-![](media/service-dashboard-featured/power-bi-feature-nav.png)
+![ikonen Ställ in som aktuell](media/service-dashboard-featured/power-bi-feature-nav.png)
 
 När du väljer en instrumentpanel som *aktuella* kommer den att visas varje gång du öppnar Power BI-tjänsten.  
 
@@ -47,22 +48,22 @@ Titta på när Amanda skapar en aktuell instrumentpanel och följ sedan anvisnin
 
 
 1. Öppna den instrumentpanel som du vill ange som *aktuell*. 
-2. I det övre navigeringsfältet ser du antingen **Ange som aktuell** eller bara ikonen Aktuell ![](media/service-dashboard-featured/power-bi-featured-icon.png). Välj något av alternativen.
+2. I det övre navigeringsfältet ser du antingen **Ange som aktuell** eller bara ikonen Aktuell ![ikonen Aktuell](media/service-dashboard-featured/power-bi-featured-icon.png). Välj något av alternativen.
    
-    ![](media/service-dashboard-featured/power-bi-set-as-featured.png)
+    ![Ikonen Ange som aktuell](media/service-dashboard-featured/power-bi-set-as-featured.png)
 3. Bekräfta valet.
    
-    ![](media/service-dashboard-featured/power-bi-create-featured.png)
+    ![ställ in som aktuell instrumentpanel](media/service-dashboard-featured/power-bi-create-featured.png)
 
 ## <a name="change-the-featured-dashboard"></a>Ändra den aktuella instrumentpanelen
 Du kan naturligtvis ange en ny instrumentpanel som den aktuella instrumentpanelen senare.
 
 1. Följ steg 1 och 2 ovan.
    
-    ![](media/service-dashboard-featured/power-bi-change-feature.png)
+    ![Fönstret Ändra den aktuella instrumentpanelen](media/service-dashboard-featured/power-bi-change-feature.png)
 2. Välj **Ställ in som aktuell**. Om du tar bort statusen Aktuell från en instrumentpanel tas den inte bort från din arbetsyta.  
    
-    ![](media/service-dashboard-featured/power-bi-success.png)
+    ![meddelande om slutförande](media/service-dashboard-featured/power-bi-success.png)
 
 ## <a name="remove-the-featured-dashboard"></a>Ta bort den aktuella instrumentpanelen
 Om du bestämmer dig för att du inte vill att en aktuell instrumentpanel kan du ta bort funktionen så här.
@@ -70,7 +71,7 @@ Om du bestämmer dig för att du inte vill att en aktuell instrumentpanel kan du
 1. Öppna den aktuella instrumentpanelen.
 2. I menyraden överst, välj **Inaktivera aktuell**.
    
-    ![](media/service-dashboard-featured/power-bi-unfeature.png)
+    ![ta bort aktuell](media/service-dashboard-featured/power-bi-unfeature.png)
 
 Nu öppnas Power BI till den senaste instrumentpanelen som du använde.  
 

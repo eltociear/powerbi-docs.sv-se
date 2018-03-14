@@ -16,18 +16,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 8a818c26a6f9afd134133464b972091faaad093d
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Reports
+ms.openlocfilehash: 5015886d0314c767bc16fe223c7db91adb0fd2bb
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 När du öppnar en rapport i Power BI-tjänsten har varje sida i rapporten en egen unik URL. Du kan använda filterfönstret på rapportarbetsytan om du vill filtrera rapportsidan.  Eller så kan du lägga till frågesträngparametrar i URL:en för att filtrera rapporten. Du kanske har en rapport som du vill visa dina kolleger men du vill filtrera den först åt dem. Ett sätt att göra detta på är att börja med standard-URL:en för rapporten, lägga till filterparametrar och sedan skicka dem hela URL:en med e-post.
 
-![](media/service-url-filters/power-bi-report2.png)
+![Power BI-rapport i tjänsten](media/service-url-filters/power-bi-report2.png)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/WQFtN8nvM4A?list=PLv2BtOtLblH3YE_Ycas5B1GtcoFfJXavO&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -36,7 +37,7 @@ Syntaxen är rätt enkel. Börja med rapport-URL:en, lägg till ett frågetecken
 
 URL?filter=***Tabell***/***Fält*** eq '***värde***'
 
-![](media/service-url-filters/power-bi-filter-urls7b.png)
+![URL med filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * **Tabell** och **Fält** är skiftlägeskänsliga, men **värde** är det inte.
 * Fält som är dolda från rapportvyn kan fortfarande filtreras.
@@ -49,7 +50,7 @@ Om du fortfarande tycker det är förvirrande kan du fortsätta läsa så förkl
 ## <a name="filter-on-a-field"></a>Filtrera i ett fält
 Vi antar att URL:en till vår rapport är följande.
 
-![](media/service-url-filters/power-bi-filter-urls6.png)
+![start-URL](media/service-url-filters/power-bi-filter-urls6.png)
 
 Och vi ser i vår kartvisualisering (ovan) att vi har butiker i North Carolina.
 
@@ -61,7 +62,7 @@ Filtrera rapporten till att endast visa data för butiker i ”NC” (North Caro
 
 ?filter=Butik/Område eq 'NC'
 
-![](media/service-url-filters/power-bi-filter-urls7.png)
+![URL med filter](media/service-url-filters/power-bi-filter-urls7.png)
 
 >[!NOTE]
 >*NC* är ett värde som lagras i fältet **Område** i tabellen **Butik**.

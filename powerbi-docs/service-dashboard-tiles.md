@@ -15,19 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: f6ddae485f15a1ebeed2ef1dfa7a1d373f9bb04b
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 3b6d8c31c9ba03b0119635af5f9270a584081139
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
 Instrumentpaneler och paneler på instrumentpanelen är en funktion i Power BI-tjänsten, inte Power BI Desktop. Paneler på instrumentpanelen kan inte skapas eller fästas i Power BI Mobile, [men de kan visas och delas](mobile-tiles-in-the-mobile-apps.md). Och i Power BI Mobile, kan du [lägga till bilder till din instrumentpanel med iPhone-appen](mobile-iphone-app-get-started.md).
 
 ## <a name="dashboard-tiles"></a>Paneler på instrumentpanelen
-![](media/service-dashboard-tiles/power-bi-dashboard.png)
+![Power BI-instrumentpanel](media/service-dashboard-tiles/power-bi-dashboard.png)
 
 En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen. En panel kan skapas från en rapport, datauppsättning eller instrumentpanel, från rutan Frågor och svar, Excel, och från SQL Server Reporting Services (SSRS), med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.
 
@@ -53,34 +54,34 @@ Det finns många olika sätt att lägga till (fästa) en panel till en instrumen
 
 Fristående paneler för bilder, textrutor, videor, strömning av data och webbinnehåll kan skapas direkt på en instrumentpanel med hjälp av [Lägg till panel](service-dashboard-add-widget.md).
 
-  ![](media/service-dashboard-tiles/add_widgetnew.png)
+  ![Ikonen Lägg till panel](media/service-dashboard-tiles/add_widgetnew.png)
 
 ## <a name="interacting-with-tiles-on-a-dashboard"></a>Interaktion med paneler på en instrumentpanel
 ### <a name="move-and-resize-a-tile"></a>Flytta och ändra storlek på en panel
-Hämta en panel och [flytta runt den på instrumentpanelen](service-dashboard-edit-tile.md). Hovra och välj referens ![](media/service-dashboard-tiles/resize-handle.jpg) för att ändra storlek på panelen.
+Hämta en panel och [flytta runt den på instrumentpanelen](service-dashboard-edit-tile.md). Hovra och välj referens ![referens](media/service-dashboard-tiles/resize-handle.jpg) för att ändra storlek på panelen.
 
 ### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Hovra över en panel för att ändra utseendet och beteendet
 1. Hovra över panelen för att visa ellipserna.
    
-    ![](media/service-dashboard-tiles/ellipses_new.png)
+    ![panelellips](media/service-dashboard-tiles/ellipses_new.png)
 2. Välj ellipserna för att öppna åtgärdsmenyn i panelen.
    
-    ![](media/service-dashboard-tiles/power-bi-tile-menu.png)
+    ![ellipsikon](media/service-dashboard-tiles/power-bi-tile-menu.png)
    
     Här kan göra du följande:
    
-   * [Öppna rapporten som användes för att skapa den här panelen ](service-reports.md)![](media/service-dashboard-tiles/chart-icon.jpg)  
+   * [Öppna rapporten som användes för att skapa den här panelen ](service-reports.md) ![rapportikon](media/service-dashboard-tiles/chart-icon.jpg)  
    
-   * [Öppna kalkylbladet som användes för att skapa den här panelen ](service-reports.md) ![](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
+   * [Öppna kalkylbladet som användes för att skapa den här panelen ](service-reports.md) ![kalkylbladsikon](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [Visa i fokusläge ](service-focus-mode.md) ![](media/service-dashboard-tiles/fullscreen-icon.jpg)  
-     * [Exportera de data som används i panelen](power-bi-visualization-export-data.md) ![](media/service-dashboard-tiles/export-icon.png)
-     * [Redigera rubrik och underrubrik, lägg till en hyperlänk, visa senaste uppdateringstid](service-dashboard-edit-tile.md)![](media/service-dashboard-tiles/pencil-icon.jpg)
-     * [Kör insikter ](service-insights.md) ![](media/service-dashboard-tiles/power-bi-insights.png)
-     * [Fäst panelen till en annan instrumentpanel ](service-pin-tile-to-another-dashboard.md)
-       ![](media/service-dashboard-tiles/pin-icon.jpg)
-   * [Ta bort panelen](service-dashboard-edit-tile.md)
-     ![](media/service-dashboard-tiles/trash-icon.png)
+     * [Visa i fokusläge ](service-focus-mode.md) ![fokusikon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+     * [Exportera data som användes i panelen](power-bi-visualization-export-data.md) ![ikonen Exportera data](media/service-dashboard-tiles/export-icon.png)
+     * [Redigera rubrik och underrubrik, lägg till en hyperlänk, visa senaste uppdateringstid](service-dashboard-edit-tile.md) ![redigeringsikon](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Köra insikter ](service-insights.md) ![ikonen Insikter](media/service-dashboard-tiles/power-bi-insights.png)
+     * [Fästa panelen till en annan instrumentpanel ](service-pin-tile-to-another-dashboard.md)
+       ![fästikon](media/service-dashboard-tiles/pin-icon.jpg)
+     * [Ta bort panelen](service-dashboard-edit-tile.md)
+     ![borttagningsikon](media/service-dashboard-tiles/trash-icon.png)
 3. Om du vill stänga åtgärdsmenyn, välj ett tomt område på arbetsytan.
 
 ### <a name="select-click-a-tile"></a>Välj (klicka på) en panel

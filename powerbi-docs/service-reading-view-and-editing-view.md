@@ -15,18 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 6948f0e333ba1136f6fda8fa0f62b146cefdd710
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Reports
+ms.openlocfilehash: 6eca438c9e12d99f925aef864ed9b74e16ef30b7
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
 I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter. 
 
-![](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
+![bild av rapportskapare och rapportanvändare](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## <a name="report-reading-view"></a>Rapportläsvyn
 
@@ -83,17 +84,17 @@ Kom ihåg att endast skaparen och ägarna av rapporten kan öppna en rapport i r
 
 1. Som standard öppnas rapporten vanligtvis läsvyn. Du vet att du är i läsvyn om ser du alternativet **Redigera rapporten**. Om **Redigera rapporten** är gråmarkerat har du inte behörighet att öppna rapporten i redigeringsvyn.
 
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
+   ![Redigera rapporten, gråmarkerat](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
 2. Om **Redigera rapporten** inte är gråmarkerat, väljer du alternativet för att öppna rapporten i redigeringsvyn. 
    
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
+   ![Alternativet Redigera rapporten](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
    
    Rapporten är nu i redigeringsvyn och använder samma [visningsinställningar](power-bi-report-display-settings.md) som du senast använde i läsvyn.
 
 2. För att återgå till läsvyn, väljer du **Läsvy** från det övre navigeringsfältet.
    
-    ![](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
+    ![Alternativet Läsvy](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
 

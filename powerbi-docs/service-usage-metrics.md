@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/21/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 36a79b6ec984ee663868c5f20efaa8cd5b596d2a
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 1ad8425917153f2f9662041dc594817857f8f499
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
 Om du skapar instrumentpaneler och rapporter kan du med användningsstatistik förstå deras inverkan. Oavsett om du kör användningsstatistik för instrumentpaneler eller rapporter ser du hur dessa instrumentpaneler och rapporter används i hela organisationen – vad som används, av vem och i vilket syfte.  
@@ -32,7 +33,7 @@ Om du skapar instrumentpaneler och rapporter kan du med användningsstatistik f�
 
 Dessa användningsstatistikrapporter är skrivskyddade. Men du kan anpassa en användningsstatistikrapport med hjälp av ”Spara som”. Detta skapar en helt ny datauppsättning och konverterar den skrivskyddade rapporten till en fullständig Power BI-rapport som du kan redigera. Den anpassade rapporten innehåller inte bara mått för vald instrumentpanel eller rapport, utan genom att ta bort standardfiltret har du nu tillgång till användningsstatistik för alla instrumentpaneler och rapporter i den valda arbetsytan.
 
-![](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
+![användningsstatistikrapport](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
 ## <a name="why-are-usage-metrics-important-to-me"></a>Varför är användningsstatistik viktigt för mig?
 Genom att känna till hur ditt innehåll används ser du vilken inverkan det har och du kan prioritera dina åtgärder. Användningsstatistik kan t.ex. visa att en av dina rapporter används dagligen av en stor del av organisationen eller att en instrumentpanel som du har skapat inte används alls. Den här typen av feedback är ovärderlig vid planeringen av ditt arbete.
@@ -48,7 +49,7 @@ Det går bara att köra användningsstatistikrapporter i Power BI-tjänsten.  Me
 ## <a name="about-the-usage-metrics-report"></a>Om användningsstatistikrapporten
 
 
-När du väljer **Användningsstatistik** eller ikonen ![](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) skapar Power BI en färdig rapport med användningsstatistik för innehållet under de senaste 90 dagarna.  Rapporten liknar de Power BI-rapporter som du redan är bekant med, men den har utformats för att vara informativ – inte interaktiv. Du kommer att kunna segmentera innehållet baserat på hur dina slutanvändare har åtkomst till det, t.ex. via webben eller en mobilapp. Allt eftersom dina instrumentpaneler och rapporter utvecklas, kommer även användningsstatistikrapporten göra det, med dagliga uppdateringar av nya data.  
+När du väljer **Användningsstatistik** eller ikonen ![användningsstatistikikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) skapar Power BI en färdig rapport med användningsstatistik för innehållet under de senaste 90 dagarna.  Rapporten liknar de Power BI-rapporter som du redan är bekant med, men den har utformats för att vara informativ – inte interaktiv. Du kommer att kunna segmentera innehållet baserat på hur dina slutanvändare har åtkomst till det, t.ex. via webben eller en mobilapp. Allt eftersom dina instrumentpaneler och rapporter utvecklas, kommer även användningsstatistikrapporten göra det, med dagliga uppdateringar av nya data.  
 
 Användningsstatistikrapporterna visas inte i **Senaste**, **Arbetsytor**, **Favoriter** eller andra innehållslistor. De kan inte läggas till i en app. Om du fäster en panel från en användningsstatistikrapport på en instrumentpanel går det inte att lägga till instrumentpanelen i en app eller ett innehållspaket.
 
@@ -56,14 +57,14 @@ Fördjupa dig i rapportdatan eller skapa egna rapporter mot datauppsättningen m
 
 ## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Öppna en användningsstatistikrapport för en instrumentpanel eller rapport
 1. Starta från arbetsytan som innehåller instrumentpanelen eller rapporten.
-2. Gå antingen till arbetsytans innehållslista, instrumentpanelen eller själva rapporten och välj ikonen för **Användningsstatistik**  ![](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
+2. Gå antingen till arbetsytans innehållslista, instrumentpanelen eller själva rapporten och välj ikonen **Användningsstatistik** ![användningsstatistikikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
    
-    ![](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
+    ![Fliken Instrumentpaneler](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
    
-    ![](media/service-usage-metrics/power-bi-run-usage-metrics-report2.png)
+    ![välj Användningsstatistik](media/service-usage-metrics/power-bi-run-usage-metrics-report2.png)
 3. Första gången du gör detta skapar Power BI användningsstatistikrapporten och talar om för dig när den är klar.
    
-    ![](media/service-usage-metrics/power-bi-usage-metrics-ready.png)    
+    ![uppdateringarna är klara](media/service-usage-metrics/power-bi-usage-metrics-ready.png)    
 4. Om du vill öppna resultaten väljer du **Visa användningsstatistik**.
    
     Användningsstatistiken blir en kraftfull bundsförvant när du arbetar med att distribuera och underhålla Power BI-instrumentpaneler och rapporter. Undrar du vilka sidor i rapporten som är mest användbara och vilka som du bör fasa ut? Ta ett utsnitt efter **Rapportsida** för att ta reda på det. Undrar du om du ska skapa en mobil layout för instrumentpanelen? Ta ett utsnitt efter **Plattformar** för att upptäcka hur många användare som har åtkomst till ditt innehåll via mobilappar kontra webbläsaren.
@@ -94,14 +95,14 @@ Fördjupa dig i rapportdatan eller skapa egna rapporter mot datauppsättningen m
 | Rangordning: Totalt antal delningar |ja |nej |Visar hur instrumentpanelen eller rapporten rangordnas vid totalt antal delningar för alla instrumentpaneler i organisationen under de senaste 90 dagarna. |
 
 ### <a name="dashboard-usage-metrics-report"></a>Användningsstatistikrapport för instrumentpanel
-![](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
+![Användningsstatistikrapport för instrumentpanel](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
 ### <a name="report-usage-metrics-report"></a>Användningsstatistikrapport för rapport
-![](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
+![Användningsstatistikrapport för rapport](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
 ## <a name="save-the-usage-metrics-report-as-a-full-featured-power-bi-report-personalize"></a>Spara användningsstatistikrapporten som en fullständig Power BI-rapport (anpassa)
 
-![](media/service-usage-metrics/power-bi-save-as.png)
+![Spara som](media/service-usage-metrics/power-bi-save-as.png)
 
 Använd **Spara som** för att konvertera användningsstatistikrapporten till en fullständig Power BI-rapport som kan anpassas och delas. När du har skapat en anpassad kopia får du fullständig åtkomst till den underliggande datauppsättningen, så att du kan anpassa användningsstatistikrapporten för dina specifika behov. Du kan även använda Power BI Desktop till att skapa anpassade användningsstatistikrapporter med hjälp av [live-anslutningen till Power BI-tjänstfunktionen](https://powerbi.microsoft.com/blog/connecting-to-datasets-in-the-power-bi-service-from-desktop).
 
@@ -116,16 +117,16 @@ När du skapar en kopia med ”Spara som” (anpassa), konverterar Power BI den 
 
 1. Från den färdiga användningsstatistikrapporten väljer du **Arkiv > Spara som**. Power BI konverterar användningsstatistikrapporten till en fullständig Power BI-rapport. Detta kallas en *anpassad* användningsstatistikrapport. Den anpassade användningsrapporten och datauppsättningen sparas i den aktuella arbetsytan som heter **mihart*.
    
-    ![](media/service-usage-metrics/power-bi-save-as.png)
+    ![Spara som](media/service-usage-metrics/power-bi-save-as.png)
 2. Öppna rapporten i redigeringsvyn och [interagera med den precis som med andra Power BI-rapporter](service-interact-with-a-report-in-editing-view.md). Du kan till exempel lägga till nya sidor och skapa nya visualiseringar, lägga till filter, formatera teckensnitt och färger etc.
    
-    ![](media/service-usage-metrics/power-vi-editing-view.png)
+    ![öppna en rapport i redigeringsvyn](media/service-usage-metrics/power-vi-editing-view.png)
 3. Alternativt kan du starta med den nya datauppsättningen och skapa en rapport från grunden.
    
-    ![](media/service-usage-metrics/power-bi-new-dataset.png)
+    ![Fliken Datauppsättningar](media/service-usage-metrics/power-bi-new-dataset.png)
 4. Den nya rapporten sparas i den aktuella arbetsytan (miheart) och läggs också till i innehållslistan **Senaste**.
    
-    ![](media/service-usage-metrics/power-bi-new-report.png)
+    ![Fliken Rapporter](media/service-usage-metrics/power-bi-new-report.png)
 
 ### <a name="remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace"></a>Ta bort filtret för att se ***all*** användningsstatistik i arbetsytan
 Om du vill visa mått för alla instrumentpaneler eller för alla rapporter i arbetsytan måste du ta bort ett filter. Som standard filtreras den anpassade rapporten till att visa mått för enbart den instrumentpanel eller rapport som användes för att skapa den.
@@ -134,10 +135,10 @@ Om du t.ex. använde instrumentpanelen med namnet ”Europeisk försäljning” 
 
 1. Öppna den anpassade rapporten i redigeringsvyn.
    
-    ![](media/service-usage-metrics/power-bi-editing-view.png)
+    ![välj Redigera rapport](media/service-usage-metrics/power-bi-editing-view.png)
 2. I fönstret Filter letar du reda på **Rapportnivåfilter** och tar bort filtret genom att välja ”x”.
    
-    ![](media/service-usage-metrics/power-bi-report-level-filter2.png)
+    ![ta bort filtret](media/service-usage-metrics/power-bi-report-level-filter2.png)
    
     Din anpassade rapport visar nu mått för hela arbetsytan.
 
@@ -146,13 +147,13 @@ Användningsstatistikrapporter är en funktion som Power BI- eller Office 365-ad
 
 1. Öppna administrationsportalen genom att välja kugghjulsikonen i det översta högra hörnet av Power BI-tjänsten. Välj sedan **Administratörsportalen**.
    
-    ![](media/service-usage-metrics/power-bi-admin-portal-new.png)
+    ![välj kugghjulsikonen](media/service-usage-metrics/power-bi-admin-portal-new.png)
 2. Från Administratörsportalen väljer du **Klientinställningar** och **Användningsstatistik för skapare av innehåll**.
    
-    ![](media/service-usage-metrics/power-bi-usage-settings.png)
+    ![Administratörsportal](media/service-usage-metrics/power-bi-usage-settings.png)
 3. Aktivera (eller inaktivera) användningsstatistik och välj **Tillämpa**.
    
-    ![](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+    ![Aktiverad användningsstatistik](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
 När du inaktiverar användningsstatistik för hela organisationen kan administratörerna använda alternativet **Ta bort allt befintligt innehåll för användningsstatistik** för att ta bort alla befintliga rapporter och instrumentpaneler som har skapats med användningsstatistikrapporter och datauppsättningar. Det här alternativet tar bort all åtkomst till användningsstatistiken för alla användare i organisationen som kanske redan använder den. Var försiktig, eftersom det inte går att ångra när du har tagit bort befintligt användningsstatistikinnehåll.
 

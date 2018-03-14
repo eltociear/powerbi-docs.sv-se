@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 7405f2c5663c071d58253f2103c9c7d778ea8299
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+LocalizationGroup: Reports
+ms.openlocfilehash: 7da16deb3e5919d509a5cbbb7fd845914c8c4ea4
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Skapa en ny Power BI-rapport genom att importera en datauppsättning
 Du har läst [Rapporter i Power BI](service-reports.md) och nu vill du skapa en egen. Det finns många olika sätt att skapa en rapport och i den här artikeln börjar vi med att skapa en grundläggande rapport från en Excel-datauppsättning. När du förstår grunderna för att skapa en rapport leder **Nästa steg** längst ned till mer avancerade avsnitt om rapporter.  
@@ -37,22 +38,22 @@ Den här metoden för att skapa en rapport som börjar med en datauppsättning o
 
 1. Vi kommer att skapa rapporten i en arbetsyta för Power BI-tjänsten, så välj en befintlig arbetsyta eller skapa en ny.
    
-   ![](media/service-report-create-new/power-bi-workspaces2.png)
+   ![lista över apparbetsytor](media/service-report-create-new/power-bi-workspaces2.png)
 2. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
    
-   ![](media/service-report-create-new/power-bi-get-data3.png)
+   ![Hämta data](media/service-report-create-new/power-bi-get-data3.png)
 3. Välj **Arkiv**  och navigera till den plats där du sparade exemplet Säljanalys.
    
-    ![](media/service-report-create-new/power-bi-select-files.png)
+    ![välj Filer](media/service-report-create-new/power-bi-select-files.png)
 4. För den här övningen väljer vi **Importera**.
    
-   ![](media/service-report-create-new/power-bi-import.png)
+   ![välj Importera](media/service-report-create-new/power-bi-import.png)
 5. När du har importerat datauppsättningen väljer du **Visa datauppsättning**.
    
-   ![](media/service-report-create-new/power-bi-view-dataset.png)
+   ![välj Visa datauppsättning](media/service-report-create-new/power-bi-view-dataset.png)
 6. När du visar en datauppsättning öppnas rapportredigeraren.  Du ser en tom arbetsyta och rapportredigeringsverktygen.
    
-   ![](media/service-report-create-new/power-bi-blank-report.png)
+   ![rapportredigeraren](media/service-report-create-new/power-bi-blank-report.png)
 
 > **TIPS**: Om du inte är bekant med rapportarbetsytan eller behöver en påminnelse kan du besöka [Ta en titt på rapportredigeraren ](service-the-report-editor-take-a-tour.md) innan du fortsätter.
 > 
@@ -63,16 +64,16 @@ Nu när vi har importerat vår datauppsättning kan vi börja svara på frågor.
 
 1. Välj **Sales (Försäljning)**  >  **This Year Sales (Årets försäljning)** > **Value (Värde)** i fönstret Fält.
    
-    ![](media/service-report-create-new/power-bi-report-step1.png)
-2. Omvandla det visuella objektet till en mätare genom att välja mätarmallen![](media/service-report-create-new/powerbi-gauge-icon.png) från fönstret **Visualiseringar**.
+    ![stapeldiagram i rapportredigeraren](media/service-report-create-new/power-bi-report-step1.png)
+2. Omvandla det visuella objektet till en mätare genom att välja mätarmallen ![mätarikon](media/service-report-create-new/powerbi-gauge-icon.png) från fönstret **Visualiseringar**.
    
-    ![](media/service-report-create-new/power-bi-report-step2.png)
+    ![Visuellt mätarobjekt i rapportredigeraren](media/service-report-create-new/power-bi-report-step2.png)
 3. Dra **försäljning** > **Årets försäljning** > **Mål** till brunnen **Målvärde**. Vi verkar vara mycket nära vårt mål.
    
-    ![](media/service-report-create-new/power-bi-report-step3.png)
+    ![Visuellt mätarobjekt med Mål som målvärde](media/service-report-create-new/power-bi-report-step3.png)
 4. Nu är dags att [spara din rapport](service-report-save.md).
    
-   ![](media/service-report-create-new/powerbi-save.png)
+   ![Filmenyn](media/service-report-create-new/powerbi-save.png)
 
 ## <a name="add-an-area-chart-and-slicer-to-the-report"></a>Lägg till ett ytdiagram och utsnitt i rapporten
 Vår marknadschef har några ytterligare frågor för oss att besvara. Hon vill veta hur försäljningen år jämfört med förra året. Dessutom vill hon se resultaten per distrikt.
@@ -80,21 +81,21 @@ Vår marknadschef har några ytterligare frågor för oss att besvara. Hon vill 
 1. Först ska vi skapa lite utrymme på arbetsytan. Välj mätaren och flytta den till det övre högra hörnet. Tryck och dra ett av hörnet så att den blir mindre.
 2. Avmarkera mätaren. Gå till rutan Fält och välj **Försäljning** > **Försäljning detta år** > **värdet** och välj **Försäljning**  >  **Försäljning förra året**.
    
-    ![](media/service-report-create-new/power-bi-report-step4.png)
-3. Omvandla det visuella objektet till ett ytdiagram genom att välja ytdiagrammallen![](media/service-report-create-new/power-bi-areachart-icon.png) från fönstret **Visualiseringar**.
+    ![rapportredigeraren med mätare och stapeldiagram](media/service-report-create-new/power-bi-report-step4.png)
+3. Omvandla det visuella objektet till ett ytdiagram genom att välja ytdiagrammallen ![diagramikon](media/service-report-create-new/power-bi-areachart-icon.png) från fönstret **Visualiseringar**.
 4. Välj **Tid** > **Period** till brunnen **Axel**.
    
-    ![](media/service-report-create-new/power-bi-report-step5.png)
+    ![rapportredigeraren med aktivt ytdiagram](media/service-report-create-new/power-bi-report-step5.png)
 5. Om du vill sortera visualiseringen enligt tidsperiod, väljer du ellipserna och därefter **Sortera efter period**.
-6. Nu ska vi lägga till utsnittet. Markera ett tomt område på arbetsytan och välj Utsnitt ![](media/service-report-create-new/power-bi-slicer-icon.png) mall. Detta lägger till ett tomt utsnitt på vår arbetsyta.
+6. Nu ska vi lägga till utsnittet. Markera ett tomt område på arbetsytan och välj mallen Utsnitt ![Ikonen Utsnitt](media/service-report-create-new/power-bi-slicer-icon.png)    . Detta lägger till ett tomt utsnitt på vår arbetsyta.
    
-    ![](media/service-report-create-new/power-bi-report-step6.png)    
+    ![rapportarbetsytan](media/service-report-create-new/power-bi-report-step6.png)    
 7. Välj **Distrikt** > **Distrikt** på fönstret Fält. Flytta och ändra storlek på utsticket.
    
-    ![](media/service-report-create-new/power-bi-report-step7.png)  
+    ![Rapportredigeraren, lägg till Distrikt](media/service-report-create-new/power-bi-report-step7.png)  
 8. Använd utsnittet för att leta efter mönster och insikter enligt distrikt.
    
-   ![](media/service-report-create-new/power-bi-slicer-video2.gif)  
+   ![video om att använda utsnitt](media/service-report-create-new/power-bi-slicer-video2.gif)  
 
 Fortsätt att utforska dina data och lägga till visualiseringar. När du har hittat särskilt intressanta insikter [fäst dem på en instrumentpanel](service-dashboard-pin-tile-from-report.md).
 

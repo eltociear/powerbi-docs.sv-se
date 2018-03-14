@@ -16,23 +16,23 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: aacc31c3ebb31bf6f8077a2bf802e8127048a431
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cbb7697e3d3dbc92c2917b0a80deadfc0b9fd5a0
+ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-power-bi-service-apppowerbicom"></a>Kom igång med Power BI-tjänsten (app.powerbi.com)
 Dessa självstudier hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden, så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](guided-learning/gettingstarted.yml#step-1).
 
-![](media/service-get-started/power-bi-components.png)
+![Bild på relationen mellan Power BI Desktop, Power BI Mobile och Power BI-tjänsten](media/service-get-started/power-bi-components.png)
 
 Power BI-tjänsten finns i en kostnadsfri version och en Pro-version. *Om du redan har ett konto* öppnar du en webbläsare och skriver in app.powerbi.com för att öppna Power BI-tjänsten, oavsett vilken version du använder. Om du är ny som användare rekommenderar vi att du börjar på www.powerbi.com i stället. Härifrån kan du lära dig mer om Power BI innan du loggar in till tjänsten.  När du är redo att testa den, väljer du länken **Registrera dig kostnadsfritt** som du ser i det övre högra hörnet. Om administratören redan har aktiverat Power BI för dig, använder du inte knappen Registrera dig kostnadsfritt, utan går i stället direkt till app.powerbi.com. 
 
-![](media/service-get-started/power-bi-sign-up.png)
+![Logga in eller Registrera dig kostnadsfritt](media/service-get-started/power-bi-sign-up.png)
 
 Om du behöver hjälp med Power BI Desktop, så läs [Kom igång med Desktop](desktop-getting-started.md). Om du behöver hjälp med Power BI Mobile, så läs [Power BI-appar för mobila enheter](mobile-apps-for-mobile-devices.md).
 
@@ -58,27 +58,27 @@ Här är ett exempel på hämtning av data från en CSV-fil. Vill du följa den 
 1. [Logga in till Power BI](http://www.powerbi.com/). Har du inte något konto? Inga problem, du kan registrera dig kostnadsfritt.
 2. Power BI öppnas i webbläsaren. Välj **Hämta data** längst ned i det vänstra navigeringsfältet.
    
-   ![](media/service-get-started/getdata3.png)
+   ![hämta data](media/service-get-started/getdata3.png)
 3. Välj **Filer**. 
    
-   ![](media/service-get-started/gs1.png)
+   ![hämta filer](media/service-get-started/gs1.png)
 4. Bläddra till filen på datorn och välj **Öppna**. Om du har sparat den i OneDrive för företag, väljer du det alternativet. Om du har sparat den lokalt, väljer du **Lokal fil**. 
    
-   ![](media/service-get-started/gs2.png)
+   ![Skärmen Hämta Data > Filer](media/service-get-started/gs2.png)
 5. I den här självstudien väljer vi **Importera** så att vi kan lägga till Excel-filen som en datauppsättning som vi sedan kan använda för att skapa rapporter och instrumentpaneler. Om du väljer **Ladda upp** överförs hela Excel-arbetsboken till Power BI, där du kan öppna och redigera den i Excel Online.
    
-   ![](media/service-get-started/power-bi-import.png)
+   ![välj Importera](media/service-get-started/power-bi-import.png)
 6. När din datauppsättning är klar öppnar du den i rapportredigeraren genom att välja **Visa datauppsättning**. 
 
-    ![](media/service-get-started/power-bi-gs.png)
+    ![Dialogrutan Din datauppsättning är klar](media/service-get-started/power-bi-gs.png)
 
     Eftersom vi inte har skapat några visualiseringar än är rapportarbetsytan tom.
 
-    ![](media/service-get-started/power-bi-report-editor.png)
+    ![tom rapportarbetsyta](media/service-get-started/power-bi-report-editor.png)
 
 6. Ta en titt på den översta menyraden och lägg märke till att det finns ett alternativ som heter **Läsvy**. Eftersom alternativet Läsvy visas, innebär det att du för närvarande befinner dig i **redigeringsvyn**. 
 
-    ![](media/service-get-started/power-bi-editing-view.png)
+    ![Alternativet Läsvy](media/service-get-started/power-bi-editing-view.png)
 
     I redigeringsvyn kan du skapa och ändra dina rapporter eftersom du är *ägare* till rapporterna. Det är du som är *skaparen*. När du delar din rapport med kollegor kan de bara interagera med rapporten i läsvyn. De är *konsumenter*. Lär dig mer om [Läsvy och Redigeringsvy](service-reading-view-and-editing-view.md).
     
@@ -91,49 +91,49 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
     
 1. I rapportredigeraren använder vi fönstret **Fält** till höger på sidan för att skapa en visualisering.  Markera kryssrutan intill **Bruttoförsäljning** och **Datum**.
    
-   ![](media/service-get-started/fields.png)
+   ![Fältlista](media/service-get-started/fields.png)
 
 2. Power BI analyserar informationen och skapar en visualisering.  Om du markerade **Datum** först, så visas en tabell.  Om du markerade **Bruttoförsäljning** först, så visas ett diagram. Växla till ett annat sätt att visa dina data. Nu visar vi dessa data som ett linjediagram. Välj linjediagramsikonen (kallas även mall) från **visualiseringsfönstret**.
    
-   ![](media/service-get-started/gettingstart5new.png)
+   ![rapportredigeraren med vald ikon](media/service-get-started/gettingstart5new.png)
 
 3. Det ser intressant ut så vi *fäster* det på en instrumentpanel. Hovra över visualiseringen och välj **stiftikonen**.  När du har fäst visualiseringen sparas den på instrumentpanelen och hålls uppdaterad så att du kan spåra det senaste värdet direkt.
    
-   ![](media/service-get-started/pinnew.png)
+   ![fästikon](media/service-get-started/pinnew.png)
 
 5. Eftersom detta är en ny rapport uppmanas du att spara den innan du kan fästa en visualisering på instrumentpanelen. Ge rapporten ett namn (till exempel *Försäljning över tid*) och välj **Spara och fortsätt**. 
    
-   ![](media/service-get-started/pbi_getstartsaveb4pinnew.png)
+   ![Dialogrutan Spara rapport](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
 6. Vi fäster linjediagrammet på en ny instrumentpanel och ger det namnet ”Ekonomiskt exempel för självstudier”. 
    
-   ![](media/service-get-started/power-bi-pin.png)
+   ![namnge rapporten](media/service-get-started/power-bi-pin.png)
    
  1. Välj **fäst**.
    
     Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.
    
-    ![](media/service-get-started/power-bi-pin-success.png)
+    ![Dialogrutan Fäst på instrumentpanelen](media/service-get-started/power-bi-pin-success.png)
 
 8. Välj **Gå till instrumentpanelen** för att se linjediagrammet fäst, som en panel, på din helt nya instrumentpanel. Du kan göra instrumentpanelen ännu bättre genom att lägga till fler visualiseringspaneler och [byta namn och storlek på dem, länka till dem och placera om dem](service-dashboard-edit-tile.md).
    
-   ![](media/service-get-started/power-bi-new-dashboard.png)
+   ![instrumentpanel med fäst visualisering](media/service-get-started/power-bi-new-dashboard.png)
    
    Välj den nya panelen på instrumentpanelen och gå tillbaka till rapporten. Power BI för dig tillbaka till rapportredigeraren i läsvyn. Om du vill växla tillbaka till redigeringsvyn, väljer du **Redigera rapporten** från den översta menyraden. När du befinner dig i redigeringsvyn igen kan du fortsätta att utforska och fästa paneler. 
 
 ## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Steg 3: Fortsätt att utforska med Frågor och svar (frågor på naturligt språk)
 1. Om du vill utforska dina data snabbt, så försök med att ställa en fråga i rutan Frågor och svar. Frågerutan för Frågor och svar är placerad längst upp på instrumentpanelen (**Ställ en fråga om dina data**) och i menyraden överst i rapporten (**Ställ en fråga**). Försök till exempel att skriva ”vilket segment hade mest intäkter”.
    
-   ![](media/service-get-started/powerbi-qna.png)
+   ![Frågor och svar-arbetsyta](media/service-get-started/powerbi-qna.png)
 
-2. Frågor och svar söker efter svar och visar dem i form av en visualisering. Välj fästikonen ![](media/service-get-started/pbi_pinicon.png) om du även vill visa den här visualiseringen på instrumentpanelen.
+2. Frågor och svar söker efter svar och visar dem i form av en visualisering. Välj fästikonen ![fästikon](media/service-get-started/pbi_pinicon.png) om du även vill visa den här visualiseringen på instrumentpanelen.
 3. Fäst visualiseringen på instrumentpanelen ”Ekonomiskt exempel för självstudier”.
    
-    ![](media/service-get-started/power-bi-pin2.png)
+    ![Dialogrutan Fäst på instrumentpanelen](media/service-get-started/power-bi-pin2.png)
 
 4. Gå tillbaka till instrumentpanelen där du ser den nya panelen.
 
-   ![](media/service-get-started/power-bi-final-dashboard.png)
+   ![instrumentpanel med fäst diagram](media/service-get-started/power-bi-final-dashboard.png)
 
 ## <a name="next-steps"></a>Nästa steg
 Är du redo att testa mer?  Här följer några bra exempel på hur du kan utforska Power BI.

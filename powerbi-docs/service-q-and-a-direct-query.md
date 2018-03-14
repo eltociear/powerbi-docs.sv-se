@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 49e0b976fcee8c18edc14f80df2786e5ebf3fedc
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 7c33e1d3719b30569996425ed247c1eac87b78f1
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="enable-qa-for-live-connections"></a>Aktivera frågor och svar för live-anslutningar
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Vad är den lokala datagatewayen?  Vad är en live-anslutning?
@@ -44,15 +45,15 @@ Mer information finns i:
 ## <a name="enable-qa"></a>Aktivera frågor och svar
 När du har ställt in datagatewayen, kan du ansluta till dina data från Power BI.  Skapa antingen en instrumentpanel med hjälp av dina lokala data eller ladda upp en .pbix-fil som använder lokala data.  Du kan också redan har lokala data i instrumentpaneler, rapporter och datauppsättningar som har delats med dig.
 
-1. I det övre högra hörnet av Power BI, väljer du kugghjulsikonen ![](media/service-q-and-a-direct-query/power-bi-cog.png) och väljer **inställningar**.
+1. I det övre högra hörnet i Power BI väljer du kugghjulsikonen ![kugghjulsikon](media/service-q-and-a-direct-query/power-bi-cog.png) och **Inställningar**.
    
-   ![](media/service-q-and-a-direct-query/powerbi-settings.png)
+   ![Menyn Inställningar](media/service-q-and-a-direct-query/powerbi-settings.png)
 2. Välj **datauppsättningar** och välj datauppsättningen att aktivera för frågor och svar.
    
-   ![](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
+   ![Skärmen Datauppsättningar i menyn Inställningar](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 3. Expandera **frågor och svar och Cortana**, markerar kryssrutan för **aktivera frågor och svar för den här datauppsättningen** och välj **tillämpa**.
    
-    ![](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![Utökat område för frågor och svar](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Vilka data cachelagras och hur skyddas sekretessen?
 När du aktiverar frågor och svar för dina lokala data, cachelagras en delmängd av dina data i tjänsten. Det här görs för att säkerställa att frågor och svar fungerar med en rimlig prestanda. Power BI utesluter värden som är längre än 24 tecken från cachelagring. Cachen tas bort inom några timmar när du inaktiverar frågor och svar genom att avmarkera **aktivera frågor och svar för den här datauppsättningen**, eller när du tar bort din datauppsättning.

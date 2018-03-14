@@ -17,18 +17,19 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: mihart
-ms.openlocfilehash: 202f92b9c7089a4bd9bb5dd976051bba47da632e
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 634dc4efe6553a9de91716552a21563f5405fa69
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Metodtips för design av rapporter och visuella objekt
 <!-- Shared newnav Include -->
 [!INCLUDE [newnavbydefault](./includes/newnavbydefault.md)]
 
 ## <a name="introduction"></a>Introduktion
-I det här dokumentet finns metodtips för att utforma rapporter i Power BI. Vi börjar med planeringen, beskriver designprinciper som du kan använda i dina rapporter och går vidare till de sidor och enskilda visuella objekt som utgör rapporten.  Många av dessa metodtips gäller även instrumentpaneldesign.
+I det här dokumentet finns metodtips för att utforma rapporter i Power BI. Vi börjar med planeringen och beskriver designprinciper som du kan använda i dina rapporter och för de sidor och enskilda visuella objekt som utgör rapporten.  Många av dessa metodtips gäller även instrumentpaneldesign.
 
 Vi hoppas dokumentet blir en startpunkt för dig, att du använder det du lärt dig i dina egna rapporter och visualiseringar, samt att du fortsätter konversationen på community.powerbi.com. BI:s rapportdesign och visualiseringsanvändning är ett ämne som engagerar just nu och det finns många tankesmedjor, bloggare och webbplatser som har fördjupat sig i ämnet (vi visar några i slutet).   
 
@@ -215,7 +216,7 @@ När du ställer in bakgrunder för rapportsidor bör du välja färger som inte
 
 Du skapar inte ett konstverk utan en funktionell rapport. Välj en färg som förbättrar läsbarhet och tydlighet för rapportelementen.  
 
-Vid en undersökning av användningen av färg och visualiseringar på webbsidor upptäckte man att en större kontrast mellan färger påskyndar förståelsen (*The effect of text and background colour on visual search of Web pages** och **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics*.)
+Vid en undersökning av användningen av färg och visualiseringar på webbsidor upptäckte man att en större kontrast mellan färger påskyndar förståelsen (The effect of text and background colour on visual search of Web pages och **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics**).
 
 Vi har använt några metodtips för färger i vårt exempelrapport (bild 20 och 21) nedan. Det mest anmärkningsvärda var att vi ändrade bakgrundsfärgen till svart.  Den gula var för ljus och tröttade våra ögon.  I diagrammet ”Antal idrottare per år och klass” försvann dessutom den gula delen av staplarna in i den gula bakgrunden.  Med hjälp av en svart (eller vit) bakgrund får vi maximal kontrast och de visuella objekten blir fokus för uppmärksamheten.
 

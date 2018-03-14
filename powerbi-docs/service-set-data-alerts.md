@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 2a4134e1a06933927bd2c5453cd8e7a79394c384
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 187ca632ad947e5cb657f3a5d19e1d62262259b4
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Datavarningar i Power BI-tjänsten
 Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett. 
@@ -31,7 +32,7 @@ Aviseringar kan endast ställas in på paneler som har fästs från rapportvisua
 
 Du kan endast se aviseringar som du anger, även om du delar din instrumentpanel. Datavarningar är helt synkroniserade på plattformar. Ställ in och visa datavarningar [i Power BI-appar](mobile-set-data-alerts-in-the-mobile-apps.md) och i Power BI-tjänsten. De finns inte för Power BI Desktop. Aviseringar kan även vara [automatiserade och integrerade med Microsoft Flow](https://flow.microsoft.com) - [Prova själv](service-flow-integration.md).
 
-![](media/service-set-data-alerts/powerbi-alert-types-new.png)
+![paneler](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
 > Datadrivna aviseringar ger information om dina data. Om du visar dina Power BI-data på en mobilenhet och den blir stulen, bör du använda Power BI-tjänsten för att inaktivera alla datadrivna aviseringar.
@@ -47,15 +48,15 @@ I det här exemplet används en kortpanel från exempelinstrumentpanelen detaljh
 
 1. Starta på en instrumentpanel. Välj ellipserna från en mätare, KPI eller kortpanel på instrumentpanelen.
    
-   ![](media/service-set-data-alerts/powerbi-card.png)
-2. Välj på klockikonen ![](media/service-set-data-alerts/power-bi-bell-icon.png) för att lägga till en eller flera aviseringar för **Summa butiker**.
+   ![panelen Totalt antal butiker](media/service-set-data-alerts/powerbi-card.png)
+2. Välj klockikonen ![aviseringsikon](media/service-set-data-alerts/power-bi-bell-icon.png) för att lägga till en eller flera aviseringar för **Totalt antal butiker**.
    
 1. För att starta, väljer du **+ Lägg till aviseringsregel** kontroller att skjutreglaget är inställt till **På** och ge din avisering en rubrik. Namnet hjälper dig att identifiera aviseringarna.
    
-   ![](media/service-set-data-alerts/powerbi-alert-title.png)
+   ![Fönstret Hantera aviseringar](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Bläddra nedåt och ange detaljerad information om aviseringen.  I det här exemplet ska vi skapa en avisering som meddelar oss en gång om dagen om antalet totala butiker går över 100. Aviseringar visas i meddelandecentret. Power BI kommer också att skicka ett e-postmeddelande.
    
-   ![](media/service-set-data-alerts/power-bi-set-alert-details.png)
+   ![Fönstret Hantera aviseringar, ange tröskelvärde](media/service-set-data-alerts/power-bi-set-alert-details.png)
 5. Välj **Spara**.
 
 ## <a name="receiving-alerts"></a>Ta emot aviseringar
@@ -65,13 +66,13 @@ Därefter skickar Power BI en avisering till meddelandecentret och, om du vill, 
 
 1. Om du har valt att skicka ett e-postmeddelande kommer du att se följande i din inkorg.
    
-   ![](media/service-set-data-alerts/powerbi-alerts-email.png)
+   ![Aviseringsmeddelande](media/service-set-data-alerts/powerbi-alerts-email.png)
 2. Power BI lägger till ett meddelande i **meddelandecentret** och lägger till en ny aviseringsikon i den berörda panelen.
    
-   ![](media/service-set-data-alerts/powerbi-alert-notifications.png)
+   ![Meddelandeikonen i Power BI-tjänsten](media/service-set-data-alerts/powerbi-alert-notifications.png)
 3. Öppna meddelandecentret om du vill se detaljerad information om aviseringen.
    
-    ![](media/service-set-data-alerts/powerbi-alert-notfication.png)
+    ![läs aviseringen](media/service-set-data-alerts/powerbi-alert-notfication.png)
    
    > [!NOTE]
    > Aviseringar fungerar bara på data som ska uppdateras. När data uppdateras söker Power BI för att se om en avisering har angetts för dessa data. Om data har uppnått ett tröskelvärde utlöses en avisering.
@@ -82,23 +83,23 @@ Därefter skickar Power BI en avisering till meddelandecentret och, om du vill, 
 Det finns flera sätt att hantera dina aviseringar: från paneler i instrumentpanelen, Power BI-inställningsmenyn och på en enskild panel i [Power BI-mobilappen på iPhone](mobile-set-data-alerts-in-the-mobile-apps.md) eller i [Power BI-mobilappen för Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### <a name="from-the-tile-itself"></a>Från själva panelen
-1. Om du behöver ändra eller ta bort en avisering för en panel, ska du öppna fönstret **Hantera aviseringar** på nytt genom att välja klockikonen ![](media/service-set-data-alerts/power-bi-bell-icon.png). Alla aviseringar som du har angett för panelen visas.
+1. Om du behöver ändra eller ta bort en avisering för en panel öppnar du fönstret **Hantera aviseringar** på nytt genom att välja klockikonen ![klockikon](media/service-set-data-alerts/power-bi-bell-icon.png). Alla aviseringar som du har angett för panelen visas.
    
-    ![](media/service-set-data-alerts/powerbi-see-alerts.png).
+    ![Fönstret Hantera aviseringar](media/service-set-data-alerts/powerbi-see-alerts.png).
 2. Om du vill ändra en avisering, väljer du pilen till vänster om aviseringens namn.
    
-    ![](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
+    ![pilen bredvid aviseringsnamnet](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
 3. Om du vill ta bort en avisering, väljer du papperskorgen till höger om aviseringens namn.
    
-      ![](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
+      ![papperskorgikonen har valts](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
 
 ### <a name="from-the-power-bi-settings-menu"></a>På inställningsmenyn för Power BI
 1. Välj kugghjulsikonen från menyfältet i Power BI.
    
-    ![](media/service-set-data-alerts/powerbi-gear-icon.png).
+    ![kugghjulsikonen](media/service-set-data-alerts/powerbi-gear-icon.png).
 2. Välj **Aviseringar** under **Inställningar**.
    
-    ![](media/service-set-data-alerts/powerbi-alert-settings.png)
+    ![Fliken Aviseringar i fönstret Inställningar](media/service-set-data-alerts/powerbi-alert-settings.png)
 3. Härifrån kan du aktivera och inaktivera aviseringar, öppna fönstret **Hantera aviseringar** för att ändra eller ta bort aviseringen.
 
 ## <a name="tips-and-troubleshooting"></a>Tips och felsökning

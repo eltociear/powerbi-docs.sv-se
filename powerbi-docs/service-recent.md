@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 103edc93dafb9615e08692965258ffc61905baf1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 972e816dcd833b6ae0e7bd26b760952066aa5ac8
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Senaste** innehåll i Power BI-tjänsten
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/24/2018
 ## <a name="what-is-recent-content"></a>Vad är senaste innehåll
 Senaste innehållet är de sista objekten du besökte, max. 20 objekt.  Dessa omfattar: instrumentpaneler, rapporter, appar och arbetsböcker för alla dina arbetsytor.
 
-![](media/service-recent/power-bi-recent-screen.png)
+![Fönstret Senaste innehåll](media/service-recent/power-bi-recent-screen.png)
 
 Låt Amanda visa hur innehållslistorna i **Senaste** fylls och följ sedan instruktionerna under videon för att prova själv.
 
@@ -40,11 +40,11 @@ Låt Amanda visa hur innehållslistorna i **Senaste** fylls och följ sedan inst
 ## <a name="display-recent-content"></a>Visa senaste innehåll
 Om du vill se dina fem senast besökta objekt väljer du på pilen till höger om **Senaste** i det vänstra navigeringsfönstret.  Här kan du välja ett objekt att öppna från senaste innehåll. Endast de fem senaste objekten visas.
 
-![](media/service-recent/power-bi-recent-flyout-new.png)
+![Senaste innehåll utfällt](media/service-recent/power-bi-recent-flyout-new.png)
 
-Om du har fler än fem senast besökta objekt väljer du **se alla** för att öppna skärmen Senaste (se nedan). Du kan också välja **Senaste**, eller ikonen Senaste ![](media/service-recent/power-bi-recent-icon.png) från det vänstra navigeringsfältet.
+Om du har fler än fem senast besökta objekt väljer du **se alla** för att öppna skärmen Senaste (se nedan). Du kan också välja **Senaste**, eller ikonen Senaste ![ikonen Senaste](media/service-recent/power-bi-recent-icon.png), från det vänstra navigeringsfältet.
 
-![](media/service-recent/power-bi-recent-list.png)
+![visa allt senaste innehåll](media/service-recent/power-bi-recent-list.png)
 
 Härifrån du kan interagera med innehållet som samma sätt som på enskilda flikar i [ **instrumentpaneler**](service-dashboards.md), [ **rapporter**](service-reports.md), och  **arbetsböcker**, och på skärmen [ **Appar** ](service-install-use-apps.md).
 

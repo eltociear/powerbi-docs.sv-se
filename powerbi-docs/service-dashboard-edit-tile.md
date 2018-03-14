@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/20/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 5c208ab13398987350d2acd72e29dbc4d6a6c4a1
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 98856d551e0f124d7ea3e038623e2340ceeb18b8
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Redigera eller ta bort en panel på instrumentpanelen
 
@@ -54,23 +55,23 @@ Den här artikeln beskriver hur du kan göra följande.
 ## <a name="create-a-new-visualization-and-pin-it-to-the-dashboard"></a>Skapa en visualisering och fäst den på instrumentpanelen
 1. Från instrumentpanelen för IT-utgiftsanalysen väljer du panelen Belopp för att öppna rapporten.
 
-    ![](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
+    ![Panelen Belopp](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
 
 2. Öppna rapporten i Redigeringsvyn genom att välja **Redigera rapport** från den översta menyraden.
 
 3. Lägg till en ny rapportsida genom att välja plus-tecknet (+) längst ned på rapporten.
 
-    ![](media/service-dashboard-edit-tile/power-bi-add-page.png)
+    ![plusikon](media/service-dashboard-edit-tile/power-bi-add-page.png)
 
 4. Från Fält-fönstret, väljer du **Fakta > Belopp** och **Affärsområde > Affärsområde**.
  
 5. Från fönstret Visualiseringar, väljer du Ringdiagramikonen för att konvertera visualiseringen till ett ringdiagram.
 
-    ![](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
+    ![Visualiseringsfönster](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
 
 5. Välj fäst-ikonen och fäst ringdiagrammet till instrumentpanelen med exemplet på IT-utgiftsanalys.
 
-   ![](media/service-dashboard-edit-tile/power-bi-pin.png)
+   ![hovra över panel](media/service-dashboard-edit-tile/power-bi-pin.png)
 
 6. När det visas ett meddelande om att det lyckats, väljer du **Gå till instrumentpanel**. Du uppmanas att spara dina ändringar. Välj **Spara**.
 
@@ -86,24 +87,23 @@ Leta upp den nya ikonen på instrumentpanelen. Markera och håll panelen för at
 ## <a name="resize-the-tile"></a>Ändra storlek på panelen
 Du kan göra paneler i många olika storlekar – från enheter på 1 x 1 upp till 5 x 5. Markera och dra i handtaget (i det nedre högra hörnet) för att ändra storlek på panelen.
 
-![](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
+![video](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
 ## <a name="the-ellipses--menu"></a>Ellipsmenyn (...)
 
 1. Välj ellipsen (...) i det övre högre hörnet av panelen. 
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile.png)
+   ![panelellips](media/service-dashboard-edit-tile/power-bi-tile.png)
 
 2. Hovra över Konto-panelen och välj ellipserna för att visa alternativen. De tillgängliga alternativen varierar efter paneltyp.  Alternativen som finns tillgängliga för en live-panel skiljer sig till exempel från de som finns för en standardvisualiseringspanel. Om en instrumentpanel har delats med dig (du är inte ägaren), kommer du att ha färre alternativ.
 
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
+   ![ellipsmenyns alternativ](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 3. Välj **Redigera information** för att öppna fönstret Panelinformation. 
 
     Ändra rubriken och standardbeteendet för panelen.  Du kan till exempel bestämma att när en *konsument* markerar en panel, ska en ny instrumentpanel visas istället för att öppna rapporten som användes för att skapa den panelen.  
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 
 <a name="rename"></a>
@@ -111,7 +111,7 @@ Du kan göra paneler i många olika storlekar – från enheter på 1 x 1 upp ti
 ### <a name="rename-the-tile"></a>Byt namn på panelen
 Längst upp i fönstret Panelinformation, ändrar du **Rubrik** till **Betalt belopp**.
 
-![](media/service-dashboard-edit-tile/power-bi-tile-title.png)
+![Fönstret Panelinformation](media/service-dashboard-edit-tile/power-bi-tile-title.png)
 
 
 <a name="hyperlink"></a>
@@ -123,27 +123,27 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 
 2. Välj **Länka till en instrumentpanel eller rapport i den aktuella arbetsytan** och välj sedan från listmenyn.  I det här exemplet har jag valt instrumentpanelen personalfrågeexempel. Om du inte redan har det här exemplet på arbetsytan, kan du lägga till det och komma tillbaka till det här steget, eller så kan du välja en annan instrumentpanel. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-custom-link.png)
+    ![Dialogrutan Funktioner](media/service-dashboard-edit-tile/power-bi-custom-link.png)
 
 3. Välj **Tillämpa**.
 
 4. Den nya rubriken visas på panelen.  När du väljer panelen, öppnar Power BI också instrumentpanelen Personalfrågor. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-title.png)
+    ![panelrubrik](media/service-dashboard-edit-tile/power-bi-title.png)
 
 <a name="different"></a>
 
 ### <a name="pin-the-tile-to-a-different-dashboard"></a>Fäst panelen på en annan instrumentpanel
-1. Från ellipsens listmeny, väljer du **Fäst panelen** ![](media/service-dashboard-edit-tile/pinnooutline.png) .
+1. Från ellipsens listmeny väljer du **Fäst panelen** ![fästikon](media/service-dashboard-edit-tile/pinnooutline.png).
 2. Välj om du ska fästa en dublett av den här panelen på en befintlig eller ny instrumentpanel. 
    
-   ![](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
+   ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
 3. Välj **fäst**.
 
 <a name="delete"></a>
 
 ### <a name="delete-the-tile"></a>Ta bort panelen
-1. Om du vill ta bort en panel permanent från en instrumentpanel, väljer du **Ta bort panelen** ![](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) från ellips-listmenyn. 
+1. Om du vill ta bort en panel permanent från en instrumentpanel väljer du **Ta bort panelen** ![borttagningsikon](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) från ellips-listmenyn. 
 
 2. Om du tar bort en panel så tas inte den underliggande visualiseringen bort. Öppna den underliggande rapporten genom att välja Belopp-panelen. Öppna den sista sidan i rapporten för att se att den ursprungliga visualiseringen inte har tagits bort från rapporten. 
 

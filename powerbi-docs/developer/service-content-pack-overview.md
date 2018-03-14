@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 02/20/2018
 ms.author: maghan
-ms.openlocfilehash: f0a50c0aba1a05c55236192a730c3187cb37c055
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 2cc78b3d2a877e465d5f4bdc67f501b7de87f88e
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Översikt över Power BI-tjänstens program för innehållspaketet
 Ett innehållspaket är en uppsättning färdigt innehåll som låter användare direkt få insikter från en källa. Ett innehållspaket fokuserar vanligtvis på ett specifikt företagsscenario och ger insikter för en roll, en domän eller ett arbetsflöde.
@@ -64,9 +64,9 @@ Innehållspaket ger insikter och mått som fokuserar på ett visst företagsscen
 * Överväg att erbjuda flera innehållspaket för separata unika scenarier  
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
-**Kan jag skapa ett innehållspaket för Power BI-tjänsten för ett tredje parts SaaS-program som jag inte äger?**
+**Kan jag som tredje part skapa ett innehållspaket för Power BI-tjänsten för ett SaaS-program som jag inte äger?**
 
-Nej, vi kräver för tillfället signering av ett partneravtal med ägaren för SaaS-programmet innan du publicerar innehållspaketet till tjänsten.
+Vi kräver signering av ett partneravtal med ägaren av SaaS-programmet innan ett innehållspaket publiceras till tjänsten. Som tredje part är du ansvarig för signering av partneravtalet med SaaS-programägaren.
 
 **Jag har ingen offentlig utvecklar-API för min tjänst. Kan jag fortfarande skapa ett innehållspaket för Power BI-tjänsten som hämtar data direkt från datalagret?**
 
@@ -76,9 +76,13 @@ Nej, innehållspaket för Power BI-tjänsten kräver en utvecklar-API som kan n�
 
 Innehållspaket för Power BI-tjänsten stöder REST API eller OData-flöde. Power BI fungerar med flera olika autentiseringstyper som grundläggande autentisering, OAuth2.0 och Web API-nyckel. Granska avsnittet [redigering](template-content-pack-authoring.md#dashboard) för mer information om de tekniska kraven.
 
+**Jag har ett publicerat innehållspaket i Power BI. Hur uppdaterar jag det?**
+
+Publicerade innehållspaket kan uppdateras en gång i månaden. Uppdateringsbegäranden som skickas till [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com) innan sista dagen i innevarande månad publiceras första veckan i påföljande månad.
+
 **Jag har fler frågor om innehållspaket för tjänsten. Hur kan jag kontakta er?**
 
-Skicka oss gärna ett e-post med dina frågor på pbiservicesapps@microsoft.com
+Skicka oss gärna ett meddelande med dina frågor på [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Support
 För support under utveckling, kan du använda [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Det här kontot övervakas och hanteras aktivt. Kundincidenter når snabbt ett lämpligt team.

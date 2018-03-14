@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: f76bc638893a06545fb5a71ec633dd470fd47dd8
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 26308afc86ce83a24a40b078770db35213f600e0
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigering: sökning, lokalisering och sortering av innehåll i Power BI-tjänsten
 Det finns många sätt att navigera i innehållet i Power BI-tjänsten. Innehållet är organiserat efter typen av arbetsyta: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.  Och innehållet ordnas också efter användning: favoriter, senaste, appar, delas med mig och funktioner. Med dessa olika vägar till ditt innehåll kan du snabbt hitta det du söker i Power BI-tjänsten.  
@@ -34,26 +34,26 @@ Det finns många sätt att navigera i innehållet i Power BI-tjänsten. Innehål
 
 Power BI-tjänsten separerar ditt arbetsyteinnehåll efter typ: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar. Den här organisationen visas när du väljer en arbetsyta. I det här exemplet har apparbetsytan fått namnet ”Exempelapp för försäljning och marknadsföring” och innehåller två instrumentpaneler, sex rapporter, en arbetsbok och fem datauppsättningar.
 
-![](media/service-navigation-search-filter-sort/workspaces.gif)
+![video](media/service-navigation-search-filter-sort/workspaces.gif)
 
 ________________________________________
 
 ## <a name="searching-and-sorting-in-workspaces"></a>Söka efter och sortera i arbetsytor
 En arbetsyta har fyra innehållsflikar: Instrumentpaneler, Rapporter, Arbetsböcker och Datauppsättningar.  Var och en av dessa flikar innehåller ett sökfält och en sorteringsknapp.  När du börjar med Power BI-tjänsten kanske inte dessa är användbara eftersom du bara har ett eller två objekt per flik.  Men med tiden kan det bli långa listor med innehåll.  Genom att använda sökning och sortering hittar du enkelt vad du behöver.
 
-![](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
+![Fliken Instrumentpaneler](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
 
 * Ange ett sökvillkor för att söka efter en matchning på den aktuella skärmen
   
-   ![](media/service-navigation-search-filter-sort/power-bi-search2.png)
+   ![ange sökterm](media/service-navigation-search-filter-sort/power-bi-search2.png)
 * Klicka på sorteringsknappen för att visa alternativ för den aktuella sidan. Alternativen är att sortera efter namn eller ägare.
   
-   ![](media/service-navigation-search-filter-sort/power-bi-sort-alpha.png)
+   ![sorteringsmeny](media/service-navigation-search-filter-sort/power-bi-sort-alpha.png)
 
 ## <a name="navigation-using-the-left-navbar"></a>Navigering med hjälp av vänster navigeringsfält
 Vänster navigeringsfält klassificerar ditt innehåll på ett sätt som gör det ännu enklare att snabbt hitta det du behöver.  
 
-![](media/service-navigation-search-filter-sort/power-bi-newnav.png)
+![vänster navigeringsfält](media/service-navigation-search-filter-sort/power-bi-newnav.png)
 
 
 
@@ -61,7 +61,7 @@ Innehåll som du skapar för eget bruk är tillgängligt i **Min arbetsyta**, in
 
 Dessutom kan du tagga innehåll Med [Favoriter](service-dashboard-favorite.md) och [Aktuellt](service-dashboard-featured.md). Välj den instrumentpanel som du tror att du oftast kommer att använda och ange den som din *aktuella* instrumentpanel. Varje gång du öppnar Power BI-tjänsten är det den instrumentpanelen som visas först. Har du flera instrumentpaneler och appar som du besöker ofta? Genom att ange dem som favoriter är de alltid tillgängliga i det vänstra navigeringsfältet.
 
-![](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
+![Favoriter utfällt](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning

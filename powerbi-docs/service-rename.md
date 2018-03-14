@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9f4d4897558f241d316ee9d7021b4c34660fe9bf
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cdea6474901dad27a4155b80fb605502102201a5
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Byt namn på nästan allt i Power BI-tjänsten
 Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app och arbetsyta i Power BI-tjänsten.
@@ -41,20 +41,20 @@ Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, ra
 | Innehåll i **delat med mig** |Nej |Nej |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Byt namn på en instrumentpanel, rapport eller arbetsbok
-1. Starta i en arbetsyta och välj fliken **instrumentpaneler**, **rapporter** eller **arbetsböcker**. Hovra över objektet du vill byta namn på och välj kugghjulsikonen ![](media/service-rename/powerbi-cog-icon.png). Om kugghjulsikonen saknas är du inte behörig att byta namn.
+1. Starta i en arbetsyta och välj fliken **instrumentpaneler**, **rapporter** eller **arbetsböcker**. Hovra över objektet du vill byta namn på och välj ![kugghjulsikonen](media/service-rename/powerbi-cog-icon.png). Om kugghjulsikonen saknas är du inte behörig att byta namn.
    
-   ![](media/service-rename/power-bi-workspace-dashboards.png)
+   ![Power BI-tjänstens arbetsyta](media/service-rename/power-bi-workspace-dashboards.png)
 2. I inställningssidan skriver du det nya namnet och väljer **spara**.
    
-   ![](media/service-rename/power-bi-rename-dashboard2.png)
+   ![Fönstret Inställningar för datauppsättning](media/service-rename/power-bi-rename-dashboard2.png)
 
 ## <a name="rename-a-dataset"></a>Byt namn på en datauppsättning
 1. Starta i en arbetsyta och välj fliken **datauppsättningar**.
    
-   ![](media/service-rename/power-bi-ellipses.png)
+   ![arbetsyta med fliken Datauppsättningar](media/service-rename/power-bi-ellipses.png)
 2. Hovra över objektet du vill byta namn på, välj ellipserna (...) och välj **byt namn**.  
    
-      ![](media/service-rename/power-bi-rename-datasets.png)
+      ![välj Byt namn](media/service-rename/power-bi-rename-datasets.png)
    
    > [!NOTE]
    > Alternativen i listrutan varierar.
@@ -62,7 +62,7 @@ Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, ra
    > 
 3. På inställningssidan, skriver du ett nytt namn och väljer **spara**.
    
-     ![](media/service-rename/power-bi-rename.png)
+     ![Fönstret Byt namn](media/service-rename/power-bi-rename.png)
 
 ## <a name="rename-an-app-workspace"></a>Byt namn på en apparbetsyta
 Alla med administratörsbehörigheter kan byta namn på en apparbetsyta.
@@ -70,10 +70,10 @@ Alla med administratörsbehörigheter kan byta namn på en apparbetsyta.
 1. Starta i den arbetsyta som du vill byta namn på.
 2. Välj ellipserna (...) i det övre högra hörnet och välj **redigera arbetsytan**. Om du inte ser det här alternativet saknar du behörighet för att byta namn på den här arbetsytan. 
    
-    ![](media/service-rename/power-bi-edit-workspace.png)
+    ![välj Redigera arbetsytan](media/service-rename/power-bi-edit-workspace.png)
 3. Ange ett nytt arbetsytenamn och välj **spara**.
    
-   ![](media/service-rename/power-bi-workspace-rename.png)
+   ![Fönstret Redigera arbetsytan](media/service-rename/power-bi-workspace-rename.png)
 
 ## <a name="rename-a-page-in-a-report"></a>Byt namn på en sida i en rapport
 Gillar du inte namnet på en sida i din Power BI-rapport?  Ett nytt namn är bara ett klick bort. Du kan byta namn på sidor i [rapportens redigeringsvy ](service-interact-with-a-report-in-editing-view.md).
@@ -81,14 +81,14 @@ Gillar du inte namnet på en sida i din Power BI-rapport?  Ett nytt namn är bar
 1. Öppna rapporten i [redigeringsvy](service-reading-view-and-editing-view.md).
 2. Leta reda på rapportsideflikarna längst ned i Power BI-fönstret.
    
-    ![](media/service-rename/report-page-tabs-new.png)
+    ![rapport med markerade flikar](media/service-rename/report-page-tabs-new.png)
 3. Öppna den rapportsida som du vill byta namn på genom att välja fliken.
 4. Dubbelklicka på namnet på fliken för att markera det.  
    
-    ![](media/service-rename/hilite-tab.png)
+    ![närbild av ett fliknamn](media/service-rename/hilite-tab.png)
 5. Skriv in ett nytt namn för rapportsidan och tryck retur.
    
-    ![](media/service-rename/new-name.png)
+    ![ange ett nytt sidnamn](media/service-rename/new-name.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * Om objektet som du vill byta namn på har delats med dig, eller är del av ett innehållspaket, visas inte kugghjulsikonen och du har inte tillgång till inställningarna.

@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 2d8ed3c30d289646504071daca098df1f41f6aab
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 6b5467456321b171116cf984ec276c3694b4030b
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Punktdiagram och bubbeldiagram i Power BI (självstudier)
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Dessa datapunkter kan vara jämnt eller ojämnt fördelade på den horisontala axeln, beroende på datan.
@@ -56,44 +57,55 @@ Titta på det här videoklippet och se Skapa ett punktdiagram och följ stegen n
 
 Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill följa med kan du [hämta exemplet](sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
 
-1. Starta på en [tom rapportsida ](power-bi-report-add-page.md) och välj fälten **Försäljning** \> **Försäljning per kvm** och **Försäljning** >  **Total försäljningsvarians %**. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
+1. Välj den gula plusikonen för att skapa en [tom rapportsida ](power-bi-report-add-page.md).
  
-2. I fältpanelen, väljer du **Distrikt > Distrikt**.
-   
+2. Välj följande fält från fönstret Fält:
+   - **Försäljning** > **Försäljning efter kvm**
+   - **Försäljning** > **Total försäljningsvarians %**
+   - **Distrikt** > **Distrikt**
+
     ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
-4. Konvertera till ett punktdiagram. På panelen Visualiseringar väljer du ytdiagramsikonen.
+
+    Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
+
+3. Konvertera till ett punktdiagram. På panelen Visualiseringar väljer du ytdiagramsikonen.
+
    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
-5. Dra **Distrikt** från **Information** till **Förklaring**.
-   
+
+4. Dra **Distrikt** från **Information** till **Förklaring**. Nu visas ett punktdiagram som visar **Total försäljningsvarians %** längs Y-axeln och **Försäljning per kvadratmeter** längs X-axeln. Datapunkternas färger representerar distrikt:
+
     ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
 
-Nu har vi ett punktdiagram som visar totalförsäljningsvarians i % längs Y-axeln och visar försäljning per kvadratmeter längs X-axeln.  Datapunkternas färger representerar distrikt.  Nu ska vi lägga till en tredje dimension.
+Nu ska vi lägga till en tredje dimension.
 
 ## <a name="create-a-bubble-chart"></a>Skapa ett bubbeldiagram
-1. Dra **Försäljning** > **Försäljning detta år** > **Värdet** till området **Storlek** i fönstret Fält. 
+
+1. Från fönstret **Fält** drar du **Försäljning** > **Försäljning detta år** > **Värdet** till området **Storlek**. Datapunkterna expanderar till storlekar som motsvarar försäljningsvärdet.
    
    ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
-2. Håll muspekaren över en bubbla.  Storleken på bubblan reflekterar **försäljning detta år**.
+
+2. Håll muspekaren över en bubbla. Storleken på bubblan reflekterar **försäljning detta år**.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
-3. Du kan också [formatera visualiseringsfärger, etiketter, rubriker, bakgrund med mera](service-getting-started-with-color-formatting-and-axis-properties.md).
+
+3. Om du vill ange antalet datapunkter som ska visas i bubbeldiagrammet går du till **Format**-avsnittet i fönstret **Visualiseringar**, expanderar kortet **Allmänt** och justerar **Datavolym**. Du kan ange största datavolym på upp till 10 000 (standard är 3 500).
+
+    ![Datavolym](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+
+   > [!NOTE]
+   > Eftersom fler datapunkter kan innebära en längre inläsningstid, bör du testa dina rapporter på webben och mobilt för att säkerställa att prestandan matchar dina användares förväntningar om du väljer att publicera rapporter med gränser i den högre änden av skalan. Tänk på att du bör testa resultaten för olika formfaktorer för att säkerställa bra prestanda för datapunkter med höga nummer.
+
+4. Du kan [formatera visualiseringens färger, etiketter, rubriker, bakgrund med mera](service-getting-started-with-color-formatting-and-axis-properties.md). Överväg att lägga till markörformer på varje linje för att [förbättra tillgängligheten](desktop-accessibility.md). Med olika markörformer för varje linje är det enklare för rapportanvändare att skilja linjer (eller områden) från varandra. Välj markörform genom att expandera kortet **Former** och välja en markörform.
+
+      ![Markörform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    Du kan också ändra markörformen till en romb, triangel eller kvadrat:
 
    ![Kvadratisk markör](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
-4. Om du vill ange antalet datapunkter som ska visas i ditt bubbeldiagram, går du till **Format**-avsnittet i panelen **Visualiseringar**, expanderar kortet **Allmänt** och justerar **Datavolym**. Standard är 3 500. 
- 
-    ![Datavolym](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
-
-   > [!NOTE]
-   > Eftersom fler datapunkter kan innebära en längre inläsningstid, bör du testa dina rapporter på webben och mobilt för att säkerställa att prestandan matchar dina användares förväntningar om du väljer att publicera rapporter med gränser i den högre änden av skalan.
-
-5.   Du kan även välja markörform genom att expandera kortet **Former** och välja en markörform.
-
-      ![Markörform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+
 ### <a name="your-scatter-chart-has-only-one-data-point"></a>**Ditt punktdiagram har endast en datapunkt**
 Har du skapat ett punktdiagram där du bara ser en datapunkt som samlar alla värdena på X- och Y-axlarna?  Eller samlar diagrammet alla värden längs en enda vågrät eller lodrät linje?
 

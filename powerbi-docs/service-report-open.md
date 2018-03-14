@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/07/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 1d9c183a7fab95caa44221bd2d252ab92889b3f4
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: c5177f4ccce8e8e274944cdcb539ca65a8f87ca8
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Öppna en rapport i Power BI-tjänsten (app.powerbi.com)
 Rapporter finns tillgängliga i Power BI-tjänsten, Power BI Desktop, Power BI-mobil och Power BI Embedded. Den här artikeln behandlar att öppna rapporter i ***Power BI-tjänsten***.
@@ -32,11 +32,11 @@ I Power BI-tjänsten finns det två lägen för att visa och interagera med rapp
 
 1. Starta i en arbetsyta och välj fliken **rapporter** för att visa alla rapporter på den arbetsytan.  
    
-   ![](media/service-report-open/power-bi-open-report.png)
-1. Välj rapportnamnet för att öppna den i Läsvy.  
+   ![Rapportfliken på en arbetsyta](media/service-report-open/power-bi-open-report.png)
+2. Välj rapportnamnet för att öppna den i Läsvy.  
    
-    ![](media/service-report-open/power-bi-reading-view.png)
-1. Det finns [så mycket du kan göra i läsvy](service-reading-view-and-editing-view.md).  Den här exempelrapporten har flera sidor så börja utforska genom att välja varje flik längst ned i rapportarbetsytan. 
+    ![rapport i Läsvyn](media/service-report-open/power-bi-reading-view.png)
+3. Det finns [så mycket du kan göra i läsvy](service-reading-view-and-editing-view.md).  Den här exempelrapporten har flera sidor så börja utforska genom att välja varje flik längst ned i rapportarbetsytan. 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Öppna en rapport från en instrumentpanel
 Det finns många andra sätt att öppna en rapport. Du kan till exempel starta på en instrumentpanel och välj en panel som skapades från en rapport.  Om du väljer panelen så öppnas rapporten i läsvy. Om du vill följa med, [öppna exempelinstrumentpanelen Försäljning och marknadsföring](sample-datasets.md).
@@ -47,34 +47,34 @@ Det finns många andra sätt att öppna en rapport. Du kan till exempel starta p
 
 2.  I det här exemplet har vi valt kolumndiagramspanelen Totalt antal enheter hittills i år...
 
-    ![](media/service-report-open/power-bi-dashboard.png)
+    ![instrumentpanel med vald panel](media/service-report-open/power-bi-dashboard.png)
 
 3.  Den associerade rapporten öppnas i Läsvy. Du märker att vi är på sidan kategori hittills i år. Det är den rapportsidan som innehåller kolumndiagrammet som vi valt från instrumentpanelen.
 
-    ![](media/service-report-open/power-bi-report.png)
+    ![öppen rapport i Läsvyn](media/service-report-open/power-bi-report.png)
 
 4. Stanna i Läsvy eller välj **Redigera rapporten** för att öppna rapporten i Redigeringsvyn. Kom ihåg att endast de som har redigeringsbehörighet för rapporten kan öppna den i Redigeringsvyn.
 
-    ![](media/service-report-open/power-bi-edit-report.png)
+    ![Rapportredigeraren med ikonen Redigera rapport](media/service-report-open/power-bi-edit-report.png)
 
 ## <a name="create-a-brand-new-report-from-a-dataset"></a>Skapa en ny rapport från en datauppsättning
 Ett annat sätt att öppna en rapport är från en datauppsättning. När du startar från en datauppsättning, kommer rapportens arbetsyta att vara tom så den här metoden rekommenderas för rapport*skapare* som vill skapa en ny rapport utifrån en datauppsättning som de äger. Precis som i exemplet ovan, kan du följa med genom att hämta [exempelappen Försäljning och marknadsföring](sample-datasets.md).
 
 1. Starta i arbetsytan som innehåller den datauppsättning som du vill använda som grund för en rapport.
 
-   ![](media/service-report-open/power-bi-workspace.png)
+   ![vänster navigeringsfält visar apparbetsytor](media/service-report-open/power-bi-workspace.png)
 
 2. Välj fliken **Datauppsättningar** för att visa listan över alla datauppsättningar i den arbetsytan. Det här kallas innehållsvylistan **Datauppsättningar**.
    
-   ![](media/service-report-open/power-bi-dataset.png)
+   ![lista över datauppsättningar](media/service-report-open/power-bi-dataset.png)
 
 1. Hitta datauppsättningen och välj ikonen **Skapa rapport** för att öppna datauppsättningen i Redigeringsvyn. Om du inte har redigeringsbehörighet för en datauppsättning, kommer du inte att kunna öppna den. 
    
-    ![](media/service-report-open/power-bi-create-report.png)
+    ![datauppsättning med ikonen Skapa rapport](media/service-report-open/power-bi-create-report.png)
 
 3. Datauppsättningen öppnas i rapportredigeraren. Datafälten visas till höger och väntar bara på att du ska börja utforska och skapa visualiseringar. 
 
-   ![](media/service-report-open/power-bi-blank-canvas.png)
+   ![rapportarbetsytan](media/service-report-open/power-bi-blank-canvas.png)
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Ännu fler sätt att öppna en rapport
 När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du att lista ut de arbetsflöden som fungerar bäst för dig. Några andra sätt att komma åt rapporter:

@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 53e5e67da9bacd9fc9dcbb770747823647aa3a3c
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: c295eea46e6e8d182147f877548a385ce4602bad
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Typer av insikter som stöds av Power BI
 ## <a name="how-does-insights-work"></a>Hur fungerar insikter?
@@ -35,47 +36,47 @@ Det här är några av de algoritmer som vi använder:
 ## <a name="category-outliers-topbottom"></a>Kategoriavvikare (upp/ned)
 Visar fall, för ett mått i modellen, där en eller två medlemmar i en dimension har mycket större värden än andra medlemmar i dimensionen.  
 
-![](media/service-insight-types/pbi_auto_insight_types_category_outliers.png)
+![Exempel på kategoriavvikare](media/service-insight-types/pbi_auto_insight_types_category_outliers.png)
 
 ## <a name="change-points-in-a-time-series"></a>Ändra punkterna i en tidsserie
 Visar om det finns betydande förändringar i trender i en tidsserie med data.
 
-![](media/service-insight-types/pbi_auto_insight_types_changepoint.png)
+![Exempel på ändrade punkter i en tidsserie](media/service-insight-types/pbi_auto_insight_types_changepoint.png)
 
 ## <a name="correlation"></a>Korrelation
 Identifierar fall där flera mått visar ett förhållande mellan varandra när de ritas mot en dimension i datauppsättningen.
 
-![](media/service-insight-types/pbi_auto_insight_types_correlation.png)
+![Exempel på korrelation](media/service-insight-types/pbi_auto_insight_types_correlation.png)
 
 ## <a name="low-variance"></a>Låg varians
 Identifierar fall där datapunkter inte är långt från medelvärdet.
 
-![](media/service-insight-types/power-bi-low-variance.png)
+![Exempel på låg varians](media/service-insight-types/power-bi-low-variance.png)
 
 ## <a name="majority-major-factors"></a>Majoritet (viktiga faktorer)
 Söker efter fall där en majoritet av ett totalt värde kan bero på en enda faktor vid uppdelat efter en annan dimension.  
 
-![](media/service-insight-types/pbi_auto_insight_types_majority.png)
+![Exempel på viktiga faktorer](media/service-insight-types/pbi_auto_insight_types_majority.png)
 
 ## <a name="overall-trends-in-time-series"></a>Övergripande trender i tidsserier
 Identifierar trender uppåt eller nedåt i tidsseriedata.
 
-![](media/service-insight-types/pbi_auto_insight_types_trend.png)
+![Exempel på övergripande trender i tidsserier](media/service-insight-types/pbi_auto_insight_types_trend.png)
 
 ## <a name="seasonality-in-time-series"></a>Säsongsberoende i tidsserier
 Söker efter periodiska mönster i tidsseriedata, till exempel säsongsvärdet för varje vecka, månad eller år.
 
-![](media/service-insight-types/pbi_auto_insight_types_seasonality_new.png)
+![Exempel på säsongsvärde](media/service-insight-types/pbi_auto_insight_types_seasonality_new.png)
 
 ## <a name="steady-share"></a>Stadig resurs
 Visar fall där det finns en överordnad-underordnad korrelation mellan andelen av det underordnade värdet i förhållande till det övergripande värdet för det överordnade över en kontinuerlig variabel.
 
-![](media/service-insight-types/pbi_auto_insight_types_steadyshare.png)
+![Exempel på stadig resurs](media/service-insight-types/pbi_auto_insight_types_steadyshare.png)
 
 ## <a name="time-series-outliers"></a>Extremvärden för tidsserier
 För data över en tidsserie, identifierar när det finns specifika datum- och tidsvärden som skiljer sig från andra datum-/tidsvärden.
 
-![](media/service-insight-types/pbi_auto_insight_types_time_series_outliers.png)
+![Exempel på extremvärden för tidsserier](media/service-insight-types/pbi_auto_insight_types_time_series_outliers.png)
 
 ## <a name="next-steps"></a>Nästa steg
 [Power BI-insikter](service-insights.md)
