@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 67b9dd605f5de2de1e824948143011797ad1f937
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Get started
+ms.openlocfilehash: 0984e00dbe6b82a2b5b9cfc07f318ded03961f64
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips för att få hjälp med Power BI-frågor
 Har du någonsin blivit frustrerad över användningen av Power BI eller kämpat med att få svar på dina Power BI-frågor när du behöver dem? 
@@ -56,7 +57,7 @@ De utbildningsalternativ som finns tillgängliga är nästan oändliga, från pe
 
 Du kan hitta ytterligare alternativ online, som exempelvis:
 
-* **edX.org** erbjuder en kostnadsfri kurs [Analysera och visualisera Data med Power BI](https://www.edx.org/course/analyzing-visualizing-data-power-bi-microsoft-dat207x-4). 
+* **edX.org** erbjuder en kostnadsfri kurs [Analysera och visualisera Data med Power BI](https://www.edx.org/course/analyzing-visualizing-data-power-bi-microsoft-dat207x-4).
 * **Lynda.com** har kurser som exempelvis [Grundläggande utbildning i Power BI Pro](https://www.lynda.com/Power-BI-tutorials/Power-BI-Pro-Essential-Training/485820-2.html).
 * Leta efter personliga utbildningar i ”**Dashboard in a Day**”.
 
@@ -67,15 +68,14 @@ Ställ frågor och få svar i [Power BI Community](http://community.powerbi.com)
 Anslut till en [Power BI-användargrupp](https://community.powerbi.com/t5/Power-BI-User-Groups/ct-p/Groups) och gruppen om hjälp när du har frågor. Eller starta en egen användargrupp med personer som kan hjälpa varandra, fokuserat på era behov: I ert område, för era data och i er tidszon.
 
 ## <a name="9-check-the-service-status"></a>9 Kontrollera status för tjänsten
-Om du har problem med tjänsten, kanske det är själva tjänsten som har problem. [Gå till sidan Support](https://powerbi.microsoft.com/support/) och se rapporterna där. 
+Om du har problem med tjänsten, kanske det är själva tjänsten som har problem. [Gå till sidan Support](https://powerbi.microsoft.com/support/) och se rapporterna där.
 
 ## <a name="10-just-try-it"></a>10 Testa dig fram
-Om allt annat misslyckas är det sista tipset att iaktta systemet. Ofta frågar folk vilka funktioner som finns i Power BI. Du kan ofta besvara den här typen av fråga genom att gå till Power BI-tjänsten eller Power BI Desktop, titta på alternativen i användargränssnittet och sedan testa att använda dem. 
+Om allt annat misslyckas är det sista tipset att iaktta systemet. Ofta frågar folk vilka funktioner som finns i Power BI. Du kan ofta besvara den här typen av fråga genom att gå till Power BI-tjänsten eller Power BI Desktop, titta på alternativen i användargränssnittet och sedan testa att använda dem.
 
 Anta till exempel att du undrar om du kan dela instrumentpaneler med en säkerhetsgrupp. Besvara frågan genom att gå till dialogrutan Dela och försök att lägga till en säkerhetsgrupp. Oavsett hur det går har du ditt svar efter det.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Kom igång med Power BI](service-get-started.md) 
+* [Kom igång med Power BI](service-get-started.md)
 * Fråga [Power BI Community](http://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/)
-
