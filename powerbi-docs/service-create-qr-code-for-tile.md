@@ -15,21 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3a01f7c8ab679e2820261c7947a9561ff5513d60
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e7f37a076f913d50f5a6b654aa79b50d61bc5add
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en panel i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
 
 Du kan skapa en QR-kod i Power BI-tjänsten för paneler i alla instrumentpaneler, även i instrumentpaneler som du inte kan redigera. Placera sedan QR-koden på en nyckelplats. Du kan till exempel klistra in den i ett e-postmeddelande eller skriva ut och klistra in den på en specifik plats. 
 
-Kolleger som du har delat instrumentpanelen med kan [skanna QR-koden för att få åtkomst till panelen, direkt från sina mobila enheter](mobile-apps-qr-code.md). De kan använda QR-kodsskannern finns i Power BI-appen eller någon annan QR-skanner som är installerad på enheten. .
+Kolleger som du har delat instrumentpanelen med kan [skanna QR-koden för att få åtkomst till panelen, direkt från sina mobila enheter](mobile-apps-qr-code.md). De kan använda QR-kodsskannern finns i Power BI-appen eller någon annan QR-skanner som är installerad på enheten.
+
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Skapa en QR-kod för en panel
 1. Öppna en instrumentpanel i Power BI-tjänsten.
