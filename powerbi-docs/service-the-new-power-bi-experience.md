@@ -16,19 +16,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 38a3923469d64cc0761ea0e1b1b39005f6904d40
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 82aedf3defc1a3154c884c18b90dc27195847e9a
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="getting-around-in-power-bi-service"></a>Navigera i Power BI-tjänsten
 ## <a name="the-left-navigation-pane"></a>Det vänstra navigeringsfönstret
 
-![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
+![vänster navigeringsfält](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
 
 **Snabbguide**
 
@@ -64,61 +64,61 @@ Låt oss börja med att titta på hur grundläggande innehåll är organiserat (
 
 Om du har Power BI Free kan du bara se en arbetsyta – **Min arbetsyta**.
 
-![](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
+![kort video om en arbetsyta](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
 ### <a name="favorite-dashboards-reports-and-apps"></a>Favoritmarkera instrumentpaneler, rapporter och appar
 Med **Favoriter** kan du snabbt komma åt det innehåll som är viktigast för dig.  
 
 1. Välj **Favorit** i det övre högra hörnet när instrumentpanelen eller rapporten är öppen.
    
-   ![](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
+   ![lägg till favorit](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
    
    **Favorit** ändras till **Ej favorit** och stjärnikonen blir gul.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
+   ![ta bort favorit](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
 
 2. För en app väljer du **Appar** i det vänstra navigeringsfönstret, hovrar över appen och markerar stjärnan för att ange den som favorit.
 
 2. Om du vill visa en lista över allt innehåll som du har lagt till som favoriter i det vänstra navigeringsfältet väljer du pilen till höger om **Favoriter**. Eftersom det vänstra navigeringsfältet är en permanent funktion i Power BI-tjänsten har du åtkomst till den här listan från valfri plats i Power BI-tjänsten.
    
-    ![](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
+    ![favoriter utfällt](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
    
     Härifrån kan du välja en instrumentpanel, rapport eller en app och öppna den.
 
 3. Öppna rutan **Favoriter** i det vänstra navigeringsfältet och välj **Favoriter** eller klicka på ikonen Favoriter ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
+   ![skärmen Favoriter](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
    
    Härifrån kan du öppna, söka efter innehåll, ta bort favoriter eller dela innehåll med kolleger.
 
 1. Det går även att favoritmarkera en instrumentpanel eller en rapport på arbetsyteflikarna **Instrumentpaneler** eller **Rapporter**.  Öppna arbetsytan för att se innehållsvyn och markera stjärnikonen till vänster om namnet.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
+   ![markera som favorit](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
 Läs mer i [Favoriter](service-dashboard-favorite.md)
 
 ### <a name="recents"></a>Senaste
 Få snabb tillgång till innehåll som du nyligen öppnat genom att gå till fönstret **Senaste**. Detta omfattar innehåll från alla dina arbetsytor.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
+  ![Fönstret Senaste](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
 Precis som i Favoriter kan du snabbt komma åt ditt senaste innehåll från valfri plats i Power BI-tjänsten genom att markera pilen bredvid **Senaste** i det vänstra navigeringsfältet.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
+  ![Senaste utfällt](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
 Läs mer i [Senaste i Power BI](service-recent.md)
 
 ### <a name="apps"></a>Appar
 En app är en samling av instrumentpaneler och rapporter som används för att leverera nyckelvärden på samma plats. Du kan välja att låta apparna vara interna för din organisation och även ha [appar för externa tjänster](service-connect-to-services.md), till exempel Google Analytics och Microsoft Dynamics CRM. 
 
-![](media/service-the-new-power-bi-experience/power-bi-apps.png)
+![Appfönster](media/service-the-new-power-bi-experience/power-bi-apps.png)
 
 Läs mer i **Apparbetsytor** (nedan) och [Vad är Power BI-appar](service-install-use-apps.md).
 
 ### <a name="shared-with-me"></a>Delat med mig
 **Delat med mig** är platsen för allt innehåll som kollegor har delat med dig.  Filtrera efter instrumentpanelens ägare, använd sökfältet för att hitta relevant information för dig eller sortera objekten efter datum.  Och för delat innehåll som du besöker ofta är det enklare att favoritmarkera det direkt från vyn **Delas med mig**.
 
-![](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
+![Fönstret Delat med mig](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
 Läs mer i [delas med mig](service-shared-with-me.md)
 
@@ -130,29 +130,29 @@ Om du inte är medlem i en arbetsyta i appen eller en administratör kan du kans
 #### <a name="my-workspace"></a>Min arbetsyta
 **Min arbetsyta** lagrar allt innehåll som du äger. Du kan se det som det personliga utvecklingsutrymme eller ett område för ditt eget innehåll. Du kan dela innehåll från Min arbetsyta med kollegor. I Min arbetsyta är innehållet uppdelat i 4 flikar: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.
 
-![](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
+![Skärmen Min arbetsyta](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
-#### <a name="app-workspaces"></a>Apparbetsytor
+#### <a name="app-workspaces"></a>App-arbetsytor
 Appar och apparbetsytor är en funktion i Power BI Pro. Om du skapar instrumentpaneler och rapporter för andra kommer du att använda apparbetsytor. En apparbetsyta är den plats där du skapar appen, så om du vill skapa en app måste du först skapa en apparbetsyta. De är en utveckling av grupparbetsytor – mellanlagringsområden och behållare för innehållet i appen.  Du och dina kollegor kan samarbeta på instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik eller hela organisationen.
 
 För att lära dig mer om detta kan du besöka [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md#app-workspaces).
 
 Precis som i **Min arbetsyta** är innehållet uppdelat i 4 flikar: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.
 
-![](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
+![Apparbetsyta](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
 
 Växla arbetsytor genom att välja **arbetsytor** i det vänstra navigeringsfältet.
 
-![](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
+![Välj en arbetsyta](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 
 ### <a name="search-and-sort-content"></a>Söka efter och sortera innehåll
 Med innehållsvyn är det lättare att söka efter, filtrera och sortera ditt innehåll. Skriv i sökområdet om du vill söka efter en instrumentpanel, en rapport eller en arbetsbok. Power BI filtrerar fram det innehåll vars namn innehåller din söksträng.
 
-![](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
+![sök efter en instrumentpanel](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
 
 Du kan också sortera innehåll efter namn eller ägare.  
 
-![](media/service-the-new-power-bi-experience/power-bi-sort.png)
+![sortera innehåll](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 Läs mer i [Power BI-navigering: söka efter, sortera, filtrera](service-navigation-search-filter-sort.md)
 
