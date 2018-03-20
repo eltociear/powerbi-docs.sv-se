@@ -1,5 +1,5 @@
 ---
-title: "Använda bokmärken i Power BI (förhandsversion)"
+title: "Använda bokmärken i Power BI"
 description: "Bokmärken i Power BI Desktop kan du spara vyer och inställningar i dina rapporter och skapa artikel-liknande presentationer"
 services: powerbi
 documentationcenter: 
@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3a56983f48d80cf39b89958db4327e3632ee733e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 706662e9fd7c6bd41015b286a7b7f1025e40a15e
+ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi-preview"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI (förhandsversion)
+# <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
 
 Du kan också skapa en samling bokmärken, ordna dem i valfri ordning och sedan gå igenom varje bokmärke i en presentation om du vill markera en serie insikter eller artikeln som du vill förmedla med din visuella information och dina rapporter. 
@@ -33,12 +33,14 @@ Du kan också skapa en samling bokmärken, ordna dem i valfri ordning och sedan 
 
 Bokmärken har många användningsområden. Du kan använda dem för att övervaka förloppet i att skapa rapporter (bokmärken är lätta att lägga till, ta bort och byta namn på) och du kan skapa bokmärken för att skapa en PowerPoint-liknande presentation visar bokmärken i ordning, så att din rapport utgör en berättelse. Det kan finnas andra användningsområden, baserat på hur du vill använda bokmärken.
 
-### <a name="enable-the-bookmarks-preview"></a>Aktivera förhandsversionen för bokmärken
-Du kan prova den nya funktionen **bokmärken** som lanseras i versionen för **oktober 2017** av **Power BI Desktop**, och för rapporter som har aktiverats för bokmärken i  **Power BI-tjänsten**. Aktivera förhandsversionsfunktionen i **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera sedan kryssrutan bredvid **Bokmärken**. Du måste starta om Power BI Desktop när du har gjort valet.
+### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Aktivera förhandsversionen för bokmärken (versioner före mars 2018)
+Från och med versionen från mars 2018 av Power BI Desktop är bokmärken allmänt tillgängliga. 
+
+Vi rekommenderar alltid att du uppgraderar till den senaste versionen. Men om du har en tidigare version av Power BI Desktop kan du prova funktionen **bokmärken** från och med versionen från **oktober 2017** av **Power BI Desktop**, och för rapporter som har aktiverats för bokmärken i **Power BI-tjänsten**. Aktivera förhandsversionsfunktionen genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera kryssrutan bredvid **Bokmärken**. 
 
 ![Aktivera bokmärken i alternativfönstret](media/desktop-bookmarks/bookmarks_02.png)
 
-Du måste starta om **Power BI Desktop** när du har gjort valet.
+Du måste starta om **Power BI Desktop** när du har gjort valet för att aktivera förhandsversionen av bokmärken.
 
 ## <a name="using-bookmarks"></a>Använda bokmärken
 Om du vill använda bokmärken väljer du menyflikfönstret **Visa** och väljer sedan kryssrutan för **fönstret Bokmärken**. 
@@ -154,7 +156,6 @@ Det finns några begränsningar och saker du bör tänka på för den här versi
 * Om du lägger till ett visuellt objekt på en rapportsida efter att du har skapat ett bokmärke kommer det visuella objektet att visas i sitt standardläge. Det innebär att om du lägger till ett utsnitt på en sida där du tidigare skapade bokmärken så fungerar utsnittet i standardtillståndet.
 * Flytta runt visuella objekt när ett bokmärke har skapats visas i bokmärket. 
 * Du *måste* ha minst ett bokmärke i din rapport när du publicerar den på **Power BI-tjänsten** för att bokmärken ska vara tillgängliga i tjänsten. Detta är ett krav för varje rapport som du publicerar.
-* Eftersom bokmärken är för tillfället är en förhandsfunktion, är de inte ännu tillgängliga i [**Power BI Desktop för rapportserver**](report-server/quickstart-create-powerbi-report.md).
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om liknande funktioner eller funktioner som interagerar med bokmärken finns i följande artiklar:

@@ -1,6 +1,6 @@
 ---
-title: "Så här migrerar du innehållspaket från Power BI Embedded till Power BI"
-description: "Lär dig hur du migrerar från Power BI Embedded till Power BI-tjänsten och utnyttjar nyheterna för inbäddning i appar."
+title: "Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI"
+description: "Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar."
 services: powerbi
 documentationcenter: 
 author: markingmyname
@@ -10,37 +10,37 @@ editor:
 tags: 
 qualityfocus: no
 qualitydate: 
-ms.service: powerbi
+ms.Embedded: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/24/2018
+ms.date: 03/06/2018
 ms.author: maghan
-ms.openlocfilehash: 59d395d11839903108f811ff4a6022ea04cadc8f
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: c8ad315976dd1ca47d6b4dc2fd9a191a11e044c7
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-migrate-power-bi-embedded-workspace-collection-content-to-power-bi"></a>Så här migrerar du innehållspaket från Power BI Embedded till Power BI
-Lär dig hur du migrerar från Power BI Embedded till Power BI-tjänsten och utnyttjar nyheterna för inbäddning i appar.
+# <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
+Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar.
 
-Microsoft presenterade nyligen [Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), en ny kapacitetsbaserad licensieringsmodell som ökar flexibiliteten för hur användare får åtkomst till innehåll, och hur de kan dela och distribuera det. Erbjudandet ger också ytterligare skalbarhet och prestanda till Power BI-tjänsten.
+Microsoft presenterade nyligen [Power BI Embedded](https://powerbi.microsoft.com/en-us/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), en ny kapacitetsbaserad licensieringsmodell som ökar flexibiliteten för hur användare får åtkomst till innehåll, och hur de kan dela och distribuera det. Erbjudandet ger också ytterligare skalbarhet och prestanda.
 
-Med introduktionen av Power BI Premium konvergerar Power BI Embedded och Power BI-tjänsten för att förbättra hur Power BI-innehåll kan bäddas in i appar. Det innebär att du kommer att ha en API-yta, en konsekvent uppsättning funktioner och tillgång till de senaste funktionerna i Power BI när du bäddar in innehåll, till exempel instrumentpaneler, gatewayer och apparbetsytor. Fortsättningsvis kommer du att kunna börja med Power BI Desktop och flytta till distribution med Power BI Premium, som kommer att vara allmänt tillgängligt mot slutet av andra kvartalet 2017.
+Med Power BI Embedded kommer du att ha en API-yta, en konsekvent uppsättning funktioner och tillgång till de senaste funktionerna i Power BI när du bäddar in innehåll, till exempel instrumentpaneler, gatewayer och apparbetsytor. Framöver kommer du att kunna börja med Power BI Desktop och gå vidare till distribution med Power BI Embedded.
 
-Den aktuella Power BI Embedded-tjänsten fortsätter att vara tillgänglig under en begränsad tid efter det att det konvergerade erbjudandet blivit allmänt tillgängligt: kunder med Enterprise-avtal har åtkomst fram till att deras nuvarande avtal upphör, och kunder som har förvärvat Power BI Embedded via direktkanaler eller CSP-kanaler har åtkomst under ett år från det att Power BI Premium blivit allmänt tillgängligt.  Den här artikeln ger dig anvisningar om hur du migrerar från Azure-tjänsten till Power BI-tjänsten, och information om vilka förändringar du kan förvänta dig i ditt program.
+Nuvarande Power BI-arbetsytesamling fortsätter att vara tillgänglig under en begränsad tid. Kunder med ett Enterprise-avtal har åtkomst till dess att deras befintliga avtal förfaller. Kunder som anskaffat Power BI-arbetsytesamling genom direkt- eller CSP-kanaler har åtkomst i ett år efter den allmänt tillgängliga versionen av Power BI Embedded.  Den här artikeln ger dig anvisningar om hur du migrerar från Power BI-arbetsytesamling till den nya Power BI Embedded-miljön, och information om vilka förändringar du kan förvänta dig i ditt program.
 
 > [!IMPORTANT]
-> Medan migreringen har ett beroende i förhållande till Power BI-tjänsten, så finns det inget beroende gentemot Power BI ditt programs användare när de använder en **inbäddningstoken**. De behöver inte registrera sig för Power BI om du vill visa ditt programs inbäddade innehåll. Du kan använda den här inbäddningsmetoden för att betjäna användare som inte använder Power BI.
+> Medan migreringen har ett beroende i förhållande till Power BI Embedded, så finns det inget beroende gentemot Power BI för ditt programs användare när en **inbäddningstoken** används. De behöver inte registrera sig för Power BI om du vill visa ditt programs inbäddade innehåll. Du kan använda den här inbäddningsmetoden för Embedded-användare som inte använder Power BI.
 > 
 > 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
 ## <a name="prepare-for-the-migration"></a>Förbereda för migrering
-Det finns några saker du behöver göra för att förbereda migreringen från Power BI Embedded Azure-tjänsten till Power BI-tjänsten. Du behöver en tillgänglig klient och en användare med en Power BI Pro-licens.
+Det finns några saker du behöver göra för att förbereda migreringen från Power BI-arbetsytesamling till Power BI Embedded. Du behöver en tillgänglig klient och en användare med en Power BI Pro-licens.
 
 1. Kontrollera att du har åtkomst till en Azure Active Directory (Azure AD)-klient.
    
@@ -67,7 +67,7 @@ Följande konton måste finnas i din klient.
 2. Konton för analytiker som skapar innehåll.
    
     Dessa användare ska tilldelas apparbetsytor vid behov.
-3. Ett programs *huvudanvändarkonto* eller tjänstkonto.
+3. Ett programs *huvudanvändarkonto* eller Embedded-konto.
    
     Programmets serverdel sparar kontots autentiseringsuppgifter och använder dem för att skaffa en Azure AD-token som kan användas med Power BI REST-API:er. Det här kontot används för att generera programmets inbäddningstoken. Kontot måste också vara administratör för de apparbetsytor som skapats för inbäddning.
    
@@ -100,16 +100,16 @@ Du behöver en användare som har en Pro-licens för att kunna skapa en apparbet
 > 
 
 ## <a name="content-migration"></a>Innehållsmigrering
-Migrering av innehållet från dina samlingar med arbetsytor till Power BI-tjänsten kan ske parallellt med din aktuella lösning och kräver inget driftstopp.
+Migrering av innehållet från dina samlingar med arbetsytor till Power BI Embedded kan ske parallellt med din aktuella lösning och kräver inget driftstopp.
 
-Det finns ett tillgängligt **migreringsverktyg** som du kan använda för att kopiera innehåll från Power BI Embedded till Power BI-tjänsten. Särskilt om du har mycket innehåll. Mer information finns i [Migreringsverktyget för Power BI Embedded](migrate-tool.md).
+Det finns ett tillgängligt **migreringsverktyg** som du kan använda för att kopiera innehåll från Power BI-arbetsytesamling till Power BI Embedded. Särskilt om du har mycket innehåll. Mer information finns i [Migreringsverktyget för Power BI Embedded](migrate-tool.md).
 
 Innehållsmigreringen förlitar sig i huvudsak på två API:er.
 
 1. Hämta PBIX – detta API kan hämta PBIX-filer som har överförts till Power BI efter oktober 2016.
 2. Importera PBIX – detta API överför valfri PBIX till Power BI.
 
-Relaterade kodfragment beskrivs i [Kodfragment för migrering av innehåll från Power BI Embedded](migrate-code-snippets.md).
+Relaterade kodfragment beskrivs i [Kodfragment för migrering av innehåll från Power BI-arbetsytesamling](migrate-code-snippets.md).
 
 ### <a name="report-types"></a>Rapporttyper
 Det finns flera typer av rapporter, som var och en kräver ett något annorlunda migreringsflöde.
@@ -126,13 +126,13 @@ Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data is
 #### <a name="directquery-dataset--report"></a>DirectQuery-datauppsättning och -rapport
 **Flow**
 
-1. Anropa GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources och spara den mottagna anslutningssträngen.
+1. Anropa GET https://api.powerbi.com/v1.0/collections/ {collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources och spara den mottagna anslutningssträngen.
 2. Anropshämta PBIX API från PaaS-arbetsytan.
 3. Spara PBIX.
 4. Anropsimportera PBIX till SaaS-arbetsytan.
-5. Uppdatera anslutningssträngen genom att anropa - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
+5. Uppdatera anslutningssträngen genom att anropa - POST https://api.powerbi.com/v1.0/myorg/datasets/ {dataset_id}/Default.SetAllConnections
 6. Hämta GW-ID och datakälls-ID genom att anropa - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Uppdatera användarens autentiseringsuppgifter genom att anropa - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
+7. Uppdatera användarens autentiseringsuppgifter genom att anropa - PATCH https://api.powerbi.com/v1.0/myorg/gateways/ {gateway_id} /datasources/ {datasource_id}
 
 #### <a name="old-dataset--reports"></a>Gammal datauppsättning och rapporter
 Dessa är datauppsättningar/rapporter som skapats före oktober 2016. PBIX-hämtningen stöder inte PBIX:er som hämtades före oktober 2016
@@ -160,7 +160,7 @@ Du kan använda vissa lösningar för att migrera push-API-rapporten från PaaS 
 6. Bind om rapporten till push-API-datauppsättningen.
 
 ## <a name="create-and-upload-new-reports"></a>Skapa och ladda upp nya rapporter
-Utöver det innehåll som du har migrerat från Power BI Embedded Azure-tjänsten, så kan du skapa rapporter och datauppsättningar som använder Power BI Desktop och publicera dessa rapporter på en apparbetsyta. Användaren som publicerar rapporterna behöver en Power BI Pro-licens för att publicera till en apparbetsyta.
+Utöver det innehåll som du har migrerat från Power BI-arbetsytesamlingen, så kan du skapa rapporter och datauppsättningar som använder Power BI Desktop och publicera dessa rapporter på en apparbetsyta. Användaren som publicerar rapporterna behöver en Power BI Pro-licens för att publicera till en apparbetsyta.
 
 ## <a name="rebuild-your-application"></a>Återskapa ditt program
 1. Du måste ändra ditt program om du vill kunna använda Power BI REST-API:erna och rapportplatsen på powerbi.com.
@@ -174,30 +174,29 @@ I ditt program mappar du användare som du hanterar i programmet till ett Power 
 När du är redo att gå vidare till produktion måste du göra följande.
 
 * Om du använder en separat klient för utveckling, så måste du kontrollera att dina apparbetsytor, tillsammans med instrumentpaneler och rapporter, är tillgängliga i din produktionsmiljö. Du måste också kontrollera att du har skapat programmet i Azure AD för din produktionsklient och tilldelat rätt appbehörigheter, så som beskrivs i steg 1.
-* Köp en kapacitet som passar dina behov. För att bättre förstå den mängd och typ av kapacitet du behöver, se [Vitbok om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper). Du kan [köpa kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
+* Köp en kapacitet som passar dina behov. För att bättre förstå den mängd och typ av kapacitet du behöver, se [white paper om kapacitetsplanering för analys i Power BI Embedded](https://aka.ms/pbiewhitepaper). Du kan [köpa kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
 * Redigera apparbetsytan och tilldela den till en Premium.kapacitet under Avancerat.
  
-    ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
+    ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
     
-* Distribuera ditt uppdaterade program till produktion och börja bädda in rapporter från Power BI-tjänsten.
+* Distribuera ditt uppdaterade program till produktion och börja bädda in rapporter från Power BI Embedded.
 
 ## <a name="after-migration"></a>Efter migreringen
 Rensa i Azure.
 
-* Ta bort alla arbetsytor från den distribuerade lösningen i Azure-tjänsten för Power BI Embedded.
+* Ta bort alla arbetsytor från den distribuerade lösningen i Azure Embedded för Power BI-arbetsytesamling.
 * Ta bort eventuella arbetsytesamlingar från Azure.
 
 ## <a name="next-steps"></a>Nästa steg
 [Bädda in med Power BI](embedding.md)  
-[Migreringsverktyg för Power BI Embedded](migrate-tool.md)  
-[Kodavsnitt för migrering av innehåll från Power BI Embedded](migrate-code-snippets.md)  
-[Hur du bäddar in dina Power BI-instrumentpaneler, -rapporter och -paneler](embedding-content.md)  
+[Migreringsverktyg för Power BI-arbetsytesamling](migrate-tool.md)  
+[Kodfragment för migrering av innehåll från Power BI-arbetsytesamling](migrate-code-snippets.md)  
+[Så här bäddar du in dina Power BI-instrumentpaneler, -rapporter och -paneler](embedding-content.md)  
 [Power BI Premium – vad är det?](../service-premium.md)  
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[White paper om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper)  
+[White paper om kapacitetsplanering för analys i arbetsytesamling](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

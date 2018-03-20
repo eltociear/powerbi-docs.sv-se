@@ -18,21 +18,21 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e4415f4315400e7ff11c356badee19eebace82b7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5c28a53f4421c88bfc6237813ce6fdb76cc160cd
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Ansluta till data med hjälp av generiska gränssnitt i Power BI Desktop
-Du kan ansluta till en mängd olika datakällor i **Power BI Desktop** med hjälp av inbyggda dataanslutningar, från **Access-databaser** till **Zendesk**-resurser, vilket visas i fönstret **Hämta data**. Du kan också ansluta till alla typer av *andra* datakällor, vilket ytterligare utökar dina anslutningsmöjligheter med hjälp av generiska gränssnitt (exempelvis **ODBC** eller **REST API:er**)som är inbyggda i **Power BI Desktop**.
+Du kan ansluta till en mängd olika datakällor i **Power BI Desktop** med hjälp av inbyggda dataanslutningar, från **Access-databaser** till **Zendesk**-resurser, vilket visas i fönstret **Hämta data**. Du kan också ansluta till alla möjliga typer av *andra* datakällor för att ytterligare utöka dina anslutningsmöjligheter, med hjälp av generiska gränssnitt (exempelvis **ODBC** eller **REST API:er**) som är inbyggda i **Power BI Desktop**.
 
 ![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
 ## <a name="power-bi-desktop-data-interfaces"></a>Power BI Desktop-gränssnitt
 **Power BI Desktop** innehåller en ständigt växande samling dataanslutningar som har skapats för att ansluta till en specifik datakälla. Till exempel innehåller dataanslutningen **SharePoint-lista** specifika fält och kompletterande information under anslutningssekvensen som är utformade för **SharePoint-listor**, vilket är fallet med andra datakällor finns i fönstret som visas när du väljer **hämta Data > Fler...**  (visas i föregående bild).
 
-Dessutom kan du ansluta till datakällor som inte har specificerats i **Hämta data** med **Power BI Desktop** genom att använda något av följande generiska gränssnitt:
+Dessutom kan du ansluta till datakällor som inte har angetts i **Hämta data** med **Power BI Desktop** genom att använda något av följande generiska datagränssnitt:
 
 * **ODBC**
 * **OLE DB**
@@ -44,7 +44,7 @@ Genom att ange lämpliga parametrar i anslutningsfönstren som tillhandahålls a
 
 I följande avsnitt hittar du en lista över datakällor som kan användas av dessa allmänna gränssnitt.
 
-Kan du inte hitta datakällan som du vill använda med **Power BI Desktop**? [Hör av dig](https://ideas.powerbi.com/) till oss så att vi kan lägga till den i vår lista över idéer och frågor.
+Kan du inte hitta datakällan som du vill använda med **Power BI Desktop**? Skicka in din idé till Power BI-teamets [lista över idéer och förfrågningar](https://ideas.powerbi.com/).
 
 ## <a name="data-sources-accessible-through-odbc"></a>Datakällor som är tillgängliga via ODBC
 Med anslutningsappen **ODBC** i **Power BI Desktop** kan du importera data från en ODBC-drivrutin genom att ange en **Namn på datakällan (DSN)** eller en *anslutningssträng*. Som ett alternativ kan du också ange ett SQL-uttryck som ska köras mot ODBC-drivrutinen.
@@ -114,7 +114,7 @@ I följande lista beskrivs några exempel på datakällorna som **Power BI Deskt
 | R-skript |R Statistical-filer |[Vägledning för R-skript från CRAN](https://cran.r-project.org/doc/manuals/R-data.html) |
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns alla möjliga sorters datakällor du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
+Det finns alla möjliga sorters datakällor du kan ansluta till med **Power BI Desktop**. Kolla in följande resurser för mer information om datakällor:
 
 * [Komma igång med Power BI Desktop](desktop-getting-started.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)

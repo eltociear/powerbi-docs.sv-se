@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b8b6dc3932ec4bc1eddd24c91a81a0eaafae479
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 34e756a661ec580e2c0eea8fc53378566eccf305
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Kör R-skript i Power BI Desktop
 Du kan köra R-skript direkt i **Power BI Desktop** och importera de resulterande datauppsättningarna i en Power BI Desktop-datamodell.
@@ -31,7 +31,7 @@ Du kan köra R-skript direkt i **Power BI Desktop** och importera de resulterand
 För att köra R-skript i Power BI Desktop måste du installera **R** på den lokala datorn. Du kan hämta och installera **R** kostnadsfritt från flera platser, inklusive [nedladdningssidan för Revolution Open](https://mran.revolutionanalytics.com/download/) och [CRAN Repository](https://cran.r-project.org/bin/windows/base/). Den aktuella versionen av R-skript i Power BI Desktop stöder Unicode-tecken som blanksteg (tomma tecken) i installationssökvägen.
 
 ## <a name="run-r-scripts"></a>Kör R-skript
-Du kan köra R-skript och skapa en datamodell där du skapar rapporter och dela dem på Power BI-tjänsten med några steg i Power BI Desktop. R-skript i Power BI Desktop stöder nu talformat som innehåller decimaler (.) eller kommatecken (,).
+Du kan köra R-skript och skapa en datamodell där du kan skapa rapporter och dela dem på Power BI-tjänsten med några steg i Power BI Desktop. R-skript i Power BI Desktop stöder nu talformat som innehåller decimaler (.) eller kommatecken (,).
 
 ### <a name="prepare-an-r-script"></a>Förbereda ett R-skript
 Om du vill köra ett R-skript i Power BI Desktop, skapa skriptet i din lokala R-utvecklingsmiljö och kontrollera att den har körts.
@@ -41,14 +41,14 @@ Kontrollera att skriptet har körts i en ny och oförändrad arbetsyta för att 
 När du förbereder och kör ett R-skript i Power BI Desktop, finns det några begränsningar:
 
 * Endast dataramar importeras, se till att de data som du vill importera i Power BI representeras i en dataram
-* Kolumner som har skrivits som komplexa eller vektor importeras inte och ersätts med felvärden i den skapade tabellen.
+* Kolumner som har skrivits som komplexa eller vektor importeras inte och ersätts med felvärden i den skapade tabellen
 * Värden som saknas översätts till NULL-värden i Power BI Desktop
 * Alla R-skript som körs längre än 30 minuters avbryts
 * Interaktiva anrop i R-skriptet som väntar på indata från användaren avbryter körningen av skriptet
 * När du ställer in arbetskatalogen i R-skriptet *måste* du definiera en fullständig sökväg till arbetskatalogen i stället för en relativ sökväg
 
 ### <a name="run-your-r-script-and-import-data"></a>Kör R-skriptet och importera data
-1. Anslutningsappen för R-skript i Power BI Desktop finns i **Hämta data**. Om du vill köra R-skriptet, välj **Hämta data &gt; Mer...** och välj **Övrigt &gt; R-skript** enligt i följande bild.
+1. Anslutningsappen för R-skript i Power BI Desktop finns i **Hämta data**. Om du vill köra R-skriptet väljer du **Hämta data &gt; Mer...** och sedan **Övrigt &gt; R-skript** enligt följande bild:
    
    ![](media/desktop-r-scripts/r-scripts-1.png)
 2. Om R har installerats på den lokala datorn, väljs den senast installerade versionen som R-motor. Det är bara att kopiera skriptet i skriptfönstret och välja **OK**.
@@ -58,7 +58,7 @@ När du förbereder och kör ett R-skript i Power BI Desktop, finns det några b
    
    ![](media/desktop-r-scripts/r-scripts-3.png)
    
-   Om har installerats men inte identifieras kan du uttryckligen ange dess plats i testrutan som visas när du expanderar **R-installationsinställningar**. I bilden ovan, anges sökvägen *C:\Program Files\R\R-3.2.0* uttryckligen i textrutan.
+   Om R har installerats och inte identifierats kan du uttryckligen ange dess plats i textrutan som visas när du expanderar **R-installationsinställningar**. I bilden ovan, anges sökvägen *C:\Program Files\R\R-3.2.0* uttryckligen i textrutan.
    
    Inställningar för R finns centralt i avsnittet R-skript i dialogrutan Alternativ. Välj **Arkiv > Alternativ och inställningar** och sedan **Alternativ > R-skriptning** för att ange dina installationsinställningar för R. Om det finns flera installationer av R visas en rullgardinsmeny där du kan välja vilken installation du vill använda.
    

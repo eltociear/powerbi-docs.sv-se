@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/09/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3630d876f3e32cbe981d7fb5bcc38d9da1a257f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2f395a5030cb2e025b8b69fa9b5375f471dea452
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Datakällor som stöds av DirectQuery i Power BI
 **Power BI Desktop** och **Power BI-tjänsten** har flera datakällor som du kan ansluta till och få åtkomst till data. Den här artikeln beskriver vilka datakällor för Power BI stöder anslutningsmetoden **DirectQuery**. Läs mer om DirectQuery i [**DirectQuery i Power BI**](desktop-directquery-about.md).
@@ -37,7 +37,8 @@ Följande datakällor stöds av DirectQuery i Power BI:
 * IBM Netezza (beta)
 * Impala (version 2.x)
 * Oracle Database (version 12 och senare)
-* SAP Business Warehouse (beta)
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (beta)
 * SAP HANA
 * Snowflake
 * Spark (beta) (version 0.9 och senare)
@@ -50,7 +51,7 @@ Datakällor som har **(beta)** eller **(förhandsversion)** efter namnet kan än
 Den enda skillnaden mellan datakällor i **(beta)** och **(förhandsversion)** är att källor i **(förhandsversion)** måste aktiveras som en förhandsversionsfunktion innan de blir tillgängliga för användning. Så här aktiverar du en dataanslutning till en **(förhandsversion)**. Öppna **Power BI Desktop** och gå till **Arkiv > Alternativ och inställningar** och sedan **Inställningar > Alternativ > Förhandsversionsfunktioner**.
 
 ## <a name="on-premises-gateway-requirements"></a>Krav för lokal gateway
-I följande tabell anger om en **lokal datagateway** krävs för att ansluta till den angivna datakällan när du har publicerat en rapport till **Power BI-tjänsten**.
+I följande tabell anges om en **lokal datagateway** krävs för att ansluta till den angivna datakällan när du har publicerat en rapport till **Power BI-tjänsten**.
 
 | Källa | Gateway krävs? |
 | --- | --- |
@@ -62,11 +63,14 @@ I följande tabell anger om en **lokal datagateway** krävs för att ansluta til
 | Teradata-databas |Ja |
 | Amazon Redshift |Nej |
 | Impala (version 2.x) |Ja |
-| Snowflake (förhandsversion) |Stöds inte än i **Power BI-tjänsten** |
+| Snowflake |Ja |
 | Spark (beta) version 0.9 och senare |Stöds inte än i **Power BI-tjänsten** |
-| Azure HDInsight Spark (beta) |Stöds inte än i **Power BI-tjänsten** |
-| IBM Netezza (beta) |Stöds inte än i **Power BI-tjänsten** |
-| SAP Business Warehouse (beta) |Stöds inte än i **Power BI-tjänsten** |
+| Azure HDInsight Spark (beta) |Nej |
+| IBM Netezza |Ja |
+| SAP Business Warehouse Application Server |Ja |
+| SAP Business Warehouse Message Server |Stöds inte än i **Power BI-tjänsten** |
+| Google BigQuery |Nej |
+
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om DirectQuery finns i följande resurser:

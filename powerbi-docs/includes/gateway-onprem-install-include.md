@@ -1,4 +1,4 @@
-## <a name="install-the-on-premises-data-gateway"></a>Installera en lokal datagateway
+## <a name="install-the-on-premises-data-gateway"></a>Installera den lokala datagatewayen
 Datagatewayen installeras och körs på datorn. Det är bäst att installera gatewayen på en dator som är igång hela tiden.
 
 > [!NOTE]
