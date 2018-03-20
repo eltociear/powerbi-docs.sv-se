@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 5f22d39c17ddbbd06a9ed38eeb162d1106607105
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e584f48f5d3650821aac094ebfde7eef5261cc36
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda 
 Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga rapporter i Power BI.  
@@ -130,7 +130,7 @@ Via SQL Profiler kan du identifiera frågor som tar upp den längsta CPU-tiden v
 
 ## <a name="gateway-best-practices"></a>Metodtips för gateway 
 
-Den lokala datagatewayen är ett bra verktyg för att ansluta Power BI-tjänsten med dina lokala data. Med dålig planering kan den samtidigt bli en flaskhals för rapportprestanda. Detta gäller särskilt för datauppsättningar för DirectQuery/live-anslutning, där alla frågor och svar på frågor passerar gatewayen. Här följer några rekommendationer för att säkerställa högpresterande gatewayer: 
+Den lokala datagatewayen är ett bra verktyg för att ansluta Power BI-tjänsten till dina lokala data. Med dålig planering kan den samtidigt bli en flaskhals för rapportprestanda. Detta gäller särskilt för datauppsättningar för DirectQuery/live-anslutning, där alla frågor och svar på frågor passerar gatewayen. Här följer några rekommendationer för att säkerställa högpresterande gatewayer: 
  
 - **Använda Enterprise-läget**, i motsats till det personliga läget. 
 - **Rekommenderade maskinvaruspecifikationer för gatewayen** – 8 CPU-kärnor, 16 GB RAM-minne. 

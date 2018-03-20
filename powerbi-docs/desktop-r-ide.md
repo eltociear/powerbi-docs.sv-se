@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ab73dde22fdb0603a900ac67b6e76e8f5aaf3872
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3903a4d7351ab00da24750736840c6ba35cffa2b
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Använda en extern R IDE med Power BI
 Med **Power BI Desktop** kan du använda din externa R IDE (Integrated Development Environment) för att skapa och förfina R-skript och sedan använda dessa skript i Power BI.
@@ -53,7 +53,7 @@ Som standard startar **Power BI Desktop** **R Studio** som en extern R IDE om de
 Och om ingen **.R**-filassociation finns går det att ange en sökväg till en anpassad IDE i avsnittet *Bläddra till din önskade R-IDE* i dialogrutan **Alternativ**. Du kan också starta en annan R IDE genom att välja kugghjulsikonen **Inställningar** bredvid pilikonen **Starta R IDE** i **Power BI Desktop**.
 
 ## <a name="launch-an-r-ide-from-power-bi-desktop"></a>Starta en R IDE från Power BI Desktop
-Starta en R IDE från **Power BI Desktop** genom att utföra följande steg.
+Starta en R IDE från **Power BI Desktop** genom att utföra följande steg:
 
 1. Läs in data till **Power BI Desktop**.
 2. Välj några fält i fönstret **Fält** som du vill arbeta med. Om du inte har aktiverat visuell skriptinformation ännu uppmanas du att göra detta.

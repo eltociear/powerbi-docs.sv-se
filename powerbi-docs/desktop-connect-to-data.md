@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b61285c54d337ce85ab470180f8cfa2a66f0820e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 94e52d2d56cd7ba0ec04db47bc93dd18fc880f39
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Ansluta till datakällor i Power BI Desktop
 Med Power BI Desktop kan du enkelt ansluta till den ständigt växande världen av data. Om du inte har Power BI Desktop, kan du [hämta](http://go.microsoft.com/fwlink/?LinkID=521662) och installera det.
@@ -80,7 +80,7 @@ Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följ
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)   
 
-Vill du ge oss feedback? Utmärkt – Använd menyalternativet **Skicka feedback** i Power BI Desktop. Vi hoppas att få höra från dig!
+Vill du ge oss feedback? Toppen – använd menyalternativet **Skicka in en idé** i Power BI Desktop eller besök [Feedback från communityn](http://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi hoppas att få höra från dig!
 
 ![](media/desktop-connect-to-data/sendfeedback.png)
 

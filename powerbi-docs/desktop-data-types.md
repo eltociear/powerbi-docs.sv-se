@@ -18,18 +18,18 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d15aeaf90e748b9ba14a0160042d2db4f36d3150
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 71a2908357164cf93870800947ae5fa0aa04c75c
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
 
 När du läser in data i Power BI Desktop försöker den konvertera datatypen för källkolumnen till en datatyp som ger bättre stöd för effektivare lagring, beräkningar och datavisualisering. Om till exempel en kolumn med värden som du importerar från Excel saknar bråkvärden, konverterar Power BI Desktop hela datakolumnen till datatypen Heltal som passar bättre vid lagring.
 
-Detta är viktigt eftersom vissa DAX-funktioner har särskilda datatypskrav. I många fall kommer DAX konvertera datatypen åt dig, men det finns tillfällen där det inte görs.  Om till exempel en DAX-funktion kräver datatypen Datum och datatypen för kolumnen är Text, fungerar DAX-funktionen inte korrekt.  Det är därför både viktigt och användbart att få rätt datatyp för en kolumn. Implicita konverteringar beskrivs senare i den här artikeln.
+Det här konceptet är viktigt eftersom vissa DAX-funktioner har särskilda datatypskrav. I många fall kommer DAX konvertera datatypen åt dig, men det finns tillfällen där det inte görs.  Om till exempel en DAX-funktion kräver datatypen Datum och datatypen för kolumnen är Text, fungerar DAX-funktionen inte korrekt.  Det är därför både viktigt och användbart att få rätt datatyp för en kolumn. Implicita konverteringar beskrivs senare i den här artikeln.
 
 ## <a name="determine-and-specify-a-columns-data-type"></a>Bestämma och ange datatyp för en kolumn
 I Power BI Desktop kan du fastställa och ange datatyp för en kolumn i frågeredigeraren, i datavyn eller rapportvyn:
@@ -125,7 +125,7 @@ Om till exempel om ett datum används i en subtraktion med någon annan datatyp,
 > 
 > 
 
-**Multiplikation(*)**
+**Multiplikation (*)**
 
 | Operator(\*) | INTEGER | CURRENCY | REAL | Datum/tid |
 | --- | --- | --- | --- | --- |
@@ -155,7 +155,7 @@ Följande DAX-uttryck visar hur det fungerar:
 
 =IF(FALSE()\>"sant","Uttrycket är sant", "Uttrycket är falskt"), returnerar "Uttrycket är sant"
 
-=IF("12"\>12,"Uttrycket är sant", "Uttrycket är falskt"), returnerar "Uttrycket är sant".
+=IF("12"\>12,"Uttrycket är sant", "Uttrycket är falskt"), returnerar "Uttrycket är sant"
 
 =IF("12"=12,"Uttrycket är sant", "Uttrycket är falskt"), returnerar "Uttrycket är falskt"
 

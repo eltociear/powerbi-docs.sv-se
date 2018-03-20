@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fff56b220579a19505337f2ac9697cd3e61e83cb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 948c87e3e594ebb0ca2f75f747f7dd6fe36e18e7
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det innebär att du kan skapa den perfekta datamodellen i Power BI Desktop, publicera den till Power BI-tjänsten och sedan kan du och andra användare skapa flera olika rapporter (i separata .pbix-filer) från samma gemensamma datamodell. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
@@ -101,7 +101,7 @@ När du väljer **Läs in** i fönstret upprättar du en live-anslutning till de
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_10.png)
 
-Nu kan du (och andra) skapa och dela anpassade rapporter och dela dem från samma datauppsättning. Detta är ett bra sätt att ha en person med kunskap att skapa en genomtänkt datauppsättning (som t.ex. Anna gör) och sedan låta flera medarbetare använda den delade datauppsättningen till att skapa sina egna rapporter.
+Nu kan du (och andra) skapa och dela anpassade rapporter från samma datauppsättning. Detta är ett bra sätt att ha en person med kunskap att skapa en genomtänkt datauppsättning (som t.ex. Anna gör) och sedan låta flera medarbetare använda den delade datauppsättningen till att skapa sina egna rapporter.
 
 > [!NOTE]
 > När du skapar rapporter som baseras på datauppsättningen med en live-anslutning till **Power BI-tjänsten**, kan du bara publicera rapporten till den arbetsyta som innehåller datauppsättningen som används.
@@ -116,8 +116,8 @@ När du använder **Live-anslutning till Power BI-tjänst** finns det några beg
 * Eftersom detta är en live-anslutning är vänsternavigering och modellering inaktiverade, vilket liknar hur det fungerar när du ansluter till **SQL Server Analysis Services**.
 * Eftersom det är en live-anslutning tvingas RLS (säkerhet på rad- och rollnivå), OneDrive för företag och andra anslutningar på samma sätt som de gör när man är ansluten till **SQL Server Analysis Services**.
 * När du väljer vilken datauppsättning du ska ansluta till i **Power BI-tjänsten**, gäller sökrutan endast arbetsytor som har expanderats.
-* Om du ändrar den ursprungliga delade .pbix-filen, kommer datauppsättningen och rapporten som delas i **Power BI-tjänsten** att skrivas över.
-* Du kan inte byta ut den ursprungliga delade rapporten. Om du försöker göra detta visas en varning som uppmanar dig att byta namn på filen och publicera.
+* Om ägaren ändrar den ursprungliga delade .pbix-filen, kommer datauppsättningen och rapporten som delas i **Power BI-tjänsten** att skrivas över.
+* Medlemmar i en arbetsyta kan inte byta ut den ursprungliga delade rapporten. Om du försöker göra detta visas en varning som uppmanar dig att byta namn på filen och publicera.
 * Om du tar bort den delade datauppsättningen i **Power BI-tjänsten**, kommer inga andra **Power BI Desktop**-filer (.pbix-filer) fungera eller visa de visuella objekten.
 * För innehållspaket måste du först skapa en kopia av ett innehållspaket innan du använder det som en bas för att dela en .pbix-rapport och datauppsättning till **Power BI-tjänsten**.
 * När innehållspaket från *Min organisation* har kopierats kan du inte ersätta rapporten som skapades i tjänsten, och/eller en rapport som skapats vid kopiering av ett innehållspaket, med en live-anslutning. Om du försöker göra detta visas en varning som uppmanar dig att byta namn på filen och publicera. I den här situationen kan du bara byta ut de publicerade live-anslutna rapporterna.

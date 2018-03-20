@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 06ed973b3b16f5ac8ed8bef484d48af994a4e5f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7a523284bd777d87b7ac42ba7e9ff82ee7bdf623
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 > [!NOTE]
@@ -94,14 +94,14 @@ Låt oss ta en närmare titt på varje steg.
 > 
 > 
 
-Du uppmanas att installera en gateway när du klickar på UPPDATERA NU eller SCHEMALÄGG UPPDATERING för första gången för en datauppsättning som stöds. Eller, om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar. Hämta den [lokala datagatewayen](http://go.microsoft.com/fwlink/?LinkID=820925).
+Du uppmanas att installera en gateway när du klickar på UPPDATERA NU eller SCHEMALÄGG UPPDATERING för första gången för en datauppsättning som stöds. Eller, om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar. Ladda ned den [lokala datagatewayen](http://go.microsoft.com/fwlink/?LinkID=820925).
 
 Du ska välja **Personlig gateway** i stället för **Lokal datagateway** för att hämta en gateway som är för dig själv.
 
 Det är lätt att installera en gateway. Du väljer en plats för att installera på och läser och godkänner licensavtalet precis som med alla andra program. Det finns dock ett par saker som är viktiga att veta. Framför allt, vilken sorts dator du installerar gatewayen på och typen av konto som du använder för att logga in på Windows från den datorn.
 
 > [!NOTE]
-> Gatewayen måste ha åtkomst till datakällan. Om din personliga dator inte kan ansluta till datakällan kan du behöva installera en [lokal datagateway](service-gateway-onprem.md) på en dator som har åtkomst till datakällan. Ett exempel på detta är att installera SQL Server på en virtuell dator (VM) på Azure. Din persondator har kanske inte åtkomst till den virtuella datorn. Du kan installera datagatewayen lokalt på den virtuella datorn i stället och konfigurera en datakälla i Power BI-tjänsten.
+> Gatewayen måste ha åtkomst till datakällan. Om din personliga dator inte kan ansluta till datakällan kan du behöva installera en [lokal datagateway](service-gateway-onprem.md) på en dator som har åtkomst till datakällan. Ett exempel på detta är att installera SQL Server på en virtuell dator (VM) på Azure. Din persondator har kanske inte åtkomst till den virtuella datorn. Du kan installera den lokala datagatewayen på den virtuella datorn i stället och konfigurera en datakälla i Power BI-tjänsten.
 > 
 > 
 

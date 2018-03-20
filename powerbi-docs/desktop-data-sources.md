@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 85ac8564efca953d338bef9aab8b59699d992c19
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ff28f5d43b065ae798e2e9f275c8e8b59e9ee1ce
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -78,13 +78,14 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Oracle-databas
 * IBM DB2-databas
 * IBM Informix-databas (beta)
-* IBM Netezza (beta)
+* IBM Netezza
 * MySQL-databas
 * PostgreSQL-databas
 * Sybase-databas
 * Teradata-databas
 * SAP HANA-databas
-* SAP Business Warehouse-server
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (beta)
 * Amazon Redshift
 * Impala
 * Google BigQuery (beta)
@@ -103,13 +104,14 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 
 * Azure SQL Database
 * Azure SQL Data Warehouse
-* Azure Analysis Services-databas (beta)
+* Azure Analysis Services-databas
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (beta)
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark (beta)
+* Interaktiv HDInsight-fråga (beta)
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
 
@@ -121,6 +123,7 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * SharePoint Online-lista
 * Microsoft Exchange Online
 * Dynamics 365 (online)
+* Dynamics NAV (beta)
 * Dynamics 365 for Financials (beta)
 * Common Data Service (beta)
 * Microsoft Azure Consumption Insights (beta)
@@ -128,23 +131,24 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Salesforce-objekt
 * Salesforce-rapporter
 * Google Analytics
+* Adobe Analytics
 * appFigures (beta)
 * comScore Digital Analytix (beta)
 * Dynamics 365 for Customer Insights (beta)
+* Data.World – Hämta datamängd (beta)
 * Facebook
 * GitHub (beta)
-* Kusto (beta)
 * MailChimp (beta)
+* Marketo (beta)
 * Mixpanel (beta)
-* Planview Enterprise (beta)
-* Projectplace (beta)
+* Planview Enterprise One – PRM (beta)
+* Planview Projectplace (beta)
 * QuickBooks Online (beta)
 * Smartsheet
 * SparkPost (beta)
-* SQL Sentry (beta)
 * Stripe (beta)
 * SweetIQ (beta)
-* Troux (beta)
+* Planview Enterprise One – CMT (beta)
 * Twilio (beta)
 * tyGraph (beta)
 * Webtrends (beta)
@@ -157,6 +161,7 @@ Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
 Kategorin **Övrigt** innehåller följande dataanslutningar:
 
 * Vertica (beta)
+* Kusto (beta)
 * Webb
 * SharePoint-lista
 * OData-feed
@@ -203,4 +208,3 @@ Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följ
 * [Datatyper i Power BI Desktop](desktop-data-types.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)    
-

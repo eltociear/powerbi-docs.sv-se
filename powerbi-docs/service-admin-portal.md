@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/23/2018
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Administration
-ms.openlocfilehash: 15d1f391ba7a9c32ce1f8abd9620e84f16206e26
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1ce2bc2746773c344251b89173b5825940eb0174
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -141,6 +141,10 @@ Du kan också endast aktivera funktionen för en viss grupp av användare och ä
 ### <a name="share-content-to-external-users"></a>Dela innehåll för externa användare
 
 Användare i organisationen kan dela instrumentpaneler med användare utanför organisationen.
+
+![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+
+Här är meddelandet som visas när du delar med en extern användare.
 
 ![](media/service-admin-portal/powerbi-admin-sharing-external.png)
 

@@ -1,6 +1,6 @@
 ## <a name="general"></a>Allmänt
 **Fråga:** Vad kallas själva Windows-tjänsten?  
-**Svar:** Gatewayen kallas för lokal datagatewaytjänst i Tjänster
+**Svar:** Gatewayen kallas för Lokal datagateway i Tjänster
 
 **Fråga:** Vilka är kraven för gatewayen?  
 **Svar:** Ta en titt på avsnittet med krav i den huvudsakliga [gatewayartikeln](../service-gateway-onprem.md).

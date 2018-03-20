@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/09/2017
+ms.date: 03/08/2018
 ms.author: maghan
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c97f60e39d68060c8eb3396bac4eb7725dab9c86
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: adc78cceb8a6b6edd06896e53a1a64cf0d28b2b8
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="using-an-alternate-email-address"></a>Använda en alternativ e-postadress
 Som standard används e-postadressen som du använde för att logga in på Power BI för att skicka uppdateringar om aktiviteten i Power BI.  Om någon skickar en inbjudan skickas den till den här adressen.
@@ -45,6 +45,19 @@ Ibland kanske du vill dessa e-postmeddelanden ska skickas till en annan e-postad
 > När du ändrar den här inställningen ändras inte vilken e-postadress som används för att skicka serviceuppdateringar, nyhetsbrev och andra erbjudanden.  De kommer alltid att skickas till e-postadressen du använde när du registrerade dig för Power BI.
 > 
 > 
+
+## <a name="updating-through-azure-active-directory"></a>Uppdatera via Azure Active Directory
+När du samlar in en AAD-inbäddningstoken (Azure Active Directory) för Power BI kan du använda tre olika typer av e-postadresser. De tre olika typerna är:
+
+* den huvudsakliga e-postadressen som är kopplad till en användares AAD-konto
+* UPN-e-postadressen (UserPrincipalName)
+* matrisattributet för ”annan” e-postadress
+
+Power BI väljer vilken e-postadress som ska användas baserat på följande kriterier:
+1.  Om e-postattributet i AAD-klientens användarobjekt finns använder Power BI det e-postattributet för e-postadressen
+2.  Om UPN-e-postadressen *inte* finns inom domänen **\*.onmicrosoft.com** (informationen efter @-symbolen) använder Power BI det e-postattributet för e-postadressen
+3.  Om matrisattributet för ”annan” e-postadress i AAD-användarobjektet finns används den första e-postadressen i den listan (eftersom det kan finnas en lista över e-postadresser i det här attributet)
+4. Om inget av ovanstående villkor uppfylls används UPN-adressen
 
 ## <a name="updating-with-powershell"></a>Uppdatera med PowerShell
 Alternativt kan du uppdatera den alternativa e-postadressen via PowerShell för Azure Active Directory. Detta görs med kommandot [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser).

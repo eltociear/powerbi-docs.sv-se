@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c048a83dad3ea800f50b08bd15c0cec18d6d86cf
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: da99de218594d09a8cd76aafa9fc227b648ba7af
+ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Använd SAP HANA i Power BI Desktop
 Med Power BI Desktop kan du nu komma åt **SAP HANA**-databaser. Om du vill använda **SAP HANA**, måste SAP HANA ODBC-drivrutinen installeras på den lokala klientdatorn för att Power BI Desktop **SAP HANA**-dataanslutningen ska fungera korrekt. Du kan hämta SAP HANA ODBC-drivrutinen från [SAP Software Download Center](https://support.sap.com/swdc). Därifrån söker du efter SAP HANA-klienten för Windows-datorer. Eftersom **SAP Software Download Center** ofta ändrar struktur, finns det inte tydligare riktlinjer för att navigera den webbplatsen.
@@ -35,7 +35,7 @@ När du ansluter till en SAP HANA-databas, anger du servernamnet och porten i fo
 
 ![](media/desktop-sap-hana/sap-hana-2.png)
 
-I den här versionen stöds **SAP HANA** i [DirectQuery](desktop-use-directquery.md)-läge i Power BI Desktop och Power BI-tjänsten och du kan publicera och ladda upp rapporter som använder sig av **SAP HANA** i DirectQuery-läge till Power BI-tjänsten. Du kan även publicera och ladda upp rapporter till Power BI-tjänsten när du inte använder **SAP HANA** i DirectQuery-läge.
+I den här versionen stöds **SAP HANA** i [DirectQuery](desktop-directquery-sap-hana.md)-läge i Power BI Desktop och Power BI-tjänsten och du kan publicera och ladda upp rapporter som använder sig av **SAP HANA** i DirectQuery-läge till Power BI-tjänsten. Du kan även publicera och ladda upp rapporter till Power BI-tjänsten när du inte använder **SAP HANA** i DirectQuery-läge.
 
 ### <a name="supported-features-for-sap-hana"></a>Funktioner som stöds för SAP HANA
 Den här versionen har många funktioner för **SAP HANA**som visas i listan nedan:
@@ -55,4 +55,12 @@ Det finns några begränsningar med att använda **SAP HANA** som visas nedan:
 * SMALLDECIMAL stöds inte
 * VARBINARY stöds inte
 * Giltiga datum är mellan 1899-12-30 och 9999-12-31
+
+
+## <a name="next-steps"></a>Nästa steg
+Mer information om DirectQuery finns i följande resurser:
+
+* [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery i Power BI](desktop-directquery-about.md)
+* [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 

@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f9e30b3feb5f9b85a87686e4484bba035ff839aa
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f2749976772d2bc2e3d48ca355925cafad93fe0c
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. När du utforskar data, skapar diagram och instrumentpaneler, eller ställer frågor i Frågor och svar, hämtar alla dessa visualiseringar och svar som du ser sina underliggande data från en datauppsättning. Men var kommer datauppsättningen från? Från en datakälla.
@@ -71,14 +71,14 @@ Vissa datakällor har redan sina data i ett format som är redo för Power BI-tj
 
 I andra fall kan det vara nödvändigt att fråga efter och läsa in de data som du vill använda i en fil. Anta exempelvis att du har logistikdata i en informationslagerdatabas på en server i din organisation. Du kan inte ansluta direkt till databasen i Power BI-tjänsten för att utforska datan (om det inte är en tabellmodelldatabas). Men du kan använda Power BI Desktop eller Excel för att fråga och läsa in logistikdata i en datamodell som du sedan sparar som en fil. Du kan sedan importera filen till Power BI där en datauppsättning skapas.
 
-Du tänker förmodligen ”Men logistikdata i den databasen ändras ju varje dag. Hur kontrollerar jag att min datauppsättning i Power BI har uppdaterats? – Anslutningsinformationen från Power BI Desktop eller Excel-filen importeras till datauppsättningen tillsammans med informationen. Om du konfigurerar en schemalagd uppdatering eller gör en manuell uppdatering av datauppsättningen använder Power BI anslutningsinformationen från datauppsättningen, tillsammans med några andra inställningar, till att ansluta direkt till databasen, fråga efter uppdateringar och läsa in uppdateringarna i datauppsättningen. En Power BI-gateway kommer troligen krävas för att skydda all dataöverföring mellan din lokala server och Power BI. Dina visualiseringar i rapporter och instrumentpaneler uppdateras automatiskt.
+Du tänker förmodligen – Men logistikdata i den databasen ändras ju varje dag. Hur kontrollerar jag att min datauppsättning i Power BI har uppdaterats? – Anslutningsinformationen från Power BI Desktop eller Excel-filen importeras till datauppsättningen tillsammans med informationen. Om du konfigurerar en schemalagd uppdatering eller gör en manuell uppdatering av datauppsättningen använder Power BI anslutningsinformationen från datauppsättningen, tillsammans med några andra inställningar, till att ansluta direkt till databasen, fråga efter uppdateringar och läsa in uppdateringarna i datauppsättningen. En Power BI-gateway kommer troligen krävas för att skydda all dataöverföring mellan din lokala server och Power BI. Dina visualiseringar i rapporter och instrumentpaneler uppdateras automatiskt.
 
 Bara för att du inte kan ansluta till din datakälla direkt från Power BI-tjänsten innebär det alltså inte att du inte kan hämta data till Power BI. Det krävs bara några fler steg och kanske viss hjälp från IT-avdelningen. Se [Datakällor i Power BI Desktop](desktop-data-sources.md) om du vill veta mer.
 
 ## <a name="some-more-details"></a>Visa mer information
 Du har säkert sett att termerna datauppsättning och datakälla används mycket i Power BI. De används ofta synonymt, men de är faktiskt två olika saker, även om de är relaterade.
 
-En ***datauppsättning*** skapas automatiskt i Power BI när du använder Hämta data för att ansluta till och importera data från ett innehållspaket, en fil eller om du ansluter till en live-datakälla. En datauppsättning innehåller information om datakällan, autentiseringsuppgifterna för datakällan, och i de flesta fall en delmängd med data som kopierats från datakällan. I de flesta fall när du skapar visualiseringar i rapporter och instrumentpaneler tittar du på datan i datauppsättningen.
+En ***datauppsättning*** skapas automatiskt i Power BI när du använder Hämta data för att ansluta till och importera data från ett innehållspaket, en fil eller om du ansluter till en live-datakälla. En datauppsättning innehåller information om datakällan, autentiseringsuppgifterna för datakällan, och i de flesta fall en delmängd med data som kopierats från datakällan. I de flesta fall när du skapar visualiseringar i rapporter och instrumentpaneler tittar du på data i datauppsättningen.
 
 En ***datakälla*** är den plats som datan i en datauppsättning egentligen kommer från. Det kan vara en onlinetjänst som Google Analytics eller QuickBooks, en databas i molnet som Azure SQL Database, eller en databas eller fil på en lokal dator eller server i din organisation.
 

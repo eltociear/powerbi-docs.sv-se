@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Administration
-ms.openlocfilehash: 09bd3064c7a694355255cb3cca29ade02986d42e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 55394392de78bcd1a2c38ecf92dd3218c8660132
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -31,7 +31,14 @@ Power BI kan integreras med Azure Active Directory Business-to-business (Azure A
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
+> Du måste **aktivera** funktionen [Inställningar för export och delning](service-admin-portal.md#export-and-sharing-settings) i Klientinställningar på Power BI-administratörsportalen innan du bjuder in gästanvändare.
+
+> [!NOTE]
 > Den här funktionen är inte tillgänglig med Power BI-appar. Du kan visa Power BI-innehåll som delas med hjälp av Microsoft Azure Active Directory B2B i en webbläsare på en mobil enhet. 
+
+## <a name="who-can-you-invite"></a>Vilka kan du bjuda in?
+
+Du kan bjuda in gästanvändare som använder alla e-postadresser, även personliga konton som gmail.com, outlook.com och hotmail.com. I Azure B2B kallas de ”sociala ID”. Mer information hittar du i [Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## <a name="invite-guest-users"></a>Bjud in gästanvändare
 
@@ -63,9 +70,10 @@ Gästanvändaren behöver välja **Kom igång** i e-postinbjudan hen tar emot. G
 
 ### <a name="ad-hoc-invites"></a>Ad hoc-inbjudningar
 
-Om du vill göra en inbjudan när som helst, lägger du till den externa användaren i åtkomstlistan för en app när du publicerar den.
+Utför en inbjudan när som helst genom att lägga till den externa användaren i din instrumentpanel eller rapport via delningsgränssnittet, eller din app via åtkomstsidan.
 
-![Externa användare har lagts till i listan över appåtkomst](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
+Här är ett exempel på vad du gör när du bjuder in en extern användare att använda en app.
+![Extern användare har lagts till i listan över appåtkomst](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 Gästanvändaren får ett e-postmeddelande som anger att appen har delats med dem.
 
@@ -98,8 +106,9 @@ Gästanvändaren har redan en Power BI Pro-licens i klientorganisationen.
 
 ![Gästanvändare tar med sin egen licens](media/service-admin-azure-ad-b2b/license-approach3.png)
 
-## <a name="limitations"></a>Begränsningar
+## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
+* När du bjuder in gästanvändare som använder personliga e-postkonton, till exempel gmail.com, outlook.com och hotmail.com, kan du följa det här [inbäddade videoklippet](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience) om du vill se ett exempel på hur en användare registrerar sig.
 * Externa B2B-gäster är begränsade till förbrukning av innehåll endast. Externa B2B-gäster kan visa appar, instrumentpaneler, rapporter, exportera data och skapa e-postprenumerationer för instrumentpaneler och rapporter. De kan inte komma åt arbetsytor eller publicera sitt eget innehåll.
 * Den här funktionen är inte tillgänglig med Power BI-appar. Du kan visa Power BI-innehåll som delas med hjälp av Microsoft Azure Active Directory B2B i en webbläsare på en mobil enhet.
 * Att använda gästanvändare med Power BI stöds inte i signeteringsmoln (offentliga).

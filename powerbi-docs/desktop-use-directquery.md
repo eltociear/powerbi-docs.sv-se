@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/25/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ec124ef4ae34b064e217b3ce646a329d538e4214
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: df45bbaa142b2c476a6391b1c43638e1ee76c3ae
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -95,7 +95,7 @@ Power BI visar fönstret **Inställningar**. Därifrån väljer du fliken **Data
 
 Tills autentiseringsuppgifter tillhandahålls uppstår ett fel om du öppnar en publicerad rapport eller utforskar en datauppsättning som har skapats med en **DirectQuery**-anslutning till sådana datakällor.
 
-För andra datakällor än **Azure SQL Database**, **Azure SQL Data Warehouse** och **Redshift** som använder DirectQuery, måste en **lokala datagateway** vara installerad och datakällan måste vara registrerad för att upprätta en dataanslutning. Läs mer om [lokal datagateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+För andra datakällor än **Azure SQL Database**, **Azure SQL Data Warehouse** och **Redshift** som använder DirectQuery, måste en **lokal datagateway** vara installerad och datakällan måste vara registrerad för att upprätta en dataanslutning. Läs mer om [lokal datagateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om **DirectQuery** finns i följande resurser:
