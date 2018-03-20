@@ -1042,8 +1042,6 @@
           href: report-server/get-started.md
         - name: Nyheter
           href: report-server/whats-new.md
-        - name: Viktig information
-          href: report-server/release-notes.md
         - name: Ändringslogg
           href: report-server/changelog.md
         - name: Supporttider
