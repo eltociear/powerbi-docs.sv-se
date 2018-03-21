@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/05/2017
 ms.author: maghan
-ms.openlocfilehash: 81036ce9a265f4541b23954584d7a9dd9b99a080
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 337fafe395a5d80d0b82ac069579048a69cd6c4f
+ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="upgrade-power-bi-report-server"></a>Uppgradera Power BI-rapportserver
 Lär dig mer om att uppgradera Power BI-rapportservern.
@@ -29,8 +29,6 @@ Lär dig mer om att uppgradera Power BI-rapportservern.
  **Hämta** ![hämta](media/upgrade/download.png "hämta")
 
 Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
-
-![tips](media/upgrade/fyi-tip.png "tips") Aktuell viktig information finns i [Power BI-rapportserver – viktig information](release-notes.md).
 
 ## <a name="before-you-begin"></a>Innan du börjar
 Innan du uppgraderar en rapportserver, rekommenderas att du utför följande steg för att säkerhetskopiera rapportservern.
