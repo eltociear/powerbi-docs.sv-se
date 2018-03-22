@@ -698,8 +698,6 @@
           href: desktop-assume-referential-integrity.md
         - name: 'Självstudier: Dynamisk säkerhet på radnivå med Analysis Services tabellmodell'
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-        - name: DirectQuery för Oracle- och Teradata-databaser
-          href: desktop-directquery-for-oracle-teradata.md
         - name: Använda anslutningstjänsten SAP BW i Power BI Desktop (förhandsgranskning)
           href: desktop-sap-bw-connector.md
         - name: Använda OneDrive för företag-länkar i Power BI Desktop
