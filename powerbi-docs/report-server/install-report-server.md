@@ -1,27 +1,27 @@
 ---
 title: Installera Power BI-rapportserver
-description: "Läs mer om att installera Power BI-rapportserver. "
+description: Läs mer om att installera Power BI-rapportserver.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/29/2018
-ms.author: maghan
-ms.openlocfilehash: 340e4a79e4ab0950143ea1af4f1c9a1f9c54b64c
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 03/19/2018
+ms.author: maggies
+ms.openlocfilehash: 8b8bb3867ec1630dc5163148e4aa20e10c0504b7
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
@@ -29,18 +29,17 @@ Läs mer om att installera Power BI-rapportserver.
 
  **Hämta** ![hämta](media/install-report-server/download.png "hämta")
 
-Om du vill hämta Power BI-rapportservern, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). 
+Om du vill ladda ned Power BI-rapportservern går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) och väljer **Ladda ned kostnadsfri utvärderingsversion**. 
 
-Gå till Microsoft Download Center för att hämta [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (optimerad för Power BI-rapportserver – oktober 2017).
-
-![tips](media/install-report-server/fyi-tip.png "tips") För aktuell viktig information, se [Power BI-rapportserver – viktig information](release-notes.md).
+## <a name="video-install-power-bi-report-server"></a>Video: Installera Power BI-rapportserver
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="before-you-begin"></a>Innan du börjar
-Innan du installerar Power BI-rapportservern, bör du granska [maskin- och programvarukraven för att installera Power BI-rapportservern](system-requirements.md).
+Innan du installerar Power BI-rapportservern rekommenderar vi att du granskar [maskin- och programvarukraven för att installera Power BI-rapportservern](system-requirements.md).
 
 ### <a name="power-bi-report-server-product-key"></a>Produktnyckel för Power BI-rapportserver
+
 #### <a name="power-bi-premium"></a>Power BI Premium
 Om du har köpt Power BI Premium så kommer du att ha tillgång till din produktnyckel för Power BI-raportservern i fliken **premiuminställningar** i Power BI-administratörsportalen. Den finns endast tillgänglig för globala administratörer eller användare som har tilldelats rollen Power BI-tjänstadministratör.
 
@@ -56,10 +55,7 @@ Om du har ett SQL Server Enterprise SA-avtal, kan du få din produktnyckel från
 ## <a name="install-your-report-server"></a>Installera din rapportserver
 Det är enkelt att installera Power BI-rapportservern. Det krävs endast några få steg för att installera filerna.
 
-> [!NOTE]
-> Du behöver inte en SQL Server Database Engine-server tillgänglig vid tidpunkten för installationen. Du behöver bara en för att konfigurera Reporting Services efter installationen.
-> 
-> 
+Du behöver inte en SQL Server Database Engine-server tillgänglig vid tidpunkten för installationen. Du behöver bara en för att konfigurera Reporting Services efter installationen.
 
 1. Hitta platsen för PowerBIReportServer.exe och starta installationsprogrammet.
 2. Välj **installera Power BI-rapportservern**.
@@ -84,15 +80,14 @@ Det är enkelt att installera Power BI-rapportservern. Det krävs endast några 
    
     ![Ange installationssökvägen](media/install-report-server/pbireportserver-install-file-path.png)
    
-   > [!NOTE]
-   > Standardsökvägen är C:\Program Files\Microsoft Power BI Report Server.
-   > 
-   > 
-7. När installationen är slutförd, kan du välja **konfigurera rapportservern** för att starta konfigurationshanteraren för Reporting Services.
+    Standardsökvägen är C:\Program Files\Microsoft Power BI Report Server.
+
+1. När installationen är slutförd, kan du välja **konfigurera rapportservern** för att starta konfigurationshanteraren för Reporting Services.
    
     ![Konfigurera rapportservern](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configuration-your-report-server"></a>Konfigurera din rapportserver
+## <a name="configuring-your-report-server"></a>Konfigurera rapportservern
+
 När du har valt **konfigurera rapportservern** i installationsprogrammet, visas du konfigurationshanteraren för Reporting Services. Mer information finns i [konfigurationshanteraren för Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
 Du behöver [skapa en rapportserverdatabas](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) för att slutföra den inledande konfigurationen av Reporting Services. En SQL Server Database-server krävs för att slutföra det här steget.

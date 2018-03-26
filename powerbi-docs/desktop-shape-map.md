@@ -1,15 +1,15 @@
 ---
-title: "Använda formkartor i Power BI Desktop (förhandsgranskning)"
-description: "Skapa relativa jämförelser med områden med formkartor i Power BI Desktop"
+title: Använda formkartor i Power BI Desktop (förhandsgranskning)
+description: Skapa relativa jämförelser med områden med formkartor i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 335e9800be3d2a2cd30cc84835ab7b0173922c46
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2bdd29f664d49dd4628b2f27d0eddf1f5dad1cf7
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
 I Power BI Desktop skapar du en **formkartan** för att visa relativa jämförelser mellan områden på en karta genom att använda olika färger i olika områden. Jämfört med **kartor** kan **formkartor** inte visa exakta geografiska platser för datapunkter på en karta. Dess huvudsakliga syfte är att visa relativa jämförelser för regioner på en karta genom att markera dem med olika färger.
@@ -73,6 +73,23 @@ Du kan använda anpassade kartor med **Formkarta** så länge som de finns i **T
 För att använda din **TopoJSON**-kartfil, lägger du till ett visuellt ShapeMap-objekt i rapporten och lägger till vissa data i bucketarna *Plats* och *Värden*. I rutan **Visualiseringar** med avsnittet **Format** markerat (penselikonen visas som (1) i följande bild) expanderar du området **Form** och väljer **+ Lägg till karta**.
 
 ![](media/desktop-shape-map/shape-map_6.png)
+
+## <a name="sample-custom-map"></a>Exempel på egen karta
+*Offices of the United States Attorneys* publicerar varje år en finansiell rapport med information om deras tvister och ärenden.  Följ länken nedan om du vill se alla deras rapporter.
+
+https://www.justice.gov/usao/resources/annual-statistical-reports
+
+Eftersom delstater kan vara indelade i flera distrikt måste vi ha en anpassad formkarta.  Genom att importera **TopoJSON**-kartan över USA:s domkretsar till **Power BI Desktop** kan vi visualisera årliga finansiella data för distriktsåklagarna.  Bilden nedan visar ett exempel på en sådan karta.
+
+![](media/desktop-shape-map/shape-map_7a.png)
+
+Man kan också göra intressanta saker med enskilda delstatskartor och visa mer information beroende på vilka distrikt den innehåller. 
+
+![](media/desktop-shape-map/shape-map_7b.png)
+
+Om du vill experimentera med datauppsättningen och visualiseringen kan du hämta den ursprungliga PBIX-filen som användes för att generera rapporten med hjälp av följande länk.
+
+* [PBIX-fil för demonstration av anpassad formkarta](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Hämta kartdata
 För att snabbt hämta data till en modell så att du kan testa **formkartan** kan du kopiera en av tabellerna i slutet av den här artikeln och sedan markera **Ange data** från menyfliksområdet **Start**.

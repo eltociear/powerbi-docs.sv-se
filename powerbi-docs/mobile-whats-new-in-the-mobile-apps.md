@@ -2,26 +2,26 @@
 title: Nyheter i Power BI-mobilapparna
 description: Nyheter i Power BI-mobilapparna
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/15/2018
+ms.date: 03/13/2018
 ms.author: maggies
-ms.openlocfilehash: 530e4a2dc47a2d790dde3d7d1e7a2faeb7d79732
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 5c2573bf4a3900b4d4216170e843263bc41a4e07
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -30,11 +30,21 @@ Relaterad information om nyheter finns i:
 * [Nyheter i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](service-whats-new.md)  
 
+## <a name="march-2018"></a>Mars 2018
+
+### <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
+
+Vi har skapat appen Power BI for Mixed Reality för att göra data tillgängliga där du är. Visa dina instrumentpaneler och rapporter i den virtuella världen, eller placera ut dem och visa dem på specifika platser i din miljö. Läs mer om den nya [appen Power BI for Mixed Reality](mobile-mixed-reality-app.md).
+
 ## <a name="february-2018"></a>Februari 2018
 
 ### <a name="share-reports"></a>Dela rapporter
 
 Nu kan du dela en rapport direkt från mobilapparna. Läs mer om att [dela instrumentpaneler och rapporter från mobilappar](mobile-share-dashboard-from-the-mobile-apps.md)
+
+### <a name="improved-tooltips"></a>Förbättrade knappbeskrivningar
+
+När du trycker på och håller ned ett visuellt objekt i en rapport för att visa knappbeskrivningar, kan du nu dra fingret över det visuella objektet om du vill visa mer information om varje datapunkt längs vägen.
 
 ## <a name="january-2018"></a>Januari 2018
 

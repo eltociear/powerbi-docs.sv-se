@@ -1,15 +1,15 @@
 ---
-title: "Ansluta till en webbsida från Power BI Desktop"
-description: "Anslut enkelt till och använd webbdata i Power BI Desktop"
+title: Ansluta till en webbsida från Power BI Desktop
+description: Anslut enkelt till och använd webbdata i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0ee3ff3b3ca33ea4760f9f08b4e05cbd65e2ab34
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 23984d8e64445d869062e942eb6155ff58b0d0ae
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Ansluta till en webbsida från Power BI Desktop
 Du kan ansluta till en webbsida och importera data till Power BI Desktop för användning i visuella objekt och i datamodeller.
@@ -47,7 +47,7 @@ När vi väljer **Hämta** importerar Power BI Desktop de markerade objekten och
 
 Svårare än så är det inte att ansluta till en webbplats och överföra dess data till Power BI Desktop.
 
-Därifrån kan du dra fält till rapportarbetsytan och alla visuella objekt som du vill skapa. Du kan också arbeta med data från webbplatsen precis som med andra data – du kan forma dem, skapa relationer mellan dem och andra datakällor i din modell och i övrigt göra vad du vill för att skapa just den Power BI-rapporten du vill ha.
+Därifrån kan du dra fält till rapportarbetsytan och alla visuella objekt som du vill skapa. Du kan också använda data från webbplatsen precis som med andra data – du kan forma dem, skapa relationer mellan dem och andra datakällor i din modell och i övrigt göra vad du vill för att skapa den Power BI-rapporten du vill ha.
 
 Om du vill lära dig mer om att ansluta till en webbplats, kan du läsa [Komma igång-guiden för Power BI Desktop](desktop-getting-started.md).
 

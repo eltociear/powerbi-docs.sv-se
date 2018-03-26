@@ -1,39 +1,41 @@
 ---
-title: "Översikt av panelen för Power BI-filter"
-description: "Översikt av rapportens filterpanel i Power BI-tjänsten och Power BI-instrumentpanelen"
+title: Översikt av panelen för Power BI-filter
+description: Översikt av rapportens filterpanel i Power BI-tjänsten och Power BI-instrumentpanelen
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/15/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 83aed39c8a652ed5b38c18b67f1cdccfc7884240
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 00b0b116aa59ebab1d963a8803f788040761d9f5
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
 Den här artikeln tar en djup titt på filterrapportfönstret. Du ser fönstret i [Power BI-tjänsten Redigeringsvyn och Läsvyn](service-reading-view-and-editing-view.md) och i [Power BI Desktop Rapportvyn](desktop-report-view.md).
 
 Det finns många olika sätt att filtrera data i Power BI och vi rekommenderar att först läsa [Om filter och markering](power-bi-reports-filters-and-highlighting.md).
 
-## <a name="working-with-filters"></a>Arbeta med filter
-Rapporter kan öppnas i [redigeringsvyn eller läsvyn](service-reading-view-and-editing-view.md). I redigeringsvyn kan rapportägare [lägga till filter för en rapport](power-bi-report-add-filter.md) och dessa filter sparas i rapporten. Personer som visar rapporten i läsvyn kan interagera med filtren, men de kan inte spara filterändringar i rapporten.
+## <a name="working-with-the-report-filters-pane"></a>Arbeta med panelen för rapportfilter
+I Power BI Desktop öppnas rapporter i rapportvyn. I Power BI-tjänsten kan rapporter öppnas i [redigeringsvyn eller läsvyn](service-reading-view-and-editing-view.md). I redigeringsvyn, och i rapportvyn i Desktop, kan rapportägare [lägga till filter för en rapport](power-bi-report-add-filter.md) och dessa filter sparas med rapporten. De som visar rapporten i läsvyn kan interagera med filtren, men de kan inte lägga till nya filter i rapporten.
 
-## <a name="filters-in-reading-view"></a>Filter i läsvyn
-När en rapport har öppnats i läsvyn visas fönsterfiltret längst till höger i rapportarbetsytan. Om du inte ser fönstret väljer du pilen i det övre högra hörnet för att expandera det.
+I Power BI-tjänsten sparas ändringar du gör i fönstret Filter i rapporterna, och dessa ändringar följer med till mobilversionen av rapporten. Om du vill återställa standardvärdena i fönstret Filter väljer du **Återställ till standard** på den översta menyraden.     
+
+## <a name="open-the-filters-pane"></a>Öppna fönstret Filter
+När en rapport har öppnats visas fönstret Filter längst till höger i rapportarbetsytan. Om du inte ser fönstret väljer du pilen i det övre högra hörnet för att expandera det. I läsvyn i Power BI-tjänsten är fönstret Filter det enda fönstret som är tillgängligt på höger sida.
 
 I det här exemplet har vi valt ett visuellt objekt som innehåller 6 filter. Sidan har också filter som visas under rubriken **Sidonivåfilter**. Det finns ett [filter för detaljerad information](power-bi-report-add-filter.md) och hela rapporten har också ett filter: **räkenskapsår** är 2013 eller 2014.
 
@@ -43,20 +45,24 @@ Vissa filter har ordet **alla** och detta innebär att alla värden ingår i fil
 
 Alla som visar den här rapporten kan interagera med filtren.
 
-* visa information om filtret genom att hålla muspekaren över och klicka på pilen bredvid filtret.
+* Visa information om filtret genom att hålla muspekaren över och klicka på pilen bredvid filtret.
   
    ![](media/power-bi-how-to-report-filter/power-bi-expan-filter.png)
-* ändra filtret, till exempel, ändra **Lindseys** till **Fashion Direct**.
+* Ändra filtret, till exempel, ändra **Lindseys** till **Fashion Direct**.
   
      ![](media/power-bi-how-to-report-filter/power-bi-filter-chain.png)
-* ta bort filtret genom att välja **x** intill filternamnet.
+
+* Återställ filtren till deras ursprungliga tillstånd genom att välja **Återställ till standard** på den översta menyraden.    
+    ![](media/power-bi-how-to-report-filter/power-bi-reset-to-default.png)
+    
+* Ta bort filtret genom att välja **x** intill filternamnet.
   
-  När du tar bort ett filter försvinner den från listan och data raderas från rapporten.  Till exempel, om du tar bort filtret **räkenskapsår är 2013 eller 2014** finns räkenskapsårets informationen kvar i rapporten men den kommer inte längre att filtreras så att endast 2013 och 2014 visas. Istället visas alla räkenskapsår som innehåller data.  När du tar bort filtret, kommer inte du att kunna ändra det igen eftersom det har tagits bort från listan. Ett bättre alternativ är att ta bort filtret genom att välja ikonen Radera ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
+  När du tar bort ett filter försvinner den från listan och data raderas från rapporten.  Om du till exempel tar bort filtret **räkenskapsår är 2013 eller 2014** finns räkenskapsårets informationen kvar i rapporten men den kommer inte längre att filtreras så att endast 2013 och 2014 visas. Istället visas alla räkenskapsår som innehåller data.  När du tar bort filtret, kommer inte du att kunna ändra det igen eftersom det har tagits bort från listan. Ett bättre alternativ är att ta bort filtret genom att välja ikonen Radera ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
   
   ![](media/power-bi-how-to-report-filter/power-bi-delete-filter.png)
 
 ## <a name="filters-in-editing-view"></a>Filter i redigeringsvyn
-När en rapporten har öppnats i redigeringsläge visar fönsterfiltret längst till höger i rapportarbetsytan i den nedre delen av fönstret **Visualisering**. Om du inte ser fönstret väljer du pilen i det övre högra hörnet för att expandera det.
+När en rapport har öppnats i redigeringsläge i Desktop eller Power BI-tjänsten visas fönsterfiltret längst till höger i rapportarbetsytan i den nedre delen av fönstret **Visualisering**. Om du inte ser fönstret väljer du pilen i det övre högra hörnet för att expandera det.
 
 ![](media/power-bi-how-to-report-filter/power-bi-all-filters.png).  
 
@@ -73,16 +79,16 @@ Välj nedpilen bredvid namnet på filtret om du vill visa alternativ för ett vi
 ![](media/power-bi-how-to-report-filter/pbi_filterlistdropdown.jpg)
 
 ## <a name="clear-a-filter"></a>Rensa ett filter
- Välj ikonen Radera ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) i antingen grundläggande eller avancerat filtreringsläge för att återställa filtret. 
+ Välj ikonen Radera ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) i antingen grundläggande eller avancerat filtreringsläge för att rensa filtret. 
 
 ## <a name="add-a-filter"></a>Lägg till ett filter
-* I redigeringsvyn lägger du till ett filter i ett visuellt objekt, en sida, en visning av detaljerad information eller en rapport genom att välja ett fält från fönstret Fält och drar den till en lämplig filterbrunn, där du ser orden **Dra fält hit**. När ett fält har lagts till som ett filter, finjustera det med hjälp av grundläggande filtrering och avancerad filtrering (beskrivs nedan).
+* I redigeringsvyn i Desktop eller Power BI-tjänsten lägger du till ett filter i ett visuellt objekt, en sida, en visning av detaljerad information eller en rapport genom att välja ett fält från fönstret Fält och dra det till en lämplig filterbrunn, där du ser orden **Dra fält hit**. När ett fält har lagts till som ett filter, finjustera det med hjälp av grundläggande filtrering och avancerad filtrering (beskrivs nedan).
 
 - **Om du drar ett nytt fält till området för filter på visuell nivå läggs fältet inte till i det visuella objektet**, men du kan filtrera det visuella objektet med det nya fältet. I exemplet nedan, har **Kedja** lagts till som ett nytt filter i det visuella objektet. Observera när du lägger till **Kedja** som ett filter att detta inte ändrar det visuella objektet förrän du använder grundläggande eller avancerade filtreringskontroller.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 
-* Alla fält som används för att skapa ett visuellt objekt är också tillgängliga som filter. Välj först ett visuellt objekt för att aktivera det. Fält som används i det visuella objektet visas i fönstret visualiseringar (om du är i redigeringsvyn) och i fönstret filter under rubriken **Visuella nivåfilter**.
+* Alla fält som används för att skapa ett visuellt objekt är också tillgängliga som filter. Välj först ett visuellt objekt för att aktivera det. Fält som används i det visuella objektet visas i fönstret Visualiseringar och i fönstret Filter under rubriken **Visuella nivåfilter**.
   
    ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.png)  
   

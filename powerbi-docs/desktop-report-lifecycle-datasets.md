@@ -1,15 +1,15 @@
 ---
-title: "Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop"
-description: "Använda en gemensam datauppsättning för flera Power BI Desktop-rapporter och hantera din rapportlivscykel"
+title: Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
+description: Använda en gemensam datauppsättning för flera Power BI Desktop-rapporter och hantera din rapportlivscykel
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 948c87e3e594ebb0ca2f75f747f7dd6fe36e18e7
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 09da52bea3486d95b730836a393ac0ffe9b10cc4
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det innebär att du kan skapa den perfekta datamodellen i Power BI Desktop, publicera den till Power BI-tjänsten och sedan kan du och andra användare skapa flera olika rapporter (i separata .pbix-filer) från samma gemensamma datamodell. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.

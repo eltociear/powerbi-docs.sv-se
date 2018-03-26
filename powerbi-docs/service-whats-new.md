@@ -1,28 +1,29 @@
 ---
-title: "Nyheter i Power BI-tjänsten"
-description: "Nyheter i Power BI-tjänsten"
+title: Nyheter i Power BI-tjänsten
+description: Nyheter i Power BI-tjänsten
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
 backup: sirsu
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/07/2018
+ms.date: 03/22/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b3e12a9bdfa6643351cdfc82ce9051197df6ee1e
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: a388f090eac1896c7f47d7d16251c419fc4c33c2
+ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/23/2018
+---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -36,7 +37,17 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="january-2018"></a>Januari 2018
+## <a name="march-2018"></a>Mars 2018
+* [Beständiga filter](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjänsten.
+* Dela innehåll med användare som använder sina personliga e-postkonton. Tillägget av [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
+
+## <a name="previous-months-2018"></a>Föregående månader (2018)
+### <a name="february-2018"></a>Februari 2018
+* Installera [Power BI-appar](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) automatiskt för slutanvändare.
+* P4- och P5-kapaciteter på Power BI Premium
+* Förhandsgranskning av [anpassade visuella objekt i en organisation](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-organization).
+
+### <a name="january-2018"></a>Januari 2018
 *   Resurs- och favoritrapporter i Power BI.
 *   Stöd för enkel inloggning med OAuth2- och DirectQuery för Azure SQL Database och Data Warehouse.
 *   Regiongranskning: Granskningsloggarna lagras nu i samma Office 365-region som klientorganisationen.

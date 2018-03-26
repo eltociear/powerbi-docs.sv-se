@@ -1,15 +1,15 @@
 ---
-title: "Ändringslogg för Power BI-rapportservern"
-description: "Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version."
+title: Ändringslogg för Power BI-rapportservern
+description: Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: jtarquino
 manager: jonhp
 backup: maggies
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,17 +17,35 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: deff79bba0f7f191a8343629300c725f3150e509
-ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
+ms.openlocfilehash: 7c460955aba71bfb3a89d94aa6000c7bdd451ac2
+ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
 Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
 
-Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md).
+Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md). 
+
+## <a name="march-2018"></a>Mars 2018
+- **Power BI-rapportserver**
+    - *Version 1.2.6648.38132 (build-nr 15.0.2.378), publicerad: 19 mars 2018*
+        - Säkerhetsuppdateringar
+        - Förbättrad användbarhet
+        - Felkorrigeringar
+            - För sidnumrerade rapporter har en korrigering gjorts för parametersynligheten i en länkad rapport som återställs efter redigering av dess egenskaper
+            - Korrigering för webbportalen med anpassad formulärautentisering som ignorerar cookien för dynamisk förfallotid
+            - Korrigering för export till Word som skapar ojämn radhöjd om raden har tomt innehåll
+            - För sidnumrerade rapporter har en korrigering gjorts för uttrycksbaserade anslutningssträngar som tas bort när vi ändrar autentiseringsuppgifter för datakällor
+            - Korrigering för möjligheten att använda KPI med textvärden
+            - För sidnumrerade rapporter har en korrigering gjorts för möjligheten att tilldela en ny datauppsättning till en befintlig sidnumrerad rapport
+            - Andra stabilitets- och användbarhetskorrigeringar
+
+- **Power BI Desktop (optimerad för Power BI-rapportservern)**
+    - Version: 2.56.5023.1043 (mars 2018), publicerad: 19 mars 2018
+        - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (mars 2018)
 
 ## <a name="october-2017"></a>Oktober 2017
 

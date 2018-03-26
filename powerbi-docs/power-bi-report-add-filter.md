@@ -1,50 +1,58 @@
 ---
-title: "Lägga till en visualisering, en sida, detaljerad information eller ett rapportfilter för en rapport"
-description: "Lägg till ett sidfilter, ett visualiseringsfilter eller ett rapportfilter till en rapport i Power BI"
+title: Lägga till en visualisering, en sida, detaljerad information eller ett rapportfilter för en rapport
+description: Lägg till ett sidfilter, ett visualiseringsfilter eller ett rapportfilter till en rapport i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d30941e49915122864976868d36418d53844b927
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e222b9bddc3e7c204a728e207b8969cdf13d605f
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="add-a-filter-to-a-power-bi-report-in-editing-view"></a>Lägga till ett filter i en Power BI-rapport (i redigeringsvyn)
+# <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Lägga till ett filter i en rapport i Power BI-tjänsten (i redigeringsvyn)
 > [!TIP]
 > Vi rekommenderar att du först läser [Om filter och markeringar i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md).
+
+Exemplen i den här artikeln gäller Power BI-tjänsten. Men stegen är nästan identiska i Power BI Desktop.
 > 
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Vad är skillnaden mellan rapportfiltren i redigeringsvyn jämfört med läsvyn?
 Det finns två lägen för att interagera med rapporter: [Läsvy](service-reading-view-and-editing-view.md) och [Redigeringsvy](service-interact-with-a-report-in-editing-view.md).  Och vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
 
-* Du kan lägga till rapportfilter, sidfilter och visuella filter i redigeringsvyn. När du sparar rapporten, sparas filtren med den. Människor som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till, men inte spara sina ändringar.
-* I läsvyn kan du interagera med alla rapport-, sid- och visuella filter som redan finns i rapporten men du kan inte spara dina filterändringar.
+* Du kan lägga till rapportfilter, sidfilter och visuella filter i redigeringsvyn. När du sparar rapporten, sparas filtren med den. De som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till.
+* I läsvyn kan du interagera med alla rapportfilter, sidfilter, filter för visning av detaljerad information och visuella filter som redan finns i rapporten, men du kan inte lägga till nya filter. De ändringar du gör i fönstret Filter sparas med rapporten, även om du visar rapporten i en mobilapp.  
 
 > [!NOTE]
 > Den här artikeln beskriver hur du skapar filter i rapportens **Redigeringsvy**.  Mer information om filter i läsvyn finns i [Interagera med filter i rapportens läsvy](service-reading-view-and-editing-view.md).
-> 
-> 
 
-## <a name="visual-filters-page-filters-drillthrough-filters-and-report-filters"></a>Visuella filter, sidfilter, filter för detaljerad information och rapportfilter
-Ett **sidfilter** gäller för alla visuella objekt på rapportsidan. Ett **visuellt filter** gäller för ett enskilt visuellt objekt på en rapportsida. Och ett **rapportfilter** gäller för alla sidor i rapporten.
 
-![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+## <a name="filters-available-in-the-power-bi-filters-pane"></a>Filter som är tillgängliga i fönstret *Filter* i Power BI
+Oavsett om du använder Desktop eller Power BI-tjänsten visas fönstret Filter till höger i rapportarbetsytan. Om inte fönstret Filter visas kan du öppna det genom att välja ikonen ">" längst upp till höger.
+
+Det finns fyra typer av filter.
+
+- **sidfilter** gäller för alla visuella objekt på rapportsidan     
+- **visuellt filter** gäller för ett enskilt visuellt objekt på en rapportsida    
+- **filter för visning av detaljerad information** gäller för en enda entitet i en rapport    
+- **rapportfilter** gäller för alla sidor i rapporten    
+
+    ![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 ## <a name="add-a-filter-to-a-specific-visualization-aka-visual-filter"></a>Lägga till ett filter till en specifik visualisering (dvs. ett visuellt filter)
 Det finns två sätt att göra detta: 
@@ -130,11 +138,11 @@ Nu ska vi se hur filtret för detaljerad information fungerar.
 3. På panelen Fält väljer du det fält som du vill lägga till som ett nytt rapportnivåfilter och drar det till **området för rapportnivåfilter**.  
 4. Markera de värden som du vill filtrera (se [Så här använder du rapportfilter](power-bi-how-to-report-filter.md)).
 
-Visualiseringarna på den aktiva sidan, och på alla sidor i rapporten, ändras för att återspegla det nya filtret. Om du sparar rapporten med filtret kan rapportens läsare interagera med filtret i läsvyn genom att välja eller rensa värden.
+    Visualiseringarna på den aktiva sidan, och på alla sidor i rapporten, ändras för att återspegla det nya filtret. Om du sparar rapporten med filtret kan rapportens läsare interagera med filtret i läsvyn genom att välja eller rensa värden.
 
 1. Välj bakåtpilen för att återgå till den föregående rapportsidan.
 
-## <a name="troubleshooting"></a>Felsökning
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 ### <a name="why-your-visual-level-filter-and-page-level-filter-may-return-different-results"></a>Varför ditt visuella nivåfilter och sidnivåfilter kan returnera olika resultat
 När du lägger till ett filter på visuell nivå, filtrerar Power BI de aggregerade resultaten.  Aggregeringstypen är som standard Summa, men du kan [ändra aggregeringstypen](service-aggregates.md).  
 

@@ -554,8 +554,12 @@
           href: service-admin-administering-power-bi-in-your-organization.md
         - name: Power BI (kostnadsfri) i din organisation
           href: service-admin-service-free-in-your-organization.md
-        - name: Köpa Power BI Pro
+        - name: Köp Power BI Pro
           href: service-admin-purchasing-power-bi-pro.md
+        - name: Tilldela Power BI Pro
+          href: service-admin-assigning-power-bi-pro-licenses.md
+        - name: Power BI Pro i din organisation
+          href: service-admin-power-bi-pro-in-your-organization.md
         - name: Power BI-styrnings- och distributionsmetoder
           href: service-admin-governance.md
         - name: Power BI-säkerhet

@@ -1,29 +1,29 @@
 ---
-title: "Lägg till Power BI-rapportparametrarna med hjälp av webbadressen"
-description: "Filtrera en rapport med hjälp av URL:en för frågesträngparametrar – du kan även filtrera på mer än ett fält."
+title: Lägg till Power BI-rapportparametrarna med hjälp av webbadressen
+description: Filtrera en rapport med hjälp av URL:en för frågesträngparametrar – du kan även filtrera på mer än ett fält.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 03/15/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 5015886d0314c767bc16fe223c7db91adb0fd2bb
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 72afa61316800e9636d7b1a1536ff9c43b66c453
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 När du öppnar en rapport i Power BI-tjänsten har varje sida i rapporten en egen unik URL. Du kan använda filterfönstret på rapportarbetsytan om du vill filtrera rapportsidan.  Eller så kan du lägga till frågesträngparametrar i URL:en för att filtrera rapporten. Du kanske har en rapport som du vill visa dina kolleger men du vill filtrera den först åt dem. Ett sätt att göra detta på är att börja med standard-URL:en för rapporten, lägga till filterparametrar och sedan skicka dem hela URL:en med e-post.
@@ -98,7 +98,7 @@ OmrådeKedja = [Område] & " - " & [Kedja]
 
 Publicera rapporten till Power BI-tjänsten och använd sedan URL-frågesträngen för att enbart filtrera och visa data för Lindseys butiker i NC.
 
-https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Butik/OmrådeKedja eq 'NC–Lindseys'
+https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Fästa en panel från en filtrerad rapport
 När du har filtrerat rapporten med frågesträngparametrarna kan du fästa visualiseringarna från rapporten på instrumentpanelen. Panelen på instrumentpanelen visar filtrerade data och när du väljer den instrumentpanelen öppnas rapporten som användes för att skapa den.  Emellertid sparas inte filtreringen som du gjorde med hjälp av URL:en i rapporten och när instrumentpanelen är markerad öppnas rapporten i sitt ofiltrerade tillstånd.  Det innebär att data som visas i instrumentpanelen inte matchar de data som visas i rapportvisualiseringen.

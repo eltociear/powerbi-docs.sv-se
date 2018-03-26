@@ -2,14 +2,14 @@
 title: Ansluta till en Amazon Redshift-databas i Power BI Desktop
 description: Anslut enkelt till en Amazon Redshift-databas i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,21 +18,21 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: de0e6b61197bfe25048a2722d5aab42f1c15e999
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9597d056067fb1af291f46a088b94a39da57eab9
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-amazon-redshift-in-power-bi-desktop"></a>Ansluta till Amazon Redshift i Power BI Desktop
 I **Power BI Desktop** kan du ansluta till en **Amazon Redshift**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop.
 
 ## <a name="connect-to-an-amazon-redshift-database"></a>Ansluta till en Amazon Redshift-databas
-Om du vill ansluta till en **Amazon Redshift**-databas, väljer du **Hämta Data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Databas** från kategorierna till vänster så ser du **Amazon Redshift**.
+Om du vill ansluta till en **Amazon Redshift**-databas, väljer du **Hämta data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Databas** från kategorierna till vänster så ser du **Amazon Redshift**.
 
 ![](media/desktop-connect-redshift/connect_redshift_3.png)
 
-I fönstret **Amazon Redshift** som visas skriver eller klistrar du inte namnet på din **Amazon Redshift**-server och -databas i rutan. Som en del av fältet *Server* kan användarna ange en ort i följande format: *ServerURL:Port*
+I fönstret **Amazon Redshift** som visas skriver eller klistrar du inte namnet på din **Amazon Redshift**-server och -databas i rutan. Som en del av fältet *Server* kan användarna ange en port i följande format: *ServerURL:Port*
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
@@ -46,7 +46,7 @@ När du har anslutit, visas ett **navigator**-fönster som visar data som är ti
 
 När du väljer från fönstret **Navigator** kan du antingen **Hämta** eller **Redigera** data.
 
-* Om du väljer att **Hämta** data, frågas du om du vill använda läget *Importera* eller *DirectQuery* för att läsa in data. Mer information finns i den här [artikeln som förklarar DirectQuery](desktop-use-directquery.md).
+* Om du väljer att **Hämta** data får du en fråga om du vill använda läget *Importera* eller *DirectQuery* för att läsa in data. Mer information finns i den här [artikeln som förklarar DirectQuery](desktop-use-directquery.md).
 * Om du väljer att **Redigera** data, visas **Frågeredigeraren** där du kan använda alla typer av omvandlingar och filter för data som tillämpas på den underliggande **Amazon Redshift** databasen (om detta stöds).
 
 ## <a name="next-steps"></a>Nästa steg

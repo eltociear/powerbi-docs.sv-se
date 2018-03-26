@@ -1,39 +1,39 @@
 ---
-title: "Läsvyn och redigeringsvyn i Power BI-tjänsterapporter"
-description: "Översikt på hög nivå över skillnaderna mellan läsvyn och redigeringsvyn för Power BI-tjänsterapporter"
+title: Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
+description: Översikt på hög nivå över skillnaderna mellan läsvyn och redigeringsvyn för Power BI-tjänsterapporter
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6eca438c9e12d99f925aef864ed9b74e16ef30b7
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: a9cb6e3d3fe244a3d530efeb2624e3cc5a799e55
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
-I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter. 
+I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter.
 
 ![bild av rapportskapare och rapportanvändare](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## <a name="report-reading-view"></a>Rapportläsvyn
 
- Läsvyn kan användas för att utforska och interagera med rapporten. Det är ett roligt och säkert sätt att experimentera med och bekanta dig med dina data. Läsvyn är utformad för rapportens *konsumenter*, alltså de som öppnar rapporter från appar eller som [tilldelas rapporter från andra](service-share-dashboards.md). Läsvyn garanterar att varje enskild konsument av en specifik rapport ser samma rapport, samma visualiseringar med samma filter.  Konsumenterna kan interagera med rapporterna men inte spara ändringarna.
+ Läsvyn kan användas för att utforska och interagera med rapporten. Det är ett roligt och säkert sätt att experimentera med och bekanta dig med dina data. Läsvyn är utformad för rapportens *konsumenter*, alltså de som öppnar rapporter från appar eller som [tilldelas rapporter från andra](service-share-dashboards.md). Läsvyn garanterar att varje enskild användare av en specifik rapport ser samma rapport, samma visualiseringar, och om de vill med samma filter.  Användarna kan interagera med rapporter och ändra befintliga filter (och dessa ändringar sparas med rapporten), men de kan inte lägga till nya filter.
 
->**Obs**: Under vissa omständigheter kan rapportkonsumenterna se olika data beroende på radnivåsäkerhet och databehörighet. 
+>**Obs**: Under vissa omständigheter kan rapportkonsumenterna se olika data beroende på radnivåsäkerhet och databehörighet.
 
 ## <a name="report-editing-view"></a>Rapportredigeringsvyn
 
@@ -42,7 +42,7 @@ Redigeringsvyn är endast tillgänglig för den person som skapade rapporten ell
 Redigeringsvyn är utformad för *rapportskapare*. Det är där skapare importerar och ansluter till datamängder, utforskar data och skapar rapporter och instrumentpaneler. I redigeringsvyn i Power BI kan *skapare* granska data djupare genom att lägga till och ta bort fält, ändra typ av visualisering, skapa nya visualiseringar och lägga till och ta bort visualiseringar och sidor i rapporten. De kan sedan dela rapporterna som de har skapat med kollegor.
 
 ## <a name="reading-view-versus-editing-view"></a>Läsvyn jämfört med redigeringsvyn
-Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänsten! Endast de åtgärder för rapporter som inte är tillgängliga i **både** läsvyn och redigeringsvyn visas. 
+Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänsten! Endast de åtgärder för rapporter som inte är tillgängliga i **både** läsvyn och redigeringsvyn visas.
 
 
 |Aktivitet  | Läsvy  | Redigeringsvy |
@@ -52,7 +52,7 @@ Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänst
 | [Skapa eller redigera en rapport](service-report-create-new.md) | Nej  | Ja |
 | [Dela en rapport](service-share-reports.md)| Ja | Ja, och du kan även hantera behörigheter, inklusive att ge andra *ägare* behörigheter. |
 | [Skapa beständiga (permanenta) visuella nivåfilter, detaljinformationsfilter, sidnivåfilter och filter på rapportnivå från fönstret Filter](power-bi-report-add-filter.md) | Nej  | Ja |
-| [Använda rapportfönstret Filter](power-bi-how-to-report-filter.md) | Ja, du kan använda befintliga filter men ändringarna sparas inte i rapporten. | Ja |
+| [Använda rapportfönstret Filter](power-bi-how-to-report-filter.md) | Ja, befintliga filter kan användas och ändringar kan sparas med rapporten, men nya filter kan inte läggas till. | Ja |
 | [Använda rapportfönstret Analytics](service-analytics-pane.md) | Nej | Ja |
 | [Rapport**vy**alternativ](power-bi-report-display-settings.md) | Ja, med vissa undantag. | Ja, alla, inklusive stödlinjer, fästen och lås. |
 | [Skapa ett uppdateringsschema](refresh-data.md) | Nej  | Ja |
@@ -86,14 +86,14 @@ Kom ihåg att endast skaparen och ägarna av rapporten kan öppna en rapport i r
 
    ![Redigera rapporten, gråmarkerat](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
-2. Om **Redigera rapporten** inte är gråmarkerat, väljer du alternativet för att öppna rapporten i redigeringsvyn. 
-   
+2. Om **Redigera rapporten** inte är gråmarkerat, väljer du alternativet för att öppna rapporten i redigeringsvyn.
+
    ![Alternativet Redigera rapporten](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
-   
+
    Rapporten är nu i redigeringsvyn och använder samma [visningsinställningar](power-bi-report-display-settings.md) som du senast använde i läsvyn.
 
 2. För att återgå till läsvyn, väljer du **Läsvy** från det övre navigeringsfältet.
-   
+
     ![Alternativet Läsvy](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
@@ -101,5 +101,4 @@ Kom ihåg att endast skaparen och ägarna av rapporten kan öppna en rapport i r
 ### <a name="next-steps"></a>Nästa steg
 Det finns många sätt att interagera med en rapport i läsvyn, finfördela dina data för att upptäcka insikter och få svar på frågor.  Nästa avsnitt, [Interagera med rapporter i läsvyn](service-interact-with-a-report-in-editing-view.md), beskriver vissa av dessa i detalj.    
 Tillbaka till [Rapporter i Power BI](service-reports.md)    
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/) 
-
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
