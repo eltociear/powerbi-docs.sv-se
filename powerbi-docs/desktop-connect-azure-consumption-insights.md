@@ -1,15 +1,15 @@
 ---
 title: Ansluta till Azure Consumption Insights-data i Power BI Desktop (beta)
-description: "Det är enkelt att ansluta till Azure och få insikter om användning med Power BI Desktop"
+description: Det är enkelt att ansluta till Azure och få insikter om användning med Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,23 +18,23 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9127f7b2e19a304c514d5e6449cf1ceb7ecddb13
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1e82ec988389790a3d96cb6f98f0db5d1a385fda
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Ansluta till Azure Consumption Insights i Power BI Desktop (beta)
 Med anslutningsappen **Azure förbrukning Insights** kan du använda **Power BI Desktop** för att ansluta till Azure och få detaljerade data och information om din organisations användning av Azure-tjänster. Du kan också skapa mått, anpassade kolumner och visuella objekt för att rapportera och dela information om organisationens Azure-användning. Den här versionen av **Azure Consumption and Insights** är en beta-version och kan ändras.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
 
-Den här artikeln beskriver hur du ansluter med anslutningsappen **Azure Consumption Insights** och hämta de data du behöver, hur du migrerar med hjälp av Azure Enterprise Connector och du hittar en mappning av *användningsinformationskolumner* som är tillgängliga i API:et **ACI** (Azure Consumption Insights) API.
+Den här artikeln beskriver hur du ansluter med anslutningsappen **Azure Consumption Insights** och hämtar de data du behöver, hur du migrerar med hjälp av Azure Enterprise Connector och hur du hittar en mappning av *användningsinformationskolumner* som är tillgängliga i API:et **ACI** (Azure Consumption Insights) API.
 
 ## <a name="connect-to-azure-consumption-insights"></a>Ansluta till Azure Consumption Insights
 För att ansluta med hjälp av anslutningsappen **Azure Consumption Insights** måste du ha åtkomst till företagsfunktioner i Azure-portalen.
 
-För att ansluta med hjälp av anslutningsappen **Azure Consumption Insights** väljer du **Hämta data** från fältet **Start** i **Power BI Desktop**. Välj **Onlinetjänster** från kategorierna till vänster för att visa **Microsoft Azure Consumption Insights (beta)**. Välj **Anslut**.
+Om du vill ansluta med hjälp av anslutningsappen **Azure Consumption Insights** väljer du **Hämta data** från fältet **Start** i **Power BI Desktop**. Välj **Onlinetjänster** från kategorierna till vänster för att visa **Microsoft Azure Consumption Insights (beta)**. Välj **Anslut**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
@@ -42,7 +42,7 @@ Ange ditt *registreringsnummer* i dialogrutan.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
-* Du kan hämta ditt registreringsnummer från [Azure Enterprise Portal](https://ea.azure.com), på den plats som visas i följande bild.
+* Du kan hämta ditt registreringsnummer från [Azure Enterprise Portal](https://ea.azure.com), på den plats som visas i följande bild:
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
   
@@ -61,7 +61,7 @@ När du har angett din *åtkomstnyckeln* och valt **Anslut**, visas fönstret **
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
 
 > [!NOTE]
-> Tabellerna *Sammanfattning och *Prisdokument* är bara tillgängliga för API-nycklar på registreringsnivå. Som standard har data i dessa tabeller dessutom den aktuella månadens data för *Användning* och *Prisdokument*. Tabellerna *Sammanfattning* och *MarketPlace* är inte begränsade till den aktuella månaden.
+> Tabellerna *Sammanfattning* och *Prisdokument* är bara tillgängliga för API-nycklar på registreringsnivå. Som standard har data i dessa tabeller dessutom den aktuella månadens data för *Användning* och *Prisdokument*. Tabellerna *Sammanfattning* och *MarketPlace* är inte begränsade till den aktuella månaden.
 > 
 > 
 
@@ -84,16 +84,16 @@ I **formelfältet** skriver du följande:
 
     = MicrosoftAzureConsumptionInsights.Contents
 
-En samling exempel visas enligt följande bild.
+En samling exempel visas enligt följande bild:
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
 När du arbetar med rapporter och skapa frågor kan du använda följande:
 
-* Om du vill definiera antalet månader från dagens datum använder du *noOfMonths*
+* Om du vill definiera antalet månader från dagens datum använder du *numberOfMonth*
   * Använd ett värde mellan ett och 36 som representerar antalet månader från dagens datum som du vill importera. Vi rekommenderar att du hämtar max tolv månaders data för att undvika tröskelvärden med importbegränsningar och tillåten datavolym för frågor i Power BI.
 * Om du vill definiera månader i ett historikfönster väljer du *startBillingDataWindow* och *endBillingDataWindow*
-* Använd *inte* *noOfMonths* tillsammans med *startBillingDataWindow* eller *endBillingDataWindow*
+* Använd *inte* *numberOfMonth* tillsammans med *startBillingDataWindow* eller *endBillingDataWindow*
 
 ## <a name="migrating-from-the-azure-enterprise-connector"></a>Migrera från Azure Enterprise Connector
 Vissa kunder har skapat visuella objekt med hjälp av *Azure Enterprise Connector (beta)* som snart kommer att upphöra och ersätts av anslutningsappen **Azure Consumption Insights**. Anslutningsappen **Azure Consumption Insights** har bland annat följande funktioner och förbättringar:
@@ -108,7 +108,7 @@ För att hjälpa kunder att övergå till den nya anslutningsappen **Azure Consu
 Det första steget är att ansluta med anslutningsappen **Azure Consumption Insights** som beskrevs i detalj tidigare i den här artikeln. Nästa steg är att välja **Hämta data > Tom fråga** från menyfliksområdet **Start** i **Power BI Desktop**.
 
 ### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Steg 2: Använd Avancerad redigerare för att skapa en fråga
-I **Frågeredigeraren** väljer du **Avancerad redigerare** från området **Fråga** i menyfliksområdet **Start**. I fönstret **Avancerad redigerare** som visas anger du följande fråga.
+I **Frågeredigeraren** väljer du **Avancerad redigerare** från området **Fråga** i menyfliksområdet **Start**. I fönstret **Avancerad redigerare** som visas anger du följande fråga:
 
     let    
         enrollmentNumber = "100",
@@ -121,17 +121,17 @@ I **Frågeredigeraren** väljer du **Avancerad redigerare** från området **Fr�
 
 Naturligtvis måste du ersätta värdet för *enrollmentNumber* med ditt egen registreringsnummer som du kan hämta från [Azure Enterprise Portal](https://ea.azure.com). Parametern *numberOfMonth* är antalet månaders data du vill hämta räknat från dagens datum. Använd noll (0) för den aktuella månaden.
 
-När du har valt **Klar** i fönstret **Avancerad redigerare** uppdateras förhandsgranskningen och data från det valda månadsintervallet visas i tabellen. Välj **Stäng & tillämpa** och gå tillbaka.
+När du har valt **Klar** i fönstret **Avancerad redigerare** uppdateras förhandsgranskningen, och data från det valda månadsintervallet visas i tabellen. Välj **Stäng & tillämpa** och gå tillbaka.
 
 ### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Steg 3: Flytta mått och anpassade kolumner till den nya rapporten
 Därefter måste du flytta eventuella anpassade kolumner eller mått som du skapade i den nya informationstabellen. Gör så här:
 
 1. Öppna Anteckningar (eller något annat textredigeringsprogram).
-2. Välj det mått som du vill flytta och kopiera text från fältet *Formel* och placera den i anteckningar.
+2. Välj det mått som du vill flytta, kopiera text från fältet *Formel* och placera den i anteckningar.
    
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Byt namn på *Fråga1* till ursprungliga informationstabellens namn.
-4. Skapa nya åtgärder och anpassade kolumner i tabellen genom att högerklicka på tabellen och välja **Nytt mått**. Klipp och klistra in din mått och kolumner från din datalagring tills du är klar.
+4. Skapa nya åtgärder och anpassade kolumner i tabellen genom att högerklicka på tabellen och välja **Nytt mått**. Klipp och klistra in dina lagrade mått och kolumner tills du är klar.
 
 ### <a name="step-4-re-link-tables-that-had-relationships"></a>Steg 4: Länka tabeller med relationer
 Många instrumentpaneler har ytterligare tabeller som används för sökning och filtrering, till exempel datumtabeller eller tabeller som används för anpassade projekt. Du kan lösa merparten av återstående problem genom att återupprätta dessa relationer. Gör så här.

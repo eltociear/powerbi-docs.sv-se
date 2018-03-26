@@ -1,48 +1,45 @@
 ---
 title: 'Snabbstart: Installera Power BI-rapportserver'
-description: "Det går mycket snabbt att installera Power BI-rapportservern. Att hämta, installera och konfigurera tar bara några minuter."
+description: Det går mycket snabbt att installera Power BI-rapportservern. Att hämta, installera och konfigurera tar bara några minuter.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/29/2018
-ms.author: maghan
-ms.openlocfilehash: 3ddf8870fd4fb3186ff884220fc4a7de7632c78d
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 03/19/2018
+ms.author: maggies
+ms.openlocfilehash: 625864384f73260ec0f62b74ff9a95e966289da0
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="quickstart-install-power-bi-report-server"></a>Snabbstart: Installera Power BI-rapportserver
 Det går mycket snabbt att installera Power BI-rapportservern. Att hämta, installera och konfigurera tar bara några minuter.
 
 Det här är en snabbtitt på hur du installerar en rapportserver om du bara vill komma igång och köra en ny server. Mer detaljerad information om hur du installerar rapportservern finns i [Installera Power BI-rapportserver](install-report-server.md).
 
- **Hämta** ![hämta](media/quickstart-install-report-server/download.png "hämta")
-
-Om du vill hämta Power BI-rapportservern, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). 
-
-Gå till Microsoft Download Center för att hämta [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (optimerad för Power BI-rapportserver – oktober 2017).
-
-![tips](media/quickstart-install-report-server/fyi-tip.png "tips") För aktuell viktig information, se [Power BI-rapportserver – viktig information](release-notes.md).
+## <a name="video-install-power-bi-report-server"></a>Video: Installera Power BI-rapportserver
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="before-you-begin"></a>Innan du börjar
-Innan du installerar Power BI-rapportservern, bör du granska [maskin- och programvarukraven för att installera Power BI-rapportservern](system-requirements.md).
+Innan du installerar Power BI-rapportservern rekommenderar vi att du granskar [maskin- och programvarukraven för att installera Power BI-rapportservern](system-requirements.md).
 
 ## <a name="step-1-download"></a>Steg 1: Ladda ned
-Ladda ned installationsfilerna för Power BI-rapportservern lokalt. För att ladda ned Power BI-rapportservern går du till [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=839351).
+
+Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerad för Power BI-rapportservern går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) och väljer **Ladda ned kostnadsfri utvärderingsversion**.
+
+Följ instruktionerna för att ladda ned installationsfilerna lokalt för Power BI-rapportservern. 
 
 ![Hämta Power BI-rapportserver](media/quickstart-install-report-server/download-pbireportserver.png)
 

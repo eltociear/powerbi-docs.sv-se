@@ -1,34 +1,32 @@
 ---
 title: Nyheter i Power BI-rapportserver
-description: "Läs mer om nyheterna i Power BI-rapportserver. Detta omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps."
+description: Läs mer om nyheterna i Power BI-rapportserver. Detta omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/31/2017
-ms.author: maghan
-ms.openlocfilehash: 2ac4efa4e1eff5099fa3732b0fa753b04941979e
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 03/19/2018
+ms.author: maggies
+ms.openlocfilehash: 4f149baccf551762589c17bd6d6ba17c36f4da37
+ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 Läs mer om nyheterna i Power BI-rapportserver. Detta omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
 
 Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
-
-![tips](media/whats-new/fyi-tip.png "tips") Aktuell viktig information finns i [Power BI-rapportserver – viktig information](release-notes.md).
 
 Relaterad information om nyheter finns i:
 
@@ -37,6 +35,103 @@ Relaterad information om nyheter finns i:
 * [Nyheter i mobilapparna för Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 * [Power BI-teamets blogg](https://powerbi.microsoft.com/blog/)
 
+## <a name="march-2018-release"></a>Mars 2018
+
+I mars 2018 har många nya funktioner lagts till i versionen av Power BI Desktop som är optimerad för Power BI-rapportservern. Här visas funktionerna indelade efter område: 
+- [Visuella objekt](#visuals-updates)
+- [Rapportering](#reporting)
+- [Analys](#analytics)
+- [Prestanda](#performance)
+- [Rapportserver](#report-server)
+- [Övrigt](#other-improvements)
+
+### <a name="highlights-of-this-release"></a>Höjdpunkter i den här versionen
+
+I den långa listan över nya funktioner är dessa särskilt intressanta.
+
+#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Regelbaserad villkorsstyrd formatering för tabeller och matriser](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+ 
+Skapa regler för att villkorligt ange färg på bakgrunden eller teckenfärg för en kolumn baserat på särskild affärslogik i din tabell eller matris.
+
+#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Visa och dölja sidor](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+
+Du kanske vill att läsarna ska ha åtkomst till din rapport, men vissa av sidorna är inte riktigt klara. Nu kan du dölja dem tills du är färdig med dem. Eller så kan du dölja sidor från den normala navigeringen och låta läsarna navigera till dem via bokmärken eller genom att visa mer detaljerad information.
+
+#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Skapa bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+
+Du kan använda bokmärken för att skapa en berättelse med data i din rapport.
+
+- [Korsmarkering för bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bokmärken sparar och visar det korsmarkerade tillståndet för rapportsidan vid tidpunkten då du skapade bokmärket.
+- [Ökad flexiblitet för bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bokmärken återspeglar egenskaperna du anger i din rapport, och påverkar endast de visuella objekt som du väljer.
+
+#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Välja flera datapunkter över flera diagram](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+
+Välj flera datapunkter i flera diagram och tillämpa korsfiltrering på hela sidan.
+
+#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Synkronisera utsnitt över flera sidor i en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+
+Ett utsnitt kan tillämpas på en, två eller fler sidor i en rapport.
+
+#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Snabbmått](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+
+Skapa nya mått baserat på befintliga mått och numeriska kolumner i en tabell.
+
+#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[Vid visning av detaljerad information filtreras andra visuella objekt](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+
+När du visar mer detaljerad information i en viss kategori i ett visuellt objekt kan du låta alla visuella objekt på sidan filtreras på samma kategori.
+
+### <a name="visuals-updates"></a>Uppdateringar av visuella objekt
+
+- [Celljustering för tabeller och matriser](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#alignment)
+- [Visningsenheter och precisionskontroll för tabell- och matriskolumner](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits)
+- [Spill av dataetiketter för visualiseringar för fält- och kolumndiagram](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow)
+- [Kontrollera bakgrundsfärg för dataetiketter för kartesisk visuell information och visuell information för kartor](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground)
+- [Utfyllnadskontroll för fält/kolumn](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding)
+- [Öka området som används för axeletiketter i diagram](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize)
+- [Punktdiagram från x- och y-axelgrupperingar](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart)
+- [Högdensitetssampling för kartor baserat på latitud och longitud](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#highDensityMaps)
+- [Dynamiska utsnitt](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#responsive)
+- [Lägga till ett ankardatum för ett relativt datumutsnitt](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate)
+
+### <a name="reporting"></a>Rapportering
+
+- [Inaktivera sidhuvudet för visuella objekt i läsläge för en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader)
+- [Rapportalternativ för långsamma datakällor](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource)
+- [Förbättrad standardplacering av visuella objekt](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement)
+- [Styra sorteringen av visuella objekt med markeringsfönstret](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#selectionPane)
+- [Låsa objekt i rapporten](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#lock)
+- [Sök formaterings- och analysfönster](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
+- [Rutan fältegenskaper och fältbeskrivningar](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
+
+### <a name="analytics"></a>Analytics
+
+- [UTCNOW() och UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
+- [Markera anpassad datumtabell](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
+- [Detaljgranska andra visuella objekt](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+- [Formatering på cellnivå för flerdimensionella AS-modeller för flerradskort](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting)
+ 
+### <a name="performance"></a>Prestanda
+
+- [Prestandaförbättringar för filtrering](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering)
+- [Prestandaförbättringar för DirectQuery](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf)
+- [Prestandaförbättringar för öppna och spara](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf)
+- [Förbättringar av “visa objekt utan data”](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData)
+ 
+### <a name="report-server"></a>Rapportserver 
+
+#### <a name="export-to-accessible-pdf"></a>Exportera till tillgänglig PDF
+
+När du exporterar en sidnumrerad rapport till PDF kan du nu exportera till en tillgänglig/taggad PDF-fil. Den är större men enklare för skärmläsare och andra hjälpmedel att läsa och navigera. Du aktiverar tillgänglig PDF genom att ange enhetsinformationsinställningen **AccessiblePDF** till **True**. Se [Enhetsinformationsinställningar för PDF](https://docs.microsoft.com/sql/reporting-services/pdf-device-information-settings) och [Ändra enhetsinformationsinställningar](https://docs.microsoft.com/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
+
+
+### <a name="other-improvements"></a>Övriga förbättringar
+
+- [Förbättringar av Lägg till kolumn från exempel](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples)
+- [Snabblänk för konsulttjänster](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#consultingServices)
+- [Förbättrad felrapportering](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors)
+- [Visa tidigare fel som har inträffat](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors)
+
+ 
 ## <a name="october-2017-release"></a>Version oktober 2017
 ### <a name="power-bi-report-data-sources"></a>Rapportdatakällor i Power BI
 Power BI-rapporterna i Power BI-rapportserver kan ansluta till en mängd olika datakällor. Du kan importera data och schemalägga datauppdateringar, eller fråga efter det direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services. Se listan med datakällor som stöder schemalagd uppdatering och de som stöder DirectQuery i ”Power BI:s rapportdatakällor i Power BI-rapportserver”.
@@ -111,7 +206,6 @@ Power BI-rapportserver har nu stöd för den nya Power BI-tabellen och visuella 
 * Förbättrat samarbete i rapporter med kommentarer
 
 ## <a name="next-steps"></a>Nästa steg
-[Viktig information om Power BI-rapportserver](release-notes.md)  
 [Användarhandbok](user-handbook-overview.md)  
 [Handbok för administratör](admin-handbook-overview.md)  
 [Snabbstart: Installera Power BI-rapportserver](quickstart-install-report-server.md)  

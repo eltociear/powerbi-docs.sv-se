@@ -1,16 +1,16 @@
 ---
 title: Certifierade anpassade visualiseringar i Power BI
-description: "Krav och processer för att skicka en visualisering för certifiering. Och en lista över redan certifierad anpassad visuell information."
+description: Krav och processer för att skicka en visualisering för certifiering. Och en lista över redan certifierad anpassad visuell information.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: cc50e4e8830aca3951da6004b8ada3913aff28ed
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: d768756c8c7ede792c547f03779396f11e6e4f85
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="getting-a-custom-visual-certified"></a>Få anpassade visuella objekt *certifierade*
 ## <a name="what-is-meant-by-certified"></a>Vad menas med begreppet *certifierad*?
@@ -60,7 +60,6 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Lista över certifierade visuella objekt
 | Länk till AppSource | Länk till video |
 | --- | --- |
-| [Association Rules](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380815) | |
 | [Aster-punktdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft-kalender](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie-diagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |
@@ -77,11 +76,7 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Chord](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380761) | [Video](https://youtu.be/AQvd2FhRyCI) |
 | [Cirkelmätare från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380837) | [Video](https://youtu.be/9NHXALkBXuY) |
 | [Klusterkarta](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380806) | |
-| [Klustring](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380861) | |
-| [Klustring med extremvärden](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380889) | |
-| [Korrelationsrityta](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380814) | |
 | [Cirkelmätare från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380874) | [Video](https://youtu.be/DgdoWi7Gcxo) |
-| [Beslutsträddiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380817) | |
 | [Radiell mätare](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381184) | |
 | [Punktritning](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380760) | |
 | [Punktdiagram från OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380949) | [Video](https://youtu.be/By16pX9KT40) |
@@ -97,8 +92,6 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Enlighten Stack Shuffle](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380849) | |
 | [Enlighten-våffeldiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380850) | |
 | [Force-Directed-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380764) | [Video](https://youtu.be/YsTa7uyJ4sg) |
-| [Prognosticering av TBATS](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381326) | |
-| [Prognosticering med ARIMA](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380888) | |
 | [Tratt med källa från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381334) | [Video](https://youtu.be/R_EcimsLI8U) |
 | [Gantt](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380765) | [Video](https://youtu.be/qJ7s_KrGiUU) |
 | [Gantt-diagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381364) | [Video](https://youtu.be/vJLV9JRCpI8) |
@@ -119,6 +112,7 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Uppspelningsaxel (dynamiskt utsnitt)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |
 | [Power KPI-matris](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381299) | [Video](https://youtu.be/1enze8pcGzY) |
+| [Pulsdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381006) | [Video](https://youtu.be/DQWdcQtjDVw) |
 | [Kvadrantdiagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381011) | [Video](https://youtu.be/ppBnyhqWNC0) |
 | [Polärdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380771) | |
 | [Ringdiagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824) | [Video](https://youtu.be/pDToHDFHnq8) |
@@ -127,7 +121,6 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Rullningsdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381018) | |
 | [Smart Filter från SQLBI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380859) | [Video](https://youtu.be/gcJsDDRQq28) |
 | [Miniatyrdiagram från OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380910) | [Video](https://youtu.be/0m3Vnvso9tY) |
-| [Spline-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380860) | |
 | [Stream-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380772) | |
 | [Solstråle](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380767) | |
 | [Termisk tabellkarta](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380818) | |
@@ -135,8 +128,6 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Textfilter](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |
 | [Text Wrapper från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826) | |
 | [Termometer](https://appsource.microsoft.com/en-us/product/office/WA104379807) | |
-| [Tidsseriefördelningsdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380897) | |
-| [Prognosticeringsdiagram för tidsserier](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380816) | |
 | [Tidslinjeutsnitt](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380786) | [Video](https://youtu.be/ozMtZ4_NZ10) |
 | [Storm-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380768) | [Video](https://www.youtube.com/watch?v=AQvd2FhRyCI) |
 | [Handelsdiagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380823) | [Video](https://youtu.be/xhTR6y6J9Ko) |

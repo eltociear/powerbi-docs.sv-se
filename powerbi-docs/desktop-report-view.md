@@ -2,14 +2,14 @@
 title: Rapportvy i Power BI Desktop
 description: Rapportvy i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e68a819325e601f869b34c4ccbe3e873fe9408b3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: af10699ea30b9d8e8dd8e3495860c43387a7e0be
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Rapportvy i Power BI Desktop
 Om du har arbetat med Power BI, vet du hur enkelt det är att skapa rapporter som ger dynamisk perspektiv och insikter om dina data. Power BI har också fler avancerade funktioner i Power BI Desktop. Du kan använda Power BI Desktop för att skapa avancerade frågor, blandade data från flera källor, skapa relationer mellan tabeller och mycket mer.
@@ -44,7 +44,7 @@ När du har lagt till vissa data kan du lägga till fält i ett nytt visuellt ob
 
 ![](media/desktop-report-view/pbid_reportview_addvis.gif)
 
-Om du vill ändra typen av visualisering, kan du välja detta från gruppen **Visuella objekt** i menyfliksområdet eller högerklicka och välja en annan från ikonen **Ändra typen av visualisering**.
+Om du vill ändra typen av visualisering, kan du välja detta från gruppen **Visuella objekt** i menyfliksområdet eller högerklicka och välja en annan typ från ikonen **Ändra typen av visualisering**.
 
 ![](media/desktop-report-view/pbid_reportview_changevis.gif)
 
@@ -53,7 +53,7 @@ Om du vill ändra typen av visualisering, kan du välja detta från gruppen **Vi
 > 
 > 
 
-En rapport har minst en tom sida från början. Sidor visas i fönstret navigator till vänster om arbetsytan. Du kan lägga till alla typer av grafik på en sida, men det är viktigt att inte överdriva. För många visuella objekt på en sida gör det svårt att hitta rätt information. Du kan lägga till nya sidor i rapporten, klicka bara på **Ny sida** i menyfliksområdet.
+En rapport har minst en tom sida från början. Sidor visas i fönstret navigator till vänster om arbetsytan. Du kan lägga till alla typer av grafik på en sida, men det är viktigt att inte överdriva. För många visuella objekt på en sida gör det svårt att hitta rätt information. Du kan lägga till nya sidor i rapporten. Klicka bara på **Ny sida** i menyfliksområdet.
 
 ![](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
