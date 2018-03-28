@@ -1,15 +1,15 @@
 ---
-title: "Använda rapportteman i Power BI Desktop (förhandsversion)"
-description: "Lär dig hur du använder en anpassad färgpalett och tillämpar den på hela rapporten i Power BI Desktop"
+title: Använda rapportteman i Power BI Desktop (förhandsversion)
+description: Lär dig hur du använder en anpassad färgpalett och tillämpar den på hela rapporten i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8893e9f048f10f2c9c4d5bf787382b7cf65f54a9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9161966897811820935c72ac1657ceca58da403a
+ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Använda rapportteman i Power BI Desktop (förhandsversion)
 Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda i en rapport. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat (några undantag finns och de beskrivs längre fram i den här artikeln).
@@ -163,7 +163,7 @@ Om du vill skapa en JSON-fil med ett utökat format och mer detaljerad kontroll 
         }
     }
 
-I avsnitten **visualName** och **cardName** kan du ange ett specifikt visuellt objekt och cardName, eller så kan du använda en asterisk (”*”) om du vill att inställningen ska användas på alla visuella objekt eller alla kort som innehåller en egenskap för det specifika visuella objektet. Du kan använda asterisken (”*”) när du vill tillämpa en inställning globalt i rapporten, t.ex. en teckenstorlek eller specifik teckensnittsfamilj som ska användas i alla visuella objekt i rapporten.
+I avsnitten **visualName** och **cardName** kan du ange ett specifikt visuellt objekt och cardName, eller så kan du använda en asterisk (”\*”) om du vill att inställningen ska användas på alla visuella objekt eller alla kort som innehåller en egenskap för det specifika visuella objektet. Du kan använda asterisken (”\*”) när du vill tillämpa en inställning globalt i rapporten, t.ex. en teckenstorlek eller specifik teckensnittsfamilj som ska användas i alla visuella objekt i rapporten.
 
 > [!NOTE]
 > Du behöver bara ange de formateringselement som du vill påverka. De formateringselement som inte ingår i JSON-filen återgår helt enkelt till sina standardvärden och inställningar.
