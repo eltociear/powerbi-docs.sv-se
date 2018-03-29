@@ -668,8 +668,8 @@
           href: desktop-ssas-multidimensional.md
         - name: Ansluta till CSV-filer i Power BI Desktop
           href: desktop-connect-csv.md
-        - name: Ansluta till Adobe Analytics i Power BI Desktop (förhandsversion)
-          href: desktop-connect-csv.md
+        - name: Anslut till Adobe Analytics i Power BI Desktop
+          href: desktop-connect-adobe-analytics.md
         - name: Anslut till en Impala-databas i Power BI Desktop
           href: desktop-connect-impala.md
         - name: Ansluta till en OData-feed i Power BI Desktop
@@ -960,6 +960,8 @@
           href: developer/integrate-report.md
         - name: Integrera innehåll i ditt program (appen äger data)
           href: developer/embed-sample-for-customers.md
+        - name: Bädda in Power BI-innehåll i ett program för dina kunder för nationella moln
+          href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Bädda in anpassade layouter i en app
           href: developer/embedded-custom-layout.md
         - name: Skapa en Azure Active Directory-klient
