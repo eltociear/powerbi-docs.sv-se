@@ -1,15 +1,15 @@
 ---
-title: "Power BI-säkerhet"
-description: "Power BI-säkerhet. Hur Power BI fungerar i förhållande till Azure Active Directory och andra Azure-tjänster. Det här avsnittet innehåller också en länk till ett dokument med mer information."
+title: Power BI-säkerhet
+description: Power BI-säkerhet. Hur Power BI fungerar i förhållande till Azure Active Directory och andra Azure-tjänster. Det här avsnittet innehåller också en länk till ett dokument med mer information.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: erikri
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: 50bb742958f5cc9152231f14d176033b328a8976
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7db593cdac44bb3549023127a5250776cd6d57b7
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 En detaljerad förklaring av Power BI-säkerheten får du om du [laddar ned white paper-dokumentet om Power BI-säkerhet](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -64,5 +64,5 @@ Mer information finns i [Microsofts Säkerhetscenter](https://www.microsoft.com/
 
 Enligt vad som tidigare beskrevs i den här artikeln används en användares Power BI-inloggning av lokala Active Directory-servrar till att mappa till ett UPN för autentiseringsuppgifter. Det är dock **viktigt** att notera att användarna ansvarar för de data som de delar: Om en användare ansluter till datakällor med sina autentiseringsuppgifter och sedan delar en rapport (eller instrumentpanel eller datauppsättning) baserat på dessa data, autentiseras inte användarna som den instrumentpanelen delas med mot den ursprungliga datakällan och de kommer att beviljas åtkomst till rapporten.
 
-Ett undantag är anslutningar till **SQL Server Analysis Services** med hjälp av den **lokala datagatewayen**. Instrumentpaneler cachelagras i Power BI, men åtkomsten till underliggande rapporter eller datauppsättningar kräver autentisering för den användare som försöker få åtkomst till rapporten (eller datauppsättningen) och åtkomst beviljas enbart om användaren har tillräcklig behörighet för att få åtkomst till datan. Mer information finns i [Djupdykning i den lokala datagatewayen](service-gateway-onprem-indepth.md).
+Ett undantag är anslutningar till **SQL Server Analysis Services** med hjälp av den **lokala datagatewayen**. Instrumentpaneler cachelagras i Power BI, men åtkomsten till underliggande rapporter eller datauppsättningar kräver autentisering för den användare som försöker få åtkomst till rapporten (eller datauppsättningen) och åtkomst beviljas enbart om användaren har tillräcklig behörighet för att få åtkomst till dessa data. Mer information finns i [Djupdykning i den lokala datagatewayen](service-gateway-onprem-indepth.md).
 

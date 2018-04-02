@@ -1,15 +1,15 @@
 ---
-title: "Använda DirectQuery i Power BI Desktop"
-description: "Använd DirectQuery, även kallat en live-anslutning i Power BI Desktop"
+title: Använda DirectQuery i Power BI Desktop
+description: Använd DirectQuery, även kallat en live-anslutning i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/25/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: df45bbaa142b2c476a6391b1c43638e1ee76c3ae
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 83726531a3ef82f59efb6e12c0ea0dbcd4bf5d7c
+ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -62,7 +62,7 @@ Det finns några begränsningar med att använda **DirectQuery**:
 * Som standard är DAX-uttryck begränsade för mått. Se följande stycke (efter punktlistan) för mer information
 * Det finns en begränsning på 1 miljon rader för att returnera data när du använder **DirectQuery**. Detta påverkar inte aggregeringar och beräkningar som används för att skapa datauppsättningen som returneras med **DirectQuery**, utan endast rader returneras. Du kan till exempel sammanställa 10 miljoner rader med din fråga som körs på datakällan och korrekt returnerar resultat som aggregeringar till Power BI med hjälp av **DirectQuery** så länge data som returneras till Power BI är mindre än 1 miljon rader. Om mer än 1 miljoner rader ska returneras från **DirectQuery** returnerar Power BI ett fel.
 
-För att säkerställa att frågor som skickats till den underliggande datakällan har acceptabel prestanda, gäller begränsningar för mått som standard. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar**, följt av **Inställningar > Alternativ > DirectQuery** och därefter alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
+För att säkerställa att frågor som skickats till den underliggande datakällan har acceptabel prestanda, gäller begränsningar för mått som standard. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **DirectQuery**, följt av alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
 
 ## <a name="important-considerations-when-using-directquery"></a>Att tänka på när du använder DirectQuery
 Följande tre punkter ska beaktas när du använder **DirectQuery**:
@@ -77,7 +77,7 @@ Följande tre punkter ska beaktas när du använder **DirectQuery**:
       the maximum allowed size of '1000000' rows.
   
   Den här situationen kan uppstå med ett enkelt diagram som innehåller en mycket hög kardinalitet-kolumn med aggregeringsalternativet inställt på *Sammanfatta inte*. Visuella objekt behöver endast ha kolumner med en kardinalitet under 1 miljon och behöver tillämpa lämpliga filter.
-* **Säkerhet** -alla användare som använder en publicerad rapport ansluter till serverdelskällan med de autentiseringsuppgifter som angetts efter publikationen till Power BI-tjänsten. Samma gäller för data som importeras: alla användare ser samma data, oavsett eventuella säkerhetsregler som definierats i serverdelskällan. Kunder som vill ha säkerhet per användare implementerar med DirectQuery-källor och använder RLS. [Läs mer om RLS](service-admin-rls.md).
+* **Säkerhet** -alla användare som använder en publicerad rapport ansluter till serverdelskällan med de autentiseringsuppgifter som angetts efter publikationen till Power BI-tjänsten. Samma gäller för data som importeras: alla användare ser samma data, oavsett eventuella säkerhetsregler som definierats i serverdelskällan. Kunder som vill ha säkerhet per användare implementerat med DirectQuery-källor bör använda RLS. [Läs mer om RLS](service-admin-rls.md).
 * **Funktioner som stöds** -det är inte alla funktioner i **Power BI Desktop** som stöds i **DirectQuery**-läge eller har vissa begränsningar. Dessutom finns vissa funktioner i Power BI-tjänsten (t.ex. *snabba insikter*) som inte är tillgängliga för användning med datauppsättningar i **DirectQuery**. Således ska begränsningen av dessa funktioner när du använder **DirectQuery** beaktas när du bestämmer om du vill använda **DirectQuery**.   
 
 ## <a name="publish-to-the-power-bi-service"></a>Registrera dig på Power BI-tjänsten

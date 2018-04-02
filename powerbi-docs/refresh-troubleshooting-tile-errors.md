@@ -1,15 +1,15 @@
 ---
-title: "Felsök panelfel"
-description: "Vanliga fel som kan uppstå när en panel försöker uppdatera"
+title: Felsök panelfel
+description: Vanliga fel som kan uppstå när en panel försöker uppdatera
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 26f92ee511b3a03f8e08aae0a33bb6f60c12908b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0901860a190e29489b9c940231607d9fc63109ab
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting-tile-errors"></a>Felsök panelfel
 Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklaring.
@@ -70,7 +70,7 @@ Detta är vanligtvis ett övergående problem. Kontakta supporten om du försök
 Om du fortfarande har problem, kan du [kontakta supporten](https://support.powerbi.com) för att undersöka vidare.
 
 ## <a name="next-steps"></a>Nästa steg
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsök den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Felsök den personliga Power BI-gatewayen](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

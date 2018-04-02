@@ -1,15 +1,15 @@
 ---
-title: "Felsöka uppdateringsscenarier"
-description: "Felsöka uppdateringsscenarier"
+title: Felsöka uppdateringsscenarier
+description: Felsöka uppdateringsscenarier
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: d6b9e5e69de7b2027c4799f15c11cbb0626e1507
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d94e25b78edef2aefaa5e63c788e5f11dc948791
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Felsöka uppdateringsscenarier
 Här hittar du information om olika scenarier som du kan stöta på när du uppdaterar data i Power BI-tjänsten.
@@ -67,7 +67,7 @@ Tidsgränsen för schemalagd uppdatering för importerade datauppsättningar är
 
 ## <a name="next-steps"></a>Nästa steg
 [Datauppdatering](refresh-data.md)  
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

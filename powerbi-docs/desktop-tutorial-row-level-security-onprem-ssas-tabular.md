@@ -1,15 +1,15 @@
 ---
-title: "Självstudie: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell i Power BI"
-description: "Självstudie: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell"
+title: 'Självstudie: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell i Power BI'
+description: 'Självstudie: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: selvarms
 manager: amitaro
 backup: davidi
 editor: davidi
-tags: 
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 67b347be9974605156d02cbbf179126c68ae91e8
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 34ad1c6568dfd73dc65d561e4fed7bf8c4c63fbc
+ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tutorial-dynamic-row-level-security-with-analysis-services-tabular-model"></a>Självstudie: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
 Den här självstudien visar de steg som krävs för att implementera **säkerhet på radnivå** inom din **Analysis Services-tabellmodell** samt hur du använder den i en Power BI-rapport. Stegen i den här självstudien har utformats så att du kan följa med och lära dig de steg som krävs genom att slutföra en samplingsdatauppsättning.
@@ -38,15 +38,15 @@ Under självstudien beskrivs följande steg i detalj, vilket hjälper dig att f�
 * Skapa en ny instrumentpanel som baseras på rapporten och slutligen,
 * Dela instrumentpanelen med dina medarbetare
 
-För att följa stegen i den här självstudien behöver du databasen **AdventureworksDW2012**, som du kan hämta **[här.](http://msftdbprodsamples.codeplex.com/releases/view/55330)**
+För att följa stegen i den här självstudien behöver du databasen **AdventureworksDW2012**, som du kan hämta från **[lagringsplatsen](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)**.
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Uppgift 1: Skapa användarens säkerhetstabell och definiera datarelationen
-Det finns många publicerade artiklar som beskriver hur du definierar dynamisk säkerhet på radnivå med **SQL Server Analysis Services (SSAS) tabell**modell. [I vårt exempel följer vi den här artikeln.](https://msdn.microsoft.com/library/hh479759.aspx) Följande steg vägleder dig genom den första aktiviteten i självstudien.
+Det finns många publicerade artiklar som beskriver hur du definierar dynamisk säkerhet på radnivå med **SQL Server Analysis Services (SSAS) tabell**modell. I vårt exempel följer vi artikeln [Implement Dynamic Security by Using Row Filters](https://msdn.microsoft.com/library/hh479759.aspx) (Implementera dynamisk säkerhet med hjälp av radfilter). Följande steg vägleder dig genom den första aktiviteten i självstudien:
 
 1. I vårt exempel använder vi relationsdatabasen **AdventureworksDW2012**. I databasen skapar du tabellen **DimUserSecurity**, enligt följande bild. I det här exemplet använder vi SQL Server Management Studio (SSMS) till att skapa tabellen.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable.png)
-2. När tabellen har skapats och sparats måste vi skapa relationen mellan **DimUserSecurity**-tabellens **SalesTerritoryID**-kolumn och **DimSalesTerritory**-tabellens **SalesTerritoryKey**-kolumn, enligt följande bild. Detta kan göras från **SSMS** genom att högerklicka på tabellen **DimUserSecurity** och välja **Redigera**.
+2. När tabellen har skapats och sparats måste vi skapa relationen mellan **DimUserSecurity**-tabellens **SalesTerritoryID**-kolumn och **DimSalesTerritory**-tabellens **SalesTerritoryKey**-kolumn, enligt följande bild. Detta kan göras från **SSMS** genom att högerklicka på tabellen **DimUserSecurity** och välja **Design**. Välj sedan **Tabelldesigner -> Relationer...** på menyn.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
 3. Spara tabellen och lägg sedan till några rader med användarinformation i tabellen genom att högerklicka igen på **DimUserSecurity**-tabellen och sedan välja **Redigera de översta 200 raderna**. När du har lagt till användarna kommer raderna i tabellen **DimUserSecurity** se ut som i följande bild:
@@ -56,13 +56,13 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
    Vi återkommer till dessa användare i senare uppgifter.
 4. Därefter gör vi en *inre koppling* med **DimSalesTerritory**-tabellen, vilket visar regionsinformationen som är associerad med användaren. Följande kod utför den *inre kopplingen* och bilden nedan visar tabellen när den *inre kopplingen* är klar.
    
-       **select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeKey, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryKey]**
+       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryID]
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Observera att bilden ovan visar information som till exempel vilken användare som är ansvarig de olika försäljningsregionerna. Den informationen visas på grund av relationen som vi skapade i **steg 2**. Observera också att användaren **Jon Doe ingår i Australiens försäljningsregion**. Vi kommer tillbaka till Jon Doe i kommande steg och uppgifter.
 
 ## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Uppgift 2: Skapa tabellmodellen med fakta- och dimensionstabeller
-1. När ditt relationsinformationslager finns på plats är det dags att definiera tabellmodellen. Modellen kan skapas med **SQL Server Data Tools (SSDT)**. Om du vill ha mer information om hur du definierar en tabellmodell kan du läsa mer i [den här artikeln](https://msdn.microsoft.com/library/hh231689.aspx).
+1. När ditt relationsinformationslager finns på plats är det dags att definiera tabellmodellen. Modellen kan skapas med **SQL Server Data Tools (SSDT)**. Om du vill veta mer om hur du definierar en tabellmodell kan du läsa informationen i [Create a New Tabular Model Project](https://msdn.microsoft.com/library/hh231689.aspx) (Skapa ett nytt tabellmodellsprojekt).
 2. Importera alla nödvändiga tabeller till modellen enligt vad som visas nedan.
    
     ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/ssdt_model.png)
@@ -76,19 +76,20 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
 6. I det här steget ska vi använda funktionen **LOOKUPVALUE** till att returnera värden för en kolumn där Windows-användarnamnet är samma som användarnamnet som returneras av funktionen **USERNAME**. Frågorna kan sedan begränsas när värdena som returneras av **LOOKUPVALUE** matchar värden i samma eller en relaterad tabell. I kolumnen **DAX-filter** skriver du följande formel:
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
-7. I den här formeln returnerar funktionen **LOOKUPVALUE** alla värden för kolumnen **DimUserSecurity[SalesTerritoryID]** när **DimUserSecurity[UserName]** är samma som det aktuella inloggade Windows-användarnamnet och **DimUserSecurity[SalesTerritoryID]** är samma som **DimSalesTerritory[SalesTerritoryKey]**.
+    I den här formeln returnerar funktionen **LOOKUPVALUE** alla värden för kolumnen **DimUserSecurity[SalesTerritoryID]** när **DimUserSecurity[UserName]** är samma som det aktuella inloggade Windows-användarnamnet och **DimUserSecurity[SalesTerritoryID]** är samma som **DimSalesTerritory[SalesTerritoryKey]**.
    
    Uppsättningen för SalesTerritoryKey som returnerades av **LOOKUPVALUE** används sedan för att begränsa de rader som visas i **DimSalesTerritory**. Endast rader där **SalesTerritoryKey** för raden finns i uppsättningen med ID:n som returnerades av funktionen **LOOKUPVALUE** visas.
-8. Skriv följande formel för tabellen **DimUserSecurity** i kolumnen **DAX-filter**.
+8. Skriv följande formel för tabellen **DimUserSecurity** i kolumnen **DAX-filter**:
    
        =FALSE()
-9. Den här formeln anger att alla kolumner matchar det falska booleska villkoret, därför går det inte att fråga efter några kolumner för tabellen **DimUserSecurity**.
-10. Vi måste nu bearbeta och distribuera modellen. Du kan läsa [den här artikeln](https://msdn.microsoft.com/library/hh231693.aspx) om du behöver hjälp med att distribuera modellen.
+
+    Den här formeln anger att alla kolumner matchar det falska booleska villkoret, därför går det inte att fråga efter några kolumner för tabellen **DimUserSecurity**.
+1. Vi måste nu bearbeta och distribuera modellen. Du kan läsa [artikeln om Distribution](https://msdn.microsoft.com/library/hh231693.aspx) om du behöver hjälp med att distribuera modellen.
 
 ## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Uppgift 3: Lägga till datakällor i din lokala datagateway
 1. När din tabellmodell har distribuerats och är redo för användning, måste du lägga till en datakällsanslutning till din lokala Analysis Services-tabellserver i Power BI-portalen.
-2. För att kunna ge **Power BI-tjänsten** åtkomst till din lokala analystjänst, måste du ha en **[lokal datagateway](service-gateway-onprem.md)** installerad och konfigurerad i din miljö.
-3. När gatewayen är korrekt konfigurerad måste du skapa en datakällsanslutning för din **Analysis Services**-tabellinstans. Den här artikeln hjälper dig med att [lägga till datakällan i Power BI-portalen](service-gateway-enterprise-manage-ssas.md).
+2. För att kunna ge **Power BI-tjänsten** åtkomst till din lokala analystjänst måste du ha en **[lokal datagateway](service-gateway-onprem.md)** installerad och konfigurerad i din miljö.
+3. När gatewayen är korrekt konfigurerad måste du skapa en datakällsanslutning för din **Analysis Services**-tabellinstans. Den här artikeln hjälper dig med att [lägga till en datakälla i Power BI-portalen](service-gateway-enterprise-manage-ssas.md).
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)
 4. När det föregående steget är klart är gatewayen konfigurerad och redo att interagera med din lokala **Analysis Services**-datakälla.
@@ -98,15 +99,15 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
 2. I listan med datakällor väljer du **SQL Server Analysis Services-databas** och **Anslut**.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata.png)
-3. Fyll i informationen för **Analysis Services**-tabellinstansen och välj **Anslut live**. Välj OK. I **Power BI** fungerar dynamisk säkerhet enbart med en **live-anslutning**.
+3. Fyll i informationen för **Analysis Services**-tabellinstansen och välj **Anslut live**. Välj **OK**. I **Power BI** fungerar dynamisk säkerhet enbart med en **live-anslutning**.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata_connectlive.png)
-4. Du ser den modell som distribuerades i **Analysis Services**-instansen. Välj respektive modell och välj **OK**.
+4. Du ser att den modell som distribuerades finns i **Analysis Services**-instansen. Välj respektive modell och välj **OK**.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/getdata_connectlive.png)
 5. **Power BI Desktop** visar nu alla tillgängliga fält till höger om arbetsytan i fönstret **Fält**.
 6. I fönstret **Fält** till höger väljer du **SalesAmount**-måttet från **FactInternetSales**-tabellen och **SalesTerritoryRegion**-dimensionen från **SalesTerritory**-tabellen.
-7. Vi håller rapporten enkel, så nu ska vi inte lägga till flera kolumner. För att få en mer meningsfull återgivning av datan ska vi ändra visualiseringen till ett **ringdiagram**.
+7. Vi håller rapporten enkel, så nu ska vi inte lägga till flera kolumner. För att få en mer meningsfull återgivning av dessa data ska vi ändra visualiseringen till ett **ringdiagram**.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart.png)
 8. När rapporten är klar kan du publicera den direkt till Power BI-portalen. Välj **Publicera** i menyfliksområdet **Start** i **Power BI Desktop**.
@@ -165,8 +166,8 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
    ```
 
 ## <a name="considerations"></a>Att tänka på
-Det finns några saker att tänka på när du arbetar med säkerhet på radnivå, SSAS och Power BI.
+Det finns några saker att tänka på när du arbetar med säkerhet på radnivå, SSAS och Power BI:
 
 1. Lokal säkerhet på radnivå med Power BI är bara tillgänglig med en live-anslutning.
-2. Ändringar i data efter bearbetning av modellen blir omedelbart tillgängliga för användare som har åtkomst till rapporten med en **live-anslutning** från Power BI-tjänsten.
+2. Ändringar i data efter bearbetning av modellen blir omedelbart tillgängliga för användare (som har åtkomst till rapporten med en **live-anslutning**) från Power BI-tjänsten.
 
