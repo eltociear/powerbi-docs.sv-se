@@ -1,14 +1,14 @@
 ---
 title: Konfigurera schemalagd uppdatering
-description: "Detta beskrivs stegen för att välja en gateway och konfigurera schemalagd uppdatering."
+description: Detta beskrivs stegen för att välja en gateway och konfigurera schemalagd uppdatering.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: dec6b60b4dfddd9a4c55ee01cb7b9dc6b8c71cd3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: af8895b90b2f3315fb0cfd71351dbe65c108071e
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configuring-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 
@@ -123,7 +123,7 @@ Vissa datauppsättningar stöds för olika gatewayar för schemalagd uppdatering
 ## <a name="troubleshooting"></a>Felsökning
 Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problemet en gateway. Ta en titt på artiklarna för gatewayfelsökning där du hittar verktyg och information om kända problem.
 
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
 
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
@@ -131,7 +131,7 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problem
 [Datauppdatering i Power BI](refresh-data.md)  
 [Power BI Gateway – Personal](personal-gateway.md)  
 [Lokal datagateway](service-gateway-onprem.md)  
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

@@ -1,15 +1,15 @@
 ---
-title: "Använd anslutningstjänsten SAP BW i Power BI Desktop"
-description: "Använd anslutningstjänsten SAP BW i Power BI Desktop"
+title: Använd anslutningstjänsten SAP BW i Power BI Desktop
+description: Använd anslutningstjänsten SAP BW i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0486cb7887ae068b55de94a3d842843c094c8a29
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 84ee8e7c6dd92c5400b6e9d44fab03ad347084d9
+ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SAP BusinessWarehouse (BW)**-data.
@@ -38,7 +38,7 @@ För att använda anslutningsappen **SAP BW Connector** ska du utföra följande
    ![](media/desktop-sap-bw-connector/sap_bw_2a.png)
 
 ## <a name="sap-bw-connector-features"></a>Funktioner för SAP BW-anslutningsappen
-Med **SAP BW-anslutningsapparna** i Power BI Desktop kan du importera data från dina **SAP Business Warehouse Server**-kuber eller använda DirectQuery med **SAP BW-anslutningsappen**. 
+Med **SAP BW-anslutningsapparna** i Power BI Desktop kan du importera data från dina **SAP Business Warehouse Server**-kuber eller använda DirectQuery. 
 
 Mer information om **SAP BW-anslutningsappen** och hur du använder den med DirectQuery finns i artikeln [DirectQuery och SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
@@ -50,7 +50,7 @@ Du kan också ange ytterligare två **avancerade alternativ**: språkkod och ett
 
 ![](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
-Om inget MDX-uttryck har angetts visas fönstret **Navigator** med en lista med kuber som är tillgängliga i servern, ett alternativ för att ser mer information och välja objekt från tillgängliga kuber, inklusive dimensioner, samt åtgärder. Power BI exponerar frågor och kuber som exponeras av BAPI:et [BW Open Analysis Interface OLAP](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
+Om inget MDX-uttryck har angetts visas fönstret **Navigator** med en lista med kuber som är tillgängliga i servern och med ett alternativ för att se mer information och välja objekt från tillgängliga kuber, inklusive dimensioner, samt åtgärder. Power BI exponerar frågor och kuber som exponeras av BAPI:et [BW Open Analysis Interface OLAP](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
 
 När du markerar en eller flera objekt från servern skapas en förhandsgranskning av utdatatabellen baserat ditt val.
 

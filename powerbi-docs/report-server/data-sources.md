@@ -1,27 +1,27 @@
 ---
-title: "Power BI-rapportdatakällor i Power BI-rapportserver"
-description: "Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga."
+title: Power BI-rapportdatakällor i Power BI-rapportserver
+description: Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 03/21/2018
 ms.author: maghan
-ms.openlocfilehash: caa45aab2c31974abb041a82eb2216ebee2eb148
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 3777c58bae36d6115b51b64e0422529fe390a13c
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -34,6 +34,7 @@ Dessa datakällor är specifika för Power BI-rapporter som används i Power BI-
 > 
 
 ## <a name="list-of-supported-data-sources"></a>Lista med datakällor som stöds
+
 Andra datakällor kan fungera även om de inte finns med på listan.
 
 | **Datakälla** | **Cachelagrade data** | **Schemalagd uppdatering** | **Live/DirectQuery** |
@@ -48,7 +49,7 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 | Amazon Redshift |Ja |Nej |Nej |
 | Azure Blob Storage |Ja |Ja |Nej |
 | Azure Data Lake Store |Ja |Nej |Nej |
-| Azure HDInsight (HDFS) |Ja |Ja |Nej |
+| Azure HDInsight (HDFS) |Ja |Nej |Nej |
 | Azure HDInsight (Spark) |Ja |Ja |Nej |
 | Azure Table Storage |Ja |Ja |Nej |
 | Dynamics 365 (online) |Ja |Nej |Nej |
@@ -119,6 +120,100 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 > Säkerhet på radnivå som konfigurerats på datakällan ska fungera för vissa DirectQuery- (SQL Server, Azure SQL Database, Oracle och Teradata) och live-anslutningar förutsatt att Kerberos har konfigurerats korrekt i din miljö.
 > 
 > 
+
+## <a name="list-of-supported-authentication-methods-for-model-refresh"></a>Lista med autentiseringsmetoder som stöds för modelluppdatering
+
+Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för modelluppdatering. Vissa datakällor, till exempel Excel- eller Access-databaser, använder separata steg som Fil eller Webb för att ansluta till data.
+
+| **Datakälla** | **Anonym autentisering** | **Nyckelautentisering** | **Användarnamn och lösenord** | **Windows-autentisering** |
+| --- | --- | --- | --- | --- |
+| SQL Server-databas |Nej |Nej |Ja |Ja |
+| SQL Server Analysis Services |Nej |Nej |Ja |Ja |
+| Webb |Ja |Nej |Ja |Ja |
+| Azure SQL Database |Nej |Nej |Ja |Nej |
+| Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |
+| Active Directory |Nej |Nej |Ja |Ja |
+| Amazon Redshift |Nej |Nej |Nej |Nej |
+| Azure Blob Storage |Ja |Ja |Nej |Nej |
+| Azure Data Lake Store |Nej |Nej |Nej |Nej |
+| Azure HDInsight (HDFS) |Nej |Nej |Nej |Nej |
+| Azure HDInsight (Spark) |Ja |Ja |Nej |Nej |
+| Azure Table Storage |Nej |Ja |Nej |Nej |
+| Dynamics 365 (online) |Nej |Nej |Nej |Nej |
+| Facebook |Nej |Nej |Nej |Nej |
+| Mapp |Nej |Nej |Nej |Ja |
+| Google Analytics |Nej |Nej |Nej |Nej |
+| Hadoop-fil (HDFS) |Nej |Nej |Nej |Nej |
+| IBM DB2-databas |Nej |Nej |Ja |Ja |
+| Impala |Nej |Nej |Nej |Nej |
+| Microsoft Exchange |Nej |Nej |Nej |Nej |
+| Microsoft Exchange Online |Nej |Nej |Nej |Nej |
+| MySQL-databas |Nej |Nej |Ja |Ja |
+| OData-feed |Ja |Ja |Ja |Ja |
+| ODBC |Ja |Nej |Ja |Ja |
+| OLE DB |Ja |Nej |Ja |Ja |
+| Oracle-databas |Nej |Nej |Ja |Ja |
+| PostgreSQL-databas |Nej |Nej |Ja |Nej |
+| Power BI-tjänst |Nej |Nej |Nej |Nej |
+| R-skript |Nej |Nej |Nej |Nej |
+| Salesforce-objekt |Nej |Nej |Nej |Nej |
+| Salesforce-rapporter |Nej |Nej |Nej |Nej |
+| SAP Business Warehouse-server |Nej |Nej |Ja |Nej |
+| SAP HANA-databas |Nej |Nej |Ja |Ja |
+| SharePoint-mapp (lokal) |Ja |Nej |Nej |Ja |
+| SharePoint-lista (lokal) |Ja |Nej |Nej |Ja |
+| SharePoint Online-lista |Nej |Nej |Nej |Nej |
+| Snowflake |Nej |Nej |Nej |Nej |
+| Sybase-databas |Nej |Nej |Ja |Ja |
+| Teradata-databas |Nej |Nej |Ja |Ja |
+| appFigures (beta) |Nej |Nej |Nej |Nej |
+| Azure Analysis Services-databas (beta) |Nej |Nej |Nej |Nej |
+| Azure Cosmos DB (beta) |Nej |Nej |Nej |Nej |
+| Azure HDInsight Spark (beta) |Nej |Nej |Nej |Nej |
+| Common Data Service (beta) |Nej |Nej |Nej |Nej |
+| comScore Digital Analytix (beta) |Nej |Nej |Nej |Nej |
+| Dynamics 365 for Customer Insights (beta) |Nej |Nej |Nej |Nej |
+| Dynamics 365 for Financials (beta) |Nej |Nej |Nej |Nej |
+| GitHub (beta) |Nej |Nej |Nej |Nej |
+| Google BigQuery (beta) |Nej |Nej |Nej |Nej |
+| IBM Informix-databas (beta) |Nej |Nej |Nej |Nej |
+| IBM Netezza (beta) |Nej |Nej |Nej |Nej |
+| Kusto (beta) |Nej |Nej |Nej |Nej |
+| MailChimp (beta) |Nej |Nej |Nej |Nej |
+| Microsoft Azure Consumption Insights (beta) |Nej |Nej |Nej |Nej |
+| Mixpanel (beta) |Nej |Nej |Nej |Nej |
+| Planview Enterprise (beta) |Nej |Nej |Nej |Nej |
+| Projectplace (beta) |Nej |Nej |Nej |Nej |
+| QuickBooks Online (beta) |Nej |Nej |Nej |Nej |
+| Smartsheet |Nej |Nej |Nej |Nej |
+| Spark (beta) |Nej |Nej |Nej |Nej |
+| SparkPost (beta) |Nej |Nej |Nej |Nej |
+| SQL Sentry (beta) |Nej |Nej |Nej |Nej |
+| Stripe (beta) |Nej |Nej |Nej |Nej |
+| SweetIQ (beta) |Nej |Nej |Nej |Nej |
+| Troux (beta) |Nej |Nej |Nej |Nej |
+| Twilio (beta) |Nej |Nej |Nej |Nej |
+| tyGraph (beta) |Nej |Nej |Nej |Nej |
+| Vertica (beta) |Nej |Nej |Nej |Nej |
+| Visual Studio Team Services (beta) |Nej |Nej |Nej |Nej |
+| Webtrends (beta) |Nej |Nej |Nej |Nej |
+| Zendesk (beta) |Nej |Nej |Nej |Nej |
+
+## <a name="list-of-supported-authentication-methods-for-directquery"></a>Lista med autentiseringsmetoder som stöds för DirectQuery
+
+Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för DirectQuery.
+
+| **Datakälla** | **Anonym autentisering** | **Nyckelautentisering** | **Användarnamn och lösenord** | **Windows-autentisering** | **Integrerad Windows-autentisering** |
+| --- | --- | --- | --- | --- | --- |
+| SQL Server-databas |Nej |Nej |Ja |Ja |Ja |
+| SQL Server Analysis Services |Nej |Nej |Ja |Ja |Ja |
+| Azure SQL Database |Nej |Nej |Ja |Nej |Nej |
+| Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |Nej |
+| Oracle-databas |Nej |Nej |Ja |Ja |Ja |
+| SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Ja |
+| SAP HANA-databas |Nej |Nej |Ja |Ja |Nej |
+| Teradata-databas |Nej |Nej |Ja |Ja |Ja |
+
 
 ## <a name="next-steps"></a>Nästa steg
 Nu när du valt ut datakällan, kan du [skapa en rapport](quickstart-create-powerbi-report.md) med hjälp av data från datakällan.

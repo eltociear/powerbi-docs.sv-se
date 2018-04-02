@@ -1,15 +1,15 @@
 ---
-title: "Vägledning för distribution av en datagateway för Power BI"
-description: "Läs om bästa praxis och överväganden för distribution av en gateway för Power BI."
+title: Vägledning för distribution av en datagateway för Power BI
+description: Läs om bästa praxis och överväganden för distribution av en gateway för Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 992c3cbeb9899a784cc8df9fdca9a29f57aa7e81
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9438b9563d17cff8ce334e48bc34a4f3fa6acf1c
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vägledning för distribution av en datagateway för Power BI
-Den här artikeln innehåller vägledning och överväganden för distribution av en datagateway i din nätverksmiljö. En **gateway** är programvara som möjliggör åtkomst till data som finns på ett privat lokalt nätverk för senare användning i en molnbaserad tjänst som Power BI. Den här artikeln vägleder dig genom distributionen och installationen av din **lokala datagateway**.
+Den här artikeln innehåller vägledning och överväganden för distribution av en datagateway i din nätverksmiljö. En **gateway** är programvara som möjliggör åtkomst till data som finns på ett privat, lokalt nätverk för efterföljande användning i en molnbaserad tjänst som Power BI. Den här artikeln vägleder dig genom distributionen och installationen av din **lokala datagateway**.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
 
@@ -145,7 +145,7 @@ Här kan du välja en gateway och se en lista över gatewayadministratörer. Adm
 
 ## <a name="next-steps"></a>Nästa steg
 [Konfigurera proxyinställningar](service-gateway-proxy.md)  
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Vanliga frågor och svar om lokal datagateway](service-gateway-onprem-faq.md)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
