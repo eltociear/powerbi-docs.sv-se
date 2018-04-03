@@ -1,15 +1,15 @@
 ---
-title: "Använda en alternativ e-postadress"
-description: "Använda en alternativ e-postadress"
+title: Använda en alternativ e-postadress
+description: Använda en alternativ e-postadress
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -55,7 +55,7 @@ När du samlar in en AAD-inbäddningstoken (Azure Active Directory) för Power B
 
 Power BI väljer vilken e-postadress som ska användas baserat på följande kriterier:
 1.  Om e-postattributet i AAD-klientens användarobjekt finns använder Power BI det e-postattributet för e-postadressen
-2.  Om UPN-e-postadressen *inte* finns inom domänen **\*.onmicrosoft.com** (informationen efter @-symbolen) använder Power BI det e-postattributet för e-postadressen
+2.  Om UPN-e-postadressen *inte* finns inom domänen **\*.onmicrosoft.com** (informationen efter \@-symbolen) använder Power BI det e-postattributet för e-postadressen
 3.  Om matrisattributet för ”annan” e-postadress i AAD-användarobjektet finns används den första e-postadressen i den listan (eftersom det kan finnas en lista över e-postadresser i det här attributet)
 4. Om inget av ovanstående villkor uppfylls används UPN-adressen
 
