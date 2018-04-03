@@ -1,15 +1,15 @@
 ---
-title: "Öppna en rapport i Läsvyn eller Redigeringsvyn i Power BI-tjänsten"
-description: "Öppna en Power BI-rapport i Läsvyn eller Redigeringsvyn"
+title: Öppna en rapport i Läsvyn eller Redigeringsvyn i Power BI-tjänsten
+description: Öppna en Power BI-rapport i Läsvyn eller Redigeringsvyn
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
