@@ -1,27 +1,27 @@
 ---
-title: "Visa Power BI-rapporter som är optimerade för din telefon"
-description: "Läs mer om att interagera med rapportsidor som har optimerats för visning i Power BI-appar."
+title: Visa Power BI-rapporter som är optimerade för din telefon
+description: Läs mer om att interagera med rapportsidor som har optimerats för visning i Power BI-appar.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: 4f3441e2f933ee8964fc77e3166aeede97bcfba9
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 275dc9fff2f87dd4811eb1a3fe3db944a2965b58
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
 
@@ -47,7 +47,7 @@ Alla andra funktioner i Power BI-rapporter fungerar fortfarande i telefon-optime
 * [Rapporter på Android-telefoner](mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="filter-the-report-page-on-a-phone"></a>Filtrera rapportsidan på en telefon
-Om en telefonoptimerad rapport har filter definierade, kan du använda dessa filter när du visar rapporten på en telefon. 
+Om en telefonoptimerad rapport har filter definierade, kan du använda dessa filter när du visar rapporten på en telefon. Rapporten öppnas på din telefon filtrerad enligt de värden som filtreras i rapporten på webben, och med ett meddelande om att det finns aktiva filter på sidan. Du kan ändra filtren på din telefon.
 
 1. Tryck på filterikonen ![Telefonfilterikon](media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) längst ned på sidan. 
 2. Använda grundläggande eller avancerad filtrering för att se resultatet som du är intresserad av.

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: 5c2573bf4a3900b4d4216170e843263bc41a4e07
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 29241b4c0f059540e6f1496f04b3044ebbd7d68b
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -35,6 +35,18 @@ Relaterad information om nyheter finns i:
 ### <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
 
 Vi har skapat appen Power BI for Mixed Reality för att göra data tillgängliga där du är. Visa dina instrumentpaneler och rapporter i den virtuella världen, eller placera ut dem och visa dem på specifika platser i din miljö. Läs mer om den nya [appen Power BI for Mixed Reality](mobile-mixed-reality-app.md).
+
+### <a name="share-reports-and-dashboards-externally"></a>Dela rapporter och instrumentpaneler externt
+
+Dela instrumentpaneler och rapporter med användare utanför organisationen direkt från appen. Extern delning är aktiverad för både organisationskonton och sociala konton. 
+
+### <a name="persistent-filters"></a>Beständiga filter
+
+När du konfigurerar filter och utsnitt i Power BI på webben, så sparas dina filterval även i din mobilapp, så du kan ta vid där du slutade.
+
+### <a name="refresh-reports-on-the-ipad"></a>Uppdatera rapporter på iPad
+
+Power BI-rapporter har nu en uppdateringsknapp i iPad-appen.
 
 ## <a name="february-2018"></a>Februari 2018
 

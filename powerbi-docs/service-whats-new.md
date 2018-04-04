@@ -5,7 +5,7 @@ services: powerbi
 documentationcenter: ''
 author: mihart
 manager: kfile
-backup: sirsu
+backup: ''
 editor: ''
 tags: ''
 qualityfocus: no
@@ -15,22 +15,23 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/22/2018
+ms.date: 03/23/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: a388f090eac1896c7f47d7d16251c419fc4c33c2
-ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
+ms.openlocfilehash: c4f05645f98e67fcf81c61d91bfdccb9612ed46b
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
 
-* [Nyheter i Power BI Desktop](desktop-latest-update.md)  
-* [Nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md)  
-* [Power BI-teamets blogg](https://powerbi.microsoft.com/blog/)
+- [Nyheter i Power BI Desktop](desktop-latest-update.md)  
+- [Nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md)  
+- [Power BI-teamets blogg](https://powerbi.microsoft.com/blog/)
+- [Affärsprogram – viktig information våren 2018](https://aka.ms/bagspring2018releasenotes_internal) från Dynamics 365: De senaste uppdateringarna av våra affärsprogram, liksom nya funktioner med vilka du kan skapa dina program och tillägg ovanpå vår plattform. 
 
 Du kan också besöka våra YouTube-kanaler för information om nyheter och funktioner.
 

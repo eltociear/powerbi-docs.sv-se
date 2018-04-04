@@ -1,27 +1,27 @@
 ---
 title: Utforska rapporter i Power BI-mobilappar
-description: "Läs mer om att visa och interagera med rapporter i Power BI-mobilappar på din telefon eller surfplatta. Du skapar rapporter i Power BI-tjänsten eller Power BI Desktop och interagerar med dem i de mobila apparna. "
+description: 'Läs mer om att visa och interagera med rapporter i Power BI-mobilappar på din telefon eller surfplatta. Du skapar rapporter i Power BI-tjänsten eller Power BI Desktop och interagerar med dem i de mobila apparna. '
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/25/2018
+ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: 51006f70d0be13f08de7047f0097f7530d32a470
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 6edd5a6e9606150d4b489a79cdb5ca57ac2f8cce
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -33,7 +33,7 @@ Gäller:
 En Power BI-rapport är en interaktiv vy över dina data med visuell information som representerar olika resultat och insikter från dessa data. Att visa rapporter i Power BI-mobilappar är det tredje steget i en trestegsprocess.
 
 1. [Skapa rapporter i Power BI Desktop](desktop-report-view.md). Du kan även [optimera en rapport för telefoner](mobile-apps-view-phone-report.md) i Power BI Desktop. 
-2. Publicera dessa rapporter till Power BI-tjänsten [(https://powerbi.com)](https://powerbi.com) eller [Power BI Report Server](report-server/get-started.md).  
+2. Publicera de rapporterna till Power BI-tjänsten [(https://powerbi.com)](https://powerbi.com) eller [Power BI-rapportserver](report-server/get-started.md).  
 3. Interagera sedan med dessa rapporter i Power BI-mobilappar.
 
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Öppna en Power BI-rapport i mobilappen
@@ -50,7 +50,9 @@ Power BI-rapporter lagras på olika ställen i mobilappen, beroende på var du f
   ![Telefonrapport i liggande läge](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Visa rapporter optimerade för telefoner
-Power BI-rapportskribenter kan skapa en rapportlayout som optimerats för telefoner. Rapportsidor som är optimerade för telefoner har ytterligare funktioner: till exempel kan du öka detaljnivån och sortera i visuella objekt i fokusläge och du kan komma åt de [filter som rapportförfattaren lagt till på rapportsidan](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). I en lista med rapporter, har en optimerad rapport en specialikon ![Telefonrapport-ikonen](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Power BI-rapportskribenter kan skapa en rapportlayout som optimerats för telefoner. Rapportsidor som är optimerade för telefoner har ytterligare funktioner: till exempel kan du öka detaljnivån och sortera i visuella objekt i fokusläge och du kan komma åt de [filter som rapportförfattaren lagt till på rapportsidan](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Rapporten öppnas på din telefon filtrerad enligt de värden som filtreras i rapporten på webben, och med ett meddelande om att det finns aktiva filter på sidan. Du kan ändra filtren på din telefon.
+
+I en lista över rapporter, har en optimerad rapport en särskild ikon ![Telefonrapportikon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
 ![Öppna telefonrapporten](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -63,7 +65,7 @@ När du visar den rapporten på en telefon, öppnas den i stående vy.
 Läs mer om [rapporter optimerade för telefonvy](mobile-apps-view-phone-report.md).
 
 ## <a name="use-slicers-to-filter-a-report-page"></a>Använd utsnitt för att filtrera en rapportsida
-När du skapar en rapport i Power BI Desktop eller Power BI-tjänsten bör du överväga att [lägga till utsnitt till en rapportsida](power-bi-visualization-slicers.md). Du och dina kollegor kan använda utsnitt för att filtrera sidan i en webbläsare och i mobila appar. När du visar rapporten på en telefon kan du se och använda utsnitt i liggande läge och på en sida som är optimerad för telefonens stående läge.
+När du skapar en rapport i Power BI Desktop eller Power BI-tjänsten bör du överväga att [lägga till utsnitt till en rapportsida](power-bi-visualization-slicers.md). Du och dina kollegor kan använda utsnitt för att filtrera sidan i en webbläsare och i mobila appar. När du visar rapporten på en telefon kan du se och använda utsnitt i liggande läge och på en sida som är optimerad för telefonens stående läge. Om du väljer ett värde i en utsnitt eller filter i webbläsaren, så väljs värdet även när du visar sidan i mobilappen. Ett meddelande om att det finns aktiva filter på sidan visas.  
 
 * När du väljer ett värde i ett utsnitt på rapportsidan, filtreras övrig visuell information på sidan.
   

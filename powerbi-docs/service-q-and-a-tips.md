@@ -1,15 +1,15 @@
 ---
-title: "Tips för att ställa frågor med Frågor och svar i Power BI"
-description: "Tips för att ställa frågor med Frågor och svar i Power BI"
+title: Tips för att ställa frågor med Frågor och svar i Power BI
+description: Tips för att ställa frågor med Frågor och svar i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: jastru
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: bdf1f161e0a95bda5b37d9c43a3bdcc6bde1066a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 28ebd938b1121e1d2d453a9c9e72592b1c814742
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tips för att ställa frågor i Frågor och svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
@@ -94,9 +94,6 @@ Frågor och svar gör sitt bästa för att säkerställa att svaret korrekt speg
 * föreslår automatiskt ersättningstermer from den underliggande datauppsättningen när du flyttar tillbaka pekaren till frågerutan.
 * ställer om frågan baserat på data i underliggande datauppsättningar. Därmed kommer Frågor och svar att förstå din fråga och ersätta orden med synonymer från den underliggande datauppsättningen.
 * tonar ner ord som den inte förstår.
-
-## <a name="combine-results-from-more-than-one-dataset"></a>Kombinerar resultat från mer än en datauppsättning
-En av de mest kraftfulla funktionerna i Power BI är möjligheten att kombinera data från olika datauppsättningar.  Därför ska du inte begränsa dina frågor till en enda datamängd – ställ frågor som hämtar data från mer än en datauppsättning. Till exempel, om min instrumentpanel har brickor från exemplet Försäljningsanalys och en datauppsättning för regionbefolkning kan jag ange *Visa antal butiker enligt regionbefolkning som fallande stapeldiagram*.
 
 ## <a name="dont-stop-now"></a>Sluta inte nu
 När Frågor och svar visar dina resultat kan du hålla igång samtalet! Använda interaktiva funktioner på visualiseringen och Frågor och svar för att få mer insikter.
