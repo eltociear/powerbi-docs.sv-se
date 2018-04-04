@@ -1,15 +1,15 @@
 ---
 title: Hantera kapacitet i Power BI Premium och Power BI Embedded
-description: "Lär dig hur du kan hantera Power BI Premium och ge åtkomst till innehåll för hela organisationen."
+description: Lär dig hur du kan hantera Power BI Premium och ge åtkomst till innehåll för hela organisationen.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: maghan
 LocalizationGroup: Premium
-ms.openlocfilehash: a6040871652484ad5de70a0d73e14a13742fe56a
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 556f91464e8a08b5cb149648be2b097578964af9
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 Lär dig hur du kan hantera Power BI Premium- och Power BI Embedded-kapaciteter som tillhandahåller dedikerade resurser för ditt innehåll.
@@ -47,6 +47,10 @@ Om du vill dra fördel av dedikerad kapacitet behöver du köpa en prenumeration
 * **Power BI Embedded:** [Skapa Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity)
 
 När du köper Power BI Premium SKU:er får din klient motsvarande antal v-kärnor för användning i körkapacitet. Köp av en Power BI Premium P3 SKU ger till exempel klienten 32 v-kärnor.
+
+> [!NOTE]
+> Du har fullständig åtkomst i 30 dagar efter att din prenumeration har avslutats, men efter det återgår innehållet till en delad kapacitet. Modeller som är >1 GB stöds inte med en vanlig delad licens.
+>
 
 ## <a name="capacity-admins"></a>Kapacitetsadministratörer
 > [!NOTE]
