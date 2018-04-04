@@ -1,27 +1,27 @@
 ---
-title: "Dela en instrumentpanel eller rapport från Power BI-mobilapparna"
-description: "Du kan bjuda in kollegor att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Läs mer."
+title: Dela en instrumentpanel eller rapport från Power BI-mobilapparna
+description: Bjud in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Läs mer.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/15/2018
+ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: 328e73b31934259fb50e412b6dc2f88a379a7469
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 5bbcf02dfb0c11ca605e0c07f2670bd3a3422e96
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 Gäller för:
@@ -30,7 +30,7 @@ Gäller för:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
 
-Med en [Power BI Pro-licens](service-free-vs-pro.md) kan du bjuda in kollegor att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Personerna du delar med måste finnas på samma e-postdomän som du och ha en licens för Power BI Pro, eller också måste innehållet finnas i en [Premium-kapacitet](service-premium.md).
+Med en [Power BI Pro-licens](service-free-vs-pro.md) kan du bjuda in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Du kan dela med vem som helst, inom eller utanför din organisation, och med eller utan ett e-postkonto som tillhör företaget. De måste även ha en Power BI Pro-licens, eller så måste innehållet finnas i en [Premium-kapacitet](service-premium.md).
 
 Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport eller visualisering](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) och sedan dela den med vem som helst med hjälp av Power BI-mobilapparna för iOS- och Android-enheter. 
 
@@ -38,14 +38,13 @@ Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport 
 1. Klicka på ikonen **Dela** ![ikonen Dela](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png) i aktivitetsfältet längst ner på instrumentpanelen eller i rapporten.
    
    ![Delningsikon för iPhone](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-dashboard-invite.png)
-2. Peka på **Bjud in en kollega**.
-3. Ange namn, avgränsade med komman, och ett meddelande som medföljer din inbjudan.
-4. Om du vill tillåta omdelning låter du **Tillåt mottagare att dela vidare** vara markerad.
+2. Ange namn, avgränsade med komman, och ett meddelande som medföljer din inbjudan.
+3. Om du vill tillåta omdelning låter du **Tillåt mottagare att dela vidare** vara markerad.
    
    Med omdelning kan dina kollegor vidarebefordra din e-postinbjudan till andra i din organisation, antingen via webben eller mobila appar.
 5. Tryck på **Skicka** i det övre högra hörnet.
    
-   Dina kollegor får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delas med mig** i deras Power BI-konto.
+   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delas med mig** i deras Power BI-konto.
    
    ![Delat med mig](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
@@ -68,14 +67,14 @@ Du kan bara avsluta delningen om du är ägaren.
 
 ## <a name="share-from-your-ipad"></a>Dela från din iPad
 1. Tryck på ikonen **Dela** ![ikonen Dela](media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) högst upp till höger på instrumentpanelen eller i rapporten.
-2. Tryck på **Bjud in en kollega**. Skriv sedan e-postadresser och ett meddelande som medföljer din inbjudan.
+2. Skriv e-postadresser och ett meddelande som medföljer din inbjudan.
 3. Om du vill tillåta omdelning låter du **Tillåt mottagare att dela vidare** vara markerad.
    
    Med omdelning kan dina kollegor vidarebefordra din e-postinbjudan till andra i din organisation, antingen via webben eller mobila appar. 
 
 4. Tryck på **Skicka** i det övre högra hörnet.
    
-   Dina kollegor får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
+   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
    
    ![Delat med mig](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
@@ -97,7 +96,7 @@ Du kan bara avsluta delningen om du är ägaren.
 1. På startsidan för instrumentpaneler eller rapporter trycker du på ellipsen (...) och på **Bjud in en kollega**.
    
    ![Bjud in en kollega](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
-2. Eller tryck på ikonen för inbjudan i det övre högra hörnet på en instrumentpanel eller i en rapport ![Ikon för inbjudan](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
+2. Eller tryck på inbjudningsikonen på en instrumentpanel eller i en rapport ![Ikon för inbjudan](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
 
     Om du äger instrumentpanelen kan du se en lista över kollegor med vilka du har delat den här instrumentpanelen eller rapporten med dessa anteckningar:
 
@@ -111,7 +110,7 @@ Du kan bara avsluta delningen om du är ägaren.
    
 1. Tryck på ikonen **Skicka**![Skicka](media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png) i det övre högra hörnet för att skicka e-postmeddelandet.
    
-   Dina kollegor får en e-postinbjudan med en direktlänk till instrumentpanelen. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
+   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
    
    ![Delat med mig](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
    
@@ -146,7 +145,7 @@ Du kan bara avsluta delningen om du är ägaren.
    
 1. Tryck på ikonen **Skicka** ![ikonen Skicka](media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
    
-   Dina kollegor får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
+   Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
    
    ![Delat med mig](media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    

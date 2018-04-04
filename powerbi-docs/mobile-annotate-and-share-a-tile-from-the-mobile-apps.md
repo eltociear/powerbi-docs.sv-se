@@ -1,13 +1,13 @@
 ---
-title: "Kommentera och dela från Power BI-mobilappar"
-description: "Läs om kommentering och delning av paneler, rapporter och visuella objekt från Microsoft Power BI-mobilappen för iOS och Android. "
+title: Kommentera och dela från Power BI-mobilappar
+description: 'Läs om kommentering och delning av paneler, rapporter och visuella objekt från Microsoft Power BI-mobilappen för iOS och Android. '
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 02/28/2017
 ms.service: powerbi
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: f62d743a9d1d49444b118c1cb63a45dc7255d852
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 12dd7e2dcce655b6cde370877f56c4d57e18dbd9
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentera och dela en panel, rapport eller ett visuellt objekt i Power BI-mobilapparna
 Gäller för:
@@ -36,7 +36,7 @@ Du kan kommentera och dela en ögonblicksbild av en panel, rapport eller visuali
 
 *En rapport med kommentarer*
 
-E-postmeddelandet med ögonblicksbilden av panelen, rapporten eller visualiseringen kommer även att inkludera en länk till det faktiska objektet på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Dina mottagare kan klicka på länken och gå direkt till den panelen, rapporten eller visualiseringen, om du och de har Power BI Pro-licenser eller om innehållet ligger på en [Premium-kapacitet](service-premium.md) och du redan har delat objektet med dem. 
+E-postmeddelandet med ögonblicksbilden av panelen, rapporten eller det visuella objektet inkluderar även en länk till det faktiska objektet i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Dina mottagare kan klicka på länken och gå direkt till den panelen, rapporten eller visualiseringen, om du och de har Power BI Pro-licenser eller om innehållet ligger på en [Premium-kapacitet](service-premium.md) och du redan har delat objektet med dem. 
 
 Du kan [dela en panel från Power BI-mobilappen för Windows 10-enheter](mobile-share-tile-windows-10-phone-app.md) också, men inte kommentera den.
 

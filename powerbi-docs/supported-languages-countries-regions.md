@@ -1,28 +1,28 @@
 ---
-title: "Språk och länder/regioner som stöds för Power BI"
-description: "Se listor med de språk som stöds och länder/regioner för Power BI-tjänsten, Power BI Desktop och Power BI-dokumentationen."
+title: Språk och länder/regioner som stöds för Power BI
+description: Se listor med de språk som stöds och länder/regioner för Power BI-tjänsten, Power BI Desktop och Power BI-dokumentationen.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/18/2017
+ms.date: 03/20/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9c007202bc6526872ea3469ccc5e46b71a8e6dcb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0ca6a21e67e7ab1d2a0c0daa8da07052041db139
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Språk och länder/regioner som stöds för Power BI
 
@@ -32,7 +32,7 @@ I den här artikeln finns listor över de språk som stöds och länder/regioner
 En lista med de länder och regioner där Power BI är tillgängligt finns i [listan för internationell tillgänglighet](https://products.office.com/business/international-availability). 
 
 ## <a name="languages-for-the-power-bi-service"></a>Språk för Power BI-tjänsten
-Power BI-tjänsten (i webbläsaren) finns på följande 42 språk:
+Power BI-tjänsten (i webbläsaren) finns på följande 44 språk:
 
 * Arabiska
 * Baskiska – Basque

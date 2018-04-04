@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/21/2018
+ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 3777c58bae36d6115b51b64e0422529fe390a13c
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: bc490834b215af45df1063fd06b94ed9b735d852
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -84,7 +84,7 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 | Webb |Ja |Ja |Nej |
 | XML |Ja |Ja |Nej |
 | appFigures (beta) |Ja |Nej |Nej |
-| Azure Analysis Services-databas (beta) |Ja |Nej |Nej |
+| Azure Analysis Services-databas |Ja |Nej |Ja |
 | Azure Cosmos DB (beta) |Ja |Nej |Nej |
 | Azure HDInsight Spark (beta) |Ja |Nej |Nej |
 | Common Data Service (beta) |Ja |Nej |Nej |
