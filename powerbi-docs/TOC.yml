@@ -728,7 +728,7 @@
           href: desktop-common-query-tasks.md
         - name: Använda formkartor i Power BI Desktop (förhandsgranskning)
           href: desktop-shape-map.md
-        - name: Kombinera binärfiler
+        - name: Kombinera filer (binärfiler)
           href: desktop-combine-binaries.md
     - name: Modellera dina data
       items:
