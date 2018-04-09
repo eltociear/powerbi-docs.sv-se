@@ -770,6 +770,8 @@
           href: desktop-insights.md
         - name: Utsnitt i Power BI Desktop
           href: desktop-slicers.md
+        - name: Använda knappar i Power BI
+          href: desktop-buttons.md
         - name: Bokmärken i Power BI
           href: desktop-bookmarks.md
         - name: Skapa anpassade knappbeskrivningar för rapporter (förhandsversion)
