@@ -992,6 +992,8 @@
           href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Certifiera ett anpassat visuellt objekt
           href: power-bi-custom-visuals-certified.md
+        - name: Publicera anpassad visuell information till AppSource
+          href: developer/office-store.md
     - name: Skicka data till en instrumentpanel
       items:
         - name: Skicka data till en instrumentpanel
