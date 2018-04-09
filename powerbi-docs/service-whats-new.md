@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/23/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: c4f05645f98e67fcf81c61d91bfdccb9612ed46b
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 7b8d3b4202ff08b5b97765fe20abe37c41518a31
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -75,14 +75,14 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 ### <a name="august-2017"></a>Augusti 2017
 * Lär känna din målgrupp med [användningsstatistik per användare](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Kom igång med [Power BI-tjänst](service-connect-to-services.md)appar för onlinetjänster.
-* Anslut till IBM Netezza med lokal datagateway via import- och DirectQuery-anslutningslägen.
+* Anslut till IBM Netezza med den lokala datagatewayen i både anslutningslägena import och DirectQuery.
 * [Dynamisk RLS](developer/embedded-row-level-security.md) stöds nu för Power BI Embedded.
 * Avancerat [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) har nu lagts till i version 1.7 av anpassade API:er för visuella objekt.
 
 ### <a name="july-2017"></a>Juli 2017
 * Stöd för [e-postprenumerationer](service-report-subscribe.md) på instrumentpaneler.
 * Kontrollera och diagnostisera varför inläsningstiden är dålig för instrumentpaneler med hjälp av Performance Inspector.
-* Snowflake och SAP BusinessWarehouse DirectQuery stöds nu för lokal datagateway.
+* Snowflake och SAP BusinessWarehouse DirectQuery stöds nu på den lokala datagatewayen.
 * Nya [API:er för att hantera datauppdatering](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) i Power BI-tjänsten.
 
 ### <a name="june-2017"></a>Juni 2017
@@ -94,7 +94,7 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 
 ### <a name="april-and-may-2017"></a>April och maj 2017
 * Mät och öka din inverkan med användningsstatistik för [skapare av instrumentpaneler och rapporter](service-usage-metrics.md).
-* Anslut till PostgreSQL med lokal datagateway.
+* Anslut till PostgreSQL med den lokala datagatewayen.
 * Power BI SharePoint-webbdel tillgänglig för alla användare.
 * Anslut Power BI till någon datakälla med [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
 * Gå till rapporter med flera URL-filterparametrar.
