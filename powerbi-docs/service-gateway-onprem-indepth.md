@@ -1,15 +1,15 @@
 ---
-title: "Lokal datagateway – på djupet"
-description: "Den här artikeln ger en djupgående beskrivning av den lokala gatewayen. Här beskrivs hur tjänsten fungerar med Azure Active Directory och ditt lokala Active Directory när du arbetar med Analysis Services"
+title: Lokal datagateway – på djupet
+description: Den här artikeln ger en djupgående beskrivning av den lokala gatewayen. Här beskrivs hur tjänsten fungerar med Azure Active Directory och ditt lokala Active Directory när du arbetar med Analysis Services
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7283ee62838779590bbc01eb8b4348cfc7873dc1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5ab3159be71fbefbbe034ce8f39f9df02b48ede3
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
 Det är möjligt för användare i din organisation att ha åtkomst till lokala data (till vilka de redan har åtkomstauktorisering), men innan dessa användare kan ansluta till den lokala datakällan, så måste en lokal datagateway ha installerats och konfigurerats. Gatewayen underlättar snabb och säker dold kommunikation mellan en användare i molnet till din lokala datakälla och sedan tillbaka till molnet.
@@ -126,7 +126,7 @@ Istället för att diskutera gatewayfelsökning här, så har vi placerat en ser
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Nästa steg
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

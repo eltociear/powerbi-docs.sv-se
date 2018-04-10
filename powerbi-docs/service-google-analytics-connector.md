@@ -1,15 +1,15 @@
 ---
-title: "Tredjepartstjänst: Google Analytics-anslutningsprogram för Power BI Desktop"
-description: "Tredjepartstjänst: Google Analytics-anslutningsprogram för Power BI Desktop"
+title: 'Tredjepartstjänst: Google Analytics-anslutningsprogram för Power BI Desktop'
+description: 'Tredjepartstjänst: Google Analytics-anslutningsprogram för Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e05f64b52c34b3f038994e9cac8a9b7e6aebc7ad
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fdd48073d80176eff1576633c2e9f15bdd430a60
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="google-analytics-connector-for-power-bi-desktop"></a>Google Analytics-anslutningsprogram för Power BI Desktop
 > [!NOTE]
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/24/2018
 Du kan ansluta till Google Analytics-data med hjälp av **Google Analytics**-anslutningsprogrammet. Gör så här för att ansluta:
 
 1. I **Power BI Desktop** väljer du **Hämta data** från fliken **Start** i menyfliksområdet.
-2. I fönstret **Hämta data** väljer du **Övrigt** från kategorierna i det vänstra fönstret.
+2. I fönstret **Hämta data** väljer du **Onlinetjänster** från kategorierna i det vänstra fönstret.
 3. Välj **Google Analytics** från alternativen i det högra fönstret.
 4. Längst ned i fönstret väljer du **Anslut**.  
    ![](media/service-google-analytics-connector/tps_googleanalytics_1.png)

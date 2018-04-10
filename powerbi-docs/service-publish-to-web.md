@@ -1,28 +1,28 @@
 ---
-title: "Publicera på webben från Power BI"
-description: "Med Power BI Publicera på webben kan du enkelt bädda in interaktiva Power BI-visualiseringar online, t.ex. blogginlägg, webbplatser, via e-post eller sociala medier på alla enheter."
+title: Publicera på webben från Power BI
+description: Med Power BI Publicera på webben kan du enkelt bädda in interaktiva Power BI-visualiseringar online, t.ex. blogginlägg, webbplatser, via e-post eller sociala medier på alla enheter.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 03/28/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 089cd84f493343822293cb6e74330d26e2a8bcd6
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 31e40efee8c4d67ec524212996ac6d7a8caf1852
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -133,13 +133,16 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder P
 
 ## <a name="limitations"></a>Begränsningar
 
-**Publicera på webben** stöds för merparten av alla datakällor och rapporter i Power BI-tjänsten. Men följande stöds dock inte för närvarande eller är inte tillgängligt med Publicera på webben:
+**Publicera på webben** stöds för merparten av alla datakällor och rapporter i Power BI-tjänsten. Men följande stöds dock **inte för närvarande eller är inte tillgängligt** med Publicera på webben:
 
 1. Rapporter som använder säkerhet på radnivå.
-2. Rapporter som använder en datakälla för Live-anslutning, som Analysis Services Tabular på lokala flerdimensionella Analysis Services, Azure Analysis Services och Power BI-tjänsten.
+2. Rapporter som använder en datakälla för Live-anslutning, som Analysis Services Tabular på lokala flerdimensionella Analysis Services och Azure Analysis Services.
 3. Rapporter om delas med dig direkt eller via ett organisationsinnehållspaket.
 4. Rapporter i en grupp som du inte är redigeringsmedlem i.
 5. Visuella R-objekt stöds för närvarande inte i Publicera på webben-rapporter.
+6. Exportera data från visualiseringar i en rapport som har publicerats på webben
+7. ArcGIS Maps för Power BI-visualiseringar
+8. [Säkra konfidentiell eller upphovsrättsskyddad information](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Klientinställning
 
@@ -177,7 +180,7 @@ Du måste vara en Microsoft Power BI-användare för att kunna använda **Public
 
 ## <a name="how-it-works-technical-details"></a>Så här fungerar det (teknisk information)
 
-När du skapar en inbäddningskod med rapporten **Publicera på webben** syns rapporten för användare på Internet. Den är offentligt tillgänglig, så du kan förvänta dig att användarna enkelt kan dela rapporten via sociala medier i framtiden. När användarna visar rapporten, antingen genom att öppna den offentliga URL:en direkt, eller visa den inbäddad på en webbsida eller i en blogg, så cachelagrar Power BI rapportdefinitionen och resultaten för de frågor som krävs för att visa rapporten. Den här metoden garanterar att rapporten kan visas med tusentals samtidiga användare utan att det påverkar prestandan negativt.  
+När du skapar en inbäddningskod med rapporten **Publicera på webben** syns rapporten för användare på Internet. Den är offentligt tillgänglig, så du kan förvänta dig att användarna enkelt kan dela rapporten via sociala medier i framtiden. När användarna visar rapporten, antingen genom att öppna den offentliga URL:en direkt, eller visa den inbäddad på en webbsida eller i en blogg, så cachelagrar Power BI rapportdefinitionen och resultaten för de frågor som krävs för att visa rapporten. Den här metoden garanterar att rapporten kan visas med tusentals samtidiga användare utan att det påverkar prestandan negativt.
 
 Cacheminnet är långlivat, så om du uppdaterar rapportdefinitionen (om du t.ex. ändrar läget för dess visningsläge) eller uppdaterar rapportdata, så kan det dröja ungefär en timma innan ändringarna avspeglas i den rapportversion som visas för användarna. Därför rekommenderar vi att du mellanlagrar ditt arbete i förväg och skapa inbäddningskoden för **Publicera på webben** enbart när du är nöjd med inställningarna.
 

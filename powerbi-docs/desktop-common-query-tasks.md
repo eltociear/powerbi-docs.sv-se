@@ -1,15 +1,15 @@
 ---
-title: "Vanliga frågeuppgifter i Power BI Desktop"
-description: "Vanliga frågeuppgifter i Power BI Desktop"
+title: Vanliga frågeuppgifter i Power BI Desktop
+description: Vanliga frågeuppgifter i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4d0a8b9a1f855c373b43c5c78ec41b6bc34d1d18
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 37c5e55d426d308fe8ea7de5c6604a9c66f81896
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Vanliga frågeuppgifter i Power BI Desktop
 När du arbetar i fönstret **Frågeredigeraren** i Power BI Desktop finns det några återkommande uppgifter. I det här dokumentet får du exempel på dessa återkommande uppgifter och länkar med ytterligare information. 
@@ -45,7 +45,7 @@ Den första anslutningen är en Excel-arbetsbok. Den andra är en webbresurs (so
 De steg du måste följa för att ansluta till båda dessa datakällor inleder själva frågeuppgiftsarbetet.
 
 ## <a name="connect-to-data"></a>Ansluta till data
-Anslut till data i Power BI Desktop genom att klicka på knappen **Hämta data** på fliken **Start** i menyfliksområdet. Power BI Desktop visar en meny med de vanligaste datakällorna. Om du vill ha en fullständig lista över datakällor till vilka Power BI Desktop kan ansluta, så klicka på knappen **Mer...**  längst ned på menyn. Mer information finns i [Datakällor i Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643).
+Anslut till data i Power BI Desktop genom att klicka på knappen **Hämta data** på fliken **Start** i menyfliksområdet. Power BI Desktop visar en meny med de vanligaste datakällorna. Om du vill ha en fullständig lista över datakällor till vilka Power BI Desktop kan ansluta, så klicka på knappen **Mer...**  längst ned på menyn. Mer information finns i [Datakällor i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -67,12 +67,12 @@ Välj **OK**, och liksom tidigare granskar Power BI Desktop arbetsboken innehål
 
 Andra dataanslutningar är av liknande slag. Om autentisering krävs för att göra en dataanslutning så uppmanas du av Power BI Desktop att ange autentiseringsuppgifterna.
 
-En stegvis demonstration av hur man ansluter till data i Power BI Desktop finns i [Anslut till Data i Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635).
+En stegvis demonstration av hur man ansluter till data i Power BI Desktop finns i [Anslut till Data i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Forma och kombinera data
-Du kan enkelt forma och kombinera data med Frågeredigeraren. Det här avsnittet innehåller några exempel på hur du kan forma data. En mer fullständig demonstration av hur du kan forma och kombinera data finns i **[Forma och kombinera Data med Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)**.
+Du kan enkelt forma och kombinera data med Frågeredigeraren. Det här avsnittet innehåller några exempel på hur du kan forma data. En mer fullständig demonstration av hur du kan forma och kombinera data finns i **[Forma och kombinera Data med Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
 
-I det förra avsnittet anslöt vi till två datauppsättningar – en Excel-arbetsbok och en webbresurs. Efter inläsningen i Frågeredigeraren visas följande, med frågan från den valda webbsidan (från de tillgängliga frågor som visas i rutan **Frågor** längst till vänster i Frågeredigerarens fönster).
+I det förra avsnittet anslöt vi till två datauppsättningar – en Excel-arbetsbok och en webbresurs. Efter inläsningen i Frågeredigeraren visas följande, med frågan från den valda webbsidan (tagen från de tillgängliga frågor som visas i rutan **Frågor** längst till vänster i Frågeredigerarens fönster).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
 
@@ -82,7 +82,7 @@ I **Frågeredigeraren** hittar du många kommandon i menyfliksområdet och i en 
 
 ![](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
 
-Det finns många andra sätt på vilka du kan forma data i den här frågan. Du kan ta bort ett valfritt antal rader uppifrån eller nedifrån. Du kan lägga till kolumner, dela kolumner, ersätta värden och utföra andra formeringuppgifter som anger för Frågeredigeraren hur data ska hämtas och presenteras.
+Det finns många andra sätt på vilka du kan forma data i den här frågan. Du kan ta bort ett valfritt antal rader uppifrån eller nedifrån. Du kan lägga till kolumner, dela kolumner, ersätta värden och utföra andra formeringsuppgifter som anger för Frågeredigeraren hur data ska hämtas och presenteras.
 
 ## <a name="group-rows"></a>Gruppera rader
 I Frågeredigeraren du kan gruppera värdena i flera rader till ett enskilt värde. Detta kan vara användbart när du ska sammanfatta antalet erbjudna produkter, total försäljning eller antalet studenter.
@@ -98,11 +98,13 @@ Fönstret **Gruppera efter…** visas. När Frågeredigeraren grupperar rader, s
 1. *Gruppera efter* – detta är den kolumn som ska grupperas. Frågeredigeraren väljer den markerade kolumnen, men du kan ändra valet i det här fönstret till vilken som helst av kolumnerna i tabellen.
 2. *Nytt kolumnnamn* – Frågeredigeraren föreslår ett namn på den nya kolumnen baserat på den åtgärd som tillämpas på den grupperade kolumnen, men du kan kalla den nya kolumnen vad du vill.
 3. *Åtgärd* – här du anger den åtgärd som Frågeredigeraren tillämpar.
-4. *Plus-/minustecken (+/-)* – du kan utföra aggregeringsåtgärder (**Gruppera efter**) på flera kolumner och utföra flera aggregeringar – allt i samma **Gruppera efter**-fönster och i samma åtgärd. Frågeredigeraren skapar en ny kolumn (baserat på dina val i det här fönstret) som fungerar på flera kolumner. Lägg till fler kolumner eller aggregeringar till en **Gruppera efter**-åtgärd genom att välja knappen **+**. Du kan ta bort en kolumn eller aggregering genom att välja ikonen –. Testa och se hur det fungerar. 
+4. *Lägg till grupp* och *Lägg till sammansättningen* – dessa alternativ visas när du har valt alternativet **Avancerat**. Du kan utföra grupperingsåtgärder (**Gruppera efter**) på flera kolumner och utföra flera aggregeringar – allt i samma **Gruppera efter**-fönster och i samma åtgärd. Frågeredigeraren skapar en ny kolumn (baserat på dina val i det här fönstret) som fungerar på flera kolumner. 
+
+Välj knappen **Lägg till grupp** eller **Lägg till sammansättning** för att lägga till flera grupperingar eller sammansättningar till en **Gruppera efter**-funktion. Du kan ta bort en gruppering eller sammansättning genom att välja ikonen **...** och välja **Ta bort**. Testa själv och se hur det fungerar.
    
    ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
-När vi väljer **OK** utför frågan **Gruppera efter**-åtgärden och returnerar resultaten. Oj, ser man på – Ohio, Texas, Illinois och Kalifornien har över tusen myndigheter!
+När vi väljer **OK** utför frågan **Gruppera efter**-åtgärden och returnerar resultaten. Oj, ser man på – Ohio, Texas, Illinois och Kalifornien har nu över tusen myndigheter!
 
 ![](media/desktop-common-query-tasks/commonquerytasks_groupedresult.png)
 
@@ -126,7 +128,7 @@ När du väljer **OK** visar frågan tabellen enligt de tillhandahållna utformn
 ## <a name="create-custom-columns"></a>Skapa anpassade kolumner
 I Frågeredigeraren kan du skapa anpassade formler som kan användas på flera kolumner i tabellen, och sedan placera resultatet i en ny (anpassad) kolumn. Med Frågeredigeraren är det enkelt att skapa anpassade kolumner.
 
-Välj **Lägg till anpassad kolumn** på fliken **Lägg till kolumn** i menyfliksområdet i Frågeredigeraren.
+Välj **Anpassad kolumn** på fliken **Lägg till kolumn** i menyfliksområdet i Frågeredigeraren.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_customcolumn.png)
 
@@ -147,7 +149,7 @@ Frågeredigeraren innehåller alla tillämpade steg för respektive fråga som t
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Låt oss ta en titt på den **avancerade redigeraren**, med de frågesteg som är kopplade till den visade frågan **USA\_StudentEnrollment**. De här stegen skapas i Power Query-formelspråket, vilket ofta kallas **M**. Mer information finns i [Lär dig mer om Power Query-formler](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). Om du vill visa själva språkspecifikationen kan du hämta [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).
+Låt oss ta en titt på den **avancerade redigeraren**, med de frågesteg som är kopplade till den visade frågan **USA\_StudentEnrollment**. De här stegen skapas i Power Query-formelspråket, vilket ofta kallas **M**. Mer information finns i [Lär dig mer om Power Query-formler](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). Om du vill visa själva språkspecifikationen kan du gå till [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

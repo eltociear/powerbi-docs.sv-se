@@ -1,15 +1,15 @@
 ---
-title: "Använda snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar i Power BI"
-description: "Snabbåtgärder är färdiga DAX-formler som snabbt hanterar vanliga beräkningar"
+title: Använda snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar i Power BI
+description: Snabbåtgärder är färdiga DAX-formler som snabbt hanterar vanliga beräkningar
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b9cc94593ca6fd98590d69bee3a2fa4cae6d0050
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a7f877512d5b0f897fb98d2db205d1418d25c71a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Använd snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar
 Du kan använda **snabbmått** när du snabbt och enkelt vill utföra vanliga och kraftfulla beräkningar. Ett **snabbmått** kör en uppsättning DAX-kommandon i bakgrunden (du behöver inte skriva DAX – det är klart) som bygger på indata som du anger i en dialogruta. Sedan presenteras resultatet i rapporten. Du kan bästa är att du kan se de DAX-kommandon som körs av snabb måttet och komma igång med eller utöka din egen DAX kunskap.
@@ -59,14 +59,14 @@ När du väljer listrutan visas med en lång lista över tillgängliga **snabbm�
 Det finns fem olika grupper av beräkningstyper i snabbmått, var och ett med en samling av beräkningar. Dessa grupper och beräkningar är följande:
 
 * **Sammanställ per kategori**
-  * Genomsnitt inom en kategori
-  * Varians inom en kategori
-  * Maxvärde inom en kategori
-  * Minimivärde inom en kategori
+  * Genomsnitt per kategori
+  * Avvikelsen inom kategorin
+  * Max per kategori
+  * Minimum per kategori
   * Viktat genomsnitt per kategori
 * **Filter**
   * Filtrerat värde
-  * Skillnad från baslinje
+  * Skillnad från filtrerat värde
   * Procentuell skillnad från filtrerat värde
   * Försäljning från nya kategorier
 * **Tidsintelligens**
@@ -92,7 +92,7 @@ Det finns fem olika grupper av beräkningstyper i snabbmått, var och ett med en
   * Omdöme i stjärnor
   * Sammanlänkad lista med värden
 
-Vi planerar att lägga till dessa beräkningar och vill veta vilka **snabbmått** du skulle vilja se och om du har idéer (inklusive underliggande DAX-formler) för **snabbmått** som du vill att vi överväger. Mer information om detta finns i slutet på den här artikeln.
+Vi planerar att lägga till dessa beräkningar, vill veta vilka **snabbmått** du skulle vilja se och om du har idéer (inklusive underliggande DAX-formler) för **snabbmått** som du vill att vi överväger. Mer information om detta finns i slutet på den här artikeln.
 
 ## <a name="example-of-quick-measures"></a>Exempel på snabbmått
 Låt oss ta en titt på ett exempel på dessa **snabbmått** i praktiken.
@@ -101,7 +101,7 @@ Följande **matris** innehåller en tabell med försäljning för olika elektron
 
 ![](media/desktop-quick-measures/quick-measures_05.png)
 
-När vi högerklickar du på fältet **Värden** och väljer **Snabbmått** kan vi välja *Genomsnitt inom en kategori* som *beräkning*och välja *Summan av försäljning* som *basvärde*. Ange *SalesAmount* genom att dra fältet från rutan *Fält*  i den högra rutan i avsnittet *Kategori* till vänster.
+När vi högerklickar du på fältet **Värden** och väljer **Snabbmått** kan vi välja *Genomsnitt per kategori* som *beräkning*och välja *Summan av försäljning* som *basvärde*. Ange *SalesAmount* genom att dra fältet från rutan *Fält*  i den högra rutan i avsnittet *Kategori* till vänster.
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 

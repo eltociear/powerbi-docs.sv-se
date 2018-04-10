@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: 49849853d40bca9e2a2c4cb8084018f20ecaeabf
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 7e75eacac61779a1ecd714d009a61fe4306e2885
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="getting-a-custom-visual-certified"></a>Få anpassade visuella objekt *certifierade*
 ## <a name="what-is-meant-by-certified"></a>Vad menas med begreppet *certifierad*?
@@ -124,6 +124,7 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Miniatyrdiagram från OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380910) | [Video](https://youtu.be/0m3Vnvso9tY) |
 | [Stream-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380772) | |
 | [Solstråle](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380767) | |
+| [Synoptisk panel från OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380873) | |
 | [Termisk tabellkarta](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380818) | |
 | [Tachometer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380937) | [Video](https://youtu.be/C3OXdETbS9o) |
 | [Textfilter](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |

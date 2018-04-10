@@ -1,28 +1,28 @@
 ---
-title: "Power BI-administratörsportalen"
-description: "I administratörsportalen kan Power BI-klienterna i din organisation hanteras. Den innehåller sådant som användningsstatistik för åtkomst till Office 365-administrationscenter och inställningar."
+title: Power BI-administratörsportalen
+description: I administratörsportalen kan Power BI-klienterna i din organisation hanteras. Den innehåller sådant som användningsstatistik för åtkomst till Office 365-administrationscenter och inställningar.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
-ms.author: maghan
+ms.date: 04/02/2018
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1ce2bc2746773c344251b89173b5825940eb0174
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 54ddccf9ca6ffdc1d9cbe840dbfced8d978ad194
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -326,8 +326,8 @@ Viktigt: Du kan inte ångra borttagningen. När det visuella objektet väl har t
  
 ### <a name="how-to-update-a-visual"></a>Så här uppdaterar du ett visuellt objekt
 
-Om du vill uppdatera ett visuellt objekt i databasen när det finns en ny version av det (felkorrigeringar, nya funktioner osv), laddar du upp den nya filen (kontrollera att det visuella ID:t är detsamma) som en ny ingång i listan, ser till att ange rätt information i rubriken och beskrivningen (t.ex. Mitt visuella objekt 2.0). Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.
- 
+Om du vill uppdatera en visualisering i databasen eftersom det finns en ny version av visualiseringen (t.ex. felkorrigeringar, nya funktioner, etc.), väljer du ikonen **Uppdatera** och laddar upp den nya filen. Kontrollera att visualiserings-ID förblir oförändrat. Den nya filen ersätter den tidigare filen för alla rapporter i hela organisationen. Men om den nya versionen av visualiseringen kan skada någon användnings- eller datastruktur av den tidigare versionen av visualiseringen ska du inte ersätta den tidigare versionen. I stället bör du skapa en ny lista för den nya versionen av visualiseringen. Lägg till exempel till ett nytt versionsnummer (version X.X) till rubriken för den nya listade visualiseringen. På det här sättet är det klart att det är samma visualisering men bara med ett uppdaterat versionsnummer så att befintliga rapporter inte skadar deras funktioner. Kontrollera igen att visualiserings-ID förblir oförändrat. Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.
+
 ## <a name="next-steps"></a>Nästa steg
 
 [Förstå Power BI-administratörsrollen](service-admin-role.md)  

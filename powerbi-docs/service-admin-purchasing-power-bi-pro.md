@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/22/2018
 ms.author: maghan
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b0b49e5c628f5e01bb2368d9bc471acc5342f97
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 685091cff071676da050d1a042a487fdadc77407
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="purchasing-power-bi-pro"></a>Köp Power BI Pro
 
@@ -70,6 +70,10 @@ Följ dessa steg för att köpa Power BI Pro om du är Office IT-administratör:
 ## <a name="pricing"></a>Prissättning
 
 Den senaste prisinformationen hittar du i [Power BI-priser](https://powerbi.microsoft.com/en-us/pricing/).
+
+> [!NOTE]
+> Användare med Pro-licenser har 30 dagar med fullständig åtkomst efter att prenumeration avslutats. När detta händer visas prenumerationen som ”upphört att gälla” i administrationsportal.
+>
 
 ## <a name="next-steps"></a>Nästa steg
 [Självregistrering för Power BI](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)

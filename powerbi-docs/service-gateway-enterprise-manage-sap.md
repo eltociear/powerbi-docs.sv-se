@@ -1,15 +1,15 @@
 ---
-title: "Hantera din SAP HANA-datakälla"
-description: "Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway. Den här artikeln är specifik för SAP HANA."
+title: Hantera din SAP HANA-datakälla
+description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway. Den här artikeln är specifik för SAP HANA.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8f9ec69c2a131a8de8f53385170bbddc59211f7b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 43bc0c22918e041f354c29ae9cc3ee4806b8da1a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="manage-your-sap-hana-data-source"></a>Hantera din SAP HANA-datakälla
-När du har installerat den lokala datagatewayen måste du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda SAP HANA-datakällan för schemalagd uppdatering eller DirectQuery.
+När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda SAP HANA-datakällan för schemalagd uppdatering eller DirectQuery.
 
 ## <a name="download-and-install-the-gateway"></a>Ladda ned och installera gatewayen
 Du kan ladda ned gatewayen från Power BI-tjänsten. Välj **Nedladdningar** > **Datagateway** eller gå till [nedladdningssidan för gatewayer](https://go.microsoft.com/fwlink/?LinkId=698861).
@@ -122,6 +122,6 @@ Om du finns med på fliken **Användare** i den datakälla som konfigurerats i g
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway](service-gateway-onprem.md)  
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

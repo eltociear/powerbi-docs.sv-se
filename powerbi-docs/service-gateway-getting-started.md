@@ -1,15 +1,15 @@
 ---
-title: "Kom igång med Power BI-gatewayar"
-description: "Lär dig grunderna om datagatewayer för Power BI."
+title: Kom igång med Power BI-gatewayar
+description: Lär dig grunderna om datagatewayer för Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: e56af5ae1c59afc7d7aef01450bb1c778eb70b14
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: bf01bb7764db09d6afe24e520f2d185c191ef56c
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="getting-started-with-power-bi-gateways"></a>Kom igång med Power BI-gatewayar
 Välkommen till guiden **kom igång med Power BI-gatewayer**. I den här korta genomgången får du bekanta dig med vad en gateway gör, hur den fungerar och hur du får din egen gateway installerad, konfigurerad och klar att köras.  
@@ -84,9 +84,9 @@ Det finns några saker att tänka på vid den här beslutspunkten:
 
 * Båda gatewayer kräver ett 64-bitars Windows-operativsystem.
 * Gatewayer kan installeras på en domänkontrollant.
-* Du kan installera upp till två lokala datagateways på samma dator, en i varje läge (personlig och standard). 
+* Du kan installera upp till två lokala datagatewayer på samma dator, en i varje läge (personlig och standard). 
 * Du kan inte ha fler än en gateway som körs i samma läge på samma dator.
-* Du kan installera flera lokala datagateways på olika datorer och hantera dem från samma hanteringsgränssnitt för Power BI-gatewayen (exklusive personlig, se följande punkt).
+* Du kan installera flera lokala datagatewayer på olika datorer och hantera dem från samma hanteringsgränssnitt för Power BI-gatewayen (exklusive personlig, se följande punkt).
 * Du kan bara ha en gateway i personligt läge som körs för varje Power BI-användare. Om du installerar en annan gateway i personligt läge för samma användare, även om det är på en annan dator, ersätter den senaste installationen den befintliga tidigare installationen.
 
 När vi väljer **nästa**, påbörjas gatewayinstallationen. Du måste ange var den ska installeras och standardplatsen är oftast bäst.
@@ -160,10 +160,10 @@ När du gör det, visas panelen **inställningar för datakälla** i den högra 
 Nu har du en installerad gateway och är redo att lägga till datakällor. Toppen! Resurserna i följande avsnitt innehåller information om datakällor, mer information om hur du använder gatewayer och annan användbar information.
 
 ## <a name="next-steps"></a>Nästa steg
-[Använd den lokala datagatewayen](service-gateway-onprem.md)  
+[Använda den lokala datagatewayen](service-gateway-onprem.md)  
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 [Lokal datagateway (personligt läge)](service-gateway-personal-mode.md)
-[Felsök den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
