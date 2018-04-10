@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2bdd29f664d49dd4628b2f27d0eddf1f5dad1cf7
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 0b2ff8d7b7367e29e62b373ca9cb1312f7ddd10f
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
 I Power BI Desktop skapar du en **formkartan** för att visa relativa jämförelser mellan områden på en karta genom att använda olika färger i olika områden. Jämfört med **kartor** kan **formkartor** inte visa exakta geografiska platser för datapunkter på en karta. Dess huvudsakliga syfte är att visa relativa jämförelser för regioner på en karta genom att markera dem med olika färger.
@@ -32,7 +32,7 @@ I Power BI Desktop skapar du en **formkartan** för att visa relativa jämförel
 ## <a name="creating-shape-maps"></a>Skapa formkartor
 Du kan testa kontrollen **Formkarta** med kartorna som levereras med den här förhandsversionen använda dina egna anpassade kartor förutsatt att de uppfyller kraven som anges i följande avsnitt: **Använda anpassade kartor**.
 
-**Formkartor** är en förhandsversion och måste aktiveras i Power BI Desktop. För att aktivera **Formkartor** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera sedan kryssrutan bredvid **Bokmärken**. Du måste starta om Power BI Desktop när du har gjort valet.
+**Formkartor** är en förhandsversion och måste aktiveras i Power BI Desktop. För att aktivera **Formkartor** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markerar sedan kryssrutan bredvid **Forma visuell mappning**. Du måste starta om Power BI Desktop när du har gjort valet.
 
 ![](media/desktop-shape-map/shape-map_1a.png)
 
@@ -46,7 +46,7 @@ Power BI Desktop skapar en tom arbetsyta för **Formkarta**.
 
 Vidta följande steg för att skapa en **Formkarta**:
 
-1. I rutan **Fält** drar du ett datafält som har ett regionnamn (eller förkortning) till **plats**bucketen och datafältet i bucketen **Värden** (du kommer inte se en karta ännu).
+1. I rutan **Fält** drar du ett datafält som har ett regionnamn (eller förkortning) till **plats**bucketen och datafältet i bucketen **Färgmättnad** (du kommer inte se en karta ännu).
    
    > [!NOTE]
 > Se avsnittet **Hämta kartdata** nedan för information om hur du snabbt hämtar kartdata för att testa **formkartan**.
@@ -70,7 +70,7 @@ Vidta följande steg för att skapa en **Formkarta**:
 ## <a name="use-custom-maps"></a>Använda anpassade kartor
 Du kan använda anpassade kartor med **Formkarta** så länge som de finns i **TopoJSON**-format. Om kartan är i ett annat format kan du använda onlineverktyg som [**Kartformaren**](http://mapshaper.org/) för att konvertera dina *formfiler* eller *GeoJSON*-mappar till **TopoJSON**-format.
 
-För att använda din **TopoJSON**-kartfil, lägger du till ett visuellt ShapeMap-objekt i rapporten och lägger till vissa data i bucketarna *Plats* och *Värden*. I rutan **Visualiseringar** med avsnittet **Format** markerat (penselikonen visas som (1) i följande bild) expanderar du området **Form** och väljer **+ Lägg till karta**.
+För att använda din **TopoJSON**-kartfil, lägger du till ett visuellt ShapeMap-objekt i rapporten och lägger till vissa data i bucketarna *Plats* och *Färgmättning*. I rutan **Visualiseringar** med avsnittet **Format** markerat (visas som (1) i följande bild) expanderar du området **Form** och väljer **+ Lägg till karta**.
 
 ![](media/desktop-shape-map/shape-map_6.png)
 
@@ -96,7 +96,7 @@ För att snabbt hämta data till en modell så att du kan testa **formkartan** k
 
 ![](media/desktop-shape-map/shape-map_4.png)
 
-Du kan sedan klistra in tabellen i Power BI Desktop. Den översta raden identifieras automatiskt som en rubrik.
+Om dina data har flera kolumner, behöver du använda en redigerare som Excel för att klistra in data och sedan kopiera varje datakolumn separat. Du kan sedan klistra in data i Power BI Desktop. Den översta raden identifieras automatiskt som en rubrik.
 
 ![](media/desktop-shape-map/shape-map_5.png)
 
@@ -112,9 +112,9 @@ Du kan ange en ny kolumn genom att skriva ett nytt kolumnnamn (i den tomma kolum
 ## <a name="preview-behavior-and-requirements"></a>Förhandsgranskningens beteende och krav
 Det finns några överväganden och krav för den här förhandsversionen av **Formkarta**:
 
-* **Formkartor** är en förhandsversion och måste aktiveras i Power BI Desktop. För att aktivera **Formkartor** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera sedan kryssrutan bredvid **Bokmärken**.
-* För närvarande måste bucketen **Värden** vara inställd för att klassificeringen **Förklaring** ska fungera korrekt
-* Slutversionen av **formkartan** har ett användargränssnitt som visar kartnycklarna för den valda kartan (inget datum har angivits för slutversionen och **formkartan** är fortfarande tillgänglig som förhandsversion). I förhandsversionen finns kartregionsnycklarna i tabellerna i avsnittet **Regionsnycklar** i den här artikeln.
+* **Formkartor** är en förhandsversion och måste aktiveras i Power BI Desktop. För att aktivera **Formkartor** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markerar sedan kryssrutan bredvid **Forma visuell mappning**.
+* För närvarande måste bucketen **Färgmättnad** vara inställd för att klassificeringen **Förklaring** ska fungera korrekt.
+* Den slutliga versionen av **Formkartan** har ett användargränssnitt som visar kartnycklarna för aktuellt vald karta (inget datum har angetts för slutlig utgåva och **Formkarta** är fortfarande i förhandsversion). I den här förhandsversionen kan du referera till kartans regionsnycklar i tabellerna som du hittar i följande avsnitt för **Regionsnycklar** i den här artikeln.
 * Det visuella objektet **Formkarta** ritar upp till 1 000 datapunkter.
 
 ## <a name="region-keys"></a>Regionsnycklar

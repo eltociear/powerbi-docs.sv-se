@@ -1,27 +1,27 @@
 ---
 title: Publicera anpassad visuell information till AppSource
-description: "Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem."
+description: Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/5/2017
+ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 5dc5cda126943bbb6da25e384b789c169187b249
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 9730f92a7f50e2e0d0ad824f8a5f74f6a09ded97
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
 Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem. office
@@ -39,7 +39,7 @@ När du är klar med att koda och testa ditt anpassade visuella objekt och har f
 | --- | --- | --- |
 | Pbiviz-paketet innehåller alla metadata som krävs |Ja |Visuellt namn<br>Visningsnamn<br>GUID<br>Version<br>Beskrivning<br>Författarens namn och e-post |
 | Exempel på .pbix-rapportfil |Ja |Om du vill visa ditt visuella objekt bör du hjälpa användare att bekanta sig med det visuella objektet. Du bör fokusera på det mervärde som det visuella objektet medför till användaren och ge exempel på användningsområden, formateringsalternativ med mera. Du kan också lägga till en *”tips”*-sida på slutet med några tips och tricks, saker att undvika och liknande.<br>Exemplet på en .pbix-rapportfil måste fungera offline, utan någon extern anslutning. |
-| Ikon |Ja |Du bör inkludera den anpassade visuella logotypen som visas i Store. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300px (bredd) x 300px (höjd). Filstorleken får inte vara större än 512 kb. |
+| Ikon |Ja |Du bör inkludera den anpassade visuella logotypen som visas i Store. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300px (bredd) x 300px (höjd). **Viktigt!** Granska [snabbguiden](https://docs.microsoft.com/en-us/office/dev/store/craft-effective-appsource-store-images) noggrant innan du skickar ikonen. |
 | Skärmbilder |Ja |Du måste ange minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 1366 px (bredd) x 768 px (höjd). Filstorleken får inte vara större än 1024 kb. *Lägg till textbubblor för att tydligt betona mervärdet av viktiga funktioner som visas i varje skärmbild.* |
 | Länk till nedladdningssupport |Ja |Ange en URL för att stödja kunder som har problem med ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller http://. |
 | Länk till sekretessdokumentet |Ja |Ange en länk till sekretesspolicyn för kunder som använder ditt visuella objekt. Formatet på länken ska inkludera https:// eller http://. |
@@ -49,6 +49,10 @@ När du är klar med att koda och testa ditt anpassade visuella objekt och har f
 
 ## <a name="submitting-to-power-bi"></a>Publicera till Power BI
 Publiceringen börjar med att skicka ett e-postmeddelande till Power BI-teamet för överföring av anpassade visuella objekt. Du kan skicka e-post till [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+
+> [!IMPORTANT]
+> Du måste fylla i följande fält i filen pbiviz.json: ”beskrivning”, ”supportUrl”, ”författare”, ”namn” och ”e-post” innan du skapar .pbiviz-paketet.
+> 
 
 Bifoga .pbiviz-filen och pbix-filen med exempelrapporten i ditt e-postmeddelande. Power BI-teamet kommer att svara med instruktioner och en XML-appaketsfil att överföra. Det här XML-appaketet krävs för att skicka ditt visuella objekt via Office Developer Center.
 

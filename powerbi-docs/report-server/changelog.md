@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: 7c460955aba71bfb3a89d94aa6000c7bdd451ac2
-ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
+ms.openlocfilehash: 1345cfee8eb92b9b4e3cf883f19edddee859a1c3
+ms.sourcegitcommit: c9905e625ba14dc28ad23835f320e49631c51d0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -31,6 +31,12 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 ## <a name="march-2018"></a>Mars 2018
 - **Power BI-rapportserver**
+    - *Version 1.2.6660.39920 (build-nr 15.0.2.389), publicerad: 28 mars 2018*
+        - Felkorrigeringar
+            - För Power BI-rapporter (PBIX), fungerar korrigering för Exportera data inte från Power BI-visualiseringar
+            - För Power BI-rapporter (PBIX), fungerar korrigeringar för URL-filter inte
+            - För sidbrytningsrapporter (RDL), visas korrigering för bilder inte korrekt i IE11 när du har uppgraderat till Power BI-rapportservern som släpptes i mars
+
     - *Version 1.2.6648.38132 (build-nr 15.0.2.378), publicerad: 19 mars 2018*
         - Säkerhetsuppdateringar
         - Förbättrad användbarhet

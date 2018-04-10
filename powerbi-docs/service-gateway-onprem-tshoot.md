@@ -1,30 +1,30 @@
 ---
-title: "Felsöka den lokala datagatewayen"
-description: "Den här artikeln innehåller olika sätt att felsöka problem hos din lokala datagateway. Här finns lösningar på kända problem och verktyg som kan hjälpa dig."
+title: Felsökning av den lokala datagatewayen
+description: Den här artikeln innehåller olika sätt att felsöka problem hos din lokala datagateway. Här finns lösningar på kända problem och verktyg som kan hjälpa dig.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/21/2017
-ms.author: davidi
+ms.date: 03/23/2018
+ms.author: maghan
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1651f18194cd47582376b52bb6359db10a330c27
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9742fd0d48f4a77b5019aa7547fa511404c6f63e
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="troubleshooting-the-on-premises-data-gateway"></a>Felsöka den lokala datagatewayen
+# <a name="troubleshooting-the-on-premises-data-gateway"></a>Felsökning av den lokala datagatewayen
 Den här artikeln går igenom några vanliga problem som kan uppstå med en **lokal datagateway**.
 
 <!-- Shared Community & support links Include -->
@@ -78,7 +78,7 @@ Om du uppgraderar från en äldre gateway bevarar vi konfigurationsfilen. Det ka
 1. Avinstallera gatewayen.
 2. Ta bort följande mapp.
    
-        c:\Program Files\on-premises data gateway
+        c:\Program Files\On-premises data gateway
 3. Installera om gatewayen.
 4. Du kan också använda återställningsnyckeln för att återställa en befintlig gateway.
 
@@ -314,11 +314,13 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
-### <a name="microsoftpowerbidatamovementpipelinegatewaycoredllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-I filen *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config*, ändra `TraceVerbosity`-värdet från `4` till `5`. Den här filen finns som standard på *C:\Program\Lokal datagateway*. När du ändrar den här inställningen kommer utförliga poster att loggas i gatewayloggen. Detta inkluderar poster som visar varaktighet.
+### <a name="microsoftpowerbidatamovementpipelinediagnosticsdllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
+I filen *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config*, ändra `TracingVerbosity`-värdet från `4` till `5`. Den här filen finns som standard på *C:\Program\Lokal datagateway*. När du ändrar den här inställningen kommer utförliga poster att loggas i gatewayloggen. Detta inkluderar poster som visar varaktighet. Du kan också aktivera utförliga poster genom att aktivera knappen ”ytterligare loggning” i programmet för lokal gateway.
+
+   ![ytterligare loggning](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> Genom att aktivera TraceVerbosity till `5` ökar loggstorleken avsevärt beroende på gatewayens användning. När du har granskat loggarna ska du ställa in TraceVerbosity på `4`. Vi rekommenderar inte att lämna den här inställningen aktiv på lång sikt.
+> Genom att aktivera TracingVerbosity till `5` ökar loggstorleken avsevärt beroende på gatewayens användning. När du har granskat loggarna ska du ställa in TraceVerbosity på `4`. Vi rekommenderar inte att lämna den här inställningen aktiv på lång sikt.
 > 
 > 
 
@@ -352,6 +354,72 @@ Du kan göra följande för att fastställa den tid det tog för att fråga data
    > 
    > 
 
+## <a name="kerberos"></a>Kerberos
+
+Om den underliggande databasservern och lokala datagateway inte har konfigurerats korrekt för [Kerberos-begränsad delegering](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), aktivera [utförlig loggning](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) på gatewayen, och undersök baserat på fel/spår i gatewayens loggfiler som en startpunkt för felsökning.
+
+### <a name="impersonationlevel"></a>ImpersonationLevel
+
+ImpersonationLevel relaterar till SPN-installationsprogrammet eller den lokala principinställningen.
+
+```
+[DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
+```
+
+**Lösning**
+
+Följ dessa steg för att lösa problemet:
+1. Konfigurera ett SPN för lokal gateway
+2. Konfigurera begränsad delegering i din Active Directory (AD)
+
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Det gick inte att skapa Windows-identitet för användar-ID
+
+FailedToImpersonateUserException sker om det inte går att personifiera för en annan användare. Detta kan också inträffa om det konto som du försöker att personifiera är från en annan domän än den som gatewaytjänstdomänen är på (detta är en begränsning).
+
+**Lösning**
+* Kontrollera att konfigurationen är korrekt enligt anvisningarna i avsnittet ImpersonationLevel ovan
+* Se till att det användar-ID som den försöker att personifiera ett giltigt AD-kontot
+
+### <a name="general-error-1033-error-while-parsing-protocol"></a>Allmänt fel. 1033-fel vid parsning av protokollet
+
+Du får felet 1033 när ditt externa ID som har konfigurerats i SAP HANA inte matchar inloggningen om användaren personifieras med UPN (alias@domain.com). I loggarna kommer du att se ”Ursprungligt UPN alias@domain.com ersatt med nytt UPN alias@domain.com överst i felloggarna som visas nedan”.
+
+```
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+```
+
+**Lösning**
+* SAP HANA kräver att den personifierade användaren använder attributet sAMAccountName i AD (användaralias). Om detta inte är korrekt visas 1033-fel.
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+
+* I loggarna visas sAMAccountName (alias) och inte UPN, vilket är alias följt av domänen (alias@doimain.com)
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+
+```
+      <setting name="ADUserNameReplacementProperty" serializeAs="String">
+        <value>sAMAccount</value>
+      </setting>
+      <setting name="ADServerPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CustomASDataSource" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="ADUserNameLookupProperty" serializeAs="String">
+        <value>AADEmail</value>
+```
+
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Kommunikationslänkfel 10709 Anslutningen misslyckades (RTE: [-1] Kerberos-fel. Större: ”Diverse fel [851968]”, mindre: ”Inga autentiseringsuppgifter är tillgängliga i säkerhetspaketet
+
+Du får felmeddelandet 10709 Anslutning misslyckades om delegeringen inte har konfigurerats korrekt i AD.
+
+**Lösning**
+* Se till att du har SAP Hana-servern i delegeringsfliken i AD för gatewaytjänstkontot
+
+   ![delegeringsflik](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
 <!-- Shared Troubleshooting tools Include -->
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
@@ -378,4 +446,3 @@ Mer information om felsökning av uppdateringsscenarier finns i artikeln [Felsö
 [Hantera din datakälla – SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

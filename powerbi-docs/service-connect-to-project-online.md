@@ -1,15 +1,15 @@
 ---
 title: Anslut till Project Online med Power BI
-description: "Project Online för Power BI"
+description: Project Online för Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6272b3f175d7da851e5d8086c574a91f0f00c933
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1d0cb4531dca1f200adbb21514fb49df8c872ecc
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="connect-to-project-online-with-power-bi"></a>Anslut till Project Online med Power BI
 Microsoft Project Online är en flexibel lösning för hantering av projektportföljer (PPM) och dagligt arbete. Project Online låter organisationer komma igång, prioritera investeringar i projektportföljer och leverera det avsedda verksamhetsvärdet. Project Online-innehållspaketet för Power BI låter dig utforska dina projektdata, med mått som portföljstatus och projektefterlevnad.
@@ -45,6 +45,9 @@ Anslut till [Project Online-innehållspaketet](https://app.powerbi.com/getdata/s
 5. Som Autentiseringsmetod väljer du **oAuth2** \> **Logga in**. När du uppmanas till det anger du dina autentiseringsuppgifter för Project Online och följer autentiseringsprocessen.
    
     ![](media/service-connect-to-project-online/creds.png)
+    
+Observera att du måste ha behörighet för portföljvy, portföljansvarig eller administratör för den Project Web App som du ansluter till.
+
 6. Du ser ett meddelande som visar att dina data läses in. Det kan ta en stund att läsa in datan beroende på hur stort ditt konto är. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datauppsättning i det vänstra navigeringsfönstret. Det här är standardinstrumentpanelen som Power BI skapade för att visa dina data. Du kan ändra den här instrumentpanelen för att visa dina data på det sätt som du vill.
    
    ![](media/service-connect-to-project-online/dashboard2.png)

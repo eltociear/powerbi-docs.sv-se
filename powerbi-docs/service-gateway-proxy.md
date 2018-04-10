@@ -1,15 +1,15 @@
 ---
-title: "Konfigurera proxyinställningar för den lokala datagatewayen"
-description: "Information om konfiguration av proxyinställningar för den lokala datagatewayen."
+title: Konfigurera proxyinställningar för den lokala datagatewayen
+description: Information om konfiguration av proxyinställningar för den lokala datagatewayen.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 27b8d36ed870501170efdb81c40edb6cb4727499
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f6bfc47e7b74d9b17479a2ac7fc3dbc3f3e76816
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfigurera proxyinställningar för den lokala datagatewayen
 Din arbetsmiljö kan kräva att du går via en proxy för att ansluta till Internet. Detta kan förhindra att den lokala datagatewayen ansluter till tjänsten.
@@ -83,7 +83,7 @@ När du konfigurerar proxyinställningarna till att använda standardautentiseri
    
         net start PBIEgwService
 3. Starta den **lokala datagatewaykonfiguratorn**. Du kan använda startknappen i Windows och söka efter *den lokala datagatewayen*.
-4. Logga in på Power BI.
+4. Logga in i Power BI.
 5. Återställa gatewayen med återställningsnyckeln.
    
     Detta gör att det nya tjänstkontot kan dekryptera lagrade autentiseringsuppgifter för datakällor.

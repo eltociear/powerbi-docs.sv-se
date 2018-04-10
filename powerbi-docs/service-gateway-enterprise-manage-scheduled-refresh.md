@@ -1,15 +1,15 @@
 ---
-title: "Hantera din datakälla – Import/schemalagd uppdatering"
-description: "Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway. Den här artikeln är specifik för datakällor som kan användas med import/schemalagd uppdatering."
+title: Hantera din datakälla – Import/schemalagd uppdatering
+description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway. Den här artikeln är specifik för datakällor som kan användas med import/schemalagd uppdatering.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8002cf2df278cd3329b62b5322a6faabc9394f57
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4fdd1380f10a44c45dd17b04c21ccfba8fbf9cd8
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Hantera din datakälla – Import/schemalagd uppdatering
 När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. Den här artikeln tittar på hur du kan arbeta med gatewayer och datakällor som används för schemalagd uppdatering i stället för DirectQuery- eller live-anslutningar.
@@ -125,6 +125,6 @@ Om du finns med på fliken **Användare** i den datakälla som konfigurerats i g
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway](service-gateway-onprem.md)  
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
-[Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -1,15 +1,15 @@
 ---
-title: "Förstå sekretessnivåer i Power BI Desktop"
-description: "Sekretessnivåer i Power BI Desktop"
+title: Förstå sekretessnivåer i Power BI Desktop
+description: Sekretessnivåer i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3cf6875fcb0756bfa9f5622a8d49f5b645b13c24
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 110d851e08ee8b63645c11507500eb2cbf179a46
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Sekretessnivåer i Power BI Desktop
 I **Power BI Desktop**, anger sekretessnivåer en isoleringsnivå som definierar hur en datakälla isoleras från andra datakällor. Även om en begränsande isoleringsnivå blockerar information från att utbytas mellan datakällor, kan det minska funktionaliteten och påverka prestandan.
@@ -31,15 +31,6 @@ I inställningen **Sekretessnivåer** som finns i **Fil > Alternativ och instäl
 
 ![](media/desktop-privacy-levels/desktop_privacylevels1.png)
 
- Inställningsdialogrutan **Sekretess** för varje datakälla hittas i **Fil > Alternativ och inställningar > Inställningar för datakälla**. Välj datakällan och välj sedan **Redigera**. Dialogrutan **Inställningar för datakälla** visas där du kan välja lämplig sekretessnivå från listrutan längst ned i dialogrutan som det visas i följande bild.
-
- ![](media/desktop-privacy-levels/desktop_privacylevels2.png)
-
-> [!CAUTION]
-> Du bör konfigurera en datakälla som innehåller mycket känsliga eller konfidentiella data som **Privat**.
-> 
-> 
-
 ## <a name="configure-a-privacy-level"></a>Konfigurera en sekretessnivå
 Med inställningar för sekretessnivå kan du ange en isoleringsnivå som definierar hur en datakälla måste isoleras från andra datakällor.
 
@@ -47,7 +38,7 @@ Med inställningar för sekretessnivå kan du ange en isoleringsnivå som defini
 | --- | --- | --- |
 | **Privat datakälla** |En **Privat** datakälla innehåller känslig eller konfidentiell information och synligheten för datakällan kan begränsas till behöriga användare. En privat datakälla är helt isolerad från andra datakällor. |Facebook-data, en textfil som innehåller aktieersättning, eller en arbetsbok som innehåller information av granskning av anställda. |
 | **Organisationsdatakällor** |En **Organisations**datakälla begränsar synligheten för en datakälla till en betrodd grupp med personer. En **Organisations**datakälla är isolerad från alla **Offentliga** datakällor, men är synlig för andra **Organisations**datakällor. |Ett **Microsoft Word**-dokument på en SharePoint-intranätsida med behörigheter som har aktiverats för en betrodd grupp. |
-| **Offentlig datakälla** |En **Offentlig** datakälla ger alla synlighet för de data som finns i datakällan. Endast filer, Internet-datakällor eller arbetsboksdata kan markeras **Offentlig**. |Lediga data från Microsoft Azure Marketplace, data från en Wikipedia-sida eller en lokal fil som innehåller data som kopierats från en offentlig webbplats |
+| **Offentlig datakälla** |En **Offentlig** datakälla ger alla synlighet för de data som finns i datakällan. Endast filer, Internet-datakällor eller arbetsboksdata kan markeras **Offentlig**. |Lediga data från Microsoft Azure Marketplace, data från en Wikipedia-sida eller en lokal fil som innehåller data som kopierats från en offentlig webbplats. |
 
 ## <a name="configure-privacy-level-settings"></a>Konfigurera sekretessnivåinställningar
 Inställningsdialogrutan **Sekretess** för varje datakälla hittas i **Fil > Alternativ och inställningar > Inställningar för datakälla**.

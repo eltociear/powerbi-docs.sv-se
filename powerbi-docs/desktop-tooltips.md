@@ -1,15 +1,15 @@
 ---
-title: "Använda rapportknappbeskrivningssidor i Power BI"
-description: "Med knappbeskrivningssidor i Power BI Desktop kan du skapa avancerade hover-baserade knappbeskrivningar för visuella objekt i rapporter"
+title: Använda rapportknappbeskrivningssidor i Power BI
+description: Med knappbeskrivningssidor i Power BI Desktop kan du skapa avancerade hover-baserade knappbeskrivningar för visuella objekt i rapporter
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,23 +18,23 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2905dbc51e684ec39ac36a76c7024db0fe15cc18
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 87733126c4772b88c4e58cf60f9640668faf9cc7
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop (förhandsversion)
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 
 
 ![Rapportknappbeskrivningar för Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
 
-Du kan skapa hur många knappbeskrivningssidor du vill. Varje knappbeskrivningssida kan associeras med ett eller flera fält i en rapport, så att knappbeskrivningen som du har skapat på knappbeskrivningssidan visas när du hovrar över det visuella objektet som innehåller det markerade fältet, filtrerat baserat på datapunkten som musen hovrar över. 
+Du kan skapa hur många knappbeskrivningssidor du vill. Varje knappbeskrivningssida kan associeras med ett eller flera fält i en rapport, så att knappbeskrivningen som du har skapat på knappbeskrivningssidan visas när du hovrar över det visuella objektet som innehåller det markerade fältet, filtrerat med datapunkten som musen hovrar över. 
 
 Det finns alla möjliga intressanta saker du kan göra med rapportknappbeskrivningar. Vi tar en titt på hur du skapar knappbeskrivningar och vad du måste göra för att konfigurera dem.
 
 ### <a name="enable-the-tooltips-preview"></a>Aktivera förhandsversionen av knappbeskrivningar 
-Eftersom rapportknappbeskrivningar för närvarande finns som förhandsversion måste du aktivera dem innan du kan skapa rapportknappbeskrivningar. Aktivera förhandsversionsfunktionen för rapportknappbeskrivningar genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** i Power BI Desktop och markera kryssrutan bredvid **Bokmärken**. 
+Eftersom rapportknappbeskrivningar för närvarande finns som förhandsversion måste du aktivera dem innan du kan skapa rapportknappbeskrivningar. Aktivera förhandsversionsfunktionen för rapportknappbeskrivningar genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** i Power BI Desktop och markera kryssrutan bredvid **Rapportsida för verktygstips**. 
 
 ![Aktivera förhandsversionsfunktionen för rapportknappbeskrivningar](media/desktop-tooltips/desktop-tooltips_01.png)
 
@@ -73,7 +73,7 @@ Först måste du ändra skjutreglaget vid **Knappbeskrivning** till **På** i ko
 
 ![Aktivera skjutreglaget för knappbeskrivning för att ange att sidan är en knappbeskrivning](media/desktop-tooltips/desktop-tooltips_07.png)
 
-När skjutreglaget är aktiverat anger du vilka fält du vill att rapportknappbeskrivningen ska visas för. För visuella objekt i rapporten som innehåller det fält du anger kommer knappbeskrivningen att visas. Du anger vilket eller vilka fält som ska användas genom att dra dem till **bucketen **Knappbeskrivningsfält** i avsnittet **Fält** i fönstret Visualiseringar**. På följande bild har fältet *SalesAmount* dragits till bucketen **Knappbeskrivningsfält**.
+När skjutreglaget är aktiverat anger du vilka fält du vill att rapportknappbeskrivningen ska visas för. För visuella objekt i rapporten som innehåller det fält du anger kommer knappbeskrivningen att visas. Du anger vilket eller vilka fält som ska användas genom att dra dem till bucketen **Knappbeskrivningsfält** i avsnittet **Fält** i fönstret **Visualiseringar**. På följande bild har fältet *SalesAmount* dragits till bucketen **Knappbeskrivningsfält**.
 
 ![Lägg till fält för att ange var knappbeskrivningen ska visas](media/desktop-tooltips/desktop-tooltips_08.png)
  

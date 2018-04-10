@@ -1,15 +1,15 @@
 ---
-title: "Självstudie: Analysera försäljningsdata från Excel och en OData-feed i Power BI Desktop"
-description: "Självstudie: Analysera försäljningsdata från Excel och en OData-feed"
+title: 'Självstudie: Analysera försäljningsdata från Excel och en OData-feed i Power BI Desktop'
+description: 'Självstudie: Analysera försäljningsdata från Excel och en OData-feed'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 4cab3ed114d03d42c6acf1bf62f70e7d920e16b2
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: aad93a6c636fb0d75ad89f9e3d9eb70ec203cc88
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="tutorial-analyzing-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Analysera försäljningsdata från Excel och en OData-feed
 Med **Power BI Desktop** kan du ansluta till alla typer av datakällor och sedan kombinera och forma dem på ett sätt som gör det lättare att skapa intressant dataanalys och visualiseringar. I den här kursen lär du dig hur du kombinerar data från två datakällor. 
@@ -133,7 +133,7 @@ Beräkna den totala raden för varje **beställnings\_information**-rad:
 1. I bandfliken **Add Column** klickar du på **Lägg till** **Anpassad kolumn**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
-2. I dialogrutan **Lägg till anpassad kolumn** i textrutan **Egen kolumnformel** anger du **[Order\_Details.UnitPrice] \* [Order\_ Details.Quantity]**.
+2. I dialogrutan **Lägg till anpassad kolumn** i textrutan **Egen kolumnformel** anger du **[Order\_Details.UnitPrice]**  \* **[Order\_ Details.Quantity]**
 3. I textrutan **Nytt kolumnnamn** anger du **LineTotal**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)

@@ -1,15 +1,15 @@
 ---
-title: "Hantera din datakälla – SQL"
-description: "Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway."
+title: Hantera din datakälla – SQL
+description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e1bbc86ea56dfbc692d8a81cbeb4bc38d872c2b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ad9b619f7e0d52442796dc461948a705b9b0f74a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="manage-your-data-source---sql-server"></a>Hantera din datakälla – SQL Server
 När du har installerat den lokala datagatewayen kan du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan antingen använda SQL Server-datakällan för schemalagd uppdatering eller för DirectQuery.
@@ -129,7 +129,7 @@ Om du finns med på fliken **Användare** i den datakälla som konfigurerats i g
 ## <a name="next-steps"></a>Nästa steg
 * [Lokal datagateway](service-gateway-onprem.md)  
 * [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
-* [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md)
+* [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
 * [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

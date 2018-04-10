@@ -1,15 +1,15 @@
 ---
-title: "Självstudier: Skapa dina egna mått i Power BI Desktop"
-description: "Självstudier: Skapa dina egna mått i Power BI Desktop"
+title: 'Självstudier: Skapa dina egna mått i Power BI Desktop'
+description: 'Självstudier: Skapa dina egna mått i Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,242 +18,192 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 96295ced577ddb18b8c56031278bf9a81cddf981
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f3a58d8acc7d8eb24954e9db0c0db91eacad2f9a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Självstudier: Skapa dina egna mått i Power BI Desktop
-Några av de mest kraftfulla lösningarna för analys i Power BI Desktop kan skapas med hjälp av åtgärder. Mått hjälper oss genom att utföra beräkningar på våra data medan vi interagerar med vår rapporter. I den här självstudien får du hjälp att förstå och skapa vissa av dina egna grundmått i Power BI Desktop.
+Du kan skapa några av de mest kraftfulla lösningarna för analys i Power BI Desktop med hjälp av mått. Mått hjälper dig genom att utföra beräkningar på dina data medan du interagerar med dina rapporter. I den här självstudien får du hjälp att förstå mått och skapa dina egna grundmått i Power BI Desktop.
 
-Den här artikeln är avsedd för Power BI-användare som redan är bekanta med Power BI Desktop och som vill skapa mer avancerade modeller. Du bör redan känna till hur man använder Hämta data och Frågeredigeraren för att importera data, att arbeta med flera relaterade tabeller och att lägga till fält på rapportarbetsytan. Om du är nybörjare i Power BI Desktop bör du läsa [Komma igång med Power BI Desktop](desktop-getting-started.md).
+### <a name="prerequisites"></a>Förutsättningar
+- Den här självstudien är avsedd för Power BI-användare som redan är bekanta med Power BI Desktop och som vill skapa mer avancerade modeller. Du bör redan känna till hur man använder Hämta data och Frågeredigeraren för att importera data, att arbeta med flera relaterade tabeller och att lägga till fält på rapportarbetsytan. Om du är nybörjare i Power BI Desktop bör du läsa [Komma igång med Power BI Desktop](desktop-getting-started.md).
+  
+- Ladda ner filen [Contosos försäljningsexempel för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), den innehåller online-försäljningsdata från det fiktiva företaget Contoso, Inc. Dessa data har importerats från en databas, så du kan inte ansluta till datakällan eller visa den i frågeredigeraren. Packa upp filen på din dator och öppna den sedan i Power BI Desktop.
 
-Om du vill slutföra stegen i den här självstudien måste du ladda ned filen [Contoso Sales Sample för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip). Den innehåller redan online-försäljningsdata från det fiktiva företaget Contoso, Inc. Eftersom data i filen har importerats från en databas, kan du inte ansluta till datakällan eller visa den i frågeredigeraren. När du har filen på din dator kan du gå vidare och öppna den i Power BI Desktop.
+## <a name="understand-measures"></a>Förstå mått
 
-## <a name="what-are-these-measures-all-about"></a>Vad handlar dessa mått om?
-Måtten skapas oftast för oss automatiskt, t.ex. när vi markerar kryssrutan vid fältet **SalesAmount** i tabellen **Sales** i fältlistan, eller drar **SalesAmount** till rapportarbetsytan.
+Mått skapas i de flesta fall automatiskt. I försäljningsexempelfilen för Contoso markerar du kryssrutan bredvid **SalesAmount** i tabellen **Sales** i fältkällan, eller drar **SalesAmount** till rapportarbetsytan. En ny visualisering av ett kolumndiagram visas med summan av alla värden i kolumnen SalesAmount i tabellen Sales.
 
-![](media/desktop-tutorial-create-measures/measurestut_salesamountinfieldlist.png)
+![SalesAmount-tabell](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
 
-En ny diagramvisualisering visas, och ser ut så här:
+Alla fält som visas i fältkällan med en sigmaikon ![sigmaikon](media/desktop-tutorial-create-measures/meastut_sigma.png) är numerisk, och dess värden kan aggregeras. I stället för att visa en tabell med alla två miljoner rader i SalesAmount-värden, upptäckte Power BI Desktop en numerisk datatyp och skapade och beräknade automatiskt ett mått för att aggregera data. Summan är standardaggregering för en numerisk datatyp, men du lätt kan använda olika aggregeringar som medelvärde eller antal. Att förstå sig på aggregeringar är av avgörande betydelse om man vill förstå mått, eftersom varje mått utför någon typ av aggregering. 
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
+Ändra aggregeringsdiagrammet till ett medelvärde, i området **Value** i visualiseringsfönstret, klicka på nedpilen bredvid **SalesAmount** och välj **Average**. Visualiseringen ändras till ett medelvärde för alla försäljningsvärden i fältet SalesAmount.
 
-Vad vi får är ett stapeldiagram som visar försäljningsvärdenas totalsumma från fältet SalesAmount.  Vårt SalesAmount-fält är egentligen bara en kolumn med namnet SalesAmount i tabellen Sales som vi redan har importerat.
+![Diagram över genomsnittlig SalesAmount](media/desktop-tutorial-create-measures/meastut_salesamountaveragechart.png)
 
-Kolumnen SalesAmount innehåller över två miljoner rader med försäljningsvärden. Du kanske undrar varför du inte ser någon tabell med rader fyllda med dessa värden. Power BI Desktop vet att alla värden i SalesAmount är av en numerisk datatyp, och du vill förmodligen sammanställa dem på något sätt, genom att lägga ihop dem, räkna ut medelvärdet, räkna dem osv.
+Du kan ändra aggregeringstypen beroende på vilket resultat du vill ha, men alla aggregeringstyper kan inte tillämpas på vilken numerisk datatyp som helst. För SalesAmount-fältet så är t.ex. Sum och Average helt meningslösa. Minimum och Maximum har också sin plats. Men Count passar verkligen inte ihop med SalesAmount-fältet eftersom värdena, även om de är numeriska, i själva verket är valutavärden.
 
-När du ser ett fält i fältlistan med en sigma-ikon, ![](media/desktop-tutorial-create-measures/meastut_sigma.png), så innebär det att fältet är numeriskt, och att dess värden kan aggregeras. När vi, i det här fallet, väljer SalesAmount så skapar Power BI Desktop egna mått och summan av alla försäljningsbelopp beräknas och visas i diagrammet.
+Värden som beräknats från mått ändras som svar på dina interaktioner med rapporten. Om du t.ex. drar fältet **RegionCountryName** från tabellen **Geography** till ditt diagram så beräknas och visas genomsnittlig försäljning för varje land.
 
-Summa är standardaggregeringen när vi väljer ett fält med en numerisk datatyp, men vi kan enkelt ändra till en annan aggregeringstyp.
+![SaleAmount per land](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
 
-Om du klickar på nedåtpilen bredvid **SalesAmount** i området **Värde** kan du sedan välja **Medelvärde**.
+När resultatet av måttet ändras på grund av en interaktion med din rapport, så påverkas måttets *kontext*. Varje gång du interagerar med rapportvisualiseringar, ändrar du faktiskt den kontext i vilken ett mått beräknar och visar sina resultat.
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountaverage.png)
+## <a name="create-and-use-your-own-measures"></a>Skapa och använda egna mått
 
-Vår visualiseringen ändras till ett medelvärde för alla försäljningsvärden i fältet SalesAmount.
+I de flesta fall beräknar och returnerar Power BI automatiskt värdet enligt vilka typer av fält och aggregeringar som du väljer, men i vissa fall kanske du vill skapa egna mått för att utföra mer komplexa, unika beräkningar. Med Power BI Desktop kan du skapa egna åtgärder med dataanalysuttryck (DAX). 
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountaveragechart.png)
+DAX använder ofta samma funktioner, operatorer och syntax som används i Excel-formler. Dock är DAX-funktionerna utformade för att fungera med relationella data och utföra mer dynamiskt beräkningar när vi interagerar med dina rapporter. Det finns över 200 DAX-funktioner som gör allt från enkla aggregeringar som Sum och Average till mer avancerade funktioner för statistik och filtrering. Det finns många resurser som hjälper dig att lära dig mer om DAX. När du har slutfört den här kursen bör du läsa [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
-Vi kan ändra aggregeringstypen beroende på vilket resultat vi vill ha, men alla aggregeringstyper kan inte tillämpas på vilken numerisk datatyp som helst. För vårt SalesAmount-fält så är t.ex. Sum och Average helt meningslösa. Minimum och Maximum har också sin plats. Men Count passar verkligen inte ihop med vårt SalesAmount-fält eftersom värdena, även om de är numeriska, i själva verket är valutavärden.
+När du skapar egna mått, läggs de till i fältlistan för tabellen du väljer och kallas för ett *modell*mått. Några av fördelarna med modellmått är att du kan kalla dem vad du vill, vilket gör dem mer identifierbara. Du kan använda dem som argument i andra DAX-uttryck och du kan få dem att snabbt utföra komplexa beräkningar.
 
-Att förstå sig på aggregeringar är av avgörande betydelse om man vill förstå mått, eftersom varje mått utför någon typ av aggregering. Vi ska se fler exempel på hur man använder Sum-aggregering lite senare, när det är dags för dig att skapa några egna mått.
+>[!TIP]
+>Från och med Power BI Desktop-utgåvan från februari 2018, finns många vanliga beräkningar tillgängliga som **snabbmått**, vilka skriver DAX-formler automatiskt baserat på dina indata till en dialogruta. Dessa snabba och kraftfulla beräkningar är också bra för att lära sig DAX eller för att ange egna anpassade mått. För att skapa eller utforska snabbmått, välj **Nytt snabbmått** i en tabells lista **Fler alternativ** eller under **Beräkningar** i fliken Start i menyfliksområdet. I [Använda snabbmått](desktop-quick-measures.md) hittar du mer information om hur du skapar och använder snabbmått.
 
-Värden som beräknats från mått ändras alltid som svar på våra interaktioner med rapporten. Om vi t.ex. drar fältet **RegionCountryName** från tabellen **Geography** till vårt diagram så beräknas och visas medelvärdet för varje lands försäljningssiffror.
+### <a name="create-a-measure"></a>Skapa ett mått
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
+Du vill analysera nettoförsäljningen genom att subtrahera rabatter och avkastningar från de totala försäljningsbeloppen. För oavsett vilken kontext som finns i din visualisering, behöver du ett mått som subtraherar summan av DiscountAmount och ReturnAmount från summan av SalesAmount. Det finns inget fält för NetSales i fältlistan, men du har byggblock för att skapa egna mått för att beräkna nettoförsäljning. 
 
-När resultatet av måttet ändras på grund av en interaktion med vår rapport, så påverkar vi måttets *kontext*. Varje gång du interagerar med rapporten ändrar du faktiskt den kontext i vilken ett mått beräknar och visar sina resultat.
-
-I de flesta fall gör Power BI vad som ska göras och returnerar värden enligt de fält som vi har lagt till och de aggregeringstyper vi väljer. Men i andra fall kan du behöva skapa dina egna mått om du vill utföra mer komplexa och unika beräkningar.
-
-Med Power BI Desktop skapar du egna åtgärder med dataanalysuttryck (DAX). DAX-formler påminner mycket om Excel-formler. I själva verket använder DAX ofta samma funktioner, operatorer och syntax som används i Excel-formler. Dock är DAX-funktionerna utformade för att fungera med relationella data och utföra mer dynamiskt beräkningar när vi interagerar med våra rapporter.
-
-Det finns över 200 DAX-funktioner som gör allt från enkla aggregeringar som Sum och Average till mer avancerade funktioner för statistik och filtrering. Vi ska inte gå in på DAX-språket i detalj här, men det finns många resurser med vilkas hjälp du kan lära dig mer. När du har gått igenom den här kursen bör du läsa [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
-
-När vi skapar våra egna åtgärder läggs de till i fältlistan för den tabell vi önskar. Detta kallas ett *modellmått* och det finns kvar i vår tabell som ett fält. Vissa av de stora fördelarna med modellmått är att vi kan kalla dem vad vi vill och därmed göra dem mer identifierbara. Vi kan också använda dem som argument i andra DAX-uttryck, och vi kan skapa mått som utför komplexa beräkningar mycket snabbt.
-
-## <a name="lets-create-our-own-measure"></a>Nu ska vi skapa ett eget mått
-Anta att vi vill analysera nettoförsäljningen. Om vi tittar på vår försäljningstabell i fältlistan ser vi att det inte finns något fält med namnet NetSales. Men vi har byggblocken för att skapa egna mått med vilka vi kan beräkna nettoförsäljningen.
-
-Vi behöver ett mått för att subtrahera rabatter och returer från försäljningsbeloppen. Eftersom vi vill att vårt mått ska beräkna ett resultat oavsett kontexten i vår visualisering, så behöver vi i praktiken subtrahera summan av DiscountAmount och ReturnAmount från SalesAmount-summan. Det kan verka lite förvirrande just nu, men oroa dig inte – allt kommer att klarna om en liten stund.
-
-### <a name="net-sales"></a>Nettoförsäljning
-1.  Högerklicka eller klicka på nedåtpilen i tabellen **Sales** i fältlistan och klicka sedan på **Nytt mått**. Detta garanterar att vårt nya mått har sparats i försäljningstabellen, där det är lättare att hitta.
+1.  Högerklicka på tabellen **Sales** i fältkällan eller hovra över tabellen och välj ellipsen (...) **Fler alternativ** och välj sedan **Nytt mått**. Detta sparar ditt nya mått i försäljningstabellen, där det är lättare att hitta.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
+    ![Nytt mått](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     
-    > [!TIP]
-    > Du kan också skapa ett nytt mått genom att klicka på knappen Nytt mått i menyfliksområdet på fliken Start i Power BI Desktop.
-    > 
-    > ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasureribbon.png)
-    > 
-    > När du skapar ett mått från menyfliksområdet kan måttet skapas i vilken tabell som helst. Även om ett mått inte behöver tillhöra en viss tabell, så är det lättare att hitta det om du skapar det i den tabell som är det mest logiska alternativet för dig. Om du vill att det ska finna i en viss tabell, så aktivera först tabellen genom att klicka på den. Klicka sedan på Nytt mått. I vårt fall ska vi skapa vårt första mått i försäljningstabellen.
-    > 
-    > 
+    Du kan också skapa ett nytt mått genom att välja **Nytt mått** i gruppen Beräkningar på fliken Start i menyfliksområdet i Power BI Desktop.
     
-    Formelfältet visas överst på rapportarbetsytan. Det är där vi kan byta namn på vårt mått och ange en DAX-formel.
+    ![Nytt mått från menyflikarna](media/desktop-tutorial-create-measures/meastut_netsales_newmeasureribbon.png)
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formulabar.png)
+    >[!TIP]
+    >När du skapar ett mått från menyfliksområdet kan det skapas i vilken som helst av tabellerna, men det är lättare att hitta om du har skapat det där du planerar att använda det. I det här fallet välj först tabellen Sales för att aktivera den och välj sedan **Nytt mått**. 
     
-    Låt oss först ge det nya måttet ett namn. Som standard heter ett nytt mått helt enkelt Mått. Om vi inte byter namn på den och skapar en till kolumn, kommer den kolumnen få namnet Mått 2, Mått 3 osv. Vi vill att våra mått ska vara mer identifierbara, så låt oss ge det nya måttet namnet Nettoförsäljning.
+    Formelfältet visas överst i rapportarbetsytan, där du kan byta namn på ditt mått och ange en DAX-formel.
     
-2. Markera **Mått** i formelfältet och skriv sedan **Nettoförsäljning**.
+    ![Formelfält](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formulabar.png)
     
-    Nu kan vi börja ange vår formel.
+2.  Som standard döps ett nytt mått helt enkelt till Mått. Om du inte byter namn kommer ytterligare mått att döpas till Mått 2, Mått 3 och så vidare. Du vill att dina mått ska vara mer identifierbara, så markera **Mått** i formelfältet och skriv sedan **NetSales**.
     
-3.  Efter likhetstecknet skriver du **S**. En listruta visas med förslag på alla DAX-funktioner som börjar med bokstaven S. Ju mer vi skriver, desto närmare kommer vi funktionen vi behöver. Välj **SUM** genom att bläddra nedåt och tryck sedan på Retur.
+3.  Nu kan du börja ange din formel. Efter likhetstecknet, börja skriva **Sum**. När du skriver visas en listruta med förslag på alla DAX-funktionerna som börjar på de bokstäver som du anger. Bläddra ner vid behov för att välja **SUM** i listan och tryck på RETUR.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_s.png)
+    ![Välj SUM](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_s.png)
     
-    När du har tryckt på Retur visas tillsammans med en annan förslagslista med alla tillgängliga kolumner som vi kan skicka till funktionen SUM.
+    En vänsterparentes visas tillsammans med en annan nedrullningsbara förslagslista över alla tillgängliga kolumner som du kan överföra till SUM-funktionen.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_sum.png)
+    ![Välj kolumn](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_sum.png)
     
-    Ett uttryck visas alltid mellan en vänster- och högerparentes. I det här fallet ska vårt uttryck innehålla ett argument som ska skickas till funktionen SUM – en kolumn som ska summeras. Vi kan begränsa listan över kolumner genom att skriva de första bokstäverna i det namn vi söker. I det här fallet söker vi efter kolumnen SalesAmount, så när vi börja skriva ”salesam” blir listan mindre, och vi ser två objekt som vi kan välja. Det är egentligen samma kolumn. En visar bara [SalesAmount] eftersom vi skapar vårt mått i samma tabell som kolumnen SalesAmount finns i. Det andra visar det tabellnamn som föregår kolumnnamnet.
+    Uttryck visas alltid mellan en vänster- och högerparentes. Uttrycket innehåller ett argument ska skickas till funktionen SUM: kolumnen SalesAmount. Börja skriva ”SalesAmount” tills endast ett värde är kvar i listan: Sales(SalesAmount). Kolumnnamnet som föregås av tabellnamnet kallas *fullständigt kvalificerat namn* för kolumnen. Fullständigt kvalificerat kolumnnamn gör det lättare att läsa formler. 
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_salesam.png)
-    
-    I allmänhet är det god praxis att ange en kolumns fullständiga kvalificerade namn. Det gör formlerna lättare att läsa.
+    ![Välj SalesAmount](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_salesam.png)
     
 4. Välj **Sales[SalesAmount]** och skriv sedan en avslutande parentes.
     
     > [!TIP]
     > Syntaxfel orsakas oftast av att en avslutande parentes saknas eller är felplacerad.
-    > 
-    > 
     
-    Nu ska vi subtrahera våra två övriga kolumner.
     
-5.  Efter det första uttryckets avslutande parentes skriver du ett blanksteg och därefter en minusoperator (**-**) följt av ytterligare ett blanksteg. Ange sedan ytterligare en SUM-funktion med kolumnen **Sales[DiscountAmount]** som argument.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
+5.  För att subtrahera de två kolumnerna:
+    1. Efter den avslutande parentesen för det första uttrycket, skriv ett mellanslag, en minusoperatör (**-**) och ett till blanksteg. 
+    2. Ange en annan SUM-funktion och börja skriva ”DiscountAmount” tills du kan välja kolumnen **Sales [DiscountAmount]** som argument. Lägg till en avslutande parentes. 
+    3. Skriv ett mellanslag, en till minusoperatör, blanksteg, en till SUM-funktion med **Sales [ReturnAmount]** som argument och en avslutande parentes.
     
-    Vi börjar till slut på utrymme för vår formel. Inga problem.
+    ![Fullständig formel](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
     
-6.  Klicka på fortsättningstecknet till höger i formelfältet.
+6.  Slutför genom att trycka på RETUR eller klicka på bockmarkeringen i formelfältet och validera formeln. Det validerade måttet är nu klart att användas i fältlistan för Sales-tabellen. 
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
+    ![Mått i fältlistan](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
     
-    Nu har vi mer utrymme. Vi kan ange nya delar i vår formel på en ny rad genom att trycka på Alt+Retur. Vi kan också flytta över saker med tabbtangenten.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
-    
-    Nu kan vi lägga till formelns sista del.
-    
-7.  Lägga till en annan minusoperator följd av ytterligare en SUM-funktion med kolumnen **Sales [ReturnAmount]** som argument.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
-    
-    Nu ser formeln ut att vara klar.
+Om du har slut på utrymme för att ange en formel eller om den ska vara på separata rader, väljer du nedåtsparren till höger i formelfältet för att öppna mer utrymme.
 
-8.  Slutför genom att trycka på RETUR eller klicka på bockmarkeringen i formelfältet. Formeln verifieras och läggs till i fältlistan i tabellen Sales.
+![Formelvinkel](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
 
-### <a name="lets-add-our-new-measure-to-a-report"></a>Nu lägger vi till vårt nya mått i en rapport
-Nu kan vi lägga till vårt nettoförsäljningsmått på rapportarbetsytan, och nettoförsäljningen kan beräknas för vilket annat fält som helst som vi lägger till i rapporten. Låt oss titta på nettoförsäljning per land.
+Du kan avgränsa delar av din formel på olika rader genom att trycka på **Alt-Retur**, eller flytta objekt med **Tab**.
 
-1.  Dra måttet **Net Sales** från tabellen **Sales** till rapportarbetsytan.
+![Expanderad formel](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
+
+### <a name="use-your-measure-in-the-report"></a>Använd ditt mått i rapporten
+Du kan nu lägga till ditt NetSales-mått i rapportarbetsytan och beräkna nettoförsäljning för de fält som du lägger till i rapporten. För att visa nettoförsäljning per land:
+
+1. Välj måttet **Net Sales** från tabellen **Sales** och dra det till rapportarbetsytan.
     
-2. Dra fältet **RegionCountryName** från tabellen **Geography** till diagrammet.
+2. Välj fältet **RegionCountryName** från tabellen **Geography** eller dra det till diagrammet.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
+    ![Nettoförsäljning per land](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
     
-    Låt oss lägga till lite mer data.
+Om du vill se skillnaden mellan netto- och total försäljning efter land, välj fältet **SalesAmount** eller dra det till diagrammet. 
+
+![Försäljningsbelopp (SalesAmount) och nettoförsäljning (NetSales) per land](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
+
+Diagrammet innehåller nu två mått: SalesAmount som summerats automatiskt, och det SalesNet-mått du skapade. Varje mått beräknas i samband med ett annat fält, RegionCountryName.
     
-3.  Dra fältet **SalesAmount** till diagrammet, så att du kan se skillnaden mellan nettoförsäljning och försäljningsbelopp.
+### <a name="use-your-measure-with-a-slicer"></a>Använd måttet med ett utsnitt
+
+Du kan lägga till ett utsnitt för att filtrera ytterligare nettoförsäljning och försäljningsbelopp per kalenderår.
     
-    Nu har vi verkligen två mått i diagrammet. SalesAmount, som summerades automatiskt, och Net Sales, som vi skapade själva. I båda fallen beräknades resultaten i kontexten för ett annat fält i diagrammet har vi i diagrammet – länderna i RegionCountryName.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
-    
-    Låt oss lägga till ett utsnitt, så vi kan bryta ned nettoförsäljningen och försäljningsbeloppen ytterligare efter kalenderår.
-    
-4.  Klicka först på ett tomt område bredvid diagrammet och klicka sedan på tabellvisualiseringen i **Visualiseringar**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_blanktablevisbutton.png)
-    
-    Detta skapar en tom tabellvisualisering på rapportarbetsytan.
+1.  Klicka först på ett tomt område välj sedan i **Visualiseringar** visualiseringen **Tabell**. Detta skapar en tom tabellvisualisering på rapportarbetsytan.
     
     ![](media/desktop-tutorial-create-measures/meastut_netsales_blanktable.png)
     
-5.  Dra fältet **Year** från tabellen **Calendar** till en ny tom tabell.
+2.  Dra fältet **År** från tabellen **Kalender** till en ny tom tabellvisualisering. Eftersom året är ett numeriskt fält, summerar Power BI Desktop dess värden, men det säger inte så mycket som en aggregering. 
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png)
+    ![Aggregera år](media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png)
     
-    Eftersom Year är ett numeriskt fält, så summerade Power BI Desktop dess värden och gav oss ett diagram. Men det fungerar inget vidare för oss som ett utsnitt.
+3.  I visualiseringsfönstret **Värden** välj nedpilen bredvid **År**, och välj sedan **Sammanfatta inte**. Tabellen innehåller nu individuella år.
     
-6. Klicka på nedåtpilen intill **Year** i **Values** och klicka sedan på **Summera inte**.
+    ![Sammanfatta inte](media/desktop-tutorial-create-measures/meastut_netsales_year_donotsummarize.png)
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_year_donotsummarize.png)
-    
-    Ny kan vi ändra fältet Year i tabellvisualiseringen till ett utsnitt.
+4.  Konvertera tabellen till ett utsnitt genom att välja ikonen **Utsnitt** i fönstret Visualiseringar.
 
-    7.  Klicka på visualiseringen **Utsnitt** i **Visualiseringar**.
+    ![Ändra till utsnitt](media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png)
+    
+5.  Välj ett värde i utsnittet **År** för att filtrera diagrammet **Net Sales och Sales Amount by Country** i enlighet med detta. NetSales- och SalesAmount-måtten beräknas om och visar resultaten i kontexten för det markerade År-fältet. 
+    
+    ![Diagram uppdelat per år](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
 
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png)
-    
-    Nu har vi Year som ett utsnitt. Vi kan välja vilket enskilt år eller vilken grupp av år vi vill, och rapportens visualiseringar utformas därefter.
-    
-8. Gå vidare och klicka på **2013**. Du ser att diagrammet har ändrats. Våra Net Sales- och SalesAmount-mått beräknas igen, och visar nya resultat för 2013. Här har vi återigen ändrat den kontext i vilken våra mått beräknar och visar resultat.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
+### <a name="use-your-measure-in-another-measure"></a>Använd ditt mått i ett annat mått
 
-## <a name="lets-create-another-measure"></a>Låt oss skapa ett nytt mått
-Nu när du vet hur du skapar ett eget mått så låt oss skapa ett till.
+Vill du ta reda på vilka produkter som har högsta nettoförsäljning per såld enheten, så behöver du ett mått som dividerar nettoförsäljning med antalet enheter som säljs. Du kan skapa ett nytt mått som delar resultatet av dina NetSales-mått med summan av Sales[SalesQuantity].
 
-### <a name="net-sales-per-unit"></a>Nettoförsäljning per enhet
-Hur gör vi om vi vill ta reda på vilka produkter med störst försäljning per enhet?
+1.  Skapa ett nytt mått med namnet **Net Sales per Unit** i Sales-tabellen.
+    
+2.  Börja skriva **NetSales** i formelfältet. Förslagslistan visar vad du kan lägga till. Välj **[Net Sales]**.
+    
+    ![Formel med NetSales](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
+    
+    Du kan också referera till ett mått genom att helt enkelt skriva en inledande hakparentes (**[**). Listan över förslag visar endast mått att lägga till i formeln.
+    
+    ![Hakparentes visar endast mått](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
+    
+3.  Ange ett blanksteg, en divisionsoperatör (**/**), en till blanksteg, SUM-funktionen och skriv sedan **Quantity**. Listan över förslag visar alla kolumner med Quantity i namnet. Välj **Sales [SalesQuantity]**, ange den avslutande parentesen och tryck på RETUR eller välj bockmarkeringen för att verifiera formeln. Formeln bör nu se ut så här:
+    
+    `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
+    
+4. Välj måttet **Net Sales per Unit** från tabellen Sales, eller dra det till ett tomt område i rapportarbetsytan. Diagrammet visar nettoförsäljning per enhet över alla produkter som säljs, vilket inte är så informativt. 
+    
+    ![Övergripande nettoförsäljning per enhet](media/desktop-tutorial-create-measures/meastut_nspu_chart.png)
+    
+5. För ett annat utseende, ändra diagramvisualiseringens typ till **Trädkarta**.
+    
+    ![Ändra till trädkarta](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png)
+    
+6. Välj fältet **Product Category** eller dra det till trädkartan eller till gruppfältet i visualiseringsfönstret. Nu har du lite bra information!
+    
+    ![Trädkarta per produktkategori](media/desktop-tutorial-create-measures/meastut_nspu_byproductcat.png)
+    
+7. Försök att ta bort fältet **ProductCategory** och dra fältet **ProductName** till diagrammet i stället. 
+    
+    ![Trädkarta per produktnamn](media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png)
+    
+Ok, nu leker vi bara lite men medge att det är rätt häftigt! Experimentera med andra sätt att filtrera och formatera visualiseringen.
 
-Vi kan skapa ett nytt mått. I det här fallet vill vi dividera nettoförsäljningen med antalet sålda enheter. Vi vill med andra ord dela resultatet för måttet Net Sales med summan för Sales[SalesQuantity].
-
-1.  Skapa ett nytt mått med namnet **Net Sales per Unit** i Sales- eller Products-tabellen.
-    
-    I det här måttet kommer vi att använda måttet Net Sales som vi skapade tidigare. Med DAX kan vi refererar till andra mått i vår formel.
-    
-2.  Börja skriva **Net Sales**. Förslagslistan visar vad vi kan lägga till. Välj **[Net Sales]**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
-    
-    Du kan också referera till ett annat mått genom att helt enkelt skriva en inledande hakparentes (**[**). Listan över förslag visar bara de mått som vi kan lägga till i vår formel.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
-    
-3.  Ange ett blanksteg direkt efter **[Net Sales]**, följt av en divisionsoperator (**/**), ange en SUM-funktion och skriv sedan **Quantity**. Listan över förslag visar alla kolumner med Quantity i namnet. Välj **Sales [SalesQuantity]**. Formeln bör nu se ut så här:
-    
-    > **Nettoförsäljning per enhet = [Net försäljning] / SUM(Sales[SalesQuantity])**
-    > 
-    > 
-    
-    Rätt läckert, eller hur? Att ange DAX formler är egentligen ganska enkelt när vi använder DAX-redigerarens sök- och förslagsfunktioner. Låt oss nu se vad vi får fram med vårt nya Net Sales per Unit-mått.
-    
-4. Dra måttet **Net Sales per Unit** till ett tomt område på rapportarbetsytan.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_chart.png)
-    
-    Inte särskilt intressant, eller hur? Oroa dig inte.
-    
-5.  Ändra diagramvisualiseringens typ till **Trädkarta**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png)
-    
-6. Dra fältet **ProductCategory** från tabellen **ProductCategory** ned till området **Group**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_byproductcat.png)
-    
-    Det här är bra information, men vad gör vi om vi vill titta på nettoförsäljningen per produkt?
-    
-7. Ta bort fältet **ProductCategory** och dra sedan fältet **ProductName** från tabellen **Product** ned till området **Group** istället. 
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png)
-    
-    Ok, nu leker vi lite, men medge att det är lite häftigt! Naturligtvis vi kan filtrera den här trädkartan på många olika sätt, men det ligger utanför den här självstudiekursens syfte.
-
-## <a name="what-weve-learned"></a>Vad vi har lärt oss
-Att mått är ett mycket kraftfullt hjälpmedel när vi vill hämta insikter från våra data. Vi har lärt oss hur man skapar mått med hjälp av formelfältet. Vi kan namnge måtten så att de är begripliga, och med hjälp av förslagslistorna kan vi lättare hitta och välja rätt element till våra formler. Vi har också insett betydelsen av den kontext i vilken resultaten av måttberäkningarna kan ändras beroende på andra fält eller uttryck i din måttformel.
+## <a name="what-youve-learned"></a>Vad du har lärt dig
+Mått ger dig stor förmåga att skaffa dig de insikter som du vill från dina data. Du har lärt dig hur du skapar mått med hjälp av formelfältet, döper dem till lämpligt namn, och hittar och väljer rätt formelelement med hjälp av DAX-förslagslistor. Du har också insett betydelsen av den kontext i vilken resultaten av måttberäkningarna kan ändras beroende på andra fält eller uttryck i din formel.
 
 ## <a name="next-steps"></a>Nästa steg
-Om du vill ha en grundligare genomgång av DAX-formler och skapa mer avancerade mått, kan du läsa mer i [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Den här artikeln handlar om grundläggande begrepp i DAX, till exempel syntax, funktioner och en mer omfattande beskrivning av kontext.
-
-Det kan vara bra att lägga till [Referens för dataanalysuttryck (DAX)](https://msdn.microsoft.com/library/gg413422.aspx) i dina Favoriter. Det är där du hittar detaljerad information om DAX-syntax, operatorer och drygt 200 DAX-funktioner.
+- Läs mer om snabbmått i Power BI Desktop, som ger många vanliga måttberäkningar i [Använda snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar](desktop-quick-measures.md).
+  
+- Om du vill ha en grundligare genomgång av DAX-formler och skapa mer avancerade mått, kan du läsa mer i [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Den här artikeln handlar om grundläggande begrepp i DAX, till exempel syntax, funktioner och en mer omfattande beskrivning av kontext.
+  
+- Det kan vara bra att lägga till [Referens för dataanalysuttryck (DAX)](https://msdn.microsoft.com/library/gg413422.aspx) i dina Favoriter. Det är där du hittar detaljerad information om DAX-syntax, operatorer och drygt 200 DAX-funktioner.
 

@@ -1,15 +1,15 @@
 ---
-title: "Lokal datagateway (personligt läge)"
-description: "Datagateway för Power BI som enskilda användare kan använda för att ansluta till lokala data"
+title: Lokal datagateway (personligt läge)
+description: Datagateway för Power BI som enskilda användare kan använda för att ansluta till lokala data
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/14/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2bd3604a3f16c6977c52c1b3484ac024445c65bb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 777e5f27954890fe842096c0f2633f6803ebf319
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Lokal datagateway (personligt läge)
 Du kan använda lokala datakällor och skapa Power BI-rapporter och -instrumentpaneler med hjälp av en gateway. En **gateway** är programvara som möjliggör åtkomst till data som lagras i ett privat lokalt nätverk och sedan låter dig använda dessa data i onlinetjänster, till exempel **Power BI-tjänsten**. En **lokal datagateway (personligt läge)** är en nyligen utgiven uppdatering för Power BI-gateway som låter enskilda användare installera en gateway på den lokala datorn och få åtkomst till lokala data.
@@ -89,7 +89,7 @@ Om du använde **Kombinera snabbt** med den äldre gatewayen måste du vidta fö
 1. Öppna följande fil i Utforskaren:
    
    ```
-   %localappdata%\Microsoft\on-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+   %localappdata%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
    ```
 2. Lägg till följande text längst ned i filen:
    
