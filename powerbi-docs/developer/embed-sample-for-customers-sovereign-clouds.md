@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/28/2018
 ms.author: maghan
-ms.openlocfilehash: 4faf32419c0b02ceadb495832ed90d312b823773
-ms.sourcegitcommit: c9905e625ba14dc28ad23835f320e49631c51d0f
+ms.openlocfilehash: bef0748f1431a29c96d7aa23ab457683e247724a
+ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Bädda in en Power BI-instrumentpanel, panel eller rapport i ditt program för nationella moln
 Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med Power BI:s .NET SDK tillsammans med Power BI:s JavaScript API vid inbäddning för dina kunder. Detta är vanligtvis ISV-scenariot.
@@ -54,7 +54,7 @@ Den här artikeln visar den kod som används i [Bädda in för ditt kundexempel]
     2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
     3. Lägg till GCC-parametrar i web.config-filen enligt nedan.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
@@ -69,7 +69,7 @@ Den här artikeln visar den kod som används i [Bädda in för ditt kundexempel]
     2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
     3. Lägg till DoDCON-parametrar i web.config-filen enligt nedan.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
@@ -84,7 +84,7 @@ Den här artikeln visar den kod som används i [Bädda in för ditt kundexempel]
     2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
     3. Lägg till DoDCON-parametrar i web.config-filen enligt nedan.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
@@ -99,7 +99,7 @@ Den här artikeln visar den kod som används i [Bädda in för ditt kundexempel]
     2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
     3. Lägg till Power BI för moln i Tyskland-parametrar i web.config-filen enligt nedan.
 
-```
+```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
@@ -142,7 +142,7 @@ Om du vill bädda in ditt Power BI-innehåll, behöver du göra några saker fö
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Skapa Power BI-klienten med din åtkomsttoken
 Med din åtkomsttoken vill du skapa dina Power BI-klientobjekt som gör att du kan interagera med Power BI-API:er. Detta görs genom att omsluta AccessToken med ett *Microsoft.Rest.TokenCredentials*-objekt.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
 using Microsoft.PowerBI.Api.V2;
@@ -163,7 +163,7 @@ Ett exempel på detta finns i **Controllers\HomeController.cs** av [Appen äger 
 
 **Instrumentpaneler**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -176,7 +176,7 @@ Dashboard dashboard = dashboards.Value.FirstOrDefault();
 
 **Panel**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -197,7 +197,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 **Rapport**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -220,7 +220,7 @@ Detta förutsätter att en klass skapas för **EmbedConfig** och **TileEmbedConf
 
 **Instrumentpanel**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -239,7 +239,7 @@ var embedConfig = new EmbedConfig()
 
 **Panel**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -259,7 +259,7 @@ var embedConfig = new TileEmbedConfig()
 
 **Rapport**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -282,7 +282,7 @@ Ett programexempel av det här finns i [Inbäddning för ditt organisationsexemp
 
 **Views\Home\EmbedDashboard.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="dashboardContainer"></div>
 <script>
@@ -320,7 +320,7 @@ Ett programexempel av det här finns i [Inbäddning för ditt organisationsexemp
 
 **Views\Home\EmbedTile.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="tileContainer"></div>
 <script>
@@ -362,7 +362,7 @@ Ett programexempel av det här finns i [Inbäddning för ditt organisationsexemp
 
 **Views\Home\EmbedReport.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="reportContainer"></div>
 <script>

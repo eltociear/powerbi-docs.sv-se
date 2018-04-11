@@ -1,28 +1,28 @@
 ---
 title: Power BI (kostnadsfri) i din organisation
-description: "Den här artikeln beskriver dina alternativ för Power BI (kostnadsfri) från ett organisationsperspektiv. Om du är administratör för din klient, visar det här hur du hanterar kostnadsfria registreringar."
+description: Den här artikeln beskriver dina alternativ för Power BI (kostnadsfri) från ett organisationsperspektiv. Om du är administratör för din klient, visar det här hur du hanterar kostnadsfria registreringar.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 09/05/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ec266cd2631797a1bbbef686824f78b0f1e3e14a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5da8b4cbb86766e6b411af902fce4bf18f480612
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="power-bi-free-in-your-organization"></a>Power BI (kostnadsfri) i din organisation
 Här ska vi titta på hur erbjudandet Power BI (kostnadsfri) kan användas inom din organisation. En organisation innebär att du har en klientorganisation och kan hantera användare och tjänster inom den klientorganisationen. Som administratör, kan du styra licenstilldelningen, eller så kan du tillåta användarna att registrera sig individuellt. Vi ska titta på licensen för Power BI (kostnadsfri) och hur du kan styra individuella registreringar.
