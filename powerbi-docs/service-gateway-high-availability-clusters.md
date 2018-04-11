@@ -3,7 +3,7 @@ title: Kluster med hög tillgänglighet för lokal datagateway
 description: Du kan skapa kluster av lokala datagatewayer för att tillhandahålla hög tillgänglighet för ditt företag.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 12/05/2017
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9ad1d4288184368dbb294bfafa69fe005780b322
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 5ca925b45460f2b2e173e0a5e25b839e52eff309
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Kluster med hög tillgänglighet för lokal datagateway
 Du kan skapa **högtillgängliga kluster** av **lokala datagatewayer**, för att se till att din organisation kan komma åt lokala dataresurser som används i Power BI-rapporter och instrumentpaneler. Sådana kluster gör att gateway-administratörer kan gruppera gatewayer för att undvika enskilda felpunkter för åtkomst av lokala dataresurser. Den här artikeln beskriver de steg du kan vidta för att skapa ett kluster med hög tillgänglighet av lokala datagatewayer och bästa praxis när du konfigurerar dem. Gatewaykluster för hög tillgänglighet kräver uppdateringen från november 2017 eller senare för lokal datagateway.

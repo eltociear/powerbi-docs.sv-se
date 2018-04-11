@@ -1,40 +1,33 @@
 ---
-title: "Ansluta till Adobe Analytics i Power BI Desktop (förhandsversion)"
-description: "Anslut enkelt till och använd Adobe Analytics i Power BI Desktop"
+title: Anslut till Adobe Analytics i Power BI Desktop
+description: Anslut enkelt till och använd Adobe Analytics i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/09/2018
+ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: efd6d066e2f98f86248730917c2f4aa0c8a39983
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 4488cd373fae22c4494ac697602536496ffc9b00
+ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="connect-to-adobe-analytics-in-power-bi-desktop-preview"></a>Ansluta till Adobe Analytics i Power BI Desktop (förhandsversion)
+# <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Anslut till Adobe Analytics i Power BI Desktop 
 I **Power BI Desktop** kan du ansluta till **Adobe Analytics** och använda underliggande data precis som andra datakällor i Power BI Desktop. 
 
 ![Hämta data från Adobe Analytics](media/desktop-connect-adobe-analytics/connect-adobe-analytics_01.png)
-
-## <a name="enable-the-adobe-analytics-connector-preview"></a>Aktivera förhandsversionen av Adobe Analytics-anslutningsappen 
-Eftersom **Adobe Analytics**-anslutningsappen för närvarande finns som förhandsversion måste du aktivera förhandsversionsfunktionen för att anslutningsappen ska vara tillgänglig i fönstret **Hämta data**. Aktivera förhandsversionen av anslutningsappen genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** i Power BI Desktop och markera kryssrutan bredvid **Bokmärken**. 
-
-![Aktivera förhandsversionen av Adobe Analytics-anslutningsappen i Alternativ](media/desktop-connect-adobe-analytics/connect-adobe-analytics_02.png)
-
-Du måste starta om **Power BI Desktop** när du har gjort valet för att aktivera förhandsversionen av Adobe Analytics-anslutningsappen.
 
 ## <a name="connect-to-adobe-analytics-data"></a>Ansluta till Adobe Analytics-data
 Om du vill ansluta till **Adobe Analytics**-data väljer du **Hämta data** på menyfliken **Start** i Power BI Desktop. Välj **Onlinetjänster** bland kategorierna till vänster för att visa **Adobe Analytics-anslutningsapp**.
