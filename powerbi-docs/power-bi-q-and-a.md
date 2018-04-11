@@ -1,15 +1,15 @@
 ---
-title: "Översikt över frågor och svar i Power BI-tjänsten och Desktop"
-description: "Dokumentationsöversikt för Power BI frågor och svar frågor med naturligt språk."
+title: Översikt över frågor och svar i Power BI-tjänsten och Desktop
+description: Dokumentationsöversikt för Power BI frågor och svar frågor med naturligt språk.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

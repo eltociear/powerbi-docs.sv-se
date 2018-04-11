@@ -1,14 +1,14 @@
 ---
 title: Skapa och publicera appar med instrumentpaneler och rapporter i Power BI
-description: "Här kan du lära dig hur du skapar och publicerar appar som är samlingar av instrumentpaneler och rapporter som skapats för att förse din organisation med statistik."
+description: Här kan du lära dig hur du skapar och publicerar appar som är samlingar av instrumentpaneler och rapporter som skapats för att förse din organisation med statistik.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,11 +1,11 @@
 ---
-title: "Snabbt hitta och visa dina Power BI-rapporter och instrumentpaneler med hjälp av Cortana"
-description: "Hämta svar från dina data med hjälp av Cortana med Power BI. Fungerar för närvarande med rapporter och instrumentpaneler."
+title: Snabbt hitta och visa dina Power BI-rapporter och instrumentpaneler med hjälp av Cortana
+description: Hämta svar från dina data med hjälp av Cortana med Power BI. Fungerar för närvarande med rapporter och instrumentpaneler.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-editor: 
+editor: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

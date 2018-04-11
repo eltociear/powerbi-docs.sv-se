@@ -1,15 +1,15 @@
 ---
-title: "Ansluta till Microsoft Dynamics AX-innehållspaket med Power BI"
-description: "Microsoft Dynamics AX-innehållspaket för Power BI"
+title: Ansluta till Microsoft Dynamics AX-innehållspaket med Power BI
+description: Microsoft Dynamics AX-innehållspaket för Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

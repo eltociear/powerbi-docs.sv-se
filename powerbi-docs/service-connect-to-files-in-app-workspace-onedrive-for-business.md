@@ -1,15 +1,15 @@
 ---
-title: "Anslut till filer i OneDrive för en Power BI-apparbetsyta"
-description: "Läs mer om att lagra och ansluta till dina Excel-, CSV- och Power BI Desktop-filer på OneDrive för din Power BI-apparbetsyta."
+title: Anslut till filer i OneDrive för en Power BI-apparbetsyta
+description: Läs mer om att lagra och ansluta till dina Excel-, CSV- och Power BI Desktop-filer på OneDrive för din Power BI-apparbetsyta.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

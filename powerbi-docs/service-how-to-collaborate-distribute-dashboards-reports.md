@@ -1,13 +1,13 @@
 ---
 title: Hur samarbetar och delar jag i Power BI?
-description: "I Power BI kan du samarbeta och dela instrumentpaneler, rapporter, paneler och appar på flera olika sätt. Varje sätt har sina fördelar."
+description: I Power BI kan du samarbeta och dela instrumentpaneler, rapporter, paneler och appar på flera olika sätt. Varje sätt har sina fördelar.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 02/28/2017
 ms.service: powerbi
@@ -52,7 +52,7 @@ Om du vill skapa en app behöver du en *apparbetsyta* med dina gruppmedlemmar so
 **Om du vill dela en färdig instrumentpanel med kollegor ska du inte lägga till dem i apparbetsytan.** I stället bör du [skapa instrumentpanelen i en apparbetsyta](service-create-distribute-apps.md) och publicera appen. 
 
 ## <a name="publish-your-app-to-a-broad-audience"></a>Publicera din app för en bred publik
-Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina medarbetare har skapat en *apparbetsyta* och skapat och förfinat instrumentpaneler, rapporter och datauppsättningar på apparbetsytan. Nu kan du välja de instrumentpaneler och rapporter du vill ha och publicera dem som en app &#151; antingen för medlemmar i en säkerhetsgrupp eller distributionslista eller till hela organisationen. 
+Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina medarbetare har skapat en *apparbetsyta* och skapat och förfinat instrumentpaneler, rapporter och datauppsättningar på apparbetsytan. Nu kan du välja de instrumentpaneler och rapporter du vill ha och publicera dem som en app & #151; antingen för medlemmar i en säkerhetsgrupp eller distributionslista eller till hela organisationen. 
 
 ![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -78,7 +78,7 @@ Du kan kommentera på en panel, rapport eller visualisering och sedan dela den m
 
 ![Kommentera och dela i mobilappar](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-iphone-annotate.png)
 
-Du delar en ögonblicksbild av paneler, rapporten eller visualiseringen och mottagarna ser den precis som den var när du skickade e-postmeddelandet. E-postmeddelandet innehåller också en länk till instrumentpanelen eller rapporten. Om de har en licens för Power BI Pro, eller om innehållet ligger i en [Premium kapacitet](service-premium.md), och du redan har delat objektet med dem, kan de öppna den. Du kan skicka ögonblicksbilder av paneler till alla &#151; inte bara medarbetare i samma e-postdomän.
+Du delar en ögonblicksbild av paneler, rapporten eller visualiseringen och mottagarna ser den precis som den var när du skickade e-postmeddelandet. E-postmeddelandet innehåller också en länk till instrumentpanelen eller rapporten. Om de har en licens för Power BI Pro, eller om innehållet ligger i en [Premium kapacitet](service-premium.md), och du redan har delat objektet med dem, kan de öppna den. Du kan skicka ögonblicksbilder av paneler till alla & #151; inte bara medarbetare i samma e-postdomän.
 
 Mer om [delning och kommentering för paneler, rapporter och visuella objekt](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) från iOS- och Android-appar.
 

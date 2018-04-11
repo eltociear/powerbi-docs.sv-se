@@ -1,15 +1,15 @@
 ---
-title: "Organisationsinnehållspaket: hantera och uppdatera"
-description: "Läs om hur du hanterar, uppdaterar och tar bort organisationsinnehållspaket i Power BI."
+title: 'Organisationsinnehållspaket: hantera och uppdatera'
+description: Läs om hur du hanterar, uppdaterar och tar bort organisationsinnehållspaket i Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

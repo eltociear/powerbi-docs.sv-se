@@ -1,15 +1,15 @@
 ---
 title: Anslut till Adobe Analytics med Power BI
-description: "Anslut till Adobe Analytics från Power BI för en app som visar dina kontodata i en instrumentpanel och rapporter."
+description: Anslut till Adobe Analytics från Power BI för en app som visar dina kontodata i en instrumentpanel och rapporter.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

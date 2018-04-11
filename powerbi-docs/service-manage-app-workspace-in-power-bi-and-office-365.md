@@ -1,15 +1,15 @@
 ---
 title: Hantera din apparbetsyta i Power BI och Office 365
-description: "Apparbetsytorna i Power BI bygger på samarbetet i Office 365-grupper. Hantera dina apparbetsytor i Power BI och Office 365."
+description: Apparbetsytorna i Power BI bygger på samarbetet i Office 365-grupper. Hantera dina apparbetsytor i Power BI och Office 365.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

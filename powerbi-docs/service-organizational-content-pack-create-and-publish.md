@@ -1,15 +1,15 @@
 ---
-title: "Skapa och publicera ett organisationsinnehållspaket – Power BI"
-description: "I de här självstudierna skapar du ett organisationsinnehållspaket, begränsar åtkomst till en specifik grupp och publicerar det i din organisations innehållspaketsbibliotek på Power BI."
+title: Skapa och publicera ett organisationsinnehållspaket – Power BI
+description: I de här självstudierna skapar du ett organisationsinnehållspaket, begränsar åtkomst till en specifik grupp och publicerar det i din organisations innehållspaketsbibliotek på Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -65,7 +65,7 @@ Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com) går du till **H
    
    3.  Rekommenderat: Lägg till en **beskrivning**. Detta hjälper dina medarbetare att lättare hitta de innehållspaket som de behöver. Lägg utöver beskrivningen även till nyckelord som dina medarbetare kan använda för att söka efter innehållspaketet. Inkludera kontaktinformation om dina medarbetare har frågor eller behöver hjälp.
    
-   4.  **Ladda upp en bild eller logotyp** för att göra det enklare för medlemmar i gruppen att hitta innehållspaketet &#151; det går snabbare att söka efter en bild än att söka efter text. Vi har använt en bild av stapeldiagramspanelen för ”affärsmöjligheter 100 %” på skärmbilden nedan.
+   4.  **Ladda upp en bild eller logotyp** för att göra det enklare för medlemmar i gruppen att hitta innehållspaketet & #151; det går snabbare att söka efter en bild än att söka efter text. Vi har använt en bild av stapeldiagramspanelen för ”affärsmöjligheter 100 %” på skärmbilden nedan.
    
    5.  Välj instrumentpanelen **Exempel på analys av affärsmöjligheter** för att lägga till den till innehållspaketet.  Power BI lägger automatiskt till associerad rapport och datauppsättning. Du kan lägga till andra, om du vill.
    

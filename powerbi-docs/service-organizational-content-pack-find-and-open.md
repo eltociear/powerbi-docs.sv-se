@@ -1,15 +1,15 @@
 ---
-title: "Hitta och anslut till ett innehållspaket för organisationen – Power BI"
-description: "Hitta och öppna ett innehållspaket för organisationen i Power BI"
+title: Hitta och anslut till ett innehållspaket för organisationen – Power BI
+description: Hitta och öppna ett innehållspaket för organisationen i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

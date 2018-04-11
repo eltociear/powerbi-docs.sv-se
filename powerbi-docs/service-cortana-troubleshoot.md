@@ -1,16 +1,16 @@
 ---
-title: "Felsöka Cortana för Power BI"
-description: "Om du har problem med Power BI Cortana kan du försöka med följande förslag."
+title: Felsöka Cortana för Power BI
+description: Om du har problem med Power BI Cortana kan du försöka med följande förslag.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
