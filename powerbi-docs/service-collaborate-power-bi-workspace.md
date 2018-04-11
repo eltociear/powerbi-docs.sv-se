@@ -1,15 +1,15 @@
 ---
-title: "Samarbeta på din Power BI-apparbetsyta"
-description: "Läs mer om att samarbeta med Power BI Desktop-filer på din apparbetsyta och med Office 365-tjänster som delar filer på OneDrive för företag, konversationer i Exchange, kalender och uppgifter."
+title: Samarbeta på din Power BI-apparbetsyta
+description: Läs mer om att samarbeta med Power BI Desktop-filer på din apparbetsyta och med Office 365-tjänster som delar filer på OneDrive för företag, konversationer i Exchange, kalender och uppgifter.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

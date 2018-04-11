@@ -1,15 +1,15 @@
 ---
-title: "Så här får du dina Excel-data att fungera bra med frågor och svar i Power BI"
-description: "Så här får du dina data att fungera bra med frågor och svar i Power BI"
+title: Så här får du dina Excel-data att fungera bra med frågor och svar i Power BI
+description: Så här får du dina data att fungera bra med frågor och svar i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

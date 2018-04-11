@@ -1,12 +1,12 @@
 ---
-title: "Självstudier – använd frågor och svar på en instrumentpanel eller i en rapport"
-description: "Självstudier om hur du använder Power BI frågor och svar för att skapa nya visualiseringar på instrumentpaneler och i rapporter."
+title: Självstudier – använd frågor och svar på en instrumentpanel eller i en rapport
+description: Självstudier om hur du använder Power BI frågor och svar för att skapa nya visualiseringar på instrumentpaneler och i rapporter.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

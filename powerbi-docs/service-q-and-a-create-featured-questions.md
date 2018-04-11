@@ -1,16 +1,16 @@
 ---
-title: "Skapa aktuella frågor för Power BI frågor och svar"
-description: "Dokumentation för hur du skapar aktuella frågor för Frågor och svar i Power BI"
+title: Skapa aktuella frågor för Power BI frågor och svar
+description: Dokumentation för hur du skapar aktuella frågor för Frågor och svar i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: E1mIAyEXuF4
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

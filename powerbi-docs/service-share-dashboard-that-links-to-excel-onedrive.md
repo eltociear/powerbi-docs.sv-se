@@ -1,15 +1,15 @@
 ---
-title: "Dela instrumentpanelen som är länkad till en Excel-fil i OneDrive – Power BI"
-description: "Läs om hur du delar instrumentpaneler som är anslutna till en Excel-arbetsbok på OneDrive för företag, med paneler som fästs från arbetsboken."
+title: Dela instrumentpanelen som är länkad till en Excel-fil i OneDrive – Power BI
+description: Läs om hur du delar instrumentpaneler som är anslutna till en Excel-arbetsbok på OneDrive för företag, med paneler som fästs från arbetsboken.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,15 +1,15 @@
 ---
 title: Ansluta till MailChimp med Power BI
-description: "MailChimp för Power BI"
+description: MailChimp för Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

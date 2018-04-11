@@ -1,15 +1,15 @@
 ---
-title: "Exportera rapporter från Power BI till PowerPoint (förhandsgranskning)"
-description: "Läs hur du exporterar en Power BI-rapport till PowerPoint."
+title: Exportera rapporter från Power BI till PowerPoint (förhandsgranskning)
+description: Läs hur du exporterar en Power BI-rapport till PowerPoint.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: complete
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

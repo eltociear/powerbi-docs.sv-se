@@ -1,15 +1,15 @@
 ---
-title: "Ansluta till de tjänster du använder med Power BI"
-description: "Du kan ansluta till flera av de tjänster som du använder för att driva verksamheten som Salesforce, Microsoft Dynamics CRM och Google Analytics."
+title: Ansluta till de tjänster du använder med Power BI
+description: Du kan ansluta till flera av de tjänster som du använder för att driva verksamheten som Salesforce, Microsoft Dynamics CRM och Google Analytics.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

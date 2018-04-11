@@ -1,13 +1,13 @@
 ---
 title: Filtrera och dela Power BI-rapporter med medarbetare
-description: "Lär dig hur du delar en filtrerad Power BI-rapport med medarbetarna i din organisation."
+description: Lär dig hur du delar en filtrerad Power BI-rapport med medarbetarna i din organisation.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 featuredvideoid: 0tUwn8DHo3s
 qualityfocus: complete
 qualitydate: 06/22/2016

@@ -1,15 +1,15 @@
 ---
-title: "Snabbstart – Kom igång med Power BI-frågor och svar"
-description: "Snabbstart: kom igång med frågor och svar i Power BI-tjänsten med hjälp av Exemplet på detaljhandelsanalys"
+title: Snabbstart – Kom igång med Power BI-frågor och svar
+description: 'Snabbstart: kom igång med frågor och svar i Power BI-tjänsten med hjälp av Exemplet på detaljhandelsanalys'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,15 +1,15 @@
 ---
-title: "Koppla från en organisations innehållspaket – Power BI"
-description: "Läs mer om att ta bort din anslutning till en organisations innehållspaket genom att ta bort dess datauppsättning i Power BI."
+title: Koppla från en organisations innehållspaket – Power BI
+description: Läs mer om att ta bort din anslutning till en organisations innehållspaket genom att ta bort dess datauppsättning i Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

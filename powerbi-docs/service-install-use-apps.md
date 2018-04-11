@@ -1,12 +1,12 @@
 ---
-title: "Installera och använda appar med instrumentpaneler och rapporter i Power BI"
-description: "I Power BI samordnar appar relaterade instrumentpaneler och rapporter på ett och samma ställe."
+title: Installera och använda appar med instrumentpaneler och rapporter i Power BI
+description: I Power BI samordnar appar relaterade instrumentpaneler och rapporter på ett och samma ställe.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 10/02/2017
 ms.service: powerbi
