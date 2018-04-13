@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/14/2018
+ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7128c36d8d6c592d8f49797adf5be4927b240e3c
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: 50dd3dcf791cd3f2e366957ad37c830b7f4c35f2
+ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -31,6 +31,61 @@ Den här artikeln beskrivs tidigare uppdateringar av **Power BI Desktop**. Den s
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
 
 Du kan alltid [ladda ned den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är likadana oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
+
+
+Vi har sett fram emot mars uppdateringar av **Power BI Desktop**.
+
+Länkarna bredvid varje uppdatering innebär följande:
+
+* **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
+* I vissa funktioner finns en **[article]** som innehåller mer information.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+* Vissa funktioner är självförklarande och behöver varken artikel eller video.
+
+Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
+
+Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
+
+### <a name="reporting"></a>Rapportering
+
+* Knappbeskrivningar på rapportsidor [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[artikel]]() [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
+* Bokmärken är nu allmänt tillgängliga [[video]](https://youtu.be/kuI6MMzDh34?t=9m2s) [[artikel]](desktop-bookmarks.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking) 
+* Visningsenheter och precisionskontroll för tabell- och matriskolumner [[video]](https://youtu.be/kuI6MMzDh34?t=11m1s) [[artikel]](desktop-slicer-numeric-range.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits) 
+* Inaktivera sidhuvudet för visuella objekt i läsläge för en rapport [[video]](https://youtu.be/kuI6MMzDh34?t=12m25s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 
+* Förbättrad standardplacering av visuella objekt [[video]](https://youtu.be/kuI6MMzDh34?t=14m45s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement) 
+
+### <a name="custom-visuals"></a>Anpassade visuella objekt
+
+* Många nya anpassade visuella objekt [[video]](https://youtu.be/kuI6MMzDh34?t=15m43s) [[artikel]](power-bi-custom-visuals-organization.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
+
+### <a name="data-connectivity"></a>Dataanslutning
+
+* Förbättringar av Visual Studio Team Services-anslutningsappen [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[artikel]](desktop-multi-select.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#vsts) 
+* Förbättringar av SAP HANA-anslutningsappen [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artikel]](desktop-directquery-sap-hana.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#saphana) 
+  * Stöd för flerdimensionell DirectQuery är nu allmänt tillgängligt
+  * Stöd för verifiering av SSL-certifikat
+* SAP BW DirectQuery är nu allmänt tillgängligt [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#sapBW) 
+* Azure Analysis Services-anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#azureAS) 
+
+### <a name="other"></a>Övrigt
+
+* Förbättrad felrapportering [[video]](https://youtu.be/kuI6MMzDh34?t=34m51s) [[artikel]](desktop-directquery-about.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors) 
+* Visa tidigare fel som har inträffat [[video]](https://youtu.be/kuI6MMzDh34?t=34m51s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors) 
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kuI6MMzDh34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md).
+
 
 
 ## <a name="february-2018-update-2555010521"></a>Uppdatering februari 2018 (2.55.5010.521)
