@@ -1,15 +1,15 @@
 ---
-title: "Vad kan jag göra med Power BI-API"
-description: "Vad kan jag göra med Power BI-API"
+title: Vad kan jag göra med Power BI-API
+description: Vad kan jag göra med Power BI-API
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
@@ -17,13 +17,13 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/20/2017
 ms.author: maghan
-ms.openlocfilehash: ae8654df2868a6499dfd4e4626d5f91b67543c58
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: a65831e9ca04170464925efd13f02e43ad8027f0
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="what-can-developers-do-with-power-bi"></a>Vad kan utvecklare göra med Power BI?
+# <a name="what-can-developers-do-with-the-power-bi-api"></a>Vad kan utvecklare göra med Power BI-API?
 Power BI visar instrumentpaneler som är interaktiva och som kan skapas och uppdateras från många olika datakällor i realtid. Du kan skapa appar som integreras med en Power BI-instrumentpanel i realtid med alla programmeringsspråk som har stöd för REST-anrop. Du kan också integrera Power BI-paneler och -rapporter i appar.
 
 Utvecklare kan också skapa egna datavisualiseringar som kan användas i interaktiva rapporter och instrumentpaneler. 

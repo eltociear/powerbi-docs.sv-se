@@ -2,14 +2,14 @@
 title: DAX-grunder i Power BI Desktop
 description: DAX-grunder i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 1b6a08ffbc7d1edfe0a86b6eb0a84702dec22da0
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 474cca86151925ee4991d477a6127536180808a8
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
 Den här artikeln är avsedd för nya användare i Power BI Desktop. Den är tänkt att ge dig en snabb och enkel introduktion för hur du kan använda dataanalysuttryck (DAX) till att lösa flera grundläggande problem med beräkningar och dataanalys. Vi går igenom viss konceptinformation, en serie aktiviteter som du kan utföra och några kunskapsfrågor som testar vad du har lärt dig. När du har läst den här artikeln bör du ha en god förståelse för de viktigaste grundläggande begreppen i DAX.
@@ -40,7 +40,7 @@ Vi ska fokusera på att förstå de DAX-formler som används i beräkningar och 
 
 **Arbetsboksexempel**
 
-Det bästa sättet att lära sig DAX är att skapa några grundläggande formler, använda faktiska data och se resultaten själv. De exempel och uppgifter som visas här använder Contoso Sales Sample i den förhandsgranskade Power BI Desktop-filen. Det här är samma exempelfil som används i självstudien: Skapa dina egna mått i Power BI Desktop. Du kan ladda ned den [här](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip).
+Det bästa sättet att lära sig DAX är att skapa några grundläggande formler, använda faktiska data och se resultaten själv. De exempel och uppgifter som visas här använder Contoso Sales Sample i den förhandsgranskade Power BI Desktop-filen. Det här är samma exempelfil som används i [självstudien: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). Här är [exempelfilen](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) för nedladdning.
 
 ## <a name="lets-begin"></a>Vi börjar!
 Vi kommer att inrikta vår DAX-förståelse runt tre grundläggande begrepp: *Syntax*, *Funktioner* och *Kontext*. Naturligtvis finns det andra viktiga begrepp i DAX, men att förstå dessa tre ger den bästa grunden till att bygga upp DAX-kunskaperna.
@@ -83,7 +83,7 @@ Du kan också se att kolumnen [SalesAmount] föregicks av tabellen Sales som kol
 > 
 > 
 
-Det är viktigt formlerna har rätt syntax. Om syntaxen inte är korrekt returneras i de flesta fall ett syntaxfel. I annat fall kanske syntaxen är korrekt, men värdena som returneras kanske inte är vad du förväntade dig. DAX-redigeraren i Power BI Desktop innehåller förslag; en funktion som används för att skapa syntaktiskt korrekta formler genom att hjälpa dig välja rätt element.
+Det är viktigt formlerna har rätt syntax. Om syntaxen inte är korrekt returneras i de flesta fall ett syntaxfel. I annat fall kanske syntaxen är korrekt, men värdena som returneras kanske inte är vad du förväntade dig. DAX-redigeraren i Power BI Desktop innehåller en funktion för förslag, som används för att skapa syntaktiskt korrekta formler genom att hjälpa dig välja rätt element.
 
 Nu ska vi skapa en enkel formel. Den här uppgiften hjälper dig att bättre förstå hur formelsyntaxen och förslagsfunktionen i formelfältet kan hjälpa dig.
 
@@ -100,7 +100,7 @@ För att kunna utföra den här aktiviteten måste du öppna Power BI Desktop-fi
     
 4.  Mellan parenteserna skriver du **CALCULATE** följt av en vänsterparentes.
     
-    Du ska använda CALCULATE-funktionen till att filtrera de belopp som vi vill summera med ett argument som vi skickar till funktionen CALCULATE. Det här kallas för kapslade funktioner. CALCULATE-funktionen innehåller minst två argument. Det första är uttrycket ska utvärderas och det andra är ett filter.
+    Du ska använda CALCULATE-funktionen till att filtrera de belopp som vi vill summera med ett argument som vi skickar till funktionen CALCULATE. Det här kallas för kapslade funktioner. CALCULATE-funktionen innehåller minst två argument. Det första är uttrycket som ska utvärderas och det andra är ett filter.
    
 5.  Mellan parenteserna **()** för funktionen **CALCULATE** skriver du **Sales[SalesAmount]**. Detta är det första uttrycksargumentet för vår CALCULATE-funktion.
     
@@ -111,7 +111,6 @@ För att kunna utföra den här aktiviteten måste du öppna Power BI Desktop-fi
 7.  Mellan parenteserna **()** för PREVIOUSQUARTER-funktionen skriver du **Calendar[DateKey]**.
     
     Funktionen PREVIOUSQUARTER har ett argument, en kolumn som innehåller ett sammanhängande datumintervall.
-    >
     
 8.  Se till att båda argumenten skickas till funktionen PREVIOUSQUARTER och att funktionen CALCULATE avslutas med två högerparenteser **))**.
     
@@ -144,7 +143,7 @@ Svaren finns i slutet av den här artikeln.
 ### <a name="functions"></a>Funktioner
 Funktioner är fördefinierade formler som utför beräkningar med specifika värden, så kallade argument, i en viss ordning eller struktur. Argument kan vara andra funktioner, en annan formel, uttryck, kolumnreferenser, tal, text, logiska värden som TRUE eller FALSE, eller konstanter.
 
-DAX innehåller följande typer av funktioner: [Datum och tid](https://msdn.microsoft.com/library/ee634786.aspx), [Tidsinformation](https://msdn.microsoft.com/library/ee634763.aspx)[,](https://msdn.microsoft.com/library/ee634552.aspx)[Information](https://msdn.microsoft.com/library/ee634552.aspx), [ Logisk](https://msdn.microsoft.com/library/ee634365.aspx)[,](https://msdn.microsoft.com/library/ee634365.aspx)[Matematisk](https://msdn.microsoft.com/library/ee634241.aspx), [Statistisk](https://msdn.microsoft.com/library/ee634822.aspx), [Text](https://msdn.microsoft.com/library/ee634938.aspx), [Överordnad/underordnad](https://msdn.microsoft.com/library/mt150102.aspx) och [Övrigt](https://msdn.microsoft.com/library/mt150101.aspx). Om du känner till funktionerna i Excel-formler, kommer du känna igen många av funktionerna i DAX. DAX-funktionerna är emellertid unika på följande sätt:
+DAX innehåller följande typer av funktioner: [Datum och tid](https://msdn.microsoft.com/library/ee634786.aspx), [Tidsinformation](https://msdn.microsoft.com/library/ee634763.aspx), [Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logisk](https://msdn.microsoft.com/library/ee634365.aspx), [Matematisk](https://msdn.microsoft.com/library/ee634241.aspx), [Statistisk](https://msdn.microsoft.com/library/ee634822.aspx), [Text](https://msdn.microsoft.com/library/ee634938.aspx), [Överordnad/underordnad](https://msdn.microsoft.com/library/mt150102.aspx) och [Övrigt](https://msdn.microsoft.com/library/mt150101.aspx). Om du känner till funktionerna i Excel-formler, kommer du känna igen många av funktionerna i DAX. DAX-funktionerna är emellertid unika på följande sätt:
 
 * En DAX-funktion refererar alltid till en fullständig kolumn eller tabell. Om du endast vill använda specifika värden från en tabell eller kolumn kan du lägga till filter i formeln.
 * Om du behöver anpassa radbaserade beräkningar finns det DAX-funktioner där du kan använda det aktuella radvärdet eller ett relaterat värde som en typ av argument, för att utföra beräkningar som varierar beroende på kontext. Du lär dig mer om kontext senare.
@@ -172,7 +171,7 @@ Det är enklast att tänka på radkontexten som den aktuella raden. Den används
 
 Filterkontext är lite svårare att förstå än radkontext. Du kan enklast tänka på filterkontext som ett eller flera filter som tillämpas i en beräkning som ska ge ett resultat eller ett värde.
 
-Filterkontext finns inte i stället för radkontext, utan den tillämpas utöver radkontexten. För att ytterligare begränsa vilka värden som ska ingå i en beräkning kan du tillämpa en filterkontext som inte bara anger radkontext, utan även anger ett specifikt värde (filter) i den radkontexten.
+Filterkontext finns inte i stället för radkontext, utan den tillämpas utöver radkontexten. För att ytterligare begränsa vilka värden som ska ingå i en beräkning kan du exempelvis tillämpa en filterkontext som inte bara anger radkontext, utan även anger ett specifikt värde (filter) i den radkontexten.
 
 Filterkontext är enkel att se i rapporterna. När du lägger till TotalCost i en visualisering och därefter lägger till Year och Region, definierar du till exempel en filterkontext som väljer en delmängd av data baserat på ett visst år och region.
 

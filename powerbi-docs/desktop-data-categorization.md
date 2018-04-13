@@ -2,14 +2,14 @@
 title: Datakategorisering i Power BI Desktop
 description: Datakategorisering i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 00b70b6e56d11d0d7dda959f1983cc4631f53ff9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cc66655e49860160b43afa5d1acb688c37468212
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
 I **Power BI Desktop** kan du ange datakategori för en kolumn så att Power BI Desktop vet hur den ska hantera dess värden i en visualisering.
@@ -40,7 +40,7 @@ Ska Power BI Desktop behandla koderna i kolumnen GeoCode som en förkortning fö
 **Ange en datakategori**
 
 1. Gå till rapport- eller datavyn i listan **Fält** och välj de fält som du vill sortera med en annan kategorisering.
-2. I menyfliksområdet på fliken **Dataverktyg för modellering** klickar du på listrutan **Datakategori:**.  Detta visar listan med datakategorier som du kan välja för kolumnen.  Vissa alternativ kan vara inaktiverade om de inte fungerar med den aktuella datatypen för kolumnen.  Om en kolumn exempelvis är av en binär datatyp kommer Power BI Desktop inte låta dig välja geografiska datakategorier. 
+2. På fliken **Modellering** i menyfliksområdet klickar du på listrutan **Datakategori:**.  Detta visar listan med datakategorier som du kan välja för kolumnen.  Vissa alternativ kan vara inaktiverade om de inte fungerar med den aktuella datatypen för kolumnen.  Om en kolumn exempelvis är av en binär datatyp kommer Power BI Desktop inte låta dig välja geografiska datakategorier. 
 
 ![](media/desktop-data-categorization/datacategorization.gif)
 

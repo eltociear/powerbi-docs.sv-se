@@ -1,15 +1,15 @@
 ---
-title: "Använda beräknade tabeller i Power BI Desktop"
-description: "Beräknade tabeller i Power BI Desktop"
+title: Använda beräknade tabeller i Power BI Desktop
+description: Beräknade tabeller i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8bf8d2629d6a0bd88a85fa468547586e93502721
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 41017e1570a518e26305b6195531bcff889dbd9c
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Använda beräknade tabeller i Power BI Desktop
 Med beräknade tabeller kan du lägga till en ny tabell i modellen. Men i stället för att fråga och läsa in värden i den nya tabellens kolumner från en datakälla kan du skapa en formel för Data Analysis-uttryck (DAX) som definierar tabellens värden. I Power BI Desktop skapas beräknade tabeller med funktionen Ny tabell i rapportvyn eller datavyn.
@@ -71,7 +71,15 @@ Beräknade tabeller kan definieras av ett DAX-uttryck som returnerar en tabell, 
 
 Du kan använda beräknade tabeller med DAX för att lösa många analytiska problem. Vi tillhandahåller endast en snabb introduktion till beräknade tabeller här. När du börjar arbeta med beräknade tabeller är dessa några av de vanligaste DAX-tabellfunktionerna som du kan ha nytta av:
 
-&lt;TABLE&gt; DISTINCT VALUES CROSSJOIN UNION NATURALINNERJOIN NATURALLEFTOUTERJOIN INTERSECT CALENDAR CALENDARAUTO
+* DISTINKTA
+* VÄRDEN
+* CROSSJOIN
+* UNION
+* NATURALINNERJOIN
+* NATURALLEFTOUTERJOIN
+* INTERSECT
+* CALENDAR
+* CALENDARAUTO
 
 Se [DAX-funktionsreferensen](https://msdn.microsoft.com/ee634396.aspx) för dessa och andra tabeller som returnerar DAX-funktioner.
 
