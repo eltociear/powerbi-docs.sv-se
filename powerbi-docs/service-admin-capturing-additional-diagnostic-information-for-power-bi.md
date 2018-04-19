@@ -28,9 +28,9 @@ ms.lasthandoff: 04/08/2018
 ## <a name="capturing-additional-diagnostic-information-for-power-bi"></a>Samla in ytterligare diagnostikinformation för Power BI
 I dessa anvisningar finns två möjliga alternativ för att samla in ytterligare diagnostikinformation från Power BI-webbklienten manuellt.  Du behöver bara använda ett av dessa alternativ.
 
-## <a name="network-capture---edge--internet-explorer"></a>Nätverksklipp – Edge och Internet Explorer
-1. Bläddra till [Power BI](https://app.powerbi.com) med Edge eller Internet Explorer.
-2. Öppna utvecklingsverktygen i Edge genom att trycka på F12.
+## <a name="network-capture---edge--internet-explorer"></a>Nätverksklipp – Microsoft Edge och Internet Explorer
+1. Bläddra till [Power BI](https://app.powerbi.com) med Microsoft Edge eller Internet Explorer.
+2. Öppna utvecklingsverktygen i Microsoft Edge genom att trycka på F12.
 3. Fönstret Utvecklingsverktyg öppnas: 
    
    ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
