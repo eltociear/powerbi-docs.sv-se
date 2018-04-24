@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 64dd0239026d3529129924b8d89eb5cc2642a9af
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: d5cb48469cc5ed5b49da841552bf7426ad29c3fb
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="administering-power-bi-in-your-organization"></a>Administrera Power BI i din organisation
 Med Microsoft Power BI kan du visualisera data, dela upptäckter och samarbeta på nya och intuitiva sätt. Läs mer i [Kom igång med Power BI](service-get-started.md).
@@ -185,8 +185,6 @@ Om du vill utföra följande steg måste du installera den senaste 64-bitarsvers
 Om din organisation redan har en befintlig miljö i Office 365 och alla användare i organisationen har ett Office 365-konto, ändras inte identitetshanteringen.
 
 Om din organisation redan har en befintlig miljö i Office 365, men alla användare i organisationen inte har Office 365-konton skapar vi en användare på klienten och tilldelar licenser utifrån användarens e-post för skola eller arbete. Det innebär att antalet användare som du hanterar när som helst viss kan växa efter hand som användare i din organisation registrerar sig för tjänsten.
-
-Om du hanterar din directory lokalt och använder Active Directory Federation Services (AD FS), kommer Microsoft inte att lägga till användare till din klient och användare som försöker ansluta till din klient får ett meddelande om att kontakta organisationens administratör.
 
 Om din organisation inte har en Office 365-miljö som är ansluten till din e-domän, sker det ingen ändring i hur du hanterar identiteter. Användare läggs till i en ny, endast molnbaserad användarkatalog och du har möjlighet att ta över som administratör och hantera dem.
 

@@ -1,16 +1,16 @@
 ---
-title: "Hur du fäster en panel på en Power BI-instrumentpanel från Excel"
-description: "Fäst en panel på en Power BI-instrumentpanel från Excel i OneDrive för företag. Fästa intervall, diagram, tabeller"
+title: Hur du fäster en panel på en Power BI-instrumentpanel från Excel
+description: Fäst en panel på en Power BI-instrumentpanel från Excel i OneDrive för företag. Fästa intervall, diagram, tabeller
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: l8JoB7w0zJA
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -19,11 +19,11 @@ ms.workload: powerbi
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fdd014e513a794a72196a3173703b9536f06768a
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 76bfe440291687d7f34b859eccad6099a498c819
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fästa en panel på en Power BI-instrumentpanel från Excel
 Innan du kan fästa en panel från Excel-arbetsboken, ansluter du arbetsboken till Power BI-tjänsten (app.powerbi.com). Att ansluta en arbetsbok innebär i stort sett att använda en länkad skrivskyddad version av arbetsboken i Power BI-tjänsten för att du ska kunna fästa intervall på instrumentpaneler. Du kan även fästa ett helt kalkylblad på en instrumentpanel.  
@@ -41,20 +41,19 @@ När du väljer **Anslut** visas arbetsboken i Power BI precis som den skulle ha
 Du kan inte redigera din arbetsbok i Power BI. Men om du behöver göra ändringar kan du välja pennikonen på fliken **Arbetsböcker** i arbetsytan och sedan välja att redigera din arbetsbok i Excel Online eller öppna den i Excel på datorn. Alla ändringar du gör sparas i arbetsboken på OneDrive.
 
 1. Ladda upp din arbetsbok till ditt OneDrive för företag.
+
 2. Från Power BI [anslut till arbetsboken](service-excel-workbook-files.md) genom att välja **Hämta Data > Filer > OneDrive – Business** och gå till den plats där du sparade Excel-filen. Markera filen och välj **Anslut > Anslut**.
 
-   ![dialogrutan OneDrive för företag](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
+    ![dialogrutan OneDrive för företag](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
 3. Arbetsboken läggs till på fliken **Arbetsböcker** på arbetsytan i Power BI.  Ikonen ![arbetsboksikon](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) visar att det är en Excel-arbetsbok och en gul asterisk visar att den är ny.
-   
     
-   ![fliken Arbetsböcker](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
+    ![fliken Arbetsböcker](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Öppna arbetsboken i Power BI genom att välja arbetsbokens namn.
 
     Ändringar som du gör i arbetsboken i Power BI sparas inte och påverkar inte den ursprungliga arbetsboken på OneDrive för företag. Om du sorterar, filtrerar eller ändrar värden i Power BI kommer ändringarna inte att sparas eller fästas. Om du behöver göra ändringar som ska sparas, väljer du **Redigera** från det övre högra hörnet för att öppna den för redigering i Excel Online eller Excel. Med ändringar som gjorts på det här sättet kan det ta några minuter att uppdatera paneler på instrumentpanelen.
    
-   
-   ![Excel Online i Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
+    ![Excel Online i Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Fästa ett cellområde på en instrumentpanel
 Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) är från en Excel-arbetsbok i Power BI. Områden kan fästas från Excel-arbetsböcker som har sparats i OneDrive för företag eller andra gruppdelade dokumentbibliotek. Områdena kan innehålla data, diagram, tabeller, pivottabeller, pivotdiagram och andra delar av Excel.

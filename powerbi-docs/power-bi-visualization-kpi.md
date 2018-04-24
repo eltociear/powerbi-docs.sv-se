@@ -1,29 +1,29 @@
 ---
-title: "Visuella KPI-objekt (självstudier)"
-description: "skapa KPI i Power BI-tjänsten och Power BI Desktop"
+title: Visuella KPI-objekt (självstudier)
+description: skapa KPI i Power BI-tjänsten och Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: xmja6EpqaO0
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1a937b77135d6ad7843a6e0be779c235a1073f46
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4d6af52f10f16d973dc97ed0da1ed74bf63ec2cc
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="kpi-visuals-tutorial"></a>Visuella KPI-objekt (självstudier)
 En KPI (Key Performance Indicator) är en visuell ledtråd som kommunicerar de framsteg som gjorts mot ett mätbart mål. Mer information om KPI:er finns i [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -76,11 +76,8 @@ KPI:er finns även tillgängliga på dina mobila enheter – så att du kan hål
 * Om din KPI inte ser ut som den på bilden ovan, kan det bero på att du behöver sortera efter månad. Eftersom KPI:er saknar sorteringsalternativ, måste du sortera efter månad *innan* du konverterar visualiseringen till en KPI.
 
 ## <a name="next-steps"></a>Nästa steg
-[Rapporter i Power BI](service-reports.md)
 
 [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
-
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
