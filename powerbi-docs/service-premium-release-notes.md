@@ -1,28 +1,28 @@
 ---
 title: Viktig information om Power BI Premium
-description: "Läs viktig information om Power BI Premium, en dedikerad kapacitet för din organisation eller ditt team."
+description: Läs viktig information om Power BI Premium, en dedikerad kapacitet för din organisation eller ditt team.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/11/2017
-ms.author: maghan
+ms.author: mgblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: e25677f615f4aa5b1489604814cebc6916809c41
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 91126fa362dd6bca3e85b28959b5059825cd8a07
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-premium-release-notes"></a>Viktig information om Power BI Premium
 Detta är viktig information om Power BI Premium, en dedikerad kapacitet som ger din organisation eller ditt team mer tillförlitliga prestanda, större datamängder och möjligheten att distribuera innehåll utan visningslicenser per användare.

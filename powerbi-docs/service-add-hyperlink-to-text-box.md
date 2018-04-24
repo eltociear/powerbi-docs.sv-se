@@ -1,32 +1,32 @@
 ---
-title: "Lägga till en hyperlänk i en textruta i en rapport"
-description: "Lägga till en hyperlänk i en textruta i Power BI-tjänsten och Desktop"
+title: Lägga till en hyperlänk i en textruta i en rapport
+description: Lägga till en hyperlänk i en textruta i Power BI-tjänsten och Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 95352c72dfca1c1439f89d532dbcfcc5cd26758c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 13edfd3f6968af66f96e3690f2509ba8a7158bbe
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Lägga till en hyperlänk i en textruta i en rapport
-Textrutor kan läggas till i rapporter, fästas på instrumentpaneler från rapporter och läggas till direkt på instrumentpaneler. Hyperlänkar kan läggas till en textruta oavsett var den finns. **Det här avsnittet handlar om textrutor i rapporter i Power BI-tjänsten (inte Power BI Desktop).**
+Textrutor kan läggas till i rapporter, fästas på instrumentpaneler från rapporter och läggas till direkt på instrumentpaneler. Hyperlänkar kan läggas till en textruta oavsett var den finns.  
 
 > **OBS**: Information om hyperlänkar i Power BI-tabeller och -matriser finns i [Hyperlänkar i tabeller](power-bi-hyperlinks-in-tables.md). Mer information om att lägga till textrutor till **instrumentpanelen** finns i [Add a tile directly from the dashboard (Lägga till en panel direkt från instrumentpanelen)](service-dashboard-add-widget.md). 
 > 
@@ -61,8 +61,6 @@ Textrutor kan läggas till i rapporter, fästas på instrumentpaneler från rapp
 
 ## <a name="next-steps"></a>Nästa steg
 [Textrutor i Power BI-rapporter](power-bi-reports-add-text-and-shapes.md)
-
-[Lägga till en textruta på en instrumentpanel](service-dashboard-add-widget.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

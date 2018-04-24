@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a9cb6e3d3fe244a3d530efeb2624e3cc5a799e55
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 1ccc4eeff54bff91a9ed245fdb82462768b65264
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
 I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter.
@@ -48,7 +48,6 @@ Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänst
 |Aktivitet  | Läsvy  | Redigeringsvy |
 |-------------------------|-------|-------|
 |**Rapporter som helhet**  |
-||||
 | [Skapa eller redigera en rapport](service-report-create-new.md) | Nej  | Ja |
 | [Dela en rapport](service-share-reports.md)| Ja | Ja, och du kan även hantera behörigheter, inklusive att ge andra *ägare* behörigheter. |
 | [Skapa beständiga (permanenta) visuella nivåfilter, detaljinformationsfilter, sidnivåfilter och filter på rapportnivå från fönstret Filter](power-bi-report-add-filter.md) | Nej  | Ja |
@@ -63,12 +62,10 @@ Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänst
 | [Spara en rapport](service-report-save.md) | Ja, men endast genom att använda **Spara som**. | Ja |
 | [Ta bort en rapport](service-delete.md) | Nej  | Ja |
 |**Rapportsidor** |
-||||
 | [Lägga till eller byta namn på en rapportsida](power-bi-report-add-page.md)  | Nej  | Ja  |
 | [Duplicera en rapportsida](power-bi-report-copy-paste-page.md) | Nej  | Ja |
 | [Ta bort en rapportsida](service-delete.md) | nej | ja |
 |**Arbeta med rapportvisualiseringar**|
-||||
 | [Lägga till visuella objekt i en rapport](power-bi-report-add-visualizations-i.md) | Nej  | Ja |
 | [Lägga till textrutor och former i en rapport](power-bi-reports-add-text-and-shapes.md) | Nej  | Ja |
 | [Använda rapportfönstret för formatering](service-the-report-editor-take-a-tour.md) | Nej | Ja |

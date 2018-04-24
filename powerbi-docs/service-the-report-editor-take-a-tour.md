@@ -1,29 +1,29 @@
 ---
-title: "Snabbstart – Rapportredigeraren ... Ta en rundtur"
+title: Snabbstart – Rapportredigeraren ... Ta en rundtur
 description: Rapportredigeraren... Ta en rundtur.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 featuredvideoid: IkJda4O7oGs
-tags: 
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ea40bafdc3c210771e5dd02368df41d3d9287baf
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: b134fe1e5d14f3707391888951178553d5cda7e5
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapportredigeraren... Ta en rundtur
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigera rapporter i Power BI-tjänsten och Power BI Desktop
@@ -56,7 +56,6 @@ Innehållet som visas i rapportredigeraren varierar beroende på vilka val du g�
 |  |  |
 | --- | --- |
 | ![](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>Överst i visualiseringsfönstret identifieras det visuella objektets typ. I det här exemplet är det ett klustrat stapeldiagram.<br><br></li> <li>Längst ned i visualiseringsfönstret (du kanske måste rulla nedåt) visas de fält som används i det visuella objektet. Det här diagrammet använder FiscalMonth, DistrictManager och Total Sales Variance. <br><br></li><li>Fönstret Filter (du kanske måste rulla nedåt) visar eventuella filter som har tillämpats. <br><br></li><li>Fönstret Fält innehåller de tabeller som är tillgängliga, och om du expanderar ett tabellnamn visas fälten som utgör tabellen. Ett gult teckensnitt indikerar att minst ett fält från tabellen används i visualiseringen.<br><br></li><li>![rollerikon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) Välj rollerikonen om du vill visa formateringsfönstret för den valda visualiseringen.<br><br></li><li>![förstoringsglasikon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) Välj förstoringsglasikonen om du vill visa analysfönstret.</ul> |
-|  | |
 
 ## <a name="the-visualizations-pane-from-top-to-bottom"></a>Visualiseringsfönstret (uppifrån och ned)
 ![översta delen av visualiseringsfönstret](media/service-the-report-editor-take-a-tour/selectviz.png)
