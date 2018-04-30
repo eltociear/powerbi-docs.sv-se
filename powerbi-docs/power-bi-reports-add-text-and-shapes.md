@@ -1,32 +1,32 @@
 ---
 title: Textrutor och figurer i Power BI-rapporter
-description: "Dokumentation om att lägga till och skapa textrutor och figurer i en rapport med Microsoft Power BI-tjänsten."
+description: Dokumentation om att lägga till och skapa textrutor och figurer i en rapport med Microsoft Power BI-tjänsten.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 featuredvideoid: _3q6VEBhGew
-tags: 
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ce10e5d7b0ea2247655a9f93bfc3534086106f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5e71159e2c7d0cb7439a14bf5d8e082192c4ab7a
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="static-content-in-power-bi-reports"></a>Statiskt innehåll i Power BI-rapporter
-Textrutor och former kan läggas till i rapporter med Power BI-tjänsten och Power BI Desktop. I båda fallen måste du ha redigeringsbehörigheter för rapporten. Om en rapport har delats med dig har du inte åtkomst till redigeringsvyn. 
+Textrutor och former kan läggas till i rapporter med Power BI-tjänsten och Power BI Desktop. I båda fallen måste du ha redigeringsbehörigheter för rapporten. Om en rapport har delats med dig i Power BI-tjänsten, har du inte redigeringsbehörigheter. 
 
 Titta när Will använder Power BI Desktop för att [lägga till statiska avbildningar i en rapport](guided-learning/visualizations.yml#step-11), och följ stegen nedan för att prova själv med hjälp av Power BI-tjänsten i stället.
 > 

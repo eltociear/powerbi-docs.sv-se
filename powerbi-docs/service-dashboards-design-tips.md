@@ -1,28 +1,28 @@
 ---
-title: "Tips för att utforma en bra Power BI-instrumentpanel"
-description: "Tips för att utforma en bra Power BI-instrumentpanel"
+title: Tips för att utforma en bra Power BI-instrumentpanel
+description: Tips för att utforma en bra Power BI-instrumentpanel
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
+ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 769d669f00c87e6139d8ff2cb8640739d09edf7a
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 9d71d417a2d7beb7f968bf18fc6de90794663ec8
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
@@ -31,25 +31,28 @@ Här följer några tips.
 
 > [!TIP]
 > Många av utformningsprinciperna för rapporter kan även tillämpas för instrumentpaneler.  Läs vår white paper [Best design principles for reports and visualizations (Bästa utformningsprinciperna för rapporter och visualiseringar)](power-bi-visualization-best-practices.md).
-> 
-> 
+>
+>
 
-### <a name="consider-your-audience"></a>Ta hänsyn till din målgrupp
+## <a name="watch-the-dashboard-makeover-webinarhttpsinfomicrosoftcomco-powerbi-wbnr-fy16-05may-12-dashboard-makeover-registrationhtml"></a>Titta på [webbseminariet om att göra om instrumentpaneler](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)
+Se Microsofts högsta programansvarige och expert på Power BI-instrumentpanelen, Marc Reguera, [göra om instrumentpaneler](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html).
+
+## <a name="consider-your-audience"></a>Ta hänsyn till din målgrupp
 Vilka är de viktigaste måtten som kommer hjälpa dem att fatta beslut? Hur ska instrumentpanelen användas? Vilka inlärda eller kulturella antaganden kan påverka utformningsvalen? Vilken information behöver din målgrupp för att lyckas?
 
 Kom ihåg att instrumentpanelen är en översikt, en enskild plats där dina datas aktuella tillstånd kan övervakas. Instrumentpanelen baseras på underliggande rapporter och datauppsättningar och dessa kan innehålla massor av information. Dina läsare kan gå in på detaljer i rapporterna med instrumentpanelen som utgångspunkt. Så placera inte detaljerad information på instrumentpanelen, om det inte är vad läsarna behöver för att övervaka situationen.
 
 Var ska instrumentpanelen visas? Om den ska visas på en stor skärm kan du placera mer innehåll på den. Om läsarna ska visa den på sina surfplattor blir färre paneler lättare att läsa.
 
-### <a name="tell-a-story-and-keep-it-to-one-screen"></a>Förmedla ditt budskap och begränsa det till en skärm
+## <a name="tell-a-story-and-keep-it-to-one-screen"></a>Förmedla ditt budskap och begränsa det till en skärm
 Eftersom avsikten med instrumentpaneler är ge översikt över viktig information på ett ögonblick, är det bäst att ha alla paneler på en skärm. Går det att undvika rullningslister på instrumentpanelen?
 
 Är instrumentpanelen för plottrig?  Ta bort allt utom viktig information som enkelt kan läsas och tolkas.
 
-### <a name="make-use-of-full-screen-mode"></a>Använd dig av helskärmsläge
+## <a name="make-use-of-full-screen-mode"></a>Använd dig av helskärmsläge
 Visa instrumentpanelen i [helskärm](service-fullscreen-mode.md) utan störningar.
 
-### <a name="make-the-most-important-information-biggest"></a>Gör den viktigaste informationen störst
+## <a name="make-the-most-important-information-biggest"></a>Gör den viktigaste informationen störst
 Om texten och visualiseringarna på instrumentpanelen har samma storlek, får läsaren svårt att fokusera på vad som är viktigt. Till exempel är kortvisualiseringar ett bra sätt att visa upp ett viktigt tal på en framträdande plats:  
 ![Kortvisualisering](media/service-dashboards-design-tips/pbi_card.png)
 
@@ -57,10 +60,10 @@ Men kom ihåg att tillhandahålla kontexten.
 
 Läs mer om att [skapa en panel med bara ett tal](power-bi-visualization-card.md).
 
-### <a name="put-the-most-important-information-in-the-upper-corner"></a>Placera den viktigaste informationen i det övre hörnet
+## <a name="put-the-most-important-information-in-the-upper-corner"></a>Placera den viktigaste informationen i det övre hörnet
 De flesta läser uppifrån och ned, så placera mer allmän information högst upp och visa fler detaljer i den riktning som målgruppen läser (från vänster till höger eller från höger till vänster).
 
-### <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Använd rätt visualisering för dina data och formatera den för enklare läsning
+## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Använd rätt visualisering för dina data och formatera den för enklare läsning
 Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar ska skapa en översiktsbild och vara enkla att ”läsa” och tolka.  För vissa data och visualiseringar räcker det med en enkel grafisk visualisering. Men andra data kan kräva en mer komplex visualisering – var noga med att använda rubriker och etiketter och andra anpassningar för att hjälpa läsaren.  
 
 * [Välj lämpliga datavisualiseringar](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Var försiktig med att använda diagram som förvränger verkligheten, det vill säga 3D-diagram. Tänk på att det är svårt för den mänskliga hjärnan att tolka runda figurer. Cirkeldiagram, ringdiagram, måttdiagram och andra runda diagramtyper kan se fina ut men de är inte den bästa lösningen för datavisualisering.
@@ -84,7 +87,6 @@ Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI]
 * *Advanced Presentations* av Design by Andrew Abela   
 
 ## <a name="next-steps"></a>Nästa steg
-[Instrumentpaneler i Power BI](service-dashboards.md)  
+[Skapa en instrumentpanel från en rapport](service-dashboard-create.md)  
 [Power BI – grundläggande begrepp](service-basic-concepts.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

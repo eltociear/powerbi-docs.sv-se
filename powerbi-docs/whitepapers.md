@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/16/2018
+ms.date: 04/11/2018
 ms.author: maghan
-ms.openlocfilehash: 5e9e0ea009e403b89af7ff67e81062433ba56b80
-ms.sourcegitcommit: 863df35192b9aba1e7c22a64bc8df24418416730
+ms.openlocfilehash: 049ffb993e749e9cb251130438e351d8adbe3bdf
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -30,18 +30,18 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | White paper | Beskrivning |
 | --- | --- |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både i dess ursprungsform och hur den kommer att utvecklas. |
-| [Planera en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy) |Det här är ett tekniskt white paper som beskriver överväganden för en väl utförd och säker distribution av Power BI. |
+| [Power BI Premium planering och distribution](https://aka.ms/Premium-Capacity-Planning-Deployment)| Det här dokumentet innehåller vägledning och bästa praxis för planering och distribution av Premium-kapacitet för väldefinierade arbetsbelastningar.|
 | [Planera kapacitet för inbäddade analysverktyg med Power BI Premium](https://aka.ms/pbiewhitepaper) |Det här dokumentet innehåller vägledning för att hjälpa apputvecklare/ISV:er att fastställa den lämpligaste kapaciteten för verksamheten. |
-|[Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|Det här dokumentet beskriver hur du distribuerar innehåll till användare utanför organisationen med hjälp av integrering av Azure Active Directory Business-to-business (AAD B2B).|
+| [Planera en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy) |Det här är ett tekniskt white paper som beskriver överväganden för en väl utförd och säker distribution av Power BI. |
+| [Vägledning för kapacitetsplanering för Power BI-rapportserver](report-server/capacity-planning.md) |Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. |
+| [Säkerhet](service-admin-power-bi-security.md) |Ge en detaljerad förklaring av säkerheten i Power BI. |
+| [Power BI och GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Power BI kan vara en viktig del av din resa mot GDPR-efterlevnad. Syftet med det här dokumentet är att ge dig viss grundläggande förståelse för GDPR samt relatera denna till Power BI. Efterlevnad med GDPR är obligatoriskt i vissa situationer som beskrivs i det här dokumentet, men detta är inte en ”kryssa i-övning”. Det är också ett sätt att förbättra dina övergripande dataskydds- och sekretesskunskaper.|
+| [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|Det här dokumentet beskriver hur du distribuerar innehåll till användare utanför organisationen med hjälp av integrering av Azure Active Directory Business-to-business (AAD B2B).|
 | [Metodtips för design av rapporter och visuella objekt](power-bi-visualization-best-practices.md) |Här finns metodtips för att utforma rapporter i Power BI. |
 | [Avancerade analyser med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver funktionerna i Power BI, inklusive förutsägelseanalyser, anpassade visualiseringar, R-integrering och data-analysuttryck. |
 | [Dubbelriktad filtrering](desktop-bidirectional-filtering.md) |Förklarar dubbelriktad korsfiltrering i Power BI Desktop (det omfattar även SQL Server Analysis Services 2016, som har samma funktioner). |
 | [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |DirectQuery har gjorts om för avsevärt förbättrad hastighet och prestanda för SQL Server 2016, men det är nu också mer komplext att förstå och implementera. |
-| [Styrning](service-admin-governance.md) |Ger ett ramverk för att öka avkastningen på investeringar som rör Power BI. |
-| [Säkerhet](service-admin-power-bi-security.md) |Ge en detaljerad förklaring av säkerheten i Power BI. |
 | [Skydda en Tabular BI-semantikmodell](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Det här dokumentet beskriver säkerhetsmodellen för Tabular BI-semantik och Power BI. Du får lära dig att skapa roller, implementera dynamisk säkerhet, konfigurera inställningar för personifiering, hantera roller och välja en metod för att ansluta till modeller som fungerar i ditt nätverks säkerhetskontext. |
-| [Vägledning för kapacitetsplanering för Power BI-rapportserver](report-server/capacity-planning.md) |Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. |
-| [Power BI Premium planering och distribution](https://aka.ms/Premium-Capacity-Planning-Deployment)| Det här dokumentet innehåller vägledning och bästa praxis för planering och distribution av Premium-kapacitet för väldefinierade arbetsbelastningar.|
 | [Power BI och SAP BW](https://aka.ms/powerbiandsapbw)| Det här dokumentet beskriver hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse).|
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

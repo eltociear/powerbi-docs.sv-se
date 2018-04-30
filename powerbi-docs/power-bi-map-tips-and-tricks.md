@@ -1,29 +1,29 @@
 ---
-title: "Tips och trick för kartvisualiseringar, inklusive integrering med Bing Maps"
-description: "Tips och trick för Power BI-kartvisualiseringar, visuella objekt, platser, longitud och latitud och hur de fungerar med Bing Maps. "
+title: Tips och råd för mappar (inklusive Bing Maps-integrering)
+description: 'Tips och trick för Power BI-kartvisualiseringar, visuella objekt, platser, longitud och latitud och hur de fungerar med Bing Maps. '
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: ajTPGNpthcg
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5a78481376d679025fe3ac8929dff8756eb61257
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 031d977adbeb0697bcdd1bb6b19ebf21ec16e516
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips för Power BI-kartvisualiseringar
 Power BI integrerar med Bing Maps för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Tillsammans använder de algoritmer för att identifiera rätt plats, men är det mest en gissning. Om Power BI inte kan skapa en karta på egen hand använder den Bing Maps. 

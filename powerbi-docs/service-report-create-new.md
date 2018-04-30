@@ -1,36 +1,36 @@
 ---
-title: "Självstudie – Skapa en ny rapport från en datauppsättning "
-description: "Skapa en ny Power BI-rapport från en datauppsättning."
+title: 'Självstudie – Skapa en ny rapport från en datauppsättning '
+description: Skapa en ny Power BI-rapport från en datauppsättning.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 7da16deb3e5919d509a5cbbb7fd845914c8c4ea4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: e6c4a614f19a6ba7b9e24c199b7f291e7f57f098
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Skapa en ny Power BI-rapport genom att importera en datauppsättning
-Du har läst [Rapporter i Power BI](service-reports.md) och nu vill du skapa en egen. Det finns många olika sätt att skapa en rapport och i den här artikeln börjar vi med att skapa en grundläggande rapport från en Excel-datauppsättning. När du förstår grunderna för att skapa en rapport leder **Nästa steg** längst ned till mer avancerade avsnitt om rapporter.  
+# <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Skapa en ny rapport i Power BI-tjänsten genom att importera en datauppsättning
+Du har läst [Rapporter i Power BI](service-reports.md) och nu vill du skapa en egen. Det finns många olika sätt att skapa en rapport och i den här artikeln börjar vi med att skapa en grundläggande rapport från en Excel-datauppsättning med Power BI-tjänsten. När du förstår grunderna för att skapa en rapport leder **Nästa steg** längst ned till mer avancerade avsnitt om rapporter.  
 
 > **TIPS**: för att skapa en rapport genom att kopiera en befintlig rapport, se [Kopiera en rapport](power-bi-report-copy.md)
 > 
 ### <a name="prerequisites"></a>Förutsättningar
-- Power BI-tjänsten (information om att skapa rapporter med hjälp av Power BI Desktop finns i [Desktop-rapportvy](desktop-report-view.md)   
+- Power BI-tjänsten (information om att skapa rapporter med hjälp av Power BI Desktop finns i [Desktop-rapportvy](desktop-report-view.md))  
 - Exempel på detaljhandelsanalys
 
 ## <a name="import-the-dataset"></a>Importera datauppsättningen

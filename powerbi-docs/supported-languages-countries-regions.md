@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0ca6a21e67e7ab1d2a0c0daa8da07052041db139
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 4552e08c5291ee5f0ce268e796e1a9148eb64be2
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Språk och länder/regioner som stöds för Power BI
 
@@ -153,9 +153,9 @@ Oavsett om du laddar ned Power BI Desktop eller installerar det från Windows St
 
 1. I Power BI Desktop går du till **Arkiv** > **Alternativ och inställningar** > **Alternativ**.
 2. Under **Aktuell fil**väljer du **Regionala inställningar**.
-3. I rutan **Språkversion** väljer du ett annat språk. 
+3. Välja andra nationella inställningar för import i rutan **Nationella inställningar**. 
    
-   ![Dialogrutan Power BI Desktop-alternativ](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
+   ![Dialogrutan Power BI Desktop-alternativ](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Välj **OK**.
 
 ### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>Välja språk för modellen i Power BI Desktop

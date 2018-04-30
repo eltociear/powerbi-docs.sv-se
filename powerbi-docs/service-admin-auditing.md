@@ -15,27 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/12/2017
+ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 46f8d11d45423a9f7df96ac4d1e59c5d805304a7
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 23fa4ea28631e7545a1d68cd1f631eb087c56b98
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Lär dig hur du kan övervaka och undersöka åtgärder genom att använda granskning med Power BI. Du kan använda säkerhets- och efterlevnadscentret eller PowerShell.
 
 Att veta vem som vidtagit en viss åtgärd för ett visst objekt i din Power BI-klient kan vara av avgörande betydelse när det gäller att hjälpa organisationen att uppfylla olika krav, t.ex regelefterlevnad och posthantering.
 
 Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpanel, rapport, datamängd eller aktivitetstyp. Du kan också hämta aktiviteterna till en CSV-fil att analysera dem offline.
-
-> [!NOTE]
-> Granskningsfunktionen i Power BI är tillgänglig för förhandsvisning i alla dataområden.
 
 ## <a name="requirements"></a>Krav
 Du måste uppfylla följande krav för att komma åt granskningsloggar:
@@ -47,28 +42,8 @@ Du måste uppfylla följande krav för att komma åt granskningsloggar:
 
 - Om du har åtkomst till granskningsloggen men inte är global administratör eller administratör för Power BI-tjänsten, får du inte åtkomst till Power BI-administratörsportalen. I det här fallet måste du hämta en direktlänk till säkerhet- och efterlevnadscentrumet för Office 365.
 
-## <a name="enabling-auditing-functionality-in-the-power-bi-admin-portal"></a>Aktivera granskningsfunktionen i Power BI-administratörsportalen
-
-Du måste aktivera granskning för din organisation för att kunna arbeta med rapporterna. Du kan göra detta i administratörsportalens klientinställningar.
-
-1. Välj **kugghjulsikonen** i det övre högra hörnet.
-
-2. Välj **Administratörsportalen**.
-   
-   ![](media/service-admin-auditing/powerbi-admin.png)
-
-3. Välj **Klientinställningar**.
-   
-   ![](media/service-admin-auditing/powerbi-admin-tenant-settings.png)
-
-4. Aktivera **Skapa granskningsloggar för intern aktivitetsgranskning och efterlervnadssysften**.
-
-5. Välj **Tillämpa**.
-
-Power BI börjar logga olika aktiviteter som dina användare utför i Power BI. Det dröjer upp till 48 timmar innan loggarna visas i O365 säkerhets- och efterlevnadscenter. Mer information om vilka aktiviteter som loggas finns i [Lista över aktiviteter som granskas av Power BI](#list-of-activities-audited-by-power-bi).
-
 > [!NOTE]
-> Om du vill aktivera granskning för Power BI i din klient, så måste du ha minst en Exchange-postlådelicens i din klient.
+> Om du vill visa granskningsloggar för Power BI i din klient, så måste du ha minst en Exchange-postlådelicens i din klient.
 
 ## <a name="accessing-your-audit-logs"></a>Öppna dina granskningsloggar
 

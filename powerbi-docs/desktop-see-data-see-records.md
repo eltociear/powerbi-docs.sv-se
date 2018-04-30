@@ -1,15 +1,15 @@
 ---
 title: Se data och poster i Power BI Desktop-visualiseringar
-description: "Använd funktionerna Se data och Se poster för Power BI Desktop för att gå in på detaljnivå"
+description: Använd funktionerna Se data och Se poster för Power BI Desktop för att gå in på detaljnivå
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,78 +18,81 @@ ms.workload: powerbi
 ms.date: 02/22/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: c44a5140fe40217aac170abb0b351197803b6299
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 507c2e5e6d9f41e3342019cc8f051dd1e11954cc
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Använd se Data och se poster i Power BI Desktop
-I **Power BI Desktop** kan du gå in på detaljnivå för all visuell information och se en textrepresentation av data eller enskilda dataelement för en vald visualisering. De här funktionerna kallas ibland för *klicka igenom*, eller *detaljerad information* eller *gå in på detaljnivå*.
+I **Power BI Desktop** kan du visa detaljer om en visualisering och se textrepresentationer av underliggande data eller enskilda dataelement för den valda visualiseringen. De här funktionerna kallas ibland för *klicka igenom*, *detaljerad information* eller *gå in på detaljnivå*.
 
-Du kan använda **Se poster** för att visa de underliggande raderna för ett valt dataelement från en visualisering eller använda **Se data** för att visa en textversion av de värden som används i visualiseringen. Det finns vissa begränsningar med att använda **Se data** och **Se poster**, vilka beskrivs i slutet av den här artikeln.
+Du kan använda **Se data** för att visa en textversion av de värden som används av den valda visualiseringen eller använda **Se poster** för att visa alla data för en markerad post eller datapunkt. 
 
-![](media/desktop-see-data-see-records/see-data-see-records_1.png)
+![Se data och Se poster](media/desktop-see-data-see-records/see-data-record.png)
 
-## <a name="using-see-data-in-power-bi-desktop"></a>Använd Se data i Power BI Desktop
-Knappen **Se data** finns i fliken **Data / detaljgranska** i avsnittet **Visuella verktyg** i menyfliksområdet.
+>[!IMPORTANT]
+>**Se data** och **Se poster** har endast stöd för följande visualiseringstyper:
+>  - Stapeldiagram
+>  - Kolumndiagram
+>  - Ringdiagram
+>  - Ifylld karta
+>  - Tratt
+>  - Karta
+>  - Cirkeldiagram
+>  - Trädkarta
 
-![](media/desktop-see-data-see-records/see-data-see-records_2.png)
+## <a name="use-see-data-in-power-bi-desktop"></a>Använd Se data i Power BI Desktop
 
-Du kan även **Se data** genom att högerklicka på en visualisering och sedan välja **Se data** från menyn som visas.
+**Se data** visar data som är underliggande en visualisering. **Se data** visas i fliken **Data/detaljgranska** i avsnittet **Visuella verktyg** i menyfliksområdet när en visualisering väljs.
 
-![](media/desktop-see-data-see-records/see-data-see-records_3.png)
+![Se data i menyfliksområdet](media/desktop-see-data-see-records/see-data1.png)
+
+Du kan också visa data genom att högerklicka på en visualisering och sedan välja **Visa data** från menyn som visas, eller genom att välja ellipsen (...) **Fler alternativ** i det övre högra hörnet av en visualisering och sedan välja **Visa data**.
+
+![Högerklicka på Visa data](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Fler alternativ för Visa data](media/desktop-see-data-see-records/see-data3.png)
 
 > [!NOTE]
-> Du måste hovra över en datapunkt i visualiseringen för att snabbmenyn ska vara tillgängliga.
-> 
-> 
+> Du måste hovra över en datapunkt i visualiseringen för att snabbmenyn ska vara tillgänglig.
 
-När du väljer **Se data**, fokuserar **Power BI Desktop** på den visuella informationen och de data som du valt och dedikerar arbetsytan för att visa visualiseringen och textrepresentation av data. Den visuella informationen visas på den övre delen av arbetsytan och data visas på den nedre halvan, enligt följande bild. Det här är den *vågräta* vyn.
+När du väljer **Se data** eller **Visa data**, visar Power BI Desktop-arbetsytan både visuella och textrepresentation av data. I *vågrät vy* visas visualiseringen på den övre delen av arbetsytan och data visas på den nedre halvan. 
 
-![](media/desktop-see-data-see-records/see-data-see-records_4.png)
+![vågrät vy](media/desktop-see-data-see-records/see-data4a.png)
 
-Du kan också växla till en *lodrät vy* (eller tillbaka till *vågrät vy*), genom att välja ikonen i det övre högra hörnet.
+Du kan växla mellan vågrät vy och *lodrät vy* genom att välja ikonen i det övre högra hörnet av arbetsytan.
 
-![](media/desktop-see-data-see-records/see-data-see-records_5.png)
+![växla till lodrät vy](media/desktop-see-data-see-records/see-data4.png)
 
 Gå tillbaka till rapporten genom att markera **< Tillbaka till rapporten** i det övre vänstra hörnet på arbetsytan.
 
-![](media/desktop-see-data-see-records/see-data-see-records_6.png)
+![Tillbaka till rapporten](media/desktop-see-data-see-records/see-data5.png)
 
-## <a name="using-see-records-in-power-bi-desktop"></a>Använd Se poster i Power BI Desktop
-Du kan också fokusera på ett dataelement i en visualisering och gå in på detaljnivå på bakomliggande data. När en visualisering väljs det finns två sätt att använda **Se poster**: Du kan aktivera växlingsknappen **Se poster** i menyfliksområdet **Data / detaljgranska** och sedan klicka på ett dataelement, eller så kan du högerklicka på ett dataelement och välja **Se poster** från menyn som visas.
+## <a name="use-see-records-in-power-bi-desktop"></a>Använd Se poster i Power BI Desktop
 
-![](media/desktop-see-data-see-records/see-data-see-records_7.png)
+Du kan också fokusera på en datapost i en visualisering och gå in på detaljnivå på bakomliggande data. För att använda **Se poster**, välj en visualisering och sedan **Se poster** i fliken **Data/detaljgranska** i avsnittet **Visuella verktyg** i menyfliksområdet och välj sedan en datapunkt eller raden på visualiseringen. 
 
-> [!NOTE]
-> Om den valda visualiseringen inte stöder **Se poster** så är knappen i menyfliksområdet nedtonad.
-> 
-> 
-
-När **Se poster** har valts, fokuserar **Power BI Desktop** på det enskilda dataelementet och dedikerar arbetsytan till att visa data för det elementet som det visas i följande bild.
-
-![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+![Se poster i menyfliksområdet](media/desktop-see-data-see-records/see-record1.png)
 
 > [!NOTE]
-> Det går inte att spara ändringar av data som visas (eller ändras av användare) i vyn **Se poster** till en rapport.
+> Om knappen **Se poster** i menyfliksområdet är inaktiverad och nedtonad, betyder det att den valda visualiseringen inte stöder **Se poster**.
 
-Gå tillbaka till rapporten genom att markera knappen **Tillbaka till rapporten** i det övre vänstra hörnet på arbetsytan.
+Du kan också högerklicka på ett dataelement och välja **Se poster** från menyn som visas.
 
-## <a name="limitations"></a>Begränsningar
-Det finns några begränsningar att överväga när du använder **Se data** eller **Se poster**:
+![Se poster genom att högerklicka](media/desktop-see-data-see-records/see-record2.png)
 
-* Endast följande visualiseringstyper stöds:
-  * **Stapel**
-  * **Kolumn**
-  * **Karta**
-  * **Trädkarta**
-  * **Ifylld karta**
-  * **Cirkel**
-  * **Toroid**
-  * **Tratt**
-* Du kan inte använda **Se poster** när din visualisering använder ett beräknat mått
-* Du kan inte använda **Se poster** när du är ansluten till en live-flerdimensionell modell (MD)
+När du väljer **Se poster** för ett dataelement visar Power BI Desktop-arbetsytan alla data som är associerade med det valda elementet. 
+
+![](media/desktop-see-data-see-records/see-record3.png)
+
+Gå tillbaka till rapporten genom att markera **< Tillbaka till rapporten** i det övre vänstra hörnet på arbetsytan.
+
+![](media/desktop-see-data-see-records/see-record4.png)
+
+> [!NOTE]
+>**Se poster** har följande begränsningar:
+> - Du kan inte ändra data i vyn **Se poster** och spara tillbaka dem till rapporten.
+> - Du kan inte använda **Se poster** när din visualisering använder ett beräknat mått.
+> - Du kan inte använda **Se poster** när du är ansluten till en flerdimensionell livemodell (MD).
 
 ## <a name="next-steps"></a>Nästa steg
 Det finns en massa sorters rapportformatering och funktioner för datahantering i **Power BI Desktop**. Kolla in följande resurser för några exempel:

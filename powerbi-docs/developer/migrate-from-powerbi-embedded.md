@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: maghan
-ms.openlocfilehash: c8ad315976dd1ca47d6b4dc2fd9a191a11e044c7
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 5cf1be502267b14075ac6160ce93fce47941d3c2
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar.
@@ -58,8 +58,7 @@ Följande konton måste finnas i din klient.
 
 > [!NOTE]
 > Dessa konton måste ha Power BI Pro-licenser för att kunna använda appens arbetsytor.
-> 
-> 
+>
 
 1. En klientadministratörsanvändare.
    
@@ -71,10 +70,13 @@ Följande konton måste finnas i din klient.
    
     Programmets serverdel sparar kontots autentiseringsuppgifter och använder dem för att skaffa en Azure AD-token som kan användas med Power BI REST-API:er. Det här kontot används för att generera programmets inbäddningstoken. Kontot måste också vara administratör för de apparbetsytor som skapats för inbäddning.
    
-   > [!NOTE]
-   > Detta är helt enkelt ett vanligt användarkonto i din organisation som används i inbäddningssyfte.
-   > 
-   > 
+> [!NOTE]
+> Detta är helt enkelt ett vanligt användarkonto i din organisation som används i inbäddningssyfte.
+>
+
+> [!NOTE]
+> Om App-Only Token Authentication är ett krav för programmet, klickar du [här](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) för att kontakta oss.
+>
 
 ## <a name="app-registration-and-permissions"></a>Appregistrering och behörigheter
 Du måste registrera ett program i Azure AD och bevilja det vissa behörigheter.
@@ -126,13 +128,13 @@ Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data is
 #### <a name="directquery-dataset--report"></a>DirectQuery-datauppsättning och -rapport
 **Flow**
 
-1. Anropa GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources och spara den mottagna anslutningssträngen.
+1. Anropa GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources och spara anslutningssträngen som tagits emot.
 2. Anropshämta PBIX API från PaaS-arbetsytan.
 3. Spara PBIX.
 4. Anropsimportera PBIX till SaaS-arbetsytan.
-5. Uppdatera anslutningssträngen genom att anropa - POST https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Hämta GW-ID och datakälls-ID genom att anropa - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Uppdatera användarens autentiseringsuppgifter genom att anropa - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
+5. Uppdatera anslutningssträngen genom att anropa – POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
+6. Hämta GW-ID och datakällans ID genom att anropa – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+7. Uppdatera användarens autentiseringsuppgifter genom att anropa – PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Gammal datauppsättning och rapporter
 Dessa är datauppsättningar/rapporter som skapats före oktober 2016. PBIX-hämtningen stöder inte PBIX:er som hämtades före oktober 2016

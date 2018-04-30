@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/16/2017
+ms.date: 04/13/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8089c796441fd4200b146da6330dd5c208bf8b30
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 62624d35f1fb477c4daf2ffcef92bb18fb8a6a8e
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
 Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. När du skapar den här anslutningen, hämtas dina data och ger dig automatiskt en instrumentpanel och relaterade rapporter baserade på dina data.
@@ -70,13 +70,15 @@ Du kan ändra den här instrumentpanelen till att visa dina data på det sätt s
 * Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelen
 * [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten
-* Även om din datauppsättning kommer att vara schemalagd att uppdateras dagligen, kan du ändra uppdateringsschemat eller uppdatera på begäran med **Uppdatera nu**
+* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
 
-## <a name="system-requirements"></a>Systemkrav
-* Ansluten med ett Salesforce-konto för produktion som har API-åtkomst aktiverat
-* Behörighet har getts till Power BI-appen under inloggningen
-* Kontot har tillräckligt med API-anrop tillgängliga för att hämta och uppdatera data
-* En giltig autentiseringstoken krävs för uppdatering. Kontrollera att du har 5 eller mindre Salesforce-datauppsättningar importerade, eftersom Salesforce har en gräns på 5 autentiseringstoken per program
+## <a name="system-requirements-and-considerations"></a>Systemkrav och aspekter
+- Ansluten med ett Salesforce-konto för produktion som har API-åtkomst aktiverat
+- Behörighet har getts till Power BI-appen under inloggningen
+- Kontot har tillräckligt med API-anrop tillgängliga för att hämta och uppdatera data
+- En giltig autentiseringstoken krävs för uppdatering. Kontrollera att du har 5 eller mindre Salesforce-datauppsättningar importerade, eftersom Salesforce har en gräns på 5 autentiseringstoken per program
+- API för Salesforce-rapporter har en begränsning som ger stöd för upp till 2 000 rader med data.
+
 
 ## <a name="troubleshooting"></a>Felsökning
 Granska kraven ovan om det uppstår några fel. Observera också att möjligheten att logga in till en anpassad eller sandbox-domän inte stöds för tillfället.

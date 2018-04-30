@@ -1,15 +1,15 @@
 ---
-title: "Hjälpmedel i Power BI Desktop-rapporter"
-description: "Funktioner och förslag för att skapa tillgängliga Power BI Desktop-rapporter"
+title: Hjälpmedel i Power BI Desktop-rapporter
+description: Funktioner och förslag för att skapa tillgängliga Power BI Desktop-rapporter
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c0e11a46e6e228da2f2ca8ac3f7be63ae20c1d92
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a0268af4d5b6ec1e94b42735100196e11c4d119b
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 **Power BI Desktop** har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med **Power BI Desktop**-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -41,7 +41,7 @@ Från och med **Power BI Desktop**-versionen från september 2017 kan du trycka 
 
 Med hjälpmedelsförbättringar kan du använda en **Power BI Desktop**-rapport med ett tangentbord eller en skärmläsare med följande metoder:
 
-Du kan **växla** mellan flikar i rapporten eller objekt på en viss rapportsida med **Ctrl + F6**.
+Du kan växla mellan flikar i rapporten eller objekt på en viss rapportsida med **Ctrl + F6**.
 
 * När fokus ligger på *flikar i rapporten* kan du använda *tabb-* eller *pil*tangenterna för att flytta fokus från en rapport till nästa. Rubriken på rapportsidan och om den är markerad kan läsas av skärmläsaren. Om du vill läsa in sidan för närvarande under fokus, använder du tangenten *Retur* eller *Blanksteg*.
 * När fokus är på en laddad *rapportsida* använder du *tabbtangenten* för att byta fokus på varje objekt på sidan, vilket omfattar alla textrutor, former och diagram. Skärmläsaren läser typen av objekt och en beskrivning av objektet som tillhandahålls av författaren. 
@@ -67,7 +67,7 @@ Följande tips kan hjälpa dig att skapa mer tillgängliga **Power BI Desktop**-
   * Med hjälp av en annan *Markör* för varje linje är det enklare för rapportanvändare att skilja linjer (eller områden) från varandra.
 * Som uppföljning till den tidigare punkten bör du inte använda färg för att förmedla information. Det är praktiskt att använda former på linjerna (markörer, enligt beskrivningen i föregående punkter).
 * Välj ett *tema* med hög kontrast och som är anpassat för färgblinda från temagalleriet och importera det med förhandsversionsfunktionen [**Teman**](desktop-report-themes.md).
-* Ange en *alternativtext* för varje objekt i en rapport. På så sätt kan användare av din rapport förstå vad du försöker kommunicera med ett visuellt objekt, även om de inte kan se det visuella objektet, bilden, formen eller textrutan. Du kan ange *alternativtext* för alla objekt på **Power BI Desktop**-rapport genom att markera objektet (till exempel ett visuellt objekt, en form osv.) och i välja **Format** i rutan **visualiseringar**. Expandera **Allmänt**, bläddra längst ned och fylla textrutan **alternativtext**.
+* Ange en *alternativtext* för varje objekt i en rapport. På så sätt kan användare av din rapport förstå vad du försöker kommunicera med ett visuellt objekt, även om de inte kan se det visuella objektet, bilden, formen eller textrutan. Du kan ange *Alternativtext* för alla objekt på en **Power BI Desktop**-rapport genom att markera objektet (till exempel ett visuellt objekt, en form o.s.v.) och i rutan **Format** välja **Visualiseringar**, expandera **Allmänt**, bläddra längst ned och fylla i textrutan **Alternativtext**.
   
   ![Alternativtext för alla objekt i en rapport kan läggas till i Visuella objekt > Format > Allmänt > Alternativtextruta](media/desktop-accessibility/accessibility_02.png)
 * Kontrollera att dina rapporter har tillräcklig kontrast mellan texten och alla bakgrundsfärger.
@@ -75,9 +75,9 @@ Följande tips kan hjälpa dig att skapa mer tillgängliga **Power BI Desktop**-
 * Inkludera en rubrik, axeletiketter och dataetiketter i all visuell information.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
-Det finns ett fåtal problem och begränsningar hos hjälpmedelsfunktionerna som beskrivs i följande lista:
+Det finns några kända problem och begränsningar hos hjälpmedelsfunktionerna som beskrivs i följande lista:
 
-* JAWS stöds i rapporter som visas i **Power BI-tjänsten**, inklusive inbäddade rapporter. JAWS stöds även för **Power BI Desktop**, men du måste öppna skärmläsaren innan du öppnar **Power BI Desktop**-filer för att skärmenläsningen ska fungera korrekt.
+* JAWS stöds i rapporter som visas i **Power BI-tjänsten**, inklusive inbäddade rapporter. JAWS stöds även i **Power BI Desktop**, men du måste öppna skärmläsaren innan du öppnar **Power BI Desktop**-filer för att skärmläsningen ska fungera korrekt.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Använda rapportteman i Power BI Desktop (förhandsversion)](desktop-report-themes.md)

@@ -1,13 +1,13 @@
 ---
-title: "Registrera dig själv som enskild individ för Power BI"
-description: "Lär dig hur du registrerar dig för Power BI och börja använda det för dina personliga rapport- och visualiseringsbehov."
+title: Registrera dig själv som enskild individ för Power BI
+description: Lär dig hur du registrerar dig för Power BI och börja använda det för dina personliga rapport- och visualiseringsbehov.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 08/02/2017
 ms.service: powerbi
@@ -16,13 +16,13 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/02/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: b098c87796306bedb8f9da43971d093f464dd4bd
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 7f40fdfd3e9784ab05fe0f44612cea6d48d739fe
+ms.sourcegitcommit: 20adb55065af8e2f48387a00e64c72cf6d700f0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI
 Lär dig hur du registrerar dig för Power BI och börja använda det för dina personliga rapport- och visualiseringsbehov.
@@ -68,7 +68,7 @@ Du kan fastställa vilken du behöver genom att kontrollera vad som ingår i res
 Det snabbaste sättet på vilket du kan registrera dig för Power BI är att registrera dig för ett (kostnadsfritt) Power BI-konto. Det här kontot kostar ingenting, och du kan använda många av de funktioner som är tillgängliga i tjänsten.
 
 > [!NOTE]
-> Om du får ett meddelande som vi redan känner till dig, så försök att gå till https://app.powerbi.com och logga in.
+> Om du får ett meddelande om att vi redan känner dig, så försök att gå till https://app.powerbi.com och logga in.
 > 
 > 
 

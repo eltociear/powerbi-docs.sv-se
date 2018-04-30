@@ -1,28 +1,28 @@
 ---
-title: "Kortvisualiseringar (även kallat stor sifferpanel)"
+title: Kortvisualiseringar (även kallat stor sifferpanel)
 description: Skapa en kortvisualisering i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f38f3bb19be268cba4745c88aa98d09c080c773e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3e30e0f742d97817583ecdfd72df65a8658ec977
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringar
 Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrumentpanelen eller -rapporten, till exempel total försäljning, marknadsandel år för år eller totala affärsmöjligheter. Den här typen av visualisering kallas ett *kort*. Som nästan alla ursprungliga Power BI-visualiseringar, kan kort skapas med hjälp av rapportredigeraren eller Frågor och svar.
@@ -91,6 +91,25 @@ Att använda frågerutan för frågor och svar är den enklaste metoden för att
 - Om du inte ser någon frågeruta, kontakta din system- eller klientadministratör.    
 - Om du använder Desktop och Frågor och svar inte öppnas när du dubbelklickar på ett tomt utrymme i en rapport, kan du behöva aktivera funktionen.  Välj **Fil > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner > Frågor och svar** och starta om Desktop.
 
+## <a name="format-a-card"></a>Formatera ett kort
+Du har många alternativ för att ändra etiketter, text, färg med mera. Det bästa sättet att lära dig är att skapa ett kort och sedan utforska formateringsfönstret. Här följer några tillgängliga formateringsalternativ. 
+
+1. Börja genom att välja penselikonen för att öppna formateringsfönstret. 
+
+    ![](media/power-bi-visualization-card/power-bi-format-card.png)
+2. Expandera **Dataetikett** och ändra färg, storlek och teckensnittsfamilj. Om du har tusentals butiker, kan du använda **Visningsenheter** för att visa antal butiker med tusentalsavgränsare och kontrollera antalet decimaler också. Till exempel 125,8K i stället för 125 832,00.
+
+3.  Expandera **Kategorietikett** och ändra storlek och färg.
+
+    ![](media/power-bi-visualization-card/power-bi-card-format.png)
+
+4. Expandera **Bakgrund** och flytta skjutreglaget till På.  Nu kan du ändra bakgrundsfärgen och transparensen.
+
+    ![](media/power-bi-visualization-card/power-bi-format-color.png)
+
+5. Fortsätt att utforska formateringsalternativen tills kortet är exakt som du vill. 
+
+    ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Nästa steg
 [Paneler på instrumentpanelen i Power BI](service-dashboard-tiles.md)

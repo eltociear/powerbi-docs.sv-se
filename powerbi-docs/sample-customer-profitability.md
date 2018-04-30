@@ -1,35 +1,35 @@
 ---
-title: "Självstudie – Exempel på kundlönsamhet för Power BI: Ta en rundtur"
-description: "Exempel på kundlönsamhet för Power BI: Ta en rundtur"
+title: 'Självstudie – Exempel på kundlönsamhet för Power BI: Ta en rundtur'
+description: 'Exempel på kundlönsamhet för Power BI: Ta en rundtur'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: b7931cb97ff1c409cc2524e31d079dd770160ec4
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 8c6d01cf1a89ea8e61506cc28344c77fe0276e47
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Översikt av exemplet för kundlönsamhet
 Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpanel, en rapport och en datauppsättning för ett företag som tillverkar marknadsföringsmaterial. Den här instrumentpanelen skapades av en ekonomichef för att visa en statistiköversikt för hennes 5 enhetschefer, produkter, kunder och bruttomarginal. I korthet kan hon se vilka faktorer som påverkar lönsamheten.
 
-![](media/sample-customer-profitability/power-bi-dash.png)
+![Power BI-instrumentpanel](media/sample-customer-profitability/power-bi-dash.png)
 
 Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med affärsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats. Data är tillgängliga i flera format: innehållsförpackning/-app, Excel-arbetsbok eller PBIX-fil för Power BI Desktop. Se [Exempeldatauppsättningar](sample-datasets.md).
 
@@ -41,10 +41,10 @@ Vill du hänga på? Den här självstudien använder Power BI-tjänsten och exem
 1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
 2. Längst ned i vänster hörn väljer du **Hämta data**.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![hämta data](media/sample-datasets/power-bi-get-data.png)
 3. På sidan Hämta data väljer du ikonen **Exempel**.
 
-   ![](media/sample-datasets/power-bi-samples-icon.png)
+   ![exempel-ikon](media/sample-datasets/power-bi-samples-icon.png)
 4. Välj **Exempel på kundlönsamhet** och välj **Anslut**.  
 
    ![Hämta data](media/sample-customer-profitability/get-supplier-sample.png)
@@ -73,7 +73,7 @@ Under **Min arbetsyta**, hittar du instrumentpanelen för Exemplet på kundlöns
 
 2. Granska panelerna på vänster sida av instrumentpanelen.
 
-    ![](media/sample-customer-profitability/power-bi-manager.png)
+    ![paneler för ansvariga](media/sample-customer-profitability/power-bi-manager.png)
 
 - Vårt företags bruttomarginal är 42,5 %.
 - Vi har 80 kunder.
@@ -86,7 +86,7 @@ Under **Min arbetsyta**, hittar du instrumentpanelen för Exemplet på kundlöns
 ### <a name="manager-specific-dashboard-tiles"></a>Chefspecifika instrumentpaneler
 Panelerna på höger sida av instrumentpanelen ger ett poängkort för teamet. Det är viktigt för ekonomichefen att kunna följa cheferna och dessa paneler ger henne en översikt över vinsten med hjälp av bruttomarginal i %. Om trenden för bruttomarginalen % är oväntad för någon chef kan hon undersöka detta närmare.
 
-![](media/sample-customer-profitability/power-bi-manager2.png)
+![Bruttomarginal i % för ansvariga](media/sample-customer-profitability/power-bi-manager2.png)
 
 - Alla chefer utom Carlos, har redan passerat försäljningsmålet. Men Carlos faktiska försäljning är den högsta.
 - Annelies bruttomarginal % är lägst, men det syns en konstant ökning sedan mars.
@@ -99,7 +99,7 @@ Den här instrumentpanelen innehåller paneler som länkar till en rapport och t
 ### <a name="open-the-excel-online-data-source"></a>Öppna Excel Online-datakällan
 Två paneler på den här instrumentpanelen ”Mål kontra faktisk” och ”Tillväxt år för år” har fästs från en Excel-arbetsbok. När du väljer någon av dessa paneler, så öppnas datakällan – i det här fallet Excel Online Power BI.
 
-![](media/sample-customer-profitability/power-bi-excel-online.png)
+![Excel online](media/sample-customer-profitability/power-bi-excel-online.png)
 
 1. Välj någon av panelerna som fästs från Excel. Excel Online öppnas i Power BI-tjänsten.
 2. Observera att arbetsboken har 3 flikar med data. Öppna ”Intäkter”.
@@ -107,11 +107,11 @@ Två paneler på den här instrumentpanelen ”Mål kontra faktisk” och ”Til
     a. Från skjutreglaget ”Executive”, välj **Carlos Grilo**.   
     b. Första pivottabellen talar om för oss att Carlos intäkter för hans topprodukt Primus, har gått ner 152 % från föregående år. Och YoY-diagrammet visar att han är under budget de flesta månaderna.  
 
-    ![](media/sample-customer-profitability/power-bi-pivotchart.png)
+    ![PivotTable](media/sample-customer-profitability/power-bi-pivotchart.png)
 
-    ![](media/sample-customer-profitability/power-bi-carlos.png)
+    ![resultat för Carlos](media/sample-customer-profitability/power-bi-carlos.png)
 
-4. Fortsätt att utforska och om du hittar något intressant väljer du **Fäst** ![](media/sample-customer-profitability/power-bi-excel-pin.png) från det övre högra hörnet för att [fästa det på en instrumentpanel](service-dashboard-pin-tile-from-excel.md).
+4. Fortsätt att utforska och om du hittar något intressant väljer du ikonen **Fäst** ![fäst-ikon](media/sample-customer-profitability/power-bi-excel-pin.png) från det övre högra hörnet för att [fästa det på en instrumentpanel](service-dashboard-pin-tile-from-excel.md).
 
 5. Använd din webbläsares bakåtpil för att gå tillbaka till instrumentpanelen.
 
@@ -122,14 +122,14 @@ Merparten av panelerna på instrumentpanelen med exempel på Kundlönsamhet har 
 
 2. Rapporten har 3 sidor. Varje flik längst ned på rapporten representerar en sida.
 
-    ![](media/sample-customer-profitability/power-bi-report-tabs.png)
+    ![3 flikar längst ned](media/sample-customer-profitability/power-bi-report-tabs.png)
 
     * ”Teamresultatkort” fokuserar på de 5 chefernas prestation och deras ”räkenskaper”.
     * ”Branschmarginalanalys” är ett sätt att analysera vår lönsamhet jämfört med hela branschen.
     * ”Chefresultatkort” ger en överblick över var och en av våra chefer och formateras för visning i Cortana.
 
 ### <a name="team-scorecard-page"></a>Sidan teamresultatkort
-![](media/sample-customer-profitability/customer2.png)
+![Rapportsidan Teamresultatkort](media/sample-customer-profitability/customer2.png)
 
 Nu ska vi titta på två teammedlemmar i detalj och se vilka insikter som kan uppnås. Med hjälp av delaren till vänster kan du välja Andrews namn för att filtrera rapportsidan så att endast information om Andrew visas.
 
@@ -138,7 +138,7 @@ Nu ska vi titta på två teammedlemmar i detalj och se vilka insikter som kan up
 * ”RevenueTY och intäkter Var % budget per månad” visar stadig och jämn tillväxt. Men när du filtrerar genom att klicka på rutan för **centrala** i träddiagrammet för regioner ser du att Andrew endast har intäkter för mars och endast i Indiana. Är det avsiktligt eller är detta något du behöver titta på?
 
 Vi fortsätter till Valery. Med hjälp av delaren kan du välja Valerys namn för att filtrera rapportsidan så att endast information om Valery visas.  
-![](media/sample-customer-profitability/customer3.png)
+![sektorn Chef för Vaery Ushalov](media/sample-customer-profitability/customer3.png)
 
 * Lägg märke till röd KPI för **RevenueTY Status**. Detta måste definitivt undersökas närmare.
 * Hennes intäktvarians är också oroande – hon möter inte sina intäktsmarginaler.
@@ -150,7 +150,7 @@ Fortsätt att granska på djupet för att ta reda på varför Valerys område in
 
 ### <a name="industry-margin-analysis"></a>Branschmarginalanalys
 Den här rapporten innehåller ett annat datasnitt. Den ser ut på bruttomarginalen för hela branschen, uppdelat efter segment. Ekonomichefen använder den här sidan för att jämföra företaget och verksamhetens enhetsmått samt branschstatistiken för att förklara hennes trender och lönsamhet. Du kanske undrar varför ytdiagrammet ”bruttomarginal per månad och chef” är på den här sidan eftersom det gäller team. När den är här kan vi filtrera sidan efter enhetschefen.  
-![](media/sample-customer-profitability/customer6.png)
+![Rapportsidan branschmarginalanalys](media/sample-customer-profitability/customer6.png)
 
 Hur varierar lönsamheten i olika branscher? Hur fördelas produkter och kunder i olika branscher? Välj en eller flera branscher upp till vänster. (börja ed CPG-branschen) Använd ikonen Radera för att ta bort filtret.
 
@@ -172,11 +172,11 @@ För vår analys skulle det vara bra att avgöra vilken bransch som står för d
 
 2.  Från den översta menyraden väljer du **Ställ en fråga** för att öppna dialogrutan Frågor och svar.
 
-    ![](media/sample-customer-profitability/power-bi-ask-question.png)
+    ![Ställ en fråga om dina data](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Skriv **total intäkter per bransch för Valery**. Observera hur visualiseringen uppdateras när du skriver frågan.
 
-    ![](media/sample-customer-profitability/power-bi-qna.png)
+    ![skriv en fråga i frågerutan](media/sample-customer-profitability/power-bi-qna.png)
 
    Distributionen är det största intäktsområdet för Valery.
 
@@ -186,15 +186,15 @@ Låt oss ta en titt på branschen *Distribution*.
 1. Öppna rapportsidan ”Branschmarginalanalys”.
 2. Expandera filterfönstret till höger utan att välja någon visualisering på rapportsidan (om den inte redan är expanderad). Fönstret filter bör endast visa filter på sidonivå.  
 
-   ![](media/sample-customer-profitability/power-bi-filters.png)
+   ![Sidnivåfilter](media/sample-customer-profitability/power-bi-filters.png)
 3. Gå till filtret för **Bransch** och välj pilen för att expandera listan. Lägg till ett sidfilter för distributionsbranschen. Avmarkera först alla kryssrutor genom att avmarkera kryssrutan **Markera alla**. Välj sedan endast **Distribution.**  
 
-   ![](media/sample-customer-profitability/customer7.png)
+   ![filtret för Distribution](media/sample-customer-profitability/customer7.png)
 4. I ytdiagrammet ”Bruttomarginal per månad och namn på chef” er vi att endast Valery och Tina har kunder i den här branschen och Valery har endast arbetat med den här branschen från juni till november.   
 5. Välj **Tina** och sedan **Valery** i diagramförklaringen för ”Bruttomarginal per månad och namn på chef”. Observera att Tinas del av ”Totala intäkter per produkt” är mycket liten jämfört med Valery.
 6. För att se faktiska intäkter, använd frågor och svar för att fråga **total intäkt av verkställande för distribution enligt scenariot**.  
 
-     ![](media/sample-customer-profitability/power-bi-qna2.png)
+     ![skriv en fråga i frågerutan om du vill se liggande stapeldiagram](media/sample-customer-profitability/power-bi-qna2.png)
 
     Vi kan utforska andra branscher och till och med lägga till kunder i våra visuella objekt för att förstå grunden till Valerys prestationer.
 

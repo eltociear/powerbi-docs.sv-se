@@ -1,29 +1,29 @@
 ---
-title: "Användningsstatistik för instrumentpaneler och rapporter"
-description: "Så här visar, sparar och använder du användningsstatistik för Power BI-instrumentpaneler och rapporter. Mät och öka din inverkan med användningsstatistik för skapare av innehåll."
+title: Användningsstatistik för instrumentpaneler och rapporter
+description: Så här visar, sparar och använder du användningsstatistik för Power BI-instrumentpaneler och rapporter. Mät och öka din inverkan med användningsstatistik för skapare av innehåll.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1ad8425917153f2f9662041dc594817857f8f499
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: d12f59f768b98bbc974258592f236176ecf52b3f
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
 Om du skapar instrumentpaneler och rapporter kan du med användningsstatistik förstå deras inverkan. Oavsett om du kör användningsstatistik för instrumentpaneler eller rapporter ser du hur dessa instrumentpaneler och rapporter används i hela organisationen – vad som används, av vem och i vilket syfte.  
@@ -53,7 +53,7 @@ När du väljer **Användningsstatistik** eller ikonen ![användningsstatistikik
 
 Användningsstatistikrapporterna visas inte i **Senaste**, **Arbetsytor**, **Favoriter** eller andra innehållslistor. De kan inte läggas till i en app. Om du fäster en panel från en användningsstatistikrapport på en instrumentpanel går det inte att lägga till instrumentpanelen i en app eller ett innehållspaket.
 
-Fördjupa dig i rapportdatan eller skapa egna rapporter mot datauppsättningen med **Spara som** (se [Spara användningsstatistikrapporten som en fullständig Power BI-rapport](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report).
+Fördjupa dig i rapportdatan eller skapa egna rapporter mot datauppsättningen med **Spara som** (se [Spara användningsstatistikrapporten som en fullständig Power BI-rapport](#Save-the-Usage-Metrics-report-as-a-full-featured-Power-BI-report-(personalize)).
 
 ## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Öppna en användningsstatistikrapport för en instrumentpanel eller rapport
 1. Starta från arbetsytan som innehåller instrumentpanelen eller rapporten.

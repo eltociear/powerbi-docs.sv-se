@@ -1,40 +1,40 @@
 ---
 title: Optimera ett visuellt Power BI-objekt oavsett storlek
-description: "Lär dig hur du optimerar visuella objekt i Power BI Desktop och Power BI-tjänsten för Power BI-mobilapparna."
+description: Lär dig hur du optimerar visuella objekt i befintliga rapporter i Power BI Desktop och Power BI-tjänsten för Power BI-mobilapparna.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4c80048213b20365102bcb9c6842c342d8b9052b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d80e96fbca893fee3ff03ef9021988f5a22bb2e7
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Optimera ett visuellt Power BI-objekt oavsett storlek
-Du kan ange att visuella objekt i din instrumentpanel eller rapport ska vara *dynamiska*, så att de ändras dynamiskt till att visa maximal mängd data och analyser, oavsett skärmstorlek.
+När du skapar en ny rapport är de visuella objekten som standard *dynamiska*: De ändras dynamiskt så att maximal mängd data och insikter kan visas, oavsett skärmstorlek. När det gäller äldre rapporter kan du konfigurera deras visuella objekt så att även de ändrar storlek dynamiskt.
 
 När ett visuellt objekt får en annan storlek prioriterar Power BI datavyn, genom att till exempel ta bort utfyllnad och flytta förklaringen överst i det visuella objektet automatiskt, så att objektet förblir informativt även när det blir mindre. Svarstiden är särskilt användbar i visuella objekt i Power BI-mobilappen på telefoner.
 
 ![Dynamisk storleksändring av visuella objekt](media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
 
-Du kan aktivera svarstider för alla visuella objekt med X- och Y-axlarna samt utsnitt.
+Alla visuella objekt med X- och Y-axlar, och utsnitt, kan ändra storlek dynamiskt.
 
 ## <a name="turn-on-responsiveness-in-power-bi-desktop"></a>Aktivera svarstider i Power BI Desktop
-1. I Power BI Desktop går du till fliken **Visa** och kontrollerar att du befinner dig i **Skrivbordslayout**.
+1. I äldre rapporter i Power BI Desktop går du till fliken **Visa** och kontrollerar att du befinner dig i **Skrivbordslayout**.
    
     ![Ikonen Skrivbordslayout](media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
 2. Välj ett visuellt objekt och i fönstret **Visualiseringar** väljer du avsnittet **Format**.
@@ -45,19 +45,18 @@ Du kan aktivera svarstider för alla visuella objekt med X- och Y-axlarna samt u
      Nu när du [skapar en rapport som är optimerad för telefonen](desktop-create-phone-report.md) och lägger till det här visuella objektet, ändras storleken på ett smidigt sätt.
 
 ## <a name="turn-on-responsiveness-in-the-power-bi-service"></a>Aktivera svarstider i Power BI-tjänsten
-Du kan aktivera svarstiden för ett visuellt objekt i en rapport i Power BI-tjänsten. Du måste kunna redigera rapporten.
+Du kan aktivera svarstiden för ett visuellt objekt i en äldre rapport i Power BI-tjänsten. Du måste kunna redigera rapporten.
 
-1. I en rapport i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) väljer du **Redigera rapport**.
+1. Välj **Redigera rapport** i en rapport i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)).
 2. Välj ett visuellt objekt och i fönstret **Visualiseringar** väljer du avsnittet **Format**.
 3. Expandera **Allmänt** > och dra **Dynamisk** till **På**.
    
     ![Dynamisk är aktiverat](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
-     Nu när du [skapar en telefonvy av en instrumentpanel](service-create-dashboard-mobile-phone-view.md) och lägger till det här visuella objektet, ändras storleken på ett smidigt sätt.
+     Nu när du [skapar en telefonvy av den här rapporten](desktop-create-phone-report.md) och lägger till det här visuella objektet så ändras storleken på ett smidigt sätt.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa rapporter som är optimerade för Power BI-telefonappar](desktop-create-phone-report.md)
-* [Skapa en telefonvy av en instrumentpanel i Power BI](service-create-dashboard-mobile-phone-view.md)
 * [Visa Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

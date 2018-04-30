@@ -1,32 +1,32 @@
 ---
-title: "Del 1, Lägga till visualiseringar i en Power BI-rapport (självstudie)"
-description: "Självstudier: Del 1, Lägga till visualiseringar i en Power BI-rapport"
+title: Del 1, Lägga till visualiseringar i en Power BI-rapport (självstudie)
+description: 'Självstudier: Del 1, Lägga till visualiseringar i en Power BI-rapport'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: IkJda4O7oGs
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b81061c25b453fc35e1490c3ded2d9c9770d4599
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b6fdc11b19e130272cf715f4cff58721f46dd6e8
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report-tutorial"></a>Del 1, Lägga till visualiseringar i en Power BI-rapport (självstudie)
-Den här artikeln ger en snabb introduktion till att skapa en visualisering i en rapport.  För mer avancerat innehåll, se [del II](power-bi-report-add-visualizations-ii.md). Amanda visar ett par sätt att skapa, redigera och formatera visuella objekt på rapportarbetsytan. Prova sedan att skapa en egen rapport med hjälp av den [Försäljning- och marknadsföringsexempel](sample-datasets.md).
+Den här artikeln ger en snabb introduktion till att skapa en visualisering i en rapport med antingen Power BI-tjänsten eller Power BI Desktop.  För mer avancerat innehåll, se [del II](power-bi-report-add-visualizations-ii.md). Amanda visar ett par sätt att skapa, redigera och formatera visuella objekt på rapportarbetsytan. Prova sedan att skapa en egen rapport med hjälp av den [Försäljning- och marknadsföringsexempel](sample-datasets.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 

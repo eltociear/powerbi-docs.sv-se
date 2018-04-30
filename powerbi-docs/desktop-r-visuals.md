@@ -2,14 +2,14 @@
 title: Skapa visuella Power BI-objekt med R
 description: Skapa visuella Power BI-objekt med R
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2e59e3b9d718fa2e0c8c3411968fd4ab66a5851
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e1768da4ace3fd18b181a46f48e3247cebd1cff0
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Skapa visuella Power BI-objekt med R
 Med **Power BI Desktop**, kan du använda **R** för att visualisera dina data.
@@ -41,21 +41,27 @@ När du angett din R-installation, är du redo att börja skapa R-visualiseringa
 1. Välj ikonen **R-visualisering** i fönstret **Visualisering** som visas i följande bild, för att lägga till en R-visualisering.
    
    ![](media/desktop-r-visuals/r-visuals-3.png)
-2. När du lägger till en R-visualisering till en rapport gör **Power BI Desktop** följande:
+
+   När du lägger till en R-visualisering till en rapport gör **Power BI Desktop** följande:
    
    - En R-visuell bildplatshållare visas på rapportens arbetsyta.
    
    - **R-skriptredigeraren** visas längst ned i mittenfönstret.
    
    ![](media/desktop-r-visuals/r-visuals-4.png)
-3. Lägg nu till de fält som du vill använda i ditt R-skript till avsnittet **Värden** under brunnen **Fält**, precis som med andra **Power BI Desktop**-visualiseringar. Endast fält som har lagts till i brunnen **Fält** finns tillgängliga för ditt R-skript och du kan lägga till nya fält eller ta bort onödiga fält från **Fält**-brunnen när du arbetar med ditt R-skript i **Power BI Desktop R-skriptredigeraren**. **Power BI Desktop** identifierar automatiskt vilka fält som du har lagt till eller tagit bort.
+
+2. Lägg nu till de fält som du vill använda i ditt R-skript till avsnittet **Värden** under brunnen **Fält**, precis som med andra **Power BI Desktop**-visualiseringar. 
+    
+    Endast fält som har lagts till i **Fält** är tillgängliga för ditt R-skript. Du kan lägga till nya fält eller ta bort onödiga fält från **Fält**-brunnen när du arbetar med ditt R-skript i **Power BI Desktop R-skriptredigeraren**. **Power BI Desktop** identifierar automatiskt vilka fält som du har lagt till eller tagit bort.
    
    > [!NOTE]
    > Aggregeringens standardtyp för visuella R-objekt är *Summera inte*.
    > 
    > 
    
-1. Nu kan du använda de data du har valt för att skapa en rityta. När du markerar fält, skapar **R-skriptredigeraren** stödjande R-skriptsbindningskod baserat på dina val i det grå avsnittet överst i redigerarfönstret. När du väljer eller tar bort ytterligare fält, skapas automatiskt stödjande kod i R-skriptet eller tas bort.
+3. Nu kan du använda de data du har valt för att skapa en rityta. 
+
+    När du markerar fält, skapar **R-skriptredigeraren** stödjande R-skriptsbindningskod baserat på dina val i det grå avsnittet överst i redigerarfönstret. När du väljer eller tar bort ytterligare fält, skapas automatiskt stödjande kod i R-skriptet eller tas bort.
    
    I exemplet som visas i följande bild, har tre fält valts: hp, gear och drat. På grund av dessa val, skapade R-skriptredigeraren följande bindningskod:
    
@@ -67,56 +73,56 @@ När du angett din R-installation, är du redo att börja skapa R-visualiseringa
    ![](media/desktop-r-visuals/r-visuals-5.png)
    
    > [!TIP]
-   > I vissa fall kanske du inte vill att automatisk gruppering ska ske, eller så kanske du vill att alla rader visas, inklusive dubbletter. I så fall kan du lägga till ett indexfält till din datauppsättning som gör att alla rader anses vara unika och förhindrar gruppering.
+   > I vissa fall kanske du inte vill att automatisk gruppering ska ske, eller så kanske du vill att alla rader visas, inklusive dubbletter. I så fall kan du lägga till ett indexfält till din datauppsättning som gör att alla rader anses vara unika vilket förhindrar gruppering.
    > 
    > 
    
-   Den skapade dataramen heter **datauppsättning** och valda kolumner kan kommas åt via sina respektive namn. Gear-fältet kan till exempel kommas åt genom att skriva *dataset$gear* i ditt R-skript. Använd enkla citattecken för fält med blanksteg eller specialtecken.
-2. Nu när dataramen automatiskt skapats av de fält du valt, är du redo att skriva R-skript som resulterar i ritning till R-standardenheten. När skriptet har slutförts, väljer du **kör** från namnlisten för **R-skriptredigeraren** (**Kör** är till höger i namnlisten).
+   Den skapade dataramen heter **datauppsättning** och du kommer åt valda kolumner via deras respektive namn. Du kan t.ex. komma åt kugghjulsfältet genom att skriva *dataset$gear* i ditt R-skript. Använd enkla citattecken för fält med blanksteg eller specialtecken.
+
+4. Nu när dataramen automatiskt skapats av de fält du valt, är du redo att skriva ett R-skript som resulterar i ritning till R-standardenheten. När skriptet har slutförts, väljer du **kör** från namnlisten för **R-skriptredigeraren** (**Kör** är till höger i namnlisten).
    
-    När **Kör** väljs, identifierar **Power BI Desktop** området och visar det på arbetsytan.
-   Eftersom processen körs på din lokala R-installation, kontrollerar du att nödvändiga paket installerats.
+    När du väljer **Kör**, identifierar **Power BI Desktop** området och visar det på arbetsytan. Se till att nödvändiga paket installerats eftersom processen körs på din lokala R-installation.
    
    **Power BI Desktop** ritar om visualiseringen när någon av följande händelser inträffar:
    
-   * **Kör** väljs från namnlisten för **R-skriptredigeraren**
+   * När du väljer **Kör** från namnlisten för **R-skriptredigeraren**
    * När en dataändring inträffar, på grund av datauppdatering, filtrering eller markering
 
-Följande bild visar ett exempel på korrelationritningskoden och ritar korrelationer mellan attribut för olika typer av bilar.
+    Följande bild visar ett exempel på korrelationsritningskoden och ritar korrelationer mellan attribut för olika typer av bilar.
 
-![](media/desktop-r-visuals/r-visuals-6.png)
+    ![](media/desktop-r-visuals/r-visuals-6.png)
 
-För att få en större vy över visualiseringar, kan du minimera **R-skriptredigeraren**. Precis som i annan visuell information i **Power BI Desktop**, kan du korsfiltrera korrelationsritningen genom att välja endast sportbilar i toroidvisualiseringen (den runda visualiseringen till höger i ovanstående exempelbild).
+5. För att få en större vy över visualiseringar, kan du minimera **R-skriptredigeraren**. Precis som i annan visuell information i **Power BI Desktop**, kan du korsfiltrera korrelationsritningen genom att välja endast sportbilar i toroidvisualiseringen (den runda visualiseringen till höger i ovanstående exempelbild).
 
-![](media/desktop-r-visuals/r-visuals-7.png)
+    ![](media/desktop-r-visuals/r-visuals-7.png)
 
-Du kan också modifiera R-skriptet för att anpassa den visuella informationen och utnyttja kraften i R genom att lägga till parametrar till ritkommandot.
+6. Du kan också modifiera R-skriptet för att anpassa den visuella informationen och utnyttja kraften i R genom att lägga till parametrar till ritkommandot.
 
-Det ursprungliga ritkommandot var följande:
+    Det ursprungliga ritkommandot var följande:
 
     corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
 
-Med några ändringar i R-skriptet är nu kommandot följande:
+    Med några ändringar i R-skriptet är nu kommandot följande:
 
     corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
 
-Därför ritar nu R-visualiseringen cirklar, överväger bara den övre hälften och sorterar om matrisen för att klustra korrelerade attribut som det visas i följande bild.
+    Därför ritar nu R-visualiseringen cirklar, överväger bara den övre hälften och sorterar om matrisen för att klustra korrelerade attribut som det visas i följande bild.
 
-![](media/desktop-r-visuals/r-visuals-8.png)
+    ![](media/desktop-r-visuals/r-visuals-8.png)
 
-När ett R-skript körs som resulterar i ett fel, ritas inte det visuella R-objektet och ett felmeddelande visas på arbetsytan. Om du vill ha information om felet väljer du **Mer information** från R-visualiseringsfelet på arbetsytan.
+    När ett R-skript körs som resulterar i ett fel, ritas inte det visuella R-objektet och ett felmeddelande visas på arbetsytan. Om du vill ha information om felet väljer du **Mer information** från R-visualiseringsfelet på arbetsytan.
 
-![](media/desktop-r-visuals/r-visuals-9.png)
+    ![](media/desktop-r-visuals/r-visuals-9.png)
 
-> **Säkerhet för R-skript:** R-visualiseringar skapas från R-skript, vilka kan innehålla kod med säkerhets- eller integritetsrisker. När användare försöker visa eller interagera med en R-visualisering för första gången, visas de en säkerhetsvarning. Aktivera endast visuell R-information om du litar på skaparen och källan, eller när du granskat och förstått R-skriptet.
-> 
-> 
+    > **Säkerhet för R-skript:** R-visualiseringar skapas från R-skript, vilka kan innehålla kod med säkerhets- eller integritetsrisker. När användare försöker visa eller interagera med en R-visualisering för första gången, visas en säkerhetsvarning. Aktivera endast visuell R-information om du litar på skaparen och källan, eller när du granskat och förstått R-skriptet.
+    > 
+    > 
 
 ## <a name="known-limitations"></a>Kända begränsningar
 Visuell R-information i **Power BI Desktop** har några begränsningar:
 
 * Storleksbegränsningar för data – data som används för ritning av visuella R-objekt är begränsat till 150 000 rader. Om du väljer mer än 150 000 rader, är det enbart de översta 150 000 raderna som används och ett meddelande visas på bilden.
-* Tidsbegränsning för beräkningar – om en beräkning för ett visuellt R-objekt överstiger 5 minuter så går tidsgränsen ut, vilket resulterar i ett fel.
+* Tidsbegränsning för beräkningar – om en beräkning för ett visuellt R-objekt överstiger fem minuter så går tidsgränsen ut, vilket resulterar i ett fel.
 * Relationer – om datafält väljs från olika tabeller utan någon definierad relation mellan dem så uppstår ett fel, precis som med andra Power BI Desktop-visualiseringar.
 * Visuella R-objekt uppdateras när data uppdateras, filtreras eller markeras. Bilden är dock inte interaktiv och kan inte vara källa för korsfiltrering.
 * Visuella R-objekt svarar på markering av andra visuella objekt, men du kan inte korsfiltrera andra element genom att klicka på element i det visuella R-objektet.

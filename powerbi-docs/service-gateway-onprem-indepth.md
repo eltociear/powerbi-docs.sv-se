@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5f081dff246c478f1b9ee3c918de2099b8382100
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 5480768fc088b3a32a1af222d38e3829298e8f0d
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
 Det är möjligt för användare i din organisation att ha åtkomst till lokala data (till vilka de redan har åtkomstauktorisering), men innan dessa användare kan ansluta till den lokala datakällan, så måste en lokal datagateway ha installerats och konfigurerats. Gatewayen underlättar snabb och säker dold kommunikation mellan en användare i molnet till din lokala datakälla och sedan tillbaka till molnet.
@@ -87,10 +87,7 @@ Molntjänsterna känner bara till konton i Azure Active Directory. Det spelar in
    Du kan skapa ett konto på Azure Portal eller i administrationsportalen för Office 365, och kontonamnet matchar UPN-namnet för det lokala Active Directory-kontot.
 2. Du kan använda [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)-verktyget för att synkronisera lokala konton med din Azure Active Directory-klient.
    
-   Azure AD Connect-verktyget erbjuder alternativ för katalog- och lösenordssynkronisering. Om du inte är klientadministratör eller lokal domänadministratör, så måste du kontakta IT-administratören om du vill få detta konfigurerat.
-3. Du kan konfigurera Active Directory Federation Services (ADFS).
-   
-   Du kan associera AD FS-servern till din AAD-klient med [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)-verktyget. AD FS använder sig av den katalogsynkronisering som diskuteras ovan, men tillåter enkel inloggning (SSO). Om du t.ex. befinner dig i ditt arbetsnätverk när du ska logga in till en molntjänst så uppmanas du inte att ange något användarnamn eller lösenord. Du bör fråga IT-administratören om detta är tillgängligt för din organisation.
+   Azure AD Connect-verktyget erbjuder alternativ för katalogsynkronisering och hur du konfigurerar autentisering, inklusive hash-synkronisering av lösenord, direktautentisering och federation. Om du inte är klientadministratör eller lokal domänadministratör, så måste du kontakta IT-administratören om du vill få detta konfigurerat.
 
 Med Azure AD Connect säkerställer du att UPN-namnet matchar mellan AAD och ditt lokala Active Directory.
 

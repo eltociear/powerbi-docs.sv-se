@@ -1,15 +1,15 @@
 ---
-title: "Självstudie: Skapa beräknade kolumner i Power BI Desktop"
-description: "Självstudie: Skapa beräknade kolumner i Power BI Desktop"
+title: 'Självstudie: Skapa beräknade kolumner i Power BI Desktop'
+description: 'Självstudie: Skapa beräknade kolumner i Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,135 +18,126 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: acdaa95908cd03006170eb06ddfc780c836c64ac
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 526659cfe0631eb9cb43ff6b47729a8a6227ec68
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Självstudie: Skapa beräknade kolumner i Power BI Desktop
-Ibland innehåller de data som du analyserar inte det fält som du behöver för att kunna hämta ett visst resultat. Det är därför vi använder beräknade kolumner. Beräknade kolumner använder DAX-formler till att definiera värden för en kolumn. Dessa värden kan bestå av nästan vad som helst, oavsett om det gäller att sammanfoga textvärden från ett antal olika kolumner i modellen, eller att beräkna ett numeriskt värde från andra värden. Anta till exempel att dina data har kolumnerna Stad och Stat (som fält i fältlistan), men du vill ha det enda fältet Plats med båda som ett enda värde, exempelvis Miami, FL. Detta är exakt vad beräknade kolumner är till för.
 
-Beräknade kolumner liknar mått i och med att båda är baserade på en DAX-formel, men de skiljer sig åt i hur de används. Mått används oftast i området Värden i en visualisering för att beräkna resultat som baseras på andra fält som finns på en rad i en tabell, en axel, en förklaring eller ett gruppområde i en visualisering. Beräknade kolumner används å andra sidan när du vill ha kolumnens resultat på den raden i tabellen eller i området Axeln, Förklaring eller Grupp.
+Ibland innehåller de data som du analyserar inte det fält som du behöver för att kunna hämta ett visst resultat. Det är därför vi använder *beräknade kolumner*. Beräknade kolumner använder DAX-formler (Data Analysis Expressions) för att definiera en kolumns värden, allt från att sätta ihop textvärden från ett antal olika kolumner till att beräkna ett numeriskt värde från andra värden. Anta till exempel att dina data har **Stad** och **Delstat**, men du vill ha ett enda fält för **Plats** som har båda värdena, som ”Miami, FL”. Detta är exakt vad beräknade kolumner är till för.
 
-I den här självstudien får du hjälp att förstå och skapa vissa av dina egna beräknade kolumner i Power BI Desktop. Den är avsedd för Power BI-användare som redan är bekanta med Power BI Desktop och som vill skapa mer avancerade modeller. Du bör redan känna till hur man använder frågor för att importera data, att arbeta med flera relaterade tabeller och att lägga till fält på rapportarbetsytan. Om du är nybörjare i Power BI Desktop bör du läsa [Komma igång med Power BI Desktop](desktop-getting-started.md).
+Beräknade kolumner liknar [mått](desktop-tutorial-create-measures.md) i och med att båda är baserade på DAX-formler, men de skiljer sig åt i hur de används. Du använder ofta åtgärder i en visualiserings område för **Värden** för att beräkna resultat baserat på andra fält. Du använder beräknade kolumner som nya **Fält** i visualiseringarnas rader, axlar, förklaringar och gruppområden.
 
-Om du vill slutföra stegen i den här självstudien måste du ladda ned filen [Contoso Sales Sample för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip). Det här är samma exempelfil som användes i självstudien [Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). Den innehåller redan försäljningsdata från det fiktiva företaget Contoso, Inc. Eftersom data i filen har importerats från en databas, kan du inte ansluta till datakällan eller visa den i frågeredigeraren. När du har filen på din dator kan du gå vidare och öppna den i Power BI Desktop.
+I den här självstudien får du hjälp att förstå och skapa några beräknade kolumner och använda dem i rapportvisualiseringar i Power BI Desktop. 
 
-## <a name="lets-create-a-calculated-column"></a>Nu ska vi skapa en beräknad kolumn
-Anta att vi vill visa produktkategorier tillsammans med produktens underkategorier i ett enskilt värde på raderna, som t.ex. Mobiltelefoner – tillbehör, Mobiltelefoner – smartphones och surfplattor etc. Om vi tittar på våra produkttabeller i fältlistan i rapportvyn eller datavyn (vi använder rapportvyn här), finns det inget fält som visar vad vi vill. Vi har dock fälten ProductCategory och ProductSubcategory i varsin tabell.
+### <a name="prerequisites"></a>Förutsättningar
+- Den här självstudien är avsedd för Power BI-användare som redan är bekanta med Power BI Desktop och som vill skapa mer avancerade modeller. Du bör redan känna till hur man använder **Hämta data** och **Power Query-redigeraren** för att importera data, arbeta med flera relaterade tabeller och lägga till fält på rapportarbetsytan. Om du är nybörjare i Power BI Desktop bör du läsa [Komma igång med Power BI Desktop](desktop-getting-started.md).
+  
+- I självstudiekursen används [Contoso-försäljningsexemplet för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), samma exempel som används för självstudien [Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). Dessa försäljningsdata från det fiktiva företaget Contoso, Inc. har importerats från en databas, så du kan inte ansluta till datakällan eller visa den i Power Query-redigeraren. Hämta och packa upp filen på din dator och öppna den sedan i Power BI Desktop.
 
- ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_nonewcol.png)
+## <a name="create-a-calculated-column-with-values-from-related-tables"></a>Skapa en beräknad kolumn med värden från relaterade tabeller
 
-Vi ska skapa en ny beräknad kolumn för att kombinera värdena från dessa två kolumner till nya värden i vår nya kolumn. Vi måste därför kombinera data från två olika tabeller i en enda kolumn. Eftersom vi ska använda DAX till att skapa vår nya kolumn kan vi utnyttja alla fördelar med den modell som vi redan har, inklusive relationerna mellan olika tabeller som redan finns.
+I din försäljningsrapport vill du visa produktkategorier och underkategorier som ett enskilt värde, som t.ex. ”Mobiltelefoner – tillbehör”, ”Mobiltelefoner – smartphones och surfplattor” etc. Det finns inget fält listan **Fält** som ger dessa data, men det finns ett **ProductCategory**-fält och ett **ProductSubcategory**-fält, vart och ett i sin egen tabell. Du kan skapa en beräknad kolumn som kombinerar värden från de här två kolumnerna. DAX-formulär kan utnyttja alla fördelar med den modell som du redan har, inklusive relationerna mellan olika tabeller som redan finns. 
 
-### <a name="to-create-a-productfullcategory-column"></a>Så här skapar du en ProductFullCategory-kolumn
-1.  Högerklicka eller klicka på nedåtpilen i tabellen **ProductSubcategory** i fältlistan och klicka sedan på **Ny kolumn**. Den nya kolumnen läggs till i tabellen ProductSubcategory.
+ ![Kolumner i fältlistan](media/desktop-tutorial-create-calculated-columns/create1.png)
+
+1.  Välj elipsen (...) **Fler alternativ** eller högerklicka på tabellen **ProductSubcategory** i fältlistan och välj sedan **Ny kolumn**. Detta skapar en ny kolumn i tabellen ProductSubcategory.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumn.png)
+    ![Ny kolumn](media/desktop-tutorial-create-calculated-columns/create2.png)
     
-    Formelfältet visas överst i rapportarbetsytan eller datarutnätet. Det är där vi kan byta namn på vår kolumn och ange en DAX-formel.
+    Formelfältet visas överst i rapportarbetsytan, där du kan namnge din kolumn och ange en DAX-formel.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumnformula.png)
+    ![Formelfält](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-    Som standard får en ny beräknad kolumn helt enkelt namnet Kolumn. Om vi inte byter namn på den och skapar en till kolumn, kommer den kolumnen få namnet Kolumn 2, Kolumn 3 osv. Vi vill att våra kolumner ska vara mer identifierbara, så vi ger den nya kolumnen ett nytt namn.
+2.  Som standard får en ny beräknad kolumn helt enkelt namnet Kolumn. Om du inte byter namn kommer ytterligare nya kolumner döpas till kolumn 2, kolumn 3 och så vidare. Du vill att kolumnen ska vara mer identifierbar, så eftersom namnet **Kolumn** redan är markerat i formelfältet, byter du namn på den genom att skriva **ProductFullCategory**, och sedan ett likhetstecken (**=**).
     
-2.  Eftersom namnet **Kolumn** redan är markerat i formelfältet, skriver du helt enkelt **ProductFullCategory**.
+3.  Du vill att värdena i din nya kolumn ska börja med namnet ProductCategory. Eftersom den här kolumnen finns i annan (men relaterad) tabell, kan du använda funktionen [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) för att hämta den.
     
-    Nu kan vi börja ange vår formel. Vi vill att värdena i vår nya kolumn ska starta med namnet ProductCategory från tabellen ProductCategory. Eftersom den här kolumnen finns i annan (men relaterad) tabell, ska vi använda funktionen [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) för att hämta den.
+    Efter likhetstecknet skriver du **r**. En listruta med förslag visar alla DAX-funktioner som börjar med bokstaven R. Genom att välja varje funktion visas en beskrivning av dess effekt. Medan du skriver skalas alternativlistan närmre den funktion som du behöver. Välj **RELATED**, och tryck sedan på **Retur**.
     
-3.  Efter likhetstecknet skriver du **R**. En listruta visas med förslag på alla DAX-funktioner som börjar med bokstaven R. Ju mer vi skriver, desto närmare kommer vi funktionen vi behöver. Bredvid funktionen visas en beskrivning. Välj **RELATED** genom att bläddra nedåt och tryck sedan på Retur.
+    ![Välj RELATED](media/desktop-tutorial-create-calculated-columns/create4.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_1.png)
+    En vänsterparentes visas tillsammans med en annan förslagslista över de relaterade kolumner som du kan överföra till funktionen RELATED med beskrivningar och information om förväntade parametrar. 
     
-    En vänsterparentes visas tillsammans med en annan förslagslista med alla tillgängliga kolumner som vi kan skicka till funktionen RELATED. En beskrivning och information om vilka parametrar som förväntas visas också.
+    ![Välj ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_2.png)
-    
-    Ett uttryck visas alltid mellan en vänster- och högerparentes. I det här fallet kommer vårt uttryck innehålla ett enda argument som skickas till funktionen RELATED, en relaterad kolumn som värden returneras från. Listan med kolumner minskas automatiskt till att endast visa de kolumner som är relaterade. I det här fallet vill vi ha kolumnen ProductCategory i tabellen ProductCategory.
-    
-    Välj **ProductCategory[ProductCategory]** och skriv sedan en högerparentes.
+4.  Du vill använda kolumnen **ProductCategory** från tabellen **ProductCategory**. Välj **ProductCategory[ProductCategory]** och tryck på **Retur**, skriv sedan en högerparentes.
     
     > [!TIP]
-    > Syntaxfel orsakas oftast av att en avslutande parentes saknas eller är felplacerad. Ofta lägger dock Power BI Desktop till den om du glömmer bort det.
-    > 
-    > 
+    > Syntaxfel orsakas oftast av saknade eller felplacerade parentestecken, även om Power BI Desktop ibland lägger till dem åt dig.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_3.png)
+4. Du vill använda bindestreck och blanksteg för att avgränsa ProductCategories och ProductSubcategories i de nya värdena, så skriv efter högerparentesen i det första uttrycket, ett blanksteg, ett et-tecken (**&**), ett dubbelt citattecken (**"**), ett blanksteg, ett bindestreck (**-**), ett till blanksteg, ett till dubbelt citattecken och ett till et-tecken. Formeln bör nu se ut så här:
     
-4. Vi ska lägga till ett bindestreck som avgränsar varje värde, så efter högerparentesen i det första uttrycket skriver du blanksteg, et-tecken (&), citattecken, blanksteg, bindestreck (-), blanksteg, ett avslutande citattecken och sedan ett et-tecken till. Formeln bör nu se ut så här:
-    
-    **ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &**
+    `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
-    > Klicka på fortsättningstecknet till höger i formelfältet för att expandera formelredigeraren. Klicka på Alt och Retur för att gå en rad nedåt och Tabb för att gå vidare.
-    > 
-    > 
+    > Om du behöver mer plats, välj fortsättningstecknet till höger i formelfältet för att expandera formelredigeraren. I redigeraren, tryck på **Alt + Retur** för att gå en rad nedåt och **Tab** för att gå vidare.
     
-5.  Ange ännu en inledande hakparentes och välj kolumnen **[ProductSubcategory]** för att avsluta formeln. Formeln bör nu se ut så här:
+5.  Ange ännu en inledande hakparentes (**[**) och välj kolumnen **[ProductSubcategory]** för att avsluta formeln. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_5.png)
+    ![Välj ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
-    Du kanske märkte att vi inte använde funktionen RELATED i det andra uttrycket när vi anropade kolumnen ProductSubcategory. Detta beror på att den här kolumnen redan finns i samma tabell som vi skapar vår nya kolumn i. Vi kan ange [ProductCategory] med tabellnamnet (fullständigt) eller utan (inte fullständigt).
+    Du behöver inte använda en annan RELATED-funktion för att anropa ProductSubcategory-tabellen i det andra uttrycket eftersom du skapar den beräknade kolumnen i den här tabellen. Vi kan ange [ProductSubcategory] med tabellnamnets prefix (fullständigt) eller utan (inte fullständigt).
     
-6.  Slutför formeln genom att trycka på Retur eller klicka på bockmarkeringen i formelfältet. Formeln verifieras och läggs till i fältlistan i tabellen **ProductSubcategory**.
+6.  Slutför formeln genom att trycka på **Retur** eller välja bockmarkeringen i formelfältet. Formeln valideras och kolumnen **ProductFullCategory** visas i tabellen **ProductSubcategory** i fältlistan. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_6.png)
+    ![Slutförd ProductFullCategory-kolumn](media/desktop-tutorial-create-calculated-columns/create7.png)
     
-    Du märker kanske att beräknade kolumner får en särskild ikon i fältlistan. Detta visar att de innehåller en formel. De ser bara ut så här i Power BI Desktop. I Power BI-tjänsten (din Power BI-webbplats) går det inte att ändra någon formel, så beräknade kolumnfält har inte någon ikon.
+    >[!NOTE]
+    >I Power BI Desktop får beräknade kolumner en särskild ikon i fältlistan som visar att de innehåller formler. I Power BI-tjänsten (din Power BI-webbplats) går det inte att ändra formler, så beräknade kolumner har inte ikoner.
     
-## <a name="lets-add-our-new-column-to-a-report"></a>Nu lägger vi till vår nya kolumn i en rapport
-Nu kan vi lägga till vår nya ProductFullCategory-kolumn på rapportarbetsytan. Låt oss titta på SalesAmount i ProductFullCategory.
+## <a name="use-your-new-column-in-a-report"></a>Använda din nya kolumn i en rapport
 
-Dra kolumnen **ProductFullCategory** från tabellen **ProductSubcategory** till rapportarbetsytan och dra sedan fältet **SalesAmount** från tabellen **Sales** till diagrammet.
+Nu kan du använda din nya ProductFullCategory-kolumn för att titta på SalesAmount enligt ProductFullCategory.
 
-![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_report_1.png)
+1. Välj eller dra kolumnen **ProductFullCategory** från tabellen **ProductSubcategory** på rapportarbetsytan för att skapa en tabell som visar alla ProductFullCategory-namn.
+   
+   ![ProductFullCategory-tabell](media/desktop-tutorial-create-calculated-columns/vis1.png)
+    
+2. Välj eller dra fältet **SalesAmount** från tabellen **Sales** om du vill visa försäljningsbeloppet för varje fullständig produktkategori.
+   
+   ![SalesAmount enligt ProductFullCategory-tabellen](media/desktop-tutorial-create-calculated-columns/vis2.png)
+    
+## <a name="create-a-calculated-column-that-uses-an-if-function"></a>Skapa en beräknad kolumn som använder en IF-funktion
 
-## <a name="lets-create-another"></a>Nu ska vi skapa en till
-Nu när du vet hur du skapar en beräknad kolumn kan vi skapa en till.
+Contoso-försäljningsexemplet innehåller försäljningsdata för både aktiva och inaktiva butiker. Du vill säkerställa att försäljning i aktiva butiker klart avgränsas från försäljning i inaktiva butiker i rapporten genom att skapa ett fält med Active StoreName. I den nya beräknade kolumnen Active StoreName visas alla aktiva butiker med butikens fullständiga namn, medan inaktiva butiker grupperas samman under ”Inaktiv”. 
 
-Contoso Sales Sample för Power BI Desktop-modellen innehåller försäljningsdata för både aktiva och inaktiva butiker. Vi ska göra detta tydligt genom de data som visas för inaktiva butiker ska kunna identifieras som sådana. Vi vill därför ha ett fält med namnet Active StoreName. För att göra detta skapar vi en kolumn till. När en butik är inaktiv vill vi att vår nya Active StoreName-kolumn (som ett fält) ska visa butikens namn som ”Ej aktiv”, men visa butikens verkliga namn när det är en aktiv butik.
+Lyckligtvis har tabellen Stores en kolumn med namnet **Status**, med värden för ”On” för aktiva butiker och ”Off” för inaktiva butiker som vi använder för att skapa värden för vår nya Active StoreName-kolumn. DAX-formeln använder den logiska funktionen [IF](https://msdn.microsoft.com/library/ee634824.aspx) för att testa varje butiks status och returnerar ett visst värde beroende på resultatet. Om butikens status är ”On” returnerar formeln butikens namn. Om den är ”Off” tilldelar formeln ett Active StoreName som ”inaktivt”. 
 
-Lyckligtvis har vår butikstabell en kolumn med namnet Status, med värdet På för aktiva butiker och Av för inaktiva butiker. Vi kan testa värden för varje rad i kolumnen Status för att skapa nya värden i vår nya kolumn.
 
-### <a name="to-create-an-active-storename-column"></a>Så här skapar du kolumnen Active StoreName
-1.  Skapa en ny beräknad kolumn med namnet **Active StoreName** i tabellen **Stores**.
+1.  Skapa en ny beräknad kolumn i tabellen **Stores** och ge den namnet **Active StoreName** i formelfältet.
     
-    I den här kolumnen kommer vår DAX-formel att kontrollera varje butiks status. Om butikens status är På returnerar vår formel dess namn. Om den inte är aktiv får den namnet ”Ej aktiv”. För att göra detta använder vi den logiska funktionen [IF](https://msdn.microsoft.com/library/ee634824.aspx) som testar butikens status och returnerar ett visst värde om resultatet är sant eller falskt.
+2.  Efter **=**-tecknet, börja skriva **IF**. Förslagslistan visar vad du kan lägga till. Välj **IF**.
     
-2.  Börja med att skriva **IF**. Förslagslistan visar vad vi kan lägga till. Välj **IF**.
+    ![Välj IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_1.png)
+3.  Det första argumentet för IF är ett logiskt test av om en butiks status är ”On”. Skriv en inledande hakparentes **[**, som visar kolumner från tabellen Stores och välj **[Status]**.
     
-    Det första argumentet för IF är ett logiskt test. Vi vill testa om en butik har statusvärdet ”På” eller inte.
+    ![Välj Status](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-3.  Skriv en inledande hakparentes **[** för att vi ska kunna välja kolumner från tabellen Stores. Välj **[Status]**.
+4.  Direkt efter **[Status]**, skriv **= ”On”**, och skriv ett komma (**,**) för att avsluta argumentet. Knappbeskrivningen föreslår att du nu behöver lägga till ett värde som returneras när resultatet är TRUE.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_2.png)
+    ![Lägg till värdet TRUE](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-4.  Direkt efter **[Status]**, skriver du **="På"** och sedan ett kommatecken (**,**) för att ange det andra argumentet. Knappbeskrivningen föreslår att vi lägger till värdet för när resultatet är sant.
+5.  Om butikens status är ”On” vill du visa butikens namn. Skriv en inledande hakparentes **[** och välj sedan kolumnen **[StoreName]** och skriv ett kommatecken till. Knappbeskrivningen anger att du nu behöver lägga till ett värde som returneras när resultatet är FALSE. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_3.png)
+    ![Lägg till FALSE-värde](media/desktop-tutorial-create-calculated-columns/if4.png)
     
-5.  Om butiken är På vill vi visa dess namn. Skriv en inledande hakparentes **[** och välj sedan kolumnen **[StoreName]**. Skriv ett kommatecken till så att vi kan ange vårt tredje argument.
+6.  Du vill att värdet ska vara *Inactive*, så skriv **”Inactive”**, och slutför sedan formeln genom att trycka på **Retur** eller välja kryssmarkeringen i formelfältet. Formeln valideras och den nya kolumnens namn visas i tabellen **Stores** i fältlistan.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step5.png)
+    ![Active StoreName-kolumn](media/desktop-tutorial-create-calculated-columns/if5.png)
     
-6.  Vi måste lägga till ett värde för när resultatet har värdet falskt. I det här fallet vill vi att värdet ska vara **”Ej aktiv”**.
+8.  Du kan nu använda din nya kolumn Active StoreName i visualiseringar precis som alla andra fält. Om du vill visa SalesAmounts efter Active StoreName, väljer du fältet **Active StoreName** eller drar det till arbetsytan och väljer sedan fältet **SalesAmount** eller drar det till tabellen. I den här tabellen visas aktiva butiker individuellt efter namn, men inaktiva butiker grupperas samman i slutet som *Inactive*. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step6.png)
+    ![SalesAmount efter Active StoreName-tabell](media/desktop-tutorial-create-calculated-columns/if6.png)
     
-7.  Slutför formeln genom att trycka på Retur eller klicka på bockmarkeringen i formelfältet. Formeln verifieras och läggs till i fältlistan i tabellen Stores.
-    
-    Precis som i andra fält kan vi använda vår nya kolumn Active StoreName i visualiseringar. I det här diagrammet visas butiker med statusen På individuellt efter namn, men med statusen Av grupperas de och visas som inaktiva. 
-    
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_viz.png)
-    
-## <a name="what-weve-learned"></a>Vad har vi lärt oss?
-Beräknade kolumner kan utöka våra data, vilket ger enklare analyser. Vi har lärt dig hur du skapar beräknade kolumner med hjälp av formelfältet, hur du använder förslagslistan och hur du bäst namnger nya kolumner.
+## <a name="what-youve-learned"></a>Vad du har lärt dig
+Beräknade kolumner kan utöka dina data och ge enklare analyser. Du har lärt dig hur du skapar beräknade kolumner i fältlistan och formelfältet, använder förslagslistor och knappbeskrivningar för att konstruera formler, anropar DAX-funktioner som RELATED och IF med rätt argument och använder de beräknade kolumnerna i rapportvisualiseringarna.
 
 ## <a name="next-steps"></a>Nästa steg
-Om du vill ha en grundligare genomgång av DAX-formler och skapa beräknade kolumner med mer avancerade DAX formler, kan du läsa mer i [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Den här artikeln handlar om grundläggande begrepp i DAX, till exempel syntax, funktioner och en mer omfattande beskrivning av kontext.
+Om du vill ha en grundligare genomgång av DAX-formler och skapa beräknade kolumner med mer avancerade formler, kan du läsa mer i [DAX-grunder i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Den här artikeln handlar om grundläggande begrepp i DAX, till exempel syntax, funktioner och en mer omfattande beskrivning av kontext.
 
 Det kan vara bra att lägga till [Referens för dataanalysuttryck (DAX)](https://msdn.microsoft.com/library/gg413422.aspx) i dina Favoriter. Det är där du hittar detaljerad information om DAX-syntax, operatorer och drygt 200 DAX-funktioner.
 

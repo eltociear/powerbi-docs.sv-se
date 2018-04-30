@@ -12,16 +12,16 @@ qualityfocus: no
 qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 04/09/2018
 ms.author: maggies
-ms.openlocfilehash: 29241b4c0f059540e6f1496f04b3044ebbd7d68b
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 9caf6e6867c55d3c601ac417add173d0af091897
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -29,6 +29,17 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](service-whats-new.md)  
+
+## <a name="april-2018"></a>April 2018
+
+### <a name="mobile-drill-down-and-drill-up"></a>Mobil ökad och minskad detaljnivå
+
+Du kan nu öka och minska detaljnivån för visuella rapportobjekt på din mobila enhet. Om du vill öppna den här nya funktionen trycker du på och håller ned knappbeskrivningens meny och utforska sedan dina data mer i detalj genom att trycka på knapparna.
+
+### <a name="persistent-filters"></a>Beständiga filter
+
+Vi nyligen uppdaterat rapportfiltren och utsnitten, så att de sparas automatiskt från Power BI på webben till Power BI-mobilappen. Nu sparas de filter och utsnitt som du konfigurerar i mobilappen automatiskt till Power BI på webben.
+
 
 ## <a name="march-2018"></a>Mars 2018
 

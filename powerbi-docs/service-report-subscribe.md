@@ -1,31 +1,31 @@
 ---
-title: "Prenumerera på Power BI-rapporter och instrumentpaneler"
-description: "Lär dig hur du ordnar en prenumeration åt dig själv och andra på en ögonblicksbild av en Power BI-rapport och instrumentpanel."
+title: Prenumerera på rapporter och instrumentpaneler i Power BI-tjänsten
+description: Lär dig hur du ordnar en prenumeration åt dig själv och andra på en ögonblicksbild av en Power BI-rapport och instrumentpanel.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: saQx7G0pxhc
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 11e9a2ba499c6db2c75434d13c62bc53704a7cb3
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: af93d9d49b25fe2bc8fefcc2128dea74effc65ec
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>Prenumerera på en Power BI-rapport eller instrumentpanel
+# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service-apppowerbicom"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten (app.powerbi.com)
 Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. 
 
 E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning klickar du på kugghjulsikonen ![kugghjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**. 

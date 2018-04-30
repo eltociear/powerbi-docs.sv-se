@@ -15,17 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 04/09/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84ee8e7c6dd92c5400b6e9d44fab03ad347084d9
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: d644f13f6c9b8ada62a0862fdcf92518512828f7
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
-Med Power BI Desktop kan du komma åt **SAP BusinessWarehouse (BW)**-data.
+Med Power BI Desktop kan du komma åt **SAP Business Warehouse (BW)**-data.
+
+Du hittar information om hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse) i [Power BI och SAP BW whitepaper](https://aka.ms/powerbiandsapbw).
 
 ## <a name="installation-of-sap-bw-connector"></a>Installationen av SAP BW-anslutningsappen
 För att använda anslutningsappen **SAP BW Connector** ska du utföra följande installationssteg:
@@ -115,3 +117,4 @@ Mer information om SAP HANA och DirectQuery finns i följande resurser:
 * [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
+* [Power BI och SAP BW whitepaper](https://aka.ms/powerbiandsapbw)

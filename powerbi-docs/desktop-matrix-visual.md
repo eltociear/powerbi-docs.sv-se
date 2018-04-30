@@ -1,15 +1,15 @@
 ---
-title: "Använd det visuella matrisobjektet i Power BI Desktop"
-description: "Läs mer om hur visuella matrisobjekt möjliggör steglayouter och detaljerad markering i Power BI Desktop"
+title: Använd det visuella matrisobjektet i Power BI Desktop
+description: Läs mer om hur visuella matrisobjekt möjliggör steglayouter och detaljerad markering i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: de40c8ee25c5facc1c4396c807d38784c11e8bca
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fdab0ee5a4804bcb05e936f4e6a9455127d352fa
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Använd det visuella matrisobjektet i Power BI Desktop
-Med det visuella **matris**objektet kan du skapa visuell matrisinformation (kallas ibland också *tabeller*) i **Power BI Desktop**-rapporter och markera flera element i matrisen med andra visuella objekt. Dessutom kan du välja rader, kolumner och även enskilda celler och korsmarkeringar. Matrisen har dessutom stöd för stegvis layout för optimal användning av utrymmet.
+Med den visuella **matris**-funktionen kan du skapa visuell matrisinformation (kallas ibland också *tabeller*) i **Power BI Desktop**-rapporter och markera flera element i matrisen med andra visuella objekt. Dessutom kan du välja rader, kolumner och även enskilda celler och korsmarkeringar. Matrisen har dessutom stöd för stegvis layout för optimal användning av utrymmet.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -38,13 +38,13 @@ Det finns många funktioner som är kopplade till matrisen och vi ska gå igenom
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Beräkning av summor i Power BI
 
-Innan vi går vidare till hur man använder det visuella **matris**objektet är det viktigt att du förstår hur Power BI beräknar total- och delsummor i tabeller och matriser. När det gäller summa- och delsummarader utvärderas måttet för alla rader i underliggande data – det handlar *inte* bara om att lägga till värdena i de tabellrader som syns eller visas. Detta innebär att du kan stå med andra värden än vad du räknat med i totalsummaraden. 
+Innan vi går vidare till hur man använder det visuella **matris**objektet är det viktigt att du förstår hur Power BI beräknar total- och delsummor i tabeller och matriser. När det gäller summa- och delsummarader utvärderas måttet för alla rader i underliggande data – det handlar *inte* bara om att lägga till värdena i de tabellrader som syns eller visas. Detta innebär att du kan få andra värden än vad du räknat med i totalsummaraden. 
 
 Ta en titt på följande visuella **matris**objekt. 
 
 ![](media/desktop-matrix-visual/matrix-visual_3.png)
 
-I det här exemplet visar varje rad i det visuella **matris**objektet längst till höger *Belopp* för varje kombination säljare/datum. Men eftersom en säljare visas för flera datum kan siffrorna visas mer än en gång. Den korrekta totalsumman för underliggande data och den enkla additionen av de synliga värdena överensstämmer därmed inte. Detta är ett vanligt mönster när det värde som du summerar finns på ”ett”-sidan i ett ett-till-många-samband.
+I det här exemplet visar varje rad i det visuella **matris**objektet längst till höger *Belopp* för varje kombination säljare/datum. Men eftersom en säljare visas för flera datum kan siffrorna visas mer än en gång. Den korrekta totalsumman för underliggande data och en enkel addering av de synliga värdena överensstämmer därmed inte. Detta är ett vanligt mönster när det värde som du summerar finns på ”ett”-sidan i ett ett-till-många-samband.
 
 Tänk på att dessa värden, när du arbetar med total- och delsummor, baseras på underliggande data och inte enbart på de värden som visas. 
 
@@ -63,7 +63,7 @@ När en gruppering har skapats i avsnittet **Rader** visar det visuella objektet
 
 ![](media/desktop-matrix-visual/matrix-visual_5.png)
 
-På samma sätt som funktionerna detaljgranska och expandera i andra visuella objekt kan vi detaljgranska hierarkin (eller återgå) med dessa knappar. I det här fallet vi gå från *Kategori* till *Underkategori*, vilket visas i följande bild, där ikonen för att gå ned en detaljnivå (högaffeln) har valts.
+På samma sätt som funktionerna detaljgranska och expandera i andra visuella objekt kan vi detaljgranska hierarkin (eller återgå) med dessa knappar. I det här fallet kan vi gå från *Kategori* till *Underkategori*, vilket visas i följande bild, där ikonen för att gå ned en detaljnivå (högaffeln) har valts.
 
 ![](media/desktop-matrix-visual/matrix-visual_6.png)
 
@@ -77,11 +77,11 @@ Genom att välja den **detaljnivån** expanderas matrisen för *den* radnivån, 
 
 ![](media/desktop-matrix-visual/matrix-visual_8.png)
 
-Vi kan klicka på ikonen **Byt detaljnivå uppåt** för att gå tillbaka till föregående toppnivån. Om vi sedan väljer **Visa nästa nivå** från snabbmenyn ser vi en alfabetisk lista över alla objekt på nästa nivå (i det här fallet fältet *underkategori*) utan kategoriseringen för nästa hierarkinivå.
+Du kan klicka på ikonen **Minska detaljnivån** för att gå tillbaka till föregående toppnivån. Om du sedan väljer **Visa nästa nivå** från snabbmenyn ser du en alfabetisk lista över alla objekt på nästa nivå (i det här fallet fältet *underkategori*) utan kategoriseringen för nästa hierarkinivå.
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-Klicka på ikonen **Byt detaljnivå uppåt** i det övre vänstra hörnet av matrisen visas alla toppkategorier, högerklicka igen och välj **Expandera till nästa nivå**, så visas följande:
+När du klickar på ikonen **Minska detaljnivån** i det övre vänstra hörnet av matrisen visas alla toppkategorier, högerklicka igen och välj **Expandera till nästa nivå**, så visas följande:
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
@@ -96,11 +96,11 @@ När vi högerklickar på en kolumn i **matrisen** visas alternativet att gå ne
 
 ![](media/desktop-matrix-visual/matrix-visual_11.png)
 
-När **detaljnivån** väljs visas nästa nivå i hierarkin för kolumnen *Deluxe*, vilket i detta fall är *Färg*.
+När du väljer **Öka detaljnivån** visas nästa nivå i hierarkin för kolumnen *Deluxe*, vilken i detta fall är *Färg*.
 
 ![](media/desktop-matrix-visual/matrix-visual_12.png)
 
-Resten av alternativen i högerklicksmenyn fungerar för kolumner på samma sätt som de gör för rader (mer information finns i föregående avsnitt **Specificera radrubriker**). Du kan **Visa nästa nivå**, **Expandera till nästa nivå**, och **Inkludera** eller **Undanta** kolumner på samma sätt som rader.
+Resten av alternativen i högerklicksmenyn fungerar för kolumner på samma sätt som de gör för rader (mer information finns i föregående avsnitt **Öka detaljnivån för radrubriker**). Du kan **Visa nästa nivå**, **Expandera till nästa nivå**, **Inkludera** eller **Undanta** för dina kolumner på samma sätt som för rader.
 
 > [!NOTE]
 > Ikonerna för att öka och minska detaljnivån längst upp till vänster på matrisen gäller endast för rader. Du måste använda högerklicksmenyn för att öka detaljnivån i kolumner.
@@ -108,17 +108,17 @@ Resten av alternativen i högerklicksmenyn fungerar för kolumner på samma sät
 > 
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Stegvis layout med matriser
-**Matriser** har automatiskt indrag för underkategorier i en hierarki när de visas under en överordnad kategori. Detta kallas **stegvis layout**.
+**Matriser** har automatiskt indrag för underkategorier i en hierarki när de visas under en överordnad kategori. Detta kallas **Stegvis layout**.
 
-I den *ursprungliga* versionen av matrisen visades underkategorier i en helt annan kolumn och tog upp mer utrymme i det visuella objektet. Följande bild visar tabellen i ursprungliga **matrisen**. Observera underkategorierna i en separat kolumn.
+I den *ursprungliga* versionen av matrisen visades underkategorier i en helt annan kolumn och tog upp mer utrymme i det visuella objektet. Följande bild visar tabellen i den ursprungliga **matrisen**. Observera underkategorierna i en separat kolumn.
 
 ![](media/desktop-matrix-visual/matrix-visual_14.png)
 
-I följande bild visas en **matris** med **stegvis layout**. Lägg märke till kategorin *datorer* visar underkategorierna något indragna (tillbehör för datorer, stationära datorer, bärbara datorer, skärmar och så vidare) vilket är tydligare och mycket mer komprimerat.
+I följande bild visas en **Matris** med **Stegvis layout**. Lägg märke till kategorin *datorer* visar underkategorierna något indragna (tillbehör för datorer, stationära datorer, bärbara datorer, skärmar och så vidare) vilket är tydligare och mycket mer komprimerat.
 
 ![](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Du kan enkelt ändra inställningarna för **stegvis layout**. Expandera området **radrubriker** i **format**-området (rollerikonen) i fönstret **Visuella objekt** för den valda **matrisen**. Det finns två alternativ: knappen **stegvisa layout** (som aktiverar eller inaktiverar) och **stegvis layoutindrag** (anger indrag i bildpunkter).
+Du kan enkelt ändra inställningarna för stegvis layout. Expandera området **radrubriker** i **format**-området (rollerikonen) i fönstret **Visuella objekt** för den valda **matrisen**. Du har två alternativ: knappen **Stegvis layout** (som aktiverar eller inaktiverar funktionen) och **stegvis layoutindrag** (anger indrag i bildpunkter).
 
 ![](media/desktop-matrix-visual/matrix-visual_15.png)
 
@@ -136,21 +136,21 @@ I området **Format** i fönstret **Visuella objekt** expanderar du kortet **Del
 Samma sak gäller för kolumndelsummor.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Korsmarkering med matriser
-Med **matriser** kan alla element väljs som grund för korsmarkering. Markera en kolumn i en **matris** för att markera den och alla andra visuella objekt på rapportsidan. Detta har varit en vanlig funktion för andra visuella objekt och val av datapunkter. Nu gäller detta även för **matriser**.
+Med visualiseringen **Matris** kan du välja alla element i matrisen som grund för korsmarkering. Markera en kolumn i en **matris** för att markera den och alla andra visuella objekt på rapportsidan. Detta har varit en vanlig funktion för andra visualiseringar och val av datapunkter, så nu har visualiseringen **Matris** samma funktion.
 
-Dessutom fungerar CTRL + klicka för cross-markering. I följande bild valdes till exempel en samling av underkategorier från **matrisen**. Observera hur objekt som inte var markerat från det visuella objektet är nedtonade och hur övriga visuella objekt på sidan återspeglar de val du gjorde i **matrisen**.
+Dessutom fungerar Ctrl + klicka för korsmarkering. I följande bild valdes till exempel en samling av underkategorier från **matrisen**. Observera hur objekt som inte var markerat från det visuella objektet är nedtonade och hur övriga visuella objekt på sidan återspeglar de val du gjorde i **matrisen**.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Fyllning och teckenfärger med matriser
-Med **matriser** kan du använda **villkorsstyrd formatering** (färger och fyllning) för cellernas bakgrundsfärger och samt på själva texten och värdena.
+Med visualiseringen **Matris** kan du använda **villkorsstyrd formatering** (färger och fyllning) för cellernas bakgrundsfärger samt på själva texten och värdena.
 
 Om du vill tillämpa villkorsstyrd formatering, kan du göra något av följande när en matris väljs:
 
 * I fönstret **Fält** högerklickar du på fältet och väljer **Villkorsstyrd formatering** på menyn.
   
   ![](media/desktop-matrix-visual/matrix-visual_17.png)
-* Alternativt kan du gå till fönstret **Format** och expandera kortet **Villkorsstyrd formatering** och flytta skjutreglaget till **på** för antingen **Bakgrundsfärgskalor** eller **Teckensnittfärgskalor**. När du aktiverar någon av dessa visas en länk till *avancerade kontroller*, där du kan anpassa färger och värden för formatering av färg.
+* Alternativt kan du gå till fönstret **Format** och expandera kortet **Villkorsstyrd formatering** och flytta skjutreglaget till **på** för antingen **Bakgrundsfärgskalor** eller **Teckensnittfärgskalor**. När du aktiverar något av dessa alternativ visas en länk till *Avancerade kontroller*, där du kan anpassa färger och värden för formatering av färg.
   
   ![](media/desktop-matrix-visual/matrix-visual_18.png)
 

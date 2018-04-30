@@ -1,36 +1,36 @@
 ---
-title: "Anmäl dig till förhandsversionsfunktioner"
-description: "Gör så här för att aktivera (och inaktivera) Power BI-förhandsversionsfunktioner."
+title: Anmäl dig till förhandsversionsfunktioner
+description: Gör så här för att aktivera (och inaktivera) Power BI-förhandsversionsfunktioner.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 45f10ab7fef7669adbbc836e67a4daaed267905e
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 54aa25b0d5252af24bdbefef3f1d5798df2f6168
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="opt-in-for-power-bi-preview-features"></a>Anmäl dig till förhandsversionsfunktioner i Power BI
+# <a name="opt-in-for-power-bi-service-preview-features"></a>Anmäl dig till förhandsversionsfunktioner i Power BI-tjänsten
 ## <a name="what-are-preview-features"></a>Vad är *förhandsversionsfunktioner*?
-Efter hand som vi förbättrar Power BI släpper vi några nya funktioner som *förhandsversionsfunktioner*. Förhandsversionsfunktioner kan aktiveras och inaktiveras, vilket ger dig möjlighet att testa dem.
+Efter hand som vi förbättrar Power BI-tjänsten släpper vi några nya funktioner som *förhandsversionsfunktioner*. Förhandsversionsfunktioner kan aktiveras och inaktiveras, vilket ger dig möjlighet att testa dem.
 
 > [!TIP]
-> Har du några frågor eller feedback? [Besök Power BI Community](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+> Förhandsversionsfunktioner är också tillgängliga för Power BI Desktop. För mer information [besök community-forumet för Power BI Desktop](https://community.powerbi.com/t5/Desktop/bd-p/power-bi-designer).
 > 
 > 
 
