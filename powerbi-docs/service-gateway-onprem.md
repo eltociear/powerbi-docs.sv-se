@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/26/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: c6c924095e3aaf4839f1c9422e027ba5373b9ad4
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: ee696e4d967e995771480d660de260b6d3b755cd
+ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 Den lokala datagatewayen fungerar som en brygga med snabb och säker dataöverföring mellan lokala data (data som inte finns i molnet) och tjänsterna Power BI, Microsoft Flow, Logic Apps och PowerApps.
@@ -95,6 +95,11 @@ När du lägger till en datakälla till gatewayen, måste du ange autentiserings
 * [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
 ) stöds inte för närvarande
 * [Åtkomst online](https://products.office.com/en-us/access) stöds inte för närvarande
+
+## <a name="tenant-level-administration"></a>Administration på klientorganisationsnivå 
+
+Det finns för tillfället ingen gemensam plats där klientorganisationsadministratörerna kan hantera alla gatewayer som andra har installerat och konfigurerat.  Om du är klientorganisationsadministratör rekommenderar vi att du frågar användarna i organisationen om de kan lägga till dig som administratör för varje gateway de installerar. Då kan du hantera alla gatewayer i organisationen på sidan med gatewayinställningar eller med hjälp av [PowerShell-kommandon](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
+
 
 ## <a name="troubleshooting"></a>Felsökning
 Om du får problem när du installerar och konfigurerar en gateway, hittar du mer information under [Felsökning av lokal datagateway](service-gateway-onprem-tshoot.md). Om du tror att du har ett problem med brandväggen kan du läsa mer i avsnittet om [brandvägg eller proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) i felsökningsartikeln.
