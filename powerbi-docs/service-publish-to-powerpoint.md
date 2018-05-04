@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Share your work
-ms.openlocfilehash: fccb8575ac6ce238f0d5fb8fe64d9c16efa96c07
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d518e0dfc3fd9df3ebec227b1277ee960103b0ee
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Exportera rapporter från Power BI till PowerPoint (förhandsgranskning)
 Med Power BI, kan du nu publicera din rapport till **Microsoft PowerPoint** och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du **exporterar till PowerPoint**, inträffar följande:

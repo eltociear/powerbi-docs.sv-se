@@ -2,26 +2,27 @@
 title: Visualiseringar
 metadata:
   title: Visualiseringar | Microsoft Power BI
-  description: "Visualiseringar framställer dina data och ger insikter som endast intressanta och spännande grafiska representationer kan. Lär dig mer om detta i det här avsnittet."
+  description: Visualiseringar framställer dina data och ger insikter som endast intressanta och spännande grafiska representationer kan. Lär dig mer om detta i det här avsnittet.
   audience: Business User
   level: Beginner
-  nextTutorialHref: exploringdata
+  nextTutorialHref: exploringdata.yml
   nextTutorialTitle: Utforska data
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: e1492e55e47ea0871f4a07a0cc599570f36cae40
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 8ce82b4d86d6e6eb8affbe567cc606fe2cc37732
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Visualiseringar framställer dina data och ger insikter som endast intressanta och spännande grafiska representationer kan. Det här avsnittet av **Power BI** interaktiv inlärning, visar hur du gör för att komma igång med att använda dem.\n"
+  content: >
+    Visualiseringar framställer dina data och ger insikter som endast intressanta och spännande grafiska representationer kan. Det här avsnittet av **Power BI** interaktiv inlärning, visar hur du gör för att komma igång med att använda dem.
 - title: Introduktion till visuella objekt i Power BI
   durationInMinutes: 2
   content: >
@@ -78,14 +79,14 @@ items:
 
 
     [!INCLUDE [](includes/3-8-create-waterfall-funnel-charts.md)]
-- title: "Radiella mätare och sifferkort"
+- title: Radiella mätare och sifferkort
   durationInMinutes: 7
   content: >
     > [!Video https://www.youtube.com/embed/xmja6EpqaO0?rel=0]
 
 
     [!INCLUDE [](includes/3-9-create-gauges-cards.md)]
-- title: "Ändra färger i diagram och visuell information"
+- title: Ändra färger i diagram och visuell information
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/oNME83EAvLw?rel=0]
@@ -127,7 +128,7 @@ items:
 
 
     [!INCLUDE [](includes/3-11c-display-empty-categories.md)]
-- title: "Alternativ för sammanfattning och kategori"
+- title: Alternativ för sammanfattning och kategori
   durationInMinutes: 9
   content: >
     > [!Video https://www.youtube.com/embed/Co2z9b-s_yM?rel=0]
@@ -141,7 +142,7 @@ items:
 
 
     [!INCLUDE [](includes/3-11f-arrange-visual-zorder.md)]
-- title: "Visuella hierarkier och öka detaljnivå"
+- title: Visuella hierarkier och öka detaljnivå
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/q8WDUAiTGeU?rel=0]
@@ -155,4 +156,4 @@ items:
 
 
     [!INCLUDE [](includes/3-11h-r-visual-integration.md)]
-- content: "Bra jobbat. Du har slutfört avsnittet **visualiseringar** i **interaktiv inlärning** och är nu redo för nästa självstudie – **utforska data**.\0"
+- content: Bra jobbat. Du har slutfört avsnittet **visualiseringar** i **interaktiv inlärning** och är nu redo för nästa självstudie – **utforska data**.

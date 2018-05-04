@@ -2,26 +2,27 @@
 title: Modellering
 metadata:
   title: Modellering | Microsoft Power BI
-  description: "Ansluta till flera datakällor och kombinera dem sedan på ett sätt som skapar en unik modell som passar dina behov."
+  description: Ansluta till flera datakällor och kombinera dem sedan på ett sätt som skapar en unik modell som passar dina behov.
   audience: Business User
   level: Beginner
-  nextTutorialHref: visualizations
+  nextTutorialHref: visualizations.yml
   nextTutorialTitle: Visualiseringar
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: 5b09b8365e59d8d89b30e4a01237f7d53559896f
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 302dcaa8f76b9cd767ec7c3349abaea3cb0f8548
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Med **modellerings**-funktionerna i **Power BI**, kan du ansluta till flera datakällor och sedan kombinera dem på sätt som skapar en unik modell med data som lämpar sig för dina behov.\n"
+  content: >
+    Med **modellerings**-funktionerna i **Power BI**, kan du ansluta till flera datakällor och sedan kombinera dem på sätt som skapar en unik modell med data som lämpar sig för dina behov.
 - title: Introduktion till att modellera data
   durationInMinutes: 3
   content: >
@@ -36,7 +37,7 @@ items:
 
 
     [!INCLUDE [](includes/2-2-manage-data-relationships.md)]
-- title: "Skapa beräknade kolumner"
+- title: Skapa beräknade kolumner
   durationInMinutes: 9
   content: >
     > [!Video https://www.youtube.com/embed/GarBXef0Vew?rel=0]
@@ -50,14 +51,14 @@ items:
 
 
     [!INCLUDE [](includes/2-4-optimize-data-models.md)]
-- title: "Skapa beräknade mått"
+- title: Skapa beräknade mått
   durationInMinutes: 14
   content: >
     > [!Video https://www.youtube.com/embed/yn2bXVQJLx8?rel=0]
 
 
     [!INCLUDE [](includes/2-5-create-calculated-measures.md)]
-- title: "Skapa beräknade tabeller"
+- title: Skapa beräknade tabeller
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/aKX1E3krl4I?rel=0]
@@ -71,4 +72,4 @@ items:
 
 
     [!INCLUDE [](includes/2-6a-explore-time-based-data.md)]
-- content: "Inget kan stoppa dig. Fortsätt jobba hårt med att lära dig om Power BI! Du har slutfört avsnittet **Modellering** i den interaktiva utbildningen för Microsoft Power BI. Härnäst kommer visualiseringar.\0"
+- content: Inget kan stoppa dig. Fortsätt jobba hårt med att lära dig om Power BI! Du har slutfört avsnittet **Modellering** i den interaktiva utbildningen för Microsoft Power BI. Härnäst kommer visualiseringar.

@@ -1,28 +1,28 @@
 ---
-title: "Power BI Publisher för Excel"
-description: "Läs hur man använder Power BI Publisher för Excel"
+title: Power BI Publisher för Excel
+description: Läs hur man använder Power BI Publisher för Excel
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: complete
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Dashboards
-ms.openlocfilehash: efd01bc6afec23d614a9f57b1150681983227350
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cb6457cbef3f1db2647faf28a487eb3f0861c458
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="power-bi-publisher-for-excel"></a>Power BI Publisher för Excel
 Med Microsoft **Power BI Publisher för Excel**, kan du ta ögonblicksbilder av dina viktigaste insikter i Excel som pivottabeller, diagram och intervall och fästa dem till instrumentpaneler i Power BI.

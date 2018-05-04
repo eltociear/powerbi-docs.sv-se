@@ -2,7 +2,7 @@
 title: Introduktion till DAX
 metadata:
   title: Introduktion till DAX | Microsoft Power BI
-  description: "Lär dig från en erfaren expert hur du skapar och arbetar med DAX."
+  description: Lär dig från en erfaren expert hur du skapar och arbetar med DAX.
   audience: Business User
   level: Beginner
   displayType: one-column
@@ -10,16 +10,17 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: 5553a2b4dc3856cb90f1d392709fb313acf3c4d8
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 51c99cf6290cb6eaf27e12021415e24b927060fc
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Läs hur du skapar och arbetar med DAX från en erfaren expert.\n"
+  content: >
+    Läs hur du skapar och arbetar med DAX från en erfaren expert.
 - title: Introduktion till DAX
   durationInMinutes: 9
   content: >
@@ -27,7 +28,7 @@ items:
 
 
     [!INCLUDE [](includes/7-1-intro-to-dax.md)]
-- title: "DAX-beräkningstyper"
+- title: DAX-beräkningstyper
   durationInMinutes: 22
   content: >
     > [!Video https://www.youtube.com/embed/BVlijY68wp8?rel=0]
@@ -41,7 +42,7 @@ items:
 
 
     [!INCLUDE [](includes/7-3-dax-functions.md)]
-- title: "Använda variabler i DAX-uttryck"
+- title: Använda variabler i DAX-uttryck
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/kd4tgKxhRTU?rel=0]
@@ -62,4 +63,4 @@ items:
 
 
     [!INCLUDE [](includes/7-6-dax-tables-and-filtering.md)]
-- content: "Du har slutfört avsnittet **Introduktion till DAX** i den interaktiva utbildningen för Power BI. Vilken resa! Om du har gjort de här självstudierna i ordning så att du är klar med alla avsnitt av den **interaktiva inlärningen**. Bra jobbat! Nu kan du använda **Power BI** för att skapa övertygande rapporter och instrumentpaneler som säger det du vill att de ska.\0"
+- content: Du har slutfört avsnittet **Introduktion till DAX** i den interaktiva utbildningen för Power BI. Vilken resa! Om du har gjort de här självstudierna i ordning så att du är klar med alla avsnitt av den **interaktiva inlärningen**. Bra jobbat! Nu kan du använda **Power BI** för att skapa övertygande rapporter och instrumentpaneler som säger det du vill att de ska.
