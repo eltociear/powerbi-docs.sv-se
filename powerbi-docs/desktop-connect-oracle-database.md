@@ -1,28 +1,28 @@
 ---
 title: Anslut till en Oracle-databas
-description: "Steg och hämtningsbara filer som krävs för att ansluta Oracle till Power BI Desktop"
+description: Steg och hämtningsbara filer som krävs för att ansluta Oracle till Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 4/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4126a5f4fc7b8a398d39cad7c14e87e179ab3175
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: e898fb3f7024b4041616770d6fe1d8e8469878dd
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-an-oracle-database"></a>Anslut till en Oracle-databas
 För att ansluta till en Oracle-databas med **Power BI Desktop** måste rätt Oracle-klientprogramvara vara installerad på datorn med Power BI Desktop. Vilken Oracle-klientprogramvaran som du använder beror på vilken version av Power BI Desktop som du har installerat – **32-bitars**-versionen eller **64-bitars**-versionen.
@@ -49,7 +49,7 @@ När den matchande Oracle-klientdrivrutinen har installerats kan du ansluta du t
 1. I fönstret hämta data markerar du **Databasen > Oracle-databas**
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. I dialogrutan **Oracle-databas** som visas, ange namnet på servern och välj **Anslut**. Om det krävs ett SID kan du ange det med formatet: *ServerName/SID*.
+2. I dialogrutan **Oracle-databas** som visas, ange namnet på servern och välj **Anslut**. Om det krävs ett SID, kan du ange det med formatet: *Servernamn/SID*, där SID är det unika namnet för databasen. Om formatet *Servernamn/SID* inte fungerar, försöker du med *Servernamn/tjänstnamn*, där tjänstnamn är det alias som används vid anslutning.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 3. Om du vill importera data med hjälp av en intern databasfråga anger du din fråga i **SQL-instruktionen** genom att expandera området **Avancerade alternativ** i dialogrutan **Oracle-databas**.

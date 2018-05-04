@@ -1,28 +1,28 @@
 ---
-title: "Registrering för Power BI för myndigheter i USA"
-description: "För USA. myndigheter i USA, lär dig hur du registrerar dig för tjänsten Power BI US Government"
+title: Registrering för Power BI för myndigheter i USA
+description: För USA. myndigheter i USA, lär dig hur du registrerar dig för tjänsten Power BI US Government
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/27/2017
+ms.date: 04/24/2017
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e4015d0de5c11a9726089a62825950dc0532205d
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: a52aaaffb5f66ba5596e788183ef52753f08c8bf
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -73,7 +73,7 @@ Om din organisation är en befintlig **Office Government Cloud**-kund men ni sak
 6. Tilldela användare till kontot.
    
    ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Logga in på **Power BI-tjänsten** för amerikanska myndigheter på [https://app.powerbigov.us](https://app.powerbigov.us)
+7. Logga in på **Power BI-tjänsten** för US Government-kunder på [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ## <a name="additional-signup-information"></a>Ytterligare inloggningsinformation
 Nedan visas ytterligare information för att registrera dig för **Power BI US Government** i olika licensmigrationsfall.
@@ -97,12 +97,7 @@ Gå till **Fakturering > Prenumerationer** och välj prenumerationen **Power BI 
 ### <a name="whitelisting-instructions"></a>Anvisningar för vitlistning
 *Vitlistning* är en process som utvecklingsteamet för Power BI använder för att flytta kunder från den kommersiella molnmiljön till en säker molnmiljö för myndigheter. Detta säkerställer att funktionerna i US Government Cloud fungerar som förväntat. Alla befintliga (eller nya) amerikanska myndigheter som är våra kunder som köper **Power BI**-tjänster för myndigheter för första gången *måste* utföra följande vitlistningsprocess. Processen måste göras innan installation eller migrering till US Government **Power BI**-tjänster. 
 
-För att *godkänna* din klient för myndighet måste du fylla i ett supportärende på följande länk. Observera att endast administratörer kan göra denna begäran:
-
-* [*Vitlistning*, supportbegäran online](https://powerbi.microsoft.com/clouds/)
-* Kontrollera att du inkluderar domänen som ska *vitlistas* och en e-post för Microsoft-representanten som arbetar med dig med processen.
-
-Processen för *vitlistning* tar cirka tre veckor, då teknikteamet för Power BI utför lämpliga ändringar för din klient så att den fungerar korrekt i molnet för amerikanska myndigheter.
+Om du vill få din klientorganisation *vitlistad* för US Government-molnet, kontaktar du Microsoft-kontoteamet för hjälp med vitlistning. Observera att endast administratörer kan göra denna begäran. Processen för *vitlistning* tar cirka tre veckor, då teknikteamet för Power BI utför lämpliga ändringar för din klient så att den fungerar korrekt i molnet för amerikanska myndigheter.
 
 Kunder som migrerar från **Kostnadsfria** Power BI-licenser till **Power BI US Government** (och per definition migrerar till de associerade **Pro**-licensfunktioner som beskrivs ovan i den här artikeln) kan påträffa problem som beskrivs i följande avsnitt i den här artikeln tills klienten har *vitlistats* av Power BI-utvecklingsteamet.
 

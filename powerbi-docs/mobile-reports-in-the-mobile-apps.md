@@ -1,6 +1,6 @@
 ---
 title: Utforska rapporter i Power BI-mobilappar
-description: 'Läs mer om att visa och interagera med rapporter i Power BI-mobilappar på din telefon eller surfplatta. Du skapar rapporter i Power BI-tjänsten eller Power BI Desktop och interagerar med dem i de mobila apparna. '
+description: Läs mer om att visa och interagera med rapporter i Power BI-mobilappar på din telefon eller surfplatta. Du skapar rapporter i Power BI-tjänsten eller Power BI Desktop och interagerar med dem i de mobila apparna.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: 6edd5a6e9606150d4b489a79cdb5ca57ac2f8cce
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: a7bd77ec65fd3897c6e9af9acd2a20a229565415
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -50,7 +50,7 @@ Power BI-rapporter lagras på olika ställen i mobilappen, beroende på var du f
   ![Telefonrapport i liggande läge](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Visa rapporter optimerade för telefoner
-Power BI-rapportskribenter kan skapa en rapportlayout som optimerats för telefoner. Rapportsidor som är optimerade för telefoner har ytterligare funktioner: till exempel kan du öka detaljnivån och sortera i visuella objekt i fokusläge och du kan komma åt de [filter som rapportförfattaren lagt till på rapportsidan](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Rapporten öppnas på din telefon filtrerad enligt de värden som filtreras i rapporten på webben, och med ett meddelande om att det finns aktiva filter på sidan. Du kan ändra filtren på din telefon.
+Power BI-rapportskribenter kan skapa en rapportlayout som optimerats för telefoner. Rapportsidor som optimerats för telefoner har ytterligare funktioner: till exempel kan du öka detaljnivån och sortera i visuella objekt och du kan komma åt [filter som rapportskaparen lagt till på rapportsidan](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Rapporten öppnas på din telefon filtrerad enligt de värden som filtreras i rapporten på webben, och med ett meddelande om att det finns aktiva filter på sidan. Du kan ändra filtren på din telefon.
 
 I en lista över rapporter, har en optimerad rapport en särskild ikon ![Telefonrapportikon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
@@ -64,7 +64,7 @@ När du visar den rapporten på en telefon, öppnas den i stående vy.
 
 Läs mer om [rapporter optimerade för telefonvy](mobile-apps-view-phone-report.md).
 
-## <a name="use-slicers-to-filter-a-report-page"></a>Använd utsnitt för att filtrera en rapportsida
+## <a name="use-slicers-to-filter-a-report"></a>Använd utsnitt för att filtrera en rapport
 När du skapar en rapport i Power BI Desktop eller Power BI-tjänsten bör du överväga att [lägga till utsnitt till en rapportsida](power-bi-visualization-slicers.md). Du och dina kollegor kan använda utsnitt för att filtrera sidan i en webbläsare och i mobila appar. När du visar rapporten på en telefon kan du se och använda utsnitt i liggande läge och på en sida som är optimerad för telefonens stående läge. Om du väljer ett värde i en utsnitt eller filter i webbläsaren, så väljs värdet även när du visar sidan i mobilappen. Ett meddelande om att det finns aktiva filter på sidan visas.  
 
 * När du väljer ett värde i ett utsnitt på rapportsidan, filtreras övrig visuell information på sidan.
@@ -73,7 +73,7 @@ När du skapar en rapport i Power BI Desktop eller Power BI-tjänsten bör du ö
   
   I den här bilden, filtrerar utsnittet stapeldiagrammet för att endast visa julivärden.
 
-## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Korsfiltrera och markera en Power BI-rapportsida
+## <a name="cross-filter-and-highlight-a-report"></a>Korsfiltrera och markera en rapport
 När du väljer ett värde i en visuell information så filtreras inte övrig visuell information. Den visar relaterade värden i övrig visuell information.
 
 * Knacka på ett värde i en visualisering.
@@ -88,8 +88,8 @@ När du väljer ett värde i en visuell information så filtreras inte övrig vi
    ![Sortera en visualisering](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * För att kasta om sorteringsordningen, trycker du på ellipsen (**...** ) igen och trycker sedan på samma fältnamn igen.
 
-## <a name="drill-down-and-up-in-a-visual-on-an-ipad-or-a-tablet"></a>Öka eller minska detaljnivån i visuell information på en iPad eller en surfplatta
-Om en rapportförfattare har lagt till den här funktionen i en visualisering, kan du öka detaljnivån för visuell information för att se värdena som utgör en del av den. Du kan [lägga till öka detaljnivån för en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjänsten. 
+## <a name="drill-down-on-an-ipad-or-a-tablet"></a>Gå in på detaljnivå på en iPad eller en surfplatta
+Om en rapportskapare har lagt till detaljnivåfunktionen i en visualisering, kan du öka detaljnivån för visuell information för att se de värden som utgör en del av den. Du kan [lägga till öka detaljnivån för en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjänsten. 
 
 > [!NOTE]
 > För tillfället fungerar det inte att öka detaljnivån för kartor på en iPad eller surfplatta.

@@ -1,6 +1,6 @@
 ---
 title: Power BI-rapportdatakällor i Power BI-rapportserver
-description: Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga.
+description: Power BI-rapporter (.pbix) kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga.
 services: powerbi
 documentationcenter: ''
 author: markingmyname
@@ -15,23 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/02/2018
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: bc490834b215af45df1063fd06b94ed9b735d852
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: a32ef2e1e85b252a2a1071cb95c80149486c2604
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
-Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
+# <a name="power-bi-report-pbix-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor (.pbix) i Power BI-rapportserver
+Power BI-rapporter kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
 
-Dessa datakällor är specifika för Power BI-rapporter som används i Power BI-rapportserver. Information om datakällor som stöds med sidnumrerade rapporter finns i [datakällor som stöds av Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+Dessa datakällor är specifika för Power BI-rapporter som används i Power BI-rapportserver. Information om datakällor som stöds med sidnumrerade rapporter (.rdl), finns i [Datakällor som stöds av Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 > [!IMPORTANT]
-> Alla datakällor i en Power BI Desktop-rapport måste stödjas för att konfigurera schemalagd uppdatering.
-> 
-> 
+> Alla datakällor i en Power BI Desktop-rapport måste stödja konfigurering av schemalagd uppdatering.
+>  
 
 ## <a name="list-of-supported-data-sources"></a>Lista med datakällor som stöds
 
@@ -216,7 +215,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för Dir
 
 
 ## <a name="next-steps"></a>Nästa steg
-Nu när du valt ut datakällan, kan du [skapa en rapport](quickstart-create-powerbi-report.md) med hjälp av data från datakällan.
+Nu när du har anslutit till din datakällan, [skapar du en Power BI-rapport](quickstart-create-powerbi-report.md) med hjälp av data från den datakällan.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

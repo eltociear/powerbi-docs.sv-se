@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: bb0800dc6a61efe1d7b331a6049460275b4412a3
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 344e6ecc31748d58f0803f95aed53badfa6be4f2
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor
 Du kan få en sömlös enkel inloggningsanslutning, vilket medför att Power BI-rapporter och -instrumentpaneler kan uppdateras från lokala data, genom att konfigurera din lokala datagateway med Kerberos. Den lokala datagatewayen genomför SSO (enkel inloggning) med hjälp av DirectQuery, som används för att ansluta till lokala datakällor.
@@ -64,19 +64,18 @@ Här finns mer information om de här stegen:
 
 
 > [!NOTE]
-> Du måste tillämpa följande SAP HANA-specifika konfigurationer för SAP för att aktivera enkel inloggning för SAP HANA:
-> 1. Kontrollera att SAP HANA-servern har den lägsta versionen som krävs, vilket beror på nivån för SAP Hana-serverplattformen:
-> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> Så här aktiverar du enkel inloggning för SAP HANA:
 >
-> 2. Installera SAP:s senaste HANA ODBC-drivrutin på gatewaydatorn.  Den lägsta möjliga versionen är HANA ODBC version 2.00.020.00 från augusti 2017.
+> - Kontrollera att SAP HANA-servern har den lägsta versionen som krävs, vilket beror på nivån för SAP Hana-serverplattformen:
+>     - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+>     - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+>     - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 >
-> Följande länkar till korrigeringar och uppgraderingar från SAP kan vara användbara. Observera att du måste logga in på följande resurser med ditt SAP Support-konto för att SAP ska kunna ändra eller uppdatera de här länkarna.
-> 
-> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386) 
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324) 
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> - Installera SAP:s senaste HANA ODBC-drivrutin på gatewaydatorn.  Den lägsta möjliga versionen är HANA ODBC version 2.00.020.00 från augusti 2017.
+>
+> Mer information om att installera och konfigurera enkel inloggning för SAP HANA med Kerberos, finns i avsnittet [Enkel inloggning med Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) i säkerhetsguiden för SAP HANA och länkarna från den sidan, särskilt SAP anteckning 1837331 – SÅ GÖR DU HANA DBSSO Kerberos/Active Directory]. 
+>
+>
 
 
 ## <a name="errors-from-an-insufficient-kerberos-configuration"></a>Fel från en otillräcklig Kerberos-konfiguration

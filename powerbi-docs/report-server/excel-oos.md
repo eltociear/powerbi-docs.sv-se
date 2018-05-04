@@ -1,39 +1,32 @@
 ---
-title: "Konfigurera rapportservern för att hantera Excel-arbetsböcker med hjälp av Office Online Server (OOS)"
-description: "Förutom att kunna se Power BI-rapporter i webbportalen kan företagsanvändarna nu göra detsamma med Excel-arbetsböcker i Power BI-rapportservern."
+title: Var värd för Excel-arbetsböcker med Office Online Server (OOS) – Power BI Report Server
+description: Förutom att kunna se Power BI-rapporter i webbportalen, kan Power BI-rapportserver nu vara värd för Excel-arbetsböcker med Office Online Server (OOS).
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/23/2017
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: a9d5c1b8da8935a535ed112030a5c2a40132f176
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: f2ff2b695ca548572294a4705235ae1c2b0046c5
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurera rapportservern för att hantera Excel-arbetsböcker med hjälp av Office Online Server (OOS)
-Förutom att kunna se Power BI-rapporter i webbportalen kan företagsanvändarna nu göra detsamma med Excel-arbetsböcker i Power BI-rapportservern, vilket ger dem en enda plats där de publicerar och ser sitt självbetjänade Microsoft BI-innehåll.
+Förutom att kunna se Power BI-rapporter i webbportalen, kan Power BI-rapportserver nu vara värd för Excel-arbetsböcker med [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Din rapportserver blir en enda plats för att publicera och visa Microsoft BI-innehåll för självbetjäning.
 
-> [!NOTE]
-> Det här är en förhandsgranskningsfunktion som ingår i förhandsversionen från augusti 2017. Mer information finns i [Nyheter i Power BI-rapportservern](whats-new.md).
-> 
-> 
-
-![Excel-rapporter som visas i rapportserverns webbportal.](media/excel-oos/excel-in-pbirs.png)
-
-Detta görs genom att använda [Office Online Server](https://technet.microsoft.com/library/jj219437\(v=office.16\).aspx) (OOS).
+![Excel-rapporter visas i rapportserverns webbportal](media/excel-oos/excel-in-pbirs.png)
 
 ## <a name="prepare-server-to-run-office-online-server"></a>Förbereda servern för att köra Office Online Server
 Utföra dessa procedurer på servern där du kör Office Online-Server. Den här servern måste vara Windows Server 2012 R2 eller Windows Server 2016. Windows Server 2016 kräver Office Online Server från april 2017 eller senare.
@@ -92,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parametrar**
 
-* **– InternalURL** är det fullständigt kvalificerade domännamnet (FQDN) på servern som kör Office Online Server, till exempel http://servername.contoso.com.
+* **–InternalURL** är det fullständigt kvalificerade domännamnet (FQDN) på servern som kör Office Online Server, till exempel http://servername.contoso.com.
 * **– ExternalURL** är ett FQDN som kan användas på Internet.
 * **– CertificateName** är det egna namnet för certifikatet.
 

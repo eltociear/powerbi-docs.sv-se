@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1660f129ef5c93cf5aed5a3a5eda3c835e1885c1
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 492eed949fd47b8f057bc67b127ba774b2218887
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -69,6 +69,10 @@ Konfigurera en rapport som du vill att den ska visas i bokmärket. När du har u
 
 När du har ett bokmärke kan du visa det genom att klicka på bokmärket i fönstret **Bokmärken**. 
 
+Du kan också välja om varje bokmärke ska tillämpa *data*-egenskaper, som filter och utsnitt, *visa*-egenskaper som aktuellt och dess synlighet och sidändringar som visar den sida som var synlig när bokmärket lades till. De här funktionerna är användbara när du använder bokmärken för att växla mellan visuella typer – då du förmodligen vill inaktivera dataegenskaperna så att filter inte återställs när användarna ändrar visuella typer. 
+
+För att göra dessa ändringar, väljer du ellipserna bredvid namnet på bokmärket, som visas i föregående bild och sedan markerar eller avmarkerar du bockmarkeringarna bredvid *Data*, *Visa* och andra kontroller. 
+
 ## <a name="arranging-bookmarks"></a>Ordna bokmärken
 När du skapar bokmärken kanske du lägger märke till att ordningen du skapade dem i inte nödvändigtvis är samma ordning som du vill visa dem. Inga problem, kan du enkelt ändra ordningen på bokmärken.
 
@@ -105,13 +109,13 @@ När ett bokmärke har lagts till sparas statusen för varje objekt även basera
 Det är viktigt att notera att **utsnitt** fortsätter att filtrera en rapportsida, oavsett om de är synliga. Du kan därför skapa många olika bokmärken med olika utsnittsinställningar så att en enstaka rapportsida ser helt annorlunda ut (och markerar olika insikter) i olika bokmärken.
 
 ## <a name="bookmarks-for-shapes-and-images"></a>Bokmärken för former och bilder
-Du kan också länka former och bilder till bokmärken. När du klickar på ett objekt med den här funktionen visas bokmärket som associeras med objektet. 
+Du kan också länka former och bilder till bokmärken. När du klickar på ett objekt med den här funktionen visas bokmärket som associeras med objektet. Det kan vara speciellt användbart när du arbetar med knapparna. Du kan lära dig mer genom att läsa artikeln om att [använda knappar i Power BI](desktop-buttons.md). 
 
-Om du vill tilldela ett objekt med ett bokmärke markerar du objektet och väljer sedan **Länk** från fönstret **Formatera form** som visas i följande bild.
+Om du vill tilldela ett bokmärke till ett objekt, expanderar du avsnittet **Åtgärd** från fönstret **Formatera form** som det visas i följande bild.
 
 ![Lägga till bokmärkeslänk till ett objekt](media/desktop-bookmarks/bookmarks_10.png)
 
-När du aktiverar skjutreglaget **Länk** till **På** kan du välja om objektet är en länk eller ett bokmärke. Om du väljer bokmärke kan sedan du välja vilka av dina bokmärken objektet är kopplat till.
+När du växlar skjutreglaget **Åtgärd** till **På**, kan du välja om objektet är en svart knapp, ett bokmärke eller ett Frågor och Svar-kommando. Om du väljer bokmärke kan sedan du välja vilka av dina bokmärken objektet är kopplat till.
 
 Det finns alla typer av intressanta saker du kan göra med ett objektlänkat bokmärke. Du kan skapa en visuell innehållsförteckning på rapportsidan eller kan ange olika vyer (till exempel visuella typer) av samma information genom att klicka på ett objekt.
 
@@ -138,9 +142,7 @@ Däremot, när **Spotlight** väljs från ellipsmenyn för det visuella objektet
 Om något av dessa lägen aktiveras när du har lagt till ett bokmärke blir läget (fokus eller spotlight) kvar i bokmärket.
 
 ## <a name="bookmarks-in-the-power-bi-service"></a>Bokmärken i Power BI-tjänsten
-När du publicerar en rapport i **Power BI-tjänsten** med minst ett bokmärke kan du visa och interagera med dessa bokmärken i **Power BI-tjänsten**. För varje rapport som du publicerar måste du ha minst ett bokmärke som skapas i rapporten innan du publicerar, så att funktionen bokmärket blir tillgängliga i **Power BI-tjänsten**.
-
-När bokmärken är tillgängliga i en rapport kan du välja **Visa > urvalsfönster** eller **Visa > Fönstret bokmärken** för att visa var och ett av dessa fönster.
+När du publicerar en rapport i **Power BI-tjänsten** med minst ett bokmärke kan du visa och interagera med dessa bokmärken i **Power BI-tjänsten**. När bokmärken är tillgängliga i en rapport kan du välja **Visa > urvalsfönster** eller **Visa > Fönstret bokmärken** för att visa var och ett av dessa fönster.
 
 ![Visa bokmärken och fönster för urval i Power BI-tjänsten](media/desktop-bookmarks/bookmarks_14.png)
 
@@ -151,11 +153,10 @@ Observera att du måste använda den grå namnlisten för att navigera bland bok
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Det finns några begränsningar och saker du bör tänka på för den här versionen av **bokmärken**.
 
-* Anpassad visuell information fungerar inte med bokmärken om de är *källan* för filtret. Om du använder anpassad visuell information för att filtrera element på sidan (till exempel ett chiclet-utsnitt) och återgår till sidan med ett bokmärke, filtreras sidan men anpassade visuella uppdateras inte för att visa hur sidan filtreras. 
-* Markering av mellan status för ett rapportfönster sparas *inte* när du skapar ett bokmärke. 
+* De flesta anpassade visuella objekt bör fungera väl med bokmärkning. Om du stöter på problem med bokmärkning och ett anpassat visuell objekt, kontaktar du den person som skapat det anpassade visuella objektet och ber dem att lägga till stöd för bokmärken till sina visuella objekt. 
 * Om du lägger till ett visuellt objekt på en rapportsida efter att du har skapat ett bokmärke kommer det visuella objektet att visas i sitt standardläge. Det innebär att om du lägger till ett utsnitt på en sida där du tidigare skapade bokmärken så fungerar utsnittet i standardtillståndet.
 * Flytta runt visuella objekt när ett bokmärke har skapats visas i bokmärket. 
-* Du *måste* ha minst ett bokmärke i din rapport när du publicerar den på **Power BI-tjänsten** för att bokmärken ska vara tillgängliga i tjänsten. Detta är ett krav för varje rapport som du publicerar.
+
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om liknande funktioner eller funktioner som interagerar med bokmärken finns i följande artiklar:
