@@ -1,15 +1,15 @@
 ---
-title: "Bädda in Power BI-innehåll i ett program för dina kunder"
-description: "Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med hjälp av Power BI-API:er för dina kunder."
+title: Bädda in Power BI-innehåll i ett program för dina kunder
+description: Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med hjälp av Power BI-API:er för dina kunder.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/11/2018
 ms.author: maghan
-ms.openlocfilehash: c6b9edb929934a80886874fe421f11cc7462dbd8
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 779ae9a6df285b58c83021f87ed593af9ec0b3fb
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application"></a>Bädda in en Power BI-instrumentpanel, panel eller rapport i ditt program
 Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med Power BI:s .NET SDK tillsammans med Power BI:s JavaScript API vid inbäddning för dina kunder. Detta är vanligtvis ISV-scenariot.
@@ -126,7 +126,7 @@ Report report = reports.Value.FirstOrDefault();
 En inbäddningstoken behöver skapas som kan användas från JavaScript-API:t. Inbäddningstoken gäller endast för det objekt du bäddar in. Det innebär att du när som helst när du bäddar in bit Power BI-innehåll måste skapa en ny inbäddningstoken för den. Mer information, inklusive vilken **accessLevel** som du ska använda, finns i [GenerateToken-API:t](https://msdn.microsoft.com/library/mt784614.aspx).
 
 > [!IMPORTANT]
-> Eftersom inbäddningstoken endast är avsedda för utvecklartestning är antalet inbäddningstoken ett Power BI-huvudkonto kan generera begränsat. En [kapacitet måste köpas](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddningsscenarier för produktion. Det finns ingen gräns för generering av inbäddningstoken när en kapacitet köps.
+> Eftersom inbäddningstoken endast är avsedda för utvecklartestning är antalet inbäddningstoken ett Power BI-huvudkonto kan generera begränsat. En [kapacitet måste köpas](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddningsscenarier för produktion. Det finns ingen gräns för generering av inbäddningstoken när en kapacitet köps. Gå till [Hämta tillgängliga funktioner](https://msdn.microsoft.com/en-us/library/mt846473.aspx) för att kontrollera hur många kostnadsfria inbäddningstokens som har använts.
 
 Ett exempel på detta finns i **Controllers\HomeController.cs** av [Inbäddning för ditt organisationsexempel](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 

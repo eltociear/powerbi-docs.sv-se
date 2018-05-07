@@ -1,28 +1,28 @@
 ---
-title: "Lösa problem när du startar Power BI Desktop"
-description: "Lösa problem när du startar Power BI Desktop"
+title: Lösa problem när du startar Power BI Desktop
+description: Lösa problem när du startar Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 43263afb63fa0350a240cae602f4a2acf8ef8edd
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 2014524b3209a67bd0f0aaa3d1ddf00042227c4d
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Lösa problem när Power BI Desktop inte startas
 I **Power BI Desktop** kan användare som har installerat och som kör tidigare versioner av den **lokala Power BI-datagatewayen** blockeras från att starta Power BI Desktop, på grund av administrativa principbegränsningar som den lokala Power BI-gatewayen har infört för namngivna pipes på den lokala datorn. 
@@ -39,10 +39,12 @@ Om du inte längre behöver den lokala Power BI-datagatewayen kan du avinstaller
 ### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>Lösning 3: Kör Power BI Desktop med administratörsprivilegier
 Du kan också starta Power BI Desktop som administratör, vilket även låter Power BI Desktop starta. Vi rekommenderar ändå att du installerar den senaste versionen av den lokala Power BI-datagatewayen, vilket beskrivs tidigare i den här artikeln.
 
+Det är viktigt att observera att Power BI Desktop är utformad som en flerprocessarkitektur och flera av de här processerna kommunicerar med hjälp av Windows-namngivna pipes. Det kan finnas andra processer som stör dessa namngivna pipes. Den vanligaste orsaken för sådana störningar är säkerhet, inklusive situationer där antivirusprogram eller brandväggar blockerar pipes eller omdirigerar trafik till en viss port. Om du startar Power BI Desktop med administratörsbehörigheter så kan det lösa det problemet. Om det inte möjligt att starta med administratörsbehörigheter, kontaktar du administratören för att avgöra vilka tillämpade säkerhetsregler som förhindrar namngivna pipes från att kommunicera som de ska samt för att vitlista Power BI Desktop och dess respektive delprocesser.
+
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Hjälp med andra problem när du startar Power BI Desktop
 Vi strävar efter att täcka så många problem med **Power BI Desktop** som möjligt. Vi tittar regelbundet på problem som kan påverka många kunder och inkluderar dem i våra artiklar.
 
-Om problemet som uppstår när du startar **Power BI Desktop** inte är associerat med den lokala datagatewayen eller tidigare lösningar inte fungerar kan du skicka en händelserapport till [Power BI-supporten](https://support.powerbi.com) (https://support.powerbi.com) för att identifiera och lösa problemet.
+Om problemet som uppstår när du startar **Power BI Desktop** inte är associerat med den lokala datagatewayen eller om de tidigare lösningarna inte fungerar, kan du skicka in en händelserapport till [Power BI-supporten](https://support.powerbi.com) (https://support.powerbi.com) för att identifiera och lösa problemet.
 
 För andra problem som kan uppstå i framtiden med **Power BI Desktop** (vi hoppas att inga eller ett fåtal uppstår) är det bra att aktivera spårning och samla in loggfiler för att bättre isolera och identifiera problemet. Om du vill aktivera spårning väljer du **Arkiv> Alternativ och inställningar> Alternativ** och välj sedan **Diagnostik**. Kontrollera sedan **Aktivera spårning** under *Diagnostikalternativ*. Vi förstår att **Power BI Desktop** måste köras för att ange detta alternativ, vilket är bättre för framtida problem som är associerade när du startar **Power BI Desktop**.
 
