@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08ae182e62fc370b66b2ef88b0c6b7c91a46eff1
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 5031e31f83925d17fb87f39e4610a53617b9fca3
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Lägga till en kolumn från ett exempel i Power BI Desktop
-Från och med april 2017-versionen av **Power BI Desktop** kan du lägga till nya datakolumner i modellen med **Query Editor**, genom att helt enkelt ange ett eller flera exempelvärden i den nya kolumnen. Du kan skapa ett nytt kolumnexempel från aktuellt urval eller genom att ange indata som baseras på alla (eller valda) kolumner i en viss tabell.
+Från och med april 2017-versionen av **Power BI Desktop** kan du lägga till nya datakolumner i modellen med **Query Editor**, genom att helt enkelt ange ett eller flera exempelvärden i den nya kolumnen. Du kan skapa ett nytt kolumnexempel från aktuellt urval eller ange indata som baseras på alla (eller valda) kolumner i en viss tabell.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
@@ -42,7 +42,7 @@ Skapa en ny kolumn från ett exempel genom att först starta **Query Editor**. D
 
 ![](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-I den här artikeln använder vi data från följande Wikipedia-artikel (det är en länk så du kan klicka på den för att hämta datan):
+Om du vill hämta data från en webbsida går du till fliken **Start**, klickar på **Hämta data > Webb** och klistrar sedan in webbadressen i dialogrutan som öppnas. Den här artikeln använder data från en Wikipedia-artikel. Du kan klicka på länken nedan för att hämta dessa data själv och följa med:
 
 * [**Lista med stater och territorier i USA**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
 
@@ -53,7 +53,7 @@ När **Query Editor** har startats och du har läst in vissa data, kan du börja
 ## <a name="the-add-column-from-examples-pane"></a>Fönstret Lägg till kolumn från exempel
 När du väljer att lägga till en ny kolumn från exempel, visas ett nytt fönster med kolumnerna i aktuell tabell (du kan behöva bläddra för att se alla). Nya **Kolumn1** visas också till höger, vilket är den kolumn som **Power BI Desktop** skapar baserat på dina exempel. Under den nya rubriken **Kolumn1** finns tomma celler där du kan skriva de exempel som Power BI använder för att skapa regler och transformeringar som matchar ditt exempel.
 
-Observera också att detta är ett **Tillämpat steg** i fönstret**Frågeinställningar**. Som alltid kommer **Query Editor** registrera dina transformeringssteg och tillämpa dem på frågan i ordning.
+Observera att detta är ett **Tillämpat steg** i fönstret**Frågeinställningar**. Som alltid kommer **Query Editor** registrera dina transformeringssteg och tillämpa dem på frågan i ordning.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
@@ -66,9 +66,9 @@ Detta fönster kallas **Lägg till kolumner från exempel** och består av fyra 
 
 ![](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-När du skriver exemplet i den nya kolumnen visar Power BI en förhandsgranskning av hur kolumnen den skapar kommer att visas, baserat på de transformeringar den hittar. Vi skrev exempelvis *Alabama* på den första raden, vilket motsvarar värdet *Alabama* i den första tabellkolumnen. Så snart vi trycker på *Retur* fyller Power BI i kolumnen baserat på det värdet.
+När du skriver exemplet i den nya kolumnen visar Power BI en förhandsgranskning av hur kolumnen den skapar kommer att se ut, baserat på de transformeringar den hittar. Om du exempelvis skriver *Alabama* på den första raden motsvarar det värdet *Alabama* i den första tabellkolumnen. Så snart du trycker på *Retur* fyller Power BI i kolumnen baserat på det värdet.
 
-Men sedan gick vi till raden med *Massachusetts[E]* och tog bort den sista delen *[E]* (eftersom vi inte ville ha den). Power BI upptäckte ändringen och använde exemplet för att skapa en transformering. Lägg märke till förklaringen av gjord transformering i det övre fönstret i mitten.
+Men tänk dig sedan att du går till raden som innehåller *Massachusetts[E]* och tar bort den sista delen *[E]* (eftersom du inte vill ha det längre). Power BI identifierar ändringen och använder exemplet för att skapa en transformering. Lägg märke till förklaringen av transformeringen i det övre fönstret i mitten.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
@@ -80,7 +80,7 @@ Vill du se hur det fungerar? I följande video visas hur funktionen används me
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
-Det finns många tillgängliga transformeringar när du använder **Lägg till kolumn från exempel**, men alla transformeringar ingår inte. I följande lista finns alla transformeringar som *stöds*.
+Det finns många tillgängliga transformeringar när du använder **Lägg till kolumn från exempel**, men alla transformeringar ingår inte. I följande lista finns alla transformeringar som stöds.
 
 * **Referens**
   
