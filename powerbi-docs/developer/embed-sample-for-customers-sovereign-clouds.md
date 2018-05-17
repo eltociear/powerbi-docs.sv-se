@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/28/2018
 ms.author: maghan
-ms.openlocfilehash: bef0748f1431a29c96d7aa23ab457683e247724a
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: 5d0d679a9b5d3bea494915dc981e155ad69eeac6
+ms.sourcegitcommit: 1c7780e0dfe0b6b8322e6fafdd0693177db455d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Bädda in en Power BI-instrumentpanel, panel eller rapport i ditt program för nationella moln
 Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med Power BI:s .NET SDK tillsammans med Power BI:s JavaScript API vid inbäddning för dina kunder. Detta är vanligtvis ISV-scenariot.
@@ -38,7 +38,7 @@ Power BI stöder också nationella (privata) moln. Varje nationellt moln har sin
 
 ![Inbäddad instrumentpanel](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett användarkonto kan du, beroende på vilken typ av sektor, [registrera dig för ett Power BI-konto för amerikanska myndigheter](../service-govus-signup.md) eller [Power BI för molnkonto i Tyskland](https://powerbi.microsoft.com/en-us/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
+För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett användarkonto kan du, beroende på vilken typ av sektor, [registrera dig för ett Power BI-konto för amerikanska myndigheter](../service-govus-signup.md) eller [Power BI för molnkonto i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
 
 > [!NOTE]
 > Vill du bädda in en instrumentpanel för din organisation istället? Se [Integrera en instrumentpanel i en app för din organisation](integrate-dashboard.md).
@@ -407,7 +407,7 @@ Ett programexempel av det här finns i [Inbäddning för ditt organisationsexemp
 
 * Det finns ett exempelprogram på GitHub som du kan granska. Ovanstående exempel baseras på det exemplet. Mer information finns i [Inbäddning för din organisation-exemplet](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 * Mer information om JavaScript API hittar du i [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-* Mer information om Power BI för moln i Tyskland hittar du i [Vanliga frågor och svar för Power BI för moln Tyskland](https://docs.microsoft.com/en-us/power-bi/service-govde-faq)
+* Mer information om Power BI för moln i Tyskland hittar du i [Vanliga frågor och svar för Power BI för moln Tyskland](https://docs.microsoft.com/power-bi/service-govde-faq)
 * [Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md)
 
 Begränsningar och överväganden

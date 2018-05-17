@@ -1,15 +1,15 @@
 ---
 title: Migrera en rapportserverinstallation
-description: "Läs hur du migrerar din befintliga SQL Server Reporting Services-instans till en instans av Power BI-rapportserver."
+description: Läs hur du migrerar din befintliga SQL Server Reporting Services-instans till en instans av Power BI-rapportserver.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/05/2017
 ms.author: maghan
-ms.openlocfilehash: 67fe876bb9de92cc7f4c0c140f7c016f01216cdd
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 9983956ccb33cc9c45fd1ac316fb74d07eb3acf5
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="migrate-a-report-server-installation"></a>Migrera en rapportserverinstallation
 Läs hur du migrerar din befintliga SQL Server Reporting Services-instans (SSRS) till en instans av Power BI-rapportserver.
@@ -107,7 +107,7 @@ Att migrera från en Power BI-rapportserver är samma process som att migrera fr
 
 ## <a name="next-steps"></a>Nästa steg
 [Handbok för administratör](admin-handbook-overview.md)  
-[Snabbstart: Installera Power BI-rapportserver](quickstart-install-report-server.md)  
+[Installera Power BI-rapportserver](install-report-server.md)  
 [Skriptet med rs.exe-verktyget och webbtjänsten](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

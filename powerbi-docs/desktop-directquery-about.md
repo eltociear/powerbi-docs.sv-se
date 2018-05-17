@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 89dae54ed1faaa868ca022360480540de9dbe295
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: bad0a8cb7f0f6eab7414d06ee5545e9499ccdc95
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan antingen *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller så kan du ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner, däribland följande avsnitt:
@@ -146,7 +146,7 @@ När du använder **DirectQuery** kan många av dessa modellberikningar fortfara
 * **Ingen inbyggd datumhierarki:** När du importerar data får varje datum/datetime-kolumn som standard en tillgänglig inbyggd datumhierarki. Om du t.ex. importerar en tabell med försäljningsorder, som innehåller kolumnen OrderDate, och sedan använder OrderDate i ett visuellt objekt, så kan du välja lämplig nivå (år, månad, dag) att använda. Denna inbyggda datumhierarki är inte tillgänglig när du använder DirectQuery-läge. Observera dock att om det finns en tillgänglig datumtabell i den underliggande källan (som är vanligt i många datalager), så kan sedan DAX-tidsinformationsfunktionerna användas som vanligt.
 * **Begränsningar i beräknade kolumner:** Beräknade kolumner är begränsade till att bara kunna hänvisa till värden på andra kolumner i samma tabell, utan att några aggregeringsfunktioner används. De tillåtna DAX-skalärfunktionerna (som t.ex. LEFT()) begränsas dessutom till dem som bara kan skickas till den underliggande källan, och varierar därför beroende på källans exakta funktioner. Funktioner som inte stöds listas inte vid automatisk komplettering när du redigerar DAX för en beräknad kolumn, och de skulle resultera i ett fel om de användes.
 * **Inget stöd för överordnade-underordnade DAX-funktioner:** I DirectQuery-modellen går det inte att de DAX-PATH()-funktioner, som normalt hanterar strukturer med överordnad-undererordnad (som i t.ex. kontoplaner eller organisationshierarkier).
-* **Måttbegränsningar (standard):** Som standard är de DAX-funktioner och -uttryck som kan användas i mått begränsade. Återigen så begränsar automatisk komplettering de funktioner som listas, och ett fel inträffar om en ogiltig funktion eller uttryck används. Skälet är helt enkelt att säkerställa att åtgärderna som standard är begränsade till enkla åtgärder som på egen hand sannolikt inte kan orsaka några prestandaproblem. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **DirectQuery**, därefter alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
+* **Måttbegränsningar (standard):** Som standard är de DAX-funktioner och -uttryck som kan användas i mått begränsade. Återigen så begränsar automatisk komplettering de funktioner som listas, och ett fel inträffar om en ogiltig funktion eller uttryck används. Skälet är helt enkelt att säkerställa att åtgärderna som standard är begränsade till enkla åtgärder som på egen hand sannolikt inte kan orsaka några prestandaproblem. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **DirectQuery**, följt av alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
   
   * Exempel:
     
@@ -169,7 +169,7 @@ När du använder **DirectQuery** kan många av dessa modellberikningar fortfara
 ### <a name="reporting-limitations"></a>Rapporteringsbegränsningar
 Nästan alla rapporteringsfunktioner stöds för DirectQuery-modeller. Så länge som den underliggande källan erbjuder en lämplig prestandanivå kan samma uppsättning visualiseringar användas. Det finns dock några viktiga begränsningar i några av de funktioner som erbjuds i **Power BI-tjänsten** efter det att en rapport har publicerats, så som beskrivs i följande punkter:
 
-* **Quick Insights stöds inte:**Power BI Quick Insights söker igenom olika delmängder av din datauppsättning och tillämpar samtidigt en uppsättning avancerade algoritmer för att identifiera potentiellt intressanta insikter. På grund av de höga prestandakraven är den här funktionen tillgänglig för datauppsättningar som använder DirectQuery.
+* **Quick Insights stöds inte:** Power BI Quick Insights söker igenom olika delmängder av din datauppsättning och tillämpar samtidigt en uppsättning avancerade algoritmer för att identifiera potentiellt intressanta insikter. På grund av de höga prestandakraven är den här funktionen tillgänglig för datauppsättningar som använder DirectQuery.
 * **Frågor och svar stöds inte:** Med frågor och svar i Power BI kan du utforska dina data med hjälp av intuitiva, naturliga språkfunktioner och få svar i form av tabeller och diagram. Funktionen stöds för närvarande dock inte för datauppsättningar som använder DirectQuery.
 * **Använda Utforska i Excel resulterar sannolikt i sämre prestanda:** Det är möjligt att utforska dina data genom att använda funktionen Utforska i Excel för en datauppsättning. Detta gör det möjligt att skapa Pivot-tabeller och Pivot-diagram i Excel. Även om den här funktionen stöds för datauppsättningar som använder DirectQuery, så prestanda vanligtvis långsammare jämfört med om du skapar visuella objekt i Power BI. Därför, om det är viktigt för dig att använda Excel i dina scenarier, bör du ta detta i beaktande i ditt beslut att använda DirectQuery.
 

@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 4a96582eb8864cd41b5b307d05be890fc3bbff34
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 611a8cd1f2ff3da16d700f8d2b9f15787dda8475
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 Lär dig hur du kan hantera Power BI Premium- och Power BI Embedded-kapaciteter som tillhandahåller dedikerade resurser för ditt innehåll.
@@ -55,8 +55,8 @@ När du köper Power BI Premium SKU:er får din klient motsvarande antal v-kärn
 ## <a name="capacity-admins"></a>Kapacitetsadministratörer
 > [!NOTE]
 > Kapacitetsadministratörer för Power BI Embedded-kapacitet definieras i Microsoft Azure Portal.
-> 
-> 
+>
+>
 
 När du tilldelats som kapacitetsadministratör för en kapacitet, har du full kontroll över den aktuella kapaciteten och dess administrativa funktioner. Från Power BI-administratörsportalen kan du lägga till fler kapacitetsadministratörer (endast Power BI Premium) eller ge användare behörighet för kapacitetstilldelning. Du kan masstilldela arbetsytor till kapacitet och visa användningsstatistik för en kapacitet.
 
@@ -81,14 +81,14 @@ Om du har tillgängliga v-kärnor konfigurerar du din nya kapacitet genom att g�
 1. Välj **Konfigurera ny kapacitet**.
 2. Ge din kapacitet ett **namn**.
 3. Definiera vem kapacitetsadministratören är för den här kapaciteten.
-   
+
     Kapacitetsadministratörer behöver inte vara en Power BI-administratör eller en global Office 365-administratör. Mer information finns i [Power BI Premium capacity admins (Kapacitetsadministratörer för Power BI Premium)](#capacity-admins)
 4. Välj storleken på din kapacitet. Tillgängliga alternativ är beroende av hur många tillgängliga v-kärnor du har. Du kan inte välja ett alternativ som är större än vad du har tillgängligt.
-   
+
     ![Tillgängliga storlekar för Premium-kapacitet](media/service-admin-premium-manage/premium-capacity-size.png)
 5. Välj **Konfigurera**.
 
-![Konfigurera en ny kapacitet](media/service-admin-premium-manage/set-up-capacity.png)
+    ![Konfigurera en ny kapacitet](media/service-admin-premium-manage/set-up-capacity.png)
 
 Kapacitetsadministratörer, samt Power BI-administratörer och globala Office 365-administratörer, kan därefter se kapaciteten i listan i administratörsportalen.
 
@@ -103,15 +103,15 @@ På skärmen för Premium-kapacitetshantering kan du välja **kugghjulsikonen (i
 
 > [!NOTE]
 > Kapacitetsinställningarna för Power BI Embedded hanteras i Microsoft Azure Portal.
-> 
-> 
+>
+>
 
 ### <a name="change-capacity-size-power-bi-premium"></a>Ändra kapacitetsstorlek (Power BI Premium)
 Power BI-administratörer och globala Office 365-administratörer kan ändra storleken på Power BI Premium-kapaciteten genom att välja **Ändra kapacitetsstorlek**. Det här alternativet är inte tillgängligt för kapacitetsadministratörer som inte är Power BI-administratör eller global Office 365-administratör.
 
 ![Ändra Power BI Premium-kapacitetsstorlek](media/service-admin-premium-manage/change-capacity-size.png)
 
-På skärmen **Ändra kapacitetsstorlek** kan du uppgradera eller nedgradera storleken på din kapacitet om du har de tillgängliga resurserna. Administratörer kan skapa, ändra storlek på och ta bort noder, så länge som de har det nödvändiga antalet v-kärnor. 
+På skärmen **Ändra kapacitetsstorlek** kan du uppgradera eller nedgradera storleken på din kapacitet om du har de tillgängliga resurserna. Administratörer kan skapa, ändra storlek på och ta bort noder, så länge som de har det nödvändiga antalet v-kärnor.
 
 P SKU:er kan inte nedklassificeras till EM SKU:er. Du kan hovra över inaktiverade alternativ för en förklaring.
 
@@ -129,31 +129,41 @@ Du kan tilldela ytterligare **kapacitetsadministratörer** för Power BI Premium
 
 > [!NOTE]
 > Kapacitetsadministratörer för Power BI Embedded-kapacitet definieras i Microsoft Azure Portal.
-> 
-> 
+>
+>
 
 ![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
 ## <a name="usage-measurements-power-bi-premium"></a>Användning av mätningar (Power BI Premium)
-För varje kapacitet kan du mäta användningen av processor, minne och Direct Query. Varje KPI har tre indikationer: **bra (grönt)**, **på gränsen (gult)** och **kritiskt (rött)**. Vi rekommenderar att du övervakar de här måtten för att säkerställa att användarna får bra prestanda vid användning av Premium-innehåll.
+För varje kapacitet kan du se användningsstatistik för processor, minnesanvändning, minnesförslöing och Direct Query. Vi rekommenderar att du håller ett öga på dessa värden så att du är säker på att användarna får bra prestanda från din kapacitet:
 
-**Användningen av Power BI Embedded-kapaciteten övervakas i Azure Portal.**
+![Användning de senaste sju dagarna](media/service-admin-premium-manage/premium-dashboard-tiles.png)
 
-![](media/service-admin-premium-manage/usage-metrics-critical.png "Mått för kapacitetsanvändning – kritiska")
+> [!NOTE]
+> Användningen av Power BI Embedded-kapaciteten övervakas i Azure Portal.
 
 | Mått | Beskrivning |
 | --- | --- |
-| Processor |Processoranvändningen för dina kärnor. |
-| Minne |Representerar minnesbelastningen på dina serverkärnor. Mer specifikt är detta ett mått på hur ofta modellerna avlägsnas från minnet på grund av minnesbelastning vid användning av flera modeller. |
-| DQ/s |* Vi begränsar det totala antalet DirectQuery- och realtidsanslutningsfrågor per sekund.<br/>* Gränserna är 30/s för P1, 60/s för P2 och 120/s för P3.<br/>* DirectQuery- och realtidsanslutningsfrågor räknas som likvärdiga för ovanstående begränsning. Om du till exempel har 15 DirectQueries och 15 realtidsanslutningar på en sekund, når du begränsningen.<br/>* Detta gäller lika för både lokala anslutningar och molnanslutningar. |
+| Processor |Antalet gånger processorn överskridit 80 % användning. |
+| Minnesförslöing |Representerar minnesbelastningen på dina serverkärnor. Mer specifikt är detta ett mått på hur många gånger datauppsättningar avlägsnas från minnet på grund av minnesbelastning från användningen av flera datauppsättningar. |
+| Minnesanvändning |Genomsnittlig minnesanvändning, representerat i gigabyte (GB). |
+| DQ/s | Antalet gånger som Direct Query och Live-anslutningar överskridit 80 % av gränsvärdet. <br> <br> * Vi begränsar det totala antalet DirectQuery- och realtidsanslutningsfrågor per sekund.<br><br>* Gränserna är 30/s för P1, 60/s för P2 och 120/s för P3.<br><br> * Antalet frågor för Direct Query och Live-anslutningar räknas in mot ovanstående begränsning. Om du till exempel har 15 DirectQueries och 15 realtidsanslutningar på en sekund, når du begränsningen.<br/><br>* Detta gäller lika för både lokala anslutningar och molnanslutningar. |
 
-När dessa mått är på gränsen/kritiska, kan användarna se en försämring av prestandan för rapporter och uppdatering, särskilt under tider med hög belastning.
+Måtten återspeglar användningen under den senaste veckan.  Om du vill visa en mer detaljerad vy över måtten kan du göra det genom att klicka på någon av sammanfattningspanelerna.  När du gör det öppnas detaljerade diagram för varje mått för din Premium-kapacitet.  Dessa diagram visar timbaserade sammanfattningar för den senaste veckan och kan hjälpa dig att isolera tidpunkter med specifika prestandarelaterade händelser i din Premium-kapacitet.  
 
-Måtten återspeglar användningen under den gångna veckan och är utformade för att räkna antalet gånger då kapaciteten överbelastas och därmed tillhandahåller mindre än optimala prestanda för dina användare.
+![Detaljerat användningsdiagram – processor](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
 
-Varje förekomst av *belastning över 80 %* ska betraktas som ett potentiellt fall av försämrade prestanda. Allt för många fall är en god indikator på betydande prestandaproblem för användarna.
+![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
+
+
+![Detaljerat användningsdiagram – minnesstorlek](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
+
+
+![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
+
+Du kan också exportera underliggande data för valfria mätvärdena till en CSV-fil.  Den här exporten ger detaljerad information i 3-minutersintervall för varje dag den senaste veckan.
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Tilldela en arbetsyta till en kapacitet
 Det finns några olika metoder för att tilldela en arbetsyta till en kapacitet.
@@ -165,7 +175,7 @@ Kapacitetsadministratörer, tillsammans med Power BI-administratörer och global
 
 1. Välj **Tilldela arbetsytor**. Detta visas på flera platser och alla förekomster utför samma uppgift.
 2. Välj antingen **The entire organization's workspaces (Hela organisationens arbetsytor)** eller **Specific workspaces by user (Specifika arbetsytor per användare)**.
-   
+
    | Val | Beskrivning |
    | --- | --- |
    | **The entire organization's workspaces (Hela organisationens arbetsytor)** |Genom att tilldela hela organisationens arbetsytor till Premium-kapacitet, tilldelas alla app-arbetsytor och Mina arbetsytor i din organisation till den här Premium-kapaciteten. Dessutom kommer alla nuvarande och framtida användare ha behörigheten att omtilldela individuella arbetsytorna till den här kapaciteten. |
@@ -180,23 +190,23 @@ Du kan också tilldela en app-arbetsyta till en Premium-kapacitet från arbetsyt
 Du måste ha administratörsbehörighet för arbetsytan och behörighet för kapacitetstilldelning för kapaciteten om du vill flytta en arbetsyta till en kapacitet. Observera att arbetsyteadministratörer alltid kan ta bort en arbetsyta från Premium-kapacitet.
 
 1. Redigera en app-arbetsyta genom att välja **ellipsen (...)**  och sedan **Redigera arbetsyta**.
-   
+
     ![Redigera arbetsyta från ellips-snabbmenyn](media/service-admin-premium-manage/edit-app-workspace.png)
 2. I **Redigera arbetsyta**, expanderar du **Avancerat**.
 3. Om du har fått behörighet för kapacitetstilldelning för någon kapacitet, får du alternativet att aktivera **Premium** för den här arbetsytan.
 4. Välj den kapacitet som du vill tilldela den här app-arbetsytan.
-   
+
     ![Listruta för val av kapacitet](media/service-admin-premium-manage/app-workspace-advanced.png)
 5. Välj **Spara**.
 
 När du har sparat flyttas arbetsytan och allt dess innehåll till Premium-kapacitet utan upplevelseavbrott för slutanvändarna.
 
 ## <a name="what-premium-looks-like-for-users"></a>Hur Premium ser ut för användare
-I de flesta fall behöver användarna inte ens veta om att de befinner sig i Premium-kapacitet. Deras instrumentpaneler och rapporter bara fungerar. Som en visuell indikation visas en diamantikon bredvid arbetsytor som har Premium-kapacitet. 
+I de flesta fall behöver användarna inte ens veta om att de befinner sig i Premium-kapacitet. Deras instrumentpaneler och rapporter bara fungerar. Som en visuell indikation visas en diamantikon bredvid arbetsytor som har Premium-kapacitet.
 
 ![Diamantikon som visar att arbetsytan backas upp av Premium-kapacitet](media/service-admin-premium-manage/premium-workspace.png)
 
-## <a name="power-bi-report-server-product-key"></a>Produktnyckel för Power BI-rapportservern
+## <a name="power-bi-report-server-product-key"></a>Produktnyckel för Power BI-rapportserver
 På fliken **Kapacitetsinställningar** i Power BI-administratörsportalen får du åtkomst till din produktnyckel för Power BI-rapportservern. Den är endast tillgängligt för globala administratörer eller användare som har tilldelats rollen Power BI-tjänstadministratör och om du har köpt en Power BI Premium-SKU.
 
 ![Power BI-rapportserverns nyckel i kapacitetsinställningarna](media/service-admin-premium-manage/pbirs-product-key.png)
@@ -211,4 +221,3 @@ Mer information finns i [Installera Power BI-rapportservern](report-server/insta
 Dela publicerade appar med fria användare när du tilldelar arbetsytan till en Premium-kapacitet. Mer information finns i [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md).
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

@@ -21,7 +21,7 @@ Gör följande för att definiera säkerhetsroller.
 7. Ange DAX-uttrycken. Uttrycket måste returnera sant eller falskt. Exempelvis: [Entity ID] = ”Value”.
    
    > [!NOTE]
-   > Du kan använda *username()* i detta uttryck. Observera att *username()* har formatet *DOMÄN\användarnamn* i Power BI Desktop. I Power BI-tjänsten har den samma format som användarens UPN. Du kan också använda *userprincipalname()*, vilket alltid returnerar användaren i samma format som dess huvudnamn.
+   > Du kan använda *username()* i detta uttryck. Observera att *username()* har formatet *DOMÄN\användarnamn* i Power BI Desktop. I Power BI-tjänsten har den samma format som användarens UPN. Du kan även använda *userprincipalname()*, vilket alltid returnerar användaren i samma format som dess huvudnamn.
    > 
    > 
    

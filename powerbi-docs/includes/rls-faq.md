@@ -1,6 +1,6 @@
 ## <a name="faq"></a>Vanliga frågor och svar
-**Fråga:** Vad händer om jag tidigare har skapat roller/regler för en datauppsättning i Power BI-tjänsten? Fungerar de fortfarande om jag inte gör någonting?  
-**Svar:** Nej. Visuella objekt kommer inte att återges korrekt. Du måste återskapa rollerna/reglerna i Power BI Desktop och sedan publicera till Power BI-tjänsten.
+**Fråga:** Vad händer om jag tidigare har skapat roller och regler för en datauppsättning i Power BI-tjänsten? Fungerar de fortfarande om jag inte gör någonting?  
+**Svar:** Nej. Visuella objekt kommer inte att återges korrekt. Du måste återskapa rollerna och reglerna i Power BI Desktop och sedan publicera till Power BI-tjänsten.
 
 **Fråga:** Kan jag skapa rollerna för Analysis Services-datakällor?  
 **Svar:** Du kan göra det om du har importerat datan till Power BI Desktop. Om du använder en live-anslutning kan du inte konfigurera RLS i Power BI-tjänsten. Detta definieras i Analysis Services-modellen lokalt.

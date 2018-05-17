@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a7f877512d5b0f897fb98d2db205d1418d25c71a
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 992282438ceac88dce759b60dc26f0767d0b1f86
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Använd snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar
 Du kan använda **snabbmått** när du snabbt och enkelt vill utföra vanliga och kraftfulla beräkningar. Ett **snabbmått** kör en uppsättning DAX-kommandon i bakgrunden (du behöver inte skriva DAX – det är klart) som bygger på indata som du anger i en dialogruta. Sedan presenteras resultatet i rapporten. Du kan bästa är att du kan se de DAX-kommandon som körs av snabb måttet och komma igång med eller utöka din egen DAX kunskap.
@@ -43,8 +43,6 @@ Du måste starta om **Power BI Desktop** när du har gjort valet.
 För att **snabbmått**, högerklicka på ett fält (alla fält) i brunnen **Fält** i **Power BI Desktop** och välj **snabbmått** från menyn som visas.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
-
-Modellering måste finnas på den datauppsättning som för närvarande är inlästa för att **snabbåtgärder** ska vara tillgängliga. Därför visas inte live-anslutningar (till exempel en anslutning till en datamängd för Power BI-tjänsten) i menyn **snabbmått** objektet när du högerklickar på listan **Fält**, med undantag för SSAS live-anslutningar. 
 
 När du använder SQL Server Analysis Services (SSAS) live-anslutningar är vissa **snabbmått** tillgängliga. **Power BI Desktop** visar endast mängden av **snabbmått** som stöds för versionen av SSAS som du ansluter till. Om du är ansluten till en SSAS live-datakälla och du inte ser vissa **snabbmått** i listan beror det på att den SSAS-version som du är ansluten till inte stöder det DAX-mått som används för att implementera **snabbmåttet**.
 
@@ -141,9 +139,10 @@ När måttet är perfekt kan du byta namn efter behov med samma högerklicksmeny
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Det finns några begränsningar och saker du bör tänka på.
 
-* **Snabbmått** är endast tillgängliga om du kan ändra modellen, vilket inte är fallet när du arbetar med DirectQuery eller de flesta live-anslutningar (SSAS live-anslutningar stöds, som tidigare förklarats).
+* **Snabbmått** är endast tillgängliga om du kan ändra modellen, vilket inte är fallet när du arbetar med vissa live-anslutningar (tabellbaserade live-anslutningar för SSAS stöds, som vi tidigare diskuterat).
 * Måttet som har lagts till i brunnen **Fält** kan användas med alla visuella objekt i rapporten.
 * Du kan se DAX-uttryck som är associerade med ett **snabbmått** genom att välja det skapade måttet i brunnen **Fält**. Titta sedan på formeln i **formelfältet**.
+* Du kan inte skapa snabbmått för tidsinformation när du arbetar i DirectQuery-läge. DAX-funktionerna som används i dessa snabbmått påverkar prestanda när de översätts till T-SQL-uttryck som skickas till datakällan.
 
 > [!WARNING]
 > Snabbmått skapar för närvarande *endast* DAX-uttryck med kommatecken för argumentavgränsare. Om din version av **Power BI Desktop** är lokaliserat till ett språk som använder kommatecken som decimalavgränsare kommer snabbmått inte att fungera korrekt.
@@ -151,7 +150,7 @@ Det finns några begränsningar och saker du bör tänka på.
 > 
 
 ### <a name="time-intelligence-and-quick-measures"></a>Tidsinformation och snabbmått
-Från och med uppdateringen i oktober 2017 av **Power BI Desktop** kan du använda dina egna anpassade datum-tabeller med tidsinformation-**snabbåtgärder**. Om datamodellen har en anpassad datumtabell kan du använda den primära datumkolumnen i tabellen för snabbmått för tidsinformation. Du *måste* se till att den primära kolumnen i tabellen har markerats som en datumtabell när modellen har skapats, enligt beskrivningen [i den här artikeln](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular).
+Från och med uppdateringen i oktober 2017 av **Power BI Desktop** kan du använda dina egna anpassade datum-tabeller med tidsinformation-**snabbåtgärder**. Om du använder en extern tabellmodell kontrollerar du att den primära kolumnen i tabellen markerades som en datumtabell när modellen skapades. Mer information om detta finns i [den här artikeln](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Om du importerar en egen datumtabell är det viktigt att du markerar den som en datumtabell enligt anvisningarna i [den här artikeln](https://docs.microsoft.com/power-bi/desktop-date-tables)
 
 ### <a name="additional-information-and-examples"></a>Ytterligare information och exempel
 Vi förväntar oss att behöva tillhandahålla exempel och vägledning för varje beräkning i **snabbmått** beräkningar, så det är värt att återkomma för uppdateringar om den fokuserade artikeln.

@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d321d70fe201af500feb35ef4e5ea1df6cc558f0
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 2f5ca353d26b83a8c8cce5356724b351cb9d1621
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Felsöka Power BI Gateway – Personal
 Nedan går vi igenom några vanliga problem som kan uppstå när du använder Power BI Gateway – Personal.
@@ -76,11 +76,11 @@ Du kan få detta fel i inställningarna för \<datauppsättningen\> om du har en
 
 **Fel: [Det går inte att kombinera data] &lt;frågedel&gt;/&lt;... &gt; / &lt;... &gt; ansluter till datakällor som har sekretessnivåer som inte kan användas tillsammans. Återskapa den här datakombinationen.**
 
-**Lösning**: Det här felet beror på sekretessbegränsningarna och de typer av datakällor som du använder. [Läs mer](refresh-enable-fast-combine.md)
+**Lösning**: Det här felet beror på sekretessbegränsningarna och de typer av datakällor som du använder.
 
 **Fel: Fel i datakälla: Det går inte att konvertera värdet ”\[Tabell\]” till typen Tabell.**
 
-**Lösning**: Det här felet beror på sekretessbegränsningarna och de typer av datakällor som du använder. [Läs mer](refresh-enable-fast-combine.md)
+**Lösning**: Det här felet beror på sekretessbegränsningarna och de typer av datakällor som du använder.
 
 **Fel: Otillräckligt med utrymme för den här raden.**
 

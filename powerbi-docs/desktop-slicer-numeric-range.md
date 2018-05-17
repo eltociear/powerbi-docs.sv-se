@@ -15,28 +15,28 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/02/2018
+ms.date: 05/07/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f9ef31815f82775fd228f170073ee576c299ed45
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 460221ed9cf35b4c5db9509085a819519202d4a3
+ms.sourcegitcommit: 50016425005d2e929c8c606c2d0d393342e05d39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Använd numeriska intervallutsnitt i Power BI Desktop
 Med **numeriska intervallutsnitt** kan du använda alla typer av filter på en numerisk kolumn i datamodellen. Du kan välja att filtrera **mellan** siffror som är **mindre än eller lika** med ett tal eller **större än eller lika** med ett tal. Detta kan låta enkelt men det är ett kraftfullt sätt att filtrera dina data.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_2.png)
+![Visuellt objekt med numeriskt intervallutsnitt](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
 ## <a name="using-the-numeric-range-slicer"></a>Använda numeriskt intervallutsnitt
-Du kan använda det numeriska intervallutsnittet precis som andra utsnitt. Skapa ett **utsnitt** för rapporten och välj sedan ett numeriskt värde för värdet **Fält**. I följande bild har *Enhetspris* markerats.
+Du kan använda det numeriska intervallutsnittet precis som andra utsnitt. Skapa ett **utsnitt** för rapporten och välj sedan ett numeriskt värde för värdet **Fält**. I följande bild har fältet *LineTotal* markerats.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_3.png)
+![Skapa ett numeriskt intervallutsnitt](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
-Välj cirkumflex i det övre högra hörnet på **utsnittet numeriskt intervall** för att visa en meny.
+Välj nedåtpilslänken i det övre högra hörnet på det **numeriska intervallutsnittet** för att visa en meny.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_4.png)
+![Meny för numeriskt intervallutsnitt](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
 
 För det numeriska intervallet kan du välja följande tre alternativ:
 
@@ -44,29 +44,27 @@ För det numeriska intervallet kan du välja följande tre alternativ:
 * Mindre än eller lika med
 * Större än eller lika med
 
-När du väljer **Mellan** på menyn visas ett skjutreglage för att filtrera numeriska värden som faller mellan dessa siffror. Förutom att använda skjutreglaget kan du klicka på någon ruta och skriva in värdena. Detta är praktiskt när du vill använda specifika heltal men skjutreglagets granularitet gör det svårt att identifiera ett exakt värde.
+När du väljer **Mellan** på menyn visas ett skjutreglage för att filtrera numeriska värden som faller mellan dessa siffror. Förutom att använda skjutreglaget kan du klicka på någon ruta och skriva in värdena. Det här är praktiskt när du vill använda specifika tal men skjutreglagets kornighet gör det svårt att identifiera ett exakt värde.
 
-I följande bild, filtreras rapportsidan för *enhetspris* i intervallet 500 till 1 500.
+I följande bild filtreras rapportsidan för *LineTotal* i intervallet 2 500,00 till 6 000,00.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_5.png)
+![Numeriskt intervallutsnitt med Mellan](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
 
-När vi väljer **mindre än eller lika med** försvinner den vänstra (lägre värde) referensen för skjutreglaget och vi kan bara justera den övre gränsen för skjutreglaget. I följande bild ställer vi in skjutreglaget på 497,17.
+När vi väljer **mindre än eller lika med** försvinner den vänstra (lägre värde) referensen för skjutreglaget och vi kan bara justera den övre gränsen för skjutreglaget. I följande bild ställer vi in max för skjutreglaget på 5928,19.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_6.png)
+![Numeriskt intervallutsnitt med Mindre än](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-4-less-than.png)
 
-Till sist väljer vi **Större än eller lika med** så att den högra (större) referensen försvinner och vi kan justera det lägre värdet som på följande bild. Nu visas enbart objekt med ett *enhetspris* som är större än eller lika med 750,56 i den visuella informationen på sidan.
+Till sist väljer vi **Större än eller lika med** så att den högra (större) referensen försvinner och vi kan justera det lägre värdet som på följande bild. Nu visas enbart objekt med ett *LineTotal* som är större än eller lika med 4902,99 i den visuella informationen på sidan.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_7.png)
+![Numeriskt intervallutsnitt med Större än](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
 
-## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer-preview"></a>Fäst till heltal med utsnitt med numeriska intervall (förhandsgranskning)
+## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fäst till heltal med utsnitt med numeriska intervall
 
-Från och med lanseringen av **Power BI Desktop** i februari 2018 fixeras dina numeriska intervallutsnitt till heltal. Detta gör att ditt utsnitt korrekt justeras som heltal. Fixering till heltal gäller inte för decimalfilter.
+Ett numeriskt intervallutsnitt fästs till heltal såvida det inte är ett decimalintervall. Detta gör att ditt utsnitt korrekt justeras som heltal. 
 
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-Följande begränsningar och överväganden kan användas för utsnittet **numeriskt intervall**
+Följande begränsningar och överväganden kan användas för utsnittet **numeriskt intervall**:
 
 * Utsnittet **numeriska intervall** filtrerar för närvarande varje underliggande rad i data, inte vilket aggregerat värde som helst. Till exempel, om fältet *Beloppet* används, filtreras varje transaktion som bygger på *Säljbelopp*, och inte summan av *Säljbelopp* för varje datapunkt i det visuella objektet.
-* Det fungerar för närvarande inte med mått
-* För närvarande är utsnittet **numeriska intervall** endast tillgängligt i **Power BI Desktop**. Om en rapport som använder utsnittet **numeriska intervall** publiceras till **Power BI-tjänsten**, kommer filtret fortfarande att användas, men visas som ett utsnitt i listan.
-
+* Det fungerar för närvarande inte med mått.

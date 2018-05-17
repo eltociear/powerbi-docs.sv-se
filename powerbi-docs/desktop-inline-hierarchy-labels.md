@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 974194cb04701e2dc21814a0945227ad9c4b770c
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 67e0008383147763654d8e3a053384d28f4a57f7
+ms.sourcegitcommit: 50016425005d2e929c8c606c2d0d393342e05d39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Använd infogade hierarkietiketter i Power BI Desktop
 **Power BI Desktop** stöder användning av **infogade hierarkietiketter**, vilket är den första av två funktioner som är avsedda att förbättra hierarkisk utökning av detaljnivån. Den andra funktionen, som för närvarande är under utveckling, är möjligheten att använda kapslade hierarkietiketter (håll ögonen öppna för detta – vi uppdaterar ofta).   
@@ -30,35 +30,41 @@ ms.lasthandoff: 05/04/2018
 ## <a name="how-inline-hierarchy-labels-work"></a>Så här fungerar infogade hierarkietiketter
 Med infogade hierarkietiketter visas hierarkietiketterna på samma sätt som när du expanderar visuella objekt med funktionen **Visa allt**. En fördel med att se hierarkietiketterna är att du också kan välja att **sortera** efter de olika hierarkietiketterna när du expanderar dina hierarkiska data.
 
-### <a name="using-the-built-in-expand-all-feature-without-sorting-by-hierarchy-labels"></a>Använda funktionen Visa allt (utan att sortera efter hierarkietiketter)
-Innan vi ser hur infogade hierarkietiketter används ska vi se hur standardbeteendet är för funktionen **Visa allt**. Detta hjälper oss att förstå (och uppskatta) hur användbara infogade hierarkietiketter kan vara.
+### <a name="using-the-built-in-expand-feature-without-sorting-by-hierarchy-labels"></a>Använda funktionen Visa (utan att sortera efter hierarkietiketter)
+Innan vi ser hur infogade hierarkietiketter används ska vi se standardbeteendet för funktionen **Expandera till nästa nivå**. Detta hjälper oss att förstå (och uppskatta) hur användbara infogade hierarkietiketter kan vara.
 
-Följande bild visar ett stapeldiagram ett visuellt objekt för årlig försäljning. När du högerklickar kan du välja **Visa allt**.
+Följande bild visar ett stapeldiagram ett visuellt objekt för årlig försäljning. När du högerklickar på ett stapeldiagram kan du välja **Expandera till nästa nivå**.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_4.png)
+![Kontextmenyn Visa](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-menu.png)
 
-När **Visa allt** är valt expanderar det visuella objektet datumhierarkin från *År* till *Kvartal*, enligt följande bild.
+> [!NOTE]
+> Som ett alternativ till att högerklicka på ett stapeldiagram kan du välja knappen *Visa* längst upp till vänster i visualiseringen.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_5.png)
+  ![Knappen Visa](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png)
+
+
+När **Expandera till nästa nivå** är valt expanderar det visuella objektet datumhierarkin från *År* till *Kvartal*, enligt följande bild.
+
+![Det visuella objektet expanderat till år och kvartal](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-qty-year-quarter.png)
 
 Observera att etiketterna *År* och *Kvartal* visas tillsammans. Det här etikettschemat fortsätter allt eftersom du använder **Visa allt** till slutet av hierarkin.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_6.png)
+![Det visuella objektet expanderades till år, kvartal och månad](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-qty-year-quarter-month.png)
 
 Detta är hur den inbyggda hierarkin *Datum*, som har associerats med fält av datatypen *Datum/tid*, fungerar. Nu går vi till nästa avsnitt och ser hur den nya funktionen för infogade hierarkietiketter skiljer sig.
 
 ### <a name="using-inline-hierarchy-labels"></a>Använda infogade hierarkietiketter
-Nu ska vi titta på ett annat diagram – med data som innehåller informella hierarkier. I följande visuella objekt har vi ett stapeldiagram med **Sales Amount** som använder *Color* som axel. I dessa data utgör *Color* och *Class* en informell hierarki. Härifrån kan du återigen välja *Visa allt* för att gå nedåt i hierarkin.
+Nu ska vi titta på ett annat diagram – med data som innehåller informella hierarkier. I följande visuella objekt har vi ett stapeldiagram med **Quantity** som använder *ProductName* som axel. I dessa data utgör *ProductName* och *ShipCountry* en informell hierarki. Härifrån kan du återigen välja *Expandera till nästa nivå* för att gå nedåt i hierarkin.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_7.png)
+![Diagram med informell hierarki](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Att välja **Visa allt** visar nästa nivå med infogad visning av hierarkietiketter. Som standard sorteras infogade hierarkier efter måttvärde – i det här fallet **SalesAmount**. När infogade hierarkietiketter är aktiverade kan du sortera datan efter hierarki också, genom att välja ellipsen i det övre högra hörnet (**...**) och sedan välja **Sortera efter > Color Class** som visas i följande bild.
+Att välja **Expandera till nästa nivå** visar nästa nivå med infogad visning av hierarkietiketter. Som standard sorteras infogade hierarkier efter måttvärde, i det här fallet **Quantity**. När infogade hierarkietiketter är aktiverade kan du även sortera dessa data efter hierarki genom att välja ellipsen i det övre högra hörnet (**...**) och sedan välja **Sortera efter ProductName > ShipCountry** som visas i följande bild.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_8.png)
+![Diagram med informell hierarki som sorterats efter standard](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 
-När **Color Class** är valt sorteras datan baserat på den informella hierarkimarkeringen enligt följande bild.
+När **ShipCountry** är valt sorteras dessa data baserat på den informella hierarkimarkeringen enligt följande bild.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_9.png)
+![Diagram med informell hierarki som sorterats efter informell hierarki](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sorted.png)
 
 > [!NOTE]
 > Funktionen med infogade hierarkietiketter tillåter inte ännu att den inbyggda tidshierarkin sorteras efter värde – den sorteras bara efter hierarkiordning.

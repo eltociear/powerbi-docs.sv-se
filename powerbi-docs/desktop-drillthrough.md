@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 4/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b5da2bf43f2d38e0828571e2b9d404feb615ac69
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 7be260a5989ffb6a9dc1b72dad90d227e0b6295b
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Använd drillthrough i Power BI Desktop
 Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som fokuserar på en specifik enhet – till exempel en leverantör, kund eller tillverkare. Med den fokuserade rapportsidan kan användare högerklicka på en datapunkt i andra rapportsidor och använda drillthrough till sidan i fokus för att hämta information som har filtrerats för det sammanhanget.
@@ -45,8 +45,8 @@ Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som
 ## <a name="use-your-own-image-for-a-back-button"></a>Använda en egen bild för en bakåtknapp    
  Eftersom bakåtknappen är en bild kan du ersätta den med vilken bild du vill och den kommer fortfarande att fungera som en bakåtknapp för att låta användaren gå tillbaka till ursprungssidan.
 
-1. Om du vill använda en egen bild för en bakåtknapp, lägger du till ett visuellt bildobjekt på drillthrough-sidan.
-2. Välj det visuella objektet och ställ in skjutreglaget **Bakåtknapp** till läget på. Bilden fungerar nu som en bakåtknapp.
+1. På fliken **Hem** klickar du på **Bild**, letar upp bilden och placerar den på drillthrough-sidan.
+2. Markera den nya bilden på drillthrough-sidan och under avsnittet Formatera bild genom att ange slutreglaget **Länk** till på och ange den **typen** som **Bakåt**. Bilden fungerar nu som en bakåtknapp.
 
     ![](media/desktop-drillthrough/drillthrough_05.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Snabbstart – Kom igång med Power BI-frågor och svar
-description: 'Snabbstart: kom igång med frågor och svar i Power BI-tjänsten med hjälp av Exemplet på detaljhandelsanalys'
+title: Komma igång med Power BI – vanliga frågor och svar
+description: Kom igång med Frågor och svar i Power BI-tjänsten med hjälp av exemplet Detaljhandelsanalys
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 0f4f56431fd0c667411c302f4f30f0c395269e4a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: aa9b90521d2bf8df88676756135442a22277a4e8
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="get-started-with-power-bi-qa-quickstart"></a>Kom igång med Power BI-frågor och svar (snabbstart)
+# <a name="get-started-with-power-bi-qa"></a>Komma igång med Power BI – vanliga frågor och svar
 ## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Använd Power BI-frågor och svar med Exemplet på detaljhandelsanalys
 Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk.  I den här snabbstarten ska vi titta på två olika sätt att skapa samma visualisering: bygga den i en rapport och därefter ställa en fråga med Frågor och svar. Vi använder Power BI-tjänsten, men processen är nästan identisk med Power BI Desktop.
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/20/2018
+ms.date: 04/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 598266306657337e8190075b2a5e42de2b7d2144
-ms.sourcegitcommit: 20adb55065af8e2f48387a00e64c72cf6d700f0f
+ms.openlocfilehash: 9fa7f56f102ae098c870ae0e6e12f56cc26d0fde
+ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -42,6 +42,14 @@ Planera en effektiv distribution av Power BI för din organisation och utforska 
 <br>[Registrera dig och titta nu – del 3 – Tjänsthantering: Insikter om tjänsthantering för Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
 <br>[Registrera dig och titta nu – del 2 – Styrning: Styr Power BI-användningen](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
 <br>[Registrera dig och titta nu – del 1 – Införande: Anta en datadriven kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+
+**Lär dig mer om Power BI Embedded på 20 minuter**
+<br>av Megan Asarrane och Colin Murphy
+<br>*23 maj, 2018 10:00 PST, 13:00 EST*
+
+Den här webbseminariet är en introduktion till inbäddat Power BI. I slutet av webbseminariet bör användare kunna förstå vad Power BI Embedded är, nästa steg för att komma igång med produkten och var de kan hitta hjälp/resurser.
+
+[Registrera dig om du vill titta den 23 maj](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
 
 >[Delta i kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -132,8 +140,9 @@ Titta på inspelade sessioner när som helst
 <br>[Registrera dig för att titta](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Hämta Advanced Analytics Starter Kit för att följa med](https://aka.ms/pbiaawebinar)
 
-**Office 365 Webbseminarier, finansiella fördelar – avsnitt 2: Automatisera återkommande rapporter och aktivera självbetjäning analys**
-<br>av Mark Traverso och Miguel Martinez
+**Office 365 Finans, webbseminarieserie för proffs**
+<br>av Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky och Miguel Martinez
+<br>Lär dig tips, trick och bästa praxis och uppnå därmed mer i ditt dagliga arbete med hjälp av Office 365.
 <br>[Registrera dig och titta nu](https://aka.ms/Office365FinanceProsPBI)
 
 **Bli en riktig Power BI-Jedi – En genomgång av Power BI:s mest avancerade funktioner via Star Wars-data**

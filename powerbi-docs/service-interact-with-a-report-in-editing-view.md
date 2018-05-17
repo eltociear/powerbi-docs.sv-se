@@ -1,5 +1,5 @@
 ---
-title: Interagera med en rapport i redigeringsvyn (självstudie)
+title: Interagera med en rapport i redigeringsvyn
 description: Interagera med en rapport i redigeringsvyn för rapporter i Power BI-tjänsten
 services: powerbi
 documentationcenter: ''
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: eea3bcb040f5267cb1fcc1f24ef6b306f6c03af3
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 6b4fcd59b16e9fd7ef0dcddfc44a93bb842a32f8
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interagera med en rapport i redigeringsvyn i Power BI-tjänsten
 Rapporter kan skapas och redigeras i Power BI-tjänsten och Power BI Desktop. I Power BI-tjänsten kan rapporter skapas och redigeras i **Redigeringsvyn**. Och i Power BI Desktop kan rapporter skapas och redigeras i [**Rapportvyn**](desktop-report-view.md). Den här artikeln beskriver redigeringsvyn i Power BI-tjänsten. 
