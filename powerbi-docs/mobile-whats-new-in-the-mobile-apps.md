@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 04/23/2018
 ms.author: maggies
-ms.openlocfilehash: eeb6fe244057f10e33936c475f753cfba95deed8
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 381cfeaf8e117cfdc952e361cd0e6cb633b65f47
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -271,7 +271,7 @@ Läs [funktionssammanfattningen om Power BI-mobilappar på bloggen för november
 #### <a name="android-devices"></a>Android-enheter
 **Förhandsversion: Intune Mobile Application Management** Power BI-supporten för Microsoft Intune Mobile Application Manager (MAM) finns nu i en förhandsversion för Power BI Pro-användare på Android-enheter. 
 
-**Favoriter** Tagga dina favoritinstrumentpaneler på din Android-enhet och se alla dina [favorit-Power BI-instrumentpaneler och mobila Reporting Services-rapporter och KPI:er](mobile-android-tablet-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) samlade på en och samma plats. 
+**Favoriter** Tagga dina favoritinstrumentpaneler på din Android-enhet och se alla dina [favorit-Power BI-instrumentpaneler och mobila Reporting Services-rapporter och KPI:er](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) samlade på en och samma plats. 
 
 #### <a name="ios-devices"></a>iOS-enheter
 **Länkar** URL:er på paneler och visualiseringar är nu klickbara och öppnas i en webbläsare.
