@@ -1,28 +1,20 @@
 ---
 title: Högdensitetssampling av linjer i Power BI
 description: Högdensitetssampling av linjer i Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/19/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3fa4de000f553693c75439bd1e956e0882efb179
-ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
+ms.openlocfilehash: 7fb3e6163d63cdf3f40d0400f246095550fc9032
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Högdensitetssampling av linjer i Power BI
 Från och med juni 2017-versionen av **Power BI Desktop** och uppdateringar av **Power BI-tjänsten** finns en ny samplingsalgoritm tillgänglig som förbättrar visuella objekt som samplar högdensitetsdata. Du kan till exempel skapa ett linjediagram från din återförsäljares försäljningsresultat för varje butik som har mer än tiotusen försäljningskvitton varje år. Ett linjediagram med sådan försäljningsinformation skulle sampla data (välja en meningsfull återgivning av dessa data som illustrerar hur försäljningen varierar över tid) från data för varje butik, samt skapa ett linjediagram med flera serier som därmed representerar underliggande data. Detta är vanligt vid visualisering av högdensitetsdata. Power BI Desktop har förbättrat sin sampling av högdensitetsdata, vilket beskrivs i den här artikeln.

@@ -1,29 +1,21 @@
 ---
 title: Power BI-meddelandecentret
-description: "Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse."
-services: powerbi
-documentationcenter: 
+description: Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse.
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
-qualityfocus: no
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: afa3753d04cfb74c2673d222a0b1e6b07a1f5118
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: ca8b7ded6427f912933618ebdeaeeecea41b8681
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="power-bi-notifications"></a>Power BI-meddelanden
 Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, ändringar i din grupparbetsyta, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](service-set-data-alerts.md) samt i Power BI-mobilappar.

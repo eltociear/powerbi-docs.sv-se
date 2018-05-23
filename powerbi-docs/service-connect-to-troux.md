@@ -1,28 +1,20 @@
 ---
 title: Ansluta till Troux med Power BI
 description: Troux för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 701b35d317076827148ec523d38f0c23362aed47
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: dbf3831264a354ec96a38751dfa7a3719c5c9f2a
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-troux-for-power-bi"></a>Ansluta till Troux för Power BI
 Med Troux-innehållspaketet kan du visualisera dina företagsarkitekturscentrallager på ett helt nytt sätt direkt i Power BI. Innehållspaketet ger dig flera insikter om dina företagsfunktioner, de program som innehåller dessa funktioner och de tekniker som stöder program som kan anpassas helt med hjälp av Power BI.

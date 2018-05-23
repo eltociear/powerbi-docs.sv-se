@@ -1,28 +1,20 @@
 ---
 title: Anslut till Google Analytics med Power BI
 description: Google Analytics för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2e1f0d3fad5c556030ed5351793a95a86cfea977
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b479c46ffe3e51ad5f15cc9884a2ea02626a4cc5
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Anslut till Google Analytics med Power BI
 Anslut till Google Analytics via Power BI startar genom att ansluta till ditt Google Analytics-konto. Du får en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som innehåller insikter om din webbplatstrafik och användardimensioner. Du kan interagera med instrumentpanelen och rapporterna, men du kan inte spara ändringarna. Data uppdateras automatiskt en gång per dag.

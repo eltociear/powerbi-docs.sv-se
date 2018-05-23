@@ -1,28 +1,20 @@
 ---
-title: "Så här fäster du en panel till en instrumentpanel från frågor och svar"
-description: "Dokumentering om hur man fäster en panel på en Power BI-instrumentpanel från frågerutan i frågor och svar"
-services: powerbi
-documentationcenter: 
+title: Så här fäster du en panel till en instrumentpanel från frågor och svar
+description: Dokumentering om hur man fäster en panel på en Power BI-instrumentpanel från frågerutan i frågor och svar
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: bd9f49c338afc413107ee811bf9ee33c3e9737a4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: e71412febc5b8d8a9ee4ff20174496de0c7d51f2
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fäst en panel till en instrumentpanel från frågor och svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Så här fäster du en panel från frågor och svar

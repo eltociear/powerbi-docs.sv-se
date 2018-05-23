@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 4/10/2018
+ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7be260a5989ffb6a9dc1b72dad90d227e0b6295b
-ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
+ms.openlocfilehash: d0c78643d285099f7b7856704ac7ee350ff9f93a
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Använd drillthrough i Power BI Desktop
 Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som fokuserar på en specifik enhet – till exempel en leverantör, kund eller tillverkare. Med den fokuserade rapportsidan kan användare högerklicka på en datapunkt i andra rapportsidor och använda drillthrough till sidan i fokus för att hämta information som har filtrerats för det sammanhanget.
 
-![](media/desktop-drillthrough/drillthrough_01.png)
+![använda drillthrough](media/desktop-drillthrough/drillthrough_01.png)
 
 ## <a name="using-drillthrough"></a>Använda drillthrough
 1. För att använda **drillthrough** skapar du en rapportsida med visuella objekt som du vill se för typen av enhet på vilken du ökar detaljnivån. 
@@ -36,11 +36,11 @@ Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som
 
 2. Sedan, på drillthrough-sidan i avsnittet **Fält** i rutan **Visuella objekt** kan du dra fältet som du vill använda drillthrough på i brunnen för **Drillthrough-filter**.
 
-    ![](media/desktop-drillthrough/drillthrough_02.png)
+    ![drillthrough korrekt](media/desktop-drillthrough/drillthrough_02.png)
 
     När du lägger till ett fält i brunnen **Drillthrough-filter** skapar **Power BI Desktop** automatiskt en *bakåtknapp*. Knappen visas i publicerade rapporter och låter användare av rapporten **Power BI-tjänsten** enkelt komma tillbaka till sidan som de kommer ifrån (sidan där de har valt drillthrough).
 
-    ![](media/desktop-drillthrough/drillthrough_03.png)
+    ![drillthrough-bild](media/desktop-drillthrough/drillthrough_03.png)
 
 ## <a name="use-your-own-image-for-a-back-button"></a>Använda en egen bild för en bakåtknapp    
  Eftersom bakåtknappen är en bild kan du ersätta den med vilken bild du vill och den kommer fortfarande att fungera som en bakåtknapp för att låta användaren gå tillbaka till ursprungssidan.
@@ -48,18 +48,35 @@ Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som
 1. På fliken **Hem** klickar du på **Bild**, letar upp bilden och placerar den på drillthrough-sidan.
 2. Markera den nya bilden på drillthrough-sidan och under avsnittet Formatera bild genom att ange slutreglaget **Länk** till på och ange den **typen** som **Bakåt**. Bilden fungerar nu som en bakåtknapp.
 
-    ![](media/desktop-drillthrough/drillthrough_05.png)
+    ![använda en avbildning för bakåt](media/desktop-drillthrough/drillthrough_05.png)
 
     När din **drillthrough**-sida är klar och användare högerklickar på en datapunkt i rapporten som använder fältet du la till i **drillthrough-filtret**, visas en snabbmeny som stöder drillthrough för sidan.
 
-    ![](media/desktop-drillthrough/drillthrough_04.png)
+    ![drillthrough-meny](media/desktop-drillthrough/drillthrough_04.png)
 
     När rapportkonsumenterna valde drillthrough filtrerades sidan för att visa information om datapunkten som de högerklickade på. Om de högerklickade på en datapunkt om Contoso (en tillverkare) och har valt drillthough filtreras drillthrough-sidan till Contoso.
 
-    > [!NOTE]
-    > Endast fältet som finns i brunnen **drillthroug-filter** skickas vidare till rapportsidan för detaljerad information. Ingen övrig kontextinformation skickas.
-    > 
-    > 
+## <a name="pass-all-filters-in-drillthrough"></a>Skicka alla filter i drillthrough
+
+Från och med versionen från maj 2018 av **Power BI Desktop**, kan du överföra alla filter till drillthrough-fönstret. Till exempel kanske du bara har valt en viss kategori av produkter och visualiseringarna filtrerats till denna kategori, då väljer du drillthrough. Du kan vara intresserad hur denna drillthrough skulle se ut med alla de filter som används.
+
+För att behålla alla filter i avsnittet **Drillthrough** i fönstret **Visualiseringar** ställer du bara in **Skicka alla-filtren** till **på**. 
+
+![behåll alla filter](media/desktop-drillthrough/drillthrough_06.png)
+
+I versioner av **Power BI Desktop** före maj 2018, är beteendet likvärdigt med att ha den här inställningen satt till **av**.
+
+När du sedan genomför drillthrough på någon visualisering ser du vilka filter som har tillämpats på grund av att källvisualiseringen har tillfälliga filter. I fönstret drillthrough visas dessa tillfälligt filter i kursiv stil. 
+
+![tillfälliga filter i kursiv stil](media/desktop-drillthrough/drillthrough_07.png)
+
+Observera att du kan göra detta med sidorna för knappbeskrivningar, men det skulle vara en konstig upplevelse (knappbeskrivningen skulle inte verka som att den fungerar korrekt), så det rekommenderas inte att göra det med knappbeskrivningar.
 
 Svårare än så är det inte att använda **drillthrough** i dina rapporter. Det är ett bra sätt att få en utökad vy över den enhetsinformation som du har valt för ditt drillthrough-filter.
+
+## <a name="next-steps"></a>Nästa steg
+
+Följande artiklar kan också vara av intresse för dig:
+
+* [Använda utsnitt i Power BI Desktop](desktop-slicers.md)
 

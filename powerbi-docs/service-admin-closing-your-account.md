@@ -1,28 +1,20 @@
 ---
 title: Stäng ditt Power BI-konto
 description: Stäng ditt Power BI-konto
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d74aed9f3d2f21459853781089b4c32bcdf51b2c
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: be0b1bf3dbfba0f2e1545eced38ec19650342a19
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="closing-your-power-bi-account"></a>Stäng ditt Power BI-konto
 Om du inte vill använda Power BI längre, kan be du be oss att avsluta ditt Power BI-konto.  När ditt konto har avslutats kan du inte längre logga in på Power BI.  Dessutom raderas all kundinformation som du laddat upp eller skapat i Power BI enligt principen för datakvarhållning i tjänstevillkoren för Power BI.

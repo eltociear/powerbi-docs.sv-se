@@ -1,25 +1,19 @@
 ---
 title: Självstudier – använd frågor och svar på en instrumentpanel eller i en rapport
 description: Självstudier om hur du använder Power BI frågor och svar för att skapa nya visualiseringar på instrumentpaneler och i rapporter.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 44501e5447248164f6f04d4463213939975e18ae
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0e98c68e62f36114257052171e0928db25853f24
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Självstudie: använd frågor och svar för att skapa visualiseringar och rapporter
 [Översikt över frågor och svar](power-bi-q-and-a.md) introducerade dig till Power BI frågor och svar och visade på skillnaden mellan *konsumenter* (får instrumentpaneler och rapporter delade med sig) och *skapare* ( äger de underliggande rapporterna och datauppsättningarna). Den första delen av den här självstudien är främst avsedd för personer som använder instrumentpaneler med Power BI-tjänsten. Den andra delen är skapad för folk som skapar rapporter med hjälp av antingen Power BI-tjänsten eller Power BI Desktop. [Frågor och svar och Power BI Mobile](mobile-apps-ios-qna.md) och [Frågor och svar med Power BI Embedded](developer/qanda.md) täcks i separata artiklar.

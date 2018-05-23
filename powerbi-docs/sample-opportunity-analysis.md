@@ -1,28 +1,20 @@
 ---
-title: "Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur"
-description: "Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur"
-services: powerbi
-documentationcenter: 
+title: 'Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur'
+description: 'Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur'
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 73ac4f0ca7e89c01543befee5e952a66db2d3843
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: c90ca6fa46bd9f00786423cad6e8fdfcaf82e1f8
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur
 

@@ -1,28 +1,20 @@
 ---
 title: Skapa anpassade Power BI-svarssidor för Cortana
 description: Skapa anpassade svarssidor för Cortana i Power BI
-services: powerbi
-documentationcenter: ''
 author: yaron
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5933002b13e90a745397a4e77cafb1808f2ad28
-ms.sourcegitcommit: 50016425005d2e929c8c606c2d0d393342e05d39
+ms.openlocfilehash: d2f657423903b783c2e57822cabb577acd10a8bc
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Använda Power BI-tjänsten eller Power BI Desktop för att skapa en anpassad svarssida för Cortana
 Du kan använda alla funktioner i Power BI för att skapa särskilda rapportsidor som kallas *Cortana-svarssidor* (och ibland *Cortana-svarskort*) som utformats speciellt för att besvara Cortana-frågor.

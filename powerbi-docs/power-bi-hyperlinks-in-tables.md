@@ -1,28 +1,20 @@
 ---
-title: "Hur du lägger till en hyperlänk till en tabell"
-description: "Hyperlänkar i tabeller"
-services: powerbi
-documentationcenter: 
+title: Hur du lägger till en hyperlänk till en tabell
+description: Hyperlänkar i tabeller
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: identified
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 69c9943045777950c52d21a441c87a67dd9feab1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d696a7492f1295f2e2c9b39088b0eacdb66b15ca
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="hyperlinks-in-tables"></a>Hyperlänkar i tabeller
 I det här ämnet lär du dig hur du använder Power BI Desktop för att skapa hyperlänkar. När hyperlänkarna har skapats använder du Desktop eller Power BI-tjänsten för att lägga till dem till dina rapporttabeller och -matriser. 
@@ -53,7 +45,7 @@ Proceduren för att lägga till en hyperlänk beror på om du har importerat din
    * Välj diagrammet för att aktivera det.
    * Välj färgrollerikonen ![](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) för att öppna formateringsfönstret.
    * Expandera **Värden**, leta upp **URL-ikonen** och **aktivera** den.
-6. (Valfritt) [Publicera rapporten från Desktop till Power BI-tjänsten](guided-learning/publishingandsharing.yml#step-2) och öppna rapporten i Power BI-tjänsten. Hyperlänkarna fungerar där också.
+6. (Valfritt) [Publicera rapporten från Desktop till Power BI-tjänsten](guided-learning/publishingandsharing.yml?tutorial-step=2) och öppna rapporten i Power BI-tjänsten. Hyperlänkarna fungerar där också.
 
 ### <a name="for-data-connected-with-directquery"></a>För data anslutna med DirectQuery
 Du kan inte skapa en ny kolumn i DirectQuery-läge.  Men om dina data redan innehåller URL:er, kan du förvandla dem till hyperlänkar.
@@ -61,7 +53,7 @@ Du kan inte skapa en ny kolumn i DirectQuery-läge.  Men om dina data redan inne
 1. Skapa en tabell med ett fält som innehåller URL:er i rapportvyn.
 2. Markera kolumnen och välj listrutan för **Datakategori** på fliken **Modellering**.
 3. Välj **Webbadress**. Hyperlänkarna är blå och understrukna.
-4. (Valfritt) [Publicera rapporten från Desktop till Power BI-tjänsten](guided-learning/publishingandsharing.yml#step-2) och öppna rapporten i Power BI-tjänsten. Hyperlänkarna fungerar där också.
+4. (Valfritt) [Publicera rapporten från Desktop till Power BI-tjänsten](guided-learning/publishingandsharing.yml?tutorial-step=2) och öppna rapporten i Power BI-tjänsten. Hyperlänkarna fungerar där också.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Skapa en tabell- eller en matrishyperlänk i Excel Power Pivot
 Ett annat sätt för att lägga till hyperlänkar till dina Power BI-tabeller och -matriser är att skapa hyperlänkarna i datauppsättningen innan du importerar/ansluter till datauppsättningen från Power BI. I det här exemplet används en Excel-arbetsbok.

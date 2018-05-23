@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/26/2018
+ms.date: 05/09/2018
 ms.author: maikelson
-ms.openlocfilehash: 9fa7f56f102ae098c870ae0e6e12f56cc26d0fde
-ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
+ms.openlocfilehash: 51bb0bb0f48b68beb7cfb4167a950ab168e2c08c
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -31,17 +31,13 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 Registrera dig för att lyssna till Power BI-experter och delta i livesända frågesessioner
 
-**[Webbseminarium för Power BI:s ramverk för införande](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
-<br>av Manu Kanwarpal och Paul Henwood
-<br>*Mars, april och maj 2018 9:00 FM PST, 12:00 EM EST*
+**Rita rätt insikter med Power BI och Visio**
+<br>av Shakun Grover
+<br>*22 maj, 2018 10:00 PST, 13:00 EST*
 
-Planera en effektiv distribution av Power BI för din organisation och utforska de olika delarna i effektiv programvara som en tjänstehantering (SaaS). Det här är en serie om fem som handlar om att lyckas med Power BI i din organisation.
+Var med på det här webbseminariet för att lära dig hur du kombinerar Power BI-instrumentpaneler och Microsoft Visio-diagram för att skapa kraftfulla visuella insikter. Visio och Power BI är mycket visuella och naturliga komplement. Med Visio kan du skapa vägledande diagram, till exempel sammankopplade arbetsflöden och verkliga layouter. Power BI hjälper dig att skapa intuitiva instrumentpaneler med hjälp av diagram och mappar för att mäta KPI:er och spåra mål.
 
-[Registrera dig för att titta den 1 maj – del 5 – Distribution: Framgångsrik distribution av Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
-<br>[Registrera dig och titta nu – del 4 – Säkerhet: Skydda dina data med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Registrera dig och titta nu – del 3 – Tjänsthantering: Insikter om tjänsthantering för Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Registrera dig och titta nu – del 2 – Styrning: Styr Power BI-användningen](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Registrera dig och titta nu – del 1 – Införande: Anta en datadriven kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+[Registrera dig om du vill titta den 22 maj](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **Lär dig mer om Power BI Embedded på 20 minuter**
 <br>av Megan Asarrane och Colin Murphy
@@ -88,6 +84,10 @@ Titta på inspelade sessioner när som helst
 **Så här skapar du visuellt bländande Power BI-rapporter**
 <br>av Charles Sterling
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Utöver kalkylbladet**
+<br>av Gohul Shanmugalingam
+<br>[Registrera dig och titta nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
 
 **Omvandla en rapport från vara BRA att vara BÄST!**
 <br>av Reid Havens
@@ -139,6 +139,14 @@ Titta på inspelade sessioner när som helst
 <br>av Nagasaikiran Kambhampati och Miguel Martinez
 <br>[Registrera dig för att titta](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Hämta Advanced Analytics Starter Kit för att följa med](https://aka.ms/pbiaawebinar)
+
+**[Webbseminarium för Power BI:s ramverk för införande](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+<br>av Manu Kanwarpal och Paul Henwood
+<br>[Registrera dig och titta nu – del 1 – Införande: Anta en datadriven kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Registrera dig och titta nu – del 2 – Styrning: Styr Power BI-användningen](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Registrera dig och titta nu – del 3 – Tjänsthantering: Insikter om tjänsthantering för Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Registrera dig och titta nu – del 4 – Säkerhet: Skydda dina data med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Registrera dig och titta nu – del 5 – Distribution: Distribuera Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Office 365 Finans, webbseminarieserie för proffs**
 <br>av Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky och Miguel Martinez

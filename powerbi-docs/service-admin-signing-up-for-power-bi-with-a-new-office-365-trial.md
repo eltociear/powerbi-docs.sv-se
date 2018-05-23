@@ -1,28 +1,20 @@
 ---
 title: Registrera dig för Power BI med en ny Office 365-utvärderingsversion
 description: Registrera dig för Power BI med en ny Office 365-utvärderingsversion
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5db7d92b7d62d1518682d831dd425e8b4b6efe86
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: dd43c063d56f75fd1ba45b6c596f54fd002adad6
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Registrera dig för Power BI med en ny Office 365-utvärderingsversion
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -45,7 +37,7 @@ Om du har problem med att registrera dig för Power BI med din jobb-e-postadress
 4. Och sedan är du klar.  När du är klar omdirigeras du till Power BI.
 
 ## <a name="important-considerations"></a>Att tänka på
-Du skapar en ny klient för organisationen med den här inloggningsmetoden och du blir administratören för den här klienten.  Eftersom delning i Power BI bara tillåts inom en enskild klient, kommer du inte att kunna dela med användare utanför den här klienten.  Om du till exempel skapar klienten dittforetag.pamicrosoft.com i steg 2, kommer du inte att kunna dela med användare på dittforetag.com.  Du kan lägga till nya användare till din klient och sedan dela med dem, enligt beskrivningen i [det här hjälpavsnittet](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
+Du skapar en ny klient för organisationen med den här inloggningsmetoden och du blir administratören för den här klienten. Du kan lägga till nya användare till din klient och sedan dela med dem, enligt beskrivningen i [det här hjälpavsnittet](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
 
 ## <a name="next-steps"></a>Nästa steg
 [Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  

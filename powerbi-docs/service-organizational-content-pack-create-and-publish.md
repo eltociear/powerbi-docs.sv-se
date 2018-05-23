@@ -1,28 +1,20 @@
 ---
 title: Skapa och publicera ett organisationsinnehållspaket – Power BI
 description: I de här självstudierna skapar du ett organisationsinnehållspaket, begränsar åtkomst till en specifik grupp och publicerar det i din organisations innehållspaketsbibliotek på Power BI.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d3b1f74440ab4dbc13cb4252030627c7cdd8eb06
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b454673944d8006effc045592f28eb35681564d1
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Skapa och publicera ett organisationsinnehållspaket i Power BI (självstudier)
 > [!NOTE]

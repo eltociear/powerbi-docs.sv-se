@@ -1,28 +1,20 @@
 ---
 title: Power BI-säkerhet
 description: Power BI-säkerhet. Hur Power BI fungerar i förhållande till Azure Active Directory och andra Azure-tjänster. Det här avsnittet innehåller också en länk till ett dokument med mer information.
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: erikri
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: e7163cadb25a171241ec09f5968faf33f1f425a7
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: d3b3e077ac3dadf92a1c25d3704a4f59adea588b
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 En detaljerad förklaring av Power BI-säkerheten får du om du [laddar ned white paper-dokumentet om Power BI-säkerhet](http://go.microsoft.com/fwlink/?LinkId=829185):

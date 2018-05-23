@@ -1,28 +1,20 @@
 ---
-title: "Exempel på personalfrågor: Ta en rundtur"
-description: "Exempel på personalfrågor för Power BI: Ta en rundtur"
-services: powerbi
-documentationcenter: 
+title: 'Exempel på personalfrågor: Ta en rundtur'
+description: 'Exempel på personalfrågor för Power BI: Ta en rundtur'
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 7cd91ad5d6b43803745e5c6a12b6168e17f376af
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: 2f9051142568ff7e6451acc38d30295f2930d0a6
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exempel på personalfrågor för Power BI: Ta en rundtur
 
@@ -79,7 +71,7 @@ Låt oss utforska nyanställda först.
 
 Observera följande:
 
-* Kombinationsdiagrammet **Ändring per månad, anställa och nyanställda SPLY och aktiva på årsbasis %** visar vi har anlitat fler personer varje månad i år jämfört med föregående år &#151; betydligt fler personer under vissa månader.
+* Kombinationsdiagrammet **Ändring per månad, anställa och nyanställda SPLY och aktiva på årsbasis %** visar vi har anlitat fler personer varje månad i år jämfört med föregående år & #151; betydligt fler personer under vissa månader.
 * I kombinationsdiagrammet **Antal nyanställa och aktivt antal medarbetare per region och etnicitet** kan man notera att vi anställde färre personer i regionen **Öst**.
 * Vattenfallsdiagrammet **Varians av nyanställda på årsbasis per åldersgrupp** att vi i huvudsak anställer yngre personer. Detta kan bero på att tjänsterna i huvudsak är på deltid.
 * Cirkeldiagrammet **Antal nyanställda enligt kön** visar en ganska jämn fördelning.

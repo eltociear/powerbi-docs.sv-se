@@ -1,28 +1,20 @@
 ---
 title: Minska storleken på en Excel-arbetsbok för att visa den i Power BI
 description: Minska storleken på en Excel-arbetsbok för att visa den i Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 479d431af4a7e904b138de1eb4fdf097bdbd68e9
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: dd62b1d52a4bf2738e6a6f7e25040d05dacb6762
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Minska storleken på en Excel-arbetsbok för att visa den i Power BI
 Du kan ladda upp Excel-arbetsböcker som är mindre än 1 GB till Power BI. En Excel-arbetsbok kan ha två delar: en datamodell och resten av rapporten. Arbetsbokens kärninnehåll. Om rapporten uppfyller följande storleksgränser, kan du spara den till **OneDrive för företag**, ansluta till den från Power BI och visa den i Excel Online:

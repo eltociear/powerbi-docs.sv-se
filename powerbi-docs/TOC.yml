@@ -140,8 +140,6 @@
                   href: service-connect-to-azure-consumption-insights.md
                 - name: Azure Search
                   href: service-connect-to-azure-search.md
-                - name: Azure Security Center
-                  href: service-connect-to-azure-security-center.md
                 - name: Circuit ID
                   href: service-connect-to-circuit-id.md
                 - name: ClickDimensions
@@ -416,8 +414,6 @@
                   href: refresh-csv-file-onedrive.md
                 - name: Felsöka uppdateringsscenarier
                   href: refresh-troubleshooting-refresh-scenarios.md
-                - name: Inaktivera sekretessinställningar
-                  href: refresh-enable-fast-combine.md
             - name: Felsökning
               items:
                 - name: Har du glömt lösenordet till Power BI?
@@ -470,6 +466,18 @@
       items:
         - name: Forma och kombinera flera datakällor
           href: desktop-shape-and-combine-data.md
+        - name: Importera och analysera data från en webbsida med Power BI Desktop
+          href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+        - name: ' Analysera försäljningsdata från Excel och ett OData-flöde'
+          href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
+        - name: Skapa dina egna mått i Power BI Desktop
+          href: desktop-tutorial-create-measures.md
+        - name: Skapa beräknade kolumner i Power BI Desktop
+          href: desktop-tutorial-create-calculated-columns.md
+        - name: Facebook-analyser med Power BI Desktop
+          href: desktop-tutorial-facebook-analytics.md
+        - name: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
+          href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: Exempel
       items:
         - name: Hämta arbetsboken med finansiella exempel för Power BI
@@ -526,18 +534,6 @@
           href: desktop-connect-to-data.md
         - name: Publicera från Power BI Desktop
           href: desktop-upload-desktop-files.md
-        - name: Importera och analysera data från en webbsida med Power BI Desktop
-          href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-        - name: ' Analysera försäljningsdata från Excel och ett OData-flöde'
-          href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-        - name: Skapa dina egna mått i Power BI Desktop
-          href: desktop-tutorial-create-measures.md
-        - name: Skapa beräknade kolumner i Power BI Desktop
-          href: desktop-tutorial-create-calculated-columns.md
-        - name: Facebook-analyser med Power BI Desktop
-          href: desktop-tutorial-facebook-analytics.md
-        - name: Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
-          href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
         - name: Anpassade visualiseringar i Power BI
           href: power-bi-custom-visuals.md
         - name: Anpassade visuella objekt för organisationer i Power BI
@@ -898,8 +894,6 @@
           href: developer/qanda.md
     - name: Gör så här
       items:
-        - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
-          href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Hur du bäddar in ditt innehåll
           href: developer/embedding-content.md
         - name: Skicka data till en instrumentpanel
@@ -914,6 +908,18 @@
           href: developer/integrate-report.md
         - name: Integrera innehåll i ditt program (appen äger data)
           href: developer/embed-sample-for-customers.md
+        - name: Integrera innehåll i ditt program för suveräna moln (appen äger data)
+          href: developer/embed-sample-for-customers-sovereign-clouds.md
+        - name: Skapa ett anpassat visuellt objekt
+          items:
+            - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
+              href: service-custom-visuals-getting-started-with-developer-tools.md
+            - name: Granska säkerhet och sekretess för anpassade visuella objekt
+              href: service-custom-visuals-review-for-security-and-privacy.md
+            - name: Certifiera ett anpassat visuellt objekt
+              href: power-bi-custom-visuals-certified.md
+            - name: Publicera anpassad visuell information till AppSource
+              href: developer/office-store.md
         - name: Bädda in
           items:
             - name: Bädda in med Power BI
@@ -932,12 +938,6 @@
               href: developer/migrate-code-snippets.md
             - name: Felsök ditt inbäddade program
               href: developer/embedded-troubleshoot.md
-        - name: Skapa ett anpassat visuellt objekt
-          items:
-            - name: Granska anpassade visuella objekt ur säkerhets- och sekretessynvinkel
-              href: service-custom-visuals-review-for-security-and-privacy.md
-            - name: Certifiera ett anpassat visuellt objekt
-              href: power-bi-custom-visuals-certified.md
         - name: Skicka data till en instrumentpanel
           items:
             - name: Registrera en app med Azure AD
@@ -976,7 +976,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Resurser
       items:
-        - name: JavaScript bädda in demo
+        - name: Exempel för JavaScript Playground
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Exempel
           href: 'https://go.microsoft.com/fwlink/?linkid=851293'
@@ -1126,10 +1126,12 @@
           href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
         - name: Konfigurera proxyinställningar
           href: service-gateway-proxy.md
-        - name: Lokal datagateway – på djupet
-          href: service-gateway-onprem-indepth.md
         - name: Kluster med hög tillgänglighet för lokala datagateway
           href: service-gateway-high-availability-clusters.md
+        - name: Lokal datagateway
+          href: service-gateway-onprem.md
+        - name: Lokal datagateway – på djupet
+          href: service-gateway-onprem-indepth.md
         - name: Lokal datagateway (personligt läge)
           href: service-gateway-personal-mode.md
         - name: Felsöka den lokala datagatewayen
@@ -1188,6 +1190,8 @@
           href: service-admin-health.md
         - name: Stänga ditt Power BI-konto
           href: service-admin-closing-your-account.md
+        - name: Power BI Pro i din organisation
+          href: service-admin-power-bi-pro-in-your-organization.md
         - name: Power BI (kostnadsfri) i din organisation
           href: service-admin-service-free-in-your-organization.md
         - name: Power BI och ExpressRoute

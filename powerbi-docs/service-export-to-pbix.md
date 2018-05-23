@@ -1,28 +1,20 @@
 ---
-title: "Så här exporterar du en rapport från Power BI-tjänsten till Desktop (förhandsgranskning)"
-description: "Hämta en rapport från Power BI-tjänsten till en Power BI Desktop-fil"
-services: powerbi
-documentationcenter: 
+title: Så här exporterar du en rapport från Power BI-tjänsten till Desktop (förhandsgranskning)
+description: Hämta en rapport från Power BI-tjänsten till en Power BI Desktop-fil
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0cda094f3104b32f9bad31bf5030e235eb7ce83d
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 90f7cddec13159c445dc97f7adeea790020f8c72
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exportera en rapport från Power BI-tjänsten till skrivbordet (förhandsgranskning)
 I Power BI Desktop kan du exportera (kallas även *hämta*) en rapport till Power BI-tjänsten genom att spara rapporten och välja **Publicera**. Du kan även exportera i omvänd ordning samt och ladda ned en rapport från Power BI-tjänsten till skrivbordet. Filnamnstillägget för filer som exporteras i endera riktningen är *.pbix*.
@@ -38,7 +30,7 @@ Hämta .pbx-filen genom att följa dessa steg:
 2. Välj **Arkiv > Hämta rapport** på menyraden.
    
    > [!NOTE]
-   > Rapporten måste ha [skapats med Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) efter den 23 november 2016, och ha uppdaterats sedan dess, för att du ska kunna hämta rapporten. Om så inte är fallet är menyalternativet *Ladda ned rapport* i Power BI-tjänsten nedtonat.
+   > Rapporten måste ha [skapats med Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) efter den 23 november 2016, och ha uppdaterats sedan dess, för att du ska kunna hämta rapporten. Om så inte är fallet är menyalternativet *Ladda ned rapport* i Power BI-tjänsten nedtonat.
    > 
    > 
 3. Medan .pbx-filen skapas, visas förloppet i en statusbanderoll. När filen är klar ombeds du att öppna eller spara .pbx-filen. Filens namn matchar rapportens titel.

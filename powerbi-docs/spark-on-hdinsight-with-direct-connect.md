@@ -1,28 +1,20 @@
 ---
 title: Apache Spark i HDInsight med DirectQuery
 description: Apache Spark i HDInsight med DirectQuery
-services: powerbi
-documentationcenter: 
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 0eade5942b65985cf704709ea88870a2352b07c0
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 236a3d1bde84d4259d921d44730057a4e2fd3591
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Apache Spark i HDInsight med DirectQuery
 Med Apache Spark på Azure HDInsight med DirectQuery kan du skapa dynamiska rapporter baserade på data och mått som du redan har i ditt Apache Spark-kluster. Med DirectQuery skickas frågor tillbaka till ditt Azure HDInsight Apache Spark-kluster medan du utforskar dessa data i rapportvyn. Den här användningen föreslås för användare som är bekanta med de enheter som de ansluter till.

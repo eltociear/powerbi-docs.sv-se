@@ -1,24 +1,19 @@
 ---
 title: Aktivera Cortana för Power BI
 description: Hämta svar från dina data med hjälp av Cortana med Power BI. Aktivera Cortana för varje Power BI-datauppsättning och aktivera sedan Cortana så att hon får åtkomst till dina datauppsättningar från Windows-enheter.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-editor: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 10faf7b20c91b0c709df6783152ab55d0e6c958c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 40dd75becc890c48e8d1b2a7dc10381896ceed71
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Aktivera Cortana för åtkomst till Power BI-rapporter (och deras underliggande datauppsättningar)
 Förmodligen har du läst artikeln [Introduktion till Cortana och Power BI](service-cortana-intro.md) redan. Om du inte har gjort det, så läs den först, och kom sedan tillbaka hit. Och nu kan du prova själv.  Innan du kan ställa frågor på naturligt språk i Cortana och få svar från data som lagras i Power BI-***rapporter***, så måste vissa krav uppfyllas. Du måste i synnerhet göra följande.
@@ -86,7 +81,7 @@ Du måste köra Windows 10 version 1511 eller senare.
 Cortana använder det här arbets- eller skolkontot för att söka efter potentiella svar på dina frågor i Power BI.
 
 ## <a name="next-steps"></a>Nästa steg
-[Skapa Cortana*-svarskort* i Power BI](service-cortana-answer-cards.md)
+[Skapa Cortana *-svarskort* i Power BI](service-cortana-answer-cards.md)
 
 [Felsökning av problem med Cortana och Power BI-integrering](service-cortana-troubleshoot.md)
 

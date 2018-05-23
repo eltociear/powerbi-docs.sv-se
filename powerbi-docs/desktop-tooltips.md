@@ -1,28 +1,20 @@
 ---
 title: Använda rapportknappbeskrivningssidor i Power BI
 description: Med knappbeskrivningssidor i Power BI Desktop kan du skapa avancerade hover-baserade knappbeskrivningar för visuella objekt i rapporter
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 87733126c4772b88c4e58cf60f9640668faf9cc7
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 1f53b0efc2195221fbcbe45f03102d2c98e8eef3
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop (förhandsversion)
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 
@@ -73,7 +65,7 @@ Först måste du ändra skjutreglaget vid **Knappbeskrivning** till **På** i ko
 
 ![Aktivera skjutreglaget för knappbeskrivning för att ange att sidan är en knappbeskrivning](media/desktop-tooltips/desktop-tooltips_07.png)
 
-När skjutreglaget är aktiverat anger du vilka fält du vill att rapportknappbeskrivningen ska visas för. För visuella objekt i rapporten som innehåller det fält du anger kommer knappbeskrivningen att visas. Du anger vilket eller vilka fält som ska användas genom att dra dem till bucketen **Knappbeskrivningsfält** i avsnittet **Fält** i fönstret **Visualiseringar**. På följande bild har fältet *SalesAmount* dragits till bucketen **Knappbeskrivningsfält**.
+När skjutreglaget är aktiverat anger du vilka fält du vill att rapportknappbeskrivningen ska visas för. För visuella objekt i rapporten som innehåller det fält du anger kommer knappbeskrivningen att visas. Du anger vilket eller vilka fält som ska användas genom att dra dem till **bucketen **Knappbeskrivningsfält** i avsnittet **Fält** i fönstret Visualiseringar**. På följande bild har fältet *SalesAmount* dragits till bucketen **Knappbeskrivningsfält**.
 
 ![Lägg till fält för att ange var knappbeskrivningen ska visas](media/desktop-tooltips/desktop-tooltips_08.png)
  
