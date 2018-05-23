@@ -1,27 +1,19 @@
 ---
-title: "Kom igång med Power BI-mobilappen för Windows 10"
-description: "Power BI-mobilappen för Windows 10 ger dig uppdaterad, pekaktiverad mobil åtkomst till företagets information på din surfplatta eller telefon."
-services: powerbi
-documentationcenter: 
+title: Kom igång med Power BI-mobilappen för Windows 10
+description: Power BI-mobilappen för Windows 10 ger dig uppdaterad, pekaktiverad mobil åtkomst till företagets information på din surfplatta eller telefon.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 97fb3625848210f6222317cf3fc48eea305ef04d
-ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
+ms.openlocfilehash: 6cd1c8aec1bf31a8cae43074531014cbeef71bd5
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
 Power BI-mobilappen för Windows 10 ger dig Power BI i din surfplatta eller telefon med uppdaterad, pekaktiverad mobil åtkomst till företagets information. Visa och interagera med dina instrumentpaneler för företaget från valfri plats &#151; direkt från din [Windows-startskärm](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).

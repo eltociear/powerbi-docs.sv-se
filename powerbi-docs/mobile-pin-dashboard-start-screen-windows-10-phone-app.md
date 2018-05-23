@@ -1,27 +1,19 @@
 ---
-title: "Fäst instrumentpanelen på startskärmen för Windows 10 – den mobila Power BI-appen"
-description: "Lär dig hur man fäster en Power BI-instrumentpanel på startskärmen i Windows 10 från den mobila Power BI-appen, så att du kan se viktiga mått direkt."
-services: powerbi
-documentationcenter: 
+title: Fäst instrumentpanelen på startskärmen för Windows 10 – den mobila Power BI-appen
+description: Lär dig hur man fäster en Power BI-instrumentpanel på startskärmen i Windows 10 från den mobila Power BI-appen, så att du kan se viktiga mått direkt.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: f06793bc6620e27ab5937a0043e9dc6a94119110
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 5492ed25dc5bd803661186694e7f9d3f4e19c30f
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fäst instrumentpanelen på din Windows 10-startskärm från den mobila Power BI-appen
 Du kan fästa Power BI-instrumentpaneler på Windows startskärm från den mobila Power BI-appen för Windows 10. De blir *levande paneler*. När du trycker på panelen på startskärmen öppnas instrumentpanelen i den mobila Power BI-appen för Windows 10.

@@ -10,12 +10,14 @@
           href: service-the-new-power-bi-experience.md
     - name: Självstudier
       items:
-        - name: Anslut till onlinetjänsten GitHub
+        - name: Anslut till ett GitHub-exempel
           href: service-tutorial-connect-to-github.md
     - name: Begrepp
       items:
         - name: Nyheter i Power BI-tjänsten
           href: service-whats-new.md
+        - name: Självbetjäningsregistrering
+          href: service-self-service-signup-for-power-bi.md
         - name: Power BI-grunderna
           items:
             - name: Power BI – grundläggande begrepp
@@ -56,16 +58,12 @@
           items:
             - name: Snabba insikter i Power BI
               href: service-insights.md
-            - name: Skapa en instrumentpanel från en rapport
-              href: service-dashboard-create.md
             - name: Hämta data från filer
               href: service-get-data-from-files.md
             - name: Öppna en Power BI-rapport i Läsvyn eller Redigeringsvyn
               href: service-reading-view-and-editing-view.md
             - name: Rapportredigeraren... Ta en rundtur
               href: service-the-report-editor-take-a-tour.md
-            - name: Exempel för Power BI
-              href: sample-datasets.md
             - name: Visualiseringar i Power BI
               href: power-bi-report-visualizations.md
             - name: Datakällor för Power BI
@@ -124,6 +122,8 @@
                   href: service-connect-to-services.md
                 - name: Acumatica
                   href: service-connect-to-acumatica.md
+                - name: Adobe Analytics
+                  href: service-connect-to-adobe-analytics.md
                 - name: Alpine Metrics Sales Predictions
                   href: service-connect-to-alpine-metrics.md
                 - name: appFigures
@@ -248,8 +248,6 @@
                   href: service-publish-to-powerpoint.md
         - name: Arbeta i Power BI
           items:
-            - name: Använd Power BI-exempelinnehållspaketen
-              href: sample-tutorial-connect-to-the-samples.md
             - name: Från Excel-arbetsbok till otrolig rapport på nolltid
               href: service-from-excel-to-stunning-report.md
             - name: Använda frågor och svar för att skapa visualiseringar och rapporter
@@ -268,6 +266,8 @@
               href: refresh-scheduled-refresh.md
             - name: Instrumentpaneler
               items:
+                - name: Skapa en instrumentpanel från en rapport
+                  href: service-dashboard-create.md
                 - name: Skapa en kopia av en instrumentpanel
                   href: service-dashboard-copy.md
                 - name: Fäst en panel på en Power BI-instrumentpanel från en rapport
@@ -314,19 +314,15 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Dela ditt arbete
               items:
-                - name: 'Organisationsinnehållspaket: introduktion'
-                  href: service-organizational-content-pack-introduction.md
-                - name: Skapa och publicera ett organisationsinnehållspaket
-                  href: service-organizational-content-pack-create-and-publish.md
                 - name: Dela en filtrerad rapport
                   href: service-share-reports.md
                 - name: Publicera på webben från Power BI
                   href: service-publish-to-web.md
                 - name: Bädda in rapport i SharePoint Online
                   href: service-embed-report-spo.md
-                - name: Ansluta till filer på din grupps OneDrive för företag
+                - name: Anslut till filer på din grupps OneDrive
                   href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-                - name: Samarbeta på din Power BI-grupparbetsyta
+                - name: Samarbeta i din grupparbetsyta
                   href: service-collaborate-power-bi-workspace.md
                 - name: Hantera din grupp i Power BI och Office 365
                   href: service-manage-app-workspace-in-power-bi-and-office-365.md
@@ -334,6 +330,10 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: 'Organisationsinnehållspaket: kopiera, uppdatera och få åtkomst'
                   href: service-organizational-content-pack-copy-refresh-access.md
+                - name: 'Organisationsinnehållspaket: introduktion'
+                  href: service-organizational-content-pack-introduction.md
+                - name: Skapa och publicera ett organisationsinnehållspaket
+                  href: service-organizational-content-pack-create-and-publish.md
                 - name: Ta bort din anslutning till ett organisationsinnehållspaket
                   href: service-organizational-content-pack-disconnect.md
                 - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive för företag
@@ -446,9 +446,13 @@
                   href: service-refresh-xero-credentials.md
     - name: Resurser
       items:
-        - name: Webbläsare som stöds för Power BI
+        - name: Videor
+          href: videos.md
+        - name: Webbseminarier
+          href: webinars.md
+        - name: Webbläsare som stöds
           href: service-browser-support.md
-        - name: Språk och länder/regioner som stöds för Power BI
+        - name: Språk och länder/regioner som stöds
           href: supported-languages-countries-regions.md
         - name: Vitböcker
           href: whitepapers.md
@@ -480,24 +484,28 @@
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: Exempel
       items:
-        - name: Hämta arbetsboken med finansiella exempel för Power BI
-          href: sample-financial-download.md
-        - name: 'Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur'
-          href: sample-supplier-quality.md
-        - name: 'Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur'
-          href: sample-it-spend.md
-        - name: 'Exempel på försäljning och marknadsföring för Power BI: Ta en rundtur'
-          href: sample-sales-and-marketing.md
-        - name: 'Exempel på kundlönsamhet för Power BI: Ta en rundtur'
+        - name: Exempel för Power BI
+          href: sample-datasets.md
+        - name: Använda exempelinnehållspaketen
+          href: sample-tutorial-connect-to-the-samples.md
+        - name: 'Exempel på kundlönsamhet: ta en rundtur'
           href: sample-customer-profitability.md
+        - name: 'Exempel på IT-utgiftsanalys: ta en rundtur'
+          href: sample-it-spend.md
         - name: 'Exempel på personalfrågor: Ta en rundtur'
           href: sample-human-resources.md
-        - name: 'Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur'
+        - name: 'Exempel på affärsmöjlighetsanalys: ta en rundtur'
           href: sample-opportunity-analysis.md
         - name: 'Exempel på anskaffningsanalys: Ta en rundtur'
           href: sample-procurement.md
-        - name: 'Exempel på detaljhandelsanalys för Power BI: ta en rundtur'
+        - name: 'Exempel på detaljhandelsanalys: ta en rundtur'
           href: sample-retail-analysis.md
+        - name: 'Exempel på försäljning och marknadsföring: ta en rundtur'
+          href: sample-sales-and-marketing.md
+        - name: 'Exempel på leverantörskvalitetsanalys: ta en rundtur'
+          href: sample-supplier-quality.md
+        - name: Ladda ned arbetsboken med finansiella exempel
+          href: sample-financial-download.md
     - name: Begrepp
       items:
         - name: Vad är nytt i den senaste uppdateringen av Power BI Desktop?
@@ -806,6 +814,8 @@
           items:
             - name: Visa lokala rapporter i mobilapparna
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: Appen Power BI för Mixed Reality (förhandsversion)
+              href: mobile-mixed-reality-app.md
             - name: Dela en instrumentpanel från Power BI-mobilapparna
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Interagera med paneler i mobilapparna
@@ -837,7 +847,7 @@
             - name: Kom igång med Power BI för Android-appen
               href: mobile-android-app-get-started.md
             - name: Åtgärda att ”ditt företags SSL-certifikat inte är betrott”
-              href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+              href: mobile-android-error-update-android-system-webview.md
         - name: iOS
           items:
             - name: Kom igång med Power BI för iOS-appen
@@ -1004,8 +1014,6 @@
           href: report-server/changelog.md
         - name: Supporttider
           href: report-server/support-timeline.md
-        - name: Datakällor som stöds
-          href: report-server/data-sources.md
         - name: Maskin- och programvarukrav
           href: report-server/system-requirements.md
         - name: Stöd för webbläsare
@@ -1016,9 +1024,9 @@
           items:
             - name: Schemalagd uppdatering av Power BI-rapport
               href: report-server/scheduled-refresh.md
-            - name: Rapportdatakällor i Power BI (.pbix)
+            - name: Rapportdatakällor i Power BI
               href: report-server/data-sources.md
-            - name: Sidnumrerade rapportdatakällor (.rdl)
+            - name: Sidnumrerade rapportdatakällor
               href: report-server/connect-data-sources.md
             - name: Prenumerationer
               href: 'https://go.microsoft.com/fwlink/?linkid=851310'
@@ -1048,10 +1056,6 @@
               href: report-server/getting-around.md
             - name: Skapa en sidnumrerad rapport för en rapportserver
               href: report-server/quickstart-create-paginated-report.md
-            - name: Avancerade Power BI-rapporter
-              href: 'https://go.microsoft.com/fwlink/?linkid=848708'
-            - name: Avancerade paginerade rapporter
-              href: 'https://go.microsoft.com/fwlink/?linkid=848709'
             - name: 'Arbeta med KPI:er'
               href: 'https://go.microsoft.com/fwlink/?linkid=849021'
             - name: 'Åtkomst till delade datauppsättningar som OData-flöden '

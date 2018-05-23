@@ -1,28 +1,20 @@
 ---
 title: Anslut till Adobe Analytics med Power BI
 description: Anslut till Adobe Analytics från Power BI för en app som visar dina kontodata i en instrumentpanel och rapporter.
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 452f970efda4c49e197ed578f5c5b05917aa43e7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e8e9b21e62f0a91234fccf78977a696e321ed8dc
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Anslut till Adobe Analytics med Power BI
 Du ansluter till Adobe Analytics via Power BI genom att ansluta till ditt Adobe Analytics Marketing Cloud-konto. Du får en app med en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som ger insikter om din webbplatstrafik och användardimensioner. Data uppdateras automatiskt en gång per dag. Du kan interagera med instrumentpanelen och rapporterna, men du kan inte spara ändringarna.
@@ -98,7 +90,7 @@ Från Adobe-[dokumentationen](https://marketing.adobe.com/resources/help/en_US/r
 ## <a name="troubleshooting"></a>Felsökning
 Om du får ett fel när du har angett dina autentiseringsuppgifter som anger du inte har behörigheter, bekräfta med din administratör att du har åtkomst till Adobe Analytics API:n. Bekräfta även att det Adobe-ID som angetts är kopplat till din Marketing Cloud-organisation (som är kopplad till ett Adobe Analytics-företag).
 
-Om du kommer förbi autentiseringsskärmen innan du påträffar felet, är det möjligt att rapporterna tar för lång tid att slutföra. Ett vanligt fel är i formatet *det gick inte att hämta data från Adobe Analytics-rapporten. Innehåll som ingår &quot;referent, sidan&quot;, ungefärlig varaktighet var xx sekunder*. Läs avsnittet vad ingår och jämför med storleken på din Adobe-instans. Det finns tyvärr inte något sätt att kringgå den här timeouten idag. Men vi överväger uppdateringar för att bättre stödja stora instanser, ge feedback till Power BI-teamet på https://ideas.powerbi.com
+Om du kommer förbi autentiseringsskärmen innan du påträffar felet, är det möjligt att rapporterna tar för lång tid att slutföra. Ett vanligt fel är i formatet *det gick inte att hämta data från Adobe Analytics-rapporten. Innehåll som ingår &quot;referent, sidan&quot;, ungefärlig varaktighet var xx sekunder*. Läs avsnittet vad ingår och jämför med storleken på din Adobe-instans. Det finns tyvärr inte något sätt att kringgå den här timeouten idag. Men vi överväger uppdateringar för att ge bättre stöd åt stora instanser. Ge gärna feedback till Power BI-teamet på https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Nästa steg
 * [Vad är appar i Power BI?](service-install-use-apps.md)

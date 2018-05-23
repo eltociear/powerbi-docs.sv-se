@@ -1,28 +1,20 @@
 ---
 title: Anslut till Marketo med Power BI
 description: Marketo för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 78f128e870bbf775c805438464342612d5ba8382
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3f7ad953f36830db74fb8e611dc9a0641498affd
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Anslut till Marketo med Power BI
 Power BI-innehållspaketet för Marketo ger dig insikter om ditt Marketo-konto med data om leads och deras aktiviteter. När du skapar den här anslutningen så hämtas dina data och du får automatiskt en instrumentpanel och rapporter baserade på dem.
@@ -44,7 +36,7 @@ Anslut till [Marketo-innehållspaketet](https://app.powerbi.com/getdata/services
    ![](media/service-connect-to-marketo/pbi_marketoconnect.png)
    
    Läs mer om Marketo REST-slutpunkten: [http://developers.marketo.com/documentation/rest/endpoint-url/ ](http://developers.marketo.com/documentation/rest/endpoint-url/).
-5. Med hjälp av den **grundläggande** autentiseringsmetoden, anger du klient-ID som **användarnamn** och klienthemlighet som **lösenord**. Klient-ID och klienthemligheten finns tillgängliga i Marketo eller från din marketo-administratör ([http://developers.marketo.com/documentation/rest/custom-service/](http://developers.marketo.com/documentation/rest/custom-service/)). 
+5. Med hjälp av den **grundläggande** autentiseringsmetoden, anger du klient-ID som **användarnamn** och klienthemlighet som **lösenord**. Klient-ID:t och klienthemligheten finns tillgängliga i Marketo eller från din marketo-administratör ([http://developers.marketo.com/documentation/rest/custom-service/](http://developers.marketo.com/documentation/rest/custom-service/)). 
    
    ![](media/service-connect-to-marketo/pbi_marketosignin.png)
    

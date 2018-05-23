@@ -1,28 +1,20 @@
 ---
 title: Använd drillthrough i Power BI Desktop
 description: Lär dig att öka detaljnivån för data på en ny rapportsida i Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c78643d285099f7b7856704ac7ee350ff9f93a
-ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
+ms.openlocfilehash: 8c9a0d075c6d55baa1f518874fa668a3f0db8cb3
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Använd drillthrough i Power BI Desktop
 Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som fokuserar på en specifik enhet – till exempel en leverantör, kund eller tillverkare. Med den fokuserade rapportsidan kan användare högerklicka på en datapunkt i andra rapportsidor och använda drillthrough till sidan i fokus för att hämta information som har filtrerats för det sammanhanget.
@@ -71,6 +63,14 @@ När du sedan genomför drillthrough på någon visualisering ser du vilka filte
 ![tillfälliga filter i kursiv stil](media/desktop-drillthrough/drillthrough_07.png)
 
 Observera att du kan göra detta med sidorna för knappbeskrivningar, men det skulle vara en konstig upplevelse (knappbeskrivningen skulle inte verka som att den fungerar korrekt), så det rekommenderas inte att göra det med knappbeskrivningar.
+
+## <a name="add-a-measure-to-drillthrough"></a>Lägg till ett mått i drillthrough
+
+Förutom att överföra alla filter till drillthrough-fönstret kan du även lägga till ett mått (eller en sammanfattande numerisk kolumn) i drillthrough-området. Du behöver bara dra drillthrough-fältet till Drillthrough-kortet för att tillämpningen ska börja gälla. 
+
+![lägg till ett mått i drillthrough](media/desktop-drillthrough/drillthrough_08.png)
+
+När du lägger till ett mått (eller en sammanfattade numerisk kolumn) kan du gå till sidan när fältet används i området *Värde* i en visualisering.
 
 Svårare än så är det inte att använda **drillthrough** i dina rapporter. Det är ett bra sätt att få en utökad vy över den enhetsinformation som du har valt för ditt drillthrough-filter.
 

@@ -1,28 +1,20 @@
 ---
 title: Ansluta till Azure-granskningsloggar med Power BI
 description: Azure-granskningsloggarna för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bb88ca524df5dd8c683c38a1a54a9bd626dad840
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 22020595b4f972f112f10e16fe7ae7d7fd4abed7
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Ansluta till Azure-granskningsloggar med Power BI
 Du kan analysera och visualisera informationen som lagras i granskningsloggarna med Azure-granskningsloggarnas innehållspaket. Power BI hämtar dina data, skapar en färdig instrumentpanel och sedan rapporter baserade på dessa data.
@@ -67,8 +59,8 @@ Azure-granskningsloggarnas innehållspaket kräver åtkomst till granskningslogg
 ## <a name="finding-parameters"></a>Hitta parametrar
 Det finns två enkla sätt för att hitta ditt prenumerations-ID.
 
-1. Från https://portal.azure.com –&gt; Bläddra –&gt; Prenumerationer –&gt; Prenumerations-ID
-2. Från https://manage.windowsazure.com –&gt; Inställningar –&gt; Prenumerations-ID
+1. Från https://portal.azure.com -&gt; Bläddra –&gt; Prenumerationer –&gt; Prenumerations-ID
+2. Från https://manage.windowsazure.com -&gt; Inställningar –&gt; Prenumerations-ID
 
 Ditt prenumerations-ID är en lång uppsättning siffror och tecken, liknande exemplet i Steg \#4 ovan. 
 

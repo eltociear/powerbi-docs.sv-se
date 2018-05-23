@@ -1,28 +1,20 @@
 ---
 title: Ansluta till tyGraph med Power BI
 description: tyGraph för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3ff0a65d32a95a6926e2c808af119e31effd7e05
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 11073e7df57d4717e27fa73c6a5e1e315a9a8dcc
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Ansluta till tyGraph med Power BI
 Visualisera och utforska dina data med tyGraph i Power BI med Power BI-innehållspaket. Starta genom att ansluta till ditt tyGraph-konto och läsa in instrumentpanelen, rapporter och datauppsättningar. Innehållet inkluderar insikter såsom mått för aktivt engagemang (MAE-poäng) och bästa deltagare. Anpassa det ytterligare för att fokusera på den information som du är mest intresserad av.  Data uppdateras automatiskt enligt ett schema som du anger.

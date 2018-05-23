@@ -1,28 +1,20 @@
 ---
 title: Använda rapportteman i Power BI Desktop (förhandsversion)
 description: Lär dig hur du använder en anpassad färgpalett och tillämpar den på hela rapporten i Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8f4f8c257404eaca97f419603bac386da5bf7446
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 8ad48c0e5b78dabee7b1851c75b01e7fda611c1d
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Använda rapportteman i Power BI Desktop (förhandsversion)
 Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat (några undantag finns och de beskrivs längre fram i den här artikeln).
@@ -149,7 +141,7 @@ Den grundläggande JSON-filen har fem obligatoriska rader:
 
 * **name** – Detta är temanamnet och det enda obligatoriska fältet
 * **dataColors** – En lista med hexkodfärger som används för data i Power BI Desktops visuella objekt. Listan kan innehålla så många eller så få färger som du vill
-* **background**, **foreground** och **tableAccent** – Dessa värden är färger som ska användas i visuella **tabell**- och **matris**objekt. Hur dessa färger används beror på det specifika tabell- eller matrisformatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
+* **background**, **foreground** och **tableAccent** – Dessa värden är färger som ska tillämpas på olika typer av visuella objekt. **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
 
 Om du vill skapa en JSON-fil med ett utökat format och mer detaljerad kontroll över formateringen, måste du lägga till ett **visualStyles**-avsnitt i JSON-filen och kapsla formateringen som anges i avsnittet. Formatet i **visualStyles**-avsnittet ser ut ungefär så här:
 

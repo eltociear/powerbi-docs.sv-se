@@ -1,34 +1,31 @@
 ---
 title: Översikt över frågor och svar i Power BI-tjänsten och Desktop
 description: Dokumentationsöversikt för Power BI frågor och svar frågor med naturligt språk.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c48e118a6708cae901a01d1956b6a3d0ea6c0561
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: a1d39d10982f1d598ffce7e978c1b030e0a442d4
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Frågor och svar i Power BI-tjänsten och Power BI Desktop
 ## <a name="what-is-qa"></a>Vad är frågor och svar?
 Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk. Till exempel hur mycket sålde vi förra året.  Använd frågor och svar för att utforska dina data med hjälp av intuitiva, naturliga språkfunktioner och få svar i form av tabeller och diagram. Frågor och svar skiljer sig från en sökmotor – den ger dig bara resultat om data i Power BI.
 
 Den här artikeln är startpunkten för allt som rör frågor och svar. Välj en länk nedan för att lära dig hur frågor och svar fungerar i Power BI-tjänsten (instrumentpaneler och rapporter), Power BI Desktop (rapporter), Power BI Embedded och Power BI Mobile.  
+
+> [!NOTE]
+> **Frågor och svar om Power BI** har endast stöd för att besvara frågor med naturligt språk som ställs på engelska. Du kan även testa förhandsfunktionen för frågor på spanska. Öppna **Power BI Desktop** och gå till **Arkiv**, **Alternativ och inställningar**, **Alternativ** och leta sedan efter fliken **Förhandsversionsfunktioner**. Markera kryssrutan för **Frågor och svar om spanskt språkstöd**.  
+>
+>
 
 ![](media/power-bi-q-and-a/pbi_qa_boxsalessqft.png)
 

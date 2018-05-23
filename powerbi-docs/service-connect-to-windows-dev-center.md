@@ -1,28 +1,20 @@
 ---
 title: Ansluta till Windows Dev Center med Power BI
 description: Windows Dev Center för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 246c1dc22d120ac01fe5276bbd0a2dd95b0dbc1f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 6cdb4d6684ec97786c7fd10da7d22515a24e9dbc
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-windows-dev-center-with-power-bi"></a>Ansluta till Windows Dev Center med Power BI
 Utforska och övervaka dina Windows Dev Center-appanalysdata i Power BI med Power BI-innehållspaketet. Data uppdateras automatiskt en gång per dag.
@@ -73,7 +65,7 @@ Det här innehållspaketet kräver att minst en app publiceras till Windows Stor
 ## <a name="finding-parameters"></a>Hitta parametrar
 Du hittar program-ID:t för en app på sidan Appidentitet under Apphantering.
 
-Program-ID:t finns i slutet av din URL för Windows 10 Store, https://www.microsoft.com/store/apps/ **{applicationId}**
+Program-ID:t finns i slutet av din URL för Windows 10 Store, https://www.microsoft.com/store/apps/  **{applicationId}**
 
 ## <a name="next-steps"></a>Nästa steg
 [Kom igång i Power BI](service-get-started.md)

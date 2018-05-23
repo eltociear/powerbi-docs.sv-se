@@ -1,28 +1,20 @@
 ---
 title: Anslut till Project Madeira med Power BI
 description: Projektet Madeira för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b8c2e8ed9a8a4ca0c8aaf9848699f3ca3c24c8
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Anslut till Project ”Madeira” med Power BI
 Det är enkelt att hämta insikter i dina Project ”Madeira”-data med Power BI och Project ”Madeira”-innehållspaketet. Power BI hämtar dina data, både försäljning och ekonomi, och skapar sedan en instrumentpanel och rapporter baserade på dessa data.
@@ -38,9 +30,9 @@ Anslut till [innehållspaketet Project ”Madeira” Analytics](https://app.powe
     ![](media/service-connect-to-project-madeira/getdata.png)
 2. I rutan **Tjänster** väljer du **Hämta**.  
     ![](media/service-connect-to-project-madeira/services.png)
-3. Välj **Project ”Madeira”**och välj **Hämta**.  
+3. Välj **Project ”Madeira”** och välj **Hämta**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. När du uppmanas, anger du URL:en för Project ”Madeira”. URL: en måste följa följande mönster exakt https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') med Project ”Madeira”-företagsnamnet. Det finns inget avslutande snedstreck i slutet och anslutningen måste vara i formatet https. Mer information om hur du hittar den här URL:en finns [nedan](#FindingParams).  
+4. När du uppmanas, anger du URL:en för Project ”Madeira”. URL: en måste följa följande mönster exakt https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') med företagsnamnet för projektet ”Madeira”. Det finns inget avslutande snedstreck i slutet och anslutningen måste vara i formatet https. Mer information om hur du hittar den här URL:en finns [nedan](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. När du uppmanas, väljer du Basic som autentiseringsmetod. Ange din e-postadress för Project ”Madeira” som användarnamn och ange sedan web service-åtkomstnyckeln för ditt Project ”Madeira”-konto som lösenord. Om du redan är inloggad på Project ”Madeira” i webbläsaren, behöver du kanske inte ange några autentiseringsuppgifter. Visa information om att skapa den här åtkomstnyckeln [nedan](#FindingParams).  

@@ -1,27 +1,19 @@
 ---
 title: Visa dina data offline i Power BI-mobilapparna
-description: "Läs om en fördel med att visa Power BI i en mobilapp istället för en mobil webbläsare: du kan se dina data, även om du inte är ansluten till ett nätverk."
-services: powerbi
-documentationcenter: 
+description: 'Läs om en fördel med att visa Power BI i en mobilapp istället för en mobil webbläsare: du kan se dina data, även om du inte är ansluten till ett nätverk.'
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: 6ed6f2898fa99075c6130cd60c083f619b6ba258
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 5dd171ccd7d8859286abeac2f87771b454421448
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Visa dina data offline i Power BI-mobilapparna
 Gäller för:
@@ -60,7 +52,7 @@ Power BI ger tydliga indikatorer när du går till och från offline-läge, samt
 När du är offline med Power BI på din mobila enhet, kan du stöta på dessa begränsningar:
 
 * Power BI kan cachelagra upp till 250 MB data offline.
-* Vissa paneltyper kräver en aktiv serveranslutning så de finns inte tillgängliga offline &#151; till exempel Bing-kartpaneler och vissa anpassade paneler.
+* Vissa paneltyper kräver en aktiv serveranslutning så de finns inte tillgängliga offline & #151; till exempel Bing-kartpaneler och vissa anpassade paneler.
 * Hela Excel-arbetsböcker i Power BI är inte tillgängliga offline.
 * Du kan se Reporting Services-mobila rapporter och KPI:er offline, om du har visat dem när du var ansluten. De uppdateras inte i bakgrunden. De uppdateras varje gång du öppnar dem. 
 

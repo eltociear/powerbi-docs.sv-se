@@ -1,27 +1,19 @@
 ---
 title: Webbläsarstöd för Power BI-rapportserver
 description: Lär dig mer om vilka webbläsarversioner som stöds för att hantera och visa Power BI-rapportservern och rapportvisningskontrollerna.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maghan
-ms.openlocfilehash: a0ac612ec132d5aefc8353b4ef92212913e3db5a
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 23eea014ca4554a2df676cf1fe0be54c2b69d15a
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Webbläsarstöd för Power BI-rapportserver
 Lär dig mer om vilka webbläsarversioner som stöds för att hantera och visa Power BI-rapportservern och rapportvisningskontrollerna.
@@ -54,7 +46,7 @@ Följande är en aktuell lista med de webbläsare som stöds för webbportalen.
 
 * Google Chrome (+)
   
-  **(+)**  Senaste offentligt utgivna versionen
+  **(+) ** Senaste offentligt utgivna versionen
 
 ## <a name="browser-requirements-for-the-report-viewer-web-control-2015"></a>Webbläsarkrav för webbkontrollen för rapportvisningsprogrammet (2015)
 Följande är en aktuella list med de webbläsare som stöds för webbkontrollen för rapportvisningsprogrammet. Rapportvisningsprogrammet stöder visning av rapporter från webbportalen.
@@ -72,7 +64,7 @@ Följande är en aktuella list med de webbläsare som stöds för webbkontrollen
 
 * Apple Safari (+)
   
-  **(+)**  Senaste offentligt utgivna versionen
+  **(+) ** Senaste offentligt utgivna versionen
 
 ### <a name="authentication-requirements"></a>Autentisering krävs
 Webbläsaren stöder specifika autentiseringsscheman som måste hanteras av rapportservern för att klientbegäran ska lyckas. I följande tabell visas de standardautentiseringstyper som stöds av varje webbläsare som körs på ett Windows-operativsystem.
@@ -85,7 +77,7 @@ Webbläsaren stöder specifika autentiseringsscheman som måste hanteras av rapp
 | **Mozilla Firefox**(+) |NTLM, Basic |NTLM |Ja. Standardinställningarna för autentisering fungerar med Firefox. |
 | **Apple Safari**(+) |NTLM, Basic |Grundläggande |Ja. Standardinställningarna för autentisering fungerar med Safari. |
 
- **(+)**  Senaste offentligt utgivna versionen
+ **(+) ** Senaste offentligt utgivna versionen
 
 ### <a name="script-requirements-for-viewing-reports"></a>Skriptkrav för att visa rapporter
 Konfigurera webbläsaren för att köra skript om du vill använda rapportvisningsprogrammet.
@@ -116,7 +108,7 @@ Använd en webbläsare som har stöd för skript är aktiverat. Om webbläsaren 
 * Google Chrome (+)
 * Mozilla Firefox (+)
   
-  **(+)**  Senaste offentligt utgivna versionen
+  **(+) ** Senaste offentligt utgivna versionen
 
 ## <a name="next-steps"></a>Nästa steg
 [Handbok för administratör](admin-handbook-overview.md)  

@@ -1,28 +1,20 @@
 ---
 title: Ansluta till Xero med Power BI
 description: Xero för Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d9f61067f89fb031926428109ef5dac5bcfd6392
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d3074602af73d937e64a9155d3d197b91b1b1ae8
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Ansluta till Xero med Power BI
 Xero är en lättanvänd redovisningsprogramvara online som har specialutformats för små företag. Du kan skapa övertygande visualiseringar utifrån dina Xero-siffror med det här Power BI-innehållspaketet. Standardinstrumentpanelen innehåller många mått för småföretag som kontantposition, inkomster och utgifter, vinst-/förlusttrend, gäldenärsdagar och räntabilitet.
@@ -102,7 +94,7 @@ Ange ett namn för din organisation som kan spåras i Power BI. På så sätt ka
 * Om det inte går att uppdatera innehållspaketet, kan du kontrollera om du har anslutit till samma organisation mer än en gång i Power BI. Xero tillåter endast en aktiv anslutning till en organisation och du kan se ett felmeddelande om att dina autentiseringsuppgifter är ogiltiga om du ansluter till samma mer än en gång.  
 * Vid problem med att ansluta Xero-innehållspaketet för Power BI, som felmeddelanden eller mycket långsamma inläsningstider, kan du börja med att rensa cacheminnet/cookies, starta om webbläsaren och sedan återansluta till Power BI.  
 
-För övriga problem, öppna ett supportärende på http://support.power bi.com om problemet kvarstår.
+För övriga problem kan du öppna ett supportärende på http://support.powerbi.com om problemet kvarstår.
 
 ## <a name="next-steps"></a>Nästa steg
 [Kom igång i Power BI](service-get-started.md)
