@@ -14,7 +14,7 @@ Om du är **nybörjare** på Power BI hjälper den här kursen dig att komma ig�
 **Power BI** kan vara enkelt och snabbt och kan på ett ögonblick skapa snabba insikter från ett Excel-kalkylblad eller en lokal databas. Men **Power BI** är också robust och håller företagsklass och möjliggör omfattande modellering och analys i realtid samt anpassad utveckling. Så det kan vara ditt personliga verktyg för rapportering och visualisering och även fungera som analys- och beslutsmotor till grupprojekt, avdelningar eller hela bolag.
 
 ## <a name="the-parts-of-power-bi"></a>Power BI:s delar
-Power BI består av ett Windows-skrivbordsprogram som heter **Power BI Desktop**, en SaaS-tjänst (*programvara som en tjänst*) online som kallas **Power BI-tjänsten** och Power BI**-mobilappar** som finns tillgängliga för Windows-telefoner och -surfplattor, samt för iOS- och Android-enheter.
+Power BI består av ett Windows-skrivbordsprogram som heter **Power BI Desktop**, en SaaS-tjänst (*programvara som en tjänst*) online som kallas **Power BI-tjänsten** och Power BI **-mobilappar** som finns tillgängliga för Windows-telefoner och -surfplattor, samt för iOS- och Android-enheter.
 
 ![](media/0-0-what-is-power-bi/c0a0_2.png)
 

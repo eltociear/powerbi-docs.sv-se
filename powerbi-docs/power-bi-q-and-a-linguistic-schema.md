@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/20/2018
+ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: b7fb59e7fca6a3211b542b2a942565d6865e560c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: c504280257a959ccd7a46e61b9d377c22b76c14d
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Språkmodellering och språkschemat 
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Ännu mer kraftfullt är det när dina data svarar, vilket är precis vad du kan åstadkomma med Frågor och svar i Power BI. När du ställer en fråga till Frågor och svar i Power BI, gör funktionen vad den kan för att svara korrekt. 
@@ -53,10 +53,7 @@ Vi rekommenderar att du använder Visual Studio Code när du redigerar YAML-file
 
     ![Hur vill du öppna den här filen?](media/power-bi-q-and-a-linguistic-schema/power-bi-visual-code.png)
 
-4. Installera tillägget YAML Support by Red Hat (YAML-stöd via Red Hat) i Visual Studio Code.
-
-   
-
+4. Installera tillägget YAML Support by Red Hat (YAML-stöd via Red Hat) i Visual Studio Code.    
     a. Välj fliken **Tillägg** (den sista fliken till vänster) eller tryck på CTRL+SKIFT+X.    
     ![ikon för tillägg](media/power-bi-q-and-a-linguistic-schema/power-bi-extensions.png)    
     b. Leta efter ”yaml” och välj **YAML Support by Red Hat** (YAML-stöd via Red Hat) i listan.    

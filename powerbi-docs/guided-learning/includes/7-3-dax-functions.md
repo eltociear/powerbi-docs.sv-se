@@ -50,9 +50,9 @@ Samlingen av **logiska** funktioner i DAX inkluderar:
 * IF
 * IFERROR
 
-Dessa särskilda funktioner kan också anges med *operatorer*. Till exempel **AND** kan skrivas som (ersättas med)  **&&**  i en DAX-formel.
+Dessa särskilda funktioner kan också anges med *operatorer*. Till exempel **AND** kan skrivas som (ersättas med) **&&** i en DAX-formel.
 
-Du kan använda operatorer (som  **&&** ) när du behöver fler än två villkor i din formel, men i övrigt är det bästa praxis att använda själva funktionsnamnet (som **AND**) för DAX-kodens läsbarhet.
+Du kan använda operatorer (som **&&**) när du behöver fler än två villkor i din formel, men i övrigt är det bästa praxis att använda själva funktionsnamnet (som **AND**) för DAX-kodens läsbarhet.
 
 ## <a name="information-functions"></a>Informationsfunktioner
 **Informations**funktionerna i DAX inkluderar:

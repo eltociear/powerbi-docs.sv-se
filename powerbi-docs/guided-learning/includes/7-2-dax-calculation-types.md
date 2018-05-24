@@ -32,7 +32,7 @@ Du kan skapa beräknade kolumner i Power BI Desktop genom att välja **Ny kolumn
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_2a.png)
 
-När du väl har valt knappen **Ny kolumn** fylls **formelfältet** med ett kolumnnamn (som du naturligtvis kan ändra så att de passar din formel) och **=**operatorn, och den nya kolumnen visas i datarutnätet, så som visas i följande bild.
+När du väl har valt knappen **Ny kolumn** fylls **formelfältet** med ett kolumnnamn (som du naturligtvis kan ändra så att de passar din formel) och **=** operatorn, och den nya kolumnen visas i datarutnätet, så som visas i följande bild.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_3.png)
 
