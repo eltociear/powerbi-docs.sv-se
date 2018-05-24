@@ -1,35 +1,27 @@
 ---
-title: "Tredjepartstjänst: Facebook-anslutningsprogram för Power BI Desktop"
-description: "Tredjepartstjänst: Facebook-anslutningsprogram för Power BI Desktop"
-services: powerbi
-documentationcenter: 
+title: 'Tredjepartstjänst: Facebook-anslutningsprogram för Power BI Desktop'
+description: 'Tredjepartstjänst: Facebook-anslutningsprogram för Power BI Desktop'
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 894791ddc4eb632ad4dc0ee55f19bbadad5e28d6
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 6e33e1a27903cc3fbce5c3f504287fa96dbf8305
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="facebook-connector-for-power-bi-desktop"></a>Facebook-anslutningsprogram för Power BI Desktop
 Facebook-anslutningsprogrammet i **Power BI Desktop** använder sig av Facebook Graph API. Det innebär att funktioner och tillgänglighet kan variera över tid.
 
 Du kan se en [självstudiekurs om Facebook-anslutningsprogrammet för Power BI Desktop](desktop-tutorial-facebook-analytics.md).
 
-Facebook gjorde v1.0 av sitt Graph API inaktuellt 30<sup>:e</sup> april 2015. Power BI använder sig av Graph API i bakgrunden för Facebook-anslutningsprogrammet så att du kan ansluta till dina data och analysera dem.
+Facebook gjorde v1.0 av sitt Graph API inaktuellt 30:e <sup>april</sup> 2015. Power BI använder sig av Graph API i bakgrunden för Facebook-anslutningsprogrammet så att du kan ansluta till dina data och analysera dem.
 
 Frågor som skapats innan 30 <sup>april</sup> 2015 fungerar inte längre eller returnerar mindre data. Efter 30 april<sup></sup> 2015, använder sig Power BI av v2.8 i alla anrop till Facebook-API:t. Om din fråga skapades innan 30 April 2015 och du inte har använt den sen dess, behöver du förmodligen autentisera den igen, för att godkänna den nya uppsättningen behörigheter som vi ber om.
 

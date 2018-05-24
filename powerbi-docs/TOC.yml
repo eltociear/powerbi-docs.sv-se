@@ -846,7 +846,9 @@
           items:
             - name: Kom igång med Power BI för Android-appen
               href: mobile-android-app-get-started.md
-            - name: Åtgärda att ”ditt företags SSL-certifikat inte är betrott”
+            - name: Åtgärda "Ditt företags SSL-certifikat är inte betrott"
+              href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+            - name: Åtgärda "Android System WebView måste uppdateras"
               href: mobile-android-error-update-android-system-webview.md
         - name: iOS
           items:
