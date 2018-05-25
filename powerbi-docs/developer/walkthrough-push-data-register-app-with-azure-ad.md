@@ -1,27 +1,19 @@
 ---
 title: Registrera en app med Azure AD
-description: "Genomgång – Skicka data i en dataset – Registrera en app med Azure AD"
-services: powerbi
-documentationcenter: 
+description: Genomgång – Skicka data i en dataset – Registrera en app med Azure AD
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 48ab2a51a479269b8846288b64089964a0544681
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>Steg 1: Registrera en app med Azure AD
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -39,7 +31,7 @@ Här följer stegen för att registrera en app i Azure AD.
 2. Klicka på **Logga in med ditt befintliga konto** och logga in på ditt Power BI-konto.
 3. Ange ett **Appnamn**, till exempel ”testapp för att skicka data”.
 4. Välj **inbyggd app** som **apptyp**.
-5. Ange ett **omdirigerings-URL** som **https://login.live.com/oauth20_desktop.srf**. En omdirigerings-uri ger **Azure AD** mer information om den **inbyggda kundappen** som den ska autentisera. Standard-Uri för ett klientprogram är https://login.live.com/oauth20_desktop.srf.
+5. Ange en **omdirigerings-URL**, som **https://login.live.com/oauth20_desktop.srf**. En omdirigerings-uri ger **Azure AD** mer information om den **inbyggda kundappen** som den ska autentisera. Standard-URI för ett klientprogram är https://login.live.com/oauth20_desktop.srf.
 6. För **Välj API:er för åtkomst**, välj **Läsa och skriva alla datauppsättningar**. För alla behörigheter för Power BI-appen, se [Power BI behörigheter](power-bi-permissions.md).
 7. Klicka på **Registrera app** och spara det **klient-ID** som genererades. En **klient-ID** identifierar appen i Azure AD.
 

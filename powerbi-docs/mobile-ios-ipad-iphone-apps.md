@@ -1,34 +1,26 @@
 ---
-title: "Utforska dina data i Power BI-mobilappen på mobilapp för iOS-enheter"
-description: "Visa och interagera med Power BI-instrumentpaneler och -rapporter, och mobila rapporter och KPI:er i Reporting Services, på din iPad, iPhone, Apple Watch och iPod Touch."
-services: powerbi
-documentationcenter: 
+title: Utforska dina data i Power BI-mobilappen på mobilapp för iOS-enheter
+description: Visa och interagera med Power BI-instrumentpaneler och -rapporter, och mobila rapporter och KPI:er i Reporting Services, på din iPad, iPhone, Apple Watch och iPod Touch.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 0b09706b8d8f7f4dbf9c2f8d3f6fc844383ce6be
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b0785555e288084f97d06d05161ebef78d21731c
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="explore-your-data-on-the-power-bi-mobile-app-for-ios-devices"></a>Utforska dina data i Power BI-mobilappen på mobilapp för iOS-enheter
 Microsoft Power BI-appen för iOS levererar mobila BI-upplevelse på iPad, iPhone, Apple Watch och iPod Touch. Apparna ger pekaktiverad mobilåtkomst i realtid till viktig företagsinformation så att du kan visa och interagera med din organisations Power BI-instrumentpaneler och -rapporter samt mobila rapporter och KPI:er i Reporting Services – var du än befinner dig. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms.
 
 ![iPhone och iPad](media/mobile-ios-ipad-iphone-apps/pbi_ipad_iphonedevices.png)
 
-Gå till Power BI (https://powerbi.com) för att registrera dig för tjänsten.
+Gå till Power BI (https://powerbi.com) för att registrera dig för Power BI-tjänsten.
 
 Se [nyheter i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 

@@ -1,28 +1,20 @@
 ---
 title: Anslut till en Impala-databas i Power BI Desktop
 description: Anslut enkelt till och använd en Impala-databas i Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bef087b485573ba9a629887bfb05d875c88c8b4c
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 9b00120a0c4c22ba8f031663ab19d94d2c482d3b
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Anslut till en Impala-databas i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **Impala**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop.
@@ -36,7 +28,7 @@ I **Impala**-fönstret som visas, skriver eller klistrar du in namnet på din Im
 
 ![](media/desktop-connect-impala/connect_impala_3a.png)
 
-När du uppmanas, skriver du in ditt användarnamn och lösenord, eller ansluter anonymt, bägge alternativ stöds.
+När du uppmanas ange dina autentiseringsuppgifter eller anslut anonymt. Impala-anslutningsappen stöder Anonymouse-, Basic- (användarnamn + lösenord) och Windows-autentisering.
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
@@ -52,7 +44,7 @@ När du har anslutit, visas ett **navigator**-fönster som visar data som är ti
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Det finns några begränsningar och överväganden att tänka på med anslutningsappen för **Impala**:
 
-* Framtida planer inkluderar att aktivera stöd för uppdatering med **Power BI Gateway**.
+* Impala-anslutningsappen stöds på lokala datagateway med hjälp av tre autentiseringsmekanismer.
 
 ## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:

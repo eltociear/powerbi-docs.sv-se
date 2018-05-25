@@ -1,38 +1,21 @@
 ---
-title: 'Fel: '
-need: 
-to: 
-update: 
-android: 
-system: 
-webview": 
-'-': 
-power: 
-bi": 
-description: "När du loggar in i Android-mobilappen, kan du få ett meddelande om att du behöver uppdatera Android-systemets webbvy."
-services: powerbi
-documentationcenter: 
+title: Åtgärda ”Android-systemets webbvy behöver uppdateras” – Power BI
+description: När du loggar in i Android-mobilappen, kan du få ett meddelande om att du behöver uppdatera Android-systemets webbvy.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 1a478d8465f05fcc4218d049101c239ed5559fc9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 1b2e440f1c25468f4e947256720ef236a927b23c
+ms.sourcegitcommit: aa8045e42b979206c600bce4a8d17de1f0620462
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="error-need-to-update-android-system-webview---power-bi"></a>Fel: Android-systemets webbvy behöver uppdateras – Power BI
+# <a name="fixing-need-to-update-android-system-webview"></a>Åtgärda ”Android-systemets webbvy behöver uppdateras”
 När du loggar in i Android-mobilappen för Microsoft Power Bi, kan du få ett meddelande om att du behöver uppdatera Android-systemets webbvy. 
 
 Anta att du går till Google Play-butiken och uppdaterar Android-systemets webbvy och sedan går tillbaka och försöker öppna Power BI-mobilappen igen. 

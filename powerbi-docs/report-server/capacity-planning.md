@@ -1,27 +1,19 @@
 ---
-title: "Vägledning för kapacitetsplanering för Power BI-rapportserver"
-description: "Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av belastningstestkörningar av olika arbetsbelastningar."
-services: powerbi
-documentationcenter: 
+title: Vägledning för kapacitetsplanering för Power BI-rapportserver
+description: Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av belastningstestkörningar av olika arbetsbelastningar.
 author: parthsha
 manager: kfile
-backup: maghan
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: maghan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: 36d12e520cd53abc0159e698f3f469f62f884c95
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 94f137f0b8627bf34e78d9ac36574c64dd5d4752
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vägledning för kapacitetsplanering för Power BI-rapportserver
 Power BI Report Server är en rapporteringslösning som för företag och BI som kunderna kan använda och distribuera lokalt, bakom brandväggen. Den kombinerar stödet för interaktiva rapporter hos Power BI Desktop med den lokala serverplattformen för SQL Server Reporting Services. Med intensiv och växande användning av analys och rapportering i företag, kan det vara en utmaning att budgetera maskinvaruinfrastrukturen och de programvarulicenser som krävs för att skala upp till en företagsanvändarbas. Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. Medan olika organisationers rapporter, frågor och användningsmönster varierar mycket, utgör de resultat som visas i det här dokumentet, tillsammans med faktiska tester och en detaljerad beskrivning av hur de utfördes, en referenspunkt för vem som helst i tidigt stadium av planeringsprocessen för att distribuera Power BI-rapportservern.
@@ -57,7 +49,7 @@ Distributionen av Power BI-rapportservern består av följande virtuella datorer
 En fullständig konfiguration av varje virtuell dator som används i topologin finns i bilaga 1.1, Topologi för Power BI-rapportservern och bilaga 1.2 Power BI-rapportserverns konfiguration av virtuella datorer.
 
 ### <a name="tests"></a>Tester
-Testerna som används i belastningstestkörningarna är allmänt tillgängliga i ett GitHub-projekt som heter Reporting Services LoadTest (se https://github.com/Microsoft/Reporting-Services-LoadTest). Med det här verktyget kan du studera prestanda, tillförlitlighet, skalbarhet och egenskaper för återställning av SQL Server Reporting Services och Power BI-rapportservern. Det här projektet består av fyra testfall:
+Testerna som används i testkörningarna för belastningen är offentligt tillgängliga i ett GitHub-projektet som kallas Reporting Services-LoadTest (se https://github.com/Microsoft/Reporting-Services-LoadTest). Med det här verktyget kan du studera prestanda, tillförlitlighet, skalbarhet och egenskaper för återställning av SQL Server Reporting Services och Power BI-rapportservern. Det här projektet består av fyra testfall:
 
 * Tester som simulerar återgivningen av Power BI-rapporter,
 * Tester som simulerar återgivningen av mobilrapporter,
@@ -121,7 +113,7 @@ Resultaten i den här artikeln har härletts från att köra en specifik uppsät
 ### <a name="1-topology"></a>1 Topologi
 **1.1 Topologi för Power BI-rapportservern**
 
-För att endast fokusera på Power BI-rapportserverns beteende under olika konfigurationer åtgärdades VM-konfigurationen för varje typ av dator (förutom för den dator som är värd för Power BI-rapportservern). Varje dator har etablerats enligt andra generationens (v2) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om varje VM-storlek under avsnittet ”Allmänt” på https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+För att endast fokusera på Power BI-rapportserverns beteende under olika konfigurationer åtgärdades VM-konfigurationen för varje typ av dator (förutom för den dator som är värd för Power BI-rapportservern). Varje dator har etablerats enligt andra generationens (v2) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om varje VM-storlek under avsnittet ”Generell användning” på https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
 
 | Virtuell datortyp | Processor | Minne | Azure VM-storlek |
 | --- | --- | --- | --- |
@@ -131,7 +123,7 @@ För att endast fokusera på Power BI-rapportserverns beteende under olika konfi
 
 **1.2 Power BI-rapportserver, konfiguration av virtuell dator** 
 
-Olika konfigurationer för processor och minnet användes för den virtuella datorn som är värd för Power BI-rapportservern. Till skillnad från andra virtuella datorer har varje dator etablerats enligt tredje generationens (v3) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om denna VM-storlek under avsnittet ”Allmänt” på https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Olika konfigurationer för processor och minnet användes för den virtuella datorn som är värd för Power BI-rapportservern. Till skillnad från andra virtuella datorer har varje dator etablerats enligt tredje generationens (v3) D-seriedatorer med premium-lagringsdiskar. Du hittar detaljerad information om denna VM-storlek under avsnittet ”Generell användning” på https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
 
 | Virtuell dator | Processor | Minne | Azure VM-storlek |
 | --- | --- | --- | --- |
@@ -141,11 +133,11 @@ Olika konfigurationer för processor och minnet användes för den virtuella dat
 ### <a name="2-run-the-loadtest-tool"></a>2 Kör verktyget LoadTest
 Om du vill köra verktyget Reporting Services LoadTest mot din eller en Microsoft Azure-distribution av Power BI-rapportservern ska du följa dessa steg.
 
-1. Klona projektet Reporting Services LoadTest från GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest).
+1. Klona LoadTest för Reporting Services-projektet från GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest).
 2. Du hittar lösningsfilen RSLoadTests.sln i projektkatalogen. Öppna filen i Visual Studio 2015 eller senare.
 3. Avgör om du vill köra det här verktyget mot din distribution av Power BI-rapportserver och en distribution av Power BI-rapportserver i Microsoft Azure. Om du tänker köra den mot din egen distribution går du till steg 5.
-4. Följ anvisningarna som visas på https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure för att skapa en Power BI-rapportservermiljö i Azure.
-5. Följ anvisningarna som visas på https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution för att köra testerna när du är klar med att distribuera miljön.
+4. Följ anvisningarna som visas på https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure för att skapa en Power BI Report Server-miljö i Azure.
+5. När du är klar med att distribuera miljön följer du anvisningarna som visas på https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution för att köra testerna.
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

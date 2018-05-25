@@ -1,34 +1,26 @@
 ---
-title: "Skapa en datauppsättning"
-description: "Genomgång – Skicka data till en datauppsättning – Skapa en datauppsättning i Power BI"
-services: powerbi
-documentationcenter: 
+title: Skapa en datauppsättning
+description: Genomgång – Skicka data till en datauppsättning – Skapa en datauppsättning i Power BI
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 31677a3d92ece6944825eccad190863f67c3a145
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: c94f0a94cfc2e59942a17b542efb7b1bb641174c
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Steg 3: Skapa en datauppsättning i Power BI
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 I **steg 2** av Skicka data till en datauppsättning [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) hämtade du en token för autentisering till **Azure AD**. I det här steget använder du en token för att anropa åtgärden [Skapa Dataset](https://msdn.microsoft.com/library/mt203562.aspx).
 
-För att anropa en REST-resurs kan du använda en webbadress som söker efter resursen och skicka en JSON-sträng (JavaScript Object Notation) som beskriver datauppsättningen till resursen i Power BI-tjänsten. En REST-resurs identifierar en del av Power BI-tjänsten som du vill arbeta med. För att skicka data till datauppsättningen är målresursen en **Datauppsättning**. Webbadressen som identifiera en datauppsättning är https://api.PowerBI.com/v1.0/myorg/datasets. Om du skickar data i en grupp, är webbadressen https://api.PowerBI.com/v1.0/myorg/groups/{grupp_id}/datasets.
+För att anropa en REST-resurs kan du använda en webbadress som söker efter resursen och skicka en JSON-sträng (JavaScript Object Notation) som beskriver datauppsättningen till resursen i Power BI-tjänsten. En REST-resurs identifierar en del av Power BI-tjänsten som du vill arbeta med. För att skicka data till datauppsättningen är målresursen en **Datauppsättning**. Den URL som identifierar en datamängd är https://api.PowerBI.com/v1.0/myorg/datasets. Om du sänder data i en grupp, är URL-adressen https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 Lägg till den token som du fick i [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) i en rubrik för begäran för att autentisera Power BI REST-åtgärden:
 
