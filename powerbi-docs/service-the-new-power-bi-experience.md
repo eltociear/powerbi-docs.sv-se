@@ -8,14 +8,14 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 05/07/2018
+ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 157103ff224cf0d71e2ca14106903b9c89fdc3d4
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 004b9c921de9e94cb52f90cdea4815acd6162175
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Snabbstart – Hitta rätt i Power BI-tjänsten
 
@@ -125,6 +125,19 @@ Du kan också sortera innehåll efter namn eller ägare.
 ![sortera innehåll](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 Läs mer i [Power BI-navigering: söka efter, sortera, filtrera](service-navigation-search-filter-sort.md)
+
+## <a name="clean-up-resources"></a>Rensa resurser
+När du har slutfört den här snabbstarten kan du ta bort exempelinstrumentpanelen med detaljhandelsanalys, rapporter och datauppsättningen om du vill.
+
+1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.    
+2. I det vänstra navigeringsfönstret väljer du **Arbetsytor > Min arbetsyta**.  
+    Ser du den gula stjärnan som visar att det är en favorit?    
+3. På fliken **Instrumentpaneler** väljer du papperskorgens ikon för att **ta bort** bredvid instrumentpanelen för detaljhandelsanalys.    
+
+    ![ta bort instrumentpanel](media/service-the-new-power-bi-experience/power-bi-cleanup.png)
+
+4. Välj fliken **Rapporter** och gör samma sak för rapporten med detaljhandelsanalys.
+1. Välj fliken **Datauppsättningar** och gör samma sak för datauppsättningen med detaljhandelsanalys.
 
 ## <a name="next-steps"></a>Nästa steg
 

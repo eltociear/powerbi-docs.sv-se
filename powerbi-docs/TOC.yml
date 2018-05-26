@@ -96,6 +96,8 @@
                   href: service-print.md
                 - name: Prenumerera på en rapport eller instrumentpanel
                   href: service-report-subscribe.md
+                - name: Många sätt att öppna en rapport
+                  href: service-report-open.md
                 - name: Byt namn på innehåll i Power BI
                   href: service-rename.md
                 - name: Visa instrumentpaneler och rapporter i helskärmsläge (TV-läge)
