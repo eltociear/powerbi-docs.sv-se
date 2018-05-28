@@ -1022,7 +1022,7 @@
           href: report-server/system-requirements.md
         - name: Stöd för webbläsare
           href: report-server/browser-support.md
-        - name: Rapportservern för administratörer
+        - name: Administratörsöversikt
           href: report-server/admin-handbook-overview.md
         - name: Rapportservern grunder
           items:
@@ -1080,6 +1080,8 @@
               href: report-server/migrate-report-server.md
             - name: Konfigurera Kerberos för att använda Power BI-rapporter
               href: report-server/configure-kerberos-powerbi-reports.md
+            - name: Konfigurera mobilappåtkomst via fjärranslutning
+              href: report-server/configure-powerbi-mobile-apps-remote.md
             - name: Vara värd för Excel-arbetsböcker
               href: report-server/excel-oos.md
     - name: Referens
