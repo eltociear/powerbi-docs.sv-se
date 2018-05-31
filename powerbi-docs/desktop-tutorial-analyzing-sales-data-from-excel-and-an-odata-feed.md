@@ -1,6 +1,6 @@
 ---
-title: 'Självstudie: Analysera försäljningsdata från Excel och en OData-feed i Power BI Desktop'
-description: 'Självstudie: Analysera försäljningsdata från Excel och en OData-feed'
+title: 'Självstudie: Kombinera data från Excel och en OData-feed i Power BI Desktop'
+description: 'Självstudier: Kombinera data från Excel och en OData-feed'
 services: powerbi
 documentationcenter: ''
 author: davidiseminger
@@ -15,220 +15,254 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
-ms.author: davidi
+ms.date: 05/02/2018
+ms.author: v-thepet
 LocalizationGroup: Learn more
-ms.openlocfilehash: aad93a6c636fb0d75ad89f9e3d9eb70ec203cc88
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 00c4915df0e18504ec6f5d26540d9289c2f5ddb2
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33945996"
 ---
-# <a name="tutorial-analyzing-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Analysera försäljningsdata från Excel och en OData-feed
-Med **Power BI Desktop** kan du ansluta till alla typer av datakällor och sedan kombinera och forma dem på ett sätt som gör det lättare att skapa intressant dataanalys och visualiseringar. I den här kursen lär du dig hur du kombinerar data från två datakällor. 
+# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Självstudier: Kombinera försäljningsdata från Excel och en OData-feed
 
-Data är ofta fördelade över många datakällor, till exempel produktinformation i den databas och säljinformation i en annan. De tekniker som du lär dig i det här dokumentet omfattar en Excel-arbetsbok och en OData-feed, men dessa metoder kan användas för andra datakällor, som SQL Server-frågor, CSV-filer eller alla datakällor i Power BI Desktop.
+Det är vanligt att sprida data över flera datakällor, såsom produktinformation i en databas och försäljningsinformation i en annan. Med **Power BI Desktop**, kan du kombinera data från olika källor för att skapa intressanta, attraktiva dataanalyser och visualiseringar. 
 
-I den här självstudien importerar du data från Excel (som innehåller produktinformation) och från OData (som innehåller beställningsdata). Du utför transformerings- och aggregeringssteg och kombinerar data från både källor för att skapa rapporten **totalförsäljning per produkt och år** som innehåller interaktiva visualiseringar. 
-
-Den slutgiltiga produkten ser ut så här:
-
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
-
-Du behöver produktarbetsboken för att följa stegen i den här självstudiekursen. Gör så här för att hämta den: **[Klicka här för att hämta Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**
-
-I dialogrutan **Spara som** namnger du filen **Products.xlsx**.
-
-## <a name="task-1-get-product-data-from-an-excel-workbook"></a>Aktivitet 1: Hämta produktdata från en Excel-arbetsbok
-I den här uppgiften importerar du produkter från filen Products.xlsx till Power BI Desktop.
-
-### <a name="step-1-connect-to-an-excel-workbook"></a>Steg 1: Anslut till en Excel-arbetsbok
-1. Starta Power BI Desktop.
-2. Välj Home-menyfliksområdet och välj **Hämta data**. Excel är en av de **vanligaste** dataanslutningarna så du kan välja den direkt från menyn **Hämta data**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
-3. Om du klickar på Hämta data direkt, kan du också välja **Arkiv \> Excel** och välja **Connect.**
-4. I dialogrutan **Öppna fil** markerar du filen **Products.xlsx**.
-5. I fönstret **Navigator** markerar du tabellen **Produkter** och väljer sedan **Redigera**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
-
-### <a name="step-2-remove-other-columns-to-only-display-columns-of-interest"></a>Steg 2: Ta bort övriga kolumner för att bara visa intressanta kolumner
-I det här steget tar du bort alla kolumner utom **ProductID**, **ProductName**, **UnitsInStock** och **QuantityPerUnit**. I Power BI Desktop finns det flera sätt att utföra samma åtgärd. Många knappar i menyfliksområdet kan uppnås genom att använda snabbmenyn på en kolumn eller en cell.
-
-Power BI Desktop innehåller frågeredigeraren där du formar och transformerar dina dataanslutningar. Frågeredigeraren öppnas automatiskt när du väljer **Redigera** från **Navigator**. Du gör detta genom att välja **Redigera frågor** från menyfliksområdet **Start** i Power BI Desktop. Följande steg utförs i frågeredigeraren.
-
-1. Välj kolumnerna **ProductID**, **ProductName**, **QuantityPerUnit**, och **UnitsInStock** i frågeredigeraren (Använd  **ctrl + klicka** för att välja mer än en kolumn eller **Skift + klicka** för att välja kolumner som är bredvid varandra).
-2. Välj **Ta bort kolumner** \> **Ta bort andra kolumner** från menyfliksområdet eller högerklicka på en kolumnrubrik och klicka på **Ta bort andra kolumner**.
-
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_removeothercolumns.png)
-
-### <a name="step-3-change-the-data-type-of-the-unitsinstock-column"></a>Steg 3: Ändra datatypen för kolumnen UnitsInStock
-När frågeredigeraren ansluter till data går den igenom varje fält för att avgöra den bästa datatypen. För Excel-arbetsböcker ska produkter i lager ska alltid vara ett heltal. I det här steget bekräftar du att datatypen för kolumnen **UnitsInStock** är heltal.
-
-1. Välj kolumnen **UnitsInStock**.
-2. Välj den nedrullningsbara knappen **Datatyp** i menyfliksområdet **Start**.
-3. Om den inte redan är ett heltal, väljer du **Heltal** för datatyp i listrutan (knappen **Datatyp:** visar även datatypen för den aktuella markeringen).
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_wholenumber.png)      
-
-### <a name="power-bi-desktop-steps-created"></a>Power BI Desktop-steg som skapas
-När du utför frågeaktiviteter i frågeredigeraren skapas och visas frågesteg i rutan **Frågeinställningar** i listan **Tillämpade steg**. Varje frågesteg har en motsvarande frågeformel, även kallat ”M”-språk. Läs mer om formelspråket ”M” i [Lär dig mer om Power BI formler](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
-
-| Aktivitet | Frågesteg | Formel |
-| --- | --- | --- |
-| Anslut till en Excel-arbetsbok |Källa |Source{[Name="Products"]}[Data] |
-| Omvandla den översta raden till tabellkolumnrubriker |FirstRowAsHeader |[Table.PromoteHeaders](https://support.office.com/Article/TablePromoteHeaders-b8eaeb95-042a-42e1-9164-6d3c646acadc "Table.PromoteHeaders") <br /> (Produkter) |
-| Ta bort övriga kolumner för att bara visa intressanta kolumner |RemovedOtherColumns |[Table.SelectColumns](https://support.office.com/Article/TableSelectColumns-20bb9e28-9fd3-4cd2-a21b-97972c82ec22 "Table.SelectColumns")  <br />(FirstRowAsHeader,{"ProductID", "ProductName", "QuantityPerUnit", "UnitsInStock"}) |
-| Ändra datatyp |Ändrade typ |Table.TransformColumnTypes(\#"Removed Other Columns",{{"UnitsInStock", Int64.Type}}) |
-
-## <a name="task-2-import-order-data-from-an-odata-feed"></a>Aktivitet 2: Importera ordningsdata från en OData-feed
-I den här aktiviteten ordnar du data. Detta steg representerar anslutning till ett försäljningssystem. Du kan importera data till Power BI Desktop från exemplet Northwind OData-feed på följande URL som du kan kopiera (och klistra in) i stegen nedan: <http://services.odata.org/V3/Northwind/Northwind.svc/> 
-
-### <a name="step-1-connect-to-an-odata-feed"></a>Steg 1: Anslut till en OData-feed
-1. Från menyfliken **Start** i frågeredigeraren väljer du **Hämta data.**
-2. Bläddra till datakällan **OData-Feed**.
-3. I dialogrutan **OData-Feed** klistrar du in **URL:en** för Northwind OData-feeden.
-4. Välj **OK**.
-5. I fönstret **Navigator** markerar du tabellen **Beställningar** och väljer sedan **Redigera**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/anlayzingsalesdata_odatafeed.png)
+I den här självstudien kommer du att lära dig att kombinera data från två datakällor: en Excel-arbetsbok som inkluderar produktinformation och en OData-feed som innehåller beställningsdata. Efter att du har importerat varje datauppsättning och utfört omvandlingar och sammanslagningar, använder du data från båda källorna för att skapa en försäljningsanalysrapport med interaktiva visualiseringar. De här teknikerna kan också tillämpas till SQL Server-frågor, CSV-filer och alla andra datakällor i Power BI Desktop.
 
 >[!NOTE]
->Du kan klicka på en tabell utan att markera kryssrutan om du vill visa en förhandsgranskning.
+>I Power BI Desktop finns det flera sätt att utföra en åtgärd. Till exempel finns många menyfliksområdesval också tillgängliga genom att högerklicka eller via menyn **Fler alternativ** i en kolumn eller cell. Flera alternativa metoder beskrivs i stegen nedan. 
 
-### <a name="step-2-expand-the-orderdetails-table"></a>Steg 2: Visa tabellen Beställnings\_Information
-Tabellen **Beställningar** innehåller en referens till en **information**stabell som innehåller de enskilda produkter som ingick i varje Beställning. När du ansluter till datakällor med flera tabeller (till exempel en relationsdatabas) använder du dessa referenser för att bygga upp din fråga. 
+## <a name="import-the-product-data-from-excel"></a>Importera produktdata från Excel
 
-I det här steget kan du expandera tabellen **beställnings\_information** som är kopplad till **beställnings**tabellen för att kombinera kolumnerna **ProductID**, **Enhetspris** och **kvantitet** från **beställnings\_information** till tabellen **Beställningar**. Det här är en representation av data i dessa tabeller:
+Importera först produktdata från Excel-arbetsboken Products.xlsx till Power BI Desktop.
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/orderdetails.png)
+1. [Hämta Excel-arbetsboken Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) och spara den som **Products.xlsx**.
+   
+2. Välj den nedrullningsbara pilen bredvid **Hämta data** i fliken **Start** för Power BI Desktop-menyfliksområdet och välj sedan **Excel** från listrutan **Vanligaste**. 
+   
+   ![Hämta data](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
+   
+   >[!NOTE]
+   >Du kan också välja själva objektet **Hämta data** eller välja **Hämta data** från Power BI-dialogrutan **Kom igång**, välj sedan **Excel** eller **Fil** > **Excel** i dialogrutan **Hämta data** och välj sedan **Anslut**.
+   
+3. I dialogrutan **Öppna** navigerar du till och väljer filen **Products.xlsx** och välj sedan **Öppna**.
+   
+4. I fönstret **Navigator** markerar du tabellen **Produkter** och väljer sedan **Redigera**.
+   
+   ![Navigatorfönstret för Excel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
+   
+En förhandsgranskning av tabellen öppnas i **Power Query Editor**, där du kan använda omvandlingar för att rensa data. 
+   
+![Power Query Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
+   
+>[!NOTE]
+>Du kan också öppna **Power Query Editor** genom att välja **Redigera frågor** > **Redigera frågor** från menyfliken **Start** i Power BI Desktop eller genom att högerklicka eller välja **Fler alternativ** bredvid någon fråga i **Rapportvyn**, och välja **Redigera fråga**.
 
-Åtgärden **Expandera** kombinerar kolumner från en relaterad tabell till en ämnestabell. När frågan körs kombineras rader från den relaterade tabellen (**Order\_Details**) till rader från ämnestabellen (**Beställningar**).
+## <a name="clean-up-the-products-columns"></a>Rensa produktkolumner
 
-När du har expanderat tabellen **Order\_Details** läggs tre nya kolumner och ytterligare rader till i tabellen **Beställningar**, en för varje rad i den kapslade eller relaterade tabellen.
+Din kombinerade rapport kommer endast att använda kolumnerna **ProductID**, **ProductName**, **QuantityPerUnit** och **UnitsInStock** från Excel-arbetsboken så kan du ta bort de andra kolumnerna. 
 
-1. I **frågevyn**, bläddra till kolumnen **Order\_Details**.
-2. I kolumnen **Order\_Details** väljer du ikonen för Expandera (![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)).
+1. I **Power Query Editor**, välj kolumnerna **ProductID**, **ProductName**, **QuantityPerUnit**, och **UnitsInStock** (använd **Ctrl**+**Klick** för att välja mer än en kolumn eller **SKIFT**+**Klick** för att välja kolumner som ligger intill varandra).
+   
+2. Högerklicka på någon av de markerade rubrikerna och välj **Ta bort andra kolumner** i listrutan för att ta bort alla utom de markerade kolumnerna från tabellen. 
+   Du kan också välja **Ta bort kolumner** > **Ta bort andra kolumner** från gruppen **Hantera kolumner** i menyfliken **Start**. 
+   
+   ![Ta bort andra kolumner](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_removeothercolumns.png)
+
+## <a name="import-the-order-data-from-an-odata-feed"></a>Importera beställningsdata från en OData-feed
+
+Importera sedan beställningsdata från exemplet på försäljningssystemet Northwind OData-feed. 
+
+1. I **Power Query Editor**, välj **Ny källa** och välj sedan **OData-feed** från listrutan **Vanligaste**. 
+   
+   ![Hämta OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
+   
+2. I dialogrutan **OData Feed** klistrar du in URL för Northwind ODat-feed, `http://services.odata.org/V3/Northwind/Northwind.svc/` och väljer **OK**.
+   
+   ![Dialogrutan OData-feed](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
+   
+3. I rutan **Navigator** väljer du tabellen **Beställningar** och väljer sedan **OK** för att läsa in data till **Power Query Editor**.
+   
+   ![Navigatorfönstret för OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_odatafeed.png)
+   
+   >[!NOTE]
+   >I **Navigator**, kan du välja alla tabellnamn utan att markera kryssrutan om du vill visa en förhandsgranskning.
+
+## <a name="expand-the-order-data"></a>Expandera beställningsdata
+
+När du ansluter till datakällor som har flera tabeller såsom relationsdatabaser eller Northwind OData-feed, kan du använda referenser mellan tabeller för att bygga upp dina frågor. Tabellen **Beställningar** innehåller referenser till flera relaterade tabeller. Du kan lägga till kolumnerna **ProductID**, **UnitPrice** och **Quantity** från den relaterade tabellen **Order_Details** i ämnesraden (tabellen **Beställningar**) med hjälp av åtgärden **Expandera**. 
+
+1. Bläddra till höger i tabellen **Beställningar** tills du ser kolumnen **Order_Details**. Observera att i stället för data innehåller den referenser till en annan tabell.
+   
+   ![Kolumnen Order_Details](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
+   
+2. Välj ikonen **Expandera** (![Expandera-ikon](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/expand.png)) i kolumnrubriken **Order_Details**. 
+   
 3. I listrutan **Expandera**:
+   
    1. Välj **(Välj alla kolumner)** ta bort alla kolumner.
-   2. Välj **ProductID**, **Enhetspris** och **Kvantitet**.
-   3. Klicka på **OK**.
-      ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
+      
+   2. Välj **ProductID**, **UnitPrice** och **Quantity**, och välj sedan **OK**.
+      
+      ![Expandera dialogrutan](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
 
-### <a name="step-3-remove-other-columns-to-only-display-columns-of-interest"></a>Steg 3: Ta bort övriga kolumner för att bara visa intressanta kolumner
-I det här steget du ta bort alla kolumner utom **OrderDate, ShipCity**, **ShipCountry**, **Order\_Details.ProductID**, **Order\_Details.UnitPrice** och **Order\_Details.Quantity**. I föregående uppgift använde du **Ta bort andra kolumner**. Ta bort markerade kolumner för den här uppgiften.
+När du har expanderat tabellen **Order_Details** byts kolumnen **Order_Details** ut med tre nya kolumner från den kapslade tabellen och det finns nya rader i tabellen för de data som lagts till från varje beställning. 
 
-1. I **frågevyn** markerar du alla kolumner genom att slutföra a. och b.:
-   1. Klicka på den första kolumnen (**OrderID**).
-   2. Skift + klicka på den sista kolumnen (**leverantör**).
-   3. Nu när alla kolumner har valts kan du använda ctrl + klicka för att avmarkera följande kolumner: **OrderDate**, **ShipCity**, **ShipCountry**, **Order\_Details.ProductID**, **Order\_Details.UnitPrice** och **Order\_Details.Quantity**.
-2. Nu när endast de kolumner som vi vill ta bort är markerade högerklickar du på alla valda kolumnrubriker och klickar på **Ta bort kolumner**.
+![Utökade kolumner](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
-### <a name="step-4-calculate-the-line-total-for-each-orderdetails-row"></a>Steg 4: Beräkna den totala raden för varje Order\_Details-rad
-Med Power BI Desktop kan du skapa beräkningar baserat på kolumnerna som du importerar och utöka de data som du ansluter till. I det här steget skapar du en **anpassad kolumn** för att beräkna radsumman för varje **beställnings\_information**-rad.
+## <a name="create-a-custom-calculated-column"></a>Skapa en anpassad beräknad kolumn
 
-Beräkna den totala raden för varje **beställnings\_information**-rad:
+Med Power Query Editor kan du skapa beräkningar och anpassade fält för att utöka dina data. Du skapar en egen kolumn som beräknar det totala priset för varje radpost i en beställning genom att multiplicera enhetspriset med artikelantal.
 
-1. I bandfliken **Add Column** klickar du på **Lägg till** **Anpassad kolumn**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
-2. I dialogrutan **Lägg till anpassad kolumn** i textrutan **Egen kolumnformel** anger du **[Order\_Details.UnitPrice]**  \* **[Order\_ Details.Quantity]**
-3. I textrutan **Nytt kolumnnamn** anger du **LineTotal**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
-4. Klicka på **OK**.
-
-### <a name="step-5-set-the-datatype-of-the-linetotal-field"></a>Steg 5: Ange datatyp för fältet LineTotal
-1. Högerklicka på kolumnen **LineTotal**.
-2. Välj **Ändra typ** och välj **Decimalnummer**.
-   
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
-
-### <a name="step-6-rename-and-reorder-columns-in-the-query"></a>Steg 6: Byt namn på och ändra ordningen på kolumnerna i frågan
-I det här steget har du gjort det enkelt att arbeta med modellen när du skapar rapporter genom att byta namn på de sista kolumnerna och ändra deras inbördes ordning.
-
-1. I **frågeredigeraren** drar du kolumnen **LineTotal** till vänster efter **ShipCountry**.
+1. I menyfliken **Add Column** i Power Query Editor, välj **Anpassad kolumn**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/10.png)
-2. Ta bort prefixet *Order\_Details.* prefixet från kolumnerna **Order\_Details.ProductID**, **Order\_Details.UnitPrice** och **Order\_Details.Quantity** genom att dubbelklicka på varje kolumnrubrik och sedan ta bort texten från kolumnnamnet.
-
-### <a name="power-bi-desktop-steps-created"></a>Power BI Desktop-steg som skapas
-När du utför frågeaktiviteter i frågeredigeraren skapas och visas frågesteg i rutan **Frågeinställningar** i listan **Tillämpade steg**. Varje frågesteg har en motsvarande Power Query-formel, även kallat ”M”-språk. Läs mer om formelspråket i [Lär dig mer om Power BI formler](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f "Läs mer om Power Query-formler").
-
-| Aktivitet | Frågesteg | Formel |
-| --- | --- | --- |
-| Anslut till en OData-feed |Källa |Source{[Name="Orders"]}[Data] |
-| Visa tabellen Order\_Details |Expandera Order\_Details |[Table.ExpandTableColumn](https://support.office.com/Article/TableExpandTableColumn-54903f25-75a2-4a44-a9a3-52a9d895ee98 "Table.ExpandTableColumn") <br /> (Orders, "Order\_Details", {"ProductID", "UnitPrice", "Quantity"}, {"Order\_Details.ProductID", "Order\_Details.UnitPrice", "Order\_Details.Quantity"}) |
-| Ta bort övriga kolumner för att bara visa intressanta kolumner |RemovedColumns |[Table.RemoveColumns](https://support.office.com/Article/TableRemoveColumns-6265190e-2f58-4300-85b8-df88fc1a67d3 "Table.RemoveColumns") <br />(\#"Expand Order\_Details",{"OrderID", "CustomerID", "EmployeeID", "RequiredDate", "ShippedDate", "ShipVia", "Freight", "ShipName", "ShipAddress", "ShipCity", "ShipRegion", "ShipPostalCode", "ShipCountry", "Customer", "Employee", "Shipper"}) |
-| Beräkna den totala raden för varje Order\_Details-rad |InsertedColumn |[Table.AddColumn](https://support.office.com/Article/TableAddColumn-6c64d0a5-9654-4d15-bfb6-9cc380aaf3c0 "Table.AddColumn") <br /> (RemovedColumns, "Custom", each [Order\_Details.UnitPrice] \* [Order\_Details.Quantity]) |
-
-## <a name="task-3-combine-the-products-and-total-sales-queries"></a>Aktivitet 3: Kombinera frågorna produkter och totalförsäljning
-Med Power BI Desktop behöver du inte kombinera frågor för att rapportera om dem. Skapa i stället **Relationer** mellan datauppsättningar. Dessa relationer kan skapas på alla kolumner som är gemensamma för dina datauppsättningar. Mer information finns i [Skapa och hantera relationer](desktop-create-and-manage-relationships.md).
-
-I den här självstudiekursen har vi data om beställningar och produkter som delar ett gemensamt 'ProductID'-fält. Vi måste se till att det finns en relation mellan dem i modellen som vi använder med Power BI Desktop. Ange bara i Power BI Desktop att kolumnerna i varje tabell är relaterade (dvs. kolumner som har samma värden). Power BI Desktop avgör relationens riktning och kardinalitet. I vissa fall kan identifieras även relationerna automatiskt.
-
-I det här steget bekräftar du en relation i Power BI Desktop mellan frågorna **Produkter** och **Totalförsäljning**.
-
-### <a name="step-1-confirm-the-relationship-between-products-and-total-sales"></a>Steg 1: Kontrollera relationen mellan produkter och totalförsäljning
-1. Vi måste först läsa in modellen som vi skapade i frågeredigeraren till Power BI Desktop. Från menyfliken **Start** i frågeredigeraren väljer du **Stäng och överför**.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
-2. Power BI Desktop läser in data från båda frågor.
+2. I dialogrutan **Anpassad kolumn** skriver du **LineTotal** i fältet **Nytt kolumnnamn**.
+
+3. I fältet **Anpassad kolumnformel** efter **=**, ange **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]**. (Du kan också välja fältnamn från rullningsrutan **Tillgängliga kolumner** och välja **<< Infoga**, i stället för att skriva dem.) 
+3. Välj **OK**.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)      
-3. När data har lästs in, markerar du knappen **Hantera relationer** i menyfliksområdet **Start**.
+   ![Dialogrutan Anpassad kolumn](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
+
+Det nya fältet **LineTotal** visas som den sista kolumnen i tabellen **Beställningar**.
+
+## <a name="set-the-data-type-for-the-new-field"></a>Ange datatyp för det nya fältet
+
+När Power Query Editor ansluter till data, avgörs bästa datatyp för varje fält och data visas i enlighet med detta. Du kan se de datatyper som tilldelats till fält via ikonerna i sidhuvuden eller under **Datatyp** i gruppen **Transformera** i menyfliken **Start**. 
+
+Din nya kolumn **LineTotal** har datatypen **Alla**, men dess värden är valuta. Om du vill tilldela en datatyp, högerklicka på kolumnrubriken **LineTotal**, välj **Ändra datatyp** från listrutan och välj sedan **Fast decimaltal**. 
+
+![Ändra datatyp](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
+
+>[!NOTE]
+>Du kan också välja kolumnen **LineTotal**, välj sedan den nedrullningsbara pilen bredvid **Datatyp** i området **Transformera** i menyfliken **Start** och markera sedan **Fast decimaltal**.
+
+## <a name="clean-up-the-orders-columns"></a>Rensa beställningskolumner
+
+För att göra din modell enklare att arbeta med i rapporter kan du ta bort, byta namn på och ändra ordning på kolumnerna.
+
+Din rapport kommer endast att använda kolumnerna **OrderDate**, **ShipCity**, **ShipCountry**, **Order_Details.ProductID**, **Order_Details.UnitPrice** och **Order_Details.Quantity**. Du kan välja dessa kolumner och använda **Ta bort andra kolumner** som du gjorde med Excel-data eller så kan du välja alla kolumner utom de listade, högerklicka på en av de markerade kolumnerna och välja **Ta bort kolumner** för att ta bort alla. 
+
+Du kan göra kolumnerna **Order_Details.ProductID**, **Order_Details.UnitPrice** och **Order_Details.Quantity** enklare att identifiera genom att ta bort *Order_Details.* prefix från kolumnnamn. För att byta namn på kolumnerna till **ProductID**, **UnitPrice** och **Quantity**:
+
+1. Dubbelklicka eller tryck på och håll nere varje kolumnrubrik eller högerklicka på kolumnrubriken och välj **Byt namn** i listrutan. 
+2. Ta bort *Order_Details.* prefixet från varje namn och tryck sedan på **Retur**.
+
+Slutligen för att göra kolumnen **LineTotal** enklare att komma åt, dra och släpp den till vänster, precis till höger om kolumnen **ShipCountry**.
+
+![Rensad tabell](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
+
+## <a name="review-the-query-steps"></a>Gå igenom frågestegen
+
+Medan du formade och omvandlade data i Power Query Editor registrerades varje steg i området **Tillämpade steg** i rutan **Frågeinställningar** till höger i Power Query Editor. Du kan gå tillbaka genom stegen som använts för att granska ändringar du gjort, och redigera, ta bort eller ordna om dem om det behövs (även om det kan vara riskabelt, eftersom en ändring av ovanstående steg kan skada senare steg). 
+
+Välj var och en av dina frågor i listan **Frågor** till vänster i Power Query Editor och granska **Tillämpade steg** i **Frågeinställningar**. När du har använt tidigare datatransformationer bör de tillämpade stegen för dina två frågor se ut som följande:
+
+![Tillämpade steg för produktfrågor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png) &nbsp;&nbsp; ![Tillämpade steg för beställningsfrågor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
+
+>[!TIP]
+>Under Tillämpade steg finns formler som skrivits i **Power Query-språk**, även kallat **M**-språk. Om du vill se och redigera formlerna, välj **Avancerad redigerare** i gruppen **Fråga** på fliken Start i menyfliksområdet. 
+
+## <a name="import-the-transformed-queries"></a>Importera omvandlade frågor
+
+När du är nöjd med dina transformerade data, välj **Stäng och tillämpa** > **Stäng och tillämpa** i gruppen **Stäng** i menyfliksområdet **Start**  för att importera data till Power BI Desktop-rapportvyn. 
+
+![Stäng och använd](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
+
+När data lästs in visas frågorna i listan **Fält** i Power BI Desktop-rapportvyn.
+
+![Frågor i fältlistan](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
+
+## <a name="manage-the-relationship-between-the-datasets"></a>Hantera relationen mellan datauppsättningar
+
+Med Power BI Desktop behöver du inte kombinera frågor för att rapportera om dem. Du kan dock använda relationerna mellan datauppsättningar, baserat på fält de har gemensamt, för att utöka och förbättra dina rapporter. Power BI Desktop kan identifiera relationer automatiskt och du kan skapa dem i Power BI Desktop-dialogen **Hantera relationer**. Mer information om relationer i Power BI Desktop finns i [Skapa och hantera relationer](desktop-create-and-manage-relationships.md).
+
+Datauppsättningar för beställningar och produkter i den här självstudien delar ett gemensam *ProductID*-fält, så det finns en relation mellan dem baserat på den kolumnen. 
+
+1. I Power BI Desktop-rapportvyn, välj **Hantera relationer** i området **Relationer** i menyfliksområdet **Start**.
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
-4. Välj **Nytt...** knapp
+   ![Menyfliksområdet Hantera relationer](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
-5. När vi försöker skapa en relation kan vi se att det redan finns en! Enligt dialogrutan **Skapa relation** (med skuggade kolumner) har fältet **ProductsID** i varje fråga redan en upprättad relation.
+2. I dialogrutan **Hantera relationer**, observera att Power BI Desktop redan har identifierat och en angett en aktiv relation mellan tabellerna Produkter och Beställningar. Om du vill visa relationen, välj **Redigera**. 
    
-    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
-6. Välj **Avbryt** och välj sedan vyn **Relation** i Power BI Desktop.
+   ![Dialogrutan Hantera relationer](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
-7. Vi kan se följande vilket visualiserar relationen mellan frågorna.
+   Dialogrutan **Redigera relation** öppnas och visar information om relationen.  
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
-8. När du dubbelklickar på pilen på raden som ansluter den till frågor visas **Redigera relation**.
+   ![Dialogrutan Redigera relation](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
-9. Vi behöver inte göra några ändringar, så vi väljer helt enkelt **Avbryt** för att stänga dialogrutan **Redigera relation**.
+3. Power BI Desktop har automatiskt spårat relationen korrekt, så du kan välja **Avbryt** och sedan **Stäng** för att avsluta dialogrutorna för relationen.
 
-## <a name="task-4-build-visuals-using-your-data"></a>Aktivera 4: Skapa visuella objekt med data
-Med Power BI Desktop kan du skapa en mängd olika visualiseringar och få insikter från dina data. Du kan skapa rapporter med flera sidor och varje sida kan ha flera visuella objekt. Du kan interagera med dina visuella objekt för att analysera och förstå dina data. Mer information om hur du redigerar rapporter finns i [Redigera en rapport](service-interact-with-a-report-in-editing-view.md).
+Du kan också visa och hantera relationer mellan dina frågor genom att välja vyn **Relation** på vänster sida av fönstret för Power BI Desktop. Dubbelklicka på pilen på raden som ansluter de två frågorna för att öppna dialogrutan **Redigera relation** och visa eller ändra relationen. 
 
-I det här steget skapar du en rapport baserad på data som har lästs in tidigare. Du kan använda fönstret Fält för att välja de kolumner som du skapar från visualiseringar.
+![Relationsvy](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 
-### <a name="step-1-create-charts-showing-units-in-stock-by-product-and-total-sales-by-year"></a>Steg 1: Skapa diagram som visar Enheter på lager enligt Produkt och Totalförsäljning per år
-Dra **UnitsInStock** från fönstret Fält (fältpanelen är längst till höger på skärmen) till en tom plats på arbetsytan. En tabellvisualisering skapas. Dra sedan ProductName till rutan Axlar i den nedre hälften av visualiseringsfönstret. Sedan väljer vi **Sortera efter \> UnitsInStock** med skittles i det övre högra hörnet av visualiseringen.
+För att gå tillbaka till Rapportvyn från Relationsvyn, välj ikonen **Rapportvy**. 
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/14.png)
+![Ikonen Rapportvy](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
 
-Dra **OrderDate** till arbetsytan under det första diagrammet och sedan dra LineTotal (igen från fönstret Fält) till det visuella objektet och välj Linjediagram. Följande visuella objekt skapas.
+## <a name="create-visualizations-using-your-data"></a>Skapa visualiseringar med hjälp av dina data
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png)
+I Power BI Desktop-rapportvyn kan du skapa en mängd olika visualiseringar för att få insikter från dina data. Du kan skapa rapporter med flera sidor och varje sida kan ha flera visuella objekt. Du och andra kan interagera med dina visuella objekt för att analysera och förstå dina data. Läs mer om att visa och redigera rapporter i Power BI-tjänsten (din plats) i [Redigera en rapport](service-interact-with-a-report-in-editing-view.md).
 
- Dra därefter **ShipCountry** till ett utrymme på arbetsytan uppe till höger. Eftersom du har valt ett geografiskt fält har en karta skapats automatiskt. Dra **LineTotal** till fältet **Värden**.Cirklarna på kartan för varje land är nu relativa i storlek till **LineTotal** för beställningar som har levererats till landet i fråga.
+Du kan använda både dina datauppsättningar och relationen mellan dem för att visualisera och analysera dina försäljningsdata. 
 
-![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
+Skapa först ett stående stapeldiagram som använder fälten från båda frågorna för att visa kvantitet för varje produkt som beställts. 
 
-### <a name="step-2-interact-with-your-report-visuals-to-analyze-further"></a>Steg 2: Interagera med visuella objekt i rapporten för att analysera närmare
-Power BI Desktop gör att du kan interagera med visuella objekt som korsmarkerar och filtrerar varandra för att upptäcka fler trender. Mer information finns i [Filtrering och markering i rapporter](power-bi-reports-filters-and-highlighting.md)
-
-1. Klicka på den ljusa blå cirkeln i mitten av **Canad***a.** Observera hur övriga visuella objekt filtreras för att visa Lager (**Leveransland**) och Totalt antal beställningar (**LineTotal**) för Kanada.
+1. Välj fältet **Kvantitet** från **Beställningar** i rutan **Fält** till höger eller dra det till ett tomt utrymme på arbetsytan. Detta skapar ett stapeldiagram som visar det totala antalet av alla produkter som har beställts. 
    
-   ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
+2. Välj **ProductName** från **Produkter** i rutan **Fält** eller dra det till schemat för att visa kvantitet för varje produkt som beställts. 
+   
+3. Om du vill sortera produkterna efter flest till minst beställda, välj ellipsen (**...** ) **Fler alternativ** längst upp till höger om visualiseringen och välj sedan **Sortera efter antal**.
+   
+4. Använd handtagen i diagrammets hörn för att göra det större så fler produktnamn visas. 
+   
+   ![Liggande stapeldiagram för Antal efter ProductName](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/19.png)
 
-## <a name="complete-sales-analysis-report"></a>Slutför analysrapporten för försäljning
-När du utför de här stegen bör du ha en försäljningsrapport som kombinerar data från filen Products.xlsx och Northwind OData-feeden. Rapporten visar visuella objekt som hjälper dig att analysera försäljningsinformation från olika länder. Du kan hämta den färdiga Power BI Desktop-filen för den här självstudien [här](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Sales_Data.pbix).
+Skapa sedan ett diagram som visar beställt belopp i dollar (**LineTotal**) över tid (**OrderDate**). 
+
+1. Utan att ha valt något på arbetsytan, välj **LineTotal** från **Beställningar** i rutan **Fält** eller dra den till ett tomt utrymme på arbetsytan. Stapeldiagrammet visar totalt värde i dollar för alla beställningar. 
+   
+2. När schemat är markerat, välj **OrderDate** från **Beställningar**, eller drar det till diagrammet. Diagrammet visar nu summan för varje beställningsdatum. 
+   
+3. Ändra visualiseringen genom att dra i hörnen för att kunna se fler data. 
+   
+   ![Linjediagram för LineTotals efter OrderDate](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
+   
+   >[!TIP]
+   >Om du bara ser År i schemat (endast tre datapunkter) rulla ner pilen bredvid **OrderDate** i fältet **Axel** i fönstret **Visualiseringar** och välj **OrderDate** i stället för **Datumhierarki**. 
+
+Skapa slutligen en kartvisualisering som visar beställningsbelopp från varje land. 
+
+1. Utan att ha valt något på arbetsytan, välj **ShipCountry** från **Beställningar** i rutan **Fält** eller dra den till ett tomt utrymme på arbetsytan. Power BI Desktop upptäcker att data är Landsnamn och skapar automatiskt en kartvisualisering med en datapunkt för varje land som hade beställningar. 
+   
+2. Om du vill göra så att datapunkternas storlekar återspeglar beställningsbeloppet för varje land, dra fältet **LineTotal** till kartan (eller dra det till **Dra datafält hit** under **Storlek**i nedre halvan av fönstret **Visualiseringar**). Storleken på cirkel i kartan avspeglar nu beställningsbeloppet från varje land. 
+   
+   ![Kartvisualisering för LineTotals efter Leveransland](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/21.png)
+
+## <a name="interact-with-your-report-visuals-to-analyze-further"></a>Interagera med visuella objekt i rapporten för att analysera närmare
+
+Power BI Desktop gör att du kan upptäcka ytterligare trender genom att interagera med visuella objekt som korsmarkerar och filtrerar varandra. Mer information finns i [Filtrering och markering i rapporter](power-bi-reports-filters-and-highlighting.md). 
+
+På grund av relationen mellan dina frågor påverkar interaktioner med en visualisering alla andra visualiseringar på sidan. 
+
+I kartvisualiseringen, markera cirkeln som är centrerad i **Kanada**. Observera att de andra två visualiseringarna filtrerar för att fokusera på radsumma och beställningskvantiteter för Kanada.
+
+![Försäljningsdata filtrerade för Kanada](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/22.png)
+
+Om du väljer en av produkterna i diagrammet **Antal efter ProductName** filtreras kart- och datumdiagrammet för att återspegla data för denna produkt, och om du markerar ett datum i diagrammet **LineTotal efter OrderDate** filtreras kart- och produktdiagrammet för att visa data för detta datum. 
+>[!TIP]
+>Om du vill avmarkera en markering väljer du den igen eller väljer en av andra visualiseringar. 
+
+## <a name="complete-the-sales-analysis-report"></a>Slutför analysrapporten för försäljning
+
+Din färdiga rapport kombinerar data från Products.xlsx Excel-filen och Northwind OData-feeden i visuell information som hjälper till att analysera beställningsinformation för olika länder, tidsramar och produkter. När rapporten är klar, kan du [överföra den till Power BI-tjänsten](desktop-upload-desktop-files.md) för att dela den med andra Power BI-användare.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Läs andra Power BI Desktop-självstudier](http://go.microsoft.com/fwlink/?LinkID=521937)
 * [Se Power BI Desktop-videor](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Besök Power BI-forumet](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Läs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
-
-

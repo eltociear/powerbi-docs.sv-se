@@ -15,25 +15,21 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/04/2018
+ms.date: 05/07/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 50dd3dcf791cd3f2e366957ad37c830b7f4c35f2
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: 11e1b210d6d90f0f813f378775daac36e53dbaf0
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 05/09/2018
+ms.locfileid: "33917192"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
 Den här artikeln beskrivs tidigare uppdateringar av **Power BI Desktop**. Den senaste månatliga utgåvan finns i [**Power BI Desktop** senaste uppdateringar](desktop-latest-update.md).
 
-Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
-
 Du kan alltid [ladda ned den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är likadana oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
-
-
-Vi har sett fram emot mars uppdateringar av **Power BI Desktop**.
 
 Länkarna bredvid varje uppdatering innebär följande:
 
@@ -44,7 +40,57 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
-Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
+Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
+
+## <a name="april-2018-update-2575068501"></a>Uppdatering april 2018 (2.57.5068.501)
+
+Vi skämtar inte om hur nöjda vi är med april månads uppdateringar av **Power BI Desktop**. Vi spred ut uppdateringarna över flera olika områden och hoppas att de hjälper dig att förbättra dina framtida rapporter med snygga visuella objekt. 
+
+
+### <a name="reporting"></a>Rapportering
+
+* Frågor och svar-utforskaren [[video]](https://youtu.be/W_Nb73Od_AI?t=13s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) 
+* Knappar för att utlösa åtgärder [[video]](https://youtu.be/W_Nb73Od_AI?t=9m42s) [[artikel]](desktop-buttons.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#buttons) 
+* Linjeformat för kombinationsdiagram [[video]](https://youtu.be/W_Nb73Od_AI?t=16m55s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#comboLines) 
+* Förbättrad standardsortering för visuella objekt [[video]](https://youtu.be/W_Nb73Od_AI?t=19m21s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sort) 
+* Numeriskt utsnitt är nu allmänt tillgängligt [[video]](https://youtu.be/W_Nb73Od_AI?t=21m13s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#numericSlicer) 
+
+### <a name="analytics"></a>Analys
+
+* Uppdatera språkschemat [[video]](https://youtu.be/W_Nb73Od_AI?t=22m) [[artikel]](power-bi-custom-visuals-organization.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
+* Ny DAX-funktion: COMBINEVALUES() [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
+
+### <a name="custom-visuals"></a>Anpassade visuella objekt
+
+* Visuella objekt för organisationer är nu allmänt tillgängliga [[video]](https://youtu.be/W_Nb73Od_AI?t=26m11s) [[artikel]](power-bi-custom-visuals-organization.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
+* Många nya anpassade visuella objekt [[video]](https://youtu.be/W_Nb73Od_AI?t=28m8s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
+
+### <a name="data-connectivity"></a>Dataanslutning
+
+* Adobe Analytics-anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[artikel]](desktop-multi-select.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#adobeAnalytics) 
+* Förbättring av SAP HANA-anslutningsappen: Välj port [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artikel]](desktop-directquery-sap-hana.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
+* Dynamics 365 Business Central-anslutningsapp [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#dynamics365BusinessCentral) 
+
+
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md).
+
+
+
+## <a name="march-2018-update-"></a>Uppdatering mars 2018 ()
+
+Vi har sett fram emot mars uppdateringar av **Power BI Desktop**. Följande uppdateringar är nya för **Power BI Desktop** i mars:
 
 ### <a name="reporting"></a>Rapportering
 
@@ -118,7 +164,7 @@ Följande uppdateringar var nya för **Power BI Desktop** i februari 2018:
 * Organisationsanpassade visualiseringar (förhandsgranskning) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[article]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Ange en anpassad datumtabell [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 * Snabbåtgärder är nu allmänt tillgängliga [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s) [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
@@ -177,7 +223,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i januari:
 -   Val av främsta i Vanliga frågor och svar [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
 -   Mycket ny anpassad visuell information [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 -   Snabbmått för korrelationskoefficienten [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
 
@@ -228,7 +274,7 @@ Följande uppdateringar var nya för **Power BI Desktop** i december:
 -   Nyligen släppta anpassade visuella objekt  [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 -   Detaljgranska andra visuella objekt [[video]](https://youtu.be/ZPU8B-1BxjI?t=28m53s) [[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals) 
 

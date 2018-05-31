@@ -1,31 +1,24 @@
 ---
-title: "Kom igång med att formatera Power BI visualiseringar (självstudier)"
-description: "Självstudier: Anpassa visualiseringens rubrik, bakgrund och förklaring"
-services: powerbi
-documentationcenter: 
+title: Kom igång med att formatera Power BI visualiseringar
+description: Anpassa visualiseringens rubrik, bakgrund och teckenförklaring
 author: mihart
 manager: kfile
-backup: 
-editor: 
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-tags: 
-qualityfocus: monitoring
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e81f4e9ede3591accc94576291179b4fd40215e5
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34297111"
 ---
-# <a name="customize-visualization-titles-legends-and-backgrounds-tutorial"></a>Anpassa visualiseringens rubrik, bakgrund och förklaring (självstudier)
+# <a name="customize-visualization-titles-legends-and-backgrounds"></a>Anpassa visualiseringens rubrik, bakgrund och förklaring
 I den här självstudien lär du dig några olika sätt att anpassa dina visualiseringar.   Det finns många alternativ för att anpassa dina visualiseringar. Det bästa sättet att lära dig om alla är att utforska fönstret Formatering (välj roller-ikonen).  Om du vill komma igång visar i den här artikeln hur du anpassar en visualiserings rubrik, förklaring och bakgrund.  
 
 Alla visualiseringar kan inte anpassas, [se den fullständiga listan](#list).  

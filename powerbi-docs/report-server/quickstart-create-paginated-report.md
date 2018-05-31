@@ -1,29 +1,22 @@
 ---
-title: "Snabbstart: Skapa en sidnumrerad rapport för Power BI-rapportservern"
-description: "Lär dig hur du skapar sidnumrerade rapporter för Power BI-rapportservern i några enkla steg."
-services: powerbi
-documentationcenter: 
+title: Skapa en sidnumrerad rapport för Power BI-rapportservern
+description: Lär dig hur du skapar sidnumrerade rapporter för Power BI-rapportservern i några enkla steg.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 1e77a1ef92826010d6bc2fa28749a2ee17bbe723
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 75810bfad9efd5a0ea42a07d44a61d4f92f7f232
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34294926"
 ---
-# <a name="quickstart-create-a-paginated-report-for-power-bi-report-server"></a>Snabbstart: Skapa en sidnumrerad rapport för Power BI-rapportservern
+# <a name="create-a-paginated-report-for-power-bi-report-server"></a>Skapa en sidnumrerad rapport för Power BI-rapportservern
 Som namnet antyder sidnumrerade rapporter ha många sidor. De har ett fast format och kan anpassas med precision. Sidnumrerade rapporter är RDL-filer.
 
 Du kan lagra och hantera sidnumrerade rapporter i webbportalen Power BI Report Server, precis som i webbportalen SQL Server Reporting Services (SSRS). Skapa och redigera dem i Report Builder eller Report Designer i SQL Server Data Tools (SSDT) och publicera dem sedan i någon av webbportalerna. Personerna i din organisation som läser rapporterna kan se dem i webbläsaren eller i mobilappen Power BI på deras mobilenhet.

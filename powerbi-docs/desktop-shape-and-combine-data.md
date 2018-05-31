@@ -1,33 +1,34 @@
 ---
-title: Forma och kombinera data i Power BI Desktop
-description: Forma och kombinera data i Power BI Desktop
-services: powerbi
-documentationcenter: ''
+title: Forma och kombinera data från flera källor
+description: I den här självstudien får du lära dig hur du formar och kombinerar data i Power BI Desktop
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/30/2018
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/03/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0bb2f8a8d9299d525085a8ba7d2ecabdcd9e6c78
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 27479add7839e1078e76bbb6523b287f10194566
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34288761"
 ---
-# <a name="shape-and-combine-data-in-power-bi-desktop"></a>Forma och kombinera data i Power BI Desktop
-Med **Power BI Desktop** kan du ansluta till flera olika typer av datakällor och sedan forma data efter dina behov. *Formatera* data innebär att du omvandlar data – till exempel byter namn på kolumner eller tabeller, ändrar text till tal, tar bort rader, anger den första raden som rubrik och så vidare. *Kombinera* data innebär att kopplar till två eller flera datakällor, formar dem efter behov och sammanfogar dem i en användbar fråga.
+# <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Självstudie: Forma och kombinera data i Power BI Desktop
 
-Den här artikeln beskriver hur du utformar en fråga med Power BI Desktop och visar några av de vanligaste uppgifterna. Frågan som används här beskrivs i detalj, inklusive hur du skapar en fråga från början, i [Komma igång med Power BI Desktop](desktop-getting-started.md).
+Med **Power BI Desktop**, kan du ansluta till flera olika typer av datakällor och sedan forma data så att de uppfyller dina behov, så att du kan skapa visuella rapporter som du kan dela med andra. *Formatera* data innebär att du omvandlar data – till exempel byter namn på kolumner eller tabeller, ändrar text till tal, tar bort rader, anger den första raden som rubrik och så vidare. *Kombinera* data innebär att kopplar till två eller flera datakällor, formar dem efter behov och sammanfogar dem i en användbar fråga.
+
+I den här självstudien lär du dig att:
+
+* Formen data med hjälp av **Frågeredigeraren**
+* Anslut till en datakälla
+* Anslut till en annan datakälla
+* Kombinera dessa datakällor och skapa en datamodell som ska användas i rapporter
+
+Den här självstudien beskriver hur du utformar en fråga med Power BI Desktop och visar några av de vanligaste uppgifterna. Frågan som används här beskrivs i detalj, inklusive hur du skapar en fråga från början, i [Komma igång med Power BI Desktop](desktop-getting-started.md).
 
 Det är bra att veta att **frågeredigeraren** i Power BI Desktop använder högerklicksmenyer och menyfliksområdet. Merparten av det som du kan välja i menyfliksområdet **Transformera** är också tillgängligt genom att högerklicka på ett objekt (till exempel en kolumn) och välja från menyn som visas.
 

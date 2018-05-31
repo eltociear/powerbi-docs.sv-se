@@ -1,89 +1,73 @@
 ---
-title: "Kom igång med Power BI-rapportserver"
-description: "Läs mer om att installera Power BI-rapportserver. "
+title: Vad är Power BI-rapportserver?
+description: Få en översikt över Power BI-rapportservern för att förstå hur den passar in med SQL Server Reporting Services (SSRS) och resten av Power BI.
 services: powerbi
-documentationcenter: 
-author: markingmyname
-manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+keywords: ''
+author: maggiesMSFT
+ms.author: maggies
+ms.component: powerbi-report-server
+ms.date: 05/07/2018
+ms.topic: overview
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 3/5/2018
-ms.author: maghan
-ms.openlocfilehash: 88aa347a5e6feae969cf9b32e0e2177114efc757
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+manager: kfile
+ms.custom: mvc
+ms.openlocfilehash: 83220c399b527df421a14f9e45148feabc902ebb
+ms.sourcegitcommit: c29525cbac2e747edb4dd3a1841084bb0ce42582
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/08/2018
+ms.locfileid: "33840107"
 ---
-# <a name="get-started-with-power-bi-report-server"></a>Kom igång med Power BI-rapportserver
-Skapa, distribuera och hantera Power BI, mobila och sidnumrerade rapporter lokalt med det utbud av verktyg och tjänster som är klara att användas som Power BI-rapportservern ger dig.
+# <a name="what-is-power-bi-report-server"></a>Vad är Power BI-rapportserver?
 
-## <a name="create-deploy-and-manage-reports"></a>Skapa, distribuera och hantera rapporter
-Power BI-rapportservern är en lösning som kunder distribuerar på sina egna platser för att skapa, publicera och hantera rapporter som sedan kan levereras till rätt användare på olika sätt, oavsett om de visar dem i en webbläsare, på mobila enheter eller som e-post i sin inkorg.
+Power BI Report Server är en lokal rapportserver med en webbportal där du kan visa och hantera rapporter och KPI:er, tillsammans med verktyg för att skapa Power BI-rapporter, sidnumrerade rapporter, mobila rapporter och KPI:er. Användarna kan använda rapporterna på olika sätt: visa dem i en webbläsare eller en mobil enhet eller som e-post i sin i inkorg.
 
-Power BI-rapportserver erbjuder en rad med produkter:
+![Webbportalen för Power BI-rapportserver](media/get-started/power-bi-report-server-overview.png)
 
-* En modern webbportal som du kan visa i valfri modern webbläsare. I webbportalen kan du organisera och visa rapporter och KPI:er. Du kan även lagra Excel-arbetsböcker i portalen.
-* Power BI-rapporter som skapats med Power BI Desktop som du kan visa i webbportalen i din egen miljö.
-* Sidnumrerade rapporter så att du kan skapa moderna rapporter med verktyg för att skapa dem.
-* Mobila rapporter med en dynamisk layout som anpassar sig efter olika enheter och hur du håller dem.
+## <a name="comparing-power-bi-report-server"></a>Jämföra Power BI-rapportserver 
+Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-tjänsten online, men på olika sätt. Precis som Power BI-tjänsten är Power BI Report Server värd för Power BI-rapporter (.PBIX) och Excel-filer. Exempel Reporting Services är Power BI Report Server lokalt och värdar sidbrytning rapporter (.RDL). Power BI Report Server är en supermängd av Reporting Services: allt som du kan göra i Reporting Services, kan du göra med Power BI-rapportservern och mer, med tillagt stöd för Power BI-rapporter. Se [Jämföra Power BI-rapportservern och Power BI-tjänsten](compare-report-server-service.md) för mer information.
 
-Läs vidare för mer information om var och en.
-
-### <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
-Dessa källor kommer att hålla dig uppdaterad om nya funktioner i Power BI-rapportservern.
-
-* [Nyheter i Power BI-rapportservern](whats-new.md)
-* [Microsoft Power BI-bloggen](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services team-bloggen](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* [YouTube-kanalen Guy in a Cube ](https://aka.ms/guyinacube)
+## <a name="licensing-power-bi-report-server"></a>Licensiera Power BI-rapportserver
+Power BI-rapportservern är tillgänglig via två olika licenser: [Power BI Premium](../service-premium.md) och [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
 
 ## <a name="web-portal"></a>Webbportalen
-![](media/get-started/web-portal.png)
+Startpunkten för Power BI-rapportservern är en säker webbportal som du kan visa i alla moderna webbläsare. Här kan du komma åt alla dina rapporter och KPI:er. Innehållet på webbportalen ordnas i en traditionell mapphierarki. I dina mappar grupperas innehållet efter typ: Power BI-rapporter, mobila rapporter, sidnumrerade rapporter, KPI:er och Excel-arbetsböcker, plus delade datauppsättningar och delade datakällor som kan användas som byggblock för dina rapporter. Du kan tagga favoriter om du vill visa dem i en enda mapp. Och du kan skapa KPI:er direkt i webbportalen. 
 
-För slutanvändare av Power BI-rapportserver är ytterdörren en modern webbportal som du kan visa i alla moderna webbläsare. Du kan komma åt alla dina rapporter och KPI:er i den nya portalen.
+![Webbportalen för Power BI-rapportserver](media/get-started/web-portal.png)
 
-Du kan använda din egen anpassade [företagsanpassning](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) till webbportalen. Och du kan skapa KPI:er direkt i webbportalen. KPI:er kan ge en snabb inblick i viktiga affärsmått i korthet i webbläsaren, utan att du behöver öppna en rapport.
+Du kan hantera innehållet i webbportalen beroende på dina behörigheter. Du kan även schemalägga rapportbearbetning, få åtkomst till rapporter på begäran och prenumerera på publicerade rapporter. Du kan också använda din egen anpassade [företagsanpassning](https://docs.microsoft.com/sql/reporting-services/branding-the-web-portal) till webbportalen. 
 
-Innehållet på webbportalen organiseras efter typ: Power BI-rapporter, mobila rapporter, sidnumrerade rapporter och KPI:er, plus Excel-arbetsböcker, delade datauppsättningar och delade datakällor som kan användas som byggblock för dina rapporter. Du kan lagra och hantera dem på ett säkert sätt här, i den traditionella mapphierarkin. Du kan tagga dina favoriter och du kan hantera innehållet om du har den rollen.
-
-Du kan även schemalägga rapportbearbetning, få åtkomst till rapporter på begäran och prenumerera på publicerade rapporter i den nya webbportalen.
-
-Mer om [webbportalen](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
+Mer om webbportalen för [Power BI-rapportserver](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Power BI-rapporter
-![](media/get-started/powerbi-reports.png)
+Du skapar Power BI-rapporter (.PBIX) med versionen av Power BI Desktop som är optimerad för rapportservern. Sedan publicerar du dem och visar dem i webbportalen i din egen miljö.
 
-En Power BI-rapport visar en datauppsättning från flera perspektiv med visualiseringar som representerar olika fynd och insikter från datauppsättningen.  En rapport kan ha en enda visualisering eller sidor som är fulla av visualiseringar. Beroende på din arbetsroll kan du vara någon som skapar rapporter och/eller någon som förbrukar eller använder rapporterna.
+![Power BI-rapporter i Power BI-rapportservern](media/get-started/powerbi-reports.png)
 
-Rapporter baseras på en enda datauppsättning. Visualiseringar i en rapport representerar en liten mängd information. Visualiseringar är inte statiska. Du kan ta bort och lägga till data, ändra visualiseringstyper och lägga till filter och utsnitt när du granskar dina data djupare för att upptäcka insikter och hitta svar. Som en instrumentpanel, men ännu mer. En rapport är interaktiv och anpassningsbar och visualiseringarna uppdateras när underliggande data ändras.
+En Power BI-rapport visar en datamodell från flera perspektiv med visualiseringar som representerar olika fynd och insikter från datamodellen.  En rapport kan ha en enda visualisering eller sidor som är fulla av visualiseringar. Beroende på din roll kan du läsa och utforska rapporter eller skapa dem för andra.
+
+Installera [Power BI Desktop som har optimerats för Power BI-rapportservern](quickstart-create-powerbi-report.md).
 
 ## <a name="paginated-reports"></a>Sidnumrerade rapporter
-![](media/get-started/paginated-reports.png)
+Sidbrytningsrapporter (.RDL) är rapporter i dokumentformat med visualiseringar där tabeller expanderar vågrätt och lodrätt för att visa alla sina data, och fortsätter från sida till sida enligt behov. Det är bra för att skapa dokument med fast layout och bra utseende som är optimerade för utskrift, till exempel PDF- och Word-filer.
 
-Sidnumrerade rapporter är sidnumrerade rapporter i dokumentformat, där tabellerna har fler rader och rapporten har fler sidor ju mer data du har. Det är bra för att skapa dokument med fast layout och bra utseende som är optimerade för utskrift, till exempel PDF- och Word-filer.
+![Sidnumrerade rapporter i Power BI-rapportservern](media/get-started/paginated-reports.png)
 
 Du kan skapa rapporter med modernt utseende med [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) eller rapportdesignern i [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
+## <a name="reporting-services-mobile-reports"></a>Reporting Services-mobila rapporter
+Mobila rapporter ansluter till lokala data och har en dynamisk layout som anpassar sig efter olika enheter och hur du håller dem. Du skapar dem med SQL Server Mobile Report Publisher.
+
+Mer om [Reporting Services-mobila rapporter](https://docs.microsoft.com/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher). 
+
 ## <a name="report-server-programming-features"></a>Programmeringsfunktioner för rapportservern
-Dra nytta av Power BI-rapportserverns programmeringsfunktioner så att du kan utöka och anpassa dina rapportfunktioner med API:er för att integrera eller utöka data och rapportbearbetning i anpassade program.
+Dra nytta av Power BI-rapportserverns programmeringsfunktioner för att utöka och anpassa dina rapportfunktioner med API:er för att integrera eller utöka data och rapportbearbetning i anpassade program.
 
 Fler [utvecklardokumentation för rapportservern](https://docs.microsoft.com/sql/reporting-services/reporting-services-developer-documentation).
 
 ## <a name="next-steps"></a>Nästa steg
-[Användarhandbok](user-handbook-overview.md)  
-[Handbok för administratör](admin-handbook-overview.md)  
-[Snabbstart: Installera Power BI-rapportserver](quickstart-install-report-server.md)  
+[Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
-[Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

@@ -1,27 +1,20 @@
 ---
 title: Visa instrumentpaneler och rapporter i Power BI-mobilappar
-description: "Skapa eller anslut till instrumentpaneler och rapporter i Power BI-tjänsten. Visa dem sedan i Power BI-appar."
-services: powerbi
-documentationcenter: 
+description: Skapa eller anslut till instrumentpaneler och rapporter i Power BI-tjänsten. Visa dem sedan i Power BI-appar.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: complete
-qualitydate: 07/08/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/16/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/07/2018
 ms.author: maggies
-ms.openlocfilehash: e91b9745663ad88d388b410feb83ac8dfdc791b6
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 2e178d3c8961865fa7d728d50f118c882788247e
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295886"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
@@ -38,7 +31,7 @@ Instrumentpaneler är en portal till ditt företags livscykel och processer. En 
 Om du vill visa instrumentpaneler och rapporter på din mobila enhet måste du skapa eller ansluta dem i en webbläsare. 
 
 1. Gå till Power BI-tjänsten ([https://www.powerbi.com](https://www.powerbi.com)) och [registrera dig för ett konto](service-self-service-signup-for-power-bi.md).
-2. [Skapa egna Power BI-instrumentpaneler och rapporter](service-get-started.md) eller anslut till befintliga [Power BI-appar](service-connect-to-services.md) för en mängd olika tjänster som till exempel [Microsoft Dynamics CRM](service-connect-to-microsoft-dynamics-crm.md) och [Adobe Analyics](service-connect-to-adobe-analytics.md).
+2. [Skapa egna Power BI-instrumentpaneler och -rapporter](service-get-started.md) eller anslut till befintliga [Power BI-appar](service-connect-to-services.md) för en mängd olika tjänster som till exempel [Microsoft Dynamics CRM](service-connect-to-microsoft-dynamics-crm.md) och [Adobe Analytics](service-connect-to-adobe-analytics.md).
 
 Här är en instrumentpanel i Power BI-tjänsten:
 
@@ -78,7 +71,7 @@ Här är en instrumentpanel i Power BI-tjänsten:
    ![Dynamiska länkar](media/mobile-apps-view-dashboard/power-bi-iphone-breadcrumb.png)
 
 ### <a name="view-dashboards-in-landscape-mode-in-your-iphone"></a>Visa instrumentpaneler i liggande läge i din iPhone
-Eller bara lägg din telefon på sidan för att visa instrumentpanelen i liggande läge. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen &#151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
+Eller bara lägg din telefon på sidan för att visa instrumentpanelen i liggande läge. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen & #151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
 
 ![Liggande instrumentpanel](media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 
@@ -115,31 +108,21 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
    
    ![Startsidan för instrumentpanelen](media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
 
-     -     Gula stjärnor ![Favoritstjärna](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
+    Gula stjärnor ![Favoritstjärna](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
 
-     -     Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](service-data-classification.md).
-
+    Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](service-data-classification.md).
 
     Power BI-instrumentpaneler ser lite annorlunda ut på din Android-telefon. Alla paneler visas med samma bredd och de är placerade efter varandra uppifrån och ned.
 
     ![Stående instrumentpanelsvy](media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-     Eller bara lägg din telefon på sidan för att visa instrumentpanelen i liggande läge.
-
-    > [AZURE.TIP] Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](service-create-dashboard-mobile-phone-view.md) i stående läge. 
+    Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](service-create-dashboard-mobile-phone-view.md) i stående läge. 
 
 1. På instrumentpanelen kan du trycka på lodrät ellips (...) bredvid namnet att bjuda in en kollega, uppdatera eller hämta information om instrumentpanelen:
    
    ![Ellips-menyn](media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Svep uppåt och nedåt för att se alla [paneler på instrumentpanelen](mobile-tiles-in-the-mobile-apps.md). 
 3. Om du vill gå tillbaka till startsidan för instrumentpaneler trycker du på namnet på instrumentpanelen för att öppna den dynamiska länken.Tryck sedan på **Min arbetsyta**.   
-
-### <a name="view-dashboards-in-landscape-mode-on-your-android-phone"></a>Visa instrumentpaneler i liggande läge på din Android-telefon
-Du kan också visa instrumentpaneler i liggande läge genom att vrida din telefon. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen &#151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
-
-![Liggande instrumentpanel](media/mobile-apps-view-dashboard/power-bi-android-landscape-dashboard.png)
-
-Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i instrumentpanelen. Och du kan fortfarande [trycka på en panel](mobile-tiles-in-the-mobile-apps.md) för att öppna panelen i fokusläge och interagera med dina data.
 
 ## <a name="view-dashboards-on-your-android-tablet"></a>Visa instrumentpaneler på din Android-surfplatta
 1. Öppna Power BI-appen på din Android-surfplatta och logga in.
@@ -196,7 +179,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
     ![Dynamiska länkar](media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
 
 ### <a name="view-dashboards-in-landscape-mode-on-your-windows-10-phone"></a>Visa instrumentpaneler i liggande läge på din Windows 10-telefon
-Du kan också visa instrumentpaneler i liggande läge genom att vrida din telefon. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen &#151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
+Du kan också visa instrumentpaneler i liggande läge genom att vrida din telefon. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen & #151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
 
 ![Liggande instrumentpanel](media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
 

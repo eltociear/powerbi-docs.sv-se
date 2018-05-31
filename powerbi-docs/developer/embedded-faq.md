@@ -1,27 +1,20 @@
 ---
 title: Vanliga frågor och svar om Power BI Embedded
 description: Bläddra i en lista med vanliga frågor och svar om Power BI Embedded.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 24e4dbaf6ede92436ff05c8cb57756e3ab7e8526
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 255efac5d5bf73bca3126f869d4c7434d5c6ef0f
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34289750"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -58,7 +51,7 @@ Det kan finnas tillfällen där en ISV (vanligtvis stor) vill använda en P-SKU 
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Hur många inbäddningstoken kan jag skapa?
 
-Inbäddningstoken med PRO-licenser är avsedda för utveckling och utvecklartestning, så antalet inbäddningstoken ett Power BI-huvudkonto kan generera är begränsat. Du måste [köpa en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera när en kapacitet köps.
+Inbäddningstoken med PRO-licenser är avsedda för utvecklartestning så antalet inbäddningstoken ett Power BI-huvudkonto kan generera är begränsat. Du måste [köpa en kapacitet](#technical) för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera när en kapacitet köps. Gå till [Hämta tillgängliga funktioner](https://msdn.microsoft.com/library/mt846473.aspx) för att kontrollera det användningsvärde som indikerar aktuell inbäddad användning i procent.
 
 ## <a name="technical"></a>Teknik
 
@@ -164,10 +157,6 @@ Ja, du kan använda din [Azure-kredit](https://azure.microsoft.com/free/) för P
 
 Eftersom Power BI Embedded är en del av Azure är det möjligt att använda tjänsten med de [200 USD som du fick i kredit när du registrerade dig för Azure](https://azure.microsoft.com/free/).
 
-### <a name="is-there-a-limit-to-the-number-of-embed-tokens-a-power-bi-master-account-can-generate"></a>Finns det en gräns för antalet inbäddningstokens som ett Power BI-huvudkonto kan skapa? 
-
-Ja, det är begränsat eftersom dessa inbäddningstokens enbart är till för utvecklingstestning. [En kapacitet måste köpas](#technical) för inbäddningsscenarier för produktion. Det finns ingen gräns för generering av inbäddningstoken när en kapacitet köps. Gå till [Hämta tillgängliga funktioner](https://msdn.microsoft.com/en-us/library/mt846473.aspx) för att kontrollera hur många kostnadsfria inbäddningstokens som har använts.
-
 ### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Finns Power BI Embedded för suveräna moln (US Government, Tyskland, Kina)?
 
 Power BI Embedded finns tillgänglig för vissa [suveräna moln](embed-sample-for-customers-sovereign-clouds.md). Det finns fortfarande **INTE** tillgängligt för Kina-molnet.
@@ -176,9 +165,47 @@ Power BI Embedded finns tillgänglig för vissa [suveräna moln](embed-sample-fo
 
 Ideella organisationer och högskolor kan köpa Azure. Det finns ingen särskild prissättning för dessa typer av kunder i Azure.
 
+## <a name="power-bi-workspace-collection"></a>Power BI-arbetsytesamling
+
+### <a name="what-is-power-bi-workspace-collection"></a>Vad är Power BI-arbetsytesamling?
+
+**Power BI-arbetsytesamling** (**Power BI Embedded**, version 1) är en lösning som baseras på Azure-resursen **Power BI-arbetsytesamling**. Med den här lösningen kan du skapa **Power BI Embedded**-program för dina kunder med Power BI-innehåll i **Power BI-arbetsytesamling**, dedikerade API:er och arbetsytesamlingsnycklar för att Power BI ska kunna autentisera programmet.
+
+### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Kan jag migrera från Power BI-arbetsytesamling till Power BI Embedded?
+
+1. Du kan använda migreringsverktyget för att klona **Power BI-arbetsytesamling**-innehåll till Power BI – https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
+
+2. Börja med **Power BI Embedded**-programmet POC som använder Power BI-innehåll.
+
+3. När du är redo för produktion köper du en **Power BI Embedded**-dedikerad kapacitet och tilldelar ditt Power BI-innehåll (arbetsytan) till den kapaciteten.
+
+>[!Note]
+Du kan fortsätta att använda **Power BI-arbetsytesamling** samtidigt som du bygger parallellt med en **Power BI Embedded**-lösning. När du är klar kan du flytta kunden till den nya **Power BI Embedded**-lösningen och dra tillbaka **Power BI-arbetsytesamlingen**.
+
+Mer information finns i [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded).
+
+### <a name="is-power-bi-workspace-collection-on-a-path-to-be-deprecated"></a>Håller Power BI-arbetsytesamling på att bli inaktuell?
+
+Ja, men kunder som redan använder **Power BI-arbetsytesamling** kan fortsätta att använda den tills den är inaktuell. Kunder kan också skapa nya arbetsytesamlingar och eventuella **Power BI Embedded**-program som fortfarande använder **Power BI-arbetsytesamling**.
+
+Men det innebär också att nya funktioner inte läggs till någon **Power BI-arbetsytesamling** och kunderna uppmanas att planera sin migrering till den nya **Power BI Embedded**-lösningen.
+### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>När kommer supporten för Power BI-arbetsytesamling att utgå?
+
+Kunder som redan använder **Power BI-arbetsytesamlingar** kan fortsätta att använda det fram till slutet av juni 2018 eller till slutet av deras supportavtal.
+
+### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>I vilka regioner kan PBI-arbetsytesamling skapas?
+
+De tillgängliga regionerna är sydöstra Australien, södra Brasilien, centrala Kanada, östra USA 2, östra Japan, norra centrala USA, Nordeuropa, södra centrala USA, Sydostasien, södra Storbritannien, Västeuropa, västra Indien och västra USA.
+
+### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Varför bör jag migrera från PBI-arbetsytesamling till Power BI Embedded?
+
+Det finns nya funktioner och egenskaper som introduceras i **Power BI Embedded**-lösningen som inte ingår i **Power BI-arbetsytesamling**.
+
+Detta är några av funktionerna:
+* Alla PBI-datakällor stöds, till skillnad mot de två datakällorna för **Power BI-arbetsytesamling**). 
+* Nya funktioner, som frågor och svar, uppdatera, bokmärken, instrumentpanels- och panelinbäddning, anpassade menyer osv. stöds endast i **Power BI Embedded**-lösningen.
+* Kapacitetsfaktureringsmodell.
+
 Mer information finns i [Felsökning av ditt inbäddade program](embedded-troubleshoot.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-
-
-

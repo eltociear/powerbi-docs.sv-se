@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c1b0d87d432dc337a1dab5d13bba10cc8c99dd14
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 26d04c77967a8223672cbe174a3c45e6d12602ea
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813379"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Metodtips för design av rapporter och visuella objekt
 <!-- Shared newnav Include -->
@@ -734,7 +735,7 @@ Gör detta genom att öppna formateringsfönstret, expandera **Y-axeln** och ang
 
 För mer information:
 
-* [Självstudie: Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md)
+* [Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md)
 * [Risken med dubbelskalade axlar i visuella objekt](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
 
 ### <a name="scatter-chart"></a>Punktdiagram
@@ -810,8 +811,8 @@ KPI:er visar värde, status, mål, målavvikelse och trend i samma mängd utrymm
 
 Mer information finns i:
 
-* [Självstudie: Diagram med radiella mätare i Power BI](power-bi-visualization-radial-gauge-charts.md)
-* [Självstudie: KPI:er i Power BI](power-bi-visualization-kpi.md)
+* [Diagram med radiella mätare i Power BI](power-bi-visualization-radial-gauge-charts.md)
+* [KPI:er i Power BI](power-bi-visualization-kpi.md)
 
 ## <a name="conclusion"></a>Slutsats
 Nu är det dags att börja använda dessa metodtips.  Håll kontakten med oss och dela med dig av dina egna metodtips. Är du inte överens med oss om våra rekommendationer eller har du en bra anledning till att ”bryta reglerna”?  Vi vill gärna höra om det också.  

@@ -1,27 +1,20 @@
 ---
 title: Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 description: Lär dig att installera Power BI Desktop som har optimerats för Power BI-rapportservern
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: c22e909130767abd1dc6f0aa00d76e1fb6b99ee7
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 2061bb5afde8c19693eb565b298fabedebae89ac
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34310416"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 Lär dig att installera Power BI Desktop som har optimerats för Power BI-rapportservern.
@@ -109,10 +102,10 @@ Om din rapportserver är en tidigare version behöver du motsvarande version av 
 ## <a name="next-steps"></a>Nästa steg
 Nu när du har installerat Power BI Desktop kan du börja skapa Power BI-rapporter.
 
-[Snabbstart: Skapa en Power BI-rapport för Power BI-rapportservern](quickstart-create-powerbi-report.md)  
+[Skapa en Power BI-rapport för Power BI-rapportservern](quickstart-create-powerbi-report.md)  
 [Kom igång med Power BI Desktop](../desktop-getting-started.md)  
-Interaktiv inlärning: [Kom igång med Power BI Desktop](../guided-learning/gettingdata.yml#step-2)  
-[Översikt i handbok, Power BI-rapportserver](user-handbook-overview.md)
+Interaktiv inlärning: [Komma igång med Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
+[Översikt över användarhandbok, Power BI-rapportserver](user-handbook-overview.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
