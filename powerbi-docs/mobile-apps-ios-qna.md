@@ -1,29 +1,20 @@
 ---
 title: Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 description: Ställ frågor om exempeldata med egna ord med det virtuella analysverktyget Frågor och svar i Power BI-mobilappen på iOS-enheten.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
-ms.devlang: NA
 ms.topic: conceptual
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: eaa8960de53b5c3e48c4bd619469beeec384b033
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 85487567d428618034f6f026324846fbfbd87baf
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33812183"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295018"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 
@@ -35,7 +26,7 @@ Gäller för:
 |:--- |:--- |
 | iPhone-telefoner |iPad-surfplattor |
 
-Det virtuella analysverktyget Frågor och svar är av konversations-Bi-typ som får åtkomst till underliggande data från frågor och svar i Power BI-tjänsten [(https://powerbi.com)](https://powerbi.com). Det föreslår datainsikter och du kan skriva in egna frågor eller ställa dem muntligt.
+Det virtuella analysverktyget Frågor och svar är en Bi-upplevelse av konversationstyp som använder sig av underliggande frågor och svar-data i Power BI-tjänsten [(https://powerbi.com)](https://powerbi.com). Det föreslår datainsikter och du kan skriva in eller ställa egna frågor muntligt.
 
 ![Virtuell analys för toppförsäljning](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
@@ -47,8 +38,8 @@ Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnad
 [Hämta iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Hämta iPhone-appen") från Apples App Store till din iPad, iPhone eller iPod Touch.
 
 Dessa versioner stöder Power BI för iOS-appen:
-- iPad med iOS 10 eller senare
-- iPhone 5 och senare, med iOS 10 eller senare 
+- iPad med iOS 10 eller senare.
+- iPhone 5 och senare, med iOS 10 eller senare. 
 - iPad med iOS 10 eller senare.
 
 ### <a name="download-samples"></a>Hämta exempel
