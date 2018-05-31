@@ -1,29 +1,20 @@
 ---
 title: 'Självstudier: Utforska Power BI-rapportservern på en virtuell dator'
 description: I de här självstudierna skapar du en virtuell dator med Power BI-rapportservern redan installerad och utforskar webbportalen.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-ms.component: powerbi-report-server
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
+ms.component: powerbi-report-server
 ms.topic: tutorial
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 05/05/2018
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: a77dceac19368fc7997f79513b0b5f946a914dfc
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 38985014407a4d64998e25f6944f57aedcc67309
+ms.sourcegitcommit: aa8045e42b979206c600bce4a8d17de1f0620462
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33813954"
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34445013"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Självstudier: Utforska Power BI-rapportservern på en virtuell dator
 I de här självstudierna skapar du en virtuell Azure-dator med Power BI-rapportservern redan installerad, så att du kan visa, redigera och hantera exempel på Power BI- och sidnumrerade rapporter samt KPI:er.
@@ -58,6 +49,8 @@ Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power
 5. Skapa ett användarnamn och ett lösenord.
 
 6. För **Resursgrupp** behåller du **Skapa ny** och kallar den **reportserverresourcegroup**.
+
+    Om du går igenom kursen mer än en gång måste du ge resursgruppen ett annat namn efter första gången. Du kan inte använda samma namn på resursgruppen två gånger i samma prenumeration. 
 
 7. Behåll de övriga standardvärdena > **OK**.
 
@@ -166,6 +159,8 @@ Du kan visa och interagera med Power BI-rapporter i webbportalen och starta Powe
 
     ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
 
+     Använd versionen av Power BI Desktop som är installerad på den virtuella datorn. Du kan inte ladda upp en rapport på en annan domän.
+
 3. I fönstret Fält expanderar du tabellen Kunder och drar fältet Sysselsättning till Rapportnivåfilter.
 
     ![Dra ett fält till fönstret Filter](media/tutorial-explore-report-server-web-portal/power-bi-report-server-desktop-filter.png)
@@ -252,7 +247,9 @@ Nu när du är klar med de här självstudierna kan du ta bort resursgruppen, de
 
 ## <a name="next-steps"></a>Nästa steg
 
-I de här självstudierna har du skapat en virtuell dator med Power BI-rapportservern. Du har provat några av funktionerna i webbportalen och du har öppnat en Power BI-rapport och en sidnumrerad rapport i sina respektive redigerare. Om du vill veta mer om hur du skapar rapporter för Power BI-rapportservern kan du fortsätta läsa.
+I de här självstudierna har du skapat en virtuell dator med Power BI-rapportservern. Du har provat några av funktionerna i webbportalen och du har öppnat en Power BI-rapport och en sidnumrerad rapport i sina respektive redigerare. Den här virtuella datorn har installerade SQL Server Analysis Services-datakällor, så du kan prova att skapa egna Power BI- och sidnumrerade rapporter med de här datakällorna. 
+
+Om du vill veta mer om hur du skapar rapporter för Power BI-rapportservern kan du fortsätta läsa.
 
 > [!div class="nextstepaction"]
 > [Skapa en Power BI-rapport för Power BI-rapportservern](./quickstart-create-powerbi-report.md)
