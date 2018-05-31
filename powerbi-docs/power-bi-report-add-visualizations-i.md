@@ -1,22 +1,30 @@
 ---
 title: Del 1, lägg till visualiseringar i en Power BI-rapport
 description: Del 1, lägg till visualiseringar i en Power BI-rapport
+services: powerbi
+documentationcenter: ''
 author: mihart
 manager: kfile
-ms.reviewer: ''
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: IkJda4O7oGs
+qualityfocus: no
+qualitydate: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
-ms.topic: conceptual
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
 ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2203d6af692e80ffe5480a81a0e0f2312c62b905
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 216f2a694bb0a6d65e5c50bb1cfe9a49d7e444bc
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34293776"
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33811700"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Del 1, lägg till visualiseringar i en Power BI-rapport
 Den här artikeln ger en snabb introduktion till att skapa en visualisering i en rapport med antingen Power BI-tjänsten eller Power BI Desktop.  För mer avancerat innehåll, se [del II](power-bi-report-add-visualizations-ii.md). Amanda visar ett par sätt att skapa, redigera och formatera visuella objekt på rapportarbetsytan. Prova sedan att skapa en egen rapport med hjälp av den [Försäljning- och marknadsföringsexempel](sample-datasets.md).

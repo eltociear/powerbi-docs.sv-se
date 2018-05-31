@@ -1,30 +1,22 @@
 ---
 title: Diagram med radiella mätare i Power BI
 description: Diagram med radiella mätare i Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: xmja6Epqa
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4a972e3ae702fc1746bebecbc5de00f47031f76a
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 7417b324a74dcc4aecd599c73fed0298de3e6a89
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33813057"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34292534"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Diagram med radiella mätare i Power BI
 Ett diagram med radiell mätare har en cirkelformad båge och visar ett värde som mäter framsteg på ett mål/KPI.  Målet, eller målvärdet, representeras av strecket (nålen). Framsteg mot målet representeras av skuggningen.  Och det värde som representerar förloppet visas i fetstil i bågen. Alla möjliga värden är jämnt fördelade längs bågen, från det lägsta (värdet längst till vänster) värdet till det högsta (värdet längst till höger).
