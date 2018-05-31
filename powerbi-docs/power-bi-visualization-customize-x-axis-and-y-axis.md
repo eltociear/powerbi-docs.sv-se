@@ -1,31 +1,24 @@
 ---
-title: "Anpassa egenskaper för x-axeln och y-axeln (Självstudier)"
-description: "Självstudier: Anpassa egenskaper för x-axeln och y-axeln"
-services: powerbi
-documentationcenter: 
+title: Anpassa egenskaper för x-axeln och y-axeln
+description: Anpassa egenskaper för x-axeln och y-axeln
 author: mihart
 manager: kfile
-backup: 
+ms.reviewer: ''
 featuredvideoid: 9DeAKM4SNJM
-editor: 
-tags: 
-qualityfocus: complete
-qualitydate: 05/16/2017
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d4156429b728718fa89131a46ebd0f5dd5aabf67
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 372f00e7bd62068688bdcc22c1e983c3fe629f8a
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295716"
 ---
-# <a name="customize-x-axis-and-y-axis-properties-tutorial"></a>Anpassa egenskaper för x-axeln och y-axeln (Självstudier)
+# <a name="customize-x-axis-and-y-axis-properties"></a>Anpassa egenskaper för x-axeln och y-axeln
 I den här kursen lär du dig många olika sätt att anpassa x-axeln och y-axeln i visuella objekt. Det är inte alla axlar som kan anpassas. Cirkeldiagram, till exempel, har inga axlar. Anpassningsalternativen kan också variera från ett visuellt objekt till ett annat och det finns för många alternativ för att täcka dem i en enda artikel. Så tar vi en titt på några av de mest använda axelanpassningarna så att du kan vänja dig vid att använda fliken visuell formatering i arbetsytan för Power BI-rapporter.  
 
 > [!NOTE]

@@ -15,25 +15,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4bfdbaaa305f80195fd08155ecca744444495aeb
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 1558f78f8f496814ac7745afe9b86f327ef7772b
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/09/2018
+ms.locfileid: "33923464"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
 
 Anslut till data genom att välja **Hämta data** från menyfliksområdet **Start**. Om du väljer nedåtpilen eller texten **Hämta data** på knappen, visas menyn **Mest vanliga** datatyper, enligt följande bild:
 
-![](media/desktop-data-sources/data-sources_1.png)
+![Hämta data i Power BI Desktop](media/desktop-data-sources/data-sources_01.png)
 
 Om du väljer **Mer...** från menyn **Mest vanliga** visas fönstret **Hämta data**. Du kan också öppna fönstret **Hämta data** (och kringgå menyn **Mest vanliga**) genom att välja **Hämta data**-**ikonen** direkt.
 
-![](media/desktop-data-sources/data-sources_2.png)
+![Knappen Hämta data](media/desktop-data-sources/data-sources_02.png)
 
 > [!NOTE]
 > Power BI-teamet utökar kontinuerligt de datakällor som är tillgängliga för **Power BI Desktop** och **Power BI-tjänsten**. Därför visas ofta tidiga versioner av pågående datakällor markerade med *beta* eller *förhandsversion*. Alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
@@ -46,6 +47,7 @@ Datatyperna ordnas i följande kategorier:
 * Alla
 * Fil
 * Databas
+* Power BI
 * Azure
 * Onlinetjänster
 * Övrigt
@@ -63,12 +65,7 @@ I kategorin **Fil** finns följande dataanslutningar:
 
 Följande bild visar fönstret **Hämta data** för **Fil**.
 
-![](media/desktop-data-sources/data-sources_3.png)
-
-> [!NOTE]
-> I tidigare versioner av Power BI Desktop var **CSV** och **Text** olika dataanslutningstyper. Dessa datakopplingar har nu kombinerats till **CSV/text**.
-> 
-> 
+![Hämta data > Fil](media/desktop-data-sources/data-sources_03.png)
 
 Kategorin **Databas** innehåller följande dataanslutningar:
 
@@ -88,8 +85,9 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * SAP Business Warehouse Message Server (beta)
 * Amazon Redshift
 * Impala
-* Google BigQuery (beta)
+* Google BigQuery
 * Snowflake
+* Exasol
 
 > [!NOTE]
 > Vissa databaskopplingar kräver att du aktiverar dem genom att välja **Arkiv > Alternativ och inställningar > Alternativ** sedan välja **Förhandsversionsfunktioner** och aktivera kopplingen. Om du inte ser några av de kopplingar som nämns ovan och vill använda dem, kontrollerar du dina inställningar för **Förhandsversionsfunktioner**. Observera att alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
@@ -98,7 +96,16 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 
 Följande bild visar fönstret **Hämta data** för **Databas**.
 
-![](media/desktop-data-sources/data-sources_4.png)
+![Hämta Data > Databaser](media/desktop-data-sources/data-sources_04.png)
+
+I **Power BI**-kategorin finns följande dataanslutningar:
+
+* Power BI-datauppsättningar
+* Power BI-datapooler (beta)
+
+Följande bild visar fönstret **Hämta data** för **Power BI**.
+
+![Hämta data > Power BI](media/desktop-data-sources/data-sources_05.png)
 
 Kategorin **Azure** innehåller följande dataanslutningar:
 
@@ -112,19 +119,20 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark (beta)
 * Interaktiv HDInsight-fråga (beta)
+* Azure KustoDB (beta)
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
 
-![](media/desktop-data-sources/data-sources_5.png)
+![Hämta data > Azure](media/desktop-data-sources/data-sources_06.png)
 
 Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 
-* Power BI-tjänsten
 * SharePoint Online-lista
 * Microsoft Exchange Online
 * Dynamics 365 (online)
 * Dynamics NAV (beta)
-* Dynamics 365 for Financials (beta)
+* Dynamics 365 Business Central
+* Common Data Service för appar (beta)
 * Common Data Service (beta)
 * Microsoft Azure Consumption Insights (beta)
 * Visual Studio Team Services (beta)
@@ -153,15 +161,15 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * tyGraph (beta)
 * Webtrends (beta)
 * Zendesk (beta)
+* TeamDesk (beta)
 
 Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
 
-![](media/desktop-data-sources/data-sources_6b.png)
+![Hämta data > Onlinetjänster](media/desktop-data-sources/data-sources_07.png)
 
 Kategorin **Övrigt** innehåller följande dataanslutningar:
 
 * Vertica (beta)
-* Kusto (beta)
 * Webb
 * SharePoint-lista
 * OData-feed
@@ -176,7 +184,7 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 
 Följande bild visar fönstret **Hämta data** för **Övrigt**.
 
-![](media/desktop-data-sources/data-sources_7a.png)
+![Hämta data > Övrigt](media/desktop-data-sources/data-sources_08.png)
 
 > [!NOTE]
 > För tillfället går det inte att ansluta till anpassade datakällor som skyddas med Azure Active Directory.
@@ -186,15 +194,15 @@ Följande bild visar fönstret **Hämta data** för **Övrigt**.
 ## <a name="connecting-to-a-data-source"></a>Ansluta till en datakälla
 Anslut till en datakälla genom att välja datakällan i fönstret **Hämta data** och välja **Anslut**. I följande bild har **Webb** valts från dataanslutningskategorin **Övrigt**.
 
-![](media/desktop-data-sources/data-sources_7b.png)
+![Anslut till webben](media/desktop-data-sources/data-sources_08a.png)
 
 Ett fönster för anslutningen visas, specifik för dataanslutningstypen. Om det krävs autentiseringsuppgifter uppmanas du att ange dem. Följande bild visar en URL som anges för att ansluta till en webbdatakälla.
 
-![](media/desktop-data-sources/datasources_fromwebbox.png)
+![Ange webbadress](media/desktop-data-sources/datasources_fromwebbox.png)
 
 När URL:en eller anslutningsinformationen för resursen har angetts, väljer du **OK**. Power BI Desktop ansluter till datakällan och visar tillgängliga datakällor i **navigatören**.
 
-![](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Navigatörsskärmen](media/desktop-data-sources/datasources_fromnavigatordialog.png)
 
 Du kan antingen läsa in data genom att välja knappen **Läs in** längst ned i **navigatören**, eller redigera frågan innan du läser in data genom att välja knappen **Redigera**.
 

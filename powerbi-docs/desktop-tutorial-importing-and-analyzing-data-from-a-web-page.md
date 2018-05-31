@@ -1,168 +1,196 @@
 ---
-title: "Självstudie: Importera och analysera data från en webbsida med Power BI Desktop"
-description: "Självstudie: Importera och analysera data från en webbsida med Power BI Desktop"
+title: 'Självstudie: Importera och analysera data från en webbsida med Power BI Desktop'
+description: 'Självstudie: Importera och analysera data från en webbsida med Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 9650f0be6ca795fdea3395721c0eb02e80464821
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 14c6cc0d221e5ed0a2fe6ead88deb9e8fb867290
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33945973"
 ---
-# <a name="analyzing-web-page-data-using-power-bi-desktop-tutorial"></a>Analysera webbsidedata med Power BI Desktop (självstudie)
-I den här självstudien lär du dig att importera en datatabell från en webbsida och skapa en rapport för att visualisera dess data. I processen går du igenom tabeller som finns på webbsidan och tillämpar datatransformeringssteg som ger tabellen en ny form.
+# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
 
- I den här artikeln:
+Som den stora fotbollsfantast du är vill du rapportera om vinnarna i fotbolls-EM (UEFA) under årens lopp. Med Power BI Desktop kan du importera data från en webbplats till en rapport och skapa grafik som visar data. I självstudien får du lära dig hur du använder Power BI Desktop för att:
 
-* **Aktivitet 1:** Ansluta till en webbdatakälla
-* **Aktivitet 2:** Utforma data i frågevyn
-  * Steg 1: Ta bort övriga kolumner om du bara vill visa intressanta kolumner
-  * Steg 2: Ersätt värden för att rensa värden i en vald kolumn
-  * Steg 3: Filtrera värden i en kolumn
-  * Steg 4: Byt namn på en kolumn
-  * Steg 5: Filtrera nullvärden i en kolumn
-  * Steg 6: Byt namn på en fråga
-  * Frågesteg som skapats
-* **Aktivitet 3:** Skapa visualiseringar med rapportvyn
-  * Steg 1: Läs in frågan i rapporten
-  * Steg 2: Skapa en kartvisualisering
+- Ansluta till en webbdatakälla och navigera mellan dess tillgängliga tabeller,
+- Forma och ändra data i **Power Query Editor**,
+- Namnge en fråga och importera den till en Power BI Desktop-rapport och 
+- Skapa och anpassa en visualisering för en karta och ett cirkeldiagram.
 
-## <a name="task-1-connect-to-a-web-data-source"></a>Aktivitet 1: Anslut till en webbdatakälla
- I aktivitet 1 importerar du en tabell med en turneringssammanfattning från UEFA:s Wikipedia-sida på följande plats: http://en.wikipedia.org/wiki/UEFA\_European\_Football\_Championship
+## <a name="connect-to-a-web-data-source"></a>Anslut till en webbdatakälla
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+Du kan hämta data om EM-vinnarna från resultattabellen på Wikipedias sidan om Europamästerskapet i fotboll på http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
-### <a name="add-a-wikipedia-page-data-source"></a>Lägga till en Wikipedia-sida som datakälla
-1. I **dialogrutan Komma igång** eller på menyfliksområdet **Start** väljer du **Hämta data**.
-2. Detta öppnar dialogrutan **Hämta data** där du kan välja bland en stor mängd datakällor för att importera data till Power BI Desktop. Vi väljer **Webb** som finns i gruppen **Alla** eller **Övrigt**.
-3. I dialogrutan **Webbinnehåll** i textrutan **URL** klistrar du in Wikipedias URL (http://en.wikipedia.org/wiki/UEFA\_European\_Football\_Championship).
-4. Klicka på **OK**.
+![Wikipedia, resultattabell](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
-När du har upprättat en anslutning till webbsidan ser du en lista med tabeller på Wikipedia-sidan i dialogrutan för **navigatören**. Du kan enkelklicka på varje tabell för att förhandsgranska datan.
+Importera data:
 
-I det vänstra fönstret i **navigatören** väljer du tabellen **Results[edit]** för turneringssammanfattningens resultat eller tabellen **Results[edit]** och **Redigera**. Detta innebär att vi kan formatera om tabellen innan vi läser in den i rapporten, eftersom datan inte är i det format vi behöver för analysen.
+1. I Power BI Desktop-menyfliken **Start** rulla ner pilen bredvid **Hämta data**, och välj sedan **Webb**.
+   
+   ![Hämta data från menyfliksområdet](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png) 
+   
+   >[!NOTE]
+   >Du kan också välja själva objektet **Hämta data** eller välja **Hämta data** från Power BI-dialogrutan **Kom igång**, välj sedan **Webb** från avsnittet **Alla** eller **Andra** i dialogrutan **Hämta data** och välj sedan **Anslut**.
+   
+2. I dialogrutan **Från webb** klistra in webbadressen `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship` i **URL**-textrutan och välj sedan **OK**.
+   
+    ![Hämta data från dialog](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
+   
+   När du har anslutit till Wikipedia-webbsidan visar Power BI-dialogrutan **Navigator** en lista över tillgängliga tabeller på sidan. Du kan välja något tabellnamn för att förhandsgranska dess data. Tabellen **Resultat [redigera]** har de data som du behöver, även om de inte är i exakt den form som du önskar. Du vill omforma och rensa data innan du läser in dem i rapporten. 
+   
+   ![Navigeringsdialogruta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+   
+   >[!NOTE]
+   >Fönstret **Förhandsgranska** visar den senast valda tabellen, men alla markerade tabeller kommer att läsas in i **Power Query Editor** när du väljer **Redigera** eller **Läs in**. 
+   
+3. Välj tabellen **Resultat [redigera]** i listan **Navigator** och välj sedan **Redigera**. 
+   
+   En förhandsgranskning av tabellen öppnas i **Power Query Editor**, där du kan använda omvandlingar för att rensa data. 
+   
+   ![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   
+## <a name="shape-data-in-power-query-editor"></a>Forma data i Power Query Editor
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+Du vill göra informationen lättare att söka igenom genom att visa endast år och de länder som vann. Du kan använda **Power Query Editor** för att utföra dessa dataomformningar och rensa.
 
-En förhandsgranskning av tabellen visas i frågevyn, där vi kan tillämpa olika transformeringssteg för att rensa datan.
+I det här steget tar du bort alla kolumner utom **År** och **Finalvinnare** från tabellen.
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+1. I rutnätet **Power Query Editor**, välj kolumnerna **År** och **Finalvinnare** (håll ner **Ctrl** för att markera flera objekt).
+   
+2. Högerklicka och välj **Ta bort andra kolumner** från listrutan eller välj **Ta bort kolumner** > **Ta bort andra kolumner** från gruppen **Hantera kolumner** i menyflikområdet **Start** för att ta bort alla kolumner från tabellen. 
+   
+   ![Listrutan Ta bort andra kolumner](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png) eller ![Menyfliken Ta bort andra kolumner](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
 
-## <a name="task-2-shape-data-in-the-subject-table"></a>Aktivitet 2: Utforma data i ämnestabellen
-Nu när ämnestabellen är vald för datafrågan, lär du dig hur du utför olika datautformnings- och rensningssteg.
-
-**Steg 1:** Ta bort övriga kolumner för att bara visa intressanta kolumner
-
-I det här steget tar du bort alla kolumner utom **År** och **Finalvinnare**.
-
-1. I rutnätet **Förhandsgranska fråga** väljer du kolumnerna **År** och **Finalvinnare** (använd **CTRL** + **klick**).
-2. Högerklicka på en kolumnrubrik i rutnätet **Förhandsgranska fråga** och klicka på **Ta bort andra kolumner** för att ta bort de omarkerade kolumnerna. Observera att åtgärden också är tillgänglig i menyfliksområdet **Start** i gruppen **Hantera kolumner**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
-
-**Steg 2:** Ersätt värden för att rensa värden i en vald kolumn
-
-I det här steget byter du ut suffixet Information i kolumnen **År**. Observera att suffixet är på en ny rad så det syns inte i tabellförhandsgranskningen. Men om du klickar på någon av cellerna med ett numeriskt värde i kolumnen År, ser du hela värdet i den detaljerade vyn.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage5.png)
+Ta sedan bort extraordet **Information** från kolumncellerna **År**.
 
 1. Välj kolumnen **År**.
-2. I menyfliksområdet **Frågevy** klickar du på **Ersätt värden** under fliken **Start**. Du kan också högerklicka på kolumnen **År** och klicka på **Ersätt värden** för att ersätta informationen med tom text.
-3. I dialogrutan **Ersätt värden** skriver du Information i textrutan **Värde att söka efter** och lämnar testrutan **Ersätt med** tom.
-4. Klicka på **OK**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
-
- **Steg 3:** Filtrera värden i en kolumn
-
-I det här steget filtrerar du kolumnen **År** till att visa rader som inte innehåller ”År”.
-
-1. Klicka på filtrets listrutepil i kolumnen **År**.
-2. I listrutan **Filter** avmarkerar du alternativet **År**.
-3. Klicka på **OK**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
-
-**Steg 4:** Byt namn på en kolumn
-
-Nu när vi har rensat datan i kolumnen **År** ska vi arbeta med kolumnen **Finalvinnare**.
-
-Eftersom vi endast ser listan med vinnare kan vi byta namn på kolumnen till **Land**.
-
-1. Välj kolumnen **Finalvinnare** i Förhandsgranska fråga.
-2. I menyfliksområdet **Frågevy** under fliken **Transformera** och gruppen **Vilken kolumn som helst** hittar du **Byt namn**.
-3. Kolumnnamnet blir redigerbart. Vi byter namn på kolumnen till **Land**.
-
-**Steg 5:** Filtrera nullvärden i en kolumn
-
-Vi måste också filtrera bort nullvärden i kolumnen **Land**. För att kunna göra detta kan vi använda filtermenyn som vi såg i Steg 3, eller också kan vi:
-
-1. Högerklicka på en av cellerna i kolumnen **Land** som innehåller ett nullvärde.
-2. Välj **Textfilter –\> Är inte lika med** i snabbmenyn.
-3. Detta skapar ett nytt filtersteg som tar bort rader med nullvärden i kolumnen **Land**.
-
-**Steg 6:** Namnge en fråga
-
-I det här steget namnger du slutfrågan **EM-vinnare**.
-
-1. I fönstret **Frågeinställningar** i textrutan **Namn** skriver du **EM-vinnare**.
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
-
-## <a name="task-3-create-visualizations-using-the-report-view"></a>Aktivitet 3: Skapa visualiseringar med rapportvyn
-Nu när vi har konverterat datan till det format vi behöver för analysen, kan vi läsa in resulterande tabell i rapporten och skapa några visualiseringar.
-
-**Steg 1:** Läsa in frågan i rapporten
-
-För att kunna läsa in frågeresultaten i Power BI Desktop och skapa en rapport väljer vi **Stäng och läs in** i menyfliksområdet **Start**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
-
-Detta utlöser utvärderingen av frågan och läser in tabellresultatet i rapporten. I Power BI Desktop väljer du ikonen **Rapport** för att se Power BI Desktop i rapportvyn.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage10.png)
-
-Du kan se resulterande tabellfält i **fönstret Fält** till höger om **Rapportvy**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
-
-**Steg 2:** Skapa en kartvisualisering
-
-För att kunna skapa en visualisering kan vi dra fält från **Fältlista** och släppa dem på **rapportarbetsytan**.
-
-1. Dra fältet **Land** och släpp det på **rapportarbetsytan**. Detta skapar en ny visualisering på **rapportarbetsytan**. I det här fallet när vi har en lista med länder skapas en **kartvisualisering**.
+2. Högerklicka och välj **Ersätt värden** från listrutan eller välj **Ersätt värden** från gruppen **Transformera** i fliken **Start** i menyfliksområdet (finns även i gruppen **Valfri kolumn** i fliken **Transformera**). 
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage12.png)
-2. Vi kan enkelt ändra visualiseringstyp genom att klicka på en annan ikon i fönstret **Visualisering**.
+   ![Listrutan Ersätt värden](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) eller ![Menyfliken Ersätt värden](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage13.png)
-3. Vi stannar kvar i visualiseringstypen **Karta**. Vi kan också ändra storlek på visualiseringen genom att dra från ett av hörnen i visualiseringen upp till önskad storlek.
+3. I dialogrutan **Ersätt värden** skriver du **Information** i textrutan **Värde att söka efter**, lämnar testrutan **Ersätt med** tom och väljer sedan **OK** för att ta bort ordet ”information” från posterna med **År**.
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
-4. Observera att just nu har alla punkter på kartan samma storlek. Vi vill ändra detta så att länder med fler vunna EM-turneringar visas med en större punkt i kartan. För att göra detta drar vi fältet **År** i **Fältlista** till rutan **värden** i den nedre halvan av **fönstret Fält**.
+   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
+
+Vissa **År**-celler innehåller endast ordet ”år” i stället för årsvärden. Du kan filtrera kolumnen **År** till att endast visa rader som inte innehåller ordet ”År”. 
+
+1. Välj filtrets listrutepil i kolumnen **År**.
+   
+2. Bläddra nedåt i listan, och avmarkera kryssrutan bredvid alternativet **År** och välj sedan **OK**, för att ta bort de rader som endast innehåller ordet ”år” i kolumnen **År**. 
+
+   ![Filtrera data](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
+
+Nu när du har rensat data i kolumnen **År** kan du arbeta med kolumnen **Finalvinnare**. Eftersom du endast ser listan med data över finalvinnare nu kan du byta namn på kolumnen till **Land**. Byt namn på kolumnen:
+
+1. Dubbelklicka på eller tryck och håll ned kolumnrubriken **Finalvinnare** eller 
+   - Högerklicka på kolumnrubriken **Finalvinnare** och välj **Byt namn** i listrutan eller 
+   - Välj kolumnen **Finalvinnare** och välj **Byt namn** från gruppen **Valfri kolumn** i fliken **Transformera** i menyfliksområdet. 
+   
+   ![Byt namn på listrutan](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) eller ![Byt namn på menyfliksområdet](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
+   
+2. Skriv in **Land** i sidhuvudet och tryck på **Retur** för att byta namn på kolumnen.
+
+Du vill också filtrera bort rader som ”2020” som har null-värden i kolumnen **Land**. Du kan använda filtermenyn som du gjorde med värdena **År** eller så kan du:
+
+1. Högerklicka på cellen **Land** i raden **2020** som har värdet *null*. 
+2. Välj **Textfilter** > **Är inte lika med** på snabbmenyn för att ta bort alla rader som innehåller denna cells värde.
+   
+   ![Textfilter](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
+   
+## <a name="import-the-query-into-report-view"></a>Importera frågan i rapportvyn
+
+Nu när du har format data som du vill, är du redo att namnge din fråga ”EM-vinnare” och importera den till rapporten.
+
+1. I fönstret **Frågeinställningar** i textrutan **Namn** skriver du **EM-vinnare** och trycker sedan på **Retur**.
+   
+   ![Namnge frågan](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
+
+2. Välj **Stäng och tillämpa** > **Stäng och tillämpa** från fliken **Start** i menyfliksområdet.
+   
+   ![Stäng och använd](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
+   
+Frågan läses in i Power BI Desktop **rapportvyn** där du kan se den i fönstret **Fält**. 
+   
+   ![Fönstret Fält](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
+>[!TIP]
+>Du kan alltid komma tillbaka till **Power Query Editor** för att redigera och förfina frågan genom att:
+>- Välja ellipsen (**...** ) **Fler alternativ** bredvid **EM- vinnare** i rutan **Fält** och välja **Redigera fråga** i listrutan, eller
+>- Välja **Redigera frågor** > **Redigera frågor** i gruppen **Externa data** för menyfliken **Start** i rapportvyn. 
+
+## <a name="create-a-visualization"></a>Skapa en visualisering
+
+Skapa en visualisering baserat på dina data: 
+
+1. Välj fältet **Land** i rutan **Fält** eller dra det till rapportarbetsytan. Power BI Desktop identifierar data som landsnamn och skapar automatiskt en **kart**-visualisering. 
+   
+   ![Kartvisualisering](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png)
+   
+2. Förstora kartan genom att dra i handtagen i hörnen så visas alla vinnande landsnamn.  
+
+   ![Förstora karta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
+   
+3. Kartan visar identiska datapunkter för varje land som vann en EM-turnering. Om du vill att storleken på varje datapunkt återspeglar hur ofta landet har vunnit, dra fältet **År** till **Dra datafält hit** under **Storlek** i den nedre delen av fönstret **Visualiseringar**. Fältet ändras automatiskt till måttet **Antal år** och kartvisualiseringen visar nu större datapunkter för land som har vunnit fler turneringar. 
    
    ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
+   
 
-Som du kan se är det enkelt att anpassa visualiseringar i rapporten, för att kunna visa datan så som du vill. I Power BI Desktop är det enkelt att hämta data från en stor mängd datakällor och utforma dem efter dina analysbehov för att visualisera datan på interaktiva sätt. När rapporten är klar kan du [ladda upp den på Power BI](desktop-upload-desktop-files.md) och skapa instrumentpanelen som baseras på den, och sedan dela den med andra Power BI-användare.
+## <a name="customize-the-visualization"></a>Anpassa visualiseringen
 
-Nu är du klar med självstudien **Importera data från webben**. Du kan hämta den färdiga Power BI Desktop-filen [här](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Data_From_The_Web.pbix).
+Som du kan se är det mycket enkelt att skapa visualiseringar baserade på dina data. Det är också enkelt att anpassa dina visualiseringarna för att bättre presentera data på de sätt som du önskar. 
 
-## <a name="where-else-can-i-get-more-information"></a>Var kan jag få mer information?
+### <a name="format-the-map"></a>Formatera kartan
+Du kan ändra utseendet på en visualisering genom att markera den och sedan välja ikonen **Format** (roller) i fönstret **Visualiseringar**. Till exempel kan datapunken(erna) ”Tyskland” i din visualiseringen vara vilseledande eftersom Västtyskland vann två turneringar och Tyskland vann en och kartan skriver över de två punkterna i stället för att avgränsa eller lägga ihop dem. Du kan färglägga dessa två punkter på olika sätt för att markera det här. Du kan också ge kartan en mer beskrivande och attraktiv rubrik. 
+
+1. Med visualiseringen vald, väljer du ikonen **Formatera** och sedan **Datafärger** för att expandera datafärgsalternativen. 
+   
+   ![Formatera datafärger](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
+   
+2. Sätt **Visa alla** till **På**, och välj sedan listrutan bredvid **Västtyskland** och välj en gul färg. 
+   
+   ![Ändra färg](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
+   
+3. Välj **Rubrik** för att expandera rubrikalternativ, och i fältet **Rubrik** anger du **EM-vinnare** i stället för den aktuella titeln. 
+4. Ändra **Teckenfärg** till röd, **Textstorlek** till **12**, och **Teckensnittsfamilj** till **Segoe (Bold)**. 
+   
+   ![Formatera datafärger](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
+   
+
+Din kartvisualisering ser nu ut så här:
+
+![Formaterad kartvisualisering](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web18.png)
+   
+### <a name="change-the-visualization-type"></a>Ändra visualiseringstyp
+Du kan ändra typ för en visualisering genom att markera den och sedan välja en annan ikon överst i fönstret **Visualisering**. Till exempel saknar kartvisualiseringen data för Sovjetunionen och Tjeckoslovakien, eftersom dessa länder inte längre finns på världskartan. En annan typ av visualisering t.ex. ett treemap- eller cirkeldiagram kan vara mer exakt, eftersom de visar alla värden. 
+
+Ändra kartan till ett cirkeldiagram, välj sedan ikonen **Cirkeldiagram** i fönstret **Visualisering**. 
+   
+![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png)
+
+>[!TIP]
+>- Du kan använda formateringsalternativen **Datafärger** för att göra ”Tyskland” och ”Västtyskland” till samma färg. 
+>- För att gruppera samman länder med flest vinster på cirkeldiagrammet, välj elipsen (**...** ) längst upp till höger om visualiseringen och välj sedan **Sortera efter antal år** i listrutan. 
+
+I Power BI Desktop är det enkelt att hämta data från en stor mängd datakällor och utforma dem efter dina analysbehov för att visualisera datan på interaktiva sätt. När rapporten är klar kan du [ladda upp den på Power BI](desktop-upload-desktop-files.md) och skapa instrumentpanelen som baseras på den, och sedan dela den med andra Power BI-användare.
+
+## <a name="see-also"></a>Se också
 * [Läs andra Power BI Desktop-självstudier](http://go.microsoft.com/fwlink/?LinkID=521937)
 * [Se Power BI Desktop-videor](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Besök Power BI-forumet](http://go.microsoft.com/fwlink/?LinkID=519326)

@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 4552e08c5291ee5f0ce268e796e1a9148eb64be2
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 62eab4de4dc46695f7bfd922333d588ed863f2bc
+ms.sourcegitcommit: c29525cbac2e747edb4dd3a1841084bb0ce42582
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871488"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Språk och länder/regioner som stöds för Power BI
 
@@ -165,6 +166,11 @@ Utöver att ställa in språket för Power BI Desktop-programmet kan du också a
 - Hur vi jämför och sorterar strängar. Eftersom turkiska har två bokstaven ”i”, kan som exempel dessa två hamna i olika ordning vid sortering, beroende på databasens sortering. 
 - Det språk som Power BI Desktop använder vid skapande av dolda datumtabeller från datumfält. Fälten kallas till exempel Månad/Monat/Mois och så vidare.
 
+> [!NOTE]
+> Power BI-modellen använder för närvarande ett språk som inte är skiftlägeskänsligt (eller kana-känslig) så att ”ABC” och ”abc” behandlas som likvärdiga. Om ”ABC” läses in i databasen först kommer andra strängar som endast skiljer sig åt i skiftläge såsom ”Abc” inte att läsas in som ett separat värde.
+> 
+>
+
 Så här ställer du in modellspråket.
 
 1. I Power BI Desktop går du till **Arkiv** > **Alternativ och inställningar** > **Alternativ**.
@@ -173,6 +179,10 @@ Så här ställer du in modellspråket.
 
     ![Ställa in modellspråk i Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
+> [!NOTE]
+> När det skapats kan inte språket för en Power BI-modell ändras.
+> 
+>
 
 ## <a name="languages-for-the-help-documentation"></a>Språk för hjälpdokumentation
 Hjälpen är översatt på följande 10 språk: 

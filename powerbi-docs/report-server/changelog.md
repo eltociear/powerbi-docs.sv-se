@@ -1,27 +1,20 @@
 ---
 title: Ändringslogg för Power BI-rapportservern
 description: Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
-services: powerbi
-documentationcenter: ''
 author: jtarquino
-manager: jonhp
-backup: maggies
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+manager: kfile
+ms.reviewer: maggies
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 12/11/2017
-ms.author: tankas
-ms.openlocfilehash: 67b9a162d689a8615a3e2459295eab6dad6d2364
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.author: jtarquino
+ms.openlocfilehash: 65ad5e6ca9fbdd71643f71fa56186ee3d01d2dd1
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295696"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -31,6 +24,24 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 ## <a name="march-2018"></a>Mars 2018
 - **Power BI-rapportserver**
+    - *Version 1.2.6690.34729 (build-nr 15.0.2.402), publicerad: 27 april 2018*
+        - Felkorrigeringar
+            - Aktivera migrering av SQL Server Reporting Services 2017-kataloger
+            - För Power BI-rapporter (PBIX)
+                - Rapporter kan uppdateras när en server är konfigurerad för att använda anpassad autentisering
+                - Att ändra egenskaperna för en rapport återställer inte autentiseringsuppgifter för datakällor
+            - För sidnumrerade rapporter (RDL)
+                - Användning av `Lookup()` eller härledda funktioner såsom `LookupSet()` och `MultiLookup()` i RDL Expresssions leder inte längre till `#Error`
+                - Länkade rapporter respekterar sidstorleken för målrapporten vid utskrift
+                - Prenumerationer kan skapas för länkade rapporter som använder sammanhängande parametrar
+                - Standardinställningar för flervärdesparameter kan ändras när du använder IE11
+                - Leveransalternativ för datadrivna prenumerationen kan redigeras
+                - Prenumerationer kan visas och redigeras medan prenumerationen körs
+                - Att ange autentiseringsuppgifterna för datakällan tar inte bort uttrycksbaserade anslutningssträngar
+            - För KPI:er
+                - Trendrader uppdateras när data uppdateras
+            - Allmänna stabilitetsförbättringar
+
     - *Version 1.2.6660.39920 (build-nr 15.0.2.389), publicerad: 28 mars 2018*
         - Felkorrigeringar
             - För Power BI-rapporter (PBIX), fungerar korrigering för Exportera data inte från Power BI-visualiseringar
@@ -46,7 +57,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
             - Korrigering för export till Word som skapar ojämn radhöjd om raden har tomt innehåll
             - För sidnumrerade rapporter har en korrigering gjorts för uttrycksbaserade anslutningssträngar som tas bort när vi ändrar autentiseringsuppgifter för datakällor
             - Korrigering för möjligheten att använda KPI med textvärden
-            - För sidnumrerade rapporter har en korrigering gjorts för möjligheten att tilldela en ny datauppsättning till en befintlig sidnumrerad rapport
+            - För sidnumrerade rapporter (RDL) har en korrigering gjorts för möjligheten att tilldela en ny datauppsättning till en befintlig sidnumrerad rapport
             - Andra stabilitets- och användbarhetskorrigeringar
 
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
@@ -120,7 +131,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
     - *Build-nr 14.0.600.301, publicerat: 11 juli 2017*
         - Felkorrigeringar
-            - Taggen {{UserId}} motsvarar de lagrade autentiseringsuppgifterna istället för användaren som kör rapporten i Power BI-rapporter
+            - Taggen `{{UserId}}` motsvarar de lagrade autentiseringsuppgifterna istället för användaren som kör rapporten i Power BI-rapporter
             - Vissa bilder kan inte återges i Power BI-rapportserverns rapporter
             - Det går inte att ändra namnet på en Power BI-rapport i Power BI-rapportservern
             - Det gick inte att läsa in anpassade visuella objekt i Power BI- mobilappen (det krävs ominstallation av mobilappen för att rensa det lokala cacheminnet)
@@ -136,7 +147,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 [Användarhandbok](user-handbook-overview.md)  
 [Handbok för administratör](admin-handbook-overview.md)  
-[Snabbstart: Installera Power BI-rapportserver](quickstart-install-report-server.md)  
+[Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

@@ -898,32 +898,14 @@
       items:
         - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
           href: developer/overview-of-power-bi-rest-api.md
-        - name: Vanliga frågor och svar
-          href: developer/embedded-faq.md
         - name: Power BI-behörigheter
           href: developer/power-bi-permissions.md
         - name: Säkerhet på radnivå (RLS)
           href: developer/embedded-row-level-security.md
-        - name: Bädda in frågor och svar
-          href: developer/qanda.md
+        - name: Vanliga frågor och svar
+          href: developer/embedded-faq.md
     - name: Gör så här
       items:
-        - name: Hur du bäddar in ditt innehåll
-          href: developer/embedding-content.md
-        - name: Skicka data till en instrumentpanel
-          href: developer/walkthrough-push-data.md
-        - name: Så här migrerar du Power BI Embedded
-          href: developer/migrate-from-powerbi-embedded.md
-        - name: Integrera en instrumentpanel i en app (användaren äger data)
-          href: developer/integrate-dashboard.md
-        - name: Integrera en Power BI-panel i en app (användaren äger data)
-          href: developer/integrate-tile.md
-        - name: Integrera en Power BI-rapport i en app (användaren äger data)
-          href: developer/integrate-report.md
-        - name: Integrera innehåll i ditt program (appen äger data)
-          href: developer/embed-sample-for-customers.md
-        - name: Integrera innehåll i ditt program för suveräna moln (appen äger data)
-          href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Skapa ett anpassat visuellt objekt
           items:
             - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
@@ -938,6 +920,18 @@
           items:
             - name: Bädda in med Power BI
               href: developer/embedding.md
+            - name: Hur du bäddar in ditt innehåll
+              href: developer/embedding-content.md
+            - name: Integrera en instrumentpanel i en app (användaren äger data)
+              href: developer/integrate-dashboard.md
+            - name: Integrera en Power BI-panel i en app (användaren äger data)
+              href: developer/integrate-tile.md
+            - name: Integrera en Power BI-rapport i en app (användaren äger data)
+              href: developer/integrate-report.md
+            - name: Integrera innehåll i ditt program (appen äger data)
+              href: developer/embed-sample-for-customers.md
+            - name: Integrera innehåll i ditt program för suveräna moln (appen äger data)
+              href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Bädda in anpassade layouter i en app
               href: developer/embedded-custom-layout.md
             - name: Skapa en Azure Active Directory-klient
@@ -946,14 +940,20 @@
               href: developer/register-app.md
             - name: Autentisera till Power BI-tjänsten
               href: developer/get-azuread-access-token.md
+            - name: Bädda in frågor och svar
+              href: developer/qanda.md
+            - name: Så här migrerar du Power BI Embedded
+              href: developer/migrate-from-powerbi-embedded.md
             - name: Migreringsverktyg för Power BI Embedded
               href: developer/migrate-tool.md
             - name: Kodavsnitt för migrering
               href: developer/migrate-code-snippets.md
             - name: Felsök ditt inbäddade program
               href: developer/embedded-troubleshoot.md
-        - name: Skicka data till en instrumentpanel
+        - name: Skicka data
           items:
+            - name: Skicka data till en instrumentpanel
+              href: developer/walkthrough-push-data.md
             - name: Registrera en app med Azure AD
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
             - name: Hämta en autentiseringsåtkomsttoken
@@ -990,6 +990,8 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Resurser
       items:
+        - name: Integrerar upplevelseverktyg för inbäddning
+          href: 'https://aka.ms/embedsetup'
         - name: Exempel för JavaScript Playground
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Exempel

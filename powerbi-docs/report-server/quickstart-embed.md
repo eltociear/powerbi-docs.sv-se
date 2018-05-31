@@ -1,108 +1,107 @@
 ---
-title: "Bädda in en rapport med iFrame"
-description: "Det går mycket snabbt att installera Power BI Reports Server. Att hämta, installera eller konfigurera tar bara några minuter."
-services: powerbi
-documentationcenter: 
+title: Bädda in en rapport med iFrame
+description: Bädda in rapporten i Power BI Report Server i en iFrame i SharePoint Server
 author: markingmyname
-manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/09/2017
 ms.author: maghan
-ms.openlocfilehash: 56835bfb25c8c930099fadf710137f69fa89fc2e
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 05/04/2018
+ms.topic: quickstart
+ms.service: powerbi
+ms.component: powerbi-report-server
+ms.custom: mvc
+manager: kfile
+ms.openlocfilehash: 8d7653e6f390959df745fa2b19076ee89b26b1bc
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34293707"
 ---
-# <a name="quickstart-embed-a-power-bi-report-using-an-iframe-and-url-parameters"></a>Snabbstart: Bädda in en Power BI-rapport med iFrame och URL-parametrar
+# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Snabbstart: Bädda in en Power BI Report Server-rapport med iFrame i SharePoint Server
 
-Du kan bädda in valfri rapport med iFrame i ditt program. 
+I den här snabbstarten lär du dig att bädda in en Power BI Report Server-rapport med iFrame i en SharePoint-sida. Om du arbetar med SharePoint Online, måste Power BI Report Server vara allmänt tillgänglig. I SharePoint Online fungerar inte Power BI-webbdel som fungerar med Power BI-tjänsten med Power BI Report Server. 
 
-## <a name="url-parameter"></a>URL-parameter
+![iFrame-exempel](media/quickstart-embed/quickstart_embed_01.png)
+## <a name="prerequisites"></a>Förutsättningar
+* Du måste ha [Power BI-rapportservern](https://powerbi.microsoft.com/en-us/report-server/) installerad och konfigurerad.
+* Du måste ha [Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md) installerad.
+* Du måste ha en [SharePoint](https://docs.microsoft.com/en-us/sharepoint/install/install)-miljö installerad och konfigurerad.
 
-Du kan lägga till en frågesträngsparameter i form av `?rs:Embed=true` för valfri URL till en rapport.
+## <a name="creating-the-power-bi-report-server-report-url"></a>Skapa Power BI-rapportserverns rapport-URL
 
-Exempel:
+1. Hämta exemplet från GitHub – [Bloggdemo](https://github.com/Microsoft/powerbi-desktop-samples).
 
-```
-http://myserver/reports/powerbi/Sales?rs:embed=true
-```
+    ![hämta en exempel-PBIX-fil](media/quickstart-embed/quickstart_embed_14.png)
 
-Detta fungerar på alla rapporttyper i Power BI-rapportservern.
+2. Öppna PBIX-exempelfilen från GitHub i **Power BI Desktop optimerad för Power BI Report Server**.
 
-## <a name="iframe"></a>iFrame
+    ![PBI RS Desktop-verktyget](media/quickstart-embed/quickstart_embed_02.png)
 
-När du har din URL kan du skapa en iFrame på en webbsida som värd för rapporten.
+3. Spara rapporten till **Power BI-rapportservern**. 
 
-Exempel:
+    ![PBI RS spara](media/quickstart-embed/quickstart_embed_03.png)
 
-```
-<iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
-```
+4. Visa rapporten i **webbportalen**.
 
-## <a name="url-filter"></a>URL-filter
+    ![Webbportalen](media/quickstart-embed/quickstart_embed_04.png)
 
-Du kan lägga till en frågesträngsparameter till URL:en för att filtrera de data som returneras i Power BI-rapporten.
+### <a name="capturing-the-url-parameter"></a>Samla in URL-parametern
 
-Syntaxen är enkel. Börja med rapport-URL:en, lägg till ett frågetecken och sedan den här filtersyntaxen.
+När du har din URL kan du skapa en iFrame på en SharePoint-sida som värd för rapporten. För en Power BI-rapportserves rapport-URL kan du lägga till en querystring-parameter av `?rs:embed=true` för att bädda in rapporten i en iFrame. 
 
-URL?filter=***Tabell***/***Fält*** eq '***värde***'
+   Till exempel:
+    ``` 
+    http://myserver/reports/powerbi/Sales?rs:embed=true
+    ```
+## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Bädda in en Power BI Report Server-rapport i en SharePoint iFrame
 
-Tänk på följande:
+1. Navigera till en SharePoint **webbplatsinnehåll**-sida.
 
-- Namnen **Tabell** och **Fält** är skiftlägeskänsliga, men **värde** är det inte.
-- Du kan filtrera en rapport med fält som är dolda från rapportvyn.
-- **Värdet** måste omges med enkla citattecken.
-- Fälttypen måste vara en sträng.
-- Tabell- och fältnamnen får inte innehålla några blanksteg.
+    ![Webbplatsinnehållssida](media/quickstart-embed/quickstart_embed_05.png)
 
-###  <a name="example-filter-on-a-field"></a>Exempel: Filtrera i ett fält
+2. Välj sidan där du vill lägga till en rapport.
 
-Ta som exempel[Exempel på detaljhandelsanalys](../sample-datasets.md). Låt oss säga att detta är URL:en till rapporten på rapportservern i en mapp med namnet ”power bi”:
+    ![App för webbplatsinnehållssida](media/quickstart-embed/quickstart_embed_06.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample
-```
+3. Välj kugghjulet längst upp till höger och välj **Redigera sida**.
 
-Du kan se att kartvisualiseringen i exemplet på detaljhandelsanalys visar butiker i North Carolina och andra stater.
+    ![Alternativet Redigera sida](media/quickstart-embed/quickstart_embed_07.png)
 
-![Kartvisualisering av exemplet på detaljhandelsanalys](media/quickstart-embed/report-server-retail-analysis-sample-map.png)
+4. Välj **Lägg till webbdel**.
 
-*NC* är det värde för North Carolina som lagras i fältet **Område** i tabellen **Butik**. För att filtrera rapporten för att endast visa data för butiker i North Carolina, lägger du till följande till URL:en:
+    ![Lägg till webbdel](media/quickstart-embed/quickstart_embed_08.png)
 
-?filter=Butik/Område eq 'NC'
+5. Under **Kategorier** välj **Media och innehåll**, under **Delar**, välj **Innehållsredigerare** och välj sedan **Lägg till** .
 
-Nu filtreras rapporten för North Carolina; alla visualiseringar på rapportsidan visar endast data för North Carolina.
+    ![Välj webbdel för innehållsredigeraren](media/quickstart-embed/quickstart_embed_09.png) ![välj Lägg till](media/quickstart-embed/quickstart_embed_091.png)
 
-![Filtrerade visualiseringar för exemplet på detaljhandelsanalys](media/quickstart-embed/report-server-retail-analysis-sample-filtered-map.png)
+6. Välj **Klicka här för att lägga till nytt innehåll**.
 
-### <a name="create-a-dax-formula-to-filter-on-multiple-values"></a>Skapa en DAX-formel för att filtrera på flera värden
+    ![Lägg till nytt innehåll](media/quickstart-embed/quickstart_embed_10.png)
 
-Ett annat sätt att filtrera på flera fält är att skapa en beräknad kolumn i Power BI Desktop som sammanfogar två fält till ett enda värde. Sedan kan du filtrera efter det värdet.
+7. Välj i menyfliksområdet fliken **Formatera text** och välj sedan **Redigera källa**.
 
-Exemplet på detaljhandelsanalys har till exempel två fält: Område och Kedja. I Power BI Desktop kan du [skapa en beräknad kolumn](../desktop-tutorial-create-calculated-columns.md) (Fält) som kallas OmrådeKedja. Kom ihåg att namnet i **Fält** inte får innehålla blanksteg. Här är DAX-formeln för kolumnen.
+     ![Redigera källa](media/quickstart-embed/quickstart_embed_11.png)
 
-OmrådeKedja = [Område] & "-" & [Kedja]
+8. I fönstret Redigera datakällan klistrar du in iFrame-koden och klickar på OK.
 
-Publicera rapporten på Power BI-rapportservern och använd sedan URL-frågesträngen för att filtrera och visa data för endast Lindseys butiker i NC.
+    ![iFrame-kod](media/quickstart-embed/quickstart_embed_12.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample?filter=Store/TerritoryChain eq 'NC-Lindseys'
+     Till exempel:
+     ```
+     <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+     ```
 
-```
+9. Välj i menyfliksområdet i´fliken **Sida** och markera **Sluta redigera**.
+
+    ![Sluta redigera](media/quickstart-embed/quickstart_embed_13.png)
+
+10. Du bör nu se rapporten på sidan.
+
+    ![iFrame-exempel](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Nästa steg
 
 [Snabbstart: Skapa en Power BI-rapport för Power BI-rapportservern](quickstart-create-powerbi-report.md)  
 [Snabbstart: Skapa en sidnumrerad rapport för Power BI-rapportservern](quickstart-create-paginated-report.md)  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/) 
