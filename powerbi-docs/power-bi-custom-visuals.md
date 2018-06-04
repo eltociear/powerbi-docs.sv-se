@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: maghan
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58cf5383f034b47708aa6b75ca5ead3e79b8e270
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: d8c3a33a3ae6166d33ea7a613917616613b84696
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721465"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Anpassade visuella objekt i Power BI
 När du skapar eller redigerar en Power BI-rapport finns det många olika typer av visuella objekt som du kan använda. Dessa visuella objekt visas i fönstret **Visualiseringar**. När du hämtar Power BI Desktop eller öppna Power BI-tjänsten (app.powerbi.com) medföljer den här uppsättningen visuella objekt på köpet.
@@ -53,10 +54,10 @@ Vad är AppSource? Enkelt uttryckt är det den plats där du hittar appar och ti
 
 ### <a name="certified-visuals"></a>Certifierade visuella objekt
 
-Power BI:s certifierade visuella objekt är visuella marknadsplatsobjekt som har genomgått ytterligare rigorös testning och som stöds i extra scenarier, t.ex. [e-prenumerationer](https://docs.microsoft.com/en-us/power-bi/service-report-subscribe) och [export till PowerPoint](https://docs.microsoft.com/en-us/power-bi/service-publish-to-powerpoint).
-Om du vill se en lista över certifierade anpassade visuella objekt, eller skicka dina egna, så hittar du information i [Certifierade anpassade visuella objekt](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-certified).
+Power BI:s certifierade visuella objekt är visuella marknadsplatsobjekt som har genomgått ytterligare rigorös testning och som stöds i extra scenarier, t.ex. [e-prenumerationer](https://docs.microsoft.com/power-bi/service-report-subscribe) och [export till PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
+Om du vill se en lista över certifierade anpassade visuella objekt, eller skicka dina egna, så hittar du information i [Certifierade anpassade visuella objekt](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i AppSource? Läs [Kom igång med utvecklarverktyg](https://docs.microsoft.com/en-us/power-bi/service-custom-visuals-getting-started-with-developer-tools) och lär dig hur du [publicerar anpassade visuella objekt till AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i AppSource? Läs [Kom igång med utvecklarverktyg](https://docs.microsoft.com/power-bi/service-custom-visuals-getting-started-with-developer-tools) och lär dig hur du [publicerar anpassade visuella objekt till AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
 
 ### <a name="import-a-custom-visuals-from-a-file"></a>Importera anpassade visuella objekt från en fil
 
