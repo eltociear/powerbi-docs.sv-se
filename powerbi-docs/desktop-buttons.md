@@ -11,10 +11,11 @@ ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: a56108668bea3e5210c4429825045ebb23faf72c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34228770"
 ---
 # <a name="using-buttons-in-power-bi"></a>Använda knappar i Power BI
 Med hjälp av **knappar** i Power BI kan du skapa rapporter och instrumentpaneler som fungerar ungefär som appar. Därigenom skapar du en engagerande miljö så att användarna kan hovra, klicka och interagera ytterligare med Power BI-innehåll. Du kan lägga till knappar i rapporter i **Power BI Desktop**, och dela eller publicera dessa rapporter till Power BI-tjänsten för att skapa instrumentpaneler som fungerar ungefär som en app för användarna.
