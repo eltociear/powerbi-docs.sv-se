@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b7a49a04ed344d6977dba5ac739c0f0d41aca5b9
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239140"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på OneDrive eller SharePoint Online
 Du kan importera Excel-arbetsböcker som lagras på din lokala dator eller i lagringsutrymmen i molnet, till exempel OneDrive för företag eller SharePoint Online. Vi ska titta på fördelarna med att använda lagring i molnet för dina Excel-filer. Mer information om hur du importerar Excel-filer till Power BI finns i [Hämta data från Excel-arbetsboksfiler](service-excel-workbook-files.md).

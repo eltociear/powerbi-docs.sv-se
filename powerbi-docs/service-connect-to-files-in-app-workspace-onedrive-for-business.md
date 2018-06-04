@@ -11,10 +11,11 @@ ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: e1161e5e461b3b32e549c69cfa7987c8f799e0fd
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34245349"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Anslut till filer som lagras i OneDrive för din Power BI-apparbetsyta
 När du har [skapat en apparbetsyta i Power BI](service-create-distribute-apps.md), kan du lagra dina Excel-, CSV-, och Power BI Desktop-filer på OneDrive för företag för din Power BI-apparbetsyta. Du kan fortsätta att uppdatera de filer som du lagrar i OneDrive och de uppdateringarna visas automatiskt i Power BI-rapporter och instrumentpaneler som baseras på filerna. 
