@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
 ms.openlocfilehash: 495b47319b8ac69ddae1d727ae9471d24fa37c6c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294261"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Utforska dina data i Power BI-mobilappen på din Apple Watch
 Med Power BI-appen för Apple Watch kan du visa KPI:er och kortpaneler från dina Power BI-instrumentpaneler direkt på klockan. KPI:er och kortpaneler passar bäst för att tillhandahålla snabb information på den relativt lilla skärmen. Du kan uppdatera en instrumentpanel från din iPhone eller från själva klockan.
@@ -31,7 +32,7 @@ Power BI-appen för Apple Watch består av två delar.
 * **Indexskärmen** ger en snabb överblick över alla KPI- och kortpaneler från den synkroniserade instrumentpanelen.
   
   ![Apple Watch](media/mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
-* **Fokuspanelen **: Klicka på en panel på indexskärmen för en detaljerad vy av en viss panel.
+* **Fokuspanelen** : Klicka på en panel på indexskärmen för en detaljerad vy av en viss panel.
   
   ![Apple Watch](media/mobile-apple-watch/pbi_aplwatch_kpi.png)
 

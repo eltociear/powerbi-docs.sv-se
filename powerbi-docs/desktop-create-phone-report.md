@@ -7,36 +7,37 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/08/2017
+ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 58fa5214d1a5b7e7c80d199e23cfae9762a80f36
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 6ac85bcaba34f705b0f21efc86ed1583e69c8c2c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721074"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Skapa rapporter som är optimerade för Power BI-mobilapparna
 När du [skapar en rapport i Power BI Desktop](desktop-report-view.md) kan du förbättra användningen i mobilappar genom att skapa en version av rapporten som är specifik för mobiltelefoner. Du anpassar rapporten för telefonen genom att arrangera om och ändra storlek på visuella objekt, samt kanske ta bort några för en optimal upplevelse. Du kan dessutom skapa [*dynamiska* visuella objekt](#optimize-a-visual-for-any-size) och [dynamiska utsnitt](#enhance-slicers-to-to-work-well-in-phone-reports) som anpassar sin storlek så att de ser bra ut på en telefon. Om du lägger till filter i din rapport, visas de filtren dessutom automatiskt i telefonrapporten. Dina rapportläsare kan se dem och filtrera rapporten med dem.
 
-![Optimerad rapport i en telefon](media/desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
+![Optimerad rapport i en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
 ## <a name="lay-out-a-report-page-for-the-phone-in-power-bi-desktop"></a>Utforma en rapportsida för telefonen i Power BI Desktop
 När du har [skapat en rapport i Power BI Desktop](desktop-report-view.md), kan du optimera den för telefoner.
 
 1. I Power BI Desktop väljer du **Rapportvy** i det vänstra navigeringsfältet.
    
-    ![Ikonen Rapportvy](media/desktop-create-phone-report/pbi_reportviewinpbidesigner_changeview.png)
+    ![Ikonen Rapportvy](media/desktop-create-phone-report/desktop-create-phone-report-2.png)
 2. På fliken **Visa** väljer du **Telefonlayout**.  
    
-    ![Ikonen Telefonlayout](media/desktop-create-phone-report/power-bi-phone-layout-icon.png)
+    ![Ikonen Telefonlayout](media/desktop-create-phone-report/desktop-create-phone-report-3.png)
    
     Du ser en tom telefonarbetsyta. Alla visuella objekt på den ursprungliga rapportsidan visas i fönstret Visualiseringar till höger.
 3. Om du vill lägga till ett visuellt objekt i telefonlayouten drar du det från fönstret Visualiseringar till telefonens arbetsyta.
    
     Telefonrapporter använder sig av en rutnätslayout. När du drar visuella objekt till mobilarbetsytan fäster de vid rutnätet.
    
-    ![Dra och släppa ett visuellt objekt](media/desktop-create-phone-report/02_dragging_and_droping_a_vis.gif)
+    ![Dra och släppa ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
     Du kan lägga till några eller alla av huvudrapportsidans visuella objekt på telefonens rapportsida. Du kan bara lägga till varje visuellt objekt en gång.
 4. Du kan ändra storlek på de visuella objekten i rutnätet på samma sätt som med paneler på instrumentpaneler och mobila instrumentpaneler.
@@ -46,14 +47,14 @@ När du har [skapat en rapport i Power BI Desktop](desktop-report-view.md), kan 
    > 
    > 
    
-   ![Ändra storlek på ett visuellt objekt](media/desktop-create-phone-report/03_resizing_a_viz_to_grid.gif)
+   ![Ändra storlek på ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 
 ## <a name="optimize-a-visual-for-any-size"></a>Optimera ett visuellt objekt oavsett storlek
 Du kan ange att visuella objekt i din instrumentpanel eller rapport ska vara *dynamiska*, så att de ändras dynamiskt till att visa maximal mängd data och analyser, oavsett skärmstorlek. 
 
 När ett visuellt objekt får en annan storlek prioriterar Power BI datavyn, genom att till exempel ta bort utfyllnad och flytta förklaringen överst i det visuella objektet automatiskt, så att objektet förblir informativt även när det blir mindre.
 
-![Dynamisk storleksändring av visuella objekt](media/desktop-create-phone-report/power-bi-responsive-visual.gif)
+![Dynamisk storleksändring av visuella objekt](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
 Du väljer om du ska aktivera svarstider för varje visuellt objekt. Läs mer om att [optimera visuella objekt](desktop-create-responsive-visuals.md).
 
@@ -69,7 +70,7 @@ Du väljer om du ska aktivera svarstider för varje visuellt objekt. Läs mer om
   
    Om du tar bort det visuella objektet här tas det bara bort från telefonlayoutens arbetsyta. Det visuella objektet och den ursprungliga rapporten påverkas inte.
   
-   ![Ta bort ett visuellt objekt](media/desktop-create-phone-report/05_removing_a_vis.gif)
+   ![Ta bort ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-7.gif)
 
 ## <a name="enhance-slicers-to-to-work-well-in-phone-reports"></a>Förbättra utsnitt till att fungera i telefonrapporter
 Utsnitten ger filtrering av rapportdata på arbetsytan. När utformning av utsnitt sker i det vanliga rapportredigeringsläget, kan du ändra vissa utsnittsinställningar för att göra dem mer användbara i telefonrapporter:
@@ -80,7 +81,7 @@ Utsnitten ger filtrering av rapportdata på arbetsytan. När utformning av utsni
 
 Om du gör utsnittet dynamiskt, visar det fler eller färre alternativ när du ändrar storleken eller formen. Det kan vara högt, kort, brett eller smalt. Om du gör det tillräckligt litet, blir det bara en filterikon på rapportsidan. 
 
-![Power BI-dynamiskt utsnitt](media/desktop-create-phone-report/power-bi-slicer-2-rows.png)
+![Power BI-dynamiskt utsnitt](media/desktop-create-phone-report/desktop-create-phone-report-8.png)
 
 Läs mer om att [skapa dynamiska utsnitt](power-bi-slicer-filter-responsive.md).
 
@@ -98,7 +99,7 @@ När du är i telefonrapporten kommer rapporten öppnas i en icke-optimerad vy m
 
 Om du enbart optimerar vissa sidor kommer läsarna att se ett meddelande i stående vy som visar att rapporten är tillgänglig i liggande vy.
 
-![Telefonsidan är inte optimerad](media/desktop-create-phone-report/06-power-bi-phone-report-page-not-optimized.png)
+![Telefonsidan är inte optimerad](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
 Rapportläsarna kan vrida sina telefoner åt sidan för att se rapporten i liggande läge. Läs mer om att [använda Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md).
 
