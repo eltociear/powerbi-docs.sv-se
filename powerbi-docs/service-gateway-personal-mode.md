@@ -11,10 +11,11 @@ ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
 ms.openlocfilehash: 093339e820c45fcbd586bd1eb6d8933b6e5743f8
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298215"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Lokal datagateway (personligt läge)
 Du kan använda lokala datakällor och skapa Power BI-rapporter och -instrumentpaneler med hjälp av en gateway. En **gateway** är programvara som möjliggör åtkomst till data som lagras i ett privat lokalt nätverk och sedan låter dig använda dessa data i onlinetjänster, till exempel **Power BI-tjänsten**. En **lokal datagateway (personligt läge)** är en nyligen utgiven uppdatering för Power BI-gateway som låter enskilda användare installera en gateway på den lokala datorn och få åtkomst till lokala data.

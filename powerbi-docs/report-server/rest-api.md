@@ -7,18 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: e77c77acb7808923097eb3e2146bef816eda51ee
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: a1cbcc6d265504bc93ef6447a6be381ca6399063
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721764"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Utveckla med REST-API:er för Power BI-rapportservern
 Power BI-rapportservern stöder API:er med REST (Representational State Transfer). REST-API:er är tjänsteslutpunkter som stöder en uppsättning http-åtgärder (metoder) som ger åtkomst till att skapa, hämta, uppdatera eller ta bort resurser i en rapportserver.
 
 REST-API:n ger programmatisk åtkomst till objekten i en Power BI-rapportserverkatalog. Exempel på objekt är mappar, rapporter, KPI:er, datakällor, datauppsättningar, uppdateringsplaner, prenumerationer och annat. Med hjälp av REST-API:n kan du som exempel navigera i mapphierarkin, identifiera innehållet i en mapp eller ladda ned en rapportdefinition. Du kan också skapa, uppdatera och ta bort objekt. Exempel på hur man kan arbeta med objekt är överföra en rapport, verkställa en uppdateringsplan, ta bort en mapp och så vidare.
+
+[!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
 ## <a name="components-of-a-rest-api-requestresponse"></a>Komponenter i REST-API-begäran/-svar
 Ett REST API-begäran/-svarspar kan delas in i fem komponenter:

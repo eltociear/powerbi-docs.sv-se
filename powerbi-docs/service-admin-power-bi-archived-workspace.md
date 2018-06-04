@@ -11,10 +11,11 @@ ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 8b9fcf1c6121c4aeecfdf948b77493f1f2a7f825
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293638"
 ---
 # <a name="power-bi-archived-workspace"></a>Power BI – arkiverad arbetsyta
 Med Power BI, kan vem som helst registrera sig och börja använda tjänsten inom några minuter.  Senare, kan din organisations IT-avdelning välja att ta över hanteringen av Power BI för användare i din organisation.  Om det övertaget inträffar, får du fördelarna av en central hantering av användare och behörigheter i din organisation och du kan dra nytta av effektiviserad inloggning med samma användarnamn och lösenord som du använder för andra tjänster i din organisation. 

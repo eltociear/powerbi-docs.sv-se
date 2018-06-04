@@ -1,29 +1,21 @@
 ---
 title: Tidigare månadsuppdateringar till Power BI Desktop
 description: Funktionsuppdateringar från tidigare versioner av Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/07/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 11e1b210d6d90f0f813f378775daac36e53dbaf0
-ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
+ms.openlocfilehash: f371e9bd4e1681d2e8fa06b1aeabfcd58a5dc4d1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33917192"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291176"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -55,7 +47,7 @@ Vi skämtar inte om hur nöjda vi är med april månads uppdateringar av **Power
 * Förbättrad standardsortering för visuella objekt [[video]](https://youtu.be/W_Nb73Od_AI?t=19m21s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sort) 
 * Numeriskt utsnitt är nu allmänt tillgängligt [[video]](https://youtu.be/W_Nb73Od_AI?t=21m13s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#numericSlicer) 
 
-### <a name="analytics"></a>Analys
+### <a name="analytics"></a>Analytics
 
 * Uppdatera språkschemat [[video]](https://youtu.be/W_Nb73Od_AI?t=22m) [[artikel]](power-bi-custom-visuals-organization.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
 * Ny DAX-funktion: COMBINEVALUES() [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
@@ -164,7 +156,7 @@ Följande uppdateringar var nya för **Power BI Desktop** i februari 2018:
 * Organisationsanpassade visualiseringar (förhandsgranskning) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[article]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
-### <a name="analytics"></a>Analys
+### <a name="analytics"></a>Analytics
 
 * Ange en anpassad datumtabell [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 * Snabbåtgärder är nu allmänt tillgängliga [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s) [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
@@ -223,7 +215,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i januari:
 -   Val av främsta i Vanliga frågor och svar [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
 -   Mycket ny anpassad visuell information [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
 
-### <a name="analytics"></a>Analys
+### <a name="analytics"></a>Analytics
 
 -   Snabbmått för korrelationskoefficienten [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
 
@@ -274,7 +266,7 @@ Följande uppdateringar var nya för **Power BI Desktop** i december:
 -   Nyligen släppta anpassade visuella objekt  [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
-### <a name="analytics"></a>Analys
+### <a name="analytics"></a>Analytics
 
 -   Detaljgranska andra visuella objekt [[video]](https://youtu.be/ZPU8B-1BxjI?t=28m53s) [[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals) 
 

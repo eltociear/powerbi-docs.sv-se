@@ -11,10 +11,11 @@ ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 04dc755eb7d575aa8438b4a5000ad40549c6220f
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297088"
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
 
@@ -119,7 +120,7 @@ Följande tabell innehåller information om vad som kan visas.
 | --- | --- | --- |
 | Power BI-rapport hämtades |Den här aktiviteten loggas varje gång en rapport hämtas |Rapportnamn, namn på datauppsättning |
 | Skapa rapport |Den här aktiviteten loggas varje gång en ny rapport skapas. |Rapportnamn, namn på datauppsättning |
-| Redigera rapporten |Den här aktiviteten loggas varje gång som en rapport redigeras. |Rapportnamn, namn på datauppsättning |
+| Redigera rapport |Den här aktiviteten loggas varje gång som en rapport redigeras. |Rapportnamn, namn på datauppsättning |
 | Skapa datauppsättning |Den här aktiviteten loggas varje gång en datauppsättning skapas. |Namn på datauppsättning, DataConnectivityMode |
 | Ta bort datauppsättning |Den här aktiviteten loggas varje gång en datauppsättning raderas. |Namn på datauppsättning, DataConnectivityMode |
 | Skapa Power BI-app |Den här aktiviteten loggas varje gång en Power BI-app skapas |Appnamn, behörigheter, namn på arbetsyta |

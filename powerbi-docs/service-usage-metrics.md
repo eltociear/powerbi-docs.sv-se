@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7b43e6e3c679474113cb0f1301f335c6bb8249ff
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 82015b3e0c497f58b0505804adc852ebfb7a0202
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584333"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
 Om du skapar instrumentpaneler och rapporter kan du med användningsstatistik förstå deras inverkan. Oavsett om du kör användningsstatistik för instrumentpaneler eller rapporter ser du hur dessa instrumentpaneler och rapporter används i hela organisationen – vad som används, av vem och i vilket syfte.  
 
-> [!NOTE]
-> Användningsstatistik spårar användningen av rapporter som är inbäddade i SharePoint Online. De spårar även inbäddning av instrumentpaneler och rapporter via flödena användare äger autentiseringsuppgifterna och appen äger autentiseringsuppgifterna. Användningsstatistik spårar inte användning av rapportinbäddning via [publicera till webben](service-publish-to-web.md).
+Användningsstatistik spårar användningen av rapporter som är inbäddade i SharePoint Online. De spårar även inbäddning av instrumentpaneler och rapporter via flödena användare äger autentiseringsuppgifterna och appen äger autentiseringsuppgifterna. Användningsstatistik spårar inte användning av rapportinbäddning via [publicera till webben](service-publish-to-web.md).
 
 Dessa användningsstatistikrapporter är skrivskyddade. Men du kan anpassa en användningsstatistikrapport med hjälp av ”Spara som”. Detta skapar en helt ny datauppsättning och konverterar den skrivskyddade rapporten till en fullständig Power BI-rapport som du kan redigera. Den anpassade rapporten innehåller inte bara mått för vald instrumentpanel eller rapport, utan genom att ta bort standardfiltret har du nu tillgång till användningsstatistik för alla instrumentpaneler och rapporter i den valda arbetsytan.
 

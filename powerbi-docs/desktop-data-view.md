@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 264dc3ee1daafd077a6e9a56f62eb86c6a3f528a
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291384"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Datavy i Power BI Desktop
 **Datavyn** hjälper dig att inspektera, utforska och förstå data i Power BI Desktop-modellen. Det skiljer sig från hur du visar tabeller, kolumner och data i **frågeredigeraren**. I datavyn tittar du på dina data *efter* att de har lästs in i modellen.

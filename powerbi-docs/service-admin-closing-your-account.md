@@ -11,10 +11,11 @@ ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: be0b1bf3dbfba0f2e1545eced38ec19650342a19
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34296145"
 ---
 # <a name="closing-your-power-bi-account"></a>Stäng ditt Power BI-konto
 Om du inte vill använda Power BI längre, kan be du be oss att avsluta ditt Power BI-konto.  När ditt konto har avslutats kan du inte längre logga in på Power BI.  Dessutom raderas all kundinformation som du laddat upp eller skapat i Power BI enligt principen för datakvarhållning i tjänstevillkoren för Power BI.
