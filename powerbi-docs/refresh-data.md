@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 779bfb3e69a76d0fe9e9a34d6576b2054de89cc1
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34253629"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 Att se till att du alltid har den senaste informationen är ofta betydelsefullt för att kunna fatta rätt beslut. Du har förmodligen redan använt Hämta data i Power BI för att ansluta till och ladda upp vissa data, skapat vissa rapporter och en instrumentpanel. Nu ska du se till att dina data är verkligen är aktuella och bäst.

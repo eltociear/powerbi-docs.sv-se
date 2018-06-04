@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2cd096303412ef2ecbf65d818cfa70a007767da9
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 6e1665b6e9c9ff0a756d9ccdaf9e6feb4ed9eb39
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722234"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -30,7 +31,7 @@ Power BI kan integreras med Azure Active Directory Business-to-business (Azure A
 
 ## <a name="who-can-you-invite"></a>Vilka kan du bjuda in?
 
-Du kan bjuda in gästanvändare som använder alla e-postadresser, även personliga konton som gmail.com, outlook.com och hotmail.com. I Azure B2B kallas de ”sociala ID”. Mer information hittar du i [Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Du kan bjuda in gästanvändare som använder alla e-postadresser, även personliga konton som gmail.com, outlook.com och hotmail.com. I Azure B2B kallas de ”sociala ID”. Mer information hittar du i [Azure B2B](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## <a name="invite-guest-users"></a>Bjud in gästanvändare
 
@@ -100,7 +101,7 @@ Gästanvändaren har redan en Power BI Pro-licens i klientorganisationen.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-* När du bjuder in gästanvändare som använder personliga e-postkonton, till exempel gmail.com, outlook.com och hotmail.com, kan du följa det här [inbäddade videoklippet](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience) om du vill se ett exempel på hur en användare registrerar sig.
+* När du bjuder in gästanvändare som använder personliga e-postkonton, till exempel gmail.com, outlook.com och hotmail.com, kan du följa det här [inbäddade videoklippet](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-redemption-experience) om du vill se ett exempel på hur en användare registrerar sig.
 * Externa B2B-gäster är begränsade till förbrukning av innehåll endast. Externa B2B-gäster kan visa appar, instrumentpaneler, rapporter, exportera data och skapa e-postprenumerationer för instrumentpaneler och rapporter. De kan inte komma åt arbetsytor eller publicera sitt eget innehåll.
 * Den här funktionen är inte tillgänglig med Power BI-appar. Du kan visa Power BI-innehåll som delas med hjälp av Microsoft Azure Active Directory B2B i en webbläsare på en mobil enhet.
 * Den här funktionen är inte tillgänglig med rapportwebbdelen för SharePoint Online i Power BI.

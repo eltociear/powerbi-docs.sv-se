@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 01/05/2017
 ms.author: maghan
 ms.openlocfilehash: 76d07c8384123a303c8801a45ecd05b9e6ed0321
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289474"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 Med Power BI-API:et kan du skicka data till en Power BI-datauppsättning. Om du till exempel vill utöka ett befintligt företagsarbetsflöde för att skicka viktiga data till din datauppsättning. I det här fallet vill du skicka en datauppsättning med försäljning och marknadsföring som har en produkttabell till en datauppsättning.

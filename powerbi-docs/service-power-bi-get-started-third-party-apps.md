@@ -11,10 +11,11 @@ ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Get started
 ms.openlocfilehash: 7ac6cee3331333b40119d6f5ab014b2e39d2ef23
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251759"
 ---
 # <a name="get-started-with-third-party-apps"></a>Kom igång med appar från tredje part
 Med Power BI, kan du använda en app som skapats av ett företag eller en annan individ än Microsoft. Du kan till exempel använda en tredjeparts-app som integrerar Power BI-paneler i ett anpassat webbprogram. När du använder en tredjeparts-app kan du blir ombedd att bevilja programmet vissa behörigheter för ditt Power BI-konto och resurser. Det är viktigt att endast bevilja behörigheter till program som du har känner och litar på. Behörigheter till ett program kan återkallas när som helst. Se [återkalla behörigheter för appar från tredje part](#revoke).

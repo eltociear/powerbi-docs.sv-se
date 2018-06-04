@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2b5959049b65d32eebf7f484e8485ff59a10f459
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34286093"
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Använda insikter i Power BI Desktop (förhandsversion)
 Du kan uppmana **Power BI Desktop** att förklara ökningar eller minskningar i diagram och få snabba, automatiserade, insiktsfulla analyser om dina data. Det är bara att högerklicka på en datapunkt och välja **Analysera> förklarar minskningen** (eller ökningen, om fältet tidigare var lägre) så levereras insikter till dig i ett lättanvänt fönster.

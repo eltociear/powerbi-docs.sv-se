@@ -11,10 +11,11 @@ ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 2ba97b76b13c9adf3c9f20d5d42c5ec9c363edda
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293684"
 ---
 # <a name="power-bi-free-in-your-organization"></a>Power BI (kostnadsfri) i din organisation
 Här ska vi titta på hur erbjudandet Power BI (kostnadsfri) kan användas inom din organisation. En organisation innebär att du har en klientorganisation och kan hantera användare och tjänster inom den klientorganisationen. Som administratör, kan du styra licenstilldelningen, eller så kan du tillåta användarna att registrera sig individuellt. Vi ska titta på licensen för Power BI (kostnadsfri) och hur du kan styra individuella registreringar.

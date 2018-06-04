@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: f8eb978aaacd345a29f2d9e2395fad419a651be0
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289773"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Använd snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar
 Du kan använda **snabbmått** när du snabbt och enkelt vill utföra vanliga och kraftfulla beräkningar. Ett **snabbmått** kör en uppsättning DAX-kommandon i bakgrunden (du behöver inte skriva DAX – det är klart) som bygger på indata som du anger i en dialogruta. Sedan presenteras resultatet i rapporten. Du kan bästa är att du kan se de DAX-kommandon som körs av snabb måttet och komma igång med eller utöka din egen DAX kunskap.

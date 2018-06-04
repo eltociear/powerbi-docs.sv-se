@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 39c6c11e4815df507431648b1d317f9a62a4b1c3
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34299204"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paket i Power BI-tjänsten
 Du kan använda det kraftfulla [R-programmeringsspråket](https://www.r-project.org/) för att skapa visuella objekt i Power BI-tjänsten. Många R-paket stöds i Power BI-tjänsten (och fler läggs till hela tiden), men vissa paket stöds inte.
@@ -95,7 +96,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 | catnet |1.14.8 |https://cran.r-project.org/web/packages/catnet/index.html |
 | caTools |1.17.1 |https://cran.r-project.org/web/packages/caTools/index.html |
 | cclust |0.6-20 |https://cran.r-project.org/web/packages/cclust/index.html |
-| class |7.3-14 |https://cran.r-project.org/web/packages/class/index.html |
+| klass |7.3-14 |https://cran.r-project.org/web/packages/class/index.html |
 | clue |0.3-51 |https://cran.r-project.org/web/packages/clue/index.html |
 | cluster |2.0.3 |https://cran.r-project.org/web/packages/cluster/index.html |
 | coda |0.18-1 |https://cran.r-project.org/web/packages/coda/index.html |

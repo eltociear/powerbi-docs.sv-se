@@ -11,10 +11,11 @@ ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 955f4347630a781174d399d6a1363683745a4b3e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293500"
 ---
 # <a name="governance-and-deployment-approaches"></a>Styrnings- och distributionsmetoder
 Under de senaste få årtiondena har företag blivit allt mer medvetna om behovet av att utnyttja sina datatillgångar strategiskt för att dra nytta möjligheterna på marknaden. Genom att utföra konkurrensanalys eller genom att lära sig förstå operativa mönster har många organisationer nu insett att de kan ha fördel av en datastrategi för ligga steget före konkurrenterna.  
