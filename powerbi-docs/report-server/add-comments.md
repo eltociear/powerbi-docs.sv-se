@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: e5e49d2f30cca4c0c731d29fe31d2cb6856066f2
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 08a7740d1a44c4a5e8ef961100c38f3bc4622fd8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721971"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server"></a>Lägga till kommentarer i en rapport i en rapportserver
 Du kan lägga till kommentarer i rapporter, till exempel Power BI-rapporter i webbportalen för en rapportserver. Kommentarerna interagerar med rapporten och visas för alla med visningsbehörighet för rapporten. Mer information finns i avsnittet [Behörighet](#permissions).
@@ -44,7 +45,7 @@ Beroende på dina behörigheter kan du:
 * Visa alla kommentarer, skicka, redigera och ta bort dina egna samt ta bort andra personers kommentarer.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Användarhandbok för Power BI-rapportserver](user-handbook-overview.md)  
+* [Vad är Power BI-rapportservern?](get-started.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

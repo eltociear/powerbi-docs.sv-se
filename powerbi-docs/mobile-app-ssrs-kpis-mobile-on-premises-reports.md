@@ -7,24 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 4277a8353fa6d9538ff050f0c08b9644d4a218c6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482255"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Visa lokala rapportserverrapporter och KPI:er i Power BI-mobilapparna
-Gäller:
+
+I Power BI-mobilapparna finns levande, pekaktiverad mobil åtkomst till lokal företagsinformation i Power BI-rapportserver och SQL Server 2016 Reporting Services (SSRS).
+
+Gäller för:
 
 | ![iPhone](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android-telefon](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android-surfplatta](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |
 
-I Power BI-mobilapparna finns levande, pekaktiverad mobil åtkomst till lokal företagsinformation i Power BI-rapportserver och SQL Server 2016 Reporting Services (SSRS). 
 
- ![Rapportserverns startsida i mobilapparna](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
+![Rapportserverns startsida i mobilapparna](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
 
 ## <a name="first-things-first"></a>Vi tar det i ordning
 **Mobilapparna är platsen där du kan se Power BI-innehåll, inte där den skapas.**
@@ -43,7 +46,7 @@ I Power BI-mobilapparna ansluter du sedan till upp till fem rapportservrar för 
    
    ![Reporting Services-exempel](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
-## <a name="connect-to-an-on-premises-server"></a>Ansluta till en lokal server
+## <a name="connect-to-an-on-premises-report-server"></a>Ansluta till en lokal rapportserver
 Du kan visa lokala Power BI-rapporter, mobila Reporting Services-rapporter och KPI:er i Power BI-mobilapparna. 
 
 1. Öppna Power BI-appen på din mobila enhet.
@@ -77,6 +80,24 @@ Du kan visa lokala Power BI-rapporter, mobila Reporting Services-rapporter och K
 6. Nu visas servern i det vänstra navigeringsfältet – i det här exemplet kallas den ”power bi report server”.
    
    ![Rapportserver i det vänstra navigeringsfönstret](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
+
+## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Ansluta till en lokal rapportserver i iOS
+
+Om du använder Power BI i iOS-mobilappen kan det hända att din IT-administratör har definierat en appkonfigurationsprincip. I så fall är anslutningen till rapportservern väldigt smidig och du behöver inte ange så mycket information när du ansluter till en rapportserver. 
+
+1. Du ser ett meddelande som anger att mobilappen har konfigurerats med en rapportserver. Tryck på **Logga in**.
+
+    ![Logga in på rapportservern](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-sign-in.png)
+
+2.  Informationen om rapportservern är redan ifylld på sidan **Anslut till server**. Tryck på **Anslut**.
+
+    ![Ifylld information om rapportservern](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
+
+3. Skriv ett lösenord för att autentisera och tryck sedan på **Logga in**. 
+
+    ![Ifylld information om rapportservern](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+
+Nu kan du visa och interagera med KPI:er och Power BI-rapporter som lagras på rapportservern.
 
 ## <a name="view-power-bi-reports-and-kpis-in-the-power-bi-app"></a>Visa Power BI-rapporter och KPI:er i Power BI-appen
 Power BI-rapporter, mobila Reporting Services-rapporter och KPI:er visas i samma mappar som de finns i på Reporting Services-webbportalen. 

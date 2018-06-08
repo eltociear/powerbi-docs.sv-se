@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 891e9d35be271f6479a832b234a69132736f09a5
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6e1b2960eee8f436f8dbce660e755a5d0b39a68e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721580"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Felsöka uppdateringsscenarier
 Här hittar du information om olika scenarier som du kan stöta på när du uppdaterar data i Power BI-tjänsten.
@@ -56,6 +57,14 @@ Den maximala storleken för datauppsättningar som importerats till **Power BI-t
 
 ## <a name="scheduled-refresh-timeout"></a>Timeout vid schemalagd uppdatering
 Tidsgränsen för schemalagd uppdatering för importerade datauppsättningar är två timmar. Denna timeout ökar till fem timmar för datauppsättningar på **Premium**-arbetsytor. Om du stöter på den här gränsen kan du minska datauppsättningens storlek eller komplexitet eller dela upp den i mindre delar.
+
+## <a name="access-to-the-resource-is-forbidden"></a>Åtkomst till resursen är förbjuden  
+Det här felet kan inträffa på grund av utgångna cachelagrade autentiseringsuppgifter. Rensa cacheminnet för webbläsaren genom att logga in i Power BI och gå till https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Detta tvingar fram en uppdatering av dina autentiseringsuppgifter. 
+    
+    
+## <a name="data-refresh-failure-because-of-password-change-or-expired-credentials"></a>Uppdatering av data misslyckades på grund av ändring av lösenord eller att autentiseringsuppgifterna har upphört att gälla 
+Datauppdatering kan också misslyckas på grund av utgångna cachelagrade autentiseringsuppgifter. Rensa cacheminnet för webbläsaren genom att logga in i Power BI och gå till https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Detta tvingar fram en uppdatering av dina autentiseringsuppgifter.
+
 
 ## <a name="next-steps"></a>Nästa steg
 [Datauppdatering](refresh-data.md)  

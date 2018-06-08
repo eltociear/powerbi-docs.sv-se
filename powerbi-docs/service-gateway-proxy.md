@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ab5afb36458d7e1b5271a356bb1532ba77de6408
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: c0ad0c22d0787eaaa45cb36c74c01f6a1d1f85e3
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722668"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfigurera proxyinställningar för den lokala datagatewayen
 Din arbetsmiljö kan kräva att du går via en proxy för att ansluta till Internet. Detta kan förhindra att den lokala datagatewayen ansluter till tjänsten.
@@ -50,6 +51,19 @@ Standardproxykonfigurationen är följande.
     </system.net>
 
 Standardkonfigurationen fungerar med Windows-autentisering. Om proxyn använder en annan form av autentisering, behöver du ändra inställningarna. Om du inte är säker, kontaktar du din nätverksadministratör.
+
+Förutom att använda standardautentiseringsuppgifter kan du lägga till ett <proxy>-element och definiera proxyserverinställningar i mer detalj. Du kan till exempel ange att din lokala datagateway alltid ska använda proxyservern även för lokala resurser genom att ange parametern bypassonlocal till false. Detta kan vara användbart i felsökningssituationer om du vill spåra alla HTTPS-förfrågningar från en lokal datagateway i proxyloggfilerna. Följande exempelkonfiguration anger att alla förfrågningar måste gå via en specifik proxyserver med IP-adressen 192.168.1.10.
+
+    <system.net>
+        <defaultProxy useDefaultCredentials="true">
+            <proxy  
+                autoDetect="false"  
+                proxyaddress="http://192.168.1.10:3128"  
+                bypassonlocal="false"  
+                usesystemdefault="true"
+            />  
+        </defaultProxy>
+    </system.net>
 
 Mer information om konfiguration av proxyelement för .NET-konfigurationsfiler finns i [defaultProxy-element (nätverksinställningar)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 8a002105fcb9f5dc07197aac5722a57c7bba14b6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 705de47a1e89d765f34eadfcd35064ccde7aa66b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481910"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurera rapportservern för att hantera Excel-arbetsböcker med hjälp av Office Online Server (OOS)
 Förutom att kunna se Power BI-rapporter i webbportalen, kan Power BI-rapportserver nu vara värd för Excel-arbetsböcker med [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Din rapportserver blir en enda plats för att publicera och visa Microsoft BI-innehåll för självbetjäning.
@@ -167,7 +168,7 @@ När du har angett URL:en för identifiering och väljer **Verkställ** visas en
 * Du har bara läsbehörighet med arbetsböcker.
 
 ## <a name="next-steps"></a>Nästa steg
-[Handbok för administratör](admin-handbook-overview.md)  
+[Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

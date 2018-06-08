@@ -1,30 +1,22 @@
 ---
 title: Tabellvisualiseringar i Power BI-rapporter och instrumentpaneler
 description: Självstudier för att arbeta med tabellvisualiseringar i Power BI-rapporter och instrumentpaneler, inklusive hur du ändrar kolumnbredder.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/11/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0f7084cf2e0ad4db88ad99bd969ada20ba40aa57
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 22eb44048d8a4f681d8d112ce3fdb5a841d0511e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33812643"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584241"
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards"></a>Arbeta med tabeller i Power BI-rapporter och instrumentpaneler
 En tabell är ett rutnät som innehåller relaterade data i en logisk serie med rader och kolumner. Det kan också innehålla rubriker och en rad för summor. Tabeller fungerar bra med kvantitativa jämförelser där du tittar på många värden för en enskild kategori. I den här tabellen visas till exempel 5 olika mått för **Kategori**.
@@ -127,6 +119,9 @@ Med villkorsstyrd formatering för tabeller kan du specificera anpassade cellbak
 Power BI trunkerar ibland en kolumnrubrik i en rapport eller på en instrumentpanel. Om du vill visa hela kolumnnamnet håller du muspekaren över utrymmet till höger om rubriken för att visa dubbelpilarna, markera och dra.
 
 ![](media/power-bi-visualization-tables/resizetable.gif)
+
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+* Om du lägger till kolumnformatering kan du bara välja ett justeringsalternativ per kolumn: automatisk justering, vänsterjustering, centrering eller högerjustering. Oftast innehåller en kolumn antingen text eller tal, inte en blandning av både text och tal. Om en kolumn innehåller både tal och text vänsterjusteras texten och talen högerjusteras om du väljer **automatisk justering**. Det här beteendet används med ”vänster till höger”-språk.   
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

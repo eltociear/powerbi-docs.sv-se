@@ -13,6 +13,7 @@
 **Att tänka på:**
 
 * Gatewayen kan inte installeras på en domänkontrollant.
+* Om du planerar att använda Windows-autentisering måste du installera gatewayen på en dator som är medlem i samma Active Directory-miljö som datakällorna.
 * Du bör inte installera en gateway på en dator eller en bärbar dator, som kan stängas av, försättas i viloläge eller frånkopplas från Internet, eftersom en gateway inte kan köras under dessa omständigheter. Dessutom kan gatewayens prestanda vara sämre i ett trådlöst nätverk.
 * Analysis Services krävs inte för att använda gatewayen. Du kan använda gatewayen för att ansluta till en Analysis Services-datakälla.
 

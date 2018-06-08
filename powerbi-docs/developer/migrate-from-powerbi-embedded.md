@@ -6,13 +6,14 @@ manager: kfile
 ms.reviewer: ''
 ms.Embedded: powerbi
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: bfee68658816d46e23a3b66f9b04b2069704a2b8
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 67b52fa94ee3af9da3bfcae17f69a72e1aa46c77
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689793"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar.
@@ -26,9 +27,14 @@ Nuvarande Power BI-arbetsytesamling fortsätter att vara tillgänglig under en b
 > [!IMPORTANT]
 > Medan migreringen har ett beroende i förhållande till Power BI Embedded, så finns det inget beroende gentemot Power BI för ditt programs användare när en **inbäddningstoken** används. De behöver inte registrera sig för Power BI om du vill visa ditt programs inbäddade innehåll. Du kan använda den här inbäddningsmetoden för Embedded-användare som inte använder Power BI.
 > 
-> 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
+
+Innan du börjar migrera till nya Power BI Embedded kan du gå en snabb genomgång som beskriver hur du konfigurerar den nya Power BI Embedded-miljön med hjälp av [integrationsverktyget](https://aka.ms/embedsetup).
+
+Välj den lösning som passar dig:
+* Lösningen **Embed for your customers** (Bädda in för dina kunder) – om du är intresserad av en [apps egna data](https://aka.ms/embedsetup/AppOwnsData). [Inbäddning för dina kunder](embedding.md#embedding-for-your-customers) ger dig möjlighet att bädda in instrumentpaneler och rapporter för användare som inte har något Power BI-konto. 
+* Lösningen **Embed for your organization** (Bädda in för din organisation) – om du är intresserad av en [användares egna data](https://aka.ms/embedsetup/UserOwnsData). [Inbäddning för din organisation](embedding.md#embedding-for-your-organization) låter dig utöka Power BI-tjänsten.
 
 ## <a name="prepare-for-the-migration"></a>Förbereda för migrering
 Det finns några saker du behöver göra för att förbereda migreringen från Power BI-arbetsytesamling till Power BI Embedded. Du behöver en tillgänglig klient och en användare med en Power BI Pro-licens.
@@ -63,10 +69,6 @@ Följande konton måste finnas i din klient.
    
 > [!NOTE]
 > Detta är helt enkelt ett vanligt användarkonto i din organisation som används i inbäddningssyfte.
->
-
-> [!NOTE]
-> Om App-Only Token Authentication är ett krav för programmet, klickar du [här](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) för att kontakta oss.
 >
 
 ## <a name="app-registration-and-permissions"></a>Appregistrering och behörigheter

@@ -234,6 +234,8 @@
                   href: service-dashboard-featured.md
                 - name: Enhetligt meddelandecenter i Power BI
                   href: service-notification-center.md
+                - name: Instrumentpanelsteman
+                  href: service-dashboard-themes.md
             - name: Rapporter
               items:
                 - name: Ändra hur ett diagram sorteras i en Power BI-rapport
@@ -572,7 +574,9 @@
               href: desktop-import-excel-workbooks.md
             - name: Ansluta till data med hjälp av generiska gränssnitt
               href: desktop-connect-using-generic-interfaces.md
-            - name: Ansluta till en Oracle-databas
+            - name: Anslut till Adobe Analytics
+              href: desktop-connect-adobe-analytics.md
+            - name: Anslut till en Oracle-databas
               href: desktop-connect-oracle-database.md
             - name: Köra R-skript i Power BI Desktop
               href: desktop-r-scripts.md
@@ -616,8 +620,6 @@
               href: desktop-directquery-sap-hana.md
             - name: Anta inställning för referensintegritet i Power BI Desktop
               href: desktop-assume-referential-integrity.md
-            - name: DirectQuery för Oracle- och Teradata-databaser
-              href: desktop-directquery-for-oracle-teradata.md
             - name: Använda anslutningstjänsten SAP BW i Power BI Desktop (förhandsgranskning)
               href: desktop-sap-bw-connector.md
             - name: Använd OneDrive för företag-länkar i Power BI Desktop
@@ -788,6 +790,8 @@
           href: desktop-send-smile-privacy-statement.md
         - name: Hjälpmedel i Power BI-rapporter
           href: desktop-accessibility.md
+        - name: Hantera inloggningsformuläret för Power BI Desktop
+          href: desktop-admin-sign-in-form.md
 - name: Power BI-mobilappar
   items:
     - name: Översikt

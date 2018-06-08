@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 05/18/2018
 ms.author: maghan
-ms.openlocfilehash: 2963dbe2a5d1109e4396568624e16bf49d98da10
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481761"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
 Här hittar du minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
@@ -57,7 +58,7 @@ Power BI-rapportservern installerar standardvärden för att konfigurera de grun
  Rapportservern kan installeras i en miljö som har en skrivskyddad domänkontrollant (RODC) men Reporting Services behöver åtkomst till en domänkontrollant som inte är skrivskyddad för att fungera korrekt. Om Reporting Services bara har åtkomst till en RODC, kan det uppstå fel när du försöker administrera tjänsten.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-rapporter och realtidsanslutningar för Analysis Services
-Du kan använda en realtidsanslutning för tabell- eller flerdimensionella instanser. Analysis Services-servern måste vara av rätt version och utgåva för att fungera korrekt.
+Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionella instanser. Analysis Services-servern måste vara av rätt version och utgåva för att fungera korrekt.
 
 | **Serverversion** | **Obligatorisk SKU** |
 | --- | --- |
@@ -66,8 +67,8 @@ Du kan använda en realtidsanslutning för tabell- eller flerdimensionella insta
 | 2016 och senare |Standard-SKU eller högre |
 
 ## <a name="next-steps"></a>Nästa steg
-[Användarhandbok](user-handbook-overview.md)  
-[Handbok för administratör](admin-handbook-overview.md)  
+[Vad är Power BI-rapportserver?](get-started.md)  
+[Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

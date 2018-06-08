@@ -8,14 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5a3192910faf41bee925eb4938098bccb6434bb2
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 4d67499c571d736da3a8cebed5826c708911cc4d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584172"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 Om du vill se de data som används i en visualisering, kan du [visa dessa data i Power BI](service-reports-show-data.md) eller exportera data till Excel som en XLSX- eller CSV-fil.   
@@ -31,7 +32,7 @@ Här kan du se Will exportera data från en visualisering i sin rapport, spara d
 2. Välj ikonen **Exportera data**.
    
     ![](media/power-bi-visualization-export-data/pbi_export_dash.png)
-3. Data exporteras till en csv-fil. Om visualiseringen filtreras kommer också nedladdade data att filtreras.
+3. Data exporteras till en csv-fil. Om visualiseringen filtreras kommer också nedladdade data att filtreras.    
 4. Din webbläsare uppmanar dig att spara filen.  När du sparat den ska du öppna .csv-filen i Excel.
    
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
@@ -82,8 +83,9 @@ Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](sam
 * Export med *Underliggande data* fungerar inte om alternativet *Visa objekt utan data* är aktiverat för visualiseringen som exporteras.
 * När du använder DirectQuery är den maximala mängden data som kan exporteras 16 MB. Därmed kan mindre än det maximala antalet rader exporteras, särskilt om det finns många kolumner, data som är svåra att komprimera eller andra faktorer som påverkar filstorleken och minskar antalet rader som exporteras.
 * Power BI har endast stöd för att exportera visuella objekt som använder enkla aggregationer. Exportera är inte tillgänglig för grafer med modeller eller rapportmått.
-* Anpassade och R-visualiseringar stöds inte för tillfället.
+* Anpassade visuella objekt och R-visualiseringar stöds inte för tillfället.
 * Exportera data är inte tillgängligt för användare utanför organisationen som använder en instrumentpanel som har delats med dem. 
+* I Power BI kan du byta namn på ett fält (kolumn) genom att dubbelklicka på fältet och skriva ett nytt namn.  Det här nya namnet kallas för ett *alias*. Ibland kan det hända att en Power BI-rapport innehåller duplicerade fältnamn, men eftersom Excel inte tillåter dubbletter  kommer ett alias ursprungliga fältnamn (kolumnnamn) att återställas när data exporteras till Excel.  
 * Om det finns unicode-tecken i .csv-filen, visas texten inte korrekt i Excel. Men det går bra att öppna den i Anteckningar. Valutasymboler och främmande ord är exempel på unicode-tecken. Lösningen för detta är att importera CSV-filen i Excel, i stället för att öppna CSV-filen direkt. Gör så här:
   
   1. Öppna Excel

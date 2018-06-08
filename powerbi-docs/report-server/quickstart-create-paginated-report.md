@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 75810bfad9efd5a0ea42a07d44a61d4f92f7f232
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: e996b1399ff4dde96d122e747cf1f07db3a44876
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34294926"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721833"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Skapa en sidnumrerad rapport för Power BI-rapportservern
 Som namnet antyder sidnumrerade rapporter ha många sidor. De har ett fast format och kan anpassas med precision. Sidnumrerade rapporter är RDL-filer.
@@ -94,7 +94,7 @@ När rapporten är klar kan du spara den i Power BI-rapportservern.
 Det finns många bra resurser för att designa rapporter i Report Builder och i Report Designer i SQL Server Data Tools. Självstudiekurserna för Report Builder är ett bra ställe att börja.
 
 * [Report Builder, självstudier](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-* [Användarhandbok för Power BI-rapportserver](user-handbook-overview.md)  
+* [Vad är Power BI-rapportserver?](get-started.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

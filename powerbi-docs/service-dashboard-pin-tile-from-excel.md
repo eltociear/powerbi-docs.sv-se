@@ -8,14 +8,15 @@ featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d6bb6bbed1d5423acbcf53ac50717debdfea4eaa
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584080"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fästa en panel på en Power BI-instrumentpanel från Excel
 Innan du kan fästa en panel från Excel-arbetsboken, ansluter du arbetsboken till Power BI-tjänsten (app.powerbi.com). Att ansluta en arbetsbok innebär i stort sett att använda en länkad skrivskyddad version av arbetsboken i Power BI-tjänsten för att du ska kunna fästa intervall på instrumentpaneler. Du kan även fästa ett helt kalkylblad på en instrumentpanel.  
@@ -65,14 +66,14 @@ Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) ä
     ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Välj **Gå till instrumentpanelen**. Härifrån kan du [byta namn, ändra storlek, länka och flytta](service-dashboard-edit-tile.md) den fastsatta visualiseringen. Som standard öppnar den fastsatta panelen arbetsboken i Power BI.
 
-## <a name="pin-an-entire-table-or-pivot-chart-to-a-dashboard"></a>Fästa en hel tabell eller ett pivotschema på en instrumentpanel
-Följ stegen ovan, men i stället för att markera ett cellområde väljer du en hel tabell eller en pivottabell.
+## <a name="pin-an-entire-table-or-pivottable-to-a-dashboard"></a>Fästa en hel tabell eller pivottabell på en instrumentpanel
+Följ stegen ovan, men i stället för att markera ett cellområde väljer du en hel tabell eller pivottabell.
 
-Markera hela intervallet för tabellen för att fästa en tabell och inkludera rubrikerna.  Om du ska fästa en pivottabell bör du vara noga med att allt synligt i pivottabellen tas med, inklusive filter om det har använts.
+Markera hela intervallet för tabellen för att fästa en tabell och inkludera rubrikerna.  När du ska fästa en pivottabell är det viktigt att du tar med alla synliga delar i pivottabellen, inklusive filter om de används.
 
  ![markera celler](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
 
-En panel som skapas från en tabell eller pivottabell visar hela tabellen.  Om du lägger till/tar bort/filtrerar rader eller kolumner i den ursprungliga arbetsboken, kommer de också att läggas till/tas bort/filtreras i panelen.
+En panel som skapats från en tabell eller pivottabell visar hela tabellen.  Om du lägger till/tar bort/filtrerar rader eller kolumner i den ursprungliga arbetsboken, kommer de också att läggas till/tas bort/filtreras i panelen.
 
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Visa arbetsboken som är länkad till panelen
 Om du väljer en panel i arbetsboken öppnas den länkade arbetsboken i Power BI. Eftersom arbetsboksfilen finns på ägarens OneDrive för företag, måste du ha läsbehörighet för arbetsboken för att kunna se den. Om du inte har behörighet visas ett felmeddelande.  

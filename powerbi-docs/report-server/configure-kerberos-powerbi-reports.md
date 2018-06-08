@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: c4429c33f52954852f430e582064c813b11555b7
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: a9173ba6b4689a6cc71eba679f9bcc0c54de048c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481795"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurera Kerberos för att använda Power BI-rapporter
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -214,7 +215,7 @@ När all ovanstående konfiguration är på plats, borde din rapport visas korre
 Den här konfigurationen borde fungera i de flesta fall, men med Kerberos kan det behövas en annan konfiguration beroende på din miljö. Om rapporten fortfarande inte läses in, bör du ta kontakt med din domänadministratör för att undersöka vidare eller kontakta supporten.
 
 ## <a name="next-steps"></a>Nästa steg
-[Handbok för administratör](admin-handbook-overview.md)  
+[Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

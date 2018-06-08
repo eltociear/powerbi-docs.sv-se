@@ -8,14 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/19/2017
+ms.date: 05/25/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 757f59b59ea13478a943650f23ef98d9cc5b3e08
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 1c9948ad5c09b3123d898bf8841243d6e5fa83fd
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34553575"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -142,7 +143,9 @@ Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lö
 
 * Problem kan också uppstå om du använder Internet Explorer 10. Du kan titta på [webbläsarstöd för Power BI](service-browser-support.md) och [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
-* Power BI-webbdelen är inte tillgänglig i [nationella moln](https://powerbi.microsoft.com/en-us/clouds/). 
+* Webbdelen Power BI är inte tillgänglig för [nationella moln](https://powerbi.microsoft.com/en-us/clouds/).
+
+* Klassiska SharePoint Server stöds inte med den här webbdelen.
 
 ## <a name="next-steps"></a>Nästa steg
 

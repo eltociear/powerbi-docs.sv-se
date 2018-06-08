@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 21ceec0ea522bd45a937096bcd778f2695c1edc3
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 4eb9f8e0b8548fbecd4e5d2e2fd47c4c3acd2bd6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722826"
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -93,6 +94,11 @@ När du lägger till en datakälla till gatewayen, måste du ange autentiserings
 
 Det finns för tillfället ingen gemensam plats där klientorganisationsadministratörerna kan hantera alla gatewayer som andra har installerat och konfigurerat.  Om du är klientorganisationsadministratör rekommenderar vi att du frågar användarna i organisationen om de kan lägga till dig som administratör för varje gateway de installerar. Då kan du hantera alla gatewayer i organisationen på sidan med gatewayinställningar eller med hjälp av [PowerShell-kommandon](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
 
+## <a name="enabling-outbound-azure-connections"></a>Aktivera utgående Azure-anslutningar 
+Den lokala datagatewayen är beroende av Azure Service Bus för molnanslutning och upprättar motsvarande utgående anslutningar till den kopplade Azure-regionen. Som standard är detta platsen för din Power BI-klientorganisation. Se [Var finns min Power BI-klient?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+Om en brandvägg blockerar utgående anslutningar, måste du konfigurera brandväggen så att den tillåter utgående anslutningar från den lokala datagatewayen till den kopplade Azure-regionen. Se [IP-intervall för Microsoft Azure-datacenter](https://www.microsoft.com/en-us/download/details.aspx?id=41653) för mer information om IP-adressintervall för varje Azure-datacenter.
+> [!NOTE]
+> IP-adressintervall kan förändras över tid, så se till att du laddar ned den senaste informationen med jämna mellanrum. 
 
 ## <a name="troubleshooting"></a>Felsökning
 Om du får problem när du installerar och konfigurerar en gateway, hittar du mer information under [Felsökning av lokal datagateway](service-gateway-onprem-tshoot.md). Om du tror att du har ett problem med brandväggen kan du läsa mer i avsnittet om [brandvägg eller proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) i felsökningsartikeln.

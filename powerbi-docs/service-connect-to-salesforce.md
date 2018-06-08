@@ -7,14 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f5eeb877488539254478ad4bc25d64d663b797f1
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: e36cff803af74d212f4c1804fe3a955a11c193cf
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722461"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
 Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. När du skapar den här anslutningen, hämtas dina data och ger dig automatiskt en instrumentpanel och relaterade rapporter baserade på dina data.
@@ -73,7 +74,12 @@ Du kan ändra den här instrumentpanelen till att visa dina data på det sätt s
 
 
 ## <a name="troubleshooting"></a>Felsökning
-Granska kraven ovan om det uppstår några fel. Observera också att möjligheten att logga in till en anpassad eller sandbox-domän inte stöds för tillfället.
+Granska kraven ovan om det uppstår några fel. Observera också att möjligheten att logga in till en anpassad domän eller sandbox-domän inte stöds för närvarande.
+
+### <a name="unable-to-connect-to-the-remote-server-message"></a>Meddelandet ”Det går inte att ansluta till fjärrservern”
+
+Om meddelandet ”Det går inte att ansluta till fjärrservern” visas när du försöker ansluta till ditt Salesforce-konto rekommenderar vi att du tittar på den här lösningen i Outsystems-forumet: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&) (Felmeddelande vid inloggning i Salesforce-anslutningsappen: Det går inte att ansluta till fjärrservern)
+
 
 ## <a name="next-steps"></a>Nästa steg
 [Kom igång med Power BI](service-get-started.md)

@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 05/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e588387245bbf57a614bb099a92a87a156654a3c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: d513c68dba27bb6e37a158eaad4059b24bc8db6a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482002"
 ---
 # <a name="publish-from-power-bi-desktop"></a>Publicera från Power BI Desktop
 När du publicerar en **Power BI Desktop**-fil till **Power BI-tjänsten** publiceras data i modellen och de rapporter som du skapade i **Rapportvyn** till Power BI-arbetsytan. En ny datamängd med samma namn och eventuella rapporter visas i navigatorfältet för arbetsytan.
@@ -22,22 +23,28 @@ När du publicerar en **Power BI Desktop**-fil till **Power BI-tjänsten** publi
 Publicering från **Power BI Desktop** har samma effekt som att använda **Hämta Data** i Power BI för att ansluta till och ladda upp en **Power BI Desktop**-fil.
 
 > [!NOTE]
-> Alla ändringar du gör i rapporten i Power BI, till exempel lägga till, ta bort eller ändra visualiseringar i rapporter, sparas inte i den ursprungliga **Power BI Desktop**-filen.
+> De ändringar du gör i rapporten i Power BI, till exempel om du lägger till, tar bort eller ändrar visualiseringar i rapporten, sparas inte i den ursprungliga **Power BI Desktop**-filen.
 > 
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Så här publicerar du en Power BI Desktop-datauppsättning och rapporter
 1. I Power BI Desktop \> **Arkiv** \> **Publicera** \> **Publicera till Power BI** eller klicka på **Publicera**i menyfliksområdet.  
-   ![](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
-2. Logga in på Power BI.
 
-När du är klar får du en länk för att öppna rapporten på Power BI-platsen.  
-    ![](media/desktop-upload-desktop-files/pbid_publish_success.png)
+   ![Knappen Publicera](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
+
+2. Logga in i Power BI.
+3. Välj målet.
+
+   ![Välj publiceringsmålet](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
+
+När du är klar visas en länk till rapporten. Öppna rapporten på din Power BI-plats genom att klicka på länken.
+
+![Dialogruta som anger att publiceringen lyckades](media/desktop-upload-desktop-files/pbid_publish_success.png)
 
 ## <a name="re-publish-or-replace-a-dataset-published-from-power-bi-desktop"></a>Publicera eller ersätta en datamängd som har publicerats från Power BI Desktop
 När du publicerar en **Power BI Desktop**-fil överförs datauppsättningen och alla rapporter som du skapade i **Power BI Desktop** till Power BI-platsen. När du publicerar **Power BI Desktop**-filen ersätts datamängden i Power BI-platsen med den uppdaterade datauppsättningen från **Power BI Desktop**-filen.
 
-Detta är ganska tydligt men du bör veta om ett par saker:
+Processen är tydlig, men det finns ett par saker som du bör känna till:
 
 * Om du redan har två eller fler datauppsättningar i Power BI med samma namn som **Power BI Desktop**-filen kan publiceringen misslyckas. Kontrollera att du bara har en datauppsättning i Power BI med samma namn. Du kan också byta namn på filen och publicera den, vilket skapar en ny datauppsättning med samma namn som filen.
 * Om du byter namn på eller ta bort en kolumn eller ett mått kan alla visualiseringar som du redan har i Power BI med fältet skadas. 

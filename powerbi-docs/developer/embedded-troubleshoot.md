@@ -9,11 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 2108d8fc290a5af568a3e06ae5986e82413b680b
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: fa142a34da003328ef509c319faf24d556023440
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34720821"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -74,7 +75,7 @@ En fiddler-avbildning kan krävas för att undersöka vidare. Det nödvändiga b
 
 En fiddler-avbildning kan krävas för att undersöka vidare. Det kan finnas flera skäl för ett 403-fel.
 
-* Användaren har överskridit mängden inbäddningstoken som kan skapas på en delad kapacitet. Du måste köpa Azure-kapaciteter för att generera inbäddningstoken och tilldela arbetsytan till kapaciteten. Mer information finns på sidan om hur du [skapar en Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity).
+* Användaren har överskridit mängden inbäddningstoken som kan skapas på en delad kapacitet. Du måste köpa Azure-kapaciteter för att generera inbäddningstoken och tilldela arbetsytan till kapaciteten. Mer information finns på sidan om hur du [skapar en Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD-autentiseringstoken har upphört att gälla.
 * Den autentiserade användaren är inte medlem i gruppen (app-arbetsytan).
 * Den autentiserade användaren är inte administratör i gruppen (app-arbetsytan).
@@ -132,6 +133,53 @@ Om användaren inte kan se rapporten eller instrumentpanelen, kontrollera att ra
 **Rapporten eller instrumentpanelen har dålig prestanda**
 
 Öppna filen från Power BI Desktop eller på powerbi.com och verifiera att prestandan är acceptabel för att kunna utesluta problem med ditt program eller inbäddnings-API:erna.
+
+## <a name="onboarding-experience-tool-for-embedding"></a>Integrationsverktyget för inbäddning
+
+Du kan gå igenom [integrationsverktyget](https://aka.ms/embedsetup) och snabbt ladda ned ett exempelprogram. Sedan kan du jämföra ditt program med exemplet.
+
+### <a name="prerequisites"></a>Förutsättningar
+
+Kontrollera att du uppfyller förhandskraven innan du använder integrationsverktyget. Du behöver ett **Power BI Pro**-konto och en **Microsoft Azure**-prenumeration.
+
+* Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/en-us/pricing/) innan du börjar.
+* Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
+* Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
+* Du behöver [Visual Studio](https://www.visualstudio.com/) installerad (version 2013 eller senare).
+
+### <a name="common-issues"></a>Vanliga problem
+
+Här följer exempel på några vanliga problem som kan uppstå vid testning med integrationsverktyget:
+
+#### <a name="using-the-embed-for-your-customers-sample-application"></a>Använda exempelprogrammet Embed for your customers (Bädda in för dina kunder)
+
+Om du arbetar med upplevelsen **Embed for your customers**  (Bädda in för dina kunder) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\App Owns Data* och kör filen *PowerBIEmbedded_AppOwnsData.sln*.
+
+När du väljer **Bevilja behörigheter** (steget Bevilja behörigheter) visas följande fel:
+
+    AADSTS70001: Application with identifier <client ID> was not found in the directory <directory ID>
+
+Du kommer runt det här problemet genom att stänga popup-fönstret, vänta några sekunder och sedan försöka igen. Du kan behöva upprepa den här åtgärden några gånger. En tidsförskjutning gör att programregistreringen inte kan slutföras förrän den är tillgänglig för externa API:er.
+
+Följande felmeddelande visas när du kör exempelappen:
+
+    Password is empty. Please fill password of Power BI username in web.config.
+
+Det här felet uppstår eftersom det enda värdet som inte matas in i exempelprogrammet är användarlösenordet. Öppna filen Web.config i lösningen och fyll i fältet pbiPassword med användarens lösenord.
+
+#### <a name="using-the-embed-for-your-organization-sample-application"></a>Använda exempelprogrammet Embed for your organization (Bädda in för din organisation)
+
+Om du arbetar med upplevelsen **Embed for your organization** (Bädda in för din organisation) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* och kör filen *pbi-saas-embed-report.sln*.
+
+När du kör exempelappen **Embed for your organization** (Bädda in för din organisation) visas följande fel:
+
+    AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
+
+Felet beror på att omdirigerings-URL:en som angetts för webbserverprogrammet skiljer sig från exemplets URL. Om du vill registrera exempelprogrammet använder du *http://localhost:13526/* som omdirigerings-URL.
+
+Om du vill redigera det registrerade programmet läser du avsnittet om hur du redigerar ett [AAD-registrerat program](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så att programmet kan ge åtkomst till webb-API:erna.
+
+Om du vill redigera din Power BI-användarprofil eller dina Power BI-data läser du avsnittet om hur du redigerar [Power BI-data](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
 
 Mer information finns i [Vanliga frågor om Power BI Embedded](embedded-faq.md).
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/19/2018
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 391edc8a2187f9a4af43b93f0713d40e41f6e943
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 07c393425d2a04376a4fcf81c2c35a0e115eeaee
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34295432"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481975"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 Läs mer om nyheterna i Power BI-rapportserver. Detta omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
@@ -32,6 +32,12 @@ Relaterad information om nyheter i Power BI finns i:
 * [Nyheter i Power BI-tjänsten](../service-whats-new.md)
 * [Nyheter i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheter i mobilapparna för Power BI](../mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2018"></a>Maj 2018
+
+### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Fjärrkonfigurera iOS-mobilappar för Power BI för rapportservrar
+
+Som IT-administratör kan du nu använda din organisations MDM-verktyg för att fjärrkonfigurera åtkomsten från iOS-mobilappen för Power BI till en rapportserver. Mer information finns i avsnittet om [hur du fjärrkonfigurerar åtkomsten från iOS-mobilappen för Power BI till en rapportserver](configure-powerbi-mobile-apps-remote.md).
 
 ## <a name="march-2018-release"></a>Mars 2018
 
@@ -101,7 +107,7 @@ När du visar mer detaljerad information i en viss kategori i ett visuellt objek
 - [Sök formaterings- och analysfönster](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Rutan fältegenskaper och fältbeskrivningar](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Analys
+### <a name="analytics"></a>Analytics
 
 - [UTCNOW() och UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Markera anpassad datumtabell](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
@@ -204,8 +210,8 @@ Power BI-rapportserver har nu stöd för den nya Power BI-tabellen och visuella 
 * Förbättrat samarbete i rapporter med kommentarer
 
 ## <a name="next-steps"></a>Nästa steg
-[Användarhandbok](user-handbook-overview.md)  
-[Handbok för administratör](admin-handbook-overview.md)  
+[Vad är Power BI-rapportservern? ](get-started.md)  
+ [Administratörshandbok](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

@@ -24,3 +24,6 @@ Du kan tvinga gatewayen att kommunicera med Azure Service Bus med HTTPS i ställ
 ### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Fel: Det gick inte att lägga till användaren i gruppen.  (-2147463168 PBIEgwService Performance Log Users )
 Du får det här felmeddelandet om du försöker installera gatewayen på en domänkontrollant. Distribution på en domänkontrollant stöds inte. Du måste distribuera en gateway på en dator som inte är en domänkontrollant.
 
+### <a name="installation-fails"></a>Installationen misslyckades
+Installationen kan misslyckas om antivirusprogramvara på installationsdatorn är inaktuell. Du kan antingen uppdatera installationen av antivirusprogrammet eller inaktivera antivirusprogrammet under gatewayinstallationen och sedan återaktivera det.
+

@@ -7,35 +7,91 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2018
+ms.date: 05/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9599b40940c9d9cca254bb2ed2e87c161cce371f
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 70aa61d6a02bea1b7058a68b20718008ace1b8c8
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34480898"
 ---
-# <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller
-Med villkorsstyrd formatering för tabeller kan du ange anpassade cellbakgrundsfärger baserat på cellvärden, eller på andra värden eller fält, och använda toningar. Åtkomst till villkorlig formatering, i brunnen **fält** i fönstret **Visuella objekt** i Power BI Desktop väljer du nedpilen bredvid värdet i brunnen **Värden** som du vill formatera (eller högerklicka på fältet). Du kan endast hantera villkorsstyrd formatering för fälten i området **Värden** i brunnen **Fält**.
+# <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller 
+Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger baserat på cellvärden, eller baserat på andra värden eller fält. Du kan även använda toningar. Du kan också visa cellvärden med datastaplar. 
 
-![Villkorsstyrd tabellformatering](media/desktop-conditional-table-formatting/table-formatting_1.png)
+Åtkomst till villkorlig formatering, i brunnen **fält** i fönstret **Visuella objekt** i Power BI Desktop väljer du nedpilen bredvid värdet i brunnen **Värden** som du vill formatera (eller högerklicka på fältet). Du kan endast hantera villkorsstyrd formatering för fälten i området **Värden** i brunnen **Fält**.
 
-I dialogrutan som visas kan du konfigurera färgen, samt *minimi-* och *max*värden. Om du väljer rutan **Avvikande** kan du konfigurera ett valfritt *Centrumvärde*.
+![Menyn Villkorsstyrd formatering](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-![Avvikande färger](media/desktop-conditional-table-formatting/table-formatting_2.png)
+I följande avsnitt beskrivs vart och ett av dessa tre alternativ för villkorsstyrd formatering. Ett eller flera alternativ kan kombineras i samma tabellkolumn.
 
-Du kan också basera färgtoningen på ett fält från datamodellen. Du kan också ange aggregeringstypen för det markerade fältet (det valda fältet visas i fältet **Använd färgen på**, så att du vet vilket fält du arbetar med).
+> [!NOTE]
+> När villkorsstyrd formatering tillämpas i en tabell åsidosätts eventuella anpassade tabellformat som tillämpats på de villkorligt formaterade cellerna.
 
-![Grundfärger för ett fält](media/desktop-conditional-table-formatting/table-formatting_2b.png)
+Om du vill ta bort villkorlig formatering från en visualisering högerklickar du bara på fältet igen, väljer **Ta bort villkorsstyrd formatering** och väljer sedan den typ av formatering som du vill ta bort.
 
-När det tillämpas på en tabell åsidosätter den eventuella anpassade tabellformateringar som har tillämpas på villkorsstyrt formaterade celler.
+![Menyn Ta bort villkorsstyrd formatering](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
-![Tabellformatering](media/desktop-conditional-table-formatting/table-formatting_3.png)
+## <a name="background-color-scales"></a>Skalor för bakgrundsfärg
 
-Du kan också använda villkorsstyrd formatering för text- och datumfält, förutsatt att du väljer ett numeriskt värde som bas för formateringen. 
+Om du väljer **Villkorsstyrd formatering** och sedan **Skalor för bakgrundsfärg** visas följande dialogruta.
 
-Om du vill ta bort villkorlig formatering från en visualisering, bara högerklickar du på fältet igen och väljer **ta bort villkorsstyrd formatering**.
+![Dialogrutan Skalor för bakgrundsfärg](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
 
-![Ta bort tabellformatering](media/desktop-conditional-table-formatting/table-formatting_4.png)
+Du kan välja ett fält från datamodellen som färgerna ska baseras på genom att ange **Färgen baseras på** till det fältet. Du kan också ange aggregeringstypen för det valda fältet med värdet **Sammanfattning**. Fältet som färgerna tillämpas på anges i fältet **Använd färgen på**, så att du enkelt kan se vilket fält inställningarna tillämpas på. Du kan använda villkorsstyrd formatering för text- och datumfält, förutsatt att du väljer ett numeriskt värde som bas för formateringen.
 
+![Fältet Färgen baseras på](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+
+Om du vill använda diskreta färgvärden för specifika värdeintervall väljer du **Färg efter regler**. Om du vill använda ett färgspektrum lämnar du alternativet **Färg efter regler** avmarkerat. 
+
+![Dialogrutan Skalor för bakgrundsfärg](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
+
+### <a name="color-by-rules"></a>Färg efter regler
+
+När du väljer **Färg efter regler** kan du ange ett eller flera värdeintervall, vart och ett med en bestämd färg.  Varje värdeintervall börjar med ett *Om*-värdevillkor, ett *Och*-värdevillkor och en färg.
+
+![Värdeintervall för Färg efter regler](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+
+Tabellceller med värden i varje intervall fylls med den angivna färgen. Det finns tre regler i följande bild.
+
+![Exempel på Färg efter regler](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules.png)
+
+Nu ser exempeltabellen ut så här:
+
+![Exempeltabell med färg baserat på regler](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
+
+
+### <a name="color-minimum-to-maximum"></a>Minsta och största värden för färg
+
+Du kan konfigurera de *minsta* och *största* värdena och deras färger. Om du väljer rutan **Avvikande** kan du konfigurera ett valfritt *Centrumvärde*.
+
+![Knappen Divergerande](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
+
+Nu ser exempeltabellen ut så här:
+
+![Exempeltabell med avvikande färger](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
+
+## <a name="font-color-scales"></a>Färgskalor för teckensnitt
+
+Om du väljer **Villkorsstyrd formatering** och sedan **Färgskalor för teckensnitt** visas följande dialogruta. Den här dialogrutan liknar dialogrutan **Skalor för bakgrundsfärg**, men ändrar teckensnittsfärgen i stället för cellernas bakgrundsfärg.
+
+![Dialogrutan Färgskalor för teckensnitt](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
+
+Nu ser exempeltabellen ut så här:
+
+![Exempeltabell med färgskalor för teckensnitt](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+
+## <a name="data-bars"></a>Datastaplar
+
+Om du väljer **Villkorsstyrd formatering** och sedan **Datastaplar** visas följande dialogruta. 
+
+![Dialogrutan Datastaplar](media/desktop-conditional-table-formatting/table-formatting-3-default.png)
+
+Alternativet **Visa enbart stapel** är avmarkerat som standard, vilket innebär att tabellcellen visar både stapeln och själva värdet.
+
+![Exempeltabell med datastaplar och värden](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+
+Om alternativet **Visa enbart stapel** är markerat, så visar tabellcellen endast stapeln.
+
+![Exempeltabell med endast datastaplar](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)

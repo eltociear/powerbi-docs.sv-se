@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: f739104bc9b67e51792e6e76da08b9e6dbb7cef3
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 9b896c9db6c1368c5e435df21c28cd99b8dda15f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34293248"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721718"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Hantera innehåll i webbportalen 
 Webbportalen för Power BI-rapportserver är en lokal plats för att visa, lagra och hantera dina Power BI, mobila och sidnumrerade rapporter och KPI:er.
@@ -67,9 +67,7 @@ Power BI-rapportserver ger dig detaljerad kontroll över de objekt som du lagrar
 Läs mer om att [arbeta med prenumerationer i webbportalen](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
 
 ## <a name="next-steps"></a>Nästa steg
-[Användarhandbok](user-handbook-overview.md)  
-[Sidnumrerade rapporter](quickstart-create-paginated-report.md)  
-[Power BI-rapporter](quickstart-create-powerbi-report.md)
+[Vad är Power BI-rapportservern?](get-started.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

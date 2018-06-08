@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ad48c0e5b78dabee7b1851c75b01e7fda611c1d
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721189"
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Använda rapportteman i Power BI Desktop (förhandsversion)
 Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat (några undantag finns och de beskrivs längre fram i den här artikeln).
@@ -54,7 +55,7 @@ JSON-filen måste innehålla följande rader:
 
 * **name** – Detta är temanamnet och det enda obligatoriska fältet
 * **dataColors** – En lista med hexkodfärger som används för data i Power BI Desktops visuella objekt. Listan kan innehålla så många eller så få färger som du vill
-* **background**, **foreground** och **tableAccent** – Dessa värden är färger som ska användas i visuella **tabell**- och **matris**objekt. Hur dessa färger används beror på det specifika tabell- eller matrisformatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
+* **background**, **foreground** och **tableAccent** – Dessa värden är färger som ska tillämpas på olika typer av visuella objekt. **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
 
 Tillämpa ett format på ett visuellt **tabell**- eller **matris**objekt genom att markera det visuella objektet och i fönstret **Visualiseringar** välja avsnittet **Format**, expandera **Matrisstil** och välja ett format i listrutan **Stil**.
 

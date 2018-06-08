@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 2061bb5afde8c19693eb565b298fabedebae89ac
-ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
+ms.openlocfilehash: 368f2692933b37d833c864fb9fea6a22423bbb77
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34310416"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481841"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 Lär dig att installera Power BI Desktop som har optimerats för Power BI-rapportservern.
@@ -103,9 +103,7 @@ Om din rapportserver är en tidigare version behöver du motsvarande version av 
 Nu när du har installerat Power BI Desktop kan du börja skapa Power BI-rapporter.
 
 [Skapa en Power BI-rapport för Power BI-rapportservern](quickstart-create-powerbi-report.md)  
-[Kom igång med Power BI Desktop](../desktop-getting-started.md)  
-Interaktiv inlärning: [Komma igång med Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
-[Översikt över användarhandbok, Power BI-rapportserver](user-handbook-overview.md)
+[Vad är Power BI-rapportservern?](get-started.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

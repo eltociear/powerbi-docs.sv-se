@@ -1,32 +1,32 @@
 ---
 title: Administratörsöversikt, Power BI-rapportserver
-description: Den här artikel är administratörsöversikten för Power BI-rapportservern, en lokal plats för att lagra och hantera dina mobila Power BI-rapporter och sidnumrerade rapporter.
+description: Den här artikeln är administratörsöversikten för Power BI-rapportservern, en lokal plats där du kan lagra och hantera dina mobila Power BI-rapporter och sidnumrerade rapporter.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 05/18/2018
 ms.author: maghan
-ms.openlocfilehash: 228402dd2137f0cf2f3d480ff1acee10d2f28c51
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 1dbca883bc4df2bde743963db7994361616be192
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296398"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721925"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratörsöversikt, Power BI-rapportserver
-Den här artikel är administratörsöversikten för Power BI-rapportservern, en lokal plats för att lagra och hantera dina mobila Power BI-rapporter och sidnumrerade rapporter. Den här artikeln beskriver begrepp för att planera, distribuera och hantera din Power BI-rapportservern, med länkar till mer information.
+Den här artikeln är administratörsöversikten för Power BI-rapportservern, en lokal plats där du kan lagra och hantera dina mobila Power BI-rapporter och sidnumrerade rapporter. Den här artikeln beskriver begrepp för att planera, distribuera och hantera din Power BI-rapportservern, med länkar till mer information.
 
 ![](media/admin-handbook-overview/admin-handbook.png)
 
 
 
 ## <a name="installing-and-migration"></a>Installation och migrering
-Du behöver installera Power BI-rapportservern för att börja använda den. Vi har information som gör att du kan hantera den här uppgiften.
+Du måste installera Power BI-rapportservern för att kunna använda den. Vi har artiklar som förklarar hur du gör.
 
-Innan du börjar installera, uppgradera eller migrera till Power BI-rapportservern, bör du ta en titt på rapportserverns [systemkrav](system-requirements.md).
+Innan du börjar installera, uppgradera eller migrera till Power BI-rapportservern rekommenderar vi att du går igenom [systemkraven](system-requirements.md) för rapportservern.
 
 ### <a name="installing"></a>Installera
 Om du distribuerar en ny Power BI-rapportserver kan du använda följande dokument som hjälp. 
@@ -34,7 +34,7 @@ Om du distribuerar en ny Power BI-rapportserver kan du använda följande dokume
 [Installera Power BI-rapportserver](install-report-server.md)
 
 ### <a name="migration"></a>Migrering
-Det finns ingen uppgradering på plats för SQL Server Reporting Services. Om du har en befintlig SQL Server Reporting Services-instans som du vill göra till en Power BI-rapportserver måste du migrera den. Det finns också andra orsaker till varför du kanske skulle vilja utföra en migrering. Läs igenom migreringsdokumentet för mer information.
+Det finns ingen uppgradering på plats för SQL Server Reporting Services. Om du har en befintlig SQL Server Reporting Services-instans som du vill göra till en Power BI-rapportserver måste du migrera den. Det kan också finnas andra anledningar till varför du vill migrera. Läs igenom migreringsdokumentet för mer information.
 
 [Migrera en rapportserverinstallation](migrate-report-server.md)
 

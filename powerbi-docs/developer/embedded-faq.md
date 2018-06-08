@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 255efac5d5bf73bca3126f869d4c7434d5c6ef0f
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: d7baa305c514d084f6390754d516b238794bcdbf
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34289750"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721028"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -102,6 +102,9 @@ Power BI Embedded kommer att fortsätta att använda Azure AD för autentisering
 Autentisering och auktorisering för det användarna kommer att implementeras av programvaruutvecklaren. Utvecklaren kan implementera sin egen autentisering.
 
 Om du redan har en Azure AD-klient kan du använda en befintlig katalog och skapa en ny Azure AD-klient för att skydda ditt inbäddade innehåll.
+
+Du kan skaffa en AAD-token genom att använda något av Azure Active Directory-autentiseringsbiblioteken. Det finns klientbibliotek för flera plattformar.
+https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>Hur skiljer sig Power BI Embedded från övriga Azure-tjänster?
 
@@ -205,6 +208,31 @@ Detta är några av funktionerna:
 * Alla PBI-datakällor stöds, till skillnad mot de två datakällorna för **Power BI-arbetsytesamling**). 
 * Nya funktioner, som frågor och svar, uppdatera, bokmärken, instrumentpanels- och panelinbäddning, anpassade menyer osv. stöds endast i **Power BI Embedded**-lösningen.
 * Kapacitetsfaktureringsmodell.
+
+## <a name="onboarding-experience-tool-for-embedding"></a>Integrationsverktyget för inbäddning
+
+### <a name="what-is-the-onboarding-experience-tool"></a>Vad är integrationsverktyget?
+
+Med [integrationsverktyget](https://aka.ms/embedsetup) kommer du snabbt igång och kan ladda ned ett exempelprogram och börja integrera med Power BI.
+
+### <a name="which-solution-should-i-choose"></a>Vilken lösning ska jag välja?
+
+* [Inbäddning för dina kunder](embedding.md#embedding-for-your-customers) ger dig möjlighet att bädda in instrumentpaneler och rapporter för användare som inte har något Power BI-konto. Kör lösningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) (Bädda in för dina kunder).
+* [Inbäddning för din organisation](embedding.md#embedding-for-your-organization) låter dig utöka Power BI-tjänsten. Kör lösningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) (Bädda in för din organisation).
+
+### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>Jag har laddat ned exempelappen. Vilken lösning ska jag välja?
+
+Om du arbetar med upplevelsen **Embed for your customers**  (Bädda in för dina kunder) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\App Owns Data* och kör filen *PowerBIEmbedded_AppOwnsData.sln*.
+
+Om du arbetar med upplevelsen **Embed for your organization** (Bädda in för din organisation) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* och kör filen *pbi-saas-embed-report.sln*.
+
+### <a name="how-can-i-edit-my-registered-application"></a>Hur kan jag redigera mitt registrerade program?
+
+Information om hur du redigerar AAD-registrerade program finns [här](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+
+### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Hur kan jag redigera min Power BI-användarprofil eller mina Power BI-data?
+
+Mer information om hur du redigerar dina Power BI-data finns [här](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
 
 Mer information finns i [Felsökning av ditt inbäddade program](embedded-troubleshoot.md)
 

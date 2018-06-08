@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4ede737287c830d70283e3a73b627c59c38d1564
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 4371846e77412c67d7441a993dca80493ef92e34
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689882"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Hantera, uppdatera och ta bort organisationsinnehållspaket
 > [!NOTE]
@@ -71,7 +72,7 @@ En annan ändring som är tillgänglig för innehållspaketets skapare är att u
 Som skapare av innehållspaketet kan du [schemalägga en uppdatering av datauppsättningarna](refresh-data.md).  När du skapar och laddar upp innehållspaketet laddas detta uppdateringsschema upp med datauppsättningar. Om du ändrar uppdateringsschemat, måste du publicera om innehållspaketet (se ovan).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Ta bort en organisations innehållspaket från AppSource
-Du kan bara ta bort ett innehållspaketet från AppSource om du har skapat det. 
+Du kan bara ta bort ett innehållspaketet från AppSource om du har skapat det. Om du har skapat ett innehållspaket för din organisation på en apparbetsyta, och sedan bestämmer dig för att ta bort arbetsytan, måste du ta bort innehållspaketet först. Om du tar bort arbetsytan utan att först ta bort innehållspaketet förlorar du all åtkomst till innehållspaketen och måste kontakta Microsoft Support för hjälp. 
 
 > [!TIP]
 > Du kan [ta bort anslutningen till ett innehållspaket](service-organizational-content-pack-disconnect.md) som du inte har skapat. Detta tar inte bort innehållspaketet från AppSource.

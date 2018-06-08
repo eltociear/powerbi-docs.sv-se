@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 043bd43ac6d0abcd4cc4bae54f4ee57cc4ef2a41
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561757"
 ---
 # <a name="embedding-with-power-bi"></a>Bädda in med Power BI
 Power BI erbjuder API:er för att bädda in dina instrumentpaneler och rapporter i program. Power BI-API:erna ger dig en konsekvent uppsättning funktioner och tillgång till de senaste funktionerna i Power BI när du bäddar in funktioner som instrumentpaneler, gatewayer och apparbetsytor.
@@ -32,11 +33,13 @@ Inbäddning för din organisation låter dig utöka Power BI-tjänsten. Detta kr
 
 Se följande för inbäddning för din organisation:
 
+* [Integrera en rapport i en app](integrate-report.md)
 * [Integrera en instrumentpanel i en app](integrate-dashboard.md)
 * [Integrera en panel i en app](integrate-tile.md)
-* [Integrera en rapport i en app](integrate-report.md)
 
 Självbetjäningsfunktioner, som redigering, spara och mycket mer finns tillgängligt via [JavaScript API:t](https://github.com/Microsoft/PowerBI-JavaScript) vid inbäddning för Power BI-användare.
+
+Med [integrationsverktyget för inbäddning för din organisation](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du integrerar en rapport för din organisation.
 
 ## <a name="embedding-for-your-customers"></a>Inbäddning för dina kunder
 Inbäddning för dina kunder ger dig möjligheten att bädda in instrumentpaneler och rapporter till användare som inte har ett konto för Power BI. Dina kunder behöver inte känna till något om Power BI. Minst ett Power BI Pro-konto krävs för att skapa ett inbäddat program. Power BI Pro-kontot fungerar som ett huvudkonto för ditt program. Tänk på det som ett proxykonto. Power BI Pro-kontot låter dig även generera inbäddningstokens som ger åtkomst till instrumentpaneler och rapporter i Power BI-tjänsten som ägs/hanteras av ditt program. 
@@ -50,11 +53,12 @@ Om du vill bädda in instrumentpaneler, rapporter och paneler, använder du samm
 > [!IMPORTANT]
 > Även om inbäddning är beroende av Power BI-tjänsten så finns det inget beroende av Power BI för dina kunder. De behöver inte registrera sig för Power BI om du vill visa ditt programs inbäddade innehåll.
 > 
-> 
 
 När du är redo att flytta till produktion, måste din apparbetsyta tilldelas en kapacitet. Power BI Embedded i Microsoft Azure, erbjuder kapacitet för att använda med program.
 
 Mer information om hur du bäddar in finns i [Så här bäddar du in dina Power BI-instrumentpaneler, rapporter och paneler](embedding-content.md).
+
+Med [integrationsverktyget för inbäddning för dina kunder](https://aka.ms/embedsetup/AppOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du integrerar en rapport i ditt program.
 
 Om du använder tjänsten Power BI-arbetsytesamlingar i Azure, se [Migrera innehåll från Azure-tjänsten Power BI-arbetsytesamlingar](migrate-from-powerbi-embedded.md) för information om hur du migrerar över ditt innehåll.
 

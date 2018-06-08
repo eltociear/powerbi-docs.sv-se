@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1bf5f83265c9d4fc11532b647207f8d273aab50c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: b1bfe0e35015cd32024b381a1859330cd8f1862a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721120"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det innebär att du kan skapa den perfekta datamodellen i Power BI Desktop, publicera den till Power BI-tjänsten och sedan kan du och andra användare skapa flera olika rapporter (i separata .pbix-filer) från samma gemensamma datamodell. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
@@ -35,6 +36,8 @@ Alla gillar hennes rapport och hennes datauppsättning, och det är där det sku
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Ansluta till en Power BI-tjänsts datauppsättning med hjälp av en live-anslutning
 När Anna skapar sin rapport (och skapar datauppsättningen som den baseras på) publicerar hon den till **Power BI-tjänsten** och den visas på arbetsytan för hennes grupp i Power BI-tjänsten. Den är nu tillgänglig så att alla i hennes arbetsyta kan se och använda den.
+
+Mer information om arbetsytor finns i avsnittet om [apparbetsytor](service-create-distribute-apps.md#app-workspaces).
 
 Andra medlemmar i hennes arbetsyta kan nu upprätta en live-anslutning till Annas delade datamodell (med **Live-anslutning till Power BI-tjänst**) och skapa sina egna unika rapporter från *hennes ursprungliga datauppsättning*.
 

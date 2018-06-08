@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2018
+ms.date: 05/25/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77c1dbe528b218fe3b51992f548325bb8916c22c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 75ae82e43987cb42b858fe4350330fda3692cf97
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34297364"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721511"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 Du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram, eller så kan du använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
@@ -43,6 +43,13 @@ Power BI-utsnitt har följande begränsningar:
 ## <a name="create-slicers"></a>Skapa utsnitt
 
 Om du vill skapa ett nytt utsnitt kan du välja utsnittsikonen och sedan välja datafältet att filtrera efter (eller dra den till rutan **Fält** i fönstret **Visualiseringar**). Du kan också välja eller dra datafältet först och skapa en visualisering och sedan välja utsnittsikonen och ändra visualiseringen till ett utsnitt. Olika datatyper skapar olika utsnittstyper med olika effekter och alternativ. 
+
+Första gången du ändrar en rapport aktiveras knappen **Återställ till standard**. Det här är en påminnelse om att du har ändrat de ursprungliga rapportinställningarna. Om du navigerar bort från rapporten sparas ändringen (den är beständig). När du återvänder till rapporten behöver du inte göra ändringarna igen.  Om du i stället vill återställa rapporten till rapportförfattarens standardinställningar väljer du knappen **Återställ till standard** från den översta menyraden.
+
+![Knappen Återgå till standard](media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
+
+> [!NOTE]
+> Om knappen **Återställ till standard** fortfarande är inaktiverad beror det på att rapportförfattaren har inaktiverat funktionen för rapporten, eller så innehåller rapporten ett anpassat visuellt objekt. Hovra bara över knappen så visas en knappbeskrivning med en förklaring. 
 
 **Skapa ett nytt utsnitt och filtrera data efter Distriktschef**
 
