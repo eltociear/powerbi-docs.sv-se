@@ -1136,6 +1136,8 @@
           href: service-gateway-onprem-manage-oracle.md
         - name: Hantera företagets datakälla – import/schemalagd uppdatering
           href: service-gateway-enterprise-manage-scheduled-refresh.md
+        - name: Sammanfoga lokala datakällor och molndatakällor
+          href: service-gateway-mashup-on-premises-cloud.md
         - name: Använda Kerberos för enkel inloggning (SSO)
           href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
         - name: Konfigurera proxyinställningar
