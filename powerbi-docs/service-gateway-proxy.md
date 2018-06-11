@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: c0ad0c22d0787eaaa45cb36c74c01f6a1d1f85e3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ef554d7190709565610336169b4883d71970f822
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722668"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799566"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfigurera proxyinställningar för den lokala datagatewayen
 Din arbetsmiljö kan kräva att du går via en proxy för att ansluta till Internet. Detta kan förhindra att den lokala datagatewayen ansluter till tjänsten.
@@ -50,7 +50,7 @@ Standardproxykonfigurationen är följande.
         <defaultProxy useDefaultCredentials="true" />
     </system.net>
 
-Standardkonfigurationen fungerar med Windows-autentisering. Om proxyn använder en annan form av autentisering, behöver du ändra inställningarna. Om du inte är säker, kontaktar du din nätverksadministratör.
+Standardkonfigurationen fungerar med Windows-autentisering. Om proxyn använder en annan form av autentisering, behöver du ändra inställningarna. Om du inte är säker, kontaktar du din nätverksadministratör. Grundläggande proxyautentisering rekommenderas inte. Försök att använda grundläggande proxyautentisering kan orsaka proxyautentiseringsfel som resulterar i en gateway som inte är korrekt konfigurerad. Använd en starkare proxyautentiseringsmetod i stället.
 
 Förutom att använda standardautentiseringsuppgifter kan du lägga till ett <proxy>-element och definiera proxyserverinställningar i mer detalj. Du kan till exempel ange att din lokala datagateway alltid ska använda proxyservern även för lokala resurser genom att ange parametern bypassonlocal till false. Detta kan vara användbart i felsökningssituationer om du vill spåra alla HTTPS-förfrågningar från en lokal datagateway i proxyloggfilerna. Följande exempelkonfiguration anger att alla förfrågningar måste gå via en specifik proxyserver med IP-adressen 192.168.1.10.
 
@@ -93,6 +93,10 @@ När du konfigurerar proxyinställningarna till att använda standardautentiseri
 5. Återställa gatewayen med återställningsnyckeln.
    
     Detta gör att det nya tjänstkontot kan dekryptera lagrade autentiseringsuppgifter för datakällor.
+    
+> [!NOTE]
+> När du ändrar tjänstkontot direkt via kontrollpanelen Tjänster, uppdateras inte ACL:er automatiskt. Du måste kontrollera att det nya tjänstkontot har åtkomst till installationsfilerna och mappen. Du hittar gatewayens installationsmapp under C:\Program\Lokal datagateway. 
+> 
 
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway (personligt läge)](service-gateway-personal-mode.md)

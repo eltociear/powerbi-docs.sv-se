@@ -1,32 +1,32 @@
 ---
 title: Vad är Power BI?
-description: Översikt över Power BI och hur de olika delarna fungerar ihop – Power BI Desktop, Power BI-tjänsten, Power BI Mobile och rapportservern.
+description: Översikt över Power BI och hur de olika delarna fungerar ihop – Power BI Desktop, Power BI-tjänsten, Power BI Mobile, rapportservern och Power BI Embedded.
 author: mihart
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 05/27/2018
+ms.date: 06/04/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b91c7b4bc96ea5b3f1e4a8db844ef6d9987c9b38
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 78edb9d45df1332a25ec27476562d6105c7a8a48
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34584195"
+ms.locfileid: "34755379"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Oavsett om dina data består av ett enkelt Excel-kalkylblad eller en samling molnbaserade och lokala hybridinformationslager, kan du med **Power BI** enkelt ansluta till dina datakällor, visualisera (eller identifiera) vad som är viktigt och dela det med någon eller alla du vill.
 
-![](media/power-bi-overview/c0a0_1.png)
+![diagram som visar indatakällor för Power BI](media/power-bi-overview/power-bi-input.png)
 
 **Power BI** kan vara enkelt och snabbt och kan på ett ögonblick skapa snabba insikter från ett Excel-kalkylblad eller en lokal databas. Men **Power BI** är också robust och håller företagsklass och möjliggör omfattande modellering och analys i realtid samt anpassad utveckling. Så det kan vara ditt personliga verktyg för rapportering och visualisering och även fungera som analys- och beslutsmotor till grupprojekt, avdelningar eller hela bolag.
 
 ## <a name="the-parts-of-power-bi"></a>Power BI:s delar
 Power BI består av ett Windows-skrivbordsprogram som heter **Power BI Desktop**, en SaaS-tjänst (*programvara som en tjänst*) online som kallas **Power BI-tjänsten** och Power BI **-mobilappar** som finns tillgängliga för Windows-telefoner och -surfplattor, samt för iOS- och Android-enheter.
 
-![](media/power-bi-overview/c0a0_2.png)
+![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-blocks.png)
 
 Dessa tre delar – **skrivbordet**, **tjänsten** och **mobilapparna** – är utformade för att människor ska kunna skapa, dela och använda affärsinsikter på det sätt som passar dem bäst beroende på roll.
 
@@ -42,7 +42,8 @@ Du kan också använda delarna i **Power BI** vid olika tidpunkter, beroende på
 Du kanske vill visa utvecklingen för lager och tillverkning på en instrumentpanel i realtid i tjänsten och även använda **Power BI Desktop** för att skapa rapporter för ditt team om kundengagemangsstatistik. Hur du använder Power BI kan baseras på vilken funktion eller tjänst i Power BI som är det bästa verktyget för din situation – men alla delar av Power BI är tillgängliga för dig, vilket är anledningen till att det är så flexibelt och övertygande.
 
 ## <a name="the-flow-of-work-in-power-bi"></a>Arbetsflödet i Power BI
-Ett vanligt arbetsflöde i Power BI börjar med att ansluta till datakällor och skapa en rapport i **Power BI Desktop**. Rapporten publiceras därefter från **Desktop** till **Power BI-tjänsten** och delas så att användare av **tjänsten** och **mobilappen** kan *använda* (visa och interagera med) rapporten. Ibland kan du vilja ge kollegor behörigheter som liknar dina egna (behörigheter för *skapare*) så att de också kan använda **tjänsten** för att redigera rapporter, skapa instrumentpaneler och dela sitt arbete.
+Ett vanligt arbetsflöde i Power BI börjar med att ansluta till datakällor och skapa en rapport i **Power BI Desktop**. Rapporten publiceras därefter från **Desktop** till **Power BI-tjänsten** och delas så att användare av **tjänsten** och **mobilappen** kan *använda* (visa och interagera med) rapporten.
+Ibland kan du vilja ge kollegor behörigheter som liknar dina egna (behörigheter för *skapare*) så att de också kan använda **tjänsten** för att redigera rapporter, skapa instrumentpaneler och dela sitt arbete.
 
 Det går inte alltid till på det här viset men detta är ett av de vanligaste arbetsflödena och det visar hur de tre huvudsakliga Power BI-elementen kompletterar varandra.
 
@@ -51,9 +52,9 @@ Men vad händer om du inte är redo att flytta till molnet och vill behålla din
 ## <a name="on-premises-reporting-with-power-bi-report-server"></a>Lokal rapportering med Power BI-rapportservern
 Skapa, distribuera och hantera Power BI, mobila och sidnumrerade rapporter lokalt med det utbud av verktyg och tjänster som är klara att användas som Power BI-rapportservern ger dig.
 
-![](media/power-bi-overview/power-bi-report-server2.png)
+![diagram för lokal rapportering](media/power-bi-overview/power-bi-report-server2.png)
 
-Power BI-rapportservern är en lösning som du distribuerar bakom brandväggen och som skickar dina rapporter till rätt användare på olika sätt, oavsett om de som får dem ska visa dem i en webbläsare, på en mobil enhet eller som ett e-postmeddelande. Och eftersom Power BI-rapportservern är kompatibel med Power BI i molnet, kan du flytta över till molnet när du är redo. 
+Power BI-rapportservern är en lösning som du distribuerar bakom brandväggen och som skickar dina rapporter till rätt användare på olika sätt, oavsett om de som får dem ska visa dem i en webbläsare, på en mobil enhet eller som ett e-postmeddelande. Och eftersom Power BI-rapportservern är kompatibel med Power BI i molnet, kan du flytta över till molnet när du är redo.
 
 ## <a name="next-steps"></a>Nästa steg
 [Logga in, hämta vissa data och lär dig använda Power BI-tjänsten](service-the-new-power-bi-experience.md)

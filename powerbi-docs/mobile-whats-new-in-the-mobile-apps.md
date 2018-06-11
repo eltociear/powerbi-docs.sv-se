@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 0e4401499ab54707970b928366c67a9dcf7d587a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9cf6e1a0b4e711f696d9728850352a53ac8442f6
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482186"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799635"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -25,9 +25,26 @@ Relaterad information om nyheter finns i:
 
 ## <a name="may-2018"></a>Maj 2018
 
-### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Fjärrkonfiguration av Power BI iOS-mobilappar för rapportservrar
+### <a name="mobile-drill-through-all-mobile-apps"></a>Detaljerad information för mobil: alla mobilappar
 
-IT-administratören kan nu använda MDM-verktyget för att konfigurera åtkomst för Power BI iOS-mobilappen till en rapportserver. Du hittar mer information i avsnittet om [hur man fjärrkonfigurerar Power BI iOS-mobilapp för åtkomst till en rapportserver](report-server/configure-powerbi-mobile-apps-remote.md).
+Du kan detaljgranska från en vald datapunkt till en annan rapportsida i mobilapparna, förutsatt att rapportens författare har definierat den åtgärden. 
+
+### <a name="back-button-all-mobile-apps"></a>Knappen Bakåt: alla mobilappar
+
+När du navigerar i en rapport genom att svepa, väljer en rapportsida i åtgärdsfältet eller använder detaljerad sökning, tar nu knappen Bakåt dig tillbaka till den sida som du senast var på. 
+
+### <a name="dashboard-themes-all-mobile-apps"></a>Teman för instrumentpaneler: alla mobilappar
+
+När rapportförfattarna anpassar instrumentpanelsteman i Power BI-tjänsten, ändras även utseendet på instrumentpanelen i mobilappen. Dock visas inte bakgrundsbilderna.
+
+### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Konfiguration av Power BI iOS-mobilappens fjärråtkomst till en rapportserver
+
+IT-administratören kan nu använda MDM-verktyget för att konfigurera åtkomst för Power BI iOS-mobilappen till en rapportserver. Mer information finns i avsnittet om [hur du fjärrkonfigurerar åtkomsten från iOS-mobilappen för Power BI till en rapportserver](report-server/configure-powerbi-mobile-apps-remote.md).
+
+### <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
+
+Power BI för Mixed Reality-appen finns nu i Microsoft Store. Visa dina instrumentpaneler och rapporter i den virtuella världen, eller placera ut dem och visa dem på specifika platser i din miljö. Se den nya videon [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) (Introduktion till Power BI på HoloLens) eller läs artikeln om den nya [Power BI för Mixed Reality-appen](mobile-mixed-reality-app.md).
+
 
 ## <a name="april-2018"></a>April 2018
 

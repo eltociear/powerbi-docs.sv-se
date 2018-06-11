@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 980aa830e38e49613b54ad473ef23eb7eac78ed2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 04963d513fa397e75c34f0650bf55fb31c1490f2
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722803"
+ms.locfileid: "34755103"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – vad är det?
 Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation eller ditt team, vilket ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också frekvent distribution av innehåll utan att du behöver köpa licenser per användare för tittare.
@@ -61,9 +61,8 @@ Som standard är din arbetsyta i delad kapacitet. Detta inkluderar din personlig
 ### <a name="premium-capacity-nodes"></a>Noder för premiumkapacitet
 Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-kärnor. Mer information om specifika SKU-erbjudanden och kostnader finns i [Priser för Power BI](https://powerbi.microsoft.com/pricing/). En [kostnadskalkylator](https://powerbi.microsoft.com/calculator/) är också tillgänglig. Mer information om kapacitetsplanering för inbäddade analyser finns i [Planera ett white paper för Power BI-företagsdistribution](https://aka.ms/pbienterprisedeploy).
 
-* P-noder kan användas för inbäddade eller tjänstedistributioner
-* EM-noder kan användas för inbäddade distributioner endast
-* EM1 och EM2 
+* P-noder kan användas för inbäddade distributioner eller tjänstedistributioner.
+* EM-noder kan endast användas för inbäddade distributioner. EM-noder saknar åtkomst till premiumfunktioner, till exempel att dela appar till användare som inte har någon Power BI Pro-licens.
 
 >[!NOTE]
 >Länkar i den här tabellen fungerar bara korrekt för användare som är globala administratörer för Office 365 – andra får ett 404-fel. 

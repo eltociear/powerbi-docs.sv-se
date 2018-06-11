@@ -94,10 +94,6 @@
                   href: service-focus-mode.md
                 - name: 'Skriva ut en instrumentpanel, skriva ut en panel på instrumentpanelen, skriva ut en rapportsida'
                   href: service-print.md
-                - name: Prenumerera på en rapport eller instrumentpanel
-                  href: service-report-subscribe.md
-                - name: Många sätt att öppna en rapport
-                  href: service-report-open.md
                 - name: Byt namn på innehåll i Power BI
                   href: service-rename.md
                 - name: Visa instrumentpaneler och rapporter i helskärmsläge (TV-läge)
@@ -238,12 +234,16 @@
                   href: service-dashboard-themes.md
             - name: Rapporter
               items:
+                - name: Många sätt att öppna en rapport
+                  href: service-report-open.md
                 - name: Ändra hur ett diagram sorteras i en Power BI-rapport
                   href: power-bi-report-change-sort.md
                 - name: Exportera data från en visualisering
                   href: power-bi-visualization-export-data.md
                 - name: Så här använder du rapportfilter
                   href: power-bi-how-to-report-filter.md
+                - name: Prenumerera på en rapport eller instrumentpanel
+                  href: service-report-subscribe.md
             - name: Publicera
               items:
                 - name: Power BI Publisher för Excel
@@ -252,22 +252,6 @@
                   href: service-publish-to-powerpoint.md
         - name: Arbeta i Power BI
           items:
-            - name: Från Excel-arbetsbok till otrolig rapport på nolltid
-              href: service-from-excel-to-stunning-report.md
-            - name: Använda frågor och svar för att skapa visualiseringar och rapporter
-              href: power-bi-tutorial-q-and-a.md
-            - name: Hämta data från Excel-arbetsboksfiler
-              href: service-excel-workbook-files.md
-            - name: Skapa en ny rapport från en datauppsättning
-              href: service-report-create-new.md
-            - name: Interagera med en rapport i redigeringsvyn i Power BI
-              href: service-interact-with-a-report-in-editing-view.md
-            - name: Hur ska jag samarbeta och dela instrumentpaneler och rapporter?
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Installera och distribuera appar med instrumentpaneler och rapporter
-              href: service-create-distribute-apps.md
-            - name: Konfigurera schemalagd uppdatering
-              href: refresh-scheduled-refresh.md
             - name: Instrumentpaneler
               items:
                 - name: Skapa en instrumentpanel från en rapport
@@ -304,6 +288,8 @@
                   href: service-data-classification.md
             - name: Ställa frågor om dina data
               items:
+                - name: Använda frågor och svar för att skapa visualiseringar och rapporter
+                  href: power-bi-tutorial-q-and-a.md
                 - name: Använda Frågor och svar med Power BI Gateway – Företagsdata (Förhandsgranskning)
                   href: service-q-and-a-direct-query.md
                 - name: Få dina data att fungera bra med Frågor och svar i Power BI
@@ -318,6 +304,10 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Dela ditt arbete
               items:
+                - name: Hur ska jag samarbeta och dela instrumentpaneler och rapporter?
+                  href: service-how-to-collaborate-distribute-dashboards-reports.md
+                - name: Installera och distribuera appar med instrumentpaneler och rapporter
+                  href: service-create-distribute-apps.md
                 - name: Dela en filtrerad rapport
                   href: service-share-reports.md
                 - name: Publicera på webben från Power BI
@@ -354,6 +344,10 @@
                   href: power-bi-report-add-filter.md
                 - name: Spara en rapport i Power BI
                   href: service-report-save.md
+                - name: Skapa en ny rapport från en datauppsättning
+                  href: service-report-create-new.md
+                - name: Interagera med en rapport i redigeringsvyn i Power BI
+                  href: service-interact-with-a-report-in-editing-view.md
                 - name: Analysera i Excel
                   href: service-analyze-in-excel.md
                 - name: Ändra hur visuella objekt interagerar i en rapport
@@ -382,6 +376,10 @@
                   href: power-bi-visualizations-arcgis.md
             - name: Data från filer
               items:
+                - name: Från Excel-arbetsbok till otrolig rapport på nolltid
+                  href: service-from-excel-to-stunning-report.md
+                - name: Hämta data från Excel-arbetsboksfiler
+                  href: service-excel-workbook-files.md
                 - name: Hämta data från Power BI Desktop-filer
                   href: service-desktop-files.md
                 - name: Hämta data från filer med kommaavgränsade värden (.csv)
@@ -406,6 +404,8 @@
                   href: service-azure-and-power-bi.md
             - name: Datauppdatering
               items:
+                - name: Konfigurera schemalagd uppdatering
+                  href: refresh-scheduled-refresh.md
                 - name: Uppdatera en datauppsättning som skapats från en Power BI Desktop-fil – lokalt
                   href: refresh-desktop-file-local-drive.md
                 - name: Uppdatera en datauppsättning som skapats från en Power BI Desktop-fil – i molnet
@@ -796,7 +796,7 @@
   items:
     - name: Översikt
       items:
-        - name: Vad är Power BI-mobilappar?
+        - name: Vilka mobilappar finns det?
           href: mobile-apps-for-mobile-devices.md
     - name: Snabbstarter
       items:
@@ -808,20 +808,20 @@
           href: tutorial-mobile-apps-ios-qna.md
     - name: Begrepp
       items:
-        - name: Nyheter i Power BI-mobilapparna
+        - name: Nyheter i mobilapparna
           href: mobile-whats-new-in-the-mobile-apps.md
-        - name: Hämta Power BI-data från den verkliga världen med mobilappar
+        - name: Hämta verkliga data med mobilapparna
           href: mobile-apps-data-in-real-world-context.md
-        - name: Visa dina data offline i Power BI-mobilapparna
+        - name: Visa dina data offline i mobilapparna
           href: mobile-apps-offline-data.md
+        - name: Appen Power BI för Mixed Reality (förhandsversion)
+          href: mobile-mixed-reality-app.md
     - name: Gör så här
       items:
         - name: Alla mobilappar
           items:
             - name: Visa lokala rapporter i mobilapparna
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-            - name: Appen Power BI för Mixed Reality (förhandsversion)
-              href: mobile-mixed-reality-app.md
             - name: Dela en instrumentpanel från Power BI-mobilapparna
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Interagera med paneler i mobilapparna
@@ -850,7 +850,7 @@
               href: service-admin-mobile-intune.md
         - name: Android-enheter
           items:
-            - name: Kom igång med Power BI för Android-appen
+            - name: Kom igång med Android-appen
               href: mobile-android-app-get-started.md
             - name: Åtgärda "Ditt företags SSL-certifikat är inte betrott"
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
@@ -858,7 +858,7 @@
               href: mobile-android-error-update-android-system-webview.md
         - name: iOS
           items:
-            - name: Kom igång med Power BI för iOS-appen
+            - name: Kom igång med iOS-appen
               href: mobile-iphone-app-get-started.md
             - name: Kom igång med iPad-appen
               href: mobile-ipad-app-get-started.md
@@ -866,27 +866,27 @@
               href: mobile-apps-ios-qna.md
             - name: Power BI-appen för Apple Watch
               href: mobile-apple-watch.md
-            - name: Skanna en streckkod från Power BI-appen på din iPhone
+            - name: Skanna en streckkod från appen på din iPhone
               href: mobile-apps-scan-barcode-iphone.md
             - name: Power BI för iOS-appar
               href: mobile-ios-ipad-iphone-apps.md
         - name: iOS och Android
           items:
-            - name: 'Lägga till anteckningar och dela en panel, en rapport eller ett visuellt objekt i mobilapparna'
+            - name: Kommentera och dela i mobilappar
               href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
         - name: Power BI-appen för Windows 10-enheter
           items:
-            - name: Kom igång med Power BI-mobilappen för Windows 10
+            - name: Kom igång med mobilappen för Windows 10
               href: mobile-windows-10-phone-app-get-started.md
             - name: Fäst en instrumentpanel på startskärmen
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: 'Se mobila rapporter i Reporting Services och KPI:er på Power BI-mobilappen för Windows 10'
+            - name: 'Se mobila rapporter i Microsoft SQL Server Reporting Services och KPI:er i appen för Windows 10'
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
             - name: Visa Power BI på Surface Hub
               href: mobile-windows-10-app-presentation-mode.md
     - name: Resurser
       items:
-        - name: Språk som stöds i Power BI-mobilappar
+        - name: Språk som stöds i mobilapparna
           href: mobile-apps-supported-languages.md
 - name: Power BI för utvecklare
   items:
@@ -914,8 +914,6 @@
           items:
             - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
               href: service-custom-visuals-getting-started-with-developer-tools.md
-            - name: Granska säkerhet och sekretess för anpassade visuella objekt
-              href: service-custom-visuals-review-for-security-and-privacy.md
             - name: Certifiera ett anpassat visuellt objekt
               href: power-bi-custom-visuals-certified.md
             - name: Publicera anpassad visuell information till AppSource
@@ -983,7 +981,7 @@
     - name: Referens
       items:
         - name: 'REST API:er'
-          href: developer/rest-api-reference.md
+          href: 'https://docs.microsoft.com/rest/api/power-bi/'
         - name: 'Power BI C# Git Repo'
           href: 'https://go.microsoft.com/fwlink/?linkid=848273'
         - name: Hämta .NET SDK

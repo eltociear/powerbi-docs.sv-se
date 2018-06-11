@@ -10,21 +10,25 @@ ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aec57dc8d015afe80c9cc9cde83c2d1fd6ba26b0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722599"
+ms.locfileid: "34755172"
 ---
 # <a name="manage-a-power-bi-gateway"></a>Hantera en Power BI-gateway
 
-När du har [installerat en Power BI-datagateway](service-gateway-install.md), kan du hantera den via området **Hantera gatewayer** i Power BI-tjänsten, i gatewayappen på din lokala dator och med PowerShell-skript. Den här artikeln fokuserar på Power BI-tjänsten. Om du precis har installerat en gateway, rekommenderar vi att dig att [lägga till en datakälla](#add-a-data-source) och sedan [lägga till användare](#add-users-to-a-data-source) så att de kan få åtkomst till datakällan.
+När du har [installerat en Power BI-datagateway](service-gateway-install.md) hanterar du den baserat på dina krav. I det här avsnittet lär du dig att: lägga till och ta bort datakällor och användare, starta om en gateway, samt migrera, återställa, ta över och ta bort en gateway. 
+
+Du kan hantera en gateway via området **Hantera gatewayer** i Power BI-tjänsten, i gateway-appen på din lokala dator och med PowerShell-skript. Den här artikeln fokuserar på Power BI-tjänsten. 
+
+Om du precis har installerat en gateway, rekommenderar vi att dig att [lägga till en datakälla](#add-a-data-source) och sedan [lägga till användare](#add-users-to-a-data-source) så att de kan få åtkomst till datakällan.
 
 
 ## <a name="manage-data-sources"></a>Hantera datakällor
 
-Power BI stöder många lokala datakällor och var och en har sina egna krav. Vi visar hur du lägger till SQL Server som datakälla i det här exemplet, men stegen ser ungefär likadana ut för andra datakällor.
+Power BI stöder många lokala datakällor och var och en har sina egna krav. Gatewayer kan användas för en enstaka datakälla eller flera datakällor. Vi visar hur du lägger till SQL Server som datakälla i det här exemplet, men stegen ser ungefär likadana ut för andra datakällor.
 
 
 ### <a name="add-a-data-source"></a>Lägga till en datakälla
@@ -113,6 +117,14 @@ När administratörer använder menyalternativet **Hantera gatewayer** som finns
 
 Alla nya begäranden om **schemalagd uppdatering** och DirectQuery-åtgärder dirigeras automatiskt till den primära instansen av ett visst gatewaykluster. Om den primära gatewayinstansen inte är online, omdirigeras begäran till en annan gatewayinstans i klustret.
 
+
+## <a name="share-a-gateway"></a>Dela en gateway
+
+Det går inte att *dela* en gateway som den är, men du kan lägga till administratörer till gatewayen och du kan lägga till användare till gatewayens datakällor. 
+
+När du har installerat en gateway är du som standard administratör för denna gateway. Som vi visade tidigare kan du lägga till andra personer som administratörer. Dessa administratörer kan lägga till datakällor, konfigurera och ta bort gatewayen.
+
+Du kan också tilldela användare till de datakällor som du skapar under varje gateway. Användarna kan sedan använda dessa datakällor till att uppdatera Power BI-rapporterna. De kan dock inte ändra några av datakällorna eller gateway-inställningarna.
 
 ## <a name="migrate-restore-or-take-over-a-gateway"></a>Migrera, återställa eller ta över en gateway
 

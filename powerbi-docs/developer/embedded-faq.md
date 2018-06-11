@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: d7baa305c514d084f6390754d516b238794bcdbf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 3e1b3b59fff26242e662d90365a6b8acc98259e6
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721028"
+ms.locfileid: "34754942"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -103,8 +103,7 @@ Autentisering och auktorisering för det användarna kommer att implementeras av
 
 Om du redan har en Azure AD-klient kan du använda en befintlig katalog och skapa en ny Azure AD-klient för att skydda ditt inbäddade innehåll.
 
-Du kan skaffa en AAD-token genom att använda något av Azure Active Directory-autentiseringsbiblioteken. Det finns klientbibliotek för flera plattformar.
-https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries
+Du kan skaffa en AAD-token genom att använda något av Azure Active Directory-autentiseringsbiblioteken – https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Det finns klientbibliotek för flera plattformar.
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>Hur skiljer sig Power BI Embedded från övriga Azure-tjänster?
 
