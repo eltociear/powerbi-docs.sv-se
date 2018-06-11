@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6d7ab55c3ecbb13b40354f67263d597f0e1179f7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5b4d5ea7970dd44cfebadca6935452688515aef5
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297686"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799428"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -81,25 +81,30 @@ När du väljer ett värde i en visuell information så filtreras inte övrig vi
    ![Sortera en visualisering](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * För att kasta om sorteringsordningen, trycker du på ellipsen (**...** ) igen och trycker sedan på samma fältnamn igen.
 
-## <a name="drill-down-on-an-ipad-or-a-tablet"></a>Gå in på detaljnivå på en iPad eller en surfplatta
-Om en rapportskapare har lagt till detaljnivåfunktionen i en visualisering, kan du öka detaljnivån för visuell information för att se de värden som utgör en del av den. Du kan [lägga till öka detaljnivån för en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjänsten. 
+## <a name="drill-down-and-up-in-a-visual"></a>Öka och minska detaljnivån i ett visuellt objekt
+Om en rapportskapare har lagt till detaljnivåfunktionen i en visualisering kan du öka detaljnivån i visualiseringen för att se de värden som utgör en del av den. Du kan [lägga till öka detaljnivån för en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjänsten. 
 
-> [!NOTE]
-> För tillfället fungerar det inte att öka detaljnivån för kartor på en iPad eller surfplatta.
-> 
-> 
+* Tryck på en datapunkt i en visualisering för att visa dess knappbeskrivning. Om den har detaljnivåfunktion finns det pilar längst ned på knappbeskrivningen som du kan trycka på. 
+  
+  ![Öka detaljnivån i ett visuellt objekt](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
-* Tryck på någon visuell information. Om den har upp- och nedpilar i de övre hörnen ![Ikoner för att öka, minska detaljnivån](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-down.png)så kan du öka detaljnivån. Om du vill öka detaljnivån för ett värde, trycker du på pilen i det övre högra hörnet och sedan ett värde i visualiseringen &#151; i det här fallet, den mörkblå FD-04-bubblan.
+* Tryck på uppåt-pilen i knappbeskrivningen för att minska detaljnivån igen.
   
-  ![Öka detaljnivån i ett visuellt objekt](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-one.png)
-* Tryck på uppåt-pilen i det övre vänstra hörnet för att minska detaljnivån igen.
-  
-  ![Minska detaljnivån](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
+  ![Minska detaljnivån](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
 
-## <a name="go-back-to-my-workspace"></a>Gå tillbaka till Min arbetsyta
-* Tryck på pilen bredvid rapportnamnet > tryck på **Min arbetsyta**.
-  
-  ![Gå tillbaka upp](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
+* Du kan också öka detaljnivån i alla datapunkter i en visualisering. Öppna den i fokusläge, tryck på ikonen Utforska och välj sedan att visa alla på nästa nivå eller expandera för att visa aktuell nivå och nästa nivå.
+
+   ![Power BI öka detaljnivån för alla](media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
+
+## <a name="drill-through-from-one-page-to-another"></a>Visning av detaljerad information från en sida till en annan
+
+Med *visning av detaljerad information*, när du trycker på en viss del av en visualisering, växlar Power BI till en annan sida i rapporten som filtreras till det värde som du tryckt på. Rapportförfattare kan definiera ett eller flera alternativ för visning av detaljerad information som växlar till olika sidor. I så fall kan du välja vilken som du vill visa detaljerad information för. När du trycker på värdet på mätaren i följande exempel kan du välja mellan att visa detaljerad information för **utgifter efter affärsområde** eller **planering efter affärsområde**.
+
+![Rapport av visning av detaljerad information i Power BI Mobile](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
+
+När du visar detaljerad information kan du använda bakåtknappen för att gå tillbaka till föregående rapportsida.
+
+Läs mer om hur du [lägger till visning av detaljerad information i Power BI Desktop](desktop-drillthrough.md).
 
 ## <a name="next-steps"></a>Nästa steg
 * [Visa och interagera med Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md)

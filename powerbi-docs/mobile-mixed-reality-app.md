@@ -1,25 +1,25 @@
 ---
 title: Appen Power BI för Mixed Reality (förhandsversion)
-description: Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality, antingen i en virtuell värld eller i din miljö.
+description: Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality (förhandsversion), antingen i en virtuell värld eller i din miljö.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2018
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 32ef06cfdefe4ff1554cfe5f449d69583569f158
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 15c59d25814a50ce09b5b52accd0f88d74871a34
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721442"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799336"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
-Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality i en virtuell värld, eller placera dem på specifika platser i din miljö. 
+Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality (förhandsversion) i en virtuell värld, eller placera dem på specifika platser i din miljö. 
 
-Hämta förhandsversionen av appen Power BI for Mixed Reality från Windows Store och visa dina instrumentpaneler och rapporter. Interagera med dem i den virtuella världen, och välj sedan de som du vill placera ut. 
+[Ladda ned appen Power BI for Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) från Windows Store: i Windows Store kallas den för ”Power BI Mobile”. Interagera med dina instrumentpaneler och rapporter i den virtuella världen, och välj sedan dem som du vill placera ut. 
 
 ## <a name="two-views-windows-classic-and-holographic"></a>Två vyer: den klassiska Windows-vyn och den holografiska vyn
 

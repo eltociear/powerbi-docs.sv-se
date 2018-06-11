@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d2f657423903b783c2e57822cabb577acd10a8bc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5d5544fba824443b1ba7b58c3e9d21f7769554d6
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294696"
+ms.locfileid: "34755333"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Använda Power BI-tjänsten eller Power BI Desktop för att skapa en anpassad svarssida för Cortana
 Du kan använda alla funktioner i Power BI för att skapa särskilda rapportsidor som kallas *Cortana-svarssidor* (och ibland *Cortana-svarskort*) som utformats speciellt för att besvara Cortana-frågor.
@@ -46,6 +46,12 @@ En *Cortana-svarssida* i en rapport är storleksanpassad särskilt för Cortana 
    
     ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)
 3. Skapa ett visuell objekt eller en uppsättning visuella objekt som du vill ska visas i Cortana som svar på en viss fråga (eller uppsättning frågor).
+
+> [!NOTE]
+> För tillfället stödjer inte Cortana-svarssidor bilder där det visas statiska bilder. Du kan inkludera bilder i tabell- eller matrisvisualiseringar som dynamiskt hämtas baserat på en URL i dina data. 
+> 
+> 
+
 4. Se till att all visuella objekt ryms inom de angivna kantlinjerna. Du kan också ändra visningsinställningar, dataetiketter, färger och bakgrunder.  
    
     ![](media/service-cortana-answer-cards/pbi_cortana_modify-new.png)

@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: d569b68da7d13518f2d641817dfe1a68862698ac
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1da7591a490ae5bc6d132136691db05af7cffd81
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297893"
+ms.locfileid: "34754919"
 ---
 # <a name="what-are-power-bi-gateways"></a>Vad är Power BI-gatewayer?
 
 En Power BI-gateway är en programvara som du installerar i ett lokalt nätverk. Den möjliggör åtkomst till data i nätverket. Den är som en grindvakt som lyssnar efter anslutningsbegäranden och bara beviljar dem när användarens begäranden uppfyller vissa villkor. Detta gör att organisationer kan förvara databaser och andra datakällor i sina lokala nätverk, men ändå använda dem på ett säkert sätt i Power BI-rapporter och instrumentpaneler.
 
-Följande diagram visar en grundläggande vy där gatewayen hanterar begäranden från molnet för tre lokala datorer. Vi kommer att gå in på detta mer i detalj senare i artikeln.
+Gatewayer kan användas för en enstaka datakälla eller flera datakällor. Följande diagram visar en grundläggande vy där gatewayen hanterar begäranden från molnet för tre lokala datorer. Vi kommer att gå in på detta mer i detalj senare i artikeln.
 
 ![Gatewayöversikt](media/service-gateway-getting-started/gateway-overview.png)
 

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 04dc755eb7d575aa8438b4a5000ad40549c6220f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: bcf012d94dedfd912479c3e51e0de388b177c294
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297088"
+ms.locfileid: "34755034"
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
 
 Lär dig hur du kan övervaka och undersöka åtgärder genom att använda granskning med Power BI. Du kan använda säkerhets- och efterlevnadscentret eller PowerShell.
 
-Att veta vem som vidtagit en viss åtgärd för ett visst objekt i din Power BI-klient kan vara av avgörande betydelse när det gäller att hjälpa organisationen att uppfylla olika krav, t.ex regelefterlevnad och posthantering.
+Att veta vem som vidtagit en viss åtgärd för ett visst objekt i din Power BI-klient kan vara av avgörande betydelse när det gäller att hjälpa organisationen att uppfylla olika krav, t.ex regelefterlevnad och posthantering. Du kan använda Power BI-granskning för att granska åtgärder som utförs av användare, till exempel ”Visa rapport” och ”Visa instrumentpanelen”. Du kan inte använda granskning för att granska behörigheter. 
 
 Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpanel, rapport, datamängd eller aktivitetstyp. Du kan också hämta aktiviteterna till en CSV-fil att analysera dem offline.
 
@@ -29,18 +29,18 @@ Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpane
 Du måste uppfylla följande krav för att komma åt granskningsloggar:
 
 - Du måste ha en Exchange Online-licens (ingår i Office 365 Enterprise E3 och E5-prenumerationer) för att komma åt granskningsavsnittet i säkerhet- och efterlevnadscentrumet för Office 365.
-- Du måste antingen vara global administratör eller ha en Exchange-administratörsroll som ger åtkomst till granskningsloggen. 
 
-  Exchange-administratörsrollerna styrs via administrationscentret för Exchange. Mer information finns i [Behörigheter i Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+- Du måste antingen vara global administratör eller ha en Exchange-administratörsroll som ger åtkomst till granskningsloggen. Exchange-administratörsrollerna styrs via administrationscentret för Exchange. Mer information finns i [Behörigheter i Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
 
 - Om du har åtkomst till granskningsloggen men inte är global administratör eller administratör för Power BI-tjänsten, får du inte åtkomst till Power BI-administratörsportalen. I det här fallet måste du hämta en direktlänk till säkerhet- och efterlevnadscentrumet för Office 365.
 
-> [!NOTE]
-> Om du vill visa granskningsloggar för Power BI i din klient, så måste du ha minst en Exchange-postlådelicens i din klient.
+- Om du vill visa granskningsloggar för Power BI i din klient, så måste du ha minst en Exchange-postlådelicens i din klient.
 
 ## <a name="accessing-your-audit-logs"></a>Öppna dina granskningsloggar
 
-Om du vill granska dina Power BI-loggar måste du gå till säkerhets- och efterlevnadscentret i O365.
+Om du vill granska dina Power BI-loggar går du till Säkerhets- och efterlevnadscenter i O365.
+
+Det kan förekomma en fördröjning på upp till 48 timmar mellan det att granskning aktiveras och att granskningsdata kan visas. Om du inte ser data omedelbart kontrollerar du granskningsloggarna senare. Det kan förekomma en liknande fördröjning mellan hämtning av behörighet för att visa granskningsloggar och att komma åt loggarna.
 
 1. Välj **kugghjulsikonen** i det övre högra hörnet.
 
@@ -56,8 +56,7 @@ Om du vill granska dina Power BI-loggar måste du gå till säkerhets- och efter
 
 Du kan också bläddra till [Office 365 | Säkerhet och efterlevnad](https://protection.office.com/#/unifiedauditlog).
 
-> [!NOTE]
-> Om du vill ge åtkomst till granskningsloggen för icke-administratörskonton, så måste du tilldela behörigheter i administrationscentret för Exchange Online. Du skulle t.ex. kunna tilldela en befintlig rollgrupp, som Organisationens ledning, en användare, eller så skulle du kunna skapa en ny rollgrupp med rollen Granskningsloggar. Mer information finns i [Behörigheter i Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
+Om du vill ge åtkomst till granskningsloggen för icke-administratörskonton, så måste du tilldela behörigheter i administrationscentret för Exchange Online. Du skulle t.ex. kunna tilldela en befintlig rollgrupp, som Organisationens ledning, en användare, eller så skulle du kunna skapa en ny rollgrupp med rollen Granskningsloggar. Mer information finns i [Behörigheter i Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
 
 ## <a name="search-only-power-bi-activities"></a>Sök endast efter Power BI-aktiviteter
 
