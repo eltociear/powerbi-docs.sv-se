@@ -4,8 +4,6 @@ Flera problem kan uppstå om gatewayversionen är föråldrad.  Det är en allm�
 ## <a name="common-issues"></a>Vanliga problem
 Här följer några vanliga problem och lösningar som har hjälpt många kunder i miljöer med begränsad internetåtkomst.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ### <a name="authentication-to-proxy-server"></a>Autentisering till proxyservern
 Proxyservern kan kräva autentisering från ett domänanvändarkonto. Som standard använder gatewayen ett tjänst-SID för att logga in på Windows-tjänsten. Det kan hjälpa att ändra inloggningsanvändaren till en domänanvändare. För mer information, se [Ändra gatewayens tjänstkonto till en domänanvändare](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 

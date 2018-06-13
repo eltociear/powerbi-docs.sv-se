@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: e5866b249d95cd3b05c7d769fe0cdbab984a978d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a41acec10e2801d046185d34c64e4d51b5e9dae0
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289934"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813099"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Fullständig kodlista för att skicka data till en datauppsättning
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -228,7 +228,7 @@ När du har följt stegen 2 till 5 i **skicka data till en datauppsättning** b�
 [Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md)  
 [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md)  
 [Lägg till rader i en Power BI-tabell](walkthrough-push-data-add-rows.md)  
-[Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 
 

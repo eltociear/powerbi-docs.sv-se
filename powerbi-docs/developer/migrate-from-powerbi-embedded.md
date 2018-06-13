@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 67b52fa94ee3af9da3bfcae17f69a72e1aa46c77
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d9dfdf3f77629a58b324945815a8608fa45f509f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689793"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813513"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar.
@@ -159,7 +159,7 @@ Utöver det innehåll som du har migrerat från Power BI-arbetsytesamlingen, så
 
 ## <a name="rebuild-your-application"></a>Återskapa ditt program
 1. Du måste ändra ditt program om du vill kunna använda Power BI REST-API:erna och rapportplatsen på powerbi.com.
-2. Återskapa din AuthN/AuthZ-autentisering med hjälp av ditt programs *huvudkonto*. Du kan utnyttja möjligheten att använda en [inbäddningstoken](https://msdn.microsoft.com/library/mt784614.aspx) så att användaren kan agera som ombud för andra användare.
+2. Återskapa din AuthN/AuthZ-autentisering med hjälp av ditt programs *huvudkonto*. Du kan utnyttja möjligheten att använda en [inbäddningstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken) så att användaren kan agera som ombud för andra användare.
 3. Bädda in dina rapporter från powerbi.com i ditt program.
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Mappa dina användare till en Power BI-användare

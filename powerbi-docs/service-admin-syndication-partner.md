@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 39f40c4b8aaf53e81f15c1ad29d1d8425f017468
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 67863b261bb8f3490d20ad21786313541df33388
+ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294296"
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250325"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
 Med Office 365 kan företag sälja Office 365 paketerat och integrerat med sina egna lösningar, vilket ger slutkunderna en enda kontaktpunkt för inköp, fakturering och support.
@@ -59,10 +59,6 @@ Om du vill köpa en prenumeration på Power BI Pro eller Power BI Premium måste
 
 * Partnern samtycker till att lägga till Power BI i deras portfölj så att du kan köpa från dem.
 * Partnern kan överföra dig till en modell där du kan köpa Power BI direkt från Microsoft eller en annan partner som erbjuder Power BI.
-
-Den här videon beskriver Office 365-syndikering och inköp av Power BI:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C357phT94A8" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="next-steps"></a>Nästa steg
 [Hantera Azure AD med hjälp av Windows PowerShell](https://technet.microsoft.com/library/jj151815.aspx)  

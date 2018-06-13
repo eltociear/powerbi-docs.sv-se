@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/30/2018
+ms.date: 06/05/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1ea92be426312a738e03d78454a4c83a82b233c5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 331dc45f3049fe77145b86ffafd363162c74a589
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722530"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813812"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Använda instrumentpanelsteman i Power BI-tjänsten
 Med **instrumentpanelsteman** kan du använda ett färgtema på hela instrumentpanelen, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **instrumentpanelstema** används färgerna från det tema du valt på alla visuella objekt på instrumentpanelen (med några få undantag, som beskrivs längre ned i den här artikeln).
 
 ![Exempelinstrumentpanel med tema](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
 
-De visuella objekten i en rapport påverkas inte om du ändrar färgen för rapportvisualiseringar på instrumentpanelen. Och om du fäster paneler från en rapport som redan har ett [rapporttema](/desktop-report-themes.md) kan du välja mellan att behålla det aktuella temat eller att använda instrumentpanelstemat.
+De visuella objekten i en rapport påverkas inte om du ändrar färgen för rapportvisualiseringar på instrumentpanelen. Och om du fäster paneler från en rapport som redan har ett [rapporttema](desktop-report-themes.md) kan du välja mellan att behålla det aktuella temat eller att använda instrumentpanelstemat.
 
 
 ## <a name="prerequisites"></a>Förutsättningar
