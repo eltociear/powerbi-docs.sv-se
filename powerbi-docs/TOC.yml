@@ -900,8 +900,18 @@
           href: developer/embed-sample-for-customers.md
     - name: Begrepp
       items:
-        - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
-          href: developer/overview-of-power-bi-rest-api.md
+        - name: 'Arbeta med Power BI REST-API:er'
+          items:
+            - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
+              href: developer/overview-of-power-bi-rest-api.md
+            - name: 'Begränsningar för Power BI REST API:t'
+              href: developer/api-rest-api-limitations.md
+            - name: Egenskaper för datamängd
+              href: developer/api-dataset-properties.md
+            - name: Versionshantering av datamodell
+              href: developer/api-data-model-versioning.md
+        - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
+          href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Power BI-behörigheter
           href: developer/power-bi-permissions.md
         - name: Säkerhet på radnivå (RLS)
@@ -966,8 +976,10 @@
               href: developer/walkthrough-push-data-get-datasets.md
             - name: Lägga till rader i en tabell
               href: developer/walkthrough-push-data-add-rows.md
-            - name: Slutföra kodlistning
+            - name: Fullständig kodlista
               href: developer/walkthrough-push-data-complete-code.md
+            - name: Princip för automatiskt bevarande av realtidsdata
+              href: developer/api-automatic-retention-policy-for-real-time-data.md
         - name: Certifiering av innehållspaket
           items:
             - name: Certifieringsprogram för innehållspaket
