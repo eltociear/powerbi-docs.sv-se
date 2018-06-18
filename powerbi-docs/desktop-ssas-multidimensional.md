@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 62f6c8ac23fad39dfb6942678cf92a37014de8bf
-ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
+ms.openlocfilehash: c16fe65d766c6a1c18d809a68b3b0f6af8047db0
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34799589"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813352"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Ansluta till SSAS flerdimensionella modeller i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SSAS flerdimensionella modeller**, vilket vanligtvis kallas **SSAS MD**.
@@ -75,11 +75,12 @@ Beräknade medlemmar i användarhierarkier visas inte i Power BI. Istället komm
 ### <a name="security"></a>Säkerhet
 Flerdimensionella modeller stöder säkerhet på dimensions- och cellnivå med hjälp av *roller*. När du ansluter till en kub med Power BI autentiseras och utvärderas du för lämpliga behörigheter. När en användare har tillämpat *dimensionsäkerhet* kan respektive dimensionsmedlemmar inte ses av användaren i Power BI. Men när en användares behörighet för *cellsäkerhet* har definierats, där vissa celler är begränsade, kan den användaren inte ansluta till kuben med Power BI.
 
-## <a name="limitations-of-ssas-multidimensional-models-in-power-bi-desktop"></a>Begränsningar hos SSAS flerdimensionella modeller i Power BI Desktop
+## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Det finns vissa begränsningar med att använda **SSAS MD**:
 
 * Servrar måste köra SQL Server 2012 SP1 CU4 eller senare versioner av Analysis Services för att Power BI Desktop SSAS MD-anslutningsappen ska fungera korrekt
 * *Åtgärder* och *namngivna uppsättningar* exponeras inte för Power BI, men du kan fortfarande ansluta till kuber som också innehåller *åtgärder* eller *namngivna uppsättningar* och skapa visuella objekt och rapporter.
+* Det kan hända att du stöter på ett problem där Power BI visar metadata för en SSAS-modell, men du inte kan hämta data från modellen. Det här problemet kan uppstå om 32-bitarsversionen av MSOLAP-providern är installerad på datorn i stället för 64-bitarsversionen. Du kan ofta åtgärda problemet genom att installera 64-bitarsversionen.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Funktioner som stöds av SSAS MD i Power BI Desktop
 Följande funktioner i SSAS MD stöds i Power BI Desktop:

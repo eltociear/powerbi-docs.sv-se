@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bd0565420382fc22af67b1363b41f6d8ed6e92ab
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6147f41ea99ad4a0416f6aa9c01288102f792771
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290762"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812938"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 **Power BI Desktop** har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med **Power BI Desktop**-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -66,6 +66,23 @@ Följande tips kan hjälpa dig att skapa mer tillgängliga **Power BI Desktop**-
 * Kontrollera att dina rapporter har tillräcklig kontrast mellan texten och alla bakgrundsfärger.
 * Använd textstorlek och teckensnitt som enkelt kan läsas. Liten textstorlek eller teckensnitt som kan vara svåra att läsa är olämpliga för hjälpmedel.
 * Inkludera en rubrik, axeletiketter och dataetiketter i all visuell information.
+
+## <a name="high-contrast-support-for-reports"></a>Stöd för hög kontrast med rapporter
+
+När du använder högkontrastlägen i Windows används dessa inställningar och paletten som du väljer även i rapporter i **Power BI Desktop**. 
+
+![Inställningar för hög kontrast i Windows](media/desktop-accessibility/accessibility_05.png)
+
+**Power BI Desktop** identifierar automatiskt vilket högkontrasttema som används i Windows och tillämpar dessa inställningar på dina rapporter. Dessa högkontrastfärger följer med rapporten när den publiceras till Power BI-tjänsten, eller någon annanstans.
+
+![Inställningar för hög kontrast i Windows](media/desktop-accessibility/accessibility_05b.png)
+
+Power BI-tjänsten försöker också identifiera högkontrastinställningarna som valts i Windows, men hur effektiv och korrekt identifieringen är beror på vilken webbläsare som används för Power BI-tjänsten. Om du vill ange temat manuellt i Power BI-tjänsten kan du välja **Visa > Högkontrastfärger** och sedan välja det tema som du vill använda för rapporten.
+
+![Konfigurera hög kontrast i Power BI-tjänsten](media/desktop-accessibility/accessibility_06.png)
+
+När du arbetar i **Power BI Desktop** kan du se att vissa områden, t.ex. **Visualiseringar** och **Fält**, inte matchar de Windows-scheman med högkontrastfärger som du valt.
+
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Det finns några kända problem och begränsningar hos hjälpmedelsfunktionerna som beskrivs i följande lista:

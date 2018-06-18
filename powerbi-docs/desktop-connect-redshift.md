@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3a27a3c39f1ddcee6a882184f511874313d77c9a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b1085c3715d9b4b75925cec1b94ec49b0f5792f7
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291199"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813145"
 ---
 # <a name="connect-to-amazon-redshift-in-power-bi-desktop"></a>Ansluta till Amazon Redshift i Power BI Desktop
 I **Power BI Desktop** kan du ansluta till en **Amazon Redshift**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop.
@@ -29,7 +29,7 @@ I fönstret **Amazon Redshift** som visas skriver eller klistrar du inte namnet 
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
-När du uppmanas, ange ditt användarnamn och lösenord.
+När du uppmanas, ange ditt användarnamn och lösenord. Använd servernamnet som exakt matchar SSL-certifikatet för att undvika fel. 
 
 ![](media/desktop-connect-redshift/connect_redshift_5.png)
 

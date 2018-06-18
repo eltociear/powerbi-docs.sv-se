@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2018
+ms.date: 06/05/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4eb9f8e0b8548fbecd4e5d2e2fd47c4c3acd2bd6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c91e257d79e9d16fa5a7a58b696d58aefaaaaf92
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722826"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812823"
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -47,7 +47,9 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Hämta och installera den lokala datagatewayen
-Om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar. Ladda ned den [lokala datagatewayen](http://go.microsoft.com/fwlink/?LinkID=820925).
+Om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar. Ladda ned den [lokala datagatewayen](http://go.microsoft.com/fwlink/?LinkID=820925). 
+
+Observera att du uppdaterar den lokala datagatewayen genom att installera om gatewayen, vilket beskrivs i det här avsnittet. När du uppdaterar gatewayen (genom att installera om den) bevaras dina befintliga gatewayinställningar.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -56,9 +58,8 @@ Om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar.
 
 ## <a name="install-the-gateway-in-personal-mode"></a>Installera gatewayen i personligt läge
 > [!NOTE]
-> Personal-varianten fungerar bara med Power BI.
-> 
-> 
+> Versionen Personlig för gatewayen fungerar bara med Power BI.
+
 
 När den personliga gatewayen har installerats behöver du starta **konfigurationsguiden för Power BI Gateway – Personal**.
 

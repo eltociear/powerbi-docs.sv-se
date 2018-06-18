@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 264071f314e4a05a3d0b283ab58d644dff4b44a1
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: f84e43a96243841b247530b5639f5f0c6ae1bb4f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813674"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
 När du importerar flera tabeller är det möjligt att du kommer att utföra analyser med data från alla tabellerna. Det måste finnas relationer mellan dessa tabeller för att korrekt beräkna resultat och för att rätt information ska visas i dina rapporter. Med Power BI Desktop blir det enkelt att skapa dessa relationer. Det är faktiskt så att du inte behöver göra något alls i de flesta fall, funktionen Identifiera automatiskt gör det åt dig. I vissa fall kan du dock behöva skapa relationerna själv, eller behöva göra vissa ändringar i en relation. Oavsett vilket är det viktigt att förstå relationer i Power BI Desktop, samt hur du skapar och redigerar dem.
@@ -35,6 +36,16 @@ På fliken **Start** klickar du på **Hantera relationer** \> **Identifiera auto
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
 Som standard konfigurerar Power BI Desktop kardinaliteten (riktningen), korsfilterriktningen och aktiva egenskaper för din nya relation automatiskt. Du kan dock ändra dem vid behov. Mer information finns i avsnittet Förstå ytterligare alternativ nedan.
+
+Observera att ett felmeddelande visas som anger att *en av kolumnerna måste ha unika värden* om ingen av tabellerna som valts för relationen har unika värden. Minst en tabell i en relation *måste* har en distinkt, unik lista med nyckelvärden, vilket är ett vanligt krav för relationsdatabaser. 
+
+Om felet visas kan du åtgärda det på ett par olika sätt:
+
+* Skapa en kolumn med unika värden med hjälp av ”Ta bort dubblettraderna från tabellen”. Nackdelen med den här metoden är att du förlorar information när dubblettrader tas bort, och en nyckel (rad) dupliceras ofta av en särskild anledning.
+* Lägg till en mellanliggande tabell som består av listan med distinkta nyckelvärden i modellen, som sedan kopplas till de båda ursprungliga kolumnerna i relationen.
+
+Mer information finns i [blogginlägget](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/) som beskriver detta i detalj.
+
 
 ## <a name="edit-a-relationship"></a>Redigera en relation
 1. På den **Start** klickar du på **Hantera relationer**.

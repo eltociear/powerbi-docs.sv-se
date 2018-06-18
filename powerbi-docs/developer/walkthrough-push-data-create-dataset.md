@@ -9,23 +9,23 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: c94f0a94cfc2e59942a17b542efb7b1bb641174c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c6cbdf9effa3264eadf19de97be864cc3f152e8b
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290325"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812432"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Steg 3: Skapa en datauppsättning i Power BI
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
-I **steg 2** av Skicka data till en datauppsättning [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) hämtade du en token för autentisering till **Azure AD**. I det här steget använder du en token för att anropa åtgärden [Skapa Dataset](https://msdn.microsoft.com/library/mt203562.aspx).
+I **steg 2** av Skicka data till en datauppsättning [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) hämtade du en token för autentisering till **Azure AD**. I det här steget använder du en token för att anropa åtgärden [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets).
 
 För att anropa en REST-resurs kan du använda en webbadress som söker efter resursen och skicka en JSON-sträng (JavaScript Object Notation) som beskriver datauppsättningen till resursen i Power BI-tjänsten. En REST-resurs identifierar en del av Power BI-tjänsten som du vill arbeta med. För att skicka data till datauppsättningen är målresursen en **Datauppsättning**. Den URL som identifierar en datamängd är https://api.PowerBI.com/v1.0/myorg/datasets. Om du sänder data i en grupp, är URL-adressen https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 Lägg till den token som du fick i [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) i en rubrik för begäran för att autentisera Power BI REST-åtgärden:
 
-När du anropar åtgärden [Skapa datauppsättning](https://msdn.microsoft.com/library/mt203562.aspx) skapas en ny datauppsättning. 
+När du anropar åtgärden [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) skapas en ny datauppsättning. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -228,10 +228,11 @@ Nedan visas den [fullständiga kodlistan](#code).
 ## <a name="next-steps"></a>Nästa steg
 [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md)  
 [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md)  
-[Skapa datauppsättning](https://msdn.microsoft.com/library/mt203562.aspx)  
+[PostDataset](https://docs.microsoft.com/rest/api/power-bi/datasets_postdataset)  
+[PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/datasets_postdatasetingroup)  
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

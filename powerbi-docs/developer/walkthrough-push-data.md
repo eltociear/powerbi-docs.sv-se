@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
 ms.author: maghan
-ms.openlocfilehash: 76d07c8384123a303c8801a45ecd05b9e6ed0321
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 96b29c9dc6c384b663ef375d4968dedb011bd05d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289474"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813122"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 Med Power BI-API:et kan du skicka data till en Power BI-datauppsättning. Om du till exempel vill utöka ett befintligt företagsarbetsflöde för att skicka viktiga data till din datauppsättning. I det här fallet vill du skicka en datauppsättning med försäljning och marknadsföring som har en produkttabell till en datauppsättning.
@@ -31,14 +31,14 @@ Innan du sätter igång med att skicka data till en datauppsättning, behöver d
 Nästa avsnitt är en allmän diskussion av Power BI-API-åtgärder som skickar data.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Power BI-API-åtgärder för att skicka data
-Med Power BI REST API:et kan du skicka datakällor till Power BI. När en app lägger till rader till en datauppsättning, uppdateras paneler på instrumentpanelen automatiskt med uppdaterade data. För att skicka data använder du åtgärden [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) tillsammans med åtgärden [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx). Om du vill hitta en datauppsättning, använder du åtgärden [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx). För vilken som av de här åtgärderna, kan du skicka ett grupp-ID för att arbeta med en grupp. Använd åtgärden [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) för att hämta en lista över grupp-ID:er.
+Med Power BI REST API:et kan du skicka datakällor till Power BI. När en app lägger till rader till en datauppsättning, uppdateras paneler på instrumentpanelen automatiskt med uppdaterade data. Du skickar data genom att köra [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) tillsammans med [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Om du vill hitta en datauppsättning, använder du åtgärden [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). För vilken som av de här åtgärderna, kan du skicka ett grupp-ID för att arbeta med en grupp. Använd åtgärden [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) för att hämta en lista över grupp-ID:er.
 
 Här är åtgärderna för att skicka data till en datauppsättning:
 
-* [Skapa datauppsättning](https://msdn.microsoft.com/library/mt203562.aspx)
-* [Hämta datauppsättningar](https://msdn.microsoft.com/library/mt203567.aspx)
-* [Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx)
-* [Hämta grupper](https://msdn.microsoft.com/library/mt243842.aspx)
+* [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
+* [Hämta datauppsättningar](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)
+* [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
+* [Hämta grupper](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
 Du skapar en datauppsättning i Power BI genom att skicka en JavaScript Object Notation (JSON)-sträng till Power BI-tjänsten. Läs mer om JSON i [Introduktion till JSON](http://json.org/).
 
@@ -113,10 +113,6 @@ Om du vill komma igång med att skicka data till en datauppsättning, se [Steg 1
 
 ## <a name="next-steps"></a>Nästa steg
 [Registrera dig för Power BI](create-an-azure-active-directory-tenant.md)  
-[Skapa datauppsättning](https://msdn.microsoft.com/library/mt203562.aspx)  
-[Hämta datauppsättningar](https://msdn.microsoft.com/library/mt203567.aspx)  
-[Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx)  
-[Hämta grupper](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introduktion till JSON](http://json.org/)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

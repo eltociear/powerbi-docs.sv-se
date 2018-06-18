@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/21/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 20bcc45fa95bcff6eb8a761dae58c67a875f55cd
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 32de597b594fe8b148a2b0471352e4784d596cec
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34456006"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813191"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
 
@@ -31,6 +31,8 @@ Som den stora fotbollsfantast du är vill du rapportera om vinnarna i fotbolls-E
 Du kan hämta data om EM-vinnarna från resultattabellen på Wikipedias sidan om Europamästerskapet i fotboll på http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
 ![Wikipedia, resultattabell](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+
+Observera att webbanslutningar upprättas med grundläggande autentisering. Webbplatser som kräver autentisering kanske inte fungerar korrekt med webbanslutningsappen.
 
 Importera data:
 

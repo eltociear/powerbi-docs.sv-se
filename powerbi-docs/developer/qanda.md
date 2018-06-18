@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
 ms.author: maghan
-ms.openlocfilehash: 86dd69cede6975021aff4b0ce3dada112db980ad
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d1fd42f059f8050662adc80018748d11c1e73e2b
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34287795"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813766"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Frågor och svar i Power BI Embedded
 Power BI Embedded ger dig ett sätt att ta med frågor och svar i ett program och tillåta att dina användare ställer frågor med naturligt språk och tar emot direkta svar i form av visuell information som diagram eller grafer.
@@ -93,7 +93,7 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Inbäddningstoken
-Skapa en inbäddningstoken från en datauppsättning för att starta en frågor och svar-del. Mer information finns i [skapa token för frågor och svar](https://msdn.microsoft.com/library/mt784614.aspx#qanda).
+Skapa en inbäddningstoken från en datauppsättning för att starta en frågor och svar-del. Mer information finns i avsnittet [Generera token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Nästa steg
 Om du vill göra ett försök med inbäddning av frågor och svar, kan du kolla [JavaScript-inbäddningsprov](https://microsoft.github.io/PowerBI-JavaScript/demo/).

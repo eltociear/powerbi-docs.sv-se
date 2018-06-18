@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: 979b76350b9867bbc684a70bd89a82f88993e625
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dd7276eb436dfd9d842930f6a2c550a2a6b521f3
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290279"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812961"
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Integrera en instrumentpanel i en app för din organisation
 Lär dig att integrera eller bädda in en instrumentpanel i en webbapp med hjälp av REST API-anrop, tillsammans med Power BI JavaScript-API vid inbäddning för din organisation.
@@ -28,7 +28,7 @@ För att komma igång med den här genomgången behöver du ett **Power BI**-kon
 > 
 > 
 
-Om du vill integrera en instrumentpanel i en webbapp använder du åtkomsttoken **Power BI** REST API eller Power BI C# SDK och en Azure Active Directory (AD)-auktorisering**åtkomsttoken** för att hämta en instrumentpanel. Sedan läser du in instrumentpanelen med samma åtkomsttoken. **Power BI**-API ger programmeringsåtkomst till vissa **Power BI**-resurser. Mer information finns i [Översikt över Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx) och [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
+Om du vill integrera en instrumentpanel i en webbapp använder du åtkomsttoken **Power BI** REST API eller Power BI C# SDK och en Azure Active Directory (AD)-auktorisering**åtkomsttoken** för att hämta en instrumentpanel. Sedan läser du in instrumentpanelen med samma åtkomsttoken. **Power BI**-API ger programmeringsåtkomst till vissa **Power BI**-resurser. Mer information finns i [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) och [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Ladda ned exemplet
 Artikeln visar den kod som användes i [integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) på GitHub. Om du vill följa den här genomgången kan du ladda ned exemplet.
@@ -44,12 +44,12 @@ Om du har hämtat [Integrera en exempelinstrumentpanel](https://github.com/Micro
 I ditt program måste du först hämta en **åtkomsttoken** från Azure AD innan du kan anropa Power BI REST API:t. Mer information finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-dashboard"></a>Steg 3 – hämta en instrumentpanel
-Hämta en **Power BI**-instrumentpanel genom att använda åtgärden [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx) som hämtar en lista med **Power BI**-instrumentpaneler. Du kan hämta ett instrumentpanel-id i listan över instrumentpaneler.
+Hämta en **Power BI**-instrumentpanel genom att använda åtgärden [Hämta instrumentpaneler](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) som hämtar en lista med **Power BI**-instrumentpaneler. Du kan hämta ett instrumentpanel-id i listan över instrumentpaneler.
 
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### <a name="get-dashboards-using-an-access-token"></a>Hämta instrumentpaneler med hjälp av en åtkomsttoken
-Med den **åtkomsttoken** som du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx). Åtgärden [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx) returnerar en lista över instrumentpaneler. Du kan hämta en enda instrumentpanel från listan över instrumentpaneler. Nedan finns en komplett C#-metod för att hämta en instrumentpanel. 
+Med den **åtkomsttoken** som du hämtade i [steg 2](#step-2-get-an-access-token-from-azure-ad) kan du anropa åtgärden [Hämta instrumentpaneler](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Åtgärden [Hämta instrumentpaneler](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) returnerar en lista över instrumentpaneler. Du kan hämta en enda instrumentpanel från listan över instrumentpaneler. Nedan finns en komplett C#-metod för att hämta en instrumentpanel. 
 
 Om du vill göra REST API-anrop måste du inkludera en *auktoriserings*rubrik i formatet *Ägare {åtkomsttoken}*.
 
@@ -258,7 +258,7 @@ Tile Clicked
 ```
 
 ## <a name="working-with-groups-app-workspaces"></a>Arbeta med grupper (apparbetsytor)
-Om du ska bädda in en instrumentpanel från en grupp (apparbetsyta), hämtar du en lista med alla tillgängliga instrumentpaneler i en grupp med hjälp av följande REST API-anrop. Du hittar mer information om det här REST API-anropet i [Hämta instrumentpaneler](https://msdn.microsoft.com/library/mt465739.aspx). Du måste ha behörighet i gruppen för att din begäran ska kunna returnera resultat.
+Om du ska bädda in en instrumentpanel från en grupp (apparbetsyta), hämtar du en lista med alla tillgängliga instrumentpaneler i en grupp med hjälp av följande REST API-anrop. Du hittar mer information om det här REST API-anropet i [Hämta instrumentpaneler](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Du måste ha behörighet i gruppen för att din begäran ska kunna returnera resultat.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards

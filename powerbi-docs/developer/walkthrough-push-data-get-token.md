@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 640c6dac9a896cff55bddad46ceef8bce7ccae14
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 238d068e5083c8f46ac3299faddd4e0872f0654d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289382"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812639"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Steg 2: hämta en åtkomsttoken för autentisering
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -104,7 +104,7 @@ Lägg till den här koden i Program {...}.
        #endregion
 ```
 
-När du får en autentiseringstoken, kan du anropa valfri Power BI-åtgärd. Nästa steg visar hur du anropar åtgärden [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) för att skapa en datauppsättning för att skicka data till en instrumentpanel.
+När du får en autentiseringstoken, kan du anropa valfri Power BI-åtgärd. Nästa steg beskriver hur du anropar åtgärden [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) för att skapa en datauppsättning och skicka data till en instrumentpanel.
 
 Nästa steg visar hur du [skapar en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md).
 
@@ -181,6 +181,6 @@ Nedan visas den [fullständiga kodlistan](#code).
 [Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
 [Skicka data till en Power BI-datauppsättning](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

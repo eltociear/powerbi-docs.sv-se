@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 376fb2a6167e020e5d65c7d634ef05cd366b1aa2
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: a604f50889d4443ba7c8e7da580275e579f69d15
+ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755149"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35301836"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -218,10 +218,13 @@ Användare i organisationen kan använda Excel för att visa och interagera med 
 > [!NOTE]
 > När du inaktiverar **Exportera data** kan användare inte heller använda funktionen **Analysera i Excel**.
 
-### <a name="user-arcgis-maps-for-power-bi-preview"></a>ArcGIS-användarmappning för Power BI (förhandsgranskning)
+### <a name="use-arcgis-maps-for-power-bi"></a>Använda ArcGIS Maps for Power BI
 
-Användare i organisationen kan använda ArcGIS-mappning för Power BI-visualiseringen (förhandsgranskning) som tillhandahålls av Esri. [Läs mer](power-bi-visualization-arcgis.md)
+Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringen som tillhandahålls av Esri. [Läs mer](power-bi-visualization-arcgis.md)
 
+### <a name="use-global-search-for-power-bi-preview"></a>Använda global sökning för Power BI (förhandsversion)
+
+Användare i organisationen kan använda externa sökfunktioner som förlitar sig på Azure Search. Användare kan till exempel använda Cortana för att hämta viktig information direkt från Power BI-instrumentpaneler och Power BI-rapporter. [Läs mer](service-cortana-intro.md)
 
 ## <a name="custom-visuals-settings"></a>Inställningar för anpassade visuella objekt
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Aktivera anpassad visuell information för hela organisationen

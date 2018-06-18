@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a677164f068ba4ad4796b2db42b7b052233d3da
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c1c32e216dfdf4417fda8ee8888f85e1d27a8cda
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34285702"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812455"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Vad är nytt i den senaste uppdateringen av Power BI Desktop?
 
-## <a name="may-2018-update-2585103281"></a>Uppdatering maj 2018 (2.58.5103.281)
+## <a name="june-2018-update-2595135101"></a>Uppdatering för juni 2018 (2.59.5135.101)
 
-Så här i vårtider får den här månadens uppdateringar en blommande samling funktioner och förbättringar som vi hoppas ska sprida solsken över rapporter och göra att de blomstrar av vackra insikter.
+Den här månadens uppdateringar innehåller flera funktioner och förbättringar som hjälper dig att arbeta med och få nya insikter från dina rapporter.
 
 Nu kan du [hämta den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10 kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är likadana oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
 
@@ -39,49 +39,42 @@ Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 
 ### <a name="reporting"></a>Rapportering
 
-* Villkorsstyrd formatering av ett annat fält [[video]](https://youtu.be/-_GMCE1TLvQ?t=55s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#conditionalFormatting) 
-* Synkronisera avancerade utsnitt [[video]](https://youtu.be/-_GMCE1TLvQ?t=3m40s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#slicerSync) 
-* Logga axelförbättringar [[video]](https://youtu.be/-_GMCE1TLvQ?t=5m47s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#logAxis) 
-* Dataetikettsalternativ för trattdiagram [[video]](https://youtu.be/-_GMCE1TLvQ?t=6m25s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#funnelChart) 
-* Ange bredd på penseldrag till noll [[video]](https://youtu.be/-_GMCE1TLvQ?t=6m49s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#lineStroke) 
-
-### <a name="analytics"></a>Analytics
-
-* Mät drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[artikel]](desktop-drillthrough.md#pass-all-filters-in-drillthrough)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
-
-### <a name="power-bi-premium"></a>Power BI Premium
-
-* Inkrementell uppdatering (förhandsversion) [[video]](https://youtu.be/-_GMCE1TLvQ?t=7m42s)  [[artikel]](service-premium-incremental-refresh.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#incrementalRefresh) 
+* Stöd för hög kontrast i rapporter [[video]](https://youtu.be/4VpGtWSrssE?t=13s)  [[artikel]](desktop-accessibility.md#high-contrast-support-for-reports)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
+* Radiekontroll i ringdiagram [[video]](https://youtu.be/4VpGtWSrssE?t=6m1s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#donutRadius) 
+* Positionskontroll för informationsetiketter i cirkel- och ringdiagram  [[video]](https://youtu.be/4VpGtWSrssE?t=7m19s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#detailLabels) 
+* Formatera dataetiketter separat för varje mått i ett kombinationsdiagram [[video]](https://youtu.be/4VpGtWSrssE?t=9m29s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
+* Längre telefonrapporter [[video]](https://youtu.be/4VpGtWSrssE?t=11m26s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#phoneReports) 
 
 ### <a name="custom-visuals"></a>Anpassade visuella objekt
 
-* Många nya anpassade visuella objekt [[video]](https://youtu.be/-_GMCE1TLvQ?t=9m44s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#customVisuals) 
+* Två nya anpassade visuella objekt [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
+
+### <a name="modeling"></a>Modellering
+* Filtrera och sortera i datavyn [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s)  [[artikel]](desktop-data-view.md#filtering-in-data-view)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
+* Förbättrad språkfiltrering [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
 
 ### <a name="data-connectivity"></a>Dataanslutning
 
-* Nytt **Från webb**-anslutningsprogram – via extrahering av exempeldata (förhandsversion) [[video]](https://youtu.be/-_GMCE1TLvQ?t=10m17s) [[artikel]](desktop-connect-to-web-by-example.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#FromWebConnector) 
-* Common Data Service för Apps-anslutningsapp (beta)  [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#cdsApps) 
-* Azure KustoDB-anslutningsapp (beta) [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#kustoDB) 
-* Google BigQuery- och Azure HDInsight Spark-anslutningsappar nu allmänt tillgängliga [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#googleBigQueryAzureHDInsightSpark) 
-* Uppdatering av Adobe Analytics-anslutningsapp – stöd för flera domäninloggningar (förhandsversion) [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#AdobeAnalytics) 
-* Stöd för uppdatering av Visual Studio Team Services-anslutningsapp – support för analysvyer [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#vsts) 
-* Uppdatering av OLE DB-anslutningsapp – stöd för alternativa autentiseringsuppgifter för Windows [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#oledb) 
-* Uppdatering för SAP BW DirectQuery-anslutningsapp – förbättrat tekniskt stöd [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m9s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#sapBW) 
+* Förbättringar i SAP BusinessWarehouse-anslutningsappen (ny drivrutin och bättre prestanda, samt förbättrat stöd för hierarkivariabler) [[video]](https://youtu.be/4VpGtWSrssE?t=21m6s) [[artikel]](desktop-sap-bw-connector.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#sapBW) 
+* Nu har Apache Spark-anslutningsappen stöd för Windows-autentisering [[video]](https://youtu.be/4VpGtWSrssE?t=24m31s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#spark) 
+* Förbättringar i OData V4-anslutningsappen [[video]](https://youtu.be/4VpGtWSrssE?t=25m12s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#oData) 
+* Förbättringar i ODBC-anslutningsappen (vikningsstöd för Översta rader, möjlighet att filtrera navigeringen efter DSN-katalog) [[video]](https://youtu.be/4VpGtWSrssE?t=26m51s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#odbc) 
 
-### <a name="data-preparation"></a>Förberedelse av data
+### <a name="other"></a>Övrigt
 
-* Förbättringar till Lägg till kolumn från Exempel [[video]](https://youtu.be/-_GMCE1TLvQ?t=12m57s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#addColumnFromExamples) 
+* Väljare för nationellt moln [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
 
 
 > [!NOTE]
 > Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
 
-Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
 
 
 I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-_GMCE1TLvQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4VpGtWSrssE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md).

@@ -9,19 +9,19 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 382d600a6e50d926fc61163ea1b0e4f1273fdcc9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b6fdd950b77dedf9f5180f7cbc90d40c786051c7
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34287542"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812547"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Steg 5: Lägga till rader i en Power BI-tabell
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
-I **steg 4** av Skicka data till en datauppsättning, [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md), använde du åtgärden [Hämta datauppsättningar](https://msdn.microsoft.com/library/mt203567.aspx) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. I det här steget använder du datauppsättnings-ID:t med åtgärden [Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx) för att lägga till rader i en **Power BI**-datauppsättning. 
+I **steg 4** av Skicka data till en datauppsättning, [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md), använde du åtgärden [Hämta datauppsättningar](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. I det här steget använder du datauppsättnings-ID:t med åtgärden [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) för att lägga till rader i en **Power BI**-datauppsättning. 
 
-När du anropar åtgärden [Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx) läggs rader till i en datauppsättning.
+När du anropar åtgärden [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) läggs rader till i en datauppsättning.
 
 ![](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
@@ -308,9 +308,8 @@ Nedan visas den [fullständiga kodlistan](#code).
     }
 
 ## <a name="next-steps"></a>Nästa steg
-[Lägg till rader](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

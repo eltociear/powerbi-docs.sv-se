@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/20/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 47dd0ab87b78e344de176ebe22a1e5dc9753b9b0
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 8a688f46a46dbb1015629c7785d96b62d4f8df26
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813258"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Vad kan utvecklare göra med Power BI-API?
 Power BI visar instrumentpaneler som är interaktiva och som kan skapas och uppdateras från många olika datakällor i realtid. Du kan skapa appar som integreras med en Power BI-instrumentpanel i realtid med alla programmeringsspråk som har stöd för REST-anrop. Du kan också integrera Power BI-paneler och -rapporter i appar.
@@ -26,7 +27,6 @@ Här följer några av de saker som du kan göra med Power BI-API:er.
 | --- | --- |
 | Bädda in instrumentpaneler, rapporter och paneler för Power BI-användare och icke-Power BI-användare (appen äger data) |[Så här bäddar du in dina Power BI-instrumentpaneler, -rapporter och -paneler](embedding-content.md) |
 | Utöka ett befintligt business-arbetsflöde för att skicka viktiga data till en Power BI-instrumentpanel. |[Skicka data till en instrumentpanel](walkthrough-push-data.md) |
-| Importera en Power BI Desktop-fil |[Importera en PBIX-fil](https://msdn.microsoft.com/library/mt243837.aspx) |
 | Autentisera till Power BI. |[Autentisera till Power BI](get-azuread-access-token.md) |
 | Skapa ett anpassat visuellt objekt. |[Använd utvecklarverktyg för att skapa ett anpassat visuellt objekt](../service-custom-visuals-getting-started-with-developer-tools.md) |
 
@@ -51,12 +51,17 @@ Power BI Developer-exempel innehåller objekt för att bädda in instrumentpanel
 ## <a name="developer-tools"></a>Utvecklarverktyg
 Följande är ett verktyg som du kan använda för att underlätta när du utvecklar Power BI-objekt.
 
-* [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo)
+Med [integrationsverktyget](https://aka.ms/embedsetup) kommer du snabbt igång och kan ladda ned ett exempelprogram som beskriver hur du bäddar in Power BI-innehåll.
+
+Välj den lösning som passar dig:
+* [Inbäddning för dina kunder](embedding.md#embedding-for-your-customers) ger dig möjlighet att bädda in instrumentpaneler och rapporter för användare som inte har något Power BI-konto. Kör lösningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) (Bädda in för dina kunder).
+* [Inbäddning för din organisation](embedding.md#embedding-for-your-organization) låter dig utöka Power BI-tjänsten. Kör lösningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) (Bädda in för din organisation).
+
+Du kan använda ett fullständigt exempel i JavaScript API i [Playground-verktyget](https://microsoft.github.io/PowerBI-JavaScript/demo). Detta är ett snabbt sätt att leka med olika typer av Power BI Embedded-exempel. Du kan också få mer information om JavaScript API genom att besöka sidan [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki).
 
 ## <a name="next-steps"></a>Nästa steg
 [Skicka data till en datauppsättning](walkthrough-push-data.md)  
 [Komma igång med utvecklarverktyg för anpassade visuella objekt](../service-custom-visuals-getting-started-with-developer-tools.md) 
-[Power BI REST API-referens](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-
