@@ -15,6 +15,7 @@ ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34455983"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Sekretessnivåer i Power BI Desktop
 I **Power BI Desktop**, anger sekretessnivåer en isoleringsnivå som definierar hur en datakälla isoleras från andra datakällor. Även om en begränsande isoleringsnivå blockerar information från att utbytas mellan datakällor, kan det minska funktionaliteten och påverka prestandan.

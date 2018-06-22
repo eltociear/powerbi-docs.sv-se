@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34299457"
 ---
 # <a name="google-analytics-connector-for-power-bi-desktop"></a>Google Analytics-anslutningsprogram för Power BI Desktop
 > [!NOTE]
