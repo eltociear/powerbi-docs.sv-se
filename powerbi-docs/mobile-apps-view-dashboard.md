@@ -71,7 +71,7 @@ Här är en instrumentpanel i Power BI-tjänsten:
    ![Dynamiska länkar](media/mobile-apps-view-dashboard/power-bi-iphone-breadcrumb.png)
 
 ### <a name="view-dashboards-in-landscape-mode-in-your-iphone"></a>Visa instrumentpaneler i liggande läge i din iPhone
-Eller bara lägg din telefon på sidan för att visa instrumentpanelen i liggande läge. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen & #151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
+Eller bara lägg din telefon på sidan för att visa instrumentpanelen i liggande läge. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen &#151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
 
 ![Liggande instrumentpanel](media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 
@@ -179,7 +179,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
     ![Dynamiska länkar](media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
 
 ### <a name="view-dashboards-in-landscape-mode-on-your-windows-10-phone"></a>Visa instrumentpaneler i liggande läge på din Windows 10-telefon
-Du kan också visa instrumentpaneler i liggande läge genom att vrida din telefon. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen & #151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
+Du kan också visa instrumentpaneler i liggande läge genom att vrida din telefon. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen &#151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
 
 ![Liggande instrumentpanel](media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
 

@@ -72,7 +72,7 @@ Låt oss utforska nyanställda först.
 
 Observera följande:
 
-* Kombinationsdiagrammet **Ändring per månad, anställa och nyanställda SPLY och aktiva på årsbasis %** visar vi har anlitat fler personer varje månad i år jämfört med föregående år & #151; betydligt fler personer under vissa månader.
+* Kombinationsdiagrammet **Ändring per månad, anställa och nyanställda SPLY och aktiva på årsbasis %** visar vi har anlitat fler personer varje månad i år jämfört med föregående år &#151; betydligt fler personer under vissa månader.
 * I kombinationsdiagrammet **Antal nyanställa och aktivt antal medarbetare per region och etnicitet** kan man notera att vi anställde färre personer i regionen **Öst**.
 * Vattenfallsdiagrammet **Varians av nyanställda på årsbasis per åldersgrupp** att vi i huvudsak anställer yngre personer. Detta kan bero på att tjänsterna i huvudsak är på deltid.
 * Cirkeldiagrammet **Antal nyanställda enligt kön** visar en ganska jämn fördelning.

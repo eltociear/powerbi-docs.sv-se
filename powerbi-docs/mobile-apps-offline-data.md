@@ -53,7 +53,7 @@ Power BI ger tydliga indikatorer när du går till och från offline-läge, samt
 När du är offline med Power BI på din mobila enhet, kan du stöta på dessa begränsningar:
 
 * Power BI kan cachelagra upp till 250 MB data offline.
-* Vissa paneltyper kräver en aktiv serveranslutning så de finns inte tillgängliga offline & #151; till exempel Bing-kartpaneler och vissa anpassade paneler.
+* Vissa paneltyper kräver en aktiv serveranslutning så de finns inte tillgängliga offline &#151; till exempel Bing-kartpaneler och vissa anpassade paneler.
 * Hela Excel-arbetsböcker i Power BI är inte tillgängliga offline.
 * Du kan se Reporting Services-mobila rapporter och KPI:er offline, om du har visat dem när du var ansluten. De uppdateras inte i bakgrunden. De uppdateras varje gång du öppnar dem. 
 

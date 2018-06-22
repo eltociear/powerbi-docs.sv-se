@@ -23,7 +23,7 @@ ms.locfileid: "34852358"
 > 
 > 
 
-Distribuerar du regelbundet rapporter via e-post till ditt team? Prova i stället: Packa upp dina instrumentpaneler, rapporter, Excel-arbetsböcker och datauppsättningar och publicera dem i din grupp som ett *organisationsinnehållpaket*. Det är lätt för ditt team att hitta innehållspaketen du skapar & #151; de finns på AppSource. Eftersom de är en del av Power BI använder de alla funktioner i Power BI, inklusive interaktiv datagranskning, nya visuella objekt, frågor och svar, integrering med andra datakällor och datauppdatering.
+Distribuerar du regelbundet rapporter via e-post till ditt team? Prova i stället: Packa upp dina instrumentpaneler, rapporter, Excel-arbetsböcker och datauppsättningar och publicera dem i din grupp som ett *organisationsinnehållpaket*. Det är lätt för ditt team att hitta innehållspaketen du skapar &#151; de finns på AppSource. Eftersom de är en del av Power BI använder de alla funktioner i Power BI, inklusive interaktiv datagranskning, nya visuella objekt, frågor och svar, integrering med andra datakällor och datauppdatering.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
