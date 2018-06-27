@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 06/07/2018
 ms.author: maghan
 ms.openlocfilehash: ba8a0c6868e84cf9d675fff8f69a34b4befc9b61
-ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34852220"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
@@ -129,7 +129,7 @@ Vi måste konfigurera begränsad delegering på WAP-serverkontot inom Active Dir
 Gör följande för att konfigurera begränsad delegering.
 
 1. På en dator som har Active Directory-verktygen installerade startar du **Active Directory-användare och -datorer**.
-2. Hitta datorkontot för WAP-servern. Som standard är detta i datorbehållaren.
+2. Hitta datorkontot för WAP-servern. Som standard är detta i datorcontainern.
 3. Högerklicka på servern för WAP och gå till **Egenskaper**.
 4. Välj fliken **delegering**.
 5. Välj **lita på den här datorn enbart för delegering till angivna tjänster** och därefter **Använd valfritt autentiseringsprotokoll**.
