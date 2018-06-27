@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: maggies
 ms.openlocfilehash: e996b1399ff4dde96d122e747cf1f07db3a44876
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34721833"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Skapa en sidnumrerad rapport för Power BI-rapportservern
@@ -94,7 +94,7 @@ När rapporten är klar kan du spara den i Power BI-rapportservern.
 Det finns många bra resurser för att designa rapporter i Report Builder och i Report Designer i SQL Server Data Tools. Självstudiekurserna för Report Builder är ett bra ställe att börja.
 
 * [Report Builder, självstudier](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-* [Vad är Power BI-rapportserver?](get-started.md)  
+* [Vad är Power BI-rapportservern?](get-started.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
