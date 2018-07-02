@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 75ae82e43987cb42b858fe4350330fda3692cf97
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 338b72ef39c5b9c9fe454c1063f26602e8ce2299
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721511"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964801"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 Du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram, eller så kan du använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
@@ -183,7 +183,7 @@ De andra formateringsalternativen är inaktiverade som standard. När de ändras
 - **Kantlinje:** En kantlinje på 1 bildpunkt läggs till runt utsnittet och dess färg anges. (Den här utsnittskantlinjen är separat från och påverkas inte av de allmänna konturinställningarna.) 
 
 ## <a name="next-steps"></a>Nästa steg
-[Testa – det är kostnadsfritt!](https://powerbi.com/)
+[Registrera dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/get-started/)
 
 Har du förslag på hur vi kan förbättra Power BI? [Skicka in en idé](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 

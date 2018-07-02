@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 91836970bda7e72c99977f360e2c0531a20bef20
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: eaef6c8273fc8f4b0d4d43dc1df82fdf97c2edf8
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34584126"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964778"
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Punktdiagram och bubbeldiagram i Power BI
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Dessa datapunkter kan vara jämnt eller ojämnt fördelade på den horisontala axeln, beroende på datan.
@@ -116,9 +116,9 @@ Eller om du inte har detta i dina data, skapa ett fält som tillsammans sammanfo
 Skapa ett nytt fält genom att [använda Power BI Desktop frågeredigeraren för att lägga till en indexkolumn](desktop-add-custom-column.md) i din datauppsättning.  Lägg sedan till den här kolumnen till området **Information** i din visualisering.
 
 ## <a name="next-steps"></a>Nästa steg
- [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Testa – det är kostnadsfritt!](https://powerbi.com/)  
+[Registrera dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/get-started/)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
