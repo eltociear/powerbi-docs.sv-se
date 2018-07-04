@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34584080"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599604"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fästa en panel på en Power BI-instrumentpanel från Excel
 Innan du kan fästa en panel från Excel-arbetsboken, ansluter du arbetsboken till Power BI-tjänsten (app.powerbi.com). Att ansluta en arbetsbok innebär i stort sett att använda en länkad skrivskyddad version av arbetsboken i Power BI-tjänsten för att du ska kunna fästa intervall på instrumentpaneler. Du kan även fästa ett helt kalkylblad på en instrumentpanel.  
@@ -60,7 +60,7 @@ Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) ä
    * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan.
    * Ny instrumentpanel: skriv instrumentpanelens namn.
    
-    ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+     ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Välj **fäst**. Genom ett meddelande (nära det övre högra hörnet) får du reda på att området har lagts till som en panel på instrumentpanelen. 
    
     ![Dialogrutan Fäst på instrumentpanelen](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
