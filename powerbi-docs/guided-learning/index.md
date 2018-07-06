@@ -2,12 +2,12 @@
 title: Interaktiv utbildning för Microsoft Power BI
 description: Börja din utbildning med denna sekvenserade samling kurser som hjälper dig att förstå de omfattande och kraftfulla funktionerna i Microsoft BI.
 layout: LandingPage
-ms.openlocfilehash: f80886799a2cfc960e4d441d3572d94f3c09b22e
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 2cd748b60da6781ff9ea710b5802f3d68c3bc6b8
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34310163"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600686"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -49,7 +49,7 @@ Komma igång </h3>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="gettingstarted.yml?tutorial-step=5">Sammanfattning och nästa steg</a>
-                                <span style="margin-left: 32px; align-self: center;">5 m</span>
+                                <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                           </ul>
                       </div>
@@ -272,8 +272,8 @@ Utforska data </h3>
                                 <span style="margin-left: 32px; align-self: center;">9 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Skapa anpassade förslag på frågor och svar</a>
-                                <span style="margin-left: 32px; align-self: center;">4 m</span>
+                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Skapa anpassade förslag på&amp;frågor och svar</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="exploringdata.yml?tutorial-step=6">Dela instrumentpaneler med din organisation</a>

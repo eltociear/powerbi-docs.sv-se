@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 817e01f83904a8481fa1d0915f671c6761247795
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 957408729812ab348cc171360416ee01b432d2e0
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34287680"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136604"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Använda Analytics-fönstret i Power BI Desktop
 Med fönstret **Analytics** i **Power BI Desktop** kan du lägga till dynamiska *referenslinjer* i visuella objekt och ange fokus för viktiga trender eller analyser. Fönstret **Analystics** finns i området **Visualiseringar** i Power BI Desktop.
@@ -114,7 +114,7 @@ Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följ
 
 * [Nyheter i Power BI Desktop](desktop-latest-update.md)
 * [Ladda ned Power BI Desktop](desktop-get-the-desktop.md)
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
 * [Datatyper i Power BI Desktop](desktop-data-types.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
