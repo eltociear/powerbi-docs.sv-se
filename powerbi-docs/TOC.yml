@@ -12,6 +12,8 @@
       items:
         - name: Anslut till ett GitHub-exempel
           href: service-tutorial-connect-to-github.md
+        - name: Kom igång med Power BI
+          href: service-get-started.md
     - name: Begrepp
       items:
         - name: Nyheter i Power BI-tjänsten
@@ -382,6 +384,8 @@
                   href: service-excel-workbook-files.md
                 - name: Hämta data från Power BI Desktop-filer
                   href: service-desktop-files.md
+                - name: Parameterinställningar för datauppsättningar
+                  href: service-parameters.md
                 - name: Hämta data från filer med kommaavgränsade värden (.csv)
                   href: service-comma-separated-value-files.md
                 - name: Realtidsströmning i Power BI (förhandsgranskning)
@@ -860,16 +864,12 @@
           items:
             - name: Kom igång med iOS-appen
               href: mobile-iphone-app-get-started.md
-            - name: Kom igång med iPad-appen
-              href: mobile-ipad-app-get-started.md
             - name: Frågor och svar virtuell analytiker i iOS-mobilappar
               href: mobile-apps-ios-qna.md
             - name: Power BI-appen för Apple Watch
               href: mobile-apple-watch.md
             - name: Skanna en streckkod från appen på din iPhone
               href: mobile-apps-scan-barcode-iphone.md
-            - name: Power BI för iOS-appar
-              href: mobile-ios-ipad-iphone-apps.md
         - name: iOS och Android
           items:
             - name: Kommentera och dela i mobilappar
@@ -940,8 +940,6 @@
               href: developer/integrate-tile.md
             - name: Integrera en Power BI-rapport i en app (användaren äger data)
               href: developer/integrate-report.md
-            - name: Integrera innehåll i ditt program (appen äger data)
-              href: developer/embed-sample-for-customers.md
             - name: Integrera innehåll i ditt program för suveräna moln (appen äger data)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Bädda in anpassade layouter i en app
@@ -1234,6 +1232,13 @@
           href: service-admin-syndication-partner.md
         - name: Konfigurera mobilappar med Intune
           href: service-admin-mobile-intune.md
+    - name: Referens
+      items:
+        - name: 'PowerShell, REST API: er och .NET SDK'
+          href: service-admin-reference.md
+        - name: Power BI-cmdletar för PowerShell
+          href: 'https://docs.microsoft.com/en-us/powershell/power-bi/'
+          maintainContext: true
     - name: Resurser
       items:
         - name: Power BI-styrnings- och distributionsmetoder
