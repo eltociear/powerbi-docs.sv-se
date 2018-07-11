@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: e8e9b21e62f0a91234fccf78977a696e321ed8dc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251631"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38924545"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Anslut till Adobe Analytics med Power BI
 Du ansluter till Adobe Analytics via Power BI genom att ansluta till ditt Adobe Analytics Marketing Cloud-konto. Du får en app med en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som ger insikter om din webbplatstrafik och användardimensioner. Data uppdateras automatiskt en gång per dag. Du kan interagera med instrumentpanelen och rapporterna, men du kan inte spara ändringarna.

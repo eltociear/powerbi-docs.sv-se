@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 1dadb70f2d75596bb7180a5e7360cae19e1515b8
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251608"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38937272"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Ansluta till Microsoft Dynamics CRM med Power BI
 Med Microsoft Dynamics CRM Online för Power BI kan du enkelt komma åt och analysera dina data. Power BI använder OData-feeden för att skapa en beskrivande modell, med alla entiteter och åtgärder som behövs som Konton, Aktiviteter, Affärsmöjligheter, Produkt, Leads, Användare och annat. När du har installerat appen kan du visa instrumentpanelen och rapporterna i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och i Power BI-mobilapparna. 

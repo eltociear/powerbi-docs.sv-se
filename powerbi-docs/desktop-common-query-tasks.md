@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 44756e45a6f9944f9d52afa98709b1a3f7b5b6e1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: fde23a47bb0f4034e213a652d60241ff625921d3
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137501"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877341"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Vanliga frågeuppgifter i Power BI Desktop
 När du arbetar i fönstret **Frågeredigeraren** i Power BI Desktop finns det några återkommande uppgifter. I det här dokumentet får du exempel på dessa återkommande uppgifter och länkar med ytterligare information. 
@@ -38,7 +38,7 @@ Den första anslutningen är en Excel-arbetsbok. Den andra är en webbresurs (so
 De steg du måste följa för att ansluta till båda dessa datakällor inleder själva frågeuppgiftsarbetet.
 
 ## <a name="connect-to-data"></a>Ansluta till data
-Anslut till data i Power BI Desktop genom att klicka på knappen **Hämta data** på fliken **Start** i menyfliksområdet. Power BI Desktop visar en meny med de vanligaste datakällorna. Om du vill ha en fullständig lista över datakällor till vilka Power BI Desktop kan ansluta, så klicka på knappen **Mer...**  längst ned på menyn. Mer information finns i [Datakällor i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
+Anslut till data i Power BI Desktop genom att klicka på knappen **Hämta data** på fliken **Start** i menyfliksområdet. Power BI Desktop visar en meny med de vanligaste datakällorna. Om du vill ha en fullständig lista över datakällor till vilka Power BI Desktop kan ansluta, så klicka på knappen **Mer...**  längst ned på menyn. Mer information finns i [Datakällor i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -60,10 +60,10 @@ Välj **OK**, och liksom tidigare granskar Power BI Desktop arbetsboken innehål
 
 Andra dataanslutningar är av liknande slag. Om autentisering krävs för att göra en dataanslutning så uppmanas du av Power BI Desktop att ange autentiseringsuppgifterna.
 
-En stegvis demonstration av hur man ansluter till data i Power BI Desktop finns i [Anslut till Data i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data).
+En stegvis demonstration av hur man ansluter till data i Power BI Desktop finns i [Anslut till Data i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Forma och kombinera data
-Du kan enkelt forma och kombinera data med Frågeredigeraren. Det här avsnittet innehåller några exempel på hur du kan forma data. En mer fullständig demonstration av hur du kan forma och kombinera data finns i **[Forma och kombinera Data med Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
+Du kan enkelt forma och kombinera data med Frågeredigeraren. Det här avsnittet innehåller några exempel på hur du kan forma data. En mer fullständig demonstration av hur du kan forma och kombinera data finns i **[Forma och kombinera Data med Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
 
 I det förra avsnittet anslöt vi till två datauppsättningar – en Excel-arbetsbok och en webbresurs. Efter inläsningen i Frågeredigeraren visas följande, med frågan från den valda webbsidan (tagen från de tillgängliga frågor som visas i rutan **Frågor** längst till vänster i Frågeredigerarens fönster).
 
