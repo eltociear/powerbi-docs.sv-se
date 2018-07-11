@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 641a4f457782711902ee7e2414cb9afffb391afc
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 32b21e23a6cc4a5e6d9ae4915ddc56f9f9957d14
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286346"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599659"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Skapa visuella Power BI-objekt med R
 Med **Power BI Desktop**, kan du använda **R** för att visualisera dina data.
@@ -81,9 +81,9 @@ När du angett din R-installation, är du redo att börja skapa R-visualiseringa
    * När du väljer **Kör** från namnlisten för **R-skriptredigeraren**
    * När en dataändring inträffar, på grund av datauppdatering, filtrering eller markering
 
-    Följande bild visar ett exempel på korrelationsritningskoden och ritar korrelationer mellan attribut för olika typer av bilar.
+     Följande bild visar ett exempel på korrelationsritningskoden och ritar korrelationer mellan attribut för olika typer av bilar.
 
-    ![](media/desktop-r-visuals/r-visuals-6.png)
+     ![](media/desktop-r-visuals/r-visuals-6.png)
 
 5. För att få en större vy över visualiseringar, kan du minimera **R-skriptredigeraren**. Precis som i annan visuell information i **Power BI Desktop**, kan du korsfiltrera korrelationsritningen genom att välja endast sportbilar i toroidvisualiseringen (den runda visualiseringen till höger i ovanstående exempelbild).
 

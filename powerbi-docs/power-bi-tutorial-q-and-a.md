@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 0e98c68e62f36114257052171e0928db25853f24
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ebe53241bed0f31bfd64d860cff7c8fc2e54500c
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239498"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599240"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Självstudie: använd frågor och svar för att skapa visualiseringar och rapporter
 [Översikt över frågor och svar](power-bi-q-and-a.md) introducerade dig till Power BI frågor och svar och visade på skillnaden mellan *konsumenter* (får instrumentpaneler och rapporter delade med sig) och *skapare* ( äger de underliggande rapporterna och datauppsättningarna). Den första delen av den här självstudien är främst avsedd för personer som använder instrumentpaneler med Power BI-tjänsten. Den andra delen är skapad för folk som skapar rapporter med hjälp av antingen Power BI-tjänsten eller Power BI Desktop. [Frågor och svar och Power BI Mobile](mobile-apps-ios-qna.md) och [Frågor och svar med Power BI Embedded](developer/qanda.md) täcks i separata artiklar.
@@ -90,9 +90,9 @@ Du måste ha behörighet att redigera rapporten och den underliggande datauppsä
 
 6. Interagera med den nya visualiseringen. Det spelar ingen roll hur du skapade visualiseringen – samma interaktivitet, formatering och funktioner finns tillgängliga oavsett.
 
-  ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-ellipses.png)
+   ![](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-ellipses.png)
 
-  Om du skapade visualiseringen i Power BI-tjänsten, kan du till och med [fästa den på en instrumentpanel](service-dashboard-pin-tile-from-q-and-a.md).
+   Om du skapade visualiseringen i Power BI-tjänsten, kan du till och med [fästa den på en instrumentpanel](service-dashboard-pin-tile-from-q-and-a.md).
 
 ## <a name="tell-qa-which-visualization-to-use"></a>Berätta för frågor och svar vilken visualisering som ska användas.
 Med frågor och svar, kan du inte bara be dina data att tala för sig själva, du kan säga hur Power BI ska visa svaret. Lägg bara till som en <visualization type> i slutet av din fråga.  Till exempel visa lagervolymer efter anläggning som en karta och visa totalt lager som ett kort.  Prova själv.

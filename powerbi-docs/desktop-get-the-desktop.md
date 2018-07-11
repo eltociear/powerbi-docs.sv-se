@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 52ef1f6526b83a54ba26fdffaf8150049c55880d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 319c636c660aff3ab651475e2d7b553fef49b8cd
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813329"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137340"
 ---
 # <a name="get-power-bi-desktop"></a>Hämta Power BI Desktop
 **Power BI Desktop** låter dig skapa avancerade frågor, modeller och rapporter som visualiserar data. Med **Power BI Desktop**, kan du skapa datamodeller, skapa rapporter och dela ditt arbete genom att publicera till Power BI-tjänsten.  **Power BI Desktop** är en kostnadsfri nedladdning.
@@ -110,7 +110,7 @@ Användaren kan oftast åtgärda problemet genom att uppdatera till den aktuella
 ## <a name="next-steps"></a>Nästa steg
 När du har installerat **Power BI Desktop** kan du komma igång snabbt med hjälp av följande innehåll:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Anslut till data i Power BI Desktop](desktop-connect-to-data.md)

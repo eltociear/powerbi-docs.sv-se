@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4be27c91d0616d4611eb07dab5d68c39ed0ab6d2
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9dad723d7b65836770fb866ddeed80d069a9658a
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34287749"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137110"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Ansluta till data med hjälp av generiska gränssnitt i Power BI Desktop
 Du kan ansluta till en mängd olika datakällor i **Power BI Desktop** med hjälp av inbyggda dataanslutningar, från **Access-databaser** till **Zendesk**-resurser, vilket visas i fönstret **Hämta data**. Du kan också ansluta till alla möjliga typer av *andra* datakällor för att ytterligare utöka dina anslutningsmöjligheter, med hjälp av generiska gränssnitt (exempelvis **ODBC** eller **REST API:er**) som är inbyggda i **Power BI Desktop**.
@@ -109,7 +109,7 @@ I följande lista beskrivs några exempel på datakällorna som **Power BI Deskt
 ## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters datakällor du kan ansluta till med **Power BI Desktop**. Kolla in följande resurser för mer information om datakällor:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   

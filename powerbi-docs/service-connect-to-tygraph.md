@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 11073e7df57d4717e27fa73c6a5e1e315a9a8dcc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 4e9e10f713be50707909c68b104f82cada6777b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241146"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599057"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Ansluta till tyGraph med Power BI
 Visualisera och utforska dina data med tyGraph i Power BI med Power BI-innehållspaket. Starta genom att ansluta till ditt tyGraph-konto och läsa in instrumentpanelen, rapporter och datauppsättningar. Innehållet inkluderar insikter såsom mått för aktivt engagemang (MAE-poäng) och bästa deltagare. Anpassa det ytterligare för att fokusera på den information som du är mest intresserad av.  Data uppdateras automatiskt enligt ett schema som du anger.
@@ -42,7 +42,7 @@ Ansluta till [tyGraph för Power BI](https://app.powerbi.com/getdata/services/ty
    
     **Om du inte är en Yammer-verifierad administratör**
    
-    TyGraph-innehållspaketet kräver ett tyGraph-konto med en Yammer-verifierad administratör. När det har skapats kan kompletterande nycklar utfärdas till användare inom samma organisation. Om den verifierade administratören ännu inte har skapat ett tyGraph-konto, kontakta administratören för att hen ska skapa ett. Om ett konto har skapats kan du begära en nyckel genom att skicka ett e-postmeddelande till <mailto:support@unlimitedviz.com>.
+    TyGraph-innehållspaketet kräver ett tyGraph-konto med en Yammer-verifierad administratör. När det har skapats kan kompletterande nycklar utfärdas till användare inom samma organisation. Om den verifierade administratören ännu inte har skapat ett tyGraph-konto, kontakta administratören för att hen ska skapa ett. Om ett konto har skapats kan du begära en nyckel genom att skicka ett e-postmeddelande till <support@unlimitedviz.com>.
    
     ![](media/service-connect-to-tygraph/creds.png)
 6. Efter en lyckad autentisering startar importen automatiskt. När den är klar visas en ny instrumentpanel, rapport och modell i navigeringsfönstret. Välj instrumentpanelen för att visa dina importerade data.

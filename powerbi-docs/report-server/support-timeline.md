@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/19/2018
 ms.author: maggies
-ms.openlocfilehash: a7012bf96ee0f8ac7e73d1db21e9a36f0fea88cb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b09fd5846689299f426fc779061efaa30f8f6909
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34481059"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599168"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Supporttider för Power BI-rapportservern
 Power BI-rapportservern kommer att släppas ett par gånger per år. Säkerhets- och kritiska uppdateringar kommer vara tillgängliga tills nästa utgåva blir allmänt tillgänglig (GA). Efter nästa utgåva fortsätter den föregående versionen att ta emot uppdateringar under återstoden av 12-månadsversionen.
@@ -27,6 +27,7 @@ Med den här supportpolicyn kan vi leverera nyheter till kunderna snabbt samt ge
     ![Diagram som illustrerar supporttidsperioden](media/support-timeline/report-server-support-timeline-mar-2018.png)
 
 ## <a name="version-history"></a>Versionshistorik
+
 | **Version** | **Tillgänglighetsdatum** | **Slutdatum för support** |
 | --- | --- | --- |
 | Juni 2017 |12 juni 2017 |12 juni 2018 |

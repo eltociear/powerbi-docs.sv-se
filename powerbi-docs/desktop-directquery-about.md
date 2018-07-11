@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 472be555bb4c46da41eb762c1eeae14ef991e742
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ed9ab95aace7ab1ff0774732241bdd4a7fffcb15
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290877"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600999"
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan antingen *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller så kan du ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner, däribland följande avsnitt:
@@ -152,7 +152,7 @@ När du använder **DirectQuery** kan många av dessa modellberikningar fortfara
     
     Anledningen är att en sådan åtgärd kan resultera i sämre prestanda om det finns ett stort antal objekt.
 * **Beräknade tabeller stöds inte:** Möjligheten att definiera en beräknad tabell med hjälp av ett DAX-uttryck stöds inte i DirectQuery-läge.
-* **Relationsfiltrering är begränsat till en riktning:** När du använder DirectQuery gå det inte att ställa in korsfiltreringsriktningen för en relation till ”båda”. Med de tre tabellerna nedan skull det inte vara möjligt att skapa ett visuellt objekt som visar varje kund [kön] och det antal av en produkt [kategori] som var och en har köpt. Användning av sådan dubbelriktad filtrering beskrivs [i detta detaljerade white paper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional cross-filtering in Analysis Services 2016 and Power BI.docx) (här presenteras exempel i SQL Server Analysis Services-kontext, men de grundläggande punkterna gäller lika mycket för Power BI).
+* **Relationsfiltrering är begränsat till en riktning:** När du använder DirectQuery gå det inte att ställa in korsfiltreringsriktningen för en relation till ”båda”. Med de tre tabellerna nedan skull det inte vara möjligt att skapa ett visuellt objekt som visar varje kund [kön] och det antal av en produkt [kategori] som var och en har köpt. Användning av sådan dubbelriktad filtrering beskrivs [i detta detaljerade white paper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (här presenteras exempel i SQL Server Analysis Services-kontext, men de grundläggande punkterna gäller lika mycket för Power BI).
   
   ![](media/desktop-directquery-about/directquery-about_01.png)
   

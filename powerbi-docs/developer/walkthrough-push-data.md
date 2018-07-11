@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
 ms.author: maghan
-ms.openlocfilehash: 96b29c9dc6c384b663ef375d4968dedb011bd05d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1cc19d1ceefb95e0cb56e2a5dcbcc89609f654d5
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813122"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598559"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 Med Power BI-API:et kan du skicka data till en Power BI-datauppsättning. Om du till exempel vill utöka ett befintligt företagsarbetsflöde för att skicka viktiga data till din datauppsättning. I det här fallet vill du skicka en datauppsättning med försäljning och marknadsföring som har en produkttabell till en datauppsättning.
@@ -98,6 +98,7 @@ Så, för vårt exempel med datauppsättningen för försäljning och marknadsf�
 Du kan använda följande datatyper för ett Power BI-tabellschema.
 
 ## <a name="power-bi-table-data-types"></a>Power BI tabelldatatyper
+
 | **Datatyp** | **Begränsningar** |
 | --- | --- |
 | Int64 |Int64.MaxValue och Int64.MinValue tillåts inte. |

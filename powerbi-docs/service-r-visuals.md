@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd4198bb6b826f8d4af22e83e313c4c0b8101024
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 016237c95d3494435931e143ff34dbe4a82abb55
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299319"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599676"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Skapa visuella R-objekt i Power BI-tjänsten
 Power BI-tjänsten stöder visning av och interaktion med visuella objekt som skapats med R-skript. Visualiseringar som har skapats med R-skript, vanligtvis kallade *visuella R-objekt*, kan användas för avancerad datautformning och analyser som t.ex. prognoser som bygger på den omfattande analys- och visualiseringskraften i R.
@@ -37,7 +37,7 @@ När rapporten har skapats i **Power BI Desktop** kan du publicera rapporten med
 
 Observera att inte alla R-paket stöds i tjänsten. I slutet av den här artikeln återfinner du en lista över vilka paket som för närvarande stöds i Power BI-tjänsten.
 
-Du kan hämta den här [Power BI Desktop-exempelfilen](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample SL.pbix) (.pbix-fil) som innehåller ett antal visuella R-objekt, så att du kan experimentera och se hur de fungerar.
+Du kan hämta den här [Power BI Desktop-exempelfilen](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fil) som innehåller ett antal visuella R-objekt, så att du kan experimentera och se hur de fungerar.
 
 Visuella R-objekt som skapas i **Power BI Desktop**, och sedan publiceras i Power BI-tjänsten, funerar oftast som andra visuella objekt i Power BI-tjänsten. Du kan interagera, filtrera, dela, och fästa dem på en instrumentpanel, eller dela dem med andra. Läs mer om man delar instrumentpaneler och visuella objekt i [Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md). En skillnad från andra visuella objekt är att visuella R-objekt inte kan visa verktygstips och kan inte användas för att filtrera övrig visuella objekt.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 331dc45f3049fe77145b86ffafd363162c74a589
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813812"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944662"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Använda instrumentpanelsteman i Power BI-tjänsten
 Med **instrumentpanelsteman** kan du använda ett färgtema på hela instrumentpanelen, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **instrumentpanelstema** används färgerna från det tema du valt på alla visuella objekt på instrumentpanelen (med några få undantag, som beskrivs längre ned i den här artikeln).
@@ -89,7 +89,6 @@ Precis som med alternativen för inbyggda och anpassade teman tillämpas färger
 
     ![Använd måltema](media/service-dashboard-themes/power-bi-use-destination.png)
 
-* Instrumentpanelsteman stöds inte för närvarande när instrumentpanelen visas inbäddad med hjälp av REST API:et på mobila enheter eller av externa användare.    
 * Instrumentpanelsteman kan inte tillämpas på live-rapportsidor, iframe-paneler, SSRS-paneler, arbetsbokspaneler eller bilder.
 * Instrumentpanelsteman kan visas på mobila enheter, men det går bara att skapa instrumentpanelsteman i Power BI-tjänsten. 
 * Anpassade instrumentpanelsteman fungerar bara med paneler som fästs från rapporter. 

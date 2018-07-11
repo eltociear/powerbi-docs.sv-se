@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
-ms.openlocfilehash: 9988d108c33e086938aca76d088c6852bb1117a4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4aac424d448dcb3e2dd722efe54db99d318ba80
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813306"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599500"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Registrera en Azure AD-app för att bädda in Power BI-innehåll
 Lär dig hur du registrerar en app i Azure Active Directory (Azure AD) för användning med inbäddning av Power BI-innehåll.
@@ -54,9 +54,8 @@ Så här gör du för att registrera din app med registreringsverktyget för Pow
     När du gör det får du ett **klient-ID**, och om du väljer **Webbapp för serversidan** får du en **klienthemlighet**. Ditt **klient-ID** kan hämtas från Azure Portal vid ett senare tillfälle om det behövs. Om du tappar bort din **klienthemlighet** måste du skapa en ny på Azure Portal.
 
 8. I så fall måste du gå till Azure och välja **Bevilja behörigheter**.
-> [!Note]
-    > Måste vara en global administratör i Azure-klienten för att slutföra det här
->
+   > [!Note]
+   > Måste vara en global administratör i Azure-klienten för att slutföra det här
 
 * Gå till Azure.
 * Sök och välj **App-registreringar**.
@@ -83,8 +82,8 @@ Ett annat alternativ för att registrera ditt program är att göra det direkt i
     ![](media/register-app/azuread-new-app-registration.png)
 5. Följ anvisningarna och skapa ett nytt program.
    
-   * För webbprogram anger du inloggnings-URL:en, som är bas-URL:en för din app där användare kan logga in, t.ex. http://localhost:13526.
-   * Ange en omdirigerings-URI som används i Azure AD för att returnera tokensvar för interna program. Ange ett specifikt värde för din app, till exempel http://myapplication/redirect
+   * För webbprogram anger du inloggnings-URL:en, som är bas-URL:en för din app där användare kan logga in, t.ex. `http://localhost:13526`.
+   * Ange en omdirigerings-URI som används i Azure AD för att returnera tokensvar för interna program. Ange ett specifikt värde för din app, till exempel `http://myapplication/redirect`
 
 Mer information om hur du registrerar program i Azure Active Directory finns i [Integrera program med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 
@@ -161,44 +160,44 @@ Logga in med *huvudkontot* som används för inbäddning eller med ett globalt a
    * **AllPrincipals** används av administratören för en klientorganisation för att bevilja behörigheter för alla användare i klientorganisationen.
    * **Principal** används för att bevilja behörigheter för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}*.
     
-    *Bevilja behörigheter* krävs för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
+     *Bevilja behörigheter* krävs för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
    
-    ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
-    "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
-    ```
+     ```
+     Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+     Authorization: Bearer ey..qw
+     Content-Type: application/json
+     { 
+     "clientId":"{Service_Plan_ID}",
+     "consentType":"AllPrincipals",
+     "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
+     "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
+     "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+     "startTime":"2017-03-29T14:35:32.4933413+03:00"
+     }
+     ```
 
-5.  Bevilja appbehörigheter till Azure Active Directory (AAD)
+5. Bevilja appbehörigheter till Azure Active Directory (AAD)
    
-    Värdet för **consentType** kan vara antingen **AllPrincipals** eller **Principal**.
+   Värdet för **consentType** kan vara antingen **AllPrincipals** eller **Principal**.
 
-    * **AllPrincipals** används av administratören för en klientorganisation för att bevilja behörigheter för alla användare i klientorganisationen.
-    * **Principal** används för att bevilja behörigheter för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}*.
+   * **AllPrincipals** används av administratören för en klientorganisation för att bevilja behörigheter för alla användare i klientorganisationen.
+   * **Principal** används för att bevilja behörigheter för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}*.
     
-    *Bevilja behörigheter* krävs för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
+   *Bevilja behörigheter* krävs för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
 
- ```
-    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
-    Authorization: Bearer ey..qw
-    Content-Type: application/json
-    { 
-    "clientId":"{Service_Plan_ID}",
-    "consentType":"AllPrincipals",
-    "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
-    "scope":"User.Read Directory.AccessAsUser.All",
-    "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
-    "startTime":"2017-03-29T14:35:32.4933413+03:00"
-    }
- ```
+   ```
+   Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
+   Authorization: Bearer ey..qw
+   Content-Type: application/json
+   { 
+   "clientId":"{Service_Plan_ID}",
+   "consentType":"AllPrincipals",
+   "resourceId":"61e57743-d5cf-41ba-bd1a-2b381390a3f1",
+   "scope":"User.Read Directory.AccessAsUser.All",
+   "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
+   "startTime":"2017-03-29T14:35:32.4933413+03:00"
+   }
+   ```
 
 ## <a name="next-steps"></a>Nästa steg
 Nu när du har registrerat din app i Azure AD måste du autentisera användarna i appen. Mer information finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md).

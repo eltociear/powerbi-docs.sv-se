@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 15651c29dc333385156b1e82f55cab0d315c9862
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 994e27a08ca4f26dc730246b34c7607818e81e66
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291153"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135431"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Ansluta till CSV-filer i Power BI Desktop
 Att ansluta till en CSV-fil (*CSV*) från Power BI Desktop liknar ansluta till en Excel-arbetsbok. Båda processer är enkla och den här artikeln visar hur du ansluter till valfri CSV-fil som du har åtkomst till.
@@ -47,7 +47,7 @@ Du kan använda data i Power BI Desktop för att skapa visuell information och r
 ### <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   

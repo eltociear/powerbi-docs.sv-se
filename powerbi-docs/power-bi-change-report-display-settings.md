@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c2b9a106c4007af868cf69902ce511da8e03e75f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e4ffc542a9564ba3893245ef637b3edd01c38640
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244571"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598765"
 ---
 # <a name="change-the-size-of-a-report-page"></a>Ändra storlek på en rapportsida
 I den [föregående artikeln och videon](power-bi-report-display-settings.md) fick du lära dig två olika sätt för att styra sidvisningen i Power BI-rapporter: **Visa** och **Sidstorlek**. Sidvy och Sidstorlek finns tillgängliga i både Power BI-tjänsten och Power BI Desktop och ser både ut och fungerar nästan på samma sätt. I den här självstudien använder vi dock Power BI-tjänsten.
@@ -31,19 +31,19 @@ I den [föregående artikeln och videon](power-bi-report-display-settings.md) fi
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_page.png)
 2. Kontrollera att inga visualiseringar är markerade på arbetsytan. Välj **Visa** och granska visningsalternativen.
 
-    * I Läsvy visas följande.
+   * I Läsvy visas följande.
 
      ![](media/power-bi-change-report-display-settings/power-bi-page-view-menu-new.png)
-    * I Redigeringsvy visas följande.
+   * I Redigeringsvy visas följande.
 
-    ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
+     ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
 
-1. Nu ska vi se hur sidan visas med hjälp av inställningen **Faktisk storlek**.
+3. Nu ska vi se hur sidan visas med hjälp av inställningen **Faktisk storlek**.
 
    ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
 
    Inte så bra, instrumentpanelen har nu dubbla rullningslister.
-2. Växla till **Anpassa till bredd**.
+4. Växla till **Anpassa till bredd**.
 
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_width.png)
 

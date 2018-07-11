@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 67863b261bb8f3490d20ad21786313541df33388
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: a86b1d6823a1d889b47015d1213a9a056c537703
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250325"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926661"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
 Med Office 365 kan företag sälja Office 365 paketerat och integrerat med sina egna lösningar, vilket ger slutkunderna en enda kontaktpunkt för inköp, fakturering och support.
@@ -33,7 +33,7 @@ Om du inte kan köpa Power BI direkt finns det fortfarande några alternativ, be
 
 [Power BI (kostnadsfri)](#power-bi-free)
 
-[Power BI Pro och Premium](#power-bi-pro)
+[Power BI Pro och Premium](#power-bi-pro-and-premium)
 
 ## <a name="power-bi-free"></a>Power BI (kostnadsfri)
 Om det kostnadsfria erbjudandet för Power BI passar dig kan du registrera dig för tjänsten utan några extra kostnader. Som standard är enskild registrering, även kallat ad hoc-prenumeration, inaktiverad. När du försöker registrera dig för Power BI visas ett meddelande om att din IT-avdelning har inaktiverat registrering för Microsoft Power BI.

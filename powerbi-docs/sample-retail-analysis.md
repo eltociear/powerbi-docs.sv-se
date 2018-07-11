@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 06/24/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 3382562459c461d9864cfce7163fb0d049deb494
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 44244bf746c1a11229d2041b4c2b43871fa7a199
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481818"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944547"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: ta en rundtur
 
@@ -25,7 +25,7 @@ Det här branschexemplets instrumentpanel och underliggande rapport analyserar f
 
 ## <a name="prerequisites"></a>Förutsättningar
 
- Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), en [.pbix-fil](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail-Analysis-Sample-PBIX.pbix) eller en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529778).
+ Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), en [.pbix-fil](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) eller en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529778).
 
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet

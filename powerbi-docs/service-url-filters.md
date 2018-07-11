@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aeaea6d14cf8f4fd62fbbf5098e68429fe40b96a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 52ef5b568e63d759b38ee8210873783b6c205a2a
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34471949"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965537"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 När du öppnar en rapport i Power BI-tjänsten har varje sida i rapporten en egen unik URL. Du kan använda filterfönstret på rapportarbetsytan om du vill filtrera rapportsidan.  Eller så kan du lägga till frågesträngparametrar i URL:en för att filtrera rapporten. Du kanske har en rapport som du vill visa dina kolleger men du vill filtrera den först åt dem. Ett sätt att göra detta på är att börja med standard-URL:en för rapporten, lägga till filterparametrar och sedan skicka dem hela URL:en med e-post.
@@ -108,7 +108,7 @@ Det finns några saker som du bör vara medveten om när du använder frågestr�
 
 ## <a name="next-steps"></a>Nästa steg
 [Fästa en visualisering på en instrumentpanel](service-dashboard-pin-tile-from-report.md)  
-[Testa – det är kostnadsfritt!](https://powerbi.com/)
+[Registrera dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/get-started/)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

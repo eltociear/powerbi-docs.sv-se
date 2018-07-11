@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 9ea17fd80c928ee0193ca94aac88fa00f362a523
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 864e7a3d78386f6996d866f45558add3b51faa69
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240476"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145199"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Felsöka datakälla utan stöd för uppdatering
 Du kan se ett fel vid försök att konfigurera en datauppsättning för schemalagd uppdatering.
@@ -39,7 +39,7 @@ Om du inte är säker på vilken datakälla som användes, kan du hitta den med 
 
 ## <a name="next-steps"></a>Nästa steg
 [Datauppdatering](refresh-data.md)  
-[Power BI Gateway – Personal](personal-gateway.md)  
+[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
 [Lokal datagateway](service-gateway-onprem.md)  
 [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  

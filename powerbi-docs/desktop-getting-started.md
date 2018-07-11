@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 606ef1f1c69643852a94a7d83ece93cca8940e7a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 175852a05c4964e6a476abf50684d9ffc12c4468
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34309933"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599879"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
 Välkommen till **Komma igång-guiden för Power BI Desktop**. Den här korta visningen av Power BI Desktop låter dig bekanta dig med hur den fungerar, visar vad den kan göra och ökar dina möjligheter att skapa robusta datamodeller, tillsammans med häpnadsväckande rapporter, som förstärker din affärsintelligens. 
@@ -313,7 +313,7 @@ När filen har överförts, kan du välja den från **Rapporter** i den vänstra
 
 Du kan göra ändringar i en rapport i **Power BI**-tjänsten genom att välja **Redigera rapport** från rapportarbetsytans överkant.
 
-För att spara din rapport, väljer du **Filen \> Spara som** från tjänsten. Det finns en massa olika intressanta visualiseringar som du kan skapa i **Power BI**-tjänsten från din rapport som du kan fästa på en *Instrumentpanel*. Mer information om instrumentpaneler i **Power BI**-tjänsten**[ finns i Tips för att designa en utmärkt instrumentpanel](service-dashboards-design-tips.md)**.
+För att spara din rapport, väljer du **Filen \> Spara som** från tjänsten. Det finns en massa olika intressanta visualiseringar som du kan skapa i **Power BI**-tjänsten från din rapport som du kan fästa på en *Instrumentpanel*. Mer information om instrumentpaneler i **Power BI**-tjänsten<strong>[ finns i Tips för att designa en utmärkt instrumentpanel](service-dashboards-design-tips.md)</strong>.
 
  ![](media/desktop-getting-started/gsg_share5.png)
 

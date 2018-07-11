@@ -1,4 +1,5 @@
 ## <a name="list-of-available-data-source-types"></a>Lista över tillgängliga typer av datakällor
+
 | **Datakälla** | **Live/DirectQuery** | **Användarkonfigurerad manuell eller schemalagd uppdatering** |
 | --- | --- | --- | --- |
 | Analysis Services-tabell |Ja |Ja |

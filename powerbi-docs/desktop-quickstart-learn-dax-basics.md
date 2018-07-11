@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 49f6e073d40ef00413ba38dd709780758cf1e448
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1c9f838261658a77fa8a4d019e610de72649bbbb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291038"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600784"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
 Den här artikeln är avsedd för nya användare i Power BI Desktop. Den är tänkt att ge dig en snabb och enkel introduktion för hur du kan använda dataanalysuttryck (DAX) till att lösa flera grundläggande problem med beräkningar och dataanalys. Vi går igenom viss konceptinformation, en serie aktiviteter som du kan utföra och några kunskapsfrågor som testar vad du har lärt dig. När du har läst den här artikeln bör du ha en god förståelse för de viktigaste grundläggande begreppen i DAX.
@@ -83,33 +83,33 @@ Nu ska vi skapa en enkel formel. Den här uppgiften hjälper dig att bättre fö
 ### <a name="task-create-a-measure-formula"></a>Uppgift: Skapa en måttformel
 För att kunna utföra den här aktiviteten måste du öppna Power BI Desktop-filen Contoso Sales Sample.
     
-1.  I rapportvyn i fältlistan högerklickar du på tabellen **Sales** och klickar sedan på **Nytt mått**.
+1. I rapportvyn i fältlistan högerklickar du på tabellen **Sales** och klickar sedan på **Nytt mått**.
     
-2.  I formelfältet ersätter du **Mått** genom att skriva det nya måttnamnet **Previous Quarter Sales**.
+2. I formelfältet ersätter du **Mått** genom att skriva det nya måttnamnet **Previous Quarter Sales**.
     
-3.  Efter likhetstecknet skriver du **SUM** följt av en vänsterparentes.
+3. Efter likhetstecknet skriver du **SUM** följt av en vänsterparentes.
     
-    I stället för att skriva ett kolumnnamn som ska summeras direkt, ska vi ange en annan funktion som *filtrerar* de data som ska summeras.
+   I stället för att skriva ett kolumnnamn som ska summeras direkt, ska vi ange en annan funktion som *filtrerar* de data som ska summeras.
     
-4.  Mellan parenteserna skriver du **CALCULATE** följt av en vänsterparentes.
+4. Mellan parenteserna skriver du **CALCULATE** följt av en vänsterparentes.
     
-    Du ska använda CALCULATE-funktionen till att filtrera de belopp som vi vill summera med ett argument som vi skickar till funktionen CALCULATE. Det här kallas för kapslade funktioner. CALCULATE-funktionen innehåller minst två argument. Det första är uttrycket som ska utvärderas och det andra är ett filter.
+   Du ska använda CALCULATE-funktionen till att filtrera de belopp som vi vill summera med ett argument som vi skickar till funktionen CALCULATE. Det här kallas för kapslade funktioner. CALCULATE-funktionen innehåller minst två argument. Det första är uttrycket som ska utvärderas och det andra är ett filter.
    
-5.  Mellan parenteserna **()** för funktionen **CALCULATE** skriver du **Sales[SalesAmount]**. Detta är det första uttrycksargumentet för vår CALCULATE-funktion.
+5. Mellan parenteserna **()** för funktionen **CALCULATE** skriver du **Sales[SalesAmount]**. Detta är det första uttrycksargumentet för vår CALCULATE-funktion.
     
-6.  Skriv ett kommatecken (**,**) för att ange det första filtret och sedan **PREVIOUSQUARTER** följt av en vänsterparentes.
+6. Skriv ett kommatecken (**,**) för att ange det första filtret och sedan **PREVIOUSQUARTER** följt av en vänsterparentes.
     
-    Vi använder tidsfunktionen PREVIOUSQUARTER för att filtrera vårt SUM-resultat från föregående kvartal.
+   Vi använder tidsfunktionen PREVIOUSQUARTER för att filtrera vårt SUM-resultat från föregående kvartal.
     
-7.  Mellan parenteserna **()** för PREVIOUSQUARTER-funktionen skriver du **Calendar[DateKey]**.
+7. Mellan parenteserna **()** för PREVIOUSQUARTER-funktionen skriver du **Calendar[DateKey]**.
     
-    Funktionen PREVIOUSQUARTER har ett argument, en kolumn som innehåller ett sammanhängande datumintervall.
+   Funktionen PREVIOUSQUARTER har ett argument, en kolumn som innehåller ett sammanhängande datumintervall.
     
-8.  Se till att båda argumenten skickas till funktionen PREVIOUSQUARTER och att funktionen CALCULATE avslutas med två högerparenteser **))**.
+8. Se till att båda argumenten skickas till funktionen PREVIOUSQUARTER och att funktionen CALCULATE avslutas med två högerparenteser **))**.
     
    Formeln bör nu se ut så här:
     
-    **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
+   **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
     
 9. Klicka på bockmarkeringen ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) i formelfältet eller tryck på RETUR för att verifiera formeln och lägga till den i modellen.
 

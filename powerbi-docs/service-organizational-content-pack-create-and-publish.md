@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8b1e94ca0923c3e2ba509df266cec0f05596ab1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852197"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598625"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Skapa och publicera ett organisationsinnehållspaket i Power BI (självstudier)
 > [!NOTE]
@@ -43,24 +43,24 @@ Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com) går du till **H
    
    Tänk på att din organisations innehållspaketsbibliotek till slut kan innehålla hundratals innehållspaket som publicerats för organisationen eller för olika grupper. Lägg tid på att ge ditt innehållspaket ett bra och beskrivande namn, lägg till en detaljerad beskrivning och välj rätt målgrupp.  Använd ord som gör ditt innehållspaket lätt att hitta vid en sökning.
    
-   1.  Välj **Specifika grupper** och ange fullständiga e-postadresser för enskilda användare, [Office 365-grupper](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distributionsgrupper eller säkerhetsgrupper. Till exempel:
+   1. Välj **Specifika grupper** och ange fullständiga e-postadresser för enskilda användare, [Office 365-grupper](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distributionsgrupper eller säkerhetsgrupper. Till exempel:
       
-         salesmgrs@contoso.com; sales@contoso.com
+        salesmgrs@contoso.com; sales@contoso.com
       
       Försök använda din egen eller din grupps e-postadress för de här självstudierna.
    
-   2.  Döp innehållspaketet till **Affärsmöjligheter**.
+   2. Döp innehållspaketet till **Affärsmöjligheter**.
    
       > [!TIP]
       > Överväg att ta med namnet på instrumentpanelen i namnet på innehållspaketet. På så sätt kan dina kollegor hitta instrumentpanelen enklare när de ansluter till ditt innehållspaket.
       > 
       > 
    
-   3.  Rekommenderat: Lägg till en **beskrivning**. Detta hjälper dina medarbetare att lättare hitta de innehållspaket som de behöver. Lägg utöver beskrivningen även till nyckelord som dina medarbetare kan använda för att söka efter innehållspaketet. Inkludera kontaktinformation om dina medarbetare har frågor eller behöver hjälp.
+   3. Rekommenderat: Lägg till en **beskrivning**. Detta hjälper dina medarbetare att lättare hitta de innehållspaket som de behöver. Lägg utöver beskrivningen även till nyckelord som dina medarbetare kan använda för att söka efter innehållspaketet. Inkludera kontaktinformation om dina medarbetare har frågor eller behöver hjälp.
    
-   4.  **Ladda upp en bild eller logotyp** för att göra det enklare för medlemmar i gruppen att hitta innehållspaketet &#151; det går snabbare att söka efter en bild än att söka efter text. Vi har använt en bild av stapeldiagramspanelen för ”affärsmöjligheter 100%” på skärmbilden nedan.
+   4. **Ladda upp en bild eller logotyp** för att göra det enklare för medlemmar i gruppen att hitta innehållspaketet &#151; det går snabbare att söka efter en bild än att söka efter text. Vi har använt en bild av stapeldiagramspanelen för ”affärsmöjligheter 100%” på skärmbilden nedan.
    
-   5.  Välj instrumentpanelen **Exempel på analys av affärsmöjligheter** för att lägga till den till innehållspaketet.  Power BI lägger automatiskt till associerad rapport och datauppsättning. Du kan lägga till andra, om du vill.
+   5. Välj instrumentpanelen **Exempel på analys av affärsmöjligheter** för att lägga till den till innehållspaketet.  Power BI lägger automatiskt till associerad rapport och datauppsättning. Du kan lägga till andra, om du vill.
    
       > [!NOTE]
       >  Endast de instrumentpaneler, rapporter, datauppsättningar och arbetsböcker som du kan redigera visas. Det innebär att alla som har delats med dig inte finns i listan.
@@ -71,7 +71,7 @@ Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com) går du till **H
    
    6. Om du har Excel-arbetsböcker kan se dem under Rapporter, med en Excel-ikon. Du kan också lägga till dem i innehållspaketet.
    
-     ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
+      ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
       > Om medlemmar i gruppen inte kan visa Excel-arbetsboken, kan du behöva [dela arbetsboken med dem i OneDrive för företag](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).

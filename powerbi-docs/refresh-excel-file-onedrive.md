@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: b7a49a04ed344d6977dba5ac739c0f0d41aca5b9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6be8c6b5837fc9e9a0b8456b7c545e7f942eabe5
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239140"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092217"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på OneDrive eller SharePoint Online
 Du kan importera Excel-arbetsböcker som lagras på din lokala dator eller i lagringsutrymmen i molnet, till exempel OneDrive för företag eller SharePoint Online. Vi ska titta på fördelarna med att använda lagring i molnet för dina Excel-filer. Mer information om hur du importerar Excel-filer till Power BI finns i [Hämta data från Excel-arbetsboksfiler](service-excel-workbook-files.md).
@@ -45,7 +45,7 @@ I Power BI stöds Uppdatera nu och Schemalägg uppdatering för datauppsättning
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive för företag. Vad är skillnaden?
 Om du både har en personlig OneDrive och OneDrive för företag, bör du behålla alla filer som du vill importera till Power BI på OneDrive för företag. Skälet är att du förmodligen använder två olika konton för att logga in till dem.
 
-Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men på din personliga OneDrive loggar du troligen in med ett annat [Microsoft-konto](http://www.microsoft.com/account/default.aspx).
+Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men på din personliga OneDrive loggar du troligen in med ett annat [Microsoft-konto](https://account.microsoft.com).
 
 När du loggar in med ditt Microsoft-konto bör du markera Jag vill förbli inloggad. Power BI kan sedan synkronisera alla uppdateringar som du gör i filen i Power BI Desktop med datauppsättningarna i Power BI  
     ![](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)

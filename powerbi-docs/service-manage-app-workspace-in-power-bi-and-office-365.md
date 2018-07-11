@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 859ab3fdfd06040d8bbf131ab91ea6c9f84deb40
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d298c750d23e22ef0a6b2791916add13bb260ad0
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241957"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965215"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Hantera din apparbetsyta i Power BI och Office 365
 Som skapare eller administratör för en [apparbetsyta i Power BI](service-install-use-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365. 
@@ -33,7 +33,7 @@ Som skapare eller administratör för en [apparbetsyta i Power BI](service-insta
 * Se gruppens e-postadress.
 * Ta bort gruppen.
 
-Du behöver en [Power BI Pro](service-free-vs-pro.md)-licens för att vara administratör eller medlem i en apparbetsyta. Dina appanvändare måste också ha en Power BI Pro-licens, såvida inte apparbetsytan finns i en Power BI Premium-kapacitet. Företagsanvändare kan sedan få åtkomst till appen med en kostnadsfri licens för Power BI i stället. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
+Du behöver en [Power BI Pro](service-free-vs-pro.md)-licens för att vara administratör eller medlem i en apparbetsyta. Dina appanvändare måste också ha en Power BI Pro-licens, såvida inte apparbetsytan finns i en Power BI Premium-kapacitet. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Hantera din apparbetsyta i Power BI
 1. I Power BI-tjänsten väljer du pilen bredvid **Arbetsytor** > ellipserna (**...** ) bredvid ditt arbetsytenamn > **Redigera arbetsyta**. 

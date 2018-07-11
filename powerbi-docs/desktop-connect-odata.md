@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b744676deecbd84890057af84e331d6e7a15e90
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c6edc34a8ac9c4a891814a7dea5b5863e4cb8998
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290946"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135316"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>Ansluta till en OData-feed i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **OData**-feed och använda underliggande data precis som andra datakällor i Power BI Desktop.
@@ -49,7 +49,7 @@ Du är nu redo att använda den importerade informationen från OData-feeden i P
 ### <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   

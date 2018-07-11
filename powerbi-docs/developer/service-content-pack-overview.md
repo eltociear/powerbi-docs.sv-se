@@ -1,20 +1,20 @@
 ---
 title: Översikt över Power BI-tjänstens program för innehållspaketet
 description: Certifieringsprogrammet för innehållspaket
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/20/2018
-ms.author: maghan
-ms.openlocfilehash: cfb9727a41d602ce14bfd2a403a87e82d2f0e94d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.author: maggies
+ms.openlocfilehash: 6697c820ff5aac30f12794cd28ca403faec4761f
+ms.sourcegitcommit: 6407e053c2c6c6fdb212b059693e90fefbaaadec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290647"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290931"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Översikt över Power BI-tjänstens program för innehållspaketet
 Ett innehållspaket är en uppsättning färdigt innehåll som låter användare direkt få insikter från en källa. Ett innehållspaket fokuserar vanligtvis på ett specifikt företagsscenario och ger insikter för en roll, en domän eller ett arbetsflöde.

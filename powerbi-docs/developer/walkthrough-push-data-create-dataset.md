@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: c6cbdf9effa3264eadf19de97be864cc3f152e8b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9a6d8919f8ccb032fa7b4bd3312217501c1acb77
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812432"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092539"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Steg 3: Skapa en datauppsättning i Power BI
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -228,8 +228,8 @@ Nedan visas den [fullständiga kodlistan](#code).
 ## <a name="next-steps"></a>Nästa steg
 [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md)  
 [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md)  
-[PostDataset](https://docs.microsoft.com/rest/api/power-bi/datasets_postdataset)  
-[PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/datasets_postdatasetingroup)  
+[PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)  
+[PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdatasetingroup)  
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  

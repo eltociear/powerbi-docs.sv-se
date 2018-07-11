@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 59723d4c8e241781b7f29773ea182cd5b075e0c2
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f42efcb833c723e7af9132f7e039c8ff8805d17d
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34288209"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137386"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Ansluta till Azure Consumption Insights i Power BI Desktop (beta)
 Med anslutningsappen **Azure förbrukning Insights** kan du använda **Power BI Desktop** för att ansluta till Azure och få detaljerade data och information om din organisations användning av Azure-tjänster. Du kan också skapa mått, anpassade kolumner och visuella objekt för att rapportera och dela information om organisationens Azure-användning. Den här versionen av **Azure Consumption and Insights** är en beta-version och kan ändras.
@@ -193,7 +193,7 @@ Kolumnerna och namnen på detaljerna i Azure Portal ser ut på samma sätt i API
 ## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   

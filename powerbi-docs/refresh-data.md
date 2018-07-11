@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 779bfb3e69a76d0fe9e9a34d6576b2054de89cc1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: aa7fcc720861d1459183aaf7a82a2af8912eb5b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34253629"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599758"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 Att se till att du alltid har den senaste informationen är ofta betydelsefullt för att kunna fatta rätt beslut. Du har förmodligen redan använt Hämta data i Power BI för att ansluta till och ladda upp vissa data, skapat vissa rapporter och en instrumentpanel. Nu ska du se till att dina data är verkligen är aktuella och bäst.
@@ -31,7 +31,7 @@ En *datakälla* är den plats som de data som du utforskar i dina rapporter och 
 
 En *datauppsättning* skapas automatiskt i Power BI när du använder Hämta data för att ansluta till och överföra data från ett innehållspaket, en fil eller om du ansluter till en live-datakälla. Du kan publicera din fil direkt till Power BI-tjänsten i Power BI Desktop och Excel 2016 på samma sätt som när du använder Hämta data.
 
-I dessa fall skapas en datauppsättning som visas i Min arbetsyta, grupp eller behållare i Power BI-tjänsten. När du väljer **ellipsen (...)**  för en datauppsättning kan du utforska datan i en rapport, redigera inställningarna och konfigurera uppdateringen.
+I dessa fall skapas en datauppsättning som visas i Min arbetsyta, grupp eller container i Power BI-tjänsten. När du väljer **ellipsen (...)**  för en datauppsättning kan du utforska datan i en rapport, redigera inställningarna och konfigurera uppdateringen.
 
 ![](media/refresh-data/dataset-menu.png)
 
@@ -54,7 +54,7 @@ Innan vi går vidare finns det något annat som är mycket viktigt att förstå:
 De flesta organisationer bearbetar data en gång om dagen, vanligtvis på kvällen. Om du schemalägger uppdatering av en datauppsättning som skapats från en Power BI Desktop-fil som ansluter till en lokal databas och IT-avdelningen kör bearbetning av SQL-databasen en gång varje kväll, behöver du bara konfigurera schemalagd uppdatering en gång per dag. Till exempel efter bearbetning av databasen, men innan du kommer till arbetet. Naturligtvis är detta inte alltid fallet. Med Power BI finns många sätt att ansluta till datakällor som uppdateras ofta eller i realtid.
 
 ## <a name="types-of-refresh"></a>Typer av uppdatering
-Det finns fyra huvudsakliga typer av uppdatering i Power BI. Paketuppdatering, modell-/datauppdatering, paneluppdatering och uppdatering av visuella behållare.
+Det finns fyra huvudsakliga typer av uppdatering i Power BI. Paketuppdatering, modell-/datauppdatering, paneluppdatering och uppdatering av visuella containrar.
 
 ### <a name="package-refresh"></a>Paketuppdatering
 Detta synkroniserar Power BI Desktop eller Excel, filen mellan Power BI-tjänsten och OneDrive, eller SharePoint Online. Det hämtar inte data från den ursprungliga datakällan. Datauppsättningen i Power BI uppdateras bara med det som finns i filen i OneDrive eller SharePoint Online.
@@ -71,8 +71,8 @@ Paneluppdateringen uppdaterar cacheminnet för visuella panelobjekt i instrument
 
 Mer information kring vanliga fel vid paneluppdateringar finns i [Felsöka panelfel](refresh-troubleshooting-tile-errors.md).
 
-### <a name="visual-container-refresh"></a>Uppdatering av visuella behållare
-Uppdaterar den visuella behållaren med cachelagrade visuella rapportobjekt inom en rapport när data ändras.
+### <a name="visual-container-refresh"></a>Uppdatering av visuella containrar
+Uppdaterar den visuella containern med cachelagrade visuella rapportobjekt inom en rapport när data ändras.
 
 ## <a name="what-can-be-refreshed"></a>Vad kan uppdateras?
 I Power BI använder du vanligtvis Hämta data när du importerar data från en fil på en lokal enhet, OneDrive eller SharePoint Online, publicerar en rapport från Power BI Desktop eller ansluter direkt till en databas i molnet i din organisation. Nästan alla data i Power BI kan uppdateras, men om du behöver det eller inte beror på hur din datauppsättning har skapats och vilka datakällor den ansluter till. Nu ska vi titta på hur var och en av dessa uppdaterar data.
@@ -101,6 +101,7 @@ Datauppdatering stöds för Power BI Desktop-filer och Excel-arbetsböcker som a
 Att behålla sina filer i OneDrive eller SharePoint Online och ansluta till dem från Power BI ger stor flexibilitet. Men den flexibiliteten är också det som är svårast att förstå. Schemalagd uppdatering för filer som lagras i OneDrive eller SharePoint Online skiljer sig från paketuppdatering. Du kan läsa mer i avsnittet [Typer av uppdatering](#types-of-refresh).
 
 ### <a name="power-bi-desktop-file"></a>Power BI Desktop-fil
+
 | **Datakälla** | **Automatisk uppdatering** | **Användarkonfigurerad manuell eller schemalagd uppdatering** | **Gateway krävs** |
 | --- | --- | --- | --- |
 | Hämta data (i menyfliksområdet) används för att ansluta till och fråga efter data från alla online-datakällor i listan. |Nej |Ja |Nej (se nedan) |
@@ -117,6 +118,7 @@ Att behålla sina filer i OneDrive eller SharePoint Online och ansluta till dem 
 Mer information finns i [Uppdatera en datauppsättning som skapats från en Power BI Desktop-fil i OneDrive](refresh-desktop-file-onedrive.md).
 
 ### <a name="excel-workbook"></a>Excel-arbetsbok
+
 | **Datakälla** | **Automatisk uppdatering** | **Användarkonfigurerad manuell eller schemalagd uppdatering** | **Gateway krävs** |
 | --- | --- | --- | --- |
 | Datatabellerna i ett kalkylblad blir inte inlästa i Excel-datamodellen. |Ja, varje timme *(endast OneDrive/SharePoint Online)* |Endast manuellt *(endast OneDrive/SharePoint Online)* |Nej |
@@ -131,6 +133,7 @@ Mer information finns i [Uppdatera en datauppsättning som skapats från en Powe
 Mer information finns i [Uppdatera en datauppsättning som skapats från en Excel-arbetsbok i OneDrive](refresh-excel-file-onedrive.md).
 
 ### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Fil med kommaavgränsade värden (.csv) i OneDrive eller SharePoint Online
+
 | **Datakälla** | **Automatisk uppdatering** | **Användarkonfigurerad manuell eller schemalagd uppdatering** | **Gateway krävs** |
 | --- | --- | --- | --- |
 | Enkelt kommaavgränsat värde |Ja, varje timme |Endast manuellt |Nej |
@@ -145,6 +148,7 @@ Det finns två typer av innehållspaket i Power BI:
 **Organisationsinnehållspaket**: skapas och delas av användare i din organisation. Innehållspaketanvändarna kan inte konfigurera något uppdateringsschema eller uppdatera manuellt. Det är bara innehållspaketets skapare som kan installera uppdateringar för datauppsättningarna i innehållspaketet. Uppdaterade inställningar ärvs med datauppsättningen.
 
 ### <a name="content-packs-from-online-services"></a>Innehållspaket från onlinetjänster
+
 | **Datakälla** | **Automatisk uppdatering** | **Användarkonfigurerad manuell eller schemalagd uppdatering** | **Gateway krävs** |
 | --- | --- | --- | --- |
 | Onlinetjänster i Hämta data &gt; tjänster |Ja |Ja |Nej |
@@ -237,7 +241,7 @@ I det här fallet kan du uppdatera datan i datauppsättningen SalesReport.xlsx m
 > 
 > 
 
-Läs mer i [Excel-data i Power BI](service-excel-workbook-files.md), [Power BI Gateway – Personal](personal-gateway.md), [Lokal datagateway](service-gateway-onprem.md), [Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på en lokal enhet](refresh-excel-file-local-drive.md).
+Läs mer i [Excel-data i Power BI](service-excel-workbook-files.md), [Power BI Gateway – Personal](service-gateway-personal-mode.md), [Lokal datagateway](service-gateway-onprem.md), [Uppdatera en datauppsättning som skapats från en Excel-arbetsbok på en lokal enhet](refresh-excel-file-local-drive.md).
 
 ### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Power BI Desktop-fil med data från ett OData-flöde
 I det här fallet använder du Hämta data i Power BI Desktop för att ansluta till och importera insamlade data från ett OData-flöde.  Du skapar flera rapporter i Power BI Desktop, namnger sedan filen WACensus och sparar den på en resurs i ditt företag. Du kan sedan publicera filen till Power BI-tjänsten.
@@ -270,7 +274,7 @@ Mer information om felsökning finns i [Verktyg vid felsökning av uppdateringsp
 ## <a name="next-steps"></a>Nästa steg
 [Verktyg vid felsökning av uppdateringsproblem](service-gateway-onprem-tshoot.md)  
 [Felsökning av uppdateringsscenarier](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway – Personal](personal-gateway.md)  
+[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
 [Lokal datagateway](service-gateway-onprem.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

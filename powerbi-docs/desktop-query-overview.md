@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 35171c5b1d61b9df860b72ee98d8fb63a875092d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4ee0f114e6d905f202505f71b194a5b56fd6397
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286392"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137363"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Frågeöversikt i Power BI Desktop
 Med **Power BI Desktop** kan du ansluta till en värld av data, skapa övertygande och grundläggande rapporter och dela ditt arbete med andra – som sedan kan utgå från ditt arbete och förbättra sina Business Intelligence-uppgifter.
@@ -137,7 +137,7 @@ Spara arbetet genom att välja **Arkiv \> Spara** (eller **Arkiv \> Spara som**)
 ## <a name="next-steps"></a>Nästa steg
 Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Anslut till data i Power BI Desktop](desktop-connect-to-data.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)

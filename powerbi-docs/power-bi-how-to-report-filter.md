@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6d0a1afe27372c808e63adb34fda96e978b2e2be
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c25a402138c209eb6a4a36bf39865c30c1c0e5b9
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721396"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598952"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
 Den här artikeln tar en djup titt på filterrapportfönstret. Du ser fönstret i [Power BI-tjänsten Redigeringsvyn och Läsvyn](service-reading-view-and-editing-view.md) och i [Power BI Desktop Rapportvyn](desktop-report-view.md).
@@ -77,7 +77,7 @@ Välj nedpilen bredvid namnet på filtret om du vill visa alternativ för ett vi
 ## <a name="add-a-filter"></a>Lägg till ett filter
 * I redigeringsvyn i Desktop eller Power BI-tjänsten lägger du till ett filter i ett visuellt objekt, en sida, en visning av detaljerad information eller en rapport genom att välja ett fält från fönstret Fält och dra det till en lämplig filterbrunn, där du ser orden **Dra fält hit**. När ett fält har lagts till som ett filter, finjustera det med hjälp av grundläggande filtrering och avancerad filtrering (beskrivs nedan).
 
-- **Om du drar ett nytt fält till området för filter på visuell nivå läggs fältet inte till i det visuella objektet**, men du kan filtrera det visuella objektet med det nya fältet. I exemplet nedan, har **Kedja** lagts till som ett nytt filter i det visuella objektet. Observera när du lägger till **Kedja** som ett filter att detta inte ändrar det visuella objektet förrän du använder grundläggande eller avancerade filtreringskontroller.
+* **Om du drar ett nytt fält till området för filter på visuell nivå läggs fältet inte till i det visuella objektet**, men du kan filtrera det visuella objektet med det nya fältet. I exemplet nedan, har **Kedja** lagts till som ett nytt filter i det visuella objektet. Observera när du lägger till **Kedja** som ett filter att detta inte ändrar det visuella objektet förrän du använder grundläggande eller avancerade filtreringskontroller.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 

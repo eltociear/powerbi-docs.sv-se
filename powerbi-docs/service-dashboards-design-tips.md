@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9c67aa0982733847cdca7d6079fa8887e6c1d1d2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247057"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944984"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
@@ -59,7 +59,7 @@ De flesta läser uppifrån och ned, så placera mer allmän information högst u
 ## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Använd rätt visualisering för dina data och formatera den för enklare läsning
 Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar ska skapa en översiktsbild och vara enkla att ”läsa” och tolka.  För vissa data och visualiseringar räcker det med en enkel grafisk visualisering. Men andra data kan kräva en mer komplex visualisering – var noga med att använda rubriker och etiketter och andra anpassningar för att hjälpa läsaren.  
 
-* [Välj lämpliga datavisualiseringar](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Var försiktig med att använda diagram som förvränger verkligheten, det vill säga 3D-diagram. Tänk på att det är svårt för den mänskliga hjärnan att tolka runda figurer. Cirkeldiagram, ringdiagram, måttdiagram och andra runda diagramtyper kan se fina ut men de är inte den bästa lösningen för datavisualisering.
+* [Välj lämpliga datavisualiseringar](https://www.youtube.com/watch?v=-tdkUYrzrio). Var försiktig med att använda diagram som förvränger verkligheten, det vill säga 3D-diagram. Tänk på att det är svårt för den mänskliga hjärnan att tolka runda figurer. Cirkeldiagram, ringdiagram, måttdiagram och andra runda diagramtyper kan se fina ut men de är inte den bästa lösningen för datavisualisering.
 * Var konsekvent när du väljer skalor för diagram, bestämmer hur diagram ska dimensioneras och väljer färger för att betecknar värden i diagram.
 * Var noga med att koda kvantitativa data på ett snyggt sätt. Använd inte fler än tre eller fyra siffror när tal visas. Visa mått med en eller två siffror till vänster om decimaltecknet och skala för tusen eller miljoner, det vill säga skriv 3,4 miljoner och inte 3 400 000.
 * Blanda inte olika precisions- och tidsnivåer. Kontrollera att tidsramarna är lätta att förstå.  Placera inte ett diagram från förra månaden bredvid filtrerade diagram från en specifik månad det året.

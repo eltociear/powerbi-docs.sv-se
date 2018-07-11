@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 372f00e7bd62068688bdcc22c1e983c3fe629f8a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d28c6f4a0237253847cd474a3c3558399ba6fa64
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34295716"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600529"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Anpassa egenskaper för x-axeln och y-axeln
 I den här kursen lär du dig många olika sätt att anpassa x-axeln och y-axeln i visuella objekt. Det är inte alla axlar som kan anpassas. Cirkeldiagram, till exempel, har inga axlar. Anpassningsalternativen kan också variera från ett visuellt objekt till ett annat och det finns för många alternativ för att täcka dem i en enda artikel. Så tar vi en titt på några av de mest använda axelanpassningarna så att du kan vänja dig vid att använda fliken visuell formatering i arbetsytan för Power BI-rapporter.  
@@ -86,9 +86,9 @@ Först måste du skapa ett kombinationsdiagram som visar hur antalet butiker på
 
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
->[NOTE]: For help sorting by month, see [sorting by other criteria](power-bi-report-change-sort.md#other)
-1. I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
-2. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet. Skalan för **GM% Last Year (Bruttomarginal % förra året)** (den blå linjen som löper längst med rutnätslinjen för 0M %) är mycket mindre än skalan för **Försäljning**, vilket gör det svårt att jämföra. Och Y-axelns etikettprocenttal är märkliga.      
+> [NOTE]: For help sorting by month, see [sorting by other criteria](power-bi-report-change-sort.md#other)
+> 1. I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
+> 2. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet. Skalan för **GM% Last Year (Bruttomarginal % förra året)** (den blå linjen som löper längst med rutnätslinjen för 0M %) är mycket mindre än skalan för **Försäljning**, vilket gör det svårt att jämföra. Och Y-axelns etikettprocenttal är märkliga.      
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
 5. Konvertera linjediagrammet till ett Linjediagram och stående stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.

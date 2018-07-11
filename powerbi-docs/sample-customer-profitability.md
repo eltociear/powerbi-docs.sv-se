@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: f20fe4595236381106b6cb2a676ffd3d3baa3971
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fb06b83ca2fe949751337347c91b3947e115286d
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34471788"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944731"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
 
@@ -48,7 +48,7 @@ Vill du hänga på? Den här självstudien använder Power BI-tjänsten och exem
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
 Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop.
-[Exempel på kundlönsamhet](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer-Profitability-Sample-PBIX.pbix)
+[Exempel på kundlönsamhet](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
@@ -100,7 +100,7 @@ Två paneler på den här instrumentpanelen ”Mål kontra faktisk” och ”Til
     a. Från skjutreglaget ”Executive”, välj **Carlos Grilo**.   
     b. Första pivottabellen talar om för oss att Carlos intäkter för hans topprodukt Primus, har gått ner 152 % från föregående år. Och YoY-diagrammet visar att han är under budget de flesta månaderna.  
 
-    ![PivotTable](media/sample-customer-profitability/power-bi-pivotchart.png)
+    ![Pivottabell](media/sample-customer-profitability/power-bi-pivotchart.png)
 
     ![resultat för Carlos](media/sample-customer-profitability/power-bi-carlos.png)
 

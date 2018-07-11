@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: eaef6c8273fc8f4b0d4d43dc1df82fdf97c2edf8
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 8931bc773f0543cc8687c1a8f9f63681109247e2
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964778"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600214"
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Punktdiagram och bubbeldiagram i Power BI
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Dessa datapunkter kan vara jämnt eller ojämnt fördelade på den horisontala axeln, beroende på datan.
@@ -57,9 +57,9 @@ Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill f
    - **Försäljning** > **Total försäljningsvarians %**
    - **Distrikt** > **Distrikt**
 
-    ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
+     ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 
-    Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
+     Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](service-interact-with-a-report-in-editing-view.md).
 
 3. Konvertera till ett punktdiagram. På panelen Visualiseringar väljer du ytdiagramsikonen.
 

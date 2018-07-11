@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f283a8ed273dcb609e9d5160adbeb714e8935ab9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 57e1e8ce015db9b5f88f7b685c80092023540a6f
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251943"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599145"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Ansluta till Zuora med Power BI
 Med Zuora för Power BI kan du visualisera viktiga intäkter, fakturering och prenumerationsdata. Använd standardinstrumentpanelen och rapporter för att analysera användningstrender, spåra fakturering och betalningar och övervaka återkomma intäkter eller anpassa dem för att uppfylla dina unika behov av instrumentpaneler och rapporter.
@@ -32,7 +32,7 @@ Ansluta till [Zuora](https://app.powerbi.com/getdata/services/Zuora) för Power 
 3. Välj **Zuora** \> **Hämta**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Ange ditt Zuora-URL. Det här är vanligtvis ”https://www.zuora.com”. Information om att [söka efter de här parametrarna](#FindingParams) finns nedan.
+4. Ange ditt Zuora-URL. Det här är vanligtvis ”<https://www.zuora.com>”. Information om att [söka efter de här parametrarna](#FindingParams) finns nedan.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Som **Autentiseringsmetod** väljer du **Grundläggande** och anger sedan ditt användarnamn och lösenord (skiftlägeskänsliga). Välj sedan **Logga in**.

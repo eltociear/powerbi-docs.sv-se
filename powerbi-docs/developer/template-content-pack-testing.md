@@ -1,20 +1,20 @@
 ---
 title: Testa mallinnehållspaket för Power BI
 description: Testa mallinnehållspaket
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
-ms.author: maghan
-ms.openlocfilehash: 3658a569a0bd15822cd50fefb73e706d771b6c80
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.author: maggies
+ms.openlocfilehash: 8b1f29a0b7eab4420997de5b9879c25addff04f1
+ms.sourcegitcommit: 6407e053c2c6c6fdb212b059693e90fefbaaadec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288600"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290793"
 ---
 # <a name="testing-template-content-packs-for-power-bi"></a>Testa mallinnehållspaket för Power BI
 Det finns olika sätt att testa innehållspaketet innan du skickar det för publicering.  

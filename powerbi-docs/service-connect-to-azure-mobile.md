@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 336ae9cd9ac2940b244df88aaf5a8fff7bd3a55e
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2d2d983da6de5ec88574092289ed2958c7a98923
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241852"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600422"
 ---
 # <a name="connect-to-azure-mobile-engagement-with-power-bi"></a>Ansluta till Azure Mobile Engagement med Power BI
 Med innehållspaketet Power BI Azure Mobile Engagement kan du snabbt få insikter om dina appdata.
@@ -42,7 +42,7 @@ Ansluta till innehållspaketet [Azure Mobile Engagement](https://app.powerbi.com
    
     ![](media/service-connect-to-azure-mobile/dashboard.png)
 
- **Och sedan?**
+## <a name="what-now"></a>Vad händer nu?
 
 * Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bb35e8762b4cbe79e8efe2aede15bcac66f2ac8b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 699df2cf1cfcfde25eaadcec2946e9be922c56d9
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34289796"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136098"
 ---
 # <a name="connect-to-excel-in-power-bi-desktop"></a>Ansluta till Excel i Power BI Desktop
 Det är enkelt att ansluta till en Excel-arbetsbok från Power BI Desktop. Den här artikeln vägleder dig genom stegen.
@@ -48,7 +48,7 @@ Du är nu redo att använda den importerade informationen från din Excel-arbets
 ### <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Anslut till CSV-filer i Power BI Desktop](desktop-connect-csv.md)   

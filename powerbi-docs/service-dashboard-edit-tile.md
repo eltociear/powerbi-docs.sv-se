@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 07db52bd2ffd881417f7ff59647c6779f7dc6bce
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248352"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598988"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Redigera eller ta bort en panel på instrumentpanelen
 
@@ -35,12 +35,12 @@ Den här artikeln beskriver hur du kan göra följande.
 * [Fästa en panel på en annan instrumentpanel](#different)
 * [Ta bort en panel](#delete)
   
- > [!TIP]
- > För att ändra den visualisering som visas på själva panelen tar du bort panelen och lägger till en ny [panel på instrumentpanelen](service-dashboard-tiles.md).
- > 
+  > [!TIP]
+  > För att ändra den visualisering som visas på själva panelen tar du bort panelen och lägger till en ny [panel på instrumentpanelen](service-dashboard-tiles.md).
 
- ### <a name="prerequisites"></a>Förutsättningar
- 1. Om du vill följa med, öppnar du Power BI-tjänsten (inte Power BI Desktop) och [hämtar exemplet med IT-utgiftsanalys](sample-it-spend.md). När det visas ett meddelande om att det lyckats, väljer du **Gå till instrumentpanel**
+  
+## <a name="prerequisites"></a>Förutsättningar
+Om du vill följa med, öppnar du Power BI-tjänsten (inte Power BI Desktop) och [hämtar exemplet med IT-utgiftsanalys](sample-it-spend.md). När det visas ett meddelande om att det lyckats, väljer du **Gå till instrumentpanel**
 
 - - -
 <a name="create"></a>

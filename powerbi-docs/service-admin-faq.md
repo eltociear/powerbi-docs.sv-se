@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4c8601e15a415e680028b2259a4c2b8e56dbd3b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dce044a3f143ba85732c8345639ea57f44f05d5f
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297249"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926606"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -41,14 +41,13 @@ Den här artikeln tar upp vanliga frågor och svar för Power BI-administration.
 * [Hur tar jag bort Power BI för användare som redan har registrerat sig?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Hur vet jag när nya användare har anslutit sig min klient?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Bör jag vara medveten om några andra förberedelser?](#are-there-any-additional-things-i-should-be-prepared-for)
-* [Är detta kostnadsfritt? Kommer jag att debiteras för dessa licenser?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Var finns min Power BI-klient?](#where-is-my-power-bi-tenant-located)
 * [Vad är Power BI SLA (serviceavtal)?](#what-is-the-power-bi-sla)
 
 **Säkerhet i Power BI**
 
 * [Uppfyller Power BI nationella, regionala och branschspecifika efterlevnadskrav?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
-* [Hur fungerar säkerheten i Power BI?](#how-does-security-work-in-power-bi?)
+* [Hur fungerar säkerheten i Power BI?](#how-does-security-work-in-power-bi)
 
 ## <a name="sign-up-for-power-bi"></a>Registrera dig för Power BI
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hur registrerar sig användare för Power BI?
@@ -232,9 +231,6 @@ Du kan uppleva en ökning av begäranden om lösenordsåterställning. Informati
 
 Du kan ta bort en användare från din klient via standardprocessen i administrationscentret för Office 365. Om användaren fortfarande har en aktiv e-postadress från din organisation kommer de att kunna återansluta om du inte blockerar alla användare från att ansluta.
 
-### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Är detta kostnadsfritt? Kommer jag att debiteras för dessa licenser?
-Licenser för **Power BI (kostnadsfri)** gäller för den kostnadsfria versionen av Power BI. Om du är intresserad av ytterligare funktioner kan du ta en titt på [Power BI Pro-version](service-premium.md).
-
 ### <a name="where-is-my-power-bi-tenant-located"></a>Var finns min Power BI-klient?
 Information om platsen för din Power BI-klient, eller dataregion, finns i [Var finns min Power BI-klient?](service-admin-where-is-my-tenant-located.md)
 
@@ -252,7 +248,6 @@ Power BI bygger på Office 365, som i sin tur bygger på Azure-tjänster som Azu
 [Power BI-administratörsportalen](service-admin-portal.md)  
 [Förstå Power BI-administratörsrollen](service-admin-role.md)  
 [Självregistrering för Power BI](service-self-service-signup-for-power-bi.md)  
-[Power BI (kostnadsfri) i din organisation](service-admin-service-free-in-your-organization.md)  
 [Köp Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Premium – vad är det?](service-premium.md)  
 [Så här köper du Power BI Premium](service-admin-premium-purchase.md)  

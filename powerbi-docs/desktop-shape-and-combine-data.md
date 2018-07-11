@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 27479add7839e1078e76bbb6523b287f10194566
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6c1bb67b0c7fb8d3e3344cbb48f7fcf52dac64ed
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34288761"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137317"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Självstudie: Forma och kombinera data i Power BI Desktop
 
@@ -233,7 +233,7 @@ Om du vill tillämpa ändringarna och stänga frågeredigeraren väljer du **St�
 ## <a name="next-steps"></a>Nästa steg
 Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Anslut till data i Power BI Desktop](desktop-connect-to-data.md)

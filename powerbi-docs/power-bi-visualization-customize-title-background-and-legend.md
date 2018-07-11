@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1a39b347a68cb5557ffff7758efbfba86884b5ce
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297111"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599011"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Anpassa visualiseringens rubrik, bakgrund och förklaring
 I den här självstudien lär du dig några olika sätt att anpassa dina visualiseringar.   Det finns många alternativ för att anpassa dina visualiseringar. Det bästa sättet att lära dig om alla är att utforska fönstret Formatering (välj roller-ikonen).  Om du vill komma igång visar i den här artikeln hur du anpassar en visualiserings rubrik, förklaring och bakgrund.  
@@ -41,26 +41,26 @@ Logga in till Power BI-tjänsten (app.powerbi.com) och [öppna rapporten Exempel
 
 1. Gå till sidan ”Nya butiker” i rapporten och välj stapeldiagrammet ”Antal öppna butiker efter öppen månad...”.
 2. I visualiseringspanelen väljer du färgrollerikonen för att visa formateringsalternativen.  och välj **rubrik** att expandera avsnittet.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 3. Aktivera och inaktivera **Rubrik** genom att välja på (eller av) med skjutreglaget. Lämna den **på** för tillfället.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
 4. Ändra **rubriktexten** genom att skriva **Antal öppna butiker efter öppen månad** i textfältet.  
 5. Ändra **Teckenfärg** till orange och **bakgrundsfärg** till gult.
-   
+
    * Välj i listrutan och välj en färg från **temafärger**, **Senaste färger** eller **Anpassade färger**.
    * Välj i listrutan för att stänga färgfönstret.  
      ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
-   
+
    Du kan alltid återgå till sidan genom att välja **Återgå till standard** i färgfönstret.
 6. Öka textstorleken till 12.
 7. Den sista anpassningen i diagrammet är att vi ändrar rubriken så att den befinner sig i mitten. Som standard är rubriken vänsterjusterad.  
    ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
-   
+
     I detta läge i självstudierna bör det stående stapeldiagrammets **Rubrik** se ut ungefär så här:  
     ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
-   
+
     Om du vill återställa alla anpassningar av rubriken som du har gjort hittills väljer du **återgå till standard** längst ned i anpassningsfönstret för **Rubrik**.  
     ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
@@ -69,29 +69,30 @@ Expandera alternativet Bakgrund i samma stapeldiagram.
 
 1. Aktivera och inaktivera bakgrunden genom att välja på (eller av) med skjutreglaget. Lämna den **på** för tillfället.
 2. Ändra bakgrundsfärgen till 74 % grå.
-   
+
    * Välj i listrutan och välj en grå färg från **temafärger**, **Senaste färger** eller **Anpassade färger**.
    * Ändra genomskinligheten till 74 %.   
      ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
-   
+
    Om du vill återställa alla anpassningar av bakgrunden som du har gjort hittills väljer du **återgå till standard** längst ned i anpassningsfönstret för **Bakgrund**.
 
 ## <a name="customize-visualization-legends"></a>Anpassa visualiseringens förklaringar
 1. Öppna rapportsidan **Översikt** och välj diagrammet”Total Sales Variance by FiscalMonth and District Manager”.
 2. Välj penselikonen för att öppna formateringsfönstret på visualiseringsfliken.  
 3. Visa **förklaring**salternativ.
-   
+
       ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
 4. Aktivera och inaktivera förklaringargenom att välja på (eller av) med skjutreglaget. Lämna den **på** för tillfället.
 5. Flytta förklaringen till vänster sida av visualiseringen.    
 6. Lägg till en förklaringsrubrik genom att växla **Rubrik** till **på** och skriva **Chefer** i fältet **förklaringens namn**.
    ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
-   
+
    Om du vill återställa alla anpassningar av förklaringen som du har gjort hittills väljer du **återgå till standard** längst ned i anpassningsfönstret för **Förklaring**.
 
 <a name="list"></a>
 
 ## <a name="visualization-types-that-can-be-customized"></a>Visualiseringstyper som kan anpassas
+
 | Visualisering | Rubrik | Bakgrund | Förklaring |
 |:--- |:--- |:--- |:--- |
 | område |ja |ja |ja |

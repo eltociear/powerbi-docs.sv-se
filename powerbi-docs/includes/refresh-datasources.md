@@ -1,4 +1,5 @@
 ### <a name="on-premises-data-gateway"></a>Lokal datagateway
+
 | **Datakälla** |
 | --- |
 | Analysis Services-tabell |

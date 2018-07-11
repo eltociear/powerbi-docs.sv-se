@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3575a94ede595b4d83fef0cddcbb279ea7a533c0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0e0f9e857816b44782831640a74801b515919bae
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34285541"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136765"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Använda banddiagram i Power BI
 Du kan använda banddiagram i **Power BI** för att visualisera data och snabbt avgöra vilken datakategori som har högst rangordning (störst värde). Banddiagram är effektiva för att visa en rangordningsförändring med den högsta rangordningen (värdet) längst upp för varje tidsperiod. Banddiagram är tillgängliga i **Power BI Desktop** från och med september 2017 och i efterföljande uppdateringar av **Power BI-tjänsten**.
@@ -44,7 +44,7 @@ Formateringsalternativen för banddiagram låter göra följande justeringar:
 ## <a name="next-steps"></a>Nästa steg
 För mer information om **Power BI Desktop**, och hur du kommer igång, ta en titt i följande artiklar.
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Anslut till data i Power BI Desktop](desktop-connect-to-data.md)

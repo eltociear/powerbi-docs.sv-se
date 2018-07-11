@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 019aa1425d05fcfdc4415570acdc29e7a684dc25
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 88b8b4a50913cd45c5e4ff80a5d5e0ded2eb4cdb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290969"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600761"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
 I Power BI Desktop skapar du en **formkartan** för att visa relativa jämförelser mellan områden på en karta genom att använda olika färger i olika områden. Jämfört med **kartor** kan **formkartor** inte visa exakta geografiska platser för datapunkter på en karta. Dess huvudsakliga syfte är att visa relativa jämförelser för regioner på en karta genom att markera dem med olika färger.
@@ -40,23 +40,23 @@ Power BI Desktop skapar en tom arbetsyta för **Formkarta**.
 Vidta följande steg för att skapa en **Formkarta**:
 
 1. I rutan **Fält** drar du ett datafält som har ett regionnamn (eller förkortning) till **plats**bucketen och datafältet i bucketen **Färgmättnad** (du kommer inte se en karta ännu).
-   
+
    > [!NOTE]
-> Se avsnittet **Hämta kartdata** nedan för information om hur du snabbt hämtar kartdata för att testa **formkartan**.
+   > Se avsnittet **Hämta kartdata** nedan för information om hur du snabbt hämtar kartdata för att testa **formkartan**.
    > 
    > 
-   
+
    ![](media/desktop-shape-map/shape-map_3a.png)
 2. I inställningsfönstret **Format** expanderar du **Form** och väljer från listrutan **Standardkartor** för att visa dina data. Nu visas renderingen som i följande bild.
-   
+
    ![](media/desktop-shape-map/shape-map_3b.png)
-   
+
    > [!NOTE]
-> I avsnittet **Regionnycklar** i slutet av den här artikeln finns en uppsättning tabeller som har kartregionnycklar som du kan använda för att testa **Formkartan**.
+   > I avsnittet **Regionnycklar** i slutet av den här artikeln finns en uppsättning tabeller som har kartregionnycklar som du kan använda för att testa **Formkartan**.
    > 
    > 
 3. Du kan ändra kartans projektion och zoomningsinställningar samt färger för datapunkter, från inställningsfönstret **Format**. Du kan också ändra inställningarna för zoomning. Du kan till exempel ändra färger, ange max- och minimivärdena och så vidare.
-   
+
    ![](media/desktop-shape-map/shape-map_3d.png)
 4. Du kan också lägga till en kategoridatakolumn till **förklarings**bucketen och klassificera kartregioner utifrån kategorier.
 
@@ -114,6 +114,7 @@ Det finns några överväganden och krav för den här förhandsversionen av **F
 Använd följande **Regionsnycklar** i den här förhandsversionen för att testa **formkartan**.
 
 ### <a name="australia-states"></a>Australien: delstater
+
 | ID | förkortn. | ISO | namn | postnummer |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
@@ -126,6 +127,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
 ### <a name="austria-states"></a>Österrike: förbundsländer
+
 | ID | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Wien |WI |
@@ -139,6 +141,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | för |AT-1 |Burgenland |Burgenland |BU |
 
 ### <a name="brazil-states"></a>Brasilien: delstater
+
 | ID |
 | --- |
 | Tocantins |
@@ -174,6 +177,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | Litigated Zone 4 |
 
 ### <a name="canada-provinces"></a>Kanada: provinser
+
 | ID | ISO | namn | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
@@ -191,6 +195,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | ca-ab |CA-AB |Alberta |AB |
 
 ### <a name="france-regions"></a>Frankrike: regioner
+
 | ID | namn | namn-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
@@ -217,6 +222,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | Aquitaine |Aquitaine |Aquitaine |
 
 ### <a name="germany-states"></a>Tyskland: delstater
+
 | ID | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
@@ -237,6 +243,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | de-bw |DE-BW |Baden-Württemberg |Baden-Württemberg |BW |
 
 ### <a name="ireland-counties"></a>Irland: grevskap
+
 | ID |
 | --- |
 | Wicklow |
@@ -267,6 +274,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | Carlow |
 
 ### <a name="italy-regions"></a>Italien: regioner
+
 | ID | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
@@ -285,12 +293,13 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | it-fv |IT-36 |Friuli-Venezia Giulia |Friuli-Venezia Giulia |FV |
 | it-er |IT-45 |Emilia-Romagna |Emilia-Romagna |ER |
 | it-cm |IT-72 |Campania |Campania |CM |
-| it-lb |IT-78 |Calabria |Calabria |LB |
+| it-lb |IT-78 |Calabria |Calabria |Lastbalanserare |
 | it-bc |IT-77 |Basilicata |Basilicata |BC |
 | it-pu |IT-75 |Apulia |Apulien |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
 ### <a name="mexico-states"></a>Mexiko: delstater
+
 | ID | förkortning | ISO | namn | namn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
@@ -327,6 +336,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
 ### <a name="netherlands-provinces"></a>Nederländerna: provinser
+
 | ID | ISO | namn | namn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Zuid-Holland |
@@ -343,6 +353,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
 ### <a name="uk-countries"></a>Storbritannien: länder
+
 | ID | ISO | namn |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
@@ -351,6 +362,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | gb-eng |GB-ENG |England |
 
 ### <a name="usa-states"></a>USA: delstater
+
 | ID | namn | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |

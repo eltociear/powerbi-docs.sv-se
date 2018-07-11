@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 38985014407a4d64998e25f6944f57aedcc67309
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445013"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092056"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Självstudier: Utforska Power BI-rapportservern på en virtuell dator
 I de här självstudierna skapar du en virtuell Azure-dator med Power BI-rapportservern redan installerad, så att du kan visa, redigera och hantera exempel på Power BI- och sidnumrerade rapporter samt KPI:er.
@@ -100,7 +100,7 @@ När den virtuella datorn öppnas visas nedanstående objekt på skrivbordet.
 |![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Startar Power BI Desktop som har optimerats för Power BI-rapportservern (mars 2018)  |
 |![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Öppnar Power BI-rapportserverns webbportal i webbläsaren   |
 
-Dubbelklicka på ikonen för **rapportserverns webbportal**. Webbläsaren öppnar http://localhost/reports/browse. I webbportalen kan du se olika filer grupperade efter typ. 
+Dubbelklicka på ikonen för **rapportserverns webbportal**. Webbläsaren öppnar `http://localhost/reports/browse`. I webbportalen kan du se olika filer grupperade efter typ. 
 
 ![Webbportalen för Power BI-rapportserver](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

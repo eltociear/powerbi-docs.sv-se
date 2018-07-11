@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296320"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600389"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Använd utvecklingsverktyg för att skapa en anpassad visualisering
 Med anpassad visualisering kan du uppfylla dina användares behov och matcha appens design. Lär dig hur du skapar en anpassad visualisering för Power BI med utvecklingsverktygen.
@@ -32,14 +32,14 @@ Du måste installera NodeJS för att skapa en anpassad visualisering. NodeJS kr�
 
 1. Hämta och installera [NodeJS](https://nodejs.org). Version 4.0 eller senare krävs, men det är rekommenderat att ha 5.0 eller senare.
 2. Installera kommandoradverktyg. Kör följande kommando från en kommandotolk.
-   
+
         npm install -g powerbi-visuals-tools
 3. Du kan bekräfta att verktygen är installerade genom att köra följande kommando utan några parametrar.
-   
+
         pbiviz
-   
+
     Du bör se utdata för hjälp.
-   
+
     <pre><code>
          +syyso+/
     oms/+osyhdhyso/
@@ -59,22 +59,22 @@ Du måste installera NodeJS för att skapa en anpassad visualisering. NodeJS kr�
                /dmmh /mmmm/ /osyhhy/
                  //   dmmd
                        ++
-   
+
        PowerBI Custom Visual Tool
-   
+
     Usage: pbiviz [options] [command]
-   
+
     Commands:
-   
+
     new [name]        Create a new visual
     info              Display info about the current visual
     start             Start the current visual
     package           Package the current visual into a pbiviz file
     update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
     help [cmd]        display help for [cmd]
-   
+
     Options:
-   
+
     -h, --help      output usage information
     -V, --version   output the version number
     --install-cert  Install localhost certificate
@@ -103,7 +103,7 @@ Kör följande kommando för att *skapa* ett certifikat.
 Kör följande kommando för att *installera* certifikatet.
 
     pbiviz --install-cert
-    
+
 > [!NOTE]
 > Du bör se ett meddelande om att använda den nyligen skapade lösenfrasen för att installera ett PFX-certifikat.
 > 
@@ -112,20 +112,20 @@ Kör följande kommando för att *installera* certifikatet.
 **Windows OS**
 
 1. Välj **installera certifikat...** .
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 2. Välj **Aktuell användare** och välj sedan **Nästa**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 3. Välj **Placera alla certifikat i nedanstående arkiv** och välj **Bläddra...** .
 4. Välj **Betrodda rotcertifikatutfärdare** och välj sedan **OK**. Välj **Nästa**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 5. Välj **Slutför**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 6. Välj **Ja** på säkerhetsvarningsmeddelandet.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 7. Stäng alla webbläsare som du har öppnat.
 
@@ -137,13 +137,13 @@ Kör följande kommando för att *installera* certifikatet.
 **OSX**
 
 1. Om låset i det övre vänstra hörnet är låst markerar du det för att låsa upp det. Sök efter *localhost* och dubbelklicka på certifikatet.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Välj **Lita alltid på** och stäng fönstret.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 3. Ange ditt användarnamn och lösenord. Välj **Uppdatera inställningar**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 4. Stäng alla webbläsare som du har öppnat.
 
@@ -157,15 +157,15 @@ Följ dessa steg om du vill aktivera en dynamisk förhandsgranskning av din anpa
 
 1. Bläddra och logga in på [app.powerbi.com](https://app.powerbi.com).
 2. Välj **kugghjulsikonen** och sedan **Inställningar**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 3. Välj **Utvecklare** och välj sedan **Aktivera utvecklarens visualisering för test**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 4. Välj **Utvecklarens visualisering** i fönstret **Visualisering**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
-   
+
    > [!NOTE]
    > Detta kräver att du har kört `pbiviz start` från visualiseringsmappen på din utvecklingsdator. Mer information om hur du skapar ditt visuella objekt finns [Skapa en ny visualisering](#create-a-new-visual) i den här artikeln.
    > 
@@ -196,11 +196,11 @@ Du kan köra ditt visuella objekt genom att göra följande.
 1. Öppna en kommandotolk.
 2. Ändra katalogen till din mapp för visuella objekt. Detta är den mapp som innehåller filen `pbiviz.json`.
 3. Kör följande kommando.
-   
+
     ```
     pbiviz start
     ```
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
 Om du befinner dig på fel plats visas ett fel som liknar följande.
@@ -249,7 +249,7 @@ Du kan paketera ditt visuella objekt genom att göra följande.
 1. Öppna en kommandotolk.
 2. Ändra katalogen till din mapp för visuella objekt. Detta är den mapp som innehåller filen `pbiviz.json`.
 3. Kör följande kommando.
-   
+
     ```
     pbiviz package
     ```
@@ -294,6 +294,7 @@ Därmed uppdateras ditt visuella objekt till API-version 1.2.0. Du kan ersätta 
 Ditt visualiseringsprojekt befinner sig i den mapp som skapas när du kör kommandot `pbiviz new`. 
 
 ### <a name="file-structure"></a>Filstruktur
+
 | Objekt | Beskrivning |
 | --- | --- |
 | assets/ |Används för att lagra visualiseringsresurser (ikon, skärmbilder och så vidare). |

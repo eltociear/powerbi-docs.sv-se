@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 42f5353c49d562f4fefeec81867fd9e9ff4831c2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5f64c32b2e4756d8815316cc45ddfd96a2167d71
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239035"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092286"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som skapats från en .CSV-fil i OneDrive eller SharePoint Online
 ## <a name="what-are-the-advantages"></a>Vilka är fördelarna?
@@ -31,7 +31,7 @@ Filer med kommaavgränsade värden är enkla textfiler, så anslutningar till ex
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive för företag. Vad är skillnaden?
 Om du både har en privat OneDrive och en OneDrive för företag, bör du ha alla filer som du vill ansluta till i Power BI i din OneDrive för företag. Skälet är att du förmodligen använder två olika konton för att logga in på dem.
 
-Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men din privata OneDrive loggar du troligen in på med ett annat [Microsoft-konto](http://www.microsoft.com/account/default.aspx).
+Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men din privata OneDrive loggar du troligen in på med ett annat [Microsoft-konto](https://account.microsoft.com).
 
 När du loggar in på ditt Microsoft-konto bör du markera Jag vill förbli inloggad. Power BI kan sedan synkronisera uppdateringarna med datauppsättningar i Power BI
 

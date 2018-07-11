@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e6dbd431a1ea37195a6cbb6e3d9a39d79a4e9b0d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 96c1709c1d85b8a960be9c96b6839b69b4f22eaa
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248145"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145466"
 ---
 # <a name="configuring-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 
@@ -26,7 +26,7 @@ ms.locfileid: "34248145"
 
 Om din datauppsättning stöder schemalagd uppdatering med hjälp av Uppdatera nu och Uppdatera schema, finns det några krav och inställningar som är viktiga att tillämpa för att uppdateringen ska lyckas. Dessa är **Gateway-anslutning**, **Autentiseringsuppgifter för datakälla** och **Uppdatera schema**. Låt oss ta en närmare titt på var och en.
 
-Här beskrivs tillgängliga alternativ för både [Power BI Gateway – Personal](personal-gateway.md) och [den lokala datagatewayen](service-gateway-onprem.md).
+Här beskrivs tillgängliga alternativ för både [Power BI Gateway – Personal](service-gateway-personal-mode.md) och [den lokala datagatewayen](service-gateway-onprem.md).
 
 Du kan göra följande för att komma till skärmen Uppdatera schema.
 
@@ -123,7 +123,7 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problem
 
 ## <a name="next-steps"></a>Nästa steg
 [Datauppdatering i Power BI](refresh-data.md)  
-[Power BI Gateway – Personal](personal-gateway.md)  
+[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
 [Lokal datagateway](service-gateway-onprem.md)  
 [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  

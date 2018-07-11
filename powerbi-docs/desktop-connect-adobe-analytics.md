@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f54aa5a67739a3ad6f9ea0a42f8a2b872e51d52d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: da688638170db8a296c680bc88c1030924078967
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34230932"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134557"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Anslut till Adobe Analytics i Power BI Desktop 
 I **Power BI Desktop** kan du ansluta till **Adobe Analytics** och använda underliggande data precis som andra datakällor i Power BI Desktop. 
@@ -43,7 +43,7 @@ Du kan **Hämta** den markerade tabellen, vilket öppnar hela tabellen i **Power
 ## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Anslut till Excel-arbetsböcker i Power BI Desktop](desktop-connect-excel.md)   

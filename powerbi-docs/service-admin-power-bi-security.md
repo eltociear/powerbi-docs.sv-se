@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: d3b3e077ac3dadf92a1c25d3704a4f59adea588b
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ec8f1e40cac1c98bcfb5049d1fe8dd7397b616d6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296237"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598876"
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 En detaljerad förklaring av Power BI-säkerheten får du om du [laddar ned white paper-dokumentet om Power BI-säkerhet](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -48,7 +48,7 @@ Den streckade linjen i bilden för **serverdelsklustret** ovan, visar gränsen m
 ## <a name="user-authentication"></a>Användarautentisering
 Power BI använder Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) till att autentisera användarna som loggar in på Power BI-tjänsten. Därefter används inloggningsuppgifterna för Power BI varje gång en användare försöker få åtkomst till resurser som kräver autentisering. När användarna loggar in på Power BI-tjänsten används den e-postadress som användes när deras Power BI-konton skapades. Power BI använder e-postinloggningen som *effektivt användarnamn* och skickar den till resurserna när en användare försöker att ansluta till data. Det *effektiva användarnamnet* mappas sedan till *Användarens huvudnamn* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) och matchas med det associerade Windows-domänkonto som autentiseringen används för.
 
-För organisationer som använt e-postadressen till arbetet vid Power BI-inloggning (t.ex *david@contoso.com*), är *effektiva användarnamn* som UPN-mappning enkel att använda. För organisationer som inte har använt e-postadressen till arbetet för Power BI-inloggning (t.ex *david@contoso.onmicrosoft.com*), kommer mappningen mellan AAD och lokala autentiseringsuppgifter kräva att [katalogsynkroniseringen](https://technet.microsoft.com/library/jj573653.aspx) fungerar som den ska.
+För organisationer som använt e-postadressen till arbetet vid Power BI-inloggning (t.ex <em>david@contoso.com</em>), är *effektiva användarnamn* som UPN-mappning enkel att använda. För organisationer som inte har använt e-postadressen till arbetet för Power BI-inloggning (t.ex <em>david@contoso.onmicrosoft.com</em>), kommer mappningen mellan AAD och lokala autentiseringsuppgifter kräva att [katalogsynkroniseringen](https://technet.microsoft.com/library/jj573653.aspx) fungerar som den ska.
 
 Plattformssäkerheten för Power BI inkluderar även miljösäkerhet för flera klienter, nätverkssäkerhet och möjligheten att lägga till ytterligare AAD-baserade säkerhetsåtgärder.
 

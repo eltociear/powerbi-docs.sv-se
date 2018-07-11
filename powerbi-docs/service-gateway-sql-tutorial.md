@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2dc47d1fdf539c20cc0aabadd65b0401dc172ae8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 087813feb7db96a320c48ed6b2433a7183446c71
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298974"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926523"
 ---
 # <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Självstudier: Ansluta till lokala data i SQL Server
 
@@ -128,7 +128,7 @@ Nu när du har exempeldata att arbeta med, ansluter du till SQL Server i Power B
 
 ## <a name="add-sql-server-as-a-gateway-data-source"></a>Lägga till SQL Server som en gatewaydatakälla
 
-I Power BI Desktop ansluter du direkt till SQL Server, men för Power BI-tjänsten krävs en gateway som fungerar som en brygga. Nu lägger du till din instans av SQL Server som datakälla för den gateway som du skapade i föregående artikel (som visas under [Förutsättningar](#prereqisites)). 
+I Power BI Desktop ansluter du direkt till SQL Server, men för Power BI-tjänsten krävs en gateway som fungerar som en brygga. Nu lägger du till din instans av SQL Server som datakälla för den gateway som du skapade i föregående artikel (som visas under [Förutsättningar](#prerequisites)). 
 
 1. Välj kugghjulsikonen ![Inställningar](media/service-gateway-sql-tutorial/icon-gear.png) > **Hantera gatewayer** i det övre högra hörnet av Power BI-tjänsten.
 
@@ -142,15 +142,17 @@ I Power BI Desktop ansluter du direkt till SQL Server, men för Power BI-tjänst
 
     ![Ange datakällsinställningar](media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    | Alternativ | Värde |
-    | ---    | ---   |
-    | **Namn på datakälla**       | test-sql-source      |
-    | **Typ av datakälla**       | SQL Server      |
-    | **Server**       |  Namnet på SQL Server-instansen (måste vara identiskt med vad du har angett i Power BI Desktop)    |
-    | **Databas**       | TestGatewayDocs      |
-    | **Autentiseringsmetod**       | Windows      |
-    | **Användarnamn**        |  Det konto, som michael@contoso.com, som du använder för att ansluta till SQL Server     |
-    | **Lösenord**       |  Lösenordet för kontot som används för att ansluta till SQL Server    |
+
+   |          Alternativ           |                                               Värde                                                |
+   |---------------------------|----------------------------------------------------------------------------------------------------|
+   |   **Namn på datakälla**    |                                          test-sql-source                                           |
+   |   **Typ av datakälla**    |                                             SQL Server                                             |
+   |        **Server**         | Namnet på SQL Server-instansen (måste vara identiskt med vad du har angett i Power BI Desktop) |
+   |       **Databas**        |                                          TestGatewayDocs                                           |
+   | **Autentiseringsmetod** |                                              Windows                                               |
+   |       **Användarnamn**        |             Det konto, som michael@contoso.com, som du använder för att ansluta till SQL Server             |
+   |       **Lösenord**        |                   Lösenordet för kontot som används för att ansluta till SQL Server                    |
+
 
 4. Välj **Lägg till**. Du ser *Anslutningen lyckades* när processen lyckas.
 

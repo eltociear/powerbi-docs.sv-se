@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef554d7190709565610336169b4883d71970f822
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 621a5f92ebd9c7314b719b6643f5bfef958916c3
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34799566"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599345"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfigurera proxyinställningar för den lokala datagatewayen
 Din arbetsmiljö kan kräva att du går via en proxy för att ansluta till Internet. Detta kan förhindra att den lokala datagatewayen ansluter till tjänsten.
@@ -77,23 +77,23 @@ När du konfigurerar proxyinställningarna till att använda standardautentiseri
 
 ### <a name="change-the-on-premises-data-gateway-service-account"></a>Ändra det lokala tjänstkontot för datagatewayen
 1. Ändra Windows-tjänstkontot för den **lokala datagatewaytjänsten**.
-   
+
     Standardkontot för tjänsten är *NT SERVICE\PBIEgwService*. Du kan ändra det till ett domänanvändarkonto i Active Directory-domänen. Eller så kan du använda ett hanterat tjänstkonto för att undvika att behöva ändra lösenordet.
-   
+
     Du kan ändra kontot på fliken **Logga in** i egenskaperna för Windows-tjänsten.
 2. Starta om den **lokala datagatewaytjänsten**.
-   
+
     Utfärda följande kommandon i kommandotolken som administratör.
-   
+
         net stop PBIEgwService
-   
+
         net start PBIEgwService
 3. Starta den **lokala datagatewaykonfiguratorn**. Du kan använda startknappen i Windows och söka efter *den lokala datagatewayen*.
 4. Logga in i Power BI.
 5. Återställa gatewayen med återställningsnyckeln.
-   
+
     Detta gör att det nya tjänstkontot kan dekryptera lagrade autentiseringsuppgifter för datakällor.
-    
+
 > [!NOTE]
 > När du ändrar tjänstkontot direkt via kontrollpanelen Tjänster, uppdateras inte ACL:er automatiskt. Du måste kontrollera att det nya tjänstkontot har åtkomst till installationsfilerna och mappen. Du hittar gatewayens installationsmapp under C:\Program\Lokal datagateway. 
 > 

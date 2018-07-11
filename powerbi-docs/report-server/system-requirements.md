@@ -7,19 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 06/13/2018
 ms.author: maghan
-ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c2784bf8e8dca857ae2a1b55d1ad8560e552cafb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481761"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37780604"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
 Här hittar du minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Krav på processor, minne och operativsystem
+
 | Komponent | Krav |
 | --- | --- |
 | .NET Framework |4.6<br><br>Du kan manuellt installera .NET Framework från [Microsoft .NET Framework 4.6 (webbinstallationsprogram) för Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Mer information, rekommendationer och vägledning för .NET Framework 4.6 finns i [.NET Framework Deployment Guide for Developer (.NET Framework-distributionsguiden för utvecklare)](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 och Windows Server 2012 R2 kräver [KB2919355](http://support.microsoft.com/kb/2919355) innan du installerar .NET Framework 4.6. |
@@ -41,8 +42,6 @@ SQL Server används som värd för rapportserverdatabaserna. SQL Server Database
 * SQL Server 2016
 * SQL Server 2014
 * SQL Server 2012
-* SQL Server 2008 R2
-* SQL Server 2008
 
 Om du vill skapa rapportserverdatabasen på en fjärrdator måste du konfigurera anslutningen för att använda ett domänanvändarkonto eller ett tjänstkonto som har åtkomst till nätverket. Om du vill använda en fjärrinstans av SQL Server, ska du noga överväga vilka autentiseringsuppgifter som rapportservern ska använda för att ansluta till SQL Server-instansen. Mer information finns i [Konfigurera en databasanslutning för rapportservern](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
@@ -67,7 +66,7 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 | 2016 och senare |Standard-SKU eller högre |
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI-rapportserver?](get-started.md)  
+[Vad är Power BI-rapportservern?](get-started.md)  
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

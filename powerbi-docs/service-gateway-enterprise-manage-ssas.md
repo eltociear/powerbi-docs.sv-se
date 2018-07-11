@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aa4bc70fa67af4e3b82b8ed9a4eb16851d98eaeb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297157"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599191"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Hantera din datakälla – Analysis Services
 När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda Analysis Services-datakällan antingen för schemalagd uppdatering eller för realtidsanslutningar.
@@ -52,7 +52,7 @@ Om en gateway tas bort raderas även alla datakällor under gatewayen.  Detta br
 
 1. Välj kugghjulsikonen ![](media/service-gateway-enterprise-manage-ssas/pbi_gearicon.png) i det övre högra hörnet > **Hantera gatewayer**.
 2. Gateway > **Ta bort**
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings7.png)
 
 ## <a name="add-a-data-source"></a>Lägga till en datakälla
@@ -119,15 +119,13 @@ Gör följande för att komma till UPN-mappningsskärmen.
 2. Expandera den gateway som innehåller Analysis Services-datakällan. Om du inte har skapat Analysis Services-datakällan än, kan du göra det nu.
 3. Välj datakällan och välj sedan fliken **Användare**.
 4. Välj **Mappa användarnamn**.
-   
+
     ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_02.png)
 
 Därefter visas alternativen för att lägga till regler samt test för en viss användare.
 
 > [!NOTE]
-> Du kan hända att du oavsiktligt ändrar en användare som du inte hade för avsikt att ändra. Om till exempel **Ersätt (ursprungligt värde)** är *@contoso.com* och **Med (nytt namn)** är *@contoso.local*, kommer alla användare med en inloggning som innehåller *@contoso.com* att ersättas med *@contoso.local*. Om **Ersätt (ursprungligt namn)** är *dave@contoso.com* och **Med (nytt namn)** är *dave@contoso.local*, skickas en användare med inloggningen v-dave@contoso.com som v-dave*@contoso.local*.
-> 
-> 
+> Du kan hända att du oavsiktligt ändrar en användare som du inte hade för avsikt att ändra. Om till exempel **Ersätt (ursprungligt värde)** är <em>@contoso.com</em> och **Med (nytt namn)** är <em>@contoso.local</em>, kommer alla användare med en inloggning som innehåller <em>@contoso.com</em> att ersättas med <em>@contoso.local</em>. Om **Ersätt (ursprungligt namn)** är <em>dave@contoso.com</em> och **Med (nytt namn)** är <em>dave@contoso.local</em>, skickas en användare med inloggningen v-dave@contoso.com som v-dave<em>@contoso.local</em>.
 
 ### <a name="ad-lookup-mapping"></a>Mappning av AD-sökningar
 Följ stegen i det här avsnittet om du vill mappa om AAD UPN:er till Active Directory-användare för att utföra en lokal AD-egenskapssökning. Vi börjar med att titta närmare på hur det här fungerar.
@@ -147,17 +145,17 @@ Gör följande på den lokala datagatewayen med konfigurerbar anpassad användar
 2. Leta upp attributet för AD-personen (till exempel *e-post*) baserat på inkommande UPN-sträng (”firstName.lastName@contoso.com”) från **Power BI-tjänsten**.
 3. Om AD-sökningen misslyckas, försöker den använda den vidareskickade UPN:en som EffectiveUser till SSAS.
 4. Om AD-sökningen lyckas, hämtas *UserPrincipalName* för AD-personen. 
-5. Den vidarebefordrar e-posten *UserPrincipalName* som *EffectiveUser* till SSAS, exempelvis:*Alias@corp.on-prem.contoso*
+5. Den vidarebefordrar e-posten *UserPrincipalName* som *EffectiveUser* till SSAS, exempelvis:<em>Alias@corp.on-prem.contoso</em>
 
 Konfigurera gatewayen för att utföra AD-sökning:
 
 1. Hämta och installera den senaste gatewayen
 2. I gatewayen behöver du ändra den **lokala datagatewaytjänsten** för att köras med ett domänkonto (i stället för ett lokalt tjänstkonto – annars fungerar inte AD-sökningen vid körning). Du måste starta om gatewaytjänsten för att ändringen ska börja gälla.  Gå till gatewayappen på din dator (sök efter ”lokal datagateway”). Det gör du genom att gå till **Tjänstinställningar > Byt tjänstkonto**. Kontrollera att du har återställningsnyckeln för gatewayen eftersom du behöver återställa den på samma dator om du inte vill skapa en ny gateway i stället. 
 3. Gå till installationsmappen för denna gateway, *C:\Program\Lokal datagateway* som administratör, så att du har behörighet att skriva och redigera följande fil:
-   
+
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Redigera följande två konfigurationsvärden enligt *dina* Active Directory-attributkonfigurationer för AD-användarna. Konfigurationsvärdena nedan är bara exempel – du måste ange dem baserat på din Active Directory-konfiguration. 
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
 5. Du måste starta om den **lokala datagatewaytjänsten** för att konfigurationsändringen ska börja gälla.
 

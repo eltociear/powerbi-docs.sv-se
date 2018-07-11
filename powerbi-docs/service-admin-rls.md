@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 34eabdcdd43ffc576ab684605b4c6ff374e58d50
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 89ffa4c644005b53c263bef4535628dd603f1f6d
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250532"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599856"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Säkerhet på radnivå (RLS) med Power BI
 Säkerhet på radnivå (RLS) med Power BI kan användas för att begränsa åtkomst till data för givna användare. Filter begränsar data på radnivå. Du kan definiera filter inom roller.
@@ -26,7 +26,7 @@ Du kan konfigurera RLS för datamodeller som importerats till Power BI med Power
 
 Som standard använder säkerhetsfiltrering på radnivå sig av enkelriktade filter, oavsett om relationerna är inställda på enkelriktade eller dubbelriktade. Du kan aktivera dubbelriktad korsfiltrering med säkerhet på radnivå manuellt genom att markera relationen och markera kryssrutan **Tillämpa säkerhetsfilter i båda riktningarna**. Du bör markera den här rutan när du implementerar [dynamisk säkerhet på radnivå](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters), där du anger säkerhet på radnivå baserat på användarnamn eller inloggnings-ID. 
 
-Mer information finns i [dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](desktop-bidirectional-filtering.md) och den tekniska artikeln [skydda Tabular BI-Semantikmodellen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing the Tabular BI Semantic Model.docx).
+Mer information finns i [dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](desktop-bidirectional-filtering.md) och den tekniska artikeln [skydda Tabular BI-Semantikmodellen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ![Använd säkerhetsfilter](media/service-admin-rls/rls-apply-security-filter.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b5959049b65d32eebf7f484e8485ff59a10f459
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5bb3f49ef49ed7bbaeb3f52e0711247e0abdc615
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286093"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134695"
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Använda insikter i Power BI Desktop (förhandsversion)
 Du kan uppmana **Power BI Desktop** att förklara ökningar eller minskningar i diagram och få snabba, automatiserade, insiktsfulla analyser om dina data. Det är bara att högerklicka på en datapunkt och välja **Analysera> förklarar minskningen** (eller ökningen, om fältet tidigare var lägre) så levereras insikter till dig i ett lättanvänt fönster.
@@ -72,7 +72,7 @@ Dessutom stöds följande modelltyper och datakällor inte för närvarande med 
 ## <a name="next-steps"></a>Nästa steg
 För mer information om **Power BI Desktop**, och hur du kommer igång, ta en titt i följande artiklar.
 
-* [Komma igång med Power BI Desktop](desktop-getting-started.md)
+* [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Anslut till data i Power BI Desktop](desktop-connect-to-data.md)
