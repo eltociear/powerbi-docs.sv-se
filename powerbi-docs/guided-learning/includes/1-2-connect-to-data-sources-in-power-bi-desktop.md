@@ -6,7 +6,7 @@ När du startar **Power BI Desktop** och går förbi startskärmen kan du hämta
 
 Det görs månatliga uppdateringar av Power BI Desktop, och med varje uppdatering uppdateras sidan **Power BI Desktop-nyheter** med information om uppdateringarna, länkar till bloggen och en länk för hämtning.
 
-I Power BI Desktop finns det många olika typer av datakällor. Upprätta en anslutning genom att välja en källa. Beroende på ditt val blir du ombedd att hitta datakällan på datorn eller i nätverket, eller så uppmanas du att logga in på en tjänst för att autentisera din begäran.
+I Power BI Desktop finns det många olika typer av datakällor. Upprätta en anslutning genom att välja en källa. Beroende på ditt val blir du ombedd att hitta datakällan på datorn eller i nätverket, eller så uppmanas du att logga in på en tjänst och autentisera din begäran.
 
 ![](media/1-2-connect-to-data-sources-in-power-bi-desktop/1-2_2.gif)
 

@@ -4,7 +4,7 @@ Med OneDrive för företag som källa för ditt innehåll i Power BI får du til
 
 ![](media/6-4a-integrate-onedrive-for-business/6-4a_1.png)
 
-Logga in på Power BI-tjänsten för att ansluta till en PBIX-fil (Power BI Desktop) på OneDrive för företag och välj **Hämta data**. Välj **Filer** under Importera eller Anslut till data och välj sedan **OneDrive – företag**. Markera önskad fil och välj **Anslut**.
+Logga in på Power BI-tjänsten och välj **Hämta data** om du vill ansluta till en PBIX-fil (Power BI Desktop) på OneDrive för företag. Välj **Filer** under Importera eller Anslut till data och välj sedan **OneDrive – företag**. Markera önskad fil och välj **Anslut**.
 
 ![](media/6-4a-integrate-onedrive-for-business/6-4a_2.png)
 

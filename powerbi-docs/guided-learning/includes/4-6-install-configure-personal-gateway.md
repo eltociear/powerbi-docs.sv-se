@@ -22,7 +22,7 @@ Du uppmanas därefter att starta konfigurationsguiden för att konfigurera gatew
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3b.png)
 
-Du kommer först ombes att logga in på ditt Power BI-tjänstkonto och sedan att logga in på datorns Windows-konto eftersom gatewaytjänsten körs under ditt konto.
+Du kommer först ombes att logga in på ditt Power BI-tjänstkonto och sedan att logga in på datorns Windows-konto eftersom gateway-tjänsten körs under ditt konto.
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3c.png)
 
