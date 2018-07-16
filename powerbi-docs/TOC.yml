@@ -896,8 +896,10 @@
           href: developer/what-can-you-do.md
     - name: Självstudier
       items:
-        - name: Bädda in innehåll för kunder
+        - name: Bädda in innehåll för kunderna
           href: developer/embed-sample-for-customers.md
+        - name: Bädda in innehåll för organisationen
+          href: developer/embed-sample-for-your-organization.md
     - name: Begrepp
       items:
         - name: 'Arbeta med Power BI REST-API:er'
@@ -934,12 +936,8 @@
               href: developer/embedding.md
             - name: Hur du bäddar in ditt innehåll
               href: developer/embedding-content.md
-            - name: Integrera en instrumentpanel i en app (användaren äger data)
-              href: developer/integrate-dashboard.md
-            - name: Integrera en Power BI-panel i en app (användaren äger data)
-              href: developer/integrate-tile.md
-            - name: Integrera en Power BI-rapport i en app (användaren äger data)
-              href: developer/integrate-report.md
+            - name: Så här bäddar du in från en app
+              href: developer/embed-from-apps.md
             - name: Integrera innehåll i ditt program för suveräna moln (appen äger data)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Bädda in anpassade layouter i en app
