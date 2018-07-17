@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ea5ce2e1e635149c91fbcf38d84e3093af7915c9
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9366eff71e09b1f6c71c1f2519feb3d2392e3c58
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34243855"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092654"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Anslut till Acumatica med Power BI
 Med innehållspaketet Power BI Acumatica kan du snabbt få insikter om dina affärsmöjlighetsdata. Power BI hämtar dina data, inklusive affärsmöjligheter, konton och kunder och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data.
@@ -66,7 +66,7 @@ Acumatica OData-slutpunkten är formaterad på följande sätt och bör använda
 
     https://[sitedomain]/odata/[companyname]
 
-Programmets webbplatsdomän finns i webbläsarens adressfält när du har loggat in på Acumatica. I exemplet nedan är webbplatsdomänen ”https://pbi.acumatica.com, så OData-slutpunkten att ange skulle vara ”https://pbi.acumatica.com/odata”.
+Programmets webbplatsdomän finns i webbläsarens adressfält när du har loggat in på Acumatica. I exemplet nedan är webbplatsdomänen `https://pbi.acumatica.com`, så OData-slutpunkten att ange skulle vara `https://pbi.acumatica.com/odata`.
 
  ![](media/service-connect-to-acumatica/url.png)
 

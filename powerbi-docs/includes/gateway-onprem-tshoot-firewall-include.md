@@ -1,7 +1,7 @@
 ## <a name="firewall-or-proxy"></a>Brandvägg eller proxy
 Mer information om att tillhandahålla proxyinformation för din gateway finns i [Konfigurera proxyinställningar för Power BI-gatewayer](../service-gateway-proxy.md).
 
-Du kan kontrollera om din brandvägg eller proxy blockerar anslutningar genom att köra [Test-NetConnection](https://technet.microsoft.com/library/dn372891.aspx) från en PowerShell-kommandotolk. Det här kommandot testar anslutningen till Azure Service Bus. Det testar endast nätverksanslutningen och har inte något att göra med molnservertjänsten eller gatewayen. Det hjälper dig att avgöra om din dator verkligen kan få åtkomst till Internet.
+Du kan kontrollera om din brandvägg eller proxy blockerar anslutningar genom att köra [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) från en PowerShell-kommandotolk. Det här kommandot testar anslutningen till Azure Service Bus. Det testar endast nätverksanslutningen och har inte något att göra med molnservertjänsten eller gatewayen. Det hjälper dig att avgöra om din dator verkligen kan få åtkomst till Internet.
 
     Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
 

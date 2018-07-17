@@ -1,6 +1,6 @@
 ---
-title: Kom igång med Power BI-tjänsten
-description: Kom igång med Power BI-tjänsten
+title: Kom igång med Power BI-tjänsten (Power BI online)
+description: Kom igång med Power BI online (app.powerbi.com)
 author: adamw
 manager: kfile
 ms.reviewer: ''
@@ -8,22 +8,37 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d66653ebe9232cb6da2f3c53b01e791ca9966db9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1c4f710cd048fc2c2828f0386d23328c164bb3fb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34310140"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598675"
 ---
-# <a name="get-started-with-power-bi-service-apppowerbicom"></a>Kom igång med Power BI-tjänsten (app.powerbi.com)
-Dessa självstudier hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden, så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](guided-learning/gettingstarted.yml?tutorial-step=1).
+# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Självstudie: Kom igång med Power BI-tjänsten (app.powerbi.com)
+Dessa självstudier hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden, så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](power-bi-overview.md).
 
 ![Bild på relationen mellan Power BI Desktop, Power BI Mobile och Power BI-tjänsten](media/service-get-started/power-bi-components.png)
 
-Power BI-tjänsten finns i en kostnadsfri version och en Pro-version. *Om du redan har ett konto* öppnar du en webbläsare och skriver in app.powerbi.com för att öppna Power BI-tjänsten, oavsett vilken version du använder. Om du är ny som användare rekommenderar vi att du börjar på www.powerbi.com i stället. Härifrån kan du lära dig mer om Power BI innan du loggar in till tjänsten.  När du är redo att testa den, väljer du länken **Registrera dig kostnadsfritt** som du ser i det övre högra hörnet. Om administratören redan har aktiverat Power BI för dig, använder du inte knappen Registrera dig kostnadsfritt, utan går i stället direkt till app.powerbi.com. 
+I den här självstudien går du igenom följande steg:
+
+> [!div class="checklist"]
+> * Hitta annat kom igång-innehåll för Power BI-tjänsten
+> * Logga in på ditt Power BI-onlinekonto eller registrera dig om du inte har ett konto
+> * Öppna Power BI-tjänsten
+> * Hämta information och öppna den i rapportvyn
+> * Använd informationen för att skapa visualiseringar och spara som en rapport
+> * Skapa en instrumentpanel genom att fästa paneler från rapporten
+> * Lägg till ytterligare visualisering på instrumentpanelen med verktyget för frågor och svar på naturligt språk
+> * Rensa resurser genom att ta bort datauppsättningen, rapporten och instrumentpanelen
+
+## <a name="sign-up-for-power-bi-service"></a>Registrera dig för Power BI-tjänsten
+Om du inte har registrerat dig för Power BI, [registrerar du dig för en kostnadsfri Power BI Pro-utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
+
+Om du redan har ett konto öppnar du en webbläsare och skriver in app.powerbi.com för att öppna Power BI-tjänsten. 
 
 ![Logga in eller Registrera dig kostnadsfritt](media/service-get-started/power-bi-sign-up.png)
 
@@ -36,10 +51,9 @@ Besök vår [spelningslista på YouTube](https://www.youtube.com/playlist?list=P
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
-> 
-> 
 
-Microsoft Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  Tack vare Power BI-tjänsten hjälper ***instrumentpanelerna*** dig att ha koll på verksamhetens puls.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](service-basic-concepts.md).
+## <a name="what-is-power-bi-service"></a>Vad är Power BI-tjänsten?
+Microsofts Power BI-tjänst kallas ibland för Power BI online eller app.powerbi.com. Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  Tack vare Power BI-tjänsten hjälper ***instrumentpanelerna*** dig att ha koll på verksamhetens puls.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](service-basic-concepts.md).
 
 Om du har viktiga data i Excel- eller CSV-filer, så kan du skapa en Power BI-instrumentpanel så att du kan hålla dig informerad var du än befinner dig och dela information med andra.  Prenumererar du på ett SaaS-program som Salesforce?  Kom igång direkt genom att ansluta till Salesforce och automatiskt skapa en instrumentpanel från dessa data, eller [ta en närmare titt på alla andra SaaS-appar](service-get-data.md) som du kan ansluta till. Om du arbetar för en organisation kan du kontrollera om några [appar](service-create-distribute-apps.md) har publicerats för dig.
 
@@ -48,7 +62,7 @@ Läs mer om alla andra sätt att [hämta data på för Power BI](service-get-dat
 ## <a name="step-1-get-data"></a>Steg 1: Hämta data
 Här är ett exempel på hämtning av data från en CSV-fil. Vill du följa den här självstudien? [Hämta den här CSV-exempelfilen](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Logga in till Power BI](http://www.powerbi.com/). Har du inte något konto? Inga problem, du kan registrera dig kostnadsfritt.
+1. [Logga in till Power BI](http://www.powerbi.com/). Har du inte något konto? Inga problem, du kan registrera dig för en kostnadsfri utvärderingsversion.
 2. Power BI öppnas i webbläsaren. Välj **Hämta data** längst ned i det vänstra navigeringsfältet.
    
    ![hämta data](media/service-get-started/getdata3.png)
@@ -94,23 +108,23 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
    
    ![fästikon](media/service-get-started/pinnew.png)
 
-5. Eftersom detta är en ny rapport uppmanas du att spara den innan du kan fästa en visualisering på instrumentpanelen. Ge rapporten ett namn (till exempel *Försäljning över tid*) och välj **Spara och fortsätt**. 
+4. Eftersom detta är en ny rapport uppmanas du att spara den innan du kan fästa en visualisering på instrumentpanelen. Ge rapporten ett namn (till exempel *Försäljning över tid*) och välj **Spara och fortsätt**. 
    
    ![Dialogrutan Spara rapport](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
-6. Vi fäster linjediagrammet på en ny instrumentpanel och ger det namnet ”Ekonomiskt exempel för självstudier”. 
+5. Vi fäster linjediagrammet på en ny instrumentpanel och ger det namnet ”Ekonomiskt exempel för självstudier”. 
    
    ![namnge rapporten](media/service-get-started/power-bi-pin.png)
    
- 1. Välj **fäst**.
+1. Välj **fäst**.
    
     Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.
    
     ![Dialogrutan Fäst på instrumentpanelen](media/service-get-started/power-bi-pin-success.png)
 
-8. Välj **Gå till instrumentpanelen** för att se linjediagrammet fäst, som en panel, på din helt nya instrumentpanel. Du kan göra instrumentpanelen ännu bättre genom att lägga till fler visualiseringspaneler och [byta namn och storlek på dem, länka till dem och placera om dem](service-dashboard-edit-tile.md).
+6. Välj **Gå till instrumentpanelen** för att se linjediagrammet fäst, som en panel, på din helt nya instrumentpanel. Du kan göra instrumentpanelen ännu bättre genom att lägga till fler visualiseringspaneler och [byta namn och storlek på dem, länka till dem och placera om dem](service-dashboard-edit-tile.md).
    
-   ![instrumentpanel med fäst visualisering](media/service-get-started/power-bi-new-dashboard.png)
+   ![Instrumentpanel med fäst visualisering](media/service-get-started/power-bi-new-dashboard.png)
    
    Välj den nya panelen på instrumentpanelen och gå tillbaka till rapporten. Power BI för dig tillbaka till rapportredigeraren i läsvyn. Om du vill växla tillbaka till redigeringsvyn, väljer du **Redigera rapporten** från den översta menyraden. När du befinner dig i redigeringsvyn igen kan du fortsätta att utforska och fästa paneler. 
 
@@ -128,26 +142,21 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
 
    ![instrumentpanel med fäst diagram](media/service-get-started/power-bi-final-dashboard.png)
 
+## <a name="clean-up-resources"></a>Rensa resurser
+Nu när du är klar med självstudien kan du ta bort datauppsättningen, rapporten och instrumentpanelen. 
+
+1. Välj **Min arbetsyta** i det vänstra navigeringsfältet.
+2. Välj fliken **Datauppsättningar** och hitta datauppsättningen du importerade för den här självstudien.  
+3. Välj ellipsen (...) > **Ta bort**.
+
+    ![Ta bort datauppsättningen](media/service-get-started/power-bi-delete.jpg)
+
+    När du tar bort datauppsättningen tas även rapporten och instrumentpanelen bort. 
+
+
 ## <a name="next-steps"></a>Nästa steg
 Är du redo att testa mer?  Här följer några bra exempel på hur du kan utforska Power BI.
 
-* [Ansluta till en annan datauppsättning](service-get-data.md).
-* [Dela instrumentpanelen](service-share-dashboards.md) med dina kollegor.
-* Läs [Tips om att utforma instrumentpaneler](service-dashboards-design-tips.md).
-* Visa dina instrumentpaneler med en [Power BI-app på en mobil enhet](mobile-apps-for-mobile-devices.md)
-
-Är du inte riktigt redo än? Börja med dessa ämnen som hjälper dig att känna dig bekväm med Power BI.
-
-* [Lär dig hur rapporter, datauppsättningar, instrumentpaneler och fönster fungerar ihop](service-basic-concepts.md)
-* Besök vår [interaktiva utbildning för Power BI](guided-learning/index.md) och ta ett par (korta) kurser
-* Titta på [Power BI-videor](videos.md)
-* [Se vilka tillgängliga exempel som du kan använda](sample-datasets.md)
-
-### <a name="stay-in-touch-with-power-bi"></a>Hålla kontakten med Power BI
-* Följ [@MSPowerBI på Twitter](https://twitter.com/mspowerbi)
-* Prenumerera på vår [YouTube-video-kanal](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
-* Titta på våra på begäran-webbseminarier [Power BI Komma igång](webinars.md)
-* Vet du inte var du hittar hjälp? Läs sidan [10 tips om att få hjälp](service-tips-for-finding-help.md)
-
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+> [!div class="nextstepaction"]
+> [Ansluta till onlinetjänster som du använder](./service-connect-to-services.md)
 

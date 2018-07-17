@@ -7,27 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d0cc0ce18a187280c48be0c84bf9adf680ea3ea4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 11be5cd6f5b97fe612bf42a37228518ab2fbb227
+ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813444"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37900064"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SAP Business Warehouse (BW)**-data.
 
 Du hittar information om hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse) i [Power BI och SAP BW whitepaper](https://aka.ms/powerbiandsapbw).
 
-Från och med **Power BI Desktop**-versionen för juni 2018 kan du använda SAP BW-anslutningsappen med en implementering som innehåller viktiga prestanda- och funktionsförbättringar. Den här uppdaterade versionen av SAP BW-anslutningsappen har utvecklats av Microsoft och heter **Implementation 2.0**. Du kan välja **SAP BW Connector**-standardversionen eller **Implementation 2.0 SAP Connector**. I följande avsnitt beskrivs installationen av respektive version i tur och ordning. Du kan välja den ena eller den andra anslutningsappen när du ansluter till SAP BW från Power BI Desktop.
+Från och med **Power BI Desktop**-versionen för juni 2018 kan du använda SAP BW-anslutningsappen med en implementering som innehåller viktiga prestanda- och funktionsförbättringar. Den här uppdaterade versionen av SAP BW-anslutningsappen har utvecklats av Microsoft och heter **Implementation 2.0**. Du kan antingen välja version 1 (v1) av **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I följande avsnitt beskrivs installationen av respektive version i tur och ordning. Du kan välja den ena eller den andra anslutningsappen när du ansluter till SAP BW från Power BI Desktop.
 
 Vi rekommenderar att du använder **Implementation 2.0 SAP Connector** när det är möjligt.
 
-## <a name="installation-of-the-standard-sap-bw-connector"></a>Installation av SAP BW Connector-standardversionen
-Vi rekommenderar att du använder Implementation 2.0 SAP Connector när det är möjligt (se anvisningarna i avsnittet nedan). Det här avsnittet beskriver hur du installerar **SAP BW Connector**-standardversionen genom att följa installationsstegen nedan.
+## <a name="installation-of-version-1-of-the-sap-bw-connector"></a>Installera version 1 av SAP BW Connector
+Vi rekommenderar att du använder Implementation 2.0 SAP Connector när det är möjligt (se anvisningarna i avsnittet nedan). Det här avsnittet beskriver hur du installerar version 1 av **SAP BW Connector** genom att följa installationsstegen nedan:
 
 1. Installera **SAP NetWeaver**-biblioteket på din lokala dator. Du kan hämta biblioteket **SAP Netweaver** från SAP-administratören eller direkt från [SAP Software Download Center](https://support.sap.com/swdc). Eftersom **SAP Software Download Center** ofta ändrar struktur, finns det inte tydligare riktlinjer för att navigera den webbplatsen. Biblioteket **SAP NetWeaver** ingår vanligtvis också i installationen av klientverktyg för SAP.
    
@@ -54,11 +54,11 @@ Välj alternativet *Install assemblies to GAC* (Installera sammansättningar til
 ![Valfria konfigurationssteg för SAP](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> SAP BW-standardimplementeringen kräver Netweaver DLL:er. Netweaver DLL:erna krävs inte om du använder Implementation 2.0 för SAP Connector i stället för standardversionen.
+> Version 1 för SAP BW-implementeringen kräver Netweaver DLL:er. Netweaver DLL:erna krävs inte om du använder Implementation 2.0 för SAP Connector i stället för version 1.
 
 
-## <a name="standard-sap-bw-connector-features"></a>Funktioner i SAP BW Connector-standardversionen
-Med **SAP BW Connector**-standardversionen i Power BI Desktop kan du importera data från dina **SAP Business Warehouse Server**-kuber eller använda DirectQuery. 
+## <a name="version-1-sap-bw-connector-features"></a>Funktioner för version 1 för SAP BW Connector
+Med version 1 för **SAP BW Connector** i Power BI Desktop kan du importera data från dina **SAP Business Warehouse Server**-kuber eller använda DirectQuery. 
 
 Mer information om **SAP BW-anslutningsappen** och hur du använder den med DirectQuery finns i artikeln [DirectQuery och SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
@@ -101,7 +101,7 @@ Du måste skapa en ny anslutning för att använda Implementation 2.0 av SAP BW 
 
     ![Anslutningsdialogruta för SAP](media/desktop-sap-bw-connector/sap_bw_7.png)
 
-3. Välj **OK**. **Navigatormiljön** är samma som den som beskrivs ovan i avsnittet om SAP BW Connector-standardversionen. 
+3. Välj **OK**. **Navigatormiljön** är samma som den som beskrivs ovan i avsnittet om version 1 för SAP BW Connector. 
 
 ### <a name="new-options-for-implementation-20"></a>Nya alternativ för Implementation 2.0 
 
@@ -163,7 +163,7 @@ Det går bara att ändra befintliga rapporter för användning med **Implementat
 
     ![kodfragment för fråga](media/desktop-sap-bw-connector/sap_bw_12.png)
 
-4. Vi har i möjligaste mån försökt att göra Implementation 2.0 för SAP BW Connector kompatibel med SAP BW Connector-standardversionen. Dock kan det finnas skillnader på grund av de olika SAP BW MDX-körningslägena som används. Prova att växla körningsläge för att lösa eventuell inkompatibilitet.
+4. Vi har i möjligaste mån försökt att göra Implementation 2.0 för SAP BW Connector kompatibel med version 1 för SAP BW Connector. Dock kan det finnas skillnader på grund av de olika SAP BW MDX-körningslägena som används. Prova att växla körningsläge för att lösa eventuell inkompatibilitet.
 
 ## <a name="troubleshooting"></a>Felsökning
 Det här avsnittet beskriver felsökningssituationer (och lösningar) som kan uppstå när du använder **SAP BW**-anslutningsappen.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 06/22/2018
 ms.author: maghan
-ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 82a4c9c58567f5ace943363b7bed59fa744e85a5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561757"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944110"
 ---
 # <a name="embedding-with-power-bi"></a>Bädda in med Power BI
 Power BI erbjuder API:er för att bädda in dina instrumentpaneler och rapporter i program. Power BI-API:erna ger dig en konsekvent uppsättning funktioner och tillgång till de senaste funktionerna i Power BI när du bäddar in funktioner som instrumentpaneler, gatewayer och apparbetsytor.
@@ -29,7 +29,7 @@ Ett exempel på hur inbäddning fungerar finns i [JavaScript-inbäddningsexempel
 ## <a name="embedding-for-your-organization"></a>Inbäddning för din organisation
 Inbäddning för din organisation låter dig utöka Power BI-tjänsten. Detta kräver att slutanvändaren av ditt program loggar in på Power BI-tjänsten när de vill visa sitt innehåll. När någon i din organisation loggar in, kommer de endast att ha åtkomst till instrumentpaneler och rapporter som de äger eller som har delats med dem i Power BI-tjänsten. 
 
-*Exempel på inbäddning för din organisation inkluderar interna webbprogram, webbdelen för SharePoint Online och Microsoft Teams-integrering.*
+*Exempel på inbäddning för din organisation inkluderar interna webbprogram, webbdelen för SharePoint Online och [Microsoft Teams-integrering (du måste ha administratörsrättigheter)](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/).*
 
 Se följande för inbäddning för din organisation:
 

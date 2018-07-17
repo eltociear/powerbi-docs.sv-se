@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 06/04/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 78edb9d45df1332a25ec27476562d6105c7a8a48
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: c2e0dc401e5927e69ecb9b059042df646b238bd5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755379"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944409"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Oavsett om dina data består av ett enkelt Excel-kalkylblad eller en samling molnbaserade och lokala hybridinformationslager, kan du med **Power BI** enkelt ansluta till dina datakällor, visualisera (eller identifiera) vad som är viktigt och dela det med någon eller alla du vill.
@@ -57,4 +57,5 @@ Skapa, distribuera och hantera Power BI, mobila och sidnumrerade rapporter lokal
 Power BI-rapportservern är en lösning som du distribuerar bakom brandväggen och som skickar dina rapporter till rätt användare på olika sätt, oavsett om de som får dem ska visa dem i en webbläsare, på en mobil enhet eller som ett e-postmeddelande. Och eftersom Power BI-rapportservern är kompatibel med Power BI i molnet, kan du flytta över till molnet när du är redo.
 
 ## <a name="next-steps"></a>Nästa steg
-[Logga in, hämta vissa data och lär dig använda Power BI-tjänsten](service-the-new-power-bi-experience.md)
+[Logga in, hämta vissa data och lär dig använda Power BI-tjänsten](service-the-new-power-bi-experience.md)   
+[Självstudie: Kom igång med Power BI-tjänsten](service-get-started.md)

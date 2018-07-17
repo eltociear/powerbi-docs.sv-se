@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 920e61ed173e979a92958e56f9e0276f26288b3f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 7fe40fa3ea4a80198c3b06d2594c7ad0837ee923
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34250685"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136190"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Favoritmarkera instrumentpaneler, rapporter och appar i Power BI-tjänsten
 När du skapat en *favorit* av innehåll kan du komma åt den från alla dina arbetsytor.  Favoriter är vanligtvis det innehåll som du besöker oftast.
@@ -76,7 +76,7 @@ Använder du inte längre en rapport så ofta som du brukade?  Du kan bort den f
 > 
 
 ## <a name="next-steps"></a>Nästa steg
-[Kom igång med Power BI](service-get-started.md)
+[Vad är Power BI?](power-bi-overview.md)
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)
 

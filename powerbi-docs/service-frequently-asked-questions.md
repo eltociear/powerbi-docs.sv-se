@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/01/2018
+sktopms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6341d5b3bba051cc31fe95f526450e03c14d4b69
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964824"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145397"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 * Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).
@@ -54,7 +54,7 @@ Ja, priser för ideella organisationer är tillgängliga när du köper direkt f
 Power BI-tjänsten [https://powerbi.com](https://powerbi.com) är inte tillgängligt som en privat, intern molntjänst. Dock finns det tre alternativ för att visa och arbeta med data lokalt. 
 
 ### <a name="on-premises-data-gateway"></a>Lokal datagateway
-Med Power BI och Power BI Desktop kan du ansluta på ett säkert sätt till dina egna lokala datakällor. Med [lokal datagateway](service-gateway-onprem.md) kan du ansluta live till din lokala SQL Server Analysis Services-server och andra datakällor. Du kan också ställa in schemalagd uppdatering med en centraliserad gateway. Om en gateway inte är tillgänglig kan du uppdatera data från lokala datakällor med hjälp av [Power BI Gateway – Personal](personal-gateway.md).
+Med Power BI och Power BI Desktop kan du ansluta på ett säkert sätt till dina egna lokala datakällor. Med [lokal datagateway](service-gateway-onprem.md) kan du ansluta live till din lokala SQL Server Analysis Services-server och andra datakällor. Du kan också ställa in schemalagd uppdatering med en centraliserad gateway. Om en gateway inte är tillgänglig kan du uppdatera data från lokala datakällor med hjälp av [Power BI Gateway – Personal](service-gateway-personal-mode.md).
 
 ### <a name="power-bi-report-server"></a>Power BI-rapportserver
 Power BI-rapportservern är en lösning som du distribuerar på dina egna anläggningar för att skapa, publicera och hantera rapporter som sedan levereras till olika användare på olika sätt: i en webbläsare, på mobila enheter eller som e-post. Läs mer om [Power BI-rapportservern](report-server/get-started.md).
@@ -138,6 +138,7 @@ Precis som med många andra Microsoft-tjänster och program så erbjuder Power B
 * Tryck på CTRL + Z för att **ångra** din senaste åtgärd eller dina senaste åtgärder.
 
 ## <a name="next-steps"></a>Nästa steg
+* [Vad är Power BI?](power-bi-overview.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/)
 

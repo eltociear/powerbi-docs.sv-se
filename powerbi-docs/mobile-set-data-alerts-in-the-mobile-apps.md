@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: aa4aac1b0628fb0670a4265095ba2abcae3c1dcf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2ca419e1e07485ad29c486d8626e78d9605c8468
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292580"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965031"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Ställa in dataaviseringar i Power BI-mobilapparna
 Gäller för:
@@ -25,7 +25,7 @@ Gäller för:
 
 Du kan ställa in aviseringar på instrumentpaneler i Power BI-mobilappar och i Power BI-tjänsten. Aviseringar meddelar dig när data i en panel ändras utanför de gränser. Aviseringar fungerar för paneler med ett tal, till exempel kort och mätare, men inte med direktöverförda data. Du kan ange dataaviseringar på din mobila enhet och se dem i Power BI-tjänsten och vice versa. Det är endast du som kan se de dataaviseringar som du ställer in, även om du delar en instrumentpanel eller en ögonblicksbild av en panel.
 
-Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, eller om du har en kostnadsfri Power BI-licens och den delade instrumentpanelen finns i en Premium-kapacitet. 
+Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, eller om den delade instrumentpanelen finns i en Premium-kapacitet. 
 
 > [!WARNING]
 > Datadrivna aviseringar ger information om dina data. Om enheten blir stulen bör du gå till Power BI-tjänsten och inaktivera alla regler för datadrivna aviseringar. 

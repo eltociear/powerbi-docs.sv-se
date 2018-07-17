@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 53c4250949a696f4abbd0722cf89207f2c8d37c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 166d61c78f8e85a91dafa5de698d782b456834a7
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813858"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37601647"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -255,7 +255,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 * **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 * I vissa funktioner finns en **[article]** som innehåller mer information.
 * De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
--   Vissa funktioner är självförklarande och behöver varken artikel eller video.
+* Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** för den här månaden från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
@@ -1844,15 +1844,15 @@ Följande funktioner har lagts till eller förbättrats i den här uppdateringen
     -   Bättre upplevelse med förhandsgranskning för flerdimensionella källor (Analysis Services och SAP BusinessObjects)
     -   Visa alternativ för valda objekt
     -   Förbättrade sökfunktioner i navigeringsträdet
--   Nya omvandlingar
-    -   Ålder- och subtrahera-åtgärder för datum/tid-kolumner
-    -   Sammanställda kolumner: alternativet att inaktivera nya kolumners prefix
--   Förbättringar av fältlistan
-    -   Expandera/dölj tabeller
-    -   Dölj/ta fram fält
-    -   Optimerad layout (avstånd, marginaler och teckensnitt)
--   Navigering på rapportsidor – stöd för tangentbordshantering
--   Många felkorrigeringar
+- Nya omvandlingar
+  -   Ålder- och subtrahera-åtgärder för datum/tid-kolumner
+  -   Sammanställda kolumner: alternativet att inaktivera nya kolumners prefix
+- Förbättringar av fältlistan
+  -   Expandera/dölj tabeller
+  -   Dölj/ta fram fält
+  -   Optimerad layout (avstånd, marginaler och teckensnitt)
+- Navigering på rapportsidor – stöd för tangentbordshantering
+- Många felkorrigeringar
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 

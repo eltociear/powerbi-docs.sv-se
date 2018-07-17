@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/06/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: db32f7d0d3f7ca7b6943ca5347dc349c8c44be85
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: 750dbf2593981e8fc9ad5f2f66219d6bf6fd641c
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301859"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137478"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -31,11 +31,19 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="april-2018"></a>April 2018
+## <a name="may-2018"></a>Maj 2018
+* [Instrumentpaneler med teman](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) i Power BI-tjänsten.
+* [Inkrementella uppdateringar](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) med Premium.
+* Begär åtkomstarbetsflöde för [Power BI-appar](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Hämta data-uppdateringar så att det blir enklare för användarna att hitta [Power BI-appar](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Inställningar för att aktivera och inaktivera [Beständiga filter](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjänsten.
+* Förbättrade Azure B2B-inbjudningsarbetsflöden för rapporter.
+
+## <a name="previous-months-2018"></a>Föregående månader (2018)
+### <a name="april-2018"></a>April 2018
 * [Whitepaper om GDPR i Power BI](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * [Granskningsloggar](https://docs.microsoft.com/power-bi/service-admin-auditing) i Power BI-tjänsten är aktiverade som standard för Office 365-klienter.
 
-## <a name="previous-months-2018"></a>Föregående månader (2018)
 ### <a name="march-2018"></a>Mars 2018
 * [Beständiga filter](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjänsten.
 * Dela innehåll med användare som använder sina personliga e-postkonton. Tillägget av [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
@@ -63,7 +71,7 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 * Detaljerad administratörskontroll för [publicering på webben](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
 
 ## <a name="september-2017"></a>September 2017
-* Dela instrumentpaneler med användare som använder den kostnadsfria versionen med hjälp av Premium.
+* I Premium-kapaciteter kan instrumentpaneler delas med användare som inte har en Power BI Pro-licens.
 * Tilldela kapaciteter som passar dina affärsbehov med poolning av virtuella kärnor.
 * Snabbt skala upp eller skala ned kapaciteten med ett enda klick.
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) för att enkelt skicka data till REST API:er
@@ -222,7 +230,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 ***Analysera i Excel***
 
-* [Analysera i Excel](service-analyze-in-excel.md), tillgängligt för alla användare: möjligheten att komma åt din Power BI-datamodeller i Excel har utökats för alla användare: kostnadsfri och Pro.
+* [Analysera i Excel](service-analyze-in-excel.md), tillgängligt för alla användare: möjligheten att komma åt dina Power BI-datamodeller i Excel har utökats för alla användare, oavsett vilken licens de har tilldelats.
 * Förbättrad upplevelse för flera användarkonton: Om du har mer än 1 Power BI-konto är det nu enklare att logga in.
 
 För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
@@ -567,7 +575,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **24 juli 2015**
 
-* Vi vill meddela att Power BI kommer att vara allmänt tillgängligt. Du kan fortsätta att använda den kostnadsfria versionen av Power BI eller registrera dig för [Power BI Pro](service-self-service-signup-for-power-bi.md). Som en del av GA-lanseringen erbjuder vi vissa nya funktioner:
+* Vi vill meddela att Power BI kommer att vara allmänt tillgängligt. Registrera dig för [Power BI Pro](service-self-service-signup-for-power-bi.md). Som en del av GA-lanseringen erbjuder vi vissa nya funktioner:
 * En ny miljö för att skapa visualiseringar och rapporter: Den nya arbetsytan för rapporter har ett större antal visualiseringar, mer kontroll över rubrikformatering, förklaringar, axlar, bakgrunder med mera.
 * [Power BI-grupper](service-create-distribute-apps.md): grupper erbjuder en kraftfull samarbetsmiljö som bygger på Office 365-grupper.
 * [Organisationsinnehållspaket](service-organizational-content-pack-introduction.md): Det är otroligt enkelt att skapa instrumentpaneler och rapporter med Power BI. Nu kan användarna publicera innehållet i organisationens innehållsgalleri.
@@ -661,7 +669,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 * Mer tillförlitliga uppdateringar med OneDrive.  Vissa situationer där arbetsböcker inte kunde uppdateras från OneDrive har lösts.
 
 ## <a name="next-steps"></a>Nästa steg
-[Kom igång med Power BI](service-get-started.md)  
+[Vad är Power BI?](power-bi-overview.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

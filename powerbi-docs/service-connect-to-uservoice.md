@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2761b2bd1230e18b5dd4e0b69342e55ed33d0983
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e44d4bb48289b515797167fb3b91a9bbf0d2bcdd
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250836"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092171"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Ansluta till UserVoice med Power BI
 Det är enkelt att spåra och utforska dina UserVoice-data med Power BI och UserVoice-innehållspaketet. Power BI hämtar dina data, inklusive biljetter, förslag och nöjdhetsundersökningar och skapar sedan en anpassad instrumentpanel och rapporter baserade på dessa data.
@@ -35,7 +35,7 @@ Anslut till [UserVoice-innehållspaketet](https://app.powerbi.com/getdata/servic
 3. Välj **UserVoice** och sedan **Hämta**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. När du uppmanas till det anger du din UserVoice-URL. URL:en måste följa följande mönster exakt: https://fabrikam.uservoice.com, där ”fabrikam” ersätts med namnet på din produkt eller tjänst.
+4. När du uppmanas till det anger du din UserVoice-URL. URL:en måste följa följande mönster exakt: `https://fabrikam.uservoice.com`, där ”fabrikam” ersätts med namnet på din produkt eller tjänst.
    
    >[!NOTE]
    >Det finns inget avslutande snedstreck i slutet och anslutningen är i formatet http**s**.
@@ -63,7 +63,7 @@ Anslut till [UserVoice-innehållspaketet](https://app.powerbi.com/getdata/servic
 
 Om du ser det här felet när du har skrivit din UserVoice-URL. Kontrollera att följande krav är uppfyllda:
 
-* URL:en följer exakt det här mönstret: ”https://fabrikam.uservoice.com” där ”fabrikam” ersätts med korrekt prefix för UserVoice-URL:en.
+* URL:en följer exakt det här mönstret: `https://fabrikam.uservoice.com` där ”fabrikam” ersätts med korrekt prefix för UserVoice-URL:en.
 * Kontrollera att alla bokstäver är gemena.
 * Kontrollera att URL:en är i formatet ”http**s**”.
 * Kontrollera att det inte finns något avslutande snedstreck i slutet av URL:en.

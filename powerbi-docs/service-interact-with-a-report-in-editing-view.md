@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 35bdf975d9df31ded5a7c3f5be26ae6181002169
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a6b4795be959cfc1842a07f1ba0a74dd81109e89
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240440"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965606"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interagera med en rapport i redigeringsvyn i Power BI-tjänsten
 Rapporter kan skapas och redigeras i Power BI-tjänsten och Power BI Desktop. I Power BI-tjänsten kan rapporter skapas och redigeras i **Redigeringsvyn**. Och i Power BI Desktop kan rapporter skapas och redigeras i [**Rapportvyn**](desktop-report-view.md). Den här artikeln beskriver redigeringsvyn i Power BI-tjänsten. 
 
-Power BI-tjänsten har två olika lägen för att interagera med rapporter – [Läsvyn](service-reading-view-and-editing-view.md) för rapport*konsumenter* och Redigeringsvyn för ägare och skapare av rapporter.  En Power BI Pro-licens krävs för att dela rapporter samt för att redigera rapporter som skapats av andra. Om du använder en kostnadsfri Power BI-version kommer du fortfarande att kunna skapa rapporter, men inte använda [delning](service-share-reports.md).    
+Power BI-tjänsten har två olika lägen för att interagera med rapporter – [Läsvyn](service-reading-view-and-editing-view.md) för rapport*konsumenter* och Redigeringsvyn för ägare och skapare av rapporter.  En Power BI Pro-licens krävs för att dela rapporter samt för att redigera rapporter som skapats av andra. Om du inte har en Pro-licens kommer du fortfarande att kunna skapa rapporter, men du kan inte [dela dem](service-share-reports.md).    
 
 I rapportens redigeringsvy har du många möjligheter att både utforska och skapa en rapport. Alla funktionerna från [läsvyn](service-reading-view-and-editing-view.md) finns tillgängliga – många andra. Redigeringsvyn är endast tillgänglig för den person som skapade rapporten eller kollegor som [samäger en rapport som medlem eller administratör i en apparbetsyta](service-create-distribute-apps.md).
 
@@ -39,7 +39,7 @@ Ta en titt på listan med avsnitt under rubriken **Rapporter** i innehållsfört
 * Duplicera en rapportsida
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-En Power BI Pro-licens krävs för att redigera rapporter som skapats av andra samt för att dela dina rapporter med andra.  Om du använder en kostnadsfri Power BI-version kommer du fortfarande att kunna skapa rapporter, men inte använda [delning](service-share-reports.md).
+En Power BI Pro-licens krävs för att redigera rapporter som skapats av andra samt för att dela dina rapporter med andra.  Om du inte har en Pro-licens kommer du fortfarande att kunna skapa rapporter, men du kan inte [dela dem](service-share-reports.md).
 
 
 ## <a name="next-steps"></a>Nästa steg

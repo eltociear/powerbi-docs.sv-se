@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 4680ab3709f1a2cbe56445e6719ea4de15396eb0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297663"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598652"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
 Gäller:
@@ -40,7 +40,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *I till exempel det här linjediagrammet är de valda värdena för **This Year Sales (Årets försäljning)** och **Last Years Sales (Förra årets försäljning)** i **augusti**.*  
+   <em>I till exempel det här linjediagrammet är de valda värdena för **This Year Sales</em>*(Årets försäljning) och **Last Year Sales**(Förra årets försäljning) i **augusti**.*  
    
    Tryck på en sektor i ett cirkeldiagram för att visa sektorns värde högst upp i diagrammet.  
    
@@ -107,7 +107,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   *I den här stapeldiagrammet visas värdena för **Decor (Dekor)** överst i diagrammet.*
+   <em>I det här stapeldiagrammet visas värdena för **Decor</em>* (Dekor) överst i diagrammet.*
    
    Tryck på ikonen **Fullskärm** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png)för att öppna panelen i fullskärmsläge, utan navigerings- och menyrader.
    
@@ -126,6 +126,6 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
 4. Tryck på bakåtpilen eller på tillbakaknappen för att stänga panelen och gå tillbaka till instrumentpanelen.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Kom igång med Power BI](service-get-started.md)
+* [Vad är Power BI?](power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

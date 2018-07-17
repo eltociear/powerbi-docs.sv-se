@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 297805d187ccdea2c04e0b79ad86723ec80d3f80
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4d16a5694dde63b66dcb001f1a5375ed92d978c
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310071"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137179"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips för att få hjälp med Power BI-frågor
 Har du någonsin blivit frustrerad över användningen av Power BI eller kämpat med att få svar på dina Power BI-frågor när du behöver dem? 
@@ -69,6 +69,6 @@ Om allt annat misslyckas är det sista tipset att iaktta systemet. Ofta frågar 
 Anta till exempel att du undrar om du kan dela instrumentpaneler med en säkerhetsgrupp. Besvara frågan genom att gå till dialogrutan Dela och försök att lägga till en säkerhetsgrupp. Oavsett hur det går har du ditt svar efter det.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Kom igång med Power BI](service-get-started.md)
+* [Vad är Power BI?](power-bi-overview.md)
 * Fråga [Power BI Community](http://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/)

@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 52bd4b5dc27ff127eadea49cb3e761d6cda4788d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 60ca8d828d3bb33dced97213e2f135db364c35e5
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249170"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145148"
 ---
 # <a name="connect-to-project-online-with-power-bi"></a>Anslut till Project Online med Power BI
-Microsoft Project Online är en flexibel lösning för hantering av projektportföljer (PPM) och dagligt arbete. Project Online låter organisationer komma igång, prioritera investeringar i projektportföljer och leverera det avsedda verksamhetsvärdet. Project Online-innehållspaketet för Power BI låter dig utforska dina projektdata, med mått som portföljstatus och projektefterlevnad.
+Microsoft Project Online är en flexibel lösning för hantering av projektportföljer (PPM) och dagligt arbete. Project Online låter organisationer komma igång, prioritera investeringar i projektportföljer och leverera det avsedda verksamhetsvärdet. Med Project Online-innehållspaketet för Power BI får du tillgång till information från Project Online som hjälper dig att hantera projekt, portföljer och resurser.
 
 Anslut till [Project Online-innehållspaketet](https://app.powerbi.com/getdata/services/project-online) för Power BI.
 
@@ -32,7 +32,7 @@ Anslut till [Project Online-innehållspaketet](https://app.powerbi.com/getdata/s
 3. Välj **Microsoft Project Online** \> **hämta**.
    
    ![](media/service-connect-to-project-online/mproject.png)
-4. I textrutan **Project Web App-URL**, anger du URL:en för den PWA (Project Web Add) som du vill ansluta till och klicka på **nästa**. Observera att det här kan skilja sig från exemplet om du har en anpassad domän.
+4. I textrutan **Project Web App-URL**, anger du URL:en för den PWA (Project Web Add) som du vill ansluta till och klicka på **nästa**. Observera att det här kan skilja sig från exemplet om du har en anpassad domän. I textrutan **PWA Site Language** (PWA-webbplatsspråk) anger du rätt siffra för ditt PWA-webbplatsspråk. Ange ”1” för engelska, ”2” för franska, ”3” för tyska, ”4” för portugisiska (Brasilien), ”5” för portugisiska (Portugal) och ”6” för spanska. 
    
     ![](media/service-connect-to-project-online/params.png)
 5. Som Autentiseringsmetod väljer du **oAuth2** \> **Logga in**. När du uppmanas till det anger du dina autentiseringsuppgifter för Project Online och följer autentiseringsprocessen.
@@ -41,16 +41,28 @@ Anslut till [Project Online-innehållspaketet](https://app.powerbi.com/getdata/s
     
 Observera att du måste ha behörighet för portföljvy, portföljansvarig eller administratör för den Project Web App som du ansluter till.
 
-6. Du ser ett meddelande som visar att dina data läses in. Det kan ta en stund att läsa in datan beroende på hur stort ditt konto är. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datauppsättning i det vänstra navigeringsfönstret. Det här är standardinstrumentpanelen som Power BI skapade för att visa dina data. Du kan ändra den här instrumentpanelen för att visa dina data på det sätt som du vill.
-   
+6. Du ser ett meddelande som visar att dina data läses in. Det kan ta en stund att läsa in datan beroende på hur stort ditt konto är. När Power BI har importerat dessa data visas en ny instrumentpanel, datauppsättning och 13 rapporter i det vänstra navigeringsfönstret. Det här är standardinstrumentpanelen som Power BI skapade för att visa dina data. Du kan modifiera den här instrumentpanelen för att visa dina data på det sätt som du vill.
+
    ![](media/service-connect-to-project-online/dashboard2.png)
+
+7. När instrumentpanelen och rapporterna är klara kan du börja utforska dina Project Online-data. Innehållspaketet innehåller 13 omfattande och detaljerade rapporter för portföljvyn (6 rapportsidor), resursvyn (5 rapportsidor) och projektstatus (2 rapportsidor). 
+
+   ![](media/service-connect-to-project-online/report1.png)
+   
+   ![](media/service-connect-to-project-online/report3.png)
+   
+   ![](media/service-connect-to-project-online/report2.png)
 
 **Och sedan?**
 
 * Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
 * [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning kommer att vara schemalagd att uppdateras dagligen, kan du ändra uppdateringsschemat eller uppdatera på begäran med **Uppdatera nu**
+* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+
+**Expandera innehållspaketet**
+
+Ladda ned [GitHub PBIT-filen](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) för att ytterligare anpassa och uppdatera innehållspaketet
 
 ## <a name="next-steps"></a>Nästa steg
 [Kom igång i Power BI](service-get-started.md)

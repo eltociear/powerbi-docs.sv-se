@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2018
+ms.date: 06/20/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6efd54d868a5a1f2d8d657d352c7133d4036b0b6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 25aa03c12b36bf19c05fe01dc6c24a0e4a3a2416
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34254842"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965307"
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Skapa och publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -22,17 +22,15 @@ I Power BI kan du skapa *appar* för att samordna relaterade instrumentpaneler o
 
 ![Power BI-appar](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Dina företagsanvändare behöver ofta flera Power BI-instrumentpaneler och -rapporter för att göra sitt jobb. Appar samordnar delarna så att de inte behöver komma ihåg namn och platser för alla dessa instrumentpaneler.  
-
-Med Power BI-appar, än så länge i en förhandsversion, kan du skapa samlingar av instrumentpaneler och rapporter och publicera dessa appar till hela organisationen eller till särskilda personer eller grupper. För dig som skapare eller administratör av rapporter gör apparna det enklare att hantera behörigheter för samlingar av instrumentpaneler.
+Dina företagsanvändare behöver ofta flera Power BI-instrumentpaneler och -rapporter för att göra sitt jobb. Appar samordnar delarna så att de inte behöver komma ihåg namn och platser för alla dessa instrumentpaneler. Med Power BI-appar kan du skapa samlingar av instrumentpaneler och rapporter, och publicera dessa appar till hela organisationen eller till vissa personer eller grupper. För dig som skapare eller administratör av rapporter gör apparna det enklare att hantera behörigheter för samlingar av instrumentpaneler.
 
 Företagsanvändarna får dina appar på ett par olika sätt. Om Power BI-administratören ger dig behörighet kan du installera dem automatiskt på dina medarbetares Power BI-konton. I annat fall kan de installera dina appar från Microsoft AppSource eller så kan du skicka dem en direktlänk. De kan enkelt hitta och gå tillbaka till ditt innehåll eftersom allt finns på samma plats. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Läs mer om [app-upplevelsen för företagsanvändare](service-install-use-apps.md).
 
 ### <a name="licenses-for-apps"></a>Licenser för appar
-För att skapa appar måste du ha en licens för Power BI Pro. Det finns två alternativ för dina app-användare.
+För att skapa appar måste du ha en licens för Power BI Pro. Det finns två alternativ för att visa din app för dina appanvändare.
 
-* Alternativ 1: Alla företagsanvändare behöver **Power BI Pro**-licenser för att kunna visa din app. 
-* Alternativ 2: Kostnadsfria användare i din organisation kan visa app-innehåll om din app finns i en Power BI Premium-kapacitet. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
+* Alternativ 1: Appanvändaren har tilldelats en **Power BI Pro**-licens. 
+* Alternativ 2: Appanvändaren har inte tilldelats en **Power BI Pro**-licens, men appen finns i en Power BI Premium-kapacitet. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
 
 ### <a name="apps-and-organizational-content-packs"></a>Appar- och organisationsinnehållspaket
 Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisationsinnehållspaket, fortsätter de att fungera sida vid sida med appar.
@@ -43,7 +41,7 @@ Nu när du har en översikt över appar ska vi prata mer om *app-arbetsytor*, pl
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="app-workspaces"></a>App-arbetsytor
-*App-arbetsytor* är de platser där du skapar appar, så du måste börja med att skapa en app-arbetsyta innan du skapar appen. Om du tidigare har arbetat i en grupparbetsyta i Power BI, kommer app-arbetsytor att kännas bekanta. De är en utveckling av grupparbetsytor – mellanlagringsområden och behållare för innehållet i appen. 
+*App-arbetsytor* är de platser där du skapar appar, så du måste börja med att skapa en app-arbetsyta innan du skapar appen. Om du tidigare har arbetat i en grupparbetsyta i Power BI, kommer app-arbetsytor att kännas bekanta. De är en utveckling av grupparbetsytor – mellanlagringsområden och containrar för innehållet i din app. 
 
 Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. Alla medlemmar och administratörer av app-arbetsytan behöver Power BI Pro-licenser. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att publicera till en bredare publik eller hela organisationen. 
 

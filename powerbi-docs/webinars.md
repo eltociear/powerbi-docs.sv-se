@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/13/2018
 ms.author: maikelson
-ms.openlocfilehash: 29aba440f92f37763dd9887b5fa7511d6191a5f7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34299296"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137653"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -22,25 +22,9 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-Registrera dig för att lyssna till Power BI-experter och delta i livesända frågesessioner
+Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
 
-**Rita rätt insikter med Power BI och Visio**
-<br>av Shakun Grover
-<br>*22 maj, 2018 10:00 PST, 13:00 EST*
-
-Var med på det här webbseminariet för att lära dig hur du kombinerar Power BI-instrumentpaneler och Microsoft Visio-diagram för att skapa kraftfulla visuella insikter. Visio och Power BI är mycket visuella och naturliga komplement. Med Visio kan du skapa vägledande diagram, till exempel sammankopplade arbetsflöden och verkliga layouter. Power BI hjälper dig att skapa intuitiva instrumentpaneler med hjälp av diagram och mappar för att mäta KPI:er och spåra mål.
-
-[Registrera dig om du vill titta den 22 maj](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
-
-**Lär dig mer om Power BI Embedded på 20 minuter**
-<br>av Megan Asarrane och Colin Murphy
-<br>*23 maj, 2018 10:00 PST, 13:00 EST*
-
-Den här webbseminariet är en introduktion till inbäddat Power BI. I slutet av webbseminariet bör användare kunna förstå vad Power BI Embedded är, nästa steg för att komma igång med produkten och var de kan hitta hjälp/resurser.
-
-[Registrera dig om du vill titta den 23 maj](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
-
->[Delta i kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
+>[Delta i kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Aktuella webbseminarier
 
@@ -78,15 +62,27 @@ Titta på inspelade sessioner när som helst
 <br>av Charles Sterling
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
+**Lär dig mer om Power BI Embedded på 20 minuter**
+<br>av Megan Asarrane och Colin Murphy
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
+
 **Utöver kalkylbladet**
 <br>av Gohul Shanmugalingam
 <br>[Registrera dig och titta nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
+
+**Rita rätt insikter med Power BI och Visio**
+<br>av Shakun Grover
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **Omvandla en rapport från vara BRA att vara BÄST!**
 <br>av Reid Havens
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### <a name="partners"></a>Partners ###
+
+**Förstärk din BI med Location Intelligence**
+<br>av Scott Ball från Esri och Enrique Plaza från Microsoft
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
 **Förbättra lönsamhet inom hälsovården**
 <br>av Stephen Cracknell och Stuart Macanliss från US Medical IT
@@ -172,7 +168,7 @@ Titta på inspelade sessioner när som helst
 
 - [Microsoft Data Insights Summit 2017 sessioner på begäran](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-- [Kom igång med Power BI](service-get-started.md)
+- [Vad är Power BI?](power-bi-overview.md)
 
 - Följ [@MSPowerBI på Twitter](https://twitter.com/mspowerbi)
 

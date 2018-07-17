@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: 806ec6051cf8b77dfe17664d82e6add40147f0ed
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: d41b0a84d512c5ef6cebf810a89fd74a838c672e
+ms.sourcegitcommit: 9efb94ddb254e9c03e9871ad232509065ee24bf2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301744"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864363"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Säkerhet på radnivå med inbäddat innehåll i Power BI
 Säkerhet på radnivå (RLS) kan användas för att begränsa användares åtkomst till data i instrumentpaneler, paneler, rapporter och datauppsättningar. Flera olika användare kan arbeta med samma artefakter och alla se olika data. Inbäddning har stöd för RLS.
@@ -29,7 +29,7 @@ För att använda RLS är det viktigt att du förstå tre huvudsakliga koncept: 
 
 **Användare** – slutanvändare visar artefakten (instrumentpanel, panel, rapport eller datauppsättning). Användare identifieras av username-egenskapen i en inbäddningstoken i Power BI Embedded.
 
-**Roller** – användare tillhör roller. En roll är en behållare för regler och har namn som *försäljningschef* eller *säljare*. Du kan skapa roller i Power BI Desktop. Mer information finns i [Säkerhet på radnivå (RLS) med Power BI Desktop](../desktop-rls.md).
+**Roller** – användare tillhör roller. En roll är en container för regler och har namn som *försäljningschef* eller *säljare*. Du kan skapa roller i Power BI Desktop. Mer information finns i [Säkerhet på radnivå (RLS) med Power BI Desktop](../desktop-rls.md).
 
 **Regler** – roller har regler och dessa regler är de faktiska filter som ska tillämpas på data. De kan vara enkla som ”Land = USA” eller något mycket mer dynamiskt.
 I resten av den här artikeln ger vi exempel på hur RLS skapas och används i en inbäddad app. Vårt exempel använder PBIX-filen [Exempel för detaljhandelanalys](http://go.microsoft.com/fwlink/?LinkID=780547).
@@ -65,7 +65,7 @@ Gör så här:
 3. I tabellen **Distrikt** anger du följande DAX-uttryck: **[distriktchef] = USERNAME()**.
    
     ![DAX-uttryck för RLS regel](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Kontrollera att reglerna fungerar på fliken **Modellering**, välj **Visa som roller** och välj sedan både rollen **Chef** som du precis skapade, tillsammans med  **Andra användare**. Ange **Andrew Ma** för användaren.
+4. Kontrollera att reglerna fungerar på fliken **Modellering**, välj **Visa som roller** och välj sedan både rollen **Chef** som du precis skapade och **Andra användare**. Ange **AndrewMa** för användaren.
    
     ![Visa som rolldialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
    

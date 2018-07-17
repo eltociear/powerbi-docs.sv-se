@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7c0399072bfef35a1103a5db448da183f64f74c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a30c90b1c180277a584a152f26c7f92549284c7d
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34245372"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944754"
 ---
 # <a name="manage-your-data-storage"></a>Hantera din datalagring
 Läs hur du hanterar datalagring individuellt eller i apparbetsytan för att kontrollera att du kan fortsätta att publicera rapporter och datauppsättningar.
 
 Användare och apparbetsytor har sina egna datakapaciteter
 
-* Kostnadsfria och Pro-användare har maximalt 10 GB datalagring.
-* Pro-användare kan skapa apparbetsytor, med maximalt 10 GB lagring i varje.
+* Alla användare har upp till 10 GB datalagring.
+* Användare med Power BI Pro-licens kan skapa apparbetsytor med maximalt 10 GB lagring i varje.
 
 På klientnivån, får total användning inte överstiga 10 GB per Pro-användare över alla Pro-användare och apparbetsytor i klientorganisationen.
 

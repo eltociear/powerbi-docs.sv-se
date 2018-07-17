@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 50ace772c24b2a9e706e82ca16ddcb36d8b6b60c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c1ac019b0d6f80c3129b105336f71a71e0925648
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722211"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926546"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Hitta Power BI-användare som har loggat in
 Om du är en klientadministratör och vill se vem som har signerat till Power BI, kan du använda Azure Active Directory-rapporter för åtkomst och användning för att få insyn.
@@ -25,9 +25,7 @@ Om du är en klientadministratör och vill se vem som har signerat till Power BI
 Du kan komma åt aktivitetsrapporten inom de [nya](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins) och [klassiska](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) portalerna för Azure Active Directory (Azure AD). Medan den ovanstående videon använder den klassiska portalen som exempel kommer den här artikeln att fokusera på den nya.
 
 > [!NOTE]
-> Den här aktivitetsrapporten omfattar både Power BI- (Free) och Pro-användare men gör ingen åtskillnad på dem baserat på deras licens.
-> 
-> 
+> Den här aktivitetsrapporten anger inte vilken typ av licens varje användare har.
 
 ## <a name="requirements"></a>Krav
 Följande är krav för att visa inloggningsaktivitetsrapporten.
@@ -70,7 +68,7 @@ Inloggningsdata kan hållas kvar i upp till 30 dagar. Mer information finns i [R
 
 ## <a name="next-steps"></a>Nästa steg
 [Inloggningsaktivitetrapporter i Azure Active Directory-portalen (nya portalen)](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins)  
-[Visa åtkomst och användning (klassisk portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports#view-or-download-a-report)  
+[Visa åtkomst och användning (klassisk portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)  
 [Inloggningsexempel med PowerShell-skript](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
 [Rapportkvarhållningsregler i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
 [Använda granskning i din organisation](service-admin-auditing.md)  

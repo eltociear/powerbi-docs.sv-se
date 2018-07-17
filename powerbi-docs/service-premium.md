@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 04963d513fa397e75c34f0650bf55fb31c1490f2
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: 15b64b917fed56e9d9ab6be2023060378324c794
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755103"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944570"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – vad är det?
 Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation eller ditt team, vilket ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också frekvent distribution av innehåll utan att du behöver köpa licenser per användare för tittare.
@@ -36,11 +36,11 @@ Det finns två typer av kapaciteter i Power BI. Delad kapacitet och Power BI Pre
 | **Uppdateringsintervall** |8/dag |Inte begränsad |
 | **Isolering med dedikerad maskinvara** |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig") |
 | **Företagsdistribution till** ***alla användare*** | | |
-| Appar |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig")<sup>1</sup> |
+| Appar och delning |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig")<sup>1</sup> |
 | Inbäddad API och kontroller |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig")<sup>2</sup> |
 | **Publicera Power BI-rapporter lokalt** |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig") |
 
-*<sup>1</sup> Kostnadsfri användarkonsumtion i appar inkluderar tittarinnehåll i webben och mobilt, med hjälp av frågor och svar, Quick Insights, Cortana, exportera till CSV, Excel och PowerPoint. En Pro-licens krävs för andra aktiviteter som inte visas, till exempel att skapa rapporter på delade datauppsättningar och analysera i Excel. Lär dig mer om funktioner i [Power BI kostnadsfritt kontra Pro](service-free-vs-pro.md).*  
+*<sup>1</sup> Mer information finns på sidan om [användarfunktioner med Power BI Pro och Power BI Premium](service-free-vs-pro.md)-funktioner.*  
 *<sup>2</sup> Framtida förbättringar kommer till Power BI Premium efter GA.*
 
 ### <a name="premium-capacity"></a>Premiumkapacitet
@@ -51,7 +51,7 @@ När en arbetsyta backas upp av premiumkapacitet, får du fördelarna med Power 
 * Schemalagda uppdateringar: användare var tidigare begränsade till 8 x per dag för schemalagd uppdatering av importerade modeller. Den här begränsningen hävs för datamängder i Premium-arbetsytor. Detta gäller inte för schemalagda uppdateringar för cachelagring av för DirectQuery. De är de samma för Premium och delade kapaciteter.
 * Isolering med dedikerad maskinvara – vid delad kapacitet kan prestanda för rapporter och instrumentpaneler påverkas av resurskrav från andra arbetsbelastningar i kapaciteten, trots vårt skydd mot det. Premium innehåller däremot mer konsekvent och tillförlitlig prestanda för arbetsbelastningar genom att isolera dem från orelaterade arbetsbelastningar.
 
-Om en app backas upp av premiumkapacitet (d.v.s. den publicerades från en app-arbetsyta som har tilldelats Premium), kan den publicerade appen sedan användas av alla användare i organisationen oavsett vilken licens de tilldelats. Detta innebär att även användare av den kostnadsfria Power BI kan använda dessa publicerade appar.
+Om en app backas upp av premiumkapacitet (d.v.s. den publicerades från en app-arbetsyta som har tilldelats Premium), kan den publicerade appen sedan användas av alla användare i organisationen oavsett vilken licens de tilldelats.
 
 ### <a name="shared-capacity"></a>Delad kapacitet
 Som standard är din arbetsyta i delad kapacitet. Detta inkluderar din personliga *Min arbetsyta* tillsammans med app-arbetsytor. En Delad kapacitet är den upplevelse du är van att arbeta med i Power BI, där dina arbetsbelastningar körs på dataresurser som delas av andra kunder.

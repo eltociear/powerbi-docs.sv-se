@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d350593f3a5168d959711e1ca2bbbd8a86524187
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a69cccafa9651bbda44ea2154ebe68463c9da907
+ms.sourcegitcommit: 7e0335bd8c263b5f8ba4303b986ddc450d842297
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288071"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36330132"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -56,15 +56,15 @@ Konfigurera en rapport som du vill att den ska visas i bokmärket. När du har u
 
 ![Lägga till ett bokmärke](media/desktop-bookmarks/bookmarks_04.png)
 
-**Power BI Desktop** skapar ett bokmärke och ger den ett allmänt namn. Du kan enkelt *byta namn på*, *ta bort* eller *uppdatera* ett bokmärke genom att markera ellipsen bredvid bokmärkets namn och välja en åtgärd på menyn som visas.
+**Power BI Desktop** skapar ett bokmärke och ger den ett allmänt namn. Du kan enkelt *byta namn på*, *ta bort* eller *uppdatera* ett bokmärke genom att välja ellipsen bredvid bokmärkets namn och sedan välja en åtgärd på menyn som visas.
 
-![Välj en undermeny för ett bokmärke med hjälp av ellipser](media/desktop-bookmarks/bookmarks_05.png)
+![Välj en undermeny för ett bokmärke med hjälp av ellipsen](media/desktop-bookmarks/bookmarks_05.png)
 
 När du har ett bokmärke kan du visa det genom att klicka på bokmärket i fönstret **Bokmärken**. 
 
 Du kan också välja om varje bokmärke ska tillämpa *data*-egenskaper, som filter och utsnitt, *visa*-egenskaper som aktuellt och dess synlighet och sidändringar som visar den sida som var synlig när bokmärket lades till. De här funktionerna är användbara när du använder bokmärken för att växla mellan visuella typer – då du förmodligen vill inaktivera dataegenskaperna så att filter inte återställs när användarna ändrar visuella typer. 
 
-För att göra dessa ändringar, väljer du ellipserna bredvid namnet på bokmärket, som visas i föregående bild och sedan markerar eller avmarkerar du bockmarkeringarna bredvid *Data*, *Visa* och andra kontroller. 
+För att göra dessa ändringar väljer du ellipsen bredvid bokmärkets namn, som visas i föregående bild, och sedan markerar eller avmarkerar du bockmarkeringarna bredvid *Data*, *Visa* och andra kontroller. 
 
 ## <a name="arranging-bookmarks"></a>Ordna bokmärken
 När du skapar bokmärken kanske du lägger märke till att ordningen du skapade dem i inte nödvändigtvis är samma ordning som du vill visa dem. Inga problem, kan du enkelt ändra ordningen på bokmärken.
@@ -104,7 +104,7 @@ Det är viktigt att notera att **utsnitt** fortsätter att filtrera en rapportsi
 ## <a name="bookmarks-for-shapes-and-images"></a>Bokmärken för former och bilder
 Du kan också länka former och bilder till bokmärken. När du klickar på ett objekt med den här funktionen visas bokmärket som associeras med objektet. Det kan vara speciellt användbart när du arbetar med knapparna. Du kan lära dig mer genom att läsa artikeln om att [använda knappar i Power BI](desktop-buttons.md). 
 
-Om du vill tilldela ett bokmärke till ett objekt, expanderar du avsnittet **Åtgärd** från fönstret **Formatera form** som det visas i följande bild.
+Om du vill tilldela ett bokmärke till ett objekt expanderar du avsnittet **Åtgärd** från fönstret **Formatera form** som visas i följande bild.
 
 ![Lägga till bokmärkeslänk till ett objekt](media/desktop-bookmarks/bookmarks_10.png)
 
@@ -128,7 +128,7 @@ När det visuella objektet i föregående bild har aktiverat **fokus**ikonen ser
 
 ![fokusläge](media/desktop-bookmarks/bookmarks_12.png)
 
-Däremot, när **Spotlight** väljs från ellipsmenyn för det visuella objektet ser sidan ut så här:
+När **Spotlight** däremot väljs från ellipsmenyn för det visuella objektet ser sidan ut så här:
 
 ![spotlightläge](media/desktop-bookmarks/bookmarks_13.png)
 

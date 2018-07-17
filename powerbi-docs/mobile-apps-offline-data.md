@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/16/2018
+ms.date: 06/27/2018
 ms.author: maggies
-ms.openlocfilehash: 5dd171ccd7d8859286abeac2f87771b454421448
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: cade8b126742610814f47587c950458796cca474
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292856"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136489"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Visa dina data offline i Power BI-mobilapparna
 Gäller för:
@@ -55,7 +55,8 @@ När du är offline med Power BI på din mobila enhet, kan du stöta på dessa b
 * Power BI kan cachelagra upp till 250 MB data offline.
 * Vissa paneltyper kräver en aktiv serveranslutning så de finns inte tillgängliga offline &#151; till exempel Bing-kartpaneler och vissa anpassade paneler.
 * Hela Excel-arbetsböcker i Power BI är inte tillgängliga offline.
-* Du kan se Reporting Services-mobila rapporter och KPI:er offline, om du har visat dem när du var ansluten. De uppdateras inte i bakgrunden. De uppdateras varje gång du öppnar dem. 
+* Du kan se Reporting Services-mobila rapporter och KPI:er offline, om du har visat dem när du var ansluten. De uppdateras inte i bakgrunden. De uppdateras varje gång du öppnar dem.
+* I Power BI-mobilapparna kan du inte se Power BI Desktop-filer (.pbix) som sparats i Power BI-rapportservern. 
 
 ## <a name="next-steps"></a>Nästa steg
 Din feedback hjälper oss att bestämma vad som ska implementeras i framtiden, så glöm inte att rösta för andra funktioner som du skulle vilja se i Power BI-mobilapparna. 
@@ -63,5 +64,5 @@ Din feedback hjälper oss att bestämma vad som ska implementeras i framtiden, s
 * [Power BI-appar för mobila enheter](mobile-apps-for-mobile-devices.md)
 * Följ @MSPowerBI på Twitter
 * Delta i konversationen i [Power BI Community](http://community.powerbi.com/)
-* [Kom igång med Power BI](service-get-started.md)
+* [Vad är Power BI?](power-bi-overview.md)
 

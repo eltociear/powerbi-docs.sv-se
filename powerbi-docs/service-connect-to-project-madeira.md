@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1ce4fe4e80138995e7ec356b92f31e45f3a2c920
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245615"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599794"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Anslut till Project ”Madeira” med Power BI
 Det är enkelt att hämta insikter i dina Project ”Madeira”-data med Power BI och Project ”Madeira”-innehållspaketet. Power BI hämtar dina data, både försäljning och ekonomi, och skapar sedan en instrumentpanel och rapporter baserade på dessa data.
@@ -33,7 +33,7 @@ Anslut till [innehållspaketet Project ”Madeira” Analytics](https://app.powe
     ![](media/service-connect-to-project-madeira/services.png)
 3. Välj **Project ”Madeira”** och välj **Hämta**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. När du uppmanas, anger du URL:en för Project ”Madeira”. URL: en måste följa följande mönster exakt https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') med företagsnamnet för projektet ”Madeira”. Det finns inget avslutande snedstreck i slutet och anslutningen måste vara i formatet https. Mer information om hur du hittar den här URL:en finns [nedan](#FindingParams).  
+4. När du uppmanas, anger du URL:en för Project ”Madeira”. URL:en måste följa mönstret <https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US>’) exakt, med företagsnamnet för projektet ”Madeira”. Det finns inget avslutande snedstreck i slutet och anslutningen måste vara i formatet https. Mer information om hur du hittar den här URL:en finns [nedan](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. När du uppmanas, väljer du Basic som autentiseringsmetod. Ange din e-postadress för Project ”Madeira” som användarnamn och ange sedan web service-åtkomstnyckeln för ditt Project ”Madeira”-konto som lösenord. Om du redan är inloggad på Project ”Madeira” i webbläsaren, behöver du kanske inte ange några autentiseringsuppgifter. Visa information om att skapa den här åtkomstnyckeln [nedan](#FindingParams).  
@@ -93,10 +93,10 @@ Power BI-instrumentpanelen är beroende av de publicerade webbtjänster som list
 
 Om du ser det här felet när du anger en URL för projektet ”Madeira” bör du kontrollera att följande krav är uppfyllda:  
 
-   - URL:en följer exakt det här mönstret https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company ('*CRONUS % 20US*”)  
-   - Ta bort all text efter företagets namn inom parentes  
-   - Kontrollera att det inte finns något avslutande snedstreck i slutet av URL:en.  
-   - Kontrollera att URL:en använder en säker anslutning som anges av att URL:en börjar med https.  
+- URL:en följer exakt det här mönstret https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company ('<em>CRONUS % 20US</em>”)  
+- Ta bort all text efter företagets namn inom parentes  
+- Kontrollera att det inte finns något avslutande snedstreck i slutet av URL:en.  
+- Kontrollera att URL:en använder en säker anslutning som anges av att URL:en börjar med https.  
 
 **”Inloggningen misslyckades”** Om du får felet ”Inloggningen misslyckades” när du loggar in på instrumentpanelen med autentiseringsuppgifter för Project ”Madeira” kan det bero på något av följande problem:  
 
@@ -104,16 +104,16 @@ Om du ser det här felet när du anger en URL för projektet ”Madeira” bör 
    - Project ”Madeira”-instansen som du försöker ansluta till har inte ett giltigt SSL-certifikat. I det här fallet visas ett mer detaljerat felmeddelande (”det går inte att upprätta betrodd relation med SSL”). Observera att självsignerade certifikat inte stöds.  
 
 **”Oops”** Om du ser ett”Oops”-fel efter autentiseringsdialogrutan beror detta oftast på problem med att ansluta till data för innehållspaketet. Kontrollera att URL: en följer mönstret som angavs tidigare:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')
 
 Ett vanligt fel är att ange hela IRL:en för en specifik webbtjänst:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')/powerbifinance
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')/powerbifinance
 
 Eller också har du glömt att ange företagets namn:   
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
+    https://<em>mycronusus</em>.projectmadeira.com:7048/NAV/OData/
 
 ## <a name="next-steps"></a>Nästa steg
-[Kom igång med Power BI](service-get-started.md)
+[Vad är Power BI?](power-bi-overview.md)
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)
 

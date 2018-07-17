@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f264dadf9d9d91083094d393e1b63d9f53aaca4c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 0f2c3649a2c6e0582fe7536473f7a6ee9067ee1d
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722369"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137455"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse med DirectQuery
 Med Azure SQL Data Warehouse med DirectQuery kan du skapa dynamiska rapporter baserade på data och mått som du redan har i Azure SQL Data Warehouse. Med DirectQuery skickas frågor tillbaka till din Azure SQL Data Warehouse i realtid medan du utforskar dessa data. Detta i kombination med skalan för SQL Data Warehouse gör att du kan skapa dynamiska rapporter på några få minuter mot flera terabyte av data. Dessutom tillåter införandet av knappen **Öppna i Power BI** användare att ansluta Power BI direkt till SQL Data Warehouse utan att behöva ange informationen manuellt.
@@ -32,6 +32,11 @@ När du använder SQL Data Warehouse-anslutningsprogrammet:
 Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förbättra upplevelsen. Nedan beskrivs steget för att ansluta.
 
 ## <a name="using-the-open-in-power-bi-button"></a>Använda knappen ”Öppna i Power BI”
+
+> [!Important]
+> Vi har förbättrat anslutningen till Azure SQL Data Warehouse.  Använd Power BI Desktop för bästa möjliga anslutning till din Azure SQL Data Warehouse-datakälla.  När du har skapat din modell och rapport kan du publicera den till Power BI-tjänsten.  Direktanslutningen för Azure SQL Data Warehouse i Power BI-tjänsten är nu inaktuell.
+>
+
 Det enklaste sättet att flytta mellan din SQL Data Warehouse och Power BI är med knappen **Öppna i Power BI** i Azure Preview Portal. Med den här knappen kan du sömlöst börja skapa nya instrumentpaneler i Power BI.
 
 1. Kom igång genom att gå till din SQL Data Warehouse-instans i Azure Preview Portal. Observera att SQL Data Warehouse bara finns i Azure Preview Portal just nu.
@@ -82,7 +87,7 @@ Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azur
 >
 
 ## <a name="next-steps"></a>Nästa steg
-[Kom igång med Power BI](service-get-started.md)  
+[Vad är Power BI?](power-bi-overview.md)  
 [Hämta data för Power BI](service-get-data.md)  
 [Azure SQL Data Warehouse](https://azure.microsoft.com/documentation/services/sql-data-warehouse/)  
 

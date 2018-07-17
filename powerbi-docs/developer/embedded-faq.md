@@ -3,18 +3,18 @@ title: Vanliga frågor och svar om Power BI Embedded
 description: Bläddra i en lista med vanliga frågor och svar om Power BI Embedded.
 author: markingmyname
 manager: kfile
+ms.author: maghan
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: maghan
-ms.openlocfilehash: bcdb20d22790b74b54caca5d21325039d6e718bf
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.date: 06/22/2018
+ms.openlocfilehash: 07d51448083f61725157d3ea37c5d9dc73e85157
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34812754"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599960"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -76,7 +76,7 @@ Här är en lista över några skillnader som du kan använda de olika funktione
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Köp     |Azure Portal |Office |Office |
-|Användningsfall |* Bädda in innehåll i ditt eget program |* Bädda in innehåll i ditt eget program<br>* Dela innehåll med Power B-användare (kostnadsfri) utanför PowerBI.com och bädda in i andra SaaS-program (SharePoint, Teams) |* Bädda in innehåll i ditt eget program<br>* Dela innehåll med Power B-användare (kostnadsfri) utanför PowerBI.com och bädda in i andra SaaS-program (SharePoint, Teams)<br>* Dela innehåll med Power BI-användare (kostnadsfri) via PowerBI.com  |
+|Användningsfall |* Bädda in innehåll i ditt eget program |* Bädda in innehåll i ditt eget program<br>* Dela innehåll med Power BI-användare (kostnadsfri) utanför PowerBI.com och bädda in i andra SaaS-program (SharePoint, [Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/)) |* Bädda in innehåll i ditt eget program<br>* Dela innehåll med Power B-användare (kostnadsfri) utanför PowerBI.com och bädda in i andra SaaS-program (SharePoint, Teams)<br>* Dela innehåll med Power BI-användare (kostnadsfri) via PowerBI.com  |
 |Fakturering |Varje timma |Varje månad |Varje månad |
 |Bindningstid  |Ingen bindningstid |Varje år  |Varje månad/varje år |
 |Skillnad |Fullständig elasticitet. Kan skapa upp/ner, pausa/återuppta resurser i Azure Portal eller med API  |Kan användas för att bädda in innehåll i SharePoint Online och Microsoft Teams |Kombinera att bädda in i applikationer och använda Power BI-tjänsten i samma utsträckning |
@@ -95,6 +95,58 @@ Vi kommer snart att erbjuda övervakning via Azure. Azure-resursen, Power BI Emb
 
 Automatisk skalanpassning finns inte för tillfället men alla API:er kan spalanpassas när som helst.
 
+### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Varför placeras kapaciteten i pausat läge när den skapas/skalas/återupptas?
+
+Kapacitetens etablering kan misslyckas (skalning/återupptagning/skapande). Etableringsanropets anropare ska kontrollera ProvisioningState för en kapacitet med API:t för att hämta information: [Kapaciteter – hämta information](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+
+### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Varför kan jag bara skapa PBIE i en viss region?
+
+Du kan bara skapa PBIE-kapaciteter för din PBI-klientorganisationsregion.
+
+### <a name="how-can-i-find-what-is-my-pbi-tenant-region"></a>Hur tar jag reda på vad som är min PBI-klientorganisationsregion?
+
+Du kan använda PBI-portalen för att ta reda på din PBI-klientorganisationsregion.
+
+https://app.powerbi.com/ > ? > Om Power BI
+
+![Om Power BI](media/embedded-faq/about-01.png)
+![Klientorganisationsregion](media/embedded-faq/tenant-location-01.png)
+
+### <a name="what-is-supported-with-the-communicating-sequential-processes-csp-channel"></a>Vad stöds med CSP-kanalen (Communicating Sequential Processes)?
+
+* Du kan skapa PBIE för din klientorganisation med prenumerationstypen CSP.
+* Ett partnerkonto kan logga in på en kundklientorganisation och köpa PBIE för kundklientorganisationen, och ange en användare hos kundklientorganisationen som Power BI-kapacitetsadministratör.
+
+### <a name="why-do-i-get-an-unsupported-account-message"></a>Varför visas ett meddelande om att kontot inte stöds?
+
+Power BI kräver att du registrerar dig med ett organisationskonto. Det går inte att registrera sig för Power BI med ett MSA (Microsoft-konto).
+
+### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Kan jag använda API:er för att skapa och hantera Azure-kapaciteter?
+
+Ja, det finns PowerShell-cmdletar och ARM API:er för att skapa och hantera PBIE-resurser.
+
+* REST API:er – https://docs.microsoft.com/rest/api/power-bi-embedded/
+* PowerShell-cmdletar – https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
+
+### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Vad är den dedikerade kapacitetsrollen för PBI Embedded i en PBI Embedded-lösning?
+
+För att [flytta upp din lösning till produktion](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) behöver du Power BI-innehållet (apparbetsyta som du använder i ditt program som tilldelas till en dedikerad kapacitet).
+
+### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>I vilka Azure-regioner är PBI Embedded tillgängligt?
+
+[PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) – Se Ansvarig för produkttillgänglighet
+
+Tillgängliga regioner (16 – samma regioner som Power BI)
+* USA (6) – USA, östra, USA, östra 2, USA, norra centrala, USA, södra centrala, USA, västra, USA, västra 2
+* Europa (2) – Europa, norra, Europa, västra
+* Asien och stillahavsområdet (2) – Asien, sydöstra, Asien, östra
+* Brasilien (1) – Brasilien, södra
+* Japan (1) – Japan, östra
+* Australien (1) – Australien, sydöstra
+* Indien (1) – Indien, västra
+* Kanada (1) – Kanada, centrala
+* Storbritannien (1) – Storbritannien, södra
+
 ### <a name="what-is-the-authentication-model-for-power-bi-embedded"></a>Vilken autentiseringsmodell används för Power BI Embedded?
 
 Power BI Embedded kommer att fortsätta att använda Azure AD för autentisering av masteranvändaren (en licensierad utsedd Power BI Pro-användare), d.v.s. autentisering av appen i Power BI.
@@ -104,6 +156,17 @@ Autentisering och auktorisering för det användarna kommer att implementeras av
 Om du redan har en Azure AD-klient kan du använda en befintlig katalog och skapa en ny Azure AD-klient för att skydda ditt inbäddade innehåll.
 
 Du kan skaffa en AAD-token genom att använda något av Azure Active Directory-autentiseringsbiblioteken – https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Det finns klientbibliotek för flera plattformar.
+
+### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Mitt program använder redan AAD för användarautentisering. Hur kan den här identiteten användas vid Power BI-autentisering i ett scenario där ”användaren äger data”? 
+
+Standard är flödet för OAuth (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) Programmet måste konfigureras för att kräva behörigheter till Power BI-tjänsten (med nödvändiga omfattningar), och när du har en användartoken för din app anropar du ADAL API AcquireTokenAsync med din användaråtkomsttoken och anger resurs-URL för Power BI som resurs-ID. Här nedan visas ett kodfragment för hur detta kan göras:
+
+```csharp
+var context = new AD.AuthenticationContext(authorityUrl);
+var userAssertion = new AD.UserAssertion(userAccessToken);
+var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
+var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
+```
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>Hur skiljer sig Power BI Embedded från övriga Azure-tjänster?
 
@@ -117,7 +180,7 @@ Använd PowerBI.com om du vill tilldela/ångra tilldelning av arbetsytor i din P
 
 ### <a name="what-deploy-regions-are-supported"></a>Vilka distributionsregioner stöds?
 
-Sydöstra Australien, södra Brasilien, centrala Kanada, östra USA 2, västra Indien, östra Japan, norra centrala USA, Nordeuropa, södra centrala USA, Sydostasien, södra Storbritannien, Västeuropa, västra USA och västra USA 2.
+Sydöstra Australien, södra Brasilien, centrala Kanada, USA, östra 2, västra Indien, östra Japan, norra centrala USA, Nordeuropa, södra centrala USA, Sydostasien, södra Storbritannien, Västeuropa, västra USA och USA, västra 2.
 
 ### <a name="what-type-of-content-pack-data-can-be-embedded"></a>Vilken typ av data i innehållspaket kan bäddas in?
 
@@ -181,8 +244,8 @@ Ideella organisationer och högskolor kan köpa Azure. Det finns ingen särskild
 
 3. När du är redo för produktion köper du en **Power BI Embedded**-dedikerad kapacitet och tilldelar ditt Power BI-innehåll (arbetsytan) till den kapaciteten.
 
->[!Note]
-Du kan fortsätta att använda **Power BI-arbetsytesamling** samtidigt som du bygger parallellt med en **Power BI Embedded**-lösning. När du är klar kan du flytta kunden till den nya **Power BI Embedded**-lösningen och dra tillbaka **Power BI-arbetsytesamlingen**.
+> [!Note]
+> Du kan fortsätta att använda **Power BI-arbetsytesamling** samtidigt som du bygger parallellt med en **Power BI Embedded**-lösning. När du är klar kan du flytta kunden till den nya **Power BI Embedded**-lösningen och dra tillbaka **Power BI-arbetsytesamlingen**.
 
 Mer information finns i [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded).
 
@@ -197,7 +260,7 @@ Kunder som redan använder **Power BI-arbetsytesamlingar** kan fortsätta att an
 
 ### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>I vilka regioner kan PBI-arbetsytesamling skapas?
 
-De tillgängliga regionerna är sydöstra Australien, södra Brasilien, centrala Kanada, östra USA 2, östra Japan, norra centrala USA, Nordeuropa, södra centrala USA, Sydostasien, södra Storbritannien, Västeuropa, västra Indien och västra USA.
+De tillgängliga regionerna är sydöstra Australien, södra Brasilien, centrala Kanada, USA, östra 2, östra Japan, norra centrala USA, Nordeuropa, södra centrala USA, Sydostasien, södra Storbritannien, Västeuropa, västra Indien och västra USA.
 
 ### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Varför bör jag migrera från PBI-arbetsytesamling till Power BI Embedded?
 

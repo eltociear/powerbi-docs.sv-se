@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a604f50889d4443ba7c8e7da580275e579f69d15
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301836"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965514"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -99,6 +99,8 @@ Mer information om granskningsloggarna finns i [granska Power BI i din organisat
 ## <a name="tenant-settings"></a>Klientinställningar
 
 Den tredje fliken i administrationsportalen är **klientinställningar**. Klientinställningarna ger dig större kontroll över vilka funktioner som är tillgängliga för din organisation. Om du har frågor kring känsliga data, vissa av våra funktioner inte är lämpliga för din organisation eller om du bara vill att en viss funktion ska vara tillgänglig för en särskild grupp. Om så är fallet, kan du stänga av den i din klient.
+
+Som standard har till exempel data per användare aktiverats för användningsstatistik, och kontoinformation om skapare av innehåll ingår i statistikrapporten. Om du inte vill inkludera den här informationen för vissa eller alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformation visas då i rapporten som *Namnlös*.
 
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -235,7 +237,7 @@ Användare i organisationen kan interagera med och dela anpassad visuell informa
 
 ## <a name="r-visuals-settings"></a>Inställningar för R-visualisering
 
-### <a name="interact-with-an-dshare-r-visuals"></a>Interagera med visuella dshare R-objekt
+### <a name="interact-with-and-share-r-visuals"></a>Interagera med och dela visuell R-information
 
 Användare i organisationen kan interagera med och dela visuella objekt som skapats med R-skript. [Läs mer](service-r-visuals.md)
 

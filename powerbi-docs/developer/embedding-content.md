@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: cb84cb2f4242cb120f187c27bb1b1675177c33a2
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: 8a912791777c631208ee40d37c5eaad56806ccf9
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813053"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945366"
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Bädda in Power BI-innehåll i instrumentpaneler, rapporter och paneler
 
@@ -35,6 +35,9 @@ Innan du börjar bädda in instrumentpaneler och rapporter i din app måste du s
 
 * [Se till att du har en Azure Active Directory-klient](embedding-content.md#azureadtenant)
 * [Skapa ditt Power BI Pro-konto](embedding-content.md#proaccount)
+* [Appregistrering och behörigheter](embedding-content.md#appreg)
+* [Skapa apparbetsytor](embedding-content.md#appws)
+* [Skapa och ladda upp rapporter](embedding-content.md#createreports)
 
 Med [integrationsverktyget](https://aka.ms/embedsetup) kommer du snabbt igång och kan ladda ned ett exempelprogram.
 
@@ -67,7 +70,7 @@ Följande konton måste finnas i klientorganisationen och ha en tilldelad licens
 
 #### <a name="an-organizationtenant-admin-user"></a>En administratör för organisationen/klienten
 
-Vi rekommenderar att den globala administratören för din organisation/klient inte används om din app använder inbäddning för kunder. Detta minskar åtkomsten som appkontot har i din klient. Vi rekommenderar att administratören är administratör för alla apparbetsytor som skapas för inbäddning.
+Vi rekommenderar att den globala administratören för din organisation/klient inte används om din app använder inbäddning för kunder. Detta minskar åtkomsten som appkontot har i din klient. Administratörsanvändaren måste vara administratör för alla apparbetsytor som skapas för inbäddning.
 
 #### <a name="accounts-for-analysts-that-create-content"></a>Konton för analytiker som skapar innehåll
 
@@ -83,7 +86,7 @@ Huvudkontot är en vanlig användare med en Power BI Pro-licens som du använder
 
 Du måste registrera appen med Azure AD för att köra REST API-anrop. Mer information finns i [Registrera en Azure AD-app för att bädda in Power BI-innehåll](register-app.md).
 
-### <a name="create-app-workspaces"></a>Skapa apparbetsytor
+### <a name="appws"></a>Skapa apparbetsytor
 
 Om du bäddar in instrumentpaneler och rapporter för kunder måste dessa instrumentpaneler och rapporter placeras på en apparbetsyta. *Huvudkontot* som vi nämnde ovan måste vara administratör för apparbetsytan.
 
@@ -93,13 +96,17 @@ Om du bäddar in instrumentpaneler och rapporter för kunder måste dessa instru
 > En användare som inte är administratör kan bara skapa upp till 250 apparbetsytor. Om du vill skapa fler apparbetsytor behöver du ett administratörskonto för klienten.
 >
 
-### <a name="create-and-upload-your-reports"></a>Skapa och ladda upp dina rapporter
+### <a name="createreports"></a>Skapa och ladda upp dina rapporter
 
 Du kan skapa rapporter och datauppsättningar som använder Power BI Desktop och publicera dessa rapporter till en apparbetsyta. Slutanvändaren som publicerar rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
 
 ## <a name="step-2-embed-your-content"></a>Steg 2: Bädda in innehåll
 
-I din app måste du autentisera med Power BI. Om du bäddar in innehåll för kunder lagras autentiseringsuppgifterna för *huvudkontot* i din app. Mer information finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md).
+I din app måste du autentisera med Power BI. Om du bäddar in innehåll för kunder lagras autentiseringsuppgifterna för *huvudkontot* i din app.
+
+> [!NOTE]
+> Mer information om användarautentisering vid inbäddning för dina kunder finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md).
+>
 
 När autentiseringen i din app är klar använder du Power BI REST-API:er och JavaScript-API:er för att bädda in instrumentpaneler och rapporter i din app. 
 
@@ -123,7 +130,7 @@ Fler steg krävs för att flytta till produktion.
 
 Om du bäddar in för din organisation måste du informera användarna om hur de kommer åt din app. 
 
-Gratisanvändare kan använda innehåll som är inbäddat från en apparbetsyta (grupp) om arbetsytan har dedikerad kapacitet. Lägg till gratisanvändaren som medlem i apparbetsytan (gruppen), annars visas felet 401 – Obehörig. I följande tabell visas tillgängliga Power BI Premium SKU:er i Office 365.
+Alla användare, oavsett vilken licens de har tilldelats, kan använda innehåll som är inbäddat från en apparbetsyta (grupp) om arbetsytan har dedikerad kapacitet. Men du måste uttryckligen lägga till alla användare som inte har en Power BI Pro-licens i apparbetsytan. Annars får du felet 401 – Ej behörig. I följande tabell visas tillgängliga Power BI Premium SKU:er i Office 365.
 
 | Kapacitetsnod | Totalt antal kärnor<br/>*(Serverdel + klientdel)* | Serverdelskärnor | Klientdelskärnor | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning |
 | --- | --- | --- | --- | --- | --- |

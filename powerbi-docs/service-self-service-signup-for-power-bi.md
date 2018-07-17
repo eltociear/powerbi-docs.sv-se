@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 060bebbc79db02d28755cc7832f4a4ef3d2d578f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: abc53080456e27e58d8b9519c9d6543e66142780
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299503"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926500"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI
 Lär dig hur du registrerar dig för Power BI och börja använda det för dina personliga rapport- och visualiseringsbehov.
@@ -32,8 +32,7 @@ Som enskild individ har du flera alternativ för att registrera dig och börja a
 Om du tillhör en befintlig organisation som använder Office 365, kan du fortfarande registrera dig för ett kostnadsfritt konto. Din IT-administratör har också olika alternativ när det gäller att köpa Power BI Pro och tilldela licenser. Mer information om vilka alternativ som är tillgängliga för IT-administratör finns i [Köpa Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 
 > [!NOTE]
-> Om du arbetar i en organisation kan det vara så att individuell registrering har inaktiverats. Mer information om fel som indikerar inaktivering finns i [Individuell registrering har inaktiverats](#individual-sign-up-has-been-turned-off).
->
+> Om du arbetar i en organisation kan det vara så att individuell registrering har inaktiverats. Kontakta IT-avdelningen för mer information om du får ett felmeddelande om att registreringen har inaktiverats.
 
 ## <a name="what-you-need-to-sign-up"></a>Vad behöver jag för att registrera mig?
 
@@ -69,16 +68,16 @@ Du kan registrera dig för Power BI genom att göra följande.
 
 1. Gå till [powerbi.com](https://powerbi.microsoft.com).
 2. Välj **Starta kostnadsfri** eller **Registrera dig kostnadsfritt**.
-   
+
     ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup1.png)
 3. Välj **Testa kostnadsfritt >** under Power BI på startsidan.
-   
+
     ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup2.png)
 4. Ange den e-postadress som du registrerar dig med och välj sedan **Registrera**. Kontrollera att e-postadressen får användas för registrering. Mer information om vilka e-postadresser du kan använda finns i [Vilka e-postadresser kan användas med Power BI](#what-email-address-can-be-used-with-power-bi).
-   
+
     ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup3.png)
 5. Du får ett e-postmeddelande som indikerar att du bör kontrollera din e-postadress.
-   
+
     ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
 6. Verifiera din e-postadress via länken i e-postmeddelandet. Då kommer du tillbaka till registreringsflödet. Du kan behöva ange ytterligare information om dig själv.
 7. Sedan leds du vidare till https://app.powerbi.com där du kan börja använda Power BI kostnadsfritt.
@@ -123,7 +122,7 @@ Sedan kan du välja **Starta utvärdering**.
 > 
 
 ### <a name="what-this-looks-like-within-the-service"></a>Så här ser det ut i tjänsten
-När du använder tjänsten kan du kontrollera att du har ett konto för en utvärderingsversion av Pro genom att gå till **kugghjulsikonen* och välja **Hantera personlig lagring**.
+När du använder tjänsten kan du kontrollera att du har ett konto för en utvärderingsversion av Pro genom att gå till <strong>*kugghjulsikonen och välja **Hantera personlig lagring</strong>.
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
@@ -133,11 +132,12 @@ Det går inte att skaffa någon Power BI Pro-licens som enskild individ. Du mås
 ## <a name="troubleshooting"></a>Felsökning
 I många fall kan du registrera dig för Power BI genom att följa den enkla processen för självbetjäningsregistreringen som anges ovan. Det finns dock flera orsaker som kan medföra att du inte kan slutföra självbetjäningsregistreringen.  I tabellen nedan sammanfattas några av de vanligaste orsakerna som kan leda till problem vid registreringen och de åtgärder du kan vidta för att lösa problemen.
 
-| **Symtom / Felmeddelande** | **Orsak och lösning** |
-| --- | --- |
-| **Personliga e-postadresser (t.ex. nancy@gmail.com)** Du får ett meddelande som detta under registreringen: <br /><br /> *Du har angett en personlig e-postadress. Ange din e-postadress till arbetet, så vi kan lagra företagets data på ett säkert sätt.* <br /><br /> eller <br /><br /> *Det där ser ut som en personlig e-postadress. Ange din adress till arbetet så att vi kan ansluta dig till andra i företaget. Oroa dig inte. Vi kommer inte att dela din adress med vem som helst.* |Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. <br /><br /> Gör ett nytt försök att slutföra registreringen med en e-postadress som tilldelats av ditt arbete eller din skola. <br /><br /> Om du ändå inte kan registrera dig och är villig att genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Bjud in användarkontot som [Azure B2B-gäst](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b). |
-| **Självbetjäningsregistrering har inaktiverats** Du får ett meddelande som detta under registreringen: <br /><br /> *Vi kan inte slutföra din registrering. IT-avdelningen har inaktiverat registrering för Microsoft Power BI. Kontakta dem så att du kan slutföra registreringen.* <br /><br /> eller <br /><br /> *Det där ser ut som en personlig e-postadress. Ange din adress till arbetet så att vi kan ansluta dig till andra i företaget. Oroa dig inte. Vi kommer inte att dela din adress med vem som helst.* |Din organisations IT-administratör har inaktiverat självbetjäningsregistrering för Power BI. <br /><br /> Slutför registreringen genom att kontakta IT-administrationen och be dem att följa anvisningarna på nedanstående sida så att befintliga användare kan registrera sig för Power BI och nya användare kan ansluta till din befintliga klient. <br/><br/> Det här problemet kan också uppstå om du har registrerat dig för Office 365 via en partner. [Läs mer](service-admin-syndication-partner.md) <br /><br /> [Power BI i din organisation](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
-| **E-postadressen är inte ett Office 365-ID** Du får ett meddelande som detta under registreringen: <br /><br /> *Vi hittar dig inte på contoso.com.  Använder du ett annat ID i arbetet eller skolan? <br /><br />Prova med att logga in med det, och om detta inte fungerar kan du kontakta IT-avdelningen.* |Din organisation använder ID:n som skiljer sig från din e-postadress för att logga in på Office 365 och andra Microsoft-tjänster.  Din e-postadress kan t.ex. vara Nancy.Smith@contoso.com, medan ditt ID är nancys@contoso.com. <br /><br /> Slutför registreringen genom att använda det ID som din organisation har tilldelat dig för att logga in på Office 365 eller andra Microsoft-tjänster.  Om du inte känner till ditt ID kan du kontakta IT-administratören. <br /><br /> Om du ändå inte kan registrera dig men kan genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+
+|                                                                                                                                                                                                                          **Symtom / Felmeddelande**                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                **Orsak och lösning**                                                                                                                                                                                                                                                                                                                                                |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Personliga e-postadresser (t.ex. nancy@gmail.com)</strong> Du får ett meddelande som detta under registreringen: <br /><br /> *Du har angett en personlig e-postadress. Ange din e-postadress till arbetet, så vi kan lagra företagets data på ett säkert sätt.* <br /><br /> eller <br /><br /> *Det där ser ut som en personlig e-postadress. Ange din adress till arbetet så att vi kan ansluta dig till andra i företaget. Oroa dig inte. Vi kommer inte att dela din adress med vem som helst.* |                          Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. <br /><br /> Gör ett nytt försök att slutföra registreringen med en e-postadress som tilldelats av ditt arbete eller din skola. <br /><br /> Om du ändå inte kan registrera dig och är villig att genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Bjud in användarkontot som [Azure B2B-gäst](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).                           |
+|            **Självbetjäningsregistrering har inaktiverats** Du får ett meddelande som detta under registreringen: <br /><br /> *Vi kan inte slutföra din registrering. IT-avdelningen har inaktiverat registrering för Microsoft Power BI. Kontakta dem så att du kan slutföra registreringen.* <br /><br /> eller <br /><br /> *Det där ser ut som en personlig e-postadress. Ange din adress till arbetet så att vi kan ansluta dig till andra i företaget. Oroa dig inte. Vi kommer inte att dela din adress med vem som helst.*             |                             Din organisations IT-administratör har inaktiverat självbetjäningsregistrering för Power BI. <br /><br /> Slutför registreringen genom att kontakta IT-administrationen och be dem att följa anvisningarna på nedanstående sida så att befintliga användare kan registrera sig för Power BI och nya användare kan ansluta till din befintliga klient. <br/><br/> Det här problemet kan också uppstå om du har registrerat dig för Office 365 via en partner. [Läs mer](service-admin-syndication-partner.md) <br /><br /> [Power BI i din organisation](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant)                              |
+|                                                                                          **E-postadressen är inte ett Office 365-ID** Du får ett meddelande som detta under registreringen: <br /><br /> *Vi hittar dig inte på contoso.com.  Använder du ett annat ID i arbetet eller skolan? <br /><br />Prova med att logga in med det, och om detta inte fungerar kan du kontakta IT-avdelningen.*                                                                                           | Din organisation använder ID:n som skiljer sig från din e-postadress för att logga in på Office 365 och andra Microsoft-tjänster.  Din e-postadress kan t.ex. vara Nancy.Smith@contoso.com, medan ditt ID är nancys@contoso.com. <br /><br /> Slutför registreringen genom att använda det ID som din organisation har tilldelat dig för att logga in på Office 365 eller andra Microsoft-tjänster.  Om du inte känner till ditt ID kan du kontakta IT-administratören. <br /><br /> Om du ändå inte kan registrera dig men kan genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
 ## <a name="next-steps"></a>Nästa steg
 [Power BI (kostnadsfri) i din organisation](service-admin-service-free-in-your-organization.md)  

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/13/2018
 ms.author: maggies
-ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 32d73b4be55190b908353083b497581cb1b08c6e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482255"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599034"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Visa lokala rapportserverrapporter och KPI:er i Power BI-mobilapparna
 
@@ -103,6 +103,9 @@ Nu kan du visa och interagera med KPI:er och Power BI-rapporter som lagras på r
 Power BI-rapporter, mobila Reporting Services-rapporter och KPI:er visas i samma mappar som de finns i på Reporting Services-webbportalen. 
 
 * Tryck på en Power BI-rapport ![Ikonen Power BI-rapport](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-report-icon.png). Den öppnas i liggande läge och du kan interagera med den i Power BI-appen.
+
+    > [!NOTE]
+  > Öka och minska detaljnivån är för närvarande inte aktiverat i Power BI-rapporter på en Power BI-rapportserver.
   
     ![Power BI-rapport](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
 * I Power BI Desktop kan rapportägare [optimera en rapport](desktop-create-phone-report.md) för Power BI-mobilapparna. På din mobiltelefon har optimerade rapporter en särskild ikon ![ikonen Optimerad Power BI-rapport](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) och layout.
@@ -129,6 +132,6 @@ Du kan markera KPI:er och rapporter som favoriter i webbportalen och sedan visa 
 3. Tryck på **Ta bort server**.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Kom igång med Power BI](service-get-started.md)  
+* [Vad är Power BI?](power-bi-overview.md)  
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

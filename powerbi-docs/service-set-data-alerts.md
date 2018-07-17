@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 321e66fd5ed185a92c98bf7832dc3b71944be98d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689724"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137648"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Datavarningar i Power BI-tjänsten
 Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett. 
@@ -104,6 +104,6 @@ Det finns flera sätt att hantera dina aviseringar: från paneler i instrumentpa
 ## <a name="next-steps"></a>Nästa steg
 [Skapa ett Microsoft-flöde som innehåller en datavarning](service-flow-integration.md)    
 [Ställa in datavarningar på din mobilenhet](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Kom igång med Power BI](service-get-started.md)    
+[Vad är Power BI?](power-bi-overview.md)    
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

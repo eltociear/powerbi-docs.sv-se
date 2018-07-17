@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 3be6882219e23a2d22ee03e6805ce3a1e8e08b8f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fb05b6fd2378c8fe2b6dec35250df31d227b7760
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297732"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135454"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Skapa en länk till en specifik plats i Power BI-mobilapparna
 Du kan skapa och använda en URI (Uniform Resource Identifier) för att länka till en specifik plats (en *djuplänk*) i Power BI-mobilapparna på alla mobila plattformar: iOS, Android-enheter och Windows 10.
@@ -103,5 +103,5 @@ Din feedback hjälper oss att bestämma vad som ska implementeras i framtiden, s
 * [Power BI-appar för mobila enheter](mobile-apps-for-mobile-devices.md)
 * Följ @MSPowerBI på Twitter
 * Delta i konversationen i [Power BI Community](http://community.powerbi.com/)
-* [Kom igång med Power BI](service-get-started.md)
+* [Vad är Power BI?](power-bi-overview.md)
 

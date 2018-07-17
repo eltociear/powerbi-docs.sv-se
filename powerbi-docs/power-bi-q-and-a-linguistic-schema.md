@@ -7,15 +7,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c504280257a959ccd7a46e61b9d377c22b76c14d
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.openlocfilehash: 08a65e7d312b0f57ec2824431bd00456c06860be
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34471903"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945214"
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Språkmodellering och språkschemat 
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Ännu mer kraftfullt är det när dina data svarar, vilket är precis vad du kan åstadkomma med Frågor och svar i Power BI. När du ställer en fråga till Frågor och svar i Power BI, gör funktionen vad den kan för att svara korrekt. 
@@ -340,7 +340,7 @@ Ett annat exempel är om du lägger till den alternativa frasen ”anställda s�
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Om du gör en ändring i en .lsdl.yaml-fil som inte matchar språkschemats format, visas verifieringsindikatorer som de nedan för att uppmärksamma dig på problemet: 
 
-    ![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
+![yaml-fil som visar fel](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

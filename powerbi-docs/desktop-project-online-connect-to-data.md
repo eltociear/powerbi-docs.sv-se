@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6cae9bdfbb89e8c3a11e8ee3fec45327296319b3
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9c41cca5ba4b66e118ea1122988080bbc1d45a8a
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34288922"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37597455"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: anslut till data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
@@ -25,7 +25,7 @@ Du kan ansluta till data i Project Online via Power BI Desktop.
 
 ### <a name="step-2-connect-to-project-online-with-odata"></a>Steg 2: Anslut till Project Online med OData
 1. Öppna **Power BI Desktop**.
-2. På *Välkomst*skärmen, väljer du **Hämta data.**
+2. På *välkomstskärmen* väljer du **Hämta data**.
 3. Välj **OData-flöde** och välj **Anslut**.
 4. Ange adressen för ditt OData-flöde i URL-rutan och klicka sedan på OK.
    

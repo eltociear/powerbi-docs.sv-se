@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 7402bc638f27175e1c8e1f733fefd508850d9943
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 75636885da6357a756508558841c99435aa5f442
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245592"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092194"
 ---
 # <a name="enable-qa-for-live-connections"></a>Aktivera frågor och svar för live-anslutningar
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Vad är den lokala datagatewayen?  Vad är en live-anslutning?
@@ -56,6 +56,7 @@ Det finns flera begränsningar under förhandsvisningsfasen av den här funktion
 
 * Inledningsvis finns funktionen endast tillgänglig för SQL Server 2016 Analysis Services Tabular-datakällor. Funktionen är optimerad för att arbeta med tabelldata. Vissa funktioner är tillgänglig för flerdimensionella datakällor, men den fullständiga frågor och svar-upplevelsen stöds inte ännu för flera dimensioner. Ytterligare datakällor som stöds av den lokala datagatewayen kommer att lanseras löpande.
 * Fullständigt stöd för säkerhet på radnivå som definierats i SQL Server Analysis Services är inte tillgängligt från början i den allmänna förhandsvisningen. När du ställer frågor i frågor och svar, kan automatisk komplettering av frågor medan du skriver visa strängvärden som en användare inte har åtkomst till. RLS som definierats i modellen respekteras dock för visuella objekt i rapporten och diagrammet så inga underliggande numeriska data kan visas. Alternativ för att styra det här beteenden kommer att släppas i kommande uppdateringar.
+* Säkerhet på objektnivå stöds inte. Frågor och svar tar inte hänsyn till säkerhet på objektnivå och kan visa tabell- eller kolumnnamn för användare som inte har tillgång till dem. Du bör aktivera RLS för att se till att datavärdena skyddas på lämpligt sätt. 
 * Live-anslutningar stöds bara med den lokala datagatewayen. Därmed kan de inte användas med din den personliga gatewayen.
 
 ## <a name="next-steps"></a>Nästa steg

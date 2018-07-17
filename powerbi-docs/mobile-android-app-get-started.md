@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 84a2fe350c1146591aa89c5900c10f2747e90cf3
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3323258304f8c36131caf6ef269d9befa6cfbb96
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297456"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136535"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 
@@ -23,7 +23,7 @@ Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Pow
 
 Du skapar Power BI-rapporter i Power BI Desktop och publicerar dem:
 
-* [Publicera dem i Power BI-tjänsten](service-get-started.md) och skapa instrumentpaneler.
+* [Publicera dem i Power BI-tjänsten](power-bi-overview.md) och skapa instrumentpaneler.
 * [Publicera dem lokalt på Power BI-rapportservern](report-server/quickstart-create-powerbi-report.md).
 
 Sedan interagerar du i Power BI-appen för Android med dina instrumentpaneler och rapporter, antingen lokalt eller i molnet.
@@ -136,7 +136,7 @@ Här följer några saker som du kan göra i Android-enhetsappen för Power BI m
 
 ### <a name="see-also"></a>Se också
 * [Hämta Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
-* [Kom igång med Power BI](service-get-started.md)
+* [Vad är Power BI?](power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 
 

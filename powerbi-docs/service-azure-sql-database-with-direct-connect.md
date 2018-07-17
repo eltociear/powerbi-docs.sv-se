@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/18/2017
+ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 27b2eb90a07d3112b771fd3ee23cc86353a46991
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a1ae30097e0af90d5da8acd0d41b11f513756f88
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242259"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135914"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 Här kan du lära dig hur du kan ansluta direkt till Azure SQL Database och skapa rapporter med realtidsdata. Du kan hålla dina data vid källan och inte i Power BI.
@@ -31,7 +31,11 @@ Med DirectQuery skickas frågor tillbaka till din Azure SQL Database medan du ut
 * Frågor och svar är inte tillgänglig för DirectQuery-datauppsättningar
 * Schemaändringar plockas inte upp automatiskt
 
-Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förbättra upplevelsen. Stegen för att ansluta beskrivs nedan. 
+Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förbättra upplevelsen. Stegen för att ansluta beskrivs nedan.
+
+> [!Important]
+> Vi har förbättrat anslutningen till Azure SQL Database.  Använd Power BI Desktop för bästa möjliga anslutning till din Azure SQL Database-datakälla.  När du har skapat din modell och rapport kan du publicera den till Power BI-tjänsten.  Direktanslutningen för Azure SQL Database i Power BI-tjänsten är nu inaktuell.
+>
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop och DirectQuery
 För att ansluta till Azure SQL Database med DirectQuery, behöver du använda Power BI Desktop. Den här metoden erbjuder ytterligare flexibilitet och funktioner. Rapporter som skapas med Power BI Desktop kan senare publiceras i Power BI-tjänsten. Du kan lära dig mer om hur du ansluter till [Azure SQL Database med DirectQuery](desktop-use-directquery.md) i Power BI Desktop. 
@@ -57,6 +61,6 @@ Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azur
 
 ## <a name="next-steps"></a>Nästa steg
 [Använda DirectQuery i Power BI Desktop](desktop-use-directquery.md)  
-[Kom igång med Power BI](service-get-started.md)  
+[Vad är Power BI?](power-bi-overview.md)  
 [Hämta data för Power BI](service-get-data.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
