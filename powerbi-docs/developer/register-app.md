@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
-ms.openlocfilehash: aa51d516e903908fb2b0121f9bbed41d54f5e670
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 7fb13b86e3f384c0c923a96e07631498edf84ee4
+ms.sourcegitcommit: 0c870a006e525447497e678484874a2f137b9abd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38925011"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39088895"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Registrera en Azure AD-app för att bädda in Power BI-innehåll
 Lär dig hur du registrerar en app i Azure Active Directory (Azure AD) för användning med inbäddning av Power BI-innehåll.
@@ -23,7 +23,6 @@ Du kan registrera din app med Azure AD så att din ansökan ger åtkomst till Po
 
 > [!IMPORTANT]
 > Innan du registrerar en Power BI-app behöver du en [Azure Active Directory-klient och en organisationsanvändare](create-an-azure-active-directory-tenant.md). Appregistreringen misslyckas om du inte har registrerat dig för Power BI med en användare i din klientorganisation.
-> 
 
 Det finns två sätt att registrera din app. Du kan använda [registreringsverktyget för Power BI-appen](https://dev.powerbi.com/apps/) eller göra det direkt i Azure Portal. Registreringsverktyget för Power BI-appen är det enklaste alternativet eftersom du bara behöver fylla i ett fåtal fält. Använd Azure Portal om du vill göra ändringar i din app.
 
@@ -174,7 +173,6 @@ Logga in med *huvudkontot* som används för inbäddning eller med ett globalt a
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
      }
      ```
-
 5. Bevilja appbehörigheter till Azure Active Directory (AAD)
    
    Värdet för **consentType** kan vara antingen **AllPrincipals** eller **Principal**.
