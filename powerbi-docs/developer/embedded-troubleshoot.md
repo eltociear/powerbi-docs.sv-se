@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.author: maghan
-ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926569"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877034"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -102,13 +102,11 @@ Programmets serverdel kan behöva uppdatera auktoriseringstoken innan du anropar
 
 **(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord).)**
 
-Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client,error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password***, beror det på att direktautentisering varit inaktiverat sedan 14 juni 2018.
+Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client,error_description:AADSTS70002: Error validating credentials. AADSTS50053: Du har försökt att logga in för många gånger med ett felaktigt användar-ID eller lösenord***, eftersom direktautentisering varit inaktiverat som standard sedan den 14 juni 2018.
 
-Vi rekommenderar att du använder stödet för [Azure AD:s villkorsstyrda åtkomst](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) för att blockera äldre autentisering eller använder [Azure AD Directory-direktautentisering](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+Du kan aktivera funktionen igen med hjälp av en [Azure AD-princip](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) som antingen definieras för organisationen eller ett [tjänstens huvudnamn](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-Detta kan dock aktiveras igen med en [Azure AD Policy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) som antingen definieras för organisationen eller en [tjänstprincip](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
-
-**_Vi rekommenderar att du aktiverar detta endast per app och endast när det behövs en lösning._**
+Vi rekommenderar att du aktiverar den enbart på appbasis.
 
 Om du vill skapa den här principen måste du vara **Global administratör** för den katalog där du skapar principen och tilldelar. Här är ett exempelskript för att skapa principen och tilldela den till SP för det här programmet:
 
