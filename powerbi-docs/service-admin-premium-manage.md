@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 08d5d5b8d44d1ebceab2bb41ddbb244afda64fb6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 24d585af19dd774cdf6fe7dafb66c12e02d311f9
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945053"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38924803"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 Lär dig hur du kan hantera Power BI Premium- och Power BI Embedded-kapaciteter som tillhandahåller dedikerade resurser för ditt innehåll.
@@ -33,6 +33,16 @@ Kapaciteten är helt transparent för dina slutanvändare. De fortsätter att an
 
 Mer information finns i [Vad är Power BI Premium?](service-premium.md).
 
+### <a name="capacity-admins"></a>Kapacitetsadministratörer
+> [!NOTE]
+> Kapacitetsadministratörer för Power BI Embedded-kapacitet definieras i Microsoft Azure Portal.
+
+När du tilldelats som kapacitetsadministratör för en kapacitet, har du full kontroll över den aktuella kapaciteten och dess administrativa funktioner. Från Power BI-administratörsportalen kan du lägga till fler kapacitetsadministratörer (endast Power BI Premium) eller ge användare behörighet för kapacitetstilldelning. Du kan masstilldela arbetsytor till kapacitet och visa användningsstatistik för en kapacitet.
+
+Varje kapacitet har sina egna administratörer. När man definierar en kapacitetsadministratör för en kapacitet ger man inte den aktuella personen åtkomst till alla kapacitet inom organisationen. Kapacitetsadministratörer har inte åtkomst till alla Power BI-administratörsområden som standard, som användningsstatistik, granskningsloggar och klientinställningar. Kapacitetsadministratörer har inte heller behörighet att konfigurera nya kapaciteter eller ändra SKU:n för befintliga kapaciteter. Endast globala administratörer eller Power BI-tjänstadministratörer har åtkomst till dessa objekt.
+
+Alla globala Office 365-administratörer och Power BI-administratörer är automatiskt kapacitetsadministratörer för både Power BI Premium- och Power BI Embedded-kapacitet.
+
 ## <a name="purchase-capacity"></a>Köpa kapacitet
 Om du vill dra fördel av dedikerad kapacitet behöver du köpa en prenumeration på Power BI Premium i administrationscentret för Office 365 eller skapa en Power BI Embedded-resurs i Microsoft Azure Portal. Mer information finns i följande:
 
@@ -43,21 +53,9 @@ När du köper Power BI Premium SKU:er får din klient motsvarande antal v-kärn
 
 > [!NOTE]
 > Du har fullständig åtkomst i 30 dagar efter att din prenumeration har avslutats, men efter det återgår innehållet till en delad kapacitet. Modeller som är >1 GB stöds inte med en vanlig delad licens.
->
 
-## <a name="capacity-admins"></a>Kapacitetsadministratörer
-> [!NOTE]
-> Kapacitetsadministratörer för Power BI Embedded-kapacitet definieras i Microsoft Azure Portal.
->
->
 
-När du tilldelats som kapacitetsadministratör för en kapacitet, har du full kontroll över den aktuella kapaciteten och dess administrativa funktioner. Från Power BI-administratörsportalen kan du lägga till fler kapacitetsadministratörer (endast Power BI Premium) eller ge användare behörighet för kapacitetstilldelning. Du kan masstilldela arbetsytor till kapacitet och visa användningsstatistik för en kapacitet.
-
-Varje kapacitet har sina egna administratörer. När man definierar en kapacitetsadministratör för en kapacitet ger man inte den aktuella personen åtkomst till alla kapacitet inom organisationen. Kapacitetsadministratörer har inte åtkomst till alla Power BI-administratörsområden som standard, som användningsstatistik, granskningsloggar och klientinställningar. Kapacitetsadministratörer har inte heller behörighet att konfigurera nya kapaciteter eller ändra SKU:n för befintliga kapaciteter. Endast globala administratörer eller Power BI-tjänstadministratörer har åtkomst till dessa objekt.
-
-Alla globala Office 365-administratörer och Power BI-administratörer är automatiskt kapacitetsadministratörer för både Power BI Premium- och Power BI Embedded-kapacitet.
-
-## <a name="managing-capacity"></a>Hantera kapacitet
+## <a name="manage-capacity"></a>Hantera kapacitet
 När du har köpt kapacitetsnoder i Office 365, måste du konfigurera en ny kapacitet. Detta görs via [Power BI-administratörsportalen](service-admin-portal.md). I administratörsportalen visas ett avsnitt som heter **Kapacitetsinställningar**. Det är här som du hanterar Power BI Premium-kapacitet för din organisation.
 
 ![Kapacitetsinställningar i administratörsportalen](media/service-admin-premium-manage/admin-portal-premium.png)
@@ -96,8 +94,6 @@ På skärmen för Premium-kapacitetshantering kan du välja **kugghjulsikonen (i
 
 > [!NOTE]
 > Kapacitetsinställningarna för Power BI Embedded hanteras i Microsoft Azure Portal.
->
->
 
 ### <a name="change-capacity-size-power-bi-premium"></a>Ändra kapacitetsstorlek (Power BI Premium)
 Power BI-administratörer och globala Office 365-administratörer kan ändra storleken på Power BI Premium-kapaciteten genom att välja **Ändra kapacitetsstorlek**. Det här alternativet är inte tillgängligt för kapacitetsadministratörer som inte är Power BI-administratör eller global Office 365-administratör.
@@ -128,35 +124,6 @@ Du kan tilldela ytterligare **kapacitetsadministratörer** för Power BI Premium
 ![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
-
-## <a name="usage-measurements-power-bi-premium"></a>Användning av mätningar (Power BI Premium)
-För varje kapacitet kan du se användningsstatistik för processor, minnesanvändning, minnesförslöing och Direct Query. Vi rekommenderar att du håller ett öga på dessa värden så att du är säker på att användarna får bra prestanda från din kapacitet:
-
-![Användning de senaste sju dagarna](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> Användningen av Power BI Embedded-kapaciteten övervakas i Azure Portal.
-
-| Mått | Beskrivning |
-| --- | --- |
-| Processor |Antalet gånger processorn överskridit 80 % användning. |
-| Minnesförslöing |Representerar minnesbelastningen på dina serverkärnor. Mer specifikt är detta ett mått på hur många gånger datauppsättningar avlägsnas från minnet på grund av minnesbelastning från användningen av flera datauppsättningar. |
-| Minnesanvändning |Genomsnittlig minnesanvändning, representerat i gigabyte (GB). |
-| DQ/s | Antalet gånger som Direct Query och Live-anslutningar överskridit 80 % av gränsvärdet. <br> <br> * Vi begränsar det totala antalet DirectQuery- och realtidsanslutningsfrågor per sekund.<br><br>* Gränserna är 30/s för P1, 60/s för P2 och 120/s för P3.<br><br> * Antalet frågor för Direct Query och Live-anslutningar räknas in mot ovanstående begränsning. Om du till exempel har 15 DirectQueries och 15 realtidsanslutningar på en sekund, når du begränsningen.<br/><br>* Detta gäller lika för både lokala anslutningar och molnanslutningar. |
-
-Måtten återspeglar användningen under den senaste veckan.  Om du vill visa en mer detaljerad vy över måtten kan du göra det genom att klicka på någon av sammanfattningspanelerna.  När du gör det öppnas detaljerade diagram för varje mått för din Premium-kapacitet.  Dessa diagram visar timbaserade sammanfattningar för den senaste veckan och kan hjälpa dig att isolera tidpunkter med specifika prestandarelaterade händelser i din Premium-kapacitet.  
-
-![Detaljerat användningsdiagram – processor](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Detaljerat användningsdiagram – minnesstorlek](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-Du kan också exportera underliggande data för valfria mätvärdena till en CSV-fil.  Den här exporten ger detaljerad information i 3-minutersintervall för varje dag den senaste veckan.
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Tilldela en arbetsyta till en kapacitet
 Det finns några olika metoder för att tilldela en arbetsyta till en kapacitet.
@@ -193,6 +160,36 @@ Du måste ha administratörsbehörighet för arbetsytan och behörighet för kap
 5. Välj **Spara**.
 
 När du har sparat flyttas arbetsytan och allt dess innehåll till Premium-kapacitet utan upplevelseavbrott för slutanvändarna.
+
+
+## <a name="monitor-capacity-usage"></a>Övervaka kapacitetsanvändning
+För varje kapacitet kan du se användningsstatistik för processor, minnesanvändning, minnesförslöing och Direct Query. Vi rekommenderar att du håller ett öga på dessa värden så att du är säker på att användarna får bra prestanda från din kapacitet:
+
+![Användning de senaste sju dagarna](media/service-admin-premium-manage/premium-dashboard-tiles.png)
+
+> [!NOTE]
+> Användningen av Power BI Embedded-kapaciteten övervakas i Azure Portal.
+
+| Mått | Beskrivning |
+| --- | --- |
+| Processor |Antalet gånger processorn överskridit 80 % användning. |
+| Minnesförslöing |Representerar minnesbelastningen på dina serverkärnor. Mer specifikt är detta ett mått på hur många gånger datauppsättningar avlägsnas från minnet på grund av minnesbelastning från användningen av flera datauppsättningar. |
+| Minnesanvändning |Genomsnittlig minnesanvändning, representerat i gigabyte (GB). |
+| DQ/s | Antalet gånger som Direct Query och Live-anslutningar överskridit 80 % av gränsvärdet. <br> <br> * Vi begränsar det totala antalet DirectQuery- och realtidsanslutningsfrågor per sekund.<br><br>* Gränserna är 30/s för P1, 60/s för P2 och 120/s för P3.<br><br> * Antalet frågor för Direct Query och Live-anslutningar räknas in mot ovanstående begränsning. Om du till exempel har 15 DirectQueries och 15 realtidsanslutningar på en sekund, når du begränsningen.<br/><br>* Detta gäller lika för både lokala anslutningar och molnanslutningar. |
+
+Måtten återspeglar användningen under den senaste veckan.  Om du vill visa en mer detaljerad vy över måtten kan du göra det genom att klicka på någon av sammanfattningspanelerna.  När du gör det öppnas detaljerade diagram för varje mått för din Premium-kapacitet.  Dessa diagram visar timbaserade sammanfattningar för den senaste veckan och kan hjälpa dig att isolera tidpunkter med specifika prestandarelaterade händelser i din Premium-kapacitet.  
+
+![Detaljerat användningsdiagram – processor](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
+
+![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
+
+
+![Detaljerat användningsdiagram – minnesstorlek](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
+
+
+![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
+
+Du kan också exportera underliggande data för valfria mätvärdena till en CSV-fil.  Den här exporten ger detaljerad information i 3-minutersintervall för varje dag den senaste veckan.
 
 ## <a name="what-premium-looks-like-for-users"></a>Hur Premium ser ut för användare
 I de flesta fall behöver användarna inte ens veta om att de befinner sig i Premium-kapacitet. Deras instrumentpaneler och rapporter bara fungerar. Som en visuell indikation visas en diamantikon bredvid arbetsytor som har Premium-kapacitet.
