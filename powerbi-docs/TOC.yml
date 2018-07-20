@@ -322,6 +322,10 @@
                   href: service-collaborate-power-bi-workspace.md
                 - name: Hantera din grupp i Power BI och Office 365
                   href: service-manage-app-workspace-in-power-bi-and-office-365.md
+                - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive för företag
+                  href: service-share-dashboard-that-links-to-excel-onedrive.md
+            - name: Innehållspaket
+              items:
                 - name: 'Hantera, uppdatera och ta bort organisationsinnehållspaket'
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: 'Organisationsinnehållspaket: kopiera, uppdatera och få åtkomst'
@@ -332,8 +336,16 @@
                   href: service-organizational-content-pack-create-and-publish.md
                 - name: Ta bort din anslutning till ett organisationsinnehållspaket
                   href: service-organizational-content-pack-disconnect.md
-                - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive för företag
-                  href: service-share-dashboard-that-links-to-excel-onedrive.md
+                - name: Certifiering
+                  items:
+                    - name: Certifieringsprogrammet för innehållspaket
+                      href: service-content-pack-overview.md
+                    - name: Mall för att auktorisera innehållspaket
+                      href: template-content-pack-authoring.md
+                    - name: Mall för att testa innehållspaket
+                      href: template-content-pack-testing.md
+                    - name: Mall för innehållspaketsupplevelser
+                      href: template-content-pack-experience.md
             - name: Rapporter
               items:
                 - name: Skapa en ny rapport från en befintlig rapport
@@ -890,58 +902,34 @@
           href: mobile-apps-supported-languages.md
 - name: Power BI för utvecklare
   items:
-    - name: Översikt
+    - name: Inbäddad analys
       items:
-        - name: Vad kan utvecklare göra med Power BI?
-          href: developer/what-can-you-do.md
-    - name: Självstudier
-      items:
-        - name: Bädda in innehåll för kunderna
-          href: developer/embed-sample-for-customers.md
-        - name: Bädda in innehåll för organisationen
-          href: developer/embed-sample-for-your-organization.md
-    - name: Begrepp
-      items:
-        - name: 'Arbeta med Power BI REST-API:er'
-          items:
-            - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
-              href: developer/overview-of-power-bi-rest-api.md
-            - name: 'Begränsningar för Power BI REST API:t'
-              href: developer/api-rest-api-limitations.md
-            - name: Egenskaper för datamängd
-              href: developer/api-dataset-properties.md
-            - name: Versionshantering av datamodell
-              href: developer/api-data-model-versioning.md
-        - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
-          href: service-custom-visuals-getting-started-with-developer-tools.md
-        - name: Power BI-behörigheter
-          href: developer/power-bi-permissions.md
-        - name: Säkerhet på radnivå (RLS)
-          href: developer/embedded-row-level-security.md
-        - name: Vanliga frågor och svar
-          href: developer/embedded-faq.md
-    - name: Gör så här
-      items:
-        - name: Skapa ett anpassat visuellt objekt
-          items:
-            - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
-              href: service-custom-visuals-getting-started-with-developer-tools.md
-            - name: Certifiera ett anpassat visuellt objekt
-              href: power-bi-custom-visuals-certified.md
-            - name: Publicera anpassad visuell information till AppSource
-              href: developer/office-store.md
-        - name: Bädda in
+        - name: Översikt
           items:
             - name: Bädda in med Power BI
               href: developer/embedding.md
+        - name: Självstudier
+          items:
+            - name: Bädda in innehåll för kunder
+              href: developer/embed-sample-for-customers.md
+            - name: Bädda in innehåll för organisationen
+              href: developer/embed-sample-for-your-organization.md
+        - name: Begrepp
+          items:
+            - name: Säkerhet på radnivå (RLS)
+              href: developer/embedded-row-level-security.md
+            - name: Vanliga frågor och svar
+              href: developer/embedded-faq.md
+            - name: Power BI-behörigheter
+              href: developer/power-bi-permissions.md
+        - name: Gör så här
+          items:
             - name: Hur du bäddar in ditt innehåll
               href: developer/embedding-content.md
             - name: Så här bäddar du in från en app
               href: developer/embed-from-apps.md
             - name: Integrera innehåll i ditt program för suveräna moln (appen äger data)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
-            - name: Bädda in anpassade layouter i en app
-              href: developer/embedded-custom-layout.md
             - name: Skapa en Azure Active Directory-klient
               href: developer/create-an-azure-active-directory-tenant.md
             - name: Registrera ett program
@@ -952,15 +940,103 @@
               href: developer/qanda.md
             - name: Så här migrerar du Power BI Embedded
               href: developer/migrate-from-powerbi-embedded.md
-            - name: Migreringsverktyg för Power BI Embedded
-              href: developer/migrate-tool.md
-            - name: Kodavsnitt för migrering
-              href: developer/migrate-code-snippets.md
             - name: Felsök ditt inbäddade program
               href: developer/embedded-troubleshoot.md
-        - name: Skicka data
+        - name: Referens
           items:
-            - name: Skicka data till en instrumentpanel
+            - name: Hämta .NET SDK
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
+            - name: Bädda in anpassade layouter i en app
+              href: developer/embedded-custom-layout.md
+            - name: Kodavsnitt för migrering
+              href: developer/migrate-code-snippets.md
+        - name: Resurser
+          items:
+            - name: Dev Center
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: Integrerar upplevelseverktyg för inbäddning
+              href: 'https://aka.ms/embedsetup'
+            - name: Exempel för JavaScript Playground
+              href: 'https://go.microsoft.com/fwlink/?linkid=848279'
+            - name: Power BI JavaScript-wiki
+              href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
+            - name: JavaScript Git Repo
+              href: 'https://go.microsoft.com/fwlink/?linkid=848276'
+            - name: 'Power BI C# Git Repo'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: Exempel
+              href: 'https://go.microsoft.com/fwlink/?linkid=851293'
+            - name: Migreringsverktyg för Power BI Embedded
+              href: developer/migrate-tool.md
+            - name: Power BI-community
+              href: 'https://go.microsoft.com/fwlink/?linkid=848280'
+            - name: Dataspill
+              href: 'https://go.microsoft.com/fwlink/?linkid=848281'
+    - name: Utveckla anpassade visuella objekt
+      items:
+        - name: Översikt
+          items:
+            - name: Lägga till anpassade visuella objekt i Power BI
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/'
+        - name: Självstudier
+          items:
+            - name: Utveckla ett anpassat visuellt objekt i Power BI
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/step-by-step-lab/developing-a-power-bi-custom-visual/'
+        - name: Begrepp
+          items:
+            - name: Använda funktioner
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/capabilities/'
+            - name: Datavymappningar
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/dataviewmappings/'
+            - name: Objekt och egenskaper
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/objects-and-properties/'
+            - name: Avancerat redigeringsläge
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/advanced-edit-mode/'
+            - name: Migrera till en versionshanterad API-guide
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/migrating-to-versioned-api-guide/'
+        - name: Gör så här
+          items:
+            - name: Certifiera ett anpassat visuellt objekt
+              href: power-bi-custom-visuals-certified.md
+            - name: Publicera anpassad visuell information till AppSource
+              href: developer/office-store.md
+        - name: Referens
+          items:
+            - name: 'API:er'
+              href: 'https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/'
+        - name: Resurser
+          items:
+            - name: Dev Center
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: Skapa ett anpassat visuellt objekt med utvecklarverktygen
+              href: service-custom-visuals-getting-started-with-developer-tools.md
+            - name: Exempel
+              href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+            - name: Git Repo för anpassade visuella objekt
+              href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+    - name: Automation
+      items:
+        - name: Översikt
+          items:
+            - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
+              href: developer/overview-of-power-bi-rest-api.md
+        - name: Självstudier
+          items: null
+        - name: Begrepp
+          items:
+            - name: Princip för automatiskt bevarande av realtidsdata
+              href: developer/api-automatic-retention-policy-for-real-time-data.md
+            - name: Skicka data
+              items:
+                - name: 'Begränsningar för Power BI REST API:t'
+                  href: developer/api-rest-api-limitations.md
+                - name: Egenskaper för datamängd
+                  href: developer/api-dataset-properties.md
+                - name: Versionshantering av datamodell
+                  href: developer/api-data-model-versioning.md
+        - name: Gör så här
+          items:
+            - name: Skicka data till en datauppsättning
               href: developer/walkthrough-push-data.md
             - name: Registrera en app med Azure AD
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
@@ -972,44 +1048,22 @@
               href: developer/walkthrough-push-data-get-datasets.md
             - name: Lägga till rader i en tabell
               href: developer/walkthrough-push-data-add-rows.md
+        - name: Referens
+          items:
+            - name: 'REST API:er'
+              href: 'https://docs.microsoft.com/rest/api/power-bi'
+            - name: Power BI REST API-referens
+              href: developer/rest-api-reference.md
             - name: Fullständig kodlista
               href: developer/walkthrough-push-data-complete-code.md
-            - name: Princip för automatiskt bevarande av realtidsdata
-              href: developer/api-automatic-retention-policy-for-real-time-data.md
-        - name: Certifiering av innehållspaket
+        - name: Resurser
           items:
-            - name: Certifieringsprogram för innehållspaket
-              href: developer/service-content-pack-overview.md
-            - name: Mall för att auktorisera innehållspaket
-              href: developer/template-content-pack-authoring.md
-            - name: Mall för att testa innehållspaket
-              href: developer/template-content-pack-testing.md
-            - name: Mall för innehållspaketsupplevelser
-              href: developer/template-content-pack-experience.md
-    - name: Referens
-      items:
-        - name: 'REST API:er'
-          href: 'https://docs.microsoft.com/rest/api/power-bi/'
-        - name: 'Power BI C# Git Repo'
-          href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-        - name: Hämta .NET SDK
-          href: 'https://go.microsoft.com/fwlink/?linkid=848274'
-        - name: JavaScript Git Repo
-          href: 'https://go.microsoft.com/fwlink/?linkid=848276'
-        - name: Git Repo för anpassade visuella objekt
-          href: 'https://go.microsoft.com/fwlink/?linkid=848277'
-    - name: Resurser
-      items:
-        - name: Integrerar upplevelseverktyg för inbäddning
-          href: 'https://aka.ms/embedsetup'
-        - name: Exempel för JavaScript Playground
-          href: 'https://go.microsoft.com/fwlink/?linkid=848279'
-        - name: Exempel
-          href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-        - name: Power BI-community
-          href: 'https://go.microsoft.com/fwlink/?linkid=848280'
-        - name: Dataspill
-          href: 'https://go.microsoft.com/fwlink/?linkid=848281'
+            - name: Dev Center
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: 'Power BI C# Git Repo'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: Hämta .NET SDK
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
 - name: Power BI-rapportserver
   items:
     - name: Översikt
