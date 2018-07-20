@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1c9948ad5c09b3123d898bf8841243d6e5fa83fd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 63cb1fe3061d1ba48e71a4ac09862fce29dd9196
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34553575"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032058"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -84,7 +84,7 @@ När du bäddar in en rapport i SharePoint Online medges inte användarbehörigh
 > [!IMPORTANT]
 > Se till att granska vem som kan visa rapporten i Power BI-tjänsten och bevilja åtkomst till de som inte visas i listan.
 
-Det finns två sätt att bevilja åtkomst till rapporten i Power BI-tjänsten. Om du använder en Office 365-grupp för att skapa webbplatsen i SharePoint Online kan du lista användaren som en medlem i apparbetsytan i Power BI-tjänsten. Det säkerställer att användare kan läsa innehållet i den gruppen. Mer information finns i [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md).
+Det finns två sätt att bevilja åtkomst till rapporten i Power BI-tjänsten. Om du använder en Office 365-grupp för att skapa webbplatsen i SharePoint Online kan du lista användaren som en medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Det säkerställer att användare kan läsa innehållet i den gruppen. Mer information finns i [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md).
 
 Du kan också ge användarna åtkomst till din rapport genom att göra följande.
 
@@ -129,7 +129,7 @@ Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lö
 
 ## <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 
-* **Fel: ”Ett fel uppstod. Försök att logga ut och igen och gå sedan tillbaka till den här sidan. Korrelations-id: Odefinierad HTTP-svarsstatus: 400, serverfelkod 10001, meddelande: uppdateringstoken saknas”**
+* Fel: ”Ett fel uppstod. Försök att logga ut och in igen och gå sedan tillbaka till den här sidan. Korrelations-ID: Odefinierad HTTP-svarsstatus: 400, serverfelkod 10001, meddelande: uppdateringstoken saknas”
   
   Försök något av följande om du får detta felmeddelande.
   
@@ -154,5 +154,4 @@ Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lö
 [Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md)  
 [Power BI Premium – vad är det?](service-premium.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/) 
-
+Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
