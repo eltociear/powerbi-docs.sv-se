@@ -1021,7 +1021,9 @@
             - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
               href: developer/overview-of-power-bi-rest-api.md
         - name: Självstudier
-          items: null
+          items:
+            - name: Skicka data till en datauppsättning
+              href: developer/walkthrough-push-data.md
         - name: Begrepp
           items:
             - name: Princip för automatiskt bevarande av realtidsdata
@@ -1036,8 +1038,6 @@
                   href: developer/api-data-model-versioning.md
         - name: Gör så här
           items:
-            - name: Skicka data till en datauppsättning
-              href: developer/walkthrough-push-data.md
             - name: Registrera en app med Azure AD
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
             - name: Hämta en autentiseringsåtkomsttoken
