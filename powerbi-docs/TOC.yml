@@ -530,6 +530,12 @@
       items:
         - name: Vad är nytt i den senaste uppdateringen av Power BI Desktop?
           href: desktop-latest-update.md
+        - name: Sammansatta modeller i Power BI Desktop (förhandsversion)
+          href: desktop-composite-models.md
+        - name: Många-till-många-relationer i Power BI Desktop (förhandsversion)
+          href: desktop-many-to-many-relationships.md
+        - name: Lagringsläge i Power BI Desktop (förhandsversion)
+          href: desktop-storage-mode.md
         - name: Dubbelriktad korsfiltrering i Power BI Desktop (förhandsversion)
           href: desktop-bidirectional-filtering.md
         - name: Power BI och DirectQuery
@@ -670,6 +676,8 @@
               href: desktop-import-and-display-kpis.md
         - name: Skapa rapporter
           items:
+            - name: Visuella element för rapporter
+              href: desktop-visual-elements-for-reports.md
             - name: Frågor och svar i Power BI Desktop
               href: desktop-qna-in-reports.md
             - name: Analytics-fönstret i Power BI Desktop
@@ -1244,6 +1252,8 @@
               href: service-premium-large-datasets.md
             - name: Inkrementell uppdatering
               href: service-premium-incremental-refresh.md
+            - name: Support för Multi-Geo (förhandsversion)
+              href: service-admin-premium-multi-geo.md
             - name: Vanliga frågor och svar om Power BI Premium
               href: service-premium-faq.md
             - name: Viktig information om Power BI Premium
