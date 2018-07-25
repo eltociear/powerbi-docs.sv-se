@@ -25,7 +25,7 @@ Gäller:
 
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
 
-Anta att en kollega har [skapat en QR-kod i Power BI-tjänsten](service-create-qr-code-for-tile.md) för en rapport eller för en panel i en instrumentpanel, och har delat instrumentpanelen eller rapporten med dig och placerat QR-koden i en nyckelplats & #151; exempelvis i ett e-postmeddelande eller på ett specifikt objekt. 
+Anta att en kollega har [skapat en QR-kod i Power BI-tjänsten](service-create-qr-code-for-tile.md) för en rapport eller för en panel i en instrumentpanel, och har delat instrumentpanelen eller rapporten med dig och placerat QR-koden i en nyckelplats &#151; exempelvis i ett e-postmeddelande eller på ett specifikt objekt. 
 
 Du kan skanna QR-koden om du vill ha omedelbar åtkomst till den relevanta panelen eller rapporten direkt från din telefon, antingen med skannern i Power BI-appen, eller någon annan skanner som har installerats på din telefon. 
 
