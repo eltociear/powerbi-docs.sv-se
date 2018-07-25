@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 638b46d681a9a9e7ef7754a4e28d0e94812ef8de
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 96675f8e96eef84a10684487f652c872405bf037
+ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812363"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39157158"
 ---
 # <a name="power-bi-rest-api-reference"></a>Power BI REST API-referens
 Power BI är en molnbaserad tjänst som du kan använda för att skapa anpassade instrumentpanelprogram. Power BI REST API är ett REST-baserat API som ger programmatisk åtkomst till **instrumentpanel**resurser, som ex.vis **datauppsättningar**, **tabeller** och **rader** i Power BI.
@@ -31,4 +31,3 @@ Power BI REST API innehåller följande åtgärder:
 Mer information om Power BI REST AP finns i [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/).
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-
