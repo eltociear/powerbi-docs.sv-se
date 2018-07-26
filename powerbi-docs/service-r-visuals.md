@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 016237c95d3494435931e143ff34dbe4a82abb55
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 9c94ec0b409bdb620c7ce9f313803cdf49c15b5a
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599676"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256111"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Skapa visuella R-objekt i Power BI-tjänsten
 Power BI-tjänsten stöder visning av och interaktion med visuella objekt som skapats med R-skript. Visualiseringar som har skapats med R-skript, vanligtvis kallade *visuella R-objekt*, kan användas för avancerad datautformning och analyser som t.ex. prognoser som bygger på den omfattande analys- och visualiseringskraften i R.

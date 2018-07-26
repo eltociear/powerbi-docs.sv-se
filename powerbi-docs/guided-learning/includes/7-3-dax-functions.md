@@ -89,7 +89,7 @@ DAX innehåller följande **datumfunktioner**:
 
 Dessa funktioner är användbara för att beräkna och extrahera informationen från *datumvärden* men fungerar inte för tidsinformation, som använder en datumtabell.
 
-> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

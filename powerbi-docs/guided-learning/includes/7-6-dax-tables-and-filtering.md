@@ -34,7 +34,7 @@ Till exempel innehåller Power BI och DAX värden som inte är korrekt korsindex
 
 Du kan också skapa hela beräknade tabeller med hjälp av DAX-funktioner. Beräknade tabeller som skapats med hjälp av DAX kräver en **namn**- och en **tabell**funktion. Samma funktioner är tillgängliga för beräknade tabeller som för andra tabeller, inklusive relationer.
 
-> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

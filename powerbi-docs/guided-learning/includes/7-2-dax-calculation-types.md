@@ -57,7 +57,7 @@ De obligatoriska elementen för ett beräknat mått är desamma som för en ber�
 * ett nytt måttnamn
 * minst en funktion eller minst ett uttryck
 
-> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

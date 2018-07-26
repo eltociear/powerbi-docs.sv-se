@@ -15,7 +15,7 @@ Du kan returnera värdet för en kolumn, eller alla rader i en relation, med hj�
 
 Du kan använda relationella funktioner för att skapa uttryck som innehåller värden från flera tabeller. DAX returnerar ett resultat med dessa funktioner, oavsett hur lång relationskedjan är.
 
-> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

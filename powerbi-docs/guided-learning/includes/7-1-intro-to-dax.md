@@ -3,7 +3,7 @@ Välkommen till avsnittet i den **interaktiva utbildningen** om Power BI som har
 **DAX** står för **Data Analysis Expressions** och det är formelspråket som används i hela Power BI (det används också av Power BI i bakgrunden). DAX finns även i andra system från Microsoft, till exempel Power Pivot och SSAS Tabular, men dessa kurser fokuserar på hur DAX används – och kan användas av dig – i Power BI.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX och denna interaktiva videoutbildningsserie
-Syftet med detta avsnitt av den **interaktiva utbildningen** är att lära dig grunderna i DAX – hur du förhåller dig till DAX, hur det fungerar och de mest användbara funktionerna som beskrivs av en världskänd DAX-expert med lång erfarenhet, [ Alberto Ferrari](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+Syftet med detta avsnitt av den **interaktiva utbildningen** är att lära dig grunderna i DAX – hur du förhåller dig till DAX, hur det fungerar och de mest användbara funktionerna som beskrivs av en världskänd DAX-expert med lång erfarenhet, [ Alberto Ferrari](http://www.sqlbi.com/learning-dax).
 
 ![Porträtt av Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
