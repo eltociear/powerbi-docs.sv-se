@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/19/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3c91a6a70899a4a59c3d98cd9ab948284df5b662
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 144cdace662b5f6dbe546a213e07f087d634dcff
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298399"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256019"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tips för färgformatering i Power BI
 Power BI erbjuder många olika sätt på vilka du kan anpassa dina instrumentpaneler och rapporter. Den här artikeln innehåller detaljerad information om en samling tips med vilkas hjälp du kan göra dina Power BI-visualiseringar mer intressanta och anpassade efter dina behov.
@@ -97,7 +97,7 @@ Notera hur diagramstaplarna i den första bilden reflekterar den toning som visa
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_12.png)
 
-Nu ska vi se vad som händer om vi tillhandahåller numeriska värden i värderutorna **Lägsta** och **Högsta** som är lägre än värdena i färgväljarna **Lägsta** och **Högsta** (se följande bild). Låt oss ställa in **Lägsta** på 20 000 000 och **Högsta** på 20 000 000.
+Nu ska vi se vad som händer om vi tillhandahåller numeriska värden i värderutorna **Lägsta** och **Högsta** som är lägre än värdena i färgväljarna **Lägsta** och **Högsta** (se följande bild). Vi ställer in **Lägsta** på 20 000 000 och **Högsta** på 20 000 001.
 
 Om du anger dessa värden så tillämpas inte toningen längre på värden i diagrammet som är lägre än **Lägsta** eller högre än **Högsta**. Alla staplar med värden över **Högsta** färgas gröna, och alla staplar med värden under **Lägsta** färgas röda.
 
