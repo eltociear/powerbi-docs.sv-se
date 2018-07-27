@@ -35,7 +35,7 @@ Anslut till [Innehållspaketet Dynamics Marketing](https://app.powerbi.com/getda
 3. Välj **Microsoft Dynamics Marketing** \> **Hämta**.
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/mdmarketing.png)
-4. Ange den OData-URL som är kopplad till ditt konto.  Detta ska vara i formatet https://[instans\_namn].marketing.dynamics.com/analytics.
+4. Ange den OData-URL som är kopplad till ditt konto.  Detta ska vara i formatet “https:// [instans\_namn].marketing.dynamics.com/analytics.”
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynmktgserviceurl.png)
 5. Ange dina autentiseringsuppgifter när du tillfrågas (det här steget kan hoppas över om du redan har loggat in med din webbläsare). Som autentiseringsmetod anger du **oAuth2** och klickar på **logga in**:
@@ -54,7 +54,7 @@ Anslut till [Innehållspaketet Dynamics Marketing](https://app.powerbi.com/getda
 
 ## <a name="system-requirements"></a>Systemkrav
 * Du måste ange en giltig OData-URL för en Dynamics Marketing-instans (innehållspaketet fungerar inte med en lokal CRM-version).  
-* En administratör måste aktivera OData-slutpunkten i platsinställningarna. Adressen för OData-slutpunkten kan hittas genom att gå till **Start \> inställningar \> platsinställningar** i avsnittet **organisationens datatjänst**.  OData-URL:en ska vara i formatet https://[instans\_namn].marketing.dynamics.com/analytics  
+* En administratör måste aktivera OData-slutpunkten i platsinställningarna. Adressen för OData-slutpunkten kan hittas genom att gå till **Start \> inställningar \> platsinställningar** i avsnittet **organisationens datatjänst**.  OData-URL:en ska vara i formatet https:// [instans\_namn].marketing.dynamics.com/analytics  
 * Användarkontot/-identiteten som du använder för att komma åt Microsoft Dynamics Marketing måste vara samma som den du registrerat dig för att använda med Power BI. När du loggar in på Microsoft Dynamics Marketing, kommer du att loggas in automatiskt med samma identitet som du använder för Power BI. Om du vill logga in på Microsoft Dynamics Marketing med ett annat konto, registrera dig som en Power BI-användare med det andra kontot. Vi hoppas att lösa det här problemet i en kommande version.   
 
 ## <a name="troubleshooting"></a>Felsökning
