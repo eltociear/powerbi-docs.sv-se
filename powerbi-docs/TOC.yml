@@ -682,8 +682,10 @@
               href: desktop-qna-in-reports.md
             - name: Analytics-fönstret i Power BI Desktop
               href: desktop-analytics-pane.md
-            - name: Använda insikter i Power BI Desktop
+            - name: Använda insikter för att förklara ökningar och minskningar
               href: desktop-insights.md
+            - name: Använda insikter för att hitta var distributionen är annorlunda i diagram
+              href: desktop-insights-find-where-different.md
             - name: Bokmärken i Power BI
               href: desktop-bookmarks.md
             - name: Använda rapportteman
