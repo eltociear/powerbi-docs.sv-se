@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 3c1df2f08732a45b98e2de84684735171b004602
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 0c7f4953f03acf84b6a76c11536b92426d4dbf13
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290371"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39327785"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Använda beräknade kolumner i Power BI Desktop
 Med beräknade kolumner kan du lägga till nya data i en tabell direkt i modellen. Men i stället för att fråga och läsa in värden i nya kolumner från en datakälla kan du skapa en formel för Data Analysis-uttryck (DAX) som definierar kolumnens värden. I Power BI Desktop skapas beräknade kolumner med funktionen Ny kolumn i rapportvyn.
