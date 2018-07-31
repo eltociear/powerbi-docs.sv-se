@@ -5,7 +5,6 @@ Nedan följer en lista med aktuella begränsningar för säkerhet på radnivå i
 * Du kan endast definiera RLS på de datauppsättningar som skapats med Power BI Desktop-klienten. Om du vill aktivera RLS för datauppsättningar som skapats med Excel, måste du konvertera filerna till PBIX-filer först. [Läs mer](../desktop-import-excel-workbooks.md)
 * Endast ETL- och DirectQuery-anslutningar stöds. Live-anslutningar till Analysis Services hanteras i modellen lokalt.
 * Frågor och svar och Cortana stöds inte med RLS just nu. Du kommer inte se inmatningsrutan Frågor och svar för instrumentpaneler om alla modeller har konfigurerats med RLS. Det finns med i planeringen, men vi har ingen tidsangivelse för när det kommer att införas.
-* Extern delning stöds inte för närvarande med datauppsättningar som använder RLS.
 * För en viss modell är det maximala antalet Azure AD-huvudkonton (dvs. enskilda användare eller säkerhetsgrupper) som kan tilldelas säkerhetsroller 1 000. Om du vill tilldela roller till ett stort antal användare, tilldelar du säkerhetsgrupper i stället för enskilda användare.
 
 ## <a name="known-issues"></a>Kända problem
