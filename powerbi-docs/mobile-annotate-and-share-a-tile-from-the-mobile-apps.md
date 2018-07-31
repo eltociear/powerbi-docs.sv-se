@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: c70a5c50a139423f6c5e69ed6ec9a416dfae8b4e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: bb628f0cc6f723a195f3b90e6d20f4018d9f2709
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34295271"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279859"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentera och dela en panel, rapport eller ett visuellt objekt i Power BI-mobilapparna
 Gäller för:
@@ -31,7 +31,7 @@ Du kan kommentera och dela en ögonblicksbild av en panel, rapport eller visuali
 
 E-postmeddelandet med ögonblicksbilden av panelen, rapporten eller det visuella objektet inkluderar även en länk till det faktiska objektet i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Dina mottagare kan klicka på länken och gå direkt till den panelen, rapporten eller visualiseringen, om du och de har Power BI Pro-licenser eller om innehållet ligger på en [Premium-kapacitet](service-premium.md) och du redan har delat objektet med dem. 
 
-Du kan [dela en panel från Power BI-mobilappen för Windows 10-enheter](mobile-share-tile-windows-10-phone-app.md) också, men inte kommentera den.
+Du kan [dela en panel från Power BI-mobilappen för Windows 10-enheter](mobile-windows-10-phone-app-get-started.md) också, men inte kommentera den.
 
 ## <a name="open-a-tile-for-annotating"></a>Öppna en panel för kommentering
 1. Tryck på panelen för att öppna den i fokusläge.

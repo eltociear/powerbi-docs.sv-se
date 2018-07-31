@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/09/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7c0037534fa61c5340206354beb6af04d3fc1f4a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5899274ba3cc8ce0a059978a9b83ae2a7fd08527
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249515"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280465"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hur samarbetar och delar jag i Power BI?
 
@@ -75,7 +75,7 @@ Du delar en ögonblicksbild av paneler, rapporten eller visualiseringen och mott
 
 Mer om [delning och kommentering för paneler, rapporter och visuella objekt](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) från iOS- och Android-appar.
 
-Du kan också [dela en ögonblicksbild av en panel](mobile-share-tile-windows-10-phone-app.md) från Power BI-appen för Windows 10-enheter.
+Du kan också [dela en ögonblicksbild av en panel](mobile-windows-10-phone-app-get-started.md) från Power BI-appen för Windows 10-enheter.
 
 ## <a name="publish-to-the-web"></a>Publicera på webben
 Du kan publicera Power BI-rapporter till hela Internet genom att bädda in interaktiva visuella objekt i blogginlägg, webbplatser, sociala medier och andra former av onlinekommunikation på valfri enhet. Alla på Internet kan se dina rapporter och du har ingen kontroll över vem som kan se vad du har publicerat. De behöver inte en licens för Power BI. Du kan bara publicera rapporter som du kan redigera på webben. Du kan inte publicera rapporter på webben om de har delats med dig eller om de finns i en app. Mer om att [publicera på webben](service-publish-to-web.md).

@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: maggies
 ms.custom: ''
-ms.openlocfilehash: 4a3b5aec179eb9436f1d8ed8a58bcf97906e1c1f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 75f64de25799488d85b4f9938fa134d0d277f222
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294719"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280051"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Vad är Power BI-mobilappar?
 Power BI ger en uppsättning av mobila appar för mobila iOS-, Android- och Windows 10-enheter. I mobilappar, ansluter du till och interagerar med dina molntjänster och lokala data. 
@@ -42,6 +42,6 @@ Microsoft Intune låter organisationer kontrollera objekt och kräva en PIN-kod 
 Läs mer om att [konfigurera Power BI-mobilappar för Android och iOS med Microsoft Intune](service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Nästa steg
-[Visa en instrumentpanel i mobila appar](mobile-apps-find-content-mobile-devices.md)
+[Visa en instrumentpanel i mobila appar](mobile-apps-quickstart-view-dashboard-report.md)
 
 

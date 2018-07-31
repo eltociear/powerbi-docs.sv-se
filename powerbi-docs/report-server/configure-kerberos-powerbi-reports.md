@@ -94,7 +94,7 @@ Det rekommenderas att du skapar två SPN. Ett med NetBIOS-namnet och det andra m
 
     <Service>/<Host>:<port>
 
-Power BI-rapportservern använder en tjänst för HTTP. Du kommer inte att lista en port för HTTP-SPN. Tjänsten vi är intresserade av här är HTTP. Värden för SPN blir det namn som du använder i en URL. Detta är vanligtvis namnet på datorn. Om du är bakom en belastningsutjämnare kan detta vara ett virtuellt namn.
+Power BI-rapportservern använder en tjänst för HTTP. Du kommer inte att lista en port för HTTP-SPN. Tjänsten vi är intresserade av här är HTTP. Värden för SPN blir det namn som du använder i en URL. Detta är vanligtvis namnet på datorn. Om du är bakom en lastbalanserare kan detta vara ett virtuellt namn.
 
 > [!NOTE]
 > Du kan verifiera URL:en genom att antingen titta på vad du anger i adressfältet i webbläsaren eller titta i konfigurationshanteraren för rapportservern på webbportalens URL-flik.

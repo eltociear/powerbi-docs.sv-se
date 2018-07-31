@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598652"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280143"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
 Gäller:
@@ -92,7 +92,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10tileellpslink.png)
    
-    [Dela en ögonblicksbild av panelen](mobile-share-tile-windows-10-phone-app.md).
+    [Dela en ögonblicksbild av panelen](mobile-windows-10-phone-app-get-started.md).
    
     Trycka på **Öppna rapport** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) för att [visa den underliggande rapporten](mobile-reports-in-the-mobile-apps.md).
    
@@ -120,7 +120,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    
-   Tryck på ikonen för att dela ögonblicksbild ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) för att [kommentera och dela en panel](mobile-share-tile-windows-10-phone-app.md) med andra.   
+   Tryck på ikonen för att dela ögonblicksbild ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) för att [kommentera och dela en panel](mobile-windows-10-phone-app-get-started.md) med andra.   
    
    Tryck på ikonen Öppna rapport ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) för att [visa rapporten](mobile-reports-in-the-mobile-apps.md) som panelen baseras på. 
 4. Tryck på bakåtpilen eller på tillbakaknappen för att stänga panelen och gå tillbaka till instrumentpanelen.
