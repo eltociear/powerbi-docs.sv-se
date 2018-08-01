@@ -918,14 +918,18 @@
       items:
         - name: Översikt
           items:
-            - name: Bädda in med Power BI
+            - name: Vad är inbäddning med Power BI?
               href: developer/embedding.md
+            - name: Vad är Power BI Embedded i Azure?
+              href: developer/azure-pbie-what-is-power-bi-embedded.md
         - name: Självstudier
           items:
             - name: Bädda in innehåll för kunder
               href: developer/embed-sample-for-customers.md
             - name: Bädda in innehåll för organisationen
               href: developer/embed-sample-for-your-organization.md
+            - name: Integrera innehåll i ditt program för suveräna moln
+              href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Begrepp
           items:
             - name: Säkerhet på radnivå (RLS)
@@ -936,12 +940,8 @@
               href: developer/power-bi-permissions.md
         - name: Gör så här
           items:
-            - name: Hur du bäddar in ditt innehåll
-              href: developer/embedding-content.md
             - name: Så här bäddar du in från en app
               href: developer/embed-from-apps.md
-            - name: Integrera innehåll i ditt program för suveräna moln (appen äger data)
-              href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Skapa en Azure Active Directory-klient
               href: developer/create-an-azure-active-directory-tenant.md
             - name: Registrera ett program
@@ -950,18 +950,36 @@
               href: developer/get-azuread-access-token.md
             - name: Bädda in frågor och svar
               href: developer/qanda.md
-            - name: Så här migrerar du Power BI Embedded
-              href: developer/migrate-from-powerbi-embedded.md
             - name: Felsök ditt inbäddade program
               href: developer/embedded-troubleshoot.md
+            - name: Hantera kapacitet i Azure
+              items:
+                - name: Skapa kapacitet i Azure
+                  href: developer/azure-pbie-create-capacity.md
+                - name: Skala kapacitet i Azure
+                  href: developer/azure-pbie-scale-capacity.md
+                - name: Pausa och starta kapacitet i Azure
+                  href: developer/azure-pbie-pause-start.md
+            - name: Migrera från arbetsytesamlingar
+              items:
+                - name: Så här migrerar du från Power BI-arbetsytesamlingar
+                  href: developer/migrate-from-powerbi-embedded.md
+                - name: Migreringsverktyg
+                  href: developer/migrate-tool.md
+                - name: Kodavsnitt för migrering
+                  href: developer/migrate-code-snippets.md
         - name: Referens
           items:
+            - name: 'API:er'
+              items:
+                - name: 'REST API:er för Azure Resource Management'
+                  href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+                - name: 'REST API:er för Power BI'
+                  href: 'https://msdn.microsoft.com/library/mt147898.aspx'
             - name: Hämta .NET SDK
               href: 'https://go.microsoft.com/fwlink/?linkid=848274'
             - name: Bädda in anpassade layouter i en app
               href: developer/embedded-custom-layout.md
-            - name: Kodavsnitt för migrering
-              href: developer/migrate-code-snippets.md
         - name: Resurser
           items:
             - name: Dev Center
@@ -978,8 +996,6 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848273'
             - name: Exempel
               href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-            - name: Migreringsverktyg för Power BI Embedded
-              href: developer/migrate-tool.md
             - name: Power BI-community
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
             - name: Dataspill
@@ -1064,8 +1080,6 @@
           items:
             - name: 'REST API:er'
               href: 'https://docs.microsoft.com/rest/api/power-bi'
-            - name: Power BI REST API-referens
-              href: developer/rest-api-reference.md
             - name: Fullständig kodlista
               href: developer/walkthrough-push-data-complete-code.md
         - name: Resurser
