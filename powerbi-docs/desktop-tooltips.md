@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b2437074fb6beff4b1be62287d547111488862e3
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210340"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280764"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop (förhandsversion)
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 
@@ -124,6 +124,7 @@ Det finns några begränsningar och saker du bör tänka på i den här förhand
 * Rapportknappbeskrivningar stöds inte för anpassade visuella objekt. 
 * Kluster stöds för närvarande inte som fält som kan visas i rapportknappbeskrivningar. 
 * När du väljer ett fält som ska visas för rapportknappbeskrivningar, när du använder ett fält jämfört med en kategori, visas endast den angivna knappbeskrivningen när sammanfattning med det valda fältet matchar i visuella objekt som innehåller det fältet. 
+
 
 
 ## <a name="next-steps"></a>Nästa steg

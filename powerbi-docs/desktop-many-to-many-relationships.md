@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1105de002f6461589d61c6f0077cceeedaada471
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 40799bb2716b2f6e85405e76c2a301acef3509aa
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39211781"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388765"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Många-till-många-relationer i Power BI Desktop (förhandsversion)
 
@@ -26,14 +26,14 @@ Med funktionen **många-till-många relation** i **Power BI Desktop** kan du ans
 Funktionen **många-till-många-relationer** i **Power BI Desktop** är en del av en samling av tre relaterade funktioner:
 
 * **Sammansatta modeller** – låter en rapport ha flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination.
-* **Många-till-många-relationer** – med **sammansatta modeller** kan du etablera **många-till-många-relationer** mellan tabeller, vilket tar bort kraven om unika värden i tabeller och gör tidigare lösningar som att introducera nya tabeller bara för att etablera relationer onödiga. 
+* **Många-till-många-relationer** – med **sammansatta modeller** kan du etablera **många-till-många-relationer** mellan tabeller, vilket tar bort kravet om unika värden i tabeller och tar bort tidigare lösningar som att introducera nya tabeller bara för att etablera relationer. 
 * **Lagringsläge** – du kan nu ange vilka visuella objekt som kräver en fråga till datakällor i serverdelen och de som inte kräver det importeras även om de baseras på DirectQuery, vilket förbättrar prestandan och minskar belastningen på serverdelen. Tidigare initierade även enkla visuella objekt som utsnitt frågor som skickades till serverdelskällor. 
 
 Den här samlingen med tre relaterade funktioner för **sammansatta modeller** beskrivs var och en i separata artiklar:
 
 * **Sammansatta modeller** beskrivs i detalj i artikeln [sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
 * **Många-till-många-relationer** beskrivs i den här artikeln.
-* **Lagringsläge** beskrivs i sin egen artikel [lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md).
+* **Lagringsläge** beskrivs i en egen artikel, [lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md).
 
 ## <a name="enabling-the-many-to-many-relationships-preview-feature"></a>Aktivera förhandsfunktionen många-till-många-relationer
 
