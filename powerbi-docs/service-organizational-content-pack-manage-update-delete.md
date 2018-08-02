@@ -7,15 +7,15 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 07/19/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1b7a111e1b240a37211c17bce4d497de2d864074
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 45e9207ffa666e33b298e82bbc78e07c226b780e
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34852312"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182804"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Hantera, uppdatera och ta bort organisationsinnehållspaket
 > [!NOTE]
@@ -52,7 +52,7 @@ När du gör och sparar en ändring i instrumentpanelen som du inkluderat i ett 
 4. Gör nödvändiga ändringar i **Uppdatera innehållspaketet** och välj **Uppdatera**. Ett meddelande om **slutförande** visas.
    
    * För gruppmedlemmar som inte har anpassat innehållspaketet används uppdateringen automatiskt.
-   * Medlemmar som har anpassat innehållspaketet får ett meddelande om att det finns en ny version.  De kan gå till AppSource och få det uppdaterade innehållspaketet utan att förlora sin anpassade version.  De har nu 2 versioner: den anpassade versionen och det uppdaterade innehållspaketet.  I den anpassade versionen är alla paneler från det ursprungliga innehållspaketet borta.  Men paneler som fästs från andra rapporter återges fortfarande.    
+   * Medlemmar som har anpassat innehållspaketet får ett meddelande om att det finns en ny version.  De kan gå till AppSource och få det uppdaterade innehållspaketet utan att förlora sin anpassade version.  De har nu 2 versioner: den anpassade versionen och det uppdaterade innehållspaketet.  I den anpassade versionen är alla paneler från det ursprungliga innehållspaketet borta.  Men paneler som fästs från andra rapporter återges fortfarande. Om innehållspaketets ägare tar bort den datauppsättning som innehållspaketet baseras på, så försvinner hela rapporten.  
 
 ## <a name="update-the-audience-expand-or-restrict-access"></a>Uppdatera målgruppen: utöka eller begränsa åtkomst
 En annan ändring som är tillgänglig för innehållspaketets skapare är att utöka och begränsa åtkomsten till innehållspaketet.  Kanske du har publicerat ett innehållspaketet till en bred publik och du vill begränsa åtkomsten till en mindre grupp.  

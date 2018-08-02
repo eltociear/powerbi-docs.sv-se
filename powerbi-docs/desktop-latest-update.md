@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/23/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c1c32e216dfdf4417fda8ee8888f85e1d27a8cda
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 537b66c193e0995c51616e34f5463cb8e6c68253
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812455"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210317"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Vad är nytt i den senaste uppdateringen av Power BI Desktop?
 
-## <a name="june-2018-update-2595135101"></a>Uppdatering för juni 2018 (2.59.5135.101)
+## <a name="july-2018-update-26051693201"></a>Uppdatering juli 2018 (2.60.5169.3201)
 
-Den här månadens uppdateringar innehåller flera funktioner och förbättringar som hjälper dig att arbeta med och få nya insikter från dina rapporter.
+Den här månadens stora uppdateringar är värda ett fyrverkeri i sin egen rätt, med sedan länge efterfrågade data- och rapporteringsfunktioner som tar dina visuella objekt till nya höjder och lyser med färgstarka insikter.
 
 Nu kan du [hämta den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10 kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är likadana oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
 
@@ -36,44 +36,52 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 
 Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 
+### <a name="modeling"></a>Modellering
+
+* Sammansatta modeller (förhandsversion) [[video]](https://youtu.be/Mtig3rmIUe0?t=15s) [[article]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
+* Många-till-många-relationer (förhandsversion) (associerade med sammansatta modeller) [[video]](https://youtu.be/Mtig3rmIUe0?t=4m53s) [[article]](desktop-many-to-many-relationships.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
+* Lagringsläge (förhandsversion) (associerade med sammansatta modeller) [[video]](https://youtu.be/Mtig3rmIUe0?t=15s) [[article]](desktop-storage-mode.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
+
 
 ### <a name="reporting"></a>Rapportering
 
-* Stöd för hög kontrast i rapporter [[video]](https://youtu.be/4VpGtWSrssE?t=13s)  [[artikel]](desktop-accessibility.md#high-contrast-support-for-reports)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
-* Radiekontroll i ringdiagram [[video]](https://youtu.be/4VpGtWSrssE?t=6m1s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#donutRadius) 
-* Positionskontroll för informationsetiketter i cirkel- och ringdiagram  [[video]](https://youtu.be/4VpGtWSrssE?t=7m19s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#detailLabels) 
-* Formatera dataetiketter separat för varje mått i ett kombinationsdiagram [[video]](https://youtu.be/4VpGtWSrssE?t=9m29s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
-* Längre telefonrapporter [[video]](https://youtu.be/4VpGtWSrssE?t=11m26s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#phoneReports) 
+* Nytt visuellt sidhuvud med bättre flexibilitet och formatering [[video]](https://youtu.be/Mtig3rmIUe0?t=8m26s) [[article]](desktop-visual-elements-for-reports.md#using-improved-visual-headers-in-power-bi-reports) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visualHeader) 
+* Formatering av skrivbordsunderlägg [[video]](https://youtu.be/Mtig3rmIUe0?t=14m19s)  [[article]](desktop-visual-elements-for-reports.md#using-wallpaper-in-power-bi-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#wallpaper) 
+* Temauppdatering – mer visuell kontroll och sidkontroll (förhandsversion) [[video]](https://youtu.be/Mtig3rmIUe0?t=19m14s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#theme) 
+* Knappbeskrivningar för tabeller och matriser [[video]](https://youtu.be/Mtig3rmIUe0?t=22m53s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#tableTooltips) 
+* Inaktivera knappbeskrivningar för visuella objekt [[video]](https://youtu.be/Mtig3rmIUe0?t=22m53s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#tooltips) 
+* Utsnittstillgänglighet  [[video]](https://youtu.be/Mtig3rmIUe0?t=27m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#slicerAccessibility) 
+* Förbättringar av formateringsinstrumentpanelen [[video]](https://youtu.be/Mtig3rmIUe0?t=30m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#formattingPane) 
+* Stegvis linjesupport för linje- och kombinationsdiagram [[video]](https://youtu.be/Mtig3rmIUe0?t=32m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#steppedLine) 
+* Inaktivera dataetiketter för kombinationsdiagram för enskilda serier [[video]](https://youtu.be/Mtig3rmIUe0?t=34m19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#comboDataLabels) 
+* Sortera upp levelseförbättringar [[video]](https://youtu.be/Mtig3rmIUe0?t=35m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#sorting) 
+
+### <a name="analytics"></a>Analytics
+
+* Distributionsfaktorinsikter [[video]](https://youtu.be/Mtig3rmIUe0?t=37m) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#distributionFactor) 
 
 ### <a name="custom-visuals"></a>Anpassade visuella objekt
 
-* Två nya anpassade visuella objekt [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
-
-### <a name="modeling"></a>Modellering
-* Filtrera och sortera i datavyn [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s)  [[artikel]](desktop-data-view.md#filtering-in-data-view)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
-* Förbättrad språkfiltrering [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
+* Power BI-certifierad kategori [[video]](https://youtu.be/Mtig3rmIUe0?t=41m13s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#certifiedVisuals) 
+* Inaktivera specifika visuella objekt [[video]](https://youtu.be/Mtig3rmIUe0?t=42m32s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#orgCustomVisuals) 
+* Fyra nya anpassade visuella objekt [[video]](https://youtu.be/Mtig3rmIUe0?t=44m) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#visio) 
 
 ### <a name="data-connectivity"></a>Dataanslutning
 
-* Förbättringar i SAP BusinessWarehouse-anslutningsappen (ny drivrutin och bättre prestanda, samt förbättrat stöd för hierarkivariabler) [[video]](https://youtu.be/4VpGtWSrssE?t=21m6s) [[artikel]](desktop-sap-bw-connector.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#sapBW) 
-* Nu har Apache Spark-anslutningsappen stöd för Windows-autentisering [[video]](https://youtu.be/4VpGtWSrssE?t=24m31s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#spark) 
-* Förbättringar i OData V4-anslutningsappen [[video]](https://youtu.be/4VpGtWSrssE?t=25m12s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#oData) 
-* Förbättringar i ODBC-anslutningsappen (vikningsstöd för Översta rader, möjlighet att filtrera navigeringen efter DSN-katalog) [[video]](https://youtu.be/4VpGtWSrssE?t=26m51s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#odbc) 
-
-### <a name="other"></a>Övrigt
-
-* Väljare för nationellt moln [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+* DirectQuery för IBM DB2-anslutningsapp (förhandsversion) [[video]](https://youtu.be/Mtig3rmIUe0?t=54m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#IBMDB2) 
+* Förbättringar av webbprogram med hjälp av exempelanslutningsapp [[video]](https://youtu.be/Mtig3rmIUe0?t=54m53s) [[article]](desktop-connect-to-web-by-example.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#WebByExample) 
+* SAP HANA – standardvärden för variabler i variabel indataupplevelse [[video]](https://youtu.be/Mtig3rmIUe0?t=56m19s) [[article]](desktop-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#SAPHANA) 
 
 
 > [!NOTE]
 > Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
 
-Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
 
 
 I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4VpGtWSrssE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mtig3rmIUe0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 > [!NOTE]

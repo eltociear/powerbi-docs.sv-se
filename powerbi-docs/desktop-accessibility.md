@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 72a900b1661a77e5b31c1d68b5726d989b236f7b
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: b26fbfccc3b0a98761ecc1444af4e535339c96de
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39032012"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210294"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -47,8 +47,12 @@ Du kan trycka på **Alt + Skift + F11** för att presentera en tillgänglig vers
 
 > [!NOTE]
 > Funktionen Visa data är bara tillgängligt för en skärmläsare via det här kortkommandot. Om du öppnar Visa data via alternativet i sidhuvudet för visuella objekt kommer det inte att vara tillgängligt för en skärmläsare.
-> 
-> 
+
+Från och med juli 2018-versionen av **Power BI Desktop** har utsnitt också inbyggda funktioner för tillgänglighet. När du väljer ett utsnitt kan du ändra utsnittets värde genom att använda CTRL + högerpil (kontroll plus högerpilen) om du vill flytta mellan de olika kontrollerna i utsnittet. När du t.ex. först trycker på CTRL+högerpil hamnar fokus på suddgummit, och om du trycker på blankstegstangenten ger det samma resultat som att klicka på suddgummit, varvid utsnittets alla värden raderas. 
+
+Du kan flytta mellan kontrollerna i ett utsnitt genom att trycka på tabbtangenten. Om du trycker på tabbtangenten på suddgummit flyttas du till den nedrullningsbara knappen. Om du trycker på tabbtangenten en gång till flyttas du till det första värdet i utsnittet (om det finns flera värden för utsnittet, t.ex. ett intervall). 
+
+![Tryck på CTRL+(högerpil) i Power BI Desktop om du vill justera element eller värden i ett utsnitt, tryck på blankstegstangenten om du vill välja elementet och justera dess värde](media/desktop-accessibility/accessibility_07.png)
 
 Dessa hjälpmedelstillägg har skapats så att användarna kan använda Power BI-rapporter fullständigt med hjälp av skärmläsare och tangentbordet.
 

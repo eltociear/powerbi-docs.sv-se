@@ -8,15 +8,15 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0536dc6fd637db07c0e26a4ed7f0da1071b646eb
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: a1719f8a6f9f4ad3989aa498c584b337cd9fdd00
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137432"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182758"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundläggande begrepp för Power BI-tjänsten
 
@@ -48,9 +48,9 @@ Eller så kanske du vill se den här videon innan du läser resten av artikeln. 
 De fyra huvudsakliga byggblocken i Power BI är ***instrumentpaneler***, ***rapporter***, ***arbetsböcker*** och ***datauppsättningar***. Och alla är uppdelade i ***arbetsytor***. Det är viktigt att förstå sig på arbetsytorna innan vi går vidare till de fyra byggstenarna, så vi börjar där. 
 
 ## <a name="workspaces"></a>Arbetsytor
-Arbetsytor är containrar för instrumentpaneler, rapporter, arbetsböcker och datauppsättningar i Power BI. Det finns två typer av arbetsytor: **Min arbetsyta* och apparbetsytor. Så, vad är en *app*? En *Power BI-app* är en samling av instrumentpaneler och rapporter som skapats för att leverera nyckelvärden för din organisation. Appar är interaktiva men kan inte redigeras. 
+Arbetsytor är containrar för instrumentpaneler, rapporter, arbetsböcker och datauppsättningar i Power BI. Det finns två typer av arbetsytor: *Min arbetsyta* och *apparbetsytor*. Så, vad är en *app*? En *Power BI-app* är en samling av instrumentpaneler och rapporter som skapats för att leverera nyckelvärden för din organisation. Appar är interaktiva men kan inte redigeras. 
 
-- *Min arbetsyta* är en personliga arbetsyta där Power BI-kunden arbetar med sitt innehåll. Bara du har åtkomst till Min arbetsyta. Om du vill dela något av ditt innehåll har du flera alternativ. Du kan skapa en apparbetsyta där du paketerar innehåll till en *app* och gör det tillgängligt för andra i din organisation eller skapa en apparbetsyta och ge kollegor åtkomst till arbetsytan så att ni kan dela och samarbeta.     
+- *Min arbetsyta* är en personlig arbetsyta där vilken Power BI-kund som helst kan arbeta med sitt eget innehåll. Bara du har åtkomst till Min arbetsyta. Du kan dela instrumentpaneler och rapporter från Min arbetsyta. Om du vill samarbeta på instrumentpaneler och rapporter, eller skapa en app, vill du kanske sedan arbeta på en apparbetsyta.      
 -  *Apparbetsytor* används för att samarbeta och dela innehåll med kollegor. Det är också där du skapar, publicerar och hanterar appar för din organisation. Du kan se dem som mellanlagringsområden och containrar för det innehåll som ska utgöra en Power BI-app. Du kan lägga till kollegor till dina apparbetsytor och samarbeta kring instrumentpaneler, rapporter, arbetsböcker och datauppsättningar. Alla apparbetsytans medlemmar behöver Power BI Pro-licenser, men appkonsumenterna (de kollegor som har tillgång till apparna) behöver inte nödvändigtvis Pro-licenser.  
 
 Mer information finns i avsnittet **Dela ditt arbete** i innehållsförteckningen med början i [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)

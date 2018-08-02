@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/19/2018
 ms.author: maggies
-ms.openlocfilehash: 645e1e40867f52718f2ec79a17cf1b5525a3d951
-ms.sourcegitcommit: 9efb94ddb254e9c03e9871ad232509065ee24bf2
+ms.openlocfilehash: 41a8b463ca95d0e4e0e0ba71dbd9ec9a1ce78920
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864409"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182735"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,19 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](service-whats-new.md)  
+
+## <a name="july-2018"></a>Juli 2018
+
+### <a name="ios-and-android-only"></a>Enbart iOS och Android
+
+**Delade filter**
+
+Nu kan du få rapporter med delade filter och utsnitt.
+
+**Bakgrundsavbildningssupport**
+
+När du visar en rapport i liggande på din mobila enhet kan ha du samma bakgrundsbilder som du har i Power BI på webben.
+
 
 ## <a name="june-2018"></a>Juni 2018
 
