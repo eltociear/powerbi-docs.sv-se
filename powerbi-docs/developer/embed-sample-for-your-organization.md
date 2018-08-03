@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: cfc450216202f332f518955d28cb71df6aa0b800
-ms.sourcegitcommit: f2b106b5eb338a64f903e8ce6793bccb07f9440a
+ms.openlocfilehash: 544429528ed51dd2928eb82632f512ff3f7d5afd
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39105279"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359741"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Självstudier: Bädda in en Power BI-rapport, instrumentpanel eller panel till ett program för din organisation
 Den här självstudien visar hur du integrerar en rapport i ett program som använder **Power BI .NET SDK** tillsammans med **Power BI JavaScript API** när du bäddar in **Power BI** i ett program för din organisation. Med **Power BI** kan du bädda in rapporter, instrumentpaneler eller paneler i ett program med **användare äger data**. **Användare äger data** gör att ditt program kan utöka Power BI-tjänsten.
@@ -413,7 +413,24 @@ function updateEmbedReport() {
 Nu när du är färdig med att utveckla ditt program är det dags att skapa dedikerad kapacitet för apparbetsytan.
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. Om en arbetsyta inte tilldelats till en dedikerad kapacitet anses den vara en delad kapacitet. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-admin-premium-purchase.md).
+Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-premium.md).
+
+Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Office 365](../service-admin-premium-purchase.md).
+
+| Kapacitetsnod | Totalt antal virtuella kärnor<br/>*(Serverdel + klientdel)* | Virtuella kärnor för serverdel | Virtuella kärnor för klientdel | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning |
+| --- | --- | --- | --- | --- | --- |
+| EM1 |1 v-kärnor |5 virtuella kärnor, 10 GB RAM |0,5 virtuella kärnor |3,75 per sekund |150-300 |
+| EM2 |2 v-kärnor |1 virtuell kärna, 10 GB RAM |1 v-kärnor |7,5 per sekund |301-600 |
+| EM3 |4 v-kärnor |2 virtuella kärnor, 10 GB RAM-minne |2 v-kärnor |15 per sekund |601–1200 |
+| P1 |8 v-kärnor |4 virtuella kärnor, 25 GB RAM-minne |4 v-kärnor |30 per sekund |1201–2400 |
+| P2 |16 v-kärnor |8 virtuella kärnor, 50 GB RAM-minne |8 v-kärnor |60 per sekund |2401–4800 |
+| P3 |32 v-kärnor |16 virtuella kärnor, 100 GB RAM-minne |16 v-kärnor |120 per sekund |4801–9600 |
+| P4 |64 virtuella kärnor |32 virtuella kärnor, 200 GB RAM |32 v-kärnor |240 per sekund |9601-19200
+| P5 |128 virtuella kärnor |64 virtuella kärnor, 400 GB RAM |64 virtuella kärnor |480 per sekund |19201-38400
+
+*Med **_EM SKU:er_** **kan du** komma åt innehåll med en kostnadsfri Power BI-licens när du provar att bädda in med **_MS Office-appar_**, men **du kan inte komma åt** innehåll med en kostnadsfri Power BI-licens när du använder **_Powerbi.com_** eller **_Power BI mobile_**.*
+
+*Med **_P SKU:er_** **kan du** komma åt innehåll med en kostnadsfri Power BI-licens när du provar att bädda in med **_MS Office-appar_**, när du använder **_Powerbi.com_** eller när du använder **_Power BI Mobile_**.*
 
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tilldela en apparbetsyta till en dedikerad kapacitet
 
@@ -431,13 +448,17 @@ När du har skapat en dedikerad kapacitet kan du tilldela apparbetsytan till den
 
     ![apparbetsyta som hör till en kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
+## <a name="admin-settings"></a>Administratörsinställningar
+
+Globala eller Power BI-tjänstadministratörer kan aktivera eller inaktivera REST API:er för en klient. Power BI-administratörer kan ange den här inställningen för hela organisationen eller för enskilda säkerhetsgrupper. Det har aktiverats för hela organisationen som standard. Du kan göra detta via [Power BI-administratörsportalen](../service-admin-portal.md).
+
 ## <a name="next-steps"></a>Nästa steg
-I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program med hjälp av ditt **Power BI-organisationskonto**. Du kan nu prova att bädda in Power BI-innehåll i ett program med hjälp av appar.  Du kan även prova att bädda in Power BI-innehåll för kunder från tredje part.
+I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program med hjälp av ditt **Power BI-organisationskonto**. Du kan nu prova att bädda in Power BI-innehåll i ett program med hjälp av appar.  Du kan även prova att bädda in Power BI-innehåll för dina kunder.
 
 > [!div class="nextstepaction"]
 > [Bädda in från appar](embed-from-apps.md)
 
 > [!div class="nextstepaction"]
->[Bädda in för kunder från tredje part](embed-sample-for-customers.md)
+>[Bädda in för dina kunder](embed-sample-for-customers.md)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/26/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 11be5cd6f5b97fe612bf42a37228518ab2fbb227
-ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
+ms.openlocfilehash: 5db9b801fad3145cc864799062fe886c99da53aa
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900064"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280212"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SAP Business Warehouse (BW)**-data.
 
-Du hittar information om hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse) i [Power BI och SAP BW whitepaper](https://aka.ms/powerbiandsapbw).
+Du hittar information om hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse) i [Power BI och SAP BW whitepaper](https://aka.ms/powerbiandsapbw). Mer information om hur du använder DirectQuery med SAP BW finns i artikeln [DirectQuery och SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-Från och med **Power BI Desktop**-versionen för juni 2018 kan du använda SAP BW-anslutningsappen med en implementering som innehåller viktiga prestanda- och funktionsförbättringar. Den här uppdaterade versionen av SAP BW-anslutningsappen har utvecklats av Microsoft och heter **Implementation 2.0**. Du kan antingen välja version 1 (v1) av **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I följande avsnitt beskrivs installationen av respektive version i tur och ordning. Du kan välja den ena eller den andra anslutningsappen när du ansluter till SAP BW från Power BI Desktop.
+Från och med **Power BI Desktop**-versionen för juni 2018 kan du använda SAP BW-anslutningsappen med en implementering som innehåller viktiga prestanda- och funktionsförbättringar. Den här uppdaterade versionen av SAP BW-anslutningsappen har utvecklats av Microsoft och heter **Implementation 2.0**. Du kan antingen välja version 1 (v1) av **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I följande avsnitt beskrivs installationen av respektive version i tur och ordning. Du kan välja den ena eller den andra anslutningen när du ansluter till SAP BW från Power BI Desktop.
 
 Vi rekommenderar att du använder **Implementation 2.0 SAP Connector** när det är möjligt.
 
@@ -38,9 +38,9 @@ Vi rekommenderar att du använder Implementation 2.0 SAP Connector när det är 
 
 ## <a name="installation-of-implementation-20-sap-connector"></a>Installation av Implementation 2.0 SAP Connector
 
-**Implementation 2.0** för SAP Connector kräver SAP .NET Connector 3.0. Du kan [ladda ned SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300) från SAP:s webbplats via följande länk:
+**Implementation 2.0** för SAP Connector kräver SAP .NET Connector 3.0. Du kan [ladda ned SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html) från SAP:s webbplats via följande länk:
 
-* [SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300)
+* [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html)
 
 Åtkomst till nedladdningen kräver en giltig S-användare. Kunder uppmanas att begära SAP .NET Connector 3.0 från deras SAP Basis-team. 
 
@@ -54,7 +54,7 @@ Välj alternativet *Install assemblies to GAC* (Installera sammansättningar til
 ![Valfria konfigurationssteg för SAP](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> Version 1 för SAP BW-implementeringen kräver Netweaver DLL:er. Netweaver DLL:erna krävs inte om du använder Implementation 2.0 för SAP Connector i stället för version 1.
+> Version 1 av SAP BW-implementeringen kräver Netweaver DLL:er. Netweaver DLL:erna krävs inte om du använder Implementation 2.0 för SAP Connector i stället för version 1.
 
 
 ## <a name="version-1-sap-bw-connector-features"></a>Funktioner för version 1 för SAP BW Connector
@@ -207,6 +207,7 @@ Det här avsnittet beskriver felsökningssituationer (och lösningar) som kan up
 Mer information om SAP och DirectQuery finns i följande resurser:
 
 * [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery och SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [Power BI och SAP BW whitepaper](https://aka.ms/powerbiandsapbw)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: aa2bfed2858f93d91ff806b934f16c06555668d6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 964d9dfcc9a22d13b071fd59533821ebf907c7e1
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244840"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39328475"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Publicera till Power BI från Excel 2016
 Med Excel 2016 kan du publicera dina Excel-arbetsböcker direkt till din [Power BI](https://powerbi.microsoft.com)-webbplats, där du kan skapa interaktiva rapporter och instrumentpaneler baserat på data i arbetsboken. Du kan sedan dela dina insikter med andra i din organisation.
@@ -47,7 +47,7 @@ du får två alternativ för hur du vill hämta din arbetsbok till Power BI.
 
 ![](media/service-publish-from-excel/pbi_uploadexport3.png)
 
-När den har publicerats sparas den som en kopia i Power BI, separat från den lokala filen. Om du vill uppdatera filen i Power BI måste du publicera den uppdaterade versionen igen. Du kan uppdatera datan och ställa in en schemalagd uppdatering av arbetsboken eller datauppsättningen i Power BI.
+När den har publicerats sparas den som en kopia i Power BI, separat från den lokala filen. Om du vill uppdatera filen i Power BI måste du publicera den uppdaterade versionen igen. Du kan uppdatera data och ställa in en schemalagd uppdatering av arbetsboken eller datauppsättningen i Power BI.
 
 ### <a name="publishing-from-excel-standalone"></a>Publicera från fristående Excel
 Om din arbetsbok inte redan har sparats till OneDrive måste du spara den där först. Klicka på Spara till molnet och välj en plats i OneDrive för företag.

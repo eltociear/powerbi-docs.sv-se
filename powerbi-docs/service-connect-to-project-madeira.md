@@ -93,7 +93,7 @@ Power BI-instrumentpanelen är beroende av de publicerade webbtjänster som list
 
 Om du ser det här felet när du anger en URL för projektet ”Madeira” bör du kontrollera att följande krav är uppfyllda:  
 
-- URL:en följer exakt det här mönstret https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company ('<em>CRONUS % 20US</em>”)  
+- URL:en följer exakt det här mönstret https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>”)  
 - Ta bort all text efter företagets namn inom parentes  
 - Kontrollera att det inte finns något avslutande snedstreck i slutet av URL:en.  
 - Kontrollera att URL:en använder en säker anslutning som anges av att URL:en börjar med https.  

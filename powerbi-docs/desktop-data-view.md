@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 2caa22152580d3de8c6ede585c43dedf4e624f88
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fad7b8453b6d5d29a1f6c5d9d9ed49b0a8b8a66f
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813743"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280350"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Datavy i Power BI Desktop
 **Datavyn** gör det enklare att inspektera, utforska och förstå data i **Power BI Desktop**-modellen. Det skiljer sig från hur du visar tabeller, kolumner och data i **frågeredigeraren**. I datavyn tittar du på dina data *efter* att de har lästs in i modellen.
@@ -46,4 +46,5 @@ Du kan också filtrera och sortera data i **datavyn**. Varje kolumn har en ikon 
 
 Du kan filtrera enskilda värden eller använda avancerad filtrering baserat på data i kolumnen. 
 
-
+> [!NOTE]
+> Om en Power BI-modell har skapats i en annan kultur än ditt aktuella gränssnitt (till exempel om modellen har skapats på engelska (USA) och du visar den på spanska), visas sökrutan i användargränssnittet för datavyn endast för textfält.

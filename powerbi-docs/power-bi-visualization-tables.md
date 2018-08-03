@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7e992152656a208c765743292e06b4d0d3708730
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 769e2adb30fb1969d16898db4bf954d2bcbad8c4
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600267"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280419"
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards"></a>Arbeta med tabeller i Power BI-rapporter och instrumentpaneler
 En tabell är ett rutnät som innehåller relaterade data i en logisk serie med rader och kolumner. Det kan också innehålla rubriker och en rad för summor. Tabeller fungerar bra med kvantitativa jämförelser där du tittar på många värden för en enskild kategori. I den här tabellen visas till exempel 5 olika mått för **Kategori**.
@@ -56,7 +56,7 @@ Vi ska skapa tabellen som visas ovan för att visa försäljningsvärden efter k
      ![](media/power-bi-visualization-tables/pbi_pintile.png)
 
 ## <a name="format-the-table"></a>Formatera tabellen
-Det finns många sätt att formatera en tabell och vi presenterar endast några av dem här. Ett bra sätt att lära dig om de andra formateringsalternativen är att öppna fönstret formatering (roller-ikonen ![](media/power-bi-visualization-tables/power-bi-format.png)) och utforska.
+Du kan formatera en tabell på många sätt och vi beskriver endast några här. Ett bra sätt att lära dig om de andra formateringsalternativen är att öppna fönstret formatering (roller-ikonen ![](media/power-bi-visualization-tables/power-bi-format.png)) och utforska.
 
 * Försök att formatera tabellrutnätet. Här vi har lagt till ett blått lodrätt rutnät, lagt till utrymme i raderna, ökat kantlinjen och ändra textstorleken något.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1e380a6821db7207d14e719fa5e070af38196b97
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 135e6ff76a0972bdedbff3eaf7ab1222f82a94ab
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34286944"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39331191"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Använd numeriska intervallutsnitt i Power BI Desktop
 Med **numeriska intervallutsnitt** kan du använda alla typer av filter på en numerisk kolumn i datamodellen. Du kan välja att filtrera **mellan** siffror som är **mindre än eller lika** med ett tal eller **större än eller lika** med ett tal. Detta kan låta enkelt men det är ett kraftfullt sätt att filtrera dina data.
@@ -53,7 +53,7 @@ Till sist väljer vi **Större än eller lika med** så att den högra (större)
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fäst till heltal med utsnitt med numeriska intervall
 
-Ett numeriskt intervallutsnitt fästs till heltal såvida det inte är ett decimalintervall. Detta gör att ditt utsnitt korrekt justeras som heltal. 
+Ett utsnitt för ett numeriskt intervall kopplas till heltal om datatypen för det underliggande fältet är **Heltal**. Detta gör att ditt utsnitt korrekt justeras som heltal. I fälten för **decimaltal** kan du ange eller välja decimaler för ett tal. Formateringen som används i textrutan matchar formateringen som definierats för fältet, men du kan ange eller välja mer exakta siffror.
 
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
@@ -61,3 +61,4 @@ Följande begränsningar och överväganden kan användas för utsnittet **numer
 
 * Utsnittet **numeriska intervall** filtrerar för närvarande varje underliggande rad i data, inte vilket aggregerat värde som helst. Till exempel, om fältet *Beloppet* används, filtreras varje transaktion som bygger på *Säljbelopp*, och inte summan av *Säljbelopp* för varje datapunkt i det visuella objektet.
 * Det fungerar för närvarande inte med mått.
+* Du kan ange ett tal i textrutorna i ett numeriskt utsnitt, även om det ligger utanför den underliggande kolumnens värdeintervall. På så sätt kan du ställa in filter om du vet att dina data kan komma att ändras i framtiden.

@@ -2,24 +2,26 @@
 title: Bädda in Power BI-innehåll i ett program för dina kunder för nationella moln
 description: Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med hjälp av Power BI-API:er för dina kunder.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
-ms.topic: conceptual
-ms.date: 03/28/2018
-ms.author: maghan
-ms.openlocfilehash: ebbb004fe79bbae942243bc227e1c09fd51fa75f
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.topic: tutorial
+ms.date: 07/26/2018
+ms.openlocfilehash: 2d722428ce2029ef4689e6b4bf5dfcdd208baff8
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813720"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39255881"
 ---
-# <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Bädda in en Power BI-instrumentpanel, panel eller rapport i ditt program för nationella moln
-Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med Power BI:s .NET SDK tillsammans med Power BI:s JavaScript API vid inbäddning för dina kunder. Detta är vanligtvis ISV-scenariot.
+# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Självstudie: Bädda in en Power BI-instrumentpanel, -panel eller -rapport i ditt program för nationella moln
+Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med Power BI:s .NET SDK tillsammans med Power BI:s JavaScript API vid inbäddning för dina kunder. Det här är vanligtvis ett ISV-scenario.
 
-Power BI stöder också nationella (privata) moln. Varje nationellt moln har sin egen anknytning. De olika nationella molnen är:
+Power BI stöder också nationella (privata) moln.
+
+De olika nationella molnen är:
 
 * USA Government Community Cloud (GCC)
 
@@ -29,81 +31,83 @@ Power BI stöder också nationella (privata) moln. Varje nationellt moln har sin
 
 * Power BI för moln i Tyskland
 
+* Power BI för moln i Kina
+
 ![Inbäddad instrumentpanel](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett användarkonto kan du, beroende på vilken typ av sektor, [registrera dig för ett Power BI-konto för amerikanska myndigheter](../service-govus-signup.md) eller [Power BI för molnkonto i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
+För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har något konto kan du, beroende på typen av nationellt moln, registrera dig för ett [Power BI-konto för amerikanska myndigheter](../service-govus-signup.md), ett [Power BI-konto för moln i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller ett [Power BI-konto för moln i Kina](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vill du bädda in en instrumentpanel för din organisation istället? Se [Integrera en instrumentpanel i en app för din organisation](integrate-dashboard.md).
 >
 
-Om du vill integrera en instrumentpanel i en webbapp, använder du **Power BI**-API:t och en Azure Active Directory (AD)-**åtkomsttoken** för auktorisering för att hämta en instrumentpanel. Därefter läser du instrumentpanelen med hjälp av en inbäddningstoken. **Power BI**-API ger programmeringsåtkomst till vissa **Power BI**-resurser. Mer information finns i [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) och [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+Om du vill integrera en instrumentpanel i en webbapp, använder du **Power BI**-API:t och en Azure Active Directory (AD)-**åtkomsttoken** för auktorisering för att hämta en instrumentpanel. Därefter läser du instrumentpanelen med hjälp av en inbäddningstoken. **Power BI**-API:et ger programmeringsåtkomst till specifika **Power BI**-resurser. Mer information finns i [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) och [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Ladda ned exemplet
 Den här artikeln visar den kod som används i [Bädda in för ditt kundexempel](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) på GitHub. Om du vill följa den här genomgången kan du ladda ned exemplet.
 
 * Government Community Cloud (GCC):
     1. Skriv över Cloud.config-filen med GCCCloud.config-innehåll.
-    2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
+    2. Uppdatera ClientId (inbyggt appklient-ID), GroupId, användarnamnet (huvudanvändaren) och lösenordet i Web.config-filen.
     3. Lägg till GCC-parametrar i web.config-filen enligt nedan.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.powerbigov.us" />
 ```
 
 * Militära leverantörer (DoDCON):
     1. Skriv över Cloud.config-filen med TBCloud.config-innehåll.
-    2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
+    2. Uppdatera ClientId (inbyggt appklient-ID), GroupId, användarnamnet (huvudanvändaren) och lösenordet i Web.config-filen.
     3. Lägg till DoDCON-parametrar i web.config-filen enligt nedan.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
 ```
 
 * Militären (DoD):
     1. Skriv över Cloud.config-filen med PFCloud.config-innehåll.
-    2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
+    2. Uppdatera ClientId (inbyggt appklient-ID), GroupId, användarnamnet (huvudanvändaren) och lösenordet i Web.config-filen.
     3. Lägg till DoDCON-parametrar i web.config-filen enligt nedan.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
 ```
 
 * Power BI för moln i Tyskland-parametrar
     1. Skriv över Cloud.config-filen med Power BI för moln i Tyskland-innehåll.
-    2. Uppdatera ClientId (inbyggt appklient-id), GroupId, användarnamn (överordnad användare) och lösenord i Web.config-filen.
+    2. Uppdatera ClientId (inbyggt appklient-ID), GroupId, användarnamnet (huvudanvändaren) och lösenordet i Web.config-filen.
     3. Lägg till Power BI för moln i Tyskland-parametrar i web.config-filen enligt nedan.
 
 ```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbi.de/" />
-
 <add key="embedUrlBase" value="https://app.powerbi.de" />
 ```
 
+* Parametrar för Power BI för moln i Kina
+    1. Skriv över Cloud.config-filen med innehåll i [Power BI för moln i Kina](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config).
+    2. Uppdatera ClientId (inbyggt appklient-ID), GroupId, användarnamnet (huvudanvändaren) och lösenordet i Web.config-filen.
+    3. Lägg till parametrarna för Power BI för moln i Kina i web.config-filen enligt nedan.
+
+```xml
+<add key="authorityUrl" value=https://login.chinacloudapi.cn/common/oauth2/authorize/" />
+<add key="resourceUrl" value="https://analysis.chinacloudapi.cn/powerbi/api" />
+<add key="apiUrl" value="https://api.powerbi.cn/" />
+<add key="embedUrlBase" value="https://app.powerbi.cn" />
+```
+
 ## <a name="step-1---register-an-app-in-azure-ad"></a>Steg 1 – Registrera en app i Azure AD
-Du måste registrera din app med Azure AD för att kunna göra REST API-anrop. Mer information finns i [Registrera en Azure AD-app för att bädda in Power BI-innehåll](register-app.md). Eftersom det finns olika nationella molnanknytningar finns det olika URL:er för att registrera ditt program.
+Du måste registrera appen med Azure AD för att köra REST API-anrop. Mer information finns i [Registrera en Azure AD-app för att bädda in Power BI-innehåll](register-app.md). Eftersom det finns olika nationella molnanknytningar finns det olika URL:er för programregistrering.
 
 * Government Community Cloud (GCC) – https://app.powerbigov.us/apps 
 
@@ -113,11 +117,13 @@ Du måste registrera din app med Azure AD för att kunna göra REST API-anrop. M
 
 * Power BI för moln i Tyskland – https://app.powerbi.de/apps
 
-Om du har hämtat [exemplet för inbäddning för din kund](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), använder du det **Klient-ID** som du får efter registreringen så att exemplet kan autentisera till Azure AD. Om du vill konfigurera exemplet, ändrar du **clientId** i *web.config*-filen.
+* Power Bi för moln i Kina – https://app.powerbi.cn/apps
+
+Om du hämtade [exemplet för inbäddning för kunder](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) använder du det **klient-ID** som du fick efter registreringen så att exemplet kan autentisera mot Azure AD. Om du vill konfigurera exemplet, ändrar du **clientId** i *web.config*-filen.
 
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>Steg 2 – hämta en åtkomsttoken från Azure AD
-I ditt program måste du först hämta en **åtkomsttoken** från Azure AD innan du kan anropa Power BI REST API:t. Mer information finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md). Eftersom det finns olika nationella molnanknytningar finns det olika URL:er för att få en åtkomsttoken för ditt program.
+## <a name="step-2---get-an-access-token-from-azure-ad"></a>Steg 2 – Hämta en åtkomsttoken från Azure AD
+Du måste hämta en **åtkomsttoken** från Azure AD i ditt program innan du kan göra anrop mot Power BI REST-API:t. Mer information finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md). Eftersom det finns olika nationella molnanknytningar finns det olika URL:er för att få en åtkomsttoken för ditt program.
 
 * Government Community Cloud (GCC) – https://login.microsoftonline.com
 
@@ -127,13 +133,15 @@ I ditt program måste du först hämta en **åtkomsttoken** från Azure AD innan
 
 * Power BI för moln i Tyskland – https://login.microsoftonline.de
 
+* Power Bi för moln i Kina – https://login.microsoftonline.cn
+
 Du ser exempel på detta i varje innehållsobjekts uppgift i **Controllers\HomeController.cs**.
 
 ## <a name="step-3---get-a-content-item"></a>Steg 3 – hämta ett innehållsobjekt
-Om du vill bädda in ditt Power BI-innehåll, behöver du göra några saker för att se till att det bäddas in korrekt. Alla dessa steg kan göras direkt med REST API:et, men exempelprogrammet och exemplen här, görs med .NET SDK.
+När du bäddar in Power BI-innehållet måste du göra ett par saker för att försäkra dig om att det bäddas in korrekt. Alla dessa steg kan utföras direkt med REST-API:et, men i exempelprogrammet och i exemplen här används .NET SDK.
 
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Skapa Power BI-klienten med din åtkomsttoken
-Med din åtkomsttoken vill du skapa dina Power BI-klientobjekt som gör att du kan interagera med Power BI-API:er. Detta görs genom att omsluta AccessToken med ett *Microsoft.Rest.TokenCredentials*-objekt.
+Du använder din åtkomsttoken för att skapa Power BI-klientobjektet som gör att du kan interagera med Power BI-API:erna. Detta görs genom att omsluta AccessToken med ett *Microsoft.Rest.TokenCredentials*-objekt.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -142,7 +150,7 @@ using Microsoft.PowerBI.Api.V2;
 
 var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 
-// Create a Power BI Client object. It will be used to call Power BI APIs.
+// Create a Power BI Client object. This is used to call the Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
@@ -160,7 +168,7 @@ Ett exempel på detta finns i **Controllers\HomeController.cs** av [Appen äger 
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
 
 // Get the first report in the group.
@@ -175,7 +183,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // To retrieve the tile, you first need to retrieve the dashboard.
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
 
 // Get the first report in the group.
@@ -194,7 +202,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
 
 // Get the first report in the group.
@@ -202,10 +210,10 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Skapa inbäddningstoken
-En inbäddningstoken behöver skapas som kan användas från JavaScript-API:t. Inbäddningstoken gäller endast för det objekt du bäddar in. Det innebär att du när som helst när du bäddar in bit Power BI-innehåll måste skapa en ny inbäddningstoken för den. Mer information, inklusive vilken **accessLevel** du bör använda, finns i avsnittet om [inbäddningstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+En inbäddningstoken behöver skapas som kan användas från JavaScript-API:t. En inbäddningstoken gäller endast för det objekt du bäddar in. Det innebär att du när som helst när du bäddar in bit Power BI-innehåll måste skapa en ny inbäddningstoken för den. Mer information, inklusive vilken **accessLevel** du bör använda, finns i avsnittet om [inbäddningstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
-> Eftersom inbäddningstoken endast är avsedda för utvecklartestning är antalet inbäddningstoken ett Power BI-huvudkonto kan generera begränsat. En [kapacitet måste köpas](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddningsscenarier för produktion. Det finns ingen gräns för generering av inbäddningstoken när en kapacitet köps.
+> Eftersom inbäddningstoken endast är avsedda för utvecklartestning är antalet inbäddningstoken som ett Power BI-huvudkonto kan generera begränsat. En [kapacitet måste köpas](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) för inbäddningsscenarier för produktion. Det finns ingen gräns för generering av inbäddningstoken när en kapacitet köps.
 
 Ett exempel på detta finns i **Controllers\HomeController.cs** av [Inbäddning för ditt organisationsexempel](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
@@ -400,7 +408,7 @@ Ett programexempel av det här finns i [Inbäddning för ditt organisationsexemp
 
 * Det finns ett exempelprogram på GitHub som du kan granska. Ovanstående exempel baseras på det exemplet. Mer information finns i [Inbäddning för din organisation-exemplet](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 * Mer information om JavaScript API hittar du i [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-* Mer information om Power BI för moln i Tyskland hittar du i [Vanliga frågor och svar för Power BI för moln Tyskland](https://docs.microsoft.com/power-bi/service-govde-faq)
+* Mer information om Power BI för moln i Tyskland hittar du i [Vanliga frågor och svar om Power BI för moln Tyskland](https://docs.microsoft.com/power-bi/service-govde-faq)
 * [Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md)
 
 Begränsningar och överväganden

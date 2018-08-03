@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 828c5e8afc28b496b1920468097ce629fe646e37
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 2ea6f2e557f26358ab6a93d33c890e90c96885f4
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34564660"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Så här hittar du rapportserverns produktnyckel
 Lär dig hur du hittar produktnyckeln för Power BI-rapportservern för att installera servern i en produktionsmiljö.
@@ -33,7 +34,7 @@ Om du väljer **Power BI-rapportservernyckel** så visas en dialogruta med din p
 
 ![Produktnyckel för Power BI-rapportserver](media/find-product-key/pbirs-product-key-dialog.png)
 
-## <a name="purchased-software-assurance-agreeemnt"></a>Avtal för köpt programvara
+## <a name="purchased-software-assurance-agreement"></a>Software Assurance-avtal för köpt programvara
 Om du har ett SQL Server Enterprise SA-avtal, kan du få din produktnyckel från [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Titta under det senaste servicepaketet för den senaste versionen av SQL Server. Om du inte ser det, tittar du under RTM-versionen av den senaste versionen av SQL Server.
 
 > [!NOTE]

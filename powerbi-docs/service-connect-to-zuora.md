@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 57e1e8ce015db9b5f88f7b685c80092023540a6f
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 48246d61789a0b1e160109c1f2fb0e81838b3965
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599145"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39280327"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Ansluta till Zuora med Power BI
 Med Zuora för Power BI kan du visualisera viktiga intäkter, fakturering och prenumerationsdata. Använd standardinstrumentpanelen och rapporter för att analysera användningstrender, spåra fakturering och betalningar och övervaka återkomma intäkter eller anpassa dem för att uppfylla dina unika behov av instrumentpaneler och rapporter.
@@ -68,7 +68,7 @@ Den inkluderar också dessa beräknade mått:
 | Mått | Beskrivning | Halvberäkning |
 | --- | --- | --- |
 | Konto: betalningar |Totalt betalningsbelopp under en tidsperiod, baserat på betalningens förfallodatum. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
-| Konto: återbetalningar |Total återbetalningssumma under en tidsperiod, baserat på återbetalningsdatumet. Mängden har rapporterats som ett negativt tal. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
+| Konto: återbetalningar |Total återbetalning under en tidsperiod, baserat på återbetalningsdatumet. Mängden har rapporterats som ett negativt tal. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
 | Konto: nettobetalningar |Kontobetalningar plus återbetalningar under en tidsperiod. |Account.Payments + Account.Refunds |
 | Konto: Aktiva konton |Antal konton som var aktiva under en tidsperiod. Prenumerationer måste har startat innan (eller under) tidsperiodens startdatum. |COUNT (Account.AccountNumber)<br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    (Subscription.SubscriptionEndDate > TimePeriod.StartDate<br>OR<br>Subscription.SubscriptionEndDate = null) –evergreen subscription |
 | Konto: Genomsnittliga återkommande intäkter |Bruttomarginal MRR per aktivt konto under en tidsperiod. |Gross MRR / Account.ActiveAccounts |

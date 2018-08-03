@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
-ms.openlocfilehash: c6cd75efd44259c2812f98a37875cf716d4843ad
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0ec22bd142f7509935691ff7bfcd38cb51a04fb2
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34456213"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39280120"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Självstudier: Kombinera försäljningsdata från Excel och en OData-feed
 
@@ -200,7 +200,7 @@ För att gå tillbaka till Rapportvyn från Relationsvyn, välj ikonen **Rapport
 
 I Power BI Desktop-rapportvyn kan du skapa en mängd olika visualiseringar för att få insikter från dina data. Du kan skapa rapporter med flera sidor och varje sida kan ha flera visuella objekt. Du och andra kan interagera med dina visuella objekt för att analysera och förstå dina data. Läs mer om att visa och redigera rapporter i Power BI-tjänsten (din plats) i [Redigera en rapport](service-interact-with-a-report-in-editing-view.md).
 
-Du kan använda både dina datauppsättningar och relationen mellan dem för att visualisera och analysera dina försäljningsdata. 
+Du kan använda både dina datauppsättningar, och relationen mellan dem, för att visualisera och analysera dina försäljningsdata. 
 
 Skapa först ett stående stapeldiagram som använder fälten från båda frågorna för att visa kvantitet för varje produkt som beställts. 
 
@@ -220,7 +220,7 @@ Skapa sedan ett diagram som visar beställt belopp i dollar (**LineTotal**) öve
    
 2. När schemat är markerat, välj **OrderDate** från **Beställningar**, eller drar det till diagrammet. Diagrammet visar nu summan för varje beställningsdatum. 
    
-3. Ändra visualiseringen genom att dra i hörnen för att kunna se fler data. 
+3. Du kan ändra storlek på visualiseringen genom att dra i hörnen så att mer data visas. 
    
    ![Linjediagram för LineTotals efter OrderDate](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
    
