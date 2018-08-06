@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: a8833cb6b41ea76d50814975ada6239690a0c196
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 781e34eadfccb89954c0a8548589e1bf89830079
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877428"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359764"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Självstudier: Bädda in en Power BI-rapport, instrumentpanel eller panelen till ett program för dina kunder
 Med **Power BI Embedded i Azure** kan du bädda in rapporter, instrumentpaneler eller paneler i ett program med **app äger data**. **App äger data** handlar om ett program som använder Power BI som en inbäddad analysplattform. Det här är vanligtvis ett **ISV-utvecklar**-scenario. Som **ISV-utvecklare** kan du skapa Power BI-innehåll som visar rapporter, instrumentpaneler eller paneler i ett program som är helt integrerat och interaktivt, utan att kräva att användarna har en Power BI-licens eller ens vet att det är Power BI-innehåll. Den här självstudien visar hur du integrerar en rapport i ett program som använder **Power BI** .NET SDK tillsammans med **Power BI** JavaScript API när du använder **Power BI Embedded i Azure**  för kunder med **app äger data**.
@@ -320,16 +320,31 @@ Du kan använda ett fullständigt exempel i JavaScript API i [Playground-verktyg
 
 ## <a name="move-to-production"></a>Flytta till produktion
 
-Nu när du är färdig med att utveckla ditt program är det dags att skapa dedikerad kapacitet för apparbetsytan. Dedikerad kapacitet krävs för att flytta till produktion.
+Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet för apparbetsytan. Dedikerad kapacitet krävs för att flytta till produktion.
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Arbetsytor som inte tilldelas en dedikerad kapacitet ska finnas i en delad kapacitet. Du kan skapa en dedikerad kapacitet med hjälp av lösningen [Dedikerad kapacitet i Power BI Embedded](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) i Azure.
+Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Du kan köpa en dedikerad kapacitet inom [Microsoft Azure-portalen](https://portal.azure.com). Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+
+Använd tabellen nedan för att avgöra vilken Power BI Embedded-kapacitet som bäst passar dina behov.
+
+| Kapacitetsnod | Totalt antal kärnor<br/>*(Serverdel + klientdel)* | Serverdelskärnor | Klientdelskärnor | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning |
+| --- | --- | --- | --- | --- | --- |
+| A1 |1 v-kärnor |0,5 kärnor, 3GB RAM-minne |0,5 kärnor | 5 per sekund |1-300 |
+| A2 |2 v-kärnor |1 kärna, 5GB RAM-minne |1 kärna | 10 per sekund |301-600 |
+| A3 |4 v-kärnor |2 kärnor, 10 GB RAM-minne |2 kärnor | 15 per sekund |601–1200 |
+| A4 |8 v-kärnor |4 kärnor, 25 GB RAM-minne |4 kärnor |30 per sekund |1201–2400 |
+| A5 |16 v-kärnor |8 kärnor, 50 GB RAM-minne |8 kärnor |60 per sekund |2401–4800 |
+| A6 |32 v-kärnor |16 kärnor, 100 GB RAM-minne |16 kärnor |120 per sekund |4801–9600 |
+
+**_Med A-SKU: er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens._**
 
 Inbäddningstoken med PRO-licenser är avsedda för utvecklartestning, så antalet inbäddningstoken ett Power BI-huvudkonto kan generera är begränsat. Du måste köpa en dedikerad kapacitet för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera med en dedikerad kapacitet. Gå till [Tillgängliga funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) för att kontrollera användningsvärdet som anger aktuell inbäddad användning i procent. Användningsmängden baseras per huvudkonto.
 
+För mer information, se [White paper om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper).
+
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tilldela en apparbetsyta till en dedikerad kapacitet
 
-När du har skapat en dedikerad kapacitet tilldelar du apparbetsytan till den dedikerade kapaciteten. Gör så här för att slutföra detta:
+När du har skapat en dedikerad kapacitet kan du tilldela apparbetsytan till den dedikerade kapaciteten. Gör så här för att slutföra detta:
 
 1. I **Power BI-tjänsten** expanderar du arbetsytorna och väljer ellipsen för arbetsytan som du vill bädda in ditt innehåll med. Välj sedan **Redigera arbetsytor**.
 
@@ -339,6 +354,14 @@ När du har skapat en dedikerad kapacitet tilldelar du apparbetsytan till den de
 
     ![Tilldela dedikerad kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-Ytterligare frågor om Power BI Embedded finns på sidan [vanliga frågor och svar](embedded-faq.md).  Om du har problem med Power Bi Embedded i ditt program kan du besöka sidan [Felsökning](embedded-troubleshoot.md).
+3. När du har valt **Spara** bör du se en **romb** bredvid namnet på apparbetsytan.
+
+    ![apparbetsyta som hör till en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+
+## <a name="next-steps"></a>Nästa steg
+I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program för dina kunders räkning. Du kan även prova att bädda in Power BI-innehåll för din organisation.
+
+> [!div class="nextstepaction"]
+>[Bädda in för din organisation](embed-sample-for-your-organization.md)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
