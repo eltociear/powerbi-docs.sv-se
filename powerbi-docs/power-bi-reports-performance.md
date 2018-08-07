@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 58ae70553264b8055603da66a4cfd71b5c74a3e9
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "37598897"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582581"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda 
 Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga rapporter i Power BI.  
@@ -24,8 +24,8 @@ Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga
 
 Ju mer data som en visuell information måste visa, desto långsammare kommer denna visuella information att läsas in. Även om denna princip verkar uppenbar, kan det vara lätt att glömma. Exempel: anta att du har en stor datauppsättning. Förutom denna skapar du en rapport med en tabell av tabellen. Slutanvändare använder utsnitt på sidan för att komma åt de rader som de vill – vanligtvis är de bara intresserade av några dussin rader.
 
-Ett vanligt fel är att låta standardvyn för tabellen vara ofiltrerad – d.v.s. alla 100M + rader. Data för dessa rader måste läsas in i minnet och komprimeras upp vid varje uppdatering. Detta skapar en enorm minnesbelastning. Lösning: minska det maximala antalet objekt som tabellen visar med filtret ”Top N”. Det maximala antalet objekt kan vara mycket högre än vad användare behöver, till exempel 10 000. Därför ändrades slutanvändarens upplevelse inte men rapportens minnesanvändning sjönk ordentligt i omfattning och prestandan förbättras i enlighet med detta. 
- 
+Ett vanligt fel är att låta standardvyn för tabellen vara ofiltrerad – d.v.s. alla 100M + rader. Data för dessa rader måste läsas in i minnet och komprimeras upp vid varje uppdatering. Detta skapar en enorm minnesbelastning. Lösning: minska det maximala antalet objekt som tabellen visar med filtret ”Top N”. Det maximala antalet objekt kan vara mycket högre än vad användare behöver, till exempel 10 000. Därför ändrades slutanvändarens upplevelse inte men rapportens minnesanvändning sjönk ordentligt i omfattning och prestandan förbättras i enlighet med detta.
+
 Vi rekommenderar ett liknande tillvägagångssätt som ovanstående för all visuell information på dina rapporter. Fråga dig själv, behövs alla data i den här visuella informationen? Finns det sätt att filtrera ner mängden data som visas i den visuella informationen med minimal påverkan på slutanvändarens upplevelse? Observera att speciellt tabeller kan vara väldigt kostsamt. 
  
 ## <a name="limit-visuals-on-report-pages"></a>Begränsa visuell information på rapportsidorna 

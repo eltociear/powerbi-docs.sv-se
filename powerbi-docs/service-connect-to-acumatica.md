@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9366eff71e09b1f6c71c1f2519feb3d2392e3c58
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 452226f8d5b8e0ca05fc4d9e81355c7a4c10e923
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092654"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582648"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Anslut till Acumatica med Power BI
 Med innehållspaketet Power BI Acumatica kan du snabbt få insikter om dina affärsmöjlighetsdata. Power BI hämtar dina data, inklusive affärsmöjligheter, konton och kunder och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data.
@@ -37,7 +37,7 @@ Anslut till [Acumatica-innehållspaketet](https://app.powerbi.com/getdata/servic
    ![](media/service-connect-to-acumatica/acumatica.png)
 4. Ange din Acumatica OData-slutpunkt. En OData-slutpunkt tillåter ett externt system att begära data från Acumatica. Acumatica OData-slutpunkten är formaterat på följande sätt och bör använda HTTPS:
    
-     https://[sitedomain]/odata/[companyname]
+     `https://[sitedomain]/odata/[companyname]`
    
    Företagets namn är bara obligatoriskt om du har en distribution till flera företag. Mer information om hur du hittar den här parametern i ditt Acumatica-konto finns nedan.
    
