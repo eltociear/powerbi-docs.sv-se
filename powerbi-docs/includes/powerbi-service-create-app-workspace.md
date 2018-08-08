@@ -1,4 +1,4 @@
-1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa apparbetsyta**.
+1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa apparbetsyta**. 
    
      ![Skapa en apparbetsyta](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    

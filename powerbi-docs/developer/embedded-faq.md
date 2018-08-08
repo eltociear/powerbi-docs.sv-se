@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.openlocfilehash: f104d2e9e27cfb9af72813053c0d8cb14aaf2635
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: ab637be12487029d17d7b1bfa89022dbae9aaa49
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39359666"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39415402"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -216,6 +216,8 @@ Power BI Embedded faktureras enligt en förutsägbar timavgift baserat på antal
 Analytiker som behöver lägga till rapporter till en Power BI-arbetsyta, alla utvecklare som behöver använda REST API:er, eventuella klientadministratörer som behöver hantera Power BI-klienten och kapaciteter måste en licens för Power BI Pro.
 
 Eftersom Power BI Embedded tillåter användning av Power BI-portalen för att hantera och verifiera inbäddat innehåll, krävs en Power BI Pro-licens för att autentisera appen inuti PowerBI.com för att få tillgång till rapporterna i rätt databaser.
+
+Men för att [skapa/redigera inbäddade rapporter](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) i sitt egen program behöver slutanvändaren inte en Pro-licens eftersom denna inte behöver vara en Power BI-användare alls.
 
 ### <a name="can-i-get-started-for-free"></a>Kan jag komma igång gratis?
 

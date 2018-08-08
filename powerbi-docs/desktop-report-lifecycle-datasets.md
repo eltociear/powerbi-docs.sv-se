@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b1bfe0e35015cd32024b381a1859330cd8f1862a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c4fbb5ea019ca439ecf063c91a69348ef33bbc2
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721120"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624009"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det innebär att du kan skapa den perfekta datamodellen i Power BI Desktop, publicera den till Power BI-tjänsten och sedan kan du och andra användare skapa flera olika rapporter (i separata .pbix-filer) från samma gemensamma datamodell. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
@@ -37,7 +37,7 @@ Alla gillar hennes rapport och hennes datauppsättning, och det är där det sku
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Ansluta till en Power BI-tjänsts datauppsättning med hjälp av en live-anslutning
 När Anna skapar sin rapport (och skapar datauppsättningen som den baseras på) publicerar hon den till **Power BI-tjänsten** och den visas på arbetsytan för hennes grupp i Power BI-tjänsten. Den är nu tillgänglig så att alla i hennes arbetsyta kan se och använda den.
 
-Mer information om arbetsytor finns i avsnittet om [apparbetsytor](service-create-distribute-apps.md#app-workspaces).
+Mer information om arbetsytor finns i avsnittet om [apparbetsytor](service-create-workspaces.md).
 
 Andra medlemmar i hennes arbetsyta kan nu upprätta en live-anslutning till Annas delade datamodell (med **Live-anslutning till Power BI-tjänst**) och skapa sina egna unika rapporter från *hennes ursprungliga datauppsättning*.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/28/2018
+sktopms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 5f117bdeb4e37986884c6a1021db1f361bdcddd3
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145397"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582691"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 * Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).
@@ -47,8 +47,8 @@ Det räcker med en webbläsare och en jobbmejl. Du kan registrera dig med en .go
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag logga med min jobbmejl?
 Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. Lär dig mer om [registreringsprocessen för Power BI med självbetjäning](service-self-service-signup-for-power-bi.md).
 
-## <a name="is-government-academic-and-non-profit-pricing-available-for-power-bi"></a>Erbjuds prissättning för myndigheter, högskolor och ideella organisationer för Power BI?
-Ja, priser för ideella organisationer är tillgängliga när du köper direkt från Microsoft. Läs mer och registrera dig på webbplatsen [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/). Prissättning för myndigheter och högskolor erbjuds via MOSP/Direct, EA och öppna licensprogram. Priser för myndigheter är också tillgängliga som syndikering. 
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Erbjuds prissättning för myndigheter, akademiska institutioner och ideella organisationer för Power BI?
+Ja, priser för ideella organisationer är tillgängliga när du köper direkt från Microsoft. Läs mer och registrera dig på webbplatsen [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi). Prissättning för myndigheter och högskolor erbjuds via MOSP/Direct, EA och öppna licensprogram. Priser för myndigheter är också tillgängliga som syndikering. 
 
 ## <a name="is-power-bi-available-on-premises"></a>Är Power BI tillgängligt lokalt?
 Power BI-tjänsten [https://powerbi.com](https://powerbi.com) är inte tillgängligt som en privat, intern molntjänst. Dock finns det tre alternativ för att visa och arbeta med data lokalt. 

@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 14b5f3d4b571df8ae672ee9731ed97555c476abd
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 7c970cd28a50dc15a7b721107b17ceade24c3bb2
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456055"
+ms.locfileid: "39475762"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -45,6 +45,11 @@ Power BI Desktop stöder tre typer av nummer:
 **Fast decimaltal** – Har en fast plats för decimaltecknet. Decimaltecknet har alltid fyra siffror till höger och upp till 19 signifikanta siffror.  Det största värdet som kan visas är 922 337 203 685 477,5807 (positivt eller negativt).  Typen Fast decimaltal är användbar när avrundning kan leda till fel.  När du arbetar med många tal som har små bråkvärden kan de ibland ackumuleras och få fram ett tal som inte riktigt stämmer.  Eftersom värden efter fyra siffrorna till höger om decimaltecknet trunkeras, kan du med typen Fast decimaltal undvika dessa typer av fel.   Om du är bekant med SQL Server motsvarar datatypen SQL Servers decimal (19,4) eller valutadatatypen i Power Pivot. 
 
 **Heltal** – Visar ett värde som 64-bitars heltal (8 byte). Eftersom det är ett heltal finns det inga siffror till höger om decimaltecknet. Det kan användas för 19 siffror, positiva eller negativa heltal mellan -9 223 372 036 854 775 808 (-2^63) och 9 223 372 036 854 775 807 (2^63-1).  Det kan visa det största möjliga talet i flera olika numeriska datatyper.  Precis som med Fast decimaltyp kan typen Heltal vara användbar i fall där du behöver styra avrundningen. 
+
+> [!NOTE]
+>  Power BI Desktop-datamodellen har stöd för 64-bitars heltalsvärden, men det största talet som de visuella objekten säkert kan uttrycka är 9,007,199,254,740,991 (2^53-1), på grund av JavaScript-begränsningar. Om du arbetar med tal i datamodellen ovan kan du minska storleken genom beräkningar innan du lägger till dem i ett visuellt objekt 
+> 
+>
 
 ### <a name="datetime-types"></a>Datum/tid-typer
 Power BI Desktop stöder fem datum/tid-datatyper i frågevyn och tre i rapportvyn och modellen.   Både datum/tid/tidszon och Varaktighet konverteras vid inläsningen till modellen.

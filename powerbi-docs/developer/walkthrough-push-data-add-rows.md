@@ -2,19 +2,19 @@
 title: Lägga till rader i en tabell
 description: Genomgång för att skicka data – Lägga till rader i en Power BI-tabell
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: b6fdd950b77dedf9f5180f7cbc90d40c786051c7
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.date: 08/01/2018
+ms.openlocfilehash: 7608d9098177805849ec61f0427ee5bc662d58c9
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34812547"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475670"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Steg 5: Lägga till rader i en Power BI-tabell
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -307,9 +307,10 @@ Nedan visas den [fullständiga kodlistan](#code).
         }
     }
 
+Trots att vi anger att vi **_//Får det första ID:t_** i koden ovan är rätt sak att göra att söka i datauppsättningen efter namn.
+
 ## <a name="next-steps"></a>Nästa steg
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

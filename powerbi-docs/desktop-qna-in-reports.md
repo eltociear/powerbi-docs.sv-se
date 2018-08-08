@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8fd04b6c7fe83e7047d2eaecf4fb4b0e564f0e9f
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: a14ed61d8d7e72090a034319052600cb429e8c16
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329648"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475739"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Använd frågor och svar i Power BI Desktop för frågor med naturligt språk
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Ännu mer kraftfullt är det när dina data svarar, vilket är vad frågor och svar i **Power BI Desktop** möjliggör.
@@ -24,6 +24,11 @@ Om du vill aktivera frågor och svar för att tolka det stora antal frågor som 
 
 > [!NOTE]
 > Funktionen Frågor och svar är bara tillgänglig om du arbetar med en modell som innehåller **importerade** data. Live-anslutningar till SSAS- och DirectQuery-modeller stöds inte.
+>
+>
+
+> [!NOTE]
+> Frågor och svar kräver följande C-körtidsuppdatering om du använder en tidigare Windows-version än Windows 10. Du kan försöka installera viktiga uppdateringar från Windows Update eller manuellt installera den nödvändiga komponenten från Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
 
