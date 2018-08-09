@@ -112,8 +112,6 @@
                   href: service-install-use-apps.md
                 - name: Hitta och anslut till ett innehållspaket för organisationen
                   href: service-organizational-content-pack-find-and-open.md
-                - name: Dela instrumentpaneler och rapporter
-                  href: service-share-dashboards.md
                 - name: Komma igång med Power BI – vanliga frågor och svar
                   href: power-bi-visualization-introduction-to-q-and-a.md
             - name: Ansluta till tjänster
@@ -306,9 +304,15 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Dela ditt arbete
               items:
-                - name: Hur ska jag samarbeta och dela instrumentpaneler och rapporter?
+                - name: Hur kan jag samarbeta och dela?
                   href: service-how-to-collaborate-distribute-dashboards-reports.md
-                - name: Installera och distribuera appar med instrumentpaneler och rapporter
+                - name: Dela instrumentpaneler och rapporter
+                  href: service-share-dashboards.md
+                - name: Skapa apparbetsytor
+                  href: service-create-workspaces.md
+                - name: Skapa de nya arbetsytorna (förhandsversion)
+                  href: service-create-the-new-workspaces.md
+                - name: Publicera appar med instrumentpaneler och rapporter
                   href: service-create-distribute-apps.md
                 - name: Dela en filtrerad rapport
                   href: service-share-reports.md
