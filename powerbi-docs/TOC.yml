@@ -682,6 +682,8 @@
           items:
             - name: Visuella element för rapporter
               href: desktop-visual-elements-for-reports.md
+            - name: Exportera till PDF och skriva ut rapporter
+              href: desktop-export-to-pdf.md
             - name: Frågor och svar i Power BI Desktop
               href: desktop-qna-in-reports.md
             - name: Analytics-fönstret i Power BI Desktop
@@ -1242,6 +1244,8 @@
           href: service-gateway-onprem-indepth.md
         - name: Lokal datagateway (personligt läge)
           href: service-gateway-personal-mode.md
+        - name: Anpassade anslutningar
+          href: service-gateway-custom-connectors.md
         - name: Felsöka den lokala datagatewayen
           href: service-gateway-onprem-tshoot.md
 - name: Administration
