@@ -3,33 +3,30 @@ title: Skapa och publicera ett organisationsinnehållspaket – Power BI
 description: I de här självstudierna skapar du ett organisationsinnehållspaket, begränsar åtkomst till en specifik grupp och publicerar det i din organisations innehållspaketsbibliotek på Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 46cd5e2730d1b0e90fe37a93bbd4340ffb708348
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598625"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624262"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Skapa och publicera ett organisationsinnehållspaket i Power BI (självstudier)
-> [!NOTE]
-> Har du hört talas om de nya *apparna* ännu? Appar är det nya sättet att distribuera innehåll till stora målgrupper i Power BI. Eftersom organisationsinnehållspaket kommer att tas ur bruk inom kort rekommenderar vi att du använder appar i stället. Läs [mer om appar](service-install-use-apps.md).
-> 
-> 
 
 I de här självstudierna skapar du ett organisationsinnehållspaket, ger åtkomst till en specifik grupp och publicerar det i din organisations innehållspaketsbibliotek på Power BI.
 
 Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta om dem i en grupp. Läs [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation.
 
+För att kunna skapa ett organisationsinnehållspaket krävs ett [Power BI Pro-konto](https://powerbi.microsoft.com/pricing) för dig och dina kollegor. 
+
 > [!NOTE]
-> För att kunna skapa ett organisationsinnehållspaket krävs ett [Power BI Pro-konto](https://powerbi.microsoft.com/pricing) för dig och dina kollegor.
-> 
+> Du kan inte skapa eller installera innehållspaket för organisationen i förhandsversionen för den nya arbetsytan. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
 > 
 
 Föreställ dig att du är Release Manager på Contoso och förbereder dig inför en ny produktlansering.  Du har skapat en instrumentpanel med rapporter som du skulle vilja dela med de övriga medarbetarna som hanterar lanseringen. Du vill ha en metod för att paketera instrumentpanelen och rapporterna som en lösning som dina kollegor kan använda. 

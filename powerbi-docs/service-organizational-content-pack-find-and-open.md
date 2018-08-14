@@ -3,29 +3,29 @@ title: Hitta och anslut till ett innehållspaket för organisationen – Power B
 description: Hitta och öppna ett innehållspaket för organisationen i Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5ea86ab577298b6099487228cdf4c8a87e4fe421
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 67072d690f09e922601c6b14ad1c150e2298040b
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280235"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624285"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Hitta och anslut till ett innehållspaket för organisationen
-> [!NOTE]
-> Har du hört om de nya *apparna* ännu? Appar är det nya sättet att distribuera innehåll till stora målgrupper i Power BI. Eftersom organisationsinnehållspaket kommer att tas ur bruk inom kort rekommenderar vi att du använder appar i stället. Läs [mer om appar](service-install-use-apps.md).
-> 
-> 
 
 När någon publicerar ett innehållspaket för organisationen till din organisation, till distribution eller säkerhetsgrupper, eller till [Office 365-grupper](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) som du tillhör, visas den i AppSource.  Bläddra eller sök AppSource för att hitta och öppna innehållspaket för organisationen.
 
-Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta på dem i en grupp. Läs [Hur ska jag samarbeta med och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation.
+Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta på dem i en grupp. Läs [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation.
+
+> [!NOTE]
+> Du kan inte skapa eller installera innehållspaket för organisationen i förhandsversionen för den nya arbetsytan. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
+> 
 
 ## <a name="find-an-organizational-content-pack"></a>Hitta ett innehållspaket för organisationen
 [Power BI Pro](https://powerbi.microsoft.com/pricing)-användare kan gå till AppSource som visar innehållspaket som delats till hela deras organisation, till distribution eller säkerhetsgrupper och till Office 365-grupper som de tillhör.  

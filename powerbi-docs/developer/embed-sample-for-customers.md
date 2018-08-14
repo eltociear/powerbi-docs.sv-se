@@ -9,15 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 781e34eadfccb89954c0a8548589e1bf89830079
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: 1185b6195f0d802cec71143c1f27ce5cead584c6
+ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39359764"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39616061"
 ---
-# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Självstudier: Bädda in en Power BI-rapport, instrumentpanel eller panelen till ett program för dina kunder
-Med **Power BI Embedded i Azure** kan du bädda in rapporter, instrumentpaneler eller paneler i ett program med **app äger data**. **App äger data** handlar om ett program som använder Power BI som en inbäddad analysplattform. Det här är vanligtvis ett **ISV-utvecklar**-scenario. Som **ISV-utvecklare** kan du skapa Power BI-innehåll som visar rapporter, instrumentpaneler eller paneler i ett program som är helt integrerat och interaktivt, utan att kräva att användarna har en Power BI-licens eller ens vet att det är Power BI-innehåll. Den här självstudien visar hur du integrerar en rapport i ett program som använder **Power BI** .NET SDK tillsammans med **Power BI** JavaScript API när du använder **Power BI Embedded i Azure**  för kunder med **app äger data**.
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Självstudie: Bädda in en Power BI-rapport, instrumentpanel eller panel till ett program för dina kunder
+Med **Power BI Embedded i Azure** kan du bädda in rapporter, instrumentpaneler eller paneler i ett program med **app äger data**. **App äger data** handlar om ett program som använder Power BI som en inbäddad analysplattform. Användning av **App äger data** är vanligtvis ett scenario för **ISV-utvecklare**. Som **ISV-utvecklare** kan du skapa **Power BI**-innehåll som visar rapporter, instrumentpaneler eller paneler i ett program som är helt integrerat och interaktivt, utan att kräva att användarna har en Power BI-licens. Den här självstudien visar hur du integrerar en rapport i ett program som använder **Power BI** .NET SDK tillsammans med **Power BI** JavaScript API när du använder **Power BI Embedded i Azure**  för kunder med **app äger data**.
 
 I de här självstudierna får du lära dig att
 >[!div class="checklist"]
@@ -25,14 +25,14 @@ I de här självstudierna får du lära dig att
 >* Bädda in en Power BI-rapport i ett program.
 
 ## <a name="prerequisites"></a>Förutsättningar
-Om du vill komma igång behöver du ett **Power BI Pro**-konto (ditt **huvudkonto**) och en **Microsoft Azure**-prenumeration.
+För att komma igång behöver du ett **Power BI Pro**-konto (det här kontot är ditt **huvudkonto**) och en **Microsoft Azure**-prenumeration.
 
 * Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/en-us/pricing/) innan du börjar.
 * Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
 * Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
 * Du behöver [Visual Studio](https://www.visualstudio.com/) installerad (version 2013 eller senare).
 
-## <a name="setup-your-embedded-analytics-development-environment"></a>Konfigurera den inbäddade utvecklingsmiljön för analysverktyg
+## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurera den inbäddade utvecklingsmiljön för analysverktyg
 
 Innan du börjar bädda in rapporter, instrumentpaneler eller paneler i din app måste du se till att din miljö har ställts in så att inbäddning tillåts. Som en del av installationen behöver du göra följande.
 
@@ -98,7 +98,7 @@ Du måste aktivera ytterligare behörigheter för ditt program utöver vad som f
    
     ![Bevilja behörigheter med dialogrutan](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
-## <a name="setup-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
+## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
 
 ### <a name="create-an-app-workspace"></a>Skapa en app-arbetsyta
 
@@ -269,7 +269,9 @@ var embedConfig = new EmbedConfig()
 Detta förutsätter att en klass skapas för **EmbedConfig** och **TileEmbedConfig**. Ett exempel på dessa finns i filerna **Models\EmbedConfig.cs** och **Models\TileEmbedConfig.cs**.
 
 ### <a name="load-an-item-using-javascript"></a>Läsa in ett objekt med JavaScript
-Du kan använda JavaScript för att läsa in en rapport till olika element på webbsidan. 
+Du kan använda JavaScript för att läsa in en rapport till olika element på webbsidan.
+
+Du kan använda ett fullständigt exempel i JavaScript API i [Playground-verktyget](https://microsoft.github.io/PowerBI-JavaScript/demo). Detta är ett snabbt sätt att leka med olika typer av Power BI Embedded-exempel. Du kan även få mer information om API:et för JavaScript genom att besöka wiki-sidan för [PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
 
 I det här exemplet används en **EmbedConfig**-modell och en **TileEmbedConfig**-modell tillsammans med vyer för en rapport.
 
@@ -316,25 +318,23 @@ I det här exemplet används en **EmbedConfig**-modell och en **TileEmbedConfig*
 </script>
 ```
 
-Du kan använda ett fullständigt exempel i JavaScript API i [Playground-verktyget](https://microsoft.github.io/PowerBI-JavaScript/demo). Detta är ett snabbt sätt att leka med olika typer av Power BI Embedded-exempel. Du kan också få mer information om API:et för JavaScript genom att besöka wiki-sidan för [PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
-
 ## <a name="move-to-production"></a>Flytta till produktion
 
 Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet för apparbetsytan. Dedikerad kapacitet krävs för att flytta till produktion.
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Du kan köpa en dedikerad kapacitet inom [Microsoft Azure-portalen](https://portal.azure.com). Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Du kan köpa en dedikerad kapacitet inom [Microsoft Azure-portalen](https://portal.azure.com). Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
 
 Använd tabellen nedan för att avgöra vilken Power BI Embedded-kapacitet som bäst passar dina behov.
 
 | Kapacitetsnod | Totalt antal kärnor<br/>*(Serverdel + klientdel)* | Serverdelskärnor | Klientdelskärnor | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 v-kärnor |0,5 kärnor, 3GB RAM-minne |0,5 kärnor | 5 per sekund |1-300 |
-| A2 |2 v-kärnor |1 kärna, 5GB RAM-minne |1 kärna | 10 per sekund |301-600 |
-| A3 |4 v-kärnor |2 kärnor, 10 GB RAM-minne |2 kärnor | 15 per sekund |601–1200 |
-| A4 |8 v-kärnor |4 kärnor, 25 GB RAM-minne |4 kärnor |30 per sekund |1201–2400 |
-| A5 |16 v-kärnor |8 kärnor, 50 GB RAM-minne |8 kärnor |60 per sekund |2401–4800 |
-| A6 |32 v-kärnor |16 kärnor, 100 GB RAM-minne |16 kärnor |120 per sekund |4801–9600 |
+| A1 |1 v-kärna |0,5 kärnor, 3 GB RAM |0,5 kärnor | 5 per sekund |1-300 |
+| A2 |2 v-kärnor |1 kärna, 5 GB RAM |1 kärna | 10 per sekund |301-600 |
+| A3 |4 v-kärnor |2 kärnor, 10 GB RAM |2 kärnor | 15 per sekund |601–1200 |
+| A4 |8 v-kärnor |4 kärnor, 25 GB RAM |4 kärnor |30 per sekund |1201–2400 |
+| A5 |16 v-kärnor |8 kärnor, 50 GB RAM |8 kärnor |60 per sekund |2401–4800 |
+| A6 |32 v-kärnor |16 kärnor, 100 GB RAM |16 kärnor |120 per sekund |4801–9600 |
 
 **_Med A-SKU: er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens._**
 

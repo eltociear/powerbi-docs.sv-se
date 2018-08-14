@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e176f82e106c531410b8e9233b983c6e321bddf4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d683ce3d06e2ac6be6c51f257e4f9483e718e2d8
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299066"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624402"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -91,6 +91,8 @@ Endast en instrumentpanels eller rapports ägare kan aktivera eller inaktivera o
 
 4. I dialogrutan **Ta bort åtkomst** bestämmer du om du vill ta bort åtkomsten till relaterat innehåll, till exempel rapporter och datauppsättningar. Om du tar bort objekt med en varningsikon ![Power BI-varningsikon](media/service-share-dashboards/power-bi-warning-icon.png), är det bäst att ta bort relaterat innehåll eftersom det inte kommer att visas korrekt.
 
+    ![Dialogruta med Power BI-delningsvarning](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
+
 ## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Dela en instrumentpanel eller rapport med personer utanför din organisation
 När du delar med personer utanför organisationen, får de ett e-postmeddelande med en länk till den delade instrumentpanelen eller rapporten, och de måste logga in till Power BI för att kunna se den. Om de inte har någon Power BI Pro-licens kan de registrera sig för en licens efter att ha klickat på länken.
 
@@ -145,6 +147,8 @@ I så fall behöver ge dem behörighet till den underliggande datauppsättningen
 ### <a name="i-cant-share-a-dashboard-or-report"></a>Jag kan inte dela en instrumentpanel eller en rapport
 
 Om du vill dela en instrumentpanel eller rapport, behöver du behörighet att dela det underliggande innehållet – relaterade rapporter och datauppsättningar. Om du ser ett meddelande om att du inte kan dela be rapportskaparen att ge dig behörighet att dela för dessa rapporter och datauppsättningar.
+
+![Meddelande om att det inte går att dela](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
 
 
 ## <a name="next-steps"></a>Nästa steg

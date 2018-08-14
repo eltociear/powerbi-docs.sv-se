@@ -3,21 +3,26 @@ title: Koppla från en organisations innehållspaket – Power BI
 description: Läs mer om att ta bort din anslutning till en organisations innehållspaket genom att ta bort dess datauppsättning i Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c0e7bddd23987377bfd8cf05bdfd1ab997e621ed
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2389ed542a43b28296faf2eed2b69b4e83d227f5
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247652"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624170"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Ta bort din anslutning till ett Power BI-organisationsinnehållspaket
+
+> [!NOTE]
+> Du kan inte skapa innehållspaket för organisationen eller installera dem i förhandsversionen för den nya arbetsytan. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
+> 
+
 En medarbetare har skapat ett innehållspaket. Du identifierade det i AppSource och har lagt till det på din Power BI-arbetsyta. Nu behöver du det inte längre.  Hur tar du bort det?
 
 Du tar bort ett innehållspaket genom att ta bort dess datauppsättning.  
