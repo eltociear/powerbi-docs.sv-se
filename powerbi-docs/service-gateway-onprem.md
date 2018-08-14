@@ -2,20 +2,20 @@
 title: Lokal datagateway
 description: Det här är en översikt över den lokala datagatewayen för Power BI. Du kan använda den här gatewayen för att arbeta med DirectQuery-datakällor. Du kan också använda den för att uppdatera molndatauppsättningar med lokala data.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
-ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: c91e257d79e9d16fa5a7a58b696d58aefaaaaf92
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.date: 06/05/2018
+ms.openlocfilehash: c6c83c51779621b2b722ce0c21cbb00eecde1fb9
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38924928"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39658183"
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -25,13 +25,12 @@ Du kan använda en enda gateway med flera olika tjänster samtidigt. Om du anvä
 
 > [!NOTE]
 > Den lokala datagatewayen implementerar datakomprimering och transportkryptering i alla lägen.
-> 
-> 
 
 <!-- Shared Requirements Include -->
 [!INCLUDE [gateway-onprem-requirements-include](./includes/gateway-onprem-requirements-include.md)]
 
 ### <a name="limitations-of-analysis-services-live-connections"></a>Begränsningar för Analysis Services realtidsanslutningar
+
 Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionella instanser.
 
 | **Serverversion** | **Obligatorisk SKU** |
@@ -47,6 +46,7 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Hämta och installera den lokala datagatewayen
+
 Om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar. Ladda ned den [lokala datagatewayen](http://go.microsoft.com/fwlink/?LinkID=820925). 
 
 Observera att du uppdaterar den lokala datagatewayen genom att installera om gatewayen, vilket beskrivs i det här avsnittet. När du uppdaterar gatewayen (genom att installera om den) bevaras dina befintliga gatewayinställningar.
@@ -57,9 +57,9 @@ Observera att du uppdaterar den lokala datagatewayen genom att installera om gat
 [!INCLUDE [gateway-onprem-install-include](./includes/gateway-onprem-install-include.md)]
 
 ## <a name="install-the-gateway-in-personal-mode"></a>Installera gatewayen i personligt läge
+
 > [!NOTE]
 > Versionen Personlig för gatewayen fungerar bara med Power BI.
-
 
 När den personliga gatewayen har installerats behöver du starta **konfigurationsguiden för Power BI Gateway – Personal**.
 
@@ -78,6 +78,7 @@ När installationen är klar behöver du gå till dina datauppsättninger i Powe
 <a name="credentials"></a>
 
 ## <a name="storing-encrypted-credentials-in-the-cloud"></a>Lagra krypterade autentiseringsuppgifter i molnet
+
 När du lägger till en datakälla till gatewayen, måste du ange autentiseringsuppgifter för datakällan. Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Autentiseringsuppgifterna krypteras på ett säkert sätt, med hjälp av asymmetrisk kryptering så att de inte kan dekrypteras i molnet, innan de lagras i molnet. Autentiseringsuppgifterna skickas till den dator som kör gatewayen, lokalt där de dekrypteras när datakällorna används.
 
 <!-- Account and Port information -->
@@ -87,26 +88,30 @@ När du lägger till en datakälla till gatewayen, måste du ange autentiserings
 [!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+
 * [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
 ) stöds inte för närvarande
 * [Åtkomst online](https://products.office.com/en-us/access) stöds inte för närvarande
 
-## <a name="tenant-level-administration"></a>Administration på klientorganisationsnivå 
+## <a name="tenant-level-administration"></a>Administration på klientorganisationsnivå
 
 Det finns för tillfället ingen gemensam plats där klientorganisationsadministratörerna kan hantera alla gatewayer som andra har installerat och konfigurerat.  Om du är klientorganisationsadministratör rekommenderar vi att du frågar användarna i organisationen om de kan lägga till dig som administratör för varje gateway de installerar. Då kan du hantera alla gatewayer i organisationen på sidan med gatewayinställningar eller med hjälp av [PowerShell-kommandon](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
 
-## <a name="enabling-outbound-azure-connections"></a>Aktivera utgående Azure-anslutningar 
+## <a name="enabling-outbound-azure-connections"></a>Aktivera utgående Azure-anslutningar
+
 Den lokala datagatewayen är beroende av Azure Service Bus för molnanslutning och upprättar motsvarande utgående anslutningar till den kopplade Azure-regionen. Som standard är detta platsen för din Power BI-klientorganisation. Se [Var finns min Power BI-klient?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
 Om en brandvägg blockerar utgående anslutningar, måste du konfigurera brandväggen så att den tillåter utgående anslutningar från den lokala datagatewayen till den kopplade Azure-regionen. Se [IP-intervall för Microsoft Azure-datacenter](https://www.microsoft.com/en-us/download/details.aspx?id=41653) för mer information om IP-adressintervall för varje Azure-datacenter.
 > [!NOTE]
 > IP-adressintervall kan förändras över tid, så se till att du laddar ned den senaste informationen med jämna mellanrum. 
 
 ## <a name="troubleshooting"></a>Felsökning
+
 Om du får problem när du installerar och konfigurerar en gateway, hittar du mer information under [Felsökning av lokal datagateway](service-gateway-onprem-tshoot.md). Om du tror att du har ett problem med brandväggen kan du läsa mer i avsnittet om [brandvägg eller proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) i felsökningsartikeln.
 
 Gå till [Konfigurera proxyinställningar för Power BI-gatewayerna](service-gateway-proxy.md) om du tror att du har fått proxyproblem med gatewayen.
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Hantera din datakälla – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Hantera din datakälla – SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Hantera din datakälla – SQL Server](service-gateway-enterprise-manage-sql.md)  
@@ -115,5 +120,5 @@ Gå till [Konfigurera proxyinställningar för Power BI-gatewayerna](service-gat
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 [Lokala datagatewayar (personligt läge) – den nya versionen av den personliga gatewayen](service-gateway-personal-mode.md)
 [Konfigurera proxyinställningar för den lokala datagatewayen](service-gateway-proxy.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
