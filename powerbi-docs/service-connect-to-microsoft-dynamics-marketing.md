@@ -54,7 +54,7 @@ Anslut till [Innehållspaketet Dynamics Marketing](https://app.powerbi.com/getda
 
 ## <a name="system-requirements"></a>Systemkrav
 * Du måste ange en giltig OData-URL för en Dynamics Marketing-instans (innehållspaketet fungerar inte med en lokal CRM-version).  
-* En administratör måste aktivera OData-slutpunkten i platsinställningarna. Adressen för OData-slutpunkten kan hittas genom att gå till **Start \> inställningar \> platsinställningar** i avsnittet **organisationens datatjänst**.  OData-URL:en ska vara i formatet https:// [instans\_namn].marketing.dynamics.com/analytics  
+* En administratör måste aktivera OData-slutpunkten i platsinställningarna. Adressen för OData-slutpunkten kan hittas genom att gå till **Start \> inställningar \> platsinställningar** i avsnittet **organisationens datatjänst**.  OData-URL:en ska vara i formatet https://[instans\_namn].marketing.dynamics.com/analytics  
 * Användarkontot/-identiteten som du använder för att komma åt Microsoft Dynamics Marketing måste vara samma som den du registrerat dig för att använda med Power BI. När du loggar in på Microsoft Dynamics Marketing, kommer du att loggas in automatiskt med samma identitet som du använder för Power BI. Om du vill logga in på Microsoft Dynamics Marketing med ett annat konto, registrera dig som en Power BI-användare med det andra kontot. Vi hoppas att lösa det här problemet i en kommande version.   
 
 ## <a name="troubleshooting"></a>Felsökning
