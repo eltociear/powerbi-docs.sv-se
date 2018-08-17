@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b8c4066f3128899d2c3c8121d7c5d41768f89dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327831"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657976"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -113,6 +113,33 @@ När du växlar skjutreglaget **Åtgärd** till **På**, kan du välja om objekt
 Det finns alla typer av intressanta saker du kan göra med ett objektlänkat bokmärke. Du kan skapa en visuell innehållsförteckning på rapportsidan eller kan ange olika vyer (till exempel visuella typer) av samma information genom att klicka på ett objekt.
 
 När du är i redigeringsläge kan du använda ctrl + klicka om du vill följa länken när du inte är i redigeringsläget. Bara klicka på objekt om du vill följa länken. 
+
+## <a name="bookmark-groups"></a>Bokmärkesgrupper
+
+Från och med **Power BI Desktop**-versionen för augusti 2018 kan du skapa och använda bokmärkesgrupper. En bokmärkesgrupp är en samling bokmärken som du anger, som kan visas och ordnas i en grupp. 
+
+Om du vill skapa en bokmärkesgrupp håller du ned CTRL-tangenten och markerar de bokmärken som du vill ta med i gruppen. Sedan klickar du bara på ellipserna bredvid något av de markerade bokmärkena och väljer **Gruppera** på menyn som visas.
+
+![Skapa en bokmärkesgrupp](media/desktop-bookmarks/bookmarks_15.png)
+
+**Power BI Desktop** ger automatiskt gruppen namnet *Grupp 1*. Om du vill byta namn på gruppen dubbelklickar du bara på namnet.
+
+![Byta namn på en bokmärkesgrupp](media/desktop-bookmarks/bookmarks_16.png)
+
+När du klickar på namnet på en bokmärkesgrupp expanderas eller komprimeras bara gruppen med bokmärken, och du ser alltså inte själva bokmärkena i gruppen. 
+
+När du använder funktionen **Visa** för bokmärken gäller följande:
+
+* Om det valda bokmärket finns i en grupp när du väljer **Visa** från bokmärken, visas endast bokmärkena *i den gruppen* i visningssessionen. 
+
+* Om det valda bokmärket inte finns en grupp, eller om det finns på den högsta nivån (till exempel namnet på en bokmärkesgrupp), visas alla bokmärken för hela rapporten, inklusive alla bokmärken i alla grupper. 
+
+Om du vill dela upp en bokmärkesgrupp markerar du bara valfritt bokmärke i gruppen, klickar på ellipserna och väljer sedan **Dela upp grupp** på menyn som visas. 
+
+![Dela upp en bokmärkesgrupp](media/desktop-bookmarks/bookmarks_17.png)
+
+Om du väljer **Dela upp grupp** för ett bokmärke från en grupp tas alla bokmärken bort från gruppen (gruppen tas bort, men inte själva bokmärkena). Om du vill ta bort ett enskilt bokmärke från en grupp måste du därför ta bort hela gruppen först genom att välja **Dela upp grupp** för valfritt bokmärke i gruppen. Därefter markerar du de bokmärken som ska ingå i den nya gruppen (genom att hålla ned CTRL och klicka på bokmärkena) och väljer **Gruppera** igen. 
+
 
 ## <a name="using-spotlight"></a>Använda Spotlight
 En annan funktion som lanseras med bokmärken är **Spotlight**. Med **Spotlight** kan du dra uppmärksamhet till ett specifikt diagram, till exempel när du presenterar dina bokmärken i **Visningsläget**.

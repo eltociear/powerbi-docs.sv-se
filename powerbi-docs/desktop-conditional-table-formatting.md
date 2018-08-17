@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 70aa61d6a02bea1b7058a68b20718008ace1b8c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34480898"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657815"
 ---
 # <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller 
 Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger baserat på cellvärden, eller baserat på andra värden eller fält. Du kan även använda toningar. Du kan också visa cellvärden med datastaplar. 
@@ -24,7 +24,7 @@ Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger ba
 
 ![Menyn Villkorsstyrd formatering](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-I följande avsnitt beskrivs vart och ett av dessa tre alternativ för villkorsstyrd formatering. Ett eller flera alternativ kan kombineras i samma tabellkolumn.
+I följande avsnitt beskrivs vart och ett av dessa alternativ för villkorsstyrd formatering. Ett eller flera alternativ kan kombineras i samma tabellkolumn.
 
 > [!NOTE]
 > När villkorsstyrd formatering tillämpas i en tabell åsidosätts eventuella anpassade tabellformat som tillämpats på de villkorligt formaterade cellerna.
@@ -95,3 +95,43 @@ Alternativet **Visa enbart stapel** är avmarkerat som standard, vilket innebär
 Om alternativet **Visa enbart stapel** är markerat, så visar tabellcellen endast stapeln.
 
 ![Exempeltabell med endast datastaplar](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+
+## <a name="color-formatting-by-field-value"></a>Färgformatering efter fältvärde
+
+Du kan använda ett mått eller en kolumn som definierar en viss färg, antingen med hjälp av ett textvärde eller en hexadecimal kod, och tillämpa den färgen på bakgrunden eller teckenfärgen i en tabell- eller matrisvisualisering. Du kan också skapa anpassad logik för ett visst fält och använda den för att tillämpa en specifik färg på texten eller bakgrunden.
+
+I följande tabell associeras exempelvis en färg med varje produktmodell. 
+
+![Fältet ProductName med färgnamn](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
+
+Om du vill formatera cellen baserat på dess fältvärde öppnar du dialogrutan **Villkorsstyrd formatering** genom att högerklicka på kolumnen *Färg* för det visuella objektet, och väljer sedan i detta fall **Bakgrundsfärg** på menyn. 
+
+![Välj Bakgrundsfärg på menyn](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+
+I dialogrutan som visas väljer du **Fältvärde** i området med listrutan **Formatera efter**, som du ser i följande bild.
+
+![Formatera efter fältvärde](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+
+Du kan upprepa processen för teckenfärgen, så att en färg i **färgkolumnen** tillämpas på resultatet i det visuella objektet, som du ser i följande skärmbild.
+
+![Formatera efter fältvärde](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+
+Du kan också skapa en DAX-beräkning baserat på affärslogik som visar olika hexadecimala koder baserat på önskade villkor. Detta är vanligtvis enklare än att skapa flera regler i dialogrutan för villkorsstyrd formatering. Titta på fältet *ColorKPI* i följande exempelbild.
+
+![DAX-beräkningar](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+
+Du kan sedan ange fältvärdet för **Bakgrundsfärg** på följande sätt.
+
+![Ange fältfärgen baserat på en KPI](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
+
+På så vis kan du sedan få resultat som liknar de i följande matris.
+
+![Matrisvisualisering med färg baserat på KPI-värde](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+
+Du kan skapa många fler varianter genom att bara använda din fantasi och DAX.
+
+## <a name="next-steps"></a>Nästa steg
+Mer information finns i följande artikel:  
+
+* [Tips för färgformatering i Power BI](service-tips-and-tricks-for-color-formatting.md)  
+

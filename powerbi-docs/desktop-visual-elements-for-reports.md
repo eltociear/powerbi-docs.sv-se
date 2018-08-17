@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: be4651d1658c80c84105a65bc48e4072ed203794
-ms.sourcegitcommit: 7bdb76bd80973c5e5174747b7e304705754fe647
+ms.openlocfilehash: a3e39e6326eb5b32cd72e2aefec74c07804b4639
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217638"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657907"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Använd visuella element för att förbättra Power BI-rapporter
 
@@ -59,6 +59,9 @@ När du ställer in din sidas bakgrund till mer än 50 % transparens så visas e
 ![Transparens större än 50 % resulterar i en prickad kantlinje](media/desktop-visual-elements-for-reports/visual-elements-for-reports_04.png)
 
 Det är viktigt att notera att den prickade gränsen *endast* visas när du redigerar rapporten och *inte* visas för personer som ser din publicerade rapport, till exempel när den visas i **Power BI-tjänsten**.
+
+> [!NOTE]
+> Om du använder mörka bakgrunder för skrivbordsunderlägg och använder en vit eller en väldigt ljus textfärg måste du ha i åtanke att funktionen **Exportera till PDF** inte tar med skrivbordsunderlägg vid exporten. Det betyder att en export med vit text kommer att vara praktiskt taget osynlig i den exporterade PDF-filen. Mer information om **Exportera till PDF** finns i avsnittet [Exportera till PDF](desktop-export-to-pdf.md).
 
 
 ## <a name="using-improved-visual-headers-in-power-bi-reports"></a>Använd förbättrade visuella rubriker i Power BI-rapporter

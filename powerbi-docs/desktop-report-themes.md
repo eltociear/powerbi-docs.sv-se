@@ -1,5 +1,5 @@
 ---
-title: Använda rapportteman i Power BI Desktop (förhandsversion)
+title: Använda rapportteman i Power BI Desktop
 description: Lär dig hur du använder en anpassad färgpalett och tillämpar den på hela rapporten i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721189"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657953"
 ---
-# <a name="use-report-themes-in-power-bi-desktop-preview"></a>Använda rapportteman i Power BI Desktop (förhandsversion)
+# <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat (några undantag finns och de beskrivs längre fram i den här artikeln).
 
 ![](media/desktop-report-themes/report-themes_1.png)
@@ -26,10 +26,14 @@ Att tillämpa ett **rapporttema** kräver en JSON-fil med en grundläggande stru
 
 Från och med september 2017-versionen av **Power BI Desktop** kan du ange ytterligare rapporttemaelement med hjälp av en JSON-fil, samt anpassa (och standardisera) nästan alla element med hjälp av JSON-filen som du kan justera manuellt i fönstret **Formatering**. Målet med september 2017-versionen (och senare) är att ge full kontroll över hur rapporterna ser ut på en detaljerad nivå.
 
-### <a name="enable-report-themes-in-preview"></a>Aktivera rapportteman i förhandsversionen
-Du kan prova den nya funktionen **Rapportteman** från och med **mars 2017**-versionen av **Power BI Desktop**. Aktivera förhandsversionsfunktionen i **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera sedan kryssrutan bredvid **Anpassade rapportteman**. Du måste starta om **Power BI Desktop** när du har gjort valet.
+### <a name="enable-report-themes"></a>Aktivera rapportteman
+Från och med **Power BI Desktop**-versionen för augusti 2018 är rapportteman allmänt tillgängliga och behöver inte aktiveras. 
+
+Om du använder en tidigare version av **Power BI Desktop** kan du aktivera den som en förhandsversion genom att välja **Fil > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och sedan markera kryssrutan bredvid **Anpassade rapportteman**. Du måste starta om **Power BI Desktop** när du har gjort valet.
 
 ![](media/desktop-report-themes/report-themes_2.png)
+
+Vi rekommenderar alltid att du uppgraderar till den senaste versionen av **Power BI Desktop**, som du kan hämta från en länk i avsnittet [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="how-report-themes-work"></a>Så här fungerar rapportteman
 Om du vill använda ett rapporttema i en Power BI Desktop-rapport väljer du knappen **Växla tema** på menyfliksområdet **Start** och sedan **Importera tema** från listrutan.
@@ -54,7 +58,7 @@ Den grundläggande JSON-filen som valdes i föregående avsnitt (filen *St Patri
 JSON-filen måste innehålla följande rader:
 
 * **name** – Detta är temanamnet och det enda obligatoriska fältet
-* **dataColors** – En lista med hexkodfärger som används för data i Power BI Desktops visuella objekt. Listan kan innehålla så många eller så få färger som du vill
+* **dataColors** – En lista med hexadecimala färgkoder som du kan använda för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill
 * **background**, **foreground** och **tableAccent** – Dessa värden är färger som ska tillämpas på olika typer av visuella objekt. **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
 
 Tillämpa ett format på ett visuellt **tabell**- eller **matris**objekt genom att markera det visuella objektet och i fönstret **Visualiseringar** välja avsnittet **Format**, expandera **Matrisstil** och välja ett format i listrutan **Stil**.
@@ -71,7 +75,7 @@ För att du enkelt ska kunna klippa ut och klistra när du skapar din egen JSON-
         "tableAccent": "#568410"
     }
 
-Därifrån kan du ange egna färghexkod för dina valda färger.
+Därifrån kan du ange egna hexadecimala färgkoder för dina valda färger.
 
 Från och med september 2017-versionen av **Power BI Desktop** kan JSON-filen göra mycket mer. I JSON-filen definierar du bara den formatering som du vill påverka. Allt som *inte* anges i din JSON-fil återgår helt enkelt till standardinställningarna för Power BI.
 
@@ -100,7 +104,7 @@ Och om du har ställt in en datapunktsfärg manuellt med hjälp av avsnittet Tem
 Dessutom kommer många **anpassade visuella objekt** inte att använda rapportteman.
 
 ## <a name="report-theme-files-you-can-use-right-now"></a>Rapporttemafiler som du kan använda direkt
-Vill du komma igång med **rapportteman**? Toppen! Här är ett par färdiga JSON-filer med rapportteman som du kan hämta och importera till din **Power BI Desktop**-rapport, tillsammans med en bild av rapporttemat som tillämpats på rapporten som används i denna artikel.
+Vill du komma igång med **rapportteman**? Toppen! Här är några färdiga JSON-filer med rapportteman som du kan hämta och importera till din **Power BI Desktop**-rapport, tillsammans med en bild av rapporttemat som tillämpats på rapporten som används i denna artikel.
 
 * Det [tema](https://go.microsoft.com/fwlink/?linkid=843924) som använts i [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) som presenterade den första versionen av **rapportteman** heter [ *waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
@@ -141,7 +145,7 @@ Här följer några fler rapportteman som du kan använda för att komma igång:
 Den grundläggande JSON-filen har fem obligatoriska rader:
 
 * **name** – Detta är temanamnet och det enda obligatoriska fältet
-* **dataColors** – En lista med hexkodfärger som används för data i Power BI Desktops visuella objekt. Listan kan innehålla så många eller så få färger som du vill
+* **dataColors** – En lista med hexadecimala färgkoder som du kan använda för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill
 * **background**, **foreground** och **tableAccent** – Dessa värden är färger som ska tillämpas på olika typer av visuella objekt. **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
 
 Om du vill skapa en JSON-fil med ett utökat format och mer detaljerad kontroll över formateringen, måste du lägga till ett **visualStyles**-avsnitt i JSON-filen och kapsla formateringen som anges i avsnittet. Formatet i **visualStyles**-avsnittet ser ut ungefär så här:
