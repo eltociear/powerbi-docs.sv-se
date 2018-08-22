@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
-ms.author: v-mamcge
+ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582581"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256892"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda 
 Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga rapporter i Power BI.  
@@ -46,10 +46,10 @@ Mer information om hur du optimerar datakällor för DirectQuery finns i [Direct
  
 ## <a name="directquery-and-live-connection-understand-underlying-data-source-performance"></a>DirectQuery och live-anslutning: förstå underliggande datakällas prestanda 
 
-I DirectQuery eller live-anslutning, skickar Power BI frågor i realtid till den underliggande datakällan när användare besöker en Power BI-rapport. När datakällan returnerar med frågedata kommer rapporten att återges. Rapportprestandan beror således i dessa fall till stor del på den underliggande datakällans prestanda. 
- 
-I dessa fall är det viktigt att förstå den underliggande datakällans prestanda. Olika datakällor har olika verktyg för att förstå frågeprestanda. Till exempel har SQL Server och SQL Azure verktyget Query Store, som innehåller en historik över frågor och deras körningsstatistik. 
- 
+I DirectQuery eller live-anslutning, skickar Power BI frågor i realtid till den underliggande datakällan när användare besöker en Power BI-rapport. När datakällan returnerar med frågedata kommer rapporten att återges. Rapportprestandan beror således i dessa fall till stor del på den underliggande datakällans prestanda.
+
+I dessa fall är det viktigt att förstå den underliggande datakällans prestanda. Olika datakällor har olika verktyg för att förstå frågeprestanda. Till exempel har SQL Server och SQL Azure verktyget Query Store, som innehåller en historik över frågor och deras körningsstatistik.
+
 När du distribuerar Power BI-rapporter som bygger på DirectQuery och live-anslutning, ha som tumregel att själv testa vad användarna kommer att göra i Power BI Desktop. Om rapporten går långsamt att läsa in Power BI Desktop kommer det sannolikt blir att ta lång tid att läsa in i tjänsten för dina slutanvändare också. 
  
 ## <a name="directquery-best-practices"></a>Metodtips för DirectQuery 
