@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 402a39ef9e52fe61d80940a5050997ba19930209
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: bf5120b1c4d787dd13e21245b234207123221fc4
+ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964847"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40257121"
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor
 Du kan få en sömlös enkel inloggningsanslutning, vilket medför att Power BI-rapporter och -instrumentpaneler kan uppdateras från lokala data, genom att konfigurera din lokala datagateway med Kerberos. Den lokala datagatewayen genomför SSO (enkel inloggning) med hjälp av DirectQuery, som används för att ansluta till lokala datakällor.
@@ -51,9 +51,7 @@ Här finns mer information om de här stegen:
    - Användarpersonifieringen och anslutningen till databasen lyckas bara om gatewaytjänstkontot är ett domänkonto (eller tjänst-SID) och om Kerberos-begränsad delegering har konfigurerats för databasen för att acceptera Kerberos-biljetter från gatewaytjänstkontot.  
    
    > [!NOTE]
-   > Om AAD DirSync/Connect har konfigurerats och användarkonton har synkroniserats, behöver inte gatewaytjänsten utföra lokala AD-sökningar vid körning och du kan använda ditt lokala tjänst-SID (i stället för att kräva ett domänkonto) för gatewaytjänsten.  Konfigurationsstegen för Kerberos-begränsad delegering som beskrivs i det här dokumentet är desamma (tillämpas bara baserat på ditt tjänst-SID i stället för domänkonto).
-   > 
-   > 
+   > Om AAD DirSync/Connect har konfigurerats och användarkonton har synkroniserats, behöver inte gatewaytjänsten utföra lokala AD-sökningar vid körning och du kan använda ditt lokala tjänst-SID (i stället för att kräva ett domänkonto) för gatewaytjänsten. Konfigurationsstegen för Kerberos-begränsad delegering som beskrivs i den här artikeln motsvarar den konfigurationen (de tillämpas helt enkelt på gatewayens datorobjekt i Active Directory i stället för domänkontot).
 
 
 > [!NOTE]

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f9c6d161149a4c862636a13ad88d3c43f2dbcd8a
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: cbec15b472e6cfad6134cc48970977132d61dd36
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329321"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40256860"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Använda Analysis Services-tabelldata i Power BI Desktop
 Med Power BI Desktop finns det två sätt att ansluta till och hämta data från SQL Server Analysis Services-tabellmodellerna: Utforska genom att använda en live-anslutning eller Välj objekt och importera till Power BI Desktop.
@@ -24,7 +24,9 @@ Låt oss ta en närmare titt.
 
 **Utforska genom att använda en live-anslutning** – När du använder en live-anslutning kommer objekten i din tabellmodell eller ditt perspektiv, t.ex. tabeller, kolumner och mått, visas i listan med Power BI Desktop-fält. Du kan använda Power BI Desktops avancerade visualiserings- och rapportverktyg till att utforska din tabellmodell på nya interaktiva sätt.
 
-När du ansluter live importeras inte några data från tabellmodellen till Power BI Desktop. Varje gång du interagerar med en visualisering frågar Power BI Desktop efter tabellmodellen och beräknar resultatet som visas. De data du ser är alltid uppdaterade med den senaste informationen. Kom ihåg att tabellmodeller är mycket säkra. Vilka objekt som visas i Power BI Desktop beror på din behörighet för tabellmodellen du är ansluten till.
+När du ansluter live importeras inte några data från tabellmodellen till Power BI Desktop. Varje gång du interagerar med en visualisering frågar Power BI Desktop efter tabellmodellen och beräknar resultatet som visas. Du ser alltid de senaste data som är tillgängliga i tabellmodellen, antingen från den senaste bearbetningstiden eller från Direct Query-tabeller som är tillgängliga i tabellmodellen. 
+
+Kom ihåg att tabellmodeller är mycket säkra. Vilka objekt som visas i Power BI Desktop beror på din behörighet för tabellmodellen du är ansluten till.
 
 När du har skapat dynamiska rapporter i Power BI Desktop kan du dela dem genom att publicera dem på Power BI-webbplatsen. När du publicerar en Power BI Desktop-fil med en live-anslutning till en tabellmodell på Power BI-webbplatsen, måste en lokal datagateway vara installerad och konfigurerad av en administratör. Läs mer i [Lokal datagateway](service-gateway-onprem.md).
 

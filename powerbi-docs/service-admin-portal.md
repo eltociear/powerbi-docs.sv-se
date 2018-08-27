@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 08/15/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965514"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256968"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -100,36 +100,37 @@ Mer information om granskningsloggarna finns i [granska Power BI i din organisat
 
 Den tredje fliken i administrationsportalen är **klientinställningar**. Klientinställningarna ger dig större kontroll över vilka funktioner som är tillgängliga för din organisation. Om du har frågor kring känsliga data, vissa av våra funktioner inte är lämpliga för din organisation eller om du bara vill att en viss funktion ska vara tillgänglig för en särskild grupp. Om så är fallet, kan du stänga av den i din klient.
 
-Som standard har till exempel data per användare aktiverats för användningsstatistik, och kontoinformation om skapare av innehåll ingår i statistikrapporten. Om du inte vill inkludera den här informationen för vissa eller alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformation visas då i rapporten som *Namnlös*.
-
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > Det kan ta upp till 10 minuter för att inställningen ska gälla för alla i din klient.
 
-Inställningarna kan ha tre tillstånd baserat på de inställningar som du har angett.
+Inställningarna kan ha tre tillstånd:
 
-### <a name="disabled-for-the-entire-organization"></a>Har inaktiverats för hela organisationen
+* **Har inaktiverats för hela organisationen**: Du kan inaktivera en funktion så att användare inte kan använda den.
 
-Du kan inaktivera en funktion så att användare inte kan använda den.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+* **Har aktiverats för hela organisationen**: Du kan aktivera en funktion för hela organisationen så att alla användare har åtkomst till funktionen.
 
-### <a name="enabled-for-the-entire-organization"></a>Har aktiverats för hela organisationen
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-Du kan aktivera en funktion för hela organisationen så att alla användare har åtkomst till funktionen.
+* **Har aktiverats för en del av organisationen**: Du kan även aktivera en funktion för en del av din organisation. Detta kan göras på ett par olika sätt. Du kan aktivera den för hela organisationen utom en viss användargrupp.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-### <a name="enabled-for-a-subset-of-the-organization"></a>Har aktiverats för en undergrupp i organisationen
+    Du kan också endast aktivera funktionen för en viss grupp av användare och även inaktivera den för en grupp av användare. Därmed har vissa användare inte åtkomst till funktionen även om de finns i en tillåten grupp.
 
-Du kan även aktivera en funktion för en del av din organisation. Detta kan göras på ett par olika sätt. Du kan aktivera den för hela organisationen utom en viss användargrupp.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+Följande avsnitt ger en översikt över de olika typerna av inställningar för klientorganisation.
 
-Du kan också endast aktivera funktionen för en viss grupp av användare och även inaktivera den för en grupp av användare. Därmed har vissa användare inte åtkomst till funktionen även om de finns i en tillåten grupp.
+## <a name="workspace-settings"></a>Arbetsyteinställningar
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+### <a name="create-workspaces-preview"></a>Skapa arbetsytor (förhandsversion)
+Användare i organisationen kan skapa apparbetsytor för att samarbeta på instrumentpaneler, rapporter och annat innehåll.
+
+Mer information finns i [Skapa nya arbetsytor](service-create-the-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Inställningar för export och delning
 
@@ -244,7 +245,7 @@ Användare i organisationen kan interagera med och dela visuella objekt som skap
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
 
-## <a name="audit-settings"></a>Granskningsinställningar
+## <a name="audit-and-usage-settings"></a>Gransknings- och användningsinställningar
 
 ### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Skapa granskningsloggar för intern aktivitetsgranskning och efterlevnad
 
@@ -254,6 +255,25 @@ Den här inställningen måste vara aktiverad för att registrera granskningslog
 
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
+
+### <a name="usage-metrics-for-content-creators"></a>Användningsstatistik för skapare av innehåll
+Användarna i organisationen kan se användningsstatistik för de instrumentpaneler och rapporter som de har skapat. [Läs mer](service-usage-metrics.md).
+
+Du kan växla inställningen till **Aktiverad** och sedan ange vilka som kan se användningsstatistik (hela organisationen eller specifika säkerhetsgrupper).
+
+> [!NOTE]
+> Tänk på att det tar tid innan klientinställningarna verkställs.
+
+### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Data per användare i användningsmått för innehållsskapare
+Om du använder mått för skapare av innehåll visas visningsnamn och e-postadresser för de användare som har åtkomst till innehållet. [Läs mer](service-usage-metrics.md).
+
+Du kan växla inställningen till **Aktiverad** och sedan ange vilka som kan se visningsnamn och e-postadresser i användningsstatistiken (hela organisationen eller specifika säkerhetsgrupper).
+
+Data per användare är aktiverat för användningsstatistik som standard, och kontoinformation om innehållsskapare ingår i statistikrapporten. Om du inte vill inkludera den här informationen för vissa eller alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformation visas då i rapporten som *Namnlös*.
+
+> [!NOTE]
+> Tänk på att det tar tid innan klientinställningarna verkställs.
+
 
 ## <a name="dashboard-settings"></a>Inställningar för instrumentpanelen
 
@@ -270,9 +290,9 @@ Användare i organisationen kan tagga instrumentpaneler med klassificeringar som
 
 Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapporter i SaaS-program (programvara som en tjänst). När du inaktiverar den här inställningen kan användare inte använda REST-API: er för att bädda in Power BI-innehåll i sina program.
 
-## <a name="premium-settings"></a>Premiuminställningar
+## <a name="capacity-settings"></a>Kapacitetsinställningar
 
-På fliken premiuminställningar kan du hantera alla premiumfunktioner för Power BI som har köpts för din organisation. Alla användare inom din organisation ser fliken premiuminställningar, men kan endast se innehåll om de är tilldelade som antingen **kapacitetadministratör** eller en användare som har tilldelningsbehörighet. Om en användare inte har några behörigheter visas följande meddelande.
+På fliken för kapacitetsinställningar kan du hantera alla premiumfunktioner för Power BI som har köpts för din organisation. Alla användare inom din organisation ser fliken premiuminställningar, men kan endast se innehåll om de är tilldelade som antingen **kapacitetadministratör** eller en användare som har tilldelningsbehörighet. Om en användare inte har några behörigheter visas följande meddelande.
 
 ![](media/service-admin-portal/premium-settings-no-access.png "Ingen åtkomst till Premiuminställningar")
 

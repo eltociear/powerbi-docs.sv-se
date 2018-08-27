@@ -2,21 +2,21 @@
 title: Bädda in med rapportwebbdel i SharePoint Online
 description: Med den nya rapportwebbdelen för SharePoint Online i Power BI kan du enkelt bädda in interaktiva Power BI-rapporter i SharePoint Online-sidor.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 63cb1fe3061d1ba48e71a4ac09862fce29dd9196
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.date: 08/16/2018
+ms.openlocfilehash: 85e04993639d3c2897d2d7dddc00e79fd4fdf0c6
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39032058"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257045"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -28,6 +28,7 @@ När du använder det nya alternativet **Bädda in i SharePoint Online** är de 
 
 Det finns några krav för att rapporter som har **bäddats in i SharePoint Online** ska fungera.
 
+* Du behöver en Power BI Pro-licens eller en [Power BI Premium-kapacitet (EM eller P SKU)](service-premium.md#premium-capacity-nodes) med en Power BI-licens.
 * Power BI-webbdelen för SharePoint Online kräver [moderna sidor](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## <a name="embed-your-report"></a>Bädda in rapporten
@@ -69,7 +70,7 @@ För att bädda in rapporten i SharePoint Online måste du först hämta en URL 
 
     ![](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Klistra in rapport-URL:en i egenskapsrutan. Detta är den URL som du kopierade från stegen ovan. Rapporten laddas automatiskt.
+4. Klistra in rapport-URL:en i egenskapsrutan. Detta är den URL som du kopierade från stegen ovan. Rapporten läses in automatiskt.
 
     ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -107,10 +108,10 @@ Nedan visas en beskrivning av de inställningar som kan ställas in för Power B
 
 ## <a name="multi-factor-authentication"></a>Multifaktorautentisering
 
-Om din Power BI-miljö kräver att du loggar in med multifaktorautentisering, kan du uppmanas att logga in med en säkerhetsenhet för att verifiera din identitet. Detta kan inträffa om du inte loggade in på SharePoint Online med hjälp av multifaktorautentisering, men din Power BI-miljö kräver ett konto som har godkänts med en säkerhetsenhet.
+Om din Power BI-miljö kräver att du loggar in med multifaktorautentisering kan du uppmanas att logga in med en säkerhetsenhet för att verifiera din identitet. Detta inträffar om du inte loggade in på SharePoint Online med hjälp av multifaktorautentisering, men din Power BI-miljö kräver ett konto som har godkänts med en säkerhetsenhet.
 
 > [!NOTE]
-> Multifaktorautentisering stöds inte ännu i Azure Active Directory 2.0. Användare får ett *felmeddelande*. Om användaren loggar in igen på SharePoint Online med hjälp av en säkerhetsenhet kan de eventuellt visa rapporten.
+> Multifaktorautentisering stöds inte ännu i Azure Active Directory 2.0. Användare får ett *felmeddelande*. Om användaren loggar in igen på SharePoint Online med hjälp av en säkerhetsenhet kan denne eventuellt visa rapporten.
 
 ## <a name="reports-that-do-not-load"></a>Rapporter som inte kan läsas in
 

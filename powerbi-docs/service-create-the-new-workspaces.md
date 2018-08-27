@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2018
+ms.date: 08/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 36343b4db0481ea61fbfac1c791aa84760ee2c77
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624827"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40257100"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Skapa de nya arbetsytorna (förhandsversion) i Power BI
 
@@ -112,8 +112,8 @@ De nya arbetsytorna erbjuder tre roller: administratörer, medlemmar och deltaga
 **Medlemmar kan:** 
 
 - Lägga till medlemmar eller andra med lägre behörighet.
-- Publicera och uppdatera appar.
-- Dela objekt och dela appar.
+- Publicera och uppdatera en app.
+- Dela ett objekt eller dela en app.
 - Tillåta att andra delar objekt igen.
 - Göra allt som deltagare kan göra.
 
@@ -129,7 +129,7 @@ Vi skapar arbetsflöden för åtkomstbegäran på olika ställen i tjänsten så
 
 ## <a name="distribute-an-app"></a>Distribuera en app
 
-När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Dina medarbetare kan få apparna på ett par olika sätt. Du kan installera dem automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera dina appar från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md).
+När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Du kan skapa en app från varje arbetsyta. Dina medarbetare kan få appen på ett par olika sätt. Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera din app från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md).
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Konvertera gamla apparbetsytor till nya apparbetsytor
 
@@ -161,7 +161,7 @@ Vissa andra funktioner för förhandsversionen av de nya apparbetsytorna håller
 Vissa funktioner fungerar annorlunda i de nya apparbetsytorna jämfört med de aktuella appsarbetsytorna. De här skillnaderna är avsiktliga och baseras på feedback som vi har fått från kunder. De kommer att möjliggöra en mer flexibel metod för samarbete med arbetsytor:
 
 - Medlemmar kan eller kan inte dela igen: ersätts med rollen Deltagare
-- Skrivskyddade arbetsytor: ersätts med en kommande läsarroll som ger skrivskyddad åtkomst till innehållet i en arbetsyta.
+- Skrivskyddade arbetsytor: i stället för att bevilja användare skrivskyddad åtkomst till en arbetsyta tilldelar du användare till en kommande läsarroll som ger liknande skrivskyddad åtkomst till innehållet i en arbetsyta.
 
 ## <a name="known-issues"></a>Kända problem
 

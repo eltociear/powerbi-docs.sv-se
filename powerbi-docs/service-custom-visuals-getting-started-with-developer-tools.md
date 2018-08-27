@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600389"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40256914"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Använd utvecklingsverktyg för att skapa en anpassad visualisering
 Med anpassad visualisering kan du uppfylla dina användares behov och matcha appens design. Lär dig hur du skapar en anpassad visualisering för Power BI med utvecklingsverktygen.
@@ -178,10 +178,10 @@ Nu kan du börja utveckla ditt visuella objekt.
 Du kan skapa ett nytt visualiseringsprojekt genom att köra följande kommando.
 
 ```
-pbiviz new My Visual name
+pbiviz new MyVisualName
 ```
 
-Du kan ersätta *namnet Min visualisering* med det namn som du vill ge visualiseringen. Detta kan ändras senare genom att ändra fälten `name` och `displayName` inom den genererade `pbiviz.json`-filen.
+Du kan ersätta *MyVisualName* med det namn som du vill ge visualiseringen. Detta kan ändras senare genom att ändra fälten `name` och `displayName` inom den genererade `pbiviz.json`-filen.
 
 Det här kommandot skapar en ny mapp i katalogen där kommandot kördes. Den skapar en grundläggande startmall för ditt visuella objekt. När kommandot har slutförts kan du öppna katalogen och använda din favoritredigerare för att börja arbeta på din nya visualisering.
 

@@ -2,22 +2,23 @@
 title: Anpassade visualiseringar i Power BI
 description: Anpassade visualiseringar i Power BI
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/06/2018
-ms.author: maghan
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d8c3a33a3ae6166d33ea7a613917616613b84696
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 872f0c556dd995c20d461d9f4969b7fa00f80571
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721465"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40257118"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Anpassade visuella objekt i Power BI
+
 När du skapar eller redigerar en Power BI-rapport finns det många olika typer av visuella objekt som du kan använda. Dessa visuella objekt visas i fönstret **Visualiseringar**. När du hämtar Power BI Desktop eller öppna Power BI-tjänsten (app.powerbi.com) medföljer den här uppsättningen visuella objekt på köpet.
 
 ![](media/power-bi-custom-visuals/power-bi-visualizations.png)
@@ -33,12 +34,10 @@ Anpassade visuella objekt kan distribueras på tre olika sätt:
 
 ## <a name="custom-visual-files"></a>Filer för anpassade visuella objekt
 
-Anpassade visuella objekt är paket som innehåller kod för att återge de data som de förses med. Alla kan skapa anpassade visuella objekt och paketera dem som .pbiviz-filer som kan importeras till Power BI-rapporter.
+Anpassade visuella objekt är paket som innehåller kod för att återge de data som de förses med. Alla kan skapa anpassade visuella objekt och paketera dem som en enskild `.pbiviz`-fil som kan importeras till Power BI-rapporter.
 
 > [!WARNING]
 > Ett anpassat visuellt objekt kan innehålla kod som innebär säkerhets- eller integritetsrisker. Kontrollera att författaren och det visuella objektets källa är betrodda innan du importerar det i din rapport.
-> 
-> 
 
 ## <a name="organization-visuals"></a>Visuella organisationsobjekt
 
@@ -59,7 +58,7 @@ Om du vill se en lista över certifierade anpassade visuella objekt, eller skick
 
 Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i AppSource? Läs [Kom igång med utvecklarverktyg](https://docs.microsoft.com/power-bi/service-custom-visuals-getting-started-with-developer-tools) och lär dig hur du [publicerar anpassade visuella objekt till AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
 
-### <a name="import-a-custom-visuals-from-a-file"></a>Importera anpassade visuella objekt från en fil
+### <a name="import-a-custom-visual-from-a-file"></a>Importera ett anpassat visuellt objekt från en fil
 
 1. Markera ellipserna längst ned i fönstret Visualiseringar.
 
@@ -69,7 +68,7 @@ Om du vill se en lista över certifierade anpassade visuella objekt, eller skick
 
     ![](media/power-bi-custom-visuals/power-bi-custom-visual-import-from-file.png)
 
-3. Välj den .pbiviz-fil som du vill importera på menyn Öppna fil och välj sedan Öppna. Ikonen för det anpassade visuella objektet läggs till längst ned i fönstret Visualiseringar och kan nu användas i rapporten.
+3. Välj den `.pbiviz`-fil som du vill importera på menyn Öppna fil och välj sedan Öppna. Ikonen för det anpassade visuella objektet läggs till längst ned i fönstret Visualiseringar och kan nu användas i rapporten.
 
     ![](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
@@ -94,8 +93,9 @@ Om du vill se en lista över certifierade anpassade visuella objekt, eller skick
 5. Importera det anpassade visuella objektet genom att välja **Lägg till**. Ikonen för det anpassade visuella objektet läggs till längst ned i fönstret Visualiseringar och kan nu användas i rapporten.
 
     ![](media/power-bi-custom-visuals/power-bi-visual-org-05.png)
- 
+
 ## <a name="download-or-import-custom-visuals-from-microsoft-appsource"></a>Hämta eller importera anpassade visuella objekt från Microsoft AppSource
+
 Du har två alternativ för att hämta och importera anpassade visuella objekt – inifrån Power BI och från AppSource-webbplatsen.
 
 ### <a name="import-custom-visuals-from-within-power-bi"></a>Hämta anpassade visuella objekt från Power BI
@@ -138,11 +138,11 @@ Du har två alternativ för att hämta och importera anpassade visuella objekt �
 
     ![](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
-3. AppSource visar en panel för varje anpassat visuellt objekt.  Varje panel har en ögonblicksbild av det anpassade visuella objektet med en kort beskrivning och en nedladdningslänk. Markera panelen om du vill se mer information. 
+3. AppSource visar en panel för varje anpassat visuellt objekt.  Varje panel har en ögonblicksbild av det anpassade visuella objektet med en kort beskrivning och en nedladdningslänk. Markera panelen om du vill se mer information.
 
     ![](media/power-bi-custom-visuals/powerbi-custom-select-visual.png)
 
-4. På den här informationssidan kan du visa skärmdumpar, videor, detaljerade beskrivningar och annat. Ladda ned det visuella objektet genom att välja **Hämta det nu** och sedan godkänna användningsvillkoren. 
+4. På den här informationssidan kan du visa skärmdumpar, videor, detaljerade beskrivningar och annat. Ladda ned det visuella objektet genom att välja **Hämta nu** och sedan godkänna användningsvillkoren.
 
     ![](media/power-bi-custom-visuals/power-bi-appsource-get.png)
 
@@ -158,7 +158,7 @@ Du har två alternativ för att hämta och importera anpassade visuella objekt �
 
 6. Spara .pbiviz-filen och öppna sedan Power BI.
 
-7. Importera filen .pbiviz till rapporten (Mer information finns i avsnittet [Importera ett anpassat visuellt objekt från en fil](#import-a-custom-visuals-from-a-file) ovan)
+7. Importera .pbiviz-filen till rapporten (se avsnittet [Importera ett anpassat visuellt objekt från en fil](#import-a-custom-visuals-from-a-file) ovan)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 

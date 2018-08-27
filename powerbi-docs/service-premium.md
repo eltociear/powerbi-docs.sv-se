@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 15b64b917fed56e9d9ab6be2023060378324c794
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 81a03c7728d92bcc78dba9a02cbe4c45f582fd3d
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38925446"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257044"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – vad är det?
-Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation eller ditt team, vilket ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också frekvent distribution av innehåll utan att du behöver köpa licenser per användare för tittare.
+Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation eller ditt team. Det ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också frekvent distribution av innehåll utan att du behöver köpa licenser per användare för tittare.
 
 Du kan dra nytta av Power BI Premium genom att tilldela arbetsytor till en Premium-kapacitet. *Premium-kapacitet* är en resurs som är dedikerad för din organisation. Arbetsytor som inte tilldelas en premium-kapacitet kommer att finnas i en delad kapacitet.
 
-*Delad kapacitet* är den upplevelse du är van att arbeta med i Power BI, där dina arbetsbelastningar körs på dataresurser som delas av andra kunder. I delad kapacitet finns fler gränser för enskilda användare för att säkerställa kvaliteten på upplevelsen för alla användare.
+Med *delad kapacitet* körs dina arbetsbelastningar på dataresurser som delas av andra kunder. I delad kapacitet finns fler gränser för enskilda användare för att säkerställa kvaliteten på upplevelsen för alla användare.
 
 [!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
@@ -33,7 +33,7 @@ Det finns två typer av kapaciteter i Power BI. Delad kapacitet och Power BI Pre
 
 |  | Delad kapacitet | Power BI Premium-kapacitet |
 | --- | --- | --- |
-| **Uppdateringsintervall** |8/dag |Inte begränsad |
+| **Uppdateringsintervall** |8/dag |48/dag |
 | **Isolering med dedikerad maskinvara** |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig") |
 | **Företagsdistribution till** ***alla användare*** | | |
 | Appar och delning |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig")<sup>1</sup> |
@@ -48,10 +48,10 @@ Om du vill börja använda en Power BI Premium-kapacitet, måste du tilldela en 
 
 När en arbetsyta backas upp av premiumkapacitet, får du fördelarna med Power BI Premium.
 
-* Schemalagda uppdateringar: användare var tidigare begränsade till 8 x per dag för schemalagd uppdatering av importerade modeller. Den här begränsningen hävs för datamängder i Premium-arbetsytor. Detta gäller inte för schemalagda uppdateringar för cachelagring av för DirectQuery. De är de samma för Premium och delade kapaciteter.
-* Isolering med dedikerad maskinvara – vid delad kapacitet kan prestanda för rapporter och instrumentpaneler påverkas av resurskrav från andra arbetsbelastningar i kapaciteten, trots vårt skydd mot det. Premium innehåller däremot mer konsekvent och tillförlitlig prestanda för arbetsbelastningar genom att isolera dem från orelaterade arbetsbelastningar.
+* **Schemalagda uppdateringar**: med delad kapacitet är schemalagda uppdateringar för importerade modeller begränsade till 8 gånger per dag. Antalet uppdatering ökas till 48 gånger per dag för datamängder i Premium-arbetsytor. Detta gäller inte för schemalagda uppdateringar för cachelagring av för DirectQuery. De är de samma för Premium och delade kapaciteter.
+* **Isolering med dedikerad maskinvara**: vid delad kapacitet kan prestanda för rapporter och instrumentpaneler påverkas av resurskrav från andra arbetsbelastningar i kapaciteten, trots vårt skydd mot det. Premium innehåller däremot mer konsekvent och tillförlitlig prestanda för arbetsbelastningar genom att isolera dem från orelaterade arbetsbelastningar.
 
-Om en app backas upp av premiumkapacitet (d.v.s. den publicerades från en app-arbetsyta som har tilldelats Premium), kan den publicerade appen sedan användas av alla användare i organisationen oavsett vilken licens de tilldelats.
+Om en app backas upp av premiumkapacitet (det vill säga att den publicerades från en app-arbetsyta som har tilldelats Premium), kan den publicerade appen sedan användas av alla användare i organisationen oavsett vilken licens de tilldelats.
 
 ### <a name="shared-capacity"></a>Delad kapacitet
 Som standard är din arbetsyta i delad kapacitet. Detta inkluderar din personliga *Min arbetsyta* tillsammans med app-arbetsytor. En Delad kapacitet är den upplevelse du är van att arbeta med i Power BI, där dina arbetsbelastningar körs på dataresurser som delas av andra kunder.
@@ -69,12 +69,12 @@ Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-k
 
 | Kapacitetsnod | Totalt antal virtuella kärnor<br/>*(Serverdel + klientdel)* | Virtuella kärnor för serverdel | Virtuella kärnor för klientdel | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning | Tillgängligt |
 | --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-kärnor |0,5 virtuella kärnor, 2,5 GB RAM-minne |0,5 virtuella kärnor |3,75 per sekund |150-300 |Tillgänglig |
-| [EM2 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-kärnor |1 virtuella kärna, 5 GB RAM-minne |1 v-kärnor |7,5 per sekund |301-600 |Tillgänglig |
-| [EM3 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-kärnor |2 virtuella kärnor, 10 GB RAM-minne |2 v-kärnor | |601–1200 |Tillgänglig |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-kärnor |4 virtuella kärnor, 25 GB RAM-minne |4 v-kärnor |30 per sekund |1 201–2 400 |Tillgängliga ([månad för månad](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) är också tillgängligt) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-kärnor |8 virtuella kärnor, 50 GB RAM-minne |8 v-kärnor |60 per sekund |2 401–4 800 |Tillgänglig |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 v-kärnor |16 virtuella kärnor, 100 GB RAM-minne |16 v-kärnor |120 per sekund |4 801–9 600 |Tillgänglig |
+| [EM1 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-kärnor |0.5 virtuella kärnor, 2,5 GB RAM |0.5 virtuella kärnor |3,75 per sekund |150-300 |Tillgänglig |
+| [EM2 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-kärnor |1 virtuell kärna, 5 GB RAM |1 v-kärnor |7,5 per sekund |301-600 |Tillgänglig |
+| [EM3 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-kärnor |2 virtuella kärnor, 10 GB RAM |2 v-kärnor | |601–1200 |Tillgänglig |
+| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-kärnor |4 virtuella kärnor, 25 GB RAM |4 v-kärnor |30 per sekund |1 201–2 400 |Tillgängliga ([månad för månad](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) är också tillgängligt) |
+| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-kärnor |8 virtuella kärnor, 50 GB RAM |8 v-kärnor |60 per sekund |2 401–4 800 |Tillgänglig |
+| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 v-kärnor |16 virtuella kärnor, 100 GB RAM |16 v-kärnor |120 per sekund |4 801–9 600 |Tillgänglig |
 
 * Klientdelens virtuella kärnor ansvarar för webbtjänsten, instrumentpanel och hantering av rapportdokument, hantering av åtkomsträttigheter och schemaläggning av API:er, ladda upp och hämta filer, och vanligen för allt som rör användarupplevelsen.
 * Serverdelens virtuella kärnor ansvarar för grovjobbet: frågebearbetning, hantering av cache, köra R-servrar, datauppdatering, bearbetning av naturligt språk, flöden i realtid och återgivning av rapporter och bilder från serversidan. Med serverdelens virtuella kärnor reserveras dessutom en viss mängd minne. Att ha tillräckligt med minne blir särskilt viktigt när du hanterar stora datamodeller eller ett stort antal aktiva datauppsättningar.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 61421db59a6488394cad0b8a921590a90b020bff
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: d37ed22c0abba4e843d37fd6df465f9a755fbdc6
+ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280649"
+ms.lasthandoff: 08/11/2018
+ms.locfileid: "40257243"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Datakällor som stöds av DirectQuery i Power BI
 **Power BI Desktop** och **Power BI-tjänsten** har flera datakällor som du kan ansluta till och få åtkomst till data. Den här artikeln beskriver vilka datakällor för Power BI stöder anslutningsmetoden **DirectQuery**. Läs mer om DirectQuery i [**DirectQuery i Power BI**](desktop-directquery-about.md).
@@ -23,6 +23,7 @@ ms.locfileid: "39280649"
 Följande datakällor stöds av DirectQuery i Power BI:
 
 * Amazon Redshift
+* Azure Databricks
 * Azure HDInsight Spark (beta)
 * Azure SQL Database
 * Azure SQL Data Warehouse

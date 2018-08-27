@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6ccf112a78e69e006a4ca3d6e8a7cd372adf5f05
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3c1000eb48cfb53f5838f19f6c0ece4403e9d3ba
+ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244259"
+ms.lasthandoff: 08/11/2018
+ms.locfileid: "40256939"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Anslut till Application Insights med Power BI
 Använd Power BI för att skapa kraftfulla anpassade instrumentpaneler från telemetrin [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Förutse din apptelemetri på nya sätt. Kombinera mått för flera appar eller komponenttjänster på en instrumentpanel. Den första versionen av Power BI-innehållspaketet för Application Insights innehåller widgetar för vanliga användningsrelaterade mått såsom aktiva användare, sidvy, sessioner, webbläsare och OS-version och geografisk fördelning av användare på en karta.
@@ -23,7 +23,7 @@ Använd Power BI för att skapa kraftfulla anpassade instrumentpaneler från tel
 Anslut till [Application Insights-innehållspaket för Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
 >[!NOTE]
->Åtkomst till Application Insights översiktsblad för ditt program i Azure Preview Portal krävs för att ansluta. Mer information om kraven finns nedan.
+>Den här integreringsmetoden är nu **inaktuell**. Mer information om den föredragna metoden för att ansluta Application Insights till Power BI finns i [exportera funktioner för analytiska frågor](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## <a name="how-to-connect"></a>Så här ansluter du
 1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
