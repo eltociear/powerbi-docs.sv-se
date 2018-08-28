@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d696a7492f1295f2e2c9b39088b0eacdb66b15ca
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: be532e428680d9286247f57d81cab2802aea1fe3
+ms.sourcegitcommit: 9a666382484882162690efaed106b82a4bcbf883
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310186"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42799055"
 ---
 # <a name="hyperlinks-in-tables"></a>Hyperlänkar i tabeller
 I det här ämnet lär du dig hur du använder Power BI Desktop för att skapa hyperlänkar. När hyperlänkarna har skapats använder du Desktop eller Power BI-tjänsten för att lägga till dem till dina rapporttabeller och -matriser. 
@@ -39,8 +39,10 @@ Proceduren för att lägga till en hyperlänk beror på om du har importerat din
     ![](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)
 3. Välj **Webbadress**.
 4. Växla till rapportvyn och skapa en tabell eller matris med hjälp av fältet som kategoriserats som en webbadress. Hyperlänkarna är blå och understrukna.
-   
     ![](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
+> **OBS**: URL-adresserna måste börja med **http://, https://** eller **www**.
+> 
+>   
 5. Om du inte vill visa en lång URL i en tabell, kan du visa en hyperlänkikon ![](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) i stället. Observera att du inte kan visa ikoner i matriser.
    
    * Välj diagrammet för att aktivera det.
