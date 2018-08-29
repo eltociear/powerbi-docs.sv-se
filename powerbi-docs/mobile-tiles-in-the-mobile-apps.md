@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 20bdd4731cd4aad3c6412d1959de3be088a3457a
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280143"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151962"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
 Gäller:
@@ -28,10 +28,6 @@ Paneler är ögonblicksbilder i realtid av dina data, fästa på en instrumentpa
 Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar med dem. Du kan öppna paneler med alla typer av visuella objekt, inklusive paneler baserade på Bing och R.
 
 ## <a name="tiles-in-the-ios-apps"></a>Paneler i iOS-apparna
-> [!NOTE]
-> Du kan [skapa bildpaneler med iPhone-appen](mobile-iphone-app-get-started.md) och spara dem på dina instrumentpaneler.
-> 
-> 
 
 1. Öppna en [instrumentpanel i mobilappen för iOS](mobile-apps-view-dashboard.md).
 2. Tryck på en panel. Den öppnas i fokusläge, där det är enklare att visa och utforska paneldata. I fokusläge kan du:
@@ -40,7 +36,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   <em>I till exempel det här linjediagrammet är de valda värdena för **This Year Sales</em>*(Årets försäljning) och **Last Year Sales**(Förra årets försäljning) i **augusti**.*  
+   *I till exempel det här linjediagrammet är de valda värdena för **This Year Sales (Årets försäljning)** och **Last Years Sales (Förra årets försäljning)** i **augusti**.*  
    
    Tryck på en sektor i ett cirkeldiagram för att visa sektorns värde högst upp i diagrammet.  
    
@@ -107,7 +103,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   <em>I det här stapeldiagrammet visas värdena för **Decor</em>* (Dekor) överst i diagrammet.*
+   *I den här stapeldiagrammet visas värdena för **Decor (Dekor)** överst i diagrammet.*
    
    Tryck på ikonen **Fullskärm** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png)för att öppna panelen i fullskärmsläge, utan navigerings- och menyrader.
    
