@@ -2,19 +2,19 @@
 title: Vanliga frågor och svar om Power BI Embedded
 description: Bläddra i en lista med vanliga frågor och svar om Power BI Embedded.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/22/2018
-ms.openlocfilehash: ab637be12487029d17d7b1bfa89022dbae9aaa49
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.date: 08/21/2018
+ms.openlocfilehash: 935932e92e5d95ae52957bf1360db8d2232286ad
+ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39415402"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42702970"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -25,7 +25,7 @@ ms.locfileid: "39415402"
 
 ### <a name="what-is-power-bi-embedded"></a>Vad är Power BI Embedded?
 
-Med Microsoft Power BI Embedded kan programutvecklare bädda in attraktiva och helt interaktiva rapporter, instrumentpaneler och paneler i program utan att ödsla den tid och de utgifter som medföljer när man skapar egna datavisualiseringar och kontroller från grunden.
+Med Microsoft Power BI Embedded (PBIE) kan programutvecklare bädda in attraktiva och helt interaktiva rapporter i program utan att ödsla den tid och de utgifter som medföljer när man skapar egna datavisualiseringar och kontroller från grunden.
 
 ### <a name="who-is-the-target-audience-for-power-bi-embedded"></a>Vem kan använda Power BI Embedded?
 
@@ -70,7 +70,7 @@ Här är en lista över några skillnader som du kan använda de olika funktione
 | Använda Power BI-rapporter i ett inbäddat program | Ja | Ja | Ja |
 | Använda Power BI-rapporter i SharePoint | Nej | Ja | Ja |
 | Använda Power BI-rapporter i Dynamics | Nej | Ja | Ja |
-| Använda Power BI-rapporter i Teams | Nej | Ja | Ja |
+| Använda Power BI-rapporter i Teams (endast skrivbordsapp) | Nej | Ja | Ja |
 | Få åtkomst till innehåll i Powerbi.com och Power BI Mobile med en kostnadsfri Power BI-licens | Nej | Nej | Ja |
 | Få åtkomst till innehåll som är inbäddat i MS Office-appar med en kostnadsfri Power BI-licens | Nej | Ja | Ja |
 
@@ -79,10 +79,10 @@ Här är en lista över några skillnader som du kan använda de olika funktione
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Köp     |Azure Portal |Office |Office |
-|Användningsfall |* Bädda in innehåll i ditt eget program |* Bädda in innehåll i ditt eget program<br>* Bädda in innehåll i andra MS Office-program ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) och [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Bädda in innehåll i ditt eget program<br>* Bädda in innehåll i andra MS Office-program ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) och [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Dela innehåll med Power BI-användare via [Power BI-tjänsten](https://powerbi.microsoft.com/en-us/)  |
+|Användningsfall |* Bädda in innehåll i ditt eget program |* Bädda in innehåll i ditt eget program<br>* Bädda in innehåll i andra MS Office-program ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (endast skrivbordsapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) och [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Bädda in innehåll i ditt eget program<br>* Bädda in innehåll i andra MS Office-program ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (endast skrivbordsapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) och [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Dela innehåll med Power BI-användare via [Power BI-tjänsten](https://powerbi.microsoft.com/en-us/)  |
 |Fakturering |Varje timma |Varje månad |Varje månad |
 |Bindningstid  |Ingen bindningstid |Varje år  |Varje månad/varje år |
-|Skillnad |Fullständig elasticitet. Kan skapa upp/ner, pausa/återuppta resurser i Azure Portal eller med API  |Kan användas för att bädda in innehåll i SharePoint Online och Microsoft Teams |Kombinera att bädda in i applikationer och använda Power BI-tjänsten i samma utsträckning |
+|Skillnad |Fullständig elasticitet. Kan skapa upp/ner, pausa/återuppta resurser i Azure Portal eller med API  |Kan användas för att bädda in innehåll i SharePoint Online och Microsoft Teams (endast skrivbordsapp) |Kombinera att bädda in i applikationer och använda Power BI-tjänsten i samma utsträckning |
 
 ### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Vilka är kraven för att skapa en PBIE-kapacitet i Azure?
 
@@ -126,7 +126,7 @@ Power BI kräver att du registrerar dig med ett organisationskonto. Det går int
 
 ### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Kan jag använda API:er för att skapa och hantera Azure-kapaciteter?
 
-Ja, det finns PowerShell-cmdletar och ARM API:er för att skapa och hantera PBIE-resurser.
+Ja, det finns PowerShell-cmdletar och Azure Resource Manager (ARM) API:er för att skapa och hantera PBIE-resurser.
 
 * REST API:er – https://docs.microsoft.com/rest/api/power-bi-embedded/
 * PowerShell-cmdletar – https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
@@ -239,7 +239,7 @@ Ideella organisationer och högskolor kan köpa Azure. Det finns ingen särskild
 
 ### <a name="what-is-power-bi-workspace-collection"></a>Vad är Power BI-arbetsytesamling?
 
-**Power BI-arbetsytesamling** (**Power BI Embedded**, version 1) är en lösning som baseras på Azure-resursen **Power BI-arbetsytesamling**. Med den här lösningen kan du skapa **Power BI Embedded**-program för dina kunder med Power BI-innehåll i **Power BI-arbetsytesamling**, dedikerade API:er och arbetsytesamlingsnycklar för att Power BI ska kunna autentisera programmet.
+**Power BI-arbetsytesamling** (**Power BI Embedded**, version 1) är en lösning som baseras på Azure-resursen **Power BI-arbetsytesamling**. Med den här lösningen kan du skapa **Power BI Embedded**-program för dina kunder med Power BI-innehåll under **Power BI-arbetsytesamling**, dedikerade API:er och arbetsytesamlingsnycklar för att Power BI ska kunna autentisera programmet.
 
 ### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Kan jag migrera från Power BI-arbetsytesamling till Power BI Embedded?
 

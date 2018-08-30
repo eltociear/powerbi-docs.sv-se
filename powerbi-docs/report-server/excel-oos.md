@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: f56e05e51090f37fdb0bcd295ec877ee73b5dac0
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: dc29336754be008b541f146fff7c5f8609472cd0
+ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40257925"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703016"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurera rapportservern för att hantera Excel-arbetsböcker med hjälp av Office Online Server (OOS)
 
@@ -37,7 +37,7 @@ Utföra dessa procedurer på servern där du kör Office Online-Server. Den här
     ```
 
     **Windows Server 2016:**
-   
+
     ```
     Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,NET-Framework-Features,NET-Framework-45-Features,NET-Framework-Core,NET-Framework-45-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
     ```
@@ -57,9 +57,9 @@ Observera att Office Online-Server måste finnas i samma Active Directory-skog s
 1. Hämta Office Online Server från [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Filen finns under Office-produkterna på VLSC-portalen. För utveckling kan du hämta OOS från MSDN-prenumeranthämtningar.
 2. Kör Setup.exe.
 3. På sidan **Läsa licensvillkor för programvara från Microsoft** väljer du **Jag accepterar villkoren i avtalet** och väljer **Fortsätt**.
-4. På sidan **Välj filsökväg** väljer du den mapp där du vill att Office Online Server-filer ska installeras (till exempel *C:\Program Files\Microsoft Office Web Apps*) och sedan **Installera nu**. Om den angivna mappen inte finns skapas den åt dig.
+4. På sidan **Välj filsökväg** väljer du den mapp där du vill att Office Online Server-filer ska installeras (till exempel C:\Program Files\Microsoft Office Web Apps*) och sedan **Installera nu**. Om den angivna mappen inte finns skapas den åt dig.
 
-    **_Vi rekommenderar att du installerar Office Online Server på systemenheten._**
+    Vi rekommenderar att du installerar Office Online Server på systemenheten.
 
 5. När installationen av Office Online Server är klar väljer du **Stäng**.
 

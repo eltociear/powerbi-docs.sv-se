@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 08/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
-ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
+ms.openlocfilehash: cde28e7c41a35c3bbc37d0da56313ad7f8698110
+ms.sourcegitcommit: 15b877343540bb7e21f1d5bbd3d6f64e66fa138c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "40257100"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42914529"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Skapa de nya arbetsytorna (förhandsversion) i Power BI
 
@@ -29,12 +29,13 @@ Med förhandsversion av de nya arbetsytorna kan du nu:
 - Skapa en arbetsyta i Power BI utan att skapa en Office 365-grupp.
 - Använda mer detaljerade arbetsyteroller för mer flexibel hantering av behörigheter på en arbetsyta.
  
-När du skapar en av de nya arbetsytorna skapar du inte en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Power BI, inte i Office 365. Du kan fortfarande lägga till en Office 365-grupp till arbetsytan för att fortsätta hantera användaråtkomst till innehållet via Office 365-grupper. Du kan dock även använda säkerhetsgrupper och distributionslistor samt lägga till enskilda användare direkt i Power BI, vilket ger dig ett flexibelt sätt att hantera åtkomst till arbetsytor
+När du skapar en av de nya arbetsytorna skapar du inte en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Power BI, inte i Office 365. Du kan fortfarande lägga till en Office 365-grupp till arbetsytan för att fortsätta hantera användaråtkomst till innehållet via Office 365-grupper. Du kan dock även använda säkerhetsgrupper och distributionslistor samt lägga till enskilda användare direkt i Power BI, vilket ger dig ett flexibelt sätt att hantera åtkomst till arbetsytor. Eftersom administration av arbetsytor nu finns i Power BI, är det Power BI-administratörerna som bestämmer vilka i en organisation som kan skapa arbetsytor. Se [avsnittet om arbetsytor i artikeln om Power BI-adminportalen](service-admin-portal.md#workspace-settings) för mer information. 
 
 Du kan lägga till användargrupper eller enskilda personer till de nya arbetsytorna som medlemmar, deltagare eller administratörer. Alla i en användargrupp får den roll som du har definierat. Om en person finns i flera användargrupper får personen den högsta behörighetsnivån som ges av rollen.  En förklaring av de olika rollerna finns i [Roller i de nya arbetsytorna](#roles-in-the-new-workspaces) senare i den här artikeln.
 
 Alla som du lägger till i en apparbetsyta behöver en Power BI Pro-licens. På arbetsytan kan användarna samarbeta kring instrumentpaneler och rapporter som du planerar att publicera till en bredare publik eller hela organisationen. Om du vill distribuera innehåll till andra i organisationen kan du tilldela Power BI Pro-licenser till de användarna eller placera arbetsytan i en Power BI Premium-kapacitet.
-Eftersom detta är en förhandsfunktion finns det vissa begränsningar som du bör känna till. Se <section link> senare i den här artikeln för en förklaring av de aktuella begränsningarna. Vi gör om vissa funktioner i och med de nya arbetsytorna. Se < avsnittslänk > senare i den här artikeln för en förklaring av de ändringar som du kan räkna med att de blir permanenta tillsammans med förhandsversionen.
+
+Vi gör om vissa funktioner i och med de nya arbetsytorna. Se [Apparbetsytefunktioner som fungerar annorlunda](#app-workspace-features-that-work-differently) senare i den här artikeln för en förklaring av de ändringar som du kan räkna med blir permanenta tillsammans med förhandsversionen. Eftersom detta är en förhandsfunktion finns det vissa begränsningar som du bör känna till. Se [Kända problem](#known-issues) senare i den här artikeln för en förklaring av de aktuella begränsningarna. 
 
 ## <a name="roll-out-new-app-workspaces"></a>Lansera nya apparbetsytor
 
