@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f0f29cb88c77f3d7775670c0869ee55938327763
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658022"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151916"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Felsökning av den lokala datagatewayen
 
@@ -279,7 +279,7 @@ Här följer en lista över tillgängliga prestandaräknare.
 | Antal öppna kombinationsprogramanslutningar misslyckade per sekund |Antalet misslyckade öppna anslutningsåtgärder för kombinationsprogram per sekund. |
 | Antal frågor för kombinationsprogram utförda per sekund |Antalet utförda frågor för kombinationsprogram per sekund (lyckade eller misslyckade). |
 | Antal frågor för kombinationsprogram misslyckade per sekund |Antalet misslyckade frågor för kombinationsprogram per sekund |
-| Antal misslyckade OLEDB-frågor för flera resultatuppsättningar per sekund |Antalet misslyckade OLEDB-frågor för flera resultatuppsättningar per sekund. |
+| Antal OLEDB-frågor för flera resultatuppsättningar misslyckade per sekund |Antalet misslyckade OLEDB-frågor för flera resultatuppsättningar per sekund. |
 | Antal utförda OLEDB-frågor för flera resultatmängder per sekund |Antalet utförda OLEDB-frågor för flera resultatuppsättningar per sekund (lyckade eller misslyckade). |
 | Antal öppna OLEDB-anslutningar utförda per sekund |Antalet utförda öppna OLEDB-anslutningsåtgärder per sekund (lyckade eller misslyckade). |
 | Antal öppna OLEDB-anslutningar misslyckade per sekund |Antalet misslyckade öppna OLEDB-anslutningsåtgärder per sekund. |
