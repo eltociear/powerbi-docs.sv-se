@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/30/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b6a3c35abeff33e2fb1e0fecdc5c2a5c88e1530
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: fd62e90d4a4f348ee7b3a524f85725d517180068
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34298192"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300148"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Inkrementell uppdatering i Power BI Premium
 
@@ -43,6 +43,12 @@ Det går inte alltid att använda stora datamängder i Power BI Desktop eftersom
 
 För att du ska kunna dra nytta av inkrementell uppdatering i Power BI-tjänsten krävs filtrering med datum/tid-parametrar i Power Query med de reserverade, skiftlägeskänsliga namnen **RangeStart** och **RangeEnd**.
 
+När de har publicerats åsidosätts parametervärdena automatiskt av Power BI-tjänsten. Du behöver inte ange dem i inställningarna för datauppsättningen i tjänsten.
+ 
+Det är viktigt att filtret skickas till källsystemet när frågor skickas för uppdateringsåtgärder. Det innebär att datakällan ska ha stöd för ”frågepartitionering”. Med tanke på de olika nivåerna av stöd för frågepartitionering för varje given datakälla rekommenderar vi att du kontrollerar att filterlogiken ingår i källfrågorna. Om det inte sker begär varje fråga alla data från källan, vilket motverkar syftet med inkrementell uppdatering.
+ 
+Filtret kommer att användas för att partitionera data i intervall i Power BI-tjänsten. Det är inte avsett att stödja uppdatering av den filtrerade datumkolumnen. En uppdatering tolkas som en infogning och en borttagning (inte en uppdatering). Om borttagningen inträffar i det historiska intervallet och inte det inkrementella intervallet hämtas den inte.
+
 Välj **Hantera parametrar** i Power Query Editor och definiera parametrarna med standardvärden.
 
 ![Hantera parametrar](media/service-premium-incremental-refresh/manage-parameters.png)
@@ -61,9 +67,6 @@ Se till att raderna filtreras där kolumnvärdet *infaller efter eller är lika 
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
 Välj **Close and Apply** (Stäng och använd) i Power Query Editor. Du bör ha en delmängd data i Power BI Desktop.
-
-> [!NOTE]
-> När de har publicerats åsidosätts parametervärdena automatiskt av Power BI-tjänsten. Du behöver inte ange dem i inställningarna för datauppsättningen.
 
 ### <a name="define-the-refresh-policy"></a>Definiera uppdateringsprincipen
 
@@ -102,9 +105,11 @@ Den första uppdateringen i Power BI-tjänsten kan ta längre tid eftersom alla 
 
 **Definitionen av dessa intervall kanske är allt du behöver. I så fall kan du gå direkt till publiceringssteget nedan. De ytterligare nedrullningsbara avsnitten beskriver avancerade funktioner.**
 
+### <a name="advanced-policy-options"></a>Avancerade principalternativ
+
 #### <a name="detect-data-changes"></a>Identifiera dataförändringar
 
-Inkrementell uppdatering av tio dagar är självklart mycket effektivare än en fullständig uppdatering av fem år. Men, det kan bli ännu bättre. Om du markerar kryssrutan **Identifiera dataförändringar** kan du välja en datum/tid-kolumn som ska användas för att identifiera och uppdatera endast de dagar då data har ändrats. Detta förutsätter att den här typen av kolumn finns i källsystemet, vilket är vanligt för granskningsändamål. Maxvärdet i den här kolumnen utvärderas för varje period i det inkrementella intervallet. Om det inte har ändrats sedan den senaste uppdateringen behöver perioden inte uppdateras. I exemplet kan detta ytterligare minska antalet dagar som uppdateras inkrementellt från tio till kanske bara två.
+Inkrementell uppdatering av tio dagar är självklart mycket effektivare än en fullständig uppdatering av fem år. Men, det kan bli ännu bättre. Om du markerar kryssrutan **Identifiera dataförändringar** kan du välja en datum/tid-kolumn som ska användas för att identifiera och uppdatera endast de dagar då data har ändrats. Detta förutsätter att den här typen av kolumn finns i källsystemet, vilket är vanligt för granskningsändamål. **Det får inte vara samma kolumn som används för att partitionera data med parametrarna RangeStart/RangeEnd.** Maxvärdet i den här kolumnen utvärderas för varje period i det inkrementella intervallet. Om det inte har ändrats sedan den senaste uppdateringen behöver perioden inte uppdateras. I exemplet kan detta ytterligare minska antalet dagar som uppdateras inkrementellt från tio till kanske bara två.
 
 ![Identifiera ändringar](media/service-premium-incremental-refresh/detect-changes.png)
 

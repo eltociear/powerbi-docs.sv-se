@@ -2,19 +2,19 @@
 title: Felsök ditt inbäddade program
 description: Den här artikeln går igenom några vanliga problem som kan uppstå när du bäddar in innehåll från Power BI.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/09/2018
-ms.author: maghan
-ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.date: 08/31/2018
+ms.openlocfilehash: 48faf9ebde5860b59569a7e0a3a96664d06a1b0d
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877034"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241578"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -24,13 +24,13 @@ Den här artikeln går igenom några vanliga problem som kan uppstå när du bä
 
 ### <a name="fiddler-trace"></a>Fiddlerspårning
 
-[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se till- och fråntrafiken med Power BI-API:erna från klientdatorn. Detta kan visa fel och annan relaterad information.
+[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se trafiken med Power BI-API:erna från klientdatorn. Det här verktyget visar fel och annan relaterad information.
 
 ![Fiddlerspårning](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
 
 ### <a name="f12-in-browser-for-front-end-debugging"></a>F12 i webbläsaren för felsökning av klientdelen
 
-F12 startar utvecklarfönstret i din webbläsare. Detta ger dig möjlighet att titta på nätverkstrafik och annan information.
+F12 startar utvecklarfönstret i din webbläsare. Detta verktyg ger dig möjlighet att titta på nätverkstrafik och annan information.
 
 ![F12 webbläsarfelsökning](media/embedded-troubleshoot/browser-f12.png)
 
@@ -38,7 +38,7 @@ F12 startar utvecklarfönstret i din webbläsare. Detta ger dig möjlighet att t
 
 Det här kodstycket visar hur man extraherar felinformationen från HTTP-undantaget:
 
-```
+```csharp
 public static string GetExceptionText(this HttpOperationException exc)
 {
     var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
@@ -52,16 +52,17 @@ public static string GetExceptionText(this HttpOperationException exc)
     return errorText;
 }
 ```
-Vi rekommenderar att du loggar begärande-ID:erna (och felinformationen för felsökning).
-Ange begäran-ID när du tar kontakt med Microsoft-supporten.
+
+Vi rekommenderar att du loggar ID för begäran (och felinformationen för felsökning).
+Ange ID för begäran när du tar kontakt med Microsoft-supporten.
 
 ## <a name="app-registration"></a>Appregistrering
 
 **Appregistreringsfel**
 
-Felmeddelanden i Azure-portalen eller Power BI-appregistreringssidan kommer att nämna bristande behörigheter. Du måste vara en administratör i Azure AD-klienten för att registrera ett program eller så måste programregistreringar vara aktiverade för icke-administratörer.
+Felmeddelanden på Azure Portal eller Power BI-appregistreringssidan anger bristande behörigheter. Du måste vara en administratör i Azure AD-klienten för att registrera ett program eller så måste programregistreringar vara aktiverade för icke-administratörer.
 
-**Power BI-tjänsten visas inte i Azure-portalen när du registrerar en ny App**
+**Power BI-tjänsten visas inte i Azure Portal när du registrerar en ny app**
 
 Minst en användare måste vara registrerad för Power BI. Om du inte ser **Power BI-tjänsten** listad i API-listan så är ingen användare registrerad för Power BI.
 
@@ -73,7 +74,7 @@ En fiddler-avbildning kan krävas för att undersöka vidare. Det nödvändiga b
 
 **API-anropet returnerar 403**
 
-En fiddler-avbildning kan krävas för att undersöka vidare. Det kan finnas flera skäl för ett 403-fel.
+En fiddler-avbildning kan krävas för att undersöka vidare. Det kan finnas flera orsaker till ett 403-fel.
 
 * Användaren har överskridit mängden inbäddningstoken som kan skapas på en delad kapacitet. Du måste köpa Azure-kapaciteter för att generera inbäddningstoken och tilldela arbetsytan till kapaciteten. Mer information finns på sidan om hur du [skapar en Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD-autentiseringstoken har upphört att gälla.
@@ -100,9 +101,9 @@ Programmets serverdel kan behöva uppdatera auktoriseringstoken innan du anropar
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Autentiseringen misslyckades med AADSTS70002 eller AADSTS50053
 
-**(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect user ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord).)**
+**(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord).**
 
-Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client,error_description:AADSTS70002: Error validating credentials. AADSTS50053: Du har försökt att logga in för många gånger med ett felaktigt användar-ID eller lösenord***, eftersom direktautentisering varit inaktiverat som standard sedan den 14 juni 2018.
+Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord).***, eftersom direktautentisering varit inaktiverat som standard sedan den 14 juni 2018.
 
 Du kan aktivera funktionen igen med hjälp av en [Azure AD-princip](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) som antingen definieras för organisationen eller ett [tjänstens huvudnamn](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -194,6 +195,40 @@ Om användaren inte kan se rapporten eller instrumentpanelen, kontrollera att ra
 
 Öppna filen från Power BI Desktop eller på powerbi.com och verifiera att prestandan är acceptabel för att kunna utesluta problem med ditt program eller inbäddnings-API:erna.
 
+## <a name="troubleshooting-your-embedded-application-with-the-ierror-object"></a>Felsöka inbäddade program med IError-objektet
+
+Använd [ **IError-objektet** som returneras av *felhändelsen* från **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) för att felsöka ditt program och bättre förstå orsaken till felen.
+
+När du har hämtat IError-objektet bör du titta på relevant tabell över vanliga fel som passar den inbäddningstyp du använder. Jämför **IError-egenskaperna** med dem i tabellen och hitta möjliga skäl till felet.
+
+### <a name="typical-errors-when-embedding-for-power-bi-users"></a>Vanliga fel vid inbäddning för Power BI-användare
+
+| Meddelande | Detaljerat meddelande | Felkod | Möjliga orsaker |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+| TokenExpired | Åtkomsttoken har upphört att gälla, skicka igen med en ny åtkomsttoken | 403 | Token har upphört att gälla  |
+| PowerBIEntityNotFound | Rapporten kunde inte hämtas | 404 | <li> Fel rapport-ID <li> Rapporten finns inte  |
+| Ogiltiga parametrar | powerbiToken-parameter har inte angetts | Saknas | <li> Ingen åtkomsttoken har angetts <li> Inget rapport-ID har angetts |
+| LoadReportFailed | Det gick inte att initiera – det gick inte att lösa klustret | 403 | * Felaktig åtkomsttoken * Inbäddningstypen matchar inte tokentypen |
+| PowerBINotAuthorizedException | Rapporten kunde inte hämtas | 401 | <li> Fel grupp-ID <li> Ej auktoriserad grupp |
+| TokenExpired | Åtkomsttoken har upphört att gälla, skicka igen med en ny åtkomsttoken. Det gick inte att återge ett visuellt rapportobjekt med namnet: <visual title> | Saknas | Frågedata Token har upphört att gälla |
+| OpenConnectionError | Det går inte att visa det visuella objektet. Det gick inte att återge ett visuellt rapportobjekt med namnet: <visual title> | Saknas | Kapacitet som pausats eller tagits bort medan en rapport som rör kapaciteten var öppen i en session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Det gick inte att läsa in modellschemat som är associerat med den här rapporten. Kontrollera att du har en anslutning till servern och försök igen. | Saknas | <li> Kapaciteten har pausats <li> Kapaciteten har tagits bort |
+
+### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Vanliga fel när du bäddar in för icke-Power BI-användare (med en inbäddningstoken)
+
+| Meddelande | Detaljerat meddelande | Felkod | Orsaker |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| TokenExpired | Åtkomsttoken har upphört att gälla, skicka igen med en ny åtkomsttoken | 403 | Token har upphört att gälla  |
+| LoadReportFailed | Rapporten kunde inte hämtas | 404 | <li> Fel rapport-ID <li> Rapporten finns inte  |
+| LoadReportFailed | Rapporten kunde inte hämtas | 403 | Rapport-ID matchar inte token |
+| LoadReportFailed | Rapporten kunde inte hämtas | 500 | Angivet rapport-ID inte är ett guid |
+| Ogiltiga parametrar | powerbiToken-parameter har inte angetts | Saknas | <li> Ingen åtkomsttoken har angetts <li> Inget rapport-ID har angetts |
+| LoadReportFailed | Det gick inte att initiera – det gick inte att lösa klustret | 403 | Fel tokentyp, ogiltig token |
+| PowerBINotAuthorizedException | Rapporten kunde inte hämtas | 401 | Fel/obehörigt grupp-ID |
+| TokenExpired | Åtkomsttoken har upphört att gälla, skicka igen med en ny åtkomsttoken. Det gick inte att återge ett visuellt rapportobjekt med namnet: <visual title> | Saknas | Frågedata Token har upphört att gälla |
+| OpenConnectionError | Det går inte att visa det visuella objektet. Det gick inte att återge ett visuellt rapportobjekt med namnet: <visual title> | Saknas | Kapacitet som pausats eller tagits bort medan en rapport som rör kapaciteten var öppen i en session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Det gick inte att läsa in modellschemat som är associerat med den här rapporten. Kontrollera att du har en anslutning till servern och försök igen. | Saknas | <li> Kapaciteten har pausats <li> Kapaciteten har tagits bort |
+
 ## <a name="onboarding-experience-tool-for-embedding"></a>Integrationsverktyget för inbäddning
 
 Du kan gå igenom [integrationsverktyget](https://aka.ms/embedsetup) och snabbt ladda ned ett exempelprogram. Sedan kan du jämföra ditt program med exemplet.
@@ -244,3 +279,5 @@ Om du vill redigera din Power BI-användarprofil eller dina Power BI-data läser
 Mer information finns i [Vanliga frågor om Power BI Embedded](embedded-faq.md).
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+
+Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa ett supportärende via Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden som du stöter på.

@@ -2,20 +2,20 @@
 title: Publicera på webben från Power BI
 description: Med Power BI Publicera på webben kan du enkelt bädda in interaktiva Power BI-visualiseringar online, t.ex. blogginlägg, webbplatser, via e-post eller sociala medier på alla enheter.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e02b4dfe9798eed393a0097ef4f220746acfdf6
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: b305c684ccf0938cfa8f5d9a2aa06f27a8c8be12
+ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092355"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380346"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -65,7 +65,7 @@ Följande tabell innehåller råd om visningsläget och hur det ser ut när det 
 
 | Visningsläge | Hur det ser ut när det är inbäddat |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |**Anpassa till sida** tar hänsyn till sidans höjd och bredd i rapporten. Om du ställer in sidan på 'Dynamisk' så skalas förhållanden som 16:9 eller 4:3 så att innehållet passar i den iFrame som du angett. Vid inbäddnng i en iFrame så kan användning av **Anpassa till sida** resultera i **utfyllnad**, där en grå bakgrund visas i områden i iFrame efter det att innehållet har skalats för att rymmas i iFrame. Om du vill minimera utfyllnaden, så anpassa höjd- och breddinställningarna i iFrame. |
+| ![](media/service-publish-to-web/publish_to_web6b.png) |**Anpassa till sida** tar hänsyn till sidans höjd och bredd i rapporten. Om du ställer in sidan på ”Dynamisk” så skalas förhållanden som 16:9 eller 4:3 så att innehållet passar i den iFrame som du angett. Vid inbäddnng i en iFrame så kan användning av **Anpassa till sida** resultera i **utfyllnad**, där en grå bakgrund visas i områden i iFrame efter det att innehållet har skalats för att rymmas i iFrame. Om du vill minimera utfyllnaden, så anpassa höjd- och breddinställningarna i iFrame. |
 | ![](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk storlek** säkerställer att rapporten bevarar den storlek som angetts på sidan. Detta kan resultera i rullningslister i din iFrame. Ange höjd och bredd för iFrame så att du kan undvika rullningslister. |
 | ![](media/service-publish-to-web/publish_to_web6c.png) |**Anpassa till bredd** garanterar att innehållet passar in vågrätt i din iFrame. En kantlinje visas fortfarande, men innehållet skalas så att allt tillgängligt vågrätt utrymme används. |
 
@@ -128,15 +128,16 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder P
 
 **Publicera på webben** stöds för merparten av alla datakällor och rapporter i Power BI-tjänsten. Men följande stöds dock **inte för närvarande eller är inte tillgängligt** med Publicera på webben:
 
-1. Rapporter som använder säkerhet på radnivå.
-2. Rapporter som använder en datakälla för Live-anslutning, som Analysis Services Tabular på lokala flerdimensionella Analysis Services och Azure Analysis Services.
-3. Rapporter om delas med dig direkt eller via ett organisationsinnehållspaket.
-4. Rapporter i en grupp som du inte är redigeringsmedlem i.
-5. Visuella R-objekt stöds för närvarande inte i Publicera på webben-rapporter.
-6. Exportera data från visualiseringar i en rapport som har publicerats på webben
-7. ArcGIS Maps för Power BI-visualiseringar
-8. Rapporter som innehåller DAX-mått på rapportnivå
-9. [Säkra konfidentiell eller upphovsrättsskyddad information](#publish-to-web-from-power-bi)
+- Rapporter som använder säkerhet på radnivå.
+- Rapporter som använder en datakälla för Live-anslutning, som Analysis Services Tabular på lokala flerdimensionella Analysis Services och Azure Analysis Services.
+- Rapporter om delas med dig direkt eller via ett organisationsinnehållspaket.
+- Rapporter i en grupp som du inte är redigeringsmedlem i.
+- Visuella R-objekt stöds för närvarande inte i Publicera på webben-rapporter.
+- Exportera data från visualiseringar i en rapport som har publicerats på webben
+- ArcGIS Maps för Power BI-visualiseringar
+- Rapporter som innehåller DAX-mått på rapportnivå
+- Datafrågemodeller för enkel inloggning
+- [Säkra konfidentiell eller upphovsrättsskyddad information](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Klientinställning
 

@@ -10,12 +10,12 @@ ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
 ms.date: 07/31/2018
-ms.openlocfilehash: 222a6368bc717880fee4f6ce6958455959b491bd
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: f364bb725c492c1bffd2493c1e2a48ee8c442a9e
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360475"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300056"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Skapa Power BI Embedded-kapacitet på Azure Portal
 
@@ -54,7 +54,7 @@ För att slutföra den här snabbstarten behöver du:
     |**Prenumeration**|Den prenumeration som du vill skapa kapaciteten för.|
     |**Resursgrupp**|Den resursgrupp som innehåller den nya kapaciteten. Välj en befintlig resursgrupp eller skapa en ny. Mer information finns i [Översikt över Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).|
     |**Power BI-kapacitetsadministratör**|Kapacitetsadministratörer för Power BI kan visa kapaciteten på Power BI-administrationsportalen och bevilja tilldelningsbehörighet till andra användare. Som standard är kapacitetsadministratören ditt konto. Kapacitetsadministratören måste finnas inom din Power BI-klientorganisation.|
-    |**Plats**|Den plats där Power BI finns för din klientorganisation. Den här inställningen ställs in automatiskt och det går inte att välja en annan plats.|
+    |**Plats**|Den plats där Power BI finns för din klientorganisation. Standardplatsen är din hemregion, men du kan ändra plats med hjälp av [Multi-Geo-alternativ](embedded-multi-geo.md).
     |**Prisnivå**|Välj den SKU (antal virtuella kärnor och minnesstorlek) som passar dina behov.  Mer information finns i [Priser för Power BI Embedded](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
 6. Välj **Skapa**.

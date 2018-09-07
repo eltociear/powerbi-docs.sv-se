@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: ec97676fc043f9d8bd014465cc1fd2c0ffcca423
-ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
+ms.openlocfilehash: bfc9b054f9a34757361bf4ab1803aa6904471167
+ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257072"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380323"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -24,6 +24,15 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 ## <a name="august-2018"></a>Augusti 2018
 - **Power BI-rapportserver**
+    - *Version 1.3.6816.37243 (build-nr 15.0.2.557), publicerad 30 augusti, 2018*
+        - Felkorrigeringar
+            - Ett problem åtgärdades när servern uppgraderades från tidigare versioner av PBI Report Server där en bindningsomdirigering inte uppdaterades, kunderna såg detta:      
+            *`
+            Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
+             `*
+             
+            - Programfel för dataetikettstransparens har nu åtgärdats.
+            
     - *Version 1.3.6801.38816 (build-nr 15.0.2.540), publicerad: 15 augusti 2018*
         - Funktioner
             - SAP HANA SSO Direct Query-stöd med Kerberos är nu tillgängligt för Power BI-rapporter

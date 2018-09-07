@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 935932e92e5d95ae52957bf1360db8d2232286ad
-ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
+ms.openlocfilehash: c1f9da598abee29a1d8eef0419fcb472f0a1467e
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42702970"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241532"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -47,7 +47,7 @@ Power BI Embedded är avsett för programvaruleverantörer eller utvecklare som 
 
 Microsoft rekommenderar att företag köper Power BI Premium, en molnlösning i företagsklass för BI och att programvaruleverantörer köper Power BI Embedded, en inbäddad analyskomponent i molnet. Kunden kan dock välja att köpa det system de föredrar.
 
-Det kan finnas tillfällen där en ISV (vanligtvis stor) vill använda en P-SKU för dra nytta av ytterligare fördelar med den kompletta Power BI-tjänsten i organisationen samt att bädda in i sina program. Och självklart kan vissa företag välja att använda A-SKU:er i Azure om de bara är intresserad av att bygga program för affärsverksamheten och bädda in analysverktyg i dem och inte är intresserade av att använda den kompletta Power BI-tjänsten.
+Det kan finnas tillfällen där en ISV (vanligtvis stor) vill använda en P-SKU för dra nytta av ytterligare fördelar med den kompletta Power BI-tjänsten i organisationen samt att bädda in i sina program. Och självklart kan vissa företag välja att använda A-SKU:er i Azure om de bara är intresserade av att bygga program för affärsverksamheten och bädda in analysverktyg i dem och inte är intresserade av att använda den kompletta Power BI-tjänsten.
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Hur många inbäddningstoken kan jag skapa?
 
@@ -70,7 +70,7 @@ Här är en lista över några skillnader som du kan använda de olika funktione
 | Använda Power BI-rapporter i ett inbäddat program | Ja | Ja | Ja |
 | Använda Power BI-rapporter i SharePoint | Nej | Ja | Ja |
 | Använda Power BI-rapporter i Dynamics | Nej | Ja | Ja |
-| Använda Power BI-rapporter i Teams (endast skrivbordsapp) | Nej | Ja | Ja |
+| Använda Power BI-rapporter i Teams (gäller inte mobilapp) | Nej | Ja | Ja |
 | Få åtkomst till innehåll i Powerbi.com och Power BI Mobile med en kostnadsfri Power BI-licens | Nej | Nej | Ja |
 | Få åtkomst till innehåll som är inbäddat i MS Office-appar med en kostnadsfri Power BI-licens | Nej | Ja | Ja |
 
@@ -78,13 +78,13 @@ Här är en lista över några skillnader som du kan använda de olika funktione
 
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
-|Köp     |Azure Portal |Office |Office |
-|Användningsfall |* Bädda in innehåll i ditt eget program |* Bädda in innehåll i ditt eget program<br>* Bädda in innehåll i andra MS Office-program ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (endast skrivbordsapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) och [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Bädda in innehåll i ditt eget program<br>* Bädda in innehåll i andra MS Office-program ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (endast skrivbordsapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) och [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Dela innehåll med Power BI-användare via [Power BI-tjänsten](https://powerbi.microsoft.com/en-us/)  |
+|Köp  |Azure Portal |Office |Office |
+|Användningsfall | Bädda in innehåll i ditt eget program | <li> Bädda in innehåll i ditt eget program <br><br></br> <li> Bädda in innehåll i MS Office-program: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (gäller inte mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Bädda in innehåll i ditt eget program <br><br></br> <li> Bädda in innehåll i MS Office-program: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (gäller inte mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Dela innehåll med Power BI-användare via [Power BI-tjänsten](https://powerbi.microsoft.com/en-us/)  |
 |Fakturering |Varje timma |Varje månad |Varje månad |
 |Bindningstid  |Ingen bindningstid |Varje år  |Varje månad/varje år |
-|Skillnad |Fullständig elasticitet. Kan skapa upp/ner, pausa/återuppta resurser i Azure Portal eller med API  |Kan användas för att bädda in innehåll i SharePoint Online och Microsoft Teams (endast skrivbordsapp) |Kombinera att bädda in i applikationer och använda Power BI-tjänsten i samma utsträckning |
+|Skillnad |Fullständig elasticitet. Kan skapa upp/ner, pausa/återuppta resurser i Azure Portal eller med API  |Kan användas för att bädda in innehåll i SharePoint Online och Microsoft Teams (gäller inte mobilapp) |Kombinera att bädda in i applikationer och använda Power BI-tjänsten i samma utsträckning |
 
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Vilka är kraven för att skapa en PBIE-kapacitet i Azure?
+### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Vilka är kraven för att skapa en PBIE-kapacitet i Azure? 
 
 * Du måste logga in i din organisationskatalog (MSA-konton stöds inte).
 * Du måste ha en Power BI-klient. Minst en användare i din katalog måste alltså ha registrerat sig för Power BI. 
@@ -133,7 +133,7 @@ Ja, det finns PowerShell-cmdletar och Azure Resource Manager (ARM) API:er för a
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Vad är den dedikerade kapacitetsrollen för PBI Embedded i en PBI Embedded-lösning?
 
-För att [flytta upp din lösning till produktion](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) behöver du Power BI-innehållet (apparbetsyta som du använder i ditt program som tilldelas till en dedikerad kapacitet).
+För att [flytta upp din lösning till produktion](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) behöver du Power BI-innehållet (apparbetsyta som du använder i ditt program som tilldelas till en Power BI Embedded-kapacitet (A SKU).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>I vilka Azure-regioner är PBI Embedded tillgängligt?
 

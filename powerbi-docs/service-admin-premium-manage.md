@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 24d585af19dd774cdf6fe7dafb66c12e02d311f9
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 5da624f92093111c1996d9b1c5080cd58a906a45
+ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38924803"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43250783"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 Lär dig hur du kan hantera Power BI Premium- och Power BI Embedded-kapaciteter som tillhandahåller dedikerade resurser för ditt innehåll.
@@ -163,33 +163,8 @@ När du har sparat flyttas arbetsytan och allt dess innehåll till Premium-kapac
 
 
 ## <a name="monitor-capacity-usage"></a>Övervaka kapacitetsanvändning
-För varje kapacitet kan du se användningsstatistik för processor, minnesanvändning, minnesförslöing och Direct Query. Vi rekommenderar att du håller ett öga på dessa värden så att du är säker på att användarna får bra prestanda från din kapacitet:
 
-![Användning de senaste sju dagarna](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> Användningen av Power BI Embedded-kapaciteten övervakas i Azure Portal.
-
-| Mått | Beskrivning |
-| --- | --- |
-| Processor |Antalet gånger processorn överskridit 80 % användning. |
-| Minnesförslöing |Representerar minnesbelastningen på dina serverkärnor. Mer specifikt är detta ett mått på hur många gånger datauppsättningar avlägsnas från minnet på grund av minnesbelastning från användningen av flera datauppsättningar. |
-| Minnesanvändning |Genomsnittlig minnesanvändning, representerat i gigabyte (GB). |
-| DQ/s | Antalet gånger som Direct Query och Live-anslutningar överskridit 80 % av gränsvärdet. <br> <br> * Vi begränsar det totala antalet DirectQuery- och realtidsanslutningsfrågor per sekund.<br><br>* Gränserna är 30/s för P1, 60/s för P2 och 120/s för P3.<br><br> * Antalet frågor för Direct Query och Live-anslutningar räknas in mot ovanstående begränsning. Om du till exempel har 15 DirectQueries och 15 realtidsanslutningar på en sekund, når du begränsningen.<br/><br>* Detta gäller lika för både lokala anslutningar och molnanslutningar. |
-
-Måtten återspeglar användningen under den senaste veckan.  Om du vill visa en mer detaljerad vy över måtten kan du göra det genom att klicka på någon av sammanfattningspanelerna.  När du gör det öppnas detaljerade diagram för varje mått för din Premium-kapacitet.  Dessa diagram visar timbaserade sammanfattningar för den senaste veckan och kan hjälpa dig att isolera tidpunkter med specifika prestandarelaterade händelser i din Premium-kapacitet.  
-
-![Detaljerat användningsdiagram – processor](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Detaljerat användningsdiagram – minnesstorlek](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Detaljerat användningsdiagram – minnesförslöing](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-Du kan också exportera underliggande data för valfria mätvärdena till en CSV-fil.  Den här exporten ger detaljerad information i 3-minutersintervall för varje dag den senaste veckan.
+Power BI tillhandahåller en app för att övervaka kapacitetsanvändning. Mer information finns i [Övervaka Power BI Premium-kapaciteter i din organisation](service-admin-premium-monitor-capacity.md).
 
 ## <a name="what-premium-looks-like-for-users"></a>Hur Premium ser ut för användare
 I de flesta fall behöver användarna inte ens veta om att de befinner sig i Premium-kapacitet. Deras instrumentpaneler och rapporter bara fungerar. Som en visuell indikation visas en diamantikon bredvid arbetsytor som har Premium-kapacitet.

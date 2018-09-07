@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/15/2018
+ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
-ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
+ms.openlocfilehash: 592c3bf5fbd508d63236d16ca21164ee507df35b
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40256968"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300125"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -52,9 +52,9 @@ Den första fliken i administrationsportalen är **Användningsstatistik**. Anv�
 > [!NOTE]
 > Första gången du använder instrumentpanelen eller när du kommer tillbaka efter en lång tid utan att visa instrumentpanelen visas antagligen en skärm för inläsning medan vi läser in instrumentpanelen.
 
-När instrumentpanelerna har lästs in kommer du att se två områden med fönster. Det första området innehåller användningsdata för enskilda användare och det andra avsnittet har liknande information för grupper i din organisation.
+När instrumentpanelerna har lästs in kan du se två områden med fönster. Det första området innehåller användningsdata för enskilda användare och det andra avsnittet har liknande information för grupper i din organisation.
 
-Här är en uppdelning av vad som ska visas i varje sida vid sida:
+Här är en uppdelning av vad du kan se i varje panel:
 
 * Räknar separat instrumentpaneler, rapporter och datauppsättningar på användararbetsytan
   
@@ -150,13 +150,13 @@ Användare i organisationen kan publicera rapporter på webben. [Läs mer](servi
 
 ![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
 
-Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen publicera på webben är.
+Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen för publicering på webben är.
 
 |Visning av aktuellt objekt |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
 |**Publicera på webben** under rapportens **Fil**meny.|Aktiverad för alla|Inte synlig för alla|Endast synlig för behöriga användare eller grupper.|
 |**Hantera inbäddade koder** under **Inställningar**|Aktiverad för alla|Aktiverad för alla|Aktiverad för alla<br><br>Alternativet * **Ta bort** endast för behöriga användare eller grupper.<br>* **Hämta koder** aktiverat för alla.|
-|**Inbäddade koder** i administrationsportalen|Statusen visas något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad|Statusen visar **Inaktiverad**|Statusen visas något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad<br><br>Om en användare inte har behörighet baserad på klientinställningen, visas statusen som **intrång**.|
+|**Inbäddade koder** i administrationsportalen|Statusen visar något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad|Statusen visar **Inaktiverad**|Statusen visar något av följande:<br>* Aktiv<br>* Stöds ej<br>* Blockerad<br><br>Om en användare inte har behörighet baserat på klientinställningen visas statusen **Intrång**.|
 |Befintliga publicerade rapporter|Alla aktiverade|Alla inaktiverade|Rapporter fortsätta att visas för alla.|
 
 ### <a name="export-data"></a>Exportera data
@@ -166,7 +166,7 @@ Användare i organisationen kan exportera data från ett fönster eller en visua
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> När du inaktiverar **Exportera data** kommer inte användare att kunna använda funktionen **Analysera i Excel** eller Power BI-tjänsten live-anslutning.
+> När du inaktiverar **Exportera data** kan användare inte heller använda funktionen **Analysera i Excel** eller live-anslutning till Power BI-tjänsten.
 
 ### <a name="export-reports-as-powerpoint-presentations"></a>Exportera rapporter som PowerPoint-presentationer
 
@@ -210,12 +210,14 @@ Här kan du [läsa mer om att pusha appar](service-create-distribute-apps.md#how
 ## <a name="integration-settings"></a>Inställningar för integrering
 
 ### <a name="ask-questions-about-data-using-cortana"></a>Ställ frågor om data med hjälp av Cortana
+
 Användare i organisationen kan ställa frågor om sina data med hjälp av Cortana.
 
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Analysera i Excel med lokala datauppsättningar
+
 Användare i organisationen kan använda Excel för att visa och interagera med lokala Power BI-datauppsättningar. [Läs mer](service-analyze-in-excel.md)
 
 > [!NOTE]
@@ -230,7 +232,9 @@ Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringe
 Användare i organisationen kan använda externa sökfunktioner som förlitar sig på Azure Search. Användare kan till exempel använda Cortana för att hämta viktig information direkt från Power BI-instrumentpaneler och Power BI-rapporter. [Läs mer](service-cortana-intro.md)
 
 ## <a name="custom-visuals-settings"></a>Inställningar för anpassade visuella objekt
+
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Aktivera anpassad visuell information för hela organisationen
+
 Användare i organisationen kan interagera med och dela anpassad visuell information. [Läs mer](power-bi-custom-visuals.md)
 
 > [!NOTE]
@@ -292,11 +296,23 @@ Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapport
 
 ## <a name="capacity-settings"></a>Kapacitetsinställningar
 
-På fliken för kapacitetsinställningar kan du hantera alla premiumfunktioner för Power BI som har köpts för din organisation. Alla användare inom din organisation ser fliken premiuminställningar, men kan endast se innehåll om de är tilldelade som antingen **kapacitetadministratör** eller en användare som har tilldelningsbehörighet. Om en användare inte har några behörigheter visas följande meddelande.
+### <a name="premium-settings"></a>Premiuminställningar
 
-![](media/service-admin-portal/premium-settings-no-access.png "Ingen åtkomst till Premiuminställningar")
+På fliken Premiuminställningar kan du hantera alla premiumfunktioner för Power BI (Em eller P SKU) som har köpts för din organisation. Alla användare inom din organisation ser fliken Premiuminställningar, men kan endast se innehåll om de har angetts som antingen **kapacitetadministratör** eller en användare som har tilldelningsbehörighet. Om en användare inte har några behörigheter visas följande meddelande.
 
-Mer information om hur du hanterar premiuminställningar finns [hantera Power BI Premium](service-admin-premium-manage.md).
+![Administratörsinställningar till Power BI Premium](media/service-admin-portal/premium-settings-no-access.png "Ingen åtkomst till premiuminställningar")
+
+Mer information om hur du hanterar premiuminställningar finns [Hantera Power BI Premium](service-admin-premium-manage.md).
+
+### <a name="power-bi-embedded-settings"></a>Inställningar för Power BI Embedded
+
+På fliken för Power BI Embedded-inställningar kan du visa de Power BI Embedded-kapaciteter (A SKU) som du har köpt för din kund. Eftersom du kan bara köpa A SKU:er från Azure kan du [hantera inbäddade kapaciteter i Azure](developer/azure-pbie-create-capacity.md) från **Azure Portal**.
+
+![Administratörsinställningar för Power BI Embedded](media/service-admin-portal/manage-pbie-capacities-01.png)
+
+![Information om administratörsinställningar för Power BI Embedded](media/service-admin-portal/manage-pbie-capacities-02.png)
+
+Mer information om hur du hanterar inställningar för Power BI Embedded (A SKU) finns i [Vad är Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
 ## <a name="embed-codes"></a>Bädda in koder
 
@@ -307,10 +323,10 @@ Som administratör kan du visa de inbäddningskoder som har genererats för din 
 ## <a name="organization-visuals"></a>Visuella organisationsobjekt
 
 Med fliken för visuella organisationsobjekt kan du distribuera och hantera anpassade visuella objekt i din organisation, så att du lätt kan distribuera egna anpassade visuella objekt i organisationen, och så att rapportförfattare enkelt kan identifiera och importera dessa visuella objekt direkt från Power BI Desktop till sina rapporter.
- 
+
 Sidan visar alla de anpassade visuella objekt som för närvarande har distribuerats i organisationens databas.
- 
-![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+![Organisera visuellt objekt som administratör](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### <a name="add-a-new-custom-visual"></a>Lägga till ett nytt anpassat visuellt objekt
 
@@ -320,26 +336,38 @@ Om du vill lägga till ett nytt anpassat visuellt objekt i listan väljer du **L
 
 > [!WARNING]
 > Ett anpassat visuellt objekt kan innehålla kod som innebär säkerhets- eller integritetsrisker. Kontrollera att författaren och det visuella objektets källa är betrodda innan du distribuerar till organisationens databas.
-> 
 
 Fyll i fälten:
- 
+
 * Välj en .pbiviz-fil (obligatoriskt): välj en fil för ett anpassat visuellt objekt att överföra. Endast versionshanterade visuella API-objekt stöds, och här kan du läsa vad det innebär.
+
 Innan du överför ett anpassat visuellt objekt bör du granska objektet ur säkerhets- och sekretessynvinkel för att säkerställa att det uppfyller din organisations standarder. Läs mer om säkerhet och anpassade visuella objekt.
- 
+
 * Namnge ditt anpassade visuella objekt (obligatoriskt): ge det visuella objektet en kort rubrik så att Power BI Desktop-användare lätt kan förstå hur det fungerar
- 
-* Ikon (obligatoriskt): den ikonfil som ska visas i användargränssnittet för Power BI Desktop.
- 
+
+* Ikon (obligatoriskt): den ikonfil som visas i användargränssnittet för Power BI Desktop.
+
 * Beskrivning: en kort beskrivning av det visuella objektet som ger användaren mer kontext och kunskap
- 
+
 Initiera överföringsförfrågan genom att välja Använd. Om detta lyckas visas det nya objektet i listan. Om det inte lyckas får du ett felmeddelande
- 
+
 ### <a name="delete-a-custom-visual-from-the-list"></a>Ta bort ett anpassat visuellt objekt från listan
 
 Välj papperskorgen om du vill ta bort det visuella objektet permanent från databasen.
-Viktigt: Du kan inte ångra borttagningen. När det visuella objektet väl har tagits bort upphör det omedelbart att återges i befintliga rapporter. Även om du överför samma visuell objekt igen, så ersätter det inte det föregående objekt som tagits bort. Användarna måste importera det nya visuella objektet på nytt och ersätta den instans de har i sina rapporter.
- 
+Viktigt: Du kan inte ångra borttagningen. När det visuella objektet väl har tagits bort upphör det omedelbart att återges i befintliga rapporter. Även om du överför samma visuella objekt igen, så ersätter det inte det föregående objekt som tagits bort. Användarna kan importera det nya visuella objektet på nytt och ersätta den förekomst de har i sina rapporter.
+
+### <a name="disable-a-custom-visual-in-the-list"></a>Inaktivera ett anpassat visuellt objekt i listan
+
+Välj kugghjulsikonen om du vill inaktivera det visuella objektet från organisationens lager. Inaktivera det anpassade visuella objektet i avsnittet **Åtkomst**.
+
+När du har inaktiverat det visuella objektet återges inte det visuella objektet i befintliga rapporter utan visar felmeddelandet nedan.
+
+*Detta anpassade visuella objekt är inte längre tillgängligt. Kontakta din administratör om du vill ha mer information.*
+
+Visuella objekt som har bokmärken fungerar dock fortfarande.
+
+Efter uppdatering eller byte av administratör bör Power BI Desktop-användare starta om programmet eller uppdatera webbläsaren i Power BI-tjänsten för att se uppdateringarna.
+
 ### <a name="how-to-update-a-visual"></a>Så här uppdaterar du ett visuellt objekt
 
 Om du vill uppdatera en visualisering i databasen eftersom det finns en ny version av visualiseringen (t.ex. felkorrigeringar, nya funktioner, etc.), väljer du ikonen **Uppdatera** och laddar upp den nya filen. Kontrollera att visualiserings-ID förblir oförändrat. Den nya filen ersätter den tidigare filen för alla rapporter i hela organisationen. Men om den nya versionen av visualiseringen kan skada någon användnings- eller datastruktur av den tidigare versionen av visualiseringen ska du inte ersätta den tidigare versionen. I stället bör du skapa en ny lista för den nya versionen av visualiseringen. Lägg till exempel till ett nytt versionsnummer (version X.X) till rubriken för den nya listade visualiseringen. På det här sättet är det klart att det är samma visualisering men bara med ett uppdaterat versionsnummer så att befintliga rapporter inte skadar deras funktioner. Kontrollera igen att visualiserings-ID förblir oförändrat. Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.

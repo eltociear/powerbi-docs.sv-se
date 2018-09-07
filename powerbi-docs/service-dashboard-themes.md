@@ -2,20 +2,20 @@
 title: Använda instrumentpanelsteman i Power BI-tjänsten
 description: Lär dig hur du använder en anpassad färgpalett och hur du tillämpar den på en hel instrumentpanel i Power BI-tjänsten
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 25bd28db7b31921d5f1a02ae72cee47207134f2a
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944662"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241486"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Använda instrumentpanelsteman i Power BI-tjänsten
 Med **instrumentpanelsteman** kan du använda ett färgtema på hela instrumentpanelen, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **instrumentpanelstema** används färgerna från det tema du valt på alla visuella objekt på instrumentpanelen (med några få undantag, som beskrivs längre ned i den här artikeln).
@@ -46,7 +46,7 @@ Standardtemat för Power BI-instrumentpaneler är **Ljust**. Om du vill anpassa 
 
 ![Välj Anpassat i listrutan](media/service-dashboard-themes/power-bi-theme-custom.png)
 
-Använd anpassade alternativ om du vill skapa ett eget instrumentpanelstema. Om du vill lägga till en bakgrundsbild rekommenderar vi att bilden har en upplösning på minst 1 920 × 1 080.  
+Använd anpassade alternativ om du vill skapa ett eget instrumentpanelstema. Om du vill lägga till en bakgrundsbild rekommenderar vi att bilden har en upplösning på minst 1 920 × 1 080. Om du vill använda en bild som bakgrund överför du den bilden till en offentlig webbplats, kopierar URL:en och klistrar in den i fältet **Bild-URL**. 
 
 ### <a name="using-json-themes"></a>Använda JSON-teman
 Ett annat sätt att skapa ett anpassat tema är att ladda upp en JSON-fil som innehåller inställningar för alla färger som du vill använda på instrumentpanelen. I Power BI Desktop använder rapportförfattare JSON-filer för att [skapa teman för rapporter](desktop-report-themes.md). Dessa JSON-filer kan laddas upp till instrumentpaneler. Du kan också söka efter och ladda upp JSON-filer från [temagalleriet](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery) i Power BI-communityn 

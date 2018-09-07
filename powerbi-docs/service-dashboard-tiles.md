@@ -2,20 +2,20 @@
 title: Paneler på instrumentpanelen i Power BI-tjänsten
 description: Allt om paneler på instrumentpanelen i Power BI. Detta inkluderar paneler som skapas från SQL Server Reporting Services (SSRS).
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e53945e0a112d9498dc6798e2441dd3d925a64c1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 09fcce65539d89c9d42bc05369f13a6048eb96c2
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249078"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241601"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
 Instrumentpaneler och paneler på instrumentpanelen är en funktion i Power BI-tjänsten, inte Power BI Desktop. Paneler på instrumentpanelen kan inte skapas eller fästas i Power BI Mobile, [men de kan visas och delas](mobile-tiles-in-the-mobile-apps.md). Och i Power BI Mobile, kan du [lägga till bilder till din instrumentpanel med iPhone-appen](mobile-iphone-app-get-started.md).
@@ -67,9 +67,9 @@ Hämta en panel och [flytta runt den på instrumentpanelen](service-dashboard-ed
    
    * [Öppna kalkylbladet som användes för att skapa den här panelen ](service-reports.md) ![kalkylbladsikon](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [Visa i fokusläge ](service-focus-mode.md) ![fokusikon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+    * [Visa i fokusläge ](service-focus-mode.md) ![fokusikon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Exportera data som användes i panelen](power-bi-visualization-export-data.md) ![ikonen Exportera data](media/service-dashboard-tiles/export-icon.png)
-     * [Redigera rubrik och underrubrik, lägg till en hyperlänk, visa senaste uppdateringstid](service-dashboard-edit-tile.md) ![redigeringsikon](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Redigera rubrik och underrubrik, lägg till en hyperlänk](service-dashboard-edit-tile.md)![redigeringsikon](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Köra insikter ](service-insights.md) ![ikonen Insikter](media/service-dashboard-tiles/power-bi-insights.png)
      * [Fästa panelen till en annan instrumentpanel ](service-pin-tile-to-another-dashboard.md)
        ![fästikon](media/service-dashboard-tiles/pin-icon.jpg)

@@ -2,25 +2,25 @@
 title: Power BI Premium – vad är det?
 description: Power BI Premium är dedikerad kapacitet för din organisation eller ditt team som ger mer tillförlitlig prestanda och större datavolymer utan att du behöver köpa licenser per användare.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2018
-ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 81a03c7728d92bcc78dba9a02cbe4c45f582fd3d
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: f7024b3e4827201edb4137eb513333030e39059f
+ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257044"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43250760"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – vad är det?
 Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation eller ditt team. Det ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också frekvent distribution av innehåll utan att du behöver köpa licenser per användare för tittare.
 
-Du kan dra nytta av Power BI Premium genom att tilldela arbetsytor till en Premium-kapacitet. *Premium-kapacitet* är en resurs som är dedikerad för din organisation. Arbetsytor som inte tilldelas en premium-kapacitet kommer att finnas i en delad kapacitet.
+Du kan dra nytta av Power BI Premium genom att tilldela arbetsytor till en Premium-kapacitet. *Premium-kapacitet* är en resurs som är dedikerad för din organisation. Arbetsytor som inte tilldelas en premium-kapacitet finns i en delad kapacitet.
 
 Med *delad kapacitet* körs dina arbetsbelastningar på dataresurser som delas av andra kunder. I delad kapacitet finns fler gränser för enskilda användare för att säkerställa kvaliteten på upplevelsen för alla användare.
 
@@ -29,6 +29,7 @@ Med *delad kapacitet* körs dina arbetsbelastningar på dataresurser som delas a
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="capacity-tiers"></a>Kapacitetsnivåer
+
 Det finns två typer av kapaciteter i Power BI. Delad kapacitet och Power BI Premium-kapacitet. Här tar vi en titt på skillnaderna är mellan dem.
 
 |  | Delad kapacitet | Power BI Premium-kapacitet |
@@ -44,9 +45,10 @@ Det finns två typer av kapaciteter i Power BI. Delad kapacitet och Power BI Pre
 *<sup>2</sup> Framtida förbättringar kommer till Power BI Premium efter GA.*
 
 ### <a name="premium-capacity"></a>Premiumkapacitet
+
 Om du vill börja använda en Power BI Premium-kapacitet, måste du tilldela en arbetsyta till en kapacitet. Mer information om hur du tilldelar en arbetsyta till en premiumkapacitet finns i [Hantera Power BI Premium](service-admin-premium-manage.md).
 
-När en arbetsyta backas upp av premiumkapacitet, får du fördelarna med Power BI Premium.
+När en premiumkapacitet backar upp en arbetsyta får du fördelarna med Power BI Premium.
 
 * **Schemalagda uppdateringar**: med delad kapacitet är schemalagda uppdateringar för importerade modeller begränsade till 8 gånger per dag. Antalet uppdatering ökas till 48 gånger per dag för datamängder i Premium-arbetsytor. Detta gäller inte för schemalagda uppdateringar för cachelagring av för DirectQuery. De är de samma för Premium och delade kapaciteter.
 * **Isolering med dedikerad maskinvara**: vid delad kapacitet kan prestanda för rapporter och instrumentpaneler påverkas av resurskrav från andra arbetsbelastningar i kapaciteten, trots vårt skydd mot det. Premium innehåller däremot mer konsekvent och tillförlitlig prestanda för arbetsbelastningar genom att isolera dem från orelaterade arbetsbelastningar.
@@ -54,18 +56,20 @@ När en arbetsyta backas upp av premiumkapacitet, får du fördelarna med Power 
 Om en app backas upp av premiumkapacitet (det vill säga att den publicerades från en app-arbetsyta som har tilldelats Premium), kan den publicerade appen sedan användas av alla användare i organisationen oavsett vilken licens de tilldelats.
 
 ### <a name="shared-capacity"></a>Delad kapacitet
-Som standard är din arbetsyta i delad kapacitet. Detta inkluderar din personliga *Min arbetsyta* tillsammans med app-arbetsytor. En Delad kapacitet är den upplevelse du är van att arbeta med i Power BI, där dina arbetsbelastningar körs på dataresurser som delas av andra kunder.
+
+Som standard finns din arbetsyta i en delad kapacitet. Detta inkluderar din personliga *Min arbetsyta* tillsammans med app-arbetsytor. Delad kapacitet är den upplevelse du är van vid att arbeta med i Power BI, där dina arbetsbelastningar körs på dataresurser som delas av andra kunder.
 
 <a name="premiumskus"/>
 
 ### <a name="premium-capacity-nodes"></a>Noder för premiumkapacitet
+
 Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-kärnor. Mer information om specifika SKU-erbjudanden och kostnader finns i [Priser för Power BI](https://powerbi.microsoft.com/pricing/). En [kostnadskalkylator](https://powerbi.microsoft.com/calculator/) är också tillgänglig. Mer information om kapacitetsplanering för inbäddade analyser finns i [Planera ett white paper för Power BI-företagsdistribution](https://aka.ms/pbienterprisedeploy).
 
 * P-noder kan användas för inbäddade distributioner eller tjänstedistributioner.
 * EM-noder kan endast användas för inbäddade distributioner. EM-noder saknar åtkomst till premiumfunktioner, till exempel att dela appar till användare som inte har någon Power BI Pro-licens.
 
 >[!NOTE]
->Länkar i den här tabellen fungerar bara korrekt för användare som är globala administratörer för Office 365 – andra får ett 404-fel. 
+>Länkar i den här tabellen fungerar bara korrekt för användare som är globala administratörer för Office 365 – andra får ett 404-fel.
 
 | Kapacitetsnod | Totalt antal virtuella kärnor<br/>*(Serverdel + klientdel)* | Virtuella kärnor för serverdel | Virtuella kärnor för klientdel | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning | Tillgängligt |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -92,4 +96,3 @@ Power BI Premium innehåller rättigheten att köra Power BI-rapportserver lokal
 [Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-
