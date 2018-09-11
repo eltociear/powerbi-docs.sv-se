@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: 08ead2570602538218085327c6d385c36e0d7e8c
+ms.sourcegitcommit: 8bad5ed58e9e406aca53996415b1240c2972805e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40256892"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44343333"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda 
 Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga rapporter i Power BI.  
@@ -29,7 +29,7 @@ Ett vanligt fel är att låta standardvyn för tabellen vara ofiltrerad – d.v.
 Vi rekommenderar ett liknande tillvägagångssätt som ovanstående för all visuell information på dina rapporter. Fråga dig själv, behövs alla data i den här visuella informationen? Finns det sätt att filtrera ner mängden data som visas i den visuella informationen med minimal påverkan på slutanvändarens upplevelse? Observera att speciellt tabeller kan vara väldigt kostsamt. 
  
 ## <a name="limit-visuals-on-report-pages"></a>Begränsa visuell information på rapportsidorna 
-Principen ovan gäller likvärdigt för all visuell information på en viss rapport. Vi rekommenderar att du begränsar all visuell information på en viss rapport till bara vad som krävs. Detaljerade sidor är ett bra sätt att ge mer information utan att belasta rapporten med mer visuell information.  
+Principen ovan gäller likvärdigt för all visuell information på en viss rapport. Vi rekommenderar att du begränsar den visuella informationen på en rapport till endast det som är nödvändigt. Detaljerade sidor är ett bra sätt att ge mer information utan att belasta rapporten med mer visuell information.  
  
 ## <a name="optimize-your-model"></a>Optimera din modell 
 Några metodtips: 
@@ -38,7 +38,7 @@ Några metodtips:
 - Undvik olika antal fält med hög kardinalitet – d.v.s. miljontals distinkta värden.  
 - Vidta åtgärder för att undvika fält med onödig precision och hög kardinalitet. Du kan till exempel dela upp höga unika datetime-värden i separata kolumner – t.ex. månad, år, datum, o.s.v. Eller använd om möjligt avrundning av fält med hög precision för att minska kardinaliteten – (t.ex. 13,29889 -> 13,3). 
 - Använd heltal i stället för strängar där det är möjligt. 
-- Vara försiktig med DAX-funktioner som behöver testa varje rad i en tabell – t.ex. RANKX – i värsta fall kan dessa funktioner öka körningen och minneskraven exponentiellt vilket ökar tabellstorleken linjärt. 
+- Var försiktig med DAX-funktioner. De behöver testa varje rad i en tabell, till exempel RANKX. I värsta fall kan dessa funktioner öka körtiden och minneskraven exponentiellt när tabellstorleken ökar linjärt. 
 - När du ansluter till datakällor via DirectQuery, överväg att indexera kolumner som ofta filtreras eller delas igen – detta ger avsevärt bättre svarstider för rapporten.  
  
 
@@ -59,7 +59,7 @@ I följande avsnitt beskrivs allmänna metodtips för att ansluta via DirectQuer
 - Push-överför beräknade kolumner och mått till källan om möjligt – ju närmre de är att källan, desto högre sannolikhet för god prestanda. 
 - Optimera! Förstå körningsplaner för dina frågor, lägg till index för kolumner som ofta filtreras o.s.v. 
 
-### <a name="modelling-guidance"></a>Vägledning för modellering 
+### <a name="modeling-guidance"></a>Vägledning för modellering 
 - Starta i Power BI Desktop. 
 - Undvik komplexa frågor i Frågeredigeraren. 
 - Använd inte relativ datumfiltrering i Frågeredigeraren.  
@@ -81,7 +81,7 @@ Visuell information som har fästs på instrumentpaneler betjänas av frågecach
 > När du fäster live-rapportpaneler till en instrumentpanel kan de inte hanteras från frågecachen – de fungerar i stället som rapporter och skapar frågor för serverdelskärnor direkt. 
  
 
-Som namnet antyder får du bättre och mer konsekvent prestanda om du hämtar data från frågecachen än om du förlitar dig på datakällan. Ett sätt att dra nytta av den här funktionen är att låta instrumentpaneler vara första landningssidan för dina användare. Fäst visuell information som används och begärs ofta till instrumentpanelerna. På så sätt blir instrumentpanelerna en värdefull ”första försvarslinje” som ger konsekvent prestanda med mindre belastning på kapaciteten. Användare kan fortfarande klicka fram till rapporten för att få reda på fler detaljer.  
+Som namnet antyder får du bättre och mer konsekvent prestanda om du hämtar data från frågecachen än om du förlitar dig på datakällan. Ett sätt att dra nytta av den här funktionen är att låta instrumentpaneler vara första landningssidan för dina användare. Fäst visuell information som används och begärs ofta till instrumentpanelerna. På så sätt blir instrumentpanelerna en värdefull ”första försvarslinje” vilket ger kontinuerlig prestanda med mindre belastning på kapaciteten. Användare kan fortfarande klicka fram till rapporten för att få reda på fler detaljer.  
  
 
 Observera att för DirectQuery och live-anslutning kan den här frågecachen uppdateras regelbundet genom att fråga datakällan. Som standard sker detta varje timme, även om detta kan konfigureras i datauppsättningens inställningar. Varje uppdatering av frågecache skickar frågor till den underliggande datakällan för att uppdatera cachen. Antal frågor som genereras beror på mängden visuell information som fäst på de instrumentpaneler som förlitar sig på datakällan. Observera att frågor genereras för varje säkerhetskontext om säkerhet på radnivå är aktiverad. Om du till exempel har två olika roller som användarna tillhör med två olika vyer av data, genereras två uppsättningar av frågor under uppdatering av frågecachen. 
@@ -110,7 +110,7 @@ Instruktioner följer nedan:
 
    Utdata ska vara en lista över program och deras öppna portar, till exempel:  
 
-   TCP    [::1]:55786            [::1]:55830            ESTABLISHED 
+   `TCP    [::1]:55786            [::1]:55830            ESTABLISHED`
 
    [msmdsrv.exe] 
 
@@ -142,7 +142,7 @@ Nätverksfördröjningen kan påverka rapportprestandan genom att öka den tid s
 
 Verktyg som [Azure-hastighetstest](http://azurespeedtest.azurewebsites.net/) ger en indikation om nätverksfördröjningen mellan klienten och Azure-regionen. Sträva generellt mot att hålla datakällor, gatewayer och Power BI-klustret så nära som möjligt för att minimera effekten av nätverksfördröjningen. Om nätverksfördröjningen är ett problem, kan du försöka hitta gatewayer och datakällor som är närmre Power BI-klustret genom att placera dem på virtuella datorer. 
 
-För att ytterligare förbättra nätverksfördröjningen, överväg att använda [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), vilket kan skapa snabbare och mer tillförlitliga nätverksanslutningar mellan klienter och Azure-datacenter. 
+För att ytterligare förbättra nätverksfördröjningen kan du använda [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/). Det innebär en möjlighet att skapa snabbare och mer tillförlitliga nätverksanslutningar mellan klienter och Azure-datacenter. 
 
 ## <a name="next-steps"></a>Nästa steg
 - [Planera en distribution med Power BI Enterprise](https://aka.ms/pbienterprisedeploy), med allomfattande vägledning för storskaliga distributioner av Power BI 
