@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8305b9eab95e2b13f9104de6bcefe3f03a95d2f5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 891d496fcdf809a816c9c18a6d21e4c486f76d76
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34254888"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726810"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips om hur du skapar rapporter i Power BI Desktop och Power BI-tjänsten
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop, Power BI-tjänsten *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad.
@@ -167,7 +167,7 @@ DAX är formelspråket för beräkningar i Power BI Desktop.  Det är optimerat 
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI-tjänsten *och* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportspower-bi-visualization-best-practicesmd"></a>Läs white paper: [Principerna för att utforma Power BI-rapporter](power-bi-visualization-best-practices.md)
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Läs white paper: [Principerna för att utforma Power BI-rapporter](visuals/power-bi-visualization-best-practices.md)
 I det här dokumentet redovisas bästa praxis för att utforma rapporter i Power BI. Vi börjar med planeringen och beskriver designprinciper som du kan använda i dina rapporter och för de sidor och enskilda visuella objekt som utgör rapporten. Många av dessa bästa praxis gäller även för utformning av instrumentpaneler.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Läsa och/eller titta på reportage om att ”utforma visuellt snygga rapporter (och instrumentpaneler) i Power BI”
@@ -209,7 +209,7 @@ Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar sk
 * Var uppmärksam på hur [diagram sorteras](power-bi-report-change-sort.md).  Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått.  Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
 * Cirkeldiagram fungerar som bäst med mindre än åtta kategorier. Eftersom man inte kan jämföra värden sida vid sida, är det svårare för att jämföra värden i ett cirkeldiagram än i ett stapel- eller kolumndiagram. Cirkeldiagram är bättre för att visa förhållanden mellan en del och helheten, än för att jämföra delarna med varandra. Och måttdiagram är bra för att visa aktuell status i kontexten för ett mål.    
 
-Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ### <a name="learn-more-about-best-practice-dashboard-design"></a>Läs mer om bästa praxis för instrumentpanelsutformning
 Några av våra favoritböcker är:

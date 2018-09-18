@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 5da624f92093111c1996d9b1c5080cd58a906a45
-ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
+ms.openlocfilehash: b38c69d74141b28215e0a14a32fc7b03fab4fdbf
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43250783"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558480"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 Lär dig hur du kan hantera Power BI Premium- och Power BI Embedded-kapaciteter som tillhandahåller dedikerade resurser för ditt innehåll.
@@ -47,7 +47,7 @@ Alla globala Office 365-administratörer och Power BI-administratörer är autom
 Om du vill dra fördel av dedikerad kapacitet behöver du köpa en prenumeration på Power BI Premium i administrationscentret för Office 365 eller skapa en Power BI Embedded-resurs i Microsoft Azure Portal. Mer information finns i följande:
 
 * **Power BI Premium:** [Så här köper du Power BI Premium](service-admin-premium-purchase.md)
-* **Power BI Embedded:** [Skapa Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity)
+* **Power BI Embedded:** [Skapa Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
 
 När du köper Power BI Premium SKU:er får din klient motsvarande antal v-kärnor för användning i körkapacitet. Köp av en Power BI Premium P3 SKU ger till exempel klienten 32 v-kärnor.
 

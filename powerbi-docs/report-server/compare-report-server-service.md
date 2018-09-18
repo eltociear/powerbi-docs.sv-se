@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: c47722fda28fc45289858f082a0838f583b53dbb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 598b3e75aa134a5b5e2ee2a8c01316133b60fdac
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34296800"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727270"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -40,7 +40,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Snabba insikter | Nej | Ja | [Automatiskt skapa datainsikter med Power BI](../service-insights.md) 
 | Analysera i Excel | Nej | Ja | [Analysera i Excel](../service-analyze-in-excel.md) 
 | Sidnumrerade rapporter | Ja | Nej | Sidnumrerade rapporter är inte tillgängliga i Power BI-tjänsten, men du kan [fästa sidnumrerade rapportobjekt på Power BI-instrumentpaneler](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
-| Power BI-mobilappar | Ja | Ja | [Översikt över Power BI-mobilappar](../mobile-apps-for-mobile-devices.md) 
+| Power BI-mobilappar | Ja | Ja | [Översikt över Power BI-mobilappar](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ArcGIS-mappar | Nej | Ja | [ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri](../power-bi-visualization-arcgis.md)
 | E-postprenumerationer för Power BI-rapporter | Nej | Ja | [Prenumerera på en rapport eller en instrumentpanel](../service-report-subscribe.md) i Power BI-tjänsten 
 | E-postprenumerationer för sidnumrerade rapporter | Ja | Nej | [E-postleverans i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
@@ -48,7 +48,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Säkerhet på radnivå | Endast via datakälla i DirectQuery-läge | Tillgängligt i både DirectQuery- (datakälla) och Import-läge | [Säkerhet på radnivå (RLS)](../service-admin-rls.md) med Power BI 
 | Helskärmsläge | Nej | Ja | [Helskärmsläge](../service-fullscreen-mode.md) i Power BI-tjänsten 
 | Avancerat Office 365-samarbete | Nej | Ja | [Samarbeta på en apparbetsyta](../service-collaborate-power-bi-workspace.md) med Office 365 
-| R-visualiseringar | Nej | Ja | [Skapa visuella R-objekt](../service-r-visuals.md) i Power BI-tjänsten  
+| R-visualiseringar | Nej | Ja | [Skapa visuella R-objekt](../visuals/service-r-visuals.md) i Power BI-tjänsten  
 | Förhandsversionsfunktioner | Nej | Ja | [Anmäl dig till förhandsversionsfunktioner](../service-preview-features.md) i Power BI-tjänsten 
 | Anpassade visuella objekt | Ja | Ja | [Anpassade visuella objekt i Power BI](../power-bi-custom-visuals.md) 
 | Power BI Desktop | Version som är optimerad för rapportservern och som kan laddas ned med rapportservern | Version som är optimerad för Power BI-tjänsten, tillgänglig från Windows Store | [Power BI Desktop för rapportservern](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop för Power BI-tjänsten](http://aka.ms/pbidesktopstore)

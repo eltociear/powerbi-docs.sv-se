@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 585c1c854ed3e95cc176d34f442fec6416f23dcd
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623963"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726672"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hur samarbetar och delar jag i Power BI?
 
@@ -83,9 +83,9 @@ Du kan kommentera på en panel, rapport eller visualisering och sedan dela den m
 
 Du delar en ögonblicksbild av paneler, rapporten eller visualiseringen och mottagarna ser den precis som den var när du skickade e-postmeddelandet. E-postmeddelandet innehåller också en länk till instrumentpanelen eller rapporten. Om de har en licens för Power BI Pro, eller om innehållet ligger i en [Premium kapacitet](service-premium.md), och du redan har delat objektet med dem, kan de öppna den. Du kan skicka ögonblicksbilder av paneler till alla &#151; inte bara medarbetare i samma e-postdomän.
 
-Mer om [delning och kommentering för paneler, rapporter och visuella objekt](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) från iOS- och Android-appar.
+Mer om [delning och kommentering för paneler, rapporter och visuella objekt](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) från iOS- och Android-appar.
 
-Du kan också [dela en ögonblicksbild av en panel](mobile-windows-10-phone-app-get-started.md) från Power BI-appen för Windows 10-enheter.
+Du kan också [dela en ögonblicksbild av en panel](consumer/mobile/mobile-windows-10-phone-app-get-started.md) från Power BI-appen för Windows 10-enheter.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Skriva ut eller spara som PDF eller andra statiska filer
 Du kan skriva ut eller spara som PDF (eller andra statiska filformat) hela instrumentpaneler, paneler, rapportsidor eller visualiseringar från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång. Mer om att [skriva ut eller spara som en statisk fil](service-print.md).

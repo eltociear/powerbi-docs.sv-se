@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d683ce3d06e2ac6be6c51f257e4f9483e718e2d8
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: b34c16337158e784b0c41bd3e3fd93aca9504cd7
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624402"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727316"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -27,7 +27,7 @@ Med delning, vare sig om du delar innehåll i eller utanför din organisation, b
 
 Du kan dela instrumentpaneler och rapporter från de flesta platser i Power BI-tjänsten: dina favoriter, senaste, delade med mig (om ägaren tillåter det), min arbetsyta eller andra arbetsytor. När du delar en instrumentpanel eller en rapport, kan de som du delar med se den och interagera med den, men inte redigera den. De ser samma data som visas på instrumentpanelen eller i rapporterna, såvida inte [säkerhet på radnivå (RLS)](service-admin-rls.md) tillämpas. De medarbetare som du delar med kan också dela den med sina medarbetare, om du tillåter detta. Personerna utanför organisationen kan också visa och interagera med instrumentpanelen eller rapporten, men de kan inte dela den. 
 
-Du kan också [dela en instrumentpanel från vilken Power BI-mobilapp du vill](mobile-share-dashboard-from-the-mobile-apps.md). Du kan dela instrumentpaneler från Power BI-tjänsten och Power BI-appar, men inte från Power BI Desktop.
+Du kan också [dela en instrumentpanel från vilken Power BI-mobilapp du vill](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Du kan dela instrumentpaneler från Power BI-tjänsten och Power BI-appar, men inte från Power BI Desktop.
 
 ## <a name="video-share-a-dashboard"></a>Video: Dela en instrumentpanel
 Se hur Amanda delar sin instrumentpanel med dina kollegor i och utanför företaget. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.

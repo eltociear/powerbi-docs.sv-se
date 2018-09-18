@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/04/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5d57525e8aab3a3f7bfa1806661c4bf6e3ff981
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 3b1a6b9a0e95c6bbd628368d47b866da18643741
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34293891"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44725844"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI
 
@@ -80,5 +80,5 @@ Du kan följa samma steg för att göra en panel eller ett intervallutsnitt dyna
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Utsnitt i Power BI-tjänsten](power-bi-visualization-slicers.md)
+- [Utsnitt i Power BI-tjänsten](visuals/power-bi-visualization-slicers.md)
 - Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

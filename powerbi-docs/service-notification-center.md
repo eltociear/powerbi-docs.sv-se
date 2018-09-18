@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ca8b7ded6427f912933618ebdeaeeecea41b8681
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 8db686b842f01653e45e8d2d6313cb4ac39bcaeb
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249949"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727178"
 ---
 # <a name="power-bi-notifications"></a>Power BI-meddelanden
 Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, ändringar i din grupparbetsyta, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](service-set-data-alerts.md) samt i Power BI-mobilappar.
@@ -40,7 +40,7 @@ Titta när Amanda granskar meddelanden hon tagit emot, hanterar sina aviseringar
 ### <a name="next-steps"></a>Nästa steg
 * [Dataaviseringar i Power BI-tjänsten](service-set-data-alerts.md)
 * [Skapa ett Microsoft Flow som utlöses av en Power BI-dataavisering](service-flow-integration.md)
-* [Ställ in dataaviseringar i iPhone-appen (Power BI för iOS)](mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Ställ in dataaviseringar i iPhone-appen (Power BI för iOS)](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

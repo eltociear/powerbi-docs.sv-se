@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 15ca7461c1661b83e1fbb08b66e7d1843bdb1c9f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a86e9f93023e317ba665ec04bb3a67ebfbdfe8a1
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298951"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727454"
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Visa data som används för att skapa visualiseringen
 ## <a name="show-data"></a>Visa data
@@ -48,7 +48,7 @@ Du kan också exportera de data som används för att skapa visualiseringen som 
 
 ### <a name="next-steps"></a>Nästa steg
 [Exportera data från ett visuellt Power BI-objekt](power-bi-visualization-export-data.md)    
-[Visuella objekt i Power BI-rapporter](power-bi-report-visualizations.md)    
+[Visuella objekt i Power BI-rapporter](visuals/power-bi-report-visualizations.md)    
 [Power BI-rapporter](service-reports.md)    
 [Power BI – grundläggande begrepp](service-basic-concepts.md)    
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

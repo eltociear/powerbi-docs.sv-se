@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dc79282a5c221e85fae7838009f6cecf91cbfdb8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a9dc1d0f87102cc5bf66a3fb21b8be7af6a66059
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34246837"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726833"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow och Power BI
 
@@ -110,7 +110,7 @@ I den här uppgiften skapar vi ett enkelt flöde från början som utlöses av e
 ## <a name="next-steps"></a>Nästa steg
 * [Kom igång med Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
 * [Ange datavarningar i Power BI-tjänsten](service-set-data-alerts.md)
-* [Ange datavarningar på din iPhone](mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Ange datavarningar på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

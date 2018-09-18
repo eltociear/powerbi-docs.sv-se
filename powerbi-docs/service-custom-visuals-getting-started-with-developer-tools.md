@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
-ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
+ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40256914"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726695"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Använd utvecklingsverktyg för att skapa en anpassad visualisering
 Med anpassad visualisering kan du uppfylla dina användares behov och matcha appens design. Lär dig hur du skapar en anpassad visualisering för Power BI med utvecklingsverktygen.
@@ -388,7 +388,7 @@ Kör den visuella servern `pbiviz start` på din terminal/kommandoraden från ro
 Mer information finns i [Kör din visuella objekt](#running-your-visual) eller [Servercertifikatinstallation](#ssl-setup).
 
 ## <a name="next-steps"></a>Nästa steg
-[Visualiseringar i Power BI](power-bi-report-visualizations.md)  
+[Visualiseringar i Power BI](visuals/power-bi-report-visualizations.md)  
 [Anpassade visualiseringar i Power BI](power-bi-custom-visuals.md)  
 [Publicera anpassade visuella objekt i Office Store](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  

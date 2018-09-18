@@ -2,28 +2,28 @@
 title: Skapa ArcGIS-kartor från ESRI i Power BI
 description: 'Skapa ArcGIS-kartor från ESRI i Power BI '
 author: mihart
-manager: kvivek
+manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 127187367b2ae5680b50bc1e72de7214c522705e
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: 250ccba882a045417b2ae424cac81b6561cb2a41
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168076"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728259"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri
-De här självstudierna har skrivits utifrån en person som skapar en ArcGIS-karta. När en skapare delar en ArcGIS-karta med en kollega, kan kollegan visa och interagera med kartan men inte spara några ändringar. Mer information om hur du visar en ArcGIS-karta finns i [Interagera med ArcGIS-kartor](power-bi-visualizations-arcgis.md).
+De här självstudierna har skrivits utifrån en person som skapar en ArcGIS-karta. När en skapare delar en ArcGIS-karta med en kollega, kan kollegan visa och interagera med kartan men inte spara några ändringar. Mer information om hur du visar en ArcGIS-karta finns i [Interagera med ArcGIS-kartor](visuals/power-bi-visualizations-arcgis.md).
 
 Kombinationen av ArcGIS-kartor och Power BI tar mappningen längre än till bara presentation av punkter på en karta och till en helt ny nivå. Välj mellan grundläggande kartor, platstyper, teman, symbolformat och referensskikt för att skapa fantastiska informativa kartvisualiseringar. Kombinationen av auktoritära dataskikt på en karta med spatial analys ger en djupare förståelse av visualiseringens data.
 
- Du kan inte skapa en ArcGIS-karta på en mobil enhet, men du kan visa den och interagera med den. Se [Interagera med ArcGIS-kartor](power-bi-visualizations-arcgis.md).
+ Du kan inte skapa en ArcGIS-karta på en mobil enhet, men du kan visa den och interagera med den. Se [Interagera med ArcGIS-kartor](visuals/power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > GIS står för Geographic Information Science.
@@ -329,7 +329,7 @@ Detta är ett programfel som vi håller på att åtgärda.  Under tiden kan du, 
 
 **Stöder ArcGIS Maps för Power BI Esris Shapefiles?**
 
-ArcGIS Maps för Power BI identifierar automatiskt standardgränser som länder/regioner, stater/provinser och postnummer. Om du behöver lägga till egna former kan du göra det med hjälp av [Shape Maps for Power BI Desktop (Preview) (Forma kartor för Power BI Desktop (förhandsversion))](desktop-shape-map.md).
+ArcGIS Maps för Power BI identifierar automatiskt standardgränser som länder/regioner, stater/provinser och postnummer. Om du behöver lägga till egna former kan du göra det med hjälp av [Shape Maps for Power BI Desktop (Preview) (Forma kartor för Power BI Desktop (förhandsversion))](visuals/desktop-shape-map.md).
 
 **Kan jag visa mina ArcGIS-kartor offline?**
 
@@ -340,7 +340,7 @@ Nej, Power BI behöver nätverksanslutning för att visa kartor.
 Inte ännu. [Rösta på den här idén](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases) så skickar vi dig ett e-postmeddelande när vi börjar arbeta på den här funktionen.  
 
 ## <a name="next-steps"></a>Nästa steg
-[Interagera med en ArcGIS-karta som har delats med dig](power-bi-visualizations-arcgis.md)
+[Interagera med en ArcGIS-karta som har delats med dig](visuals/power-bi-visualizations-arcgis.md)
 
 [Blogginlägg som meddelar tillgängligheten för ArcGIS-kartor för Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

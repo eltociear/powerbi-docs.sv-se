@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 327e9d9973aabb17761b55d355598462ce70e20e
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944984"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726067"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
@@ -23,7 +23,7 @@ Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du b�
 Här följer några tips.
 
 > [!TIP]
-> Många av utformningsprinciperna för rapporter kan även tillämpas för instrumentpaneler.  Läs vår white paper [Best design principles for reports and visualizations (Bästa utformningsprinciperna för rapporter och visualiseringar)](power-bi-visualization-best-practices.md).
+> Många av utformningsprinciperna för rapporter kan även tillämpas för instrumentpaneler.  Läs vår white paper [Best design principles for reports and visualizations (Bästa utformningsprinciperna för rapporter och visualiseringar)](visuals/power-bi-visualization-best-practices.md).
 >
 >
 
@@ -51,7 +51,7 @@ Om texten och visualiseringarna på instrumentpanelen har samma storlek, får l�
 
 Men kom ihåg att tillhandahålla kontexten.  
 
-Läs mer om att [skapa en panel med bara ett tal](power-bi-visualization-card.md).
+Läs mer om att [skapa en panel med bara ett tal](visuals/power-bi-visualization-card.md).
 
 ## <a name="put-the-most-important-information-in-the-upper-corner"></a>Placera den viktigaste informationen i det övre hörnet
 De flesta läser uppifrån och ned, så placera mer allmän information högst upp och visa fler detaljer i den riktning som målgruppen läser (från vänster till höger eller från höger till vänster).
@@ -68,7 +68,7 @@ Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar sk
 * Var uppmärksam på hur [diagram sorteras](power-bi-report-change-sort.md).  Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått.  Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
 * Cirkeldiagram fungerar som bäst med mindre än åtta kategorier. Eftersom man inte kan jämföra värden sida vid sida, är det svårare för att jämföra värden i ett cirkeldiagram än i ett stapel- eller kolumndiagram. Cirkeldiagram är bättre för att visa förhållanden mellan en del och helheten, än för att jämföra delarna med varandra. Och måttdiagram är bra för att visa aktuell status i kontexten för ett mål.
 
-Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ## <a name="learning-more-about-best-practice-dashboard-design"></a>Mer om bästa praxis för instrumentpanelsutformning
 Överväg att lära dig mer om grundläggande Gestalt-principer för visuell perception och hur du tydligt kan kommunicera åtgärdsinriktad information i en kontext om du vill bli riktigt bra på att utforma instrumentpaneler. Som tur är finns det redan en mängd olika resurser tillgängliga och utströdda i våra bloggar. Några av våra favoritböcker är:

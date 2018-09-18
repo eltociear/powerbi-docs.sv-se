@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: e64850351c9bdc1877eed3a53323e7934e11fbe7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d6ab9619fd1419f94994b65fffef7ddcbfff3f3d
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445128"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727201"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -31,7 +31,7 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | [Power BI och GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Power BI kan vara en viktig del av din resa mot GDPR-efterlevnad. Syftet med det här dokumentet är att ge dig viss grundläggande förståelse för GDPR samt relatera denna till Power BI. Efterlevnad med GDPR är obligatoriskt i vissa situationer som beskrivs i det här dokumentet, men detta är inte en ”kryssa i-övning”. Det är också ett sätt att förbättra dina övergripande dataskydds- och sekretesskunskaper.|
 | [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|Det här dokumentet beskriver hur du distribuerar innehåll till användare utanför organisationen med hjälp av integrering av Azure Active Directory Business-to-business (AAD B2B).|
 | [Avancerade analyser med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver funktionerna i Power BI, inklusive förutsägelseanalyser, anpassade visualiseringar, R-integrering och data-analysuttryck. |
-| [Metodtips för design av rapporter och visuella objekt](power-bi-visualization-best-practices.md) |Här finns metodtips för att utforma rapporter i Power BI. |
+| [Metodtips för design av rapporter och visuella objekt](visuals/power-bi-visualization-best-practices.md) |Här finns metodtips för att utforma rapporter i Power BI. |
 | [Dubbelriktad filtrering](desktop-bidirectional-filtering.md) |Förklarar dubbelriktad korsfiltrering i Power BI Desktop (det omfattar även SQL Server Analysis Services 2016, som har samma funktioner). |
 | [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |DirectQuery har gjorts om för avsevärt förbättrad hastighet och prestanda för SQL Server 2016, men det är nu också mer komplext att förstå och implementera. |
 | [Power BI och SAP BW](https://aka.ms/powerbiandsapbw)| Det här dokumentet beskriver hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse).|

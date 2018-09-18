@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 94936092a86ee3ac46ed0516609b3beaf1589180
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 189134a82e183819f1d48be0b420c9f92a5e69b3
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40257119"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44725959"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tips för att ställa frågor i Frågor och svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
@@ -24,7 +24,7 @@ Den här listan över nyckelord är inte komplett.  Det bästa sättet att se om
 Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel ”är” omfattar vara, var, kommer att vara, har varit, har, hade, kommer att ha, gör, gjorde, gjort.  Och ”sortera” innehåller sorterade och sortering.  Dessutom känner Power BI igen och inkluderar ord i singularis och pluralis. Till exempel, Power BI känner igen ”dag” och ”dagar”.
 
 > [!NOTE]
-> Frågor och svar finns också tillgängligt i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile-apps-ios-qna.md).
+> Frågor och svar finns också tillgängligt i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](consumer/mobile/mobile-apps-ios-qna.md).
 > 
 > 
 

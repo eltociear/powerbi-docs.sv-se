@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 760eda5625bd52bf7129ba7cfe5f213921d469b7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a85733e8450c9e1d3574afb71ace64fa2622fe0c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247813"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44725637"
 ---
 # <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Skapa en ny rapport från en befintlig rapport (kopiera en rapport)
 Du kanske redan har en rapport som ansluter till din datauppsättning och har en del visuella objekt som du vill återanvända eller ändra.  Varför inte helt enkelt kopiera den rapporten och ha till grund för en ny rapport?  Om du vill göra det:
@@ -37,7 +37,7 @@ Du kanske redan har en rapport som ansluter till din datauppsättning och har en
 5. Ha roligt med att uppdatera och redigera din nya rapport.
 
 ## <a name="next-steps"></a>Nästa steg:
-[Skapa nya visualiseringar](power-bi-report-add-visualizations-ii.md)
+[Skapa nya visualiseringar](visuals/power-bi-report-add-visualizations-ii.md)
 
 [Ta bort visualiseringar](service-delete.md) du inte behöver
 

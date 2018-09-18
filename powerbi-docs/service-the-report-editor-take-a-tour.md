@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ef05531ee6080593d232e48a2118a9be7e8cbd19
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34299480"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726649"
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapportredigeraren... Ta en rundtur
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigera rapporter i Power BI-tjänsten och Power BI Desktop
@@ -65,7 +65,7 @@ Om du vill ta bort ett fält från visualiseringen så markera **X** till höger
 
 ![Ta bort Butikstyp från Förklaring](media/service-the-report-editor-take-a-tour/deletefield.png)
 
-Mer information finns i [Lägga till visualiseringar i en Power BI-rapport](power-bi-report-add-visualizations-i.md)
+Mer information finns i [Lägga till visualiseringar i en Power BI-rapport](visuals/power-bi-report-add-visualizations-i.md)
 
 ### <a name="format-your-visuals"></a>Formatera dina visuella objekt
 Öppna formatfönstret genom att välja färgrollerikonen. Vilket alternativ som är tillgängligt beror på vilken visualiseringstyp som har valts.
@@ -74,9 +74,9 @@ Mer information finns i [Lägga till visualiseringar i en Power BI-rapport](powe
 
 Formateringsmöjligheterna är nästan oändliga.  Om du vill veta mer, så utforska på egen hand eller läs följande artiklar:
 
-* [Anpassa visualiseringens rubrik, bakgrund och förklaring](power-bi-visualization-customize-title-background-and-legend.md)
-* [Färgformatering](service-getting-started-with-color-formatting-and-axis-properties.md)
-* [Anpassa egenskaper för x-axeln och y-axeln](power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Anpassa visualiseringens rubrik, bakgrund och förklaring](visuals/power-bi-visualization-customize-title-background-and-legend.md)
+* [Färgformatering](visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
+* [Anpassa egenskaper för x-axeln och y-axeln](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Lägg till analys i din visualiseringar
 Välj förstoringsglasikonen om du vill visa analysfönstret. Vilket alternativ som är tillgängligt beror på vilken visualiseringstyp som har valts.
@@ -126,7 +126,7 @@ Rapportarbetsytan är den plats där arbetet visas. När du använder fönstren 
 ## <a name="next-steps"></a>Nästa steg:
 [Skapa en rapport](service-report-create-new.md)
 
-Läs mer om rapporter i [Power BI-tjänsten](service-reports.md), [Power BI Desktop](desktop-report-view.md) och [Power BI Mobile](mobile-apps-view-phone-report.md).
+Läs mer om rapporter i [Power BI-tjänsten](service-reports.md), [Power BI Desktop](desktop-report-view.md) och [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
 
 [Power BI – grundläggande begrepp](service-basic-concepts.md)
 

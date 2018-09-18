@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: eacadb04935dd0c929a85904335b613f3d5d4d58
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 736d4b53f82255e84e3bd54a2177ae17c264039b
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251677"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726764"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
 I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter.
@@ -59,13 +59,13 @@ Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänst
 | [Duplicera en rapportsida](power-bi-report-copy-paste-page.md) | Nej  | Ja |
 | [Ta bort en rapportsida](service-delete.md) | nej | ja |
 |**Arbeta med rapportvisualiseringar**|
-| [Lägga till visuella objekt i en rapport](power-bi-report-add-visualizations-i.md) | Nej  | Ja |
+| [Lägga till visuella objekt i en rapport](visuals/power-bi-report-add-visualizations-i.md) | Nej  | Ja |
 | [Lägga till textrutor och former i en rapport](power-bi-reports-add-text-and-shapes.md) | Nej  | Ja |
 | [Använda rapportfönstret för formatering](service-the-report-editor-take-a-tour.md) | Nej | Ja |
 | [Ange visuella interaktioner](service-reports-visual-interactions.md) | Nej  | Ja |
 | [Visa data som används för att skapa visualiseringen](service-reports-show-data.md) | Nej  | Ja |
 | [Konfigurera detaljgranskning](power-bi-visualization-drill-down.md) | Nej  | Ja |
-| [Ändra vilken visualisering som används](power-bi-report-change-visualization-type.md) | Nej | Ja|
+| [Ändra vilken visualisering som används](visuals/power-bi-report-change-visualization-type.md) | Nej | Ja|
 | [Ta bort en visualisering, en textruta eller en form](service-delete.md)| Nej | Ja |
 
 

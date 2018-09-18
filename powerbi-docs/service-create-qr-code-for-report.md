@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d99081a3d77ebfa7115d7546c59adc42eab308ca
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 52c392123b6bc86b4a40d90a8479ed8fcd6dbc61
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34237955"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726373"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en rapport i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
 
 Du kan skapa en QR-kod i Power BI-tjänsten för alla rapporter, även för en rapport som du inte kan redigera. Placera sedan QR-koden på en lämplig plats. Du kan till exempel klistra in den i ett e-postmeddelande eller skriva ut och klistra in den på en specifik plats. 
 
-Kolleger som du har delat rapporten med kan skanna QR-koden för att få åtkomst till rapporten, direkt från [sina mobila enheter](mobile-apps-qr-code.md). De kan använda QR-kodsskannern finns i Power BI-appen eller någon annan QR-skanner som är installerad på enheten. De kan också [skanna en QR-kod för en rapport med appen Power BI for Mixed Reality](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+Kolleger som du har delat rapporten med kan skanna QR-koden för att få åtkomst till rapporten, direkt från [sina mobila enheter](consumer/mobile/mobile-apps-qr-code.md). De kan använda QR-kodsskannern finns i Power BI-appen eller någon annan QR-skanner som är installerad på enheten. De kan också [skanna en QR-kod för en rapport med appen Power BI for Mixed Reality](consumer/mobile/mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="create-a-qr-code-for-a-report"></a>Skapa en QR-kod för en rapport
 1. Öppna rapporten i Power BI-tjänsten.
@@ -48,8 +48,8 @@ Power BI genererar QR-koden som en JPG-fil som kan skrivas ut.
 2. Klipp ut QR-koden längs med kanten och fäst den på en plats som är relevant för panelen. 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Ansluta till Power BI-data från verkligheten](mobile-apps-data-in-real-world-context.md) med mobilapparna
-* [Skanna en QR-kod i Power BI från din mobila enhet](mobile-apps-qr-code.md)
+* [Ansluta till Power BI-data från verkligheten](consumer/mobile/mobile-apps-data-in-real-world-context.md) med mobilapparna
+* [Skanna en QR-kod i Power BI från din mobila enhet](consumer/mobile/mobile-apps-qr-code.md)
 * [Skapa en QR-kod för en panel](service-create-qr-code-for-tile.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

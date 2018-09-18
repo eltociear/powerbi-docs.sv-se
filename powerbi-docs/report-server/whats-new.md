@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: d9b0cc26a3662b49cd7ed14a3a645ddf2a4536bc
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: 648938006cd15e2bb92b305aa9a2af24d028cead
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40258037"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726948"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -32,7 +32,7 @@ Relaterad information om nyheter i Power BI finns i:
 
 * [Nyheter i Power BI-tjänsten](../service-whats-new.md)
 * [Nyheter i Power BI Desktop](../desktop-latest-update.md)
-* [Nyheter i mobilapparna för Power BI](../mobile-whats-new-in-the-mobile-apps.md)
+* [Nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## <a name="august-2018"></a>Augusti 2018
 

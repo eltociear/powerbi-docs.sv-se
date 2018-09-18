@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: c1f9da598abee29a1d8eef0419fcb472f0a1467e
-ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
+ms.openlocfilehash: e83224932048aeab2dde6187eb217da7d89fed85
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241532"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558587"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -79,7 +79,7 @@ Här är en lista över några skillnader som du kan använda de olika funktione
 |  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Köp  |Azure Portal |Office |Office |
-|Användningsfall | Bädda in innehåll i ditt eget program | <li> Bädda in innehåll i ditt eget program <br><br></br> <li> Bädda in innehåll i MS Office-program: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (gäller inte mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Bädda in innehåll i ditt eget program <br><br></br> <li> Bädda in innehåll i MS Office-program: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (gäller inte mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Dela innehåll med Power BI-användare via [Power BI-tjänsten](https://powerbi.microsoft.com/en-us/)  |
+|Användningsfall | Bädda in innehåll i ditt eget program | <li> Bädda in innehåll i ditt eget program <br><br></br> <li> Bädda in innehåll i MS Office-program: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (gäller inte mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Bädda in innehåll i ditt eget program <br><br></br> <li> Bädda in innehåll i MS Office-program: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (gäller inte mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Dela innehåll med Power BI-användare via [Power BI-tjänsten](https://powerbi.microsoft.com/en-us/)  |
 |Fakturering |Varje timma |Varje månad |Varje månad |
 |Bindningstid  |Ingen bindningstid |Varje år  |Varje månad/varje år |
 |Skillnad |Fullständig elasticitet. Kan skapa upp/ner, pausa/återuppta resurser i Azure Portal eller med API  |Kan användas för att bädda in innehåll i SharePoint Online och Microsoft Teams (gäller inte mobilapp) |Kombinera att bädda in i applikationer och använda Power BI-tjänsten i samma utsträckning |
@@ -133,7 +133,7 @@ Ja, det finns PowerShell-cmdletar och Azure Resource Manager (ARM) API:er för a
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Vad är den dedikerade kapacitetsrollen för PBI Embedded i en PBI Embedded-lösning?
 
-För att [flytta upp din lösning till produktion](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) behöver du Power BI-innehållet (apparbetsyta som du använder i ditt program som tilldelas till en Power BI Embedded-kapacitet (A SKU).
+För att [flytta upp din lösning till produktion](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) behöver du Power BI-innehållet (apparbetsyta som du använder i ditt program som tilldelas till en Power BI Embedded-kapacitet (A SKU).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>I vilka Azure-regioner är PBI Embedded tillgängligt?
 
@@ -158,11 +158,11 @@ Autentisering och auktorisering för det användarna kommer att implementeras av
 
 Om du redan har en Azure AD-klient kan du använda en befintlig katalog och skapa en ny Azure AD-klient för att skydda ditt inbäddade innehåll.
 
-Du kan skaffa en AAD-token genom att använda något av Azure Active Directory-autentiseringsbiblioteken – https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Det finns klientbibliotek för flera plattformar.
+Du kan skaffa en AAD-token genom att använda något av Azure Active Directory-autentiseringsbiblioteken – https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. Det finns klientbibliotek för flera plattformar.
 
 ### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Mitt program använder redan AAD för användarautentisering. Hur kan den här identiteten användas vid Power BI-autentisering i ett scenario där ”användaren äger data”? 
 
-Standard är flödet för OAuth (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) Programmet måste konfigureras för att kräva behörigheter till Power BI-tjänsten (med nödvändiga omfattningar), och när du har en användartoken för din app anropar du ADAL API AcquireTokenAsync med din användaråtkomsttoken och anger resurs-URL för Power BI som resurs-ID. Här nedan visas ett kodfragment för hur detta kan göras:
+Standard är flödet för OAuth (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) Programmet måste konfigureras för att kräva behörigheter till Power BI-tjänsten (med nödvändiga omfattningar), och när du har en användartoken för din app anropar du ADAL API AcquireTokenAsync med din användaråtkomsttoken och anger resurs-URL för Power BI som resurs-ID. Här nedan visas ett kodfragment för hur detta kan göras:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -299,7 +299,7 @@ Information om hur du redigerar AAD-registrerade program finns [här](https://do
 
 ### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Hur kan jag redigera min Power BI-användarprofil eller mina Power BI-data?
 
-Mer information om hur du redigerar dina Power BI-data finns [här](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+Mer information om hur du redigerar dina Power BI-data finns [här](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 Mer information finns i [Felsökning av ditt inbäddade program](embedded-troubleshoot.md)
 

@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2d8509c83ccce3d76926d926c64061ca78c100d
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: fc4d62134bccae1a1ac0fd10444dd47c84ecc945
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256180"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727040"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paket i Power BI-tjänsten
 Du kan använda det kraftfulla [R-programmeringsspråket](https://www.r-project.org/) för att skapa visuella objekt i Power BI-tjänsten. Många R-paket stöds i Power BI-tjänsten (och fler läggs till hela tiden), men vissa paket stöds inte.
 
-Följande avsnitt innehåller en alfabetisk tabell som visar vilka R-paket som stöds i Power BI och vilka som inte gör det. Mer information om R i Power BI finns i artikeln [Visuella R-objekt](service-r-visuals.md).
+Följande avsnitt innehåller en alfabetisk tabell som visar vilka R-paket som stöds i Power BI och vilka som inte gör det. Mer information om R i Power BI finns i artikeln [Visuella R-objekt](visuals/service-r-visuals.md).
 
 ## <a name="request-support-for-a-new-r-package"></a>Begära stöd för ett nytt R-paket
 De R-paket som stöds för **Power BI-tjänsten** hittar du i avsnittet med rubriken **Paket som stöds**. Om du vill begära support för ett R-paket som inte finns i listan kan du skicka ett e-postmeddelande med din förfrågan till [R i Power BI-feedbackteamet](mailto:rinpbifb@microsoft.com).
@@ -99,7 +99,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |bfp| 0.0-35| https://cran.r-project.org/web/packages/bfp/index.html|
 |BH| 1.62.0-1| https://cran.r-project.org/web/packages/BH/index.html|
 |bindr|0.1| https://cran.r-project.org/web/packages/bindr/index.html|
-|bindrcpp|0.2| https://cran.r-project.org/web/packages/bindrcpp/index.html|
+|bindrcpp|0,2| https://cran.r-project.org/web/packages/bindrcpp/index.html|
 |binom| 1.1-1| https://cran.r-project.org/web/packages/binom/index.html|
 |bisoreg|1.4| https://cran.r-project.org/web/packages/bisoreg/index.html|
 |bit| 1.1-12| https://cran.r-project.org/web/packages/bit/index.html|
@@ -108,7 +108,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |blob| 1.1.0| https://cran.r-project.org/web/packages/blob/index.html|
 |BLR|1.4| https://cran.r-project.org/web/packages/BLR/index.html|
 |BMA| 3.18.7| https://cran.r-project.org/web/packages/BMA/index.html|
-|Bmix|0.6| https://cran.r-project.org/web/packages/Bmix/index.html|
+|Bmix|0,6| https://cran.r-project.org/web/packages/Bmix/index.html|
 |BMS| 0.3.4| https://cran.r-project.org/web/packages/BMS/index.html|
 |bnlearn|4.2| https://cran.r-project.org/web/packages/bnlearn/index.html|
 |boa| 1.1.8-2| https://cran.r-project.org/web/packages/boa/index.html|
@@ -195,7 +195,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |dbscan| 1.1-1| https://cran.r-project.org/web/packages/dbscan/index.html|
 |dclone| 2.1-2| https://cran.r-project.org/web/packages/dclone/index.html|
 |deal| 1.2-37| https://cran.r-project.org/web/packages/deal/index.html|
-|deepnet|0.2| https://cran.r-project.org/web/packages/deepnet/index.html|
+|deepnet|0,2| https://cran.r-project.org/web/packages/deepnet/index.html|
 |deldir| 0.1-14| https://cran.r-project.org/web/packages/deldir/index.html|
 |dendextend| 1.5.2| https://cran.r-project.org/web/packages/dendextend/index.html|
 |DEoptimR| 1.0-8| https://cran.r-project.org/web/packages/DEoptimR/index.html|
@@ -214,11 +214,11 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |doParallel| 1.0.10| https://cran.r-project.org/web/packages/doParallel/index.html|
 |doSNOW| 1.0.14| https://cran.r-project.org/web/packages/doSNOW/index.html|
 |dotCall64| 0.9-04| https://cran.r-project.org/web/packages/dotCall64/index.html|
-|downloader|0.4| https://cran.r-project.org/web/packages/downloader/index.html|
+|downloader|0,4| https://cran.r-project.org/web/packages/downloader/index.html|
 |dplyr| 0.7.2| https://cran.r-project.org/web/packages/dplyr/index.html|
 |DPpackage| 1.1-6| https://cran.r-project.org/web/packages/DPpackage/index.html|
 |dse| 2015.12-1| https://cran.r-project.org/web/packages/dse/index.html|
-|DT|0.2| https://cran.r-project.org/web/packages/DT/index.html|
+|DT|0,2| https://cran.r-project.org/web/packages/DT/index.html|
 |dtw| 1.18-1| https://cran.r-project.org/web/packages/dtw/index.html|
 |dygraphs| 1.1.1.4| https://cran.r-project.org/web/packages/dygraphs/index.html|
 |dynlm| 0.3-5| https://cran.r-project.org/web/packages/dynlm/index.html|
@@ -371,9 +371,9 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |hexbin| Rcpp| grDevices|
 |hflights|0.1| https://cran.r-project.org/web/packages/hflights/index.html|
 |HH| 3.1-34| https://cran.r-project.org/web/packages/HH/index.html|
-|HI|0.4| https://cran.r-project.org/web/packages/HI/index.html|
+|HI|0,4| https://cran.r-project.org/web/packages/HI/index.html|
 |highcharter| 0.5.0| https://cran.r-project.org/web/packages/highcharter/index.html|
-|highr|0.6| https://cran.r-project.org/web/packages/highr/index.html|
+|highr|0,6| https://cran.r-project.org/web/packages/highr/index.html|
 |HistData| 0.8-1| https://cran.r-project.org/web/packages/HistData/index.html|
 |Hmisc| 4.0-3| https://cran.r-project.org/web/packages/Hmisc/index.html|
 |hms|0.3| https://cran.r-project.org/web/packages/hms/index.html|
@@ -436,8 +436,8 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |lazyeval| 0.2.0| https://cran.r-project.org/web/packages/lazyeval/index.html|
 |lazyeval| pryr| magrittr|
 |leaflet| 1.1.0| https://cran.r-project.org/web/packages/leaflet/index.html|
-|leaflet.esri|0.2| https://cran.r-project.org/web/packages/leaflet.esri/index.html|
-|leaflet.extras|0.2| https://cran.r-project.org/web/packages/leaflet.extras/index.html|
+|leaflet.esri|0,2| https://cran.r-project.org/web/packages/leaflet.esri/index.html|
+|leaflet.extras|0,2| https://cran.r-project.org/web/packages/leaflet.extras/index.html|
 |leaps|3| https://cran.r-project.org/web/packages/leaps/index.html|
 |LearnBayes|2.15| https://cran.r-project.org/web/packages/LearnBayes/index.html|
 |LiblineaR| 2.10-8| https://cran.r-project.org/web/packages/LiblineaR/index.html|
@@ -542,7 +542,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |NbClust|3| https://cran.r-project.org/web/packages/NbClust/index.html|
 |ncvreg| 3.9-1| https://cran.r-project.org/web/packages/ncvreg/index.html|
 |network| 1.13.0| https://cran.r-project.org/web/packages/network/index.html|
-|networkD3|0.4| https://cran.r-project.org/web/packages/networkD3/index.html|
+|networkD3|0,4| https://cran.r-project.org/web/packages/networkD3/index.html|
 |neuralnet|1.33| https://cran.r-project.org/web/packages/neuralnet/index.html|
 |nlme| 3.1-131| https://cran.r-project.org/web/packages/nlme/index.html|
 |nlme| 3.1-131| https://cran.r-project.org/web/packages/nlme/index.html|
@@ -607,7 +607,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |prodlim| 1.6.1| https://cran.r-project.org/web/packages/prodlim/index.html|
 |profdpm|3.3| https://cran.r-project.org/web/packages/profdpm/index.html|
 |profileModel| 0.5-9| https://cran.r-project.org/web/packages/profileModel/index.html|
-|prophet|0.2| https://cran.r-project.org/web/packages/prophet/index.html|
+|prophet|0,2| https://cran.r-project.org/web/packages/prophet/index.html|
 |proto| utils| lattice|
 |proto| 1.0.0| https://cran.r-project.org/web/packages/proto/index.html|
 |proxy| 0.4-17| https://cran.r-project.org/web/packages/proxy/index.html|
@@ -731,7 +731,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |Rsolnp|1.16| https://cran.r-project.org/web/packages/Rsolnp/index.html|
 |RSQLite|2| https://cran.r-project.org/web/packages/RSQLite/index.html|
 |rstan| 2.16.2| https://cran.r-project.org/web/packages/rstan/index.html|
-|rstudioapi|0.6| https://cran.r-project.org/web/packages/rstudioapi/index.html|
+|rstudioapi|0,6| https://cran.r-project.org/web/packages/rstudioapi/index.html|
 |RTextTools| 1.4.2| https://cran.r-project.org/web/packages/RTextTools/index.html|
 |RUnit| 0.4.26| https://cran.r-project.org/web/packages/RUnit/index.html|
 |RUnit| 0.4.31| https://cran.r-project.org/web/packages/RUnit/index.html|
@@ -829,7 +829,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |svglite| 1.2.1| https://cran.r-project.org/web/packages/svglite/index.html|
 |svmpath|0.955| https://cran.r-project.org/web/packages/svmpath/index.html|
 |svUnit| 0.7-12| https://cran.r-project.org/web/packages/svUnit/index.html|
-|sysfonts|0.6| https://cran.r-project.org/web/packages/sysfonts/index.html|
+|sysfonts|0,6| https://cran.r-project.org/web/packages/sysfonts/index.html|
 |tau| 0.0-19| https://cran.r-project.org/web/packages/tau/index.html|
 |tcltk| 3.4.1| NA|
 |tcltk2| 1.2-11| https://cran.r-project.org/web/packages/tcltk2/index.html|
@@ -861,7 +861,7 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |timeDate|3012.1| https://cran.r-project.org/web/packages/timeDate/index.html|
 |timeDate (>= 2150.95)| NA| CRAN|
 |timeSeries| 3022.101.2| https://cran.r-project.org/web/packages/timeSeries/index.html|
-|timevis|0.4| https://cran.r-project.org/web/packages/timevis/index.html|
+|timevis|0,4| https://cran.r-project.org/web/packages/timevis/index.html|
 |tm| 0.7-1| https://cran.r-project.org/web/packages/tm/index.html|
 |tokenizers| 0.1.4| https://cran.r-project.org/web/packages/tokenizers/index.html|
 |tools| 3.4.1| NA|
@@ -900,11 +900,11 @@ I följande tabell visas vilka paket som **stöds** i Power BI-tjänsten.
 |VGAM| 1.0-4| https://cran.r-project.org/web/packages/VGAM/index.html|
 |VIF|1| https://cran.r-project.org/web/packages/VIF/index.html|
 |VIM| 4.7.0| https://cran.r-project.org/web/packages/VIM/index.html|
-|vioplot|0.2|153|
+|vioplot|0,2|153|
 |viridis| 0.4.0| https://cran.r-project.org/web/packages/viridis/index.html|
 |viridisLite| 0.2.0| https://cran.r-project.org/web/packages/viridisLite/index.html|
 |visNetwork| 2.0.1| https://cran.r-project.org/web/packages/visNetwork/index.html|
-|webutils|0.6| https://cran.r-project.org/web/packages/webutils/index.html|
+|webutils|0,6| https://cran.r-project.org/web/packages/webutils/index.html|
 |weights|0.85| https://cran.r-project.org/web/packages/weights/index.html|
 |whisker| viridis| CRAN|
 |whisker| digest| rstudioapi (>= 0.2.0)|
@@ -940,7 +940,7 @@ I följande tabell visas vilka paket som **inte stöds** i Power BI-tjänsten.
 ## <a name="next-steps"></a>Nästa steg
 Mer information om R i Power BI finns i följande artiklar:
 
-* [Skapa visuella R-objekt i Power BI-tjänsten](service-r-visuals.md)
+* [Skapa visuella R-objekt i Power BI-tjänsten](visuals/service-r-visuals.md)
 * [Skapa visuella Power BI-objekt med R](desktop-r-visuals.md)
 * [Köra R-skript i Power BI Desktop](desktop-r-scripts.md)
 * [Använda R i Frågeredigeraren](desktop-r-in-query-editor.md)
