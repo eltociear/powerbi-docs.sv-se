@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: f06f3f7f6d91176d75ce452202a91b2c54be06ce
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280764"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512166"
 ---
-# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop (förhandsversion)
+# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 
 
 ![Rapportknappbeskrivningar för Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
@@ -27,11 +27,15 @@ Du kan skapa hur många knappbeskrivningssidor du vill. Varje knappbeskrivningss
 Det finns alla möjliga intressanta saker du kan göra med rapportknappbeskrivningar. Vi tar en titt på hur du skapar knappbeskrivningar och vad du måste göra för att konfigurera dem.
 
 ### <a name="enable-the-tooltips-preview"></a>Aktivera förhandsversionen av knappbeskrivningar 
-Eftersom rapportknappbeskrivningar för närvarande finns som förhandsversion måste du aktivera dem innan du kan skapa rapportknappbeskrivningar. Aktivera förhandsversionsfunktionen för rapportknappbeskrivningar genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** i Power BI Desktop och markera kryssrutan bredvid **Rapportsida för verktygstips**. 
+Från och med **Power BI Desktop**-versionen som släpptes i september 2018 är knappbeskrivningar allmänt tillgängliga och behöver inte aktiveras. 
+
+Om du använder en tidigare version av **Power BI Desktop** kan du aktivera den som en förhandsversion genom att välja **Fil > Alternativ och inställningar > Alternativ > Förhandsgranskningsfunktioner** i Power BI Desktop och sedan markera kryssrutan bredvid **Knappbeskrivningar för rapportsida**. 
 
 ![Aktivera förhandsversionsfunktionen för rapportknappbeskrivningar](media/desktop-tooltips/desktop-tooltips_01.png)
 
 Du måste starta om **Power BI Desktop** när du har gjort valet för att aktivera förhandsversionen av rapportknappbeskrivningar.
+
+Vi rekommenderar alltid att du uppgraderar till den senaste versionen av **Power BI Desktop**, som du kan hämta från en länk i avsnittet [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="create-a-report-tooltip-page"></a>Skapa en rapportknappbeskrivningssida
 Kom igång genom att skapa en ny rapportsida genom att klicka på knappen **+** längst ned på arbetsytan i **Power BI Desktop**, i området med sidflikar. Knappen finns bredvid den sista sidan i rapporten. 
@@ -117,8 +121,9 @@ När ett visuellt objekt korsmarkeras i en rapport visas alltid korsmarkerade da
 
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-Det finns några begränsningar och saker du bör tänka på i den här förhandsversionen av rapport**knappbeskrivningar**.
+Det finns några begränsningar och saker för **knappbeskrivningar** som du bör tänka på.
 
+* Från och med versionen av **Power BI Desktop** som släpptes i september 2018 blev knappbeskrivningar allmänt tillgängliga. Även visuella kortobjekt har stöd för knappbeskrivningar.
 * Från och med juli 2018-versionen av **Power BI Desktop** stöds visuella tabell- och matrisobjekt för knappbeskrivningar. 
 * Rapportknappbeskrivningar stöds inte vid visning av rapporter i mobilappar eller i inbäddade miljöer, inklusive Publicera på webben. 
 * Rapportknappbeskrivningar stöds inte för anpassade visuella objekt. 

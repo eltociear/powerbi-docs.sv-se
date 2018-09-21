@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 6f4e79746116d4a7add356a658ce12028b688dae
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 1d51a09094c6825570103ce3c0b51ebfe4b7d47f
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657930"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512097"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Vad är nytt i den senaste uppdateringen av Power BI Desktop?
 
-## <a name="august-2018-update-2615192321"></a>Uppdatering för augusti 2018 (2.61.5192.321)
+## <a name="september-2018-update-2625222582"></a>Uppdatering september 2018 (2.62.5222.582)
 
-Våra augustiuppdateringar kompletterar och utökar de stora uppdateringarna från juli. Vi hoppas att dessa uppdateringar ska tillföra mycket nytt och värdefullt för dig och ditt företag. 
+Våra septemberuppdateringar känns lite som att gå in i ett nytt, spännande klassrum. De omfattar fler saker att lära sig som bygger på tidigare erfarenheter och ger en stabilare och mognare känsla. Förhoppningsvis kommer du att tycka att de här uppdateringarna är lika användbara som nyvässade blyertspennor. 
 
 Nu kan du [hämta den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10 kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är likadana oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
 
@@ -36,32 +36,31 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 
 Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 
-### <a name="modeling"></a>Modellering
-
-* Datakategorier för mått [[video]](https://youtu.be/dgv5HhHxxe8?t=15m27s)  [[artikel]](desktop-measures.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dataCategory)
-* DAX-statistikfunktioner [[video]](https://youtu.be/dgv5HhHxxe8?t=18m56s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dax)
-
-
 ### <a name="reporting"></a>Rapportering
 
-* Exportera till PDF och skriva ut rapporter [[video]](https://youtu.be/dgv5HhHxxe8?t=12s)  [[artikel]](desktop-export-to-pdf.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#print) 
-* Skapa bokmärkesgrupper [[video]](https://youtu.be/dgv5HhHxxe8?t=4m4s)  [[artikel]](desktop-bookmarks.md#bookmark-groups)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#bookmarks) 
-* Teman är allmänt tillgängliga [[video]](https://youtu.be/dgv5HhHxxe8?t=7m9s)   [[artikel]](desktop-report-themes.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Theming) 
-* Omräkning av utsnitt [[video]](https://youtu.be/dgv5HhHxxe8?t=22m53s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#slicer) 
+* Stöd för punktritningslayout i punktdiagram  [[video]](https://youtu.be/Rzw2WyI09kY?t=30s)  [[article]](power-bi-visualization-scatter.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dotPlot) 
+* Kopiera värden och välj från tabell- och matrisvisualiseringar [[video]](https://youtu.be/Rzw2WyI09kY?t=2m33s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#copy) 
+* Inbyggda alternativ för rapportteman [[video]](https://youtu.be/Rzw2WyI09kY?t=6m2s)   [[article]](desktop-report-themes.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Knappbeskrivningar för rapportsidan är allmänt tillgängliga, nytt stöd för kort [[video]](https://youtu.be/Rzw2WyI09kY?t=8m10s)  [[article]](desktop-tooltips.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Förbättrade hjälpmedel för stöd av analys- och formateringsfönster [[video]](https://youtu.be/Rzw2WyI09kY?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#accessibility)
 
 ### <a name="analytics"></a>Analytics
 
-* Villkorsstyrd formatering efter värde [[video]](https://youtu.be/dgv5HhHxxe8?t=7m54s)  [[artikel]](desktop-conditional-table-formatting.md#color-formatting-by-field-value)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
-* Python-integration  [[video]](https://youtu.be/dgv5HhHxxe8?t=11m14s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
-* Förbättrade frågor och svar [[video]](https://youtu.be/dgv5HhHxxe8?t=13m1s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
+* Sammansättningar (förhandsgranskning) [[video]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[article]](desktop-aggregations.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
 
 ### <a name="custom-visuals"></a>Anpassade visuella objekt
 
-* Fem nya anpassade visuella objekt [[video]](https://youtu.be/dgv5HhHxxe8?t=19m48s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#customVisuals) 
+* Fem nya anpassade visuella objekt [[video]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataanslutning
 
-* Spark-anslutningsappen är allmänt tillgänglig [[video]](https://youtu.be/dgv5HhHxxe8?t=31m41s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#spark) 
+* Anslutningsapp för PDF-filer (förhandsgranskning)  [[video]](https://youtu.be/Rzw2WyI09kY?t=29m26s)  [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* SAP BW-anslutningsapp – stöd för måttegenskaper  [[video]](https://youtu.be/Rzw2WyI09kY?t=30m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#sapBW) 
+* Anslutningsapp för dataflöden (beta)  [[article]](desktop-connect-dataflows.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dataflows) 
+
+### <a name="data-preparation"></a>Förberedelse av data
+* M Intellisense  [[video]](https://youtu.be/Rzw2WyI09kY?t=30m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* Lägg till kolumn från exempel – stöd för textutfyllnad  [[video]](https://youtu.be/Rzw2WyI09kY?t=32m27s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#addColumn) 
 
 
 > [!NOTE]
@@ -72,7 +71,7 @@ Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](h
 
 I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dgv5HhHxxe8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md).

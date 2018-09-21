@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 4cc2c0ae14cf457c3a704b2891e070f4e4e00166
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657953"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512189"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat (några undantag finns och de beskrivs längre fram i den här artikeln).
@@ -36,7 +36,17 @@ Om du använder en tidigare version av **Power BI Desktop** kan du aktivera den 
 Vi rekommenderar alltid att du uppgraderar till den senaste versionen av **Power BI Desktop**, som du kan hämta från en länk i avsnittet [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="how-report-themes-work"></a>Så här fungerar rapportteman
-Om du vill använda ett rapporttema i en Power BI Desktop-rapport väljer du knappen **Växla tema** på menyfliksområdet **Start** och sedan **Importera tema** från listrutan.
+Om du vill använda ett rapporttema i en Power BI Desktop-rapport kan du antingen välja bland de tillgängliga rapportteman som är inbyggda eller importera ett anpassat tema.
+
+Om du vill använda ett av de rapportteman som är inbyggda väljer du knappen **Växla tema** i menyfliksområdet **Start** och sedan väljer du ett tema från listrutan.
+
+![välj ett rapporttema](media/desktop-report-themes/report-themes_2a.png)
+
+Ditt rapporttema tillämpas på rapporten och sedan är du redo att sätta igång.
+
+### <a name="importing-report-themes"></a>Importera rapportteman
+
+Om du vill importera ett rapporttema väljer du knappen **Växla tema** i menyfliksområdet **Start** och sedan **Importera tema** från listrutan.
 
 ![](media/desktop-report-themes/report-themes_3.png)
 

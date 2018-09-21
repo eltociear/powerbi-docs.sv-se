@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa812801eb01529c3e364d69f041b7efd193c3ae
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657884"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512074"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -53,6 +53,7 @@ I kategorin **Fil** finns följande dataanslutningar:
 * XML
 * JSON
 * Mapp
+* PDF (Beta)
 * SharePoint-mapp
 
 Följande bild visar fönstret **Hämta data** för **Fil**.
@@ -79,7 +80,8 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Impala
 * Google BigQuery
 * Snowflake
-* Exasol
+* Exasol (Beta)
+* Jethro (Beta)
 
 > [!NOTE]
 > Vissa databaskopplingar kräver att du aktiverar dem genom att välja **Arkiv > Alternativ och inställningar > Alternativ** sedan välja **Förhandsversionsfunktioner** och aktivera kopplingen. Om du inte ser några av de kopplingar som nämns ovan och vill använda dem, kontrollerar du dina inställningar för **Förhandsversionsfunktioner**. Observera att alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
@@ -93,6 +95,7 @@ Följande bild visar fönstret **Hämta data** för **Databas**.
 I **Power BI**-kategorin finns följande dataanslutningar:
 
 * Power BI-datauppsättningar
+* Power BI-dataflöden (Beta)
 
 Följande bild visar fönstret **Hämta data** för **Power BI**.
 
@@ -108,7 +111,7 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure Cosmos DB (beta)
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
-* Azure HDInsight Spark (beta)
+* Azure HDInsight Spark
 * Interaktiv HDInsight-fråga (beta)
 * Azure KustoDB (beta)
 
@@ -169,6 +172,7 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Hadoop-fil (HDFS)
 * Spark
 * R-skript
+* Python-skript
 * ODBC
 * OLE DB
 * Tom fråga
