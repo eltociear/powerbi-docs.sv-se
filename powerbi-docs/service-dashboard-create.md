@@ -1,5 +1,5 @@
 ---
-title: Skapa en Power BI-instrumentpanel från en rapport
+title: Skapa en Power BI-tjänstinstrumentpanel från en rapport
 description: Skapa en Power BI-instrumentpanel från en rapport
 author: mihart
 manager: kfile
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 09/02/2018
 ms.author: mihart
-ms.openlocfilehash: 56a26b50f50dd52d4355cd8326ec0d104dab19c0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248940"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44168099"
 ---
-# <a name="create-a-power-bi-dashboard-from-a-report"></a>Skapa en Power BI-instrumentpanel från en rapport
+# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Skapa en Power BI-instrumentpanel i Power BI-tjänsten
 Du har läst [Instrumentpaneler i Power BI](service-dashboards.md) och nu är det dags att du skapar en egen. Det finns många olika sätt för att skapa en instrumentpanel – från en rapport, från början, från en datauppsättning, genom att duplicera en befintlig instrumentpanel, med mera.  
 
 Det kan verka överväldigande när du först kommer igång, så vi börjar med att skapa en snabb och enkel instrumentpanel genom att fästa visualiseringar från en rapport som redan har skapats. När du har slutfört den här snabbstarten har du en god förståelse för relationen mellan instrumentpaneler och rapporter, av att öppna redigeringsvyn i rapportredigeraren, fästa paneler och navigera mellan en instrumentpanel och en rapport. Använd länkarna i innehållsförteckningen till vänster eller **nästa steg** längst ned för att gå vidare till mer avancerade avsnitt.

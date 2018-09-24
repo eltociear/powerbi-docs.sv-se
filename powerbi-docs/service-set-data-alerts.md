@@ -2,21 +2,21 @@
 title: Ange datavarningar i Power BI-tjänsten
 description: Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett i Microsoft Power BI-tjänsten.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 153676c983ef81bcccf1ea6bf0adf95ef29a2765
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137648"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44167938"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Datavarningar i Power BI-tjänsten
 Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett. 
@@ -42,15 +42,15 @@ I det här exemplet används en kortpanel från exempelinstrumentpanelen detaljh
 1. Starta på en instrumentpanel. Välj ellipserna från en mätare, KPI eller kortpanel på instrumentpanelen.
    
    ![panelen Totalt antal butiker](media/service-set-data-alerts/powerbi-card.png)
-2. Välj klockikonen ![aviseringsikon](media/service-set-data-alerts/power-bi-bell-icon.png) för att lägga till en eller flera aviseringar för **Totalt antal butiker**.
+2. Välj klockikonen ![aviseringsikon](media/service-set-data-alerts/power-bi-bell-icon.png) eller **Hantera aviseringar** för att lägga till en eller flera aviseringar för **Totalt antal butiker**.
    
-1. För att starta, väljer du **+ Lägg till aviseringsregel** kontroller att skjutreglaget är inställt till **På** och ge din avisering en rubrik. Namnet hjälper dig att identifiera aviseringarna.
+1. I fönstret **Hantera aviseringar** väljer du **+Lägg till regel för avisering**.  Se till att skjutreglaget är inställt på **På** och ge aviseringen ett namn. Namnet hjälper dig att identifiera aviseringarna.
    
    ![Fönstret Hantera aviseringar](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Bläddra nedåt och ange detaljerad information om aviseringen.  I det här exemplet ska vi skapa en avisering som meddelar oss en gång om dagen om antalet totala butiker går över 100. Aviseringar visas i meddelandecentret. Power BI kommer också att skicka ett e-postmeddelande.
    
    ![Fönstret Hantera aviseringar, ange tröskelvärde](media/service-set-data-alerts/power-bi-set-alert-details.png)
-5. Välj **Spara**.
+5. Välj **Spara och stäng**.
 
 ## <a name="receiving-alerts"></a>Ta emot aviseringar
 När data som spåras når något av dina angivna tröskelvärden sker flera saker. Först kontrollerar Power BI om mer än en timme eller mer än 24 timmar har gått (beroende på vilket alternativ som du valde) sedan den senaste aviseringen skickades. Så länge data har passerat tröskelvärdet får du en avisering.
@@ -103,7 +103,5 @@ Det finns flera sätt att hantera dina aviseringar: från paneler i instrumentpa
 
 ## <a name="next-steps"></a>Nästa steg
 [Skapa ett Microsoft-flöde som innehåller en datavarning](service-flow-integration.md)    
-[Ställa in datavarningar på din mobilenhet](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Vad är Power BI?](power-bi-overview.md)    
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+[Ställa in dataaviseringar på din mobilenhet](mobile-set-data-alerts-in-the-mobile-apps.md)    
 
