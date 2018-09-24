@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2ff39f0594150c7b29fd88e8f4e4f6baef86e806
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: 58a739c0d566030d2b09094264da14f6afd6d6fc
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044335"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727592"
 ---
 # <a name="full-screen-mode-in-power-bi-service"></a>Fullskärmsläge i Power BI-tjänsten
 ## <a name="what-is-full-screen-mode"></a>Vad är fullskärmsläge?
@@ -24,7 +24,7 @@ ms.locfileid: "44044335"
 
 Du kan visa ditt Power BI-innehåll (instrumentpaneler, rapportsidor, paneler och visualiseringar) utan störande menyer och navigeringsfält.  Du får en oförstörd, fullständig översikt över ditt innehåll på ett överblick, vid alla tidpunkter. Detta kallas ibland för TV-läge. Vilka funktioner som är tillgängliga i fullskärmsläge varierar beroende på innehållet. 
 
-Om du använder Power BI Mobile är [fullskärm är tillgängligt för mobila Windows 10-appar](mobile-windows-10-app-presentation-mode.md). Power BI Desktop har inte något fullskärmsläge för rapporter eller visualiseringar, men däremot Anpassa till sida för [Relationsvy och Rapportvy](desktop-report-view.md) och [fokusläge för visuella rapportobjekt](service-focus-mode.md).
+Om du använder Power BI Mobile är [fullskärm är tillgängligt för mobila Windows 10-appar](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktop har inte något fullskärmsläge för rapporter eller visualiseringar, men däremot Anpassa till sida för [Relationsvy och Rapportvy](desktop-report-view.md) och [fokusläge för visuella rapportobjekt](service-focus-mode.md).
 
  
 
