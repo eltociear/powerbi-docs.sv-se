@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: af90ba6bcf85c07d2d046ed21f733ca7c16e3856
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a22bee33254e447f27f717b78a53fe3a5cc34fb2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242141"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545462"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Sidvisningsinställningar i en Power BI-rapport
 Vi förstår att det är viktigt att hålla din rapportlayout perfekt. Ibland är det kan vara en utmaning, eftersom du och dina kollegor visar rapporterna på era skärmar med olika bredd–höjd-förhållanden och storlekar. 
@@ -39,7 +39,7 @@ I Power BI-tjänsten öppnar du en rapport och väljer **Visa** i den övre vän
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Inställningarna för sidvisning är tillgängliga i både [läsvyn och redigeringsvyn](service-reading-view-and-editing-view.md). I redigeringsvyn kan en rapportägare tilldela sidvisningsinställningar för enskilda rapportsidor och dessa inställningar sparas med rapporten. När en kollegor öppnar rapporten i läsvyn ser de rapportsidevisningen med ägarens inställningar.  I läsvyn kan kollegor ändra *vissa* sidvisningsinställningar men ändringarna sparas inte när de lämnar rapporten.
+Inställningarna för sidvisning är tillgängliga i både [läsvyn och redigeringsvyn](consumer/end-user-reading-view.md). I redigeringsvyn kan en rapportägare tilldela sidvisningsinställningar för enskilda rapportsidor och dessa inställningar sparas med rapporten. När en kollegor öppnar rapporten i läsvyn ser de rapportsidevisningen med ägarens inställningar.  I läsvyn kan kollegor ändra *vissa* sidvisningsinställningar men ändringarna sparas inte när de lämnar rapporten.
 
 ##    <a name="page-view-settings"></a>Inställningar för Sidvisning
 Den första uppsättningen inställningar för *Sidvisning* styr visningen av din rapportsida i förhållande till webbläsarfönstret.  Välj mellan:
@@ -62,7 +62,7 @@ Den andra uppsättningen inställningar för *Sidvisning* styr placeringen av ob
 ## <a name="page-size-settings"></a>Inställningar för Sidstorlek
 ![](media/power-bi-report-display-settings/power-bi--page-size.png)
 
-Inställningarna för *Sidstorlek* är bara tillgängliga för rapportägare. I Power BI-tjänsten (app.powerbi.com) innebär detta att man kan öppna rapporten i [redigeringsvyn](service-reading-view-and-editing-view.md). Dessa inställningar styr visningsförhållandet och den faktiska storleken (i bildpunkter) för rapportarbetsytan.   
+Inställningarna för *Sidstorlek* är bara tillgängliga för rapportägare. I Power BI-tjänsten (app.powerbi.com) innebär detta att man kan öppna rapporten i [redigeringsvyn](consumer/end-user-reading-view.md). Dessa inställningar styr visningsförhållandet och den faktiska storleken (i bildpunkter) för rapportarbetsytan.   
 
 * Förhållandet 4:3
 * Förhållandet 16:9 (standard)
@@ -71,11 +71,11 @@ Inställningarna för *Sidstorlek* är bara tillgängliga för rapportägare. I 
 * Anpassad (höjd och bredd i bildpunkter)
 
 ## <a name="next-steps"></a>Nästa steg
-[Lär dig hur du använder inställningarna för Sidvisning och Sidstorlek i dina Power BI-rapporter](power-bi-change-report-display-settings.md).
+[Lär dig hur du använder inställningarna för Sidvisning och Sidstorlek i dina Power BI-rapporter](consumer/end-user-report-view.md).
 
-Läs mer om [rapporter i Power BI](service-reports.md)
+Läs mer om [rapporter i Power BI](consumer/end-user-reports.md)
 
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

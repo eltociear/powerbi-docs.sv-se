@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 02c3998a95e7d481ee032513054933f1484ae7f9
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 8b4a0605df348957c4adb0d8e02975f4cd752307
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "36944616"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543806"
 ---
 # <a name="the-power-bi-samples"></a>Power BI-exemplen
 
@@ -79,7 +79,7 @@ Utforska nu instrumentpanelen, datauppsättningen och rapporten på egen hand. D
     ![rapportsida med matchande visualisering markerad](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Om panelen hade skapats med hjälp av [Power BI:s frågor och svar](power-bi-q-and-a.md), skulle sidan Frågor och svar öppnats i stället. Om panelen hade [fästs från Excel](service-dashboard-pin-tile-from-excel.md), skulle Excel Online ha öppnats i Power BI.
+   > Om panelen hade skapats med hjälp av [Power BI:s frågor och svar](consumer/end-user-q-and-a.md), skulle sidan Frågor och svar öppnats i stället. Om panelen hade [fästs från Excel](service-dashboard-pin-tile-from-excel.md), skulle Excel Online ha öppnats i Power BI.
    > 
    > 
 1. Tillbaka på din flik **Datauppsättningar** har du flera alternativ för att utforska din datauppsättning.  Du kommer inte att kunna öppna den och se alla rader och kolumner (som du kan i Power BI Desktop eller Excel).  När någon delar ett innehållspaket med kollegor vill de vanligtvis dela med sig av vissa insikter och inte ge dem direkt åtkomst till specifika data. Men det betyder inte att du inte kan utforska datauppsättningen.  
@@ -89,7 +89,7 @@ Utforska nu instrumentpanelen, datauppsättningen och rapporten på egen hand. D
    * Ett sätt att utforska datauppsättningen är genom att skapa egna visualiseringar och rapporter från grunden.  Välj diagramikonen ![rapportikon](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) för att öppna datauppsättningen i rapportredigeringsvyn.
      
        ![ny rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * Ett annat sätt att utforska datauppsättningen är att köra [Quick Insights](service-insights.md). Välj ellipserna (...) och välj **Hämta insikter**. När insikterna är klara väljer du **Visa insikter**.
+   * Ett annat sätt att utforska datauppsättningen är att köra [Quick Insights](consumer/end-user-insights.md). Välj ellipserna (...) och välj **Hämta insikter**. När insikterna är klara väljer du **Visa insikter**.
      
        ![Insiktsrapport](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -130,7 +130,7 @@ Utforska nu datauppsättningen, relationerna och rapporten på egen hand. Du hit
 
 
 ## <a name="next-steps"></a>Nästa steg
-[Grundläggande begrepp för Power BI](service-basic-concepts.md)
+[Grundläggande begrepp för Power BI](consumer/end-user-basic-concepts.md)
 
 [Exempel för Power BI-tjänsten](sample-datasets.md)
 

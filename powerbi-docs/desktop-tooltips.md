@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f06f3f7f6d91176d75ce452202a91b2c54be06ce
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512166"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547153"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 
@@ -136,5 +136,5 @@ Det finns några begränsningar och saker för **knappbeskrivningar** som du bö
 Mer information om liknande funktioner eller funktioner som interagerar med rapportknappbeskrivningar finns i följande artiklar:
 
 * [Använd detaljinformation i Power BI Desktop](desktop-drillthrough.md)
-* [Visa instrumentpanelen eller rapportvisualiseringen i läget Fokus](service-focus-mode.md)
+* [Visa instrumentpanelen eller rapportvisualiseringen i läget Fokus](consumer/end-user-focus.md)
 
