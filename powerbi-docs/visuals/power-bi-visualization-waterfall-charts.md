@@ -2,7 +2,7 @@
 title: Vattenfallsdiagram i Power BI
 description: Vattenfallsdiagram i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: feb608455add8740d7894fa2cec3c54a8a26944e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d1c771ed49a000374c58beb694dda511a8c9a097
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744751"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565830"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vattenfallsdiagram i Power BI
 Ett vattenfallsdiagram visar en löpande summa efter hand som värden adderas eller subtraheras. Det är användbart för att förstå hur ett startvärde (till exempel nettointäkter) påverkas av en serie positiva och negativa förändringar.
@@ -74,13 +74,13 @@ Information om hur du använder filterfönstret finns i [Lägg till ett filter i
 Om du markerar en kolumn i ett vattenfallsdiagram, korsfiltreras de övriga visualiseringarna på rapportsidan, och vice versa. Kolumnen för det totala värdet utlöser dock ingen markering och svarar inte på korsfiltrering.
 
 ## <a name="next-steps"></a>Nästa steg
-[Rapporter i Power BI](../service-reports.md)
+[Rapporter i Power BI](../consumer/end-user-reports.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

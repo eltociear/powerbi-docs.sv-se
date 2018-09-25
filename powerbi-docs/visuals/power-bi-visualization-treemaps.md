@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aa73da576a64a3245a3e8a9deab124dcefbc79f8
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 946746b1c868ca5310edd929434cc852400b5bc3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748675"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548084"
 ---
 # <a name="treemaps-in-power-bi"></a>Trädkartor i Power BI
 Trädkartor visar hierarkiska data som en uppsättning kapslade rektanglar.  Varje nivå i hierarkin representeras av en färgad rektangel (som ofta kallas en ”gren”) som innehåller andra rektanglar (”löv”).  Utrymmet i varje rektangel fördelas utifrån kvantitativa värden som mäts och rektanglarna ordnas efter storlek från överst till vänster (störst) till nederst till höger (minst).
@@ -62,7 +62,7 @@ Eller skapa en egen trädkarta. Dessa anvisningar använder sig av Exempel på d
    > 
 5. Hovra över ett **kedjeområde** för att visa verktygstips för den delen av **kategorin**.  Hovra till exempel över **Lindseys** i rektangeln **040 Juniors (040 Junior)** för att visa verktygstips för Lindseys del av juniorkategorin.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Lägg till trädkartan som en panel på instrumentpanelen (fäst det visuella objektet)](../service-dashboard-tiles.md). 
+6. [Lägg till trädkartan som en panel på instrumentpanelen (fäst det visuella objektet)](../consumer/end-user-tiles.md). 
 7. [Spara rapporten](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
@@ -76,11 +76,11 @@ Om du markerar en kategori eller information i en trädkarta, korsmarkeras och k
 2. I om du väljer delen **Fashions Direct** i cirkeldiagrammet **Senaste årets försäljning per kedja**, korsfiltreras trädkartan.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../service-reports-visual-interactions.md)
+3. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../consumer/end-user-interactions.md)
 
 ## <a name="next-steps"></a>Nästa steg
 [ Fäst en visualisering på en instrumentpanel](../service-dashboard-pin-tile-from-report.md)  
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)  
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)  
 

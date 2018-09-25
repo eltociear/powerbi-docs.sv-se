@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8532fff7bc522a0ad0e59bd17580549bd9e68a23
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18c9fe3d50245ff1d0745c0a3ae1e830b3f9be45
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744852"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548337"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringar
 Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrumentpanelen eller -rapporten, till exempel total försäljning, marknadsandel år för år eller totala affärsmöjligheter. Den här typen av visualisering kallas ett *kort*. Som nästan alla ursprungliga Power BI-visualiseringar, kan kort skapas med hjälp av rapportredigeraren eller Frågor och svar.
@@ -51,13 +51,13 @@ Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill f
 ## <a name="create-a-card-from-the-qa-question-box"></a>Skapa ett kort från frågerutan för frågor och svar
 Att använda frågerutan för frågor och svar är den enklaste metoden för att skapa ett kort. Frågerutan för frågor och svar är tillgänglig i Power BI-tjänsten (app.powerbi.com) från en instrumentpanel eller rapport. Stegen nedan beskriver hur du skapar ett kort från en instrumentpanel i Power BI-tjänsten. Om du vill skapa ett kort med Frågor och svar i Power BI Desktop [, följer du nedanstående instruktioner](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) för Frågor och svar-förhandsgranskning för Desktop-rapporter.
 
-1. Skapa en [instrumentpanel](../service-dashboards.md) och [hämta data](../service-get-data.md). Det här exemplet använder sig av [exemplet affärsmöjlighetsanalys](../sample-opportunity-analysis.md).
+1. Skapa en [instrumentpanel](../consumer/end-user-dashboards.md) och [hämta data](../service-get-data.md). Det här exemplet använder sig av [exemplet affärsmöjlighetsanalys](../sample-opportunity-analysis.md).
 
 1. Börja skriva vad du vill veta om dina data i frågerutan överst på instrumentpanelen. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**Tips**: Gå till [Redigeringsvy](../service-reading-view-and-editing-view.md) i Power BI-tjänsterapporten och välj **Ställ en fråga** från den översta menyraden. I en Power BI Desktop-rapport letar du upp ett öppet utrymme i en rapport och dubbelklickar för att öppna en frågeruta.
+>**Tips**: Gå till [Redigeringsvy](../consumer/end-user-reading-view.md) i Power BI-tjänsterapporten och välj **Ställ en fråga** från den översta menyraden. I en Power BI Desktop-rapport letar du upp ett öppet utrymme i en rapport och dubbelklickar för att öppna en frågeruta.
 
 3. Skriv till exempel ”antal affärsmöjligheter” i frågerutan.
 
@@ -105,10 +105,10 @@ Du har många alternativ för att ändra etiketter, text, färg med mera. Det b�
     ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Paneler på instrumentpanelen i Power BI](../service-dashboard-tiles.md)
+[Paneler på instrumentpanelen i Power BI](../consumer/end-user-tiles.md)
 
-[Instrumentpaneler i Power BI](../service-dashboards.md)
+[Instrumentpaneler i Power BI](../consumer/end-user-dashboards.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

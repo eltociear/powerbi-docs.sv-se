@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/23/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d09f9d9d0de8608a39111f24e6f605c3fbce55fb
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3bf0aa516f50d363b53d2ed91b86d999e7855c30
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744844"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545046"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Ringdiagram i Power BI
 Ett ringdiagram liknar ett cirkeldiagram så till vida att det visar förhållandet mellan delarna och helheten. Den enda skillnaden är att mitten är tom och har utrymme för en etikett eller ikon.
@@ -43,13 +43,13 @@ De här anvisningarna använder exemplet på detaljhandelsanalys för att skapa 
 * Ringdiagram är bättre för att jämföra en särskild sektion med helheten än för att jämföra enskilda sektioner med varandra. 
 
 ## <a name="next-steps"></a>Nästa steg
-[Rapporter i Power BI](../service-reports.md)
+[Rapporter i Power BI](../consumer/end-user-reports.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

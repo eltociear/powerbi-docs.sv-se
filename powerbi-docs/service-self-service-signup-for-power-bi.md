@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 1f6c899932390bc4f9818fdcbb499848ca88a8d5
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558526"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549993"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI
 Lär dig hur du registrerar dig för Power BI och börja använda det för dina personliga rapport- och visualiseringsbehov.
@@ -99,7 +99,7 @@ Sedan visas ett meddelande där du uppmanas att välja **Start**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>60 dagars utvärderingsversion av Power BI Pro-tjänsten
 När du har registrerat dig för ett kostnadsfritt konto kan du välja att testa Pro kostnadsfritt under 60 dagar. Du får åtkomst till alla Pro-funktioner under utvärderingsperioden. Power BI Pro innehåller alla funktionerna i den kostnadsfria versionen av Power BI och ytterligare funktioner för delning och samarbete. Mer information finns i [Power BI-prissättning](https://powerbi.microsoft.com/pricing). Registrera dig för Power BI om du vill testa en 60 dagars kostnadsfri utvärderingsversion av Power BI Pro, och testa någon av dessa Power BI Pro-funktioner:
 
-* [Skapa en apparbetsyta](service-create-distribute-apps.md)
+* [Skapa en apparbetsyta](consumer/end-user-create-apps.md)
 * [Dela en instrumentpanel](service-share-dashboards.md)
 
 När du testar någon av dessa funktioner uppmanas du att starta den kostnadsfria utvärderingsversionen. Du kan också välja att använda den genom att gå till kugghjulsikonen och välja **Hantera personlig lagring**. Välj sedan **Testa Pro kostnadsfritt** till höger.

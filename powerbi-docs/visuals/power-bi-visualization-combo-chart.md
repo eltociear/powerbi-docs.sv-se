@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 732f27a8272c780d156912da904bab82de03f326
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744999"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544013"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI är ett kombinationsdiagram en enskild visualisering som kombinerar ett linjediagram med ett stapeldiagram. Om du kombinerar de två diagrammen till ett kan du göra en snabbare jämförelse av dina data.
@@ -103,13 +103,13 @@ I det här steget ska vi jämföra bruttomarginal och försäljning.
 
 Härifrån kan du vilja:
 
-* [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](../service-dashboard-tiles.md),
+* [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](../consumer/end-user-tiles.md),
 * [Spara rapporten](../service-report-save.md).
 * [Gör rapporten mer lättillgänglig för personer med funktionshinder](../desktop-accessibility.md)
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Korsmarkering och korsfiltrering
 
-Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](../service-reports-visual-interactions.md) för att ändra det här standardbeteendet.
+Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](../consumer/end-user-interactions.md) för att ändra det här standardbeteendet.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -117,6 +117,6 @@ Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras 
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6ae44bb641768ec6518814a0d8699dc41d260e90
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: b40933e085cf81528a28e9eedb4260351f657323
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624820"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548406"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Skapa arbetsytor med dina kollegor i Power BI
 
@@ -77,7 +77,7 @@ I de aktuella arbetsytorna kan du även ansluta med hjälp av organisationsinneh
 
 ## <a name="distribute-an-app"></a>Distribuera en app
 
-När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Dina medarbetare kan få apparna på ett par olika sätt. Du kan installera dem automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera dina appar från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md).
+När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Dina medarbetare kan få apparna på ett par olika sätt. Du kan installera dem automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera dina appar från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](consumer/end-user-create-apps.md).
 
 ## <a name="power-bi-apps-faq"></a>Vanliga frågor och svar om Power BI-appar
 
@@ -92,7 +92,7 @@ Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisa
 Se sidan om [hur de nya apparbetsytorna skiljer sig från befintliga apparbetsytor](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) för att jämföra aktuella och nya apparbetsytor. 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Installera och använda appar i Power BI](service-install-use-apps.md)
-* [Power BI-appar för externa tjänster](service-connect-to-services.md)
+* [Installera och använda appar i Power BI](consumer/end-user-apps.md)
+* [Power BI-appar för externa tjänster](consumer/end-user-connect-to-services.md)
 - [Skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)

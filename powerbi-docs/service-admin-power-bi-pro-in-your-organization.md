@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: da330e75642e243637f792cde706b6d34ce70062
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 8cf0a4de37f1bdc6e90a05799caebd2ce0e77046
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280741"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548314"
 ---
 # <a name="power-bi-pro-in-your-organization"></a>Power BI Pro i din organisation
 
@@ -35,7 +35,7 @@ Dessa funktioner kräver en Power BI Pro-licens:
 
 När du har registrerat dig för ett kostnadsfritt konto kan du välja att testa Pro kostnadsfritt under 60 dagar. Du får åtkomst till alla Pro-funktioner under utvärderingsperioden. Power BI Pro innehåller alla funktionerna i den kostnadsfria versionen av Power BI och ytterligare funktioner för delning och samarbete. Mer information finns i [Power BI-prissättning](https://powerbi.microsoft.com/en-us/pricing/). Prova en utvärderingsversion av Power BI Pro i 60 dagar, logga in på Power BI och prova någon av dessa Power BI Pro-funktioner.
 
-* [Skapa en arbetsyta](service-create-distribute-apps.md)
+* [Skapa en arbetsyta](consumer/end-user-create-apps.md)
 * [Dela en instrumentpanel](service-share-dashboards.md)
 
 När du testar någon av dessa funktioner uppmanas du att starta den kostnadsfria utvärderingsversionen. Du kan också använda den genom att gå till kugghjulsikonen och välja Hantera personlig lagring. Välj sedan Testa Pro gratis till höger.

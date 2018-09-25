@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f070b6649d8d120a889961fffd6b9b923422293e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2c42f484dc0f2515024a7fefe2edb1c81e286eb3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748890"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548475"
 ---
 # <a name="funnel-charts"></a>Trattdiagram
 Med ett trattdiagram kan du visualisera en linjär process med intilliggande steg. Ett trattdiagram över försäljning som följer kunderna genom stadier: \>Uppslag \> Uppslag med potential \> Kontrakt \> Sälj.  Trattens form ger en översikt över processens tillstånd.
@@ -70,7 +70,7 @@ Dessa anvisningar använder sig av Exempel på affärsmöjlighetsanalys. Om du v
    * Steget-till-steg (kallas även förlusttakt) som är % av det föregående steget (i det här fallet förslagssteg/lösningssteg)
      
      ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Lägg till tratten som panel i instrumentpanelen](../service-dashboard-tiles.md). 
+5. [Lägg till tratten som panel i instrumentpanelen](../consumer/end-user-tiles.md). 
 6. [Spara rapporten](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
@@ -81,10 +81,10 @@ Om du markerar ett fält i trattdiagrammet korsfiltreras de övriga visualiserin
 1. Välj fältet **Förslag** i trattdiagrammet. Detta korsmarkerar de övriga visualiseringarna på sidan. Använd CTRL för att välja flera.
    
    ![](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../service-reports-visual-interactions.md)
+2. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../consumer/end-user-interactions.md)
 
 ## <a name="create-a-funnel-chart-in-qa"></a>Skapa ett trattdiagram i frågor och svar
-Öppna instrumentpanelen exempel på analys av affärsmöjligheter eller en instrumentpanel som har minst en visualiseringen fäst från datauppsättningen för exempel på analys av affärsmöjligheter.  När du skriver en fråga i Frågor och svar söker Power BI efter svar i alla datauppsättningar som är associerade med (har fästa paneler) den valda instrumentpanelen. Mer information finns i [Power BI – grundläggande koncept](../service-basic-concepts.md).
+Öppna instrumentpanelen exempel på analys av affärsmöjligheter eller en instrumentpanel som har minst en visualiseringen fäst från datauppsättningen för exempel på analys av affärsmöjligheter.  När du skriver en fråga i Frågor och svar söker Power BI efter svar i alla datauppsättningar som är associerade med (har fästa paneler) den valda instrumentpanelen. Mer information finns i [Power BI – grundläggande koncept](../consumer/end-user-basic-concepts.md).
 
 1. I instrumentpanelen för exemplet på analys av affärsmöjligheter, skriver du in din fråga i frågerutan Frågor och svar.
    
@@ -97,7 +97,7 @@ Om du markerar ett fält i trattdiagrammet korsfiltreras de övriga visualiserin
 
 [Fästa en visualisering på en instrumentpanel](../service-dashboard-pin-tile-from-report.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

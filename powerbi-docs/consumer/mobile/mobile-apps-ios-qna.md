@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: 320ab8cef7ba2b36846550dcdb3171c7fb4b788a
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: abd0e6b36af02753d8ff08c8f7405cc6502977d1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744879"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548130"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 
@@ -137,11 +137,11 @@ Se avsnittet taligenkänning i [Vad är nytt i iOS](https://go.microsoft.com/fwl
 Du kan förbättra de resultat som du och dina kunder får när de använder det virtuella analysverktyget Frågor och svar på en datauppsättning, antingen genom att ställa mer riktade frågor eller genom att förbättra datauppsättningen.
 
 ### <a name="how-to-ask-questions"></a>Så här ställer du frågor
-* Följ dessa [tips för att ställa frågor i Frågor och svar](../../service-q-and-a-tips.md) i Power BI-tjänsten eller det virtuella analysverktyget Frågor och svar på din iOS-mobilapp.
+* Följ dessa [tips för att ställa frågor i Frågor och svar](../end-user-q-and-a-tips.md) i Power BI-tjänsten eller det virtuella analysverktyget Frågor och svar på din iOS-mobilapp.
 
 ### <a name="how-to-enhance-the-dataset"></a>Så här förbättrar du datauppsättningen
 * Förbättra datauppsättningen i Power BI Desktop eller i Power BI-tjänsten så att [dina data fungerar bra med Frågor och svar och det virtuella analysverktyget Frågor och svar](../../service-prepare-data-for-q-and-a.md).
 
 ## <a name="next-steps"></a>Nästa steg
-* [Frågor och svar i Power BI-tjänsten](../../power-bi-q-and-a.md)
+* [Frågor och svar i Power BI-tjänsten](../end-user-q-and-a.md)
 * Har du några frågor? Kontrollera avsnittet [Mobilappar i Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)

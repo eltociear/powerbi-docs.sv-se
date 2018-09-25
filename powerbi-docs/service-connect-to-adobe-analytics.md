@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e8e9b21e62f0a91234fccf78977a696e321ed8dc
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "38924545"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544634"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Anslut till Adobe Analytics med Power BI
 Du ansluter till Adobe Analytics via Power BI genom att ansluta till ditt Adobe Analytics Marketing Cloud-konto. Du får en app med en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som ger insikter om din webbplatstrafik och användardimensioner. Data uppdateras automatiskt en gång per dag. Du kan interagera med instrumentpanelen och rapporterna, men du kan inte spara ändringarna.
@@ -94,7 +94,7 @@ Om du får ett fel när du har angett dina autentiseringsuppgifter som anger du 
 Om du kommer förbi autentiseringsskärmen innan du påträffar felet, är det möjligt att rapporterna tar för lång tid att slutföra. Ett vanligt fel är i formatet *det gick inte att hämta data från Adobe Analytics-rapporten. Innehåll som ingår &quot;referent, sidan&quot;, ungefärlig varaktighet var xx sekunder*. Läs avsnittet vad ingår och jämför med storleken på din Adobe-instans. Det finns tyvärr inte något sätt att kringgå den här timeouten idag. Men vi överväger uppdateringar för att ge bättre stöd åt stora instanser. Ge gärna feedback till Power BI-teamet på https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](service-install-use-apps.md)
+* [Vad är appar i Power BI?](consumer/end-user-apps.md)
 * [Hämta data i Power BI](service-get-data.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

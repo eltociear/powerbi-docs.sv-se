@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 42ba9b042209dfd717c58042834e8d7966f97ecf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d221cfdc849a18ba934ebacaf58ef40999ac0117
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744748"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543323"
 ---
 # <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Skanna en streckkod med din iPhone från Power BI-mobilappen
 Skanna streckkoder ute i världen och gå direkt till filtrerad BI-information i Power BI-mobilappen.
@@ -67,6 +67,6 @@ Rapporten du valt att filtrera, baseras på en datamodell som inte innehåller d
 
 ## <a name="next-steps"></a>Nästa steg
 * [Tagga ett streckkodsfält i Power BI Desktop](../../desktop-mobile-barcodes.md)
-* [Paneler på instrumentpanelen i Power BI](../../service-dashboard-tiles.md)
-* [Instrumentpaneler i Power BI](../../service-dashboards.md)
+* [Paneler på instrumentpanelen i Power BI](../end-user-tiles.md)
+* [Instrumentpaneler i Power BI](../end-user-dashboards.md)
 

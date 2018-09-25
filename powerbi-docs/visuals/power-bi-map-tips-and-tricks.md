@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 487e53bae0fe872771b5ecbbe0458cd09dc48a4c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d1152ae1e4d386882c9165e6545a44c7f3c47e46
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748875"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548521"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips för Power BI-kartvisualiseringar
 Power BI integrerar med Bing Maps för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Tillsammans använder de algoritmer för att identifiera rätt plats, men är det mest en gissning. Om Power BI inte kan skapa en karta på egen hand använder den Bing Maps. 
@@ -89,7 +89,7 @@ När du ändrar detaljnivån med geo-hierarkier är det viktigt att veta hur var
 * Det andra alternativet, ![byt nivå med kartor](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , påminner om att ändra detaljnivån, men du behöver inte klicka på kartan.  Den expanderas till nästa nivå i hierarkin och kommer ihåg den aktuella nivåns kontext. Till exempel, om du för tillfället tittar på länder och väljer den här ikonen kommer du att hamna på nästa nivå i hierarkin – delstater. Power BI skickar data för varje delstat och dess motsvarande land att hjälpa Bing Maps att geokoda med större precision. Det här alternativet eller alternativet öka detaljnivå längst till höger används med de flesta kartorna, så att du kan skicka så mycket information som möjligt till Bing för att få noggrann platsinformation. 
 
 ## <a name="next-steps"></a>Nästa steg
-[Öka detaljnivån i en visualisering i Power BI](../power-bi-visualization-drill-down.md)
+[Öka detaljnivån i en visualisering i Power BI](../consumer/end-user-drill.md)
 
 [Visualiseringar i Power BI](power-bi-report-visualizations.md)
 

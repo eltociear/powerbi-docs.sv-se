@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 83aacb2c3ecf95d8daecc8e9c79bd312cefd6d86
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: ddf08edf7494cd8b918a93d41b384b4e89376d95
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748895"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543369"
 ---
 # <a name="basic-area-chart"></a>Grundläggande ytdiagram
 Det grundläggande ytdiagrammet (även känt som överlappande områdesdiagram) baseras på linjediagrammet. Området mellan axel och linje fylls med färger för att illustrera volym. 
@@ -60,7 +60,7 @@ Om du vill följa med, loggar du in i Power BI och väljer **Hämta data\> Exemp
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
 Information om hur du använder Filter-fönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
 
-Om du vill fokusera på ett visst område i ditt diagrammet, väljer du det området eller dess översta kant.  Till skillnad från andra visualiseringstyper så korsfiltreras inte andra visualiseringar på rapportsidan om du markerar ett grundläggande ytdiagram och det finns andra visualiseringar på samma sida. Ytdiagram är dock ett mål för korsfiltrering som utlösts av andra visualiseringar på rapportsidan. Läs mer i [Visuella interaktioner i rapporter](../service-reports-visual-interactions.md)
+Om du vill fokusera på ett visst område i ditt diagrammet, väljer du det området eller dess översta kant.  Till skillnad från andra visualiseringstyper så korsfiltreras inte andra visualiseringar på rapportsidan om du markerar ett grundläggande ytdiagram och det finns andra visualiseringar på samma sida. Ytdiagram är dock ett mål för korsfiltrering som utlösts av andra visualiseringar på rapportsidan. Läs mer i [Visuella interaktioner i rapporter](../consumer/end-user-interactions.md)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning   
@@ -68,8 +68,8 @@ Om du vill fokusera på ett visst område i ditt diagrammet, väljer du det omr�
 * Grundläggande ytdiagram är inte effektiva för att jämföra värden på grund av ocklusion av överlappande områden. Power BI använder genomskinlighet för att ange överlappande områden. Dock fungerar det bara bra med två eller tre olika områden. När du behöver jämföra trender med fler än tre mått, kan du testa att använda linjediagram. När du behöver jämföra volym med fler än tre mått, kan du testa att använda en trädkarta.
 
 ## <a name="next-steps"></a>Nästa steg
-[Rapporter i Power BI](../service-reports.md)  
+[Rapporter i Power BI](../consumer/end-user-reports.md)  
 [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)  
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)  
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

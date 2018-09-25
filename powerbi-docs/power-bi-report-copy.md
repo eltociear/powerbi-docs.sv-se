@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a85733e8450c9e1d3574afb71ace64fa2622fe0c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: f0337b26989b3d42e86339c4afc087579c2c3529
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44725637"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548797"
 ---
 # <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Skapa en ny rapport från en befintlig rapport (kopiera en rapport)
 Du kanske redan har en rapport som ansluter till din datauppsättning och har en del visuella objekt som du vill återanvända eller ändra.  Varför inte helt enkelt kopiera den rapporten och ha till grund för en ny rapport?  Om du vill göra det:
 
-1. [Öppna en rapport](service-report-open.md).
+1. [Öppna en rapport](consumer/end-user-report-open.md).
 2. Från **fil**-menyn, väljer du **spara som**.
    
    ![](media/power-bi-report-copy/powerbi-save-as.png)
@@ -39,6 +39,6 @@ Du kanske redan har en rapport som ansluter till din datauppsättning och har en
 ## <a name="next-steps"></a>Nästa steg:
 [Skapa nya visualiseringar](visuals/power-bi-report-add-visualizations-ii.md)
 
-[Ta bort visualiseringar](service-delete.md) du inte behöver
+[Ta bort visualiseringar](consumer/end-user-delete.md) du inte behöver
 
 [Skapa en rapport med Power BI Desktop](desktop-report-view.md)

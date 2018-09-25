@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1c2579f4250914933fd0459668fb55e4ba339f90
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b9fff17d51756da4561823886ed80beeec830843
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310117"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548122"
 ---
 # <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Självstudie: Ansluta till ett GitHub-exempel med Power BI
 I den här självstudien ska du ansluta till verkliga data i GitHub-tjänsten med Power BI, så skapar Power BI automatiskt instrumentpaneler och rapporter. Du ansluter till den offentliga lagringsplatsen (även kallad *databas*) för Power BI-innehåll och kan se information som: Hur många personer bidrar till det offentliga Power BI-innehållet? Vem bidrar med mest innehåll? Vilken dag i veckan har flest bidrag? Och få svar på andra frågor. 
@@ -125,6 +125,6 @@ Nu när du är klar med självstudien kan du ta bort GitHub-appen.
 I den här självstudien har du anslutit till en offentlig GitHub-lagringsplats och hämtat data, som konverterades till en instrumentpanel och en rapport i Power BI. Du har besvarat några frågor om informationen genom att utforska instrumentpanelen och rapporten. Nu kan du läsa mer om hur du ansluter till andra tjänster, till exempel Salesforce, Microsoft Dynamics och Google Analytics. 
  
 > [!div class="nextstepaction"]
-> [Ansluta till onlinetjänster som du använder](./service-connect-to-services.md)
+> [Ansluta till onlinetjänster som du använder](consumer/end-user-connect-to-services.md)
 
 

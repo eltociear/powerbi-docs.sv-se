@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 250ccba882a045417b2ae424cac81b6561cb2a41
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18e33fa4767eb0d9e457589ea3fa3b61721dce51
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728259"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548038"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri
 De här självstudierna har skrivits utifrån en person som skapar en ArcGIS-karta. När en skapare delar en ArcGIS-karta med en kollega, kan kollegan visa och interagera med kartan men inte spara några ändringar. Mer information om hur du visar en ArcGIS-karta finns i [Interagera med ArcGIS-kartor](visuals/power-bi-visualizations-arcgis.md).
@@ -61,7 +61,7 @@ De här självstudierna använder sig av [Exempel på detaljhandelsanalys](sampl
 2. Markera kryssrutan **ArcGIS Maps för Power BI**. Du måste starta om Power BI när du har gjort valet.
    
     ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Öppna en rapport i [Redigeringsvy](service-reading-view-and-editing-view.md) och välj ArcGIS Maps för Power BI-ikonen från panelen Visualiseringar.
+3. Öppna en rapport i [Redigeringsvy](consumer/end-user-reading-view.md) och välj ArcGIS Maps för Power BI-ikonen från panelen Visualiseringar.
    
     ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
 4. Power BI lägger till en tom ArcGIS-kartmall på rapportarbetsytan.

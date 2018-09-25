@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 27b3f18143fe5f354fb9a6965b1d3a58ba33f556
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a9f394cdfefabf1392b0219079d95a35d38b1754
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726925"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546129"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -161,7 +161,7 @@ Användarna ser olika alternativ i användargränssnittet baserat på vad instä
 
 ### <a name="export-data"></a>Exportera data
 
-Användare i organisationen kan exportera data från ett fönster eller en visualisering. [Läs mer](power-bi-visualization-export-data.md)
+Användare i organisationen kan exportera data från ett fönster eller en visualisering. [Läs mer](consumer/end-user-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
@@ -170,13 +170,13 @@ Användare i organisationen kan exportera data från ett fönster eller en visua
 
 ### <a name="export-reports-as-powerpoint-presentations"></a>Exportera rapporter som PowerPoint-presentationer
 
-Användare i organisationen kan exportera Power BI-rapporter som PowerPoint-filer. [Läs mer](service-publish-to-powerpoint.md)
+Användare i organisationen kan exportera Power BI-rapporter som PowerPoint-filer. [Läs mer](consumer/end-user-powerpoint.md)
 
 ![](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### <a name="print-dashboards-and-reports"></a>Skriva ut instrumentpaneler och rapporter
 
-Användare i organisationen kan skriva ut instrumentpaneler och rapporter. [Läs mer](service-print.md)
+Användare i organisationen kan skriva ut instrumentpaneler och rapporter. [Läs mer](consumer/end-user-print.md)
 
 ![](media/service-admin-portal/powerbi-admin-print-dashboard.png)
 
@@ -205,7 +205,7 @@ Du kan växla inställningen till **Aktiverad** och sedan ange vilka som får de
 > [!NOTE]
 > Tänk på att det tar tid innan klientinställningarna verkställs.
 
-Här kan du [läsa mer om att pusha appar](service-create-distribute-apps.md#how-to-install-an-app-automatically-for-end-users).
+Här kan du [läsa mer om att pusha appar](consumer/end-user-create-apps.md#how-to-install-an-app-automatically-for-end-users).
 
 ## <a name="integration-settings"></a>Inställningar för integrering
 

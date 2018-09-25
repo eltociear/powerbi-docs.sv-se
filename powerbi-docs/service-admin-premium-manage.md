@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: b38c69d74141b28215e0a14a32fc7b03fab4fdbf
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: e60cc5341bba50d9fac82f032656f449cadaa255
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558480"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546578"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 Lär dig hur du kan hantera Power BI Premium- och Power BI Embedded-kapaciteter som tillhandahåller dedikerade resurser för ditt innehåll.
@@ -183,6 +183,6 @@ Om du väljer **Power BI-rapportservernyckel** visas en dialogruta med din produ
 Mer information finns i [Installera Power BI-rapportservern](report-server/install-report-server.md).
 
 ## <a name="next-steps"></a>Nästa steg
-Dela publicerade appar med användare. Mer information finns i [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md).
+Dela publicerade appar med användare. Mer information finns i [Skapa och distribuera en app i Power BI](consumer/end-user-create-apps.md).
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

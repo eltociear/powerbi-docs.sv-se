@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2bbc619c2f581e26e36f03013f3db248fab49610
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 516d78bd6158c714d5f4418771c5e8cb219ce512
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624354"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547578"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Hantera din apparbetsyta i Power BI och Office 365
-Som skapare eller administratör för en [apparbetsyta i Power BI](service-install-use-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365. 
+Som skapare eller administratör för en [apparbetsyta i Power BI](consumer/end-user-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365. 
 
 > [!NOTE]
 > Förhandsversionen av den nya arbetsytan kommer att ändra förhållandet mellan Power BI-arbetsytor och Office 365-grupper. Du kommer inte automatiskt att skapa en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om [att skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md)
@@ -76,7 +76,7 @@ När du distribuerar appen från apparbetsytan bli bilden som du lägger till h�
 3. Välj **Spara** eller **Ignorera**.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](service-install-use-apps.md)
-* [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md)
+* [Vad är appar i Power BI?](consumer/end-user-apps.md)
+* [Publicera appar med instrumentpaneler och rapporter i Power BI](consumer/end-user-create-apps.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

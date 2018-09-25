@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 81a8b5454e39088b8b406e600707d1d5073e14dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1104c7f90f46252a74c4aa8e5ec573a159ef1c40
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330177"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550131"
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan antingen *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller så kan du ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner, däribland följande avsnitt:
@@ -277,7 +277,7 @@ När du skapar en rapport med en DirectQuery-anslutning måste du tänka på fö
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  I DirectQuery kräver sådan korsfiltrering och korsmarkering att frågorna skickas till den underliggande källan. Det innebär att interaktionen bör stängas av om den tid det tar att svara på användarnas val skulle visa sig bli orimligt lång. Interaktionen kan emellertid stängas av, antingen för hela rapporten (såsom beskrivs ovan för *Alternativ för frågereduktion*), eller på grundval av fall som beskrivs [i den här artikeln](service-reports-visual-interactions.md).
+  I DirectQuery kräver sådan korsfiltrering och korsmarkering att frågorna skickas till den underliggande källan. Det innebär att interaktionen bör stängas av om den tid det tar att svara på användarnas val skulle visa sig bli orimligt lång. Interaktionen kan emellertid stängas av, antingen för hela rapporten (såsom beskrivs ovan för *Alternativ för frågereduktion*), eller på grundval av fall som beskrivs [i den här artikeln](consumer/end-user-interactions.md).
 
 Utöver listan över förslag ovan, så tänk på att följande rapportfunktioner kan orsaka prestandaproblem:
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cde28e7c41a35c3bbc37d0da56313ad7f8698110
-ms.sourcegitcommit: 15b877343540bb7e21f1d5bbd3d6f64e66fa138c
+ms.openlocfilehash: 5a94b4c808dcb7cbb040f68c0de7588a3b99c155
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42914529"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548843"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Skapa de nya arbetsytorna (förhandsversion) i Power BI
 
@@ -130,7 +130,7 @@ Vi skapar arbetsflöden för åtkomstbegäran på olika ställen i tjänsten så
 
 ## <a name="distribute-an-app"></a>Distribuera en app
 
-När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Du kan skapa en app från varje arbetsyta. Dina medarbetare kan få appen på ett par olika sätt. Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera din app från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md).
+När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Du kan skapa en app från varje arbetsyta. Dina medarbetare kan få appen på ett par olika sätt. Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera din app från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](consumer/end-user-create-apps.md).
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Konvertera gamla apparbetsytor till nya apparbetsytor
 
@@ -174,5 +174,5 @@ Följande problem är kända och korrigeringar är under utveckling:
 ## <a name="next-steps"></a>Nästa steg
 
 - [Skapa de aktuella arbetsytorna](service-create-workspaces.md)
-* [Installera och använda appar i Power BI](service-install-use-apps.md)
+* [Installera och använda appar i Power BI](consumer/end-user-apps.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)

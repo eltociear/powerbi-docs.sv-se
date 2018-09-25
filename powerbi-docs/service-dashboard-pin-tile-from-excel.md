@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3bb151de24a984406aa6fd40a70977f2e9eaf1be
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599604"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548061"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fästa en panel på en Power BI-instrumentpanel från Excel
 Innan du kan fästa en panel från Excel-arbetsboken, ansluter du arbetsboken till Power BI-tjänsten (app.powerbi.com). Att ansluta en arbetsbok innebär i stort sett att använda en länkad skrivskyddad version av arbetsboken i Power BI-tjänsten för att du ska kunna fästa intervall på instrumentpaneler. Du kan även fästa ett helt kalkylblad på en instrumentpanel.  
@@ -49,7 +49,7 @@ Du kan inte redigera din arbetsbok i Power BI. Men om du behöver göra ändring
     ![Excel Online i Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Fästa ett cellområde på en instrumentpanel
-Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) är från en Excel-arbetsbok i Power BI. Områden kan fästas från Excel-arbetsböcker som har sparats i OneDrive för företag eller andra gruppdelade dokumentbibliotek. Områdena kan innehålla data, diagram, tabeller, pivottabeller, pivotdiagram och andra delar av Excel.
+Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) är från en Excel-arbetsbok i Power BI. Områden kan fästas från Excel-arbetsböcker som har sparats i OneDrive för företag eller andra gruppdelade dokumentbibliotek. Områdena kan innehålla data, diagram, tabeller, pivottabeller, pivotdiagram och andra delar av Excel.
 
 1. Markera de celler som du vill fästa på en instrumentpanel.
    

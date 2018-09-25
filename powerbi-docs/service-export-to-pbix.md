@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 938f7b5f905d156518f71a30b355575cf1c04683
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2f7133bb376cc04e181eed2d90a45e3361190d0b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722553"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547047"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exportera en rapport från Power BI-tjänsten till skrivbordet (förhandsgranskning)
 I Power BI Desktop kan du exportera (kallas även *hämta*) en rapport till Power BI-tjänsten genom att spara rapporten och välja **Publicera**. Du kan även exportera i omvänd ordning samt och ladda ned en rapport från Power BI-tjänsten till skrivbordet. Filnamnstillägget för filer som exporteras i endera riktningen är *.pbix*.
@@ -27,7 +27,7 @@ Det finns några begränsningar och saker du bör tänka på, vilket beskrivs l�
 ## <a name="download-the-report-as-a-pbix"></a>Ladda ned rapporten som en .pbix-fil
 Hämta .pbx-filen genom att följa dessa steg:
 
-1. Öppna rapporten i [redigeringsvyn](service-reading-view-and-editing-view.md) i **Power BI-tjänsten**.
+1. Öppna rapporten i [redigeringsvyn](consumer/end-user-reading-view.md) i **Power BI-tjänsten**.
 2. Välj **Arkiv > Hämta rapport** på menyraden.
    
    > [!NOTE]
@@ -67,8 +67,8 @@ Visa enminutsvideon **Kille i en kub** om den här funktionen:
 
 Här följer ytterligare artiklar som kan hjälpa dig att lära känna **Power BI-tjänsten**:
 
-* [Rapporter i Power BI](service-reports.md)
-* [Power BI – grundläggande begrepp](service-basic-concepts.md)
+* [Rapporter i Power BI](consumer/end-user-reports.md)
+* [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 
 När du har installerat **Power BI Desktop** kan du komma igång med hjälp av följande innehåll:
 

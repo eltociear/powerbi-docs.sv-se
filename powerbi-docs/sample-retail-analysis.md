@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 44244bf746c1a11229d2041b4c2b43871fa7a199
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6955bc0c41e5a6a145d2101ab527d753f98d5c61
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944547"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550085"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: ta en rundtur
 
@@ -165,5 +165,5 @@ Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor oc
 * [Hämta en zip-fil med alla exempelfiler](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Ladda ned Excel-arbetsboken för det här Power BI-exemplet](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Hämta data (för Power BI)](service-get-data.md)    
-* [Power BI – grundläggande begrepp](service-basic-concepts.md)    
+* [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)    
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

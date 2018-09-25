@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1dadb70f2d75596bb7180a5e7360cae19e1515b8
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 3d4065a6ab0c5a3c8f18350ef6c3a0444febda08
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38937272"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547072"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Ansluta till Microsoft Dynamics CRM med Power BI
 Med Microsoft Dynamics CRM Online för Power BI kan du enkelt komma åt och analysera dina data. Power BI använder OData-feeden för att skapa en beskrivande modell, med alla entiteter och åtgärder som behövs som Konton, Aktiviteter, Affärsmöjligheter, Produkt, Leads, Användare och annat. När du har installerat appen kan du visa instrumentpanelen och rapporterna i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och i Power BI-mobilapparna. 
@@ -154,7 +154,7 @@ Om du inte har CRM Online 2016 eller senare, kan du använda Power BI Desktop f�
 Om du ser ett fel om att ”datauppdateringen misslyckades eftersom en fråga överskred den maximala gränsen på 100 000 poster” kan du ansluta direkt från Power BI Desktop eller utnyttja CRM-lösningsmallen.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](service-install-use-apps.md)
+* [Vad är appar i Power BI?](consumer/end-user-apps.md)
 * [Hämta data i Power BI](service-get-data.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

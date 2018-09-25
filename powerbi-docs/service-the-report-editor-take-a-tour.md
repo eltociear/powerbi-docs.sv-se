@@ -11,25 +11,25 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3c6ae5351908bd71888040c3bc900323837935c2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726649"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546083"
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapportredigeraren... Ta en rundtur
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigera rapporter i Power BI-tjänsten och Power BI Desktop
 Rapportredigeraren i Power BI-tjänsten och rapportredigeraren i Power BI Desktop liknar varandra mycket. Videon visar rapportredigeraren i Power BI Desktop och den här artikeln beskriver rapportredigeraren i Power BI-tjänsten. 
 
 ## <a name="the-difference-between-report-creators-and-report-consumers"></a>Skillnaden mellan rapport*skapare* och rapport*konsumenter*
-Möjligheten att skapa och redigera en rapport är begränsad till rapportens ägare (aka *skapare*). Om du *konsumerar* en rapport som har delats med dig kommer du fortfarande att kunna öppna och interagera med rapporten i Power BI-tjänsten [Endast läsvy](service-reading-view-and-editing-view.md), men kommer inte att ha alla stabila och omfattande funktioner som är tillgängliga för rapportskaparen.  
+Möjligheten att skapa och redigera en rapport är begränsad till rapportens ägare (aka *skapare*). Om du *konsumerar* en rapport som har delats med dig kommer du fortfarande att kunna öppna och interagera med rapporten i Power BI-tjänsten [Endast läsvy](consumer/end-user-reading-view.md), men kommer inte att ha alla stabila och omfattande funktioner som är tillgängliga för rapportskaparen.  
 
-Mer information om rapportens läsvy finns i [Läsvyn och Redigeringsvyn i Power BI-tjänsten](service-reading-view-and-editing-view.md) 
+Mer information om rapportens läsvy finns i [Läsvyn och Redigeringsvyn i Power BI-tjänsten](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-I Power BI-tjänsten är *rapportredigeraren* endast tillgänglig i [redigeringsvyn](service-reading-view-and-editing-view.md). Om du vill öppna en rapport i redigeringsvyn måste du vara rapportägare eller -skapare.
+I Power BI-tjänsten är *rapportredigeraren* endast tillgänglig i [redigeringsvyn](consumer/end-user-reading-view.md). Om du vill öppna en rapport i redigeringsvyn måste du vara rapportägare eller -skapare.
 
 Power BI-Rapportredigeraren består av 3 delar:  
 
@@ -126,9 +126,9 @@ Rapportarbetsytan är den plats där arbetet visas. När du använder fönstren 
 ## <a name="next-steps"></a>Nästa steg:
 [Skapa en rapport](service-report-create-new.md)
 
-Läs mer om rapporter i [Power BI-tjänsten](service-reports.md), [Power BI Desktop](desktop-report-view.md) och [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
+Läs mer om rapporter i [Power BI-tjänsten](consumer/end-user-reports.md), [Power BI Desktop](desktop-report-view.md) och [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
 
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

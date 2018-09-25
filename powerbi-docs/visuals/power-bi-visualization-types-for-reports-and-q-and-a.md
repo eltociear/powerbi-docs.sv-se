@@ -2,7 +2,7 @@
 title: Visualiseringstyper i Power BI
 description: Visualiseringstyper i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/19/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 40106a9f219487a1fb52f353f3609f8f1d98bf4b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a12a497de5ee3e02ea6ba2b1e92fb6c50834d99c
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744911"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566060"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-visualiseringar
@@ -176,9 +176,9 @@ När du skriver frågor med naturligt språk i Frågor och svar för Power BI ka
 [Visuella objekt i Power BI-rapporter](power-bi-report-visualizations.md)    
 [Rätt visuell referens från sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
 
-[Rapporter i Power BI](../service-reports.md)
+[Rapporter i Power BI](../consumer/end-user-reports.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

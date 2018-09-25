@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 968cf7e573a298c2a82adaf2092a9d35ffa397e5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 75543bfc381f0a8391fe4422d677913ab61ad363
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240220"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550062"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fäst en panel på en Power BI-instrumentpanel från en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fästa paneler från en rapport
-Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) är från en [Power BI-rapport](service-reports.md). Du kan lägga till flera nya paneler från en rapport.  Var och en av dem är en länk tillbaka till rapporten när du klickar på dem.
+Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) är från en [Power BI-rapport](consumer/end-user-reports.md). Du kan lägga till flera nya paneler från en rapport.  Var och en av dem är en länk tillbaka till rapporten när du klickar på dem.
 
 Och hela rapportsidor kan fästas på en instrumentpanel.  Det kallas även att fästa en *live*-panel.  *Live* eftersom du kan interagera med panelen på instrumentpanelen och, till skillnad från enskilda visualiseringspaneler, synkroniseras ändringar i rapporten med instrumentpanelen. Läs mer om det här nedan.
 
@@ -58,15 +58,15 @@ Ett annat alternativ är att fästa en hel rapportsida till en instrumentpanel. 
 Mer information finns i [fäst en hel rapportsida](service-dashboard-pin-live-tile-from-report.md)
 
 ## <a name="next-steps"></a>Nästa steg
-[Instrumentpaneler i Power BI](service-dashboards.md)
+[Instrumentpaneler i Power BI](consumer/end-user-dashboards.md)
 
-[Paneler på instrumentpanelen i Power BI](service-dashboard-tiles.md)
+[Paneler på instrumentpanelen i Power BI](consumer/end-user-tiles.md)
 
-[Rapporter i Power BI](service-reports.md)
+[Rapporter i Power BI](consumer/end-user-reports.md)
 
 [Datauppdatering i Power BI](refresh-data.md)
 
-[Grundläggande begrepp i Power BI](service-basic-concepts.md)
+[Grundläggande begrepp i Power BI](consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

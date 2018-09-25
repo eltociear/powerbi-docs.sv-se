@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ed882a339e1ee7d53302dc33a7cedb1a95709b8b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 656f32dd28796ec58b7cfcf774248ee30de0085a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249124"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545909"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fäst en panel från en instrumentpanel till en annan instrumentpanel
-Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) är genom att kopiera den från en annan instrumentpanel. Var och en av de här panelerna, när de klickas på, länkar tillbaka till där de skapades – antingen i frågor och svar eller i en rapport. 
+Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) är genom att kopiera den från en annan instrumentpanel. Var och en av de här panelerna, när de klickas på, länkar tillbaka till där de skapades – antingen i frågor och svar eller i en rapport. 
 
 > [!NOTE]
 > Du kan inte fästa paneler från delade instrumentpaneler.
 
 ## <a name="pin-a-tile-to-another-dashboard"></a>Fäst en panel till en annan instrumentpanel
 1. [Hämta data](service-get-data.md). Det här exemplet använder sig av [exemplet för IT-utgiftsanalys](sample-it-spend.md).
-2. Öppna en [instrumentpanel](service-dashboards.md).
+2. Öppna en [instrumentpanel](consumer/end-user-dashboards.md).
 3. Hovra över den panel du vill fästa, välj ellipserna (...) och välj **Fäst panel**.  
    
    ![ellipsmenyn](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
@@ -42,7 +42,7 @@ Ett sätt att lägga till en ny [instrumentpanel](service-dashboard-tiles.md) ä
 6. Välj **gå till instrumentpanel** för att se den fästa panelen. Härifrån kan du [byta namn, ändra storlek, länka och flytta](service-dashboard-edit-tile.md) den fästa visualiseringen.
 
 ## <a name="next-steps"></a>Nästa steg
-[Paneler i Power BI](service-dashboard-tiles.md)  
-[Instrumentpaneler i Power BI](service-dashboards.md)  
+[Paneler i Power BI](consumer/end-user-tiles.md)  
+[Instrumentpaneler i Power BI](consumer/end-user-dashboards.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 51c3fdbef345a0d6020abe35ba7c71aaa67882e4
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c64a5e487725bdfedf03b496322a52e7664f5455
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726856"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545099"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Självstudie: Kom igång med Power BI-tjänsten (app.powerbi.com)
 Dessa självstudier hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden, så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](power-bi-overview.md).
@@ -53,9 +53,9 @@ Besök vår [spelningslista på YouTube](https://www.youtube.com/playlist?list=P
 > 
 
 ## <a name="what-is-power-bi-service"></a>Vad är Power BI-tjänsten?
-Microsofts Power BI-tjänst kallas ibland för Power BI online eller app.powerbi.com. Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  Tack vare Power BI-tjänsten hjälper ***instrumentpanelerna*** dig att ha koll på verksamhetens puls.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](service-basic-concepts.md).
+Microsofts Power BI-tjänst kallas ibland för Power BI online eller app.powerbi.com. Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  Tack vare Power BI-tjänsten hjälper ***instrumentpanelerna*** dig att ha koll på verksamhetens puls.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md).
 
-Om du har viktiga data i Excel- eller CSV-filer, så kan du skapa en Power BI-instrumentpanel så att du kan hålla dig informerad var du än befinner dig och dela information med andra.  Prenumererar du på ett SaaS-program som Salesforce?  Kom igång direkt genom att ansluta till Salesforce och automatiskt skapa en instrumentpanel från dessa data, eller [ta en närmare titt på alla andra SaaS-appar](service-get-data.md) som du kan ansluta till. Om du arbetar för en organisation kan du kontrollera om några [appar](service-create-distribute-apps.md) har publicerats för dig.
+Om du har viktiga data i Excel- eller CSV-filer, så kan du skapa en Power BI-instrumentpanel så att du kan hålla dig informerad var du än befinner dig och dela information med andra.  Prenumererar du på ett SaaS-program som Salesforce?  Kom igång direkt genom att ansluta till Salesforce och automatiskt skapa en instrumentpanel från dessa data, eller [ta en närmare titt på alla andra SaaS-appar](service-get-data.md) som du kan ansluta till. Om du arbetar för en organisation kan du kontrollera om några [appar](consumer/end-user-create-apps.md) har publicerats för dig.
 
 Läs mer om alla andra sätt att [hämta data på för Power BI](service-get-data.md).
 
@@ -87,7 +87,7 @@ Här är ett exempel på hämtning av data från en CSV-fil. Vill du följa den 
 
     ![Alternativet Läsvy](media/service-get-started/power-bi-editing-view.png)
 
-    I redigeringsvyn kan du skapa och ändra dina rapporter eftersom du är *ägare* till rapporterna. Det är du som är *skaparen*. När du delar din rapport med kollegor kan de bara interagera med rapporten i läsvyn. De är *konsumenter*. Lär dig mer om [Läsvy och Redigeringsvy](service-reading-view-and-editing-view.md).
+    I redigeringsvyn kan du skapa och ändra dina rapporter eftersom du är *ägare* till rapporterna. Det är du som är *skaparen*. När du delar din rapport med kollegor kan de bara interagera med rapporten i läsvyn. De är *konsumenter*. Lär dig mer om [Läsvy och Redigeringsvy](consumer/end-user-reading-view.md).
     
     Ett bra sätt för dig att bekanta dig med rapportredigeraren är att [ta en rundtur](service-the-report-editor-take-a-tour.md)
    > 
@@ -158,5 +158,5 @@ Nu när du är klar med självstudien kan du ta bort datauppsättningen, rapport
 Är du redo att testa mer?  Här följer några bra exempel på hur du kan utforska Power BI.
 
 > [!div class="nextstepaction"]
-> [Ansluta till onlinetjänster som du använder](./service-connect-to-services.md)
+> [Ansluta till onlinetjänster som du använder](consumer/end-user-connect-to-services.md)
 

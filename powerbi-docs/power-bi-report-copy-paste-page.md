@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 03/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8083e2aba9a2aa5b8bba27995e9fe261a76084c9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 380567441fafec92d1f5e9e6b135b797264df40f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728075"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543578"
 ---
 # <a name="duplicate-a-report-page-in-power-bi"></a>Duplicera en rapportsida i Power BI
-Om du duplicerar en rapportsida i Power BI-tjänsten eller Power BI Desktop måste du ha redigeringsbehörigheter för rapporten. I Power BI-tjänsten innebär detta att öppna rapporten i [redigeringsvyn](service-reading-view-and-editing-view.md). 
+Om du duplicerar en rapportsida i Power BI-tjänsten eller Power BI Desktop måste du ha redigeringsbehörigheter för rapporten. I Power BI-tjänsten innebär detta att öppna rapporten i [redigeringsvyn](consumer/end-user-reading-view.md). 
 
 
 1. Öppna en rapport som har minst en sida i Power BI. 
@@ -36,7 +36,7 @@ Om du duplicerar en rapportsida i Power BI-tjänsten eller Power BI Desktop mås
 ### <a name="next-steps"></a>Nästa steg
 Mer om [Visualiseringar i Power BI-rapporter](visuals/power-bi-report-visualizations.md)    
 [Lägg till en ny sida i en rapport](power-bi-report-add-page.md)    
-[Power BI – grundläggande begrepp](service-basic-concepts.md)    
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)    
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

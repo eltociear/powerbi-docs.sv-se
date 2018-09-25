@@ -1,21 +1,21 @@
 ---
 title: Optimera ett visuellt Power BI-objekt oavsett storlek
 description: Lär dig hur du optimerar visuella objekt i befintliga rapporter i Power BI Desktop och Power BI-tjänsten för Power BI-mobilapparna.
-author: maggiesMSFT
+author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/13/2018
-ms.author: maggies
+ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d85d4bd60c341ef588cf56b1345f28aa25b810de
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 1c50bcf656f967502e8bb01f7ca5184996170bed
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748705"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566336"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Optimera ett visuellt Power BI-objekt oavsett storlek
 När du skapar en ny rapport är de visuella objekten som standard *dynamiska*: De ändras dynamiskt så att maximal mängd data och insikter kan visas, oavsett skärmstorlek. När det gäller äldre rapporter kan du konfigurera deras visuella objekt så att även de ändrar storlek dynamiskt.

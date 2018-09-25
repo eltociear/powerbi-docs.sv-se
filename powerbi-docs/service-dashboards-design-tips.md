@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 327e9d9973aabb17761b55d355598462ce70e20e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726067"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545002"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
@@ -65,7 +65,7 @@ Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar sk
 * Blanda inte olika precisions- och tidsnivåer. Kontrollera att tidsramarna är lätta att förstå.  Placera inte ett diagram från förra månaden bredvid filtrerade diagram från en specifik månad det året.
 * Blanda inte stora och små mått på samma skala, t.ex i ett linje- eller stapeldiagram.  Som exempel då ett mått är i miljontal och det andra i tusental.  Med en så stor skala är det svårt att se skillnaderna mellan måtten i tusental.  Om du behöver blanda ska du välja en visualisering som tillåter användning av en andra axel.
 * Fyll inte dina diagram med dataetiketter som inte behövs. Värdena i stapeldiagram är vanligtvis lätta att förstå utan att man behöver visa det faktiska talet.
-* Var uppmärksam på hur [diagram sorteras](power-bi-report-change-sort.md).  Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått.  Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
+* Var uppmärksam på hur [diagram sorteras](consumer/end-user-change-sort.md).  Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått.  Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
 * Cirkeldiagram fungerar som bäst med mindre än åtta kategorier. Eftersom man inte kan jämföra värden sida vid sida, är det svårare för att jämföra värden i ett cirkeldiagram än i ett stapel- eller kolumndiagram. Cirkeldiagram är bättre för att visa förhållanden mellan en del och helheten, än för att jämföra delarna med varandra. Och måttdiagram är bra för att visa aktuell status i kontexten för ett mål.
 
 Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
@@ -81,5 +81,5 @@ Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI]
 
 ## <a name="next-steps"></a>Nästa steg
 [Skapa en instrumentpanel från en rapport](service-dashboard-create.md)  
-[Power BI – grundläggande begrepp](service-basic-concepts.md)  
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0de070cc8661d4973d406ddf0749ef4852fc916c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598988"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546106"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Redigera eller ta bort en panel på instrumentpanelen
 
@@ -36,7 +36,7 @@ Den här artikeln beskriver hur du kan göra följande.
 * [Ta bort en panel](#delete)
   
   > [!TIP]
-  > För att ändra den visualisering som visas på själva panelen tar du bort panelen och lägger till en ny [panel på instrumentpanelen](service-dashboard-tiles.md).
+  > För att ändra den visualisering som visas på själva panelen tar du bort panelen och lägger till en ny [panel på instrumentpanelen](consumer/end-user-tiles.md).
 
   
 ## <a name="prerequisites"></a>Förutsättningar
@@ -142,11 +142,11 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 
 - - -
 ## <a name="next-steps"></a>Nästa steg
-[Paneler på instrumentpanelen i Power BI](service-dashboard-tiles.md)
+[Paneler på instrumentpanelen i Power BI](consumer/end-user-tiles.md)
 
-[Instrumentpaneler i Power BI](service-dashboards.md)
+[Instrumentpaneler i Power BI](consumer/end-user-dashboards.md)
 
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

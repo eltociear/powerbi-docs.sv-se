@@ -10,16 +10,16 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: 4676b31a117573d1d69b5947ec2380c4abf29405
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 45bd00877aadba2a84ac533add18b82337fa8403
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726879"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546267"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Få anpassade visuella objekt *certifierade*
 ## <a name="what-is-meant-by-certified"></a>Vad menas med begreppet *certifierad*?
-En *certifierade visualisering* är en som uppfyller en uppsättning kodkrav och har klarat strikta säkerhetstest.  När anpassade visuella objekt har certifierats kan de [exporteras till PowerPoint](service-publish-to-powerpoint.md) och visas i de e-postmeddelanden som tas emot när en användare [prenumererar på rapportsidor](service-report-subscribe.md). Naturligtvis kan den också användas som [anpassade visuella objekt som är standard](power-bi-custom-visuals.md) som läggs till i Power BI-tjänsten och Power BI Desktop-rapporter och visas i Power BI Mobile och Embedded.
+En *certifierade visualisering* är en som uppfyller en uppsättning kodkrav och har klarat strikta säkerhetstest.  När anpassade visuella objekt har certifierats kan de [exporteras till PowerPoint](consumer/end-user-powerpoint.md) och visas i de e-postmeddelanden som tas emot när en användare [prenumererar på rapportsidor](consumer/end-user-subscribe.md). Naturligtvis kan den också användas som [anpassade visuella objekt som är standard](power-bi-custom-visuals.md) som läggs till i Power BI-tjänsten och Power BI Desktop-rapporter och visas i Power BI Mobile och Embedded.
 
 Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i [Microsoft AppSource](https://appsource.microsoft.com)? Se [Kom igång med utvecklingsverktyg](service-custom-visuals-getting-started-with-developer-tools.md) för att lära dig hur.
 

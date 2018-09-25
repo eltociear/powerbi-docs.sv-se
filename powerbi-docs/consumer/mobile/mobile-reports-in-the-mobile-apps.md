@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 5fe4212be55a42a6892a94e2a07da8af5c035b6d
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748080"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547256"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -82,7 +82,7 @@ När du väljer ett värde i en visuell information så filtreras inte övrig vi
 * För att kasta om sorteringsordningen, trycker du på ellipsen (**...** ) igen och trycker sedan på samma fältnamn igen.
 
 ## <a name="drill-down-and-up-in-a-visual"></a>Öka och minska detaljnivån i ett visuellt objekt
-Om en rapportskapare har lagt till detaljnivåfunktionen i en visualisering kan du öka detaljnivån i visualiseringen för att se de värden som utgör en del av den. Du kan [lägga till öka detaljnivån för en visualisering](../../power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjänsten. 
+Om en rapportskapare har lagt till detaljnivåfunktionen i en visualisering kan du öka detaljnivån i visualiseringen för att se de värden som utgör en del av den. Du kan [lägga till öka detaljnivån för en visualisering](../end-user-drill.md) i Power BI Desktop eller Power BI-tjänsten. 
 
 * Tryck på och håll ned ett specifikt fält eller en punkt i ett visuellt objekt för att visa dess knappbeskrivning. Om den har detaljnivåfunktion finns det pilar längst ned på knappbeskrivningen som du kan trycka på. 
   

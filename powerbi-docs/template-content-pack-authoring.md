@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 8b7c46ad1e9ea9c4c79a8f5a1b48c73ab3336306
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: 7253a340ce0852039a08d0ed17c488fc8fdbfa69
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157579"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545932"
 ---
 # <a name="author-template-content-packs-in-power-bi"></a>Redigera mallinnehållspaket i Power BI
 När du redigerar ett mallinnehållspaket använder du Power BI Desktop och PowerBI.com. Det finns fyra komponenter i ditt innehållspaket:
@@ -22,7 +22,7 @@ När du redigerar ett mallinnehållspaket använder du Power BI Desktop och Powe
 * Med frågor kan du [ansluta](desktop-connect-to-data.md) och [transformera](desktop-query-overview.md) data, samt definiera [parametrar](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 * Datamodell för att skapa förbättringar av [relationer](desktop-create-and-manage-relationships.md), [mått](desktop-measures.md) och frågor och svar  
 * På rapport[sidor](desktop-report-view.md) finns visuella objekt och filter som ger analyser av dina data  
-* Med [instrumentpanel](service-dashboards.md) och [paneler](service-dashboard-create.md) får du en översikt över de analyser som ingår  
+* Med [instrumentpanel](consumer/end-user-dashboards.md) och [paneler](service-dashboard-create.md) får du en översikt över de analyser som ingår  
 
 Du känner kanske till varje del som befintliga Power BI-funktioner. När du skapar ett innehållspaket finns det några saker att fundera över för varje del – se avsnitten nedan för mer information.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b34c16337158e784b0c41bd3e3fd93aca9504cd7
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4d43ffb1f4e005830fd36da4e80cf4d0c7d86fed
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727316"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549947"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -110,7 +110,7 @@ Om du skickar en länk från en Power BI-mobilapp till personer utanför organis
 Saker att tänka på när det gäller att dela instrumentpaneler och rapporter:
 
 * Normalt ser du och dina kollegor samma data på instrumentpanelen eller rapporten. Så om du har behörighet att se mer data än vad de har, så kan de se alla dina data på instrumentpanelen eller rapporten. Men om [säkerhet på radnivå (RLS)](service-admin-rls.md) tillämpas på instrumentpanelens eller rapportens underliggande datauppsättning, då avgör de enskilda användarnas autentiseringsuppgifter vilka data de har åtkomst till.
-* Alla som du delar din instrumentpanel med kan se den och interagera med relaterade rapporter i [läsvy](service-reading-view-and-editing-view.md). De kan inte skapa rapporter eller spara ändringar i befintliga rapporter.
+* Alla som du delar din instrumentpanel med kan se den och interagera med relaterade rapporter i [läsvy](consumer/end-user-reading-view.md). De kan inte skapa rapporter eller spara ändringar i befintliga rapporter.
 * Ingen kan se eller hämta datauppsättningen.
 * Alla kan [uppdatera data](refresh-data.md) manuellt.
 * Om du använder Office 365 för e-post kan du dela med medlemmar i en distributionsgrupp genom att ange den e-postadress som är kopplad till distributionsgruppen.

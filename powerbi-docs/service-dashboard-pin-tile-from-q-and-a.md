@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e71412febc5b8d8a9ee4ff20174496de0c7d51f2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9cf5855acc5efe773f8f06e6de9f769f75794bdb
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251424"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548751"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fäst en panel till en instrumentpanel från frågor och svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Så här fäster du en panel från frågor och svar
 Frågor och svar är Power BI:s verktyg för ad hoc-rapportering. Behöver du hitta en viss insikt? Ställ en fråga om dina data och ta emot ett svar i form av en visualisering.
 
-I den här anvisningen, använder vi oss av Power BI-tjänsten (app.powerbi.com) för att öppna en instrumentpanel, ställa en fråga med naturligt språk för att skapa en visualisering och sedan fästa den visualiseringen på en instrumentpanel. Instrumentpaneler finns inte tillgängliga i Power BI Desktop. Information om hur du använder frågor och svar med andra Power BI-verktyg och innehåll, finns i [Översikt över Power BI frågor och svar](power-bi-q-and-a.md). 
+I den här anvisningen, använder vi oss av Power BI-tjänsten (app.powerbi.com) för att öppna en instrumentpanel, ställa en fråga med naturligt språk för att skapa en visualisering och sedan fästa den visualiseringen på en instrumentpanel. Instrumentpaneler finns inte tillgängliga i Power BI Desktop. Information om hur du använder frågor och svar med andra Power BI-verktyg och innehåll, finns i [Översikt över Power BI frågor och svar](consumer/end-user-q-and-a.md). 
 
 Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandelsanalys](sample-retail-analysis.md).
 
 
-1. Öppna en [instrumentpanel](service-dashboards.md) som har minst en panel fäst från en rapport. När du skriver en fråga, letar Power BI efter svaret i alla datauppsättningar som har en panel fäst på den instrumentpanelen.  Läs mer i [hämta data](service-get-data.md).
+1. Öppna en [instrumentpanel](consumer/end-user-dashboards.md) som har minst en panel fäst från en rapport. När du skriver en fråga, letar Power BI efter svaret i alla datauppsättningar som har en panel fäst på den instrumentpanelen.  Läs mer i [hämta data](service-get-data.md).
 2. Börja skriva vad du vill veta om dina data i frågerutan överst på instrumentpanelen.  
    ![ruta för frågor och svar](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. När du till exempel skriver senaste årets försäljning per månad och område...  
@@ -62,6 +62,6 @@ Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandel
 
 ## <a name="next-steps"></a>Nästa steg
 [Byt namn på, ändra storlek, lägg till en hyperlänk, flytta panelen och mer](service-dashboard-edit-tile.md)    
-[Visa din panel i instrumentpanelen i fokusläge](service-focus-mode.md)     
-[Gå tillbaka till frågor och svar i Power BI](power-bi-q-and-a.md)  
+[Visa din panel i instrumentpanelen i fokusläge](consumer/end-user-focus.md)     
+[Gå tillbaka till frågor och svar i Power BI](consumer/end-user-q-and-a.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

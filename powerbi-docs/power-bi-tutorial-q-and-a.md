@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 320bcd80a6a258879568d323afdae60daacfee6c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2c90db1c08ba1d172acc4d0e82d23409d835879a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727960"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543600"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Självstudie: använd frågor och svar för att skapa visualiseringar och rapporter
-[Översikt över frågor och svar](power-bi-q-and-a.md) introducerade dig till Power BI frågor och svar och visade på skillnaden mellan *konsumenter* (får instrumentpaneler och rapporter delade med sig) och *skapare* ( äger de underliggande rapporterna och datauppsättningarna). Den första delen av den här självstudien är främst avsedd för personer som använder instrumentpaneler med Power BI-tjänsten. Den andra delen är skapad för folk som skapar rapporter med hjälp av antingen Power BI-tjänsten eller Power BI Desktop. [Frågor och svar och Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) och [Frågor och svar med Power BI Embedded](developer/qanda.md) täcks i separata artiklar.
+[Översikt över frågor och svar](consumer/end-user-q-and-a.md) introducerade dig till Power BI frågor och svar och visade på skillnaden mellan *konsumenter* (får instrumentpaneler och rapporter delade med sig) och *skapare* ( äger de underliggande rapporterna och datauppsättningarna). Den första delen av den här självstudien är främst avsedd för personer som använder instrumentpaneler med Power BI-tjänsten. Den andra delen är skapad för folk som skapar rapporter med hjälp av antingen Power BI-tjänsten eller Power BI Desktop. [Frågor och svar och Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) och [Frågor och svar med Power BI Embedded](developer/qanda.md) täcks i separata artiklar.
 
 Frågor och svar är interaktivt och till och med roligt. Ofta leder en fråga till flera andra när visualiseringarna avslöjar intressanta spår att följa upp. Titta när Amanda demonstrerar frågor och svar för att skapa visuella objekt, detaljgranska dem och fästa dem till instrumentpaneler.
 
@@ -64,7 +64,7 @@ Använd frågor och svar för att utforska dina datauppsättningar och lägga ti
 
 ![](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-Du måste ha behörighet att redigera rapporten och den underliggande datauppsättningen för att kunna använda frågor och svar i rapporter. I [Översiktsavsnittet för frågor och svar](power-bi-q-and-a.md) refererar vi till det här som ett *skapare*-scenario. Om du istället *förbrukar* en rapport som har delats med dig, kommer frågor och svar inte att vara tillgängligt.
+Du måste ha behörighet att redigera rapporten och den underliggande datauppsättningen för att kunna använda frågor och svar i rapporter. I [Översiktsavsnittet för frågor och svar](consumer/end-user-q-and-a.md) refererar vi till det här som ett *skapare*-scenario. Om du istället *förbrukar* en rapport som har delats med dig, kommer frågor och svar inte att vara tillgängligt.
 
 1. Öppna en rapport i redigeringsvyn (Power BI-tjänsten) eller rapportvyn (Power BI Desktop) och välj **Ställ en fråga** från menyraden.
 
@@ -98,14 +98,14 @@ Du måste ha behörighet att redigera rapporten och den underliggande datauppsä
 Med frågor och svar, kan du inte bara be dina data att tala för sig själva, du kan säga hur Power BI ska visa svaret. Lägg bara till som en <visualization type> i slutet av din fråga.  Till exempel visa lagervolymer efter anläggning som en karta och visa totalt lager som ett kort.  Prova själv.
 
 ##  <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-- Om du har anslutit till en datauppsättning med en live-anslutning eller gateway, behöver frågor och svar vara [aktiverat för den datauppsättningen](service-q-and-a-direct-query.md).
+- Om du har anslutit till en datauppsättning med en live-anslutning eller gateway, behöver frågor och svar vara [aktiverat för den datauppsättningen](consumer/end-user-q-and-a-direct-query.md).
 
 - Du har öppnat en rapport och ser inte frågor och svar-alternativet. Om du använder Power BI-tjänsten, se till att du öppnar rapporten i Redigeringsvyn. Om du inte kan öppna Redigeringsvyn, betyder det att du inte har redigeringsbehörigheter för den rapporten och inte kommer att kunna använda frågor och svar med just den rapporten.
 
 ## <a name="next-steps"></a>Nästa steg
-Gå tillbaka till [Frågor och svar i Power BI](power-bi-q-and-a.md)   
+Gå tillbaka till [Frågor och svar i Power BI](consumer/end-user-q-and-a.md)   
 [Självstudie: använd frågor och svar med detaljhandelsexemplet](power-bi-visualization-introduction-to-q-and-a.md)   
-[Tips för att ställa frågor i frågor och svar](service-q-and-a-tips.md)   
+[Tips för att ställa frågor i frågor och svar](consumer/end-user-q-and-a-tips.md)   
 [Förbered en arbetsbok för frågor och svar](service-prepare-data-for-q-and-a.md)  
-[Förbered en lokal datauppsättning för frågor och svar](service-q-and-a-direct-query.md)
+[Förbered en lokal datauppsättning för frågor och svar](consumer/end-user-q-and-a-direct-query.md)
 [Fäst en panel på instrumentpanelen från frågor och svar](service-dashboard-pin-tile-from-q-and-a.md)

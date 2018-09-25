@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 22d32315040352e013ae8331e9433a9e60e97f5c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726672"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545761"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hur samarbetar och delar jag i Power BI?
 
@@ -57,7 +57,7 @@ Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina 
 
 ![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt i dina medarbetares Power BI-konton. Läs mer om att [publicera dina appar](service-create-distribute-apps.md). 
+Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt i dina medarbetares Power BI-konton. Läs mer om att [publicera dina appar](consumer/end-user-create-apps.md). 
 
 När de har installerat en app kan de se den i webbläsaren eller på mobilenheten.
 
@@ -88,7 +88,7 @@ Mer om [delning och kommentering för paneler, rapporter och visuella objekt](co
 Du kan också [dela en ögonblicksbild av en panel](consumer/mobile/mobile-windows-10-phone-app-get-started.md) från Power BI-appen för Windows 10-enheter.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Skriva ut eller spara som PDF eller andra statiska filer
-Du kan skriva ut eller spara som PDF (eller andra statiska filformat) hela instrumentpaneler, paneler, rapportsidor eller visualiseringar från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång. Mer om att [skriva ut eller spara som en statisk fil](service-print.md).
+Du kan skriva ut eller spara som PDF (eller andra statiska filformat) hela instrumentpaneler, paneler, rapportsidor eller visualiseringar från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång. Mer om att [skriva ut eller spara som en statisk fil](consumer/end-user-print.md).
 
 ## <a name="publish-to-the-web"></a>Publicera på webben
 
@@ -99,7 +99,7 @@ Du kan publicera Power BI-rapporter till hela Internet genom att bädda in inter
 
 ## <a name="next-steps"></a>Nästa steg
 * [Dela instrumentpaneler med kollegor och andra](service-share-dashboards.md)
-* [Skapa och publicera en app i Power BI](service-create-distribute-apps.md)
+* [Skapa och publicera en app i Power BI](consumer/end-user-create-apps.md)
 * Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 * Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
 

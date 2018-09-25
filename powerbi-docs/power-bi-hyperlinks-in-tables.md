@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80995f77a4e11c2773e9b03a224d42ac8d492228
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 869eb25b17233d6c926f759c09923f528a4eb72e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727569"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545210"
 ---
 # <a name="hyperlinks-in-tables"></a>Hyperlänkar i tabeller
 I det här ämnet lär du dig hur du använder Power BI Desktop för att skapa hyperlänkar. När hyperlänkarna har skapats använder du Desktop eller Power BI-tjänsten för att lägga till dem till dina rapporttabeller och -matriser. 
@@ -89,7 +89,7 @@ S: Nej. Du kan använda en länkikon. Om du behöver anpassad text för hyperlä
 ## <a name="next-steps"></a>Nästa steg
 [Visualiseringar i Power BI-rapporter](visuals/power-bi-report-visualizations.md)
 
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

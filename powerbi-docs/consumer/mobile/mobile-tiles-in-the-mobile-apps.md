@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 04a385d67a8cc462b21c16cf7daaa5aa675436d9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 72c51a6eae4acec5bfc0af7b471f98dfcb22da67
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744900"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549810"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
 Gäller:
@@ -23,7 +23,7 @@ Gäller:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
 
-Paneler är ögonblicksbilder i realtid av dina data, fästa på en instrumentpanel. Deras värden ändras när berörda data ändras. **Du [lägger till paneler på en instrumentpanel i Power BI-tjänsten](../../service-dashboard-tiles.md).** 
+Paneler är ögonblicksbilder i realtid av dina data, fästa på en instrumentpanel. Deras värden ändras när berörda data ändras. **Du [lägger till paneler på en instrumentpanel i Power BI-tjänsten](../end-user-tiles.md).** 
 
 Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar med dem. Du kan öppna paneler med alla typer av visuella objekt, inklusive paneler baserade på Bing och R.
 

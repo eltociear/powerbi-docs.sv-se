@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b1c68312f60761964194d7be810b5ee490785cb2
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: fa572b44445c4fcf929286b68222b2faf4f9d7d2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624124"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548291"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Anslut till filer som lagras i OneDrive för din Power BI-apparbetsyta
-När du har [skapat en apparbetsyta i Power BI](service-create-distribute-apps.md), kan du lagra dina Excel-, CSV-, och Power BI Desktop-filer på OneDrive för företag för din Power BI-apparbetsyta. Du kan fortsätta att uppdatera de filer som du lagrar i OneDrive och de uppdateringarna visas automatiskt i Power BI-rapporter och instrumentpaneler som baseras på filerna. 
+När du har [skapat en apparbetsyta i Power BI](consumer/end-user-create-apps.md), kan du lagra dina Excel-, CSV-, och Power BI Desktop-filer på OneDrive för företag för din Power BI-apparbetsyta. Du kan fortsätta att uppdatera de filer som du lagrar i OneDrive och de uppdateringarna visas automatiskt i Power BI-rapporter och instrumentpaneler som baseras på filerna. 
 
 > [!NOTE]
 > Förhandsversionen av den nya arbetsytan kommer att ändra förhållandet mellan Power BI-arbetsytor och Office 365-grupper. Du kommer inte automatiskt att skapa en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om [att skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md)
@@ -79,7 +79,7 @@ Nu när dina filer finns i OneDrive för företag för din apparbetsyta, har du 
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## <a name="next-steps"></a>Nästa steg
-* [Skapa appar och apparbetsytor i Power BI](service-create-distribute-apps.md)
+* [Skapa appar och apparbetsytor i Power BI](consumer/end-user-create-apps.md)
 * [Importera data från Excel-arbetsböcker](service-get-data-from-files.md)
 * [Ansluta till hela Excel-arbetsböcker](service-excel-workbook-files.md)
 * Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)

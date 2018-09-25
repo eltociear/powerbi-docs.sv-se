@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a0216b5659548af0b69cdb1b94df887eec0bd4e0
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 83826e812f9173db522c929ae80c31fc7134e5bd
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748915"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549855"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Fyllda kartor (koropleter) i Power BI
 En fylld karta använder skuggning, toning eller mönster för att visa hur ett värde skiljer sig åt proportionellt på en geografisk plats eller i en region.  Du kan snabbt visa dessa relativa skillnader med skuggning som sträcker sig från ljus (mindre ofta/lägre) till mörk (mer frekvent/fler).    
@@ -109,7 +109,7 @@ Om du inte har åtkomst till latitud- och longituddata, [följer du de här inst
 Mer hjälp med kartvisualiseringar finns i [Tips and tricks for map visualizations (Tips och råd om kartvisualiseringar)](power-bi-map-tips-and-tricks.md).
 
 ## <a name="next-steps"></a>Nästa steg
-[Lägga till den fyllda kartan som panel på instrumentpanelen (fästa det visuella objektet)](../service-dashboard-tiles.md)    
+[Lägga till den fyllda kartan som panel på instrumentpanelen (fästa det visuella objektet)](../consumer/end-user-tiles.md)    
  [Lägga till en visualisering till en rapport](power-bi-report-add-visualizations-i.md)  
  [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Ändra typen av använd visualisering](power-bi-report-change-visualization-type.md)      

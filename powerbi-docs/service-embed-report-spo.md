@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 08/16/2018
-ms.openlocfilehash: 85e04993639d3c2897d2d7dddc00e79fd4fdf0c6
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: 6960945d878269344e8993577a8eac239d8ca4a4
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257045"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549901"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -85,7 +85,7 @@ När du bäddar in en rapport i SharePoint Online medges inte användarbehörigh
 > [!IMPORTANT]
 > Se till att granska vem som kan visa rapporten i Power BI-tjänsten och bevilja åtkomst till de som inte visas i listan.
 
-Det finns två sätt att bevilja åtkomst till rapporten i Power BI-tjänsten. Om du använder en Office 365-grupp för att skapa webbplatsen i SharePoint Online kan du lista användaren som en medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Det säkerställer att användare kan läsa innehållet i den gruppen. Mer information finns i [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md).
+Det finns två sätt att bevilja åtkomst till rapporten i Power BI-tjänsten. Om du använder en Office 365-grupp för att skapa webbplatsen i SharePoint Online kan du lista användaren som en medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Det säkerställer att användare kan läsa innehållet i den gruppen. Mer information finns i [Skapa och distribuera en app i Power BI](consumer/end-user-create-apps.md).
 
 Du kan också ge användarna åtkomst till din rapport genom att göra följande.
 
@@ -142,7 +142,7 @@ Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lö
 
 * Power BI stöder inte samma språk som SharePoint Online. Det innebar att den inbäddade rapporten kanske inte är helt lokaliserad.
 
-* Problem kan också uppstå om du använder Internet Explorer 10. Du kan titta på [webbläsarstöd för Power BI](service-browser-support.md) och [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+* Problem kan också uppstå om du använder Internet Explorer 10. Du kan titta på [webbläsarstöd för Power BI](consumer/end-user-browsers.md) och [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
 * Webbdelen Power BI är inte tillgänglig för [nationella moln](https://powerbi.microsoft.com/en-us/clouds/).
 
@@ -151,7 +151,7 @@ Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lö
 ## <a name="next-steps"></a>Nästa steg
 
 [Tillåt eller förhindra att moderna webbplatssidor skapas av slutanvändare](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Skapa och distribuera en app i Power BI](service-create-distribute-apps.md)  
+[Skapa och distribuera en app i Power BI](consumer/end-user-create-apps.md)  
 [Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md)  
 [Power BI Premium – vad är det?](service-premium.md)  
 

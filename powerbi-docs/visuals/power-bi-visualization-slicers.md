@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.author: v-thepet
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5758bb53fe4a8a3658d242c3bd72da0a78500579
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: babd30b89970108a06475ec3e7dab7e2ca708425
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44745071"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565094"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 Du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram, eller så kan du använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
@@ -98,7 +98,7 @@ Du kan använda **Visuella interaktioner** om du vill förhindra att vissa sidvi
 2. Välj ikonen **Ingen** ovanför diagrammet **Total försäljningsavvikelse efter FiscalMonth och distriktschef**, vilket förhindrar att utsnittet filtrerar det. 
 3. Välj utsnittet **Månad** och sedan återigen ikonen **Ingen** ovanför diagrammet **Total försäljningsavvikelse efter FiscalMonth och distriktschef**, vilket förhindrar att utsnittet filtrerar det. När du nu väljer namn och datumintervall i utsnitten så förändras inte diagrammet Total försäljningsavvikelse efter FiscalMonth och distriktschef. 
 
-Mer information om hur du redigerar interaktioner finns i [Visuella interaktioner i en Power BI-rapport](../service-reports-visual-interactions.md).
+Mer information om hur du redigerar interaktioner finns i [Visuella interaktioner i en Power BI-rapport](../consumer/end-user-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synkronisera och använda utsnitt på andra sidor
 Från och med Power BI-uppdateringen från februari 2018 kan du synkronisera ett utsnitt och använda det på några eller alla sidor i en rapport. 
@@ -193,5 +193,5 @@ Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 

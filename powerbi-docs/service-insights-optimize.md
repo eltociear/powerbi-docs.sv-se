@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: eed9b668cccf3bc8252d70f1dee94675063a8844
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fbf49a9ddbec5f087a28e51144c782e2f1739db0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247767"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546971"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimera dina data för Power BI Quick Insights
 Vill du förbättra dina resultat för Quick Insights?  Om du är datauppsättningens ägare kan du försöka med dessa:
@@ -26,7 +26,7 @@ Vill du förbättra dina resultat för Quick Insights?  Om du är datauppsättni
 * Får du ett felmeddelande om att dina data inte är statistiskt signifikanta?  Detta kan inträffa med modeller som är mycket enkla eller som inte har mycket data eller som inte har datum eller numeriska kolumner. Om du vill generera insikter måste datamängden ha minst en dimension och ett mått.
 
 ### <a name="next-steps"></a>Nästa steg
-[Power BI quick insights](service-insights.md)
+[Power BI quick insights](consumer/end-user-insights.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

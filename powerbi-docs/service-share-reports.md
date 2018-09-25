@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bc5fe4c1e1fedc700fcbadd182f01e9e50348e3e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 8f025c11a5269befdb7819684e10e8511ae6bc98
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34257239"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545653"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Dela en filtrerad Power BI-rapport med dina medarbetare
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera dina rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -28,7 +28,7 @@ Du kan dela en rapport med kollegor i samma e-post-domän som du, från de flest
 ## <a name="filter-and-share-a-report"></a>Filtrera och dela en rapport
 Hur gör du om du vill dela en filtrerad version av en rapport? Kanske en rapport som endast visar data för en viss ort, säljare eller år. Detta gör du genom att skapa en anpassad URL.
 
-1. Öppna rapporten i [redigeringsvyn](service-reading-view-and-editing-view.md), använd filtret och spara rapporten.
+1. Öppna rapporten i [redigeringsvyn](consumer/end-user-reading-view.md), använd filtret och spara rapporten.
    
    I det här exemplet filtrerar vi [Exempel på detaljhandelsanalys](sample-tutorial-connect-to-the-samples.md) till att endast visa värden där **Område** är lika med **NC**.
    

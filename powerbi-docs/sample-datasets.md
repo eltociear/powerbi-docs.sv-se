@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: cd9762a5f9a46ab7d726a326c1b231f30c8e6271
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 91c08ab428852cc0fa8a721278e232400ed19bfa
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582510"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546497"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Vilka exempeldata är tillgängliga för användning med Power BI?
 Säg att du har använt Power BI och vill prova men inte har några data.  Eller så har du en datauppsättning men eftersom du inte förstår (ännu) hur Power BI fungerar oroar du dig för att du på något sätt ska skada din datauppsättning.
@@ -191,7 +191,7 @@ Varje exempel på innehållspaket är också tillgängligt som en Power BI PBIX-
 4. Välj PBIX-filen för att öppna den i Power BI Desktop.
 
 ## <a name="next-steps"></a>Nästa steg
-[Grundläggande begrepp för Power BI](service-basic-concepts.md)
+[Grundläggande begrepp för Power BI](consumer/end-user-basic-concepts.md)
 
 [Självstudier: Ansluta till Power BI-exempel](sample-tutorial-connect-to-the-samples.md)
 

@@ -1,21 +1,21 @@
 ---
 title: Använda utsnitt i Power BI Desktop
 description: Du kan använda utsnitt i Power BI Desktop för att filtrera, markera och anpassa rapporter
-author: davidiseminger
+author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 07/27/2018
-ms.author: davidi
+ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 703baab4cc26dd3847d6d7d87eea5aa36ffebd0f
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 161ea8f20db36c129787e84242ea002980d0f8dd
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748865"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565876"
 ---
 # <a name="using-slicers-power-bi-desktop"></a>Använda utsnitt i Power BI Desktop
 

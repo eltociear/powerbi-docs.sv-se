@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 83d9e435c1dca10a444f3125830eb6432aecf6bd
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 090a59f406f1e3874f678752f0e0bc9656ae492f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728213"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548958"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -89,13 +89,13 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 
 ### <a name="august-2017"></a>Augusti 2017
 * Lär känna din målgrupp med [användningsstatistik per användare](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
-* Kom igång med [Power BI-tjänst](service-connect-to-services.md)appar för onlinetjänster.
+* Kom igång med [Power BI-tjänst](consumer/end-user-connect-to-services.md)appar för onlinetjänster.
 * Anslut till IBM Netezza med den lokala datagatewayen i både anslutningslägena import och DirectQuery.
 * [Dynamisk RLS](developer/embedded-row-level-security.md) stöds nu för Power BI Embedded.
 * Avancerat [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) har nu lagts till i version 1.7 av anpassade API:er för visuella objekt.
 
 ### <a name="july-2017"></a>Juli 2017
-* Stöd för [e-postprenumerationer](service-report-subscribe.md) på instrumentpaneler.
+* Stöd för [e-postprenumerationer](consumer/end-user-subscribe.md) på instrumentpaneler.
 * Kontrollera och diagnostisera varför inläsningstiden är dålig för instrumentpaneler med hjälp av Performance Inspector.
 * Snowflake och SAP BusinessWarehouse DirectQuery stöds nu på den lokala datagatewayen.
 * Nya [API:er för att hantera datauppdatering](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) i Power BI-tjänsten.
@@ -206,12 +206,12 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Stöd för Frågor och svar i Power BI för tabellmodeller i SQL Server 2016 Analys Server](service-q-and-a-direct-query.md): Vi är glada över att meddela förbättringar av Frågor och svar i Power BI och början på en offentlig förhandsversion av Frågor och svar för Power BI för datakällor som är kopplade till enterprise-gateway. Vi börjar med stöd för tabellmodeller i SQL Server 2016 Analys Server. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Stöd för Frågor och svar i Power BI för tabellmodeller i SQL Server 2016 Analys Server](consumer/end-user-q-and-a-direct-query.md): Vi är glada över att meddela förbättringar av Frågor och svar i Power BI och början på en offentlig förhandsversion av Frågor och svar för Power BI för datakällor som är kopplade till enterprise-gateway. Vi börjar med stöd för tabellmodeller i SQL Server 2016 Analys Server. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Stöd för lokala filer för Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): du kan nu ladda upp dina Excel-filer från din lokala enhet eller andra lagringstjänster och använda den Excel-rapporten precis som i Excel Online, fast med fördelarna hos Power BI. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28 april 2016**
 
-* [Quick Insights på instrumentpaneler](service-insights.md): När du visar en panel i fokusläge kan du klicka på hämta insikter för att söka efter samband, avvikare, trender, säsongsvärden, ändrade punkter i trender och större faktorer automatiskt inom sekunder.
+* [Quick Insights på instrumentpaneler](consumer/end-user-insights.md): När du visar en panel i fokusläge kan du klicka på hämta insikter för att söka efter samband, avvikare, trender, säsongsvärden, ändrade punkter i trender och större faktorer automatiskt inom sekunder.
 
 För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -437,7 +437,7 @@ All information, inklusive en video som visar många av de här uppdateringarna 
 
 **3 december 2015**
 
-* Identifiera trender och upptäck mönster i en datamängd automatiskt med Quick Insights: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) eller [artikel](service-insights.md)
+* Identifiera trender och upptäck mönster i en datamängd automatiskt med Quick Insights: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) eller [artikel](consumer/end-user-insights.md)
 * [Visualisera dina VMob-data i Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI-integrering med Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Förhandsgranskning av Power BI-gateway för företag](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
@@ -587,7 +587,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 * Vi vill meddela att Power BI kommer att vara allmänt tillgängligt. Registrera dig för [Power BI Pro](service-self-service-signup-for-power-bi.md). Som en del av GA-lanseringen erbjuder vi vissa nya funktioner:
 * En ny miljö för att skapa visualiseringar och rapporter: Den nya arbetsytan för rapporter har ett större antal visualiseringar, mer kontroll över rubrikformatering, förklaringar, axlar, bakgrunder med mera.
-* [Power BI-grupper](service-create-distribute-apps.md): grupper erbjuder en kraftfull samarbetsmiljö som bygger på Office 365-grupper.
+* [Power BI-grupper](consumer/end-user-create-apps.md): grupper erbjuder en kraftfull samarbetsmiljö som bygger på Office 365-grupper.
 * [Organisationsinnehållspaket](service-organizational-content-pack-introduction.md): Det är otroligt enkelt att skapa instrumentpaneler och rapporter med Power BI. Nu kan användarna publicera innehållet i organisationens innehållsgalleri.
 * [Se till att i hela Excel-filer](service-excel-workbook-files.md): du kan ta en Excel-arbetsbok som lagras på OneDrive för företag i Power BI och visa hela arbetsboken, precis som i Excel Online.
 * [Ta med CSV-filer](service-get-data-from-files.md): Precis som Excel- eller Power BI Desktop-filer kan kommaseparerade textfiler (CSV) också fungera som datauppsättning för dina instrumentpaneler och rapporter i Power BI.

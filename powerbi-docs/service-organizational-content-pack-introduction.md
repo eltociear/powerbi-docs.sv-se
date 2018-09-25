@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9109bd45f47e92d9158b9247fe32a43132fff720
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 453b0f5852fefb1008b8013a0c42af4cc1d42f32
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624308"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547647"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
 > [!NOTE]
@@ -42,7 +42,7 @@ När du publicerar ett organisationsinnehållspaket läggs detta till på AppSou
 
 * Om du vill visa AppSource väljer du **Hämta data** > **Min organisation** > **Hämta**.
 
-Läs mer om att [söka och öppna organisationsinnehållspaket](service-organizational-content-pack-find-and-open.md).
+Läs mer om att [söka och öppna organisationsinnehållspaket](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>En organisations innehållspakets livscykel
 Alla Power BI Pro användare kan skapa, publicera och komma åt organisationsinnehållspaket. Det är endast skaparen av organisationsinnehållspaketet som kan redigera arbetsboken och datauppsättningen, schemalägga en uppdatering och ta bort den.
@@ -52,7 +52,7 @@ Livscykeln ser ut ungefär så här:
 1. Nate skapar ett innehållspaket i Power BI Pro och publicerar den i distributionsgruppen Marknadsföring. Uppdateringsinställningarna följer med datauppsättningen och kan bara ändras av Nate.
    
    > [!NOTE]
-   > Om Nate skapar ett innehållspaket inifrån den arbetsyta i [Power BI-appen](service-create-distribute-apps.md) han tillhör kan andra personer i Power BI-arbetsytan ta över ägarskapat, även om han lämnar arbetsytan.
+   > Om Nate skapar ett innehållspaket inifrån den arbetsyta i [Power BI-appen](consumer/end-user-create-apps.md) han tillhör kan andra personer i Power BI-arbetsytan ta över ägarskapat, även om han lämnar arbetsytan.
    > 
    > 
 2. Nate skickar e-post till distributionsgruppen och informerar dem om det nya innehållspaketet.
@@ -76,7 +76,7 @@ Alla medlemmar i distributionsgruppen har samma behörighet för data som skapar
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa och publicera ett organisationsinnehållspaket](service-organizational-content-pack-create-and-publish.md)
-* [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
-* [Power BI – grundläggande begrepp](service-basic-concepts.md)
+* [Skapa och distribuera en app i Power BI](consumer/end-user-create-apps.md) 
+* [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 7239351a7a9486aeeab53e4ab7fc5c3c3e877ff6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9dd80776690e1fd45144c99570be8aa787a2938c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34561458"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544510"
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Om filter och markeringar i Power BI-rapporter
 ***Filter*** ta bort allt utan de data som du vill fokusera på.  ***Markering*** är inte detsamma som filtrering eftersom inga data tas bort. Istället markeras en delmängd av synliga data; de data som inte är markerade förblir synliga men nedtonade.
@@ -24,9 +24,9 @@ Det finns många olika metoder för att filtrera och markera rapporter i Power B
 
 * Introduktion till filter och markeringar (den artikel du läser nu)
 * Metoder för att [skapa och använda filter och markeringar i redigeringsvyn/rapporter som du äger](power-bi-report-add-filter.md). När du har redigeringsbehörighet för en rapport, kan du skapa, ändra och ta bort filter och markeringar i rapporter.
-* De sätt på vilka du kan [använda filter och markeringar i en rapport som delas med dig eller i rapportens läsvy](service-reading-view-and-editing-view.md). Vad du kan göra är mer begränsat, men Power BI ger dig fortfarande tillgång till en mängd olika filtrerings- och markeringsalternativ.  
-* [En detaljerad genomgång av de filtrerings- och markeringskontroller som är tillgängliga i redigeringsvyn](power-bi-how-to-report-filter.md), inklusive en djupgående inblick i olika typer av filter (till exempel datum och tid, numeriska och text) och skillnaden mellan grundläggande och avancerade alternativ.
-* Nu när du har lärt dig hur filter och markeringar fungerar som standard, [kan du lära dig hur man ändrar hur visualiseringar på en sida kan filtrera och markera varandra](service-reports-visual-interactions.md)
+* De sätt på vilka du kan [använda filter och markeringar i en rapport som delas med dig eller i rapportens läsvy](consumer/end-user-reading-view.md). Vad du kan göra är mer begränsat, men Power BI ger dig fortfarande tillgång till en mängd olika filtrerings- och markeringsalternativ.  
+* [En detaljerad genomgång av de filtrerings- och markeringskontroller som är tillgängliga i redigeringsvyn](consumer/end-user-report-filter.md), inklusive en djupgående inblick i olika typer av filter (till exempel datum och tid, numeriska och text) och skillnaden mellan grundläggande och avancerade alternativ.
+* Nu när du har lärt dig hur filter och markeringar fungerar som standard, [kan du lära dig hur man ändrar hur visualiseringar på en sida kan filtrera och markera varandra](consumer/end-user-interactions.md)
 
 > [!TIP]
 > Hur vet Power BI hur data är relaterade?  Power BI använder relationerna mellan olika tabeller och fält i den underliggande [datamodellen](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US) för att få objekten på en rapportsida att interagera med varandra.
@@ -46,7 +46,7 @@ Filter och markeringar kan användas med hjälp av fönstret **Filter** eller ge
 > 
 
 ## <a name="filters-in-reading-view-versus-editing-view"></a>Filter i läsvyn jämfört med redigeringsvyn
-Det finns två lägen för att interagera med rapporter: [Läsvy och Redigeringsvy](service-reading-view-and-editing-view.md).  Och vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
+Det finns två lägen för att interagera med rapporter: [Läsvy och Redigeringsvy](consumer/end-user-reading-view.md).  Och vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
 
 * Du kan lägga till rapportfilter, sidfilter, filter för visning av detaljerad information och visuella filter i redigeringsvyn. När du sparar rapporten sparas filtren med rapporten, även om du har öppnat den i en mobilapp. De som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till, men inte lägga till nya filter.
 * I läsvyn kan du interagera med alla filter som redan finns i rapporten och spara dina val.  Men du kan inte lägga till nya filter.
@@ -62,7 +62,7 @@ Välj ett visuellt objekt för att se om det finns några filter på visuell niv
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
-I läsvyn kan du utforska data genom att ändra befintliga filter. De ändringar du gör sparas med rapporten, även om du har öppnat rapporten i en mobilapp. Läs om hur gör i [Läsvyn och redigeringsvyn i Power BI-tjänsterapporter](service-reading-view-and-editing-view.md)
+I läsvyn kan du utforska data genom att ändra befintliga filter. De ändringar du gör sparas med rapporten, även om du har öppnat rapporten i en mobilapp. Läs om hur gör i [Läsvyn och redigeringsvyn i Power BI-tjänsterapporter](consumer/end-user-reading-view.md)
 
 ### <a name="the-filters-pane-in-editing-view"></a>Fönstret Filter i redigeringsvyn
 När du har ägarbehörighet för en rapport och öppnar den i redigeringsvyn ser du att **Filter** bara är ett av flera tillgängliga fönster för redigering.
@@ -74,7 +74,7 @@ Som i läsvyn (ovan) ser vi att den här sidan i rapporten har sex filter på si
 Men i redigeringsvyn finns det mycket mer som man kan göra med filter och markeringar. Den huvudsakliga skillnaden är att vi kan lägga till nya filter. Du kan lära dig hur du gör detta och mycket annat i artikeln [Lägga till ett filter i en rapport](power-bi-report-add-filter.md).
 
 ## <a name="ad-hoc-filtering-and-highlighting"></a>Ad hoc-filtrering och -markering
-Välj ett fält på rapportarbetsytan för att filtrera och markera resten av sidan. Välj ett tomt utrymme i samma visuella objekt för att ta bort det. Den här typen av filtrering och markering är ett roligt sätt att snabbt utforska påverkan av dina data. Mer information om att finjustera den här typen av korsfiltrering och korsmarkering finns i [Visuella interaktioner](service-reports-visual-interactions.md).
+Välj ett fält på rapportarbetsytan för att filtrera och markera resten av sidan. Välj ett tomt utrymme i samma visuella objekt för att ta bort det. Den här typen av filtrering och markering är ett roligt sätt att snabbt utforska påverkan av dina data. Mer information om att finjustera den här typen av korsfiltrering och korsmarkering finns i [Visuella interaktioner](consumer/end-user-interactions.md).
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
@@ -83,15 +83,15 @@ När du avslutar rapporten sparas dina ändringar. Om du vill ångra din filtrer
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Interagera med filter och markeringar (i läsvyn)](service-reading-view-and-editing-view.md)
+[Interagera med filter och markeringar (i läsvyn)](consumer/end-user-reading-view.md)
 
 [Lägga till ett filter i en rapport (i redigeringsvyn)](power-bi-report-add-filter.md)
 
-[Ta en titt på rapportfiltren](power-bi-how-to-report-filter.md)
+[Ta en titt på rapportfiltren](consumer/end-user-report-filter.md)
 
-[Ändra hur en rapports visuella objekt korsfiltrerar och korsmarkerar varandra](service-reports-visual-interactions.md)
+[Ändra hur en rapports visuella objekt korsfiltrerar och korsmarkerar varandra](consumer/end-user-interactions.md)
 
-Läs mer om [rapporter i Power BI](service-reports.md)
+Läs mer om [rapporter i Power BI](consumer/end-user-reports.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

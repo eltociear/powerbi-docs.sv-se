@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 891d496fcdf809a816c9c18a6d21e4c486f76d76
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 0397921d239ec1d07312e69061890f8898e9687b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726810"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549970"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips om hur du skapar rapporter i Power BI Desktop och Power BI-tjänsten
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop, Power BI-tjänsten *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad.
@@ -206,7 +206,7 @@ Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar sk
 * Försök att undvika att blanda olika precisions- och tidsnivåer. Kontrollera att tidsramarna är lätta att förstå.  Placera inte ett diagram från förra månaden bredvid filtrerade diagram från en specifik månad det året.    
 * Blanda inte heller stora och små mått på samma skala, t.ex i ett linje- eller stapeldiagram.  Som exempel då ett mått är i miljontal och det andra i tusental.  Med en så stor skala är det svårt att se skillnaderna mellan måtten i tusental.  Om du måste blanda så välj en visualisering, t.ex. ett kombinationsdiagram, som tillåter användning av en andra axel.    
 * Undvik att fylla dina diagram med dataetiketter som inte behövs. Värdena i stapeldiagram, ***om de är tillräckligt stora***, är vanligtvis så lätta att förstå att man inte behöver visa det faktiska talet.   
-* Var uppmärksam på hur [diagram sorteras](power-bi-report-change-sort.md).  Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått.  Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
+* Var uppmärksam på hur [diagram sorteras](consumer/end-user-change-sort.md).  Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått.  Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
 * Cirkeldiagram fungerar som bäst med mindre än åtta kategorier. Eftersom man inte kan jämföra värden sida vid sida, är det svårare för att jämföra värden i ett cirkeldiagram än i ett stapel- eller kolumndiagram. Cirkeldiagram är bättre för att visa förhållanden mellan en del och helheten, än för att jämföra delarna med varandra. Och måttdiagram är bra för att visa aktuell status i kontexten för ett mål.    
 
 Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
@@ -222,8 +222,8 @@ Några av våra favoritböcker är:
 * *Advanced Presentations Design* av Andrew Abela   
 
 ## <a name="next-steps"></a>Nästa steg
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 
-[Rapporter i Power BI](service-reports.md)
+[Rapporter i Power BI](consumer/end-user-reports.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
