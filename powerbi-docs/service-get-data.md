@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: fba2ea948190a59039766ffc2b5fab6189896ab8
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 4b61ff56ea1aec64a3e88db46836f948c4190d60
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328498"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547463"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. När du utforskar data, skapar diagram och instrumentpaneler, eller ställer frågor i Frågor och svar, hämtar alla dessa visualiseringar och svar som du ser sina underliggande data från en datauppsättning. Men var kommer datauppsättningen från? Från en datakälla.
@@ -44,7 +44,7 @@ Var du lagrar filerna har också stor betydelse. OneDrive för företag erbjuder
 
 Innehållspaketen innehåller alla data och rapporter som du behöver och de har redan förberetts åt dig. Det finns två typer av innehållspaket i Power BI: De som kommer från tjänster som Google Analytics, Marketo eller Salesforce och de som skapas och delas med andra användare i din organisation.
 
-**Tjänster** – Det finns bokstavligt talat dussintals tjänster med innehållspaket för Power BI och fler läggs hela tiden. För de flesta tjänster måste du ha ett konto. Läs mer i [Ansluta till tjänster](service-connect-to-services.md).
+**Tjänster** – Det finns bokstavligt talat dussintals tjänster med innehållspaket för Power BI och fler läggs hela tiden. För de flesta tjänster måste du ha ett konto. Läs mer i [Ansluta till tjänster](consumer/end-user-connect-to-services.md).
 
 **Organisation** – Om du och andra användare i din organisation har ett Power BI Pro-konto kan du skapa, dela och använda innehållspaket. Läs mer i [Organisationsinnehållspaket](service-organizational-content-pack-introduction.md).
 
