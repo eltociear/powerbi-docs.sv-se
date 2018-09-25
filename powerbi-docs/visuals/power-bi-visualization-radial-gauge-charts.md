@@ -2,7 +2,7 @@
 title: Diagram med radiella mätare i Power BI
 description: Diagram med radiella mätare i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097c7111e630b4c0c80e71d812be73cc232ea6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e090515514897dd4dcbc9962d0dadacae5611ff0
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744855"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565577"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Diagram med radiella mätare i Power BI
 Ett diagram med radiell mätare har en cirkelformad båge och visar ett värde som mäter framsteg på ett mål/KPI.  Målet, eller målvärdet, representeras av strecket (nålen). Framsteg mot målet representeras av skuggningen.  Och det värde som representerar förloppet visas i fetstil i bågen. Alla möjliga värden är jämnt fördelade längs bågen, från det lägsta (värdet längst till vänster) värdet till det högsta (värdet längst till höger).
@@ -92,7 +92,7 @@ I steg 2 använde Power BI fältet Värde för att automatiskt ange minimi- och 
 
 ### <a name="step-5-save-your-report"></a>Steg 5: Spara din rapport
 1. [Spara rapporten](../service-report-save.md).
-2. [Lägga till mätardiagrammet som en panel på instrumentpanelen](../service-dashboard-tiles.md). 
+2. [Lägga till mätardiagrammet som en panel på instrumentpanelen](../consumer/end-user-tiles.md). 
 
 ## <a name="use-formatting-options-to-manually-set-minimum-maximum-and-target-values"></a>Använd formateringsalternativ för att ange värden manuellt för lägsta, högsta och mål
 1. Ta bort **Maxvärde för bruttoförsäljning** från brunnen **Maxvärde**.
@@ -117,7 +117,7 @@ I steg 2 använde Power BI fältet Värde för att automatiskt ange minimi- och 
 
 [Fästa en visualisering på en instrumentpanel](../service-dashboard-pin-tile-from-report.md)
 
-[Power BI – grundläggande begrepp](../service-basic-concepts.md)
+[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
