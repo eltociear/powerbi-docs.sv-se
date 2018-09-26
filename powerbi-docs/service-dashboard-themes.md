@@ -1,21 +1,21 @@
 ---
 title: Använda instrumentpanelsteman i Power BI-tjänsten
 description: Lär dig hur du använder en anpassad färgpalett och hur du tillämpar den på en hel instrumentpanel i Power BI-tjänsten
-author: mihart
+author: maggiesMSFT
 manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/22/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 25bd28db7b31921d5f1a02ae72cee47207134f2a
-ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
+ms.openlocfilehash: fd6cc83b5e5d27159f0cff853cb3effb6b415a9d
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241486"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47186603"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Använda instrumentpanelsteman i Power BI-tjänsten
 Med **instrumentpanelsteman** kan du använda ett färgtema på hela instrumentpanelen, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **instrumentpanelstema** används färgerna från det tema du valt på alla visuella objekt på instrumentpanelen (med några få undantag, som beskrivs längre ned i den här artikeln).

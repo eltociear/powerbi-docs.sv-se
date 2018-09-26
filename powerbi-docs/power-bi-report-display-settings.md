@@ -1,7 +1,7 @@
 ---
 title: Sidvisningsinställningar för en rapport
 description: Sidvisningsinställningar för en rapport
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/24/2017
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: a22bee33254e447f27f717b78a53fe3a5cc34fb2
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 733b45e856f2f3c3c2d31576ac884e4a4cd4a8cd
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545462"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187201"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Sidvisningsinställningar i en Power BI-rapport
 Vi förstår att det är viktigt att hålla din rapportlayout perfekt. Ibland är det kan vara en utmaning, eftersom du och dina kollegor visar rapporterna på era skärmar med olika bredd–höjd-förhållanden och storlekar. 

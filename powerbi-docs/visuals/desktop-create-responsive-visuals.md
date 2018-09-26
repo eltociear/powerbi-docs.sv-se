@@ -10,30 +10,30 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c50bcf656f967502e8bb01f7ca5184996170bed
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 1260f2c69a4ab913f7451671ab7821ee250998c0
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566336"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187247"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Optimera ett visuellt Power BI-objekt oavsett storlek
 När du skapar en ny rapport är de visuella objekten som standard *dynamiska*: De ändras dynamiskt så att maximal mängd data och insikter kan visas, oavsett skärmstorlek. När det gäller äldre rapporter kan du konfigurera deras visuella objekt så att även de ändrar storlek dynamiskt.
 
 När ett visuellt objekt får en annan storlek prioriterar Power BI datavyn, genom att till exempel ta bort utfyllnad och flytta förklaringen överst i det visuella objektet automatiskt, så att objektet förblir informativt även när det blir mindre. Svarstiden är särskilt användbar i visuella objekt i Power BI-mobilappen på telefoner.
 
-![Dynamisk storleksändring av visuella objekt](./media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
+![Dynamisk storleksändring av visuella objekt](media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
 
 Alla visuella objekt med X- och Y-axlar, och utsnitt, kan ändra storlek dynamiskt.
 
 ## <a name="turn-on-responsiveness-in-power-bi-desktop"></a>Aktivera svarstider i Power BI Desktop
 1. I äldre rapporter i Power BI Desktop går du till fliken **Visa** och kontrollerar att du befinner dig i **Skrivbordslayout**.
    
-    ![Ikonen Skrivbordslayout](./media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
+    ![Ikonen Skrivbordslayout](media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
 2. Välj ett visuellt objekt och i fönstret **Visualiseringar** väljer du avsnittet **Format**.
 3. Expandera **Allmänt** > och dra **Dynamisk** till **På**.
    
-    ![Dynamisk är aktiverat](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Dynamisk är aktiverat](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Nu när du [skapar en rapport som är optimerad för telefonen](../desktop-create-phone-report.md) och lägger till det här visuella objektet, ändras storleken på ett smidigt sätt.
 
@@ -44,7 +44,7 @@ Du kan aktivera svarstiden för ett visuellt objekt i en äldre rapport i Power 
 2. Välj ett visuellt objekt och i fönstret **Visualiseringar** väljer du avsnittet **Format**.
 3. Expandera **Allmänt** > och dra **Dynamisk** till **På**.
    
-    ![Dynamisk är aktiverat](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Dynamisk är aktiverat](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Nu när du [skapar en telefonvy av den här rapporten](../desktop-create-phone-report.md) och lägger till det här visuella objektet så ändras storleken på ett smidigt sätt.
 
