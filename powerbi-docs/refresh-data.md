@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e75cc0f7ca31257ea46af20b63c29d0d870ef7a0
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329694"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417382"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 Att se till att du alltid har den senaste informationen är ofta betydelsefullt för att kunna fatta rätt beslut. Du har förmodligen redan använt Hämta data i Power BI för att ansluta till och ladda upp vissa data, skapat vissa rapporter och en instrumentpanel. Nu ska du se till att dina data är verkligen är aktuella och bäst.
@@ -211,8 +211,6 @@ Realtidsinstrumentpanelerna använder Microsoft Power BI REST API eller Microsof
 | **Datakälla** | **Automatiskt** | **Användarkonfigurerad manuell eller schemalagd uppdatering** | **Gateway krävs** |
 | --- | --- | --- | --- |
 | Anpassade appar som utvecklats med Power BI Rest API eller Microsoft Stream Analytics |Ja, liveuppspelning |Nej |Nej |
-
-Läs mer i [Skapa en realtidsinstrumentpanel i Power BI](https://msdn.microsoft.com/library/mt267603.aspx).
 
 ## <a name="configure-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 Information om hur du konfigurerar schemalagda uppdateringar finns i [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md)
