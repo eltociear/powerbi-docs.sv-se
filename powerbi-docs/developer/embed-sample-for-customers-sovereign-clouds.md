@@ -4,17 +4,16 @@ description: Lär dig att integrera eller bädda in en instrumentpanel, panel el
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
 ms.date: 07/26/2018
-ms.openlocfilehash: 2d722428ce2029ef4689e6b4bf5dfcdd208baff8
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: c9e38f3ca1c8ee43ab9d51d621dfc7d835c39db1
+ms.sourcegitcommit: 767c0d770e32e91ff28a176f79595fab523f69eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39255881"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48039449"
 ---
 # <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Självstudie: Bädda in en Power BI-instrumentpanel, -panel eller -rapport i ditt program för nationella moln
 Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med Power BI:s .NET SDK tillsammans med Power BI:s JavaScript API vid inbäddning för dina kunder. Det här är vanligtvis ett ISV-scenario.
@@ -415,3 +414,4 @@ Begränsningar och överväganden
 * GCC-konton stöder för tillfället endast P- och EM-kapaciteter
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+
