@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22d32315040352e013ae8331e9433a9e60e97f5c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: c99d2047bc021f7e9d98145bc9cb884917fa3b5c
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545761"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271740"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hur samarbetar och delar jag i Power BI?
 
@@ -29,7 +29,7 @@ I den här artikeln jämför vi alternativen för att samarbeta och dela i Power
 - Skriva ut rapporter.
 * Publicera på webben för offentliga webbplatser, där vem som helst i världen kan se och interagera med den.
 
-Oavsett vilket alternativ du väljer för att dela en instrumentpanel behöver du antingen en [Power BI Pro-licens](service-free-vs-pro.md) eller också måste innehållet finnas i en [Premium-kapacitet](service-premium.md). Licenskraven kan variera för kollegorna som ser dina instrumentpaneler, beroende på vilket alternativ du väljer. Det följande avsnittet beskriver detta i större detalj. 
+Oavsett vilket alternativ du väljer för att dela en instrumentpanel behöver du antingen en [Power BI Pro-licens](service-features-license-type.md) eller också måste innehållet finnas i en [Premium-kapacitet](service-premium.md). Licenskraven kan variera för kollegorna som ser dina instrumentpaneler, beroende på vilket alternativ du väljer. Det följande avsnittet beskriver detta i större detalj. 
 
 ![Appar i Power BI-tjänsten](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 

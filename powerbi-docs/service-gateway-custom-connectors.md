@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c36034ad5e8175e08f1d16c2f5148c5dab0ebbd
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42702862"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799056"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Använda anpassade dataanslutningar med den lokala datagatewayen
 
@@ -45,8 +45,6 @@ När det här alternativet är aktiverat visas dina anpassade anslutningar som t
 
 * Kontrollera att mappen som du skapar är tillgänglig för gatewaytjänsten som körs i bakgrunden. Normalt kan mappar under din användares Windows-mapp eller systemmappar inte nås. Gatewaykonfiguratorn visar ett meddelande om mappen inte kan nås (detta gäller inte för den personliga versionen av gatewayen)
 * För att anpassade anslutningar ska fungera med den lokala datagatewayen måste de implementera ett ”TestConnection”-avsnitt i den anpassade anslutningens kod. Detta krävs inte när du använder anpassade anslutningar med Power BI Desktop. Det betyder att du kan ha en som fungerar med Desktop, men inte med gatewayen. Information om hur du implementerar ett TestConnection-avsnitt finns i [den här dokumentationen](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
-* Anpassade anslutningar med OAuth-autentisering stöds inte.
-* Anpassade anslutningar med Direct Query stöds inte.
 
 ## <a name="next-steps"></a>Nästa steg
 

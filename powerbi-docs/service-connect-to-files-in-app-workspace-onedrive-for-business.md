@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: fa572b44445c4fcf929286b68222b2faf4f9d7d2
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ad430f438bb6418378b13f3104f87a3bd972a2e4
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548291"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271887"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Anslut till filer som lagras i OneDrive för din Power BI-apparbetsyta
 När du har [skapat en apparbetsyta i Power BI](consumer/end-user-create-apps.md), kan du lagra dina Excel-, CSV-, och Power BI Desktop-filer på OneDrive för företag för din Power BI-apparbetsyta. Du kan fortsätta att uppdatera de filer som du lagrar i OneDrive och de uppdateringarna visas automatiskt i Power BI-rapporter och instrumentpaneler som baseras på filerna. 
@@ -29,7 +29,7 @@ Att lägga till filer i din apparbetsyta är en tvåstegsprocess:
 2. Sedan [ansluter du till dessa filer från Power BI](service-connect-to-files-in-app-workspace-onedrive-for-business.md#2-import-excel-files-as-datasets-or-as-excel-online-workbooks).
 
 > [!NOTE]
-> Apparbetsytor är bara tillgängliga med [Power BI Pro](service-free-vs-pro.md).
+> Apparbetsytor är bara tillgängliga med [Power BI Pro](service-features-license-type.md).
 > 
 > 
 

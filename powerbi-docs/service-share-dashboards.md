@@ -11,19 +11,19 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4d43ffb1f4e005830fd36da4e80cf4d0c7d86fed
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 8644bc01aa845ff91950169f011cb70fb161ecb1
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549947"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271773"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ![Dela ikonen i en lista över favoritinstrumentpaneler](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
 
-Med delning, vare sig om du delar innehåll i eller utanför din organisation, behöver du en [Power BI Pro-licens](service-free-vs-pro.md). Mottagarna behöver också Power BI Pro-licenser eller så måste innehållet finnas i en [Premium-kapacitet](service-premium.md). 
+Med delning, vare sig om du delar innehåll i eller utanför din organisation, behöver du en [Power BI Pro-licens](service-features-license-type.md). Mottagarna behöver också Power BI Pro-licenser eller så måste innehållet finnas i en [Premium-kapacitet](service-premium.md). 
 
 Du kan dela instrumentpaneler och rapporter från de flesta platser i Power BI-tjänsten: dina favoriter, senaste, delade med mig (om ägaren tillåter det), min arbetsyta eller andra arbetsytor. När du delar en instrumentpanel eller en rapport, kan de som du delar med se den och interagera med den, men inte redigera den. De ser samma data som visas på instrumentpanelen eller i rapporterna, såvida inte [säkerhet på radnivå (RLS)](service-admin-rls.md) tillämpas. De medarbetare som du delar med kan också dela den med sina medarbetare, om du tillåter detta. Personerna utanför organisationen kan också visa och interagera med instrumentpanelen eller rapporten, men de kan inte dela den. 
 
