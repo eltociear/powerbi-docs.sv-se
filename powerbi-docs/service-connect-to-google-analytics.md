@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bd8a8b9a9aff451282c5cef8a6dd6f27b90335d7
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1bb1831d37dc3f8bfe5ee141859cbccec541735e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548705"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908795"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Anslut till Google Analytics med Power BI
 Anslut till Google Analytics via Power BI startar genom att ansluta till ditt Google Analytics-konto. Du får en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som innehåller insikter om din webbplatstrafik och användardimensioner. Du kan interagera med instrumentpanelen och rapporterna, men du kan inte spara ändringarna. Data uppdateras automatiskt en gång per dag.
@@ -27,16 +27,16 @@ Du kan skapa anpassade instrumentpaneler och rapporter genom att starta från [G
 ## <a name="how-to-connect"></a>Så här ansluter du
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Välj **Google Analytics** \> **hämta**.
+3. Välj **Google Analytics** \> **hämta**.
    
    ![](media/service-connect-to-google-analytics/ga.png)
-2. När du uppmanas, anger du dina Google Analytics-autentiseringsuppgifter. Välj **oAuth 2** som autentiseringsmetod och klicka på **Logga in**. Följ Google-autentiseringsflödet som kan innehålla tvåfaktorsautentisering om du har konfigurerat det.
+4. När du uppmanas, anger du dina Google Analytics-autentiseringsuppgifter. Välj **oAuth 2** som autentiseringsmetod och klicka på **Logga in**. Följ Google-autentiseringsflödet som kan innehålla tvåfaktorsautentisering om du har konfigurerat det.
    
    ![](media/service-connect-to-google-analytics/creds.png)
-3. Klicka på **acceptera** så att Power BI kommer åt dina Google Analytics-data.
+5. Klicka på **acceptera** så att Power BI kommer åt dina Google Analytics-data.
    
    ![](media/service-connect-to-google-analytics/googleanalytics.png)
-4. Power BI ansluter till en specifik Google Analytics-vy. Välj kontonamn, egenskapsnamn och vynamn som du vill ansluta till. Den här informationen hittar du i ditt Google Analytics-konto, antingen överst till vänster eller på **Start**-fliken. Se information nedan. 
+6. Power BI ansluter till en specifik Google Analytics-vy. Välj kontonamn, egenskapsnamn och vynamn som du vill ansluta till. Den här informationen hittar du i ditt Google Analytics-konto, antingen överst till vänster eller på **Start**-fliken. Se information nedan. 
    
    ![](media/service-connect-to-google-analytics/params2.png)
 5. Klicka på **Anslut** för att starta importen. 
@@ -44,7 +44,7 @@ Du kan skapa anpassade instrumentpaneler och rapporter genom att starta från [G
 ## <a name="view-the-google-analytics-dashboard-and-reports"></a>Visa Google Analytics-instrumentpanelen och rapporter
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![](media/service-connect-to-google-analytics/googleanalytics2.png)
+   ![](media/service-connect-to-google-analytics/googleanalytics2.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
@@ -69,7 +69,7 @@ Har du fortfarande problem? Öppna ett supportärende för att nå Power BI-team
 * Från supportwebbplatsen för Power BI (där du läser den här artikeln) väljer du **Kontakta supporten** till höger på sidan.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](consumer/end-user-apps.md)
+* [Vad är appar i Power BI?](service-create-distribute-apps.md)
 * [Hämta data i Power BI](service-get-data.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

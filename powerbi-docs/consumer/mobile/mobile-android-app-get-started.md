@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: c33e7dd69d4bd0a0d09ebc124739d5d017c631bc
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4c11b65d8d9dcb4a0b07db6dcf0d264350f351bf
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550039"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908772"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 
@@ -119,11 +119,11 @@ Läs mer om att [konfigurera Power BI-mobilappar för Android med Microsoft Intu
 Här följer några saker som du kan göra i Android-enhetsappen för Power BI med instrumentpaneler och rapporter i Power BI och rapporter och KPI:er i webbportalen för Power BI-rapportserver eller Reporting Services.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-instrumentpaneler och -rapporter
-* Visa [dina appar](../end-user-apps.md).
+* Visa [dina appar](../../service-create-distribute-apps.md).
 * Visa dina [instrumentpaneler](../../mobile-apps-view-dashboard.md).
 * Utforska [panelerna på dina instrumentpaneler](../../mobile-tiles-in-the-mobile-apps.md).
 * Öppna [Power BI-rapporter](../../mobile-reports-in-the-mobile-apps.md).
-* Visa [dina appar](../end-user-apps.md).
+* Visa [dina appar](../../service-create-distribute-apps.md).
 * [Kommentera och dela paneler](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Dela [instrumentpaneler](../../mobile-share-dashboard-from-the-mobile-apps.md).
 * [Skanna en Power BI QR-kod](../../mobile-apps-qr-code.md) med din Android-telefon för att öppna en relaterad instrumentpanel eller rapport. 

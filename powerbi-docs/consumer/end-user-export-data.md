@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 08/25/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8e5e2211af7dc53dba20a8d43c1083517b51bf17
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: eac6a1b4f7a3f734aa22c715a4ef196193230283
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565991"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908864"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 Om du vill se de data som används i en visualisering, kan du [visa dessa data i Power BI](end-user-show-data.md) eller exportera data till Excel som en XLSX- eller CSV-fil.   
@@ -55,7 +55,7 @@ Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../
 4. Välj ellipserna i det övre högra hörnet i visualiseringen. Välj **Exportera data**.
 
    ![](media/end-user-export-data/power-bi-export-data2.png)
-5. Om din visualisering i Power BI online har en aggregering (ett exempel är om du har ändrat **Antal** till *Medelvärde*, **Summa** eller *Minimivärde*), har du två alternativ: **Sammanfattade data** och **Underliggande data**. I Power BI Desktop har du bara alternativet **Sammanfattade data**. Mer information om aggregeringar finns i [Aggregeringar i Power BI](../service-aggregates.md).
+5. Om din visualisering i Power BI online har en aggregering (ett exempel är om du har ändrat **Antal** till *Medelvärde*, *Summa* eller *Minimivärde*), har du två alternativ: **Sammanfattade data** och **Underliggande data**. I Power BI Desktop har du bara alternativet **Sammanfattade data**. Mer information om aggregeringar finns i [Aggregeringar i Power BI](../service-aggregates.md).
 
     ![](media/end-user-export-data/power-bi-export-data5.png)
 6. Välj **Sammanfattade data** > **Exportera** och välj .xlsx eller .csv. Power BI exporterar data.  Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2682dd9c4d64e3042273df88c86b146e07c681b3
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: dc440c42692b1707649fadf415dfe32fd7b731c8
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549533"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48907911"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Ta bort din anslutning till ett Power BI-organisationsinnehållspaket
 
@@ -35,7 +35,7 @@ När du tar bort datauppsättningen tar du också bort alla associerade rapporte
 
 ## <a name="next-steps"></a>Nästa steg
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md) 
-* [Skapa och distribuera en app i Power BI](consumer/end-user-create-apps.md) 
+* [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
 * [Grundläggande begrepp för Power BI](consumer/end-user-basic-concepts.md)  
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

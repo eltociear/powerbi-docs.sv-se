@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c99d2047bc021f7e9d98145bc9cb884917fa3b5c
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: bcec05211d3748e992f0e0cf68acd6460b2715d4
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271740"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908979"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hur samarbetar och delar jag i Power BI?
 
@@ -57,7 +57,7 @@ Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina 
 
 ![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt i dina medarbetares Power BI-konton. Läs mer om att [publicera dina appar](consumer/end-user-create-apps.md). 
+Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt i dina medarbetares Power BI-konton. Läs mer om att [publicera dina appar](service-create-distribute-apps.md). 
 
 När de har installerat en app kan de se den i webbläsaren eller på mobilenheten.
 
@@ -99,7 +99,7 @@ Du kan publicera Power BI-rapporter till hela Internet genom att bädda in inter
 
 ## <a name="next-steps"></a>Nästa steg
 * [Dela instrumentpaneler med kollegor och andra](service-share-dashboards.md)
-* [Skapa och publicera en app i Power BI](consumer/end-user-create-apps.md)
+* [Skapa och publicera en app i Power BI](service-create-distribute-apps.md)
 * Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 * Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
 

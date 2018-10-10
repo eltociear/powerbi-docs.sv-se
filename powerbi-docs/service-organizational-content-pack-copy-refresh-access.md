@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fbb49f55c4139845f806d590ffb4956abfe0dcd
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 37cfca811b7e60bde832396e67b246933d4e0a8e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543499"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908427"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: kopiera, uppdatera och få åtkomst
 
@@ -51,6 +51,6 @@ Se [Hantera, uppdatera och ta bort organisationsinnehållspaket](service-organiz
 
 ## <a name="next-steps"></a>Nästa steg
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md)
-* [Skapa en grupp i Power BI](consumer/end-user-create-apps.md)
+* [Skapa en grupp i Power BI](service-create-distribute-apps.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

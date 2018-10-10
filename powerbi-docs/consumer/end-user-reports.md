@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 5268241c32112847c879407374b325dd63dd8aab
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: cae5c83f6e220689bfd7d484d5d86c188325ad05
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564851"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908634"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 ## <a name="what-is-a-power-bi-report"></a>Vad är en Power BI-rapport?
@@ -67,7 +67,7 @@ Här följer några avsnitt, ordande enligt roll, som hjälper dig att komma ig�
 * Börja med en [rundtur av Power BI-tjänsten](end-user-basic-concepts.md) så att du vet var du hittar rapportverktyg och rapporter.
 * Lär dig att [öppna en rapport](end-user-report-open.md) och alla interaktioner som är möjliga i [läsläget](end-user-reading-view.md).
 * Bekanta dig mer rapporter genom att ta en titt på ett av våra [exempel](../sample-tutorial-connect-to-the-samples.md).  
-* Behöver du inte rapporten längre? Du kan [ta bort den](end-user-delete.md).
+<!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 * För att se vilken datauppsättning som används av rapporten och vilka instrumentpaneler som har paneler som har fästs från rapporten kan du [visa relaterat innehåll](end-user-related.md).
 
 > [!TIP]
@@ -79,6 +79,4 @@ Här följer några avsnitt, ordande enligt roll, som hjälper dig att komma ig�
 [Vad är Power BI?](../power-bi-overview.md) 
 
 [Power BI – grundläggande begrepp](end-user-basic-concepts.md)
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

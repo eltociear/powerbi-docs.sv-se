@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eaf70dab21bd35947582e343567bb1457b99cabc
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 46cd5e2730d1b0e90fe37a93bbd4340ffb708348
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547992"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908473"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Skapa och publicera ett organisationsinnehållspaket i Power BI (självstudier)
 
@@ -92,7 +92,7 @@ Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com) går du till **H
 ### <a name="next-steps"></a>Nästa steg
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md)  
 * [Hantera, uppdatera och ta bort organisationsinnehållspaket](service-organizational-content-pack-manage-update-delete.md)  
-* [Skapa en grupp i Power BI](consumer/end-user-create-apps.md)  
+* [Skapa en grupp i Power BI](service-create-distribute-apps.md)  
 * [Vad är OneDrive för företag?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
