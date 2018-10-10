@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a00913ea326f472993553910a79e3cc208356499
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546727"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908910"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Ansluta till Microsoft Dynamics NAV med Power BI
 Att få insikter i dina data med Microsoft Dynamics NAV är enkelt med Power BI. Power BI hämtar dina data, både försäljning och ekonomi, och skapar sedan en app med en instrumentpanel och rapporter baserade på dessa data. Power BI behöver dina behörigheter till de tabeller data hämtas från, i det här fallet försäljnings- och ekonomirelaterade data. Mer information om kraven finns nedan. När du har installerat appen kan du visa instrumentpanelen och rapporterna i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och i Power BI-mobilapparna. 
@@ -25,9 +25,9 @@ Att få insikter i dina data med Microsoft Dynamics NAV är enkelt med Power BI.
 ## <a name="how-to-connect"></a>Så här ansluter du
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Välj först **Microsoft Dynamics NAV**och sedan **Hämta**.  
+3. Välj först **Microsoft Dynamics NAV**och sedan **Hämta**.  
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
-2. Ange din Microsoft Dynamics NAV OData-URL när du uppmanas till detta. URL:en ska matcha följande mönster:
+4. Ange din Microsoft Dynamics NAV OData-URL när du uppmanas till detta. URL:en ska matcha följande mönster:
    
     `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
@@ -37,12 +37,12 @@ Att få insikter i dina data med Microsoft Dynamics NAV är enkelt med Power BI.
      
      Ett enkelt sätt att hämta denna URL är att gå till Webbtjänster i Dynamics NAV, söka efter powerbifinance-webbtjänsten och kopiera OData-URL:en, men utelämna ”/powerbifinance” från URL-strängen.  
      ![](media/service-connect-to-microsoft-dynamics-nav/param.png)
-3. Välj **Basic** och ange dina autentiseringsuppgifter för Microsoft Dynamics NAV.
+5. Välj **Basic** och ange dina autentiseringsuppgifter för Microsoft Dynamics NAV.
    
     Du behöver administratörsautentiseringsuppgifter (eller åtminstone behörigheter till försäljning och ekonomi) för ditt Microsoft Dynamics NAV-konto.  Endast Basic-autentisering (användarnamn och lösenord) stöds för närvarande.
    
     ![](media/service-connect-to-microsoft-dynamics-nav/creds.png)
-4. Power BI hämtar dina Microsoft Dynamics NAV-data och skapar en färdig instrumentpanel och rapport åt dig.   
+6. Power BI hämtar dina Microsoft Dynamics NAV-data och skapar en färdig instrumentpanel och rapport åt dig.   
    ![](media/service-connect-to-microsoft-dynamics-nav/dashboard.png)
 
 ## <a name="view-the-dashboard-and-reports"></a>Visa instrumentpanelen och rapporterna
@@ -99,7 +99,7 @@ Om du ser en ”Hoppsan!”-dialogruta när du använder dialogrutan för autent
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](consumer/end-user-apps.md)
+* [Vad är appar i Power BI?](service-create-distribute-apps.md)
 * [Hämta data i Power BI](service-get-data.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

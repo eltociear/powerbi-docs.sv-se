@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/20/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 85a5856d20781012f32d53c9468fdd6b77a0f685
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: c67d46e716574dd1a1d73b9c93c29a3e99f030ba
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546619"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909094"
 ---
 # <a name="power-bi-premium-faq"></a>Vanliga frågor och svar om Power BI Premium
 Bläddra i en lista över vanliga frågor och svar om vad Power BI Premium kan erbjuda.
@@ -102,7 +102,7 @@ Mer information om Power BI-rapportservern finns i [Kom igång med Power BI-rapp
 **Vad är Power BI-appar?**  
 Vi är håller på att utveckla innehållspaket till Power BI-appar för att förbättra hur användare får nya insikter och utforskar dem på företagsnivå. Power BI-apparna är tillgängliga idag och erbjuder ett förenklat sätt för att distribuera instrumentpaneler och rapporter till specifika användare, grupper eller hela företag. Företagsanvändare kan enkelt installera apparna och gå till dem utan problem, de centraliserar innehållet på en enda plats och uppdateras automatiskt. 
 
-Mer information om appar finns i [Vad är appar i Power BI?](consumer/end-user-apps.md).
+Mer information om appar finns i [Vad är appar i Power BI?](service-create-distribute-apps.md).
 
 **Gör du ändringar i Power BI Pro, Power BI (kostnadsfri), Power BI Desktop et al. som en del av Power BI Premium-distributionen?**  
 Nu förenklar vi även skillnaden mellan Power BI Pro och den kostnadsfria tjänsten. Vi har fått feedback om att, trots att den kostnadsfria tjänsten är avsedd för personligt bruk och Power BI Pro möjliggör samarbete, har de funktionella skillnaderna dem emellan skapat förvirring för användarna. Framöver kommer vi att förbättra den kostnadsfria tjänsten så att den får samma funktioner som Power BI Pro, men kommer att begränsa delnings- och samarbetsfunktionerna till enbart Power BI Pro-användare.

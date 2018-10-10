@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5a94b4c808dcb7cbb040f68c0de7588a3b99c155
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: cc1f348deb222ce080ac41ac2574f4fb1437e8db
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548843"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909025"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Skapa de nya arbetsytorna (förhandsversion) i Power BI
 
@@ -130,7 +130,7 @@ Vi skapar arbetsflöden för åtkomstbegäran på olika ställen i tjänsten så
 
 ## <a name="distribute-an-app"></a>Distribuera en app
 
-När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Du kan skapa en app från varje arbetsyta. Dina medarbetare kan få appen på ett par olika sätt. Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera din app från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](consumer/end-user-create-apps.md).
+När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Du kan skapa en app från varje arbetsyta. Dina medarbetare kan få appen på ett par olika sätt. Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera din app från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md).
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Konvertera gamla apparbetsytor till nya apparbetsytor
 
@@ -172,7 +172,6 @@ Följande problem är kända och korrigeringar är under utveckling:
 - När en arbetsyta flyttas från en Premium-kapacitet till delad kapacitet fortsätter i vissa fall kostnadsfria användare och användargrupper att få e-postmeddelanden, även om de inte borde få dem. Problemet uppstår när Min arbetsyta för den användare som skapade prenumerationen är i en Premium-kapacitet.
 
 ## <a name="next-steps"></a>Nästa steg
-
-- [Skapa de aktuella arbetsytorna](service-create-workspaces.md)
-* [Installera och använda appar i Power BI](consumer/end-user-apps.md)
+* [Skapa de aktuella arbetsytorna](service-create-workspaces.md)
+* [Installera och använda appar i Power BI](service-create-distribute-apps.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
