@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546916"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909255"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -196,7 +196,7 @@ Läs [funktionssammanfattningen om mobilappar för juli 2017](https://powerbi.mi
 
 ### <a name="june-2107"></a>Juni 2107
 #### <a name="all-devices"></a>Alla enheter
-**Lägg till appar som favoriter** Du kan redan lägga till en instrumentpanel som favorit. Nyligen [lade Power BI till appar](../end-user-apps.md), och nu kan du också lägga till appar som favoriter. 
+**Lägg till appar som favoriter** Du kan redan lägga till en instrumentpanel som favorit. Nyligen [lade Power BI till appar](../../service-create-distribute-apps.md), och nu kan du också lägga till appar som favoriter. 
 
 ### <a name="may-2017"></a>Maj 2017
 #### <a name="all-devices"></a>Alla enheter
