@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544013"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448970"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI är ett kombinationsdiagram en enskild visualisering som kombinerar ett linjediagram med ett stapeldiagram. Om du kombinerar de två diagrammen till ett kan du göra en snabbare jämförelse av dina data.
@@ -55,9 +55,9 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
     c.  Välj **Tid**\>**FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Axel**.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)**. Du kan behöva välja den två gånger för att sortera stigande eller fallande.
+5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)**. Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)**.
 
-6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
+6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Det finns två kombinationsdiagram: **linjediagram och stående stapeldiagram** samt **linjediagram och grupperat stående stapeldiagram**. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. Från panelen **Fält** drar du **Försäljning** \> **Last Years Sales (Förra årets försäljning)** till behållaren **Radvärden**.
@@ -71,7 +71,8 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
 ## <a name="create-a-combo-chart-with-two-axes"></a>Skapa ett kombinationsdiagram med två axlar
 I det här steget ska vi jämföra bruttomarginal och försäljning.
 
-1. Skapa ett nytt linjediagram som spårar **Bruttomarginal förra året %** efter **Månad**.  I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
+1. Skapa ett nytt linjediagram som spårar **Bruttomarginal förra året %** efter **Månad**. Välj ellipserna för att sortera efter **Month** (Månad) och **Ascending** (Stigande).  
+I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet. Skalan för **Bruttomarginal förra året %** är mycket mindre än skalan för **Försäljning** vilket gör det svårt att jämföra.      
@@ -80,7 +81,7 @@ I det här steget ska vi jämföra bruttomarginal och försäljning.
 3. Konvertera linjediagrammet till ett Linjediagram och stående stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.
 
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**. Power BI skapar två axlar, vilket medför att datauppsättningarna kan skalas på olika sätt; den till vänster mäter dollar försäljning och den till höger procentandel.
+4. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**. Power BI skapar två axlar, vilket medför att datauppsättningarna kan skalas på olika sätt; den till vänster mäter dollar försäljning och den till höger procentandel. Svaret på frågan ovan är ja, vi ser ett liknande mönster.
 
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -103,20 +104,16 @@ I det här steget ska vi jämföra bruttomarginal och försäljning.
 
 Härifrån kan du vilja:
 
-* [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](../consumer/end-user-tiles.md),
+* [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](../service-dashboard-tiles.md),
 * [Spara rapporten](../service-report-save.md).
-* [Gör rapporten mer lättillgänglig för personer med funktionshinder](../desktop-accessibility.md)
+* [göra rapporten mer lättillgänglig för personer med funktionshinder](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Korsmarkering och korsfiltrering
 
-Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](../consumer/end-user-interactions.md) för att ändra det här standardbeteendet.
+Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](../service-reports-visual-interactions.md) för att ändra det här standardbeteendet.
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Översikt över visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
+[Ringdiagram i Power BI](power-bi-visualization-doughnut-charts.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

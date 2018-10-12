@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 6ea5814cdba7df6d7e7bb4bbb284f52110ca184c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744919"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547808"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
 
@@ -24,7 +24,7 @@ Gäller för:
 |:--- |:--- |
 | iPhone-telefoner |Android-telefoner |
 
-När du skapar en Power BI-rapport i Power BI Desktop, kan du också [skapa en version av den rapporten optimerad för visning](../../desktop-create-phone-report.md) i Power BI-appen på en telefon.
+När du skapar en Power BI-rapport i Power BI Desktop eller i Power BI-tjänsten kan du även [skapa en version av den rapporten optimerad för visning](../../desktop-create-phone-report.md) i Power BI-appen på en telefon.
 
 När du öppnar en Power BI-rapport på en telefon identifierar Power BI om rapporten har optimerats för telefon och öppnar automatiskt den optimerade rapporten i stående läge.
 
@@ -79,7 +79,7 @@ Vissa åtgärder kan endast utföras i fokusläge på grund av skärmens storlek
     Återställ är tillgängligt på rapportnivå, för alla visuella objekt eller för det aktuella visuella objektet, vilket tar bort all utforskning från det valda visuella objektet.   
 
 ## <a name="drill-down-in-a-visual"></a>Öka detaljnivån i ett visuellt objekt
-Om hierarkinivåerna har definierats i ett visuellt objekt kan du öka detaljnivån för informationen i ett visuellt objekt och sedan återgå. Du kan[ öka detaljnivån](../../power-bi-visualization-drill-down.md) i antingen Power BI-tjänsten eller Power BI Desktop. Gå nedåt fungerar bara i telefonoptimerade Power BI-rapporter när du visar dem på en telefon. 
+Om hierarkinivåerna har definierats i ett visuellt objekt kan du öka detaljnivån för informationen i ett visuellt objekt och sedan återgå. Du kan[ öka detaljnivån](../end-user-drill.md) i antingen Power BI-tjänsten eller Power BI Desktop. Gå nedåt fungerar bara i telefonoptimerade Power BI-rapporter när du visar dem på en telefon. 
 
 1. Knacka på ellipsen i en telefonrapport (**...** ) i det övre högra hörnet > **Expandera till fokusläge**.
    

@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: 6de0efe3bad1662d1324488a7030894248056730
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 6b500acee862d8f16c186a9adc2fe0b194003e50
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388673"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973849"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar.
@@ -30,7 +30,7 @@ Nuvarande Power BI-arbetsytesamling fortsätter att vara tillgänglig under en b
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
-Innan du börjar migrera till nya Power BI Embedded kan du gå en snabb genomgång som beskriver hur du konfigurerar den nya Power BI Embedded-miljön med hjälp av [integrationsverktyget](https://aka.ms/embedsetup).
+Innan du börjar migrera till nya Power BI Embedded kan du titta på en snabb genomgång som beskriver hur du konfigurerar den nya Power BI Embedded-miljön med hjälp av [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup).
 
 Välj den lösning som passar dig:
 * Lösningen **Embed for your customers** (Bädda in för dina kunder) – om du är intresserad av en [apps egna data](https://aka.ms/embedsetup/AppOwnsData). [Inbäddning för dina kunder](embedding.md#embedding-for-your-customers) ger dig möjlighet att bädda in instrumentpaneler och rapporter för användare som inte har något Power BI-konto. 

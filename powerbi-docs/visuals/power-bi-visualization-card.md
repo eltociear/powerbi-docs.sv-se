@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/26/2018
+ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18c9fe3d50245ff1d0745c0a3ae1e830b3f9be45
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 865e19f368b8e1915d0262ae6356e70a8dbc2781
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548337"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416919"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringar
 Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrumentpanelen eller -rapporten, till exempel total försäljning, marknadsandel år för år eller totala affärsmöjligheter. Den här typen av visualisering kallas ett *kort*. Som nästan alla ursprungliga Power BI-visualiseringar, kan kort skapas med hjälp av rapportredigeraren eller Frågor och svar.
 
-![kortvisualisering](./media/power-bi-visualization-card/pbi_opptuntiescard.png)
+![kortvisualisering](media/power-bi-visualization-card/pbi_opptuntiescard.png)
 
 ## <a name="create-a-card-using-the-report-editor"></a>Skapa ett kort med hjälp av rapportredigeraren
 Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill följa med kan du [hämta exemplet](../sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
@@ -32,7 +32,7 @@ Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill f
    ![](media/power-bi-visualization-card/pbi_rptnumbertilechart.png)
 2. I fönstret Visualiseringar väljer du färgrollerikonen.
 
-   ![](media/power-bi-visualization-card/pbi_changechartcard.png)
+   ![](media/power-bi-visualization-card/power-bi-templates.png)
 6. Hovra över kortet och välj stiftikonen ![](media/power-bi-visualization-card/pbi_pintile.png) för att lägga till visualiseringen på instrumentpanelen.
 
    ![](media/power-bi-visualization-card/power-bi-pin-icon.png)
@@ -44,20 +44,21 @@ Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill f
 
    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.
 
-   ![](media/power-bi-visualization-card/power-bi-pin-success-message.png)
+   ![](media/power-bi-visualization-card/power-bi-success2.png)
 9. Välj **Gå till instrumentpanelen**. Där kan du [redigera och flytta](../service-dashboard-edit-tile.md) den fästa visualiseringen.
 
 
 ## <a name="create-a-card-from-the-qa-question-box"></a>Skapa ett kort från frågerutan för frågor och svar
-Att använda frågerutan för frågor och svar är den enklaste metoden för att skapa ett kort. Frågerutan för frågor och svar är tillgänglig i Power BI-tjänsten (app.powerbi.com) från en instrumentpanel eller rapport. Stegen nedan beskriver hur du skapar ett kort från en instrumentpanel i Power BI-tjänsten. Om du vill skapa ett kort med Frågor och svar i Power BI Desktop [, följer du nedanstående instruktioner](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) för Frågor och svar-förhandsgranskning för Desktop-rapporter.
+Att använda frågerutan för frågor och svar är den enklaste metoden för att skapa ett kort. Frågerutan för frågor och svar är tillgänglig i Power BI-tjänsten från en instrumentpanel eller rapport samt i rapportvyn Desktop. Stegen nedan beskriver hur du skapar ett kort från en instrumentpanel i Power BI-tjänsten. Om du vill skapa ett kort med Frågor och svar i Power BI Desktop [, följer du nedanstående instruktioner](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) för Frågor och svar-förhandsgranskning för Desktop-rapporter.
 
-1. Skapa en [instrumentpanel](../consumer/end-user-dashboards.md) och [hämta data](../service-get-data.md). Det här exemplet använder sig av [exemplet affärsmöjlighetsanalys](../sample-opportunity-analysis.md).
+1. Skapa en [instrumentpanel](../service-dashboards.md) och [hämta data](../service-get-data.md). Det här exemplet använder sig av [exemplet affärsmöjlighetsanalys](../sample-opportunity-analysis.md).
 
 1. Börja skriva vad du vill veta om dina data i frågerutan överst på instrumentpanelen. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**Tips**: Gå till [Redigeringsvy](../consumer/end-user-reading-view.md) i Power BI-tjänsterapporten och välj **Ställ en fråga** från den översta menyraden. I en Power BI Desktop-rapport letar du upp ett öppet utrymme i en rapport och dubbelklickar för att öppna en frågeruta.
+> [!TIP]
+> Gå till [Redigeringsvy](../service-reading-view-and-editing-view.md) i Power BI-tjänsterapporten och välj **Ställ en fråga** från den översta menyraden. I en Power BI Desktop-rapport letar du upp ett öppet utrymme i en rapport och dubbelklickar för att öppna en frågeruta.
 
 3. Skriv till exempel ”antal affärsmöjligheter” i frågerutan.
 
@@ -75,7 +76,7 @@ Att använda frågerutan för frågor och svar är den enklaste metoden för att
 
    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.  
 
-   ![](media/power-bi-visualization-card/power-bi-success.png)
+   ![](media/power-bi-visualization-card/power-bi-success2.png)
 7. Välj **gå till instrumentpanel** för att se den nya panelen. Där kan du [byta namn på, ändra storlek, lägga till en hyperlänk och flytta panelen och mer](../service-dashboard-edit-tile.md) på din instrumentpanel.
 
    ![](media/power-bi-visualization-card/power-bi-pinned.png)
@@ -87,28 +88,24 @@ Att använda frågerutan för frågor och svar är den enklaste metoden för att
 ## <a name="format-a-card"></a>Formatera ett kort
 Du har många alternativ för att ändra etiketter, text, färg med mera. Det bästa sättet att lära dig är att skapa ett kort och sedan utforska formateringsfönstret. Här följer några tillgängliga formateringsalternativ. 
 
-1. Börja genom att välja penselikonen för att öppna formateringsfönstret. 
+1. Börja genom att välja färgrollerikonen för att öppna formateringsfönstret. 
 
-    ![](media/power-bi-visualization-card/power-bi-format-card.png)
+    ![kort med färgroller markerad](media/power-bi-visualization-card/power-bi-format-card.png)
 2. Expandera **Dataetikett** och ändra färg, storlek och teckensnittsfamilj. Om du har tusentals butiker, kan du använda **Visningsenheter** för att visa antal butiker med tusentalsavgränsare och kontrollera antalet decimaler också. Till exempel 125,8K i stället för 125 832,00.
 
 3.  Expandera **Kategorietikett** och ändra storlek och färg.
 
-    ![](media/power-bi-visualization-card/power-bi-card-format.png)
+    ![mörkblå färg vald](media/power-bi-visualization-card/power-bi-card-format.png)
 
 4. Expandera **Bakgrund** och flytta skjutreglaget till På.  Nu kan du ändra bakgrundsfärgen och transparensen.
 
-    ![](media/power-bi-visualization-card/power-bi-format-color.png)
+    ![skjutreglaget är satt till PÅ](media/power-bi-visualization-card/power-bi-format-color.png)
 
 5. Fortsätt att utforska formateringsalternativen tills kortet är exakt som du vill. 
 
-    ![](media/power-bi-visualization-card/power-bi-formatted.png)
+    ![Kort när all formatering är klar](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Paneler på instrumentpanelen i Power BI](../consumer/end-user-tiles.md)
+[Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md)
 
-[Instrumentpaneler i Power BI](../consumer/end-user-dashboards.md)
-
-[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

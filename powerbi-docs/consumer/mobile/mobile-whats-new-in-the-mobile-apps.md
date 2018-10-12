@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 922352c0cdbacd57d3e6706d490b3cc7e65ab8f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748940"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546916"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,25 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="september-2018"></a>September 2018
+
+### <a name="phone-report-editing-in-the-browser-all-devices"></a>Redigering av telefonrapporter i webbläsaren (alla enheter)
+
+Nu kan du skapa en telefonrapportlayout för en rapport som redan har publicerats i Power BI-tjänsten och inte bara i Power BI Desktop. Du skapar den i redigeringsläget i din webbläsare.
+
+### <a name="dashboard-commenting-ios-and-android"></a>Instrumentpanelskommentarer (iOS och Android) 
+
+Du kan lägga till kommentarer direkt till instrumentpaneler och specifika paneler för att diskutera dina data, så ser alla som visar instrumentpanelen dina kommentarer. Du kan även bjuda in andra i organisationen till konversationen genom att @mentioning dem. Dem som du har @mentioned får ett push-meddelande med ditt meddelande till deras mobiltelefon.
+
+För närvarande tillgängligt för iOS- och Android-enheter. Windows-stöd kommer snart.
+
+Läs [Power BI-blogginlägget om instrumentpanelskommentarer](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
+
+### <a name="single-sign-on-windows"></a>Enkel inloggning (Windows)
+
+Enkel inloggning (SSO) är en av de mest efterfrågade funktionerna för Power BI Mobile för Windows. Nu kan du använda ditt primära organisationskonto för att inte bara logga in på dina domänanslutna mobila Windows-enheter utan även smidigt logga in på Power BI-tjänsten. Läs mer om [enkel inloggning och Windows-mobilappar](mobile-windows-10-app-single-sign-on-sso.md).
+
 
 ## <a name="july-2018"></a>Juli 2018
 
@@ -177,7 +196,7 @@ Läs [funktionssammanfattningen om mobilappar för juli 2017](https://powerbi.mi
 
 ### <a name="june-2107"></a>Juni 2107
 #### <a name="all-devices"></a>Alla enheter
-**Lägg till appar som favoriter** Du kan redan lägga till en instrumentpanel som favorit. Nyligen [lade Power BI till appar](../../service-install-use-apps.md), och nu kan du också lägga till appar som favoriter. 
+**Lägg till appar som favoriter** Du kan redan lägga till en instrumentpanel som favorit. Nyligen [lade Power BI till appar](../end-user-apps.md), och nu kan du också lägga till appar som favoriter. 
 
 ### <a name="may-2017"></a>Maj 2017
 #### <a name="all-devices"></a>Alla enheter
@@ -498,7 +517,7 @@ Alla förbättringar för januari finns redan i den nya [Power BI-appen för Win
 
 **R-paneler och webbwidgetar** Du kan visa dessa nya paneltyper i instrumentpaneler på din mobila enhet.
 
-**Bing-instrumentpaneler** I Power BI-tjänsten kan du nu skapa [instrumentpaneler med Bing-sökresultat](../../service-connect-to-services.md) och visa dem på din mobila enhet.
+**Bing-instrumentpaneler** I Power BI-tjänsten kan du nu skapa [instrumentpaneler med Bing-sökresultat](../end-user-connect-to-services.md) och visa dem på din mobila enhet.
 
 **Rapportsidor fästa som paneler på instrumentpaneler** Nu när du kan fästa en hel rapportsida på en instrumentpanel i Power BI-tjänsten, kan du visa rapportsidor i Power BI-appen på din iPhone eller på din Android-telefon.
 

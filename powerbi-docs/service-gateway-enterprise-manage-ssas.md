@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599191"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47238110"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Hantera din datakälla – Analysis Services
 När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda Analysis Services-datakällan antingen för schemalagd uppdatering eller för realtidsanslutningar.
@@ -150,13 +150,38 @@ Gör följande på den lokala datagatewayen med konfigurerbar anpassad användar
 Konfigurera gatewayen för att utföra AD-sökning:
 
 1. Hämta och installera den senaste gatewayen
+
 2. I gatewayen behöver du ändra den **lokala datagatewaytjänsten** för att köras med ett domänkonto (i stället för ett lokalt tjänstkonto – annars fungerar inte AD-sökningen vid körning). Du måste starta om gatewaytjänsten för att ändringen ska börja gälla.  Gå till gatewayappen på din dator (sök efter ”lokal datagateway”). Det gör du genom att gå till **Tjänstinställningar > Byt tjänstkonto**. Kontrollera att du har återställningsnyckeln för gatewayen eftersom du behöver återställa den på samma dator om du inte vill skapa en ny gateway i stället. 
-3. Gå till installationsmappen för denna gateway, *C:\Program\Lokal datagateway* som administratör, så att du har behörighet att skriva och redigera följande fil:
 
-       Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
-4. Redigera följande två konfigurationsvärden enligt *dina* Active Directory-attributkonfigurationer för AD-användarna. Konfigurationsvärdena nedan är bara exempel – du måste ange dem baserat på din Active Directory-konfiguration. 
+3. Gå till installationsmappen för denna gateway, *C:\Program\Lokal datagateway* som administratör, så att du har behörighet att skriva och redigera följande fil: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-   ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+4. Redigera följande två konfigurationsvärden enligt *dina* Active Directory-attributkonfigurationer för AD-användarna. Konfigurationsvärdena nedan är bara exempel – du måste ange dem baserat på din Active Directory-konfiguration. De här konfigurationerna är skiftlägeskänsliga så se till att de matchar värdena i Active Directory.
+
+    ![Azure Active Directory-inställningar](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+    Om inget värde har angetts för ADServerPath-konfigurationen använder gatewayen standardvärdet, Global katalog. Du kan också ange flera värden för ADServerPath. Varje värde måste vara avgränsat med semikolon som i följande exempel.
+
+    ```xml
+    <setting name="ADServerPath" serializeAs="String">
+        <value> >GC://serverpath1; GC://serverpath2;GC://serverpath3</value>
+    </setting>
+    ```
+    Gatewayen parsar värdena för ADServerPath från vänster till höger tills den hittar en matchning. Om ingen matchning hittas används ursprunglig UPN. Kontrollera att det konto som kör gatewaytjänsten (PBIEgwService) har behörighet att skicka frågor till alla AD-servrar som du angett i ADServerPath.
+
+    Gatewayen stöder två typer av ADServerPath, som i följande exempel.
+
+    **WinNT**
+
+    ```xml
+    <value="WinNT://usa.domain.corp.contoso.com,computer"/>
+    ```
+
+    **GC**
+
+    ```xml
+    <value> GC://USA.domain.com </value>
+    ```
+
 5. Du måste starta om den **lokala datagatewaytjänsten** för att konfigurationsändringen ska börja gälla.
 
 ### <a name="working-with-mapping-rules"></a>Arbeta med mappningsregler

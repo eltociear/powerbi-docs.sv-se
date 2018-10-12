@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e7eadadede8f342b25ea59dcd2053f53d654ffff
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c9e4769be12d3da96064a82661a739a94e8a7c6e
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728328"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417405"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
 Den här artikeln beskrivs tidigare uppdateringar av **Power BI Desktop**. Den senaste månatliga utgåvan finns i [**Power BI Desktop** senaste uppdateringar](desktop-latest-update.md).
 
-Du kan alltid [ladda ned den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är likadana oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
+Du kan alltid [ladda ned den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
 
 Länkarna bredvid varje uppdatering innebär följande:
 

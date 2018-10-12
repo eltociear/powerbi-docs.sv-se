@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d1c771ed49a000374c58beb694dda511a8c9a097
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: e9b48b79b30250c442140929045132fe1c4b10e8
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565830"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448924"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vattenfallsdiagram i Power BI
 Ett vattenfallsdiagram visar en löpande summa efter hand som värden adderas eller subtraheras. Det är användbart för att förstå hur ett startvärde (till exempel nettointäkter) påverkas av en serie positiva och negativa förändringar.
@@ -39,32 +39,32 @@ Vi ska skapa ett vattenfallsdiagram som visar försäljningsvarians (uppskattad 
 
 1. Välj fliken **Datauppsättningar** och bläddra till den nya datauppsättningen ”Exempel på detaljhandelsanalys”.  Välj ikonen **Skapa rapport** för att öppna datauppsättningen i rapportredigeringsvyn. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
-2. Välj **Försäljning \> Total Sales Variance (Varians total försäljning)** på panelen **Fält**. Om **Total Sales Variance (Varians total försäljning)** inte finns i **Y-axelområdet** drar du den dit.
-3. Konvertera diagrammet till ett **vattenfallsdiagram**. 
+    ![Fliken med datauppsättningar har valts](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
+2. Välj **Försäljning \> Total Sales Variance (Varians total försäljning)** på panelen **Fält**. 
+3. Konvertera diagrammet till ett **vattenfallsdiagram**. Om **Total Sales Variance (Varians total försäljning)** inte finns i **Y-axelområdet** drar du den dit.
    
-    ![](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
+    ![Visualiseringsmallar](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
 4. Välj **Tid** \> **FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Kategori**. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![vattenfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 5. Sortera vattenfallsdiagrammet kronologiskt. Välj ellipserna (...) i övre högra hörnet och välj **FiscalMonth (Räkenskapsmånad)**.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort.png)
+    ![välj sortera efter > FiscalMonth (Räkenskapsmånad)](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![nytt resultat av stigande sortering](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Gräv lite djupare för att se vad som bidrar mest till ändringarna månad för månad. Dra **Butik** > **Territorium** till bucketen **Detaljnivå**.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
+    ![Visar butiken i bucketen Detaljnivå](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 7. Som standard lägger Power BI till de fem främsta bidragande faktorerna för ökning eller minskning per månad. Men vi är bara intresserade av de två främsta.  Välj **Detaljnivå** på formateringspanelen och ange **Maximum** till 2.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Formatering > Detaljnivå](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
    
     En snabb genomgång visar att territorierna Ohio och Pennsylvania står för de största rörelserna, både negativa och positiva, i vårt vattenfallsdiagram. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
-8. Det här är ett intressant fynd. Har Ohio och Pennsylvania så stor inverkan eftersom försäljningen i dessa två territorier är mycket högre än i de andra territorierna?  Det kan vi kontrollera. Skapa en karta som tittar närmare på försäljningen per territorium.  
+    ![vattenfallsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+8. Det här är ett intressant fynd. Har Ohio och Pennsylvania så stor inverkan eftersom försäljningen i dessa två territorier är mycket högre än i de andra territorierna?  Det kan vi kontrollera. Skapa en karta som visar försäljningen per territorium för det här och det senaste året.  
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
+    ![karta med närbild på Pennsylvania och Ohio](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
    
     Kartan stöder vår teori.  Den visar att dessa två territorier hade det högsta försäljningsvärdet förra året (bubbelstorlek) och det här året (bubbelskuggning).
 
@@ -74,13 +74,7 @@ Information om hur du använder filterfönstret finns i [Lägg till ett filter i
 Om du markerar en kolumn i ett vattenfallsdiagram, korsfiltreras de övriga visualiseringarna på rapportsidan, och vice versa. Kolumnen för det totala värdet utlöser dock ingen markering och svarar inte på korsfiltrering.
 
 ## <a name="next-steps"></a>Nästa steg
-[Rapporter i Power BI](../consumer/end-user-reports.md)
+
+[Visuella interaktioner](../service-reports-visual-interactions.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
-
-[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

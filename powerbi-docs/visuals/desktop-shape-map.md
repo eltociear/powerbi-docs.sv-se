@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ad9a3e73a90ff69f5d56e1e5c1fc487c855df74d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 71dbdd79e6bedee3f1377f0e7c29fcc6efbbba03
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566043"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417336"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
-I Power BI Desktop skapar du en **formkartan** för att visa relativa jämförelser mellan områden på en karta genom att använda olika färger i olika områden. Jämfört med **kartor** kan **formkartor** inte visa exakta geografiska platser för datapunkter på en karta. Dess huvudsakliga syfte är att visa relativa jämförelser för regioner på en karta genom att markera dem med olika färger.
+Skapa en **Formkarta** för att jämföra regioner på en karta med hjälp av färg. Till skillnad från **Karta** kan **Formkarta** inte visa exakta geografiska platser för datapunkter på en karta. Istället är dess huvudsakliga syfte att visa relativa jämförelser mellan regioner med hjälp av olika färger.
 
-**Formkartor** är baserade på ESRI/TopoJSON-kartor som kan använda anpassade som du kan skapa, till exempel geografiska kartor, placeringskartor, plankartor med mera. Möjligheten att använda anpassade kartor är inte tillgänglig i den här förhandsversionen av **Formkarta**.
+**Formkartor** är baserade på ESRI/TopoJSON-kartor som kan använda anpassade kartor skapade av dig. Exempel på anpassade kartor är geografiska kartor, placeringskartor, plankartor med mera. Möjligheten att använda anpassade kartor är inte tillgänglig i den här förhandsversionen av **Formkarta**.
 
 ## <a name="creating-shape-maps"></a>Skapa formkartor
 Du kan testa kontrollen **Formkarta** med kartorna som levereras med den här förhandsversionen använda dina egna anpassade kartor förutsatt att de uppfyller kraven som anges i följande avsnitt: **Använda anpassade kartor**.
@@ -115,7 +115,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="australia-states"></a>Australien: delstater
 
-| ID | förkortn. | ISO | namn | postnummer |
+| `id` | `abbr` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -128,7 +128,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="austria-states"></a>Österrike: förbundsländer
 
-| ID | ISO | namn | namn-en | postnummer |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Wien |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -142,7 +142,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="brazil-states"></a>Brasilien: delstater
 
-| ID |
+| `id` |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -178,7 +178,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="canada-provinces"></a>Kanada: provinser
 
-| ID | ISO | namn | postnummer |
+| `id` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -196,7 +196,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="france-regions"></a>Frankrike: regioner
 
-| ID | namn | namn-en |
+| `id` | `name` | `name-en` |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone Alpes |Rhône Alpes |Rhone Alpes |
@@ -223,7 +223,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="germany-states"></a>Tyskland: delstater
 
-| ID | ISO | namn | namn-en | postnummer |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thüringen |TH |
@@ -244,7 +244,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="ireland-counties"></a>Irland: grevskap
 
-| ID |
+| `id` |
 | --- |
 | Wicklow |
 | Wexford |
@@ -275,7 +275,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="italy-regions"></a>Italien: regioner
 
-| ID | ISO | namn | namn-en | postnummer |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta-dalen |VD |
@@ -300,7 +300,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="mexico-states"></a>Mexiko: delstater
 
-| ID | förkortning | ISO | namn | namn-en | postnummer |
+| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -337,7 +337,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="netherlands-provinces"></a>Nederländerna: provinser
 
-| ID | ISO | namn | namn-en |
+| `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Zuid-Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -354,7 +354,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="uk-countries"></a>Storbritannien: länder
 
-| ID | ISO | namn |
+| `id` | `iso` | `name` |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skottland |
@@ -363,7 +363,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 
 ### <a name="usa-states"></a>USA: delstater
 
-| ID | namn | postnummer |
+| `id` | `name` | `postal` |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -417,3 +417,7 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att test
 | us-mt |Montana |MT |
 | us-wa |Washington |WA |
 
+## <a name="next-steps"></a>Nästa steg
+[Visuell matris i Power BI](desktop-matrix-visual.md)
+
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -9,14 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 1185b6195f0d802cec71143c1f27ce5cead584c6
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: 3cb33180c24022c1e328691ce3a776875d4c87a9
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616061"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47238133"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Självstudie: Bädda in en Power BI-rapport, instrumentpanel eller panel till ett program för dina kunder
+
 Med **Power BI Embedded i Azure** kan du bädda in rapporter, instrumentpaneler eller paneler i ett program med **app äger data**. **App äger data** handlar om ett program som använder Power BI som en inbäddad analysplattform. Användning av **App äger data** är vanligtvis ett scenario för **ISV-utvecklare**. Som **ISV-utvecklare** kan du skapa **Power BI**-innehåll som visar rapporter, instrumentpaneler eller paneler i ett program som är helt integrerat och interaktivt, utan att kräva att användarna har en Power BI-licens. Den här självstudien visar hur du integrerar en rapport i ett program som använder **Power BI** .NET SDK tillsammans med **Power BI** JavaScript API när du använder **Power BI Embedded i Azure**  för kunder med **app äger data**.
 
 I de här självstudierna får du lära dig att
@@ -25,6 +26,7 @@ I de här självstudierna får du lära dig att
 >* Bädda in en Power BI-rapport i ett program.
 
 ## <a name="prerequisites"></a>Förutsättningar
+
 För att komma igång behöver du ett **Power BI Pro**-konto (det här kontot är ditt **huvudkonto**) och en **Microsoft Azure**-prenumeration.
 
 * Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/en-us/pricing/) innan du börjar.
@@ -36,9 +38,10 @@ För att komma igång behöver du ett **Power BI Pro**-konto (det här kontot ä
 
 Innan du börjar bädda in rapporter, instrumentpaneler eller paneler i din app måste du se till att din miljö har ställts in så att inbäddning tillåts. Som en del av installationen behöver du göra följande.
 
-Med [integrationsverktyget](https://aka.ms/embedsetup/AppOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport.
+Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/AppOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport.
 
 Om du i stället vill konfigurera miljön manuellt, fortsätter du bara nedan.
+
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrera ett program i Azure Active Directory (Azure AD)
 
 Du kan registrera din app med Azure Active Directory så att ditt program får åtkomst till Power BI REST-API:er. Därmed kan du upprätta en identitet för din app och ange behörigheter till Power BI REST-resurser.
@@ -46,11 +49,11 @@ Du kan registrera din app med Azure Active Directory så att ditt program får �
 1. Godkänn [villkoren för Microsoft Power BI-API](https://powerbi.microsoft.com/api-terms).
 
 2. Logga in på [Azure Portal](https://portal.azure.com).
- 
+
     ![Huvuddel för Azure Portal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
 3. I det vänstra navigeringsfönstret väljer du **Alla tjänster**, **App-registreringar** och sedan **Ny appregistrering**.
-   
+
     ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Ny appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
@@ -65,11 +68,11 @@ Du måste aktivera ytterligare behörigheter för ditt program utöver vad som f
 ### <a name="use-the-azure-active-directory-portal"></a>Använd Azure Active Directory-portalen
 
 1. Bläddra till [App-registreringar](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) i Azure Portal och välj den app som du använder för att bädda in.
-   
+
     ![Att välja App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
 2. Välj **Inställningar**, sedan under **API-åtkomst** välj **Nödvändiga behörigheter**.
-   
+
     ![Nödvändiga behörigheter](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Välj **Windows Azure Active Directory** och kontrollera att **Åtkomst till katalogen som den inloggade användaren** är markerad. Välj **Spara**.
@@ -170,7 +173,9 @@ Följ de här stegen om du vill börja bädda in innehåll med hjälp av ett exe
 
     I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **App-registreringar**.
 
-    ![Söka efter App-registrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png) Välj det program som du vill hämta **clientId** för.
+    ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+
+    Välj det program som du vill hämta **clientId** för.
 
     ![Att välja App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
@@ -204,6 +209,7 @@ Följ de här stegen om du vill börja bädda in innehåll med hjälp av ett exe
     ![Visa program](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Bädda in innehåll i programmet
+
 Innehåll kan bäddas in med hjälp av [Power BI REST API:er](https://docs.microsoft.com/rest/api/power-bi/), men exempelkoderna som beskrivs i den här artikeln görs med **.NET SDK**.
 
 Om du vill bädda in för dina kunder i programmet måste du hämta en **åtkomsttoken** för huvudkontot från **Azure AD**. Du måste hämta en [Azure AD-åtkomsttoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) för ditt Power BI-program med **app äger data** innan du gör anrop till [Power BI REST API:erna](https://docs.microsoft.com/rest/api/power-bi/).
@@ -225,6 +231,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ```
 
 ### <a name="get-the-content-item-you-want-to-embed"></a>Hämta innehållsobjektet som du vill bädda in
+
 Använd Power BI-klientobjektet för att hämta en referens till det objekt du vill bädda in.
 
 Här är ett kodexempel på hur du hämtar den första rapporten från en given arbetsyta.
@@ -243,6 +250,7 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Skapa inbäddningstoken
+
 En inbäddningstoken behöver skapas som kan användas från JavaScript-API:t. En inbäddningstoken gäller endast för det objekt du bäddar in. Det innebär att när du bäddar in en bit Power BI-innehåll måste du skapa en ny inbäddningstoken för den. Mer information, inklusive vilken **accessLevel** som du ska använda, finns i [GenerateToken-API:t](https://msdn.microsoft.com/library/mt784614.aspx).
 
 Här är ett exempel på hur du lägger till en inbäddningstoken för en rapport till ditt program.
@@ -323,6 +331,7 @@ I det här exemplet används en **EmbedConfig**-modell och en **TileEmbedConfig*
 Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet för apparbetsytan. Dedikerad kapacitet krävs för att flytta till produktion.
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
+
 Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Du kan köpa en dedikerad kapacitet inom [Microsoft Azure-portalen](https://portal.azure.com). Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
 
 Använd tabellen nedan för att avgöra vilken Power BI Embedded-kapacitet som bäst passar dina behov.
@@ -359,6 +368,7 @@ När du har skapat en dedikerad kapacitet kan du tilldela apparbetsytan till den
     ![apparbetsyta som hör till en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## <a name="next-steps"></a>Nästa steg
+
 I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program för dina kunders räkning. Du kan även prova att bädda in Power BI-innehåll för din organisation.
 
 > [!div class="nextstepaction"]

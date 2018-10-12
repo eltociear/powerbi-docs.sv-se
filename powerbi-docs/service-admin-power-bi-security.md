@@ -2,27 +2,27 @@
 title: Power BI-säkerhet
 description: Power BI-säkerhet. Hur Power BI fungerar i förhållande till Azure Active Directory och andra Azure-tjänster. Det här avsnittet innehåller också en länk till ett dokument med mer information.
 author: davidiseminger
-manager: erikri
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: ec8f1e40cac1c98bcfb5049d1fe8dd7397b616d6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 072f548c3725c4133bb548a72fc58679e74f5fc7
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598876"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417106"
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 En detaljerad förklaring av Power BI-säkerheten får du om du [laddar ned white paper-dokumentet om Power BI-säkerhet](http://go.microsoft.com/fwlink/?LinkId=829185):
 
 [![](media/service-admin-power-bi-security/pbi_security_01.png)](http://go.microsoft.com/fwlink/?LinkId=829185)
 
-Power BI-tjänsten bygger på **Azure**, vilket är Microsofts infrastruktur och plattform för molntjänster. Power BI-tjänstens arkitektur baseras på två kluster – frontwebb (**WFE**) och **serverdel**. WFE-klustret är ansvarigt för den första anslutningen och autentiseringen till Power BI-tjänsten. Efter att den har autentiseras hanterar serverdelen alla efterföljande användarinteraktioner. Power BI använder Azure Active Directory (AAD) till att lagra och hantera användaridentiteter, samt hanterar lagringen av data och metadata med Azure-blobb och Azure SQL Database.
+Power BI-tjänsten bygger på **Azure**, vilket är Microsofts infrastruktur och plattform för molntjänster. Power BI-tjänstens arkitektur baseras på två kluster – frontwebb (**WFE**) och **serverdel**. WFE-klustret är hanterar den första anslutningen och autentiseringen till Power BI-tjänsten. Efter att den har autentiseras hanterar serverdelen alla efterföljande användarinteraktioner. Power BI använder Azure Active Directory (AAD) till att lagra och hantera användaridentiteter, samt hanterar lagringen av data och metadata med Azure-blobb och Azure SQL Database.
 
 ## <a name="power-bi-architecture"></a>Power BI-arkitektur
 Varje Power BI-distribution består av två kluster – ett frontwebb (**WFE**) och ett **serverdel**.

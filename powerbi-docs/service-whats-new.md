@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/27/2018
+ms.date: 09/23/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 090a59f406f1e3874f678752f0e0bc9656ae492f
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1472646d1a4dc338740583ab759c2fc71aa1e56d
+ms.sourcegitcommit: fbc1fabcb5e3b285228c9aa192b9b421b2782922
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548958"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47059103"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -31,37 +31,43 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="august-2018"></a>Augusti 2018
-* Förbättringar för [URL-rapportfilter](service-url-filters.md) i Power BI.
+## <a name="september-2018"></a>September 2018
+* [Instrumentpanelskommentarer](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) i Power BI-tjänsten.
 
 ## <a name="previous-months-2018"></a>Föregående månader (2018)
+### <a name="august-2018"></a>Augusti 2018
+* [Kapacitetövervakningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) för Power BI Premium.
+* Förbättringar för [URL-rapportfilter](service-url-filters.md) i Power BI.
+
 ### <a name="july-2018"></a>Juli 2018
+* Stöd för anpassade visuella objekt för [beständiga filter](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/).
 * [API:er och PowerShell-cmdletar](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) för Power BI-administratörer.
+* [Multi-Geo-stöd](service-admin-premium-multi-geo.md) för Power BI Premium.
 
 ### <a name="june-2018"></a>Juni 2018
 * Dela rapporter med filter och utsnitt.
 * Nytt och förbättrat användargränssnitt för [gatewayanslutningar](https://powerbi.microsoft.com/blog/easier-set-up-of-datasets-in-power-bi/) och för att konfigurera datauppsättningar.
 
 ### <a name="may-2018"></a>Maj 2018
-* [Instrumentpaneler med teman](https://docs.microsoft.com/power-bi/service-dashboard-themes) i Power BI-tjänsten.
-* [Inkrementella uppdateringar](https://docs.microsoft.com/power-bi/service-premium-incremental-refresh) med Premium.
-* Begär åtkomstarbetsflöde för [Power BI-appar](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
-* Hämta data-uppdateringar så att det blir enklare för användarna att hitta [Power BI-appar](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
+* [Instrumentpaneler med teman](service-dashboard-themes.md) i Power BI-tjänsten.
+* [Inkrementella uppdateringar](service-premium-incremental-refresh.md) med Premium.
+* Begär åtkomstarbetsflöde för [Power BI-appar](service-create-distribute-apps.md).
+* Hämta data-uppdateringar så att det blir enklare för användarna att hitta [Power BI-appar](service-create-distribute-apps.md).
 * Inställningar för att aktivera och inaktivera [Beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjänsten.
 * Förbättrade Azure B2B-inbjudningsarbetsflöden för rapporter.
 
 ### <a name="april-2018"></a>April 2018
 * [Power BI-white paper om dataskydd](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-* [Granskningsloggar](https://docs.microsoft.com/power-bi/service-admin-auditing) i Power BI-tjänsten är aktiverade som standard för Office 365-klienter.
+* [Granskningsloggar](service-admin-auditing.md) i Power BI-tjänsten är aktiverade som standard för Office 365-klienter.
 
 ### <a name="march-2018"></a>Mars 2018
 * [Beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjänsten.
 * Dela innehåll med användare som använder sina personliga e-postkonton. Tillägget av [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
 
 ### <a name="february-2018"></a>Februari 2018
-* Installera [Power BI-appar](https://docs.microsoft.com/power-bi/service-create-distribute-apps) automatiskt för slutanvändare.
+* Installera [Power BI-appar](service-create-distribute-apps.md) automatiskt för slutanvändare.
 * P4- och P5-kapaciteter på Power BI Premium
-* Förhandsgranskning av [anpassade visuella objekt i en organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-organization).
+* Förhandsgranskning av [anpassade visuella objekt i en organisation](power-bi-custom-visuals-organization.md).
 
 ### <a name="january-2018"></a>Januari 2018
 *   Resurs- och favoritrapporter i Power BI.
@@ -73,7 +79,7 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 
 ## <a name="previous-months-2017"></a>Föregående månader (2017)
 ## <a name="october-and-november-2017"></a>Oktober och november 2017
-*   Selektiv publicering av innehåll med [Power BI-appar](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
+*   Selektiv publicering av innehåll med [Power BI-appar](service-create-distribute-apps.md).
 *   Extern användardistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * Rekommendationer för AI-drivna apprekommendationer.
 * UI-uppdateringar av instrumentpanelen.

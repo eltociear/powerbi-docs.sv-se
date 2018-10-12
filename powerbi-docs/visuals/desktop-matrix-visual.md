@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: e08eeed7b4adf1a392d2661613dd190cce1fb52f
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565945"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416830"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Använd det visuella matrisobjektet i Power BI Desktop
 Med den visuella **matris**-funktionen kan du skapa visuell matrisinformation (kallas ibland också *tabeller*) i **Power BI Desktop**-rapporter och markera flera element i matrisen med andra visuella objekt. Dessutom kan du välja rader, kolumner och även enskilda celler och korsmarkeringar. Matrisen har dessutom stöd för stegvis layout för optimal användning av utrymmet.
@@ -42,11 +42,11 @@ I det här exemplet visar varje rad i det visuella **matris**objektet längst ti
 Tänk på att dessa värden, när du arbetar med total- och delsummor, baseras på underliggande data och inte enbart på de värden som visas. 
 
 
-## <a name="using-drill-down-with-the-matrix-visual"></a>Använd detaljerad vy i matris
-Det finn sen mängd intressanta aktiviteter som ökar detaljnivån i **matrisen** som inte var tillgängliga tidigare. Detta inkluderar möjligheten att specificera med rader, kolumner och även i enskilda avsnitt och celler. Nu ska vi titta på hur var och en av dessa fungerar.
+## <a name="using-drill-down-with-the-matrix-visual"></a>Öka detaljnivån i den visuella matrisen
+Det finns en mängd intressanta aktiviteter som ökar detaljnivån i **matrisen** som inte var tillgängliga tidigare. Detta inkluderar möjligheten att öka detaljnivån för rader, kolumner och även i enskilda avsnitt och celler. Nu ska vi titta på hur var och en av dessa fungerar.
 
-### <a name="drill-down-on-row-headers"></a>Specificera radrubriker
-I fönstret **Visuella objekt**, när du lägger till flera fält i området **Rader** avsnitt brunnen **fält** aktiveras specificering på raderna i matrisen. Detta påminner om hur du skapar en hierarki som sedan låter dig specificera (och återgå) i hierarkin och analysera data på varje nivå.
+### <a name="drill-down-on-row-headers"></a>Öka detaljnivån för radrubriker
+Gå till fönstret **Visualiseringar**. När du lägger till flera fält i avsnittet **Rader** i brunnen **Fält** aktiveras granskning nedåt på raderna i matrisen. Detta påminner om hur du skapar en hierarki som sedan låter dig öka detaljnivån (och återgå) i hierarkin och analysera data på varje nivå.
 
 I följande bild skapar avsnittet **Rader** *Kategori* och *Underkategori* en gruppering (eller hierarki) i de rader som vi kan se i större detalj.
 
@@ -56,7 +56,7 @@ När en gruppering har skapats i avsnittet **Rader** visar det visuella objektet
 
 ![](media/desktop-matrix-visual/matrix-visual_5.png)
 
-På samma sätt som funktionerna detaljgranska och expandera i andra visuella objekt kan vi detaljgranska hierarkin (eller återgå) med dessa knappar. I det här fallet kan vi gå från *Kategori* till *Underkategori*, vilket visas i följande bild, där ikonen för att gå ned en detaljnivå (högaffeln) har valts.
+På samma sätt som du kan använda funktionerna för att öka detaljnivån och expandera beteendet för andra visuella objekt, kan vi öka detaljnivån i hierarkin (eller återgå) med dessa knappar. I det här fallet kan vi gå från *Kategori* till *Underkategori*, vilket visas i följande bild, där ikonen för att öka detaljnivån (högaffeln) har valts.
 
 ![](media/desktop-matrix-visual/matrix-visual_6.png)
 
@@ -74,18 +74,18 @@ Du kan klicka på ikonen **Minska detaljnivån** för att gå tillbaka till för
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-När du klickar på ikonen **Minska detaljnivån** i det övre vänstra hörnet av matrisen visas alla toppkategorier, högerklicka igen och välj **Expandera till nästa nivå**, så visas följande:
+När du klickar på ikonen **Minska detaljnivån** i det övre vänstra hörnet av matrisen visas alla toppkategorier. Högerklicka igen och välj **Expandera till nästa nivå**, så visas följande visuella objekt.
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
 Du kan också använda menyalternativen **Inkludera** och **Undanta** för att behålla (eller ta bort, respektive) raden du högerklickade på (och eventuella underkategorier) från matrisen.
 
-### <a name="drill-down-on-column-headers"></a>Gå nedåt i kolumnrubriker
-På samma sätt som du kan gå nedåt en nivå i Rader kan du göra samma med **Kolumner**. I följande bild ser du att det finns två fält i fältbrunnen **kolumner**, vilket skapar en hierarki som liknar den som vi använder för rader tidigare i den här artikeln. I fältbrunnen **Kolumner**har vi *Klass* och *Färg*.
+### <a name="drill-down-on-column-headers"></a>Öka detaljnivån för kolumnrubriker
+På samma sätt som du kan öka detaljnivån för rader kan du göra samma med **Kolumner**. I följande bild ser du att det finns två fält i fältbrunnen **kolumner**, vilket skapar en hierarki som liknar den som vi använder för rader tidigare i den här artikeln. I fältbrunnen **Kolumner**har vi *Klass* och *Färg*.
 
 ![](media/desktop-matrix-visual/matrix-visual_10.png)
 
-När vi högerklickar på en kolumn i **matrisen** visas alternativet att gå nedåt. I följande bild, högerklickar vi på *Deluxe* och väljer **Öka detaljnivån**.
+När vi högerklickar på en kolumn i **matrisen** visas alternativet att öka detaljnivån. I följande bild, högerklickar vi på *Deluxe* och väljer **Öka detaljnivån**.
 
 ![](media/desktop-matrix-visual/matrix-visual_11.png)
 
@@ -122,14 +122,14 @@ Du kan aktivera eller inaktivera delsummor i matriser, för såväl rader som ko
 
 ![](media/desktop-matrix-visual/matrix-visual_20.png)
 
-I området **Format** i fönstret **Visuella objekt** expanderar du kortet **Delsummor** och aktiverar skjutreglaget **Raddelsummor** till  **Inaktivera**. När du gör det visas inte delsummor.
+I avsnittet **Format** i fönstret **Visualiseringar** expanderar du kortet **Delsummor** och sätter skjutreglaget **Raddelsummor** till **Inaktivera**. När du gör det visas inte delsummor.
 
 ![](media/desktop-matrix-visual/matrix-visual_21.png)
 
 Samma sak gäller för kolumndelsummor.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Korsmarkering med matriser
-Med visualiseringen **Matris** kan du välja alla element i matrisen som grund för korsmarkering. Markera en kolumn i en **matris** för att markera den och alla andra visuella objekt på rapportsidan. Detta har varit en vanlig funktion för andra visualiseringar och val av datapunkter, så nu har visualiseringen **Matris** samma funktion.
+Med visualiseringen **Matris** kan du välja alla element i matrisen som grund för korsmarkering. Markera en kolumn i en **matris** för att markera den och alla andra visuella objekt på rapportsidan. Den här typen av korsmarkering har varit en vanlig funktion för andra visuella objekt och val av datapunkter, så nu har det visuella objektet **Matris** samma funktion.
 
 Dessutom fungerar Ctrl + klicka för korsmarkering. I följande bild valdes till exempel en samling av underkategorier från **matrisen**. Observera hur objekt som inte var markerat från det visuella objektet är nedtonade och hur övriga visuella objekt på sidan återspeglar de val du gjorde i **matrisen**.
 
@@ -153,10 +153,6 @@ Båda metoder ger samma resultat. Om du väljer *avancerade kontroller* visas f�
 
 ## <a name="next-steps"></a>Nästa steg
 
-Följande artiklar kan också vara av intresse för dig:
+[Punktdiagram och bubbeldiagram i Power BI](power-bi-visualization-scatter.md)
 
-* [Använd stödlinjer och fäst till rutnät i Power BI Desktop-rapporter](../desktop-gridlines-snap-to-grid.md)
-* [Datakällor i Power BI Desktop](../desktop-data-sources.md)
-* [Datatyper i Power BI Desktop](../desktop-data-types.md)
-
- 
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a3102ff26a4dbf58d8db0073f1af9cf2db5b6515
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329395"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417175"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
@@ -65,7 +65,7 @@ Följande tabell (eller matris, om du vill) beskriver de tre typerna av dataupps
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Se [den här MSDN-artikeln](https://msdn.microsoft.com/library/dn950053.aspx) för information om **Push**-begränsningar för hur mycket data som kan pushas in.
+> Se [den här artikeln](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) för information om **push**-begränsningar för hur mycket data som kan pushas in.
 > 
 > 
 
@@ -83,14 +83,12 @@ Låt oss ta en titt på var och en av dessa metoder.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Använd Power BI REST API:er för att pusha data
 **Power BI REST API:er** kan användas för att skapa och skicka data till **push**-datauppsättningar och **strömmande** datauppsättningar. När du skapar en datauppsättning med Power BI REST API:er, anger flaggan *defaultMode* om datauppsättningen är push eller strömmande. Om ingen *defaultMode*-flagga har angetts, blir datauppsättningen **push** som standard.
 
-Om värdet *defaultMode* är satt till *pushStreaming* så är datauppsättningen både **push** *och* **strömmande**, vilket ger fördelarna från bägge datauppsättningstyperna. REST API-[artikeln för **skapa datauppsättning**](https://msdn.microsoft.com/library/mt203562.aspx) visar hur du skapar en strömmande datauppsättning och visar *defaultMode*-flaggan i användning.
+Om värdet *defaultMode* är satt till *pushStreaming* så är datauppsättningen både **push** *och* **strömmande**, vilket ger fördelarna från bägge datauppsättningstyperna. 
 
 > [!NOTE]
 > När du använder datauppsättningar med *defaultMode* -flaggan satt till *pushStreaming* och om en begäran överskrider storleksbegränsningen på 15Kb för en **strömmande** datauppsättning, men är mindre än storleksbegränsningen på 16 MB för en **push**-datauppsättning, kommer begäran att lyckas och data kommer att uppdateras i push-datauppsättningen. Eventuella strömmande paneler kommer dock tillfälligt att misslyckas.
-> 
-> 
 
-När du har skapat en datauppsättning, använder du REST-API:er för att pusha data med hjälp av API:et [**lägg till rader**](https://msdn.microsoft.com/library/mt203561.aspx), som det [visas i den här artikeln](https://msdn.microsoft.com/library/mt203561.aspx).
+När du har skapat en datauppsättning, använder du REST-API:er för att pusha data med hjälp av API:et [**PostRows**](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 Alla begäranden till REST API:er är skyddade med **Azure AD OAuth**.
 
@@ -159,7 +157,7 @@ Nästa avsnitt går igenom varje alternativ i tur och ordning.
 
 ![](media/service-real-time-streaming/real-time-streaming_5.png)
 
-Om du vill att Power BI ska lagra de data som skickas via den här dataströmmen, aktiverar du *analys av historiska data* så kommer du att kunna göra rapporter och analyser på den insamlade dataströmen. Du kan också [läsa mer om API:et](https://msdn.microsoft.com/library/dn877544.aspx).
+Om du vill att Power BI ska lagra de data som skickas via den här dataströmmen, aktiverar du *analys av historiska data* så kommer du att kunna göra rapporter och analyser på den insamlade dataströmen. Du kan också [läsa mer om API:et](https://docs.microsoft.com/rest/api/power-bi/).
 
 När du har skapat din dataström, får du en REST API URL-slutpunkt som ditt program kan anropa med *POST*-begäranden för att pusha dina data till den Power BI-datauppsättningen med **strömmande data** som du skapat.
 
@@ -223,10 +221,10 @@ För push-datauppsättningar, kan du försöka skapa en rapportvisualisering med
 Tyvärr är detta inte tillgänglig just nu.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Med tanke på föregående fråga, hur kan jag modellera realtids-datauppsättningar?
-Det går inte att modellera en strömmande datauppsättning, eftersom data inte lagras permanent. Med en push-datauppsättning, kan du använda REST API:erna uppdatera datauppsättning/tabell för att lägga till åtgärder och relationer. Du hittar mer information i [artikeln uppdatera tabellschemat](https://msdn.microsoft.com/library/mt203560.aspx) och [datauppsättningsegenskaper](https://msdn.microsoft.com/library/mt742155.aspx).
+Det går inte att modellera en strömmande datauppsättning, eftersom data inte lagras permanent. Med en push-datauppsättning, kan du använda REST API:erna uppdatera datauppsättning/tabell för att lägga till åtgärder och relationer. 
 
 #### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Hur kan jag rensa alla värden i en push-datauppsättning? Eller den strömmande datauppsättningen?
-På en push-datauppsättning kan du använda REST API-anropet ta bort rader. Separat, kan du även använda det här praktiska verktyget som är en omslutning runt REST API:erna. För tillfället finns det inget sätt att rensa data från en strömmande datauppsättning. Data rensas dock av sig självt efter en timme.
+På en push-datauppsättning kan du använda REST API-anropet ta bort rader. För tillfället finns det inget sätt att rensa data från en strömmande datauppsättning. Data rensas dock av sig självt efter en timme.
 
 #### <a name="i-set-up-an-azure-stream-analytics-output-to-power-bi-but-i-dont-see-it-appearing-in-power-bi--whats-wrong"></a>Jag har skapat Azure Stream Analytics-utdata till Power BI, men det visas inte i Power BI. Vad är fel?
 Här är en checklista som du kan använda för att felsöka problemet:
@@ -241,9 +239,6 @@ Här är en checklista som du kan använda för att felsöka problemet:
 ## <a name="next-steps"></a>Nästa steg
 Här är några länkar som kan vara användbara när du arbetar med realtidsströmning i Power BI:
 
-* [Översikt över Power BI REST-API:t med realtidsdata](https://msdn.microsoft.com/library/dn877544.aspx)
-* [Begränsningar för Power BI REST API:t](https://msdn.microsoft.com/library/dn950053.aspx)
-* [REST API-artikel för **skapa datauppsättning**](https://msdn.microsoft.com/library/mt203562.aspx)
-* [**Lägg till rader** Power BI REST API](https://msdn.microsoft.com/library/mt203561.aspx)
+* [Översikt över Power BI REST-API:t med realtidsdata](https://docs.microsoft.com/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
 

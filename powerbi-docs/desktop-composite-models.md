@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ddfe0c7ad116a74fa6887491ee41e544096de0f9
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 4e7692be8ec78c79076408635a75dbf0ab9080d2
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388857"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974056"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Sammansatta modeller i Power BI Desktop (förhandsversion)
 
@@ -164,12 +164,13 @@ Dessutom kan användning av **många-till-många** relationer innebära att sepa
 
 Det finns några begränsningar för den här versionen av **sammansatta modeller**.
 
-Följande flerdimensionella källor kan inte användas med **sammansatta modeller**:
+Följande (flerdimensionella) Live-anslutningskällor kan inte användas med **sammansatta modeller**:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI-datauppsättningar
+* Azure Analysis Services
 
 När du ansluter till de flerdimensionella källorna med DirectQuery, kan du inte också ansluta till en annan DirectQuery-källa eller kombinera med importerade data.
 

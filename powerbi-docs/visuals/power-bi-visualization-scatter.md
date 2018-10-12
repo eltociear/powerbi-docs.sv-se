@@ -8,24 +8,24 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2018
+ms.date: 09/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 13bc26eaecdcc9b3a00f22f75f6f9a5322d823f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: bd09adf21292b16ee27f111ac92bbd8c83c384d8
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44748900"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448855"
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Punktdiagram och bubbeldiagram i Power BI
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Dessa datapunkter kan vara jämnt eller ojämnt fördelade på den horisontala axeln, beroende på datan.
 
 Ett bubbeldiagram ersätter datapunkterna med bubblor, med en *bubbelstorlek* som motsvarar en dimension av datan.
 
-![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+![exempel på bubbeldiagram](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
-Du kan ange antalet datapunkter  
+Du kan ange antalet datapunkter upp till 10 000.  
 
 ## <a name="when-to-use-a-scatter-chart-or-bubble-chart"></a>När du vill använda ett punktdiagram eller bubbeldiagram
 ### <a name="scatter-charts-are-a-great-choice"></a>Punktdiagram är ett bra alternativ:
@@ -50,7 +50,7 @@ Titta på det här videoklippet och se Skapa ett punktdiagram och följ stegen n
 
 Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill följa med kan du [hämta exemplet](../sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
 
-1. Välj den gula plusikonen för att skapa en [tom rapportsida ](../power-bi-report-add-page.md).
+1. Öppna rapporten i redigeringsvyn och klicka på den gula plusikonen för att skapa en [tom rapportsida](../power-bi-report-add-page.md).
  
 2. Välj följande fält från fönstret Fält:
    - **Försäljning** > **Försäljning efter kvm**
@@ -81,20 +81,20 @@ Nu ska vi lägga till en tredje dimension.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. Om du vill ange antalet datapunkter som ska visas i bubbeldiagrammet går du till **Format**-avsnittet i fönstret **Visualiseringar**, expanderar kortet **Allmänt** och justerar **Datavolym**. Du kan ange en största datavolym på upp till 10 000. För högre volymer föreslår vi att du först testar så att prestanda inte försämras. 
+3. Om du vill ange antalet datapunkter som ska visas i bubbeldiagrammet går du till **formateringsavsnittet** i fönstret **Visualiseringar**, expanderar kortet **Allmänt** och justerar **Datavolym**. Du kan ange en största datavolym på upp till 10 000. För högre volymer föreslår vi att du först testar så att prestanda inte försämras. 
 
-    ![Datavolym](./media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+    ![Datavolym](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
    > [!NOTE]
    > Eftersom fler datapunkter kan innebära en längre inläsningstid, bör du testa dina rapporter på webben och mobilt för att säkerställa att prestandan matchar dina användares förväntningar om du väljer att publicera rapporter med gränser i den högre änden av skalan. Tänk på att du bör testa resultaten för olika formfaktorer för att säkerställa bra prestanda för datapunkter med höga nummer.
 
 4. Du kan [formatera visualiseringens färger, etiketter, rubriker, bakgrund med mera](service-getting-started-with-color-formatting-and-axis-properties.md). Överväg att lägga till markörformer på varje linje för att [förbättra tillgängligheten](../desktop-accessibility.md). Med olika markörformer för varje linje är det enklare för rapportanvändare att skilja linjer (eller områden) från varandra. Välj markörform genom att expandera kortet **Former** och välja en markörform.
 
-      ![Markörform](./media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+      ![Markörform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    Du kan också ändra markörformen till en romb, triangel eller kvadrat:
 
-   ![Kvadratisk markör](./media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+   ![Kvadratisk markör](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
@@ -104,8 +104,7 @@ Har du skapat ett punktdiagram där du bara ser en datapunkt som samlar alla vä
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
 
-Lös problemet genom att lägga till ett fält i området **Information** som talar om för Power BI hur värdena ska grupperas. Fältet måste vara unikt för varje punkt som du vill rita.  
-Som ett enkel radnummer eller ID-fält:
+Lös problemet genom att lägga till ett fält i området **Information** som talar om för Power BI hur värdena ska grupperas. Fältet måste vara unikt för varje punkt som du vill rita, till exempel ett enkelt radnummer eller ett ID-fält.
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
 
@@ -116,9 +115,8 @@ Eller om du inte har detta i dina data, skapa ett fält som tillsammans sammanfo
 Skapa ett nytt fält genom att [använda Power BI Desktop frågeredigeraren för att lägga till en indexkolumn](../desktop-add-custom-column.md) i din datauppsättning.  Lägg sedan till den här kolumnen till området **Information** i din visualisering.
 
 ## <a name="next-steps"></a>Nästa steg
+
+[Punktdiagram med hög densitet](desktop-high-density-scatter-charts.md)
+
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Registrera dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/get-started/)  
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

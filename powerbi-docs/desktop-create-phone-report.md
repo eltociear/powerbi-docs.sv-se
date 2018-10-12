@@ -1,38 +1,39 @@
 ---
 title: Skapa rapporter som är optimerade för Power BI-mobilapparna
-description: Lär dig hur du optimerar rapportsidor i Power BI Desktop för Power BI-telefonapparna.
+description: Lär dig hur du optimerar rapportsidor för Power BI-mobilapparna genom att skapa en version av rapporten som är anpassad för mobiltelefoner.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 09/14/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f34207640fe0db02d38464ce8600a44b6ffab4c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 22f4d6bf3c715c390c9760593ba5afdc72ce3bf7
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726465"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973964"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Skapa rapporter som är optimerade för Power BI-mobilapparna
-När du [skapar en rapport i Power BI Desktop](desktop-report-view.md) kan du förbättra användningen i mobilappar genom att skapa en version av rapporten som är specifik för mobiltelefoner. Du anpassar rapporten för telefonen genom att arrangera om och ändra storlek på visuella objekt, samt kanske ta bort några för en optimal upplevelse. Du kan dessutom skapa [*dynamiska* visuella objekt](#optimize-a-visual-for-any-size) och [dynamiska utsnitt](#enhance-slicers-to-to-work-well-in-phone-reports) som anpassar sin storlek så att de ser bra ut på en telefon. Om du lägger till filter i din rapport, visas de filtren dessutom automatiskt i telefonrapporten. Dina rapportläsare kan se dem och filtrera rapporten med dem.
+Förbättra användningen i mobilappar genom att skapa en version av rapporten som är anpassad för mobiltelefoner. I Power BI Desktop och Power BI-tjänsten kan du anpassa rapporten för telefonen genom att arrangera om och ändra storlek på visuella objekt, samt kanske ta bort några för en optimal upplevelse. Du kan dessutom skapa [*dynamiska* visuella objekt](#optimize-a-visual-for-any-size) och [dynamiska utsnitt](#enhance-slicers-to-to-work-well-in-phone-reports) som anpassar sin storlek så att de ser bra ut på en telefon. Om du lägger till filter i din rapport, visas de filtren dessutom automatiskt i telefonrapporten. Dina rapportläsare kan se dem och filtrera rapporten med dem.
 
 ![Optimerad rapport i en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-## <a name="lay-out-a-report-page-for-the-phone-in-power-bi-desktop"></a>Utforma en rapportsida för telefonen i Power BI Desktop
-När du har [skapat en rapport i Power BI Desktop](desktop-report-view.md), kan du optimera den för telefoner.
+## <a name="lay-out-a-report-page-for-the-phone"></a>Utforma en rapportsida för telefonen
 
-1. I Power BI Desktop väljer du **Rapportvy** i det vänstra navigeringsfältet.
-   
-    ![Ikonen Rapportvy](media/desktop-create-phone-report/desktop-create-phone-report-2.png)
-2. På fliken **Visa** väljer du **Telefonlayout**.  
+När du har skapat en rapport kan du optimera den för telefoner.
+
+1. Gå till fliken **Visa** och välj **Telefonlayout** i rapportvyn i Power BI Desktop.  
    
     ![Ikonen Telefonlayout](media/desktop-create-phone-report/desktop-create-phone-report-3.png)
    
+    Välj **Redigera rapport** > **Mobil layout** i Power BI-tjänsten.
+
     Du ser en tom telefonarbetsyta. Alla visuella objekt på den ursprungliga rapportsidan visas i fönstret Visualiseringar till höger.
+
 3. Om du vill lägga till ett visuellt objekt i telefonlayouten drar du det från fönstret Visualiseringar till telefonens arbetsyta.
    
     Telefonrapporter använder sig av en rutnätslayout. När du drar visuella objekt till mobilarbetsytan fäster de vid rutnätet.
@@ -40,12 +41,10 @@ När du har [skapat en rapport i Power BI Desktop](desktop-report-view.md), kan 
     ![Dra och släppa ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
     Du kan lägga till några eller alla av huvudrapportsidans visuella objekt på telefonens rapportsida. Du kan bara lägga till varje visuellt objekt en gång.
+
 4. Du kan ändra storlek på de visuella objekten i rutnätet på samma sätt som med paneler på instrumentpaneler och mobila instrumentpaneler.
    
-   > [!NOTE]
-   > Telefonens rapportrutnät anpassas till telefoner av olika storlekar, vilket innebär att din rapport kommer att se lika bra ut på telefoner med stora och små skärmar.
-   > 
-   > 
+   Telefonens rapportrutnät anpassas till telefoner av olika storlekar, vilket innebär att din rapport kommer att se lika bra ut på telefoner med stora och små skärmar.
    
    ![Ändra storlek på ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 

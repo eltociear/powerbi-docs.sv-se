@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: ca2f9e3393df2fd205474983ab9868aa9401ed9d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 474fe7eee6dbcb296a7eaec6057ecfa56cd3f144
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329211"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417129"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
 Den här artikeln är avsedd för nya användare i Power BI Desktop. Den är tänkt att ge dig en snabb och enkel introduktion för hur du kan använda dataanalysuttryck (DAX) till att lösa flera grundläggande problem med beräkningar och dataanalys. Vi går igenom viss konceptinformation, en serie aktiviteter som du kan utföra och några kunskapsfrågor som testar vad du har lärt dig. När du har läst den här artikeln bör du ha en god förståelse för de viktigaste grundläggande begreppen i DAX.
@@ -87,23 +87,21 @@ För att kunna utföra den här aktiviteten måste du öppna Power BI Desktop-fi
     
 2. I formelfältet ersätter du **Mått** genom att skriva det nya måttnamnet **Previous Quarter Sales**.
     
-3. Efter likhetstecknet skriver du **SUM** följt av en vänsterparentes.
-    
-   I stället för att skriva ett kolumnnamn som ska summeras direkt, ska vi ange en annan funktion som *filtrerar* de data som ska summeras.
-    
-4. Mellan parenteserna skriver du **CALCULATE** följt av en vänsterparentes.
-    
+3. Efter lika med-tecknet skriver du de första bokstäverna **CAL** och dubbelklickar på den funktion som du vill använda. I den här formeln ska du använda **CALCULATE**-funktionen.
+
    Du ska använda CALCULATE-funktionen till att filtrera de belopp som vi vill summera med ett argument som vi skickar till funktionen CALCULATE. Det här kallas för kapslade funktioner. CALCULATE-funktionen innehåller minst två argument. Det första är uttrycket som ska utvärderas och det andra är ett filter.
    
-5. Mellan parenteserna **()** för funktionen **CALCULATE** skriver du **Sales[SalesAmount]**. Detta är det första uttrycksargumentet för vår CALCULATE-funktion.
+4. Efter öppningsparentesen **(** för funktionen **CALCULATE** skriver du **SUM** följt av ytterligare en öppningsparentes **(**. Nu ska vi skicka argument till funktionen SUM.
+
+5. Börja skriva **Sal**, och välj sedan **Sales [SalesAmount]**, följt av en avslutande parentes **)**. Detta är det första uttrycksargumentet för vår CALCULATE-funktion.
     
-6. Skriv ett kommatecken (**,**) för att ange det första filtret och sedan **PREVIOUSQUARTER** följt av en vänsterparentes.
+6. Skriv ett kommatecken (**,**) följt av ett blanksteg för att ange det första filtret och skriv sedan **PREVIOUSQUARTER** . Det här är vårt filter.
     
-   Vi använder tidsfunktionen PREVIOUSQUARTER för att filtrera vårt SUM-resultat från föregående kvartal.
+   Vi använder tidsfunktionen PREVIOUSQUARTER för att filtrera SUM-resultatet från föregående kvartal.
     
-7. Mellan parenteserna **()** för PREVIOUSQUARTER-funktionen skriver du **Calendar[DateKey]**.
+7. Efter öppningsparentesen **(** för PREVIOUSQUARTER-funktionen skriver du **Calendar[DateKey]**.
     
-   Funktionen PREVIOUSQUARTER har ett argument, en kolumn som innehåller ett sammanhängande datumintervall.
+   Funktionen PREVIOUSQUARTER har ett argument, en kolumn som innehåller ett sammanhängande datumintervall. I vårt fall är det kolumnen DateKey i tabellen Calendar.
     
 8. Se till att båda argumenten skickas till funktionen PREVIOUSQUARTER och att funktionen CALCULATE avslutas med två högerparenteser **))**.
     

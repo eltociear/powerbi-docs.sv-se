@@ -8,22 +8,30 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2018
+ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 946746b1c868ca5310edd929434cc852400b5bc3
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 92e86817231e959db50af3c32fe8eba761c79a61
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548084"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448878"
 ---
 # <a name="treemaps-in-power-bi"></a>Trädkartor i Power BI
-Trädkartor visar hierarkiska data som en uppsättning kapslade rektanglar.  Varje nivå i hierarkin representeras av en färgad rektangel (som ofta kallas en ”gren”) som innehåller andra rektanglar (”löv”).  Utrymmet i varje rektangel fördelas utifrån kvantitativa värden som mäts och rektanglarna ordnas efter storlek från överst till vänster (störst) till nederst till höger (minst).
+Trädkartor visar hierarkiska data som en uppsättning kapslade rektanglar.  Varje nivå i hierarkin representeras av en färgad rektangel (som ofta kallas en ”gren”) som innehåller andra rektanglar (”löv”).  Utrymmet i varje rektangel fördelas utifrån vilka värden som mäts. Rektanglarna ordnas i storleksordning med de största överst till vänster och de minsta längst ned till höger.
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
 
-Om jag till exempel analyserar min försäljning, kan jag ha rektanglar på översta nivån (grenar) för klädkategorierna: **Urbant**, **Rural (Lantligt)**, **Youth (Ungdom)**, och **Mix (Blandning)**.  Min kategori av rektanglar innehåller mindre rektanglar (löv) för klädtillverkarna i den kategorin och dessa mindre rektanglar får sin storlek och skuggas baserat på antalet sålda artiklar.  I grenen **Urbant** ovan såldes mängder av Maximus-kläder, mindre av Natura och Fama och mycket lite av Leo.  Därmed skulle grenen **Urbant** i min trädkarta ha den största rektangeln för Maximus (i det övre vänstra hörnet), något mindre rektanglar för Natura och Fama, ett flertal andra rektanglar som representerar alla andra kläder som sålts och en liten rektangel för Leo.  Och jag skulle kunna jämföra antalet sålda artiklar med de övriga klädkategorierna genom att jämföra storlek och skuggning för varje lövnod; ju större rektangel och ju mörkare skuggning, desto högre värde.
+Om jag till exempel analyserar min försäljning, kan jag ha rektanglar på översta nivån (*grenar*) för klädkategorierna: **Urbant**, **Rural (Lantligt)**, **Youth (Ungdom)** och **Mix (Blandning)**.  Mina kategorirektanglar delas upp i mindre rektanglar som kallas *löv*, och som representerar olika klädtillverkare inom den kategorin. De mindre rektanglarna får sin storlek och färgning baserat på antalet sålda artiklar.  
+
+I grenen **Urbant** ovan, såldes massor kläder från `Maximus`, mindre från `Natura` och `Fama`, och få från `Leo`.  Grenen **Urbant** i min trädkarta har därmed:
+* den största rektangeln för `Maximus` i det övre vänstra hörnet
+* något mindre rektanglar för `Natura` och `Fama`
+* massor av andra rektanglar för alla andra sålda kläder 
+* en liten rektangel för `Leo`.  
+
+Och jag skulle kunna jämföra antalet sålda artiklar med de övriga klädkategorierna genom att jämföra storlek och färgning för varje lövnod; ju större rektangel och ju mörkare färg, desto högre värde.
 
 ## <a name="when-to-use-a-treemap"></a>När du ska använda en trädkarta
 Trädkartor är ett bra alternativ:
@@ -44,31 +52,31 @@ Vill du först se någon annan skapa en trädkarta?  Hoppa till 2:10 i det här 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Eller skapa en egen trädkarta. Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill följa med, loggar du in i Power BI-tjänsten (inte Desktop) och väljer **Hämta data\> Exempel \> Exempel på detaljhandelsanalys \> Anslut \>Gå till instrumentpanel**. För att skapa visualiseringar i en rapport måste du ha redigeringsbehörigheter för datauppsättningen och rapporten. Som tur är kan Power BI-exemplen redigeras. Men om någon delar en rapport med dig kan du inte lägga till nya visualiseringar.
+Eller skapa en egen trädkarta. Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Logga in i Power BI-tjänsten och välj **Hämta data \> Exempel \> Exempel på detaljhandelsanalys \> Anslut \> Gå till instrumentpanel**. För att skapa visualiseringar i en rapport måste du ha redigeringsbehörigheter för datauppsättningen och rapporten. Som tur är kan Power BI-exemplen redigeras. Men du kan inte lägga till visualiseringar i en rapport som någon har delat med dig.  
 
 1. Välj panelen ”Totalt antal butiker” för att öppna rapporten Exempel på detaljhandelsanalys.    
 2. Öppna [Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md) och välj måttet **Försäljning** > **Förra årets försäljning**.   
    ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)   
 3. Konvertera diagrammet till en trädkarta.  
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   
-4. Dra **Artikel** > **Kategori** till området **Grupp**. Power BI skapar en trädkarta där storleken på rektanglarna återspeglar total försäljning och färgen representerar kategorin.  I princip har du skapat en hierarki som visuellt beskriver den relativa storleken för den totala försäljningen per kategori.  Kategorin **Mens (Herr)** har den högsta försäljningen och kategorin **Hosiery (Trikå)** har den lägsta.   
-   ![](media/power-bi-visualization-treemaps/treemapcomplete_new.png)   
+4. Dra **Artikel** > **Kategori** till området **Grupp**. Power BI skapar en trädkarta där storleken på rektanglarna bygger på total försäljning och färgen representerar kategorin.  I princip har du skapat en hierarki som visuellt beskriver den relativa storleken för den totala försäljningen per kategori.  Kategorin **Mens (Herr)** har den högsta försäljningen och kategorin **Hosiery (Trikå)** har den lägsta.   
+   ![](media/power-bi-visualization-treemaps/power-bi-complete.png)   
 5. Dra **Store** > **kedjan** till den **information** bra för att slutföra din treemap. Nu kan du jämföra förra årets försäljning efter kategori och kedja.   
-   ![](media/power-bi-visualization-treemaps/treemap_addgroup_new.png)
+   ![](media/power-bi-visualization-treemaps/power-bi-details.png)
    
    > [!NOTE]
    > Färgmättnad och Information kan inte användas samtidigt.
    > 
    > 
-5. Hovra över ett **kedjeområde** för att visa verktygstips för den delen av **kategorin**.  Hovra till exempel över **Lindseys** i rektangeln **040 Juniors (040 Junior)** för att visa verktygstips för Lindseys del av juniorkategorin.  
+5. Hovra över ett **kedjeområde** för att visa verktygstips för den delen av **kategorin**.  Om du exempelvis hovrar över **Fashions Direct** i rektangeln **090-Home** visas en knappbeskrivning för delen Fashions Direct i kategorin Home.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Lägg till trädkartan som en panel på instrumentpanelen (fäst det visuella objektet)](../consumer/end-user-tiles.md). 
+6. [Lägg till trädkartan som en panel på instrumentpanelen (fäst det visuella objektet)](../service-dashboard-tiles.md). 
 7. [Spara rapporten](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
-Information om hur du använder fönstret Filter finns i [Lägga till ett filter i en rapport](../power-bi-report-add-filter.md).
+Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
 
-Om du markerar en kategori eller information i en trädkarta, korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan ... och vice versa. Om du vill göra detta lägger du antingen till några visuella objekt på samma sida eller kopierar och klistrar in trädkartan på en rapportsida där det redan finns andra visuella objekt.
+Om du markerar en kategori eller information i en trädkarta, korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan ... och vice versa. Lägg till några visuella objekt på den här rapportsidan eller kopiera trädkartan till någon av de andra icke-tomma sidorna i den här rapporten.
 
 1. Välj en kategori eller en kedja inom en kategori på trädkarta.  Detta korsmarkerar de övriga visualiseringarna på sidan. Om du till exempel väljer **050-Shoes (050-Skor)**, får du veta att förra årets skoförsäljning uppgick till USD 3 640 471 varav USD 2 174 185 kom från Fashions Direct.  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
@@ -76,11 +84,10 @@ Om du markerar en kategori eller information i en trädkarta, korsmarkeras och k
 2. I om du väljer delen **Fashions Direct** i cirkeldiagrammet **Senaste årets försäljning per kedja**, korsfiltreras trädkartan.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../consumer/end-user-interactions.md)
+3. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../service-reports-visual-interactions.md)
 
 ## <a name="next-steps"></a>Nästa steg
-[ Fäst en visualisering på en instrumentpanel](../service-dashboard-pin-tile-from-report.md)  
-[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)  
+[Vattenfallsdiagram i Power BI](power-bi-visualization-waterfall-charts.md)
 
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

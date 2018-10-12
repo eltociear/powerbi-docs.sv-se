@@ -1,25 +1,25 @@
 ---
 title: Vad är Power BI?
 description: Översikt över Power BI och hur de olika delarna fungerar ihop – Power BI Desktop, Power BI-tjänsten, Power BI Mobile, rapportservern och Power BI Embedded.
-author: davidiseminger
-manager: kfile
+author: mihart
+manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 06/22/2018
-ms.author: davidi
+ms.date: 09/22/2018
+ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b61e60852175ced605ae920a6a31091625f781f
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 73a3188256b754517beb9f83a382c4005de6e7e7
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186948"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416991"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Oavsett om dina data består av ett enkelt Excel-kalkylblad eller en samling molnbaserade och lokala hybridinformationslager, kan du med **Power BI** enkelt ansluta till dina datakällor, visualisera (eller identifiera) vad som är viktigt och dela det med någon eller alla du vill.
 
-![diagram som visar indatakällor för Power BI](media/power-bi-overview/power-bi-input.png)
+![diagram som visar indatakällor för Power BI](media/power-bi-overview/power-bi-input-new.png)
 
 **Power BI** kan vara enkelt och snabbt och kan på ett ögonblick skapa snabba insikter från ett Excel-kalkylblad eller en lokal databas. Men **Power BI** är också robust och håller företagsklass och möjliggör omfattande modellering och analys i realtid samt anpassad utveckling. Så det kan vara ditt personliga verktyg för rapportering och visualisering och även fungera som analys- och beslutsmotor till grupprojekt, avdelningar eller hela bolag.
 
@@ -41,6 +41,12 @@ Du kan också använda delarna i **Power BI** vid olika tidpunkter, beroende på
 
 Du kanske vill visa utvecklingen för lager och tillverkning på en instrumentpanel i realtid i tjänsten och även använda **Power BI Desktop** för att skapa rapporter för ditt team om kundengagemangsstatistik. Hur du använder Power BI kan baseras på vilken funktion eller tjänst i Power BI som är det bästa verktyget för din situation – men alla delar av Power BI är tillgängliga för dig, vilket är anledningen till att det är så flexibelt och övertygande.
 
+Utforska dokument som hör till din roll:
+- Power BI för [***designers***](desktop-what-is-desktop.md)
+- Power BI för [***konsumenter***](consumer/end-user-consuming.md)
+- Power BI för [***utvecklare***](developer/what-can-you-do.md)
+- Power BI för [***administratörer***](service-admin-administering-power-bi-in-your-organization.md)
+
 ## <a name="the-flow-of-work-in-power-bi"></a>Arbetsflödet i Power BI
 Ett vanligt arbetsflöde i Power BI börjar med att ansluta till datakällor och skapa en rapport i **Power BI Desktop**. Rapporten publiceras därefter från **Desktop** till **Power BI-tjänsten** och delas så att användare av **tjänsten** och **mobilappen** kan *använda* (visa och interagera med) rapporten.
 Ibland kan du vilja ge kollegor behörigheter som liknar dina egna (behörigheter för *skapare*) så att de också kan använda **tjänsten** för att redigera rapporter, skapa instrumentpaneler och dela sitt arbete.
@@ -57,5 +63,5 @@ Skapa, distribuera och hantera Power BI, mobila och sidnumrerade rapporter lokal
 Power BI-rapportservern är en lösning som du distribuerar bakom brandväggen och som skickar dina rapporter till rätt användare på olika sätt, oavsett om de som får dem ska visa dem i en webbläsare, på en mobil enhet eller som ett e-postmeddelande. Och eftersom Power BI-rapportservern är kompatibel med Power BI i molnet, kan du flytta över till molnet när du är redo.
 
 ## <a name="next-steps"></a>Nästa steg
-[Logga in, hämta vissa data och lär dig använda Power BI-tjänsten](consumer/end-user-experience.md)   
+[Logga in, hämta vissa data och lär dig använda Power BI-tjänsten](service-the-new-power-bi-experience.md)   
 [Självstudie: Kom igång med Power BI-tjänsten](service-get-started.md)

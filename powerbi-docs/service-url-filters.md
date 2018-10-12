@@ -1,22 +1,22 @@
 ---
 title: Lägg till Power BI-rapportparametrarna med hjälp av webbadressen
 description: Filtrera en rapport med hjälp av URL:en för frågesträngparametrar – du kan även filtrera på mer än ett fält.
-author: mihart
-ms.author: mihart
-manager: annebe
+author: maggiesMSFT
+ms.author: maggies
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 1124163b985f575df08a9ba4f065c6a6b1abf54c
-ms.sourcegitcommit: cca21f8089e71b595d3aca30c95f12e4bbf767cc
+ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
+ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45626041"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48232936"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -106,7 +106,7 @@ Power BI stöder många operatorer utöver **and**. I tabellen nedan visas de op
 |**gt**     | större än        |nej | ja | ja  | produkt/pris ge 20
 |**le**     |   mindre än eller lika med      | nej | ja | ja  | produkt/pris le 100
 |**lt**     |  mindre än       | nej | ja | ja |  produkt/pris lt 20
-|**in****     |  inklusive       | nej | nej |  ja | Student/ålder in (27, 29)
+|**in****     |  inklusive       | ja | ja |  ja | Student/ålder in (27, 29)
 
 
 \** Vid användning av **i** kan värden till höger om **in** vara en kommaavgränsad lista som omges av parenteser eller ett enda uttryck som returnerar en samling.
@@ -131,14 +131,14 @@ Varför är den här skillnaden viktig? Anta att du skapar frågesträngsparamet
 
 ## <a name="special-characters-in-url-filters"></a>Specialtecken i URL-filter
 
-Specialtecken och blanksteg kräver viss ytterligare formatering. När frågan innehåller blanksteg, bindestreck eller andra icke-ASCII-tecken ska du prefigera dessa specialtecken med en *escape-kod* (**_x**) och 4-siffrigt **Unicode**. Om Unicode är färre än 4 tecken behöver du fylla på det med nollor. Nedan visas några exempel.
+Specialtecken och blanksteg kräver viss ytterligare formatering. När frågan innehåller blanksteg, bindestreck eller andra icke-ASCII-tecken ska du prefigera dessa specialtecken med en *escape-kod* som börjar med ett understreck och ett X (**_x**) och fyrsiffrig **Unicode** följt av ännu ett understreck. Om Unicode är färre än 4 tecken behöver du fylla på det med nollor. Nedan visas några exempel.
 
 |Identifierare  |Unicode  | Kodning för Power BI  |
 |---------|---------|---------|
-|**Tabellnamn**     | Blanksteg: 0x20        |  Table_x0020_Name       |
-|**Kolumn**@**Nummer**     |   @: 0x40     |  Column_x0040_Number       |
-|**[Kolumn]**     |  [:0x005B ]:0x0050       |  _x0058_Column_x0050       |
-|**Column+Plus**     | +:0x2B        |  Column_x002B_Plus       |
+|**Tabellnamn**     | Blanksteg är 0x20        |  Table_x0020_Name       |
+|**Kolumn**@**Nummer**     |   @ är 0x40     |  Column_x0040_Number       |
+|**[Kolumn]**     |  [ är 0x0058 ] är 0x0050       |  _x0058_Column_x0050       |
+|**Column+Plus**     | + är 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![tabell för visuell rendering av specialtecken](media/service-url-filters/power-bi-special-characters1.png)
 
@@ -171,6 +171,7 @@ Det finns några saker som du bör vara medveten om när du använder frågestr�
 * I Power BI-rapportservern kan du [skicka rapportparametrar ](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) genom att ta med dem i en rapport-URL. Dessa URL-parametrar har inget prefix eftersom de skickas direkt till rapportbearbetningsmotorn.
 * Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md) eller Power BI Embedded.   
 * Datatypen long är (2^53-1) på grund av begränsningar i Javascript.
+* Rapportfilter för URL har en begränsning på 10 uttryck (10 filter som är hopkopplade med AND).
 
 ## <a name="next-steps"></a>Nästa steg
 

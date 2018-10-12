@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 09/24/2018
 ms.author: mihart
-ms.openlocfilehash: 45bd00877aadba2a84ac533add18b82337fa8403
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 54c484153896430a7c5c886864459361cae97428
+ms.sourcegitcommit: fbc1fabcb5e3b285228c9aa192b9b421b2782922
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546267"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47059080"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Få anpassade visuella objekt *certifierade*
 ## <a name="what-is-meant-by-certified"></a>Vad menas med begreppet *certifierad*?
@@ -107,6 +107,7 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Linjär mätare från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Video](https://youtu.be/7_jFaM30dkc) |
 | [LineDot-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380766) | |
 | [Mekko-diagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380785) | [Video](https://youtu.be/90FLCKpgicA) |
+| [Multi-KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381763) | |
 | [Översikt av CloudScope](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381477) | |
 | [Uppspelningsaxel (dynamiskt utsnitt)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |

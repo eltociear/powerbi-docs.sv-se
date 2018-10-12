@@ -8,27 +8,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 09/26/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 8e19bc596bef3862dca79ac92ffbd74954a9c756
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 069a7d6c6d1503dd207eea9208f90d70e9ca1264
+ms.sourcegitcommit: 8138220c42606069e2f5f97c6e4d29888dbdd036
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300171"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47420710"
 ---
-# <a name="monitor-power-bi-premium-capacities-in-your-organization"></a>Övervaka Power BI Premium-kapaciteter i din organisation
+# <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Övervaka Power BI Premium- och Power BI Embedded-kapaciteter
 
-Den här artikeln innehåller en översikt över övervakning av mått för dina Power BI Premium-kapaciteter. Genom att övervaka kapacitetsförbrukningen kan du hantera din kapacitet på ett genomtänkt sätt. 
+Den här artikeln innehåller en översikt över övervakning av mått för dina Power BI Premium-kapaciteter. Genom att övervaka kapacitetsförbrukningen kan du hantera din kapacitet på ett genomtänkt sätt.
 
 Du kan övervaka kapaciteten med appen Power BI Premium Capacity Metrics eller i administrationsportalen. Vi rekommenderar appen, eftersom det ger mycket mer detaljerad information, men den här artikeln beskriver båda alternativen.
 
 ## <a name="install-the-premium-capacity-metrics-app"></a>Installera appen Premium Capacity Metrics
 
 Du kan gå direkt till [Premium Capacity Metrics-appen](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) eller installera den precis som andra appar i Power BI.
-
-> [!IMPORTANT]
-> Du måste vara kapacitetsadministratör för minst en kapacitet för att installera och använda den här appen. Det räcker inte att vara en Power BI-administratör. 
 
 1. I Power BI klickar du på **Appar**.
 
@@ -42,47 +39,66 @@ Du kan gå direkt till [Premium Capacity Metrics-appen](https://app.powerbi.com/
 
 Nu när du har installerat appen kan du se mått som gäller kapaciteterna i din organisation. Låt oss ta en titt på några av de viktigaste måtten som är tillgängliga.
 
-## <a name="use-the-metrics-app"></a>Använda måttappen 
+## <a name="use-the-metrics-app"></a>Använda måttappen
+
 När du öppnar appen visas först en instrumentpanel med en sammanfattning av alla kapaciteter som du har administratörsrättigheter till.
 
-![Rapportöversikt över Premium](media/service-admin-premium-monitor-capacity/app-dashboard.png)
+![Instrumentpanelen med mätvärden för app](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-### <a name="filtering"></a>Filtrering
+Rapporten har tre flikar som vi beskriver i detalj i nedanstående avsnitt.
 
-På fliken **Filter tillämpas på alla sidor** kan du välja en kapacitet, en datauppsättning och/eller ett datumintervall under de senaste sju dagarna. De här filtren tillämpar urvalet på alla relevanta sidor och paneler i den här rapporten. Om inget är markerat använder rapporten standardinställningarna för att visa den senaste veckan mått på varje kapacitet som du äger.
+* **Filters applied to all pages** (Filter som används för alla sidor): Gör det möjligt att filtrera de övriga sidorna i rapporten till en specifik kapacitet.
+* **Datauppsättningar**: Innehåller detaljerade mätvärden om hälsotillståndet för datauppsättningarna i din kapacitet.
+* **System**: Tillhandahåller den totala uppmätta kapaciteten, inklusive minne och hög CPU-användning. 
 
-![Rapportöversikt över Premium](media/service-admin-premium-monitor-capacity/premium-report-overview.png)
+### <a name="filters-applied-to-all-pages-tab"></a>Filter som används för fliken med alla sidor
 
-### <a name="summary-tab"></a>Fliken Sammanfattning
+På fliken **Filters applied to all pages** (Filter som används för alla sidor) kan du välja en kapacitet, en datauppsättning och/eller ett datumintervall under de senaste sju dagarna. Filter används sedan för alla relevanta sidor och paneler i rapporten. Om inga filter är markerade använder rapporten standardinställningarna för att visa den senaste veckans mått på varje kapacitet som du äger.
 
-Fliken **Sammanfattning** visar en vy av kapaciteten baserat på entiteter, system och datauppsättningar.
+![Fliken Filter](media/service-admin-premium-monitor-capacity/filters-tab.png)
 
-![Filter som gäller för alla sidor](media/service-admin-premium-monitor-capacity/premium-summary-report.png)
+### <a name="datasets-tab"></a>Fliken Datauppsättningar
 
-| **Område** | **Mått** |
+Fliken **Datauppsättningar** innehåller de flesta måtten i appen. Använd de fyra knapparna högst upp på fliken för att navigera till olika områden: **Sammanfattning**, **Uppdaterar**, **Frågor** och **Datauppsättningar**.
+
+![Fliken Datauppsättningar](media/service-admin-premium-monitor-capacity/datasets-tab.png)
+
+#### <a name="summary-area"></a>Området Sammanfattning
+
+![Knappen Sammanfattning](media/service-admin-premium-monitor-capacity/summary-button.png)
+
+Området **Sammanfattning** innehåller en vy över dina kapaciteter baserat på entiteter, systemresurser och arbetsbelastningar i datauppsättningen.
+
+| | **Mått** |
 | --- | --- |
 | **Entiteter** | * Antalet kapaciteter som du äger<br> * Det exakta antalet datauppsättningar i din kapacitet<br> * Det exakta antalet arbetsytor i din kapacitet |
 | **System** | * Den genomsnittliga minnesanvändningen i GB under de senaste sju dagarna<br> * Högsta minnesförbrukning i GB under de senaste sju dagarna och den lokala tid då det hände<br> * Antalet gånger som CPU har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på tre minuter långa buckets<br> * De flesta gånger CPU överskred 80 % under de senaste sju dagarna, uppdelat på en timme långa buckets och den lokala tid då det hände<br> * Antalet gånger som DirectQuery- och Live-anslutningar har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på tre minuter långa buckets<br> * De flesta gånger DirectQuery- och Live-anslutningar har överskridit 80 % under de senaste sju dagarna, uppdelat på en timme långa buckets och den lokala tid då det hände |
 | **Arbetsbelastningar för datauppsättningar** | * Totalt antal uppdateringar under de senaste sju dagarna<br> * Totalt antal lyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar på grund av minnesbrist<br> * Genomsnittlig uppdateringstid mätt i minuter, den tid det tar att slutföra åtgärden<br> * Genomsnittlig väntetid för uppdatering mätt i minuter, genomsnittlig fördröjning mellan den schemalagda tiden och åtgärdsstart<br> * Totalt antal frågor som körts under de senaste sju dagarna<br> * Totalt antal lyckade frågor under de senaste sju dagarna<br> * Totalt antal misslyckade frågor under de senaste sju dagarna<br> * Genomsnittlig frågetid mätt i minuter, den tid det tar att slutföra åtgärden<br> * Totalt antal modeller som tagits bort på grund av minnestryck |
 |  |  |
 
-### <a name="refreshes-tab"></a>Fliken Uppdaterar
+#### <a name="refreshes-area"></a>Området Uppdaterar
 
-Fliken **Uppdaterar** anger slutförda uppdateringar, lyckade mätningar, genomsnittlig/maximal väntetid för uppdaterings och genomsnittlig/maximal uppdateringstid per datauppsättning under de senaste sju dagarna. De två diagrammen längst ner visar uppdateringarna jämfört med minnesförbrukning i GB och genomsnittliga väntetider uppdelade i en timme långa buckets, rapporterat i lokal tid. De översta stapeldiagrammen anger de fem främsta datauppsättningarna efter den totala maximala tid som det tog att uppdatera datauppsättningen (uppdateringstid) och maximal väntetid för uppdateringen. Om det förekommer många toppar för väntan på uppdatering tyder det på att kapaciteten körs för hårt.
+![Knappen Uppdaterar](media/service-admin-premium-monitor-capacity/refreshes-button.png)
 
-![Uppdateringsrapport för Premium](media/service-admin-premium-monitor-capacity/premium-refresh-report.png)
+Området **Uppdaterar** anger slutförda uppdateringar, lyckade mätningar, genomsnittlig/maximal väntetid för uppdaterings och genomsnittlig/maximal uppdateringstid per datauppsättning under de senaste sju dagarna. De två diagrammen längst ner visar uppdateringarna jämfört med minnesförbrukning i GB och genomsnittliga väntetider uppdelade i en timme långa buckets, rapporterat i lokal tid. De översta stapeldiagrammen anger de fem främsta datauppsättningarna efter den genomsnittliga tiden som det tog att uppdatera datauppsättningen (uppdateringstid) och genomsnittlig väntetid för uppdateringen. Om det förekommer många toppar för väntan på uppdatering tyder det på att kapaciteten körs för hårt.
 
-### <a name="datasets-tab"></a>Fliken Datauppsättningar
+#### <a name="queries-area"></a>Området Frågor
 
-Fliken **Datauppsättningar** visar slutförda datauppsättningar som du vill ta bort på grund av minnestryck per timme.
+![Knappen Frågor](media/service-admin-premium-monitor-capacity/queries-button.png)
 
-![Datauppsättningsrapport för Premium](media/service-admin-premium-monitor-capacity/premium-datasets-report.png)
+Området **Frågor** innehåller listor med totalt antal körda frågor, totalt antal väntande live-frågor/direkta frågor, genomsnittlig/längsta varaktighet, genomsnittlig/längsta väntetid angivet i millisekunder uppdelat per datauppsättning, arbetsyta och tim-bucket under de senaste sju dagarna. De nedre diagrammen visar antalet frågor, genomsnittlig varaktighet (i millisekunder) och genomsnittlig väntetid (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i tim-buckets uttryckt i lokal tid. De två diagrammen överst till höger visar de fem populäraste datauppsättningarna med genomsnittlig frågevaraktighet och väntetiden för att slutföra frågorna. Lång frågevaraktighet och långa väntetider är en tydlig indikation på kapaciteten utsätts för mycket hög belastning. Det kan också innebära att en enskild datauppsättning orsakar problem och ytterligare utredning krävs.
+
+#### <a name="datasets-area"></a>Området Datamängder
+
+![Knappen Datamängd](media/service-admin-premium-monitor-capacity/datasets-button.png)
+
+Området **Datauppsättningar** visar slutförda datauppsättningar som du vill ta bort på grund av minnestryck per timme.
 
 ### <a name="system-tab"></a>Fliken System
 
-Fliken **System** visar hög CPU-användning (antalet gånger då 80% utnyttjande har överskridits), hög användning av DirectQuery- och Live-anslutningar och minnesförbrukning.
+Fliken **System** visar hög CPU-användning (antalet gånger då 80 % utnyttjande har överskridits), hög användning av direkta frågor/live-anslutningar och minnesförbrukning.
 
-![Systemrapport för Premium](media/service-admin-premium-monitor-capacity/premium-system-report.png)
+![Systemrapport för Premium](media/service-admin-premium-monitor-capacity/system-tab.png)
 
 ## <a name="monitor-power-bi-embedded-capacity"></a>Övervaka Power BI Embedded-kapacitet
 

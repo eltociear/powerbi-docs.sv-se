@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4264b10ac9ae42585ea8b814d0c15de7ea318752
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547153"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416807"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 
@@ -125,7 +125,7 @@ Det finns några begränsningar och saker för **knappbeskrivningar** som du bö
 
 * Från och med versionen av **Power BI Desktop** som släpptes i september 2018 blev knappbeskrivningar allmänt tillgängliga. Även visuella kortobjekt har stöd för knappbeskrivningar.
 * Från och med juli 2018-versionen av **Power BI Desktop** stöds visuella tabell- och matrisobjekt för knappbeskrivningar. 
-* Rapportknappbeskrivningar stöds inte vid visning av rapporter i mobilappar eller i inbäddade miljöer, inklusive Publicera på webben. 
+* Rapportknappbeskrivningar stöds inte vid visning av rapporter i mobilappar. 
 * Rapportknappbeskrivningar stöds inte för anpassade visuella objekt. 
 * Kluster stöds för närvarande inte som fält som kan visas i rapportknappbeskrivningar. 
 * När du väljer ett fält som ska visas för rapportknappbeskrivningar, när du använder ett fält jämfört med en kategori, visas endast den angivna knappbeskrivningen när sammanfattning med det valda fältet matchar i visuella objekt som innehåller det fältet. 

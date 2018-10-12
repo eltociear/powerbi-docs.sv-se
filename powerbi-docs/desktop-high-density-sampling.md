@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4540c00e4956e87e1c012dc2a35c00e61e00b5a6
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328154"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973941"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Högdensitetssampling av linjer i Power BI
 Från och med juni 2017-versionen av **Power BI Desktop** och uppdateringar av **Power BI-tjänsten** finns en ny samplingsalgoritm tillgänglig som förbättrar visuella objekt som samplar högdensitetsdata. Du kan till exempel skapa ett linjediagram från din återförsäljares försäljningsresultat för varje butik som har mer än tiotusen försäljningskvitton varje år. Ett linjediagram med sådan försäljningsinformation skulle sampla data (välja en meningsfull återgivning av dessa data som illustrerar hur försäljningen varierar över tid) från data för varje butik, samt skapa ett linjediagram med flera serier som därmed representerar underliggande data. Detta är vanligt vid visualisering av högdensitetsdata. Power BI Desktop har förbättrat sin sampling av högdensitetsdata, vilket beskrivs i den här artikeln.
@@ -24,8 +24,6 @@ Från och med juni 2017-versionen av **Power BI Desktop** och uppdateringar av *
 
 > [!NOTE]
 > Algoritmen för **högdensitetssampling** som beskrivs i den här artikeln är tillgänglig i både **Power BI Desktop** och **Power BI-tjänsten**.
-> 
-> 
 
 ## <a name="how-high-density-line-sampling-works"></a>Hur högdensitetssampling av linjer fungerar
 Tidigare valde **Power BI** en uppsättning samplade datapunkter från alla underliggande data på ett deterministiskt sätt. För högdensitetsdata som omfattar ett kalenderår kan det exempelvis finnas 350 samplade datapunkter i det visuella objektet, där alla har valts för att säkerställa att en fullständig uppsättning data (den övergripande serien med underliggande data) återges i det visuella objektet. För att förstå varför detta sker tänker vi oss att vi har ritat upp aktiekursen för ett år och valt 365 datapunkter för att skapa ett linjediagram (med en datapunkt för varje dag).
@@ -42,17 +40,25 @@ Vid visuella högdensitetsobjekt skapar **Power BI** utsnitt av dina data i segm
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Lägsta och högsta värden för visuella linjeobjekt med hög densitet
 Följande visuella begränsningar gäller för alla angivna visualiseringar:
 
-* **3 500** är det maximala antalet datapunkter som kan *visas* i ett visuellt objekt, oavsett antalet underliggande datapunkter eller serier. Så om du har 10 serier med 350 datapunkter i varje, har det visuella objektet uppnått den maximala gränsen för datapunkter. Om du har en serie kan den ha upp till 3 500 datapunkter om den nya algoritmen bedömer att det är den bästa samplingen för underliggande data.
+* **3 500** är det maximala antalet datapunkter som kan *visas* i de flesta visuella objekten, oavsett antalet underliggande datapunkter eller serier (se *undantagen* i nedanstående punktlista). Så om du har 10 serier med 350 datapunkter i varje, har det visuella objektet uppnått den maximala gränsen för datapunkter. Om du har en serie kan den ha upp till 3 500 datapunkter om den nya algoritmen bedömer att det är den bästa samplingen för underliggande data.
+
 * Det finns ett maxvärde på **60 serier** för alla visuella objekt. Om du har mer än 60 serier kan du dela upp data och skapa flera visuella objekt med 60 eller färre serier i varje. Det är bra att använda ett **utsnitt** till att endast visa segment av data (endast vissa serier). Om till exempel alla underkategorier visas i förklaringen, kan du använda ett utsnitt för att filtrera efter övergripande kategori på samma rapportsida.
+
+Maxdatagränsen är högre för följande visualiseringstyper, som är *undantag* från den övre gränsen på 3 500 datapunkter:
+
+* Max **150 000** datapunkter för R-visualiseringar.
+* **30 000** datapunkter för anpassade visuella objekt.
+* **10 000** datapunkter för punktdiagram (punktdiagram har 3 500 som standard).
+* **3 500** för alla andra visuella objekt.
 
 Dessa parametrar säkerställer att visuella objekt i Power BI Desktop återges mycket snabbt och är dynamiska vid interaktionen med användarna, samt inte leder till onödig extra belastning på den dator som återger det visuella objektet.
 
 ### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>Utvärdera representativa datapunkter för visuella linjeobjekt med hög densitet
-När antalet underliggande datapunkter överskrider det högsta antalet datapunkter som kan visas i det visuella objektet (överskrider 3 500), påbörjas en process som kallas *datagruppering*. Den segmenterar underliggande data i grupper som kallas *lagerplatser* och förfinar sedan dessa lagerplatser iterativt.
+När antalet underliggande datapunkter överskrider det högsta antalet datapunkter som kan visas i det visuella objektet, påbörjas en process som kallas *datagruppering*. Den segmenterar underliggande data i grupper som kallas *lagerplatser* och förfinar sedan dessa lagerplatser iterativt.
 
 Algoritmen skapar så många lagerplatser som det går för att ge största möjliga granularitet för det visuella objektet. Inom varje lagerplats hittar algoritmen det lägsta och högsta datavärdet, så att viktiga och betydande värden (till exempel avvikare) kan hämtas och visas i det visuella objektet. Baserat på resultatet av datagrupperingen och efterföljande utvärdering av data med Power BI, fastställs lägsta matchning för x-axeln i det visuella objektet för att säkerställa maximal granularitet för objektet.
 
-Som tidigare nämnts är den lägsta granulariteten för varje serie 350 punkter, och det maximala värdet är 3 500.
+Som tidigare nämnts är den lägsta kornigheten för varje serie 350 punkter – 3 500 är maxvärdet för de flesta visuella objekten, med de *undantag* som angavs i ovanstående stycken.
 
 Varje lagerplats representeras av två datapunkter, vilket blir den lagerplatsens representativa datapunkter i det visuella objektet. Datapunkterna är helt enkelt högsta och lägsta värdet på den lagerplatsen och genom att välja högst och lägst ser datagrupperingsprocessen till att alla viktiga höga eller låga värden samlas in och återges i det visuella objektet.
 

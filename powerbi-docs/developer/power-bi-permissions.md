@@ -2,44 +2,50 @@
 title: Power BI-behörigheter
 description: Power BI-behörigheter
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/05/2017
-ms.author: maghan
-ms.openlocfilehash: 4ba0e62dd8c9ba537f56c97489541591ec0bf2bc
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.date: 10/01/2018
+ms.openlocfilehash: 2ca9711ecfdc205fafe7210f99f2de26a8f6d6d6
+ms.sourcegitcommit: f391b645062f64ac3adc2ce7877318583b14b941
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34289428"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48016133"
 ---
 # <a name="power-bi-permissions"></a>Power BI-behörigheter
+
 ## <a name="permission-scopes"></a>Behörighetsomfattning
+
 Med Power BI:s behörigheter kan ett program vidta vissa åtgärder åt en användare. Alla behörigheter måste godkännas av användaren för att vara giltiga.
 
 | Visningsnamn | Beskrivning | Omfattningsvärde |
 | --- | --- | --- |
 | Visa alla datauppsättningar |Appen kan visa alla datauppsättningar för den inloggade användaren och datauppsättningar som användaren har åtkomst till. |Dataset.Read.All |
 | Läs och skriv till alla datauppsättningar |Appen kan visa och skriva till alla datauppsättningar för den inloggade användaren och de datauppsättningar som användaren har åtkomst till. |Dataset.ReadWrite.All |
-| Lägg till data i en användares datauppsättning (förhandsgranskning) |Ger en app åtkomst för att lägga till eller ta bort en användares datauppsättningsrader. Den här behörigheten ger inte appen åtkomst till användarens data. |Data.Alter_Any |
-| Skapa innehåll (förhandsgranskning) |Appen kan automatiskt skapa innehåll och datauppsättningar för en användare. |Content.Create |
+| Lägga till data i en användares datauppsättning |Ger en app åtkomst för att lägga till eller ta bort en användares datauppsättningsrader. Den här behörigheten ger inte appen åtkomst till användarens data. |Data.Alter_Any |
+| Skapa innehåll |Appen kan automatiskt skapa innehåll och datauppsättningar för en användare. |Content.Create |
 | Visa användarens grupper |Appen kan visa alla grupper som den inloggade användaren tillhör. |Group.Read |
 | Visa alla grupper |Appen kan visa alla grupper som den inloggade användaren tillhör. |Group.Read.All |
-| Visa alla instrumentpaneler (förhandsgranskning) |Appen kan visa alla instrumentpaneler för den inloggade användaren och de instrumentpaneler som användaren har åtkomst till. |Dashboard.Read.All |
-| Visa alla rapporter (förhandsgranskning) |Appen kan visa alla rapporter för den inloggade användaren och rapporter som användaren har åtkomst till. Appen kan också se data i rapporterna samt deras struktur. |Report.Read.All |
+| Läsa och skriva till alla grupper |Appen kan visa och skriva till den inloggade användarens alla grupper och de grupper som användaren har åtkomst till. |Group.ReadWrite.All |
+| Visa alla instrumentpaneler |Appen kan visa alla instrumentpaneler för den inloggade användaren och de instrumentpaneler som användaren har åtkomst till. |Dashboard.Read.All |
+| Visa alla rapporter |Appen kan visa alla rapporter för den inloggade användaren och rapporter som användaren har åtkomst till. Appen kan också se data i rapporterna samt deras struktur. |Report.Read.All |
 | Läsa och skriva till alla rapporter |Appen kan visa och skriva till alla rapporter för den inloggade användaren och de rapporter som användaren har åtkomst till. Detta ger inte behörighet att skapa en ny rapport. |Report.ReadWrite.All |
+| Läsa och skriva till alla kapaciteter |Appen kan visa och skriva till den inloggade användarens alla kapaciteter och de kapaciteter som användaren har åtkomst till. Detta ger inte behörighet att skapa en ny kapacitet. |Capacities.ReadWrite.All |
+| Läsa alla kapaciteter |Appen kan visa och skriva till den inloggade användarens alla kapaciteter och de kapaciteter som användaren har åtkomst till. Detta ger inte behörighet att skapa en ny kapacitet. |Capacities.Read.All |
+| Läsa och skriva allt innehåll i klienten |Appen kan visa och skriva till alla artefakter, till exempel grupper, rapporter, instrumentpaneler och datamängder i Power BI. Förutsatt att den inloggade användaren är en Power BI-tjänstadministratör. |Tenant.ReadWrite.All |
+| Visa allt innehåll i klienten |Appen kan visa alla artefakter, till exempel grupper, rapporter, instrumentpaneler och datamängder i Power BI. Förutsatt att den inloggade användaren är en Power BI-tjänstadministratör. |Tenant.Read.All |
 
 Ett program kan begära behörighet när den först försöker logga in på en användares sida genom att skicka begärda behörigheter i omfattningsparametern för anropet. Om behörigheten beviljas returneras en åtkomsttoken till appen som kan användas på framtida API-anrop. Åtkomsten kan endast användas med ett visst program.
 
 > [!NOTE]
 > Power BI-API:er refererar fortfarande till apparbetsytor som grupper. Alla referenser till grupper innebär att du arbetar med apparbetsytor.
-> 
-> 
 
 ## <a name="requesting-permissions"></a>Begära behörighet
+
 Även om du kan anropa API:n för att autentisera med ett användarnamn och lösenord för att vidta åtgärder åt en annan användare, kommer de att behöva begära behörighet som användaren sedan godkänner och sedan skicka resulterande åtkomsttoken för alla framtida anrop. För den här processen följer vi standardprotokollet [OAuth 2.0](http://oauth.net/2/). Även om den faktiska implementeringen kan variera har flödet för OAuth för Power BI följande element:
 
 * **Inloggnings-UI** – Detta är ett gränssnitt som utvecklare kan använda för att begära behörighet. Det kräver att användaren loggar in om den inte redan gjort det. Användaren måste också godkänna de behörigheter som programmet begär. Inloggningsfönstret skickar antingen tillbaka en åtkomstkod eller ett felmeddelande till en omdirigerings-URL som har angetts.
@@ -49,4 +55,3 @@ Ett program kan begära behörighet när den först försöker logga in på en a
 * **Uppdateringstoken** – När tokens upphör sker en process för att uppdatera dem.
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-
