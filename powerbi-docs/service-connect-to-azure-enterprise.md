@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7425e194bd6bda51442a128d146fb4061a77af81
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 93e1534af258a11a7af0f95b179653a1d8e54307
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34243205"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544657"
 ---
 # <a name="connect-to-microsoft-azure-enterprise-with-power-bi"></a>Anslut till Microsoft Azure Enterprise med Power BI
 Utforska och övervaka dina Microsoft Azure Enterprise-data i Power BI med Power BI-innehållspaketet. Data uppdateras automatiskt en gång per dag.
@@ -44,12 +44,12 @@ Anslut till [Microsoft Azure Enterprise-innehållspaketet](https://app.powerbi.c
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
-* [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten.
+* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
-## <a name="whats-included"></a>Vad ingår
+## <a name="whats-included"></a>Det här ingår
 Azure Enterprise-innehållspaketet innehåller månatliga rapporteringsdata för det antal månader som du anger under anslutningsflödet. Intervallet är rörligt så datumen som ingår uppdateras när datauppsättningen uppdateras.
 
 ## <a name="system-requirements"></a>Systemkrav

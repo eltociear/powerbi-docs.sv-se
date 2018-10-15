@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657976"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549924"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -132,7 +132,7 @@ När du använder funktionen **Visa** för bokmärken gäller följande:
 
 * Om det valda bokmärket finns i en grupp när du väljer **Visa** från bokmärken, visas endast bokmärkena *i den gruppen* i visningssessionen. 
 
-* Om det valda bokmärket inte finns en grupp, eller om det finns på den högsta nivån (till exempel namnet på en bokmärkesgrupp), visas alla bokmärken för hela rapporten, inklusive alla bokmärken i alla grupper. 
+* Om det valda bokmärket inte finns i en grupp, eller om det finns på den högsta nivån (till exempel namnet på en bokmärkesgrupp), visas alla bokmärken för hela rapporten, inklusive alla bokmärken i alla grupper. 
 
 Om du vill dela upp en bokmärkesgrupp markerar du bara valfritt bokmärke i gruppen, klickar på ellipserna och väljer sedan **Dela upp grupp** på menyn som visas. 
 
@@ -182,5 +182,5 @@ Det finns några begränsningar och saker du bör tänka på för den här versi
 Mer information om liknande funktioner eller funktioner som interagerar med bokmärken finns i följande artiklar:
 
 * [Använd detaljinformation i Power BI Desktop](desktop-drillthrough.md)
-* [Visa instrumentpanelen eller rapportvisualiseringen i läget Fokus](service-focus-mode.md)
+* [Visa instrumentpanelen eller rapportvisualiseringen i läget Fokus](consumer/end-user-focus.md)
 

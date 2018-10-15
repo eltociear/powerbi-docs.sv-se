@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 363bcae5a1bcc70d90cdb71f8a1ac2e2372b93e2
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d265e465825fb8def167207ed632f1702adcbc7f
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44744895"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973642"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Visa rapporter i presentationsläge på Surface Hub och i Windows 10 – Power BI
 Du kan visa rapporter i presentationsläge på Surface Hub och visa instrumentpaneler, rapporter och paneler i helskärmsläge på Windows 10-enheter. 

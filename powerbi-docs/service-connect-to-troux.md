@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dbf3831264a354ec96a38751dfa7a3719c5c9f2a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: ccb7828bf22f364ae0982d5c80a17b075bb5b143
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247951"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549591"
 ---
 # <a name="connect-to-troux-for-power-bi"></a>Ansluta till Troux för Power BI
 Med Troux-innehållspaketet kan du visualisera dina företagsarkitekturscentrallager på ett helt nytt sätt direkt i Power BI. Innehållspaketet ger dig flera insikter om dina företagsfunktioner, de program som innehåller dessa funktioner och de tekniker som stöder program som kan anpassas helt med hjälp av Power BI.
@@ -44,10 +44,10 @@ Anslut till [Troux-innehållspaketet](https://app.powerbi.com/getdata/services/t
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
-* [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten.
+* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
 ## <a name="system-requirements"></a>Systemkrav
 Åtkomst till Troux OData-flödet och Troux 9.5.1 eller högre krävs.

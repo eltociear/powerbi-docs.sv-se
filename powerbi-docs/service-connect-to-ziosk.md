@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2c5fc1f8763b8360d7cd5a6f6605d6b4f3d5df3c
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 4b47e620c0469ed56a7afb413a5775cf2a34c4d4
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135661"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546572"
 ---
 # <a name="connect-to-ziosk-survey-analytics-with-power-bi"></a>Anslut till Ziosk Survey Analytics med Power BI
 Innehållspaketet Ziosk Survey Analytics för Power BI erbjuder restauranger med Ziosk-surfplattor ojämförbar tillgång till insikter från Ziosk-undersökningsdata, inklusive segmentering efter dag, plats, medarbetare och mer.
@@ -43,12 +43,12 @@ Anslut till [innehållspaketet Ziosk Survey Analytics](https://app.powerbi.com/g
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
-* [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten.
+* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
-## <a name="whats-included"></a>Vad ingår
+## <a name="whats-included"></a>Det här ingår
 Innehållspaketet inkluderar data från följande tabeller:  
 
     - Alkoholkategori  
@@ -73,5 +73,5 @@ Ett Ziosk-konto med behörigheter till ovanstående tabeller krävs för att ska
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Power BI – grundläggande begrepp](service-basic-concepts.md)
+[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 

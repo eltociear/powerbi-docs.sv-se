@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dda983aec42731aa885323749d9302db75066569
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 5cd858ad14c1a5fcf76ddf23dafdac2bb5585b10
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136788"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548268"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
 Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. När du skapar den här anslutningen, hämtas dina data och ger dig automatiskt en instrumentpanel och relaterade rapporter baserade på dina data.
@@ -56,14 +56,16 @@ Ansluta till [Salesforce-innehållspaketet](https://app.powerbi.com/getdata/serv
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-Du kan ändra den här instrumentpanelen till att visa dina data på det sätt som du vill. Du kan ställa frågor med frågor och svar eller klicka på en panel för att [öppna den underliggande rapporten](service-dashboard-tiles.md) och [ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelen.
+Du kan ändra den här instrumentpanelen till att visa dina data på det sätt som du vill. Du kan ställa frågor med frågor och svar eller klicka på en panel för att [öppna den underliggande rapporten](consumer/end-user-tiles.md) och [ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelen.
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
-* [Ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
+* [Ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelens <<<<<<< Huvud
+* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten =======
 * [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten
-* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+>>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
+* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
 ## <a name="system-requirements-and-considerations"></a>Systemkrav och aspekter
 - Ansluten med ett Salesforce-konto för produktion som har API-åtkomst aktiverat

@@ -1,6 +1,6 @@
 ### <a name="what-now"></a>Vad händer nu?
-* Prova att [ställa en fråga i rutan Frågor och svar](../power-bi-q-and-a.md) överst på instrumentpanelen.
-* [Välj en panel](../service-dashboard-tiles.md) för att öppna den underliggande rapporten.
+* Prova att [ställa en fråga i rutan Frågor och svar](../consumer/end-user-q-and-a.md) överst på instrumentpanelen.
+* [Välj en panel](../consumer/end-user-tiles.md) för att öppna den underliggande rapporten.
 * Du kan filtrera och markera data i rapporten, men du kan inte spara dina ändringar.
-* Datauppsättningen har schemalagts för att uppdateras dagligen. Du kan ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+* Din datauppsättning har schemalagts att uppdateras dagligen. Du kan ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
 

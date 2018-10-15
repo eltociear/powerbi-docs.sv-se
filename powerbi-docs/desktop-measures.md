@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: fad623b9472e2992ddb0a6d43cb8d669a1f14cf7
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: d4b0ad34d200e3d94c60c7e3a3f524a3f3ed09cf
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658137"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550016"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mått i Power BI Desktop
 
@@ -43,7 +43,7 @@ DAX-formler påminner mycket om Excel formler. DAX stöder dessutom många av fu
 ## <a name="lets-look-at-an-example"></a>Låt oss ta en titt på ett exempel
 Jan är försäljningschef på Contoso. Hon har blivit ombedd att ange försäljningsprognoser för återförsäljare under nästa räkenskapsår. Jan bestämmer sig för att basera sina uppskattningar på förra årets försäljningssiffror, med sex procents årlig ökning från olika kampanjer som är inplanerade under de kommande sex månaderna.
 
-För att rapportera uppskattningarna importerar hon fjolårets säljdata till Power BI Desktop. Hon hittar fältet SalesAmount i tabellen Reseller Sales. Eftersom de data som hon har importerat endast innehåller försäljningssiffror för det senaste året ändrar hon namn på fältet SalesAmount till Förra årets försäljning. Sedan drar hon Förra årets försäljning till rapportarbetsytan. Den visas i ett diagram som ett enda värde, vilket är summan av alla återförsäljares försäljning förra året.
+För att rapportera uppskattningarna importerar hon fjolårets säljdata till Power BI Desktop. Hon hittar fältet SalesAmount i tabellen Reseller Sales. Eftersom de data som hon har importerat endast innehåller försäljningssiffror för det senaste året, ändrar Jan namnet på fältet SalesAmount till Förra årets försäljning. Sedan drar hon Förra årets försäljning till rapportarbetsytan. Den visas i ett diagram som ett enda värde, vilket är summan av alla återförsäljares försäljning förra året.
 
 Hon observerar att en beräkning har angetts automatiskt, trots att hon inte har specificerat någon. Power BI Desktop skapade ett eget mått genom att addera alla värden i Förra årets försäljning.
 

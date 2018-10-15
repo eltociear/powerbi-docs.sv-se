@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c69b73be481408884cc4fbfc5ae4987714b10d9d
-ms.sourcegitcommit: 60f637d8555fd59fd9a86de720b89b388fb85ac0
+ms.openlocfilehash: cfa25a28490a2254bd19bb431beea0ebc14d3c56
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43695120"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549763"
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Anslut till Microsoft Dynamics Marketing med Power BI
 Innehållspaketet Microsoft Dynamics Marketing för Power BI låter dig enkelt komma åt och analysera dina data från Dynamics Marketing. Innehållspaketet använder sig av en beskrivande modell ovanpå OData-flödet, med alla enheter och mått som behövs, till exempel program, kampanjer, marknadsföringskontakter och företag, leads, lead-interaktioner och lead-bedömning, marknadsföringsmail och webbplatser, beteendeobservationer, budgetar, finansiella transaktioner, prestanda-KPI:er och mycket mer. 
@@ -47,10 +47,10 @@ Anslut till [Innehållspaketet Dynamics Marketing](https://app.powerbi.com/getda
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
-* [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten.
+* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
 ## <a name="system-requirements"></a>Systemkrav
 * Du måste ange en giltig OData-URL för en Dynamics Marketing-instans (innehållspaketet fungerar inte med en lokal CRM-version).  

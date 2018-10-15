@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6f914a031c70c68703116083f42885e2fe79cf30
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5db91d037ae32f43fe703bdc7e589a1ec5a295ca
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247905"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547624"
 ---
 # <a name="connect-to-sparkpost-with-power-bi"></a>Anslut till SparkPost med Power BI
 Power BI-innehållspaketet för SparkPost låter dig extrahera värdefulla datauppsättningar från ditt SparkPost-konto i en insiktsfull instrumentpanelen. Med SparkPost-innehållspaketet kan du visualisera din totala e-poststatistik, inklusive domäner, kampanjer och engagemang efter Internetleverantör.
@@ -41,12 +41,12 @@ Anslut till [SparkPost-innehållspaketet](https://app.powerbi.com/getdata/servic
 
 **Och sedan?**
 
-* Prova att [ställa en fråga i rutan Frågor och svar](power-bi-q-and-a.md) överst på instrumentpanelen
+* Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
 * [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
-* [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten.
-* Även om din datauppsättning är schemalagd för att uppdateras dagligen, kan du ändra uppdateringsschemat eller försöka uppdatera den på begäran med **Uppdatera nu**.
+* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten.
+* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
-## <a name="whats-included"></a>Vad ingår
+## <a name="whats-included"></a>Det här ingår
 SparkPost-innehållspaketet för Power BI innehåller information, bland annat unika klick, godkända priser, acceptansfrekvens, fördröjningsfrekvens, avvisningsfrekvens och mycket mer.
 
 <a name="FindingParams"></a>

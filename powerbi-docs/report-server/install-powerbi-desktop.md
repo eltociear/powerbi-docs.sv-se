@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/24/2018
+ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: d3b7ace4fe611cc55965f96f770caf7b4ebf21b1
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c65b945260357b0679f8fdb83c534aac53481126
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726396"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46564795"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 Lär dig att installera Power BI Desktop som har optimerats för Power BI-rapportservern.
@@ -31,7 +31,7 @@ Det enklaste sättet att se till att du har den senaste versionen av Power BI De
 
     ![Hämta Power BI Desktop från webbportalen](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Eller så du kan gå direkt till [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimerad för Power BI-rapportserver – mars 2018) i Microsoft Download Center.
+    Eller så du kan gå direkt till [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (optimerad för Power BI-rapportserver – augusti 2018) i Microsoft Download Center.
 
 2. På sidan Download Center väljer du **Hämta**.
 
@@ -41,7 +41,8 @@ Det enklaste sättet att se till att du har den senaste versionen av Power BI De
 
     - **PBIDesktopRS_x64.msi** (64-bitarsversionen).
 
-1. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop (oktober 2017).
+1. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop (augusti 2018).
+
 2. I slutet av installationen, markerar du **Starta Power BI Desktop nu**.
    
     Det startar automatiskt och du är redo att sätta igång.
@@ -49,7 +50,7 @@ Det enklaste sättet att se till att du har den senaste versionen av Power BI De
 ## <a name="verify-you-are-using-the-correct-version"></a>Kontrollera att du använder rätt version
 Du kan kontrollera att du använder rätt version av Power BI Desktop genom att titta på startskärmen eller namnlisten i Power BI Desktop. Namnlisten visar lanseringsmånad och år för versionen.
 
-![Namnlist för Power BI Desktop optimerad för Power BI-rapportserver](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
+![Namnlist för Power BI Desktop optimerad för Power BI-rapportserver](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
 
 Power BI Desktop-versionen för Power BI-tjänsten har inte månaden och året i namnlisten.
 
@@ -63,7 +64,7 @@ Du kan alltid öppna den version av Power BI Desktop som du vill använda först
 När du redigerar en Power BI-rapport från Power BI-rapportservern eller skapar en ny Power BI-rapport från webbportalen öppnas alltid rätt version av Power BI Desktop.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
-Rapporter i Power BI-rapportserver och i Power BI-tjänsten (http://powerbi.com) fungerar nästan likadant, men några funktioner skiljer sig).
+Power BI-rapporter i Power BI-rapportserver, i Power BI-tjänsten (http://app.powerbi.com) och i Power BI-mobilappen fungerar nästan likadant men några funktioner skiljer sig).
 
 ### <a name="in-a-browser"></a>I en webbläsare
 Rapporter i Power BI-rapportservern har stöd för alla visualiseringar, inklusive:
@@ -80,9 +81,9 @@ Rapporter i Power BI-rapportservern stöder inte:
 ### <a name="in-the-power-bi-mobile-apps"></a>I Power BI-mobilappar
 Rapporter i Power BI-rapportservern stöder alla de grundläggande funktionerna i [Power BI-mobilappar](../consumer/mobile/mobile-apps-for-mobile-devices.md), inklusive:
 
-* [Telefonrapportlayout](../desktop-create-phone-report.md): Du kan optimera en rapport för Power BI-mobilappar. Optimerade rapporter på din mobiltelefon har en särskild ikon, ![telefonrapportlayout-ikonen](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png) och layout.
+* [Telefonrapportlayout](../desktop-create-phone-report.md): Du kan optimera en rapport för Power BI-mobilappar. Optimerade rapporter på din mobiltelefon har en särskild ikon, ![telefonrapportlayout-ikonen](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png) och layout.
   
-    ![Rapport optimerad för telefoner](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+    ![Rapport optimerad för telefoner](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
 Rapporter i Power BI-rapportservern stöder inte de här funktionerna i Power BI-mobilappar:
 
