@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 10/16/2018
 ms.author: mihart
-ms.openlocfilehash: a312a4311590d02d0fa8bd97726f9cf596cfe6a0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 2c7a9d5f6bdbbfff905f3faa8cec255c2b85a0d5
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545784"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396820"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagera med ArcGIS-kartor i Power BI
 Det här avsnittet skrivs utifrån perspektivet för en person som *använder* en ArcGIS-karta i Power BI-tjänsten, Desktop eller i en mobil lösning. När en skapare har delat en ArcGIS-karta med dig, finns det många sätt att interagera med den.  Mer information om hur du skapar en ArcGIS-karta finns i [självstudierna om ArcGIS-kartor från Esri](../power-bi-visualization-arcgis.md).
@@ -57,7 +57,7 @@ Du kan välja tre lägen i ArcGIS Maps för Power BI. Du kan välja högst 250 d
 ## <a name="interacting-with-an-arcgis-map"></a>Interagera med en ArcGIS-karta
 Vilka funktioner som är tillgängliga beror på om du är *skaparen* (personen som gjort kartan) eller *konsumenten* (någon har delat en ArcGIS-karta med dig). Om du interagerar med en ArcGIS-karta som konsument (det vill säga i [Läsvyn](../consumer/end-user-reading-view.md)), kan du utföra följande åtgärder.
 
-* Som med andra visualiseringstyper kan du [fästa kartan på instrumentpaneler](../service-dashboard-pin-tile-from-report.md), [visa](../consumer/end-user-show-data.md) och/eller [exportera underliggande data](../consumer/end-user-export-data.md) och visa den i [Fokusläge](../consumer/end-user-focus.md) och [Helskärm](../service-fullscreen-mode.md).    
+* Som med andra visualiseringstyper kan du [fästa kartan på instrumentpaneler](../service-dashboard-pin-tile-from-report.md), [visa](../consumer/end-user-show-data.md) och/eller [exportera underliggande data](power-bi-visualization-export-data.md) och visa den i [Fokusläge](../consumer/end-user-focus.md) och [Helskärm](../service-fullscreen-mode.md).    
 * Expandera panelen **Filter** för att utforska kartan med hjälp av filter. När du stänger rapporten sparas inte filtren som du använde.    
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Om kartan har ett referensskikt kan du välja platser där du vill visa detaljer i en knappbeskrivning. Här har vi valt Adams County för att visa data från referensskiktet för den genomsnittliga hushållsinkomsten som skaparen har lagts till i kartan.

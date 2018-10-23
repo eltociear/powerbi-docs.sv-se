@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2018
+ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909186"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396760"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -212,7 +212,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Stöd för Frågor och svar i Power BI för tabellmodeller i SQL Server 2016 Analys Server](consumer/end-user-q-and-a-direct-query.md): Vi är glada över att meddela förbättringar av Frågor och svar i Power BI och början på en offentlig förhandsversion av Frågor och svar för Power BI för datakällor som är kopplade till enterprise-gateway. Vi börjar med stöd för tabellmodeller i SQL Server 2016 Analys Server. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Stöd för Frågor och svar i Power BI för tabellmodeller i SQL Server 2016 Analys Server](service-q-and-a-direct-query.md): Vi är glada över att meddela förbättringar av Frågor och svar i Power BI och början på en offentlig förhandsversion av Frågor och svar för Power BI för datakällor som är kopplade till enterprise-gateway. Vi börjar med stöd för tabellmodeller i SQL Server 2016 Analys Server. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Stöd för lokala filer för Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): du kan nu ladda upp dina Excel-filer från din lokala enhet eller andra lagringstjänster och använda den Excel-rapporten precis som i Excel Online, fast med fördelarna hos Power BI. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28 april 2016**

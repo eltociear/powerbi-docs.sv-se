@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Connect to services
-ms.openlocfilehash: add6a02d10c2dfe0e0fd93b9d12f03a10d057241
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 8d8446f231d1de3527d5371a55542641c29cca83
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908220"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435291"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Ansluta till de tjänster du använder med Power BI
 
@@ -60,7 +60,7 @@ Använder du en tjänst som du vill föreslå för Power BI-appen? Gå till [Pow
 Har du en tjänst som du vill skapa en app för? [Skicka in din kandidat](https://azure.microsoft.com/marketplace/programs/certified/apply/) och välj ”Publicera ett Power BI-innehållspaket” för att komma igång.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](../service-install-use-apps.md)
+* [Vad är appar i Power BI?](end-user-apps.md)
 * [Hämta data i Power BI](../service-get-data.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2085f1ca852839c27c4943872e5f5ddb248e8638
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908910"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641400"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Ansluta till Microsoft Dynamics NAV med Power BI
 Att få insikter i dina data med Microsoft Dynamics NAV är enkelt med Power BI. Power BI hämtar dina data, både försäljning och ekonomi, och skapar sedan en app med en instrumentpanel och rapporter baserade på dessa data. Power BI behöver dina behörigheter till de tabeller data hämtas från, i det här fallet försäljnings- och ekonomirelaterade data. Mer information om kraven finns nedan. När du har installerat appen kan du visa instrumentpanelen och rapporterna i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och i Power BI-mobilapparna. 
@@ -29,7 +29,7 @@ Att få insikter i dina data med Microsoft Dynamics NAV är enkelt med Power BI.
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
 4. Ange din Microsoft Dynamics NAV OData-URL när du uppmanas till detta. URL:en ska matcha följande mönster:
    
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
    * ”instance.navserver.com” med ditt NAV-servernamn
    * ”DynamicsNAV90\_Instance1” med namnet på din NAV-serverinstans
@@ -72,7 +72,7 @@ Om du ser det här felet efter att ha skrivit din Microsoft Dynamics NAV-URL. Ko
 
 * URL:en följer exakt detta mönster:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
   
   * ”instance.navserver.com” med ditt NAV-servernamn
   * ”DynamicsNAV90\_Instance1” med namnet på din NAV-serverinstans
@@ -92,11 +92,11 @@ Om du ser en ”Hoppsan!”-dialogruta när du använder dialogrutan för autent
 
 * Verifiera att URL:en följer mönstret som angetts ovan. Ett vanligt fel är att man anger:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
   
     Du måste dock inkludera avsnittet 'Company('CRONUS%20International%20Ltd.')' med NAV-företagets namn:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Nästa steg
 * [Vad är appar i Power BI?](service-create-distribute-apps.md)

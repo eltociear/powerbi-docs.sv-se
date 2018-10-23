@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f15bd3395ad9edc39589a0a5b1563cfcc00e2c3c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6cd667a81a743a0b074155e0e16a49178157bc6c
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547898"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396507"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Så här får du dina Excel-data att fungera bra med frågor och svar i Power BI
 Om du är en person som skapar datamodeller eller bygger Excel-arbetsböcker som ska användas med Power BI kan du läsa på...
@@ -45,7 +45,7 @@ Här får du några tips om hur du kan utnyttja Frågor och svar på bästa sät
 
 ## <a name="next-steps"></a>Nästa steg
 Gå tillbaka till [Frågor och svar i Power BI](consumer/end-user-q-and-a.md)  
-[Förbered lokala datauppsättningar för frågor och svar](consumer/end-user-q-and-a-direct-query.md)   
+[Förbered lokala datauppsättningar för frågor och svar](service-q-and-a-direct-query.md)   
 [Snabbstart för frågor och svar](power-bi-visualization-introduction-to-q-and-a.md)  
 [Hämta data (för Power BI)](service-get-data.md)  
 

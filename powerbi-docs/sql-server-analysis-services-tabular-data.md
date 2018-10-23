@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 668db107087420ceeabbe68325ee6c67dc69e524
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 86dabdb84dd4ca949930c25213f554060135f10a
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547210"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396645"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>SQL Server Analysis Services-realtidsdata i Power BI
 Det finns två sätt att ansluta till en SQL Server Analysis Services-realtidsserver i Power BI. I **hämta data**, kan du ansluta till en SQL Server Analysis Services-server, eller så kan du ansluta till en [Power BI Desktop-fil](service-desktop-files.md), eller [Excel-arbetsbok](service-excel-workbook-files.md) som redan ansluter till en Analysis Services-server. Som bästa praxis rekommenderar Microsoft användning av Power BI Desktop på grund av den kompletta verktygsuppsättningens och möjligheten att upprätthålla en säkerhetskopia av Power BI Desktop-filen lokalt.
@@ -23,7 +23,7 @@ Det finns två sätt att ansluta till en SQL Server Analysis Services-realtidsse
  >[!IMPORTANT]
  >* Om du vill ansluta till en Analysis Services-realtidsserver, måste en lokal datagateway installeras och konfigureras av en administratör. Mer information finns i [lokal datagateway](service-gateway-onprem.md).
  >* När du använder gatewayen, blir dina data kvar lokalt.  Alla rapporter du skapar baserat på dessa data, sparas i Power BI-tjänsten. 
- >* [Frågor och svar frågor med naturligt språk](consumer/end-user-q-and-a-direct-query.md) är i förhandsvisning för Analysis Services-realtidsanslutningar.
+ >* [Frågor och svar frågor med naturligt språk](service-q-and-a-direct-query.md) är i förhandsvisning för Analysis Services-realtidsanslutningar.
 
 ## <a name="to-connect-to-a-model-from-get-data"></a>Om du vill ansluta till en modell från hämta data
 1. I **min arbetsyta** väljer du **hämta data**. Du kan också ändra till en grupparbetsyta om det finns en.

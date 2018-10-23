@@ -2,8 +2,6 @@ Välkommen till avsnittet **Publicera och dela** i den **interaktiva utbildninge
 
 Nu när du har lärt dig hur Excel och Power BI fungerar tillsammans och du har lärt dig vilka visuella objekt du kan skapa i rapporter och instrumentpaneler, vill du förmodligen dela dem med dina medarbetare och vänner. Med Power BI är det enkelt att **Publicera och dela**.
 
-I det här avsnittet visar vi hur lätt det är att hämta Excel-arbetsböcker till Power BI och hur väl Power BI och Excel fungerar tillsammans.
-
 ## <a name="share-and-collaborate-with-colleagues-in-power-bi"></a>Dela och samarbeta med arbetskamrater i Power BI
 *Bekanta dig med de verktyg som gör det enkelt att dela och samarbeta med Power BI*
 
