@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256042"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336885"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -61,6 +61,8 @@ Dessa hjälpmedelstillägg har skapats så att användarna kan använda Power BI
 ## <a name="tips-for-creating-accessible-reports"></a>Tips för att skapa rapporter med hjälpmedel
 Följande tips kan hjälpa dig att skapa mer tillgängliga **Power BI Desktop**-rapporter.
 
+### <a name="general-tips-for-accessible-reports"></a>Allmänna tips för rapporter med hjälpmedel
+
 * För **linjediagram**, **ytdiagram**, och **kombinationsdiagram** visuella, samt **punktdiagram** och **bubbeldiagram** kan du aktivera markörer och använda olika *markörer* för varje rad.
   
   * Aktivera *markörer* genom att välja området **Format** i rutan**Visuella objekt**, expandera området **Former** och rulla ned till **Markörer** och ändra dem till *På*.
@@ -80,6 +82,13 @@ Följande tips kan hjälpa dig att skapa mer tillgängliga **Power BI Desktop**-
 * Inkludera en rubrik, axeletiketter och dataetiketter i all visuell information.
 * Använd beskrivande rubriker för alla rapportsidor.
 * Undvik dekorativa former och bilder i rapporten om det är möjligt, eftersom de ingår i rapportens tabbordning. Om du behöver inkludera dekorativa objekt i rapporten kan du uppdatera objektets alternativa text så att användare av skärmläsare vet att de används i dekorationssyfte.
+
+### <a name="arranging-items-in-field-buckets"></a>Ordna objekt i Fält-buckets
+Från och med oktober 2018-versionen av **Power BI Desktop**, kan brunnen **fält** även navigeras i med ett tangentbord och interagerar med skärmläsare. 
+
+För att förbättra processen med att skapa rapporter med skärmläsare, är en snabbmeny tillgänglig för att tillåta flyttning av fält i brunnen uppåt eller nedåt i listan **fält** eller flytta fältet till andra källor, till exempel **förklaring**eller **värde** eller andra.
+
+![Via snabbmenyn i brunnen Fält kan också du flytta fält upp, ned eller till ett annat område](media/desktop-accessibility/accessibility_09.png)
 
 ## <a name="high-contrast-support-for-reports"></a>Stöd för hög kontrast med rapporter
 

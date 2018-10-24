@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 161ea8f20db36c129787e84242ea002980d0f8dd
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: df4afe91de955eabfba6eeea9022cc5f9475cc33
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565876"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336862"
 ---
 # <a name="using-slicers-power-bi-desktop"></a>Använda utsnitt i Power BI Desktop
 
@@ -65,6 +65,12 @@ Du kan också använda ett **gruppnamn** för en samling utsnitt i avsnittet **A
 Med den här funktionen kan du skapa en anpassad grupp med utsnitt som ska synkroniseras. Ett standardnamn anges, men du kan använda valfritt namn som du föredrar. 
 
 Gruppnamnet ger ytterligare flexibilitet när du arbetar med utsnitt. Du kan skapa separata grupper om du vill synkronisera utsnitt som använder samma fält, eller om du vill placera utsnitt som använder olika fält i samma grupp. 
+
+## <a name="how-filtering-affects-selection-in-slicers"></a>Hur filtrering påverkar val i utsnitt
+
+Om du gör ett val i ett utsnitt och sedan använder ett filter som normalt skulle ta bort det valda objektet, förblir det längst ned i listan över objekt i utsnittet. Om filtret tas bort, är markeringen kvar i utsnittet. Lägg märke till att om du avmarkerar alternativet från utsnittet försvinner det från listan.
+
+![behållna val i utsnitt](./media/desktop-slicers/retained-selection-in-slicers.gif)
 
 
 ## <a name="next-steps"></a>Nästa steg

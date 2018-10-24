@@ -3,18 +3,18 @@ title: Bädda in Power BI-innehåll i ett program för dina kunder
 description: Lär dig att integrera eller bädda in en rapport, instrumentpanel eller panel i en webbapp med hjälp av Power BI-API:er för dina kunder.
 author: markingmyname
 ms.author: maghan
-ms.date: 06/20/2018
+manager: kfile
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
-ms.openlocfilehash: 3cb33180c24022c1e328691ce3a776875d4c87a9
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 06/20/2018
+ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
+ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238133"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48827443"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Självstudie: Bädda in en Power BI-rapport, instrumentpanel eller panel till ett program för dina kunder
 
@@ -57,7 +57,7 @@ Du kan registrera din app med Azure Active Directory så att ditt program får �
     ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Ny appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Följ anvisningarna och skapa ett nytt program. För appar som äger data måste du använda **Inter** som programtyp. Du måste också ange ett **omdirigerings-URI** som **Azure AD** använder för att returnera tokensvar. Ange ett specifikt värde för ditt program (till exempel: `http://localhost:13526/Redirect`).
+4. Följ anvisningarna och skapa ett nytt program. För appar som äger data måste du använda **Intern** som programtyp. Du måste också ange ett **omdirigerings-URI** som **Azure AD** använder för att returnera tokensvar. Ange ett specifikt värde för ditt program (till exempel: `http://localhost:13526/Redirect`).
 
     ![Skapa app](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
@@ -76,7 +76,7 @@ Du måste aktivera ytterligare behörigheter för ditt program utöver vad som f
     ![Nödvändiga behörigheter](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Välj **Windows Azure Active Directory** och kontrollera att **Åtkomst till katalogen som den inloggade användaren** är markerad. Välj **Spara**.
-   
+
     ![Windows Azure AD-behörigheter](media/embed-sample-for-customers/embed-sample-for-customers-011.png)
 
 4. Välj **Lägg till**.
@@ -92,13 +92,13 @@ Du måste aktivera ytterligare behörigheter för ditt program utöver vad som f
     ![Välj PBI-tjänster](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
 7. Välj alla behörigheter under **Delegerade behörigheter**. Du måste välja dem separat för valen ska sparas. Välj **Spara** när du är klar.
-   
+
     ![Välj delegerade behörigheter](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
 8. Inom **Nödvändiga behörigheter** väljer du **Bevilja behörigheter**.
-   
+
     Åtgärden **Bevilja behörigheter** krävs för *huvudkontot*. Annars kommer du att tillfrågas av Azure AD. Om kontot som utför den här åtgärden är en global administratör beviljar du behörighet till alla användare i din organisation för den här appen. Om kontot som utför den här åtgärden är *huvudkontot* och inte en global administratör beviljar du endast behörighet till *huvudkontot* för den här appen.
-   
+
     ![Bevilja behörigheter med dialogrutan](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
@@ -277,6 +277,7 @@ var embedConfig = new EmbedConfig()
 Detta förutsätter att en klass skapas för **EmbedConfig** och **TileEmbedConfig**. Ett exempel på dessa finns i filerna **Models\EmbedConfig.cs** och **Models\TileEmbedConfig.cs**.
 
 ### <a name="load-an-item-using-javascript"></a>Läsa in ett objekt med JavaScript
+
 Du kan använda JavaScript för att läsa in en rapport till olika element på webbsidan.
 
 Du kan använda ett fullständigt exempel i JavaScript API i [Playground-verktyget](https://microsoft.github.io/PowerBI-JavaScript/demo). Detta är ett snabbt sätt att leka med olika typer av Power BI Embedded-exempel. Du kan även få mer information om API:et för JavaScript genom att besöka wiki-sidan för [PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).

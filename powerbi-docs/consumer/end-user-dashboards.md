@@ -7,32 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ccfa947f83a5079cda3bfb173c0f83f6b811a9ff
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 7db5bf514b567cbcaf9dddc5d48006762237a622
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564749"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909140"
 ---
 # <a name="dashboards-in-power-bi-service"></a>Instrumentpaneler i Power BI-tjänsten
 
 En ***instrumentpanel*** i Power BI är en enskild sida, ofta kallad en arbetsyta, som använder sig av visualiseringar för att förmedla ett budskap. Eftersom den är begränsad till en sida, innehåller en väl utformad instrumentpanel endast de viktigaste elementen i detta budskap.
 
-![instrumentpanel](./media/end-user-dashboards/power-bi-dashboard2.png)
+![instrumentpanel](media/end-user-dashboards/power-bi-dashboard2.png)
 
 De visualiseringar som visas på instrumentpanelen kallas *paneler* och de *fästs* på instrumentpanelen från rapporter. Om du är nybörjare på Power BI kan du få en god grund genom att läsa [Grundläggande begrepp i Power BI](end-user-basic-concepts.md).
 
 > [!NOTE]
-> Instrumentpaneler är en funktion i Power BI-tjänsten och är inte tillgängliga i Power BI Desktop. Instrumentpaneler kan inte skapas i mobila enheter men de kan [visas och delas](mobile/mobile-apps-view-dashboard.md).
+> Instrumentpaneler är en funktion i Power BI-tjänsten och är inte tillgängliga i Power BI Desktop. Instrumentpaneler kan inte skapas i mobila enheter men de kan [visas och delas](/mobile/mobile-apps-view-dashboard.md).
 > 
 > 
 
 Visualiseringarna på en instrumentpanel kommer från rapporter och varje rapport baseras på en datauppsättning. Man skulle kunna se på en instrumentpanel som en entré till de underliggande rapporterna och datauppsättningarna. Om du väljer en visualisering tas du till rapporten (och datauppsättningen) som användes för att skapa den.
 
-![diagram som visar relationen mellan instrumentpaneler, rapporter och datauppsättningar](./media/end-user-dashboards/power-bi-diagram.png)
+![diagram som visar relationen mellan instrumentpaneler, rapporter och datauppsättningar](media/end-user-dashboards/power-bi-diagram.png)
 
 ## <a name="advantages-of-dashboards"></a>Fördelarna med instrumentpaneler
 Instrumentpaneler är fantastiska för att övervaka affärsverksamheten, för att leta efter svar och för att få en snabb översikt över era viktigaste mått. Visualiseringarna på en instrumentpanel kan komma från en underliggande datauppsättning eller flera, eller från en underliggande rapport eller flera. En instrumentpanel kombinerar lokala och molnlagrade data, vilket ger en samlad vy oavsett var dessa data finns.
@@ -40,7 +40,7 @@ Instrumentpaneler är fantastiska för att övervaka affärsverksamheten, för a
 En instrumentpanel är inte bara en fin bild, den är i hög grad interaktiv och anpassningsbar och panelerna uppdateras när underliggande data ändras.
 
 ## <a name="dashboards-versus-reports"></a>Instrumentpaneler kontra rapporter
-[Rapporter](end-user-reports.md) förväxlas ofta med instrumentpaneler, eftersom de också är arbetsytor fulla av visualiseringar. Men det finns några viktiga skillnader.
+Rapporter förväxlas ofta med instrumentpaneler, eftersom de också är arbetsytor fulla av visualiseringar. Men det finns några viktiga skillnader.
 
 | **Kapacitet** | **Instrumentpaneler** | **Rapporter** |
 | --- | --- | --- |
@@ -65,28 +65,16 @@ Här följer några avsnitt, ordande efter roll, som hjälper dig att komma igå
 
 Power BI Pro krävs för att både dela en instrumentpanel och visa en delad instrumentpanel.
 
-### <a name="if-you-will-be-creating-and-sharing-dashboards"></a>Om du ska skapa och dela instrumentpaneler
-* Använd ett av våra exempel för att [skapa en instrumentpanel från en rapport](../service-dashboard-create.md).
-* Lär dig mer om [instrumentpanelens paneler](end-user-tiles.md) och de olika sätten för att fästa dem på en instrumentpanel.
-* Du kan hjälpa dina instrumentpanelsanvändare genom att skapa instrumentpaneler som [fungerar bra med de naturliga språkfrågorna i Frågor och svar](../service-prepare-data-for-q-and-a.md) och med [Quick Insights](../service-insights-optimize.md).
-* Identifiera de olika sätt som du kan [dela en instrumentpanel med kollegor](../service-how-to-collaborate-distribute-dashboards-reports.md).
-
 ### <a name="if-you-will-be-receiving-and-consuming-dashboards"></a>Om du ska ta emot och konsumera instrumentpaneler
 * Bekanta dig med instrumentpaneler genom att ta en titt på ett av våra [exempel](../sample-tutorial-connect-to-the-samples.md).
 * Lär dig mer om [panelerna](end-user-tiles.md) och vad som händer när du väljer en.
-* Gillar du inte utseendet på en instrumentpanel?  Du kan [ändra storlek, flytta och byta namn på panelerna](../service-dashboard-edit-tile.md).
-* Vill du spåra en enskild panel på instrumentpanelen och får ett e-postmeddelande när den når ett visst tröskelvärde? [Skapa aviseringar för paneler](../service-set-data-alerts.md).
-* Roa dig med att ställa frågor till instrumentpanelen. Lär dig hur du använder [Power BI:s frågor och svar](../power-bi-tutorial-q-and-a.md) för att ställa en fråga om dina data och få ett svar i form av en visualisering.
+* Vill du spåra en enskild panel på instrumentpanelen och får ett e-postmeddelande när den når ett visst tröskelvärde? [Skapa aviseringar för paneler](end-user-alerts.md).
+* Roa dig med att ställa frågor till instrumentpanelen. Lär dig hur du använder [Power BI:s frågor och svar](end-user-q-and-a.md) för att ställa en fråga om dina data och få ett svar i form av en visualisering.
 
 > [!TIP]
 > Om du inte hittade det du söker efter här, kan du använda innehållsförteckningen till vänster.
-> 
 > 
 
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](../power-bi-overview.md)  
 [Power BI – grundläggande begrepp](end-user-basic-concepts.md)  
-[Power BI Premium – vad är det?](../service-premium.md)  
-
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

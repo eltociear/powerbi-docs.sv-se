@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512074"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336908"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -75,13 +75,15 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Teradata-databas
 * SAP HANA-databas
 * SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (beta)
+* SAP Business Warehouse Message Server
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Dremio (Beta)
 * Exasol (Beta)
 * Jethro (Beta)
+* Kyligence Enterprise (Beta)
 
 > [!NOTE]
 > Vissa databaskopplingar kräver att du aktiverar dem genom att välja **Arkiv > Alternativ och inställningar > Alternativ** sedan välja **Förhandsversionsfunktioner** och aktivera kopplingen. Om du inte ser några av de kopplingar som nämns ovan och vill använda dem, kontrollerar du dina inställningar för **Förhandsversionsfunktioner**. Observera att alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
@@ -112,7 +114,7 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
-* Interaktiv HDInsight-fråga (beta)
+* HDInsight Interactive-fråga
 * Azure KustoDB (beta)
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
@@ -124,10 +126,10 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * SharePoint Online-lista
 * Microsoft Exchange Online
 * Dynamics 365 (online)
-* Dynamics NAV (beta)
+* Dynamics NAV
 * Dynamics 365 Business Central
+* Dynamics 365 Business Central (lokal)
 * Common Data Service för appar (beta)
-* Common Data Service (beta)
 * Microsoft Azure Consumption Insights (beta)
 * Visual Studio Team Services (beta)
 * Salesforce-objekt
@@ -163,7 +165,7 @@ Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
 
 Kategorin **Övrigt** innehåller följande dataanslutningar:
 
-* Vertica (beta)
+* Vertica
 * Webb
 * SharePoint-lista
 * OData-feed
@@ -175,6 +177,8 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Python-skript
 * ODBC
 * OLE DB
+* Denado
+* Paxata (Beta)
 * Tom fråga
 
 Följande bild visar fönstret **Hämta data** för **Övrigt**.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: de7766176f5c25288912cf463dce79f487e7335d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: f108ab3c924f6ff69bc6ee6aae5ed0539ce3f11d
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565117"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908100"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
 I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter.
@@ -26,11 +26,12 @@ I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att vi
 
  Läsvyn kan användas för att utforska och interagera med rapporten. Det är ett roligt och säkert sätt att experimentera med och bekanta dig med dina data. Läsvyn är utformad för rapportens *konsumenter*, alltså de som öppnar rapporter från appar eller som [tilldelas rapporter från andra](../service-share-dashboards.md). Läsvyn garanterar att varje enskild användare av en specifik rapport ser samma rapport, samma visualiseringar, och om de vill med samma filter.  Användarna kan interagera med rapporter och ändra befintliga filter (och dessa ändringar sparas med rapporten), men de kan inte lägga till nya filter.
 
->**Obs**: Under vissa omständigheter kan rapportkonsumenterna se olika data beroende på radnivåsäkerhet och databehörighet.
+> [!NOTE]
+> Under vissa omständigheter kan rapportanvändare se olika data beroende på radnivåsäkerhet och databehörighet.
 
 ## <a name="report-editing-view"></a>Rapportredigeringsvyn
 
-Redigeringsvyn är endast tillgänglig för den person som skapade rapporten eller som [samäger rapporten som en medlem eller administratör i en apparbetsyta](end-user-create-apps.md).
+Redigeringsvyn är endast tillgänglig för den person som skapade rapporten eller som [samäger rapporten som en medlem eller administratör i en apparbetsyta](../service-create-distribute-apps.md).
 
 Redigeringsvyn är utformad för *rapportskapare*. Det är där skapare importerar och ansluter till datamängder, utforskar data och skapar rapporter och instrumentpaneler. I redigeringsvyn i Power BI kan *skapare* granska data djupare genom att lägga till och ta bort fält, ändra typ av visualisering, skapa nya visualiseringar och lägga till och ta bort visualiseringar och sidor i rapporten. De kan sedan dela rapporterna som de har skapat med kollegor.
 
@@ -53,11 +54,11 @@ Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänst
 | [Visa användningsstatistik](../service-usage-metrics.md) | Ja, på rapportarbetsytan. | Ja, i rapportlistan (innehållsvyn) |
 | [Visa relaterade](end-user-related.md) | Ja, i rapportarbetsytan. | Ja, i rapportlistan (innehållsvyn) |
 | [Spara en rapport](../service-report-save.md) | Ja, men endast genom att använda **Spara som**. | Ja |
-| [Ta bort en rapport](end-user-delete.md) | Nej  | Ja |
+| [Ta bort en rapport](../service-delete.md) | Nej  | Ja |
 |**Rapportsidor** |
 | [Lägga till eller byta namn på en rapportsida](../power-bi-report-add-page.md)  | Nej  | Ja  |
 | [Duplicera en rapportsida](../power-bi-report-copy-paste-page.md) | Nej  | Ja |
-| [Ta bort en rapportsida](end-user-delete.md) | nej | ja |
+| [Ta bort en rapportsida](../service-delete.md) | nej | ja |
 |**Arbeta med rapportvisualiseringar**|
 | [Lägga till visuella objekt i en rapport](../visuals/power-bi-report-add-visualizations-i.md) | Nej  | Ja |
 | [Lägga till textrutor och former i en rapport](../power-bi-reports-add-text-and-shapes.md) | Nej  | Ja |
@@ -66,7 +67,7 @@ Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänst
 | [Visa data som används för att skapa visualiseringen](end-user-show-data.md) | Nej  | Ja |
 | [Konfigurera detaljgranskning](end-user-drill.md) | Nej  | Ja |
 | [Ändra vilken visualisering som används](../visuals/power-bi-report-change-visualization-type.md) | Nej | Ja|
-| [Ta bort en visualisering, en textruta eller en form](end-user-delete.md)| Nej | Ja |
+| [Ta bort en visualisering, en textruta eller en form](../service-delete.md)| Nej | Ja |
 
 
 ## <a name="navigating-between-editing-view-and-reading-view"></a>Navigera mellan redigeringsvyn och läsvyn
@@ -88,7 +89,6 @@ Kom ihåg att endast skaparen och ägarna av rapporten kan öppna en rapport i r
 
 
 
-### <a name="next-steps"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 Det finns många sätt att interagera med en rapport i läsvyn, finfördela dina data för att upptäcka insikter och få svar på frågor.  Nästa avsnitt, [Interagera med rapporter i läsvyn](../service-interact-with-a-report-in-editing-view.md), beskriver vissa av dessa i detalj.    
 Tillbaka till [Rapporter i Power BI](end-user-reports.md)    
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

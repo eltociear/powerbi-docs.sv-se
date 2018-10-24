@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/09/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0d9f16933bff264b10c0bff3e1b7c440a3d373a2
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0cb5e9ae8256f9df6c849df612f156d7fe9d12a8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907864"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112209"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 I Power BI samordnar *appar* relaterade instrumentpaneler och rapporter på ett och samma ställe. Personer i organisationen kan skapa och distribuera appar med viktig information. [Externa tjänster](end-user-connect-to-services.md), som du kanske redan använder, t.ex. Google Analytics och Microsoft Dynamics CRM, erbjuder också Power BI-appar. 
@@ -34,13 +34,13 @@ Det enklaste sättet att själv installera en ny app är genom att få en direkt
 
 **På datorn** 
 
-När du klickar på länken i ett e-postmeddelande öppnas Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) i webbläsaren. Du bekräftar att du vill installera appen och öppnar applandningssidan.
+Välj länken i e-postmeddelandet för att öppna Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) i en webbläsare. Bekräfta att du vill installera appen och öppnar applandningssidan.
 
 ![Applandningssida i Power BI-tjänsten](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
 
 **På iOS- eller mobila Android-enheter** 
 
-När du klickar på länken i ett e-postmeddelande på din mobila enhet, så installeras appen automatiskt och öppnar appens innehållslista i mobilappen. 
+När du väljer länken i ett e-postmeddelande på din mobila enhet, så installeras appen automatiskt och öppnar appens innehållslista i mobilappen. 
 
 ![Appinnehållslista på mobil enhet](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
 
@@ -50,7 +50,7 @@ Du kan också söka efter och installera alla program som du har åtkomst till f
 1. Välj **Appar** ![Apparna i det vänstra navigeringsfönstret](./media/end-user-apps/power-bi-apps-bar.png) > **Hämta appar**. 
    
      ![Ikonen Hämta appar](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
-2. I AppSource under **Min organisation** kan du söka för att begränsa resultaten och hitta den apn som du letar efter.
+2. I AppSource under **Min organisation** kan du söka för att begränsa resultaten och hitta den app som du letar efter.
    
      ![I AppSource under Min organisation](./media/end-user-apps/power-bi-appsource-my-org.png)
 3. Välj **Hämta den nu** om du vill lägga till den på sidan Appar. 

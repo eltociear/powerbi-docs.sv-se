@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 71b2f104ad5efb244c2b046cdd48a2e52cd045e3
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 19a029564fecdc9a54a136d045e75bb9580193da
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543959"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908250"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbeta på din Power BI-apparbetsyta
 Power BI-apparbetsytor är bra platser för samarbete med dina kollegor. Där kan ni skapa *appar* genom att aarbeta med instrumentpaneler, rapporter och datauppsättningar. Samarbetet tar inte slut med arbetsytor i Power BI. Office 365 erbjuder andra grupptjänster, som att dela filer på OneDrive för företag, föra konversationer i Exchange, använda delade kalendrar och uppgifter osv. Läs mer om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -23,7 +23,7 @@ Power BI-apparbetsytor är bra platser för samarbete med dina kollegor. Där ka
 > [!NOTE]
 > Förhandsversionen av den nya arbetsytan kommer att ändra förhållandet mellan Power BI-arbetsytor och Office 365-grupper. Du kommer inte automatiskt att skapa en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om [att skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md)
 
-Apparbetsytor är bara tillgängliga med [Power BI Pro](service-free-vs-pro.md).
+Apparbetsytor är bara tillgängliga med en [Power BI Pro-licens](service-features-license-type.md).
 
 ## <a name="collaborate-on-power-bi-desktop-files-in-your-app-workspace"></a>Samarbeta kring Power BI Desktop-filer på din apparbetsyta
 Om du publicerar en Power BI Desktop-fil på din Power BI-apparbetsyta efter det att du har skapat den, så kan alla på din arbetsyta samarbeta med den.
@@ -77,7 +77,7 @@ Samarbete i Office 365 börjar med apparbetsytan i Power BI.
 Om du är ägare eller administratör för en apparbetsyta kan du också lägga till eller ta bort medlemmar på arbetsytan. Läs mer om [Hantera Power BI-apparbetsytan](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="next-steps"></a>Nästa steg
-* [Skapa appar och apparbetsytor i Power BI](consumer/end-user-create-apps.md)
+* [Skapa appar och apparbetsytor i Power BI](service-create-distribute-apps.md)
 * Har du fler frågor? [Försök med att fråga Power BI Community](http://community.powerbi.com/)
 * Feedback? Besök [Power BI-idéer](https://ideas.powerbi.com/forums/265200-power-bi)
 

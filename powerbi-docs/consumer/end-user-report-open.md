@@ -1,84 +1,99 @@
 ---
-title: Öppna en rapport i Läsvyn eller Redigeringsvyn i Power BI-tjänsten
-description: Öppna en Power BI-rapport i Läsvyn eller Redigeringsvyn
+title: Visa en rapport i Power BI-tjänsten
+description: Öppna en Power BI-rapport i läsvyn.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 10/10/2018
 ms.author: mihart
-ms.openlocfilehash: fe1916b2b287dffd59bf4535cc07e13d10d01321
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565807"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112025"
 ---
-# <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Öppna en rapport i Power BI-tjänsten (app.powerbi.com)
-Rapporter finns tillgängliga i Power BI-tjänsten, Power BI Desktop, Power BI-mobil och Power BI Embedded. Den här artikeln behandlar att öppna rapporter i ***Power BI-tjänsten***.
+# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Visa en rapport i Power BI-tjänsten (app.powerbi.com)
+En rapport är en eller flera sidor med visuella objekt. Rapporter skapas med Power BI-*rapportdesigners* och [delas med dig direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 
 
-I Power BI-tjänsten finns det två lägen för att visa och interagera med rapporter: [Läsvyn och Redigeringsvyn](end-user-reading-view.md). Läsvyn är tillgänglig för alla användare och har speciellt skapats för rapport*konsumenter*, medan Redigeringsvyn endast finns tillgänglig för rapport*skapare* och -ägare. 
+Det finns många olika sätt att öppna en rapport och vi kommer att visa dig två av dem: Öppna från startsidan och öppna från en instrumentpanel. 
 
-## <a name="open-a-report-from-a-workspace-via-the-reports-content-view-list"></a>Öppna en rapport från en arbetsyta (via innehållsvylistan **Rapporter**)
+<!-- add art-->
 
-1. Starta i en arbetsyta och välj fliken **rapporter** för att visa alla rapporter på den arbetsytan.  
+
+## <a name="open-a-report-from-your-home-page"></a>Öppna en rapport från din startsida
+Nu ska vi öppna en rapport som har delats med dig direkt och sedan öppnar en rapport som har delats som en del av en app.
+
+   ![Startsida](./media/end-user-report-open/power-bi-home.png)
+
+### <a name="open-a-report-that-has-been-shared-with-you"></a>Öppna en rapport som har delats med dig
+Power BI-*designers* kan dela en rapport med dig genom att klicka på knappen **dela** på den övre menyraden. Innehåll som delas på detta sätt visas i behållaren **delat med mig** på det vänstra navigeringsfältet och i avsnittet **delat med mig** på startsidan.
+
+1. Öppna Power BI-tjänsten (app.powerbi.com).
+
+2. I det vänstra navigeringsfältet väljer du **Home (förhandsversion)** för att öppna startsidan.  
+
+   ![Startsida](./media/end-user-report-open/power-bi-select-home.png)
    
-   ![Rapportfliken på en arbetsyta](./media/end-user-report-open/power-bi-open-report.png)
-2. Välj rapportnamnet för att öppna den i Läsvy.  
+3. Rulla nedåt tills du ser **delat med mig**. Leta efter rapportikonen ![rapportikon](./media/end-user-report-open/power-bi-report-icon.png). På den här skärmbilden har vi två rapporter: *Finans* och *Northwind*. 
    
-    ![rapport i Läsvyn](./media/end-user-report-open/power-bi-reading-view.png)
-3. Det finns [så mycket du kan göra i läsvy](end-user-reading-view.md).  Den här exempelrapporten har flera sidor så börja utforska genom att välja varje flik längst ned i rapportarbetsytan. 
+   ![delat med mig-delen av startsidan](./media/end-user-report-open/power-bi-shared.png)
+
+4. Markera bara ett av rapportkorten för att öppna rapporten.
+
+   ![rapportsida](./media/end-user-report-open/power-bi-report1.png)
+
+5. Observera flikarna längst ned. Varje flik representerar en *sida* i rapporten. Vi har för närvarande sidan *IT Spend Trend* öppen. Välj en annan flik för att öppna den rapportsidan. 
+
+   ![flikar för rapportsida](./media/end-user-report-open/power-bi-tabs.png)
+
+6. Nu kan vi bara se en del av rapportsidan. Om du vill ändra visningen (zooma) på sidan väljer du **Visa** > **Anpassa till sida**.
+
+   ![ändra zoom](./media/end-user-report-open/power-bi-fit.png)
+
+   ![anpassa till sida](./media/end-user-report-open/power-bi-report2.png)
+
+### <a name="open-a-report-that-is-part-of-an-app"></a>Öppna en rapport som är en del av en app
+Om du har fått appar från kollegor eller från AppSource, är dessa appar tillgängliga från din startsida och från behållaren **appar** i det vänstra navigeringsfältet. En [app](end-user-apps.md) är ett paket med instrumentpaneler och rapporter.
+
+1. Gå tillbaka till startsidan genom att välja **Start (förhandsversion)** från det vänstra navigeringsfältet.
+
+7. Rulla nedåt tills du ser **delat med mig**.
+
+   ![Startsida](./media/end-user-report-open/power-bi-my-apps.png)
+
+8. Välj en av apparna för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas sin en instrumentpanel eller en rapport. Om du väljer appen:
+    - öppnas rapporten, allt är klart.
+    - öppnas en instrumentpanel, se [öppna en rapport från en instrumentpanel](#Open-a-report-from-a-dashboard) nedan.
+
+
 
 ## <a name="open-a-report-from-a-dashboard"></a>Öppna en rapport från en instrumentpanel
-Det finns många andra sätt att öppna en rapport. Du kan till exempel starta på en instrumentpanel och välj en panel som skapades från en rapport.  Om du väljer panelen så öppnas rapporten i läsvy. Om du vill följa med, [öppna exempelinstrumentpanelen Försäljning och marknadsföring](../sample-datasets.md).
+Rapporter kan öppnas från en instrumentpanel. De flesta paneler på instrumentpanelen är *Fästa* från rapporter. Om du väljer en panel öppnas rapporten som användes för att skapa panelen. 
 
-1. Öppna en instrumentpanel och välj en panel.
-
-   Om du väljer en panel som [skapades med Frågor och svar](../service-dashboard-pin-tile-from-q-and-a.md), visas Frågor och svar-skärmen. Om du väljer en panel som [skapades med instrumentpanelens **Lägg till panel**-widget](../service-dashboard-add-widget.md), öppnar du guiden för att redigera den widgeten.  
-
-2.  I det här exemplet har vi valt kolumndiagramspanelen Totalt antal enheter hittills i år...
+1. Välj en panel från en instrumentpanel. I det här exemplet har vi valt kolumndiagramspanelen Totalt antal enheter hittills i år...
 
     ![instrumentpanel med vald panel](./media/end-user-report-open/power-bi-dashboard.png)
 
-3.  Den associerade rapporten öppnas i Läsvy. Du märker att vi är på sidan kategori hittills i år. Det är den rapportsidan som innehåller kolumndiagrammet som vi valt från instrumentpanelen.
+2.  Den associerade rapporten öppnas. Du märker att vi är på sidan kategori hittills i år. Det är den rapportsidan som innehåller kolumndiagrammet som vi valt från instrumentpanelen.
 
-    ![öppen rapport i Läsvyn](./media/end-user-report-open/power-bi-report.png)
+    ![öppen rapport i Läsvyn](./media/end-user-report-open/power-bi-report-new.png)
 
-4. Stanna i Läsvy eller välj **Redigera rapporten** för att öppna rapporten i Redigeringsvyn. Kom ihåg att endast de som har redigeringsbehörighet för rapporten kan öppna den i Redigeringsvyn.
+> [!NOTE]
+> Inte alla paneler leder till en rapport. Om du väljer en panel som [skapades med Frågor och svar](../service-dashboard-pin-tile-from-q-and-a.md), visas Frågor och svar-skärmen. Om du väljer en panel som [skapades med instrumentpanelens **Lägg till panel**-widget](../service-dashboard-add-widget.md), kommer widgeten **Redigera panel** att öppnas.  
 
-    ![Rapportredigeraren med ikonen Redigera rapport](./media/end-user-report-open/power-bi-edit-report.png)
-
-## <a name="create-a-brand-new-report-from-a-dataset"></a>Skapa en ny rapport från en datauppsättning
-Ett annat sätt att öppna en rapport är från en datauppsättning. När du startar från en datauppsättning, kommer rapportens arbetsyta att vara tom så den här metoden rekommenderas för rapport*skapare* som vill skapa en ny rapport utifrån en datauppsättning som de äger. Precis som i exemplet ovan, kan du följa med genom att hämta [exempelappen Försäljning och marknadsföring](../sample-datasets.md).
-
-1. Starta i arbetsytan som innehåller den datauppsättning som du vill använda som grund för en rapport.
-
-   ![vänster navigeringsfält visar apparbetsytor](./media/end-user-report-open/power-bi-workspace.png)
-
-2. Välj fliken **Datauppsättningar** för att visa listan över alla datauppsättningar i den arbetsytan. Det här kallas innehållsvylistan **Datauppsättningar**.
-   
-   ![lista över datauppsättningar](./media/end-user-report-open/power-bi-dataset.png)
-
-1. Hitta datauppsättningen och välj ikonen **Skapa rapport** för att öppna datauppsättningen i Redigeringsvyn. Om du inte har redigeringsbehörighet för en datauppsättning, kommer du inte att kunna öppna den. 
-   
-    ![datauppsättning med ikonen Skapa rapport](./media/end-user-report-open/power-bi-create-report.png)
-
-3. Datauppsättningen öppnas i rapportredigeraren. Datafälten visas till höger och väntar bara på att du ska börja utforska och skapa visualiseringar. 
-
-   ![rapportarbetsytan](./media/end-user-report-open/power-bi-blank-canvas.png)
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Ännu fler sätt att öppna en rapport
 När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du att lista ut de arbetsflöden som fungerar bäst för dig. Några andra sätt att komma åt rapporter:
-- Från det vänstra navigeringsfönstret med **Favoriter**, **Senaste**, **Appar** och **Delas med mig**. 
-- Med [Visa relaterade](end-user-related.md)
-- I ett e-postmeddelande när någon [delar med dig](../service-share-reports.md) eller [ställer in en avisering](../service-set-data-alerts.md).    
-- Från ditt [Meddelandecenter](end-user-notification-center.md)    
+- Från det vänstra navigeringsfönstret med **Favoriter** och **Senaste**    
+- Med [Visa relaterade](end-user-related.md)    
+- I ett e-postmeddelande när någon [delar med dig](../service-share-reports.md) eller [ställer in en avisering](../service-set-data-alerts.md)    
+- Från [meddelandecentret] (end-user-notification-center.md)    
 - och mycket mer
 
 ## <a name="next-steps"></a>Nästa steg
-Läs mer om [rapporter i Power BI](end-user-reports.md)
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)  
+Det finns [många sätt att interagera med en rapport](end-user-reading-view.md).  Börja att utforska genom att välja varje flik längst ned i rapportarbetsytan.
 

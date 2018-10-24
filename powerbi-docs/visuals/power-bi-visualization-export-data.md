@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2cc7691e81f5edab9d9f7a2a6d878420ca1c82f4
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47418734"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112278"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 Om du vill se de data som används i en visualisering, kan du visa dessa data i Power BI eller exportera data till Excel som en XLSX- eller CSV-fil.   
@@ -55,8 +55,7 @@ Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../
 4. Välj ellipserna i det övre högra hörnet i visualiseringen. Välj **Exportera data**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. Om din visualisering i Power BI online har en aggregering (ett exempel är om du har ändrat **Antal** till *Medelvärde*, *Summa* eller *Minimivärde*), har du två alternativ: **Sammanfattade data** och **Underliggande data**. I Power BI Desktop har du bara alternativet **Sammanfattade data**. Mer information om aggregeringar finns i [Aggregeringar i Power BI](../service-aggregates.md).
-
+5. Om din visualisering i Power BI online har en aggregering (ett exempel är om du har ändrat **Antal** till *Medelvärde*, *Summa* eller *Minimivärde*), har du två alternativ: **Sammanfattade data** och **Underliggande data**. I Power BI Desktop har du endast alternativet för **sammanfattade data**. För mer information om att förstå mängder kan du läsa [Mängder i Power BI](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Välj **Sammanfattade data** > **Exportera** och välj .xlsx eller .csv. Power BI exporterar data.  Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.
 
@@ -90,6 +89,26 @@ Vad som visas när du väljer **Underliggande data** kan variera. Du kanske beh�
 |    Mått     |                                      Alla data från alla tabeller som är relaterade till tabeller som innehåller mått via en kedja av \*: 1 av 1:1).                                      |
 |  Endast mått  |                                                   Alla icke-dolda kolumner från alla relaterade tabeller (för att expandera måttet).                                                   |
 |  Endast mått  |                                                             Sammanfattade data för alla dubblettrader för modellmått.                                                              |
+
+### <a name="set-the-export-options"></a>Ange exportalternativ för
+Power BI-rapportdesigners styr vilka typer av alternativ för export av data som är tillgängliga för deras kunder. Alternativen är:
+- Tillåt export av endast sammanfattade (detta är standardinställningen för rapporter) 
+- Tillåt export av sammanfattade och underliggande data  
+- Tillåt inte export av några data  
+
+1. Starta i Power BI Desktop för att ställa in de här alternativen.
+
+2. I det övre vänstra hörnet, väljer du alternativet **Fil** > **och alternativet** > **Inställningar**. 
+
+3. Under **Aktuell fil**väljer du **Rapportinställningar**.
+
+    ![skrivbordsrapportinställningar](media/power-bi-visualization-export-data/desktop-report-settings.png)
+
+4. Gör ditt val från listrutan **exportera data**.
+
+Du kan också uppdatera den här inställningen i Power BI-tjänsten.  
+
+Det är viktigt att observera att om Power BI-administratörens portalinställningar är i konflikt med rapportinställningarna för Exportera data, åsidosätter administratörsinställningarna inställningarna för export. 
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 * Det maximala antalet rader som kan exporteras från **Power BI Desktop** och **Power BI-tjänsten** till .csv är 30 000.

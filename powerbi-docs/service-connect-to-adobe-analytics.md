@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ef59d5f42ba913e4ecad79116dea635744534198
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544634"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908588"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Anslut till Adobe Analytics med Power BI
 Du ansluter till Adobe Analytics via Power BI genom att ansluta till ditt Adobe Analytics Marketing Cloud-konto. Du får en app med en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som ger insikter om din webbplatstrafik och användardimensioner. Data uppdateras automatiskt en gång per dag. Du kan interagera med instrumentpanelen och rapporterna, men du kan inte spara ändringarna.
@@ -25,30 +25,30 @@ Anslut till [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-ana
 ## <a name="how-to-connect"></a>Så här ansluter du
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Välj **Adobe Analytics** \> **hämta**.
+3. Välj **Adobe Analytics** \> **hämta**.
    
    ![](media/service-connect-to-adobe-analytics/adobe.png)
-2. Power BI ansluter till ett specifikt Adobe Analytics-företag och Report Suite-ID (inte Report Suite-namn). Se information om att [söka efter de här parametrarna](#FindingParams) nedan.
+4. Power BI ansluter till ett specifikt Adobe Analytics-företag och Report Suite-ID (inte Report Suite-namn). Se information om att [söka efter de här parametrarna](#FindingParams) nedan.
    
    ![](media/service-connect-to-adobe-analytics/parameters.png)
-3. Som **autentiseringsmetod** väljer du **oAuth2** \> **Logga in**. När du uppmanas, anger du dina Adobe Analytics-autentiseringsuppgifter. 
+5. Som **autentiseringsmetod** väljer du **oAuth2** \> **Logga in**. När du uppmanas, anger du dina Adobe Analytics-autentiseringsuppgifter. 
    
     ![](media/service-connect-to-adobe-analytics/creds.png)
    
     ![](media/service-connect-to-adobe-analytics/adobe_signin.png)
-4. Klicka på **acceptera** så att Power BI kommer åt dina Adobe Analytics-data.
+6. Klicka på **acceptera** så att Power BI kommer åt dina Adobe Analytics-data.
    
    ![](media/service-connect-to-adobe-analytics/adobe_authorize.png)
-5. Efter du godkänner så startar importen automatiskt. 
+7. Efter du godkänner så startar importen automatiskt. 
 
 ## <a name="view-the-adobe-analytics-dashboard-and-reports"></a>Visa Adobe Analytics-instrumentpanelen och rapporter
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
+   ![Adobe Analytics-instrumentpanelen](media/service-connect-to-adobe-analytics/dashboard.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
-## <a name="whats-included"></a>Vad ingår
+## <a name="whats-included"></a>Det här ingår
 Power BI använder Adobe Analytics-rapport API för att definiera och köra rapporter för följande tabeller:
 
 | **Tabellnamn** | **Kolumninformation** |
@@ -82,19 +82,19 @@ Företagsvärdet finns i det övre högra hörnet för ditt konto när du har lo
 
 **Report Suite-ID.**
 
-Suite-ID skapas när Report Suite skapas. Du kan kontakta din administratör för att identifiera ID-värdet. Observera att detta inte är Report Suite-namnet.
+Suite-ID skapas när Report Suite skapas. Du kan kontakta din administratör för att identifiera ID-värdet. Det här är inte Report Suite-namnet.
 
 Från Adobe-[dokumentationen](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html):
 
 ![](media/service-connect-to-adobe-analytics/reportsuiteid.png)
 
 ## <a name="troubleshooting"></a>Felsökning
-Om du får ett fel när du har angett dina autentiseringsuppgifter som anger du inte har behörigheter, bekräfta med din administratör att du har åtkomst till Adobe Analytics API:n. Bekräfta även att det Adobe-ID som angetts är kopplat till din Marketing Cloud-organisation (som är kopplad till ett Adobe Analytics-företag).
+Om du får ett felmeddelande (när du har angett dina autentiseringsuppgifter) om att du saknar behörighet, kontrollerar du med din administratör att du har åtkomst till Adobe Analytics API:n. Bekräfta även att det Adobe-ID som angetts är kopplat till din Marketing Cloud-organisation (som är kopplad till ett Adobe Analytics-företag).
 
-Om du kommer förbi autentiseringsskärmen innan du påträffar felet, är det möjligt att rapporterna tar för lång tid att slutföra. Ett vanligt fel är i formatet *det gick inte att hämta data från Adobe Analytics-rapporten. Innehåll som ingår &quot;referent, sidan&quot;, ungefärlig varaktighet var xx sekunder*. Läs avsnittet vad ingår och jämför med storleken på din Adobe-instans. Det finns tyvärr inte något sätt att kringgå den här timeouten idag. Men vi överväger uppdateringar för att ge bättre stöd åt stora instanser. Ge gärna feedback till Power BI-teamet på https://ideas.powerbi.com
+Om du kommer förbi autentiseringsskärmen innan du påträffar felet, är det möjligt att rapporterna tar för lång tid att slutföra. Ett vanligt fel är i formatet *det gick inte att hämta data från Adobe Analytics-rapporten. Innehåll som ingår &quot;referent, sidan&quot;, ungefärlig varaktighet var xx sekunder*. Läs avsnittet om vad som ingår och jämför med storleken på din Adobe-instans. Det finns tyvärr inte något sätt att kringgå den här timeouten idag. Men vi överväger uppdateringar för att ge bättre stöd åt stora instanser. Ge gärna feedback till Power BI-teamet på https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](consumer/end-user-apps.md)
+* [Vad är appar i Power BI?](service-create-distribute-apps.md)
 * [Hämta data i Power BI](service-get-data.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

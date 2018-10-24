@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: 072f548c3725c4133bb548a72fc58679e74f5fc7
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 6055a9c5e41f1745b088df93587d701393c0d495
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417106"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336747"
 ---
 # <a name="power-bi-security"></a>Power BI-säkerhet
 En detaljerad förklaring av Power BI-säkerheten får du om du [laddar ned white paper-dokumentet om Power BI-säkerhet](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -58,4 +58,14 @@ Mer information finns i [Microsofts Säkerhetscenter](https://www.microsoft.com/
 Enligt vad som tidigare beskrevs i den här artikeln används en användares Power BI-inloggning av lokala Active Directory-servrar till att mappa till ett UPN för autentiseringsuppgifter. Det är dock **viktigt** att notera att användarna ansvarar för de data som de delar: Om en användare ansluter till datakällor med sina autentiseringsuppgifter och sedan delar en rapport (eller instrumentpanel eller datauppsättning) baserat på dessa data, autentiseras inte användarna som den instrumentpanelen delas med mot den ursprungliga datakällan och de kommer att beviljas åtkomst till rapporten.
 
 Ett undantag är anslutningar till **SQL Server Analysis Services** med hjälp av den **lokala datagatewayen**. Instrumentpaneler cachelagras i Power BI, men åtkomsten till underliggande rapporter eller datauppsättningar kräver autentisering för den användare som försöker få åtkomst till rapporten (eller datauppsättningen) och åtkomst beviljas enbart om användaren har tillräcklig behörighet för att få åtkomst till dessa data. Mer information finns i [Djupdykning i den lokala datagatewayen](service-gateway-onprem-indepth.md).
+
+## <a name="enforcing-tls-version-usage"></a>Framtvinga användning av TLS-version
+
+Nätverks- och IT-administratörer kan upprätthålla kravet på att använda aktuell TLS (Transport Layer Security) för all säker kommunikation i nätverket. Windows har stöd för TLS-versioner via Microsoft Schannel-providern som [beskrivs i artikel TLS Schannel SSP](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+
+Den här tillämpningen kan göras genom att administrativt ange registernycklar. Tillämpningen beskrivs i artikeln [Hantera SSL-protokoll i AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+
+**Power BI Desktop** respekterar de registernyckelinställningar som beskrivs i dessa artiklar och skapar bara anslutningar som använder tillåten version av TLS baserat på dessa registerinställningar, då de existerar.
+
+Mer information om hur du anger dessa registernycklar finns i artikeln [TLS för registerinställningarna](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
 

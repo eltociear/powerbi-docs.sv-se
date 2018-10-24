@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 516d78bd6158c714d5f4418771c5e8cb219ce512
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 25e7fe3e47cee2aed7781fff2a20621e3bd860ed
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547578"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908818"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Hantera din apparbetsyta i Power BI och Office 365
-Som skapare eller administratör för en [apparbetsyta i Power BI](consumer/end-user-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365. 
+Som skapare eller administratör för en [apparbetsyta i Power BI](service-create-distribute-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365. 
 
 > [!NOTE]
 > Förhandsversionen av den nya arbetsytan kommer att ändra förhållandet mellan Power BI-arbetsytor och Office 365-grupper. Du kommer inte automatiskt att skapa en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om [att skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md)
@@ -36,7 +36,7 @@ Som skapare eller administratör för en [apparbetsyta i Power BI](consumer/end-
 * Se gruppens e-postadress.
 * Ta bort gruppen.
 
-Du behöver en [Power BI Pro](service-free-vs-pro.md)-licens för att vara administratör eller medlem i en apparbetsyta. Dina appanvändare måste också ha en Power BI Pro-licens, såvida inte apparbetsytan finns i en Power BI Premium-kapacitet. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
+Du måste ha en [Power BI Pro-licens](service-features-license-type.md) för att kunna vara administratör eller medlem i en apparbetsyta. Dina appanvändare måste också ha en Power BI Pro-licens, såvida inte apparbetsytan finns i en Power BI Premium-kapacitet. Läs [Vad är Power BI Premium?](service-premium.md) för mer information.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Hantera din apparbetsyta i Power BI
 1. I Power BI-tjänsten väljer du pilen bredvid **Arbetsytor** > ellipserna (**...** ) bredvid ditt arbetsytenamn > **Redigera arbetsyta**. 
@@ -76,7 +76,6 @@ När du distribuerar appen från apparbetsytan bli bilden som du lägger till h�
 3. Välj **Spara** eller **Ignorera**.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](consumer/end-user-apps.md)
-* [Publicera appar med instrumentpaneler och rapporter i Power BI](consumer/end-user-create-apps.md)
+* [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

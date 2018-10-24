@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3d4065a6ab0c5a3c8f18350ef6c3a0444febda08
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 475f3ddf646ddc9c5f29409854f93128ce94dd51
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547072"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908841"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Ansluta till Microsoft Dynamics CRM med Power BI
 Med Microsoft Dynamics CRM Online för Power BI kan du enkelt komma åt och analysera dina data. Power BI använder OData-feeden för att skapa en beskrivande modell, med alla entiteter och åtgärder som behövs som Konton, Aktiviteter, Affärsmöjligheter, Produkt, Leads, Användare och annat. När du har installerat appen kan du visa instrumentpanelen och rapporterna i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och i Power BI-mobilapparna. 
@@ -26,17 +26,16 @@ Den här anslutningen kräver **Microsoft Dynamics CRM Online 2016 eller senare*
 
 ## <a name="how-to-connect"></a>Så här ansluter du
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
-
-1. Välj **Microsoft Dynamics CRM Säljchef** eller **Microsoft Dynamics CRM Servicechef** och klicka på **Anslut**.
+3. Välj **Microsoft Dynamics CRM Säljchef** eller **Microsoft Dynamics CRM Servicechef** och klicka på **Anslut**.
    
    ![](media/service-connect-to-microsoft-dynamics-crm/connect.png)
-2. Ange den tjänst-URL som är kopplad till ditt konto.  Den är i formatet `https://company.crm.dynamics.com`, se mer information [nedan](#FindingParams).
+4. Ange den tjänst-URL som är kopplad till ditt konto.  Den är i formatet `https://company.crm.dynamics.com`, se mer information [nedan](#FindingParams).
    
    ![](media/service-connect-to-microsoft-dynamics-crm/params.png)
-3. Ange dina autentiseringsuppgifter när du tillfrågas (det här steget kan hoppas över om du redan har loggat in med din webbläsare). Som autentiseringsmetod anger du **oAuth2** och klickar på **Logga in**:
+5. Ange dina autentiseringsuppgifter när du tillfrågas (det här steget kan hoppas över om du redan har loggat in med din webbläsare). Som autentiseringsmetod anger du **oAuth2** och klickar på **Logga in**:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/creds.png)
-4. Efter anslutningen ser du en instrumentpanel som är anpassad för en försäljningschef eller en servicechef som är ifylld med dina egna data:
+6. Efter anslutningen ser du en instrumentpanel som är anpassad för en försäljningschef eller en servicechef som är ifylld med dina egna data:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/dashboard.png)
 
@@ -48,7 +47,7 @@ Den här anslutningen kräver **Microsoft Dynamics CRM Online 2016 eller senare*
 ## <a name="whats-included"></a>Det här ingår
 Avsnitten nedan innehåller information om vad som ingår för personerna [försäljningschef](#Sales) och [servicechef](#Service).
 
-Observera att data dessutom begränsas baserat på den säkerhetsroll som tilldelats Dynamics CRM Online-användaren.
+Data begränsas baserat på den säkerhetsroll som tilldelats Dynamics CRM Online-användaren.
 
 Instrumentpanelen och rapporterna är avsedda att erbjuda verksamhetsrapportering om närtidsdata med fokus på ett team eller en grupp. Varje fråga är begränsad för att hämta högst 100 000 poster från Dynamics CRM Online. Om den här gränsen överskrids på grund av hög datavolym i din organisation, misslyckas etableringen eftersom datauppdateringen av Dynamics CRM Online avslutas. Om ditt konto är för stort bör du överväga att ansluta till Power BI Desktop för att skapa en anpassad lösning.
 
@@ -78,7 +77,7 @@ I följande tabell visas de CRM-entiteter som är tillgängliga för den här tj
 
 | CRM-entitet | Använda filter |
 | --- | --- |
-| Konto |Alla konton som har relaterade affärsmöjligheter och som har ändrats under de senaste 365 dagarna |
+| Konto |Alla konton som har relaterade affärsmöjligheter som har ändrats under de senaste 365 dagarna. |
 | Aktivitet |Alla aktiviteter som har ändrats under de senaste 90 dagarna <br> [modifiedon] > idag – 90 dagar |
 | Affärsenhet |Alla affärsenheter som inte är inaktiverade <br> [isdisabled] = falskt |
 | Lead |Alla leads som har ändrats under de senaste 180 dagarna <br> [modifiedon] > idag – 180 dagar |
@@ -101,7 +100,7 @@ Dessa instrumentpaneler och rapporter innehålla nyckelvärden som:
 * Totalt antal aktiva ärenden  
 * Antal gånger som KB-artikel använts i ärenden och mycket annat.    
 
-De innehåller också viktiga diagram som:   
+De innehåller också viktiga diagram som   
 
 * Ärendevolymtrender för inkommande ärenden, antal stängda ärenden, eskalerade ärenden   
 * Ärendevolym efter olika mått som ursprung, plats, prioritet och typ  
@@ -154,7 +153,7 @@ Om du inte har CRM Online 2016 eller senare, kan du använda Power BI Desktop f�
 Om du ser ett fel om att ”datauppdateringen misslyckades eftersom en fråga överskred den maximala gränsen på 100 000 poster” kan du ansluta direkt från Power BI Desktop eller utnyttja CRM-lösningsmallen.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](consumer/end-user-apps.md)
+* [Vad är appar i Power BI?](service-create-distribute-apps.md)
 * [Hämta data i Power BI](service-get-data.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549993"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909071"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI
 Lär dig hur du registrerar dig för Power BI och börja använda det för dina personliga rapport- och visualiseringsbehov.
@@ -24,7 +24,7 @@ Lär dig hur du registrerar dig för Power BI och börja använda det för dina 
 
 Power BI kan vara ditt personliga verktyg för rapportering och visualisering och kan även fungera som analys- och beslutsmotor för grupprojekt, avdelningar eller hela bolag.
 
-Den här artikeln beskrivs de alternativ du har för att registrera dig och börja använda Power BI-tjänsten. Mer information om skillnaderna mellan kostnadsfria Power BI (kostnadsfri) och Power BI Pro finns i [Power BI (kostnadsfri) och Power BI Pro](service-free-vs-pro.md).
+Den här artikeln beskrivs de alternativ du har för att registrera dig och börja använda Power BI-tjänsten. Mer information om skillnaderna i funktionalitet mellan de olika Power BI-licenstyperna finns i [Power BI-funktioner efter licenstyp](service-features-license-type.md).
 
 ## <a name="you-have-a-few-options"></a>Du har några alternativ att välja bland
 Som enskild individ har du flera alternativ för att registrera dig och börja använda Power BI. Du kan välja att registrera dig för en kostnadsfri version eller så kan du köpa en prenumeration på Power BI Pro. Om du registrerar dig för ett kostnadsfritt konto när du väl har loggat in till tjänsten, kan du välja en kostnadsfri 60 dagars utvärderingsversion av Power BI Pro.
@@ -99,7 +99,7 @@ Sedan visas ett meddelande där du uppmanas att välja **Start**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>60 dagars utvärderingsversion av Power BI Pro-tjänsten
 När du har registrerat dig för ett kostnadsfritt konto kan du välja att testa Pro kostnadsfritt under 60 dagar. Du får åtkomst till alla Pro-funktioner under utvärderingsperioden. Power BI Pro innehåller alla funktionerna i den kostnadsfria versionen av Power BI och ytterligare funktioner för delning och samarbete. Mer information finns i [Power BI-prissättning](https://powerbi.microsoft.com/pricing). Registrera dig för Power BI om du vill testa en 60 dagars kostnadsfri utvärderingsversion av Power BI Pro, och testa någon av dessa Power BI Pro-funktioner:
 
-* [Skapa en apparbetsyta](consumer/end-user-create-apps.md)
+* [Skapa en apparbetsyta](service-create-distribute-apps.md)
 * [Dela en instrumentpanel](service-share-dashboards.md)
 
 När du testar någon av dessa funktioner uppmanas du att starta den kostnadsfria utvärderingsversionen. Du kan också välja att använda den genom att gå till kugghjulsikonen och välja **Hantera personlig lagring**. Välj sedan **Testa Pro kostnadsfritt** till höger.
@@ -139,9 +139,8 @@ I många fall kan du registrera dig för Power BI genom att följa den enkla pro
 |            **Självbetjäningsregistrering har inaktiverats** Du får ett meddelande som detta under registreringen: <br /><br /> *Vi kan inte slutföra din registrering. IT-avdelningen har inaktiverat registrering för Microsoft Power BI. Kontakta dem så att du kan slutföra registreringen.* <br /><br /> eller <br /><br /> *Det där ser ut som en personlig e-postadress. Ange din adress till arbetet så att vi kan ansluta dig till andra i företaget. Oroa dig inte. Vi kommer inte att dela din adress med vem som helst.*             |                             Din organisations IT-administratör har inaktiverat självbetjäningsregistrering för Power BI. <br /><br /> Slutför registreringen genom att kontakta IT-administrationen och be dem att följa anvisningarna på nedanstående sida så att befintliga användare kan registrera sig för Power BI och nya användare kan ansluta till din befintliga klient. <br/><br/> Det här problemet kan också uppstå om du har registrerat dig för Office 365 via en partner. [Läs mer](service-admin-syndication-partner.md) <br /><br /> [Power BI i din organisation](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant)                              |
 |                                                                                          **E-postadressen är inte ett Office 365-ID** Du får ett meddelande som detta under registreringen: <br /><br /> *Vi hittar dig inte på contoso.com.  Använder du ett annat ID i arbetet eller skolan? <br /><br />Prova med att logga in med det, och om detta inte fungerar kan du kontakta IT-avdelningen.*                                                                                           | Din organisation använder ID:n som skiljer sig från din e-postadress för att logga in på Office 365 och andra Microsoft-tjänster.  Din e-postadress kan t.ex. vara Nancy.Smith@contoso.com, medan ditt ID är nancys@contoso.com. <br /><br /> Slutför registreringen genom att använda det ID som din organisation har tilldelat dig för att logga in på Office 365 eller andra Microsoft-tjänster.  Om du inte känner till ditt ID kan du kontakta IT-administratören. <br /><br /> Om du ändå inte kan registrera dig men kan genomföra en mer avancerad konfigurationsprocess, så kan du [registrera dig för en ny Office 365-utvärderingsprenumeration och använda den e-postadressen för att registrera dig](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
-## <a name="next-steps"></a>Nästa steg
-[Power BI (kostnadsfri) i din organisation](service-admin-service-free-in-your-organization.md)  
-[Köpa Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
+## <a name="next-steps"></a>Nästa steg  
+[Köp Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI-serviceavtal för enskilda användare](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium – vad är det?](service-premium.md)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  

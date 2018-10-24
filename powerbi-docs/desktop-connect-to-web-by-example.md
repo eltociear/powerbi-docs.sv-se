@@ -1,5 +1,5 @@
 ---
-title: Extrahera data från en webbsida med exempel i Power BI Desktop (förhandsgranskning)
+title: Extrahera data från en webbsida med exempel i Power BI Desktop
 description: Extrahera data från en webbplats genom att ge ett exempel på vad du vill hämta
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55c1a70e054b6bb6ff06c7fe6f83b58d8b1f26f3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290992"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336816"
 ---
-# <a name="get-data-from-a-web-page-by-providing-an-example-preview"></a>Hämta data från en webbplats genom att ge ett exempel (förhandsgranskning)
+# <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hämta data från en webbplats genom att ge ett exempel
 
 Hämtning av data från en webbplats låter användare enkelt extrahera data från webbsidor och importera dessa data till **Power BI Desktop**. Många gånger finns data på webbsidor dock inte i välvårdade tabeller som är lätta att extrahera så det kan bli en utmaning att hämta data från sådana sidor, även om de är strukturerade och konsekventa. 
 
@@ -26,13 +26,6 @@ Det finns en lösning. Med funktionen **Hämta data från webben efter exempel**
 ![Hämta data från webben efter exempel](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 
-## <a name="enabling-the-preview-feature-get-data-from-web-by-example"></a>Aktivera förhandsfunktionen Hämta data från webben efter exempel
-
-**Hämta data från webben efter exempel** är i förhandsversion och måste aktiveras i **Power BI Desktop**. För att aktivera det, väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsfunktioner** och väljer sedan kryssrutan **Ny från webbupplevelse**. Du måste starta om Power BI Desktop när du har gjort valet.
-
-![aktivera förhandsfunktionen](media/desktop-connect-to-web-by-example/web-by-example_02.png)
-
-När förhandsfunktionen är aktiverad, är du redo att börja använda den. 
 
 ## <a name="using-get-data-from-web-by-example"></a>Använd Hämta data från webben efter exempel
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 453b0f5852fefb1008b8013a0c42af4cc1d42f32
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 3f8a5075290620d9d1ed1829008002ff71d25c82
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547647"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908169"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
 > [!NOTE]
@@ -33,7 +33,7 @@ I AppSource, kan du bläddra eller söka efter innehållspaket som publiceras ti
 Instrumentpaneler, rapporter och Excel-arbetsböcker är skrivskyddade, men du kan kopiera och använda instrumentpaneler och rapporter som utgångspunkt för att skapa din egen anpassade version av innehållspaketet.
 
 > [!NOTE]
-> Organisationsinnehållspaket är endast tillgängliga när du och dina kollegor använder [Power BI Pro](service-free-vs-pro.md).
+> Organisationsinnehållspaket är endast tillgängliga när du och dina kollegor använder [Power BI Pro-licenser](service-features-license-type.md).
 > 
 > 
 
@@ -52,7 +52,7 @@ Livscykeln ser ut ungefär så här:
 1. Nate skapar ett innehållspaket i Power BI Pro och publicerar den i distributionsgruppen Marknadsföring. Uppdateringsinställningarna följer med datauppsättningen och kan bara ändras av Nate.
    
    > [!NOTE]
-   > Om Nate skapar ett innehållspaket inifrån den arbetsyta i [Power BI-appen](consumer/end-user-create-apps.md) han tillhör kan andra personer i Power BI-arbetsytan ta över ägarskapat, även om han lämnar arbetsytan.
+   > Om Nate skapar ett innehållspaket inifrån den arbetsyta i [Power BI-appen](service-create-distribute-apps.md) han tillhör kan andra personer i Power BI-arbetsytan ta över ägarskapat, även om han lämnar arbetsytan.
    > 
    > 
 2. Nate skickar e-post till distributionsgruppen och informerar dem om det nya innehållspaketet.
@@ -76,7 +76,7 @@ Alla medlemmar i distributionsgruppen har samma behörighet för data som skapar
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa och publicera ett organisationsinnehållspaket](service-organizational-content-pack-create-and-publish.md)
-* [Skapa och distribuera en app i Power BI](consumer/end-user-create-apps.md) 
+* [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
 * [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

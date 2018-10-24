@@ -8,32 +8,32 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bca79f79ba5bf918034231e44481ce422ebe7d97
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: a44630f8c5ad7f521ad7f3e8794486cd1b758358
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566014"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336793"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service-apppowerbicom"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten (app.powerbi.com)
-Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera dig själv och dina kollegor på de rapportsidor och instrumentpaneler som är viktigast för dig, så skickas ett e-postmeddelande från Power BI med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. 
+# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
+Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. 
 
 E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](../supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning klickar du på kugghjulsikonen ![kugghjulsikon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Inställningar > Allmänt > Språk**. 
 
 ![Listruta för språk](./media/end-user-subscribe/power-bi-language.png)
 
-Du kan bara skapa prenumerationer i Power BI-tjänsten. När du får e-postmeddelandet innehåller det en länk med rubriken ”Gå till rapporten eller instrumentpanelen”. Om du väljer den här länken på mobila enheter med installerade Power BI-appar, så startas appen (istället för standardåtgärden att rapporten eller instrumentpanelen på webbplatsen Power BI öppnas).
+När du får e-postmeddelandet innehåller det en länk med rubriken ”Gå till rapporten eller instrumentpanelen”. Om du väljer den här länken på mobila enheter med installerade Power BI-appar, så startas appen (istället för standardåtgärden att rapporten eller instrumentpanelen på webbplatsen Power BI öppnas).
 
 
 ## <a name="requirements"></a>Krav
-- Att **skapa** prenumerationer är en Power BI Pro-funktion, och du måste ha redigeringsbehörigheter till innehållet (instrumentpanel eller rapport) för att skapa prenumerationen. 
-- Eftersom e-post angående prenumerationer endast skickas när en datamängd uppdateras fungerar inte prenumerationer på datamängder som inte uppdateras.
+- **Skapa** en prenumeration är en funktion i Power BI Pro. 
+- Eftersom e-post angående prenumerationer endast skickas när en underliggande datauppsättning uppdateras fungerar inte prenumerationer på datamängder som inte uppdateras.
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Prenumerera på instrumentpanel eller en rapportsida
-Oavsett om du prenumererar på en instrumentpanel eller en rapport är processerna mycket lika. Du kan använda samma knapp för att prenumerera dig själv (och andra) till Power BI-tjänstens instrumentpaneler och rapporter.
+Oavsett om du prenumererar på en instrumentpanel eller en rapport är processerna mycket lika. Du kan använda samma knapp för att prenumerera på Power BI-tjänstens instrumentpaneler och rapporter.
  
 ![välj ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe-orientation.png).
 
@@ -44,22 +44,19 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
 
 3. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
 
-4. Fyll i e-postmeddelandeinformationen. Din e-post är förifylld, men du kan även lägga till andra i prenumerationen. Endast e-postadresser i samma domän kan läggas till (se **Överväganden och felsökning** nedan för mer information). Om rapporten eller instrumentpanelen finns i [Premium-kapacitet](../service-premium.md) kan du prenumerera andra med hjälp av enskilda e-postadresser och gruppalias. Om rapporten eller instrumentpanelen inte finns i Premium-kapacitet kan du ändå prenumerera andra med hjälp av deras enskilda e-postadresser, men då måste de också ha Power BI Pro-licenser.
+4. Lägg alternativt till e-postmeddelandeinformation. 
 
     I skärmbilderna nedan ser du att när du prenumererar på en rapport prenumererar du i själv verket på en rapport*sida*.  Om du vill prenumerera på flera sidor i en rapport väljer du **Lägg till en till prenumeration** och väljer en annan sida. 
       
-   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-subscribe2.png)
+   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails.png)
 
-5. Spara prenumerationen genom att välja **Spara och stäng**. De som prenumererar får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapportsidan varje gång några av de underliggande datamängderna ändras. Om instrumentpanelen eller rapporten uppdateras mer än en gång om dagen skickas e-postmeddelandet endast efter den första uppdateringen.  
+5. Spara prenumerationen genom att välja **Spara och stäng**. Du kommer att få ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapportsidan varje gång några av de underliggande datamängderna ändras. Om instrumentpanelen eller rapporten uppdateras mer än en gång om dagen skickas e-postmeddelandet endast efter den första uppdateringen.  
    
-   ![e-postmeddelande med ögonblicksbild av instrumentpanel](./media/end-user-subscribe/power-bi-dashboard-email.jpg)
+   ![e-postmeddelande med ögonblicksbild av instrumentpanel](./media/end-user-subscribe/power-bi-dashboard-email-new.jpg)
    
-   > [!TIP]
-   > Vill du se e-postmeddelandet direkt? Utlös ett e-postmeddelande genom att uppdatera en av de datamängder som är associerade med instrumentpanelen eller den datamängd som är associerad med rapporten. (Om du inte har behörighet att redigera till datauppsättningen, så måste du be någon som har de behörigheterna att göra det åt dig.) Om du vill ta reda på vilka datauppsättningar som används väljer du ikonen **Visa relaterade** ![Ikonen Visa relaterade](./media/end-user-subscribe/power-bi-view-related.png) så öppnas **Relaterat innehåll** och du kan välja uppdateringsikonen ![uppdateringsikon](./media/end-user-subscribe/power-bi-refresh.png). 
-   > 
-   > 
+Att uppdatera rapportsidan uppdaterar inte datauppsättningen. Endast datauppsättningens ägare kan uppdatera en datauppsättning manuellt. Om du vill söka efter namnet på den underliggande datauppsättningen, välj **Visa relaterade** på den översta menyraden.
    
-   ![Relaterade datauppsättningar](./media/end-user-subscribe/power-bi-view-related-screen.png)
+![Relaterade datauppsättningar](./media/end-user-subscribe/power-bi-view-related-screen.png)
 
 ## <a name="how-the-email-schedule-is-determined"></a>Hur e-postschemat bestäms
 I följande tabell beskrivs hur ofta du får ett e-postmeddelande. Det beror helt på anslutningsmetoden för den datauppsättning som instrumentpanelen eller rapporten baseras på (DirectQuery, Live-anslutning, import till Power BI, Excel-fil i OneDrive eller SharePoint Online) samt på vilka prenumerationsalternativ som är tillgängliga och valda (varje dag, varje vecka eller inget).
@@ -70,11 +67,7 @@ I följande tabell beskrivs hur ofta du får ett e-postmeddelande. Det beror hel
 | **Hur stor kontroll har användaren över schemat för e-postprenumeration?** |Alternativen är: varje dag eller varje vecka |Inga alternativ: användarna får ett e-postmeddelande om rapporten uppdateras, men inte mer än en gång per dag. |Om uppdateringsschemat är varje dag, så är alternativen dagliga och veckovisa.  Om uppdateringsschemat är varje vecka så är endast veckoalternativet tillgängligt. |Inga alternativ: användaren skickas ett e-postmeddelande när datauppsättnngen har uppdaterats, men inte mer än en gång per dag. |
 
 ## <a name="manage-your-subscriptions"></a>Hantera dina prenumerationer
-Endast den person som skapade prenumerationen kan hantera den.  Det finns 2 vägar till skärmen för att hantera dina prenumerationer.  Den första är att välja **Hantera alla prenumerationer** i dialogrutan **Prenumerera på e-postmeddelanden** (se skärmbilderna nedanför steg 4 ovan). Den andra hittar du genom att välja kugghjulsikonen i Power BI ![kugghjulsikon](./media/end-user-subscribe/power-bi-settings-icon.png) på den översta menyraden sedan välja **Inställningar**.
-
-![välj Inställningar](./media/end-user-subscribe/power-bi-subscribe-settings.png)
-
-Vilka enskilda prenumerationer som visas beror på vilken arbetsyta som för närvarande är aktiv.  Om du vill se alla dina prenumerationer på en gång för alla arbetsytor, så kontrollera att **Min arbetsyta** är aktiv. Om du vill ha hjälp med att förstå hur arbetsytor fungerar, så gå till [Arbetsytor i Power BI](end-user-create-apps.md).
+Endast du kan hantera dina prenumerationer. Välj **prenumerera** igen och välj **hantera alla prenumerationer** (se skärmbilderna under steg 4 ovan). 
 
 ![se alla prenumerationer i Min arbetsyta](./media/end-user-subscribe/power-bi-subscriptions.png)
 
@@ -82,21 +75,17 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanele
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * För e-postprenumerationer på instrumentpaneler visas inte paneler som har säkerhet på radnivå (RLS) tillämpat.  För e-postprenumerationer på rapporter går det inte att skapa en prenumeration om datauppsättningen använder RLS.
-* Rapportsideprenumerationer är knutna till namnet på rapportsidan. Om du prenumererar på en rapportsida och byter namn på den, måste du återskapa din prenumeration
-* E-postprenumerationer för rapporter/instrumentpaneler som använder live-anslutningsdatauppsättningar stöds för närvarande inte när du andra användare än du prenumererar.
+* Rapportsideprenumerationer är knutna till namnet på rapportsidan. Om du prenumererar på en rapportsida och den byter namn, måste du återskapa din prenumeration
+* Vissa inställningar för din organisation kan konfigureras i Azure Active Directory, vilket kan begränsa möjligheten att använda e-postprenumerationer i Power BI.  Detta inkluderar, men inte begränsat till, att ha multifaktorautentisering eller begränsningar för IP-intervallet vid åtkomst till resurser.
 * För e-postprenumerationer på live-anslutningsdatauppsättningar får du endast e-postmeddelanden när data ändras. Så om en uppdatering görs, men inga data ändras, så skickar Power BI dig inget e-postmeddelande.
 * E-postprenumerationer har inte stöd för så många [anpassade visuella objekt](../power-bi-custom-visuals.md).  Det enda undantaget är de anpassade visuella objekt som har [certifierats](../power-bi-custom-visuals-certified.md).  
 * E-postprenumerationer har för närvarande inte stöd för R-baserade anpassade visuella objekt.  
 * Om det finns paneler på instrumentpanelen som har säkerhet på radnivå (RLS) tillämpat visas inte de panelerna.
-* Du kan inte prenumerera andra användare på en rapport med säkerhet på radnivå (RLS) tillämpat.
 * E-postprenumerationer skickas med rapportens standardfilter och utsnittstillstånd. Inga ändringar av standardinställningarna som du gör efter att du börjar prenumerera visas i e-postmeddelandet.    
-* E-postprenumerationer stöds ännu inte ännu för rapportsidor som har skapats med Power BI Desktop-liveanslutning till tjänsten.    
+* E-postprenumerationer stöds ännu inte ännu för rapportsidor som har skapats med Power BI Desktop-liveanslutning till tjänsten.  
 * För prenumerationer på instrumentpaneler så saknar vissa typer av paneler fortfarande stöd.  Detta gäller: strömningspaneler, videopaneler och paneler för anpassat webbinnehåll.     
-* Om du delar en instrumentpanel med en kollega utanför din klientorganisation kan du inte skapa en prenumeration till den kollegan. Om du till exempel är aaron@xyz.com kan du dela med anyone@ABC.com, men du kan ännu inte prenumerera anyone@ABC.com, och den personen kan inte prenumerera på delat innehåll.      
 * På grund av storleksbegränsningar i e-posten kan prenumerationer på instrumentpaneler och rapporter som innehåller extremt stora bilder misslyckas.    
 * Power BI pausar automatiskt uppdateringat för datauppsättningar som är associerade med instrumentpaneler och rapporter som inte har besökts på över två månader.  Men om du lägger till en prenumeration på en instrumentpanel eller en rapport, så pausas den inte, även om den förblir obesökt.    
-* Om du inte får någon e-post angående prenumerationen, så kontrollera att ditt UPN (User Principal Name) kan ta emot e-postmeddelanden. [Power BI-teamet arbetar med att släppa på det här kravet](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), så håll dig uppdaterad. 
-* Om din instrumentpanel eller rapport finns i Premium-kapacitet kan du använda grupp-e-postalias för prenumerationer i stället för att prenumerera kollegor med en e-postadress i taget. Alias baseras på aktuell aktiv katalog. 
 
 ## <a name="next-steps"></a>Nästa steg
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)    
