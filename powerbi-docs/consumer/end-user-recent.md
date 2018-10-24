@@ -8,20 +8,17 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/01/2018
+ms.date: 10/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a165b58eae7309070dfe0bc33adc0a3e47ec7991
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1479b8fc431428a1b44ccd06bb501071042ada6e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46555473"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908496"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Senaste** innehåll i Power BI-tjänsten
-
-
-## <a name="what-is-recent-content"></a>Vad är senaste innehåll
 Det senaste innehållet är de senaste objekten du besökte i Power BI-tjänsten, max. 20 objekt.  Dessa omfattar: instrumentpaneler, rapporter, appar och arbetsböcker för alla dina arbetsytor.
 
 ![Fönstret Senaste innehåll](./media/end-user-recent/power-bi-recent-screen.png)
@@ -39,10 +36,10 @@ Om du har fler än fem senast besökta objekt väljer du **se alla** för att ö
 
 ![visa allt senaste innehåll](./media/end-user-recent/power-bi-recent-list.png)
 
-Härifrån du kan interagera med innehållet som samma sätt som på enskilda flikar i [ **instrumentpaneler**](end-user-dashboards.md), [ **rapporter**](end-user-reports.md), och  **arbetsböcker**, och på skärmen [ **Appar** ](end-user-apps.md).
+Härifrån du kan interagera med innehållet på samma sätt som på enskilda flikar i [ **instrumentpaneler**](end-user-dashboards.md), [ **rapporter**](end-user-reports.md) och  **arbetsböcker**, och på skärmen <!--[**Apps**](end-user-apps.md)--> Appar.
 
 ## <a name="next-steps"></a>Nästa steg
-[Power BI-tjänstens appar](end-user-apps.md)
+<!--[Power BI service Apps](end-user-apps.md)-->
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
