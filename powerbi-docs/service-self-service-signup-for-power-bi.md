@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: bfd3c1242ff5eb0d00078dbeb376dba8b0b6aa20
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909071"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641722"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI
 Lär dig hur du registrerar dig för Power BI och börja använda det för dina personliga rapport- och visualiseringsbehov.
@@ -142,7 +142,7 @@ I många fall kan du registrera dig för Power BI genom att följa den enkla pro
 ## <a name="next-steps"></a>Nästa steg  
 [Köp Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI-serviceavtal för enskilda användare](https://powerbi.microsoft.com/terms-of-service/)  
-[Power BI Premium – vad är det?](service-premium.md)  
+[Vad är Power BI Premium?](service-premium.md)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

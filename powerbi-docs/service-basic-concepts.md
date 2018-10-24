@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ce37c13d313a44af5f082c0db2a72dbf4d53aca5
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: 8a95dae913c2069fa3768d66c55d2b1358640000
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48875451"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641929"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundläggande begrepp för Power BI-tjänsten
 
@@ -82,7 +82,7 @@ Om du [ingår i en ***app-arbetsyta***](service-collaborate-power-bi-workspace.m
 Datauppsättningar kan uppdateras, döpas om, utforskas och tas bort. Du kan använda en datauppsättning för att skapa en rapport från grunden eller genom att köra [Quick Insights](service-insights.md).  Om du vill se vilka rapporter och instrumentpaneler som redan använder en datauppsättning, väljer du **Visa relaterade**. Välj datauppsättningen för att utforska den. Vad du faktiskt gör är att öppna datauppsättningen i rapportredigeraren där du verkligen kan börja utforska data och skapa visualiseringar. Så låt oss gå vidare till nästa avsnitt  – rapporter.
 
 ### <a name="dig-deeper"></a>Gå djupare
-* [Power BI Premium – vad är det?](service-premium.md)
+* [Vad är Power BI Premium?](service-premium.md)
 * [Hämta data för Power BI](service-get-data.md)
 * [Exempel på datauppsättningar för Power BI](sample-datasets.md)
 

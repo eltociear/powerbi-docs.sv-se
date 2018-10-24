@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
-ms.openlocfilehash: e4173811db0de0dc95e0bd324517a5750165983e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 666938d8d852793b68bb278147c61f077c839ed2
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908657"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435374"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Skapa en Power BI-instrumentpanel från en rapport
 Du har läst [Instrumentpaneler i Power BI](service-dashboards.md) och nu är det dags att du skapar en egen. Det finns många olika sätt för att skapa en instrumentpanel – från en rapport, från början, från en datauppsättning, genom att duplicera en befintlig instrumentpanel, med mera.  
@@ -109,7 +109,7 @@ Grattis – du har skapat din första instrumentpanel! Nu när du har en instrum
 ## <a name="next-steps"></a>Nästa steg
 * [Redigera och flytta paneler](service-dashboard-edit-tile.md)
 * [Allt om panelerna på instrumentpanelen](service-dashboard-tiles.md)
-* [Dela din instrumentpanel genom att skapa en app](service-install-use-apps.md)
+* [Dela din instrumentpanel genom att skapa en app](service-create-workspaces.md)
 * [Power BI – grundläggande begrepp](service-basic-concepts.md)
 * [Tips för att designa en bra instrumentpanel](service-dashboards-design-tips.md)
 
