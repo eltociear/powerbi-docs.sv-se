@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 10/18/2018
 ms.author: maikelson
-ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137653"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473967"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -22,9 +22,7 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
-
->[Delta i kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+>[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Aktuella webbseminarier
 
@@ -34,21 +32,29 @@ Kom igång med dessa populära webbseminarier på begäran
 <br>av Miguel Martinez
 <br>[Registrera dig och titta nu](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
-**Power BI-tips, -råd och -verktyg från ägarna av PowerBI.Tips**
-<br>av Mike Carlo och Sebastian Bauer
-<br>[Titta nu](https://www.youtube.com/watch?v=fnj1_e3HXow)
-
 **Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes** (Lär dig att navigera på en Power BI-instrumentpanel på 20 minuter)
 <br>av Miguel Martinez
 <br>[Registrera dig och titta nu](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Microsoft drivs av Power BI – ekonomiplanering och -analys på ett enkelt sätt**
+<br>av Cory Hrncirik och Miguel Martinez
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Visualisera dina Power BI-data: Viktiga diagramtyper och hur du använder dem**
+<br>av Miranda Li
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
+**Power BI, Excel och Office 365: Optimera dina företagsdata**
+<br>av Olaf Hubel och Miguel Martinez
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
 **Helt enkelt tilltalande – Tips för bättre visualiseringsdesign**
 <br>av Miranda Li
 <br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Bättre tillsammans: 5 fördelar som Excel-användare får av att använda Power BI**
-<br>av Carlos Otero och Miguel Martinez
-<br>[Registrera dig och titta nu](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
+**Power BI-tips, -råd och -verktyg från ägarna av PowerBI.Tips**
+<br>av Mike Carlo och Sebastian Bauer
+<br>[Titta nu](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 >[Bläddra igenom biblioteket med Power BI webbseminarier på begäran från våra experter](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -61,6 +67,10 @@ Titta på inspelade sessioner när som helst
 **Så här skapar du visuellt bländande Power BI-rapporter**
 <br>av Charles Sterling
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Bättre tillsammans: 5 fördelar som Excel-användare får av att använda Power BI**
+<br>av Carlos Otero och Miguel Martinez
+<br>[Registrera dig och titta nu](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 **Lär dig mer om Power BI Embedded på 20 minuter**
 <br>av Megan Asarrane och Colin Murphy

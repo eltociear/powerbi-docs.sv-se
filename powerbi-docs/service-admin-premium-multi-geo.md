@@ -1,21 +1,21 @@
 ---
-title: Multi-Geo-stöd i Power BI Premium (förhandsversion)
+title: Multi-Geo-stöd för Power BI Premium (förhandsversion)
 description: Lär dig hur du kan distribuera innehåll till datacentra i andra regioner än Power BI-klientorganisationens hemregion.
-author: maggiesMSFT
-ms.author: maggies
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/31/2018
+ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 135217acbe6289edb73c39035f58df8babf32566
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 1041dcf8c345bfdf8d5a6ae9823d4cecd5c323a6
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300194"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641682"
 ---
 # <a name="multi-geo-support-for-power-bi-premium-preview"></a>Multi-Geo-stöd för Power BI Premium (förhandsversion)
 
@@ -40,7 +40,7 @@ Multi-Geo finns nu även i Power BI Embedded. Läs mer i [Multi-Geo-stöd för P
 Aktivera Multi-Geo genom att välja en annan region än standardregion i listrutan om du vill ha nya kapaciteter.  Varje tillgänglig kapacitet visar i vilken region där den för närvarande finns, t.ex. **USA, västra centrala**.
 
 ![Kapacitetsstorlek: välj en region. Power BI med Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
-  
+
 När du har skapat en kapacitet finns den kvar i den regionen, och alla arbetsytor som skapats får sitt innehåll sparat i den regionen. Du kan migrera arbetsytor från en region till en annan via listrutan på skärmen för arbetsyteinställningar.
 
 ![Redigera arbetsyta: välj en tillgänglig kapacitet. Power BI med Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
@@ -91,11 +91,8 @@ Du kan ta bort arbetsytor från Multi-Geo-kapaciteten på något av följande tv
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
 - Bekräfta att varje förflyttning du upprättar mellan regioner följer alla företags- och myndighetskrav innan du påbörjar dataöverföringen.
-
 - En cachelagrad fråga som lagras i en avlägsen region kvar i den regionen i vila. Andra data under överföring kan dock flyttas fram och tillbaka mellan flera geografiska områden.
-
 - När du flyttar data från en region till en annan i en Multi-Geo-miljö kan källdata finnas kvar i upp till 30 dagar i den region från vilken data har flyttats. Under den tiden har slutanvändare inte åtkomst till den. Den tas bort från den här regionen och förstörs under 30-dagarsperioden.
-
 - Multi-Geo resultera inte i bättre prestanda i allmänhet. Att läsa in rapporter och instrumentpaneler involverar fortfarande förfrågningar om metadata från hemregionen.
 
 ## <a name="next-steps"></a>Nästa steg

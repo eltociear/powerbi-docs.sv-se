@@ -1,23 +1,23 @@
 ---
-title: Visa en rapport i Power BI-tjänsten
-description: Öppna en Power BI-rapport i läsvyn.
+title: Visa en rapport i Power BI-tjänsten för användare.
+description: Det här avsnittet visar hur Power BI-användare öppnar och visar en Power BI-rapport.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/17/2018
 ms.author: mihart
-ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 15259d472ad315eb0a6274e59ebb30b94f48a302
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112025"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396944"
 ---
-# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Visa en rapport i Power BI-tjänsten (app.powerbi.com)
-En rapport är en eller flera sidor med visuella objekt. Rapporter skapas med Power BI-*rapportdesigners* och [delas med dig direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 
+# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *användare*
+En rapport är en eller flera sidor med visuella objekt. Rapporter skapas av Power BI-*rapportdesigner* och [delas med *användare* direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 
 
 Det finns många olika sätt att öppna en rapport och vi kommer att visa dig två av dem: Öppna från startsidan och öppna från en instrumentpanel. 
 
@@ -42,7 +42,7 @@ Power BI-*designers* kan dela en rapport med dig genom att klicka på knappen **
    
    ![delat med mig-delen av startsidan](./media/end-user-report-open/power-bi-shared.png)
 
-4. Markera bara ett av rapportkorten för att öppna rapporten.
+4. Öppna rapporten genom att välja ett av *rapportkorten*.
 
    ![rapportsida](./media/end-user-report-open/power-bi-report1.png)
 
@@ -65,10 +65,10 @@ Om du har fått appar från kollegor eller från AppSource, är dessa appar till
 
    ![Startsida](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Välj en av apparna för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas sin en instrumentpanel eller en rapport. Om du väljer appen:
+8. Välj en av apparna för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas i en instrumentpanel, en rapport eller en appinnehållslista. Om du väljer appen:
     - öppnas rapporten, allt är klart.
     - öppnas en instrumentpanel, se [öppna en rapport från en instrumentpanel](#Open-a-report-from-a-dashboard) nedan.
-
+    - öppnas appinnehållslistan under **Rapporter**, och rapporten öppnas genom att välja den.
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Öppna en rapport från en instrumentpanel
@@ -83,15 +83,15 @@ Rapporter kan öppnas från en instrumentpanel. De flesta paneler på instrument
     ![öppen rapport i Läsvyn](./media/end-user-report-open/power-bi-report-new.png)
 
 > [!NOTE]
-> Inte alla paneler leder till en rapport. Om du väljer en panel som [skapades med Frågor och svar](../service-dashboard-pin-tile-from-q-and-a.md), visas Frågor och svar-skärmen. Om du väljer en panel som [skapades med instrumentpanelens **Lägg till panel**-widget](../service-dashboard-add-widget.md), kommer widgeten **Redigera panel** att öppnas.  
+> Inte alla paneler leder till en rapport. Om du väljer en panel som [skapades med Frågor och svar](end-user-q-and-a.md), visas Frågor och svar-skärmen. Om du väljer en panel som [skapades med instrumentpanelens **Lägg till panel**-widget](../service-dashboard-add-widget.md), kan flera saker hända.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Ännu fler sätt att öppna en rapport
 När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du att lista ut de arbetsflöden som fungerar bäst för dig. Några andra sätt att komma åt rapporter:
 - Från det vänstra navigeringsfönstret med **Favoriter** och **Senaste**    
 - Med [Visa relaterade](end-user-related.md)    
-- I ett e-postmeddelande när någon [delar med dig](../service-share-reports.md) eller [ställer in en avisering](../service-set-data-alerts.md)    
-- Från [meddelandecentret] (end-user-notification-center.md)    
+- I ett e-postmeddelande när någon [delar med dig](../service-share-reports.md) eller [ställer in en avisering](end-user-alerts.md)    
+- Från ditt [Meddelandecenter](end-user-notification-center.md)    
 - och mycket mer
 
 ## <a name="next-steps"></a>Nästa steg

@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112278"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396829"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
-Om du vill se de data som används i en visualisering, kan du visa dessa data i Power BI eller exportera data till Excel som en XLSX- eller CSV-fil.   
+Om du vill se de data som används i en visualisering, kan du visa dessa data i Power BI eller exportera data till Excel som en XLSX- eller CSV-fil. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. 
 
 Här kan du se Will exportera data från en visualisering i sin rapport, spara den som .xlsx-fil och öppna den i Excel. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
@@ -92,9 +92,12 @@ Vad som visas när du väljer **Underliggande data** kan variera. Du kanske beh�
 
 ### <a name="set-the-export-options"></a>Ange exportalternativ för
 Power BI-rapportdesigners styr vilka typer av alternativ för export av data som är tillgängliga för deras kunder. Alternativen är:
-- Tillåt export av endast sammanfattade (detta är standardinställningen för rapporter) 
-- Tillåt export av sammanfattade och underliggande data  
+- Tillåt export av endast sammanfattade data (detta är standardinställningen för nya rapporter) 
+- Tillåt export av sammanfattade och underliggande data (detta var standardinställningen före oktober 2018) 
 - Tillåt inte export av några data  
+
+    > [!IMPORTANT]
+    > Vi rekommenderar att rapportdesigner går tillbaka till gamla rapporter och återställer exportalternativet manuellt, om det behövs.
 
 1. Starta i Power BI Desktop för att ställa in de här alternativen.
 

@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 07/13/2018
-ms.openlocfilehash: 9df612d80d3f322a8391eeb43430942a03850470
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827466"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396875"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Självstudier: Bädda in en Power BI-rapport, instrumentpanel eller panel till ett program för din organisation
 
@@ -158,13 +158,13 @@ Följ de här stegen om du vill börja bädda in innehåll med hjälp av ett exe
 
     ![Exempelprogram för användare äger data](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Öppna filen **Cloud.config** i exempelprogrammet. Du måste fylla i några fält för att kunna köra programmet: **ClientID** och **ClientSecret**.
+2. Öppna filen **Cloud.config** i exempelprogrammet. Det finns några fält som du måste fylla i för att kunna köra programmet: **ApplicationID** och **ApplicationSecret**.
 
     ![Cloud.config-fil](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Fyll i informationen **ClientID** med **Program-ID** från Azure. **ClientID** används av programmet för att identifiera sig för användare som du begär behörighet från.
+    Fyll i **ApplicationID**-uppgifterna med **Program-ID** från Azure. **ApplicationID** används av programmet för att identifiera sig för de användare som du begär behörighet från.
 
-    För att hämta **ClientID** gör du följande:
+    Hämta **ApplicationID** genom att utföra följande steg:
 
     1. Logga in på [Azure-portalen](https://portal.azure.com).
 
@@ -174,17 +174,17 @@ Följ de här stegen om du vill börja bädda in innehåll med hjälp av ett exe
 
         ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Välj det program som behöver använda **ClientID**.
+    1. Välj det program som behöver använda **ApplicationID**.
 
         ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Du bör se ett **program-ID** som har listats som en GUID. Använd detta **program-ID** som **ClientID** för programmet.
+    1. Du bör se ett **program-ID** som har listats som en GUID. Använd detta **program-ID** som **ApplicationID** för appen.
 
-        ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Fyll i informationen **ClientSecret** från avsnittet **Nycklar** från avsnittet **Appregistreringar** i **Azure**.
+    1. Fyll i **ApplicationSecret**-uppgifterna från avsnittet **Nycklar** från avsnittet **Appregistreringar** i **Azure**.
 
-    1. För att hämta **ClientSecret** gör du följande:
+    1. Hämta **ApplicationSecret** genom att utföra följande steg:
 
         1. Logga in på [Azure-portalen](https://portal.azure.com).
 
@@ -194,7 +194,7 @@ Följ de här stegen om du vill börja bädda in innehåll med hjälp av ett exe
 
             ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Välj det program som behöver använda **ClientSecret**.
+        1. Välj det program som behöver använda **ApplicationSecret**.
 
             ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 

@@ -9,19 +9,22 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: 3777d082d8e0d166abadd2ab89035d6895421f24
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a03870fd0443a00803edceb5d4821161ccb7693a
+ms.sourcegitcommit: d8109b605052096fc0eb613f2a1340570b99b2f5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44747680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49651044"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
 Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mobilappen för att ansluta till Power BI-rapportservern och SQL Server Reporting Services 2016 eller senare.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-Du kan ansluta till Power BI-rapportservern och Reporting Services via OAuth för att visa mobila rapporter eller KPI:er. Windows Server 2016 innehåller vissa förbättringar av rolltjänsten Web Application Proxy (WAP) för att tillåta den här typen av autentisering. Observera att det för tillfället inte finns officiellt stöd för att visa Power BI-rapporter som finns i Power BI-rapportservern och autentiserar med WAP.
+Du kan ansluta till Power BI-rapportservern och Reporting Services via OAuth för att visa mobila rapporter eller KPI:er. Windows Server 2016 innehåller vissa förbättringar av rolltjänsten Web Application Proxy (WAP) för att tillåta den här typen av autentisering.
+
+   > [!NOTE]
+   > För tillfället finns det inte officiellt stöd för att visa Power BI-rapporter som finns i Power BI-rapportservern och autentiserar med WAP.
 
 ## <a name="requirements"></a>Krav
 Windows Server 2016 krävs för Webbprogramproxy (WAP) och Active Directory Federation Services (AD FS)-servrar. Du behöver inte ha en funktionell domännivå för Windows 2016.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 10/23/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 7de11de4c10df6a76f031f88952671d0e365b498
+ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49952221"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hämta data från en webbplats genom att ge ett exempel
 
@@ -51,6 +51,8 @@ Om du väljer **Extrahera tabell med exempel** så får du upp ett interaktivt f
 I det här exemplet ska vi extrahera *Namn* och *Pris* för varje spel på sidan. Vi kan göra det genom att ange några exempel från sidan för varje kolumn, som visas i följande bild. Allteftersom exemplen skrivs in, kan **Power Query** (som är den underliggande teknik som hämtar data från webbsidan) extrahera data som passar mönstret för exempelposterna med hjälp av algoritmer för smart dataextrahering.
 
 ![data efter exempel](media/desktop-connect-to-web-by-example/web-by-example_06.png)
+
+> Obs! Värdeförslagen innehåller endast värden som är mindre än eller lika med 128 tecken.
 
 När vi är nöjda med de data som hämtats från webbsidan, väljer vi **OK** för att gå till **Frågeredigeraren**, där vi kan använda fler transformationer eller forma data, till exempel kombinera de med andra data från våra källor.
 

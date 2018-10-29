@@ -10,155 +10,152 @@ ms.topic: conceptual
 ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 5c0c6fd619a2487f9c801200d732cda628a68055
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 379f80e1e87181ffdacdaab01d87ff435f2a9501
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974010"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473784"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Många-till-många-relationer i Power BI Desktop (förhandsversion)
 
-Med funktionen **många-till-många relation** i **Power BI Desktop** kan du ansluta tabeller med en kardinalitet på **många till många** och skapa datamodeller som innehåller flera datakällor på ett enklare och mer intuitivt sätt. Funktionen **många-till-många-relation** är en del av de mer omfattande **sammansatta modeller**-funktionerna i **Power BI Desktop**.
+Med funktionen *många-till-många-relationer* i Power BI Desktop kan du koppla tabeller som använder en kardinalitet för *Många till många*. Du kan på ett enklare och mer intuitivt sätt skapa datamodeller som innehåller två eller flera datakällor. Funktionen *många-till-många-relation* är en del av de mer omfattande *sammansatta modeller*-funktionerna i Power BI Desktop.
 
-![många-till-många i dialogrutan Redigera relation](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+![En många-till-många-relation i fönsterrutan ”Redigera relation”](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-Funktionen **många-till-många-relationer** i **Power BI Desktop** är en del av en samling av tre relaterade funktioner:
+Funktionen *många-till-många-relationer* i Power BI Desktop är en av tre relaterade funktioner:
 
-* **Sammansatta modeller** – låter en rapport ha flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination.
-* **Många-till-många-relationer** – med **sammansatta modeller** kan du etablera **många-till-många-relationer** mellan tabeller, vilket tar bort kravet om unika värden i tabeller och tar bort tidigare lösningar som att introducera nya tabeller bara för att etablera relationer. 
-* **Lagringsläge** – du kan nu ange vilka visuella objekt som kräver en fråga till datakällor i serverdelen och de som inte kräver det importeras även om de baseras på DirectQuery, vilket förbättrar prestandan och minskar belastningen på serverdelen. Tidigare initierade även enkla visuella objekt som utsnitt frågor som skickades till serverdelskällor. 
+* **Sammansatta modeller**: Gör så att en rapport kan ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Du hittar mer information i [Använd sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
 
-Den här samlingen med tre relaterade funktioner för **sammansatta modeller** beskrivs var och en i separata artiklar:
+* **Många-till-många-relationer**: Med *sammansatta modeller* kan du etablera *många-till-många-relationer* mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Denna funktion beskrivs ytterligare i den här artikeln.
 
-* **Sammansatta modeller** beskrivs i detalj i artikeln [sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
-* **Många-till-många-relationer** beskrivs i den här artikeln.
-* **Lagringsläge** beskrivs i en egen artikel, [lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md).
+* **Lagringsläge**: Nu kan du ange vilka visuella objekt som kräver en fråga till serverdelens datakällor. Visuella objekt som inte kräver en fråga importeras även om de är baserade på DirectQuery. Den här funktionen hjälper till att förbättra prestanda och minskar belastningen på serversidan. Tidigare startade även enkla visuella objekt såsom utsnitt frågor som skickades till serverdelskällor. Mer information finns i [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md).
 
-## <a name="enabling-the-many-to-many-relationships-preview-feature"></a>Aktivera förhandsfunktionen många-till-många-relationer
+## <a name="enable-the-many-to-many-relationships-preview-feature"></a>Aktivera förhandsversionsfunktionen *många-till-många-relationer*
 
-Funktionen **många-till-många-relationer** är en del av funktionerna för **sammansatta modeller** och är i förhandsversion så måste aktiveras i **Power BI Desktop**. Om du vill aktivera **sammansatta modeller** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsfunktioner** och markera sedan kryssrutan **sammansatta modeller**.
+Funktion *många-till-många-relationer* måste aktiveras i Power BI Desktop. Om du vill aktivera sammansatta modeller väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ** > **Förhandsversionsfunktioner** och markerar kryssrutan **Sammansatta modeller**.
 
-![aktivera förhandsfunktioner](media/desktop-composite-models/composite-models_02.png)
+![Rutan ”Förhandsversionsfunktioner”](media/desktop-composite-models/composite-models_02.png)
 
-Du måste starta om **Power BI Desktop** för att funktionen ska aktiveras.
+Du måste starta om Power BI Desktop för att aktivera funktionen.
 
-![omstart krävs för att ändringarna ska börja gälla](media/desktop-composite-models/composite-models_03.png)
+![Fönstret ”Funktionen kräver en omstart”](media/desktop-composite-models/composite-models_03.png)
 
+## <a name="what-many-to-many-relationships-solves"></a>Vad *många-till-många relationer* löser
 
-## <a name="what-many-to-many-relationships-solves"></a>Vad många-till-många relationer löser
+Innan funktionen *många-till-många-relationer* blev tillgänglig definierades relationen mellan två tabeller i Power BI. Minst en av de tabellkolumner som ingick i relationen var tvungen att innehålla unika värden. Ofta innehöll dock inga kolumner unika värden. 
 
-När du definierade en relation mellan två tabeller i Power BI innan **många-till-många-relationer** fanns att tillgå, behövde minst en av kolumnerna i relationen innehålla unika värden. I många fall innehöll dock ingen kolumn i tabellen unika värden. 
+Till exempel hade två tabeller kanske en kolumn med namnet *Land*, men värdena för *Land* var inte unika i endera tabell. Det var nödvändigt att skapa en lösning för att koppla sådana tabeller. En sådan lösning kan vara att i modellen introducera ytterligare tabeller med nödvändiga unika värden. Med funktionen *många-till-många-relationer* kan du koppla sådana tabeller direkt genom att använda en relation med en kardinalitet för **Många till många**.  
 
-Två tabeller kanske till exempel hade en kolumn som innehåller *Land*, men värdena för *Land* var inte unika i någon av tabellerna. För att ansluta sådana tabeller så behövde du skapa en lösning, till exempel införa ytterligare tabeller i modellen som innehåller nödvändiga unika värden. Funktionen **många-till-många-relationer** erbjuder ett alternativt tillvägagångssätt så att sådana tabeller kan anslutas direkt med hjälp av en relation med en kardinalitet på **många-till-många**.  
+## <a name="use-many-to-many-relationships"></a>Använda *många-till-många-relationer*
 
-## <a name="using-many-to-many-relationships"></a>Använd många-till-många-relationer
+När du definierar en relation mellan två tabeller i Power BI måste du definiera kardinaliteten för relationen. Till exempel skulle relationen mellan *ProductSales* och *Produkt*&mdash;med hjälp av kolumnerna *ProductSales[ProductCode]* och *Product[ProductCode]*&mdash;definieras som *Många-1*. Vi definierar relationen på det här sättet eftersom det finns många försäljningar för varje produkt och kolumnen i tabellen *Product* *(ProductCode)* är unik. När du definierar en relationskardinalitet som *Många-1*, *1-Många* eller *1-1* verifierar Power BI den för att säkerställa att den kardinalitet som du väljer matchar faktiska data.
 
-När du definierar en relation mellan två tabeller i Power BI, måste du definiera kardinaliteten för relationen. Relationen mellan *ProductSales* och *Produkt* (med hjälp av kolumnerna *ProductSales[ProductCode]* och *Product[ProductCode]*) skulle till exempel definieras som **Många-1**, eftersom det finns många försäljningar för varje produkt och kolumnen i *Produkt*-tabellen *(ProductCode)* är unik. När du definierar en relationskardinalitet som **Många-1**, **1-många** eller **1-1**, utför Power BI validering för att säkerställa att den kardinalitet som valts matchar de faktiska data.
+Se till exempel den enkla modellen i följande bild:
 
-Ta till exempel en titt på den enkla modellen i följande bild.
+![Relationsvy](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
 
-![relationsvy](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
+Tänk dig nu att tabellen *Produkt* bara visar två rader enligt nedan:
 
-Tänk dig sedan om *Produkt*-tabellen bara innehöll två rader.
+![Visualisering av produkttabell med två rader](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
 
-![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
+Tänk dig även att tabellen *Försäljning* bara hade fyra rader, inklusive en rad för produkt C. På grund av ett fel med referensintegritet finns raden för produkt C inte i tabellen *Produkt*.
 
-Tänk dig också att *Försäljning*-tabellen bara hade fyra rader, inklusive *Försäljning* för en produkt **C** som inte finns i *Produkt*-tabellen (på grund av ett referensintegritetsfel).
+![Visualisering av tabellen Försäljning med fyra rader](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
 
-![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
+*ProductName* och *Pris* (från tabellen *Produkt*), tillsammans med den totala *Kvantitet* för varje produkt (från tabellen *ProductSales*) skulle då visas som i följande bild: 
 
-Ett visuellt objekt som visade *ProductName* och *Pris* (från den *Produkt*-tabellen), tillsammans med den totala *Mängden* för varje produkt (från *ProductSales*-tabellen) skulle då visas som i följande bild: 
+![Visualisering av produktnamn, pris och kvantitet](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
 
-![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
+Som du ser i föregående bild finns en tom rad med namnet *ProductName* som är associerad med försäljning för produkten C. Den här tomma raden står för följande:
 
-Som du ser i föregående bild, finns det en rad i det visuella objektet med en tom *ProductName* associerad med försäljning av produkt *C*. Den här tomma raden visar följande:
+* Alla rader i tabellen *ProductSales* som det inte finns någon motsvarande rad för i tabellen *Produkt*. Det finns ett problem med referensintegritet, som vi kan se för produkten *C* i det här exemplet.
 
-* Alla rader i *ProductSales*-tabellen där det inte finns en motsvarande rad i *Produkt*-tabellen – det finns ett referensintegritetsproblem, som vi kan se för produkten *C* i det här exemplet.
+* Alla rader i tabellen *ProductSales* där sekundärnyckelkolumnen är null. 
 
-* Alla rader i *ProductSales*-tabellen där sekundärnyckelkolumnen är Null. 
+Av dessa anledningar står den tomma raden i båda fallen för försäljning där *ProductName* och *Pris* är okända.
 
-Av den anledning motsvarar de tomma raderna i bägge fall försäljning där *ProductName* och *Pris* är okända.
+Det händer dock ibland att tabellerna kopplas av två kolumner men ingendera kolumn är unik. Tänk dig exempelvis följande två tabeller:
 
-Det är dock ibland fallet att tabellerna ansluts av två kolumner men ingendera kolumn är unik. Tänk dig exempelvis följande två tabeller:
+* Tabellen *Försäljning* visar försäljningsdata efter *Delstat*, där varje rad innehåller försäljningsmängd för typen av försäljning i den delstaten. Delstaterna inkluderar CA, WA och TX. 
 
-* *Försäljning*-tabellen innehåller försäljningsdata efter *Stat*, där varje rad innehåller försäljningsmängd för den typen av försäljning i den staten (inklusive staterna CA, WA och TX) 
+    ![Försäljningstabell som visar försäljning efter delstat](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
 
-    ![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
+* Tabellen *CityData* visar data om städer, inklusive befolkning och delstat (inklusive CA, WA och New York).
 
-* *CityData*-tabellen innehåller data om städer, inklusive befolkning och stat (inklusive staterna CA, WA och New York)
+    ![Försäljningstabell som visar stad, delstat och befolkning](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
 
-    ![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
+Även om det finns en kolumn för *Delstat* i båda tabellerna, och det är rimligt att vilja rapportera om både total försäljning efter delstat och total befolkning i varje delstat, finns det ett problem: kolumnen *Delstat* är inte unik i endera tabell. 
 
-Även om det finns en kolumn för *Stat* i bägge tabeller och det är rimligt att vilja rapportera om total *Försäljning* efter *Stat*, tillsammans med den totala befolkningen i varje stat så finns det ett problem: kolumnen *Stat* är inte unik i någon av tabellerna. 
+## <a name="the-previous-workaround"></a>Den tidigare lösningen
 
-## <a name="the-prior-workaround"></a>Den tidigare lösningen
+I Power BI Desktop-versioner som är äldre än versionen för juli 2018 kunde användare inte skapa en direkt relation mellan dessa tabeller. En vanlig lösning var att göra följande:
 
-I versioner av **Power BI Desktop** före juli 2018-versionen så gick det inte att skapa en relation direkt mellan dessa tabeller. En vanlig lösning på problemet var att göra följande:
+* Skapa en tredje tabell som bara innehåller unika ID:n för *Delstat*. Tabellen skulle kunna vara något eller allt av följande:
+  * En beräknad tabell (definieras med hjälp av Data Analysis-uttryck [DAX]).
+  * En tabell baserad på en fråga som definieras i frågeredigeraren, som kan visa de unika ID:na hämtade från en av tabellerna.
+  * Den kombinerade fullständiga uppsättningen.
 
-* Skapa en tredje tabell som bara innehåller ID för de unika *Staterna*. Det kan antingen vara en beräknad tabell (definierad med hjälp av DAX), eller en tabell som definieras med en fråga som definierats i **Frågeredigeraren** som kan innehålla unika ID som tagits från en av tabellerna eller den sammanslagna fullständiga uppsättningen.
+* Relatera de två ursprungliga tabellerna till den nya tabellen med hjälp av vanliga *Många-1*-relationer.
 
-* Relatera de två ursprungliga tabellerna till den nya tabellen med vanliga **många-1* relationer.
+Du kan antingen lämna lösningstabellen synlig eller dölja den så att den inte visas i listan **Fält**. Om du skulle dölja tabellen skulle *Många-1*-relationerna vanligtvis anges att filtrera i båda riktningarna, och då skulle då kunna använda fältet *Delstat* från endera tabell. Efterföljande korsfiltrering skulle spridas till den andra tabellen. Denna metod visas i följande bild:
 
-Den lösningstabellen kunde antingen vara synlig eller döljas så att den inte syns i fältlistan. I det senare fallet skulle **Många-1** relationerna vanligtvis anges att filtrera i bägge riktningar så att *Stat*-fältet från endera tabell kan användas, med efterföljande korsfiltrering som fyller i den andra tabellen. Den lösningen visas i följande bild av **Relationsvyn**.
+![Relationsvy](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
 
-![relationsvy](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
+Ett visuellt objekt som visar *Delstat* (från tabellen *CityData*) tillsammans med total *Befolkning* och total *Försäljning*, ser då ut på följande sätt:
 
-Ett visuellt objekt som visar *Stat* (från tabellen *CityData*) tillsammans med den totala *Befolkningen* och total *Försäljning* blir då på följande sätt.
-
-![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
-
-Observera att för användningen av stat från *CityData*-tabellen i den här lösningen, kan endast de *Stat*er i den tabellen listas (och därför utesluts TX). Dessutom, till skillnad från i fallet med **Många-1** så även om den totala raden inkluderar all *Försäljning* (inklusive från TX) så inkluderar informationen inte en tom rad som täcker sådana felmatchade rader. På samma sätt skulle det inte finnas någon tom rad som täcker *Försäljning* där det var ett null-värde för *Staten*.
-
-Om *Stad* också lades till i det visuella objektet så medan befolkning per *Stad* är känt, skulle den *Försäljning* som visas för *Stad* bara upprepa *Försäljning* för motsvarande *Stat* (som normalt är fallet när du grupperar på en kolumn som inte är relaterad till ett visst sammanställningsmått) som det visas i följande bild.
-
-![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
-
-Om den nya tabellen *Försäljning* definierades att vara summan av alla *Stater* i den här lösningen och gjordes synlig i fältlistan så skulle samma visuella objekt som visar *Stat* (på den nya tabellen) tillsammans med total *Befolkning* och total *Försäljning* vara som följer.
-
-![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
-
-I det fallet som det visas i det visuella objektet, skulle *TX* (med *Försäljning* men okänd befolkning) och *New York* (med känd befolkning med utan *Försäljning*) inkluderas. 
-
-Som du ser var den här lösningen inte optimal och hade många problem. I och med skapandet av **många-till-många-relationen** har de här problemen åtgärdats, som det beskrivs i följande avsnitt.
-
-## <a name="using-many-to-many-relationships-instead-of-the-workaround"></a>Använd många-till-många-relationer istället för lösningen
-
-I versioner av **Power BI Desktop** från och med juli 2018, kan du direkt relatera sådana tabeller som beskrivs i föregående avsnitt utan att behöva använda den typen av lösningar. Det går nu att ställa in kardinaliteten för en relation till **Många-till-många** vilket anger att ingen av tabellerna innehåller unika värden. För sådana relationer kan du fortfarande kontrollera vilken tabell som filtrerar den andra, eller ha tvåriktad filtrering där bägge tabeller filtrerar varandra.  
+![Tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
-> Möjligheten att skapa **Många till många** relationer är i förhandsversion och medan den är det så går det inte att publicera modeller med **Många till många** relationer till Power BI service. 
+> Eftersom delstaten från tabellen *CityData* används i den här lösningen kan endast de delstater som anges i den tabellen listas. Därför utesluts TX. Till skillnad från fallet med *Många-1*-relationer inkluderar informationen inte en tom rad som täcker sådana felmatchade rader trots att totalraden inkluderar alla *Försäljningar* (inklusive dem i TX). På samma sätt skulle det inte finnas någon tom rad som täcker *Försäljning* där det fanns ett nullvärde för *Delstat*.
 
-I **Power BI Desktop** är kardinaliteten som standard **Många till många** när det fastställs att ingendera tabell innehåller unika värden för kolumnerna i relationen. I sådana fall visas en varning för att bekräfta att relationsinställningen är ditt avsedda beteende istället för en oavsedd effekt av ett dataproblem. 
+Om du även lägger till *Stad* till det visuella objektet gäller att även om befolkningen per *Stad* är känd så upprepar den *Försäljning* som visas för *Stad* den *Försäljning* som gäller för motsvarande *Delstat*. Detta är vanligtvis fallet när grupperingen i en kolumn är inte relaterad till ett visst sammanställningsmått enligt det som visas i följande bild:
 
-När du till exempel skapar en relation direkt mellan *CityData* och *Försäljning* där filter skulle flöda från *CityData* till *Försäljning*, visas relationsdialogen som det visas i följande bild.
+![Tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
-![Dialogrutan Redigera relation](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+Om vi definierar den tabellen *Försäljning* som en kombination av alla *Delstater* i den här lösningen och gör den synlig i listan **fält** skulle samma visuella objekt visa både *Delstat* (i den nya tabellen) och total *Befolkning* samt total *Försäljning* enligt följande bild:
 
-Den resulterande **Relationsvyn** skulle då innehålla den direkta **Många till många** relationen mellan de två tabellerna. Utseendet i **Fält**-listan och efterföljande beteende när visuella objekt skapas, är sedan detsamma som att använda lösningen som beskrivs i föregående avsnitt, där extratabellen (med de olika *Staterna* i den) inte syns. Till exempel som i föregående avsnitt som beskriver lösningen en visuell objekt där *tillstånd* tillsammans med totala befolkningen och försäljning blir som följer.
+![Tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+Som du kan skulle *TX*&mdash;med *Försäljning*-data men okända *Befolkning*-data&mdash;och *New York*&mdash;med kända *Befolkning*-data men inga *Försäljning*-data&mdash;inkluderas. Den här lösningen inte optimal och har många problem. I och med skapandet av många-till-många-relationerna åtgärdas problemen enligt beskrivningen i följande avsnitt.
 
-Så den största skillnaden mellan **Många till många** relationer och typiska **Många-1** relationer är följande.
+## <a name="use-many-to-many-relationships-instead-of-the-workaround"></a>Använd *många-till-många-relationer* i stället för den tillfälliga lösningen
 
-* De värden som visas inkluderar inte en tom rad för att hantera felmatchade rader i den andra tabellen och inte heller för rader där kolumnen som används i relationen i den andra tabellen är null.
-* Det går inte att använda funktionen *RELATED()* (eftersom mer än en rad kan vara relaterad)
-* Om du använder funktionen *ALL()* på en tabell så kommer inte filter som använts på andra tabeller relaterade till den med en **Många till många** relation att tas bort. Ett mått som definierats som följande i föregående exempel skulle till exempel inte ta bort filter för kolumner på den relaterade *CityData* tabellen:
+Från och med versionen för juli 2018 av Power BI Desktop kan du direkt relatera tabeller, till exempel dem som beskrevs ovan, utan att behöva använda liknande tillfälliga lösningar. Nu är det möjligt att ange relationskardinaliteten till *Många till många*. Den här inställningen anger att ingendera tabell innehåller unika värden. För sådana relationer kan du fortfarande kontrollera vilken tabell som filtrerar den andra tabellen eller tillämpa dubbelriktad filtrering där varje tabell filtrerar den andra tabellen.  
 
-    ![skriptexempel](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+> [!NOTE]
+> Möjligheten att skapa *många-till-många-relationer* är i förhandsversion. Den är i förhandsversion, men det går inte att publicera till de Power BI-tjänstmodeller som använder *många-till-många-relationer*. 
 
-    Därmed resulterar ett visuellt objekt som visar *Stat*, *Försäljning* och *Total försäljning* i följande:
+I Power BI Desktop är kardinaliteten som standard *Många till många* när det fastställs att ingendera tabell innehåller unika värden för kolumnerna i relationen. I sådana fall visas en varning för att bekräfta att relationsinställningen är ditt avsedda beteende i stället för en oavsedd konsekvens av ett dataproblem. 
 
-    ![tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+När du till exempel skapar en relation direkt mellan *CityData* och *Försäljning*&mdash;där filter skulle flöda från *CityData* till *Försäljning*&mdash;visar Power BI Desktop fönstret **Redigera relation** enligt följande bild:
 
-Därmed är det viktigt att se till att beräkningar som använder *ALL(\<Table>)* som *% av totalsumma* returnerar de förväntade resultaten. 
+![Fönstret ”Redigera relation”](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+
+Den resulterande **Relationsvyn** skulle då visa den direkta många-till-många-relationen mellan de två tabellerna. Tabellernas visning listan **Fält** samt deras efterföljande beteende när de visuella objekten skapas liknar den gången då vi tillämpade den tillfälliga lösningen. I den här lösningen görs den extra tabell som visar distinkta *Delstat*-data inte synlig. Till exempel skulle enligt beskrivningen i föregående avsnitt ett visuellt objekt som visar *Delstat*, *Befolkning* och *Försäljning* visas på följande sätt:
+
+![Tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+
+De största skillnaderna mellan *många-till-många-relationer* och de mer typiska *Många-1*-relationerna är följande:
+
+* De värden som visas omfattar inte en tom rad som står för felmatchade rader i den andra tabellen. Inte heller står värdena för rader där den kolumn som används i relationen i den andra tabellen är null.
+* Det går inte att använda funktionen `RELATED()` eftersom mer än en rad kan vara relaterad.
+* Om du använder funktionen `ALL()` i en tabell kommer inte filter som använts på andra, relaterade tabeller av en många-till-många-relation att tas bort. I föregående exempel skulle ett mått som definierats enligt det som visas i följande skript inte ta bort filter i kolumner på den relaterade tabellen *CityData*:
+
+    ![Skriptexempel](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+
+    Ett visuellt objekt som visar data för *Delstat*, *Försäljning* och *Total försäljning* skulle resultera i följande:
+
+    ![Tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+
+Med föregående skillnader i åtanke bör du se till att de beräkningar som använder `ALL(\<Table>)`, till exempel *% av totalsumma*, returnerar de förväntade resultaten. 
 
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
-Det finns en del begränsningar för den här versionen av **många-till-många-relationer** och **sammansatta modeller**.
+Det finns en del begränsningar för den här versionen av *många-till-många-relationer* och sammansatta modeller.
 
-Följande (flerdimensionella) Live-anslutningskällor kan inte användas med **sammansatta modeller**:
+Följande (flerdimensionella) Live-anslutningskällor kan inte användas med sammansatta modeller:
 
 * SAP HANA
 * SAP Business Warehouse
@@ -166,19 +163,14 @@ Följande (flerdimensionella) Live-anslutningskällor kan inte användas med **s
 * Power BI-datauppsättningar
 * Azure Analysis Services
 
-När du ansluter till de flerdimensionella källorna med DirectQuery, kan du inte också ansluta till en annan DirectQuery-källa eller kombinera med importerade data.
+När du ansluter till dessa flerdimensionella källor med DirectQuery kan du inte ansluta till en annan DirectQuery-källa eller kombinera den med importerade data.
 
-De befintliga begränsningarna med att använda DirectQuery gäller fortfarande när du använder **många-till-många-relationer**. Många av dessa begränsningarna är nu per tabell, beroende på tabellens **lagringsläge**. En beräknad kolumn på en importerad tabell kan till exempel referera till andra tabeller, men en beräknad kolumn i en DirectQuery-tabell är fortfarande begränsad till att enbart referera till kolumner i samma tabell. Andra begränsningar gäller för modellen som helhet, om någon av tabellerna inom modellen är DirectQuery. Funktionerna **QuickInsights** och **Q & A** är till exempel inte tillgängliga på en modell om någon av tabellerna i den har **lagringsläget** DirectQuery. 
+De befintliga begränsningarna med att använda DirectQuery gäller fortfarande när du använder *många-till-många-relationer*. Många av dessa begränsningarna är nu per tabell, beroende på tabellens lagringsläge. En beräknad kolumn i en importerad tabell kan till exempel referera till andra tabeller, men en beräknad kolumn i en DirectQuery-tabell kan fortfarande bara referera till kolumner i samma tabell. Andra begränsningar gäller för modellen som helhet om någon av tabellerna inom modellen är DirectQuery. Till exempel är funktionerna QuickInsights och Frågor och svar är inte tillgängliga på en modell om någon av tabellerna i den har lagringsläget DirectQuery. 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Följande artiklar beskriver mer om sammansatta modeller och beskriver DirectQuery i detalj.
-
+Mer information om sammansatta modeller och DirectQuery finns i följande artiklar:
 * [Sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md)
 * [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md)
-
-DirectQuery-artiklar:
-
-* [Använd DirectQuery i Power BI](desktop-directquery-about.md)
-* [Datakällor som stöds av DirectQuery i Power BI](desktop-directquery-data-sources.md)
-
+* [Använda DirectQuery i Power BI Desktop](desktop-directquery-about.md)
+* [Datakällor som stöds av DirectQuery i Power BI Desktop](desktop-directquery-data-sources.md)

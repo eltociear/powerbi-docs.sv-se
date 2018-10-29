@@ -7,81 +7,76 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 23f7546ce77f9062809e65be24517f74b89fe8a2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565968"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396369"
 ---
-# <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Frågor och svar i Power BI-tjänsten och Power BI Desktop
+# <a name="qa-for-power-bi-consumers"></a>Frågor och svar för Power BI-**användare**
 ## <a name="what-is-qa"></a>Vad är frågor och svar?
-Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk. Till exempel hur mycket sålde vi förra året.  Använd frågor och svar för att utforska dina data med hjälp av intuitiva, naturliga språkfunktioner och få svar i form av tabeller och diagram. Frågor och svar skiljer sig från en sökmotor – den ger dig bara resultat om data i Power BI.
+Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk. Till exempel hur mycket sålde vi förra året.  
+Använd frågor och svar för att utforska dina data med hjälp av intuitiva, naturliga språkfunktioner och få svar i form av tabeller och diagram. Frågor och svar skiljer sig från en sökmotor – den ger dig bara resultat om data i Power BI.
 
-Den här artikeln är startpunkten för allt som rör frågor och svar. Välj en länk nedan för att lära dig hur frågor och svar fungerar i Power BI-tjänsten (instrumentpaneler och rapporter), Power BI Desktop (rapporter), Power BI Embedded och Power BI Mobile.  
+**Frågor och svar om Power BI** har endast stöd för att besvara frågor med naturligt språk som ställs på engelska. Det finns en förhandsversion för spanska som kan aktiveras av Power BI-administratören.
 
-> [!NOTE]
-> **Frågor och svar om Power BI** har endast stöd för att besvara frågor med naturligt språk som ställs på engelska. Du kan även testa förhandsfunktionen för frågor på spanska. Öppna **Power BI Desktop** och gå till **Arkiv**, **Alternativ och inställningar**, **Alternativ** och leta sedan efter fliken **Förhandsversionsfunktioner**. Markera kryssrutan för **Frågor och svar om spanskt språkstöd**.  
+**Power BI – Frågor och svar** är tillgängligt med en Pro- eller Premium-licens. 
 >
->
 
-![](media/end-user-q-and-a/pbi_qa_boxsalessqft.png)
+![trädkarta som skapats med frågor och svar](media/end-user-q-and-a/power-bi-qna.png)
 
 Att ställa frågan är bara början.  Roa dig med att resa igenom dina data och förfina eller expandera din fråga. Hitta betrodd ny information och gå till botten med information eller zooma ut för en bredare vy. Du kommer att fascineras av de insikter och upptäckter du kan göra.
 
 Upplevelsen är helt interaktiv... och snabb! Det drivs av en minnesintern lagring och svaret är nästan omedelbart.
 
-##  <a name="qa-for-consumers"></a>Frågor och svar för *konsumenter*
-När en kollega delar en instrumentpanel med dig, hittar du frågerutan för frågor och svar på instrumentpanelen i Power BI-tjänsten (app.powerbi.com), längst ned i instrumentpanelen i Power BI Mobile och ovanför visualiseringen i Power BI Embedded. Om inte ägaren har gett dig redigeringsbehörigheter, kommer du att kunna använda frågor och svar för att utforska data men inte för att spara visualiseringar som skapats med frågor och svar.
+## <a name="where-can-i-use-qa"></a>Var kan jag använda Frågor och svar?
+Du hittar Frågor och svar på instrumentpaneler i Power BI-tjänsten, längst ned på instrumentpanelen i Power BI Mobile och ovanför visualiseringen i Power BI Embedded. Om designern inte har gett dig redigeringsbehörigheter kommer du att kunna använda Frågor och svar för att utforska data men inte för att spara visualiseringar som skapats med Frågor och svar.
 
-![](media/end-user-q-and-a/powerbi-qna.png)
-
-## <a name="qa-for-creators"></a>Frågor och svar för *skapare*
-Om du är en *skapare* av Power BI-rapporter eller har redigeringsbehörigheter till en datauppsättning, hittar du frågerutan för frågor och svar på instrumentpanelen i Power BI-tjänsten och på varje rapportsida i Power BI-tjänsten och Power BI Desktop. Alla visualiseringar som du skapar med frågor och svar kan sparas på en instrumentpanel och sparas i en rapport.
-
-![](media/end-user-q-and-a/power-bi-desktop.png)
-
-Förutom att använda frågor och svar för att utforska sina data, kan skapare och datauppsättningsägare förbättra frågor och svar-upplevelsen för konsumenter genom att [ändra sina datauppsättningar](../service-prepare-data-for-q-and-a.md), lägga till [aktuella frågor](../service-q-and-a-create-featured-questions.md) och [aktivera och inaktivera frågor och svar](end-user-q-and-a-direct-query.md) för datauppsättningar med en lokal live-anslutning. I [inbäddade scenarier](../developer/qanda.md), kan utvecklare välja mellan 2 lägen: **interaktivt** och **enbart resultat**.
+![frågeruta](media/end-user-q-and-a/powerbi-qna.png)
 
 ## <a name="how-does-qa-know-how-to-answer-questions"></a>Hur kan frågor och svar veta hur de ska svara på frågor?
-### <a name="which-datasets-does-qa-use"></a>Vilka datauppsättningar använder sig frågor och svar av?
-Hur kan frågor och svar veta hur de ska svara på dataspecifika frågor? Den förlitar sig på namnen på tabellerna, kolumnerna och de beräknade fälten i den underliggande datauppsättningen. Så det du (eller datauppsättningens ägare) kallar saker och ting är viktigt!
+Frågor och svar letar efter svar i alla datamängder som är associerade med instrumentpanelen. Om en datamängd har en panel på instrumentpanelen letar Frågor och svar i efter svar i den datamängden. 
 
-Anta att du har en Excel-tabell som heter försäljning, med kolumner som heter produkt, månad, sålda enheter, bruttoförsäljning och resultat. Du skulle kunna ställa frågor om vilken som av de entiteterna.  Du skulle kunna säga visa *försäljning*, totala *vinster* per *månad*, sortera *produkter* efter *sålda enheter* och mer.
+## <a name="how-do-i-start"></a>Hur börjar jag?
+Bekanta dig först med innehållet. Titta på visualiseringarna på instrumentpanelen och i rapporten. Få en uppfattning av de typer och intervall av data som är tillgängliga för dig. Gå sedan tillbaka till instrumentpanelen och placera markören i frågerutan. Då öppnas skärmen med Frågor och svar.
 
-Frågor och svar kan besvara frågor som baseras på hur din datauppsättning är strukturerad. Hur fungerar detta för data i Salesforce? När du ansluter till ditt konto i salesforce.com, skapar Power BI automatiskt en instrumentpanel.  Innan du börjar ställa frågor med frågor och svar, kan du kolla på de data som visas i instrumentpanelens visualiseringar och på de data som visas i listmenyn för frågor och svar.
+![Skärmen med Frågor och svar](media/end-user-q-and-a/power-bi-qna-screen.png) 
 
 * Om visualiseringarnas axeletiketter och värden inkluderar försäljning, konto, månad och affärsmöjligheter så kan du ställa frågor som: vilket *konto* har de högsta *affärsmöjligheterna*, eller visa *försäljning* per månad som ett stapeldiagram.
-* Om listmenyn innehåller säljare, status och år, kan du till exempel fråga frågor som: vilken *säljare* hade den lägsta *försäljningen* i *Florida* under *2013*.
 
-Om du har webbplats-prestandadata i Google Analytics, kan be frågor och svar om tiden som lagts ner på en webbsida, antalet unika besök och användarengagemang. Eller, om du frågar demografisk data, kan du ställa frågor om ålder om hushållets inkomst efter plats.
+* Om du har prestandadata för webbplatser i Google Analytics kan du fråga Frågor och svar om den tid som tillbringats på en webbplats, antalet unika besök och användarengagemang. Eller, om du frågar demografisk data, kan du ställa frågor om ålder om hushållets inkomst efter plats.
+
+Längst ned på skärmen ser du andra användbara objekt. För varje datamängd visar Frågor och svar nyckelord och ibland även några exempel eller föreslagna frågor. Välj någon av dessa om du vill lägga till dem i frågerutan. 
+
+Ett annat sätt som Frågor och svar hjälper dig att ställa frågor på är med uppmaningar, automatisk komplettering och visuella tips. 
+
+![video](media/end-user-q-and-a/qa.gif) 
+
 
 ### <a name="which-visualization-does-qa-use"></a>Vilken visualisering använder sig frågor och svar av?
 Frågor och svar väljer den bästa visualiseringen baserat på de data som visas. Ibland definieras data i de underliggande datauppsättningarna som en viss typ eller kategori och det hjälper frågor och svar att veta hur de ska visas. Om data till exempel har definierats som en datumtyp, är det troligare att de ska visas som ett linjediagram. Data som kategoriseras som en stad visas mer troligt som en karta.
 
-Du kan också säga till frågor och svar vilka visualiseringar som ska användas genom att lägga till det i din fråga. Men kom ihåg att det inte alltid är möjligt för frågor och svar att visa data i den visualiseringstyp du begärt.
+Du kan också säga till frågor och svar vilka visualiseringar som ska användas genom att lägga till det i din fråga. Men kom ihåg att det inte alltid är möjligt för frågor och svar att visa data i den visualiseringstyp du begärt. Frågor och svar uppmanar dig med en lista över lämpliga visualiseringstyper.
 
-Information om nyckelord som frågor och svar känner igen finns i [tips för att ställa frågor](end-user-q-and-a-tips.md).
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+**Fråga**: Jag ser inte Frågor och svar på den här instrumentpanelen.    
+**Svar 1**: Om du inte ser någon frågeruta kontrollerar du först inställningarna. Det gör du genom att välja kugghjulsikonen i det övre högra hörnet i Power BI-verktygsfältet.   
+![kugghjulsikonen](media/end-user-q-and-a/power-bi-settings.png)
+
+Välj sedan **Inställningar** > **Instrumentpaneler**. Kontrollera att det finns en bockmarkering intill **Visa sökrutan för Frågor och svar på den här instrumentpanelen**.
+![Inställningar för Frågor och svar för instrumentpanelen](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-## <a name="for-more-details-about-power-bi-qa"></a>Mer information om Power BI frågor och svar
-[Översikt: så här använder du frågor och svar i Power BI-instrumentpaneler och -rapporter](../power-bi-tutorial-q-and-a.md): stegvisa instruktioner om hur du använder frågor och svar och en översikt över hur allt fungerar.
+**Svar 2**: Ibland inaktiverar instrumentpanelens *designer* eller administratören Frågor och svar. Kontakta dem och fråga om det är OK att aktivera det igen.   
 
-[Microsoft Power BI-mobilappen](mobile/mobile-apps-ios-qna.md) för iOS på iPad-, iPhone- och iPod Touch-enheter.
+**Fråga**: Jag får inte de resultat som jag vill ha när jag skriver en fråga.    
+**Svar**: Kontakta instrumentpanelens *designer*. Det finns många saker som designern kan göra för att förbättra resultaten för Frågor och svar. Till exempel kan designern byta namn på kolumner i datamängden till termer som är lätta att förstå (`CustomerFirstName` i stället för `CustFN`). Designern känner till datamängden väl och kan därför ta fram användbara frågor och lägga till dem i arbetsytan för Frågor och svar.
 
-[Microsoft Power BI Embedded](../developer/qanda.md) bädda in frågor och svar i ett program.
+![aktuell fråga som är markerad](media/end-user-q-and-a/power-bi-featured-q.png)
 
-[Tips för att ställa frågor i frågor och svar](end-user-q-and-a-tips.md): Lär dig hur du prata till frågor och svar för att få bästa möjliga resultat.
+## <a name="next-steps"></a>Nästa steg
 
-[Lägg till aktuella frågor i dina datauppsättningar](../service-q-and-a-create-featured-questions.md) så kommer frågor och svart att föreslå dessa frågor till dina kollegor.
-
-[Aktivera frågor och svar för dina lokala datauppsättningar](end-user-q-and-a-direct-query.md) om du behöver en gateway för att ansluta till datauppsättningen, använd Power BI-inställningarna för att aktivera eller inaktivera frågor och svar.
-
-[Självstudier: använd frågor och svar med detaljhandelsexemplet i Power BI-tjänsten](../power-bi-visualization-introduction-to-q-and-a.md): använd frågor och svar i en realistisk branschsjälvstudie.
-
-[Få dina data att fungera väl med frågor och svar](../service-prepare-data-for-q-and-a.md): är du den person som skapar datauppsättningar och -modeller?  Då är det här avsnittet för dig.
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

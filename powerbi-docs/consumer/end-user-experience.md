@@ -8,19 +8,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/02/2018
+ms.date: 10/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112163"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473875"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Snabbstart – Hitta rätt i Power BI-tjänsten
 
-Nu när du har grunderna i Power BI ska vi se oss omkring i **Power BI-tjänsten**. Som vi tidigare nämnt kanske någon i ditt team mer eller mindre uteslutande arbetar med att kombinera data och skapa rapporter för andra i **Power BI Desktop**. Du å andra sidan kanske i princip bara arbetar i Power BI-tjänsten, där du visar och interagerar med innehåll som skapats av andra (**användningsupplevelsen**) eller hämtar data och skapar egna rapporter och instrumentpaneler (**genereringsupplevelsen**). I den här snabbstarten ska du importera exempeldata och använda dem för att hitta rätt i Power BI-tjänsten. 
+Nu när du har grunderna i Power BI ska vi se oss omkring i **Power BI-tjänsten**. Som vi tidigare nämnt kanske någon i ditt team mer eller mindre uteslutande arbetar med att kombinera data och skapa rapporter för andra i **Power BI Desktop**. Du å andra sidan arbetar kanske i princip bara i Power BI-tjänsten, där du visar och interagerar med innehåll som skapats av andra (**användningsupplevelsen**). I den här snabbstarten ska du importera exempeldata och använda dem för att hitta rätt i Power BI-tjänsten. 
  
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -48,9 +48,11 @@ Låt Amanda visa dig navigeringsmiljön för Power BI-tjänsten.  Prova sedan sj
 
 
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Visa innehåll (instrumentpaneler, rapporter, arbetsböcker, datauppsättningar, arbetsytor, appar)
-Låt oss börja med att titta på hur grundläggande innehåll är organiserat (instrumentpaneler, rapporter, datauppsättningar, arbetsböcker). Innehållet visas på en arbetsyta. Än så länge har du bara en arbetsyta, kallad **Min arbetsyta**. På Min arbetsyta lagrar allt innehåll som du äger. Du kan se det som det personliga utvecklingsutrymme eller ett område för ditt eget innehåll. Du kan dela innehåll från Min arbetsyta med kollegor. I Min arbetsyta är innehållet uppdelat i 4 flikar: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.
+Låt oss börja med att titta på hur grundläggande innehåll är organiserat (instrumentpaneler, rapporter, datauppsättningar, arbetsböcker). Innehållet visas på en arbetsyta. Än så länge har du bara en arbetsyta, kallad **Min arbetsyta**. Normalt använder användare inte några andra arbetsytor och behöver dem inte. På Min arbetsyta lagrar allt innehåll som du äger. Du kan se det som det personliga utvecklingsutrymme eller ett område för ditt eget innehåll. Min arbetsyta är där den detaljhandelsanalys som du precis har laddat ned sparas. 
 
-![Skärmen Min arbetsyta](./media/end-user-experience/power-bi-my-workspace2.png)
+I Min arbetsyta är innehållet uppdelat i 4 flikar: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.
+
+![Skärmen Min arbetsyta](./media/end-user-experience/power-bi-my-workspace.png)
 
 Välj en arbetsyta i det vänstra navigeringsfönstret. Tabeller för det tillhörande innehållet (instrumentpaneler, rapporter, arbetsböcker och datauppsättningar) fyller Power BI-arbetsytan till höger.
 
@@ -58,7 +60,7 @@ Om du är en ny användare ser du bara en arbetsyta – **Min arbetsyta**.
 
 ![kort video om en arbetsyta](./media/end-user-experience/nav.gif)
 
-På dessa flikar (även kallade *innehållsvyer*) visas information om innehållet samt åtgärder som du kan utföra med innehållet.  Från fliken Instrumentpaneler kan du till exempel öppna en instrumentpanel, dela, ta bort, söka, skapa nytt innehåll, sortera och mycket mer.
+På dessa flikar (även kallade *innehållsvyer*) visas information om innehållet samt åtgärder som du kan utföra med innehållet.  Från fliken Instrumentpaneler kan du till exempel öppna en instrumentpanel, söka, sortera och mycket mer.
 
 ![Fliken Instrumentpaneler](./media/end-user-experience/power-bi-dashboard-tab.png)
 
@@ -83,7 +85,7 @@ Med **Favoriter** kan du snabbt komma åt det innehåll som är viktigast för d
    
     Än så länge har vi bara en favorit. Favoriter kan vara instrumentpaneler, rapporter eller appar.  
 
-1. Det går även att favoritmarkera en instrumentpanel eller en rapport på arbetsyteflikarna **Instrumentpaneler** eller **Rapporter**.  Öppna fliken **Rapporter** och välj stjärnikonen till vänster om rapportnamnet.
+1. Det går även att favoritmarkera en instrumentpanel eller en rapport på innehållsvyflikarna **Instrumentpaneler** eller **Rapporter**.  Öppna fliken **Rapporter** och välj stjärnikonen till vänster om rapportnamnet.
    
    ![markera som favorit](./media/end-user-experience/power-bi-report-favorite.png)
 
@@ -108,7 +110,7 @@ Läs mer i [Favoriter](end-user-favorite.md)
 
     Öppna innehållet genom att välja det från den utfällbara menyn.
 
-2. Ibland vill du inte öppna det senaste innehållet, utan vill i stället visa information eller utföra andra åtgärder, till exempel dela, köra Insights eller exportera till Excel. I dessa fall öppnar du fönstret **Senaste** genom att välja **Senaste** eller motsvarande ikon i det vänstra navigeringsfönstret. Om du har mer än en arbetsyta innehåller den här listan innehåll från alla dina arbetsytor.
+2. Ibland vill du inte bara öppna det senaste innehållet, utan vill i stället visa information eller utföra andra åtgärder, till visa Insights eller exportera till Excel. I dessa fall öppnar du fönsterrutan **Senaste** genom att välja **Senaste** eller motsvarande ikon i det vänstra navigeringsfönstret. Om du har mer än en arbetsyta innehåller den här listan innehåll från alla dina arbetsytor.
 
    ![Fönstret Senaste](./media/end-user-experience/power-bi-recent.png)
 
@@ -119,13 +121,15 @@ Med innehållsvyn är det lättare att söka efter, filtrera och sortera ditt in
 
 Eftersom du bara har ett exempel behöver du inte söka eller sortera.  Om du har en lång lista över instrumentpaneler, rapporter, arbetsböcker och datauppsättningar är sökning och sortering däremot mycket användbara funktioner.
 
-![sök efter en instrumentpanel](./media/end-user-experience/power-bi-search-sort.png)
+![söka efter en rapport](./media/end-user-experience/power-bi-search.png)
 
-Du kan också sortera innehåll efter namn eller ägare.  
+Du kan också sortera innehåll efter namn eller ägare. Observera uppåtpilen till höger om **Namn**. För närvarande sorterar vi 83 objekt stigande alfabetiskt efter namn. Om du vill ändra sorteringsordningen till fallande väljer du **Namn**. Uppåtpilen ändras till en nedåtpil.
 
-![sortera innehåll](./media/end-user-experience/power-bi-sort.png)
+![sortera innehåll](./media/end-user-experience/power-bi-sort-new.png)
 
-Läs mer i [Power BI-navigering: söka efter, sortera, filtrera](end-user-search-sort.md)
+Det finns vissa kolumner som inte kan sorteras. Hovra över kolumnrubrikerna för att identifiera vilka som kan sorteras.
+
+Läs mer i [Power BI-navigering: söka efter och sortera](end-user-search-sort.md)
 
 ## <a name="clean-up-resources"></a>Rensa resurser
 När du har slutfört den här snabbstarten kan du ta bort exempelinstrumentpanelen med detaljhandelsanalys, rapporter och datauppsättningen om du vill.
@@ -143,4 +147,4 @@ När du har slutfört den här snabbstarten kan du ta bort exempelinstrumentpane
 ## <a name="next-steps"></a>Nästa steg
 
 > [!div class="nextstepaction"]
-> [Läsvyn och redigeringsvyn i Power BI-tjänsten](end-user-reading-view.md)
+> [Läsvyn i Power BI-tjänsten](end-user-reading-view.md)

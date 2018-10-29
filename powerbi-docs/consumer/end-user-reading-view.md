@@ -1,94 +1,199 @@
 ---
-title: Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
-description: Översikt på hög nivå över skillnaderna mellan läsvyn och redigeringsvyn för Power BI-tjänsterapporter
+title: Power BI-användarfunktioner i Power BI-tjänsten
+description: Den här snabbstarten visar hur **användare** arbetar med Power BI-tjänsten.
+services: powerbi
+documentationcenter: ''
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+backup: ''
+editor: ''
+tags: ''
 ms.service: powerbi
-ms.component: powerbi-service
-ms.topic: conceptual
-ms.date: 10/02/2018
+ms.topic: quickstart
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 10/17/2018
 ms.author: mihart
-LocalizationGroup: Reports
-ms.openlocfilehash: f108ab3c924f6ff69bc6ee6aae5ed0539ce3f11d
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 1da43fb6bc0604cfa356f19aa212256612350c65
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908100"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396530"
 ---
-# <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Läsvyn och redigeringsvyn i Power BI-tjänsterapporter
-I Power BI-tjänsten (inte i Power BI Desktop) finns det två lägen för att visa och interagera med rapporter: läsvyn och redigeringsvyn. Läsvyn är tillgänglig för alla användare och har särskilt utformats för data*konsumenter*, medan redigeringsvyn endast är tillgänglig för *skapare* och ägare av rapporter.
+<!-- once the sample aps are live, change this so consumers can follow along -->
+# <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Snabbstart: Lär dig mer om Power BI-funktioner för ***användare***
+I den här snabbstarten lär du dig att interagera med Power BI för att identifiera databaserade affärsinsikter. Det här är ingen djupgående artikel utan snarare en snabb titt på många av de åtgärder som är tillgängliga för **Power BI-användare**.
 
-![bild av rapportskapare och rapportanvändare](./media/end-user-reading-view/power-bi-creators-consumers.png)
+Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
 
-## <a name="report-reading-view"></a>Rapportläsvyn
+## <a name="prerequisites"></a>Förutsättningar
+- Power BI-tjänsten (app.powerbi.com) <!-- app from AppSource -->
 
- Läsvyn kan användas för att utforska och interagera med rapporten. Det är ett roligt och säkert sätt att experimentera med och bekanta dig med dina data. Läsvyn är utformad för rapportens *konsumenter*, alltså de som öppnar rapporter från appar eller som [tilldelas rapporter från andra](../service-share-dashboards.md). Läsvyn garanterar att varje enskild användare av en specifik rapport ser samma rapport, samma visualiseringar, och om de vill med samma filter.  Användarna kan interagera med rapporter och ändra befintliga filter (och dessa ändringar sparas med rapporten), men de kan inte lägga till nya filter.
+## <a name="reading-view"></a>Läsvy
+Läsvyn i Power BI-tjänsten är tillgänglig för *rapportanvändare*. När en kollega delar en rapport med dig kan du utforska och interagera med rapporten i läsvyn. 
 
-> [!NOTE]
-> Under vissa omständigheter kan rapportanvändare se olika data beroende på radnivåsäkerhet och databehörighet.
+[Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md) är ett annat rapportläge i Power BI-tjänsten. Den vyn är tillgänglig för *rapportdesigner*.  
 
-## <a name="report-editing-view"></a>Rapportredigeringsvyn
+Läsvyn är ett kraftfullt och säkert sätt att utforska dina instrumentpaneler och rapporter. Även om du delar upp och analyserar instrumentpaneler och rapporter som delats med dig, förblir de underliggande datauppsättningarna intakta och oförändrade. 
 
-Redigeringsvyn är endast tillgänglig för den person som skapade rapporten eller som [samäger rapporten som en medlem eller administratör i en apparbetsyta](../service-create-distribute-apps.md).
+I läsvyn kan du till exempel korsmarkera och korsfiltrera visuella objekt på en sida.  Det är bara att markera eller välja ett värde i ett visuellt objekt så ser du direkt hur det påverkar andra visuella objekt. Använd filterfönstret för att lägga till och ändra filter på en rapportsida och ändra hur värden sorteras i en visualisering. Det här är bara några av *användarfunktionerna* i Power BI.  Läs vidare om du vill lära dig mer om dessa funktioner och annat.
 
-Redigeringsvyn är utformad för *rapportskapare*. Det är där skapare importerar och ansluter till datamängder, utforskar data och skapar rapporter och instrumentpaneler. I redigeringsvyn i Power BI kan *skapare* granska data djupare genom att lägga till och ta bort fält, ändra typ av visualisering, skapa nya visualiseringar och lägga till och ta bort visualiseringar och sidor i rapporten. De kan sedan dela rapporterna som de har skapat med kollegor.
+ 
+### <a name="view-an-app"></a>Visa en app
+Relaterade instrumentpaneler och rapporter samlas på ett och samma ställe i *appar* i Power BI.
 
-## <a name="reading-view-versus-editing-view"></a>Läsvyn jämfört med redigeringsvyn
-Det här diagrammet visar inte alla funktioner för rapporter i Power BI-tjänsten! Endast de åtgärder för rapporter som inte är tillgängliga i **både** läsvyn och redigeringsvyn visas.
+1. Välj **Appar** ![Apparna i det vänstra navigeringsfönstret](./media/end-user-apps/power-bi-apps-bar.png) > **Hämta appar**. 
+   
+     ![Ikonen Hämta appar](./media/end-user-reading-view/power-bi-get-app.png)
+2. I AppSource under **Min organisation** kan du söka för att begränsa resultaten och hitta den app som du letar efter.
+   
+     ![I AppSource under Min organisation](./media/end-user-reading-view/power-bi-appsource.png)
+3. Välj **Hämta den nu** om du vill lägga till den i din appcontainer. 
 
+### <a name="view-a-dashboard"></a>Visa en instrumentpanel
+Den här appen öppnas på en instrumentpanel. En ***instrumentpanel*** i Power BI är en enskild sida, ofta kallad en arbetsyta, som använder sig av visualiseringar för att förmedla ett budskap. Eftersom den är begränsad till en sida, innehåller en väl utformad instrumentpanel endast de viktigaste elementen i detta budskap.
 
-|Aktivitet  | Läsvy  | Redigeringsvy |
-|-------------------------|-------|-------|
-|**Rapporter som helhet**  |
-| [Skapa eller redigera en rapport](../service-report-create-new.md) | Nej  | Ja |
-| [Dela en rapport](../service-share-reports.md)| Ja | Ja, och du kan även hantera behörigheter, inklusive att ge andra *ägare* behörigheter. |
-| [Skapa beständiga (permanenta) visuella nivåfilter, detaljinformationsfilter, sidnivåfilter och filter på rapportnivå från fönstret Filter](../power-bi-report-add-filter.md) | Nej  | Ja |
-| [Använda rapportfönstret Filter](end-user-report-filter.md) | Ja, befintliga filter kan användas och ändringar kan sparas med rapporten, men nya filter kan inte läggas till. | Ja |
-| [Använda rapportfönstret Analytics](../service-analytics-pane.md) | Nej | Ja |
-| [Rapport**vy**alternativ](../power-bi-report-display-settings.md) | Ja, med vissa undantag. | Ja, alla, inklusive stödlinjer, fästen och lås. |
-| [Skapa ett uppdateringsschema](../refresh-data.md) | Nej  | Ja |
-| [Prenumerera på en rapport](end-user-subscribe.md) | Ja | Nej |
-| [Frågor och svar – ställa frågor i rapporter](end-user-q-and-a.md) | Nej  | Ja |
-| [Visa användningsstatistik](../service-usage-metrics.md) | Ja, på rapportarbetsytan. | Ja, i rapportlistan (innehållsvyn) |
-| [Visa relaterade](end-user-related.md) | Ja, i rapportarbetsytan. | Ja, i rapportlistan (innehållsvyn) |
-| [Spara en rapport](../service-report-save.md) | Ja, men endast genom att använda **Spara som**. | Ja |
-| [Ta bort en rapport](../service-delete.md) | Nej  | Ja |
-|**Rapportsidor** |
-| [Lägga till eller byta namn på en rapportsida](../power-bi-report-add-page.md)  | Nej  | Ja  |
-| [Duplicera en rapportsida](../power-bi-report-copy-paste-page.md) | Nej  | Ja |
-| [Ta bort en rapportsida](../service-delete.md) | nej | ja |
-|**Arbeta med rapportvisualiseringar**|
-| [Lägga till visuella objekt i en rapport](../visuals/power-bi-report-add-visualizations-i.md) | Nej  | Ja |
-| [Lägga till textrutor och former i en rapport](../power-bi-reports-add-text-and-shapes.md) | Nej  | Ja |
-| [Använda rapportfönstret för formatering](../service-the-report-editor-take-a-tour.md) | Nej | Ja |
-| [Ange visuella interaktioner](end-user-interactions.md) | Nej  | Ja |
-| [Visa data som används för att skapa visualiseringen](end-user-show-data.md) | Nej  | Ja |
-| [Konfigurera detaljgranskning](end-user-drill.md) | Nej  | Ja |
-| [Ändra vilken visualisering som används](../visuals/power-bi-report-change-visualization-type.md) | Nej | Ja|
-| [Ta bort en visualisering, en textruta eller en form](../service-delete.md)| Nej | Ja |
+![instrumentpanel](media/end-user-reading-view/power-bi-dashboard.png)
+
+De visualiseringar som visas på instrumentpanelen kallas *paneler* och de *fästs* på instrumentpanelen från rapporter.
+
+### <a name="subscribe-to-a-dashboard-or-report"></a>Prenumerera på en instrumentpanel (eller en rapport)
+Du behöver inte öppna Power BI för att övervaka en instrumentpanel.  Du kan prenumerera på den i stället så skickar Power BI ett e-postmeddelande med en ögonblicksbild av instrumentpanelen enligt ett schema som du anger. 
+
+![välj ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe-orientation.png).
 
 
-## <a name="navigating-between-editing-view-and-reading-view"></a>Navigera mellan redigeringsvyn och läsvyn
-Kom ihåg att endast skaparen och ägarna av rapporten kan öppna en rapport i redigeringsvyn.
+1. Välj **Prenumerera** på den översta menyraden, eller välj kuvertikonen ![ikonen Prenumerera](./media/end-user-subscribe/power-bi-icon-envelope.png).
+   
+   ![Ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-1. Som standard öppnas rapporten vanligtvis läsvyn. Du vet att du är i läsvyn om ser du alternativet **Redigera rapporten**. Om **Redigera rapporten** är gråmarkerat har du inte behörighet att öppna rapporten i redigeringsvyn.
+3. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Lägg alternativt till e-postmeddelandeinformation. 
 
-   ![Redigera rapporten, gråmarkerat](./media/end-user-reading-view/power-bi-edit-report-grey.png)
+    I skärmbilderna nedan ser du att när du prenumererar på en rapport prenumererar du i själv verket på en rapport*sida*.  Om du vill prenumerera på flera sidor i en rapport väljer du **Lägg till en till prenumeration** och väljer en annan sida. 
+      
+   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails.png)
+   
+    Att uppdatera rapportsidan uppdaterar inte datauppsättningen. Endast datauppsättningens ägare kan uppdatera en datauppsättning manuellt. Om du vill söka efter namnet på den underliggande datauppsättningen, välj **Visa relaterade** på den översta menyraden.
 
-2. Om **Redigera rapporten** inte är gråmarkerat, väljer du alternativet för att öppna rapporten i redigeringsvyn.
+### <a name="view-related-content"></a>Visa relaterat innehåll
+Fönstret **Relaterat innehåll** visar hur din Power BI-tjänsts innehåll – instrumentpaneler, rapporter och datauppsättningar – är sammankopplade. Fönstret visar inte bara relaterat innehåll, det låter dig också vidta åtgärder för innehållet och enkelt navigera mellan relaterat innehåll.
 
-   ![Alternativet Redigera rapporten](./media/end-user-reading-view/power-bi-edit-report.png)
+Välj **Visa relaterade** på den översta menyraden.
 
-   Rapporten är nu i redigeringsvyn och använder samma [visningsinställningar](../power-bi-report-display-settings.md) som du senast använde i läsvyn.
+![relaterat innehåll](./media/end-user-reading-view/power-bi-view-related-dashboard.png)
 
-2. För att återgå till läsvyn, väljer du **Läsvy** från det övre navigeringsfältet.
+### <a name="use-qa-to-ask-questions-using-natural-language"></a>Ställ frågor på ett naturligt språk med Frågor och svar
+Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk. Frågerutan finns högst upp på instrumentpanelen. Till exempel: ”visa mig antal stora affärsmöjligheter efter säljstatus som ett trattdiagram”. 
 
-    ![Alternativet Läsvy](./media/end-user-reading-view/power-bi-reading-view.png)
+![Frågor och svar](./media/end-user-reading-view/power-bi-qna.png)
+
+### <a name="favorite-a-dashboard"></a>Favoritmarkera en instrumentpanel
+När du skapat en *favorit* av innehåll kan du komma åt den från det vänstra navigeringsfältet. Det vänstra navigeringsfältet är synligt i praktiskt taget alla områden i Power BI. Favoriter är vanligtvis de instrumentpaneler, rapportsidor och appar som du använder oftast.
+
+1. Avsluta Frågor och svar för att återgå till en instrumentpanel.    
+2. I det övre högra hörnet i Power BI-tjänsten väljer du **favoritmarkera** eller stjärnikonen ![stjärnikon](./media/end-user-favorite/power-bi-favorite-icon.png).
+   
+   ![Ikonen Favorit](./media/end-user-favorite/powerbi-dashboard-favorite.png)
 
 
+### <a name="open-and-view-a-report-and-report-pages"></a>Öppna och visa en rapport och rapportsidor
+En rapport är en eller flera sidor med visuella objekt. Rapporter skapas av Power BI-*rapportdesigner* och [delas med *användare* direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 
+
+Rapporter kan öppnas från en instrumentpanel. De flesta paneler på instrumentpanelen är *Fästa* från rapporter. Om du väljer en panel öppnas rapporten som användes för att skapa panelen. 
+
+1. Välj en panel från en instrumentpanel. I det här exemplet har vi valt kolumndiagramspanelen Revenue (Intäkt).
+
+    ![instrumentpanel med vald panel](./media/end-user-reading-view/power-bi-dashboard2.png)
+
+2.  Den associerade rapporten öppnas. Observera att vi är på sidan Revenue overview (Intäktsöversikt). Det är den rapportsidan som innehåller kolumndiagrammet som vi valt från instrumentpanelen.
+
+    ![öppen rapport i Läsvyn](./media/end-user-reading-view/power-bi-report-opens.png)
+
+### <a name="adjust-the-display-dimensions"></a>Justera dimensionerna för visning
+Rapporterna granskas på många olika enheter med olika skärmstorlekar och proportioner.  Standardåtergivningen är kanske inte vad du vill se på enheten.  
+
+1. Om du vill justera detta väljer du **Visa** på den översta menyraden.
+
+    ![rapportvymeny](media/end-user-reading-view/power-bi-fit.png)
+
+2.  Välj något av visningsalternativen. I det här exemplet har vi valt **Anpassa till sida**.
+
+    ![rapportvy anpassad till sida](media/end-user-reading-view/power-bi-report-fit.png)    
+
+### <a name="use-the-report-filters-pane"></a>Använda rapportfönstret Filter
+Om rapportskaparen har lagt till filter på en sida i en rapport kan du interagera med dem och spara dina ändringar med rapporten.
+
+1. Välj **filterikonen** i det övre högra hörnet.
+   
+   ![välj filterikonen](media/end-user-reading-view/filters.png)  
+
+2. Välj ett visuellt objekt för att aktivera det. Du ser alla filter som har kopplats till det visuella objektet (filter på visuell nivå), över hela sidan (filter på sidonivå) och i hela rapporten (filter på rapportnivå).
+   
+   ![typer av rapportfilter](media/end-user-reading-view/power-bi-reading-filters.png)
+
+3. Håll muspekaren över ett filter och expandera det genom att välja nedpilen.
+   
+   ![utöka filtret](media/end-user-reading-view/power-bi-expan-filter.png)
+
+4. Göra ändringar i dina filter och se hur det visuella objektet påverkas.  
+   
+     
+     ![avancerad filtrering](media/end-user-reading-view/power-bi-advanced-filter.png)
+
+### <a name="see-how-all-the-visuals-on-a-page-are-interconnected"></a>Se hur alla visuella objekt på en sida är sammankopplade
+Korsmarkera och korsfiltrera flera relaterade visualiseringar på en sida. Visualiseringar på en enstaka rapportsida är alla ”kopplade” till varandra.  Det innebär att om du väljer ett eller flera värden i en visualisering kommer andra visualiseringar som använder samma värde att ändras baserat på ditt val.
+
+![korsmarkering](media/end-user-reading-view/pagefilter3b.gif)
+> 
+### <a name="display-details-on-a-visualization"></a>Visa information om en visualisering
+Håll muspekaren över visuella element för att visa detaljer
+
+![hovra för mer information.](media/end-user-reading-view/amarillachart.png)
+
+### <a name="sort-a-visualization"></a>Sortera en visualisering
+Visuella objekt på en rapportsida kan sorteras och sparas med tillämpade ändringar. 
+
+1. Håll muspekaren över ett visuellt objekt för att aktivera det.    
+2. Välj ellipsen (...) för att öppna sorteringsalternativen.
+
+    ![sortera ett diagram](media/end-user-reading-view/sort.gif) 
+
+###  <a name="open-the-selection-pane"></a>Öppna **Markeringsfönstret**.
+Du kan enkelt navigera mellan visualiseringarna på rapportsidan. 
+
+1. Välj **Visa > Markeringsfönstret** för att öppna markeringsfönstret. Ändra inställningen för **markeringsfönstret** till På.
+
+    ![Aktivera markeringsfönstret för rapporter](media/end-user-reading-view/power-bi-selection-pane2.png)
+
+2. Markeringsfönstret öppnas på din rapportarbetsyta. Välj ett visuellt objekt i listan för att aktivera det.
+
+    ![markeringsfönstret för rapporter](media/end-user-reading-view/power-bi-selection-pane-new.png)
+
+### <a name="zoom-in-on-individual-visuals"></a>Zooma in på enskilda visuella objekt
+Håll muspekaren över visualiseringen och välj ikonen **Fokusläge** ![](media/end-user-reading-view/pbi_popouticon.jpg). När du visar en visualisering i fokusläge expanderas den så att den fyller hela rapportarbetsytan enligt nedan.
+
+![fokusläge](media/end-user-reading-view/powerbi-focus-mode.png)
+
+Om du vill visa att samma visualiseringen utan att störas av menyfält, filterfönstret och annan krom kan du välja ikonen **Helskärm** från den översta menyraden ![](media/end-user-reading-view/power-bi-focus-icon.png) .
+
+![helskärmsläge](media/end-user-reading-view/power-bi-full-screen.png)
+
+### <a name="show-the-data-used-to-create-a-visualization"></a>Visa de data som används för att skapa en visualisering
+En Power BI-visualisering konstrueras med data från underliggande datauppsättningar. Om du är intresserad av att se vad som pågår i bakgrunden, Power BI kan *visa* de data som används för att skapa visualiseringen. När du väljer **Visa data** visar Power BI dessa data under (eller bredvid) visualiseringen.
+
+1. Öppna en rapport i Power BI-tjänsten och välj ett visuellt objekt.  
+2. Om du vill visa bakomliggande data väljer du ellipsen (...) och **Visa data**.
+   
+   ![välj Visa data](./media/end-user-show-data/power-bi-show-data2.png)
+
+Detta har varit en snabb översikt över några av de saker som **användare** kan göra med Power BI-tjänsten.  
+
+## <a name="clean-up-resources"></a>Rensa resurser
+- Om du är ansluten till en app väljer du **Appar** i det vänstra navigeringsfältet för att öppna appinnehållslistan. Håll muspekaren över den app som du vill ta bort och välj ikonen för papperskorgen.
+
+- Om du har importerat eller anslutit till en Power BI-exempelrapport öppnar du **Min arbetsyta** från det vänstra navigeringsfältet. Leta reda på instrumentpanelen, rapporten och datauppsättningen med hjälp av flikarna längst upp och välj ikonen för papperskorgen för var och en av dessa.
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns många sätt att interagera med en rapport i läsvyn, finfördela dina data för att upptäcka insikter och få svar på frågor.  Nästa avsnitt, [Interagera med rapporter i läsvyn](../service-interact-with-a-report-in-editing-view.md), beskriver vissa av dessa i detalj.    
-Tillbaka till [Rapporter i Power BI](end-user-reports.md)    
+
+

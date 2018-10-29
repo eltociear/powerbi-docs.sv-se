@@ -1,5 +1,5 @@
 ---
-title: Vad är en Power BI-instrumentpanel?
+title: Vad är en instrumentpanel för kunder som använder Power BI-tjänsten?
 description: Instrumentpaneler är en nyckelfunktion i Power BI-tjänsten.
 author: mihart
 manager: kvivek
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7db5bf514b567cbcaf9dddc5d48006762237a622
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 840f302b1df31736d7fcd1c0766c34963a2f6738
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909140"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473944"
 ---
-# <a name="dashboards-in-power-bi-service"></a>Instrumentpaneler i Power BI-tjänsten
+# <a name="dashboards-for-power-bi-service-consumers"></a>Instrumentpaneler för de som använder Power BI-tjänsten
 
 En ***instrumentpanel*** i Power BI är en enskild sida, ofta kallad en arbetsyta, som använder sig av visualiseringar för att förmedla ett budskap. Eftersom den är begränsad till en sida, innehåller en väl utformad instrumentpanel endast de viktigaste elementen i detta budskap.
 

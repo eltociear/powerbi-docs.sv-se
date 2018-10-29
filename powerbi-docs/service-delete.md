@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 770b2796eb8f29cadfe8371cb2baef12cec7c0e8
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0d07953fb4f9474f929c108df5b76acb61c7df7c
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48910301"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435347"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Ta bort på nästan vad som helst i Power BI-tjänsten
 Den här artikeln lär dig hur du tar bort en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app, visualisering och arbetsyta i Power BI-tjänsten.
@@ -129,7 +129,7 @@ Om du tar bort en app från applistan tas den inte bort för andra medlemmar.
 
    ![välj appar](media/service-delete/power-bi-delete-app.png)
 
-   Om du tar bort en app av misstag har du flera alternativ för att få den tillbaka.  Du kan be appskaparen att skicka den igen, du kan hitta det ursprungliga e-postmeddelandet med länken till appen, du kan kolla i ditt [Aktivitetscenter](service-notification-center.md) för att se om meddelandet för den appen fortfarande listas eller så kan du kontrollera din organisations [AppSource](service-install-use-apps.md).
+   Om du tar bort en app av misstag har du flera alternativ för att få den tillbaka.  Du kan be appskaparen att skicka den igen, du kan hitta det ursprungliga e-postmeddelandet med länken till appen, du kan kolla i ditt [Aktivitetscenter](service-notification-center.md) för att se om meddelandet för den appen fortfarande listas eller så kan du kontrollera din organisations [AppSource](consumer/end-user-apps.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Den här artikeln visar hur du tar bort de primära byggstenarna för Power BI-tjänsten. Men det finns flera saker som du kan ta bort i Power BI.  

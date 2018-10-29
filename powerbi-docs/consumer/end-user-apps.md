@@ -7,22 +7,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 10/18/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0cb5e9ae8256f9df6c849df612f156d7fe9d12a8
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: bc68be50917b113371fc168d1b6e3defa2b5001e
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112209"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473438"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
-I Power BI samordnar *appar* relaterade instrumentpaneler och rapporter på ett och samma ställe. Personer i organisationen kan skapa och distribuera appar med viktig information. [Externa tjänster](end-user-connect-to-services.md), som du kanske redan använder, t.ex. Google Analytics och Microsoft Dynamics CRM, erbjuder också Power BI-appar. 
+I Power BI samordnar *appar* relaterade instrumentpaneler och rapporter på ett och samma ställe. Personer i din organisation skapar och distribuerar appar med viktig information. [Externa tjänster](end-user-connect-to-services.md), som du kanske redan använder, t.ex. Google Analytics och Microsoft Dynamics CRM, erbjuder också Power BI-appar. 
 
-![Appar i Power BI](./media/end-user-apps/power-bi-apps-left-nav.png)
+![Appar i Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
-Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och på din mobila enhet. När du har installerat en app behöver du inte längre komma ihåg namnet på en massa olika instrumentpaneler eftersom de har samlats tillsammans i en och samma app, i din webbläsare eller på din mobila enhet.
+Apparna är lätta att hitta och installera på Power BI-tjänsten ([app.powerbi.com](https:app.powerbi.com)) och på din mobila enhet. När du har installerat en app behöver du inte längre komma ihåg namnet på en massa olika instrumentpaneler eftersom de har samlats tillsammans i en och samma app, i din webbläsare eller på din mobila enhet.
 
 Och när appförfattare släpper uppdateringar, så ser du dem automatiskt. Författaren också styr också hur ofta data schemaläggs för uppdatering, så du inte behöver bry dig om att hålla det uppdaterat. 
 
@@ -36,7 +36,7 @@ Det enklaste sättet att själv installera en ny app är genom att få en direkt
 
 Välj länken i e-postmeddelandet för att öppna Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) i en webbläsare. Bekräfta att du vill installera appen och öppnar applandningssidan.
 
-![Applandningssida i Power BI-tjänsten](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
+![Applandningssida i Power BI-tjänsten](./media/end-user-apps/power-bi-get-app.png)
 
 **På iOS- eller mobila Android-enheter** 
 
@@ -56,12 +56,12 @@ Du kan också söka efter och installera alla program som du har åtkomst till f
 3. Välj **Hämta den nu** om du vill lägga till den på sidan Appar. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagera med instrumentpaneler och rapporter i appen
-Nu kan du utforska data i instrumentpanelerna och rapporterna i appen. Du har åtkomst till alla Power BI-standardinteraktioner som filtrering, syntaxmarkering, sortering och detaljinformation. Du kan även [exportera data till Excel ](end-user-export-data.md) från en tabell eller annat visuellt objekt i en rapport. Läs mer i [Interagera med rapporter i Power BI](end-user-reading-view.md). 
+Nu kan du utforska data i instrumentpanelerna och rapporterna i appen. Du har åtkomst till alla Power BI-standardinteraktioner som filtrering, syntaxmarkering, sortering och detaljinformation. Läs mer i [Interagera med rapporter i Power BI](end-user-reading-view.md). 
 
 ![Exportera data från ett visuellt Power BI-objekt](./media/end-user-apps/power-bi-service-export-data-visual.png)
 
 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Power BI-appar för externa tjänster](end-user-connect-to-services.md)
+[Power BI-appar för externa tjänster](end-user-connect-to-services.md)
 

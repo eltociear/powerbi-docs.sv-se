@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
-ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
+ms.openlocfilehash: 7a034e865b0e0b6ba55385f8873d039dba0662db
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48232936"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396967"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -169,7 +169,8 @@ Det finns några saker som du bör vara medveten om när du använder frågestr�
 
 * Vid användning av *in*-operatorn måste värden till höger om *ii* vara antingen en kommaavgränsad lista som omges av parenteser.    
 * I Power BI-rapportservern kan du [skicka rapportparametrar ](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) genom att ta med dem i en rapport-URL. Dessa URL-parametrar har inget prefix eftersom de skickas direkt till rapportbearbetningsmotorn.
-* Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md) eller Power BI Embedded.   
+* Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md).
+* [Bädda in med rapportwebbdel i SharePoint Online](service-embed-report-spo.md) har inte stöd för URL-filter.
 * Datatypen long är (2^53-1) på grund av begränsningar i Javascript.
 * Rapportfilter för URL har en begränsning på 10 uttryck (10 filter som är hopkopplade med AND).
 

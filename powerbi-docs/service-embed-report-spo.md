@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/16/2018
-ms.openlocfilehash: 111987fda4b0f841c0806dbdc454ac96ddb3c666
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.date: 10/01/2018
+ms.openlocfilehash: b701ce9921d055dfe124c5a419f02900b15a9f62
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908381"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641216"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -87,7 +87,7 @@ När du bäddar in en rapport i SharePoint Online medges inte användarbehörigh
 
 Det finns två sätt att bevilja åtkomst till rapporten i Power BI-tjänsten. Om du använder en Office 365-grupp för att skapa webbplatsen i SharePoint Online kan du lista användaren som en medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Det säkerställer att användare kan läsa innehållet i den gruppen. Mer information finns i [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md).
 
-Du kan också ge användarna åtkomst till din rapport genom att göra följande.
+Du kan också ge användarna åtkomst till din rapport genom att följa stegen nedan.
 
 1. Lägg till en panel från rapporten i en instrumentpanel.
 
@@ -126,7 +126,7 @@ Det finns två vanliga orsaker till det här meddelandet.
 1. Du har inte åtkomst till rapporten.
 2. Rapporten har tagits bort.
 
-Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lösa problemet.
+Kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lösa problemet.
 
 ## <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 
@@ -148,11 +148,13 @@ Du bör kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lö
 
 * Klassiska SharePoint Server stöds inte med den här webbdelen.
 
+* [URL-filter](service-url-filters.md) stöds inte med SPO-webbdelen.
+
 ## <a name="next-steps"></a>Nästa steg
 
 [Tillåt eller förhindra att moderna webbplatssidor skapas av slutanvändare](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md)  
 [Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md)  
-[Power BI Premium – vad är det?](service-premium.md)  
+[Vad är Power BI Premium?](service-premium.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

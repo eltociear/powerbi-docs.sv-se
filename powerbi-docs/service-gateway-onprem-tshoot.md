@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
-ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
+ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43151916"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49474036"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Felsökning av den lokala datagatewayen
 
@@ -40,6 +40,25 @@ Eftersom gatewayen körs som en Windows-tjänst kan du starta och stoppa den på
 * Starta tjänsten genom att köra det här kommandot:
 
     '''   net start PBIEgwService   '''
+
+### <a name="log-file-configuration"></a>Konfiguration av loggfil
+
+Gatewaytjänstloggar är indelade i tre buckets: information, fel och nätverk. Den här kategorisering ger en bättre felsökningsupplevelse som gör det möjligt att fokusera på ett visst område beroende på felet eller problemet. Du kan se de tre kategorierna i följande kodavsnitt från gatewaykonfigurationsfilen: `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log`.
+
+```xml
+  <system.diagnostics>
+    <trace autoflush="true" indentsize="4">
+      <listeners>
+        <remove name="Default" />
+        <add name="ApplicationFileTraceListener"
+             type="Microsoft.PowerBI.DataMovement.Pipeline.Common.Diagnostics.RotatableFilesManagerTraceListener, Microsoft.PowerBI.DataMovement.Pipeline.Common"
+             initializeData="%LOCALAPPDATA%\Microsoft\On-premises data gateway\,GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50" />
+      </listeners>
+    </trace>
+  </system.diagnostics>
+```
+
+Den här filen finns som standard i: *\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. Om du vill konfigurera antalet loggfiler som ska behållas ändrar du den första siffran (20 i det här exemplet): `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
 
 ### <a name="error-failed-to-create-a-gateway-try-again"></a>Fel: Det gick inte att skapa en gateway. Försök igen
 

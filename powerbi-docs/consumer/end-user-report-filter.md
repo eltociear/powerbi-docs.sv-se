@@ -1,21 +1,21 @@
 ---
-title: Översikt av panelen för Power BI-filter för användare
-description: Översikt av rapportens filterpanel i Power BI-tjänsten
+title: Lägga till ett rapportfilter
+description: Hur du lägger till ett filter i en rapport i Power BI-tjänsten för användare
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/19/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c49e075bd7fbe2debb0b577a1ce2771491d5fac4
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908289"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473817"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
 Den här artikeln tar en titt på filterrapportfönstret i Power BI-tjänsten.
@@ -29,7 +29,7 @@ Glöm inte att titta i fönstret **Filter** när en kollega delar en rapport med
 
 ![rapport i webbläsare](media/end-user-report-filter/power-bi-expanded.png)
 
-Fönstret Filter innehåller de filter som *rapportdesignern* har lagt till i rapporten. Som *användare* kan du interagera med filtren och spara dina ändringar, men du kan inte lägga till nya filter i rapporten.
+Fönstret Filter innehåller de filter som *rapportdesignern* har lagt till i rapporten. Som *användare* kan du interagera med filtren och spara dina ändringar, men du kan inte lägga till nya filter i rapporten. På skärmbilden ovan har designern lagt till två sidnivåfilter: Segment (segment) och Year (år). Du kan interagera och ändra filtren, men du kan inte lägga till ett tredje sidnivåfilter.
 
 I Power BI-tjänsten sparas ändringar du gör i fönstret Filter i rapporterna, och dessa ändringar följer med till mobilversionen av rapporten. Om du vill återställa standardvärdena (som designern angett) i fönstret Filter väljer du **Återställ till standard** på den översta menyraden.     
 
@@ -40,11 +40,15 @@ I det här exemplet har vi valt ett visuellt objekt som innehåller 6 filter. Si
 
 ![lista med filter](media/end-user-report-filter/power-bi-filter-list.png)
 
-Vissa filter har ordet **alla** och detta innebär att alla värden ingår i filtret.  Som exempel kan vi av **Chain(All) (Kedja(alla))** på skärmbilden nedan avläsa att den här rapportsidan innehåller data om alla butikskedjorna.  Å andra sidan berättar filtret på rapportnivå för **Räkenskapsår 2013 eller 2014** att rapporten bara innehåller data för räkenskapsåren 2013 och 2014.
+Vissa filter har ordet **alla** och detta innebär att alla värden ingår i filtret.  Som exempel kan vi av **Chain(All) (Kedja(alla))** på skärmbilden ovan avläsa att den här rapportsidan innehåller data om alla butikskedjorna.  Å andra sidan berättar filtret på rapportnivå för **Räkenskapsår 2013 eller 2014** att rapporten bara innehåller data för räkenskapsåren 2013 och 2014.
 
 Alla som visar den här rapporten kan interagera med filtren.
 
-* Visa information om filtret genom att hålla muspekaren över och klicka på pilen bredvid filtret.
+- Sök i filter för sidor, visuella objekt, rapporter och visning av detaljerad information för att hitta och välja det värde du vill ha. 
+
+    ![Söka i ett filter](media/end-user-report-filter/power-bi-filter-search.png)
+
+- Visa information om filtret genom att hålla muspekaren över och klicka på pilen bredvid filtret.
   
    ![visar att Lindseys valts](media/end-user-report-filter/power-bi-expan-filter.png)
 * Ändra filtret, till exempel, ändra **Lindseys** till **Fashion Direct**.
@@ -56,9 +60,11 @@ Alla som visar den här rapporten kan interagera med filtren.
     
 * Ta bort filtret genom att välja **x** intill filternamnet.
   
-  När du tar bort ett filter försvinner den från listan och data raderas från rapporten.  Om du till exempel tar bort filtret **räkenskapsår är 2013 eller 2014** finns räkenskapsårets informationen kvar i rapporten men den kommer inte längre att filtreras så att endast 2013 och 2014 visas. Istället visas alla räkenskapsår som innehåller data.  När du tar bort filtret, kommer inte du att kunna ändra det igen eftersom det har tagits bort från listan. Ett bättre alternativ är att ta bort filtret genom att välja ikonen Radera ![ikonen Radera](media/end-user-report-filter/power-bi-eraser-icon.png).
+    ![x markerat](media/end-user-report-filter/power-bi-delete-filter.png)
+
+  När du tar bort ett filter försvinner den från listan och data raderas från rapporten.  Om du till exempel tar bort filtret **räkenskapsår är 2013 eller 2014** finns räkenskapsårets informationen kvar i rapporten men den kommer inte längre att filtreras så att endast 2013 och 2014 visas. Istället visas alla räkenskapsår som innehåller data.  När du tar bort filtret, kommer inte du att kunna ändra det igen eftersom det har tagits bort från listan. Ett bättre alternativ är att ta bort filtret genom att välja ikonen Radera ![ ikonen Radera ](media/end-user-report-filter/power-bi-eraser-icon.png).
   
-  ![x markerat](media/end-user-report-filter/power-bi-delete-filter.png)
+  
 
 
 
@@ -70,14 +76,14 @@ Alla som visar den här rapporten kan interagera med filtren.
 ### <a name="list-mode"></a>Listläge
 Om du markerar en kryssruta markeras eller avmarkeras värdet. Kryssrutan **Alla** kan användas för att växla tillståndet för alla kryssrutor. Kryssrutorna representerar de tillgängliga värdena för det här fältet.  När du justerar filtret uppdateras omformuleringen efter dina val. 
 
-![filter i listläge](media/end-user-report-filter/pbi_restatement.png)
+![filter i listläge](media/end-user-report-filter/power-bi-restatement-new.png)
 
-Nu står det ”är Amarilla eller Carretera” i omformuleringen
+Nu står det ”är Mar, Apr eller Maj” i omformuleringen.
 
 ### <a name="advanced-mode"></a>Avancerat läge
 Välj **Avancerade filter** för att övergå till avancerat läge. Använd listrutekontroller och textrutor för att ange vilka fält som ska inkluderas. Genom att välja mellan **Och** och **Eller** kan du skapa komplexa filteruttryck. Välj knappen **Använd Filter** när du har angett dina önskade värden.  
 
-![avancerat läge](media/end-user-report-filter/aboutfilters.png)
+![avancerat läge](media/end-user-report-filter/power-bi-advanced.png)
 
 ## <a name="types-of-filters-numeric-field-filters"></a>Typer av filter: sifferfältfilter
 ### <a name="list-mode"></a>Listläge
@@ -86,7 +92,7 @@ Om värdena är begränsade, visar fältnamnet en lista.  Se **Textfältfilter**
 ### <a name="advanced-mode"></a>Avancerat läge
 Om värdena är oändliga eller motsvarar ett värde öppnas det avancerade filterläget när du markerar fältnamnet. Använd listrutan och textrutor för att ange ett intervall med värden som du vill se. 
 
-![avancerad filtrering](media/end-user-report-filter/pbi_dropdown-and-text.png)
+![avancerad filtrering](media/end-user-report-filter/power-bi-dropdown-and-text.png)
 
 Genom att välja mellan **Och** och **Eller** kan du skapa komplexa filteruttryck. Välj knappen **Använd Filter** när du har angett dina önskade värden.
 

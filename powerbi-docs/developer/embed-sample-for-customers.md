@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 06/20/2018
-ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: d3076090b06cdb60b72c475fd156cc274985ea32
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827443"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435498"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Självstudie: Bädda in en Power BI-rapport, instrumentpanel eller panel till ett program för dina kunder
 
@@ -36,7 +36,7 @@ För att komma igång behöver du ett **Power BI Pro**-konto (det här kontot ä
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurera den inbäddade utvecklingsmiljön för analysverktyg
 
-Innan du börjar bädda in rapporter, instrumentpaneler eller paneler i din app måste du se till att din miljö har ställts in så att inbäddning tillåts. Som en del av installationen behöver du göra följande.
+Innan du börjar bädda in rapporter, en instrumentpanel eller paneler i din app måste du se till att det går att bädda in Power BI i din miljö.
 
 Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/AppOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport.
 
@@ -44,15 +44,15 @@ Om du i stället vill konfigurera miljön manuellt, fortsätter du bara nedan.
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrera ett program i Azure Active Directory (Azure AD)
 
-Du kan registrera din app med Azure Active Directory så att ditt program får åtkomst till Power BI REST-API:er. Därmed kan du upprätta en identitet för din app och ange behörigheter till Power BI REST-resurser.
+Du kan registrera din app med Azure Active Directory så att ditt program får åtkomst till Power BI REST-API:er. Genom att registrera din app kan du upprätta en identitet för din app och ange behörigheter till Power BI REST-resurser.
 
 1. Godkänn [villkoren för Microsoft Power BI-API](https://powerbi.microsoft.com/api-terms).
 
 2. Logga in på [Azure Portal](https://portal.azure.com).
 
-    ![Huvuddel för Azure Portal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+    ![Huvuddel för Azure-portalen](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-3. I det vänstra navigeringsfönstret väljer du **Alla tjänster**, **App-registreringar** och sedan **Ny appregistrering**.
+3. I det vänstra navigeringsfönstret väljer du **Alla tjänster**, **Appregistreringar** och sedan **Ny programregistrering**.
 
     ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Ny appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
@@ -63,7 +63,7 @@ Du kan registrera din app med Azure Active Directory så att ditt program får �
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Tillämpa behörigheter för ditt program i Azure Active Directory
 
-Du måste aktivera ytterligare behörigheter för ditt program utöver vad som fanns på app-registreringssidan. Du måste du logga in med kontot *master* som används för att bädda in och som måste vara ett globalt administratörskonto.
+Aktivera ytterligare behörigheter för ditt program utöver vad som fanns på programregistreringssidan. Logga in med det *huvudkonto* som du använder för inbäddning. Huvudkontot måste vara ett globalt administratörskonto.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Använd Azure Active Directory-portalen
 
@@ -91,7 +91,7 @@ Du måste aktivera ytterligare behörigheter för ditt program utöver vad som f
 
     ![Välj PBI-tjänster](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
-7. Välj alla behörigheter under **Delegerade behörigheter**. Du måste välja dem separat för valen ska sparas. Välj **Spara** när du är klar.
+7. Välj alla behörigheter under **Delegerade behörigheter**. Välj **Spara** när du är klar.
 
     ![Välj delegerade behörigheter](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
@@ -107,11 +107,11 @@ Du måste aktivera ytterligare behörigheter för ditt program utöver vad som f
 
 Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en app-arbetsyta. Kontot *master* måste vara administratör för app-arbetsytan.
 
-1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa apparbetsyta**. Det är här du placerar innehåll som appen behöver åtkomst till.
+1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa apparbetsyta**. I Skapa app-arbetsyta placerar du innehåll som appen behöver åtkomst till.
 
     ![Skapa arbetsyta](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
 
-2. Ge arbetsytan ett namn. Om motsvarande **Arbetsyte-ID** inte är tillgängligt, kan du redigera det för att få fram ett unikt ID. Detta ska också vara namnet på appen.
+2. Ge arbetsytan ett namn. Om motsvarande **Arbetsyte-ID** inte är tillgängligt, kan du redigera det för att få fram ett unikt ID.
 
     ![Namn på arbetsytan](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
@@ -161,31 +161,31 @@ Följ de här stegen om du vill börja bädda in innehåll med hjälp av ett exe
 
     ![Exempelprogram för app äger data](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-2. Öppna filen Web.config i exempelprogrammet. Du måste fylla i 5 fält för att kunna köra programmet. **clientId**, **groupId**, **reportId**, **pbiUsername** och **pbiPassword**.
+2. Öppna filen Web.config i exempelprogrammet. Du måste fylla i fem fält för att kunna köra appen: **applicationId**, **workspaceId**, **reportId**, **pbiUsername** och **pbiPassword**.
 
     ![Webbkonfigurationsfil](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    Fyll i informationen **clientId** med **program-ID** från **Azure**. **clientId** används av programmet för att identifiera sig för användare som du begär behörighet från. För att hämta **clientId** gör du följande:
+    Fyll i **applicationId** med **program-ID:t** från **Azure**. **applicationId** används av programmet för att identifiera sig för användare som du begär behörighet från. Så här hämtar du **applicationId**:
 
     Logga in på [Azure Portal](https://portal.azure.com).
 
-    ![Huvuddel för Azure Portal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+    ![Huvuddel för Azure-portalen](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-    I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **App-registreringar**.
+    I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **Appregistreringar**.
 
     ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    Välj det program som du vill hämta **clientId** för.
+    Välj den app som du vill hämta **applicationId** för.
 
     ![Att välja App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    Du bör se ett **program-ID** som har listats som en GUID. Använd detta **program-ID** som **clientId** för programmet.
+    Du bör se ett **program-ID** som har listats som en GUID. Använd detta **program-ID** som **applicationId** för appen.
 
-    ![ClientID](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    Fyll i **groupId**-information med **app-arbetsytan GUID** från Power BI.
+    Fyll i **workspaceId** med **GUID för apparbetsytan** från Power BI.
 
-    ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
     Fyll i **reportId**-information med **rapportera GUID** från Power BI.
 
@@ -242,8 +242,8 @@ Här är ett kodexempel på hur du hämtar den första rapporten från en given 
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();
@@ -263,7 +263,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
 var embedConfig = new EmbedConfig()
@@ -339,12 +339,12 @@ Använd tabellen nedan för att avgöra vilken Power BI Embedded-kapacitet som b
 
 | Kapacitetsnod | Totalt antal kärnor<br/>*(Serverdel + klientdel)* | Serverdelskärnor | Klientdelskärnor | DirectQuery/begränsningar vid liveanslutning | Max sidåtergivningar vid högbelastning |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 v-kärna |0,5 kärnor, 3 GB RAM |0,5 kärnor | 5 per sekund |1-300 |
-| A2 |2 v-kärnor |1 kärna, 5 GB RAM |1 kärna | 10 per sekund |301-600 |
-| A3 |4 v-kärnor |2 kärnor, 10 GB RAM |2 kärnor | 15 per sekund |601–1200 |
-| A4 |8 v-kärnor |4 kärnor, 25 GB RAM |4 kärnor |30 per sekund |1201–2400 |
-| A5 |16 v-kärnor |8 kärnor, 50 GB RAM |8 kärnor |60 per sekund |2401–4800 |
-| A6 |32 v-kärnor |16 kärnor, 100 GB RAM |16 kärnor |120 per sekund |4801–9600 |
+| A1 |1 v-kärna |0,5 kärnor, 3 GB RAM-minne |0,5 kärnor |0 5 per sekund |1-300 |
+| A2 |2 v-kärnor |1 kärna, 5 GB RAM-minne |1 kärna | 10 per sekund |301-600 |
+| A3 |4 v-kärnor |2 kärnor, 10 GB RAM-minne |2 kärnor | 15 per sekund |601–1200 |
+| A4 |8 v-kärnor |4 kärnor, 25 GB RAM-minne |4 kärnor |30 per sekund |1201–2400 |
+| A5 |16 v-kärnor |8 kärnor, 50 GB RAM-minne |8 kärnor |60 per sekund |2401–4800 |
+| A6 |32 v-kärnor |16 kärnor, 100 GB RAM-minne |16 kärnor |120 per sekund |4801–9600 |
 
 **_Med A-SKU: er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens._**
 
