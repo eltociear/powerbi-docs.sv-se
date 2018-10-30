@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 2a4fb3bdf4e1041ceb90cde9b6c5f26fcb9a3871
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474036"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101656"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Felsökning av den lokala datagatewayen
 
@@ -446,7 +446,7 @@ Testresultatet visar alla servrar, portar och IP-adresser som krävs av din gate
 
 ## <a name="kerberos"></a>Kerberos
 
-Om den underliggande databasservern och lokala datagatewayen inte har konfigurerats korrekt för [Kerberos-begränsad delegering](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md) aktiverar du [utförlig loggning](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) på gatewayen och börjar felsökningen genom att undersöka problemet baserat på fel/spår i gatewayens loggfiler.
+Om den underliggande databasservern och lokala datagatewayen inte har konfigurerats korrekt för [Kerberos-begränsad delegering](service-gateway-sso-kerberos.md) aktiverar du [utförlig loggning](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) på gatewayen och börjar felsökningen genom att undersöka problemet baserat på fel/spår i gatewayens loggfiler.
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 

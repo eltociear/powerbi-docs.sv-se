@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2eb880ee512a3f13c56bb6dbf880209f05cdf7b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ff770320e0e6cd3f591e3318637a04977152e488
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296329"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101426"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Hantera din datakälla – SQL Server
 När du har installerat den lokala datagatewayen kan du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan antingen använda SQL Server-datakällan för schemalagd uppdatering eller för DirectQuery.
@@ -60,7 +60,7 @@ Du kan fylla i informationen för datakällan med **Server** och **Databas**.
 Du måste också välja en **Autentiseringsmetod**.  Det kan antingen vara **Windows** eller **Grundläggande**.  Välj **Grundläggande** om du tänker använda SQL-autentisering i stället för Windows-autentisering. Ange sedan de autentiseringsuppgifter som ska användas för datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med autentiseringsuppgifterna, såvida inte enkel inloggning (SSO) med Kerberos har konfigurerats och aktiverats för datakällan. När SSO används kommer de importerade datauppsättningarna använda lagrade autentiseringsuppgifter, medan DirectQuery-datauppsättningar använder den aktuella Power BI-användaren för att köra frågor. Mer information finns i huvudartikeln om lokala datagatewayer där du lär dig mer om hur [autentiseringsuppgifter](service-gateway-onprem.md#credentials) lagras, eller i artikeln som beskriver hur du [använder Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
+> Alla frågor till datakällan kommer att köras med autentiseringsuppgifterna, såvida inte enkel inloggning (SSO) med Kerberos har konfigurerats och aktiverats för datakällan. När SSO används kommer de importerade datauppsättningarna använda lagrade autentiseringsuppgifter, medan DirectQuery-datauppsättningar använder den aktuella Power BI-användaren för att köra frågor. Mer information finns i huvudartikeln om lokala datagatewayer där du lär dig mer om hur [autentiseringsuppgifter](service-gateway-onprem.md#credentials) lagras, eller i artikeln som beskriver hur du [använder Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md).
 > 
 > 
 
@@ -123,6 +123,6 @@ Om du finns med på fliken **Användare** i den datakälla som konfigurerats i g
 * [Lokal datagateway](service-gateway-onprem.md)  
 * [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 * [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
-* [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
+* [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md). 
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

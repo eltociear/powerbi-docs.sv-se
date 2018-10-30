@@ -7,20 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 10/23/2018
 ms.author: maikelson
-ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: d656a27717d22d13884bcbfa69fab4ba2babaf12
+ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49952244"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
 Registrera dig för våra kommande live-webbseminarier eller titta på våra inspelade sessioner på begäran.
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
+
+**Power BI: korrekt utförd analys**
+<br>av Gohul Shanmugalingam
+<br>*8 november 2018 13:00–14:00 EST*
+
+Detta är ett upprop till alla analys- och Excel-visionärer: lär dig att skapa snygga rapporter som människor vill använda, dela tilltalande insikter som är lätta att förstå och bryt isär silor med komplexa data ett säkert sätt så att dessa data blir tillgängliga.
+
+Vi kommer att dela med oss av nya produktinnovationer och vår vision för modern företags-BI och självservice-BI, vilket gör det möjligt för din organisation att skapa en datadriven kultur.
+
+[Registrera dig om du vill titta den 8 november](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Stärk dina kunskaper i datamodellering med Power BI**
+<br>av Kasper de Jonge
+<br>*20 november 2018 11:00 – 12:00 PST*
+
+Registrera dig för detta webbseminarium om du vill ta dina Power BI-modelleringskunskaper till nästa nivå. Läs mer om Power BI:s minnesinterna analysmotor, strategier för att skapa och hantera datarelationer och hur man använder filtersammanhang för dataanalysuttryck (DAX). Lär dig hur du kan ta dig an modelleringsutmaningar med Power BI eller Azure Analysis Services.
+
+[Registrera dig om du vill titta den 20 november](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 

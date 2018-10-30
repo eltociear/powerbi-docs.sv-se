@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 30ac2c0620607d680874e423c841c381fc273904
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38921517"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101518"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
 Det är möjligt för användare i din organisation att ha åtkomst till lokala data (till vilka de redan har åtkomstauktorisering), men innan dessa användare kan ansluta till den lokala datakällan, så måste en lokal datagateway ha installerats och konfigurerats. Gatewayen underlättar snabb och säker dold kommunikation mellan en användare i molnet till din lokala datakälla och sedan tillbaka till molnet.
@@ -52,7 +52,7 @@ En användare möjlighet att fråga och visa modelldata bestäms i första hand 
 Rollimplementering och dynamisk säkerhet på radnivå i modeller ligger utanför den här artikelns fokus.  Mer information finns i [Roller (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) och [Säkerhetsroller (Analysis Services – flerdimensionella Data)](https://msdn.microsoft.com/library/ms174840.aspx) på MSDN. Och om du vill ha riktigt djup förståelse av säkerhet för tabellmodeller, så hämta och läs [White paper om BI-semantikmodellen för tabeller](https://msdn.microsoft.com/library/jj127437.aspx).
 
 ## <a name="what-about-azure-active-directory"></a>Vad är Azure Active Directory?
-Microsofts molntjänster använder [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) för att hantera autentiseringen av användare. Azure Active Directory är den klient som innehåller användarnamn och säkerhetsgrupper. Normalt är den e-postadress som en användare loggar in med densamma som kontots UPN-namn.
+Microsofts molntjänster använder [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) för att hantera autentiseringen av användare. Azure Active Directory är den klient som innehåller användarnamn och säkerhetsgrupper. Normalt är den e-postadress som en användare loggar in med densamma som kontots UPN-namn.
 
 Vilken är mitt lokala Active Directorys roll?
 
@@ -78,7 +78,7 @@ Molntjänsterna känner bara till konton i Azure Active Directory. Det spelar in
 1. Du kan lägga till konton manuellt till Azure Active Directory.
    
    Du kan skapa ett konto på Azure Portal eller i administrationsportalen för Office 365, och kontonamnet matchar UPN-namnet för det lokala Active Directory-kontot.
-2. Du kan använda [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)-verktyget för att synkronisera lokala konton med din Azure Active Directory-klient.
+2. Du kan använda [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis)-verktyget för att synkronisera lokala konton med din Azure Active Directory-klient.
    
    Azure AD Connect-verktyget erbjuder alternativ för katalogsynkronisering och hur du konfigurerar autentisering, inklusive hash-synkronisering av lösenord, direktautentisering och federation. Om du inte är klientadministratör eller lokal domänadministratör, så måste du kontakta IT-administratören om du vill få detta konfigurerat.
 
@@ -90,7 +90,7 @@ Med Azure AD Connect säkerställer du att UPN-namnet matchar mellan AAD och dit
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Det är här som gatewayen kommer in i bilden
-Gatewayen fungerar som en brygga mellan molnet och den lokala servern. Dataöverföring mellan molnet och gatewayen säkras via [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/). Service Bus skapar en säker kanal mellan molnet och den lokala servern via en utgående anslutning på gatewayen.  Det finns inga inkommande anslutningar som du behöver öppna i den lokala brandväggen.
+Gatewayen fungerar som en brygga mellan molnet och den lokala servern. Dataöverföring mellan molnet och gatewayen säkras via [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus skapar en säker kanal mellan molnet och den lokala servern via en utgående anslutning på gatewayen.  Det finns inga inkommande anslutningar som du behöver öppna i den lokala brandväggen.
 
 Om du har en Analysis Services-datakälla måste du installera gatewayen på en dator som ingår i samma skog/domän som Analysis Services-servern.
 
@@ -116,8 +116,10 @@ Istället för att diskutera gatewayfelsökning här, så har vi placerat en ser
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
-[Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
-[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
+[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
+[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

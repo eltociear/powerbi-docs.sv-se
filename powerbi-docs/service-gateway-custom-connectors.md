@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 75e760c1ad808d05986de46cf2bc427bb078e3ce
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799056"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101288"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Använda anpassade dataanslutningar med den lokala datagatewayen
 
@@ -56,6 +56,6 @@ När det här alternativet är aktiverat visas dina anpassade anslutningar som t
 * [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
 * [Lokal datagateway (personligt läge)](service-gateway-personal-mode.md)
 * [Konfigurera proxyinställningar för den lokala datagatewayen](service-gateway-proxy.md)  
-* [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+* [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

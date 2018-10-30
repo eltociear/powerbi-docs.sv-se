@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/01/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f9bc117d4260bb8efa604591703205b405fd63c9
-ms.sourcegitcommit: f391b645062f64ac3adc2ce7877318583b14b941
+ms.openlocfilehash: 92b8d0e0ecfa9bae36e552e30cf8f1a7fcecff4b
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48016179"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100759"
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Apache Spark i HDInsight med DirectQuery
 
@@ -58,7 +58,7 @@ Servern är alltid i formatet \<klusternamn\>.azurehdinsight.net, och du hittar 
 
 ## <a name="limitations"></a>Begränsningar
 
-Dessa begränsningar och kommentarer kan komma att ändras eftersom vi fortsätter att förbättra upplevelsen. Ytterligare dokumentation finns i [Använda BI-verktyg med Apache Spark på Azure HDInsight](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
+Dessa begränsningar och kommentarer kan komma att ändras eftersom vi fortsätter att förbättra upplevelsen. Ytterligare dokumentation finns i [Använda BI-verktyg med Apache Spark på Azure HDInsight](/azure/hdinsight/spark/apache-spark-use-bi-tools/)
 
 * Power BI-tjänsten stöder bara konfiguration av Apache Spark 2.0 och HDInsight 3.5.
 * Varje åtgärd, som att markera en kolumn eller lägga till ett filter, skickar tillbaka en fråga till databasen – var noga med att välja en lämplig visuell typ innan du väljer mycket stora fält.
@@ -76,9 +76,9 @@ Du kan också allokera fler resurser i Azure-portalen under **Konfiguration** > 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Kom igång: Skapa Apache Spark-kluster på HDInsight Linux och köra interaktiva frågor med Apache Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
+[Kom igång: Skapa Apache Spark-kluster på HDInsight Linux och köra interaktiva frågor med Apache Spark SQL](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql/)  
 [Vad är Power BI?](power-bi-overview.md)  
 [Hämta data till Power BI](service-get-data.md)
-[Använda Kerberos på den lokala gatewayen för SSO (enkel inloggning)](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)
+[Använda Kerberos på den lokala gatewayen för SSO (enkel inloggning)](service-gateway-sso-kerberos.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
