@@ -7,34 +7,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2f10ead5d08efa12cae05aeb6f2e3d3068636f77
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 02829adb386cc746715a34300a42aba616dc2d60
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396921"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252501"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
-I administratörsportalen kan Power BI-klienterna i din organisation hanteras. Den innehåller sådant som användningsstatistik för åtkomst till Office 365-administrationscenter och inställningar.
+Med Admin-portalen kan du använda en Power BI-*klient* för din organisation. Portalen innehåller sådant som användningsstatistik för åtkomst till Office 365-administrationscenter och inställningar.
 
-Klient-hantering av Power BI för ditt företag görs via Power BI-administratörsportalen. Administrationsportal är tillgänglig för alla användare som är globala administratörer i Office 365 eller som har tilldelats rollen administratör i Power BI-tjänsten. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md).
-
-Alla användare kan se **administrationsportalen** under kugghjulsikonen. Om de inte är en administratör kan de bara se området **Premiuminställningar** och de ser bara de kapaciteter som de har behörighet att hantera.
+Hela administrationsportalen är tillgänglig för alla användare som är globala administratörer i Office 365 eller som har tilldelats rollen administratör i Power BI-tjänsten. Om du inte är någon av dessa roller kan du bara se **kapacitetsinställningarna** i portalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Navigera till administrationsportalen
 
 Ditt konto måste vara markerat som **Global administratör** i Office 365 eller Azure Active Directory, eller ha tilldelats administratörsrollen för Power BI-tjänsten, för att ha åtkomst till Power BI-administratörsportalen. Läs mer om administratörsrollen för Power BI-tjänsten i [Förstå administratörsrollen för Power BI](service-admin-role.md). Gör följande för att gå till Power BI-administratörsportalen.
 
 1. Välj kugghjulet längst upp till höger i Power BI-tjänsten.
-2. Välj **Administratörsportalen**.
 
-![](media/service-admin-portal/powerbi-admin-settings.png)
+1. Välj **Administratörsportalen**.
 
-Det finns sex flikar i portalen. Dessa beskrivs nedan.
+    ![Inställningar för att administratörsportalen](media/service-admin-portal/powerbi-admin-settings.png)
+
+Det finns sju flikar i portalen. Resten av den här artikeln innehåller information om var och en av dessa flikar.
+
+![Navigering av administratörsportalen](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Användningsstatistik](#usage-metrics)
 * [Användare](#users)
@@ -42,12 +43,11 @@ Det finns sex flikar i portalen. Dessa beskrivs nedan.
 * [Klientinställningar](#tenant-settings)
 * [Premiuminställningar](#premium-settings)
 * [Bädda in koder](#embed-codes)
-* [Visuella organisationsobjekt](#Organization-visuals)
-
-![](media/service-admin-portal/powerbi-admin-landing-page.png)
+* [Visuella organisationsobjekt](#organization-visuals)
 
 ## <a name="usage-metrics"></a>Användningsstatistik
-Den första fliken i administrationsportalen är **Användningsstatistik**. Användningsstatistiken ger dig möjlighet att övervaka användningen inom Power BI för din organisation. Det ger också möjlighet att se vilka användare och grupper som är mest aktiva i Power BI för din organisation.
+
+Med **användningsstatistik** kan du övervaka Power BI-användningen för din organisation. Det ger också möjlighet att se vilka användare och grupper som är mest aktiva i Power BI för din organisation.
 
 > [!NOTE]
 > Första gången du använder instrumentpanelen eller när du kommer tillbaka efter en lång tid utan att visa instrumentpanelen visas antagligen en skärm för inläsning medan vi läser in instrumentpanelen.
@@ -58,79 +58,76 @@ Här är en uppdelning av vad du kan se i varje panel:
 
 * Räknar separat instrumentpaneler, rapporter och datauppsättningar på användararbetsytan
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
+    ![Separata antal instrumentpaneler, rapporter och datauppsättningar](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 * Med använd instrumentpanel enligt antal användare med åtkomst till den. Till exempel, om du har en instrumentpanel som du har delat med 3 användare och du även har lagt till den i ett innehållspaket som två olika användare som är anslutna till, skulle antalet vara 6 (1 + 3 + 2)
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
+    ![Mest använda instrumentpaneler](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
 * Det mest populära innehåll som användare är anslutna till. Det är något användarna kan nå genom processen Hämta data, det vill säga innehållspaket från SaaS, organisationsinnehållspaket, filer eller databaser.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
+    ![Mest använda paket](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
 * En vy över toppanvändarna baserat på hur många instrumentpaneler de har, såväl instrumentpaneler de skapat själva som instrumentpaneler som någon har delat med dem.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
+    ![Användare med flest – instrumentpaneler](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
 * En vy över toppanvändarna baserat på hur många rapporter de har
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
+    ![Användare med flest – rapporter](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-Det andra avsnittet visar samma typ av information, men baserat på grupper. Här kan du se vilka grupper i din organisation som är mest aktiva och vilken sorts information de använder.
+Det andra avsnittet visar samma typ av information, men baserat på grupper. Här kan du se vilka grupper i din organisation som är mest aktiva och vilken sorts innehåll de använder.
 
 Med den här informationen kommer du att kunna hämta verkliga insikter om hur personer använder Power BI inom organisationen och identifiera de användare och grupper som är mest aktiva i din organisation.
 
 ## <a name="users"></a>Användare
 
-Den andra fliken i administrationsportalen är **Hantera användare**. Användarhantering för Power BI sker i administrationscentret för Office 365, så det här avsnittet hjälper dig att snabbt nå området för att hantera användare, administratörer och grupper i Office 365.
+Du kan hantera Power BI-användare, grupper och administratörer i Office 365 Administrationscenter. Fliken **Användare** innehåller en länk till administrationscentret för din klient.
 
-![](media/service-admin-portal/powerbi-admin-manage-users.png)
-
-När du klickar på **gå till administrationscentret för O365**, går du direkt till startsidan för Office 365 Administrationscenter för att hantera användare för din klient.
-
-![](media/service-admin-portal/powerbi-admin-o365-admin-center.png)
+![Gå till administrationscentret för O365](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Granskningsloggar
 
-Den tredje fliken i administrationsportalen är **granskningsloggar**. Loggarna finns i säkerhet- och efterlevnadscentrum för Office 365. Detta avsnitt ger snabbåtkomst till detta område i Office 365.
-
-Mer information om granskningsloggarna finns i [granska Power BI i din organisation](service-admin-auditing.md)
+Du kan hantera Power BI-granskningsloggar i Säkerhets- och efterlevnadscenter för Office 365. Fliken **Granskningsloggar** innehåller en länk till din klients Säkerhets- och efterlevnadscenter. [Läs mer](service-admin-auditing.md)
 
 ## <a name="tenant-settings"></a>Klientinställningar
 
-Den tredje fliken i administrationsportalen är **klientinställningar**. Klientinställningarna ger dig större kontroll över vilka funktioner som är tillgängliga för din organisation. Om du har frågor kring känsliga data, vissa av våra funktioner inte är lämpliga för din organisation eller om du bara vill att en viss funktion ska vara tillgänglig för en särskild grupp. Om så är fallet, kan du stänga av den i din klient.
+Fliken **Klientinställningar** möjliggör kontroll i minsta detalj över de funktioner som är tillgängliga för din organisation. Om du har frågor kring känsliga data, vissa av våra funktioner inte är lämpliga för din organisation eller om du bara vill att en viss funktion ska vara tillgänglig för en särskild grupp.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+Följande bild visar de första två avsnitten på fliken **Klientinställningar**.
+
+![Klientinställningar](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > Det kan ta upp till 10 minuter för att inställningen ska gälla för alla i din klient.
 
 Inställningarna kan ha tre tillstånd:
 
-* **Har inaktiverats för hela organisationen**: Du kan inaktivera en funktion så att användare inte kan använda den.
+* **Inaktiverad för hela organisationen**: Ingen i din organisation kan använda den här funktionen.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+    ![Inställningen inaktivera alla](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Har aktiverats för hela organisationen**: Du kan aktivera en funktion för hela organisationen så att alla användare har åtkomst till funktionen.
+* **Aktiverad för hela organisationen**: Alla i din organisation kan använda den här funktionen.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![Inställningen aktivera alla](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Har aktiverats för en del av organisationen**: Du kan även aktivera en funktion för en del av din organisation. Detta kan göras på ett par olika sätt. Du kan aktivera den för hela organisationen utom en viss användargrupp.
+* **Aktiverad för en delmängd av organisationen**: En specifik delmängd av användare eller grupper i din organisation kan använda den här funktionen.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+    Du kan aktivera funktionen för hela din organisation, utom för en specifik användargrupp.
 
-    Du kan också endast aktivera funktionen för en viss grupp av användare och även inaktivera den för en grupp av användare. Därmed har vissa användare inte åtkomst till funktionen även om de finns i en tillåten grupp.
+    ![Aktiverad delmängdinställningen](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+    Du kan också endast aktivera funktionen för en viss grupp av användare och även inaktivera den för en grupp av användare. Med denna metod har vissa användare inte åtkomst till funktionen även om de finns i en tillåten grupp.
+
+    ![Aktivera undantagsinställning](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 Följande avsnitt ger en översikt över de olika typerna av inställningar för klientorganisation.
 
 ## <a name="workspace-settings"></a>Arbetsyteinställningar
 
 ### <a name="create-workspaces-preview"></a>Skapa arbetsytor (förhandsversion)
-Användare i organisationen kan skapa apparbetsytor för att samarbeta på instrumentpaneler, rapporter och annat innehåll.
 
-Mer information finns i [Skapa nya arbetsytor](service-create-the-new-workspaces.md).
+Användare i organisationen kan skapa apparbetsytor för att samarbeta på instrumentpaneler, rapporter och annat innehåll. [Läs mer](service-create-the-new-workspaces.md)
 
 ## <a name="export-and-sharing-settings"></a>Inställningar för export och delning
 
@@ -138,19 +135,21 @@ Mer information finns i [Skapa nya arbetsytor](service-create-the-new-workspaces
 
 Användare i organisationen kan dela instrumentpaneler med användare utanför organisationen.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Inställning för externa användare](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
-Här är meddelandet som visas när du delar med en extern användare.
+Följande bild visar meddelandet som visas när du delar med en extern användare.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Dela med externa användare](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
 ### <a name="publish-to-web"></a>Publicera på webben
 
 Användare i organisationen kan publicera rapporter på webben. [Läs mer](service-publish-to-web.md)
 
-![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+Följande bild visar menyn **Arkiv** för en rapport när inställningen **Publicera på webben** är aktiverad.
 
-Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen för publicering på webben är.
+![Inställningen publicera på webben](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Användarna ser olika alternativ i användargränssnittet baserat på vad inställningen för **Publicering på webben** är.
 
 |Visning av aktuellt objekt |Aktiverad för hela organisationen |Inaktiverad för hela organisationen |Specifika säkerhetsgrupper   |
 |---------|---------|---------|---------|
@@ -163,7 +162,9 @@ Användarna ser olika alternativ i användargränssnittet baserat på vad instä
 
 Användare i organisationen kan exportera data från ett fönster eller en visualisering. [Läs mer](visuals/power-bi-visualization-export-data.md)
 
-![](media/service-admin-portal/powerbi-admin-export-data.png)
+Följande bild visar alternativet för att exportera data från en panel.
+
+![Exportera data från en panel](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
 > När du inaktiverar **Exportera data** kan användare inte heller använda funktionen **Analysera i Excel** eller live-anslutning till Power BI-tjänsten.
@@ -172,7 +173,9 @@ Användare i organisationen kan exportera data från ett fönster eller en visua
 
 Användare i organisationen kan exportera Power BI-rapporter som PowerPoint-filer. [Läs mer](consumer/end-user-powerpoint.md)
 
-![](media/service-admin-portal/powerbi-admin-powerpoint.png)
+Följande bild visar menyn **Arkiv** för en rapport när inställningen **Exportera rapporter som PowerPoint-presentationer** är aktiverad.
+
+![Exportera rapporter som PowerPoint-presentationer](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### <a name="print-dashboards-and-reports"></a>Skriva ut instrumentpaneler och rapporter
 
