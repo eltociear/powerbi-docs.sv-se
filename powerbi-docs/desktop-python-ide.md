@@ -25,7 +25,7 @@ Med **Power BI Desktop** kan du använda din externa Python IDE (Integrated Deve
 ## <a name="enable-an-external-python-ide"></a>Aktivera ett externt Python IDE
 Du kan starta ditt externa Python IDE från **Power BI Desktop** och låta dina data importeras och visas automatiskt i Python IDE. Därifrån kan du ändra skriptet i det externa Python IDE:t och sedan klistra in det igen i **Power BI Desktop** för att skapa visuella Power BI-objekt och rapporter.
 
-Du kan ange vilket Python IDE som du vill använda och låta det startas automatiskt inifrån **Power BI Desktop**.
+Du kan ange vilket Python IDE som du vill använda och låta det starta automatiskt inifrån **Power BI Desktop**.
 
 ### <a name="requirements"></a>Krav
 Om du vill använda den här funktionen måste du installera ett **Python IDE** på den lokala datorn. **Power BI Desktop** varken inkluderar, distribuerar eller installerar Python-motorn, så du måste installera **Python** på den lokala datorn separat. Du kan välja vilka Python IDE som ska användas med följande alternativ:
@@ -41,7 +41,7 @@ Om du vill använda den här funktionen måste du installera ett **Python IDE** 
 
 Om du har flera Python IDE:er installerade kan du ange vilken som ska startas genom att välja den i listrutan *Identifierade Python-IDE:er* i dialogrutan **Alternativ**.
 
-Som standard startar **Power BI Desktop** **Visual Studio Code** som en extern Python IDE om den är installerad på den lokala datorn. Om **Visual Studio Code** inte installeras och du har **Visual Studio** så startas det istället. Om ingen av dessa Python IDE:er är installerade kommer programmet som är associerat med **.PY**-filer att startas.
+Som standard startar **Power BI Desktop** **Visual Studio Code** som en extern Python IDE om den är installerad på den lokala datorn. Om **Visual Studio Code** inte är installerad och du har **Visual Studio** så startas det istället. Om ingen av dessa Python IDE:er är installerade kommer programmet som är associerat med **.PY**-filer att startas.
 
 Och om det inte finns någon **.PY**-filassociation så går det att ange en sökväg till en anpassad IDE i avsnittet *Bläddra till din önskade Python-IDE* i dialogrutan **Alternativ**. Du kan också starta en annan Python IDE genom att välja kugghjulsikonen **Inställningar** bredvid pilikonen **Starta Python IDE** i **Power BI Desktop**.
 
@@ -74,7 +74,7 @@ Starta en Python IDE från **Power BI Desktop** genom att utföra följande steg
    > **Power BI Desktop** lägger till de tre första raderna i skriptet så att den kan importera data från **Power BI Desktop** när du kör skriptet.
    > 
    > 
-7. Skript som du skapade i **fönstret Python-skriptredigerare** i **Power BI Desktop** visas från och med rad 4 i Python-IDE:n. Du kan nu skapa Python-skriptet i Python IDE:n. När Python-skriptet är klart i din Python-IDE måste du kopiera och klistra in det i fönstret **Python-skriptredigerare** i **Power BI Desktop** igen, *exklusive* de tre första raderna i skriptet som **Power BI Desktop** skapade automatiskt. Kopiera inte de tre första raderna i skriptet tillbaka till **Power BI Desktop**, dessa rader användes bara för att importera data till din Python IDE från **Power BI Desktop**.
+7. Skript som du skapade i **fönstret Python-skriptredigerare** i **Power BI Desktop** visas från och med rad 4 i Python-IDE:n. Du kan nu skapa Python-skriptet i Python IDE:n. När Python-skriptet är klart i din Python-IDE måste du kopiera och klistra in det i fönstret **Python-skriptredigerare** i **Power BI Desktop** igen, *exklusive* de tre första raderna i skriptet som **Power BI Desktop** skapade automatiskt. Kopiera inte de tre första raderna i skriptet tillbaka till **Power BI Desktop**, dessa rader används bara för att importera data till din Python IDE från **Power BI Desktop**.
 
 ### <a name="known-limitations"></a>Kända begränsningar
 Att starta en Python IDE direkt från Power BI Desktop har några begränsningar:

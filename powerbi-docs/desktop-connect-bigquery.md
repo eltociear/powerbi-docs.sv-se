@@ -42,7 +42,7 @@ Det finns några begränsningar och överväganden att tänka på med anslutning
 
 * Google BigQuery-anslutningsappen är tillgänglig i Power BI Desktop och Power BI-tjänsten. I Power BI-tjänsten, når du anslutningsappen med moln-till-moln-anslutningen från Power BI till Google BigQuery.
 
-Du kan använda Power BI med Google BigQuery **faktureringsprojekt**. Som standard använder Power BI det första projektet från listan som returneras för användaren. För att anpassa beteendet för faktureringsprojektet när du använder det med Power BI, gör du följande:
+Du kan använda Power BI med **faktureringsprojektet** för Google BigQuery. Som standard använder Power BI det första projektet från listan som returneras för användaren. För att anpassa beteendet för faktureringsprojektet när du använder det med Power BI, gör du följande:
 
  * Anger följande alternativ i den underliggande M i källsteget som kan anpassas med hjälp av **Power Query-redigeraren** i Power BI Desktop:
 
