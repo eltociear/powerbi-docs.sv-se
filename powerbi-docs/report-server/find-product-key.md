@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: 2ea6f2e557f26358ab6a93d33c890e90c96885f4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6d494ebf00388478bea802dbb713f1025d428439
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34564660"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101242"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Så här hittar du rapportserverns produktnyckel
 Lär dig hur du hittar produktnyckeln för Power BI-rapportservern för att installera servern i en produktionsmiljö.
@@ -47,7 +47,7 @@ Om du har ett SQL Server Enterprise SA-avtal, kan du få din produktnyckel från
 ## <a name="next-steps"></a>Nästa steg
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
-[Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

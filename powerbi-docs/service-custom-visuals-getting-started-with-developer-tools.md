@@ -2,32 +2,33 @@
 title: Använd utvecklingsverktyg för att skapa en anpassad visualisering
 description: Med anpassad visualisering kan du uppfylla dina användares behov och matcha appens design. Lär dig hur du skapar en anpassad visualisering för Power BI med utvecklingsverktygen.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 11/30/2017
-ms.author: maghan
-ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a8aca5e3410d6352d64044cdc1d8575b2449912c
+ms.sourcegitcommit: f2eab2c3e7b5ec3684f63d819f10cb3dcfa21e73
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726695"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50153712"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Använd utvecklingsverktyg för att skapa en anpassad visualisering
+
 Med anpassad visualisering kan du uppfylla dina användares behov och matcha appens design. Lär dig hur du skapar en anpassad visualisering för Power BI med utvecklingsverktygen.
 
 > [!NOTE]
 > Du kan använda det här dokumentet för att komma igång. Mer detaljerad information finns i referensinformation inom [Power BI visuell information git repo](https://github.com/Microsoft/PowerBI-visuals).
-> 
-> 
 
 ## <a name="requirements"></a>Krav
+
 * NodeJS 4.0+ krävs (5.0 eller senare rekommenderas) [Hämta NodeJS](https://nodejs.org)
 
 ## <a name="install-nodejs-and-the-power-bi-tools"></a>Installera Power BI-verktyg och NodeJS
+
 Du måste installera NodeJS för att skapa en anpassad visualisering. NodeJS krävs för att köra kommandoradsverktyg.
 
 1. Hämta och installera [NodeJS](https://nodejs.org). Version 4.0 eller senare krävs, men det är rekommenderat att ha 5.0 eller senare.
@@ -83,12 +84,11 @@ Du måste installera NodeJS för att skapa en anpassad visualisering. NodeJS kr�
 <a name="ssl-setup"></a>
 
 ### <a name="server-certificate-setup"></a>Ställa in servercertifikat
+
 Du behöver en betrodd https-server för att aktivera dynamisk förhandsgranskning av ditt visuella objekt. Innan du kan börja måste du installera ett SSL-certifikat som tillåter att visuella objekt laddas upp till webbläsaren. 
 
 > [!NOTE]
 > Denna inställning behöver bara ställas in en gång för din utvecklararbetsstation.
-> 
-> 
 
 Kör följande kommando för att *skapa* ett certifikat.
 
@@ -96,9 +96,6 @@ Kör följande kommando för att *skapa* ett certifikat.
 
 > [!NOTE]
 > Du bör se ett meddelande om sökvägen till certifikatet och en nyligen skapad lösenfras.
-> 
-> 
-
 
 Kör följande kommando för att *installera* certifikatet.
 
@@ -106,8 +103,6 @@ Kör följande kommando för att *installera* certifikatet.
 
 > [!NOTE]
 > Du bör se ett meddelande om att använda den nyligen skapade lösenfrasen för att installera ett PFX-certifikat.
-> 
-> 
 
 **Windows OS**
 
@@ -131,8 +126,6 @@ Kör följande kommando för att *installera* certifikatet.
 
 > [!NOTE]
 > Om certifikatet inte har identifierats kan du behöva starta om datorn.
-> 
-> 
 
 **OSX**
 
@@ -149,10 +142,9 @@ Kör följande kommando för att *installera* certifikatet.
 
 > [!NOTE]
 > Om certifikatet inte har identifierats kan du behöva starta om datorn.
-> 
-> 
 
-## <a name="enable-live-preview-of-developer-visual"></a>Aktivera dynamisk förhandsgranskning av utvecklarens visualisering
+## <a name="enable-a-live-preview-of-the-developer-visual"></a>Aktivera förhandsgranskning i realtid av utvecklarens visuella objekt
+
 Följ dessa steg om du vill aktivera en dynamisk förhandsgranskning av din anpassade visualisering. Detta tillåter att visualiseringen används i Power BI-tjänsten när du redigerar rapporter.
 
 1. Bläddra och logga in på [app.powerbi.com](https://app.powerbi.com).
@@ -168,16 +160,16 @@ Följ dessa steg om du vill aktivera en dynamisk förhandsgranskning av din anpa
 
    > [!NOTE]
    > Detta kräver att du har kört `pbiviz start` från visualiseringsmappen på din utvecklingsdator. Mer information om hur du skapar ditt visuella objekt finns [Skapa en ny visualisering](#create-a-new-visual) i den här artikeln.
-   > 
-   > 
+
 5. Välj visualiseringen i rapportarbetsytan. Du kan binda data på samma sätt som du gör i andra visuella objekt.
 
 Nu kan du börja utveckla ditt visuella objekt.
 
 ## <a name="create-a-new-visual"></a>Skapa en ny visualisering
+
 Du kan skapa ett nytt visualiseringsprojekt genom att köra följande kommando.
 
-```
+```powershell
 pbiviz new MyVisualName
 ```
 
@@ -186,18 +178,20 @@ Du kan ersätta *MyVisualName* med det namn som du vill ge visualiseringen. Dett
 Det här kommandot skapar en ny mapp i katalogen där kommandot kördes. Den skapar en grundläggande startmall för ditt visuella objekt. När kommandot har slutförts kan du öppna katalogen och använda din favoritredigerare för att börja arbeta på din nya visualisering.
 
 ## <a name="testing-your-visual-in-power-bi"></a>Testa ditt visuella objekt i Power BI
+
 Du kan testa ditt visuella objekt i Power BI-tjänsten i rapporter och instrumentpaneler.
 
 <a name="running-your-visual"></a>
 
 ### <a name="running-your-visual"></a>Kör ditt visuella objekt
+
 Du kan köra ditt visuella objekt genom att göra följande.
 
 1. Öppna en kommandotolk.
 2. Ändra katalogen till din mapp för visuella objekt. Detta är den mapp som innehåller filen `pbiviz.json`.
 3. Kör följande kommando.
 
-    ```
+    ```powershell
     pbiviz start
     ```
 
@@ -205,7 +199,7 @@ Du kan köra ditt visuella objekt genom att göra följande.
 
 Om du befinner dig på fel plats visas ett fel som liknar följande.
 
-```
+```powershell
     error  LOAD ERROR Error: pbiviz.json not found. You must be in the root of a visual project to run this command.
         at e (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:67:35)
         at Function.loadVisualPackage (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:62:16)
@@ -220,14 +214,13 @@ Om du befinner dig på fel plats visas ett fel som liknar följande.
 ```
 
 ### <a name="viewing-your-visual-in-power-bi"></a>Visa ditt visuella objekt i Power BI
+
 Om du vill visa ditt visuella objekt i en rapport, gå till rapporten och välj visualiseringen från fönstret **Visualiseringar**.
 
 > [!NOTE]
 > Du måste köra kommandot `pbiviz start` innan du gör detta enligt beskrivningen i avsnittet [Kör ditt visuella objekt](#running-your-visual).
-> 
-> 
 
-![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![Visuellt urval för Power BI-utvecklare](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
 Sedan visas startmallen för visualiseringen.
 
@@ -242,6 +235,7 @@ Sedan visas startmallen för visualiseringen.
 | Skicka feedback |Berätta för oss om vi kan förbättra upplevelsen på något sätt! (Kräver GitHub-konto) |
 
 ## <a name="package-your-visual-for-use-in-power-bi-desktop-and-distribution"></a>Paketera ditt visuella objekt för användning i Power BI Desktop och distribution
+
 Innan du kan läsa in ditt visuella objekt i [Power BI Desktop](https://powerbi.microsoft.com/desktop/) eller dela den med communityn i [Power BI-galleriet](https://visuals.powerbi.com) måste du skapa en `pbiviz`-fil.
 
 Du kan paketera ditt visuella objekt genom att göra följande.
@@ -250,19 +244,21 @@ Du kan paketera ditt visuella objekt genom att göra följande.
 2. Ändra katalogen till din mapp för visuella objekt. Detta är den mapp som innehåller filen `pbiviz.json`.
 3. Kör följande kommando.
 
-    ```
+    ```powershell
     pbiviz package
     ```
 
 Det här kommandot skapar en `pbiviz` i katalogen `dist/` i ditt visualiseringsprojekt. Om det redan finns en `pbiviz`-fil kommer den att skrivas över.
 
 ## <a name="updating-the-visuals-api-version"></a>Uppdaterar API-versionen för visualiseringen
+
 När du skapar ett visuellt objekt med `pbiviz new`, flyttas en kopia av lämpliga API-typdefinitioner och json-scheman till katalogen för ditt visuella objekt. Du kan använda kommandot `pbiviz update` för att uppdatera de här filerna om det behövs. Detta kan vara användbart om vi släpper en korrigering för en äldre API-version eller om du vill uppdatera till den senaste API-versionen.
 
 ### <a name="updating-your-existing-api-version"></a>Uppdatera din befintliga API-version
+
 Om vi släpper en uppdatering för en befintlig API kan du hämta den senaste versionen genom att göra följande.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -273,9 +269,10 @@ pbiviz update
 Detta hämtar de senaste verktygen från npm, vilket imfattar uppdaterade typdefinitioner och scheman. Med hjälp av `pbiviz update` skrivs egenskapen `apiVersion` i ditt *pbiviz.json*-fält med den senaste versionen.
 
 ### <a name="upgrading-to-a-different-api-version"></a>Uppgradera till en annan API-version
+
 Du kan uppdatera till en annan API-version med hjälp av samma steg som nämns ovan. Du kan uttryckligen ange API-versionen som du vill använda.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -287,10 +284,9 @@ Därmed uppdateras ditt visuella objekt till API-version 1.2.0. Du kan ersätta 
 
 > [!WARNING]
 > Standard-API-versionen som används av verktygen kommer alltid att vara den säkra versionen av API:et. Alla versioner som är senare än standardversionen är mindre stabila och kan komma att ändras. De kan bete sig oväntat eller avvikande mellan Power BI-tjänsten och Power BI Desktop. Den aktuella säkra API-versionen finns i [Ändringsloggen](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md). Läs mer om betaversioner i [Översikt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md).
-> 
-> 
 
 ## <a name="inside-the-visual-project"></a>Inuti visualiseringsprojektet
+
 Ditt visualiseringsprojekt befinner sig i den mapp som skapas när du kör kommandot `pbiviz new`. 
 
 ### <a name="file-structure"></a>Filstruktur
@@ -308,6 +304,7 @@ Ditt visualiseringsprojekt befinner sig i den mapp som skapas när du kör komma
 | tsconfig.json |TypeScript-kompileringsinställningar. Lär dig mer om [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html). |
 
 ### <a name="pbivizjson"></a>pbiviz.json
+
 Den här filen är ditt visuella objekts huvudsakliga konfigurationsfil. Den innehåller metadata, samt information om dina filer som behövs för att bygga ditt visuella objekt.
 
 ```
@@ -336,6 +333,7 @@ Den här filen är ditt visuella objekts huvudsakliga konfigurationsfil. Den inn
 ```
 
 ### <a name="visual-source-typescript"></a>Visualiseringskälla (TypeScript)
+
 Visualiseringskoden måste skrivas i TypeScript, vilket är en supermängd JavaScript som stöder mer avancerade funktioner och snabb åtkomst till ES6/ES7 funktioner.
 
 Alla TypeScript-filer ska lagras i `src/` katalogen och läggas till i `files` matrisen i `tsconfig.json`. På så sätt kan TypeScript-kompilatorn att läsa in dem i rätt ordning.
@@ -347,6 +345,7 @@ Du kan skapa så många filer och klasser som du behöver i ditt visuella objekt
 Läs mer om [TypeScript](http://www.typescriptlang.org/).
 
 ### <a name="visual-style-less"></a>Visualiseringsformat (mindre)
+
 Visual formatering hanteras med sammanhängande formatmallar (CSS). För din bekvämlighet använder vi förkompileraren Less som stöder avancerade funktioner, som kapsling, variabler, mixins, villkor, slingor med mera. Du kan bara skriva vanlig CSS i Less-filen om du inte vill använda någon av dessa funktioner.
 
 Alla Less-filer ska lagras i katalogen `style/`. Filen som anges under `style`-fältet inom din `pbiviz.json`-fil kommer att läsas in. Eventuella ytterligare filer ska läsas in med hjälp av `@import`.
@@ -354,12 +353,15 @@ Alla Less-filer ska lagras i katalogen `style/`. Filen som anges under `style`-f
 Läs mer om [Less](http://lesscss.org/).
 
 ## <a name="debugging"></a>Felsökning
+
 Tips om hur du felsöker ditt anpassade visuella objekt finns i [felsökningsguiden](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
 ## <a name="submit-your-visual-to-appsource"></a>Skicka din visualisering till AppSource
+
 Du kan ange att dina visualiseringar ska kunna användas av andra genom att skicka dem till AppSource. Mer information om den här processen finns i [Publicera anpassat visuellt objekt till AppSource](developer/office-store.md).
 
 ## <a name="troubleshooting"></a>Felsökning
+
 **Pbiviz-kommandot hittades inte (eller liknande fel)**
 
 Om du kör `pbiviz` i din terminal-/kommandorad bör du se hjälpskärmen. Om inte har den installerats korrekt. Kontrollera att du har installerat version 4.0 av NodeJS eller senare.
@@ -376,8 +378,6 @@ Kontrollera att du har aktiverat det på inställningarna för Power BI om du in
 
 > [!NOTE]
 > Det går för närvarande endast att felsöka visuella objekt i Power BI-tjänsten och inte i Power BI Desktop eller mobilappen. Det paketerade visuella objektet kommer fortfarande att fungera överallt.
-> 
-> 
 
 Mer information finns i [Aktivera dynamisk förhandsgranskning av utvecklarens visuella objekt](#enable-live-preview-of-developer-visual)...
 
@@ -388,11 +388,11 @@ Kör den visuella servern `pbiviz start` på din terminal/kommandoraden från ro
 Mer information finns i [Kör din visuella objekt](#running-your-visual) eller [Servercertifikatinstallation](#ssl-setup).
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Visualiseringar i Power BI](visuals/power-bi-report-visualizations.md)  
 [Anpassade visualiseringar i Power BI](power-bi-custom-visuals.md)  
 [Publicera anpassade visuella objekt i Office Store](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  
 [Less CSS](http://lesscss.org/)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-
+Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/) 

@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 95fa59d91a73101d7d04f3921a81236bfae7d0bb
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: ccc99c2f9810bcda80e1f02ce67e49390fd0308f
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187316"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003258"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Snabbt hitta och visa dina Power BI-data med hjälp av Cortana för Power BI
 Använd Cortana på alla dina Windows 10-enheter så att du för omedelbara svar på viktiga affärsfrågor. Genom att integrera med Power BI hämtar Cortana viktig information direkt från Power BI-instrumentpaneler och rapporter. Allt du behöver du bara 10 november 2015-versionen eller senare av Windows 10, Cortana, Power BI och åtkomst till minst en datauppsättning.
@@ -22,14 +22,14 @@ Använd Cortana på alla dina Windows 10-enheter så att du för omedelbara svar
 ![Cortanas sökfält](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 
 ## <a name="preview-the-new-cortana-dashboard-search-experience-for-windows-10"></a>Förhandsgranska den nya sökfunktionen i Cortana-*instrumentpanelen* för Windows 10
-Under ett tag nu har du kunnat [använda Cortana för att hämta vissa typer av rapportsidor](service-cortana-answer-cards.md). Nu har vi lagt till en **ny upplevelse** – möjligheten att även hämta instrumentpaneler. Testa gärna och [skicka oss feedback ](mailto:pbicortanasg@microsoft.com). Den *nya upplevelsen* kommer att utökas så att den inkluderar även Cortana-sökningar efter rapporter.  En av de främsta fördelarna med den nya miljön är att du behöver inte göra något speciellt för att konfigurera den. Du behöver inte aktivera Cortana eller konfigurera Windows 10 – det fungerar ändå.
+Under ett tag nu har du kunnat [använda Cortana för att hämta vissa typer av rapportsidor](service-cortana-answer-cards.md). Nu har vi lagt till en **ny upplevelse** – möjligheten att även hämta instrumentpaneler. Testa gärna och [skicka oss feedback ](mailto:pbicortanasg@microsoft.com). Den *nya upplevelsen* kommer att utökas så att den inkluderar även Cortana-sökningar efter rapporter.  En av de främsta fördelarna med den nya miljön är att du behöver inte göra något speciellt för att konfigurera den. Du behöver inte aktivera Cortana eller konfigurera Windows 10. Det fungerar helt enkelt.
 
 > [!NOTE]
 > Om det inte fungerar som det ska, så gå till artikeln [Felsökning](service-cortana-troubleshoot.md).
 > 
 > 
 
-Den underliggande tekniken använder [Microsofts Azure Search-tjänst](). Den här söktjänsten tillhandahåller extra funktioner, t.ex. smart rangordning, felkorrigering och automatisk komplettering.
+Den underliggande tekniken använder [Microsoft Azure Search Service](https://docs.microsoft.com/azure/search/). Den här söktjänsten tillhandahåller extra funktioner, t.ex. smart rangordning, felkorrigering och automatisk komplettering.
 
 Båda Cortana-upplevelserna kommer att finnas sida vid sida.
 
@@ -54,13 +54,13 @@ Om Cortana hittar en matchning visas namnet på instrumentpanelen eller rapports
 ### <a name="cortana-and-dashboards-the-new-experience"></a>Cortana och instrumentpaneler (den *nya upplevelsen*)
 Cortana kan hitta svar på instrumentpaneler som du äger och instrumentpaneler som har delats med dig. Ställ frågor till Cortana med titlar, nyckelord, ägare namn, arbetsytenamn, appnamn och mycket mer.
 
-Frågan måste innehålla minst 2 ord om Cortana ska kunna hitta något svar. Så om du söker på en instrumentpanel som har ett ord i namnet (Marknadsföring), så lägg något annat ord, t.ex. ”visa”, ”Power BI” eller ”<owner name>” i din fråga som i ”Visa marknadsföring” och ”michele hart exempel”. 
+Frågan måste innehålla minst två ord om Cortana ska kunna hitta något svar. Så om du söker på en instrumentpanel med ett ord i namnet (Marknadsföring), så lägg något annat ord, t.ex. ”visa”, ”Power BI” eller ägarens namn i din fråga som i ”visa marknadsföring” och ”michele hart exempel”. 
 
-Om din instrumentpanel har en rubrik med mer än ett ord, returnerar Cortana endast den instrumentpanelen om din sökning matchar minst två av ord, eller om din instrumentpanel matchar något av orden plus ägarens namn. För en instrumentpanel med namnet ”Kundlönsamhetsexempel”: 
+Om instrumentpanelens rubrik består av mer än ett ord returnerar Cortana endast den instrumentpanelen om din sökning matchar minst två av orden, eller ett av orden plus ägarens namn. För en instrumentpanel med namnet ”Kundlönsamhetsexempel”: 
 
 * ”Visa mig kunden” returnerar *inte* ett resultat för Power BI-instrumentpanelen.   
 * ”uttryck som ”visa kundlönsamhet”, ”kund p”, ”kund s”, ”lönsamhet exempel”, ”michele hart exempel”, ”visa kundlönsamhet exempel” och ”visa kund p” *returnerar* ett Power BI-resultat.
-* Att lägga till ordet ”powerbi” räknas som ett av de 2 ord som krävs, så ”powerbi exempel” *returnerar* ett Power BI-resultat. 
+* Att lägga till ordet ”powerbi” räknas som ett av de två ord som krävs, så ”powerbi exempel” *returnerar* ett Power BI-resultat. 
   
     ![Cortana-sökning med minst 2 ord](media/service-cortana-intro/power-bi-cortana-2-words.png)
 

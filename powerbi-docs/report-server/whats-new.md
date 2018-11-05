@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: 648938006cd15e2bb92b305aa9a2af24d028cead
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726948"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101265"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -328,7 +328,7 @@ Power BI-rapportserver har nu stöd för den nya Power BI-tabellen och visuella 
 [Vad är Power BI-rapportservern? ](get-started.md)  
  [Administratörshandbok](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
-[Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

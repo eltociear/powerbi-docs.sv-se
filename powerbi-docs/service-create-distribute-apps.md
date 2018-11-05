@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62950462f60fea6db44a9756eff8f99a6841d1d4
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435452"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100828"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -63,7 +63,7 @@ När instrumentpanelerna och rapporterna på din arbetsyta är redo kan du välj
    
      ![Appens innehåll](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. Under **Åtkomst** bestämmer du vem som ska ha åtkomst till appen: antingen alla i din organisation, specifika personer eller Active Directory-säkerhetsgrupper. Om du har behörighet kan du välja att installera appen automatiskt för mottagarna. Du kan aktivera den här inställningen i [Power BI-administratörsportalen](#how-to-enable-pushing-apps). Läs mer om överväganden för att [pusha en app](#how-to-enable-pushing-apps).
+5. Under **Åtkomst** bestämmer du vem som ska ha åtkomst till appen: antingen alla i din organisation, specifika personer eller Active Directory-säkerhetsgrupper. Om du har behörighet kan du välja att installera appen automatiskt för mottagarna. En Power BI-administratör kan aktivera den här inställningen i Power BI-administratörsportalen. Mer information finns i [Installera en app automatiskt](#how-to-install-an-app-automatically-for-end-users).
 
     ![Åtkomst till appen](media/service-create-distribute-apps/power-bi-apps-access.png)
 

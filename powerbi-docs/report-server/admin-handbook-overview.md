@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: 1dbca883bc4df2bde743963db7994361616be192
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2c8319395bd4daf44562f71380fc254964708c2b
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721925"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100621"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratörsöversikt, Power BI-rapportserver
-Den här artikeln är administratörsöversikten för Power BI-rapportservern, en lokal plats där du kan lagra och hantera dina mobila Power BI-rapporter och sidnumrerade rapporter. Den här artikeln beskriver begrepp för att planera, distribuera och hantera din Power BI-rapportservern, med länkar till mer information.
+Den här artikeln är administratörsöversikten för Power BI-rapportservern, en lokal plats där du kan lagra och hantera dina mobila Power BI-rapporter och sidnumrerade rapporter. I den här artikeln introduceras begrepp som beskriver hur du kan planera, distribuera och hantera din Microsoft Power BI-rapportserver, med länkar till mer information.
 
 ![](media/admin-handbook-overview/admin-handbook.png)
 
@@ -50,7 +50,7 @@ Säkerhet och skydd är viktigt för alla organisationer. Du kan lära dig om au
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Hitta rapportserverns produktnyckel](find-product-key.md)  
 [Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
-[Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: cda575c11be90c8e18a3a9f3b8325ccf674afffc
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: b068516b13b3aab134b20f95939c75a5b6e949b5
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49337092"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101702"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -341,7 +341,7 @@ Vi har sett fram emot mars uppdateringar av **Power BI Desktop**. Följande uppd
 
 ### <a name="reporting"></a>Rapportering
 
-* Knappbeskrivningar på rapportsidor [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[artikel]]() [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
+* Knappbeskrivningar på rapportsidor [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
 * Bokmärken är nu allmänt tillgängliga [[video]](https://youtu.be/kuI6MMzDh34?t=9m2s) [[artikel]](desktop-bookmarks.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking) 
 * Visningsenheter och precisionskontroll för tabell- och matriskolumner [[video]](https://youtu.be/kuI6MMzDh34?t=11m1s) [[artikel]](desktop-slicer-numeric-range.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits) 
 * Inaktivera sidhuvudet för visuella objekt i läsläge för en rapport [[video]](https://youtu.be/kuI6MMzDh34?t=12m25s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 

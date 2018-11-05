@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 882fdad2b29c9bd21ea0b979d5009dee86304159
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4faaa63a3845125b4df1ec634d22b084b5ae25f2
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548153"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101219"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Ansluta till Azure-granskningsloggar med Power BI
 Du kan analysera och visualisera informationen som lagras i granskningsloggarna med Azure-granskningsloggarnas innehållspaket. Power BI hämtar dina data, skapar en färdig instrumentpanel och sedan rapporter baserade på dessa data.
@@ -38,7 +38,7 @@ Du kan analysera och visualisera informationen som lagras i granskningsloggarna 
 5. Som **autentiseringsmetod** väljer du **oAuth2** \> **Logga in**.
    
     ![](media/service-connect-to-azure-audit-logs/creds.png)
-6. Ange dina autentiseringsuppgifter för att avsluta inloggningsprocessen.
+6. Avsluta inloggningsprocessen genom att ange dina autentiseringsuppgifter.
    
     ![](media/service-connect-to-azure-audit-logs/login.png)
 7. Power BI hämtar dina Azure-granskningsloggdata och skapar en instrumentpanel och en rapport som är färdiga att använda. 
@@ -53,7 +53,7 @@ Du kan analysera och visualisera informationen som lagras i granskningsloggarna 
 * Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
 ## <a name="system-requirements"></a>Systemkrav
-Azure-granskningsloggarnas innehållspaket kräver åtkomst till granskningsloggar i Azure Portal. Du hittar mer information [här](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
+Azure-granskningsloggarnas innehållspaket kräver åtkomst till granskningsloggar i Azure Portal. Du hittar mer information [här](/azure/azure-resource-manager/resource-group-audit/).
 
 <a name="FindingParams"></a>
 
@@ -63,10 +63,10 @@ Det finns två enkla sätt för att hitta ditt prenumerations-ID.
 1. Från https://portal.azure.com -&gt; Bläddra –&gt; Prenumerationer –&gt; Prenumerations-ID
 2. Från https://manage.windowsazure.com -&gt; Inställningar –&gt; Prenumerations-ID
 
-Ditt prenumerations-ID är en lång uppsättning siffror och tecken, liknande exemplet i Steg \#4 ovan. 
+Ditt prenumerations-ID är en lång uppsättning siffror och tecken, likt exemplet i Steg \#4 ovan. 
 
 ## <a name="troubleshooting"></a>Felsökning
-Om det uppstår ett fel med autentiseringsuppgifterna eller ett fel vid uppdateringsförsök till följd av ogiltiga autentiseringsuppgifter, kan du prova med att ta bort alla förekomster av Azure-granskningsloggarnas innehållspaket och ansluta igen.
+Om det uppstår ett fel med autentiseringsuppgifterna eller ett fel vid uppdateringsförsök till följd av ogiltiga autentiseringsuppgifter, så kan du prova med att ta bort alla förekomster av Azure-granskningsloggarnas innehållspaket och ansluta igen.
 
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)  

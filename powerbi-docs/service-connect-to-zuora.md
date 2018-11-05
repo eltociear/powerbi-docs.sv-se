@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546980"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003235"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Ansluta till Zuora med Power BI
 Med Zuora för Power BI kan du visualisera viktiga intäkter, fakturering och prenumerationsdata. Använd standardinstrumentpanelen och rapporter för att analysera användningstrender, spåra fakturering och betalningar och övervaka återkomma intäkter eller anpassa dem för att uppfylla dina unika behov av instrumentpaneler och rapporter.
@@ -32,7 +32,7 @@ Ansluta till [Zuora](https://app.powerbi.com/getdata/services/Zuora) för Power 
 3. Välj **Zuora** \> **Hämta**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Ange ditt Zuora-URL. Det här är vanligtvis ”<https://www.zuora.com>”. Information om att [söka efter de här parametrarna](#FindingParams) finns nedan.
+4. Ange ditt Zuora-URL. URL:en är normalt ”<https://www.zuora.com>”. Information om hur du [söker efter dessa parametrar](#FindingParams) finns nedan.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Som **Autentiseringsmetod** väljer du **Grundläggande** och anger sedan ditt användarnamn och lösenord (skiftlägeskänsliga). Välj sedan **Logga in**.
@@ -95,7 +95,6 @@ Den inkluderar också dessa beräknade mått:
 Ange en URL som du vanligtvis anger för att få åtkomst till dina Zuora-data. Giltiga alternativ är:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
 * Den URL som motsvarar din instans av tjänsten  
 
 ## <a name="troubleshooting"></a>Felsökning

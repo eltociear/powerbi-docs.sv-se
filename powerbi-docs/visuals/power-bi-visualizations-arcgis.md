@@ -1,6 +1,6 @@
 ---
 title: Interagera med en ArcGIS-karta som har delats med dig
-description: 'Använda en ArcGis-karta i läsvyn '
+description: Använda ArcGis-kartan i läsvyn som en Power BI-rapportkonsument
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 10/23/2018
 ms.author: mihart
-ms.openlocfilehash: 2c7a9d5f6bdbbfff905f3faa8cec255c2b85a0d5
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: dd7bca6782327700f087b6b9ca60a9654fa362d8
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396820"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003281"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagera med ArcGIS-kartor i Power BI
 Det här avsnittet skrivs utifrån perspektivet för en person som *använder* en ArcGIS-karta i Power BI-tjänsten, Desktop eller i en mobil lösning. När en skapare har delat en ArcGIS-karta med dig, finns det många sätt att interagera med den.  Mer information om hur du skapar en ArcGIS-karta finns i [självstudierna om ArcGIS-kartor från Esri](../power-bi-visualization-arcgis.md).
@@ -57,8 +57,12 @@ Du kan välja tre lägen i ArcGIS Maps för Power BI. Du kan välja högst 250 d
 ## <a name="interacting-with-an-arcgis-map"></a>Interagera med en ArcGIS-karta
 Vilka funktioner som är tillgängliga beror på om du är *skaparen* (personen som gjort kartan) eller *konsumenten* (någon har delat en ArcGIS-karta med dig). Om du interagerar med en ArcGIS-karta som konsument (det vill säga i [Läsvyn](../consumer/end-user-reading-view.md)), kan du utföra följande åtgärder.
 
-* Som med andra visualiseringstyper kan du [fästa kartan på instrumentpaneler](../service-dashboard-pin-tile-from-report.md), [visa](../consumer/end-user-show-data.md) och/eller [exportera underliggande data](power-bi-visualization-export-data.md) och visa den i [Fokusläge](../consumer/end-user-focus.md) och [Helskärm](../service-fullscreen-mode.md).    
-* Expandera panelen **Filter** för att utforska kartan med hjälp av filter. När du stänger rapporten sparas inte filtren som du använde.    
+* Om du är en Premium-konsument med *visningsbehörigheter* kan du [visa data som används för att skapa visualiseringen](../consumer/end-user-show-data.md) , [prenumerera](../consumer/end-user-subscribe.md), visa kartan i [fokusläge och fullskärmsläge](../consumer/end-user-focus.md), [visa relaterat innehåll](../consumer/end-user-related.md), [interagera med filtren](../consumer/end-user-report-filter.md) som angetts av *rapportskaparen*, [dela rapporten](../service-share-reports.md) med mera.
+
+* Precis som med andra visualiseringstyper kan Power BI **Pro**-konsumenter kan göra allt som Premium-konsumenten kan göra, plus [exportera underliggande data](power-bi-visualization-export-data.md), [hämta användningsstatistik](../service-usage-metrics.md), spara en kopia och [publicera på webben](../service-publish-to-web.md) med mera.
+
+    
+* Expandera panelen **Filter** för att utforska kartan med hjälp av filter.   
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Om kartan har ett referensskikt kan du välja platser där du vill visa detaljer i en knappbeskrivning. Här har vi valt Adams County för att visa data från referensskiktet för den genomsnittliga hushållsinkomsten som skaparen har lagts till i kartan.
   
@@ -116,6 +120,9 @@ ArcGIS Maps för Power BI finns tillgängligt i följande tjänster och appar:
 **Hur fungerar ArcGIS Maps for Power BI?**
 ArcGIS Maps for Power BI tillhandahålls av Esri (www.esri.com). Din användning av ArcGIS Maps for Power BI är föremål för Esris [villkor](https://go.microsoft.com/fwlink/?LinkID=8263222) och [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI-användare som vill använda de visuella objekten i ArcGIS Maps for Power BI måste ge sitt godkännande i dialogrutan (mer information finns i avsnittet Användargodkännande).  Användningen av ArcGIS Maps for Power BI från Esri är föremål för Esris villkor och sekretesspolicy. Det finns länkar till dessa från dialogrutan för godkännande. Alla användare måste ge sitt godkännande innan de kan börja använda ArcGIS Maps for Power BI. När användaren gett sitt godkännande skickas data som är kopplade till den visuella informationen till Esris tjänster för geokodning (eller mer), vilket innebär att platsinformationen omvandlas till latitud- och longitudinformation som kan visas på en karta. Utgå från att alla data som är kopplade till datavisualiseringen kan skickas till Esris tjänster. Esri tillhandahåller tjänster som grundläggande kartor, spatialanalyser, geokodning osv. De visuella objekten i ArcGIS Maps for Power BI samverkar med dessa tjänster genom en SSL-anslutning som skyddas av ett certifikat som tillhandahålls och hanteras av Esri. Mer information om ArcGIS Maps for Power BI finns på Esris [produktsida för ArcGIS Maps for Power BI](https://www.esri.com/powerbi).
 
+**Power BI Plus**    
+![Registrera dig eller logga in med hjälp av plustecknet](media/power-bi-visualizations-arcgis/power-bi-plus.png)
+
 När användare registrerar sig för en Plus-prenumeration på ArcGIS Maps for Power BI från Esri, upprättar de en direkt relation med Esri. Power BI skickar ingen personlig information om användaren till Esri. Användaren loggar in i och har förtroende för ett AAD-program som tillhandahålls av Esri med sin egen AAD-identitet. Därmed delar användaren sin personliga information direkt med Esri. När användaren lägger till Plus-innehåll till ett visuellt objekt i ArcGIS Maps for Power BI måste andra Power BI-användare också ha en Plus-prenumeration från Esri för att kunna visa eller redigera innehållet. 
 
 Kontakta Esri via deras supportwebbplats om du har frågor som rör mer detaljerad teknisk information om hur Esris ArcGIS Maps for Power BI fungerar.
@@ -123,12 +130,12 @@ Kontakta Esri via deras supportwebbplats om du har frågor som rör mer detaljer
 **ArcGIS-kartan visas inte**    
 I tjänster eller program där ArcGIS Maps för Power BI inte är tillgängligt, visas visualiseringen som ett tomt visuellt objekt med Power BI-logotypen.
 
-**Jag ser inte alla mina adresser på kartan**    
-Vid geokodning av gatuadresser, geokodas enbart de första 1 500 adresserna. Geokodning av platsnamn eller länder omfattas inte av gränsen på 1 500 adresser.
+**Jag kan inte se all min information på kartan**    
+När du geokodar latituden/longituden på kartan visas upp till 30 000 datapunkter. Vid geokodning av datapunkter som postnummer eller gatuadresser geokodas bara de första 15 000 datapunkterna. Geokodning av platsnamn eller länder omfattas inte av gränsen på 1 500 adresser.
 
 **Kostar det något att använda ArcGIS Maps för Power BI?**
 
-ArcGIS Maps för Power BI är tillgängligt för alla Power BI-användare utan extra kostnad. Det är en komponent som tillhandahålls av **Esri** och din användning är föremål för de villkor och den sekretesspolicy som tillhandahålls av **Esri**, enligt vad som nämnts tidigare i den här artikeln.
+ArcGIS Maps för Power BI är tillgängligt för alla Power BI-användare utan extra kostnad. Det är en komponent som tillhandahålls av **Esri** och din användning är föremål för de villkor och den sekretesspolicy som tillhandahålls av **Esri**, i enlighet med vad som nämnts tidigare i den här artikeln. Om du prenumererar på ArcGIS **Plus** tas en avgift ut.
 
 **Jag får ett felmeddelande om att mitt cacheminne är fullt**
 
@@ -146,4 +153,3 @@ Du kan ställa frågor, hitta den senaste informationen, rapportera problem och 
 Om du har förslag på förbättringar får du gärna skicka dem till [Power BI:s idélista](https://ideas.powerbi.com).
 
 [Produktsida för ArcGIS Maps för Power BI](https://www.esri.com/powerbi)
-

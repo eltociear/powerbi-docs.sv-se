@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f8c1aae757e80c0c2adbc321345c242eba25098c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456144"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101587"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
 Den här självstudien visar de steg som krävs för att implementera **säkerhet på radnivå** inom din **Analysis Services-tabellmodell** samt hur du använder den i en Power BI-rapport. Stegen i den här självstudien har utformats så att du kan följa med och lära dig de steg som krävs genom att slutföra en samplingsdatauppsättning.
@@ -72,6 +72,9 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     I den här formeln returnerar funktionen **LOOKUPVALUE** alla värden för kolumnen **DimUserSecurity[SalesTerritoryID]** när **DimUserSecurity[UserName]** är samma som det aktuella inloggade Windows-användarnamnet och **DimUserSecurity[SalesTerritoryID]** är samma som **DimSalesTerritory[SalesTerritoryKey]**.
    
+    > [!IMPORTANT]
+    > Tänk på att DAX-funktionen [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) inte stöds när du använder säkerhet på radnivå.
+
    Uppsättningen för SalesTerritoryKey som returnerades av **LOOKUPVALUE** används sedan för att begränsa de rader som visas i **DimSalesTerritory**. Endast rader där **SalesTerritoryKey** för raden finns i uppsättningen med ID:n som returnerades av funktionen **LOOKUPVALUE** visas.
 8. Skriv följande formel för tabellen **DimUserSecurity** i kolumnen **DAX-filter**:
    

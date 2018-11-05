@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/09/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: b2627950ea51239acb19972fde3244f3bd158255
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909232"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003212"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Övervaka Power BI Premium- och Power BI Embedded-kapaciteter
 
@@ -61,13 +61,11 @@ På fliken **Filters applied to all pages** (Filter som används för alla sidor
 
 ### <a name="datasets-tab"></a>Fliken Datauppsättningar
 
-Fliken **Datauppsättningar** innehåller de flesta måtten i appen. Använd de fyra knapparna högst upp på fliken för att navigera till olika områden: **Sammanfattning**, **Uppdaterar**, **Frågor** och **Datauppsättningar**.
+Fliken **Datauppsättningar** innehåller de flesta måtten i appen. Använd knapparna högst upp på fliken för att navigera till olika områden: **Sammanfattning**, **Uppdateringar**, **Frågevaraktigheter**, **Frågeväntan** och **Datauppsättningar**.
 
 ![Fliken Datauppsättningar](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Området Sammanfattning
-
-![Knappen Sammanfattning](media/service-admin-premium-monitor-capacity/summary-button.png)
 
 Området **Sammanfattning** innehåller en vy över dina kapaciteter baserat på entiteter, systemresurser och arbetsbelastningar i datauppsättningen.
 
@@ -80,19 +78,27 @@ Området **Sammanfattning** innehåller en vy över dina kapaciteter baserat på
 
 #### <a name="refreshes-area"></a>Området Uppdaterar
 
-![Knappen Uppdaterar](media/service-admin-premium-monitor-capacity/refreshes-button.png)
-
 Området **Uppdaterar** anger slutförda uppdateringar, lyckade mätningar, genomsnittlig/maximal väntetid för uppdaterings och genomsnittlig/maximal uppdateringstid per datauppsättning under de senaste sju dagarna. De två diagrammen längst ner visar uppdateringarna jämfört med minnesförbrukning i GB och genomsnittliga väntetider uppdelade i en timme långa buckets, rapporterat i lokal tid. De översta stapeldiagrammen anger de fem främsta datauppsättningarna efter den genomsnittliga tiden som det tog att uppdatera datauppsättningen (uppdateringstid) och genomsnittlig väntetid för uppdateringen. Om det förekommer många toppar för väntan på uppdatering tyder det på att kapaciteten körs för hårt.
 
-#### <a name="queries-area"></a>Området Frågor
+#### <a name="query-durations-area"></a>Frågevaraktighetsområde
 
-![Knappen Frågor](media/service-admin-premium-monitor-capacity/queries-button.png)
+Området **Frågevaraktigheter** visar ut det totala antalet frågor som körs och den genomsnittliga/maximala varaktigheten i millisekunder. Dessa data är indelade i datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna. De nedre diagrammen visar antalet frågor och genomsnittlig varaktighet (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i timbucketar uttryckta i lokal tid.
 
-Området **Frågor** innehåller listor med totalt antal körda frågor, totalt antal väntande live-frågor/direkta frågor, genomsnittlig/längsta varaktighet, genomsnittlig/längsta väntetid angivet i millisekunder uppdelat per datauppsättning, arbetsyta och tim-bucket under de senaste sju dagarna. De nedre diagrammen visar antalet frågor, genomsnittlig varaktighet (i millisekunder) och genomsnittlig väntetid (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i tim-buckets uttryckt i lokal tid. De två diagrammen överst till höger visar de fem populäraste datauppsättningarna med genomsnittlig frågevaraktighet och väntetiden för att slutföra frågorna. Lång frågevaraktighet och långa väntetider är en tydlig indikation på kapaciteten utsätts för mycket hög belastning. Det kan också innebära att en enskild datauppsättning orsakar problem och ytterligare utredning krävs.
+Det övre högra diagrammet visar frågevaraktighetens distributionshistogram. Histogrammet bucketeras genom att frågevaraktigheter rapporteras i millisekunder i följande kategorier: intervall på < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek, 1-3 sek, 3-10 sek, 10-30 sek och > 30 sek.
+
+Diagrammet nere till höger visar de fem populäraste datauppsättningarna med den genomsnittliga frågevaraktighet som krävdes för att slutföra frågorna.
+
+Lång frågevaraktighet och långa väntetider är en tydlig indikation på kapaciteten utsätts för mycket hög belastning. Det kan också innebära att en enskild datauppsättning orsakar problem och ytterligare utredning krävs.
+
+#### <a name="query-waits-area"></a>Frågeväntansområde
+
+Området **Frågeväntan** innehåller listor med totalt antal körda frågor, totalt antal väntande live-frågor/direkta frågor, genomsnittlig/längsta väntetid angivet i millisekunder. Dessa data är indelade i datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna. De nedre diagrammen visar antalet väntande frågor och genomsnittlig väntetid (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i timbucketar uttryckta i lokal tid.
+
+Det övre högra diagrammet visar distributionshistogrammet för frågans väntetid. Histogrammet bucketeras genom att frågevaraktigheter rapporteras i millisekunder i följande kategorier: intervall på <= 50 ms , 50-100 ms , 100-200 ms , 200-400 ms 400 ms-1 sek, 1-5 sek och > 5 sek.
+
+Diagrammet nere till höger visar de fem populäraste datauppsättningarna med den genomsnittliga väntetid som krävdes för att starta frågorna.
 
 #### <a name="datasets-area"></a>Området Datamängder
-
-![Knappen Datamängd](media/service-admin-premium-monitor-capacity/datasets-button.png)
 
 Området **Datauppsättningar** visar slutförda datauppsättningar som du vill ta bort på grund av minnestryck per timme.
 

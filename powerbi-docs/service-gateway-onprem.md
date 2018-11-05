@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: b56134314b9396dff1b965786e65e62129e5e7b9
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 2758ef661b70c53a37104c67c4012be79725990e
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558457"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101495"
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -47,9 +47,9 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Hämta och installera den lokala datagatewayen
 
-Om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar. Ladda ned den [lokala datagatewayen](http://go.microsoft.com/fwlink/?LinkID=820925). 
+Om du vill hämta gatewayen, väljer du **Datagateway** under menyn Hämtningar. Ladda ned den [lokala datagatewayen](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Observera att du uppdaterar den lokala datagatewayen genom att installera om gatewayen, vilket beskrivs i det här avsnittet. När du uppdaterar gatewayen (genom att installera om den) bevaras dina befintliga gatewayinställningar.
+Observera att du uppdaterar den lokala datagatewayen genom att installera om gatewayen på nytt, så som beskrivs i det här avsnittet. Så länge som du installerar en nyare version av gatewayen bevaras dina befintliga inställningar. Om du installerar samma version behandlas detta som en fullständig ominstallation, och dina inställningar sparas inte.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
