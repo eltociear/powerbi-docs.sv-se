@@ -4,18 +4,18 @@ description: Få en översikt över Power BI-rapportservern för att förstå hu
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 10/24/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 1be2270074011f73c3d942677211dd99d18c6b2b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 95a97c86ae7d17091b49fbf33cf5ec0d26053c3e
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294581"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101409"
 ---
 # <a name="what-is-power-bi-report-server"></a>Vad är Power BI-rapportserver?
 
@@ -28,6 +28,9 @@ Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-
 
 ## <a name="licensing-power-bi-report-server"></a>Licensiera Power BI-rapportserver
 Power BI-rapportservern är tillgänglig via två olika licenser: [Power BI Premium](../service-premium.md) och [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
+
+> [!NOTE]
+> När det gäller Power BI Premium inkluderas Microsoft Power BI-rapportserver enbart med P SKU:er. Det inkluderas inte med EM SKU:er.
 
 ## <a name="web-portal"></a>Webbportalen
 Startpunkten för Power BI-rapportservern är en säker webbportal som du kan visa i alla moderna webbläsare. Här kan du komma åt alla dina rapporter och KPI:er. Innehållet på webbportalen ordnas i en traditionell mapphierarki. I dina mappar grupperas innehållet efter typ: Power BI-rapporter, mobila rapporter, sidnumrerade rapporter, KPI:er och Excel-arbetsböcker, plus delade datauppsättningar och delade datakällor som kan användas som byggblock för dina rapporter. Du kan tagga favoriter om du vill visa dem i en enda mapp. Och du kan skapa KPI:er direkt i webbportalen. 
@@ -66,7 +69,7 @@ Fler [utvecklardokumentation för rapportservern](https://docs.microsoft.com/sql
 
 ## <a name="next-steps"></a>Nästa steg
 [Installera Power BI-rapportserver](install-report-server.md)  
-[Installera Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
