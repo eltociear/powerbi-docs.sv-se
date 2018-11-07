@@ -2,6 +2,7 @@
 title: Certifierade anpassade visualiseringar i Power BI
 description: Krav och processer för att skicka en visualisering för certifiering. Och en lista över redan certifierad anpassad visuell information.
 author: mihart
+ms.author: mihart
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -9,45 +10,46 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.author: mihart
-ms.openlocfilehash: ba6c59d168deb5fb68f4b339f11fba795bae6452
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252409"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223454"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Få anpassade visuella objekt *certifierade*
+
 ## <a name="what-is-meant-by-certified"></a>Vad menas med begreppet *certifierad*?
+
 En *certifierade visualisering* är en som uppfyller en uppsättning kodkrav och har klarat strikta säkerhetstest.  När anpassade visuella objekt har certifierats kan de [exporteras till PowerPoint](consumer/end-user-powerpoint.md) och visas i de e-postmeddelanden som tas emot när en användare [prenumererar på rapportsidor](consumer/end-user-subscribe.md). Naturligtvis kan den också användas som [anpassade visuella objekt som är standard](power-bi-custom-visuals.md) som läggs till i Power BI-tjänsten och Power BI Desktop-rapporter och visas i Power BI Mobile och Embedded.
 
-Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i [Microsoft AppSource](https://appsource.microsoft.com)? Se [Kom igång med utvecklingsverktyg](service-custom-visuals-getting-started-with-developer-tools.md) för att lära dig hur.
-
+Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i [Microsoft AppSource](https://appsource.microsoft.com)? Läs mer i [Utveckla ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md).
 
 ## <a name="certification-requirements"></a>Certifieringskrav
-* Godkänt för Microsoft AppSource    
-* Anpassade visuella objekt skrivs med version av API 1.2 eller högre    
-* Databas som är tillgänglig för granskning (t.ex. visuell kod som är tillgänglig för oss via GitHub)    
-* Använder endast offentliga OSS-komponenter som kan granskas    
-* Har inte tillgång till externa tjänster eller resurser    
+
+* Godkänt för Microsoft AppSource
+* Anpassade visuella objekt skrivs med version av API 1.2 eller högre
+* Databas som är tillgänglig för granskning (t.ex. visuell kod som är tillgänglig för oss via GitHub)
+* Använder endast offentliga OSS-komponenter som kan granskas
+* Har inte tillgång till externa tjänster eller resurser
 
 > **Tips**: Vi rekommenderar att du använder EsLint med standardsäkerhetsregler för att kontrollera koden innan den skickas.
-> 
-> 
 
 ## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Processen för att skicka ett anpassat visuellt objekt för certifikatutfärdare
+
 Gör så här för att skicka ett anpassat visuellt objekt för certifikatutfärdare:
 
 1. Skicka ett e-postmeddelande till supporten för anpassade visuella objekt i Power BI (pbicvsupport@microsoft.com). Inkludera följande information i e-postmeddelandet:    
 
-   * Ämne: Begäran om certifiering av visuellt objekt    
-   * Länk till GitHub-lagringsplatsen där källkoden för det visuella objektet finns    
-   * Uppfyll kraven (se ovan)    
-   * Bli godkänt i kod- och säkerhetsgranskningen    
+   * Ämne: Begäran om certifiering av visuellt objekt
+   * Länk till GitHub-lagringsplatsen där källkoden för det visuella objektet finns
+   * Uppfyll kraven (se ovan)
+   * Bli godkänt i kod- och säkerhetsgranskningen
 
 2. Teamet för anpassade visuella objekt hos Microsoft informerar dig när ditt anpassade visuella objekt har certifierats och lagts till i listan över certifierade objekt (nedan) eller avvisats med en rapport som innehåller fel som ska åtgärdas. Det är utvecklarens ansvar för att kommunicera med Microsoft och för att uppdatera sina certifierade visuella objekt vid behov.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Borttagning av Power BI-certifierade anpassade visuella objekt
+
 Microsoft kan ta bort visuella objekt från listan över certifierade objekt efter eget gottfinnande.  
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Lista över certifierade visuella objekt
@@ -142,10 +144,11 @@ Microsoft kan ta bort visuella objekt från listan över certifierade objekt eft
 | [Ordmoln](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
 
 ## <a name="next-steps"></a>Nästa steg
-[Komma igång med utvecklarverktyg för anpassade visuella objekt (förhandsversion)](service-custom-visuals-getting-started-with-developer-tools.md)      
-[Microsofts spelningslista om anpassade visuella objekt på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualiseringar i Power BI](visuals/power-bi-report-visualizations.md)  
-[Anpassade visualiseringar i Power BI](power-bi-custom-visuals.md)  
-[Publicera anpassad visuell information till Microsoft AppSource](developer/office-store.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
+* [Utveckla ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md)
+* [Microsofts spelningslista om anpassade visuella objekt på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
+* [Visualiseringar i Power BI](visuals/power-bi-report-visualizations.md)  
+* [Anpassade visualiseringar i Power BI](power-bi-custom-visuals.md)  
+* [Publicera anpassad visuell information till Microsoft AppSource](developer/office-store.md)  
+
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

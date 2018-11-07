@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3b19740616e7b9a390a883fde2fd96320de7b94a
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: a1492a98825ad26b2dde359cf9cec96cc4623e04
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973596"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223178"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Vad kan utvecklare göra med Power BI-API?
 
@@ -29,7 +29,7 @@ Här följer några av de saker som du kan göra med Power BI-API:er.
 | Bädda in instrumentpaneler, rapporter och paneler för Power BI-användare och icke-Power BI-användare (appen äger data) |[Hur du bäddar in dina Power BI-instrumentpaneler, -rapporter och -paneler](embedding-content.md) |
 | Utöka ett befintligt business-arbetsflöde för att skicka viktiga data till en Power BI-instrumentpanel. |[Skicka data till en instrumentpanel](walkthrough-push-data.md) |
 | Autentisera till Power BI. |[Autentisera till Power BI](get-azuread-access-token.md) |
-| Skapa ett anpassat visuellt objekt. |[Använd utvecklarverktyg för att skapa ett anpassat visuellt objekt](../service-custom-visuals-getting-started-with-developer-tools.md) |
+| Skapa ett anpassat visuellt objekt. |[Utveckla ett anpassat visuellt objekt i Power BI](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
 > Power BI-API:er refererar fortfarande till apparbetsytor som grupper. Alla referenser till grupper innebär att du arbetar med apparbetsytor.
@@ -72,7 +72,7 @@ Du kan använda Power BI-API:et för skicka data till en datauppsättning. Den h
 ## <a name="next-steps"></a>Nästa steg
 
 [Skicka data till en datauppsättning](walkthrough-push-data.md)  
-[Komma igång med utvecklarverktyg för anpassade visuella objekt](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Utveckla ett anpassat visuellt objekt i Power BI](custom-visual-develop-tutorial.md)  
 [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

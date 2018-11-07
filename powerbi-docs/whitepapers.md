@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
-ms.openlocfilehash: 34f34fd0a83367e306f8d84b4f9ebdf3cf30af93
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396783"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223063"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -36,7 +36,7 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | [Power BI och SAP BW](https://aka.ms/powerbiandsapbw)| Det här dokumentet beskriver hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse).| Februari 2018 |
 | [Power BI-styrnings- och distributionsmetoder](http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) | Ger koncept, alternativ och förslag för styrning i Power BI-ekosystemet. | Mars 2016 |
 | [Skydda en Tabular BI-semantikmodell](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Det här dokumentet beskriver säkerhetsmodellen för Tabular BI-semantik och Power BI. Du får lära dig att skapa roller, implementera dynamisk säkerhet, konfigurera inställningar för personifiering, hantera roller och välja en metod för att ansluta till modeller som fungerar i ditt nätverks säkerhetskontext. | April 2016 |
-| [Power BI och GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Den här länken leder till listan över white papers på Service Trust-portalen, inklusive white paper om Microsoft Power BI GDPR. | April 2018 |
+| [Power BI och GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Den här länken tar dig till listan över godkända white paper-dokument på Service Trust Portal, inklusive white paper-dokumentet om GDPR i Microsoft Power BI. | April 2018 |
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 
