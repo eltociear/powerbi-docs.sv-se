@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6bc8eea6138f2961457d03eaf5ef88d0327a058d
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549924"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909581"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -44,13 +44,12 @@ När du skapar ett bokmärke sparas följande element med bokmärket:
 
 * Nuvarande sida
 * Filter
-* Utsnitt
+* Utsnitt, inklusive utsnittstyp (till exempel listruta eller lista) och utsnittstillstånd
+* Tillstånd för markering i visuellt objekt (till exempel filtrering för flera markeringar)
 * Sorteringsordning
 * Riktning för detaljnivån
 * Synlighet (för ett objekt med hjälp av fönstret **Val**)
 * Fokus- eller **Spotlight**-lägen för synliga objekt
-
-Bokmärken sparar inte för närvarande korsmarkering. 
 
 Konfigurera en rapport som du vill att den ska visas i bokmärket. När du har utformat din rapportsida och visuella objekt väljer du **Lägg till** från fönstret **Bokmärken** om du vill lägga till ett bokmärke. 
 

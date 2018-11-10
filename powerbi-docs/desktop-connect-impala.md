@@ -10,37 +10,40 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 781e9f6813fee63b7c5d83a2e7e60e1ed1eeedc0
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1b512a3e6ef3ead8d93e1b554fbab3aaed8a2a5a
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327003"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51027401"
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Anslut till en Impala-databas i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **Impala**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop.
 
 ## <a name="connect-to-an-impala-database"></a>Anslut till en Impala-databas
-Om du vill ansluta till en **Impala**-databas, väljer du **Hämta Data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Databas** från kategorierna till vänster så ser du **Impala**.
+För att ansluta till en **Impala**-databas gör du följande: 
 
-![](media/desktop-connect-impala/connect_impala_2.png)
+1. Välj **Hämta data** från menyfliksområdet **Start** i Power BI Desktop. 
 
-I **Impala**-fönstret som visas, skriver eller klistrar du in namnet på din Impala-server i rutan och väljer **Ok**. Observera att du kan välja att **importera** data direkt i Power BI, eller så kan du använda **DirectQuery**. Du kan läsa mer om att [använda DirectQuery](desktop-use-directquery.md).
+2. Välj **Databas** från kategorierna till vänster. Du kommer att se **Impala**.
 
-![](media/desktop-connect-impala/connect_impala_3a.png)
+    ![Hämta data](media/desktop-connect-impala/connect_impala_2.png)
 
-När du uppmanas ange dina autentiseringsuppgifter eller anslut anonymt. Impala-anslutningsappen stöder Anonymous-, Basic- (användarnamn + lösenord) och Windows-autentisering.
+3. I **Impala**-fönstret som visas, skriver eller klistrar du in namnet på din Impala-server i rutan. Välj sedan **OK**. Du kan **Importera** data direkt i Power BI, eller så kan du använda **DirectQuery**. Läs mer om att [använda DirectQuery](desktop-use-directquery.md).
 
-![](media/desktop-connect-impala/connect_impala_4.png)
+    ![Impala-fönstret](media/desktop-connect-impala/connect_impala_3a.png)
 
-> [!NOTE]
-> När du anger ditt användarnamn och lösenord för en viss **Impala**-server, använder Power BI Desktop samma autentiseringsuppgifter i efterföljande anslutningsförsök. Du kan ändra autentiseringsuppgifterna genom att gå till **Arkiv > Alternativ och inställningar > Inställningar för datakälla**.
-> 
-> 
+4. När du uppmanas, ange dina autentiseringsuppgifter eller anslut anonymt. Impala-anslutningsappen stöder Anonymous-, Basic- (användarnamn + lösenord) och Windows-autentisering.
 
-När du har anslutit, visas ett **navigator**-fönster som visar data som är tillgängliga på servern, där du kan välja ett eller flera element att importera och använda i **Power BI Desktop**.
+    ![Impala-anslutningsapp](media/desktop-connect-impala/connect_impala_4.png)
 
-![](media/desktop-connect-impala/connect_impala_5.png)
+    > [!NOTE]
+    > När du anger ditt användarnamn och lösenord för en viss **Impala**-server, använder Power BI Desktop samma autentiseringsuppgifter i efterföljande anslutningsförsök. Du kan ändra autentiseringsuppgifterna genom att gå till **Arkiv > Alternativ och inställningar > Inställningar för datakälla**.
+
+
+5. När du har anslutit öppnas ett **Navigator**-fönster som visar de data som är tillgängliga på servern. Välj element från dessa data som du vill importera och använda i **Power BI Desktop**.
+
+    ![Navigatorfönstret](media/desktop-connect-impala/connect_impala_5.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Det finns några begränsningar och överväganden att tänka på med anslutningsappen för **Impala**:
@@ -48,7 +51,7 @@ Det finns några begränsningar och överväganden att tänka på med anslutning
 * Impala-anslutningsappen stöds på lokala datagateway med hjälp av tre autentiseringsmekanismer.
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
+Det finns många olika datakällor du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
 
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)

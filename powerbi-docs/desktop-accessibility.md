@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336885"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223385"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -34,6 +34,8 @@ Från och med **Power BI Desktop**-versionen från september 2017 kan du trycka 
 
 Med hjälpmedelsförbättringar kan du använda en Power BI-rapport med ett tangentbord eller en skärmläsare med följande metoder:
 
+När du visar en rapport bör du stänga av skanningsläget.
+
 Du kan växla mellan flikar i rapporten eller objekt på en viss rapportsida med **Ctrl + F6**.
 
 * När fokus ligger på *flikar i rapporten* kan du använda *tabb-* eller *pil*tangenterna för att flytta fokus från en rapport till nästa. Rubriken på rapportsidan och om den är markerad kan läsas av skärmläsaren. Om du vill läsa in sidan för närvarande under fokus, använder du tangenten *Retur* eller *Blanksteg*.
@@ -48,7 +50,7 @@ Du kan trycka på **Alt + Skift + F11** för att presentera en tillgänglig vers
 ![Tryck på Alt + Skift + F11 i Power BI Desktop för att visa ett tillgängligt Se data-fönster för ett visuellt objekt](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
-> Funktionen Visa data är bara tillgängligt för en skärmläsare via det här kortkommandot. Om du öppnar Visa data via alternativet i sidhuvudet för visuella objekt kommer det inte att vara tillgängligt för en skärmläsare.
+> Funktionen Visa data är bara tillgängligt för en skärmläsare via det här kortkommandot. Om du öppnar Visa data via alternativet i sidhuvudet för visuella objekt kommer det inte att vara tillgängligt för en skärmläsare. När du använder Visa data aktiverar du skanningsläget och drar nytta av alla skärmläsarens snabbtangenter.
 
 Från och med juli 2018-versionen av **Power BI Desktop** har utsnitt också inbyggda funktioner för tillgänglighet. När du väljer ett utsnitt kan du ändra utsnittets värde genom att använda CTRL + högerpil (kontroll plus högerpilen) om du vill flytta mellan de olika kontrollerna i utsnittet. När du t.ex. först trycker på CTRL+högerpil hamnar fokus på suddgummit, och om du trycker på blankstegstangenten ger det samma resultat som att klicka på suddgummit, varvid utsnittets alla värden raderas. 
 
@@ -112,6 +114,55 @@ Det finns några kända problem och begränsningar hos hjälpmedelsfunktionerna 
 
 * När du använder skärmläsare med **Power BI Desktop** får du bästa möjliga upplevelse om du öppnar skärmläsaren innan du öppnar filer i Power BI Desktop.
 * Om du använder Skärmläsaren finns vissa begränsningar när du bläddrar i Visa data som en HTML-tabell.
+
+## <a name="keyboard-shortcuts"></a>Kortkommandon
+### <a name="frequently-used-shortcuts"></a>Vanliga kortkommandon
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Flytta fokus mellan avsnitt  | Ctrl + F6 |
+| Flytta fokus framåt i avsnittet | Tab         |
+| Flytta fokus bakåt i avsnittet | Skift + Tabb |
+
+### <a name="on-visual"></a>På det visuella objektet
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Flytta fokus till menyn för det visuella objektet | Alt + Skift + F10 |
+| Visa data | Alt + Skift + F11  |
+
+### <a name="pane-navigation"></a>Fönsternavigering
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Öppna en snabbmeny | <ul><li>Windows-tangentbordet: Windows-menytangenten + F10.  Windows-menytangenten ligger mellan den vänstra Alt-tangenten och Vänsterpil-tangenten</li><li>Annat tangentbord: Skift + F10</li></ul> |
+
+### <a name="slicer"></a>Utsnitt
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Interagera med ett utsnitt | Ctrl + Högerpil-tangenten |
+
+### <a name="selection-pane"></a>Markeringsfönstret
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Aktivera markeringsfönstret | F6 |
+| Flytta upp ett objekt i lagringen | Ctrl + Skift + F |
+| Flytta ned ett objekt i lagringen | Ctrl + Skift + B |
+| Dölj / visa (växla) ett objekt | Ctrl + Skift + S |
+
+### <a name="dax-editor"></a>DAX-redigerare
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Flytta raden upp / ned | Alt + Uppåtpil-tangenten / Nedåtpil-tangenten |
+| Kopiera rad upp / ned | Skift + Alt + Uppåtpil-tangenten / Nedåtpil-tangenten |
+| Infoga linje nedan | Ctrl + Retur |
+| Infoga linje ovan | Ctrl + Skift + Retur |
+| Gå till matchande hakparentes | Ctrl + Skift + \ |
+| Dra in / dra ut rad | Ctrl + ] / [ |
+| Infoga markören | Alt + klicka |
+| Välj aktuell rad | Ctrl + I |
+| Välj alla förekomster av aktuellt val | Ctrl + Skift + L |
+| Välj alla förekomster av aktuellt ord | Ctrl + F2 |
+
+
+
 
 ## <a name="next-steps"></a>Nästa steg
 * [Använda rapportteman i Power BI Desktop (förhandsversion)](desktop-report-themes.md)

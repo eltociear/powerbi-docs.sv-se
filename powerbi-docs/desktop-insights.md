@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a4c73cc81a09a3747ff34e6a20508b4ff19eafa8
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: c01af129e15025b97925f59532d1be7a6671b47f
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280304"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909627"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Använd insikter i Power BI Desktop för att förklara ökningar och minskningar som visas i visuella objekt (förhandsversion)
 
@@ -113,7 +113,6 @@ Följande lista är de scenarier som just nu inte stöds för att **förklara mi
 * TopN-filter
 * Inkludera/exkludera filter
 * Måttfilter
-* Icke-additiva mått och aggregeringar
 * Icke-numeriska mått
 * Användning av ”Visa värde som”
 * Filtrerade mått – Filtrerade mått är beräkningar på visuell nivå med ett specifikt filter (till exempel *totalförsäljningen för Frankrike*), och används i vissa visuella objekt som skapas av funktionen Insikter

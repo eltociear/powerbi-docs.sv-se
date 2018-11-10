@@ -10,44 +10,46 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbfafcecb6876ea063bb6751ca31c25697dc185
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4989e981c3f39a637b3bb4927c427be0005c7776
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44725867"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51027447"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Använd drillthrough i Power BI Desktop
-Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som fokuserar på en specifik enhet – till exempel en leverantör, kund eller tillverkare. Med den fokuserade rapportsidan kan användare högerklicka på en datapunkt i andra rapportsidor och använda drillthrough till sidan i fokus för att hämta information som har filtrerats för det sammanhanget.
+Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som fokuserar på en specifik enhet – till exempel en leverantör, kund eller tillverkare. Användare kan högerklicka på en datapunkt i andra rapportsidor. De kan sedan titta på fokussidan i större detalj för att visa de detaljer som har filtrerats för det sammanhanget.
 
-![använda drillthrough](media/desktop-drillthrough/drillthrough_01.png)
+![Använda drillthrough](media/desktop-drillthrough/drillthrough_01.png)
 
 ## <a name="using-drillthrough"></a>Använda drillthrough
 1. För att använda **drillthrough** skapar du en rapportsida med visuella objekt som du vill se för typen av enhet på vilken du ökar detaljnivån. 
 
-    Om du vill använda drillthrough för en tillverkare kan du skapa en drillthrough-sida med visuella objekt som visar totalförsäljning, totalt antal levererade enheter, försäljning enligt kategori, försäljning enligt region och så vidare. Därmed är visualiseringen alltid specifik för tillverkaren du valde.
+    Anta exempelvis att du vill låta tillverkare visa detaljerad information. Då kan du skapa en drillthrough-sida med visuella objekt som visar totalförsäljning, totalt antal levererade enheter, försäljning enligt kategori, försäljning enligt region och så vidare. Därmed är visualiseringen alltid specifik för tillverkaren du valde när du ökar detaljnivån.
 
-2. Sedan, på drillthrough-sidan i avsnittet **Fält** i rutan **Visuella objekt** kan du dra fältet som du vill använda drillthrough på i brunnen för **Drillthrough-filter**.
+2. Sedan, på drillthrough-sidan i avsnittet **Fält** i rutan **Visuella objekt** kan du dra fältet som du vill aktivera drillthrough för på i brunnen för **Drillthrough-filter**.
 
-    ![drillthrough korrekt](media/desktop-drillthrough/drillthrough_02.png)
+    ![Drillthrough-brunn](media/desktop-drillthrough/drillthrough_02.png)
 
-    När du lägger till ett fält i brunnen **Drillthrough-filter** skapar **Power BI Desktop** automatiskt en *bakåtknapp*. Knappen visas i publicerade rapporter och låter användare av rapporten **Power BI-tjänsten** enkelt komma tillbaka till sidan som de kommer ifrån (sidan där de har valt drillthrough).
+    När du lägger till ett fält i brunnen **Drillthrough-filter** skapar **Power BI Desktop** automatiskt en *bakåtknapp*. Det visuella objektet blir en knapp i publicerade rapporter. Användare av rapporten i **Power BI-tjänsten** kan använda den här knappen för att gå tillbaka till sidan som de kommer ifrån.
 
-    ![drillthrough-bild](media/desktop-drillthrough/drillthrough_03.png)
+    ![Drillthrough-bld](media/desktop-drillthrough/drillthrough_03.png)
 
 ## <a name="use-your-own-image-for-a-back-button"></a>Använda en egen bild för en bakåtknapp    
- Eftersom bakåtknappen är en bild kan du ersätta den med vilken bild du vill och den kommer fortfarande att fungera som en bakåtknapp för att låta användaren gå tillbaka till ursprungssidan.
+ Eftersom bakåtknappen är en bild kan du ersätta bilden för det visuella objektet med vilken bild du vill. Den kommer fortfarande att fungera som en bakåtknapp så att användaren kan gå tillbaka till ursprungssidan. Om du vill använda en egen bild för en bakåtknapp, gör du följande:
 
-1. På fliken **Hem** klickar du på **Bild**, letar upp bilden och placerar den på drillthrough-sidan.
-2. Markera den nya bilden på drillthrough-sidan och under avsnittet Formatera bild genom att ange slutreglaget **Länk** till på och ange den **typen** som **Bakåt**. Bilden fungerar nu som en bakåtknapp.
+1. Välj **Bild** på fliken **Start**. Leta upp bilden och placera den på drillthrough-sidan.
 
-    ![använda en avbildning för bakåt](media/desktop-drillthrough/drillthrough_05.png)
+2. Välj din nya bild på drillthrough-sidan. Under avsnittet **Formatera bild** ställer du in skjutreglaget **Länk** till **På** och ange sedan **Typen** som **Bakåt**. Bilden fungerar nu som en bakåtknapp.
 
-    När din **drillthrough**-sida är klar och användare högerklickar på en datapunkt i rapporten som använder fältet du la till i **drillthrough-filtret**, visas en snabbmeny som stöder drillthrough för sidan.
+    ![Använd en bild för bakåt](media/desktop-drillthrough/drillthrough_05.png)
 
-    ![drillthrough-meny](media/desktop-drillthrough/drillthrough_04.png)
+    
+     Nu kan användare högerklicka på en datapunkt i rapporten och få en snabbmeny som stöder drillthrough för sidan. 
 
-    När rapportkonsumenterna valde drillthrough filtrerades sidan för att visa information om datapunkten som de högerklickade på. Om de högerklickade på en datapunkt om Contoso (en tillverkare) och har valt drillthough filtreras drillthrough-sidan till Contoso.
+    ![Drillthrough-meny](media/desktop-drillthrough/drillthrough_04.png)
+
+    När rapportkonsumenterna valde drillthrough filtrerades sidan för att visa information om datapunkten som de högerklickade på. Låt oss till exempel anta att de högerklickade på en datapunkt om Contoso (en tillverkare) och valde att öka detaljnivån (drillthrough). Drillthroughsidan de går till filtreras till Contoso.
 
 ## <a name="pass-all-filters-in-drillthrough"></a>Skicka alla filter i drillthrough
 
@@ -55,21 +57,21 @@ Från och med versionen från maj 2018 av **Power BI Desktop**, kan du överför
 
 För att behålla alla filter i avsnittet **Drillthrough** i fönstret **Visualiseringar** ställer du bara in **Skicka alla-filtren** till **på**. 
 
-![behåll alla filter](media/desktop-drillthrough/drillthrough_06.png)
+![Behåll alla filter](media/desktop-drillthrough/drillthrough_06.png)
 
-I versioner av **Power BI Desktop** före maj 2018, är beteendet likvärdigt med att ha den här inställningen satt till **av**.
+I versioner av **Power BI Desktop** som lanserats före maj 2018 är beteendet likvärdigt med att ha den här inställningen satt till **av**.
 
 När du sedan genomför drillthrough på någon visualisering ser du vilka filter som har tillämpats på grund av att källvisualiseringen har tillfälliga filter. I fönstret drillthrough visas dessa tillfälligt filter i kursiv stil. 
 
-![tillfälliga filter i kursiv stil](media/desktop-drillthrough/drillthrough_07.png)
+![Tillfälliga filter i kursiv stil](media/desktop-drillthrough/drillthrough_07.png)
 
-Observera att du kan göra detta med sidorna för knappbeskrivningar, men det skulle vara en konstig upplevelse (knappbeskrivningen skulle inte verka som att den fungerar korrekt), så det rekommenderas inte att göra det med knappbeskrivningar.
+Observera att du kan göra detta med sidorna för knappbeskrivningar, men det skulle vara en konstig upplevelse eftersom knappbeskrivningen inte skulle verka som att den fungerar korrekt. Därför rekommenderas du att inte göra det med verktygstips.
 
 ## <a name="add-a-measure-to-drillthrough"></a>Lägg till ett mått i drillthrough
 
 Förutom att överföra alla filter till drillthrough-fönstret kan du även lägga till ett mått (eller en sammanfattande numerisk kolumn) i drillthrough-området. Du behöver bara dra drillthrough-fältet till Drillthrough-kortet för att tillämpningen ska börja gälla. 
 
-![lägg till ett mått i drillthrough](media/desktop-drillthrough/drillthrough_08.png)
+![Lägg till ett mått i drillthrough](media/desktop-drillthrough/drillthrough_08.png)
 
 När du lägger till ett mått (eller en sammanfattade numerisk kolumn) kan du gå till sidan när fältet används i området *Värde* i en visualisering.
 

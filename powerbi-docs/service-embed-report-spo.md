@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/20/2018
-ms.openlocfilehash: e336323863dfacc8c74f2dc1f721231d58d03834
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.date: 11/01/2018
+ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100782"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973337"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -82,14 +82,34 @@ När du bäddar in en rapport i SharePoint Online medges inte användarbehörigh
 > [!IMPORTANT]
 > Se till att granska vem som kan visa rapporten i Power BI-tjänsten och bevilja åtkomst till de som inte visas i listan.
 
-Det finns två sätt att bevilja åtkomst till rapporten i Power BI-tjänsten. Om du använder en Office 365-grupp för att skapa webbplatsen i SharePoint Online kan du lista användaren som en medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Det säkerställer att användare kan läsa innehållet i den gruppen. Mer information finns i [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md).
+Det finns två sätt att bevilja åtkomst till rapporten i Power BI-tjänsten. Om du använder en Office 365-grupp för att skapa webbplatsen i SharePoint Online kan du lista användaren som en medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Mer information finns i [hantera en apparbetsyta](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-Du kan också dela en rapport direkt med användare genom att bädda in rapporten i en app. Appen måste vara förinstallerad för att rapporten ska kunna bäddas in. Du kan konfigurera appen att förinstalleras med hjälp av funktionen **Installera app automatiskt**.
+Du kan också dela en rapport direkt med användare genom att bädda in rapporten i en app. Det finns ett par steg du måste följa för att bädda in en rapport i en app.  
+
+1. Appförfattaren är en Pro-användare.
+
+2. Författaren skapar en rapport i en apparbetsyta. *För att dela med **kostnadsfria Power BI-användare** måste apparbetsytan anges som en **Premium-arbetsyta**.*
+
+3. Författaren publicerar och installerar appen. *Författaren måste installera appen för att ha åtkomst till den rapport-URL som används för att bädda in i SharePoint Online.*
+
+4. Nu måste även alla slutanvändare installera appen. Men du kan ange att appen ska förinstalleras för slutanvändare med hjälp av funktionen **installera appen automatiskt** som kan aktiveras i [Power BI-administratörsportalen](service-admin-portal.md).
 
    ![Installera appen automatiskt](media/service-embed-report-spo/install-app-automatically.png)
 
-> [!NOTE]
-> **Användaren behöver åtkomst till både SharePoint-sidan och rapporten för att kunna visa rapporten på SharePoint-sidan.**
+5. Författaren öppnar appen och går till rapporten.
+
+6. Författaren kopierar URL: en för bädda in rapporten som har skapats av appen. *Använd inte den ursprungliga URL:en för rapporten från apparbetsytan.*
+
+7. Skapa en ny gruppwebbplats i SharePoint Online.
+
+8. Lägg till en rapport-URL som har kopierats från steg 6 i Power BI-webbdelen.
+
+9. Lägg till alla användare och/eller grupper som ska använda data på SharePoint Online-sidan och i Power BI-appen som du skapade.
+
+    > [!NOTE]
+    > **Användare eller grupper behöver åtkomst till såväl sidan SharePoint Online som rapporten i Power BI-appen för att visa rapporten på SharePoint-sidan.**
+
+10. Användaren kan nu gå till gruppwebbplatsen i SharePoint Online och visa rapporter på sidan.
 
 ## <a name="multi-factor-authentication"></a>Multifaktorautentisering
 
