@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 082d0ba1e638e8eaf6ae16fa8d5ed63c128c8ad5
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545002"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507863"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
@@ -43,7 +43,7 @@ Eftersom avsikten med instrumentpaneler är ge översikt över viktig informatio
 Är instrumentpanelen för plottrig?  Ta bort allt utom viktig information som enkelt kan läsas och tolkas.
 
 ## <a name="make-use-of-full-screen-mode"></a>Använd dig av helskärmsläge
-Visa instrumentpanelen i [helskärm](service-fullscreen-mode.md) utan störningar.
+Visa instrumentpanelen i [helskärm](consumer/end-user-focus.md) utan störningar.
 
 ## <a name="make-the-most-important-information-biggest"></a>Gör den viktigaste informationen störst
 Om texten och visualiseringarna på instrumentpanelen har samma storlek, får läsaren svårt att fokusera på vad som är viktigt. Till exempel är kortvisualiseringar ett bra sätt att visa upp ett viktigt tal på en framträdande plats:  

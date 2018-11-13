@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: d265e465825fb8def167207ed632f1702adcbc7f
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 4bc9a0fe6dd3becd67c2b6dd8ffeb9d7922705a6
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973642"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507943"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Visa rapporter i presentationsläge på Surface Hub och i Windows 10 – Power BI
 Du kan visa rapporter i presentationsläge på Surface Hub och visa instrumentpaneler, rapporter och paneler i helskärmsläge på Windows 10-enheter. 
@@ -27,7 +27,7 @@ I helskärmsläget i Power BI-mobilappen, tas allt ”krom” som navigering och
 
 När du visar en rapport i Presentationsläge på Surface Hub, kan du rita på sidorna med olika färger och navigera mellan sidorna i rapporten.
 
-Du kan också [visa instrumentpaneler och rapporter i helskärmsläge från Power BI-tjänsten](../../service-fullscreen-mode.md) på webben.
+Du kan också [visa instrumentpaneler och rapporter i helskärmsläge från Power BI-tjänsten](../end-user-focus.md) på webben.
 
 > [!NOTE]
 > Presentationsläget skiljer sig från [fokusläge för paneler](mobile-tiles-in-the-mobile-apps.md).
@@ -74,6 +74,6 @@ Presentationsläge är aktiverat som standard i Surface Hub, men om det är avst
 7. Om du vill avsluta helskärmsläge, sveper du nedåt från överkanten och trycker på de två inåtriktade pilarna ![](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## <a name="next-steps"></a>Nästa steg
-* Du kan också [visa instrumentpaneler och rapporter i helskärmsläge från Power BI-tjänsten](../../service-fullscreen-mode.md)
+* Du kan också [visa instrumentpaneler och rapporter i helskärmsläge från Power BI-tjänsten](../end-user-focus.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 
