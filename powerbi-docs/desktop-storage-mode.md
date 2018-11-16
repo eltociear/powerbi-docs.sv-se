@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: df61b9c68407ef0d00d1d5981c57021e7659cfff
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359756"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619504"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringsläge i Power BI Desktop (förhandsversion)
 
@@ -43,16 +43,6 @@ Inställningen för lagringsläget i Power BI Desktop är en av tre relaterade f
 
 * **Lagringsläge**: Nu kan du ange vilka visuella objekt som kräver en fråga till serverdelens datakällor. Visuella objekt som inte kräver en fråga importeras även om de är baserade på DirectQuery. Den här funktionen hjälper till att förbättra prestanda och minskar belastningen på serversidan. Tidigare initierade även enkla visuella objekt som utsnitt frågor som skickades till serverdelskällor. Lagringsläget beskrivs ytterligare i den här artikeln.
 
-## <a name="enable-the-storage-mode-preview-feature"></a>Aktivera förhandsversionsfunktionen för lagringsläge
-
-Funktionen för lagringsläge är i förhandsversion och måste aktiveras i Power BI Desktop. Om du vill aktivera **lagringsmodeller** >  **väljer du Arkiv > Alternativ och inställningar** > **Alternativ** > **Förhandsfunktioner** och markerar sedan kryssrutan för **sammansatta modeller**. 
-
-![Rutan ”förhandsversionsfunktioner”](media/desktop-composite-models/composite-models_02.png)
-
-Starta om Power BI Desktop för att aktivera funktionen.
-
-![Fönstret ”Funktionen kräver en omstart”](media/desktop-composite-models/composite-models_03.png)
-
 ## <a name="use-the-storage-mode-property"></a>Använd egenskapen för lagringsläge
 
 Lagringsläge är en egenskap som du kan ange i varje tabell i din modell. Ange lagringsläget i fönstret **fält**, högerklicka på den tabell vars egenskaper du vill ställa in och välj sedan **egenskaper**.
@@ -75,19 +65,7 @@ Att ändra en tabell till **Import** är en åtgärd som *inte går att ångra*.
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Begränsningar för DirectQuery-tabeller och dubbla tabeller
 
-Dubbel tabeller har samma begränsningar som DirectQuery-tabeller. Dessa restriktioner inkluderar begränsade M-transformeringar och begränsade DAX-funktioner i beräknade kolumner. Mer information finns i [Effekter av att använda DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
-
-## <a name="relationship-rules-on-tables-with-different-storage-modes"></a>Relationsregler för tabeller med olika lagringslägen
-
-Relationer måste följa de regler som är baserade på de relaterade tabellernas lagringsläge. Det här avsnittet innehåller exempel på giltiga kombinationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md).
-
-För datauppsättningar med en enskild datakälla är följande *1-till-många*-kombinationer giltiga:
-
-| Tabellen på *många*-sidan | Tabellen på *1*-sidan |
-| ------------- |----------------------| 
-| Dubbla          | Dubbla                 | 
-| Importera        | Import eller Dubbla       | 
-| DirectQuery   | DirectQuery eller Dubbla  | 
+Dubbeltabeller har samma funktionsbegränsningar som DirectQuery-tabeller. Dessa restriktioner inkluderar begränsade M-transformeringar och begränsade DAX-funktioner i beräknade kolumner. Mer information finns i [Effekter av att använda DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
 
 ## <a name="propagation-of-dual"></a>Spridning av Dubbla
 Överväg att använda följande enkla modell, där alla tabeller kommer från en enda källa som stöder Import och DirectQuery.
@@ -98,14 +76,11 @@ Låt oss till en början anta att alla tabeller i den här modellen är DirectQu
 
 ![Varningsfönster för lagringsläge](media/desktop-storage-mode/storage-mode_05.png)
 
-Dimensionstabellerna (*Kund*, *Datum* och *Geografi*) måste ges värdet **Dubbla** för att uppfylla de tidigare beskrivna relationsreglerna. I stället för att ställa in dessa tabeller till **Dubbla** i förväg, kan du ställa in dem i en enda åtgärd.
+Dimensionstabellerna (*Customer*, *Geography* och *Date*) kan anges till **dubbla** för att minska antalet svaga relationer i datauppsättningen och förbättra prestandan. Svaga relationer innefattar vanligtvis minst en DirectQuery-tabell där kopplingslogik inte kan pushas till källsystemen. Faktumet att **dubbla** tabeller kan fungera antingen som DirectQuery eller Importera hjälper dig att undvika detta.
 
 Spridningslogiken är utformad för att hjälpa till med modeller som innehåller många tabeller. Vi antar att du har en modell med 50 tabeller och att endast vissa faktatabeller (transaktionstabeller) måste cachelagras. Logiken i Power BI Desktop räknar ut den minsta uppsättning av dimensionstabeller som måste konfigureras som **Dubbla**, så att du behöver inte göra detta.
 
 Spridningslogiken passerar enbart för den ena sidan av **1-till-många**-relationer.
-
-* Att ändra tabellen *Kund* till **Import**, istället för att ändra *SurveyResponse*, är inte tillåtet p.g.a. dess relationer till DirectQuery-tabellerna *Försäljning* och *SurveyResponse*.
-* Att ändra tabellen *Kund* till **Dubbla**, istället för att ändra *SurveyResponse*, är tillåtet. Spridningslogiken konfigurerar tabellen *Geografi* tabellen så att den även är **Dubbla**.
 
 ## <a name="storage-mode-usage-example"></a>Användningsexempel för lagringsläge
 Nu ska vi fortsätta med exemplet från föregående avsnitt och föreställa oss att vi använder följande egenskapsinställningar för lagringsläge:
@@ -191,4 +166,3 @@ Mer information om sammansatta modeller och DirectQuery finns i följande artikl
 * [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md)
 * [Använda DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery i Power BI](desktop-directquery-data-sources.md)
-

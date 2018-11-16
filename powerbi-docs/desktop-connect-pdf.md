@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fe13e5776648342aa4f7e86dce657e6ffcca11b9
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: 2ecd4b8e6295431f520dea61454bbf868bfab254
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44513287"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619688"
 ---
 # <a name="connect-to-a-pdf-file-in-power-bi-desktop-preview"></a>Ansluta till en PDF-fil i Power BI Desktop (förhandsversion)
 I Power BI Desktop kan du ansluta till en **PDF-fil** och använda inkluderade data från filen precis som andra datakällor i Power BI Desktop.
@@ -45,6 +45,10 @@ Du uppmanas att ange platsen för PDF-filen som du vill använda. När du anger 
 ![Ansluta till data i PDF-filer](media/desktop-connect-pdf/connect-pdf_04.png)
 
 Om du markerar en kryssruta bredvid de identifierade elementen i PDF-filen visas de i den högra rutan. När du vill importera väljer du knappen **Läs in** för att importera data till **Power BI Desktop**.
+
+Från och med November 2018-versionen av **Power BI Desktop** så kan du ange **Start page** och **End page** som valfria parametrar för PDF-anslutningen. Du kan även ange dessa parametrar i M-formelspråket, med följande format:
+
+`Pdf.Tables(File.Contents("c:\sample.pdf"), [StartPage=10, EndPage=11])`
 
 
 ## <a name="next-steps"></a>Nästa steg

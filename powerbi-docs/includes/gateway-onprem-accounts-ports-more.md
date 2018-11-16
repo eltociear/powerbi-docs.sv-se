@@ -61,14 +61,14 @@ I framtiden kan du starta om *gatewayens Windows-tjänst* från gränssnittets d
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
-## <a name="support-for-tls-1112"></a>Stöd för TLS 1.1/1.2
+## <a name="support-for-tls-12"></a>Stöd för TLS 1.2
 
-Den lokala datagatewayen använder som standard TLS (Transport Layer Security) 1.1 eller 1.2 för att kommunicera med **Power BI-tjänsten**. Tidigare versioner av den lokala datagatewayen använder TLS 1.0 som standard. Den 15 mars-2018 avslutas stödet för TLS 1.0, vilket även omfattar gatewayens möjlighet att interagera med **Power BI-tjänsten** med TLS 1.0. Du måste uppgradera installationerna av den lokala datagatewayen för att säkerställa att gatewayen fortsätter att fungera som den ska.
+Den lokala datagatewayen använder som standard TLS (Transport Layer Security) 1.2 för att kommunicera med Power BI-tjänsten. För att säkerställa att all gatewaytrafik använder TLS 1.2, kan du behöva lägga till eller ändra följande registernycklar på den dator som kör gatewaytjänsten:
 
-Det är viktigt att observera att TLS 1.0 fortfarande stöds av den lokala datagatewayen före den 1 november och att den används av gatewayen som en reservmekanism. För att se till att all gatewaytrafik använder TLS 1.1 eller 1.2 (och för att förhindra användningen av TLS 1.0 på din gateway), måste du lägga till eller ändra följande registernycklar på den dator som kör gatewaytjänsten:
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
 
 > [!NOTE]
 > När du lägger till eller ändrar registernycklarna tillämpas ändringen på alla .NET-program. Information om registerändringar som påverkar TLS för andra program finns i [Registerinställningar för Transport Layer Security (TLS)](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).

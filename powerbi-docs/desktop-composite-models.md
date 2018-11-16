@@ -1,5 +1,5 @@
 ---
-title: Använda sammansatta modeller i Power BI Desktop (förhandsversion)
+title: Använda sammansatta modeller i Power BI Desktop
 description: Skapa datamodeller med flera dataanslutningar och många-till-många-relationer i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 47c99e40b1665b98c33d16b685e359c10277a560
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435406"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619711"
 ---
-# <a name="use-composite-models-in-power-bi-desktop-preview"></a>Använda sammansatta modeller i Power BI Desktop (förhandsversion)
+# <a name="use-composite-models-in-power-bi-desktop"></a>Använda sammansatta modeller i Power BI Desktop
 
 Tidigare i Power BI Desktop när du använde en DirectQuery i en rapport, tilläts inga andra dataanslutningar &mdash;oavsett om DirectQuery eller importera&mdash; tilläts för rapporten eller inte. Med sammansatta modeller tas den begränsningen bort. En rapport kan sömlöst inkludera dataanslutningar från mer än en DirectQuery, eller Importera data-anslutning, i valfri kombination.
 
@@ -27,19 +27,9 @@ Funktionen Sammansatta modeller i Power BI Desktop består av tre relaterade fun
 
 * **Sammansatta modeller**: Låter en rapport ha flera dataanslutningar, inklusive DirectQuery-anslutningar eller import, i valfri kombination. I den här artikeln beskrivs sammansatta modeller i detalj.
 
-* **Många-till-många-relationer**: Med *sammansatta modeller*, kan du etablera *många-till-många-relationer* mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md).
+* **Många-till-många-relationer**: Med *sammansatta modeller* kan du etablera *många-till-många-relationer* mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md).
 
 * **Lagringsläge**: Nu kan du ange vilka visuella objekt som kräver en fråga till serverdelens datakällor. Visuella objekt som inte kräver en fråga importeras även om de är baserade på DirectQuery. Den här funktionen hjälper till att förbättra prestanda och minskar belastningen på serversidan. Tidigare initierade även enkla visuella objekt som utsnitt frågor som skickades till serverdelskällor. Mer information finns i [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md).
-
-## <a name="enable-the-composite-models-preview-feature"></a>Aktivera förhandsgranskningsfunktionen Sammansatta modeller
-
-Funktionen Sammansatta modeller är i förhandsversion och måste aktiveras i Power BI Desktop. Om du vill aktivera Sammansatta modeller väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ** > **Förhandsfunktioner** och markerar kryssrutan **Sammansatta modeller**. 
-
-![Rutan ”förhandsversionsfunktioner”](media/desktop-composite-models/composite-models_02.png)
-
-Du måste starta om Power BI Desktop för att aktivera funktionen.
-
-![Fönstret ”Funktionen kräver en omstart”](media/desktop-composite-models/composite-models_03.png)
 
 
 ## <a name="use-composite-models"></a>Använda sammansatta modeller

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8239c271bff5dff6dc068b1c547b8ab2d7731da5
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c4b4114d21d7afc6652d8706235dab4ad0ba0c37
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327739"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619782"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Rapportvy i Power BI Desktop
 Om du har arbetat med Power BI, vet du hur enkelt det är att skapa rapporter som ger dynamisk perspektiv och insikter om dina data. Power BI har också fler avancerade funktioner i Power BI Desktop. Du kan använda Power BI Desktop för att skapa avancerade frågor, blandade data från flera källor, skapa relationer mellan tabeller och mycket mer.
@@ -27,35 +27,46 @@ Skillnaden mellan dessa är att när du använder Power BI Desktop kan du arbeta
 ## <a name="lets-take-a-look"></a>Låt oss ta en titt!
 När du läser in data i Power BI Desktop, ser du **Rapportvisningen** med en tom arbetsyta.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
+![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
 Du kan växla mellan **Rapportvy**, **Datavy** och **Relationsvy** genom att välja ikonerna i det vänstra navigationsfältet:
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
+![Rapportvy-ikonen](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 
 När du har lagt till vissa data kan du lägga till fält i ett nytt visuellt objekt i arbetsytan.
 
-![](media/desktop-report-view/pbid_reportview_addvis.gif)
+![Lägg till ett visuellt objekt genom att dra från Fält-fönstret](media/desktop-report-view/pbid_reportview_addvis.gif)
 
 Om du vill ändra typen av visualisering, kan du välja detta från gruppen **Visuella objekt** i menyfliksområdet eller högerklicka och välja en annan typ från ikonen **Ändra typen av visualisering**.
 
-![](media/desktop-report-view/pbid_reportview_changevis.gif)
+![Ändra ett visuellt objekt genom att välja ett nytt](media/desktop-report-view/pbid_reportview_changevis.gif)
 
 > [!TIP]
 > Se till att experimentera med olika typer av visuella objekt. Det är viktigt att ditt visuella objekt förmedlar dina data tydligt.
-> 
-> 
 
 En rapport har minst en tom sida från början. Sidor visas i fönstret navigator till vänster om arbetsytan. Du kan lägga till alla typer av grafik på en sida, men det är viktigt att inte överdriva. För många visuella objekt på en sida gör det svårt att hitta rätt information. Du kan lägga till nya sidor i rapporten. Klicka bara på **Ny sida** i menyfliksområdet.
 
-![](media/desktop-report-view/pbidesignerreportviewnewpage.png)
+![Ny sida-ikonen](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
 Om du vill ta bort en sida klickar du på **X** på sidans flik längst ned i rapporten.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
+![Lägga till en sida i en rapport](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > [!NOTE]
 > Rapporter och visuella objekt går inte att fästa på en instrumentpanel från Power BI Desktop. För att göra det måste du [Publicera från Power BI Desktop](desktop-upload-desktop-files.md) till Power BI-platsen.
+
+## <a name="copy-and-paste-between-reports"></a>Kopiera och klistra in mellan rapporter
+
+Du kan enkelt ta ett visuellt objekt från en Power BI Desktop-rapport och klistra in den i en annan rapport. Använd bara tangentbordskommandot **CTRL + C** för att kopiera ditt visuella rapportobjekt och använd **CTRL + V** i den andra Power BI Desktop-rapporten för att klistra in det visuella objektet i den andra rapporten. Du kan välja ett visuellt objekt i taget eller så kan du välja alla visuella objekt på en sida att kopiera och därefter klistra in dem i Power BI Desktop-målrapporten. 
+
+Möjligheten att kopiera och klistra in visuella objekt är användbart för personer som skapar och uppdaterar flera rapporter ofta. När du kopierar mellan filer, så överförs inställningar och formatering som uttryckligen har ställts in i formateringsfönstret, medan visuella element som förlitar sig på ett tema eller standardinställningarna automatiskt uppdateras för att matcha temat för målrapporten. Så när du får ett visuellt objekt formaterat så det ser ut precis som du vill så kan du kopiera och klistra in det visuella objektet i nya rapporter och spara allt ditt formateringsarbete.
+
+![Fel vid kopiera/klistra in visuellt objekt – inget datafält](media/desktop-report-view/report-view_05.png)
+
+Om fälten i din modell är olika, visas ett fel på det visuella objektet och en varning om vilka fält som inte finns. Felet liknar den upplevelse du får när du tar bort ett fält i modellen som det visuella objektet använder. Åtgärda felet genom att ersätta det trasiga fältet med de fält som du vill använda från modellen i rapporten där du klistrade in det visuella objektet. Om du använder ett anpassat visuellt objekt så måste du även importera det anpassade visuella objektet till målrapporten.
+
+
+
 
 ## <a name="hide-report-pages"></a>Dölja rapportsidor
 
@@ -63,13 +74,13 @@ När du skapar en rapport har du även möjlighet att dölja sidor i den. Detta 
 
 Det är lätt att dölja en rapportsida. Du högerklickar helt enkelt på rapportsidans flik och väljer **Dölj** på den meny som visas.
 
-![](media/desktop-report-view/report-view_05.png)
+![Alternativet Dölj sida](media/desktop-report-view/report-view_05.png)
 
 Det finns vissa saker du bör tänka på när du döljer en rapportsida:
 
 * Du kan fortfarande se en dold rapportvy i **Power BI Desktop**, även om sidans rubrik är nedtonad. I följande bild döljs sida 4.
 
-    ![](media/desktop-report-view/report-view_06.png)
+    ![nedtonad sida som är dold](media/desktop-report-view/report-view_06.png)
 
 * Du *kan inte* se en dold rapportsida när du visar rapporten i **Power BI-tjänsten**.
 

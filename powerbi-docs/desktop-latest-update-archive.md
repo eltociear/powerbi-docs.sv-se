@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b068516b13b3aab134b20f95939c75a5b6e949b5
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 3e8e8359742a422049751a348bce6a5d4015bd72
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101702"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619872"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -33,6 +33,64 @@ Länkarna bredvid varje uppdatering innebär följande:
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
+
+## <a name="october-2018-update-263327240262"></a>Uppdatering oktober 2018 (2.63.3272.40262)
+
+Våra oktoberuppdateringar var spöklikt bra, läskigt användbara och godare än en skål med halloweendgodis. 
+
+Följande uppdateringar är nya för **Power BI Desktop** i oktober:
+
+### <a name="reporting"></a>Rapportering
+
+* Sök i filterkort [[video]](https://youtu.be/cT3L2VzgBRU?t=56) [[artikel]](power-bi-reports-filters-and-highlighting.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23search) 
+* Förbättrad användbarhet för redigering av upplevelser [[video]](https://youtu.be/cT3L2VzgBRU?t=118) [[artikel]](desktop-accessibility.md#arranging-items-in-field-buckets) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
+* Prestandaförbättringar för ArcGIS-karta  [[video]](https://youtu.be/cT3L2VzgBRU?t=333)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
+
+
+### <a name="modeling"></a>Modellering
+
+* Förbättringar med DAX-redigerare [[video]](https://youtu.be/GO1dhDJhSDY) [[artikel]](desktop-formula-editor.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
+
+### <a name="analytics"></a>Analytics
+
+* Stöd för sammansatta modeller och sammanställning i Power BI-tjänsten (förhandsversion) [[video]](https://youtu.be/8E6UokaDtc0)[[artikel – aggregeringar]](desktop-aggregations.md) [[artikel – sammansatta modeller]](desktop-composite-models.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
+* Förklara ökningen för icke-additiva mått [[video]](https://youtu.be/8E6UokaDtc0?t=107) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
+
+### <a name="custom-visuals"></a>Anpassade visuella objekt
+
+* Fem nya anpassade visuella objekt [[video]](https://youtu.be/ZfJSSG17SEY)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
+
+### <a name="data-connectivity"></a>Dataanslutning
+
+* Web by Example-anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/MhrhIXNtelw) [[artikel]](desktop-connect-to-web-by-example.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23webByExample) 
+* SAP BW-anslutningsappen, implementering v2 är nu allmänt tillgänglig [[video]](https://youtu.be/MhrhIXNtelw?t=133) [[artikel]](desktop-sap-bw-connector.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
+* SAP BW Message Server-anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/MhrhIXNtelw?t=159) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
+* Vertica-anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/MhrhIXNtelw?t=175) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
+* Dynamics NAV- och Dynamics 365 Business Central-anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/MhrhIXNtelw?t=197) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
+* Nya lokala Dynamics 365 business Central-anslutningsappen [[video]](https://youtu.be/MhrhIXNtelw?t=219) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
+
+### <a name="data-preparation"></a>Förberedelse av data
+* Dataprofilering i Power Query Editor (förhandsversion) [[video]](https://youtu.be/XNNvXCvlDlc) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dataProfiling) 
+* Fuzzy matchande alternativ för att sammanfoga frågor (förhandsversion) [[video]](https://youtu.be/XNNvXCvlDlc?t=261) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23fuzzyMatching) 
+
+### <a name="other-areas"></a>Andra områden
+* Styra exportera dataalternativ för rapporter [[video]](https://youtu.be/agjKCFQ1NBQ?t=16) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23exportControl) 
+* Säkerhetsinställningar för transportlager [[video]](https://youtu.be/agjKCFQ1NBQ?t=208) [[artikel]](service-admin-power-bi-security.md#enforcing-tls-version-usage) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23tls) 
+
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du kan också se videor från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cT3L2VzgBRU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="september-2018-update-2625222582"></a>Uppdatering september 2018 (2.62.5222.582)

@@ -7,25 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223385"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619642"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
 
 ![Använd olika markörer för rad-och ytdiagram för att förbättra tillgängligheten](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> Dessa hjälpmedelsfunktioner medföljer **Power BI Desktop**-versionen från juni 2017 och senare versioner. Ytterligare funktioner för tillgänglighet planeras för framtida lanseringar.
-> 
-> 
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Använda en Power BI Desktop-rapport med ett tangentbord eller en skärmläsare
 Från och med **Power BI Desktop**-versionen från september 2017 kan du trycka på tangenten **?** för att visa ett fönster som beskriver tillgängliga kortkommandon i **Power BI Desktop**.
@@ -116,12 +111,26 @@ Det finns några kända problem och begränsningar hos hjälpmedelsfunktionerna 
 * Om du använder Skärmläsaren finns vissa begränsningar när du bläddrar i Visa data som en HTML-tabell.
 
 ## <a name="keyboard-shortcuts"></a>Kortkommandon
+Kortkommandon är till hjälp för att flytta runt i Power BI-rapporter med hjälp ett tangentbord. Följande tabeller beskriver genvägar som finns tillgängliga i en Power BI-rapport. Förutom att använda de här kortkommandona i Power BI Desktop så fungerar de även i följande upplevelser:
+
+* Dialogruta för Frågor och svar-utforskaren
+* Dialogruta för Komma igång
+* Dialogruta för Arkiv-menyn och Om
+* Varningsfältet
+* Dialogrutan för Filåterställning
+* Dialogrutan för Frowns
+
+I vår fortsatta strävan efter att förbättra hjälpmedel så stöder även den tidigare listan med upplevelser även stöd för skärmläsare och högkontrastinställningar.
+
+
 ### <a name="frequently-used-shortcuts"></a>Vanliga kortkommandon
 | Gör så här:           | Tryck på                |
 | :------------------- | :------------------- |
 | Flytta fokus mellan avsnitt  | Ctrl + F6 |
 | Flytta fokus framåt i avsnittet | Tab         |
 | Flytta fokus bakåt i avsnittet | Skift + Tabb |
+| Markera eller avmarkera ett objekt | Retur eller blanksteg |
+| Flerval av objekt | Ctrl + blanksteg |
 
 ### <a name="on-visual"></a>På det visuella objektet
 | Gör så här:           | Tryck på                |

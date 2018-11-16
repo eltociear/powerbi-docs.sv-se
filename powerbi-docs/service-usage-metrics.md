@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4c10a0ffdf11829d8faa15ea14be136922c86382
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545060"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619849"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
 
@@ -69,7 +69,7 @@ Fördjupa dig i rapportdatan eller skapa egna rapporter mot datauppsättningen m
     > [!NOTE]
     > Om du fäster en panel från en användningsstatistikrapport på en instrumentpanel går det inte att lägga till instrumentpanelen i en app eller ett innehållspaket.
 
-## <a name="what-metrics-are-reported"></a>Vilka mått rapporteras?
+## <a name="which-metrics-are-reported"></a>Vilka mått rapporteras?
 
 | Mått | Instrumentpanel | Rapport | Beskrivning |
 | --- | --- | --- | --- |
@@ -162,6 +162,15 @@ När du inaktiverar användningsstatistik för hela organisationen kan administr
 Power BI finns tillgängligt i enskilda nationella moln. Molnen ger samma nivåer av säkerhet, sekretess, efterlevnad och transparens som den globala versionen av Power BI, kombinerat med en unik modell för lokala föreskrifter om tillhandahållande av tjänster, datahemvist, åtkomst och kontroll. Tack vare denna unika modell för lokala föreskrifter är inte användningsstatistik tillgänglig i nationella moln. Mer information finns i artikeln om [nationella moln](https://powerbi.microsoft.com/en-us/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
+
+Det är viktigt att förstå att skillnader kan uppstå när du jämför användningsstatistik och spårningsloggar och varför. *Spårningsloggar* samlas in med data från Power BI-tjänsten och *Användningsstatistik* samlas in på klienten. På grund av denna skillnad kanske det sammanställda antalet aktiviteter i spårningsloggarna inte alltid överensstämmer med användningsstatistiken på grund av följande:
+
+* Användningsstatistik kan ibland underberäkna aktiviteter på grund av inkonsekventa nätverksanslutningar, reklamblockering eller andra problem som kan störa skickandet av händelser från klienten.
+* Vissa typer av vyer ingår inte i användningsstatistiken som de beskrivs tidigare i den här artikeln.
+* Användningsstatistiken kan ibland överberäkna aktiviteter i situationer där lcient uppdateras utan att en begäran behöver skickas tillbaka till Power BI-tjänsten.
+
+
+Förutom eventuella skillnader mellan användningsstatistik och spårningsloggar så följande frågor och svar om användningsstatistik vara hjälpsamma för användare och administratörer:
 
 F:    Jag kan inte köra användningsstatistik på en instrumentpanel eller rapport S:    Du kan endast se användningsstatistik för innehåll som du äger eller har behörighet att redigera.
 

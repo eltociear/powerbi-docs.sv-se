@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336908"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619826"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -30,8 +30,6 @@ Om du väljer **Mer...** från menyn **Mest vanliga** visas fönstret **Hämta d
 
 > [!NOTE]
 > Power BI-teamet utökar kontinuerligt de datakällor som är tillgängliga för **Power BI Desktop** och **Power BI-tjänsten**. Därför visas ofta tidiga versioner av pågående datakällor markerade med *beta* eller *förhandsversion*. Alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
-> 
-> 
 
 ## <a name="data-sources"></a>Datakällor
 Datatyperna ordnas i följande kategorier:
@@ -80,15 +78,14 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Impala
 * Google BigQuery
 * Snowflake
+* BI-anslutningsapp
+* Exasol
 * Dremio (Beta)
-* Exasol (Beta)
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
 
 > [!NOTE]
 > Vissa databaskopplingar kräver att du aktiverar dem genom att välja **Arkiv > Alternativ och inställningar > Alternativ** sedan välja **Förhandsversionsfunktioner** och aktivera kopplingen. Om du inte ser några av de kopplingar som nämns ovan och vill använda dem, kontrollerar du dina inställningar för **Förhandsversionsfunktioner**. Observera att alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
-> 
-> 
 
 Följande bild visar fönstret **Hämta data** för **Databas**.
 
@@ -111,11 +108,11 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (beta)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive-fråga
-* Azure KustoDB (beta)
+* Azure Data Explorer (Beta)
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
 
@@ -131,7 +128,8 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Dynamics 365 Business Central (lokal)
 * Common Data Service för appar (beta)
 * Microsoft Azure Consumption Insights (beta)
-* Visual Studio Team Services (beta)
+* Azure DevOps (Beta)
+* Azure DevOps Server (Beta)
 * Salesforce-objekt
 * Salesforce-rapporter
 * Google Analytics
@@ -187,8 +185,6 @@ Följande bild visar fönstret **Hämta data** för **Övrigt**.
 
 > [!NOTE]
 > För tillfället går det inte att ansluta till anpassade datakällor som skyddas med Azure Active Directory.
-> 
-> 
 
 ## <a name="connecting-to-a-data-source"></a>Ansluta till en datakälla
 Anslut till en datakälla genom att välja datakällan i fönstret **Hämta data** och välja **Anslut**. I följande bild har **Webb** valts från dataanslutningskategorin **Övrigt**.

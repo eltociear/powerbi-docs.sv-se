@@ -7,33 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359733"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619734"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Sammansättningar i Power BI Desktop (förhandsversion)
 
-Med hjälp av **sammansättningar** i Power BI kan du utföra interaktiv analys på stordata på ett sätt som inte var möjligt tidigare. Med **sammansättningar** kan du drastiskt minska kostnaderna för att låsa upp stora datauppsättningar för beslutsfattande.
+Användning av **sammansättningar** i Power BI tillåter interaktiv analys över stordata på sätt som tidigare inte var möjligt. Med **sammansättningar** kan du drastiskt minska kostnaderna för att låsa upp stora datauppsättningar för beslutsfattande.
 
 ![sammansättningar i Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
 
 Följande lista innehåller fördelar med att använda **sammansättningar**:
 
-* **Frågeprestanda för stora datauppsättningar** – när användare interagerar med visuella objekt i Power BI-rapporter skickas DAX-frågor till datamängden. Kör frågor snabbare genom att cachelagra data på den aggregerade nivån med en bråkdel av de resurser som krävs på detaljnivån. Lås upp stordata på ett sätt som annars inte skulle vara möjligt.
+* **Frågeprestanda för stordata** – när användare interagerar med visuella objekt i Power BI-rapporter skickas DAX-frågor till datauppsättningen. Kör frågor snabbare genom att cachelagra data på den aggregerade nivån med en bråkdel av de resurser som krävs på detaljnivån. Lås upp stordata på ett sätt som annars inte skulle vara möjligt.
 * **Datauppdateringsoptimering** – Minska cachestorlekar och uppdateringshastigheter genom att cachelagra data på den aggregerade nivån. Gör data tillgängliga för användare snabbare.
 * **Få balanserad arkitektur** – Gör det möjligt för den minnesinterna cachelagringen i Power BI att hantera aggregerade frågor, vilket görs på ett effektivt sätt. Begränsa frågor som skickas till datakällan i DirectQuery-läge, vilket gör det lättare att hålla sig inom samtidighetsgränserna. Frågor som passerar igenom brukar vara filtrerade frågor på transaktionsnivå som informationslager och stordatasystem vanligtvis hanterar väl.
 
 ### <a name="table-level-storage"></a>Lagring på tabellnivå
-Lagring på tabellnivå används normalt med sammansättningsfunktionen. Läs artikeln [lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md) för mer information.
+Lagring på tabellnivå används normalt med sammansättningsfunktionen. Läs artikeln [lagringsläge i Power BI Desktop](desktop-storage-mode.md) för mer information.
 
 ### <a name="data-source-types"></a>Typer av datakälla
-Sammansättningar används tillsammans med datakällor som representerar dimensionsmodeller, till exempel informationslager och data mart samt Hadoop-baserade stordatakällor. Den här artikeln beskriver vanliga modelleringsskillnader i Power BI för varje typ av datakälla.
+Sammansättningar används tillsammans med datakällor som representerar dimensionsmodeller, till exempel informationslager, data mart och Hadoop-baserade stordatakällor. Den här artikeln beskriver vanliga modelleringsskillnader i Power BI för varje typ av datakälla.
 
 Alla Power BI Import- (icke-flerdimensionella) och DirectQuery-källor fungerar med sammansättningar.
 
@@ -55,9 +55,9 @@ Fundera på följande modell, som är från en enskild datakälla. Vi antar att 
 
 ![tabeller i en modell](media/desktop-aggregations/aggregations_02.jpg)
 
-Istället skapar vi tabellen **Sales Agg** som en sammansättningstabell. Den är mer detaljerad än **Sales** och innehåller därför mycket färre rader. Antalet rader ska vara lika med summan av **SalesAmount** som grupperats efter **CustomerKey**, **Datekey** och **ProductSubcategoryKey**. Istället för flera miljarder rader kan det röra sig om miljontals rader, vilket är mycket enklare att hantera.
+Istället skapar vi tabellen **Sales Agg** som en sammansättningstabell. Den är mer detaljerad än **Sales** så den kommer innehålla mycket färre rader. Antalet rader ska vara lika med summan av **SalesAmount** som grupperats efter **CustomerKey**, **Datekey** och **ProductSubcategoryKey**. Istället för flera miljarder rader kan det röra sig om miljontals rader, vilket är mycket enklare att hantera.
 
-Anta att följande dimensionstabeller är vanligast för frågor med högt affärsvärde. De är tabeller som kan filtrera **Sales Agg** med *en-till-många* (eller *många-till-en*)-relationer. Andra relationer, som *många-till-många* eller *flera källor*, används inte för sammansättningar.
+Anta att följande dimensionstabeller är vanligast för frågor med högt affärsvärde. De är tabeller som kan filtrera **Sales Agg** med *en-till-många* (eller *många-till-en*)-relationer.
 
 * Geografi
 * Kund
@@ -77,7 +77,7 @@ Vi fortsätter med exemplet som vi använder. Vi ställer in lagringsläget för
 
 ![konfigurera lagringsläget](media/desktop-aggregations/aggregations_04.jpg)
 
-När vi gör det visas följande dialogruta som informerar oss om att de relaterade dimensionstabellerna anges till lagringsläget **Dubbla**. 
+När vi gör det så visas följande dialogruta som informerar oss om att de relaterade dimensionstabellerna kan anges till lagringsläget **Dubbla**. 
 
 ![dialogruta för lagringsläge](media/desktop-aggregations/aggregations_05.jpg)
 
@@ -88,7 +88,23 @@ Om du ställer in dem på **Dubbla** kan relaterade dimensionstabeller fungera s
 
 Mer information om lagringsläget **Dubbla** finns i artikeln [lagringsläge](desktop-storage-mode.md).
 
-> Obs! Tabellen **Sales Agg** är dold. Sammansättningstabeller bör döljas för datauppsättningens konsumenter. Konsumenter och frågor refererar till detaljtabellen, inte till sammansättningstabellen. De behöver inte ens veta att sammansättningstabellen finns.
+### <a name="strong-vs-weak-relationships"></a>Starka kontra svaga relationer
+Sammanställningsträffar baserat på relationer kräver starka relationer.
+
+Starka relationer omfattar följande kombinationer där båda tabellerna är från en *enda källa*.
+
+| Tabell på *många sidorna | Tabellen på *1*-sidan |
+| ------------- |----------------------| 
+| Dubbla          | Dubbla                 | 
+| Importera        | Import eller Dubbla       | 
+| DirectQuery   | DirectQuery eller Dubbla  | 
+
+Det enda fallet där en *korskälla*-relation anses stark om bägge tabellerna är Importera. Många-till-många-relationer anses alltid vara svaga.
+
+För *korskälla*-sammansättningsträffar som inte är beroende av relationer kan du se avsnittet nedan på sammansättningar baserade på gruppera efter-kolumner.
+
+### <a name="aggregation-table-is-hidden"></a>Sammansättningstabellen är dold
+Tabellen **Sales Agg** är dold. Sammansättningstabeller bör alltid döljas för datauppsättningens användare. Konsumenter och frågor refererar till detaljtabellen, inte till sammansättningstabellen. De behöver inte ens veta att sammansättningstabellen finns.
 
 ### <a name="manage-aggregations-dialog"></a>Hantera dialogrutan sammansättningar
 Sedan definierar vi sammansättningarna. Välj snabbmenyn **Hantera sammansättningar** för tabellen **Sales Agg** genom att högerklicka på tabellen.
@@ -155,29 +171,29 @@ Följande fråga använder sammansättningen eftersom kolumner i tabellen *Date*
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_02.jpg)
 
-Följande fråga använder inte sammansättningen. Trots att den begär summan av **SalesAmount** utför den en gruppera efter-åtgärd på en kolumn i tabellen **Produkt**, som inte har kornigheten som kan använda sammansättningen. Om du ser relationer i modellen kan en produktunderkategori ha flera **Produkt**-rader. Frågan kan inte avgöra vilka produkter som den ska aggregera till. I det här fallet återgår frågan till DirectQuery och skickar en SQL-fråga till datakällan.
+Följande fråga träffar inte sammansättningen. Trots att summan av **SalesAmount** begärs så utför den en gruppera efter-åtgärd på en kolumn i **Produkt**-tabellen, som inte har den kornighet som kan träffa sammansättningen. Om du ser relationerna i modellen kan en produktunderkategori ha flera **Produkt**-rader. Frågan kan inte avgöra vilka produkter som den ska sammanställa till. I det här fallet återgår frågan till DirectQuery och skickar en SQL-fråga till datakällan.
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_03.jpg)
 
-Sammansättningar kan användas till annat än enkla beräkningar som ger en tydlig summa. Även komplexa beräkningar kan utföras. En komplex beräkning är konceptuellt uppdelad i underfrågor för varje SUM, MIN, MAX och COUNT och varje underfråga utvärderas för att avgöra om sammansättningen kan användas. Den här logiken gäller inte alltid på grund av frågeplansoptimering, men generellt sett bör den stämma. I följande exempel används sammansättningen:
+Sammansättningar är inte bara till för enkla beräkningar som ger en tydlig summa. Även komplexa beräkningar kan utföras. En komplex beräkning är konceptuellt uppdelad i underfrågor för varje SUM, MIN, MAX och COUNT och varje underfråga utvärderas för att avgöra om sammansättningen kan användas. Den här logiken gäller inte i alla fall på grund av frågeplansoptimering, men generellt sett bör den stämma. I följande exempel används i sammansättningen:
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_04.jpg)
 
-Funktionen COUNTROWS kan utnyttja sammansättningar. Följande fråga använder sammansättningen eftersom en sammansättning för tabellraderna**Antal** har definierats för tabellen **Försäljning**.
+Funktionen COUNTROWS kan utnyttja sammansättningar. Följande fråga träffar sammansättningen eftersom en sammansättning för tabellraderna **Antal** har definierats för tabellen **Sales**.
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_05.jpg)
 
-Funktionen AVERAGE kan använda sammansättningar. Följande fråga använder sammansättningen eftersom AVERAGE internt viks till en SUM som dividerats med COUNT. Sammansättningen används eftersom kolumnen **UnitPrice** har sammansättningar som definieras för både SUM och COUNT.
+Funktionen AVERAGE kan använda sammansättningar. Följande fråga träffar sammansättningen eftersom AVERAGE internt viks till en SUM som delats med en COUNT. Sammansättningen används eftersom kolumnen **UnitPrice** har sammansättningar som definieras för både SUM och COUNT.
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_06.jpg)
 
-I vissa fall kan funktionen DISTINCTCOUNT använda sammansättningar. Följande fråga använder sammansättningen eftersom det finns en GroupBy-post för **CustomerKey** som behåller tydligheten i **CustomerKey** i sammansättningstabellen. Den här tekniken omfattas fortfarande av prestandatröskelvärdet där mer än två till fem miljoner distinkta värden kan påverka frågeprestandan. Men den kan vara användbar i scenarier där det finns miljarder rader i informationstabellen och två till fem miljoner distinkta värden i kolumnen. I det här fallet kan antalet distinkta värden prestera snabbare än om du söker i tabellen som innehåller flera miljarder rader, även om de har cachelagrats i minnet.
+I vissa fall kan funktionen DISTINCTCOUNT använda sammansättningar. Följande fråga träffar sammanställningen eftersom det finns en GroupBy-post för **CustomerKey** som behåller tydligheten för **CustomerKey** i sammanställningstabellen. Den här tekniken omfattas fortfarande av prestandatröskelvärdet där mer än två till fem miljoner distinkta värden kan påverka frågeprestandan. Men den kan vara användbar i scenarier där det finns miljarder rader i informationstabellen och två till fem miljoner distinkta värden i kolumnen. I det här fallet kan antalet distinkta värden prestera snabbare än om du söker i tabellen som innehåller flera miljarder rader, även om de har cachelagrats i minnet.
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_07.jpg)
 
 ## <a name="aggregations-based-on-group-by-columns"></a>Sammansättningar som baseras på gruppera-efter-kolumner 
 
-Hadoop-baserade modeller för stordata har andra egenskaper än dimensionella modeller. För att undvika kopplingar mellan stora tabeller förlitar de sig ofta inte på relationer. Istället är dimensionsattribut ofta avnormaliserade till faktatabeller. Sådana modeller för stordata kan låsas upp för interaktiv analys med hjälp av **sammansättningar** som baseras på gruppera efter-kolumner.
+Hadoop-baserade modeller för stordata har andra egenskaper än dimensionella modeller. För att undvika kopplingar mellan stora tabeller, förlitar de sig ofta inte på relationer. Istället är dimensionsattribut ofta avnormaliserade till faktatabeller. Sådana modeller för stordata kan låsas upp för interaktiv analys med hjälp av **sammansättningar** som baseras på gruppera efter-kolumner.
 
 Följande tabell innehåller den numeriska kolumnen **Rörelse** som ska aggregeras. Alla andra kolumner är attribut till Gruppera efter. Den innehåller IoT-data och ett stort antal rader. Lagringsläget är DirectQuery. Frågor på datakällan som aggregerar över hela datauppsättningen är långsamma på grund av den stora volymen.
 
@@ -197,11 +213,11 @@ I följande tabell visas sammansättningar för tabellen **Driver Activity Agg**
 
 ### <a name="group-by-columns"></a>Gruppera efter kolumner
 
-I det här exemplet är **GroupBy**-posterna **inte valfria**. Utan dem kan sammansättningarna inte användas. Det här är inte detsamma som att använda sammansättningar som baseras på relationer, vilket visades i exemplet med den dimensionella modellen tidigare i den här artikeln.
+I det här exemplet är **GroupBy**-posterna **inte valfria**. Utan dem kan sammansättningarna inte träffas. Det här är inte detsamma som att använda sammansättningar som baseras på relationer, vilket visades i exemplet med den dimensionella modellen tidigare i den här artikeln.
 
 ### <a name="query-examples"></a>Frågeexempel
 
-Följande fråga använder sammansättningen eftersom kolumnen **Aktivitetsdatum** täcks av sammansättningstabellen. Sammansättningen för tabellen Antal rader används av funktionen COUNTROWS.
+Följande fråga träffar sammansättningen eftersom kolumnen **Aktivitetsdatum** omfattas av sammansättningstabellen. Sammansättningen för tabellen Antal rader används av funktionen COUNTROWS.
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_08.jpg)
 
@@ -253,7 +269,7 @@ Följande fråga använder sammansättningen eftersom CalendarMonth omfattas av 
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_09.jpg)
 
-Följande fråga använder inte sammansättningen eftersom CalendarDay inte täcks av sammansättningstabellen.
+Följande fråga träffar inte sammanställningen eftersom CalendarDay inte omfattas av sammansättningstabellen.
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_10.jpg)
 
@@ -263,7 +279,7 @@ Följande fråga för tidsinformation använder inte sammansättningen eftersom 
 
 ## <a name="caches-should-be-kept-in-sync"></a>Cacheminnen bör hållas synkroniserade
 
-**Sammansättningar** som kombinerar DirectQuery och Import och/eller dubbelt lagringsläge kan returnera olika data om den minnesinterna cachen inte är synkroniserad med källdata. Frågekörningen försöker inte maskera dataproblem genom att t.ex. filtrera DirectQuery-resultaten så att matchar cachelagrade värden. Dessa funktioner är för prestandaoptimering och bör endast användas på sätt som inte äventyrar möjligheten att uppfylla verksamhetskraven. Det är ditt ansvar att känna till dina dataflöden, så kontrollera utformningen. Det finns etablerade tekniker för att hantera sådana problem vid källan, om så behövs.
+**Sammansättningar** som kombinerar DirectQuery och Import och/eller dubbelt lagringsläge kan returnera olika data om den minnesinterna cachen inte är synkroniserad med källdata. Frågekörningen försöker inte maskera dataproblem genom att t.ex. filtrera DirectQuery-resultat för att matcha cachelagrade värden. Dessa funktioner är för prestandaoptimering och bör endast användas på sätt som inte äventyrar möjligheten att uppfylla verksamhetskraven. Det är ditt ansvar att känna till dina dataflöden, så kontrollera utformningen. Det finns etablerade tekniker för att hantera sådana problem vid källan, om så behövs.
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -277,4 +293,3 @@ DirectQuery-artiklar:
 
 * [Använd DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery i Power BI](desktop-directquery-data-sources.md)
-

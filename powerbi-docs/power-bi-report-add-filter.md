@@ -1,25 +1,27 @@
 ---
-title: Lägga till ett filter i en visualisering, en sida, detaljerad information eller en rapport i Power BI
-description: Lägg till ett sidfilter, ett visualiseringsfilter, ett rapportfilter eller detaljerad information i en rapport i Power BI
+title: Lägg till ett filter till en Power BI-rapport
+description: Lägg till ett sidfilter, ett visualiseringsfilter eller ett rapportfilter till en rapport i Power BI
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 11/08/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c70e29bf7dcd5a307cbcb4762595716595dfa523
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: c50afced257df1878a0a695a37d9401d9eda01b7
+ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973291"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611162"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Lägga till ett filter i en rapport i Power BI-tjänsten (i redigeringsvyn)
 
 Den här artikeln förklarar hur du lägger till ett sidfilter, ett visualiseringsfilter, ett rapportfilter eller detaljerad information i en rapport i Power BI. Exemplen i den här artikeln finns i Power BI-tjänsten. Men stegen är nästan identiska i Power BI Desktop.
+
+**Visste du att?** Power BI har en ny filterupplevelse som för närvarande är i förhandsversion. Läs mer om [den nya filterupplevelsen i Power BI-rapporter](power-bi-report-filter-preview.md).
 
 ## <a name="filters-in-editing-view-or-reading-view"></a>Filter i redigeringsvyn jämfört med läsvyn
 Du kan interagera med rapporter i två olika vyer: läsvyn och redigeringsvyn. Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i. Läs allt [om filter och markeringar i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md) för mer information.
@@ -48,7 +50,7 @@ Den här proceduren använder förresten, detaljhandelsanalys om du vill ladda n
 ### <a name="filter-the-fields-in-the-visual"></a>Filtrera fälten i det visuella objektet
 
 
-1. Öppna [rapporten i redigeringsvyn](service-the-report-editor-take-a-tour.md).
+1. Öppna [rapporten i Redigeringsvyn](service-the-report-editor-take-a-tour.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Öppna panelerna Visualiseringar och Filter samt Fält (om de inte redan är öppna).
@@ -109,7 +111,7 @@ Med visning av detaljerad information i Power BI-tjänsten och Power BI Desktop 
 ### <a name="create-a-drillthrough-filter"></a>Skapa ett filter för detaljerad information
 Om du vill hänga på öppnar du Exempel på kundlönsamhet i redigeringsvyn. Anta att du vill skapa en sida som fokuserar på affärsområden för chefer.   
 
-1. Lägg till en ny sida i rapporten och döp den till **Team Executive (Teamchef)**. Detta blir *målsidan* för den detaljerade informationen.
+1. Lägg till en ny sida i rapporten och döp den till **Team Executive (Teamchef)**. Den här sidan blir *målet* för den detaljerade informationen.
 2. Lägg till visualiseringar som spårar nyckelvärden för teamchefernas affärsområden.    
 3. Lägg även till **Chef (Executive) > Executive Name (Chefens namn)** till området för filtren för detaljerad information.    
    
@@ -144,7 +146,7 @@ Nu ska vi se hur filtret för detaljerad information fungerar.
 
 - Ibland kan det hända att ett filter på visuell nivå och ett filter på sidnivå returnerar olika resultat.  När du till exempel lägger till ett filter på visuell nivå, filtrerar Power BI de aggregerade resultaten.  Aggregeringstypen är som standard Summa, men du kan [ändra aggregeringstypen](service-aggregates.md).  
 
-    När du sedan lägger till ett filter på sidnivå filtrerar Power BI utan aggregering.  Detta sker eftersom en sida kan ha många visuella objekt som var och en kan använda olika aggregeringstyper.  Så filtret tillämpas på varje datarad.
+    När du sedan lägger till ett filter på sidnivå filtrerar Power BI utan aggregering.  Det aggregerar inte eftersom en sida kan ha många visuella objekt som var och ett kan använda olika aggregeringstyper.  Så filtret tillämpas på varje datarad.
 
 - Kontrollera att du är i rapportens [Redigeringsvy](service-interact-with-a-report-in-editing-view.md) om du inte ser panelen Fält.    
 - Om du har gjort många filterändringar och vill återgå till standardinställningarna som rapportförfattaren använde väljer du **Återställ till standard** från den översta menyraden.
