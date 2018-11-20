@@ -1,21 +1,21 @@
 ---
 title: Hämta arbetsboken med finansiella exempel för Power BI
 description: Hämta arbetsboken med finansiella exempel för Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: sample
 ms.date: 06/23/2018
-ms.author: amac
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 1fcc91020c8ec12572c090bad4f6c9b2a5963dcd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 7437b31d5801a4bb462f10c402dd6bef4dcbf4f4
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944938"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717282"
 ---
 # <a name="download-the-financial-sample-workbook-for-power-bi"></a>Hämta arbetsboken med finansiella exempel för Power BI
 Behöver du data för att testa Power BI-tjänsten? Det går att hämta en enkel Excel-arbetsbok med finansiella exempeldata.  Gör så här för att hämta den:

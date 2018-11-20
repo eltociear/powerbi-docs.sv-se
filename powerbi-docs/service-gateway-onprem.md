@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 9a739efdba84279e938fd8e13d6521cf975d0b9d
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297146"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679028"
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -100,7 +100,7 @@ Det finns för tillfället ingen gemensam plats där klientorganisationsadminist
 ## <a name="enabling-outbound-azure-connections"></a>Aktivera utgående Azure-anslutningar
 
 Den lokala datagatewayen är beroende av Azure Service Bus för molnanslutning och upprättar motsvarande utgående anslutningar till den kopplade Azure-regionen. Som standard är detta platsen för din Power BI-klientorganisation. Se [Var finns min Power BI-klient?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
-Om en brandvägg blockerar utgående anslutningar, måste du konfigurera brandväggen så att den tillåter utgående anslutningar från den lokala datagatewayen till den kopplade Azure-regionen. Se [IP-intervall för Microsoft Azure-datacenter](https://www.microsoft.com/en-us/download/details.aspx?id=41653) för mer information om IP-adressintervall för varje Azure-datacenter.
+Om en brandvägg blockerar utgående anslutningar, måste du konfigurera brandväggen så att den tillåter utgående anslutningar från den lokala datagatewayen till den kopplade Azure-regionen. Se [IP-intervall för Microsoft Azure-datacenter](https://www.microsoft.com/download/details.aspx?id=41653) för mer information om IP-adressintervall för varje Azure-datacenter.
 > [!NOTE]
 > IP-adressintervall kan förändras över tid, så se till att du laddar ned den senaste informationen med jämna mellanrum. 
 

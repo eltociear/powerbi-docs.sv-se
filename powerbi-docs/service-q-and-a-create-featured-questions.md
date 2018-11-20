@@ -1,7 +1,7 @@
 ---
 title: Skapa aktuella frågor för Power BI frågor och svar
 description: Dokumentation för hur du skapar aktuella frågor för Frågor och svar i Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: E1mIAyEXuF4
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f01edbec60d0146dd5bd4454d3b1e0736b9158e3
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 02663648002f7924725791e378e10532fadc1128
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548245"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51716951"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Skapa aktuella frågor för Frågor och svar i Power BI
 Om du äger en datauppsättning, kan du lägga till egna aktuella frågor till den datauppsättningen.  Frågor och svar för Power BI kommer att visa dessa frågor till kollegor som använder (*konsumerar*) din datauppsättning.  Aktuella frågor ger dina kollegor idéer om vilka typer av frågor de kan ställa till datauppsättningen. Det är helt upp till dig vilka aktuella frågor du lägger till – lägg till populära frågor, frågor som ger intressanta resultat eller frågor som kan vara svåra att uttrycka rätt.

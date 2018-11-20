@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: bb6868784314b369fcc02e3a36caf7c82c3c5966
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 18fb96573052455034f8c257811daed6cb15529e
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564933"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679249"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Skapa en Power BI-rapport för Power BI-rapportservern
 Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-rapportserver, precis som du kan lagra Power BI-rapporter i molnet i Power BI-tjänsten (https://powerbi.com). Du skapar och redigerar rapporter i Power BI Desktop och publicerar dem till webbportalen. Rapportläsare i din organisation kan sedan se dem i webbläsaren eller i en Power BI-mobilapp på en mobilenhet.
@@ -31,7 +31,7 @@ Om du redan har skapat Power BI-rapporter i Power BI Desktop är du nästan redo
 
     ![Hämta Power BI Desktop från webbportalen](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Eller så du kan gå direkt till [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (optimerad för Power BI-rapportserver – augusti 2018) i Microsoft Download Center.
+    Eller så du kan gå direkt till [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimerad för Power BI-rapportserver – augusti 2018) i Microsoft Download Center.
 
 2. På sidan Download Center väljer du **Hämta**.
 

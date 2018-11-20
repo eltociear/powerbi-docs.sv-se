@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12ff54b1aa44edaead98b1fab6942acbd76216c7
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5d21dff56620e4b2eb05ed3bbf123ff1d1805075
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329441"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679368"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Minska storleken på en Excel-arbetsbok för att visa den i Power BI
 Du kan ladda upp Excel-arbetsböcker som är mindre än 1 GB till Power BI. En Excel-arbetsbok kan ha två delar: en datamodell och resten av rapporten. Arbetsbokens kärninnehåll. Om rapporten uppfyller följande storleksgränser, kan du spara den till **OneDrive för företag**, ansluta till den från Power BI och visa den i Excel Online:
@@ -28,7 +28,7 @@ Här följer några element som kan göra att arbetsbokens kärninnehåll är st
 
 * Bilder.
 * Skuggade celler. [Ta bort ett cellskuggningsformat](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
-* Färgade kalkylblad. [Ta bort ett arks bakgrund](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
+* Färgade kalkylblad. [Ta bort ett arks bakgrund](https://support.office.com/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 * Textrutor.
 * Clip-art.
 
@@ -55,7 +55,7 @@ Följ dessa tips när du importerar data till Excel:
 * **På Excel Data-fliken**: markera inte **tabell** i rutan **importera data**.
 
 ## <a name="workbook-size-optimizer"></a>Arbetsbokens storleksoptimering
-Om din arbetsbok innehåller en datamodell, kan du köra arbetsbokens storleksoptimering för att minska storleken på din arbetsbok. [Hämta arbetsbokens storleksoptimering](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+Om din arbetsbok innehåller en datamodell, kan du köra arbetsbokens storleksoptimering för att minska storleken på din arbetsbok. [Hämta arbetsbokens storleksoptimering](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## <a name="related-info"></a>Relaterad information
 [Skapa en minneseffektiv datamodell](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)

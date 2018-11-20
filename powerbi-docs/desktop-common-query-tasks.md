@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: bec5bb108bc210f268db0392370e15d89c0352b7
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 33462cbdac69d13d64d396a1dd93a6e1922a9e2c
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39330223"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679399"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Vanliga frågeuppgifter i Power BI Desktop
 När du arbetar i fönstret **Frågeredigeraren** i Power BI Desktop finns det några återkommande uppgifter. I det här dokumentet får du exempel på dessa återkommande uppgifter och länkar med ytterligare information. 
@@ -146,7 +146,7 @@ Låt oss ta en titt på den **avancerade redigeraren**, med de frågesteg som ä
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 
-Power BI Desktop innehåller en omfattande uppsättning formelkategorier. Mer information och en fullständig referens för alla frågeredigerarformler finns i [Power Query-formelkategorier](https://support.office.com/en-in/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819).
+Power BI Desktop innehåller en omfattande uppsättning formelkategorier. Mer information och en fullständig referens för alla frågeredigerarformler finns i [Power Query-formelkategorier](https://support.office.com/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819).
 
 Frågeredigerarens formelkategorier är följande:
 

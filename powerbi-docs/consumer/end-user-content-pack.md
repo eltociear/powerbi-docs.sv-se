@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e74c8db22a2a1c4ddb188ae13a8ca5df9f862f3
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 432e38ffdcb92ee1d2cf1d62f7f34863d748885b
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507725"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679120"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Hitta och anslut till ett innehållspaket för organisationen
 
@@ -38,7 +38,7 @@ Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller sam
 ## <a name="connect-to-an-organizational-content-pack"></a>Anslut till ett innehållspaket för organisationen
 * Välj **Hämta nu** för att ansluta till innehållspaketet och lägg till det på din aktiva arbetsyta. Nya instrumentpaneler, rapporter, Excel-arbetsböcker och datauppsättningar är stjärnmarkerade med en gul asterisk.
 
-Om innehållspaketet har en Excel-arbetsbok, kan du se en varning om att du inte har behörighet att visa arbetsboken. Be i sådana fall ägaren till innehållspaketet att [dela arbetsboken med dig i OneDrive för företag](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+Om innehållspaketet har en Excel-arbetsbok, kan du se en varning om att du inte har behörighet att visa arbetsboken. Be i sådana fall ägaren till innehållspaketet att [dela arbetsboken med dig i OneDrive för företag](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 Innehållspaketet är låst. Du kan [spara din egen kopia av instrumentpanelen och rapporter](../service-organizational-content-pack-copy-refresh-access.md). 
 

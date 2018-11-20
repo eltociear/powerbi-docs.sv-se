@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4854f05e3394d7b4eed2c67de8bbca5266a12ae3
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909328"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157412"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
 
@@ -23,7 +23,7 @@ Med Office 365 kan företag sälja Office 365 paketerat och integrerat med sina 
 
 Om du är intresserad av att köpa Power BI tillsammans med din prenumeration på Office 365, rekommenderar vi att du kontaktar din partner. Om din partner inte erbjuder Power BI för tillfället finns det olika alternativ som du kan överväga.
 
-# <a name="work-with-your-partner-to-purchase-power-bi"></a>Köp Power BI i samarbete med din partner
+## <a name="work-with-your-partner-to-purchase-power-bi"></a>Köp Power BI i samarbete med din partner
 
 Om du vill köpa en prenumeration på Power BI Pro eller Power BI Premium kan du arbeta med din partner för se vilka alternativ du har:
 
@@ -31,7 +31,7 @@ Om du vill köpa en prenumeration på Power BI Pro eller Power BI Premium kan du
 
 * Partnern kan överföra dig till en modell där du kan köpa Power BI direkt från Microsoft eller en annan partner som erbjuder Power BI.
 
-# <a name="purchase-from-microsoft-or-another-channel"></a>Köp från Microsoft eller en annan kanal
+## <a name="purchase-from-microsoft-or-another-channel"></a>Köp från Microsoft eller en annan kanal
 
 Beroende på relationen med din partner kan du köpa Power BI direkt från Microsoft eller en annan partner. Du kan kontrollera om du kan lägga till Power BI-prenumerationer på Office 365-administrationsportalen (kräver medlemskap i rollen global administratör eller faktureringsadministratör).
 

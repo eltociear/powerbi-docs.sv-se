@@ -1,21 +1,21 @@
 ---
 title: 'Exempel på detaljhandelsanalys för Power BI: ta en rundtur'
 description: 'Exempel på detaljhandelsanalys för Power BI: ta en rundtur'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 6955bc0c41e5a6a145d2101ab527d753f98d5c61
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: c07c33cb6ae859c9cf202ae67119dbfb8dd45e26
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550085"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717687"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: ta en rundtur
 

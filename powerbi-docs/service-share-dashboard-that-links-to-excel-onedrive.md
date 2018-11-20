@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 28934a525c332344b31de599363fb41126a18cfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ccb73b05998eded0c32742deed57b2bee35fbbb6
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548774"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679097"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Dela en Power BI-instrumentpanel som är länkad till en Excel-fil på OneDrive
 I Power BI kan du [ansluta till Excel-arbetsböcker på OneDrive för företag](service-excel-workbook-files.md) och fästa paneler på en instrumentpanel från den arbetsboken. När du delar instrumentpanelen eller skapar ett innehållspaket som innehåller instrumentpanelen:
 
 * Dina kolleger kan se panelerna utan att de behöver behörighet för själva arbetsboken. Så du kan skapa ett innehållspaket där du vet att dina kolleger kan se panelerna som skapats från Excel-arbetsboken på OneDrive.
-* Om du klickar på panelen öppnas arbetsboken i Power BI. Arbetsboken öppnas bara om dina kolleger har minst [läsbehörighet](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) till arbetsboken på OneDrive för företag.
+* Om du klickar på panelen öppnas arbetsboken i Power BI. Arbetsboken öppnas bara om dina kolleger har minst [läsbehörighet](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) till arbetsboken på OneDrive för företag.
 
 ## <a name="share-a-dashboard-that-contains-workbook-tiles"></a>Dela en instrumentpanel som innehåller arbetsbokspaneler
 Om du vill dela en instrumentpanel som länkar tillbaka till en Excel-arbetsbok på OneDrive för företag, kan du läsa mer i [Dela en instrumentpanel](service-share-dashboards.md). Skillnaden är att du har möjlighet att ändra behörighet för den länkade Excel-arbetsboken innan du delar den.
@@ -30,7 +30,7 @@ Om du vill dela en instrumentpanel som länkar tillbaka till en Excel-arbetsbok 
 
 1. Ange e-postadresserna till dina kolleger.
 2. Om du vill låta dina kolleger se Excel-arbetsboken från Power BI väljer du **Gå till OneDrive för företag och ställ in arbetsboksbehörigheter**.
-3. På OneDrive [ändrar du behörighet](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
+3. På OneDrive [ändrar du behörighet](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
 4. Välj **Dela**.
 
 >[!NOTE]
@@ -46,7 +46,7 @@ När du [publicerar ett innehållspaket](service-organizational-content-pack-cre
    
     ![Excel-arbetsbok i ett innehållspaket](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Välj **Gå till OneDrive för företag och ställ in arbetsboksbehörigheter**.
-4. På OneDrive [ändrar du behörighet](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
+4. På OneDrive [ändrar du behörighet](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
 5. Välj **Publicera**.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Dela en instrumentpanel från en Power BI-arbetsyta
