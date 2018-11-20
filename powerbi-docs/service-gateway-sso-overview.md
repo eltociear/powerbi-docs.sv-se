@@ -1,5 +1,5 @@
 ---
-title: Använda enkel inloggning (SSO) från Power BI till lokala datakällor
+title: Använda enkel inloggning (SSO) till lokala datakällor
 description: Konfigurera din gateway för att aktivera enkel inloggning (SSO) från Power BI till lokala datakällor.
 author: mgblythe
 ms.author: mblythe
@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/15/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: c489ff0e1b764a6ee3dc026e8294132dc8f49025
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: b728ba6ebaab81ea475f51b9134de34c37d4149b
+ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474760"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51580504"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Översikt över enkel inloggning (SSO) för gatewayer i Power BI
 
@@ -25,8 +25,10 @@ Vi stöder för närvarande följande datakällor:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
 * SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) och [SAML](service-gateway-sso-saml.md)
+* SAP BW ([Kerberos](service-gateway-sso-kerberos.md)
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
+* Impala ([Kerberos](service-gateway-sso-kerberos.md))
 
 När en användare interagerar med en DirectQuery-rapport i Power BI-tjänsten, kan varje åtgärd relaterad till korsfiltrering, sektor, sortering och rapportredigering resultera i frågor som körs i realtid mot den underliggande lokala datakällan.  När enkel inloggning har konfigurerats för datakällan körs frågorna under identiteten för den användare som interagerar med Power BI (det vill säga via webbläsaren eller Power BI Mobile-appar). Därmed ser varje användare exakt de data som han eller hon har behörighet för i den underliggande datakällan – med enkel inloggning konfigurerad finns det ingen delad datacachelagring för olika användare.
 

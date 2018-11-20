@@ -9,12 +9,12 @@ ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 99c84aff932c7ce56a4aaa81d71e4583bce3e4c2
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641759"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266080"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Resurshantering och -optimering för Microsoft Power BI Premium-kapacitet
 
@@ -26,6 +26,7 @@ Den här artikeln beskriver hur Power BI Premium hanterar resurser. Artikeln inn
 
 * De datamängder som läses in i minnet
 * Uppdatering av datamängd (både schemalagd och på begäran)
+* Arbetsbelastningar som kapaciteten har stöd för
 * Rapportfrågor
 
 När en begäran skickas ut mot en publicerad datauppsättning i din kapacitet, läses den datauppsättningen in från beständig lagring (det kallas även avbildningsinläsning). Att hålla datauppsättningen inläst i minnet hjälper att ge snabba svar på framtida frågor mot den här datauppsättningen. Utöver det minne som behövs för att hålla datamängden inläst i minnet förbrukar rapportfrågor och uppdateringar av datamängden ytterligare minne.
@@ -51,6 +52,10 @@ Datauppsättningar kan uppdateras enligt ett schema eller på begäran av använ
 Om nödvändig minneskapacitet inte är tillgänglig trots avlägsning, sätts uppdateringen i kö för återförsök. Tjänsten försöker igen tills den lyckas eller en ny uppdateringsåtgärd startar.
 
 Om en interaktiv fråga utfärdas till en datauppsättning i kapaciteten och det inte finns tillräckligt med minne på grund av en pågående uppdatering, misslyckas den begäran och behöver göras om av användaren.
+
+### <a name="workloads"></a>Arbetsbelastningar
+
+Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **Dataflöden**. Om de är aktiverade kan de här arbetsbelastningarna påverka minnesanvändningen i din kapacitet. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Processorresurshantering i premium-kapaciteten
 

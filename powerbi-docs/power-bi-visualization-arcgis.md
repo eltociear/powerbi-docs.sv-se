@@ -8,15 +8,15 @@ featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18e33fa4767eb0d9e457589ea3fa3b61721dce51
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548038"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266057"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri
 De här självstudierna har skrivits utifrån en person som skapar en ArcGIS-karta. När en skapare delar en ArcGIS-karta med en kollega, kan kollegan visa och interagera med kartan men inte spara några ändringar. Mer information om hur du visar en ArcGIS-karta finns i [Interagera med ArcGIS-kartor](visuals/power-bi-visualizations-arcgis.md).
@@ -26,7 +26,7 @@ Kombinationen av ArcGIS-kartor och Power BI tar mappningen längre än till bara
  Du kan inte skapa en ArcGIS-karta på en mobil enhet, men du kan visa den och interagera med den. Se [Interagera med ArcGIS-kartor](visuals/power-bi-visualizations-arcgis.md).
 
 > [!TIP]
-> GIS står för Geographic Information Science.
+> GIS står för Geographic Information Systems.
 
 
 I exemplet nedan används en mörkgrå arbetsyta för att visa regional försäljning som en termisk karta mot ett demografiskt skikt för den disponibla medianinkomsten 2016. Som du kommer märka när du läser vidare ger användningen av ArcGIS-kartor tillgång till nästan obegränsad utökad mappningskapacitet, demografiska data och även mer övertygande kartvisualiseringar så att du kan förmedla ditt budskap på bästa sätt.

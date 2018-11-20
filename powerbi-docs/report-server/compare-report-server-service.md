@@ -4,22 +4,24 @@ description: I den här artikeln jämförs funktionerna i Power BI-rapportserver
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 11/06/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: f78638097ea33f9954f3db78c117f1935a68530b
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: a693eef85f7eafe7cfac2a02cbccc346201a6f13
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908541"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507702"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
 Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa viktiga skillnader. Den här tabellen beskriver vad som är vad.
+
+## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Funktioner i Power BI-rapportservern och i Power BI-tjänsten
 
 | Funktioner | Power BI-rapportserver | Power BI-tjänst | Anteckningar
 |---------|---------|---------|---------|
@@ -39,14 +41,14 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Frågor och svar | Nej | Ja | [Frågor och svar i Power BI-tjänsten och Power BI Desktop](../consumer/end-user-q-and-a.md) 
 | Snabba insikter | Nej | Ja | [Automatiskt skapa datainsikter med Power BI](../consumer/end-user-insights.md) 
 | Analysera i Excel | Nej | Ja | [Analysera i Excel](../service-analyze-in-excel.md) 
-| Sidnumrerade rapporter | Ja | Nej | Sidnumrerade rapporter är inte tillgängliga i Power BI-tjänsten, men du kan [fästa sidnumrerade rapportobjekt på Power BI-instrumentpaneler](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
+| Sidnumrerade rapporter | Ja | Ja | [Sidnumrerade rapporter är tillgängliga i Power BI-tjänsten](../paginated-reports-report-builder-power-bi.md) som en förhandsversion
 | Power BI-mobilappar | Ja | Ja | [Översikt över Power BI-mobilappar](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ArcGIS-mappar | Nej | Ja | [ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri](../power-bi-visualization-arcgis.md)
 | E-postprenumerationer för Power BI-rapporter | Nej | Ja | [Prenumerera på en rapport eller en instrumentpanel](../consumer/end-user-subscribe.md) i Power BI-tjänsten 
 | E-postprenumerationer för sidnumrerade rapporter | Ja | Nej | [E-postleverans i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Datavarningar | Nej | Ja | [Datavarningar](../service-set-data-alerts.md) i Power BI-tjänsten
 | Säkerhet på radnivå | Endast via datakälla i DirectQuery-läge | Tillgängligt i både DirectQuery- (datakälla) och Import-läge | [Säkerhet på radnivå (RLS)](../service-admin-rls.md) med Power BI 
-| Helskärmsläge | Nej | Ja | [Helskärmsläge](../service-fullscreen-mode.md) i Power BI-tjänsten 
+| Helskärmsläge | Nej | Ja | [Helskärmsläge](../consumer/end-user-focus.md) i Power BI-tjänsten 
 | Avancerat Office 365-samarbete | Nej | Ja | [Samarbeta på en apparbetsyta](../service-collaborate-power-bi-workspace.md) med Office 365 
 | R-visualiseringar | Nej | Ja | [Skapa visuella R-objekt](../visuals/service-r-visuals.md) i Power BI-tjänsten  
 | Förhandsversionsfunktioner | Nej | Ja | [Anmäl dig till förhandsversionsfunktioner](../consumer/end-user-preview-features.md) i Power BI-tjänsten 

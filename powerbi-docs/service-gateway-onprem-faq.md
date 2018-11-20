@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b4ecec3b2e53c2fea0fcbb7d78d1114da1a105ed
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299641"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273320"
 ---
 # <a name="on-premises-data-gateway-faq"></a>Vanliga frågor och svar om lokal datagateway
 <!-- Shared FAQ shared Include -->
@@ -68,6 +68,9 @@ ms.locfileid: "34299641"
 
 **Fråga:** Kommer gatewayen att fungera med ExpressRoute?  
 **Svar:** Ja! Mer information om ExpressRoute och Power BI finns i [Power BI och ExpressRoute](service-admin-power-bi-expressroute.md).
+
+**Fråga:** Jag använder R-skript. Stöds detta?
+**Svar**: R-skript stöds endast för personligt läge.
 
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway](service-gateway-onprem.md)  

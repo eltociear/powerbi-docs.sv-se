@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003212"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266218"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Övervaka Power BI Premium- och Power BI Embedded-kapaciteter
 
 Den här artikeln innehåller en översikt över övervakning av mått för dina Power BI Premium-kapaciteter. Genom att övervaka kapacitetsförbrukningen kan du hantera din kapacitet på ett genomtänkt sätt.
 
-Du kan övervaka kapaciteten med appen Power BI Premium Capacity Metrics eller i administrationsportalen. Vi rekommenderar appen, eftersom det ger mycket mer detaljerad information, men den här artikeln beskriver båda alternativen.
+Du kan övervaka kapaciteten med appen Power BI Premium Capacity Metrics eller i administrationsportalen. Vi rekommenderar appen, eftersom det ger mycket mer detaljerad information, men den här artikeln beskriver båda alternativen. **Den aktuella versionen av appen är 1.8 (den släpptes den 7 november 2018).**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -33,11 +33,11 @@ Du kan gå direkt till [Premium Capacity Metrics-appen](https://app.powerbi.com/
 
     ![Gå till Appar](media/service-admin-premium-monitor-capacity/apps.png)
 
-2. Till höger klickar du på **Hämta appar**.
+1. Till höger klickar du på **Hämta appar**.
 
-3. I kategorin **Appar** söker du efter **Power BI Premium Capacity Metrics-appen**.
+1. I kategorin **Appar** söker du efter **Power BI Premium Capacity Metrics-appen**.
 
-4. Prenumerera för att installera appen.
+1. Prenumerera för att installera appen.
 
 Nu när du har installerat appen kan du se mått som gäller kapaciteterna i din organisation. Låt oss ta en titt på några av de viktigaste måtten som är tillgängliga.
 
@@ -47,72 +47,155 @@ När du öppnar appen visas först en instrumentpanel med en sammanfattning av a
 
 ![Instrumentpanelen med mätvärden för app](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-Rapporten har tre flikar som vi beskriver i detalj i nedanstående avsnitt.
+Gå till den underliggande rapporten genom att klicka på instrumentpanelen. Rapporten har sex flikar som vi kommer att beskriva i detalj i följande avsnitt.
 
-* **Filters applied to all pages** (Filter som används för alla sidor): Gör det möjligt att filtrera de övriga sidorna i rapporten till en specifik kapacitet.
-* **Datauppsättningar**: Innehåller detaljerade mätvärden om hälsotillståndet för datauppsättningarna i din kapacitet.
-* **System**: Tillhandahåller den totala uppmätta kapaciteten, inklusive minne och hög CPU-användning. 
+* **Filter**: Gör det möjligt för dig att filtrera övriga sidor i rapporten avseende en viss kapacitet.
 
-### <a name="filters-applied-to-all-pages-tab"></a>Filter som används för fliken med alla sidor
+* **Dataumängder**: Innehåller detaljerade mätvärden om hälsotillståndet för Power BI-datamängderna i dina kapaciteter.
 
-På fliken **Filters applied to all pages** (Filter som används för alla sidor) kan du välja en kapacitet, en datauppsättning och/eller ett datumintervall under de senaste sju dagarna. Filter används sedan för alla relevanta sidor och paneler i rapporten. Om inga filter är markerade använder rapporten standardinställningarna för att visa den senaste veckans mått på varje kapacitet som du äger.
+* **Sidnumrerade rapporter**: Innehåller detaljerade mätvärden om hälsotillståndet för sidnumrerade rapporter i dina kapaciteter.
+
+* **Dataflöden**: Innehåller detaljerade uppdateringsmätvärden för dataflöden i dina kapaciteter.
+
+* **System**: Innehåller mätvärden för den totala kapaciteten, inklusive minne och hög CPU-användning.
+
+* **Visningsnamn och ID:n**: Namn, ID:n och ägare för kapaciteter, arbetsytor och arbetsbelastningar.
+
+### <a name="filters-tab"></a>Fliken Filter
+
+Med fliken **Filter** kan du välja kapacitet, datumintervall och andra alternativ. Filter används sedan för alla relevanta sidor och paneler i rapporten. Om inga filter är markerade använder rapporten standardinställningarna för att visa den senaste veckans mått på varje kapacitet som du äger.
 
 ![Fliken Filter](media/service-admin-premium-monitor-capacity/filters-tab.png)
 
+* **(A)**  Välj **Datamängder**, **Sidnumrerade rapporter**, eller **Dataflöden** att ange filter för varje arbetsbelastning.
+
+* **(B)**  Namn och **(C)** information uppdateras baserat på vad du väljer i **(A)**, så att du kan filtrera arbetsbelastning efter namn. På bilden ovan har t.ex. **Dataflöden** valts, och **Dataflödesnamn** och **Dataflödesinformation** visas.
+
+* **(D)**  Kapacitetsinformation som indikerar om datamänder, sidnumrerade rapporter eller dataflöden har aktiverats för en kapacitet.
+
 ### <a name="datasets-tab"></a>Fliken Datauppsättningar
 
-Fliken **Datauppsättningar** innehåller de flesta måtten i appen. Använd knapparna högst upp på fliken för att navigera till olika områden: **Sammanfattning**, **Uppdateringar**, **Frågevaraktigheter**, **Frågeväntan** och **Datauppsättningar**.
+Använd knapparna högst upp på fliken **Datamängder** om du vill navigera till olika områden: **Sammanfattning**, **Uppdateringar**, **Frågevaraktigheter**, **Frågeväntan** och **Datamängder**.
 
 ![Fliken Datauppsättningar](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Området Sammanfattning
 
-Området **Sammanfattning** innehåller en vy över dina kapaciteter baserat på entiteter, systemresurser och arbetsbelastningar i datauppsättningen.
+Området **Sammanfattning** innehåller en vy över dina kapaciteter baserat på entiteter, systemresurser och arbetsbelastningar i datauppsättningen. Följande mått visas.
 
-| | **Mått** |
+| **Rapportavsnitt** | **Mått** |
 | --- | --- |
 | **Entiteter** | * Antalet kapaciteter som du äger<br> * Det exakta antalet datauppsättningar i din kapacitet<br> * Det exakta antalet arbetsytor i din kapacitet |
 | **System** | * Den genomsnittliga minnesanvändningen i GB under de senaste sju dagarna<br> * Högsta minnesförbrukning i GB under de senaste sju dagarna och den lokala tid då det hände<br> * Antalet gånger som CPU har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på tre minuter långa buckets<br> * De flesta gånger CPU överskred 80 % under de senaste sju dagarna, uppdelat på en timme långa buckets och den lokala tid då det hände<br> * Antalet gånger som DirectQuery- och Live-anslutningar har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på tre minuter långa buckets<br> * De flesta gånger DirectQuery- och Live-anslutningar har överskridit 80 % under de senaste sju dagarna, uppdelat på en timme långa buckets och den lokala tid då det hände |
-| **Arbetsbelastningar för datauppsättningar** | * Totalt antal uppdateringar under de senaste sju dagarna<br> * Totalt antal lyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar på grund av minnesbrist<br> * Genomsnittlig uppdateringstid mätt i minuter, den tid det tar att slutföra åtgärden<br> * Genomsnittlig väntetid för uppdatering mätt i minuter, genomsnittlig fördröjning mellan den schemalagda tiden och åtgärdsstart<br> * Totalt antal frågor som körts under de senaste sju dagarna<br> * Totalt antal lyckade frågor under de senaste sju dagarna<br> * Totalt antal misslyckade frågor under de senaste sju dagarna<br> * Genomsnittlig frågetid mätt i minuter, den tid det tar att slutföra åtgärden<br> * Totalt antal modeller som tagits bort på grund av minnestryck |
+| **Arbetsbelastningar för datauppsättningar** | * Totalt antal uppdateringar under de senaste sju dagarna<br> * Totalt antal lyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar på grund av minnesbrist<br> * Genomsnittlig uppdateringstid är den tid i minuter det tar att slutföra åtgärden<br> * Genomsnittlig väntetid för uppdatering är den genomsnittliga fördröjningen, mätt i minuter, mellan den schemalagda tiden och åtgärdens start<br> * Totalt antal frågor som körts under de senaste sju dagarna<br> * Totalt antal lyckade frågor under de senaste sju dagarna<br> * Totalt antal misslyckade frågor under de senaste sju dagarna<br> * Genomsnittlig frågevaraktighet är den tid i minuter det tar att slutföra åtgärden<br> * Totalt antal modeller som tagits bort på grund av minnestryck |
 |  |  |
 
 #### <a name="refreshes-area"></a>Området Uppdaterar
 
-Området **Uppdaterar** anger slutförda uppdateringar, lyckade mätningar, genomsnittlig/maximal väntetid för uppdaterings och genomsnittlig/maximal uppdateringstid per datauppsättning under de senaste sju dagarna. De två diagrammen längst ner visar uppdateringarna jämfört med minnesförbrukning i GB och genomsnittliga väntetider uppdelade i en timme långa buckets, rapporterat i lokal tid. De översta stapeldiagrammen anger de fem främsta datauppsättningarna efter den genomsnittliga tiden som det tog att uppdatera datauppsättningen (uppdateringstid) och genomsnittlig väntetid för uppdateringen. Om det förekommer många toppar för väntan på uppdatering tyder det på att kapaciteten körs för hårt.
+Området **Uppdateringar** innehåller följande mått.
+
+| **Rapportavsnitt** | **Mått** |
+| --- | --- |
+| **Uppdateringstillförlitlighet** | * Totalt antal: Totalt antal uppdateringar för varje datauppsättning<br> * Tillförlitlighet: Procentandelen uppdateringar som har slutförts för varje datauppsättning<br> * Genomsnittlig väntetid: Den genomsnittliga fördröjningen, mätt i minuter, mellan den schemalagda tiden och starten av en uppdatering av datauppsättningen<br> * Maxväntetid: Maximal väntetid för datauppsättningen, mätt i minuter <br> * Genomsnittlig varaktighet: Genomsnittlig varaktighet för uppdatering för datauppsättningen, mätt i minuter<br> * Maximal varaktighet: Varaktigheten för långvarigaste uppdateringen av datauppsättningen, mätt i minuter |
+| **De 5 främsta datauppsättningarna efter genomsnittlig uppdateringsvaraktighet** | * De fem datauppsättningarna med den längsta genomsnittliga uppdateringsvaraktigheten, mätt i minuter |
+| **De 5 främsta datauppsättningarna efter genomsnittlig väntetid** | * De fem datauppsättningarna med den längsta genomsnittliga uppdateringsväntetiden, mätt i minuter |
+| **Genomsnittlig uppdateringsväntetid uppdelad i timmar** | * Den genomsnittliga uppdateringsväntetiden, uppdelad i timbucketar, rapporterad i lokal tid. Många toppar med långa uppdateringsväntetider tyder på att kapaciteten körs för hårt. |
+| **Antal uppdateringar och minnesförbrukning per timma** | * Lyckade och misslyckade åtgärder och minnesförbrukning, uppdelade i timbucketar, rapportede i lokal tid |
+|  |  |
 
 #### <a name="query-durations-area"></a>Frågevaraktighetsområde
 
-Området **Frågevaraktigheter** visar ut det totala antalet frågor som körs och den genomsnittliga/maximala varaktigheten i millisekunder. Dessa data är indelade i datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna. De nedre diagrammen visar antalet frågor och genomsnittlig varaktighet (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i timbucketar uttryckta i lokal tid.
+Området **Frågevaraktighet** innehåller följande mått.
 
-Det övre högra diagrammet visar frågevaraktighetens distributionshistogram. Histogrammet bucketeras genom att frågevaraktigheter rapporteras i millisekunder i följande kategorier: intervall på < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek, 1-3 sek, 3-10 sek, 10-30 sek och > 30 sek.
-
-Diagrammet nere till höger visar de fem populäraste datauppsättningarna med den genomsnittliga frågevaraktighet som krävdes för att slutföra frågorna.
-
-Lång frågevaraktighet och långa väntetider är en tydlig indikation på kapaciteten utsätts för mycket hög belastning. Det kan också innebära att en enskild datauppsättning orsakar problem och ytterligare utredning krävs.
+| **Rapportavsnitt** | **Mått** |
+| --- | --- |
+| **Frågevaraktighet** | * Data i det här avsnittet är indelade i datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna<br> * Totalt: Det totala antal frågor som körs för datauppsättningen<br> * Medelvärde: Den genomsnittliga frågevaraktigheten för datauppsättningen, mätt i millisekunder<br> * Max: Varaktigheten för den långvarigaste frågan i datauppsättningen, mätt i millisekunder|
+| **Frågevaraktighetsfördelning** | * Frågevaraktighetens histogram bucketeras efter frågevaraktighet (i millisekunder) i följande kategorier: intervall på < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek, 1-3 sek, 3-10 sek, 10-30 sek och > 30 sek. Lång frågevaraktighet och långa väntetider är en tydlig indikation på kapaciteten utsätts för mycket hög belastning. Det kan också innebära att en enskild datauppsättning orsakar problem och ytterligare utredning krävs. |
+| **De 5 främsta datauppsättningarna efter genomsnittlig varaktighet** | * De fem datauppsättningarna med den längsta genomsnittliga frågevaraktigheten, mätt i millisekunder |
+| **Direct Query/Live-anslutningar (> 80 % utnyttjande)** | * De tider som en direktfråga eller live-anslutning har överskridit 80 % CPU-belastning, uppdelat i timbucketar, rapporterat i lokal tid |
+| **Frågevaraktighetsfördelning per timma** | * Antal frågor och genomsnittlig varaktighet (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i timbucketar uttryckta i lokal tid |
+|  |  |
 
 #### <a name="query-waits-area"></a>Frågeväntansområde
 
-Området **Frågeväntan** innehåller listor med totalt antal körda frågor, totalt antal väntande live-frågor/direkta frågor, genomsnittlig/längsta väntetid angivet i millisekunder. Dessa data är indelade i datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna. De nedre diagrammen visar antalet väntande frågor och genomsnittlig väntetid (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i timbucketar uttryckta i lokal tid.
+Området **Frågeväntan** innehåller följande mått.
 
-Det övre högra diagrammet visar distributionshistogrammet för frågans väntetid. Histogrammet bucketeras genom att frågevaraktigheter rapporteras i millisekunder i följande kategorier: intervall på <= 50 ms , 50-100 ms , 100-200 ms , 200-400 ms 400 ms-1 sek, 1-5 sek och > 5 sek.
-
-Diagrammet nere till höger visar de fem populäraste datauppsättningarna med den genomsnittliga väntetid som krävdes för att starta frågorna.
+| **Rapportavsnitt** | **Mått** |
+| --- | --- |
+| **Fråga väntetider** | * Data i det här avsnittet är indelade i datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna<br> * Totalt: Det totala antal frågor som körs för datauppsättningen<br> * Antal väntande: Det antal frågor i den datauppsättning som väntade på systemresurser innan körningen startades <br> * Medelvärde: Den genomsnittliga frågeväntetiden för datauppsättningen, mätt i millisekunder<br> * Max: Varaktigheten för den längst väntande frågan i datauppsättningen, mätt i millisekunder|
+| **Väntetidsfördelning** | * Frågevaraktighetens histogram bucketeras efter frågevaraktigheter (i millisekunder) i följande kategorier: intervall på <= 50 ms , 50-100 ms , 100-200 ms , 200-400 ms 400 ms-1 sek, 1-5 sek och > 5 sek |
+| **De 5 främsta datauppsättningarna efter genomsnittlig väntetid** | * De fem datauppsättningarna med den längsta genomsnittliga väntetiden för att börja köra en fråga, mätt i millisekunder |
+| **Antal väntande frågor och väntetid per timma** | * Antal väntande frågor och genomsnittlig väntetid (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i timbucketar uttryckta i lokal tid |
+|  |  |
 
 #### <a name="datasets-area"></a>Området Datamängder
 
-Området **Datauppsättningar** visar slutförda datauppsättningar som du vill ta bort på grund av minnestryck per timme.
+Området **Datauppsättningar** innehåller följande mått.
+
+| **Rapportavsnitt** | **Mått** |
+| --- | --- |
+| **Antal borttagna datauppsättningar** | * Totalt: Det totala antalet *borttagna* datauppsättningar för respektive kapacitet. När en kapacitet drabbas av minnesbelastning avlägsnar noden en eller flera datauppsättningar från minnet. Datamängder som är inaktiva (utan frågor/uppdateringsåtgärder som körs för tillfället) avlägsnas först. Avlägsnandeordern baseras sedan på ett mått på ”minst nyligen använd” (LRU, Least Recently Used).|
+| **Antal borttagna datauppsättningar och minnesförbrukning per timma** | * Borttagna datauppsättningar jämfört med minnesförbrukning i GB, uppdelat i timbucketar, uttryckt i lokal tid |
+|  |  |
+
+### <a name="paginated-reports-tab"></a>Fliken Sidnumrerade rapporter
+
+Fliken **Sidnumrerade rapporter** innehåller detaljerade mätvärden om hälsotillståndet för sidnumrerade rapporter i dina kapaciteter.
+
+![Fliken Sidnumrerade rapporter](media/service-admin-premium-monitor-capacity/paginated-reports-tab.png)
+
+Fliken **Sidnumrerade rapporter** fliken innehåller följande mått.
+
+| **Rapportavsnitt** | **Mått** |
+| --- | --- |
+| **Total användning** | * Totalt antal visningar: Det antal gånger som rapporten har setts av en användare<br> * Antal rader: Antalet rader med data i rapporten<br> * Hämtning (medelvärde): Den genomsnittliga tid det tar att hämta data för rapporten, uttryckt i millisekunder. Långa varaktigheter kan indikera långsamma frågor eller andra problem med datakällan. <br> * Bearbetning (medelvärde): Den genomsnittliga tid det tar att bearbeta data för en rapport, uttryckt i millisekunder<br>* Återgivning (medelvärde): Den genomsnittliga tid det tar att återge en rapport i webbläsaren, uttryckt i millisekunder<br> * Total tid: Den tid det tar för alla faser i en rapport, uttryckt i millisekunder|
+| **De 5 främsta rapporterna efter genomsnittlig datahämtningstid** | * De fem rapporterna med den längsta genomsnittliga datahämtningstiden, uttryckt i millisekunder |
+| **De 5 främsta rapporterna efter genomsnittlig rapportbearbetningstid** | * De fem rapporterna med den längsta genomsnittliga rapportbearbetningstiden, uttryckt i millisekunder |
+| **Varaktighet per timma** | * Datahämtning jämfört med tiden för bearbetning och återgivning, uppdelat i entimmasbucketar, utryckt i lokal tid |
+| **Resultat per timma** | * Lyckade och misslyckade åtgärder och minnesförbrukning, uppdelade i timbucketar, rapportede i lokal tid |
+|  |  |
+
+### <a name="dataflows-tab"></a>Fliken Dataflöden
+
+Fliken **Dataflöden** innehåller detaljerade uppdateringsmätvärden för dataflöden i dina kapaciteter.
+
+![Fliken Dataflöden](media/service-admin-premium-monitor-capacity/dataflows-tab.png)
+
+Fliken **Dataflöden** innehåller följande mått.
+
+| **Rapportavsnitt** | **Mått** |
+| --- | --- |
+| **Uppdatera** | * Totalt: Totalt antal uppdateringar för respektive dataflöde<br> * Tillförlitlighet: Procentandelen uppdateringar som har slutförts för respektive dataflöde<br> * Genomsnittlig väntetid: Den genomsnittliga fördröjningen, mätt i minuter, mellan den schemalagda tiden och starten av en uppdatering av dataflödet<br> * Maxväntetid: Maximal väntetid för dataflödet, mätt i minuter <br> * Genomsnittlig varaktighet: Genomsnittlig varaktighet för uppdatering för dataflödet, mätt i minuter<br> * Maximal varaktighet: Varaktigheten för långvarigaste uppdateringen av dataflödet, mätt i minuter |
+| **De 5 främsta dataflödena efter genomsnittlig uppdateringsvaraktighet** | * De fem dataflöden med den längsta genomsnittliga uppdateringsvaraktigheten, mätt i minuter |
+| **De 5 främsta dataflödena efter genomsnittlig väntetid** | * De fem dataflödena med den längsta genomsnittliga uppdateringsväntetiden, mätt i minuter |
+| **Genomsnittlig uppdateringsväntetid uppdelad i timmar** | * Den genomsnittliga uppdateringsväntetiden, uppdelad i timbucketar, rapporterad i lokal tid. Många toppar med långa uppdateringsväntetider tyder på att kapaciteten körs för hårt. |
+| **Antal uppdateringar och minnesförbrukning per timma** | * Lyckade och misslyckade åtgärder och minnesförbrukning, uppdelade i timbucketar, rapportede i lokal tid |
+|  |  |
 
 ### <a name="system-tab"></a>Fliken System
 
-Fliken **System** visar hög CPU-användning (antalet gånger då 80 % utnyttjande har överskridits), hög användning av direkta frågor/live-anslutningar och minnesförbrukning.
+Fliken **System** visar CPU-användning och minnesförbrukning för alla kapaciteter och arbetsbelastningar.
 
-![Systemrapport för Premium](media/service-admin-premium-monitor-capacity/system-tab.png)
+![Fliken System](media/service-admin-premium-monitor-capacity/system-tab.png)
+
+Fliken **System** innehåller följande mått.
+
+| **Rapportavsnitt** | **Mått** |
+| --- | --- |
+| **CPU-mått (> 80 % utnyttjande)** | * Antalet gånger som CPU har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på tre minuter långa buckets |
+| **Minnesförbrukning** | * Minnesförbrukning under de senaste sju dagarna, uppdelad i bucketar på tre minuter |
+|  |  |
+
+### <a name="display-names-and-ids-tab"></a>Fliken Visningsnamn och ID:n
+
+Fliken**Visningsnamn och ID:n** innehåller namn, ID:n och ägare för kapaciteter, arbetsytor och arbetsbelastningar.
 
 ## <a name="monitor-power-bi-embedded-capacity"></a>Övervaka Power BI Embedded-kapacitet
 
 Du kan också använda appen Power BI Premium Capacity Metrics för att övervaka *A SKU*-kapaciteter i Power BI Embedded. De kapaciteterna visas i rapporten så länge du är administratör för kapaciteten. Uppdatering av rapporten misslyckas dock såvida inte du ger vissa behörigheter till Power BI för dina A-SKU:
 
 1. Öppna kapaciteten i Azure Portal.
+
 1. Klicka på **Åtkomstkontroll (IAM)**, och Lägg till ”Power BI Premium”-appen till läsarrollen. Om det inte går att hitta appen genom att ange namnet kan du också lägga till den med hjälp av dess klient-ID: cb4dc29f-0bf4-402a-8b30-7511498ed654.
 
     ![Behörigheter för Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)

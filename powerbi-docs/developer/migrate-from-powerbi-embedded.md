@@ -7,12 +7,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: f53b7e02ac3f744a7eb0fa7dd74b7144a434a42f
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: ff9218a84ba9c0055e965f4b000b73a490d250a5
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271864"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297192"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar.
@@ -79,7 +79,7 @@ Du måste registrera ditt program med Azure AD för att kunna göra REST API-anr
 Du bör registrera programmet med programmets **huvudkonto**.
 
 ## <a name="create-app-workspaces-required"></a>Skapa apparbetsytor (obligatoriskt)
-Du kan utnyttja apparbetsytor för att ge bättre isolering om programmet betjänar flera kunder. Instrumentpaneler och rapporter skulle isoleras mellan kunderna. Du kan sedan använda ett Power BI-konto per apparbetsyta och därmed isolera programanvändandet ytterligare mellan dina kunder.
+Du kan använda apparbetsytor för att få bättre isolering om programmet betjänar flera kunder. Instrumentpaneler och rapporter skulle isoleras mellan kunderna. Du kan sedan använda ett Power BI-konto per apparbetsyta och därmed isolera programanvändandet ytterligare mellan dina kunder.
 
 > [!IMPORTANT]
 > Du kan inte använda en personlig arbetsyta för att utnyttja inbäddningsmöjligheten för användare som inte är Power BI-användare.

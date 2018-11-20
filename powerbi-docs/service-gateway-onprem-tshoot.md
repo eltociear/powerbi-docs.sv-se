@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2a4fb3bdf4e1041ceb90cde9b6c5f26fcb9a3871
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
+ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101656"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51580550"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Felsökning av den lokala datagatewayen
 
@@ -103,17 +103,14 @@ Du kan åtgärda problemet genom att följa stegen nedan.
 3. Installera om gatewayen.
 4. Du kan också använda återställningsnyckeln för att återställa en befintlig gateway.
 
-### <a name="support-for-tls-1112"></a>Stöd för TLS 1.1/1.2
+## <a name="support-for-tls-12"></a>Stöd för TLS 1.2
 
-Från och med augusti 2017-uppdateringen använder den lokala datagatewayen TLS (Transport Layer Security) 1.1 eller 1.2 för att kommunicera med **Power BI-tjänsten** som standard. Tidigare versioner av den lokala datagatewayen använder TLS 1.0 som standard. Du måste uppgradera installationerna av den lokala datagatewayen till versionen för augusti 2017 eller senare för att säkerställa att gatewayen fortsätter att fungera som den ska.
+Den lokala datagatewayen använder som standard TLS (Transport Layer Security) 1.2 för att kommunicera med Power BI-tjänsten. För att säkerställa att all gatewaytrafik använder TLS 1.2, kan du behöva lägga till eller ändra följande registernycklar på den dator som kör gatewaytjänsten:
 
->[!NOTE]
->Stöd för TLS 1.0 upphörde den 1 november 2017.
-
-Det är viktigt att observera att TLS 1.0 fortfarande stöds av den lokala datagatewayen före den 1 november 2017 och att den används av gatewayen som en reservmekanism. För att se till att all gatewaytrafik använder TLS 1.1 eller 1.2 (och för att förhindra användningen av TLS 1.0 på din gateway), måste du lägga till eller ändra följande registernycklar på den dator som kör gatewaytjänsten:
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
 
 > [!NOTE]
 > När du lägger till eller ändrar registernycklarna tillämpas ändringen på alla .NET-program. Information om registerändringar som påverkar TLS för andra program finns i [Registerinställningar för Transport Layer Security (TLS)](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).

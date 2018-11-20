@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: 3e125061766d6ade0daeaacb208d3070d8e9bd9b
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: b03e9da87aa507812045378b1fa3e581b7de159c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973268"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266126"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -193,7 +193,7 @@ Följande bild visar menyn **Arkiv** för en rapport när inställningen **Skriv
 
 ## <a name="content-pack-and-app-settings"></a>Inställningar för innehållspaket och appar
 
-### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicera innehållspaket och appar i hela organisationen
+### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicera innehållspaket och appar för hela organisationen
 
 Användare i organisationen kan publicera innehållspaket och appar för hela organisationen snarare än specifika grupper. [Läs mer](service-organizational-content-pack-manage-update-delete.md)
 
@@ -297,6 +297,15 @@ Användare i organisationen har åtkomst till arbetsytor där de kan ansluta til
 
 Användare i organisationen kan importera data till tjänsten, t.ex. genom att publicera rapporter från Power BI Desktop, överföra Power BI-rapportfiler och ansluta till data direkt från tjänsten. [Läs mer](desktop-upload-desktop-files.md)
 
+## <a name="dataflow-settings-preview"></a>Dataflödesinställningar (förhandsversion)
+
+### <a name="create-and-use-dataflows-preview"></a>Skapa och använda dataflöden (förhandsversion)
+
+Användare i organisationen kan skapa och använda dataflöden. [Läs mer](service-dataflows-overview.md)
+
+> [!NOTE]
+> Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
+
 ## <a name="capacity-settings"></a>Kapacitetsinställningar
 
 ### <a name="power-bi-premium"></a>Power BI Premium
@@ -319,7 +328,7 @@ Som administratör kan du visa de inbäddningskoder som har genererats för din 
 
 ![Bädda in koder i administrationsportalen för Power BI](media/service-admin-portal/embed-codes.png)
 
-## <a name="organization-visuals"></a>Visuella organisationsobjekt
+## <a name="organization-visuals"></a>Organisationens visuella objekt
 
 Med fliken **organisationsobjekt** kan du distribuera och hantera anpassade visuella objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](power-bi-custom-visuals-organization.md)
 

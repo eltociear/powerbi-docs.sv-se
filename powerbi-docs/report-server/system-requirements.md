@@ -1,23 +1,23 @@
 ---
 title: Maskin- och programvarukrav för att installera Power BI-rapportservern
-description: Här hittar du minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
+description: I den här artikeln beskrivs minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: 397bc6f1582ff49f665f25559925d5b7e19e0fd5
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101334"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507916"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
-Här hittar du minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
+I den här artikeln beskrivs minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Krav på processor, minne och operativsystem
 
@@ -43,18 +43,19 @@ SQL Server används som värd för rapportserverdatabaserna. SQL Server Database
 * SQL Server 2014
 * SQL Server 2012
 
-Om du vill skapa rapportserverdatabasen på en fjärrdator måste du konfigurera anslutningen för att använda ett domänanvändarkonto eller ett tjänstkonto som har åtkomst till nätverket. Om du vill använda en fjärrinstans av SQL Server, ska du noga överväga vilka autentiseringsuppgifter som rapportservern ska använda för att ansluta till SQL Server-instansen. Mer information finns i [Konfigurera en databasanslutning för rapportservern](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
+När du skapar rapportserverdatabasen på en fjärrdator måste du konfigurera anslutningen så att den använder ett domänanvändarkonto eller ett tjänstkonto med nätverksåtkomst. Om du vill använda en fjärrinstans av SQL Server, ska du noga överväga vilka autentiseringsuppgifter som rapportservern ska använda för att ansluta till SQL Server-instansen. Mer information finns i [Konfigurera en databasanslutning för rapportservern](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
 ## <a name="considerations"></a>Att tänka på:
 Power BI-rapportservern installerar standardvärden för att konfigurera de grundläggande inställningar som krävs för att göra en rapportserver driftklar. Den har följande krav:
 
 * En SQL Server Database Engine måste vara tillgänglig efter installationen och innan du konfigurerar databasen för rapportservern. Database Engine-instansen ska vara värd för den rapportserverdatabas som Report Services-konfigurationshanteraren skapar. Database Engine krävs inte för det faktiska installationsförloppet.
-* Det användarkonto som används för att köra installationsprogrammet måste vara medlem i den lokala administratörsgruppen.
-* Användarkontot som används för Report Services-konfigurationshanteraren måste ha behörighet att komma åt och skapa databaser på Database Engine-instansen som är värd för rapportserverdatabaserna.
+- I [Reporting Services-funktioner som stöds av SQL Server-versioner](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) beskrivs skillnaderna mellan de olika SQL Server-versionerna.
+* Det användarkonto som kör installationsprogrammet måste vara medlem i den lokala administratörsgruppen.
+* Användarkontot som kör Report Services-konfigurationshanteraren måste ha behörighet att komma åt och skapa databaser på den Database Engine-instans som är värd för rapportserverdatabaserna.
 * Installationsprogrammet måste kunna använda standardvärdena för att reservera de URL:er som ger åtkomst till rapportservern och webbportalen. Dessa värden är port 80, ett starkt jokertecken, och de virtuella katalognamnen i formatet **Rapportserver** och **Rapporter**.
 
 ## <a name="read-only-domain-controller-rodc"></a>Skrivskyddad domänkontrollant (RODC)
- Rapportservern kan installeras i en miljö som har en skrivskyddad domänkontrollant (RODC) men Reporting Services behöver åtkomst till en domänkontrollant som inte är skrivskyddad för att fungera korrekt. Om Reporting Services bara har åtkomst till en RODC, kan det uppstå fel när du försöker administrera tjänsten.
+ Du kan installera rapportservern i en miljö som har en skrivskyddad domänkontrollant (RODC). Reporting Services måste dock ha åtkomst till en domänkontrollant som inte är skrivskyddad om det ska fungera korrekt. Om Reporting Services bara har åtkomst till en RODC, kan det uppstå fel när du försöker administrera tjänsten.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-rapporter och realtidsanslutningar för Analysis Services
 Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionella instanser. Analysis Services-servern måste vara av rätt version och utgåva för att fungera korrekt.

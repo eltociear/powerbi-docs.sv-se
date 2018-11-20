@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909255"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297238"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,26 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="october-2018"></a>Oktober 2018
+
+### <a name="paginated-report-preview-all-devices"></a>Sidnumrerad rapportförhandsversion (alla enheter)
+
+Sidnumrerade rapporter är nu tillgängliga på Power BI-tjänsten. Användare med åtkomst till sidnumrerade rapporter i Power BI-tjänsten har även åtkomst till rapporterna från sina mobilappar. 
+
+Läs Power BI [-blogginlägget om sidnumrerade rapporter i mobilen](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+
+### <a name="shared-credentials-ios"></a>Delade autentiseringsuppgifter (iOS)
+
+Aldrig har varit enklare att logga in till Power BI från din mobilapp. Vi har förenklat inloggningsprocessen med hjälp av delade autentiseringsuppgifter, vilket innebär att du kan använda autentiseringsuppgifter för andra Office 365-appar när du autentiserar dig i Power BI-tjänsten.
+
+### <a name="in-app-urls-ios"></a>URL:er i app (iOS) 
+
+Länkar i rapporter som pekar på andra Power BI-artefakter öppnas nu direkt i appen. Detta innebär att du t.ex. kan skapa anpassade navigeringsflöden genom att länka från en rapport till en instrumentpanel.
+
+### <a name="ios12-and-watchos-5-support"></a>Support för iOS12 och watchOS 5 
+
+Vi har uppdaterat Power BI-appen för iOS så att den ska fungera smidigt med det nya operativsystemet på mobila enheter och klockor.
 
 ## <a name="september-2018"></a>September 2018
 
@@ -41,10 +61,11 @@ Läs [Power BI-blogginlägget om instrumentpanelskommentarer](https://powerbi.mi
 
 Enkel inloggning (SSO) är en av de mest efterfrågade funktionerna för Power BI Mobile för Windows. Nu kan du använda ditt primära organisationskonto för att inte bara logga in på dina domänanslutna mobila Windows-enheter utan även smidigt logga in på Power BI-tjänsten. Läs mer om [enkel inloggning och Windows-mobilappar](mobile-windows-10-app-single-sign-on-sso.md).
 
+## <a name="previous-months"></a>Föregående månader
 
-## <a name="july-2018"></a>Juli 2018
+### <a name="july-2018"></a>Juli 2018
 
-### <a name="ios-and-android-only"></a>Enbart iOS och Android
+#### <a name="ios-and-android-only"></a>Enbart iOS och Android
 
 **Delade filter**
 
@@ -55,127 +76,125 @@ Nu kan du få rapporter med delade filter och utsnitt.
 När du visar en rapport i liggande på din mobila enhet kan ha du samma bakgrundsbilder som du har i Power BI på webben.
 
 
-## <a name="june-2018"></a>Juni 2018
+### <a name="june-2018"></a>Juni 2018
 
-### <a name="full-canvas-reports"></a>Fullständiga arbetsyterapporter
+#### <a name="full-canvas-reports"></a>Fullständiga arbetsyterapporter
 
 Åtgärdsfälten högst upp och längst ned försvinner kort efter det att din rapport läses in, vilket innebär att du kan se mer av rapporten direkt.
 
-### <a name="increased-phone-report-canvas-size"></a>Större storlek på rapportarbetsytor i telefonen
+#### <a name="increased-phone-report-canvas-size"></a>Större storlek på rapportarbetsytor i telefonen
 
 Vi har ökat storleken på rapportarbetsytor i telefonen, så att det finns utrymme för fler visuella objekt än tidigare.
 
-## <a name="may-2018"></a>Maj 2018
+### <a name="may-2018"></a>Maj 2018
 
-### <a name="mobile-drill-through-all-mobile-apps"></a>Detaljerad information för mobil: alla mobilappar
+#### <a name="mobile-drill-through-all-mobile-apps"></a>Detaljerad information för mobil: alla mobilappar
 
 Du kan detaljgranska från en vald datapunkt till en annan rapportsida i mobilapparna, förutsatt att rapportens författare har definierat den åtgärden. 
 
-### <a name="back-button-all-mobile-apps"></a>Knappen Bakåt: alla mobilappar
+#### <a name="back-button-all-mobile-apps"></a>Knappen Bakåt: alla mobilappar
 
 När du navigerar i en rapport genom att svepa, väljer en rapportsida i åtgärdsfältet eller använder detaljerad sökning, tar nu knappen Bakåt dig tillbaka till den sida som du senast var på. 
 
-### <a name="dashboard-themes-all-mobile-apps"></a>Teman för instrumentpaneler: alla mobilappar
+#### <a name="dashboard-themes-all-mobile-apps"></a>Teman för instrumentpaneler: alla mobilappar
 
 När rapportförfattarna anpassar instrumentpanelsteman i Power BI-tjänsten, ändras även utseendet på instrumentpanelen i mobilappen. Dock visas inte bakgrundsbilderna.
 
-### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Konfiguration av Power BI iOS-mobilappens fjärråtkomst till en rapportserver
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Konfiguration av Power BI iOS-mobilappens fjärråtkomst till en rapportserver
 
 IT-administratören kan nu använda MDM-verktyget för att konfigurera åtkomst för Power BI iOS-mobilappen till en rapportserver. Mer information finns i avsnittet om [hur du fjärrkonfigurerar åtkomsten från iOS-mobilappen för Power BI till en rapportserver](../../report-server/configure-powerbi-mobile-apps-remote.md).
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
 
 Power BI för Mixed Reality-appen finns nu i Microsoft Store. Visa dina instrumentpaneler och rapporter i den virtuella världen, eller placera ut dem och visa dem på specifika platser i din miljö. Se den nya videon [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) (Introduktion till Power BI på HoloLens) eller läs artikeln om den nya [Power BI för Mixed Reality-appen](mobile-mixed-reality-app.md).
 
 
-## <a name="april-2018"></a>April 2018
+### <a name="april-2018"></a>April 2018
 
-### <a name="mobile-drill-down-and-drill-up"></a>Mobil ökad och minskad detaljnivå
+#### <a name="mobile-drill-down-and-drill-up"></a>Mobil ökad och minskad detaljnivå
 
 Du kan nu öka och minska detaljnivån för visuella rapportobjekt på din mobila enhet. Om du vill öppna den här nya funktionen trycker du på och håller ned knappbeskrivningens meny och utforska sedan dina data mer i detalj genom att trycka på knapparna. Mer om [att öka och minska detaljnivån i mobila appar](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 
-### <a name="persistent-filters"></a>Beständiga filter
+#### <a name="persistent-filters"></a>Beständiga filter
 
 Vi nyligen uppdaterat rapportfiltren och utsnitten, så att de sparas automatiskt från Power BI på webben till Power BI-mobilappen. Nu sparas de filter och utsnitt som du konfigurerar i mobilappen automatiskt till Power BI på webben.
 
 
-## <a name="march-2018"></a>Mars 2018
+### <a name="march-2018"></a>Mars 2018
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
 
 Vi har skapat appen Power BI for Mixed Reality för att göra data tillgängliga där du är. Visa dina instrumentpaneler och rapporter i den virtuella världen, eller placera ut dem och visa dem på specifika platser i din miljö. Läs mer om den nya [appen Power BI for Mixed Reality](mobile-mixed-reality-app.md).
 
-### <a name="share-reports-and-dashboards-externally"></a>Dela rapporter och instrumentpaneler externt
+#### <a name="share-reports-and-dashboards-externally"></a>Dela rapporter och instrumentpaneler externt
 
 Dela instrumentpaneler och rapporter med användare utanför organisationen direkt från appen. Extern delning är aktiverad för både organisationskonton och sociala konton. 
 
-### <a name="persistent-filters"></a>Beständiga filter
+#### <a name="persistent-filters"></a>Beständiga filter
 
 När du konfigurerar filter och utsnitt i Power BI på webben, så sparas dina filterval även i din mobilapp, så du kan ta vid där du slutade.
 
-### <a name="refresh-reports-on-the-ipad"></a>Uppdatera rapporter på iPad
+#### <a name="refresh-reports-on-the-ipad"></a>Uppdatera rapporter på iPad
 
 Power BI-rapporter har nu en uppdateringsknapp i iPad-appen.
 
-## <a name="february-2018"></a>Februari 2018
+### <a name="february-2018"></a>Februari 2018
 
-### <a name="share-reports"></a>Dela rapporter
+#### <a name="share-reports"></a>Dela rapporter
 
 Nu kan du dela en rapport direkt från mobilapparna. Läs mer om att [dela instrumentpaneler och rapporter från mobilappar](mobile-share-dashboard-from-the-mobile-apps.md)
 
-### <a name="improved-tooltips"></a>Förbättrade knappbeskrivningar
+#### <a name="improved-tooltips"></a>Förbättrade knappbeskrivningar
 
 När du trycker på och håller ned ett visuellt objekt i en rapport för att visa knappbeskrivningar, kan du nu dra fingret över det visuella objektet om du vill visa mer information om varje datapunkt längs vägen.
 
-## <a name="january-2018"></a>Januari 2018
+### <a name="january-2018"></a>Januari 2018
 
-### <a name="report-favorites"></a>Rapportfavoriter
+#### <a name="report-favorites"></a>Rapportfavoriter
 
 Tagga rapporter som favoriter så att de visas på sidan **Favoriter**. Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 
-### <a name="view-shared-reports"></a>Visa delade rapporter
+#### <a name="view-shared-reports"></a>Visa delade rapporter
 
 Nu när någon delar en rapport med dig, så listas den på sidan **Delat med mig**.
 
-### <a name="improved-hyperlink-support"></a>Förbättrat stöd för hyperlänkar
+#### <a name="improved-hyperlink-support"></a>Förbättrat stöd för hyperlänkar
 
 Nu kan du trycka på länkarna i anpassade visuella objekt om du vill öppna dem i din mobila webbläsare.
 
-### <a name="intune-integration-android"></a>Intune-integration (Android)
+#### <a name="intune-integration-android"></a>Intune-integration (Android)
 
 Stöd för villkorlig åtkomst med hantering av mobila enheter Microsoft Intune.
 
-## <a name="december-2017"></a>December 2017
+### <a name="december-2017"></a>December 2017
 
-### <a name="improved-security-management"></a>Förbättrad säkerhetshantering 
+#### <a name="improved-security-management"></a>Förbättrad säkerhetshantering 
 
 Vi har lagt till stöd för villkorlig åtkomst (CA) och Microsoft Intune-hantering av mobilenheter (MDM) för Android-enheter för att bättre kunna skydda din organisations data. Detta finns redan tillgängligt på iOS.
 
-### <a name="improved-permission-management"></a>Förbättrad behörighetshantering
+#### <a name="improved-permission-management"></a>Förbättrad behörighetshantering
 
 Vi har gjort några ändringar som ska ge en bättre hantering av användarbehörigheter för datauppsättningar, instrumentpaneler och rapporter.
 
-### <a name="auto-installed-apps"></a>Automatiskt installerade appar
+#### <a name="auto-installed-apps"></a>Automatiskt installerade appar
 
 Du behöver inte installera en del av apparna i Power BI överhuvudtaget. Power BI-appskapare i din organisation kan skapa *appar* som innehåller en samling med instrumentpaneler och rapporter. Sedan kan de publicera appen och ställa in att den ska installeras automatiskt i Power BI-tjänsten och Power BI-mobilappar. När en app är inställd att installeras åt dig, visas den automatiskt i din **Appar**-meny:
 
 ![Appar i Power BI-mobilapp](./media/mobile-whats-new-in-the-mobile-apps/power-bi-apps-mobile-apps.png)
 
-## <a name="november-2017"></a>November 2017
-### <a name="iphone-x-optimization"></a>Optimering av iPhone X
+### <a name="november-2017"></a>November 2017
+#### <a name="iphone-x-optimization"></a>Optimering av iPhone X
 
 Vi har optimerat applayouten för iPhone X så att du kan utforska dina data med stil på varje enhet.
 
-## <a name="october-2017"></a>Oktober 2017
-### <a name="filters-for-phone-reports-in-android"></a>Filter för telefonrapporter i Android
+### <a name="october-2017"></a>Oktober 2017
+#### <a name="filters-for-phone-reports-in-android"></a>Filter för telefonrapporter i Android
 
 Om du skapar en rapport med telefonoptimerade sidor i Power BI Desktop och rapporten innehåller filter, kan du nu använda dessa filter i telefonrapporten på din Android. Läs mer om filter för Power BI-rapporter på Android.
 
-### <a name="show-data-in-reports"></a>Visa data i rapporter
+#### <a name="show-data-in-reports"></a>Visa data i rapporter
 
 Du kan växla visuella objekt i dina rapporter till en tabellvy för att visa talen bakom datan. För att komma åt den här funktioner, trycker du på Visa data från visuella objekt-menyn på din rapport, eller ikonen ny på den expanderade åtgärds-menyn för visuella objekt.
-
-## <a name="previous-months"></a>Föregående månader
 
 ### <a name="september-2017"></a>September 2017
 #### <a name="filters-for-phone-reports-in-iphones"></a>Filter för telefonrapporter i iPhone

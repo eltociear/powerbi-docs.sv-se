@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 093339e820c45fcbd586bd1eb6d8933b6e5743f8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298215"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273343"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Lokal datagateway (personligt läge)
 Du kan använda lokala datakällor och skapa Power BI-rapporter och -instrumentpaneler med hjälp av en gateway. En **gateway** är programvara som möjliggör åtkomst till data som lagras i ett privat lokalt nätverk och sedan låter dig använda dessa data i onlinetjänster, till exempel **Power BI-tjänsten**. En **lokal datagateway (personligt läge)** är en nyligen utgiven uppdatering för Power BI-gateway som låter enskilda användare installera en gateway på den lokala datorn och få åtkomst till lokala data.
@@ -132,7 +132,7 @@ Stöd för Spark är planerat för den andra hälften av kalenderåret 2017.
   * **Svar**: om du har uppdaterat dina rapporter med en aktuell gateway kommer dina uppdateringar att avbrytas. Det enda sättet att ställa in ett nytt uppdateringsschema är att installera och konfigurera den nya gatewayen.
 * Jag använder R-skript. Stöds detta?
   
-  * **Svar**: Vi kommer snart att lägga till stöd för R-skript.
+  * **Svar**: R-skript har stöd för personligt läge.
 * Varför ser jag inte på meddelandet för att uppdatera min gateway i **Power BI-tjänsten**?
   
   * **Svaret**: detta beror mest sannolikt på att du har en eller flera datauppsättningar som omfattar en datakälla som inte stöds för tillfället.

@@ -4,19 +4,18 @@ description: Använda ArcGis-kartan i läsvyn som en Power BI-rapportkonsument
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-tags: power bi, service, desktop, mobile
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.author: mihart
-ms.openlocfilehash: dd7bca6782327700f087b6b9ca60a9654fa362d8
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 0454d2ea0e69a77482d9ba9587497679819daf06
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003281"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266034"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagera med ArcGIS-kartor i Power BI
 Det här avsnittet skrivs utifrån perspektivet för en person som *använder* en ArcGIS-karta i Power BI-tjänsten, Desktop eller i en mobil lösning. När en skapare har delat en ArcGIS-karta med dig, finns det många sätt att interagera med den.  Mer information om hur du skapar en ArcGIS-karta finns i [självstudierna om ArcGIS-kartor från Esri](../power-bi-visualization-arcgis.md).
@@ -24,7 +23,7 @@ Det här avsnittet skrivs utifrån perspektivet för en person som *använder* e
 Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara presentation av punkter på en karta – helt enkelt till en helt ny nivå. De tillgängliga alternativen för grundläggande kartor, platstyper, teman, symbolformat och referensskikt skapar fantastiska informativa kartvisualiseringar. Kombinationen av redigerbara dataskikt (som insamlade data) på en karta med spatial analys ger en bättre förståelse av dina data i visualiseringen.
 
 > [!TIP]
-> GIS står för Geographic Information Science.
+> GIS står för Geographic Information System.
 > 
 
 Det exempel som vi använder är samma ArcGIS-karta som skapades i [självstudierna om ArcGIS-kartor från Esri](../power-bi-visualization-arcgis.md). Den tittar på förra årets försäljning per stad och använder en grundläggande gatukarta, bubbelsymboler för att representera storlek och ett referensskikt för hushållens genomsnittliga inkomst. Kartan innehåller tre stift och en körtidsradie (i lila).

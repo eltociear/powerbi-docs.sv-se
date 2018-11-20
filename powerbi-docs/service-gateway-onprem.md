@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 2758ef661b70c53a37104c67c4012be79725990e
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101495"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297146"
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -118,7 +118,7 @@ Gå till [Konfigurera proxyinställningar för Power BI-gatewayerna](service-gat
 [Hantera din datakälla – Oracle](service-gateway-onprem-manage-oracle.md)  
 [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
-[Lokala datagatewayar (personligt läge) – den nya versionen av den personliga gatewayen](service-gateway-personal-mode.md)
+[Lokal datagateway (personligt läge) – en ny version av den personliga gatewayen](service-gateway-personal-mode.md)  
 [Konfigurera proxyinställningar för den lokala datagatewayen](service-gateway-proxy.md)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

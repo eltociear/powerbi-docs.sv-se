@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: a36b0524006144bfa9fbd24d9ff88b42a1acb3d4
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 39429d0f09431da3f860bf0454843c65ce07a524
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641653"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266011"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 
@@ -53,6 +53,44 @@ När du köper Power BI Premium- eller Embedded-SKU:er får din klientorganisati
 I de flesta fall behöver användarna inte känna till att de befinner sig i en Premium-kapacitet. Deras instrumentpaneler och rapporter fungerar helt enkel. Som en visuell indikation visas en diamantikon bredvid arbetsytor som är i en Premium-kapacitet.
 
 ![Diamantikon som visar att arbetsytan backas upp av Premium-kapacitet](media/service-admin-premium-manage/premium-workspace.png)
+
+## <a name="configure-workloads"></a>Konfigurera arbetsbelastningar
+
+Tänk på en arbetsbelastning i Power BI som en av de många tjänster som du kan visa användarna. Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet.
+
+Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **Dataflöden**. Du aktiverar de här arbetsbelastningarna i Power BI-adminstrationsportalen eller via Power BI REST API. Du kan också ange maximalt minne varje arbetsbelastning kan använda, så att du kan styra hur de olika arbetsbelastningarna påverkar varandra.
+
+### <a name="enable-workloads-in-the-power-bi-admin-portal"></a>Aktivera arbetsbelastningar i Power BI-administratörsportalen
+
+Följ dessa steg om du vill aktivera arbetsbelastningar.
+
+1. Under **Kapacitetsinställningar** väljer du en kapacitet.
+
+1. Under **FLER ALTERNATIV** expanderar du **Arbetsbelastningar**.
+
+1. Aktivera en eller flera arbetsbelastningar och ange ett värde för **Max minne**.
+
+    ![Konfigurera arbetsbelastningar i administratörsportalen](media/service-admin-premium-manage/admin-portal-workloads.png)
+
+1. Välj **Tillämpa**.
+
+### <a name="default-memory-settings"></a>Standardinställningar för minne
+
+I följande tabell visas standard- och minimivärden för minnet, baserat på de olika [kapacitetsnoder](service-premium.md#premium-capacity-nodes) som finns tillgängliga. Minne allokeras dynamiskt till dataflöden, men den är statiskt allokerad till sidnumrerade rapporter. Mer information finns i nästa avsnitt, [Överväganden för sidnumrerade rapporter](#considerations-for-paginated-reports).
+
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Sidnumrerade rapporter | Saknas | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
+| Dataflöden | 15 % standard, 8 % minimum  | 15 % standard, 4 % minimum  | 15 % standard, 2 % minimum | 15 % standard, 1 % minimum  |
+| | | | | |
+
+### <a name="considerations-for-paginated-reports"></a>Överväganden för sidnumrerade rapporter
+
+Om du använder arbetsbelastningen för sidnumrerade rapporter bör du ha följande i åtanke.
+
+* **Minnesallokering i sidnumrerade rapporter**: Med sidnumrerade rapporter kan du köra din egen kod vid rapportåtergivning (till exempel ändra textfärg dynamiskt baserat på innehåll). Det innebär att vi skyddar Power BI Premium-kapaciteten genom att köra sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Vi tilldelar det maximala minne som du anger till det här området, oavsett om arbetsbelastningen är aktiv eller inte. Om du använder Power BI-rapporter eller dataflöden i samma kapacitet, bör du ange ett så lågt minne för de sidnumrerade rapporterna att det inte påverkar andra arbetsbelastningar negativt.
+
+* **Sidnumrerade rapporter är inte tillgängliga**: I sällsynta fall kan arbetsbelastningen för sidnumrerade rapporter bli otillgänglig. I det här fallet visar arbetsbelastningen ett feltillstånd i administratörsportalen och användarna uppnår tidsgränser vid rapportåtergivning. För att lösa det här problemet kan du inaktivera arbetsbelastningen och sedan aktivera den igen.
 
 ## <a name="monitor-capacity-usage"></a>Övervaka kapacitetsanvändning
 

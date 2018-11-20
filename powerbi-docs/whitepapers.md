@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: bff5e42b239fee572ea0a453301f154da3b999b3
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223063"
+ms.locfileid: "51266103"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -22,6 +22,7 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 
 | White paper | Beskrivning | Datum |
 | --- | --- | --- |
+| [Power BI och dataflöden](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Det här faktabladet beskriver dataflöden i detalj och beskriver funktioner och initiativ bakom dataflödesegenskaper och -funktioner. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både i dess ursprungsform och hur den kommer att utvecklas. | Oktober 2017 |
 | [Power BI Premium planering och distribution](https://aka.ms/Premium-Capacity-Planning-Deployment)| Det här dokumentet innehåller vägledning och bästa praxis för planering och distribution av Premium-kapacitet för väldefinierade arbetsbelastningar.| November 2017 |
 | [Planera kapacitet för inbäddade analysverktyg med Power BI Premium](https://aka.ms/pbiewhitepaper) |Det här dokumentet innehåller vägledning för att hjälpa apputvecklare/ISV:er att fastställa den lämpligaste kapaciteten för verksamheten. | Oktober 2017 |

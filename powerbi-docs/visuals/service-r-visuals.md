@@ -1,5 +1,5 @@
 ---
-title: Skapa avancerade analyser och visualiseringar med hjälp av R-skript i Power BI
+title: Skapa avancerade analyser och visualiseringar med hjälp av R-skript
 description: Använd R-skript i Power BI om du vill skapa avancerade analyser och visualiseringar
 author: mihart
 manager: kvivek
@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3407458cfe6e395a5a209e136af1d4c9a7aa6a6
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 409a2ee486d0153e0dec2f715ff0e2ea19e236d7
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566359"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297123"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Skapa visuella R-objekt i Power BI-tjänsten
 Power BI-tjänsten stöder visning av och interaktion med visuella objekt som skapats med R-skript. Visualiseringar som har skapats med R-skript, vanligtvis kallade *visuella R-objekt*, kan användas för avancerad datautformning och analyser som t.ex. prognoser som bygger på den omfattande analys- och visualiseringskraften i R.
 
 > [!NOTE]
-> [R-programmeringsspråket](https://www.r-project.org/) är ett av de mest använda programmeringsspråken bland statistiker, dataanalytiker och affärsanalytiker. R-språket har ett community för öppen källkod som erbjuder över 7 000 tilläggspaket och populära [R-användargrupper](http://msdsug.microsoft.com/). Den version av R som distribuerats i Power BI-tjänsten är *Revolution R Open 3.2.2.*
+> [R-programmeringsspråket](https://www.r-project.org/) är ett av de mest använda programmeringsspråken bland statistiker, dataanalytiker och affärsanalytiker. R-språket har ett community för öppen källkod som erbjuder över 7 000 tilläggspaket och populära R-användargrupper. Den version av R som distribuerats i Power BI-tjänsten är *Revolution R Open 3.2.2.*
 > 
 > 
 
