@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/06/2018
-ms.openlocfilehash: d6f3f654574e9cca081ae2f8191fd7b9fc017afd
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 3d9e8e46fdd84edbeb5b4ff5e8f7efe4a4291049
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223567"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679265"
 ---
 # <a name="troubleshoot-power-bi-custom-visuals"></a>Felsöka anpassade visuella objekt i Power BI
 
@@ -37,7 +37,7 @@ Kontrollera att du har aktiverat det på inställningarna för Power BI om du in
 
 **Det går inte att kontakta den visuella servern**
 
-Kör den visuella servern `pbiviz start` på kommandoraden i terminalen från roten av ditt visuella projekt. Om servern körs är det troligt att dina SSL-certifikat inte har installerats korrekt.
+Kör den visuella servern `pbiviz start` på kommandoraden i terminalen från roten av ditt visuella projekt. Om servern inte körs är det troligt att dina SSL-certifikat inte har installerats korrekt.
 
 ## <a name="next-steps"></a>Nästa steg
 

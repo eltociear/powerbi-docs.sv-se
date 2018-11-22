@@ -770,7 +770,7 @@ items:
       items:
       - name: Dataförberedelser med självbetjäning för dataflöden (förhandsversion)
         href: service-dataflows-overview.md
-      - name: Skapa och använd dataflöden (förhandsversion)
+      - name: Skapa och använda dataflöden (förhandsversion)
         href: service-dataflows-create-use.md
       - name: Beräknade entiteter med Power BI Premium (förhandsversion)
         href: service-dataflows-computed-entities-premium.md
@@ -812,6 +812,8 @@ items:
       href: paginated-reports-faq.md
   - name: Gör så här
     items:
+    - name: Ange data direkt i en sidnumrerad rapport
+      href: paginated-reports-enter-data.md
     - name: Skapa en inbäddad datakälla
       href: paginated-reports-embedded-data-source.md
     - name: Skapa en inbäddad datauppsättning
@@ -1074,6 +1076,8 @@ items:
         href: report-server/getting-around.md
       - name: Skapa en sidnumrerad rapport för en rapportserver
         href: report-server/quickstart-create-paginated-report.md
+      - name: Ange data direkt i en sidnumrerad rapport
+        href: paginated-reports-enter-data.md
       - name: Arbeta med KPI:er
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: 'Åtkomst till delade datauppsättningar som OData-flöden '
@@ -1251,9 +1255,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 1fdc2ca3ea80f8f975d0b2dac6a3cee70f194ef6
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 6be9e4865dd91817bd4b73c2763d6f7d374e1013
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718101"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289299"

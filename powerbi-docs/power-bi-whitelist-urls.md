@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: 7b57e0d5e303f2b342e2d7750741717b178a8f4e
-ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
+ms.openlocfilehash: e62d39f13e2b171456d667ec9683acd4ebdc5516
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50222115"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157136"
 ---
 # <a name="power-bi-urls"></a>URL:er för Power BI
 
@@ -69,7 +69,7 @@ För att hämta data från specifika datakällor, till exempel OneDrive, måste 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
 | 1 | **Krävs:** AppSource (interna eller externa appar i Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Krävs:** logga in och hämta data för innehållspaket | *.github.com  | TCP 443 |
+| 2 | **Valfritt:** logga in och hämta data för innehållspaket | Beror på vilka innehållspaket som används | Beror på vilka innehållspaket som används |
 | 3 | **Valfritt:** Importera filer från OneDrive – personlig | Se [webbplatsen för URL:er och portar som krävs](https://docs.microsoft.com/onedrive/required-urls-and-ports) | Saknas |
 | 4 | **Valfritt:** Självstudievideon Power BI på 60 sekunder | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Valfritt:** PubNub-strömmande datakällor | Se [PubNub-dokumentationen](https://support.pubnub.com/support/solutions/articles/14000043522) | Saknas |

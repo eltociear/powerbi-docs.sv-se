@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 11/14/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cc1f348deb222ce080ac41ac2574f4fb1437e8db
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: cdc406ddd9c086114ca118130bb4973737de3ed1
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909025"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717905"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Skapa de nya arbetsytorna (förhandsversion) i Power BI
 
@@ -168,7 +168,7 @@ Vissa funktioner fungerar annorlunda i de nya apparbetsytorna jämfört med de a
 
 Följande problem är kända och korrigeringar är under utveckling:
 
-- Kostnadsfria användare eller användargrupper som har lagts till som mottagare för prenumerationer på e-postmeddelanden får kanske inte e-postmeddelandena, även om de borde få dem. Problemet uppstår när den nya arbetsytan är i en Premium-kapacitet men Min arbetsyta för den användare som skapar prenumerationen inte finns i en Premium-kapacitet. Om Min arbetsyta är i en Premium-kapacitet får de kostnadsfria användarna och användargrupperna e-postmeddelanden.
+- Kostnadsfria användare eller användargrupper som har lagts till som mottagare för prenumerationer på e-postmeddelanden får kanske inte e-postmeddelandena, även om de borde få dem. Problemet uppstår när en av de nya arbetsytorna är i en Premium-kapacitet men Min arbetsyta för den användare som skapar prenumerationen inte finns i en Premium-kapacitet. Om Min arbetsyta är i en Premium-kapacitet får de kostnadsfria användarna och användargrupperna e-postmeddelanden.
 - När en arbetsyta flyttas från en Premium-kapacitet till delad kapacitet fortsätter i vissa fall kostnadsfria användare och användargrupper att få e-postmeddelanden, även om de inte borde få dem. Problemet uppstår när Min arbetsyta för den användare som skapade prenumerationen är i en Premium-kapacitet.
 
 ## <a name="next-steps"></a>Nästa steg

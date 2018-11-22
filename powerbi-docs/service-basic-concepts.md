@@ -1,7 +1,7 @@
 ---
 title: Grundläggande begrepp för Power BI-tjänsten
 description: Power BI-tjänstens arbetsytor, instrumentpaneler, rapporter, datauppsättningar och arbetsböcker.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
@@ -9,20 +9,20 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 07/19/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a95dae913c2069fa3768d66c55d2b1358640000
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 9b02bdfd2c0025977dbb69eae44f4e976a527a30
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641929"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717779"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundläggande begrepp för Power BI-tjänsten
 
 Den här artikeln förutsätter att du redan har [registrerat dig för Power BI](service-self-service-signup-for-power-bi.md)-tjänsten och [lagt till vissa data](service-get-data.md).
 
-När du öppnar Power BI-tjänsten, visas en ***instrumentpanel***. Instrumentpaneler är något som särskiljer Power BI-tjänsten från Power BI Desktop.
+När du öppnar Power BI-tjänsten visas en **_instrumentpanel_**. Instrumentpaneler är något som särskiljer Power BI-tjänsten från Power BI Desktop.
 
 ![](media/service-basic-concepts/completenewest.png)
 
@@ -45,7 +45,7 @@ Eller så kanske du vill se den här videon innan du läser resten av artikeln. 
 
 
 ## <a name="power-bi-concepts"></a>Power BI-begrepp
-De fyra huvudsakliga byggblocken i Power BI är ***instrumentpaneler***, ***rapporter***, ***arbetsböcker*** och ***datauppsättningar***. Och alla är uppdelade i ***arbetsytor***. Det är viktigt att förstå sig på arbetsytorna innan vi går vidare till de fyra byggstenarna, så vi börjar där.
+De fyra huvudsakliga byggblocken i Power BI är **_instrumentpaneler_**, **_rapporter_**, **_arbetsböcker_** och **_datauppsättningar_**. Alla är uppdelade i **_arbetsytor_**. Det är viktigt att förstå sig på arbetsytorna innan vi går vidare till de fyra byggstenarna, så vi börjar där.
 
 ## <a name="workspaces"></a>Arbetsytor
 Arbetsytor är containrar för instrumentpaneler, rapporter, arbetsböcker och datauppsättningar i Power BI. Det finns två typer av arbetsytor: *Min arbetsyta* och *apparbetsytor*. Så, vad är en *app*? En *Power BI-app* är en samling av instrumentpaneler och rapporter som skapats för att leverera nyckelvärden för din organisation. Appar är interaktiva men kan inte redigeras.
@@ -77,7 +77,7 @@ I exemplet nedan har jag markerat apparbetsytan ”Försäljning och marknadsfö
 
 För att [ansluta till eller importera en datauppsättning](service-get-data.md) väljer du **Hämta data** (längst ned i det vänstra navigeringsfönstret) eller väljer **+ Skapa > Datauppsättning** (i det övre högra hörnet). Följ instruktionerna för att ansluta till eller importera den specifika källan och lägga till datauppsättningen till den aktiva arbetsytan. Nya datauppsättningar markeras med en gul asterisk. Ditt arbete i Power BI ändrar inte den underliggande datauppsättningen.
 
-Om du [ingår i en ***app-arbetsyta***](service-collaborate-power-bi-workspace.md), är datauppsättningar som lagts till av en medlem i arbetsytan tillgängliga för de andra medlemmarna på arbetsytan.
+Om du [ingår i en **_app-arbetsyta_**](service-collaborate-power-bi-workspace.md) är datauppsättningar som lagts till av en medlem i arbetsytan tillgängliga för de andra medlemmarna i arbetsytan.
 
 Datauppsättningar kan uppdateras, döpas om, utforskas och tas bort. Du kan använda en datauppsättning för att skapa en rapport från grunden eller genom att köra [Quick Insights](service-insights.md).  Om du vill se vilka rapporter och instrumentpaneler som redan använder en datauppsättning, väljer du **Visa relaterade**. Välj datauppsättningen för att utforska den. Vad du faktiskt gör är att öppna datauppsättningen i rapportredigeraren där du verkligen kan börja utforska data och skapa visualiseringar. Så låt oss gå vidare till nästa avsnitt  – rapporter.
 
@@ -87,9 +87,9 @@ Datauppsättningar kan uppdateras, döpas om, utforskas och tas bort. Du kan anv
 * [Exempel på datauppsättningar för Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Rapporter
-En Power BI-rapport är en eller flera sidor av visualiseringar (tabeller och diagram som linjediagram, cirkeldiagram, treemap-diagram med fler). Visualiseringar kallas också ***visuella objekt***. Alla visualiseringar i en rapport kommer från en enda datauppsättning. Rapporter kan skapas från grunden i Power BI, importeras med instrumentpaneler som kollegor delar med dig eller skapas när du ansluter till datauppsättningar från Excel, Power BI Desktop, databaser, SaaS-program och [appar](service-get-data.md).  När du ansluter till en Excel-arbetsbok med Power View-blad, skapar Power BI en rapport baserad på dessa blad. Och när du ansluter till ett SaaS-program, importerar Power BI en förskapad rapport.
+En Power BI-rapport är en eller flera sidor av visualiseringar (tabeller och diagram som linjediagram, cirkeldiagram, treemap-diagram med fler). Visualiseringar kallas även **_visuella objekt_**. Alla visualiseringar i en rapport kommer från en enda datauppsättning. Rapporter kan skapas från grunden i Power BI, importeras med instrumentpaneler som kollegor delar med dig eller skapas när du ansluter till datauppsättningar från Excel, Power BI Desktop, databaser, SaaS-program och [appar](service-get-data.md).  När du ansluter till en Excel-arbetsbok med Power View-blad, skapar Power BI en rapport baserad på dessa blad. Och när du ansluter till ett SaaS-program, importerar Power BI en förskapad rapport.
 
-Det finns två lägen för att visa och interagera med rapporter: [läsvyn och redigeringsvyn](service-reading-view-and-editing-view.md).  Endast den person som skapade rapporten, delägare och de som beviljats behörighet, har åtkomst till alla funktionerna för utforskning, design, version och delning i rapportens ***Redigeringsvy***. Och de personer som de delar rapporten med kan utforska och interagera med rapporten med hjälp av ***Läsvy***.   
+Det finns två lägen för att visa och interagera med rapporter: [läsvyn och redigeringsvyn](service-reading-view-and-editing-view.md).  Endast den person som skapade rapporten, delägare och personer som beviljats behörighet, har åtkomst till alla funktioner för utforskning, design, version och delning i rapportens **_Redigeringsvy_**. De personer som de delar rapporten med kan också utforska och interagera med rapporten med hjälp av **_Läsvy_**.   
 
 När du öppnar en arbetsyta, visas de associerade rapporterna under fliken **Rapporter**. Varje listad rapport representerar en eller flera sidor med visualiseringar baserade på endast en av de underliggande datauppsättningarna. Om du vill öppna en rapport, markerar du den.
 

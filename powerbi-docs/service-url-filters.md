@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 11/16/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 6a2cfd4926089bce8973070949791e450a47cc4b
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973383"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850601"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -47,7 +47,7 @@ Fälttypen kan vara ett nummer, en datetime eller en sträng, och den typ som an
 
 * **Strängar** måste omges av enkla citattecken – ”chefsnamn”.
 * **Nummer** kräver ingen särskild formatering
-* **Datum och tider** måste omges av enkla citattecken och föregås av ordet **DateTime**.
+* **Datum och klockslag** måste omges av enkla citattecken. I OData v3 måste de föregås av ordet datetime, men datetime behövs inte i OData v4.
 
 Om du fortfarande tycker det är förvirrande kan du fortsätta läsa så förklarar vi mer.  
 
@@ -167,7 +167,7 @@ Den här skillnaden är användbar när du vill se olika resultat: filtrerade p�
 
 Det finns några saker som du bör vara medveten om när du använder frågesträngparametrarna.
 
-* Vid användning av *in*-operatorn måste värden till höger om *ii* vara antingen en kommaavgränsad lista som omges av parenteser.    
+* Vid användning av *in*-operatorn måste värden till höger om *in* vara en kommaavgränsad lista inom parenteser.    
 * I Power BI-rapportservern kan du [skicka rapportparametrar ](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) genom att ta med dem i en rapport-URL. Dessa URL-parametrar har inget prefix eftersom de skickas direkt till rapportbearbetningsmotorn.
 * Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md).
 * [Bädda in med rapportwebbdel i SharePoint Online](service-embed-report-spo.md) har inte stöd för URL-filter.

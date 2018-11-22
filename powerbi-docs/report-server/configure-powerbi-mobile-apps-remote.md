@@ -1,5 +1,5 @@
 ---
-title: Fjärrkonfiguration av Power BI iOS-mobilapp för åtkomst till en rapportserver
+title: Fjärrkonfiguration av iOS-mobilappar för åtkomst till en rapportserver
 description: Lär dig hur du fjärrkonfigurerar mobila iOS-appar för din rapportserver.
 author: maggiesMSFT
 manager: kfile
@@ -7,25 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: bbade67c9510b8d316364d991c09444712309514
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 740c012d83f9ca70f6e909b8cf62714f67c123d4
+ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722188"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268330"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Fjärrkonfiguration av Power BI iOS-mobilappar för åtkomst till en rapportserver
 
-I den här artikeln kommer du lära dig att använda din organisations MDM-verktyg för att konfigurera åtkomsten från iOS-mobilappen för Power BI till en rapportserver. För att konfigurera detta skapar IT-administratören en appkonfigurationsprincip med informationen som krävs för att skickas till appen. 
+I den här artikeln kommer du lära dig att använda din organisations MDM-verktyg för att konfigurera åtkomsten från iOS-mobilappen för Power BI till en rapportserver. För att konfigurera detta skapar IT-administratören en appkonfigurationsprincip med nödvändig information som sedan skickas till appen. 
 
- Sedan kan Power BI iOS-mobilappanvändarna lättare ansluta till organisationens rapportserver, eftersom rapportserveranslutningen redan har konfigurerats. 
-
+ När rapportservern har konfigurerats blir det lättare för Power BI iOS-mobilappanvändarna att ansluta till organisationens rapportserver. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Skapa appkonfigurationsprincipen i MDM-verktyget 
 
-Som administratör följer du dessa steg i Microsoft Intune för att skapa appkonfigurationsprincipen. Hur man skapar appkonfigurationsprinciper kan skilja sig åt mellan olika MDM-verktyg. 
+Som administratör följer du de här anvisningarna i Microsoft Intune för att skapa appkonfigurationsprincipen. Hur man skapar appkonfigurationsprinciper kan skilja sig åt mellan olika MDM-verktyg. 
 
 1. Anslut ditt MDM-verktyg. 
 2. Skapa och namnge en ny appkonfigurationsprincip. 
@@ -39,15 +38,15 @@ I följande tabell anges paren.
 | com.microsoft.powerbi.mobile.ServerURL | Sträng | URL till rapportserver </br> Bör börja med http eller https |
 | com.microsoft.powerbi.mobile.ServerUsername | Sträng | [valfritt] </br> Användarnamnet som ska användas för att ansluta servern. </br> Om det inte finns, uppmanas användaren att ange användarnamn för anslutningen i appen.| 
 | com.microsoft.powerbi.mobile.ServerDisplayName | Sträng | [valfritt] </br> Standardvärdet är ”Rapportserver” </br> Ett eget namn som används i appen för att representera servern | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | Standardvärdet är True </br> Om det sätts till ”True” åsidosätter detta alla definitioner för rapportservern som redan finns i den mobila enheten (befintliga servrar som redan har konfigurerats tas bort). </br> Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen. </br> Sätt värdet till ”False” för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. </br> Om samma server-URL redan har konfigurerats i mobilappen bevarar appen konfigurationen som den är och användaren behöver inte autentisera sig igen för samma server. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | Standardvärdet är True </br>När värdet är ”True” åsidosätts eventuella rapportserverdefinitioner som redan finns i den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. </br> Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen. </br> Sätt värdet till ”False” för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. </br> Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
 
 Här är ett exempel på hur man ställer in konfigurationsprincipen i Intune.
 
-![Intune konfigurationsinställningar](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
+![Intune-konfigurationsinställningar](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
 
 ## <a name="end-users-connecting-to-a-report-server"></a>Slutanvändare som ansluter till en rapportserver
 
-När du har publicerat appkonfigurationsprincipen upplever användare och enheter som hör till distributionslistan som definierats för principen följande när de startar mobilappen för Power BI iOS. 
+ Anta att du publicerar appkonfigurationsprincipen för en distributionslista. När användare och enheter på distributionslistan startar iOS-mobilappen händer följande. 
 
 1. De ser ett meddelande som anger att mobilappen har konfigurerats med en rapportserver och trycker på **Logga in**.
 

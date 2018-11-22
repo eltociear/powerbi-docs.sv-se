@@ -10,18 +10,22 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 4fc036bf9191d0ed56be11e69152e579cfc5102d
+ms.sourcegitcommit: 883d7e76816f2696e88ae391744ac6c7b1cb59c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266218"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51688406"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Övervaka Power BI Premium- och Power BI Embedded-kapaciteter
 
 Den här artikeln innehåller en översikt över övervakning av mått för dina Power BI Premium-kapaciteter. Genom att övervaka kapacitetsförbrukningen kan du hantera din kapacitet på ett genomtänkt sätt.
 
-Du kan övervaka kapaciteten med appen Power BI Premium Capacity Metrics eller i administrationsportalen. Vi rekommenderar appen, eftersom det ger mycket mer detaljerad information, men den här artikeln beskriver båda alternativen. **Den aktuella versionen av appen är 1.8 (den släpptes den 7 november 2018).**
+Du kan övervaka kapaciteten med appen Power BI Premium Capacity Metrics eller i administrationsportalen. Vi rekommenderar appen, eftersom det ger mycket mer detaljerad information, men den här artikeln beskriver båda alternativen.
+
+**Den aktuella versionen av appen är 1.9 (släpptes den 14 november 2018).**
+
+.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -87,7 +91,7 @@ Området **Sammanfattning** innehåller en vy över dina kapaciteter baserat på
 | --- | --- |
 | **Entiteter** | * Antalet kapaciteter som du äger<br> * Det exakta antalet datauppsättningar i din kapacitet<br> * Det exakta antalet arbetsytor i din kapacitet |
 | **System** | * Den genomsnittliga minnesanvändningen i GB under de senaste sju dagarna<br> * Högsta minnesförbrukning i GB under de senaste sju dagarna och den lokala tid då det hände<br> * Antalet gånger som CPU har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på tre minuter långa buckets<br> * De flesta gånger CPU överskred 80 % under de senaste sju dagarna, uppdelat på en timme långa buckets och den lokala tid då det hände<br> * Antalet gånger som DirectQuery- och Live-anslutningar har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på tre minuter långa buckets<br> * De flesta gånger DirectQuery- och Live-anslutningar har överskridit 80 % under de senaste sju dagarna, uppdelat på en timme långa buckets och den lokala tid då det hände |
-| **Arbetsbelastningar för datauppsättningar** | * Totalt antal uppdateringar under de senaste sju dagarna<br> * Totalt antal lyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar på grund av minnesbrist<br> * Genomsnittlig uppdateringstid är den tid i minuter det tar att slutföra åtgärden<br> * Genomsnittlig väntetid för uppdatering är den genomsnittliga fördröjningen, mätt i minuter, mellan den schemalagda tiden och åtgärdens start<br> * Totalt antal frågor som körts under de senaste sju dagarna<br> * Totalt antal lyckade frågor under de senaste sju dagarna<br> * Totalt antal misslyckade frågor under de senaste sju dagarna<br> * Genomsnittlig frågevaraktighet är den tid i minuter det tar att slutföra åtgärden<br> * Totalt antal modeller som tagits bort på grund av minnestryck |
+| **Arbetsbelastningar för datauppsättningar** | * Totalt antal uppdateringar under de senaste sju dagarna<br> * Totalt antal lyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar under de senaste sju dagarna<br> * Totalt antal misslyckade uppdateringar på grund av minnesbrist<br> * Genomsnittlig uppdateringstid är den tid i minuter det tar att slutföra åtgärden<br> * Genomsnittlig väntetid för uppdatering är den genomsnittliga fördröjningen, mätt i minuter, mellan den schemalagda tiden och åtgärdens start<br> * Totalt antal frågor som körts under de senaste sju dagarna<br> * Totalt antal lyckade frågor under de senaste sju dagarna<br> * Totalt antal misslyckade frågor under de senaste sju dagarna<br> * Genomsnittlig frågevaraktighet är den tid i minuter det tar att slutföra åtgärden<br> * Totalt antal modeller som tagits bort på grund av minnestryck<br> * Genomsnittlig storlek på datauppsättningar <br> * Genomsnittligt antal datauppsättningar som läses in i minnet |
 |  |  |
 
 #### <a name="refreshes-area"></a>Området Uppdaterar
@@ -135,7 +139,9 @@ Området **Datauppsättningar** innehåller följande mått.
 | **Rapportavsnitt** | **Mått** |
 | --- | --- |
 | **Antal borttagna datauppsättningar** | * Totalt: Det totala antalet *borttagna* datauppsättningar för respektive kapacitet. När en kapacitet drabbas av minnesbelastning avlägsnar noden en eller flera datauppsättningar från minnet. Datamängder som är inaktiva (utan frågor/uppdateringsåtgärder som körs för tillfället) avlägsnas först. Avlägsnandeordern baseras sedan på ett mått på ”minst nyligen använd” (LRU, Least Recently Used).|
-| **Antal borttagna datauppsättningar och minnesförbrukning per timma** | * Borttagna datauppsättningar jämfört med minnesförbrukning i GB, uppdelat i timbucketar, uttryckt i lokal tid |
+| **Antal borttagna datauppsättningar och minnesförbrukning per timme** | * Borttagna datauppsättningar jämfört med minnesförbrukning i GB, uppdelat i timbucketar, uttryckt i lokal tid |
+| **Inlästa datauppsättningar per timme** | * Antal datauppsättningar som läses in i minnet jämfört med minnesförbrukning i GB, uppdelat i timbucketar, uttryckt i lokal tid |
+| **Datastorlekar**  | * Maxstorlek: maxstorleken för datauppsättningen i MB för perioden visas |
 |  |  |
 
 ### <a name="paginated-reports-tab"></a>Fliken Sidnumrerade rapporter

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 0ffcec94d015223df596aa6ac941f7400a89e747
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396760"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718078"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -655,7 +655,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **23 april 2015**
 
-* Du kan nu visualisera och utforska dina **Microsoft Dynamics Marketing**-data med vårt nya innehållspaketet! Du kan läsa [blogginlägget](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) och [dokumentationen](service-connect-to-microsoft-dynamics-marketing.md) för mer information.
+* Du kan nu visualisera och utforska dina **Microsoft Dynamics Marketing**-data med vårt nya innehållspaketet! Läs [blogginlägget](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) om du vill veta mer.
 
 **15 april 2015**
 
