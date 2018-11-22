@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: b03e9da87aa507812045378b1fa3e581b7de159c
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
+ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266126"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268376"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
 
@@ -301,7 +301,7 @@ Användare i organisationen kan importera data till tjänsten, t.ex. genom att p
 
 ### <a name="create-and-use-dataflows-preview"></a>Skapa och använda dataflöden (förhandsversion)
 
-Användare i organisationen kan skapa och använda dataflöden. [Läs mer](service-dataflows-overview.md)
+Användare i organisationen kan skapa och använda dataflöden. I [Dataförberedelser med självbetjäning i Power BI (förhandsversion)](service-dataflows-overview.md) finns en översikt över dataflöden. Information om hur du aktiverar dataflöden i en Premium-kapacitet finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
 
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
