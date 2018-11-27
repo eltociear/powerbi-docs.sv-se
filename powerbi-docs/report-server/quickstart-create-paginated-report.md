@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.author: maggies
-ms.openlocfilehash: e996b1399ff4dde96d122e747cf1f07db3a44876
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 475221981181e4ddfac18e7023259fac9bbc35ed
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34721833"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289138"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Skapa en sidnumrerad rapport för Power BI-rapportservern
 Som namnet antyder sidnumrerade rapporter ha många sidor. De har ett fast format och kan anpassas med precision. Sidnumrerade rapporter är RDL-filer.

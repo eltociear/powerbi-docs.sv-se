@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 ms.date: 10/17/2018
-ms.openlocfilehash: d3076090b06cdb60b72c475fd156cc274985ea32
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: 49ea393af6e98ab0f081d95f5be6451064347ed4
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435498"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52332021"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Självstudie: Bädda in en Power BI-rapport, instrumentpanel eller panel till ett program för dina kunder
 
@@ -103,7 +103,7 @@ Aktivera ytterligare behörigheter för ditt program utöver vad som fanns på p
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
 
-### <a name="create-an-app-workspace"></a>Skapa en app-arbetsyta
+### <a name="create-an-app-workspace"></a>Skapa en apparbetsyta
 
 Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en app-arbetsyta. Kontot *master* måste vara administratör för app-arbetsytan.
 
@@ -243,7 +243,7 @@ using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
 // You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
+ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();
