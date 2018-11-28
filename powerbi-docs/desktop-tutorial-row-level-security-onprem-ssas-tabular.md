@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: c2d4dc5d8c11db035cc2470c0c44d64a6b78cd1a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101587"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452762"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
 Den här självstudien visar de steg som krävs för att implementera **säkerhet på radnivå** inom din **Analysis Services-tabellmodell** samt hur du använder den i en Power BI-rapport. Stegen i den här självstudien har utformats så att du kan följa med och lära dig de steg som krävs genom att slutföra en samplingsdatauppsättning.
@@ -50,7 +50,7 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
    Vi återkommer till dessa användare i senare uppgifter.
 4. Därefter gör vi en *inre koppling* med **DimSalesTerritory**-tabellen, vilket visar regionsinformationen som är associerad med användaren. Följande kod utför den *inre kopplingen* och bilden nedan visar tabellen när den *inre kopplingen* är klar.
    
-       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryID]
+       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Observera att bilden ovan visar information som till exempel vilken användare som är ansvarig de olika försäljningsregionerna. Den informationen visas på grund av relationen som vi skapade i **steg 2**. Observera också att användaren **Jon Doe ingår i Australiens försäljningsregion**. Vi kommer tillbaka till Jon Doe i kommande steg och uppgifter.

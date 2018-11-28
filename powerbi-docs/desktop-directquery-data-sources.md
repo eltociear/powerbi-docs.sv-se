@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 97d9fc6bf7a27b9d681d10ae20ab0780622e5ee8
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 098447f4d0c0b1dc9534c91e84827c4cefb8850c
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223408"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452555"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Datakällor som stöds av DirectQuery i Power BI
 **Power BI Desktop** och **Power BI-tjänsten** har flera datakällor som du kan ansluta till och få åtkomst till data. Den här artikeln beskriver vilka datakällor för Power BI stöder anslutningsmetoden **DirectQuery**. Läs mer om DirectQuery i [**DirectQuery i Power BI**](desktop-directquery-about.md).
@@ -62,7 +62,7 @@ I följande tabell anges om en **lokal datagateway** krävs för att ansluta til
 | Amazon Redshift |Nej |
 | Impala (version 2.x) |Ja |
 | Snowflake |Ja |
-| Spark (beta) version 0.9 och senare |Stöds inte än i **Power BI-tjänsten** |
+| Spark (beta) version 0.9 och senare |Ja |
 | Azure HDInsight Spark (beta) |Nej |
 | IBM Netezza |Ja |
 | SAP Business Warehouse Application Server |Ja |

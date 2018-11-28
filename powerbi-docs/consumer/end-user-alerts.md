@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ba27b42d6449d38fef2659507f035144c67f23fd
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 7982c2b29d5d92a992a115c92cbc7f0d128cb9d6
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223224"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452601"
 ---
 # <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Självstudie: Ange dataaviseringar i Power BI-tjänsten
 Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett. 
@@ -75,7 +75,7 @@ Därefter skickar Power BI en avisering till meddelandecentret och, om du vill, 
    ![Meddelandeikonen i Power BI-tjänsten](media/end-user-alerts/powerbi-alert-notifications.png)
 3. Öppna meddelandecentret om du vill se detaljerad information om aviseringen.
    
-    ![läs aviseringen](media/end-user-alerts/powerbi-alert-notfication.png)
+    ![läs aviseringen](media/end-user-alerts/powerbi-alert-notification.png)
    
    > [!NOTE]
    > Aviseringar fungerar bara på data som ska uppdateras. När data uppdateras söker Power BI för att se om en avisering har angetts för dessa data. Om data har uppnått ett tröskelvärde utlöses en avisering.
