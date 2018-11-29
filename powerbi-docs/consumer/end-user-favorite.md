@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 7fcf7411e7785f4403e08d1e3094a60bd93bcf57
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 46b943b9de7e8bae29c20617f957c81de2d49f94
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565071"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452509"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Favoritmarkera instrumentpaneler, rapporter och appar i Power BI-tjänsten
 När du skapat en *favorit* av innehåll kan du komma åt den från alla dina arbetsytor.  Favoriter är vanligtvis det innehåll som du besöker oftast.
@@ -54,7 +54,7 @@ Se hur Amanda lägger till favoriter till sin arbetsyta och följ sedan de stegv
    ![hovra över appen](./media/end-user-favorite/power-bi-favorite-app.png)
 
 ## <a name="working-with-favorites"></a>Arbeta med *favoriter*
-1. Om du vill få åtkomst till dina favoriter från valfri arbetsyta, väljer du den utfällbara pilen till höger om **Favoriter**.  Härifrån kan du välja en favorit och öppna den. Endast fem favoriter visas (i alfabetisk ordning). Om du har fler än fem väljer du **Visa alla** för att öppna skärmen med favoriter (se nr 2 nedan). 
+1. Om du vill få åtkomst till dina favoriter från valfri arbetsyta väljer du den utfällbara pilen till höger om **Favoriter**.  Härifrån kan du välja en favorit och öppna den. Endast fem favoriter visas (i alfabetisk ordning). Om du har fler än fem väljer du **Visa alla** för att öppna skärmen med favoriter (se nr 2 nedan). 
    
    ![Favoriter utfällt](./media/end-user-favorite/power-bi-favorite-flyout-new.png)
 2. Om du vill se **allt** innehåll som du har lagt till som favoriter i det vänstra navigeringsfönstret väljer du **Favoriter** eller favoritikonen ![stjärnikon](./media/end-user-favorite/power-bi-favorites-icon.png).  

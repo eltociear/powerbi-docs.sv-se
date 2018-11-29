@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c16fe65d766c6a1c18d809a68b3b0f6af8047db0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c9a8144ba9b8f465f4e607be60d075ea6ccb5fa
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813352"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452808"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Ansluta till SSAS flerdimensionella modeller i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SSAS flerdimensionella modeller**, vilket vanligtvis kallas **SSAS MD**.
@@ -81,6 +81,7 @@ Det finns vissa begränsningar med att använda **SSAS MD**:
 * Servrar måste köra SQL Server 2012 SP1 CU4 eller senare versioner av Analysis Services för att Power BI Desktop SSAS MD-anslutningsappen ska fungera korrekt
 * *Åtgärder* och *namngivna uppsättningar* exponeras inte för Power BI, men du kan fortfarande ansluta till kuber som också innehåller *åtgärder* eller *namngivna uppsättningar* och skapa visuella objekt och rapporter.
 * Det kan hända att du stöter på ett problem där Power BI visar metadata för en SSAS-modell, men du inte kan hämta data från modellen. Det här problemet kan uppstå om 32-bitarsversionen av MSOLAP-providern är installerad på datorn i stället för 64-bitarsversionen. Du kan ofta åtgärda problemet genom att installera 64-bitarsversionen.
+* Du kan inte skapa åtgärder på ”rapportnivå” när du skapar en rapport som är live-ansluten till en flerdimensionell SSAS-modell. De enda åtgärder som är tillgängliga är de som definierats i MD-modellen.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Funktioner som stöds av SSAS MD i Power BI Desktop
 Följande funktioner i SSAS MD stöds i Power BI Desktop:

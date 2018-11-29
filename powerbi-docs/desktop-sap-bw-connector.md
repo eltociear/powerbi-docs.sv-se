@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 73be85644fd320bd44372a0df6c844705c3cf602
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336931"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452877"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SAP Business Warehouse (BW)**-data.
@@ -197,11 +197,28 @@ Det här avsnittet beskriver felsökningssituationer (och lösningar) som kan up
            </item>
    
    Om du vill lösa det här felet måste användarna be sina SAP-administratör att ge SAPBW-användaren som används i Power BI behörighet för att köra *BAPI_USER_GET_DETAIL*. Det är också värt att kontrollera att användaren har det nödvändiga *DCPFM*-värdet, enligt föregående beskrivning i den här felsökningen.
+   
 2. **Anslutning för SAP BEx-frågor**
    
    Du kan utföra **BEx**-frågor i Power BI Desktop genom att aktivera en specifik egenskap, enligt följande bild:
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
+   
+3. **Navigator**-fönstret visar inte någon dataförhandsgranskning, utan tillhandahåller i stället en *objektreferens som inte har angetts till en instans av ett objekt*felmeddelande.
+   
+   SAP-användare behöver åtkomst till specifika BAPI-funktionsmoduler så att de kan få metadata och hämta data från SAP BW:s InfoProviders. Dessa omfattar:
+   * BAPI_MDPROVIDER_GET_CATALOGS
+   * BAPI_MDPROVIDER_GET_CUBES
+   * BAPI_MDPROVIDER_GET_DIMENSIONS
+   * BAPI_MDPROVIDER_GET_HIERARCHYS
+   * BAPI_MDPROVIDER_GET_LEVELS
+   * BAPI_MDPROVIDER_GET_MEASURES
+   * BAPI_MDPROVIDER_GET_MEMBERS
+   * BAPI_MDPROVIDER_GET_VARIABLES
+   * BAPI_IOBJ_GETDETAIL
+
+   Lös det här problemet genom att kontrollera att användaren har åtkomst till de olika *MDPROVIDER*-modulerna så väl som *BAPI_IOBJ_GETDETAIL*. Om du vill felsöka detta eller liknande problem ytterligare väljer du *Aktivera spårning* i fönstret *Diagnostik* i *Alternativ* i Power BI Desktop. Försök att hämta data från SAP BW medan spårning är aktivt, och granska spårningsfilen om du vill ha mer information.
+
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om SAP och DirectQuery finns i följande resurser:

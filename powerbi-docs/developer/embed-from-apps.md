@@ -3,18 +3,18 @@ title: Bädda in rapporter eller instrumentpaneler från appar
 description: Lär dig hur du integrerar eller bäddar in en rapport eller instrumentpanel från en Power BI-app och inte från en apparbetsyta.
 author: markingmyname
 ms.author: maghan
-ms.date: 07/13/2018
 ms.topic: how-to
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 53803c77dec8eb35c10db7f19a82f58144f88414
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 11/27/2018
+ms.openlocfilehash: 8073696907ceff67664a0802a2b7775eea693e37
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237995"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452532"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Bädda in rapporter eller instrumentpaneler från appar
 
@@ -26,11 +26,11 @@ I Power BI kan du skapa appar som samlar relaterade instrumentpaneler och rappor
 
 2. Öppna önskad rapport i Power BI-tjänsten.
 
-3. Gå till **Arkiv** > **Bädda in i SharePoint Online** och hämta rapportens embedURL därifrån. Den visas i följande ögonblicksbild. Du kan annars anropa GetReports/GetReport REST API och extrahera motsvarande embedURL-fält från svaret. REST-anrop får inte ha en identifierare för arbetsytan som en del av URL:en eftersom appen har fått en instans i användarens arbetsyta.
-
-4. Använd embedURL som du hämtade i steg 3 i JavaScript SDK.
+3. Gå till **Arkiv** > **Bädda in i SharePoint Online** och hämta rapportens embedURL. Ett exempel på embedURL visas i nedanstående ögonblicksbild. Du kan också anropa GetReports/GetReport REST API och extrahera motsvarande embedURL-fält från svaret. REST-anrop får inte ha en identifierare för arbetsytan som en del av URL:en eftersom appen har fått en instans i användarens arbetsyta.
 
     ![Bädda in från appar](media/embed-from-apps/embed-from-app.png)
+
+4. Använd embedURL som du hämtade i steg 3 i JavaScript SDK.
 
 ## <a name="grab-a-dashboard-embedurl-for-embedding"></a>Hämta instrumentpanelens embedURL för inbäddning
 
