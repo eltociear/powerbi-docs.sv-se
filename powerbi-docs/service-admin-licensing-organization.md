@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 09ce2e2db94116d70824b276b9b67b9dbe163d11
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 861b9c411b3088b6c16b7ad601f374bd771b13ed
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679327"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331998"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licensiering i din organisation
 
 I Power BI-tjänsten får användarna tillgång till funktioner baserat på två typer av licenser:
 
-* **Per användare** - *Kostnadsfri licensiering och Power BI Pro-licensiering*. En kostnadsfri licens ger åtkomst till vissa av funktionerna i Power BI-tjänsten. En Pro-licens ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten, även möjligheten att dela innehåll och samarbeta med andra Pro-användare. Endast Pro-användare kan publicera innehåll till och använda apparbetsytor, dela instrumentpaneler och prenumerera på instrumentpaneler och rapporter. Mer information finns i avsnittet med [funktioner för Power BI-tjänsten per licenstyp](service-features-license-type.md).
+* **Per användare** - *Power BI Pro-licensiering och kostnadsfri licensiering*. En Power BI Pro-licens ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten, även möjligheten att dela innehåll och samarbeta med andra Pro-användare. Endast Pro-användare kan publicera innehåll till och använda apparbetsytor, dela instrumentpaneler och prenumerera på instrumentpaneler och rapporter. En kostnadsfri licens ger åtkomst till vissa av funktionerna i Power BI-tjänsten. Mer information finns i avsnittet med [funktioner för Power BI-tjänsten per licenstyp](service-features-license-type.md).
 
 * **Kapacitetsbaserad** - *Power BI Premium-licensiering*. Premium tillhandahåller dedikerad kapacitet för att erbjuda mer enhetlig prestanda och kunna ge stöd åt större datavolymer i Power BI. Enskilda användare med Premium får möjlighet till omfattande distribution av innehåll från Pro-användare utan att mottagarna som visar innehållet behöver ha Pro-licenser. Mer information finns i [Vad är Power BI Premium?](service-premium.md).
 
@@ -73,17 +73,11 @@ Nu kan du [tilldela licenser i Office 365](https://support.office.com/article/as
 
 ## <a name="manage-power-bi-free-licenses"></a>Hantera kostnadsfria Power BI-licenser
 
-Användare i din organisation kan få tillgång till kostnadsfria Power BI-licenser på två olika sätt. De kan registrera dig för Power BI individuellt, eller så kan du tilldela en Power BI-licens till dem från administrationsportalen för Office 365.
+Användare i din organisation kan få tillgång till kostnadsfria Power BI-licenser på två olika sätt:
 
-Om du tillåter individuella registreringar så minskar belastningen på organisationens administratörer genom att låta användare som är intresserade av Power BI registrera sig kostnadsfritt.
+* Du kan tilldela en licens för Power BI till dem i administrationsportalen för Office 365.
 
-Men om du inaktiverar individuella registreringar får du mer kontroll, och det är ett bra alternativ om du behöver granska tjänstanvändningen.
-
-### <a name="power-bi-free-for-individuals"></a>Kostnadsfri Power BI för enskilda användare
-
-Som standard kan enskilda användare i din organisation registrera sig för en kostnadsfri Power BI-licens. Mer information finns i [Registrera dig själv som enskild individ för Power BI](service-self-service-signup-for-power-bi.md).
-
-Om du vill blockera individuella registreringar kan du läsa [Aktivera eller inaktivera registrering för enskilda användare i Azure Active Directory](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory) senare i den här artikeln.
+* Om en användare [registrerar sig för en kostnadsfri utvärderingsversion av Power BI Pro](service-self-service-signup-for-power-bi.md) och utvärderingsversionen är slut tilldelas de en kostnadsfri licens.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Begära och tilldela kostnadsfria licenser
 

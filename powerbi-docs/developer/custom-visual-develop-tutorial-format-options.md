@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 11/06/2018
-ms.openlocfilehash: a3d36f988847df283576dae6cfe5870b707c6f98
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: 56de3745d59e4a26dffbb988e9543c294de261e3
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223270"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289184"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Självstudier: Lägga till formateringsalternativ till ett anpassat visuellt Power BI-objekt
 
@@ -32,7 +32,7 @@ I de här självstudierna får du lära dig att
 
     Du bör se ett meddelande som lyder så här: *Formateringsalternativ är inte tillgängliga för det här visuella objektet.*
 
-    ![Formateringspensel](media/custom-visual-develop-tutorial/format-paintbrush.png)
+    ![Formateringspensel](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
 
 2. Öppna filen *capabilities.json* i **Visual Studio Code**.
 
@@ -41,7 +41,7 @@ I de här självstudierna får du lära dig att
     ```json
     "objects": {},
     ```
-    ![Lägga till objekt](media/custom-visual-develop-tutorial/add-objects.png)
+    ![Lägga till objekt](media/custom-visual-develop-tutorial-format-options/add-objects.png)
 
 4. Spara filen **capabilities.json**.
 
@@ -50,13 +50,13 @@ I de här självstudierna får du lära dig att
     > [!Note]
     > Om du inte ser formateringsalternativen så ändra **Läs in anpassat visuellt objekt igen**.
 
-    ![Visa formateringsalternativ](media/custom-visual-develop-tutorial/view-formatting-options.png)
+    ![Visa formateringsalternativ](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
 6. Ställ in alternativet **Rubrik** på *Av*. Observera att det visuella objektet inte längre visar måttets namn i det övre vänstra hörnet.
 
-    ![Panelalternativet är inaktiverat](media/custom-visual-develop-tutorial/tile-option-off.png)
+    ![Panelalternativet är inaktiverat](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
 
-    ![Ingen namnpanel](media/custom-visual-develop-tutorial/no-name-tile.png)
+    ![Ingen namnpanel](media/custom-visual-develop-tutorial-format-options/no-name-tile.png)
 
 ### <a name="adding-custom-formatting-options"></a>Lägga till anpassade formateringsalternativ
 
@@ -64,7 +64,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
 
 1. Stoppa det anpassade visuella objektet i PowerShell.
 
-2. Infoga följande JSON-fragment i objektet **objekt** i filen **capabilities.json** i Visual Studio Code.
+2. Infoga följande JSON-fragment i objektet med etiketten **objekt** i filen **capabilities.json** i Visual Studio Code.
 
     ```json
     "circle": {
@@ -89,12 +89,12 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
                  }
              }
          }
-     }
+     },
     ```
 
     JSON-fragmentet beskriver en grupp med namnet cirkel, som består av två alternativ som heter circleColor och circleThickness.
 
-   ![Kod för cirkeltjockled](media/custom-visual-develop-tutorial/circle-thickness-code.png)
+   ![Kod för cirkeltjockled](media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png)
 
 3. Spara filen **capabilities.json**.
 
@@ -112,7 +112,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
     }
     ```
 
-    ![Modulklasser](media/custom-visual-develop-tutorial/module-classes.png)
+    ![Modulklasser](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
     Den här modulen definierar de båda klasserna. Klassen **CircleSettings** definierar två egenskaper med namn som matchar de objekt som definierats i filen **capabilities.json** (**circleColor** och  **circleThickness**) och anger även standardvärden. Klassen **VisualSettings** ärver klassen **DataViewObjectParser** och lägger till en egenskap med namnet **cirkel** som matchar det objekt som definieras i filen  *Capabilities.JSON* och returnerar en instans av **CircleSettings**.
 
@@ -127,7 +127,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
     ```
     Denna egenskap sparar en referens till objektet **VisualSettings**, som beskriver de visuella inställningarna.
 
-    ![Lägg till visuell klass](media/custom-visual-develop-tutorial/visual-class-add-on.png)
+    ![Lägg till visuell klass](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
 9. Lägg till följande metod framför metoden **Update** i klassen **Visual**. Den här metoden används för att fylla i formateringsalternativen.
 
@@ -140,7 +140,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
     ```
     Den här metoden används för att fylla i formateringsalternativen.
 
-    ![Visuellt inställningsobjekt](media/custom-visual-develop-tutorial/visual-settings-object.png)
+    ![Visuellt inställningsobjekt](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
 
 10. Lägg till följande kod efter deklaration av variabeln **radius** i metoden **update**.
 
@@ -150,7 +150,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
     ```
     Den här koden hämtar formateringsalternativen. Den justerar alla värden som skickas till egenskapen **circleThickness**, konverterar den till 0 om talet är negativt eller 10 om det är ett värde som är större än 10.
 
-    ![Radius-variabel](media/custom-visual-develop-tutorial/radius.png)
+    ![Radius-variabel](media/custom-visual-develop-tutorial-format-options/radius.png)
 
 11. Ändra det värde som skickas till **fyllningsformat** till följande uttryck för **cirkelelementet**.
 
@@ -158,7 +158,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
     this.visualSettings.circle.circleColor
     ```
 
-    ![Fyller cirkelelementet](media/custom-visual-develop-tutorial/circle-element-fill.png)
+    ![Fyller cirkelelementet](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
 
 12. Ändra det värde som skickas till formatet för **bredd på penseldrag** till följande uttryck för **cirkelelementet**.
 
@@ -166,7 +166,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
     this.visualSettings.circle.circleThickness
     ```
 
-    ![Bredd på penseldrag för cirkel](media/custom-visual-develop-tutorial/circle-stroke-width.png)
+    ![Bredd på penseldrag för cirkel](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
 
 13. Spara filen visual.ts.
 
@@ -180,7 +180,7 @@ Du kan lägga till anpassade egenskaper om du vill aktivera möjligheten att kon
 
 16. Expandera **Cirkel** i alternativen för **visuellt format**.
 
-    ![Cirkelformat](media/custom-visual-develop-tutorial/circle-format.png)
+    ![Cirkelformat](media/custom-visual-develop-tutorial-format-options/circle-format.png)
 
     Ändra alternativen för **färg** och **tjocklek**.
 
@@ -198,7 +198,7 @@ Ange egenskapsvärden för det anpassade visualiseringsprojektet, uppdatera ikon
 
     Om du hovrar över ikonen i fönstret **Visualiseringar** visas visningsnamnet.
 
-    ![Visningsnamn, virtuellt objekt](media/custom-visual-develop-tutorial/display-name-viz.png)
+    ![Visningsnamn, virtuellt objekt](media/custom-visual-develop-tutorial-format-options/display-name-viz.png)
 
 4. Ange följande text för egenskapen **beskrivning**.
 
@@ -216,7 +216,7 @@ Ange egenskapsvärden för det anpassade visualiseringsprojektet, uppdatera ikon
 
 10. Granska ikonen.
 
-    ![Det vill säga fönsterbilden](media/custom-visual-develop-tutorial/viz-pane-image.png)
+    ![Det vill säga fönsterbilden](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
 11. Se till att alla filer sparas i Visual Studio Code.
 
@@ -226,7 +226,7 @@ Ange egenskapsvärden för det anpassade visualiseringsprojektet, uppdatera ikon
     pbiviz package
     ```
 
-    ![Dist-mapp](media/custom-visual-develop-tutorial/dist-folder.png)
+    ![Dist-mapp](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
 
 Nu skickas paketet till mappen **dist** i projektet. Paketet innehåller allt som krävs för att importera det anpassade visuella objektet till Power BI-tjänsten eller en Power BI Desktop-rapport. Du har nu paketerat det anpassade visuella objektet, och det är nu klart att användas.
 
@@ -238,7 +238,7 @@ Nu kan du öppna Power BI Desktop-rapporten och importera det visuella Circle Ca
 
 2. I den **_visualiseringar_** väljer den **ellipsen**, och välj sedan **Import** från filen.
 
-    ![Lägg till anpassad viz på skrivbordet](media/custom-visual-develop-tutorial/add-custom-viz-to-desktop.png)
+    ![Lägg till anpassad viz på skrivbordet](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
 3. Välj **Importera** i fönstret **Importera**.
 
@@ -250,7 +250,7 @@ Nu kan du öppna Power BI Desktop-rapporten och importera det visuella Circle Ca
 
 7. Kontrollera att det visuella objektet har lagts till i fönstret **_Visualiseringar_**.
 
-    ![Visa i PBI Desktop viz-fönstret](media/custom-visual-develop-tutorial/view-in-desktop-viz-pane.png)
+    ![Visa i PBI Desktop viz-fönstret](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 
 8. Hovra över **Circle Card**-ikonen och se den knappbeskrivning som visas.
 

@@ -1,31 +1,31 @@
 ---
-title: Paneler på instrumentpanelen i Power BI-tjänsten
-description: Allt om paneler på instrumentpanelen i Power BI. Detta inkluderar paneler som skapas från SQL Server Reporting Services (SSRS).
+title: Introduktion till paneler på instrumentpanelen för Power BI-designers
+description: Allt om paneler på instrumentpanelen i Power BI. Detta inkluderar paneler som skapas från SQL Server Reporting Services-rapporter (SSRS).
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/3/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 76b8eaff949ee56d57511eabea913363e6cdc3f6
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: de99c04077a58f1c0c060561674fefa9041fa144
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717411"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331975"
 ---
-# <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
-Instrumentpaneler och paneler på instrumentpanelen är en funktion i Power BI-tjänsten, inte Power BI Desktop. Paneler på instrumentpanelen kan inte skapas eller fästas i Power BI Mobile, [men de kan visas och delas](mobile-tiles-in-the-mobile-apps.md). Och i Power BI Mobile, kan du [lägga till bilder till din instrumentpanel med iPhone-appen](mobile-iphone-app-get-started.md).
+# <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion till paneler på instrumentpanelen för Power BI-designers
 
-## <a name="dashboard-tiles"></a>Paneler på instrumentpanelen
+En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen. En panel kan skapas från en rapport, datamängd, instrumentpanel, Frågor och svar-rutan, Excel samt SQL Server Reporting Services-rapporter (SSRS) med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.
+
 ![Power BI-instrumentpanel](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen. En panel kan skapas från en rapport, datauppsättning eller instrumentpanel, från rutan Frågor och svar, Excel, och från SQL Server Reporting Services (SSRS), med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.
+Instrumentpaneler och paneler på instrumentpanelen är en funktion i Power BI-tjänsten, inte Power BI Desktop. Du kan inte skapa instrumentpaneler på mobila enheter, men du kan [visa och dela](mobile-apps-view-dashboard.md) dem.
 
-Förutom att fästa, kan fristående paneler skapas direkt på en instrumentpanel med hjälp av [Lägg till panel](service-dashboard-add-widget.md). Fristående paneler innehåller: textrutor, bilder, videor, strömmande data och webbinnehåll.
+Förutom att fästa kan du skapa fristående paneler direkt på en instrumentpanel med hjälp av [Lägg till panel](service-dashboard-add-widget.md). Fristående paneler innehåller: textrutor, bilder, videor, strömmande data och webbinnehåll.
 
 Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](service-basic-concepts.md).
 
@@ -43,7 +43,7 @@ Det finns många olika sätt att lägga till (fästa) en panel till en instrumen
 * [Excel-arbetsbok på OneDrive för företag](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher för Excel](publisher-for-excel.md)
 * [Quick Insights](service-insights.md)
-* [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+* [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Fristående paneler för bilder, textrutor, videor, strömning av data och webbinnehåll kan skapas direkt på en instrumentpanel med hjälp av [Lägg till panel](service-dashboard-add-widget.md).
 
@@ -78,7 +78,7 @@ Hämta en panel och [flytta runt den på instrumentpanelen](service-dashboard-ed
 3. Om du vill stänga åtgärdsmenyn, välj ett tomt område på arbetsytan.
 
 ### <a name="select-click-a-tile"></a>Välj (klicka på) en panel
-När du väljer en panel beror händelseförloppet på hur panelen skapades och om den har en [anpassad länk](service-dashboard-edit-tile.md). Om den har en anpassad länk kommer du till denna länk om du väljer panelen. I annat fall kommer du, om du väljer panelen, till rapporten, arbetsboken i Excel Online, den lokala SSRS-rapporten eller frågor och svar som användes för att skapa panelen.
+När du väljer en panel beror händelseförloppet på hur du skapade panelen. Och om den har en [anpassad länk](service-dashboard-edit-tile.md) kommer du till denna länk om du väljer panelen. I annat fall kommer du, om du väljer panelen, till rapporten, arbetsboken i Excel Online, den lokala Reporting Services-rapporten eller frågor och svar som användes för att skapa panelen.
 
 > [!NOTE]
 > Undantag för detta är videopaneler som skapats direkt på en instrumentpanel med hjälp av **Lägg till panel**. Att välja en videopanel (som har skapats på detta sätt) gör så att videon spelas upp direkt på instrumentpanelen.   
@@ -86,12 +86,13 @@ När du väljer en panel beror händelseförloppet på hur panelen skapades och 
 > 
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+
 * Om den rapport som användes för att skapa visualiseringen inte sparades kommer inget att hända om du väljer panelen.
-* Om panelen har skapats från en arbetsbok i Excel Online och du inte har minst läsbehörighet för arbetsboken, kommer arbetsboken i Excel Online inte att öppnas om du väljer panelen.
-* För paneler som skapats direkt på en instrumentpanel med hjälp av **Lägg till panel**, kan du, om en anpassad hyperlänk har ställts in, markera rubriken, underrubriken och eller en panel för att öppna URL:en.  I annat fall händer som standard ingenting om du väljer en av dessa paneler som skapats direkt på instrumentpanelen för en bild, webbkod eller textruta.
-* Om du inte har behörighet för rapporten i SSRS, kommer val av en panel som skapats från SSRS att generera en sida som anger att du inte har åtkomst (rsAccessDenied).
-* Om du inte har åtkomst till nätverket där SSRS-servern finns, kommer val av en panel som skapats från SSRS generera en sida som anger att det inte går att hitta servern (HTTP 404). Enheten måste ha nätverksåtkomst till rapportservern för att visa rapporten.
-* Om den ursprungliga visualiseringen som användes för att skapa panelen ändras, ändras inte panelen.  Om du till exempel har fäst ett linjediagram från en rapport och sedan ändrar linjediagrammet till ett stapeldiagram, fortsätter panelen på instrumentpanelen att visa ett linjediagram. Data uppdateras, men visualiseringstypen gör det inte.
+* Om panelen skapades från en arbetsbok i Excel Online behöver du minst läsbehörighet för arbetsboken. I annat fall öppnas inte arbetsboken i Excel Online när du väljer panelen.
+* Anta att du skapar en panel direkt på en instrumentpanel med hjälp av **Lägg till panel** och anger en anpassad hyperlänk för den. I så fall öppnas webbadressen när du väljer rubrik, underrubrik och panelen. I annat fall händer som standard ingenting om du väljer en panel som skapats direkt på instrumentpanelen för en bild, webbkod eller textruta.
+* Om du inte har behörighet för rapporten i Reporting Services kommer val av en panel som skapats från Reporting Services-rapporten att dirigera dig till en sida som anger att du inte har åtkomst (rsAccessDenied).
+* Om du inte har åtkomst till nätverket där Reporting Services -servern finns kommer val av en panel som skapats från Reporting Services dirigera dig till en sida som anger att det inte går att hitta servern (HTTP 404). Enheten måste ha nätverksåtkomst till rapportservern för att visa rapporten.
+* Om den ursprungliga visualiseringen som användes för att skapa panelen ändras, ändras inte panelen.  Om du till exempel fäster ett linjediagram från en rapport och sedan ändrar linjediagrammet till ett stapeldiagram, fortsätter panelen på instrumentpanelen att visa ett linjediagram. Data uppdateras, men visualiseringstypen gör det inte.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skapa ett kort (stor sifferpanel) för din instrumentpanel](power-bi-visualization-card.md)

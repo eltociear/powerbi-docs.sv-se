@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 4a5d124ffd213c54d628ff15e32ece18e56913eb
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157562"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289207"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Översikt över Power BI-tjänstens program för innehållspaketet
 Ett innehållspaket är en uppsättning färdigt innehåll som låter användare direkt få insikter från en källa. Ett innehållspaket fokuserar vanligtvis på ett specifikt företagsscenario och ger insikter för en roll, en domän eller ett arbetsflöde.
 
-ISV:er kan skapa mallinnehållspaket som låter kunder ansluta och instansiera med sina egna konton. Som domänexperter kan de låsa upp data på ett sätt som är lätt att använda för en företagsanvändare. Innehållspaketen erbjuder ad hoc-övervakning och analys för dina kunder utan att investera mycket i en infrastruktur för rapportering.
+ISV:er kan skapa mallinnehållspaket som låter kunder ansluta och instansiera med sina egna konton. Som domänexperter kan de låsa upp data på ett sätt som är lätt att använda för företagsanvändare. Innehållspaketen erbjuder ad hoc-övervakning och analys för dina kunder utan att investera mycket i en infrastruktur för rapportering.
 
 Dessa ISV-skapade mallinnehållspaket kan skickas in till Power BI-teamet för att bli offentligt tillgängliga i Power BI-innehållspaketgalleriet (app.powerbi.com/getdata/services) och på Microsoft AppSource (appsource.microsoft.com). Ett exempel på upplevelsen med offentliga innehållspaket finns [här](template-content-pack-experience.md).
 
@@ -78,7 +78,7 @@ Publicerade innehållspaket kan uppdateras en gång i månaden. Uppdateringsbeg�
 Skicka oss gärna ett meddelande med dina frågor på [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Support
-För support under utveckling, använd [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Det här kontot övervakas och hanteras aktivt. Kundincidenter når snabbt ett lämpligt team.
+Använd [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support) för support under utveckling. Kundincidenter når snabbt ett lämpligt team.
 
 ## <a name="next-step"></a>Nästa steg
 [Redigering](template-content-pack-authoring.md)

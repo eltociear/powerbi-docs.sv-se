@@ -7,41 +7,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 6759145d2764a586526a69c8b577178144ba019e
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: e76d57f43fc76f5a9c51501daac48b081d9747b6
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187018"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331827"
 ---
 # <a name="get-started-with-power-bi-qa"></a>Komma igång med Power BI – vanliga frågor och svar
-## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Använd Power BI-frågor och svar med Exemplet på detaljhandelsanalys
+
 Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk.  I den här snabbstarten ska vi titta på två olika sätt att skapa samma visualisering: bygga den i en rapport och därefter ställa en fråga med Frågor och svar. Vi använder Power BI-tjänsten, men processen är nästan identisk med Power BI Desktop.
 
 Om du vill följa med, måste du använda en rapport som du kan redigera så vi använder ett av de exempel som finns tillgängliga i Power BI.
 
-## <a name="method-1-using-the-report-editor"></a>Metod 1: Använda rapportredigeraren
+## <a name="create-a-visual-in-the-report-editor"></a>Skapa ett visuellt objekt i rapportredigeraren
+
 1. Välj **Hämta data** \> **Exempel** \> **Exempel på detaljhandelsanalys**  >   **Anslut** från din Power BI-arbetsyta.
    
-    ![](media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png)
-2. Instrumentpanelen innehåller en ytdiagramspanel för ”förra årets försäljning och det här årets försäljning”.  Välj den här panelen. 
+2. Instrumentpanelen innehåller en ytdiagramspanel för ”förra årets försäljning och det här årets försäljning”.  Välj den här panelen. Om den här panelen skapades med Frågor och svar, öppnas Frågor och svar om du väljer den. Men den här panelen skapades i en rapport så rapporten öppnas på den sida som innehåller den här visualiseringen.
+
+    ![Instrumentpanelen för Exempel på detaljhandelsanalys](media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png)
+
+1. Öppna rapporten i redigeringsvyn genom att välja **Redigera rapport**.  Om du inte är ägare till en rapport kan du inte öppna den i redigeringsvyn.
    
-   * Om den här panelen skapades med Frågor och svar, öppnas Frågor och svar om du väljer den. 
-   * Men den här panelen skapades i en rapport så rapporten öppnas på den sida som innehåller den här visualiseringen.
-3. Öppna rapporten i redigeringsvyn genom att välja **Redigera rapport**.  Om du inte är ägare till en rapport kan du inte öppna den i redigeringsvyn.
-   
-    ![](media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png)
+    ![Knappen Redigera rapport](media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png)
 4. Välj ytdiagrammet och granska inställningarna i **Fält**-fönstret.  Rapportskaparen byggde det här diagrammet genom att välja dessa tre värden (**Tid > FiscalMonth (Räkenskapsmånad)**, **Försäljning > This Year Sales (Årets försäljning)**, **Försäljning > Last Years Sales (Förra årets försäljning) > Värde**) och ordna dem i områdena **Axel** och **Värden**.
    
-    ![](media/power-bi-visualization-introduction-to-q-and-a/gnatutorial_3-new.png)
+    ![Visualiseringsfönster](media/power-bi-visualization-introduction-to-q-and-a/gnatutorial_3-new.png)
 
-## <a name="method-2-using-qa"></a>Metod 2: Använda Frågor och svar
+## <a name="create-the-same-visual-with-qa"></a>Skapa samma visuella objekt med frågor och svar
+
 Hur skapar vi samma linjediagram med Frågor och svar?
 
-![](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna.png)
+![Ställa fråga i en frågeruta](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna.png)
 
 1. Gå tillbaka till instrumentpanelen för Exempel på detaljhandelsanalys.
 2. Med hjälp av naturligt språk skriver du in något i stil med följande i frågerutan:
@@ -52,9 +53,9 @@ Hur skapar vi samma linjediagram med Frågor och svar?
    
    När du har skrivit klart frågan är resultatet exakt samma diagram som vi såg i rapporten.  Men det gick mycket snabbare att skapa det på det här viset!
    
-   ![](media/power-bi-visualization-introduction-to-q-and-a/powerbi-qna-areachart.png)
+   ![Exempel på fråga](media/power-bi-visualization-introduction-to-q-and-a/powerbi-qna-areachart.png)
 3. På liknande sätt som när du arbetar med rapporter, har du i Frågor och svar också åtkomst till fönstren Visualiseringar, Filter och Fält.  Öppna dessa fönster för att utforska och ändra ditt visuella objekt ytterligare.
-4. Välj fästikonen ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png) för att fästa diagrammet på din instrumentpanel.
+4. Välj fästikonen för att fästa diagrammet på din instrumentpanel ![Fästikon](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## <a name="next-steps"></a>Nästa steg
 [Frågor och svar i Power BI](consumer/end-user-q-and-a.md)
