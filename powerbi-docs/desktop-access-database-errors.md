@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 47bcfabddfeb5bfec828c7b14fef4798350939da
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 76423f26203da23658b621d7d01565c04ca21709
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679005"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578185"
 ---
 # <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Lösa problem när du importerar Access- och. XLS-filer i Power BI Desktop
 I **Power BI Desktop**, använder både **Access-databaser** och tidigare versioner av **Excel-arbetsböcker** (.XLS-filer av typen Excel 97-2003) *Access-databasmotorn*. Det finns tre vanliga situationer som kan förhindra att Access Database Engine fungerar korrekt:

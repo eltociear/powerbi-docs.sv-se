@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: cae73b7d232cf183fb99623016fba485904a2d7a
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 99ca79a676d103a5e3d2a297b9ac0752ee524295
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39326911"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670112"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Felsöka Analysera i Excel
 Det kan finnas tillfällen när Analysera i Excel ger ett oväntat resultat eller funktionen inte fungerar som väntat. Den här sidan innehåller lösningar för vanliga problem när du använder Analysera i Excel.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2168328ec2ed030c9a744a315c81f4a7d0b39404
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 73d9d84552d49ca507fe4b6f9ec022bb7fb98866
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327923"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670864"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Felsöka uppdateringsscenarier
 Här hittar du information om olika scenarier som du kan stöta på när du uppdaterar data i Power BI-tjänsten.

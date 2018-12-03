@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: c3ef18bf05c6a979e9fd0440b271afd5d8545a54
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452670"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670427"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -22,13 +22,7 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-**Beprövade hälsolösningar som förbättrar både resultatet för patienterna och lönsamheten**
-<br>av Stephen Cracknell och Stuart Macanliss från US Medical IT
-<br>*28 november 2018 11:00 – 12:00 PST*
-
-Vårdorganisationerna står inför utmaningen att omvandla stora mängder data till patientinsikter och därefter omsätta dessa insikter i åtgärder. Registrera dig för det här webbseminariet och lär dig hur du utformar beskrivande hälsovårdsrapporter som hjälper din organisation att konvertera data till användbara patientinsikter. Få expertråd och strategier och råd från US Medical IT:s grundare och VD Stephen Cracknell, chefen för Healthcare IT, Stuart Macanliss, och den Texasbaserade reumatologen Dr John P Lavery.
-
-[Registrera dig om du vill titta den 28 november](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
+Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
@@ -105,6 +99,10 @@ Titta på inspelade sessioner när som helst
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### <a name="partners"></a>Partners ###
+
+**Beprövade hälsolösningar som förbättrar både resultatet för patienterna och lönsamheten**
+<br>av Stephen Cracknell och Stuart Macanliss från US Medical IT
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
 **Förstärk din BI med Location Intelligence**
 <br>av Scott Ball från Esri och Enrique Plaza från Microsoft
