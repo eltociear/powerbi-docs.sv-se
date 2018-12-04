@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: 5d2a33b8dc50a4a30bb79406462f1342953528d9
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448970"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830388"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI är ett kombinationsdiagram en enskild visualisering som kombinerar ett linjediagram med ett stapeldiagram. Om du kombinerar de två diagrammen till ett kan du göra en snabbare jämförelse av dina data.
@@ -45,7 +45,7 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
 
 1. Välj **Totalt antal butiker** från instrumentpanelen ”Exempel på detaljhandelsanalys” för att öppna rapporten ”Exempel på detaljhandelsanalys”.
 2. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
-3. [Lägg till en ny rapportsida](../power-bi-report-add-page.md).
+3. Lägg till en ny rapportsida.
 4. Skapa ett stapeldiagram som visar årets försäljning och bruttomarginal per månad.
 
     a.  Välj **Försäljning** \> **This Year Sales (Årets försäljning)** > **Värde** i fönstret Fält.

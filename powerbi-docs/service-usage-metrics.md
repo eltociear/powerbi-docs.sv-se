@@ -1,8 +1,8 @@
 ---
 title: Användningsstatistik för instrumentpaneler och rapporter
 description: Så här visar, sparar och använder du användningsstatistik för Power BI-instrumentpaneler och rapporter. Mät och öka din inverkan med användningsstatistik för skapare av innehåll.
-author: mihart
-ms.author: mihart
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 53d39eaf7c615d2ed279e7c45330dacbdad7994a
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619849"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830342"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
 
