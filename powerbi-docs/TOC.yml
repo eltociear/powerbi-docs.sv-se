@@ -282,6 +282,8 @@ items:
         href: desktop-create-phone-report.md
       - name: Använd Visa data och Visa poster
         href: desktop-see-data-see-records.md
+      - name: Tips för att skapa rapporter
+        href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualiseringar
       items:
       - name: Metodtips för visualisering
@@ -312,7 +314,7 @@ items:
         href: power-bi-reports-add-text-and-shapes.md
       - name: Anpassa egenskaper för x-axeln och y-axeln
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: ArcGIS i Power BI
+      - name: ArcGIS-kartor i Power BI
         href: power-bi-visualization-arcgis.md
       - name: Grundläggande ytdiagram
         href: visuals/power-bi-visualization-basic-area-chart.md
@@ -346,6 +348,8 @@ items:
         href: visuals/power-bi-visualization-treemaps.md
       - name: Vattenfallsdiagram i Power BI
         href: visuals/power-bi-visualization-waterfall-charts.md
+      - name: Skapa dynamiska referensrader
+        href: service-analytics-pane.md
     - name: Felsökning
       items:
       - name: Lösa problem när du importerar Access-databaser och Excel-kalkylblad i Power BI Desktop och Power Query
@@ -374,7 +378,7 @@ items:
       href: desktop-accessibility.md
     - name: Hantera inloggningsformuläret för Power BI Desktop
       href: desktop-admin-sign-in-form.md
-- name: Power BI-tjänsten
+- name: Power BI-tjänst
   items:
   - name: Översikt
     items:
@@ -382,10 +386,10 @@ items:
       href: power-bi-overview.md
   - name: Självstudier
     items:
-    - name: Anslut till ett GitHub-exempel
-      href: service-tutorial-connect-to-github.md
     - name: Kom igång med Power BI
       href: service-get-started.md
+    - name: Anslut till ett GitHub-exempel
+      href: service-tutorial-connect-to-github.md
   - name: Begrepp
     items:
     - name: Nyheter i Power BI-tjänsten
@@ -644,40 +648,28 @@ items:
         href: service-dashboard-themes.md
     - name: Rapporter
       items:
-      - name: Skapa en ny rapport från en befintlig rapport
-        href: power-bi-report-copy.md
-      - name: Lägga till en sida i en rapport
-        href: power-bi-report-add-page.md
+      - name: Skapa en ny rapport från en datauppsättning
+        href: service-report-create-new.md
       - name: Lägga till ett filter i en rapport
         href: power-bi-report-add-filter.md
       - name: Spara en rapport i Power BI
         href: service-report-save.md
-      - name: Skapa en ny rapport från en datauppsättning
-        href: service-report-create-new.md
       - name: Interagera med en rapport i redigeringsvyn
         href: service-interact-with-a-report-in-editing-view.md
       - name: Analysera i Excel
         href: service-analyze-in-excel.md
       - name: Tips om hur du skapar rapporter
         href: power-bi-reports-tips-and-tricks-for-creating.md
-      - name: Analytics-fönstret
-        href: service-analytics-pane.md
       - name: Användningsstatistik för rapporter
         href: service-usage-metrics.md
       - name: Skapa en QR-kod för en rapport
         href: service-create-qr-code-for-report.md
-      - name: Ändra ordning på sidorna i en rapport
-        href: service-report-reorder-pages.md
-      - name: Duplicera en rapportsida
-        href: power-bi-report-copy-paste-page.md
       - name: Exportera en rapport från tjänsten till Power BI Desktop (förhandsversion)
         href: service-export-to-pbix.md
       - name: Filtrera en rapport med hjälp av parametrar i URL:en
         href: service-url-filters.md
       - name: Metodtips för att skapa snabba och tillförlitliga rapporter
         href: power-bi-reports-performance.md
-      - name: Interagera med ArcGIS-kartor
-        href: visuals/power-bi-visualizations-arcgis.md
     - name: Ställa frågor om dina data
       items:
       - name: Använda frågor och svar för att skapa visualiseringar och rapporter
@@ -792,6 +784,30 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Ansluta till dataflöden i Power BI Desktop
         href: desktop-connect-dataflows.md
+    - name: Sidnumrerade rapporter i Power BI
+      items:
+      - name: Vad är sidnumrerade rapporter? (Förhandsgranskning)
+        href: paginated-reports-report-builder-power-bi.md
+      - name: Vanliga frågor och svar om sidnumrerade rapporter
+        href: paginated-reports-faq.md
+      - name: Skapa en sidnumrerad rapport och ladda upp den
+        href: paginated-reports-quickstart-aw.md
+      - name: Komma runt rapportdesignvyn
+        href: paginated-reports-report-design-view.md
+      - name: Ange data direkt i en sidnumrerad rapport
+        href: paginated-reports-enter-data.md
+      - name: Skapa en inbäddad datakälla
+        href: paginated-reports-embedded-data-source.md
+      - name: Skapa en inbäddad datauppsättning
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Skapa parametrar
+        href: paginated-reports-parameters.md
+      - name: Publicera en sidnumrerad rapport
+        href: paginated-reports-save-to-power-bi-service.md
+      - name: Visa en sidnumrerad rapport
+        href: paginated-reports-view-power-bi-service.md
+      - name: Interagera med parametrar
+        href: paginated-reports-view-parameters.md
   - name: Resurser
     items:
     - name: Videor
@@ -802,38 +818,6 @@ items:
       href: supported-languages-countries-regions.md
     - name: Vitböcker
       href: whitepapers.md
-- name: Sidnumrerade rapporter i Power BI
-  items:
-  - name: Översikt
-    items:
-    - name: Vad är sidnumrerade rapporter? (Förhandsgranskning)
-      href: paginated-reports-report-builder-power-bi.md
-  - name: Självstudier
-    items:
-    - name: Skapa en sidnumrerad rapport och ladda upp den
-      href: paginated-reports-quickstart-aw.md
-  - name: Begrepp
-    items:
-    - name: Komma runt rapportdesignvyn
-      href: paginated-reports-report-design-view.md
-    - name: Vanliga frågor och svar om sidnumrerade rapporter
-      href: paginated-reports-faq.md
-  - name: Gör så här
-    items:
-    - name: Ange data direkt i en sidnumrerad rapport
-      href: paginated-reports-enter-data.md
-    - name: Skapa en inbäddad datakälla
-      href: paginated-reports-embedded-data-source.md
-    - name: Skapa en inbäddad datauppsättning
-      href: paginated-reports-create-embedded-dataset.md
-    - name: Skapa parametrar
-      href: paginated-reports-parameters.md
-    - name: Publicera en sidnumrerad rapport
-      href: paginated-reports-save-to-power-bi-service.md
-    - name: Visa en sidnumrerad rapport
-      href: paginated-reports-view-power-bi-service.md
-    - name: Interagera med parametrar
-      href: paginated-reports-view-parameters.md
 - name: Power BI för utvecklare
   items:
   - name: Vad kan utvecklare göra med Power BI?
@@ -1265,9 +1249,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: d6dd88caff9e0f2cdef7f7697c81161fe32c0b35
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: a9156a07a1677c5cac424eef7349949bd47e79e0
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331860"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830411"
