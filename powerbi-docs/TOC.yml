@@ -444,22 +444,10 @@ items:
         href: service-power-bi-get-started-third-party-apps.md
   - name: Gör så här
     items:
-    - name: Vanliga aktiviteter
-      items:
-      - name: Byt namn på innehåll i Power BI
-        href: service-rename.md
-      - name: Snabba insikter i Power BI
-        href: service-insights.md
-      - name: Registrera din organisation som tillhör amerikanska myndigheter
-        href: service-govus-signup.md
-      - name: Datavarningar i Power BI-tjänsten
-        href: service-set-data-alerts.md
-      - name: Komma igång med Power BI – vanliga frågor och svar
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: Ta bort nästan vad som helst i Power BI
-        href: service-delete.md
     - name: Ansluta till tjänster
       items:
+      - name: Ansluta till tjänster
+        href: service-connect-to-services.md
       - name: Acumatica
         href: service-connect-to-acumatica.md
       - name: Adobe Analytics
@@ -574,7 +562,7 @@ items:
         href: service-parameters.md
       - name: Hämta data från filer med kommaavgränsade värden (.csv)
         href: service-comma-separated-value-files.md
-      - name: Realtidsströmning i Power BI (förhandsgranskning)
+      - name: Realtidsuppspelning i Power BI
         href: service-real-time-streaming.md
       - name: Publicera till Power BI från Excel 2016
         href: service-publish-from-excel.md
@@ -626,6 +614,8 @@ items:
         href: service-dashboard-pin-tile-from-q-and-a.md
       - name: Fästa en hel rapportsida på en instrumentpanel
         href: service-dashboard-pin-live-tile-from-report.md
+      - name: Datavarningar i Power BI-tjänsten
+        href: service-set-data-alerts.md
       - name: Användningsstatistik för instrumentpaneler
         href: service-usage-metrics.md
       - name: Lägga till en bild, textruta, video eller kod på en instrumentpanel
@@ -634,8 +624,6 @@ items:
         href: service-dashboard-edit-tile.md
       - name: Tips för att utforma en bra instrumentpanel
         href: service-dashboards-design-tips.md
-      - name: Optimera dina data för Quick Insights.
-        href: service-insights-optimize.md
       - name: Skapa en telefonvy av en instrumentpanel
         href: service-create-dashboard-mobile-phone-view.md
       - name: Skapa en QR-kod för en panel
@@ -648,7 +636,7 @@ items:
         href: service-dashboard-themes.md
     - name: Rapporter
       items:
-      - name: Skapa en ny rapport från en datauppsättning
+      - name: Skapa en rapport från en datauppsättning
         href: service-report-create-new.md
       - name: Lägga till ett filter i en rapport
         href: power-bi-report-add-filter.md
@@ -664,7 +652,7 @@ items:
         href: service-usage-metrics.md
       - name: Skapa en QR-kod för en rapport
         href: service-create-qr-code-for-report.md
-      - name: Exportera en rapport från tjänsten till Power BI Desktop (förhandsversion)
+      - name: Exportera en rapport till Power BI Desktop (förhandsversion)
         href: service-export-to-pbix.md
       - name: Filtrera en rapport med hjälp av parametrar i URL:en
         href: service-url-filters.md
@@ -672,18 +660,24 @@ items:
         href: power-bi-reports-performance.md
     - name: Ställa frågor om dina data
       items:
+      - name: Komma igång med Power BI – vanliga frågor och svar
+        href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Använda frågor och svar för att skapa visualiseringar och rapporter
         href: power-bi-tutorial-q-and-a.md
       - name: Få dina data att fungera bra med Frågor och svar
         href: service-prepare-data-for-q-and-a.md
-      - name: Aktivera Cortana för Power BI
-        href: service-cortana-enable.md
       - name: Skapa aktuella frågor för Frågor och svar
         href: service-q-and-a-create-featured-questions.md
-      - name: Visualiseringstyper i Power BI
+      - name: Visualiseringstyper i Frågor och svar
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: Använda Frågor och svar med live-anslutningar
         href: service-q-and-a-direct-query.md
+      - name: Aktivera Cortana för Power BI
+        href: service-cortana-enable.md
+      - name: Snabba insikter i Power BI
+        href: service-insights.md
+      - name: Optimera dina data för Quick Insights.
+        href: service-insights-optimize.md
     - name: Dela ditt arbete
       items:
       - name: Hur kan jag samarbeta och dela?
@@ -710,28 +704,6 @@ items:
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
       - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Innehållspaket
-      items:
-      - name: Hantera, uppdatera och ta bort organisationsinnehållspaket
-        href: service-organizational-content-pack-manage-update-delete.md
-      - name: 'Organisationsinnehållspaket: kopiera, uppdatera och få åtkomst'
-        href: service-organizational-content-pack-copy-refresh-access.md
-      - name: 'Organisationsinnehållspaket: introduktion'
-        href: service-organizational-content-pack-introduction.md
-      - name: Skapa och publicera ett organisationsinnehållspaket
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: Ta bort din anslutning till ett organisationsinnehållspaket
-        href: service-organizational-content-pack-disconnect.md
-      - name: Certifiering
-        items:
-        - name: Certifieringsprogrammet för innehållspaket
-          href: service-content-pack-overview.md
-        - name: Mall för att auktorisera innehållspaket
-          href: template-content-pack-authoring.md
-        - name: Mall för att testa innehållspaket
-          href: template-content-pack-testing.md
-        - name: Mall för innehållspaketsupplevelser
-          href: template-content-pack-experience.md
     - name: Publicera
       items:
       - name: Power BI Publisher för Excel
@@ -788,26 +760,56 @@ items:
       items:
       - name: Vad är sidnumrerade rapporter? (Förhandsgranskning)
         href: paginated-reports-report-builder-power-bi.md
-      - name: Vanliga frågor och svar om sidnumrerade rapporter
+      - name: Vanliga frågor och svar om sidnumrerade rapporter (förhandsversion)
         href: paginated-reports-faq.md
-      - name: Skapa en sidnumrerad rapport och ladda upp den
+      - name: Skapa en sidnumrerad rapport och ladda upp den (förhandsversion)
         href: paginated-reports-quickstart-aw.md
-      - name: Komma runt rapportdesignvyn
+      - name: Komma runt rapportdesignvyn (förhandsversion)
         href: paginated-reports-report-design-view.md
-      - name: Ange data direkt i en sidnumrerad rapport
+      - name: Ange data direkt i en sidnumrerad rapport (förhandsversion)
         href: paginated-reports-enter-data.md
-      - name: Skapa en inbäddad datakälla
+      - name: Skapa en inbäddad datakälla (förhandsversion)
         href: paginated-reports-embedded-data-source.md
-      - name: Skapa en inbäddad datauppsättning
+      - name: Skapa en inbäddad datauppsättning (förhandsversion)
         href: paginated-reports-create-embedded-dataset.md
-      - name: Skapa parametrar
+      - name: Skapa parametrar (förhandsversion)
         href: paginated-reports-parameters.md
-      - name: Publicera en sidnumrerad rapport
+      - name: Publicera en sidnumrerad rapport (förhandsversion)
         href: paginated-reports-save-to-power-bi-service.md
-      - name: Visa en sidnumrerad rapport
+      - name: Visa en sidnumrerad rapport (förhandsversion)
         href: paginated-reports-view-power-bi-service.md
-      - name: Interagera med parametrar
+      - name: Interagera med parametrar (förhandsversion)
         href: paginated-reports-view-parameters.md
+    - name: Andra uppgifter
+      items:
+      - name: Byt namn på innehåll i Power BI
+        href: service-rename.md
+      - name: Registrera din organisation som tillhör amerikanska myndigheter
+        href: service-govus-signup.md
+      - name: Ta bort nästan vad som helst i Power BI
+        href: service-delete.md
+      - name: Innehållspaket
+        items:
+        - name: Hantera, uppdatera och ta bort organisationsinnehållspaket
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: 'Organisationsinnehållspaket: kopiera, uppdatera och få åtkomst'
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: 'Organisationsinnehållspaket: introduktion'
+          href: service-organizational-content-pack-introduction.md
+        - name: Skapa och publicera ett organisationsinnehållspaket
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: Ta bort din anslutning till ett organisationsinnehållspaket
+          href: service-organizational-content-pack-disconnect.md
+        - name: Certifiering
+          items:
+          - name: Certifieringsprogrammet för innehållspaket
+            href: service-content-pack-overview.md
+          - name: Mall för att auktorisera innehållspaket
+            href: template-content-pack-authoring.md
+          - name: Mall för att testa innehållspaket
+            href: template-content-pack-testing.md
+          - name: Mall för innehållspaketsupplevelser
+            href: template-content-pack-experience.md
   - name: Resurser
     items:
     - name: Videor
@@ -1249,9 +1251,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a9156a07a1677c5cac424eef7349949bd47e79e0
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 83446170e1ee29cdf2e2d2f1298a37c58e255f1b
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830411"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900392"

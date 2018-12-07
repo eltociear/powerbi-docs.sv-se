@@ -1,5 +1,5 @@
 ---
-title: Navigera i rapportens designvy för sidnumrerade rapporter – Power BI | Microsoft Docs
+title: Navigera i rapportens designvy för sidnumrerade rapporter (förhandsversion)
 description: Rapportens designvyn i Report Builder är designutrymmet för att skapa sidnumrerade rapporter som du kan publicera i Power BI-tjänsten.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: de3919903a3df4fdc5b0e167069b3035204761ff
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268999"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900461"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Navigera i rapportens designvy för sidnumrerade rapporter
+# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigera i rapportens designvy för sidnumrerade rapporter (förhandsversion)
 
 Rapportens designvyn i Report Builder är designutrymmet för att skapa sidnumrerade rapporter som du kan publicera i Power BI-tjänsten. Designytan är i mitten av Report Builder med menyfliksområdet och fönster runt den. Designytan är där du lägger till och organiserar dina rapportobjekt. Den här artikeln förklarar fönstren du använder för att lägga till och ordna resurserna i rapporten och för att ändra rapportegenskaper för objektet.  
 

@@ -1,5 +1,5 @@
 ---
-title: Visa en sidnumrerad rapport i Power BI-tjänsten | Microsoft Docs
+title: Visa en sidnumrerad rapport i Power BI-tjänsten (förhandsversion)
 description: I den här självstudien får du lära dig hur du visar sidnumrerade rapporter i Power BI-tjänsten.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: db067a2e81aa62febc952ce50ce4a3e82ef38b76
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 874fe08622dfcbd65463a016e87d1687b6938276
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268819"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900323"
 ---
-# <a name="view-a-paginated-report-in-the-power-bi-service"></a>Visa en sidnumrerad rapport i Power BI-tjänsten
+# <a name="view-a-paginated-report-in-the-power-bi-service-preview"></a>Visa en sidnumrerad rapport i Power BI-tjänsten (förhandsversion)
 
 I den här artikeln får du lära dig hur du visar en sidnumrerad rapport i Power BI-tjänsten. Sidnumrerade rapporter är rapporter som skapas i Report Builder och överförs till en arbetsyta i en Premium-kapacitet. Leta efter diamantikonen ![Diamantikon för Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) bredvid arbetsytans namn. 
 

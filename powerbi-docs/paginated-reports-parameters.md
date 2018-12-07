@@ -1,5 +1,5 @@
 ---
-title: Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten | Microsoft Docs
+title: Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
 description: I den här artikeln lär du dig att skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 3a1d497f112e84aeb958b86658ee3ffae3e87c6d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: d36f8e26282ae794976b0d679feb426ea04a981b
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268824"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900300"
 ---
-# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten
+# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
 
 I den här artikeln lär du dig att skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten.  En rapportparameter är ett sätt att välja rapportdata och variera rapportpresentationen på. Du kan ange ett standardvärde och en lista med tillgängliga värden, och dina rapportläsare kan ändra valet.  
 
