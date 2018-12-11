@@ -4,18 +4,19 @@ description: Anslut enkelt till och använd webbdata i Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2aef47ab1716464c0896b624069a6ebbeb4adc54
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: a0d7eeccede8f6402256eb8655657ca12dde075b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578392"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026579"
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Ansluta till en webbsida från Power BI Desktop
 Du kan ansluta till en webbsida och importera data till Power BI Desktop för användning i visuella objekt och i datamodeller.
@@ -44,7 +45,7 @@ Därifrån kan du dra fält till rapportarbetsytan och alla visuella objekt som 
 
 Om du vill lära dig mer om att ansluta till en webbplats, kan du läsa [Komma igång-guiden för Power BI Desktop](desktop-getting-started.md).
 
-### <a name="next-steps"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
 
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)

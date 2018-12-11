@@ -4,25 +4,26 @@ description: Lär dig att gruppera och diskretisera element i Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6363cbe3afdce351acc728fe29af8662702b8254
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 64ec167a295255a6813244ef6cb222b4eccb50f3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670703"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025252"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Använd gruppering i Power BI Desktop
 När **Power BI Desktop** skapar visuella objekt sammanställer den dina data i segment (eller grupper) baserat på värdena i underliggande data. Det är ofta bra, men ibland vill du begränsa hur dessa segmentvisas. Du kanske exempelvis vill placera tre produktkategorier i en större kategori (en *grupp*). Du vill kanske se försäljningsfigurer i diskreta enheter motsvarande 1 000 000 kronor istället för jämnt fördelade med 923 983 kronor per grupp.
 
 Du kan **gruppera** datapunkter i Power BI Desktop, vilket hjälper dig att tydligt visa, analysera och utforska data och trender i visuella objekt. Du kan också definiera **Diskretiseringsstorlek**, vilket ofta kallas *gruppering*, och innebär att man placerar värden i lika stora grupper som hjälper dig att visa information på ett tydligt sätt.
 
-### <a name="using-grouping"></a>Med gruppering
+## <a name="using-grouping"></a>Med gruppering
 Om du vill använda gruppering måste du markera två eller flera element på ett visuellt objekt genom att välja flera element genom att Ctrl+klicka. Högerklicka sedan på ett av de markerade elementen och välj **Gruppera** på den meny som visas.
 
 ![](media/desktop-grouping-and-binning/grouping-binning_1.png)
@@ -45,10 +46,8 @@ Du kan lägga till ett en grupperat värde i en befintlig grupp: bara markera de
 
 > [!NOTE]
 > Du kan skapa grupper för varje fält i brunnen **Fält**, utan att behöva välja värden från ett befintligt visuellt objekt. Det är bara att högerklicka på fältet och välja **Ny grupp** på den meny som visas.
-> 
-> 
 
-### <a name="using-binning"></a>Med hjälp av diskretisering
+## <a name="using-binning"></a>Med hjälp av diskretisering
 Du kan ange diskretiseringsstorlek för numeriska och tidvärden i **Power BI Desktop.** Du kan använda diskretisering för att anpassa storleken på data som visas i **Power BI Desktop**.
 
 Om du vill använda en diskretiseringsstorlek högerklickar du på ett **fält** och väljer **Ny grupp**.
