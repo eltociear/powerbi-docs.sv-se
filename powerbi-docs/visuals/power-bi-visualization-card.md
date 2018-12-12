@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9654e2838b1b62dcc856e2870b3fcc1e5301641c
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: b15d285774f0b6735fbc5df0ca2d00a81b944012
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874585"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829951"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringar
 Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrumentpanelen eller -rapporten, till exempel total försäljning, marknadsandel år för år eller totala affärsmöjligheter. Den här typen av visualisering kallas ett *kort*. Som nästan alla ursprungliga Power BI-visualiseringar, kan kort skapas med hjälp av rapportredigeraren eller Frågor och svar.
@@ -25,7 +25,7 @@ Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrument
 ## <a name="create-a-card-using-the-report-editor"></a>Skapa ett kort med hjälp av rapportredigeraren
 Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill följa med kan du [hämta exemplet](../sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
 
-1. Starta på en [tom rapportsida ](../power-bi-report-add-page.md) och välj fältet **Butik** \> **Antal öppna butiker**. Om du använder Power BI-tjänsten måste du öppna rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
+1. Börja med en tom rapportsida och välj fältet **Butik** \> **Antal öppna butiker**. Om du använder Power BI-tjänsten måste du öppna rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
 
     Power BI skapar ett stapeldiagram med ditt tal.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396829"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830112"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 Om du vill se de data som används i en visualisering, kan du visa dessa data i Power BI eller exportera data till Excel som en XLSX- eller CSV-fil. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. 
@@ -38,7 +38,7 @@ Här kan du se Will exportera data från en visualisering i sin rapport, spara d
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>Från en visualisering i en rapport
-Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../sample-procurement.md) i [Redigeringsvyn](../consumer/end-user-reading-view.md). [Lägg till en tom rapportsida](../power-bi-report-add-page.md). Följ stegen nedan för att lägga till en samling och ett filter på visualiseringsnivå.
+Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../sample-procurement.md) i [Redigeringsvyn](../consumer/end-user-reading-view.md). Lägg till en ny tom rapportsida. Följ stegen nedan för att lägga till en samling och ett filter på visualiseringsnivå.
 
 1. Skapa ett nytt stapeldiagram.  Från fönstret fält väljer du **Plats > Ort** och **Faktura > Rabattprocent**.  Du kan behöva flytta **Rabattprocent** till värdet. 
 

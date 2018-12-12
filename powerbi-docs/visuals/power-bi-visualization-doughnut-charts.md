@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab292964bb1b6b1f4218d41c46eb2c28c82a034c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 5720e52b61332aeca82d0b23b776f590634e622f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416761"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829629"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Ringdiagram i Power BI
 Ett ringdiagram liknar ett cirkeldiagram såtillvida att det visar förhållandet mellan delarna och helheten. Den enda skillnaden är att mitten är tom och har utrymme för en etikett eller ikon.
@@ -23,7 +23,7 @@ Ett ringdiagram liknar ett cirkeldiagram såtillvida att det visar förhållande
 ## <a name="create-a-doughnut-chart"></a>Skapa ett ringdiagram
 De här anvisningarna använder exemplet på detaljhandelsanalys för att skapa ett cirkeldiagram som visar försäljning detta år efter kategori. Om du vill följa med kan du [hämta exemplet](../sample-datasets.md) för Power BI-tjänsten eller Power BI Desktop.
 
-1. Börja med en [tom rapportsida](../power-bi-report-add-page.md). Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
+1. Börja med en tom rapportsida. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
 
 2. I Fält-panelen, väljer du **Försäljning** \> **Senaste årets försäljning**.  
    

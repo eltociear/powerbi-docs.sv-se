@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f2e3ad8528108e63a5573a3df502f90fee6d4c55
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a27e192c5ccc1fb3a7af9bafbc9c4fd14ccabf4c
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670174"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900116"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -37,7 +37,7 @@ Följande funktioner är tillgängliga för dem som använder **Power BI för am
 * [Importera data](service-get-data.md) och rapporter från Excel, CSV och Power BI Desktop-filer
 * Data Management Gateway
 * Alla data krypteras i Azure SQL- och Blob Storage för Power BI
-* Ansluta till tjänster med [innehållspaket](consumer/end-user-connect-to-services.md)
+* Ansluta till tjänster med [innehållspaket](service-connect-to-services.md)
 
 ## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Anslutningen mellan myndigheter och offentliga Azure-molntjänster 
 

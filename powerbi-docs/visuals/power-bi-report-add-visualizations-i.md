@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: df53cf238a52502cecb4d1f77482b7b1a09c6b7a
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: f2edbd7b0b977b378d25634a0f9505101350d73b
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545278"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829813"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Del 1, lägg till visualiseringar i en Power BI-rapport
 Den här artikeln ger en snabb introduktion till att skapa en visualisering i en rapport med antingen Power BI-tjänsten eller Power BI Desktop.  För mer avancerat innehåll, se [del II](power-bi-report-add-visualizations-ii.md). Amanda visar ett par sätt att skapa, redigera och formatera visuella objekt på rapportarbetsytan. Prova sedan att skapa en egen rapport med hjälp av den [Försäljning- och marknadsföringsexempel](../sample-datasets.md).
@@ -29,7 +29,7 @@ Den här artikeln ger en snabb introduktion till att skapa en visualisering i en
 2. Om fönstret Fält inte visas, väljer du på pilikonen för att öppna den. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
-3. [Lägg till en ny sida i rapporten](../power-bi-report-add-page.md).
+3. Lägg till en tom sida i rapporten.
 
 ## <a name="add-visualizations-to-the-report"></a>Lägg till visuella objekt i rapporten
 1. Skapa ett visuellt objekt genom att välja ett fält från fönstret **Fält**.  

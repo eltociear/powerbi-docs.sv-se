@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aec8bc2d7faa8d3c4b9c7b4eb69ed9a930cfbcd1
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 0492390ae47c8d5aa0930a063370712c80d61de2
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417244"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829652"
 ---
 # <a name="kpi-visuals"></a>Visuell KPI-information
 En KPI (Key Performance Indicator) är en visuell ledtråd som kommunicerar de framsteg som gjorts mot ett mätbart mål. Mer information om KPI:er finns i [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -46,7 +46,7 @@ Du kan också titta på när Will visar hur du skapar ett enskilt visuellt mått
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Öppna rapporten i rapportvyn och [välj den gula fliken för att lägga till en ny sida](../power-bi-report-add-page.md).    
+1. Öppna rapporten i rapportvyn och välj den gula fliken för att lägga till en ny sida.    
 2. Välj **Försäljning > Total Units This Year (Totalt antal enheter i år)** i fönstret Fält.  Det här är indikatorn.
 3. Lägg till **Tid > FiscalMonth (Räkenskapsmånad)**.  Detta representerar trenden.
 4. VIKTIGT! Sortera diagrammet efter **FiscalMonth (Räkenskapsmånad)**. När du har konverterat visualiseringen till en KPI, går det inte att sortera.

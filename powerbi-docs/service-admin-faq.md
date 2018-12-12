@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157090"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830319"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -174,11 +174,15 @@ Ditt konto måste vara markerat som **Global administratör** i Office 365 eller
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hur hanterar jag en klient som skapas av Microsoft för mina användare?
 
-Om en klient har skapats av Microsoft kan du göra anspråk på och hantera som klienten med följande steg:
+När en självbetjäningsanvändare registrerar sig för en molnbaserad tjänst som använder Azure AD läggs de till i en ohanterad Azure AD-katalog baserat på e-postdomänen. Du kan göra anspråk på och hantera den klient som har skapats med hjälp av en process som kallas *adminövertagande*. Typen av övertagande beror på om det finns en befintlig hanterad klient som är associerad med domänen:
 
-1. Anslut klienten genom att registrera dig för Power BI med en e-postadress som matchar klient-domänen som du vill hantera. Till exempel om Microsoft har skapat klienten contoso.com ska du ansluta till klienten med en e-postadress som slutar med @contoso.com.
+* Använd ett *internt övertagande* för att skapa en ny hanterad klient för domänen.
 
-1. Gör anspråk administratörsrättigheter genom att verifiera att du äger domänen: när du har loggat in på klienten kan du ge dig till rollen som *global administratör* genom att verifiera att du äger domänen. Följ stegen nedan i [Office 365-dokumentation](/office365/admin/misc/become-the-admin).
+* Använd ett *externt övertagande* för att flytta domänen till en befintlig hanterad klient.
+
+Mer information finns i [Ta över en ohanterad katalog som administratör i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+
+När du gör ett externt övertagande placeras Power BI-innehåll som har skapats före övertagandet på en [Power BI-arkiverad arbetsyta](service-admin-power-bi-archived-workspace.md). Du måste migrera allt innehåll som du vill använda i den nya klienten manuellt.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till?
 
