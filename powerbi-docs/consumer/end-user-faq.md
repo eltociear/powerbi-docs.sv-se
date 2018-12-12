@@ -3,19 +3,20 @@ title: Vanliga frågor och svar för Power BI-användare
 description: Vanliga frågor och svar om Power BI
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/06/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: cf085529d940b8eb3457bcf60cc702f7838a27a8
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: e329b40c0be55ce164ab487b7eb1d3006062b15a
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908611"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280683"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 * Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).

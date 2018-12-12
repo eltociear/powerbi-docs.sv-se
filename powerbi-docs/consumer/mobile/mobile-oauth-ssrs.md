@@ -169,7 +169,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 | --- | --- |
 | **ADFSRelyingPartyName** |Detta är det Web API-namn som du har skapat som en del av appgruppen i AD FS. |
 | **ExternalCertificateThumbprint** |Detta är certifikatet som ska användas för externa användare. Det är viktigt att det här certifikatet är giltigt på mobila enheter och kommer från en betrodd certifikatutfärdare. |
-| **BackendServerUrl** |Detta är URL: en till rapportservern från WAP-servern. Om server för WAP finns i en DMZ kan du behöva använda ett fullständigt kvalificerat domännamn. Kontrollera att du kan träffa denna URL från webbläsaren på WAP-servern. |
+| **BackendServerUrl** |Detta är URL: en till rapportservern från WAP-servern. Om server för WAP finns i ett perimeternätverk kan du behöva använda ett fullständigt kvalificerat domännamn. Kontrollera att du kan träffa denna URL från webbläsaren på WAP-servern. |
 | **BackendServerAuthenticationSPN** |Det här är SPN-namnet som du har skapat som en del av Reporting Services-konfigurationen. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Ställa in integrerad autentisering för WAP-appen
