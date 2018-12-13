@@ -262,19 +262,19 @@ items:
         href: desktop-inline-hierarchy-labels.md
       - name: Använda numeriskt intervallutsnitt
         href: desktop-slicer-numeric-range.md
-      - name: Skapa ett dynamiskt utsnitt som du kan ändra storlek på
+      - name: Skapa ett utsnitt som du kan ändra storlek på
         href: power-bi-slicer-filter-responsive.md
-      - name: Skapa anpassade Power BI Cortana-svarskort
+      - name: Skapa anpassade Cortana-svarskort
         href: service-cortana-answer-cards.md
       - name: Säkerhet på radnivå
         href: desktop-rls.md
-      - name: Anpassa knappbeskrivningar i Power BI Desktop
+      - name: Anpassa knappbeskrivningar
         href: desktop-custom-tooltips.md
-      - name: Villkorlig tabellformatering i Power BI Desktop
+      - name: Villkorsstyrd tabellformatering
         href: desktop-conditional-table-formatting.md
       - name: Sortera efter kolumn i Power BI Desktop
         href: desktop-sort-by-column.md
-      - name: Skapa rapporter som är optimerade för Power BI-mobilapparna
+      - name: Skapa rapporter som är optimerade för mobila appar
         href: desktop-create-phone-report.md
       - name: Använd Visa data och Visa poster
         href: desktop-see-data-see-records.md
@@ -284,23 +284,23 @@ items:
       items:
       - name: Metodtips för visualisering
         href: visuals/power-bi-visualization-best-practices.md
-      - name: Ändra visualiseringstypen i en Power BI-rapport
+      - name: Ändra visualiseringstypen i en rapport
         href: visuals/power-bi-report-change-visualization-type.md
       - name: Datapunktsbegränsningar efter visuell typ
         href: visuals/power-bi-data-points.md
       - name: Komma igång med färgformatering och axelegenskaper
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-      - name: Tips för färgformatering i Power BI
+      - name: Tips för färgformatering
         href: visuals/service-tips-and-tricks-for-color-formatting.md
-      - name: Kopiera och klistra in en visualisering i Power BI
+      - name: Kopiera och klistra in en visualisering
         href: visuals/power-bi-visualization-copy-paste.md
       - name: Exportera data som används för att skapa visualiseringen
         href: visuals/power-bi-visualization-export-data.md
-      - name: Flytta, ändra storlek och fälla ut en visualisering i en Power BI-rapport
+      - name: Flytta, ändra storlek och fälla ut en visualisering i en rapport
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: Hyperlänkar i tabeller
         href: power-bi-hyperlinks-in-tables.md
-      - name: Lägga till en hyperlänk i en textruta i en Power BI-rapport
+      - name: Lägga till en hyperlänk i en textruta i en rapport
         href: service-add-hyperlink-to-text-box.md
       - name: Ändra hur visuella objekt interagerar i en rapport
         href: service-reports-visual-interactions.md
@@ -598,7 +598,7 @@ items:
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Instrumentpaneler
       items:
-      - name: Power BI-instrumentpanel
+      - name: Introduktion till instrumentpaneler
         href: service-dashboards.md
       - name: Paneler på instrumentpanelen
         href: service-dashboard-tiles.md
@@ -692,6 +692,8 @@ items:
         href: service-create-workspaces.md
       - name: Skapa de nya arbetsytorna (förhandsversion)
         href: service-create-the-new-workspaces.md
+      - name: Hantera datalagring i arbetsytor
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Dela en filtrerad rapport
         href: service-share-reports.md
       - name: Publicera på webben från Power BI
@@ -1261,9 +1263,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 0189fe52981e1bc926ae8a836791e7111e4b530e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181023"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280980"
