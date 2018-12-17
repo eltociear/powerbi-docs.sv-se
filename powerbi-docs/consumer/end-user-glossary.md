@@ -2,17 +2,18 @@
 title: Ordlista för Power BI-användare
 description: Power BI innehåller många nya termer och en del befintliga termer används på nya sätt. Använd vår ordlista för att bekanta dig med Power BI-terminologin.
 services: power-bi
+ms.custom: seodec18
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/12/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026356"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280798"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -42,7 +43,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **AppSource** Centraliserad lagringsplats online där du kan bläddra och upptäcka instrumentpaneler, rapporter, datauppsättningar och appar att ladda ned.
 
-**ArcGIS Maps for Power BI** ArcGIS är en plattform för mappning och analys som skapats av företaget ESRI. Namnet på det visuella objektet som ingår i biblioteket med Power BI-visualiseringar kallas ArcGIS Maps for Power BI.
+**ArcGIS för Power BI** ArcGIS är en plattform för mappning och analys som skapats av företaget ESRI. Namnet på det visuella objektet som ingår i biblioteket med Power BI-visualiseringar kallas ArcGIS för Power BI.
 
 **tilldela** [Power BI Premium] Verb för att flytta en arbetsyta till eller från dedikerad kapacitet. Använd inte en ”uppgradering” för att flytta en arbetsyta till dedikerad kapacitet eftersom det antyder att ”dedikerad” är överlägset ”delad” kapacitet.  
 
