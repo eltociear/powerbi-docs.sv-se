@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f87db1f715118f346e3b8069897e92fd157f881c
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 6d602b19141c6277fe7ec6a7627749f57f6e25a6
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265942"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180724"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Ansluta till data som skapats av Power BI-dataflöden i Power BI Desktop (Beta)
 I **Power BI Desktop** kan du ansluta till data som skapats av **Power BI-dataflöden** precis som andra datakällor i Power BI Desktop.
@@ -36,15 +36,36 @@ Om du vill använda den här förhandsversionen av **anslutningsappen för Power
 
 Du kan förbättra datainmatningens prestanda för dataflöden. Om t.ex. datainmatningen är för stor för **Power BI Desktop** för att hantera på datorn, kan du använda länkade och beräknad entiteter i dataflöden för att aggregera data (inom dataflöden) och endast mata in i förväg förberedda, sammanställda data. På det sättet, utförs bearbetning av stora mängder data online i dataflöden i stället för lokalt i din instans som körs av **Power BI Desktop**. Med denna metod kan Power BI Desktop mata in mindre mängder data och behåller upplevelsen av dataflöden responsiv och snabb.
 
+## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
+
+De flesta dataflöden finns i Power BI-tjänsteklienten. Dock kan **Power BI Desktop**-användare inte komma åt dataflöden som är lagrade i Azure Data Lake Storage Gen2-kontot, såvida inte de är ägare av dataflödet eller de uttryckligen har godkänts för detta dataflödes CDM-mapp. Se följande situation:
+
+1.  Anna skapar en ny apparbetsyta och konfigurerar den så att den lagrar dataflöden i organisationens data lake.
+2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
+3.  Ben får ett fel eftersom han inte har lagts till som behörig användare av det dataflödets CDM-mapp i aktuell data lake.
+
+    ![Fel när dataflödet användes](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+
+För att lösa problemet, måste Ben beviljas läsbehörighet till Common Data Service-mappen och dess filer. Du kan läsa mer om hur du ger åtkomst till Common Data Service-mappen i [den här artikeln](https://go.microsoft.com/fwlink/?linkid=2029121).
+
+
+
 
 ## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga intressanta saker du kan göra med Power BI-dataflöden. Mer information finns i följande källor:
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
-* [Skapa och använd dataflöden i Power BI](service-dataflows-create-use.md)
-* [Använda beräknade entiteter på Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
+* [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
+* [Använda beräknade entiteter i Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
 * [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
 * [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+
+Mer information om integration med Azure Data Lake Storage Gen2 finns i följande artiklar:
+
+* [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
+* [Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)](service-dataflows-configure-workspace-storage-settings.md)
+* [Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)](service-dataflows-add-cdm-folder.md)
+* [Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Det finns även artiklar om **Power BI Desktop** som kan vara användbara:
 

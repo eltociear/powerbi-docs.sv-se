@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 4ac828baa4f6080ab50008aa4ffb570ff016246f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: a5bf8a82fde84537394af4a37f33f674dbf3615b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223153"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180356"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
 
@@ -38,9 +38,9 @@ När du är klar med att koda och testa ditt anpassade visuella objekt och har f
 | Exempel på .pbix-rapportfil |Ja |Om du vill visa ditt visuella objekt bör du hjälpa användare att bekanta sig med det visuella objektet. Du bör fokusera på det mervärde som det visuella objektet medför till användaren och ge exempel på användningsområden, formateringsalternativ med mera. Du kan också lägga till en *”tips”*-sida på slutet med några tips och tricks, saker att undvika och liknande.<br>Exemplet på en .pbix-rapportfil måste fungera offline, utan någon extern anslutning. |
 | Ikon |Ja |Du bör inkludera den anpassade visuella logotypen som visas i Store. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300 px (bredd) x 300 px (höjd). **Viktigt!** Granska [snabbguiden](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) noggrant innan du skickar ikonen. |
 | Skärmbilder |Ja |Du måste ange minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 1366 px (bredd) x 768 px (höjd). Filstorleken får inte vara större än 1024 kB. *Lägg till textbubblor för att tydligt betona mervärdet av viktiga funktioner som visas i varje skärmbild.* |
-| Länk till nedladdningssupport |Ja |Ange en URL för att stödja kunder som har problem med ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller http://. |
-| Länk till sekretessdokumentet |Ja |Ange en länk till sekretesspolicyn för kunder som använder ditt visuella objekt. Formatet på länken ska inkludera https:// eller http://. |
-| Licensavtal (EULA) |Ja |Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för anpassade visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Länk till nedladdningssupport |Ja |Ange en URL för att stödja kunder som har problem med ditt visuella objekt. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller http://. |
+| Länk till sekretessdokumentet |Ja |Ange en länk till sekretesspolicyn för kunder som använder ditt visuella objekt. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på länken ska inkludera https:// eller http://. |
+| Licensavtal (EULA) |Ja |Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för anpassade visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Videolänk |Nej |Om du vill öka användarnas intresse för ditt anpassade visuella objekt är det bäst att ange en länk till en video om ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller http://. |
 | GitHub-lagringsplats |Nej |Det är lämpligt att ha en giltig och offentlig länk till en [GitHub](https://www.github.com)-databas med datakällor för ditt visuella objekt och exempeldata, så att andra utvecklare kan ge feedback och föreslå förbättringar för din kod. |
 
@@ -86,10 +86,10 @@ Slutför överföringen genom att följa stegen.
 
 5. Fyll i **Allmän information**.
 
-   * *Överföringsrubrik:* namnet din överföring får i Developer Center
-   * *Version:* versionsnumret är automatiskt ifylld från appaketet.
-   * *Utgivningsdatum (UTC):* välja ett datum då din app ska lanseras i store. Om du väljer ett datum i framtiden blir appen inte tillgängligt i store förrän detta datum har nåtts.
-   * *Kategori:* första kategorin fylls i automatiskt som ”Datavisualisering + BI”. Så här markeras alla anpassade visuella Power BI-objekt. Du kan ange upp till 2 ytterligare kategorier som hjälper användare att söka efter ditt visuella objekt
+   * *Överföringsrubrik:* Namnet din överföring får i Developer Center.
+   * *Version:* Versionsnumret är automatiskt ifyllt från ditt tilläggsprogrampaket.
+   * *Utgivningsdatum (UTC):* Välj ett datum då din app ska lanseras i butiken. Om du väljer ett datum i framtiden blir appen inte tillgängligt i store förrän detta datum har nåtts.
+   * *Kategori:* Den första kategorin fylls i automatiskt som ”Datavisualisering + BI”. Så här markeras alla anpassade visuella Power BI-objekt. Du kan ange upp till 2 ytterligare kategorier som hjälper användare att söka efter ditt visuella objekt
    * *Testanteckningar:* valfritt om du vill ge anvisningar till testarna på Microsoft
    * *Min app anropar, stöder, innehåller eller använder kryptografi eller kryptering:* lämna alternativet omarkerat
    * *Gör det här tillägget tillgängligt i Office-tillägg-katalogen på iPad:* lämna alternativet omarkerat
@@ -104,7 +104,7 @@ Slutför överföringen genom att följa stegen.
    * Videolänk
    * Licensavtalet (EULA)
 
-       Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för anpassade visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för anpassade visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 
 8. Välj **nästa** för att komma till sidan **Information**.
 
@@ -115,8 +115,8 @@ Slutför överföringen genom att följa stegen.
 10. Fyll i ”Beskrivning”.
 
     * *Programnamn (för det här språket):* Ange rubriken för appen som det visas i storefront.
-    * *Kort beskrivning:* ange den korta beskrivningen för din app, upp till 100 tecken, som det visas i storefront. Den här beskrivningen visas på sidorna på den högsta nivån tillsammans med logotypen. Du kan använda beskrivningen från pbiviz-paketet.
-    * *Lång beskrivning:* ge en mer detaljerad beskrivning av din app som kommer att visas på din appinformationssida. Ange en länk till den offentliga databasen, till exempel GitHub, här om du vill låta communityn förbättra din visuella genom att öppna källkoden.
+    * *Kort beskrivning:* Ange den korta beskrivningen för din app, upp till 100 tecken, som det visas i storefront. Den här beskrivningen visas på sidorna på den högsta nivån tillsammans med logotypen. Du kan använda beskrivningen från pbiviz-paketet.
+    * *Lång beskrivning:* Ge en mer detaljerad beskrivning av din app som kommer att visas på din appinformationssida. Ange en länk till den offentliga databasen, till exempel GitHub, här om du vill låta communityn förbättra din visuella genom att öppna källkoden.
 
 11. Överför minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 1366 px (bredd) x 768 px (höjd). Filstorleken får inte vara större än 1024 kB. *Lägg till textbubblor för att tydligt betona mervärdet av viktiga funktioner som visas i varje skärmbild.*
 

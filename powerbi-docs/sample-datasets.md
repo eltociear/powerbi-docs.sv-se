@@ -4,25 +4,26 @@ description: Exempel på innehållspaket, PBIX-filer och Excel-datauppsättninga
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: fa6c6094e4fdfefebd0c7bb1f9ec8fa87d41766b
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: e46cfffc28bd77685e0a34b492e54234a76afa35
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717802"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180908"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Vilka exempeldata är tillgängliga för användning med Power BI?
 Säg att du har använt Power BI och vill prova men inte har några data.  Eller så har du en datauppsättning men eftersom du inte förstår (ännu) hur Power BI fungerar oroar du dig för att du på något sätt ska skada din datauppsättning.
 
 Du behöver inte känna dig stressad! obviEnce ([www.obvience.com](http://www.obvience.com/)) och Microsoft har skapat exempel att använda tills du känner dig bekvämade med Power BI.  Dessa data är anonyma och representerar olika branscher: ekonomi, HR, försäljning med mera. När du läser igenom våra onlinedokumentation kommer du att hitta självstudier och exempel som använder dessa dataexempel så att du kan följa med.      
 
-   ![](media/sample-datasets/power-bi-samples.png)
+   ![Tillgängliga exempel](media/sample-datasets/power-bi-samples.png)
 
 Vart och ett av de här exemplen finns i olika format: som ett innehållspaketet, som en enskild Excel-arbetsbok och som en PBX-fil. Om du inte vet vad dessa saker är eller hur du skaffa dem, oroa dig inte. Vi förklarar det senare i den här artikeln. För varje exempel har vi skapat en *rundtur* som är en typ av artikel som talar om historien bakom exemplet och vägleder dig genom olika scenarier. Ett scenario kanske besvarar frågor för din chef, ett annat kanske söker efter konkurrenskraftiga insikter eller skapar rapporter och instrumentpaneler att dela eller förklarar en företagsförändring.   
 
@@ -48,42 +49,42 @@ Genom att klicka på någon av länkarna nedan för att hämta Excel-arbetsböck
 ## <a name="available-samples"></a>Tillgängliga exempel
 Åtta exempel är tillgängliga som du kan använda.  Vart och ett representerar olika branscher.
 
-### <a name="customer-profitability-sample--mediasample-datasetspower-bi-cp2png"></a>Exempel på kundlönsamhet![](media/sample-datasets/power-bi-cp2.png)
+### <a name="customer-profitability-sample--customer-profitability-samplemediasample-datasetspower-bi-cp2png"></a>Exempel på kundlönsamhet  ![Exempel på kundlönsamhet](media/sample-datasets/power-bi-cp2.png)
 [Ta en rundtur i exemplet för kundlönsamhet](sample-customer-profitability.md)
 
 Det här branschexemplet analyserar en ekonomichefs nyckelmått för hennes ledning, produkter och kunder. Du kan undersöka vilka faktorer som påverkar företagets lönsamhet.
 
-### <a name="human-resources-sample--mediasample-datasetspower-bi-hrpng"></a>Exempel på personalfrågor ![](media/sample-datasets/power-bi-hr.png)
+### <a name="human-resources-sample--human-resources-samplemediasample-datasetspower-bi-hrpng"></a>Exempel på personalfrågor  ![Exempel på personalfrågor](media/sample-datasets/power-bi-hr.png)
 [Ta en rundtur i exemplet för personalfrågor](sample-human-resources.md)
 
 Det här branschexemplet fokuserar på anställningsstrategin för ett företag genom att analysera nyanställda, aktiva medarbetare och anställda som har slutat.  Genom att utforska data kan du hitta trender i frivilliga separeringar och eventuella fördomar i anställningsstrategin.
 
-### <a name="it-spend-analysis-sample-mediasample-datasetspower-bi-itpng"></a>Exempel på IT-utgiftsanalys![](media/sample-datasets/power-bi-it.png)
+### <a name="it-spend-analysis-sample-it-spend-analysis-samplemediasample-datasetspower-bi-itpng"></a>Exempel på IT-utgiftsanalys ![Exempel på IT-utgiftsanalys](media/sample-datasets/power-bi-it.png)
 [Ta en rundtur i exemplet för IT-utgiftsanalys](sample-it-spend.md)
 
-I det här branschexemplet analyserar vi planerade kontra faktiska kostnader för ett företags IT-avdelning. Den här jämförelsen hjälper oss att förstå hur väl företaget planerade för året och undersöka områden med stora avvikelser från planen. Företaget i det här exemplet går igenom en årlig planeringscykel och sedan genererar de en ny senaste uppskattning (LE) kvartalsvis för att analysera förändringar i IT-utgifter över räkenskapsåret.
+I det här branschexemplet analyserar vi planerade kontra faktiska kostnader för ett företags IT-avdelning. Den här jämförelsen hjälper oss att förstå hur väl företaget planerade för året och undersöka områden med stora avvikelser från planen. Företaget i det här exemplet går igenom en årlig planeringscykel och skapar kvartalsvis en ny senaste uppskattning (LE) för att analysera förändringar i IT-utgifter över räkenskapsåret.
 
-### <a name="opportunity-analysis-sample--mediasample-datasetspower-bi-oapng"></a>Exempel på analys av affärsmöjligheter![](media/sample-datasets/power-bi-oa.png)
+### <a name="opportunity-analysis-sample--opportunity-analysis-samplemediasample-datasetspower-bi-oapng"></a>Exempel på affärsmöjlighetsanalys  ![Exempel på affärsmöjlighetsanalys](media/sample-datasets/power-bi-oa.png)
 [Ta en rundtur i exemplet för analys av affärsmöjligheter](sample-opportunity-analysis.md)
 
 Det här branschexemplet utforskar ett programvaruföretags försäljningskanaler. Säljare övervaka sina direkta och partnerförsäljningskanaler genom spårning av affärsmöjligheter och intäkter efter region, avtalsstorlek och kanal.
 
-### <a name="procurement-analysis-sample--mediasample-datasetspower-bi-papng"></a>Exempel på anskaffningsanalys ![](media/sample-datasets/power-bi-pa.png)
+### <a name="procurement-analysis-sample--procurement-analysis-samplemediasample-datasetspower-bi-papng"></a>Exempel på anskaffningsanalys  ![Exempel på anskaffningsanalys](media/sample-datasets/power-bi-pa.png)
 [Ta en rundtur i exemplet för anskaffningsanalys](sample-procurement.md)
 
 Det här branschexemplet analyserar en ekonomichefs nyckelmått för hennes ledning, produkter och kunder. Du kan undersöka vilka faktorer som påverkar företagets lönsamhet
 
-### <a name="retail-analysis-sample--mediasample-datasetspower-bi-rspng"></a>Exempel på detaljhandelsanalys ![](media/sample-datasets/power-bi-rs.png)
+### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Exempel på detaljhandelsanalys  ![Exempel på detaljhandelsanalys](media/sample-datasets/power-bi-rs.png)
 [Ta en rundtur i exemplet för detaljhandelsanalys](sample-retail-analysis.md)
 
 Det här branschexemplet analyserar försäljningsdata för sålda artiklar över flera butiker och distrikt. Måtten jämför årets resultat med förra årets inom följande områden: försäljning, enheter, bruttomarginal och skillnader, samt lagringsanalys.
 
-### <a name="sales-and-marketing-sample--mediasample-datasetspower-bi-smpng"></a>Exempel på försäljning och marknadsföring ![](media/sample-datasets/power-bi-sm.png)
+### <a name="sales-and-marketing-sample--sales-and-marketing-samplemediasample-datasetspower-bi-smpng"></a>Exempel på försäljning och marknadsföring  ![Exempel på försäljning och marknadsföring](media/sample-datasets/power-bi-sm.png)
 [Ta en rundtur i exemplet för försäljning och marknadsföring](sample-sales-and-marketing.md)
 
 Det här branschexemplet analyserar ett tillverkningsföretag, VanArsdel Ltd. Det tillåter marknadschefen att titta på branschen och VanArsdels marknadsandel.  Genom att utforska exemplet hittar du företagets marknadsandel, produktvolym, försäljning och omdöme.
 
-### <a name="supplier-quality-sample--mediasample-datasetspower-bi-sqpng"></a>Exempel på leverantörskvalitet ![](media/sample-datasets/power-bi-sq.png)
+### <a name="supplier-quality-sample--supplier-quality-samplemediasample-datasetspower-bi-sqpng"></a>Exempel på leverantörskvalitet  ![Exempel på leverantörskvalitet](media/sample-datasets/power-bi-sq.png)
 [Ta en rundtur i exemplet för leverantörskvalitet](sample-supplier-quality.md)
 
 Branschexemplet fokuserar på en av de mest typiska utmaningarna i leveranskedjan – analys av leverantörskvalitet. Två primära mått används i den här analysen: det totala antalet defekter och den totala stilleståndstid som dessa defekter har orsakat. Det här exemplet har två huvudmål: förstå vilka som är de bästa respektive sämsta leverantörerna med avseende på kvalitet, och identifiera vilka anläggningar som är bäst på att hitta och avvisa fel, för att minimera driftavbrotten.
@@ -100,16 +101,16 @@ Innehållspaket är de enda exempelformat som är tillgängliga inne i Power BI;
 1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
 2. Längst ned i vänster hörn väljer du **Hämta data**.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![Hämta data-ikon](media/sample-datasets/power-bi-get-data.png)
 3. På sidan Hämta data väljer du ikonen **Exempel**.
 
-   ![](media/sample-datasets/power-bi-samples-icon.png)
+   ![Exempel-ikon](media/sample-datasets/power-bi-samples-icon.png)
 4. Välj ett av exemplen för att öppna en beskrivning av exemplet. Välj sedan **Anslut**.  
 
-   ![](media/sample-datasets/power-bi-connect.png)
+   ![Välj ett exempel > Välj Anslut](media/sample-datasets/power-bi-connect.png)
 5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. Använd exemplen för att ta en testtur i Power BI.  
 
-   ![](media/sample-datasets/power-bi-asterisk.png)
+   ![Asterisk * för nytt innehåll](media/sample-datasets/power-bi-asterisk.png)
 
 Nu när du har dessa data är du på god väg.  Prova några av våra självstudier med exemplen på innehållspaket eller öppna helt enkelt Power BI-tjänsten och utforska den.
 
@@ -128,10 +129,10 @@ Varje exempel på innehållspaket är också tillgängligt som en Excel-arbetsbo
    * [Exempel på försäljning och marknadsföring](http://go.microsoft.com/fwlink/?LinkId=529785)
 2. Spara den hämtade filen. Det har betydelse var du sparar filen.
 
-   * ![](media/sample-datasets/power-bi-local-file2.png)  **Lokalt** – om du sparar filen till en lokal enhet på datorn eller en annan plats i din organisation, från Power BI, kan du importera filen till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen har i själva verket inte importerats till Power BI. Det som händer är att en ny datauppsättning skapas på din Power BI-webbplats samt att data och i vissa fall datamodellen läses in i datauppsättningen. Om din fil har några rapporter kommer de att visas på Power BI-webbplatsen under Rapporter.
-   * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive – företag** – om du har OneDrive för företag och du loggar in med samma konto som du loggar in i Power BI med, är detta det mest effektiva sättet att hålla ditt arbete i Excel, Power BI eller en CSV-fil synkroniserat med din datauppsättning, dina rapporter och dina instrumentpaneler i Power BI. Eftersom både Power BI och OneDrive finns i molnet, ansluter Power BI till din fil på OneDrive ungefär en gång per timme. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt.
-   * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive – privat** – om du sparar filer på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in på ditt OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det du använder för att logga in på Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
-   * ![](media/sample-datasets/power-bi-sharepoint2.png)**SharePoint-gruppwebbplatser** Spara dina Power BI-filer på SharePoint-gruppwebbplatser på ungefär samma sätt som för OneDrive för företag. Den största skillnaden är hur du ansluter till filen från Power BI. Du kan ange en URL eller ansluta till rotmappen.
+   * ![Lokalt](media/sample-datasets/power-bi-local-file2.png) **Lokalt** – Om du sparar din fil från Power BI till en lokal enhet på datorn eller en annan plats inom din organisation kan du importera den till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen har i själva verket inte importerats till Power BI. Det som händer är att en ny datauppsättning skapas på din Power BI-webbplats samt att data och i vissa fall datamodellen läses in i datauppsättningen. Om din fil innehåller rapporter, kommer de att visas på din Power BI-webbplats under Rapporter.
+   * ![OneDrive – företag](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – företag**– om du har OneDrive för företag och du loggar in med samma konto som du loggar in i Power BI med är detta det mest effektiva sättet att hålla ditt arbete i Excel, Power BI eller en CSV-fil synkroniserat med din datauppsättning, dina rapporter och dina instrumentpaneler i Power BI. Eftersom både Power BI och OneDrive finns i molnet, ansluter Power BI till din fil på OneDrive ungefär en gång per timme. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt.
+   * ![OneDrive – personlig](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – personlig** – Om du sparar filer på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du första gången ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in i OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det konto du använder för att logga in i Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din fil ungefär en gång i timmen och kontrollera att din datauppsättning i Power BI är synkroniserad.
+   * ![SharePoint-gruppwebbplatser](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint-gruppwebbplatser** Spara dina Power BI-filer på SharePoint-gruppwebbplatser på ungefär samma sätt som för OneDrive för företag. Den största skillnaden är hur du ansluter till filen från Power BI. Du kan ange en URL eller ansluta till rotmappen.
 3. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
 
    > [!TIP]
@@ -140,23 +141,23 @@ Varje exempel på innehållspaket är också tillgängligt som en Excel-arbetsbo
    >
 4. Längst ned i vänster hörn väljer du **Hämta data**.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![Hämta data-ikon](media/sample-datasets/power-bi-get-data.png)
 5. På sidan Hämta data väljer du **Filer > Hämta**.
 
-     ![](media/sample-datasets/power-bi-files.png)
+     ![Filer > Hämta](media/sample-datasets/power-bi-files.png)
 6. Navigera till den plats där du laddade ned och sparade exemplet.
 
-   ![](media/sample-datasets/power-bi-files3.png)
+   ![Platsen där du sparade exemplet](media/sample-datasets/power-bi-files3.png)
 7. Markera filen, i det här fallet **Procurement Analysis Sample.xlsx** som har sparats på OneDrive för företag och välj **Anslut**.
 
-   ![](media/sample-datasets/power-bi-connect2.png)
+   ![OneDrive för företag > Anslut](media/sample-datasets/power-bi-connect2.png)
 8. Välj om du vill importera data eller ta arbetsboken till Power BI och se den exakt som den är i Excel online.
 
-    ![](media/sample-datasets/power-bi-import.png)
+    ![Importera eller Anslut](media/sample-datasets/power-bi-import.png)
 9. Om du väljer **Importera**, importerar Power BI exempelarbetsboken och lägger till den som en ny datauppsättning med namnet **Exempel på anskaffningsanalys**.  Om arbetsboken har Power View-blad, -tabeller eller -områden eller en datamodell, skapar Power BI även en rapport (med samma namn). Och om du inte redan har en instrumentpanel öppen, skapar Power BI en ny instrumentpanel. (Om du hade en instrumentpanel öppen när du klickade på **Hämta data**, visas en ny tom panel på instrumentpanelen.  Om du klickar på denna panel kommer du till rapporten för den datauppsättning som du just lagt till). Det nya innehållet är döpt efter exemplet och är markerat med en gul asterisk.
 10. När skärmen **Datauppsättningen är klar!** visas, väljer du **Visa datauppsättning** eller **Hämta Quick Insights** eller använder bara Power BI:s vänstra navigeringsfält för att hitta och öppna den associerade rapporten eller instrumentpanelen.  
 
-     ![](media/sample-datasets/power-bi-ready.png)
+     ![Visa datauppsättning](media/sample-datasets/power-bi-ready.png)
 
 ### <a name="optional-take-a-look-at-the-excel-samples-from-inside-excel-itself"></a>(Valfritt) Ta en titt på Excel-exempel från själva Excel
 Vill du förstå hur data i en Excel-arbetsbok konverteras till Power BI-datauppsättningar och -rapporter? Öppna Excel-exemplen ***i Excel*** och utforska kalkylbladen som innehåller några av svaren.
@@ -187,7 +188,7 @@ Varje exempel på innehållspaket är också tillgängligt som en Power BI PBIX-
 
 1. Från Power BI Desktop väljer du **Arkiv > Öppna** och navigerar till den plats där du sparade exemplets PBIX-fil.
 
-   ![](media/sample-datasets/power-bi-desktop-open.png)
+   ![Fil > Öppna i Power BI Desktop](media/sample-datasets/power-bi-desktop-open.png)
 4. Välj PBIX-filen för att öppna den i Power BI Desktop.
 
 ## <a name="next-steps"></a>Nästa steg

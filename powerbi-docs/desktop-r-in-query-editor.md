@@ -1,21 +1,22 @@
 ---
-title: Använda R i frågeredigeraren för Power BI
+title: Använda R i Microsoft Power Query för Excel för Power BI
 description: Använda R i frågeredigeraren för Power BI Desktop till avancerade analyser
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9183a0fbb163fb4e46e6b310bcce953aaef9d1b8
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 10431709fd77089fb98524b7060711ce6acc76fd
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670634"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026141"
 ---
 # <a name="using-r-in-query-editor"></a>Använda R i Frågeredigeraren
 Du kan använda **R**, ett programmeringsspråk som ofta används av statistiker, dataforskare och dataanalytiker, i **frågeredigeraren** för Power BI Desktop. Med den här integreringen av R i **frågeredigeraren** kan du utföra datarensning med R, avancerade datautformning och analyser i datauppsättningar, inklusive färdigställande av saknade data, förutsägelser och klustring för att bara nämna några få. **R** är ett kraftfullt språk och kan användas i **frågeredigeraren** till att förbereda din datamodell och skapa rapporter.

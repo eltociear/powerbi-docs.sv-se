@@ -1,44 +1,42 @@
 ---
-title: Power BI – kostnadsfri kontra Pro
-description: Varje användare i Power BI är antingen kostnadsfri eller Pro. Det är bra att förstå skillnaderna mellan de här två typerna av användare...
+title: Power BI-tjänstefunktioner efter licenstyp
+description: I Power BI-tjänsten har användarna tillgång till funktioner baserat på två typer av licenser, antingen en licens som baseras per användare (gratisversion och Pro) eller en licens som är kapacitetsbaserad.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 12/06/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 62d6a274b7cfb784f4f61b0973bad22ea6194698
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: fab6181997fd57448a152fe315efcadf076e4fbb
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641308"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025887"
 ---
-# <a name="power-bi-free-vs-pro"></a>Power BI – kostnadsfri kontra Pro
+# <a name="power-bi-service-features-by-license-type"></a>Power BI-tjänstefunktioner efter licenstyp
 
-Varje användare i Power BI är antingen kostnadsfri eller Pro. Det är bra att förstå skillnaderna mellan de här två typerna av användare.
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
-*Alla användare* i tjänsten är antingen kostnadsfria eller Pro. Den största skillnaden mellan en kostnadsfri eller Pro-användare handlar om delning och samarbete. Endast Pro-användare kan publicera innehåll till app-arbetsytor, använda appar utan Premium-kapacitet, dela instrumentpaneler och prenumerera på instrumentpaneler och rapporter. Kostnadsfria användare kan nu ansluta till alla datakällor via alla anslutningsalternativ som DirectQuery, live-anslutning och med datagatewayen.
+## <a name="per-user-license-type-comparison"></a>Jämförelse av licenstypen ”per användare”
 
-Om en app har publicerats och appens arbetsyta som den är för tilldelas en Premium-kapacitet, kan kostnadsfria användare använda den.
-
-## <a name="free-vs-pro-comparison"></a>Jämförelse av kostnadsfritt kontra pro
-Här är en lista över funktioner som stöds efter användartyp.
+Här följer en lista över funktioner som stöds av licenstypen ”per användare”.
 
 |  | Kostnadsfri | Pro |
 | --- | --- | --- |
 | **Anslut till 70+ datakällor** |![Funktionen är tillgänglig](media/features-license-type/available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | **Publicera på webben** |![Funktionen är tillgänglig](media/features-license-type/available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
-| **Peer-to-peer-delning** |![Funktionen är inte tillgänglig](media/features-license-type/not-available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | **Exportera till PowerPoint, Excel, CSV** |![Funktionen är tillgänglig](media/features-license-type/available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | **Företagsdistribution** | | |
 | Appar |![Funktionen är inte tillgänglig](media/features-license-type/not-available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | E-postprenumerationer |![Funktionen är inte tillgänglig](media/features-license-type/not-available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | Bädda in API:er och kontroller |![Funktionen är inte tillgänglig](media/features-license-type/not-available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | **Samarbete** | | |
+| Peer-to-peer-delning |![Funktionen är inte tillgänglig](media/features-license-type/not-available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | App-arbetsytor |![Funktionen är inte tillgänglig](media/features-license-type/not-available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 | Analysera i Excel, analysera i Power BI Desktop |![Funktionen är inte tillgänglig](media/features-license-type/not-available.png) |![Funktionen är tillgänglig](media/features-license-type/available.png) |
 

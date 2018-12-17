@@ -1,26 +1,29 @@
 ---
-title: Vanliga frågor och svar för Power BI för tyska myndigheter
+title: Vanliga frågor och svar för tyska myndigheter
 description: Svar på vanliga frågor för Power BI-kunder från tyska myndigheter
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4a602a8494261705d61c70679d9511993afe69af
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: dfc240e50f2fa88fc40b5f6f8d80b1106c388cd5
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670082"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026464"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Vanliga frågor för Power BI för tyska molnkunder
 **Power BI-tjänsten** har en version som är tillgänglig för kunder i EU/Europeiska frihandelsavtalet (EU/EFTA), vilket ofta kallas Microsoft Cloud Deutschland (MCD). Den **Power BI-tjänsten** version som beskrivs i den här artikeln är utformad för kunder som tillhör myndigheter i EU-/EFTA-länder och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten** eller Power BI-tjänster för andra myndigheter.
 
 ![](media/service-govde-faq/govde-faq_01.png)
+
+## <a name="questions-and-answers"></a>Frågor och svar
 
 Följande frågor och svar innehåller viktig information för Power BI Pro-tjänsten i Microsoft Cloud Deutschland (MCD), vilket är den molnlösning för Power BI som har utformats särskilt för EU/EFTA.
 
@@ -68,7 +71,7 @@ Följande frågor och svar innehåller viktig information för Power BI Pro-tjä
 | Azure Portal (inbäddade) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Community |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
-### <a name="next-steps"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 Det finns olika typer av saker du kan göra med Power BI. Mer information och utbildning, inklusive en artikel som visar hur du registrerar dig för tjänsten, ta en titt i följande resurser:
 
 * [Guidad utbildning för Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)

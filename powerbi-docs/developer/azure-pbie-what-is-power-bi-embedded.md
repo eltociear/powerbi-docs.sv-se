@@ -1,25 +1,26 @@
 ---
-title: Vad är Azure Power BI Embedded? | Microsoft Docs
-description: Power BI Embedded gör det enklare för oberoende programvaruleverantörer och utvecklare att använda funktionerna i Power BI och hjälper dem att snabbt lägga till fantastiska visuella objekt, rapporter och instrumentpaneler i deras appar.
+title: Vad är Azure Power BI Embedded och inbäddad analys | Microsoft Docs
+description: Power BI Embedded är ett inbäddat analysverktyg för att göra det enklare för oberoende programvaruleverantörer och utvecklare att använda funktionerna i Power BI och hjälper dem att snabbt lägga till fantastiska visuella objekt, rapporter och instrumentpaneler i deras appar. Lär dig hur du använder inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg med Power BI Embedded.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.component: ''
 ms.devlang: csharp, javascript
 ms.topic: overview
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: b46508aeca35769fb27324fb20f502ac66cb55ab
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 70cb8f72e5749f7eed70d4476f3af87e272813f4
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360564"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180701"
 ---
-# <a name="what-is-power-bi-embedded-in-azure"></a>Vad är Power BI Embedded i Azure? 
+# <a name="what-is-power-bi-embedded-in-azure"></a>Vad är Power BI Embedded i Azure?
 
-Power BI Embedded gör det enklare för oberoende programvaruleverantörer och utvecklare att använda funktionerna i Power BI. Power BI Embedded förenklar användningen av funktionerna i Power BI genom att lägga till fantastiska visuella objekt, rapporter och instrumentpaneler i dina appar. Detta påminner om hur appar som bygger på Microsoft Azure använder tjänster som Machine Learning och IoT. Genom att tillhandahålla lättnavigerad datautforskning i sina appar kan oberoende programvaruleverantörer göra det enklare för kunder att fatta snabba, välgrundade och sammanhangsberoende beslut.
+Power BI Embedded gör det enklare för oberoende programvaruleverantörer och utvecklare att använda funktionerna i Power BI med inbäddad analys. Power BI Embedded förenklar användningen av funktionerna i Power BI genom att lägga till fantastiska visuella objekt, rapporter och instrumentpaneler i dina appar. Detta påminner om hur appar som bygger på Microsoft Azure använder tjänster som Machine Learning och IoT. Genom att tillhandahålla lättnavigerad datautforskning i sina appar kan oberoende programvaruleverantörer göra det enklare för kunder att fatta snabba, välgrundade och sammanhangsberoende beslut.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 
@@ -48,7 +49,7 @@ Genom REST-API:et har Power BI Embedded stöd för utveckling med valfritt språ
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Interagera med teknikteamet för Power BI
 
 * [Webbgrupper](https://community.powerbi.com/): Ställ frågor om Power BI
-* [Power BI-idéer](https://ideas.powerbi.com): Önska och rösta fram funktioner
+* [Power BI-idéer](https://ideas.powerbi.com): Begära och rösta fram funktioner
 * [Reddit](https://www.reddit.com/r/PowerBI/): Diskutera Power BI
 
 ## <a name="next-steps"></a>Nästa steg

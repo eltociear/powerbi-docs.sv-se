@@ -1,22 +1,22 @@
 ---
 title: Självstudier – Utsnitt i Power BI
 description: Utsnitt i Power BI
-author: mihart
+author: v-thepet
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/25/2018
-ms.author: v-thepet
+ms.date: 10/25/2018
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e42504c2c320e4f102cab5e2272e6123bf580cf5
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: e6b738060875685a7de8e07a55d28afaf071b32e
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448993"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979661"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 Du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram, eller så kan du använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 

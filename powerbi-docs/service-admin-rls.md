@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.author: mblythe
 ms.date: 01/02/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 466e91786dcb75f09db808306ba7d9d9f486718b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578438"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025133"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Säkerhet på radnivå (RLS) med Power BI
 
@@ -41,7 +42,7 @@ Om du vill hantera säkerheten på din datamodell, gör du följande.
 1. Välj **ellipsen (...)**  för en datauppsättning.
 2. Välj **säkerhet**.
    
-   ![](media/service-admin-rls/rls-security.png)
+   ![Tillämpa säkerhetsfilter i båda riktningarna](media/service-admin-rls/rls-security.png)
 
 Det här tar dig till RLS-sidan där du kan lägga till medlemmar i en roll som du skapade i Power BI Desktop. Endast ägare av datauppsättningen ser säkerhet. Om datauppsättningen är i en grupp, visas bara säkerhetsalternativet för gruppens administratörer. 
 
@@ -53,17 +54,17 @@ Du kan bara skapa eller ändra roller i Power BI Desktop.
 
 Du kan lägga till en medlem i rollen genom att skriva in e-postadressen eller namnet på användaren, säkerhetsgruppen eller distributionslistan som du vill lägga till. Den här medlemmen måste vara inom din organisation. Du kan inte lägga till grupper som skapas i Power BI.
 
-![](media/service-admin-rls/rls-add-member.png)
+![Lägga till en medlem](media/service-admin-rls/rls-add-member.png)
 
 Du kan också se hur många medlemmar som är en del av rollen efter numret i parentes bredvid rollnamnet eller bredvid medlemmar.
 
-![](media/service-admin-rls/rls-member-count.png)
+![Medlemmar i rollen](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Ta bort medlemmar
 
 Du kan ta bort medlemmar genom att välja X bredvid deras namn. 
 
-![](media/service-admin-rls/rls-remove-member.png)
+![Ta bort medlem](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Validera rollen i Power BI-tjänsten
 
@@ -72,15 +73,15 @@ Du kan validera att den roll som du har definierat fungerar genom att testa roll
 1. Välj **ellipsen (...)**  bredvid rollen.
 2. Välj **testa data som roll**
 
-![](media/service-admin-rls/rls-test-role.png)
+![Testa som roll](media/service-admin-rls/rls-test-role.png)
 
 Du ser sedan rapporter som är tillgängliga för den här rollen. Instrumentpaneler visas inte i den här vyn. I det blå fältet ovan visas vad som används.
 
-![](media/service-admin-rls/rls-test-role2.png)
+![Visas nu som <roll>](media/service-admin-rls/rls-test-role2.png)
 
 Du kan testa andra roller eller en kombination av roller, genom att välja **visar som**.
 
-![](media/service-admin-rls/rls-test-role3.png)
+![Testa andra roller](media/service-admin-rls/rls-test-role3.png)
 
 Du kan välja att visa data som en specifik person, eller så kan du välja en kombination av tillgängliga roller för att verifiera att de fungerar. 
 
@@ -95,7 +96,7 @@ Om du publicerar din Power BI Desktop-rapport till en apparbetsyta i Power BI-tj
 > [!WARNING]
 > Om du har konfigurerat apparbetsytan så att medlemmar har redigeringsbehörighet, tillämpas inte RLS-roller för dem. Användare kommer att kunna se alla data.
 
-![](media/service-admin-rls/rls-group-settings.png)
+![Gruppinställningar](media/service-admin-rls/rls-group-settings.png)
 
 [!INCLUDE [include-short-name](./includes/rls-limitations.md)]
 

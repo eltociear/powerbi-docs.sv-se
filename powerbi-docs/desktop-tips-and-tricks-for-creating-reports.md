@@ -1,20 +1,21 @@
 ---
 title: Tips om hur du skapar rapporter i Power BI
-description: Tips om hur du skapar rapporter i Power BI-tjänsten och Power BI Desktop
+description: Metodtips för att skapa rapporter i Power BI-tjänsten och Power BI Desktop
 author: davidi
 manager: kfile
 ms.reviewer: willthom
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: ae1c54ee0c5c5de54fc5069f7215c39175cedf8d
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c68c29449873e22c7e338279e80f049d522ba347
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830296"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026372"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -27,7 +28,7 @@ Du kan få ytterligare information från [Power Query Resource Center](https://s
 Du kan också visa [Formelreferensen](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Datatyper i frågeredigeraren
-När du använder frågeredigeraren i Power BI Desktop för att läsa in data gör vi en uppskattning av den bästa datatypidentifieringen.  Datatypinställningarna för kolumner sparas inte allt när du använder formler. Du bör kontrollera att datatypen för kolumnerna är korrekta när du har gjort följande åtgärder: Läs in data från början i fliken fråga, Första raden som rubrik, Lägg till kolumn, Gruppera efter, Sammanfoga, Lägg till och innan du läser in data för första gången.
+När du använder frågeredigeraren i Power BI Desktop för att läsa in data gör vi en uppskattning av den bästa datatypidentifieringen.  Datatypinställningarna för kolumner sparas inte allt när du använder formler. Du bör kontrollera att datatypen för kolumnerna är korrekt när du har vidtagit följande åtgärder:  Läs in data initialt till frågefliken, Första raden som rubrik, Lägg till kolumn, Gruppera efter, Sammanfoga, Lägg till och innan du läser in data för första gången.
 
 Det är viktigt att komma ihåg att kursiv stil i datarutnätet inte betyder att datatypen är rätt inställd, det betyder bara att data inte anses vara text.
 

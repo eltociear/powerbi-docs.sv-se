@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 12/07/2018
 ms.author: maggies
-ms.openlocfilehash: 1d74ed5e39d73252d0779458d0ba8619908c99f2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: a4914bf0fb6945bc5ee45bdf6559ca75bbd7c2b5
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565922"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180954"
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
@@ -26,6 +26,10 @@ Om du vill ladda ned Power BI-rapportservern går du till [Lokal rapportering me
 
 ## <a name="before-you-begin"></a>Innan du börjar
 Innan du installerar Power BI-rapportservern rekommenderar vi att du granskar [maskin- och programvarukraven för att installera Power BI-rapportservern](system-requirements.md).
+
+ > [!IMPORTANT]
+ > Power BI-rapportservern kan installeras i en miljö som har en skrivskyddad domänkontrollant (RODC) men Microsoft Power BI-rapportservern behöver åtkomst till en domänkontrollant som inte är skrivskyddad för att fungera korrekt. Om Microsoft Power BI-rapportservern bara har åtkomst till en RODC, kan det uppstå fel när du försöker administrera tjänsten.
+
 
 ### <a name="power-bi-report-server-product-key"></a>Produktnyckel för Power BI-rapportserver
 

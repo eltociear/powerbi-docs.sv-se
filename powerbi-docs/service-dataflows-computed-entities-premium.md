@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8131722d0e035f28fcb88827b1a68c2da97959cb
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b63b8a601040751cda81e022d571d3a0ed6d501f
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268932"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180678"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Använda beräknade entiteter i Power BI Premium (förhandsversion)
 
@@ -77,16 +77,21 @@ Och det var det hela! Transformeringen utförs på data i det dataflöde som fin
 
 Observera att om du tar bort arbetsytan från Power BI Premium-kapaciteten, så uppdateras inte det tillhörande dataflödet längre. 
 
+När du arbetar med dataflöden som skapats enbart i en organisations Azure Data Lake Storage Gen2-konto, fungerar länkade entiteter och beräknade entiteter bara korrekt när entiteterna finns i samma lagringskonto. Du hittar mer information i [Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
+
+Dessutom är länkade entiteter inte tillgängliga för dataflöden som skapats med Common Data Service-mappar. Se [Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)](service-dataflows-add-cdm-folder.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
 I den här artikeln har vi beskrivit de beräknade entiteter och dataflöden som är tillgängliga i Power BI-tjänsten. Här följer några fler artiklar som kan vara användbara.
 
-
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
 * [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
 * [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)](service-dataflows-configure-workspace-storage-settings.md)
+* [Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)](service-dataflows-add-cdm-folder.md)
+* [Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)

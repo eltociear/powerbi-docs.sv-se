@@ -1,5 +1,5 @@
 ---
-title: Hantera en gateway för Power BI
+title: Hantera en lokal Power BI-gateway
 description: Lär dig hur du hanterar en gateway så att du kan ansluta till lokala data i Power BI.
 author: mgblythe
 manager: kfile
@@ -9,15 +9,16 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 21eaca02502ae67ba5ecddff8e1b8890e0a049af
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755172"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026395"
 ---
-# <a name="manage-a-power-bi-gateway"></a>Hantera en Power BI-gateway
+# <a name="manage-a-power-bi-on-premises-gateway"></a>Hantera en lokal Power BI-gateway
 
 När du har [installerat en Power BI-datagateway](service-gateway-install.md) hanterar du den baserat på dina krav. I det här avsnittet lär du dig att: lägga till och ta bort datakällor och användare, starta om en gateway, samt migrera, återställa, ta över och ta bort en gateway. 
 

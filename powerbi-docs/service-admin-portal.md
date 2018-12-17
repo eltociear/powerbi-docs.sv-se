@@ -9,15 +9,16 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268376"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026717"
 ---
-# <a name="power-bi-admin-portal"></a>Power BI-administratörsportalen
+# <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
 Med Admin-portalen kan du använda en Power BI-*klient* för din organisation. Portalen innehåller sådant som användningsstatistik för åtkomst till Office 365-administrationscenter och inställningar.
 
@@ -105,15 +106,15 @@ Följande bild visar de första två avsnitten på fliken **Klientinställningar
 
 Inställningarna kan ha tre tillstånd:
 
-* **Inaktiverad för hela organisationen**: Ingen i din organisation kan använda den här funktionen.
+* **Har inaktiverats för hela organisationen**: Ingen i din organisation kan använda den här funktionen.
 
     ![Inställningen inaktivera alla](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Aktiverad för hela organisationen**: Alla i din organisation kan använda den här funktionen.
+* **Har aktiverats för hela organisationen**: Alla i din organisation kan använda den här funktionen.
 
     ![Inställningen aktivera alla](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Aktiverad för en delmängd av organisationen**: En specifik delmängd av användare eller grupper i din organisation kan använda den här funktionen.
+* **Har aktiverats för en undergrupp i organisationen**: En specifik delmängd av användare eller grupper i din organisation kan använda den här funktionen.
 
     Du kan aktivera funktionen för hela din organisation, utom för en specifik användargrupp.
 
@@ -355,7 +356,7 @@ Följ dessa steg om du vill lägga till ett nytt anpassat visuellt objekt i list
 
     * **Namnge ditt anpassade visuella objekt** (obligatoriskt): ge det visuella objektet en kort rubrik så att Power BI Desktop-användare lätt kan förstå hur det fungerar
 
-    * **Ikon**: den ikonfil som visas i användargränssnittet för Power BI Desktop.
+    * **Ikon**: Den ikonfil som visas i användargränssnittet för Power BI Desktop.
 
     * **Beskrivning**: en kort beskrivning av det visuella objektet som ger användaren mer kontext och kunskap
 

@@ -4,18 +4,19 @@ description: Ansluta till datakällor i Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e0430455131b0669dfa744c7a1df6691bda4c782
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 0fc366ad5b42f84f8677be36d1f2093a4ac0fa23
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578162"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025567"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Ansluta till datakällor i Power BI Desktop
 Med Power BI Desktop kan du enkelt ansluta till den ständigt växande världen av data. Om du inte har Power BI Desktop, kan du [hämta](http://go.microsoft.com/fwlink/?LinkID=521662) och installera det.
@@ -24,6 +25,7 @@ I Power BI Desktop finns det *många olika typer* av datakällor. Följande bild
 
 ![](media/desktop-connect-to-data/getdatavid_smallv2.gif)
 
+## <a name="example-of-connecting-to-data"></a>Exempel på anslutning till data
 I det här exemplet vi ansluter till en **Webb**datakälla.
 
 Anta att du går i pension – du vill bo där solen skiner, skatterna är låga och sjukvården är bra. Eller... Du kanske är en dataanalytiker och du behöver information för att hjälpa kunderna – till exempel hjälpa din kund som tillverkar regnjackor att hitta områden där det regnar *mycket*.
@@ -64,7 +66,7 @@ Med datamodellen har lästs in i **Rapportvyn** i Power BI Desktop kan vi börja
 
 Detta är förstås en enkel modell med en enkel dataanslutning. De flesta rapporterna i Power BI Desktop är kopplad till olika datakällor som har anpassats efter dina behov med relationer som skapar en omfattande datamodell. 
 
-### <a name="next-steps"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
 
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)

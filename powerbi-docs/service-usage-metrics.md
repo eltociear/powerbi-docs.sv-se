@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53d39eaf7c615d2ed279e7c45330dacbdad7994a
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 1c6c0a803e77ead6d43c23ac2b12b305d5960ef7
+ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830342"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53111552"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
 
@@ -167,19 +167,19 @@ Det är viktigt att förstå att skillnader kan uppstå när du jämför använd
 
 * Användningsstatistik kan ibland underberäkna aktiviteter på grund av inkonsekventa nätverksanslutningar, reklamblockering eller andra problem som kan störa skickandet av händelser från klienten.
 * Vissa typer av vyer ingår inte i användningsstatistiken som de beskrivs tidigare i den här artikeln.
-* Användningsstatistiken kan ibland överberäkna aktiviteter i situationer där lcient uppdateras utan att en begäran behöver skickas tillbaka till Power BI-tjänsten.
+* Användningsstatistiken kan ibland överberäkna aktiviteter i situationer där klienten uppdateras utan att en begäran behöver skickas tillbaka till Power BI-tjänsten.
 
 
 Förutom eventuella skillnader mellan användningsstatistik och spårningsloggar så följande frågor och svar om användningsstatistik vara hjälpsamma för användare och administratörer:
 
-F:    Jag kan inte köra användningsstatistik på en instrumentpanel eller rapport S:    Du kan endast se användningsstatistik för innehåll som du äger eller har behörighet att redigera.
+F:    Jag kan inte köra användningsstatistik i en instrumentpanel eller rapport A:    Du kan endast se användningsstatistik för innehåll som du äger eller har behörighet att redigera.
 
 F:    Kommer användningsstatistiken hämta visningar från inbäddade instrumentpaneler och rapporter?
 S:    Användningsstatistiken stöder för närvarande inte att hämta användning för inbäddade instrumentpaneler, rapporter och flödet [publicera till webben](service-publish-to-web.md).          I sådana fall rekommenderar vi att du använder befintliga webbanalysplattformar till att spåra användningen för värdappen eller portalen.
 
 F:    Jag kan inte köra användningsstatistik på något innehåll alls.
-A1:    Administratörer kan stänga av den här funktionen för organisationen.  Kontakta administratören för att ta reda på om detta är fallet.
-A2:    Användningsstatistik är en funktion i Power BI Pro.
+S1:    Administratörer kan stänga av den här funktionen för organisationen.  Kontakta administratören för att ta reda på om detta är fallet.
+S2:    Användningsstatistik är en funktion i Power BI Pro.
 
 F:    Mina data verkar inte vara uppdaterade. Till exempel visas inte fördelningsmetoderna och rapportsidor saknas. S:    Det kan ta upp till 24 timmar innan data uppdateras.
 

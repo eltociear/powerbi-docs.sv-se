@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d2d8bef9689fd2e9db99c0a521a5ee326845b1de
-ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
+ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611370"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026257"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nya filterupplevelsen i Power BI-rapporter (förhandsversion)
 
-Den här artikeln går igenom den nya filterupplevelsen: filter i Power BI får nya funktioner och en ny design. När du designar rapporter i Power BI Desktop eller Power BI-tjänsten så kan du få Filter-fönstret att se ut som och fungerar med hela rapporten. I den nya upplevelsen agerar det gamla filterfönstret som ett filterredigeringsfönster och det nya filterfönstret är den enda dina rapportkonsumenter ser. 
+Den här artikeln beskriver den nya filtreringsmetoden: Filter i Power BI får nya funktioner och en ny design. När du designar rapporter i Power BI Desktop eller Power BI-tjänsten så kan du få Filter-fönstret att se ut som och fungerar med hela rapporten. I den nya upplevelsen agerar det gamla filterfönstret som ett filterredigeringsfönster och det nya filterfönstret är den enda dina rapportkonsumenter ser. 
  
 ![Standardvyn (inga ytterligare anpassningar används)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
@@ -98,7 +98,7 @@ Du kan också formatera de här elementen för filterkort, beroende på om de an
 
     ![Välj ikonen Format](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
-1. Expandera **Filter-fönstret** för att ange färg för bakgrund, teckensnitt, ikon och vänster kantlinje så att de matchar rapportsidan.
+1. Expandera **Filter-fönstret** för att ange färg för bakgrund, ikon och vänster kantlinje så att de matchar rapportsidan.
 
     ![Expandera Filter-fönster](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
 

@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 12/06/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 6a2cfd4926089bce8973070949791e450a47cc4b
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 778be27e38c287de1adf7011c9e4b78048b2a4fa
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850601"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180816"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -145,17 +145,17 @@ Table_x0020_Name/Column_x002B_Plus eq 3 ![tabell för visuell rendering av speci
 
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![tabell för visuell rendering av specialtecken](media/service-url-filters/power-bi-special-characters2.png)
 
-### <a name="use-dax-to-filter-on-multiple-values"></a>Använda DAX för att filtrera på flera värden
+## <a name="use-dax-to-filter-on-multiple-values"></a>Använda DAX för att filtrera på flera värden
 
 Ett annat sätt att filtrera på flera fält är genom att skapa en beräknad kolumn som sammanfogar två fält till ett enstaka värde. Sedan kan du filtrera efter det värdet.
 
-Vi har till exempel två fält: Område och Kedja. I Power BI Desktop [skapar du en ny beräknad kolumn](desktop-tutorial-create-calculated-columns.md) (fält) med namnet OmrådeKedja. Kom ihåg att namnet i **Fält** inte får innehålla blanksteg. Här är DAX-formeln för kolumnen.
+Vi har till exempel två fält: Område och kedja. I Power BI Desktop [skapar du en ny beräknad kolumn](desktop-tutorial-create-calculated-columns.md) (fält) med namnet OmrådeKedja. Kom ihåg att namnet i **Fält** inte får innehålla blanksteg. Här är DAX-formeln för kolumnen.
 
 OmrådeKedja = [Område] & " - " & [Kedja]
 
 Publicera rapporten till Power BI-tjänsten och använd sedan URL-frågesträngen för att enbart filtrera och visa data för Lindseys butiker i NC.
 
-    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
+    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Fästa en panel från en filtrerad rapport
 

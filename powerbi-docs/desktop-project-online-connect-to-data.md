@@ -4,26 +4,27 @@ description: 'Project Online: anslut till data via Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3773f1cb13eb967c511245f57cf59c7159d68fba
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a0888c09a9d92123ba08c8cbc27ff8614b8c142a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669898"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025638"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: anslut till data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
 
-### <a name="step-1-download-power-bi-desktop"></a>Steg 1: Ladda ner Power BI Desktop
+## <a name="step-1-download-power-bi-desktop"></a>Steg 1: Ladda ner Power BI Desktop
 1. [Ladda ner Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521662), kör sedan installationsprogrammet för att hämta **Power BI Desktop** på din datorn.
 
-### <a name="step-2-connect-to-project-online-with-odata"></a>Steg 2: Anslut till Project Online med OData
+## <a name="step-2-connect-to-project-online-with-odata"></a>Steg 2: Anslut till Project Online med OData
 1. Öppna **Power BI Desktop**.
 2. På *välkomstskärmen* väljer du **Hämta data**.
 3. Välj **OData-flöde** och välj **Anslut**.

@@ -1,21 +1,22 @@
 ---
-title: Använda Vad om-parametrar för att visualisera variabler i Power BI Desktop
+title: Använda Vad om-parametrar för att visualisera variabler
 description: Skapa dina egna Vad om-variabler för att skapa och visualisera variabler i Power BI-rapporter
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/10/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 926ef4aedf7c56af6f79cbbf1c7810cb3aee670b
-ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
+ms.openlocfilehash: 6a69a6f852f6a37649b152a3c0ba0e469b555b37
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2018
-ms.locfileid: "40257171"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025199"
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Skapa och använd en Vad om-parameter för att visualisera variabler i Power BI Desktop
 Från och med augusti 2018-utgåvan av **Power BI Desktop**, kan du skapa **Vad om**-variabler för dina rapporter, interagera med variablerna som ett utsnitt och visualisera och kvantifiera olika nyckelvärden i dina rapporter.

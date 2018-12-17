@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: e64496461e7d81d3b39e9a8d7174a3e985d04002
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850486"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026832"
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
 
@@ -73,13 +74,13 @@ Du kan söka i loggarna efter datumintervall med hjälp av fälten **Startdatum*
 
 Ett felmeddelande visas om det valda datumintervallet är längre än 90 dagar. Om du använder det maximala datumintervallet 90 dagar, så välj den aktuella tiden som **Startdatum**. I annat fall får du ett felmeddelande som säger att startdatumet är senare än slutdatumet. Om du har aktiverat granskning under de senaste 90 dagarna, kan datumintervallet inte starta före det datum då granskningen aktiverades.
 
-![](media/service-admin-auditing/search-audit-log-by-date.png)
+![Sök efter datum](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Sök i granskningsloggarna efter användare
 
 Du kan söka efter granskningsloggposter för aktiviteter som utförts av specifika användare. Om du vill göra detta, så ange ett eller flera användarnamn i fältet **Användare**. Användarnamnet som ser ut som en e-postadress. Det är det konto som användarna loggar in på Power BI med. Om du lämnar den här rutan tom returneras poster för alla användare (och tjänstkonton) i organisationen.
 
-![Sök efter datum](media/service-admin-auditing/search-audit-log-by-user.png)
+![Sök via användare](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Visa sökresultat
 

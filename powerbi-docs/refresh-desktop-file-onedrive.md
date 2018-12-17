@@ -1,21 +1,22 @@
 ---
-title: Uppdatera en datauppsättning som skapats från en Power BI-fil i OneDrive eller SharePoint Online
+title: Uppdatera en datauppsättning från OneDrive eller SharePoint Online
 description: Uppdatera en datauppsättning som skapats från en Power BI Desktop-fil i OneDrive eller SharePoint Online
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 112/06/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: a56f13937ec6fb3f8964743bee27c61c20a7be69
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 7e67431f46da5e8076e6b436971e09bada4d7990
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670795"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026280"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som lagras på OneDrive eller SharePoint Online
 Importera filer från OneDrive eller SharePoint Online i Power BI-tjänsten är ett bra sätt att kontrollera att det arbete som du gör i **Power BI Desktop** förblir synkroniserat med Power BI-tjänsten.

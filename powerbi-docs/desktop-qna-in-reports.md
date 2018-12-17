@@ -1,21 +1,21 @@
 ---
 title: Använda frågor och svar i Power BI Desktop
 description: Du kan nu använda frågor med ett naturligt språk i Power BI Desktop med frågor och svar
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.author: davidi
+ms.date: 12/05/2018
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c0736728d1dfce5a571eb1950670bc9fc9fa1c1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 4a9ab6173422ec2f897050b2f456847b342e9fa2
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670772"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026740"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Använd frågor och svar i Power BI Desktop för frågor med naturligt språk
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Ännu mer kraftfullt är det när dina data svarar, vilket är vad frågor och svar i **Power BI Desktop** möjliggör.
@@ -25,9 +25,6 @@ Om du vill aktivera frågor och svar för att tolka det stora antal frågor som 
 > [!NOTE]
 > Funktionen Frågor och svar är bara tillgänglig om du arbetar med en modell som innehåller **importerade** data. Live-anslutningar till SSAS- och DirectQuery-modeller stöds inte.
 >
->
-
-> [!NOTE]
 > Frågor och svar kräver följande C-körtidsuppdatering om du använder en tidigare Windows-version än Windows 10. Du kan försöka installera viktiga uppdateringar från Windows Update eller manuellt installera den nödvändiga komponenten från Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
@@ -49,11 +46,11 @@ Om din modell saknar relationer mellan tabeller, kan varken Power BI-rapporter e
 
 ## <a name="rename-tables-and-columns"></a>Byt namn på tabeller och kolumner
 
-Valet av tabeller och kolumner är mycket viktigt för frågor och svar. Om du till exempel har en tabell med namnet *CustomerSummary* som innehåller en lista över kunderna, skulle du behöva ställa frågor som ”ange kundsammanfattningarna i Chicago” i stället för att ”ange kunderna i Chicago”. 
+Valet av tabeller och kolumner är viktigt för frågor och svar. Anta exempelvis att du har en tabell med namnet *Kundsammanfattning* som innehåller en lista över dina kunder. Du skulle behöva ställa frågor som ”Lista kundsammanfattningarna i Chicago” i stället för ”Lista kunderna i Chicago”. 
 
 Även om frågor och svar kan utföra vissa grundläggande radbrytningar och identifiera plural, förutsätter frågor och svar att tabell- och kolumnnamn motsvarar deras innehåll korrekt.
 
-Överväg ett annat exempel. Anta att du har en tabell med namnet *Personalstyrka* som innehåller för- och efternamn och medarbetarantal, och du har en annan tabell med namnet *Anställda* som innehåller medarbetarantal jobbantal och start- och slutdatum. Även om detta kan tolkas av personer som är bekanta med modellen, kommer någon annan som ber om ”antal anställda” att få ett antal från rader i tabellen ”Anställda”, vilket förmodligen inte är vad de hade i åtanke, eftersom det är en uppräkning av alla jobb varje medarbetare har haft. Det skulle vara mycket bättre att byta namn på dessa tabeller för att verkligen återspegla vad de innehåller.
+Överväg ett annat exempel. Anta att du har en tabell med namnet *Personalstyrka* som innehåller för- och efternamn och antal anställda. Du har en annan tabell med namnet *Anställda* som innehåller antal anställda, antal arbeten och olika startdatum. Människor som är bekanta med modellen kan förstå strukturen. Någon annan som ställer frågan ”Räkna antal anställda” kommer att få en sammanräkning av raderna i tabellen ”Anställda”. Resultatet är förmodligen inte vad de hade i åtanke, eftersom det är en uppräkning av alla jobb som varje anställd någonsin har haft. Det skulle vara bättre att byta namn på dessa tabeller för att verkligen återspegla vad de innehåller.
 
 **Behöver bearbetas**
 
@@ -65,7 +62,7 @@ Valet av tabeller och kolumner är mycket viktigt för frågor och svar. Om du t
 
 ## <a name="fix-incorrect-data-types"></a>Åtgärda felaktiga datatyper
 
-Importerade data kan ha felaktiga datatyper. I synnerhet kommer kolumner för *datum* och *antal* som har importerats som *strängar* inte att tolkas av frågor och svar som datum och antal. Du bör kontrollera att du väljer rätt datatyp i Power BI-modellen.
+Importerade data kan ha felaktiga datatyper. I synnerhet kommer kolumner för *datum* och *antal* som importeras som *strängar* inte att tolkas av frågor och svar som datum och antal. Kontrollera att du väljer rätt datatyp i Power BI-modellen.
 
 ![Välj rätt datatyp så att den är tillgänglig för frågor och svar](media/desktop-qna-in-reports/desktop-qna_05.png)
 
@@ -77,7 +74,7 @@ Power BI aggregerar aggressivt numeriska kolumner som standard, så frågor som 
 
 ## <a name="choose-a-data-category-for-each-date-and-geography-column"></a>Välj en datakategori för varje kolumn med datum och geografisk plats
 
-**Datakategorin** ger ytterligare semantisk kunskap om innehållet i en kolumn utöver dess datatyp. Till exempel kan en heltalskolumn markeras som ett Postnummer, en strängkolumn kan markeras som en Stad, ett Land, en Region och så vidare. Den här informationen används av frågor och svar på två viktiga sätt: för visualiseringsval och eventuella språkvinklingar.
+**Datakategorin** ger ytterligare semantisk kunskap om innehållet i en kolumn utöver dess datatyp. Till exempel kan en heltalskolumn markeras som ett Postnummer, en strängkolumn kan markeras som en Stad, ett Land, en Region och så vidare. Den här informationen används av frågor och svar på två viktiga sätt: för visualiseringsval och för språkavvikelser.
 
 Först måste frågor och svar använda informationen i **datakategorin** för att fatta beslut om vilken typ av visuell information som ska användas. Exempelvis identifieras att **Datakategorier** med datum och tid vanligtvis är ett bra alternativ för linjediagrammets horisontella axel eller bubbeldiagrammets uppspelningsaxel. Och det förutsätter att resultat som innehåller kolumner med geografiska **Datakategorier** kan se bra ut på en karta.
 
@@ -90,19 +87,19 @@ Härnäst gör frågor och svar vissa kvalificerade gissningar om hur användare
 
 Egenskapen **Sortera efter kolumn** gör att sortering i en kolumn automatiskt kan sorteras enligt en annan kolumn istället. När du till exempel begär ”sortera kunder efter skjortstorlek” vill du förmodligen att kolumnerna för skjortstorlek ska sorteras enligt storlek (XS, S, M, L, XL) i stället för i alfabetisk ordning (L, M, S, XL, XS).
 
-![Välj lämplig Sortera efter kolumn för frågor och svar](media/desktop-qna-in-reports/desktop-qna_08.png)
+![Välj Sortera efter kolumn på rätt sätt för frågor och svar](media/desktop-qna-in-reports/desktop-qna_08.png)
 
 ## <a name="normalize-your-model"></a>Normalisera din modell
 
-Du behöver inte oroa dig för att vi menar att du ska omforma hela din modell. Det finns dock vissa strukturer som helt enkelt är så svåra att frågor och svar inte kommer att kunna hantera dem bra. Om du utför viss grundläggande normalisering av din modells struktur kommer användbarheten av Power BI-rapporten att öka avsevärt liksom korrektheten på resultaten från frågor och svar.
+Du behöver inte oroa dig för att vi menar att du ska omforma hela din modell. Dock är vissa strukturer så svåra att frågor och svar inte kan hantera dem bra. Om du utför viss grundläggande normalisering av din modells struktur kommer användbarheten av Power BI-rapporten att öka avsevärt liksom korrektheten på resultaten från frågor och svar.
 
-Den allmänna regel ska du följa är: varje unik ”sak” användaren pratar om ska representeras av exakt ett modellobjekt (tabell eller kolumn). Så om användarna pratar om kunder, bör det finnas ett objekt för *kunder*. Och om användarna pratar om försäljning, bör det finnas ett objekt för *försäljning*. Det låter enkelt, eller hur? Beroende på vilken form av data du startar med kan det vara det. Det finns funktioner för bearbetning av innehållsrika data tillgängliga i **Frågeredigeraren** om du behöver dem, även om många av de enklare omvandlingarna kan göras genom att använda beräkningar i Power BI-modellen.
+Följ den här allmänna regeln: Varje unik ”sak” som användaren pratar om ska representeras av exakt ett modellobjekt (tabell eller kolumn). Så om användarna pratar om kunder, bör det finnas ett objekt för *kunder*. Och om användarna pratar om försäljning, bör det finnas ett objekt för *försäljning*. Det låter enkelt, eller hur? Beroende på vilken form av data du startar med kan det vara det. Det finns funktioner för bearbetning av innehållsrika data tillgängliga i **Frågeredigeraren** om du behöver dem, även om många av de enklare omvandlingarna kan göras genom att använda beräkningar i Power BI-modellen.
 
 Följande avsnitt innehåller vissa vanliga transformationer som du kan behöva utföra.
 
 ### <a name="create-new-tables-for-multi-column-entities"></a>Skapa nya tabeller för flera kolumentiteter
 
-Om du har flera kolumner som fungerar som en distinkt enhet i en större tabell ska dessa kolumner delas upp i sin egen tabell. Om du t.ex. har en kolumn för Kontaktnamn, Kontakttitel och Kontaktnummer i din tabell *Företag* skulle en bättre design vara att ha en separat tabell för *Kontakter* som innehåller Namn, Titel, och Nummer och en länk tillbaka till tabellen *Företag*. Det gör det betydligt enklare att ställa frågor om kontakter oberoende av frågor om vilka företag de är kontakt för, vilket ger bättre flexibilitet för visning.
+Om du har flera kolumner som fungerar som en distinkt enhet i en större tabell ska dessa kolumner delas upp i sin egen tabell. Anta som exempel att du har en kolumn för Kontaktnamn, Kontakts titel och Kontakts telefonnummer i en tabell med namnet *Företag*. En bättre utformning skulle vara att ha en separat *Kontakter*-tabell som innehåller Namn, Titel och Telefon och en länk tillbaka till tabellen *Företag*. Det gör det enklare att ställa frågor om kontakter oberoende av frågor om vilka företag de är kontakt för, vilket ger bättre flexibilitet för visning.
 
 **Behöver bearbetas**
 
@@ -128,9 +125,9 @@ Anta till exempel en tabell för *Kunddemografi* med kolumner KundID och Egenska
 
 ### <a name="union-to-eliminate-partitioning"></a>Förena för att eliminera partitionering
 
-Om du har partitionerat data över flera tabeller, eller har pivoterat värden i flera kolumner, kommer ett antal vanliga åtgärder vara svåra eller omöjliga för användarna att uppnå. Överväg först en typisk tabellpartitionering: en *Försäljning2000–2010*-tabell och en *Försäljning2011–2020*-tabell. Om alla viktig rapporter är begränsade till ett specifikt årtionde kan du förmodligen lämna den så här för Power BI-rapporter. Dock leder flexibiliteten i frågor och svar till att användarna kan förvänta sig svar på frågor som ”total försäljning per år”. För att detta ska fungera behöver du förena data till en enda Power BI-modelltabell.
+Om du har partitionerat data över flera tabeller, eller har pivoterat värden i flera kolumner, kommer ett antal vanliga åtgärder vara svåra eller omöjliga för användarna att uppnå. Överväg först en typisk tabellpartitionering: en *Försäljning2000–2010*-tabell och en *Försäljning2011–2020*-tabell. Om alla viktig rapporter är begränsade till ett specifikt årtionde kan du förmodligen lämna den så här för Power BI-rapporter. Dock leder flexibiliteten i frågor och svar till att användarna kan förvänta sig svar på frågor som ”total försäljning per år”. För att den här frågan ska fungera behöver du förena dina data till en enda Power BI-modelltabell.
 
-På samma sätt kan du överväga ett vanligt pivoterat värde: en *BookTour*-tabell som innehåller kolumnerna Författare, Bok, Ort1, Stad2 och Stad3. Med en struktur som denna kan inte ens enkla frågor som ”antal böcker per ort” tolkas korrekt. För att detta ska fungera bör du skapa en separat *BookTourCities*-tabell, vilken förenar stadsvärden i en enda kolumn.
+På samma sätt kan du överväga ett vanligt pivoterat värde: en *BookTour*-tabell som innehåller kolumnerna Författare, Bok, Ort1, Stad2 och Stad3. Med en struktur som denna kan inte ens enkla frågor som ”antal böcker per ort” tolkas korrekt. För att den här frågan ska fungera skapar du en separat *BookTourCities*-tabell som förenar stadsvärdena i en enda kolumn.
 
 **Behöver bearbetas**
 
@@ -169,7 +166,7 @@ En liknande situation är om källan som du importerar data ifrån innehåller k
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Avnormalisera för att ta bort inaktiva relationer
 
-Det enda undantaget från regeln ”normalisering är bättre” inträffar när det finns fler än en väg att gå från en tabell till en annan. Om du till exempel har en tabell för *Flyg* med både kolumner för KällStadID och MålStadID som är relaterade till tabellen *Städer*, måste en av dessa relationer markeras som inaktiv. Eftersom frågor och svar endast kan använda aktiva relationer, skulle du kunna ställa frågor om antingen källan eller målet, beroende på vilket du har valt. Om du i stället avnormaliserar kolumner med stadsnamn i tabellen *Flyg*, kommer du att kunna ställa frågor som: ”ange flyg för imorgon med källstad i Seattle och målstad i San Francisco”.
+Det enda undantaget från regeln ”normalisering är bättre” inträffar när det finns fler än en väg att gå från en tabell till en annan. Om du till exempel har en tabell med namnet *Flyg* och kolumnerna KällStadID och MålStadID som är relaterade till tabellen *Städer*, måste en av dessa relationer markeras som inaktiv. Eftersom frågor och svar endast kan använda aktiva relationer, kan du inte ställa frågor om antingen källan eller målet, beroende på vilket du har valt. Om du i stället avnormaliserar kolumner med stadsnamn i tabellen *Flyg*, kan du ställa frågor som: ”Ange flyg för imorgon med källstad Seattle och målstad San Francisco”.
 
 **Behöver bearbetas**
 
@@ -183,7 +180,7 @@ Det enda undantaget från regeln ”normalisering är bättre” inträffar när
 
 Det här steget gäller specifikt för frågor och svar (och inte för Power BI-rapporter i allmänhet). Användare har ofta en mängd olika termer som de använder för att referera till samma sak, till exempel total försäljning, nettoförsäljning, total nettoförsäljning. I Power BI:s modell kan dessa synonymer läggas till i tabeller och kolumner i modellen. 
 
-Detta kan vara ett viktigt steg. Till och med vid enkla tabell- och kolumnnamn kan användare av frågor och svar ställa frågor på sitt eget sätt utan att behöva välja från en i förväg definierad lista med kolumner. Ju fler känsliga synonymer som du kan lägga till, desto bättre blir användarnas upplevelse av rapporten. För att lägga till synonymer, i vyn **Relationer** väljer du knappen Synonymer i menyfliksområdet, såsom visas på följande bild.
+Det här steget kan vara viktigt. Till och med vid enkla tabell- och kolumnnamn kan användare av frågor och svar ställa frågor på sitt eget sätt utan att behöva välja från en i förväg definierad lista med kolumner. Ju fler känsliga synonymer som du kan lägga till, desto bättre blir användarnas upplevelse av rapporten. För att lägga till synonymer, i vyn **Relationer** väljer du knappen Synonymer i menyfliksområdet, såsom visas på följande bild.
 
 ![Lägg till synonymer för frågor och svar](media/desktop-qna-in-reports/desktop-qna_21.png)
 

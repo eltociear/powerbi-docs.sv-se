@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 694ae2cd6f77fbcf898a984b135fb65b9163a43b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547256"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181000"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -105,6 +105,16 @@ Med *visning av detaljerad information*, när du trycker på en viss del av en v
 När du visar detaljerad information kan du använda bakåtknappen för att gå tillbaka till föregående rapportsida.
 
 Läs mer om hur du [lägger till visning av detaljerad information i Power BI Desktop](../../desktop-drillthrough.md).
+
+## <a name="show-data-and-copy-values"></a>Visa data och kopiera värden
+
+Genom att välja menynalternativsellipsen (**...** ) i det övre högra hörnet av en visualisering i en telefonrapport och sedan välja **Visa data** kan du visa de data som är ligger under en visualisering.
+
+![Menyalternativet Visa data för Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+
+Om du gör ett långt tryck på en cell i den tabell som visas, aktiveras den inbyggda välj- och kopiera-menyn så att du kan välja att kopiera data från tabellen (eller hela tabellen).
+
+![Rapport av visning av detaljerad information i Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
 
 ## <a name="next-steps"></a>Nästa steg
 * [Visa och interagera med Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md)

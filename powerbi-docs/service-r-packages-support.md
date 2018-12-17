@@ -1,21 +1,22 @@
 ---
-title: Lär dig vilka R-paket som stöds när det gäller att använda och skapa R-skript i Power BI
+title: Läs mer om vilka R-paket som stöds
 description: Vilka R-paket som stöds respektive inte stöds i Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6c890b830ca38e15bb6cc0efe36c93488ed951b4
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: b88b17e428633e9d610724a8c3daa145c9928ae2
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670841"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026878"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paket i Power BI-tjänsten
 Du kan använda det kraftfulla [R-programmeringsspråket](https://www.r-project.org/) för att skapa visuella objekt i Power BI-tjänsten. Många R-paket stöds i Power BI-tjänsten (och fler läggs till hela tiden), men vissa paket stöds inte.

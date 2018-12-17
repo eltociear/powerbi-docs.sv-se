@@ -1,23 +1,25 @@
 ---
-title: Bädda in Power BI-innehåll i ett program för dina kunder för myndighetsmoln och nationella moln
-description: Lär dig att integrera eller bädda in en instrumentpanel, panel eller rapport i en webbapp med hjälp av Power BI-API:er för dina kunder.
+title: Inbäddade analyser till inbäddat Power BI-innehåll i ditt program för myndighetsmoln och nationella moln
+description: Lär dig att integrera eller bädda in en rapport, instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt dina kunder. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/25/2018
-ms.openlocfilehash: 76b80ad296f2f595fb5014e13bbd48d414cd8bbe
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: aabf472e236f545fe51d4007dcd8fbdf36632931
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003166"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180632"
 ---
-# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Självstudie: Bädda in en Power BI-instrumentpanel, -panel eller -rapport i ditt program för nationella moln
+# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Självstudie: Bädda in en Power BI-instrumentpanel, panel eller rapport i ditt program för nationella moln
 
-Lär dig att bädda in en instrumentpanel, panel eller rapport i dina webbprogram med Power BI:s .NET SDK tillsammans med Power BI:s JavaScript API när du integrerar data för dina kunder.
+Lär dig mer om att bädda in analytiska innehåll i dina tillämpningar och för nationella moln. Du kan använda Power BI .NET SDK med Power BI JavaScript API för att bädda in en rapport, instrumentpanel eller panel i dina webbprogram.
 
 Power BI stöder också nationella (privata) moln.
 
@@ -132,7 +134,7 @@ Registrera ditt program med Microsoft Azure Active Directory om du vill göra RE
 
 * Power Bi för moln i Kina – https://app.powerbi.cn/apps
 
-Om du hämtade [exemplet för inbäddning för kunder](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) använder du det **applicationId** som du fick efter registreringen så att exemplet kan autentisera mot Microsoft Azure Active Directory. Om du vill konfigurera exemplet, ändrar du **applicationId** i *web.config*-filen.
+Om du hämtade [exemplet för inbäddning för kunder](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) använder du det **applicationId** som du fick så att exemplet kan autentisera mot Microsoft Azure Active Directory. Om du vill konfigurera exemplet, ändrar du **applicationId** i *web.config*-filen.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Steg 2 – Hämta en åtkomsttoken från Azure AD
 

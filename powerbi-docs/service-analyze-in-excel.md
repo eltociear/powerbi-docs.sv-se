@@ -1,21 +1,22 @@
 ---
-title: Analysera i Excel
+title: Analysera i Excel för Power BI
 description: Lär dig mer om hur du kan analysera Power BI-datauppsättningar i Excel
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d1ddb1eabb45fa0c93b04419524d7f4f194189bb
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: b33fafee2ef1f217a99b870e77c3823c6783a11d
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669139"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025958"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.

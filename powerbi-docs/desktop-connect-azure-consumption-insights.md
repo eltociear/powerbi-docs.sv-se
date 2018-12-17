@@ -1,21 +1,22 @@
 ---
-title: Ansluta till Azure Consumption Insights-data i Power BI Desktop (beta)
+title: Ansluta till Azure Consumption Insights-data (beta)
 description: Det är enkelt att ansluta till Azure och få insikter om användning med Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619619"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026806"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Ansluta till Azure Consumption Insights i Power BI Desktop (beta)
 Med anslutningsappen **Azure förbrukning Insights** kan du använda **Power BI Desktop** för att ansluta till Azure och få detaljerade data och information om din organisations användning av Azure-tjänster. Du kan också skapa mått, anpassade kolumner och visuella objekt för att rapportera och dela information om organisationens Azure-användning. Den här versionen av **Azure Consumption and Insights** är en beta-version och kan ändras.
@@ -50,15 +51,15 @@ Ange därefter din *åtkomstnyckel* för att ansluta.
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
 När du väl angett din *Åtkomstnyckel* och valt **Anslut**, visas ett **Navigator**-fönster som visar dig de nio tabellerna som är tillgängliga för dig: 
-* **Budgetar**: ger budgetinformation för att visa faktiska kostnader eller användning mot befintliga budgetmål. 
-* **MarketPlace**: ger användningsbaserade Azure Marketplace-avgifter.
-* **PriceSheets**: ger tillämpliga priser efter mätare för en registrering.
-* **RICharges**: ger kostnader som är kopplade till dina Reserverade instanser under de senaste 24 månaderna.
-* **RIRecommendations_Single**: ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender på en enda prenumeration under de senaste 7, 30 eller 60 dagarna.
-* **RIRecommendations_Shared**: ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender på alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna.
-* **RIUsage**: ger information om förbrukning för dina befintliga reserverade instanser under den senaste månaden.
-* **Sammanfattningar**: ger en månatlig sammanfattning över saldon, nya inköp, Azure Marketplace-tjänstavgifter, justeringar och överförbrukningskostnader.
-* **UsageDetails**: ger en uppdelning av förbrukade mängder och uppskattade kostnader för en registrering.
+* **Budgetar**: Ger budgetinformation för att visa faktiska kostnader eller användning mot befintliga budgetmål. 
+* **MarketPlace**: Ger användningsbaserade Microsoft Azure Marketplace-avgifter.
+* **PriceSheets**: Ger tillämpliga priser efter mätare för en registrering.
+* **RICharges**: Ger kostnader som är kopplade till dina Reserverade instanser under de senaste 24 månaderna.
+* **RIRecommendations_Single**: Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enda prenumeration under de senaste 7, 30 eller 60 dagarna.
+* **RIRecommendations_Shared**: Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna.
+* **RIUsage**: Ger information om förbrukning för dina befintliga reserverade instanser under den senaste månaden.
+* **Sammanfattningar**: Ger en månatlig sammanfattning över saldon, nya inköp, Microsoft Azure Marketplace-tjänstavgifter, justeringar och överförbrukningskostnader.
+* **UsageDetails**: Ger en uppdelning av förbrukade mängder och uppskattade kostnader för en registrering.
 
 Du kan markera kryssrutan intill varje tabell för att visa en förhandsgranskning. Du kan markera en eller flera tabeller genom att markera rutan bredvid användarens namn och sedan välja **Ladda**.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7e39d0ee048f51066783b1cc9c98333e0352dcf
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 9e7f43780048a222b9d024b39d983968f45c59f7
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268944"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180586"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Skapa och använda dataflöden i Power BI (förhandsversion)
 
@@ -36,7 +36,7 @@ Det finns tre huvudsakliga steg för att använda ett dataflöde:
 I följande avsnitt kommer vi att titta på vart och ett av de här stegen och bekanta oss med de verktyg som finns för att slutföra varje steg. Då sätter vi igång.
 
 > [!NOTE]
-> Funktionen dataflöden är en förhandsversion och kan komma att ändras och uppdateras innan den är allmänt tillgänglig.
+> Dataflödesfunktionen är en förhandsversion och kan komma att ändras och uppdateras innan den är allmänt tillgänglig.
 
 ## <a name="creating-a-dataflow"></a>Skapa ett dataflöde
 Om du vill skapa ett dataflöde, starta Power BI-tjänsten i en webbläsare och välj sedan en **apparbetsyta** (dataflöden är inte tillgängliga i *Min arbetsyta* i Power BI-tjänsten) i navigeringsfönstret till vänster som visas i följande skärmbild. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde. 
@@ -143,6 +143,10 @@ Du kan också använda **sökfältet**, högst upp i fönstret för att snabbt h
 
 När du väljer entiteten och sedan väljer knappen **Ladda** visas entiteter i fönstret **Fält** i **Power BI Desktop**, och de visas och fungerar precis som **tabeller** från alla andra datauppsättningar.
 
+## <a name="using-dataflows-stored-in-azure-data-lake-storage-gen2"></a>Med hjälp av dataflöden som lagras i Azure Data Lake Storage Gen2
+
+Vissa organisationer kan vilja använda sin egen lagring för skapande och hantering av dataflöden. Du kan integrera dataflöden med Azure Data Lake Storage Gen2 om du följer kraven och hanterar behörigheter korrekt. Dokumentation om alla krav för den här metoden finns från och med dokumentöversikten, [dataflöden och Azure Data Lake-integration (förhandsversion)](service-dataflows-azure-data-lake-integration.md).
+
 
 ## <a name="troubleshooting-data-connections"></a>Felsökning av dataanslutningar
 
@@ -160,8 +164,9 @@ Den här artikeln beskriver hur du kan skapa ditt egna **dataflöde** och skapa 
 * [Använda beräknade entiteter på Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
 * [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
 * [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
 
-För mer information om den gemensamma datamodellen kan du läsa dess översiktsartikel:
+Mer information om Common Data Service finns i dess översiktsartikel:
 * [Common Data Service – översikt](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [Läs mer om Common Data Model-schemat och -entiteter på GitHub](https://github.com/Microsoft/CDM)
 

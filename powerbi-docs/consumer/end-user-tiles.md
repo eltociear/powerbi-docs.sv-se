@@ -7,23 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/05/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1e86403dbdb2972cc83b379efff8bbc17173a4e1
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: b4ce5c811b2aa18803483ed9780c6b73a6b04bb1
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331906"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979247"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
-Instrumentpaneler och paneler på instrumentpanelen är en funktion i Power BI-tjänsten, inte Power BI Desktop. Paneler på instrumentpanelen kan inte skapas eller fästas i Power BI Mobile, [men de kan visas och delas](mobile/mobile-tiles-in-the-mobile-apps.md). 
+En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen av en *designer*. En panel kan skapas från en rapport, datamängd, instrumentpanel, Frågor och svar-frågerutan, Excel samt SQL Server Reporting Services (SSRS) med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.
 
-## <a name="dashboard-tiles"></a>Paneler på instrumentpanelen
 ![Power BI-instrumentpanel](./media/end-user-tiles/power-bi-dashboard.png)
 
-En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen av en *designer*. En panel kan skapas från en rapport, datamängd, instrumentpanel, Frågor och svar-frågerutan, Excel samt SQL Server Reporting Services (SSRS) med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.
 
 Utöver paneler som är fästs från rapporter kan *designers* lägga till fristående paneler direkt på instrumentpanelen med hjälp av **Lägg till panel**. Fristående paneler innehåller: textrutor, bilder, videor, strömmande data och webbinnehåll.
 
@@ -32,7 +30,6 @@ Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer informati
 
 ## <a name="interacting-with-tiles-on-a-dashboard"></a>Interaktion med paneler på en instrumentpanel
 
-### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Hovra över en panel för att ändra utseendet och beteendet
 1. Hovra över panelen för att visa ellipserna.
    
     ![panelellips](./media/end-user-tiles/ellipses_new.png)

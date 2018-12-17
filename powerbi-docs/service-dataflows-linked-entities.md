@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b69b84c7c61227ef7a827722c86f54100bd2f3b7
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 258b526c08615a81f3cc940fc3b9f2fcda063a12
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268879"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180655"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Länka entiteter mellan dataflöden i Power BI (förhandsversion)
 
@@ -32,6 +32,12 @@ Länkade entiteter är **skrivskyddade**. Om du vill skapa transformationer för
 Länkade entiteter kräver en [Power BI Premium](service-premium.md)-prenumeration för att uppdatera. Länkade entiteter är tillgängliga i alla dataflöden på en arbetsyta som finns i Power BI Premium-kapacitet. Det finns inga begränsningar i källdataflödet.
 
 Länkade entiteter fungerar endast korrekt i nya Power BI-arbetsytor. Du kan läsa mer om [nya Power BI-arbetsytor](service-create-the-new-workspaces.md). Alla länkade dataflöden måste finnas i nya arbetsytor för att fungera korrekt.
+
+> [!NOTE]
+> Entiteter varierar beroende på om de är standardentiteter eller beräknade entiteter. Standardentiteter (kallas ofta bara entiteter) frågar en extern datakälla, till exempel en SQL-databas. Beräknade entiteter kräver Premium-kapacitet i Power BI och kör sina transformationer på data som redan finns i Power BI-lagring. 
+>
+>Om ditt dataflöde inte är i en arbetsyta för Premium-kapacitet, kan du fortfarande referera till en enskild fråga eller kombinera två eller flera frågor så länge omvandlingarna inte är definierade som transformationer som lagras. Sådana referenser anses vara standardentiteter. Du gör detta genom att stänga av alternativet **Aktivera inläsning** för de refererade frågorna för att förhindra att data materialiseras och matas in i lagring. Därifrån kan du kan referera till dessa frågor **Aktivera inläsning = false** och ställa in **Aktivera inläsning** till **På** bara för de resulterade frågor som du vill materialisera.
+
 
 ## <a name="how-to-link-entities-between-dataflows"></a>Så här länkar du entiteter mellan dataflöden
 

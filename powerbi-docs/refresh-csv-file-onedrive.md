@@ -1,21 +1,22 @@
 ---
-title: Uppdatera en datauppsättning som skapats från en fil med kommaavgränsade värden (.csv) i OneDrive
+title: Uppdatera en datauppsättning som skapats från en CSV-fil i OneDrive
 description: Uppdatera en datauppsättning som skapats från en fil med kommaavgränsade värden (.csv) i OneDrive
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 6e6ce7a80e810ac8c05f6a4ab70c2d19f2201262
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: c06d9c56051ccb02d17d695561bc6caa462e99c3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670381"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025544"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>Uppdatera en datauppsättning som skapats från en .CSV-fil i OneDrive eller SharePoint Online
 ## <a name="what-are-the-advantages"></a>Vilka är fördelarna?
@@ -29,7 +30,7 @@ Många organisationer kör processer som automatiskt frågar databaser efter dat
 Filer med kommaavgränsade värden är enkla textfiler, så anslutningar till externa datakällor och rapporter stöds inte. Du kan inte schemalägga en uppdatering av en datauppsättning som skapats från en kommaavgränsad fil. Men om filen finns i OneDrive eller SharePoint Online synkroniserar Power BI alla ändringar i filen med datauppsättningen automatiskt ungefär varje timme.
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive för företag. Vad är skillnaden?
-Om du både har en privat OneDrive och en OneDrive för företag, bör du ha alla filer som du vill ansluta till i Power BI i din OneDrive för företag. Skälet är att du förmodligen använder två olika konton för att logga in på dem.
+Om du både har en privat OneDrive och en OneDrive för företag, bör du ha alla filer som du vill ansluta till i Power BI i din OneDrive för företag. Skälet är följande: Du använder förmodligen två olika konton för att logga in till dem.
 
 Det är vanligtvis inga problem att ansluta till OneDrive för företag i Power BI eftersom det konto som du använder för att logga in på Power BI ofta är samma konto som används för att logga in på OneDrive för företag. Men din privata OneDrive loggar du troligen in på med ett annat [Microsoft-konto](https://account.microsoft.com).
 

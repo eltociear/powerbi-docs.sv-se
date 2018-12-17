@@ -9,13 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
+ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: cbfee8034639a65517f9adc57cc95dd1271e6044
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717641"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025452"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Vad är Microsoft Power BI Premium?
 
@@ -45,11 +46,11 @@ I följande tabell visas en översikt över skillnaderna mellan delad kapacitet 
 |  | Delad kapacitet | Power BI Premium-kapacitet |
 | --- | --- | --- |
 | **Uppdateringsintervall** |8/dag |48/dag |
-| **Isolering med dedikerad maskinvara** |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig") |
+| **Isolering med dedikerad maskinvara** |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png) |
 | **Företagsdistribution till** _**alla användare**_ | | |
-| Appar och delning |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig")<sup>1</sup> |
-| Inbäddad API och kontroller |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig")<sup>2</sup> |
-| **Publicera Power BI-rapporter lokalt** |![](media/service-premium/not-available.png "Inte tillgänglig") |![](media/service-premium/available.png "Tillgänglig") |
+| Appar och delning |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png) |
+| Inbäddad API och kontroller |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png)<sup>2</sup> |
+| **Publicera Power BI-rapporter lokalt** |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> Mer information finns i avsnittet med [funktioner per licenstyp](service-features-license-type.md).*  
@@ -88,7 +89,7 @@ Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-k
 
 Tänk på en arbetsbelastning i Power BI som en av de många tjänster som du kan visa användarna. Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet.
 
-Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **Dataflöden**. Du aktiverar de här arbetsbelastningarna i Power BI-adminstrationsportalen eller via Power BI REST API. Du kan också ange maximalt minne varje arbetsbelastning kan använda, så att du kan styra hur de olika arbetsbelastningarna påverkar varandra. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
+Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **dataflöden**. Du aktiverar de här arbetsbelastningarna i Power BI-adminstrationsportalen eller via Power BI REST API. Du kan också ange maximalt minne varje arbetsbelastning kan använda, så att du kan styra hur de olika arbetsbelastningarna påverkar varandra. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
 
 ### <a name="default-memory-settings"></a>Standardinställningar för minne
 

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297238"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979568"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -100,7 +100,7 @@ När du navigerar i en rapport genom att svepa, väljer en rapportsida i åtgär
 
 När rapportförfattarna anpassar instrumentpanelsteman i Power BI-tjänsten, ändras även utseendet på instrumentpanelen i mobilappen. Dock visas inte bakgrundsbilderna.
 
-#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Konfiguration av Power BI iOS-mobilappens fjärråtkomst till en rapportserver
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Fjärrkonfiguration av Power BI iOS-mobilappar för åtkomst till en rapportserver
 
 IT-administratören kan nu använda MDM-verktyget för att konfigurera åtkomst för Power BI iOS-mobilappen till en rapportserver. Mer information finns i avsnittet om [hur du fjärrkonfigurerar åtkomsten från iOS-mobilappen för Power BI till en rapportserver](../../report-server/configure-powerbi-mobile-apps-remote.md).
 
@@ -458,8 +458,8 @@ Meddelandecentret i Power BI-mobilappen visar nya data eller instrumentpaneler s
 ### <a name="may-2016"></a>Maj 2016
 #### <a name="ios-devices-and-android-phones"></a>iOS-enheter och Android-telefoner
 * **QR-koder** är nu tillgängliga även **för rapporter**. Skanna koden med Power BI-appen för att gå direkt till en relaterad rapport, utan att behöva navigera eller söka dig fram.
-* **Förbättrad datahantering** för SQL Server 2016 Reporting Services: kortare laddningstider och lägre dataförbrukning för din enhet.
-* **Mobila Microsoft SQL Server 2016-rapporter med teman**: Du hittar temana för mobila rapporter på enheten.
+* **Förbättrad datahantering** för SQL Server 2016 Reporting Services: Minskade inläsningstider och minskad dataförbrukning för din enhet.
+* **SQL Server 2016 mobilrapporter med teman**: Se teman för mobila rapporter på din enhet.
 * **Geofiltrering**: Filtrera rapporter efter din aktuella plats.
 
 ### <a name="april-2016"></a>April 2016
@@ -523,7 +523,7 @@ Visa instrumentpaneler i [liggande läge på Windows 10-telefoner](mobile-apps-v
 
 Visa [rapporter på din Windows 10-telefon](mobile-reports-in-the-mobile-apps.md).
 
-Snabbare [insikter om dina mobila Windows 10-instrumentpaneler](mobile-tiles-in-the-mobile-apps.md): Dela en ögonblicksbild av en panel eller öppna en rapport direkt från instrumentpanelen.
+Kortare tid till [insikter om dina mobila Windows 10-instrumentpaneler](mobile-tiles-in-the-mobile-apps.md): Dela en ögonblicksbild av en panel eller öppna en rapport direkt från instrumentpanelen.
 
 ### <a name="january-2016"></a>Januari 2016
 Alla förbättringar för januari finns redan i den nya [Power BI-appen för Windows 10-telefoner](mobile-windows-10-phone-app-get-started.md), som släpptes i december 2015. Nu lanseras de för de övriga Power BI-apparna för mobila enheter. Läs blogginlägget om dessa förbättringar.
@@ -536,7 +536,7 @@ Alla förbättringar för januari finns redan i den nya [Power BI-appen för Win
 
 **R-paneler och webbwidgetar** Du kan visa dessa nya paneltyper i instrumentpaneler på din mobila enhet.
 
-**Bing-instrumentpaneler** I Power BI-tjänsten kan du nu skapa [instrumentpaneler med Bing-sökresultat](../end-user-connect-to-services.md) och visa dem på din mobila enhet.
+**Bing-instrumentpaneler** I Power BI-tjänsten kan du nu skapa [instrumentpaneler med Bing-sökresultat](../../service-connect-to-services.md) och visa dem på din mobila enhet.
 
 **Rapportsidor fästa som paneler på instrumentpaneler** Nu när du kan fästa en hel rapportsida på en instrumentpanel i Power BI-tjänsten, kan du visa rapportsidor i Power BI-appen på din iPhone eller på din Android-telefon.
 
@@ -600,18 +600,18 @@ Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av ok
 Förbättringar i Power BI-mobilapparna – Android, iOS (iPhone och iPad) och Windows. Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av september](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
 #### <a name="android"></a>Android
-* Stöd för grupparbetsytor: samarbeta med kolleger på grupparbetsytor. 
-* Stöd för icke-autentiserade användare: För de få tillfällen när användare misslyckas med eller inte kan logga in i appen, har vi lagt till ett snabbt och enkelt sätt för att kontakta supporten och skicka feedback.
+* Stöd för grupparbetsytor: Samarbeta med kolleger i grupparbetsytor. 
+* Stöd för icke-autentiserade användare:  För de få tillfällen när användare misslyckas med eller inte kan logga in i appen, har vi lagt till ett snabbt och enkelt sätt för att kontakta supporten och skicka feedback.
 * Förbättrad användarupplevelse vid åtkomst till instrumentpaneler med hjälp av rollbaserad säkerhet.          
 * Förbättrad dataformatering av diagram och anpassning av alla paneler på instrumentpaneler. 
 
 #### <a name="ios-iphone-and-ipad"></a>iOS (iPhone och iPad)
-* Ny och förbättrad navigering:ny navigering som kan döljas maximerar skärmutrymmet och förbättrar navigeringen i hela appen. 
-* Grupparbetsytor: Samarbeta med kolleger på grupparbetsytor. 
+* Ny och förbättrad navigering: Ny navigering som kan döljas maximerar skärmutrymmet och förbättrar navigeringen i hela appen. 
+* Grupparbetsytor: Samarbeta med kolleger i grupparbetsytor. 
 * Uppgradering av autentiseringsprocessen: Kvalitet-, prestanda- och funktionalitetsförbättringarna förbättrar appens autentiseringsprocess, inklusive stöd för SSO (Single Sign-On). 
 * Bättre datarepresentation för linjediagramspaneler för bättre komprimering av x-axeln.
 * Förbättrad användarupplevelse vid användning med rollbaserad säkerhet.
-* Pekoptimerade förbättringar av matrisdiagrampaneler:nu kan du enkelt rulla igenom dina matrisdata och visa alla inkluderade data enkelt och intuitivt.
+* Pekoptimerade förbättringar av matrisdiagrampaneler: Nu kan du enkelt rulla igenom dina matrisdata och visa alla inkluderade data enkelt och intuitivt.
 * Förbättrad dataformatering av diagram och anpassning av paneler på instrumentpaneler. 
 * Borttagning av iOS 7-stöd: För att bevara högsta möjliga säkerhetsstandard för Power BI kommer vi inte längre att stödja iOS 7-installerade enheter. iOS 8 och senare krävs. 
 * Skicka feedback och klassificering tillagt i appen: Vi har lagt till kapacitet i appen för att kunna skicka feedback och tillhandahålla klassificeringar så att vi kan öka communityns inverkan på vår planering och påverka problem enkelt och direkt från appen.

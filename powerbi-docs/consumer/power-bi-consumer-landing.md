@@ -1,21 +1,21 @@
 ---
-title: Power BI för rapportkonsumenter
-description: Vill du komma igång med Power BI? Lär dig mer om de olika produkter och tjänster som utgör Power BI och se vad du kan göra med dem.
+title: Power BI för rapportanvändare
+description: Vill du komma igång med Power BI? Lära känna funktionerna och egenskaperna i Power BI och se vad du kan göra med dem som Power BI-konsument eller slutanvändare.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/11/2018
+ms.date: 11/07/2018
 ms.author: mihart
-layout: landingpage
+layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 566511622ffd167d3389ab0ba290671f577a759f
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: c3a506b8693560406b6fa961f4341b77f2745690
+ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396603"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53111524"
 ---
 # <a name="power-bi-for-consumers"></a>Power BI för konsumenter
 Som *slutanvändare* eller *konsument* är du den som tar emot instrumentpaneler, rapporter och appar från kollegorna. Du arbetar i ***Power BI-tjänsten*** med att granska och interagera med innehållet i syfte att kunna fatta välgrundade affärsbeslut.
@@ -47,7 +47,7 @@ Visa en <a href="end-user-report-open.md">rapport</a> | <a href="end-user-dashbo
                                                                         <div class="cardText"> 
                                                                                       <h3>Bekanta dig med Power BI</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-basic-concepts.md">Grundläggande begrepp</a><br/>
+                                                                                            <a href="end-user-basic-concepts.md">Förstå de grundläggande begreppen</a><br/>
                                                                                             <a href="end-user-experience.md">Navigera i Power BI-tjänsten</a><br/> 
                                                                                             <a href="../power-bi-overview.md">Lär dig mer om alla de olika Power BI-verktygen</a><br/> 
                                                                                             <!--<a href="end-user-faq.md">FAQ: Frequently Asked Questions</a> -->
@@ -63,7 +63,7 @@ Visa en <a href="end-user-report-open.md">rapport</a> | <a href="end-user-dashbo
                                                                         <div class="cardText"> 
                                                                                       <h3>Avancerade uppgifter</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-q-and-a.md">Sökruta med naturligt språk för Frågor och svar</a><br/> 
+                                                                                            <a href="end-user-q-and-a.md">Lär dig använda sökrutan med naturligt språk för Frågor och svar</a><br/> 
                                                                                             <a href="end-user-focus.md">Ändra visningsinställningar</a><br/> 
                                                                                             <a href="end-user-report-filter.md">Lär dig hur du använder rapportfilter</a><br> 
                                                                                             <a href="end-user-insights.md">Generera automatiska insikter</a><br/> 

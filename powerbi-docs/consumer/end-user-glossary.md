@@ -5,14 +5,14 @@ services: power-bi
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/09/2018
+ms.date: 11/12/2018
 ms.author: mihart
-ms.openlocfilehash: d8238ae96bb57c580c0b74725b105ad7f4332136
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508024"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026356"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -40,9 +40,9 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
  
 **apparbetsyta** Nu är alla arbetsytor i Power BI förutom Min arbetsyta apparbetsytor. Innehållet kan paketeras i en Power BI-app. De som lagras i Premium-kapacitet kan delas med användare på den kostnadsfria nivån. Personliga arbetsytor (under Min arbetsyta) kan finnas i Premium-kapacitet.  
 
-**AppSource**
+**AppSource** Centraliserad lagringsplats online där du kan bläddra och upptäcka instrumentpaneler, rapporter, datauppsättningar och appar att ladda ned.
 
-**ArcGIS för Power BI** ArcGIS är en plattform för mappning och analys som skapats av företaget ESRI. Namnet på det visuella objektet som ingår i biblioteket med Power BI-visualiseringar kallas ArcGIS för Power BI.
+**ArcGIS Maps for Power BI** ArcGIS är en plattform för mappning och analys som skapats av företaget ESRI. Namnet på det visuella objektet som ingår i biblioteket med Power BI-visualiseringar kallas ArcGIS Maps for Power BI.
 
 **tilldela** [Power BI Premium] Verb för att flytta en arbetsyta till eller från dedikerad kapacitet. Använd inte en ”uppgradering” för att flytta en arbetsyta till dedikerad kapacitet eftersom det antyder att ”dedikerad” är överlägset ”delad” kapacitet.  
 
@@ -69,7 +69,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **innehållslista** Innehållsindexet för en app.
 
-**innehållspaket**
+**Innehållspaket** En uppsättning kompletta datauppsättningar, rapporter och instrumentpaneler. Nu till **appar**: lär dig mer [om den nya arbetsytan](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
 
 **innehållsvy**
 
@@ -92,11 +92,11 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 **datamodell, Excel-datamodell**
 
 
-**datauppsättning** jämfört med **datakälla**
+**Datauppsättning** kontra **datakälla** En **datauppsättning** är en samling data som används för att skapa visualiseringar och rapporter.
 
 **dedikerad kapacitet** [Power BI Premium] Datamodeller som körs på dedikerad maskinvara i Microsofts molndatacenter för att säkerställa konsekventa prestanda i stor skala. BI-lösningar levereras till hela organisationen oavsett Power BI-licens.
 
-**Desktop** Första förekomsten: Power BI Desktop Efterföljande omnämnanden: Desktop
+**Desktop** Första instans: Power BI Desktop, efterföljande omnämnanden: Desktop
 
 
 **romb** Power BI Premium. Formen på den ikon som indikerar att en arbetsyta är en arbetsyta för Premium-kapacitet.
@@ -110,6 +110,8 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 **ellips** ...
 
 **bädda in kod** En vanlig standard på Internet. I Power BI kan kunden generera en inbäddningskod och kopiera den för att placera innehåll, till exempel en rapportvisualisering, på en webbplats eller i en blogg.
+
+**Embedded** Se Power BI Embedded. 
 
 **inbäddning** I Power BI-utvecklingsprodukten syftar inbäddning på att integrera analyser i appar med Power BI REST-API:erna och Power BI SDK.
 
@@ -133,7 +135,7 @@ Power BI-miljö (klientorganisation) kan användas i dokumentation om det hjälp
 
 ## <a name="g"></a>G
 
-**gateways** eller **lokala data-gateways** En brygga till underliggande datakällor. De ger snabb och säker dataöverföring mellan Power BI-tjänsten och lokala datakällor som stöder uppdatering. Hanteras vanligtvis av IT. lokala data-gateways
+**gateways** eller **lokala data-gateways** En brygga till underliggande datakällor. De ger snabb och säker dataöverföring mellan Power BI-tjänsten och lokala datakällor som stöder uppdatering. Hanteras vanligtvis av IT. 
 
 ## <a name="h"></a>H
 **visualiseringar med hög densitet** Visualiseringar med fler datapunkter än vad Power BI kan återge. Power BI samplar data för att visa formen och avvikande värden.
@@ -160,7 +162,7 @@ Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden elle
 
 ## <a name="m"></a>M
 
-**mått** Anpassade beräkningar skrivna i Power BI Desktop med hjälp av DAX-kod eller snabbmått.
+**Mobilapp** Appar med vilka du kan köra Power BI på iOS-, Android- och Windows-enheter.
 
 **modellering** [Power BI Desktop] Att hämta data som du har anslutit till och som är redo att användas i Power BI. Detta omfattar att skapa relationer mellan tabeller i flera datakällor, att skapa mått och att tilldela mått.
 
@@ -180,6 +182,9 @@ Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden elle
 ## <a name="o"></a>O
 
 **OneDrive för företag** jämfört med **OneDrive** OneDrive är ett personligt konto och OneDrive för företag är för arbetskonton.  
+
+**Lokal datagateway**
+
 
 
 ## <a name="p"></a>P
@@ -202,7 +207,7 @@ Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden elle
 
 **Power BI**, **Power BI-tjänsten**, **Power BI Desktop**, **Power BI Mobile** Exempel på Power BI-produkter. *Power BI* är den generella termen. Termen används ofta i stället för det fullständiga produktnamnet, t.ex. *Power BI-tjänsten* eller *Power BI Mobile*, efter den första referensen till det fullständiga produktnamnet.
 
-**Power BI Desktop** kallas även *Desktop*.
+**Power BI Desktop** kallas även *Desktop*. Den kostnadsfria Windows-appen för Power BI kan du installera på din lokala dator och med den kan du ansluta till, transformera och visualisera dina data. Används av rapportdesigners och -administratörer. Mer information finns i [Vad är Power BI?](../power-bi-overview.md).
 
 **Power BI Embedded** En produkt som används av utvecklare för att bädda in Power BI-instrumentpaneler och -rapporter i appar, webbplatser och verktyg.
 
@@ -210,8 +215,9 @@ Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden elle
 
 **Power BI Pro-licens** En månatlig användarlicens som ger möjlighet att skapa instrumentpaneler, samarbeta kring delade data, hålla data uppdaterade automatiskt, granska och övervaka hur data nås och används, samt möjlighet att paketera innehåll för distribution (Power BI-appar).
 
-**Power BI-rapportserver** En ny SSRS-produkt som erbjuds med Power BI Premium som hjälper organisationer att skapa distribuerade, BI-hybridsystem (en kombination av molnspecifika och lokala distributioner).
-Produkten bygger på SQL Server Reporting Services med dess avancerade, numrerade rapporteringsfunktioner och mobila rapporter i kombination med möjligheten att hantera Power BI-rapporter som skapats med Power BI Desktop och leverera dem i Power BI-mobilappar. Klassiska SSRS säljs fortfarande.
+**Power BI-rapportserver** En ny SSRS-produkt som erbjuds med Power BI Premium som hjälper organisationer att skapa distribuerade, BI-hybridsystem (en kombination av molnspecifika och lokala distributioner). Embedded är en lokaliserad metod för att lagra och hantera Power BI-rapporter.
+
+**Power BI-tjänst** En SaaS-tjänst (programvara som tjänst) online. Mer information finns i [Vad är Power BI?](../power-bi-overview.md).
 
 **Power BI-tjänstanslutning** Den här anslutningen gör att Power BI Desktop-användare kan ansluta till datauppsättningar i Power BI-tjänsten från Desktop. De kan skapa en modell en gång och återanvända den i många rapporter och på många instrumentpaneler.
 
