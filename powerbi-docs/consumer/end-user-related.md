@@ -1,27 +1,28 @@
 ---
-title: Visa relaterat innehåll i Power BI-tjänsten
+title: Visa relaterat innehåll från instrumentpaneler, rapporter och datauppsättningar
 description: Enklare navigering, visa relaterat innehåll på instrumentpaneler, rapporter och datauppsättningar
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7bb46bbed79be32b45fe4e5dbd2ecb07acc5d673
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: cc2369f6e1e074231267ceb41c19585eccfdb6f9
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566405"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280736"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Visa relaterat innehåll i Power BI-tjänsten
-Fönstret **Relaterat innehåll** visar hur din Power BI-tjänsts innehåll – instrumentpaneler, rapporter och datauppsättningar – är sammankopplade.  Och bättre blir det, från det här fönstret kan du utföra vanliga uppgift såsom att uppdatera, byta namn, generera insikter och mycket mer. Välj en relaterad rapport eller instrumentpanel så öppnas den i din Power BI-arbetsyta.   
+Fönstret **Relaterat innehåll** visar hur din Power BI-tjänsts innehåll – instrumentpaneler, rapporter och datauppsättningar – är sammankopplade. Fönstret för relaterat innehåll är också ett utgångspunkt för att vidta åtgärder. Härifrån kan du uppdatera, byta namn på, generera insikter och mycket mer. Välj en relaterad rapport eller instrumentpanel så öppnas den i din Power BI-arbetsyta.   
 
-Som du förmodligen redan har upptäckt, skapas rapporter på datauppsättningar. Rapportens visualiseringar fästs sedan på instrumentpaneler och instrumentpanelens visuella objekt länkar tillbaka till rapporter. Men hur vet du vilka instrumentpaneler som är värdar för visualiseringar från marknadsföringsrapporten? Och hur hittar du dessa instrumentpaneler? Använder din instrumentpanel för Anskaffning visualiseringar från mer än en datauppsättning? I så fall, vad heter de och hur kan du öppna och redigera dem? Används datauppsättningen för HR i några rapporter och instrumentpaneler alls eller kan den flyttas utan att orsaka några brutna länkar? Frågor som dessa kan alla besvaras på fönstret **Relaterat innehåll**.  Fönstret visar inte bara relaterat innehåll, det låter dig också vidta åtgärder för innehållet och enkelt navigera mellan relaterat innehåll.
+I Power BI skapas rapporter på datauppsättningar, rapportvisualiseringar fästs på instrumentpaneler och instrumentpanelens visuella objekt länkar tillbaka till rapporter. Men hur vet du vilka instrumentpaneler som är värdar för visuella objekt från marknadsföringsrapporten? Och hur hittar du dessa instrumentpaneler? Använder din instrumentpanel för Anskaffning visuella objekt från mer än en datauppsättning? I så fall, vad heter de och hur kan du öppna och redigera dem? Används HR-datauppsättningen i några rapporter och instrumentpaneler? Eller kan den flyttas utan att orsaka några brutna länkar? Frågor som dessa kan alla besvaras på fönstret **Relaterat innehåll**.  Fönstret visar inte bara relaterat innehåll, det låter dig också vidta åtgärder för innehållet och enkelt navigera mellan relaterat innehåll.
 
 ![relaterat innehåll](./media/end-user-related/power-bi-view-related-dashboard-new.png)
 
@@ -86,14 +87,13 @@ I en arbetsyta väljer du fliken **Datauppsättningar** och letar sedan upp ikon
 
 Välj ikonen för att öppna fönstret **Relaterat innehåll**.
 
-![](media/end-user-related/power-bi-datasets.png)
+![Panel med relaterat innehåll öppnas ovanpå Power BI-innehållsvyn](media/end-user-related/power-bi-datasets.png)
 
-Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Välj exempelvis ett namn på en instrumentpanel eller rapport för att öppna den.  Välj en ikon för någon instrumentpanel i listan för att [dela instrumentpanelen med andra](../service-share-dashboards.md) eller öppna fönstret **Inställningar** för instrumentpanelen. Välj en ikon för en rapport för att [analysera i Excel](../service-analyze-in-excel.md), [byta namn](../service-rename.md) eller [hämta insikter](end-user-insights.md).  
+Härifrån kan du vidta direkta åtgärder för det relaterade innehållet. Välj exempelvis ett namn på en instrumentpanel eller rapport för att öppna den.  Välj en ikon för någon instrumentpanel i listan för att [dela instrumentpanelen med andra](../service-share-dashboards.md) eller öppna fönstret **Inställningar** för instrumentpanelen. Välj en ikon för en rapport för att [analysera i Excel](../service-analyze-in-excel.md), [byta namn](../service-rename.md) eller [hämta insikter](end-user-insights.md).  
 
 ## <a name="limitations-and-troubleshooting"></a>Begränsningar och felsökning
-* Om din webbläsare inte har tillräckligt med utrymme, ser du inte ett alternativ för **Visa relaterade** men du kommer fortfarande att se ikonen Visa relaterade ![ikonen Visa relaterade](./media/end-user-related/power-bi-view-related-icon-new.png). Välj ikonen för att öppna fönstret **Relaterat innehåll**.
+* Om du inte ser ”Visa relaterade” ska du istället leta efter ![ikonen Visa relaterade](./media/end-user-related/power-bi-view-related-icon-new.png). Välj ikonen för att öppna fönstret **Relaterat innehåll**.
 * Om du vill öppna relaterat innehåll för en rapport måste du vara i [Läsvy](end-user-reading-view.md).
-* Relaterat innehåll är inte tillgängligt i Power BI Desktop.
 * Funktionen Relaterat innehåll fungerar inte för strömning av datauppsättningar.
 
 ## <a name="next-steps"></a>Nästa steg

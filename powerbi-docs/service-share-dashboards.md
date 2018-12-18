@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8644bc01aa845ff91950169f011cb70fb161ecb1
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: abddbf3e4ae0b51dbb46f949e6d4f287d084f873
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271773"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281045"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -111,7 +111,7 @@ Saker att tänka på när det gäller att dela instrumentpaneler och rapporter:
 
 * Normalt ser du och dina kollegor samma data på instrumentpanelen eller rapporten. Så om du har behörighet att se mer data än vad de har, så kan de se alla dina data på instrumentpanelen eller rapporten. Men om [säkerhet på radnivå (RLS)](service-admin-rls.md) tillämpas på instrumentpanelens eller rapportens underliggande datauppsättning, då avgör de enskilda användarnas autentiseringsuppgifter vilka data de har åtkomst till.
 * Alla som du delar din instrumentpanel med kan se den och interagera med relaterade rapporter i [läsvy](consumer/end-user-reading-view.md). De kan inte skapa rapporter eller spara ändringar i befintliga rapporter.
-* Ingen kan se eller hämta datauppsättningen.
+* Ingen kan se eller hämta datauppsättningen, men de kan komma åt datauppsättningen direkt med hjälp av funktionen Analysera i Excel. En administratör kan begränsa människors möjlighet att använda Analysera i Excel genom att begränsa möjligheten för alla användare i en grupp. Begränsningen gäller dock för alla användare i gruppen, för varje arbetsyta som gruppen tillhör.
 * Alla kan [uppdatera data](refresh-data.md) manuellt.
 * Om du använder Office 365 för e-post kan du dela med medlemmar i en distributionsgrupp genom att ange den e-postadress som är kopplad till distributionsgruppen.
 * Medarbetare som har samma e-postdomän som du och medarbetare vars domäner är olika men registrerade inom samma klientorganisation kan dela instrumentpanelen med andra. Låt oss t.ex. anta att domänerna contoso.com och contoso2.com har registrerats i samma klientorganisation. Om din e-postadress är konrads@contoso.com, så kan både ravali@contoso.com och gustav@contoso2.com dela, så länge som du har gett dem behörighet att dela.

@@ -5,18 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 3b3eaa33879a1f0c6d51aecaa93cae6ce5c90d10
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473875"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280821"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Snabbstart – Hitta rätt i Power BI-tjänsten
 
@@ -40,7 +41,7 @@ Vi ska använda exempeldata när vi navigerar i och demonstrerar Power BI-tjäns
 
     Power BI-tjänsten importerar exemplet och visar instrumentpanelen. Instrumentpaneler är något som särskiljer Power BI-tjänsten från Power BI Desktop. Exemplet innehåller också en rapport och en datauppsättning som vi ska titta på senare.
 
-    ![](media/end-user-experience/power-bi-dashboard.png)
+    ![visning av instrumentpanel](media/end-user-experience/power-bi-dashboard.png)
 
 Låt Amanda visa dig navigeringsmiljön för Power BI-tjänsten.  Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
@@ -50,7 +51,7 @@ Låt Amanda visa dig navigeringsmiljön för Power BI-tjänsten.  Prova sedan sj
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Visa innehåll (instrumentpaneler, rapporter, arbetsböcker, datauppsättningar, arbetsytor, appar)
 Låt oss börja med att titta på hur grundläggande innehåll är organiserat (instrumentpaneler, rapporter, datauppsättningar, arbetsböcker). Innehållet visas på en arbetsyta. Än så länge har du bara en arbetsyta, kallad **Min arbetsyta**. Normalt använder användare inte några andra arbetsytor och behöver dem inte. På Min arbetsyta lagrar allt innehåll som du äger. Du kan se det som det personliga utvecklingsutrymme eller ett område för ditt eget innehåll. Min arbetsyta är där den detaljhandelsanalys som du precis har laddat ned sparas. 
 
-I Min arbetsyta är innehållet uppdelat i 4 flikar: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.
+I Min arbetsyta är innehållet uppdelat på fyra flikar: Instrumentpaneler, Rapporter, Arbetsböcker och Datauppsättningar.
 
 ![Skärmen Min arbetsyta](./media/end-user-experience/power-bi-my-workspace.png)
 

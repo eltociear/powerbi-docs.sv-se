@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 709518924fbb9d83201eb5c070b7a3e93838ec79
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 7a1187373304387ac511053d241e5cfb31f7fcd9
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331952"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280591"
 ---
 # <a name="intro-to-dashboards-for-power-bi-designers"></a>Introduktion till instrumentpaneler för Power BI-designers
 
@@ -48,15 +48,15 @@ En instrumentpanel är inte bara en fin bild. Den är i hög grad interaktiv. Pa
 | --- | --- | --- |
 | Sidor |En sida |En eller flera sidor |
 | Datakällor |En eller flera rapporter och en eller flera datauppsättningar per instrumentpanel |En enskild datauppsättning per rapport |
-| Tillgängliga i Power BI Desktop |Nej |Ja, ***skapare*** kan skapa och visa rapporter i Desktop |
+| Tillgängliga i Power BI Desktop |Nej | Kan skapa och visa rapporter i Power BI Desktop |
 | Prenumerera |Kan prenumerera på en instrumentpanel |Det går att prenumerera på rapportsidor |
 | Filtrering |Det går inte att filtrera eller dela upp |Det finns många olika sätt att filtrera, markera och dela upp |
 | Aktuella |Det går att ange en instrumentpanel som din ”aktuella” instrumentpanel |Det går inte att skapa en aktuell rapport |
 | Favorit | Kan markera instrumentpaneler som *favoriter* | Kan markera rapporter som *favoriter*
 | Ställa in avisering |Tillgänglig för instrumentpaneler i vissa fall |Inte tillgängligt från rapporter |
-| Frågor med naturligt språk |Tillgängligt från instrumentpanelen |Inte tillgängligt från rapporter |
+| Frågor med naturligt språk (Frågor och svar) |Tillgängliga i instrumentpaneler | Tillgängliga i rapporter |
 | Det går att visa tabeller och fält från den underliggande datauppsättningen |Nej. Det går att exportera data men tabeller och fält visas inte i själva instrumentpanelen. |Ja. Det går att visa datauppsättningens tabeller, fält och värden. |
-| Anpassning |Nej |I läsvyn kan du publicera, bädda in, filtrera, exportera, ladda ned som.pbix, visa relaterat innehåll, generera QR-koder, analysera i Excel med mera.  |
+
 
 ## <a name="next-steps"></a>Nästa steg
 * Bekanta dig med instrumentpaneler genom att ta en titt på ett av våra [exempel](sample-tutorial-connect-to-the-samples.md).

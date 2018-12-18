@@ -5,20 +5,21 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/08/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7982c2b29d5d92a992a115c92cbc7f0d128cb9d6
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 0d614b6028fa4d7e11ac5bf82e05d44a95e4f234
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452601"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280867"
 ---
-# <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Självstudie: Ange dataaviseringar i Power BI-tjänsten
+# <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Självstudie: Ange datavarningar i Power BI-tjänsten
 Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett. 
 
 Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, eller om någon har delat en instrumentpanel med dig från en [Premium-kapacitet](../service-premium.md). Aviseringar kan endast ställas in på paneler som har fästs från rapportvisualiseringar och endast på mätare, KPI:er och kort. Aviseringar kan ställas in på visuella objekt som skapats från direktuppspelande datauppsättningar som har fästs från en rapport till en instrumentpanel, men kan inte anges för direktuppspelande paneler som skapas direkt på en instrumentpanel med hjälp av **Lägg till panel** > **Anpassade direktuppspelande data**. 
@@ -83,7 +84,7 @@ Därefter skickar Power BI en avisering till meddelandecentret och, om du vill, 
    > 
 
 ## <a name="managing-alerts"></a>Hantera aviseringar
-Det finns flera sätt att hantera dina aviseringar: från paneler i instrumentpanelen, Power BI-inställningsmenyn och på en enskild panel i [Power BI-mobilappen på iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) eller i [Power BI-mobilappen för Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+Det finns många sätt att hantera dina aviseringar: Från paneler i instrumentpanelen, Power BI-inställningsmenyn och på en enskild panel i [Power BI-mobilappen på iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) eller i [Power BI-mobilappen för Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### <a name="from-the-tile-itself"></a>Från själva panelen
 1. Om du behöver ändra eller ta bort en avisering för en panel öppnar du fönstret **Hantera aviseringar** på nytt genom att välja klockikonen ![klockikon](media/end-user-alerts/power-bi-bell-icon.png). Alla aviseringar som du har angett för panelen visas.

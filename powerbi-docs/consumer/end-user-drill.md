@@ -1,33 +1,34 @@
 ---
-title: Granskningsläge i en visualisering i Power BI
+title: Öka och minska detaljnivån i en visualisering
 description: Det här dokumentet beskriver hur du ökar detaljnivån i en visualisering i Microsoft Power BI-tjänsten och Power BI Desktop.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: MNAaHw4PxzE
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/26/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b8d51bef94a046d7e59962b565d13ba623b5bcc4
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: b24a58556c35a3213f3360b70d604a0e9b51b074
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679507"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281005"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Granskningsläge i en visualisering i Power BI
 
 ## <a name="drill-requires-a-hierarchy"></a>Detaljgranskning kräver en hierarki
 När en visualisering har en hierarki kan du öka detaljnivån till att visa ytterligare information. Du kan till exempel ha en visualisering som kontrollerar OS-medaljantal enligt en hierarki som består av sport, gren och evenemang. Som standard visar visualiseringen medaljantal enligt sport – gymnastik, skidåkning, vattensport osv. Men eftersom den har en hierarki, skulle val av ett av de visuella elementen (till exempel ett stapel-, linje- eller bubbeldiagram), visa en allt mer detaljerad bild. Välj elementet **vattensporter** för att se data för simning, simhopp och vattenpolo.  Välj elementet **simhopp** för att visa detaljer för trampolin, plattform och synkroniserade simhopp.
 
-Du kan lägga till hierarkier till rapporter som du äger men inte till de som delats med dig.
+Du kan lägga till hierarkier till rapporter som du äger men inte till de rapporter som delats med dig.
 Är du osäker på vilka Power BI-visualiseringar som innehåller en hierarki?  Hovra över en visualisering och om du ser dessa kontroller för ökad detaljnivå i de övre hörnen, har din visualiseringen en hierarki.
 
-![](./media/end-user-drill/power-bi-drill-icon4.png)  ![](./media/end-user-drill/power-bi-drill-icon2.png)  ![](./media/end-user-drill/power-bi-drill-icon3.png)
-![](./media/end-user-drill/power-bi-drill-icon5.png) ![](./media/end-user-drill/power-bi-drill-icon6.png)  
+![gå nedåt en nivå](./media/end-user-drill/power-bi-drill-icon4.png)![aktivera nedåt och inaktivera](./media/end-user-drill/power-bi-drill-icon2.png)![detaljgranska alla fält samtidigt ikonen](./media/end-user-drill/power-bi-drill-icon3.png)
+![detaljnivån ikonen](./media/end-user-drill/power-bi-drill-icon5.png) ![expandera ned-ikon](./media/end-user-drill/power-bi-drill-icon6.png)  
 
 Datum är en unik typ av hierarki. När du lägger till ett datumfält i en visualisering lägger Power BI automatiskt till en tidshierarki som innehåller år, kvartal, månad och dag. Mer information finns i [Visuella hierarkier och beteende för ökad detaljnivå](../guided-learning/visualizations.yml?tutorial-step=18) eller titta på videon nedan.
 
@@ -42,9 +43,9 @@ Datum är en unik typ av hierarki. När du lägger till ett datumfält i en visu
 
 1. I Power BI-tjänsten eller Desktop krävs en visualisering med en hierarki för ökad detaljnivå. 
    
-2. För att följa med, [öppna exemplet för detaljhandelsanalys](../sample-datasets.md) och skapa ett trädkartediagram som kontrollerar (värdena) **totala enheter detta år** enligt (grupperna) **Område**, **Stad**, **Postnummer** och **Namn**.  Trädkartan har en hierarki som består av område, stad, postnummer och stadsnamn. Varje område har en eller flera städer, varje stad har ett eller flera postnummer osv. Visualiseringen visar som standard endast områdesdata, eftersom *Område* visas först i listan.
+2. För att följa med ska du [öppna exemplet för detaljhandelsanalys](../sample-datasets.md) och skapa ett trädkartediagram som kontrollerar (värdena) **totala enheter detta år** enligt (grupperna) **Område**, **Stad**, **Postnummer** och **Namn**.  Trädkartan har en hierarki som består av område, stad, postnummer och stadsnamn. Varje område har en eller flera städer, varje stad har ett eller flera postnummer osv. Visualiseringen visar som standard endast områdesdata, eftersom *Område* visas först i listan.
    
-   ![](media/end-user-drill/power-bi-hierarcy-list.png)
+   ![Välj ”Område”](media/end-user-drill/power-bi-hierarcy-list.png)
 
 2. Att förstå hur de olika ikonerna för detaljgranskning fungerar tillsammans kan vara förvirrande, så låt oss filtrera trädkartan så att vi bara visar 2 av de mindre områdena: **KY** och **TN**. Välj trädkarta och under **Visuella nivåfilter** expanderar du **Område** och väljer **KY** och **TN**.
 
@@ -67,10 +68,10 @@ Det finns flera sätt att få åtkomst till funktioner för att öka och minska 
 
 - I menyraden Power BI väljer du knappen **Utforska**.
 
-   ![](media/end-user-drill/power-bi-explore.png)
+   ![Om du väljer Utforska visas ikoner för ökad detaljnivå och alternativ](media/end-user-drill/power-bi-explore.png)
 
 ## <a name="drill-pathways"></a>Sökvägar för granskning
-### <a name="drill-down"></a>Öka detaljnivån
+### <a name="drill-down"></a>Ökad detaljnivå
 Det finns olika sätt att granska visualiseringen mer detaljerat. ***Öka detaljnivån*** tar dig till nästa nivå i hierarkin, så om du tittar på nivån **Område** kan du öka detaljnivån till nivån Stad och sedan Postnummer och slutligen Namn. Varje steg i sökvägen visar nya uppgifter.
 
 ![sökväg för granskning](./media/end-user-drill/power-bi-drill-path.png)
@@ -87,7 +88,7 @@ Du kan också välja om du vill öka detaljnivån eller expandera ett fält i ta
 
 1. Starta på den översta nivån av trädkartan som visar data för KY och TN. Bredda din trädkarta genom att välja ett handtag och dra det till höger. 
 
-    ![trädkartan visar 2 stater](./media/end-user-drill/power-bi-drill-down.png) .
+    ![trädkarta som visar två stater](./media/end-user-drill/power-bi-drill-down.png) .
 
 2. Om du vill öka detaljnivån för ***alla fält samtidigt*** väljer du dubbelpilen längst upp till vänster i visualiseringen ![ dubbel granskningsikon](./media/end-user-drill/power-bi-drill-icon3.png). Din trädkarta visar nu stadsdata för Kentucky och Tennessee. 
 
@@ -97,7 +98,7 @@ Du kan också välja om du vill öka detaljnivån eller expandera ett fält i ta
 
     ![dubbel granskningsikon](./media/end-user-drill/power-bi-drill-down2.png)
 
-3. Om du vill minska detaljnivån igen väljer du uppåtpilen i det övre vänstra hörnet av visualiseringen ![](./media/end-user-drill/power-bi-drill-icon5.png).
+3. Om du vill minska detaljnivån igen väljer du uppåtpilen i det övre vänstra hörnet av visualiseringen ![ikon för att byta detaljnivå uppåt en nivå](./media/end-user-drill/power-bi-drill-icon5.png).
 
 
 ## <a name="drill-down-one-field-at-a-time"></a>Öka detaljnivån ett fält i taget
@@ -105,37 +106,37 @@ Den här metoden använder ikonerna för ökad detaljnivå som visas i det övre
 
 1. Välj ikonen för ökad detaljnivå för att aktivera den ![ökad detaljnivå aktiverad](./media/end-user-drill/power-bi-drill-icon2.png). Nu kan du öka detaljnivån ***ett fält i taget***. 
    
-   ![](media/end-user-drill/power-bi-drill-icon-new.png)
+   ![pil som pekar på ikonen för detaljnivå ökad/minskad](media/end-user-drill/power-bi-drill-icon-new.png)
 
-   Om du inte aktiverar den ökade detaljnivån, kommer valet av ett visuellt element (t.ex. ett stapel- eller bubbeldiagram eller en lövnod) att korsfiltrera diagrammen på rapportsidan.
+   Om du inte aktiverar den ökade detaljnivån kommer valet av ett visuellt element (t.ex. ett stapel- eller bubbeldiagram eller en lövnod) att korsfiltrera diagrammen på rapportsidan.
 
 2. Välj *lövnod* för **TN**. Din trädkarta visar nu alla orter i Tennessee som har en butik. 
 
-    ![](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![trädkarta som endast visar data för Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
 
-2. Du kan nu öka detaljnivån för Tennesee eller för en viss stad i Tennesee, eller så kan du expandera (se här för information om hur du **expanderar alla fält samtidigt** nedan). Låt oss nu fortsätta att öka detaljnivån ett fält i taget.  Välj **Knoxville, TN**. Din trädkarta visar nu postnumren för dina butiker i Knoxville. 
+2. Du kan nu öka detaljnivån för Tennesee eller för en viss stad i Tennesee, eller så kan du expandera (se här för information om hur du **expanderar alla fält samtidigt** nedan). Låt oss nu fortsätta att öka detaljnivån ett fält i taget.  Välj **Knoxville, TN**. Din trädkarta visar nu postnumret för din butik i Knoxville. 
 
-   ![](media/end-user-drill/power-bi-drill-down-one2.png)
+   ![trädkartan visar 37919](media/end-user-drill/power-bi-drill-down-one2.png)
 
     Observera att rubriken ändras när du ändrar detaljnivån ner och upp igen.  
 
 ## <a name="expand-all-and-expand-one-field-at-a-time"></a>Expandera alla och expandera ett fält i taget
-En trädkarta som bara visar postnummer är inte särskilt hjälpsam.  Så låt oss expandera en nivå ned i hierarkin.  
+En trädkarta som bara visar postnummer är inte användbar.  Så låt oss expandera en nivå ned i hierarkin.  
 
-1. Om trädkartan är aktiverad kan du välja ikonen *för att expandera ned* ![expandera ned](./media/end-user-drill/power-bi-drill-icon6.png) . 2 nivåer av vår hierarki visas nu i din trädkarta: postnummer och butiksnamn. 
+1. Om trädkartan är aktiverad kan du välja ikonen *för att expandera ned* ![expandera ned](./media/end-user-drill/power-bi-drill-icon6.png). Två nivåer av vår hierarki visas nu i din trädkarta: postnummer och butiksnamn. 
 
     ![visar postnummer och butiksnamn](./media/end-user-drill/power-bi-expand1.png)
 
-2. För att se alla 4 hierarkinivåer av data för Tennesee väljer du pilen för att minska detaljnivån tills du når den andra nivån, **totalt antal enheter i år efter område och stad**, för din trädkarta. 
+2. För att se alla fyra hierarkinivåer av data för Tennesee väljer du pilen för att minska detaljnivån tills du når den andra nivån, **totalt antal enheter i år efter område och stad**, för din trädkarta. 
 
-    ![](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![trädkarta som visar alla data för Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Se till att ökad detaljnivå fortfarande är aktiverat ![ökad detaljnivå aktiverat](./media/end-user-drill/power-bi-drill-icon2.png), och välj ikonen *expandera ned* ![expandera ned-ikon](./media/end-user-drill/power-bi-drill-icon6.png). Nu visas lite mer detaljer i din trädkarta. Istället för att bara visa stad och stat, visas nu även postnumret. 
 
     ![dubbel granskningsikon](./media/end-user-drill/power-bi-expand-one3.png)
 
-4. Välj ikonen *expandera ned* en gång till för att visa alla 4 hierarkinivåer i detalj för Tennesee i din trädkarta. Hovra över en lövnod för att se ytterligare information.
+4. Välj ikonen *expandera ned* en gång till för att visa alla fyra hierarkinivåer i detalj för Tennesee i din trädkarta. Hovra över en lövnod för att se ytterligare information.
 
    ![trädkarta som visar data för Tennesee](./media/end-user-drill/power-bi-expand-all.png)
 
@@ -179,11 +180,11 @@ I det här exemplet kan du följa med i vårt [exempel på detaljhandelsanalys](
 
 Även om datafältet Axel är **Månad** skapar det en **årskategori** i området **Axel**. Det beror på att Power BI ger en fullständig DateTime-struktur för alla värden som läses. Högst upp i hierarkin visas årets data.
 
-![](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
+![Enskild stapel som visar data grupperade efter år](media/end-user-drill/power-bi-hierarchical-axis-datetime-1.png)
 
 Med läget för ökad detaljnivå aktiverat klickar du på stapeln i diagrammet för att gå nedåt en nivå i hierarkin. Tre staplar för data för de tillgängliga kvartalen visas. Bland ikonerna uppe till vänster väljer du alternativet för att **expandera allt nedåt en nivå i hierarkin**. Upprepa detta för att komma till nivån längst ner i hierarkin som visar resultat för varje månad.
 
-![](media/end-user-drill/power-bi-hierarchical-axis-datetime-2.png)
+![stapeldiagram för att se fält per månad](media/end-user-drill/power-bi-hierarchical-axis-datetime-2.png)
 
 Förutom visualiseringen kan vi se att hierarkin återspeglas i de data som återges för varje rapport. I följande tabell visas resultaten för att **Visa data** i en rapport med ökad detaljnivå från en månad eller alla månader. 
 
@@ -192,8 +193,8 @@ Observera att informationen är den samma för kvartals- och årsrapporter, men 
 
 |Läget Expandera|År|Kvartal|Månad|Dag|
 | ---|:---:|:---:|:---:|---|
-|Enkel|![](./media/end-user-drill/power-bi-hierarchical-year.png)|![](media/end-user-drill/power-bi-hierarchical-quarter.png)|![](./media/end-user-drill/power-bi-hierarchical-one-month.png)|![](media/end-user-drill/power-bi-hierarchical-one-day.png)|
-|Alla|![](./media/end-user-drill/power-bi-hierarchical-year.png)|![](media/end-user-drill/power-bi-hierarchical-quarter.png)|![](./media/end-user-drill/power-bi-hierarchical-all-month.png)|![](media/end-user-drill/power-bi-hierarchical-all-day.png)|
+|Enkel|![enskilt år](./media/end-user-drill/power-bi-hierarchical-year.png)|![enskilt kvartal](media/end-user-drill/power-bi-hierarchical-quarter.png)|![enskild månad](./media/end-user-drill/power-bi-hierarchical-one-month.png)|![enskild dag](media/end-user-drill/power-bi-hierarchical-one-day.png)|
+|Alla|![alla år](./media/end-user-drill/power-bi-hierarchical-year.png)|![alla kvartal](media/end-user-drill/power-bi-hierarchical-quarter.png)|![alla månader](./media/end-user-drill/power-bi-hierarchical-all-month.png)|![alla dagar](media/end-user-drill/power-bi-hierarchical-all-day.png)|
 
 
 ### <a name="hierarchical-category-data"></a>Hierarkiska kategoridata
@@ -201,26 +202,26 @@ Data som har modellerats från samlingar och delsamlingar är hierarkiska. Ett b
 
 I det här exemplet kan du följa med i [exemplet för detaljhandelsanalys](../sample-datasets.md). Skapa en visualisering av ett stående stapeldiagram med fokus på **Totalt antal enheter i år** (Värden) enligt **Område**, **Stad**, **Postnummer** och **Namn** (Grupp).  
 
-![](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
+![stapeldiagram som visar totalt antal enheter i år efter område](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
 
 Se till att läget för ökad detaljnivå är aktiverat. Bland ikonerna längst upp till vänster väljer du alternativet för att **expandera allt nedåt en nivå i hierarkin** tre gånger.
 Du ska nu vara på nivån längst ner i hierarkin, som visar resultat för område, stad och postnummer.
 
-![](media/end-user-drill/power-bi-hierarchical-axis-category-2.png)
+![stapeldiagram som visar den lägsta nivån i hierarkin, största detaljnivån](media/end-user-drill/power-bi-hierarchical-axis-category-2.png)
 
 Förutom visualiseringen kan vi se att hierarkin återspeglas i de data som återges för varje rapport. I följande tabell visas resultaten för att **Visa data** i en rapport med ökad detaljnivå för ett område och alla områden. När du ökar detaljnivån kan du se hur den enkla rapporten blir mer specifik och att rapporten med alla områden innehåller mer data.
 
 
 | Läget Expandera|Område|Stad|Postnummer|Namn|
 | ---|:---:|:---:|:---:|---|
-|Enkel|![](./media/end-user-drill/power-bi-hierarchical-territory.png)|![](media/end-user-drill/power-bi-hierarchical-one-territory-city.png)|![](./media/end-user-drill/power-bi-hierarchical-one-territory-city-postal.png)|![](media/end-user-drill/power-bi-hierarchical-one-territory-city-postal-name.png)|
-|Alla|![](./media/end-user-drill/power-bi-hierarchical-territory.png)|![](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|
+|Enkel|![enskilt område](./media/end-user-drill/power-bi-hierarchical-territory.png)|![enskild stad](media/end-user-drill/power-bi-hierarchical-one-territory-city.png)|![enskilt postnummer](./media/end-user-drill/power-bi-hierarchical-one-territory-city-postal.png)|![enskilt namn](media/end-user-drill/power-bi-hierarchical-one-territory-city-postal-name.png)|
+|Alla|![alla områden](./media/end-user-drill/power-bi-hierarchical-territory.png)|![alla städer](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![alla postnummer](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![alla namn](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|
 
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 * Om tillägget av ett datumfält i en visualisering inte skapar en hierarki, kan det bero på att ”datum”-fältet faktiskt inte har sparats som ett datum. Om du äger datauppsättningen, öppna den i vyn *Data* i Power BI Desktop, välj den kolumn som innehåller datum och välj fliken Modellering och ändra **Datatyp** till **Datum** eller **Datum/Tid**. Om rapporten har delats med dig, kontakta ägaren om du vill begära ändringen.  
   
-  ![](media/end-user-drill/power-bi-change-data-type2.png)
+  ![välj datavy, se datumtyp längst upp till höger](media/end-user-drill/power-bi-change-data-type2.png)
 
 ## <a name="next-steps"></a>Nästa steg
 [Visualiseringar i Power BI-rapporter](../visuals/power-bi-report-visualizations.md)

@@ -1,20 +1,21 @@
 ---
-title: Vad är en Power BI-konsument?
+title: Vad är en Power BI-”konsument”?
 description: Översikt över Power BI och hur de olika delarna fungerar ihop – Power BI Desktop, Power BI-tjänsten, Power BI Mobile, rapportservern och Power BI Embedded.
 author: mihart
 manager: kvivek
 ms.service: powerbi
+ms.custom: seodec18
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 10/13/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 15cdd66e6062c4199b2f736208192c452bcbd0af
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 392593c6bceed7555a82916b2a992200438dffab
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396613"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280184"
 ---
 # <a name="power-bi-for-consumers"></a>Power BI för konsumenter
 Hur du interagerar med Power BI beror på din arbetsroll. Som *slutanvändare* eller *konsument* är du den som tar emot instrumentpaneler, rapporter och appar från kollegorna. Du arbetar i ***Power BI-tjänsten*** med att granska och interagera med innehållet i syfte att kunna fatta välgrundade affärsbeslut.

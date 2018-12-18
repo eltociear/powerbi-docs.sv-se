@@ -1,21 +1,22 @@
 ---
-title: Översikt över frågor och svar i Power BI-tjänsten och Desktop
+title: Översikt över frågor och svar i Power BI-tjänsten
 description: Dokumentationsöversikt för Power BI frågor och svar frågor med naturligt språk.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 3548041be39705c3013d09740040afc3e7f1c9e7
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396369"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279589"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Frågor och svar för Power BI-**användare**
 ## <a name="what-is-qa"></a>Vad är frågor och svar?
@@ -46,7 +47,7 @@ Bekanta dig först med innehållet. Titta på visualiseringarna på instrumentpa
 
 ![Skärmen med Frågor och svar](media/end-user-q-and-a/power-bi-qna-screen.png) 
 
-* Om visualiseringarnas axeletiketter och värden inkluderar försäljning, konto, månad och affärsmöjligheter så kan du ställa frågor som: vilket *konto* har de högsta *affärsmöjligheterna*, eller visa *försäljning* per månad som ett stapeldiagram.
+* Om visualiseringarnas axeletiketter och värden inkluderar försäljning, konto, månad och affärsmöjligheter så kan du ställa frågor som: ”Vilket *konto* har de högsta *affärsmöjligheterna*, eller visa *försäljning* per månad som ett stapeldiagram.”
 
 * Om du har prestandadata för webbplatser i Google Analytics kan du fråga Frågor och svar om den tid som tillbringats på en webbplats, antalet unika besök och användarengagemang. Eller, om du frågar demografisk data, kan du ställa frågor om ålder om hushållets inkomst efter plats.
 
@@ -63,8 +64,8 @@ Frågor och svar väljer den bästa visualiseringen baserat på de data som visa
 Du kan också säga till frågor och svar vilka visualiseringar som ska användas genom att lägga till det i din fråga. Men kom ihåg att det inte alltid är möjligt för frågor och svar att visa data i den visualiseringstyp du begärt. Frågor och svar uppmanar dig med en lista över lämpliga visualiseringstyper.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-**Fråga**: Jag ser inte Frågor och svar på den här instrumentpanelen.    
-**Svar 1**: Om du inte ser någon frågeruta kontrollerar du först inställningarna. Det gör du genom att välja kugghjulsikonen i det övre högra hörnet i Power BI-verktygsfältet.   
+**Fråga:** Jag ser inte Frågor och svar på den här instrumentpanelen.    
+**Svar 1:** Om du inte ser någon frågeruta kontrollerar du först inställningarna. Det gör du genom att välja kugghjulsikonen i det övre högra hörnet i Power BI-verktygsfältet.   
 ![kugghjulsikonen](media/end-user-q-and-a/power-bi-settings.png)
 
 Välj sedan **Inställningar** > **Instrumentpaneler**. Kontrollera att det finns en bockmarkering intill **Visa sökrutan för Frågor och svar på den här instrumentpanelen**.
@@ -73,8 +74,8 @@ Välj sedan **Inställningar** > **Instrumentpaneler**. Kontrollera att det finn
 
 **Svar 2**: Ibland inaktiverar instrumentpanelens *designer* eller administratören Frågor och svar. Kontakta dem och fråga om det är OK att aktivera det igen.   
 
-**Fråga**: Jag får inte de resultat som jag vill ha när jag skriver en fråga.    
-**Svar**: Kontakta instrumentpanelens *designer*. Det finns många saker som designern kan göra för att förbättra resultaten för Frågor och svar. Till exempel kan designern byta namn på kolumner i datamängden till termer som är lätta att förstå (`CustomerFirstName` i stället för `CustFN`). Designern känner till datamängden väl och kan därför ta fram användbara frågor och lägga till dem i arbetsytan för Frågor och svar.
+**Fråga:** Jag får inte de resultat som jag vill ha när jag skriver en fråga.    
+**Svar:** Kontakta instrumentpanelens *designer*. Det finns många saker som designern kan göra för att förbättra resultaten för Frågor och svar. Till exempel kan designern byta namn på kolumner i datamängden till termer som är lätta att förstå (`CustomerFirstName` i stället för `CustFN`). Designern känner till datamängden väl och kan därför ta fram användbara frågor och lägga till dem i arbetsytan för Frågor och svar.
 
 ![aktuell fråga som är markerad](media/end-user-q-and-a/power-bi-featured-q.png)
 

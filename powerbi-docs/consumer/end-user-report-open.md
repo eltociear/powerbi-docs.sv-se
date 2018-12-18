@@ -1,20 +1,21 @@
 ---
-title: Visa en rapport i Power BI-tjänsten för användare.
+title: Visa en rapport
 description: Det här avsnittet visar hur Power BI-användare öppnar och visar en Power BI-rapport.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: 15259d472ad315eb0a6274e59ebb30b94f48a302
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: df28cd585998b8877a788e709eaf6b22474e6122
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396944"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281065"
 ---
 # <a name="view-a-report-in-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *användare*
 En rapport är en eller flera sidor med visuella objekt. Rapporter skapas av Power BI-*rapportdesigner* och [delas med *användare* direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 

@@ -1,21 +1,22 @@
 ---
-title: Lägga till ett rapportfilter
+title: Lägga till ett filter i en rapport
 description: Hur du lägger till ett filter i en rapport i Power BI-tjänsten för användare
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: ea219071b475bf5bb9123e1aa3bbaca412507a8e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473817"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280775"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
 Den här artikeln tar en titt på filterrapportfönstret i Power BI-tjänsten.
@@ -29,14 +30,14 @@ Glöm inte att titta i fönstret **Filter** när en kollega delar en rapport med
 
 ![rapport i webbläsare](media/end-user-report-filter/power-bi-expanded.png)
 
-Fönstret Filter innehåller de filter som *rapportdesignern* har lagt till i rapporten. Som *användare* kan du interagera med filtren och spara dina ändringar, men du kan inte lägga till nya filter i rapporten. På skärmbilden ovan har designern lagt till två sidnivåfilter: Segment (segment) och Year (år). Du kan interagera och ändra filtren, men du kan inte lägga till ett tredje sidnivåfilter.
+Fönstret Filter innehåller de filter som *rapportdesignern* har lagt till i rapporten. Som *användare* kan du interagera med filtren och spara dina ändringar, men du kan inte lägga till nya filter i rapporten. På skärmbilden ovan har designern lagt till två sidnivåfilter: Segment och År. Du kan interagera och ändra filtren, men du kan inte lägga till ett tredje sidnivåfilter.
 
 I Power BI-tjänsten sparas ändringar du gör i fönstret Filter i rapporterna, och dessa ändringar följer med till mobilversionen av rapporten. Om du vill återställa standardvärdena (som designern angett) i fönstret Filter väljer du **Återställ till standard** på den översta menyraden.     
 
 ## <a name="open-the-filters-pane"></a>Öppna fönstret Filter
 När en rapport har öppnats visas fönstret Filter längst till höger i rapportarbetsytan. Om du inte ser fönstret väljer du pilen i det övre högra hörnet för att expandera det.  
 
-I det här exemplet har vi valt ett visuellt objekt som innehåller 6 filter. Sidan har också filter som visas under rubriken **Sidonivåfilter**. Det finns ett [filter för detaljerad information](../power-bi-report-add-filter.md) och hela rapporten har också ett filter: **räkenskapsår** är 2013 eller 2014.
+I det här exemplet har vi valt ett visuellt objekt som innehåller 6 filter. Sidan har också filter som visas under rubriken **Sidonivåfilter**. Det finns ett [filter för detaljerad information](../power-bi-report-add-filter.md) och hela rapporten har också ett filter:  **Räkenskapsår** är 2013 eller 2014.
 
 ![lista med filter](media/end-user-report-filter/power-bi-filter-list.png)
 
