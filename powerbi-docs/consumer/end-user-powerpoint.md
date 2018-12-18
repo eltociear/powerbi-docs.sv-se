@@ -1,21 +1,22 @@
 ---
-title: Exportera rapporter för användare från Power BI till PowerPoint
+title: Exportera rapporter från Power BI till PowerPoint
 description: Läs hur du exporterar en Power BI-rapport till PowerPoint.
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: a865c98a5bacd526a553354ea828e86fa0155a79
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: 9f17cd76a733dff22ebf0b54eabc3d9b6c8f6839
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979270"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281085"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportera rapporter från Power BI till PowerPoint
 Med Power BI kan du publicera din rapport till **Microsoft PowerPoint** och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du **exporterar till PowerPoint**, inträffar följande:
@@ -29,35 +30,35 @@ Att få din **Power BI-rapport** exporterad till **PowerPoint** går snabbt. Fö
 ## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>Så här exporterar du en Power BI-rapport till PowerPoint
 Välj en rapport i Power BI-tjänsten för att visa den på arbetsytan. Du kan också välja en rapport från din **Start**-sida, **Appar** eller något annat avsnitt i ditt vänstra navigeringsfönstret.
 
-![](media/end-user-powerpoint/power-bi-publish.png)
+![Välj Arkiv från menyraden, pil som pekar på Exportera till PowerPoint](media/end-user-powerpoint/power-bi-publish.png)
 
 När den rapport du vill exportera till PowerPoint visas på arbetsytan, väljer du **Fil > Exportera till PowerPoint** från menyraden i Power BI-tjänsten.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+![Närbild av vänster navigeringsfält med Min arbetsyta markerad, listmenyn Arkiv är markerad](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
 
 Du ser en meddelandebanderoll i det övre högra hörnet i Power BI-tjänstens webbläsarfönster att rapporten exporteras till PowerPoint. Det kan ta några minuter och du kan fortsätta att arbeta i Power BI medan rapporten exporteras.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
+![meddelande om att export till PowerPoint pågår](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
 
 När det är klart, ändras meddelandebanderollen så att du vet att Power BI-tjänsten har slutfört exportåtgärden.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
+![Ett meddelande om slutförande visas](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
 
 Filen är sedan tillgänglig där din webbläsare visar hämtade filer. I följande bild, visas den som en nedladdningsbanderoll längst ned i webbläsarfönstret.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
+![pil som pekar på webbläsarmeddelandet, längst ned på skärmen](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
 
 Det är allt. Du kan ladda ned filen, öppna den med PowerPoint och ändra eller förbättra den på samma sätt som andra PowerPoint-presentationer.
 
 ## <a name="checking-out-your-exported-powerpoint-file"></a>Checka ut din exporterade PowerPoint-fil
 När du öppnar PowerPoint-filen som Power BI exporterade, hittar du en del häftiga och användbara element. Ta en titt på följande bild och kolla sedan de numrerade elementen nedan som beskriver några av de smarta funktionerna.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_5.png)
+![PowerPoint öppnas](media/end-user-powerpoint/powerbi_to_powerpoint_5.png)
 
 1. Den första sidan i presentationen innehåller namnet på rapporten och en länk så att du kan **visa i Power BI** den rapport som presentationen bygger på.
 2. Du får även lite användbar information om rapporten, inklusive den *senaste datauppdateringen* som den exporterade rapporten baseras, på och *nedladdad den* med tid och datum, vilket är när Power BI-rapporten exporterades till en PowerPoint-fil.
 3. Varje rapportsida är en separat bild som det visas i det vänstra navigeringsfönstret. 
-4. Din publicerade rapport återges på det språk som dina Power BI-inställningar anger, eller i annat fall på det språk som anges i webbläsarens språkinställningar. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![](media/end-user-powerpoint/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**. Mer information finns i [Språk och länder/regioner som stöds för Power BI](../supported-languages-countries-regions.md).
+4. Din publicerade rapport återges på det språk som dina Power BI-inställningar anger, eller i annat fall på det språk som anges i webbläsarens språkinställningar. Om du vill se eller ange språkinställning så klickar du på ![kugghjulsikonen](media/end-user-powerpoint/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**. Mer information finns i [Språk och länder/regioner som stöds för Power BI](../supported-languages-countries-regions.md).
 5. PowerPoint-presentationen innehåller en omslagsbild för skydd med den exporterade tiden i korrekt tidszon.
 
 När du går in på en specifik bild, ser du att varje rapportsida är en oberoende bild.
@@ -66,7 +67,7 @@ När du går in på en specifik bild, ser du att varje rapportsida är en oberoe
 > Att ha en bild för varje rapportsida är ett nytt beteende. Det tidigare beteendet som gav en oberoende bild för varje visuellt objekt implementeras inte längre. 
  
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)
+![Bild som visar att varje visuellt objekt är en separat bild](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)
 
 Det är nu upp till dig vad du vill göra med PowerPoint-presentationen eller någon av de högupplösta bilderna!
 
@@ -84,7 +85,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Rapporter som ägs av en användare utanför din Power BI-klientdomänen (som en rapport som ägs av någon utanför organisationen och delas med dig) kan inte publiceras till PowerPoint.
 * Om du delar en instrumentpanel med någon utanför organisationen (och därmed, en användare som inte är i din Power BI-klient), kommer den användaren inte att kunna exportera delade instrumentpanelers associerade rapporter till PowerPoint. Så om du är aaron@contoso.com kan du dela med david@cohowinery.com. Men david@cohowinery.com kan inte exportera de associerade rapporterna till PowerPoint.
 * Som tidigare nämnts, exporteras varje rapportsida som en enskild bild i PowerPoint-filen.
-* Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PowerPoint-exporten. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen ![](media/end-user-powerpoint/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**.
+* Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PowerPoint-exporten. Om du vill se eller ange språkinställning så klickar du på ![kugghjulsikonen](media/end-user-powerpoint/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**.
 * Klockslaget **Hämtad vid** på omslagsbilden för den exporterade PowerPoint-filen har angetts till datorns tidszon vid tidpunkten för exporten.
 
 ## <a name="next-steps"></a>Nästa steg

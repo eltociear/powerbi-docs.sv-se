@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: fb25ae7408ddb19d7e8bc9c91c0e1b0f65d2bf42
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026257"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280637"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nya filterupplevelsen i Power BI-rapporter (förhandsversion)
 
@@ -34,11 +34,11 @@ Det här är vad du kan göra med de nya filtrena som rapportdesigner:
 
 ## <a name="turn-on-the-new-filter-experience"></a>Aktivera den nya filterupplevelsen 
 
-Du aktiverar den nya upplevelsen i Power BI Desktop. Därefter kan du ändra filter där eller i Power BI-tjänsten (https://app.powerbi.com). Eftersom det här filtret är i förhandsversion, måste du först aktivera det i Power BI Desktop. 
+Du aktiverar den nya upplevelsen i Power BI Desktop. Därefter kan du ändra filter där eller i Power BI-tjänsten (https://app.powerbi.com). Eftersom det här filtret är i förhandsversion, måste du först aktivera det i Power BI Desktop. Om du börjar genom att skapa en rapport i Power BI-tjänsten så kan den inte ha de nya filtren.
 
 ### <a name="turn-on-new-filters-for-all-new-reports"></a>Aktivera nya filter för alla nya rapporter
 
-1. Välj **Arkiv** > **Alternativ och inställningar** > **Alternativ** > **Förhandsfunktioner** och välj därefter kryssrutan **Nya filterupplevelsen**. 
+1. I Power BI Desktop så väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ** > **Förhandsgranskningsfunktioner** och markerar därefter kryssrutan **Den nya filterupplevelsen**. 
 2. Starta om Power BI Desktop för att se den nya filterupplevelsen i alla nya rapporter.
 
 Efter att du startar om Power BI Desktop så aktiveras den som standard för alla nya rapporter som du skapar.  
@@ -47,7 +47,7 @@ Efter att du startar om Power BI Desktop så aktiveras den som standard för all
 
 Du kan också aktivera de nya filtrena för befintliga rapporter.
 
-1. I en befintlig rapport väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ**
+1. I Power BI Desktop i en befintlig rapport väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ**
 2. Under **Rapportinställningar** väljer du **Aktivera det uppdaterade filterfönstrer och visa filter i det visuella sidhuvudet för den här rapporten**.
 
 ## <a name="build-the-new-filter-pane"></a>Skapa det ny filterfönstret

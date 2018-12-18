@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: f272d0e40de5c65de9134c3d184195889233496b
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979568"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280936"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,36 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="november-2018"></a>November 2018
+
+### <a name="modern-visual-header"></a>Modern visuell rubrik 
+
+Rapporter som använder den nya moderna visuella rubriken kommer inte längre att allokera utrymme för rubriker, vilket ger mindre tomt utrymme och mer utrymme för dina visualiseringar.
+
+### <a name="enhance-presentation-mode-windows"></a>Förbättra presentationsläge (Windows)
+
+Förbättrat presentationsläge för Surface Hub och Windows 10-enheter.  Få en bättre mötesrumsupplevelse med Surface Hub med förbättrad presentations- och samarbetsverktyg och en kromfri, storbildsoptimerad vy så att du kan fokusera på dina data. Presentationsläget ger dig dessutom verktyg som pennanteckningar för att hjälpa dig att effektivt presentera och diskutera dina data. Läs mer om presentationsläge [här](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+
+### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Stående rapportlayout i surfplattor (iOS och Android)
+
+Vi använder nu rapportlayouten för telefoner, när den finns tillgänglig, för att visa rapporter på din surfplatta i stående läge. Läs mer om [hur du skapar telefonlayout i Power BI-tjänsten eller Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### <a name="supporting-report-query-string"></a>Stöd för rapportfrågesträng 
+
+Om du öppnar en rapportlänk som innehåller frågesträngar så kommer de nu att öppnas i mobilappen och vara förfiltrerade baserat på de villkor som definierats i frågesträngen. Läs mer om [hur du skapar en rapport-URL med frågesträng](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### <a name="shared-credentials-now-in-android"></a>Delade autentiseringsuppgifter (nu i Android)
+
+Aldrig har varit enklare att logga in till Power BI från din mobilapp. Vi har förenklat inloggningsprocessen med hjälp av delade autentiseringsuppgifter, vilket innebär att du kan använda autentiseringsuppgifter för andra Office 365-appar när du autentiserar dig i Power BI-tjänsten.
+
+### <a name="in-app-urls-now-in-android"></a>URL:er i appen (nu i Android) 
+
+Länkar i rapporter som pekar på andra Power BI-artefakter öppnas nu direkt i appen. Detta innebär att du t.ex. kan skapa anpassade navigeringsflöden genom att länka från en rapport till en instrumentpanel.
+
+### <a name="show-data-and-copy-values"></a>Visa data och kopiera värden
+
+Åtgärdsmenyn för rapportens visuella objekt (...) har nu alternativet att visa underliggande data i tabellformat. I tabellen så kan du kan trycka läge för att markera och kopiera värden från den tabellen (förutsatt att det inte finns någon Intune-princip som begränsar kopiering).
 
 ## <a name="october-2018"></a>Oktober 2018
 
