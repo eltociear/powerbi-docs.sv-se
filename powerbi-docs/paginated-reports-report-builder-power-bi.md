@@ -1,23 +1,23 @@
 ---
 title: Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsgranskning)
-description: Sidnumrerade rapporter är rapporter som kan skrivas ut eller delas. Du kan kontrollera rapportlayouten i detalj. De visar alla data i en tabell, även om tabellen t.ex. sträcker sig över flera sidor.
+description: Sidnumrerade rapporter, som länge varit standardrapportformat i SQL Server Reporting Services, är nu tillgängliga i Power BI-tjänsten. De här rapporterna kan skrivas ut eller delas. Du kan kontrollera rapportlayouten i detalj. De visar alla data i en tabell, även om tabellen t.ex. sträcker sig över flera sidor.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/20/2018
+ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289230"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026140"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsgranskning)
-Sidnumrerade rapporter, som länge varit standardrapportformat i SQL Server Reporting Services, är nu tillgängliga i Power BI-tjänsten. Sidnumrerade rapporter är rapporter som har utformats för att skrivas ut eller delas. De kallas ”sidnumrerade” eftersom de är formaterade för att passa på en sida. De visar alla data i en tabell, även om tabellen sträcker sig över flera sidor. Rapporterna kallas ibland ”pixelperfekta” eftersom du kan kontrollera deras sidlayout i minsta detalj. Sidnumrerade rapporter baseras på tekniken för RDL-rapporter i SQL Server Reporting Services. Report Builder är ett fristående verktyg för redigering av sidnumrerade rapporter. 
+Sidnumrerade rapporter, som länge varit standardrapportformat i SQL Server Reporting Services, är nu tillgängliga i Power BI-tjänsten. De här rapporterna kan skrivas ut eller delas. De kallas ”sidnumrerade” eftersom de är formaterade för att passa på en sida. De visar alla data i en tabell, även om tabellen sträcker sig över flera sidor. Rapporterna kallas ibland ”pixelperfekta” eftersom du kan kontrollera deras sidlayout i minsta detalj. Sidnumrerade rapporter baseras på tekniken för RDL-rapporter i SQL Server Reporting Services. Report Builder är ett fristående verktyg för redigering av sidnumrerade rapporter. 
 
 Sidnumrerade rapporter kan ha många sidor. Den här rapporten har till exempel 563 sidor. Varje sida har en exakt utformning med en sida per faktura och upprepande sidhuvuden och sidfötter.
 
@@ -43,7 +43,7 @@ Fler datakällor kommer under förhandsversionsperioden.
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>Skapa sidnumrerade rapporter med matriser, diagram och layouter för fritt format
 
-Skapa tabellrapporter för kolumnbaserade data, matrisrapporter (t.ex. korstabulerings- eller pivottabellrapporter) för sammanfattade data, diagramrapporter för grafiska data och *listrapporter* i fritt format för andra saker, t.ex. fakturor. 
+Tabellrapporter fungerar bra för kolumnbaserade data. Matrisrapporter är, precis som korstabulerings- eller pivottabellrapporter, användbara för sammanfattade data. Diagramrapporter presenterar data i ett grafiskt format och friformslistrapporter** kan användas för att presentera nästan allt annat, som fakturor. 
   
 Du kan börja med någon av Report Builder-guiderna. Med hjälp av tabell-, matris- och diagramguider lär du dig att skapa en inbäddad datakällsanslutning och en inbäddad datamängd. Sedan skapar du en datamängdsfråga genom att dra och släppa fält, väljer en layout och anpassar din rapport.  
   
@@ -66,7 +66,7 @@ Du kan visa din sidnumrerade rapport i Power BI-tjänsten i en webbläsare, och 
 
 Här följer några andra funktioner som inte stöds i den första versionen:
 
-- Fästa rapportsidor eller visuella objekt på Power BI-instrumentpaneler.
+- Fästa rapportsidor eller visuella objekt på Power BI-instrumentpaneler. Du kan fortfarande fästa visualiseringar på en Power BI-instrumentpanel från en lokal sidnumrerad rapport på en Power BI-rapportserver eller Reporting Services-rapportserver. Se [Fäst Reporting Services-objekt till Power BI-instrumentpaneler](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) för mer information.
 - Interaktiva funktioner som dokumentkartor och Visa/Dölj-knappar.
 - Underrapporter och detaljerade rapporter.
 - Prenumerationer.

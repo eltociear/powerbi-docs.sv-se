@@ -1,24 +1,25 @@
 ---
-title: Skapa automatiskt datainsikter med Power BI
-description: Lär dig mer om att få insikter om dina datauppsättningar och instrumentpanelers paneler.
+title: Kör och visa insikter på instrumentpaneler
+description: Som en Power BI-slutanvändare, lär dig mer om att få insikter om dina instrumentpanelers paneler.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f68e962eacf04005d83ec0def10cf8e0e24f6e10
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: dd59f572da6bb3b62fa142ea7b7eab4aef5a3466
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112048"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180540"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Skapa automatiskt datainsikter med Power BI
+# <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Visa datainsikter på instrumentpanelens paneler med Power BI
 Varje visualiseringspanel på instrumentpanelen är en dörr in till datagranskning. När du väljer en panel öppnas en rapport där du kan filtrera och sortera och fördjupa dig i datauppsättningen bakom rapporten. Och när du kör insikter, gör Power BI datagranskningen åt dig.
 
 Kör Quick Insights om du vill generera intressanta interaktiva visualiseringar utifrån dina data. Quick Insights kan köras på en specifik panel på instrumentpanelen och du kan till och med köra insikter på en insikt!
@@ -40,7 +41,9 @@ När du kör insikter på en panel på instrumentpanelen, söker Power BI exakt 
 4. Fångar ett insiktskort ditt intresse? Välj insiktskortet för att gå djupare. Vald insikt visas till vänster och nya insiktskort som endast baseras på data i denna enda insikt visas till höger.    
 
  ## <a name="interact-with-the-insight-cards"></a>Interagera med Insight-korten
-   * Filtrera visualiseringarna.  Välj pilen i det övre högra hörnet för att expandera filterfönstret om du vill visa filtren.
+När du har en insikt öppen, kan fortsätta att utforska.
+
+   * Filtrera det visuella objektet på arbetsytan.  Välj pilen i det övre högra hörnet för att expandera filterfönstret om du vill visa filtren.
 
      ![insikter med utökad filtermeny](./media/end-user-insights/power-bi-insights-on-insights.png)
    
