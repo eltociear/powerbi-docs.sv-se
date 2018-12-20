@@ -114,7 +114,7 @@ Du kan bara skapa PBIE-kapaciteter för din PBI-klientorganisationsregion.
 
 Du kan använda PBI-portalen för att ta reda på din PBI-klientorganisationsregion.
 
-https://app.powerbi.com/ > ? > Om Power BI
+[https://app.powerbi.com/](https://app.powerbi.com/) > ? > Om Power BI
 
 ![Om Power BI](media/embedded-faq/about-01.png)
 ![Klientorganisationsregion](media/embedded-faq/tenant-location-01.png)
