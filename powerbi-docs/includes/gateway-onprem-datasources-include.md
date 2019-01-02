@@ -6,7 +6,7 @@
 | Flerdimensionella Analysis Services |Ja |Ja |
 | Fil |Nej |Ja |
 | Mapp |Nej |Ja |
-| IBM DB2 |Nej |Ja |
+| IBM DB2 |Ja |Ja |
 | IBM Informix-databas |Nej |Ja |
 | IBM Netezza |Ja |Ja |
 | Impala |Ja |Ja |
