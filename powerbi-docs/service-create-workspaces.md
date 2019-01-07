@@ -11,11 +11,11 @@ ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452647"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451431"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Skapa arbetsytor med dina kollegor i Power BI
 
@@ -27,7 +27,7 @@ När du skapar en arbetsyta skapar du en underliggande, associerad Office 365-gr
 
 **Visste du att?** Power BI har en ny arbetsyta i förhandsversion. Läs [Skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md) för att ta reda på hur arbetsytor kommer att ändras i framtiden. 
 
-## <a name="video-apps-and-app-workspaces"></a>Video: Appar och app-arbetsytor
+## <a name="video-apps-and-app-workspaces"></a>Video: Appar och apparbetsytor
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="create-an-app-workspace-based-on-an-office-365-group"></a>Skapa en apparbetsyta baserat på en Office 365-grupp

@@ -9,18 +9,18 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 0ddf95563c52af135ac7ae4fe71aeddcd2ce7313
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: d3fdf9b568aa13ba5a8437c684835e0fce803d19
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51268927"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649455"
 ---
 # <a name="paginated-reports-in-power-bi-faq-preview"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar (förhandsversion)
 
 I den här artikeln finns svar på vanliga frågor om sidnumrerade rapporter. Dessa rapporter innehåller mycket formatering och utdatan har ett utseende som är optimerat för utskrift eller PDF-generering. De kallas ”sidnumrerade” eftersom de är formaterade att passa för flersidiga dokument. Sidnumrerade rapporter baseras på tekniken för RDL-rapporter i SQL Server Reporting Services. 
 
-I den här artikeln finns svar på vanliga frågor om sidnumrerade rapporter i Power BI Premium, samt om Report Builder som är ett fristående verktyg för redigering av sidnumrerade rapporter. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport till tjänsten. Du kan publicera och dela sidnumrerade rapporter i Min arbetsyta eller i apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. 
+I den här artikeln finns svar på vanliga frågor om sidnumrerade rapporter i Power BI Premium, samt om Report Builder som är ett fristående verktyg för redigering av sidnumrerade rapporter. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport till tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. 
 
 ## <a name="administration"></a>Administration
 
@@ -59,7 +59,7 @@ Dessutom innehåller spårningsloggarna följande händelser för sidnumrerade r
 
 ### <a name="can-i-monitor-this-workload-through-the-premium-capacity-monitoring-app"></a>Kan jag övervaka den här arbetsbelastningen med övervakningsappen för Premium-kapacitet?
 
-Inte ännu. Övervakning kommer att finnas i den offentliga förhandsversionen som en ny flik i den befintliga rapporten, med samma relevanta uppgifter som du har för dina Power BI-datamängder.
+Ja, övervakning är tillgängligt som en ny flik med samma relevanta uppgifter som du har för dina Power BI-datauppsättningar.
 
 ### <a name="do-i-need-a-pro-license-to-create-and-publish-paginated-reports"></a>Måste jag ha en Pro-licens för att kunna skapa och publicera sidnumrerade rapporter?
 
@@ -74,8 +74,8 @@ Du får ett felmeddelande och du kan inte se rapporten förrän arbetsbelastning
 Standardminnet i varje Premium-SKU för sidnumrerade rapporter:
 
 - **P1/A4**: 20 % standard, 10 % minimum
-- **P2/A5**: 10 % standard, 5 % minimum
-- **P3/A6**: 5 % standard, 2,5 % minimum
+- **P2/A5**: 20 % standard, 5 % minimum
+- **P3/A6**: 20 % standard, 2,5 % minimum
 
 ## <a name="general"></a>Allmänt
 
@@ -113,15 +113,12 @@ Sidnumrerade rapporter stöder för närvarande inte följande objekt:
 - Bokmärken
 - Bing-kartskikt
 - Anpassade teckensnitt
-- Dolda parametrar
-
-Växling och interaktiv sortering är inte ännu i produktion, men förväntas snart.    
 
 Du får ett felmeddelande om du försöker ladda upp en fil som har en funktion som inte stöds i Power BI-tjänsten, förutom växla/sortera.
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Vilka datakällor stöds för närvarande för sidnumrerade rapporter?
 
-Vi stöder tabellmodeller i Azure SQL Database och SQL Server och SQL Server Analysis Services (SSAS) med hjälp av en lokal gateway. Vi stöder för närvarande inte SSAS flerdimensionella modeller (MDX).
+Vi stöder Azure SQL Database, SQL Server och både tabellmodeller (DAX) och flerdimensionella modeller (MDX) i SQL Server Analysis Services (SSAS) med hjälp av en lokal gateway.
 
 När SSAS nås via gatewayen, lagras den användare vars autentiseringsuppgifter är lagrade behov med förhöjd behörighet i SSAS som arbetar via gatewayen.
 
@@ -135,7 +132,7 @@ Inte ännu, men detta stöd planeras snart.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Kan jag använda lagrade procedurer via gatewayen?
 
-Du kan använda en lagringsprocedur via gatewayen, men inte om den lagrade proceduren innehåller parametrar.
+Du kan använda en lagrad procedur via gatewayen, men du kan få problem i vissa scenarier om den lagrade proceduren har parametrar.
 
 ### <a name="what-export-formats-are-available-for-my-report-in-the-power-bi-service"></a>Vilka exportformat är tillgängliga för min rapport i Power BI-tjänsten?
 
@@ -143,15 +140,15 @@ Du kan exportera till Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF
 
 ### <a name="can-i-print-paginated-reports"></a>Kan jag skriva ut sidnumrerade rapporter?
 
-För närvarande kan du exportera till PDF och skriva ut filen. Utskrift direkt från en sidnumrerad rapport bör vara tillgängligt snart. 
+Ja, utskrift är tillgängligt för sidnumrerade rapporter, med en ny och förbättrad förhandsgranskningsmiljö. 
 
 ### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Är e-postprenumerationer tillgängliga än för sidnumrerade rapporter?
 
-Nej, e-postprenumerationer kommer senare.
+Nej, men e-postprenumerationer kommer snart.
 
 ### <a name="what-features-from-ssrs-will-you-be-supporting-in-the-power-bi-service"></a>Vilka funktioner från SSRS kommer att stödjas i Power BI-tjänsten?
 
-Vår plan är att ha så nära paritet mellan de här två produkterna som möjligt.  Vissa saker i SSRS och Power BI är det inte särskilt meningsfullt att försöka ändra så att de passar befintliga SSRS-mönster, exempelvis de olika behörighetsmodellerna i Power BI, men vi tar gärna emot feedback från kunder och partner för att göra dessa typer av beslut.
+Vår plan är att tillhandahålla funktionsparitet för de flesta fall. I vissa fall är det ändå möjligt att det inte är särskilt meningsfullt att försöka ändra saker i SSRS och Power BI så att de passar befintliga SSRS-mönster.  Till exempel kan inte de olika behörighetsmodellerna i Power BI mappas tillbaka till SSRS.  Vi kommer att lyssna på feedbacken från kunder och partner när vi tar sådana här sorts beslut.
 
 ### <a name="can-i-run-custom-code-in-my-report"></a>Kan jag köra anpassad kod i min rapport?
 
@@ -171,7 +168,7 @@ Inte ännu, men vi planerar absolut att stödja det här scenariot.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Kan jag dela mitt sidnumrerade rapportinnehåll via en Power BI-app?
 
-För närvarande kan du dela individuella sidnumrerade rapporter med andra användare via delning i portalen. Vi har ännu inte stöd för delning i en app, men förväntar att ha detta snart. Vi har dessutom delningsknappen i verktygsfältet.
+För närvarande kan du dela individuella sidnumrerade rapporter med andra användare via delningsåtgärden i portalen eller via verktygsfältet. Vi har ännu inte stöd för delning i en app, men förväntar att ha detta snart. 
 
 ### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>Kommer andra rapportspecifika funktioner i Power BI, t.ex. fästa rapportpaneler på instrumentpaneler, fungera med sidnumrerade rapporter?
 
@@ -179,15 +176,15 @@ Vi planerar att rapporterna ska ha stöd för samma större scenarier i tjänste
 
 ### <a name="are-you-planning-to-create-a-new-authoring-tool-for-paginated-reports-in-the-power-bi-service--we-cant-do-everything-we-need-to-with-report-builder-today"></a>Planerar du att skapa ett nytt redigeringsverktyg för sidnumrerade rapporter i Power BI-tjänsten?  Vi kan inte göra allt vi behöver med Report Builder i dag.
 
-Vi tittar fortfarande på olika alternativ för bäst verktygsfunktioner, men vi kommer att ha stöd för funktioner som ALM, anpassade tillägg och andra funktioner som bara kan ingå i ett av författarverktygen för SSRS. 
+Vi överväger fortfarande olika alternativ här för de bästa verktygsfunktionerna för sidnumrerade rapporter i Power BI. 
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Planeras ett migreringsverktyg så att SSRS-kunder kan flytta sina befintliga rapporter och tillgångar till Power BI?
 
-Ja, men inte förrän huvuduppsättningen med funktioner som stöds i Power BI-tjänsten har slutförts.
+Vi utvärderar alternativ för att möjliggöra att innehåll flyttas till Power BI på ett automatiserat sätt, men det här kommer inte att bli tillgängligt förrän efter GA (allmän tillgänglighet).
 
 ### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Kommer jag någonsin att skapa både sidnumrerade rapporter och Power BI-rapporter i ett enda redigeringsverktyg?
 
-Vi planerar för närvarande inte ett enda redigeringsverktyg, men vi tittar på sätt att eventuellt kunna distribuera redigeringsverktygen tillsammans som en enda BI-svit jämfört med att ha enskilda nedladdningar/anpassningar.
+Möjligtvis.  Vi undersöker för närvarande sätt för hur det här scenariot kunde möjliggöras, eller överväger sätt för att helt enkelt distribuera redigeringsverktygen tillsammans som en enda BI-svit jämfört med att ha enskilda nedladdningar/anpassningar.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Finns det en rapportvisningskontroll för sidnumrerade rapporter i Power BI-tjänsten?
 

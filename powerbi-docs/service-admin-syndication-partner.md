@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.sourcegitcommit: 13fdc8d62960f20c6d9ca1ab292f98992b47083b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2018
+ms.lasthandoff: 12/18/2018
 ms.locfileid: "52157412"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
@@ -53,7 +53,7 @@ Du kan registrera dig för en kostnadsfri utvärderingsversion. Om du inte köpe
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Aktivera ad hoc-prenumerationer
 
-Som standard är enskild registrering, även kallat ad hoc-prenumeration, inaktiverad. I det här fallet visas följande meddelande när du försöker registrera dig: *IT-avdelningen har inaktiverat registrering för Microsoft Power BI*.
+Som standard är enskild registrering, även kallat ad hoc-prenumeration, inaktiverad. I det här fallet visas ett meddelande när du försöker registrera dig om att: *IT-avdelningen har inaktiverat registrering för Microsoft Power BI*.
 
 ![Vi beklagar-bild](media/service-admin-syndication-partner/sorry.png)
 

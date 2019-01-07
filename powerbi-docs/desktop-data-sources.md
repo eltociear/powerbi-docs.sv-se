@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: e09c08780011ffaac7d37468e6018b079c41c669
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619826"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329750"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -78,6 +78,7 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Impala
 * Google BigQuery
 * Snowflake
+* Essbase (Beta)
 * BI-anslutningsapp
 * Exasol
 * Dremio (Beta)
@@ -137,7 +138,7 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * appFigures (beta)
 * comScore Digital Analytix (beta)
 * Dynamics 365 for Customer Insights (beta)
-* Data.World – Hämta datamängd (beta)
+* Data.World – Hämta datauppsättning (beta)
 * Facebook
 * GitHub (beta)
 * MailChimp (beta)

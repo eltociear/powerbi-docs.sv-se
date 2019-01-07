@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: db6ed98f246eebba55b87fe383ffcab95c22f6dc
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: c4601ea54d2e55e55f0b94f4bd4c69673bb00e53
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180862"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649136"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion till paneler på instrumentpanelen för Power BI-designers
 
@@ -90,7 +90,7 @@ När du väljer en panel beror händelseförloppet på hur du skapade panelen. O
 
 * Om den rapport som användes för att skapa visualiseringen inte sparades kommer inget att hända om du väljer panelen.
 * Om panelen skapades från en arbetsbok i Excel Online behöver du minst läsbehörighet för arbetsboken. I annat fall öppnas inte arbetsboken i Excel Online när du väljer panelen.
-* Anta att du skapar en panel direkt på en instrumentpanel med hjälp av **Lägg till panel** och anger en anpassad hyperlänk för den. I så fall öppnas webbadressen när du väljer rubrik, underrubrik och panelen. I annat fall händer som standard ingenting om du väljer en panel som skapats direkt på instrumentpanelen för en bild, webbkod eller textruta.
+* Anta att du skapar en panel direkt på en instrumentpanel med hjälp av **Lägg till panel** och anger en anpassad hyperlänk för den. I så fall öppnas webbadressen när du väljer rubriken, underrubriken eller panelen. I annat fall händer som standard ingenting om du väljer en panel som skapats direkt på instrumentpanelen för en bild, webbkod eller textruta.
 * Om du inte har behörighet för rapporten i Reporting Services kommer val av en panel som skapats från Reporting Services-rapporten att dirigera dig till en sida som anger att du inte har åtkomst (rsAccessDenied).
 * Om du inte har åtkomst till nätverket där Reporting Services -servern finns kommer val av en panel som skapats från Reporting Services dirigera dig till en sida som anger att det inte går att hitta servern (HTTP 404). Enheten måste ha nätverksåtkomst till rapportservern för att visa rapporten.
 * Om den ursprungliga visualiseringen som användes för att skapa panelen ändras, ändras inte panelen.  Om du till exempel fäster ett linjediagram från en rapport och sedan ändrar linjediagrammet till ett stapeldiagram, fortsätter panelen på instrumentpanelen att visa ett linjediagram. Data uppdateras, men visualiseringstypen gör det inte.

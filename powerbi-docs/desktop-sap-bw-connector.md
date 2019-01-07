@@ -11,11 +11,11 @@ ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452877"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451454"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SAP Business Warehouse (BW)**-data.
@@ -66,7 +66,7 @@ När du ansluter måste du ange *Server*, *Systemnummer* och *Klient-ID* för at
 
 ![Anslutningsinställningar för SAP-server](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
-Du kan också ange ytterligare två **avancerade alternativ**: språkkod och ett anpassat MDX-uttryck som ska köras mot den angivna servern.
+Du kan också ange ytterligare två **avancerade alternativ**: Språkkod och ett anpassat MDX-uttryck som ska köras mot den angivna servern.
 
 ![ytterligare anslutningsinformation](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
@@ -78,8 +78,8 @@ När du markerar en eller flera objekt från servern skapas en förhandsgranskni
 
 Fönstret **Navigator** innehåller också några **Visningsalternativ** som gör det möjligt att göra följande:
 
-* **Visa *endast valda objekt* jämfört med *alla objekt* (standardvy):** det här alternativet är användbart för att verifiera den slutgiltiga objektuppsättningen. En annan metod för att visa detta är att välja *kolumnnamn* i området *Förhandsvisning*.
-* **Aktivera förhandsgranskningar av data (standardinställning):** du kan också styra om förhandsgranskade data ska visas i den här dialogrutan. Om du inaktiverar förhandsgranskningar av data minskar mängden serveranrop eftersom data inte längre begärs för förhandsgranskning.
+* **Visa *endast markerade objekt* jämfört med *alla objekt* (standardvy):** Det här alternativet är användbart för att verifiera den slutgiltiga objektuppsättningen. En annan metod för att visa detta är att välja *kolumnnamn* i området *Förhandsvisning*.
+* **Aktivera dataförhandsgranskningar (standardbeteende):** Du kan också styra om dataförhandsgranskningar ska visas i den här dialogrutan. Om du inaktiverar förhandsgranskningar av data minskar mängden serveranrop eftersom data inte längre begärs för förhandsgranskning.
 * **Tekniska namn:** SAP BW stöder begreppet *Tekniska namn* för objekt i en kub. Med tekniska namn kan en kubägare exponera ett *användarvänligt* namn för kubobjekt, till skillnad från endast det *fysiska namnet* för objekten i kuben.
 
 ![Navigatorfönstret](media/desktop-sap-bw-connector/sap_bw_6.png)

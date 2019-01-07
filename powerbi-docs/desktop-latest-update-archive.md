@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3e8e8359742a422049751a348bce6a5d4015bd72
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 129649367efa3a2b23fbf3be181e14df158eba02
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619872"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329865"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -34,6 +34,57 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
 
+## <a name="november-2018-update-2645285461"></a>Uppdatering november 2018 (2.64.5285.461)
+
+I våra novemberuppdateringar introducerades en uppsjö av nya funktioner och funktionaliteter. Så du kunde sätta dig ner med din familj av data- och analysentusiaster, skicka potatismoset och hugga in på vårt festbord med uppdateringar. 
+
+Följande uppdateringar är nya för **Power BI Desktop** i november:
+
+### <a name="reporting"></a>Rapportering
+
+* Expandera och komprimera matrisens radrubriker [[video]](https://youtu.be/1xsXXoyTxfk?t=16)  [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
+* Kopiera och klistra in mellan Desktop-filer [[video]](https://youtu.be/1xsXXoyTxfk?t=199)  [[article]](desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23copyPaste)
+* Uppdaterad filtreringsupplevelse (förhandsversion) [[video]](https://youtu.be/1xsXXoyTxfk?t=410)  [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
+* Hjälpmedelsförbättringar för rapporter [[video]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
+
+### <a name="analytics"></a>Analys
+
+* Färgmättnad på visuella objekt har uppgraderats för att använda villkorsstyrd formatering [[video]](https://youtu.be/1xsXXoyTxfk?t=1224)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23conditionalFormatting) 
+* Uppföljningsfrågor i frågor och svar-utforskaren [[video]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
+
+
+### <a name="modeling"></a>Modellering
+
+* Ny modelleringsvy (förhandsversion) [[video]](https://youtu.be/1xsXXoyTxfk?t=1642)  [[article]](desktop-modeling-view.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
+* Sammansatta modeller är nu allmänt tillgängliga [[video]](https://youtu.be/1xsXXoyTxfk?t=1941)  [[article]](desktop-composite-models.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
+* Hjälpmedelsförbättringar för modellering [[video]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
+* Nya DAX-funktioner [[video]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
+
+### <a name="custom-visuals"></a>Anpassade visuella objekt
+
+* Fem nya anpassade visuella objekt [[video]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
+
+### <a name="data-connectivity"></a>Dataanslutning
+
+* Azure DevOps Server-anslutning [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* PDF-anslutningsprogrammet har stöd för parametrarna Start Page och End Page [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)  [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
+* Förbättrad Azure Consumption Insights-anslutningsapp [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
+
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du kan också se videor från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xsXXoyTxfk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+
 ## <a name="october-2018-update-263327240262"></a>Uppdatering oktober 2018 (2.63.3272.40262)
 
 Våra oktoberuppdateringar var spöklikt bra, läskigt användbara och godare än en skål med halloweendgodis. 
@@ -51,7 +102,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i oktober:
 
 * Förbättringar med DAX-redigerare [[video]](https://youtu.be/GO1dhDJhSDY) [[artikel]](desktop-formula-editor.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Stöd för sammansatta modeller och sammanställning i Power BI-tjänsten (förhandsversion) [[video]](https://youtu.be/8E6UokaDtc0)[[artikel – aggregeringar]](desktop-aggregations.md) [[artikel – sammansatta modeller]](desktop-composite-models.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Förklara ökningen för icke-additiva mått [[video]](https://youtu.be/8E6UokaDtc0?t=107) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
@@ -107,7 +158,7 @@ Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
 * Knappbeskrivningar för rapportsidan är allmänt tillgängliga, nytt stöd för kort [[video]](https://youtu.be/Rzw2WyI09kY?t=8m10s)  [[article]](desktop-tooltips.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
 * Förbättrade hjälpmedel för stöd av analys- och formateringsfönster [[video]](https://youtu.be/Rzw2WyI09kY?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#accessibility)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Sammansättningar (förhandsgranskning) [[video]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[article]](desktop-aggregations.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
 
@@ -158,7 +209,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i augusti:
 * Teman är allmänt tillgängliga [[video]](https://youtu.be/dgv5HhHxxe8?t=7m9s)   [[artikel]](desktop-report-themes.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Theming) 
 * Omräkning av utsnitt [[video]](https://youtu.be/dgv5HhHxxe8?t=22m53s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#slicer) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Villkorsstyrd formatering efter värde [[video]](https://youtu.be/dgv5HhHxxe8?t=7m54s)  [[artikel]](desktop-conditional-table-formatting.md#color-formatting-by-field-value)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
 * Python-integration  [[video]](https://youtu.be/dgv5HhHxxe8?t=11m14s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
@@ -213,7 +264,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i juli:
 * Inaktivera dataetiketter för kombinationsdiagram för enskilda serier [[video]](https://youtu.be/Mtig3rmIUe0?t=34m19s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#comboDataLabels) 
 * Sortera upp levelseförbättringar [[video]](https://youtu.be/Mtig3rmIUe0?t=35m44s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#sorting) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Distributionsfaktorinsikter [[video]](https://youtu.be/Mtig3rmIUe0?t=37m) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#distributionFactor) 
 
@@ -305,7 +356,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i maj:
 * Dataetikettsalternativ för trattdiagram [[video]](https://youtu.be/-_GMCE1TLvQ?t=6m25s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#funnelChart) 
 * Ange bredd på penseldrag till noll [[video]](https://youtu.be/-_GMCE1TLvQ?t=6m49s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#lineStroke) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Mät drillthrough  [[video]](https://youtu.be/-_GMCE1TLvQ?t=2m9s)  [[artikel]](desktop-drillthrough.md#pass-all-filters-in-drillthrough)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#measureDrillthrough) 
 
@@ -360,10 +411,10 @@ Följande uppdateringar introducerades i **Power BI Desktop** i april:
 * Förbättrad standardsortering för visuella objekt [[video]](https://youtu.be/W_Nb73Od_AI?t=19m21s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sort) 
 * Numeriskt utsnitt är nu allmänt tillgängligt [[video]](https://youtu.be/W_Nb73Od_AI?t=21m13s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#numericSlicer) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Uppdatera språkschemat [[video]](https://youtu.be/W_Nb73Od_AI?t=22m) [[artikel]](power-bi-custom-visuals-organization.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
-* Ny DAX-funktion: COMBINEVALUES() [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
+* Ny DAX-funktion: COMBINEVALUES()  [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
 
 ### <a name="custom-visuals"></a>Anpassade visuella objekt
 
@@ -373,7 +424,7 @@ Följande uppdateringar introducerades i **Power BI Desktop** i april:
 ### <a name="data-connectivity"></a>Dataanslutning
 
 * Adobe Analytics-anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[artikel]](desktop-multi-select.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#adobeAnalytics) 
-* Förbättring av SAP HANA-anslutningsappen: Välj port [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artikel]](desktop-directquery-sap-hana.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
+* Förbättring av SAP HANA-anslutningsappen: Välj port  [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s)  [[artikel]](desktop-directquery-sap-hana.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
 * Dynamics 365 Business Central-anslutningsapp [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#dynamics365BusinessCentral) 
 
 
@@ -469,7 +520,7 @@ Följande uppdateringar var nya för **Power BI Desktop** i februari 2018:
 * Organisationsanpassade visualiseringar (förhandsgranskning) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[article]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 * Ange en anpassad datumtabell [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 * Snabbåtgärder är nu allmänt tillgängliga [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s) [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
@@ -528,7 +579,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i januari:
 -   Val av främsta i Vanliga frågor och svar [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
 -   Mycket ny anpassad visuell information [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 -   Snabbmått för korrelationskoefficienten [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
 
@@ -579,7 +630,7 @@ Följande uppdateringar var nya för **Power BI Desktop** i december:
 -   Nyligen släppta anpassade visuella objekt  [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 -   Detaljgranska andra visuella objekt [[video]](https://youtu.be/ZPU8B-1BxjI?t=28m53s) [[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals) 
 
@@ -1050,7 +1101,7 @@ Följande uppdateringar är nya för Power BI Desktop i februari:
 
 ### <a name="analytics"></a>Analytics:
 
--   Två nya snabberäkningar: procent av radsumman och procent av kolumnsumman [[video]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
+-   Två nya snabberäkningar: Procent av radsumman och procent av kolumnsumman [[video]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
 
 ### <a name="data-connectivity"></a>Dataanslutning:
 
@@ -1612,8 +1663,8 @@ Vi tar ett skutt framåt med flera uppdateringar den här månaden! Februari ger
 -   Se data bakom en visualisering (inklusive *exportera data till CSV*)
 -   Kartförbättringar – ritad karta med enbart latitud/longitud
 -   Stöd för att släppa KPI-förbrukning (inklusive stöd för navigeringshierarkier och KPI-trender för SSAS MD)
--   SSAS-utforskningsläge: Stöd för **Visa** mappar i **Fält**-fönstret
--   Förbättringar i menyflikslayouten: kontextuell menyflik för **Rapportverktyg**
+-   SSAS-utforskningsläge: Stöd för **Visa** mappar i **Fält**fönstret
+-   Förbättringar av layouten för menyfliksområdet: Kontextuell menyflik för **rapportverktyg**
 -   Ny KPI-visualisering
 -   Hämta rapporter öppnade till samma sida som var synlig när den sparades
 -   **Redigera fråga**-alternativet i tabellens snabbmeny i Fältfönstret (**Rapport** & **Data** vyer)
@@ -1623,7 +1674,7 @@ Vi tar ett skutt framåt med flera uppdateringar den här månaden! Februari ger
 ### <a name="data-modeling"></a>Datamodellering:
 
 -   Möjligheten att definiera hierarkier
--   Prestandaförbättringar: optimeringar för att byta namn på tabeller och kolumner
+-   Prestandaförbättring: Optimeringar av namnbyte för tabeller och kolumner
 
 ### <a name="data-connectivity"></a>Dataanslutning:
 
@@ -1711,7 +1762,7 @@ December är gåvornas månad och Power BI-teamet följer efter med flera uppdat
 
 -   Förbättringar av visualiseringar:
     - Visuella utlösare för sorteringstillstånd i **Tabell**-visualisering
-    - Ny visualisering: **Staplats yt**-diagram
+    - Nytt visuellt objekt: **Staplat ytdiagram**
     - Smarta knappbeskrivningar för **Yt**- och **Linje**-diagram vid hovring
     - Möjlighet att skapa referenslinje/-region för en **Kartesisk** visualisering
     - Förbättrade dataetiketter för **Cirkel**- och **Punkt**-diagram
@@ -1872,7 +1923,7 @@ Följande massiva samling med 44 funktioner har lagts till i den här uppdaterin
         - Riktning för X-axeletikett (vågrät/diagonal)
         - Stöd för logaritmiska och linjära skalor för värden i y-axeln
         - Visa Text för hyperlänkar i textrutor
-        - Förbättringar av befintliga visualiseringar: tabell, matris, utsnitt, punktdiagram, enskild kort, kombinationsdiagram och mätare
+        - Förbättringar av befintliga visualiseringar: Tabell, matris, utsnitt, punktdiagram, enskilda kort, kombinationsdiagram och mätare
         - Stöd för att visa färgmättnadsvärden i knappbeskrivningar
         - Möjlighet att ändra storlek på bilder och tillämpa ytterligare formateringsalternativ
 
@@ -1888,7 +1939,7 @@ Följande massiva samling med 44 funktioner har lagts till i den här uppdaterin
     - Kopiera tabellinnehåll till urklipp.
 - Fältsammanfattning:
     - Stöd för ytterligare åtgärder i Fältfönstret: median, standardavvikelse och varians
-    - Standardsammanfattning: användare kan nu anpassa standardåtgärden för sammanfattning för alla angivna fält i sin modell
+    - Standardsammanfattning: Användare kan nu anpassa standardåtgärden för sammanfattning för alla angivna fält i sin modell
 
 ### <a name="data-connectivity"></a>Dataanslutning
 
@@ -1912,8 +1963,8 @@ Följande massiva samling med 44 funktioner har lagts till i den här uppdaterin
 - Alternativet Identifiera kolumntyper för att utlösa identifiering på begäran
 - Uppdatera alla förhandsgranskningar för att uppdatera alla förhandsvisningar i frågeredigeraren med ett enda klick
 - Prestandaförbättringar:
-    - Dialogrutan välj kolumner: snabbare användarupplevelse för att hantera breda tabeller
-    - Popup-fönster för automatisk filtrering och expandera/sammanställ: snabbare för stora antal värden/fält
+    - Dialogrutan Välj kolumner: Snabbare användarupplevelse för att hantera breda tabeller
+    - Filtrera automatiskt och expandera/aggregera popup-fönster: Snabbare för stort antal värden/fält
 
 Följande videoklipp beskriver de här funktionerna mer ingående.
 
@@ -1969,13 +2020,13 @@ Följande funktioner har lagts till i den här uppdateringen:
 
 -   **Nya dataanslutningar**: appFigures Quickbooks Online, Zendesk, Github, Twilio och SweetIQ.
 
--   **Nya omvandlingar**: extrahera första/sista/intervall med tecken från en textkolumn. Alternativ för att ange kopplingstyp i dialogrutan Koppla frågor. Möjlighet att anpassa offertformat i dialogrutan dela kolumn efter avgränsare.
+-   **Nya omvandlingar**: Extrahera första/sista/intervall med tecken från en textkolumn. Alternativ för att ange kopplingstyp i dialogrutan för att slå ihop frågor. Möjlighet att anpassa citatstil i dialogrutan Dela kolumn efter avgränsare.
 
--   **Förbättringar med rapportredigering**: nya visualiseringar (ytdiagram, vattenfall, toroid och matris). Nya alternativ för visuell formatering och anpassning (etiketter, rubriker, bakgrund, teckenförklaring, färger, osv.). Infoga textruta och bild i rapporten. Stöd för hyperlänkar i rapporter och rapporttabeller. Ångra/gör om åtgärder.
+-   **Förbättringar av Rapportredigering**: Nya visualiseringar (ytdiagram, vattenfall, ring och matris). Nya alternativ för visuell formatering och anpassning (etiketter, rubriker, bakgrund, teckenförklaring, färger, osv.). Infoga textruta och bild i rapporten. Stöd för hyperlänkar i rapporter och rapporttabeller. Ångra/gör om åtgärder.
 
 -   **Utforskning av direktrapport** över Analysis Services-tabellmodeller.
 
--   **Datamodellering:** ny datavy och relationsvyer.
+-   **Datamodellering:** Ny datavy och nya relationsvyer.
 
 -   Publicera rapporter på PowerBI.com, direkt från Power BI Desktop.
 
@@ -2001,7 +2052,7 @@ Följande funktioner har lagts till i den här uppdateringen:
 
 -   Sortera efter en annan kolumn
 
--   Förbättrad DAX-formelredigerare: funktionshjälp och prototyp
+-   Förbättrad DAX-formelredigerare: Funktionshjälp och prototyp
 
 **Hämta data och fråga**
 
@@ -2102,7 +2153,7 @@ Följande funktioner har lagts till eller förbättrats i den här uppdateringen
     -   Förbättrade sökfunktioner i navigeringsträdet
 - Nya omvandlingar
   -   Ålder- och subtrahera-åtgärder för datum/tid-kolumner
-  -   Sammanställda kolumner: alternativet att inaktivera nya kolumners prefix
+  -   Aggregeringskolumner: Alternativ att inaktivera nya kolumners prefix
 - Förbättringar av fältlistan
   -   Expandera/dölj tabeller
   -   Dölj/ta fram fält

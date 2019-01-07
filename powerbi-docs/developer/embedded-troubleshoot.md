@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/31/2018
-ms.openlocfilehash: 71cb40ef6f1346bd3d8486658b05427e66d1dbf3
-ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
+ms.date: 12/12/2018
+ms.openlocfilehash: 010a26076fe139401eb2dbbc363c712d67c637fb
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46474056"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329727"
 ---
-# <a name="troubleshooting-your-embedded-application"></a>Felsök ditt inbäddade program
+# <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
 Den här artikeln går igenom några vanliga problem som kan uppstå när du bäddar in innehåll från Power BI.
 
-## <a name="tools-for-troubleshooting"></a>Verktyg för felsökning
+## <a name="tools-to-troubleshoot"></a>Verktyg för felsökning
 
 ### <a name="fiddler-trace"></a>Fiddlerspårning
 
@@ -34,7 +34,7 @@ F12 startar utvecklarfönstret i din webbläsare. Detta verktyg ger dig möjligh
 
 ![F12 webbläsarfelsökning](media/embedded-troubleshoot/browser-f12.png)
 
-### <a name="extracting-error-details-from-power-bi-response"></a>Extrahera felinformation från Power BI-svaret
+### <a name="extract-error-details-from-power-bi-response"></a>Extrahera felinformation från Power BI-svaret
 
 Det här kodstycket visar hur man extraherar felinformationen från HTTP-undantaget:
 
@@ -58,28 +58,28 @@ Ange ID för begäran när du tar kontakt med Microsoft-supporten.
 
 ## <a name="app-registration"></a>Appregistrering
 
-**Appregistreringsfel**
+### <a name="app-registration-failure"></a>Appregistreringsfel
 
 Felmeddelanden på Azure Portal eller Power BI-appregistreringssidan anger bristande behörigheter. Du måste vara en administratör i Azure AD-klienten för att registrera ett program eller så måste programregistreringar vara aktiverade för icke-administratörer.
 
-**Power BI-tjänsten visas inte i Azure Portal när du registrerar en ny app**
+### <a name="power-bi-service-doesnt-appear-in-the-azure-portal-when-registering-a-new-app"></a>Power BI-tjänsten visas inte i Azure-portalen när du registrerar en ny app
 
-Minst en användare måste vara registrerad för Power BI. Om du inte ser **Power BI-tjänsten** listad i API-listan så är ingen användare registrerad för Power BI.
+Minst en användare måste vara registrerad för Power BI. Om du inte ser **Power BI-tjänsten** i API-listan är ingen användare registrerad för Power BI.
 
-## <a name="rest-api"></a>REST API
+## <a name="rest-api"></a>REST-API
 
-**API-anropet returnerar 401**
+### <a name="api-call-returning-401"></a>API-anropet returnerar 401
 
 En fiddler-avbildning kan krävas för att undersöka vidare. Det nödvändiga behörighetsomfånget kan saknas för det registrerade programmet i Azure AD. Verifiera att det nödvändiga omfånget finns i appregistreringen för Azure AD i Azure-portalen.
 
-**API-anropet returnerar 403**
+### <a name="api-call-returning-403"></a>API-anropet returnerar 403
 
 En fiddler-avbildning kan krävas för att undersöka vidare. Det kan finnas flera orsaker till ett 403-fel.
 
-* Användaren har överskridit mängden inbäddningstoken som kan skapas på en delad kapacitet. Du måste köpa Azure-kapaciteter för att generera inbäddningstoken och tilldela arbetsytan till kapaciteten. Mer information finns på sidan om hur du [skapar en Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* Användaren har överskridit mängden inbäddningstoken som kan skapas på en delad kapacitet. Köp Azure-kapaciteter för att generera inbäddningstoken och tilldela arbetsytan till kapaciteten. Mer information finns på sidan om hur du [skapar en Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD-autentiseringstoken har upphört att gälla.
-* Den autentiserade användaren är inte medlem i gruppen (app-arbetsytan).
-* Den autentiserade användaren är inte administratör i gruppen (app-arbetsytan).
+* Den autentiserade användaren är inte medlem i gruppen (apparbetsytan).
+* Den autentiserade användaren är inte administratör i gruppen (apparbetsytan).
 * Auktoriseringsrubriken är kanske inte korrekt listad. Kontrollera att det inte finns några stavfel.
 
 Programmets serverdel kan behöva uppdatera auktoriseringstoken innan du anropar GenerateToken.
@@ -101,19 +101,19 @@ Programmets serverdel kan behöva uppdatera auktoriseringstoken innan du anropar
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Autentiseringen misslyckades med AADSTS70002 eller AADSTS50053
 
-**(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord).**
+**_(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)_**
 
-Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord).***, eftersom direktautentisering varit inaktiverat som standard sedan den 14 juni 2018.
+Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)***, beror detta på att direktautentisering som standard inte längre används sedan den 14 juni 2018.
 
-Du kan aktivera funktionen igen med hjälp av en [Azure AD-princip](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) som antingen definieras för organisationen eller ett [tjänstens huvudnamn](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+Du kan aktivera funktionen igen med hjälp av en [Azure AD-princip](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) som definieras för organisationen eller [tjänstens huvudnamn](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-Vi rekommenderar att du aktiverar den enbart på appbasis.
+Vi rekommenderar att du aktiverar den här principen enbart på appbasis.
 
 Om du vill skapa den här principen måste du vara **Global administratör** för den katalog där du skapar principen och tilldelar. Här är ett exempelskript för att skapa principen och tilldela den till SP för det här programmet:
 
 1. Installera [förhandsgranskningsmodulen för Azure AD PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-2. Kör följande PowerShell-kommandon rad för rad (kontrollera att variabeln $sp inte har mer än ett (1) program som resultat).
+2. Kör följande PowerShell-kommandon rad för rad (kontrollera att variabeln $sp inte har mer än ett program som resultat).
 
 ```powershell
 Connect-AzureAD
@@ -131,19 +131,19 @@ $policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"Allo
 Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
 ```
 
-När du har tilldelat principen väntar du 15–20 sekunder innan du testar.
+När du har tilldelat principen väntar du ungefär 15–20 sekunder för spridning innan du testar.
 
-**Skapa token misslyckas när du anger en effektiv identitet**
+### <a name="generate-token-fails-when-providing-effective-identity"></a>Skapa token misslyckas när du anger en effektiv identitet
 
 GenerateToken kan misslyckas med den effektiva identitet som angetts, av några olika skäl.
 
 * Datauppsättningen stöder inte effektiv identitet
-* Användarnamnet har inte angetts
-* Rollen har inte angetts
+* Användarnamn har inte angetts
+* Roll har inte angetts
 * DatasetId har inte angetts
 * Användaren har inte rätt behörighet
 
-Prova följande för att verifiera vad det är.
+Prova stegen nedan för att verifiera vad det är.
 
 * Kör [get dataset](https://docs.microsoft.com/rest/api/power-bi/datasets). Är egenskapen IsEffectiveIdentityRequired sann?
 * Användarnamnet är obligatoriskt för alla EffectiveIdentity.
@@ -151,16 +151,17 @@ Prova följande för att verifiera vad det är.
 * DatasetId är obligatoriskt för alla EffectiveIdentity.
 * För Analysis Services måste huvudanvändaren vara en gatewayadministratör.
 
-### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: The grant requires admin permission (Beviljandet kräver administratör)
+### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: The grant requires admin permission (Beviljandet kräver administratörsbehörigheter)
 
 **_Symptom:_**</br>
-När en icke-administratörsanvändare försöker logga in i ett program första gången för att bevilja behörighet visas följande fel:
-* ConsentTest kräver behörighet som bara kan ges av en administratör för att komma åt resurser i din organisation. Be en administratör att bevilja behörighet till den här appen innan du använder den.
-* AADSTS90094: The grant requires admin permission (Beviljandet kräver administratör).
+När en icke-administratörsanvändare försöker logga in i ett program första gången för att bevilja medgivande och följande fel visas:
+
+* ConsentTest kräver behörighet som bara kan ges av en administratör för att komma åt resurser i din organisation. Be en administratör bevilja behörighet till den här appen innan du använder den.
+* AADSTS90094: Beviljandet kräver administratörsbehörighet.
 
     ![Behörighetstest](media/embedded-troubleshoot/consent-test-01.png)
 
-En administratörsanvändare kan logga in och bevilja behörighet.
+En administratörsanvändare kan logga in och bevilja medgivande.
 
 **_Rotorsak:_**</br>
 Användargodkännande har inaktiverats för klientorganisationen.
@@ -168,34 +169,21 @@ Användargodkännande har inaktiverats för klientorganisationen.
 **_Det finns flera möjliga lösningar:_**
 
 *Aktivera användargodkännande för hela klientorganisationen (alla användare, alla program)*
-1. I Azure Portal navigerar du till ”Azure Active Directory” => ”Användare och grupper” => ”Användarinställningar”
+
+1. I Azure-portalen navigerar du till Azure Active Directory => Användare och grupper => Användarinställningar
 2. Aktivera ”Användare kan samtycka till att appar får åtkomst till företagsdata för deras räkning” och spara ändringarna.
 
     ![Lösning för behörighetstest](media/embedded-troubleshoot/consent-test-02.png)
 
-*Behörigheter kan beviljas av administratör* Behörigheter till programmet beviljas av en administratör – antingen för hela klientorganisationen eller för en viss användare.
+En administratör kan *bevilja behörigheter* till programmet – antingen för hela klientorganisationen eller för en viss användare.
 
 ## <a name="data-sources"></a>Datakällor
 
-**ISV vill ha olika autentiseringsuppgifter för samma datakälla**
+### <a name="isv-wants-to-have-different-credentials-for-the-same-data-source"></a>ISV vill ha olika autentiseringsuppgifter för samma datakälla
 
 En datakälla kan ha en enda uppsättning autentiseringsuppgifter för en huvudanvändare. Skapa ytterligare huvudanvändare om du behöver använda andra autentiseringsuppgifter. Tilldela därefter de olika autentiseringsuppgifterna i kontexten för varje huvudanvändare och bädda in med hjälp av Azure AD-token för den användaren.
 
-## <a name="content-rendering"></a>Innehållsåtergivning
-
-**Återgivning eller förbrukning av det inbäddade innehållet misslyckas eller får timeout**
-
-Kontrollera att inbäddningstoken inte har upphört att gälla. Var noga att kontrollera utgångsdatumet för inbäddningstoken och uppdatera den. Mer information finns i [uppdatera token med JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
-
-**Rapporten eller instrumentpanelen läses inte in**
-
-Om användaren inte kan se rapporten eller instrumentpanelen, kontrollera att rapporten eller instrumentpanelen laddas korrekt i powerbi.com. Rapporten eller instrumentpanelen fungerar inte i ditt program om det inte laddas i powerbi.com.
-
-**Rapporten eller instrumentpanelen har dålig prestanda**
-
-Öppna filen från Power BI Desktop eller på powerbi.com och verifiera att prestandan är acceptabel för att kunna utesluta problem med ditt program eller inbäddnings-API:erna.
-
-## <a name="troubleshooting-your-embedded-application-with-the-ierror-object"></a>Felsöka inbäddade program med IError-objektet
+## <a name="troubleshoot-your-embedded-application-with-the-ierror-object"></a>Felsöka inbäddade program med IError-objektet
 
 Använd [ **IError-objektet** som returneras av *felhändelsen* från **JavaScript SDK**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) för att felsöka ditt program och bättre förstå orsaken till felen.
 
@@ -221,7 +209,7 @@ När du har hämtat IError-objektet bör du titta på relevant tabell över vanl
 | TokenExpired | Åtkomsttoken har upphört att gälla, skicka igen med en ny åtkomsttoken | 403 | Token har upphört att gälla  |
 | LoadReportFailed | Rapporten kunde inte hämtas | 404 | <li> Fel rapport-ID <li> Rapporten finns inte  |
 | LoadReportFailed | Rapporten kunde inte hämtas | 403 | Rapport-ID matchar inte token |
-| LoadReportFailed | Rapporten kunde inte hämtas | 500 | Angivet rapport-ID inte är ett guid |
+| LoadReportFailed | Rapporten kunde inte hämtas | 500 | Angivet rapport-ID är inte ett guid |
 | Ogiltiga parametrar | powerbiToken-parameter har inte angetts | Saknas | <li> Ingen åtkomsttoken har angetts <li> Inget rapport-ID har angetts |
 | LoadReportFailed | Det gick inte att initiera – det gick inte att lösa klustret | 403 | Fel tokentyp, ogiltig token |
 | PowerBINotAuthorizedException | Rapporten kunde inte hämtas | 401 | Fel/obehörigt grupp-ID |
@@ -229,7 +217,21 @@ När du har hämtat IError-objektet bör du titta på relevant tabell över vanl
 | OpenConnectionError | Det går inte att visa det visuella objektet. Det gick inte att återge ett visuellt rapportobjekt med namnet: <visual title> | Saknas | Kapacitet som pausats eller tagits bort medan en rapport som rör kapaciteten var öppen i en session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Det gick inte att läsa in modellschemat som är associerat med den här rapporten. Kontrollera att du har en anslutning till servern och försök igen. | Saknas | <li> Kapaciteten har pausats <li> Kapaciteten har tagits bort |
 
-## <a name="embedding-setup-tool"></a>Konfigurationsverktyget för inbäddning
+## <a name="content-rendering"></a>Innehållsåtergivning
+
+### <a name="rendering-or-consumption-of-embedded-content-fails-or-times-out"></a>Återgivning eller förbrukning av det inbäddade innehållet misslyckas eller når tidsgränsen
+
+Kontrollera att inbäddningstoken inte har upphört att gälla. Se till att du kontrollerar giltighetstiden för inbäddningstoken och uppdaterar den. Mer information finns i [uppdatera token med JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
+
+### <a name="report-or-dashboard-doesnt-load"></a>Rapporten eller instrumentpanelen läses inte in
+
+Om användaren inte kan se rapporten eller instrumentpanelen, kontrollera att rapporten eller instrumentpanelen laddas korrekt i powerbi.com. Rapporten eller instrumentpanelen fungerar inte i ditt program om det inte laddas i powerbi.com.
+
+### <a name="report-or-dashboard-is-performing-slowly"></a>Rapporten eller instrumentpanelen har dålig prestanda
+
+Öppna filen från Power BI Desktop eller på powerbi.com och verifiera att prestandan är acceptabel för att kunna utesluta problem med ditt program eller inbäddnings-API:erna.
+
+## <a name="embed-setup-tool"></a>Konfigurationsverktyg för inbäddning
 
 Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup) kan du snabbt ladda ned ett exempelprogram. Sedan kan du jämföra ditt program med exemplet.
 
@@ -252,7 +254,7 @@ Om du arbetar med upplevelsen **Embed for your customers**  (Bädda in för dina
 
 När du väljer **Bevilja behörigheter** (steget Bevilja behörigheter) visas följande fel:
 
-    AADSTS70001: Application with identifier <client ID> was not found in the directory <directory ID>
+    AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
 
 Du kommer runt det här problemet genom att stänga popup-fönstret, vänta några sekunder och sedan försöka igen. Du kan behöva upprepa den här åtgärden några gånger. En tidsförskjutning gör att programregistreringen inte kan slutföras förrän den är tillgänglig för externa API:er.
 
@@ -264,7 +266,7 @@ Det här felet uppstår eftersom det enda värdet som inte matas in i exempelpro
 
 Om du får felet – AADSTS50079: The user is required to use multi-factor authentication (Användaren måste använda multifaktorautentisering).
 
-    Need to use an AAD account that does not have MFA enabled.
+    Need to use an AAD account that doesn't have MFA enabled.
 
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>Använda exempelprogrammet Embed for your organization (Bädda in för din organisation)
 
@@ -272,20 +274,20 @@ Om du arbetar med upplevelsen **Embed for your organization** (Bädda in för di
 
 När du kör exempelappen **Embed for your organization** (Bädda in för din organisation) visas följande fel:
 
-    AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
+    AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
 Felet beror på att omdirigerings-URL:en som angetts för webbserverprogrammet skiljer sig från exemplets URL. Om du vill registrera exempelprogrammet använder du `http://localhost:13526/` som omdirigerings-URL.
 
-Om du vill redigera det registrerade programmet läser du avsnittet om hur du redigerar ett [AAD-registrerat program](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så att programmet kan ge åtkomst till webb-API:erna.
+Om du vill redigera det registrerade programmet läser du avsnittet om hur du redigerar ett [AAD-registrerat program](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application) så att programmet kan ge åtkomst till webb-API:erna.
 
 Om du vill redigera din Power BI-användarprofil eller dina Power BI-data läser du avsnittet om hur du redigerar [Power BI-data](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 Om du får felet – AADSTS50079: The user is required to use multi-factor authentication (Användaren måste använda multifaktorautentisering).
 
-    Need to use an AAD account that does not have MFA enabled.
+    Need to use an AAD account that doesn't have MFA enabled.
 
 Mer information finns i [Vanliga frågor om Power BI Embedded](embedded-faq.md).
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
-Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa ett supportärende via Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden som du stöter på.
+Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa en supportbegäran via Azure-portalen](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden du får.
