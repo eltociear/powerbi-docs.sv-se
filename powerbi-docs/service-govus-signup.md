@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2800eb5b01e8203632ae60c9b304a5ed9ce28b69
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 281e84b1dd3a3c21a7aaebce4784551a8afb31ba
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670241"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056074"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -102,7 +102,7 @@ Om du har både kostnadsfria och US Government Pro-licenser i din klient kommer 
 
 När du använder en blandning av kostnadsfria och Pro-licenser på en klient som tillhör amerikanska myndigheter och går igenom *vitlistningsprocessen* kan följande förväntas:
 
-**Before *whitelisting***:
+**Inför _vitlistning_**:
 
 * Användare med kostnadsfria licenser använder det kommersiella molnet
 * Pro-licenser för amerikanska myndigheter visas i portalen och administratören kan välja att tilldela dessa myndigheter till användare. Pro-användare hos amerikanska myndigheter kommer inte att förlora några data från sina kostnadsfria licenser så snart som administratören har tilldelat en Pro-licens. Tilldelade användare har åtkomst till Power BI Pro-funktioner för amerikanska myndigheter, men följande punktlista med funktionsluckor kan kvarstå tills klienten har *vitlistats*:
@@ -112,7 +112,7 @@ När du använder en blandning av kostnadsfria och Pro-licenser på en klient so
   * PBIX filer måste överföras manuellt från den kommersiella Power BI-tjänsten
   * Power BI-mobilappar är inte tillgängliga
 
-**After *whitelisting***:
+**Efter _vitlistning_**:
 
 * Användare av den kostnadsfria versionen som använder den kommersiella Power BI-tjänsten kan fortsätta att göra detta men de kan inte längre autentisera.
 * Pro-användarna som använder molntjänsten för amerikanska myndigheter kan använda tjänsten **Power BI för amerikanska myndigheter** som förväntat.

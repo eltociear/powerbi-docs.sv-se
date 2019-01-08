@@ -8,15 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 56de3745d59e4a26dffbb988e9543c294de261e3
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: e9701a05ffeff7d8e5113c870db3f90e2e3c8c8e
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289184"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056120"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Självstudier: Lägga till formateringsalternativ till ett anpassat visuellt Power BI-objekt
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Självstudie: Lägga till formateringsalternativ till ett anpassat visuellt Power BI-objekt
 
 I den här självstudien går vi igenom hur man lägger till gemensamma egenskaper till det visuella objektet.
 

@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ad87a2392252a64bc76675fd2b7a98c5e50a17a1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1683c849a765f5326fbaa06f82979b09f0cd2dcf
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546037"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008061"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Ansluta till GitHub med Power BI
 Med GitHub-innehållspaketet för Power BI kan du få insikter om GitHub-lagringsplatsen med data för bidrag, problem, pull-begäranden och aktiva användare.

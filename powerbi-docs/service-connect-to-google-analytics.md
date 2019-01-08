@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1bb1831d37dc3f8bfe5ee141859cbccec541735e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: f8777774981e89a88f1fb4f85573fd5a7e078dd6
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908795"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008406"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Anslut till Google Analytics med Power BI
 Anslut till Google Analytics via Power BI startar genom att ansluta till ditt Google Analytics-konto. Du får en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som innehåller insikter om din webbplatstrafik och användardimensioner. Du kan interagera med instrumentpanelen och rapporterna, men du kan inte spara ändringarna. Data uppdateras automatiskt en gång per dag.

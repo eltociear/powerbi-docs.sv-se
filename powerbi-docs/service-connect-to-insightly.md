@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6e2ca51f79173e065d0a780943eab2e834837820
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 87d294c81cbf9a342ce238bb198173516c1f3215
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548638"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008015"
 ---
 # <a name="connect-to-insightly-with-power-bi"></a>Ansluta till Insightly med Power BI
 Visualisera och dela dina Insightly CRM-data i Power BI med innehållspaketet för Insightly. Anslut till Power BI med din Insightly API-nyckel för att visa och skapa rapporter och instrumentpaneler från dina CRM-data. Med Power BI kan du analysera dina data på nya sätt, skapa kraftfulla diagram och grafer och visa kontakter, leads och organisationer på en karta.

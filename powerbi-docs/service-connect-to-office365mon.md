@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e823492c98a5386dcbb0aa842140af540b80b2ef
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: cce886edbed00075efaa43bae9c8a712929e8b9a
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549685"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54007992"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Ansluta till Office365Mon med Power BI
 Det är lätt att analysera dina Office 365-avbrott och hälsoprestandadata med Power BI och Office365Mon-innehållspaketet. Power BI hämtar dina data, inklusive avbrott och hälsoavsökningar, och skapar sedan en anpassad instrumentpanel och rapporter som baseras på dessa data.

@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0bb592d508e959267df31e705aa833394aa4d19e
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4537f2845d89361cf06bc93a6a9c435275d9464d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544887"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008153"
 ---
 # <a name="connect-to-twilio-with-power-bi"></a>Anslut till Twilio med Power BI
 Med Microsoft Twilio-innehållspaketet för Power BI kan du hämta data till Power BI och skapa en [Twilio-instrumentpanel](https://powerbi.microsoft.com/integrations/twilio) och en rapport som visar insikter för dina data. Du kan också skapa dina anpassade rapporter och instrumentpanel på den datauppsättning som Power BI skapar. Data kommer att uppdateras en gång per dag så att du alltid ser den senaste informationen.

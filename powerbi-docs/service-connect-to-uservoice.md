@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ef35ef674ad8b0608c22b7b0d958b4844bb0d24e
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: a12f2821108c5becaf054680e4395295f0979f0b
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544456"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008498"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Ansluta till UserVoice med Power BI
 Det är enkelt att spåra och utforska dina UserVoice-data med Power BI och UserVoice-innehållspaketet. Power BI hämtar dina data, inklusive biljetter, förslag och nöjdhetsundersökningar och skapar sedan en anpassad instrumentpanel och rapporter baserade på dessa data.
