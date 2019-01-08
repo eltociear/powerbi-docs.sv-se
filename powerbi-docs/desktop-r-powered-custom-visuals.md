@@ -2,20 +2,21 @@
 title: Använd R-baserade anpassade visuella objekt i Power BI
 description: Använd R-baserade anpassade visuella objekt i Power BI
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
-ms.author: maghan
 LocalizationGroup: Create reports
-ms.openlocfilehash: b9f9b6faa7490ed05626f52623750ea79183d36a
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 84b6acfcf87601712622cbbd2b4e7d396f75f0b8
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187385"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056097"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Använd R-baserade anpassade visuella objekt i Power BI
 I **Power BI Desktop** och **Power BI-tjänsten** kan du använda R-baserade anpassade visuella objekt utan att ha någon kunskap om R och utan några R-skript. Det innebär att du kan använda den analytiska och visuella kraften i visuella R-objekt och R-skript, utan att du behöver lära dig R eller utföra någon programmering själv.
@@ -33,7 +34,7 @@ Om du vill använda R-baserade anpassade visuella objekt, ladda ner varje visuel
 
 Här följer stegen för att bläddra efter och välja visuella objekt från onlinewebbplatsen **AppSource**:
 
-1. Gå till Power BI:s bibliotek för visuella objekt, som finns på [https://appsource.microsoft.com](https://appsource.microsoft.com/). Markera kryssrutan *Power BI-appar* under *Förfina efter produkt*  och välj sedan länken **Visa alla**.
+1. Gå till Power BI:s bibliotek för visuella objekt, som finns på [https://appsource.microsoft.com](https://appsource.microsoft.com/). Markera kryssrutan **Power BI-appar** under *Förfina efter produkt*  och välj sedan länken Visa alla.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
