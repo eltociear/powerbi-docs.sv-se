@@ -98,18 +98,12 @@ items:
       href: desktop-connect-to-data.md
     - name: Publicera från Power BI Desktop
       href: desktop-upload-desktop-files.md
-    - name: Anpassade visualiseringar i Power BI
-      href: power-bi-custom-visuals.md
-    - name: Anpassade visuella objekt för organisationer i Power BI
-      href: power-bi-custom-visuals-organization.md
     - name: Del 1, lägg till visualiseringar i en Power BI-rapport
       href: visuals/power-bi-report-add-visualizations-i.md
     - name: Del 2, lägg till visualiseringar i en Power BI-rapport
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: Anpassa visualiseringens rubrik, bakgrund och teckenförklaring
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: Felsöka anpassade visuella objekt
-      href: power-bi-custom-visuals-troubleshoot.md
     - name: Ansluta till data
       items:
       - name: Datakällor i Power BI Desktop
@@ -358,7 +352,7 @@ items:
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: Skapa dynamiska referensrader
         href: service-analytics-pane.md
-    - name: Felsökning
+    - name: Felsök
       items:
       - name: Lösa problem när du importerar Access-databaser och Excel-kalkylblad i Power BI Desktop och Power Query
         href: desktop-access-database-errors.md
@@ -618,7 +612,7 @@ items:
         href: service-share-dashboard-that-links-to-excel-onedrive.md
       - name: Power BI Publisher för Excel
         href: publisher-for-excel.md
-    - name: Felsökning
+    - name: Felsök
       items:
       - name: Har du glömt lösenordet till Power BI?
         href: service-admin-forgot-your-password.md
@@ -880,7 +874,7 @@ items:
         href: developer/power-bi-permissions.md
     - name: Gör så här
       items:
-      - name: Så här bäddar du in från en app
+      - name: Bädda in från en app
         href: developer/embed-from-apps.md
       - name: Skapa en Azure Active Directory-klient
         href: developer/create-an-azure-active-directory-tenant.md
@@ -890,8 +884,6 @@ items:
         href: developer/get-azuread-access-token.md
       - name: Bädda in frågor och svar
         href: developer/qanda.md
-      - name: Felsök ditt inbäddade program
-        href: developer/embedded-troubleshoot.md
       - name: Hantera kapacitet i Azure
         items:
         - name: Skapa kapacitet i Azure
@@ -902,6 +894,10 @@ items:
           href: developer/azure-pbie-scale-capacity.md
         - name: Pausa och starta kapacitet i Azure
           href: developer/azure-pbie-pause-start.md
+      - name: Felsök
+        items:
+        - name: Felsök ditt inbäddade program
+          href: developer/embedded-troubleshoot.md
       - name: Migrera från arbetsytesamlingar
         items:
         - name: Så här migrerar du från Power BI-arbetsytesamlingar
@@ -944,12 +940,12 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: Dataspill
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Utveckla anpassade visuella objekt
+  - name: Anpassade visuella objekt
     items:
     - name: Översikt
       items:
-      - name: Lägga till anpassade visuella objekt i Power BI
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+      - name: Anpassade visuella objekt i Power BI
+        href: power-bi-custom-visuals.md
     - name: Självstudier
       items:
       - name: Utveckla ett anpassat visuellt objekt i Power BI
@@ -958,6 +954,8 @@ items:
         href: developer/custom-visual-develop-tutorial-format-options.md
     - name: Begrepp
       items:
+      - name: Anpassade visuella objekt för organisationer i Power BI
+        href: power-bi-custom-visuals-organization.md
       - name: Riktlinjer för visuella objekt för Power BI
         href: developer/office-store-in-app-purchase-visual-guidelines.md
       - name: Vanliga frågor och svar om anpassade visuella objekt
@@ -978,8 +976,12 @@ items:
         href: power-bi-custom-visuals-certified.md
       - name: Publicera anpassad visuell information till AppSource
         href: developer/office-store.md
-      - name: Felsöka anpassade visuella objekt
-        href: power-bi-custom-visuals-troubleshoot.md
+      - name: Använd R-baserade anpassade visuella objekt i Power BI
+        href: desktop-r-powered-custom-visuals.md
+      - name: Felsök
+        items:
+        - name: Felsöka utveckling av anpassade visuella objekt
+          href: power-bi-custom-visuals-troubleshoot.md
     - name: Referens
       items:
       - name: API:er
@@ -1283,9 +1285,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: bb2600fea9af9578ab9b9dd7260e358a8de7e646
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 2e6a77d0aadd85cce05d8dc4fb5fdb60e4cbe91d
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008889"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072346"
