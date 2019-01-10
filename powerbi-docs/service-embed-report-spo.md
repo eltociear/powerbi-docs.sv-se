@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 3ad4335cabac159aee38d54fbfff0f689009fd68
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973337"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136609"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -75,7 +75,7 @@ För att bädda in rapporten i SharePoint Online måste du först hämta en URL 
 
     ![SP-rapport inläst](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## <a name="granting-access-to-reports"></a>Bevilja åtkomst till rapporter
+## <a name="grant-access-to-reports"></a>Bevilja åtkomst till rapporter
 
 När du bäddar in en rapport i SharePoint Online medges inte användarbehörighet att visa rapporten automatiskt. Behörighet att visa i rapporten anges i Power BI-tjänsten.
 
@@ -152,7 +152,7 @@ Användare som visar en rapport i SharePoint måste antingen ha en **Power BI Pr
 
 ## <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 
-* Fel: ”Ett fel uppstod. Försök att logga ut och in igen och gå sedan tillbaka till den här sidan. Korrelations-ID: Odefinierad HTTP-svarsstatus: 400, serverfelkod 10001, meddelande: uppdateringstoken saknas"
+* Fel: "Ett fel har uppstått. Försök att logga ut och in igen och gå sedan tillbaka till den här sidan. Korrelations-ID: odefinierat, http-svarsstatus: 400, serverfelskod 10001, meddelande: Uppdateringstoken saknas"
   
   Testa något av felsökningsstegen nedan om du får detta felmeddelande.
   
@@ -174,9 +174,10 @@ Användare som visar en rapport i SharePoint måste antingen ha en **Power BI Pr
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Tillåt eller förhindra att moderna webbplatssidor skapas av slutanvändare](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Skapa och distribuera en app i Power BI](service-create-distribute-apps.md)  
-[Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md)  
-[Vad är Power BI Premium?](service-premium.md)  
+* [Tillåt eller förhindra att moderna webbplatssidor skapas av slutanvändare](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md)  
+* [Dela en instrumentpanel med kollegor och andra](service-share-dashboards.md)  
+* [Vad är Power BI Premium?](service-premium.md)
+* [Bädda in en rapport på en säker portal eller webbplats](service-embed-secure.md)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
