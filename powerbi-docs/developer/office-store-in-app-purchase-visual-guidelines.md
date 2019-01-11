@@ -8,13 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/26/2018
-ms.openlocfilehash: 9ef7890c6f80845a9e6d1bd02e35778ed866ff54
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 2b7a71baafd8ec2ef839aaca95529221c642357f
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52332219"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072185"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Riktlinjer för visuella objekt i Power BI med ytterligare inköp
 
@@ -25,7 +26,7 @@ Tills nyligen godkände endast **marknadsplatsen (AppSource)** kostnadsfria visu
 
 ## <a name="whats-changing-in-the-submission-process"></a>Vad ändras i överföringsprocessen?
 
-Utvecklare laddar upp sina visuella IAP-objekt till AppSource via instrumentpanelen för försäljning, precis som med kostnadsfria visuella objekt. För att visa att det skickade visuella objektet har IAP-funktioner ska utvecklare skriva följande i anteckningarna för instrumentpanelen för försäljning: ”Visual with in-app purchase” (Visuellt objekt med köp i appen). Utvecklare måste också ange en licensnyckel eller token så att verifieringsteamet kan validera IAP-funktioner. När det visuella objektet har verifierats och godkänts anger AppSources lista för lägen för visuella IAP-objekt ”Ytterligare köp kan krävas” under alternativen för prisnivå.
+Utvecklare laddar upp sina visuella IAP-objekt till AppSource via instrumentpanelen för försäljning, precis som med kostnadsfria visuella objekt. Utvecklare bör visa att det skickade visuella objektet har IAP-funktioner genom att skriva följande i anteckningarna för säljinstrumentpanelen: "Visuellt objekt med köp i appen." Utvecklare måste också ange en licensnyckel eller token så att verifieringsteamet kan validera IAP-funktioner. När det visuella objektet har verifierats och godkänts anger AppSources lista för lägen för visuella IAP-objekt ”Ytterligare köp kan krävas” under alternativen för prisnivå.
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Vad är ett visuellt Power BI-objekt med IAP-funktioner?
 
@@ -59,6 +60,10 @@ Använd landningssidan för att klargöra för användarna hur de kan använda d
 ### <a name="license-key-and-token"></a>Licensnyckel och token
 
 För att underlätta för användaren lägger du till licensnyckel eller tokenrelaterade fält överst i formatfönstret så att de blir bättre placerade för användarna.
+
+## <a name="faq"></a>Vanliga frågor och svar
+
+Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella objekt med ytterligare köp](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## <a name="next-steps"></a>Nästa steg
 

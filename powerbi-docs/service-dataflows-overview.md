@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180839"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072231"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Dataförberedelser med självbetjäning i Power BI (förhandsversion)
 
@@ -92,7 +92,7 @@ I följande tabell beskrivs dataflödesfunktioner och deras kapacitet när du an
 |Länkade entiteter för dataflöden| |        +|
 |Standardiserat schema / inbyggt stöd för Common Data Service|  +|  +|
 
-
+Mer information om hur du aktiverar dataflödesarbetsbelastningar för premiumkapacitet finns i artikeln [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads) för Power BI premium.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Sammanfattning av dataförberedelser med självbetjäning för stordata i Power BI
 Som nämnts tidigare i den här artikeln finns det många scenarier och exempel där **dataflöden** kan ge dig bättre kontroll – och snabbare insikter – från dina affärsdata. Med hjälp av en standarddatamodell (schema) som definieras av Common Data Service, kan du med dataflöden importera dina viktiga affärsdata och ha datan redo för modellering och skapande av BI-insikter på kortare tid ... vilket tidigare brukade ta månader eller ännu längre tid att åstadkomma. 

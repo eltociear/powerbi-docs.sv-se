@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6fff11d37b0f099effeafb6b88dbfa68af88f3d6
-ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
+ms.openlocfilehash: e83c853ac1c3fc7c7d4d5e79c9f6be965d880361
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53735579"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072300"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -44,7 +44,7 @@ Det finns sju flikar i portalen. Resten av den här artikeln innehåller informa
 * [Klientinställningar](#tenant-settings)
 * [Premiuminställningar](#premium-settings)
 * [Bädda in koder](#embed-codes)
-* [Visuella organisationsobjekt](#organization-visuals)
+* [Visuella objekt för organisationer](#organization-visuals)
 
 ## <a name="usage-metrics"></a>Användningsstatistik
 
@@ -329,7 +329,7 @@ Som administratör kan du visa de inbäddningskoder som har genererats för din 
 
 ![Bädda in koder i administrationsportalen för Power BI](media/service-admin-portal/embed-codes.png)
 
-## <a name="organization-visuals"></a>Organisationens visuella objekt
+## <a name="organizational-visuals"></a>Visuella objekt för organisationer
 
 Med fliken **organisationsobjekt** kan du distribuera och hantera anpassade visuella objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](power-bi-custom-visuals-organization.md)
 

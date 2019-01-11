@@ -1,5 +1,5 @@
 ---
-title: Använda anpassade visuella objekt för organisationer i Power BI
+title: Anpassade visuella objekt för organisationer i Power BI
 description: Använda, hantera och skapa anpassade visuella objekt för organisationer i Power BI
 author: markingmyname
 ms.author: maghan
@@ -8,18 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e34491ebc1cc7554e8c8c000da7528754b5a673b
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 6622625f27f62d9d8ffc35ecfddf4550f2a7e16e
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223109"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072162"
 ---
-# <a name="use-organizational-custom-visuals-in-power-bi"></a>Använda anpassade visuella objekt för organisationer i Power BI
+# <a name="organizational-custom-visuals-in-power-bi"></a>Anpassade visuella objekt för organisationer i Power BI
 
-Du kan använda anpassade visuella objekt i Power BI om du vill skapa en unik form av skräddarsydd visuell information, eller de datainsikter som du försöker förmedla. Dessa anpassade visuella objekt skapas ofta av utvecklare, och de skapas ofta när flera av de visuella objekt som ingår i Power BI inte riktigt uppfyller deras behov. 
+Du kan använda anpassade visuella objekt med Power BI om du vill skapa en unik typ av visuella objekt som är skräddarsydd för dig. Dessa anpassade visuella objekt skapas av utvecklare, och de skapas ofta när flera av de visuella objekt som ingår i Power BI inte riktigt uppfyller deras behov.
 
 I vissa organisationer är anpassade visuella objekt ännu viktigare – de kan vara nödvändiga för att förmedla specifika data eller insikter som är unika för organisationen, de kan ha särskilda datakrav eller de kan lyfta fram privata affärsmetoder. Sådana organisationer behöver utveckla anpassade visuella objekt, dela dem i hela organisationen och se till att de är underhålls ordentligt. Med anpassade visuella objekt i Power BI kan organisationer göra just detta.
 
@@ -27,13 +27,13 @@ I följande bild visas den process genom vilken organisationens anpassade visuel
 
 ![Anpassad visuell bild](media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg)
 
-Organisation Visuella objekt för organisationer distribueras och hanteras av Power BI-administratör från administrationsportalen. När de anpassade visuella objekten väl har distribuerats till organisationens databas, kan användarna i organisationen enkelt identifiera och importera dem till sina rapporter direkt från Power BI Desktop.
+Visuella objekt för organisationer distribueras och hanteras av Power BI-administratören från administrationsportalen. När de anpassade visuella objekten väl har distribuerats till organisationens databas, kan användarna i organisationen enkelt identifiera och importera dem till sina rapporter direkt från Power BI Desktop.
 
-Mer information om hur du använder anpassade visuella objekt i en organisation i rapporter som du har skapat finns i följande artikel: [Lär dig mer om att importera organisationens visuella objekt till dina rapporter](power-bi-custom-visuals.md).
+Mer information om hur du använder anpassade visuella objekt i en organisation i rapporter som du har skapat finns i följande artikel: [Lär dig mer om att importera organisationens visuella objekt i dina rapporter](power-bi-custom-visuals.md).
 
 ## <a name="administer-organizational-custom-visuals"></a>Administrera anpassade visuella objekt i en organisation
 
-Mer information om hur du administrerar, distribuerar och hanterar anpassade visuella objekt i din organisation finns i följande artikel: [Lär dig mer om att distribuera och hantera anpassade visuella objekt i en organisation](https://go.microsoft.com/fwlink/?linkid=866790).
+Mer information om hur du administrerar, distribuerar och hanterar anpassade visuella objekt i din organisation finns i följande artikel: [Mer information om distribution och hantering av en organisations anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
 > Ett anpassat visuellt objekt kan innehålla kod som innebära säkerhets- eller integritetsrisker. Kontrollera att författaren eller källan till alla anpassade visuella objekt är tillförlitlig innan du distribuerar dem till organisationens databas.
