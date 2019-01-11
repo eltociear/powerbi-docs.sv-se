@@ -1,6 +1,6 @@
 ---
-title: Användningsstatistik för instrumentpaneler och rapporter
-description: Så här visar, sparar och använder du användningsstatistik för Power BI-instrumentpaneler och rapporter. Mät och öka din inverkan med användningsstatistik för skapare av innehåll.
+title: Övervaka användningsstatistik för instrumentpaneler och rapporter
+description: Så här visar, sparar och använder du användningsstatistik för Power BI-instrumentpaneler och rapporter.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,21 +9,21 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/19/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f7aad6b0e3dd38c795d886d1aba26a82a8529c01
-ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
+ms.openlocfilehash: 435f7ec433e45202ef2b5ddbd9a9ffb996f84129
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53649381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983794"
 ---
-# <a name="usage-metrics-for-dashboards-and-reports"></a>Användningsstatistik för instrumentpaneler och rapporter
+# <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Övervaka användningsstatistik för Power BI-instrumentpaneler och -rapporter
 
 Om du skapar instrumentpaneler och rapporter kan du med användningsstatistik förstå deras inverkan. Oavsett om du kör användningsstatistik för instrumentpaneler eller rapporter ser du hur dessa instrumentpaneler och rapporter används i hela organisationen – vad som används, av vem och i vilket syfte.  
 
 > [!NOTE]
-> Användningsstatistik spårar användningen av rapporter som är inbäddade i SharePoint Online. Dock spårar inte användningsstatistik inbäddning av instrumentpaneler och rapporter via flödena ”användare äger autentiseringsuppgifterna” och ”appen äger autentiseringsuppgifterna”. Användningsstatistik spårar heller inte användning av rapportinbäddning via [publicera till webben](service-publish-to-web.md).
+> Användningsstatistik spårar användningen av rapporter som är inbäddade i SharePoint Online. Dock spårar inte användningsstatistik inbäddning av instrumentpaneler och rapporter via flödena ”användare äger autentiseringsuppgifterna” och ”appen äger autentiseringsuppgifterna”. Användningsstatistik spårar inte heller användning av rapportinbäddning via [publicera till webben](service-publish-to-web.md).
 
 Dessa användningsstatistikrapporter är skrivskyddade. Men du kan anpassa en användningsstatistikrapport med hjälp av ”Spara som”. Detta skapar en helt ny datauppsättning och konverterar den skrivskyddade rapporten till en fullständig Power BI-rapport som du kan redigera. Den anpassade rapporten innehåller inte bara mått för vald instrumentpanel eller rapport, utan genom att ta bort standardfiltret har du nu tillgång till användningsstatistik för alla instrumentpaneler och rapporter i den valda arbetsytan. Du kan även se namnen på dina slutanvändare.
 
@@ -62,7 +62,7 @@ Fördjupa dig i rapportdatan eller skapa egna rapporter mot datauppsättningen m
     ![uppdateringarna är klara](media/service-usage-metrics/power-bi-usage-metrics-ready.png)
 4. Om du vill öppna resultaten väljer du **Visa användningsstatistik**.
 
-    Användningsstatistiken blir en kraftfull bundsförvant när du arbetar med att distribuera och underhålla Power BI-instrumentpaneler och rapporter. Undrar du vilka sidor i rapporten som är mest användbara och vilka som du bör fasa ut? Ta ett utsnitt efter **Rapportsida** för att ta reda på det. Undrar du om du ska skapa en mobil layout för instrumentpanelen? Ta ett utsnitt efter **Plattformar** för att upptäcka hur många användare som har åtkomst till ditt innehåll via mobilappar kontra webbläsaren.
+    Användningsstatistiken är en kraftfull bundsförvant när du arbetar med att distribuera och underhålla Power BI-instrumentpaneler och rapporter. Undrar du vilka sidor i rapporten som är mest användbara och vilka som du bör fasa ut? Ta ett utsnitt efter **Rapportsida** för att ta reda på det. Undrar du om du ska skapa en mobil layout för instrumentpanelen? Ta ett utsnitt efter **Plattformar** för att upptäcka hur många användare som har åtkomst till ditt innehåll via mobilappar kontra webbläsaren.
 
 5. Du kan även hovra över en visualisering och välja fäst-ikonen för att lägga till visualiseringen på en instrumentpanel. Eller välj **Fäst Live-sidan** från den översta menyraden för att lägga till hela sidan på en instrumentpanel. Från instrumentpanelen kan du övervaka användningsstatistik enklare eller dela dem med andra.
 
@@ -153,7 +153,7 @@ Användningsstatistikrapporter är en funktion som Power BI- eller Office 365-ad
 
     ![Aktiverad användningsstatistik](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
-Som standard är data per användare aktiverat för användningsstatistik, och kontoinformation om skapare av innehåll ingår i statistikrapporten. Om du inte vill inkludera den här informationen för vissa eller alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformation visas då i rapporten som *Namnlös*.
+Som standard är data per användare aktiverat för användningsstatistik, och kontoinformation om skapare av innehåll ingår i statistikrapporten. Om du inte vill inkludera den här informationen för vissa eller alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformation visas sedan i rapporten som *Namnlös*.
 
 När du inaktiverar användningsstatistik för hela organisationen kan administratörerna använda alternativet **Ta bort allt befintligt innehåll för användningsstatistik** för att ta bort alla befintliga rapporter och instrumentpaneler som har skapats med användningsstatistikrapporter och datauppsättningar. Det här alternativet tar bort all åtkomst till användningsstatistiken för alla användare i organisationen som kanske redan använder den. Var försiktig, eftersom det inte går att ångra när du har tagit bort befintligt användningsstatistikinnehåll.
 
@@ -169,22 +169,31 @@ Det är viktigt att förstå att skillnader kan uppstå när du jämför använd
 * Vissa typer av vyer ingår inte i användningsstatistiken, vilket beskrivs tidigare i den här artikeln.
 * Användningsstatistiken kan ibland överberäkna aktiviteter i situationer där klienten uppdateras utan att en begäran behöver skickas tillbaka till Power BI-tjänsten.
 
+## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
 Förutom eventuella skillnader mellan användningsstatistik och spårningsloggar så följande frågor och svar om användningsstatistik vara hjälpsamma för användare och administratörer:
 
-F:    Jag kan inte köra användningsstatistik i en instrumentpanel eller rapport A:    Du kan endast se användningsstatistik för innehåll som du äger eller har behörighet att redigera.
+**F:**    Jag kan inte köra användningsstatistik i en instrumentpanel eller rapport
 
-F:    Kommer användningsstatistiken hämta visningar från inbäddade instrumentpaneler och rapporter?
-S:    Användningsstatistiken stöder för närvarande inte att hämta användning för inbäddade instrumentpaneler, rapporter och flödet [publicera till webben](service-publish-to-web.md).          I sådana fall rekommenderar vi att du använder befintliga webbanalysplattformar till att spåra användningen för värdappen eller portalen.
+**S:**    Du kan endast se användningsstatistik för innehåll som du äger eller har behörighet att redigera.
 
-F:    Jag kan inte köra användningsstatistik på något innehåll alls.
-S1:    Administratörer kan stänga av den här funktionen för organisationen.  Kontakta administratören för att ta reda på om detta är fallet.
-S2:    Användningsstatistik är en funktion i Power BI Pro.
+**F:**    Hämtar användningsstatistiken visningar från inbäddade instrumentpaneler och rapporter?
 
-F:    Mina data verkar inte vara uppdaterade. Till exempel visas inte fördelningsmetoderna och rapportsidor saknas. S:    Det kan ta upp till 24 timmar innan data uppdateras.
+**S:**    Användningsstatistiken stöder för närvarande inte att hämta användning för inbäddade instrumentpaneler, rapporter och flödet [publicera till webben](service-publish-to-web.md).          I sådana fall rekommenderar vi att du använder befintliga webbanalysplattformar till att spåra användningen för värdappen eller portalen.
 
-F:    Det finns fyra rapporter på arbetsytan men användningsstatistikrapporten visar endast tre.
-S:    Användningsstatistikrapporten innehåller endast rapporter (eller instrumentpaneler) som har använts under de senaste 90 dagarna.  Om en rapport (eller instrumentpanel) inte visas har den sannolikt inte använts de senaste 90 dagarna.
+**F:**    Jag kan inte köra användningsstatistik på något innehåll alls.
+
+**S1:**    Administratörer kan stänga av den här funktionen för organisationen.  Kontakta administratören för att ta reda på om detta är fallet.
+
+**S2:**    Användningsstatistik är en funktion i Power BI Pro.
+
+**F:**    Mina data verkar inte vara uppdaterade. Till exempel visas inte fördelningsmetoderna och rapportsidor saknas.
+
+**S:**    Det kan ta upp till 24 timmar innan data uppdateras.
+
+**F:**    Det finns fyra rapporter på arbetsytan men användningsstatistikrapporten visar endast tre.
+
+**S:**    Användningsstatistikrapporten innehåller endast rapporter (eller instrumentpaneler) som har använts under de senaste 90 dagarna.  Om en rapport (eller instrumentpanel) inte visas har den sannolikt inte använts de senaste 90 dagarna.
 
 ## <a name="next-steps"></a>Nästa steg
 

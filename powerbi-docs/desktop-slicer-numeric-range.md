@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f997ee7574c5dd9dc6b4d28767d599a97bf297ed
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a2402872744b3029e37bf49eaaeae27a3ad95734
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983633"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Använd numeriska intervallutsnitt i Power BI Desktop
 Med **numeriska intervallutsnitt** kan du använda alla typer av filter på en numerisk kolumn i datamodellen. Du kan välja att filtrera **mellan** siffror som är **mindre än eller lika** med ett tal eller **större än eller lika** med ett tal. Detta kan låta enkelt men det är ett kraftfullt sätt att filtrera dina data.
@@ -54,6 +54,14 @@ Till sist väljer vi **Större än eller lika med** så att den högra (större)
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fäst till heltal med utsnitt med numeriska intervall
 
 Ett utsnitt för ett numeriskt intervall kopplas till heltal om datatypen för det underliggande fältet är **Heltal**. Detta gör att ditt utsnitt korrekt justeras som heltal. I fälten för **decimaltal** kan du ange eller välja decimaler för ett tal. Formateringen som används i textrutan matchar formateringen som definierats för fältet, men du kan ange eller välja mer exakta siffror.
+
+## <a name="display-formatting-with-the-date-range-slicer"></a>Visa formatering med datumintervallutsnittet
+
+När du använder ett utsnitt för att visa eller ange ett intervall med datum visas alltid formatet för datumet med hjälp av formatet **Kort datum**, baserat på användarens språkinställningar i webbläsaren eller operativsystemet. Det här är visningsformatet oavsett inställningarna för datatyp för underliggande data eller modell. 
+
+Du kan till exempel ha ett långt datumformat för den underliggande datatypen (t.ex. *dddd, d MMMM åååå* som skulle formatera ett datum i andra visuella objekt eller förhållanden som *Onsdag, 14 mars 2001*) men i datumintervallutsnittet skulle datumet visas i utsnittet som *2001-03-14*.
+
+Om du visar formatet **Kort datum** i utsnittet ser du till att längden på strängen är konsekvent och kompakt i utsnittet. 
 
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden

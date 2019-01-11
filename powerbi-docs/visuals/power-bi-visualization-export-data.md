@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 8d79d92577da25a316eba8e789a1b7b004a9967a
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983771"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
-Om du vill se de data som används i en visualisering, kan du visa dessa data i Power BI eller exportera data till Excel som en XLSX- eller CSV-fil. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. 
+Om du vill se de data som används i en visualisering, [kan du visa dessa data i Power BI](service-reports-show-data.md) eller exportera data till Excel som en XLSX- eller CSV-fil. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. 
 
 Här kan du se Will exportera data från en visualisering i sin rapport, spara den som .xlsx-fil och öppna den i Excel. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
@@ -38,7 +38,7 @@ Här kan du se Will exportera data från en visualisering i sin rapport, spara d
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>Från en visualisering i en rapport
-Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../sample-procurement.md) i [Redigeringsvyn](../consumer/end-user-reading-view.md). Lägg till en ny tom rapportsida. Följ stegen nedan för att lägga till en samling och ett filter på visualiseringsnivå.
+Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../sample-procurement.md) i redigeringsvyn. Lägg till en ny tom rapportsida. Följ stegen nedan för att lägga till en samling och ett filter på visualiseringsnivå.
 
 1. Skapa ett nytt stapeldiagram.  Från fönstret fält väljer du **Plats > Ort** och **Faktura > Rabattprocent**.  Du kan behöva flytta **Rabattprocent** till värdet. 
 
@@ -129,9 +129,6 @@ Det är viktigt att observera att om Power BI-administratörens portalinställni
   2. Från fliken **Data** väljer du **Hämta externa data** > **Från text**.
 * Power BI-administratörer har möjlighet att inaktivera export av data.
 
-## <a name="next-steps"></a>Nästa steg
-[Instrumentpaneler i Power BI](../consumer/end-user-dashboards.md)  
-[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

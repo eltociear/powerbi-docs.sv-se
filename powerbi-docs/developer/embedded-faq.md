@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/27/2018
-ms.openlocfilehash: 71cbae5f282883ca26a5bf0b2ae7b5609b86eb58
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 3971651caf9be7e754f4232ffec8b4e4dbfdfe6d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578806"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008429"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -104,7 +104,7 @@ Automatisk skalanpassning finns inte för tillfället men alla API:er kan spalan
 
 ### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Varför placeras kapaciteten i pausat läge när den skapas/skalas/återupptas?
 
-Kapacitetens etablering kan misslyckas (skalning/återupptagning/skapande). Etableringsanropets anropare ska kontrollera ProvisioningState för en kapacitet med API:t för att hämta information: [Kapaciteter – hämta information](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+Kapacitetens etablering kan misslyckas (skalning/återupptagning/skapande). Etableringsanropets anropare ska kontrollera ProvisioningState för en kapacitet med API:et för att hämta information: [Kapaciteter – hämta information](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
 
 ### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Varför kan jag bara skapa PBIE i en viss region?
 
@@ -321,3 +321,7 @@ Mer information om hur du redigerar dina Power BI-data finns [här](https://docs
 Mer information finns i [Felsökning av ditt inbäddade program](embedded-troubleshoot.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+
+### <a name="what-are-the-best-practices-to-improve-performance"></a>Vad är bästa praxis för att förbättra prestanda?
+
+[Power BI Embedded-prestanda](embedded-performance-best-practices.md)

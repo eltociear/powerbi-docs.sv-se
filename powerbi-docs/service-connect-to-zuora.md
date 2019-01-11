@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 605cd2f135ff6d8626586abbd503bcb44687931d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003235"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008613"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Ansluta till Zuora med Power BI
 Med Zuora för Power BI kan du visualisera viktiga intäkter, fakturering och prenumerationsdata. Använd standardinstrumentpanelen och rapporter för att analysera användningstrender, spåra fakturering och betalningar och övervaka återkomma intäkter eller anpassa dem för att uppfylla dina unika behov av instrumentpaneler och rapporter.
@@ -67,21 +67,21 @@ Den inkluderar också dessa beräknade mått:
 
 | Mått | Beskrivning | Halvberäkning |
 | --- | --- | --- |
-| Konto: betalningar |Totalt betalningsbelopp under en tidsperiod, baserat på betalningens förfallodatum. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
-| Konto: återbetalningar |Total återbetalning under en tidsperiod, baserat på återbetalningsdatumet. Mängden har rapporterats som ett negativt tal. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
-| Konto: nettobetalningar |Kontobetalningar plus återbetalningar under en tidsperiod. |Account.Payments + Account.Refunds |
+| Konto: Betalningar |Totalt betalningsbelopp under en tidsperiod, baserat på betalningens förfallodatum. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
+| Konto: Återbetalningar |Total återbetalning under en tidsperiod, baserat på återbetalningsdatumet. Mängden har rapporterats som ett negativt tal. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
+| Konto: Nettobetalningar |Kontobetalningar plus återbetalningar under en tidsperiod. |Account.Payments + Account.Refunds |
 | Konto: Aktiva konton |Antal konton som var aktiva under en tidsperiod. Prenumerationer måste har startat innan (eller under) tidsperiodens startdatum. |COUNT (Account.AccountNumber)<br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    (Subscription.SubscriptionEndDate > TimePeriod.StartDate<br>OR<br>Subscription.SubscriptionEndDate = null) –evergreen subscription |
 | Konto: Genomsnittliga återkommande intäkter |Bruttomarginal MRR per aktivt konto under en tidsperiod. |Gross MRR / Account.ActiveAccounts |
 | Konto: Annullerade prenumerationer |Antal konton som avbrutit en prenumeration under en tidsperiod. |COUNT (Account.AccountNumber)<br>WHERE<br>Subscription.Status = "Cancelled"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    Subscription.CancelledDate >= TimePeriod.StartDate |
 | Konto: Betalningsfel |Summan av betalningsfel. |SUM (Payment.Amount)<br>WHERE<br>Payment.Status = "Error" |
 | Objekt i intäktsschema: Identifierade intäkter |Totalt antal identifierade intäkter under en redovisningsperiod. |SUM (RevenueScheduleItem.Amount)<br>WHERE<br>AccountingPeriod.StartDate = TimePeriod.StartDate |
-| Prenumerationen: Nya prenumerationer |Antal nya prenumerationer under en tidsperiod. |COUNT (Subscription.ID)<br>WHERE<br>Subscription.Version = "1"<br>AND    Subscription.CreatedDate <= TimePeriod.EndDate<br>AND    Subscription.CreatedDate >= TimePeriod.StartDate |
+| Prenumeration: Nya prenumerationer |Antal nya prenumerationer under en tidsperiod. |COUNT (Subscription.ID)<br>WHERE<br>Subscription.Version = "1"<br>AND    Subscription.CreatedDate <= TimePeriod.EndDate<br>AND    Subscription.CreatedDate >= TimePeriod.StartDate |
 | Faktura: Fakturaposter |Totalt antal fakturaposter som har debiterats under en tidsperiod. |SUM (InvoiceItem.ChargeAmount)<br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
 | Faktura: Skatteobjekt |Totalt antal skattebelopp under en tidsperiod. |SUM (TaxationItem.TaxAmount)<br>WHERE<br>Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
-| Fakturera: Justeringar hos fakturaobjekt |Totalt antal fakturaposter som har justerats under en tidsperiod. |SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceItemAdjustment.AdjustmentDate >= TimePeriod.StartDate |
-| Faktura: Justeringar hos fakturor |Totalt antal fakturajusteringar under en tidsperiod. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceAdjustment.AdjustmentDate >= TimePeriod.StartDate |
+| Faktura: Justeringar hos fakturaobjekt |Totalt antal fakturaposter som har justerats under en tidsperiod. |SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceItemAdjustment.AdjustmentDate >= TimePeriod.StartDate |
+| Faktura: Fakturajusteringar |Totalt antal fakturajusteringar under en tidsperiod. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceAdjustment.AdjustmentDate >= TimePeriod.StartDate |
 | Faktura: Nettobelopp |Summan av poster, skatteobjekt, fakturaobjektjusteringar och fakturajusteringar under en tidsperiod. |Invoice.InvoiceItems + Invoice.TaxationItems + Invoice.InvoiceItemAdjustments + Invoice.InvoiceAdjustments |
-| Fakturera: Fakturans saldo |Summan av bokförda fakturasaldon. |SUM (Invoice.Balance) <br>WHERE<br>    Invoice.Status = "Posted" |
+| Faktura: Fakturans saldo |Summan av bokförda fakturasaldon. |SUM (Invoice.Balance) <br>WHERE<br>    Invoice.Status = "Posted" |
 | Faktura: Bruttofakturering |Summan av fakturaobjekt för bokförda fakturor under en tidsperiod. |SUM (InvoiceItem.ChargeAmount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
 | Faktura: Totala justeringar |Summan av bearbetade fakturajusteringar och fakturaobjektjusteringar som är associerade med bokförda fakturor. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.Status = "Processed"<br>+<br>SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    invoiceItemAdjustment.Status = "Processed" |
 | Prenumerationsavgift: Brutto MMR |Summan av månatliga återkommande intäkter från prenumerationer under en tidsperiod. |SUM (RatePlanCharge.MRR) <br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    RatePlanCharge.EffectiveStartDate <= TimePeriod.StartDate<br>AND        RatePlanCharge.EffectiveEndDate > TimePeriod.StartDate<br>    OR RatePlanCharge.EffectiveEndDate = null --evergreen subscription |

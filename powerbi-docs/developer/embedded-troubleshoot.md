@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/12/2018
-ms.openlocfilehash: 010a26076fe139401eb2dbbc363c712d67c637fb
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.date: 12/20/2018
+ms.openlocfilehash: 5ee6758093969a2db1d932a88f21c965380bab5c
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329727"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008452"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -291,3 +291,7 @@ Mer information finns i [Vanliga frågor om Power BI Embedded](embedded-faq.md).
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
 Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa en supportbegäran via Azure-portalen](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden du får.
+
+## <a name="performance"></a>Prestanda
+
+[Power BI Embedded-prestanda](embedded-performance-best-practices.md)

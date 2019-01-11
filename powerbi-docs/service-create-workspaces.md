@@ -7,25 +7,25 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
-ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
+ms.openlocfilehash: 55f592101954ae5c0724fb5b48fb2571a1bdfc51
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983702"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Skapa arbetsytor med dina kollegor i Power BI
 
-I Power BI kan du skapa *arbetsytor*, platser där du kan samarbeta med kollegor för att skapa och förfina samlingar av instrumentpaneler och rapporter. Sedan paketerar du dem tillsammans i *appar* som du kan distribuera till hela organisationen eller till specifika personer eller grupper. 
+I Power BI kan du skapa *arbetsytor*, platser där du kan samarbeta med kollegor för att skapa och förfina samlingar av instrumentpaneler och rapporter. Sedan paketerar du samlingen tillsammans i *appar* som du kan distribuera till hela organisationen eller till specifika personer eller grupper. 
 
 ![Power BI-appar](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
 När du skapar en arbetsyta skapar du en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Office 365. Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik. Alla som du lägger till i en apparbetsyta behöver en Power BI Pro-licens. 
 
-**Visste du att?** Power BI har en ny arbetsyta i förhandsversion. Läs [Skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md) för att ta reda på hur arbetsytor kommer att ändras i framtiden. 
+**Visste du att?** Power BI har en ny arbetsyta i förhandsversion. I [Organisera arbete i de nya arbetsytorna (förhandsversion)](service-new-workspaces.md) finns information om de nya arbetsytorna. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Video: Appar och apparbetsytor
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -84,12 +84,12 @@ När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporte
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Hur skiljer sig appar åt från organisationsinnehållspaket?
 Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisationsinnehållspaket, fortsätter de att fungera sida vid sida med appar. Det finns några viktiga skillnader mellan appar och innehållspaket. 
 
-* När företagsanvändare har installerat ett innehållspaket, förlorar det sin grupperade identitet: det är bara en lista över instrumentpaneler och rapporter bland andra instrumentpaneler och rapporter. Appar, å andra sidan, bevarar sin gruppering och identitet även efter installationen. Det gör det lätt för företagsanvändare att fortsätta att gå tillbaka till dem över tid.
+* När företagsanvändare har installerat ett innehållspaket, förlorar det sin grupperade identitet: det är bara en lista över instrumentpaneler och rapporter bland andra instrumentpaneler och rapporter. Appar, å andra sidan, bevarar sin gruppering och identitet även efter installationen. Den här grupperingen gör det lätt för företagsanvändare att fortsätta att gå tillbaka till dem över tid.
 * Du kan skapa flera innehållspaket från en arbetsyta, men en app har ett 1:1-förhållande med sin arbetsyta. 
 * Med tiden planerar vi att avveckla användningen av organisationsinnehållspaket, så vi rekommenderar att du skapar appar hädanefter.  
 * Med den nya förhandsversionen av arbetsytan tar vi de första stegen mot att avveckla innehållspaket för organisationer. Du kan inte använda eller skapa dem i arbetsytor som är i förhandsversion.
 
-Se sidan om [hur de nya apparbetsytorna skiljer sig från befintliga apparbetsytor](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) för att jämföra aktuella och nya apparbetsytor. 
+Du kan jämföra de två i [Hur skiljer sig de nya apparbetsytorna åt från befintliga apparbetsytor?](service-new-workspaces.md#how-are-the-new-workspaces-different-from-current-workspaces). 
 
 ## <a name="next-steps"></a>Nästa steg
 * [Installera och använda appar i Power BI](service-create-distribute-apps.md)

@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e0721efaaca879ffb2915315af9aea4dbafca3ca
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 4b76857e6b0c7f465ce7033b59cdb0b5340c5c70
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983679"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. När du utforskar data, skapar diagram och instrumentpaneler, eller ställer frågor i Frågor och svar, hämtar alla dessa visualiseringar och svar som du ser sina underliggande data från en datauppsättning. Men var kommer datauppsättningen från? Från en datakälla.
 
-I den här artikeln ska vi gå igenom de olika typer av datakällor som du kan ansluta till från Power BI-tjänsten. Kom ihåg att det även finns många andra typer av datakällor som du kan hämta data från. Men de kan kräva att du först använder Power BI Desktop eller Excels avancerade funktioner för datafrågor och modellering. Vi ska se mer på detta senare. Just nu ska vi titta på olika typer av datakällor som du kan ansluta till direkt från Power BI-tjänstens webbplats.
+I den här artikeln ska vi gå igenom de olika typer av datakällor som du kan ansluta till från Power BI-tjänsten. Kom ihåg att det även finns många andra typer av datakällor som du kan hämta data från. Men de källorna kan kräva att du först använder Power BI Desktop eller Excels avancerade funktioner för datafrågor och modellering. Vi ska se mer på detta senare. Just nu ska vi titta på olika typer av datakällor som du kan ansluta till direkt från Power BI-tjänstens webbplats.
 
 Du kan hämta data från någon av dessa datakällor i Power BI genom att klicka på **Min arbetsyta** > **Hämta data**.
 
@@ -29,7 +29,7 @@ Du kan hämta data från någon av dessa datakällor i Power BI genom att klicka
 ## <a name="files"></a>Filer
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) – Excel är unikt eftersom en arbetsbok både kan innehålla data som du själv har lagt in i kalkylbladen och att du kan fråga efter och läsa in data från externa datakällor med Power Query (Hämta och transformera i Excel 2016) eller Power Pivot. Du kan importera data som finns i tabeller i kalkylblad (datan *måste* finnas i en tabell), eller importera data som har lästs in i en datamodell. Läs mer i [Hämta data från Excel](service-get-data-from-files.md).
+**Excel** (.xlsx, xlxm) – Excel är unikt eftersom en arbetsbok både kan innehålla data som du själv har lagt in i kalkylbladen och att du kan fråga efter och läsa in data från externa datakällor med Power Query (Hämta och transformera i Excel 2016) eller Power Pivot. Du kan importera data som finns i tabeller i kalkylblad (data *måste* finnas i en tabell), eller importera data som har lästs in i en datamodell. Läs mer i [Hämta data från Excel](service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbix) – Du kan använda Power BI Desktop till att fråga efter och läsa in data från externa datakällor, utöka datamodellen med mått och relationer samt skapa rapporter. Du kan importera din Power BI Desktop-fil till Power BI-webbplatsen. Power BI Desktop passar bäst för mer avancerade användare som har en god förståelse för sina datakällor, datafrågor och omvandling samt datamodelleringsbegrepp. Läs mer i [Ansluta till data i Power BI Desktop](desktop-connect-to-data.md).
 
@@ -37,7 +37,7 @@ Du kan hämta data från någon av dessa datakällor i Power BI genom att klicka
 
 För andra filtyper som t.ex. XML-tabeller (.xml) eller textfiler (.txt), kan du använda Hämta och transformera för att fråga, transformera och läsa in data i en Excel- eller Power BI Desktop-fil först. Du kan sedan importera Excel- eller Power BI Desktop-filen till Power BI.
 
-Var du lagrar filerna har också stor betydelse. OneDrive för företag erbjuder störst flexibilitet och integrering med Power BI. Du kan spara filerna på den lokala enheten om du vill, men om du behöver uppdatera dina data krävs några extra steg. Mer information finns i de länkade artiklarna.
+Var du lagrar dina filer gör också en stor skillnad. OneDrive för företag erbjuder störst flexibilitet och integrering med Power BI. Du kan spara filerna på den lokala enheten om du vill, men om du behöver uppdatera dina data krävs några extra steg. Mer information finns i de länkade artiklarna.
 
 ## <a name="content-packs"></a>Innehållspaket
 ![](media/service-get-data/pbi_getdata_contentpacks.png)
@@ -64,12 +64,12 @@ Vissa datakällor har redan sina data i ett format som är redo för Power BI-tj
 
 I andra fall kan det vara nödvändigt att fråga efter och läsa in de data som du vill använda i en fil. Anta exempelvis att du har logistikdata i en informationslagerdatabas på en server i din organisation. Du kan inte ansluta direkt till databasen i Power BI-tjänsten för att utforska datan (om det inte är en tabellmodelldatabas). Men du kan använda Power BI Desktop eller Excel för att fråga och läsa in logistikdata i en datamodell som du sedan sparar som en fil. Du kan sedan importera filen till Power BI där en datauppsättning skapas.
 
-Du tänker förmodligen – Men logistikdata i den databasen ändras ju varje dag. Hur kontrollerar jag att min datauppsättning i Power BI har uppdaterats? – Anslutningsinformationen från Power BI Desktop eller Excel-filen importeras till datauppsättningen tillsammans med informationen. Om du konfigurerar en schemalagd uppdatering eller gör en manuell uppdatering av datauppsättningen använder Power BI anslutningsinformationen från datauppsättningen, tillsammans med några andra inställningar, till att ansluta direkt till databasen, fråga efter uppdateringar och läsa in uppdateringarna i datauppsättningen. En Power BI-gateway kommer troligen krävas för att skydda all dataöverföring mellan din lokala server och Power BI. Dina visualiseringar i rapporter och instrumentpaneler uppdateras automatiskt.
+Du tänker förmodligen ”Men logistikdata i den databasen ändras ju varje dag. Hur kontrollerar jag att min datauppsättning i Power BI har uppdaterats? – Anslutningsinformationen från Power BI Desktop eller Excel-filen importeras till datauppsättningen tillsammans med informationen. Om du konfigurerar en schemalagd uppdatering eller gör en manuell uppdatering av datauppsättningen använder Power BI anslutningsinformationen från datauppsättningen, tillsammans med några andra inställningar, till att ansluta direkt till databasen, fråga efter uppdateringar och läsa in uppdateringarna i datauppsättningen. En Power BI-gateway kommer troligen krävas för att skydda all dataöverföring mellan din lokala server och Power BI. Dina visualiseringar i rapporter och instrumentpaneler uppdateras automatiskt.
 
 Bara för att du inte kan ansluta till din datakälla direkt från Power BI-tjänsten innebär det alltså inte att du inte kan hämta data till Power BI. Det krävs bara några fler steg och kanske viss hjälp från IT-avdelningen. Se [Datakällor i Power BI Desktop](desktop-data-sources.md) om du vill veta mer.
 
 ## <a name="some-more-details"></a>Visa mer information
-Du har säkert sett att termerna datauppsättning och datakälla används mycket i Power BI. De används ofta synonymt, men de är faktiskt två olika saker, även om de är relaterade.
+Du har säkert sett att termerna datauppsättning och datakälla används mycket i Power BI. De används ofta synonymt men är faktiskt två olika saker, även om de är relaterade.
 
 En ***datauppsättning*** skapas automatiskt i Power BI när du använder Hämta data för att ansluta till och importera data från ett innehållspaket, en fil eller om du ansluter till en live-datakälla. En datauppsättning innehåller information om datakällan, autentiseringsuppgifterna för datakällan, och i de flesta fall en delmängd med data som kopierats från datakällan. I de flesta fall när du skapar visualiseringar i rapporter och instrumentpaneler tittar du på data i datauppsättningen.
 

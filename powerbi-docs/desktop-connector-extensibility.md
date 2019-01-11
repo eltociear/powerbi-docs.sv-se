@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2018
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bba674df9864697199a274698a1b17320b8ccd80
-ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
+ms.openlocfilehash: eaf76f2ba762a603bf37385ea00cd714499db4b5
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40256870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983426"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Utökningsbarhet av anslutningsprogram i Power BI
 
@@ -42,7 +42,7 @@ Under **Datatillägg** kan du välja mellan två säkerhetsnivåer:
 * (Rekommenderas) Tillåt att endast certifierade filnamnstillägg läses in
 * (Rekommenderas inte) Tillåt att alla tillägg läses in utan varning
 
-Om du vill använda **anpassade anslutningsappar** eller anslutningsappar som du eller en tredje part har utvecklat och distribuerat måste du välja **(Not Recommended) Allow any extension to load without warning** ((Rekommenderas inte) Tillåt att alla tillägg läses in utan varning). Vi rekommenderar inte den här säkerhetsinställningen såvida du inte planerar att köra **anpassade anslutningsappar**.
+Om du vill använda **anpassade anslutningsappar** eller anslutningsappar som du eller en tredje part har utvecklat och distribuerat måste du välja **(Not Recommended) Allow any extension to load without warning** ((Rekommenderas inte) Tillåt att alla tillägg läses in utan varning). Vi rekommenderar inte den säkerhetsinställningen om du inte absolut litar på dina anpassade anslutningsappar, eftersom koden där kan hantera autentiseringsuppgifter (inklusive att skicka dem visa HTTP) och ignorera sekretessnivåer.
 
 Om du använder säkerhetsinställningen **(Rekommenderas)** och det finns anpassade anslutningar i systemet visas ett fel som beskriver de anslutningsappar som inte kan läsa in av säkerhetsskäl.
 

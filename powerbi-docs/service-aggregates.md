@@ -1,24 +1,24 @@
 ---
-title: Aggregeringar (summa, medelvärde, maximum osv.) i visualiseringar
-description: Ändra aggregeringen i ett diagram (summa, medelvärde, maximum etc.) i Power BI
+title: Arbeta med aggregeringar (summa, medelvärde osv.) i Power BI-tjänsten
+description: Lär dig hur du ändrar aggregeringen i ett diagram (summa, medelvärde, max osv.) i Power BI-tjänsten.
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7a88cc7f210c6119e57a5dcf30920a95e180b85f
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983725"
 ---
-# <a name="aggregates-in-power-bi-visualizations"></a>Aggregeringar i Power BI-visualiseringar
+# <a name="work-with-aggregates-sum-average-etc-in-the-power-bi-service"></a>Arbeta med aggregeringar (summa, medelvärde osv.) i Power BI-tjänsten
 ## <a name="what-is-an-aggregate"></a>Vad är en aggregering för något?
 Ibland kan du vilja kombinera värden matematiskt i dina data. Den matematiska åtgärden kan vara summa, medelvärde, maximum, antal osv. När du kombinerar värden i dina data, det kallas för att *aggregera*. Resultatet av den matematiska åtgärden blir en *aggregering*. 
 
@@ -70,16 +70,16 @@ Anta att du har ett diagram som summerar enheter sålda för olika produkter, me
 
 Här visas några av de alternativ som kan vara tillgängliga vid aggregering av ett fält:
 
-* **Summera inte**. När det här alternativet är valt behandlas varje värde i fältet separat och summeras därför inte. Det här används ofta om du har en kolumn med numeriska ID:n som inte ska summeras.
-* **Summera**. Detta alternativ adderar alla värden i fältet.
+* **Summera inte**. När det här alternativet är valt behandlas varje värde i fältet separat och summeras därför inte. Använd det här alternativet om du har en kolumn med numeriska ID:n som inte ska summeras.
+* **Summera**. Adderar alla värden i fältet.
 * **Medelvärde**. Räknar ut ett aritmetiskt medelvärde för värdena.
 * **Minimum**. Visar det minsta värdet.
 * **Maximum**. Visar det högsta värdet.
-* **Antal (ej tomma).** Detta räknar ut antalet värden i ett fält som inte är tomt.
-* **Antal (distinkta).** Detta är antalet olika värden i fältet.
+* **Antal (ej tomma).** Räknar ut antalet värden i ett fält som inte är tomt.
+* **Antal (distinkta).** Räknar ut antalet olika värden i fältet.
 * **Standardavvikelse.**
 * **Avvikelse**.
-* **Median**.  Visar medianvärdet (mitten). Detta är det värde som har samma antal objekt över och under sig.  Om det finns två medianer räknar Power BI ut ett medelvärde.
+* **Median**.  Visar medianvärdet (mitten). Det här värdet har samma antal objekt över och under.  Om det finns två medianer räknar Power BI ut ett medelvärde.
 
 Till exempel följande data:
 
@@ -109,7 +109,7 @@ Ger följande resultat:
 ## <a name="create-an-aggregate-using-a-category-text-field"></a>Skapa en aggregering med hjälp av ett kategorifält (text)
 Du kan även aggregera ett icke-numeriskt fält. Om du exempelvis har ett produktnamnsfält, kan du lägga till det som ett värde och ställa in det som **Antal**, **Distinkt antal**, **Första** eller **Sista**. 
 
-1. I det här exemplet har vi dragit **Produkt**-fältet till Värden-brunnen. Värden-brunnen används vanligtvis för numeriska fält. Power BI identifierar att det är ett textfält, ställer in aggregeringen till **Summera inte** och ger oss en tabell med en kolumn.
+1. I det här exemplet har vi dragit **Produkt**-fältet till Värden-brunnen. Värden-brunnen används vanligtvis för numeriska fält. Power BI identifierar att det här fältet är ett textfält, ställer in aggregeringen till **Summera inte** och ger oss en tabell med en kolumn.
    
    ![Produktfält i värdebrunnen](media/service-aggregates/power-bi-aggregate-value.png)
 2. Om vi ändrar aggregeringen från standardvärdet **Summera inte** till **Antal (distinkta)**, räknar Power BI antalet olika produkter. I det här fallet finns det 4.
@@ -141,9 +141,9 @@ S4:  Ett tredje alternativ är att du använder fältet som en axel. I ett stape
 >[!NOTE]
 >Undantaget till denna regel är punktdiagram som *kräver* aggregerade värden för X- och Y-axlarna.
 
-F:  Varför kan jag inte aggregera textfält för SSAS-datakällor?
+F:  Varför kan jag inte aggregera textfält för SSAS-datakällor (SQL Server Analysis Services)?
 
-S:  Live-anslutningar till SSAS MD tillåter inte aggregering på klientsidan. Detta inkluderar första, senaste, medel, min, max och summa.
+S:  Live-anslutningar till flerdimensionella SSAS-modeller tillåter inte några aggregeringar på klientsidan, inklusive första, sista, medelvärde, minimum, maximum och summa.
 
 F:  Jag har ett punktdiagram och jag vill *inte* att mitt fält ska aggregeras.  Hur gör jag?
 

@@ -9,13 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 7830aa829dc05e29ec0b8dc23d7f35b58991b007
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: e839fabffc685ac0f97146cb7ee5218039df1c18
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830158"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056189"
 ---
 # <a name="certified-custom-visuals"></a>Certifierade anpassade visuella objekt
 
@@ -62,7 +63,7 @@ Om du vill att dina anpassade visuella objekt [certifieras](#certified-custom-vi
 Gör så här för att skicka ett anpassat visuellt objekt för certifikatutfärdare:
 
 1. Skicka ett e-postmeddelande till supportteamet för anpassade visuella objekt i Power BI (pbicvsupport@microsoft.com). Inkludera följande information i e-postmeddelandet:
-    * Ämne: Begäran om certifiering av visuellt objekt
+    * Rubrik: Begäran om certifiering av visuellt objekt
     * Länk till GitHub-lagringsplatsen där källkoden som är läsbar för människor finns
     * [Uppfylla kraven](#certification-requirements)
     * Skicka kodgranskningen
@@ -73,6 +74,7 @@ Gör så här för att skicka ett anpassat visuellt objekt för certifikatutfär
 
 | Länk till AppSource | Länk till video |
 | --- | --- |
+| [3AG Systems – kolumndiagram med relativ avvikelse](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381803) | |
 | [Aster-punktdiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft-kalender](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie-diagram från MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |

@@ -1,5 +1,5 @@
 ---
-title: Hur samarbetar och delar jag i Power BI?
+title: Sätt att dela ditt arbete
 description: I Power BI kan du samarbeta och dela instrumentpaneler, rapporter, paneler och appar på flera olika sätt. Varje sätt har sina fördelar.
 author: maggiesMSFT
 manager: kfile
@@ -7,23 +7,23 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bcec05211d3748e992f0e0cf68acd6460b2715d4
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: bc4f58920feaf5219d63761116ef9a742edd4eed
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983541"
 ---
-# <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hur samarbetar och delar jag i Power BI?
+# <a name="ways-to-share-your-work-in-power-bi"></a>Olika sätt att dela ditt arbete i Power BI
 
-Du har skapat instrumentpaneler och rapporter. Du kanske även använder dem för att samarbeta med dina kollegor. Då vill du att andra ska ha åtkomst till dem. Vad är det bästa sättet att distribuera dem?
+Du har skapat instrumentpaneler och rapporter. Du kanske även använder dem för att samarbeta med dina kollegor. Nu vill du att andra ska ha åtkomst till dem. Vad är det bästa sättet att distribuera dem?
 
 I den här artikeln jämför vi alternativen för att samarbeta och dela i Power BI: 
 
-* Samarbeta med kolleger för att skapa beskrivande rapporter och instrumentpaneler i *apparbetsytor*.
+* Samarbeta med kolleger för att skapa beskrivande rapporter och instrumentpaneler i *arbetsytor*.
 * Paketera dessa instrumentpaneler och rapporter i *appar* och publicera dem till en större grupp eller hela organisationen.
 * Dela instrumentpaneler och rapporter med några få personer från tjänsten eller Power BI-appar.
 - Skriva ut rapporter.
@@ -35,25 +35,25 @@ Oavsett vilket alternativ du väljer för att dela en instrumentpanel behöver d
 
 *Appar i Power BI-tjänsten*
 
-## <a name="collaborate-with-coworkers-in-an-app-workspace"></a>Samarbeta med kollegor på en apparbetsyta
+## <a name="collaborate-with-coworkers-in-a-workspace"></a>Samarbeta med kollegor på en arbetsyta
 
-När team arbetar tillsammans behöver de åtkomst till samma dokument så att de snabbt kan samarbeta. Apparbetsytor i Power BI ger just den plats där team samlas och delar ägarskap och hantering av viktiga instrumentpaneler, rapporter, datauppsättningar och arbetsböcker. Ibland organiserar Power BI-användare sina arbetsytor baserat på organisationsstrukturer, och i andra fall skapar de dem för särskilda projekt. Andra organisationer använder fortfarande flera arbetsytor för att lagra olika versioner av rapporter eller instrumentpaneler som de använder. 
+När team arbetar tillsammans behöver de åtkomst till samma dokument så att de snabbt kan samarbeta. Arbetsytor i Power BI ger just den plats där team samlas och delar ägarskap och hantering av viktiga instrumentpaneler, rapporter, datauppsättningar och arbetsböcker. Ibland organiserar Power BI-användare sina arbetsytor baserat på organisationsstrukturer, och i andra fall skapar de dem för särskilda projekt. Andra organisationer använder fortfarande flera arbetsytor för att lagra olika versioner av rapporter eller instrumentpaneler som de använder. 
 
-Apparbetsytor ger roller som bestämmer vilka behörigheter dina medarbetare har. Du kan använda dessa roller för att bestämma vem som kan hantera hela arbetsytan eller bara tillföra innehåll till den.
+Arbetsytor ger roller som bestämmer vilka behörigheter dina medarbetare har. Du kan använda dessa roller för att bestämma vem som kan hantera hela arbetsytan eller bara tillföra innehåll till den.
 
-![App-arbetsytor](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
+![Arbetsytor](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Vissa användare lägger av naturliga skäl innehåll i sin Min arbetsyta och delar det. Apparbetsytor är bättre för samarbete än Min arbetsyta eftersom de ger medägarskap för innehåll. Du och hela teamet kan enkelt göra uppdateringar eller ge andra användare åtkomst. Min arbetsyta är bäst lämpat för enskilda användare som lägger till personligt innehåll eller innehåll som används en enstaka gång.
+Vissa användare lägger av naturliga skäl innehåll i sin Min arbetsyta och delar det. Arbetsytor är bättre för samarbete än Min arbetsyta eftersom de ger medägarskap för innehåll. Du och hela teamet kan enkelt göra uppdateringar eller ge andra användare åtkomst. Min arbetsyta är bäst lämpat för enskilda användare som lägger till personligt innehåll eller innehåll som används en enstaka gång.
 
-Låt oss anta att du har en färdig instrumentpanel som du behöver dela med dina kollegor. Vad är det bästa sättet att ge dem åtkomst till instrumentpanelen? Svaret beror på ett antal faktorer. Om en viss kollega måste äga instrumentpanelen och hålla den uppdaterad, eller behöver åtkomst till allt innehåll på apparbetsytan, kan det vara bäst att lägga till den kollegan i arbetsytan. Om kollegan bara behöver se just den instrumentpanelen och inte allt innehåll på arbetsytan kan du återigen välja bland en uppsättning alternativ. Om instrumentpanelen är en del av en större uppsättning innehåll som du behöver distribuera till många kollegor är publicering av en app sannolikt det bästa valet. Om kollegan dock bara behöver den specifika instrumentpanelen kan det bästa tillvägagångssättet vara att dela instrumentpanelen. 
+Låt oss anta att du har en färdig instrumentpanel som du behöver dela med dina kollegor. Vad är det bästa sättet att ge dem åtkomst till instrumentpanelen? Svaret beror på ett antal faktorer. Om en viss kollega måste äga instrumentpanelen och hålla den uppdaterad, eller behöver åtkomst till allt innehåll på arbetsytan, kan det vara bäst att lägga till den kollegan i arbetsytan. Om kollegan bara behöver se just den instrumentpanelen och inte allt innehåll på arbetsytan kan du återigen välja bland en uppsättning alternativ. Om instrumentpanelen är en del av en större uppsättning innehåll som du behöver distribuera till många kollegor är publicering av en app sannolikt det bästa valet. Om kollegan dock bara behöver den specifika instrumentpanelen kan det bästa tillvägagångssättet vara att dela instrumentpanelen. 
 
-Läs mer om att [skapa apparbetsytor](service-create-workspaces.md).
+Läs mer om att [skapa arbetsytor](service-create-workspaces.md).
 
 **Visste du att?** Power BI har en ny arbetsyta i förhandsversion. Läs [Skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md) för att ta reda på hur arbetsytor kommer att ändras i framtiden. 
 
 ## <a name="distribute-data-and-insights-by-creating-an-app"></a>Distribuera data och insikter genom att skapa en app
 
-Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina medarbetare har skapat en *apparbetsyta* och skapat och förfinat instrumentpaneler, rapporter och datauppsättningar på apparbetsytan. Nu väljer du de instrumentpaneler och rapporter du vill ha och publicerar dem som en app – antingen till en grupp eller till hela organisationen. 
+Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina medarbetare har skapat en *arbetsyta* och skapat och förfinat instrumentpaneler, rapporter och datauppsättningar på arbetsytan. Nu väljer du de instrumentpaneler och rapporter du vill ha och publicerar dem som en app – antingen till en grupp eller till hela organisationen. 
 
 ![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -66,7 +66,7 @@ För att användare ska kunna se din app måste de antingen ha en Power BI Pro-l
 Du kan även publicera appar till dem som är utanför din organisation. De kan visa och interagera med appinnehållet men kan inte dela det med andra.
 
 ## <a name="share-dashboards-and-reports"></a>Dela instrumentpaneler och rapporter
-Anta att du har skapat en instrumentpanel och en rapport på din egen Min arbetsyta eller på en apparbetsyta och du vill att några andra personer ska ha åtkomst till den. Ett sätt att komma åt den är att *dela* den. 
+Anta att du har skapat en instrumentpanel och en rapport på din egen Min arbetsyta eller på en arbetsyta och du vill att några andra personer ska ha åtkomst till den. Ett sätt att komma åt den är att *dela* den. 
 
 ![Delningsikon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
 

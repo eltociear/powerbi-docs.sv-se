@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 98250e30d1ca944aa536e0d8a05e6ee6c227fc61
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 87e2ff9bf8e4eb87b4b915492bf8cfa4a97a9150
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546773"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008866"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Ansluta till Xero med Power BI
 Xero är en lättanvänd redovisningsprogramvara online som har specialutformats för små företag. Du kan skapa övertygande visualiseringar utifrån dina Xero-siffror med det här Power BI-innehållspaketet. Standardinstrumentpanelen innehåller många mått för småföretag som kontantposition, inkomster och utgifter, vinst-/förlusttrend, gäldenärsdagar och räntabilitet.
@@ -81,7 +81,7 @@ Datauppsättningen innehåller också följande tabeller för att anpassa dina r
 * Xero-konton
 
 ## <a name="system-requirements"></a>Systemkrav
-Följande roller krävs för att komma åt Xero-innehållspaketet: ”Standard + Rapporter” eller ”Rådgivare”.
+Följande roller krävs för att få åtkomst till Xero-innehållspaketet: ”Standard + Rapporter” eller ”Advisor”.
 
 <a name="FindingParams"></a>
 
@@ -89,7 +89,7 @@ Följande roller krävs för att komma åt Xero-innehållspaketet: ”Standard +
 Ange ett namn för din organisation som kan spåras i Power BI. På så sätt kan du ansluta till flera olika organisationer. Observera att du inte kan ansluta till samma organisation flera gånger, eftersom det påverkar den schemalagda uppdateringen.   
 
 ## <a name="troubleshooting"></a>Felsökning
-* Xero-användare måste ha följande roller för att få åtkomst till Xero-innehållspaketet för Power BI: ”Standard”, ”Rapporter” eller ”Rådgivare”. Innehållspaketet är beroende av användarbaserade behörigheter för åtkomst till rapportering av data via Power BI.  
+* Xero-användare måste ha följande roller för att få åtkomst till Xero-innehållspaketet för Power BI: ”Standard + Rapporter” eller ”Advisor”. Innehållspaketet är beroende av användarbaserade behörigheter för åtkomst till rapportering av data via Power BI.  
 * Om ett fel uppstår när inläsning pågått under en viss tid, kan du kontrollera hur lång tid det tog att visa felmeddelandet. Observera att den åtkomsttoken som tillhandahålls av Xero bara gäller i 30 minuter, så konton med mer data än vad som kan läsas in på den tiden misslyckas. Vi arbetar aktivt för att förbättra detta.
 * Under inläsningen befinner sig panelerna på instrumentpanelen i ett allmänt inläsningstillstånd . Detta förväntas inte att förändras förrän hela inläsningen är avslutad. Om du får ett meddelande om att inläsningen har slutförts men panelerna fortfarande läses in, kan du prova att uppdatera instrumentpanelens paneler med hjälp av ... i övre högra hörnet på instrumentpanelen.
 * Om det inte går att uppdatera innehållspaketet, kan du kontrollera om du har anslutit till samma organisation mer än en gång i Power BI. Xero tillåter endast en aktiv anslutning till en organisation och du kan se ett felmeddelande om att dina autentiseringsuppgifter är ogiltiga om du ansluter till samma mer än en gång.  

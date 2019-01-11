@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 12/19/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04e00537db4ffbcb6c1a154cb69fb2c856bd7596
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 09c505d114eaa951978f23061d9c79c1b6870fad
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983380"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tips för färgformatering i Power BI
 Power BI erbjuder många olika sätt på vilka du kan anpassa dina instrumentpaneler och rapporter. Den här artikeln innehåller detaljerad information om en samling tips med vilkas hjälp du kan göra dina Power BI-visualiseringar mer intressanta och anpassade efter dina behov.
@@ -29,38 +29,35 @@ Följande tips tillhandahålls. Har du ytterligare något bra tips? Toppen! Skic
 * Använda avvikande färgskalor
 * Hur du ångrar i Power BI
 
-Om du vill göra några ändringar måste du redigera en rapport: välj **rapporten** i fönstret **Min arbetsyta** och välj sedan **Redigera rapport** från menyområdet högst upp, så som visas i bilden nedan.
+Om du vill göra några ändringar måste du redigera en rapport: välj **rapporten** i fönstret **Min arbetsyta** och välj sedan **Redigera rapport** från menyområdet högst upp, så som visas i bilden nedan. Det här exemplet använder **Exempel på personalfrågor**.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_1.png)
+![rapportarbetsyta med Redigera rapport markerat](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 När fönstret **Visualiseringar** visas utmed den högra sidan av arbetsytan **Rapport** och du kan börja anpassa.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_2.png)
+![rapport med visat formateringsfönster](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Ändra färg på en enskild datapunkt
-Ibland vill du kanske markera en viss datapunkt. Kanske gäller det försäljningssiffrorna i samband med lanseringen av en ny produkt, eller förbättrade kvalitetsresultat när du startar ett nytt program. Med Power BI kan du markera en viss datapunkt genom att ändra dess färg.
+Ibland vill du kanske markera en viss datapunkt. Kanske gäller det försäljningssiffrorna i samband med lanseringen av en ny produkt, eller förbättrade kvalitetsresultat när du startar ett nytt program. Med Power BI, och för de flesta typer av visuella objekt, kan du markera en viss datapunkt genom att ändra dess färg.
 
-Följande visualiseringen rangordnar stater efter levnadskostnader. 
+Följande visualisering visar försäljningsmarginaler efter medarbetare, med standardfärger. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_3.png)
+![ytdiagram](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
 
-Anta att du snabbt och enkelt vill visa var i den rankningslistan Washington hamnar med hjälp av färgmarkering. Gör så här:
+Det är svårt att se området för Annelie, så vi använder färg så att det framhävs bättre. Gör så här:
 
 Utöka avsnittet **Datafärger**. Följande visas.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_4.png)
+![Valområdet Datafärger under Formatering](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
 
-Ställ in **Visa alla** på värdet **På**. Då visas färgerna för varje dataelement i visualiseringen. När du hovrar över datapunkter är bläddring aktiverat, så kan du kan modifiera valfria datapunkter.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_5.png)
+I det här fallet väljer vi en mörk men klar färg som inte liknar färgen som används för Valery. Välj nedåtpilen i Annelies färgruta, välj **Anpassad färg** och välj en klarblå.
 
-Låt oss ändra **Washington** till grönt. Vi rullar ned till **Washington** och väljer nedpilen i dess färgruta. Då visas fönstret för färgval.
+![färgval](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+När du har valt ytan för Annelie är den mycket lättare att skilja från andra medarbetare. 
 
-När du är klar visas datapunkten **Washington** med en fin grön nyans som verkligen står ut.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_7.png)
+![ytdiagram, Annelies yta är nu klarblå](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
 
 Även om du ändrar visualiseringstyper, och sedan går tillbaka, så kommer Power BI ihåg ditt val och bevarar **Washington** grönt.
 
