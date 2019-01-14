@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 3971651caf9be7e754f4232ffec8b4e4dbfdfe6d
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 106d971a06777f7d22d1fb3cd2ba3995b95a21d9
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008429"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136655"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
@@ -204,6 +204,10 @@ Vid filtrering på klientsidan (JavaScript) kan ISV-utvecklaren bestämma vad an
 
 Mer information finns i [Använda RLS jämfört med JavaScript-filter](embedded-row-level-security.md#using-rls-vs-javascript-filters).
 
+### <a name="what-are-the-best-practices-to-improve-performance"></a>Vad är bästa praxis för att förbättra prestanda?
+
+[Power BI Embedded-prestanda](embedded-performance-best-practices.md)
+
 ## <a name="licensing"></a>Licensiering
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Hur köper jag Power BI Embedded?
@@ -264,8 +268,8 @@ Ideella organisationer och högskolor kan köpa Azure. Det finns ingen särskild
 
 3. När du är redo för produktion köper du en **Power BI Embedded**-dedikerad kapacitet och tilldelar ditt Power BI-innehåll (arbetsytan) till den kapaciteten.
 
-> [!Note]
-> Du kan fortsätta att använda **Power BI-arbetsytesamling** samtidigt som du bygger parallellt med en **Power BI Embedded**-lösning. När du är klar kan du flytta kunden till den nya **Power BI Embedded**-lösningen och dra tillbaka **Power BI-arbetsytesamlingen**.
+    > [!Note]
+    > Du kan fortsätta att använda **Power BI-arbetsytesamling** samtidigt som du bygger parallellt med en **Power BI Embedded**-lösning. När du är klar kan du flytta kunden till den nya **Power BI Embedded**-lösningen och dra tillbaka **Power BI-arbetsytesamlingen**.
 
 Mer information finns i [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded).
 
@@ -306,7 +310,7 @@ Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup) kommer
 
 ### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>Jag har laddat ned exempelappen. Vilken lösning ska jag välja?
 
-Om du arbetar med upplevelsen **Embed for your customers**  (Bädda in för dina kunder) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\App Owns Data* och kör filen *PowerBIEmbedded_AppOwnsData.sln*.
+Om du arbetar med upplevelsen **Embed for your customers** (Bädda in för dina kunder) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\App Owns Data* och kör filen *PowerBIEmbedded_AppOwnsData.sln*.
 
 Om du arbetar med upplevelsen **Embed for your organization** (Bädda in för din organisation) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* och kör filen *pbi-saas-embed-report.sln*.
 
@@ -318,10 +322,6 @@ Information om hur du redigerar AAD-registrerade program finns [här](https://do
 
 Mer information om hur du redigerar dina Power BI-data finns [här](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
-Mer information finns i [Felsökning av ditt inbäddade program](embedded-troubleshoot.md)
+Mer information finns i artikeln om att [felsöka ditt inbäddade program](embedded-troubleshoot.md).
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-
-### <a name="what-are-the-best-practices-to-improve-performance"></a>Vad är bästa praxis för att förbättra prestanda?
-
-[Power BI Embedded-prestanda](embedded-performance-best-practices.md)

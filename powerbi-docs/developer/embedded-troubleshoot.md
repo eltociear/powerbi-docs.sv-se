@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 5ee6758093969a2db1d932a88f21c965380bab5c
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: db782cea1d47dc31abf2908b82a756404fda513d
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008452"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136540"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -219,6 +219,10 @@ När du har hämtat IError-objektet bör du titta på relevant tabell över vanl
 
 ## <a name="content-rendering"></a>Innehållsåtergivning
 
+### <a name="performance"></a>Prestanda
+
+[Power BI Embedded-prestanda](embedded-performance-best-practices.md)
+
 ### <a name="rendering-or-consumption-of-embedded-content-fails-or-times-out"></a>Återgivning eller förbrukning av det inbäddade innehållet misslyckas eller når tidsgränsen
 
 Kontrollera att inbäddningstoken inte har upphört att gälla. Se till att du kontrollerar giltighetstiden för inbäddningstoken och uppdaterar den. Mer information finns i [uppdatera token med JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
@@ -250,7 +254,7 @@ Här följer exempel på några vanliga problem som kan uppstå vid testning med
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Använda exempelprogrammet Embed for your customers (Bädda in för dina kunder)
 
-Om du arbetar med upplevelsen **Embed for your customers**  (Bädda in för dina kunder) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\App Owns Data* och kör filen *PowerBIEmbedded_AppOwnsData.sln*.
+Om du arbetar med upplevelsen **Embed for your customers** (Bädda in för dina kunder) börjar du med att spara och packa upp filen *PowerBI-Developer-Samples.zip*. Öppna sedan mappen *PowerBI-Developer-Samples-master\App Owns Data* och kör filen *PowerBIEmbedded_AppOwnsData.sln*.
 
 När du väljer **Bevilja behörigheter** (steget Bevilja behörigheter) visas följande fel:
 
@@ -292,6 +296,8 @@ Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
 Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa en supportbegäran via Azure-portalen](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden du får.
 
-## <a name="performance"></a>Prestanda
+## <a name="next-steps"></a>Nästa steg
 
-[Power BI Embedded-prestanda](embedded-performance-best-practices.md)
+Mer information finns i [Vanliga frågor och svar](embedded-faq.md).
+
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

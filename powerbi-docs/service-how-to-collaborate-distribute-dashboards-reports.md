@@ -2,32 +2,32 @@
 title: Sätt att dela ditt arbete
 description: I Power BI kan du samarbeta och dela instrumentpaneler, rapporter, paneler och appar på flera olika sätt. Varje sätt har sina fördelar.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2018
-ms.author: maggies
+ms.date: 01/08/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: bc4f58920feaf5219d63761116ef9a742edd4eed
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: ec1cfdc02f64db0adf3554c970a87ede35344723
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983541"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136563"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Olika sätt att dela ditt arbete i Power BI
 
 Du har skapat instrumentpaneler och rapporter. Du kanske även använder dem för att samarbeta med dina kollegor. Nu vill du att andra ska ha åtkomst till dem. Vad är det bästa sättet att distribuera dem?
 
-I den här artikeln jämför vi alternativen för att samarbeta och dela i Power BI: 
+I artikeln jämför vi alternativen för att samarbeta och dela i Power BI:
 
 * Samarbeta med kolleger för att skapa beskrivande rapporter och instrumentpaneler i *arbetsytor*.
 * Paketera dessa instrumentpaneler och rapporter i *appar* och publicera dem till en större grupp eller hela organisationen.
 * Dela instrumentpaneler och rapporter med några få personer från tjänsten eller Power BI-appar.
-- Skriva ut rapporter.
-* Publicera på webben för offentliga webbplatser, där vem som helst i världen kan se och interagera med den.
+* Skriva ut rapporter.
+* Bädda in rapporter i säkra portaler eller på offentliga webbplatser.
 
 Oavsett vilket alternativ du väljer för att dela en instrumentpanel behöver du antingen en [Power BI Pro-licens](service-features-license-type.md) eller också måste innehållet finnas i en [Premium-kapacitet](service-premium.md). Licenskraven kan variera för kollegorna som ser dina instrumentpaneler, beroende på vilket alternativ du väljer. Det följande avsnittet beskriver detta i större detalj. 
 
@@ -37,15 +37,15 @@ Oavsett vilket alternativ du väljer för att dela en instrumentpanel behöver d
 
 ## <a name="collaborate-with-coworkers-in-a-workspace"></a>Samarbeta med kollegor på en arbetsyta
 
-När team arbetar tillsammans behöver de åtkomst till samma dokument så att de snabbt kan samarbeta. Arbetsytor i Power BI ger just den plats där team samlas och delar ägarskap och hantering av viktiga instrumentpaneler, rapporter, datauppsättningar och arbetsböcker. Ibland organiserar Power BI-användare sina arbetsytor baserat på organisationsstrukturer, och i andra fall skapar de dem för särskilda projekt. Andra organisationer använder fortfarande flera arbetsytor för att lagra olika versioner av rapporter eller instrumentpaneler som de använder. 
+När team arbetar tillsammans behöver de få åtkomst till samma dokument så att de snabbt kan samarbeta. Arbetsytor i Power BI ger just den plats där team samlas och delar ägarskap och hantering av viktiga instrumentpaneler, rapporter, datauppsättningar och arbetsböcker. Ibland organiserar Power BI-användare sina arbetsytor baserat på organisationsstrukturer, och i andra fall skapar de dem för särskilda projekt. Andra organisationer använder fortfarande flera arbetsytor för att lagra olika versioner av rapporter eller instrumentpaneler som de använder. 
 
-Arbetsytor ger roller som bestämmer vilka behörigheter dina medarbetare har. Du kan använda dessa roller för att bestämma vem som kan hantera hela arbetsytan eller bara tillföra innehåll till den.
+Arbetsytor ger roller som bestämmer vilka behörigheter dina medarbetare har. Du kan använda dessa roller för att bestämma vem som ska kunna hantera hela arbetsytan och vem som ska kunna lägga till innehåll till den.
 
 ![Arbetsytor](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
 Vissa användare lägger av naturliga skäl innehåll i sin Min arbetsyta och delar det. Arbetsytor är bättre för samarbete än Min arbetsyta eftersom de ger medägarskap för innehåll. Du och hela teamet kan enkelt göra uppdateringar eller ge andra användare åtkomst. Min arbetsyta är bäst lämpat för enskilda användare som lägger till personligt innehåll eller innehåll som används en enstaka gång.
 
-Låt oss anta att du har en färdig instrumentpanel som du behöver dela med dina kollegor. Vad är det bästa sättet att ge dem åtkomst till instrumentpanelen? Svaret beror på ett antal faktorer. Om en viss kollega måste äga instrumentpanelen och hålla den uppdaterad, eller behöver åtkomst till allt innehåll på arbetsytan, kan det vara bäst att lägga till den kollegan i arbetsytan. Om kollegan bara behöver se just den instrumentpanelen och inte allt innehåll på arbetsytan kan du återigen välja bland en uppsättning alternativ. Om instrumentpanelen är en del av en större uppsättning innehåll som du behöver distribuera till många kollegor är publicering av en app sannolikt det bästa valet. Om kollegan dock bara behöver den specifika instrumentpanelen kan det bästa tillvägagångssättet vara att dela instrumentpanelen. 
+Låt oss anta att du har en färdig instrumentpanel som du behöver dela med dina kollegor. Vad är det bästa sättet att ge dem åtkomst till instrumentpanelen? Svaret beror på ett antal faktorer. Om en viss kollega måste äga instrumentpanelen och hålla den uppdaterad, eller behöver åtkomst till allt innehåll på arbetsytan, kan det vara bäst att lägga till den kollegan i arbetsytan. Om kollegan bara behöver se just den instrumentpanelen och inte allt innehåll på arbetsytan kan du återigen välja bland en uppsättning alternativ. Om instrumentpanelen är en del av en större uppsättning innehåll som du behöver distribuera till många kollegor är publicering av en app sannolikt det bästa valet. Om kollegan dock bara behöver den specifika instrumentpanelen kan det bästa tillvägagångssättet vara att dela instrumentpanelen.
 
 Läs mer om att [skapa arbetsytor](service-create-workspaces.md).
 
@@ -53,11 +53,11 @@ Läs mer om att [skapa arbetsytor](service-create-workspaces.md).
 
 ## <a name="distribute-data-and-insights-by-creating-an-app"></a>Distribuera data och insikter genom att skapa en app
 
-Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina medarbetare har skapat en *arbetsyta* och skapat och förfinat instrumentpaneler, rapporter och datauppsättningar på arbetsytan. Nu väljer du de instrumentpaneler och rapporter du vill ha och publicerar dem som en app – antingen till en grupp eller till hela organisationen. 
+Anta att du vill distribuera instrumentpanelen till en bred publik. Du och dina medarbetare har skapat en *arbetsyta* och skapat och förfinat instrumentpaneler, rapporter och datauppsättningar på arbetsytan. Nu väljer du de instrumentpaneler och rapporter du vill ha och publicerar dem som en app – antingen till en grupp eller till hela organisationen.
 
 ![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt i dina medarbetares Power BI-konton. Läs mer om att [publicera dina appar](service-create-distribute-apps.md). 
+Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt på din medarbetares Power BI-konton. Läs mer om att [publicera dina appar](service-create-distribute-apps.md).
 
 När de har installerat en app kan de se den i webbläsaren eller på mobilenheten.
 
@@ -66,6 +66,7 @@ För att användare ska kunna se din app måste de antingen ha en Power BI Pro-l
 Du kan även publicera appar till dem som är utanför din organisation. De kan visa och interagera med appinnehållet men kan inte dela det med andra.
 
 ## <a name="share-dashboards-and-reports"></a>Dela instrumentpaneler och rapporter
+
 Anta att du har skapat en instrumentpanel och en rapport på din egen Min arbetsyta eller på en arbetsyta och du vill att några andra personer ska ha åtkomst till den. Ett sätt att komma åt den är att *dela* den. 
 
 ![Delningsikon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
@@ -77,7 +78,8 @@ Du kan dela en instrumentpanel med personer utanför din organisation. De kan ä
 Mer om att [dela instrumentpaneler och rapporter](service-share-dashboards.md) från Power BI-tjänsten. Du kan också lägga till ett filter till en länk och [dela en filtrerad vy av rapporten](service-share-reports.md).
 
 ## <a name="annotate-and-share-from-the-power-bi-mobile-apps"></a>Kommentera och dela från Power BI-mobilapparna
-Du kan kommentera på en panel, rapport eller visualisering och sedan dela den med vem som helst med hjälp av Power BI-mobilapparna för iOS- och Android-enheter. 
+
+Du kan kommentera på en panel, rapport eller visualisering och sedan dela den med vem som helst med hjälp av Power BI-mobilapparna för iOS- och Android-enheter.
 
 ![Kommentera och dela i mobilappar](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-iphone-annotate.png)
 
@@ -88,18 +90,26 @@ Mer om [delning och kommentering för paneler, rapporter och visuella objekt](co
 Du kan också [dela en ögonblicksbild av en panel](consumer/mobile/mobile-windows-10-phone-app-get-started.md) från Power BI-appen för Windows 10-enheter.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Skriva ut eller spara som PDF eller andra statiska filer
+
 Du kan skriva ut eller spara som PDF (eller andra statiska filformat) hela instrumentpaneler, paneler, rapportsidor eller visualiseringar från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång. Mer om att [skriva ut eller spara som en statisk fil](consumer/end-user-print.md).
 
-## <a name="publish-to-the-web"></a>Publicera på webben
+## <a name="embed-reports-in-secure-portals-or-public-websites"></a>Bädda in rapporter i säkra portaler eller på offentliga webbplatser
 
-> [!WARNING]
-> Använd endast **Publicera på webben** för att dela innehåll offentligt, inte för intern delning.
+Du kan bädda in Power BI-rapporter i portaler eller på webbplatser där dina användare förväntar sig att se dem.  
 
-Du kan publicera Power BI-rapporter till hela Internet genom att bädda in interaktiva visuella objekt i blogginlägg, webbplatser, sociala medier och andra former av onlinekommunikation på valfri enhet. Alla på Internet kan se dina rapporter och du har ingen kontroll över vem som kan se vad du har publicerat. De behöver inte en licens för Power BI. Du kan bara publicera rapporter som du kan redigera på webben. Du kan inte publicera rapporter på webben om de har delats med dig eller om de finns i en app. Mer om att [publicera på webben](service-publish-to-web.md).
+Alternativen **Bädda in i SharePoint Online** och **Bädda in** i Power BI-tjänsten gör det möjligt att bädda in rapporter för dina interna användare på ett säkert sätt. Alternativet för att bädda in i SharePoint Online fungerar med Power BI-webbdelen för SharePoint Online och gör det möjligt att använda enkel inloggning med kontroll över hur rapporten bäddas in. Alternativet för att bädda in fungerar med alla portaler och webbplatser som har stöd för bädda in innehåll med hjälp av en URL eller en iFrame. Oavsett vilket alternativ du väljer säkerställer båda alternativen att alla behörigheter och regler för datasäkerhet tillämpas innan en användare kan se innehållet. Personen som visar rapporten måste ha rätt licens. Mer information om alternativen [Bädda in i SharePoint Online](service-embed-report-spo.md) och [Bädda in](service-embed-secure.md) i Power BI.
+
+Med hjälp av **Publicera på webben** kan du publicera Power BI-rapporter till hela Internet genom att bädda in interaktiva visuella objekt i blogginlägg, webbplatser, sociala medier och andra former av onlinekommunikation på valfri enhet. Alla på Internet kan se dina rapporter och du har ingen kontroll över vem som kan se vad du har publicerat. De behöver inte en licens för Power BI. Du kan bara publicera rapporter som du kan redigera på webben. Du kan inte publicera rapporter på webben om de har delats med dig eller om de finns i en app. Mer om att [publicera på webben](service-publish-to-web.md).
+
+>[!Warning]
+>Använd endast [Publicera på webben](service-publish-to-web.md) för att dela innehåll offentligt, inte för intern delning.
 
 ## <a name="next-steps"></a>Nästa steg
+
 * [Dela instrumentpaneler med kollegor och andra](service-share-dashboards.md)
 * [Skapa och publicera en app i Power BI](service-create-distribute-apps.md)
-* Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
-* Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+* [Bädda in en rapport på en säker portal eller webbplats](service-embed-secure.md)
 
+Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
+
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
