@@ -5,26 +5,26 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 238d068e5083c8f46ac3299faddd4e0872f0654d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2cba79a98400ba517bca8e61fca743bc0024a122
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812639"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288875"
 ---
-# <a name="step-2-get-an-authentication-access-token"></a>Steg 2: hämta en åtkomsttoken för autentisering
+# <a name="step-2-get-an-authentication-access-token"></a>Steg 2: Hämta en autentiseringsåtkomsttoken
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 I **steg 1** av Skicka data till en datauppsättning, [Registrera appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), registrerade du en klientapp i Azure AD. I det här steget, hämtar du en åtkomsttoken för autentisering. Power BI-appar är integrerade med **Azure AD** för att tillhandahålla säker inloggning och auktorisering för din app. Du använder en token för att autentisera till **Azure AD** och få åtkomst till Power BI-resurser.
 
 Så här hämtar du en åtkomsttoken för autentisering.
 
-## <a name="get-an-authentication-access-token"></a>Hämta en åtkomsttoken för autentisering
-> **Obs**: Innan du börjar kontrollerar du att du har följt föregående steg i genomgången [skicka data till en datauppsättning](walkthrough-push-data.md).
+## <a name="get-an-authentication-access-token"></a>Hämta en autentiseringsåtkomsttoken
+> **Obs!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 > 
 > 
 

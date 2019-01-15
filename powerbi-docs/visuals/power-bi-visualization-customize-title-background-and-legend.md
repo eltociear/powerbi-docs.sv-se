@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a219ad94725f8d5423597bd65321f0024f95c1bb
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: cce99c8a0e0908ef901408cbb19397fa098bac38
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546014"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289611"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Anpassa visualiseringens rubrik, bakgrund och förklaring
 I den här självstudien lär du dig några olika sätt att anpassa dina visualiseringar.   Det finns många alternativ för att anpassa dina visualiseringar. Det bästa sättet att lära dig om alla är att utforska fönstret Formatering (välj roller-ikonen).  Om du vill komma igång visar i den här artikeln hur du anpassar en visualiserings rubrik, förklaring och bakgrund.  

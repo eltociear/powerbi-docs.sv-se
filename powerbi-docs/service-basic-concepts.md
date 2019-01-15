@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/18/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: b76a0910a18c3239dc6c35597ebea8b085afcd48
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: 487a67f48913ee774904377956eee85ccbae49fc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983863"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296695"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundläggande begrepp för designers i Power BI-tjänsten
 
@@ -86,13 +86,13 @@ Datauppsättningar kan uppdateras, döpas om, utforskas och tas bort. Du kan anv
 ## <a name="reports"></a>Rapporter
 En Power BI-rapport är en eller flera sidor med visualiseringar som linjediagram, kartor och trädkartor. Visualiseringar kallas även **_visuella objekt_**. Alla visualiseringar i en rapport kommer från en enda datauppsättning. Rapporter kan skapas från grunden i Power BI, importeras med instrumentpaneler som kollegor delar med dig eller skapas när du ansluter till datamängder från Excel, Power BI Desktop, databaser, SaaS-program och [appar](service-get-data.md).  När du ansluter till en Excel-arbetsbok med Power View-blad, skapar Power BI en rapport baserad på dessa blad. Och när du ansluter till ett SaaS-program, importerar Power BI en förskapad rapport.
 
-Det finns två lägen för att visa och interagera med rapporter: [läsvyn och redigeringsvyn](service-reading-view-and-editing-view.md).  Endast den person som skapade rapporten, delägare och personer som beviljats behörighet, har åtkomst till alla funktioner för utforskning, design, version och delning i rapportens **_redigeringsvy_**. De personer som de delar rapporten med kan också utforska och interagera med rapporten i **_läsvyn_**.   
+Det finns två lägen för att visa och interagera med rapporter: [läsvyn och redigeringsvyn](service-reading-view-and-editing-view.md).  Endast den person som skapade rapporten, delägare och personer som beviljats behörighet, har åtkomst till alla funktioner för utforskning, design, version och delning i rapportens **_Redigeringsvy_**. De personer som de delar rapporten med kan också utforska och interagera med rapporten i **_läsvyn_**.   
 
 När du öppnar en arbetsyta, visas de associerade rapporterna under fliken **Rapporter**. Varje listad rapport representerar en eller flera sidor med visualiseringar baserade på endast en av de underliggande datauppsättningarna. Om du vill öppna en rapport markerar du den.
 
 När du öppnar en app, visas en instrumentpanel.  För att komma åt en underliggande rapport väljer du en panel i instrumentpanelen (mer information om dessa senare) som har fästs från en rapport. Tänk på att inte alla paneler är fästa från rapporter, så du kan behöva klicka på några paneler för att hitta en rapport.
 
-Som standard öppnas rapporten i läsvyn.  Du behöver bara välja **Redigera rapport** för att öppna den i redigeringsvyn (om du har nödvändig behörighet).
+Som standard öppnas rapporten i Läsvy.  Du behöver bara välja **Redigera rapport** för att öppna den i redigeringsvyn (om du har nödvändig behörighet).
 
 I exemplet nedan har jag markerat apparbetsytan ”Försäljning och marknadsföring” och klickat på fliken för **Rapporter**.
 
