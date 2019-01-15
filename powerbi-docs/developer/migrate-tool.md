@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: b520eb2758088feadff963f86ddf310ae7a7ed8b
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: cd88270c75b46267217147d8f02fc707eeef26ab
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388650"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290431"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Migreringsverktyg för Power BI Embedded
 Det här migreringsverktyget kan användas för att kopiera dina rapporter från Power BI Embedded Azure-tjänsten (PaaS) till Power BI-tjänsten (SaaS).
@@ -172,7 +172,7 @@ Du kan kontrollera att apparbetsytan har skapats genom att logga in på Power BI
 
 Efter att arbetsytan har skapats kan du gå vidare till fliken **Överför**.
 
-## <a name="step-4-upload"></a>Steg 4: Överför
+## <a name="step-4-upload"></a>Steg 4: Ladda upp
 Använd fliken **Överför** för att överföra rapporter till Power BI-tjänsten. Du kan se en lista över de rapporter som vi hämtade på fliken Hämta tillsammans med målgruppens namn baserat på din migreringsplan.
 
 ![](media/migrate-tool/migrate-tool-upload-tab.png)

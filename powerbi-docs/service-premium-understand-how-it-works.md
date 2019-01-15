@@ -4,17 +4,17 @@ description: Läs mer om minneshantering och -optimering för Power BI Premiumka
 ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: efb0f1dfd340c0defcba8a67e0e46051d0d9be25
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266080"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293866"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Resurshantering och -optimering för Microsoft Power BI Premium-kapacitet
 
@@ -55,7 +55,7 @@ Om en interaktiv fråga utfärdas till en datauppsättning i kapaciteten och det
 
 ### <a name="workloads"></a>Arbetsbelastningar
 
-Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **Dataflöden**. Om de är aktiverade kan de här arbetsbelastningarna påverka minnesanvändningen i din kapacitet. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
+Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **dataflöden**. Om de är aktiverade kan de här arbetsbelastningarna påverka minnesanvändningen i din kapacitet. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Processorresurshantering i premium-kapaciteten
 
