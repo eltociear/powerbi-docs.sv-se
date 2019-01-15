@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2ecd4b8e6295431f520dea61454bbf868bfab254
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: ff61c4d2cc8ec3570e7eee45b7e43ec81f8f7161
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619688"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275121"
 ---
 # <a name="connect-to-a-pdf-file-in-power-bi-desktop-preview"></a>Ansluta till en PDF-fil i Power BI Desktop (förhandsversion)
 I Power BI Desktop kan du ansluta till en **PDF-fil** och använda inkluderade data från filen precis som andra datakällor i Power BI Desktop.

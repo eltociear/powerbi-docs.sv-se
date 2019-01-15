@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
 ms.author: maghan
-ms.openlocfilehash: d1fd42f059f8050662adc80018748d11c1e73e2b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813766"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278017"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Frågor och svar i Power BI Embedded
 Power BI Embedded ger dig ett sätt att ta med frågor och svar i ett program och tillåta att dina användare ställer frågor med naturligt språk och tar emot direkta svar i form av visuell information som diagram eller grafer.

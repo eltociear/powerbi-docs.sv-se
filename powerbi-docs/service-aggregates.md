@@ -5,18 +5,18 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 7a88cc7f210c6119e57a5dcf30920a95e180b85f
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: 8c850298be82e301e18cc773df83329aae829a1a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983725"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282320"
 ---
 # <a name="work-with-aggregates-sum-average-etc-in-the-power-bi-service"></a>Arbeta med aggregeringar (summa, medelvärde osv.) i Power BI-tjänsten
 ## <a name="what-is-an-aggregate"></a>Vad är en aggregering för något?
