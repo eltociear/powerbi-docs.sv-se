@@ -10,18 +10,26 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d098b55367e4d8ff13dc2fd22593af00dffe611f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eab760a3bfbb590a1a6242984aa1be88064409f
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286944"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54323961"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kör Python-skript i Power BI Desktop
 Du kan köra Python-skript direkt i **Power BI Desktop** och importera de resulterande datauppsättningarna i en Power BI Desktop-datamodell.
 
 ## <a name="install-python"></a>Installera Python
 För att köra Python-skript i Power BI Desktop måste du installera **Python** på den lokala datorn. Du kan hämta och installera **Python** kostnadsfritt från flera platser, inklusive den [officiella hämtningssidan för Python](https://www.python.org/) och [Anaconda](https://anaconda.org/anaconda/python/). Den aktuella versionen av Python-skriptning i Power BI Desktop stöder unicode-tecken samt blanksteg (tomma tecken) i installationssökvägen.
+
+### <a name="install-required-python-packages"></a>Installera nödvändiga Python-paket
+Power BI Python-integrationen kräver att två Python-paket är installerade (Pandas och Matplotlib).  Med hjälp av kommandoradsverktyget pip så installerar du följande två paket,
+
+```
+pip install pandas
+pip install matplotlib
+```
 
 ## <a name="run-python-scripts"></a>Kör Python-skript
 Du kan köra Python-skript och skapa en datamodell där du kan skapa rapporter och dela dem på Power BI-tjänsten med några steg i Power BI Desktop.

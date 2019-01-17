@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/21/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1749fc932b3aa6cfb86de87bc9ecd71f78d92af5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6cc26f386a77ad8482d7f1af69fd0fdf2b7de5ac
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281975"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324030"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Vad är Microsoft Power BI Premium?
 
-Microsoft Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation. Det ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också omfattande distribution av innehåll, utan att varje användare behöver köpa en egen Pro-licens. Information om hur du köper Premium finns i [Så här köper du Power BI Premium](service-admin-premium-purchase.md).
+Microsoft Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation. Det ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också omfattande distribution av innehåll, utan att varje användare behöver köpa en egen Pro-licens. Information om hur du köper Premium finns i [Så här köper du Power BI Premium](service-admin-premium-purchase.md).   
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -41,24 +41,21 @@ Följande bild visar förhållandet mellan Premium-kapacitet och delad kapacitet
 
 I delad kapacitet har Power BI mer begränsningar för enskilda användare för att säkerställa en bra kvalitet på upplevelsen för alla användare. Din arbetsyta är som standard i delad kapacitet, inklusive *Min arbetsyta* och apparbetsytor.
 
-I följande tabell visas en översikt över skillnaderna mellan delad kapacitet och Premium-kapacitet.
+Följande tabell visar en översikt över skillnaderna mellan delad kapacitet och Premium-kapacitet:
 
 |  | Delad kapacitet | Power BI Premium-kapacitet |
 | --- | --- | --- |
 | **Uppdateringsintervall** |8/dag |48/dag |
-| **Isolering med dedikerad maskinvara** |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png) |
-| **Företagsdistribution till** _**alla användare**_ | | |
-| Appar och delning |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png) |
-| Inbäddad API och kontroller |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png)<sup>2</sup> |
-| **Publicera Power BI-rapporter lokalt** |![Inte tillgänglig](media/service-premium/not-available.png) |![Tillgänglig](media/service-premium/available.png) |
+| Isolering med dedikerad maskinvara |![Inte tillgänglig](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Företagsdistribution till *alla användare* | | |
+| Appar och delning |![Inte tillgänglig](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Inbäddad API och kontroller |![Inte tillgänglig](media/service-premium/not-available.png) |![](media/service-premium/available.png)<sup>[1](#fnt1)</sup> |
+| Publicera Power BI-rapporter lokalt |![Inte tillgänglig](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
 | | | |
 
-*<sup>1</sup> Mer information finns i avsnittet med [funktioner per licenstyp](service-features-license-type.md).*  
-*<sup>2</sup> Framtida förbättringar för Power BI Premium.*
+<a name="fnt1">1</a> kommande förbättringar för Power BI Premium.
 
-I [Hantera Power BI Premium](service-admin-premium-manage.md) finns mer information om hur du tilldelar arbetsytor till en Premium-kapacitet.
 
-<a name="premiumskus"/>
 
 ### <a name="premium-capacity-nodes"></a>Noder för premiumkapacitet
 
@@ -68,22 +65,19 @@ Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-k
 
 * EM-noder kan endast användas för inbäddade distributioner. EM-noder saknar åtkomst till premiumfunktioner, till exempel att dela appar till användare som inte har någon Power BI Pro-licens.
 
->[!NOTE]
->Länkarna i den här tabellen fungerar endast korrekt för användare som har rollen som global administratör för Office 365. Andra får ett 404-fel.
-
-| Kapacitetsnod | Totalt antal virtuella kärnor<br/>*(Serverdel + klientdel)* | Virtuella kärnor för serverdel | Virtuella kärnor för klientdel | DirectQuery/begränsningar vid liveanslutning | Tillgängligt |
-| --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-kärnor |0,5 v-kärna, 2,5 GB RAM |0.5 virtuella kärnor |3,75 per sekund |Tillgänglig |
-| [EM2 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-kärnor |1 v-kärna, 5 GB RAM |1 v-kärnor |7,5 per sekund |Tillgänglig |
-| [EM3 (månad för månad)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-kärnor |2 v-kärnor, 10 GB RAM |2 v-kärnor | |Tillgänglig |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-kärnor |4 v-kärnor, 25 GB RAM |4 v-kärnor |30 per sekund |Tillgängliga ([månad för månad](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) är också tillgängligt) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-kärnor |8 v-kärnor, 50 GB RAM |8 v-kärnor |60 per sekund |Tillgänglig |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 v-kärnor |16 v-kärnor, 100 GB RAM |16 v-kärnor |120 per sekund |Tillgänglig |
+| Kapacitetsnod | Totalt antal virtuella kärnor<br/>*(Serverdel + klientdel)*  | Virtuella kärnor för serverdel <sup>[1](#fn1)</sup> | Virtuella kärnor för klientdel <sup>[2](#fn2)</sup> | DirectQuery/begränsningar vid liveanslutning | Maximalt antal samtidiga uppdateringar |  Tillgängligt
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| EM1 (månad för månad) |1 v-kärnor |0,5 v-kärna, 2,5 GB RAM |0.5 virtuella kärnor |3,75 per sekund |  1 | Tillgänglig |
+| EM2 (månad för månad) |2 v-kärnor |1 v-kärna, 5 GB RAM |1 v-kärnor |7,5 per sekund |  2 | Tillgänglig |
+| EM3 (månad för månad) |4 v-kärnor |2 v-kärnor, 10 GB RAM |2 v-kärnor | | 3 |  Tillgänglig |
+| P1 |8 v-kärnor |4 v-kärnor, 25 GB RAM |4 v-kärnor |30 per sekund | 6 | Tillgängliga (månad för månad är också tillgängligt) |
+| P2 |16 v-kärnor |8 v-kärnor, 50 GB RAM |8 v-kärnor |60 per sekund | 12 | Tillgänglig |
+| P3 |32 v-kärnor |16 v-kärnor, 100 GB RAM |16 v-kärnor |120 per sekund | 24 | Tillgänglig |
 | | | | | | | |
 
-* Klientdelens virtuella kärnor ansvarar för webbtjänsten, instrumentpanel och hantering av rapportdokument, hantering av åtkomsträttigheter och schemaläggning av API:er, ladda upp och hämta filer, och vanligen för allt som rör användarupplevelsen.
+<a name="fn1">1</a>: Klientdelens virtuella kärnor ansvarar för webbtjänsten. Till exempel instrumentpanel och rapporthantering, hantering av åtkomsträttigheter, schemaläggning, API:er, överföringar och hämtningar och generellt sett allt som rör användarupplevelsen. 
 
-* Serverdelens virtuella kärnor ansvarar för grovjobbet: frågebearbetning, hantering av cache, köra R-servrar, datauppdatering, bearbetning av naturligt språk, flöden i realtid och återgivning av rapporter och bilder från serversidan. Med serverdelens virtuella kärnor reserveras dessutom en viss mängd minne. Att ha tillräckligt med minne blir särskilt viktigt när du hanterar stora datamodeller eller ett stort antal aktiva datauppsättningar.
+<a name="fn2">2</a>: Serverdelens virtuella kärnor ansvarar för grovjobbet: frågebearbetning, cachehantering, köra R-servrar, datauppdatering, bearbetning av naturligt språk, flöden i realtid och återgivning av rapporter och bilder från serversidan. Med serverdelens virtuella kärnor reserveras dessutom en viss mängd minne. Att ha tillräckligt med minne blir särskilt viktigt när du hanterar stora datamodeller eller ett stort antal aktiva datauppsättningar.
 
 ## <a name="workloads-in-premium-capacity"></a>Arbetsbelastningar i Premium-kapacitet
 
@@ -112,11 +106,9 @@ I följande tabeller visas standard- och minimivärden för minnet, baserat på 
 
 ### <a name="considerations-for-paginated-reports"></a>Överväganden för sidnumrerade rapporter
 
-Om du använder arbetsbelastningen för sidnumrerade rapporter bör du ha följande i åtanke.
+Om du använder arbetsbelastningen sidnumrerade rapporter så bör du ha i åtanke att sidnumrerade rapporter låter dig köra din egen kod vid rapportåtergivning (till exempel ändra textfärg dynamiskt baserat på innehåll). Det innebär att vi skyddar Power BI Premium-kapaciteten genom att köra sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Vi tilldelar det maximala minne som du anger till det här området, oavsett om arbetsbelastningen är aktiv eller inte. Om du använder Power BI-rapporter eller dataflöden i samma kapacitet, bör du ange ett så lågt minne för de sidnumrerade rapporterna att det inte påverkar andra arbetsbelastningar negativt.
 
-* **Minnesallokering i sidnumrerade rapporter**: Med sidnumrerade rapporter kan du köra din egen kod vid rapportåtergivning (till exempel ändra textfärg dynamiskt baserat på innehåll). Det innebär att vi skyddar Power BI Premium-kapaciteten genom att köra sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Vi tilldelar det maximala minne som du anger till det här området, oavsett om arbetsbelastningen är aktiv eller inte. Om du använder Power BI-rapporter eller dataflöden i samma kapacitet, bör du ange ett så lågt minne för de sidnumrerade rapporterna att det inte påverkar andra arbetsbelastningar negativt.
-
-* **Sidnumrerade rapporter är inte tillgängliga**: I sällsynta fall kan arbetsbelastningen för sidnumrerade rapporter bli otillgänglig. I det här fallet visar arbetsbelastningen ett feltillstånd i administratörsportalen och användarna uppnår tidsgränser vid rapportåtergivning. För att lösa det här problemet kan du inaktivera arbetsbelastningen och sedan aktivera den igen.
+I sällsynta fall kan arbetsbelastningen för sidnumrerade rapporter bli otillgänglig. I det här fallet visar arbetsbelastningen ett feltillstånd i administratörsportalen och användarna uppnår tidsgränser vid rapportåtergivning. För att lösa det här problemet kan du inaktivera arbetsbelastningen och sedan aktivera den igen.
 
 ## <a name="power-bi-report-server"></a>Power BI-rapportserver
 
@@ -127,8 +119,7 @@ Med Power BI Premium ingår också möjligheten att köra Power BI-rapportserver
 [Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)
 [Så här köper du Power BI Premium](service-admin-premium-purchase.md)
 [Hantera Power BI Premium](service-admin-premium-manage.md)
-[White paper om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Planera en företagsdistribution för Power BI (white paper)](https://aka.ms/pbienterprisedeploy)
-[Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)
+[Vitbok om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
+[Vitbok om att planera en företagsdistribution för Power BI Enterprise](https://aka.ms/pbienterprisedeploy)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
