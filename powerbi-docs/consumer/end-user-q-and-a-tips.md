@@ -6,23 +6,23 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 52ce1d0eaf9b99c2717b733592c46d65d2209083
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 42460930c3e5406c9a3822c75084d641fd9255bf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280453"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292348"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tips för att ställa frågor i Frågor och svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
 Den här listan över nyckelord på den här sidan är inte fullständig.  Det bästa sättet att se om Power BI identifierar ett nyckelord är att testa att skriva det i frågerutan.  Om en term eller ett ord har tonats ned kan inte Power BI identifiera den/det.
 
-Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har varit**, **har**, **hade**, **kommer att ha**, **gör**, **gjorde**, **gjort**.  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singularis och pluralis. 
+Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har varit**, **har**, **hade**, **kommer att ha**, **gör**, **gjorde**, **gjort**********.  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singularis och pluralis. 
 
 > [!NOTE]
 > Frågor och svar finns också tillgängligt i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile/mobile-apps-ios-qna.md).
