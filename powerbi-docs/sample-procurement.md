@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3b0c6fcc72e5b2f95b06f1184341298d449bf57e
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717158"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287358"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på anskaffningsanalys för Power BI: Ta en rundtur
 
@@ -71,10 +71,10 @@ Börja med att söka trender i utgifter efter kategori och plats.
 
 Lägg märke till några saker:
 
-* I linjediagrammet **Summa faktura per månad och kategori**: kategorin **Direkt** kategorin har ganska konsekventa utgifter **Logistik** har en topp i december och  **Övrigt** har en topp i februari.
-* På kartan **Summa faktura efter land/Region**: de flesta av våra utgifter är i USA.
-* I stapeldiagrammet **Summa faktura efter underkategori** : **maskinvara** och **indirekta varor och tjänster** är de största utgiftskategorierna.
-* I det liggande diagrammet Total faktura enligt nivå: Merparten av vår verksamhet bedrivs med våra leverantörer på nivå 1 (topp 10). Detta hjälper oss att bättre hantera våra leverantörsrelationer.
+* I linjediagrammet **Total faktura per månad och kategori**: Kategorin **Direkt** har ganska konsekventa utgifter **Logistik** har en topp i december och  **Övrigt** har en topp i februari.
+* I kartan **Totalfaktura efter land/region**: De flesta av våra utgifter är i USA.
+* I stapeldiagrammet **Totalfaktura efter underkategori**: **Maskinvara** och **Indirekta varor och tjänster** är de största utgiftskategorierna.
+* I stapeldiagrammet totalfaktura efter nivå: De flesta av våra affärer är med våra leverantörer på nivå 1 (viktigaste 10). Detta hjälper oss att bättre hantera våra leverantörsrelationer.
 
 ## <a name="spending-in-mexico"></a>Utgifter i Mexiko
 Låt oss se på utgiftsområden i Mexiko.
@@ -139,5 +139,5 @@ Välj **Redigera rapporten** i det övre vänstra hörnet och utforska i rediger
 
 Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Fast du sparar dem kan du alltid gå till **Hämta data** för en ny kopia av det här exemplet.
 
-## <a name="next-steps-connect-to-your-data"></a>Nästa steg: anslut till dina data
+## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, samt rapporter kan ge insikter om upphandlingsdata. Nu är det din tur &#151; anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).

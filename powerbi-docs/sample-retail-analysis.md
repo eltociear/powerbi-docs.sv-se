@@ -1,23 +1,23 @@
 ---
-title: 'Exempel på detaljhandelsanalys för Power BI: ta en rundtur'
-description: 'Exempel på detaljhandelsanalys för Power BI: ta en rundtur'
+title: 'Exempel på detaljhandelsanalys för Power BI: Ta en rundtur'
+description: 'Exempel på detaljhandelsanalys för Power BI: Ta en rundtur'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c07c33cb6ae859c9cf202ae67119dbfb8dd45e26
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: e4cb314af1522c71de85e4576572acbb1d2e88b3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717687"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291474"
 ---
-# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: ta en rundtur
+# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: Ta en rundtur
 
 Det här branschexemplets instrumentpanel och underliggande rapport analyserar försäljningsdata för sålda artiklar över flera butiker och distrikt. Måtten jämför årets resultat med förra årets inom följande områden: försäljning, enheter, bruttomarginal och avvikelse, samt lagringsanalys. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com)) som har anonymiserats.
 
@@ -86,7 +86,7 @@ Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det hä
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Granska en panel som skapats med Frågor och svar i Power BI
 Låt oss bli lite mer specifika.
 
-1. Lägg till ”Detta års försäljning **per distrikt**” i frågan. Observera resultatet: Svaret placeras automatiskt i ett stapeldiagram och ger förslag på andra fraser:
+1. Lägg till ”Detta års försäljning **per distrikt**” i frågan. Se resultatet: Svaret placeras automatiskt i ett stapeldiagram och ger förslag på andra fraser:
 
    ![](media/sample-retail-analysis/retail8.png)
 2. Ändra nu frågan till ”Årets försäljning **per postnummer och kedja**”.

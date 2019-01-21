@@ -5,16 +5,16 @@ author: jtarquino
 manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: c80ded7a21eb8110467a2335253fa1a68942cc2c
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: edf953f2512550660fd914d2fe54c28dcd01fa24
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101541"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292071"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -24,7 +24,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 ## <a name="august-2018"></a>Augusti 2018
 - **Power BI-rapportserver**
-    - *Version 1.3.6816.37243 (build-nr 15.0.2.557), publicerad 30 augusti, 2018*
+    - *Version 1.3.6816.37243 (build-nr 15.0.2.557), publicerad: 30 augusti 2018*
         - Felkorrigeringar
             - Ett problem åtgärdades när servern uppgraderades från tidigare versioner av PBI Report Server där en bindningsomdirigering inte uppdaterades, kunderna såg detta:      
             *`
@@ -63,7 +63,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
                 - Trendrader uppdateras när data uppdateras
             - Allmänna stabilitetsförbättringar
 
-    - *Version 1.2.6660.39920 (build-nr 15.0.2.389), publicerad: 28 mars 2018*
+    - *Version 1.2.6660.39920 (build-nr 15.0.2.389), publicerad: 28 mars 28 2018*
         - Felkorrigeringar
             - För Power BI-rapporter (PBIX), fungerar korrigering för Exportera data inte från Power BI-visualiseringar
             - För Power BI-rapporter (PBIX), fungerar korrigeringar för URL-filter inte
@@ -88,30 +88,30 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 ## <a name="october-2017"></a>Oktober 2017
 
 - **Power BI-rapportserver**
-    - *Version 1.1.6582.41691 (build-nr 14.0.600.442), publicerat: 10 januari 2018*
+    - *Version 1.1.6582.41691 (build-nr 14.0.600.442), publicerad: 10 januari 2018*
         - Säkerhetsuppdateringar
         - Felkorrigeringar
             - Korrigering för Model.GetParameters som returnerar 400
             - Korrigering för att ställa in delad datauppsättning till befintliga sidnumrerade rapporter (RDL)
             - Korrigering för ExecutionNotFoundException när du exporterar en rapport med olika parametervärden till PDF
 
-    - *Version 1.1.6551.5155 (Build 14.0.600.438), Utgiven: 11 december 2017*
+    - *Version 1.1.6551.5155 (build-nr 14.0.600.438), publicerad: 11 december 2017*
         - Felkorrigeringar
             - Det gick inte att spara data efter uppdatering för vissa Power BI Desktop-rapporter.
 
-    - *Version 1.1.6530.30789 (build-nr 14.0.600.437), publicerat: 17 november 2017*
+    - *Version 1.1.6530.30789 (build-nr 14.0.600.437), publicerad: 17 november 2017*
         - Felkorrigeringar
             - Korrigering för grundläggande autentisering 
             - Korrigering för veckodagar som inte kunde väljas på schemasidan för prenumerationer, cacheuppdateringsplaner och ögonblicksbilder av historik i portalen
             - Korrigering för rapporter med sidbrytning. När uttryck i textrutan med KanFörstoras-egenskapen ställdes in på ”falskt” resulterade detta i att värdena inte visad färger och teckensnitt korrekt
             - Korrigering för Power BI-rapporter (PBIX). Då förklaringar lades till för linjediagram återgavs ett tomt visuellt objekt
 
-    - *Version 1.1.6514.9163 (build-nr 14.0.600.434), publicerat: 1 november 2017*
+    - *Version 1.1.6514.9163 (build-nr 14.0.600.434), publicerad: 1 november 2017*
         - Felkorrigeringar
             - Korrigering för problem med överföringstillförlitligheten för PBIX-rapporter större än 500 MB
             - Korrigering av datainläsningsproblem för PBIX-rapporter större än 1 GB
 
-    - *Version 1.1.6513.3500 (build-nr 14.0.600.433), publicerat: 31 oktober 2017*
+    - *Version 1.1.6513.3500 (build-nr 14.0.600.433), publicerad: 31 oktober 2017*
         - Funktioner
             - Stöd för inbäddad datamodell
             - Excel-arbetsboksvisning (med Office Online Server-integration aktiverad)
@@ -130,38 +130,38 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
     - *Version: 2.51.4885.2501 (oktober 2017), publicerad: 10 januari 2018*
         - Säkerhetsuppdateringar
 
-    - *Version: 2.51.4885.1423 (oktober 2017) publicerat: 17 november 2017*
+    - *Version: 2.51.4885.1423 (oktober 2017), publicerad: 17 november 2017*
         - Felkorrigeringar
             - Korrigering för 32-bitars Power BI Desktop som inte kunde köras på x86 OS
             - Korrigering för Power BI-rapporter för att visa stödlinjer för x-axeln
             - Andra mindre felkorrigeringar
 
-    - *Version: 2.51.4885.1041 (oktober 2017) publicerat: 31 oktober 2017*
+    - *Version: 2.51.4885.1041 (oktober 2017), publicerad: 31 oktober 2017*
         - Funktioner
             - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (oktober 2017)
 
 ## <a name="june-2017"></a>Juni 2017
 
 - **Power BI-rapportserver**
-    - *Build-nr 14.0.600.309, publicerat: 10 januari 2018*
+    - *Build-nr 14.0.600.309, publicerad: 10 januari 2018*
         - Säkerhetsuppdateringar
 
-    - *Build-nr 14.0.600.305, publicerat: 19 september 2017*  
+    - *Build-nr 14.0.600.305, publicerad: 19 september 2017*  
         - Felkorrigeringar
             - Uppdatering till senaste [webbkontrollen för Bing Maps](https://msdn.microsoft.com/library/mt712542.aspx)
 
-    - *Build-nr 14.0.600.301, publicerat: 11 juli 2017*
+    - *Build-nr 14.0.600.301, publicerad: 11 juli 2017*
         - Felkorrigeringar
             - Taggen `{{UserId}}` motsvarar de lagrade autentiseringsuppgifterna istället för användaren som kör rapporten i Power BI-rapporter
             - Vissa bilder kan inte återges i Power BI-rapportserverns rapporter
             - Det går inte att ändra namnet på en Power BI-rapport i Power BI-rapportservern
             - Det gick inte att läsa in anpassade visuella objekt i Power BI- mobilappen (det krävs ominstallation av mobilappen för att rensa det lokala cacheminnet)
 
-    - *Build-nr 14.0.600.271, publicerat: 12 juni 2017*
+    - *Build-nr 14.0.600.271, publicerad: 12 juni 2017*
         - Ursprunglig utgåva av Power BI-rapportservern
 
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
-    - *Version: 2.47.4766.4901 (uni 2017), publicerad: 10 januari 2018*
+    - *Version: 2.47.4766.4901 (juni 2017), publicerad: 10 januari 2018*
         - Säkerhetsuppdateringar
 
 ## <a name="next-steps"></a>Nästa steg

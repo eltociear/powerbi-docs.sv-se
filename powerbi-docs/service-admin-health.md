@@ -5,21 +5,21 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 101c49a67cabc41251fc6be5c84a26b54a3de46d
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: afb579c3163fac5da8b3a14f2f2b974d64213098
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973199"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296469"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Spåra Power BI-tjänstens hälsa i Office 365
 
-Administrationscenter för Office 365 innehåller viktiga verktyg för Power BI-administratörer, inklusive aktuell och historisk information om tjänstens hälsa. Om du vill komma åt den här informationen så måste du ha någon av följande roller: Tjänstadministratör för Power BI eller Global administratör för Office 365. Mer information om roller finns i [Administratörsroller relaterade till Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+Administrationscenter för Office 365 innehåller viktiga verktyg för Power BI-administratörer, inklusive aktuell och historisk information om tjänstens hälsa. Om du vill komma åt den här informationen så måste du vara i någon av följande roller: Power BI-tjänstadministratör eller Global administratör för Office 365. Mer information om roller finns i [Administratörsroller relaterade till Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Logga in på [Administrationscenter för Office 365](https://portal.office.com/adminportal).
 

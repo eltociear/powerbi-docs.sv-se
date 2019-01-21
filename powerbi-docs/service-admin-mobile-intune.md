@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 428ea77de2151f4ec3417f62819b3d6481c17ae2
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 65c2de2d505866b3b00a88eaaa309d7c61a7625d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909696"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296235"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfigurera mobilappar med Microsoft Intune
 
@@ -96,7 +96,7 @@ Du kan skapa programmet eller principen först. Den ordning som de läggs till s
 
 1. Välj **Överför**.
 
-1. Om du inte ser appen i listan bör du förnya sidan: Gå till **Översikt** sedan tillbaka till **Appar**.
+1. Om du inte ser appen i listan bör du uppdatera sidan: Gå till **Översikt** och därefter tillbaka till **Appar**.
 
     ![Fliken appar](media/service-admin-mobile-intune/intune-add-software-ios2.png)
 
@@ -112,7 +112,7 @@ Du kan skapa programmet eller principen först. Den ordning som de läggs till s
 
 1. Välj **Överför**.
 
-1. Om du inte ser appen i listan bör du förnya sidan: Gå till **Översikt** sedan tillbaka till **Appar**.
+1. Om du inte ser appen i listan bör du uppdatera sidan: Gå till **Översikt** och därefter tillbaka till **Appar**.
 
     ![Fliken appar](media/service-admin-mobile-intune/intune-add-software-android2.png)
 

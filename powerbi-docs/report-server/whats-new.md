@@ -6,15 +6,15 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101265"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292463"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -120,7 +120,7 @@ SAP HANA SSO Direct Query-stöd med Kerberos är nu tillgängligt för Power BI-
 - [Omräkning av utsnitt](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
 - [Knappbeskrivningar för rapportsida](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 - [Ny DAX-funktion: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Mät visning av detaljerad information](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
@@ -168,7 +168,7 @@ Du kanske vill att läsarna ska ha åtkomst till din rapport, men vissa av sidor
 Du kan använda bokmärken för att skapa en berättelse med data i din rapport.
 
 - [Korsmarkering för bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bokmärken sparar och visar det korsmarkerade tillståndet för rapportsidan vid tidpunkten då du skapade bokmärket.
-- [Ökad flexiblitet för bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bokmärken återspeglar egenskaperna du anger i din rapport, och påverkar endast de visuella objekt som du väljer.
+- [Ökad flexibilitet för bokmärken](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bokmärken återspeglar egenskaperna som du anger i din rapport och påverkar endast de visuella objekt som du väljer.
 
 #### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Välja flera datapunkter över flera diagram](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
@@ -209,7 +209,7 @@ När du visar mer detaljerad information i en viss kategori i ett visuellt objek
 - [Sök formaterings- och analysfönster](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Rutan fältegenskaper och fältbeskrivningar](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analys
 
 - [UTCNOW() och UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Markera anpassad datumtabell](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
@@ -266,13 +266,13 @@ Den här versionen stöder utskalning. Använd en belastningsutjämnare och ange
 
 Administratörer kan ange följande egenskaper i de avancerade SSMS-egenskaperna för servergruppen:
 
-* EnableCustomVisuals: True/False
-* EnablePowerBIReportEmbeddedModels: True/False
-* EnablePowerBIReportExportData: True/False
-* MaxFileSizeMb: Standardvärdet är nu 1 000
+* EnableCustomVisuals: Sant/falskt
+* EnablePowerBIReportEmbeddedModels: Sant/falskt
+* EnablePowerBIReportExportData: Sant/falskt
+* MaxFileSizeMb: Standard är nu 1 000
 * ModelCleanupCycleMinutes: Hur ofta den kontrollerar att modeller tas bort från minnet
-* ModelExpirationMinutes: Hur lång tid det tar innan modellen upphör att gälla och tas bort, baserat på senaste gången den användes
-* ScheduleRefreshTimeoutMinutes: Hur lång tid datauppdateringen kan ta för en modell. Som standard är detta två timmar.  Det finns ingen fast övre gräns.
+* ModelExpirationMinutes: Hur lång tid det tar innan modellen upphör att gälla och tas bort, baserat på senaste användning
+* ScheduleRefreshTimeoutMinutes: Hur länge datauppdateringen kan ta för en modell. Som standard är detta två timmar.  Det finns ingen fast övre gräns.
 
 **Konfigurationsfilen rsreportserver.config**
 

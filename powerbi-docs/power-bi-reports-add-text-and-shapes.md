@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 617809e072a492fb9887930e58bafd89ca8201e8
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 937e15f5cd56f7c720afa945598f9fc1641468f7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544980"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295545"
 ---
 # <a name="static-content-in-power-bi-reports"></a>Statiskt innehåll i Power BI-rapporter
 Textrutor och former kan läggas till i rapporter med Power BI-tjänsten och Power BI Desktop. I båda fallen måste du ha redigeringsbehörigheter för rapporten. Om en rapport har delats med dig i Power BI-tjänsten, har du inte redigeringsbehörigheter. 
@@ -58,7 +58,7 @@ Titta när Will använder Power BI Desktop för att [lägga till statiska avbild
    ![](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
 3. Markera det grå området längst upp och dra i det för att placera ut figuren. Om du vill ändra storlek på figuren väljer du något av handtagen i kanten och drar i det. Precis som med textrutan kan du också skapa en exakt storlek och placering för en form.
 
-> **Obs**! Former kan inte fästas på en instrumentpanel, utom som en av visualiseringarna när du [fäster en live-sida](service-dashboard-pin-live-tile-from-report.md). 
+> **Obs!** Former kan inte fästas till en instrumentpanel förutom som ett visuellt objekt när du [fäster en live-sida](service-dashboard-pin-live-tile-from-report.md). 
 > 
 > 
 

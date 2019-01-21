@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a27e192c5ccc1fb3a7af9bafbc9c4fd14ccabf4c
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: a48ad26b9da5d5dba9fa04ab74301da7e1265d0b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900116"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292087"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -79,11 +79,11 @@ Följande frågor (och svar) hjälper dig att snabbt få information som du beh�
 
 **Fråga:** Varför kan jag inte ansluta till ett specifikt innehållspaket?
 
-**Svar:** måste du kontrollera att prenumerationen har aktiverats innan du ansluter till innehållspaketet.
+**Svar:** Du måste kontrollera att prenumerationen har aktiverats innan du ansluter till innehållspaketet.
 
-**Fråga:** jag är intresserad av **Power BI** för min myndighetsorganisation. Hur kommer jag igång?
+**Fråga:** Jag är intresserad av **Power BI** för min myndighetsorganisation. Hur kommer jag igång?
 
-**Svar:** Registrering (ofta kallat *integration*) kan variera beroende på ditt befintliga licens och prenumeration. Mer information finns i artikeln [Registrera dig för Power BI US Government](service-govus-signup.md).
+**Svar:** Registrering (ofta kallat *integration*) kan variera beroende på din befintliga licens och prenumeration. Mer information finns i artikeln [Registrera dig för Power BI US Government](service-govus-signup.md).
 
 **Fråga:** Skiljer sig URL:en för att ansluta till **Power BI** för amerikanska myndigheter Government från URL:en för den kommersiella versionen av **Power BI**?
 
@@ -95,7 +95,7 @@ Följande frågor (och svar) hjälper dig att snabbt få information som du beh�
 
 **Fråga:** Mitt konto är etablerat i mer än ett nationellt moln. Hur väljer jag vilket moln jag ska ansluta till när jag använder **Power BI Desktop**?
 
-**Svar:** Från och med **Power BI Desktop**-versionen för juli 2018 kan du välja vilket moln du vill använda när du loggar in till **Power BI Desktop**.
+**Svar:** Från och med **Power BI Desktop**-versionen från juli 2018 kan du välja vilket moln du vill använda när du loggar in till **Power BI Desktop**.
 
 
 ## <a name="next-steps"></a>Nästa steg

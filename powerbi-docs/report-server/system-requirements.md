@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507916"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292974"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
 I den här artikeln beskrivs minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
@@ -25,9 +25,9 @@ I den här artikeln beskrivs minimikraven för maskin- och programvara för inst
 | --- | --- |
 | .NET Framework |4.6<br><br>Du kan manuellt installera .NET Framework från [Microsoft .NET Framework 4.6 (webbinstallationsprogram) för Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Mer information, rekommendationer och vägledning för .NET Framework 4.6 finns i [.NET Framework Deployment Guide for Developer (.NET Framework-distributionsguiden för utvecklare)](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 och Windows Server 2012 R2 kräver [KB2919355](http://support.microsoft.com/kb/2919355) innan du installerar .NET Framework 4.6. |
 | Hårddisk |Power BI-rapportservern kräver minst 1 GB ledigt utrymme på hårddisken.<br><br>Ytterligare utrymme krävs på den databasserver som är värd för rapportserverdatabasen. |
-| Minne |**Minst:** 1 GB<br/><br/> **Rekommenderat:** Minst 4 GB |
-| Processorhastighet |**Minst:** x64-processor: 1,4 GHz<br/><br/> **Rekommenderat:** 2,0 GHz eller snabbare |
-| Processortyp |x64.processor: AMD Opteron, AMD Athlon 64, Intel Xeon med Intel EM64T-stöd, Intel Pentium IV med EM64T-stöd |
+| Minne |**Minsta:** 1 GB<br/><br/> **Rekommenderas:** Minst 4 GB |
+| Processorhastighet |**Minst:** x64-processor: 1,4 GHz<br/><br/> **Rekommenderas:** 2,0 GHz eller snabbare |
+| Processortyp |x64-processor: AMD Opteron, AMD Athlon 64, Intel Xeon med Intel EM64T-stöd, Intel Pentium IV med EM64T-stöd |
 | Operativsystem |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]

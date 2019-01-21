@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 09bf82d86301967fb46b8724822e183a21008b92
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452739"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289933"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Redigera språkschemat för Frågor och svar och lägga till fraser i Power BI Desktop 
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Ännu mer kraftfullt är det när dina data svarar, vilket är precis vad du kan åstadkomma med Frågor och svar i Power BI. När du ställer en fråga till Frågor och svar i Power BI, gör funktionen vad den kan för att svara korrekt. 
@@ -49,7 +49,7 @@ Språkscheman sparas i YAML-format. Det här formatet är relaterat till det pop
 Vi rekommenderar att du använder Visual Studio Code när du redigerar YAML-filer för språkscheman. Visual Studio Code har inbyggt stöd för YAML-filer och kan utökas för att specifikt validera Power BI-språkschemaformatet.
 1. Installera [Visual Studio Code](https://code.visualstudio.com/).    
 
-2. Välj exempelspråkschemat som du sparade tidigare: [YAML-fil](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
+2. Välj exempelspråkschemat som du sparade tidigare: [YAML file](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
 4. Välj **Visual Studio Code** och **Always use this app to open .yaml files** (Använd alltid den här appen för att öppna YAML-filer).
 
     ![Hur vill du öppna den här filen?](media/power-bi-q-and-a-linguistic-schema/power-bi-visual-code.png)
@@ -78,7 +78,7 @@ Frågor och svar använder den här informationen tillsammans med eventuella fö
 
 
 ## <a name="edit-a-linguistic-schema"></a>Redigera ett språkschema
-När du exporterar språkschemat från Power BI Desktop genereras merparten eller allt innehåll i filen automatiskt av motorn för Frågor och svar. Dessa entiteter, ord (synonymer), relationer och fraser som genereras tilldelas taggen **Tillstånd: Genererad** och tas främst med i filen i informationssyfte, men kan vara en bra utgångspunkt för dina egna ändringar. 
+När du exporterar språkschemat från Power BI Desktop genereras merparten eller allt innehåll i filen automatiskt av motorn för Frågor och svar. Dessa genererade entiteter, ord (synonymer), relationer och fraser betecknas med taggen **Tillstånd: Genererad** och ingår huvudsakligen i filen i informationssyfte, men kan vara en bra utgångspunkt för dina egna ändringar. 
 
 > [!NOTE]
 > YAML-exempelfilen som ingår i den här självstudien innehåller inte taggarna **Tillstånd: Genererad** eller **Tillstånd: Borttagen** eftersom filen har skapats specifikt för den här självstudien. Om du vill visa dessa taggar öppnar du en oredigerad PBIX-fil i vyn Relationer och exporterar språkschemat.
@@ -86,7 +86,7 @@ När du exporterar språkschemat från Power BI Desktop genereras merparten elle
 ![YAML som visar Tillstånd: Genererad](media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
 
 
-När du importerar tillbaka filen för språkschemat till Power BI Desktop ignoreras (för att senare återskapas) allt som är märkt med **Tillstånd: Genererad**. Om du vill göra ändringar i genererat innehåll måste du därför även ta bort taggen **Tillstånd: Genererad** för innehållet. Om du vill ta bort genererat innehåll måste du på motsvarande sätt ändra taggen **Tillstånd: Genererad** till **Tillstånd: Borttagen** så att innehållet inte återskapas när du importerar språkschemafilen.
+När du importerar filen med språkschemat tillbaka till Power BI Desktop ignoreras allt som är markerat med **Tillstånd: Genererad** (och återskapas senare), så om du vill göra en ändring i en del genererat innehåll ska du se till att ta bort motsvarande tagg **Tillstånd: Genererad** också. Om du vill ta bort visst genererat innehåll behöver du ändra taggen **Tillstånd: Genererad** till **Tillstånd: Borttagen** på samma sätt, så att den inte återskapas när du importerar filen med språkschemat.
 
 1. Öppna datauppsättningen i *vyn Relationer* i Power BI Desktop. 
 2. Välj fliken **Modellering** och välj **Exportera språkschema**.

@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: e559cb3ed460c8d81406ae8c8b01fe33eceaf461
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266057"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293927"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri
 De här självstudierna har skrivits utifrån en person som skapar en ArcGIS-karta. När en skapare delar en ArcGIS-karta med en kollega, kan kollegan visa och interagera med kartan men inte spara några ändringar. Mer information om hur du visar en ArcGIS-karta finns i [Interagera med ArcGIS-kartor](visuals/power-bi-visualizations-arcgis.md).
@@ -112,7 +112,7 @@ Så här gör du för att få åtkomst till formateringsfunktionerna i **ArcGIS 
 
 ## <a name="features-overview"></a>Översikt över funktioner
 ### <a name="base-maps"></a>Grundläggande kartor
-Fyra grundläggande kartor tillhandahålls: Dark Gray Canvas (Mörkgrå arbetsyta), Light Gray Canvas (Ljusgrå arbetsyta), OpenStreetMap och Gator.  Gator är Arcgis grundläggande standardkarta.
+Fyra grundläggande kartor tillhandahålls: Dark Gray Canvas (Mörkgrå arbetsyta), Light Gray Canvas (Ljusgrå arbetsyta), OpenStreetMap och Streets (Gator).  Gator är Arcgis grundläggande standardkarta.
 
 Om du vill använda en grundläggande karta väljer du den i åtgärdsfönstret.
 
@@ -207,7 +207,7 @@ ArcGIS Online gör det möjligt för organisationer att publicera offentliga web
 2. Ange sökorden och välj sedan ett kartskikt. I det här exemplet har vi valt amerikanska kongressdistrikt.
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
-3. Om du vill se ytterligare information, väljer du ett skuggat område för att öppna *Select from reference layer (Välj från referensskikt)*. Använd verktyget för val av referensskikt för att markera gränser eller objekt på referensskiktet.
+3. Om du vill se information väljer du ett skuggat område för att öppna *Välj från referensskikt*: Använd verktyget för val av referensskikt för att markera gränser eller objekt på referensskiktet.
 
 <br/>
 
@@ -325,7 +325,7 @@ ArcGIS Maps för Power BI är tillgängligt för alla Power BI-användare utan e
 
 **Jag får ett felmeddelande i Power BI Desktop om att mitt cacheminne är fullt.**
 
-Detta är ett programfel som vi håller på att åtgärda.  Under tiden kan du, för att rensa cacheminnet, försöka ta bort filer på den här platsen: C:\Användare\\AppData\Lokal\Microsoft\Power BI Desktop\CEF och sedan starta om Power BI.
+Detta är ett programfel som vi håller på att åtgärda.  Under tiden ska du försöka ta bort filer på den här platsen för att rensa cacheminnet: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF och starta sedan om Power BI.
 
 **Stöder ArcGIS Maps för Power BI Esris Shapefiles?**
 

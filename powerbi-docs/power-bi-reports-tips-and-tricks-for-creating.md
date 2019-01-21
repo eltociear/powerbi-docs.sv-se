@@ -5,17 +5,17 @@ author: davidi
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 2093800f10484a24eb4db9f77f45468ae4b9b4c3
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829845"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290508"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips om hur du skapar rapporter i Power BI Desktop och Power BI-tjänsten
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop, Power BI-tjänsten *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad.
@@ -30,7 +30,7 @@ Du kan få ytterligare information från [Power Query Resource Center](https://s
 Du kan också visa [Formelreferensen](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ### <a name="data-types-in-query-editor"></a>Datatyper i frågeredigeraren
-När du använder frågeredigeraren i Power BI Desktop för att läsa in data gör vi en uppskattning av den bästa datatypidentifieringen.  Datatypinställningarna för kolumner sparas inte allt när du använder formler. Du bör kontrollera att datatypen för kolumnerna är korrekta när du har gjort följande åtgärder: Läs in data från början i fliken fråga, Första raden som rubrik, Lägg till kolumn, Gruppera efter, Sammanfoga, Lägg till och innan du läser in data för första gången.
+När du använder frågeredigeraren i Power BI Desktop för att läsa in data gör vi en uppskattning av den bästa datatypidentifieringen.  Datatypinställningarna för kolumner sparas inte allt när du använder formler. Du bör kontrollera att datatypen för kolumnerna är korrekt när du har vidtagit följande åtgärder:  Läs in data initialt till frågefliken, Första raden som rubrik, Lägg till kolumn, Gruppera efter, Sammanfoga, Lägg till och innan du läser in data för första gången.
 
 Det är viktigt att komma ihåg att kursiv stil i datarutnätet inte betyder att datatypen är rätt inställd, det betyder bara att data inte anses vara text.
 
@@ -167,7 +167,7 @@ DAX är formelspråket för beräkningar i Power BI Desktop.  Det är optimerat 
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI-tjänsten *och* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Läs white paper: [Principerna för att utforma Power BI-rapporter](visuals/power-bi-visualization-best-practices.md)
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Läs vitboken: [Principer för att utforma Power BI-rapporter](visuals/power-bi-visualization-best-practices.md)
 I det här dokumentet redovisas bästa praxis för att utforma rapporter i Power BI. Vi börjar med planeringen och beskriver designprinciper som du kan använda i dina rapporter och för de sidor och enskilda visuella objekt som utgör rapporten. Många av dessa bästa praxis gäller även för utformning av instrumentpaneler.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Läsa och/eller titta på reportage om att ”utforma visuellt snygga rapporter (och instrumentpaneler) i Power BI”

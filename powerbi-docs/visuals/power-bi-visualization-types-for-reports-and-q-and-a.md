@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/03/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ebec34690001293e93dafd69dd76f7bdbf54981c
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900546"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296810"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-visualiseringar
@@ -26,7 +26,7 @@ Kolla även in [Microsoft AppSource](https://appsource.microsoft.com/marketplace
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
 Alla dessa visuella objekt kan läggas till Power BI-rapporter, anges i frågor och svar och fästas på instrumentpaneler.
 
-### <a name="area-charts-basic-layered-and-stacked"></a>Ytdiagram: enkelt (i lager) och stapel-
+### <a name="area-charts-basic-layered-and-stacked"></a>Ytdiagram: Enkelt (i lager) och stapel
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
 >[!TIP]
@@ -42,10 +42,10 @@ Mer information finns i [Grundläggande ytdiagram](power-bi-visualization-basic-
 >[!TIP]
 >Stapeldiagram är standard för att visa ett specifikt värde över olika kategorier.
 
-### <a name="cards-multi-row"></a>Kort: Flera rader
+### <a name="cards-multi-row"></a>Kort: Flerrad
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
-### <a name="cards-single-number"></a>Kort: Enskilt tal
+### <a name="cards-single-number"></a>Kort: Enskilt antal
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 Mer information finns i [Skapa ett kort (stor sifferpanel)](power-bi-visualization-card.md).
@@ -104,12 +104,12 @@ Mer information finns i [KPI i Power BI](power-bi-visualization-kpi.md).
 
 Mer information finns i [Tips och trick för kartor](power-bi-map-tips-and-tricks.md).
 
-### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-kartor
+### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-mappar
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 Mer information finns i [ArcGIS-kartor i Power BI](../power-bi-visualization-arcgis.md).
 
-### <a name="maps-filled-maps-choropleth"></a>Maps: Fyllda kartor (Choropleth)
+### <a name="maps-filled-maps-choropleth"></a>Kartor: Fyllda kartor (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]

@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: 18fb96573052455034f8c257811daed6cb15529e
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: dd3da287d976b9fe84ab56b425a5f08fba31d224
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679249"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288369"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Skapa en Power BI-rapport för Power BI-rapportservern
 Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-rapportserver, precis som du kan lagra Power BI-rapporter i molnet i Power BI-tjänsten (https://powerbi.com). Du skapar och redigerar rapporter i Power BI Desktop och publicerar dem till webbportalen. Rapportläsare i din organisation kan sedan se dem i webbläsaren eller i en Power BI-mobilapp på en mobilenhet.
@@ -23,7 +23,7 @@ Du kan lagra och hantera Power BI-rapporter lokalt i webbportalen för Power BI-
 
 Här är fyra steg för att komma igång snabbt.
 
-## <a name="step-1-install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Steg 1: Installera Power BI Desktop som har optimerats för Microsoft Power BI-rapportserver
+## <a name="step-1-install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Steg 1: Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
 Om du redan har skapat Power BI-rapporter i Power BI Desktop är du nästan redo att skapa Power BI-rapporter för Power BI-rapportserver. Vi rekommenderar att du installerar versionen av Power BI Desktop som är optimerad för Power BI-rapportserver så att du vet att servern och appen alltid är synkroniserade. Du kan ha bägge versionerna av Power BI Desktop på samma dator.
 
@@ -70,7 +70,7 @@ Du kan ansluta till en mängd olika datakällor. Läs mer om att [ansluta till d
     ![Val av rapportserver](media/quickstart-create-powerbi-report/report-server-select-server.png)
 
 ## <a name="step-3-design-your-report"></a>Steg 3: Utforma din rapport
-Nu kommer det roliga: du får skapa visuella objekt som illustrerar dina data.
+Nu kommer det roliga: Du får skapa visuella objekt som illustrerar dina data.
 
 Du kan till exempel skapa ett trattdiagram med kunder och gruppvärden efter årliga intäkter.
 
@@ -97,7 +97,7 @@ När din rapport är klar, kan du spara den på den Power BI-rapportserver som d
 Det finns många bra resurser för att skapa rapporter i Power BI Desktop. Den här länken är en bra utgångspunkt.
 
 * [Kom igång med Power BI Desktop](../desktop-getting-started.md)
-* Interaktiv inlärning: [Kom igång med Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
+* Interaktiv utbildning: [Kom igång med Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 
 ### <a name="power-bi-report-server"></a>Power BI-rapportserver
 * [Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  

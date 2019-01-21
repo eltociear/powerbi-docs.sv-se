@@ -4,17 +4,17 @@ description: Översikt över Power BI och hur de olika delarna fungerar ihop –
 author: davidiseminger
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: overview
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 357af2f995fc927e7b55283c762e5f4b52376444
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: bc712b892cd35259bc036f41b6e3e16a5388ffad
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619596"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293084"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Oavsett om dina data består av ett enkelt Excel-kalkylblad eller en samling molnbaserade och lokala hybridinformationslager, kan du med **Power BI** enkelt ansluta till dina datakällor, visualisera (eller identifiera) vad som är viktigt och dela det med någon eller alla du vill.
@@ -64,4 +64,4 @@ Power BI-rapportservern är en lösning som du distribuerar bakom brandväggen o
 
 ## <a name="next-steps"></a>Nästa steg
 [Logga in, hämta vissa data och lär dig använda Power BI-tjänsten](service-the-new-power-bi-experience.md)   
-[Självstudie: Kom igång med Power BI-tjänsten](service-get-started.md)
+[Självstudier: Kom igång med Power BI-tjänsten](service-get-started.md)

@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829997"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290421"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Från Excel-arbetsbok till otrolig rapport på nolltid
 Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men den senaste informationen finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och bygga upp en rapport. Du börjar känna dig bekymrad.
@@ -50,7 +50,7 @@ Välj **Hämta data** längst ned till vänster i navigeringsfönstret. På sida
 
 Välj **Lokal fil** på sidan Filer. Navigera till Excel-arbetsboksfilen på datorn och väl den för att läsa in den till Power BI. Välj **Importera**.
 
-> **OBS**: Om du vill följa resten av självstudierna använder du [arbetsboken med finansiella exempel](sample-financial-download.md).
+> **Obs!** Om du vill följa resten av självstudierna använder du [arbetsboken med finansiella exempel](sample-financial-download.md).
 > 
 > 
 
@@ -67,7 +67,7 @@ Nu kan du börja skapa visualiseringar. Chefen vill se vinsten över tid. I fön
 
 ![stapeldiagram i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-> **Tips**: Kontrollera din aggregeringar om diagrammet ser inte ut som du förväntade dig. Som exempel kan du högerklicka på det fält som du just har lagt till i området **Värde** och se till att dina data aggregeras på det sätt som du önskar.  I det här exemplet använder vi **Summa**.
+> **TIPS**: Kontrollera dina aggregeringar om diagrammet ser inte ut som du förväntade dig. Som exempel kan du högerklicka på det fält som du just har lagt till i området **Värde** och se till att dina data aggregeras på det sätt som du önskar.  I det här exemplet använder vi **Summa**.
 > 
 > 
 

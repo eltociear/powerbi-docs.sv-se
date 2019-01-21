@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 44fbf1e651c36c95694e397c64050977f3ee730a
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: f6396747dc21ddc94ab1abda6939e8e423c649e7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092562"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296208"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Steg 4: Hämta en datauppsättning för att lägga till rader i en Power BI-tabell
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -26,11 +26,11 @@ Om du vill skicka data till en Power BI-datauppsättning, måste du referera til
 Så här hämtar du en datauppsättning.
 
 ## <a name="get-a-power-bi-dataset"></a>Hämta en Power BI-datauppsättning
-> **Obs**: Innan du börjar kontrollerar du att du har följt föregående steg i genomgången [skicka data till en datauppsättning](walkthrough-push-data.md).
+> **Obs!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 > 
 > 
 
-1. I konsolprogramprojektet som du skapade i steg 2: Genomgång för att skicka data, [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md), installerar du Newtonsoft.Json NuGet-paketet. Så här installerar du paketet:
+1. I det konsolprogramprojekt du skapade i steg 2: Genomgång för att skicka data, [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md), installera Newtonsoft.Json NuGet-paketet. Så här installerar du paketet:
    
      a. I Visual Studio 2015 väljer du **Verktyg** > **NuGet-pakethanteraren** > **Pakethanterarkonsolen**.
    

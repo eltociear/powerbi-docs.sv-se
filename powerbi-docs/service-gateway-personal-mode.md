@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273343"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295757"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Lokal datagateway (personligt läge)
 Du kan använda lokala datakällor och skapa Power BI-rapporter och -instrumentpaneler med hjälp av en gateway. En **gateway** är programvara som möjliggör åtkomst till data som lagras i ett privat lokalt nätverk och sedan låter dig använda dessa data i onlinetjänster, till exempel **Power BI-tjänsten**. En **lokal datagateway (personligt läge)** är en nyligen utgiven uppdatering för Power BI-gateway som låter enskilda användare installera en gateway på den lokala datorn och få åtkomst till lokala data.
@@ -114,28 +114,28 @@ Stöd för Spark är planerat för den andra hälften av kalenderåret 2017.
 ## <a name="frequently-asked-questions-faq"></a>Vanliga frågor och svar
 * Kan jag köra den **lokala datagatewayen (personligt läge)** sida vid sida med en **lokal datagateway** (kallades tidigare för företagsgatewayen)?
   
-  * **Svar**: Ja, med den nya versionen kan båda köras samtidigt.
+  * **Svar:** Ja, med den nya versionen kan båda köras samtidigt.
 * Kan jag köra **lokal datagateway (personligt läge)** som tjänst?
   
   * **Svar:** Nej. **lokal datagateway (personligt läge)** kan endast köras som ett program. Om du behöver köra gatewayen som en tjänst och/eller i adminläge bör du överväga en [**lokal datagateway**](service-gateway-onprem.md) (kallades tidigare för företagsgatewayen).
 * Hur ofta uppdateras **lokal datagateway (personligt läge)**?
   
-  * **Svar**: Vi planerar att uppdatera din personliga gateway varje månad.
+  * **Svar:** Vi planerar att uppdatera din personliga gateway varje månad.
 * Varför måste jag ange autentiseringsuppgifter?
   
-  * **Svar**: Många situationer kan utlösa en begäran om autentiseringsuppgifter. De vanligaste är att du har ominstallerat den **lokala datagatewayen (personligt läge)** på en annan dator än din **Power BI – personal**-gateway. Det kan också vara ett problem i datakällan och Power BI kunde inte utföra en test-anslutning eller också uppstod ett avbrott eller systemfel. Du kan uppdatera dina autentiseringsuppgifter i **Power BI-tjänsten** genom att gå till **kugghjulsikonen**, välja **Inställningar** och sedan **datauppsättningar**. Hitta datauppsättningen i fråga och klicka på *Uppdatera autentiseringsuppgifterna*.
+  * **Svar:** Många situationer kan utlösa en begäran om autentiseringsuppgifter. De vanligaste är att du har ominstallerat den **lokala datagatewayen (personligt läge)** på en annan dator än din **Power BI – personal**-gateway. Det kan också vara ett problem i datakällan och Power BI kunde inte utföra en test-anslutning eller också uppstod ett avbrott eller systemfel. Du kan uppdatera dina autentiseringsuppgifter i **Power BI-tjänsten** genom att gå till **kugghjulsikonen**, välja **Inställningar** och sedan **datauppsättningar**. Hitta datauppsättningen i fråga och klicka på *Uppdatera autentiseringsuppgifterna*.
 * Hur länge kommer min tidigare personliga gateway vara offline under uppgraderingen?
   
-  * **Svar**: Det tar högst ett par minuter att uppgradera den personliga gatewayen till den nya versionen. 
+  * **Svar:** Det tar högst ett par minuter att uppgradera den personliga gatewayen till den nya versionen. 
 * Vad händer om jag inte migrerar till ny personlig gateway innan 31 juli 2017?
   
-  * **Svar**: om du har uppdaterat dina rapporter med en aktuell gateway kommer dina uppdateringar att avbrytas. Det enda sättet att ställa in ett nytt uppdateringsschema är att installera och konfigurera den nya gatewayen.
+  * **Svar:** Om du uppdaterar dina rapporter med den aktuella gatewayen så kommer dina uppdateringar att avbrytas. Det enda sättet att ställa in ett nytt uppdateringsschema är att installera och konfigurera den nya gatewayen.
 * Jag använder R-skript. Stöds detta?
   
-  * **Svar**: R-skript har stöd för personligt läge.
+  * **Svar:** R-skript stöds för personligt läge.
 * Varför ser jag inte på meddelandet för att uppdatera min gateway i **Power BI-tjänsten**?
   
-  * **Svaret**: detta beror mest sannolikt på att du har en eller flera datauppsättningar som omfattar en datakälla som inte stöds för tillfället.
+  * **Svar:** Detta beror sannolikt på att du har en eller flera datauppsättningar som omfattar en datakälla som inte stöds för tillfället.
 
 ## <a name="next-steps"></a>Nästa steg
 [Konfigurera proxyinställningar för Power BI-gatewayerna](service-gateway-proxy.md)  

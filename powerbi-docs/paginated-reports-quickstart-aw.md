@@ -1,22 +1,22 @@
 ---
-title: 'Självstudier: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)'
+title: 'Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)'
 description: I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Report Builder för att skapa en sidnumrerad rapport. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: fbeb617207c13459fe88487547609323391487e2
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 05805ea7b30f0ab0bd14265caecbb04a4e975300
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900622"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296492"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Självstudier: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)
 
 I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Report Builder för att skapa en sidnumrerad rapport med en tabell som radbryts till flera sidor. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten. Sidnumrerade rapporter i Power BI-tjänsten är för närvarande i förhandsversion.
 

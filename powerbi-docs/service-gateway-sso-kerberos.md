@@ -6,20 +6,20 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: ed9281ba14ad25e2acb347a2394ec729e9d4465c
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508047"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295269"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
-Använd [Kerberos-begränsad delegering](https://technet.microsoft.com/library/jj553400.aspx) för att aktivera sömlös anslutning för enkel inloggning. När enkel inloggning aktiveras blir det enkelt för Power BI-rapporter och instrumentpaneler att uppdatera data från lokala källor.
+Använd [Kerberos-begränsad delegering](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) för att aktivera sömlös anslutning för enkel inloggning. När enkel inloggning aktiveras blir det enkelt för Power BI-rapporter och instrumentpaneler att uppdatera data från lokala källor.
 
 ## <a name="supported-data-sources"></a>Datakällor som stöds
 
@@ -111,8 +111,8 @@ Det här avsnittet förutsätter att du redan har konfigurerat SPN:er för dina 
 
 I följande steg förutsätter vi att det finns en lokal miljö med två datorer: en gatewaydator och en databasserver som kör SQL Server. För det här exemplet förutsätter vi även att följande inställningar och namn finns:
 
-* Gatewaydatornamn: **PBIEgwTestGW**
-* Gatewaytjänstkonto: **PBIEgwTest\GatewaySvc** (kontots visningsnamn: Gatewayanslutning)
+* Gatewaydatorns namn: **PBIEgwTestGW**
+* Gatewaytjänstkonto: **PBIEgwTest\GatewaySvc** (kontots visningsnamn: Gateway-port)
 * Datornamn för SQL Server-datakälla: **PBIEgwTestSQL**
 * Tjänstkonto för SQL Server-datakälla: **PBIEgwTest\SQLService**
 
@@ -164,7 +164,7 @@ Till slut måste gatewaytjänstkontot på den dator som kör gatewaytjänsten (*
 
 Om du använder SAP HANA rekommenderar vi att du följer dessa ytterligare steg, som kan ge en liten prestandaförbättring.
 
-1. I installationskatalogen för gatewayen letar du upp och öppnar den här konfigurationsfilen: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+1. Hitta och öppna den här konfigurationsfilen i installationskatalogen för gateway: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
 
 1. Leta upp egenskapen *FullDomainResolutionEnabled* och ändra dess värde till *True* (Sant).
 
@@ -202,7 +202,7 @@ Tidigare i den här artikeln diskuterade vi att man kan byta gatewayen från ett
 
 Nu när du förstår hur Kerberos fungerar med en gateway kan du konfigurera enkel inloggning för SAP Business Warehouse (SAP BW). Följande steg förutsätter att du redan har [förberett för Kerberos-begränsad delegering](#preparing-for-kerberos-constrained-delegation) enligt beskrivningen tidigare i den här artikeln.
 
-Den här guiden försöker vara så omfattande som möjligt. Om du redan har slutfört några av de här stegen kan du hoppa över dem: till exempel om du redan har skapat en tjänstanvändare för BW-servern och mappat ett SPN-namn till den, eller om du redan har installerat gsskrb5-biblioteket.
+Den här guiden försöker vara så omfattande som möjligt. Om du redan har slutfört några av de här stegen kan du hoppa över dem: Om du till exempel redan har skapat en tjänstanvändare för BW-servern och mappat ett SPN-namn till den, eller om du redan har installerat gsskrb5-biblioteket.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>Konfigurera gsskrb5 på klientdatorer och BW-servern
 
@@ -367,7 +367,7 @@ Om du inte har Azure AD DirSync konfigurerat, följ dessa steg för **varje anv�
 
 ### <a name="add-a-new-bw-application-server-data-source-to-the-power-bi-service"></a>Lägga till en ny BW-programserverdatakälla i Power BI-tjänsten
 
-Lägg till BW-datakälla till din gateway: följ anvisningarna tidigare i den här artikeln om att [köra en rapport](#running-a-power-bi-report).
+Lägg till BW-datakällan till din gateway: Följ anvisningarna tidigare i den här artikeln om att [köra en rapport](#running-a-power-bi-report).
 
 1. I konfigurationsfönstret för datakälla anger du programserverns **Värddatornamn**, **Systemnummer** och **klient-ID** på samma sätt som när du loggar in på BW-servern från Power BI Desktop. För **Autentiseringsmetod** väljer du **Windows**.
 

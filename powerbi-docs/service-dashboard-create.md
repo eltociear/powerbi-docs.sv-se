@@ -6,16 +6,16 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: maggies
-ms.openlocfilehash: 28a282ff6a35061422995c46fbbcd34c21b533a7
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: c42aa07fd78430c5692067ae8476b22288470c8c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717434"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294290"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Skapa en Power BI-instrumentpanel från en rapport
 Du har läst [Instrumentpaneler i Power BI](service-dashboards.md) och nu är det dags att du skapar en egen. Det finns många olika sätt för att skapa en instrumentpanel – från en rapport, från början, från en datauppsättning, genom att duplicera en befintlig instrumentpanel, med mera.  
@@ -25,13 +25,13 @@ Det kan verka överväldigande när du först kommer igång, så vi börjar med 
 ## <a name="who-can-create-a-dashboard"></a>Vem kan skapa en instrumentpanel?
 Skapa en instrumentpanel är en **skapar**funktion och kräver behörighet att redigera i rapporten. Behörigheter att redigera är tillgängliga för rapportskapare av och de medarbetare skaparen beviljar åtkomst till. Om David till exempel skapar en rapport i workspaceABC och sedan lägger till dig som medlem i den arbetsytan kommer både du och David att ha behörighet att redigera. Å andra sidan, om en rapport har delats med dig direkt eller som en del av en [Power BI-app](service-create-distribute-apps.md) (du **konsumerar** rapporten), kommer du inte att kunna fästa paneler på en instrumentpanel.
 
-> **OBS**: Instrumentpaneler är en funktion i Power BI-tjänsten, inte i Power BI Desktop. Instrumentpaneler kan inte skapas i Power BI Mobile, men de kan [visas och delas](consumer/mobile/mobile-apps-view-dashboard.md).
+> **Obs!** Instrumentpaneler är en funktion i Power BI-tjänsten, inte i Power BI Desktop. Instrumentpaneler kan inte skapas i Power BI Mobile, men de kan [visas och delas](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 
 ![instrumentpanel](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
-## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Video: Skapa en instrumentpanel genom att fästa visuella objekt och bilder från en rapport.
+## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Video: Skapa en instrumentpanel genom att fästa visuella objekt och bilder från en rapport
 Titta på när Amanda skapar en ny instrumentpanel genom att fästa visualiseringar från en rapport. Följ sedan stegen under videon för att prova själv med hjälp av Exempel på anskaffningsanalys.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
@@ -65,7 +65,7 @@ Vi ska importera ett av Power BI:s exempel på datauppsättningar och använda d
 1. Stanna kvar på samma arbetsyta och välj fliken **Rapporter**. Den nyligen importerade rapporten visas med en gul asterisk. Välj rapportens namn för att öppna den.
 
     ![fliken Rapporter](media/service-dashboard-create/power-bi-reports.png)
-2. Rapporten öppnas i läsvyn. Observera att den har två flikar längst ned: Rabattanalys och Utgiftsöversikt. Varje flik representerar en sida i rapporten.
+2. Rapporten öppnas i läsvyn. Observera att den har två flikar längst ner: Rabattanalys och Utgiftsöversikt. Varje flik representerar en sida i rapporten.
     Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
 
     ![rapport i Läsvyn](media/service-dashboard-create/power-bi-reading-view.png)

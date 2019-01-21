@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: cd9a68d10e0da0aaa883dae1a3979eff6a6b4ce6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619734"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290738"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Sammansättningar i Power BI Desktop (förhandsversion)
 
@@ -261,7 +261,7 @@ I följande tabell visas posterna som konfigurerats i dialogrutan **Hantera samm
 
 ![Sammansättningstabellen Sales Agg](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Obs! För den här modellen krävs det att tabellen **Datum** är i DirectQuery-läget för att fylla i dialogrutan Hantera sammansättningar, eftersom det är en informationstabell. Detta är en förhandsversionsbegränsning som vi har för avsikt att ta bort när den allmänna tillgängligheten börjar gälla.
+> OBS! För den här modellen krävs det att tabellen **Datum** är i DirectQuery-läge för att fylla i dialogrutan hantera sammansättningar, eftersom det är en informationstabell. Detta är en förhandsversionsbegränsning som vi har för avsikt att ta bort när den allmänna tillgängligheten börjar gälla.
 
 ### <a name="query-examples"></a>Frågeexempel
 

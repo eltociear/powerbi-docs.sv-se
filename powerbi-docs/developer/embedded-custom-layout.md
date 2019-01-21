@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
 ms.author: maghan
-ms.openlocfilehash: 36f9665f0e42ee62e5a1a4a7584a2492bea276b0
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37597922"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288944"
 ---
 # <a name="custom-layouts"></a>Anpassade layouter
 
@@ -64,7 +64,7 @@ enum DisplayOption {
 }
 ```
 
-- `pageSize`: Använd sidstorleken för att styra arbetsytans storlek (det vill säga rapportens vita område).
+- `pageSize`: Styr arbetsytans storlek (dvs rapportens vita område) genom att använda sidstorleken.
 - `displayOptions`: Möjliga värden är: FitToWidth, FitToPage och ActualSize. Här styr du hur arbetsytan ska skalas för att passa iFrame.
 - `pagesLayout`: Styr layouten för varje visuellt objekt. Mer information finns i PagesLayout.
 

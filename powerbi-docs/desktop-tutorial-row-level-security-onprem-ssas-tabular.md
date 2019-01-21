@@ -6,17 +6,17 @@ manager: amitaro
 ms.reviewer: davidi
 editor: davidi
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2d4dc5d8c11db035cc2470c0c44d64a6b78cd1a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 546ae48aac10ae6c72a062665c7d8f448432a194
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452762"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292647"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
 Den här självstudien visar de steg som krävs för att implementera **säkerhet på radnivå** inom din **Analysis Services-tabellmodell** samt hur du använder den i en Power BI-rapport. Stegen i den här självstudien har utformats så att du kan följa med och lära dig de steg som krävs genom att slutföra en samplingsdatauppsättning.
@@ -83,7 +83,7 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
     Den här formeln anger att alla kolumner matchar det falska booleska villkoret, därför går det inte att fråga efter några kolumner för tabellen **DimUserSecurity**.
 1. Vi måste nu bearbeta och distribuera modellen. Du kan läsa [artikeln om Distribution](https://msdn.microsoft.com/library/hh231693.aspx) om du behöver hjälp med att distribuera modellen.
 
-## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Uppgift 3: Lägga till datakällor i din lokala datagateway
+## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Uppgift 3: Lägga till datakällor inom din lokala datagateway
 1. När din tabellmodell har distribuerats och är redo för användning, måste du lägga till en datakällsanslutning till din lokala Analysis Services-tabellserver i Power BI-portalen.
 2. För att kunna ge **Power BI-tjänsten** åtkomst till din lokala analystjänst måste du ha en **[lokal datagateway](service-gateway-onprem.md)** installerad och konfigurerad i din miljö.
 3. När gatewayen är korrekt konfigurerad måste du skapa en datakällsanslutning för din **Analysis Services**-tabellinstans. Den här artikeln hjälper dig med att [lägga till en datakälla i Power BI-portalen](service-gateway-enterprise-manage-ssas.md).
@@ -91,7 +91,7 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)
 4. När det föregående steget är klart är gatewayen konfigurerad och redo att interagera med din lokala **Analysis Services**-datakälla.
 
-## <a name="task-4-creating-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>Uppgift 4: Skapa en rapport som baseras på analystjänsternas tabellmodell med Power BI Desktop
+## <a name="task-4-creating-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>Uppgift 4: Skapa en rapport baserad på analystjänsternas tabellmodell med Power BI Desktop
 1. Vi börjar i **Power BI Desktop** och väljer **Hämta data > Databas**.
 2. I listan med datakällor väljer du **SQL Server Analysis Services-databas** och **Anslut**.
    

@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 08c8075fe275ff1472d3e9845f954ef4d029b373
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: b7423a5b15f314050ee21b7eed5c3ea7ad960985
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250440"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291681"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Utveckla med REST-API:er för Power BI-rapportservern
 
@@ -32,8 +32,8 @@ Ett REST API-begäran/-svarspar kan delas in i fem komponenter:
   
   * URI-schema: Anger det protokoll som används för att överföra begäran. Till exempel `http` eller `https`.
   * URI-värd: Anger domännamnet eller IP-adressen för servern där REST-tjänstslutpunkten finns, som `myserver.contoso.com`.
-  * Resursens sökväg: Anger den resurs- eller resurssamling som kan innehålla flera segment som används av tjänsten för att fastställa valet av dessa resurser. Till exempel: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` Kan användas för att hämta de angivna egenskaperna för CatalogItem.
-  * Frågesträng (valfritt): Ger ytterligare enkla parametrar, till exempel API-versionen eller resursurvalskriterier.
+  * Resursens sökväg: Anger resursen eller resurssamlingen, vilket kan inkludera flera segment som används av tjänsten för att fastställa valet av dessa resurser. Till exempel: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` Kan användas för att hämta de angivna egenskaperna för CatalogItem.
+  * Frågesträng (valfritt): Ger ytterligare enkla parametrar, till exempel API-version eller resursurvalskriterier.
 * Huvudfält för HTTP-begärandemeddelande:
   
   * En nödvändig [HTTP-metod](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (kallas även åtgärd eller verb) som talar om för tjänsten vilken typ av åtgärd som du begär. Reporting Services REST-API:er stöder metoderna DELETE, GET, HEAD, PUT, POST, och PATCH.

@@ -6,22 +6,22 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f52231d5df04367a1fe58e8575cd364899ff8eae
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 67a090b64a8243ed2a77d66ae633f8a64e494c89
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396737"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289082"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Sidvisningsinställningar i en Power BI-rapport
 Vi förstår att det är viktigt att hålla din rapportlayout perfekt. Ibland är det kan vara en utmaning, eftersom du och dina kollegor visar rapporterna på era skärmar med olika bredd–höjd-förhållanden och storlekar. 
 
-Standardvyn för visning är **Anpassa till sida** och standardstorleken för visning är **16:9**. Om du vill låsa ett annat bredd–höjd-förhållande eller vill anpassa rapporten på annat sätt, finns det två verktyg som hjälper dig: inställningarna ***Sidvisning*** och ***Sidstorlek***.
+Standardvyn för visning är **Anpassa till sida** och standardstorleken för visning är **16:9**. Om du vill låsa ett annat bredd–höjd-förhållande eller vill anpassa rapporten på annat sätt, finns det två verktyg som hjälper dig: Inställningarna ***Sidvisning*** och ***Sidstorlek***.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 

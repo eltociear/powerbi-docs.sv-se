@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830319"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296833"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -162,7 +162,7 @@ Det finns tre scenarier som kan gälla för användare i organisationen:
 
     Det innebär att antalet användare som du hanterar när som helst viss kan växa efter hand som användare i din organisation registrerar sig för tjänsten.
 
-* **Scenario 3**: Om din organisation inte har en Office 365-miljö som är ansluten till din e-domän sker det ingen ändring i hur du hanterar identiteter.
+* **Scenario 3**: Om din organisation inte har en Office 365-miljö som är ansluten till din e-domän, sker det ingen ändring i hur du hanterar identiteter.
 
     Användare läggs till i en ny, endast molnbaserad användarkatalog och du har möjlighet att ta över som administratör och hantera dem.
 
@@ -186,7 +186,7 @@ När du gör ett externt övertagande placeras Power BI-innehåll som har skapat
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till?
 
-Om du inte gör något skapas en klient för varje användares e-postdomäner och underdomäner. Om du vill att alla användare ska vara i samma klient oavsett deras e-postadresstillägg: Skapa en målklient i förväg eller använd en befintlig klient och lägg till alla befintliga domäner och underdomäner som ska konsolideras i klienten. Alla användare med e-postadresser som slutar på dessa domäner och underdomäner ansluts automatiskt till målklienten när de registreras.
+Om du inte gör något skapas en klient för varje användares e-postdomäner och underdomäner. Om du vill att alla användare ska vara i samma klient oavsett deras e-postadressdomän: Skapa en målklient i förväg eller använd en befintlig klient och lägg till alla befintliga domäner och underdomäner som ska konsolideras i klienten. Alla användare med e-postadresser som slutar på dessa domäner och underdomäner ansluts automatiskt till målklienten när de registreras.
 
 > [!IMPORTANT]
 > Det finns ingen automatisk mekanism för att flytta användare över klienter när de väl har skapats. Mer information om att lägga till domäner i en enda Office 365-klient, finns i [Lägga till användare och domän i Office 365](/office365/admin/setup/add-domain/).

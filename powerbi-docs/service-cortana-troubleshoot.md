@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d15dfa17280a8c289f223719961cd48a97cb92bc
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187546"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296327"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Felsöka Cortana för Power BI
 Den här artikeln ingår i en serie. Om du inte redan har gjort det rekommenderar vi att du läser följande tre artiklar.

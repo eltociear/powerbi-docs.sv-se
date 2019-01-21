@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77802d2db59ddff94123991e209441b4c491f98b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548613"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296742"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Metodtips för design av rapporter och visuella objekt
 <!-- Shared newnav Include -->
@@ -160,7 +160,7 @@ Välj **Textruta** i Power BI-tjänsten på den översta menyraden. (I Power BI 
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-boxes.png)
 
-**Bild 8:    Lägga till en textruta**
+**Bild 8:    Lägg till en textruta**
 
 Skriv i den tomma rutan och använd sedan kontrollerna längst ned för att ange teckensnitt, storlek, justering med mera. Använd handtagen för att ändra storlek på rutan.
 
@@ -221,7 +221,7 @@ När vi ändrade bakgrunden till svart försvann vår rubrik eftersom textrutans
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-box-title.png)
 
-**Bild 13: Lägga till en sidrubrik**
+**Bild 13: Lägg till en sidrubrik**
 
 **Kort**
 
@@ -390,7 +390,7 @@ Välj det visuella objektet för att aktivera det. Dra i ett av handtagen för a
 
 ![](media/power-bi-visualization-best-practices/power-bi-drag-handles.png)
 
-**Bild 29: Ändra storlek på ett visuellt objekt**
+**Bild 29: Ändra storlek på visuellt objekt**
 
 **Flytta ett visuellt objekt**
 
@@ -411,7 +411,7 @@ Välj färgrollerikonen för att öppna formateringsfönstret vid varje formater
 
 **Bild 31: Öppna formateringsfönstret**
 
-Välj sedan det visuella element som ska justeras och kontrollera att det är aktiverat. Exempel på visuella element är: **X-axel**, **Y-axel**, **Rubrik**, **Dataetiketter** och **Förklaring**. Exemplet nedan visar elementet **Rubrik**.
+Välj sedan det visuella element som ska justeras och kontrollera att det är aktiverat. Exempel på visuella element är: **X-axeln**, **y-axeln**, **rubrik**, **dataetiketter**, och **förklaring**. Exemplet nedan visar elementet **Rubrik**.
 
 ![](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
@@ -650,7 +650,7 @@ Mer information om stapel-/kolumndiagram:
 
 * [Stapeldiagram 101](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 * [Datavisualiseringskatalog: Stapeldiagram](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
-* [Datavisualiseringskatalog: Multimängd i stapeldiagram](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
+* [Datavisualiseringskatalog: Multimängdstapeldiagram](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
 ### <a name="stacked-barcolumn-charts"></a>Liggande/stående stapeldiagram
 ![](media/power-bi-visualization-best-practices/power-bi-stacked.png)
@@ -682,13 +682,13 @@ I det här linjediagrammet är det lättare att se hur de kommersiella intäkter
 
 Mer information om stapeldiagram:
 
-* [Datavisualiseringskatalog: liggande stapeldiagram](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
+* [Datavisualiseringskatalog: Liggande stapeldiagram](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
 * [När är 100 % liggande stapeldiagram användbara?](http://www.perceptualedge.com/blog/?p=2239)
 
 ### <a name="combo-barcolumn-charts"></a>Kombinerade stapel-/kolumndiagram
 ![](media/power-bi-visualization-best-practices/power-bi-combo.png)
 
-I Power BI kan du kombinera kolumn- och linjediagram till ett kombinationsdiagram. Alternativen är: stående linje- och stapeldiagram samt grupperad linje- och stapeldiagram. Spara värdefull arbetsyta genom att kombinera två separata visuella objekt till ett.
+I Power BI kan du kombinera kolumn- och linjediagram till ett kombinationsdiagram. Alternativen är: Stående linje- och stapeldiagram samt grupperat linje- och stapeldiagram. Spara värdefull arbetsyta genom att kombinera två separata visuella objekt till ett.
 
 De två skärmbilderna nedan visar en före- och en efterbild.  På den första sidan finns två separata visuella objekt: Ett kolumndiagram som visar befolkning över tid och ett linjediagram som visar BNP över tid. Dessa diagram skulle passa bra som kombinationsdiagram eftersom de har samma X-axel (år) och värden (2002 till 2012).  Varför inte kombinera dem och jämföra dessa två trender i ett enda visuellt objekt?  Om du kombinerar de två diagrammen kan du göra en snabbare jämförelse av datan.
 
@@ -717,7 +717,7 @@ Gör detta genom att öppna formateringsfönstret, expandera **Y-axeln** och ang
 
 ![](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
 
-**Bild 60: Visa sekundäraxeln**
+**Bild 60: Visa sekundär axel**
 
 ![](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
 
@@ -809,7 +809,7 @@ Mer information finns i:
 Nu är det dags att börja använda dessa metodtips.  Håll kontakten med oss och dela med dig av dina egna metodtips. Är du inte överens med oss om våra rekommendationer eller har du en bra anledning till att ”bryta reglerna”?  Vi vill gärna höra om det också.  
 
 ### <a name="book-recommendations"></a>Boktips
-Det finns många bra böcker i dag som kan hjälpa till att förbättra den visuella designtekniken. Stephen Fews bok *Information Dashboard Design* är nästan ett måste att läsa. Han går även på djupet i två andra böcker, *Show Me the Numbers* och *Now You See It*. Både Few och andra författare har hämtat inspiration från Edward R. Tufte, vars bok *The Visual Display of Quantitative Information* betraktas som en klassiker inom detta område. Tufte har också skrivit *Visual Explanations*, *Envisioning Information* och *Beautiful Evidence*. Anders Kirks nya bok *Data Visualization: A Handbook for Data Driven Design* är ett annat bra alternativ. Andra författare som rekommenderas är: Lachlan James, William McKnight och Boris Evelson (Forrester), Darkhorse Analytics.
+Det finns många bra böcker i dag som kan hjälpa till att förbättra den visuella designtekniken. Stephen Fews bok *Information Dashboard Design* är nästan ett måste att läsa. Han går även på djupet i två andra böcker, *Show Me the Numbers* och *Now You See It*. Både Few och andra författare har hämtat inspiration från Edward R. Tufte, vars bok *The Visual Display of Quantitative Information* betraktas som en klassiker inom detta område. Tufte har också skrivit *Visual Explanations*, *Envisioning Information* och *Beautiful Evidence*. Andy Kirks nya bok *Data Visualization: A Handbook for Data Driven Design* är ett annat bra alternativ. Andra författare som rekommenderas är: Lachlan James, William McKnight och Boris Evelson (Forrester), Darkhorse Analytics.
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

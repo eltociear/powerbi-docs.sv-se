@@ -6,17 +6,17 @@ ms.author: maghan
 ms.date: 05/04/2018
 ms.topic: quickstart
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 802107ce9c12075ffc51461375ca3e9a313f2be1
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: a0224188a0205cf134f2b2ee123bf5a3ac7ef0d0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558434"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288507"
 ---
-# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Snabbstart: Bädda in en Power BI Report Server-rapport med iFrame i SharePoint Server
+# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Snabbstart: Bädda in en Power BI-rapportserverrapport med en iFrame i SharePoint Server
 
 I den här snabbstarten lär du dig att bädda in en Power BI Report Server-rapport med iFrame i en SharePoint-sida. Om du arbetar med SharePoint Online, måste Power BI Report Server vara allmänt tillgänglig. I SharePoint Online fungerar inte Power BI-webbdel som fungerar med Power BI-tjänsten med Power BI Report Server. 
 
@@ -101,7 +101,7 @@ När du har din URL kan du skapa en iFrame på en SharePoint-sida som värd för
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Snabbstart: Skapa en Power BI-rapport för Power BI-rapportservern](quickstart-create-powerbi-report.md)  
-[Snabbstart: Skapa en sidnumrerad rapport för Power BI-rapportservern](quickstart-create-paginated-report.md)  
+[Snabbstart: Skapa en Power BI-rapport för Power BI-rapportserver](quickstart-create-powerbi-report.md)  
+[Snabbstart: Skapa en sidnumrerad rapport för Power BI-rapportserver](quickstart-create-paginated-report.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/) 

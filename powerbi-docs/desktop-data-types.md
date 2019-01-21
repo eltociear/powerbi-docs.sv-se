@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: reference
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b7387f633f0a53db840653a648ba9750b33c180f
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: f153ea866404066ce2ada6ab509de2aa8259d6a5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578622"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293074"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -65,7 +65,7 @@ Power BI Desktop stöder fem datum/tid-datatyper i frågevyn och tre i rapportvy
 **Varaktighet** – Visar en viss tidslängd. Den konverteras till typen Decimaltal när den läses in i modellen.  Som decimaltal kan den adderas eller subtraheras från ett datum/tid-fält med korrekta resultat.  Som decimaltal kan du lätt kan använda den i visualiseringar som visar omfattning.
 
 ### <a name="text-type"></a>Texttyp
-**Text**  – En datasträng med Unicode-tecken. Det kan vara strängar, tal eller datum som visas i ett textformat. Den maximala stränglängden är 268 435 456 Unicode-tecken (256 megatecken) eller 536 870 912 byte.
+**Text ** – En datasträng med Unicode-tecken. Det kan vara strängar, tal eller datum som visas i ett textformat. Den maximala stränglängden är 268 435 456 Unicode-tecken (256 megatecken) eller 536 870 912 byte.
 
 ### <a name="truefalse-type"></a>Typen Sant/falskt
 **Sant/falskt** – Ett booleskt värde för antingen sant eller falskt.

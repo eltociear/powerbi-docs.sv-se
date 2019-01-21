@@ -4,17 +4,17 @@ description: Hämta svar från dina data med hjälp av Cortana med Power BI. Fun
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: ccc99c2f9810bcda80e1f02ce67e49390fd0308f
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: bcd07bb0cb53ea4818195e15c1492a27f424cf38
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003258"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292611"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Snabbt hitta och visa dina Power BI-data med hjälp av Cortana för Power BI
 Använd Cortana på alla dina Windows 10-enheter så att du för omedelbara svar på viktiga affärsfrågor. Genom att integrera med Power BI hämtar Cortana viktig information direkt från Power BI-instrumentpaneler och rapporter. Allt du behöver du bara 10 november 2015-versionen eller senare av Windows 10, Cortana, Power BI och åtkomst till minst en datauppsättning.
@@ -38,7 +38,7 @@ Det finns fyra dokument som hjälper dig att ställa in och använda Cortana fö
 
 **Artikel 1** (den här artikeln): förstå hur Cortana och Power BI fungerar tillsammans
 
-**Artikel 2**: [söka efter Power BI-rapporter: aktivera Cortana – Power BI – Windows-integrering](service-cortana-enable.md)
+**Artikel 2**: [söka efter Power BI-rapporter: Aktivera Cortana – Power BI – Windows-integrering](service-cortana-enable.md)
 
 **Artikel 3**: [söka efter Power BI-rapporter: skapa särskilda *Cortana-svarskort*](service-cortana-answer-cards.md)
 

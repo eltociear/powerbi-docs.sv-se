@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
-ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
+ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51580550"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296580"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Felsökning av den lokala datagatewayen
 
@@ -70,7 +70,7 @@ Det kan också bero på problem med konfigurationen av en proxy. Användargräns
 
 Information togs emot från Power BI-tjänsten till gatewayen. Informationen skickades till den lokala Windows-tjänsten men det kom inget svar. Eller så gick det inte att skapa en symmetrisk nyckel. Ursprungsundantaget visas under **Visa information**. Om du vill ha mer information kan du samla in och granska loggarna som anges nedan.
 
-### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-restart-the-gateway-and-try-again"></a>Fel: Power BI-tjänsten rapporterade att det inte går att nå den lokala gatewayen. Starta om gatewayen och försök igen
+### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-restart-the-gateway-and-try-again"></a>Fel: Power BI-tjänsten rapporterade att den lokala gatewayen inte gick att nå. Starta om gatewayen och försök igen
 
 I slutet av konfigurationen anropas Power BI-tjänsten igen för att verifiera gatewayen. Power BI-tjänsten rapporterar inte gatewayen som *live*. Starta om Windows-tjänsten för att kommunikationen ska lyckas. Du kan samla in och granska loggar, enligt beskrivningen nedan, för mer information.
 
@@ -117,7 +117,7 @@ Den lokala datagatewayen använder som standard TLS (Transport Layer Security) 1
 
 ## <a name="data-sources"></a>Datakällor
 
-### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Fel: Det går inte att ansluta. Information: ”Ogiltiga autentiseringsuppgifter för anslutning”
+### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Fel: Det går inte att ansluta. Details: Ogiltiga autentiseringsuppgifter för anslutning
 
 I **Visa information** visas felmeddelandet som togs emot från datakällan. För SQL Server ser du något liknande följande.
 
@@ -125,7 +125,7 @@ I **Visa information** visas felmeddelandet som togs emot från datakällan. Fö
 
 Kontrollera att du har rätt användarnamn och lösenord. Kontrollera också att dessa autentiseringsuppgifter kan ansluta till datakällan. Se till att kontot som används matchar **autentiseringsmetoden**.
 
-### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Fel: Det går inte att ansluta. Information: ”Det går inte att ansluta till databasen”
+### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Fel: Det går inte att ansluta. Details: Det går inte att ansluta till databasen
 
 Det gick att ansluta till servern men inte på den angivna databasen. Kontrollera namnet på databasen och att användarens autentiseringsuppgifter har rätt behörighet för att komma åt databasen.
 
@@ -133,7 +133,7 @@ I **Visa information** visas felmeddelandet som togs emot från datakällan. Fö
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Fel: Det går inte att ansluta. Information: ”Okänt fel i datagateway”
+### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Fel: Det går inte att ansluta. Details: Okänt fel i datagateway
 
 Det här felet kan inträffa av olika skäl. Glöm inte att verifiera att du kan ansluta till datakällan på datorn som är värd för gatewayen. Detta kan bero på att servern inte är tillgänglig.
 
@@ -141,7 +141,7 @@ I **Visa information** visas felkoden **DM_GWPipeline_UnknownError**.
 
 Du kan också leta i Händelseloggarna > **Program- och tjänstloggar** > **Lokal datagateway-tjänst** för mer information.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fel: Ett fel påträffades vid försök att ansluta till <server>. Information: ”Vi nådde denna data gateway men gatewayen kommer inte åt den lokala datakällan.”
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fel: Ett fel påträffades vid försök att ansluta till <server>. Details: Vi nådde datagatewayen men gatewayen kommer inte åt den lokala datakällan.
 
 Det gick inte att ansluta till den angivna datakällan. Glöm inte att validera informationen för datakällan.
 
@@ -182,7 +182,7 @@ Du måste arbeta tillsammans med dina administratörer för att verifiera förtr
 
 Kontrollera att ditt konto är med på fliken **Användare** i datakällan i gateway-konfigurationen. Om du inte har åtkomst till gatewayen ber du gatewayadministratören att verifiera. Endast konton i listan **Användare** kan se datakällan som visas i Analysis Services-listan.
 
-### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Fel: Du har inte någon gateway installerad eller konfigurerad för datakällor i den här datamängden
+### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Fel: Du har inte någon gateway installerad eller konfigurerad för datakällor i den här datauppsättningen
 
 Se till att du har lagt till en eller flera datakällor till gatewayen enligt beskrivningen i [Lägga till en datakälla](service-gateway-manage.md#add-a-data-source). Om gatewayen inte visas i administratörsportalen under **Hantera gatewayer** kan du försöka att rensa webbläsarens cache eller logga ut från tjänsten och sedan logga in igen.
 
@@ -459,7 +459,7 @@ Följ dessa steg för att lösa problemet:
 1. Konfigurera ett SPN för lokal gateway
 2. Konfigurera begränsad delegering i din Active Directory (AD)
 
-### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Det gick inte att skapa Windows-identitet för användar-ID
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Det gick inte att skapa en Windows-identitet för användarens Användar-ID
 
 FailedToImpersonateUserException returneras om du inte kan personifiera för en annan användares räkning. Detta kan också inträffa om det konto som du försöker att personifiera är från en annan domän än den som gatewaytjänstdomänen är på (detta är en begränsning).
 
@@ -500,7 +500,7 @@ Felet 1033 returneras om ditt externa ID som har konfigurerats i SAP HANA inte m
         <value>AADEmail</value>
 ```
 
-### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Kommunikationslänkfel 10709 Anslutningen misslyckades (RTE: [-1] Kerberos-fel. Större: ”Diverse fel [851968]”, mindre: ”Inga autentiseringsuppgifter är tillgängliga i säkerhetspaketet
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Kommunikationslänkfel 10709 Anslutningen misslyckades (RTE: [-1] Kerberos-fel. Större: Övrigt fel [851968], mindre: Inga autentiseringsuppgifter är tillgängliga i säkerhetspaketet
 
 Du får felmeddelandet 10709 Anslutningen misslyckades om delegeringen inte har konfigurerats korrekt i AD.
 

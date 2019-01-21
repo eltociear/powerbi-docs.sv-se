@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4638842217127c1d80ec115e05f8db1a6d3eb36c
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 3a434c418e8a385db921dd910f354bda04ad8edd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679051"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289335"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Skapa och publicera ett organisationsinnehållspaket i Power BI (självstudier)
 
@@ -53,7 +53,7 @@ Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com) går du till **H
       > 
       > 
    
-   3. Rekommenderat: Lägg till en **beskrivning**. Detta hjälper dina medarbetare att lättare hitta de innehållspaket som de behöver. Lägg utöver beskrivningen även till nyckelord som dina medarbetare kan använda för att söka efter innehållspaketet. Inkludera kontaktinformation om dina medarbetare har frågor eller behöver hjälp.
+   3. Rekommenderas: Lägg till en **beskrivning**. Detta hjälper dina medarbetare att lättare hitta de innehållspaket som de behöver. Lägg utöver beskrivningen även till nyckelord som dina medarbetare kan använda för att söka efter innehållspaketet. Inkludera kontaktinformation om dina medarbetare har frågor eller behöver hjälp.
    
    4. **Ladda upp en bild eller logotyp** för att göra det enklare för medlemmar i gruppen att hitta innehållspaketet &#151; det går snabbare att söka efter en bild än att söka efter text. Vi har använt en bild av stapeldiagramspanelen för ”affärsmöjligheter 100%” på skärmbilden nedan.
    

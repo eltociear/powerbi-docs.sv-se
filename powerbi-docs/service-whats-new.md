@@ -5,17 +5,17 @@ author: mihart
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: daada8a7f69c600acf6fc45669ed6a42c2fdd831
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: c35f418362c5036331030bf100d9bfca6b943a4a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900668"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295844"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -24,7 +24,7 @@ Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i 
 - [Nyheter i Power BI Desktop](desktop-latest-update.md)  
 - [Nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI-teamets blogg](https://powerbi.microsoft.com/blog/)
-- [Affärsprogram – viktig information våren 2018](http://aka.ms/businessappsreleasenotes) från Dynamics 365: De senaste uppdateringarna av våra affärsprogram, liksom nya funktioner med vilka du kan skapa dina program och tillägg ovanpå vår plattform. 
+- [Viktig information om företagsprogram, våren 18](http://aka.ms/businessappsreleasenotes) från Dynamics 365: De senaste uppdateringarna för våra företagsprogram och nya funktioner för att skapa egna program och tillägg på vår plattform. 
 
 Du kan också besöka våra YouTube-kanaler för information om nyheter och funktioner.
 
@@ -149,13 +149,13 @@ Du kan också besöka våra YouTube-kanaler för information om nyheter och funk
 ### <a name="november-2016"></a>November 2016
 * Förhandsversion: Testa den [nya navigeringen för Power BI-tjänsten powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
 * Förhandsversion: [Exportera en Power BI-rapport till PowerPoint](https://powerbi.microsoft.com/blog/export-power-bi-report-to-powerpoint-preview/).
-* Förhandsversion: [hämta Power BI-rapporter (PBIX-filer)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) från Power BI-tjänsten så att du kan redigera dem i Power BI Desktop.
+* Förhandsversion: [Hämta Power BI-rapporter (PBIX-filer)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) från Power BI-tjänsten så att du kan redigera dem i Power BI Desktop.
 * Skapa en [vätskemätare](https://powerbi.microsoft.com/blog/visual-awesomeness-unlocked-liquid-fill-gauge/), en cirkelmätare som representerar ett procentvärde med animerade flytande vågor.
 * Utforska dina [projekthanteringsdata i Jira ](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) med det här innehållspaketet för Power BI
 * Utforska dina [Insightcentr-data](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) med det här innehållspaketet för Power BI
 * Skapa informationsgrafik snabbt med [det anpassade visuella objektet informationsgrafikdesigner](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
 * Privat förhandsversion: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) skickar datauppsättningar för Power BI-strömning, från vilka du kan skapa strömmande paneler.
-* Preview: Lägga till [ESRI ArcGIS-kartvisualiseringar](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) till dina rapporter och instrumentpaneler
+* Förhandsversion: Lägga till [ESRI ArcGIS-kartvisualiseringar](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) till dina rapporter och instrumentpaneler
 
 ### <a name="october-2016"></a>Oktober 2016
 * Dra nytta av [Power BI-integrering med nya Microsoft Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/).
@@ -196,9 +196,9 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 ***Säkerhet på radnivå (RLS)***
 
-* Stöd för grupper i Azure Active Directory (AAD): användare kan nu tilldela AAD-grupper (säkerhetsgrupper och distributionslistor) till en roll. Det gör det enklare att tilldela roller till en stor grupp användare på samma gång.
-* [Testa din RLS roller med rapporter som bygger på data med RLS på plats](service-admin-rls.md#validating-the-role-within-power-bi-desktop): Vi har lagt till en funktion i vår förhandsversion av RLS där du kan testa din datauppsättning som en viss roll. Detta säkerställer att rollen fungerar som förväntat innan användarna får åtkomst till kontrollpanelen.
-* Definiera och tillämpa RLS på molnmodeller som är baserade på direkta frågor: nu du kan skapa och tillämpa RLS-regler för direkta frågor till datakällor.
+* Stöd för grupper i Azure Active Directory (AAD): Användare kan nu tilldela AAD-grupper (säkerhetsgrupper och distributionslistor) till en roll. Det gör det enklare att tilldela roller till en stor grupp användare på samma gång.
+* [Testa dina RLS-roller med rapporter som bygger på data med RLS på plats](service-admin-rls.md#validating-the-role-within-power-bi-desktop): Vi har lagt till en funktion till vår förhandsversion av RLS där du kan testa din datauppsättning som en viss roll. Detta säkerställer att rollen fungerar som förväntat innan användarna får åtkomst till kontrollpanelen.
+* Definiera och tillämpa RLS på molnmodeller som är baserade på direkta frågor: Du kan nu skapa och tillämpa RLS-regler för datakällor med direkta frågor.
 
 ***Instrumentpaneler***
 
@@ -213,7 +213,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
 * [Stöd för Frågor och svar i Power BI för tabellmodeller i SQL Server 2016 Analys Server](service-q-and-a-direct-query.md): Vi är glada över att meddela förbättringar av Frågor och svar i Power BI och början på en offentlig förhandsversion av Frågor och svar för Power BI för datakällor som är kopplade till enterprise-gateway. Vi börjar med stöd för tabellmodeller i SQL Server 2016 Analys Server. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
-* [Stöd för lokala filer för Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): du kan nu ladda upp dina Excel-filer från din lokala enhet eller andra lagringstjänster och använda den Excel-rapporten precis som i Excel Online, fast med fördelarna hos Power BI. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
+* [Stöd för lokala filer för Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): Du kan nu ladda upp dina Excel-filer från din lokala enhet eller andra lagringstjänster och använda den Excel-rapporten precis som i Excel Online, fast med fördelarna hos Power BI. För mer information, [se blogginlägget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28 april 2016**
 
@@ -242,7 +242,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 ***Instrumentpaneler***
 
-* [Vimeo videopanelen](service-dashboard-add-widget.md): Lägg till en panel som innehåller en inbäddad Vimeo spelare från instrumentpanelen.
+* [Vimeo videopanelen](service-dashboard-add-widget.md):  Lägg till en panel som innehåller en inbäddad Vimeo spelare från instrumentpanelen.
 
 ***Analysera i Excel***
 
@@ -403,7 +403,7 @@ Många uppdateringar denna vecka gäller mest för Power BI Desktop men även fl
 * Förbättringar av visualiseringar:
   
   1. visuella utlösare för sorteringstillstånd i tabell
-  2. nytt visuellt objekt: Staplat ytdiagram
+  2. Nytt visuellt objekt: Staplat ytdiagram
   3. smart verktygstips för yt- och linjediagram vid hovring
   4. möjlighet att skapa en referensrad/-region för kartesiska visuella objekt
   5. bättre dataetiketter i cirkel- och punktdiagram
@@ -421,8 +421,8 @@ Många uppdateringar denna vecka gäller mest för Power BI Desktop men även fl
   1. Stöd för flerdimensionella SSAS - hierarkistöd (förhandsgranskningsfunktion)
   2. Stripe-anslutningsprogram
   3. Smartsheet-anslutningsprogram
-  4. ”Ange Data”: klistra in eller ange data för att skapa en tabell
-  5. Förbättringar av DirectQuery: Stöd för alla datatyper för T-SQL och SAP HANA, vilket förbättrar prestandan.
+  4. ”Ange data”: Klistra in eller ange data för att skapa en tabell
+  5. Förbättringar av DirectQuery:  Stöd för alla datatyper för T-SQL och SAP HANA, vilket förbättrar prestandan.
   6. ODBC-anslutningsprogram: Stöd för att välja användar-/system-DSN
   7. CSV-anslutningsprogram: Möjlighet att ange en avgränsare för kolumnen i dialogrutan för källan
 
@@ -448,7 +448,7 @@ All information, inklusive en video som visar många av de här uppdateringarna 
 * [Power BI-integrering med Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Förhandsgranskning av Power BI-gateway för företag](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Introduktion av nytt innehållspaket: [Sök Analytics från Bing på Power BI-instrumentpaneler](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
-* Nya förbättringar för utvecklare: [två nya API:er och enklare appregistrering](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
+* Nya förbättringar för utvecklare: [Två nya API: er och enklare appregistrering](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **24 november 2015**
 
@@ -595,7 +595,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 * En ny miljö för att skapa visualiseringar och rapporter: Den nya arbetsytan för rapporter har ett större antal visualiseringar, mer kontroll över rubrikformatering, förklaringar, axlar, bakgrunder med mera.
 * [Power BI-grupper](service-create-distribute-apps.md): grupper erbjuder en kraftfull samarbetsmiljö som bygger på Office 365-grupper.
 * [Organisationsinnehållspaket](service-organizational-content-pack-introduction.md): Det är otroligt enkelt att skapa instrumentpaneler och rapporter med Power BI. Nu kan användarna publicera innehållet i organisationens innehållsgalleri.
-* [Se till att i hela Excel-filer](service-excel-workbook-files.md): du kan ta en Excel-arbetsbok som lagras på OneDrive för företag i Power BI och visa hela arbetsboken, precis som i Excel Online.
+* [Ta med hela Excel-filer](service-excel-workbook-files.md): Du kan ta en Excel-arbetsbok som lagras på OneDrive för företag i Power BI och visa hela arbetsboken, precis som i Excel Online.
 * [Ta med CSV-filer](service-get-data-from-files.md): Precis som Excel- eller Power BI Desktop-filer kan kommaseparerade textfiler (CSV) också fungera som datauppsättning för dina instrumentpaneler och rapporter i Power BI.
 * Ersätt Excel, Power BI Desktop och CSV-filer: Du kan överföra en uppdaterad version av en fil till Power BI och den kommer att ersätta den befintliga datauppsättningen. Alla rapporter och instrumentpaneler som är anslutna till den här datauppsättningen använder den nya versionen automatiskt.
 * Vi är mycket glada över att kunna meddela att den här veckans uppdatering till Power BI nu har arbetsobjektspårning med [innehållspaketet Visual Studio Online](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx). Uppdateringen innehåller en ny instrumentpanel, rapport och en uppdaterad datauppsättning som ger insikter om dina arbetsuppgifter, förutom viktiga mått om Git-databasen , pull-begäranden och versionkontrollinnehåll som ingår i ursprungsversionen. Mer information om hur du kommer igång finns på hjälpsidan för innehållspaketet [Visual Studio Online för Power BI](service-connect-to-quickbooks-online.md).

@@ -4,17 +4,17 @@ description: Lär dig hur du publicerar appar som är samlingar av instrumentpan
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100828"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294119"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -31,7 +31,7 @@ Företagsanvändarna får dina appar på ett par olika sätt. Om Power BI-admini
 ## <a name="apps-and-organizational-content-packs"></a>Appar- och organisationsinnehållspaket
 Appar är utvecklingen av organisationsinnehållspaket. Innehållspaket är inte tillgängliga i förhandsversionen av den nya arbetsytan. När den nya arbetsytan blir allmänt tillgänglig kan du inte använda innehållspaket i nyligen skapade arbetsytor. Om du inte redan har gjort det bör du börja migrera dina innehållspaket till appar.
 
-## <a name="video-apps-and-app-workspaces"></a>Video: Appar och app-arbetsytor
+## <a name="video-apps-and-app-workspaces"></a>Video: Appar och apparbetsytor
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="licenses-for-apps"></a>Licenser för appar

@@ -1,29 +1,29 @@
 ---
-title: 'Självstudier: Skapa dina egna mått i Power BI Desktop'
-description: 'Självstudier: Skapa dina egna mått i Power BI Desktop'
+title: 'Självstudie: Skapa dina egna mått i Power BI Desktop'
+description: 'Självstudie: Skapa dina egna mått i Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 85c16822a51bc3c4a59bbfaa363f742f77552b72
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ba9cc81c966ebadb2aaff8c339b8a151aef7b6fd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578645"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287611"
 ---
-# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Självstudier: Skapa dina egna mått i Power BI Desktop
+# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Självstudie: Skapa dina egna mått i Power BI Desktop
 Du kan skapa några av de mest kraftfulla lösningarna för analys i Power BI Desktop med hjälp av mått. Mått hjälper dig genom att utföra beräkningar på dina data medan du interagerar med dina rapporter. I den här självstudien får du hjälp att förstå mått och skapa dina egna grundmått i Power BI Desktop.
 
 ### <a name="prerequisites"></a>Förutsättningar
 - Den här självstudien är avsedd för Power BI-användare som redan är bekanta med Power BI Desktop och som vill skapa mer avancerade modeller. Du bör redan känna till hur man använder Hämta data och Frågeredigeraren för att importera data, att arbeta med flera relaterade tabeller och att lägga till fält på rapportarbetsytan. Om du är nybörjare i Power BI Desktop bör du läsa [Komma igång med Power BI Desktop](desktop-getting-started.md).
   
-- Ladda ner filen [Contosos försäljningsexempel för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), den innehåller online-försäljningsdata från det fiktiva företaget Contoso, Inc. Dessa data har importerats från en databas, så du kan inte ansluta till datakällan eller visa den i frågeredigeraren. Packa upp filen på din dator och öppna den sedan i Power BI Desktop.
+- Hämta filen [Contoso försäljningsexempel för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) som innehåller onlineförsäljningsdata från det fiktiva företaget Contoso, Inc. Dessa data importerades från en databas så du kommer inte kunna ansluta till datakällan eller visa den i frågeredigeraren. Packa upp filen på din dator och öppna den sedan i Power BI Desktop.
 
 ## <a name="understand-measures"></a>Förstå mått
 
@@ -128,7 +128,7 @@ Om du vill se skillnaden mellan netto- och total försäljning efter land, välj
 
 ![Försäljningsbelopp (SalesAmount) och nettoförsäljning (NetSales) per land](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
-Diagrammet innehåller nu två mått: SalesAmount som summerats automatiskt, och det SalesNet-mått du skapade. Varje mått beräknas i samband med ett annat fält, RegionCountryName.
+Diagrammet använder nu två mått: SalesAmount, som summerades automatiskt, och Net Sales-måttet som du skapade. Varje mått beräknas i samband med ett annat fält, RegionCountryName.
     
 ### <a name="use-your-measure-with-a-slicer"></a>Använd måttet med ett utsnitt
 
