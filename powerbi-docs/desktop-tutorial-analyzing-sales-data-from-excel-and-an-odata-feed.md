@@ -1,23 +1,23 @@
 ---
 title: 'Självstudie: Kombinera data från Excel och en OData-feed i Power BI Desktop'
-description: 'Självstudier: Kombinera data från Excel och en OData-feed'
+description: 'Självstudie: Kombinera data från Excel och en OData-feed'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
-ms.openlocfilehash: 0ec22bd142f7509935691ff7bfcd38cb51a04fb2
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280120"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285770"
 ---
-# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Självstudier: Kombinera försäljningsdata från Excel och en OData-feed
+# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Kombinera försäljningsdata från Excel och en OData-feed
 
 Det är vanligt att sprida data över flera datakällor, såsom produktinformation i en databas och försäljningsinformation i en annan. Med **Power BI Desktop**, kan du kombinera data från olika källor för att skapa intressanta, attraktiva dataanalyser och visualiseringar. 
 

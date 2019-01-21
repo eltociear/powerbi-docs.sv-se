@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
-ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
+ms.openlocfilehash: d48df3287813229e673bbc523281cdb2218ec384
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53649055"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277283"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
 
@@ -76,7 +76,7 @@ I fönstret **Lägg till rolltilldelning** väljer du rollen **Läsare** för at
 
 Du måste skapa ett filsystem med namnet *powerbi* innan ditt lagringskontot kan läggas till i Power BI. Det finns många sätt att skapa sådana ett filsystem, inklusive användning av Azure Databricks, HDInsight, AZCopy eller Azure Storage Explorer. Det här avsnittet visas ett enkelt sätt att skapa ett filsystem med hjälp av Azure Storage Explorer.
 
-Det här steget kräver att du installerar Azure Storage Explorer version 1.6.1 eller senare. Om du vill installera Azure Storage Explorer för Windows, Macintosh eller Linux, se [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
+Det här steget kräver att du installerar Azure Storage Explorer version 1.6.2 eller senare. Om du vill installera Azure Storage Explorer för Windows, Macintosh eller Linux, se [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
 1. När du har installerat Azure Storage Explorer, kommer Microsoft Azure Storage Explorer – Anslut fönster att visas. Storage Explorer ger flera sätt att ansluta till lagringskonton,men för närvarande stöds bara ett sätt för de nödvändiga inställningarna. 
 

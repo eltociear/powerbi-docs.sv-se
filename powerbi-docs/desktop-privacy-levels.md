@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: reference
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d3ccba3e68400a5a4c5fbf486aa8ef4b00c51729
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: b3815e6783b612ff52aeb015fdd3b3669b6a2a51
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578346"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282983"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Sekretessnivåer i Power BI Desktop
 I **Power BI Desktop**, anger sekretessnivåer en isoleringsnivå som definierar hur en datakälla isoleras från andra datakällor. Även om en begränsande isoleringsnivå blockerar information från att utbytas mellan datakällor, kan det minska funktionaliteten och påverka prestandan.
@@ -52,7 +52,7 @@ Om du vill konfigurera en sekretessnivå för datakällan, väljer du datakälla
 | **Kombinera data i enlighet med dina sekretessnivåinställningar för varje källa** (på och standardinställningen) |Sekretessnivåinställningarna används för att fastställa nivån av isolering mellan datakällor när du kombinerar data. |
 | **Ignorera sekretessnivåerna och förbättra eventuellt prestandan** (inaktiverat) |Sekretessnivåer beaktas inte när du kombinerar data, men prestandan och funktionaliteten för data kan förbättras. |
 
-> **Säkerhetsmeddelande:** om du aktiverar **Sekretessnivåer** genom att välja **Ignorera sekretessnivåerna och förbättra eventuellt prestandan** i dialogrutan **Sekretessnivåer** kan det potentiellt exponera känsliga eller konfidentiella data för en obehörig person. Aktivera inte **Sekretessnivåer** om du inte är säker på att datakällan inte innehåller känsliga eller konfidentiella data.
+> **Säkerhetsmeddelande:** Om du aktiverar **Sekretessnivåer** genom att välja **Ignorera sekretessnivåerna och förbättra eventuellt prestandan** i dialogrutan **Sekretessnivåer** kan det medföra att potentiellt känsliga eller konfidentiella data exponeras för obehöriga. Aktivera inte **Sekretessnivåer** om du inte är säker på att datakällan inte innehåller känsliga eller konfidentiella data.
 > 
 > 
 
@@ -68,7 +68,7 @@ a. När **Kombinera data enligt dina sekretessnivåinställningar för varje kä
 
 b. När **Ignorera sekretessnivåerna och förbättra eventuellt prestandan** är markerat, kombineras data och dina sekretessnivåer ignoreras, något som kan visa känslig eller konfidentiell information för obehöriga användare. Inställningen kan förbättra prestanda och funktionalitet.
 
-> **Säkerhetsmeddelande:** om du väljer **Ignorera sekretessnivåer och förbättra eventuellt prestandan** kan du förbättra prestandan, men Power BI Desktop kan inte garantera säkerheten för de data som är sammanfogade i Power BI Desktop-filen.
+> **Säkerhetsmeddelande:** Om du väljer **Ignorera sekretessnivåer och förbättra eventuellt prestandan** kan du förbättra prestandan, men Power BI Desktop kan inte garantera säkerheten för de data som är sammanfogade i Power BI Desktop-filen.
 > 
 > 
 

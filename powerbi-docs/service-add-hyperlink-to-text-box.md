@@ -6,22 +6,22 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 92c5ad6be98e77c7fb844d45ab135bfb9d1cd141
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 6b438b9d9e66d336b94122fe96a707f0602261b4
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829974"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278029"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Lägga till en hyperlänk i en textruta i en rapport
 Textrutor kan läggas till i rapporter, fästas på instrumentpaneler från rapporter och läggas till direkt på instrumentpaneler. Hyperlänkar kan läggas till en textruta oavsett var den finns.  
 
-> **OBS**: Information om hyperlänkar i Power BI-tabeller och -matriser finns i [Hyperlänkar i tabeller](power-bi-hyperlinks-in-tables.md). Mer information om att lägga till textrutor till **instrumentpanelen** finns i [Add a tile directly from the dashboard (Lägga till en panel direkt från instrumentpanelen)](service-dashboard-add-widget.md). 
+> **Obs!** Information om hyperlänkar i Power BI-tabeller och -matriser finns i [Hyperlänkar i tabeller](power-bi-hyperlinks-in-tables.md). Mer information om att lägga till textrutor till **instrumentpanelen** finns i [Add a tile directly from the dashboard (Lägga till en panel direkt från instrumentpanelen)](service-dashboard-add-widget.md). 
 > 
 > 
 

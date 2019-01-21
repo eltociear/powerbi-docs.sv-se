@@ -5,26 +5,26 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e0151931d0ad9f610c24dd9aedf8f06d79e167c3
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 111e38fd37bcdfa2a72986bb08a37d89345bbe69
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670128"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282274"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Minska storleken på en Excel-arbetsbok för att visa den i Power BI
 Du kan ladda upp Excel-arbetsböcker som är mindre än 1 GB till Power BI. En Excel-arbetsbok kan ha två delar: en datamodell och resten av rapporten. Arbetsbokens kärninnehåll. Om rapporten uppfyller följande storleksgränser, kan du spara den till **OneDrive för företag**, ansluta till den från Power BI och visa den i Excel Online:
 
 * Arbetsboken som helhet kan vara upp till 1 GB.
-* Arbetsbokens kärninnehåll kan vara upp till 10 MB.
+* Arbetsbokens kärninnehåll kan vara upp till 30 MB.
 
-## <a name="what-makes-core-worksheet-contents-larger-than-10-mb"></a>Vad gör arbetsbokens kärninnehåll större än 10 MB
-Här följer några element som kan göra att arbetsbokens kärninnehåll är större än 10 MB:
+## <a name="what-makes-core-worksheet-contents-larger-than-30-mb"></a>Vad gör arbetsbokens kärninnehåll större än 30 MB
+Här följer några element som kan göra att arbetsbokens kärninnehåll är större än 30 MB:
 
 * Bilder.
 * Skuggade celler. [Ta bort ett cellskuggningsformat](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
@@ -44,14 +44,14 @@ Om du vill göra dessa ändringar, måste du redigera arbetsboken i Excel.
 Läs mer om [filstorleksgränser för Excel-arbetsböcker i SharePoint Online](https://support.office.com/article/File-size-limits-for-workbooks-in-SharePoint-Online-9e5bc6f8-018f-415a-b890-5452687b325e).
 
 ## <a name="remove-data-from-worksheets"></a>Ta bort data från kalkylblad
-Om du importerar data till Excel från Power Query-fliken eller Excel Data-fliken, kanske arbetsboken har samma data i en Excel-tabell och i datamodellen. Stora tabeller i Excel-kalkylblad kan göra att kalkylbladets kärninnehåll blir större än 10 MB. Om du tar bort tabellen i Excel och behåller data i datamodellen, kan du avsevärt minska kalkylbladet kärninnehåll i rapporten. 
+Om du importerar data till Excel från Power Query-fliken eller Excel Data-fliken, kanske arbetsboken har samma data i en Excel-tabell och i datamodellen. Stora tabeller i Excel-kalkylblad kan göra att kalkylbladets kärninnehåll blir större än 30 MB. Om du tar bort tabellen i Excel och behåller data i datamodellen, kan du avsevärt minska kalkylbladet kärninnehåll i rapporten. 
 
 Följ dessa tips när du importerar data till Excel:
 
-* **I Power Query**: rensa rutan **läs in till arbetsblad**.
+* **I Power Query**: Rensa rutan **Läs in i kalkylblad**.
   
   Data importeras endast till datamodellen, utan data i Excel-kalkylbladen.
-* **På Excel Data-fliken**, om du tidigare har markerat **tabell** i importguiden: gå till **befintliga anslutningar** \> klicka på anslutningen \> **skapa endast anslutning**. Ta bort den ursprungliga tabellen eller tabellerna som skapades under den initiala importen.
+* **Från Excel Data-fliken**, om du tidigare har markerat **Tabell** i Importguiden: Gå till **Befintliga anslutningar** \> och klicka på \> **Skapa endast anslutning**. Ta bort den ursprungliga tabellen eller tabellerna som skapades under den initiala importen.
 * **På Excel Data-fliken**: markera inte **tabell** i rutan **importera data**.
 
 ## <a name="workbook-size-optimizer"></a>Arbetsbokens storleksoptimering

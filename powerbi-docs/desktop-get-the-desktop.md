@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5eb2e63d9bac7249e106ad4c4b525ca3f3ab5cf8
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: be4ebfdfa7dca5ce212c2b5d242d87b0001b7750
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909604"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281929"
 ---
 # <a name="get-power-bi-desktop"></a>Hämta Power BI Desktop
 **Power BI Desktop** låter dig skapa avancerade frågor, modeller och rapporter som visualiserar data. Med **Power BI Desktop**, kan du skapa datamodeller, skapa rapporter och dela ditt arbete genom att publicera till Power BI-tjänsten.  **Power BI Desktop** är en kostnadsfri nedladdning.
@@ -94,9 +94,9 @@ Följande lista innehåller minimikraven för att köra **Power BI Desktop**:
 * Windows 7 / Windows Server 2008 R2 eller senare
 * .NET 4.5
 * Internet Explorer 9 eller senare
-* **Minne (RAM):** minst 1 GB tillgängligt, 1,5 GB eller mer rekommenderas.
-* **Bildskärm:** minst 1 440 x 900 eller 1 600 x 900 (16:9) rekommenderas. Lägre upplösningar, till exempel 1 024 x 768 eller 1 280 x 800 rekommenderas inte, eftersom vissa kontroller (till exempel att stänga startskärmen) visas utanför de upplösningarna.
-* **Windows bildskärmsinställningar:** om dina bildskärmsinställningar är inställda att ändra storleken på text, appar och andra objekt till mer än 100%, kanske du inte ser vissa dialogrutor som måste stängas eller svaras på för att fortsätta med **Power BI Desktop**. Om du påträffar det här problemet, kontrollera dina **bildskärmsinställningar** genom att gå till **Inställningar > System > Visa** i Windows och använda skjutreglaget för att återställa bildskärmsinställningarna till 100 %.
+* **Minne (RAM):** Minst 1 GB tillgängligt, 1,5 GB eller mer rekommenderas.
+* **Bildskärm:** Minst 1 440 x 900 eller 1 600 x 900 (16:9) rekommenderas. Lägre upplösningar, till exempel 1 024 x 768 eller 1 280 x 800 rekommenderas inte, eftersom vissa kontroller (till exempel att stänga startskärmen) visas utanför de upplösningarna.
+* **Windows bildskärmsinställningar:** Om dina bildskärmsinställningar är inställda att ändra storleken på text, appar och andra objekt till mer än 100%, kanske du inte ser vissa dialogrutor som måste stängas eller svaras på för att fortsätta med **Power BI Desktop**. Om du påträffar det här problemet, kontrollera dina **bildskärmsinställningar** genom att gå till **Inställningar > System > Visa** i Windows och använda skjutreglaget för att återställa bildskärmsinställningarna till 100 %.
 * **Processor:** 1 gigahertz (GHz) eller snabbare x86- eller x64-bitars processor rekommenderas.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
@@ -115,7 +115,7 @@ Användaren kan oftast åtgärda problemet genom att uppdatera till den aktuella
 Vi rekommenderar att du uppdaterar till den senaste versionen av Power BI Desktop för att kunna utnyttja nya funktioner, prestanda, stabilitet och andra förbättringar. Det kan hända att vissa företag inte vill att deras användare uppdaterar till varje ny version. Du kan inaktivera meddelanden genom att ändra registret med följande steg:
 
 1. Använd Registereditorn och navigera till *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
-2. Skapa en ny post med följande inställningar: *REG_DWORD: DisableUpdateNotification*
+2. Skapa en ny post där med följande inställningar: *REG_DWORD: DisableUpdateNotification*
 3. Ange värdet för den nya posten till **1**.
 
 Datorn måste kanske startas om innan ändringarna börjar gälla.

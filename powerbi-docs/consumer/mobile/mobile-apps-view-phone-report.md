@@ -1,20 +1,20 @@
 ---
 title: Visa Power BI-rapporter som är optimerade för din telefon
 description: Läs mer om att interagera med rapportsidor som har optimerats för visning i Power BI-appar.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
-ms.author: maggies
-ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547808"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276916"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
 
@@ -48,7 +48,7 @@ Om en telefonoptimerad rapport har filter definierade, kan du använda dessa fil
     ![Avancerat filter för rapport på telefon](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Korsmarkera visuella objekt
-Korsmarkering i telefonrapporter fungerar på samma sätt som i Power BI-tjänsten och rapporter på telefonen i liggande läge: När du väljer data i ett visuellt objekt markeras relaterade data i andra visuella objekt på sidan.
+Korsmarkering av visuella objekt i telefonrapporter fungerar på samma sätt som i Power BI-tjänsten och i rapporter på telefoner i liggande läge: När du väljer data i ett visuellt objekt markeras relaterade data i övriga visuella objekt på samma sida.
 
 Läs mer om [filtrering och markering i Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -70,7 +70,7 @@ Vissa åtgärder kan endast utföras i fokusläge på grund av skärmens storlek
 
 * **Ändra detaljnivån** i informationen som visas i ett visuellt objekt. Läs mer om att ändra detaljnivån [nedåt och uppåt](mobile-apps-view-phone-report.md#drill-down-in-a-visual) i en telefonrapport nedan.
 * **Sortera** värdena i det visuella objektet.
-* **Återställa**: Rensa de utforskningssteg du har tagit på ett visuellt objekt och återgå till de definitioner som gällde när rapporten skapades.
+* **Återställa**: Rensa de utforskningssteg du har genomfört för ett visuellt objekt och återgå till de definitioner som gällde när rapporten skapades.
   
     Tryck på ellipsen (**...**) > **Återställ** för att rensa all utforskningsaktivitet från ett visuellt objekt.
   

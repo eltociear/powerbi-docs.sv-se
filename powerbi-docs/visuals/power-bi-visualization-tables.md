@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c94fd3ce58cefdb9e3cc7749b6486ab9bb0577cb
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 2c909f1f7d2c1b500d37de0e4617e10c79977c96
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101472"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284781"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter och instrumentpaneler
 En tabell är ett rutnät som innehåller relaterade data i en logisk serie med rader och kolumner. Det kan också innehålla rubriker och en rad för summor. Tabeller fungerar bra med kvantitativa jämförelser där du tittar på många värden för en enskild kategori. I den här tabellen visas till exempel 5 olika mått för **Kategori**.
@@ -135,7 +135,7 @@ Power BI trunkerar ibland en kolumnrubrik i en rapport eller på en instrumentpa
 ![närbild på storleksändring av kolumn](media/power-bi-visualization-tables/resizetable.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-* Om du lägger till kolumnformatering kan du bara välja ett justeringsalternativ per kolumn: automatisk justering, vänsterjustering, centrering eller högerjustering. Oftast innehåller en kolumn antingen text eller tal, inte en blandning av både text och tal. Om en kolumn innehåller både tal och text vänsterjusteras texten och talen högerjusteras om du väljer **automatisk justering**. Det här beteendet används med ”vänster till höger”-språk.   
+* Om du lägger till kolumnformatering kan du bara välja ett justeringsalternativ per kolumn: Automatisk justering, vänsterjustering, centrering, högerjustering. Oftast innehåller en kolumn antingen text eller tal, inte en blandning av både text och tal. Om en kolumn innehåller både tal och text vänsterjusteras texten och talen högerjusteras om du väljer **automatisk justering**. Det här beteendet används med ”vänster till höger”-språk.   
 
 ## <a name="next-steps"></a>Nästa steg
 

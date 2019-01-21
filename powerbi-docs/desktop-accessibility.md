@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619642"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280066"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -33,10 +33,10 @@ När du visar en rapport bör du stänga av skanningsläget.
 
 Du kan växla mellan flikar i rapporten eller objekt på en viss rapportsida med **Ctrl + F6**.
 
-* När fokus ligger på *flikar i rapporten* kan du använda *tabb-* eller *pil*tangenterna för att flytta fokus från en rapport till nästa. Rubriken på rapportsidan och om den är markerad kan läsas av skärmläsaren. Om du vill läsa in sidan för närvarande under fokus, använder du tangenten *Retur* eller *Blanksteg*.
-* När fokus är på en laddad *rapportsida* använder du *tabbtangenten* för att byta fokus på varje objekt på sidan, vilket omfattar alla textrutor, former och diagram. Skärmläsaren läser typen av objekt, objektets rubrik om det har en och en beskrivning av objektet om det har tillhandahållits av rapportens författare. 
+* När fokus ligger på *flikar i rapporten* kan du använda *tabb-* eller *pil*tangenterna för att flytta fokus från en rapport till nästa. Rapportsidans rubrik, och huruvida den är markerad, läses av skärmläsaren. Om du vill läsa in sidan för närvarande under fokus, använder du tangenten *Retur* eller *Blanksteg*.
+* När fokus är på en laddad *rapportsida* använder du *tabbtangenten* för att byta fokus på varje objekt på sidan, vilket omfattar alla textrutor, former och diagram. Skärmläsaren läser typen av objekt, objektets rubrik (om sådan finns) och en beskrivning av objektet, om en sådan har tillhandahållits av rapportens författare. 
 
-Om du vill interagera med visuella objekt ytterligare när du navigerar mellan dem trycker du på **Alt + Skift + F10** för att flytta fokus till rubriken som innehåller olika alternativ som t.ex. sortering, exportering av data bakom diagrammet och fokusläge. 
+När du navigerar mellan visuella objekt trycker du på **Alt + Skift + F10** om du vill flytta fokus till det visuella objektets rubrik, som innehåller olika alternativ som sortering, export av data bakom diagrammet och fokusläge. 
 
 ![Tryck på Alt+Skift+F10 i Power BI Desktop för att flytta fokus till sidhuvudet för visuellt objekt](media/desktop-accessibility/accessibility_08.png)
 
@@ -69,7 +69,7 @@ Följande tips kan hjälpa dig att skapa mer tillgängliga **Power BI Desktop**-
   
   * Med hjälp av en annan *Markör* för varje linje är det enklare för rapportanvändare att skilja linjer (eller områden) från varandra.
 * Som uppföljning till den tidigare punkten bör du inte använda färg för att förmedla information. Förutom att använda former i rad-och punktdiagram bör du inte använda villkorsstyrd formatering för att tillhandahålla insikter i tabeller och matriser. 
-* Välj en avsiktlig sorteringsordning för varje visuellt objekt i rapporten. När användaren av skärmläsaren navigerar bland data bakom diagrammet väljer den samma sorteringsordning som det visuella objektet.
+* Välj en avsiktlig sorteringsordning för varje visuellt objekt i rapporten. När skärmläsaranvändaren navigerar bland data bakom diagrammet används samma sorteringsordning som i det visuella objektet.
 * Välj ett *tema* med hög kontrast och som är anpassat för färgblinda från temagalleriet och importera det med förhandsversionsfunktionen [**Teman**](desktop-report-themes.md).
 * Ange en *alternativtext* för varje objekt i en rapport. På så sätt kan användare av din rapport förstå vad du försöker kommunicera med ett visuellt objekt, även om de inte kan se det visuella objektet, bilden, formen eller textrutan. Du kan ange *Alternativtext* för alla objekt på en **Power BI Desktop**-rapport genom att markera objektet (till exempel ett visuellt objekt, en form o.s.v.) och i rutan **Format** välja **Visualiseringar**, expandera **Allmänt**, bläddra längst ned och fylla i textrutan **Alternativtext**.
   
@@ -141,7 +141,7 @@ I vår fortsatta strävan efter att förbättra hjälpmedel så stöder även de
 ### <a name="pane-navigation"></a>Fönsternavigering
 | Gör så här:           | Tryck på                |
 | :------------------- | :------------------- |
-| Öppna en snabbmeny | <ul><li>Windows-tangentbordet: Windows-menytangenten + F10.  Windows-menytangenten ligger mellan den vänstra Alt-tangenten och Vänsterpil-tangenten</li><li>Annat tangentbord: Skift + F10</li></ul> |
+| Öppna en snabbmeny | <ul><li>Windows-tangentbordet: Windows innehållsnyckel + F10.  Windows-menytangenten ligger mellan den vänstra Alt-tangenten och Vänsterpil-tangenten</li><li>Andra tangentbord: Skift + F10</li></ul> |
 
 ### <a name="slicer"></a>Utsnitt
 | Gör så här:           | Tryck på                |
@@ -170,7 +170,10 @@ I vår fortsatta strävan efter att förbättra hjälpmedel så stöder även de
 | Välj alla förekomster av aktuellt val | Ctrl + Skift + L |
 | Välj alla förekomster av aktuellt ord | Ctrl + F2 |
 
-
+### <a name="enter-data"></a>Ange data
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Avsluta redigerbart rutnät | Ctrl + Tabb |
 
 
 ## <a name="next-steps"></a>Nästa steg

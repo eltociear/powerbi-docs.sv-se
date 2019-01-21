@@ -4,19 +4,19 @@ description: Självstudier om hur du använder Power BI frågor och svar för at
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c139d5561a19dab147610914bc11e1bfd9e9e481
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830020"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277375"
 ---
-# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Självstudie: använd frågor och svar för att skapa visualiseringar och rapporter
+# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Självstudie: Hur du använder frågor och svar för att skapa visualiseringar och rapporter
 [Översikt över frågor och svar](consumer/end-user-q-and-a.md) introducerade dig till Power BI frågor och svar och visade på skillnaden mellan *konsumenter* (får instrumentpaneler och rapporter delade med sig) och *skapare* ( äger de underliggande rapporterna och datauppsättningarna). Den första delen av den här självstudien är främst avsedd för personer som använder instrumentpaneler med Power BI-tjänsten. Den andra delen är skapad för folk som skapar rapporter med hjälp av antingen Power BI-tjänsten eller Power BI Desktop. [Frågor och svar och Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) och [Frågor och svar med Power BI Embedded](developer/qanda.md) täcks i separata artiklar.
 
 Frågor och svar är interaktivt och till och med roligt. Ofta leder en fråga till flera andra när visualiseringarna avslöjar intressanta spår att följa upp. Titta när Amanda demonstrerar frågor och svar för att skapa visuella objekt, detaljgranska dem och fästa dem till instrumentpaneler.
@@ -104,7 +104,7 @@ Med frågor och svar, kan du inte bara be dina data att tala för sig själva, d
 
 ## <a name="next-steps"></a>Nästa steg
 Gå tillbaka till [Frågor och svar i Power BI](consumer/end-user-q-and-a.md)   
-[Självstudie: använd frågor och svar med detaljhandelsexemplet](power-bi-visualization-introduction-to-q-and-a.md)   
+[Självstudier: Använd frågor och svar med detaljhandelsexemplet](power-bi-visualization-introduction-to-q-and-a.md)   
 [Tips för att ställa frågor i frågor och svar](consumer/end-user-q-and-a-tips.md)   
 [Förbered en arbetsbok för frågor och svar](service-prepare-data-for-q-and-a.md)  
 [Förbered en lokal datauppsättning för frågor och svar](service-q-and-a-direct-query.md)

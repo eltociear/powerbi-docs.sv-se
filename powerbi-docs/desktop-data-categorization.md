@@ -5,24 +5,24 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 55e496656046037226a7414c994697b670bcf8c9
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 92191c96409a3a75ad44f8d3472805a3e98da7dd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669737"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275719"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
 I **Power BI Desktop** kan du ange datakategori för en kolumn så att Power BI Desktop vet hur den ska hantera dess värden i en visualisering.
 
 När Power BI Desktop importerar data hämtas inte bara själva informationen, utan även information som tabell- och kolumnnamn, om det är en primär nyckel, osv.  Med denna information gör Power BI Desktop några antaganden om hur du ska få en bra standardupplevelse när du skapar en visualisering. 
 
-Här är ett exempel: När Power BI Desktop upptäcker en kolumn som innehåller numeriska värden, vill du förmodligen sammanställa den på något sätt, så den placeras i området Värden. Eller, för en kolumn med datum/tid-värden förutsätts det att du förmodligen ska använda den som en tidshierarkiaxel i ett linjediagram.
+Här är ett exempel: När Power BI Desktop upptäcker en kolumn som innehåller numeriska värden vill du förmodligen sammanställa den på något sätt, så den placeras i området Värden. Eller, för en kolumn med datum/tid-värden förutsätts det att du förmodligen ska använda den som en tidshierarkiaxel i ett linjediagram.
 
 Men det finns vissa fall som är lite mer utmanande, t.ex. geografiska platser. Titta på följande tabell från ett Excel-kalkylblad:
 

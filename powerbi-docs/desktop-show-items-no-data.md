@@ -5,21 +5,21 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f4c9fec65f9c006095470a8983f889d44f3ce460
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072898"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279997"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Visa objekt utan data i Power BI
 
-Med Power BI kan du visualisera alla typer av data från olika källor. När du skapar ett visuellt objekt visar Power BI endast relevanta data när du skapar ett visuellt objekt för att korrekt kunna hantera hur data presenteras och visas. Power BI fastställer vilka data som är relevanta utifrån det visuella objektets konfiguration och den underliggande datamodellen. I den här artikeln beskrivs hur Power BI fungerar vid fastställande av relevanta data, med exempel som visar hur besluten fattas.
+Med Power BI kan du visualisera alla typer av data från olika källor. När du skapar ett visuellt objekt så visar Power BI endast relevanta data när du skapar ett visuellt objekt för att korrekt kunna hantera hur data presenteras och visas. Power BI fastställer vilka data som är relevanta utifrån det visuella objektets konfiguration och den underliggande datamodellen. I den här artikeln beskrivs hur Power BI fungerar vid fastställande av relevanta data, med exempel som visar hur besluten fattas.
 
 ![Aktivera funktionen Visa poster utan data](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -65,7 +65,7 @@ Därför visar Power BI de kombinationer som har poster i Product-tabellen, vilk
 
 **4. Grupper från olika och orelaterade tabeller**
 
-Exempelmodellen har inte den här kombinationen, men om det skulle finna grupper från olika och orelaterade tabeller, så skulle Power BI inte kunna relatera till de två kolumnerna, och resultatet skulle bli en korsanslutning av alla värden i varje kolumn. I en sådan situation utfärdar Power BI ett fel av typen *obegränsad anslutning* eftersom sådana anslutningar är dyra att beräkna i databasen och inte förser användaren med särskilt mycket information. 
+Exempelmodellen har inte den här kombinationen, men om det skulle finnas grupper från olika och orelaterade tabeller så skulle Power BI inte kunna relatera de två kolumnerna. Resultatet skulle bli en korsprodukt av alla värden för varje kolumn. I en sådan situation utfärdar Power BI ett fel av typen *obegränsad anslutning* eftersom sådana anslutningar är dyra att beräkna i databasen och inte förser användaren med särskilt mycket information. 
 
 ![Felet som visas för en obegränsad anslutning](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
@@ -76,7 +76,7 @@ I föregående avsnitt beskrivs hur Power BI fastställer vilka data som är rel
 
 Med funktionen **Visa poster utan data** kan du göra just detta, dvs inkludera datarader och kolumner som inte innehåller måttdata (tomma måttvärden).
 
-Aktivera funktionen **Visa poster utan data** så att den kan välja ett visuellt objekt, och högerklicka sedan på fältet i **Fält** och välj **Visa poster utan data** på den meny som visas, så som visas i följande bild.
+Aktivera funktionen **Visa objekt utan data** så att den kan välja ett visuellt objekt, och högerklicka sedan på fältet i **Fält** och välj **Visa objekt utan data** på den meny som visas, så som visas i följande bild:
 
 ![Aktivera funktionen Visa poster utan data](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -139,7 +139,7 @@ Observera hur *(Gloss-Red)* och *(None, blank)* visades som kombinationer. Detta
 
 Det är viktigt att tänka på att mekanismen för att välja kolumnvärdena är ordningsberoende och kan betraktas som en åtgärd av typen *vänster yttre koppling* mellan tabeller. Om kolumnordningen ändras så ändras även resultatet.
 
-Låt oss ta en titt på ett exempel där ordningen ändras och detta påverkar resultaten. Det här är detsamma som objektet **2** i det här avsnittet, men med ändrad ordning.
+Låt oss ta en titt på ett exempel där ordningen ändras och hur det påverkar resultaten. Det här är detsamma som objektet **2** i det här avsnittet, men med ändrad ordning.
 
 **Product[Color] – ProductStyle[Finish] – Sum(Sales[Quantity])**
 
@@ -193,6 +193,6 @@ I det här avsnittet visas den exempeldatamodell som används i exemplen i den h
 
 ## <a name="next-steps"></a>Nästa steg
 
-I den här artikeln beskrivs hur du kan aktivera funktionen **Visa poster utan data** i Power BI. Följande artiklar kan också vara av intresse för dig. 
+I den här artikeln beskrivs hur du kan aktivera funktionen **Visa poster utan data** i Power BI. Följande artiklar kan också vara av intresse för dig: 
 
-* [Datakällor i Power BI Desktop](desktop-data-sources.md)
+* [Standardmedlem i flerdimensionella modeller i Power BI](desktop-default-member-multidimensional-models.md)

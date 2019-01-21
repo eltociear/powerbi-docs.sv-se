@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/11/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8856a8641b38b7a8256b199acccd54e030bdce40
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: dd4ee055501974345c819f7604ff30174cd4c5ba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53984807"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279023"
 ---
 # <a name="organize-work-in-the-new-workspaces-preview-in-power-bi"></a>Organisera arbete i de nya arbetsytorna (förhandsversion) i Power BI
 
@@ -43,7 +43,7 @@ Under förhandsversionsperioden kan gamla och nya arbetsytor finnas sida vid sid
 
 ## <a name="roles-in-the-new-workspaces"></a>Roller i de nya arbetsytorna
 
-Du kan lägga till användargrupper eller enskilda personer till de nya arbetsytorna som medlemmar, deltagare eller administratörer. Alla i en användargrupp får den roll som du har definierat. Om en person finns i flera användargrupper får personen den högsta behörighetsnivån som ges av rollen.  En förklaring av de olika rollerna finns i [Roller i de nya arbetsytorna](#roles-in-the-new-workspaces) senare i den här artikeln.
+Du kan lägga till användargrupper eller enskilda personer till de nya arbetsytorna som medlemmar, deltagare eller administratörer. Alla i en användargrupp får den roll som du har definierat. Om en person finns i flera användargrupper får personen den högsta behörighetsnivån som ges av rollen.
 
 Alla som du lägger till i en arbetsyta behöver en Power BI Pro-licens. På arbetsytan kan användarna samarbeta kring instrumentpaneler och rapporter som du planerar att publicera till en bredare publik eller hela organisationen. Om du vill distribuera innehåll till andra i organisationen kan du tilldela Power BI Pro-licenser till de användarna eller placera arbetsytan i en Power BI Premium-kapacitet.
 
@@ -83,9 +83,7 @@ Under förhandsversionsperioden kan du inte automatiskt konvertera dina gamla ar
 
 När de nya arbetsytorna blir allmänt tillgängliga (GA, generally available) kan du välja att gå med för att migrera gamla automatiskt. Någon gång efter GA måste du migrera dem.
 
-## <a name="power-bi-apps-faq"></a>Vanliga frågor och svar om Power BI-appar
-
-### <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Hur skiljer sig de nya arbetsytorna åt från aktuella arbetsytor?
+## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Hur skiljer sig de nya arbetsytorna åt från aktuella arbetsytor?
 
 Vi gör om vissa funktioner i och med de nya arbetsytorna. Här är förändringarna du kan förvänta dig blir permanenta tillsammans med förhandsversionen. 
 
@@ -94,6 +92,13 @@ Vi gör om vissa funktioner i och med de nya arbetsytorna. Här är förändring
 - Du kan skapa ett innehållspaket för organisationen från en aktuell arbetsyta. Du kan inte skapa sådana från de nya arbetsytorna.
 - Du kan använda ett innehållspaket för organisationen från en aktuell arbetsyta. Du kan inte använda sådana från de nya arbetsytorna.
 - Under förhandsversionsperioden är vissa funktioner ännu inte aktiverade för nya arbetsytor. Mer information finns i nästa avsnitt om [planerade funktioner för nya arbetsytor](service-new-workspaces.md#planned-new-workspace-preview-features).
+
+## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+
+Begränsningar att känna till:
+
+- Arbetsytor kan innehålla högst 1 000 datauppsättningar eller 1 000 rapporter per datauppsättning. 
+- En person med en Power BI Pro-licens kan vara medlem i högst 250 arbetsytor.
 
 ## <a name="planned-new-workspace-preview-features"></a>Planerade förhandsfunktioner för de nya arbetsytorna
 

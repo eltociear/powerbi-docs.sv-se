@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619504"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279192"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringsläge i Power BI Desktop (förhandsversion)
 
@@ -25,21 +25,21 @@ I Microsoft Power BI Desktop kan du ange *lagringsläge* för tabeller. *Lagring
 
 Att konfigurera lagringsläget ger många fördelar. Du kan ange lagringsläget för varje tabell individuellt i din modell. Den här åtgärden aktiverar en enda datauppsättning, vilket ger följande fördelar:
 
-* **Frågeprestanda**: Då användare interagerar med Power BI-rapporter skickas DAX-frågor (Data Analysis Expressions) till datauppsättningen. Om du cachelagrar data i minnet genom att konfigurera lagringsläget kan du öka dina rapporters frågeprestanda och interaktivitet.
+* **Frågeprestanda**: När användare interagerar med Power BI-rapporter så skickas DAX-frågor (Data Analysis Expressions) till datauppsättningen. Om du cachelagrar data i minnet genom att konfigurera lagringsläget kan du öka dina rapporters frågeprestanda och interaktivitet.
 
-* **Stora datamängder**: Tabeller som inte cachelagras inte förbrukar inte minne för cachelagring. Du kan aktivera interaktiv analys för stora datauppsättningar som är för stora eller dyra att cachelagra helt och hållet. Du kan ange vilka tabeller som är värda att cachelagra och vilka som inte är det.
+* **Stora datauppsättningar**: Tabeller som inte cachelagras förbrukar inte minne för cachelagring. Du kan aktivera interaktiv analys för stora datauppsättningar som är för stora eller dyra att cachelagra helt och hållet. Du kan ange vilka tabeller som är värda att cachelagra och vilka som inte är det.
 
 * **Optimering av datauppdatering**: Tabeller som inte cachelagras behöver inte uppdateras. Du kan minska uppdateringstiderna genom att cachelagra endast nödvändiga data så som passar ditt serviceavtal och dina affärsbehov.
 
-* **Tidskrav nära realtid**: Tabeller med krav på nära realtid kan dra fördel av att inte cachelagras, så att datafördröjningen minskas.
+* **Tidskrav nära realtid**: Tabeller med krav på nära realtid kan dra fördel av att inte cachelagras för att minska datafördröjningen.
 
-* **Tillbakaskrivning**: Med tillbakaskrivning kan affärsanvändare utforska olika tänkbara scenarion genom att ändra cellvärden. Anpassade program kan tillämpa ändringar i datakällan. Tabeller som inte cachelagras kan visar ändringar omedelbart, vilket innebär att effekterna kan analyseras direkt.
+* **Tillbakaskrivning**: Tillbakaskrivning låter affärsanvändare utforska olika tänkbara scenarion genom att ändra cellvärden. Anpassade program kan tillämpa ändringar i datakällan. Tabeller som inte cachelagras kan visar ändringar omedelbart, vilket innebär att effekterna kan analyseras direkt.
 
 Inställningen för lagringsläget i Power BI Desktop är en av tre relaterade funktioner:
 
 * **Sammansatta modeller**: Låter en rapport ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Du hittar mer information i [Använd sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
 
-* **Många-till-många-relationer**: Med *sammansatta modeller*, kan du etablera *många-till-många-relationer* mellan tabeller. *Många-till-många-relationer* tar bort krav för unika värden i tabeller. Det tar också bort tidigare lösningar, till exempel introduktion till nya tabeller endast för att skapa relationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md).
+* **Många-till-många-relationer**: Med *sammansatta modeller* så kan du etablera *många-till-många-relationer* mellan tabeller. *Många-till-många-relationer* tar bort krav för unika värden i tabeller. Det tar också bort tidigare lösningar, till exempel introduktion till nya tabeller endast för att skapa relationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md).
 
 * **Lagringsläge**: Nu kan du ange vilka visuella objekt som kräver en fråga till serverdelens datakällor. Visuella objekt som inte kräver en fråga importeras även om de är baserade på DirectQuery. Den här funktionen hjälper till att förbättra prestanda och minskar belastningen på serversidan. Tidigare initierade även enkla visuella objekt som utsnitt frågor som skickades till serverdelskällor. Lagringsläget beskrivs ytterligare i den här artikeln.
 
@@ -55,11 +55,11 @@ Den aktuella egenskapen visas i listrutan **lagringsläge** i tabellens fönster
 
 Det finns tre värden för lagringsläge:
 
-* **Import**: När värdet är inställt till **Import** cachelagras importerade tabeller. Frågor som skickats till Power BI-datauppsättningen som returnerar data från importtabeller kan bara slutföras från cachelagrade data.
+* **Import**: När värdet är inställt till **Import** så cachelagras importerade tabeller. Frågor som skickats till Power BI-datauppsättningen som returnerar data från importtabeller kan bara slutföras från cachelagrade data.
 
-* **DirectQuery**: Med den här inställningen cachelagras inte DirectQuery-tabeller. Frågor som du skickar till Power BI-datauppsättningen, t.ex. DAX-frågor, och som returnerar data från DirectQuery-tabeller kan bara uppfyllas om frågor på begäran körs mot datakällan. Frågor som du skickar till datakällan använder datakällans frågespråk (t.ex. SQL).
+* **DirectQuery**: Med den här inställningen så cachelagras inte DirectQuery-tabeller. Frågor som du skickar till Power BI-datauppsättningen, t.ex. DAX-frågor, och som returnerar data från DirectQuery-tabeller kan bara uppfyllas om frågor på begäran körs mot datakällan. Frågor som du skickar till datakällan använder datakällans frågespråk (t.ex. SQL).
 
-* **Dubbla**: Dubbla tabeller kan fungera som cachelagrade eller inte cachelagrade, beroende på kontexten för den fråga som skickas till Power BI-datauppsättningen. I vissa fall kan du uppfylla frågor från cachelagrade data. I andra fall måste du uppfylla frågor genom att köra en fråga på begäran till datakällan.
+* **Dubbla**: Dubbla tabeller kan fungera antingen som cachelagrade eller inte cachelagrade, beroende på kontexten för den fråga som skickas till Power BI-datauppsättningen. I vissa fall kan du uppfylla frågor från cachelagrade data. I andra fall måste du uppfylla frågor genom att köra en fråga på begäran till datakällan.
 
 Att ändra en tabell till **Import** är en åtgärd som *inte går att ångra*. Den här egenskapen kan inte ändras till DirectQuery eller Dubbla.
 

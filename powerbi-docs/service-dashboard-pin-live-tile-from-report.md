@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 447257ba715b473c233b1d13c6319ff4958f33fa
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 4a30d01040daffa394ff884c38dda3dd66fa5809
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717181"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285816"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fästa en hel rapportsida, som en levande panel, på en Power BI-instrumentpanel
 Ett annat sätt att lägga till en ny [instrumentpanelspanel](consumer/end-user-tiles.md) är genom att fästa en rapportsida. Detta är ett enkelt sätt att fästa flera visualiseringar åt gången.  När du fäster en hel sida är panelerna dessutom *live*. Du kan interagera med dem direkt på instrumentpanelen. Ändringar du gör i någon av visualiseringarna i rapportredigeraren, om du till exempel lägger till ett filter eller ändrar fälten som används i diagrammet, visas då även på instrumentpanelen.  
@@ -38,7 +38,7 @@ Se hur Amanda fäster en liverapportsida på en instrumentpanel och följ sedan 
 2. Välj **Fäst Live-sida** på menyraden när inga visualiseringar har markerats.
    
    ![Ikonen Fäst Live-sida](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
-3. Fäst panelen på en befintlig eller ny instrumentpanel. Lägg märke till den markerade texten: *Fäst Live-sida möjliggör att ändringar som görs i rapporterna visas på instrumentpanelen när sidan uppdateras.*
+3. Fäst panelen på en befintlig eller ny instrumentpanel. Lägg märke till den markerade texten: *När du fäster en live-sida visas ändringar i rapporterna på instrumentpanelen när sidan uppdateras.*
    
    * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan. Instrumentpaneler som har delats med dig visas inte i listrutan.
    * Ny instrumentpanel: skriv instrumentpanelens namn.

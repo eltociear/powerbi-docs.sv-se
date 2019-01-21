@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e07575658ed25e3f4933a7840ef4bc970264b23
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296030"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279859"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vägledning för distribution av en datagateway för Power BI
 
@@ -40,7 +40,7 @@ Om användarna kommer alla åt en viss rapport på samma tid på dagen, ska du i
 Det finns en begränsning i **Power BI** som endast tillåter *en* gateway per *rapport*, så även om en rapport är baserad på flera datakällor måste alla dessa datakällor gå via samma gateway. Men om en instrumentpanel baseras på *flera* rapporter kan du använda en dedikerad gateway för varje bidragande rapport och därmed distribuera gateway-belastningen på flera rapporter som bidrar till en enda instrumentpanel.
 
 ### <a name="connection-type"></a>Anslutningstyp
-**Power BI** har två typer av anslutningar, **DirectQuery** och **Importera**. Alla datakällor stöder inte båda anslutningstyper och det kan finnas många anledningar till att välja den ena över den andra, till exempel säkerhetskrav, prestanda, databegränsningar och storleken på datamodellen. Du kan lära dig mer om anslutningstyper och datakällor som stöds i avsnittet *lista med tillgängliga typer av datakällor* i artikeln [Lokal datagateway](service-gateway-onprem.md).
+**Power BI** har två typer av anslutningar: **DirectQuery** och **Importera**. Alla datakällor stöder inte båda anslutningstyper och det kan finnas många anledningar till att välja den ena över den andra, till exempel säkerhetskrav, prestanda, databegränsningar och storleken på datamodellen. Du kan lära dig mer om anslutningstyper och datakällor som stöds i avsnittet *lista med tillgängliga typer av datakällor* i artikeln [Lokal datagateway](service-gateway-onprem.md).
 
 Beroende på vilken typ av anslutning som används kan gateway-användningen variera. Du bör till exempel försöka skilja **DirectQuery**-datakällor från datakällor med **Schemalagd uppdatering** när det är möjligt (förutsatt att de är i olika rapporter och kan delas upp). Därmed kommer gatewayen inte att ha tusentals DirectQuery-begäranden i kö vid samma tid som morgonens schemalagda uppdatering av en storskalig datamodell som används för företagets huvudinstrumentpanel. Tänk på följande för varje:
 

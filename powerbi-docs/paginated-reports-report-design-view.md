@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 85950e2510147c3bed36d4911360f7c365c79da6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900461"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283539"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigera i rapportens designvy för sidnumrerade rapporter (förhandsversion)
 
@@ -88,14 +88,14 @@ Designytans storlek kan skilja sig från utskriftsområdets storlek som du anger
  Beroende på egenskapen kan du ställa ett egenskapsvärde från en nedrullningsbar listruta, skriva in värdet, eller välja `<Expression>` att skapa ett uttryck.  
   
 ### <a name="changing-the-properties-pane-view"></a>Ändra egenskapsfönstrets vy  
- Egenskaperna som visas i fönstret Egenskaper är som standard uppdelade i kategorier, t.ex åtgärd, kantlinje, fyllning, teckensnitt och allmänt. Varje kategori har en uppsättning egenskaper som är kopplade till den. Till exempel visas följande egenskaper i kategorin teckensnitt: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight och TextDecoration. Om du vill kan du alfabetiskt ordna alla egenskaper som visas i fönstret. Detta tar bort kategorierna och visar en lista över alla egenskaper i alfabetisk ordning, oavsett kategori.  
+ Egenskaperna som visas i fönstret Egenskaper är som standard uppdelade i kategorier, t.ex åtgärd, kantlinje, fyllning, teckensnitt och allmänt. Varje kategori har en uppsättning egenskaper som är kopplade till den. Till exempel visas följande egenskaper i kategorin teckensnitt: Färg, teckenfamilj, teckenstorlek, teckenstil, teckengrovlek, linjehöjd och textdekoration. Om du vill kan du alfabetiskt ordna alla egenskaper som visas i fönstret. Detta tar bort kategorierna och visar en lista över alla egenskaper i alfabetisk ordning, oavsett kategori.  
   
- Egenskapsrutan har tre knappar överst i fönstret: **Kategori**, **Ordna alfabetiskt** och **Egenskapssidan**. Välj knapparna Kategori och Ordna alfabetiskt för att växla mellan egenskapsfönstrets vyer. Välj knappen **Egenskapssidor** för att öppna egenskapsdialogrutan för ett valt rapportobjekt.  
+ Egenskapsrutan har tre knappar längst upp i fönstret: **Kategori**, **Ordna alfabetiskt** och **Egenskapssidor**. Välj knapparna Kategori och Ordna alfabetiskt för att växla mellan egenskapsfönstrets vyer. Välj knappen **Egenskapssidor** för att öppna egenskapsdialogrutan för ett valt rapportobjekt.  
   
   
 ## <a name="5-grouping-pane"></a>5 Grupperingsfönster
 
- Grupper används för att ordna rapportdata till en visuell hierarki och för att beräkna totalsummor. Du kan visa rad- och kolumngrupper inom ett dataområde på designytan och också i fönstret Gruppera. Fönstret Gruppera har två delar: radgrupper och kolumngrupper. När du väljer ett dataområde visar fönstret Gruppera alla grupper i den dataregionen som en hierarkisk lista: underordnade grupper visas indragna under deras överordnade grupper.  
+ Grupper används för att ordna rapportdata till en visuell hierarki och för att beräkna totalsummor. Du kan visa rad- och kolumngrupper inom ett dataområde på designytan och också i fönstret Gruppera. Fönstret Gruppera har två delar: Radgrupper och kolumngrupper. När du väljer ett dataområde visar fönstret Gruppera alla grupper i den dataregionen som en hierarkisk lista: Underordnade grupper visas indragna under sina överordnade grupper.  
   
  Du kan skapa grupper genom att dra fält från fönstret Rapportdata och släppa dem på designytan eller i fönstret Gruppera. I fönstret Gruppera kan du lägga till överordnade, intilliggande och underordnade grupper, ändra gruppegenskaper och ta bort grupper.  
   

@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d5f2fa0abe6f0503ce5f41387f66db928ae0267e
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 642bd39cb9348bae2a1f30dbc9ee026e11ff7401
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145420"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284528"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Felsöka Power BI Gateway – Personal
 Nedan går vi igenom några vanliga problem som kan uppstå när du använder Power BI Gateway – Personal.
@@ -45,15 +45,15 @@ Flera problem kan uppstå om gatewayversionen är föråldrad.  Det är en allm�
  **Proxykonfiguration** – Du kan stöta på problem med att konfigurera din personliga gateway om miljön har behov av en proxy. Mer information om hur du konfigurerar proxyinformation finns i [Konfigurera proxyinställningar för Power BI-gatewayerna](service-gateway-proxy.md)
 
 ## <a name="schedule-refresh"></a>Uppdatera schema
-**Fel: Autentiseringen som lagras i molnet saknas.**
+**Fel: Autentiseringsuppgiften som lagras i molnet saknas.**
 
 Du kan få detta fel i inställningarna för \<datauppsättningen\> om du har en schemalagd uppdatering och sedan avinstallerat och ominstallerat din personliga gateway. När du avinstallerar en personlig gateway tas datakällans autentiseringsuppgifter för en datauppsättning som har konfigurerats för uppdatering bort från Power BI-tjänsten.
 
-**Lösning:** Gå till uppdateringsinställningarna för en datauppsättning i Power BI. Klicka på Redigera autentiseringsuppgifter i Hantera datakällor för alla datakällor med fel och logga in till datakällan igen.
+**Lösning:** I Power BI så går du till uppdateringsinställningarna för en datauppsättning. Klicka på Redigera autentiseringsuppgifter i Hantera datakällor för alla datakällor med fel och logga in till datakällan igen.
 
-**Fel: De angivna autentiseringsuppgifterna för datauppsättningen är ogiltiga. Uppdatera autentiseringsuppgifterna genom en uppdatering eller i dialogrutan Inställningar för datakälla om du vill fortsätta.**
+**Fel: De autentiseringsuppgifter som anges för datauppsättningen är ogiltiga. Uppdatera autentiseringsuppgifterna genom en uppdatering eller i dialogrutan Inställningar för datakälla om du vill fortsätta.**
 
-**Lösning**: Om du får ett meddelande om autentiseringsuppgifter, kan det betyda:
+**Lösning**: Om du får ett meddelande om autentiseringsuppgifter så kan det innebära:
 
 * Kontrollera att användarnamn och lösenord som används för att logga in till datakällor är aktuella. Gå till datauppsättningens uppdateringsinställningar i Power BI. Klicka på Redigera autentiseringsuppgifter i Hantera datakällor för att uppdatera autentiseringsuppgifterna för datakällan.
 * Kombinationsprogram mellan en molnkälla och en lokal källa kan, för en enskild fråga, inte uppdateras i den personliga gatewayen om en av källorna använder OAuth för autentisering. Ett exempel på detta är ett kombinationen mellan CRM Online och en lokal SQL Server. Detta kommer att misslyckas eftersom CRM Online kräver OAuth.
@@ -62,7 +62,7 @@ Du kan få detta fel i inställningarna för \<datauppsättningen\> om du har en
 
 **Fel: Datakällan stöds inte.**
 
-**Lösning:** Om du får ett meddelande om en datakälla som inte stöds i inställningarna för Uppdatera schema, kan det betyda: 
+**Lösning:** Om du får ett meddelande om en datakälla som inte stöds i inställningarna för Uppdatera schema så kan det betyda: 
 
 * Datakällan stöds för närvarande inte för uppdatering i Power BI. 
 * Excel-arbetsboken innehåller inte en datamodell, endast kalkylbladsdata. Power BI stöder för närvarande bara uppdatering om den överförda Excel-arbetsboken innehåller en datamodell. När du importerar data med Power Query i Excel, måste du välja alternativet för att läsa in data till datamodellen. Detta garanterar att dina data importeras till en datamodell. 
@@ -71,7 +71,7 @@ Du kan få detta fel i inställningarna för \<datauppsättningen\> om du har en
 
 **Lösning**: Det här felet beror på sekretessbegränsningarna och de typer av datakällor som du använder.
 
-**Fel: Fel i datakälla: Det går inte att konvertera värdet ”\[Tabell\]” till typen Tabell.**
+**Fel: Datakällsfel: Det går inte att konvertera värdet ”\[Table\]” till typen Tabell.**
 
 **Lösning**: Det här felet beror på sekretessbegränsningarna och de typer av datakällor som du använder.
 
@@ -91,13 +91,13 @@ Detta kan inträffa om du har en rad som är större än 4 MB i storlek. Du beh�
 
   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
 
-**Fel: Inloggningsfel vid val av Windows-autentisering för en datakälla med hjälp av ACE OLEDB** – Om du får följande felmeddelande när du anger autentiseringsuppgifterna för en datakälla med hjälp av ACE OLEDB-providern:
+**Fel: Inloggningsfel vid val av Windows-autentisering för en datakälla med ACE OLEDB** – Om du får följande felmeddelande när du anger autentiseringsuppgifterna för en datakälla med ACE OLEDB-providern:
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 
 Power BI stöder för närvarande inte Windows-autentisering för en datakälla med hjälp av ACE OLEDB-providern.
 
-**Lösning:** Välj Anonym autentisering för att kringgå felet. För en äldre ACE OLEDB-provider, motsvarar anonyma autentiseringsuppgifter Windows-autentiseringsuppgifter.
+**Lösning:** Du kan kringgå det här felet genom att välja anonym autentisering. För en äldre ACE OLEDB-provider, motsvarar anonyma autentiseringsuppgifter Windows-autentiseringsuppgifter.
 
 ## <a name="tile-refresh"></a>Paneluppdatering
 Se följande artikel om det uppstår ett fel med uppdateringen av en panel på instrumentpanelen.

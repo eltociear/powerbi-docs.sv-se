@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 0990f6ddaf458d5723cd04fedf0b34f497de16cb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974194"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278503"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 
@@ -59,7 +59,7 @@ JSON-strängen för en datauppsättning har följande format:
         ]
     }
 
-Så, för vårt exempel med datauppsättningen för försäljning och marknadsföring, skickar du en sträng som i exemplet nedan. I det här exemplet är **SalesMarketing** namnet på datauppsättningen och **Product** är namnet på tabellen. När du har definierat tabellen, definierar du tabellschemat. För datauppsättningen **SalesMarketing**, har tabellschemat dessa kolumner: ProductID, Manufacturer, Category, Segment, Product och IsCompete.
+Så, för vårt exempel med datauppsättningen för försäljning och marknadsföring, skickar du en sträng som i exemplet nedan. I det här exemplet är **SalesMarketing** namnet på datauppsättningen och **Product** är namnet på tabellen. När du har definierat tabellen, definierar du tabellschemat. För datauppsättningen **SalesMarketing** så har tabellens schema dessa kolumner: ProductID, Manufacturer, Category, Segment, Product och IsCompete.
 
 **Exempel på datauppsättningsobjekt-JSON**
 

@@ -1,23 +1,23 @@
 ---
-title: 'Självstudier: Facebook-analyser med hjälp av Power BI Desktop'
-description: 'Självstudier: Facebook-analyser med hjälp av Power BI Desktop'
+title: 'Självstudie: Facebook-analyser med Power BI Desktop'
+description: 'Självstudie: Facebook-analyser med Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ec90e63de1e42350ff205febdc66abf4ba6ee626
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ae2d40d5a53a7a84c0f6070a7be1011968d7ed7b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578507"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276984"
 ---
-# <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Självstudier: Facebook-analyser med hjälp av Power BI Desktop
+# <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Självstudie: Facebook-analyser med Power BI Desktop
 
 I den här kursen får du lära dig hur du importerar data från Facebook och använder dem i Power BI Desktop. Du kommer att ansluta och importera data från Power BI:s Facebook-sida, använda omformningar på importerade data och använda data i rapportvisualiseringar.
 
@@ -187,7 +187,7 @@ Det var bättre, men alla dataetiketterna har en **.0**-decimal, vilket är stö
 2. I Power Query Editor, välj kolumnen **Antal kommentarer** och ändra datatypen till **Heltal** genom att antingen: 
    - Välja ikonen **1.2** bredvid kolumnrubriken **Antal kommentarer** och välja **Heltal** i listrutan, eller
    - Högerklicka på kolumnrubriken och välja **Ändra typ > Heltal**, eller
-   - Välja **Datatyp: decimaltal** i gruppen **Transformera** i fliken Start eller gruppen **Valfri kolumn** i fliken **Transformera** och välja **Heltal**.
+   - Välja **Datatyp: Decimaltal** i gruppen **Transformera** i fliken Start eller gruppen **Valfri kolumn** i fliken **Transformera** och välja **Heltal**.
    
    Ikonen i kolumnrubriken ändras till **123**, som anger en datatyp för heltal.
    

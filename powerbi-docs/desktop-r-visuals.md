@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0a739e963039e61aa66e398d27fa82982eb26bb0
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: c1a4ba0a89f84cb0fce205373f1d0f00cc1479ac
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670519"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278594"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Skapa visuella Power BI-objekt med R
 Med **Power BI Desktop**, kan du använda **R** för att visualisera dina data.
@@ -107,7 +107,7 @@ När du angett din R-installation, är du redo att börja skapa R-visualiseringa
 
     ![](media/desktop-r-visuals/r-visuals-9.png)
 
-    > **Säkerhet för R-skript:** R-visualiseringar skapas från R-skript, vilka kan innehålla kod med säkerhets- eller integritetsrisker. När användare försöker visa eller interagera med en R-visualisering för första gången, visas en säkerhetsvarning. Aktivera endast visuell R-information om du litar på skaparen och källan, eller när du granskat och förstått R-skriptet.
+    > **R-skriptssäkerhet:** Visuella R-objekt har skapats från R-skript som kan innehålla kod som medför säkerhets- eller integritetsrisker. När användare försöker visa eller interagera med en R-visualisering för första gången, visas en säkerhetsvarning. Aktivera endast visuell R-information om du litar på skaparen och källan, eller när du granskat och förstått R-skriptet.
     > 
     > 
 

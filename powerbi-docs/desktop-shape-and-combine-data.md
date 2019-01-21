@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e23182b1e607498c5187882740b556455657ba1d
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: f39f5ae569c757072a55647becb5697c881abbe2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670910"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285679"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Självstudie: Forma och kombinera data i Power BI Desktop
 
@@ -81,7 +81,7 @@ Om du vill ta bort kolumnen **Levnadskostnader** är det bara att markera den oc
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Observera att värdena för _Ny rankning_ inte har ändrats; detta beror på ordningen på stegen. Eftersom frågeredigeraren registrerar stegen i turordning, men oberoende av varandra, kan du flytta varje **tillämpat steg** uppåt eller nedåt i sekvensen. Högerklicka bara på ett steg så visar frågeredigeraren en meny där kan du göra följande: **Byt namn**, **Ta bort**, **Ta bort** **tills slutet** (ta bort det aktuella steget och alla efterföljande steg), **Flytta upp** eller **Flytta ned**. Gå vidare och flytta upp det sista steget _Ta bort kolumner_ till precis ovanför steget _Lägg till egen_.
+Observera att värdena för _Ny rankning_ inte har ändrats; detta beror på ordningen på stegen. Eftersom frågeredigeraren registrerar stegen i turordning, men oberoende av varandra, kan du flytta varje **tillämpat steg** uppåt eller nedåt i sekvensen. Högerklicka bara på något steg, så visar frågeredigeraren en meny där kan du göra följande: **Byta namn på**, **Ta bort**, **Ta bort** **tills slutet** (ta bort det aktuella steget och alla efterföljande steg för), **Flytta upp**, eller **Flytta ned**. Gå vidare och flytta upp det sista steget _Ta bort kolumner_ till precis ovanför steget _Lägg till egen_.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
 
@@ -179,7 +179,7 @@ Fönstret **Ta bort översta rader**, där du kan ange hur många rader som du v
 
 ![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Ta bort onödiga kolumner – vi behöver bara mappningen av delstaten som dess officiella två bokstäver, så vi kan ta bort följande kolumner: **Kolumn1**, **Kolumn3**, **Kolumn4** och sedan **Kolumn6** till och med **Kolumn11**. Markera **Kolumn1 **och håll nere tangenten** CTRL** och markera kolumnerna som ska tas bort (kolumnerna behöver inte vara intilliggande). Välj **Ta bort kolumner \> Ta bort kolumner** från fliken Start i menyfliksområdet.
+* Ta bort några kolumner som inte behövs – vi behöver bara mappningen av delstaten till dess officiella tvåbokstavsförkortning så vi kan ta bort följande kolumner: **Kolumn1**, **Kolumn3**, **Kolumn4** och sedan **Kolumn6** till **Kolumn11**. Markera **Kolumn1 **och håll nere tangenten** CTRL** och markera kolumnerna som ska tas bort (kolumnerna behöver inte vara intilliggande). Välj **Ta bort kolumner \> Ta bort kolumner** från fliken Start i menyfliksområdet.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 

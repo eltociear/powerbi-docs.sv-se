@@ -6,15 +6,15 @@ manager: kfile
 ms.author: maghan
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: cf489f842d114dbf0ac1add561a93c2ce5499971
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 4654534d9643b9c5cf5911249a0eda33b5cc32af
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37780609"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277911"
 ---
 # <a name="dataset-properties"></a>Egenskaper för datamängd
 
@@ -50,7 +50,7 @@ namn     |  Sträng        | Användardefinierat namn på kolumnen.        |  Fa
 dataType     |  Sträng       |  [EDM-datatyper](https://msdn.microsoft.com/library/ee382832.aspx) som stöds och begränsningar. Se [Begränsningar för datatyper](#DataTypeRestrictions).      |  Falskt       | Sant        
 formatString     | Sträng        | En sträng som anger hur värdet ska formateras när det visas. Mer information om strängformatering finns på sidan om [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx) (Innehållsformat i strängar).      | Falskt        | Falskt        
 sortByColumn    | Sträng        |   Strängnamn på en kolumn i samma tabell som ska användas för att ordna den aktuella kolumnen.     | Falskt        | Falskt       
-dataCategory     | Sträng        |  Strängvärdet som ska användas för datakategorin som beskriver data i kolumnen. Några vanliga värden är: Adress, Stad, Kontinent, Land, Bild, Bild-URL, Latitud, Longitud, Organisation, Plats, Postnummer, Region, Webb-URL.       |  Falskt       | Falskt        
+dataCategory     | Sträng        |  Strängvärdet som ska användas för datakategorin som beskriver data i kolumnen. Vissa vanliga värden är: Adress, Stad, Kontinent, Land, Bild, Bild-URL, Latitud, Longitud, Organisation, Plats, Postnummer, Region, Webb-URL       |  Falskt       | Falskt        
 isHidden    |  Boolesk       |  Egenskap som anger om kolumnen är dold från vyn. Standardvärdet är Falskt.       | Falskt        | Falskt        
 summarizeBy     | Sträng        |  Standardmetod för sammansättning för kolumnen. Några värden är: standard, ingen, summa, min, max, antal, genomsnittlig, antal unika.     |  Falskt       | Falskt
 
@@ -68,7 +68,7 @@ isHidden     | Sträng        |  Om värdet är Sant döljs tabellen från klien
 Namn  |Typ  |Beskrivning  |Skrivskyddad  |Krävs 
 ---------|---------|---------|---------|---------
 namn     | Sträng        | Användardefinierat namn på relationen. Det används också som relationens identifierare.        | Falskt       | Sant        
-crossFilteringBehavior     | Sträng        |    Filterriktningen för relationen: OneDirection (standard), BothDirections, automatisk.       | Falskt        | Falskt        
+crossFilteringBehavior     | Sträng        |    Filterriktningen för relationen: OneDirection (standard), BothDirections, automatisk       | Falskt        | Falskt        
 fromTable     | Sträng        | Namnet på sekundärnyckeltabellen.        | Falskt        | Sant         
 fromColumn    | Sträng        | Namnet på sekundärnyckelkolumnen.        | Falskt        | Sant         
 toTable    | Sträng        | Namnet på primärnyckeltabellen.        | Falskt        | Sant         

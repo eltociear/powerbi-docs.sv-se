@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d7012006ca18cf43c530c4d79ed02e6ed73f33f
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: ec221939d6eb96567469a3221f914509a6789839
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679281"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280089"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hämta data från en webbplats genom att ge ett exempel
 
@@ -52,7 +52,7 @@ I det här exemplet ska vi extrahera *Namn* och *Pris* för varje spel på sidan
 
 ![data efter exempel](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 
-> Obs! Värdeförslagen innehåller endast värden som är mindre än eller lika med 128 tecken.
+> OBS! Värdeförslagen innehåller endast värden som är mindre än eller lika med 128 tecken.
 
 När vi är nöjda med de data som hämtats från webbsidan, väljer vi **OK** för att gå till **Frågeredigeraren**, där vi kan använda fler transformationer eller forma data, till exempel kombinera de med andra data från våra källor.
 

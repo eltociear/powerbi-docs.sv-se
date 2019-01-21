@@ -1,20 +1,20 @@
 ---
 title: Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 description: Ställ frågor om exempeldata med egna ord med det virtuella analysverktyget Frågor och svar i Power BI-mobilappen på iOS-enheten.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
-ms.author: maggies
-ms.openlocfilehash: abd0e6b36af02753d8ff08c8f7405cc6502977d1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548130"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278710"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 
@@ -100,7 +100,7 @@ OK, nu är du redo att visa exemplen på din iOS-enhet.
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Tryck på pilen i det övre vänstra hörnet att gå tillbaka till chattfönstret för frågor och svar.
 8. Tryck på X till höger i textrutan för att ta bort texten och börja om.
-9. Försök med en ny fråga: Tryck på **Topp** från nyckelord och därefter på **Försäljning efter genomsnittlig $/enhet ly** > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Försök med en ny fråga: Tryck på **topp** bland nyckelorden och därefter på **Försäljning efter genomsnittlig $/enhet ly** > **Skicka**![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 10. Välj **enligt** från nyckelord, tryck på **tid** från listan över förslag längst upp > **Skicka** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).

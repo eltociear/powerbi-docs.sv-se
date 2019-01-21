@@ -5,16 +5,16 @@ author: maikelson
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 24d023d726183119a3bd098c61db75cb68969c52
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670427"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283149"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -46,11 +46,11 @@ Kom igång med dessa populära webbseminarier på begäran
 <br>av Cory Hrncirik och Miguel Martinez
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI: korrekt utförd analys**
+**Power BI: Korrekt utförd analys**
 <br>av Gohul Shanmugalingam
 <br>[Registrera dig och titta nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
-**Visualisera dina Power BI-data: Viktiga diagramtyper och hur du använder dem**
+**Skapa ett visuellt objekt i Power BI:  Viktiga diagramtyper och hur du använder dem**
 <br>av Miranda Li
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
 
@@ -112,7 +112,7 @@ Titta på inspelade sessioner när som helst
 <br>av Ed Bobrin från Avanade
 <br>[Registrera dig och titta nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
-**Tillverkare: er bransch genomgår en digital förvandling – håll dig i framkant genom att utnyttja analys för att maximera lönsamhet**
+**Tillverkare: Din bransch genomgår en digital förvandling – håll dig i framkant genom att utnyttja analys för att maximera lönsamhet**
 <br>av Jon Thompson från Blue Margin och Jim Pastor från Elgin Fastener Group
 <br>[Registrera dig och titta nu](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
@@ -142,7 +142,7 @@ Titta på inspelade sessioner när som helst
 <br>av Kasper de Jonge
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-**Fråga en partner: utveckla anpassade visuella objekt för Power BI**
+**Fråga en partner: Utveckla anpassade visuella objekt för Power BI**
 <br>av Ted Pattison
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
@@ -155,11 +155,11 @@ Titta på inspelade sessioner när som helst
 
 **[Webbseminarium för Power BI:s ramverk för införande](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
 <br>av Manu Kanwarpal och Paul Henwood
-<br>[Registrera dig och titta nu – del 1 – Införande: Anta en datadriven kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
-<br>[Registrera dig och titta nu – del 2 – Styrning: Styr Power BI-användningen](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Registrera dig och titta nu – del 3 – Tjänsthantering: Insikter om tjänsthantering för Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Registrera dig och titta nu – del 4 – Säkerhet: Skydda dina data med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Registrera dig och titta nu – del 5 – Distribution: Distribuera Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+<br>[Registrera dig och titta nu – Del 1 – Införande: Införa en datadriven kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Registrera dig och titta nu – Del 2 – Styrning: Styr din användning av Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Registrera dig och titta nu – Del 3 – Servicehantering: Hanteringsinsikter för Power BI-tjänsten](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Registrera dig och titta nu – Del 4 – Säkerhet: Skydda dina data med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Registrera dig och titta nu – Del 5 – Distribution: Lyckad lansering av Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Office 365 Finans, webbseminarieserie för proffs**
 <br>av Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky och Miguel Martinez

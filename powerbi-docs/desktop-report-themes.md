@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51027470"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277444"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
@@ -83,11 +83,11 @@ Nu när vi har importerat en temafil ska vi titta på den lättförståeliga fil
 
 JSON-filen måste innehålla följande rader:
 
-* **name** – Detta är temanamnet och det enda obligatoriska fältet.
+* **name**: Detta är temats namn och det enda obligatoriska fältet.
 
-* **dataColors**: En lista med hexadecimala färgkoder som du kan använda för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill.
+* **dataColors**: Listan med hexadecimala färgkoder som ska användas för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill.
 
-* **background**, **foreground** och **tableAccent**: Färger som ska tillämpas på olika typer av visuella objekt. 
+* **background**, **foreground** och **tableAccent**: Färgerna som ska tillämpas på olika typer av visuella objekt. 
   - **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. 
   - **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. 
   - De visuella objekten**tabell** och **matris** använder dessa format som standard.
@@ -178,9 +178,9 @@ Här följer några fler rapportteman som du kan använda för att komma igång:
 ## <a name="report-theme-json-file-format"></a>Rapporttema i JSON-filformat
 Den grundläggande JSON-filen har fem obligatoriska rader:
 
-* **name** – Detta är temanamnet och det enda obligatoriska fältet.
-* **dataColors**: En lista med hexadecimala färgkoder som du kan använda för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill.
-* **background**, **foreground** och **tableAccent**: Färger som ska tillämpas på olika typer av visuella objekt. **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
+* **name**: Detta är temats namn och det enda obligatoriska fältet.
+* **dataColors**: Listan med hexadecimala färgkoder som ska användas för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill.
+* **background**, **foreground** och **tableAccent**: Färgerna som ska tillämpas på olika typer av visuella objekt. **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
 
 Om du vill skapa en JSON-fil med ett utökat format och mer detaljerad kontroll över formateringen, måste du lägga till ett **visualStyles**-avsnitt i JSON-filen. Du kan kapsla formateringen som anges i området **visualStyles**. Området **visualStyles** ser ut ungefär så här:
 
@@ -259,16 +259,16 @@ I följande tabell definieras *cardName*-värden. Det första värdet i varje ce
 | columnFormatting: Fältformatering |
 | columnHeaders: Kolumnrubriker |
 | dataLabels: Dataetiketter |
-| Fill: Fyll |
+| fill: Fyll |
 | fillPoint: Fyllningspunkt |
 | forecast: Prognos |
 | general: Allmänt |
 | goals: Mål |
 | grid: Rutnät |
-| header: Rubrik |
+| header: Sidhuvud |
 | imageScaling: Skalning |
 | indicator: Indikator |
-| items: Objekt |
+| items: Poster |
 | labels: Dataetiketter |
 | legend: Förklaring |
 | lineStyles: Former |
@@ -280,10 +280,10 @@ I följande tabell definieras *cardName*-värden. Det första värdet i varje ce
 | plotAreaShading: Symmetrifyllning |
 | ratioLine: Ratiolinje |
 | referenceLine: Konstant linje |
-| ribbonChart: Menyflikar |
+| ribbonChart: Band |
 | rotation: Rotering |
 | rowHeaders: Radrubriker |
-| selection: Valkontroller |
+| selection: Markeringskontroller |
 | sentimentColors: Sentimentsfärger |
 | shape: Form |
 | slider: Skjutreglage |
@@ -292,13 +292,13 @@ I följande tabell definieras *cardName*-värden. Det första värdet i varje ce
 | target: Mål |
 | total: Totalsumma |
 | trend: Trendlinje |
-| trendlinje: Trendaxel |
+| trendline: Trendaxel |
 | valueAxis: Y-axel |
 | values: Värden |
 | wordWrap: Automatiskt radbyte |
 | xAxisReferenceLine: X-axel konstant linje |
 | y1AxisReferenceLine: Konstant linje |
-| zoom: Zoom |
+| zoom: Zooma |
 
 ### <a name="properties-within-each-card"></a>Egenskaper inom varje kort
 I nedanstående avsnitt definieras egenskaperna inom varje kort:

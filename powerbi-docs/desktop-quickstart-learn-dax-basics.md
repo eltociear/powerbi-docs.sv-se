@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a171dd2aa375f8d12830b051dd8ce6437e4b3236
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 323391268e930d3b7b2926590f3377b850b65624
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679465"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282596"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
 Den här artikeln är avsedd för nya användare i Power BI Desktop. Den är tänkt att ge dig en snabb och enkel introduktion för hur du kan använda dataanalysuttryck (DAX) till att lösa flera grundläggande problem med beräkningar och dataanalys. Vi går igenom viss konceptinformation, en serie aktiviteter som du kan utföra och några kunskapsfrågor som testar vad du har lärt dig. När du har läst den här artikeln bör du ha en god förståelse för de viktigaste grundläggande begreppen i DAX.
@@ -33,7 +33,7 @@ Vi ska fokusera på att förstå de DAX-formler som används i beräkningar och 
 
 **Arbetsboksexempel**
 
-Det bästa sättet att lära sig DAX är att skapa några grundläggande formler, använda faktiska data och se resultaten själv. De exempel och uppgifter som visas här använder Contoso Sales Sample i den förhandsgranskade Power BI Desktop-filen. Det här är samma exempelfil som används i [självstudien: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). Här är [exempelfilen](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) för nedladdning.
+Det bästa sättet att lära sig DAX är att skapa några grundläggande formler, använda faktiska data och se resultaten själv. De exempel och uppgifter som visas här använder Contoso Sales Sample i den förhandsgranskade Power BI Desktop-filen. Det här är samma exempelfil som används i [Självstudie: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). Här är [exempelfilen](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) för nedladdning.
 
 ## <a name="lets-begin"></a>Vi börjar!
 Vi kommer att inrikta vår DAX-förståelse runt tre grundläggande begrepp: *Syntax*, *Funktioner* och *Kontext*. Naturligtvis finns det andra viktiga begrepp i DAX, men att förstå dessa tre ger den bästa grunden till att bygga upp DAX-kunskaperna.
@@ -160,7 +160,7 @@ Det är enklast att tänka på radkontexten som den aktuella raden. Den används
 
 **Filterkontext**
 
-Filterkontext är lite svårare att förstå än radkontext. Du kan enklast tänka på filterkontext som ett eller flera filter som tillämpas i en beräkning som ska ge ett resultat eller ett värde.
+Filterkontext är lite svårare att förstå än radkontext. Du kan enklast föreställa dig filterkontext som: Ett eller flera filter som tillämpas i en beräkning som fastställer ett resultat eller ett värde.
 
 Filterkontext finns inte i stället för radkontext, utan den tillämpas utöver radkontexten. För att ytterligare begränsa vilka värden som ska ingå i en beräkning kan du exempelvis tillämpa en filterkontext som inte bara anger radkontext, utan även anger ett specifikt värde (filter) i den radkontexten.
 
@@ -186,7 +186,7 @@ Den här formeln innehåller följande syntaxelement:
 
 **F.** Ett kommatecken (**,**) avgränsar det första uttrycksargumentet från filterargumentet.
 
-**G.** Den fullständiga refererade kolumnen **Kanal[ChannelName]**. Detta är vår radkontext. Varje rad i den här kolumnen anger en kanal: Store, Online etc.
+**G.** Den fullständiga refererade kolumnen **Kanal[ChannelName]**. Detta är vår radkontext. Varje rad i den här kolumnen anger en kanal: Store, Online osv.
 
 **H.** Det specifika värdet **Store** som ett filter. Detta är vår filterkontext.
 

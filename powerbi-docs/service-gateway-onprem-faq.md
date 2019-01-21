@@ -5,24 +5,24 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: b1c74968365db59d51f7c0a7bdb356552cc75596
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273320"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283792"
 ---
 # <a name="on-premises-data-gateway-faq"></a>Vanliga frågor och svar om lokal datagateway
 <!-- Shared FAQ shared Include -->
 [!INCLUDE [gateway-onprem-faq-shared-include](./includes/gateway-onprem-faq-shared-include.md)]
 
 ## <a name="analysis-services"></a>Analysis Services
-**Fråga:** Kan jag använda msdmpump.dll för att skapa anpassade effektiva användarnamnsmappningar för Analysis Services?  
+**Fråga:** Kan jag använda msdmpump.dll för att skapa anpassade effektiva mappningar av användarnamn för Analysis Services?  
 **Svar:** Nej. Det finns inte stöd för att detta för tillfället.
 
 **Fråga:** Kan jag använda gatewayen för att ansluta till en flerdimensionell (OLAP)-instans.  
@@ -55,7 +55,7 @@ ms.locfileid: "51273320"
 **Svar:** Nej, du kan fortsätta att använda en personlig gateway för Power BI.
 
 **Fråga:** Hur ofta uppdateras panelerna på en instrumentpanel i Power BI när de är anslutna till en lokal datagateway?  
-**Svar:** Cirka var tionde minut. DirectQuery-anslutningar använder direkta frågor. Detta innebär inte att en panel skickar en fråga till den lokala servern och visar nya data var tionde minut.
+**Svar:** Ungefär var tionde minut. DirectQuery-anslutningar använder direkta frågor. Detta innebär inte att en panel skickar en fråga till den lokala servern och visar nya data var tionde minut.
 
 **Fråga:** Går det att överföra Excel-arbetsböcker med Power Pivot-datamodeller som ansluter till lokala datakällor? Behöver jag en gateway för det här scenariot?  
 **Svar:** Ja, du kan ladda upp arbetsboken. Och nej, du behöver inte en gateway. Men eftersom data kommer att finnas i Excel-datamodellen kommer rapporter i Power BI baserat på Excel-arbetsboken inte att uppdateras live. För att kunna uppdatera rapporter i Power BI måste du överföra en uppdaterad arbetsbok varje gång. Eller använda en gateway med schemalagd uppdatering.
@@ -63,14 +63,14 @@ ms.locfileid: "51273320"
 **Fråga:** Om användare delar instrumentpaneler med en DirectQuery-anslutning, kommer dessa andra användare att kunna se data även om de kanske inte har samma behörigheter.  
 **Svar:** Användare kan endast se de data som de har åtkomst till för instrumentpaneler som är anslutna till Analysis Services. Om användarna inte har samma behörigheter, kan de inte finns några data. För andra datakällor kommer alla användare att dela de autentiseringsuppgifter som angetts av administratören för datakällan.
 
-**Fråga:** Varför kan inte ansluta till Oracle-server?  
-**Svar:** Du kan behöva installera Oracle-klienten och konfigurera filen tnsnames.ora med rätt serverinformation för att ansluta till Oracle-servern. Det här är en separat installation utanför gatewayen. Mer information finns i [Installera Oracle-klienten](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Fråga:** Varför kan jag inte ansluta till min Oracle-server?  
+**Svar:** Du kan behöva installera Oracle-klienten och konfigurera filen tnsnames.ora med rätt serverinformation om du ska kunna ansluta till Oracle-servern. Det här är en separat installation utanför gatewayen. Mer information finns i [Installera Oracle-klienten](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
 
 **Fråga:** Kommer gatewayen att fungera med ExpressRoute?  
-**Svar:** Ja! Mer information om ExpressRoute och Power BI finns i [Power BI och ExpressRoute](service-admin-power-bi-expressroute.md).
+**Svar:** Ja. Mer information om ExpressRoute och Power BI finns i [Power BI och ExpressRoute](service-admin-power-bi-expressroute.md).
 
 **Fråga:** Jag använder R-skript. Stöds detta?
-**Svar**: R-skript stöds endast för personligt läge.
+**Svar:** R-skript stöds endast för personligt läge.
 
 ## <a name="next-steps"></a>Nästa steg
 [Lokal datagateway](service-gateway-onprem.md)  

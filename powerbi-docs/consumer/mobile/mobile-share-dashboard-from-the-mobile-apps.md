@@ -1,20 +1,20 @@
 ---
 title: Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 description: Bjud in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Läs mer.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
-ms.author: maggies
-ms.openlocfilehash: 4484eca5e810da7674d20e368383429c9c6f5508
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.author: mshenhav
+ms.openlocfilehash: 69532ea9ad98edc7655fb77aec13b69eec6566bf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271657"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283677"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 Gäller för:
@@ -94,7 +94,7 @@ Du kan bara avsluta delningen om du är ägaren.
     Om du äger instrumentpanelen kan du se en lista över kollegor med vilka du har delat den här instrumentpanelen eller rapporten med dessa anteckningar:
 
     -   **Kan visa**: De kan visa men inte dela.
-    -   **Kan visa och bjuda in**: De kan visa och dela med kollegor.
+    -   **Kan visa och dela igen**: De kan visa och dela med kollegor.
 
 1. Skriv e-postadresser och ett meddelande som medföljer din instrumentpanelinbjudan. Annars skickar Power BI ett standardmeddelande.
 2. Om du vill tillåta omdelning låter du **Tillåt mottagarna att dela den här instrumentpanelen** vara markerad.
@@ -128,7 +128,7 @@ Du kan bara avsluta delningen om du är ägaren.
    
    **Kan visa**: De kan visa men inte dela.
    
-   **Kan visa och bjuda in**: De kan visa och dela med kollegor.
+   **Kan visa och dela igen**: De kan visa och dela med kollegor.
 2. Skriv e-postadresser och ett meddelande som medföljer din inbjudan. Annars skickar Power BI ett standardmeddelande.
    
    ![Dialogrutan Bjud in](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)

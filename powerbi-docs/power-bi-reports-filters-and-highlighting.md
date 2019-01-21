@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/28/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e364d2ceac3d1a30b0742ceac2bd56e2bc66d9ba
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: ace392570dbabc65d128941fc735231622f2c008
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973245"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285333"
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Om filter och markeringar i Power BI-rapporter
  Den här artikeln ger en introduktion till filtrering och markering i Power BI-tjänsten. Upplevelsen är nästan exakt samma som i Power BI Desktop. ***Filter*** ta bort allt utan de data som du vill fokusera på. ***Markering*** är inte samma sak som filtrering. Data tas inte bort. Istället markeras en delmängd av synliga data; de data som inte är markerade förblir synliga men nedtonade.
@@ -48,7 +48,7 @@ Du kan söka på sidor, visuella objekt och rapportfilter i läs- eller redigeri
 Om filtret har ordet **alla** bredvid det innebär det att alla värden i fältet ingår i filtret.  Som exempel kan vi av **Chain(All) (Kedja(alla))** på skärmbilden nedan avläsa att den här rapportsidan innehåller data om alla butikskedjorna.  Å andra sidan berättar filtret på rapportnivå för **Räkenskapsår 2013 eller 2014** att rapporten bara innehåller data för räkenskapsåren 2013 och 2014.
 
 ## <a name="filters-in-reading-or-editing-view"></a>Filter i läs- eller redigeringsvyn
-Det finns två lägen för att interagera med rapporter: [Läsvy och Redigeringsvy](consumer/end-user-reading-view.md). Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
+Det finns två lägen för att interagera med rapporter: [läsvyn](consumer/end-user-reading-view.md) och redigeringsvyn. Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i.
 
 * Du kan lägga till rapportfilter, sidfilter, filter för visning av detaljerad information och visuella filter i redigeringsvyn. När du sparar rapporten sparas filtren med rapporten, även om du har öppnat den i en mobilapp. De som tittar på rapporten i läsvyn kan interagera med de filter som du har lagt till, men inte lägga till nya filter.
 * I läsvyn kan du interagera med alla filter som redan finns i rapporten och spara dina val. Du kan inte lägga till nya filter.

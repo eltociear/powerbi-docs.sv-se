@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f4d16a5694dde63b66dcb001f1a5375ed92d978c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 2cb8e7b6c2744f80891c5424f620b9812eee1acb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37137179"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285379"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips för att få hjälp med Power BI-frågor
 Har du någonsin blivit frustrerad över användningen av Power BI eller kämpat med att få svar på dina Power BI-frågor när du behöver dem? 
@@ -30,7 +30,7 @@ Experter som måste ha svar om Power BI använder ofta sökning. Letar du efter 
 Power BI-teamet uppdaterar och förbättrar ständigt Power BI-dokumentationen och utbildningarna. Där finns bra innehåll, inklusive inspelningar av webbseminarier, white paper-dokument, interaktiva utbildningar och länkar till blogginlägg om de senaste funktionerna.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 Läs Power BI-bloggen för att få de senaste nyheterna
-Power BI-teamet beskriver de nya funktionerna i sina återkommande [Power BI-blogginlägg](https://powerbi.microsoft.com/blog/). Få reda på nyheter inom allt från Power BI Desktop till Power BI-mobilapparna. Ta till vana att ofta gå hit ofta för att se om det finns några nyheter: Ägna några minuter varje vecka till att läsa igenom bloggarna. Du vet aldrig när du får nytta av den information som du läste för några månader sedan.
+Power BI-teamet beskriver de nya funktionerna i sina återkommande [Power BI-blogginlägg](https://powerbi.microsoft.com/blog/). Få reda på nyheter inom allt från Power BI Desktop till Power BI-mobilapparna. Titta in ofta för att se vad som är nytt: Ta ett par minuter varje vecka till att läsa igenom bloggarna. Du vet aldrig när du får nytta av den information som du läste för några månader sedan.
 
 ## <a name="4-try-twitter"></a>4 Testa Twitter
 Många Power BI-kunder och experter finns på Twitter. Ställ en fråga i en tweet. Lägg till hashtaggarna #powerbi och #powerbihelp så att rätt personer kan se din tweet.

@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4b503b7282377b112aebe237cc9a8d132502f0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298353"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275926"
 ---
 # <a name="manage-your-data-source---oracle"></a>Hantera din datakälla – Oracle
 När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda Oracle-datakällan för schemalagd uppdatering eller DirectQuery.
@@ -39,7 +39,7 @@ För **64-bitars** versionen av Power BI Desktop, eller den lokala datagatewayen
 
 * [64-bitars ODAC 12.2c version 1 (12.2.0.1.0) för Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
-När detta är installerat måste du konfigurera din tnsnames.ora-fil med rätt information för din databas. Power BI Desktop och gatewayen utgår från net_service_name som definieras i tnsnames.ora-filen. Om detta inte konfigureras kan du inte ansluta. Standardsökvägen för tnsnames.ora är följande: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Mer information om hur du konfigurerar tnsnames.ora-filer finns i [Oracle: lokala namnparametrar (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
+När detta är installerat måste du konfigurera din tnsnames.ora-fil med rätt information för din databas. Power BI Desktop och gatewayen utgår från net_service_name som definieras i tnsnames.ora-filen. Om detta inte konfigureras kan du inte ansluta. Standardsökvägen för tnsnames.ora är följande: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Mer information om hur du konfigurerar tnsnames.ora-filer finns i [Oracle: Lokala namnparametrar (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
 ### <a name="example-tnsnamesora-file-entry"></a>Exempelpost i tnsnames.ora-fil
 Det grundläggande formatet för en post i tnsname.ora är följande.
@@ -160,7 +160,7 @@ Upprepade fel från Oracle kan uppstå när namnsyntaxen är felaktig eller inte
 * ORA-12154: TNS: det gick inte att matcha angivet anslutnings-ID  
 * ORA-12514: TNS-lyssnaren känner för närvarande inte till tjänsten som begärdes i anslutningsbeskrivningen  
 * ORA-12541: TNS: det finns ingen lyssnare  
-* ORA-12170: TNS: anslutnings-timeout uppstod  
+* ORA-12170: TNS: det uppstod en anslutningstimeout  
 * ORA-12504: TNS-lyssnare angavs inte på SERVICE_NAME i CONNECT_DATA  
 
 Dessa fel kan inträffa om Oracle-klienten inte är installerad eller om den inte har konfigurerats korrekt. Om den är installerad bör du kontrollera att filen tnsnames.ora är korrekt konfigurerat och att du använder rätt net_service_name. Du måste också se till att net_service_name är samma mellan datorn med Power BI Desktop och datorn som kör gatewayen. Mer information finns i [Installera Oracle-klienten](#installing-the-oracle-client).

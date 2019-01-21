@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 85f7dd131806cd808c28c23cb70230a0c719e0a1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670211"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285632"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hämta data från Excel-arbetsboksfiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -43,7 +43,7 @@ Om du använder Excel för att ansluta till en extern datakälla kan du skapa ra
 Sättet som PowerView-blad och pivottabeller och diagram visas eller inte visas i Power BI beror på var din arbetsbokfil sparas och hur du hämtar den i Power BI. Vi ska titta närmare på detta längre fram.
 
 ## <a name="data-types"></a>Datatyper
-Power BI stöder följande datatyper: heltal, decimaltal, valuta, datum, true/false, text. Genom att markera data som specifika datatyper i Excel förbättras Power BI-upplevelsen.
+Power BI stöder följande datatyper: Heltal, decimaltal, valuta, datum, True/False, text. Genom att markera data som specifika datatyper i Excel förbättras Power BI-upplevelsen.
 
 ## <a name="prepare-your-workbook-for-power-bi"></a>Förbered din arbetsbok för Power BI
 Det här användbara videoklippet visar dig hur du kan förbereda dina Excel-arbetsböcker för Power BI.
@@ -53,7 +53,7 @@ Det här användbara videoklippet visar dig hur du kan förbereda dina Excel-arb
 ## <a name="where-your-workbook-file-is-saved-makes-a-difference"></a>Det spelar roll vart du sparar arbetsbokfilen
 **Lokalt** – Om du sparar din arbetsbokfil till en lokal enhet på datorn eller en annan plats inom din organisation, från Power BI så kan du hämta den till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen har i själva verket inte importerats till Power BI. Det som händer är att en ny datauppsättning skapas i Power BI och data och datamodellen (i förekommande fall) i arbetsboken läses in i datauppsättningen. Om din arbetsbok innehåller rapporter kommer de att visas på Power BI-webbplatsen under Rapporter. Excel 2016 också har funktionen **Publicera** (under menyn **Arkiv**). Funktionen **Publicera** är detsamma som att använda **Hämta Data > Filer > Lokal fil** från Power BI, men det är ofta lättare att uppdatera datamängden i Power BI om du regelbundet gör ändringar i arbetsboken.
 
-**OneDrive företag**  – om du har OneDrive för företag och du loggar in med samma konto som du använder för Power BI, är detta det mest effektiva sättet att behålla ditt arbete i Excel och din datauppsättning, rapporter och instrumentpaneler i Power BI synkroniserade. Eftersom både Power BI och OneDrive finns i molnet, *ansluter* Power BI till din arbetsboksfil på OneDrive någon gång i timmen. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt. Precis som om du har sparat arbetsboken till en lokal enhet kan du också Publicera för att uppdatera datauppsättningen och rapporter i Power BI omedelbart. Annars synkroniseras Power BI automatiskt, vanligen inom en timme.
+**OneDrive företag ** – om du har OneDrive för företag och du loggar in med samma konto som du använder för Power BI, är detta det mest effektiva sättet att behålla ditt arbete i Excel och din datauppsättning, rapporter och instrumentpaneler i Power BI synkroniserade. Eftersom både Power BI och OneDrive finns i molnet, *ansluter* Power BI till din arbetsboksfil på OneDrive någon gång i timmen. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt. Precis som om du har sparat arbetsboken till en lokal enhet kan du också Publicera för att uppdatera datauppsättningen och rapporter i Power BI omedelbart. Annars synkroniseras Power BI automatiskt, vanligen inom en timme.
 
 **OneDrive – personlig** – om du sparar arbetsboksfiler på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du första gången ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in i OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det konto du använder för att logga in i Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din arbetsboksfil ungefär en gång i timmen och kontrollera att din datauppsättning och dina rapporter i Power BI är synkroniserade.
 
@@ -119,7 +119,7 @@ Funktionen **Publicera Power BI** i Excel 2016 är praktiskt taget samma som att
 ## <a name="troubleshooting"></a>Felsökning
 Är arbetsboken för stor? Läs [Minska storleken på en Excel-arbetsbok för att visa den i Power BI](reduce-the-size-of-an-excel-workbook.md).
 
-För närvarande när du väljer Importera importerar Power BI endast data som ingår i en namngiven tabell eller en datamodell. Därmed, om arbetsboken inte innehåller namngivna tabeller, Power View-blad eller Excel-datamodeller kan följande felmeddelande visas: **”Det gick inte att hitta data i din Excel-arbetsbok”**. [Den här artikeln](service-admin-troubleshoot-excel-workbook-data.md) förklarar hur du åtgärdar din arbetsbok och importerar den igen.
+För närvarande när du väljer Importera importerar Power BI endast data som ingår i en namngiven tabell eller en datamodell. Därmed, om arbetsboken inte innehåller namngivna tabeller, Power View-blad eller Excel-datamodeller kan följande felmeddelande visas: **”Det gick inte att hitta några data i din Excel-arbetsbok”**. [Den här artikeln](service-admin-troubleshoot-excel-workbook-data.md) förklarar hur du åtgärdar din arbetsbok och importerar den igen.
 
 ## <a name="next-steps"></a>Nästa steg
 **Utforska dina data** – När du har hämtat dina data och rapporter från filen till Power BI, är det dags att börja utforska. Högerklicka bara på den nya datauppsättningen och klicka sedan på Utforska. Om du vill ansluta till en arbetsboksfil på OneDrive i steg 4 visas din arbetsbok i rapporter. Den öppnas när du klickar på den Power BI, precis som i Excel Online.

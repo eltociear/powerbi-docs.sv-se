@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6c47fb847ff5360031f4bfe2974db9c405a4ce5f
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670749"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278088"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery och SAP Business Warehouse (BW)
 Du kan ansluta till **SAP Business Warehouse (BW)**-datakällor direkt med **DirectQuery**. På grund av SAP BW:s OLAP/flerdimensionella natur så finns det många viktiga skillnader mellan DirectQuery över SAP BW jämfört med relationella källor som SQL Server. Dessa skillnader kan sammanfattas på följande sätt:
@@ -32,19 +32,19 @@ Det är dessutom *mycket viktigt* att förstå att det finns många funktioner f
 ## <a name="additional-modeling-restrictions"></a>Ytterligare modelleringsbegränsningar
 Den primära ytterligare modelleringsbegränsningen vid anslutning till SAP BW med DirectQuery i Power BI är följande:
 
-* **Inget stöd för beräknade kolumner:** möjligheten att skapa beräknade kolumner är inaktiverad. Det innebär också att gruppering och klustring, som skapar beräknade kolumner, inte är tillgängligt.
-* **Ytterligare begränsningar för mått:** det finns ytterligare begränsningar av de DAX-uttryck som kan användas i mått för att återspegla den supportnivå som erbjuds av SAP BW.
-* **Inget stöd för att definiera relationer:** relationerna är inbyggda i den externa SAP-källan och ytterligare relationer kan inte definieras i modellen.
-* **Ingen datavy:** **datavyn** visar normalt detaljerad nivådata i tabellerna. På grund av naturen för OLAP-källor som SAP BW, är den här vyn inte tillgänglig via SAP BW.
-* **Information om kolumner och mått är fasta:** listan över kolumner och mått som visas i fältlistan korrigeras i den underliggande källan och kan inte modifieras. Det går till exempel inte att ta bort en kolumn eller ändra dess datatyp (det går däremot att byta namn på den).
-* **Ytterligare begränsningar i DAX:** det finns ytterligare begränsningar för DAX som kan användas i måttdefinitioner, för att återspegla begränsningar i källan. Det är till exempel inte möjligt att använda en mängdfunktion via en tabell.
+* **Inget stöd för beräknade kolumner:** Möjligheten att skapa beräknade kolumner är inaktiverad. Det innebär också att gruppering och klustring, som skapar beräknade kolumner, inte är tillgängligt.
+* **Ytterligare begränsningar för mått:** Det finns ytterligare begränsningar av de DAX-uttryck som kan användas i mått för att återspegla den supportnivå som erbjuds av SAP BW.
+* **Inget stöd för att definiera relationer:** Relationerna är inbyggda i den externa SAP-källan och ytterligare relationer kan inte definieras i modellen.
+* **Ingen datavy:** **Datavyn** visar normalt detaljerade nivådata i tabellerna. På grund av naturen för OLAP-källor som SAP BW, är den här vyn inte tillgänglig via SAP BW.
+* **Information om kolumner och mått är fasta:** Listan över kolumner och mått som visas i fältlistan korrigeras i den underliggande källan och kan inte modifieras. Det går till exempel inte att ta bort en kolumn eller ändra dess datatyp (det går däremot att byta namn på den).
+* **Ytterligare begränsningar i DAX:** Det finns ytterligare begränsningar för DAX som kan användas i måttdefinitioner när man vill återspegla begränsningar i källan. Det är till exempel inte möjligt att använda en mängdfunktion via en tabell.
 
 ## <a name="additional-visualization-restrictions"></a>Ytterligare visualiseringsbegränsningar
 De primära ytterligare begränsningarna av visualiseringar vid anslutning till SAP BW med DirectQuery i Power BI är följande:
 
-* **Ingen sammansättning av kolumner:** det går inte att ändra sammansättning för en kolumn på en visualisering. Den är alltid *Sammanfatta inte*
-* **Måttfiltrering är inaktiverat:** måttfiltrering är inaktiverat för att återspegla det stöd som erbjuds av SAP BW.
-* **Flera val och inkludera/exkludera:** möjlighet att välja flera datapunkter på en visualisering är inaktiverad om punkterna motsvarar värden från fler än en kolumn. I ett stapeldiagram som visar försäljning efter land med kategori i teckenförklaringen, skulle det till exempel inte vara möjligt att välja punkten för (USA, cyklar) och (Frankrike, kläder). På samma sätt skulle det inte vara möjligt att välja punkten (USA, cyklar) och utesluta den från den visuella informationen. Bägge begränsningarna gäller för att återspegla det stöd som erbjuds av SAP BW.
+* **Ingen sammansättning av kolumner:** Det går inte att ändra aggregeringen för en kolumn i ett visuellt objekt, och den är alltid *Sammanfatta inte*
+* **Måttfiltrering är inaktiverat:** Måttfiltrering är inaktiverat för att återspegla det stöd som erbjuds av SAP BW.
+* **Flera val och inkludera/exkludera:** Möjlighet att välja flera datapunkter på en visualisering är inaktiverad om punkterna motsvarar värden från fler än en kolumn. I ett stapeldiagram som visar försäljning efter land med kategori i teckenförklaringen, skulle det till exempel inte vara möjligt att välja punkten för (USA, cyklar) och (Frankrike, kläder). På samma sätt skulle det inte vara möjligt att välja punkten (USA, cyklar) och utesluta den från den visuella informationen. Bägge begränsningarna gäller för att återspegla det stöd som erbjuds av SAP BW.
 
 ## <a name="support-for-sap-bw-features"></a>Stöd för SAP BW-funktioner
 I följande tabell listar alla SAP BW-funktioner som inte stöds fullt ut eller fungerar annorlunda mot när du använder Power BI.   

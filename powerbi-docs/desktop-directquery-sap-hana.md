@@ -5,24 +5,24 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8024756159b4974ef4a23ab60a055d57b0dfa590
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 1b587edb82f60ac8a9ff22716e42bcf941e0c794
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670611"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276547"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery och SAP HANA
 Du kan ansluta till **SAP HANA**-datakällor direkt med **DirectQuery**. Det finns två alternativ när du ansluter till SAP HANA:
 
-* **Hantera SAP HANA som en flerdimensionell källa (standard):** I det här fallet ska beteendet vara detsamma som när Power BI ansluter till andra flerdimensionella källor som SAP Business Warehouse eller Analysis Services. När du ansluter till SAP HANA med den här inställningen väljs en enda analys- eller beräkningsvy och alla åtgärder, hierarkier och attribut för den vyn blir tillgängliga i fältlistan. Då visuell information skapas, kommer sammanställda data alltid att hämtas från SAP HANA. Det är den rekommenderade metoden och är standard för nya DirectQuery-rapporter över SAP HANA.
+* **Hantera SAP HANA som en flerdimensionell källa (standard):**  I det här fallet ska beteendet vara detsamma som när Power BI ansluter till andra flerdimensionella källor som SAP Business Warehouse eller Analysis Services. När du ansluter till SAP HANA med den här inställningen väljs en enda analys- eller beräkningsvy och alla åtgärder, hierarkier och attribut för den vyn blir tillgängliga i fältlistan. Då visuell information skapas, kommer sammanställda data alltid att hämtas från SAP HANA. Det är den rekommenderade metoden och är standard för nya DirectQuery-rapporter över SAP HANA.
 
-* **Hantera SAP HANA som en relationskälla:** I det här fallet behandlar Power BI SAP HANA som relationskälla. Detta ger dig större flexibilitet, men var försiktig så att åtgärder aggregeras som förväntat och så att prestandaproblem undviks.
+* **Behandla SAP HANA som en relationskälla:** I det här fallet behandlar Power BI SAP HANA som en relationskälla. Detta ger dig större flexibilitet, men var försiktig så att åtgärder aggregeras som förväntat och så att prestandaproblem undviks.
 
 Den metod som används för att ansluta bestäms av ett alternativ för globala verktyg, vilket anges genom att välja **Arkiv > Alternativ och inställningar** och sedan **Alternativ > DirectQuery**, och sedan alternativet **Hantera SAP HANA som en relationskälla**, enligt följande bild. 
 
@@ -64,17 +64,17 @@ De modelleringar som tillåts är mer restriktiva än i vanliga fall när du anv
 
 Den primära ytterligare modelleringsbegränsningen vid anslutning till SAP HANA med DirectQuery (behandla som flerdimensionell källa) är följande: 
 
-* **Inget stöd för beräknade kolumner:** möjligheten att skapa beräknade kolumner är inaktiverad. Det innebär också att gruppering och klustring, som skapar beräknade kolumner, inte är tillgängligt.
+* **Inget stöd för beräknade kolumner:** Möjligheten att skapa beräknade kolumner är inaktiverad. Det innebär också att gruppering och klustring, som skapar beräknade kolumner, inte är tillgängligt.
 * **Ytterligare begränsningar för mått:** Det finns ytterligare begränsningar av de DAX-uttryck som kan användas i mått för att återspegla den supportnivå som erbjuds av SAP HANA.
-* **Inget stöd för att definiera relationer:** Bara en enda vy kan bli frågad inom en rapport och därför finns inget stöd för att definiera relationer.
-* **Ingen datavy:** **datavyn** visar normalt detaljerad nivådata i tabellerna. På grund av naturen för OLAP-källor som SAP HANA, är den här vyn inte tillgänglig via SAP HANA.
-* **Information om kolumner och mått är fasta:** listan över kolumner och mått som visas i fältlistan korrigeras i den underliggande källan och kan inte modifieras. Det går till exempel inte att ta bort en kolumn eller ändra dess datatyp (det går däremot att byta namn på den).
-* **Ytterligare begränsningar i DAX:** det finns ytterligare begränsningar för DAX som kan användas i måttdefinitioner, för att återspegla begränsningar i källan. Det är till exempel inte möjligt att använda en aggregeringsfunktion via en tabell.
+* **Inget stöd för att definiera relationer:** Bara en enda vy i en rapport kan tillfrågas, och därför finns det inget stöd för att definiera relationer.
+* **Ingen datavy:** **Datavyn** visar normalt detaljerade nivådata i tabellerna. På grund av naturen för OLAP-källor som SAP HANA, är den här vyn inte tillgänglig via SAP HANA.
+* **Information om kolumner och mått är fasta:** Listan över kolumner och mått som visas i fältlistan korrigeras i den underliggande källan och kan inte modifieras. Det går till exempel inte att ta bort en kolumn eller ändra dess datatyp (det går däremot att byta namn på den).
+* **Ytterligare begränsningar i DAX:** Det finns ytterligare begränsningar för DAX som kan användas i måttdefinitioner när man vill återspegla begränsningar i källan. Det är till exempel inte möjligt att använda en aggregeringsfunktion via en tabell.
 
 ### <a name="additional-visualization-restrictions"></a>Ytterligare visualiseringsbegränsningar
 
 Den finns ett antal begränsningar i visualiseringar vid anslutning till SAP HANA med DirectQuery (behandla som flerdimensionell källa): 
-* **Ingen sammansättning av kolumner:** Det går inte att ändra aggregering för en kolumn på en visualisering och den är alltid *Sammanfatta inte*.
+* **Ingen sammansättning av kolumner:** Det går inte att ändra aggregeringen för en kolumn i ett visuellt objekt, och den är alltid *Sammanfatta inte*.
 
 ## <a name="treat-sap-hana-as-a-relational-source"></a>Behandla SAP HANA som en relationskälla 
 
