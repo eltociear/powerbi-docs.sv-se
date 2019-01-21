@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/20/2018
+ms.date: 01/14/2019
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 2abca5019454067b6cdc04c3f52b6daeafb2fb85
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ebcf4a6467991bfc0d434302cd2c846ca4af1a5c
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285356"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324007"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
@@ -60,7 +60,7 @@ Om du vill köpa en Premium-kapacitet följer du dessa steg.
 
 1. Slutför köpet genom att följa stegen.
 
-Du kan också välja en av följande länkar som leder dig direkt till inköpssidan för respektive SKU. Mer information om dessa SKU:er finns i [Vad är Power BI Premium?](service-premium.md#premiumskus).
+Du kan också välja en av följande länkar som leder dig direkt till inköpssidan för respektive SKU. Mer information om dessa SKU:er finns i [Vad är Power BI Premium?](service-premium.md#premium-capacity-nodes).
 
 > [!IMPORTANT]
 > Om du väljer någon av länkarna nedan uppstår ett fel om du inte är i rollen global Office 365 Global-administratör eller rollen faktureringsadministratör.
