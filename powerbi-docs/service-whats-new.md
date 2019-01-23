@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32a052ca009c613b262d5277a0fd85b186c8e148
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488924"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -197,7 +197,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 ***Säkerhet på radnivå (RLS)***
 
 * Stöd för grupper i Azure Active Directory (AAD): Användare kan nu tilldela AAD-grupper (säkerhetsgrupper och distributionslistor) till en roll. Det gör det enklare att tilldela roller till en stor grupp användare på samma gång.
-* [Testa dina RLS-roller med rapporter som bygger på data med RLS på plats](service-admin-rls.md#validating-the-role-within-power-bi-desktop): Vi har lagt till en funktion till vår förhandsversion av RLS där du kan testa din datauppsättning som en viss roll. Detta säkerställer att rollen fungerar som förväntat innan användarna får åtkomst till kontrollpanelen.
+* [Testa dina RLS-roller med rapporter som bygger på data med RLS på plats](service-admin-rls.md#validate-the-roles-within-power-bi-desktop): Vi har lagt till en funktion till vår förhandsversion av RLS där du kan testa din datauppsättning som en viss roll. Detta säkerställer att rollen fungerar som förväntat innan användarna får åtkomst till kontrollpanelen.
 * Definiera och tillämpa RLS på molnmodeller som är baserade på direkta frågor: Du kan nu skapa och tillämpa RLS-regler för datakällor med direkta frågor.
 
 ***Instrumentpaneler***
