@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 4b8cd79eca1711b424d772737b27400f9291cef0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4d121a469257c79e37212ab0e357bb9ee8be68ec
+ms.sourcegitcommit: 19b4d45db8f55cdbb5d7de0d61f6be5163a2852e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279215"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54420796"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Snabbstart: Ansluta till datakällor i Power BI Desktop
 
@@ -39,13 +39,13 @@ När du har installerat **Power BI Desktop** startar du programmet så att det k
 
 ## <a name="connect-to-data"></a>Ansluta till data
 
-Med **Power BI Desktop** kan du ansluta till många olika typer av data. Du kan ansluta till grundläggande datakällor som en Microsoft Excel-fil och du kan ansluta till onlinetjänster som innehåller alla möjliga olika typer av data som Salesforce, Microsoft Dynamics, Azure Blob Storage och många andra. 
+Med **Power BI Desktop** kan du ansluta till många olika typer av data. Du kan ansluta till grundläggande datakällor som en Microsoft Excel-fil och du kan ansluta till onlinetjänster som innehåller alla möjliga olika typer av data som Salesforce, Microsoft Dynamics, Azure Blob Storage och många andra.
 
 Du kan ansluta till data från **menyfliksområdet** genom att välja **Hämta data**.
 
 ![Hämta data](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
-Fönstret **Hämta data** visas, där du kan välja mellan de olika datakällor som **Power BI Desktop** kan ansluta till. I den här snabbstarten använder vi den Excel-arbetsbok som du hämtade och som beskrivs i avsnittet *Förutsättningar* i början av den här artikeln. 
+Fönstret **Hämta data** visas, där du kan välja mellan de olika datakällor som **Power BI Desktop** kan ansluta till. I den här snabbstarten använder vi den Excel-arbetsbok som du hämtade och som beskrivs i avsnittet *Förutsättningar* i början av den här artikeln.
 
 ![Hämta data](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
@@ -69,10 +69,8 @@ När du har läst in tabellerna visas dina data i fönstret **Fält**. Du kan ex
 
 Och sedan är du klar! Du har anslutit till data i **Power BI Desktop**, läst in dessa data och nu kan du se alla tillgängliga fält i de här tabellerna.
 
-
 ## <a name="next-steps"></a>Nästa steg
+
 Det finns en mängd olika saker du kan göra med **Power BI Desktop** när du har anslutit till data, till exempel skapa visuella objekt och rapporter. Titta närmare på följande resurs för att komma igång:
 
 * [Guiden Komma igång för Power BI Desktop](desktop-getting-started.md)
-
-

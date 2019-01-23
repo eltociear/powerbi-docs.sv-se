@@ -1,6 +1,6 @@
 ---
-title: Vanliga frågor och svar för Power BI-användare
-description: Vanliga frågor och svar om Power BI
+title: Slutanvändares vanliga frågor och svar i Power BI
+description: Bläddra i en lista med vanliga frågor och svar om Power BI-tjänsten och Power BI-mobilapparna.
 author: mihart
 manager: kvivek
 ms.custom: seodec18
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b292e6df7cb01e26b610ffb99ec5b794df933bfa
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8eb428857e98a696ffb368c729525acd80e268f2
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287603"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394783"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 * Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).
@@ -41,7 +41,7 @@ För frågor som rör Power BI Premium, se [Power BI Premium, vanliga frågor oc
 Du kan se Azure Active Directory-rapporten för integrerade program för Power BI för att se aktiva användare inom organisationen. Azure AD-rapporten visar inte vilken typ av licens varje användare har. Den rapporterar endast vilka användare har loggat in till Power BI och när de har loggat in. Mer information finns i [Hitta Power BI-användare som har loggat in](../service-admin-access-usage.md).
 
 ## <a name="what-is-power-bi-desktop"></a>Vad är Power BI Desktop?
-Power BI Desktop är ett kostnadsfritt skrivbordsprogram som du kan installera direkt på din dator. Power BI Desktop fungerar sömlöst med Power BI-tjänsten genom att tillhandahålla avancerad datagranskning, bearbetning, modellering och rapporter med interaktiva visualiseringar. Du kan spara ditt arbete i en fil och publicera dina data och rapporter direkt på din Power BI-plats så att de delas med andra. Läs mer om [vad Power BI Desktop är](../desktop-what-is-desktop.md).
+Power BI Desktop är ett kostnadsfritt program som användarna kan installera direkt på sina datorer. Power BI Desktop fungerar sömlöst med Power BI-tjänsten.  Datavetare, administratörer och utvecklare arbetar med Power BI Desktop för att framställa rapporter och göra dem tillgängliga för användare av Power BI-tjänsten, som du. Läs mer om [vad Power BI Desktop är](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-power-bi-service"></a>Vad behöver jag för att använda Power BI-tjänsten?
 Det räcker med en webbläsare och en jobbmejl. Du kan registrera dig med en .gov- och en .mil e-postadress. Mer information finns på sidan [Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten](../service-govus-signup.md) 
@@ -49,14 +49,8 @@ Det räcker med en webbläsare och en jobbmejl. Du kan registrera dig med en .go
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag logga med min jobbmejl?
 Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. Lär dig mer om [registreringsprocessen för Power BI med självbetjäning](../service-self-service-signup-for-power-bi.md).
 
-## <a name="is-power-bi-available-on-premises"></a>Är Power BI tillgängligt lokalt?
-Power BI-tjänsten [https://powerbi.com](https://powerbi.com) är inte tillgängligt som en privat, intern molntjänst. Dock finns det tre alternativ för att visa och arbeta med data lokalt. 
-
-### <a name="on-premises-data-gateway"></a>Lokal datagateway
-Med Power BI och Power BI Desktop kan du ansluta på ett säkert sätt till dina egna lokala datakällor. Med [lokal datagateway](../service-gateway-onprem.md) kan du ansluta live till din lokala SQL Server Analysis Services-server och andra datakällor. Du kan också ställa in schemalagd uppdatering med en centraliserad gateway. Om en gateway inte är tillgänglig kan du uppdatera data från lokala datakällor med hjälp av [Power BI Gateway – Personal](../service-gateway-personal-mode.md).
-
-### <a name="power-bi-mobile-apps"></a>Power BI-mobilappar
-Du kan också visa [lokala Power BI-rapporter, mobila Reporting Services-rapporter och KPI:er i Power BI-mobilapparna](mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Erbjuds prissättning för myndigheter, akademiska institutioner och ideella organisationer för Power BI?
+Ja, priser för ideella organisationer är tillgängliga när du köper direkt från Microsoft. Läs mer och registrera dig på webbplatsen [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi). Prissättning för myndigheter och högskolor erbjuds via MOSP/Direct, EA och öppna licensprogram. Priser för myndigheter är också tillgängliga som syndikering. 
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Har Power BI stöd för mobila enheter?
 Ja. Power BI har inbyggda appar för Android-telefoner och -surfplattor, iOS-enheter och Windows 10-enheter. Hämta en [Power BI-app](https://powerbi.microsoft.com/mobile) från dess respektive store:  
@@ -96,6 +90,11 @@ Här är en fullständig lista över [de regioner och språk som stöds av Power
 Du kan köpa Power BI Pro-licenser direkt eller chatta med en representant på [www.powerbi.com](http://www.powerbi.com).
 
 Du kan också kontakta en [Microsoft-partner](https://partner.microsoft.com/) som hjälper dig med din Power BI-implementering.
+
+## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Vad händer om min Power BI Pro-licens går ut?
+Det finns en respitperiod efter att en Power BI Pro-licens har gått ut. För licenser som är en del av ett volymlicensköp är respitperioden 90 dagar. Om du har köpt licensen direkt är respitperioden 30 dagar.
+
+Power BI Pro har samma prenumerationslivscykel som Office 365. Mer information finns i [Vad händer med mina data och åtkomst när Office 365 för företag-prenumerationen går ut?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Uppfyller Power BI nationella, regionala och branschspecifika efterlevnadskrav?
 Lär dig mer om Power BI-efterlevnad på [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).

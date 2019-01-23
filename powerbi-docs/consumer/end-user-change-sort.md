@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: Conceptual
-ms.date: 12/06/2018
+ms.date: 01/17/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 28dcba5a44da4d0acd8f1b6d0a1bfce655eb46bd
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e648257ecd657b07d02fbff69a3424159b636059
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280112"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394692"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
 I en Power BI-rapport kan du sortera de flesta visualiseringar alfabetiskt efter namnen på kategorierna i diagrammet eller efter de numeriska värdena i varje kategori. Det här diagrammet sorteras exempelvis på kategorin **butiksnamn**.
@@ -33,17 +33,17 @@ Det är enkelt att ändra sorteringen från en kategori (lagernamn) till ett vä
    **Obs!** Det går inte att sortera alla visuella objekt.  Till exempel går inte följande visuella objekt att sortera: trädkarta, karta, koropletkarta, punktdiagram, mätare, kort, flerradskort, vattenfall.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Spara dina ändringar av sorteringsordningen
-De filter, utsnitt, sorteringar och andra datavisningsändringar som du gör sparas i Power BI-rapporterna. Ändringarna finns alltså kvar om du lämnar rapporten och kommer tillbaka senare.  Om du vill återställa ändringarna till inställningarna som rapportskaparen använde väljer du **Återställ till standard** från den översta menyraden. 
+De filter, utsnitt, sorteringar och andra datavisningsändringar som du gör sparas i Power BI-rapporterna. Ändringarna finns alltså kvar om du lämnar rapporten och kommer tillbaka senare.  Om du vill återställa ändringarna till inställningarna som rapportdesignerns använde väljer du **Återställ till standard** från den översta menyraden. 
 
 ![beständig sortering](media/end-user-change-sort/power-bi-reset-to-default.png)
 
-Om knappen **Återställ till standard** är nedtonad betyder det att rapportskaparen har inaktiverat möjligheten att spara ändringarna.
+Om knappen **Återställ till standard** är nedtonad betyder det att rapportdesignern har inaktiverat möjligheten att spara ändringarna.
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Sortera med andra kriterier
 Ibland kan du vilja sortera ditt visuella objekt på ett annat fält eller med andra kriterier.  Du kan t.ex. sortera efter månad (i stället för alfabetisk ordning), eller med heltal i stället för siffra (exempelvis 0, 1, 9, 20 och inte 0, 1, 20, 9).  
 
-I vissa fall kan du sortera det visuella objektet som du vill, exempelvis på månad.  Om det inte går kan det bero på att datauppsättningen bakom rapporten behöver ändras. Be rapportskaparen att uppdatera datauppsättningen.
+I vissa fall kan du sortera det visuella objektet som du vill, exempelvis på månad.  Om det inte går kan det bero på att datauppsättningen bakom rapporten behöver ändras. Be rapportdesignern att uppdatera datauppsättningen.
 
 ## <a name="next-steps"></a>Nästa steg
 Mer om [Visualiseringar i Power BI-rapporter](end-user-visualizations.md).

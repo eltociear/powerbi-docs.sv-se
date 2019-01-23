@@ -1,6 +1,6 @@
 ---
-title: Prenumerera på rapporter och instrumentpaneler i Power BI-tjänsten
-description: Lär dig hur du ordnar en prenumeration åt dig själv och andra på en ögonblicksbild av en Power BI-rapport och instrumentpanel.
+title: Prenumerera på rapporter och instrumentpaneler för Power BI-konsumenter
+description: Lär dig hur du ordnar en prenumeration åt dig på en ögonblicksbild via e-post av en Power BI-rapport och instrumentpanel.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,15 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
-ms.author: mihart
+ms.date: 01/17/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 226d36690d2e3e98588802aa1e4fd9d5f7128ef0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b07d3c1d8dec979c70eed86c01307f69af3e8396
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293020"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394633"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
 Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: från en gång om dagen till en gång i veckan. 
