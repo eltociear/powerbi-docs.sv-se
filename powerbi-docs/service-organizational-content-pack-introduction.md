@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286391"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838472"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
 > [!NOTE]
@@ -41,8 +41,6 @@ Instrumentpaneler, rapporter och Excel-arbetsböcker är skrivskyddade, men du k
 När du publicerar ett organisationsinnehållspaket läggs detta till på AppSource.  Med den här centraliserade databasen är det enkelt för medlemmar att bläddra till och identifiera instrumentpaneler, rapporter och datauppsättningar som har publicerats för dem.  
 
 * Om du vill visa AppSource väljer du **Hämta data** > **Min organisation** > **Hämta**.
-
-Läs mer om att [söka och öppna organisationsinnehållspaket](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>En organisations innehållspakets livscykel
 Alla Power BI Pro användare kan skapa, publicera och komma åt organisationsinnehållspaket. Det är endast skaparen av organisationsinnehållspaketet som kan redigera arbetsboken och datauppsättningen, schemalägga en uppdatering och ta bort den.
