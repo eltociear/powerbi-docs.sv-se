@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 01/14/2019
 ms.author: maggies
-ms.openlocfilehash: 943e81c8c49a4a0707ed41b593093fc27a85a01e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1f7da83629b932d2e14fbc57682e0f7f7988739a
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295891"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488832"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 Lär dig att installera Power BI Desktop som har optimerats för Power BI-rapportservern.
@@ -31,7 +31,7 @@ Det enklaste sättet att se till att du har den senaste versionen av Power BI De
 
     ![Hämta Power BI Desktop från webbportalen](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Eller så du kan gå direkt till [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimerad för Power BI-rapportserver – augusti 2018) i Microsoft Download Center.
+    Eller så du kan gå direkt till [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimerad för Power BI-rapportserver – januari 2019) i Microsoft Download Center.
 
 2. På sidan Download Center väljer du **Hämta**.
 
@@ -41,14 +41,14 @@ Det enklaste sättet att se till att du har den senaste versionen av Power BI De
 
     - **PBIDesktopRS_x64.msi** (64-bitarsversionen).
 
-1. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop (augusti 2018).
+1. När du har hämtat installationsprogrammet kör du installationsguiden för Power BI Desktop (januari 2019).
 
 2. I slutet av installationen, markerar du **Starta Power BI Desktop nu**.
    
     Det startar automatiskt och du är redo att sätta igång.
 
 ## <a name="verify-you-are-using-the-correct-version"></a>Kontrollera att du använder rätt version
-Du kan kontrollera att du använder rätt version av Power BI Desktop genom att titta på startskärmen eller namnlisten i Power BI Desktop. Namnlisten visar lanseringsmånad och år för versionen.
+Du kan kontrollera att du använder rätt version av Power BI Desktop genom att titta på startskärmen eller namnlisten i Power BI Desktop. Namnlisten visar månad och år för versionen.
 
 ![Namnlist för Power BI Desktop optimerad för Power BI-rapportserver](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
 

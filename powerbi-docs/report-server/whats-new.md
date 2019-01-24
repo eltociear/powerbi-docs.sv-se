@@ -8,31 +8,47 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/22/2019
+ms.openlocfilehash: 2a65baf94abcb79dac7bb9419ad67124f2b65bb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488947"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
 Läs mer om nyheterna i Power BI-rapportserver. Den här artikeln omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
 
-Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
-
-Kontrollera också dessa källor för att hålla dig uppdaterad om nya funktioner i Power BI-rapportservern.
-
-* [Microsoft Power BI-bloggen](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services team-bloggen](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* [YouTube-kanalen Guy in a Cube ](https://aka.ms/guyinacube)
+Om du vill ladda ned den senaste versionen av Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportservern går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
 Relaterad information om nyheter i Power BI finns i:
 
 * [Nyheter i Power BI-tjänsten](../service-whats-new.md)
 * [Nyheter i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2019"></a>Januari 2019
+
+Stöd för dessa funktioner i Power BI-rapporter:
+
+[**Säkerhet på radnivå**](row-level-security-report-server.md) Konfiguration av säkerhet på radnivå (RLS) med Power BI-rapportserver kan begränsa dataåtkomst för givna användare. Filter begränsar åtkomst till data på radnivå och du kan definiera filter inom roller.
+
+[**Expandera eller komprimera på matrisens radrubriker** ](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Vi har lagt till möjligheten att expandera eller komprimera enskilda radrubriker, en av de mest efterfrågade visuella funktionerna.
+
+[**Kopiera och klistra in mellan pbix-filer**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Du kan kopiera visuella objekt mellan pbix-filer, antingen från snabbmenyn för det visuella objektet eller med standardkortkommandot Ctrl + C och klistra in dem i en annan rapport med Ctrl + V.
+
+[**Smarta justeringsstödlinjer**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Du ser smarta justeringsstödlinjer när du flyttar objekt på rapportsidan, precis som i PowerPoint, så att du kan justera allt på sidan. Du ser smarta stödlinjer när du drar eller ändrar storlek på något på sidan. När du flyttar ett objekt nära ett annat fästs det på en plats i linje med det andra objektet.
+
+**Hjälpmedelsfunktioner** För många hjälpmedelsfunktioner att lista: till exempel [fältlista med stöd för hjälpmedel](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Fältlistrutan är helt åtkomlig. Du kan navigera i rutan med enbart tangentbordet och en skärmläsare och använda snabbmenyn för att lägga till fält på rapportsidan.
+
+### <a name="administrator-settings"></a>Administratörsinställningar
+
+Administratörer kan ange följande egenskaper i de avancerade SSMS-egenskaperna för servergruppen:
+
+**AllowedResourceExtensionsForUpload** Ange tillägg av resurser som kan laddas upp till rapportservern. Filnamnstillägg för inbyggda filtyper som &ast;.rdl och &ast;.pbix behöver inte inkluderas. Standardvärdet är ”&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
+
+**SupportedHyperlinkSchemes** Anger att en kommaavgränsad lista över URI-scheman som är tillåtna måste definieras i hyperlänkåtgärder som tillåts att återges eller ”&ast;” för att aktivera alla hyperlänkscheman. Till exempel skulle inställningen ”http,https” tillåta hyperlänkar till ”https://www. contoso.com”, men ta bort hyperlänkar till ”mailto:bill@contoso.com” eller ”javascript:window.open(”www.contoso.com”, ”_tomt”)”. Standardvärdet är ”&ast;”.
 
 ## <a name="august-2018"></a>Augusti 2018
 
@@ -325,10 +341,10 @@ Power BI-rapportserver har nu stöd för den nya Power BI-tabellen och visuella 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är Power BI-rapportservern? ](get-started.md)  
- [Administratörshandbok](admin-handbook-overview.md)  
-[Installera Power BI-rapportserver](install-report-server.md)  
-[Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+Kontrollera dessa källor för att hålla dig uppdaterad om nya funktioner i Power BI-rapportservern.
+
+* [Microsoft Power BI-bloggen](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services team-bloggen](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* [YouTube-kanalen Guy in a Cube ](https://aka.ms/guyinacube)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
