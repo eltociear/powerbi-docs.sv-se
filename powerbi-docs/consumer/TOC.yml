@@ -1,186 +1,193 @@
+items:
 - name: Power BI för konsumenter
   href: power-bi-consumer-landing.md
 - name: Power BI-tjänsten för konsumenter
   items:
-    - name: Översikt
+  - name: Översikt
+    items:
+    - name: Vad är en Power BI-konsument?
+      href: end-user-consumer.md
+    - name: Grundläggande begrepp och terminologi för Power BI-konsumenter
+      href: end-user-basic-concepts.md
+  - name: Snabbstarter
+    items:
+    - name: Lär dig hitta i Power BI
+      href: end-user-experience.md
+    - name: Vad kan jag göra med Power BI?
+      href: end-user-reading-view.md
+  - name: Självstudier
+    items:
+    - name: Skapa en instrumentpanelsavisering
+      href: end-user-alerts.md
+  - name: Gör så här
+    items:
+    - name: Instrumentpaneler
       items:
-        - name: Vad är en Power BI-konsument?
-          href: end-user-consumer.md
-        - name: Grundläggande begrepp och terminologi för Power BI-konsumenter
-          href: end-user-basic-concepts.md
-    - name: Snabbstarter
+      - name: Instrumentpaneler
+        href: end-user-dashboards.md
+      - name: Visa en instrumentpanel
+        href: end-user-dashboard-open.md
+      - name: Aktuella instrumentpaneler
+        href: end-user-featured.md
+      - name: Paneler på instrumentpanelen
+        href: end-user-tiles.md
+      - name: Lägga till en kommentar eller starta en konversation
+        href: end-user-comment.md
+    - name: Rapporter
       items:
-        - name: Lär dig hitta i Power BI
-          href: end-user-experience.md
-        - name: Vad kan jag göra med Power BI?
-          href: end-user-reading-view.md
-    - name: Självstudier
+      - name: Rapporter
+        href: end-user-reports.md
+      - name: Visa en rapport
+        href: end-user-report-open.md
+      - name: Använda filter i en rapport
+        href: end-user-report-filter.md
+      - name: Lär dig hur rapportvisualiseringar korsfiltrerar varandra
+        href: end-user-interactions.md
+    - name: Visualiseringar
       items:
-        - name: Skapa en instrumentpanelsavisering
-          href: end-user-alerts.md
-    - name: Gör så här
+      - name: Vad kan jag göra med visualiseringar?
+        href: end-user-visualizations.md
+      - name: Visa data som används för att skapa visualiseringen
+        href: end-user-show-data.md
+      - name: Öka detaljnivån i en visualisering i Power BI
+        href: end-user-drill.md
+      - name: Interagera med ArcGIS-kartor
+        href: ../power-bi-visualizations-arcgis.md
+    - name: Vanliga aktiviteter
       items:
-        - name: Instrumentpaneler
-          items:
-            - name: Instrumentpaneler
-              href: end-user-dashboards.md
-            - name: Visa en instrumentpanel
-              href: end-user-dashboard-open.md
-            - name: Aktuella instrumentpaneler
-              href: end-user-featured.md
-            - name: Paneler på instrumentpanelen
-              href: end-user-tiles.md
-            - name: Lägga till en kommentar eller starta en konversation
-              href: end-user-comment.md
-        - name: Rapporter
-          items:
-            - name: Rapporter
-              href: end-user-reports.md
-            - name: Visa en rapport
-              href: end-user-report-open.md
-            - name: Använda filter i en rapport
-              href: end-user-report-filter.md
-            - name: Lär dig hur rapportvisualiseringar korsfiltrerar varandra
-              href: end-user-interactions.md
-        - name: Visualiseringar
-          items:
-            - name: Vad kan jag göra med visualiseringar?
-              href: end-user-visualizations.md
-            - name: Visa data som används för att skapa visualiseringen
-              href: end-user-show-data.md
-            - name: Öka detaljnivån i en visualisering i Power BI
-              href: end-user-drill.md
-            - name: Interagera med ArcGIS-kartor
-              href: ../power-bi-visualizations-arcgis.md
-        - name: Vanliga aktiviteter
-          items:
-            - name: Olika sätt att zooma i innehåll med fokusläge och helskärmsläge
-              href: end-user-focus.md
-            - name: 'Favoritmarkera instrumentpaneler, rapporter och appar i Power BI'
-              href: end-user-favorite.md
-            - name: 'Skriva ut en instrumentpanel, skriva ut en panel på instrumentpanelen, skriva ut en rapportsida'
-              href: end-user-print.md
-            - name: Visa relaterat innehåll
-              href: end-user-related.md
-            - name: Visa senaste innehåll
-              href: end-user-recent.md
-            - name: Visa innehåll i Delat med mig-containern
-              href: end-user-shared-with-me.md
-            - name: Prenumerera på en rapport eller instrumentpanel
-              href: end-user-subscribe.md
-            - name: Söka efter och sortera innehåll i Power BI
-              href: end-user-search-sort.md
-            - name: Visa automatiska insikter för paneler på instrumentpanelen
-              href: end-user-insights.md
-        - name: Hämta data
-          items:
-            - name: Installera och använda appar
-              href: end-user-apps.md
-            - name: Ansluta till tjänster
-              href: end-user-connect-to-services.md
-        - name: Ställa frågor om dina data
-          items:
-            - name: Frågor och svar i Power BI
-              href: end-user-q-and-a.md
-            - name: Tips för att ställa frågor med Frågor och svar i Power BI
-              href: end-user-q-and-a-tips.md
-    - name: Resurser
+      - name: Olika sätt att zooma i innehåll med fokusläge och helskärmsläge
+        href: end-user-focus.md
+      - name: Favoritmarkera instrumentpaneler, rapporter och appar i Power BI
+        href: end-user-favorite.md
+      - name: Skriva ut en instrumentpanel, skriva ut en panel på instrumentpanelen, skriva ut en rapportsida
+        href: end-user-print.md
+      - name: Visa relaterat innehåll
+        href: end-user-related.md
+      - name: Visa senaste innehåll
+        href: end-user-recent.md
+      - name: Visa innehåll i Delat med mig-containern
+        href: end-user-shared-with-me.md
+      - name: Prenumerera på en rapport eller instrumentpanel
+        href: end-user-subscribe.md
+      - name: Söka efter och sortera innehåll i Power BI
+        href: end-user-search-sort.md
+      - name: Visa automatiska insikter för paneler på instrumentpanelen
+        href: end-user-insights.md
+    - name: Hämta data
       items:
-        - name: Ordlista och terminologi
-          href: end-user-glossary.md
-        - name: Webbläsare som stöds
-          href: end-user-browsers.md
-        - name: Typer av Quick Insights som stöds av Power BI
-          href: end-user-insight-types.md
+      - name: Installera och använda appar
+        href: end-user-apps.md
+      - name: Ansluta till tjänster
+        href: end-user-connect-to-services.md
+    - name: Ställa frågor om dina data
+      items:
+      - name: Frågor och svar i Power BI
+        href: end-user-q-and-a.md
+      - name: Tips för att ställa frågor med Frågor och svar i Power BI
+        href: end-user-q-and-a-tips.md
+  - name: Resurser
+    items:
+    - name: Ordlista och terminologi
+      href: end-user-glossary.md
+    - name: Webbläsare som stöds
+      href: end-user-browsers.md
+    - name: Typer av Quick Insights som stöds av Power BI
+      href: end-user-insight-types.md
 - name: Power BI-mobilappar
   items:
-    - name: Översikt
+  - name: Översikt
+    items:
+    - name: Vilka mobilappar finns det?
+      href: mobile/mobile-apps-for-mobile-devices.md
+  - name: Snabbstarter
+    items:
+    - name: Utforska instrumentpaneler och rapporter
+      href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+  - name: Självstudier
+    items:
+    - name: Ställ frågor i iOS-mobilappar
+      href: mobile/tutorial-mobile-apps-ios-qna.md
+  - name: Begrepp
+    items:
+    - name: Nyheter i mobilapparna
+      href: mobile/mobile-whats-new-in-the-mobile-apps.md
+    - name: Hämta verkliga data med mobilapparna
+      href: mobile/mobile-apps-data-in-real-world-context.md
+    - name: Visa dina data offline i mobilapparna
+      href: mobile/mobile-apps-offline-data.md
+    - name: Appen Power BI för Mixed Reality (förhandsversion)
+      href: mobile/mobile-mixed-reality-app.md
+  - name: Gör så här
+    items:
+    - name: Alla mobilappar
       items:
-        - name: Vilka mobilappar finns det?
-          href: mobile/mobile-apps-for-mobile-devices.md
-    - name: Snabbstarter
+      - name: Dela en instrumentpanel från Power BI-mobilapparna
+        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+      - name: Interagera med paneler i mobilapparna
+        href: mobile/mobile-tiles-in-the-mobile-apps.md
+      - name: Favoriter i mobilapparna
+        href: mobile/mobile-apps-favorites.md
+      - name: Ställa in dataaviseringar i Power BI-mobilapparna
+        href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
+      - name: Få aviseringar i Power BI-mobilapparna
+        href: mobile/mobile-apps-notification-center.md
+      - name: Skapa en djuplänk till en specifik plats
+        href: mobile/mobile-apps-deep-link-specific-location.md
+      - name: Filtrera en rapport efter plats i Power BI-mobilapparna
+        href: mobile/mobile-apps-geographic-filtering.md
+      - name: Instrumentpaneler för mobilt Power BI
+        href: mobile/mobile-apps-view-dashboard.md
+      - name: Rapporter i mobilapparna
+        href: mobile/mobile-reports-in-the-mobile-apps.md
+      - name: Använda OAuth för att ansluta till Reporting Services
+        href: mobile/mobile-oauth-ssrs.md
+    - name: Android-enheter
       items:
-        - name: Utforska instrumentpaneler och rapporter
-          href: mobile/mobile-apps-quickstart-view-dashboard-report.md
-    - name: Självstudier
+      - name: Kom igång med Android-appen
+        href: mobile/mobile-android-app-get-started.md
+      - name: Åtgärda "Ditt företags SSL-certifikat är inte betrott"
+        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+      - name: Åtgärda "Android System WebView måste uppdateras"
+        href: mobile/mobile-android-error-update-android-system-webview.md
+    - name: iOS
       items:
-        - name: Ställ frågor i iOS-mobilappar
-          href: mobile/tutorial-mobile-apps-ios-qna.md
-    - name: Begrepp
+      - name: Kom igång med iOS-appen
+        href: mobile/mobile-iphone-app-get-started.md
+      - name: Frågor och svar virtuell analytiker i iOS-mobilappar
+        href: mobile/mobile-apps-ios-qna.md
+      - name: Power BI-appen för Apple Watch
+        href: mobile/mobile-apple-watch.md
+      - name: Skanna en streckkod från appen på din iPhone
+        href: mobile/mobile-apps-scan-barcode-iphone.md
+    - name: iOS och Android
       items:
-        - name: Nyheter i mobilapparna
-          href: mobile/mobile-whats-new-in-the-mobile-apps.md
-        - name: Hämta verkliga data med mobilapparna
-          href: mobile/mobile-apps-data-in-real-world-context.md
-        - name: Visa dina data offline i mobilapparna
-          href: mobile/mobile-apps-offline-data.md
-        - name: Appen Power BI för Mixed Reality (förhandsversion)
-          href: mobile/mobile-mixed-reality-app.md
-    - name: Gör så här
+      - name: Visa lokala rapporter i mobilapparna
+        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: Visa rapporter optimerade för din telefon
+        href: mobile/mobile-apps-view-phone-report.md
+      - name: Skanna en Power BI QR-kod från din telefon
+        href: mobile/mobile-apps-qr-code.md
+      - name: Kommentera och dela i mobilappar
+        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+    - name: Power BI-appen för Windows 10-enheter
       items:
-        - name: Alla mobilappar
-          items:
-            - name: Dela en instrumentpanel från Power BI-mobilapparna
-              href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
-            - name: Interagera med paneler i mobilapparna
-              href: mobile/mobile-tiles-in-the-mobile-apps.md
-            - name: Favoriter i mobilapparna
-              href: mobile/mobile-apps-favorites.md
-            - name: Ställa in dataaviseringar i Power BI-mobilapparna
-              href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-            - name: Få aviseringar i Power BI-mobilapparna
-              href: mobile/mobile-apps-notification-center.md
-            - name: Skapa en djuplänk till en specifik plats
-              href: mobile/mobile-apps-deep-link-specific-location.md
-            - name: Filtrera en rapport efter plats i Power BI-mobilapparna
-              href: mobile/mobile-apps-geographic-filtering.md
-            - name: Instrumentpaneler för mobilt Power BI
-              href: mobile/mobile-apps-view-dashboard.md
-            - name: Rapporter i mobilapparna
-              href: mobile/mobile-reports-in-the-mobile-apps.md
-            - name: Använda OAuth för att ansluta till Reporting Services
-              href: mobile/mobile-oauth-ssrs.md
-        - name: Android-enheter
-          items:
-            - name: Kom igång med Android-appen
-              href: mobile/mobile-android-app-get-started.md
-            - name: Åtgärda "Ditt företags SSL-certifikat är inte betrott"
-              href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-            - name: Åtgärda "Android System WebView måste uppdateras"
-              href: mobile/mobile-android-error-update-android-system-webview.md
-        - name: iOS
-          items:
-            - name: Kom igång med iOS-appen
-              href: mobile/mobile-iphone-app-get-started.md
-            - name: Frågor och svar virtuell analytiker i iOS-mobilappar
-              href: mobile/mobile-apps-ios-qna.md
-            - name: Power BI-appen för Apple Watch
-              href: mobile/mobile-apple-watch.md
-            - name: Skanna en streckkod från appen på din iPhone
-              href: mobile/mobile-apps-scan-barcode-iphone.md
-        - name: iOS och Android
-          items:
-            - name: Visa lokala rapporter i mobilapparna
-              href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-            - name: Visa rapporter optimerade för din telefon
-              href: mobile/mobile-apps-view-phone-report.md
-            - name: Skanna en Power BI QR-kod från din telefon
-              href: mobile/mobile-apps-qr-code.md
-            - name: Kommentera och dela i mobilappar
-              href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-        - name: Power BI-appen för Windows 10-enheter
-          items:
-            - name: Kom igång med Windows 10-appen
-              href: mobile/mobile-windows-10-phone-app-get-started.md
-            - name: Fäst en instrumentpanel på startskärmen
-              href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: 'Visa Reporting Services-mobilrapporter och KPI:er'
-              href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-            - name: Visa Power BI på Surface Hub
-              href: mobile/mobile-windows-10-app-presentation-mode.md
-            - name: Enkel inloggning i Windows-appen
-              href: mobile/mobile-windows-10-app-single-sign-on-sso.md
-    - name: Resurser
-      items:
-        - name: Språk som stöds i mobilapparna
-          href: mobile/mobile-apps-supported-languages.md
+      - name: Kom igång med Windows 10-appen
+        href: mobile/mobile-windows-10-phone-app-get-started.md
+      - name: Fäst en instrumentpanel på startskärmen
+        href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+      - name: Visa Reporting Services-mobilrapporter och KPI:er
+        href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+      - name: Visa Power BI på Surface Hub
+        href: mobile/mobile-windows-10-app-presentation-mode.md
+      - name: Enkel inloggning i Windows-appen
+        href: mobile/mobile-windows-10-app-single-sign-on-sso.md
+  - name: Resurser
+    items:
+    - name: Språk som stöds i mobilapparna
+      href: mobile/mobile-apps-supported-languages.md
+ms.openlocfilehash: 9551f497f497939c78eb241ba28312410f2328c1
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838426"
