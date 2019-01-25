@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 01/21/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e741076bf345f093e249b398995a72a683ae84d6
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 0b423310e88917c910d44f15247bbaec49732f2c
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394808"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838334"
 ---
 # <a name="apps-in-power-bi"></a>Appar i Power BI
 ## <a name="what-is-a-power-bi-app"></a>Vad är en Power BI-app?
@@ -26,12 +26,14 @@ Apparna är ordnade i innehållslistan i **Appar**.
 
 ![Appar i Power BI](./media/end-user-apps/power-bi-apps-nav.png)
 
+> [!NOTE]
+> Du behöver en Power BI Pro-licens för att kunna använda appfunktionen. <!-- add link to how to figure out your license -->
+
 ## <a name="app-designers-and-app-consumers"></a>***Appdesigners*** och ***appkonsumenter***
 Beroende på din roll kan du vara någon som skapar appar (designer) för eget bruk eller för att dela med kollegor. Eller så kan du vara någon som tar emot och laddar ned appar (konsument) som har skapats av andra. Den här artikeln är för *appkonsumenter*.
 
 ## <a name="advantages-of-apps"></a>Fördelar med appar
 Apparna är enkla att hitta och installera i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och på din mobila enhet. När du har installerat en app behöver du inte längre komma ihåg namnet på en massa olika instrumentpaneler eftersom de har samlats tillsammans i en och samma app, i din webbläsare eller på din mobila enhet.
-
 
 Och när appförfattare släpper uppdateringar, så ser du dem automatiskt. Författaren också styr också hur ofta data schemaläggs för uppdatering, så du inte behöver bry dig om att hålla det uppdaterat. 
 

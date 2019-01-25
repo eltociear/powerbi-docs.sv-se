@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 06ff1326c902c723614b3b89c0b5c1217fa06ea3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295703"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838449"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 Om du vill se de data som används i en visualisering, [kan du visa dessa data i Power BI](service-reports-show-data.md) eller exportera data till Excel som en XLSX- eller CSV-fil. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. 
@@ -83,7 +83,7 @@ Vad som visas när du väljer **Underliggande data** kan variera. Du kanske beh�
 | Visualiseringen innehåller |                                                                              Vad som visas i exporten                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Aggregeringar    |                                                 Den *första* aggregeringen och icke-dolda data från hela tabellen för den aggregeringen.                                                  |
-|   Aggregeringar    | Relaterade data – om visualiseringen använder data från andra datatabeller som är *\*\*relaterade*\* till datatabellen som innehåller aggregeringen (så länge relationen är \*:1 eller 1:1). |
+|   Aggregeringar    | Relaterade data – om det visuella objektet använder data från andra datatabeller som är *relaterade* till datatabellen som innehåller samlingen (så länge relationen är \*:1 eller 1:1). |
 |    Mått     |                                      Alla mått i visualiseringen *och* alla mått från datatabeller som innehåller något mått som används i visualiseringen.                                      |
 |    Mått     |                                       Alla icke-dolda data från tabeller som innehåller måttet (så länge relationen är \*:1 eller 1:1).                                       |
 |    Mått     |                                      Alla data från alla tabeller som är relaterade till tabeller som innehåller mått via en kedja av \*: 1 av 1:1).                                      |
