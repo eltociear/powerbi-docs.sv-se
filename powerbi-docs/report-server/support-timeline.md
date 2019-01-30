@@ -8,22 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: e24cf43c5797293f83c7f678dee328d502ac2243
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/24/2019
+ms.openlocfilehash: b2ddf1e55f54b9c671a92df497c0a2ae1afdcced
+ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54907540"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Supporttider för Power BI-rapportservern
 
-Power BI-rapportservern kommer att släppas ett par gånger per år. Säkerhets- och kritiska uppdateringar kommer vara tillgängliga tills nästa utgåva blir allmänt tillgänglig (GA). Efter nästa utgåva fortsätter den föregående versionen att ta emot uppdateringar under återstoden av 12-månadsversionen.
+Power BI-rapportservern släpps ett par gånger per år. Säkerhetsuppdateringar och viktiga uppdateringar är tillgängliga tills nästa utgåva blir allmänt tillgänglig (GA). När nästa version har släppts fortsätter den föregående versionen att ta emot uppdateringar under återstoden av 12-månadsperioden.
 
 Med den här supportpolicyn kan vi leverera nyheter till kunderna snabbt samt ge dem flexibiliteten att införa dem i sin egen takt.
 
-* Servicefas för säkerhets- och kritiska uppdateringar – När du kör den senaste aktuella versionen av Power BI-rapportservern, får du både säkerhets- och kritiska uppdateringar.
-* Servicefas för säkerhetsuppdateringar (endast) – När en ny version släpps minskas stödet för äldre versioner till enbart säkerhetsuppdateringar under resten av 12-månadsperiodens supportcykel (visas i bild 1).
+* Servicefas för säkerhetsuppdateringar och viktiga uppdateringar – När du kör den senaste aktuella versionen av Power BI-rapportservern får du både säkerhetsuppdateringar och viktiga uppdateringar.
+* Servicefas för (enbart) säkerhetsuppdateringar – När en ny version släpps begränsas stödet för äldre versioner till att enbart omfatta säkerhetsuppdateringar under resten av 12-månadsperioden (visas på bild 1).
 
     ![Diagram som illustrerar supporttidsperioden](media/support-timeline/report-server-support-timeline-overall.png)
 
@@ -31,10 +31,11 @@ Med den här supportpolicyn kan vi leverera nyheter till kunderna snabbt samt ge
 
 | **Version** | **Tillgänglighetsdatum** | **Slutdatum för support** |
 | --- | --- | --- |
-| Juni 2017 |12 juni 2017 |Stöds ej |
-| Oktober 2017 |31 oktober 2017 |31 oktober 2018 |
+| Juni 2017 |12 juni 2017 |Stöds inte längre |
+| Oktober 2017 |31 oktober 2017 | Stöds inte längre |
 | Mars 2018 | 19 mars 2018 | 19 mars 2019 |
 | Augusti 2018 | 15 augusti 2018 | 15 augusti 2019 |
+| Januari 2019 | 23 januari 2019 | 23 januari 2020 |
 
 Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 

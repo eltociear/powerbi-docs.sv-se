@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 04f67f82552f7915f8ca4fc6e639de3e616c2f8a
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295269"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147598"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -113,7 +113,7 @@ I följande steg förutsätter vi att det finns en lokal miljö med två datorer
 
 * Gatewaydatorns namn: **PBIEgwTestGW**
 * Gatewaytjänstkonto: **PBIEgwTest\GatewaySvc** (kontots visningsnamn: Gateway-port)
-* Datornamn för SQL Server-datakälla: **PBIEgwTestSQL**
+* Datornamn för SQL Server-datakällan: **PBIEgwTestSQL**
 * Tjänstkonto för SQL Server-datakälla: **PBIEgwTest\SQLService**
 
 Baserat på dessa exempelnamn och -inställningar, blir konfigurationsstegen följande:
@@ -205,6 +205,9 @@ Nu när du förstår hur Kerberos fungerar med en gateway kan du konfigurera enk
 Den här guiden försöker vara så omfattande som möjligt. Om du redan har slutfört några av de här stegen kan du hoppa över dem: Om du till exempel redan har skapat en tjänstanvändare för BW-servern och mappat ett SPN-namn till den, eller om du redan har installerat gsskrb5-biblioteket.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>Konfigurera gsskrb5 på klientdatorer och BW-servern
+
+> [!NOTE]
+> gsskrb5 stöds inte längre aktivt av SAP. Mer information finns i [SAP-anteckningen 352295](https://launchpad.support.sap.com/#/notes/352295). Observera också att gsskrb5 inte tillåter SSO-anslutningar från datagatewayen till BW-meddelandeservrar. Endast anslutningar till BW-programservrar är möjliga.
 
 gsskrb5 måste användas av både klienten och servern att slutföra en SSO-anslutning via gatewayen. Common Crypto-biblioteket (sapcrypto) stöds inte för närvarande.
 

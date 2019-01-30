@@ -1,6 +1,6 @@
 ---
-title: Kom igång med Power BI-tjänsten (Power BI online)
-description: Kom igång med Power BI online (app.powerbi.com)
+title: Kom igång med Power BI-tjänsten
+description: Kom igång med Power BI-tjänsten online (app.powerbi.com)
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,25 +8,25 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292003"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147506"
 ---
-# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Självstudie: Kom igång med Power BI-tjänsten (app.powerbi.com)
-Dessa självstudier hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden, så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](power-bi-overview.md).
+# <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Självstudie: Kom igång med Power BI-tjänsten (app.powerbi.com)
+Den här självstudien hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](power-bi-overview.md).
 
-![Bild på relationen mellan Power BI Desktop, Power BI Mobile och Power BI-tjänsten](media/service-get-started/power-bi-components.png)
+![Bild som visar relationen mellan Power BI Desktop, tjänst, mobil](media/service-get-started/power-bi-components.png)
 
 I den här självstudien går du igenom följande steg:
 
 > [!div class="checklist"]
-> * Hitta annat kom igång-innehåll för Power BI-tjänsten
+> * Hitta annat innehåll som hjälper dig att komma igång med Power BI-tjänsten
 > * Logga in på ditt Power BI-onlinekonto eller registrera dig om du inte har ett konto
 > * Öppna Power BI-tjänsten
 > * Hämta information och öppna den i rapportvyn
@@ -35,25 +35,25 @@ I den här självstudien går du igenom följande steg:
 > * Lägg till ytterligare visualisering på instrumentpanelen med verktyget för frågor och svar på naturligt språk
 > * Rensa resurser genom att ta bort datauppsättningen, rapporten och instrumentpanelen
 
-## <a name="sign-up-for-power-bi-service"></a>Registrera dig för Power BI-tjänsten
+## <a name="sign-up-for-the-power-bi-service"></a>Registrera dig för Power BI-tjänsten
 Om du inte har registrerat dig för Power BI, [registrerar du dig för en kostnadsfri Power BI Pro-utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
 
 Om du redan har ett konto öppnar du en webbläsare och skriver in app.powerbi.com för att öppna Power BI-tjänsten. 
 
 ![Logga in eller Registrera dig kostnadsfritt](media/service-get-started/power-bi-sign-up.png)
 
-Om du behöver hjälp med Power BI Desktop, så läs [Kom igång med Desktop](desktop-getting-started.md). Om du behöver hjälp med Power BI Mobile, så läs [Power BI-appar för mobila enheter](consumer/mobile/mobile-apps-for-mobile-devices.md).
+Läs igenom informationen om att [komma igång med Power BI Desktop](desktop-getting-started.md) om du behöver hjälp med Power BI Desktop. Om du behöver hjälp med Power BI Mobile, så läs [Power BI-appar för mobila enheter](consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
 > Föredrar du en kostnadsfri självstudiekurs istället? [Registrera dig för vår kurs Analysera och visualisera data på EdX](http://aka.ms/edxpbi).
 
-Besök vår [spelningslista på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). En bra video är att börja med är Introduktion till Power BI-tjänsten:
+Besök vår [spelningslista på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). En bra video att börja med är Introduktion till Power BI-tjänsten:
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-## <a name="what-is-power-bi-service"></a>Vad är Power BI-tjänsten?
-Microsofts Power BI-tjänst kallas ibland för Power BI online eller app.powerbi.com. Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  Tack vare Power BI-tjänsten hjälper ***instrumentpanelerna*** dig att ha koll på verksamhetens puls.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md).
+## <a name="what-is-the-power-bi-service"></a>Vad är Power BI-tjänsten?
+Microsofts Power BI-tjänst kallas ibland för Power BI online eller app.powerbi.com. Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  ***Instrumentpanelerna*** i Power BI-tjänsten kan hjälpa dig att hålla dig uppdaterad om din verksamhet.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md).
 
 Om du har viktiga data i Excel- eller CSV-filer, så kan du skapa en Power BI-instrumentpanel så att du kan hålla dig informerad var du än befinner dig och dela information med andra.  Prenumererar du på ett SaaS-program som Salesforce?  Kom igång direkt genom att ansluta till Salesforce och automatiskt skapa en instrumentpanel från dessa data, eller [ta en närmare titt på alla andra SaaS-appar](service-get-data.md) som du kan ansluta till. Om du arbetar för en organisation kan du kontrollera om några [appar](service-create-distribute-apps.md) har publicerats för dig.
 
@@ -87,7 +87,7 @@ Här är ett exempel på hämtning av data från en CSV-fil. Vill du följa den 
 
     ![Alternativet Läsvy](media/service-get-started/power-bi-editing-view.png)
 
-    I redigeringsvyn kan du skapa och ändra dina rapporter eftersom du är *ägare* till rapporterna. Det är du som är *skaparen*. När du delar din rapport med kollegor kan de bara interagera med rapporten i läsvyn. De är *konsumenter*. Lär dig mer om [Läsvy och Redigeringsvy](consumer/end-user-reading-view.md).
+    I redigeringsvyn kan du skapa och ändra dina rapporter eftersom du är *ägare* till rapporterna. Det är även du som är *skaparen*. När du delar din rapport med kollegor kan de bara interagera med rapporten i läsvyn. De är *konsumenter*. Lär dig mer om [Läsvy och Redigeringsvy](consumer/end-user-reading-view.md).
     
     Ett bra sätt för dig att bekanta dig med rapportredigeraren är att [ta en rundtur](service-the-report-editor-take-a-tour.md)
    > 
@@ -104,11 +104,11 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
    
    ![rapportredigeraren med vald ikon](media/service-get-started/gettingstart5new.png)
 
-3. Det ser intressant ut så vi *fäster* det på en instrumentpanel. Hovra över visualiseringen och välj **stiftikonen**.  När du har fäst visualiseringen sparas den på instrumentpanelen och hålls uppdaterad så att du kan spåra det senaste värdet direkt.
+3. Det här diagrammet ser intressant ut så vi *fäster* det på en instrumentpanel. Hovra över visualiseringen och välj **stiftikonen**.  När du har fäst visualiseringen sparas den på instrumentpanelen och hålls uppdaterad så att du kan spåra det senaste värdet direkt.
    
    ![fästikon](media/service-get-started/pinnew.png)
 
-4. Eftersom detta är en ny rapport uppmanas du att spara den innan du kan fästa en visualisering på instrumentpanelen. Ge rapporten ett namn (till exempel *Försäljning över tid*) och välj **Spara och fortsätt**. 
+4. Eftersom den här rapporten är ny uppmanas du att spara den innan du kan fästa en visualisering på instrumentpanelen. Ge rapporten ett namn (till exempel *Försäljning över tid*) och välj **Spara och fortsätt**. 
    
    ![Dialogrutan Spara rapport](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
@@ -118,7 +118,7 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
    
 1. Välj **fäst**.
    
-    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.
+    Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till som en panel på instrumentpanelen.
    
     ![Dialogrutan Fäst på instrumentpanelen](media/service-get-started/power-bi-pin-success.png)
 
@@ -126,7 +126,7 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
    
    ![Instrumentpanel med fäst visualisering](media/service-get-started/power-bi-new-dashboard.png)
    
-   Välj den nya panelen på instrumentpanelen och gå tillbaka till rapporten. Power BI för dig tillbaka till rapportredigeraren i läsvyn. Om du vill växla tillbaka till redigeringsvyn, väljer du **Redigera rapporten** från den översta menyraden. När du befinner dig i redigeringsvyn igen kan du fortsätta att utforska och fästa paneler. 
+   Välj den nya panelen på instrumentpanelen för att när som helst gå tillbaka till rapporten. Power BI för dig tillbaka till rapportredigeraren i läsvyn. Om du vill växla tillbaka till redigeringsvyn, väljer du **Redigera rapporten** från den översta menyraden. När du befinner dig i redigeringsvyn igen kan du fortsätta att utforska och fästa paneler. 
 
 ## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Steg 3:  Fortsätt att utforska med Frågor och svar (frågor på naturligt språk)
 1. Om du vill utforska dina data snabbt, så försök med att ställa en fråga i rutan Frågor och svar. Frågerutan för Frågor och svar är placerad längst upp på instrumentpanelen (**Ställ en fråga om dina data**) och i menyraden överst i rapporten (**Ställ en fråga**). Försök till exempel att skriva ”vilket segment hade mest intäkter”.

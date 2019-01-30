@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a45ddbef861ad29f5823edee213b12af068d48eb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 26c7c1b428f513fe2b79a3377085004506412604
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277237"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899306"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. När du utforskar data, skapar diagram och instrumentpaneler, eller ställer frågor i Frågor och svar, hämtar alla dessa visualiseringar och svar som du ser sina underliggande data från en datauppsättning. Men var kommer datauppsättningen från? Från en datakälla.
@@ -29,7 +29,7 @@ Du kan hämta data från någon av dessa datakällor i Power BI genom att klicka
 ## <a name="files"></a>Filer
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) – Excel är unikt eftersom en arbetsbok både kan innehålla data som du själv har lagt in i kalkylbladen och att du kan fråga efter och läsa in data från externa datakällor med Power Query (Hämta och transformera i Excel 2016) eller Power Pivot. Du kan importera data som finns i tabeller i kalkylblad (datan *måste* finnas i en tabell), eller importera data som har lästs in i en datamodell. Läs mer i [Hämta data från Excel](service-get-data-from-files.md).
+**Excel** (.xlsx, .xlsm) – Excel är unikt eftersom en arbetsbok både kan innehålla data som du själv har lagt in i kalkylbladen och eftersom du kan fråga efter och läsa in data från externa datakällor med Power Query (Hämta och transformera i Excel 2016) eller Power Pivot. Du kan importera data som finns i tabeller i kalkylblad (datan *måste* finnas i en tabell), eller importera data som har lästs in i en datamodell. Läs mer i [Hämta data från Excel](service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbix) – Du kan använda Power BI Desktop till att fråga efter och läsa in data från externa datakällor, utöka datamodellen med mått och relationer samt skapa rapporter. Du kan importera din Power BI Desktop-fil till Power BI-webbplatsen. Power BI Desktop passar bäst för mer avancerade användare som har en god förståelse för sina datakällor, datafrågor och omvandling samt datamodelleringsbegrepp. Läs mer i [Ansluta till data i Power BI Desktop](desktop-connect-to-data.md).
 

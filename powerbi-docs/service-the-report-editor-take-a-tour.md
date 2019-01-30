@@ -8,21 +8,21 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 70eb50c493c6828ca03b1161138e1a4f4b1fae8e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284459"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147414"
 ---
-# <a name="tour-of-the-report-editor-in-power-bi"></a>Rundtur i rapportredigeraren i Power BI
+# <a name="tour-the-report-editor-in-power-bi"></a>Upptäck rapportredigeraren i Power BI
 
 *Rapportredigeraren* i Power BI-tjänsten och rapportredigeraren i Power BI Desktop liknar varandra. Videon visar rapportredigeraren i Power BI Desktop och den här artikeln beskriver rapportredigeraren i Power BI-tjänsten. 
 
-Som rapportskapare kan du skapa och redigera instrumentpaneler och rapporter. Sedan distribuerar du dem till dina rapportkonsumenter. De kan interagera med dina instrumentpaneler och rapporter i läsvyn i Power BI-tjänsten men inte redigera dem. Läs mer om skillnaderna för rapporter mellan [läsvyn och redigeringsvyn i Power BI-tjänsten](consumer/end-user-reading-view.md) 
+Som rapportskapare kan du skapa och redigera instrumentpaneler och rapporter. Sedan distribuerar du dem till dina rapportkonsumenter. De kan interagera med dina instrumentpaneler och rapporter i läsvyn i Power BI-tjänsten men inte redigera dem. Läs mer om [vad rapportanvändare kan göra i Power BI-tjänsten](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ Om du vill ta bort ett fält från visualiseringen så markera **X** till höger
 Mer information finns i [Lägga till visualiseringar i en Power BI-rapport](visuals/power-bi-report-add-visualizations-i.md)
 
 ### <a name="format-your-visuals"></a>Formatera dina visuella objekt
-Öppna formatfönstret genom att välja färgrollerikonen. Vilket alternativ som är tillgängligt beror på vilken visualiseringstyp som har valts.
+Öppna formatfönstret genom att välja färgrollerikonen. Vilka alternativ som är tillgängliga beror på vilken visualiseringstyp som har valts.
 
 ![Formateringsfönstret i rapportredigeraren](media/service-the-report-editor-take-a-tour/power-bi-formatting.png)
 
@@ -76,7 +76,7 @@ Formateringsmöjligheterna är nästan oändliga.  Om du vill veta mer, så utfo
 * [Anpassa egenskaper för x-axeln och y-axeln](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Lägg till analys i din visualiseringar
-Välj förstoringsglasikonen om du vill visa analysfönstret. Vilket alternativ som är tillgängligt beror på vilken visualiseringstyp som har valts.
+Välj förstoringsglasikonen om du vill visa analysfönstret. Vilka alternativ som är tillgängliga beror på vilken visualiseringstyp som har valts.
 
 ![Analysfönstret i rapportredigeraren](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
 Med fönstret Analytics i Power BI-tjänsten kan du lägga till dynamiska referensrader i visualiseringar och ange fokus för viktiga trender eller insikter. Läs mer i [Fönstret Analytics i Power BI-tjänsten](service-analytics-pane.md) eller [Fönstret Analytics i Power BI Desktop](desktop-analytics-pane.md).
@@ -85,7 +85,7 @@ Med fönstret Analytics i Power BI-tjänsten kan du lägga till dynamiska refere
 ## <a name="the-filters-pane"></a>Fönstret Filter
 Använd fönstret Filter för att visa, ange och ändra beständiga filter för rapporten på sidan, rapporten, visningen av detaljerad information och visuell nivå. Ja, du kan göra ad hoc-filtrering på rapportsidor och visuell information genom att välja element av den visuella informationen eller med hjälp av verktyg som utsnitt, men genom att använda fönstret Filter sparas tillståndet för filtren i rapporten. 
 
-Fönstret Filter har en andra kraftfull funktion – möjlighet att filtrera med ett fält ***som inte redan används i en av visualiseringarna i rapporten***. Låt mig förklara. När du skapar en rapportsida, lägger Power BI automatiskt till alla fält som du använder i din visuella information till filterområdet för visuell information i fönstret Filter.  Men om du vill ange ett filter för visuell information, sida, visning av detaljerad information eller rapport som för närvarande använder ett fält som inte används i en visualisering, bara dra det till ett av filtrets buckets.   
+Filterfönstret har ännu en kraftfull funktion – möjligheten att filtrera med ett fält ***som inte redan används i ett av de visuella objekten i rapporten***. Låt mig förklara. När du skapar en rapportsida, lägger Power BI automatiskt till alla fält som du använder i din visuella information till filterområdet för visuell information i fönstret Filter.  Men om du vill ange ett filter för visuell information, sida, visning av detaljerad information eller rapport som för närvarande använder ett fält som inte används i en visualisering, bara dra det till ett av filtrets buckets.   
 
 ![Filterfönstret](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
@@ -97,7 +97,7 @@ Fönstret Fält visar de tabeller och fält som finns i dina data och som är ti
 
 |  |  |
 | --- | --- |
-| ![fönstret Fält](media/service-the-report-editor-take-a-tour/reportfields.png) |<ul><li>Starta en ny visualisering genom att dra ett fält till sidan.  Du kan också dra ett fält till en befintlig visualisering så att fältet läggs till i visualiseringen.<br><br></li> <li>När du lägger till en bock bredvid ett fält så lägger Power BI till det fältet i den aktiva (eller nya) visualiseringen. Och det avgör även i vilken bucket fältet ska placeras.  Ska fältet t.ex. används som en förklaring, en axel eller ett värde? Power BI gör en kvalificerad gissning, och du kan flytta den från en bucket till en annan, om så skulle behövas. <br><br></li><li>Oavsett hur du gör, så har varje markerat fält lagts till i fönstret Visualiseringar i Rapportredigeraren.</li></ul> |
+| ![fönstret Fält](media/service-the-report-editor-take-a-tour/reportfields.png) |<ul><li>Starta en ny visualisering genom att dra ett fält till sidan.  Du kan också dra ett fält till en befintlig visualisering så att fältet läggs till i visualiseringen.<br><br></li> <li>När du lägger till en bock bredvid ett fält så lägger Power BI till det fältet i den aktiva (eller nya) visualiseringen. Och det avgör även i vilken bucket fältet ska placeras.  Ska fältet t.ex. användas som en förklaring, en axel eller ett värde? Power BI gör en kvalificerad gissning, och du kan flytta den från en bucket till en annan, om så skulle behövas. <br><br></li><li>Oavsett hur du gör, så har varje markerat fält lagts till i fönstret Visualiseringar i Rapportredigeraren.</li></ul> |
 
 **Obs!** Om du använder Power BI Desktop du har också alternativ för att visa/dölja fält, lägga till beräkningar osv.
 
@@ -109,7 +109,7 @@ Mer information finns i [Aggregeringar i Power BI-rapporter](service-aggregates.
 Varje beräknat fält har en egen hårdkodad formel. Du kan t.ex. inte ändra beräkningen om den är en summa. Den kan bara vara en summa. Mer information finns i [Förstå mått](desktop-measures.md)
 
 ![ikonen Unika fält](media/service-the-report-editor-take-a-tour/icon.png) **Unika fält**  
-Fält med den här ikonen importerades från Excel och är inställda på att visa alla värden, även om de har dubbletter. Dina data kan t.ex. ha två poster för personer med namnet ”John Smith”, och var och en behandlas som unik – de summeras inte.  
+Fält med den här ikonen importerades från Excel och är inställda på att visa alla värden, även om de har dubbletter. Dina data kan t.ex. ha två poster för personer med namnet ”John Smith” och var och en behandlas som unik – de summeras inte.  
 
 **![ikonen Geografi](media/service-the-report-editor-take-a-tour/pbi_geo_icon.png) Geografifält**  
 Platsfält kan användas för att skapa kartvisualiseringar. 
@@ -121,7 +121,7 @@ Markera pilen om du vill visa vilka fält som bildar hierarkin.
 Åtgärder som är tillgängliga från det övre navigeringsfältet är ett stort antal, och nya åtgärder läggs till hela tiden. Använd Power BI-dokumentationens innehållsförteckning eller sökrutan om du vill ha information om en viss åtgärd.
 
 ## <a name="3-the-report-canvas"></a>3. Rapportarbetsytan
-Rapportarbetsytan är den plats där arbetet visas. När du använder fönstren Fält, Filter och Visualiseringar för att skapa visuella objekt, så skapas och visas dessa på rapportarbetsytan. Varje flik längst ned på arbetsytan representerar en sida i rapporten. Öppna en sida genom att välja dess flik. 
+Rapportarbetsytan är den plats där arbetet visas. När du använder fönstren Fält, Filter och Visualiseringar för att skapa visuella objekt, så skapas och visas dessa på rapportarbetsytan. Varje flik längst ned på arbetsytan visar en sida i rapporten. Öppna en sida genom att välja dess flik. 
 
 ## <a name="next-steps"></a>Nästa steg
 [Skapa en rapport](service-report-create-new.md)
