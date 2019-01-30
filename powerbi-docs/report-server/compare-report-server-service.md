@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 95055f19ed4187124d940e0fe7f70068dffc71c5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4c7724baf63b1ff4e9e6f3d566da113557ab1b06
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289772"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234403"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -43,7 +43,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Analysera i Excel | Nej | Ja | [Analysera i Excel](../service-analyze-in-excel.md) 
 | Sidnumrerade rapporter | Ja | Ja | [Sidnumrerade rapporter är tillgängliga i Power BI-tjänsten](../paginated-reports-report-builder-power-bi.md) som en förhandsversion i Premium-kapacitet
 | Power BI-mobilappar | Ja | Ja | [Översikt över Power BI-mobilappar](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
-| ArcGIS-mappar | Nej | Ja | [ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri](../power-bi-visualization-arcgis.md)
+| ArcGIS-mappar | Nej | Ja | [ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri](../visuals/power-bi-visualization-arcgis.md)
 | E-postprenumerationer för Power BI-rapporter | Nej | Ja | [Prenumerera på en rapport eller en instrumentpanel](../consumer/end-user-subscribe.md) i Power BI-tjänsten 
 | E-postprenumerationer för sidnumrerade rapporter | Ja | Nej | [E-postleverans i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Datavarningar | Nej | Ja | [Datavarningar](../service-set-data-alerts.md) i Power BI-tjänsten

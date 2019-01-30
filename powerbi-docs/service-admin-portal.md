@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d26de4b093af31ab4d8730193a501dc0d6eac2c3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2f7d43649079f63fe18bfb4316557c2b5322f204
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285900"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234472"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -228,7 +228,7 @@ Användare i organisationen kan använda Excel för att visa och interagera med 
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>Använda ArcGIS Maps for Power BI
 
-Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringen som tillhandahålls av Esri. [Läs mer](power-bi-visualization-arcgis.md)
+Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringen som tillhandahålls av Esri. [Läs mer](visuals/power-bi-visualization-arcgis.md)
 
 ### <a name="use-global-search-for-power-bi-preview"></a>Använda global sökning för Power BI (förhandsversion)
 
