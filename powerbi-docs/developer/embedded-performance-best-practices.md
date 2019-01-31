@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-embedded
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 025d843158795e7c36a5a278f2022349a9b72ca6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 50fbb175640e38431db62df34276417f1080e42a
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277168"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430360"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bästa praxis för Power BI Embedded-prestanda
 
@@ -26,7 +26,7 @@ Powerbi.embed()-metoden tar emot ett fåtal parametrar för att bädda in en rap
 
 ### <a name="embed-url"></a>Inbäddnings-URL
 
-Undvik att generera inbäddnings-URL:en själv. Se i stället till att hämta inbäddnings-URL:en genom att anropa API:et för att [hämta rapporter](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Frest%2Fapi%2Fpower-bi%2Freports%2Fgetreportsingroup&data=02%7C01%7CMark.Ghanayem%40microsoft.com%7C07ca68ceb37a48e3f3de08d64968707a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636777110256168308&sdata=22lkqRM2w1MQfrM8dooedaPqqIU8PufTq9TT4VDzRo0%3D&reserved=0), [hämta instrumentpaneler](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Frest%2Fapi%2Fpower-bi%2Fdashboards%2Fgetdashboardsingroup&data=02%7C01%7CMark.Ghanayem%40microsoft.com%7C07ca68ceb37a48e3f3de08d64968707a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636777110256168308&sdata=nfWRgbSoXVF42Rg%2Ba9491u19uksXp%2FAyz%2Fa%2Ba7%2FCtdA%3D&reserved=0) eller [hämta paneler](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Frest%2Fapi%2Fpower-bi%2Fdashboards%2Fgettilesingroup&data=02%7C01%7CMark.Ghanayem%40microsoft.com%7C07ca68ceb37a48e3f3de08d64968707a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636777110256178318&sdata=LgZ27TynNpqQJDrb3aHWGQXIS%2FzichAO9De5M2uhF1Q%3D&reserved=0). Vi har lagt till en ny parameter till URL-adressen som heter **_config_** och som används för att förbättra prestandan.
+Undvik att generera inbäddnings-URL:en själv. Se i stället till att hämta inbäddnings-URL:en genom att anropa API:et för att [hämta rapporter](/rest/api/power-bi/reports/getreportsingroup), [hämta instrumentpaneler](/rest/api/power-bi/dashboards/getdashboardsingroup) eller [hämta paneler](/rest/api/power-bi/dashboards/gettilesingroup). Vi har lagt till en ny parameter till URL-adressen som heter **_config_** och som används för att förbättra prestandan.
 
 ### <a name="permissions"></a>Behörigheter
 
@@ -58,7 +58,7 @@ Cachelagrade data återges när de är tillgängliga, men vi har inte en händel
 
 Se till att verktyg och SDK-paket är uppdaterade.
 
-* Använd alltid den senaste versionen av [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
+* Använd alltid den senaste versionen av [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 
 * Installera den senaste versionen av [Power BI-klientens SDK](https://github.com/Microsoft/PowerBI-JavaScript). Vi släpper kontinuerligt fler förbättringar, så se till att kontrollera dem med jämna mellanrum.
 

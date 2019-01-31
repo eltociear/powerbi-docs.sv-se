@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5115abd45d8eafe68b6e6ab0b97a05be51463af4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d00e6f2a972e6e41d4d9badc51e30a13a6dc98cc
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294367"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430137"
 ---
 # <a name="what-is-power-bi-administration"></a>Vad är Power BI-administration?
 
@@ -83,7 +83,7 @@ Vi hoppas att den här artikeln gav några snabba insikter i Power BI-administra
 
 [Använda Power BI-administratörsportalen](service-admin-portal.md)
 
-[Använda PowerShell-cmdletar](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
+[Använda PowerShell-cmdletar](/powershell/power-bi/overview)
 
 [Vanliga frågor om Power BI-administration](service-admin-faq.md)
 

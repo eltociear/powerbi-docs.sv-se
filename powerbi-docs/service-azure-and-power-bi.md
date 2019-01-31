@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/26/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 8717e4938ef558eb4bb8c0614990b651d2b59c28
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 142096ca30422549227ddc1dc2d07e129e22e9af
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277720"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430888"
 ---
 # <a name="azure-and-power-bi"></a>Azure och Power BI
 
@@ -55,7 +55,7 @@ Du kan expandera så mycket som du behöver med Azure och Power BI. Utnyttja dat
 
 ## <a name="context-insights-with-power-bi-embedded-analytics"></a>Kontextinsikter med Power BI Embedded-analys
 
-Bädda in fantastiska interaktiva datavisualiseringar i program, webbplatser, portaler och annat, och dra nytta av dina affärsdata. Med [Power BI Embedded som en resurs i Azure](https://azure.microsoft.com/services/power-bi-embedded/) kan du enkelt bädda in interaktiva rapporter och instrumentpaneler, så att användarna får konsekventa och exakta upplevelser på alla enheter.  Power BI som används med inbäddning av analys hjälper dig via Data -> Kunskap -> Insikter -> Åtgärder.  Dessutom kan du utöka funktionerna i Power BI och Azure genom att bädda in analyser i din [organisations interna program och portaler](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
+Bädda in fantastiska interaktiva datavisualiseringar i program, webbplatser, portaler och annat, och dra nytta av dina affärsdata. Med [Power BI Embedded som en resurs i Azure](https://azure.microsoft.com/services/power-bi-embedded/) kan du enkelt bädda in interaktiva rapporter och instrumentpaneler, så att användarna får konsekventa och exakta upplevelser på alla enheter.  Power BI som används med inbäddning av analys hjälper dig via Data -> Kunskap -> Insikter -> Åtgärder.  Dessutom kan du utöka funktionerna i Power BI och Azure genom att bädda in analyser i din [organisations interna program och portaler](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
 Det finns mycket information om Power BI-API:er i [Power BI Developer-portalen](http://dev.powerbi.com).
 

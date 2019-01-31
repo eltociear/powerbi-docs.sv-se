@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: f39912f5813f67ed65afde10a0e157385e98b7b7
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: c02ce0a92e258055edf906cf17730fec56bcb450
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406625"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430773"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow och Power BI
 
-[Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) är ett SaaS-erbjudande för automatisering av arbetsflöden i det växande antalet program och SaaS-tjänster som användare i verksamheten förlitar sig på. Du kan använda Flow för att automatisera uppgifter genom att integrera dina favorit-appar och -tjänster (inklusive Power BI) om du vill få meddelanden, synkronisera filer, samla in data med mera. Återkommande uppgifter blir enkelt med automatisering av arbetsflödet.
+[Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) är ett SaaS-erbjudande för automatisering av arbetsflöden i det växande antalet program och SaaS-tjänster som användare i verksamheten förlitar sig på. Du kan använda Flow för att automatisera uppgifter genom att integrera dina favorit-appar och -tjänster (inklusive Power BI) om du vill få meddelanden, synkronisera filer, samla in data med mera. Återkommande uppgifter blir enkelt med automatisering av arbetsflödet.
 
 [Kom igång med Flow nu.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -31,7 +31,7 @@ Titta på när Sirui skapar ett flöde som skickar ett detaljerat e-postmeddelan
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Skapa ett flöde som utlöses av en avisering för Power BI-data
 
 ### <a name="prerequisites"></a>Förutsättningar
-Den här kursen visar hur du skapar två olika flöden; ett från en mall och ett från grunden. För att följa med, [skapa en datavarning i Power BI](service-set-data-alerts.md) och [registrera dig för Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) (det är gratis!).
+Den här kursen visar hur du skapar två olika flöden; ett från en mall och ett från grunden. För att följa med, [skapa en datavarning i Power BI](service-set-data-alerts.md) och [registrera dig för Microsoft Flow](https://flow.microsoft.com/#home-signup) (det är gratis!).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Skapa ett flöde som använder Power BI – från en mall
 I den här uppgiften använder vi en mall för att skapa ett enkelt flöde som utlöses av en Power BI-datavarning (meddelande).
@@ -108,7 +108,7 @@ I den här uppgiften skapar vi ett enkelt flöde från början som utlöses av e
     ![Flödet utlöser Outlook-meddelande](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Nästa steg
-* [Kom igång med Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
+* [Kom igång med Microsoft Flow](https://flow.microsoft.com/documentation/getting-started/)
 * [Ange datavarningar i Power BI-tjänsten](service-set-data-alerts.md)
 * [Ange datavarningar på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

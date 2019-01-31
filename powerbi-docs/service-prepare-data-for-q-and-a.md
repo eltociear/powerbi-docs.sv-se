@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 76027ff6e75071fde178ae05a8656c1596d36598
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 627a94097d4235f39414c1165ac8cbbc806508a3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291704"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430075"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Så här får du dina Excel-data att fungera bra med frågor och svar i Power BI
 Om du är en person som skapar datamodeller eller bygger Excel-arbetsböcker som ska användas med Power BI kan du läsa på...
@@ -34,7 +34,7 @@ Funktionen Frågor och svar använder sig av namnen på tabeller, kolumner och b
 
 Här får du några tips om hur du kan utnyttja Frågor och svar på bästa sätt i din arbetsbok.
 
-* Kontrollera att dina data finns i en Excel-tabell. Så här [skapar du en Excel-tabell](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US).
+* Kontrollera att dina data finns i en Excel-tabell. Så här [skapar du en Excel-tabell](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664).
 * Kontrollera att namnen på dina tabeller, kolumner och beräknade fält är logiska med naturligt språk.
   
   Om du t.ex. har en tabell med försäljningsdata, så anropa tabellen ”Sales”. Kolumnnamn som “Year”, “Product”, “Sales Rep”, och “Amount” fungerar väl med Frågor och svar.

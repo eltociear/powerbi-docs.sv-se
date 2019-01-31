@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e603ff1de1a7129280b888d08e9a77d919ebb186
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ad049837dff46058cf703d58720129e1e0742555
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280831"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430474"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Registrera dig för Power BI med en ny Office 365-utvärderingsversion
 
@@ -33,7 +33,7 @@ Den här artikeln beskriver ett alternativt sätt att registrera dig för Power 
 
 ## <a name="important-considerations"></a>Att tänka på
 
-Du skapar en ny klientorganisation för organisationen med den här inloggningsmetoden, och du blir administratören för den här klientorganisationen. Mer information finns i [Vad är Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md). Du kan lägga till nya användare till din klient och sedan dela med dem, enligt beskrivningen i [administratörsdokumentationen för Office 365](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
+Du skapar en ny klientorganisation för organisationen med den här inloggningsmetoden, och du blir administratören för den här klientorganisationen. Mer information finns i [Vad är Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md). Du kan lägga till nya användare till din klient och sedan dela med dem, enligt beskrivningen i [administratörsdokumentationen för Office 365](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ## <a name="next-steps"></a>Nästa steg
 

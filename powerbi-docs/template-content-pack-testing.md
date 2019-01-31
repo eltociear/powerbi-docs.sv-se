@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 2ceb8440cd64b05966caaadc9346771dd28cba82
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8a5382a5e435f916599b05310f89d9b1f0327023
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281239"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430681"
 ---
 # <a name="testing-template-content-packs-for-power-bi"></a>Testa mallinnehållspaket för Power BI
 Det finns olika sätt att testa innehållspaketet innan du skickar det för publicering.  
@@ -68,7 +68,7 @@ Vi föreslår att du namnger instrumentpanelen, rapporten och datauppsättningen
 <a name="submission"></a>
 
 ## <a name="submission"></a>Skicka
-Med processen Skicka i [Microsoft AppSource](https://appsource.microsoft.com/en-us/partners/list-an-app) kan du publicera ditt mallinnehållspaket i tjänstens innehållspaketgalleri i PowerBI.com, samt lägga till innehållspaketet en lista i [Microsoft AppSource](http://appsource.microsoft.com).
+Med processen Skicka i [Microsoft AppSource](https://appsource.microsoft.com/partners/list-an-app) kan du publicera ditt mallinnehållspaket i tjänstens innehållspaketgalleri i PowerBI.com, samt lägga till innehållspaketet en lista i [Microsoft AppSource](http://appsource.microsoft.com).
 
 ### <a name="before-submission"></a>Innan du skickar
 * Gå igenom redigeringstipsen för varje artefakt i innehållspaketet
@@ -77,7 +77,7 @@ Med processen Skicka i [Microsoft AppSource](https://appsource.microsoft.com/en-
 * Kontrollera att innehållspaketet svarar som det ska på Frågor och svar. Vi föreslår att du testar minst 30 olika frågor i hela datamodellen. (Hoppa över det här steget om du har utvecklat en egen anpassad [dataanslutning](https://aka.ms/DataConnectors))
 
 ### <a name="submission"></a>Skicka
-När du är klar att skicka går du till [sidan för att skicka appar](https://appsource.microsoft.com/en-us/partners/list-an-app) i AppSource och skickar informationen. Var noga med att välja Power BI i listan med tillgängliga produkter
+När du är klar att skicka går du till [sidan för att skicka appar](https://appsource.microsoft.com/partners/list-an-app) i AppSource och skickar informationen. Var noga med att välja Power BI i listan med tillgängliga produkter
 
 Power BI-teamet granskar det du skickat och kontaktar dig för att kontrollera att alla artefakter uppfyller kraven. Förutom att kontrollera att det är komplett, verifierar vi också kvaliteten på instrumentpanelen och rapporterna så att de uppfyller det företagscenario som beskrivs i programmet.
 

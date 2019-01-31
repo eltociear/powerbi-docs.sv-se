@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: b7301d46279d9b975a07b07506c023e19437631b
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324053"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431256"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -37,15 +37,15 @@ Rapporter som använder den nya moderna visuella rubriken kommer inte längre at
 
 ### <a name="enhance-presentation-mode-windows"></a>Förbättra presentationsläge (Windows)
 
-Förbättrat presentationsläge för Surface Hub och Windows 10-enheter.  Få en bättre mötesrumsupplevelse med Surface Hub med förbättrad presentations- och samarbetsverktyg och en kromfri, storbildsoptimerad vy så att du kan fokusera på dina data. Presentationsläget ger dig dessutom verktyg som pennanteckningar för att hjälpa dig att effektivt presentera och diskutera dina data. Läs mer om presentationsläge [här](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+Förbättrat presentationsläge för Surface Hub och Windows 10-enheter.  Få en bättre mötesrumsupplevelse med Surface Hub med förbättrad presentations- och samarbetsverktyg och en kromfri, storbildsoptimerad vy så att du kan fokusera på dina data. Presentationsläget ger dig dessutom verktyg som pennanteckningar för att hjälpa dig att effektivt presentera och diskutera dina data. Läs mer om presentationsläge [här](https://powerbi.microsoft.com/blog/presentation-mode-in-power-bi-windows-app/).
 
 ### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Stående rapportlayout i surfplattor (iOS och Android)
 
-Vi använder nu rapportlayouten för telefoner, när den finns tillgänglig, för att visa rapporter på din surfplatta i stående läge. Läs mer om [hur du skapar telefonlayout i Power BI-tjänsten eller Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+Vi använder nu rapportlayouten för telefoner, när den finns tillgänglig, för att visa rapporter på din surfplatta i stående läge. Läs mer om [hur du skapar telefonlayout i Power BI-tjänsten eller Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
 
 ### <a name="supporting-report-query-string"></a>Stöd för rapportfrågesträng 
 
-Om du öppnar en rapportlänk som innehåller frågesträngar så kommer de nu att öppnas i mobilappen och vara förfiltrerade baserat på de villkor som definierats i frågesträngen. Läs mer om [hur du skapar en rapport-URL med frågesträng](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+Om du öppnar en rapportlänk som innehåller frågesträngar så kommer de nu att öppnas i mobilappen och vara förfiltrerade baserat på de villkor som definierats i frågesträngen. Läs mer om [hur du skapar en rapport-URL med frågesträng](https://docs.microsoft.com/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Delade autentiseringsuppgifter (nu i Android)
 
@@ -65,7 +65,7 @@ Länkar i rapporter som pekar på andra Power BI-artefakter öppnas nu direkt i 
 
 Sidnumrerade rapporter är nu tillgängliga på Power BI-tjänsten. Användare med åtkomst till sidnumrerade rapporter i Power BI-tjänsten har även åtkomst till rapporterna från sina mobilappar. 
 
-Läs Power BI [-blogginlägget om sidnumrerade rapporter i mobilen](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+Läs Power BI [-blogginlägget om sidnumrerade rapporter i mobilen](https://powerbi.microsoft.com/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
 
 ### <a name="shared-credentials-ios"></a>Delade autentiseringsuppgifter (iOS)
 

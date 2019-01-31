@@ -8,12 +8,12 @@ ms.service: powerbi-service
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 1722c401dfd5d2fdfbba530f440cecf9f1e075f3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280798"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431279"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -70,7 +70,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **innehållslista** Innehållsindexet för en app.
 
-**Innehållspaket** En uppsättning kompletta datauppsättningar, rapporter och instrumentpaneler. Nu till **appar**: lär dig mer [om den nya arbetsytan](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
+**Innehållspaket** En uppsättning kompletta datauppsättningar, rapporter och instrumentpaneler. Nu till **appar**: lär dig mer [om den nya arbetsytan](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **innehållsvy**
 

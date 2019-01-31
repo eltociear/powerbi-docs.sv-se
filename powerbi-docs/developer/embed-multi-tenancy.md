@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: d09312ecf462e557ef33851d9d2b1f91ec936dae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7bb805877cf2e7453148d667f863cbbc8b01ee52
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289220"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430727"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Hantera flera innehavare med Power BI Embedded-analys
 
@@ -29,7 +29,7 @@ Den här artikeln beskriver de olika metoderna och analyserar dem utifrån flera
 
 ## <a name="concepts-and-terminology"></a>Begrepp och terminologi
 
-**[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
 
 **AAD-program** – En programidentitet i AAD. Ett AAD-program krävs för autentisering.
 
@@ -51,7 +51,7 @@ Den här artikeln beskriver de olika metoderna och analyserar dem utifrån flera
 
 **Överordnad användare** – Den identitet som representerar SaaS-programmet i Power BI och som används i SaaS-programmet när du anropar Power BI-API:er. Måste vara en AAD-användare med en Power BI Pro-licens.
 
-**AAD-programanvändare (tjänstens huvudnamn) ** – Den identitet som representerar SaaS-programmet i Power BI och som används i SaaS-programmet när du anropar Power BI-API:er. Måste vara ett AAD-webbprogram. Kan användas istället för en *huvudanvändare* vid autentisering med Power BI.
+**AAD-programanvändare (tjänstens huvudnamn)**  – Den identitet som representerar SaaS-programmet i Power BI och som används i SaaS-programmet när du anropar Power BI-API:er. Måste vara ett AAD-webbprogram. Kan användas istället för en *huvudanvändare* vid autentisering med Power BI.
 
 **Kapacitet** – En uppsättning resurser som är dedikerade till att köra Power BI-tjänsten. [Power BI Premium-kapaciteter](../service-premium.md) Avsett för företag som använder Power BI internt, medan [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) är avsett för programutvecklare som utvecklar SaaS-program för tredje part.
 
@@ -105,7 +105,7 @@ Power BI Embedded stöder Multi-Geo-distribution (förhandsgranskningsfunktion).
 
 ### <a name="cost"></a>Kostnad
 
-[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) har en resursbaserad inköpsmodell i likhet med **Power BI Premium**. Du köper en eller flera kapaciteter med fast datorkraft och minne. Den här kapaciteten är det viktigaste kostnadsobjektet när du arbetar med **Power BI Embedded**. Det finns ingen gräns för hur många användare som kan utnyttja kapaciteten. Den ena begränsningen är kapacitetens prestanda. En [Power BI Pro-licens](../service-admin-licensing-organization.md) krävs för varje *huvudanvändare*, eller specifika användare som behöver ha åtkomst till Power BI-portalen.
+[Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/) har en resursbaserad inköpsmodell i likhet med **Power BI Premium**. Du köper en eller flera kapaciteter med fast datorkraft och minne. Den här kapaciteten är det viktigaste kostnadsobjektet när du arbetar med **Power BI Embedded**. Det finns ingen gräns för hur många användare som kan utnyttja kapaciteten. Den ena begränsningen är kapacitetens prestanda. En [Power BI Pro-licens](../service-admin-licensing-organization.md) krävs för varje *huvudanvändare*, eller specifika användare som behöver ha åtkomst till Power BI-portalen.
 
 Vi rekommenderar att du testar och mäter den förväntade belastningen på kapaciteten genom att simulera en live-miljö och användning och belastningstesta kapaciteten. Du kan mäta belastning och prestanda med olika mått som är tillgängliga i Azure-kapaciteten eller [appen för Premium-kapacitetsmätning](../service-admin-premium-monitor-capacity.md).
 
@@ -132,17 +132,17 @@ Det finns två huvudsakliga sätt att hantera en klients data.
 
 Om SaaS-programlagringen är att ha en separat databas per klient, så är det naturliga valet att använda enskilda klientdatauppsättningar i Power BI där anslutningssträngen för respektive datauppsättning pekar på den matchande databasen.
 
-Om SaaS-programlagringen använder en databas för flera innehavarare för alla klienter, är det lätt att skilja klienterna åt efter arbetsyta. Du kan konfigurera databasanslutningen för Power BI-datauppsättningen med en parametriserad databasfråga som hämtar endast den relevanta klientens data. Du kan uppdatera anslutningen med [Power BI Desktop](../desktop-query-overview.md) eller genom att använda [API:et](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametrar](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/updateparametersingroup) för frågan.
+Om SaaS-programlagringen använder en databas för flera innehavarare för alla klienter, är det lätt att skilja klienterna åt efter arbetsyta. Du kan konfigurera databasanslutningen för Power BI-datauppsättningen med en parametriserad databasfråga som hämtar endast den relevanta klientens data. Du kan uppdatera anslutningen med [Power BI Desktop](../desktop-query-overview.md) eller genom att använda [API:et](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametrar](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) för frågan.
 
 ### <a name="data-isolation"></a>Dataisolering
 
-Data i den här innehavarmodellen skiljs åt på arbetsytenivå. En enkel mappning mellan en arbetsyta och en klient förhindrar att användare från en klient ser innehållet från en annan klient. Om du använder en *huvudanvändare* krävs det att du har åtkomst till samtliga arbetsytor. Konfigurationen av vilka data som ska visas för en användare definieras när [inbäddningstoken genereras](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken), en serverdelsprocess som slutanvändarna varken kan se eller ändra.
+Data i den här innehavarmodellen skiljs åt på arbetsytenivå. En enkel mappning mellan en arbetsyta och en klient förhindrar att användare från en klient ser innehållet från en annan klient. Om du använder en *huvudanvändare* krävs det att du har åtkomst till samtliga arbetsytor. Konfigurationen av vilka data som ska visas för en användare definieras när [inbäddningstoken genereras](https://docs.microsoft.com/rest/api/power-bi/embedtoken), en serverdelsprocess som slutanvändarna varken kan se eller ändra.
 
 Om du vill lägga till ytterligare isolering kan en programutvecklare definiera en *huvudanvändare* eller ett program per arbetsyta snarare än en enskild *huvudanvändare* eller ett program med åtkomst till flera arbetsytor. På så sätt kan du se till att alla mänskliga fel eller autentiseringsuppgifter läcka inte orsakar flera kunders data exponeras.
 
 ### <a name="scalability"></a>Skalbarhet
 
-En fördel med den här modellen är att separationen av data i flera datauppsättningar för varje klient övervinner [storleksbegränsningarna för en enskild datauppsättning](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (för närvarande 10 GB i en kapacitet). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. Den här uppgiften är inte möjlig med en enskild stor datauppsättning. Med flera datauppsättningar går det även att dela upp klienter i flera Power BI-kapaciteter om så behövs. [Lär dig mer om hur kapacitet fungerar](../service-admin-premium-manage.md).
+En fördel med den här modellen är att separationen av data i flera datauppsättningar för varje klient övervinner [storleksbegränsningarna för en enskild datauppsättning](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (för närvarande 10 GB i en kapacitet). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. Den här uppgiften är inte möjlig med en enskild stor datauppsättning. Med flera datauppsättningar går det även att dela upp klienter i flera Power BI-kapaciteter om så behövs. [Lär dig mer om hur kapacitet fungerar](../service-admin-premium-manage.md).
 
 Trots dessa fördelar måste man ta i beaktande den skala som SaaS-programmet kan uppnå i framtiden. Man kan t.ex. stöta på begränsningar när det gäller antalet artefakter man kan hantera. Mer information om [distributionsbegränsningar](#summary-comparison-of-the-different-approaches) finns längre fram i den här artikeln. Den kapacitets-SKU som används introducerar en gräns för hur stort minne som datauppsättningarna måste passa in, [hur många uppdateringar som kan köras samtidigt](../service-premium-understand-how-it-works.md) och den maximala frekvensen för datauppdateringar. Vi rekommenderar att du testar när du hanterar hundratals eller tusentals datauppsättningar. Vi rekommenderar också att du bedömer den genomsnittliga och den högsta användningsvolymen, såväl som eventuella specifika klienter med stora datauppsättningar eller avvikande användningsmönster, som hanteras annorlunda än andra klienter.
 

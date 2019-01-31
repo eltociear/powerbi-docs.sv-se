@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 660f76b5bf04f742d435df928e068e434ca70531
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e8e27c55cdcd85fd9f88a3b1ad425829cfa9cf0d
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281998"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430612"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Grundläggande begrepp för ***användare*** av Power BI-tjänsten
 
@@ -37,7 +37,7 @@ För att komma igång öppnar du en webbläsare och anger **app.powerbi.com**. F
 ![Välkomstskärm för Power BI-tjänsten](media/end-user-basic-concepts/power-bi-open.png)
 
 När du använder Power BI anpassar du det som visas när du öppnar webbplatsen varje gång.  Till exempel föredrar vissa att Power BI öppnas till startsidan, medan andra har en favoritinstrumentpanel som de vill se först. Det kommer vi att gå igenom. 
-- [Förhandsgranskning av Start](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
+- [Förhandsgranskning av Start](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
 - [Ange innehåll som **aktuellt**](end-user-featured.md) 
 
 ![visar startsidan vy och instrumentpanelsvy](media/end-user-basic-concepts/power-bi-first.png)

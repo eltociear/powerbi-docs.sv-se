@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 24d023d726183119a3bd098c61db75cb68969c52
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fb2b169650360a7dc6a4afaee1c43abb733255c9
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283149"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431003"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -24,7 +24,7 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
 
->[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+>[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Aktuella webbseminarier
 

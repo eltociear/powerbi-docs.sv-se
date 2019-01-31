@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8eb428857e98a696ffb368c729525acd80e268f2
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 001fab5caae7663a70b0f4d4272a1f9abbb1765e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394783"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55429922"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 * Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).
@@ -50,7 +50,7 @@ Det räcker med en webbläsare och en jobbmejl. Du kan registrera dig med en .go
 Power BI stöder inte e-postadresser som tillhandahålls av e-posttjänster för konsumenter eller telekommunikationsleverantörer. Lär dig mer om [registreringsprocessen för Power BI med självbetjäning](../service-self-service-signup-for-power-bi.md).
 
 ## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Erbjuds prissättning för myndigheter, akademiska institutioner och ideella organisationer för Power BI?
-Ja, priser för ideella organisationer är tillgängliga när du köper direkt från Microsoft. Läs mer och registrera dig på webbplatsen [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi). Prissättning för myndigheter och högskolor erbjuds via MOSP/Direct, EA och öppna licensprogram. Priser för myndigheter är också tillgängliga som syndikering. 
+Ja, priser för ideella organisationer är tillgängliga när du köper direkt från Microsoft. Läs mer och registrera dig på webbplatsen [Microsoft Nonprofits](https://www.microsoft.com/nonprofits/power-bi). Prissättning för myndigheter och högskolor erbjuds via MOSP/Direct, EA och öppna licensprogram. Priser för myndigheter är också tillgängliga som syndikering. 
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Har Power BI stöd för mobila enheter?
 Ja. Power BI har inbyggda appar för Android-telefoner och -surfplattor, iOS-enheter och Windows 10-enheter. Hämta en [Power BI-app](https://powerbi.microsoft.com/mobile) från dess respektive store:  

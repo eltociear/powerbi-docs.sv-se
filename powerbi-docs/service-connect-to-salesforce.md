@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008590"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430819"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
 Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. När du skapar den här anslutningen, hämtas dina data och ger dig automatiskt en instrumentpanel och relaterade rapporter baserade på dina data.
@@ -61,10 +61,8 @@ Du kan ändra den här instrumentpanelen till att visa dina data på det sätt s
 **Och sedan?**
 
 * Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
-* [Ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelens <<<<<<< Huvud
-* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten =======
+* [Ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelen
 * [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten
->>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
 
 ## <a name="system-requirements-and-considerations"></a>Systemkrav och aspekter
