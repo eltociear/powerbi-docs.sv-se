@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 01/18/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 085860fb9d8e9e01bf0694896a561f34a5627b53
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 7d76d874712f328344b60fc8b146f69e1aca55db
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394661"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234541"
 ---
 # <a name="add-comments-to-a-dashboard"></a>Lägga till kommentarer i en instrumentpanel
 Lägg till en personlig kommentar eller starta en konversation om en instrumentpanel med dina kollegor. **Kommentarsfunktionen** är bara ett exempel på hur en *användare* kan samarbeta med andra. 
@@ -73,7 +73,7 @@ Kommentarer kan läggas till i en hel instrumentpanel eller i enskilda visuella 
 5. Välj **Stäng** för att återgå till instrumentpanelen eller rapporten.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Få kollegornas uppmärksamhet genom att använda @-tecknet
-Oavsett om du skapar instrumentpanelskommentarer för ett visst visuellt objekt kan du fånga kollegornas uppmärksamhet med hjälp av @-tecknet.  När du skriver @-tecknet öppnar Power BI en listruta där du kan söka efter och välja användare från din organisation. Alla verifierade namn med @-tecknet först visas i blått. 
+Oavsett om du skapar instrumentpanelskommentarer för ett visst visuellt objekt kan du fånga kollegornas uppmärksamhet med hjälp av \@-tecknet.  När du skriver \@-tecknet öppnar Power BI en listruta där du kan söka efter och välja användare från din organisation. Alla verifierade namn med \@-tecknet först visas i blått. 
 
 Det här är en konversation jag har med *visualiseringsdesignern*. Han använder @-tecknet för att försäkra sig om att jag ser kommentaren. Jag vet att den här kommentaren är avsedd för mig. När jag öppnar den här appen i Power BI väljer jag **Kommentarer** i rubriken. Vår konversation visas i **kommentarsfönstret**.
 

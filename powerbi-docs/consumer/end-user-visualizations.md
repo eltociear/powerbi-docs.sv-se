@@ -1,5 +1,5 @@
 ---
-title: Arbeta med visualiseringar
+title: Arbeta med visualiseringar som konsument
 description: Power BI-koncept och -terminologi – visualiseringar, visuella objekt. Vad är en Power BI-visualisering, visuellt objekt.
 author: mihart
 manager: kvivek
@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 875f5cef31ea61fffff29404b03af5bbbfc9f0c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287655"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234357"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Visualiseringar i Power BI-**konsumenter**
 
@@ -53,4 +53,5 @@ Men först, lite om frågor och svar. Frågor och svar är sökverktyget för Po
 
 ## <a name="next-steps"></a>Nästa steg
 Tillbaka till [grundläggande koncept för konsumenter](end-user-basic-concepts.md)    
-[Välj en visualisering för att öppna en rapport](end-user-report-open.md)
+[Välj en visualisering för att öppna en rapport](end-user-report-open.md)    
+[Typer av visuella objekt som är tillgängliga i Power BI](end-user-visual-type.md)

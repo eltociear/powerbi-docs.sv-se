@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 74d261098ee8385721a0b72d808a6ecb1b89be7c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283815"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234449"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -43,7 +43,7 @@ URL?filter=***Tabell***/***Fält*** eq '***värde***'
 
 ### <a name="field-types"></a>Fälttyper
 
-Fälttypen kan vara ett nummer, en datetime eller en sträng, och den typ som används måste matcha den angivna typen i datamängden.  Till exempel fungerar det inte att ange en tabellkolumn av typen ”string” (sträng) om du vill få en datetime eller ett numeriskt värde i en kolumnuppsättning för en datamängd som ett datum, till exempel Table/StringColumn eq 1.
+Fälttypen kan vara ett nummer, en datetime eller en sträng, och den typ som används måste matcha den angivna typen i datauppsättningen.  Till exempel fungerar det inte att ange en tabellkolumn av typen ”string” (sträng) om du vill få en datetime eller ett numeriskt värde i en kolumnuppsättning för en datauppsättning som ett datum, till exempel Table/StringColumn eq 1.
 
 * **Strängar** måste omges av enkla citattecken – ”chefsnamn”.
 * **Nummer** kräver ingen särskild formatering
@@ -106,10 +106,10 @@ Power BI stöder många operatorer utöver **and**. I tabellen nedan visas de op
 |**gt**     | större än        |nej | ja | ja  | produkt/pris ge 20
 |**le**     |   mindre än eller lika med      | nej | ja | ja  | produkt/pris le 100
 |**lt**     |  mindre än       | nej | ja | ja |  produkt/pris lt 20
-|**in****     |  inklusive       | ja | ja |  ja | Student/ålder in (27, 29)
+|**in\*\***     |  inklusive       | ja | ja |  ja | Student/ålder in (27, 29)
 
 
-\** Vid användning av **i** kan värden till höger om **in** vara en kommaavgränsad lista som omges av parenteser eller ett enda uttryck som returnerar en samling.
+\*\* Vid användning av **in** kan värden till höger om **in** vara en kommaavgränsad lista som omges av parenteser eller ett enda uttryck som returnerar en samling.
 
 ### <a name="numeric-data-types"></a>Numeriska datatyper
 

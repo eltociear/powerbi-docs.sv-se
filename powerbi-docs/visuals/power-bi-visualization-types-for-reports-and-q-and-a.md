@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/03/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ee0063d5266c663079a9801777ee2c900957c52f
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296810"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234311"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-visualiseringar
@@ -82,6 +82,11 @@ Mer information finns i [Trattdiagram i Power BI](power-bi-visualization-funnel-
 
 Mer information finns i [Måttdiagram i Power BI](power-bi-visualization-radial-gauge-charts.md).
 
+<!-- ### Key influencers chart
+![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+
+A key influencer chart displays the major contributors to a selected result or value. -->
+
 ### <a name="kpis"></a>KPI:er
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
@@ -107,7 +112,7 @@ Mer information finns i [Tips och trick för kartor](power-bi-map-tips-and-trick
 ### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-mappar
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-Mer information finns i [ArcGIS-kartor i Power BI](../power-bi-visualization-arcgis.md).
+Mer information finns i [ArcGIS-kartor i Power BI](power-bi-visualization-arcgis.md).
 
 ### <a name="maps-filled-maps-choropleth"></a>Kartor: Fyllda kartor (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -133,6 +138,13 @@ Mer information finns i [Matrix visuals in Power BI](desktop-matrix-visual.md) (
 
 ### <a name="pie-charts"></a>Cirkeldiagram
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+
+Cirkeldiagram visar relationen mellan delar och en helhet. 
+
+### <a name="ribbon-chart"></a>Banddiagram
+![banddiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+
+Banddiagram visar vilken datakategori som har den högsta rangordningen (största värdet). Banddiagram är effektiva för att visa en rangordningsförändring med den högsta rangordningen (värdet) längst upp för varje tidsperiod.
 
 ### <a name="scatter-and-bubble-charts"></a>Punktdiagram och bubbeldiagram
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)

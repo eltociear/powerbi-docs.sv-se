@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 36a3026ebbdf1290d7f809f5c1ccaac7f5fbd7d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b4977bd043cec08c86fbd3c8893e8f1e185dc1fc
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292417"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430566"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Visa dina data offline i Power BI-mobilapparna
 Gäller för:
@@ -57,6 +57,7 @@ När du är offline med Power BI på din mobila enhet, kan du stöta på dessa b
 * Hela Excel-arbetsböcker i Power BI är inte tillgängliga offline.
 * Du kan se Reporting Services-mobila rapporter och KPI:er offline, om du har visat dem när du var ansluten. De uppdateras inte i bakgrunden. De uppdateras varje gång du öppnar dem.
 * I Power BI-mobilapparna kan du inte se Power BI Desktop-filer (.pbix) som sparats i Power BI-rapportservern. 
+* Sidnumrerade rapporter (RDL) är inte tillgängliga när nätverket är offline.
 
 ## <a name="next-steps"></a>Nästa steg
 Din feedback hjälper oss att bestämma vad som ska implementeras i framtiden, så glöm inte att rösta för andra funktioner som du skulle vilja se i Power BI-mobilapparna. 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 4fff6b19b9a17b626d11545a8d4baa8464ffc324
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a53ddf70e82c191af520f2dbba5b5d3d1b0ced42
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294138"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431233"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -99,6 +99,14 @@ Programmets serverdel kan behöva uppdatera auktoriseringstoken innan du anropar
 
 ## <a name="authentication"></a>Autentisering
 
+### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>Autentiseringen misslyckades med felet AADSTS90002: Tenant 'authorize' not found (Auktorisering av klient hittades inte)
+
+ Om du får meddelanden vid inloggning, till exempel ***error: invalid_request, error_description: AADSTS90002: Tenant 'authorize' not found*** är det för att ADAL 4.x inte stöder ”https://login.microsoftonline.com/{Tenant}/oauth2/authorize/” som utfärdar-URL.
+ 
+Du kan lösa problemet genom att trimma ”oauth2/authorize/” i slutet av utfärdar-URL:en, se [Power BI Developer Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) för referens.
+
+ Ta en titt på [Better Authority validation](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) (Bättre utfärdarvalidering) i den viktiga informationen om ADAL 4.x.
+ 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Autentiseringen misslyckades med AADSTS70002 eller AADSTS50053
 
 **_(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)_**
@@ -243,7 +251,7 @@ Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup) kan du
 
 Kontrollera att du uppfyller förhandskraven innan du använder konfigurationsverktyget för inbäddning. Du behöver ett **Power BI Pro**-konto och en **Microsoft Azure**-prenumeration.
 
-* Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/en-us/pricing/) innan du börjar.
+* Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/pricing/) innan du börjar.
 * Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
 * Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
 * Du behöver [Visual Studio](https://www.visualstudio.com/) installerad (version 2013 eller senare).
@@ -294,7 +302,7 @@ Mer information finns i [Vanliga frågor om Power BI Embedded](embedded-faq.md).
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
-Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa en supportbegäran via Azure-portalen](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden du får.
+Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa en supportbegäran via Azure-portalen](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden du får.
 
 ## <a name="next-steps"></a>Nästa steg
 

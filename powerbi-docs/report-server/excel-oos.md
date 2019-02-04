@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 2a0fc921ba576803f02ede8fd269370584c61efe
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 157808d7378b40cb097c2cb667eb9d237654e66d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284229"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234426"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurera rapportservern för att hantera Excel-arbetsböcker med hjälp av Office Online Server (OOS)
 
@@ -57,7 +57,7 @@ Observera att Office Online-Server måste finnas i samma Active Directory-skog s
 1. Hämta Office Online Server från [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Filen finns under Office-produkterna på VLSC-portalen. För utveckling kan du hämta OOS från MSDN-prenumeranthämtningar.
 2. Kör Setup.exe.
 3. På sidan **Läsa licensvillkor för programvara från Microsoft** väljer du **Jag accepterar villkoren i avtalet** och väljer **Fortsätt**.
-4. På sidan **Välj filsökväg** väljer du den mapp där du vill att Office Online Server-filer ska installeras (till exempel C:\Program Files\Microsoft Office Web Apps*) och sedan **Installera nu**. Om den angivna mappen inte finns skapas den åt dig.
+4. På sidan **Välj filsökväg** väljer du den mapp där du vill att Office Online Server-filer ska installeras (till exempel C:\Program Files\Microsoft Office Web Apps\*) och sedan **Installera nu**. Om den angivna mappen inte finns skapas den åt dig.
 
     Vi rekommenderar att du installerar Office Online Server på systemenheten.
 
