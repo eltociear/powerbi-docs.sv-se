@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 01/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7a6e6979a6281ef6b00a84cff138818869b113e6
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 49ac1f917a5f3095c1dbc13c644061859389fe74
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008038"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482693"
 ---
 # <a name="connect-to-comscore-digital-analytix-with-power-bi"></a>Anslut till comScore Digital Analytix med Power BI
 Visualisera och utforska dina comScore Digital Analytix-data i Power BI med Power BI-innehållspaketet. Data uppdateras automatiskt en gång per dag.
@@ -63,8 +63,6 @@ Information om hur du hittar var och en av comScore-parametrarna finns nedan.
 **Datacenter**
 
 Datacentret som du ansluter till fastställs av den URL som du navigerar till i comScore.
-
-Om du använder https://dax.comscore.com anger du ”US”, om du använder https://dax.comscore.eu anger du ”EU”.
 
 ![](media/service-connect-to-connect-to/comscore_url.png) 
 
