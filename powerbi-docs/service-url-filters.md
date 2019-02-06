@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/31/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
+ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234449"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55648707"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -41,9 +41,17 @@ URL?filter=***Tabell***/***Fält*** eq '***värde***'
 * Namnen **Tabell** och **Fält** är skiftlägeskänsliga, men **värde** är det inte.
 * Fält som är dolda från rapportvyn kan fortfarande filtreras.
 
+### <a name="reports-in-apps"></a>Rapporter i appar
+
+Om du vill lägga till ett URL-filter till en rapport i en app är formateringen lite annorlunda. Länkar till rapporter i en app har en frågeparameter (ctid) som läggs till i URL:en. Frågeparametrar måste avgränsas med ett et-tecken (&). Så du måste lägga till frågan med ”& filter =” (efter parametern ctid) i stället för ”? filter =”. 
+
+Som i följande exempel:
+
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
+
 ### <a name="field-types"></a>Fälttyper
 
-Fälttypen kan vara ett nummer, en datetime eller en sträng, och den typ som används måste matcha den angivna typen i datauppsättningen.  Till exempel fungerar det inte att ange en tabellkolumn av typen ”string” (sträng) om du vill få en datetime eller ett numeriskt värde i en kolumnuppsättning för en datauppsättning som ett datum, till exempel Table/StringColumn eq 1.
+Fälttypen kan vara ett nummer, en datetime eller en sträng, och den typ som används måste matcha den angivna typen i datamängden.  Till exempel fungerar det inte att ange en tabellkolumn av typen ”string” (sträng) om du vill få en datetime eller ett numeriskt värde i en kolumnuppsättning för en datamängd som ett datum, till exempel Table/StringColumn eq 1.
 
 * **Strängar** måste omges av enkla citattecken – ”chefsnamn”.
 * **Nummer** kräver ingen särskild formatering
@@ -118,10 +126,10 @@ Ett Power BI-URL-filter kan innehålla nummer i följande format.
 |Nummertyp  |Exempel  |
 |---------|---------|
 |**integer** (heltal)     |   5      |
-|**long**     |   5L eller 5l      |
+|**long**     |   5 L eller 5 l      |
 |**double**     |   5,5 eller 55e-1 eller 0,55e+1 eller 5D eller 5d eller 0,5e1D eller 0,5e1d eller 5,5D eller 5,5d eller 55e-1D eller 55e-1d     |
-|**decimal**     |   5M eller 5m eller 5,5M eller 5,5m      |
-|**float**     | 5F eller 5f eller 0,5e1F eller 0,5e-1d        |
+|**decimal**     |   5 M eller 5 m eller 5.5 M eller 5.5 m      |
+|**float**     | 5 F eller 5 f eller 0.5e1 F eller 0.5e-1 d        |
 
 ### <a name="date-data-types"></a>Datatyper för datum
 

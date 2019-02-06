@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: 034fc149dcd76102ae83864fe65d53c55b57c96a
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488878"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482762"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -24,6 +24,17 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 ## <a name="january-2019"></a>Januari 2019
 - **Power BI-rapportserver**            
+    - *Version 1.4.6969.7395 (version 15.0.1102.235), publicerad: 30 januari 2019*
+        - Felkorrigeringar
+            - Power BI-rapporter
+                - Korrigering av problem med grundläggande autentiseringsuppgifter vid användning av Direct Query
+                - Korrigering för dubbelriktade relationer när säkerhetsfilter på radnivå tillämpas
+                - Korrigering för inaktuella data när en modell har uppdaterats i en utskalningsmiljö
+                - Korrigering för dubbel rullningslist för tabell/matris i Firefox 63+
+                - Korrigering för ikonstorlek +/- i Internet Explorer
+            - Sidnumrerade rapporter
+                - Korrigering för problem med uppdatering av användningen av en delad datakälla för en rapport
+
     - *Version 1.4.6960.38798 (version 15.0.1102.222), publicerad: Den 22 januari 2019*
         - Funktioner
             - Power BI-rapporter 
@@ -35,6 +46,10 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
             - Administratörer
                 - Möjlighet att begränsa tillägg av resurser som kan laddas upp till rapportservern
                 - Möjlighet att begränsa hyperlänkscheman som stöds
+            - Programmerbarhet
+                - Ny webb-API: / PowerBIReports({Id})/DataModelRoles (GET)
+                - Ny webb-API: /PowerBIReports({Id})/DataModelRoleAssignments (GET & PUT)
+                - Se [REST API för Power BI-rapportserver](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0) för mer information.
         - Felkorrigeringar
             - Säkerhetsrisk för HTML-inmatning
             - Exportera till PDF visar inte eurotecken
@@ -42,6 +57,10 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
             - Problem med visuella objekt i Power BI Mobile-appen efter inaktivitet
 
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
+    - *Version: 2.65.5313.1562 (januari 2019), publicerad: 30 januari 2019*
+        - Genväg och fästa ikoner finns kvar efter avinstallation av Power BI-rapportservern
+        - Korrigering av svart text på svart ikon då man fäster Power BI-rapportservern på start-menyn
+
     - *Version: 2.65.5313.1421 (januari 2019), publicerad: Den 22 januari 2019*
         - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (januari 2019)  
 
