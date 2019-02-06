@@ -2,21 +2,22 @@
 title: Hämta en åtkomsttoken för autentisering
 description: Genomgång för att skicka data – hämta en åtkomsttoken för autentisering
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: 1381706801a1a817927c891fcc205950cef24cbb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 2d4e59badf394153dcb6877a270d2ecea63f5df6
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430865"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761971"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Steg 2: Hämta en autentiseringsåtkomsttoken
+
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 I **steg 1** av Skicka data till en datauppsättning, [Registrera appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), registrerade du en klientapp i Azure AD. I det här steget, hämtar du en åtkomsttoken för autentisering. Power BI-appar är integrerade med **Azure AD** för att tillhandahålla säker inloggning och auktorisering för din app. Du använder en token för att autentisera till **Azure AD** och få åtkomst till Power BI-resurser.
@@ -24,15 +25,16 @@ I **steg 1** av Skicka data till en datauppsättning, [Registrera appen med Azur
 Så här hämtar du en åtkomsttoken för autentisering.
 
 ## <a name="get-an-authentication-access-token"></a>Hämta en autentiseringsåtkomsttoken
+
 > **Obs!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 > 
 > 
 
 1. I Visual Studio 2015, skapar du ett **Konsolprogram**-projekt.
 2. Installera [Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Om du vill hämta en säkerhetstoken för autentisering i en .NET-app, använder du det här paketet. Så här installerar du paketet:
-   
+
      a. I Visual Studio 2015 väljer du **Verktyg** > **NuGet-pakethanteraren** > **Pakethanterarkonsolen**.
-   
+
      b. I **Pakethanterarkonsolen**, anger du Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory-Version 2.21.301221612.
 3. Lägg till koden nedan i klassen Program {...}.
 4. Ersätt ”{ClientID}”, med den **klient-ID** du fick när du registrerade appen. Se [Registrera appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
@@ -113,6 +115,7 @@ Nedan visas den [fullständiga kodlistan](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Fullständig kodlista
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -172,10 +175,10 @@ Nedan visas den [fullständiga kodlistan](#code).
         }
     }
 
-
 [Nästa steg >](walkthrough-push-data-create-dataset.md)
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md)  
 [Registrera en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
@@ -183,4 +186,3 @@ Nedan visas den [fullständiga kodlistan](#code).
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

@@ -2,26 +2,28 @@
 title: Fullständig kodlista
 description: Genomgång för att skicka data – fullständig kodlista
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: 96620449e8be8dbbfa13a00484fff29f2370fe19
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 95aadefab6a98413a22dd9386bfb4fc06cb482cb
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429946"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762247"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Fullständig kodlista för att skicka data till en datauppsättning
+
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 När du har följt stegen 2 till 5 i **skicka data till en datauppsättning** bör den fullständiga källkoden se ut ungefär så här.
 
 ## <a name="push-data-to-dataset-code"></a>Kod för att skicka data till datauppsättning
+
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
       using System.Net;
@@ -219,8 +221,8 @@ När du har följt stegen 2 till 5 i **skicka data till en datauppsättning** b�
           }
       }
 
-
 ## <a name="next-steps"></a>Nästa steg
+
 [Skicka data till en Power BI-datauppsättning](walkthrough-push-data.md)  
 [Genomgång – Skicka data till en Power BI-datauppsättning](walkthrough-push-data.md)  
 [Registrera en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
@@ -231,6 +233,4 @@ När du har följt stegen 2 till 5 i **skicka data till en datauppsättning** b�
 [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 
-
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

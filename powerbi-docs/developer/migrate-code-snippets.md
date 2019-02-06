@@ -2,21 +2,22 @@
 title: Kodfragment för migrering av innehåll från Power BI Embedded
 description: Här följer några kodfragment med grundläggande åtgärder som krävs för migrering av innehåll
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/30/2018
-ms.author: maghan
-ms.openlocfilehash: ddb0e95e20a22fd6e7e832c415462504d2ef3652
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: f53549e0a046195c353362368e2e3682df152af9
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429983"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762523"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodfragment för migrering av innehåll från Power BI-arbetsytesamling
+
 Här följer några kodfragment med grundläggande åtgärder som krävs för migrering av innehåll. Relaterade flöden för vissa rapporttyper finns i [Så här migrerar du arbetsytesamlingsinnehåll från Power BI till Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 Det finns ett **migreringsverktyg** tillgängligt som du kan använda för att kopiera innehåll från Power BI Embedded (PaaS) till Power BI-tjänsten (SaaS). Särskilt om du har mycket innehåll. Mer information finns i [Migreringsverktyget för Power BI Embedded](migrate-tool.md).
@@ -25,7 +26,7 @@ Koden nedan är exempel som använder C# och [Power BI .NET SDK:n](https://www.n
 
 Kontrollera att du använder följande namnrymder för att köra kodfragmenten nedan.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V1;
 using Microsoft.PowerBI.Api.V1.Models;
@@ -46,8 +47,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-
 ## <a name="export-report-from-paas-workspace"></a>Exportera rapporten från PaaS-arbetsytan
+
 ```
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -72,6 +73,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="import-report-to-saas-workspace"></a>Importera rapporten till PaaS-arbetsytan
+
 ```
     AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -85,6 +87,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="extract-directquery-connection-string-from-paas-report"></a>Extrahera DirectQuery anslutningssträngen från PaaS rapporten
+
 Det här är för att uppdatera PBIX efter migrering till SaaS.
 
 ```
@@ -105,6 +108,7 @@ Det här är för att uppdatera PBIX efter migrering till SaaS.
 ```
 
 ## <a name="update-directquery-connection-string-is-saas-workspace"></a>Uppdatera DirectQuery-anslutningssträngen i SaaS-arbetsytan
+
 ```
     public class ConnectionString
     {
@@ -123,6 +127,7 @@ Det här är för att uppdatera PBIX efter migrering till SaaS.
 ```
 
 ## <a name="set-directquery-credentials-in-saas-workspace"></a>Ange autentiseringsuppgifterna för DirectQuery i SaaS-arbetsytan
+
 I det här kodfragmentet använder vi okrypterade autentiseringsuppgifter för enkelhetens skull. Det finns även stöd för att skicka krypterade autentiseringsuppgifter.
 
 ```
@@ -159,6 +164,7 @@ I det här kodfragmentet använder vi okrypterade autentiseringsuppgifter för e
 ```
 
 ## <a name="push-dataset--report"></a>Skicka datauppsättning och rapport
+
 Du måste återskapa rapporten för den skapade datauppsättningen.
 
 I det här fragmentet antar vi att datauppsättningen som ska skickas redan finns i en apparbetsyta inom SaaS-miljön. Information om API för att skicka finns i [Skicka data till en Power BI-datauppsättning](walkthrough-push-data.md).
@@ -223,6 +229,7 @@ I det här fragmentet antar vi att datauppsättningen som ska skickas redan finn
 ```
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Migreringsverktyg för Power BI Embedded](migrate-tool.md)  
 [Bädda in med Power BI](embedding.md)  
 [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md)  
@@ -234,4 +241,3 @@ I det här fragmentet antar vi att datauppsättningen som ska skickas redan finn
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

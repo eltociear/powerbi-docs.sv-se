@@ -4,19 +4,20 @@ description: Genomgång för att skicka data – Lägga till rader i en Power BI
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/01/2018
-ms.openlocfilehash: 798bfbb5d1ebf127e7b958e02166dea5f1af81ef
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 52ee2dec11029f7c529362fdb44e2291846449c1
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430498"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761994"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Steg 5: Lägga till rader i en Power BI-tabell
+
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 I **steg 4** av Skicka data till en datauppsättning, [Hämta en datauppsättning för att lägga till rader i en Power BI-tabell](walkthrough-push-data-get-datasets.md), använde du åtgärden [Hämta datauppsättningar](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. I det här steget använder du datauppsättnings-ID:t med åtgärden [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) för att lägga till rader i en **Power BI**-datauppsättning. 
@@ -28,10 +29,9 @@ När du anropar åtgärden [PostRows](https://docs.microsoft.com/rest/api/power-
 Så här lägger du till rader till i en datauppsättning med Power BI-API.
 
 ## <a name="add-rows-to-a-power-bi-table"></a>Lägga till rader i en Power BI-tabell
+
 > [!NOTE]
 > Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
-> 
-> 
 
 1. I det konsolprogramprojekt du skapade i steg 2: Genomgång för att skicka data, [hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) lägg till koden nedan.
 2. Kör konsolappen och logga in på ditt Power BI-konto. Du bör se **Rader som har lagts till** i konsolfönstret. Du kan också logga in på Power BI för att se om raderna lagts till i datauppsättningen.
@@ -57,7 +57,8 @@ Lägg till den här koden i Program.cs.
   
        //Add rows to a Power BI table
        AddRows(datasetId, "Product");
-   }     
+   }
+
   ```
 * Lägg till en AddRows()-metod:
 

@@ -2,21 +2,22 @@
 title: Hämta en datauppsättning för att lägga till rader
 description: Genomgång för att skicka data – Hämta en datauppsättning för att lägga till rader i en Power BI-tabell
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: cd7f1eabc104da7e310abbfbce2929f047f0e5d8
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: fbde44136f403e3aff0c32d8d4acef4d1970830a
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430842"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762500"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Steg 4: Hämta en datauppsättning för att lägga till rader i en Power BI-tabell
+
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 I **steg 3** av skicka data till en datauppsättning, [Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md), anropade du åtgärden [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) för att skapa en datauppsättning i Power BI. I det här steget, använder du åtgärden [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. Du kan använda datauppsättnings-ID:t i steg 4 för att lägga till rader i en datauppsättning. 
@@ -26,14 +27,13 @@ Om du vill skicka data till en Power BI-datauppsättning, måste du referera til
 Så här hämtar du en datauppsättning.
 
 ## <a name="get-a-power-bi-dataset"></a>Hämta en Power BI-datauppsättning
+
 > **Obs!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
-> 
-> 
 
 1. I det konsolprogramprojekt du skapade i steg 2: Genomgång för att skicka data, [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md), installera Newtonsoft.Json NuGet-paketet. Så här installerar du paketet:
-   
+
      a. I Visual Studio 2015 väljer du **Verktyg** > **NuGet-pakethanteraren** > **Pakethanterarkonsolen**.
-   
+
      b. I **Pakethanterarkonsolen**, anger du Install-Package Newtonsoft.Json.
 2. När paketet har installerats, lägger du till **using Newtonsoft.Json;** till Program.cs.
 3. I Program.cs, lägger du till koden nedan för att hämta ett **datauppsättnings-ID**.
@@ -110,6 +110,7 @@ Nedan visas den [fullständiga kodlistan](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Fullständig kodlista
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -265,6 +266,7 @@ Nedan visas den [fullständiga kodlistan](#code).
 [Nästa steg >](walkthrough-push-data-add-rows.md)
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Lägg till rader i en Power BI-tabell](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Hämta datauppsättningar](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
@@ -273,4 +275,3 @@ Nedan visas den [fullständiga kodlistan](#code).
 [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

@@ -2,21 +2,22 @@
 title: Frågor och svar i Power BI Embedded
 description: Power BI Embedded ger dig ett sätt att ta med frågor och svar i ett program och tillåta dina användare att ställa frågor med naturligt språk.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.author: maghan
-ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 23e0f7a938116185e05e583f5c7f208efed3ca4d
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278017"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761925"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Frågor och svar i Power BI Embedded
+
 Power BI Embedded ger dig ett sätt att ta med frågor och svar i ett program och tillåta att dina användare ställer frågor med naturligt språk och tar emot direkta svar i form av visuell information som diagram eller grafer.
 
 ![Frågor och svar interaktiv fråga i en inbäddad ram](media/qanda/embedded-qanda.gif)
@@ -47,13 +48,14 @@ var qna = powerbi.embed(qnaContainer, config);
 ```
 
 ## <a name="set-question"></a>Ställ in frågan
+
 Om du använde **resultatläge** med en inställd fråga, kan du föra in ytterligare frågor i ramen och få dem besvarade direkt vilket ersätter det tidigare resultatet. En ny visuell information renderas som matchar den nya frågan.
 
 Ett exempel på den här användningen är en lista över vanliga frågor och svar. Användaren kan då gå igenom frågorna och få dem besvarade inom samma inbäddade del.
 
 **Kodfragment för användning i JS SDK:**  
 
-```        
+```
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 
@@ -70,6 +72,7 @@ qna.setQuestion("This year sales")
 ```
 
 ## <a name="visual-rendered-event"></a>Visuellt renderad händelse
+
 För **interaktivt** läge, kan programmet meddleas med en data ändrad händelse varje gång den renderade visuella informationen ändras för att matcha den uppdaterade frågan allteftersom den skrivs.
 
 Om du lyssnar på händelsen *visualRendered* så kan du spara frågor för senare användning. 
@@ -93,10 +96,11 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Inbäddningstoken
+
 Skapa en inbäddningstoken från en datauppsättning för att starta en frågor och svar-del. Mer information finns i avsnittet [Generera token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Nästa steg
+
 Om du vill göra ett försök med inbäddning av frågor och svar, kan du kolla [JavaScript-inbäddningsprov](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

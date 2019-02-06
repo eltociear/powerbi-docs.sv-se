@@ -2,22 +2,21 @@
 title: Anpassade layouter med Power BI-inbäddat innehåll
 description: Lär dig mer om anpassade layouter vid inbäddning av Power BI-innehåll i programmet.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e812fde896072762e113c81b1dd728091a8ff190
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288944"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762316"
 ---
 # <a name="custom-layouts"></a>Anpassade layouter
-
 
 Du kan använda en anpassad layout för att bädda in en rapport med en layout som skiljer sig åt från den i en ursprunglig rapport. Att definiera en ny layout varierar mellan att definiera endast en sidstorlek, kontrollera visuella objekts storlekar eller placering och synlighet.
 
@@ -115,7 +114,6 @@ enum VisualContainerDisplayMode {
 - `width`, höjd: Definierar det visuella objektets nya storlek.
 - `displayState`: Definierar det visuella objektets synlighet.
 
-
 ## <a name="update-layout"></a>Uppdatera layouten
 
 Du kan använda metoden updateSettings för att uppdatera rapportlayouten när som helst när rapporten läses in. Se [Uppdatera inställningarna](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -173,9 +171,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-
 ## <a name="see-also"></a>Se också
 
 [Bädda in dina Power BI-instrumentpaneler, -rapporter och -paneler](embedding-content.md)   
 [Fråga Power BI Community](https://community.powerbi.com/)
-
