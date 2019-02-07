@@ -870,6 +870,8 @@ items:
       items:
       - name: Bästa praxis för prestanda
         href: developer/embedded-performance-best-practices.md
+      - name: Tjänstens huvudnamn
+        href: developer/embed-service-principal.md
       - name: Säkerhet på radnivå
         href: developer/embedded-row-level-security.md
       - name: Hantera flera klienter
@@ -888,7 +890,7 @@ items:
         href: developer/create-an-azure-active-directory-tenant.md
       - name: Registrera ett program
         href: developer/register-app.md
-      - name: Autentisera till Power BI-tjänsten
+      - name: Hämta en Azure AD-åtkomsttoken
         href: developer/get-azuread-access-token.md
       - name: Bädda in frågor och svar
         href: developer/qanda.md
@@ -1036,6 +1038,8 @@ items:
         href: developer/walkthrough-push-data-get-datasets.md
       - name: Lägga till rader i en tabell
         href: developer/walkthrough-push-data-add-rows.md
+      - name: Kryptera autentiseringsuppgifter
+        href: developer/encrypt-credentials.md
     - name: Referens
       items:
       - name: REST API:er
@@ -1234,9 +1238,9 @@ items:
         href: service-admin-premium-purchase.md
       - name: Hantera Power BI Premium
         href: service-admin-premium-manage.md
-      - name: Övervaka Premium-funktioner med appen
+      - name: Övervaka funktioner med appen
         href: service-admin-premium-monitor-capacity.md
-      - name: Övervaka Premium-funktioner i administratörsportalen
+      - name: Övervaka funktioner i administratörsportalen
         href: service-admin-premium-monitor-portal.md
       - name: Starta om en Premium-kapacitet
         href: service-admin-premium-restart.md
@@ -1301,9 +1305,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: e5f1b5c6ac45f6f37b61692fe4bd7f5cc086aec5
-ms.sourcegitcommit: 01d08ddf9a437489f75501efda6b3b0d8cbd7864
+ms.openlocfilehash: 27de32e6dda7f6eba069eaee56582a449dca858c
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55760405"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794507"
