@@ -4,18 +4,17 @@ description: Lär dig hur du kan distribuera innehåll till datacentra i andra r
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/31/2018
-LocalizationGroup: Embedded
-ms.openlocfilehash: ab1b0f7ea7dbee13f39fbf47505a00e2ed6d41ea
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280434"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762431"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Multi-Geo-stöd för Power BI Embedded (förhandsversion)
 
@@ -56,7 +55,9 @@ Du kan inte ändra plats för en Power BI Embedded-resurs när du har skapat en 
 Följ dessa steg om du vill flytta ditt Power BI-innehåll till en annan region:
 
 1. [Skapa en ny kapacitet](azure-pbie-create-capacity.md) i en annan region.
+
 2. Tilldela den nya kapaciteten alla arbetsytor från den befintliga kapaciteten.
+
 3. Ta bort eller pausa den gamla kapaciteten.
 
 Det är viktigt att observera att om du vill ta bort en kapacitet utan att tilldela om innehållet så flyttas allt innehåll i den kapaciteten till en delad kapacitet som finns i din hemregion.
@@ -66,7 +67,9 @@ Det är viktigt att observera att om du vill ta bort en kapacitet utan att tilld
 Vi har gjort några ändringar i befintliga API: er för att stödja hantering av kapaciteter med Multi-Geo via API:
 
 1. **[Hämta kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)**  – API:n returnerar en lista med kapaciteter med åtkomst till användaren. Svaret innehåller nu en annan egenskap som kallas ”region”, som anger den kapacitetens plats.
-2. **[Tilldela till kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)**  – API:n gör att du kan tilldela en kapacitet en viss arbetsyta. Den här åtgärden låter dig inte tilldela en kapacitet utanför din hemregion arbetsytor eller flytta arbetsytor mellan olika kapaciteter i olika regioner. Om du vill göra det måste användaren ha administratörsbehörigheter på arbetsytan och administrera eller tilldela behörighet på målkapaciteten.
+
+2. **[Tilldela till kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)**  – API:n gör att du kan tilldela en kapacitet en viss arbetsyta. Den här åtgärden låter dig inte tilldela en kapacitet utanför din hemregion arbetsytor eller flytta arbetsytor mellan olika kapaciteter i olika regioner. Om du vill göra det måste användaren eller [tjänstens huvudnamn](embed-service-principal.md) ha administratörsbehörigheter på arbetsytan och administrera eller tilldela behörighet på målkapaciteten.
+
 3. **[Azure Resource Manager API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)**  – alla Azure Resource Manager API-åtgärder, inklusive *Skapa* och *Ta bort*, har stöd för Multi-Geo.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden

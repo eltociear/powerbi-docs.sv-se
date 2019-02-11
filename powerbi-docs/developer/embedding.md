@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: b333ed96fe14ed7bbc91869e507a8e76504b6a5f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: ca159fb8cea26f4c707aabc99d9fa2c308a32e1a
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288139"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762454"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Inbäddade analyser med Power BI
 
@@ -32,7 +32,7 @@ Välj den lösning som passar dig:
 
 ## <a name="using-apis"></a>Använda API:er
 
-Det finns två huvudscenarier när du bäddar in Power BI-innehåll.  Inbäddning för användare i din organisation (som har licenser för Power BI) och inbäddning för dina användare och kunder utan att de behöver ha licenser för Power BI. Power BI REST API tillåter båda scenarierna.
+Det finns två huvudscenarier när du bäddar in Power BI-innehåll. Inbäddning för användare i din organisation (som har licenser för Power BI) och inbäddning för dina användare och kunder utan att de behöver ha licenser för Power BI. Power BI REST API tillåter båda scenarierna.
 
 För kunder och användare utan Power BI-licenser, kan du kan bädda in instrumentpaneler och rapporter i ditt anpassade program, med samma API både till din organisation och dina kunder. Kunderna ser de data som hanteras av programmet. Och för Power BI-användare i din organisation, har de även fler alternativ för att visa *sina egna data* direkt i Power BI eller i kontext med det inbäddade programmet. Du kan dra full nytta av JavaScript och REST API:er för dina inbäddningsbehov.
 
@@ -40,7 +40,7 @@ Ett exempel på hur inbäddning fungerar finns i [JavaScript-inbäddningsexempel
 
 ## <a name="embedding-for-your-organization"></a>Inbäddning för din organisation
 
-**Inbäddning för din organisation** låter dig utöka Power BI-tjänsten. Inbäddning för din organisation kräver att slutanvändaren av ditt program loggar in på Power BI-tjänsten när de vill visa sitt innehåll. När någon i din organisation loggar in kommer de endast att ha åtkomst till instrumentpaneler och rapporter som de äger eller som har delats med dem i Power BI-tjänsten.
+**Inbäddning för din organisation** låter dig utöka Power BI-tjänsten. Inbäddning för din organisation kräver att slutanvändaren av ditt program loggar in på Power BI-tjänsten när de vill visa sitt innehåll. När någon i din organisation loggar in kommer de endast att ha åtkomst till instrumentpaneler och rapporter som de äger eller som någon har delat med dem i Power BI-tjänsten.
 
 *Exempel på inbäddning för din organisation inkluderar interna program, till exempel [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Microsoft Teams-integrering (du måste ha administratörsrättigheter)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) och [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).*
 
@@ -50,7 +50,7 @@ Se nedan för inbäddning för din organisation:
 
 Självbetjäningsfunktioner, som redigering, spara och mycket mer finns tillgängligt via [JavaScript API:t](https://github.com/Microsoft/PowerBI-JavaScript) vid inbäddning för Power BI-användare.
 
-Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du integrerar en rapport för din organisation.
+Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du integrerar en rapport för din organisation.
 
 ## <a name="embedding-for-your-customers"></a>Inbäddning för dina kunder
 
@@ -62,7 +62,11 @@ Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwn
 
 Power BI Embedded har fördelar för oberoende programvaruleverantörer, utvecklare och kunder. En ISV kan till exempel börja skapa visuella objekt utan kostnad med Power BI Desktop. ISV:er kan korta sin tid till marknad genom att minimera tiden för visuella analyser och differentiera sig från konkurrenterna med annorlunda dataupplevelser. ISV:er kan också välja att debitera en avgift för det ytterligare värde som skapas med inbäddad analys.
 
-Med Power BI Embedded behöver dina kunder inte känna till något om Power BI. Du behöver bara ett Power BI Pro-konto för att skapa ett inbäddat program. Power BI Pro-kontot fungerar som ett huvudkonto för ditt program (se huvudkontot som ett proxykonto). Power BI Pro-kontot låter dig även generera inbäddningstokens som ger åtkomst till instrumentpaneler och rapporter i Power BI-tjänsten som ägs/hanteras av ditt program.
+Med Power BI Embedded behöver dina kunder inte känna till något om Power BI. Du kan använda två olika metoder för att skapa ett inbäddat program. Ett alternativ är att använda ett Power BI Pro-konto. Ett annat alternativ är att använda tjänstens huvudnamn. 
+
+Power BI Pro-kontot fungerar som ett huvudkonto för ditt program (se huvudkontot som ett proxykonto). Med Power BI Pro-kontot kan du generera inbäddningstokens som ger åtkomst till instrumentpaneler och rapporter i Power BI-tjänsten som ägs och hanteras av ditt program.
+
+[Tjänstens huvudnamn](embed-service-principal.md) kan bädda in Power BI-innehåll i ett program med en **appspecifik** token. Med tjänstens huvudnamn kan du generera inbäddningstokens som ger åtkomst till instrumentpaneler och rapporter i Power BI-tjänsten som ägs och hanteras av ditt program.
 
 Utvecklare som använder Power BI Embedded kan ägna sig åt att bygga upp kärnkompetensen för sina program i stället för att utveckla visuella objekt och analyser. Utvecklare kan snabbt uppfylla kundkrav på rapportering och instrumentpaneler och kan enkelt bädda in med fullständigt dokumenterade API:er och SDK:er. Med lättnavigerad datautforskning i apparna kan ISV:er göra det enklare för kunderna att fatta snabba, datadrivna och sammanhangsberoende beslut på valfri enhet.
 
@@ -71,7 +75,7 @@ Utvecklare som använder Power BI Embedded kan ägna sig åt att bygga upp kärn
 
 När du är redo att flytta till produktion, måste din apparbetsyta tilldelas till en dedikerad kapacitet. Power BI Embedded i Microsoft Azure erbjuder [dedikerade kapaciteter](azure-pbie-create-capacity.md) att använda med dina program.
 
-Mer information om hur du bäddar in finns i [Så här bäddar du in dina Power BI-instrumentpaneler, rapporter och paneler](embed-sample-for-customers.md).
+Information om inbäddning finns i [Så här bäddar du in Power BI-innehåll](embed-sample-for-customers.md).
 
 ## <a name="next-steps"></a>Nästa steg
 

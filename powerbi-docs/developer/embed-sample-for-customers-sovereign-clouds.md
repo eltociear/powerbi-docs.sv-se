@@ -9,15 +9,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: 790c06dd84d7db3a382ef547c8fcc16237273951
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 69ce8088903cbdddef504dbf5e9b2ecc2a8ab9d4
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431164"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762684"
 ---
-# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Självstudie: Bädda in en Power BI-instrumentpanel, panel eller rapport i ditt program för nationella moln
+# <a name="tutorial-embed-a-power-bi-content-into-your-application-for-sovereign-clouds"></a>Självstudie: Integrera Power BI-innehåll i ditt program för suveräna moln
 
 Lär dig mer om att bädda in analytiska innehåll i dina tillämpningar och för nationella moln. Du kan använda Power BI .NET SDK med Power BI JavaScript API för att bädda in en rapport, instrumentpanel eller panel i dina webbprogram.
 
@@ -37,7 +37,7 @@ De olika nationella molnen är:
 
 ![Inbäddad instrumentpanel](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har något konto kan du, beroende på typen av nationellt moln, registrera dig för ett [Power BI-konto för amerikanska myndigheter](../service-govus-signup.md), ett [Power BI-konto för moln i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller ett [Power BI-konto för moln i Kina](http://www.21vbluecloud.com/powerbi/).
+För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett konto konfigurerat kan du, beroende på myndigheter eller land, välja rätt nationellt moln för dig. Du kan registrera dig för ett [Power BI-konto för amerikanska myndigheter](../service-govus-signup.md), ett [Power BI-konto för moln i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller ett [Power BI-konto för moln i Kina](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vill du bädda in en instrumentpanel för din organisation istället? Se [Integrera en instrumentpanel i en app för din organisation](integrate-dashboard.md).
@@ -206,7 +206,7 @@ ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(w
 Dashboard dashboard = dashboards.Value.FirstOrDefault();
 ```
 
-#### <a name="tiles"></a>Paneler
+#### <a name="tiles"></a>Ikoner
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -276,7 +276,7 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-#### <a name="tiles"></a>Paneler
+#### <a name="tiles"></a>Ikoner
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -435,7 +435,7 @@ Ett programexempel av det här finns i [Inbäddning för ditt organisationsexemp
 
 * [Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md)
 
-Begränsningar och överväganden
+Överväganden och begränsningar
 
 * GCC-konton stöder för tillfället endast P- och EM-kapaciteter
 

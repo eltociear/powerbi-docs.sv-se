@@ -8,17 +8,17 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 01/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: f7e83c2d0cd2f1c3344bf61f9f90ca43f09f7189
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234357"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794309"
 ---
-# <a name="visualizations-for-power-bi-consumers"></a>Visualiseringar i Power BI-**konsumenter**
+# <a name="interact-with-visualizations-in-reports-dashboards-and-apps"></a>Interagera med visualiseringar i rapporter, instrumentpaneler och appar
 
 I grunden är en ***visualisering*** (eller ett *visuellt objekt*), en typ av diagram som skapats av Power BI-*designers* med hjälp av data i *rapporter* och *datauppsättningar*. 
 
@@ -27,13 +27,14 @@ I grunden är en ***visualisering*** (eller ett *visuellt objekt*), en typ av di
 
 ## <a name="what-can-i-do-with-visualizations"></a>Vad kan jag göra med visualiseringar?
 
-Visualiseringar skapas av rapportens och instrumentpanelens *designers* och delas med *konsumenter*. Som en konsument har du många alternativ för att interagera med visualiseringar för att få nya insikter och fatta datadrivna affärsbeslut. Alla dessa alternativ visas nedan med länkar till stegvisa anvisningar.
+Visualiseringar skapas av rapportens och instrumentpanelens *designers* och delas med *konsumenter*. Som en konsument har du många alternativ för att interagera med visualiseringar för att få nya insikter och fatta datadrivna affärsbeslut. Alla dessa alternativ visas i tabellen nedan med länkar till stegvisa anvisningar.
 
-Men först, lite om frågor och svar. Frågor och svar är sökverktyget för Power BI:s naturliga språk. Du skriver en fråga med ett naturligt språk och frågor och svar ger svar på frågan i form av en visualisering. Frågor och svar är ett sätt på vilket användare kan skapa egna visualiseringar. Visualiseringarna du skapar med frågor och svar kan dock inte sparas. Men om det inte finns något speciellt du vill lära dig från dessa data och designern inte inkluderar dem i en rapport eller på en instrumentpanel, är frågor och svar ett bra alternativ. Mer information om frågor och svar finns [frågor och svar för konsumenter](end-user-q-and-a.md).
+> [!IMPORTANT]
+> Men först, lite om frågor och svar. Frågor och svar är sökverktyget för Power BI:s naturliga språk. Du skriver en fråga med ett naturligt språk och frågor och svar ger svar på frågan i form av en visualisering. Frågor och svar är ett sätt på vilket användare kan skapa egna visualiseringar. Visualiseringarna du skapar med frågor och svar kan dock inte sparas. Men om det inte finns något speciellt du vill lära dig från dessa data och designern inte inkluderar dem i en rapport eller på en instrumentpanel, är frågor och svar ett bra alternativ. Mer information om frågor och svar finns [frågor och svar för konsumenter](end-user-q-and-a.md).
 
 
 
-|Column1  |På en instrumentpanel  |I en rapport  | I frågor och svar
+|Aktivitet  |På en instrumentpanel  |I en rapport  | I frågor och svar
 |---------|---------|---------|--------|
 |[Lägga till kommentarer i en visualisering för dig själv eller starta en konversation med kollegor om visualiseringen](end-user-comment.md).     |  ja       |   nej      |  nej  |
 |[Öppna och utforska rapporten där visualiseringen har skapats](end-user-tiles.md).     |    ja     |   na      |  na |

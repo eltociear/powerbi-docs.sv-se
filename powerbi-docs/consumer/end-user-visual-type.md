@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 174886acf1d827497b48d660bb89e2b4057b09b9
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234693"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794859"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 Du hittar visualiseringar i rapporter, instrumentpaneler, appar och frågor och svar. Vissa av dessa visualiseringstyper paketeras med Power BI och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt där *rapportdesigners* kan lägga till dem i Power BI-rapporter, -instrumentpaneler och -appar. 
@@ -26,21 +26,21 @@ Den här artikeln är en översikt över de visualiseringar som paketeras med Po
 > Du kan få mer information om anpassade visuella genom att söka efter dem i avsnittet om **visuella objekt i Power BI** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). För varje visuella objekt finns en beskrivning, information om skapare och antingen skärmbilder eller en video. 
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
-Alla dessa visualiseringar finns i Power BI-appar, -instrumentpaneler, -rapporter och [anges i frågor och svar](#gna).
+Alla dessa visualiseringar finns i Power BI-appar, -instrumentpaneler, -rapporter och [anges i frågor och svar](#qna). Information om hur du interagerar med visualiseringar finns i [Interagera med visualiseringar i rapporter, instrumentpaneler och appar](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Ytdiagram: Enkelt (i lager) och stapel
 ![ytdiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
 Grundläggande ytdiagram baseras på linjediagram där området mellan axeln och linjen har fyllts i. Ytdiagrammet framhäver omfattningen av förändring över tid och kan användas för att uppmärksamma totalvärdet över en trend. Data som representerar vinst över tid kan till exempel ritas i ett ytdiagram för att betona den totala vinsten.
 
-### <a name="bar-and-column-charts"></a>Fält och stapeldiagram
+### <a name="bar-and-column-charts"></a>Fält och kolumndiagram
 ![stående stapeldiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
 
  ![liggande stapeldiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
 
 Stapeldiagram är standard för att visa ett specifikt värde över olika kategorier.
 
-### <a name="cards-single-number"></a>Kort: Enskilt tal
+### <a name="cards-single-number"></a>Kort: Enskilt antal
 ![enskilt tal-kort](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 Enskilt tal-kort visar ett enda faktum, en enda datapunkt. Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrumentpanelen eller -rapporten, till exempel total försäljning, marknadsandel år för år eller totala affärsmöjligheter.  
@@ -122,7 +122,7 @@ Linjediagram fokuserar på övergripande formen av en hel serie av värden, vanl
 
 Använd en grundläggande karta för att associera både kategorisk och kvantitativ information med platser.
 
-### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-kartor
+### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-mappar
 ![ArcGis-karta](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara presentation av punkter på en karta – helt enkelt till en helt ny nivå. De tillgängliga alternativen för grundläggande kartor, platstyper, teman, symbolformat och referensskikt skapar fantastiska informativa kartvisualiseringar. Kombinationen av redigerbara dataskikt (som insamlade data) på en karta med spatial analys ger en bättre förståelse av dina data i visualiseringen.
@@ -232,5 +232,5 @@ När du skriver frågor med naturligt språk i Frågor och svar för Power BI ka
 ![frågesession](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Visuella objekt i Power BI-rapporter](end-user-visualizations.md)    
+[Interagera med visualiseringar i rapporter, instrumentpaneler och appar](end-user-visualizations.md)    
 [Rätt visuell referens från sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

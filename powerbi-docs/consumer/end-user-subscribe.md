@@ -3,22 +3,22 @@ title: Prenumerera på rapporter och instrumentpaneler
 description: Lär dig hur du ordnar en prenumeration åt dig och dina kollegor på en ögonblicksbild via e-post av en Power BI-rapport eller instrumentpanel.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a35067af531f6da29edef7638fc9a743c948b8ce
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: df167f8693708c08bc44e935cff184917d8aaf54
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430267"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794332"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
-Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: varje dag, varje vecka eller när data uppdateras. Du kan även ange en specifik tid då Power BI skickar e-postmeddelanden.  
+Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: varje dag, varje vecka eller när data uppdateras. Du kan även ange en specifik tid då Power BI skickar e-postmeddelanden eller låta den köras nu.  
 
 E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](../supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning klickar du på kugghjulsikonen ![kugghjulsikon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Inställningar > Allmänt > Språk**. 
 
@@ -40,23 +40,23 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
    
    ![Ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails2.png)
+   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails-new.png)
     
     Fönstret till vänster när du är på en instrumentpanel och väljer **Prenumerera**. Fönstret till höger när du är på en rapportsida och väljer **Prenumerera**. Om du vill prenumerera på flera sidor i en rapport väljer du **Lägg till en till prenumeration** och väljer en annan sida. 
 
-3. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
+4. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
 
 4. Lägg alternativt till e-postmeddelandeinformation. 
 
 5. Välj en **frekvens** för prenumerationen.  Du kan välja Varje dag, Varje vecka och Efter datauppdatering (Varje dag).  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha e-post för prenumerationen på arbetsdagar väljer du **Varje vecka** som frekvens och avmarkerar rutorna Lör och Sön.   
 
-
 6. Schemalägg tiden som e-postmeddelandet skickas genom att välja Varje dag eller Varje vecka som frekvens och ange en **Schemalagd** **tid** för prenumerationen.   
 
 7. Schemalägg start- och slutdatum genom att ange datum i datumfälten. Som standard blir starttiden för prenumerationen det datum du skapade den och slutdatumet blir ett år senare. När en prenumeration når ett slutdatum stoppas den tills du aktiverar den igen.  Du får ett eller flera meddelanden innan det schemalagda slutdatumet där du tillfrågas om du vill förlänga den.     
 
+8. Välj **Kör nu** om du vill granska prenumerationen och testa den.  Då skickas e-postmeddelandet till dig direkt. 
 
-5. Spara prenumerationen genom att välja **Spara och stäng**. Du får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapporten enligt det schema du anger. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd skickar bara ett e-postmeddelande efter den första schemalagda uppdateringen på den dagen.
+8. Om allt ser bra ut väljer du **Spara och stäng**. Du får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapporten enligt det schema du anger. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd skickar bara ett e-postmeddelande efter den första schemalagda uppdateringen på den dagen.
    
    ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/end-user-subscribe/power-bi-subscribe-email.png)
    
@@ -83,6 +83,5 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanele
 * Power BI pausar automatiskt uppdateringar för datauppsättningar som är associerade med instrumentpaneler och rapporter som inte har besökts på över två månader.  Men om du lägger till en prenumeration på en instrumentpanel eller en rapport, så pausas den inte, även om den förblir obesökt.    
 
 ## <a name="next-steps"></a>Nästa steg
-* Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)    
-* [Läs blogginlägget](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
 
+[Söka efter och sortera innehåll](end-user-search-sort.md)

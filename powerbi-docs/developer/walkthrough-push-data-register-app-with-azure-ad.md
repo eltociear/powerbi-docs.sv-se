@@ -2,32 +2,32 @@
 title: Registrera en app med Azure AD
 description: Genomgång – Skicka data i en dataset – Registrera en app med Azure AD
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: db3184f7bc3c181b685c22d0bcad27206b4a0f8f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: a3154a7b74d196f3c0aa2969e7c25bf56000a662
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296373"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762040"
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>Steg 1: Registrera en app med Azure AD
+
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
 
 Det första steget för att skicka data till en datauppsättning i Power BI är att registrera din app i Azure AD. Du måste först ha ett **klient-ID** som identifierar din app i Azure AD. Utan ett **klient-ID** kan Azure AD inte autentisera appen.
 
 > **Obs!** Innan du registrerar en app för Power BI så måste du [registrera dig för Power BI](create-an-azure-active-directory-tenant.md).
-> 
-> 
 
 Här följer stegen för att registrera en app i Azure AD.
 
 ## <a name="register-an-app-in-azure-ad"></a>Registrera en app i Azure AD
+
 1. Gå till dev.powerbi.com/apps.
 2. Klicka på **Logga in med ditt befintliga konto** och logga in på ditt Power BI-konto.
 3. Ange ett **Appnamn**, till exempel ”testapp för att skicka data”.
@@ -38,13 +38,14 @@ Här följer stegen för att registrera en app i Azure AD.
 
 Så här bör sidan **Registrera ett program för Power BI** se ut:
 
-![](media/walkthrough-push-data-register-app-with-azure-ad/powerbi-developer-sample-register-app.png)
+![Registrera app](media/walkthrough-push-data-register-app-with-azure-ad/powerbi-developer-sample-register-app.png)
 
 Nästa steg visar hur du [hämtar en autentiseringsåtkomsttoken](walkthrough-push-data-get-token.md).
 
 [Nästa steg >](walkthrough-push-data-get-token.md)
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Registrera dig för Power BI](create-an-azure-active-directory-tenant.md)  
 [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md)  
 [Genomgång: Skicka data till en datauppsättning](walkthrough-push-data.md)  
@@ -52,4 +53,3 @@ Nästa steg visar hur du [hämtar en autentiseringsåtkomsttoken](walkthrough-pu
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

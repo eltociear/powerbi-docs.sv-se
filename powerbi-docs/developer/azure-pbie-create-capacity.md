@@ -2,24 +2,24 @@
 title: Skapa Power BI Embedded-kapacitet på Azure Portal | Microsoft Docs
 description: Den här artikeln beskriver hur du skapar en Power BI Embedded-kapacitet i Microsoft Azure.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.service: power-bi-embedded
 ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: caab7ce649687ec22d171e112382aa13d7652fb9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.reviewer: zakharb
+ms.date: 02/05/2019
+ms.openlocfilehash: 1d829dc31bc6e2419d4f2c187b40d6945f963f69
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288553"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762569"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Skapa Power BI Embedded-kapacitet på Azure Portal
 
-Den här artikeln beskriver hur du skapar en Power BI Embedded-kapacitet i Microsoft Azure. Power BI Embedded förenklar användningen av funktionerna i Power BI genom att lägga till fantastiska visuella objekt, rapporter och instrumentpaneler i dina appar.
+Den här artikeln beskriver hur du skapar en [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)-kapacitet i Microsoft Azure. Power BI Embedded förenklar användningen av funktionerna i Power BI genom att lägga till fantastiska visuella objekt, rapporter och instrumentpaneler i dina appar.
 
 Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/) innan du börjar.
 
@@ -38,13 +38,11 @@ För att slutföra den här snabbstarten behöver du:
 
 1. Logga in på [Azure Portal](https://portal.azure.com/).
 
-2. Välj **Skapa en resurs** > **Data och analys**.
+2. Sök efter *Power BI Embedded* i sökrutan.
 
-3. Sök efter *Power BI Embedded* i sökrutan.
+3. Välj **Skapa** i Power BI Embedded.
 
-4. Välj **Skapa** i Power BI Embedded.
-
-5. Fyll i nödvändig information och välj **Skapa**.
+4. Fyll i nödvändig information och välj **Skapa**.
 
     ![Fält som du fyller i för att skapa ny kapacitet](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
 
@@ -57,9 +55,7 @@ För att slutföra den här snabbstarten behöver du:
     |**Plats**|Den plats där Power BI finns för din klientorganisation. Standardplatsen är din hemregion, men du kan ändra plats med hjälp av [Multi-Geo-alternativ](embedded-multi-geo.md).
     |**Prisnivå**|Välj den SKU (antal virtuella kärnor och minnesstorlek) som passar dina behov.  Mer information finns i [Priser för Power BI Embedded](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
-6. Välj **Skapa**.
-
-Genereringen tar oftast mindre än minut; oftast bara några få sekunder. Om du väljer **Fäst på instrumentpanelen** kan du gå till instrumentpanelen för att se din nya kapacitet. Du kan också gå till **Alla tjänster** > **Power BI Embedded** och se om din kapacitet är klar.
+Du kan gå till **Alla tjänster** > **Power BI Embedded** och se om din kapacitet är klar. Du kan också välja **Fäst på instrumentpanelen** i meddelandeavsnittet eller inom bladet för att gå till instrumentpanelen och se den nya kapaciteten.
 
 ![Instrumentpanelen för Azure Portal med Power BI Embedded-kapacitet](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 

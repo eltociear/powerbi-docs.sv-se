@@ -8,15 +8,15 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
-ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: f50305eed647bfc94bc5c19ee1a298cb9ac9c782
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284183"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762707"
 ---
-# <a name="use-row-level-security-with-power-bi-embedded-content"></a>Säkerhet på radnivå med inbäddat innehåll i Power BI
+# <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
 **Säkerhet på radnivå (RLS)** kan användas för att begränsa användares åtkomst till data i instrumentpaneler, paneler, rapporter och datauppsättningar. Olika användare kan arbeta med samma artefakter och alla se olika data. Inbäddning har stöd för RLS.
 
@@ -247,7 +247,7 @@ Kunder som har sina data i **Azure SQL Database** kan nu dra nytta av en ny funk
 
 När du genererar en inbäddningstoken så kan du ange den effektiva identiteten för en användare i Azure SQL. Du kan ange den effektiva identiteten för en användare genom att skicka AAD-åtkomsttoken till servern. Åtkomsttoken används för att enbart hämta relevanta data för den användaren från Azure SQL, för den specifika sessionen.
 
-Den kan användas för att hantera varje användares vy i Azure SQL eller för att logga in på Azure SQL som en specifik kund i en databas för flera innehavare. Det kan också användas för att tillämpa säkerhet på radnivå för den aktuella sessionen i Azure SQL och enbart hämta relevanta data för den sessionen, vilket gör att du inte behöver hantera RLS i Power BI.
+Den kan användas för att hantera varje användares vy i Azure SQL eller för att logga in på Azure SQL som en specifik kund i en databas för flera innehavare. Det kan tillämpa säkerhet på radnivå för den aktuella sessionen i Azure SQL och enbart hämta relevanta data för den sessionen, vilket gör att du inte behöver hantera RLS i Power BI.
 
 Sådana effektiva identitetsproblem gäller för RLS-regler direkt på Azure SQL-servern. Power BI Embedded använder den angivna åtkomsttoken när den frågar efter data från Azure SQL Server. UPN för den användare (som åtkomsttoken har angetts för) finns tillgänglig som ett resultat av USER_NAME() SQL-funktionen.
 
@@ -307,6 +307,18 @@ Värdet som angetts i identitysbloben ska vara en giltig åtkomsttoken till Azur
    > Om du vill kunna skapa en åtkomsttoken för Azure SQL så måste programmet ha **Åtkomst till Azure SQL DB och Data Warehouse**-delegerad behörighet till **Azure SQL Database**-API:et på AAD-konfigurationen för appregistrering i Azure-portalen.
 
    ![Appregistrering](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
+## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Lokal datagateway med tjänstens huvudnamn (förhandsversion)
+
+Kunder som konfigurerar säkerhet på radnivå (RLS) med hjälp av en lokal SQL Server Analysis Services-datakälla (SSAS) med liveanslutning kan använda den nya funktionen för [tjänstens huvudnamn](embed-service-principal.md) för att hantera användare och deras åtkomst till data i SSAS vid integrering med **Power BI Embedded**.
+
+Med [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/) kan du ange de effektiva identiteten för lokala SSAS-liveanslutningar för en inbäddningstoken med hjälp av ett [objekt för tjänstens huvudnamn](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+
+Fram till nu har huvudanvändaren som genererar en inbäddningstoken, för att kunna ange den effektiva identiteten för lokal SSAS-liveanslutning behövt vara en gatewayadministratör. Nu, istället för att kräva att användaren är gatewayadministratör, kan gatewayadministratören ge användaren dedikerad behörighet för den datakällan, som tillåter att användaren åsidosätter den effektiva identiteten när du genererar inbäddningstoken. Den här nya funktionen möjliggör inbäddning med tjänstens huvudnamn för en aktiv SSAS-anslutning.
+
+För att aktivera det här scenariot använder gatewayadministratören [REST-API:et för att lägga till användare av datakälla](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser) för att ge tjänstens huvudnamn behörigheten *ReadOverrideEffectiveIdentity* för Power BI Embedded.
+
+Du kan inte ange den här behörigheten med hjälp av administratörsportalen. Den här behörigheten anges bara med API:et. I administratörsportalen ser du en indikation för användare och tjänsthuvudnamn med sådana behörigheter.
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 

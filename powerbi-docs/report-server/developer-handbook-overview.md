@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: df77d4b9642a6df511af8af054e3e983c0120f77
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9b1357d2e10214cdf578bff4d2aa7fca8fc19033
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291635"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794713"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>Översikt i handbok för utvecklare, Power BI-rapportserver
 Välkommen till handboken för utvecklare för Power BI-rapportservern, en lokal plats där du kan lagra och hantera dina mobila och sidnumrerade rapporter samt Power BI-rapporter.
@@ -24,13 +24,13 @@ Välkommen till handboken för utvecklare för Power BI-rapportservern, en lokal
 Den här handboken visar vilka alternativ du som utvecklare har när du arbetar med Power BI-rapportservern.
 
 ## <a name="embedding"></a>Bädda in
-Du kan bädda in inom en iFrame i alla rapporter i Power BI-rapportservern genom att lägga till frågesträngsparametern `?rs:Embed=true` i URL:en. Detta fungerar med såväl Power BI-rapporter som andra rapporttyper.
+Du kan bädda in inom en iFrame i alla rapporter i Power BI-rapportservern genom att lägga till frågesträngsparametern `?rs:Embed=true` i URL:en. Den här tekniken fungerar med såväl Power BI-rapporter som andra rapporttyper.
 
 ### <a name="report-viewer-control"></a>Rapportvisningskontroll
-Du kan använda rapportvisningskontrollen i sidnumrerade rapporter. Det innebär att du kan placera kontrollen i ett .NET-fönster eller i ett webbprogram. Mer information finns i [Kom igång med rapportvisningskontrollen](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
+Du kan använda rapportvisningskontrollen i sidnumrerade rapporter. Med den kan du placera kontrollen i ett .NET-fönster eller i ett webbprogram. Mer information finns i [Kom igång med rapportvisningskontrollen](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 ## <a name="apis"></a>API:er
-Det finns flera API-alternativ som kan användas när man interagerar med Power BI-rapportservern. Detta inkluderar följande.
+Det finns flera API-alternativ som kan användas när man interagerar med Power BI-rapportservern. Den här tekniken inkluderar följande.
 
 * [REST API:er](rest-api.md)
 * [URL-åtkomst](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
