@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8cda803939ee9ae2f864496300fce25890770dac
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
+ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430383"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55888243"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -287,16 +287,6 @@ Användare i organisationen kan tagga instrumentpaneler med klassificeringar som
 ### <a name="embed-content-in-apps"></a>Bädda in innehåll i appar
 
 Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapporter i SaaS-program (programvara som en tjänst). När du inaktiverar den här inställningen kan användare inte använda REST-API: er för att bädda in Power BI-innehåll i sina program. [Läs mer](developer/embedding.md)
-
-## <a name="workspaces-and-import-settings"></a>Arbetsytor och importinställningar
-
-### <a name="author-content-in-workspaces"></a>Författa innehåll på arbetsytor
-
-Användare i organisationen har åtkomst till arbetsytor där de kan ansluta till data och författa innehåll. [Läs mer](service-create-the-new-workspaces.md)
-
-### <a name="import-data-into-power-bi"></a>Importera data till Power BI
-
-Användare i organisationen kan importera data till tjänsten, t.ex. genom att publicera rapporter från Power BI Desktop, överföra Power BI-rapportfiler och ansluta till data direkt från tjänsten. [Läs mer](desktop-upload-desktop-files.md)
 
 ## <a name="dataflow-settings-preview"></a>Dataflödesinställningar (förhandsversion)
 
