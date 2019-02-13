@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 02/07/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 82c1a719e757e471b5c278cb26132a3629ca0d74
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 2a38d53a121f0a58c18f627370bf81413cf36982
+ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794234"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55888220"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Hantera kapacitet i Power BI Premium och Power BI Embedded
 
@@ -25,11 +25,11 @@ Lär dig hur du hanterar Power BI Premium- och Power BI Embedded-kapaciteter som
 
 ## <a name="what-is-capacity"></a>Vad är kapacitet?
 
-*Kapacitet* är i hjärtat av Power BI Premium- och Power BI Embedded-erbjudandena. Det är den uppsättning resurser som reserveras endast för din organisations användning. Med dedikerad kapacitet kan du publicera instrumentpaneler, rapporter och datauppsättningar för användare i hela organisationen utan att behöva köpa licenser per användare till dem. Det erbjuder även pålitlig och konsekvent prestanda för det innehåll som omfattas av kapaciteten. Mer information finns i [Vad är Power BI Premium?](service-premium.md).
+*Kapacitet* är i hjärtat av Power BI Premium- och Power BI Embedded-erbjudandena. Det är en uppsättning resurser som reserveras endast för din organisation. Med dedikerad kapacitet kan du publicera instrumentpaneler, rapporter och datauppsättningar för användare i hela organisationen utan att behöva köpa licenser per användare till dem. Det erbjuder även pålitlig och konsekvent prestanda för det innehåll som omfattas av kapaciteten. Mer information finns i [Vad är Power BI Premium?](service-premium.md).
 
 ### <a name="capacity-admins"></a>Kapacitetsadministratörer
 
-När du tilldelas till en kapacitet som *kapacitetsadministratör* har du full kontroll över kapaciteten och dess administrativa funktioner. Från Power BI-administratörsportalen kan du lägga till fler kapacitetsadministratörer eller ge användare behörighet för kapacitetstilldelning. Du kan masstilldela arbetsytor till kapacitet och visa användningsstatistik för en kapacitet.
+När du tilldelas till en kapacitet som *kapacitetsadministratör* har du full kontroll över kapaciteten och dess administrativa funktioner. Från Power BI-administratörsportalen kan du lägga till fler kapacitetsadministratörer eller ge användare behörighet för kapacitetstilldelning. Du kan masstilldela arbetsytor till en kapacitet och visa användningsstatistik för en kapacitet.
 
 > [!NOTE]
 > För Power BI Embedded definieras kapacitetsadministratörer i Microsoft Azure-portalen.

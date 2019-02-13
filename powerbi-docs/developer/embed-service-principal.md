@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: a0b1722a54f1e5ea5bf01d8e5bb5fb4753351a60
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763160"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971681"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjänstens huvudnamn med Power BI (förhandsversion)
 
@@ -108,9 +108,6 @@ Skiljer sig från traditionell användning av ett huvudkonto, användning av tj�
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > AAD-säkerhetsgrupper kan bara skapas av en global AAD-administratör.
-
 3. Som Power BI-administratör måste du aktivera tjänstens huvudnamn i **Inställningar för utvecklare** i Power BI-administratörsportalen. Lägg till säkerhetsgruppen som du har skapat i Azure AD i avsnittet **Specifik säkerhetsgrupp** i **Inställningar för utvecklare**.
 
    > [!Important]
@@ -173,6 +170,7 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 * Power BI-administratörsbehörighet krävs för att aktivera tjänstens huvudnamn i inställningarna för utvecklare i Power BI-administratörsportalen.
 * Du kan inte installera eller hantera en lokal datagateway med tjänstens huvudnamn.
 * Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
+* Hantering av [dataflöden](../service-dataflows-overview.md) stöds inte.
 
 ## <a name="next-steps"></a>Nästa steg
 

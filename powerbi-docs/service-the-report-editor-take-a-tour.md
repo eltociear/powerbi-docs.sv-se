@@ -1,6 +1,6 @@
 ---
 title: Upptäck rapportredigeraren
-description: Rapportredigeraren i Power BI-tjänsten och rapportredigeraren i Power BI Desktop liknar varandra.
+description: Rapportredigeraren i Power BI-tjänsten liknar rapportredigeraren i Power BI Desktop.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,21 +8,23 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/25/2019
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: 66e40462081ee2f1156840d137d4c67ad0eb7b45
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147414"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971704"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Upptäck rapportredigeraren i Power BI
 
-*Rapportredigeraren* i Power BI-tjänsten och rapportredigeraren i Power BI Desktop liknar varandra. Videon visar rapportredigeraren i Power BI Desktop och den här artikeln beskriver rapportredigeraren i Power BI-tjänsten. 
+*Rapportredigeraren* i Power BI-tjänsten och rapportredigeraren i Power BI Desktop liknar varandra. Vanligtvis börjar du med att skapa rapporter i Power BI Desktop. Sedan publicerar du dem till Power BI-tjänsten, där du kan fortsätta arbeta med dem. I Power BI-tjänsten kan du också skapa instrumentpaneler utifrån dina rapporter.
 
-Som rapportskapare kan du skapa och redigera instrumentpaneler och rapporter. Sedan distribuerar du dem till dina rapportkonsumenter. De kan interagera med dina instrumentpaneler och rapporter i läsvyn i Power BI-tjänsten men inte redigera dem. Läs mer om [vad rapportanvändare kan göra i Power BI-tjänsten](consumer/end-user-reading-view.md) 
+När du har skapat dina instrumentpaneler och rapporter kan du distribuera dem till rapportanvändarna. Beroende på hur du delar dina rapporter, kan slutanvändarna interagera med dem i läsvyn i Power BI-tjänsten, men de kan inte redigera dem. Läs mer om [vad rapportanvändare kan göra i Power BI-tjänsten](consumer/end-user-reading-view.md). 
+
+I den här videon visas rapportredigeraren i Power BI Desktop. I den här artikeln presenteras rapportredigeraren i Power BI-tjänsten. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -79,7 +81,7 @@ Formateringsmöjligheterna är nästan oändliga.  Om du vill veta mer, så utfo
 Välj förstoringsglasikonen om du vill visa analysfönstret. Vilka alternativ som är tillgängliga beror på vilken visualiseringstyp som har valts.
 
 ![Analysfönstret i rapportredigeraren](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
-Med fönstret Analytics i Power BI-tjänsten kan du lägga till dynamiska referensrader i visualiseringar och ange fokus för viktiga trender eller insikter. Läs mer i [Fönstret Analytics i Power BI-tjänsten](service-analytics-pane.md) eller [Fönstret Analytics i Power BI Desktop](desktop-analytics-pane.md).
+I analysfönstret i Power BI-tjänsten kan du lägga till dynamiska referensrader i visualiseringar och lägga fokus på viktiga trender eller insikter. Läs mer om analysfönstret [i Power BI-tjänsten](service-analytics-pane.md) och [i Power BI Desktop](desktop-analytics-pane.md).
 
 - - -
 ## <a name="the-filters-pane"></a>Fönstret Filter
@@ -90,6 +92,12 @@ Filterfönstret har ännu en kraftfull funktion – möjligheten att filtrera me
 ![Filterfönstret](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 Mer information finns i [Lägg till ett filter till en rapport](power-bi-report-add-filter.md).
+
+En ny filterupplevelse finns för närvarande som förhandsversion. Du kan formatera de nya filtren att se lika ut som själva rapporten. Du kan också låsa filter eller dölja dem för rapportanvändare. 
+
+![Ny filterupplevelse](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
+
+Läs mer om [den nya filterupplevelsen](power-bi-report-filter-preview.md).
 
 - - -
 ## <a name="the-fields-pane"></a>Fönstret Fält
