@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
 ms.author: maggies
-ms.openlocfilehash: 9556a501832502a8d5653967408b9fac8d0704a5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 732b90a5d325665cbe82c87bd1247ff72af9e6e5
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295660"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215146"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Ange data direkt i en sidnumrerad rapport i Report Builder (förhandsversion) – Power BI
 
@@ -82,11 +82,11 @@ Nu när sidnumrerade rapporter stöds i Power BI-tjänsten i förhandsversionen 
 
 Du kan också ladda upp din sidnumrerade rapport till en Power BI-rapportserver eller SQL Server Reporting Services 2016 eller 2017-rapportservern. Innan du gör det måste du lägga till följande objekt i din RsReportServer.config som en utökning av ytterligare data. Säkerhetskopiera filen RsReportServer.config innan du gör ändringen, ifall du stöter på problem.
 
-```
-<Extension Name=”ENTERDATA” Type=”Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions”>
-<Configuration>
-<ConfigName>ENTERDATA</ConfigName>
-</Configuration>
+```xml
+<Extension Name="ENTERDATA" Type="Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions">
+    <Configuration>
+        <ConfigName>ENTERDATA</ConfigName>
+    </Configuration>
 </Extension>
 ```
 

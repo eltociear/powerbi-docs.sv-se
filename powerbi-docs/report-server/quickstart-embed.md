@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 01815d2e5aa7dd7f05d3a9be33ca4e458deb78ec
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 4730bef0e7f1fc47a4a59a0129640760714fe2e0
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429784"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223339"
 ---
 # <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Snabbstart: Bädda in en Power BI-rapportserverrapport med en iFrame i SharePoint Server
 
@@ -87,7 +87,7 @@ När du har din URL kan du skapa en iFrame på en SharePoint-sida som värd för
     ![iFrame-kod](media/quickstart-embed/quickstart_embed_12.png)
 
      Till exempel:
-     ```
+     ```html
      <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 

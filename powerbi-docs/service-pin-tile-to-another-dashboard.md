@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 68b392f4570d137fabdfe8f10e5b7035babc397b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4fe3b56f1891423a80019186668dc55f361d580a
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54272637"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215640"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fäst en panel från en instrumentpanel till en annan instrumentpanel
 Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) är genom att kopiera den från en annan instrumentpanel. Var och en av de här panelerna, när de klickas på, länkar tillbaka till där de skapades – antingen i frågor och svar eller i en rapport. 

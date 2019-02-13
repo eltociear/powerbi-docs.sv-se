@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d97c59b7c5d25e85dee5f3b5b5b6ae8d24ae6cb2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283332"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56217055"
 ---
 # <a name="using-python-in-query-editor"></a>Använda Python i frågeredigeraren
 Du kan använda **Python**, ett programmeringsspråk som ofta används av statistiker, dataforskare och dataanalytiker, i **frågeredigeraren** för Power BI Desktop. Med den här integreringen av Python i **frågeredigeraren** kan du utföra datarensning med Python, avancerade datautformning och analyser i datauppsättningar, inklusive färdigställande av saknade data, förutsägelser och klustring för att bara nämna några få. **Python** är ett kraftfullt språk och kan användas i **frågeredigeraren** till att förbereda din datamodell och skapa rapporter.
@@ -43,10 +43,12 @@ För att visa hur du använder **Python** i **frågeredigeraren** anges det här
    ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. I det här exemplet anger du följande skriptkod:
    
+    ```python
        import pandas as pd
        completedData = dataset.fillna(method='backfill', inplace=False)
        dataset["completedValues"] =  completedData["SMI missing values"]
-   
+   ```
+
    > [!NOTE]
    > Du måste ha biblioteket *pandas* installerat i din Python-miljö för att tidigare skriptkod ska fungera korrekt. För att installera pandas, kör du följande kommando i din Python-installation: |      > pip install pandas
    > 

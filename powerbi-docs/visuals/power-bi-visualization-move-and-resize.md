@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cddf5594d7de129d528b2e89e2dca3c5d82a9df1
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: cd5026a1bb3bca4781be1e3f61b4a71364190f8a
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296557"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215905"
 ---
 # <a name="move-and-resize-a-visualization-in-a-report-in-power-bi-service-and-power-bi-desktop"></a>Flytta och ändra storlek på en visualisering i en rapport i Power BI-tjänsten och Power BI Desktop
 Endast rapportskapare och ägare kan flytta och ändra storlek på visualiseringar. I Power BI-tjänsten (app.powerbi.com) innebär detta att öppna rapporten i [redigeringsvyn](../consumer/end-user-reading-view.md).

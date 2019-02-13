@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: b8f78821ccd6f32f9b943b55a45de20b720f3f3c
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762109"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223845"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -161,7 +161,7 @@ Prova stegen nedan för att verifiera vad det är.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: The grant requires admin permission (Beviljandet kräver administratörsbehörigheter)
 
-**_Symptom:_**</br>
+**_Symptom:_**<br>
 När en icke-administratörsanvändare försöker logga in i ett program första gången för att bevilja medgivande och följande fel visas:
 
 * ConsentTest kräver behörighet som bara kan ges av en administratör för att komma åt resurser i din organisation. Be en administratör bevilja behörighet till den här appen innan du använder den.
@@ -171,7 +171,7 @@ När en icke-administratörsanvändare försöker logga in i ett program första
 
 En administratörsanvändare kan logga in och bevilja medgivande.
 
-**_Rotorsak:_**</br>
+**_Rotorsak:_**<br>
 Användargodkännande har inaktiverats för klientorganisationen.
 
 **_Det finns flera möjliga lösningar:_**
