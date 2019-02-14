@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: bc53bdf6c0fd013d446c6d74cf2a422a84302f6a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bfb6178908a9d6a4bcfe81f8d3d9771ac5b12b9d
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289795"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086642"
 ---
 # <a name="troubleshooting-tile-errors"></a>Felsöka panelfel
 Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklaring.
@@ -30,11 +30,16 @@ Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklari
 **Power BI påträffade ett oväntat fel vid inläsning av modellen. Försök igen senare.**
 eller **det gick inte att hämta datamodellen. Kontakta instrumentpanelens ägare och säkerställ att datakällorna och modellen finns och är tillgängliga.**
 
-Det gick inte att komma åt dina data eftersom datakällan inte kan nås. Detta kan inträffa om datakällan har tagits bort, fått ett nytt namn, flyttats, offline eller behörigheten har ändrats. Kontrollera att källan fortfarande finns på den plats vi pekar på och att du fortfarande har behörighet att komma åt den. Om det inte är problemet, kan källan vara långsam. Försök igen senare under en tid när belastningen på källan är mindre. Om det är en lokal källa, kan dataägaren kanske ge dig mer information.
+Det gick inte att komma åt dina data eftersom datakällan inte kan nås. Det här problemet kunde inträffa om datakällan har tagits bort, fått ett nytt namn, flyttats, offline eller behörigheten hade ändrats. Kontrollera att källan fortfarande finns på den plats vi pekar på och att du fortfarande har behörighet att komma åt den. Om det inte är problemet, kan källan vara långsam. Försök igen senare under en tid när belastningen på källan är mindre. Om det är en lokal källa, kan dataägaren kanske ge dig mer information.
 
 **Du har inte behörighet att visa den här panelen eller öppna arbetsboken.**
 
 Kontakta instrumentpanelens ägare och säkerställ att datakällorna och modellen finns och är tillgängliga för ditt konto.
+
+**Anpassade visuella objekt har inaktiverats av din administratör.**
+
+Power BI-administratören har inaktiverat användningen av anpassade visuella objekt för din organisation eller din säkerhetsgrupp. Du kommer inte att kunna använda anpassade visuella objekt från [Microsoft Marketplace](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) eller importera privata visuella objekt från en fil. Du kan endast använda den medföljande uppsättningen visuella objekt.
+
 
 **Datastrukturer måste innehålla minst en grupp eller beräkning som producerar data. Kontakta instrumentpanelens ägare.**
 
@@ -42,7 +47,7 @@ Vi har inte några data att visa eftersom frågan är tom. Försök att lägga t
 
 **Det går inte att visa data eftersom Power BI inte kan fastställa relationen mellan två eller flera fält.**
 
-Du försöker använda två eller flera fält från tabeller som inte är relaterade. Du måste ta bort dessa fält från det visuella objektet och därefter skapa en relation mellan tabellerna. När du har gjort det, kan du lägga tillbaka fälten till det visuella objektet. Detta kan göras i Power BI Desktop eller Power Pivot för Excel. [Läs mer](desktop-create-and-manage-relationships.md)
+Du försöker använda två eller flera fält från tabeller som inte är relaterade. Du måste ta bort dessa fält från det visuella objektet och därefter skapa en relation mellan tabellerna. När du har gjort den här ändringen kan du lägga tillbaka fälten till det visuella objektet. Detta kan göras i Power BI Desktop eller Power Pivot för Excel. [Läs mer](desktop-create-and-manage-relationships.md)
 
 **Grupperna i primäraxeln och sekundäraxeln överlappar varandra. Grupperna i primäraxeln kan inte ha samma nycklar som grupper på sekundäraxeln.**
 

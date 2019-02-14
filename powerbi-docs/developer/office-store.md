@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 850d4c01248a16029b3874548b61c2f9170560bb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bedf9092e48b0e28c14ec510f1f3b4431e81ea27
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281515"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086412"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
 
@@ -30,7 +30,7 @@ När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det 
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Förbereda att skicka ditt anpassade visuella objekt
 
-När du är klar med att koda och testa ditt anpassade visuella objekt och har förpackat det i en pbiviz-fil bör du ha följande klart för din överföring.
+När du är klar med att koda och [testa ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) och har förpackat det i en pbiviz-fil bör du ha följande klart för din överföring.
 
 | Objekt | Krävs | Beskrivning |
 | --- | --- | --- |

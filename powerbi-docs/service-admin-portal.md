@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
-ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
+ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55888243"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086481"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -236,12 +236,17 @@ Användare i organisationen kan använda externa sökfunktioner som förlitar si
 
 ## <a name="custom-visuals-settings"></a>Inställningar för anpassade visuella objekt
 
-### <a name="enable-custom-visuals-for-the-entire-organization"></a>Aktivera anpassad visuell information för hela organisationen
+### <a name="add-and-use-custom-visuals"></a>Lägg till och använda anpassade visuella objekt
 
 Användare i organisationen kan interagera med och dela anpassad visuell information. [Läs mer](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
+> Den här inställningen kan tillämpas för hela organisationen eller begränsas till specifika grupper.
+
+### <a name="allow-only-certified-visuals"></a>Tillåt endast certifierade visuella objekt
+
+Användare i organisationen som har behörighet att lägga till och använda anpassade visuella objekt, enligt inställningen ”Lägg till och använd anpassade visuella objekt”, kan endast använda [certifierade anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=2002010) (ocertifierade visuella objekt blockeras och ett felmeddelande visas när det används). 
+
 
 ## <a name="r-visuals-settings"></a>Inställningar för R-visualisering
 
