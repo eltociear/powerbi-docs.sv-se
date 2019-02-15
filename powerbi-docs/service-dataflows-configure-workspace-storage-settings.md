@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bcde69d25b6b73787a4b9d16e4ba2b39b183ffd7
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 8c17a7b4ad455077d383eaff9b35a5d1004fce11
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086435"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223638"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurera inställningar för arbetsytans dataflöde (Förhandsversion)
 
@@ -35,7 +35,7 @@ Vi tar en titt på båda sätten i följande avsnitt.
 
 ## <a name="create-a-new-workspace-configure-its-dataflow-storage"></a>Skapa en ny arbetsyta, konfigurera dess dataflödeslagring
 
-Om du vill skapa en ny apparbetsyta i Power BI-tjänsten ska du välja **Arbetsytor > Skapa en apparbetsyta**.
+Om du vill skapa en ny apparbetsyta i Power BI-tjänsten väljer du **Arbetsytor > Skapa en apparbetsyta**.
 
 ![Lägg till ny arbetsyta](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
