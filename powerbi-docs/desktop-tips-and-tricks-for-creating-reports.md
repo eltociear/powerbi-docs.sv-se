@@ -1,7 +1,7 @@
 ---
 title: Tips om hur du skapar rapporter i Power BI
 description: Metodtips för att skapa rapporter i Power BI-tjänsten och Power BI Desktop
-author: davidi
+author: davidiseminger
 manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: bd1889605773b1d9eed888550676b8bbc9933b2f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fa3d24de1f54be127f3f9b23ca33677987464150
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296005"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223868"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -143,7 +143,7 @@ Om du vill skapa en relation i det här fallet måste vi skapa en logisk dataupp
 4. I frågan **CustomerNames** väljer du alternativet **Bifoga** i menyfliksområdet. Välj sedan frågan från **Temp**.
 5. I frågan från **CustomerNames** väljer du **Ta bort dubbletter**.
 
-Nu har en dimensionstabell som du kan använda för att relatera till CustomerIndicents och WorkItems som innehåller alla värden för båda.  
+Nu har du en dimensionstabell som du kan använda för att relatera till CustomerIncidents och WorkItems som innehåller alla värden för båda.  
 
 ## <a name="patterns-to-jump-start-your-use-of-the-query-editor"></a>Mönster för att starta din användning av frågeredigeraren
 Frågeredigeraren är ett kraftfullt verktyg som kan manipulera data för att forma och rensa dem så att de kan visualiseras eller modelleras. Det finns några mönster som du bör känna till.

@@ -1,7 +1,7 @@
 ---
 title: Tips för att skapa snygga rapporter
 description: Tips om hur du skapar rapporter i Power BI-tjänsten och Power BI Desktop
-author: davidi
+author: davidiseminger
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d88a455b5448b92d86719251bfada6bd807a4c91
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290508"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223822"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips om hur du skapar rapporter i Power BI Desktop och Power BI-tjänsten
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop, Power BI-tjänsten *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad.
@@ -145,7 +145,7 @@ Om du vill skapa en relation i det här fallet måste vi skapa en logisk dataupp
 4. I frågan **CustomerNames** väljer du alternativet **Bifoga** i menyfliksområdet. Välj sedan frågan från **Temp**.
 5. I frågan från **CustomerNames** väljer du **Ta bort dubbletter**.
 
-Nu har en dimensionstabell som du kan använda för att relatera till CustomerIndicents och WorkItems som innehåller alla värden för båda.  
+Nu har du en dimensionstabell som du kan använda för att relatera till CustomerIncidents och WorkItems som innehåller alla värden för båda.  
 
 ### <a name="patterns-to-jump-start-your-use-of-the-query-editor"></a>Mönster för att starta din användning av frågeredigeraren
 Frågeredigeraren är ett kraftfullt verktyg som kan manipulera data för att forma och rensa dem så att de kan visualiseras eller modelleras. Det finns några mönster som du bör känna till.

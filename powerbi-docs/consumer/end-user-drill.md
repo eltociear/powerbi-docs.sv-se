@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282366"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216595"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Granskningsläge i en visualisering i Power BI
 
@@ -112,9 +112,9 @@ Den här metoden använder ikonerna för ökad detaljnivå som visas i det övre
 
 2. Välj *lövnod* för **TN**. Din trädkarta visar nu alla orter i Tennessee som har en butik. 
 
-    ![trädkarta som endast visar data för Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![trädkarta som endast visar data för Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
-2. Du kan nu öka detaljnivån för Tennesee eller för en viss stad i Tennesee, eller så kan du expandera (se här för information om hur du **expanderar alla fält samtidigt** nedan). Låt oss nu fortsätta att öka detaljnivån ett fält i taget.  Välj **Knoxville, TN**. Din trädkarta visar nu postnumret för din butik i Knoxville. 
+2. Du kan nu öka detaljnivån för Tennessee eller för en viss stad i Tennessee, eller så kan du expandera (se här för information om hur du **expanderar alla fält samtidigt** nedan). Låt oss nu fortsätta att öka detaljnivån ett fält i taget.  Välj **Knoxville, TN**. Din trädkarta visar nu postnumret för din butik i Knoxville. 
 
    ![trädkartan visar 37919](media/end-user-drill/power-bi-drill-down-one2.png)
 
@@ -127,18 +127,18 @@ En trädkarta som bara visar postnummer är inte användbar.  Så låt oss expan
 
     ![visar postnummer och butiksnamn](./media/end-user-drill/power-bi-expand1.png)
 
-2. För att se alla fyra hierarkinivåer av data för Tennesee väljer du pilen för att minska detaljnivån tills du når den andra nivån, **totalt antal enheter i år efter område och stad**, för din trädkarta. 
+2. För att se alla fyra hierarkinivåer av data för Tennessee väljer du pilen för att minska detaljnivån tills du når den andra nivån, **totalt antal enheter i år efter område och stad**, för din trädkarta. 
 
-    ![trädkarta som visar alla data för Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![trädkarta som visar alla data för Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Se till att ökad detaljnivå fortfarande är aktiverat ![ökad detaljnivå aktiverat](./media/end-user-drill/power-bi-drill-icon2.png), och välj ikonen *expandera ned* ![expandera ned-ikon](./media/end-user-drill/power-bi-drill-icon6.png). Nu visas lite mer detaljer i din trädkarta. Istället för att bara visa stad och stat, visas nu även postnumret. 
 
     ![dubbel granskningsikon](./media/end-user-drill/power-bi-expand-one3.png)
 
-4. Välj ikonen *expandera ned* en gång till för att visa alla fyra hierarkinivåer i detalj för Tennesee i din trädkarta. Hovra över en lövnod för att se ytterligare information.
+4. Välj ikonen *expandera ned* en gång till för att visa alla fyra hierarkinivåer i detalj för Tennessee i din trädkarta. Hovra över en lövnod för att se ytterligare information.
 
-   ![trädkarta som visar data för Tennesee](./media/end-user-drill/power-bi-expand-all.png)
+   ![trädkarta som visar data för Tennessee](./media/end-user-drill/power-bi-expand-all.png)
 
 ## <a name="drilling-filters-other-visuals"></a>Att gå in på detalj filtrerar andra visuella objekt
 När du arbetar i granskningsläget får du bestämma hur du vill gå nedåt och hur expansionen ska påverka de andra visualiseringarna på sidan. 

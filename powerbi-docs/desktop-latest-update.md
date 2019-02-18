@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 03a0e3cbd2a82c0d6741694c4389a8dcf4d207d9
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3372526dfd7190a90061f3ca83f483dc74a0555f
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234265"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225901"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Vad är nytt i den senaste uppdateringen av Power BI Desktop? 
 
-## <a name="december-2018-update-2655313501"></a>Uppdatering december 2018 (2.65.5313.501)
+## <a name="february-2019-update-2655313501"></a>Uppdatering februari 2019 (2.65.5313.501)
 
-Våra decemberuppdateringar kan mycket väl få riktigt smaskigt godis att snurra runt i huvudet på dig, eller i alla fall lockande datadrivna visuella objekt av det godiset. Så sätt er tillsammans runt brasan med en varm dryck och ta del av våra decemberuppdateringar. 
+Du kommer att älska februariuppdateringarna med nya datakopplingar, funktioner och analysförbättringar. Det är som med en chokladask, man vet aldrig vad man får... Men i februariuppdateringen är alla godbitar riktigt smaskiga. 
 
 Nu kan du [hämta den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
 
@@ -37,57 +37,46 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 
 ### <a name="reporting"></a>Rapportering
-
-* Smarta stödlinjer för justering av objekt på en sida  [[video]](https://youtu.be/AHNlkjRFdYI?t=11)  [[artikel]](power-bi-reports-filters-and-highlighting.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
-* Uppdateringar för ArcGIS Maps for Power BI  [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[artikel]](visuals/power-bi-visualization-arcgis.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
-* Fältlista med stöd för hjälpmedel [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[artikel]](desktop-report-view.md#copy-and-paste-between-reports)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
-* Ange tabbordning för objekt på en sida [[video]](https://youtu.be/AHNlkjRFdYI?t=643)   [[artikel]](power-bi-reports-filters-and-highlighting.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
-* Knappbeskrivningar för visuella knappobjekt [[video]](https://youtu.be/AHNlkjRFdYI?t=884)  [[artikel]](desktop-accessibility.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
-* Uppdaterade ikoner för *visuella interaktioner*  [[video]](https://youtu.be/AHNlkjRFdYI?t=974)  [[artikel]](desktop-accessibility.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
-
-
+* Uppdateringar av den nya filterpanelen (förhandsversion)  [[video]](https://youtu.be/dMD25wfElLg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#smartGuides) 
+* Korsmarkera på en enskild punkt i linjediagram  [[video]](https://youtu.be/dMD25wfElLg?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#line)
+* Automatiskt radbyte i rubriker [[video]](https://youtu.be/dMD25wfElLg?t=298)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#wordWrap)
+* Uppdatera standard visuell interaktion till korsfiltrering [[video]](https://youtu.be/dMD25wfElLg?t=358)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#crossFilter)
+* Avrundade hörn för visuella kantlinjer [[video]](https://youtu.be/dMD25wfElLg?t=526)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#roundedCorners)
 
 ### <a name="analytics"></a>Analys
-
-* Stöd för frågor och svar (förhandsversion) med live-anslutningar [[video]](https://youtu.be/AHNlkjRFdYI?t=1037)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
-
-
-### <a name="modeling"></a>Modellering
-
-* Uppdateringar för DAX-formelfältet [[video]](https://youtu.be/AHNlkjRFdYI?t=1132)  [[artikel]](desktop-modeling-view.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
-* Datavy med stöd för hjälpmedel [[video]](https://youtu.be/AHNlkjRFdYI?t=1253)  [[artikel]](desktop-composite-models.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
-
+* Det visuella objektet Key influencers (förhandsversion) [[video]](https://youtu.be/dMD25wfElLg?t=608)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#keyInfluencers) 
+* Insiktsfrågor i frågor och svar [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#insights) 
+* Automatiskt genererade föreslagna frågor för frågor och svar-utforskaren [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
+* Förbättrad Python- och R-skriptredigerare [[video]](https://youtu.be/dMD25wfElLg?t=1282)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
 
 ### <a name="custom-visuals"></a>Anpassade visuella objekt
-
-* Ett nytt anpassat visuellt objekt  [[video]](https://youtu.be/AHNlkjRFdYI?t=1370)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
+* Tio nya anpassade visuella objekt, ny funktion för anpassning av visuella objekt  [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataanslutning
 
-* AtScale-anslutningsapp (beta) [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#atScale) 
-* Oracle Essbase-anslutningsapp (beta)  [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)   [[artikel]](desktop-connect-pdf.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#essbase) 
-
-
-### <a name="data-preparation"></a>Förberedelse av data
-
-* Stöd för fuzzy-sammanslagning för de bästa Top N-matchningarna [[video]](https://youtu.be/AHNlkjRFdYI?t=1480)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fuzzyMerge) 
+* Microsoft Graph Security [[video]](https://youtu.be/dMD25wfElLg?t=2787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#microsoftGraph) 
+* Guidanz' BI-anslutningsapp för OBIEE  [[video]](https://youtu.be/dMD25wfElLg?t=2807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#biConnector) 
+* MarkLogic [[video]](https://youtu.be/dMD25wfElLg?t=2825)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#markLogic) 
+* Kronos Workforce Dimensions [[video]](https://youtu.be/dMD25wfElLg?t=2846)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#kronos) 
+* SurveyMonkey [[video]](https://youtu.be/dMD25wfElLg?t=2857)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#surveyMonkey) 
+* Qubole Presto [[video]](https://youtu.be/dMD25wfElLg?t=2872)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#qubole) 
+* Quick Base [[video]](https://youtu.be/dMD25wfElLg?t=2899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#quickBase) 
+* Sagra Emigo [[video]](https://youtu.be/dMD25wfElLg?t=2909)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#emigo) 
 
 
 ### <a name="other"></a>Övrigt
-* Stöd för högkontrast för alla fönster och rapportfot [[video]](https://youtu.be/AHNlkjRFdYI?t=1631)   [[artikel]](desktop-connect-pdf.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#highContrast) 
-* Uppdaterad dialogruta för kortkommandon [[video]](https://youtu.be/AHNlkjRFdYI?t=1654)   [[artikel]](desktop-accessibility.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#keyboardShortcuts) 
-
+* Förbättrade felmeddelanden för Live Connect och DirectQuery [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#error) 
 
 
 > [!NOTE]
 > Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
 
-Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
 
 
 I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du kan också se videor från blogginlägget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AHNlkjRFdYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

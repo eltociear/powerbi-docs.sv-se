@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 842d29978fa6a4a714b42b1665112661e0704357
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293751"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223707"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Skapa dynamiska referensrader för visuella objekt i Power BI-tjänsten
 
@@ -54,7 +54,7 @@ Följ dessa steg om du vill visa tillgängliga dynamiska referenslinjer för ett
    
    ![anpassa analys av medellinjen](media/service-analytics-pane/power-bi-average-line2.png)
 
-1. Observera siffran som visas bredvid objektet **Medellinje** i fönstret **Analytics**. Detta anger hur många dynamiska rader som finns för ditt visuella objekt samt deras typ. Om vi lägger till en **Konstant rad** som målet 9 för antal butiker kan du se att fönstret **Analytics** visar att vi nu också har en referenslinje för **Konstant rad** som tillämpas på den här visualiseringen.
+1. Observera siffran som visas bredvid objektet **Medellinje** i fönstret **Analytics**. Det anger hur många dynamiska linjer som det för närvarande finns i ditt visuella objekt, samt vilken typ de är. Om vi lägger till en **Konstant rad** som målet 9 för antal butiker kan du se att fönstret **Analytics** visar att vi nu också har en referenslinje för **Konstant rad** som tillämpas på den här visualiseringen.
    
    ![](media/service-analytics-pane/power-bi-reference-lines.png)
    

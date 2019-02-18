@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 67055f855ad2872a7cf175aba85aefae7945f670
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276317"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223500"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Fyllda kartor (koropleter) i Power BI
 En fylld karta använder skuggning, toning eller mönster för att visa hur ett värde skiljer sig åt proportionellt på en geografisk plats eller i en region.  Du kan snabbt visa dessa relativa skillnader med skuggning som sträcker sig från ljus (mindre ofta/lägre) till mörk (mer frekvent/fler).    
@@ -111,7 +111,7 @@ Om du markerar en plats i en koropletkarta korsfiltreras de övriga visualiserin
 
     ![Fliken Sentiment har valts](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Flytta och ändra storlek på visualiseringarna på sidan för att skapa mer utrymmeutrymme, och använd sedan CTRL + V för att klistra in koropletkartan från föregående rapport.
+4. Flytta och ändra storlek på visualiseringarna på sidan för att skapa mer utrymme, och använd sedan CTRL + V för att klistra in koropletkartan från föregående rapport.
 
    ![Koropletkarta som har lagts till på sentimentsidan](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 

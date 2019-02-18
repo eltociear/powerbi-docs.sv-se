@@ -1,5 +1,5 @@
 ## <a name="general"></a>Allmänt
-**Fråga:** Vad kallas själva Windows-tjänsten?  
+**Fråga:** Vad heter den faktiska Windows-tjänsten?  
 **Svar:** Gatewayen kallas för Lokal datagateway i Tjänster
 
 **Fråga:** Vilka är kraven för gatewayen?  
@@ -11,13 +11,13 @@
 **Fråga:** Behöver jag en gateway för molndatakällor som Azure SQL Database?  
 **Svar:** Nej! Tjänsten kommer att kunna ansluta till datakällan utan en gateway.
 
-**Fråga:** Finns det några inkommande anslutningar till gatewayen från molnet?  
+**Fråga:** Finns det några ingående anslutningar till gatewayen från molnet?  
 **Svar:** Nej. Gatewayen använder utgående anslutningar till Azure Service Bus.
 
 **Fråga:** Vad händer om jag blockerar utgående anslutningar? Vad måste jag i så fall öppna?  
 **Svar:** Se [listan med portar](../service-gateway-onprem.md#ports) och värdar som används av gatewayen.
 
-**Fråga:** Måste gatewayen vara installerad på samma dator som datakällan?  
+**Fråga:** Måste gatewayen installeras på samma dator som datakällan?  
 **Svar:** Nej. Gatewayen ansluter till datakällan med anslutningsinformationen som har angetts. Tänk på en gateway som ett klientprogram i detta avseende. Den behöver bara kunna ansluta till servernamnet som har angetts.
 
 **Fråga:** Vad är svarstiden för att köra frågor till en datakälla från gatewayen? Vilken är den bästa arkitekturen?  
@@ -28,7 +28,7 @@
 
 Du kan använda tredjepartsverktyget [Azure Speed Test-appen](http://azurespeedtest.azurewebsites.net/) till att mäta ditt dataflöde.
 
-**Fråga:** Kan gatewayen köra Windows-tjänsten med ett Azure Active Directory-konto?  
+**Fråga:** Kan gatewayens Windows-tjänst köras med ett Azure Active Directory-konto?  
 **Svar:** Nej. Windows-tjänsten måste ha ett giltigt Windows-konto. Som standard körs den med tjänst-SID *NT SERVICE\PBIEgwService*.
 
 **Fråga:** Hur skickas resultaten tillbaka till molnet?  
@@ -46,7 +46,7 @@ Du kan använda tredjepartsverktyget [Azure Speed Test-appen](http://azurespeedt
 **Fråga:** Behöver jag godkänna IP-listan för Azure Datacenter? Var hittar jag listan?  
 **Svar:** Om du blockerar utgående IP-trafik kan du behöva godkänna IP-listan för Azure Datacenter. För närvarande kommer gatewayen kommunicera med Azure Service Bus via IP-adressen, tillsammans med det fullständiga domännamnet. IP-listan för Azure Datacenter uppdateras varje vecka. Du kan ladda ned [IP-listan för Microsoft Azure Datacenter](https://www.microsoft.com/download/details.aspx?id=41653).
 
-```
+```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
     <value>Https</value>
 </setting>
@@ -56,10 +56,10 @@ Du kan använda tredjepartsverktyget [Azure Speed Test-appen](http://azurespeedt
 **Fråga:** Finns det några planer på att aktivera scenarier med hög tillgänglighet med gatewayen?  
 **Svar:** Ja, det här är en del av de framtida funktioner som Power BI-teamet arbetar med. Håll koll på [Power BI-bloggen](https://powerbi.microsoft.com/blog/) för ytterligare uppdateringar om funktionen.
 
-**Fråga:** Vilka alternativ är tillgängliga för haveriberedskap?  
-**Svar:** Du kan använda återställningsnyckeln till att återställa eller flytta en gateway. När du installerar gatewayen anger du återställningsnyckeln.
+**Fråga:** Vilka alternativ finns det för haveriberedskap?  
+**Svar:** Du kan använda återställningsnyckeln för att återställa eller flytta en gateway. När du installerar gatewayen anger du återställningsnyckeln.
 
-**Fråga:** Vad är fördelen med återställningsnyckeln?  
+**Fråga:** Vilka fördelar finns det med en återställningsnyckel?  
 **Svar:** Den gör det möjligt att migrera eller återställa gatewayinställningarna. Den används också till haveriberedskap.
 
 ## <a name="troubleshooting"></a>Felsökning

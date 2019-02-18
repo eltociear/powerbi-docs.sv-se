@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 84e2bc663a4e3912608279c7315bc494b3c9844a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296534"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216319"
 ---
 # <a name="modeling-view-in-power-bi-desktop-preview"></a>Modelleringsvyn i Power BI Desktop (förhandsversion)
 
@@ -24,7 +24,7 @@ Med **Modelleringsvyn** i **Power BI Desktop** kan du visa och arbeta med komple
 
 ## <a name="enabling-the-modeling-view-preview-feature"></a>Aktivera förhandsfunktionen Modelleringsvy
 
-Modelleringsvyfunktionen är i förhandsversion och måste aktiveras i **Power BI Desktop**. Aktivera modelleringsvyn genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsfunktioner** och därefter välja kryssrutan **Modelleringsvy** i som det visas i följande bild.
+Modelleringsvyfunktionen är i förhandsversion och måste aktiveras i **Power BI Desktop**. Aktivera modelleringsvyn genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsfunktioner** och därefter välja kryssrutan **Modelleringsvy** som på följande bild.
 
 ![Aktivera förhandsfunktionen Modelleringsvy i Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
 

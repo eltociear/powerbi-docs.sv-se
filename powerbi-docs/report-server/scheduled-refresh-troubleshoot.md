@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 3aa4047f5a4b0146c534a5734d8d13a42c46fe58
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e829d0cf174cc81148287ce1b25449246300606c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287817"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216710"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Felsöka schemalagd uppdatering i Power BI Report Server
 I den här artikeln beskrivs de resurser som är tillgängliga för att felsöka problem genom schemalagd uppdatering i Power BI-rapportservern.
@@ -25,7 +25,7 @@ I takt med att nya problem dyker upp, så uppdateras den här artikeln med infor
 Här följer några vanliga problem som du lär stöta på när du försöker schemalägga rapportuppdatering. 
 
 ### <a name="driver-related-problems"></a>Drivrutinsrelaterade problem
-Att ansluta till olika datakällor kan kräva drivrutiner från tredje part som måste installeras för att det ska gå att ansluta. Inte nog med att du skulle behöva installera dem på den dator som du använder Power BI Desktop på, utan du måste också kontrollera att drivrutinen har installerats på rapportservern.
+För att kunna ansluta till olika datakällor kanske du behöver installera drivrutiner från tredje part. Inte nog med att du skulle behöva installera dem på den dator som du använder Power BI Desktop på, utan du måste också kontrollera att drivrutinen har installerats på rapportservern.
 
 Drivrutinen kan förekomma i både 32- och 64-bitarsversion. Se till att du installerar 64-bitarsdrivrutinen, eftersom Power BI-rapportservern är 64-bitars.
 
@@ -60,7 +60,7 @@ Du kan använda följande inställningar för att påverka schemalagd uppdaterin
 
 **Inställningar i rsreportserver.config:**
 
-```
+```xml
 <Configuration>
     <Service>
         <PollingInterval>10</PollingInterval>
@@ -145,7 +145,7 @@ Körningsloggsposter för Power BI-rapporter skiljer sig från poster för andra
     * **SaveToCatalog**: när datamodellen sparas i katalogen.
 
 ## <a name="analysis-services"></a>Analysis Services
-Det kan finnas tilllfällen då du vill ändra Analysis Services när det gäller diagnosproblem eller när du vill justera minnesgränserna.
+Det kan finnas tillfällen då du vill ändra Analysis Services när det gäller diagnosproblem eller när du vill justera minnesgränserna.
 
 > [!IMPORTANT]
 > De här inställningarna återställs nästa gång du uppgraderar rapportservern. Se till att behålla en kopia av dina ändringar och återtillämpa dem om det behövs.

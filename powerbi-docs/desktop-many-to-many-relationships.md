@@ -1,53 +1,43 @@
 ---
-title: Många-till-många-relationer i Power BI Desktop (förhandsversion)
-description: Använd många-till-många-relationer i Power BI Desktop
+title: Många-till-många-relationer i Power BI Desktop
+description: Använda relationer med kardinaliteten många-många i Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 8d32ad24fd41c33d0b1e1f37f11be39292e82742
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291083"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225970"
 ---
-# <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Många-till-många-relationer i Power BI Desktop (förhandsversion)
+# <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relationer med kardinaliteten många-många i Power BI Desktop
 
-Med funktionen *många-till-många-relationer* i Power BI Desktop kan du koppla tabeller som använder en kardinalitet för *Många till många*. Du kan på ett enklare och mer intuitivt sätt skapa datamodeller som innehåller två eller flera datakällor. Funktionen *många-till-många-relation* är en del av de mer omfattande *sammansatta modeller*-funktionerna i Power BI Desktop.
+Med funktionen för *relationer med kardinaliteten många-många* i Power BI Desktop kan du koppla tabeller som använder kardinaliteten *Många till många*. Du kan på ett enklare och mer intuitivt sätt skapa datamodeller som innehåller två eller flera datakällor. Funktionen för *relationer med kardinaliteten många-många* är en del av de mer omfattande funktionerna för *sammansatta modeller* i Power BI Desktop.
 
 ![En många-till-många-relation i fönsterrutan ”Redigera relation”](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-Funktionen *många-till-många-relationer* i Power BI Desktop är en av tre relaterade funktioner:
+Funktionen för *relationer med kardinaliteten många-många* i Power BI Desktop är en av tre relaterade funktioner:
 
-* **Sammansatta modeller**: Gör så att en rapport kan ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Du hittar mer information i [Använd sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
+* **Sammansatta modeller**: Låter en rapport ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Du hittar mer information i [Använd sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
 
-* **Många-till-många-relationer**: Med *sammansatta modeller* kan du etablera *många-till-många-relationer* mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Denna funktion beskrivs ytterligare i den här artikeln.
+* **Relationer med kardinaliteten många-många**: Med *sammansatta modeller* kan du etablera *relationer med kardinaliteten många-många* mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Denna funktion beskrivs ytterligare i den här artikeln.
 
 * **Lagringsläge**: Nu kan du ange vilka visuella objekt som kräver en fråga till serverdelens datakällor. Visuella objekt som inte kräver en fråga importeras även om de är baserade på DirectQuery. Den här funktionen hjälper till att förbättra prestanda och minskar belastningen på serversidan. Tidigare startade även enkla visuella objekt såsom utsnitt frågor som skickades till serverdelskällor. Mer information finns i [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md).
 
-## <a name="enable-the-many-to-many-relationships-preview-feature"></a>Aktivera förhandsversionsfunktionen *många-till-många-relationer*
+## <a name="what-relationships-with-a-many-many-cardinality-solves"></a>Det här löser *relationer med kardinaliteten många-många*
 
-Funktion *många-till-många-relationer* måste aktiveras i Power BI Desktop. Om du vill aktivera sammansatta modeller väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ** > **Förhandsversionsfunktioner** och markerar kryssrutan **Sammansatta modeller**.
+Innan funktionen för *relationer med kardinaliteten många-många* blev tillgänglig definierades relationen mellan två tabeller i Power BI. Minst en av de tabellkolumner som ingick i relationen var tvungen att innehålla unika värden. Ofta innehöll dock inga kolumner unika värden. 
 
-![Rutan ”Förhandsversionsfunktioner”](media/desktop-composite-models/composite-models_02.png)
+Till exempel hade två tabeller kanske en kolumn med namnet *Land*, men värdena för *Land* var inte unika i endera tabell. Det var nödvändigt att skapa en lösning för att koppla sådana tabeller. En sådan lösning kan vara att i modellen introducera ytterligare tabeller med nödvändiga unika värden. Med funktionen för *relationer med kardinaliteten många-många* kan du koppla sådana tabeller direkt genom att använda en relation med kardinaliteten **Många-till-många**.  
 
-Du måste starta om Power BI Desktop för att aktivera funktionen.
-
-![Fönstret ”Funktionen kräver en omstart”](media/desktop-composite-models/composite-models_03.png)
-
-## <a name="what-many-to-many-relationships-solves"></a>Vad *många-till-många relationer* löser
-
-Innan funktionen *många-till-många-relationer* blev tillgänglig definierades relationen mellan två tabeller i Power BI. Minst en av de tabellkolumner som ingick i relationen var tvungen att innehålla unika värden. Ofta innehöll dock inga kolumner unika värden. 
-
-Till exempel hade två tabeller kanske en kolumn med namnet *Land*, men värdena för *Land* var inte unika i endera tabell. Det var nödvändigt att skapa en lösning för att koppla sådana tabeller. En sådan lösning kan vara att i modellen introducera ytterligare tabeller med nödvändiga unika värden. Med funktionen *många-till-många-relationer* kan du koppla sådana tabeller direkt genom att använda en relation med en kardinalitet för **Många till många**.  
-
-## <a name="use-many-to-many-relationships"></a>Använda *många-till-många-relationer*
+## <a name="use-relationships-with-a-many-many-cardinality"></a>Använda *relationer med kardinaliteten många-många*
 
 När du definierar en relation mellan två tabeller i Power BI måste du definiera kardinaliteten för relationen. Till exempel skulle relationen mellan *ProductSales* och *Produkt*&mdash;med hjälp av kolumnerna *ProductSales[ProductCode]* och *Product[ProductCode]*&mdash;definieras som *Många-1*. Vi definierar relationen på det här sättet eftersom det finns många försäljningar för varje produkt och kolumnen i tabellen *Product* *(ProductCode)* är unik. När du definierar en relationskardinalitet som *Många-1*, *1-Många* eller *1-1* verifierar Power BI den för att säkerställa att den kardinalitet som du väljer matchar faktiska data.
 
@@ -117,14 +107,11 @@ Om vi definierar den tabellen *Försäljning* som en kombination av alla *Delsta
 
 ![Tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-Som du kan skulle *TX*&mdash;med *Försäljning*-data men okända *Befolkning*-data&mdash;och *New York*&mdash;med kända *Befolkning*-data men inga *Försäljning*-data&mdash;inkluderas. Den här lösningen inte optimal och har många problem. I och med skapandet av många-till-många-relationerna åtgärdas problemen enligt beskrivningen i följande avsnitt.
+Som du kan skulle *TX*&mdash;med *Försäljning*-data men okända *Befolkning*-data&mdash;och *New York*&mdash;med kända *Befolkning*-data men inga *Försäljning*-data&mdash;inkluderas. Den här lösningen inte optimal och har många problem. I och med skapandet av relationer med kardinaliteten många-många åtgärdas problemen enligt beskrivningen i följande avsnitt.
 
-## <a name="use-many-to-many-relationships-instead-of-the-workaround"></a>Använd *många-till-många-relationer* i stället för den tillfälliga lösningen
+## <a name="use-relationships-with-a-many-many-cardinality-instead-of-the-workaround"></a>Använda *relationer med kardinaliteten många-många* i stället för en tillfällig lösning
 
 Från och med versionen för juli 2018 av Power BI Desktop kan du direkt relatera tabeller, till exempel dem som beskrevs ovan, utan att behöva använda liknande tillfälliga lösningar. Nu är det möjligt att ange relationskardinaliteten till *Många till många*. Den här inställningen anger att ingendera tabell innehåller unika värden. För sådana relationer kan du fortfarande kontrollera vilken tabell som filtrerar den andra tabellen eller tillämpa dubbelriktad filtrering där varje tabell filtrerar den andra tabellen.  
-
-> [!NOTE]
-> Möjligheten att skapa *många-till-många-relationer* är i förhandsversion. Den är i förhandsversion, men det går inte att publicera till de Power BI-tjänstmodeller som använder *många-till-många-relationer*. 
 
 I Power BI Desktop är kardinaliteten som standard *Många till många* när det fastställs att ingendera tabell innehåller unika värden för kolumnerna i relationen. I sådana fall visas en varning för att bekräfta att relationsinställningen är ditt avsedda beteende i stället för en oavsedd konsekvens av ett dataproblem. 
 
@@ -136,7 +123,7 @@ Den resulterande **Relationsvyn** skulle då visa den direkta många-till-många
 
 ![Tabellvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
-De största skillnaderna mellan *många-till-många-relationer* och de mer typiska *Många-1*-relationerna är följande:
+De största skillnaderna mellan *relationer med kardinaliteten många-många* och de mer typiska *Många-1*-relationerna är följande:
 
 * De värden som visas omfattar inte en tom rad som står för felmatchade rader i den andra tabellen. Inte heller står värdena för rader där den kolumn som används i relationen i den andra tabellen är null.
 * Det går inte att använda funktionen `RELATED()` eftersom mer än en rad kan vara relaterad.
@@ -153,7 +140,7 @@ Med föregående skillnader i åtanke bör du se till att de beräkningar som an
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
-Det finns en del begränsningar för den här versionen av *många-till-många-relationer* och sammansatta modeller.
+Det finns en del begränsningar för den här versionen av *relationer med kardinaliteten många-många* och sammansatta modeller.
 
 Följande (flerdimensionella) Live-anslutningskällor kan inte användas med sammansatta modeller:
 
@@ -165,7 +152,7 @@ Följande (flerdimensionella) Live-anslutningskällor kan inte användas med sam
 
 När du ansluter till dessa flerdimensionella källor med DirectQuery kan du inte ansluta till en annan DirectQuery-källa eller kombinera den med importerade data.
 
-De befintliga begränsningarna med att använda DirectQuery gäller fortfarande när du använder *många-till-många-relationer*. Många av dessa begränsningarna är nu per tabell, beroende på tabellens lagringsläge. En beräknad kolumn i en importerad tabell kan till exempel referera till andra tabeller, men en beräknad kolumn i en DirectQuery-tabell kan fortfarande bara referera till kolumner i samma tabell. Andra begränsningar gäller för modellen som helhet om någon av tabellerna inom modellen är DirectQuery. Till exempel är funktionerna QuickInsights och Frågor och svar är inte tillgängliga på en modell om någon av tabellerna i den har lagringsläget DirectQuery. 
+De befintliga begränsningarna med att använda DirectQuery gäller fortfarande när du använder *relationer med kardinaliteten många-många*. Många av dessa begränsningarna är nu per tabell, beroende på tabellens lagringsläge. En beräknad kolumn i en importerad tabell kan till exempel referera till andra tabeller, men en beräknad kolumn i en DirectQuery-tabell kan fortfarande bara referera till kolumner i samma tabell. Andra begränsningar gäller för modellen som helhet om någon av tabellerna inom modellen är DirectQuery. Till exempel är funktionerna QuickInsights och Frågor och svar är inte tillgängliga på en modell om någon av tabellerna i den har lagringsläget DirectQuery. 
 
 ## <a name="next-steps"></a>Nästa steg
 

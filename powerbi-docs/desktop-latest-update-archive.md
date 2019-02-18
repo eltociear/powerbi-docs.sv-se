@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/11/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 1672df71d1b555a3ffcbc9f72bab5053d33c6bc3
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 50dd529366a06cc46b2ca906bfc8987a3988cb72
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216894"
+ms.locfileid: "56226085"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -33,6 +33,80 @@ Länkarna bredvid varje uppdatering innebär följande:
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
+
+
+## <a name="december-2018-update-2655313501"></a>Uppdatering december 2018 (2.65.5313.501)
+
+Våra decemberuppdateringar gav en riktig sockerkick med alla godbitar, eller åtminstone en söt eftersmak av datadrivna visuella objekt. 
+
+Nu kan du [hämta den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
+
+Länkarna bredvid varje uppdatering innebär följande:
+
+* **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
+* I vissa funktioner finns en **[article]** som innehåller mer information.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+* Vissa funktioner är självförklarande och behöver varken artikel eller video.
+
+Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
+
+Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
+
+### <a name="reporting"></a>Rapportering
+
+* Smarta stödlinjer för justering av objekt på en sida  [[video]](https://youtu.be/AHNlkjRFdYI?t=11)  [[artikel]](power-bi-reports-filters-and-highlighting.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
+* Uppdateringar för ArcGIS Maps for Power BI  [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[artikel]](visuals/power-bi-visualization-arcgis.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
+* Fältlista med stöd för hjälpmedel [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[artikel]](desktop-report-view.md#copy-and-paste-between-reports)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
+* Ange tabbordning för objekt på en sida [[video]](https://youtu.be/AHNlkjRFdYI?t=643)   [[artikel]](power-bi-reports-filters-and-highlighting.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
+* Knappbeskrivningar för visuella knappobjekt [[video]](https://youtu.be/AHNlkjRFdYI?t=884)  [[artikel]](desktop-accessibility.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
+* Uppdaterade ikoner för *visuella interaktioner*  [[video]](https://youtu.be/AHNlkjRFdYI?t=974)  [[artikel]](desktop-accessibility.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
+
+
+
+### <a name="analytics"></a>Analys
+
+* Stöd för frågor och svar (förhandsversion) med live-anslutningar [[video]](https://youtu.be/AHNlkjRFdYI?t=1037)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
+
+
+### <a name="modeling"></a>Modellering
+
+* Uppdateringar för DAX-formelfältet [[video]](https://youtu.be/AHNlkjRFdYI?t=1132)  [[artikel]](desktop-modeling-view.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
+* Datavy med stöd för hjälpmedel [[video]](https://youtu.be/AHNlkjRFdYI?t=1253)  [[artikel]](desktop-composite-models.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
+
+
+### <a name="custom-visuals"></a>Anpassade visuella objekt
+
+* Ett nytt anpassat visuellt objekt  [[video]](https://youtu.be/AHNlkjRFdYI?t=1370)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
+
+### <a name="data-connectivity"></a>Dataanslutning
+
+* AtScale-anslutningsapp (beta) [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#atScale) 
+* Oracle Essbase-anslutningsapp (beta)  [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)   [[artikel]](desktop-connect-pdf.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#essbase) 
+
+
+### <a name="data-preparation"></a>Förberedelse av data
+
+* Stöd för fuzzy-sammanslagning för de bästa Top N-matchningarna [[video]](https://youtu.be/AHNlkjRFdYI?t=1480)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fuzzyMerge) 
+
+
+### <a name="other"></a>Övrigt
+* Stöd för högkontrast för alla fönster och rapportfot [[video]](https://youtu.be/AHNlkjRFdYI?t=1631)   [[artikel]](desktop-connect-pdf.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#highContrast) 
+* Uppdaterad dialogruta för kortkommandon [[video]](https://youtu.be/AHNlkjRFdYI?t=1654)   [[artikel]](desktop-accessibility.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#keyboardShortcuts) 
+
+
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du kan också se videor från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AHNlkjRFdYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="november-2018-update-2645285461"></a>Uppdatering november 2018 (2.64.5285.461)
 

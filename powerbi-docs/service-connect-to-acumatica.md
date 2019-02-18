@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c6f3e3cf3947abf9ead15fa6b91445c8aadd6420
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: aec463a4ce72f89f0cbbcf1bd42737605657a43c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008360"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215768"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Anslut till Acumatica med Power BI
 Med innehållspaketet Power BI Acumatica kan du snabbt få insikter om dina affärsmöjlighetsdata. Power BI hämtar dina data, inklusive affärsmöjligheter, konton och kunder och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data.
@@ -45,7 +45,7 @@ Anslut till [Acumatica-innehållspaketet](https://app.powerbi.com/getdata/servic
 5. Som autentiseringsmetod väljer du **Basic**. Ange ditt användarnamn och lösenord från ditt Acumatica-konto och klicka sedan på **logga In**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datauppsättning i det vänstra navigeringsfönstret. Nya objekt markeras med en gul asterisk \* som försvinner när de valts, om du väljer intrumentpanelen så visas en layout som liknar den nedan:
+6. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datauppsättning i det vänstra navigeringsfönstret. Nya objekt markeras med en gul asterisk \* som försvinner när de valts, om du väljer instrumentpanelen så visas en layout som liknar den nedan:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

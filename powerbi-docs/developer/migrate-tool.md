@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 41ab7f06da3038e48e2d1188edc8b91edeee8d4f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 76e6ebec14d5feefd319213c05fddb0839a55ccd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762362"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216388"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Migreringsverktyg för Power BI Embedded
 
@@ -207,7 +207,7 @@ Du måste stänga migreringsverktyget för att genomföra ändringen och sedan �
 
 I ovanstående exempel kunde inte en av de klonade rapporterna överföras eftersom en rapport med samma namn redan fanns. Om vi tittar på XML-filen för migreringsplanen ser vi följande.
 
-```
+```xml
 <ReportMigrationData>
     <PaaSWorkspaceCollectionName>SampleWorkspaceCollection</PaaSWorkspaceCollectionName>
     <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
@@ -229,7 +229,7 @@ I ovanstående exempel kunde inte en av de klonade rapporterna överföras efter
 
 Vi kan ändra namnet på SaaSTargetReportName för objektet som misslyckades.
 
-```
+```xml
 <SaaSTargetReportName>cloned2</SaaSTargetReportName>
 ```
 
@@ -245,7 +245,7 @@ När vi går tillbaka till Power BI ser vi att rapporterna och datauppsättninga
 
 Du kan ladda upp en lokal version av en Power BI Desktop-fil. Du måste stänga verktyget, redigera XML-filen och placera den fullständiga sökvägen till din lokala PBIX i egenskapen **PbixPath**.
 
-```
+```xml
 <PbixPath>[Full Path to PBIX file]</PbixPath>
 ```
 
@@ -255,9 +255,9 @@ När du har redigerat XML-filen öppnar du planen igen med migrationsverktyget o
 
 ### <a name="directquery-reports"></a>DirectQuery-rapporter
 
-Du måste uppdatera anslutningssträngen för DirectQuery-rapporter. Detta kan göras i *powerbi.com*. Du kan också programmera en fråga för anslutningssträngen från Power BI Embedded (Paas). Ett exempel på detta är [Extrahera DirectQuery anslutningssträngen från PaaS rapport](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+Du måste uppdatera anslutningssträngen för DirectQuery-rapporter. Detta kan göras i *powerbi.com*. Du kan också programmera en fråga för anslutningssträngen från Power BI Embedded (PaaS). Ett exempel på detta är [Extrahera DirectQuery anslutningssträngen från PaaS rapport](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
-Du kan uppdatera anslutningssträngen för datamängden i Power BI-tjänst (Saas) och ange autentiseringsuppgifter för datakällan. Du kan titta på följande exempel för att se hur du gör detta.
+Du kan uppdatera anslutningssträngen för datamängden i Power BI-tjänst (SaaS) och ange autentiseringsuppgifter för datakällan. Du kan titta på följande exempel för att se hur du gör detta.
 
 * [Uppdatera anslutningssträngen för DirectQuery i SaaS-arbetsytan](migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
 * [Ange autentiseringsuppgifterna för DirectQuery i SaaS-arbetsytan](migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)

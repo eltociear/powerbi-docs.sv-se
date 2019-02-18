@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5eab760a3bfbb590a1a6242984aa1be88064409f
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: fcfbf4fb7be34739364fba176b28ea42934d5562
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54323961"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216043"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kör Python-skript i Power BI Desktop
 Du kan köra Python-skript direkt i **Power BI Desktop** och importera de resulterande datauppsättningarna i en Power BI Desktop-datamodell.

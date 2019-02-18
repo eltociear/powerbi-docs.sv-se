@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a15707a36a34e083458da5fa407034e33dd570c0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1126a2cbdac7e6ed1b465d2d0ba881ae2b4f5338
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284160"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56226039"
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
-Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan antingen *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller så kan du ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner, däribland följande avsnitt:
+Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner:
 
 * Olika anslutningsalternativ för DirectQuery
 * Riktlinjer för när du bör använda DirectQuery i stället för import
@@ -27,8 +27,8 @@ Du kan ansluta till alla typer av olika datakällor när du använder **Power BI
 
 Bästa praxis när det gäller om man ska använda import eller DirectQuery är i korthet följande:
 
-* Du bör **importera** data till Power BI närhelst det är möjligt. Då utnyttjar du den högpresterande frågemotorn i Power BI och du får tillgång till en mycket interaktiv och funktionsrik hantering av dina data.
-* Om det av någon anledning inte fungerar för dig att importera data, så bör du använda **DirectQuery**. Om dina data t.ex. ändras ofta, och rapporterna måste spegla senaste data, då kan DirectQuery vara det bästa alternativet. Men att använda DirectQuery är oftast bara möjligt när den underliggande datakällan kan tillhandahålla interaktiva frågor (mindre än 5 sekunder) för vanliga mängdfrågor, och kan hantera den frågebelastning som genereras. Du bör dessutom noga läsa igenom listan över de begränsningar som omger användningen av DirectQuery, och på så vis försäkra dig om att du kan uppfylla dina mål.
+* Du bör **importera** data till Power BI närhelst det är möjligt. Med en import utnyttjar du den högpresterande frågemotorn i Power BI och du får tillgång till en mycket interaktiv och funktionsrik hantering av dina data.
+* Om det av någon anledning inte fungerar för dig att importera data, så bör du använda **DirectQuery**. Om dina data t.ex. ändras ofta, och rapporterna måste spegla senaste data, då kan DirectQuery vara det bästa alternativet. Men att använda DirectQuery är oftast bara möjligt när den underliggande datakällan kan tillhandahålla interaktiva frågor (mindre än 5 sekunder) för vanliga mängdfrågor, och kan hantera den frågebelastning som genereras. Du bör dessutom noga läsa igenom listan över de begränsningar som omger användningen av DirectQuery.
 
 Den uppsättning funktioner som Power BI erbjuder för båda anslutningslägena – import respektive DirectQuery – kommer att utvecklas med tiden. Detta gäller bl.a. större flexibilitet vid användning av importerade data, så att import kan användas i fler fall, och att några av nackdelarna med att använda DirectQuery kan elimineras. Oavsett dessa förbättringar så är den underliggande datakällans prestanda alltid av högsta vikt när du använder DirectQuery. Om den underliggande datakällan är långsam så är det inte lämpligt att använda DirectQuery.
 
@@ -37,7 +37,7 @@ Det här avsnittet beskriver DirectQuery med Power BI och inte SQL Server Analys
 Den här artikeln fokuserar på det rekommenderat arbetsflöde för DirectQuery, där rapporten skapas i **Power BI Desktop**, men tar även upp direktanslutning i **Power BI-tjänsten**.
 
 ## <a name="power-bi-connectivity-modes"></a>Power BI-anslutningslägen
-Power BI ansluter till ett mycket stort antal olika datakällor, bl.a. följande:
+Power BI ansluter till ett stort antal olika datakällor, bl.a. följande:
 
 * Online-tjänster (Salesforce, Dynamics 365 m.fl.)
 * Databaser (SQL Server, Access, Amazon Redshift m.fl.)
@@ -55,7 +55,7 @@ När du använder **Hämta data** i **Power BI Desktop** för att ansluta till e
 
 * När du väljer **Hämta data** så definierar var och en av de tabeller du har valt en fråga som returnerar en uppsättning data. Du kan redigera dessa frågor innan du hämtar data, t.ex. genom att använda filter, aggregera data eller koppla ihop olika tabeller.
 * Vid inläsningen importeras alla de data som definieras av frågorna till Power BI-cachen.
-* När du skapar ett visuellt objekt i **Power BI Desktop** skickas frågor till dessa importerade data. Power BI-arkivet garanterar att frågorna ställs mycket snabbt, så därför återspeglas alla ändringar i det visuella objektet direkt.
+* När du skapar ett visuellt objekt i **Power BI Desktop** skickas frågor till dessa importerade data. Power BI-arkivet garanterar att frågorna ställs snabbt, så därför återspeglas alla ändringar i det visuella objektet direkt.
 * Eventuella ändringar i underliggande data visas inte i det visuella objektet. Du måste *uppdatera*, så att data importeras på nytt.
 * När du publicerar rapporten (.pbix-filen) i **Power BI-tjänsten**, så skapas en datauppsättning som överförs till Power BI-tjänsten.  Importerade data inkluderas i den datauppsättningen. Efter det är det möjligt att schemalägga uppdateringar av dessa data, t.ex. för att återimportera informationen varje dag. Beroende på den ursprungliga datakällans plats kan det vara nödvändigt att konfigurera en lokal datagateway.
 * När du öppnar en befintlig rapport i **Power BI-tjänsten**, eller skapar en ny rapport, så frågas dessa data igen, vilket garanterar interaktivitet.
@@ -69,7 +69,7 @@ När du använder **Hämta data** i **Power BI Desktop** för att ansluta till e
 * Eventuella ändringar i underliggande data visas inte direkt i det visuella objektet. Det är ändå nödvändigt att uppdatera, och då skickas de nödvändiga frågorna igen för varje visuellt objekt, och detta uppdateras när så är nödvändigt.
 * När rapporten publiceras i **Power BI-tjänsten** resulterar det återigen i en datauppsättning i Power BI-tjänsten, precis som vid import. *Inga data* ingår dock med den datauppsättningen.
 * När du öppnar en befintlig rapport i **Power BI-tjänsten**, eller skapar en ny, frågas återigen den underliggande datakällan, så att nödvändiga data kan hämtas. Beroende på den ursprungliga datakällans plats kan det vara nödvändigt att konfigurera en lokal datagateway, som kan behövas i importläge om data uppdateras.
-* Visuella objekt, eller hela rapportsidor, kan fästas på instrumentpaneler. För att säkerställa att en instrumentpanel öppnas snabbt, så uppdateras panelerna automatiskt enligt ett fastlagt schema (t.ex. varje timma). Du kan kontrollera den här uppdateringens frekvens, så att den reflekterar hur ofta data ändras, och därför att det är viktigt att se den allra senaste informationen. När du öppnar en instrumentpanel, avspeglar alltså panelerna data som de såg ut vid tiden för den senaste uppdateringen, och inte nödvändigtvis de allra senaste ändringarna i den underliggande datakällan. Du kan alltid uppdatera en öppen instrumentpanel så att den hålls uppdaterad.    
+* Visuella objekt, eller hela rapportsidor, kan fästas på instrumentpaneler. För att säkerställa att en instrumentpanel öppnas snabbt, så uppdateras panelerna automatiskt enligt ett fastlagt schema (t.ex. varje timma). Du kan kontrollera den här uppdateringens frekvens, så att den reflekterar hur ofta data ändras, och därför att det är viktigt att se den senaste informationen. När du öppnar en instrumentpanel, avspeglar alltså panelerna data som de såg ut vid tiden för den senaste uppdateringen, och inte nödvändigtvis de allra senaste ändringarna i den underliggande datakällan. Du kan alltid uppdatera en öppen instrumentpanel så att den hålls uppdaterad.    
 
 ### <a name="live-connections"></a>Live-anslutningar
 När du ansluter till **SQL Server Analysis Services** (SSAS) kan du välja att importera data från, eller live-ansluta till, den valda datamodellen. Om du väljer **importera** så definierar du en fråga för den externa SSAS-källan, och data importeras som vanligt. Om du väljer **live-anslutning** så definieras inte någon fråga, och hela den externa modellen visas i fältlistan. Om du väljer **DirectQuery**, när visuella objekt skapas, så skickas frågorna till den externa SSAS-källan. Till skillnad från vad som är fallet med DirectQuery, så skapas dock ingen ny *modell*. Det är med andra ord inte möjligt att definiera nya beräknade kolumner, hierarkier, relationer osv. Istället ansluter du helt enkelt direkt till den externa SSAS-modellen.
@@ -106,7 +106,7 @@ Så sammanfattningsvis, givet de aktuella funktionerna i DirectQuery i Power BI,
 * Begränsningar för datasuveränitet gäller
 * Källan är en flerdimensionell källa som innehåller mått (t.ex. SAP BW)
 
-Observera att informationen i listan ovan gäller för användning av enbart Power BI. Det finns alltid möjlighet att använda en extern modell för SQL Server Analysis Services (eller Azure Analysis Services) för att importera data och sedan använda Power BI för att ansluta till den modellen. Denna metod kräver visserligen ytterligare kunskaper, men ger den ger större flexibilitet. Det går t.ex. att importera mycket större datamängder och det finns ingen begränsning för hur ofta data kan uppdateras.
+Informationen i listan ovan gäller för användning av enbart Power BI. Det finns alltid möjlighet att använda en extern modell för SQL Server Analysis Services (eller Azure Analysis Services) för att importera data och sedan använda Power BI för att ansluta till den modellen. Denna metod kräver visserligen ytterligare kunskaper, men ger den ger större flexibilitet. Det går t.ex. att importera mycket större datamängder och det finns ingen begränsning för hur ofta data kan uppdateras.
 
 ## <a name="implications-of-using-directquery"></a>Effekter av att använda DirectQuery
 Att använda **DirectQuery** kan ha potentiellt negativa effekter, så som beskrivs i det här avsnittet. Vissa av dessa begränsningar kan variera beroende på vilken källa som används. Detta påtalas där så är fallet, och de källor som avviker markant behandlas i separata avsnitt.  
@@ -139,7 +139,7 @@ När du använder **DirectQuery** kan många av dessa modellberikningar fortfara
 * **Ingen inbyggd datumhierarki:** När du importerar data får varje datum/datetime-kolumn som standard en tillgänglig inbyggd datumhierarki. Om du t.ex. importerar en tabell med försäljningsorder, som innehåller kolumnen OrderDate, och sedan använder OrderDate i ett visuellt objekt, så kan du välja lämplig nivå (år, månad, dag) att använda. Denna inbyggda datumhierarki är inte tillgänglig när du använder DirectQuery-läge. Observera dock att om det finns en tillgänglig datumtabell i den underliggande källan (som är vanligt i många datalager), så kan sedan DAX-tidsinformationsfunktionerna användas som vanligt.
 * **Begränsningar i beräknade kolumner:** Beräknade kolumner är begränsade till att bara kunna hänvisa till värden på andra kolumner i samma tabell, utan att några aggregeringsfunktioner används. De tillåtna DAX-skalärfunktionerna (som t.ex. LEFT()) begränsas dessutom till dem som bara kan skickas till den underliggande källan, och varierar därför beroende på källans exakta funktioner. Funktioner som inte stöds listas inte vid automatisk komplettering när du redigerar DAX för en beräknad kolumn, och de skulle resultera i ett fel om de användes.
 * **Inget stöd för överordnade-underordnade DAX-funktioner:** I DirectQuery-modellen går det inte att använda de DAX-PATH()-funktioner, som normalt hanterar strukturer med överordnad-undererordnad (som i t.ex. kontoplaner eller organisationshierarkier).
-* **Måttbegränsningar (standard):** Som standard är de DAX-funktioner och -uttryck som kan användas i mått begränsade. Återigen så begränsar automatisk komplettering de funktioner som listas, och ett fel inträffar om en ogiltig funktion eller uttryck används. Skälet är helt enkelt att säkerställa att åtgärderna som standard är begränsade till enkla åtgärder som på egen hand sannolikt inte kan orsaka några prestandaproblem. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **DirectQuery**, följt av alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
+* **Måttbegränsningar (standard):** Som standard är de DAX-funktioner och -uttryck som kan användas i mått begränsade. Återigen så begränsar automatisk komplettering de funktioner som listas, och ett fel inträffar om en ogiltig funktion eller uttryck används. Skälet är helt enkelt att säkerställa att åtgärderna som standard är begränsade till enkla åtgärder som på egen hand sannolikt inte kan orsaka några prestandaproblem. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **DirectQuery**, följt av alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i långsamma frågor till serverdelskällan i DirectQuery-läge.
   
   * Exempel:
     
@@ -162,7 +162,7 @@ När du använder **DirectQuery** kan många av dessa modellberikningar fortfara
 ### <a name="reporting-limitations"></a>Rapporteringsbegränsningar
 Nästan alla rapporteringsfunktioner stöds för DirectQuery-modeller. Så länge som den underliggande källan erbjuder en lämplig prestandanivå kan samma uppsättning visualiseringar användas. Det finns dock några viktiga begränsningar i några av de funktioner som erbjuds i **Power BI-tjänsten** efter det att en rapport har publicerats, så som beskrivs i följande punkter:
 
-* **Snabbinsikter stöds inte:** Power BI-snabbinsikter söker snabbt igenom olika delmängder av din datauppsättning samtidigt som en uppsättning avancerade algoritmer används för att identifiera potentiellt intressanta insikter. På grund av de höga prestandakraven är den här funktionen tillgänglig för datauppsättningar som använder DirectQuery.
+* **Snabbinsikter stöds inte:** Snabbinsikter i Power BI söker snabbt igenom olika delmängder av din datauppsättning samtidigt som en uppsättning avancerade algoritmer används för att identifiera potentiellt intressanta insikter. På grund av de höga prestandakraven är den här funktionen tillgänglig för datauppsättningar som använder DirectQuery.
 * **Frågor och svar stöds inte:** Power BI frågor och svar låter dig utforska dina data med hjälp av intuitiva, naturliga språkfunktioner och få svar i form av tabeller och diagram. Funktionen stöds för närvarande dock inte för datauppsättningar som använder DirectQuery.
 * **Utforska i Excel kommer troligen att resultera i sämre prestanda:** Det är möjligt att utforska dina data med hjälp av funktionen Utforska i Excel på en datauppsättning. Detta gör det möjligt att skapa Pivot-tabeller och Pivot-diagram i Excel. Även om den här funktionen stöds för datauppsättningar som använder DirectQuery, så prestanda vanligtvis långsammare jämfört med om du skapar visuella objekt i Power BI. Därför, om det är viktigt för dig att använda Excel i dina scenarier, bör du ta detta i beaktande i ditt beslut att använda DirectQuery.
 
@@ -208,7 +208,7 @@ Några andra allmänna effekter av att använda **DirectQuery** är följande:
 * **Begränsning på en miljon returnerade rader per fråga:** Det finns en fast gräns på en miljon rader när det gäller hur många rader som kan returneras för en enskild fråga till den underliggande datakällan. Denna begränsning har vanligtvis inga praktiska konsekvenser och de visuella objekten visar inte så många punkter. Gränsen kan dock nås i fall där Power BI inte fullständigt optimerar de frågor som skickas, vilket ger upphov till mellanfrågor som överskrider gränsen. Det kan också inträffa medan ett visuellt objekt skapas, på vägen till ett mer rimligt sluttillstånd. Om t.ex. både Customer och TotalSalesQuantity ingår, så skulle den här gränsen uppnås om det finns mer än 1 miljon kunder innan några filter tillämpats.
   
   Det fel som skulle returneras skulle vara ”Resultatuppsättningen till en fråga riktad till en extern datakälla har överskridit det högsta tillåtna storleken på 1000000 rader.”
-* **Det går inte att ändra från importläge till DirectQuery-läge:**  Observera att det vanligtvis går att växla en modell från DirectQuery-läge till importläge, vilket innebär att alla nödvändiga data måste importeras. Det går heller inte att växla tillbaka (främst på grund av en uppsättning funktioner som inte stöds i DirectQuery-läge). DirectQuery-modeller via flerdimensionella källor som SAP BW kan heller inte växlas från DirectQuery till import, eftersom de hanterar externa källor på två helt olika sätt.
+* **Det går inte att ändra från importläge till DirectQuery-läge:**  Eftersom det går att växla en modell från DirectQuery-läge till importläge måste alla nödvändiga data importeras. Det går heller inte att växla tillbaka (främst på grund av en uppsättning funktioner som inte stöds i DirectQuery-läge). DirectQuery-modeller via flerdimensionella källor som SAP BW kan heller inte växlas från DirectQuery till import, eftersom de hanterar externa källor på två helt olika sätt.
 
 ## <a name="directquery-in-the-power-bi-service"></a>DirectQuery i Power BI-tjänsten
 Alla datakällor som stöds från **Power BI Desktop**. Vissa datakällor är också tillgängliga direkt från **Power BI-tjänsten**. Ett företag kan t.ex. använda Power BI för att ansluta till sina data i Salesforce och omedelbart får en instrumentpanel, utan att behöva använda **Power BI Desktop**.
@@ -218,15 +218,15 @@ Endast två av de DirectQuery-aktiverade källorna är tillgängliga direkt i tj
 * Spark
 * Azure SQL Data Warehouse
 
-Vi rekommenderar dock starkt att all användning av **DirectQuery** med dessa två källor börjar från **Power BI Desktop**. Anledningen är att när anslutningen görs i **Power BI-tjänsten**, så gäller många viktiga begränsningar, vilket innebär att om startpunkten var enkelt (med början i Power BI-tjänsten), så finns det begränsningar när det gäller att förbättra den resulterande rapporten. (Det är t.ex. inte möjligt att därefter skapa några beräkningar eller använda många analytiska funktioner, eller ens att uppdatera metadata så att de återspeglar eventuella ändringar i det underliggande schemat).   
+Vi rekommenderar dock att all användning av **DirectQuery** med dessa två källor börjar från **Power BI Desktop**. Anledningen är att när anslutningen görs i **Power BI-tjänsten**, så gäller många viktiga begränsningar, vilket innebär att om startpunkten var enkelt (med början i Power BI-tjänsten), så finns det begränsningar när det gäller att förbättra den resulterande rapporten. (Det är t.ex. inte möjligt att därefter skapa några beräkningar eller använda många analytiska funktioner, eller ens att uppdatera metadata så att de återspeglar eventuella ändringar i det underliggande schemat).   
 
 ## <a name="guidance-for-using-directquery-successfully"></a>Riktlinjer för att använda DirectQuery
 Om du tänker använda **DirectQuery**, så kan du ha hjälp av det här avsnittet som ger vägledning på hög nivå om hur du kan göra detta med framgång. Riktlinjerna i det här avsnittet har härletts utifrån den användning av DirectQuery som har beskrivits i den här artikeln.
 
 ### <a name="backend-data-source-performance"></a>Prestanda för ursprungsdatakälla
-Vi rekommenderar starkt att du verifierar att enkla visuella objekt kan uppdateras inom rimlig tid. Detta innebär att uppdateringen bör ske inom 5 sekunder för att det ska kännas rimligt. Och en sak som är säker är att om uppdateringen av de visuella objekten ter mer än 30 sekunder, så är det mycket troligt att ytterligare problem kommer att uppstå i samband med publiceringen av rapporten, vilket gör att lösningen inte fungerar.
+Du bör verifiera att enkla visuella objekt kan uppdateras inom rimlig tid, vilket bör vara inom fem sekunder för att det ska kännas rimligt. Och en sak som är säker är att om uppdateringen av de visuella objekten ter mer än 30 sekunder, så är det mycket troligt att ytterligare problem kommer att uppstå i samband med publiceringen av rapporten, vilket gör att lösningen inte fungerar.
 
-Om frågorna är långsamma, så är den första punkten att granska de frågor som skickas till den underliggande källan, och orsaken till den frågeprestanda som observeras. Det här avsnittet täcker inte in det breda utbud av bästa praxis för databasoptimeringar för hela uppsättningen av potentiella underliggande källor, men det gäller för de standarddatabasmetoder som gäller i de flesta situationer:
+Om frågorna är långsamma, så är den första punkten att granska de frågor som skickas till den underliggande källan, och orsaken till den frågeprestanda som observeras. Den här artikeln täcker inte in det breda utbud av bästa praxis för databasoptimeringar för hela uppsättningen av potentiella underliggande källor, men den gäller för de standarddatabasmetoder som gäller i de flesta situationer:
 
 * Relationer som baseras på heltalskolumner har vanligtvis bättre prestanda än kopplingar till kolumner med andra datatyper
 * Rätt index ska skapas, vilket vanligtvis innebär att kolumnlagringsindex används i de källor som stöds (t.ex. SQL Server).
@@ -236,8 +236,8 @@ Om frågorna är långsamma, så är den första punkten att granska de frågor 
 Tänk på följande när du definierar modellen:
 
 * **Undvik komplexa frågor i Frågeredigeraren.** Den fråga som definieras i frågeredigeraren kommer att översättas till en enskild SQL-fråga som sedan kommer att inkluderas för varje fråga som skickas till tabellen. Om frågan är komplex kan det resultera i prestandaproblem för varje fråga som skickas. Du kan hämta den faktiska SQL-frågan för en uppsättning steg genom att markera det sista steget i frågeredigeraren och välja *Visa inbyggd fråga* på snabbmenyn.
-* **Håll det enkelt.** Åtminstone till en början rekommenderar vi att du begränsar åtgärderna till enkla aggregeringar. Om de fungerar på ett tillfredsställande sätt, så kan mer komplexa åtgärder definieras, samtidigt som man är uppmärksam på prestanda för var och en.
-* **Undvik relationer för beräknade kolumner.** Detta är särskilt relevant för databaser där det är nödvändigt att genomföra flera flerkolumnskopplingar. Power BI tillåter inte idag att en relation baseras på flera kolumner som FK/PK. Den vanliga lösningen är att man sammanfogar kolumnerna med hjälp av en beräknad kolumn, och baserar kopplingen på den. Även om den här lösningen är rimlig för importerade data, som i fallet med **DirectQuery**, så resulterar den i en koppling till ett uttryck som ofta förhindrar att index används, vilket leder till dåliga prestanda. Det enda sättet att ta sig förbi det här är att materialisera flera kolumner i en enda kolumn i den underliggande databasen.
+* **Håll det enkelt.** Åtminstone till en början rekommenderar vi att du begränsar åtgärderna till enkla aggregeringar. Om åtgärderna fungerar på ett tillfredsställande sätt, så kan mer komplexa åtgärder definieras, samtidigt som man är uppmärksam på prestanda för var och en.
+* **Undvik relationer för beräknade kolumner.** Detta är relevant för databaser där det är nödvändigt att genomföra flera flerkolumnskopplingar. Power BI tillåter inte idag att en relation baseras på flera kolumner som FK/PK. Den vanliga lösningen är att man sammanfogar kolumnerna med hjälp av en beräknad kolumn, och baserar kopplingen på den. Även om den här lösningen är rimlig för importerade data, som i fallet med **DirectQuery**, så resulterar den i en koppling till ett uttryck som ofta förhindrar att index används, vilket leder till dåliga prestanda. Det enda sättet att ta sig förbi det här är att materialisera flera kolumner i en enda kolumn i den underliggande databasen.
 * **Undvik relationer med kolumner med datatypen uniqueidentifier.** Power BI stöder inte datatypen uniqueidentifier internt. Att definiera en relation mellan kolumner med datatypen uniqueidentifier resulterar därför i en fråga med en koppling som inbegriper en typkonvertering. Även detta leder ofta till dåliga prestanda. Inte förrän det här fallet specifikt har optimerats är den enda lösningen att materialisera kolumner av en annan typ i den underliggande databasen.
 * **Dölj *till*-kolumnen i relationer.** *Till*-kolumnen i relationer (vanligtvis den primära nyckeln i *till*-tabellen) ska vara dold, så att den inte visas i listan och därför inte kan användas i visuella objekt. Ofta är de kolumner som baseras på relationer i själva verket *systemkolumner* (t.ex. surrogatnycklar i ett informationslager), och att dölja sådana kolumner är en bra idé. Om kolumnen har betydelse, så använd då en beräknad kolumn som är synlig, och som har ett enkelt uttryck av att vara lika med den primära nyckeln. Till exempel:
   
@@ -298,6 +298,20 @@ Utöver listan över förslag ovan, så tänk på att följande rapportfunktione
 
 * **Överväg att inaktivera summor på visuella objekt:** Som standard visar tabeller och matriser summor och delsummor. I många fall skickas separata frågor till underliggande källa för att hämta värden för dessa summor. Detta gäller när du använder *DistinctCount*-aggregering, eller i alla fall när du använder DirectQuery över SAP BW eller SAP HANA. Sådana summor ska inaktiveras (med hjälp av fönstret **Format**) om de inte krävs. 
 
+### <a name="maximum-number-of-connections-option-for-directquery"></a>Alternativ för maximalt antal anslutningar för DirectQuery
+
+Du kan ange maximalt antal anslutningar som DirectQuery ska öppna för varje underliggande datakälla och därmed styra antalet frågor som skickas samtidigt till varje datakälla. 
+
+Sedan öppnas det maximala antalet samtidiga anslutningar som standard av DirectQuery. Du kan ändra detta för den aktuella filen i **Power BI Desktop** genom att gå till **Arkiv > Alternativ och inställningar > Alternativ** och sedan välja **DirectQuery** i avsnittet **Aktuell fil** i fönstret till vänster. 
+
+![Aktivera maximalt antal DirectQuery-anslutningar](media/desktop-directquery-about/directquery-about_05b.png)
+
+Inställningen aktiveras endast när det finns minst en DirectQuery-källa i den aktuella rapporten. Värdet gäller för alla DirectQuery-källor och för alla nya DirectQuery-källor som lagts till i samma rapport.
+
+Genom att öka värdet för **maximalt antal anslutningar** kan du säkerställa att fler frågor (upp till det maximala antal som angetts) kan skickas till den underliggande datakällan, vilket kan vara användbart när flera visuella objekt finns på en enskild sida eller många användare använder en rapport samtidigt. När det maximala antalet anslutningar har nåtts placeras ytterligare frågor i kö tills en anslutning blir tillgänglig. En ökning av gränsvärdet resulterar i ökad belastning på den underliggande källan. Därför är det inte säkert att inställningen förbättrar den allmänna prestandan.
+
+När en rapport publiceras beror det maximala antalet samtidiga frågor som skickas till den underliggande datakällan även på fasta gränser, som beror på målmiljön som rapporten publiceras till. Olika miljöer (till exempel Power BI, Power BI Premium eller Power BI-rapportserver) kan tillämpa olika gränser.
+
 ### <a name="diagnosing-performance-issues"></a>Diagnostisera prestandaproblem
 I det här avsnittet beskrivs hur du diagnostiserar prestandaproblem eller hämtar mer detaljerad information så att du kan optimera rapporterna.
 
@@ -349,7 +363,7 @@ När du har hämtat och installerat **SQL Server Management Studio**, så kör *
 2. Ange sökvägen till den för tillfället öppna Power BI-sessionens spårningsfil, t.ex.:
    
          C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data
-3. Öppna FilghtRecorderCurrent.trc
+3. Öppna FlightRecorderCurrent.trc
 
 Alla händelser från den aktuella sessionen visas. Ett kommenterat exempel visas nedan, där olika grupper av händelser har markerats. Varje grupp har följande:
 
@@ -367,14 +381,14 @@ Andra kolumner av intresse är följande:
 * **Duration:** Varaktigheten i millisekunder som krävs för att köra DAX- eller SQL-frågan.
 * **Error:** Anger om ett fel har uppstått (i vilket fall händelsen även visas i rött).
 
-Observera att några av de mindre intressanta kolumnerna har gjorts smalare i bilden ovan, så att de intressanta kolumnerna ska synas tydligare.
+Några av de mindre intressanta kolumnerna har gjorts smalare i bilden ovan, så att de intressanta kolumnerna ska synas tydligare.
 
 Den rekommenderade metoden för att samla in en spårning för att diagnosticera potentiella prestandaproblem är följande:
 
 * Öppna endast en **Power BI Desktop**-session (så att du undviker eventuell förvirring genom att ha flera arbetsytemappar)
 * Genomför en uppsättning intressanta åtgärder i **Power BI Desktop**. Inkludera några ytterligare åtgärder utöver dessa, så att du kan vara säker på att de intressanta händelserna hamnar i spårningsfilen.
 * Öppna **SQL Server Profiler** och undersök spåret, så som beskrivits ovan. Kom ihåg att spårningsfilen tas bort när du stänger **Power BI Desktop**. Ytterligare åtgärder i Power BI Desktop visas heller inte omedelbart – spårningsfilen ska vara stängd och öppnas på nytt om du vill se de nya händelserna.
-* Om du håller de enskilda sessionerna rimligt små (tio sekunders åtgärder, snarare än hundratals) gör det lättare att tolka spårningsfilen (och eftersom det finns en gräns för spårningsfilens storlek, så finns det en risk att mycket långa sessioner ökar risken för att tidiga händelser tas bort).
+* Om du håller de enskilda sessionerna rimligt små (tio sekunders åtgärder, snarare än hundratals) gör det lättare att tolka spårningsfilen (och eftersom det finns en gräns för spårningsfilens storlek, så finns det en risk att långa sessioner ökar risken för att tidiga händelser tas bort).
 
 #### <a name="understanding-the-form-of-query-sent-by-power-bi-desktop"></a>Förstå vilken typ av fråga som Power BI Desktop skickar
 Formatet på de frågor som skapas och skickas av **Power BI Desktop** använder underfrågor för var och en av de refererade tabellerna, där underfrågan definieras av den fråga som definierats i **Frågeredigeraren**. Låt oss t.ex. anta att följande TPC DS-tabeller finns i SQL Server:
@@ -396,7 +410,7 @@ En orsak till att Power BI använder ett sådant mönster är att den SQL-fråga
 ![](media/desktop-directquery-about/directquery-about_12.png)
 
 ## <a name="next-steps"></a>Nästa steg
-I den här artikeln beskrivs olika aspekter av **DirectQuery** som är gemensamma för alla datakällor. Vissa detaljer är specifika för enskilda datakällor. Följande avsnitt behandlar olika specifika källor:
+I den här artikeln beskrivs olika aspekter av **DirectQuery** som är gemensamma för alla datakällor. Vissa detaljer är specifika för enskilda datakällor. Följande artiklar behandlar olika specifika källor:
 
 * [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)

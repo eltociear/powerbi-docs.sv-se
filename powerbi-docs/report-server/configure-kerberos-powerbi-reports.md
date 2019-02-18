@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: b9fcd2dbd664ac4f119c3f00c3d1a173b9251bd3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5342f509fdd0705b2752aab3315a4968d610b681
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296211"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223776"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurera Kerberos för att använda Power BI-rapporter
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -63,7 +63,7 @@ I filen rsreportserver.config behöver du finjustera avsnittet **autentisering/A
 
 Vi vill försäkra oss om att RSWindowsNegotiate visas och är först i listan över autentiseringstyper. Det bör se ut ungefär så här.
 
-```
+```xml
 <AuthenticationTypes>
     <RSWindowsNegotiate/>
     <RSWindowsNTLM/>

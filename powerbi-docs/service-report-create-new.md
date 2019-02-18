@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 31a7221d3b284e6342b192384f92616a52e12631
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b46896a06c9d7ed66e643aa218ec7dbd3da8c9ee
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280272"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216963"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Skapa en ny rapport i Power BI-tjänsten genom att importera en datauppsättning
 Du har läst [Rapporter i Power BI](consumer/end-user-reports.md) och nu vill du skapa en egen. Det finns många olika sätt att skapa en rapport och i den här artikeln börjar vi med att skapa en grundläggande rapport från en Excel-datauppsättning med Power BI-tjänsten. När du förstår grunderna för att skapa en rapport leder **Nästa steg** längst ned till mer avancerade avsnitt om rapporter.  

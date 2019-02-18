@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: d811ff6c68155d354df1785ae722829e1187543c
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431095"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216871"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -31,10 +31,41 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="september-2018"></a>September 2018
-* [Instrumentpanelskommentarer](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) i Power BI-tjänsten.
 
-## <a name="previous-months-2018"></a>Föregående månader (2018)
+## <a name="february-2019"></a>Februari 2019
+* Storleksmått för arbetsbelastningar och aktiva datauppsättningar i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Exportera till PDF och e-postprenumerationer på begäran (service-report-subscribe.md).
+* Massåtgärder i administratörsportalen.
+
+## <a name="previous-months-2019"></a>Föregående månader (2019)
+### <a name="january-2019"></a>Januari 2019
+* [Bädda in säkra Power BI-rapporter](service-embed-secure.md) i interna portaler eller webbplatser.
+* Uppdaterar till redigeringsprogrammet för [dataflöden](service-dataflows-overview.md) med nya anslutningar och stöd för inbyggda SQL-frågor och Power Query Online-transformationer.
+* [Personliga bokmärken](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) i Power BI-tjänsten.
+* Tidsbaserad schemaläggning med e-postprenumerationer.
+
+## <a name="2018"></a>2018
+### <a name="december-2018"></a>December 2018
+* AI-drivna [rekommenderade appar](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) i Power BI-start.
+* [Arbetsytehantering](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) i administratörsportalen.
+* Förhandsgranskning av Power BI-dataflöden och Azure Data Lake Storage Gen2-integrering i [dataflöden](service-dataflows-overview.md).
+* Power BI-lösningsmallar blev öppen källkod.
+
+### <a name="november-2018"></a>November 2018
+* Power BI-dataförberedelser är tillgängliga med [dataflöden](service-dataflows-overview.md) i allmänt tillgänglig förhandsversion.
+* Allmänt tillgänglig förhandsversion av [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md) i Power BI Premium.
+* Datastorlek och antal datauppsättningar i minnet i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
+### <a name="october-2018"></a>Oktober 2018
+* Sammansättningar[desktop-aggregations.md] i Power BI-tjänsten.
+* Power BI utökades med tre nya regioner: Indien, centrala; Australien, östra och USA, centrala (Iowa). 
+* Exportera till PowerPoint blir allmänt tillgänglig.
+
+### <a name="september-2018"></a>September 2018
+* [Instrumentpanelskommentarer](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) i Power BI-tjänsten.
+* Allmänt tillgänglig förhandsversion av [Power BI-start och global sökning](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Möjlighet att [övervaka frågor](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
 ### <a name="august-2018"></a>Augusti 2018
 * [Kapacitetövervakningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) för Power BI Premium.
 * Förbättringar för [URL-rapportfilter](service-url-filters.md) i Power BI.
@@ -78,7 +109,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 *   Schemalagt uppdateringsstöd för Azure Analysis Services (AAS).
 
 ## <a name="previous-months-2017"></a>Föregående månader (2017)
-## <a name="october-and-november-2017"></a>Oktober och november 2017
+### <a name="october-and-november-2017"></a>Oktober och november 2017
 *   Selektiv publicering av innehåll med [Power BI-appar](service-create-distribute-apps.md).
 *   Extern användardistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * Rekommendationer för AI-drivna apprekommendationer.
@@ -86,7 +117,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * E-postprenumerationsstöd för appar. 
 * Detaljerad administratörskontroll för [publicering på webben](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
 
-## <a name="september-2017"></a>September 2017
+### <a name="september-2017"></a>September 2017
 * I Premium-kapaciteter kan instrumentpaneler delas med användare som inte har en Power BI Pro-licens.
 * Tilldela kapaciteter som passar dina affärsbehov med poolning av virtuella kärnor.
 * Snabbt skala upp eller skala ned kapaciteten med ett enda klick.

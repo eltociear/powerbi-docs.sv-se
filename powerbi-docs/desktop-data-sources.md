@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f5fc52df86faa69683fa1e76f8893fb1d1a09ab9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281170"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225924"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -77,11 +77,14 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
 * Essbase (Beta)
-* BI-anslutningsapp
+* Dremio
 * Exasol
-* Dremio (Beta)
+* MarkLogic (Beta)
+* AtScale-kuber (Beta)
+* BI-anslutningsapp
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
 
@@ -136,8 +139,6 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Google Analytics
 * Adobe Analytics
 * appFigures (beta)
-* comScore Digital Analytix (beta)
-* Dynamics 365 for Customer Insights (beta)
 * Data.World – Hämta datauppsättning (beta)
 * Facebook
 * GitHub (beta)
@@ -157,6 +158,8 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Webtrends (beta)
 * Zendesk (beta)
 * TeamDesk (beta)
+* Emigo Data Source (Beta)
+* Microsoft Graph Security (Beta)
 
 Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
 
@@ -164,7 +167,6 @@ Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
 
 Kategorin **Övrigt** innehåller följande dataanslutningar:
 
-* Vertica
 * Webb
 * SharePoint-lista
 * OData-feed
@@ -176,8 +178,12 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Python-skript
 * ODBC
 * OLE DB
+* Workforce Dimensions (Beta)
 * Denado
 * Paxata (Beta)
+* SurveyMonkey (Beta)
+* QubolePresto (Beta)
+* Quick Base (Beta)
 * Tom fråga
 
 Följande bild visar fönstret **Hämta data** för **Övrigt**.
@@ -190,7 +196,7 @@ Följande bild visar fönstret **Hämta data** för **Övrigt**.
 ## <a name="connecting-to-a-data-source"></a>Ansluta till en datakälla
 Anslut till en datakälla genom att välja datakällan i fönstret **Hämta data** och välja **Anslut**. I följande bild har **Webb** valts från dataanslutningskategorin **Övrigt**.
 
-![Anslut till webben](media/desktop-data-sources/data-sources_08a.png)
+![Anslut till webben](media/desktop-data-sources/data-sources_08.png)
 
 Ett fönster för anslutningen visas, specifik för dataanslutningstypen. Om det krävs autentiseringsuppgifter uppmanas du att ange dem. Följande bild visar en URL som anges för att ansluta till en webbdatakälla.
 

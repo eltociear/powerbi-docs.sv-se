@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: 034fc149dcd76102ae83864fe65d53c55b57c96a
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: 346e1a3d096ba5e8ea8d16b49d49e02c0c65e54a
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482762"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56224052"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -94,7 +94,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
                 - Rapporter kan uppdateras när en server är konfigurerad för att använda anpassad autentisering
                 - Att ändra egenskaperna för en rapport återställer inte autentiseringsuppgifter för datakällor
             - För sidnumrerade rapporter (RDL)
-                - Användning av `Lookup()` eller härledda funktioner såsom `LookupSet()` och `MultiLookup()` i RDL Expresssions leder inte längre till `#Error`
+                - Användning av `Lookup()` eller härledda funktioner såsom `LookupSet()` och `MultiLookup()` i RDL Expressions leder inte längre till `#Error`
                 - Länkade rapporter respekterar sidstorleken för målrapporten vid utskrift
                 - Prenumerationer kan skapas för länkade rapporter som använder sammanhängande parametrar
                 - Standardinställningar för flervärdesparameter kan ändras när du använder IE11
