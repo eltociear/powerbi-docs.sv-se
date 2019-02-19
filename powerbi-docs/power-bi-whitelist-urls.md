@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: 39a62950260789b50be034c2f55808e6991764db
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 07441bd0446e37353984efe97e435ac83d2c355d
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294123"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249078"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL:er för Power BI för vitlistning
 
@@ -69,10 +69,10 @@ För att hämta data från specifika datakällor, till exempel OneDrive, måste 
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Krävs:** AppSource (interna eller externa appar i Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
+| 1 | **Krävs:** AppSource (interna eller externa appar i Power BI) | appsource.microsoft.com <br> *.s-microsoft.com  | TCP 443 |
 | 2 | **Valfritt:** Logga in och hämta data för innehållspaket | Beror på vilka innehållspaket som används | Beror på vilka innehållspaket som används |
 | 3 | **Valfritt:** Importera filer från OneDrive – personlig | Se [webbplatsen för URL:er och portar som krävs](https://docs.microsoft.com/onedrive/required-urls-and-ports) | Saknas |
-| 4 | **Valfritt:** Självstudievideon Power BI på 60 sekunder | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
+| 4 | **Valfritt:** Självstudievideon Power BI på 60 sekunder | *.doubleclick.net <br> *.ggpht.com <br> *.google.com <br> *.googlevideo.com <br> *.youtube.com <br> *.ytimg.com <br> fonts.gstatic.com | TCP 443 |
 | 5 | **Valfritt:** PubNub-strömmande datakällor | Se [PubNub-dokumentationen](https://support.pubnub.com/support/solutions/articles/14000043522) | Saknas |
 | | | |
 
@@ -91,8 +91,8 @@ Power BI är beroende av vissa slutpunkter för att kunna visa och komma åt de 
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Krävs:** Importera ett anpassat visuellt objekt från Microsoft Azure Marketplace-gränssnittet eller från en fil | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
-| 2 | **Valfritt:** Bing-kartor | bing.com </br> platform.bing.com </br> *.virtualearth.net | TCP 443 |
+| 1 | **Krävs:** Importera ett anpassat visuellt objekt från Microsoft Azure Marketplace-gränssnittet eller från en fil | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
+| 2 | **Valfritt:** Bing-kartor | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Valfritt:** PowerApps | Se [avsnittet om tjänster som krävs](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) på webbplatsen för PowerApps-systemkrav | Saknas |
 | 4 | **Valfritt:** Visio | Se Office 365-dokumentationen för [Office Online och vanliga URL:er](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) samt [SharePoint Online och OneDrive för företag](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | Saknas |
 | | | |
@@ -103,12 +103,12 @@ Power BI-länkar till andra relaterade webbplatser. Dessa webbplatser inbegriper
 
 | Rad | Syfte | Mål | Portar |
 | --- | --- | --- | --- |
-| 1 | **Valfritt:** Community-webbplats | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Valfritt:** Dokumentationswebbplats | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
+| 1 | **Valfritt:** Community-webbplats | community.powerbi.com <br> oxcrx34285.i.lithium.com | TCP 443 |
+| 2 | **Valfritt:** Dokumentationswebbplats | docs.microsoft.com <br> img-prod-cms-rt-microsoft-com.akamaized.net <br> statics-uhf-eas.akamaized.net <br> cdnssl.clicktale.net <br> ing-district.clicktale.net | TCP 443 |
 | 3 | **Valfritt:** Nedladdningswebbplats (för Power BI Desktop osv.) | download.microsoft.com | TCP 443 |
-| 4 | **Valfritt:** Externa omdirigeringar | aka.ms </br> go.microsoft.com | TCP 443 |
-| 5 | **Valfritt:** Webbplats för feedbackidéer| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |
+| 4 | **Valfritt:** Externa omdirigeringar | aka.ms <br> go.microsoft.com | TCP 443 |
+| 5 | **Valfritt:** Webbplats för feedbackidéer| ideas.powerbi.com <br> powerbi.uservoice.com | TCP 443 |
 | 6 | **Valfritt:** Power BI-webbplats – landningssida, länkar för att läsa mer, supportwebbplats, nedladdningslänkar, partnerdemonstration osv. | powerbi.microsoft.com | TCP 443 |
 | 7 | **Valfritt:** Power BI Developer Center | dev.powerbi.com | TCP 443 |
-| 8 | **Valfritt:** Supportwebbplats | support.powerbi.com </br> s3.amazonaws.com </br> *.olark.com </br> logx.optimizely.com </br> mscom.demdex.net </br> tags.tiqcdn.com | TCP 443 |
+| 8 | **Valfritt:** Supportwebbplats | support.powerbi.com <br> s3.amazonaws.com <br> *.olark.com <br> logx.optimizely.com <br> mscom.demdex.net <br> tags.tiqcdn.com | TCP 443 |
 | | | |

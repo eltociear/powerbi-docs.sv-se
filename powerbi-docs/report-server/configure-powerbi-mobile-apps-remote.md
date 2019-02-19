@@ -1,20 +1,20 @@
 ---
 title: Fjärrkonfiguration av iOS-mobilappar för åtkomst till en rapportserver
 description: Lär dig hur du fjärrkonfigurerar mobila iOS-appar för din rapportserver.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
-ms.author: maggies
-ms.openlocfilehash: 6a815d3b8042a53bd7196902e59019d3a6b61220
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.author: maghan
+ms.openlocfilehash: c50f9c482ba689fe81ee22b2b52564dec3cbf1d6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293590"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324379"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Fjärrkonfiguration av Power BI iOS-mobilappar för åtkomst till en rapportserver
 
@@ -35,10 +35,10 @@ I följande tabell anges paren.
 
 |Nyckel  |Typ  |Beskrivning  |
 |---------|---------|---------|
-| com.microsoft.powerbi.mobile.ServerURL | Sträng | URL till rapportserver </br> Bör börja med http eller https |
-| com.microsoft.powerbi.mobile.ServerUsername | Sträng | [valfritt] </br> Användarnamnet som ska användas för att ansluta servern. </br> Om det inte finns, uppmanas användaren att ange användarnamn för anslutningen i appen.| 
-| com.microsoft.powerbi.mobile.ServerDisplayName | Sträng | [valfritt] </br> Standardvärdet är ”Rapportserver” </br> Ett eget namn som används i appen för att representera servern | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | Standardvärdet är True </br>När värdet är ”True” åsidosätts eventuella rapportserverdefinitioner som redan finns i den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. </br> Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen. </br> Sätt värdet till ”False” för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. </br> Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
+| com.microsoft.powerbi.mobile.ServerURL | Sträng | URL till rapportserver <br> Bör börja med http eller https |
+| com.microsoft.powerbi.mobile.ServerUsername | Sträng | [valfritt] <br> Användarnamnet som ska användas för att ansluta servern. <br> Om det inte finns, uppmanas användaren att ange användarnamn för anslutningen i appen.| 
+| com.microsoft.powerbi.mobile.ServerDisplayName | Sträng | [valfritt] <br> Standardvärdet är ”Rapportserver” <br> Ett eget namn som används i appen för att representera servern | 
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | Standardvärdet är True <br>När värdet är ”True” åsidosätts eventuella rapportserverdefinitioner som redan finns i den mobila enheten. Befintliga servrar som redan är konfigurerade tas bort. <br> Genom att sätta Åsidosätt till True förhindras också att användaren tar bort konfigurationen. <br> Sätt värdet till ”False” för att lägga till de push-överförda värdera, vilket bevarar de befintliga inställningarna. <br> Om samma server-URL redan har konfigurerats i mobilappen, lämnas den konfigurationen i befintligt skick. Användaren uppmanas inte att logga in på nytt för samma server. |
 
 Här är ett exempel på hur man ställer in konfigurationsprincipen i Intune.
 

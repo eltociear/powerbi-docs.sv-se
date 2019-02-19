@@ -11,18 +11,18 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: ff9f75b216ba64dfdb0b8244bb99016d0edd4ede
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277007"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324874"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Hantera en lokal Power BI-gateway
 
-När du har [installerat en Power BI-datagateway](service-gateway-install.md) hanterar du den baserat på dina krav. I det här avsnittet lär du dig att: lägga till och ta bort datakällor och användare, starta om en gateway, samt migrera, återställa, ta över och ta bort en gateway. 
+När du har [installerat en Power BI-datagateway](service-gateway-install.md) hanterar du den baserat på dina krav. I det här avsnittet lär du dig att: lägga till och ta bort datakällor och användare, starta om en gateway, samt migrera, återställa, ta över och ta bort en gateway.
 
-Du kan hantera en gateway via området **Hantera gatewayer** i Power BI-tjänsten, i gateway-appen på din lokala dator och med PowerShell-skript. Den här artikeln fokuserar på Power BI-tjänsten. 
+Du kan hantera en gateway via området **Hantera gatewayer** i Power BI-tjänsten, i gateway-appen på din lokala dator och med PowerShell-skript. Den här artikeln fokuserar på Power BI-tjänsten.
 
 Om du precis har installerat en gateway, rekommenderar vi att dig att [lägga till en datakälla](#add-a-data-source) och sedan [lägga till användare](#add-users-to-a-data-source) så att de kan få åtkomst till datakällan.
 

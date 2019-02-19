@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cef34e7be0767ce16b84b066663318b66bcbd2d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280572"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324931"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Ansluta till datakällor för Power BI-dataflöden (förhandsversion)
 
@@ -76,6 +76,7 @@ Kategorin **Databas** innehåller följande tillgängliga dataanslutningar för 
 * SQL Server-databas
 * Sybase-databas
 * Teradata-databas
+* Vertica
 
 Kategorin **Power BI** innehåller följande tillgängliga dataanslutningar för dataflöden:
 
@@ -91,7 +92,8 @@ Kategorin **Azure** innehåller följande tillgängliga dataanslutningar för da
 
 Kategorin **Onlinetjänster** innehåller följande tillgängliga dataanslutningar för dataflöden:
 
-* Common Data Service för appar
+* Amazon Redshift
+* Common Data Service for Apps
 * Microsoft Exchange Online
 * Salesforce-objekt
 * Salesforce-rapporter
@@ -154,12 +156,8 @@ Sedan ansluter skriptet till datakällan du har angett.
 
 I följande lista visas vilka anslutningsappar du för närvarande kan använda genom att kopiera och klistra in M-frågan i en tom fråga:
 
-* Amazon Redshift
 * SAP Business Warehouse 
-* SAP HANA
-* Analysis Services
 * Azure Analysis Services
-* Google Analytics
 * Adobe Analytics
 * ODBC
 * OLE DB
@@ -170,7 +168,6 @@ I följande lista visas vilka anslutningsappar du för närvarande kan använda 
 * Azure HDInsight (HDFS)
 * Hadoop-fil HDFS
 * Informix (beta)
-* Vertica
 
 Det är allt du behöver veta om att ansluta till datakällor i Power BI-dataflöden.
 

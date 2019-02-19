@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296327"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249055"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Felsöka Cortana för Power BI
 Den här artikeln ingår i en serie. Om du inte redan har gjort det rekommenderar vi att du läser följande tre artiklar.
@@ -79,7 +79,7 @@ Har du fortfarande problem?  Nu är dags att köra Cortanas felsökningsverktyg 
 
    ![Svarskort](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![Fliken Svarskort i Power BI](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Ibland händer ingenting när du skriver något i fältet **Uttryck** första gången. Se det som att du väcker systemet. Du talar om för felsökningsverktyget att det är dags att komma igång. Klipp ut och klistra in eller skriv i fältet **Uttryck** igen. I det här exemplet är namnet på vårt svarskort **Cortana-butiker**. När du klistrar in eller skriver **Cortana-butiker** i verktyget skapas ett enskilt resultat som visas i fältet **Tolkningar**. Klicka för att se svarskortet som visas i Cortana-fönstret – i det här fallet **Cortana-butiker**.

@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
-ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
+ms.openlocfilehash: c5915f4f2792496a1521a868180d4ffc2dca3557
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "55971681"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56248917"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjänstens huvudnamn med Power BI (förhandsversion)
 
@@ -53,7 +53,7 @@ Du kan bara använda tjänstens huvudnamn om dina Power BI-artefakter lagras på
 
 Det finns skillnader mellan att använda tjänstens huvudnamn och ett standardhuvudkonto (Power BI Pro-licens) för autentisering. I tabellen nedan visas några skillnader.
 
-| Funktion | Huvudanvändarkonto </br> (Power BI Pro-licens) | Tjänstens huvudnamn </br> (appspecifik token) |
+| Funktion | Huvudanvändarkonto <br> (Power BI Pro-licens) | Tjänstens huvudnamn <br> (appspecifik token) |
 |------------------------------------------------------|---------------------|-------------------|
 | Kan logga in på Power BI-tjänsten  | Ja | Nej |
 | Aktiverad i Power BI-administratörsportalen | Nej | Ja |
