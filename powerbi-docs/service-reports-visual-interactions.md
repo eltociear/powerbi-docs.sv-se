@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/11/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: da525715a5d813c076be1f1ca1bf43ea1270ceae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6f739992ed282ada92b1049df09a8b5d4b3938a9
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284965"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426595"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Ändra hur visuella objekt interagerar i en Power BI-rapport
 Om du har redigeringsbehörighet för en rapport kan du använda **Visuella interaktioner** för att ändra hur visualiseringar på en rapportsida påverkar varandra. 
