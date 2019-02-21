@@ -1,5 +1,5 @@
 ---
-title: Lägga till ett filter i en rapport
+title: En titt på rapportfönstret Filter
 description: Hur du lägger till ett filter i en rapport i Power BI-tjänsten för användare
 author: mihart
 manager: kvivek
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 1f1d3c410a74f7a015472deef79072fcefaf5e2e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 161f699014fcc342ba238cad38d28103f9a63991
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281883"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298947"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
 Den här artikeln tar en titt på filterrapportfönstret i Power BI-tjänsten.

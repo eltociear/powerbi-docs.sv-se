@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: b48feeaacc5ec0beff3b9b250f22b1aa605de9f7
-ms.sourcegitcommit: 6c75e38660b1ab4c1af355c85709859ffde09e25
+ms.openlocfilehash: f4e6f0204ed9832a3ed3c3ed8347a44300f606df
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068061"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249400"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 Nu när du har en [grundläggande förståelse av appar](end-user-apps.md) ska vi gå igenom hur du öppnar och interagerar med appar. 
@@ -25,7 +25,7 @@ Kom ihåg att du kan skaffa en ny app på olika sätt. En rapportdesignerkollega
 
 I Power BI på din mobila enhet kan du bara installera en app från en direktlänk och inte från AppSource. Om appförfattaren installerar appen automatiskt, så visas den i din lista över appar.
 
-### <a name="install-an-app-from-a-direct-link"></a>Installera en app från en direktlänk
+## <a name="install-an-app-from-a-direct-link"></a>Installera en app från en direktlänk
 Det enklaste sättet att själv installera en ny app är genom att få en direktlänk, i ett e-postmeddelande, från appförfattaren.  
 
 **På datorn** 
@@ -40,7 +40,7 @@ När du väljer länken i ett e-postmeddelande på din mobila enhet, så install
 
 ![Appinnehållslista på mobil enhet](./media/end-user-app-view/power-bi-app-index-it-spend-360.png)
 
-### <a name="get-the-app-from-microsoft-appsource"></a>Hämta appen från Microsoft AppSource
+## <a name="get-the-app-from-microsoft-appsource"></a>Hämta appen från Microsoft AppSource
 Du hittar även och kan installera appar i Microsoft AppSource. Det är bara appar du har åtkomst till (dvs. där appförfattaren har gett dig eller alla behörighet) som visas.
 
 1. Välj **Appar** ![Apparna i det vänstra navigeringsfönstret](./media/end-user-apps/power-bi-apps-bar.png) > **Hämta appar**. 

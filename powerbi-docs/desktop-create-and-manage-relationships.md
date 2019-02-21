@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f8b9f775b43f2c1b26b7ef56c5bb0985fc3f7ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d4f1936f02edf4ece60b4761d4e541801384a5d2
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292081"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249354"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
 När du importerar flera tabeller är det möjligt att du kommer att utföra analyser med data från alla tabellerna. Det måste finnas relationer mellan dessa tabeller för att korrekt beräkna resultat och för att rätt information ska visas i dina rapporter. Med Power BI Desktop blir det enkelt att skapa dessa relationer. Det är faktiskt så att du inte behöver göra något alls i de flesta fall, funktionen Identifiera automatiskt gör det åt dig. I vissa fall kan du dock behöva skapa relationerna själv, eller behöva göra vissa ändringar i en relation. Oavsett vilket är det viktigt att förstå relationer i Power BI Desktop, samt hur du skapar och redigerar dem.
@@ -58,6 +58,8 @@ Du kan konfigurera ytterligare alternativ när du skapar eller redigerar en rela
 **Många-till-en (\*: 1)** – Det här är den vanligaste standardtypen. Det innebär att en kolumn i en tabell kan ha fler än en instans av ett värde och den andra relaterade tabellen (kallas ofta uppslagstabell) har endast en instans av ett värde.
 
 **En-till-en (1:1)** – Detta innebär att kolumnen i en tabell endast har en instans av ett visst värde, och den andra relaterade tabellen endast har en instans av ett visst värde.
+
+**Många-till-många-relationer**: Med sammansatta modeller så kan du etablera många-till-många-relationer mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Mer information finns i [Relationer med många-många-kardinalitet](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 Se avsnittet Förstå ytterligare alternativ nedan för mer information om när du ska ändra kardinalitet.
 

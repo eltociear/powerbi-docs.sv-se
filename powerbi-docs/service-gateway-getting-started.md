@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0a2c1cb446a0a975a574f5d3f2684ddf80f4f273
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274730"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324494"
 ---
 # <a name="what-are-power-bi-gateways"></a>Vad är Power BI-gatewayer?
 
@@ -53,7 +53,7 @@ Den gateway som du installerar körs som en Windows-tjänst, en **lokal datagate
 Frågor och dataflöde:
 
 1. En fråga skapas av molntjänsten med de krypterade autentiseringsuppgifterna för den lokala datakällan. Därefter skickas den till en kö för gatewaybehandling.
-2. Gatewaymolntjänsten analyserar frågan och skickar en begäran till Azure Service Bus.
+2. Gatewaymolntjänsten analyserar frågan och skickar en begäran till Azure Service Bus. Power BI hanterar Service Bus åt dig, så det tillkommer inte några extra kostnader eller konfigurationssteg.
 3. Den lokala datagatewayen avsöker Azure Service Bus efter väntande begäranden.
 4. Gatewayen hämtar frågan, dekrypterar autentiseringsuppgifterna och ansluter till datakällorna med autentiseringsuppgifterna.
 5. Gatewayen skickar frågan till datakällan för körning.

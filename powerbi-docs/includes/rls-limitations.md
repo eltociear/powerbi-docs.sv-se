@@ -1,3 +1,16 @@
+---
+author: mgblythe
+ms.service: powerbi
+ms.topic: include
+ms.date: 02/15/2019
+ms.author: mblythe
+ms.openlocfilehash: 44ef0aa9d436f3a8a02f9a6b831847d5c996558a
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333880"
+---
 ## <a name="limitations"></a>Begränsningar
 
 Nedan följer en lista med aktuella begränsningar för säkerhet på radnivå i molnmodeller.
@@ -8,7 +21,7 @@ Nedan följer en lista med aktuella begränsningar för säkerhet på radnivå i
 
 * Endast ETL- och DirectQuery-anslutningar stöds. Live-anslutningar till Analysis Services hanteras i modellen lokalt.
 
-* Frågor och svar och Cortana kan inte användas med RLS för närvarande. Om alla modeller har konfigurerats med RLS, visas inte inmatningsrutan Frågor och svar för instrumentpaneler. Det finns med i planeringen, men vi har ingen tidsangivelse för när det kommer att införas.
+* Cortana stöds inte med RLS just nu.
 
 ## <a name="known-issues"></a>Kända problem
 
@@ -20,4 +33,4 @@ Det finns ett känt problem där du får ett felmeddelande om du försöker publ
 
 1. Anna får ett fel.
 
-**Lösning:** Publicera Power BI Desktop-filen från Power BI-tjänsten tills problemet är löst. Du kan göra det genom att välja **Hämta data** > **Filer**.
+**Tillfällig lösning:** Publicera Power BI Desktop-filen från Power BI-tjänsten tills problemet är löst. Du kan göra det genom att välja **Hämta data** > **Filer**.

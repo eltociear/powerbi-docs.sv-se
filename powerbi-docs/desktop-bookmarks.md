@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 509eebfdf2d96a2cc77d5c9413c664a10309ab9c
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216445"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325050"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -61,7 +61,7 @@ Konfigurera en rapport som du vill att den ska visas i bokmärket. När du har u
 
 När du har ett bokmärke kan du visa det genom att klicka på bokmärket i fönstret **Bokmärken**. 
 
-Du kan också välja om varje bokmärke ska tillämpa *data*-egenskaper, som filter och utsnitt, *visa*-egenskaper som aktuellt och dess synlighet och sidändringar som visar den sida som var synlig när bokmärket lades till. De här funktionerna är användbara när du använder bokmärken för att växla mellan visuella typer – då du förmodligen vill inaktivera dataegenskaperna så att filter inte återställs när användarna ändrar visuella typer. 
+Du kan också välja om varje bokmärke ska tillämpa *data*-egenskaper, som filter och utsnitt, *visa*-egenskaper som aktuellt och dess synlighet och sidändringar som visar den sida som var synlig när bokmärket lades till. De här funktionerna är användbara när du använder bokmärken för att växla mellan rapportvyer och urval av visuella objekt – då du förmodligen vill inaktivera dataegenskaperna så att filter inte återställs när användarna byter vy genom att välja ett bokmärke. 
 
 För att göra dessa ändringar väljer du ellipsen bredvid bokmärkets namn, som visas i föregående bild, och sedan markerar eller avmarkerar du bockmarkeringarna bredvid *Data*, *Visa* och andra kontroller. 
 

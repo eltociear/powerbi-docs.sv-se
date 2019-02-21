@@ -8,15 +8,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c18257f1f4e4e3f325c8d4d895e3b6abf88e900c
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55795012"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298878"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 Med Power BI kan du publicera din rapport till PDF-format och enkelt att skapa ett dokument baserat på din Power BI-rapport. När du **exporterar till PDF** blir varje sida i Power BI-rapporten en separat sida i PDF-dokumentet.
@@ -28,6 +28,10 @@ Välj en rapport i Power BI-tjänsten för att visa den på arbetsytan. Du kan o
 
     ![Välj Arkiv från menyraden, pil som pekar på Exportera till PDF](media/end-user-pdf/power-bi-export-pdf.png)
 
+    Ett popup-fönster visas där du kan välja **Aktuell vy** eller **Standardvy**.  Med **Aktuell vy** exporteras rapporten i det aktuella tillståndet, vilket innefattar alla aktiva ändringar som du gjort i utsnitts- och filtervärden.  De flesta användare väljer det här alternativet.  Med **Standardvy** exporteras rapporten i dess ursprungliga tillstånd (som den hade när författaren delade den). Inga ändringar som gjorts tas med.
+    
+    Det finns också en kryssruta för att välja om dolda flikar i en rapport ska exporteras eller inte.  Markera kryssrutan om du endast vill exportera rapportflikar som är synliga för dig i webbläsaren.  Om du föredrar att få med alla dolda flikar i exporten lämnar du kryssrutan avmarkerad.  Om kryssrutan är nedtonad finns inga dolda flikar i rapporten.  Klicka på Exportera för att fortsätta när du har gjort dina val.
+    
     En förloppsindikator visar i det övre högra hörnet. Exporten kan ta några minuter och du kan fortsätta att arbeta i Power BI medan rapporten exporteras.
 
     ![Exportera förloppsmeddelande](media/end-user-pdf/power-bi-export-message.png)
@@ -43,8 +47,6 @@ Det är allt. Du kan ladda ned filen och öppna den med ett PDF-visningsprogram,
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Det finns några överväganden och begränsningar som du bör tänka på när du arbetar med funktionen **exportera till PDF**.
-
-- Interaktivitet för sessionen till exempel syntaxmarkering och filtrering nedåt och så vidare, stöds inte ännu vid export till PDF. Den exporterade PDF-filen visar de ursprungliga visuella objekten som har sparats i rapporten. Om du har tillämpat filter och utsnitt och vill att de sparas för exporten, sparar du rapporten och gör sedan exporten.
 
 * **R-visualiseringar** stöds inte för tillfället. I PDF-filen blir dessa visuella objekt tomma och visar ett felmeddelande.  
 

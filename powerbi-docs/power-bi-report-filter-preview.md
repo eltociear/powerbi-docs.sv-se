@@ -7,21 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 02/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 13ab7ccf690c834168da8f9c6dcb0932178651ca
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: b130ccbe6b3fe6fa09b9a4c4efe388f79350c500
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482716"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298832"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nya filterupplevelsen i Power BI-rapporter (förhandsversion)
 
 Den här artikeln beskriver den nya filtreringsmetoden: Filter i Power BI får nya funktioner och en ny design. När du designar rapporter i Power BI Desktop eller Power BI-tjänsten så kan du få Filter-fönstret att se ut som och fungerar med hela rapporten. I den nya upplevelsen agerar det gamla filterfönstret som ett filterredigeringsfönster och det nya filterfönstret är den enda dina rapportkonsumenter ser. 
  
 ![Standardvyn (inga ytterligare anpassningar används)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
+
+> [!NOTE]
+> Den nya filterupplevelsen finns som förhandsversion. Nya versioner kan åsidosätta den formatering som du redan har ställt in.
 
 Det här är vad du kan göra med de nya filtrena som rapportdesigner:
 
@@ -83,6 +86,7 @@ En stor del av den här nya upplevelsen är att du nu kan formatera filterfönst
 - Bakgrundstransparens
 - Kant på filterfönstret på eller av
 - Kantfärg för filterfönstret
+- Teckensnitt, färg och textstorlek för filterfönstrets rubrik och huvud
 
 Du kan också formatera de här elementen för filterkort, beroende på om de används (är inställda på något) eller tillgängliga (rensade): 
 
@@ -90,6 +94,8 @@ Du kan också formatera de här elementen för filterkort, beroende på om de an
 - Bakgrundstransparens
 - Kantlinje: på eller av
 - Färg på kantlinje
+- Teckensnitt, färg och textstorlek
+- Färg på inmatningsruta
 
 ### <a name="set-the-format-for-the-filters-pane-and-cards"></a>Ange format för filterfönstret och korten
 
@@ -100,11 +106,11 @@ Du kan också formatera de här elementen för filterkort, beroende på om de an
 
 1. Expandera **Filter-fönstret** för att ange färg för bakgrund, ikon och vänster kantlinje så att de matchar rapportsidan.
 
-    ![Expandera Filter-fönster](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
+    ![Expandera Filter-fönster](media/power-bi-report-filter-preview/power-bi-filter-format-pane-font.png)
 
 1. Expandera **Filterkort** för att ange färg och kantlinje för **Tillgänglig** och **Använd**. Om du gör korten tillgänglig och använd olika färger så blir det uppenbart vilka filter som används. 
   
-    ![Expandera Filter-kortet](media/power-bi-report-filter-preview/power-bi-filter-format-card.png)
+    ![Expandera Filter-kortet](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Visa filter för ett visuellt objekt i Läsläge
 

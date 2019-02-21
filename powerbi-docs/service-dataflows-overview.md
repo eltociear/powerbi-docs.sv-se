@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 68d350035732d8335079bf76a859919d696e2721
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 5e1bd67ba14ed35a97d91e5ed76f7a3bd8de56ea
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223684"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324855"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Dataförberedelser med självbetjäning i Power BI (förhandsversion)
 
@@ -52,6 +52,9 @@ Här följer några exempel på hur du kan använda dataflöden:
 ## <a name="how-to-use-dataflows"></a>Så här använder du dataflöden
 
 I föregående avsnitt beskrevs några olika sätt som dataflöden kan användas på för att snabbt skapa kraftfulla analyser i Power BI. I det här avsnittet får du en genomgång av hur snabbt du kan skapa insikter med hjälp av dataflöden i en organisation, få en snabb överblick över hur BI-tekniker kan skapa sina egna dataflöden, samt anpassa insikter för sin egen organisation.
+
+> [!NOTE]
+> Du måste ha ett betalt Power BI-konto för att kunna använda dataflöden, till exempel ett Power BI Pro- eller Power BI Premium-konto, men du debiteras inte separat för användning av dataflöden. 
 
 ### <a name="extend-the-common-data-model-for-your-business-needs"></a>Utöka den gemensamma datamodellen för dina affärsbehov
 För organisationer som vill utöka sin Common Data Service, kan dataflöden underlätta för Business Intelligence-personal vid anpassning av standardentiteter eller när man skapar nya. Den här självbetjäningsmetoden för att anpassa datamodellen kan sedan användas med dataflöden för att skapa appar och Power BI-instrumentpaneler som är skräddarsydda för organisationen.

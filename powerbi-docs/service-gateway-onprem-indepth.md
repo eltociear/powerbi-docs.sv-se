@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4f9de49619a26e17fbdf2b0df47bc56ba23f4d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279330"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325024"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
 Det är möjligt för användare i din organisation att ha åtkomst till lokala data (till vilka de redan har åtkomstauktorisering), men innan dessa användare kan ansluta till den lokala datakällan, så måste en lokal datagateway ha installerats och konfigurerats. Gatewayen underlättar snabb och säker dold kommunikation mellan en användare i molnet till din lokala datakälla och sedan tillbaka till molnet.
@@ -90,7 +90,7 @@ Med Azure AD Connect säkerställer du att UPN-namnet matchar mellan AAD och dit
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Det är här som gatewayen kommer in i bilden
-Gatewayen fungerar som en brygga mellan molnet och den lokala servern. Dataöverföring mellan molnet och gatewayen säkras via [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus skapar en säker kanal mellan molnet och den lokala servern via en utgående anslutning på gatewayen.  Det finns inga inkommande anslutningar som du behöver öppna i den lokala brandväggen.
+Gatewayen fungerar som en brygga mellan molnet och den lokala servern. Dataöverföring mellan molnet och gatewayen säkras via [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus skapar en säker kanal mellan molnet och den lokala servern via en utgående anslutning på gatewayen.  Det finns inga inkommande anslutningar som du behöver öppna i den lokala brandväggen. Power BI hanterar Service Bus åt dig, så det tillkommer inte några extra kostnader eller konfigurationssteg.
 
 Om du har en Analysis Services-datakälla måste du installera gatewayen på en dator som ingår i samma skog/domän som Analysis Services-servern.
 

@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: bdb9e2dcf5e8e22aaaa3bf35035b746777a387b9
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 93181a7ecaad0ec5bcd837f55ad7863fae53772c
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40126634"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249147"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnostisk loggning för Power BI Embedded i Azure
 
@@ -87,7 +87,7 @@ Om du vill aktivera mått och diagnostikloggning med hjälp av PowerShell, anvä
 
 Du kan kombinera dessa parametrar om du vill aktivera flera utdataalternativ.
 
-### <a name="rest-api"></a>REST API
+### <a name="rest-api"></a>REST-API
 
 Lär dig hur du [ändrar diagnostikinställningar med hjälp av REST-API i Azure Monitor](https://docs.microsoft.com/rest/api/monitor/). 
 
@@ -114,13 +114,13 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 |    Granskning utloggning    |    Registrerar alla bortkopplingar från motorhändelser sedan spårningen startades.    |
 |    Fel    |    Registrerar alla motorfelshändelser sedan spårningen startades.    |
 
-</br>
-</br>
+<br>
+<br>
 
 | Egenskapens namn | Vertipaq-frågan slutar, exempel | Beskrivning av egenskap |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | EventClass | XM_SEQUERY_END | Händelseklass används för att kategorisera händelser. |
-| EventSubclass | 0 | Händelseunderklassen tillhandahåller ytterligare information om varje händelseklass. (exempel: 0: VertiPaq-genomsökning) |
+| EventSubclass | 0 | Händelseunderklassen tillhandahåller ytterligare information om varje händelseklass. (till exempel 0: VertiPaq-genomsökning) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Rotaktivitets-ID. |
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Tid då händelsen startade, när denna angivelse är tillgänglig. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Tid då händelsen startade, när denna angivelse är tillgänglig. |
@@ -136,7 +136,7 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 | ProgressTotal | 0 | Total utveckling. |
 | IntegerData | 0 | Integer-data. |
 | Allvarlighetsgrad | 0 | Ett undantags allvarlighetsgrad. |
-| Klart! | 1 | 1 = Klart! 0 = fel (1 kan t.ex. innebära att en behörighetskontroll har slutförts och 0 att kontrollen underkänt behörigheten). |
+| Klart | 1 | 1 = Klart! 0 = fel (1 kan t.ex. innebära att en behörighetskontroll har slutförts och 0 att kontrollen underkänt behörigheten). |
 | Fel | 0 | Felnummer för en given händelse. |
 | TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Textdata som har associerats till händelsen. |
 | ConnectionID | 3 | Unikt anslutnings-ID. |

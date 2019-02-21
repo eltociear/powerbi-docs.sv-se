@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086481"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408194"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -172,11 +172,11 @@ Följande bild visar alternativet för att exportera data från en panel.
 > [!NOTE]
 > När du inaktiverar **Exportera data** kan användare inte heller använda funktionen **Analysera i Excel** eller live-anslutning till Power BI-tjänsten.
 
-### <a name="export-reports-as-powerpoint-presentations"></a>Exportera rapporter som PowerPoint-presentationer
+### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Exportera rapporter som PowerPoint-presentationer eller PDF-dokument
 
-Användare i organisationen kan exportera Power BI-rapporter som PowerPoint-filer. [Läs mer](consumer/end-user-powerpoint.md)
+Användare i organisationen kan exportera Power BI-rapporter som PowerPoint-filer eller PDF-dokument. [Läs mer](consumer/end-user-powerpoint.md)
 
-Följande bild visar menyn **Arkiv** för en rapport när inställningen **Exportera rapporter som PowerPoint-presentationer** är aktiverad.
+Följande bild visar menyn **Arkiv** för en rapport när inställningen **Exportera rapporter som PowerPoint-presentationer eller PDF-dokument** är aktiverad.
 
 ![Exportera rapporter som PowerPoint-presentationer](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
@@ -202,9 +202,9 @@ Följande bild visar alternativet **Hela min organisation** när du skapar ett i
 
 ![Publicera innehållspaket till organisationen](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-organizational-content-packs-and-apps"></a>Skapa mallorganiserade innehållspaket och appar
+### <a name="create-template-apps"></a>Skapa mallappar
 
-Användare i organisationen kan skapa mallinnehållspaket som använder datauppsättningar i Power BI Desktop. [Läs mer](template-content-pack-authoring.md)
+Användare i organisationen kan skapa mallappar som använder datauppsättningar i Power BI Desktop. Läs mer om [mallappar](template-content-pack-authoring.md)
 
 ### <a name="push-apps-to-end-users"></a>Pusha appar till slutanvändare
 
@@ -301,6 +301,18 @@ Användare i organisationen kan skapa och använda dataflöden. I [Dataförbered
 
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
+
+## <a name="template-apps-settings-preview"></a>Inställningar för mallappar (förhandsversion)
+
+Två inställningar styr mallappar. 
+
+![Inställningar för mallappar i Power BI-administratörsportalen](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+Den första inställningen, **Skapa mallappar**, styr vem i organisationen som kan skapa mallappar. De som skapar mallapparna kan sedan distribuera dem till klienter utanför din organisation via AppSource eller något annat distributionssätt.
+
+![Power BI-administratörsportalen, inställningen Skapa mallappar](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+Med den andra inställningen, **Installera mallappar**, kan du styra vem i organisationen som kan ladda ned och installera mallappar från AppSource eller någon annan källa
 
 ## <a name="capacity-settings"></a>Kapacitetsinställningar
 

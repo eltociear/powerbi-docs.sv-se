@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a82bbc3e4b31dca0a304c1d3f64d4bc63e4e7fb3
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086780"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325161"
 ---
 # <a name="key-influencers-visualization"></a>Visualisering av viktiga influencers
 Visualiseringen av viktiga influencers hjälper dig att förstå vilka faktorer som påverkar ett mått som du är intresserad av. Den analyserar dina data, rangordnar de faktorer som är viktiga och visar dem som viktiga influencers. Säg att du till exempel är intresserad av att räkna ut vad som påverkar personalomsättningen. En faktor kanske är anställningsavtalens längd och en annan kan vara medarbetarnas ålder. 
@@ -167,11 +167,11 @@ I den här gruppen har 74,3 % lämnat ett lågt omdöme. Den genomsnittliga kun
  
 Det visuella objektet av viktiga influencers finns för närvarande i offentlig förhandsversion, och det finns flera begränsningar som användare bör känna till. Funktioner som för närvarande inte är tillgängliga omfattar följande: 
 - Analysera mått som är aggregeringar/mått 
-- Använda det visuella objektet inbäddat 
-- Använda det visuella objektet på Power BI mobile 
+- Använda det visuella objektet i Power BI Embedded
+- Använda det visuella objektet i Power BI-mobilappar
 - RLS-stöd 
 - Direct Query-stöd 
-- Live Query-stöd 
+- Live-anslutningsstöd 
  
 **Jag får ett felmeddelande om att inga influencers/segment hittades. Varför?**  
 
@@ -247,15 +247,16 @@ Anledningen är att visualiseringen också tar hänsyn till antalet datapunkter 
 
 **Hur beräknas viktiga influencers?**
 
-AI-visualiseringen kör en logistisk regression för att beräkna viktiga influencers. En logistisk regression är en statistisk modell som jämför olika grupper med varandra. Om vi skulle titta på vad som driver fram låga omdömen skulle den logistiska regressionen titta på hur kunder som gav en låg poäng skiljer sig från dem som gav höga betyg. Om vi hade flera kategorier (högt betyg, neutralt betyg, lågt betyg) skulle vi titta på hur de kunder som gav ett lågt omdöme skiljer sig från kunder som inte gav ett lågt omdöme (hur de skiljer sig från de som lämnade ett högt ELLER ett neutralt omdöme). 
+AI-visualiseringen använder [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) för att köra en logistisk regression för att beräkna viktiga influencers. En logistisk regression är en statistisk modell som jämför olika grupper med varandra. Om vi skulle titta på vad som driver fram låga omdömen skulle den logistiska regressionen titta på hur kunder som gav en låg poäng skiljer sig från dem som gav höga betyg. Om vi hade flera kategorier (högt betyg, neutralt betyg, lågt betyg) skulle vi titta på hur de kunder som gav ett lågt omdöme skiljer sig från kunder som inte gav ett lågt omdöme (hur de skiljer sig från de som lämnade ett högt ELLER ett neutralt omdöme). 
  
 Den logistiska regressionen söker efter mönster i data, som visar hur kunder som lämnade ett lågt omdöme kan skilja sig från dem som lämnade ett högt omdöme. Den kanske till exempel upptäcker att kunder som har fler supportärenden ger en mycket högre % av låga omdömen än de som har få eller inga supportärenden.
  
 Den logistiska regressionen väger också in hur många datapunkter det finns. Om till exempel kunder med administratörsroll proportionellt sett ger mer negativa betyg, men om det bara finns en handfull administratörer, räknas inte det som en påverkande faktor. Det beror på att det inte finns tillräckligt med datapunkter tillgängliga för att härleda ett mönster. Ett statistiskt test (Wald-test) används för att avgöra om en faktor ska betraktas som en influencer. Det visuella objektet använder p-värdet 0,05 för att fastställa tröskelvärdet. 
- 
+
+
 **Hur beräknas segment?**
 
-AI-visualiseringen kör ett beslutsträd för att hitta intressant undergrupper. Syftet med beslutsträdet är att få en undergrupp av datapunkter som har ett relativt högt värde för det mått vi är intresserade av (till exempel kunder som lämnade ett lågt omdöme). 
+AI-visualiseringen använder [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) för att köra ett beslutsträd för att hitta intressant undergrupper. Syftet med beslutsträdet är att få en undergrupp av datapunkter som har ett relativt högt värde för det mått vi är intresserade av (till exempel kunder som lämnade ett lågt omdöme). 
 
 Beslutsträdet tar varje förklarande faktor och försöker avgöra vilken faktor som ger den bästa uppdelningen. Om vi till exempel filtrerar data så att endast kunder i stora företag inkluderas, skulle det skilja ut kunder som gav oss ett högt jämfört med ett lågt omdöme? Eller kanske det blir bättre om vi filtrerar data så att vi endast inkluderar användare som har kommenterat säkerheten? 
 

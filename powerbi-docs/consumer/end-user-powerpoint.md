@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8dd9af8b44e74aafb97e3265b9ee1c32a05edc64
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9e1ed67302b3fc4d7bf990040259e9e4615794a5
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281561"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298924"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportera rapporter från Power BI till PowerPoint
 Med Power BI kan du publicera din rapport till **Microsoft PowerPoint** och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du **exporterar till PowerPoint**, inträffar följande:
@@ -35,6 +35,10 @@ Välj en rapport i Power BI-tjänsten för att visa den på arbetsytan. Du kan o
 När den rapport du vill exportera till PowerPoint visas på arbetsytan, väljer du **Fil > Exportera till PowerPoint** från menyraden i Power BI-tjänsten.
 
 ![Närbild av vänster navigeringsfält med Min arbetsyta markerad, listmenyn Arkiv är markerad](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+   
+Ett popup-fönster visas där du kan välja **Aktuell vy** eller **Standardvy**.  Med **Aktuell vy** exporteras rapporten i det aktuella tillståndet, vilket innefattar alla aktiva ändringar som du gjort i utsnitts- och filtervärden.  De flesta användare väljer det här alternativet.  Med **Standardvy** exporteras rapporten i dess ursprungliga tillstånd (som den hade när författaren delade den). Inga ändringar som gjorts tas med.
+    
+Det finns också en kryssruta för att välja om dolda flikar i en rapport ska exporteras eller inte.  Markera kryssrutan om du endast vill exportera rapportflikar som är synliga för dig i webbläsaren.  Om du föredrar att få med alla dolda flikar i exporten lämnar du kryssrutan avmarkerad.  Om kryssrutan är nedtonad finns inga dolda flikar i rapporten.  Klicka på **Exportera** för att fortsätta när du har gjort dina val.
 
 Du ser en meddelandebanderoll i det övre högra hörnet i Power BI-tjänstens webbläsarfönster att rapporten exporteras till PowerPoint. Det kan ta några minuter och du kan fortsätta att arbeta i Power BI medan rapporten exporteras.
 
@@ -74,7 +78,6 @@ Det är nu upp till dig vad du vill göra med PowerPoint-presentationen eller n�
 ## <a name="limitations"></a>Begränsningar
 Det finns några överväganden och begränsningar som du bör tänka på när du arbetar med funktionen **exportera till PowerPoint**.
 
-* Interaktivitet för sessionen till exempel syntaxmarkering och filtrering nedåt och så vidare, stöds inte ännu vid export till PowerPoint. Den exporterade PowerPointen visar de ursprungliga visuella objekten som har sparats i rapporten. Om du har tillämpat filter och utsnitt och vill att detta sparas för exporten, sparar du rapporten och gör sedan exporten.
 * **R-visualiseringar** stöds inte för tillfället. Alla sådana visualiseringar exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
 * **Anpassade visuella objekt** som har **certifierats** stöds. Mer information om certifierade anpassade visuella objekt, inklusive hur anpassade visuella objekt certifieras, finns i [certifiera anpassade visuella objekt](../power-bi-custom-visuals-certified.md). Anpassade visuella objekt som inte har certifierats stöds inte och exporteras som en tom bild till PowerPoint med ett felmeddelande som säger att visualiseringen inte stöds.
 * Rapporter med mer än 30 rapportsidor kan för närvarande inte exporteras.

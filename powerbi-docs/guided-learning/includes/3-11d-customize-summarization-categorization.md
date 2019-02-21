@@ -13,7 +13,7 @@ Du kan välja vilken typ av valutasymbol som används genom att välja listrutan
 
 Det finns många olika alternativ för att formatera fält. Du kan till exempel ändra formatet från valuta till procentvärde.
 
-Du kan även ändra hur Powwer BI sammanfattar data. Välj ikonen **standardsammanfattning** för att ändra hur ett fält summeras, inklusive visning av en summa, antal eller ett medelvärde.
+Du kan även ändra hur Power BI sammanfattar data. Välj ikonen **standardsammanfattning** för att ändra hur ett fält summeras, inklusive visning av en summa, antal eller ett medelvärde.
 
 ![](media/3-11d-customize-summarization-categorization/3-11d_3.png)
 

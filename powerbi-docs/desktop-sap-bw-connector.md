@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 02/14/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1ddcee1e39f8704eda7cc94cffb27c1a8b6b75f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c45900d98dfa25dd991ae0cee1f165a41964c51e
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290347"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324778"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SAP Business Warehouse (BW)**-data.
@@ -218,6 +218,29 @@ Det här avsnittet beskriver felsökningssituationer (och lösningar) som kan up
    * BAPI_IOBJ_GETDETAIL
 
    Lös det här problemet genom att kontrollera att användaren har åtkomst till de olika *MDPROVIDER*-modulerna så väl som *BAPI_IOBJ_GETDETAIL*. Om du vill felsöka detta eller liknande problem ytterligare väljer du *Aktivera spårning* i fönstret *Diagnostik* i *Alternativ* i Power BI Desktop. Försök att hämta data från SAP BW medan spårning är aktivt, och granska spårningsfilen om du vill ha mer information.
+
+## <a name="sap-bw-connection-support"></a>Stöd för SAP BW-anslutning
+
+I följande tabell beskrivs det aktuella stödet för SAP BW.
+
+
+
+|Produkt  |Läge  |Autentisering  |Anslutning  |SNC-bibliotek  |Stöds  |
+|---------|---------|---------|---------|---------|---------|
+|Power BI Desktop     |Valfri         | Användare/lösenord  | Programserver | Saknas  | Ja  |
+|Power BI Desktop     |Valfri         | Windows          | Programserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
+|Power BI Desktop     |Valfri         | Windows via personifiering | Programserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
+|Power BI Desktop     |Valfri         | Användare/lösenord        | Meddelandeserver | Saknas  | Ja  |
+|Power BI Desktop     |Valfri         | Windows        | Meddelandeserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
+|Power BI Desktop     |Valfri         | Windows via personifiering | Meddelandeserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
+|Power BI Gateway     |Importera      | Samma som Power BI Desktop |         |   |   |
+|Power BI Gateway     |DirectQuery | Användare/lösenord        | Programserver | Saknas  | Ja  |
+|Power BI Gateway     |DirectQuery | Windows via personifiering (fast användare, ingen enkel inloggning) | Programserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
+|Power BI Gateway     |DirectQuery | Alternativet Använd SSO via Kerberos för DirectQuery-frågor | Programserver | *endast med* gsskrb5/gx64krb5   | Ja  |
+|Power BI Gateway     |DirectQuery | Användare/lösenord        | Meddelandeserver | Saknas  | Ja  |
+|Power BI Gateway     |DirectQuery | Windows via personifiering (fast användare, ingen enkel inloggning) | Meddelandeserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
+|Power BI Gateway     |DirectQuery | Alternativet Använd SSO via Kerberos för DirectQuery-frågor | Meddelandeserver | sapcrypto + gsskrb5/gx64krb5  | Nej  |
+
 
 
 ## <a name="next-steps"></a>Nästa steg
