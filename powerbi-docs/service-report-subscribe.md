@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a7c9c72dfbb75958be3119db61fa3aa03ac89171
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 09539bfd26685ffdd9866810b566699e5cdb4a41
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430957"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408125"
 ---
 # <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på en rapport eller instrumentpanel i Power BI-tjänsten
 
@@ -60,12 +60,10 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
 7. Välj **Spara och stäng**. Användare som prenumererar får ett e-postmeddelande och en ögonblicksbild eller rapportsida för den frekvens och tid du har valt. Totalt kan du skapa upp till 24 prenumerationer per rapport eller instrumentpanel och kan ange unika mottagare, tider och frekvenser för varje prenumeration.  Alla prenumerationer med frekvensen **Efter datauppdatering** inställd för din instrumentpanel eller rapport skickar fortfarande bara ett e-postmeddelande efter den första schemalagda uppdateringen.   
       
    > [!TIP]
-   > Vill du se e-postmeddelandet direkt? Utlös ett e-postmeddelande genom att uppdatera en av de datauppsättningar som är associerade med instrumentpanelen eller den datauppsättning som är associerad med rapporten. Om du inte har behörighet att redigera datauppsättningen kan du be någon som har rätt behörighet att uppdatera den åt dig. Om du se relaterade datauppsättningar väljer du ikonen **Visa relaterade** ![Ikonen Visa relaterade](media/service-report-subscribe/power-bi-view-related.png) så öppnas **Relaterat innehåll** och du kan välja uppdateringsikonen ![uppdateringsikon](media/service-report-subscribe/power-bi-refresh.png). 
+   > Vill du skicka e-postmeddelandet från en prenumeration direkt eller på begäran vid valfri tidpunkt? Välj **Kör nu** för prenumerationerna för den instrumentpanel eller rapport som du vill skicka. Du får därmed ett meddelande om att ett e-postmeddelande skickas till alla för den specifika prenumerationen.  Du kan göra detta så ofta du vill. Den räknas inte mot din gräns på 24 schemalagda prenumerationskörningar per dag per rapport eller instrumentpanel. Observera att detta INTE utlöser en datauppdatering av den underliggande datauppsättningen. 
    > 
    > 
    
-   ![Relaterade datauppsättningar](media/service-report-subscribe/power-bi-view-related-screen.png)
-
 ## <a name="email-languages"></a>E-postspråk
 
 E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning klickar du på kugghjulsikonen ![kugghjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) > **Inställningar > Allmänt > Språk**. 
@@ -84,6 +82,7 @@ Vilka enskilda prenumerationer som visas beror på vilken arbetsyta som för nä
 En prenumeration går ut om Pro-licensen upphör att gälla, om ägaren tar bort instrumentpanelen eller om det användarkonto som använts för att skapa prenumerationen raderas.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+* Instrumentpaneler med fler än 25 fästa paneler, eller fyra fästa liverapportsidor, kanske inte återges till fullo i prenumerationsmeddelanden som skickas till användare via e-post.  Prenumerationer på instrumentpaneler som överstiger dessa antal paneler blockeras inte, men de stöds inte om du får problem. Du bör därför minska antalet till det intervall som stöds.
 * För e-postprenumerationer på instrumentpaneler visas inte paneler som har säkerhet på radnivå (RLS) tillämpat.  För e-postprenumerationer på rapporter går det inte att skapa en prenumeration om datauppsättningen använder RLS.
 * Rapportsideprenumerationer är knutna till namnet på rapportsidan. Om du prenumererar på en rapportsida och sedan byter namn på den, måste du återskapa din prenumeration.
 * Din organisation kan konfigurera vissa inställningar i Azure Active Directory som begränsar möjligheten att använda e-postprenumerationer i Power BI.  Dessa begränsningar inkluderar, men begränsas inte till, att ha multifaktorautentisering eller begränsningar för IP-intervallet vid åtkomst till resurser.
