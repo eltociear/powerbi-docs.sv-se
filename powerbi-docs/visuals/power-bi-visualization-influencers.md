@@ -3,19 +3,19 @@ title: Självstudie om visualiseringar av viktiga influencers
 description: Självstudie – skapa en visualisering av viktiga influencers i Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: justyna
+ms.reviewer: juluczni
 ms.service: powerbi
 ms.component: powerbi-visuals
 ms.topic: tutorial
-ms.date: 02/10/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: c937104d570409023373a5ccbcf94e1b66e6aaab
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325161"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426802"
 ---
 # <a name="key-influencers-visualization"></a>Visualisering av viktiga influencers
 Visualiseringen av viktiga influencers hjälper dig att förstå vilka faktorer som påverkar ett mått som du är intresserad av. Den analyserar dina data, rangordnar de faktorer som är viktiga och visar dem som viktiga influencers. Säg att du till exempel är intresserad av att räkna ut vad som påverkar personalomsättningen. En faktor kanske är anställningsavtalens längd och en annan kan vara medarbetarnas ålder. 
@@ -46,7 +46,7 @@ Det mått du analyserar måste vara ett kategoriskt fält.
 
 6. ***Höger ruta*** – den högra rutan innehåller ett visuellt objekt. I det här fallet visar stapeldiagrammet alla värden för den **viktigaste influencern**, **Tema** som valts i den vänstra rutan. Det specifika värdet (**Usability**, användbarhet) från det vänstra fönstret visas i grönt och alla andra värden för **Tema** visas i svart.
 
-7. ***Medellinje*** – medelvärdet beräknas för alla andra möjliga värden för **Tema**, utom för **Usability** (användbarhet). Så beräkningen gäller för alla värden i svart. Den visar vilken procentandel av övriga **teman** som lämnade ett lågt omdöme. När en kund lämnar ett omdöme beskriver alltså den kunden även anledningen eller **temat** för omdömet. Några teman är användbarhet, hastighet, säkerhet o.s.v. **Tema** är **användbarhet** är den näst viktigaste influencern för ett lågt omdöme enligt vårt visuella objekt i den vänstra rutan. Om vi tar ett genomsnitt av alla andra teman och hur de påverkar ett **lågt** omdöme får vi resultatet som visas i rött här. 
+7. ***Medellinje*** – medelvärdet beräknas för alla andra möjliga värden för **Tema**, utom för **Usability** (användbarhet). Så beräkningen gäller för alla värden i svart. Den visar vilken procentandel av övriga **teman** som lämnade ett lågt omdöme. När en kund lämnar ett omdöme beskriver alltså den kunden även anledningen eller **temat** för omdömet. Några teman är användbarhet, hastighet, säkerhet o.s.v. **Tema** är **användbarhet** är den näst viktigaste influencern för ett lågt omdöme enligt vårt visuella objekt i den vänstra rutan. Om vi tar ett genomsnitt av alla andra teman och hur de påverkar ett **lågt** omdöme får vi resultatet som visas i rött här. Av alla andra teman är endast 11,35 % av dem högre än **användbarhet**. 
 
 8. ***Kryssruta*** – visa enbart värden som är influencers.
 
@@ -217,7 +217,7 @@ Mer exakt är kunder som inte använder webbläsaren för att använda tjänsten
 
 ![fel – löst](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-**Jag ser en varning om att mått inte tagits med i min analys. Varför?** [2052261] 
+**Jag ser en varning om att mått inte tagits med i min analys. Varför?** 
 
 ![fel-mått togs inte med](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
 

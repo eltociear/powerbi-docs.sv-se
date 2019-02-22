@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 4cbd17a08a8cb7c7253f60f29a19341598c9800f
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408079"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426549"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Riktlinjer för visuella objekt i Power BI med ytterligare inköp
 
@@ -33,7 +33,10 @@ Utvecklare laddar upp sina visuella IAP-objekt till AppSource via instrumentpane
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Vad är ett visuellt Power BI-objekt med IAP-funktioner?
 
-Ett visuellt IAP-objekt är kostnadsfria visuella objekt och kostnadsfria funktioner, men har även ytterligare funktioner som kan innebära att extra avgifter kan tillkomma för att driva dem. Utvecklare måste meddela användare i det visuella objektets beskrivning av vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda programgränssnitt (API:er) för att stödja köp i appar och tilläggsprogram. Utvecklare kan använda valfritt betalningssystem från tredje part för dessa inköp. Se vår [butiksprincip](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+Ett visuellt IAP-objekt är kostnadsfria visuella objekt och kostnadsfria avancerade funktioner, men har även ytterligare funktioner som kan innebära att extra avgifter kan tillkomma för att driva dem. Utvecklare måste meddela användare i det visuella objektets beskrivning av vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda programgränssnitt (API:er) för att stödja köp i appar och tilläggsprogram. Utvecklare kan använda valfritt betalningssystem från tredje part för dessa inköp. Se vår [butiksprincip](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+
+> [!NOTE]
+> Vattenstämplar tillåts inte på de kostnadsfria funktionerna. Utvecklare kan visa ett popup-fönster eller en vattenstämpel om de avancerade betalfunktionerna används utan giltig licens.  
 
 ## <a name="logo-guidelines"></a>Riktlinjer för logotyp
 
