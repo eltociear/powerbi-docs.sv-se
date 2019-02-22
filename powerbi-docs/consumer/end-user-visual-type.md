@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 0118c9b7bb1d00daf1b6baeb7638916b49d8af49
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794859"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426779"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 Du hittar visualiseringar i rapporter, instrumentpaneler, appar och frågor och svar. Vissa av dessa visualiseringstyper paketeras med Power BI och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt där *rapportdesigners* kan lägga till dem i Power BI-rapporter, -instrumentpaneler och -appar. 
@@ -98,10 +98,12 @@ Radiella mätare är ett bra val för att:
 - visa hälsotillståndet för ett enda mått
 - visa information som går snabbt att genomsöka och förstå
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+ ### <a name="key-influencers-chart"></a>Diagram över viktiga påverkare
+![viktiga påverkare](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  -->
+Ett diagram över viktiga påverkare visar de största bidragande orsakerna till ett valt resultat eller värde.
+
+Viktiga påverkare hjälper dig att förstå de faktorer som påverkar ett nyckelmått. Till exempel *vad som påverkar att kunderna gör en andra beställning *eller* varför försäljningen gick så bra i juni förra året*. 
 
 ### <a name="kpis"></a>KPI:er
 ![kpi](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)

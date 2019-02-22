@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8cc1201c506e98ae33b68ef0cf802dae20b6f493
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216526"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426733"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
 
@@ -70,6 +70,8 @@ Följ stegen i artikeln [Tilldela en roll till en säkerhetsprincip](https://doc
 I fönstret **Lägg till rolltilldelning** väljer du rollen **Läsare** för att tilldela Power BI-tjänsten. Använd sedan sökfunktionen för att hitta **Power BI-tjänsten**. Följande bild visar rolltilldelningen **Läsare** för Power BI-tjänsten.
 
 ![Power BI-tjänsten som tilldelats till rollen Läsare](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
+
+OBS! Det tar minst 30 minuter innan behörigheten uppdateras mellan Power BI och portalen. När du ändrar behörighet i portalen tar det 30 minuter innan den uppdateras i Power BI och du kan försöka på nytt. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Skapa ett filsystem för Power BI

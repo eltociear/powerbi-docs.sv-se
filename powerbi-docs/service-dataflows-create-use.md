@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/19/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bb550bb2a009c5f227541db41a9bc45fc708d1e1
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279054"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426641"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Skapa och använda dataflöden i Power BI (förhandsversion)
 
@@ -155,6 +155,10 @@ Det kan finnas tillfällen när anslutningen till datakällor för dataflöden s
 * **Salesforce-anslutningsprogrammet** – Att använda ett konto för Salesforce-dataflöden leder till ett anslutningsfel men ingen information tillhandahålls. Lös detta genom att använda ett Salesforce-konto för produktion eller ett utvecklarkonto för testning.
 
 * **SharePoint-anslutningsappen** – Kontrollera att du anger rotadressen för SharePoint-webbplatsen utan undermappar eller dokument. Använd till exempel länken som liknar följande: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+
+* **JSON File-anslutningsappen** – För närvarande kan du endast ansluta till en JSON-fil med grundläggande autentisering.  Det går för närvarande inte att ansluta till en JSON-fil genom att ange autentiseringsuppgifterna i URL:en (exempelvis stöds https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) **inte** för närvarande.  
+
+* **Azure SQL Data Warehouse** – Dataflöden stöder för närvarande inte AAD-autentisering (Azure Active Directory) för Azure SQL Data Warehouse. Använd grundläggande autentisering för detta scenario.
 
 ## <a name="next-steps"></a>Nästa steg
 
