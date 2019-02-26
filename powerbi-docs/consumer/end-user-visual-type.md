@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/12/2019
+ms.date: 02/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 0118c9b7bb1d00daf1b6baeb7638916b49d8af49
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
+ms.openlocfilehash: ea86970565717d5dae8db865a65765f2c8245bad
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426779"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662398"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 Du hittar visualiseringar i rapporter, instrumentpaneler, appar och frågor och svar. Vissa av dessa visualiseringstyper paketeras med Power BI och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt där *rapportdesigners* kan lägga till dem i Power BI-rapporter, -instrumentpaneler och -appar. 
