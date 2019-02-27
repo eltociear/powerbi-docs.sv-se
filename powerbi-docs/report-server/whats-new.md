@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: ad3025b9649529566972f75e9c447bb7558132b8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325207"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662467"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
@@ -41,6 +41,10 @@ Stöd för dessa funktioner i Power BI-rapporter:
 [**Smarta justeringsstödlinjer**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Du ser smarta justeringsstödlinjer när du flyttar objekt på rapportsidan, precis som i PowerPoint, så att du kan justera allt på sidan. Du ser smarta stödlinjer när du drar eller ändrar storlek på något på sidan. När du flyttar ett objekt nära ett annat fästs det på en plats i linje med det andra objektet.
 
 **Hjälpmedelsfunktioner** För många hjälpmedelsfunktioner att lista: till exempel [fältlista med stöd för hjälpmedel](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Fältlistrutan är helt åtkomlig. Du kan navigera i rutan med enbart tangentbordet och en skärmläsare och använda snabbmenyn för att lägga till fält på rapportsidan.
+
+#### <a name="custom-visuals"></a>Anpassade visuella objekt
+
+- Den API-version som levereras med den här versionen är 2.3.
 
 ### <a name="administrator-settings"></a>Administratörsinställningar
 

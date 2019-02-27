@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
+ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431256"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826731"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,16 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="january---february-2019"></a>Januari – februari 2019
+ 
+### <a name="visio-visuals"></a>Visuella Visio-objekt
+
+Aktivera enkel inloggning (SSO) i visuella Visio-objekt så att inga ytterligare inloggningssteg krävs vid visning av rapporter med visuella Visio-objekt i appen. 
+
+### <a name="dashboard-commenting-is-coming-to-power-bi-mobile-windows-app"></a>Kommentarsfunktioner för instrumentpanelen kommer till Power BI Mobile Windows-appen
+
+Du kan lägga till kommentarer direkt till instrumentpaneler och specifika paneler för att diskutera dina data, så ser alla som visar instrumentpanelen dina kommentarer. 
 
 ## <a name="december-2018"></a>December 2018
 
