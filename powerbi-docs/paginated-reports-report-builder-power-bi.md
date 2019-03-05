@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 12/05/2018
-ms.openlocfilehash: d3563b80813b0c08377e7ecaec89439197c2014f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 1b8653b4493e0a6de904ecb0f5bb8ec5bb6f7904
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324647"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014195"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsgranskning)
 
@@ -24,7 +24,7 @@ Sidnumrerade rapporter kan ha många sidor. Den här rapporten har till exempel 
 
 ![Sidnumrerad rapport i Power BI-tjänsten](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten http://app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i Power BI-administratörsportalen. Läs mer om att [konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads). 
+Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten http://app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i Power BI-administratörsportalen. 
 
 ## <a name="create-reports-in-report-builder"></a>Skapa rapporter i Report Builder
 

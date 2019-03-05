@@ -1,6 +1,7 @@
 ---
 title: Ändringslogg för Power BI-rapportservern
 description: Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
+ms.author: jtarquino
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -8,13 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.author: jtarquino
-ms.openlocfilehash: 346e1a3d096ba5e8ea8d16b49d49e02c0c65e54a
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9589c2cf5277995459a9f43f573b6e19c4c8f748
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224052"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327974"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -23,6 +23,7 @@ Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya o
 Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md). 
 
 ## <a name="january-2019"></a>Januari 2019
+
 - **Power BI-rapportserver**            
     - *Version 1.4.6969.7395 (version 15.0.1102.235), publicerad: 30 januari 2019*
         - Felkorrigeringar
@@ -65,6 +66,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
         - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (januari 2019)  
 
 ## <a name="august-2018"></a>Augusti 2018
+
 - **Power BI-rapportserver**
     - *Version 1.3.6816.37243 (build-nr 15.0.2.557), publicerad: 30 augusti 2018*
         - Felkorrigeringar
@@ -86,6 +88,7 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
         - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (augusti 2018)         
         
 ## <a name="march-2018"></a>Mars 2018
+
 - **Power BI-rapportserver**
     - *Version 1.2.6690.34729 (build-nr 15.0.2.402), publicerad: 27 april 2018*
         - Felkorrigeringar

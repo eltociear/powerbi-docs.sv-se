@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 12/07/2018
-ms.openlocfilehash: 377e601bde58c0e0a8e5634cd798e3373ebee7b7
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324908"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014448"
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
@@ -37,11 +37,11 @@ Innan du installerar Power BI-rapportservern rekommenderar vi att du granskar [m
 
 Om du har köpt Power BI Premium så kommer du att ha tillgång till din produktnyckel för Power BI-raportservern i fliken **premiuminställningar** i Power BI-administratörsportalen. Den finns endast tillgänglig för globala administratörer eller användare som har tilldelats rollen Power BI-tjänstadministratör.
 
-![Premium-inställningar](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI-rapportservernyckeln i premiuminställningarna")
+![Premium-inställningar](../report-server/media/install-report-server/pbirs-product-key.png "Power BI-rapportservernyckeln i premiuminställningarna")
 
 Om du väljer **Power BI-rapportservernyckel** så visas en dialogruta med din produktnyckel. Du kan kopiera den och använda den med installationen.
 
-![Produktnyckel](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Produktnyckel för Power BI-rapportserver")
+![Produktnyckel](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Produktnyckel för Power BI-rapportserver")
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
 

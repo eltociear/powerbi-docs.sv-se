@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408194"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014655"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -297,7 +297,7 @@ Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapport
 
 ### <a name="create-and-use-dataflows-preview"></a>Skapa och använda dataflöden (förhandsversion)
 
-Användare i organisationen kan skapa och använda dataflöden. I [Dataförberedelser med självbetjäning i Power BI (förhandsversion)](service-dataflows-overview.md) finns en översikt över dataflöden. Information om hur du aktiverar dataflöden i en Premium-kapacitet finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
+Användare i organisationen kan skapa och använda dataflöden. I [Dataförberedelser med självbetjäning i Power BI (förhandsversion)](service-dataflows-overview.md) finns en översikt över dataflöden. Information om hur du aktiverar dataflöden i en Premium-kapacitet finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
@@ -321,8 +321,6 @@ Med den andra inställningen, **Installera mallappar**, kan du styra vem i organ
 På fliken **Power BI Premium** kan du hantera alla premiumfunktioner för Power BI (Em eller P SKU) som har köpts för din organisation. Alla användare inom din organisation ser fliken **Power BI Premium** men kan endast se innehåll om de har angetts som antingen *kapacitetadministratör* eller en användare som har tilldelningsbehörighet. Om en användare inte har några behörigheter visas följande meddelande.
 
 ![Ingen åtkomst till Premiuminställningar](media/service-admin-portal/premium-settings-no-access.png)
-
-Mer information om hur du hanterar premiuminställningar finns [Hantera Power BI Premium](service-admin-premium-manage.md).
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
@@ -410,6 +408,5 @@ Som administratör kan visa du de arbetsytor som finns i din klientorganisation.
 
 [Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  [Förstå administratörsrollen för Power BI](service-admin-role.md)  
 [Granska Power BI i din organisation](service-admin-auditing.md)  
-[Hantera Power BI Premium](service-admin-premium-manage.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

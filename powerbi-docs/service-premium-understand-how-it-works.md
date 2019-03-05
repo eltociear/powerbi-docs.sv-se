@@ -9,12 +9,12 @@ ms.author: owend
 ms.reviewer: owend
 author: minewiskan
 manager: kfile
-ms.openlocfilehash: e31f67d978471f4dcc6472860fc5f8315212e563
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: d7cebbd569d16192f4acfa1c96394130731efa17
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794879"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014586"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Resurshantering och -optimering för Microsoft Power BI Premium-kapacitet
 
@@ -55,7 +55,7 @@ Om en interaktiv fråga utfärdas till en datauppsättning i kapaciteten och det
 
 ### <a name="workloads"></a>Arbetsbelastningar
 
-Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **dataflöden**. Om de är aktiverade kan de här arbetsbelastningarna påverka minnesanvändningen i din kapacitet. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
+Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **dataflöden**. Om de är aktiverade kan de här arbetsbelastningarna påverka minnesanvändningen i din kapacitet. 
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Processorresurshantering i premium-kapaciteten
 
@@ -116,6 +116,3 @@ Använd Power BI Embedded-kapaciteten i Azure för att testa olika SKU:er och fa
 
 I vissa fall kan du få mycket information om problemet om du öppnar en Power BI Desktop-fil (.pbix) för modellen på din dator och kontrollerar minnes- och processorförbrukning. Det hjälper inte för mycket stora modeller, men för vissa mindre modeller, kan du försöka öppna, uppdatera och fråga modellen från din dator. Kontrollera modellstorlek, minne och processorer som används när du öppnar modellen. Försök uppdatera och fråga. Använd aktivitetshanteraren för att kontrollera processor- och minnesförbrukning för den lokala filen. Ibland kan dessa mått på själva datorn visa att en lägre premium-kapacitet som P1 / P2 kanske inte fungerar för din lösning.
 
-## <a name="next-steps"></a>Nästa steg
-
-[Hantera kapaciteter i Power BI Premium och Power BI Embedded](service-admin-premium-manage.md)
