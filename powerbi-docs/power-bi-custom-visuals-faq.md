@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9b4ff995b1cfaede1608e976bf2715feece0ade6
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408148"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892331"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Vanliga frågor och svar om anpassade visuella Power BI-objekt
 
@@ -57,8 +57,44 @@ Ja, om administratören inaktiverar de anpassade visuella objekten från adminis
 
 ### <a name="what-are-certified-custom-visuals"></a>Vad är certifierade anpassade visuella objekt?
 
-Certifierade anpassade visuella objekt är visuella objekt på [marknadsplatsen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) som uppfyller vissa [specificerade](power-bi-custom-visuals-certified.md) kodkrav och testning av Power BI-teamet.  Testerna som utfördes är utformade för att kontrollera att det visuella objektet inte har tillgång till externa tjänster eller resurser. Microsoft är ändå inte upphovsman till anpassade visuella objekt från tredje part. Vi rekommenderar att kunder kontaktar upphovsmannen direkt för att verifiera funktionaliteten för sådana visuella objekt.
+Certifierade anpassade visuella objekt är visuella objekt på [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) som uppfyller vissa [specificerade](power-bi-custom-visuals-certified.md) kodkrav och testning av Power BI-teamet.  Testerna som utfördes är utformade för att kontrollera att det visuella objektet inte har tillgång till externa tjänster eller resurser. Men Microsoft är inte upphovsman till anpassade visuella objekt från tredje part, och vi rekommenderar att kunderna kontaktar upphovsmannen direkt för att verifiera funktionaliteten för sådana visuella objekt.
 
+### <a name="what-tests-are-done-during-the-certification-process"></a>Vilka tester utförs under certifieringsprocessen?
+
+Certifieringsprocesstester omfattar men är inte begränsade till: Kodgranskningar, analys av statisk kod, dataläckage, sårbarhetstestning av data, intrångstestning, XSS-testning, inmatning av skadliga data, indatavalidering och funktionstestning.
+ 
+### <a name="do-you-certify-visuals-every-submission"></a>Certifierar du visuella objekt vid varje överföring?
+
+Ja. Varje gång en ny version av certifierat visuellt objekt överförs till Marketplace genomgår versionsuppdateringen av det visuella objektet samma certifieringskontroller.
+
+Anmärkning för utvecklare: Om du skickar en versionsuppdatering av ett certifierat visuellt objekt behöver du inte skicka ett separat e-postmeddelande som [certifieringsbegäran första gången](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification). Certifiering av versionsuppdatering sker automatiskt och vid överträdelser som orsakar ett avvisande skickas ett e-postmeddelande för att förklara vilka saker som måste åtgärdas. 
+
+### <a name="is-it-possible-that-a-certified-visual-stops-being-certified-with-a-new-update"></a>Är det möjligt att ett certifierat visuellt objekt slutar att certifieras med en ny uppdatering?
+
+Nej, det är inte möjligt. Ett certifierat visuellt objekt kan inte avcertifieras med en ny uppdatering. Uppdateringen avvisas.
+ 
+### <a name="do-i-need-to-share-my-code-in-public-repository-if-i-am-submitting-to-the-certification-process"></a>Måste jag dela min kod på en offentlig lagringsplats om jag skickar till certifieringsprocessen?
+
+Nej, du behöver inte dela koden offentligt. Men du måste ge oss läsbehörighet för att kontrollera koden för visuella objekt. T.ex. privat lagringsplats i GitHub.
+ 
+### <a name="do-we-have-to-publishhttpsdocsmicrosoftcompower-bideveloperoffice-store-the-visual-in-the-marketplacehttpsappsourcemicrosoftcommarketplaceappspage1productpower-bi-visuals-to-certify-it"></a>Måste vi [publicera](https://docs.microsoft.com/power-bi/developer/office-store) det visuella objektet på [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) för att certifiera det?
+
+Ja. Att publicera det visuella objektet på Marketplace först är obligatoriskt för certifiering.
+För att kunna certifiera ett anpassat visuellt objekt ska det finnas på våra servrar. Vi kan inte certifiera privata visuella objekt.
+ 
+### <a name="how-long-does-it-take-to-certify-my-visual"></a>Hur lång tid tar det att certifiera mitt visuella objekt?
+
+För en uppdaterad version kan det ta upp till 2 veckor. För ett nytt bidrag (förstagångscertifiering) kan det ta upp till 3 veckor. 
+
+### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Garanterar certifieringsprocessen att inget dataläckage sker?
+
+Testerna som utfördes är utformade för att kontrollera att det visuella objektet inte har tillgång till externa tjänster eller resurser. Men Microsoft är inte upphovsman till anpassade visuella objekt från tredje part, och vi rekommenderar att kunderna kontaktar upphovsmannen direkt för att verifiera funktionaliteten för sådana visuella objekt.
+ 
+### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Är ocertifierade anpassade visuella objekt säkra att använda?
+
+Ocertifierade anpassade visuella objekt innebär inte nödvändigtvis osäkra visuella objekt.
+Vissa visuella objekt är inte certifierade eftersom de inte är kompatibla med ett eller flera av [certifieringskraven](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Till exempel att ansluta till en extern tjänst som visuell mappning eller visuella objekt med kommersiella bibliotek.
+ 
 ## <a name="visuals-with-additional-purchases"></a>Visuella objekt med ytterligare köp
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Vad är ett visuellt objekt med ytterligare köp?
@@ -100,7 +136,6 @@ Om du har en logotyp i det visuella objektet kontrollerar du att den uppfyller r
 I riktlinjerna hittar du också metodtips.  
 > [!Note]
 > Alla kostnadsfria visuella objekt måste behålla de kostnadsfria funktioner som erbjudits tidigare. Du kan lägga till valfria avancerade betalfunktioner utöver de tidigare kostnadsfria funktionerna. Vi rekommenderar att du skickar visuella IAP-objekt med de avancerade funktionerna som nya visuella objekt och inte uppdaterar de gamla kostnadsfria visuella objekten.
-
 
 ### <a name="can-i-get-my-iap-custom-visual-certified"></a>Kan jag certifiera mina anpassade visuella IAP-objekt?
 

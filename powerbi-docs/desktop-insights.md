@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f5896505d724c0704e22c95df132ee3318b23009
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 28db4891ad2ca67fefb0f6ec7d993977bbba7043
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224029"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892262"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Använd insikter i Power BI Desktop för att förklara ökningar och minskningar som visas i visuella objekt (förhandsversion)
 
 Ofta ser du i visuella objekt en stor ökning och sedan ett brant fall i värden och undrar vad dessa variationer beror på. Med **insikter** i **Power BI Desktop** får du reda på orsaken med bara några få klick.
 
-Se till exempel på följande visuella objekt som visar *Sales Amount* (Försäljningsbelopp) efter *Year* (År) och *Country* (Land). En stor minskning i försäljningen sker 2014, där försäljningen faller mycket mellan *Qtr 1* (Kvartal 1) och *Qtr 2* (Kvartal 2). I sådana fall kan du utforska data för att förklara förändringen. 
+Se till exempel på följande visuella objekt som visar *Försäljningsbelopp* efter *År* och *Kvartal*. En stor minskning i försäljningen sker 2014, där försäljningen faller mycket mellan *Qtr 1* (Kvartal 1) och *Qtr 2* (Kvartal 2). I sådana fall kan du utforska data för att förklara förändringen. 
 
 ![Visuellt objekt med ökningar och minskningar](media/desktop-insights/insights_01a.png)
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325050"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892423"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 
@@ -25,6 +25,9 @@ Du kan också skapa en samling bokmärken, ordna dem i valfri ordning och sedan 
 ![Bokmärken i Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
 Bokmärken har många användningsområden. Du kan använda dem för att övervaka förloppet i att skapa rapporter (bokmärken är lätta att lägga till, ta bort och byta namn på) och du kan skapa bokmärken för att skapa en PowerPoint-liknande presentation visar bokmärken i ordning, så att din rapport utgör en berättelse. Det kan finnas andra användningsområden, baserat på hur du vill använda bokmärken.
+
+> [!TIP]
+> Information om användning av personliga bokmärken i Power BI-tjänsten finns i [blogginlägget](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) om funktionen Personliga bokmärken. 
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Aktivera förhandsversionen för bokmärken (versioner före mars 2018)
 Från och med versionen från mars 2018 av Power BI Desktop är bokmärken allmänt tillgängliga. 

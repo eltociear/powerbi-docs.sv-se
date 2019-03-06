@@ -1,22 +1,23 @@
 ---
 title: Kryptera autentiseringsuppgifter
-description: Genomgång – Kryptera autentiseringsuppgifter för lokal gateway-datakällor
+description: Genomgång – Kryptera autentiseringsuppgifter för datakällor för lokal gateway
 author: mahirdiab
+ms.author: mahirdiab
 manager: eligr
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/02/2019
-ms.author: mahirdiab
-ms.openlocfilehash: 79ab3731abfdf972de1ee9d40456ebb0c5ebfa62
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.date: 02/04/2019
+ms.openlocfilehash: 6229d65e7ef28d0c9b6013166cb504cfb976f46d
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223523"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892239"
 ---
 # <a name="encrypt-credentials"></a>Kryptera autentiseringsuppgifter
+
 När du anropar [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) (Skapa datakälla) eller [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) (Uppdatera datakälla) under en **lokal företagsgateway** med [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/), måste värdet för autentiseringsuppgifter krypteras med gatewayens offentliga nyckel.
 
 Se kodexemplet nedan hur du krypterar autentiseringsuppgifterna i .NET.
@@ -24,27 +25,31 @@ Se kodexemplet nedan hur du krypterar autentiseringsuppgifterna i .NET.
 Autentiseringsuppgifterna som anges för metoden EncodeCredentials nedan ska vara i något av följande format, beroende på typ av autentiseringsuppgifter:
 
 **Grundläggande/Windows**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 **Nyckel**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
 **OAuth2**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
-
 **Anonyma**
+
 ```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
 **Krypterade**
+
 ```csharp
 public static class AsymmetricKeyEncryptionHelper
 {

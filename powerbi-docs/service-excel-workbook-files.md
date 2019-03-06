@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8568013438f6be84b2d4a48efdeffd99db352ed8
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285632"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892377"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hämta data från Excel-arbetsboksfiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -53,7 +53,7 @@ Det här användbara videoklippet visar dig hur du kan förbereda dina Excel-arb
 ## <a name="where-your-workbook-file-is-saved-makes-a-difference"></a>Det spelar roll vart du sparar arbetsbokfilen
 **Lokalt** – Om du sparar din arbetsbokfil till en lokal enhet på datorn eller en annan plats inom din organisation, från Power BI så kan du hämta den till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen har i själva verket inte importerats till Power BI. Det som händer är att en ny datauppsättning skapas i Power BI och data och datamodellen (i förekommande fall) i arbetsboken läses in i datauppsättningen. Om din arbetsbok innehåller rapporter kommer de att visas på Power BI-webbplatsen under Rapporter. Excel 2016 också har funktionen **Publicera** (under menyn **Arkiv**). Funktionen **Publicera** är detsamma som att använda **Hämta Data > Filer > Lokal fil** från Power BI, men det är ofta lättare att uppdatera datamängden i Power BI om du regelbundet gör ändringar i arbetsboken.
 
-**OneDrive företag ** – om du har OneDrive för företag och du loggar in med samma konto som du använder för Power BI, är detta det mest effektiva sättet att behålla ditt arbete i Excel och din datauppsättning, rapporter och instrumentpaneler i Power BI synkroniserade. Eftersom både Power BI och OneDrive finns i molnet, *ansluter* Power BI till din arbetsboksfil på OneDrive någon gång i timmen. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt. Precis som om du har sparat arbetsboken till en lokal enhet kan du också Publicera för att uppdatera datauppsättningen och rapporter i Power BI omedelbart. Annars synkroniseras Power BI automatiskt, vanligen inom en timme.
+**OneDrive företag**  – om du har OneDrive för företag och du loggar in med samma konto som du använder för Power BI, är detta det mest effektiva sättet att behålla ditt arbete i Excel och din datauppsättning, rapporter och instrumentpaneler i Power BI synkroniserade. Eftersom både Power BI och OneDrive finns i molnet, *ansluter* Power BI till din arbetsboksfil på OneDrive någon gång i timmen. Om det finns ändringar uppdateras dina datauppsättningar, rapporter och instrumentpaneler i Power BI automatiskt. Precis som om du har sparat arbetsboken till en lokal enhet kan du också Publicera för att uppdatera datauppsättningen och rapporter i Power BI omedelbart. Annars synkroniseras Power BI automatiskt, vanligen inom en timme.
 
 **OneDrive – personlig** – om du sparar arbetsboksfiler på ditt eget OneDrive-konto får du många av de fördelar som du får med OneDrive för företag. Den största skillnaden är att när du första gången ansluter till din fil (med Hämta data > Filer > OneDrive – personlig) måste du logga in i OneDrive med ditt Microsoft-konto som vanligtvis skiljer sig från det konto du använder för att logga in i Power BI. När du loggar in i OneDrive med ditt Microsoft-konto, måste du markera alternativet Jag vill förbli inloggad. På så sätt kan Power BI ansluta till din arbetsboksfil ungefär en gång i timmen och kontrollera att din datauppsättning och dina rapporter i Power BI är synkroniserade.
 
@@ -78,7 +78,7 @@ När du väljer **Anslut** visas arbetsboken i Power BI precis som den skulle ha
 
 Du kan inte redigera din arbetsbok i Power BI. Men om du behöver göra några ändringar kan du välja Redigera och sedan välja att redigera din arbetsbok i Excel Online eller öppna den i Excel på datorn. Alla ändringar du gör sparas i arbetsboken på OneDrive.
 
-När du väljer den här metoden skapas inte någon datauppsättning i Power BI. Din arbetsbok visas i Rapporter i navigeringsfönstret för Power BI-arbetsytan. Anslutna arbetsböcker har en särskild Excel-ikon.
+När du väljer det här sättet skapar Power BI en motsvarande datauppsättning för den anslutna arbetsboken. Du kan använda den här datauppsättningen till att skapa en Power BI-rapport om det behövs. Din arbetsbok visas även i Rapporter i navigeringsfönstret för Power BI-arbetsytan. Anslutna arbetsböcker har en särskild Excel-ikon.
 
 Välj det här alternativet om du enbart har data i kalkylbladen eller om du har intervall, pivottabeller och diagram som du vill fästa på instrumentpaneler.
 
