@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f13074c2123808e7b26d40f9c5a7e20cbf0da6e4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e1d8d240e4fd5bc05fc015f1c12971a8646370dd
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291815"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226122"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda resursbaserad Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -39,7 +39,7 @@ I en standardinstallation körs gatewayen som ett datorlokalt tjänstkonto för 
 
 ![Domänkonto](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-För att aktivera **Kerberos-begränsad delegering så måste gatewayen köras som ett domänkonto, om inte din Azure AD redan har synkroniserats med din lokala Active Directory (med Azure AD DirSync/Connect). Om du vill växla kontot till ett domänkonto kan du läsa [Ändra gatewayen till ett domänkonto](service-gateway-sso-kerberos.md#switching-the-gateway-to-a-domain-account) senare i den här artikeln.
+För att aktivera **Kerberos-begränsad delegering så måste gatewayen köras som ett domänkonto, om inte din Azure AD redan har synkroniserats med din lokala Active Directory (med Azure AD DirSync/Connect). Mer information om att växla kontot till ett domänkonto finns i [Ändra gatewayen till ett domänkonto](service-gateway-sso-kerberos.md).
 
 Om Azure AD DirSync/Connect har konfigurerats och användarkonton har synkroniserats så behöver inte gatewaytjänsten utföra lokala AD-sökningar vid körning. Du kan använda ditt lokala tjänst-SID (i stället för att kräva ett domänkonto) för gatewaytjänsten. Konfigurationsstegen för Kerberos-begränsad delegering som beskrivs i den här artikeln motsvarar den konfigurationen (de tillämpas helt enkelt på gatewayens datorobjekt i Active Directory i stället för domänkontot).
 

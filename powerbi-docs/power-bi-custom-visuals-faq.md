@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: c33ec747af514611df0ef00832acb785f04c40f1
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892331"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014172"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Vanliga frågor och svar om anpassade visuella Power BI-objekt
 
@@ -99,7 +99,7 @@ Vissa visuella objekt är inte certifierade eftersom de inte är kompatibla med 
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Vad är ett visuellt objekt med ytterligare köp?
 
-Ett visuellt objekt med ytterligare köp liknar köp via app-tillägg (IAP-tillägg) i marknadsplatsen. Dessa tillägg har prislappen **Ytterligare köp kan krävas**.
+Ett visuellt objekt med ytterligare köp liknar köp via app-tillägg (IAP-tillägg) på Marketplace. Dessa tillägg har prislappen**Ytterligare köp kan krävas**.
 
 Anpassade visuella IAP-objekt är kostnadsfria, nedladdningsbara anpassade visuella objekt, så användare behöver inte betala något för att ladda ned de här anpassade visuella objekten från marknadsplatsen. Med visuella IAP-objekt erbjuds valfria köp via app för avancerade funktioner.  
 

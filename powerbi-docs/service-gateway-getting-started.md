@@ -1,5 +1,5 @@
 ---
-title: Vad är Power BI-gatewayer?
+title: Vad är lokala datagatewayer?
 description: Lär dig grunderna om datagatewayer för Power BI.
 author: mgblythe
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: f1ae47dcb7c9281db018952d619691607d331003
+ms.sourcegitcommit: 87e81ba92f3d1d65c26f9fc007bf106f96f37bfd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324494"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461659"
 ---
-# <a name="what-are-power-bi-gateways"></a>Vad är Power BI-gatewayer?
+# <a name="what-are-on-premises-data-gateways"></a>Vad är lokala datagatewayer?
 
 En Power BI-gateway är en programvara som du installerar i ett lokalt nätverk. Den möjliggör åtkomst till data i nätverket. Den är som en grindvakt som lyssnar efter anslutningsbegäranden och bara beviljar dem när användarens begäranden uppfyller vissa villkor. Detta gör att organisationer kan förvara databaser och andra datakällor i sina lokala nätverk, men ändå använda dem på ett säkert sätt i Power BI-rapporter och instrumentpaneler.
 

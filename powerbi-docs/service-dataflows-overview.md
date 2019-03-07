@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 03/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d388812985ce30b5692a385fc44e3cf7fc49161f
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892354"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226099"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Dataförberedelser med självbetjäning i Power BI (förhandsversion)
 
@@ -75,9 +75,7 @@ Läs mer om Azure Data Lake Storage Gen2 och dataflödesintegration, inklusive h
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Dataflödesfunktioner i Power BI Premium
 
-För att dataflödesfunktioner och arbetsbelastningar ska fungera i en Power BI Premium-prenumeration, måste dataflödets arbetsbelastning för Premium-kapaciteten vara aktiverad. Du kan läsa mer om Power BI Premium i artikeln [Vad är Power BI Premium?](service-premium.md). 
-
-I följande tabell beskrivs dataflödesfunktioner och deras kapacitet när du använder ett Power BI Pro-konto, samt hur det skiljer sig mot att använda Power BI Premium.
+För att dataflödesfunktioner och arbetsbelastningar ska fungera i en Power BI Premium-prenumeration, måste dataflödets arbetsbelastning för Premium-kapaciteten vara aktiverad. I följande tabell beskrivs dataflödesfunktioner och deras kapacitet när du använder ett Power BI Pro-konto, samt hur det skiljer sig mot att använda Power BI Premium.
 
 
 |Dataflödesfunktioner | Power BI Pro |   Power BI Premium |
@@ -95,7 +93,7 @@ I följande tabell beskrivs dataflödesfunktioner och deras kapacitet när du an
 |Länkade entiteter för dataflöden| |        +|
 |Standardiserat schema / inbyggt stöd för Common Data Service|  +|  +|
 
-Mer information om hur du aktiverar dataflödesarbetsbelastningar för premiumkapacitet finns i artikeln [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads) för Power BI premium. Dataflödets arbetsbelastningar är inte tillgängliga i multi-geo-kapaciteter.
+Mer information om hur du aktiverar dataflödesarbetsbelastningar för premiumkapacitet finns i [Konfigurera arbetsbelastningar i en Premium-kapacitet](service-admin-premium-workloads.md). Dataflödets arbetsbelastningar är inte tillgängliga i multi-geo-kapaciteter.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Sammanfattning av dataförberedelser med självbetjäning för stordata i Power BI
 Som nämnts tidigare i den här artikeln finns det många scenarier och exempel där **dataflöden** kan ge dig bättre kontroll – och snabbare insikter – från dina affärsdata. Med hjälp av en standarddatamodell (schema) som definieras av Common Data Service, kan du med dataflöden importera dina viktiga affärsdata och ha datan redo för modellering och skapande av BI-insikter på kortare tid ... vilket tidigare brukade ta månader eller ännu längre tid att åstadkomma. 

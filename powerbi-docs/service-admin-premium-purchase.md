@@ -8,18 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 02/28/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8922bb329e4b598745fd259c67e74b063368b7be
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892400"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014149"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
-Den här artikeln beskriver hur du köper Power BI Premium-kapacitet (P1–P3) till din organisation. Du köper Power BI Premium-kapacitet i administrationscentret för Office 365, och du [hanterar kapaciteterna](service-admin-premium-manage.md) i administratörsportalen för Power BI. Aktuell information om prissättning och planering finns på [prissättningssidan för Power BI](https://powerbi.microsoft.com/pricing/) och [Power BI Premium-kalkylatorn](https://powerbi.microsoft.com/calculator/).
+> [!NOTE]
+> Den här artikeln håller på att uppdateras för att beskriva nya funktioner, ge mer information och förbättra läsbarheten. 
+
+Den här artikeln beskriver hur du köper Power BI Premium-kapacitet (P1–P3) till din organisation. Du köper Power BI Premium-kapacitet i administrationscentret för Office 365, och du hanterar kapaciteterna i administratörsportalen för Power BI. Aktuell information om prissättning och planering finns på [prissättningssidan för Power BI](https://powerbi.microsoft.com/pricing/) och [Power BI Premium-kalkylatorn](https://powerbi.microsoft.com/calculator/).
 
 Innehållsskapare behöver fortfarande en Power BI Pro-licens, även om organisationen använder Power BI Premium. Se till att du köper minst en Power BI Pro-licens för din organisation.
 

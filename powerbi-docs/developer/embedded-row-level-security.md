@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f50305eed647bfc94bc5c19ee1a298cb9ac9c782
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762707"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57328020"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -89,7 +89,7 @@ API:et tillåter en lista med identiteter med information om relevanta dataupps�
 
 Du kan skapa en inbäddningstoken med hjälp av metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**.
 
-Du kan till exempel ändra exemplet [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data). *Home\HomeController.cs rad 76 och 77* kan uppdateras från:
+Du kan till exempel ändra exemplet [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data). *Services\EmbedService.cs rad 76 och 77* kan uppdateras från:
 
 ```csharp
 // Generate Embed Token.

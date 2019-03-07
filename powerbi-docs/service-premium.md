@@ -8,19 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 02/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: a048f589b19acd1a7c38a5b81cf781d1e76b7b5b
-ms.sourcegitcommit: 187d20180d9bae5a2ec53748cede9e7301e0343e
+ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56725350"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226145"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Vad är Microsoft Power BI Premium?
 
-Microsoft Power BI Premium innehåller resurser som är dedikerade för att köra Power BI-tjänsten för din organisation. Det ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också omfattande distribution av innehåll, utan att varje användare behöver köpa en egen Pro-licens.  
+> [!NOTE]
+> Den här artikeln håller på att uppdateras till att beskriva nya funktioner, ge mer information och förbättra läsbarheten. Den senaste informationen finns i [Distribuera och hantera Power BI Premium-kapaciteter](whitepaper-powerbi-premium-deployment.md).
+
+Power BI Premium innehåller resurser som är dedikerade att köra Power BI-tjänsten för din organisation. Det ger dig mer tillförlitlig prestanda och större datavolymer. Premium möjliggör också omfattande distribution av innehåll, utan att varje användare behöver köpa en egen Pro-licens.  
 
 ## <a name="premium-capacity-and-shared-capacity"></a>Premium-kapacitet och delad kapacitet
 
@@ -79,9 +82,7 @@ Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-k
 
 ## <a name="workloads-in-premium-capacity"></a>Arbetsbelastningar i Premium-kapacitet
 
-Tänk på en arbetsbelastning i Power BI som en av de många tjänster som du kan visa användarna. Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet.
-
-Vi erbjuder nu stöd för förhandsversioner av två ytterligare arbetsbelastningar: **Sidnumrerade rapporter** och **dataflöden**. Du aktiverar de här arbetsbelastningarna i Power BI-adminstrationsportalen eller via Power BI REST API. Du kan också ange maximalt minne varje arbetsbelastning kan använda, så att du kan styra hur de olika arbetsbelastningarna påverkar varandra. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-manage.md#configure-workloads).
+Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Premium stöder också ytterligare arbetsbelastningar för **AI**, **Dataflöden** och **Sidnumrerade rapporter**. Du aktiverar de här arbetsbelastningarna i Power BI-adminstrationsportalen eller via Power BI REST API. Du kan också ange maximalt minne varje arbetsbelastning kan använda, så att du kan styra hur de olika arbetsbelastningarna påverkar varandra. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
 
 ### <a name="default-memory-settings"></a>Standardinställningar för minne
 
@@ -114,10 +115,10 @@ Med Power BI Premium ingår också möjligheten att köra Power BI-rapportserver
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)
-[Så här köper du Power BI Premium](service-admin-premium-purchase.md)
-[Hantera Power BI Premium](service-admin-premium-manage.md)
-[Vitbok om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Vitbok om att planera en företagsdistribution för Power BI Enterprise](https://aka.ms/pbienterprisedeploy)
+[Distribuera och hantera Power BI Premium-kapaciteter](whitepaper-powerbi-premium-deployment.md)   
+[Så här köper du Power BI Premium](service-admin-premium-purchase.md)   
+[Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)   
+
+
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

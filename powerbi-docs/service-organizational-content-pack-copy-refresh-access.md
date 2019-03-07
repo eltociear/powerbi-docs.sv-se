@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42e9f69c3cdab945c0f000a0cc2ae4654d9ec9b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296135"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196446"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: Kopiera, uppdatera och få åtkomst
 
@@ -36,6 +36,12 @@ Skapa din egen kopia av innehållspaketet som inte är synligt för andra.
 2. Välj **Spara**.  
 
 Nu har du en kopia som du kan ändra. Ingen annan kommer att se de ändringar du gör.
+
+> [!NOTE]
+> Tidigare när du installerade ett innehållspaket eller skapade en kopia, visades en ny datamängd i innehållslistan för arbetsytan. En nyligen genomförd uppdatering förenklar upplevelsen genom att enbart visa ett objekt med hjälp av den nya ikonen för datamängden som refereras:
+>
+> ![ikon för databas med länk](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
+> 
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Hjälp!  Jag kan inte längre komma åt innehållspaketet
 Detta kan bero på flera orsaker:

@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: c5915f4f2792496a1521a868180d4ffc2dca3557
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248917"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014425"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjänstens huvudnamn med Power BI (förhandsversion)
 
@@ -165,7 +165,7 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 
 * Tjänstens huvudnamn fungerar bara med [nya apparbetsytor](../service-create-the-new-workspaces.md).
 * **Min arbetsyta** stöds inte när du använder tjänstens huvudnamn.
-* [Dedikerad kapacitet](../service-admin-premium-manage.md) krävs när du flyttar till produktion.
+* Dedikerad Premium-kapacitet krävs när du flyttar till produktion.
 * Du kan inte logga in på Power BI-portal med tjänstens huvudnamn.
 * Power BI-administratörsbehörighet krävs för att aktivera tjänstens huvudnamn i inställningarna för utvecklare i Power BI-administratörsportalen.
 * Du kan inte installera eller hantera en lokal datagateway med tjänstens huvudnamn.
