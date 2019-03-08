@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5aaa50aff2302742d6845c9cb16b0fc36ea2677
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276800"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555689"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -41,26 +41,26 @@ Artikeln [Power BI och DirectQuery](desktop-directquery-about.md) beskriver **Di
 ## <a name="benefits-of-using-directquery"></a>Fördelar med att använda DirectQuery
 Det finns några fördelar med att använda **DirectQuery**:
 
-* Med **DirectQuery** kan du skapa visualiseringar över mycket stora datamängder där det annars skulle vara ohållbart att först importera alla data med för-aggregering
+* Med **DirectQuery** kan du skapa visualiseringar över mycket stora datamängder där det annars skulle vara ohållbart att först importera alla data med förhandsaggregering
 * Ändringar i underliggande data kan kräva att data uppdateras och för vissa rapporter kan behovet av att visa aktuella data kräva stora dataöverföringar, vilket gör det ohållbart att importera data på nytt. Däremot använder **DirectQuery**-rapporter alltid aktuella data
 * 1 GB datamängdsbegränsning gäller *inte* för **DirectQuery**
 
 ## <a name="limitations-of-directquery"></a>Begränsningar hos DirectQuery
 Det finns några begränsningar med att använda **DirectQuery**:
 
-* Alla tabeller måste komma från en enskild databas
+* Alla tabeller måste komma från en enda databas, om du inte använder [sammansatta modeller](desktop-composite-models.md)
 * Om frågan till **frågeredigeraren** är alltför komplex uppstår ett fel. För att åtgärda felet måste du antingen ta bort det problematiska steget i **frågeredigeraren** eller *importera* data istället för att använda **DirectQuery**. För flerdimensionella källor som SAP Business Warehouse finns ingen **frågeredigerare**
 * Filtrering av relationen är begränsad till en riktning i stället för i båda riktningarna (även om det är möjligt att aktivera korsfiltrering i båda riktningarna för **DirectQuery** som en förhandsvisningsfunktion). För flerdimensionella källor som SAP Business Warehouse finns det inga definierade relationer i modellen
-* Tidsinformationsfunktioner är inte tillgängliga i **DirectQuery**. Till exempel stöds särskild behandling för datumkolumnerna (år, kvartal, månad, dag, osv) inte i **DirectQuery**-läge.
+* Tidsinformationsfunktioner är inte tillgängliga i **DirectQuery**. Till exempel stöds särskild behandling för datumkolumnerna (år, kvartal, månad, dag, osv) inte i **DirectQuery**-läget.
 * Som standard är DAX-uttryck begränsade för mått. Se följande stycke (efter punktlistan) för mer information
-* Det finns en begränsning på 1 miljon rader för att returnera data när du använder **DirectQuery**. Detta påverkar inte aggregeringar och beräkningar som används för att skapa datauppsättningen som returneras med **DirectQuery**, utan endast rader returneras. Du kan till exempel sammanställa 10 miljoner rader med din fråga som körs på datakällan och korrekt returnerar resultat som aggregeringar till Power BI med hjälp av **DirectQuery** så länge data som returneras till Power BI är mindre än 1 miljon rader. Om mer än 1 miljoner rader ska returneras från **DirectQuery** returnerar Power BI ett fel.
+* Det finns en begränsning på en miljon rader för att returnera data när du använder **DirectQuery**. Denna begränsning påverkar inte aggregeringar eller beräkningar som används för att skapa datauppsättningen som returneras med **DirectQuery**, utan endast rader som returneras. Du kan till exempel sammanställa 10 miljoner rader med din fråga som körs på datakällan och korrekt returnerar resultat som aggregeringar till Power BI med hjälp av **DirectQuery** så länge data som returneras till Power BI är mindre än 1 miljon rader. Om mer än 1 miljoner rader ska returneras från **DirectQuery** returnerar Power BI ett fel.
 
 För att säkerställa att frågor som skickats till den underliggande datakällan har acceptabel prestanda, gäller begränsningar för mått som standard. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **DirectQuery**, följt av alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
 
 ## <a name="important-considerations-when-using-directquery"></a>Att tänka på när du använder DirectQuery
 Följande tre punkter ska beaktas när du använder **DirectQuery**:
 
-* **Prestanda och belastning** – alla **DirectQuery**-begäranden skickas till källdatabasen så att den tid som krävs för att uppdatera ett visuellt objekt är beroende av hur lång tid tar att svara med resultatet från frågan (eller frågorna). Den rekommenderade svarstiden (där begärda data returneras) för att använda **DirectQuery** för visuella objekt är fem sekunder eller mindre, med en maximal rekommenderad resultatsvarstid på 30 sekunder. Om det tar längre blir upplevelsen för användaren oacceptabel. Dessutom, när en rapport har publicerats till Power BI-tjänsten kan alla frågor som tar längre tid än några minuter avbrytas och användaren får ett felmeddelande.
+* **Prestanda och belastning** – alla **DirectQuery**-begäranden skickas till källdatabasen så att den tid som krävs för att uppdatera ett visuellt objekt är beroende av hur lång tid tar att svara med resultatet från frågan (eller frågorna). Den rekommenderade svarstiden (där begärda data returneras) för att använda **DirectQuery** för visuella objekt är fem sekunder eller mindre, med en maximal rekommenderad resultatsvarstid på 30 sekunder. Om det tar längre blir upplevelsen för användaren oacceptabel. När en rapport har publicerats till Power BI-tjänsten kan dessutom alla frågor som tar längre tid än några minuter avbrytas och användaren får ett felmeddelande.
   
   Belastningen på källdatabasen bör också övervägas, baserat på antalet Power BI-användare som kommer att använda den publicerade rapporten. Användning av *säkerhet på radnivå* (RLS) kan ha en betydande inverkan; en icke-RLS-instrumentpanel delas av flera användare resultat i en enskild fråga till databasen, men med RLS på en instrumentpanel innebär att en uppdatering av en panel kräver en fråga *per användare*, vilket ökar belastningen på källdatabasen avsevärt och potentiellt påverkar prestandan.
   

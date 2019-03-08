@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7b835231356ad14ab434b86a2d1f99aa7212358d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 2f64973650edd951a9a780090426afba3e8471f5
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215652"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555595"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Exportera rapporter till PDF från Power BI Desktop
-I **Power BI Desktop** kan du exportera rapporter till en PDF-fil och på så sätt enkelt dela eller skriva ut dina rapporter från PDF-filen.
+I **Power BI Desktop** eller Power BI desktop-tjänsten kan du exportera rapporter till en PDF-fil och på så sätt enkelt dela eller skriva ut dina rapporter från PDF-filen.
 
 ![Exportera till PDF](media/desktop-export-to-pdf/export-to-pdf_01.png)
 
@@ -35,7 +35,6 @@ När exporten har slutförts läses PDF-filen in i det förvalda PDF-visningspro
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Det finns några saker som du bör tänka på när du använder funktionen **Exportera till PDF**:
 
-* Funktionen **Exportera till PDF** är endast tillgänglig med **Power BI Desktop**, och är för närvarande inte tillgänglig i **Power BI-tjänsten**.
 * Anpassade visuella objekt exporteras med funktionen, men skrivbordsunderlägg som har lagts till i rapporten exporteras *inte*.
 
 Eftersom skrivbordsunderlägg inte exporteras till PDF-filen bör du vara särskilt uppmärksam på rapporter som har mörk bakgrund. Om texten i rapporten är ljus eller vit, så att den framhävs mot den mörka bakgrunden, blir den svårläst eller oläslig eftersom funktionen Exportera till PDF inte exporterar skrivbordsunderlägget med resten av rapporten. 

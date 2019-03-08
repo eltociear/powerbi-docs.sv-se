@@ -1,5 +1,5 @@
 ---
-title: Använd lagringsläge i Power BI Desktop (förhandsversion)
+title: Använda lagringsläget i Power BI Desktop
 description: Använd lagringsläget om du vill att data ska cachelagras minnesinternt för rapporter i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 02/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279192"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555857"
 ---
-# <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringsläge i Power BI Desktop (förhandsversion)
+# <a name="storage-mode-in-power-bi-desktop"></a>Lagringsläge i Power BI Desktop
 
 I Microsoft Power BI Desktop kan du ange *lagringsläge* för tabeller. *Lagringsläge* låter dig kontrollera om Power BI Desktop cachelagrar tabellen i minnet för rapporter. 
 
@@ -37,9 +37,9 @@ Att konfigurera lagringsläget ger många fördelar. Du kan ange lagringsläget 
 
 Inställningen för lagringsläget i Power BI Desktop är en av tre relaterade funktioner:
 
-* **Sammansatta modeller**: Låter en rapport ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Du hittar mer information i [Använd sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
+* **Sammansatta modeller**: Låter en rapport ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Mer information finns i [Använda sammansatta modeller i Power BI Desktop](desktop-composite-models.md).
 
-* **Många-till-många-relationer**: Med *sammansatta modeller* så kan du etablera *många-till-många-relationer* mellan tabeller. *Många-till-många-relationer* tar bort krav för unika värden i tabeller. Det tar också bort tidigare lösningar, till exempel introduktion till nya tabeller endast för att skapa relationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md).
+* **Många-till-många-relationer**: Med *sammansatta modeller* så kan du etablera *många-till-många-relationer* mellan tabeller. *Många-till-många-relationer* tar bort krav för unika värden i tabeller. Det tar också bort tidigare lösningar, till exempel introduktion till nya tabeller endast för att skapa relationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Lagringsläge**: Nu kan du ange vilka visuella objekt som kräver en fråga till serverdelens datakällor. Visuella objekt som inte kräver en fråga importeras även om de är baserade på DirectQuery. Den här funktionen hjälper till att förbättra prestanda och minskar belastningen på serversidan. Tidigare initierade även enkla visuella objekt som utsnitt frågor som skickades till serverdelskällor. Lagringsläget beskrivs ytterligare i den här artikeln.
 
@@ -127,13 +127,13 @@ Följande fråga är intressant eftersom den kombinerar båda kolumnerna. Den h�
 ![Skript för lagringslägesdiagnostik](media/desktop-storage-mode/storage-mode_08.png)
 
 > [!NOTE]
-> Det här beteendet skiljer sig från [många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md) när du kombinerar cachelagrade och icke-cachelagrade tabeller.
+> Det här beteendet skiljer sig från [många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md) när du kombinerar cachelagrade och icke-cachelagrade tabeller.
 
 ## <a name="caches-should-be-kept-in-sync"></a>Cacheminnen bör hållas synkroniserade
 
 De frågor som visas i föregående avsnitt visar att **dubbla** tabeller ibland träffar och ibland missar cacheminnet. Om cacheminnet är för gammalt kan därför olika värden returneras. Frågekörningen försöker inte maskera dataproblem genom att t.ex. filtrera DirectQuery-resultaten så att matchar cachelagrade värden. Det är ditt ansvar att känna till dina dataflöden, och du bör agera därefter. Det finns etablerade tekniker för att hantera sådana fall vid källan, om så behövs.
 
-Lagringsläget *Dubbla* är en prestandaoptimering. Det bör endast användas på sätt som inte äventyrar möjligheten att uppfylla verksamhetskraven. När det gäller alternativa beteenden så överväg att använda de metoder som beskrivs i artikeln [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md).
+Lagringsläget *Dubbla* är en prestandaoptimering. Det bör endast användas på sätt som inte äventyrar möjligheten att uppfylla verksamhetskraven. När det gäller alternativa beteenden så kan du överväga att använda de metoder som beskrivs i artikeln [Många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
 ## <a name="data-view"></a>Datavy
 Om minst en tabell i datauppsättningen har konfigurerat lagringsläget till endera **Import** eller **Dubbla**, så visas fliken **Datavy**.
@@ -162,7 +162,7 @@ De befintliga begränsningarna med att använda DirectQuery gäller fortfarande 
 ## <a name="next-steps"></a>Nästa steg
 
 Mer information om sammansatta modeller och DirectQuery finns i följande artiklar:
-* [Sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md)
-* [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md)
+* [Sammansatta modeller i Power BI Desktop](desktop-composite-models.md)
+* [Många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
 * [Använda DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery i Power BI](desktop-directquery-data-sources.md)
