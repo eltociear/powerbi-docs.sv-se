@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: f6a17a3e4033d5a97c5ae7744fef955aeed16eeb
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.openlocfilehash: c1ca797efa2e40bf74384a1e9f2362acd26c6f8f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327744"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555646"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Security Assertion Markup Language (SAML) för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -38,6 +38,8 @@ Om du vill använda SAML genererar du först ett certifikat för SAML-identitets
     ```
 
 1. I SAP HANA Studio högerklickar du på din SAP HANA-server och navigerar sedan till **Säkerhet** > **Open Security Console (Öppna säkerhetskonsol)** > **SAML Identity Provider (SAML-identitetsprovider)** > **OpenSSL Cryptographic Library (kryptografiskt bibliotek för OpenSSL)**.
+
+    Det är också möjligt att använda det kryptografiska SAP-biblioteket (kallas även CommonCryptoLib eller sapcrypto) istället för OpenSSL för att slutföra de här installationsstegen. Läs den officiella SAP-dokumentationen för mer information.
 
 1. Välj **Importera**, navigera till samltest.crt och importera den.
 
@@ -121,6 +123,37 @@ Slutligen följer du dessa steg för att lägga till tumavtrycket för certifika
 Nu kan du använda sidan **Hantera gateway** i Power BI för att konfigurera datakällan och för att under dess **Avancerade inställningar** aktivera enkel inloggning. Du kan sedan publicera rapporter och datamängder med bindning till den datakällan.
 
 ![Avancerade inställningar](media/service-gateway-sso-saml/advanced-settings.png)
+
+## <a name="troubleshooting"></a>Felsökning
+
+När du har konfigurerat enkel inloggning kan följande felmeddelande visas i Power BI-portalen: ”De tillhandahållna autentiseringsuppgifterna kan inte användas för SapHana-källan.” Det här felet indikerar att SAML-autentiseringsuppgifterna avvisades av SAP HANA.
+
+Autentiseringsspårning ger detaljerad information för felsökning av problem med autentisering på SAP HANA. Följ de här stegen för att konfigurera spårning för din SAP HANA-server.
+
+1. Aktivera autentiseringsspårning genom att köra följande fråga på SAP HANA-servern.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') set ('trace', 'authentication') = 'debug' with reconfigure 
+    ```
+
+1. Återskapa ditt problem.
+
+1. Öppna administrationskonsolen i HANA Studio och gå till fliken **Diagnosis Files** (diagnostikfiler).
+
+1. Öppna den senaste spårningen av indexservern och sök efter SAMLAuthenticator.cpp.
+
+    Du bör hitta ett detaljerat felmeddelande som anger den grundläggande orsaken, som i följande exempel.
+
+    ```
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815797 d Authentication   SAMLAuthenticator.cpp(00091) : Element '{urn:oasis:names:tc:SAML:2.0:assertion}Assertion', attribute 'ID': '123123123123123' is not a valid value of the atomic type 'xs:ID'.
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815914 i Authentication   SAMLAuthenticator.cpp(00403) : No valid SAML Assertion or SAML Protocol detected
+    ```
+
+1. När du har slutfört felsökningen kan du stänga av autentiseringsspårningen genom att köra följande fråga.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') UNSET ('trace', 'authentication');
+    ```
 
 ## <a name="next-steps"></a>Nästa steg
 
