@@ -710,6 +710,8 @@ items:
         href: refresh-troubleshooting-tile-errors.md
       - name: Så här uppdaterar du dina innehållspaketautentiseringsuppgifter för Xero om uppdateringen misslyckades
         href: service-refresh-xero-credentials.md
+      - name: Det går inte att logga in
+        href: power-bi-cannot-sign-in.md
     - name: Andra uppgifter
       items:
       - name: Byt namn på innehåll i Power BI
@@ -1315,9 +1317,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 745db3e8002feaa9728a746167e585c62a4420a4
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 45e6ec57f6fd9a0b02c6139b1bb6e3249edcbadc
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580276"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757448"
