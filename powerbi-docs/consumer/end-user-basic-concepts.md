@@ -12,33 +12,33 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: db9f6218d0657946f04b7589a15be99270cf7030
-ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
+ms.openlocfilehash: 8172934357c24516a40a670c68e008521bd4d82d
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57196469"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580115"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Grundläggande begrepp för ***användare*** av Power BI-tjänsten
 
 ## <a name="power-bi-consumers-and-designers"></a>*Användare* och *designers* av Power BI
-Den här artikeln förutsätter att du redan har läst [översikten över Power BI](../power-bi-overview.md) och har identifierat dig själv som ***användare*** av Power BI. Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI. 
+Den här artikeln förutsätter att du redan har läst [översikten över Power BI](../power-bi-overview.md) och har identifierat dig själv som ***användare*** av Power BI. Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
 
-Du kommer säkerligen att höra termen ”Power BI Desktop” eller bara ”Desktop”, och det här är ett fristående verktyg som används av *designers* som skapar och delar instrumentpaneler och rapporter med dig. Det är viktigt att veta att det finns andra Power BI-verktyg, men så länge du är användare arbetar du bara med Power BI-tjänsten. Och den här artikeln gäller endast för Power BI-tjänsten. 
+Du kommer säkerligen att höra termen ”Power BI Desktop” eller bara ”Desktop”, och det här är ett fristående verktyg som används av *designers* som skapar och delar instrumentpaneler och rapporter med dig. Det är viktigt att veta att det finns andra Power BI-verktyg, men så länge du är användare arbetar du bara med Power BI-tjänsten. Och den här artikeln gäller endast för Power BI-tjänsten.
 
 ## <a name="terminology-and-concepts"></a>Termer och begrepp
 Den här artikeln är inte en visuell genomgång av Power BI eller en praktisk självstudie. I stället är den en översiktsartikel som vi hoppas kommer att bekanta dig med termer och begrepp i Power BI. Det gäller alltså jargongen och hur det ser ut i allmänhet. Om du vill få en genomgång av Power BI-tjänsten och dess navigering kan du [ta en rundtur](end-user-experience.md).
 
 ## <a name="open-power-bi-service-for-the-first-time"></a>Öppna Power BI-tjänsten för första gången
-De flesta Power BI-användare skaffar Power BI-tjänsten eftersom 1) deras företag köper licenser och 2) en administratör tilldelar de licenserna till medarbetare. 
+De flesta Power BI-användare skaffar Power BI-tjänsten eftersom 1) deras företag köper licenser och 2) en administratör tilldelar de licenserna till medarbetare.
 
 För att komma igång öppnar du en webbläsare och anger **app.powerbi.com**. Första gången du öppnar Power BI-tjänsten ser det ut ungefär så här.
 
 ![Välkomstskärm för Power BI-tjänsten](media/end-user-basic-concepts/power-bi-open.png)
 
-När du använder Power BI anpassar du det som visas när du öppnar webbplatsen varje gång.  Till exempel föredrar vissa att Power BI öppnas till startsidan, medan andra har en favoritinstrumentpanel som de vill se först. Det kommer vi att gå igenom. 
+När du använder Power BI anpassar du det som visas när du öppnar webbplatsen varje gång.  Till exempel föredrar vissa att Power BI öppnas till startsidan, medan andra har en favoritinstrumentpanel som de vill se först. Det kommer vi att gå igenom.
 - [Förhandsgranskning av Start](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
-- [Ange innehåll som **aktuellt**](end-user-featured.md) 
+- [Ange innehåll som **aktuellt**](end-user-featured.md)
 
 ![visar startsidan vy och instrumentpanelsvy](media/end-user-basic-concepts/power-bi-first.png)
 
@@ -46,12 +46,12 @@ Men innan vi fortsätter går vi igenom de byggstenar som utgör Power BI-tjäns
 
 ## <a name="power-bi-content"></a>Power BI-***innehåll***
 ### <a name="introduction-to-building-blocks"></a>Introduktion till byggstenar
-För Power BI-användare är de 5 byggblocken: ***visualiseringar***, ***instrumentpaneler***, ***rapporter***, ***appar*** och ***datamängder***. Dessa kallas ibland *Power BI*-***innehåll***. Och *innehåll* finns i ***arbetsytor***. Ett vanligt arbetsflöde inbegriper alla dessa byggstenar:  En Power BI-*designer* (gul i diagrammet nedan) samlar in data från *datamängder* hämtar in dem till Power BI för analys, skapar  *rapporter* med *visualiseringar* som visar intressanta fakta och insikter, fäster visualiseringar från rapporter på en instrumentpanel och delar rapporter och instrumentpanelerna med *användare* som du (svarta i diagrammet nedan) i form av *appar* eller andra typer av delat innehåll. 
+För Power BI-användare är de 5 byggblocken: ***visualiseringar***, ***instrumentpaneler***, ***rapporter***, ***appar*** och ***datamängder***. Dessa kallas ibland *Power BI*-***innehåll***. Och *innehåll* finns i ***arbetsytor***. Ett vanligt arbetsflöde inbegriper alla dessa byggstenar:  En Power BI-*designer* (gul i diagrammet nedan) samlar in data från *datamängder* hämtar in dem till Power BI för analys, skapar  *rapporter* med *visualiseringar* som visar intressanta fakta och insikter, fäster visualiseringar från rapporter på en instrumentpanel och delar rapporter och instrumentpanelerna med *användare* som du (svarta i diagrammet nedan) i form av *appar* eller andra typer av delat innehåll.
 
 ![flödesschema, grundläggande](media/end-user-basic-concepts/power-bi-workflow.png)
 
-I dess mest grundläggande form 
-* är ![visualiseringsikon](media/end-user-basic-concepts/visual.png) en ***visualisering*** (eller *visuellt objekt*) en typ av diagram som skapas av Power BI-*designers* med hjälp av data i *rapporter* och *datamängder*. Normalt skapar *designers* visuella objekt i Power BI Desktop. 
+I dess mest grundläggande form
+* är ![visualiseringsikon](media/end-user-basic-concepts/visual.png) en ***visualisering*** (eller *visuellt objekt*) en typ av diagram som skapas av Power BI-*designers* med hjälp av data i *rapporter* och *datamängder*. Normalt skapar *designers* visuella objekt i Power BI Desktop.
 
     Mer information finns i [Visualiseringar för Power BI-*användare*](end-user-visualizations.md)
 
@@ -67,7 +67,7 @@ I dess mest grundläggande form
 
 * ![appikon](media/end-user-basic-concepts/app.png) En *app* är ett sätt för *designers* att paketera och dela relaterade instrumentpaneler och rapporter tillsammans. *Användare* får vissa appar automatiskt men kan söka efter andra appar som skapats av kollegor eller av communityn. Till exempel erbjuder externa tjänster som du kanske redan använder, t.ex. Google Analytics och Microsoft Dynamics CRM, också Power BI-appar.
 
-Bara för tydlighetens skull: om du är en helt ny användare och loggar in i Power BI för första gången har du inga instrumentpaneler, appar eller rapporter ännu. 
+Bara för tydlighetens skull: om du är en helt ny användare och loggar in i Power BI för första gången har du inga instrumentpaneler, appar eller rapporter ännu.
 _______________________________________________________
 
 
@@ -77,7 +77,7 @@ En *datamängd* är en samling data som *designers* importerar eller ansluter ti
 
 Varje datamängd representerar en enskild datakälla, till exempel en Excel-arbetsbok på OneDrive, en lokal SSAS-tabelldatamängd eller en Salesforce-datamängd. Det finns många olika datakällor som stöds.
 
-När en designer delar en app med dig kan du se vilka datamängder som ingår i appen. 
+När en designer delar en app med dig kan du se vilka datamängder som ingår i appen.
 
 ![Appar har valts och pil som pekar på avsnittet datauppsättningar på arbetsytan](media/end-user-basic-concepts/power-bi-dataset-list.png)
 
@@ -86,10 +86,10 @@ När en designer delar en app med dig kan du se vilka datamängder som ingår i 
 * kan användas flera gånger
 * kan användas i många olika rapporter
 * Visualiseringar från denna enskilda datamängd kan visas på många olika instrumentpaneler
-  
+
   ![M:1-relationer för datamängder](media/end-user-basic-concepts/drawing2.png)
 
-Datamängder från andra arbetsytor kan dessutom användas för att skapa innehåll (rapporter, instrumentpaneler) i din arbetsyta. Dessa datamängder visas med hjälp av ikonen för refererade datamängder: 
+Datamängder från andra arbetsytor kan dessutom användas för att skapa innehåll (rapporter, instrumentpaneler) i din arbetsyta. Dessa datamängder visas med hjälp av ikonen för refererade datamängder:
 
 ![ikon för databas med länk](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
@@ -121,19 +121,19 @@ En Power BI-rapport är en eller flera sidor med visualiseringar, grafik och tex
 * kan associeras med flera instrumentpaneler (paneler fästa från en rapport kan visas på flera instrumentpaneler).
 * skapas med hjälp av data från endast en datamängd.  
 * kan ingå i flera appar
-  
+
   ![relationsritning för en rapport](media/end-user-basic-concepts/drawing5.png)
 
 ________________________________________________
 
 ## <a name="dashboards"></a>Instrumentpaneler
-En instrumentpanel representerar en anpassad vy av någon delmängd av de underliggande datamängderna. *Designers* skapar instrumentpaneler och delar dem med *användare*, antingen enskilt eller som en del av en app. En instrumentpanel är en enskild arbetsyta som innehåller *paneler*, bilder och text. 
+En instrumentpanel representerar en anpassad vy av någon delmängd av de underliggande datamängderna. *Designers* skapar instrumentpaneler och delar dem med *användare*, antingen enskilt eller som en del av en app. En instrumentpanel är en enskild arbetsyta som innehåller *paneler*, bilder och text.
 
   ![exempelinstrumentpanel](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-En panel är en rendering av ett visuellt objekt som en *designer* *fäster* till exempel från en rapport till en instrumentpanel.  Varje fäst panel visar en [visualisering](end-user-visualizations.md) som skapats från en datamängd och fästs på den instrumentpanelen. En panel kan även innehålla en hel rapportsida och kan innehålla liveuppspelningsdata eller en video. Det finns många sätt som *designers* kan använda för att lägga till paneler i instrumentpaneler, för många för att omfattas i det här översiktsämnen. Läs mer i [Paneler på instrumentpanelen i Power BI](end-user-tiles.md). 
+En panel är en rendering av ett visuellt objekt som en *designer* *fäster* till exempel från en rapport till en instrumentpanel.  Varje fäst panel visar en [visualisering](end-user-visualizations.md) som skapats från en datamängd och fästs på den instrumentpanelen. En panel kan även innehålla en hel rapportsida och kan innehålla liveuppspelningsdata eller en video. Det finns många sätt som *designers* kan använda för att lägga till paneler i instrumentpaneler, för många för att omfattas i det här översiktsämnen. Läs mer i [Paneler på instrumentpanelen i Power BI](end-user-tiles.md).
 
-Från ett användarperspektiv går det inte att redigera instrumentpaneler. Du kan dock lägga till kommentarer, visa relaterade data, ange en instrumentpanel som favorit, prenumerera med mera. 
+Från ett användarperspektiv går det inte att redigera instrumentpaneler. Du kan dock lägga till kommentarer, visa relaterade data, ange en instrumentpanel som favorit, prenumerera med mera.
 
 Vad är syftet med instrumentpaneler?  Här följer några:
 
@@ -148,17 +148,17 @@ Vad är syftet med instrumentpaneler?  Här följer några:
 * kan visa visualiseringar från många olika datauppsättningar
 * kan visa visualiseringar från många olika rapporter
 * kan visa visualiseringar som fästs från andra verktyg (t.ex. Excel)
-  
+
   ![relationsritning för en instrumentpanel](media/end-user-basic-concepts/drawing1.png)
 
 ________________________________________________
 
 ## <a name="apps"></a>Appar
-Dessa samlingar av instrumentpaneler och rapporter organiserar relaterat innehåll tillsammans i ett enda paket. Power BI-*designers* skapar och delar dem med enskilda användare, grupper, en hel organisation eller allmänheten. Som användare kan du vara säker på att du och dina kolleger arbetar med samma data, en enskild betrodd version av sanningen. 
+Dessa samlingar av instrumentpaneler och rapporter organiserar relaterat innehåll tillsammans i ett enda paket. Power BI-*designers* skapar och delar dem med enskilda användare, grupper, en hel organisation eller allmänheten. Som användare kan du vara säker på att du och dina kolleger arbetar med samma data, en enskild betrodd version av sanningen.
 
 ![Appar som valts i vänsternav](media/end-user-basic-concepts/power-bi-app.png)
 
-Apparna är lätta att hitta och installera på Power BI-tjänsten (https://powerbi.com)) och på din mobila enhet. När du har installerat en app behöver du inte längre komma ihåg namnet på en massa olika instrumentpaneler eftersom de har samlats tillsammans i en och samma app, i din webbläsare eller på din mobila enhet. 
+Apparna är lätta att hitta och installera på Power BI-tjänsten (https://powerbi.com)) och på din mobila enhet. När du har installerat en app behöver du inte längre komma ihåg namnet på en massa olika instrumentpaneler eftersom de har samlats tillsammans i en och samma app, i din webbläsare eller på din mobila enhet.
 
 Den här appen har tre relaterade instrumentpaneler och tre relaterade rapporter som utgör en enda app.
 
@@ -170,7 +170,7 @@ Du kan hämta appar på några olika sätt. Appdesignern kan installera appen au
 
 När appen har installerats behöver du bara markera den från applistan och välja vilken instrumentpanel eller rapport du vill öppna och utforska först.   
 
-Jag hoppas att den här artikeln gav nyttig information om de byggstenar som utgör Power BI-tjänsten för användare. 
+Jag hoppas att den här artikeln gav nyttig information om de byggstenar som utgör Power BI-tjänsten för användare.
 
 ## <a name="next-steps"></a>Nästa steg
 - Granska och bokmärk [ordlistan](end-user-glossary.md)    

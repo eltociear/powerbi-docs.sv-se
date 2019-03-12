@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
-ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
+ms.openlocfilehash: f22cac734d98e98cd17a915c09d6705e2cad121a
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57196446"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580069"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: Kopiera, uppdatera och få åtkomst
 
@@ -25,13 +25,13 @@ Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller sam
 
 > [!NOTE]
 > Du kan inte skapa eller installera innehållspaket för organisationen i förhandsversionen för den nya arbetsytan. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
-> 
+>
 
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Skapa en kopia av ett organisationsinnehållspaket
 Skapa din egen kopia av innehållspaketet som inte är synligt för andra.
 
 1. Välj ellipsen (...) bredvid innehållspaketets instrumentpanel > Gör en kopia.
-   
+
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Välj **Spara**.  
 
@@ -41,7 +41,7 @@ Nu har du en kopia som du kan ändra. Ingen annan kommer att se de ändringar du
 > Tidigare när du installerade ett innehållspaket eller skapade en kopia, visades en ny datamängd i innehållslistan för arbetsytan. En nyligen genomförd uppdatering förenklar upplevelsen genom att enbart visa ett objekt med hjälp av den nya ikonen för datamängden som refereras:
 >
 > ![ikon för databas med länk](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
-> 
+>
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Hjälp!  Jag kan inte längre komma åt innehållspaketet
 Detta kan bero på flera orsaker:
@@ -51,7 +51,7 @@ Detta kan bero på flera orsaker:
 * **Säkerhetsinställningar ändras**: Om instrumentpanelen och rapporterna ansluter till lokala SSAS-datakällor och ändringar görs i säkerhetsinställningarna, kan din behörighet till servern återkallas.
 
 ## <a name="how-are-organizational-content-packs-refreshed"></a>Hur uppdateras organisationsinnehållspaket?
-När innehållspaketet skapas ärvs uppdateringsinställningarna från datauppsättningen.  När du skapar en kopia av innehållspaketet, behåller den nya versionen en länk till den ursprungliga datauppsättningen och dess uppdateringsschema. 
+När innehållspaketet skapas ärvs uppdateringsinställningarna från datauppsättningen.  När du skapar en kopia av innehållspaketet, behåller den nya versionen en länk till den ursprungliga datauppsättningen och dess uppdateringsschema.
 
 Se [Hantera, uppdatera och ta bort organisationsinnehållspaket](service-organizational-content-pack-manage-update-delete.md).
 
@@ -59,4 +59,3 @@ Se [Hantera, uppdatera och ta bort organisationsinnehållspaket](service-organiz
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md)
 * [Skapa en grupp i Power BI](service-create-distribute-apps.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-
