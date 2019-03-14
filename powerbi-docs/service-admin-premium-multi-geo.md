@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo-stöd för Power BI Premium (förhandsversion)
+title: Multi-Geo-stöd för Power BI Premium
 description: Lär dig hur du kan distribuera innehåll till datacentra i andra regioner än Power BI-klientorganisationens hemregion.
 author: minewiskan
 ms.author: owend
@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bdbcb949ffe29efc4170391774da0863568e97e8
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: dfa412e32c49e0b3de406f2665fcd9bd6d1a345e
+ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794668"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57571989"
 ---
-# <a name="multi-geo-support-for-power-bi-premium-preview"></a>Multi-Geo-stöd för Power BI Premium (förhandsversion)
+# <a name="multi-geo-support-for-power-bi-premium"></a>Multi-Geo-stöd för Power BI Premium
 
 Multi-Geo är en Power BI Premium-funktion som hjälper multinationella kunder att adressera kraven på regional, branschspecifik eller organisationsrelaterad dataplacering. Som Power BI Premium-kund kan du distribuera innehåll till datacentra i andra regioner än Power BI-klientorganisationens hemregion. Ett geografiskt område (geografi) kan innehålla mer än en region. USA är t.ex. ett geografiskt område och USA, västra centrala och USA, södra centrala är regioner i USA. Du kan välja att distribuera innehåll till någon av följande platser:
 
@@ -33,7 +33,7 @@ Multi-Geo är en Power BI Premium-funktion som hjälper multinationella kunder a
 
 Multi-Geo är inte tillgängligt för Power BI Tyskland, Power BI Kina, drivet av 21Vianet, eller Power BI för amerikanska myndigheter.
 
-Multi-Geo finns nu även i Power BI Embedded. Läs mer i [Multi-Geo-stöd för Power BI Embedded (förhandsversion)](developer/embedded-multi-geo.md).
+Multi-Geo finns nu även i Power BI Embedded. Läs mer i [Multi-Geo-stöd för Power BI Embedded](developer/embedded-multi-geo.md).
 
 ## <a name="using-multi-geo"></a>Använda Multi-Geo
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a4f10253619393ffd9807b1e33730a4dd37a47ff
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277398"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580253"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -98,13 +98,15 @@ När du delar med personer utanför organisationen, får de ett e-postmeddelande
 
 När de har loggat in visas den delade instrumentpanelen eller rapporten i ett eget webbläsarfönster utan det vänstra navigeringsfönstret, och inte i den vanliga Power BI-portalen. De måste bokmärka länken om du vill ha åtkomst till den här instrumentpanelen eller rapporten i framtiden.
 
-De kan inte redigera något innehåll i den här instrumentpanelen eller rapporten. De kan interagera med diagram och ändra filter eller utsnitt i rapporten, men det går inte att spara ändringarna.
+De kan inte redigera något innehåll i den här instrumentpanelen eller rapporten. De kan interagera med diagram och ändra filter eller utsnitt i rapporten, men det går inte att spara ändringarna. 
 
 Endast dina direkta mottagare kan se den delade instrumentpanelen eller rapporten. Om du t.ex. skickade e-postmeddelandet till Vicki@contoso.com, så kan endast Vicki se instrumentpanelen. Ingen annan kan se instrumentpanelen, även om de har tillgång till länken, och Vicki måste använda samma e-postadress för att få åtkomst till instrumentpanelen. Om hon loggar med någon annan e-postadress har inte heller hon någon åtkomst till instrumentpanelen.
 
 Personer utanför organisationen kan inte se några data alls om säkerhet på roll- eller radnivå har implementerats på lokala Analysis Services-tabellmodeller.
 
 Om du skickar en länk från en Power BI-mobilapp till personer utanför organisationen, och mottagarna klickar på länken, så öppnas instrumentpanelen i en webbläsare, inte i Power BI-mobilappen.
+
+Om gästanvändare aktiveras med hjälp av [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#export-and-sharing-settings) gäller inte standardupplevelsen för enbart förbrukning för dem. [Läs mer](service-admin-azure-ad-b2b.md)
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Saker att tänka på när det gäller att dela instrumentpaneler och rapporter:

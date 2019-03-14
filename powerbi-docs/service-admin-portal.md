@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: ca9a2eff3d05ec10c83dde90eabb779370ca5e96
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014655"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757356"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -192,6 +192,13 @@ Följande bild visar menyn **Arkiv** för en rapport när inställningen **Skriv
 
 ![Skriva ut rapporten](media/service-admin-portal/powerbi-admin-print-report.png)
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen
+Azure B2B-gästanvändare kan redigera och hantera innehåll i organisationen. [Läs mer](service-admin-azure-ad-b2b.md)
+
+I följande bild visas alternativet Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen.
+
+![Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
 ## <a name="content-pack-and-app-settings"></a>Inställningar för innehållspaket och appar
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicera innehållspaket och appar för hela organisationen
@@ -243,10 +250,45 @@ Användare i organisationen kan interagera med och dela anpassad visuell informa
 > [!NOTE]
 > Den här inställningen kan tillämpas för hela organisationen eller begränsas till specifika grupper.
 
+
+Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av anpassade visuella objekt i en organisations distribuerade datorer.
+
+<table>
+<tr><th>Attribut</th><th>Värde</th>
+</tr>
+<td>nyckel</td>
+    <td>Programvara\Principer\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableCustomVisuals</td>
+</tr>
+</table>
+
+Med värdet 1 (decimal) kan du använda anpassade visuella objekt i Power BI (detta är standardinställningen).
+
+Med värdet 0 (decimal) kan du inaktivera användningen av anpassade visuella objekt i Power BI.
+
 ### <a name="allow-only-certified-visuals"></a>Tillåt endast certifierade visuella objekt
 
 Användare i organisationen som har behörighet att lägga till och använda anpassade visuella objekt, enligt inställningen ”Lägg till och använd anpassade visuella objekt”, kan endast använda [certifierade anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=2002010) (ocertifierade visuella objekt blockeras och ett felmeddelande visas när det används). 
 
+
+Power BI Desktop (med start från lanseringen i mars 2019) stöder användning av **Grupprincip** för att inaktivera användningen av ocertifierade anpassade visuella objekt i en organisations distribuerade datorer.
+
+<table>
+<tr><th>Attribut</th><th>Värde</th>
+</tr>
+<td>nyckel</td>
+    <td>Programvara\Principer\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableUncertifiedVisuals</td>
+</tr>
+</table>
+
+Med värdet 1 (decimal) kan du använda ocertifierade anpassade visuella objekt i Power BI (detta är standardinställningen).
+
+Värdet 0 (decimal) inaktiverar användningen av ocertifierade anpassade visuella objekt i Power BI (det här alternativet kan bara använda [certifierade anpassade visuella objekt](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>Inställningar för R-visualisering
 

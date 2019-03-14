@@ -1,30 +1,34 @@
 ---
-title: Ytterligare köp kan krävas – riktlinjer för visuella objekt i Power BI
+title: Riktlinjer för visuella objekt för Power BI
 description: Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem via ett inköp.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.openlocfilehash: 92d4320026164e523297cbe48ee87ce33d9ab2f7
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.date: 03/10/2019
+ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826593"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757310"
 ---
-# <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Riktlinjer för visuella objekt i Power BI med ytterligare inköp
+# <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 
-Tills nyligen godkände endast Marketplace (AppSource) kostnadsfria visuella objekt i Power BI. Den här principen har ändrats så att du nu även kan skicka in visuella objekt till AppSource som har pristaggen ytterligare köp kan krävas. 
+## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Riktlinjer för visuella objekt i Power BI med ytterligare inköp
+
+Tills nyligen godkände endast Marketplace (AppSource) kostnadsfria visuella objekt i Power BI. Den här principen har ändrats (december 2018) så att du nu även kan skicka in visuella objekt till AppSource som har pristaggen ytterligare köp kan krävas. 
 
 Visuella objekt där ytterligare köp kan krävas liknar tillägg med in-app köp (IAP) i Office Store. Utvecklare kan också skicka in dessa visuella objekt för certifiering efter att AppSource-teamet godkänt dem och efter att de sett till att de uppfyller certifieringskraven. Mer information om kraven finns i [Certifierade anpassade visuella objekt](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
-> * Det visuella objektet måste inte ha åtkomst till externa tjänster eller resurser för att godkännas.
-> * Alla kostnadsfria visuella objekt måste behålla de kostnadsfria funktioner som tidigare erbjudits. Du kan lägga till valfria avancerade betalfunktioner utöver de tidigare kostnadsfria funktionerna. Vi rekommenderar att du skickar in visuella IAP-objekt med de avancerade funktionerna som nya visuella objekt och inte uppdaterar de tidigare kostnadsfria versionerna.
+> Det visuella objektet måste inte ha åtkomst till externa tjänster eller resurser för att godkännas.
+
+>[!IMPORTANT]  
+> Om du uppdaterar ditt visuella objekt från kostnadsfritt till ”Ytterligare köp kan krävas” måste användarna får samma nivå av kostnadsfria funktioner som före uppdateringen. Du kan lägga till valfria avancerade betalfunktioner utöver de tidigare kostnadsfria funktionerna. Vi rekommenderar att du skickar in visuella IAP-objekt med de avancerade funktionerna som nya visuella objekt och inte uppdaterar de tidigare kostnadsfria versionerna.
 
 
 ## <a name="what-changed-in-the-submission-process"></a>Vad ändras i inlämningsprocessen?
@@ -33,19 +37,19 @@ Utvecklare laddar upp sina visuella IAP-objekt till AppSource via instrumentpane
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Vad är ett visuellt Power BI-objekt med IAP-funktioner?
 
-Ett visuellt IAP-objekt är ett kostnadsfritt visuellt objekt som erbjuder kostnadsfria funktioner. Det har även vissa avancerade funktioner kan kräva extra avgifter för att använda. I beskrivningen för det visuella objektet så måste utvecklare meddela användare om vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda API:er för att stödja köp av appar och tilläggsprogram.
+Ett visuellt IAP-objekt är ett **kostnadsfritt** visuellt objekt som erbjuder **kostnadsfria funktioner**. Det har även vissa avancerade funktioner kan kräva extra avgifter för att använda. I beskrivningen för det visuella objektet så måste utvecklare meddela användare om vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda API:er för att stödja köp av appar och tilläggsprogram.
 
 Utvecklare kan använda valfritt betalningssystem från tredje part för dessa köp. Se vår [policy för marknadsplatsen](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) för mer information.
 
 > [!NOTE]
-> Vattenstämplar tillåts inte på de kostnadsfria funktionerna. Utvecklare kan visa ett popup-fönster eller en vattenstämpel om de avancerade betalfunktionerna används utan giltig licens.  
+> Vattenstämplar tillåts inte på de kostnadsfria funktionerna eller kostnadsfria visuella objekt. Vattenstämplar kan bara användas på betalda funktioner som används utan giltig licens. Vi rekommenderar att du visar ett popup-fönster all licensrelaterad information om de avancerade betalfunktionerna används utan giltig licens.  
 
 ## <a name="logo-guidelines"></a>Riktlinjer för logotyp
 
 I det här avsnittet beskrivs specifikationerna för att lägga till logotyper och logotyper i visuella objekt.
 
-> [!NOTE]
-> Logotyper tillåts endast i redigeringsläge. Logotyper kan inte visas i visningsläge.
+> [!IMPORTANT]
+> Logotyper tillåts **endast i redigeringsläge**. Logotyper **kan inte** visas i visningsläge.
 
 ![Definitioner](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
 

@@ -9,133 +9,62 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: 6a6dc71d68fa7ff136d35cbfb185b96db8e0589e
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.date: 03/12/2019
+ms.openlocfilehash: 34d7ec423f3d4cb0f7487c78eff68c580ff0489e
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249446"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757471"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
-I **Power BI**, kan du bädda in rapporter och instrumentpaneler eller paneler i ett program med hjälp av användarägda data. **Användarägda data** gör att ditt program kan utöka Power BI-tjänsten. Den här självstudien visar hur du integrerar en rapport i ett program. Du kan använda Power BI .NET SDK med Power BI JavaScript API för att bädda in Power BI i ett program för din organisation.
+I **Power BI**, kan du bädda in rapporter och instrumentpaneler eller paneler i ett program med hjälp av användarägda data. **Användarägda data** gör att ditt program kan utöka Power BI-tjänsten så att den kan använda inbäddad analys. Den här självstudien visar hur du integrerar en rapport i ett program. Du kan använda Power BI .NET SDK med Power BI JavaScript API för att bädda in Power BI i ett program för din organisation.
 
 ![Inbäddad Power BI-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 I den här självstudien går du igenom följande aktiviteter:
 > [!div class="checklist"]
 > * Registrera ett program i Azure.
-> * Bädda in en Power BI-rapport i ett program.
+> * Bädda in en Power BI-rapport i ett program med Power BI-klienten.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Om du vill komma igång behöver du ett Power BI Pro-konto och en Microsoft Azure-prenumeration:
+Du måste ha följande för att komma igång:
 
-* Om du inte har registrerat dig för Power BI Pro, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/pricing/) innan du börjar.
-* Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
-* Konfigurera din egen [Azure Active Directory-klient (Azure AD)](create-an-azure-active-directory-tenant.md).
-* Installera [Visual Studio](https://www.visualstudio.com/), version 2013 eller senare.
+* Ett [Power BI Pro-konto](../service-self-service-signup-for-power-bi.md).
+* En [Microsoft Azure](https://azure.microsoft.com/)-prenumeration.
+* Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
+
+Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/pricing/) innan du börjar.
+
+Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurera den inbäddade utvecklingsmiljön för analysverktyg
 
-Innan du börjar bädda in rapporter, instrumentpaneler eller paneler i din app måste du se till att din miljö har ställts in så att inbäddning tillåts. Gör något av följande som en del av konfigurationen:
+Innan du börjar bädda in rapporter, en instrumentpanel eller paneler i din app måste du se till att det går att bädda in Power BI i din miljö.
 
-* Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport.
+Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport.
 
-* Om du väljer att konfigurera miljön manuellt måste du vidta åtgärder i följande avsnitt.
+Om du i stället vill konfigurera miljön manuellt, fortsätter du bara nedan.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Registrera ett program i Azure Active Directory
 
-Du kan registrera din app med Azure Active Directory så att ditt program får åtkomst till Power BI REST-API:er. Därmed kan du upprätta en identitet för din app och ange behörigheter till Power BI REST-resurser.
+[Registrera appen](register-app.md) med Azure Active Directory så att ditt program får åtkomst till [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/). Genom att registrera din app kan du upprätta en identitet för din app och ange behörigheter till Power BI REST-resurser.
 
-1. Godkänn [villkoren för Microsoft Power BI-API](https://powerbi.microsoft.com/api-terms).
-
-2. Logga in på [Azure-portalen](https://portal.azure.com).
-
-    ![Azure-instrumentpanelen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
-
-3. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **App-registreringar**. Välj **Ny programregistrering**.
-
-    ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)<br>
-
-    ![Ny appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
-
-4. Följ anvisningarna och skapa ett nytt program. För **användare äger data** måste du använda **Webbapp/API** som **programtyp**. Ange en **inloggnings-URL** som Microsoft Azure Active Directory använder för att returnera tokensvar. Ange ett specifikt värde för ditt program. Ett exempel är `http://localhost:13526/`.
-
-    ![Skapa en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
-
-### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Tillämpa behörigheter för ditt program i Azure Active Directory
-
-Aktivera behörigheter för ditt program utöver vad du angav på appregistreringssidan. Logga in med ett konto för en global administratör för att aktivera behörigheter.
-
-### <a name="use-the-azure-active-directory-portal"></a>Använd Azure Active Directory-portalen
-
-1. Bläddra till [Appregistreringar](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) i Azure-portalen och välj den app som du använder för att bädda in.
-
-    ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
-
-2. Välj **inställningar**. Välj **Nödvändiga behörigheter** under **API-åtkomst**.
-
-    ![Nödvändiga behörigheter](media/embed-sample-for-your-organization/embed-sample-for-your-organization-008.png)
-
-3. Välj **Windows Azure Active Directory**. Kontrollera att **Åtkomst till katalogen som den inloggade användaren** är markerad. Välj **Spara**.
-
-    ![Windows Azure AD-behörigheter](media/embed-sample-for-your-organization/embed-sample-for-your-organization-011.png)
-
-4. Välj **Lägg till**.
-
-    ![Lägg till behörigheter](media/embed-sample-for-your-organization/embed-sample-for-your-organization-012.png)
-
-5. Välj **Välj en API**.
-
-    ![Lägg till API-åtkomst](media/embed-sample-for-your-organization/embed-sample-for-your-organization-013.png)
-
-6. Välj **Power BI-tjänsten**. Välj sedan **Välj**.
-
-    ![Välj Power BI-tjänsten](media/embed-sample-for-your-organization/embed-sample-for-your-organization-014.png)
-
-7. Välj alla behörigheter under **Delegerade behörigheter**. Du måste välja dem separat för valen ska sparas. Välj **Spara** när du är klar.
-
-    ![Välj delegerade behörigheter](media/embed-sample-for-your-organization/embed-sample-for-your-organization-015.png)
+Du behöver fortsätta med att registrera en **webbapp för serversidan**-app. Du registrerar en webbapp på serversidan för att skapa en apphemlignet.
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
 
 ### <a name="create-an-app-workspace"></a>Skapa en apparbetsyta
 
-Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en apparbetsyta:
-
-1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa apparbetsyta**. Det är på den här arbetsytan som du placerar innehåll som appen behöver åtkomst till.
-
-    ![Skapa en arbetsyta](media/embed-sample-for-your-organization/embed-sample-for-your-organization-020.png)
-
-2. Ge arbetsytan ett namn. Om motsvarande **Arbetsyte-ID** inte är tillgängligt, kan du redigera det för att få fram ett unikt ID. Detta ska också vara namnet på appen.
-
-    ![Namnge en arbetsyta](media/embed-sample-for-your-organization/embed-sample-for-your-organization-021.png)
-
-3. Det finns ett par alternativ som du måste ställa in. Om du väljer **Offentlig** kan alla i din organisation se vad som finns på arbetsytan. Om du väljer **Privat** kan endast medlemmar i arbetsytan se innehållet.
-
-    ![Välj Privat eller Offentlig](media/embed-sample-for-your-organization/embed-sample-for-your-organization-022.png)
-
-    Du kan inte ändra inställningen för Offentlig och Privat när du har skapat gruppen.
-
-4. Du kan också välja om medlemmarna ska kunna redigera eller ha skrivskyddad åtkomst.
-
-    ![Välj medlemsåtkomst](media/embed-sample-for-your-organization/embed-sample-for-your-organization-023.png)
-
-5. Lägg till e-postadresserna för de personer som du vill ska ha åtkomst till arbetsytan och välj **Lägg till**. Du kan inte lägga till gruppalias, bara enskilda användare.
-
-6. Bestäm för varje person om den vara medlem eller administratör. Administratörer kan redigera arbetsytan samt lägga till andra medlemmar. Medlemmar kan redigera innehållet i arbetsytan, såvida de inte har skrivskyddad åtkomst. Både administratörer och medlemmar kan publicera appen.
-
-    Nu kan du visa det nya arbetsområdet. Power BI skapar arbetsytan och öppnar den. Den visas i listan med arbetsytor där du är medlem. Eftersom du är administratör kan du välja ellipsen (...) för att gå tillbaka och göra ändringar, lägga till nya medlemmar eller ändra deras behörigheter.
-
-    ![Skapa en apparbetsyta](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
+Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en apparbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-reports"></a>Skapa och publicera rapporter
 
 Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. Därefter kan du publicera dessa rapporter till en apparbetsyta. Slutanvändaren som publicerar rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
 
-1. Ladda ner exemplet [Bloggdemo](https://github.com/Microsoft/powerbi-desktop-samples) från GitHub.
+1. Ladda ner exemplet [Demo](https://github.com/Microsoft/powerbi-desktop-samples) från GitHub.
 
     ![Ladda ned demon](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026-1.png)
 
@@ -153,83 +82,129 @@ Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. D�
 
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Bädda in innehåll med exempelprogrammet
 
-Följ de här stegen om du vill börja bädda in innehåll med hjälp av ett exempelprogram:
+Det här exemplet hålls medvetet enkelt i demonstrationssyfte.
 
-1. Ladda ner [exempel på användare äger data](https://github.com/Microsoft/PowerBI-Developer-Samples) från GitHub för att komma igång. Det finns tre olika exempelprogram. Ett för [rapporter](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app), ett för [instrumentpaneler](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) och ett för [paneler](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app). Den här artikeln handlar om programmet för **rapporter**.
+Följ de här stegen nedan om du vill börja bädda in innehåll med hjälp av exempelprogrammet.
+
+1. Ladda ned [Visual Studio](https://www.visualstudio.com/) (version 2013 eller senare). Se till att ladda ned det senaste [NuGet-paketet](https://www.nuget.org/profiles/powerbi).
+
+2. Ladda ner [exempel på användare äger data](https://github.com/Microsoft/PowerBI-Developer-Samples) från GitHub för att komma igång.
 
     ![Exempelprogram för användare äger data](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Öppna filen **Cloud.config** i exempelprogrammet. Du måste fylla i några fält för att kunna köra programmet: **ApplicationID** och **ApplicationSecret**.
+3. Öppna filen **Cloud.config** i exempelprogrammet.
+
+    Du måste fylla i fälten för att kunna köra programmet.
+
+    | Fält |
+    |--------------------|
+    | **[Program-ID](#application-id)** |
+    | **[Programhemlighet](#application-secret)** |
+    | **[ID för arbetsyta](#workspace-id)** |
+    | **[Rapport-ID](#report-id)** |
+    | **[AADAuthorityUrl](#aadauthorityurl)** |
 
     ![Cloud.config-fil](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Fyll i **ApplicationID**-uppgifterna med **Program-ID** från Azure. **ApplicationID** används av programmet för att identifiera sig för de användare som du begär behörighet från.
+### <a name="application-id"></a>Program-ID
 
-    Hämta **ApplicationID** genom att utföra följande steg:
+Fyll i **applicationId** med **program-ID:t** från **Azure**. **applicationId** används av programmet för att identifiera sig för användare som du begär behörighet från.
 
-    1. Logga in på [Azure-portalen](https://portal.azure.com).
+Så här hämtar du **applicationId**:
 
-       ![Instrumentpanelen för Azure-portalen](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+1. Logga in på [Azure Portal](https://portal.azure.com).
 
-    2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **App-registreringar**.
+2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **Appregistreringar**.
 
-       ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    3. Välj det program som behöver använda **ApplicationID**.
+3. Välj det program som behöver **applicationId**.
 
-       ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Att välja App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    4. Du bör se ett **program-ID** som har listats som en GUID. Använd detta **program-ID** som **ApplicationID** för appen.
+4. Det finns ett **program-ID** som listas som en GUID. Använd detta **program-ID** som **applicationId** för appen.
 
-        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    Fyll i **ApplicationSecret**-uppgifterna från avsnittet **Nycklar** från avsnittet **Appregistreringar** i **Azure**.
+### <a name="application-secret"></a>Apphemlighet
 
-    Hämta **ApplicationSecret** genom att utföra följande steg:
+Fyll i **ApplicationSecret**-uppgifterna från avsnittet **Nycklar** från avsnittet **Appregistreringar** i **Azure**.  Det här attributet fungerar när du använder [tjänstens huvudnamn](embed-service-principal.md).
 
-    1. Logga in på [Azure-portalen](https://portal.azure.com).
+Hämta **ApplicationSecret** genom att utföra följande steg:
 
-       ![Azure Portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+1. Logga in på [Azure-portalen](https://portal.azure.com).
 
-    2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **App-registreringar**.
+2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och sedan **Appregistreringar**.
 
-       ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    3. Välj det program som behöver använda **ApplicationSecret**.
+3. Välj det program som behöver använda **ApplicationSecret**.
 
-       ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    4. Välj **inställningar**.
+4. Välj **inställningar**.
 
-       ![Välj Inställningar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+    ![Välj Inställningar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-    5. Välj **Nycklar**.
+5. Välj **Nycklar**.
 
-       ![Välj nycklar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+    ![Välj nycklar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    6. Ange ett namn i rutan **Beskrivning** och välj en varaktighet. Välj sedan **Spara** för att hämta **värdet** för ditt program. När du stänger fönstret **Nycklar** efter att ha sparat nyckelvärdet visas värdefältet bara som dolt. I det här läget kan du inte att hämta nyckelvärdet. Om du tappar bort nyckelvärdet måste du skapa ett nytt på Microsoft Azure-portalen.
+6. Ange ett namn i rutan **Beskrivning** och välj en varaktighet. Välj sedan **Spara** för att hämta **värdet** för ditt program. När du stänger fönstret **Nycklar** efter att ha sparat nyckelvärdet visas värdefältet bara som dolt. I det här läget kan du inte att hämta nyckelvärdet. Om du tappar bort nyckelvärdet måste du skapa ett nytt på Microsoft Azure-portalen.
 
-          ![Nyckelvärde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Nyckelvärde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    7. Fyll i **groupId** med apparbetsytan GUID från Power BI.
+### <a name="workspace-id"></a>ID för arbetsyta
 
-       ![Ange groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+Fyll i **workspaceId** med (grupp-)GUID för apparbetsytan från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
 
-    8. Fyll i **reportId** med rapport-GUID från Power BI.
+URL <br>
 
-       ![Ange reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+![workspaceId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040.png)
 
-3. Kör programmet:
+PowerShell <br>
 
-    Välj **Kör** i **Visual Studio**.
+```powershell
+Get-PowerBIworkspace -name "User Owns Embed Test"
+```
+
+   ![workspaceId från powershell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040-ps.png)
+
+### <a name="report-id"></a>Rapport-ID
+
+Fyll i **reportId**-information med rapport-GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
+
+URL <br>
+
+![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+PowerShell <br>
+
+```powershell
+Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
+```
+
+![reportId från powershell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041-ps.png)
+
+### <a name="aadauthorityurl"></a>AADAuthorityUrl
+
+Fyll i informationen **AADAuthorityUrl** URL:en som du antingen kan bädda in i din organisations klient eller bädda in med en gästanvändare.
+
+För att bädda in med din organisations klient använder du URL – *https://login.microsoftonline.com/common/oauth2/authorize*.
+
+För att bädda in med en gäst använder du URL – *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
+
+### <a name="run-the-application"></a>Kör programmet
+
+1. Välj **Kör** i **Visual Studio**.
 
     ![Kör programmet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    Välj sedan **Hämta rapport**.
+2. Välj sedan **Bädda in rapport**. Beroende på vilket innehåll du väljer att testa med – rapporter, instrumentpaneler eller paneler – väljer du det alternativet i programmet.
 
     ![Välj innehåll](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
-    Nu kan du visa rapporten i exempelprogrammet.
+3. Nu kan du visa rapporten i exempelprogrammet.
 
     ![Visa rapporten i programmet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
@@ -255,10 +230,10 @@ Om du vill göra REST API-anrop måste du inkludera en *auktoriserings*rubrik i 
 
 #### <a name="get-reports-with-the-rest-api"></a>Hämta rapporter med REST API
 
-Här är ett kodexempel på hur du hämtar rapporter med **REST API**:
+Här är ett kodexempel på hur du hämtar rapporter med REST API:
 
-> [!NOTE]  
-> Ett exempel på hur du hämtar ett innehållsobjekt som du vill bädda in finns i filen **Default.aspx.cs** i [exempelprogrammet](#embed-your-content-using-the-sample-application). Exempel på detta är en rapport, en instrumentpanel eller en panel.
+> [!Note]
+> Ett exempel på hur du hämtar ett innehållsobjekt som du vill bädda in finns i filen Default.aspx.cs i [exempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples). Exempel på detta är en rapport, en instrumentpanel eller en panel.
 
 ```csharp
 using Newtonsoft.Json;
@@ -340,7 +315,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 Du kan använda JavaScript för att läsa in en rapport till olika element på webbsidan. Här är ett kodexempel på hur du hämtar en rapport från en given arbetsyta:
 
 > [!NOTE]  
-> Ett exempel på hur du läser in ett innehållsobjekt som du vill bädda in finns i filen **Default.aspx.cs** i [exempelprogrammet](#embed-your-content-using-the-sample-application). Exempel på detta är en rapport, en instrumentpanel eller en panel.
+> Ett exempel på hur du läser in ett innehållsobjekt som du vill bädda in finns i filen **Default.aspx.cs** i [exempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
 ```javascript
 <!-- Embed Report-->
@@ -439,6 +414,7 @@ Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Micro
 | P3 |32 virtuella kärnor |16 virtuella kärnor, 100 GB RAM-minne |16 virtuella kärnor |120 per sekund |
 | P4 |64 virtuella kärnor |32 virtuella kärnor, 200 GB RAM-minne |32 virtuella kärnor |240 per sekund |
 | P5 |128 virtuella kärnor |64 virtuella kärnor, 400 GB RAM-minne |64 virtuella kärnor |480 per sekund |
+
 > [!NOTE]
 > - När du försöker bädda in med Microsoft Office-appar använder du EM-SKU:er för att komma åt innehåll med en kostnadsfri licens för Power BI. Du kan dock inte komma åt innehåll med en kostnadsfri licens för Power BI när du använder Powerbi.com eller Power BI Mobile.
 > - När du försöker bädda in med Microsoft Office-appar och använder Powerbi.com eller Power BI Mobile kan du komma åt innehåll med en kostnadsfri licens för Power BI.
