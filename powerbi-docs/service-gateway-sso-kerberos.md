@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: e2183596a66526ced7cfa4a298420972b63a87ca
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226260"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174992"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -60,7 +60,7 @@ I en standardinstallation körs gatewayen som ett lokalt tjänstkonto (specifikt
 
 ![Skärmbild av tjänstkonto](media/service-gateway-sso-kerberos/service-account.png)
 
-För att aktivera Kerberos-begränsad delegering måste gatewayen köras som ett domänkonto, såvida inte din Azure Active Directory-instans redan har synkroniserats med din lokala Active Directory-instans (med Azure AD DirSync/Connect). Mer information om att växla till ett domänkonto finns i [Ändra gatewayen till ett domänkonto](#switching-the-gateway-to-a-domain-account) senare i den här artikeln.
+För att aktivera Kerberos-begränsad delegering måste gatewayen köras som ett domänkonto, såvida inte din Azure Active Directory-instans redan har synkroniserats med din lokala Active Directory-instans (med Azure AD DirSync/Connect). Mer information om att växla till ett domänkonto finns i [Ändra gatewayen till ett domänkonto](#switch-the-gateway-to-a-domain-account) senare i den här artikeln.
 
 > [!NOTE]
 > Om Azure AD Connect har konfigurerats och användarkonton har synkroniserats, behöver inte gatewaytjänsten utföra några lokala Azure AD-sökningar vid körningen. Du kan använda ditt lokala tjänst-SID (i stället för att kräva ett domänkonto) för gatewaytjänsten. Konfigurationsstegen för Kerberos-begränsad delegering som beskrivs i den här artikeln motsvarar den konfigurationen. De tillämpas helt enkelt på gatewayens datorobjekt i Azure AD, i stället för på domänkontot.
@@ -188,7 +188,7 @@ Om det behövs kan du byta gatewayen från ett lokalt tjänstkonto till att kör
 
 ## <a name="configure-sap-bw-for-sso"></a>Konfigurera SAP BW för enkel inloggning
 
-Nu när du förstår hur Kerberos fungerar med en gateway kan du konfigurera enkel inloggning för SAP Business Warehouse (SAP BW). Följande steg förutsätter att du redan har [förberett för Kerberos-begränsad delegering](#preparing-for-kerberos-constrained-delegation) enligt beskrivningen tidigare i den här artikeln.
+Nu när du förstår hur Kerberos fungerar med en gateway kan du konfigurera enkel inloggning för SAP Business Warehouse (SAP BW). Följande steg förutsätter att du redan har [förberett för Kerberos-begränsad delegering](#prepare-for-kerberos-constrained-delegation) enligt beskrivningen tidigare i den här artikeln.
 
 Den här guiden försöker vara så omfattande som möjligt. Om du redan har slutfört några av de här stegen kan du hoppa över dem. Du kanske till exempel redan har skapat en tjänstanvändare för SAP BW-servern och mappat ett SPN till den, eller du har redan installerat `gsskrb5`-biblioteket.
 
@@ -324,7 +324,7 @@ Följ dessa steg om du har konfigurerat Azure AD Connect.
 
 1. Spara konfigurationsfilen.
 
-1. Starta om gatewaytjänsten via fliken **Tjänster** i Aktivitetshanteraren och välj **Starta om**.
+1. På fliken **Tjänster** i Aktivitetshanteraren högerklickar du på gatewaytjänsten och väljer **Starta om**.
 
     ![Skärmbild av fliken för Aktivitetshanterarens tjänster](media/service-gateway-sso-kerberos/restart-gateway.png)
 
@@ -356,7 +356,7 @@ Om du inte har konfigurerat Azure AD Connect, följer du dessa steg för varje a
 
 ### <a name="add-a-new-sap-bw-application-server-data-source-to-the-power-bi-service"></a>Lägga till en ny datakälla för SAP BW-programservern i Power BI-tjänsten
 
-Lägg till SAP BW-datakällan i din gateway genom att följa anvisningarna tidigare i den här artikeln om att [köra en rapport](#running-a-power-bi-report).
+Lägg till SAP BW-datakällan i din gateway genom att följa anvisningarna tidigare i den här artikeln om att [köra en rapport](#run-a-power-bi-report).
 
 1. I konfigurationsfönstret för datakällan anger du programserverns **Värddatornamn**, **Systemnummer** och **klient-ID** på samma sätt som när du loggar in på SAP BW-servern från Power BI Desktop. Som **Autentiseringsmetod** väljer du **Windows**.
 

@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: d1d1f3c34483737e49129176c833be8384ade999
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324725"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174555"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicera en sidnumrerad rapport i Power BI-tjänsten (förhandsversion)
 
 I den här artikeln får du lära dig om att publicera en sidnumrerad rapport i Power BI-tjänsten genom att överföra den från din lokala dator. Du kan överföra sidnumrerade rapporter till Min arbetsyta eller en annan arbetsyta, så länge arbetsytan finns i en Premium-kapacitet. Leta efter diamantikonen ![Diamantikon för Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) bredvid arbetsytans namn. 
 
-Om rapportdatakällan finns lokalt, måste du [skapa en gateway](#create-a-gateway-to-an-on-premises-data-source) när du har överfört rapporten.
+Om rapportdatakällan finns lokalt, måste du [skapa en gateway](#create-a-gateway) när du har överfört rapporten.
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Lägg till en arbetsyta till en Premium-kapacitet
 

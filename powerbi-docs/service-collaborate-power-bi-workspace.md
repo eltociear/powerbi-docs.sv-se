@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 145ef2da33e0d596f03f75c76aaa99e90f58c4c2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288530"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174578"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbeta på din Power BI-apparbetsyta
 Power BI-apparbetsytor är bra platser för samarbete med dina kollegor. Där kan ni skapa *appar* genom att aarbeta med instrumentpaneler, rapporter och datauppsättningar. Samarbetet tar inte slut med arbetsytor i Power BI. Office 365 erbjuder andra grupptjänster, som att dela filer på OneDrive för företag, föra konversationer i Exchange, använda delade kalendrar och uppgifter osv. Läs mer om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -49,7 +49,7 @@ Samarbete i Office 365 börjar med apparbetsytan i Power BI.
 2. Från den här menyn kan samarbeta med din grupp på flera sätt: 
    
    * Har en [gruppkonversation i Office 365](service-collaborate-power-bi-workspace.md#have-a-group-conversation-in-office-365).
-   * [Schemalägg en händelse](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-group-workspace-calendar) på appens kalenderarbetsyta.
+   * [Schemalägg en händelse](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-apps-group-workspace-calendar) på appens kalenderarbetsyta.
    
    Första gången du gå till appens grupparbetsyta i Office 365 kan det ta en liten stund. Vänta mellan 15 och 30 minuter och uppdatera sedan webbläsaren.
 
