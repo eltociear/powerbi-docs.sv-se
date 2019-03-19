@@ -398,6 +398,10 @@ items:
       href: service-get-started.md
     - name: Anslut till ett GitHub-exempel
       href: service-tutorial-connect-to-github.md
+    - name: Använda Cognitive Services i Power BI
+      href: service-tutorial-use-cognitive-services.md
+    - name: Machine Learning-integrering med Power BI
+      href: service-tutorial-invoke-machine-learning-model.md
   - name: Begrepp
     items:
     - name: Nyheter i Power BI-tjänsten
@@ -646,6 +650,10 @@ items:
         href: service-dataflows-configure-workspace-storage-settings.md
       - name: Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
         href: service-dataflows-add-cdm-folder.md
+      - name: Integrera Machine Learning i Power BI
+        href: service-machine-learning-integration.md
+      - name: Använda Cognitive Services i Power BI
+        href: service-cognitive-services.md
     - name: Sidnumrerade rapporter i Power BI
       items:
       - name: Vad är sidnumrerade rapporter? (Förhandsgranskning)
@@ -722,7 +730,7 @@ items:
         href: service-delete.md
       - name: Ansluta till tjänster
         items:
-        - name: Ansluta till tjänster
+        - name: Acumatica
           href: service-connect-to-services.md
         - name: Acumatica
           href: service-connect-to-acumatica.md
@@ -1317,9 +1325,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 45e6ec57f6fd9a0b02c6139b1bb6e3249edcbadc
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: ad67a7951e15d579cdea824a3eee69fe2ac0ff11
+ms.sourcegitcommit: cd7a027b532b1bb2dbbcae9e92426c80f80810d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757448"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57964926"
