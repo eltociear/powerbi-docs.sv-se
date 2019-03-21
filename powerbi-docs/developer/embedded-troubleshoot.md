@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223845"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174831"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -290,7 +290,7 @@ När du kör exempelappen **Embed for your organization** (Bädda in för din or
 
 Felet beror på att omdirigerings-URL:en som angetts för webbserverprogrammet skiljer sig från exemplets URL. Om du vill registrera exempelprogrammet använder du `http://localhost:13526/` som omdirigerings-URL.
 
-Om du vill redigera det registrerade programmet läser du avsnittet om hur du redigerar ett [AAD-registrerat program](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application) så att programmet kan ge åtkomst till webb-API:erna.
+Om du vill redigera det registrerade programmet läser du avsnittet om hur du uppdaterar ett [Azure AD-registrerat program](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), så att programmet kan ge åtkomst till webb-API:erna.
 
 Om du vill redigera din Power BI-användarprofil eller dina Power BI-data läser du avsnittet om hur du redigerar [Power BI-data](https://docs.microsoft.com/power-bi/service-basic-concepts).
 

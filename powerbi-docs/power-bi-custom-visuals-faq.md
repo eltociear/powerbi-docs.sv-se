@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: d17a5875569f29da41d62ca61efcbdae3b9242e9
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757333"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980368"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Vanliga frågor och svar om anpassade visuella Power BI-objekt
 
@@ -23,7 +23,7 @@ ms.locfileid: "57757333"
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Hur hanterar administratören anpassade visuella objekt i en organisation?
 
-Under fliken ”Anpassade virtuella objekt i organisationen” i administrationsportalen kan administratören se och [hantera alla anpassade visuella objekt i företaget](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals): lägga till, inaktivera, aktivera och ta bort.
+Under fliken ”Anpassade virtuella objekt i organisationen” i administrationsportalen kan administratören se och [hantera alla anpassade visuella objekt i företaget](service-admin-portal.md#organizational-visuals): lägga till, inaktivera, aktivera och ta bort.
 Det finns inte längre något behov av att dela dessa visuella objekt via e-postmeddelanden eller en delad mapp! När de anpassade visuella objekten har distribuerats till organisationens lagringsplats kan användarna i organisationen enkelt hitta och importera dem till sina rapporter, direkt från Power BI Desktop eller Power BI-tjänsten. Du kan hitta de anpassade visuella objekten i organisationen i det inbyggda lagret (i Desktop och i tjänsten) på fliken *MIN ORGANISATION*. När administratören laddar upp en ny version av ett anpassat visuellt objekt i organisationen, så hämtar alla i organisationen samma uppdaterade version. Rapportförfattarna behöver inte ta bort de visuella objekten i sina rapporter för att få tillgång till de nya versionerna, eftersom alla rapporter som använder dessa visuella objekt uppdateras automatiskt! Uppdateringsmekanismen påminner om den för visuella marknadsplatsobjekt.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Om en administratör laddar upp ett anpassat visuellt objekt från den offentliga marknadsplatsen till organisationslagret, uppdateras det då automatiskt när leverantören uppdaterar det visuella objektet på den offentliga marknadsplatsen?

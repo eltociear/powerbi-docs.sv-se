@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d467839582abb3c66c8bf5a57d1f3c5f7b83d354
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
+ms.openlocfilehash: ed61d865756748ccd4e60f54de4a4b1b9adcef8d
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695046"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980345"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Anpassade visuella objekt i Power BI
 
@@ -159,7 +159,7 @@ Du har två alternativ för att hämta och importera anpassade visuella objekt �
 
 6. Spara .pbiviz-filen och öppna sedan Power BI.
 
-7. Importera .pbiviz-filen till rapporten (se avsnittet [Importera ett anpassat visuellt objekt från en fil](#import-a-custom-visuals-from-a-file) ovan)
+7. Importera .pbiviz-filen till din rapport. (Se avsnittet [Importera ett anpassat visuellt objekt från en fil](#import-a-custom-visual-from-a-file) ovan.)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 

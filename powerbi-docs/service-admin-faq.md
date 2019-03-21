@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430295"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980437"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -84,7 +84,7 @@ Det finns tre scenarier som kan gälla för användare i organisationen:
 
 Det finns steg som du kan ta som administratör för att hindra användare från att ansluta till din befintliga Office 365-klient. Om du blockerar åtkomst kommer användarnas försök att registrera sig att misslyckas och de kommer att omdirigeras till att kontakta administratören för deras organisation. Du behöver inte upprepa den här proceduren om du redan har inaktiverat licensen för automatisk distribution (t.ex. via Office 365 för utbildning för studenter, lärare och övrig personal).
 
-Använd följande PowerShell-skript för att förhindra att nya användare ansluter till en hanterad klient. [Lär dig mer om PowerShell](#basic-powershell-information)
+Använd följande PowerShell-skript för att förhindra att nya användare ansluter till en hanterad klient. ([Lär dig mer om PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -98,7 +98,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Hur kan jag låta användare att ansluta till min befintliga Office 365-klient?
 
-Använd följande PowerShell-skript för att låta nya användare ansluta till en hanterad klient. [Lär dig mer om PowerShell](#basic-powershell-information)
+Använd följande PowerShell-skript för att låta nya användare ansluta till en hanterad klient. ([Lär dig mer om PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -109,7 +109,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Hur bekräftar jag om klienten är blockerad?
 
-Kör följande PowerShell-skript för att verifiera inställningarna. *AllowEmailVerifiedUsers* bör vara false. [Lär dig mer om PowerShell](#basic-powershell-information)
+Kör följande PowerShell-skript för att verifiera inställningarna. *AllowEmailVerifiedUsers* bör vara false. ([Lär dig mer om PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -122,7 +122,7 @@ Get-MsolCompanyInformation | fl allow*
 
 Azure AD-inställningen som styr detta är **AllowAdHocSubscriptions**. De flesta klienter har inställningen inställd till sant, vilket innebär att den är aktiverad. Om du har köpt Power BI via en partner kan detta vara inställt på false, vilket innebär att det är inaktiverat.
 
-Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer. [Lär dig mer om PowerShell](#basic-powershell-information)
+Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer. ([Lär dig mer om PowerShell][1].)
 
 1. Logga in på Azure Active Directory med dina Office 365-autentiseringsuppgifter. Den första raden i följande PowerShell-skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
 
@@ -270,3 +270,5 @@ Power BI bygger på Office 365, som i sin tur bygger på Azure-tjänster som Azu
 [Grupphantering i Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+
+[1]: https://docs.microsoft.com/powershell/scripting/overview

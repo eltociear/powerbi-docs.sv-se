@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: f327cb95c10756f079778d20e62cba4871b95c02
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226145"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964949"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Vad är Microsoft Power BI Premium?
 
@@ -66,15 +66,15 @@ Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-k
 
 * EM-noder kan endast användas för inbäddade distributioner. EM-noder saknar åtkomst till premiumfunktioner, till exempel att dela appar till användare som inte har någon Power BI Pro-licens.
 
-| Kapacitetsnod | Totalt antal virtuella kärnor<br/>*(Serverdel + klientdel)*  | Virtuella kärnor för serverdel <sup>[1](#fn1)</sup> | Virtuella kärnor för klientdel <sup>[2](#fn2)</sup> | DirectQuery/begränsningar vid liveanslutning | Maximalt antal samtidiga uppdateringar |  Tillgängligt
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (månad för månad) |1 v-kärnor |0,5 v-kärna, 2,5 GB RAM |0.5 virtuella kärnor |3,75 per sekund |  1 | Tillgänglig |
-| EM2 (månad för månad) |2 v-kärnor |1 v-kärna, 5 GB RAM |1 v-kärnor |7,5 per sekund |  2 | Tillgänglig |
-| EM3 (månad för månad) |4 v-kärnor |2 v-kärnor, 10 GB RAM |2 v-kärnor | | 3 |  Tillgänglig |
-| P1 |8 v-kärnor |4 v-kärnor, 25 GB RAM |4 v-kärnor |30 per sekund | 6 | Tillgängliga (månad för månad är också tillgängligt) |
-| P2 |16 v-kärnor |8 v-kärnor, 50 GB RAM |8 v-kärnor |60 per sekund | 12 | Tillgänglig |
-| P3 |32 v-kärnor |16 v-kärnor, 100 GB RAM |16 v-kärnor |120 per sekund | 24 | Tillgänglig |
-| | | | | | | |
+| Kapacitetsnod | Totalt antal virtuella kärnor<br/>*(Serverdel + klientdel)*  | Virtuella kärnor för serverdel <sup>[1](#fn1)</sup> | Virtuella kärnor för klientdel <sup>[2](#fn2)</sup> | DirectQuery/begränsningar vid liveanslutning | Maximalt antal samtidiga uppdateringar |
+| --- | --- | --- | --- | --- | --- |
+| EM1 (månad för månad) |1 v-kärnor |0,5 v-kärna, 2,5 GB RAM |0.5 virtuella kärnor |3,75 per sekund |  1 |
+| EM2 (månad för månad) |2 v-kärnor |1 v-kärna, 5 GB RAM |1 v-kärnor |7,5 per sekund |  2 |
+| EM3 (månad för månad) |4 v-kärnor |2 v-kärnor, 10 GB RAM |2 v-kärnor | 15 | 3 |
+| P1 |8 v-kärnor |4 v-kärnor, 25 GB RAM |4 v-kärnor |30 per sekund | 6 |
+| P2 |16 v-kärnor |8 v-kärnor, 50 GB RAM |8 v-kärnor |60 per sekund | 12 |
+| P3 |32 v-kärnor |16 v-kärnor, 100 GB RAM |16 v-kärnor |120 per sekund | 24 |
+| | | | | | |
 
 <a name="fn1">1</a>: Klientdelens virtuella kärnor ansvarar för webbtjänsten. Till exempel instrumentpanel och rapporthantering, hantering av åtkomsträttigheter, schemaläggning, API:er, överföringar och hämtningar och generellt sett allt som rör användarupplevelsen. 
 
@@ -82,32 +82,7 @@ Power BI Premium är tillgängligt i nodkonfigurationer med kapaciteter för v-k
 
 ## <a name="workloads-in-premium-capacity"></a>Arbetsbelastningar i Premium-kapacitet
 
-Som standard stöder kapaciteter för **Power BI Premium** och **Power BI Embedded** endast den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Premium stöder också ytterligare arbetsbelastningar för **AI**, **Dataflöden** och **Sidnumrerade rapporter**. Du aktiverar de här arbetsbelastningarna i Power BI-adminstrationsportalen eller via Power BI REST API. Du kan också ange maximalt minne varje arbetsbelastning kan använda, så att du kan styra hur de olika arbetsbelastningarna påverkar varandra. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
-
-### <a name="default-memory-settings"></a>Standardinställningar för minne
-
-I följande tabeller visas standard- och minimivärden för minnet, baserat på de olika [kapacitetsnoder](#premium-capacity-nodes) som finns tillgängliga. Minne allokeras dynamiskt till dataflöden, men den är statiskt allokerad till sidnumrerade rapporter. Mer information finns i nästa avsnitt, [Överväganden för sidnumrerade rapporter](#considerations-for-paginated-reports).
-
-#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office-SKU:er för SaaS-scenarier (programvara som en tjänst)
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Sidnumrerade rapporter | Saknas | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
-| Dataflöden | 20 % standard, 8 % minimum  | 20 % standard, 4 % minimum  | 20 % standard, 2 % minimum | 20 % standard, 1 % minimum  |
-| | | | | |
-
-#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure-SKU:er för PaaS-scenarier (plattform som en tjänst)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Sidnumrerade rapporter | Saknas                      | Saknas                      | Saknas                     | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
-| Dataflöden         | 27 % standard, 27 % minimum | 20 % standard, 16 % minimum | 20 % standard, 8 % minimum | 20 % standard, 4 % minimum  | 20 % standard, 2 % minimum | 20 % standard, 1 % minimum   |
-
-### <a name="considerations-for-paginated-reports"></a>Överväganden för sidnumrerade rapporter
-
-Om du använder arbetsbelastningen sidnumrerade rapporter så bör du ha i åtanke att sidnumrerade rapporter låter dig köra din egen kod vid rapportåtergivning (till exempel ändra textfärg dynamiskt baserat på innehåll). Det innebär att vi skyddar Power BI Premium-kapaciteten genom att köra sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Vi tilldelar det maximala minne som du anger till det här området, oavsett om arbetsbelastningen är aktiv eller inte. Om du använder Power BI-rapporter eller dataflöden i samma kapacitet, bör du ange ett så lågt minne för de sidnumrerade rapporterna att det inte påverkar andra arbetsbelastningar negativt.
-
-I sällsynta fall kan arbetsbelastningen för sidnumrerade rapporter bli otillgänglig. I det här fallet visar arbetsbelastningen ett feltillstånd i administratörsportalen och användarna uppnår tidsgränser vid rapportåtergivning. För att lösa det här problemet kan du inaktivera arbetsbelastningen och sedan aktivera den igen.
+Som standard har Power BI Premium och Power BI Embedded endast stöd för den arbetsbelastning som är associerad med Power BI-frågor som körs i molnet. Premium stöder också ytterligare arbetsbelastningar för **AI**, **Dataflöden** och **Sidnumrerade rapporter**. Innan dessa arbetsbelastningar kan använda din kapacitets resurser, måste de vara aktiverade i Power BI-administratörsportal eller via Power BI REST API. Varje arbetsbelastning har standardinställningar för den högsta mängden minne som varje arbetsbelastning kan använda. Du kan dock konfigurera olika inställningar för minnesförbrukning för att fastställa hur arbetsbelastningarna påverkar varandra och konsumerar dina kapacitetsresurser. Mer information finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI-rapportserver
 

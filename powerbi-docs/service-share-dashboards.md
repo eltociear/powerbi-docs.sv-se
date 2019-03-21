@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 61aedc6c6bce52b172a92b938f9a2f278c841d6f
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580253"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964765"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -38,12 +38,18 @@ Se hur Amanda delar sin instrumentpanel med dina kollegor i och utanför företa
 
 1. Välj i en lista över instrumentpaneler och rapporter, eller i en öppen instrumentpanel eller rapport välj **Resurs** ![Resursikon](media/service-share-dashboards/power-bi-share-icon.png).
 
-1. Ange fullständiga e-postadresser för enskilda användare, distributionsgrupper och säkerhetsgrupper i den översta rutan. Du kan inte dela med dynamiska distributionslistor. 
+2. Ange fullständiga e-postadresser för enskilda användare, distributionsgrupper och säkerhetsgrupper i den översta rutan. Du kan inte dela med dynamiska distributionslistor. 
    
    Du kan dela med användare vars postadresser finns utanför organisationen, men en varning visas.
    
    ![Varning om att dela externt](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
+   >[!NOTE]
+   >Textrutan stöder högst 100 användare eller grupper. Du kan dela flera gånger eller dela med en grupp om du vill dela med ett stort antal användare.
+   > 
+   > 
+
+
 3. Lägg till ett meddelande om du vill. Det är valfritt.
 4. Om du vill att dina medarbetare ska kunna dela innehåll med andra, så markera **Tillåt mottagarna att dela din instrumentpanel/rapport**.
    
@@ -119,6 +125,7 @@ Saker att tänka på när det gäller att dela instrumentpaneler och rapporter:
 * Medarbetare som har samma e-postdomän som du och medarbetare vars domäner är olika men registrerade inom samma klientorganisation kan dela instrumentpanelen med andra. Låt oss t.ex. anta att domänerna contoso.com och contoso2.com har registrerats i samma klientorganisation. Om din e-postadress är konrads@contoso.com, så kan både ravali@contoso.com och gustav@contoso2.com dela, så länge som du har gett dem behörighet att dela.
 * Om dina medarbetare redan har åtkomst till en specifik instrumentpanel eller rapport, kan du skicka en direktlänk genom att kopiera webbadressen när du är i instrumentpanelen eller rapporten. Exempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Om dina medarbetare på motsvarande sätt redan har åtkomst till en specifik instrumentpanel, kan du [skicka en direktlänk till den underliggande rapporten](service-share-reports.md). 
+* Du kan dela med högst 100 användare eller grupper i en enda resursåtgärd. Du kan dock ge mer än 500 användare åtkomst till ett objekt. För att göra detta kan du antingen dela flera gånger genom att ange användarna individuellt, eller dela med en grupp som innehåller alla användare.
 
 ## <a name="troubleshoot-sharing"></a>Felsöka delning
 

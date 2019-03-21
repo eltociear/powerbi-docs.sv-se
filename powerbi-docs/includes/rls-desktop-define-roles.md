@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 69dff32b81037765f809609562c6a30edaa19d85
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488980"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58051809"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Definiera roller och regler i Power BI Desktop
 Du kan definiera roller och regler i Power BI Desktop. När du publicerar till Power BI publiceras även rolldefinitionerna.
@@ -29,7 +29,7 @@ Följ dessa steg för att definiera säkerhetsroller.
 7. Ange DAX-uttrycken. Uttrycket måste returnera sant eller falskt. Exempelvis: [Entity ID] = ”Value”.
    
    > [!NOTE]
-   > Du kan använda *username()* i detta uttryck. Observera att *username()* har formatet *DOMÄN\användarnamn* i Power BI Desktop. I Power BI-tjänsten och Power BI-rapportservern används formatet för användarens huvudnamn (UPN). Du kan även använda *userprincipalname()*, vilket alltid returnerar användaren i samma format som dess huvudnamn, *username@contoso.com*.
+   > Du kan använda *username()* i detta uttryck. Observera att *username()* har formatet *DOMÄN\användarnamn* i Power BI Desktop. I Power BI-tjänsten och Power BI-rapportservern används formatet för användarens huvudnamn (UPN). Du kan även använda *userprincipalname()*, vilket alltid returnerar användaren i samma format som dess huvudnamn, *användarnamn\@contoso.com*.
    > 
    > 
    

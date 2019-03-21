@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7264ef7b1057f64d6eb51ccc77cbec2a74be6d0e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2122ce9bd6eb850a51a06188ca1c10faf78f4bb1
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283999"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964673"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfigurera proxyinställningar för den lokala datagatewayen
 Din arbetsmiljö kan kräva att du går via en proxy för att ansluta till Internet. Detta kan förhindra att den lokala datagatewayen ansluter till tjänsten.
@@ -46,24 +46,41 @@ Den andra är för den Windows-tjänst som interagerar med Power BI-tjänsten oc
 ## <a name="configuring-proxy-settings"></a>Konfigurera proxyinställningar
 Standardproxykonfigurationen är följande.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true" />
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true" />
+</system.net>
+```
+
 
 Standardkonfigurationen fungerar med Windows-autentisering. Om proxyn använder en annan form av autentisering, behöver du ändra inställningarna. Om du inte är säker, kontaktar du din nätverksadministratör. Grundläggande proxyautentisering rekommenderas inte. Försök att använda grundläggande proxyautentisering kan orsaka proxyautentiseringsfel som resulterar i en gateway som inte är korrekt konfigurerad. Använd en starkare proxyautentiseringsmetod i stället.
 
 Förutom att använda standardautentiseringsuppgifter kan du lägga till ett <proxy>-element och definiera proxyserverinställningar i mer detalj. Du kan till exempel ange att din lokala datagateway alltid ska använda proxyservern även för lokala resurser genom att ange parametern bypassonlocal till false. Detta kan vara användbart i felsökningssituationer om du vill spåra alla HTTPS-förfrågningar från en lokal datagateway i proxyloggfilerna. Följande exempelkonfiguration anger att alla förfrågningar måste gå via en specifik proxyserver med IP-adressen 192.168.1.10.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true">
-            <proxy  
-                autoDetect="false"  
-                proxyaddress="http://192.168.1.10:3128"  
-                bypassonlocal="false"  
-                usesystemdefault="true"
-            />  
-        </defaultProxy>
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true">
+        <proxy  
+            autoDetect="false"  
+            proxyaddress="http://192.168.1.10:3128"  
+            bypassonlocal="false"  
+            usesystemdefault="true"
+        />  
+    </defaultProxy>
+</system.net>
+```
+
+För att gatewayen ska ansluta till datakällor i molnet via en proxyserver, ska du uppdatera följande fil: *C:\Program\Microsoft Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe*. I filen, expanderar du avsnittet `<configurations>` för att nkludera innehållet nedan och uppdaterar attributet `proxyaddress` med din proxyinformation. Följande exempel skulle dirigera alla molnbegäranden via en specifik proxy med IP-adressen 192.168.1.10.
+
+```
+<configuration>
+<system.net>
+    <defaultProxy useDefaultCredentials="true" enabled="true">
+    <proxy proxyaddress=""http://192.168.1.10:3128" bypassonlocal="true" />
+    </defaultProxy>
+</system.net>
+</configuration>
+```
 
 Mer information om konfiguration av proxyelement för .NET-konfigurationsfiler finns i [defaultProxy-element (nätverksinställningar)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

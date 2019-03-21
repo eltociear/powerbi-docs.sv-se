@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/10/2019
-ms.openlocfilehash: 719ec49dd560461dfa3cec66e8f8f1a5b92b8951
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: a9f8c6248f9754192009e12bab34d3f1427269c2
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757402"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174808"
 ---
 # <a name="certified-custom-visuals"></a>Certifierade anpassade visuella objekt
 
@@ -73,6 +73,7 @@ Gör så här för att skicka ett anpassat visuellt objekt för certifikatutfär
 
 | Länk till AppSource | Länk till video |
 | --- | --- |
+| [3AG Systems – liggande stapeldiagram med relativ avvikelse](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems – kolumndiagram med relativ avvikelse](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
 | [Avancerat ringdiagram, visuellt objekt](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
 | [Avancerat nätverk, visualisering](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |

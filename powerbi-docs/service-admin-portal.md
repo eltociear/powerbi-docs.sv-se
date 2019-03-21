@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: ca9a2eff3d05ec10c83dde90eabb779370ca5e96
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: d592cca246b7d8bf348a9cdd889b6d8ba0e248c1
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757356"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980391"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -42,9 +42,9 @@ Det finns sju flikar i portalen. Resten av den här artikeln innehåller informa
 * [Användare](#users)
 * [Granskningsloggar](#audit-logs)
 * [Klientinställningar](#tenant-settings)
-* [Premiuminställningar](#premium-settings)
+* [Kapacitetsinställningar](#capacity-settings)
 * [Bädda in koder](#embed-codes)
-* [Visuella objekt för organisationer](#organization-visuals)
+* [Visuella objekt för organisationer](#organizational-visuals)
 
 ## <a name="usage-metrics"></a>Användningsstatistik
 

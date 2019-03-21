@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: fb2b169650360a7dc6a4afaee1c43abb733255c9
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431003"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964719"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -22,13 +22,19 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
+**Uppnå vinn-vinn-lösningar för tillverkare och återförsäljare av förbrukningsvaror**
+<br>av Liz McCreesh
+<br>[Registrera dig nu](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Aktuella webbseminarier
 
 Kom igång med dessa populära webbseminarier på begäran
+
+**Power BI och framtidens moderna och företags-BI**
+<br>av Arun Ulag och Amir Netz
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
 
 **Kom igång med Power BI**
 <br>av Miguel Martinez
@@ -46,13 +52,9 @@ Kom igång med dessa populära webbseminarier på begäran
 <br>av Cory Hrncirik och Miguel Martinez
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI: Korrekt utförd analys**
-<br>av Gohul Shanmugalingam
-<br>[Registrera dig och titta nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Skapa ett visuellt objekt i Power BI:  Viktiga diagramtyper och hur du använder dem**
-<br>av Miranda Li
-<br>[Registrera dig och titta nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+**Förbättra dina program med hjälp av Power BI JavaScript API**
+<br>av Nimrod Shalit
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
 **Power BI, Excel och Office 365: Optimera dina företagsdata**
 <br>av Olaf Hubel och Miguel Martinez
@@ -62,10 +64,6 @@ Kom igång med dessa populära webbseminarier på begäran
 <br>av Miranda Li
 <br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Den totala ekonomiska effekten av Microsoft Flow och PowerApps**
-<br>av Jonathan Lipsitz och Enrique Plaza Garcia
-<br>[Registrera dig och titta nu](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
-
 >[Bläddra igenom biblioteket med Power BI webbseminarier på begäran från våra experter](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
 ## <a name="on-demand-webinars"></a>Webbseminarier på begäran
@@ -74,9 +72,25 @@ Titta på inspelade sessioner när som helst
 
 ### <a name="getting-started"></a>Komma igång
 
+**Automatisera dagliga affärsprocesser med Power BI, PowerApps och Microsoft Flow**
+<br>av Wim Coorevits och Enrique Plaza Garcia
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
+
+**Power BI: Korrekt utförd analys**
+<br>av Gohul Shanmugalingam
+<br>[Registrera dig och titta nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Skapa ett visuellt objekt i Power BI:  Viktiga diagramtyper och hur du använder dem**
+<br>av Miranda Li
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
 **Så här skapar du visuellt bländande Power BI-rapporter**
 <br>av Charles Sterling
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Den totala ekonomiska effekten av Microsoft Flow och PowerApps**
+<br>av Jonathan Lipsitz och Enrique Plaza Garcia
+<br>[Registrera dig och titta nu](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 **Bättre tillsammans: 5 fördelar som Excel-användare får av att använda Power BI**
 <br>av Carlos Otero och Miguel Martinez
@@ -100,6 +114,10 @@ Titta på inspelade sessioner när som helst
 
 ### <a name="partners"></a>Partners ###
 
+**Förvandla kunddata till detaljhandelsframgångar med Power BI**
+<br>av Angad Soni från Hitachi Solutions
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+
 **Beprövade hälsolösningar som förbättrar både resultatet för patienterna och lönsamheten**
 <br>av Stephen Cracknell och Stuart Macanliss från US Medical IT
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
@@ -111,6 +129,10 @@ Titta på inspelade sessioner när som helst
 **Tillämpad intelligens för försäljning och tjänster**
 <br>av Ed Bobrin från Avanade
 <br>[Registrera dig och titta nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
+
+**5 vanor för en lyckad trendsättare – Rohit Bhargava**
+<br>av Rohit Bhargava från Non-Obvious
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Tillverkare: Din bransch genomgår en digital förvandling – håll dig i framkant genom att utnyttja analys för att maximera lönsamhet**
 <br>av Jon Thompson från Blue Margin och Jim Pastor från Elgin Fastener Group

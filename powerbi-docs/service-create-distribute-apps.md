@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 051609c59e155cb6d5c2a982483a7e6d2d91a665
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294119"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964696"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicera appar med instrumentpaneler och rapporter i Power BI
 
@@ -121,6 +121,11 @@ Här är saker som du bör ha i åtanke när du pushar appar till slutanvändare
 
 ## <a name="unpublish-an-app"></a>Ta bort en app
 Alla medlemmar i en app-arbetsyta kan ta bort appen.
+
+>[!NOTE]
+>När du ta bort en app, förlorar app-användare sina anpassningar. Det innebär att alla personliga bokmärken, kommentarer eller prenumerationer som är associerade med innehållet i appen går förlorade. Ta endast bort en app om du behöver ta bort den.
+> 
+> 
 
 * I en app-arbetsyta väljer du ellipsen (**...** ) i det övre högra hörnet > **Ta bort appen**.
   

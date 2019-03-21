@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/25/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 032fae40a7e2328879ba01b6d94c3c532369b3ab
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826685"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174923"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Övervaka Premium-funktioner med appen
 
@@ -97,7 +97,7 @@ Instrumentpanelen innehåller följande mått:
 | DirectQuery/Live högt utnyttjande antal| Antal gånger som DirectQuery/Live-anslutningar har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på treminuters bucketar. |
 | DirectQuery/Live max utnyttjande antal| De flesta gånger som DirectQuery/Live-anslutningarna överskridit 80 % under de senaste sju dagarna, uppdelat på entimmes bucketar. |
 | DirectQuery/Live max högt utnyttjande | Det maximala antalet gånger som DirectQuery/Live-anslutningar har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på treminuters bucketar.|
-| DirectQuery/Live tid när max inträffade | Lokal tid då DirectQuery/Live-anslutningar överskred 80 % flest gånger under en timme. |
+| DirectQuery/Live tid när max inträffade | Tid i UTC då DirectQuery/Live-anslutningar överskred 80 % flest gånger under en timme. |
 | Uppdateringar totalt | Totalt antal uppdateringar under de senaste sju dagarna. |
 | Uppdateringstillförlitlighet (%) | Antal lyckade uppdateringar delat på det totala antalet uppdateringar under de senaste sju dagarna. |
 | Genomsnittlig varaktighet för uppdateringar (minuter) | Genomsnittlig mängd tid för att slutföra uppdateringen. |
@@ -162,8 +162,8 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 | Uppdaterar |  Totalt antal: Totalt antal uppdateringar för varje datauppsättning.<br>  Tillförlitlighet: Procentandelen uppdateringar som slutfördes för varje datauppsättning.<br>  Genomsnittlig väntetid: Den genomsnittliga fördröjningen mellan schemalagda tid och starttid för en uppdatering av datauppsättningen, i minuter.<br>  Maximal väntetid: Den maximala väntetiden för datauppsättningen, i minuter.<br>  Genomsnittlig varaktighet: Den genomsnittliga varaktigheten för uppdateringen för datauppsättningen, i minuter.<br>  Maximal varaktighet: Varaktigheten för den långvarigaste uppdateringen av datauppsättningen, i minuter. |
 | De 5 viktigaste datauppsättningarna efter genomsnittlig varaktighet (minuter) |  De fem datauppsättningarna med längst genomsnittlig uppdateringsvaraktighet, i minuter. |
 | De viktigaste 5 datauppsättningarna efter genomsnittlig väntetid (minuter) |  De fem datauppsättningarna med den längsta genomsnittliga uppdateringsväntetiden, i minuter. |
-| Antal uppdateringar och minnesförbrukning per timma (GB) |  Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i lokal tid. |
-| Genomsnittlig uppdateringsväntetid varje timme (minuter) |  Den genomsnittliga uppdateringsväntetiden, uppdelat i entimmes bucketar, rapporterad i lokal tid. Många toppar med långa uppdateringsväntetider tyder på att kapaciteten körs för hårt. |
+| Antal uppdateringar och minnesförbrukning per timma (GB) |  Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i UTC-tid. |
+| Genomsnittlig uppdateringsväntetid varje timme (minuter) |  Den genomsnittliga uppdateringsväntetiden, uppdelat i entimmes bucketar, rapporterad i UTC-tid. Många toppar med långa uppdateringsväntetider tyder på att kapaciteten körs för hårt. |
 |  |  |
 
 #### <a name="query-durations-area"></a>Frågevaraktighetsområde
@@ -173,8 +173,8 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 | Frågevaraktighet |  Data i det här avsnittet är indelade efter datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna.<br>  Totalt: Det totala antal frågor som körts för datauppsättningen.<br>  Genomsnitt: Den genomsnittliga frågevaraktigheten för datauppsättningen, mätt i millisekunder<br>  Max: Varaktigheten för den långvarigaste frågan i datauppsättningen, i millisekunder.|
 | Frågevaraktighetsfördelning |  Frågevaraktighetens histogram bucketeras efter frågevaraktighet (i millisekunder) i följande kategorier: intervall på < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek, 1-3 sek, 3-10 sek, 10-30 sek och > 30 sek. Lång frågevaraktighet och långa väntetider är en tydlig indikation på kapaciteten utsätts för mycket hög belastning. Det kan också innebära att en enskild datauppsättning orsakar problem och ytterligare utredning krävs. |
 | De 5 främsta datauppsättningarna efter genomsnittlig varaktighet |  De fem datauppsättningarna med den längsta genomsnittliga frågevaraktigheten, i millisekunder. |
-| Frågevaraktighetsfördelning per timme |  Antal frågor och genomsnittlig varaktighet (i millisekunder) kontra minnesanvändning i GB, uppdelat i entimmes bucketar, rapporterade i lokal tid. |
-| DirectQuery/Live-anslutningar (> 80 % utnyttjande) |  Tiderna då en DirectQuery eller Live-anslutning överskred 80 % CPU-användning, uppdelat i entimmes bucketar, rapporterat i lokal tid. |
+| Frågevaraktighetsfördelning per timme |  Antal frågor och genomsnittlig varaktighet (i millisekunder) kontra minnesanvändning i GB, uppdelat i entimmes bucketar, rapporterade i UTC-tid. |
+| DirectQuery/Live-anslutningar (> 80 % utnyttjande) |  Tiderna då en DirectQuery eller Live-anslutning överskred 80 % CPU-användning, uppdelat i entimmes bucketar, rapporterat i UTC-tid. |
 |  |  |
 
 #### <a name="query-waits-area"></a>Frågeväntansområde
@@ -184,7 +184,7 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 | Frågeväntetider |  Data i det här avsnittet är indelade efter datauppsättningar, arbetsytor och timbucketar under de senaste sju dagarna.<br>  Totalt: Det totala antal frågor som körts för datauppsättningen.<br>  Antal väntande: Det antal frågor i den datauppsättning som väntade på systemresurser innan körningen startades.<br>  Genomsnitt: Den genomsnittliga frågeväntetiden för datauppsättningen, i millisekunder.<br>  Max: Varaktigheten för den längst väntande frågan i datauppsättningen, i millisekunder.|
 | De 5 främsta datauppsättningarna efter genomsnittlig väntetid |  De fem datauppsättningarna med den längsta genomsnittliga väntetiden för att börja köra en fråga, i millisekunder. |
 | Väntetidsfördelningar |  Histogrammet för frågevaraktighet bucketeras efter frågevaraktigheter (i millisekunder) i följande kategorier: intervall på <= 50 ms , 50-100 ms , 100-200 ms , 200-400 ms 400 ms-1 sek, 1-5 s och > 5 s. |
-| Väntetidsfördelningar per timme |  Antal väntande frågor och genomsnittlig väntetid (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i entimmes bucketar rapporterade i lokal tid. |
+| Väntetidsfördelningar per timme |  Antal väntande frågor och genomsnittlig väntetid (i millisekunder) jämfört med minnesanvändningen i GB, uppdelat i entimmes bucketar rapporterade i UTC-tid. |
 |  |  |
 
 #### <a name="datasets-area"></a>Området Datamängder
@@ -193,8 +193,8 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 | --- | --- |
 | Datauppsättningsstorlekar  |  Maxstorlek: Maxstorleken för datauppsättningen i MB för perioden som visas. |
 | Antal borttagna datauppsättningar |  Totalt: Det totala antalet *avlägsnade* datauppsättningar för respektive kapacitet. När en kapacitet drabbas av minnesbelastning avlägsnar noden en eller flera datauppsättningar från minnet. Datamängder som är inaktiva (utan frågor/uppdateringsåtgärder som körs för tillfället) avlägsnas först. Avlägsnandeordern baseras sedan på ett mått på ”minst nyligen använd” (LRU, Least Recently Used).|
-| Inlästa datauppsättningar per timme |  Antal datauppsättningar som lästes in i minnet jämfört med minnesförbrukning i GB, uppdelat i entimmes bucketar, rapporterat i lokal tid. |
-| Antal borttagna datauppsättningar och minnesförbrukning per timme |  Borttagna datauppsättningar jämfört med minnesförbrukning i GB, uppdelat i entimmes bucketar, rapporterat i lokal tid. |
+| Inlästa datauppsättningar per timme |  Antal datauppsättningar som lästes in i minnet jämfört med minnesförbrukning i GB, uppdelat i entimmes bucketar, rapporterat i UTC-tid. |
+| Antal borttagna datauppsättningar och minnesförbrukning per timme |  Borttagna datauppsättningar jämfört med minnesförbrukning i GB, uppdelat i entimmes bucketar, rapporterat i UTC-tid. |
 | Procent förbrukat minne |  Det totala antalet aktiva datauppsättningar i minnet som procent av det totala minnet. Delta mellan aktiva och alla definierade datauppsättningar som kan avlägsnas. Visas per timme, för de sju föregående dagarna. |
 |  |  |
 
@@ -205,8 +205,8 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 | Övergripande användning |  Totalt antal visningar: Antalet gånger som rapporten har visats av användare.<br>  Radantal: Antalet rader data i rapporten.<br>  Hämtning (medelvärde): Den genomsnittliga tid det tar att hämta data för rapporten, uttryckt i millisekunder. Långa varaktigheter kan indikera långsamma frågor eller andra problem med datakällan. <br>  Bearbetning (medelvärde): Den genomsnittliga tid det tar att bearbeta data för en rapport, i millisekunder.<br> Återgivning (medelvärde): Den genomsnittliga tid det tar att återge en rapport i webbläsaren, i millisekunder.<br>  Total tid: Den tid det tar för alla faser i en rapport, i millisekunder. |
 | De 5 främsta rapporterna efter genomsnittlig datahämtningstid |  De fem rapporterna med den längsta genomsnittliga datahämtningstiden, i millisekunder. |
 | De 5 främsta rapporterna efter genomsnittlig rapportbearbetningstid |  De fem rapporterna med den längsta genomsnittliga rapportbearbetningstiden, i millisekunder. |
-| Resultat per timma |  Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i lokal tid. |
-| Varaktighet per timma |  Datahämtning jämfört med tiden för bearbetning och återgivning, uppdelat i entimmes bucketar, rapporterat i lokal tid. |
+| Resultat per timma |  Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i UTC-tid. |
+| Varaktighet per timma |  Datahämtning jämfört med tiden för bearbetning och återgivning, uppdelat i entimmes bucketar, rapporterat i UTC-tid. |
 |  |  |
 
 ### <a name="dataflows"></a>Dataflöden
@@ -216,8 +216,8 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 | Uppdaterar |  Totalt: Totalt antal uppdateringar för varje dataflöde.<br>  Tillförlitlighet: procentandelen uppdateringar som har slutförts för varje dataflöde.<br>  Genomsnittlig väntetid: Den genomsnittliga fördröjningen mellan schemalagd tid och start av en uppdatering av dataflödet, i minuter.<br>  Maximal väntetid: Maximal väntetid för dataflödet, i minuter.<br>  Genomsnittlig varaktighet: Genomsnittlig varaktighet för uppdatering för dataflödet, i minuter.<br>  Maximal varaktighet: Varaktigheten för den långvarigaste uppdateringen av dataflödet, i minuter. |
 | De 5 viktigaste dataflödena efter genomsnittlig uppdateringsvaraktighet |  De fem dataflöden med den längsta genomsnittliga uppdateringsvaraktigheten, i minuter. |
 | De 5 viktigaste dataflödena efter genomsnittlig väntetid |  De fem dataflödena med den längsta genomsnittliga uppdateringsväntetiden, i minuter. |
-| Genomsnittlig uppdateringsväntetid uppdelad i timmar |  Den genomsnittliga uppdateringsväntetiden, uppdelat i entimmes bucketar, rapporterad i lokal tid. Många toppar med långa uppdateringsväntetider tyder på att kapaciteten körs för hårt. |
-| Antal uppdateringar och minnesförbrukning per timma |  Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i lokal tid. |
+| Genomsnittlig uppdateringsväntetid uppdelad i timmar |  Den genomsnittliga uppdateringsväntetiden, uppdelat i entimmes bucketar, rapporterad i UTC-tid. Många toppar med långa uppdateringsväntetider tyder på att kapaciteten körs för hårt. |
+| Antal uppdateringar och minnesförbrukning per timma |  Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i UTC-tid. |
 |  |  |
 
 ### <a name="resource-consumption"></a>Resursförbrukning

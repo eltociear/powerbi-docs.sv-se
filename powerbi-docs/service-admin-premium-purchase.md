@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: 312e010bfa3ea635ef014a0b2dd913fa9e3911b6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014149"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964857"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
@@ -95,13 +95,15 @@ Du kan avbryta prenumerationen från Administrationscenter för Office 365. Gör
 
 1. Läs igenom informationen och välj **Avbryt prenumeration** om du vill fortsätta.
 
+### <a name="when-canceling-or-your-license-expires"></a>När du avbryter eller licensen upphör att gälla
+
+När du avbryter din Premium-prenumeration eller kapacitetslicensen upphör att gälla, kan du fortsätta att få åtkomst till din Premium-kapacitet under en period på 30 dagar från datumet för avbrottet eller då licensen upphör att gälla. Efter 30 dagar kommer du inte längre att kunna komma åt din Premium-kapaciteter eller arbetsytor i dem.
+
 ## <a name="next-steps"></a>Nästa steg
 
-[Power BI-prissättningssida](https://powerbi.microsoft.com/pricing/)
-[Power BI Premium-kalkylator](https://powerbi.microsoft.com/calculator/)
-[Vad är Power BI Premium?](service-premium.md)
-[Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)
-[Microsoft Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)
+[Power BI-prissättningsida](https://powerbi.microsoft.com/pricing/)   
+[Power BI Premium-kalkylator](https://powerbi.microsoft.com/calculator/)   
+[Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)   
 [Planera ett white paper för en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

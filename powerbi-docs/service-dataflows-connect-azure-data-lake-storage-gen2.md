@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
+ms.openlocfilehash: 875f30a6e051561f20a7ca54bc48343dd7248e79
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426733"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174762"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
 
@@ -65,7 +65,7 @@ Följ stegen i artikeln [Skapa ett lagringskonto i Azure Data Lake Storage Gen2]
 
 Därefter måste du ge Power BI-tjänsten en läsarroll i ditt skapade lagringskonto. Det är en inbyggd roll så stegen är enkla. 
 
-Följ stegen i artikeln [Tilldela en roll till en säkerhetsprincip](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal).
+Följ stegen i [Tilldela en inbyggd RBAC-roll](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
 I fönstret **Lägg till rolltilldelning** väljer du rollen **Läsare** för att tilldela Power BI-tjänsten. Använd sedan sökfunktionen för att hitta **Power BI-tjänsten**. Följande bild visar rolltilldelningen **Läsare** för Power BI-tjänsten.
 
@@ -150,6 +150,9 @@ Du ansluter ditt **Azure Data Lake Storage Gen2**-konto med följande steg:
 6. Välj **Anslut**.
 
 När de här stegen har slutförts, är ditt Azure Data Lake Storage Gen2-konto anslutet till Power BI. 
+
+> [!NOTE]
+> Du måste ha behörigheter som global administratör för att konfigurera en anslutning till Azure Data Lake Storage Gen2 i Power BI-administratörsportalen. Dock kan inte globala administratörer ansluta extern lagring i administratörsportalen.  
 
 Därefter måste du göra det möjligt personer i din organisation att konfigurera sina arbetsytor där de kan använda det här lagringskontot för dataflödesdefinition och datalagring. Låt oss göra det i nästa avsnitt. 
 

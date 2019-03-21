@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 24701392b6cfa3400ed96be8a496791d250204d5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291175"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980414"
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
 
@@ -56,7 +56,7 @@ Granskningsloggar för Power BI är tillgängliga direkt via [säkerhets- och ef
 
 ## <a name="search-only-power-bi-activities"></a>Sök endast efter Power BI-aktiviteter
 
-Du kan begränsa resultaten till enbart Power BI-aktiviteter genom att utföra följande steg. En lista över aktiviteter finns i [listan med aktiviteter som granskas av Power BI](#list-of-activities-audited-by-power-bi) längre fram i den här artikeln.
+Du kan begränsa resultaten till enbart Power BI-aktiviteter genom att utföra följande steg. En lista över aktiviteter finns i [listan med aktiviteter som granskas av Power BI](#activities-audited-by-power-bi) längre fram i den här artikeln.
 
 1. Välj **Aktiviteter** i listrutan under **Sök** på sidan **Sök i granskningslogg**.
 
