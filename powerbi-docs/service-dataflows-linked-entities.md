@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4331878aee591f9e3939c0bb1c239eca160ee61d
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223661"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220918"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Länka entiteter mellan dataflöden i Power BI (förhandsversion)
 
@@ -81,6 +81,7 @@ Det finns några begränsningar att tänka på när du arbetar med länkade enti
 * Det finns en maxgräns på högst fem refererande hopp
 * Cykliska beroenden med länkade entiteter är inte tillåtna
 * Dataflödet måste finnas i en [ny Power BI-arbetsyta](service-create-the-new-workspaces.md)
+* En länkad entitet kan inte kopplas till en vanlig entitet som hämtar data från en lokal datakälla
 
 
 ## <a name="next-steps"></a>Nästa steg

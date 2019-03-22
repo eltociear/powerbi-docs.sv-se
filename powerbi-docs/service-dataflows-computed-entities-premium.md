@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a8a7aa8ed33e5c1baa7319ea65a67b6338c41ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277812"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220964"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Använda beräknade entiteter i Power BI Premium (förhandsversion)
 
@@ -79,7 +79,9 @@ Observera att om du tar bort arbetsytan från Power BI Premium-kapaciteten, så 
 
 När du arbetar med dataflöden som skapats enbart i en organisations Azure Data Lake Storage Gen2-konto, fungerar länkade entiteter och beräknade entiteter bara korrekt när entiteterna finns i samma lagringskonto. Du hittar mer information i [Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-Dessutom är länkade entiteter inte tillgängliga för dataflöden som skapats med Common Data Service-mappar. Se [Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)](service-dataflows-add-cdm-folder.md).
+Länkade entiteter är inte tillgängliga för dataflöden som skapas från CDM-mappar (Common Data Model). Läs mer i informationen om hur du [lägger till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)](service-dataflows-add-cdm-folder.md).
+
+Ett metodtips är att du när du utför databeräkningar på data som är kopplade med lokala data och molndata alltid skapar en ny entitet för att utföra beräkningarna. Detta ger en bättre användarupplevelse än att använda en befintlig entitet för beräkningar, till exempel en entitet som också frågar efter data från båda källorna och gör transformeringar i datasjön.
 
 ## <a name="next-steps"></a>Nästa steg
 
