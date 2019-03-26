@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f1244535259de2a5b5726d295a64229a0f92f02b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 635a64c08056e82539d33904d4cce60d4cfc00cd
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296489"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382948"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
 
@@ -33,9 +33,9 @@ Om du vill köpa en prenumeration på Power BI Pro eller Power BI Premium kan du
 
 ## <a name="purchase-from-microsoft-or-another-channel"></a>Köp från Microsoft eller en annan kanal
 
-Beroende på relationen med din partner kan du köpa Power BI direkt från Microsoft eller en annan partner. Du kan kontrollera om du kan lägga till Power BI-prenumerationer på Office 365-administrationsportalen (kräver medlemskap i rollen global administratör eller faktureringsadministratör).
+Beroende på relationen med din partner kan du köpa Power BI direkt från Microsoft eller en annan partner. Du kan verifiera om du kan lägga till Power BI-prenumerationer eller inte i administrationscenter för Microsoft 365 (kräver medlemskap i rollen global administratör eller faktureringsadministratör).
 
-1. Gå till [administrationsportalen för Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Gå till [Administrationscenter för Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Öppna **Fakturering** i den vänstra menyn:
 
