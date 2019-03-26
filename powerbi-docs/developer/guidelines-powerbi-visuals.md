@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 03/10/2019
-ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58175489"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430310"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 
@@ -29,7 +29,6 @@ Visuella objekt där ytterligare köp kan krävas liknar tillägg med in-app kö
 
 >[!IMPORTANT]  
 > Om du uppdaterar ditt visuella objekt från kostnadsfritt till ”Ytterligare köp kan krävas” måste användarna får samma nivå av kostnadsfria funktioner som före uppdateringen. Du kan lägga till valfria avancerade betalfunktioner utöver de tidigare kostnadsfria funktionerna. Vi rekommenderar att du skickar in visuella IAP-objekt med de avancerade funktionerna som nya visuella objekt och inte uppdaterar de tidigare kostnadsfria versionerna.
-
 
 ## <a name="what-changed-in-the-submission-process"></a>Vad ändras i inlämningsprocessen?
 
@@ -51,17 +50,17 @@ I det här avsnittet beskrivs specifikationerna för att lägga till logotyper o
 > [!IMPORTANT]
 > Logotyper tillåts **endast i redigeringsläge**. Logotyper **kan inte** visas i visningsläge.
 
-![Definitioner](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
+![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
 
-![Saker att tänka på](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
+![Saker att tänka på](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
 
-![Saker att undvika](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
+![Saker att undvika](media/guidelines-powerbi-visuals/things-to-avoid.png)
 
-![Storlek och format](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
+![Storlek och format](media/guidelines-powerbi-visuals/size-and-format.png)
 
-![Marginaler och storlekar](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
+![Marginaler och storlekar](media/guidelines-powerbi-visuals/margins-and-sizes.png)
 
-![Redigeringsläge](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
+![Redigeringsläge](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Metodtips
 

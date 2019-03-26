@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 54515259d0e258284cd5a2e86432a5ef6be89a9e
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
+ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57966420"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430333"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Självstudie: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)
 
@@ -92,7 +92,7 @@ På nästa skärm uppmanas du att ansluta till en datakälla. Klistra in en län
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
 
-!Anslut till datakälla](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
+![Anslut till datakällan](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
 Power Query Editor visar en förhandsgranskning av data från CSV-filen. Välj **Transformera tabell** från kommandot i menyfliksområdet och välj sedan **Använd första raden som rubriker**.  Detta lägger till frågesteget _Upphöjda rubriker_ i rutan **Tillämpade steg** till höger. Du kan också byta namn på frågan till ett mer användarvänligt namn som _Bilpriser_ med hjälp av fönstret till höger.
 
@@ -137,7 +137,7 @@ Genom att välja ikonen **Redigera** öppnas Power Query Editor för entiteter i
 
 Välj knappen **AI-insikter** i menyfliksområdet och välj sedan mappen _Azure Machine Learning-modeller_ från den vänstra navigeringsmenyn.
 
-Välj mappen **Azure Machine Learning-modeller**. Azure ML-modeller som du har beviljats åtkomst till visas som Power Query-funktioner med prefixet *AzureML.*  När du klickar på den funktion som motsvarar modellen _AutomobilePricePrediction_, anges parametrarna för modellens webbtjänsten som funktionsparametrar.
+Azure ML-modeller som du har beviljats åtkomst till visas som Power Query-funktioner med prefixet *AzureML.*  När du klickar på den funktion som motsvarar modellen _AutomobilePricePrediction_, anges parametrarna för modellens webbtjänsten som funktionsparametrar.
 
 Du kan ange någon av den valda entitetens kolumner som indata från listrutan för att anropa en Azure ML-modell. Du kan också ange ett konstant värde som ska användas som indata genom att klicka på kolumnikonen till vänster om dialogrutan Indata. När ett kolumnnamn matchar ett av namnen på funktionsparametrarna föreslås automatiskt kolumnen som indata.  Om kolumnnamnet inte matchar, kan du välja det från listrutan.
 
