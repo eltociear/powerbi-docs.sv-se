@@ -881,7 +881,7 @@ items:
       - name: Bädda in innehåll för organisationen
         href: developer/embed-sample-for-your-organization.md
       - name: Bädda in innehåll för nationella moln
-        href: developer/embed-sample-for-customers-sovereign-clouds.md
+        href: developer/embed-sample-for-customers-national-clouds.md
     - name: Begrepp
       items:
       - name: Bästa praxis för prestanda
@@ -983,7 +983,7 @@ items:
       - name: Anpassade visuella objekt för organisationer i Power BI
         href: power-bi-custom-visuals-organization.md
       - name: Riktlinjer för visuella objekt för Power BI
-        href: developer/office-store-in-app-purchase-visual-guidelines.md
+        href: developer/guidelines-powerbi-visuals.md
       - name: Vanliga frågor och svar om anpassade visuella objekt
         href: power-bi-custom-visuals-faq.md
       - name: Använda funktioner
@@ -1325,9 +1325,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: ad67a7951e15d579cdea824a3eee69fe2ac0ff11
-ms.sourcegitcommit: cd7a027b532b1bb2dbbcae9e92426c80f80810d3
+ms.openlocfilehash: 4bef8b089403856b84eafc59a00b31ad5f0c00c2
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57964926"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430425"
