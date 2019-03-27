@@ -10,19 +10,19 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 312e010bfa3ea635ef014a0b2dd913fa9e3911b6
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 25e36334390ad88d7856124c67e275db5c7fcd1c
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964857"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383018"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
 > [!NOTE]
 > Den här artikeln håller på att uppdateras för att beskriva nya funktioner, ge mer information och förbättra läsbarheten. 
 
-Den här artikeln beskriver hur du köper Power BI Premium-kapacitet (P1–P3) till din organisation. Du köper Power BI Premium-kapacitet i administrationscentret för Office 365, och du hanterar kapaciteterna i administratörsportalen för Power BI. Aktuell information om prissättning och planering finns på [prissättningssidan för Power BI](https://powerbi.microsoft.com/pricing/) och [Power BI Premium-kalkylatorn](https://powerbi.microsoft.com/calculator/).
+Den här artikeln beskriver hur du köper Power BI Premium-kapacitet (P1–P3) till din organisation. Du köper Power BI Premium-kapacitet i administrationscentret för Microsoft 365, och du hanterar kapaciteterna i administratörsportalen för Power BI. Aktuell information om prissättning och planering finns på [prissättningssidan för Power BI](https://powerbi.microsoft.com/pricing/) och [Power BI Premium-kalkylatorn](https://powerbi.microsoft.com/calculator/).
 
 Innehållsskapare behöver fortfarande en Power BI Pro-licens, även om organisationen använder Power BI Premium. Se till att du köper minst en Power BI Pro-licens för din organisation.
 
@@ -42,7 +42,7 @@ Om du vill köpa Premium-kapacitet följer du dessa steg:
 
     ![Office 365-appväljaren](media/service-admin-premium-purchase/o365-app-picker.png)
 
-    Du kan också bläddra till Administrationscenter för Office 365. Du kommer dit genom att gå till https://portal.office.com och välja **Admin**.
+    Du kan också bläddra till Administrationscenter för Microsoft 365. Du kommer dit genom att gå till https://portal.office.com och välja **Admin**.
 
 1. Välj **Fakturering** > **Köp tjänster**.
 
@@ -62,7 +62,7 @@ När du har slutfört köpet visas skärmen **Köptjänster** med information om
 
 Nu när du har en kapacitet kan du lägga till fler allteftersom dina behov växer. Du kan använda valfri kombination av premiumkapacitets-SKU:er (från P1 till P3) i din organisation. De olika SKU:erna tillhandahåller olika resursfunktioner.
 
-1. I administrationscentret för Office 365 väljer du **Fakturering** > **Köptjänster**.
+1. I administrationscentret för Microsoft 365 väljer du **Fakturering** > **Köptjänster**.
 
 1. Söka efter det Power BI Premium-objekt som du vill köpa mer av under **Andra alternativ**.
 
@@ -81,9 +81,9 @@ Sidan **Köp tjänster** visar sedan hur många instanser du har. De tillgängli
 
 ## <a name="cancel-your-subscription"></a>Avbryt din prenumeration
 
-Du kan avbryta prenumerationen från Administrationscenter för Office 365. Gör följande om du vill avbryta din Premium-prenumeration.
+Du kan avbryta prenumerationen från Administrationscenter för Microsoft 365. Gör följande om du vill avbryta din Premium-prenumeration.
 
-1. Bläddra fram till Administrationscenter för Office 365.
+1. Gå till Administrationscenter för Microsoft 365.
 
 1. Välj **Fakturering** > **Prenumerationer**.
 

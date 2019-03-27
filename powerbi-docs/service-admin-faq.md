@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 54bdc0cb3490cf2149f2fda51939c201cd51518f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980437"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383449"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -60,7 +60,7 @@ Vissa av procedurerna i det här avsnittet kräver Windows PowerShell-skript. Om
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hur registrerar sig användare för Power BI?
 
-Som administratör kan du registrera dig för Power BI via [Power BI-webbplatsen](https://powerbi.microsoft.com) eller [Köptjänster](https://admin.microsoft.com/AdminPortal/Home#/catalog) på administrationscentret för Office 365. När en administratör loggar på Power BI kan de tilldela användarlicenser till användare som ska ha åtkomst.
+Som administratör kan du registrera dig för Power BI via [Power BI-webbplatsen](https://powerbi.microsoft.com) eller [Köptjänster](https://admin.microsoft.com/AdminPortal/Home#/catalog) på administrationscentret för Microsoft 365. När en administratör loggar på Power BI kan de tilldela användarlicenser till användare som ska ha åtkomst.
 
 Dessutom kan enskilda användare i din organisation kanske registrera sig för Power BI via [Power BI-webbplatsen](https://powerbi.microsoft.com). När en användare i din organisation registrerar sig för Power BI, tilldelas som användaren en licens för Power BI automatiskt. Mer information finns i [Registrera dig för Power BI som individ](service-self-service-signup-for-power-bi.md) och [Power BI-licensiering i din organisation](service-admin-licensing-organization.md).
 
@@ -169,7 +169,7 @@ Det finns tre scenarier som kan gälla för användare i organisationen:
 
 ### <a name="how-do-we-manage-power-bi"></a>Hur hanterar vi Power BI?
 
-Power BI har en administratörsportal där du kan visa användarstatistik med länkar till administrationscentret för Office 365 för att hantera användare och grupper samt möjlighet att styra inställningarna för hela klienten.
+Power BI har en administratörsportal där du kan visa användarstatistik med länkar till administrationscentret för Microsoft 365 för att hantera användare och grupper samt möjlighet att styra inställningarna för hela klienten.
 
 Ditt konto måste vara markerat som **Global administratör** i Office 365 eller Azure Active Directory, eller ha tilldelats administratörsrollen för Power BI-tjänsten, för att ha åtkomst till Power BI-administratörsportalen. Läs mer i [Förstå administratörsrollen för Power BI](service-admin-role.md) och [Power BI-administratörsportalen](service-admin-portal.md).
 
@@ -196,7 +196,7 @@ Om du inte gör något skapas en klient för varje användares e-postdomäner oc
 
 Om en användare har registrerat dig för Power BI, men du inte längre vill att hen ska ha åtkomst till Power BI, kan du ta bort Power BI-licensen för den användaren.
 
-1. Gå till [administrationscentret för Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Gå till [Administrationscenter för Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. I det vänstra navigeringsfältet väljer du **Användare** > **Aktiva användare**.
 
@@ -214,7 +214,7 @@ Om en användare har registrerat dig för Power BI, men du inte längre vill att
 
 Användare som har anslutit sig till din klient som en del av det här programmet tilldelas en unik licens som du kan filtrera efter i fönstret aktiva användare på admin-instrumentpanelen. Följ dessa steg om du vill skapa den nya vyn.
 
-1. Gå till [administrationscentret för Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Gå till [Administrationscenter för Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. I det vänstra navigeringsfältet väljer du **Användare** > **Aktiva användare**.
 
@@ -232,7 +232,7 @@ Användare som har anslutit sig till din klient som en del av det här programme
 
 Du kan uppleva en ökning av begäranden om lösenordsåterställning. Information om den här processen finns i [Återställa en användares lösenord](/office365/admin/add-users/reset-passwords).
 
-Du kan ta bort en användare från din klient via standardprocessen i administrationscentret för Office 365. Om användaren fortfarande har en aktiv e-postadress från din organisation kommer de att kunna återansluta om du inte blockerar alla användare från att ansluta.
+Du kan ta bort en användare från din klient via standardprocessen i administrationscentret för Microsoft 365. Om användaren fortfarande har en aktiv e-postadress från din organisation kommer de att kunna återansluta om du inte blockerar alla användare från att ansluta.
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Var finns min Power BI-klient?
 

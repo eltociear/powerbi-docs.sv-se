@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 18872e65154f70e882c4f6f60c04420b17038d32
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249124"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306307"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -137,6 +137,13 @@ I vår fortsatta strävan efter att förbättra hjälpmedel så stöder även de
 | :------------------- | :------------------- |
 | Flytta fokus till menyn för det visuella objektet | Alt + Skift + F10 |
 | Visa data | Alt + Skift + F11  |
+| Ange ett visuellt objekt | Ctrl + högerpil |
+| Ange ett lager | Ange |
+| Avsluta ett lager eller ett visuellt objekt | Esc |
+| Markera eller avmarkera datapunkt | Retur eller blanksteg |
+| Flera markeringar | Ctrl + Retur eller Ctrl + Blanksteg |
+| Högerklicka | <ul><li>Windows-tangentbordet: Windows innehållsnyckel + F10.  Windows-menytangenten ligger mellan den vänstra Alt-tangenten och Vänsterpil-tangenten</li><li>Andra tangentbord: Skift + F10</li></ul> |
+| Rensa val | Ctrl + Skift + C |
 
 ### <a name="pane-navigation"></a>Fönsternavigering
 | Gör så här:           | Tryck på                |

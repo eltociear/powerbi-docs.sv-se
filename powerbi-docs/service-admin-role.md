@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e4cd85e0e5b4f10ead772875434bce3bd0973505
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287595"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382820"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Förstå administratörsrollen för Power BI-tjänsten
 
@@ -25,23 +25,23 @@ Lär dig använda Power BI-administratörsrollen i din organisation. Användare 
 
 Power BI-administratörsrollen kan tilldelas användare som ska ha åtkomst till Power BI-administratörsportalen utan att även ge dem fullständig administrativ Office 365-åtkomst.
 
-Användarhanteringsadministratörer i Office 365 tilldelar användare till rollen Power BI-tjänstadministratör i Administrationscentret för Office 365 eller genom att använda ett PowerShell-skript. När en användare har tilldelats får denne åtkomst till [Power BI-administratörsportalen](service-admin-portal.md). Där får de åtkomst till användningsstatistik för hela klienten och kan styra den klientomfattande användningen av Power BI-funktionerna.
+Användarhanteringsadministratörer i Office 365 tilldelar användare till rollen Power BI-tjänstadministratör i Administrationscentret för Microsoft 365 eller genom att använda ett PowerShell-skript. När en användare har tilldelats får denne åtkomst till [Power BI-administratörsportalen](service-admin-portal.md). Där får de åtkomst till användningsstatistik för hela klienten och kan styra den klientomfattande användningen av Power BI-funktionerna.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
 Rollen Power BI-tjänstadministratör ger inte åtkomst till följande funktioner:
 
-* Möjlighet att ändra användare och licenser i administrationscentret för Office 365,
+* Möjlighet att ändra användare och licenser i administrationscentret för Microsoft 365,
 
 * Åtkomst till granskningsloggarna. Mer information finns i [Använda granskning i din organisation](service-admin-auditing.md).
 
 ## <a name="assign-users-to-the-admin-role-in-office-365"></a>Tilldela användare till administratörsrollen i Office 365
 
-Följ dessa steg om du vill tilldela användare till Power BI-administratörsrollen i Office 365 Administrationscenter.
+Följ dessa steg om du vill tilldela användare till Power BI-administratörsrollen i Microsoft 365 Administrationscenter.
 
-1. Gå till administrationscentret för Office 365 och välj **Användare** > **Aktiva användare**.
+1. Gå till administrationscentret för Microsoft 365 och välj **Användare** > **Aktiva användare**.
 
-    ![Administrationscenter för Office 365](media/service-admin-role/powerbi-admin-users.png)
+    ![Administrationscenter för Microsoft 365](media/service-admin-role/powerbi-admin-users.png)
 
 1. Välj den användare som du vill tilldela rollen.
 

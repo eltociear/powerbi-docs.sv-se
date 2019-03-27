@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661938"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306491"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 Med Power BI kan du publicera din rapport till PDF-format och enkelt att skapa ett dokument baserat på din Power BI-rapport. När du **exporterar till PDF** blir varje sida i Power BI-rapporten en separat sida i PDF-dokumentet.
@@ -64,7 +64,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 
 * Om du delar en instrumentpanel med någon utanför organisationen (och därmed, en användare som inte är i din Power BI-klient), kommer den användaren inte att kunna exportera delade instrumentpanelers associerade rapporter till PDF. Så om du är aaron@contoso.com kan du dela med cassie@cohowinery.com. Men cassie@cohowinery.com kan inte exportera de associerade rapporterna till PDF.
 
-* När du exporterar till PDF med rapporter som innehåller en bakgrundsbild så kan du se en förvrängd bild i exporten om du använder alternativet Anpassa för sidbakgrund.  För bästa resultat så rekommenderar vi att du använder alternativen Normal eller Fylla för att undvika problem med ditt exporterade dokument.
+* När du exporterar till PDF med rapporter som innehåller en bakgrundsbild kan du se en förvrängd bild i exporten om du använder alternativen ”Normal” eller ”Fyll” för sidbakgrund.  För bästa resultat rekommenderar vi att du använder alternativet ”Anpassa” för att undvika problem med ditt exporterade dokument.
 
 * Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PDF-exporten. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen **Inställningar** > **Allmänt** > **Språk**.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 65889d1082cee75ed56edc67ece9c99b5f344a6e
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430231"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383248"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licensiering i din organisation
 
@@ -35,7 +35,7 @@ Du kan köpa Power BI Pro-licenser via Microsoft Office 365 eller en certifierad
 
 Enskilda användare i din organisation kan registrera sig för en utvärderingsversion av Power BI Pro. Mer information finns i [Registrera dig själv som enskild individ för Power BI](service-self-service-signup-for-power-bi.md).
 
-Användare som utnyttjar denna Power BI Pro-utvärderingsversion visas inte i Office 365-administratörsportalen som Power BI Pro-utvärderingsanvändare (de visas som användare av den kostnadsfria Power BI-versionen). De visas dock som Power BI Pro-utvärderingsanvändare på sidan Hantera lagring i Power BI.
+Användare som utnyttjar denna Power BI Pro-utvärderingsversion visas inte i Microsoft 365-administratörscentret som Power BI Pro-utvärderingsanvändare (de visas som användare av den kostnadsfria Power BI-versionen). De visas dock som Power BI Pro-utvärderingsanvändare på sidan Hantera lagring i Power BI.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Utvärderingsversion av Power BI Pro för organisationer
 
@@ -47,7 +47,7 @@ Tänk på följande innan du börjar registrera dig:
 
 * Det finns en gräns på en organisationsutvärdering per klientorganisation. Det innebär att om någon redan har använt Power BI Pro-utvärderingen för din klientorganisation så kan du inte göra det igen. Om du behöver hjälp med det här kan du kontakta [faktureringssupporten för Office 365](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
-1. Gå till [administrationscentret för Office 365](https://portal.office.com/adminportal/home#/homepage).
+1. Gå till [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
 1. I det vänstra navigeringsfönstret väljer du **Fakturering** och sedan **Prenumerationer**.
 
@@ -71,7 +71,7 @@ Nu kan du [tilldela licenser i Office 365](https://support.office.com/article/as
 
 Användare i din organisation kan få tillgång till kostnadsfria Power BI-licenser på två olika sätt:
 
-* Du kan tilldela en licens för Power BI till dem i administrationsportalen för Office 365.
+* Du kan tilldela en licens för Power BI till dem i administrationscentret för Microsoft 365.
 
 * Om en användare [registrerar sig för en kostnadsfri utvärderingsversion av Power BI Pro](service-self-service-signup-for-power-bi.md) och utvärderingsversionen är slut tilldelas de en kostnadsfri licens.
 
@@ -81,7 +81,7 @@ Om du planerar att ha en central hantering av licensbegäranden och licenstillde
 
 Det här blocket med licenser är tillgängligt efter den första gången någon registrerat sig för Power BI som individ. Under den här processen är licensblocket kopplat till din organisation och en licens tilldelas till den användare som registrerar sig.
 
-1. I Administrationscenter för Office 365 söker du efter **obegränsat** under **Fakturering** > **Licenser**.
+1. I Administrationscenter för Microsoft 365 söker du efter **obegränsat** under **Fakturering** > **Licenser**.
 
     ![Obegränsat kostnadsfritt licensblock](media/service-admin-licensing-organization/unlimited-licenses.png)
 
@@ -93,7 +93,7 @@ Det här blocket med licenser är tillgängligt efter den första gången någon
 
 Om det obegränsade Power BI-licensblocket (kostnadsfritt) inte är tillgängligt och du inte vill göra en enskild registrering kan du följa den här proceduren.
 
-1. Gå till [administrationscentret för Office 365](https://portal.office.com/admin/default.aspx).
+1. Gå till [Administrationscenter för Microsoft 365](https://portal.office.com/admin/default.aspx).
 
 1. Välj **fakturering** > **prenumerationer** i den vänstra navigeringspanelen.
 

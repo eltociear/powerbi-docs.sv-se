@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/13/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 48ea3d5e60c6f6a079be1d7040266817fdf5b97b
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 536e433540d371838b027e06f857609024e213f3
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964995"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430494"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -558,7 +558,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i juni:
 
 ### <a name="other"></a>Övrigt
 
-* Väljare för nationellt moln [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+* Väljare för nationellt moln [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
 
 
 > [!NOTE]
@@ -2250,7 +2250,7 @@ Ta en titt på följande videoklipp för mer information om den här uppdatering
 
 Följande funktioner har lagts till i den här uppdateringen:
 
--   **Nya dataanslutningar**: appFigures Quickbooks Online, Zendesk, Github, Twilio och SweetIQ.
+-   **Nya dataanslutningar**: appFigures Quickbooks Online, Zendesk, GitHub, Twilio och SweetIQ.
 
 -   **Nya omvandlingar**: Extrahera första/sista/intervall med tecken från en textkolumn. Alternativ för att ange kopplingstyp i dialogrutan för att slå ihop frågor. Möjlighet att anpassa citatstil i dialogrutan Dela kolumn efter avgränsare.
 

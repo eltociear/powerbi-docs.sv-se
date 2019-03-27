@@ -1,6 +1,6 @@
 ---
 title: Spåra Power BI-tjänstens hälsa i Office 365
-description: Läs mer om hur du visar aktuell och historisk tjänsthälsa i Administrationscenter för Office 365.
+description: Läs mer om hur du visar aktuell och historisk tjänsthälsa i Administrationscenter för Microsoft 365.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: afb579c3163fac5da8b3a14f2f2b974d64213098
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4ab0fe4e3398a37da34af02282a847f316f3f727
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296469"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383163"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Spåra Power BI-tjänstens hälsa i Office 365
 
-Administrationscenter för Office 365 innehåller viktiga verktyg för Power BI-administratörer, inklusive aktuell och historisk information om tjänstens hälsa. Om du vill komma åt den här informationen så måste du vara i någon av följande roller: Power BI-tjänstadministratör eller Global administratör för Office 365. Mer information om roller finns i [Administratörsroller relaterade till Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+Administrationscenter för Microsoft 365 innehåller viktiga verktyg för Power BI-administratörer, inklusive aktuell och historisk information om tjänstens hälsa. Om du vill komma åt den här informationen så måste du vara i någon av följande roller: Power BI-tjänstadministratör eller Global administratör för Office 365. Mer information om roller finns i [Administratörsroller relaterade till Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
-1. Logga in på [Administrationscenter för Office 365](https://portal.office.com/adminportal).
+1. Logga in på [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal).
 
 1. Välj panelen **Tjänstens hälsa**.
 

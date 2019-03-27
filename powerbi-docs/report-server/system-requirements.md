@@ -2,21 +2,22 @@
 title: Maskin- och programvarukrav för att installera Power BI-rapportservern
 description: I den här artikeln beskrivs minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
-ms.author: maghan
-ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 28ff098c0f9e228b485a7eb94830ba3736a1463f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292974"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383518"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
+
 I den här artikeln beskrivs minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Krav på processor, minne och operativsystem
@@ -28,14 +29,14 @@ I den här artikeln beskrivs minimikraven för maskin- och programvara för inst
 | Minne |**Minsta:** 1 GB<br/><br/> **Rekommenderas:** Minst 4 GB |
 | Processorhastighet |**Minst:** x64-processor: 1,4 GHz<br/><br/> **Rekommenderas:** 2,0 GHz eller snabbare |
 | Processortyp |x64-processor: AMD Opteron, AMD Athlon 64, Intel Xeon med Intel EM64T-stöd, Intel Pentium IV med EM64T-stöd |
-| Operativsystem |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
+| Operativsystem |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]
 > Installation av Power BI-rapportservern stöds endast på x64-processorer.
-> 
-> 
+
 
 ## <a name="database-server-version-requirements"></a>Databasserverns versionskrav
+
 SQL Server används som värd för rapportserverdatabaserna. SQL Server Database Engine-instansen kan vara en lokal eller fjärransluten instans. Följande är de versioner av SQL Server Database Engine som stöds och kan användas som värd för rapportserverdatabaserna:
 
 * SQL Server 2017
@@ -46,18 +47,21 @@ SQL Server används som värd för rapportserverdatabaserna. SQL Server Database
 När du skapar rapportserverdatabasen på en fjärrdator måste du konfigurera anslutningen så att den använder ett domänanvändarkonto eller ett tjänstkonto med nätverksåtkomst. Om du vill använda en fjärrinstans av SQL Server, ska du noga överväga vilka autentiseringsuppgifter som rapportservern ska använda för att ansluta till SQL Server-instansen. Mer information finns i [Konfigurera en databasanslutning för rapportservern](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
 ## <a name="considerations"></a>Att tänka på:
+
 Power BI-rapportservern installerar standardvärden för att konfigurera de grundläggande inställningar som krävs för att göra en rapportserver driftklar. Den har följande krav:
 
 * En SQL Server Database Engine måste vara tillgänglig efter installationen och innan du konfigurerar databasen för rapportservern. Database Engine-instansen ska vara värd för den rapportserverdatabas som Report Services-konfigurationshanteraren skapar. Database Engine krävs inte för det faktiska installationsförloppet.
-- I [Reporting Services-funktioner som stöds av SQL Server-versioner](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) beskrivs skillnaderna mellan de olika SQL Server-versionerna.
+* I [Reporting Services-funktioner som stöds av SQL Server-versioner](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) beskrivs skillnaderna mellan de olika SQL Server-versionerna.
 * Det användarkonto som kör installationsprogrammet måste vara medlem i den lokala administratörsgruppen.
 * Användarkontot som kör Report Services-konfigurationshanteraren måste ha behörighet att komma åt och skapa databaser på den Database Engine-instans som är värd för rapportserverdatabaserna.
 * Installationsprogrammet måste kunna använda standardvärdena för att reservera de URL:er som ger åtkomst till rapportservern och webbportalen. Dessa värden är port 80, ett starkt jokertecken, och de virtuella katalognamnen i formatet **Rapportserver** och **Rapporter**.
 
 ## <a name="read-only-domain-controller-rodc"></a>Skrivskyddad domänkontrollant (RODC)
+
  Du kan installera rapportservern i en miljö som har en skrivskyddad domänkontrollant (RODC). Reporting Services måste dock ha åtkomst till en domänkontrollant som inte är skrivskyddad om det ska fungera korrekt. Om Reporting Services bara har åtkomst till en RODC, kan det uppstå fel när du försöker administrera tjänsten.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-rapporter och realtidsanslutningar för Analysis Services
+
 Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionella instanser. Analysis Services-servern måste vara av rätt version och utgåva för att fungera korrekt.
 
 | **Serverversion** | **Obligatorisk SKU** |
@@ -67,6 +71,7 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 | 2016 och senare |Standard-SKU eller högre |
 
 ## <a name="next-steps"></a>Nästa steg
+
 [Vad är Power BI-rapportservern?](get-started.md)  
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
@@ -74,4 +79,3 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 [Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

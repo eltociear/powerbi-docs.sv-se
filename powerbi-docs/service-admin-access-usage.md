@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f685a900465cc0f1b635aad7609aaae4356da6b3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 26cf9b10d2a7bfffca151fe36cd45626487b6eef
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284643"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383656"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Hitta Power BI-användare som har loggat in
 
@@ -24,7 +24,7 @@ Om du är en klientadministratör och vill se vem som har signerat till Power BI
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Den här aktivitetsrapporten tillhandahåller användbar information men anger inte vilken typ av licens varje användare har. Använda administrationscentret för Office 365 för att visa licenser.
+> Den här aktivitetsrapporten tillhandahåller användbar information men anger inte vilken typ av licens varje användare har. Använd administrationscentret för Microsoft 365 för att visa licenser.
 
 ## <a name="requirements"></a>Krav
 

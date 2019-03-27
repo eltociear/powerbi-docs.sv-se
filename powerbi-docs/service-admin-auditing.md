@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980414"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383495"
 ---
 # <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
 
@@ -34,7 +34,7 @@ Du måste uppfylla följande krav för att komma åt granskningsloggar:
 
     Om du vill ge åtkomst till granskningsloggen för icke-administratörskonton måste du lägga till användaren som en medlem i någon av dessa rollgrupper. Du kan också skapa en anpassad rollgrupp i administrationscentret för Exchange, tilldela gruppen någon av rollerna Spårningsloggar eller Visa enbart spårningsloggar, och lägg sedan till icke-administratörskontot till den nya rollgruppen. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
-    Om du inte får åtkomst till administrationscentret för Exchange från administrationscenter för Office 365 går du till https://outlook.office365.com/ecp och loggar in med dina autentiseringsuppgifter.
+    Om du inte får åtkomst till administrationscentret för Exchange från administrationscenter för Microsoft 365 går du till https://outlook.office365.com/ecp och loggar in med dina autentiseringsuppgifter.
 
 * Om du har åtkomst till granskningsloggen men inte är global administratör eller administratör för Power BI-tjänsten, får du inte åtkomst till Power BI-administratörsportalen. I det här fallet måste du använda en direktlänk till [Centrum för säkerhet och efterlevnad för Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
@@ -50,9 +50,9 @@ Granskningsloggar för Power BI är tillgängliga direkt via [säkerhets- och ef
 
 1. Välj **Granskningsloggar**.
 
-1. Välj **Gå till administrationscentret för O365**.
+1. Välj **Gå till administrationscenter för Microsoft 365**.
 
-   ![Gå till administrationscentret för O365](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Gå till administrationscenter för Microsoft 365](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Sök endast efter Power BI-aktiviteter
 
@@ -214,7 +214,7 @@ Följande aktiviteter granskas av Power BI.
 | Datakälla för Power BI togs över                   | TakeOverDataset                          |                                          |
 | Datauppsättning för Power BI togs över                        | TakeOverDataset                             |                                          |
 | Power BI-appen avpublicerades                          | UnpublishApp                                |                                          |
-| Kapacitetens resursstyrningsinställningar uppdaterades      | UpdateCapacityResourceGovernanceSettings    | Finns för närvarande inte i administrationsportalen för Office 365 |
+| Kapacitetens resursstyrningsinställningar uppdaterades      | UpdateCapacityResourceGovernanceSettings    | För närvarande inte i administrationscenter för Microsoft 365 |
 | Kapacitetsadministratörer uppdaterades                            | UpdateCapacityAdmins                        |                                          |
 | Kapacitetens visningsnamn uppdaterades                     | UpdateCapacityDisplayName                   |                                          |
 | Organisationens Power BI-inställningar uppdaterades          | UpdatedAdminFeatureSwitch                   |                                          |

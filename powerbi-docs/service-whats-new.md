@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216871"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383725"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -346,7 +346,7 @@ Idag släppte vi en lång lista med de mest efterfrågade funktionerna. [Läs bl
 
 ***Administratörsportal***
 
-* Enkel hantering med en länk till administrationscentret för O365
+* Enkel hantering med en länk till administrationscentret för Microsoft 365
 * Möjlighet att inaktivera publicering på webben
 * Hindra användare från att publicera innehållspaket för hela organisationen
 * Möjlighet att inaktivera delning av innehåll till externa användare
@@ -508,7 +508,7 @@ All information finns i [Power BI-bloggen](http://blogs.msdn.com/b/powerbi/archi
 * Ny plats för lokaliserad Power BI-dokumentation
 * Förbättrad inläsningstid för rapporter
 * Uppdatera organisationsinnehållspaket med endast rapportändringar
-* Hälsostatus för Power BI i administratörsportalen för Office 365
+* Hälsostatus för Power BI i administrationscentret för Microsoft 365
 * KPI:er och bilder i tabeller, matriser och kort
 
 All information finns i [Power BI-bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx)

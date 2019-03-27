@@ -2,20 +2,20 @@
 title: White paper om Power BI-säkerhet
 description: White paper där säkerhetsarkitekturen för och implementeringen av Power BI diskuteras och beskrivs
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 957c6d5fe8797f1b03eaab3a54846e7110b302fb
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 8a86d17252bea3dbdb6ad30de35667cfbd844c8b
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580299"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430402"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
@@ -151,11 +151,9 @@ Sekvensen för användarautentisering för Power BI-tjänsten sker enligt beskri
 
 3. WFE-klustret kontaktar **Azure Active Directory-tjänsten** (**AAD**) för att autentisera användarens prenumeration på Power BI-tjänsten och för att hämta en AAD-säkerhetstoken. När AAD returnerar autentiseringen för användaren och returnerar en AAD-säkerhetstoken kontaktar WFE-klustret **Power BI**** Global Service**, som upprätthåller en lista över klientorganisationer och platserna för deras Power BI-serverdelar samt fastställer vilket Power BI-kluster som innehåller användarens klientorganisation. WFE-klustret omdirigerar sedan användaren till det Power BI-kluster där dess klientorganisation finns och returnerar en samling objekt till användarens webbläsare:
 
-
       - **AAD-säkerhetstoken**
       - **Sessionsinformation**
       - Webbadressen för det **serverdelskluster** som användaren kan kommunicera och interagera med
-
 
 1. Användarens webbläsare kontaktar sedan angivet Azure CDN, eller WFE för vissa av filerna, för att ladda ned samlingen av angivna delade filer som behövs för att aktivera webbläsarens interaktion med Power BI-tjänsten. Webbläsaren inkluderar sedan AAD-token, sessionsinformation, platsen för det associerade serverdelsklustret samt den samling av filer som har laddats ned från Azure CDN och WFE-klustret under hela webbläsarsessionen för Power BI-tjänsten.
 
@@ -182,9 +180,6 @@ I följande tabell beskrivs Power BI-data baserat på vilken typ av fråga som a
 |Raddata     |    X     |         |         |
 |Cachelagring av data för visuella objekt     |    X     |     X    |    X     |
 
-
-
-
 Skillnaden mellan en DirectQuery och andra frågor avgör hur Power BI-tjänsten hanterar vilande data och huruvida själva frågan krypteras. I följande avsnitt beskrivs vilande data och som flyttas samt kryptering, plats och process för hantering av data.
 
 ### <a name="data-at-rest"></a>Vilande data
@@ -210,9 +205,9 @@ För molnbaserade datakällor krypterar rollen Dataflytt krypteringsnycklarna me
 #### <a name="datasets"></a>Datauppsättningar
 
 1. Metadata (tabeller, kolumner, mått, beräkningar, anslutningssträngar osv.)
-      
+
     a. För lokala Analysis Services lagras ingenting i tjänsten förutom en referens till den databas som lagras krypterad i Azure SQL.
- 
+
     b. Alla andra metadata för ETL, DirectQuery och push-data krypteras och lagras i Azure Blob-lagring.
 
 1. Autentiseringsuppgifter för att de ursprungliga datakällorna
@@ -255,7 +250,7 @@ Power BI tillhandahåller övervakning av dataintegritet på följande sätt:
    a. Rapporter kan antingen vara Excel för Office 365-rapporter eller Power BI-rapporter. Följande gäller för metadata baserat rapporttypen:
 
        a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-       
+
        b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Statiska data
@@ -358,7 +353,7 @@ I följande tabell visas stöd för certifikatbaserad autentisering (CBA) för P
 | **Power BI** (logga in på tjänsten) | stöds | stöds | Stöds ej |
 | **SSRS ADFS** (anslut till SSRS-servern) | Stöds ej | Stöds | Stöds ej |
 
-Power BI Mobile-appar kommunicerar aktivt med Power BI-tjänsten. Telemetri används för att samla in användningsstatistik för mobilappar och liknande data, som överförs till tjänster för övervakning av användning och aktivitet. Det skickas ingen personligt identifierbar information (PII) med telemetridata.
+Power BI Mobile-appar kommunicerar aktivt med Power BI-tjänsten. Telemetri används för att samla in användningsstatistik för mobilappar och liknande data, som överförs till tjänster för övervakning av användning och aktivitet. Det skickas ingen personlig information med telemetridata.
 
 Power BI-**programmet på enheten** lagrar data på enheten som möjliggör användning av appen:
 
@@ -414,7 +409,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 **Hur fungerar Power BI-grupper?**
 
-* Med Power BI-grupper kan användare snabbt och enkelt samarbeta om skapandet av instrumentpaneler, rapporter och datamodeller i etablerade team. Om du till exempel har en Power BI-grupp som omfattar alla i ditt närmaste team kan du enkelt samarbeta med alla i teamet genom att välja gruppen från Power BI. Power BI-grupper är likvärdiga med universella grupper för Office 365 (som du kan [läsa om](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [skapa](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) och [hantera](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)) och använder samma autentiseringsmekanismer som i Azure Active Directory för att skydda data. Du kan [skapa grupper i Power BI](https://support.powerbi.com/knowledgebase/articles/654250) eller skapa en universell grupp i administrationscentret för Office 365 – båda ger samma resultat för skapande av grupper i Power BI.
+* Med Power BI-grupper kan användare snabbt och enkelt samarbeta om skapandet av instrumentpaneler, rapporter och datamodeller i etablerade team. Om du till exempel har en Power BI-grupp som omfattar alla i ditt närmaste team kan du enkelt samarbeta med alla i teamet genom att välja gruppen från Power BI. Power BI-grupper är likvärdiga med universella grupper för Office 365 (som du kan [läsa om](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [skapa](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) och [hantera](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)) och använder samma autentiseringsmekanismer som i Azure Active Directory för att skydda data. Du kan [skapa grupper i Power BI](https://support.powerbi.com/knowledgebase/articles/654250) eller skapa en universell grupp i administrationscentret för Microsoft 365 – båda ger samma resultat för skapande av grupper i Power BI.
 
   Observera att data som delas med Power BI-grupper följer samma säkerhetsåtgärder som andra delade data i Power BI. För **icke-RLS-datakällor** autentiserar Power BI **inte** användare på nytt mot den ursprungliga datakällan. När data har laddats upp till Power BI ansvarar den användare som autentiserade mot källdata för att hantera vilka andra användare och grupper som kan visa data. Mer information finns i avsnittet **Användarautentisering till datakällor** tidigare i dokumentet.
 
@@ -488,6 +483,6 @@ Mer information om Power BI finns i följande resurser.
 - [Power BI API-referens](https://msdn.microsoft.com/library/mt147898.aspx)
 - [Lokal datagateway](service-gateway-manage.md)
 - [Power BI och ExpressRoute](service-admin-power-bi-expressroute.md)
-- [Power BI – nationella moln](https://powerbi.microsoft.com/clouds/)
+- [Nationella moln i Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Använda Kerberos för enkel inloggning från Power BI till lokala datakällor](service-gateway-sso-overview.md)

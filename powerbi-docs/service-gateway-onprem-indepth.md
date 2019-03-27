@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: fa7d10403ca6bd8dc94729b7b4fd631475a3671e
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325024"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383426"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
 Det är möjligt för användare i din organisation att ha åtkomst till lokala data (till vilka de redan har åtkomstauktorisering), men innan dessa användare kan ansluta till den lokala datakällan, så måste en lokal datagateway ha installerats och konfigurerats. Gatewayen underlättar snabb och säker dold kommunikation mellan en användare i molnet till din lokala datakälla och sedan tillbaka till molnet.
@@ -77,7 +77,7 @@ Molntjänsterna känner bara till konton i Azure Active Directory. Det spelar in
 
 1. Du kan lägga till konton manuellt till Azure Active Directory.
    
-   Du kan skapa ett konto på Azure Portal eller i administrationsportalen för Office 365, och kontonamnet matchar UPN-namnet för det lokala Active Directory-kontot.
+   Du kan skapa ett konto på Azure-portalen eller i administrationscentret för Microsoft 365, och kontonamnet matchar UPN-namnet för det lokala Active Directory-kontot.
 2. Du kan använda [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis)-verktyget för att synkronisera lokala konton med din Azure Active Directory-klient.
    
    Azure AD Connect-verktyget erbjuder alternativ för katalogsynkronisering och hur du konfigurerar autentisering, inklusive hash-synkronisering av lösenord, direktautentisering och federation. Om du inte är klientadministratör eller lokal domänadministratör, så måste du kontakta IT-administratören om du vill få detta konfigurerat.
