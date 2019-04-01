@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: b65acda3ceb8d375cb34393828b74e191b2e5504
+ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383725"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489601"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
@@ -32,12 +32,21 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 
-## <a name="february-2019"></a>Februari 2019
-* Storleksmått för arbetsbelastningar och aktiva datauppsättningar i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
-* Exportera till PDF och e-postprenumerationer på begäran (service-report-subscribe.md).
-* Massåtgärder i administratörsportalen.
+## <a name="march-2019"></a>Mars 2019
+* Multi-Geo för Power BI Premium är allmänt tillgängligt.
+* Redigering och hantering av Power BI-innehåll stöds för Azure B2B.
 
 ## <a name="previous-months-2019"></a>Föregående månader (2019)
+### <a name="february-2019"></a>Februari 2019
+* Storleksmått för arbetsbelastningar och aktiva datauppsättningar i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Exportera till PDF för Power BI-rapporter.
+* [E-postprenumerationer på begäran](service-report-subscribe.md).
+* Massåtgärder i administratörsportalen.
+* Filtrerad export för PPT och PDF.
+* [Inställningar för hjälp och support](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) i administratörsportalen.
+* Datahärkomst för [dataflöden](service-dataflows-overview.md).
+* Inställning för certifierade, anpassade visuella objekt i administratörsportalen.
+
 ### <a name="january-2019"></a>Januari 2019
 * [Bädda in säkra Power BI-rapporter](service-embed-secure.md) i interna portaler eller webbplatser.
 * Uppdaterar till redigeringsprogrammet för [dataflöden](service-dataflows-overview.md) med nya anslutningar och stöd för inbyggda SQL-frågor och Power Query Online-transformationer.

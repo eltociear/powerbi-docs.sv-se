@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306491"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473739"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 Med Power BI kan du publicera din rapport till PDF-format och enkelt att skapa ett dokument baserat på din Power BI-rapport. När du **exporterar till PDF** blir varje sida i Power BI-rapporten en separat sida i PDF-dokumentet.
@@ -67,6 +67,8 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * När du exporterar till PDF med rapporter som innehåller en bakgrundsbild kan du se en förvrängd bild i exporten om du använder alternativen ”Normal” eller ”Fyll” för sidbakgrund.  För bästa resultat rekommenderar vi att du använder alternativet ”Anpassa” för att undvika problem med ditt exporterade dokument.
 
 * Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PDF-exporten. Om du vill se eller ange din språkinställning, klicka på kugghjulsikonen **Inställningar** > **Allmänt** > **Språk**.
+
+* URL-filter respekteras för närvarande inte när du väljer ”Aktuella värden” för exporten.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skriva ut en rapport](end-user-print.md)

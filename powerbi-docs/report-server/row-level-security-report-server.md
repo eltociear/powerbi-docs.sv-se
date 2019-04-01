@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 254b0c5c2e5a9b39f5d04f002a2791f1cd432c52
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
+ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226214"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489578"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Säkerhet på radnivå (RLS) i Power BI-rapportservern
 
@@ -28,11 +28,11 @@ Du kan konfigurera RLS för rapporter som importerats till Power BI med Power BI
 
 Som standard använder säkerhetsfiltrering på radnivå sig av enkelriktade filter, oavsett om relationerna är inställda på enkelriktade eller dubbelriktade. Du kan aktivera dubbelriktad korsfiltrering med säkerhet på radnivå manuellt.
 
-- Välj relationen och markera kryssrutan  **Tillämpa säkerhetsfilter i båda riktningarna** . 
+- Välj relationen och markera kryssrutan **Tillämpa säkerhetsfilter i båda riktningarna**. 
 
     ![Använd säkerhetsfilter](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Markera den här rutan när du implementerar [dynamisk säkerhet på radnivå](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters) baserat på användarnamn eller inloggnings-ID. 
+Markera den här rutan när du implementerar [dynamisk säkerhet på radnivå](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters) baserat på användarnamn eller inloggnings-ID. 
 
 Mer information finns i [Dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](../desktop-bidirectional-filtering.md) och det tekniska faktabladet [Skydda en Tabular BI-semantikmodell](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
@@ -46,7 +46,7 @@ När du sparar rapporten i Power BI-rapportservern hanterar du säkerhet och lä
  Om rapporten inte har de roller som behövs måste du öppna den i Power BI Desktop, lägga till eller ändra roller och sedan spara den igen på Power BI-rapportservern. 
 
 1. Spara rapporten på Power BI-rapportservern i Power BI Desktop. Du måste använda Power BI Desktop-versionen som har optimerats för Power BI-rapportservern.
-2. I Power BI-rapport-tjänsten väljer du de tre punkterna (**...**) bredvid rapporten. 
+2. I Power BI-rapporttjänsten väljer du de tre punkterna (**...**) bredvid rapporten. 
 
 3. Välj **Hantera** > **Säkerhet på radnivå**. 
 
@@ -85,7 +85,7 @@ Här följer de aktuella begränsningarna för säkerhet på radnivå i Power BI
 
 Användare som hade rapporter med DAX-funktionen username() ser nu det nya beteendet där användarens huvudnamn (UPN) returneras förutom när han/hon använder DirectQuery med integrerad säkerhet.  Eftersom ingen hänsyn tas till RLS i det här scenariot är beteendet i det här scenariot oförändrat.
 
-Du kan endast definiera RLS på datauppsättningar som skapats med Power BI Desktop. Om du vill aktivera RLS för datauppsättningar som skapats med Excel måste du först konvertera filerna till PBIX-filer (Power BI Desktop-filer). Läs mer om [konvertering av Excel-filer](../desktop-import-excel-workbooks.md).
+Du kan endast definiera RLS på datauppsättningar som skapats med Power BI Desktop. Om du vill aktivera RLS för datauppsättningar som skapats med Excel måste du först konvertera filerna till PBIX-filer (Power BI Desktop-filer). Läs mer om [konvertering av Excel-filer](../desktop-import-excel-workbooks.md).
 
 Endast ETL- (Extract, Transform, Load) och DirectQuery-anslutningar med lagrade autentiseringsuppgifter stöds. Live-anslutningar till Analysis Services och DirectQuery-anslutningar som använder integrerad autentisering ska hanteras i den underliggande datakällan. 
 

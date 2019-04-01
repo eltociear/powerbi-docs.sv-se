@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d846a50ab87fe7d9f20034892e25dedde043f9ee
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
+ms.openlocfilehash: 9cf3eea99813d315c72f3210f3938deae94505b0
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430264"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473877"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -60,6 +60,7 @@ Några av de funktioner som är tillgängliga i den kommersiella versionen av **
 * **Power BI-innehåll i Cortana** – Power BI-resultat visas inte i sökresultat för Cortana. Det inkluderar resultat för ditt Power BI-innehåll (instrumentpaneler, rapporter, appar) samt resultat som visar Cortana-optimerade rapportsidor för specifika nyckelord.
 * **Extern användardelning** – delning är tillåtet inom en Power BI-klientorganisation, och från juni 2018 kan du även dela med användare utanför din Power BI-klientorganisation. Läs mer i [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](service-admin-azure-ad-b2b.md).
 * **Användningsstatistik för instrumentpaneler och rapporter** – användningsstatistik är inte tillgängligt för rapporter och instrumentpaneler. Kunder kan använda data i granskningsloggar för att få användningsinformation om innehåll i deras organisation.
+* **Dataflöden** – Dataflöden är inte tillgängliga.
 
 Om du har kostnadsfria **Power BI**-licenser som tilldelats ditt konto, körs dessa konton i en kommersiell version av **Power BI**-tjänsten, och ingår inte i erbjudandet om **Power BI för amerikanska myndigheter**. För dessa kostnadsfria konton kan följande problem uppstå:
 

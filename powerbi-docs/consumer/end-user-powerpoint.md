@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 385a2cb41c0fa58ec3df4ea675a6f43a5b868935
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014310"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473808"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportera rapporter från Power BI till PowerPoint
 Med Power BI kan du publicera din rapport till **Microsoft PowerPoint** och enkelt att skapa ett bildspel baserat på din Power BI-rapport. När du **exporterar till PowerPoint**, inträffar följande:
 
 * Varje sida i Power BI-rapporten blir en enskild bild i PowerPoint
-* Varje sida i Power BI-rapporten exporteras som en högupplöst bild i PowerPoint <!-- * The filters and slicers settings that you added to the report are preserved. -->
+* Varje sida i Power BI-rapporten exporteras som en högupplöst bild i PowerPoint
+<!-- * The filters and slicers settings that you added to the report are preserved. -->
 * En länk skapas i PowerPoint som länkar till Power BI-rapporten 
 
 Att få din **Power BI-rapport** exporterad till **PowerPoint** går snabbt. Följ bara stegen som beskrivs i nästa avsnitt.
@@ -91,6 +92,7 @@ Det finns några överväganden och begränsningar som du bör tänka på när d
 * Som tidigare nämnts, exporteras varje rapportsida som en enskild bild i PowerPoint-filen.
 * Power BI-tjänsten använder det språk du har i din Power BI-språkinställning som språk för PowerPoint-exporten. Om du vill se eller ange språkinställning så klickar du på ![kugghjulsikonen](media/end-user-powerpoint/power-bi-settings-icon.png) **> Inställningar > Allmänt > Språk**.
 * Klockslaget **Hämtad vid** på omslagsbilden för den exporterade PowerPoint-filen har angetts till datorns tidszon vid tidpunkten för exporten.
+* URL-filter respekteras för närvarande inte när du väljer ”Aktuella värden” för exporten.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skriva ut en rapport](end-user-print.md)
