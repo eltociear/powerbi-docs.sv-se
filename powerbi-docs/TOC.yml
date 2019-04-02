@@ -402,6 +402,8 @@ items:
       href: service-tutorial-use-cognitive-services.md
     - name: Machine Learning-integrering med Power BI
       href: service-tutorial-invoke-machine-learning-model.md
+    - name: Skapa en maskininlärningsmodell med Power BI (förhandsversion)
+      href: service-tutorial-build-machine-learning-model.md
   - name: Begrepp
     items:
     - name: Nyheter i Power BI-tjänsten
@@ -656,6 +658,8 @@ items:
         href: service-machine-learning-integration.md
       - name: Använda Cognitive Services i Power BI
         href: service-cognitive-services.md
+      - name: Automatiserad maskininlärning i Power BI (förhandsversion)
+        href: service-machine-learning-automated.md
     - name: Sidnumrerade rapporter i Power BI
       items:
       - name: Vad är sidnumrerade rapporter? (Förhandsgranskning)
@@ -1327,9 +1331,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI-säkerhet
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 3259c3fe3bc8756355dd75324a84dd0322bfef3a
-ms.sourcegitcommit: c98fe18c52cd06a52b12aa9aa09d58e8a406542a
+ms.openlocfilehash: 1de602579c97a56c7db5b0b92a8b6bc9f1134ec6
+ms.sourcegitcommit: 6070b5726629dde6dee262f77e9957496405d501
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58563676"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639378"
