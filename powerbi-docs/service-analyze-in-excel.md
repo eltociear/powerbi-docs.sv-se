@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 20faef99f710ebbc3eacebe15b5101726b895688
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da6ec79a821e7aa9659843d0461ca6ac0b11706d
+ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279299"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58914177"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.
@@ -27,7 +27,8 @@ Det finns några krav för att använda **Analysera i Excel**:
 * **Analysera i Excel** stöds för Microsoft Excel 2010 SP1 och senare.
 * Pivottabeller i Excel stöder inte dra och släpp-aggregering av numeriska fält. Datauppsättningen i Power BI *måste ha fördefinierade mått*.
 * Vissa organisationer kan ha grupprincipregler som förhindrar installation av nödvändiga **Analysera i Excel**-uppdateringar i Excel. Kontrollera med administratören om det inte går att installera uppdateringarna.
-* **Analysera i Excel** kräver en Pro-licens. Mer information om skillnaderna i funktionalitet mellan de olika licenstyperna finns i [Power BI-funktioner efter licenstyp](service-features-license-type.md). 
+* **Analysera i Excel** kräver att datauppsättningen finns i Power BI Premium eller att användaren har en Power BI Pro-licens. Mer information om skillnaderna i funktionalitet mellan de olika licenstyperna finns i [Power BI-funktioner efter licenstyp](service-features-license-type.md). 
+* Användare kan ansluta till datauppsättningar med hjälp av Analysera i Excel om de har läsbehörighet till den underliggande datauppsättningen.  En användare kan ha detta på flera olika sätt, till exempel genom att vara medlem i arbetsytan som innehåller datauppsättningen, ha en rapport eller instrumentpanel som delats till dem och som använder datauppsättningen, eller ha behörighet till en app som innehåller datauppsättningen.
 
 ## <a name="how-does-it-work"></a>Hur fungerar det?
 När du väljer **Analysera i Excel** på ellipsmenyn (...) som är associerad med en datauppsättning eller en rapport i **Power BI**, skapar Power BI en odc-fil och hämtar den från webbläsaren till din dator.

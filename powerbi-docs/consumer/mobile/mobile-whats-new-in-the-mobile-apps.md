@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826731"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872741"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,16 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="march-2019"></a>Mars 2019
+
+### <a name="supporting-external-guest-users-in-power-bi-apps-ios-android"></a>Stöd för externa gästanvändare i Power BI-appar (iOS och Android)
+
+Du kan få åtkomst till Power BI-innehåll som delats med dig från en annan organisation direkt från appen (kallas även B2B). Läs mer om B2B i Power BI-mobilappar [här](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+
+### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Förbättra Windows-presentationsläge med bildspel (Windows)
+
+Med [bildspel](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) kan du använda offentliga skärmar på kontoret för att köra Power BI-rapporter i helskärmsläge som automatiskt roterar mellan rapportsidor.  
 
 ## <a name="january---february-2019"></a>Januari – februari 2019
  
@@ -117,7 +127,7 @@ Enkel inloggning (SSO) är en av de mest efterfrågade funktionerna för Power B
 
 Nu kan du få rapporter med delade filter och utsnitt.
 
-**Bakgrundsavbildningssupport**
+**Stöd för bakgrundsbilder**
 
 När du visar en rapport i liggande på din mobila enhet kan ha du samma bakgrundsbilder som du har i Power BI på webben.
 
@@ -301,7 +311,7 @@ Vi har förbättrat pekfunktionerna för tidsutsnitt.
 **Stöd för höger-till-vänster-språk** Power BI-mobilappar stöder nu höger-till-vänster-språk. Med ”höger-till-vänster-språk” avses hebreiska och arabiska alfabet, som skrivs från höger till vänster och behöver formas efter kontexten. Se listan över [språk som stöds i Power BI-mobilapparna](mobile-apps-supported-languages.md).
 
 #### <a name="android-devices"></a>Android-enheter
-**Anslut till mer än en SSRS-server** 
+**Anslut till fler än en SSRS-server** 
 
 Nu kan du ansluta till upp till fem SSRS-servrar (SQL Server Reporting Services) samtidigt.
 
@@ -320,7 +330,7 @@ Nu kan du rulla i stapel- och kolumndiagram i en rapport genom att trycka på sj
 
 Med Frågor och svar ställer du frågor om dina data med dina egna ord och Power BI ger svaren. Frågor och svar finns redan i Power BI-tjänsten på http://powerbi.com. Nu är de också [tillgängliga i mobilappen på din iPhone eller iPad](mobile-apps-ios-qna.md).
 
-**Anslut till mer än en SSRS-server** 
+**Anslut till fler än en SSRS-server** 
 
 Nu kan du ansluta till upp till fem SSRS-servrar (SQL Server Reporting Services) samtidigt.
 
@@ -357,7 +367,7 @@ Läs [funktionssammanfattningen om mobilappar på bloggen för december 2016](ht
 För att säkerställa att du kan komma åt dina senaste data offline, gör vi en uppdatering i bakgrunden på appen så att din affärsinformation är uppdaterad, även om du inte har använt den på ett tag. För att se till att vissa instrumentpaneler alltid är uppdaterade, markerar du bara dem som favoriter. Lär dig mer om [offlinefunktionerna i Power BI-mobilapparna](mobile-apps-offline-data.md).
 
 #### <a name="ios-devices"></a>iOS-enheter
-**Kommentera och dela**.
+**Kommentera och dela**
 
 Nu kan du kommentera och dela en panel, rapport eller visualisering från Power BI-mobilappen för iOS. 
 

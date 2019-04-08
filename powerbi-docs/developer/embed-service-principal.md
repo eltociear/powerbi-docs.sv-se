@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/05/2019
-ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.date: 03/29/2019
+ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014425"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872557"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjänstens huvudnamn med Power BI (förhandsversion)
 
@@ -111,13 +111,15 @@ Skiljer sig från traditionell användning av ett huvudkonto, användning av tj�
 3. Som Power BI-administratör måste du aktivera tjänstens huvudnamn i **Inställningar för utvecklare** i Power BI-administratörsportalen. Lägg till säkerhetsgruppen som du har skapat i Azure AD i avsnittet **Specifik säkerhetsgrupp** i **Inställningar för utvecklare**.
 
    > [!Important]
-   > Tjänsthuvudnamn ärver behörigheterna för alla Power BI-klientinställningar för deras säkerhetsgrupp. Begränsa behörigheter genom att skapa en dedikerad säkerhetsgrupp för tjänstens huvudkonton och lägg till i listan Förutom vissa säkerhetsgrupper för de relevanta, aktiverade Power BI-inställningarna.
+   > Tjänstens huvudnamn har åtkomst till alla klientorganisationsinställningar som är aktiverade för hela organisationen eller aktiverade för säkerhetsgrupper som har tjänstens huvudnamn som en del av gruppen. För att begränsa tjänstens huvudnamns åtkomst till specifika klientorganisationsinställningar tillåter du endast åtkomst till specifika säkerhetsgrupper, eller skapar en dedikerad säkerhetsgrupp för tjänstens huvudnamn och utesluter den.
 
     ![Administratörsportal](media/embed-service-principal/admin-portal.png)
 
 4. Konfigurera din [Power BI-miljö](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
 5. Lägg till tjänstens huvudnamn som **administratör** för den nya arbetsyta du har skapat. Du kan hantera den här uppgiften via [API:erna](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller med Power BI-tjänsten.
+
+    ![Lägg till ett tjänsthuvudnamn i en arbetsyta](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Välj nu att bädda in ditt innehåll med ett exempelprogram eller i ditt program.
 
@@ -171,6 +173,7 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 * Du kan inte installera eller hantera en lokal datagateway med tjänstens huvudnamn.
 * Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
 * Hantering av [dataflöden](../service-dataflows-overview.md) stöds inte.
+* Tjänstens huvudnamn har inte stöd för administratörs-API:er.
 
 ## <a name="next-steps"></a>Nästa steg
 
