@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 7f919234f7635c76ce50d0bfffa393498f141da8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
+ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324402"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59070032"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Skapa en inbäddad datakälla för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
 
@@ -22,7 +22,8 @@ I den här artikeln får du lära dig att skapa och ändra en inbäddad datakäl
 
 - Azure SQL Database och Data Warehouse
 - SQL Server
-- SQL Server Analysis Services 
+- SQL Server Analysis Services
+- Azure Analysis Services
 
 Sidnumrerade rapporter ansluter till lokala datakällor via en gateway. Du ställer in gatewayen när du har publicerat rapporten till Power BI-tjänsten. Läs mer om [Power BI-gatewayer](service-gateway-getting-started.md). 
 
@@ -61,4 +62,4 @@ Sidnumrerade rapporter ansluter till lokala datakällor via en gateway. Du stäl
 ## <a name="next-steps"></a>Nästa steg
 
 - [Skapa en inbäddad datamängd för en sidnumrerad rapport i Power BI-tjänsten](paginated-reports-create-embedded-dataset.md)
-- [Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsversion)](paginated-reports-report-builder-power-bi.md)
+- [Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsgranskning)](paginated-reports-report-builder-power-bi.md)
