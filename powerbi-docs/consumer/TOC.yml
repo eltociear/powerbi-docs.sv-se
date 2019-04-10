@@ -61,6 +61,8 @@ items:
         href: ../power-bi-visualizations-arcgis.md
     - name: Vanliga aktiviteter
       items:
+      - name: Exportera data till Excel
+        href: end-user-export.md
       - name: Hitta innehållets ägare och datum för senaste uppdatering
         href: end-user-fresh.md
       - name: Olika sätt att zooma i innehåll med fokusläge och helskärmsläge
@@ -137,6 +139,8 @@ items:
         href: mobile/mobile-tiles-in-the-mobile-apps.md
       - name: Favoriter i mobilapparna
         href: mobile/mobile-apps-favorites.md
+      - name: Konfigurera rapportinteraktion i mobilapparna (endast telefon)
+        href: mobile/mobile-app-single-tap.md
       - name: Ställa in dataaviseringar i Power BI-mobilapparna
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: Få aviseringar i Power BI-mobilapparna
@@ -175,6 +179,8 @@ items:
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: Visa rapporter optimerade för din telefon
         href: mobile/mobile-apps-view-phone-report.md
+      - name: Få åtkomst till innehåll från en extern organisation
+        href: mobile/mobile-apps-b2b.md
       - name: Skanna en Power BI QR-kod från din telefon
         href: mobile/mobile-apps-qr-code.md
       - name: Kommentera och dela i mobilappar
@@ -195,9 +201,9 @@ items:
     items:
     - name: Språk som stöds i mobilapparna
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: e32baf6ff64b485b1be29dea76bcbe864d2cdc59
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 6f9f080de3711a6a1a28f49da0298a67932d87e5
+ms.sourcegitcommit: c0add3d749f7e714e23824a742e105e694e4c129
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248986"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59430292"
