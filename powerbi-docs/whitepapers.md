@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: c0cc6b19e69ebe6400d25b77c15cf577d765c415
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "65201188"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -24,12 +24,12 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | --- | --- | --- |
 | [Power BI och dataflöden](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Det här faktabladet beskriver dataflöden i detalj och beskriver funktioner och initiativ bakom dataflödesegenskaper och -funktioner. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både i dess ursprungsform och hur den kommer att utvecklas. | Oktober 2017 |
-| [Power BI Premium planering och distribution](https://aka.ms/Premium-Capacity-Planning-Deployment)| Det här dokumentet innehåller vägledning och bästa praxis för planering och distribution av Premium-kapacitet för väldefinierade arbetsbelastningar.| November 2017 |
+| [Power BI Premium planering och distribution](whitepaper-powerbi-premium-deployment.md)| Det här dokumentet innehåller vägledning och bästa praxis för planering och distribution av Premium-kapacitet för väldefinierade arbetsbelastningar.| Mars 2019 |
 | [Planera kapacitet för inbäddade analysverktyg med Power BI Premium](https://aka.ms/pbiewhitepaper) |Det här dokumentet innehåller vägledning för att hjälpa apputvecklare/ISV:er att fastställa den lämpligaste kapaciteten för verksamheten. | Oktober 2017 |
 | [Planera en företagsdistribution för Power BI](https://go.microsoft.com/fwlink/?linkid=2057861) |Det här är ett tekniskt white paper som beskriver överväganden för en väl utförd och säker distribution av Power BI. | Juli 2018 |
 | [Vägledning för kapacitetsplanering för Power BI-rapportserver](report-server/capacity-planning.md) |Det här dokumentet ger vägledning om kapacitetsplanering för rapportservern för Power BI genom att dela resultatet av ett flertal belastningstestkörningar av olika arbetsbelastningar mot en rapportserver. | Mars 2018 |
 | [Säkerhet](service-admin-power-bi-security.md) |Ge en detaljerad förklaring av säkerheten i Power BI. | Mars 2019 |
-| [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|Det här dokumentet beskriver hur du distribuerar innehåll till användare utanför organisationen med hjälp av integrering av Azure Active Directory Business-to-business (AAD B2B).| Mars 2018 |
+| [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|Det här dokumentet beskriver hur du distribuerar innehåll till användare utanför organisationen med hjälp av integrering av Azure Active Directory Business-to-business (AAD B2B).| Mars 2019 |
 | [Avancerade analyser med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver funktionerna i Power BI, inklusive förutsägelseanalyser, anpassade visualiseringar, R-integrering och data-analysuttryck. | Februari 2017 |
 | [Metodtips för design av rapporter och visuella objekt](visuals/power-bi-visualization-best-practices.md) |Här finns metodtips för att utforma rapporter i Power BI. | Juni 2018 |
 | [Dubbelriktad filtrering](desktop-bidirectional-filtering.md) |Förklarar dubbelriktad korsfiltrering i Power BI Desktop (det omfattar även SQL Server Analysis Services 2016, som har samma funktioner). | Juli 2018 |
