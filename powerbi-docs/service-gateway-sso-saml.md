@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
+ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306514"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533707"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Security Assertion Markup Language (SAML) för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -75,7 +75,7 @@ Det resulterande IdP-certifikatet ska gälla i ett år (se alternativet för dag
 
     ![Konfigurera SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Välj den identitetsprovider som du skapade i steg 2. För **Extern identitet** anger du Power BI-användarens UPN och väljer sedan **Lägg till**.
+1. Välj den identitetsprovider som du skapade i steg 2. För **externa identitet**, ange Power BI användarens UPN (vanligtvis den e-postadress som en användare loggar in på Power BI) och välj sedan **Lägg till**. Observera att om du har konfigurerat din Gateway för att använda alternativet ADUserNameReplacementProperty konfiguration ska du ange det värde som ersätter Power BI användarens ursprungliga UPN. Om du anger ADUserNameReplacementProperty till SAMAccountName bör du ange användarens SAMAccountName.
 
     ![Välja identitetsprovider](media/service-gateway-sso-saml/select-identity-provider.png)
 
@@ -179,7 +179,7 @@ Autentiseringsspårning ger detaljerad information för felsökning av problem m
 
 Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
 
-* [Lokal datagateway](service-gateway-onprem.md)
+* [On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 8a86d17252bea3dbdb6ad30de35667cfbd844c8b
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
+ms.openlocfilehash: 1099cf8a7e26d46d871134239502dc918a88a316
+ms.sourcegitcommit: e02a7a7ab538553deb519403aa0e4fb87cc95e1c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430402"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65202775"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
@@ -46,7 +46,7 @@ Varje Power BI-distribution består av två kluster – ett frontwebb (**WFE**) 
 
 ![WFE och serverdelen](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI använder Azure Active Directory (**AAD**) för kontoautentisering och hantering. Power BI använder dessutom **Azure Traffic Manager** (ATM) till att dirigera användartrafik till det närmaste datacentret, vilket bestäms av DNS-posten för den klient som försöker att ansluta, för autentiseringsprocessen samt för att ladda ned statiskt innehåll och filer. Power BI använder **Azure Content Delivery Network (CDN)** till att effektivt distribuera statiskt innehåll och filer som behövs till användare baserat på nationella inställningar.
+Power BI använder Azure Active Directory (**AAD**) för kontoautentisering och hantering. Power BI använder dessutom **Azure Traffic Manager** (ATM) till att dirigera användartrafik till det närmaste datacentret, vilket bestäms av DNS-posten för den klient som försöker att ansluta, för autentiseringsprocessen samt för att ladda ned statiskt innehåll och filer. Power BI använder geografiskt närmaste frontwebb (WFE) för att distribuera det statiska innehåll som krävs samt filer till användare, med undantag för anpassade visuella objekt som levereras via **Azure Content Delivery Network (CDN)**.
 
 ### <a name="the-wfe-cluster"></a>WFE-klustret
 
@@ -231,7 +231,7 @@ För molnbaserade datakällor krypterar rollen Dataflytt krypteringsnycklarna me
 
     b. ETL – krypteras i Azure Blob-lagring, men alla data som för närvarande finns i Azure Blob-lagring för Power BI-tjänsten använder [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), även kallat kryptering på serversidan. Multi-Geo använder också SSE.
 
-    c. Push-data v1 – lagras krypterat i Azure Blob-lagring, men alla data som för närvarande finns i Azure Blob-lagring i Power BI-tjänsten använder [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), även kallat kryptering på serversidan. Multi-Geo använder också SSE.
+    c. Push-data v1 – lagras krypterat i Azure Blob-lagring, men alla data som för närvarande finns i Azure Blob-lagring i Power BI-tjänsten använder [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), även kallat kryptering på serversidan. Multi-Geo använder också SSE. Push-data v1 utgick från och 2016. 
 
     d. Push-data v2 – lagras krypterat i Azure SQL.
 
@@ -248,22 +248,24 @@ Power BI tillhandahåller övervakning av dataintegritet på följande sätt:
 1. Metadata (rapportdefinition)
 
    a. Rapporter kan antingen vara Excel för Office 365-rapporter eller Power BI-rapporter. Följande gäller för metadata baserat rapporttypen:
+        
+    &ensp; &ensp; a. Excel-rapportens metadata lagras krypterade i SQL Azure. Metadata lagras också i Office 365.
 
-       a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-
-       b. Power BI reports are stored encrypted in Azure SQL database.
+    &ensp; &ensp; b. Power BI-rapporter lagras krypterade i Azure SQL-databas.
 
 2. Statiska data
 
    Statiska data omfattar artefakter såsom bakgrundsbilder och anpassade visuella objekt.
 
-    a. För rapporter som skapats med Excel för Office 365 lagras ingenting.
+    &ensp; &ensp; a. För rapporter som skapats med Excel för Office 365 lagras ingenting.
 
-    b. För Power BI-rapporter lagras och krypteras statiska data i Azure Blob-lagring.
+    &ensp; &ensp; b. För Power BI-rapporter lagras och krypteras statiska data i Azure Blob-lagring.
 
-3. Cacheminnen a. För rapporter som skapats med Excel för Office 365 cachelagras ingenting.
+3. Cacheminnen
 
-    b. För Power BI-rapporter cachelagras data för de visuella objekt som visas krypterade i Azure SQL Database.
+    &ensp; &ensp; a. För rapporter som skapats med Excel för Office 365 cachelagras ingenting.
+
+    &ensp; &ensp; b. För Power BI-rapporter cachelagras data för de visuella objekt som visas krypterade i Azure SQL Database.
  
 
 4. Ursprungliga Power BI Desktop-filer (.pbix) eller Excel-filer (.xlsx) publiceras till Power BI
@@ -280,7 +282,7 @@ Oavsett vilken krypteringsmetod som används hanterar Microsoft nyckelkryptering
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Data som lagras kortvarigt på beständiga enheter
 
-Nedan beskrivs de data som lagras kortvarigt på beständiga enheter.
+Icke-beräkningsbara enheter är enheter som har minne som finns kvar utan konstant effekt. Nedan beskrivs de data som lagras kortvarigt på beständiga enheter. 
 
 #### <a name="datasets"></a>Datauppsättningar
 
@@ -293,6 +295,9 @@ Nedan beskrivs de data som lagras kortvarigt på beständiga enheter.
     a. Lokala Analysis Services – ingenting lagras
 
     b. DirectQuery – detta beror på huruvida modellen skapas direkt i tjänsten, i vilket fall den lagras i anslutningssträngen i krypterat format med krypteringsnyckeln lagrad i oformaterad text på samma ställa (tillsammans med den krypterade informationen), eller om modellen importeras från Power BI Desktop, i vilket fall autentiseringsuppgifterna inte lagras på beständiga enheter.
+
+    > [!NOTE]
+    > Funktionen för modellskapande på tjänstsidan utgick från och med 2017.
 
     c. Publicerade data – inget (ej tillämpligt)
 
@@ -452,6 +457,12 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 * Ja. Bing Maps och visuella ESRI-objekt överför data ut ur Power BI-tjänsten för visuella objekt som använder dessa tjänster. Mer information och detaljerade beskrivningar av utgående trafik från Power BI-klientorganisationen finns i [**Power BI och ExpressRoute**](service-admin-power-bi-expressroute.md).
 
+**Vad gäller mallappar, utför Microsoft alla säkerhets- eller sekretessutvärderingar av mallappen före publicering av objekt i galleriet?**
+* Nej. Appens utgivare ansvarar för innehållet och kundens ansvar för att granska och kontrollera om det går att lita på skaparen av mallappen. 
+
+**Finns det andra mallappar som kan skicka information utanför kundens nätverk?**
+* Ja. Det är kundens ansvar att granska utgivarens sekretesspolicy och bestämma om mallappen ska installeras på klienten. Utgivaren är dessutom ansvarig för att meddela om appens beteende och kapaciteter.
+
 **Vad gäller för datasuveränitet? Kan vi etablera klientorganisationer i datacenter som finns i specifika geografiska områden för att säkerställa att data inte lämnar landets gränser?**
 
 * En del kunder i vissa geografiska områden har ett alternativ för att skapa en klientorganisation i ett nationellt moln där lagring och bearbetning av data sker separat från alla andra datacenter. Nationella moln har en något annorlunda typ av säkerhet, eftersom en separat dataförvaltning använder Power BI-tjänsten för nationella moln för Microsofts räkning.
@@ -481,7 +492,7 @@ Mer information om Power BI finns i följande resurser.
 - [Power BI Gateway](service-gateway-manage.md)
 - [Power BI REST API – Översikt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API-referens](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Lokal datagateway](service-gateway-manage.md)
+- [On-premises data gateway (Lokal datagateway)](service-gateway-manage.md)
 - [Power BI och ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationella moln i Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)

@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: ddd476e47f90be50ed8b4564a70d312e98bef90e
+ms.sourcegitcommit: 2df541facab8a1621953e91dbbee18c7d4e9a3c3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324874"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64770043"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Hantera en lokal Power BI-gateway
 
@@ -38,26 +38,28 @@ Power BI stöder många lokala datakällor och var och en har sina egna krav. Ga
 
     ![Hantera gatewayer](media/service-gateway-manage/manage-gateways.png)
 
-2. Välj antingen en gateway > **Lägg till datakälla** eller gå till Gatewayer > **Lägg till datakälla**.
+1. Välj antingen en gateway > **Lägg till datakälla** eller gå till Gatewayer > **Lägg till datakälla**.
 
     ![Lägg till datakälla](media/service-gateway-manage/add-data-source.png)
 
-3. Välj **Typ av datakälla**.
+1. Välj **Typ av datakälla**.
 
     ![Välj SQL Server](media/service-gateway-manage/select-sql-server.png)
 
 
-4. Ange information för datakällan. I det här exemplet är det **Server**, **Databas** och annan information.  
+1. Ange information för datakällan. I det här exemplet är det **Server**, **Databas** och annan information.  
 
     ![Datakällsinställningar](media/service-gateway-manage/data-source-settings.png)
 
-5. För SQL Server, väljer du en **autentiseringsmetod** för **Windows** eller **Grundläggande** (SQL-autentisering).  Om du väljer **Grundläggande** ska du ange autentiseringsuppgifterna för datakällan.
+1. För SQL Server, väljer du en **autentiseringsmetod** för **Windows** eller **Grundläggande** (SQL-autentisering).  Om du väljer **Grundläggande** ska du ange autentiseringsuppgifterna för datakällan.
 
-6. Under **Avancerade inställningar** kan du som alternativ konfigurera [sekretessnivån](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) för datakällan (gäller inte för [DirectQuery](desktop-directquery-about.md)).
+1. Om den här datakällan är otillgänglig eller långsam för närvarande väljer du **hoppa över testanslutningen**. Annars kan skapandet av datakällan misslyckas.
+
+1. Under **Avancerade inställningar** kan du som alternativ konfigurera [sekretessnivån](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) för datakällan (gäller inte för [DirectQuery](desktop-directquery-about.md)).
 
     ![Avancerade inställningar](media/service-gateway-manage/advanced-settings.png)
 
-7. Välj **Lägg till**. Du ser *Anslutningen lyckades* om processen lyckas.
+1. Välj **Lägg till**. Du ser *Anslutningen lyckades* om processen lyckas.
 
     ![Anslutningen lyckades](media/service-gateway-manage/connection-successful.png)
 
