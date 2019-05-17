@@ -4,14 +4,14 @@ description: B√∂rja din utbildning med denna sekvenserade samling kurser som hj√
 layout: LandingPage
 ms.service: powerbi
 ms.author: davidiseminger
-ms.date: 10/01/2018
+ms.date: 05/10/2019
 ms.topic: hub-page
-ms.openlocfilehash: fc54476386ccd2e04c90bb3eb7f833107ca293f7
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 69bb6ce574c1ee6922c83f4ae2fcc06479eba440
+ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474013"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533674"
 ---
 <div id="main" class="v2">
     <div class="container">
