@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: e7c858c0ce81c0655dc02d3912c7770966b29d57
-ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
-ms.translationtype: HT
+ms.openlocfilehash: 462f0fb30fd1f77167253fd404e91c2d80d6ac35
+ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "65202729"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565225"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Distribuera och hantera Power BI Premium-kapaciteter
 
