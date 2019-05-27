@@ -12,23 +12,24 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
-ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: babdcebcdbc45ce3f7f737785ca4becab50cb3be
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280131"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608257"
 ---
-<!-- once the sample aps are live, change this so consumers can follow along -->
+<!-- once the sample apps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Snabbstart: Lär dig mer om Power BI-funktioner för ***användare***
 I den här snabbstarten lär du dig att interagera med Power BI för att identifiera databaserade affärsinsikter. Det här är ingen djupgående artikel utan snarare en snabb titt på många av de åtgärder som är tillgängliga för **Power BI-användare**.
 
 Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
 
 ## <a name="prerequisites"></a>Förutsättningar
-- Power BI-tjänsten (app.powerbi.com) <!-- app from AppSource -->
+- Power BI-tjänsten (app.powerbi.com)
+<!-- app from AppSource -->
 
 ## <a name="reading-view"></a>Läsvy
 Läsvyn i Power BI-tjänsten är tillgänglig för *rapportanvändare*. När en kollega delar en rapport med dig kan du utforska och interagera med rapporten i läsvyn. 
@@ -185,7 +186,7 @@ En Power BI-visualisering konstrueras med hjälp av data från underliggande dat
 1. Öppna en rapport i Power BI-tjänsten och välj ett visuellt objekt.  
 2. Om du vill visa bakomliggande data för det visuella objektet väljer du ellipsen (...) och **Visa data**.
    
-   ![välj Visa data](./media/end-user-show-data/power-bi-show-data2.png)
+   ![välj Visa data](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 Detta har varit en snabb översikt över några av de saker som **användare** kan göra med Power BI-tjänsten.  
 

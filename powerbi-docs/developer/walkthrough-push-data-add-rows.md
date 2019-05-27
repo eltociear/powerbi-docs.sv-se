@@ -1,20 +1,20 @@
 ---
 title: Lägga till rader i en tabell
 description: Genomgång för att skicka data – Lägga till rader i en Power BI-tabell
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 353104bcc99b65bdabe83f58edffd2653c48731c
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
+ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215928"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65710401"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Steg 5: Lägga till rader i en Power BI-tabell
 
@@ -160,7 +160,7 @@ Nedan visas den [fullständiga kodlistan](#code).
                 string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                 //OAuth2 authority Uri
-                string authorityUri = "https://login.microsoftonline.net/common/";
+                string authorityUri = "https://login.microsoftonline.com/common/";
 
                 //Get access token:
                 // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

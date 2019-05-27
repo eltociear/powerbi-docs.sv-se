@@ -2,20 +2,20 @@
 title: En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 description: I den här artikeln jämförs funktionerna i Power BI-rapportservern och Power BI-tjänsten.
 keywords: ''
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 02/06/2019
-ms.openlocfilehash: ba10e13062e4071e5afcc5d395836c96ed1401fd
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.date: 05/22/2019
+ms.openlocfilehash: c4254420ae949b1fae6a1407cd045589c23da3c8
+ms.sourcegitcommit: bccbfc278ae85615dcfb7791d89e071a43d1ae23
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327928"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66187679"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -38,7 +38,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Distribuera grupp av rapporter med hjälp av appar | Nej | Ja | [Skapa och publicera appar med instrumentpaneler och rapporter](../service-create-distribute-apps.md) |
 | Innehållspaket | Nej | Ja | [Organisationsinnehållspaket: Introduktion](../service-organizational-content-pack-introduction.md) |
 | Ansluta till tjänster som Salesforce | Ja | Ja | [Ansluta till de tjänster som du använder](../service-connect-to-services.md) med innehållspaket i Power BI-tjänsten. I Power BI-rapportservern använder du certifierade kopplingar för att ansluta till tjänster. Mer information finns i [Power BI-rapportdatakällor i Power BI-rapportserver](data-sources.md). |
-| Frågor och svar | Nej | Ja | [Frågor och svar i Power BI-tjänsten och Power BI Desktop](../consumer/end-user-q-and-a.md) 
+| Frågor och svar | Nej | Ja | [Frågor och svar i Power BI-tjänsten och Power BI Desktop](../power-bi-tutorial-q-and-a.md) 
 | Snabba insikter | Nej | Ja | [Automatiskt skapa datainsikter med Power BI](../consumer/end-user-insights.md) |
 | Analysera i Excel | Nej | Ja | [Analysera i Excel](../service-analyze-in-excel.md) 
 | Sidnumrerade rapporter | Ja | Ja | [Sidnumrerade rapporter är tillgängliga i Power BI-tjänsten](../paginated-reports-report-builder-power-bi.md) som en förhandsversion i Premium-kapacitet |
