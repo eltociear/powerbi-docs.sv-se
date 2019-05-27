@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 05/11/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b97d2b44e6751f9185b02afc61ca89296fbbd5cf
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: 1b47e51ece196d6667363d91f43589c398828ff9
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661639"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608299"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Webbläsare som stöds för Power BI
 Power BI körs i dessa webbläsare:
@@ -30,7 +30,6 @@ Power BI körs i dessa webbläsare:
 Dessa webbläsare stöds på alla plattformar där de är tillgängliga.
 
 ### <a name="next-steps"></a>Nästa steg
-* [Vad är Power BI?](../power-bi-overview.md)
 * Fråga [Power BI Community](http://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/)
 
