@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279859"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051164"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vägledning för distribution av en datagateway för Power BI
 
@@ -42,7 +42,7 @@ Det finns en begränsning i **Power BI** som endast tillåter *en* gateway per *
 ### <a name="connection-type"></a>Anslutningstyp
 **Power BI** har två typer av anslutningar: **DirectQuery** och **Importera**. Alla datakällor stöder inte båda anslutningstyper och det kan finnas många anledningar till att välja den ena över den andra, till exempel säkerhetskrav, prestanda, databegränsningar och storleken på datamodellen. Du kan lära dig mer om anslutningstyper och datakällor som stöds i avsnittet *lista med tillgängliga typer av datakällor* i artikeln [Lokal datagateway](service-gateway-onprem.md).
 
-Beroende på vilken typ av anslutning som används kan gateway-användningen variera. Du bör till exempel försöka skilja **DirectQuery**-datakällor från datakällor med **Schemalagd uppdatering** när det är möjligt (förutsatt att de är i olika rapporter och kan delas upp). Därmed kommer gatewayen inte att ha tusentals DirectQuery-begäranden i kö vid samma tid som morgonens schemalagda uppdatering av en storskalig datamodell som används för företagets huvudinstrumentpanel. Tänk på följande för varje:
+Gatewayanvändning kan vara olika beroende på vilken typ av anslutning används. Du bör till exempel försöka skilja **DirectQuery**-datakällor från datakällor med **Schemalagd uppdatering** när det är möjligt (förutsatt att de är i olika rapporter och kan delas upp). Detta hindrar gatewayen från att ha tusentals **DirectQuery** begäranden i kö vid samma tid som morgonens schemalagda uppdatering av en storskalig datamodell som används för företagets huvudinstrumentpanel. Tänk på följande för varje:
 
 * För **Schemalagd uppdatering**: beroende på storleken på din fråga och antalet uppdateringar som utförs per dag, räcker det att vara inom de rekommenderade minimikraven för maskinvara eller uppgradera till en dator med bättre prestanda. Om en given fråga inte är vikt utförs omvandlingar på gatewaydatorn och därmed är det bra om gatewaydatorn har mer tillgängligt minne.
 * För **DirectQuery**: en fråga skickas varje gång en användare öppnar rapporten eller tittar på data. Så om du tror att mer än 1 000 användare har åtkomst till data samtidigt måste datorn ha tåliga och högpresterande maskinvarukomponenter. Flera processorkärnor resulterar i bättre genomströmning för en **DirectQuery**-anslutning.

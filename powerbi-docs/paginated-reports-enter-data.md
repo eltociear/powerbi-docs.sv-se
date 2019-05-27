@@ -1,7 +1,7 @@
 ---
 title: Ange data direkt i en sidnumrerad rapport i Report Builder (förhandsversion)
 description: I den här artikeln får se du hur du kan ange data direkt i en sidnumrerad rapport i Report Builder.
-author: markingmyname
+author: maggiesMSFT
 ms.author: maggies
 manager: kfile
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
-ms.openlocfilehash: 27f8434b336c2d1281fb087d4e9acf83958f7329
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61424548"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Ange data direkt i en sidnumrerad rapport i Report Builder (förhandsversion) – Power BI
 
@@ -23,7 +23,7 @@ I den här artikeln får du lära dig om en funktion i den nya versionen av SQL 
 ## <a name="prerequisites"></a>Förutsättningar
 
 - Om du vill ange data direkt i en sidnumrerad rapport installerar du den nya versionen av [Report Builder från Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613). 
-- För att spara din sidnumrerade rapport i Power BI-tjänsten behöver du ett [Power BI Pro-konto](service-self-service-signup-for-power-bi.md) och skrivåtkomst till en arbetsyta i en [Power BI Premium-kapacitet](service-premium.md).
+- För att spara din sidnumrerade rapport i Power BI-tjänsten behöver du ett [Power BI Pro-konto](service-self-service-signup-for-power-bi.md) och skrivåtkomst till en arbetsyta i en [Power BI Premium-kapacitet](service-premium-what-is.md).
 - Om du vill spara din sidnumrerade rapport till en rapportserver behöver du behörigheter för att [redigera filen Rsreportserver.config](#upload-the-paginated-report-to-a-report-server).
 
 ## <a name="get-started"></a>Kom igång

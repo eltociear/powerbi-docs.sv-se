@@ -1,8 +1,8 @@
 ---
 title: Vanliga frågor och svar om Power BI Premium
 description: Bläddra i en lista över vanliga frågor och svar om vad Power BI Premium kan erbjuda.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 6aa9265a006135ad87a61979b39a709c874f8d48
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
+ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383347"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565386"
 ---
 # <a name="power-bi-premium-faq"></a>Vanliga frågor och svar om Power BI Premium
 
-Den här artikeln behandlar vanliga frågor om Power BI Premium. En översikt finns i [Vad är Power BI Premium?](service-premium.md).
+Den här artikeln behandlar vanliga frågor om Power BI Premium. En översikt finns i [Vad är Power BI Premium?](service-premium-what-is.md).
 
 * Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
@@ -84,7 +84,7 @@ Mer information finns i [Kom igång med Power BI-rapportserver](report-server/ge
 
 **Nästa steg**
 
-[Vad är Power BI Premium?](service-premium.md)
+[Vad är Power BI Premium?](service-premium-what-is.md)
 [Viktig information om Power BI Premium](service-premium-release-notes.md)
 [Microsoft Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)
 [Planera ett white paper för en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy)

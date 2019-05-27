@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d1e326e9b2481c4b5dc4ab61a0bd49d477fc592
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1f50fa577cace62adadd0dfc29216445c6c8f269
+ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274891"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65454357"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Ange data direkt i Power BI Desktop
 Med Power BI Desktop kan du ange data direkt och använda dessa data i dina rapporter och visualiseringar. Du kan till exempel kopiera delar av en arbetsbok eller en webbsida och sedan klistrar in den i Power BI Desktop.

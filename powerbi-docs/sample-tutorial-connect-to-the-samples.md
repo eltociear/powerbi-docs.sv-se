@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 63924dd4769b4ce452d2d8de4252228bb6d37d37
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 846f783e2a022504f192cf0c03179ce3f3c00e22
+ms.sourcegitcommit: 1dfabc8596ec2eb66ccccceb11419361f704b607
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275558"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625063"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Ansluta till exemplen i Power BI-tjänsten
 
@@ -78,7 +78,7 @@ Utforska nu instrumentpanelen, datauppsättningen och rapporten på egen hand. D
     ![rapportsida med matchande visualisering markerad](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Om panelen hade skapats med hjälp av [Power BI:s frågor och svar](consumer/end-user-q-and-a.md), skulle sidan Frågor och svar öppnats i stället. Om panelen hade [fästs från Excel](service-dashboard-pin-tile-from-excel.md), skulle Excel Online ha öppnats i Power BI.
+   > Om panelen hade skapats med hjälp av [Power BI:s frågor och svar](power-bi-tutorial-q-and-a.md), skulle sidan Frågor och svar öppnats i stället. Om panelen hade [fästs från Excel](service-dashboard-pin-tile-from-excel.md), skulle Excel Online ha öppnats i Power BI.
    > 
    > 
 1. Tillbaka på din flik **Datauppsättningar** har du flera alternativ för att utforska din datauppsättning.  Du kommer inte att kunna öppna den och se alla rader och kolumner (som du kan i Power BI Desktop eller Excel).  När någon delar ett innehållspaket med kollegor vill de vanligtvis dela med sig av vissa insikter och inte ge dem direkt åtkomst till specifika data. Men det betyder inte att du inte kan utforska datauppsättningen.  
@@ -129,11 +129,9 @@ Utforska nu datauppsättningen, relationerna och rapporten på egen hand. Du hit
 
 
 ## <a name="next-steps"></a>Nästa steg
-[Grundläggande begrepp för Power BI](consumer/end-user-basic-concepts.md)
 
-[Exempel för Power BI-tjänsten](sample-datasets.md)
-
-[Datakällor för Power BI](service-get-data.md)
+- [Grundläggande begrepp för Power BI](consumer/end-user-basic-concepts.md)
+- [Exempel för Power BI-tjänsten](sample-datasets.md)
+- [Datakällor för Power BI](service-get-data.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

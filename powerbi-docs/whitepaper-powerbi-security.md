@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 1099cf8a7e26d46d871134239502dc918a88a316
-ms.sourcegitcommit: e02a7a7ab538553deb519403aa0e4fb87cc95e1c
-ms.translationtype: HT
+ms.openlocfilehash: e75810d18b39619d249c3acd9a9140b3d19d5f35
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65202775"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051428"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
@@ -316,7 +316,7 @@ För att övervaka dataintegriteten för data som bearbetas använder Power BI H
 
 ## <a name="user-authentication-to-data-sources"></a>Användarautentisering till datakällor
 
-Med varje datakälla upprättar en användare en anslutning som är baserad på användares inloggning och läser data med hjälp av dessa autentiseringsuppgifter. Användare kan sedan skapa frågor, instrumentpaneler och rapporter baserat på underliggande data.
+Med varje datakälla en användare upprättar en anslutning baserat på deras inloggning och ger åtkomst till data med dessa autentiseringsuppgifter. Användare kan sedan skapa frågor, instrumentpaneler och rapporter baserat på underliggande data.
 
 När en användare delar frågor, instrumentpaneler, rapporter eller visualiseringar beror åtkomst till dessa data och visualiseringar på huruvida de underliggande datakällorna stöder säkerhet på rollnivå (RLS).
 

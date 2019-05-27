@@ -1,20 +1,20 @@
 ---
 title: Konfigurera autentiseringsuppgifter programmässigt för Power BI
 description: Konfigurera autentiseringsuppgifter programmässigt för Power BI för automatisering
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/25/2019
-ms.openlocfilehash: 2b4e2f5a4e95b412459dd8fe8d497966e541b389
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: f93119a621330d673fd2cf6035e0416646bd5e6a
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56893133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61380194"
 ---
 # <a name="configure-credentials-programmatically-for-power-bi"></a>Konfigurera autentiseringsuppgifter programmässigt för Power BI
 
@@ -54,7 +54,7 @@ Följ dessa anvisningar för att konfigurera autentiseringsuppgifter programmäs
 
 ### <a name="expired-on-premises-data-source-credentials-flow"></a>Flöde för autentiseringsuppgifter för lokal datakälla som upphört
 
-1. [Följ steg 1 och 2 från det föregående scenariot](#configure-credential-flow-for-data-sources).
+1. [Följ steg 1 och 2 från det föregående scenariot](#configure-a-credential-flow-for-data-sources).
 
 2. Anropa [Hämta gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) för att hämta den offentliga nyckeln för gatewayen.
 

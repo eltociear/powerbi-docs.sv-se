@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
+ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225970"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65941452"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relationer med kardinaliteten många-många i Power BI Desktop
 
@@ -25,7 +25,7 @@ Med funktionen för *relationer med kardinaliteten många-många* i Power BI Des
 
 Funktionen för *relationer med kardinaliteten många-många* i Power BI Desktop är en av tre relaterade funktioner:
 
-* **Sammansatta modeller**: Låter en rapport ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Du hittar mer information i [Använd sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md).
+* **Sammansatta modeller**: Låter en rapport ha två eller flera dataanslutningar, inklusive DirectQuery-anslutningar eller importera, i valfri kombination. Mer information finns i [Använda sammansatta modeller i Power BI Desktop](desktop-composite-models.md).
 
 * **Relationer med kardinaliteten många-många**: Med *sammansatta modeller* kan du etablera *relationer med kardinaliteten många-många* mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Denna funktion beskrivs ytterligare i den här artikeln.
 
@@ -157,7 +157,7 @@ De befintliga begränsningarna med att använda DirectQuery gäller fortfarande 
 ## <a name="next-steps"></a>Nästa steg
 
 Mer information om sammansatta modeller och DirectQuery finns i följande artiklar:
-* [Sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md)
+* [Sammansatta modeller i Power BI Desktop](desktop-composite-models.md)
 * [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md)
 * [Använda DirectQuery i Power BI Desktop](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery i Power BI Desktop](desktop-directquery-data-sources.md)

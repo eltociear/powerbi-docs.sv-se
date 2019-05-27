@@ -1,20 +1,20 @@
 ---
 title: Migreringsverktyg för Power BI Embedded
 description: Det här migreringsverktyget kan användas för att kopiera dina rapporter från Power BI Embedded Azure-tjänsten (PaaS) till Power BI-tjänsten (SaaS).
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 76e6ebec14d5feefd319213c05fddb0839a55ccd
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61272245"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Migreringsverktyg för Power BI Embedded
 
@@ -272,7 +272,7 @@ Mer information finns i [Så här migrerar du innehållspaket från Power BI Emb
 
 [Bädda in med Power BI](embedding.md)  
 [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md)  
-[Power BI Premium – vad är det?](../service-premium.md)  
+[Power BI Premium – vad är det?](../service-premium-what-is.md)  
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
