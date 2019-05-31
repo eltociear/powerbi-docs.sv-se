@@ -7,26 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: cd3a1f94aa4c965327ea3e5bcb7271326aa3514d
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56250046"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578570"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Installera och distribuera mallappar i organisationen – Power BI (förhandsversion)
 
-Med de nya Power BI-*mallapparna* kan Power BI-partner skapa Power BI-appar med lite eller ingen kodning och sedan distribuera dem till Power BI-kunder. Den här artikeln är till för Power BI-analytiker. Den förklarar hur du installerar, anpassar och distribuerar en mallapp som skapats av en Power BI-partner. Om du är intresserad av att skapa mallappar som du kan distribuera själv, kan du läsa [Skapa en mallapp i Power BI](service-template-apps-create.md).
+Är du en Power BI-analytiker? Om så den här artikeln förklarar hur du installerar *mall appar* att ansluta till många av de tjänster du använder för att driva verksamheten som Salesforce, Microsoft Dynamics och Google Analytics. Du kan ändra instrumentpanelen och rapporter som uppfyller organisationens behov och distribuera dem till dina kollegor som en *app*. 
 
 ![Installerade Power BI-appar](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-När du installerar en mallapp som en Power BI-partner har skapat kan du anpassa den efter behoven i din organisation, och sedan distribuera den till dina kolleger som en app.  
+Om du är intresserad av att skapa mallappar som du kan distribuera själv, kan du läsa [Skapa en mallapp i Power BI](service-template-apps-create.md). Power BI-partner kan skapa Power BI-appar med lite eller ingen kodning och distribuera dem till Power BI-kunder. 
 
 ## <a name="prerequisites"></a>Förutsättningar  
 
-Här följer kraven för att installera, anpassa och distribuera en mallapp:  
+Här följer kraven för att installera, anpassa och distribuera en mallapp: 
 
 - A [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
 - Bekanta dig med [grundläggande begrepp för Power BI ](service-basic-concepts.md)
@@ -106,6 +106,6 @@ När du har anpassat appen för din organisation är du redo att publicera den. 
 
 
 
-  
+￼ 
 
  
