@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513842"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Självstudie: Skapa dina egna mått i Power BI Desktop
@@ -97,7 +97,7 @@ Du vill analysera nettoförsäljningen genom att subtrahera rabatter och avkastn
     
     
 5.  För att subtrahera de två kolumnerna:
-    1. Efter den avslutande parentesen för det första uttrycket, skriv ett mellanslag, en minusoperatör (**-**) och ett till blanksteg. 
+    1. Efter den avslutande parentesen för det första uttrycket, skriv ett mellanslag, en minusoperatör ( **-** ) och ett till blanksteg. 
     2. Ange en annan SUM-funktion och börja skriva ”DiscountAmount” tills du kan välja kolumnen **Sales [DiscountAmount]** som argument. Lägg till en avslutande parentes. 
     3. Skriv ett mellanslag, en till minusoperatör, blanksteg, en till SUM-funktion med **Sales [ReturnAmount]** som argument och en avslutande parentes.
     
@@ -160,15 +160,15 @@ Vill du ta reda på vilka produkter som har högsta nettoförsäljning per såld
 
 1.  Skapa ett nytt mått med namnet **Net Sales per Unit** i Sales-tabellen.
     
-2.  Börja skriva **NetSales** i formelfältet. Förslagslistan visar vad du kan lägga till. Välj **[Net Sales]**.
+2.  Börja skriva **NetSales** i formelfältet. Förslagslistan visar vad du kan lägga till. Välj **[Net Sales]** .
     
     ![Formel med NetSales](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
-    Du kan också referera till ett mått genom att helt enkelt skriva en inledande hakparentes (**[**). Listan över förslag visar endast mått att lägga till i formeln.
+    Du kan också referera till ett mått genom att helt enkelt skriva en inledande hakparentes ( **[** ). Listan över förslag visar endast mått att lägga till i formeln.
     
     ![Hakparentes visar endast mått](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
-3.  Ange ett blanksteg, en divisionsoperatör (**/**), en till blanksteg, SUM-funktionen och skriv sedan **Quantity**. Listan över förslag visar alla kolumner med Quantity i namnet. Välj **Sales [SalesQuantity]**, ange den avslutande parentesen och tryck på RETUR eller välj bockmarkeringen för att verifiera formeln. Formeln bör nu se ut så här:
+3.  Ange ett blanksteg, en divisionsoperatör ( **/** ), en till blanksteg, SUM-funktionen och skriv sedan **Quantity**. Listan över förslag visar alla kolumner med Quantity i namnet. Välj **Sales [SalesQuantity]** , ange den avslutande parentesen och tryck på RETUR eller välj bockmarkeringen för att verifiera formeln. Formeln bör nu se ut så här:
     
     `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
     

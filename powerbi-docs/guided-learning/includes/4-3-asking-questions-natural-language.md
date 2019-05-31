@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2a0ec80120e30d8d652eb2bd28461b9f88f7610a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264038"
+---
 Power BI levereras med ett kraftfullt verktyg för taligenkänning där du ställa frågor om dina data med vanliga meningar och frågor. Så utöver att skapa rapporter och visualiseringar med Power BI, kan du skapa tabeller och diagram genom att ställa enkla frågor.
 
 Öppna en instrumentpanel i Power BI om du vill ställa en fråga för dina data. Längst upp på skärmen ser du en textruta där du kan ställa frågor om data som visas. Den här funktionen är kallas ibland *frågor och svar*, eller oftare kallas den bara **Q&A** (questions and answers).

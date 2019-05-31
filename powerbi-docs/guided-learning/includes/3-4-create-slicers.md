@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e3f21c41bb0cf97db8b988a80d9792e1ba0b0b4f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397974"
+---
 Utsnitt är en av de mest kraftfulla typerna av visualiseringar, i synnerhet när det gäller faktafyllda rapporter. Ett **utsnitt** är ett visuellt arbetsytefilter i **Power BI Desktop** som du kan använda för att titta på data i ett visst rapportsegment, t.ex. avseende ett visst år eller en viss geografisk plats.
 
 Om du vill lägga till ett utsnitt i rapporten väljer du **Utsnitt** i fönstret **Visualiseringar**.

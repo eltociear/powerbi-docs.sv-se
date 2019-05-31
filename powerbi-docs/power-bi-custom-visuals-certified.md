@@ -9,13 +9,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/10/2019
-ms.openlocfilehash: a9f8c6248f9754192009e12bab34d3f1427269c2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 05/9/2019
+ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174808"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454567"
 ---
 # <a name="certified-custom-visuals"></a>Certifierade anpassade visuella objekt
 
@@ -31,7 +31,7 @@ Certifieringsprocessen är en valfri process och det är upp till utvecklarna at
 
 **Ocertifierade anpassade visuella objekt** innebär inte nödvändigtvis att osäkra visuella objekt. Vissa visuella objekt är inte certifierade eftersom de inte är kompatibla med ett eller flera av [certifieringskraven](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Till exempel att ansluta till en extern tjänst som visuell mappning eller visuella objekt med kommersiella bibliotek.
 
-Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i  **[Microsoft AppSource](https://appsource.microsoft.com)**? Läs mer i informationen om hur du  **[utvecklar ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md)**.
+Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Läs mer i informationen om hur du  **[utvecklar ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md)** .
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Borttagning av Power BI-certifierade anpassade visuella objekt
 
@@ -44,11 +44,34 @@ Microsoft kan ta bort visuella objekt från [listan över certifierade objekt](#
 Om du vill att dina anpassade visuella objekt [certifieras](#certified-custom-visuals) kontrollerar du att ditt anpassade visuella objekt överensstämmer med nedanstående:  
 
 * Godkänt för Microsoft AppSource. Ditt anpassade visuella objekt måste finnas på vår [marknadsplats](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Anpassade visuella objekt skrivs med version av API 1.2 eller högre.
-* Kodlagringsplats som är tillgänglig för granskning av Power BI-teamet (exempelvis källkoden (JavaScript-skript eller TypeScript)) i ett format som är läsbart för människor, via GitHub).
+* Anpassade visuella objekt skrivs med version **API v2.5** eller högre.
+* Kodlagringsplatsen är tillgänglig för granskning av Power BI-teamet (för källkoden (JavaScript- eller TypeScript) i mänskliga lättläst format-instansen är tillgänglig för oss, via GitHub).
 
     >[!Note]
     > Du måste inte dela koden offentligt i Github.
+* Krav för databasen:
+   * Måste innehålla den minsta uppsättningen som krävs av filer:
+      * .gitignore
+      * capabilities.json
+      * pbiviz.json
+      * package.json
+      * package-lock.json
+      * tsconfig.json
+   * Får inte innehålla node_modules mapp (lägga till node_modules .gitingore-fil)
+   * **installera npm** kommandot måste inte returnerar några fel.
+   * **npm audit** kommando får inte returnera alla varningar med hög eller medelhög nivå.
+   * **pbiviz-paketet** kommandot måste inte returnerar några fel.
+   * Måste innehålla [TSlint från Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) utan åsidosatt konfiguration, och det här kommandot måste inte returnerar några lint-fel.
+   * Kompilerade paketet anpassade visuella objekt måste matcha skickade paket (md5-hashen för båda filerna ska vara lika med).
+* Krav för källa:
+   * Måste ha stöd för det visuella objektet [återge händelse-API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Se till att inga godtyckliga/dynamiska koden körs (felaktig: eval(), osäkra för användandet av settimeout(), requestAnimationFrame(), setinterval (någon funktion användarindata), som körs användarens indata/data).
+   * Se till att DOM manipuleras på ett säkert sätt (felaktig: innerHTML D3.html (< vissa användardata/indata >), använder gemensamt för användarens indata/data innan du lägger till den DOM.
+   * Se till att det finns inga fel/undantag i javascript i webbläsaren konsolen för alla indata. Användare kan använda ditt visuella objekt med en annan uppsättning oväntade data så att det visuella objektet inte måste misslyckas. Du kan använda [denna exempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som en test-datauppsättning.
+
+* Om alla egenskaper i capabilities.json ändras kan du se till att de inte bryter befintlig användare rapporter.
+
+* Kontrollera att det visuella objektet överensstämmer med den [riktlinjer för Power BI-visualiseringar](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Inga vattenstämplar tillåts**.
 
 * Använder endast offentliga granskningsbara OSS-komponenter (JS-bibliotek eller TypeScript som är offentliga. Källkoden är tillgänglig för granskning och har inga kända säkerhetsrisker). Vi kan inte verifiera ett anpassat visuellt objekt med hjälp av en extern komponent.
 

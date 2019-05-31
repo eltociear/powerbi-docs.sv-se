@@ -7,34 +7,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 05/14/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4ab0fe4e3398a37da34af02282a847f316f3f727
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 37108c88b3a4f1efe2d324d2b182276252072d78
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383163"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710446"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Spåra Power BI-tjänstens hälsa i Office 365
 
-Administrationscenter för Microsoft 365 innehåller viktiga verktyg för Power BI-administratörer, inklusive aktuell och historisk information om tjänstens hälsa. Om du vill komma åt den här informationen så måste du vara i någon av följande roller: Power BI-tjänstadministratör eller Global administratör för Office 365. Mer information om roller finns i [Administratörsroller relaterade till Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+Microsoft 365 Administrationscenter tillhandahåller viktiga verktyg för Power BI-administratörer. Verktygen innehåller aktuell och historisk information om tjänstehälsa. För att komma åt service health information måste du vara någon av följande roller:
+
+* Power BI-tjänstadministratör
+
+* Global administratör för Office 365
+
+Mer information om roller finns i [administratörsroller som rör Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal).
 
-1. Välj panelen **Tjänstens hälsa**.
+1. I det vänstra navigeringsfältet väljer **visa alla** > **hälsotillstånd** > **Tjänsthälsan**. Service health-sidan visas:
 
-    ![Panelen Tjänstens hälsa](media/service-admin-health/service-health-tile.png)
+    ![Skärmbild av Administrationscenter för Microsoft 365 med Health Service health alternativen och påpekas.](media/service-admin-health/service-health-tile.png)
 
-1. I den aktuella listan, väljer du **N rekommendationer** eller **N incidenter** och granskar resultatet. I bilden nedan, ser du en av tre aktiva rekommendationer.
+1. Från den **alla tjänster** väljer **rådgivning** eller **incidenter** och granska resultatet. I skärmbilden nedan ser du något av tre active rekommendationerna.
 
-    ![Aktiva rekommendationer](media/service-admin-health/active-advisories.png)
+    ![Skärmbild av sidan hälsa med tre rekommendationerna för Power BI och visa information om alternativet påpekas.](media/service-admin-health/active-advisories.png)
 
-1. Om du vill se mer information, väljer du **Visa information** för ett objekt. I bilden nedan visas ytterligare information, inklusive de senaste statusuppdateringarna.
+1. Om du vill se mer information, väljer du **Visa information** för ett objekt. I skärmbilden nedan ser du ytterligare information, inklusive de senaste uppdateringarna för status.
 
-    ![Rekommendationsinformation](media/service-admin-health/advisory-details.png)
+    ![Skärmbild av rådgivande information.](media/service-admin-health/advisory-details.png)
 
     Bläddra nedåt för att se mer information och stäng sedan fönstret när du är klar.
 
-1. Om du vill visa historisk information för alla tjänster, väljer du **Visa historik** i det övra högra hörnet av huvudlisten. Välj sedan **Senaste 7 dagarna** eller **Senaste 30 dagarna**. Om du vill återgå till den aktuella tjänstens hälsa, väljer du **Visa aktuell status**.
+1. Se historisk information för alla tjänster i det övre högra hörnet av den **Tjänsthälsan** väljer **Visa historik**. Välj sedan **Senaste 7 dagarna** eller **Senaste 30 dagarna**. 
+
+1. Om du vill återgå till den aktuella tjänstens hälsa, väljer du **Visa aktuell status**.

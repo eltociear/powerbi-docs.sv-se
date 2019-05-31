@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 04/10/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84e40e9fbce07716a2250a58bfcbd396a40d2842
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
-ms.translationtype: HT
+ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826570"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61305465"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Datakällor som stöds av DirectQuery i Power BI
 
@@ -24,26 +24,29 @@ ms.locfileid: "56826570"
 Följande datakällor stöds av DirectQuery i Power BI:
 
 * Amazon Redshift
-* Azure HDInsight Spark (beta)
+* AtScale (Beta)
+* Azure HDInsight Spark
 * Azure SQL Database
 * Azure SQL Data Warehouse
-* Google BigQuery (beta)
+* Google BigQuery
+* HDInsight Interactive-fråga
 * IBM DB2-databas
-* IBM Netezza (beta)
+* IBM Netezza
 * Impala (version 2.x)
 * Oracle Database (version 12 och senare)
+* Oracle Essbase
 * SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (beta)
+* SAP Business Warehouse Message Server
 * SAP HANA
 * Snowflake
-* Spark (beta) (version 0.9 och senare)
+* Spark (version 0.9 och senare)
 * SQL Server
 * Teradata-databas
-* Vertica (beta)
+* Vertica
 
 Datakällor som har **(beta)** eller **(förhandsversion)** efter namnet kan ändras och stöds inte för användning i produktion. Det kan också hända att de inte stöds efter att en rapport har publicerats i **Power BI-tjänsten**, vilket innebär att det kan uppstå fel när en publicerad rapport öppnas eller utforskas.
 
-Den enda skillnaden mellan datakällor i **(beta)** och **(förhandsversion)** är att källor i **(förhandsversion)** måste aktiveras som en förhandsversionsfunktion innan de blir tillgängliga för användning. Så här aktiverar du en dataanslutning till en **(förhandsversion)**. Öppna **Power BI Desktop** och gå till **Arkiv > Alternativ och inställningar > Alternativ** och välj sedan **Förhandsversionsfunktioner**.
+Den enda skillnaden mellan datakällor i **(beta)** och **(förhandsversion)** är att källor i **(förhandsversion)** måste aktiveras som en förhandsversionsfunktion innan de blir tillgängliga för användning. Så här aktiverar du en dataanslutning till en **(förhandsversion)** . Öppna **Power BI Desktop** och gå till **Arkiv > Alternativ och inställningar > Alternativ** och välj sedan **Förhandsversionsfunktioner**.
 
 > [!NOTE]
 > DirectQuery-frågor till SQL Server kräver autentisering med aktuella Windows-autentiseringsuppgifter eller databasautentiseringsuppgifter för att åtkomsten ska beviljas. Alternativa autentiseringsuppgifter stöds inte.

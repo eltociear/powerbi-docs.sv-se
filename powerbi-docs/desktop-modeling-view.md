@@ -1,5 +1,5 @@
 ---
-title: Använda modelleringsvyn i Power BI Desktop (förhandsversion)
+title: Använda modellering vyn i Power BI Desktop
 description: Använd modelleringsvyn för att se komplexa datauppsättningar i ett visuellt format i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,30 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941359"
 ---
-# <a name="modeling-view-in-power-bi-desktop-preview"></a>Modelleringsvyn i Power BI Desktop (förhandsversion)
+# <a name="modeling-view-in-power-bi-desktop"></a>Visa modeller i Power BI Desktop
 
-Med **Modelleringsvyn** i **Power BI Desktop** kan du visa och arbeta med komplexa datauppsättningar som innehåller många tabeller. Med modelleringsvyn kan du göra följande:
+Med **Modelleringsvyn** i **Power BI Desktop** kan du visa och arbeta med komplexa datauppsättningar som innehåller många tabeller.
 
-
-## <a name="enabling-the-modeling-view-preview-feature"></a>Aktivera förhandsfunktionen Modelleringsvy
-
-Modelleringsvyfunktionen är i förhandsversion och måste aktiveras i **Power BI Desktop**. Aktivera modelleringsvyn genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsfunktioner** och därefter välja kryssrutan **Modelleringsvy** som på följande bild.
-
-![Aktivera förhandsfunktionen Modelleringsvy i Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
-
-Du kommer att behöva starta om **Power BI Desktop** för att förhandsfunktionen ska aktiveras. 
-
-![Starta om Power BI Desktop för att aktivera förhandsfunktioner](media/desktop-modeling-view/modeling-view_01b.png)
 
 ## <a name="using-modeling-view"></a>Använda Modelleringsvyn
 
@@ -66,9 +56,9 @@ Du kan till exempel ändra den [lagringsläge](desktop-storage-mode.md) för fle
 Följande artiklar beskriver mer om datamodeller och beskriver även DirectQuery i detalj.
 
 * [Sammansättningar i Power BI Desktop (förhandsversion)](desktop-aggregations.md)
-* [Sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md)
+* [Sammansatta modeller i Power BI Desktop](desktop-composite-models.md)
 * [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md)
-* [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md)
+* [Många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
 
 
 DirectQuery-artiklar:

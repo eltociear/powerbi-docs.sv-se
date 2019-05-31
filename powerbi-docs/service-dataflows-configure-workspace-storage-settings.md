@@ -1,23 +1,23 @@
 ---
 title: Konfigurera inställningar för arbetsytans dataflöde
-description: Konfigurera en apparbetsyta i Power BI så att den lagrar sin definition av dataflöde och sina datafiler i Azure Data Lake Storage Gen2
+description: Konfigurera en apparbetsyta i Power BI för att lagra dess definition av dataflöde och datafiler i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8c17a7b4ad455077d383eaff9b35a5d1004fce11
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223638"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61168610"
 ---
-# <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurera inställningar för arbetsytans dataflöde (Förhandsversion)
+# <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
 
 Med Power BI och dataflöden kan du lagra en arbetsytas definitionsfil för dataflöde och datafiler på ditt Azure Data Lake Storage Gen2-konto. Administratörer av arbetsytan kan konfigurera Power BI på detta vis och den här artikeln beskriver de olika stegen. 
 
@@ -47,14 +47,11 @@ I dialogrutan som visas kan du ge den nya arbetsytan ett unikt namn. Klicka inte
 
 ![Namnge din nya arbetsyta](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Expandera sedan området **Avancerat** i dialogrutan **Skapa en apparbetsyta** där du kan aktivera inställningen **Dataflödeslagring (förhandsgranskning)**.
+Expandera sedan området **Avancerat** i dialogrutan **Skapa en apparbetsyta** där du kan aktivera inställningen **Dataflödeslagring (förhandsgranskning)** .
 
 ![Avancerade inställningar för den nya arbetsytan](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
 Välj **Spara** för att skapa den nya arbetsytan. Alla nya dataflöden som skapas i den här arbetsytan lagrar nu sin definitionsfil (sin Model.json-fil) och sina data på organisationens Azure Data Lake Storage Gen2-konto. 
-
-> [!NOTE]
-> Dataflödesfunktionen är en förhandsversion och kan komma att ändras och uppdateras innan den är allmänt tillgänglig.
 
 ## <a name="update-dataflow-storage-for-an-existing-workspace"></a>Uppdatera dataflödeslagring för en befintlig arbetsyta
 

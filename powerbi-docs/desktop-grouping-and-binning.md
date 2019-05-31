@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: b8d742e9238d438775115fd1ee2e287cf0ba0388
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454249"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Använd gruppering i Power BI Desktop
@@ -58,7 +58,7 @@ Från fönstret **Grupper** kan du ange den önskade **diskretiseringsstorleken*
 
 ![](media/desktop-grouping-and-binning/grouping-binning_6.png)
 
-När du väljer **OK**, lägg märke till att ett nytt fält visas i rutan **Fält** med *(diskreta grupper)*. Du kan sedan dra fältet till arbetsytan för att använda diskretiseringsstorleken i ett visuellt objekt.
+När du väljer **OK**, lägg märke till att ett nytt fält visas i rutan **Fält** med *(diskreta grupper)* . Du kan sedan dra fältet till arbetsytan för att använda diskretiseringsstorleken i ett visuellt objekt.
 
 ![](media/desktop-grouping-and-binning/grouping-binning_7.png)
 

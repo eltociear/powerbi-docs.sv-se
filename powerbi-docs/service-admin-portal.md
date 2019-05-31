@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 05/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 6c9d59bbc2c6bf81242166bef4cd7584f52fb633
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941603"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -34,7 +34,7 @@ Ditt konto måste vara markerat som **Global administratör** i Office 365 eller
 
     ![Inställningar för att administratörsportalen](media/service-admin-portal/powerbi-admin-settings.png)
 
-Det finns sju flikar i portalen. Resten av den här artikeln innehåller information om var och en av dessa flikar.
+Det finns nio flikar i portalen. Resten av den här artikeln innehåller information om var och en av dessa flikar.
 
 ![Navigering av administratörsportalen](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -44,7 +44,9 @@ Det finns sju flikar i portalen. Resten av den här artikeln innehåller informa
 * [Klientinställningar](#tenant-settings)
 * [Kapacitetsinställningar](#capacity-settings)
 * [Bädda in koder](#embed-codes)
-* [Visuella objekt för organisationer](#organizational-visuals)
+* [Visuella organisationsobjekt](#organization-visuals)
+* [Dataflöde storage (förhandsversion)](#dataflowStorage)
+* [Arbetsytor](#workspaces)
 
 ## <a name="usage-metrics"></a>Användningsstatistik
 
@@ -126,15 +128,27 @@ Inställningarna kan ha tre tillstånd:
 
 Följande avsnitt ger en översikt över de olika typerna av inställningar för klientorganisation.
 
-## <a name="workspace-settings"></a>Arbetsyteinställningar
+## <a name="help-and-support-settings"></a>Hjälp och support inställningar
 
-### <a name="create-workspaces-preview"></a>Skapa arbetsytor (förhandsversion)
+### <a name="publish-get-help-information"></a>Publicera ”få hjälp” information
 
-Användare i organisationen kan skapa apparbetsytor för att samarbeta på instrumentpaneler, rapporter och annat innehåll. [Läs mer](service-create-the-new-workspaces.md)
+Användare i organisationen kan gå till interna hjälp och supportresurser Power BI Hjälp-menyn. Mer specifikt ändra parametrarna beteendet för menyalternativ Läs, Community och få hjälp.
+
+Du kan också ange en URL för att dirigera användare till en anpassad lösning för en licensieringsbegäran. Den här parametern anpassar-URL: Målwebbadressen för knappen uppgradera konto som en användare utan en Power BI Pro-licens kan hitta i uppdateringen till Power BI Pro dialogrutan och i sidan Hantera personlig lagring.
+
+## <a name="workspace-settings"></a>Inställningar för arbetsyta
+
+### <a name="create-workspaces"></a>Skapa arbetsytor
+
+Administratörer använder den **skapa arbetsytor** inställning som anger vilka användare i organisationen kan skapa apparbetsytor för att samarbeta kring instrumentpaneler, rapporter och annat innehåll. Läs mer om [apparbetsytor](service-create-the-new-workspaces.md).
+
+Admin portal har ett annat avsnitt av inställningar om arbetsytor i din klient. I avsnittet, kan du sortera och filtrera listan över arbetsytor och visa informationen för varje arbetsyta. Se [arbetsytor](#workspaces) mer information.
+
+I administrationsportalen styra du också vilka användare som har behörighet att distribuera appar i organisationen. Se [publicera innehållspaket och appar i hela organisationen](#publish-content-packs-and-apps-to-the-entire-organization) i den här artikeln för information.
 
 ## <a name="export-and-sharing-settings"></a>Inställningar för export och delning
 
-### <a name="share-content-to-external-users"></a>Dela innehåll för externa användare
+### <a name="share-content-with-external-users"></a>Dela innehåll med externa användare
 
 Användare i organisationen kan dela instrumentpaneler med användare utanför organisationen. [Läs mer](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
@@ -142,7 +156,7 @@ Användare i organisationen kan dela instrumentpaneler med användare utanför o
 
 Följande bild visar meddelandet som visas när du delar med en extern användare.
 
-![Dela med externa användare](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Dela med externa användare](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 ### <a name="publish-to-web"></a>Publicera på webben
 
@@ -203,19 +217,19 @@ I följande bild visas alternativet Tillåt externa gästanvändare att redigera
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicera innehållspaket och appar för hela organisationen
 
-Användare i organisationen kan publicera innehållspaket och appar för hela organisationen snarare än specifika grupper. [Läs mer](service-organizational-content-pack-manage-update-delete.md)
+Administratörer använder den här inställningen för att bestämma vilka användare kan publicera innehållspaket och appar i hela organisationen, snarare än bara specifika grupper. Läs mer om [publicering av appar](service-create-distribute-apps.md).
 
 Följande bild visar alternativet **Hela min organisation** när du skapar ett innehållspaket.
 
 ![Publicera innehållspaket till organisationen](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-apps"></a>Skapa mallappar
+### <a name="create-template-apps-and-organizational-content-packs"></a>Skapa mall för appar och organisationsinnehållspaket
 
-Användare i organisationen kan skapa mallappar som använder datauppsättningar i Power BI Desktop. Läs mer om [mallappar](template-content-pack-authoring.md)
+Användare i organisationen kan skapa appar för mallen och innehållspaket för organisationen som använder datauppsättningar som skapats från en datakälla i Power BI Desktop. Läs mer om [mall appar](template-content-pack-authoring.md).
 
 ### <a name="push-apps-to-end-users"></a>Pusha appar till slutanvändare
 
-Användarna kan dela appar direkt med slutanvändarna utan att det krävs någon installation från AppSource. [Läs mer](service-create-distribute-apps.md)
+Rapportskapare kan dela appar direkt med slutanvändarna utan att kräva installation från [AppSource](https://appsource.microsoft.com). Läs mer om [installera appar automatiskt för slutanvändare](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## <a name="integration-settings"></a>Inställningar för integrering
 
@@ -335,11 +349,18 @@ Användare i organisationen kan tagga instrumentpaneler med klassificeringar som
 
 Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapporter i SaaS-program (programvara som en tjänst). När du inaktiverar den här inställningen kan användare inte använda REST-API: er för att bädda in Power BI-innehåll i sina program. [Läs mer](developer/embedding.md)
 
-## <a name="dataflow-settings-preview"></a>Dataflödesinställningar (förhandsversion)
+### <a name="allow-service-principals-to-use-power-bi-apis"></a>Tillåt tjänstens huvudnamn att använda Power BI API:er
 
-### <a name="create-and-use-dataflows-preview"></a>Skapa och använda dataflöden (förhandsversion)
+Webbappar i Azure Active Directory (Azure AD) använder ett tilldelade tjänstens huvudnamn för att få åtkomst till Power BI API: er utan en inloggad användare. Om du vill tillåta en app ska använda autentisering av tjänstens huvudnamn dess huvudnamn för tjänsten måste inkluderas i en säkerhetsgrupp som är tillåtna. [Läs mer](developer/embed-service-principal.md)
 
-Användare i organisationen kan skapa och använda dataflöden. I [Dataförberedelser med självbetjäning i Power BI (förhandsversion)](service-dataflows-overview.md) finns en översikt över dataflöden. Information om hur du aktiverar dataflöden i en Premium-kapacitet finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
+> [!NOTE]
+> Tjänsthuvudnamn ärver behörigheterna för alla Power BI-klientinställningar för deras säkerhetsgrupp. Begränsa behörigheter genom att skapa en dedikerad säkerhetsgrupp för tjänstens huvudkonton och lägg till i listan Förutom vissa säkerhetsgrupper för de relevanta, aktiverade Power BI-inställningarna.
+
+## <a name="dataflow-settings"></a>Dataflödesinställningar
+
+### <a name="create-and-use-dataflows"></a>Skapa och använda dataflöden
+
+Användare i organisationen kan skapa och använda dataflöden. En översikt över dataflöden, se [självbetjänad Förbered i Power BI](service-dataflows-overview.md). Information om hur du aktiverar dataflöden i en Premium-kapacitet finns i [Konfigurera arbetsbelastningar](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
@@ -350,11 +371,18 @@ Två inställningar styr mallappar.
 
 ![Inställningar för mallappar i Power BI-administratörsportalen](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-Den första inställningen, **Skapa mallappar**, styr vem i organisationen som kan skapa mallappar. De som skapar mallapparna kan sedan distribuera dem till klienter utanför din organisation via AppSource eller något annat distributionssätt.
+### <a name="create-template-apps-preview"></a>Skapa mallappar (förhandsversion)
+
+Användare i organisationen kan skapa appar för mallen. Mallen appskapare kan sedan distribuera dem till klienter utanför organisationen med hjälp av [AppSource](https://appsource.microsoft.com) eller andra distributionsmetoder.
 
 ![Power BI-administratörsportalen, inställningen Skapa mallappar](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-Med den andra inställningen, **Installera mallappar**, kan du styra vem i organisationen som kan ladda ned och installera mallappar från AppSource eller någon annan källa
+### <a name="install-template-apps-preview"></a>Installera mall appar (förhandsversion)
+
+Användare i organisationen kan ladda ned och installera mallen appar från [AppSource](https://appsource.microsoft.com) eller en annan källa.
+
+> [!NOTE]
+> Den här inställningen avgör vilka användare kan installera mallen appar på sina Power BI-konton.
 
 ## <a name="capacity-settings"></a>Kapacitetsinställningar
 
@@ -366,7 +394,7 @@ På fliken **Power BI Premium** kan du hantera alla premiumfunktioner för Power
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-På fliken för **Power BI Embedded** kan du visa de Power BI Embedded-kapaciteter (A SKU) som du har köpt för din kund. Eftersom du kan bara köpa A SKU:er från Azure kan du [hantera inbäddade kapaciteter i Azure](developer/azure-pbie-create-capacity.md) från **Azure Portal**.
+På fliken för **Power BI Embedded** kan du visa de Power BI Embedded-kapaciteter (A SKU) som du har köpt för din kund. Eftersom du kan bara köpa A SKU: er från Azure kan du [hantera inbäddade kapaciteter i Azure](developer/azure-pbie-create-capacity.md) från **Azure-portalen**.
 
 Mer information om hur du hanterar inställningar för Power BI Embedded (A SKU) finns i [Vad är Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -376,7 +404,7 @@ Som administratör kan du visa de inbäddningskoder som har genererats för din 
 
 ![Bädda in koder i administrationsportalen för Power BI](media/service-admin-portal/embed-codes.png)
 
-## <a name="organizational-visuals"></a>Visuella objekt för organisationer
+## <a name="organizational-visuals">Visuella organisationsobjekt</a>
 
 Med fliken **organisationsobjekt** kan du distribuera och hantera anpassade visuella objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](power-bi-custom-visuals-organization.md)
 
@@ -436,19 +464,21 @@ Kontrollera att visualiserings-ID förblir oförändrat. Den nya filen ersätter
 
 Mer information finns i [Vanliga frågor och svar om anpassade visuella objekt i en organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
-## <a name="dataflow-storage-preview"></a>Dataflödeslagring (förhandsversion)
+## <a name="dataflowStorage">Dataflöde storage (förhandsversion)</a>
 
 Som standard lagras data som används med Power BI i intern lagring som tillhandahålls av Power BI. Med integreringen av dataflöden och Azure Data Lake Storage Gen2 (ADLS Gen2) kan du lagra dina dataflöden på din organisations Azure Data Lake Storage Gen2 konto. Mer information finns i [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md).
 
-## <a name="workspaces-preview"></a>Arbetsytor (förhandsversion)
+## <a name="workspaces"></a>Arbetsytor
 
-Som administratör kan visa du de arbetsytor som finns i din klientorganisation. Du kan sortera och filtrera listan över arbetsytor och visa information för varje arbetsyta. Observera att tabellkolumnerna motsvarar egenskaperna som returneras av [Power BI Admin REST-API:et](/rest/api/power-bi/admin) för arbetsytor. Personliga arbetsytor är av typen **PersonligGrupp**, äldre arbetsytor är av typen **Grupp** och moderna arbetsytor är av typen **Arbetsyta**. Mer information finns i [Skapa de nya arbetsytorna (förhandsversion) i Power BI](service-create-the-new-workspaces.md).
+Som administratör kan visa du de arbetsytor som finns i din klientorganisation. Du kan sortera och filtrera listan över arbetsytor och visa information för varje arbetsyta. Tabellkolumnerna motsvarar egenskaperna som returneras av den [Power BI-administratören Rest API](/rest/api/power-bi/admin) för arbetsytor. Personliga arbetsytor är av typen **PersonalGroup**, klassiska arbetsytor är av typen **grupp**, och de nya arbetsytan upplevelse arbetsytorna är av typen **arbetsytan**. Mer information finns i [skapa nya arbetsytor i Power BI](service-create-the-new-workspaces.md).
 
 ![Lista över arbetsytor](media/service-admin-portal/workspaces-list.png)
 
+
 ## <a name="next-steps"></a>Nästa steg
 
-[Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  [Förstå administratörsrollen för Power BI](service-admin-role.md)  
+[Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  
+[Förstå Power BI-administratörsrollen](service-admin-role.md)  
 [Granska Power BI i din organisation](service-admin-auditing.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

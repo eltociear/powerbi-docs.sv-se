@@ -11,11 +11,11 @@ ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: a0cf919d184946b23cb9ebc4ddfc24e0652c64d7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661856"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61064158"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
 Nu när du har en [grundläggande förståelse av appar](end-user-apps.md) ska vi gå igenom hur du öppnar och interagerar med appar. 

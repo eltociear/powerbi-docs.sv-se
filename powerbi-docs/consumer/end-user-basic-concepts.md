@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 8172934357c24516a40a670c68e008521bd4d82d
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580115"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61051617"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Grundläggande begrepp för ***användare*** av Power BI-tjänsten
 
@@ -104,7 +104,7 @@ Några exempel på de visualiseringar som du stöter på i Power BI är: vattenf
 
    ![8 exempel på visuella objekt](media/end-user-basic-concepts/power-bi-visuals.png)
 
-Visualiseringar är även tillgängliga från communityn. Dessa kallas *anpassade visuella objekt*. Om du får en rapport med ett visuellt objekt som du inte känner igen är det sannolikt ett anpassat visuellt objekt. Om du behöver hjälp med att tolka det visuella objektet <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->letar du upp namnet på *designern* av rapporten eller instrumentpanelen och kontaktar denne.
+Visualiseringar är även tillgängliga från communityn. Dessa kallas *anpassade visuella objekt*. Om du får en rapport med ett visuellt objekt som du inte känner igen är det sannolikt ett anpassat visuellt objekt. Om du behöver hjälp med att tolka det anpassade visuella objektet <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->Leta upp namnet på rapporten eller instrumentpanelen *designer* och be honom eller henne.
 
 **EN** visualisering i en rapport ...
 

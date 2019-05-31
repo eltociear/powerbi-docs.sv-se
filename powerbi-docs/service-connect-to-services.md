@@ -1,37 +1,36 @@
 ---
 title: Ansluta till de tjänster du använder med Power BI
-description: Du kan ansluta till flera av de tjänster som du använder för att driva verksamheten som Salesforce, Microsoft Dynamics CRM och Google Analytics.
+description: Ansluta till många av de tjänster du använder för att driva verksamheten som Salesforce, Microsoft Dynamics CRM och Google Analytics.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 04/19/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8006e3ff2849e98aed8b25e667d430af9407ede2
-ms.sourcegitcommit: 4695f5ef54cc9929828320132f890317b4c3018e
-ms.translationtype: HT
+ms.openlocfilehash: 53abb5f82b75773817c72b53dd3e522cb4ccc63e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54238978"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578759"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Ansluta till de tjänster du använder med Power BI
-Du kan ansluta till ett antal av de tjänster som du använder för att driva verksamheten som Salesforce, Microsoft Dynamics och Google Analytics. Power BI börjar med att använda dina autentiseringsuppgifter för att ansluta till tjänsten och skapar sedan en Power BI-app med en instrumentpanel och en uppsättning Power BI-rapporter som automatiskt visar dina data och ger visuella insikter om verksamheten.
+Med Power BI kan ansluta du till många av de tjänster du använder för att driva verksamheten som Salesforce, Microsoft Dynamics och Google Analytics. Powerbi startar genom att använda dina autentiseringsuppgifter för att ansluta till tjänsten. Den skapar en Power BI *arbetsytan* med en instrumentpanel och en uppsättning Power BI-rapporter som automatiskt visar dina data och ger visuella insikter om ditt företag.
 
-
-Logga in till Power BI för att visa alla de [tjänster som du kan ansluta till](https://app.powerbi.com/getdata/services). 
+Logga in på Power BI för att visa alla de [tjänster som du kan ansluta till](https://app.powerbi.com/getdata/services). 
 
 ![AppSource-appar](media/service-connect-to-services/overview.png)
 
-När du har installerat appen kan du visa instrumentpanelen och rapporterna i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och i Power BI-mobilapparna. 
+När du har installerat appen kan du visa instrumentpanelen och rapporterna i appen och arbetsytan i Power BI-tjänsten ([https://app.powerbi.com](https://app.powerbi.com)). Du kan också visa dem i Power BI-mobilapparna. I arbetsytan kan du ändra instrumentpanelen och rapporterna för att uppfylla behoven i din organisation och sedan distribuera dem till dina kollegor som en *app*. 
 
 ![Google Analytics-app i Power BI-mobilappen](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## <a name="get-started"></a>Kom igång
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-## <a name="view-the-dashboard-and-reports"></a>Visa instrumentpanelen och rapporterna
+## <a name="edit-the-dashboard-and-reports"></a>Redigera instrumentpanelen och rapporterna
 När importen är klar visas den nya appen på sidan Appar.
 
 1. Välj **Appar** i det vänstra navigeringsfönstret > välj appen.
@@ -41,33 +40,34 @@ När importen är klar visas den nya appen på sidan Appar.
    
     ![Google Analytics-instrumentpanel](media/service-connect-to-services/googleanalytics2.png)
    
-    Du kan filtrera och markera data i rapporten, men du kan inte spara dina ändringar.
+    Ändra instrumentpanelen och rapporterna så att de passar behoven i din organisation. Sedan [distribuera appen till dina kollegor](service-create-distribute-apps.md)
 
 ## <a name="whats-included"></a>Det här ingår
-När du har anslutit till en tjänst, kan du se en nyligen skapad app med en instrumentpanel, rapporter och datauppsättning. Data från tjänsten fokuserar på ett specifikt scenario och det kan hända att inte all information från tjänsten finns med. Data uppdateras automatiskt en gång per dag. Du kan styra schemat genom att välja datauppsättningen.
+När du har anslutit till en tjänst, visas en nyligen skapad app och arbetsyta med en instrumentpanel, rapporter och datauppsättningen. Data från tjänsten fokuserar på ett specifikt scenario och det kan hända att inte all information från tjänsten finns med. Data uppdateras automatiskt en gång per dag. Du kan styra schemat genom att välja datauppsättningen.
 
-Du kan också använda [Power BI Desktop](desktop-get-the-desktop.md) för att ansluta till vissa tjänster, som Google Analytics, och skapa egna anpassade instrumentpaneler och rapporter.  
+Du kan också [ansluta till flera tjänster i Power BI Desktop](desktop-data-sources.md), som Google Analytics, och skapa dina egna anpassade instrumentpaneler och rapporter.  
 
-Mer information om hur du ansluter till särskilda tjänster finns på de enskilda hjälpsidorna.
+Mer information om hur du ansluter till specifika tjänster finns i de enskilda hjälpsidorna.
 
 ## <a name="troubleshooting"></a>Felsökning
 **Tomma paneler**  
-Medan Power BI först ansluter till tjänsten, kan du se en tom uppsättning paneler på instrumentpanelen. Om du fortfarande ser en tom instrumentpanel efter två timmar, har anslutningen sannolikt misslyckats. Öppna ett supportärende om du inte ser något felmeddelande med information om att korrigera problemet.
+Medan Power BI först ansluter till tjänsten, kan du se en tom uppsättning paneler på instrumentpanelen. Om du fortfarande ser en tom instrumentpanel efter två timmar, har anslutningen sannolikt misslyckats. Om du inte ser något felmeddelande med information om att korrigera problemet, kan du öppna ett supportärende.
 
-* Välj frågetecken-ikonen (**?**) i det övre högra hörnet > **Få hjälp**.
+* Välj frågetecken-ikonen ( **?** ) i det övre högra hörnet > **Få hjälp**.
   
     ![Få hjälp-ikonen](media/service-connect-to-services/power-bi-service-get-help.png)
 
 **Information som saknas**  
-Instrumentpanelen och rapporterna består av innehåll från tjänsten som fokuserar på ett specifikt scenario och innehåller inte all information från tjänsten. Om det finns ett särskilt mått som du inte kan se i innehållspaketet, kan du lägga till en idé om det på [Power BI-supportsidan](https://support.powerbi.com/forums/265200-power-bi).
+Instrumentpanelen och rapporterna inkluderar innehåll från tjänsten fokuserar på ett specifikt scenario. Om du letar efter ett specifikt mått i appen och inte ser det, lägger du till en idé på den [Power BI-supporten](https://support.powerbi.com/forums/265200-power-bi) sidan.
 
 ## <a name="suggesting-services"></a>Föreslå tjänster
 Använder du en tjänst som du vill föreslå för Power BI-appen? Gå till [Power BI-supportens sida](https://support.powerbi.com/forums/265200-power-bi) och berätta för oss.
 
-Har du en tjänst som du vill skapa en app för? [Skicka in din kandidat](https://azure.microsoft.com/marketplace/programs/certified/apply/) och välj ”Publicera ett Power BI-innehållspaket” för att komma igång.
+Om du är intresserad av att skapa mallappar som du kan distribuera själv, kan du läsa [Skapa en mallapp i Power BI](service-template-apps-create.md). Power BI-partner kan skapa Power BI-appar med lite eller ingen kodning och distribuera dem till Power BI-kunder. 
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är appar i Power BI?](service-install-use-apps.md)
-* [Hämta data i Power BI](service-get-data.md)
+* [Distribuera appar till dina kollegor](service-create-distribute-apps.md)
+* [Skapa nya arbetsytor i Power BI](service-create-the-new-workspaces.md)
+* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

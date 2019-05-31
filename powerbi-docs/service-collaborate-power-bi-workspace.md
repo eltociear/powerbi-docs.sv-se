@@ -11,11 +11,11 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174578"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61181714"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbeta på din Power BI-apparbetsyta
 Power BI-apparbetsytor är bra platser för samarbete med dina kollegor. Där kan ni skapa *appar* genom att aarbeta med instrumentpaneler, rapporter och datauppsättningar. Samarbetet tar inte slut med arbetsytor i Power BI. Office 365 erbjuder andra grupptjänster, som att dela filer på OneDrive för företag, föra konversationer i Exchange, använda delade kalendrar och uppgifter osv. Läs mer om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -43,7 +43,7 @@ Om du publicerar en Power BI Desktop-fil på din Power BI-apparbetsyta efter det
 ## <a name="collaborate-in-office-365"></a>Samarbeta i Office 365
 Samarbete i Office 365 börjar med apparbetsytan i Power BI.
 
-1. I Power BI-tjänsten väljer du pilen bredvid Arbetsytor > och väljer ellipsen (**…**) bredvid namnet på din arbetsyta. 
+1. I Power BI-tjänsten väljer du pilen bredvid Arbetsytor > och väljer ellipsen ( **…** ) bredvid namnet på din arbetsyta. 
    
    ![Menyn Arbetsytor](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Från den här menyn kan samarbeta med din grupp på flera sätt: 
@@ -64,7 +64,7 @@ Samarbete i Office 365 börjar med apparbetsytan i Power BI.
 2. Läs mer om [gruppkonversationer i Outlook för Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-apps-group-workspace-calendar"></a>Schemalägg en händelse på appens kalenderarbetsyta
-1. Välj ellipsen (**…**) bredvid apparbetsytans namn \> **Kalender**. 
+1. Välj ellipsen ( **…** ) bredvid apparbetsytans namn \> **Kalender**. 
    
    ![Fliken Kalender](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    

@@ -11,11 +11,11 @@ ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 0a71a0e0fe7af3c074c94ab26083839ff114f815
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216112"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61232789"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur
 
@@ -83,7 +83,7 @@ Men det kan vara vilseledande att bara titta på det här diagrammet och dra slu
    I det första IT-området **infrastruktur**, har procentandelen ändrats dramatiskt mellan den inledande avvikelseplanen avvikelseplanens senaste uppskattning.
 
 ## <a name="ytd-spend-by-cost-elements-page"></a>Sidan utgifter i år efter kostnadselement
-Gå tillbaka till instrumentpanelen och titta på instrumentpanelen **Var Plan %, Var LE3%**.
+Gå tillbaka till instrumentpanelen och titta på instrumentpanelen **Var Plan %, Var LE3%** .
 
 ![](media/sample-it-spend/it5.png)
 

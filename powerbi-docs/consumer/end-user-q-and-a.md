@@ -1,5 +1,5 @@
 ---
-title: Översikt över frågor och svar i Power BI-tjänsten
+title: Frågor och svar för Power BI-användare
 description: Dokumentationsöversikt för Power BI frågor och svar frågor med naturligt språk.
 author: mihart
 manager: kvivek
@@ -8,19 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/01/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: e6f95eedbd84ad5f512bbc1a1255cee7130a60d7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 35ff71d5956c1c48c304324c121f79addf04cb56
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661989"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65625119"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Frågor och svar för Power BI-**användare**
 ## <a name="what-is-qa"></a>Vad är frågor och svar?
-Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk. Till exempel hur mycket sålde vi förra året.  
+Ibland är det snabbaste sättet att få svar från dina data att ställa en fråga med hjälp av naturligt språk. Till exempel hur mycket sålde vi förra året.
+
 Använd frågor och svar för att utforska dina data med hjälp av intuitiva, naturliga språkfunktioner och få svar i form av tabeller och diagram. Frågor och svar skiljer sig från en sökmotor – den ger dig bara resultat om data i Power BI.
 
 **Frågor och svar om Power BI** har endast stöd för att besvara frågor med naturligt språk som ställs på engelska. Det finns en förhandsversion för spanska som kan aktiveras av Power BI-administratören.
@@ -35,7 +36,7 @@ Att ställa frågan är bara början.  Roa dig med att resa igenom dina data och
 Upplevelsen är helt interaktiv... och snabb! Det drivs av en minnesintern lagring och svaret är nästan omedelbart.
 
 ## <a name="where-can-i-use-qa"></a>Var kan jag använda Frågor och svar?
-Du hittar Frågor och svar på instrumentpaneler i Power BI-tjänsten, längst ned på instrumentpanelen i Power BI Mobile och ovanför visualiseringen i Power BI Embedded. Om designern inte har gett dig redigeringsbehörigheter kommer du att kunna använda Frågor och svar för att utforska data men inte för att spara visualiseringar som skapats med Frågor och svar.
+Du hittar frågor och svar om instrumentpaneler och rapporter i Power BI-tjänsten och längst ned i instrumentpanelen i Power BI mobile. Om designern inte har gett dig redigeringsbehörigheter kommer du att kunna använda Frågor och svar för att utforska data men inte för att spara visualiseringar som skapats med Frågor och svar.
 
 ![frågeruta](media/end-user-q-and-a/powerbi-qna.png)
 
@@ -68,7 +69,7 @@ Du kan också säga till frågor och svar vilka visualiseringar som ska använda
 **Svar 1:** Om du inte ser någon frågeruta kontrollerar du först inställningarna. Det gör du genom att välja kugghjulsikonen i det övre högra hörnet i Power BI-verktygsfältet.   
 ![kugghjulsikonen](media/end-user-q-and-a/power-bi-settings.png)
 
-Välj sedan **Inställningar** > **Instrumentpaneler**. Kontrollera att det finns en bockmarkering intill **Visa sökrutan för Frågor och svar på den här instrumentpanelen**.
+Välj sedan **Inställningar** > **Instrumentpaneler**. Kontrollera att det finns en bockmarkering intill **Visa sökrutan för Frågor och svar på den här instrumentpanelen**.    
 ![Inställningar för Frågor och svar för instrumentpanelen](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 

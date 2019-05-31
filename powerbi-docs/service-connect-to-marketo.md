@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 4131758dad29b28de56e3ac450bed22d64c25e46
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223799"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61172850"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Anslut till Marketo med Power BI
 Power BI-innehållspaketet för Marketo ger dig insikter om ditt Marketo-konto med data om leads och deras aktiviteter. När du skapar den här anslutningen så hämtas dina data och du får automatiskt en instrumentpanel och rapporter baserade på dem.

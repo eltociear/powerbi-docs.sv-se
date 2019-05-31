@@ -9,17 +9,17 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: mshenhav
-ms.openlocfilehash: e96095cd63a9f2bd01b17f16392319167ef3354c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: ac9072c69edfd245454e92855dcefa461e80cc23
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274845"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61338251"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Visa rapporter och instrumentpaneler i presentationsläge på Surface Hub och Windows 10-enheter
 Du kan använda presentationsläge för att visa rapporter och instrumentpaneler i helskärmsläge på Windows 10-enheter och Surface Hub. 
 
-![Rapport i helskärmsläge](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode.png)
+![Rapport i helskärmsläge](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
 Presentationsläge är användbart när du vill visa Power BI på ett möte eller en konferens eller på en dedikerad projektor i ett kontor, eller bara för att maximera utrymmet på en liten skärm. 
 
@@ -36,19 +36,20 @@ Du kan också [visa instrumentpaneler och rapporter i helskärmsläge från Powe
 Byt till helskärmsläge i Power BI-mobilappen genom att trycka på **helskärms**ikonen.
 ![Helskärmsikon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png) Appkromen försvinner och ett verktygsfält visas längst ned på skärmen eller på vänster och höger sida (beroende på din skärmstorlek).
 
-![Rapport i helskärmsläge med verktygsfält på sidorna](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode2.png)
+![Rapport i helskärmsläge med verktygsfält på sidorna](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
 Du kan utföra följande åtgärder från verktygsfältet:
 
 1. Trycka på ikonen tillbaka ![ikonen tillbaka](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) för att gå tillbaka till den föregående sidan. Med ett långt tryck på ikonen visas fönstret med sökvägar så att du kan navigera till den mapp som innehåller din rapport eller instrumentpanel.
 2. Med pennanteckningsikonen ![pennanteckningsikon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) kan du välja en färg när du använder Surface-pennan för att rita eller anteckna på rapportsidan. 
 3. Använda sidikonen ![sidnumreringsikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) för att byta rapportsidan som du för närvarande presenterar.
-4. Tryck på sökikonen ![Sökikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) för att söka efter andra artefakter i Power BI.
-5. Avsluta presentationsläget genom att trycka på ikonen med två inåtriktade pilar ![Avsluta helskärmsläge](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) i verktygsfältet.
+4. Spela upp-ikonen  ![Spela upp-ikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) kommer Dölj Åtgärdsfältet och starta bildspel, där appen automatiskt rotera mellan rapportsidorna. 
+5. Tryck på sökikonen ![Sökikonen](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) för att söka efter andra artefakter i Power BI.
+6. Avsluta presentationsläget genom att trycka på ikonen med två inåtriktade pilar ![Avsluta helskärmsläge](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) i verktygsfältet.
 
 Du kan avdocka verktygsfältet och dra och placera det var som helst på skärmen. Det här är användbart för stora skärmar när du vill fokusera på ett visst område i rapporten och vill ha verktygen bredvid det. Placera bara fingret på verktygsfältet och svep det till rapportarbetsytan.
 
-![Rapport i presentationsläge och verktygsfält som har avdockats](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar.png)
+![Rapport i presentationsläge och verktygsfält som har avdockats](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)
 
 
 ## <a name="next-steps"></a>Nästa steg

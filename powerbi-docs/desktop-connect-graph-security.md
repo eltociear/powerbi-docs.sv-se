@@ -12,11 +12,11 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 9c265a5d8ad1a08396e0bb4fb553a87a134472fd
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306468"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61317984"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Anslut till Säkerhets-API för Microsoft Graph i Power BI Desktop
 
@@ -49,7 +49,7 @@ Följ stegen nedan för att använda anslutningsappen:
 
 1. Välj **Hämta data** > **Mer** från menyfliksområdet **Start** i Power BI Desktop.
 2. Välj **Onlinetjänster** från kategorilistan till vänster i fönstret.
-3. Välj **Microsoft Graph Security (Beta)**.
+3. Välj **Microsoft Graph Security (Beta)** .
 
     ![Dialogrutan Hämta data](media/desktop-connect-graph-security/GetData.PNG)
     

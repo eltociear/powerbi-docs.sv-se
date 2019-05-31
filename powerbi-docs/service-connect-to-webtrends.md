@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 1166808dc827448f94bb84cc37bf4000df178c1d
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61138606"
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Ansluta till Webtrends med Power BI
 Innehållspaketet Webtrends för Power BI och innehåller en mängd out-of-box-mått, till exempel antal sidvisningar och besök enligt trafikkälla. Du kan visualisera dina Webtrends-data i Power BI genom att först ansluta till ditt Webtrends-konto. Du kan använda instrumentpanelen de rapporter som tillhandahålls, eller anpassa dem för att fokusera på den information som du är mest intresserad av.  Data uppdateras automatiskt en gång per dag.

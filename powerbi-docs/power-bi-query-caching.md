@@ -7,15 +7,15 @@ ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: ''
-ms.openlocfilehash: fbfd8c98743144e0c9604aca4174d6ef32916e77
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
-ms.translationtype: HT
+ms.openlocfilehash: c981a3e2a05129a470c8d26675226bfb42c1bb68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914286"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769546"
 ---
 # <a name="query-caching-in-power-bi-premium"></a>Cachelagring av frågor i Power BI Premium
 
@@ -26,9 +26,7 @@ Organisationer med Power BI Premium kan dra nytta av *cachelagring av frågor* f
 
 Cachelagrade frågeresultat är specifika för användar- och datauppsättningskontext och respekterar alltid säkerhetsregler. För närvarande utför tjänsten endast cachelagring av frågor för den första sidan som du hamnar på. Med andra ord cachelagras inte frågor när du interagerar med rapporten. Cachen återspeglar personliga bokmärken och beständiga filter. [Paneler på instrumentpaneler](service-dashboard-tiles.md) som tillhandahålls av samma frågor drar också fördel när frågan har cachelagrats. Prestanda drar särskilt fördel när en datauppsättning används ofta och sällan behöver uppdateras. Cachelagring av frågor kan också minska belastningen på Premium-kapaciteten genom att minska det totala antalet frågor.
 
-Du styr funktionssättet för cachelagring av frågor på sidan **Inställningar** för datauppsättningen i Power BI-tjänsten. Det finns tre möjliga inställningar:
-
-- **Kapacitetsstandard**: Datauppsättningen ärver inställningen från Premium-kapaciteten. Kapacitetsstandarden styrs av administratören för Power BI Premium-kapaciteten.
+Du styr funktionssättet för cachelagring av frågor på sidan **Inställningar** för datauppsättningen i Power BI-tjänsten. Den har två möjliga inställningar:
 
 - **Av**: Använd inte cachelagring av frågor för den här datauppsättningen.
 

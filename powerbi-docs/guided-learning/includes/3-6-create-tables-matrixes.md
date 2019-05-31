@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 867e528c43126ae9073c0113905d59a835c46a96
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397932"
+---
 Förutom den stora mängden diagram stöder Power BI Desktop också en mängd tabeller. När du hämtar ett kategorifältet eller textfält och drar det till rapportarbetsytan hämtar du en resultattabell som standard. Du kan rulla uppåt och nedåt i tabellen och ursprungligen kommer att den sorteras alfabetiskt.
 
 ![](media/3-6-create-tables-matrixes/3-6_1.png)

@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513110"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hämta data från Excel-arbetsboksfiler
@@ -119,7 +119,7 @@ Funktionen **Publicera Power BI** i Excel 2016 är praktiskt taget samma som att
 ## <a name="troubleshooting"></a>Felsökning
 Är arbetsboken för stor? Läs [Minska storleken på en Excel-arbetsbok för att visa den i Power BI](reduce-the-size-of-an-excel-workbook.md).
 
-För närvarande när du väljer Importera importerar Power BI endast data som ingår i en namngiven tabell eller en datamodell. Därmed, om arbetsboken inte innehåller namngivna tabeller, Power View-blad eller Excel-datamodeller kan följande felmeddelande visas: **”Det gick inte att hitta några data i din Excel-arbetsbok”**. [Den här artikeln](service-admin-troubleshoot-excel-workbook-data.md) förklarar hur du åtgärdar din arbetsbok och importerar den igen.
+För närvarande när du väljer Importera importerar Power BI endast data som ingår i en namngiven tabell eller en datamodell. Därmed, om arbetsboken inte innehåller namngivna tabeller, Power View-blad eller Excel-datamodeller kan följande felmeddelande visas: **”Det gick inte att hitta några data i din Excel-arbetsbok”** . [Den här artikeln](service-admin-troubleshoot-excel-workbook-data.md) förklarar hur du åtgärdar din arbetsbok och importerar den igen.
 
 ## <a name="next-steps"></a>Nästa steg
 **Utforska dina data** – När du har hämtat dina data och rapporter från filen till Power BI, är det dags att börja utforska. Högerklicka bara på den nya datauppsättningen och klicka sedan på Utforska. Om du vill ansluta till en arbetsboksfil på OneDrive i steg 4 visas din arbetsbok i rapporter. Den öppnas när du klickar på den Power BI, precis som i Excel Online.

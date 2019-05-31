@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e8b920763ea619fe74af2b71730164183f333a95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265128"
+---
 **Power BI Desktop** innehåller **Frågeredigeraren**, ett kraftfullt verktyg för att utforma och transformera data så att de är klara för dina modeller och visualiseringar. När du väljer Redigera i Navigatör starts Frågeredigeraren som fylls med tabeller eller andra entiteter som du väljer från datakällan.
 
 Du kan också starta **Frågeredigeraren** direkt från **Power BI Desktop** med knappen **Redigera frågor** i menyfliksområdet **Start**.

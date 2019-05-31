@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 57f95a35ff12d546d4fd03202d14212e0df9c78e
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513646"
 ---
 # <a name="using-r-in-query-editor"></a>Använda R i Frågeredigeraren
@@ -94,7 +94,7 @@ Det finns vissa begränsningar för frågor med R-skript som skapats i **fråger
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-  I dialogrutan **Datakällsinställningar** markerar du datakällorna och väljer sedan **Redigera behörigheter...**. Kontrollera att **Sekretessnivå** är inställd som *Offentlig*.
+  I dialogrutan **Datakällsinställningar** markerar du datakällorna och väljer sedan **Redigera behörigheter...** . Kontrollera att **Sekretessnivå** är inställd som *Offentlig*.
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
 * Om du vill aktivera schemalagd uppdatering av visuella R-objekt eller datauppsättningar, måste du aktivera **Schemalagd uppdatering** och installera en **Personlig gateway** på datorn där arbetsboken och R-installationen finns. Mer information om detta finns i föregående avsnitt i den här artikeln, med länkar till mer information om var och en.

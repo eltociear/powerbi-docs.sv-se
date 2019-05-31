@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 34bb77c84d1813e32421b87e957e24a946f282f7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662007"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61066272"
 ---
 # <a name="view-power-bi-notifications"></a>Visa Power BI-meddelanden
 Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, ändringar i din grupparbetsyta, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](../service-set-data-alerts.md) samt i Power BI-mobilappar.

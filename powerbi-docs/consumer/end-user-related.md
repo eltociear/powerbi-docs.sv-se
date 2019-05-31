@@ -13,11 +13,11 @@ ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: abf6052d7cb912f9a8ff33f064b5dc1d44f5ba3e
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662100"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61050429"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Visa relaterat innehåll i Power BI-tjänsten
 Fönstret **Relaterat innehåll** visar hur din Power BI-tjänsts innehåll – instrumentpaneler, rapporter och datauppsättningar – är sammankopplade. Fönstret för relaterat innehåll är också ett utgångspunkt för att vidta åtgärder. Härifrån kan du uppdatera, byta namn på, generera insikter och mycket mer. Välj en relaterad rapport eller instrumentpanel så öppnas den i din Power BI-arbetsyta.   

@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: cd6ea6fd52f929e2cd254214cf0e8c96e858f6c2
-ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57555961"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273630"
 ---
 Med Power BI kan du skapa relationer mellan flera tabeller, inklusive tabeller som kommer från helt olika datakällor. Du kan visa dessa relationer för alla datamodeller i vyn **Relationer** i Power BI Desktop.
 

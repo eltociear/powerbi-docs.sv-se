@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d39f9a6a974e194c38c2f4e9bf69314ff6d0cec2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257073"
+---
 Det går snabbt och enkelt att publicera dina rapporter till Power BI-tjänsten.
 
 När du har slutfört rapporten i **Power BI Desktop** är det bara att välja knappen **publicera** på fliken **Start** i Power BI Desktop så påbörjas processen.

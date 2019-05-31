@@ -1,20 +1,20 @@
 ---
 title: Ansluta till Power BI-rapportservern och SSRS via OAuth
 description: Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mobilappen för att ansluta till SQL Server Reporting Services 2016 eller senare.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: 6e0b1c5d4a067925e4898cf23968cc14fd3f8fd6
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383633"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770365"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
 
@@ -25,7 +25,7 @@ Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mo
 Du kan ansluta till Power BI-rapportservern och Reporting Services via OAuth för att visa mobila rapporter eller KPI:er. Windows Server 2016 innehåller vissa förbättringar av rolltjänsten Web Application Proxy (WAP) för att tillåta den här typen av autentisering.
 
    > [!NOTE]
-   > För tillfället finns det inte officiellt stöd för att visa Power BI-rapporter som finns i Power BI-rapportservern och autentiserar med WAP.
+   > Visa Power BI-rapporter i Power BI Report Server stöds med WAP för att autentisera för närvarande endast i iOS-app. Android-appen stöds inte officiellt just nu.
 
 ## <a name="requirements"></a>Krav
 
@@ -118,7 +118,7 @@ Du kan skapa gruppen med följande steg.
    > [!NOTE]
    > Denna URL är skiftlägeskänslig!
 
-   *https://<url to report server>/reports*
+   *https://< rapportserverns url > / rapporter*
 
    ![Guide 03 för ADFS-programgrupp](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Välj **Nästa**.
@@ -165,7 +165,7 @@ Gör följande för att konfigurera begränsad delegering.
 
    Detta konfigurerar begränsad delegering för det här WAP-serverdatorkontot. Därefter måste vi konfigurera tjänsterna som den här datorn får delegera till.
 
-6. Välj **Lägg till...**  under rutan tjänster.
+6. Välj **Lägg till...** under rutan tjänster.
 
    ![Begränsad WAP, 02](media/mobile-oauth-ssrs/wap-contrained-delegation2.png)
 
@@ -191,7 +191,7 @@ Gör följande för att konfigurera begränsad delegering.
 Medan du kan publicera appar i hanteringskonsolen för rapportåtkomst kommer vi att skapa appen via PowerShell. Här är kommandot för att lägga till appen.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/reports/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/reports/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parameter | Kommentarer |

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5cabb57af08ba197c7f70598e988fb3249815ab8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271500"
+---
 I den här samlingen avsnitt har du lärt dig hur enkelt det är att använda befintliga Excel-arbetsboksfiler genom att ladda upp och utforska dem i Power BI. Du kan ladda upp Excel-arbetsböcker med enkla tabeller eller arbetsböcker som skapats med Excels mer avancerade BI-funktioner som Power Pivot och Power View.
 
 Du har också lärt dig att ansluta till **Excel**-filer som finns på **OneDrive för företag** och använda de **automatiska** uppdateringsfunktionerna i Power BI för att hålla dina rapporter och instrumentpaneler uppdaterade när du gör ändringar i din arbetsbok.

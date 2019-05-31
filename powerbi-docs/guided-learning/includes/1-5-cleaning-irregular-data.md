@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa6296485897b983c3ca4044ffa2875de3326dec
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265106"
+---
 Power BI kan importera data från nästan alla källor men visualiserings- och modelleringsverktygen fungerar bäst med data i tabellform. Ibland är dina data inte formaterade i enkla kolumner, vilket ofta är fallet med Excel-kalkylblad, där en tabellayout som ser bra ut för det mänskliga ögat inte nödvändigtvis är optimal för automatiska frågor. Följande kalkylblad har till exempel rubriker som sträcker sig över flera kolumner.
 
 ![](media/1-5-cleaning-irregular-data/1-5_1.png)

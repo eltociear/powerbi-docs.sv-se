@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fcf73962534ec8f1fda009304768fd43aaa0955a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257094"
+---
 Att skapa beräknade kolumner är ett enkelt sätt att utöka och förbättra dina data. En **beräknad kolumn** är en ny kolumn som du skapar genom att definiera en beräkning som transformerar eller kombinerar två eller flera element med befintliga data. Du kan till exempel skapa en ny kolumn genom att kombinera två kolumner till en.
 
 Ett bra skäl till att skapa en beräknad kolumn är för att upprätta en relation mellan tabeller när det saknas unika fält som kan användas till att upprätta någon relation. Att det saknas en relation blir tydligt när du skapar ett enkelt tabellobjekt i Power BI Desktop och du får samma värde för alla poster, trots att du vet att underliggande data är olika.

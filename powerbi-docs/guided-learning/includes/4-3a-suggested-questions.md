@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4a9d873632853a69c835d7326653102107dd239f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264053"
+---
 Med Power BI kan du lägga till egna föreslagna frågor för andra användare som använder rutan för frågor med naturligt språk i en instrumentpanel, det vill säga **Q&A**-rutan. Frågeförslagen är vad användarna ser när de klickar på textrutan längst upp i en instrumentpanel.
 
 ![](media/4-3a-suggested-questions/4-3a_1.png)

@@ -1,23 +1,25 @@
 ---
 title: Azure SQL Data Warehouse med DirectQuery
 description: Azure SQL Data Warehouse med DirectQuery
-author: markingmyname
-manager: kfile
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
+author: mgblythe
+ms.author: mblythe
+manager: kfile
+ms.reviewer: ''
+ms.custom: ''
 ms.date: 06/20/2018
-ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a09b9bed97f34b317fadc6b60216019a6c562d0f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 896e58b95f253c403bf7cd4bc3e1c069b3628f69
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295698"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770243"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse med DirectQuery
+
 Med Azure SQL Data Warehouse med DirectQuery kan du skapa dynamiska rapporter baserade på data och mått som du redan har i Azure SQL Data Warehouse. Med DirectQuery skickas frågor tillbaka till din Azure SQL Data Warehouse i realtid medan du utforskar dessa data. Frågor i realtid, i kombination med skalan för SQL Data Warehouse, gör att du kan skapa dynamiska rapporter på några få minuter mot flera terabyte av data. Dessutom tillåter införandet av knappen **Öppna i Power BI** användare att ansluta Power BI direkt till SQL Data Warehouse utan att behöva ange informationen manuellt.
 
 När du använder SQL Data Warehouse-anslutningsprogrammet:
@@ -35,60 +37,67 @@ Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förb�
 
 > [!Important]
 > Vi har förbättrat anslutningen till Azure SQL Data Warehouse.  Använd Power BI Desktop för bästa möjliga anslutning till din Azure SQL Data Warehouse-datakälla.  När du har skapat din modell och rapport kan du publicera den till Power BI-tjänsten.  Direktanslutningen för Azure SQL Data Warehouse i Power BI-tjänsten är nu inaktuell.
->
 
 Det enklaste sättet att flytta mellan din SQL Data Warehouse och Power BI är med knappen **Öppna i Power BI** i Azure Portal. Med den här knappen kan du sömlöst börja skapa nya instrumentpaneler i Power BI.
 
 1. Kom igång genom att gå till din SQL Data Warehouse-instans i Azure Portal. Observera att SQL Data Warehouse bara finns i Azure Preview Portal just nu.
+
 2. Klicka på knappen **Öppna i Power BI**
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/openinpowerbi.png)
+
+    ![Öppna i Power BI](media/service-azure-sql-data-warehouse-with-direct-connect/openinpowerbi.png)
+
 3. Om vi inte kan logga in dig direkt eller om du inte har ett Power BI-konto, behöver du logga in.
+
 4. Du dirigeras till sidan för SQL Data Warehouse-anslutning med informationen från ditt SQL Data Warehouse ifylld. Ange dina autentiseringsuppgifter och tryck på anslut för att skapa en anslutning.
 
 ## <a name="connecting-through-power-bi"></a>Ansluta via Power BI
+
 SQL Data Warehouse visas också på sidan Power BI Hämta data. 
 
 1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.  
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
+
+    ![Knappen Hämta data](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
+
 2. I **Databaser**, välj **Hämta**.
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/databases.png)
+
+    ![Databaser](media/service-azure-sql-data-warehouse-with-direct-connect/databases.png)
+
 3. Välj **SQL Data Warehouse** \> **Anslut**.
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
+
+    ![Azure SQL DW med direct connect](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
+
 4. Ange nödvändig information för att ansluta. Avsnittet **Hitta parametrar** nedan visar var dessa data kan finnas i Azure Portal.
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
-   
+
+    ![Servernamn](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
+
+    ![Avancerade servernamn](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
+
+    ![Användarnamn](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
+
    > [!NOTE]
    > Användarnamnet ska vara en användare som har definierats i din Azure SQL Data Warehouse-instans.
-   > 
-   > 
+
 5. Granska datauppsättningen mer detaljerat genom att välja den nya panelen eller den nyligen skapade datauppsättningen som anges med en asterisk. Den här datauppsättningen har samma namn som din databas.
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
+
+    ![Datauppsättningen 2](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
+
 6. Du kan utforska alla tabeller och kolumner. Att markera en kolumn kommer att skicka en fråga till källan, vilket dynamiskt skapar ditt visuella objekt. Filter ska också översättas till frågor tillbaka till ditt informationslager. Detta visuella objekt kan sparas i en ny rapport och fästas igen på instrumentpanelen.
-   
-    ![](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
+
+    ![Utforska 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Hitta parametervärden
+
 Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azure Portal. Observera att SQL Data Warehouse bara finns i Azure Preview Portal just nu.
 
-![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
+![Azure Portal](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
 > Om din Power BI-klient finns i samma region som Azure SQL Data Warehouse debiteras du inte för utgående trafik. Du kan se var din Power BI-klient finns genom att följa [de här instruktionerna](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
->
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI?](power-bi-overview.md)  
-[Hämta data för Power BI](service-get-data.md)  
-[Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
+
+* [Vad är Power BI?](power-bi-overview.md)  
+* [Hämta data för Power BI](service-get-data.md)  
+* [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

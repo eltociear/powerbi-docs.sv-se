@@ -1,18 +1,18 @@
 ---
 title: Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI
 description: Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded och utnyttjar nyheterna för inbäddning i appar.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 23907633ec92a172a9cdd392ad62b43d367260b3
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223615"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61270483"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 
@@ -131,7 +131,7 @@ Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data is
 3. Spara PBIX.
 4. Anropsimportera PBIX till SaaS-arbetsytan.
 5. Uppdatera anslutningssträngen genom att anropa – POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Hämta GW-ID och datakällans ID genom att anropa – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. Hämta GW och datasource ID: n genom att anropa – hämta https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. Uppdatera användarens autentiseringsuppgifter genom att anropa – PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Gammal datauppsättning och rapporter
@@ -200,7 +200,7 @@ Rensa i Azure.
 [Migreringsverktyg för Power BI-arbetsytesamling](migrate-tool.md)  
 [Kodfragment för migrering av innehåll från Power BI-arbetsytesamling](migrate-code-snippets.md)  
 [Så här bäddar du in dina Power BI-instrumentpaneler, -rapporter och -paneler](embedding-content.md)  
-[Power BI Premium – vad är det?](../service-premium.md)  
+[Power BI Premium – vad är det?](../service-premium-what-is.md)  
 [JavaScript API Git Repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git Repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

@@ -11,11 +11,11 @@ ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61172171"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
 Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. När du skapar den här anslutningen, hämtas dina data och ger dig automatiskt en instrumentpanel och relaterade rapporter baserade på dina data.

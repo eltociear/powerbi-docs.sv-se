@@ -11,11 +11,11 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56217055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61287847"
 ---
 # <a name="using-python-in-query-editor"></a>Använda Python i frågeredigeraren
 Du kan använda **Python**, ett programmeringsspråk som ofta används av statistiker, dataforskare och dataanalytiker, i **frågeredigeraren** för Power BI Desktop. Med den här integreringen av Python i **frågeredigeraren** kan du utföra datarensning med Python, avancerade datautformning och analyser i datauppsättningar, inklusive färdigställande av saknade data, förutsägelser och klustring för att bara nämna några få. **Python** är ett kraftfullt språk och kan användas i **frågeredigeraren** till att förbereda din datamodell och skapa rapporter.
@@ -91,7 +91,7 @@ Det finns vissa begränsningar för frågor med Python-skript som skapats i **fr
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
-  I dialogrutan **Datakällsinställningar** markerar du datakällorna och väljer sedan **Redigera behörigheter...**. Kontrollera att **Sekretessnivå** är inställd som *Offentlig*.
+  I dialogrutan **Datakällsinställningar** markerar du datakällorna och väljer sedan **Redigera behörigheter...** . Kontrollera att **Sekretessnivå** är inställd som *Offentlig*.
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * Om du vill aktivera schemalagd uppdatering av visuella Python-objekt eller datauppsättningar, måste du aktivera **Schemalagd uppdatering** och installera en **Personlig gateway** på datorn där arbetsboken och Python-installationen finns. Mer information om detta finns i föregående avsnitt i den här artikeln, med länkar till mer information om var och en.

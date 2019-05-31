@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 774a90b946be30d26217a450edff541136bdb863
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 3666335394222d32bc13ce86d8d0a4ed421b5f73
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283861"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187623"
 ---
 # <a name="add-a-filter-to-a-report-in-editing-view"></a>Lägga till ett filter till en rapport i redigeringsvyn
 
@@ -23,10 +23,12 @@ Den här artikeln förklarar hur du lägger till ett sidfilter, ett visualiserin
 
 **Visste du att?** Power BI har en ny filterupplevelse som för närvarande är i förhandsversion. Läs mer om [den nya filterupplevelsen i Power BI-rapporter](power-bi-report-filter-preview.md).
 
+![Ny filterupplevelse](media/power-bi-report-add-filter/power-bi-filter-reading.png)
+
 ## <a name="filters-in-editing-view-or-reading-view"></a>Filter i redigeringsvyn jämfört med läsvyn
 Du kan interagera med rapporter i två olika vyer: Läsvyn och redigeringsvyn. Vilka filtreringsfunktioner som är tillgängliga beror på vilket läge du befinner dig i. Läs allt [om filter och markeringar i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md) för mer information.
 
-Den här artikeln beskriver hur du skapar filter i rapportens **Redigeringsvy**.  Mer information om filter i läsvyn finns i [Interagera med filter i rapportens läsvy](consumer/end-user-reading-view.md).
+Den här artikeln beskriver hur du skapar filter i rapportens **Redigeringsvy**.  Mer information om filter i läsvyn finns i [Interagera med filter i rapportens läsvy](consumer/end-user-report-filter.md).
 
 ## <a name="filter-types-in-the-filters-pane"></a>Filtertyper i Filterpanelen
 Oavsett om du använder Desktop eller Power BI-tjänsten visas fönstret Filter till höger i rapportarbetsytan. Om inte fönstret Filter visas kan du öppna det genom att välja ikonen ">" längst upp till höger.
@@ -40,7 +42,7 @@ Eftersom filter *bevaras* sparas filtren, utsnitten och andra datavisningsändri
 ![knapp för beständiga filter](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## <a name="add-a-filter-to-a-visual"></a>Lägga till ett filter i ett visuellt objekt
-Du kan lägga till ett filter i ett specifikt visuellt objekt på två olika sätt (även kallat ett ”visuellt filter”). 
+Du kan lägga till ett filter på visuell nivå för ett specifikt visuellt objekt på två olika sätt. 
 
 * Filtrera ett fält som redan används av visualiseringen.
 * Identifiera ett fält som inte redan används av visualiseringen och lägga till fältet direkt till bucketen **Visuella nivåfilter**.
@@ -50,28 +52,29 @@ Den här proceduren använder förresten, detaljhandelsanalys om du vill ladda n
 ### <a name="filter-the-fields-in-the-visual"></a>Filtrera fälten i det visuella objektet
 
 
-1. Öppna [rapporten i Redigeringsvyn](service-the-report-editor-take-a-tour.md).
+1. Välj **Redigera rapport** att öppna rapporten i redigeringsvyn.
    
-   ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
+   ![Knappen Redigera rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
+
 2. Öppna panelerna Visualiseringar och Filter samt Fält (om de inte redan är öppna).
    
-   ![](media/power-bi-report-add-filter/power-bi-display-panes.png)
+   ![Visualiseringar, filter och fält fönster](media/power-bi-report-add-filter/power-bi-display-panes.png)
 3. Välj ett visuellt objekt för att aktivera det. Alla fält som används av det visuella objektet finns på panelen **Fält** och anges även på panelen **Filter** under rubriken **Visuella nivåfilter**.
    
-   ![](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
+   ![Välj filter på visuell nivå](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
 4. Nu ska vi lägga till ett filter till ett fält som redan används av visualiseringen. 
    
     Rulla ned till området **Visuella nivåfilter** och välj pilen för att expandera fältet som du vill filtrera. I det här exemplet ska vi filtrera **StoreNumberName**.
      
-    ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
+    ![Pilen expanderar filtret](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
     
     Välj någon av filtreringskontrollerna **Grundläggande**, **Avancerade** eller **Top N**. I det här exemplet ska vi söka i grundläggande filtrering för **cha** och välja de fem butikerna.
      
-    ![](media/power-bi-report-add-filter/power-bi-search-filter.png) 
+    ![Sök i grundläggande filtrering](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
     Det visuella objektet ändras för att återspegla det nya filtret. Om du sparar rapporten med filtret kan rapportens läsare se det filtrerade innehållet från början och interagera med filtret i läsvyn genom att välja eller rensa värden.
      
-    ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    ![Det filtrera visuella objektet](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrera med ett fält som inte finns i det visuella objektet
 
@@ -79,29 +82,32 @@ Nu ska vi lägga till ett helt nytt fält som ett filter på visuell nivå i vå
    
 1. På panelen Fält väljer du det fält som du vill lägga till som ett nytt visuellt nivåfilter och drar det till **området för visuella nivåfilter**.  I det här exemplet ska vi dra **Distriktschef** till bucketen **Visuella nivåfilter**, söka efter **an** och välja dessa tre chefer. 
      
-    ![](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
+    ![Lägga till ett fält i fönstret filter](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
     Observera att **Distriktschef***inte* läggs till i själva visualiseringen. Visualiseringen består fortfarande av **StoreNumberName** som axel och **This Year Sales (Årets försäljning)** som värde.  
      
-    ![](media/power-bi-report-add-filter/power-bi-visualization.png)
+    ![Fältet finns inte i det visuella objektet](media/power-bi-report-add-filter/power-bi-visualization.png)
 
     Själva visualiseringen filtreras nu för att bara visa dessa chefers försäljning i år för de angivna butikerna.
      
-    ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+    ![Det filtrera visuella objektet](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Om du sparar rapporten med filtret kan rapportens läsare interagera med filtret **Distriktschef** i läsvyn genom att välja eller rensa värden.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Lägg till ett filter för en hel sida
 
-Du kan även lägga till ett filter för en hel sida (det vill säga sidvisningsfilter)
-1. Öppna [rapporten i Redigeringsvyn](service-the-report-editor-take-a-tour.md).
+Du kan också lägga till ett sidnivåfilter och filtrerar en hel sida.
+
+1. Välj **Redigera rapport** att öppna rapporten i redigeringsvyn.
+   
+   ![Knappen Redigera rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Öppna panelerna Visualiseringar och Filter samt Fält (om de inte redan är öppna).
 3. På panelen Fält väljer du det fält som du vill lägga till som ett nytt sidnivåfilter och drar det till **området för sidnivåfilter**.  
 4. Välj de värden som du vill filtrera och ange **Grundläggande** eller **Avancerade** filtreringskontroller.
    
-   All visualisering på sidan som påverkas av det här filtret ritas om för att avspegla ändringen. 
+   Alla visualiseringar på sidan är ritas om för att avspegla ändringen.
    
-   ![](media/power-bi-report-add-filter/filterpage.gif)
+   ![Lägg till ett filter och välj värden](media/power-bi-report-add-filter/filterpage.gif)
 
     Om du sparar rapporten med filtret kan rapportens läsare interagera med filtret i läsvyn genom att välja eller rensa värden.
 
@@ -109,17 +115,21 @@ Du kan även lägga till ett filter för en hel sida (det vill säga sidvisnings
 Med visning av detaljerad information i Power BI-tjänsten och Power BI Desktop kan du skapa en *målrapportsida* som fokuserar på en specifik enhet – som en leverantör, kund eller tillverkare. Användarna kan nu från övriga rapportsidor högerklicka på en datapunkt för denna entitet och gå in i detalj på fokussidan.
 
 ### <a name="create-a-drillthrough-filter"></a>Skapa ett filter för detaljerad information
-Om du vill hänga på öppnar du Exempel på kundlönsamhet i redigeringsvyn. Anta att du vill skapa en sida som fokuserar på affärsområden för chefer.   
+Om du vill följa med, ladda ned den [Kundlönsamhet](sample-customer-profitability.md). Anta att du vill skapa en sida som fokuserar på affärsområden för chefer.
 
-1. Lägg till en ny sida i rapporten och döp den till **Team Executive (Teamchef)**. Den här sidan blir *målet* för den detaljerade informationen.
+1. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+   
+   ![Knappen Redigera rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
+
+1. Lägg till en ny sida i rapporten och döp den till **Team Executive (Teamchef)** . Den här sidan blir *målet* för den detaljerade informationen.
 2. Lägg till visualiseringar som spårar nyckelvärden för teamchefernas affärsområden.    
 3. Lägg även till **Chef (Executive) > Executive Name (Chefens namn)** till området för filtren för detaljerad information.    
    
-    ![](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
+    ![Lägg till ett värde till Drillthrough-filter](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
     Observera att Power BI lägger till en bakåtpil på rapportsidan.  Om du väljer bakåtpilen returneras du till den *ursprungliga* rapportsidan, den sida där du befann dig när du valde alternativet för visning av detaljerad information. Bakåtpilen fungerar bara i läsvyn.
    
-     ![](media/power-bi-report-add-filter/power-bi-back-arrow.png)
+     ![Bakåtpilen](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
 ### <a name="use-the-drillthrough-filter"></a>Använda filter för detaljerad information
 Nu ska vi se hur filtret för detaljerad information fungerar.
@@ -127,14 +137,18 @@ Nu ska vi se hur filtret för detaljerad information fungerar.
 1. Starta på rapportsidan **Teamresultatkort**.    
 2. Låt oss anta att du är Andrew Ma och du vill se rapportsidan för teamchefer filtrerad bara för dina data.  Högerklicka på valfri grön datapunkt i det övre vänstra ytdiagrammet för att öppna menyalternativet Visning av detaljerad information.
    
-    ![](media/power-bi-report-add-filter/power-bi-drillthrough.png)
-3. Välj **Visning av detaljerad information > Team Executive (Teamchef)** för att komma till rapportsidan med namnet **Team Executive (Teamchef)**. Sidan filtreras för att visa information om datapunkten som du högerklickade på, i det här fallet Andrew Ma. Endast fältet som finns i filtren för detaljerad information skickas vidare till rapportsidan för detaljerad information.  
+    ![Starta drillthrough-åtgärd](media/power-bi-report-add-filter/power-bi-drillthrough.png)
+3. Välj **Visning av detaljerad information > Team Executive (Teamchef)** för att komma till rapportsidan med namnet **Team Executive (Teamchef)** . Sidan filtreras för att visa information om datapunkten som du högerklickade på, i det här fallet Andrew Ma. Endast fältet som finns i filtren för detaljerad information skickas vidare till rapportsidan för detaljerad information.  
    
-    ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
+    ![Välj drillthrough-åtgärd](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
-## <a name="add-a-filter-to-an-entire-report-aka-report-filter"></a>Lägga till ett filter för en hel rapport (dvs. rapportfilter)
-1. Öppna [rapporten i Redigeringsvyn](service-the-report-editor-take-a-tour.md).
-2. Öppna panelerna Visualiseringar och Filter samt Fält (om de inte redan är öppna).
+## <a name="add-a-report-level-filter-to-filter-an-entire-report"></a>Lägga till en rapport-nivå och filtrerar hela rapporten
+
+1. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+   
+   ![Knappen Redigera rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
+
+2. Öppna fönstret visualiseringar och filter och fält-fönstret, om de inte redan är öppen.
 3. På panelen Fält väljer du det fält som du vill lägga till som ett nytt rapportnivåfilter och drar det till **området för rapportnivåfilter**.  
 4. Välj de värden du vill filtrera.
 

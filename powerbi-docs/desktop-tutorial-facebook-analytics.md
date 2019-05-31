@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: f945c46d96bea4e0326c99f7fcb881f495ba560f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513692"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Självstudie: Facebook-analyser med Power BI Desktop
@@ -23,7 +23,7 @@ I den här kursen får du lära dig hur du importerar data från Facebook och an
 
 ## <a name="connect-to-a-facebook-page"></a>Ansluta till en Facebook-sida
 
-Den här kursen använder data från [Microsoft Power BI:s Facebook-sida](https://www.facebook.com/microsoftbi) (*https://www.facebook.com/microsoftbi*). Du behöver inte några särskilda autentiseringsuppgifter för att ansluta och importera data från den här sidan utom ett personligt Facebook-konto.
+Den här kursen använder data från [Microsoft Power BI:s Facebook-sida](https://www.facebook.com/microsoftbi) ( *https://www.facebook.com/microsoftbi* ). Du behöver inte några särskilda autentiseringsuppgifter för att ansluta och importera data från den här sidan utom ett personligt Facebook-konto.
 
 1. Öppna Power BI Desktop och välj **Hämta data** i dialogrutan **Komma igång** eller i menyfliksområdet **Start**, välj **Hämta data** och välj sedan **Mer ...** .
    
@@ -147,7 +147,7 @@ Nu när du har importerat data från Facebook-sidan kan du snabbt och få enkelt
    
    ![Sortera efter antal kommentarer](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
-5. Observera att de flesta kommentarer har associerats med **tomma** meddelanden (dessa poster kan ha varit artiklar, länkar, videoklipp eller annat textinnehåll). Om du vill filtrera bort tomma rader, välj **meddelande (alla)** under **Filter** längst ned i visualiseringsfönstret, välj **Markera alla**, och välj sedan **Tom** för att avmarkera den. Posten Filter ändras till **meddelandet är inte (tomt)**, och den tomma raden försvinner från diagramvisualiseringen. 
+5. Observera att de flesta kommentarer har associerats med **tomma** meddelanden (dessa poster kan ha varit artiklar, länkar, videoklipp eller annat textinnehåll). Om du vill filtrera bort tomma rader, välj **meddelande (alla)** under **Filter** längst ned i visualiseringsfönstret, välj **Markera alla**, och välj sedan **Tom** för att avmarkera den. Posten Filter ändras till **meddelandet är inte (tomt)** , och den tomma raden försvinner från diagramvisualiseringen. 
    
    ![Filtrera bort tomma](media/desktop-tutorial-facebook-analytics/barchart3.png)
    
@@ -220,7 +220,7 @@ Du bestämmer dig för att ge diagrammet en snygg och mer beskrivande rubrik.
 1. När diagrammet är markerat, väljer du ikonen **Format** och väljer den nedrullningsbara pilen för att expandera **Rubrik**.
 2. Ändra **Rubriktexten** till **Kommentarer per post**. 
 3. Välj den nedrullningsbara pilen bredvid **Teckenfärg**, och välj en grön färg som matchar de gröna staplarna i visualiseringen.
-4. Öka **Textstorlek** till **10**, och ändra **Teckensnittsfamilj** till **Segoe (Bold)**.
+4. Öka **Textstorlek** till **10**, och ändra **Teckensnittsfamilj** till **Segoe (Bold)** .
 
 ![Formatera diagramrubrik](media/desktop-tutorial-facebook-analytics/formatting1.png)
 

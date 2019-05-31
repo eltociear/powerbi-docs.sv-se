@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: mshenhav
 ms.openlocfilehash: 443615a64bee1f4723450c6c8cc3c49feb81989c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275144"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61374061"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Appen Power BI för Mixed Reality (förhandsversion)
 Visa dina instrumentpaneler och rapporter i appen Power BI for Mixed Reality (förhandsversion) i en virtuell värld, eller placera dem på specifika platser i din miljö. 

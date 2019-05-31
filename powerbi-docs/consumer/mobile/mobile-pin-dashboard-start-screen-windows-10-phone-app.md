@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: b0a59e6a3d930bc8a0fa69507cae8e958c6175da
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288591"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61063180"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fäst instrumentpanelen på din Windows 10-startskärm från den mobila Power BI-appen
 Du kan fästa Power BI-instrumentpaneler på Windows startskärm från den mobila Power BI-appen för Windows 10. De blir *levande paneler*. När du trycker på panelen på startskärmen öppnas instrumentpanelen i den mobila Power BI-appen för Windows 10.

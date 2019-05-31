@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d44e24e1f81ab03e85438ef8e5505c308b01e1d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264043"
+---
 När du tittar på Power BI-instrumentpaneler och rapporter i tjänsten, kan det ibland vara bra att fokusera på ett enskilda diagram eller visualiseringar. Du kan göra det på två olika sätt.
 
 När du är på en instrumentpanel håller du muspekaren över en ruta så att ikonalternativen visas i det övre högra hörnet. När du väljer ellipsen (tre punkter) visas en uppsättning ikoner som representerar åtgärder du kan vidta på panelen.

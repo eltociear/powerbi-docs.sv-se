@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9a0e87eca537fc8c22dffaad6a725dc949b2b121
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 02beb69148c347847f346c170651ef31ddd1e786
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275581"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60988020"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det innebär att du kan skapa den perfekta datamodellen i Power BI Desktop, publicera den till Power BI-tjänsten och sedan kan du och andra användare skapa flera olika rapporter (i separata .pbix-filer) från samma gemensamma datamodell. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
@@ -77,9 +77,8 @@ När det är klart visar **Power BI Desktop** detta och ger dig några länkar f
 Nu ska vi se hur andra gruppmedlemmar som har åtkomst till arbetsytan där rapporten (och datauppsättningen) är publicerad kan ansluta till datauppsättningen och skapa egna rapporter.
 
 ### <a name="establish-a-power-bi-service-live-connection-to-the-published-dataset"></a>Gå till den publicerade datauppsättningen med en live-anslutning till Power BI-tjänsten
-För att upprätta en anslutning till den publicerade rapporten och skapa en egen rapport som baseras på den publicerade datauppsättningen, väljer du **Hämta data** från menyfliksområdet **Start** i **Power BI Desktop** och sedan **Power BI-tjänst**. Du kan också välja det från **Hämta data > Onlinetjänster > Power BI-tjänst**.
+För att upprätta en anslutning till den publicerade rapporten och skapa en egen rapport som baseras på den publicerade datauppsättningen, Välj **hämta Data** från den **Start** menyfliksområdet i **Power BI Desktop** , Välj **Power BI** från den vänstra rutan och välj sedan **Power BI-datauppsättningar**.
 
-![](media/desktop-report-lifecycle-datasets/report-lifecycle_08.png)
 
 Om du inte har loggat in på Power BI, uppmanas du att göra detta. När du har loggat in ser du ett fönster med de arbetsytor som du är medlem i. Du kan välja den arbetsyta som innehåller datauppsättningen som du vill upprätta en **Live-anslutning till Power BI-tjänst** till.
 

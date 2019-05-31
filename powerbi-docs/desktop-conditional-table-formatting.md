@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4b45c6708f2f4c1ec0f8df2a330dcbb683210926
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222268"
 ---
 # <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller 
 Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger baserat på cellvärden, eller baserat på andra värden eller fält. Du kan även använda toningar. Du kan också visa cellvärden med datastaplar. 
@@ -129,6 +129,12 @@ På så vis kan du sedan få resultat som liknar de i följande matris.
 ![Matrisvisualisering med färg baserat på KPI-värde](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
 Du kan skapa många fler varianter genom att bara använda din fantasi och DAX.
+
+Du kan använda någon av de värden som anges i CSS-specifikationen för färg på [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) till bakgrundsfärg för de visuella objekten:
+* 3, 6- eller 8 siffra hex kodar t.ex. #3E4AFF. Kontrollera att du inkluderar symbolen # i början av koden. ”3E4AFF” accepteras inte. 
+* RGB eller RGBA värden t.ex. RGBA (234, 234, 234, 0,5)
+* HSL eller HSLA t.ex. värden HSLA (123, 75%, 75%, 0,5)
+* Färg namn t.ex. grönt, SkyBlue, PeachPuff 
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information finns i följande artikel:  

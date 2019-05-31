@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f66cc9f911c63703accb348e49133dbf3587d58a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265149"
+---
 **Power BI Desktop** kan ansluta till en rad olika datakällor, däribland lokala databaser, Excel-arbetsböcker och molntjänster. För närvarande har över 59 olika molntjänster, t.ex. GitHub och Marketo, specifika anslutningsappar, och du kan ansluta till generiska datakällor via XML, CSV, text och ODBC. Power BI kan till och med även skrapa tabelldata direkt från en webbplats-URL! Men låt oss börja från början med att öppna Power BI Desktop och ansluta till data.
 
 När du startar **Power BI Desktop** och går förbi startskärmen kan du hämta data från menyfliksområdet på fliken **Start**.

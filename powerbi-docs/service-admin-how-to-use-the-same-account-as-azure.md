@@ -11,11 +11,11 @@ ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: d9b171052bd095afc918a312ecbadba89a2471cd
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283585"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61187187"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Använda samma kontoinloggning för Power BI och Azure
 Om du är en användare av både Power BI och Azure, vill du kanske använda samma inloggning för båda tjänsterna så att du inte behöver ange ditt lösenord två gånger.

@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 57a285b075b17b2229ec4267a476cdd4b86ea7ad
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513597"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
@@ -32,7 +32,7 @@ Under självstudien beskrivs följande steg i detalj, vilket hjälper dig att f�
 * Skapa en ny instrumentpanel som baseras på rapporten och slutligen,
 * Dela instrumentpanelen med dina medarbetare
 
-För att följa stegen i den här självstudien behöver du databasen **AdventureworksDW2012**, som du kan hämta från **[lagringsplatsen](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)**.
+För att följa stegen i den här självstudien behöver du databasen **AdventureworksDW2012**, som du kan hämta från **[lagringsplatsen](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)** .
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Uppgift 1: Skapa användarens säkerhetstabell och definiera datarelationen
 Det finns många publicerade artiklar som beskriver hur du definierar dynamisk säkerhet på radnivå med **SQL Server Analysis Services (SSAS) tabell**modell. I vårt exempel följer vi artikeln [Implement Dynamic Security by Using Row Filters](https://msdn.microsoft.com/library/hh479759.aspx) (Implementera dynamisk säkerhet med hjälp av radfilter). Följande steg vägleder dig genom den första aktiviteten i självstudien:
@@ -56,7 +56,7 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
 5. Observera att bilden ovan visar information som till exempel vilken användare som är ansvarig de olika försäljningsregionerna. Den informationen visas på grund av relationen som vi skapade i **steg 2**. Observera också att användaren **Jon Doe ingår i Australiens försäljningsregion**. Vi kommer tillbaka till Jon Doe i kommande steg och uppgifter.
 
 ## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Uppgift 2: Skapa tabellmodellen med fakta- och dimensionstabeller
-1. När ditt relationsinformationslager finns på plats är det dags att definiera tabellmodellen. Modellen kan skapas med **SQL Server Data Tools (SSDT)**. Om du vill veta mer om hur du definierar en tabellmodell kan du läsa informationen i [Create a New Tabular Model Project](https://msdn.microsoft.com/library/hh231689.aspx) (Skapa ett nytt tabellmodellsprojekt).
+1. När ditt relationsinformationslager finns på plats är det dags att definiera tabellmodellen. Modellen kan skapas med **SQL Server Data Tools (SSDT)** . Om du vill veta mer om hur du definierar en tabellmodell kan du läsa informationen i [Create a New Tabular Model Project](https://msdn.microsoft.com/library/hh231689.aspx) (Skapa ett nytt tabellmodellsprojekt).
 2. Importera alla nödvändiga tabeller till modellen enligt vad som visas nedan.
    
     ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/ssdt_model.png)
@@ -70,7 +70,7 @@ Det finns många publicerade artiklar som beskriver hur du definierar dynamisk s
 6. I det här steget ska vi använda funktionen **LOOKUPVALUE** till att returnera värden för en kolumn där Windows-användarnamnet är samma som användarnamnet som returneras av funktionen **USERNAME**. Frågorna kan sedan begränsas när värdena som returneras av **LOOKUPVALUE** matchar värden i samma eller en relaterad tabell. I kolumnen **DAX-filter** skriver du följande formel:
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
-    I den här formeln returnerar funktionen **LOOKUPVALUE** alla värden för kolumnen **DimUserSecurity[SalesTerritoryID]** när **DimUserSecurity[UserName]** är samma som det aktuella inloggade Windows-användarnamnet och **DimUserSecurity[SalesTerritoryID]** är samma som **DimSalesTerritory[SalesTerritoryKey]**.
+    I den här formeln returnerar funktionen **LOOKUPVALUE** alla värden för kolumnen **DimUserSecurity[SalesTerritoryID]** när **DimUserSecurity[UserName]** är samma som det aktuella inloggade Windows-användarnamnet och **DimUserSecurity[SalesTerritoryID]** är samma som **DimSalesTerritory[SalesTerritoryKey]** .
    
     > [!IMPORTANT]
     > Tänk på att DAX-funktionen [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) inte stöds när du använder säkerhet på radnivå.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6424f63d992eaa7c8a4a8a5f76765b6aeb6104d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264068"
+---
 När du arbetar med en instrumentpanel, en rapport eller en datauppsättning i Power BI-tjänsten kan Power BI leta efter snabba insikter i dina data. I Power BI går du till avsnittet **Datauppsättningar** i det vänstra fönstret och väljer *ellipsen* (tre punkter) bredvid den datauppsättning som du är intresserad av. En meny med alternativ visas och längst till höger ser du alternativet **Snabba insikter**.
 
 ![](media/4-1a-quick-insights/4-1a_1.png)

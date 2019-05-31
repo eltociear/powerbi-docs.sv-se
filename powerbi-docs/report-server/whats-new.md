@@ -1,32 +1,102 @@
 ---
 title: Nyheter i Power BI-rapportserver
 description: Läs mer om nyheterna i Power BI-rapportserver. Detta omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/22/2019
-ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662467"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187312"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheter i Power BI-rapportserver
 
-Läs mer om nyheterna i Power BI-rapportserver. Den här artikeln omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
-
-Om du vill ladda ned den senaste versionen av Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportservern går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
+Läs mer om nyheter i Power BI-rapportservern och Power BI Desktop optimerad för Power BI-rapportservern. Den här artikeln omfattar de viktiga funktionsområdena och uppdateras när nya objekt släpps.
 
 Relaterad information om nyheter i Power BI finns i:
 
 * [Nyheter i Power BI-tjänsten](../service-whats-new.md)
 * [Nyheter i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheter i mobilapparna för Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Maj 2019: Power BI Desktop för Power BI-rapportserver
+
+Se den [Power BI Report Server maj 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogginlägget för mer information om de nya funktionerna.
+
+Här följer några av höjdpunkterna för versionen:
+
+### <a name="performance-analyzer"></a>Analysera prestanda 
+
+Om rapporten går långsammare än förväntat, försöker du analysera prestanda i Power BI Desktop. När du startar den skapar en loggfil med information om varje åtgärd som du gör i rapporten. Läs mer om den [Performance Analyzer](../desktop-performance-analyzer.md).
+
+### <a name="new-modeling-view"></a>Ny modellering vy
+
+I den nya vyn modellering i Power BI Desktop kan du visa och arbeta med komplexa datauppsättningar som innehåller många tabeller. Höjdpunkter omfattar flera diagram layouter och massredigering av kolumner, mått och tabeller. Läs mer om [modellering visa](../desktop-modeling-view.md).
+
+### <a name="accessible-visual-interaction"></a>Tillgängliga visuell interaktion
+
+Du kan nu åtkomst datapunkter i många av de inbyggda visuella objekt med tangentbordsnavigering. Läs mer om [hjälpmedel i Power BI-rapporter](../desktop-accessibility.md).
+
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Villkorsstyrd formatering rubriker och åtgärder för webb-URL
+
+Power BI-rapporter är interaktiva. Det klokt att rubriker i en rapport skulle vara dynamisk, så att det aktuella tillståndet för rapporten. Du kan använda samma uttryck-bunden formatering för att göra det dynamiska URL: er för dina knappar, former och bilder. Läs mer om [uttrycksbaserade rubriker](../desktop-conditional-format-visual-titles.md).
+
+### <a name="cross-highlight-by-axis-labels"></a>Korsmarkera av axeletiketter
+
+Välj kategori axeletiketter i ett visuellt objekt att korsmarkera andra element på en sida, precis som du skulle välja datapunkter i ett visuellt objekt. Läs mer om [korsmarkering](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### <a name="all-the-new-features"></a>Alla nya funktioner
+
+Här är listan över alla nya funktioner:
+
+### <a name="reporting"></a>Rapportering
+
+- Korsmarkera på en enda punkt i linjediagram 
+- Automatiskt radbyte på rubriker 
+- Uppdatera standard visuell interaktion till korsfiltrera ¬
+- Avrundade hörn för visuella kantlinjer 
+- Enda väljer utsnitt  
+- Termisk karta stöd för Bing maps  
+- Korsmarkera av axeletiketter  
+- Standardknappbeskrivningen formatering  
+- Statisk Webb-URL: en som har stöd för knappar, former och bilder  
+- Sidan alternativ för textjustering   
+- Val av förbättringar i fältfönstret  
+- Tillgängliga visuell interaktion  
+- Villkorsstyrd formatering för visuella rubriker  
+- Villkorsstyrd formatering för åtgärder för webb-URL: en för knappar, former och bilder
+- Prestanda analyzer fönstret
+- Tabeller och matriser tangentbordsnavigering
+- Rad data etikettkontrollen position
+- KPI visual indikator storlek textkontroll
+
+### <a name="analytics"></a>Analys
+
+- Visa datum som en hierarki som är nu allmänt tillgänglig  
+
+### <a name="modeling"></a>Modellering
+
+- Ny modellering vy som är nu allmänt tillgänglig
+- Nya DAX-funktioner
+- Uppdatera till ALLSELECTED DAX-funktionen
+- Inaktivera automatisk datumtabeller för nya rapporter
+
+## <a name="may-2019-power-bi-report-server"></a>Maj 2019: Power BI-rapportserver
+
+### <a name="support-for-trusted-visuals"></a>Stöd för betrodda visuella objekt
+
+Vi har lagt till stöd för betrodda visuella Power BI Report Server. Vi stöder för närvarande Mapbox och PowerOn visuella objekt. ESRI, Visio och PowerApps stöds inte för den här versionen.)
+
+### <a name="improved-security-features"></a>Förbättrade säkerhetsfunktioner
+
+**RestrictedResourceMimeTypeForUpload**, där administratörer kan använda för att ange en kommaavgränsad lista över utestängda mime-typer, till exempel text/html.
 
 ## <a name="january-2019"></a>Januari 2019
 

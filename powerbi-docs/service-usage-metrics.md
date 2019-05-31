@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 12/19/2018
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 55415126ae4c87381f788729f6f4b23807ac6572
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174946"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61401151"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Övervaka användningsstatistik för Power BI-instrumentpaneler och -rapporter
 
@@ -105,7 +105,7 @@ Den underliggande datauppsättningen innehåller dessutom användningsinformatio
 
 ### <a name="what-is-created-when-using-save-as"></a>Vad skapas när du använder ”Spara som”?
 
-När Power BI skapar den fullständiga rapporten, skapas dessutom en ny datauppsättning **som består av alla instrumentpaneler eller alla rapporter som ingår i den aktuella arbetsytan** och som har använts under de senaste 90 dagarna. Anta exempelvis att du har en arbetsyta med namnet ”Försäljning” med tre instrumentpaneler och två rapporter och du skapar en användningsstatistikrapport på instrumentpanelen ”Nordöst”. Därefter använder du **Spara som** för att anpassa och konvertera den till en fullständig rapport. Datauppsättningen för den nya rapporten innehåller användningsstatistik, *inte bara för den instrumentpanel som har namnet ”Nordöst”*, utan för alla tre instrumentpanelerna i arbetsytan ”Försäljning”. Som standard visar rapporten data för instrumentpanelen ”Nordöst” och du måste [ta bort ett filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (enkel klickning) för att visa data för alla tre instrumentpaneler.
+När Power BI skapar den fullständiga rapporten, skapas dessutom en ny datauppsättning **som består av alla instrumentpaneler eller alla rapporter som ingår i den aktuella arbetsytan** och som har använts under de senaste 90 dagarna. Anta exempelvis att du har en arbetsyta med namnet ”Försäljning” med tre instrumentpaneler och två rapporter och du skapar en användningsstatistikrapport på instrumentpanelen ”Nordöst”. Därefter använder du **Spara som** för att anpassa och konvertera den till en fullständig rapport. Datauppsättningen för den nya rapporten innehåller användningsstatistik, *inte bara för den instrumentpanel som har namnet ”Nordöst”* , utan för alla tre instrumentpanelerna i arbetsytan ”Försäljning”. Som standard visar rapporten data för instrumentpanelen ”Nordöst” och du måste [ta bort ett filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (enkel klickning) för att visa data för alla tre instrumentpaneler.
 
 ### <a name="create-a-copy-of-the-usage-report-using-save-as"></a>Skapa en kopia av användningsrapporten med ”Spara som”
 

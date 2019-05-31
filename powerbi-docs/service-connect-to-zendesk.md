@@ -1,81 +1,87 @@
 ---
 title: Anslut till Zendesk med Power BI
 description: Zendesk för Power BI
-author: SarinaJoan
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: maggiesMSFT
+ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 04/26/2019
+ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 72b934357ec4208fa07266143b08af861659e465
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.openlocfilehash: 1edc4179b000191dfeff87387417009bc28e0ee5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008337"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578875"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Anslut till Zendesk med Power BI
-Zendesk-innehållspaketet erbjuder en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som ger inblick om dina biljettvolymer och prestanda för agenter. Du kan använda instrumentpanelen de rapporter som tillhandahålls, eller anpassa dem för att fokusera på den information som du är mest intresserad av.  Data uppdateras automatiskt en gång per dag. 
+
+Den här artikeln beskriver hur du hämtar data från ditt Zendesk-konto med en mall för Power BI-appen. Zendesk-appen erbjuder en Power BI-instrumentpanel och en uppsättning Power BI-rapporter som ger insikter om dina biljettvolymer och agentprestanda. Data uppdateras automatiskt en gång per dag. 
+
+När du har installerat appen mall kan anpassa du instrumentpanelen och rapporterna att markera den information som är mest intresserad av. Du kan sedan distribuera den som en app till kollegor i din organisation.
 
 Anslut till [Zendesk-innehållspaketet](https://app.powerbi.com/getdata/services/zendesk) eller läs mer om [Zendesk-integrering](https://powerbi.microsoft.com/integrations/zendesk) med Power BI.
 
+När du har installerat appen mall, kan du ändra instrumentpanelen och rapporterna. Du kan sedan distribuera den som en app till kollegor i din organisation.
+
 >[!NOTE]
->Ett Zendesk-administratörskonto krävs för att ansluta. Mer information om [kraven](#Requirements) finns nedan.
+>Du behöver ett Zendesk-administratör-konto för att ansluta. Mer information om [kraven](#system-requirements) finns nedan.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
+
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+
+3. Välj **Zendesk** \> **Hämta nu**.
+4. I **installera den här Power BI-appen?** Välj **installera**.
+4. I den **appar** väljer den **Zendesk** panelen.
+
+    ![Power BI Zendesk appanelen](media/service-connect-to-zendesk/power-bi-zendesk-tile.png)
+
+6. I **Kom igång med din nya app**väljer **Anslut data**.
+
+    ![Kom igång med din nya app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+
+4. Ange den URL som är kopplad till ditt konto. URL: en har formatet **https://company.zendesk.com** . Se information om att [hitta parametrarna](#finding-parameters) nedan.
    
-   ![](media/service-connect-to-zendesk/pbi_getdata.png)
-2. I rutan **tjänster** väljer du **Hämta**.
-   
-   ![](media/service-connect-to-zendesk/pbi_getservices.png) 
-3. Välj **Zendesk** \> **hämta.**
-   
-   ![](media/service-connect-to-zendesk/zendesk.png)
-4. Ange den URL som är kopplad till ditt konto. Den är i formatet **https://company.zendesk.com**. Information om att [hitta dessa parametrar](#FindingParams) finns nedan.
-   
-   ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
-5. När du uppmanas till det anger du dina Zendesk-autentiseringsuppgifter.  Välj **oAuth 2** som autentiseringsmetod och klicka på **Logga in**. Följ Zendesk-autentiseringsflödet. (Om du redan är inloggad på Zendesk i webbläsaren, behöver du kanske inte ange några autentiseringsuppgifter.)
+   ![Anslut till Zendesk](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
+
+5. När du uppmanas till det anger du dina Zendesk-autentiseringsuppgifter.  Välj **oAuth 2** som autentiseringsmetod och klicka på **Logga in**. Följ Zendesk-autentiseringsflödet. (Om du är redan inloggad på Zendesk i webbläsaren, du kan inte ange några autentiseringsuppgifter.)
    
    > [!NOTE]
-   > Det här innehållspaketet kräver att du ansluter med ett Zendesk-administratörskonto. 
-   > 
+   > Det här Innehållspaketet kräver att du ansluter med ett Zendesk-administratör-konto. 
    > 
    
-   ![](media/service-connect-to-zendesk/pbi_zendesksignin.png)
+   ![Logga in med oAuth2](media/service-connect-to-zendesk/pbi_zendesksignin.png)
 6. Klicka på **Tillåt** för att låta Power BI komma åt dina Zendesk-data.
    
-   ![](media/service-connect-to-zendesk/zendesk2.jpg)
-7. Klicka på **Anslut** för att starta importen. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datauppsättning i det vänstra navigeringsfönstret. Nya objekt markeras med en gul asterisk \*.
+   ![Klicka på Tillåt](media/service-connect-to-zendesk/zendesk2.jpg)
+7. Klicka på **Anslut** för att starta importen. 
+8. När Power BI har importerat data visas i listan med innehåll för din Zendesk-app: en ny instrumentpanel, rapport och datauppsättning.
+9. Välj instrumentpanelen för att börja utforska.
+
+    ![Zendesk dashboard](media/service-connect-to-zendesk/power-bi-zendesk-dashboard.png)
    
-   ![](media/service-connect-to-zendesk/pbi_zendeskdash.png)
+## <a name="modify-and-distribute-your-app"></a>Ändra och distribuera din app
 
-**Och sedan?**
+Du har installerat appen Zendesk-mall. Det innebär att du har också skapat Zendesk app-arbetsytan. I arbetsytan kan du ändra rapporten och instrumentpanelen och sedan distribuera den som en *app* till kollegor i din organisation. 
 
-* Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
-* [Ändra panelerna](service-dashboard-edit-tile.md) på instrumentpanelen.
-* [Välj en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten.
-* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
+1. Om du vill visa hela innehållet i den nya Zendesk-arbetsytan i det vänstra navigeringsfältet, väljer **arbetsytor** > **Zendesk**. 
 
-## <a name="whats-included"></a>Det här ingår
-Power BI-innehållspaketet inkluderar data om följande:  
+    ![Zendesk-arbetsyta i det vänstra navigeringsfönstret](media/service-connect-to-zendesk/power-bi-zendesk-workspace-left-nav.png)
 
-* Användare (slutanvändare och agenter)  
-* Organisationer  
-* Grupper  
-* Biljetter  
+    Den här vyn är listan med innehåll för arbetsytan. I det övre högra hörnet ser du **uppdatera app**. När du är redo att distribuera appen till dina kollegor, är det där du börjar. 
 
-Det finns också en uppsättning åtgärder som har beräknats, till exempel genomsnittlig väntetid och lösta biljetter under de senaste 7 dagarna. En fullständig lista finns i innehållspaketet.
+    ![Zendesk content list](media/service-connect-to-zendesk/power-bi-zendesk-content-list.png)
 
-<a name="Requirements"></a>
+2. Välj **rapporter** och **datauppsättningar** så att andra element på arbetsytan.
+
+    Läs mer om [distribuera appar](service-create-distribute-apps.md) till dina kollegor.
 
 ## <a name="system-requirements"></a>Systemkrav
-Ett Zendesk-administratörskonto krävs för att komma åt Zendesk-innehållspaketet. Om du är en agent eller en slutanvändare och är intresserad av att visa dina Zendesk-data, lägg till ett förslag och granska Zendesk-anslutningsprogrammet i [Power BI Desktop](desktop-connect-to-data.md).
-
-<a name="FindingParams"></a>
+Ett Zendesk-administratörskonto krävs för att komma åt Zendesk-innehållspaketet. Om du är en agent eller en slutanvändare och är intresserad av att visa dina Zendesk-data, Lägg till ett förslag och granska Zendesk-anslutningsprogrammet i den [Power BI Desktop](desktop-connect-to-data.md).
 
 ## <a name="finding-parameters"></a>Hitta parametrar
 Din Zendesk URL kommer att vara samma som den URL som du använder för att logga in på ditt Zendesk-konto. Om du inte är säker på din Zendesk-URL, kan du använda Zendesk [inloggningshjälp](https://www.zendesk.com/login/).
@@ -84,6 +90,9 @@ Din Zendesk URL kommer att vara samma som den URL som du använder för att logg
 Om du har problem med att ansluta, kontrollera din Zendesk-URL och bekräfta att du använder ett Zendesk-administratörskonto.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Vad är Power BI?](power-bi-overview.md)
-* [Hämta data](service-get-data.md)
+
+* [Skapa nya arbetsytor i Power BI](service-create-the-new-workspaces.md)
+* [Installera och använda appar i Power BI](consumer/end-user-apps.md)
+* [Ansluta till Power BI-appar för externa tjänster](service-connect-to-services.md)
+* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

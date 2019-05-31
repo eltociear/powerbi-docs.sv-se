@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b7f2dbd4fa58e86598c0258c432d31cf2f775ecf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260605"
+---
 Låt oss göra en snabb genomgång av vad du lärt dig i det första avsnittet.
 
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina interaktiva insikter. Du kan använda data från samma grundläggande källor, till exempel en Excel-arbetsbok eller hämta data i från flera databaser och molnkällor för att skapa komplexa datauppsättningar och rapporter. Power BI kan vara precis så enkelt som du vill, eller så företagsanpassat som ditt globala företag behöver.

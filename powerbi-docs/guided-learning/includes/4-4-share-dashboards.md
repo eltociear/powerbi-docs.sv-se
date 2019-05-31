@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6755233733c4500865615c28850793aae7972d9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264063"
+---
 Vi har redan fått veta hur Power BI kan hjälpa dig att söka efter data, samla in den i en datamodell, samt skapa rapporter och visualiseringar med hjälp av dessa data. Vi har också fått se hur du kan publicera dessa rapporter till Power BI-tjänsten och skapa instrumentpaneler som hjälper dig att övervaka din information över tid. Alla dessa funktioner blir ännu mer kraftfulla när du delar dina insikter med andra i din organisation. Det är som tur är enkelt att dela instrumentpaneler.
 
 Om du vill dela en instrumentpanel öppnar du den i Power BI-tjänsten och väljer länken **Dela** i det övre högra hörnet.

@@ -10,11 +10,11 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.openlocfilehash: cbda8cca80c32056f06788e53540d7f2d6ed972d
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695022"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61421794"
 ---
 # <a name="troubleshoot-power-bi-custom-visuals"></a>Felsöka anpassade visuella objekt i Power BI
 
@@ -39,7 +39,7 @@ Kontrollera att du har aktiverat det på inställningarna för Power BI om du in
 
 Kör den visuella servern `pbiviz start` på kommandoraden i terminalen från roten av ditt visuella projekt. Om servern inte körs är det troligt att dina SSL-certifikat inte har installerats korrekt.
 
-Ta gärna kontakt med supporten för anpassade visuella objekt: *pbicvsupport@microsoft.com* om du har frågor, kommentarer eller problem.
+Ta gärna kontakt med supporten för anpassade visuella objekt: *pbicvsupport@microsoft.com*  om du har frågor, kommentarer eller problem.
 
 ## <a name="next-steps"></a>Nästa steg
 

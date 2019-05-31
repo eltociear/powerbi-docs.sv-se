@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: eeb063707e9a81b3d3551dd4e79e9da01bfe7178
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257135"
+---
 I kursen lär vi dig att dela en Power BI-rapport på en webbsida eller via e-post i några enkla steg. Den här funktionen i Power BI kallas ofta **Publicera på webben** och är enkel att använda och hantera.
 
 I Power BI väljer du den rapport som du vill dela, så att den visas på arbetsytan. I menyn väljer du sedan **Arkiv > Publicera på webben**.

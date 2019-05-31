@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454506"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
@@ -148,7 +148,7 @@ Vi behöver göra några fler ändringar för att få frågan dit vi vill:
 
 * *Ändra tabellnamnet* – **Tabell 0** är inte en användbar beskrivning, men det är lätt att ändra det
 
-Var och en av de här stegen visas i **[Forma och kombinera Data i Power BI Desktop](desktop-shape-and-combine-data.md)**. Passa på att kolla in den sidan eller fortsätt i det här dokumentet för att se vad du ska göra härnäst. Nästa avsnitt fortsätter efter att ovanstående ändringar tillämpats.
+Var och en av de här stegen visas i **[Forma och kombinera Data i Power BI Desktop](desktop-shape-and-combine-data.md)** . Passa på att kolla in den sidan eller fortsätt i det här dokumentet för att se vad du ska göra härnäst. Nästa avsnitt fortsätter efter att ovanstående ändringar tillämpats.
 
 ## <a name="combine-data"></a>Kombinera data
 Våra data om olika delstater är intressanta och kommer vara användbara för att skapa mer analysverktyg och -frågor. Men det finns ett problem: de flesta data använder en tvåbokstavsförkortning för delstatskoder, inte det fullständiga namnet på delstaten. Vi behöver hitta ett sätt att associera delstatsnamn med deras förkortningar.
@@ -161,7 +161,7 @@ Från menyfliksområdet **Start** i **Frågeredigeraren**, väljer vi **Hämta D
 
  ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
 
-Vi väljer **Tabell [redigera]** eftersom den inkluderar data vi vill ha, men det kommer att krävas en hel del formning innan vi kan reducera tabellens data. Var och en av de här stegen visas också i **[Forma och kombinera Data i Power BI Desktop](desktop-shape-and-combine-data.md)**. För att sammanfatta de här stegen är det här vad vi ska göra:
+Vi väljer **Tabell [redigera]** eftersom den inkluderar data vi vill ha, men det kommer att krävas en hel del formning innan vi kan reducera tabellens data. Var och en av de här stegen visas också i **[Forma och kombinera Data i Power BI Desktop](desktop-shape-and-combine-data.md)** . För att sammanfatta de här stegen är det här vad vi ska göra:
 
 Vi väljer **Redigera**, sedan:
 

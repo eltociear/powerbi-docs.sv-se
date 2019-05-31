@@ -9,20 +9,20 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 05/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 83ef4aa17de5edb18bc6b9cff1b50c29596704f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d470a262bd8a5e6590746fb07889b1230f5cfc25
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292877"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375648"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringar i Power BI-rapporter
 
 Visualiseringar (även kända som visuella objekt) visar insikter som har upptäckts i data. En Power BI-rapport kan ha en enda sida med ett visuellt objekt eller en mängd sidor med visuella objekt. I Power BI-tjänsten, kan visuella objekt [fästas från rapporter till instrumentpaneler](../service-dashboard-pin-tile-from-report.md).
 
-Det är viktigt att skilja mellan rapport-*skapare* och rapport-*konsumenter* Om du är den person som skapar eller ändrar rapporten så är du en skapare.  Skapare har redigeringsbehörighet till rapporten och dess underliggande datauppsättning. I Power BI Desktop, innebär det att du kan öppna datauppsättningen i Datavyn och skapa visuella objekt i Rapportvyn. I Power BI-tjänsten, innebär det att du kan öppna datauppsättningen eller rapporten i rapportredigeraren i [Redigeringsvyn](../consumer/end-user-reading-view.md). Om en rapport eller instrumentpanel har [delats med dig](../consumer/end-user-shared-with-me.md) är du en rapport**konsument**. Du kommer att kunna visa och interagera med rapporten och dess visuella objekt, men du kommer inte kunna spara ändringarna.
+Det är viktigt att skilja mellan rapport *designers* och rapportera *konsumenter* om du är den person som skapar eller ändrar rapporten så är du en designer.  Designers har redigeringsbehörighet till rapporten och dess underliggande datauppsättning. I Power BI Desktop, innebär det att du kan öppna datauppsättningen i Datavyn och skapa visuella objekt i Rapportvyn. I Power BI-tjänsten innebär detta att du kan öppna datauppsättningen eller rapporten i rapportredigeraren i [redigeringsvyn](../consumer/end-user-reading-view.md). Om en rapport eller instrumentpanel har [delats med dig](../consumer/end-user-shared-with-me.md) är du en rapport**konsument**. Du kommer att kunna visa och interagera med rapporten och dess visuella objekt, men du kan inte spara större ändringar.
 
 Det finns många olika typer av visuella objekt tillgängliga direkt från Power BI-fönstret Visualiseringar.
 
@@ -50,6 +50,11 @@ Försök att [ändra visualiseringstypen](power-bi-report-change-visualization-t
 ## <a name="pin-the-visualization"></a>Fäst visualiseringen
 
 När du har fått till visualiseringen som du vill ha den i Power BI-tjänsten, kan du [fästa den på en instrumentpanel](../service-dashboard-pin-tile-from-report.md) som en panel. Om du ändrar den visualisering som används i rapporten efter att du fäster den, ändras inte panelen på instrumentpanelen. Om den var ett linjediagram förblir den ett linjediagram, även om du har ändrat till ett ringdiagram i rapporten.
+
+## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+- Beroende på datakällan och antalet fält (mått eller kolumner), ett visuellt objekt kan läsa in långsamt.  Vi rekommenderar att begränsa visuell information till totalt 10-20-fält, både för läsbarhet och prestandaskäl. 
+
+- Den övre gränsen för visuella objekt är 100 fält (mått eller kolumner). Om det inte går att läsa in ditt visuella objekt, kan du minska antalet fält.   
 
 ## <a name="next-steps"></a>Nästa steg
 

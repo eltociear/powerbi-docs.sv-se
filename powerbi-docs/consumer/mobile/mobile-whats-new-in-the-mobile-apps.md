@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872741"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991044"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,17 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="april-2019"></a>April 2019
+
+### <a name="key-influencers-visual"></a>Visual Nyckelpåverkare 
+Nyckelpåverkare visual är nu tillgängligt på din mobila app. Det här visuella objektet kan du utföra analyser av viktiga faktorer över dina data med bara några få TAP.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Lägga till kommentarer i innehållet i rapporten (Android och iOS)
+Du kan nu använda kommentarer för att samarbeta och dela din feedback på rapportsidor och visuell information. Läs mer om rapporten kommentarer i Power BI-tjänsten och Mobile [i den här bloggen](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Maximera vy med helskärmsläge (Android och iOS)
+Vi har lagt till nya knappen att reglera när du ska fokusera på dina data genom att ta bort rapporten sidhuvuden och sidfötter och du får maximalt utrymme för att visa dina rapporter.
 
 ## <a name="march-2019"></a>Mars 2019
 
@@ -31,7 +42,20 @@ Du kan få åtkomst till Power BI-innehåll som delats med dig från en annan or
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Förbättra Windows-presentationsläge med bildspel (Windows)
 
-Med [bildspel](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) kan du använda offentliga skärmar på kontoret för att köra Power BI-rapporter i helskärmsläge som automatiskt roterar mellan rapportsidor.  
+Med [bildspel](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) du kan använda offentliga visar finns på kontoret för att köra Power BI-rapporter i helskärmsläge som automatiskt rotera mellan rapportsidor.  
+
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>Stöd för PBI-RS rapporter över AD FS och WAP-konfiguration (endast iOS)
+
+Power BI-rapporter (PBIX) finns i PBI-RS över AD FS-konfiguration kan nås från Power BI-appen för iOS.
+
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Aktivera knackning interaktion med visuella rapportobjekt
+
+Vi har ändrat rapporten interaktion så att det kräver bara ett tryck på ett visuellt objekt, knappen eller utsnitt för att interagera med data direkt. Användare behöver inte längre trycker du på ett visuellt objekt att markera den och tryck på igen för att interagera med den, bara en tryckning gör båda.
+
+![Knackning interaktion](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+
+> [!NOTE]
+> Befintliga användare måste aktivera det här beteendet i appinställningen. Mer information finns i den [så här konfigurerar du knackning rapporten interaktion](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) artikeln.
 
 ## <a name="january---february-2019"></a>Januari – februari 2019
  
@@ -127,7 +151,7 @@ Enkel inloggning (SSO) är en av de mest efterfrågade funktionerna för Power B
 
 Nu kan du få rapporter med delade filter och utsnitt.
 
-**Stöd för bakgrundsbilder**
+**Bakgrundsavbildningssupport**
 
 När du visar en rapport i liggande på din mobila enhet kan ha du samma bakgrundsbilder som du har i Power BI på webben.
 
@@ -311,7 +335,7 @@ Vi har förbättrat pekfunktionerna för tidsutsnitt.
 **Stöd för höger-till-vänster-språk** Power BI-mobilappar stöder nu höger-till-vänster-språk. Med ”höger-till-vänster-språk” avses hebreiska och arabiska alfabet, som skrivs från höger till vänster och behöver formas efter kontexten. Se listan över [språk som stöds i Power BI-mobilapparna](mobile-apps-supported-languages.md).
 
 #### <a name="android-devices"></a>Android-enheter
-**Anslut till fler än en SSRS-server** 
+**Anslut till mer än en SSRS-server** 
 
 Nu kan du ansluta till upp till fem SSRS-servrar (SQL Server Reporting Services) samtidigt.
 
@@ -330,7 +354,7 @@ Nu kan du rulla i stapel- och kolumndiagram i en rapport genom att trycka på sj
 
 Med Frågor och svar ställer du frågor om dina data med dina egna ord och Power BI ger svaren. Frågor och svar finns redan i Power BI-tjänsten på http://powerbi.com. Nu är de också [tillgängliga i mobilappen på din iPhone eller iPad](mobile-apps-ios-qna.md).
 
-**Anslut till fler än en SSRS-server** 
+**Anslut till mer än en SSRS-server** 
 
 Nu kan du ansluta till upp till fem SSRS-servrar (SQL Server Reporting Services) samtidigt.
 
@@ -367,7 +391,7 @@ Läs [funktionssammanfattningen om mobilappar på bloggen för december 2016](ht
 För att säkerställa att du kan komma åt dina senaste data offline, gör vi en uppdatering i bakgrunden på appen så att din affärsinformation är uppdaterad, även om du inte har använt den på ett tag. För att se till att vissa instrumentpaneler alltid är uppdaterade, markerar du bara dem som favoriter. Lär dig mer om [offlinefunktionerna i Power BI-mobilapparna](mobile-apps-offline-data.md).
 
 #### <a name="ios-devices"></a>iOS-enheter
-**Kommentera och dela**
+**Kommentera och dela**.
 
 Nu kan du kommentera och dela en panel, rapport eller visualisering från Power BI-mobilappen för iOS. 
 

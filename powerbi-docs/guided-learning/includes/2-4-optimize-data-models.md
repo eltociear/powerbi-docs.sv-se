@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b42efb2c9237baf85a71be12cfaf61da189601d4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257055"
+---
 Importerade data innehåller ofta fält som du egentligen inte behöver för rapportering och visualisering eftersom det är extra information eller eftersom dessa data finns redan i en annan kolumn. Power BI Desktop har verktyg för att optimera dina data och göra dem mer användbara för dig genom att skapa rapporter och visuell information och för att visa dina delade rapporter.
 
 ## <a name="hiding-fields"></a>Dolda fält

@@ -1,28 +1,31 @@
 ---
-title: Hitta och visa rapporter och instrumentpaneler snabbt med hjälp av Cortana
+title: Hitta och visa rapporter och instrumentpaneler – Power BI med hjälp av Cortana
 description: Hämta svar från dina data med hjälp av Cortana med Power BI. Fungerar för närvarande med rapporter och instrumentpaneler.
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 26bd41c8fa2d1300a0f9e106c7899777ac5950f7
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
-ms.translationtype: HT
+ms.openlocfilehash: 6d53ddcfc4121e8937810bd6f734f91cd7a9fa39
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482739"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375292"
 ---
-# <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Snabbt hitta och visa dina Power BI-data med hjälp av Cortana för Power BI
+# <a name="find-and-view-your-power-bi-data-with-cortana-for-power-bi"></a>Hitta och visa dina Power BI-data med Cortana för Power BI
 Använd Cortana på alla dina Windows 10-enheter så att du för omedelbara svar på viktiga affärsfrågor. Genom att integrera med Power BI hämtar Cortana viktig information direkt från Power BI-instrumentpaneler och rapporter. Allt du behöver du bara 10 november 2015-versionen eller senare av Windows 10, Cortana, Power BI och åtkomst till minst en datauppsättning.
+
+> [!IMPORTANT]
+> Cortana-integrering är inaktuell i Power BI. Startar den 11 juni, fungerar Cortana inte längre för alla instrumentpaneler och rapporter.
 
 ![Cortanas sökfält](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 
 ## <a name="preview-the-new-cortana-dashboard-search-experience-for-windows-10"></a>Förhandsgranska den nya sökfunktionen i Cortana-*instrumentpanelen* för Windows 10
-Under ett tag nu har du kunnat [använda Cortana för att hämta vissa typer av rapportsidor](service-cortana-answer-cards.md). Nu har vi lagt till en **ny upplevelse** – möjligheten att även hämta instrumentpaneler. Testa gärna och [skicka feedback till oss på Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi). Den *nya upplevelsen* kommer att utökas så att den inkluderar även Cortana-sökningar efter rapporter.  En av de främsta fördelarna med den nya miljön är att du behöver inte göra något speciellt för att konfigurera den. Du behöver inte aktivera Cortana eller konfigurera Windows 10. Det fungerar helt enkelt.
+Under ett tag nu har du kunnat [använda Cortana för att hämta vissa typer av rapportsidor](service-cortana-answer-cards.md). Nu har vi lagt till en **ny upplevelse** – möjligheten att även hämta instrumentpaneler. Prova och [skicka feedback till Power BI-idéer](https://ideas.powerbi.com/forums/265200-power-bi). Den *nya upplevelsen* kommer att utökas så att den inkluderar även Cortana-sökningar efter rapporter.  En av de främsta fördelarna med den nya miljön är att du behöver inte göra något speciellt för att konfigurera den. Du behöver inte aktivera Cortana eller konfigurera Windows 10. Det fungerar helt enkelt.
 
 > [!NOTE]
 > Om det inte fungerar som det ska, så gå till artikeln [Felsökning](service-cortana-troubleshoot.md).
@@ -31,20 +34,20 @@ Under ett tag nu har du kunnat [använda Cortana för att hämta vissa typer av 
 
 Den underliggande tekniken använder [Microsoft Azure Search Service](https://docs.microsoft.com/azure/search/). Den här söktjänsten tillhandahåller extra funktioner, t.ex. smart rangordning, felkorrigering och automatisk komplettering.
 
-Båda Cortana-upplevelserna kommer att finnas sida vid sida.
+Båda Cortana-upplevelserna kan finnas sida vid sida.
 
 ## <a name="cortana-for-power-bi-documentation"></a>Cortana för Power BI-dokumentation
-Det finns fyra dokument som hjälper dig att ställa in och använda Cortana för Power BI. Dessa artiklar hjälper dig att
+Fyra dokument hjälper dig att konfigurera och använda Cortana för Power BI.
 
 **Artikel 1** (den här artikeln): förstå hur Cortana och Power BI fungerar tillsammans
 
-**Artikel 2**: [söka efter Power BI-rapporter: Aktivera Cortana – Power BI – Windows-integrering](service-cortana-enable.md)
+**Artikel 2**: [Sök Power BI-rapporter: Aktivera Cortana – Power BI – Windows-integrering](service-cortana-enable.md)
 
-**Artikel 3**: [söka efter Power BI-rapporter: skapa särskilda *Cortana-svarskort*](service-cortana-answer-cards.md)
+**Artikel 3**: [Söka efter Power BI-rapporter: skapa särskilda *Cortana-Svarskort*](service-cortana-answer-cards.md)
 
 **Artikel 4**: [Felsöka problem](service-cortana-troubleshoot.md)
 
-## <a name="how-do-cortana-and-power-bi-work-together"></a>Hur fungerar Cortana och Power BI fungerar tillsammans?
+## <a name="how-cortana-and-power-bi-work-together"></a>Hur Cortana och Power BI fungerar tillsammans
 När du använder Cortana för att ställa en fråga, så kan Power BI vara ett av de ställen där Cortana letar efter svar. I Power BI hittar Cortana omfattande datadrivna svar från Power BI-rapporter (som innehåller en särskild typ av rapportsidor som kallas *Cortana-svarskort*) och från Power BI-instrumentpaneler.
 
 Om Cortana hittar en matchning visas namnet på instrumentpanelen eller rapportsidan direkt på Cortana-skärmen. Instrumentpanelen eller rapportsidan kan öppnas i Power BI. Rapportsidor kan också undersökas direkt i Cortana – de är interaktiva.
@@ -58,16 +61,16 @@ Frågan måste innehålla minst två ord om Cortana ska kunna hitta något svar.
 
 Om instrumentpanelens rubrik består av mer än ett ord returnerar Cortana endast den instrumentpanelen om din sökning matchar minst två av orden, eller ett av orden plus ägarens namn. För en instrumentpanel med namnet ”Kundlönsamhetsexempel”: 
 
-* ”Visa mig kunden” returnerar *inte* ett resultat för Power BI-instrumentpanelen.   
-* ”uttryck som ”visa kundlönsamhet”, ”kund p”, ”kund s”, ”lönsamhet exempel”, ”michele hart exempel”, ”visa kundlönsamhet exempel” och ”visa kund p” *returnerar* ett Power BI-resultat.
-* Att lägga till ordet ”powerbi” räknas som ett av de två ord som krävs, så ”powerbi exempel” *returnerar* ett Power BI-resultat. 
+* ”Visa mig kunden” *inte* returnera ett resultat för Power BI-instrumentpanel.   
+* ”uttryck som” Visa Kundlönsamhet ”,” kund p ”,” kund s ”,” lönsamhet exempel ”,” michele hart exempel ”,” visa kundlönsamhetsexempel ”och” visa kund p ” *gör* returnera ett Power BI-resultat.
+* Att lägga till ordet ”powerbi” räknas som ett av de två ord som krävs, så ”powerbi exempel” *har* returnera ett Power BI-resultat. 
   
     ![Cortana-sökning med minst 2 ord](media/service-cortana-intro/power-bi-cortana-2-words.png)
 
 ### <a name="cortana-and-reports"></a>Cortana och rapporter
  Cortana hittar svar i rapporter som har [sidor som har utformats speciellt för visning av Cortana](service-cortana-answer-cards.md). Ställ helt enkelt frågor med hjälp av rubriken eller nyckelord från någon av dessa specialrapportsidor.  
 
-Den underliggande rapporttekniken använder [Microsoft Power BI Q&A](consumer/end-user-q-and-a.md).
+Den underliggande tekniken för rapporter användning [Power BI Q & A](power-bi-tutorial-q-and-a.md).
 
 När du ställa en fråga i Cortana svarar Power BI från rapportsidor som har utformats speciellt för Cortana. Potentiella svar bestäms av Cortana direkt från Cortanas *svarskort* som redan har skapats i Power BI.  Om du vill utforska ytterligare ett svar, så öppna helt enkelt ett resultat i Power BI.
 
@@ -122,7 +125,7 @@ När du ställa en fråga i Cortana svarar Power BI från rapportsidor som har u
      ![Öppna rapporten från Cortana](media/service-cortana-intro/power-bi-cortana-open2.png "Cortana-svarskortet öppnas i Cortana-sökning")
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-* Cortana har inte åtkomst till Cortana-kort som inte har [aktiverats för Power BI](service-cortana-enable.md).
+* Cortana har inte åtkomst till Cortana-kort som har gjorts [aktiverats för Power BI](service-cortana-enable.md).
 * Kan du fortfarande inte få Cortana att fungera med Power BI?  Försök med [felsökning av Cortana](service-cortana-troubleshoot.md).
 * Cortana för Power BI finns för närvarande endast på engelska.
 * Cortana för Power BI är bara tillgängligt på Windows mobile-enheter.

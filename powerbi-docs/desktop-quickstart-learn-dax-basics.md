@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 64957fa71249c551b4f69b619a12baf03fae6b06
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513737"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
@@ -47,9 +47,9 @@ Den här formeln innehåller följande syntaxelement:
 
 **A.** Måttnamnet **Total Sales**.
 
-**B.** Operatorn likhetstecken (**=**) anger början av formeln. När den beräknas returneras ett resultat.
+**B.** Operatorn likhetstecken ( **=** ) anger början av formeln. När den beräknas returneras ett resultat.
 
-**C.** DAX-funktionen **SUM** lägger ihop alla tal i kolumnen **Sales[SalesAmount]**. Du lär dig mer om funktioner senare.
+**C.** DAX-funktionen **SUM** lägger ihop alla tal i kolumnen **Sales[SalesAmount]** . Du lär dig mer om funktioner senare.
 
 **D.** Parenteser **()** omger ett uttryck som innehåller ett eller flera argument. Alla funktioner kräver minst ett argument. Ett argument skickar ett värde till en funktion.
 
@@ -91,19 +91,19 @@ För att kunna utföra den här aktiviteten måste du öppna Power BI Desktop-fi
 
    Du ska använda CALCULATE-funktionen till att filtrera de belopp som vi vill summera med ett argument som vi skickar till funktionen CALCULATE. Det här kallas för kapslade funktioner. CALCULATE-funktionen innehåller minst två argument. Det första är uttrycket som ska utvärderas och det andra är ett filter.
    
-4. Efter öppningsparentesen **(** för funktionen **CALCULATE** skriver du **SUM** följt av ytterligare en öppningsparentes **(**. Nu ska vi skicka argument till funktionen SUM.
+4. Efter öppningsparentesen **(** för funktionen **CALCULATE** skriver du **SUM** följt av ytterligare en öppningsparentes **(** . Nu ska vi skicka argument till funktionen SUM.
 
-5. Börja skriva **Sal**, och välj sedan **Sales [SalesAmount]**, följt av en avslutande parentes **)**. Detta är det första uttrycksargumentet för vår CALCULATE-funktion.
+5. Börja skriva **Sal**, och välj sedan **Sales [SalesAmount]** , följt av en avslutande parentes **)** . Detta är det första uttrycksargumentet för vår CALCULATE-funktion.
     
-6. Skriv ett kommatecken (**,**) följt av ett blanksteg för att ange det första filtret och skriv sedan **PREVIOUSQUARTER** . Det här är vårt filter.
+6. Skriv ett kommatecken ( **,** ) följt av ett blanksteg för att ange det första filtret och skriv sedan **PREVIOUSQUARTER** . Det här är vårt filter.
     
    Vi använder tidsfunktionen PREVIOUSQUARTER för att filtrera SUM-resultatet från föregående kvartal.
     
-7. Efter öppningsparentesen **(** för PREVIOUSQUARTER-funktionen skriver du **Calendar[DateKey]**.
+7. Efter öppningsparentesen **(** för PREVIOUSQUARTER-funktionen skriver du **Calendar[DateKey]** .
     
    Funktionen PREVIOUSQUARTER har ett argument, en kolumn som innehåller ett sammanhängande datumintervall. I vårt fall är det kolumnen DateKey i tabellen Calendar.
     
-8. Se till att båda argumenten skickas till funktionen PREVIOUSQUARTER och att funktionen CALCULATE avslutas med två högerparenteser **))**.
+8. Se till att båda argumenten skickas till funktionen PREVIOUSQUARTER och att funktionen CALCULATE avslutas med två högerparenteser **))** .
     
    Formeln bör nu se ut så här:
     
@@ -176,7 +176,7 @@ Den här formeln innehåller följande syntaxelement:
 
 **A.** Måttnamnet **Store Sales**.
 
-**B.** Operatorn likhetstecken (**=**) anger början av formeln.
+**B.** Operatorn likhetstecken ( **=** ) anger början av formeln.
 
 **C.** Funktionen **CALCULATE** utvärderar ett uttryck som ett argument i en kontext som ändras av de angivna filtren.
 
@@ -184,9 +184,9 @@ Den här formeln innehåller följande syntaxelement:
 
 **E.** Ett mått **[Total Sales]** i samma tabell som ett uttryck. Måttet Total Sales har formeln: =SUM(Sales[SalesAmount]).
 
-**F.** Ett kommatecken (**,**) avgränsar det första uttrycksargumentet från filterargumentet.
+**F.** Ett kommatecken ( **,** ) avgränsar det första uttrycksargumentet från filterargumentet.
 
-**G.** Den fullständiga refererade kolumnen **Kanal[ChannelName]**. Detta är vår radkontext. Varje rad i den här kolumnen anger en kanal: Store, Online osv.
+**G.** Den fullständiga refererade kolumnen **Kanal[ChannelName]** . Detta är vår radkontext. Varje rad i den här kolumnen anger en kanal: Store, Online osv.
 
 **H.** Det specifika värdet **Store** som ett filter. Detta är vår filterkontext.
 

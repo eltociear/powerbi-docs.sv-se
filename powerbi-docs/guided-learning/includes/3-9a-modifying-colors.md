@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d2ba689be99955c649930c1ee4b203b67577619c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397975"
+---
 Kanske händer det ofta att du vill ändra de färger som används i diagram och visuella objekt. Power BI ger dig massor av kontroll över hur färgerna visas. Kom igång genom att markera ett visuellt objekt i fönstret **Visualiseringar** och sedan klicka på **penseln**.
 
 ![](media/3-9a-modifying-colors/3-9a_1.png)

@@ -2,20 +2,20 @@
 title: Pausa och starta din Power BI Embedded-kapacitet på Azure Portal | Microsoft Docs
 description: Den här artikeln beskriver hur du pausar och startar en Power BI Embedded-kapacitet i Microsoft Azure.
 services: power-bi-embedded
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 09/28/2017
-ms.openlocfilehash: 9f939c0eae4f7ea1f24eec473549dc00191f1b67
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
-ms.translationtype: HT
+ms.openlocfilehash: 8a02654f264fb83f501679e4e205e08017f083f6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360499"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61387483"
 ---
 # <a name="pause-and-start-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Pausa och starta din Power BI Embedded-kapacitet på Azure Portal
 

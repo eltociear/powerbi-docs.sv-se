@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220918"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136522"
 ---
-# <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Länka entiteter mellan dataflöden i Power BI (förhandsversion)
+# <a name="link-entities-between-dataflows-in-power-bi"></a>Länka entiteter mellan dataflöden i Power BI
 
 Med dataflöden i Power BI kan du ha en enda organisatorisk datalagringskälla där affärsanalytiker kan förbereda och hantera sina data en gång och sedan återanvända dem mellan olika analyseringsappar i organisationen. 
 
@@ -29,7 +29,7 @@ Länkade entiteter är **skrivskyddade**. Om du vill skapa transformationer för
 
 ## <a name="linked-entity-availability"></a>Tillgänglighet till länkad entitet
 
-Länkade entiteter kräver en [Power BI Premium](service-premium.md)-prenumeration för att uppdatera. Länkade entiteter är tillgängliga i alla dataflöden på en arbetsyta som finns i Power BI Premium-kapacitet. Det finns inga begränsningar i källdataflödet.
+Länkade entiteter kräver en [Power BI Premium](service-premium-what-is.md)-prenumeration för att uppdatera. Länkade entiteter är tillgängliga i alla dataflöden på en arbetsyta som finns i Power BI Premium-kapacitet. Det finns inga begränsningar i källdataflödet.
 
 Länkade entiteter fungerar endast korrekt i nya Power BI-arbetsytor. Du kan läsa mer om [nya Power BI-arbetsytor](service-create-the-new-workspaces.md). Alla länkade dataflöden måste finnas i nya arbetsytor för att fungera korrekt.
 
@@ -88,11 +88,11 @@ Det finns några begränsningar att tänka på när du arbetar med länkade enti
 
 Följande artiklar kan vara användbara när du skapar eller arbetar med dataflöden. 
 
-* [Dataförberedelser med självbetjäning i Power BI (förhandsversion)](service-dataflows-overview.md)
+* [Självbetjäning dataförberedelser i Power BI](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Använda beräknade entiteter i Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
-* [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)

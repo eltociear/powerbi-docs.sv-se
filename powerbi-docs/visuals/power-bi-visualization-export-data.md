@@ -12,11 +12,11 @@ ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
-ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54838449"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61068767"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 Om du vill se de data som används i en visualisering, [kan du visa dessa data i Power BI](service-reports-show-data.md) eller exportera data till Excel som en XLSX- eller CSV-fil. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. 

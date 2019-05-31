@@ -11,11 +11,11 @@ ms.date: 06/25/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 86a90396c82a597e8b4f535b71e029bfa21328a4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280929"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61187244"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>PowerShell-cmdletar, REST API:er och .NET SDK för Power BI-administration
 Med Power BI kan administratörer skripta vanliga åtgärder med PowerShell-cmdletar. Dessutom visas REST API:er och en .NET SDK tillhandahålls för utveckling av administrativa lösningar. I det här avsnittet visas en lista över cmdletar med motsvarande SDK-metod och REST API-slutpunkt. Mer information finns i:

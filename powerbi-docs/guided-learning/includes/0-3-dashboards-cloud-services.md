@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d600581b9d1df8c8436da45e9629fccb79873c21
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260622"
+---
 Som vi fick lära oss tidigare är det vanliga arbetsflödet i Power BI att skapa en rapport i Power BI Desktop, publicera den i Power BI-tjänsten och sedan dela den med andra så att de kan visa den i tjänsten eller i en mobilapp.
 
 Vissa börjar dock i Power BI-tjänsten, så vi tar en snabbtitt på tjänsten och lär oss mer om ett enkelt och populärt sätt att snabbt skapa visuella objekt i Power BI: *innehållspaket*.

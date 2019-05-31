@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6069368810fd89d8f8102b24fe220351e6e7e0ec
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 4a4cbc152784d7536a5aa179769cf753645c932b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661709"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61048774"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Visa instrumentpaneler och rapporter som har delats med mig
 ## <a name="shared-with-me"></a>Delat med mig
@@ -26,7 +26,7 @@ När en kollega delar innehåll med dig visas det, via knappen **dela**, i behå
 
 ![Delningsikon](./media/end-user-shared-with-me/power-bi-share-dash.png)
 
-Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vad är Power BI Premium?](../service-premium.md) för mer information.
+Titta när Amanda förklarar innehållslistan **delat med mig** och visar hur du navigera och filtrerar listan. Prova sedan själv genom att följa de stegvisa anvisningarna under videon. Om du vill visa instrumentpaneler som delas med dig, måste du ha en Power BI Pro-licens. Läs [Vad är Power BI Premium?](../service-premium-what-is.md) för mer information.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 

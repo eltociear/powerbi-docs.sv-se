@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 94ff18339d2eb14faebf124786cab7f9ac66393e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264083"
+---
 **Instrumentpaneler** i Power BI är sidor med samlingar av visualiseringar som har skapats i Power BI-tjänsten. Du kan skapa instrumentpaneler genom att **fästa** visualiseringar från rapporter som du har skapat och publicerat med hjälp av Power BI Desktop, eller visualiseringar som du har skapat i Power BI-tjänsten. Att **fästa** ett visuellt objekt på en instrumentpanel påminner mycket om att fästa en bild på väggen, så att andra kan se den. Om du vill fästa ett visuellt objekt, så öppna dess rapport i Power BI-tjänsten. Hovra över det visuella objekt som du vill fästa och välj **fästikonen**.
 
 ![](media/4-2-create-configure-dashboards/4-2_1.png)

@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 4bc24df67dd7d2b8ac0ae987ad2e50cff082c73f
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710384"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Steg 3: Skapa en datauppsättning i Power BI
@@ -37,7 +37,7 @@ Skapa en datauppsättning i Power BI.
 > 
 > 
 
-1. I konsolprogramprojektet som du skapade i steg 2 [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) lägger du till **using System.Net;**, och **using System.IO;** i Program.cs.
+1. I konsolprogramprojektet som du skapade i steg 2 [Hämta en åtkomsttoken för autentisering](walkthrough-push-data-get-token.md) lägger du till **using System.Net;** , och **using System.IO;** i Program.cs.
 2. Lägg till koden nedan i Program.cs.
 3. Kör konsolappen och logga in på ditt Power BI-konto. Du bör se **Datauppsättningen har skapats** i konsolfönstret. Dessutom kan du logga in till Power BI för att se den nya datauppsättningen.
 

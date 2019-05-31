@@ -1,5 +1,5 @@
 ---
-title: Ansluta till en PDF-fil i Power BI Desktop (förhandsversion)
+title: Ansluta till en PDF-fil i Power BI Desktop
 description: Anslut enkelt till och använd data från PDF-filer i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,36 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ff61c4d2cc8ec3570e7eee45b7e43ec81f8f7161
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 0c63a62edfce62a5cee13bef3c68014027313e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275121"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514002"
 ---
-# <a name="connect-to-a-pdf-file-in-power-bi-desktop-preview"></a>Ansluta till en PDF-fil i Power BI Desktop (förhandsversion)
+# <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>Ansluta till en PDF-fil i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **PDF-fil** och använda inkluderade data från filen precis som andra datakällor i Power BI Desktop.
 
 ![Ansluta till data i PDF-filer](media/desktop-connect-pdf/connect-pdf_04.png)
 
 Följande avsnitt beskriver hur du ansluter till en **PDF-fil**, väljer data och börjar använda dessa data i **Power BI Desktop**.
 
-## <a name="enable-the-pdf-connector"></a>Aktivera PDF-anslutningsappen
-PDF-anslutningsappen är en förhandsversion för **Power BI Desktop** och måste aktiveras. Aktivera PDF-anslutningsappen genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markera kryssrutan bredvid **Hämta data från PDF-filer**. 
-
-![Aktivera PDF-anslutningsappen från Alternativ > Förhandsgranskningsfunktioner](media/desktop-connect-pdf/connect-pdf_01.png)
-
-Du måste starta om **Power BI Desktop** när du har gjort valet.
-
-När du använder **PDF (beta)**-anslutningsappen får du en varning om att PDF-anslutningsappen fortfarande är under utveckling och att den kan ändras i framtiden. Välj **Fortsätt** om du vill använda anslutningsappen.
-
 Vi rekommenderar alltid att du uppgraderar till den senaste versionen av **Power BI Desktop**, som du kan hämta från en länk i avsnittet [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="connect-to-a-pdf-file"></a>Ansluta till en PDF-fil
-Om du vill ansluta till en **PDF**-fil väljer du **Hämta Data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Fil** från kategorierna till vänster så ser du **PDF (beta)**.
+Om du vill ansluta till en **PDF**-fil väljer du **Hämta Data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Fil** från kategorierna till vänster så ser du **PDF (beta)** .
 
 ![Välj PDF från Hämta data](media/desktop-connect-pdf/connect-pdf_01.png)
 

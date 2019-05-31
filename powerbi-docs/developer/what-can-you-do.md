@@ -1,20 +1,20 @@
 ---
 title: Vad kan utvecklare göra med Power BI?
 description: Power BI erbjuder en mängd olika alternativ för utvecklare. Allt från inbäddning till anpassad visuell information och strömning av datauppsättningar.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 63ee9ed96ed699d116b8d81b0cd612f76994a68d
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: d2e3ba69cde609638e54eaa1206714f0fb420d18
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872695"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262720"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Vad kan utvecklare göra med Power BI?
 

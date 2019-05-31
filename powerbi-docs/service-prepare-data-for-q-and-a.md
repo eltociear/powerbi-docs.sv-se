@@ -1,5 +1,5 @@
 ---
-title: Så här får du dina Excel-data att fungera bra med frågor och svar i Power BI
+title: Få Excel data att fungera bra med frågor och svar i Power BI
 description: Så här får du dina data att fungera bra med frågor och svar i Power BI
 author: maggiesMSFT
 manager: kfile
@@ -7,29 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 627a94097d4235f39414c1165ac8cbbc806508a3
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: 7ed8eb8e205c05582d2cfd93030ab056be77912a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430075"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65624998"
 ---
-# <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Så här får du dina Excel-data att fungera bra med frågor och svar i Power BI
+# <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Få Excel data att fungera bra med frågor och svar i Power BI
 Om du är en person som skapar datamodeller eller bygger Excel-arbetsböcker som ska användas med Power BI kan du läsa på...
 
 I Power BI kan du med vanliga frågor och svar söka efter strukturerade data och välja rätt visualisering för din fråga – det är det som gör det till ett sådant fascinerande verktyg att arbeta med.   
 
 Frågor och svar fungerar på alla överförda Excel-filer som innehåller tabeller, intervall eller PowerPivot-modeller, men ju fler optimeringar och datarensningar du gör, desto mer robust prestandan för frågor och svar.  Om du planerar att dela rapporter och instrumentpaneler baserat på din datauppsättning, vill du att dina kollegor lätt kan ställa frågor och få kvalitetssvar.
 
-### <a name="how-qa-works-with-excel"></a>Så här fungerar frågor och svar med Excel
+## <a name="how-qa-works-with-excel"></a>Så här fungerar frågor och svar med Excel
 Frågor och svar har en uppsättning kärnfunktioner som förstår naturligt språk och som arbetar med dina data. Det har kontextberoende nyckelordssökning för dina Excel-tabeller, kolumner och beräknade fältnamn. Dessutom har det inbyggd kunskap för att filtrera, sortera, aggregera, gruppera och visa data. 
 
-I exempelvis en Excel-tabell med namnet ”Försäljning” och kolumnerna ”Produkt”, ”Månad”, ”Sålda enheter”, ”Bruttoförsäljning” och ”Resultat” kan du ställa frågor om någon av dessa entiteter.  Du kan begära att försäljning eller total vinst per månad ska visas, att produkterna sorteras efter sålda enheter och mycket annat. Läs mer om de [typer av frågor som du kan ställa](consumer/end-user-q-and-a.md) och [de visualiseringstyper som du kan ange i en Frågor och svar-fråga](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+I exempelvis en Excel-tabell med namnet ”Försäljning” och kolumnerna ”Produkt”, ”Månad”, ”Sålda enheter”, ”Bruttoförsäljning” och ”Resultat” kan du ställa frågor om någon av dessa entiteter.  Du kan begära att försäljning eller total vinst per månad ska visas, att produkterna sorteras efter sålda enheter och mycket annat. Läs mer om [med frågor och svar i instrumentpaneler och rapporter](power-bi-tutorial-q-and-a.md), och [visualiseringstyper som du kan ange i en fråga med frågor och svar](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-### <a name="prepare-an-excel-dataset-for-qa"></a>Förbered en Excel-datauppsättning för frågor och svar
+## <a name="prepare-an-excel-dataset-for-qa"></a>Förbered en Excel-datauppsättning för frågor och svar
 Funktionen Frågor och svar använder sig av namnen på tabeller, kolumner och beräknade fält när den besvarar dataspecifika frågor, vilket innebär att det du kallar entiteter i din arbetsbok är viktigt!
 
 Här får du några tips om hur du kan utnyttja Frågor och svar på bästa sätt i din arbetsbok.
@@ -44,10 +44,11 @@ Här får du några tips om hur du kan utnyttja Frågor och svar på bästa sät
 * Öppna datauppsättningen i Power BI Desktop och skapa nya kolumner, skapa beräknade mått, sammanfoga fält för att skapa unika värden, klassificera data efter typ (till exempel datum, strängar, geografi, bilder, URL:er), med mera.
 
 ## <a name="next-steps"></a>Nästa steg
-Gå tillbaka till [Frågor och svar i Power BI](consumer/end-user-q-and-a.md)  
-[Förbered lokala datauppsättningar för frågor och svar](service-q-and-a-direct-query.md)   
-[Snabbstart för frågor och svar](power-bi-visualization-introduction-to-q-and-a.md)  
-[Hämta data (för Power BI)](service-get-data.md)  
+
+- [Frågor och svar för konsumenter](consumer/end-user-q-and-a.md)  
+- [Använd frågor och svar i instrumentpaneler och rapporter](power-bi-tutorial-q-and-a.md)
+- [Förbered lokala datauppsättningar för frågor och svar](service-q-and-a-direct-query.md)   
+- [Hämta data (för Power BI)](service-get-data.md)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

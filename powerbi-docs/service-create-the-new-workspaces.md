@@ -1,35 +1,36 @@
 ---
-title: Skapa de nya arbetsytorna (förhandsversion) – Power BI
-description: Lär dig hur du skapar de nya arbetsytorna, samlingar av instrumentpaneler och rapporter som skapats för att förse din organisation med statistik.
+title: Skapa nya arbetsytor – Power BI
+description: Lär dig hur du skapar nya arbetsytor, samlingar av instrumentpaneler, rapporter och sidnumrerade rapporter som skapats för att leverera nyckelvärden för din organisation.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eba4e740f6fd08ffd60b95dfc437551dfb95e7b8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d0c0781ea5d3864f1cf3627cd42d53cca632102d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61142067"
 ---
-# <a name="create-the-new-workspaces-preview-in-power-bi"></a>Skapa de nya arbetsytorna (förhandsversion) i Power BI
+# <a name="create-the-new-workspaces-in-power-bi"></a>Skapa nya arbetsytor i Power BI
 
-Power BI introducerar en ny arbetsyta som en förhandsversion. Arbetsytor är fortfarande platser där du kan samarbeta med kollegor för att skapa samlingar av instrumentpaneler och rapporter, som du kan samla till *appar* och distribuera till hela organisationen eller till specifika personer eller grupper. 
+Powerbi presenterar en ny arbetsyta-upplevelse. Arbetsytor är fortfarande där du samarbeta med kollegor för att skapa samlingar av instrumentpaneler, rapporter och sidnumrerade rapporter. Sedan kan du paketera den samlingen till en *app* och distribuera det till hela organisationen eller till specifika personer eller grupper. 
 
-![Förhandsversion av nya arbetsytor i Power BI](media/service-create-the-new-workspaces/power-bi-new-workspaces-preview.png)
-
-Med förhandsversion av de nya arbetsytorna kan du nu:
+Här är vad som är annorlunda. I de nya arbetsytorna kan du:
 
 - Tilldela arbetsyteroller till användargrupper: säkerhetsgrupper, distributionslistor, Office 365-grupper och enskilda användare.
 - Skapa en arbetsyta i Power BI utan att skapa en Office 365-grupp.
 - Använda mer detaljerade arbetsyteroller för mer flexibel hantering av behörigheter på en arbetsyta.
 
-Mer bakgrund finns i artikeln om [nya arbetsytor (förhandsversion)](service-new-workspaces.md).
+> [!NOTE]
+> Om du vill framtvinga säkerhet på radnivå (RLS) för Power BI Pro-användare surfning innehållet i en arbetsyta måste fortsätta att använda [klassiska arbetsytor](service-create-workspaces.md). Välj den **medlemmar kan bara visa Power BI-innehåll** alternativet. Du kan också publicera en Power BI-app till de användarna eller Använd delning för att distribuera innehåll. Rollen kommande visningsprogrammet kan det här scenariot i framtiden i nya arbetsytor för arbetsyta-upplevelse.
+
+Mer bakgrundsinformation finns i den [nya arbetsytor](service-new-workspaces.md) artikeln.
 
 ## <a name="create-one-of-the-new-app-workspaces"></a>Skapa en av de nya apparbetsytorna
 
@@ -37,29 +38,111 @@ Mer bakgrund finns i artikeln om [nya arbetsytor (förhandsversion)](service-new
    
      ![Skapa en apparbetsyta](media/service-create-the-new-workspaces/power-bi-create-app-workspace.png)
 
-2. I **Förbättrade arbetsytor i förhandsversion** väljer du **Prova nu**.
+2. Du automatiskt skapar en uppgraderad arbetsyta, såvida inte om du väljer att **återgå till klassisk**.
    
-     ![Förbättrade arbetsytor i förhandsversion](media/service-create-the-new-workspaces/power-bi-preview-improved-workspaces.png)
+     ![Den nya arbetsytan upplevelsen](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     
+     Om du väljer **återgå till klassisk**, skapar du en arbetsyta som baseras på en Office 365-grupp. Använd det här alternativet om du behöver den **medlemmar kan bara visa Power BI-innehåll** alternativ för att tvinga säkerhet på radnivå (RLS) för arbetsytemedlemmar.
 
-2. Ge arbetsytan ett namn. Om namnet inte är tillgängligt kan du redigera det för att få fram ett unikt ID.
+2. Ge arbetsytan ett namn. Om namnet inte finns kan du redigera det för att få fram ett unikt namn.
    
-     Appen får samma namn som arbetsytan.
+     Appen för arbetsytan har samma namn och ikon som arbetsytan.
    
-1. Lägg till en bild om du vill. Filstorleken måste vara mindre än 45 KB.
- 
-    ![Ge arbetsytan ett namn och lägga till en bild](media/service-create-the-new-workspaces/power-bi-name-workspace.png)
+1. Här följer några valfria objekt som du kan ange för din arbetsyta:
+
+    Ladda upp en **arbetsytan bild**. Filer kan vara .png eller .jpg-format. Filstorleken måste vara mindre än 45 KB.
+    
+    [Lägg till en **kontaktlista**](#workspace-contact-list). Som standard är administratörer för arbetsytan kontakter. 
+    
+    [Ange en **arbetsytan OneDrive** ](#workspace-onedrive) genom att skriva endast namnet på en befintlig Office 365-grupp, inte URL: en. Den här arbetsytan kan nu använda Office 365 gruppens fillagringsplats. 
+
+    ![Ange en plats i OneDrive](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+
+    Tilldela arbetsytan till en **dedikerade kapacitet**på den **Premium** fliken väljer **dedikerade kapacitet**.
+     
+    ![Dedikerad kapacitet](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
 1. Välj **Spara**.
 
-    Här på **välkomstskärmen** för den nya arbetsytan kan du lägga till data. 
+    Power BI skapar arbetsytan och öppnar den. Den visas i listan med arbetsytor som du är medlem i. 
+
+## <a name="workspace-contact-list"></a>Arbetsytan kontaktlista
+
+Den nya arbetsyta kontaktlistan kan du ange vilka användare informeras om problem uppstår i arbetsytan. Som standard angetts en användare eller grupp som som en arbetsyta administratören meddelas, men du kan anpassa listan. Användare eller grupper som visas i listan visas i användargränssnittet (UI) för att användare kan få hjälp relaterade till arbetsytan.
+
+1. Den nya **kontaktlista** i något av två sätt:
+
+    I den **skapa en arbetsyta** fönstret när du skapar den.
+
+    I det vänstra navigeringsfönstret väljer du pilen bredvid **arbetsytor**, Välj ellipsen (...) bredvid arbetsytans namn > **arbetsyteinställningarna**. Den **inställningar** öppnas fönstret.
+
+    ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. Under **Avancerat** > **kontaktlista**, acceptera standardinställningarna, **arbetsytesadministratörer**, eller Lägg till en egen lista över **specifika användare eller grupper**. 
+3. Välj **Spara**.
+
+## <a name="workspace-onedrive"></a>Workspace OneDrive
+
+Arbetsytan OneDrive-funktionen kan du konfigurera en Office 365-grupp vars SharePoint-dokumentbibliotek file storage är tillgängligt för arbetsyteanvändare. Du skapa först grupp utanför Power BI. 
+
+Powerbi Synkronisera inte behörigheterna för användare eller grupper som är konfigurerade med arbetsyteåtkomst med Office 365-gruppmedlemskap. Det bästa sättet är att ge samma Office 365-grupp, vars fillagring som du konfigurerar i den här för Office 365-inställningsgruppen [åtkomst till arbetsytan](#give-access-to-your-workspace). Sedan hantera åtkomst till arbetsytan genom att hantera medlemskapet för Office 365-grupp. 
+
+1. Den nya **arbetsytan OneDrive** i något av två sätt:
+
+    I den **skapa en arbetsyta** fönstret när du skapar den.
+
+    I det vänstra navigeringsfönstret väljer du pilen bredvid **arbetsytor**, Välj ellipsen (...) bredvid arbetsytans namn > **arbetsyteinställningarna**. Den **inställningar** öppnas fönstret.
+
+    ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. Under **Avancerat** > **arbetsytan OneDrive**, skriver du namnet på Office 365-grupp som du skapade tidigare. Powerbi hämtar automatiskt OneDrive för gruppen.
+
+    ![Ange en plats i OneDrive](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+
+3. Välj **Spara**.
+
+### <a name="access-the-workspace-onedrive-location"></a>Öppna arbetsytan OneDrive-plats
+
+När du har konfigurerat den OneDrive-platsen kan gå du direkt till enheten från ett par olika ställen i arbetsytan:
+
+- Välj **arbetsytor** > *Arbetsytenamn* > de tre punkterna ( **...** ) menyn > **filer**. 
+
+    ![Platsen för arbetsytan](media/service-new-workspaces/power-bi-new-workspace-files.png)
+
+- Välj ellipsen ( **...** )-menyn i det övre högra hörnet av arbetsytan > **filer**.
+
+    ![Platsen för arbetsytan](media/service-new-workspaces/power-bi-new-workspace-files-2.png)
+    
+- I den **hämta Data** > **filer** upplevelse. Den **OneDrive – företag** posten är ditt eget OneDrive för företag. Andra OneDrive är det du har lagt till.
+
+    ![Platsen för arbetsytan - hämta data](media/service-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+
+## <a name="add-content-to-your-app-workspace"></a>Lägga till innehåll i din apparbetsyta
+
+När du har skapat en ny arbetsyta upplevelse arbetsyta, är det dags att lägga till innehåll. Lägga till nytt innehåll är liknande på nya och klassiska arbetsytor. Använd knappen Skapa eller hämta Data att lägga till innehåll till din arbetsyta.
+
+1. I den **Välkommen** skärmen för den nya arbetsytan kan du lägga till innehåll. 
 
     ![Välkomstskärm för den nya arbetsytan](media/service-create-the-new-workspaces/power-bi-workspace-welcome-screen.png)
 
 1. Välj exempelvis **Exempel** > **Kundlönsamhetsexempel**.
 
-    I innehållslistan för arbetsytan visas nu **Förhandsgranskning av nya arbetsytor**. Eftersom du är administratör ser du även en ny åtgärd: **Åtkomst**.
+> [!NOTE]
+> I de nya arbetsytorna använda du inte innehållspaket för organisationen eller tredje parts innehållspaket. Appar är tillgängliga för alla tredjepartsinnehåll hanteringspaket du tidigare använt. Använda klassiska arbetsytor om du vill fortsätta att använda innehållspaket. Innehållspaket är inaktuella, så det är en bra idé att använda appar i stället.
 
-    ![Innehållslista för förhandsversion av arbetsyta](media/service-create-the-new-workspaces/power-bi-workspaces-preview-content-list.png)
+När du visar innehåll i innehållslistan på en apparbetsyta visas apparbetsytans namn som ägare.
+
+### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Ansluta till tjänster från tredje part i nya arbetsytor
+
+I de nya arbetsytorna gör vi en ändring för att fokusera på *appar*. Appar för tjänster från tredje part gör det enkelt för användare att hämta data från de tjänster som de använder, till exempel Microsoft Dynamics CRM, Salesforce eller Google Analytics.
+
+Du kan inte skapa eller använda organisationsinnehållspaket i den nya upplevelsen i arbetsytan. Du kan i stället använda de appar som tillhandahålls för att ansluta till tjänster från tredje part eller be att dina egna team tillhandahåller appar för eventuella innehållspaket som du använder. 
+
+## <a name="give-access-to-your-workspace"></a>Ge åtkomst till din arbetsyta
+
+1. I arbetsytan innehållslistan, eftersom du är administratör visas en ny åtgärd **åtkomst**.
+
+    ![Arbetsytor innehållslistan](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
 
 1. Välj **Åtkomst**.
 
@@ -69,35 +152,15 @@ Mer bakgrund finns i artikeln om [nya arbetsytor (förhandsversion)](service-new
 
 9. Välj **Lägg till** > **Stäng**.
 
-1. Power BI skapar arbetsytan och öppnar den. Den visas i listan med arbetsytor som du är medlem i. Eftersom du är administratör kan du välja ellipsen (...) för att gå tillbaka och göra ändringar i inställningarna för arbetsytan, lägga till nya medlemmar eller ändra deras behörigheter.
-
-     ![Redigera inställningar och åtkomst för en arbetsyta](media/service-create-the-new-workspaces/power-bi-edit-workspace.png)
-
-## <a name="add-content-to-your-app-workspace"></a>Lägga till innehåll i din apparbetsyta
-
-När du har skapat en apparbetsyta med det nya formatet är det dags att lägga till innehåll. Att lägga till nytt innehåll sker på ett liknande sätt i arbetsytorna med det nya och det gamla formatet, med ett undantag. När du befinner dig på endera apparbetsyta kan du ladda upp eller ansluta till filer, precis som på Min arbetsyta. I de nya arbetsytorna kan du inte ansluta till organisationsinnehållspaket eller innehållspaket från tredje part såsom Microsoft Dynamics CRM, Salesforce eller Google Analytics. I de aktuella arbetsytorna kan du ansluta till innehållspaket.
-
-När du visar innehåll i innehållslistan på en apparbetsyta visas apparbetsytans namn som ägare.
-
-### <a name="connecting-to-third-party-services-in-new-workspaces-preview"></a>Ansluta till tjänster från tredje part i nya arbetsytor (förhandsversion)
-
-I de nya arbetsytorna gör vi en ändring för att fokusera på *appar*. Appar för tjänster från tredje part gör det enkelt för användare att hämta data från de tjänster som de använder, till exempel Microsoft Dynamics CRM, Salesforce eller Google Analytics.
-Organisationsappar ger användarna de interna data de behöver. Vi planerar att lägga till funktioner i organisationsappar så att användare kan anpassa det innehåll de hittar i apparna. Den funktionen tar bort behovet av innehållspaket. 
-
-Med förhandsversionen av de nya arbetsytorna kan du inte skapa eller använda innehållspaket för organisationen. Du kan i stället använda de appar som tillhandahålls för att ansluta till tjänster från tredje part eller be att dina egna team tillhandahåller appar för eventuella innehållspaket som du använder. 
 
 ## <a name="distribute-an-app"></a>Distribuera en app
 
-När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Du kan skapa en app från varje arbetsyta. Dina medarbetare kan få appen på ett par olika sätt. Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera din app från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md).
+Om du vill distribuera officiella innehåll till en stor publik i din organisation kan du publicera en app från din arbetsyta.  När innehållet är klar kan du välja vilka instrumentpaneler och rapporter som du vill publicera och sedan publicera den som en *app*. Du kan skapa en app från varje arbetsyta.
 
-## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Konvertera gamla apparbetsytor till nya apparbetsytor
-
-Under förhandsversionsperioden kan du inte automatiskt konvertera dina gamla apparbetsytor till nya. Du kan dock skapa en ny apparbetsyta och publicera ditt innehåll till den nya platsen. 
-
-När de nya arbetsytorna blir allmänt tillgängliga (GA, generally available) kan du välja att gå med för att migrera gamla automatiskt. Någon gång efter GA måste du migrera dem.
+Läs mer om [publicera en app från de nya arbetsytorna](service-create-distribute-apps.md)
 
 ## <a name="next-steps"></a>Nästa steg
-* Läs om att [organisera arbete i de nya arbetsytorna (förhandsversion) i Power BI](service-new-workspaces.md)
-* [Skapa de aktuella arbetsytorna](service-create-workspaces.md)
-* [Installera och använda appar i Power BI](service-create-distribute-apps.md)
+* Läs mer om [ordna arbete i den nya upplevelsen för arbetsytor i Power BI](service-new-workspaces.md)
+* [Skapa klassiska arbetsytor](service-create-workspaces.md)
+* [Publicera en app från de nya arbetsytorna i Power BI](service-create-distribute-apps.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)

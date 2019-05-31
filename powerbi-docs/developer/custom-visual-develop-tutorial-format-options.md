@@ -10,11 +10,11 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
 ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695160"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61380455"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Självstudie: Lägga till formateringsalternativ till ett anpassat visuellt Power BI-objekt
 
@@ -211,7 +211,7 @@ Ange egenskapsvärden för det anpassade visualiseringsprojektet, uppdatera ikon
 
 6. Spara filen **pbiviz.json**.
 
-7. Observera i objektet **tillgångar** att dokumentet definierar en sökväg till en ikon. Ikonen är den bild som visas i fönstret **_Visualiseringar_**. Det måste vara en **PNG**-fil, *20 x 20 pixlar*.
+7. Observera i objektet **tillgångar** att dokumentet definierar en sökväg till en ikon. Ikonen är den bild som visas i fönstret **_Visualiseringar_** . Det måste vara en **PNG**-fil, *20 x 20 pixlar*.
 
 8. Kopiera filen icon.png i Utforskaren och ersätt sedan standardfilen i tillgångsmappen genom att klistra in den.
 
@@ -251,7 +251,7 @@ Nu kan du öppna Power BI Desktop-rapporten och importera det visuella Circle Ca
 
 6. När det visuella objektet har importerats väljer du **OK**.
 
-7. Kontrollera att det visuella objektet har lagts till i fönstret **_Visualiseringar_**.
+7. Kontrollera att det visuella objektet har lagts till i fönstret **_Visualiseringar_** .
 
     ![Visa i PBI Desktop viz-fönstret](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 

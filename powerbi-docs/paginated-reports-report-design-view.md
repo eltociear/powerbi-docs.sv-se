@@ -1,24 +1,24 @@
 ---
 title: Navigera i rapportens designvy för sidnumrerade rapporter (förhandsversion)
 description: Rapportens designvyn i Report Builder är designutrymmet för att skapa sidnumrerade rapporter som du kan publicera i Power BI-tjänsten.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174785"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423360"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigera i rapportens designvy för sidnumrerade rapporter (förhandsversion)
 
-Rapportens designvyn i Report Builder är designutrymmet för att skapa sidnumrerade rapporter som du kan publicera i Power BI-tjänsten. Designytan är i mitten av Report Builder med menyfliksområdet och fönster runt den. Designytan är där du lägger till och organiserar dina rapportobjekt. Den här artikeln förklarar fönstren du använder för att lägga till och ordna resurserna i rapporten och för att ändra rapportegenskaper för objektet.  
+Design av rapportvyn i Power BI Report Builder är design utrymme för att skapa sidnumrerade rapporter som du kan publicera till Power BI-tjänsten. Designytan är i mitten av Report Builder med menyfliksområdet och fönster runt den. Designytan är där du lägger till och organiserar dina rapportobjekt. Den här artikeln förklarar fönstren du använder för att lägga till och ordna resurserna i rapporten och för att ändra rapportegenskaper för objektet.  
 
 ![Rapportens designvyn i Report Builder](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 

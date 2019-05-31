@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514643"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
@@ -127,7 +127,7 @@ Frågan läses in i Power BI Desktop **rapportvyn** där du kan se den i fönstr
    ![Fönstret Fält](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 >[!TIP]
 >Du kan alltid komma tillbaka till **Power Query Editor** för att redigera och förfina frågan genom att:
->- Välja ellipsen (**...** ) **Fler alternativ** bredvid **EM- vinnare** i rutan **Fält** och välja **Redigera fråga** i listrutan, eller
+>- Välja ellipsen ( **...** ) **Fler alternativ** bredvid **EM- vinnare** i rutan **Fält** och välja **Redigera fråga** i listrutan, eller
 >- Välja **Redigera frågor** > **Redigera frågor** i gruppen **Externa data** för menyfliken **Start** i rapportvyn. 
 
 ## <a name="create-a-visualization"></a>Skapa en visualisering
@@ -163,7 +163,7 @@ Du kan ändra utseendet på en visualisering genom att markera den och sedan vä
    ![Ändra färg](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
    
 3. Välj **Rubrik** för att expandera rubrikalternativ, och i fältet **Rubrik** anger du **EM-vinnare** i stället för den aktuella titeln. 
-4. Ändra **Teckenfärg** till röd, **Textstorlek** till **12**, och **Teckensnittsfamilj** till **Segoe (Bold)**. 
+4. Ändra **Teckenfärg** till röd, **Textstorlek** till **12**, och **Teckensnittsfamilj** till **Segoe (Bold)** . 
    
    ![Formatera datafärger](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
    
@@ -181,7 +181,7 @@ Du kan ändra typ för en visualisering genom att markera den och sedan välja e
 
 >[!TIP]
 >- Du kan använda formateringsalternativen **Datafärger** för att göra ”Tyskland” och ”Västtyskland” till samma färg. 
->- För att gruppera samman länder med flest vinster på cirkeldiagrammet, välj elipsen (**...** ) längst upp till höger om visualiseringen och välj sedan **Sortera efter antal år** i listrutan. 
+>- För att gruppera samman länder med flest vinster på cirkeldiagrammet, välj elipsen ( **...** ) längst upp till höger om visualiseringen och välj sedan **Sortera efter antal år** i listrutan. 
 
 I Power BI Desktop är det enkelt att hämta data från en stor mängd datakällor och utforma dem efter dina analysbehov för att visualisera datan på interaktiva sätt. När rapporten är klar kan du [ladda upp den på Power BI](desktop-upload-desktop-files.md) och skapa instrumentpanelen som baseras på den, och sedan dela den med andra Power BI-användare.
 

@@ -12,11 +12,11 @@ ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 3835bedc1b4ab2df87abf4704ef338ff7f4abc5d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61393106"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vattenfallsdiagram i Power BI
 Ett vattenfallsdiagram visar en löpande summa efter hand som värden adderas eller subtraheras. Det är användbart för att förstå hur ett startvärde (till exempel nettointäkter) påverkas av en serie positiva och negativa förändringar.
@@ -47,7 +47,7 @@ Vi ska skapa ett vattenfallsdiagram som visar försäljningsvarians (uppskattad 
 4. Välj **Tid** \> **FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Kategori**. 
    
     ![vattenfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
-5. Sortera vattenfallsdiagrammet kronologiskt. Välj ellipserna (...) i övre högra hörnet och välj **FiscalMonth (Räkenskapsmånad)**.
+5. Sortera vattenfallsdiagrammet kronologiskt. Välj ellipserna (...) i övre högra hörnet och välj **FiscalMonth (Räkenskapsmånad)** .
    
     ![välj sortera efter > FiscalMonth (Räkenskapsmånad)](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    

@@ -12,11 +12,11 @@ ms.date: 02/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 2f8c2468b56db190f9e794ed2d81ce86449a970d
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661892"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61048280"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigering: sökning, lokalisering och sortering av innehåll i Power BI-tjänsten
 Det finns många sätt att navigera i innehållet i Power BI-tjänsten. Innehållet är organiserat inom din arbetsyta efter typ: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.  Och innehållet ordnas också efter användning: favoriter, senaste, appar, delas med mig och funktioner. För en sömlös navigering, organiserar startsidan innehållet på en enda sida. Med dessa olika vägar till ditt innehåll kan du snabbt hitta det du söker i Power BI-tjänsten.  

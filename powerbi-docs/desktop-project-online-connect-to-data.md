@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a1f55d09de68d5ac29b81c72f3b1dc6cf98c1597
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: b0dc84d7b2d8da0df8a9e61a43f35898d197c188
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289956"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65513768"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: anslut till data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
@@ -30,16 +30,16 @@ Du kan ansluta till data i Project Online via Power BI Desktop.
 3. Välj **OData-flöde** och välj **Anslut**.
 4. Ange adressen för ditt OData-flöde i URL-rutan och klicka sedan på OK.
    
-   Om adressen till din Project Web App-webbplats liknar https://\<tenantname\>.sharepoint.com/sites/pwa, är adressen du ska ange för ditt OData-flöde https://\<tenantname\>.sharepoint.com/sites/ pwa/\_api/Projectdata.
+   Om adressen till din Project Web App-webbplats liknar *https://\<tenantname\>.sharepoint.com/sites/pwa*, så är den adress som du anger för ditt OData-flöde är *https://\<tenantname\>.sharepoint.com/sites/pwa/\_api/Projectdata*.
    
    I det här exemplet använder vi https://contoso.sharepoint.com/sites/pwa/default.aspx
 5. Power BI Desktop ber dig att autentisera med ditt Office 365-konto. Välj organisationskonto och ange dina autentiseringsuppgifter.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
 
-Observera att det konto som du använder för att ansluta till OData-flödet som minst måste ha åtkomst genom portföljvyn för Project Web App-webbplatsen. 
+Det konto som används för att ansluta till OData-feed måste minst ha åtkomst genom Portföljvyn för Project Web App-webbplatsen. 
 
-Härifrån kan du välja vilka tabeller du vill ansluta till och skapa en fråga.  Vill du ha en uppfattning om hur du kommer igång?  Följande blogginlägg visar hur du skapar ett burndown-diagram från dina Project Online-data.  Blogginlägget refererar till att använda Power Query för att ansluta till Project Online, men detta gäller även för Power BI Desktop.
+Härifrån kan du välja vilka tabeller du vill ansluta till och skapa en fråga.  Vill du ha en uppfattning om hur du kommer igång?  Följande blogginlägg visar hur du skapar en bränna ned diagram från dina Project Online-data.  Blogginlägget refererar till att använda Power Query för att ansluta till Project Online, men detta gäller även för Power BI Desktop.
 
-[Skapa burndown-diagram för projekt med Power Pivot och Power Query](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
+[Skapa bränna ned diagram för projekt med hjälp av Power Pivot och Power Query](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8e5755f632a0cfab8b0b4bc79871c96ee9e2aeef
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264078"
+---
 Välkommen till avsnittet **Utforska data** i den **interaktiva utbildningen** för Power BI. Nu när du har bekantat dig med Power BI Desktop och hur du hämtar och visualiserar data är du redo att utforska data i Power BI-tjänsten.
 
 ![](media/4-0-intro-power-bi-service/4-0_2.png)

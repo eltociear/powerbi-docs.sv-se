@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a0510b9f9bc7303d7ed63a5a1c4c7ee9862d7c85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256961"
+---
 Du klarade det! **Grattis!** Du har slutfört kursen **Interaktiv utbildning** för Power BI. Du har nu gått igenom hela processen och lärt dig allt om de grundläggande delarna i Power BI, tagit en rundtur bland programvarufunktionerna och -delarna och lärt dig hur alltihop fungerar tillsammans.
 
 ![](media/6-5-guided-learning-completion/c0a0_2.png)

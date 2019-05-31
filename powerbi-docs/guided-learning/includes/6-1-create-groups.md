@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e3d62b182f9b142f912a608bee693b7356b1a68d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257006"
+---
 Den här lektionen inleder vi med att skapa en *grupp*. En **grupp** definieras som en uppsättning användare som har åtkomst till specifika instrumentpaneler, rapporter och data.
 
 Grupper i Power BI baseras på grupper i Office 365, så om du har använt Office 365-grupper för att hantera din grupp-e-post, kalender och dokument kommer du att upptäcka att Power BI har samma funktioner, och mycket mer. När du skapar en grupp i Power BI skapar du egentligen en Office 365-grupp.

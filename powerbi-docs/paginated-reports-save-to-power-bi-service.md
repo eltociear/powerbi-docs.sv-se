@@ -1,20 +1,20 @@
 ---
 title: Publicera en sidnumrerad rapport i Power BI-tjänsten (förhandsversion)
 description: I den här självstudien får du lära dig att publicera en sidnumrerad rapport i Power BI-tjänsten genom att överföra den från din lokala dator.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174555"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61424114"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicera en sidnumrerad rapport i Power BI-tjänsten (förhandsversion)
 
@@ -26,7 +26,7 @@ Om rapportdatakällan finns lokalt, måste du [skapa en gateway](#create-a-gatew
 
 Om arbetsytan inte har diamantikonen ![Diamantikon för Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) bredvid namnet, behöver du lägga till arbetsytan till en Premium-kapacitet. 
 
-1. Välj **Arbetsytor**, välj ellipsen (**...**) bredvid arbetsytans namn och välj sedan **Redigera arbetsyta**.
+1. Välj **Arbetsytor**, välj ellipsen ( **...** ) bredvid arbetsytans namn och välj sedan **Redigera arbetsyta**.
 
     ![Välj Redigera arbetsyta](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 

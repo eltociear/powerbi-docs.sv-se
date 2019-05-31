@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 605ef74cc97843cc475a677f5fa2ebdbdaec909a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264058"
+---
 Ibland kan det hända att du har mer innehåll än vad som får plats på arbetsytan när du skapar dina instrumentpaneler. Det finns några lösningar som du kan ta hjälp av när du väljer hur instrumentpanelens yta ska visas, och som ger dig en fullständig överblick över instrumentpanelens innehåll.
 
 Det enklaste sättet att visa hela instrumentpanelen på en skärm är att välja knappen **Helskärmsläge** i instrumentpanelens övre högra hörn.

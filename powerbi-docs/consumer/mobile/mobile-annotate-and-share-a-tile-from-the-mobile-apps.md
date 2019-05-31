@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: b3f0232fdf377ba75a31f5057f1e094bf9fac39d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 8d48f7c42ac88f5a3b659bf4aff2ece65a2010e5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54273603"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61343059"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentera och dela en panel, rapport eller ett visuellt objekt i Power BI-mobilapparna
 Gäller för:
@@ -29,7 +29,7 @@ Du kan kommentera och dela en ögonblicksbild av en panel, rapport eller visuali
 
 *En rapport med kommentarer*
 
-E-postmeddelandet med ögonblicksbilden av panelen, rapporten eller det visuella objektet inkluderar även en länk till det faktiska objektet i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Dina mottagare kan klicka på länken och gå direkt till den panelen, rapporten eller visualiseringen, om du och de har Power BI Pro-licenser eller om innehållet ligger på en [Premium-kapacitet](../../service-premium.md) och du redan har delat objektet med dem. 
+E-postmeddelandet med ögonblicksbilden av panelen, rapporten eller det visuella objektet inkluderar även en länk till det faktiska objektet i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Dina mottagare kan klicka på länken och gå direkt till den panelen, rapporten eller visualiseringen, om du och de har Power BI Pro-licenser eller om innehållet ligger på en [Premium-kapacitet](../../service-premium-what-is.md) och du redan har delat objektet med dem. 
 
 Du kan [dela en panel från Power BI-mobilappen för Windows 10-enheter](mobile-windows-10-phone-app-get-started.md) också, men inte kommentera den.
 

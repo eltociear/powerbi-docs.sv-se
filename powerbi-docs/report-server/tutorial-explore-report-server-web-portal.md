@@ -1,20 +1,20 @@
 ---
 title: 'Självstudie: Utforska Power BI-rapportservern på en virtuell dator'
 description: I de här självstudierna skapar du en virtuell dator med Power BI-rapportservern redan installerad och utforskar webbportalen.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
-ms.date: 05/18/2018
-ms.author: maghan
-ms.openlocfilehash: 098aa1cd2c031a200e3ce246890a467a6e15149d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/06/2019
+ms.author: maggies
+ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325092"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65240051"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Självstudie: Utforska webbportalen för Power BI-rapportserver i en virtuell dator
 I de här självstudierna skapar du en virtuell Azure-dator med Power BI-rapportservern redan installerad, så att du kan visa, redigera och hantera exempel på Power BI- och sidnumrerade rapporter samt KPI:er.
@@ -37,32 +37,38 @@ För de här självstudierna behöver du en Azure-prenumeration. Om du inte har 
 
 Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power BI-rapportservern redan installerad.
 
-1. Öppna [Power BI-rapportservern](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview) på Microsoft Azure Marketplace.  
+1. I Azure Marketplace, väljer du Power BI Report Server. Den här länken öppnar den direkt: [Power BI-rapportserver](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Välj **Hämta nu**.
 3. Om du accepterar leverantörens användningsvillkor och sekretesspolicy väljer du **Fortsätt**.
 
-    ![Skapa en virtuell dator med Power BI-rapportserver](media/tutorial-explore-report-server-web-portal/power-bi-report-server-virtual-machine-create.png)
+4. Välj **Skapa**.
 
-4. **Steg 1: Grundläggande** för **namn på virtuell dator**, kalla den **reportservervm**.
+    ![Skapa en virtuell dator med Power BI-rapportserver](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
+
+5. I **grunderna i steg 1**, för **namn på virtuell dator**, anropar det **reportservervm**.
+
+    Power BI Report Server-VM-namnet får inte innehålla bindestreck.
 
 5. Skapa ett användarnamn och ett lösenord.
 
-6. För **Resursgrupp** behåller du **Skapa ny** och kallar den **reportserverresourcegroup**.
+6. För **resursgrupp**väljer **Skapa nytt**, och ge den **reportserverresourcegroup** > **OK**.
 
     Om du går igenom kursen mer än en gång måste du ge resursgruppen ett annat namn efter första gången. Du kan inte använda samma namn på resursgruppen två gånger i samma prenumeration. 
 
-7. Behåll de övriga standardvärdena > **OK**.
-
     ![Namnge den virtuella datorn och resursgruppen](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
 
-8. **Steg 2: Inställningar**, behåll standardvärdena > **OK**.
+7. Behåll de övriga standardvärdena > **OK**.
 
-9. **Steg 3: Sammanfattning** > **OK**.
+8. I **steg 2 inställningar**, behåller du standardvärdena > **OK**.
+ 
+    Den **SQL Storage-konto** och **lagringskonto för diagnostik** värdena måste också vara unika. Om du går igenom självstudiekursen mer än en gång kan behöva du ge dem olika namn.
 
-10. **Steg 4**: Läs igenom användarvillkoren och sekretesspolicyn > **Skapa**.
+9. I **steg 3 sammanfattning**, granska dina val > **OK**.
 
-    Processen för att **skicka distribution för Power BI-rapportservern** tar ett par minuter.
+10. I **steg 4 köpa**, Läs licensvillkoren för användar- och sekretess princip > **skapa**.
+
+    Den **skickar distribution för Power BI Report Server** processen kan ta flera minuter.
 
 ## <a name="connect-to-your-virtual-machine"></a>Anslut till den virtuella datorn
 
@@ -78,11 +84,13 @@ Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power
 
     ![Anslut till den virtuella datorn](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. Välj **Anslut** i dialogrutan för anslutning till fjärrskrivbord.
+5. I den **Anslut till den virtuella datorn** fönstret behåller du standardvärdena och välj **ladda ned RDP-filen**.
+
+1. I den **anslutning till fjärrskrivbord** dialogrutan **Connect**.
 
 6. Ange det namn och lösenord som du skapade för den virtuella datorn > **OK**.
 
-7. Nästa dialogruta säger att fjärrdatorns identitet inte kan identifieras. Välj **Ja**.
+7. Nästa dialogruta säger **identiteten för fjärrdatorn kan inte identifieras**. Välj **Ja**.
 
    Ta-da! Din nya virtuella dator öppnas.
 
@@ -90,15 +98,15 @@ Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power
 
 När den virtuella datorn öppnas visas nedanstående objekt på skrivbordet.
 
-![Den virtuella datorn med Power BI-rapportservern startar](media/tutorial-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
+![Den virtuella datorn med Power BI-rapportservern startar](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
 |Tal  |Vad det är  |
 |---------|---------|
-|![Nummer 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Startar SQL Server Data Tools för att skapa sidnumrerade rapporter (av typen .RDL) |
-|![Nummer 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Exempel på Power BI-rapporter (av typen .PBIX)  |
-|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Länkar till Power BI-rapportserverns dokumentation   |
-|![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Startar Power BI Desktop som har optimerats för Power BI-rapportservern (mars 2018)  |
-|![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Öppnar Power BI-rapportserverns webbportal i webbläsaren   |
+|![Nummer 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Exempel på Power BI-rapporter (av typen .PBIX) |
+|![Nummer 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Länkar till Power BI-rapportserverns dokumentation |
+|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Startar Power BI Desktop optimerad för Power BI-rapportservern (januari 2019) |
+|![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Öppnar Power BI-rapportserverns webbportal i webbläsaren |
+|![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Startar SQL Server Data Tools för att skapa sidnumrerade rapporter (av typen .RDL) |
 
 Dubbelklicka på ikonen för **rapportserverns webbportal**. Webbläsaren öppnar `http://localhost/reports/browse`. I webbportalen kan du se olika filer grupperade efter typ. 
 
@@ -117,7 +125,7 @@ Dubbelklicka på ikonen för **rapportserverns webbportal**. Webbläsaren öppna
 ## <a name="tag-your-favorites"></a>Tagga dina favoriter
 Du kan tagga de rapporter och KPI:er som du vill ska vara favoriter. De är lättare att hitta eftersom de är samlade i en enda favoritmapp, både i webbportalen och i Power BI-mobilappar. 
 
-1. Välj ellipsen (**...**) i det övre högra hörnet i av **Vinstmarginal** KPI > **Lägg till i favoriter**.
+1. Välj ellipsen ( **...** ) i det övre högra hörnet i av **Vinstmarginal** KPI > **Lägg till i favoriter**.
    
     ![Lägg till i Favoriter](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Välj **favoriter** från webbportalens menyflik för att se dem tillsammans med dina andra favoriter på favoriter-sidan i webbportalen.
@@ -131,7 +139,7 @@ Som standard visar webbportalen innehållet i panelvyn.
 
 Du kan växla till listvy, där det är enkelt att flytta eller ta bort flera objekt i taget. 
 
-1. Select **panel** > **-listan**.
+1. Select **panel** >  **-listan**.
    
     ![Växla vyer](media/tutorial-explore-report-server-web-portal/report-server-web-portal-list-view.png)
 
@@ -155,11 +163,9 @@ Du kan visa och interagera med Power BI-rapporter i webbportalen och starta Powe
 
 1. Välj **Tillåt** för att tillåta att den här webbplatsen får öppna ett program på datorn. 
 
-     Rapporten öppnas i Power BI Desktop. Notera namnet på den översta raden, ”Power BI Desktop (mars 2018)”. Det är den version som optimerats för Power BI-rapportservern.
+     Rapporten öppnas i Power BI Desktop. Notera namnet i det översta fältet ”Power BI Desktop (januari 2019)”. Det är den version som optimerats för Power BI-rapportservern.
 
-    ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
-
-     Använd versionen av Power BI Desktop som är installerad på den virtuella datorn. Du kan inte ladda upp en rapport på en annan domän.
+    Använd versionen av Power BI Desktop som är installerad på den virtuella datorn. Du kan inte ladda upp en rapport på en annan domän.
 
 3. I fönstret Fält expanderar du tabellen Kunder och drar fältet Sysselsättning till Rapportnivåfilter.
 

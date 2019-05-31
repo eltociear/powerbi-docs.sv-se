@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a6d283048f0a4d7e282f7d4c608e279ca848dfc9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257136"
+---
 Beräknade tabeller är en funktion i DAX som gör det möjligt att uttrycka en rad nya funktioner för modellering. Om du vill skapa olika typer av kopplingar för sammanslagning eller skapa nya tabeller direkt baserat på resultatet av en funktionell formel, är beräknade tabeller rätt sätt att göra det på.
 
 Om du vill skapa en beräknad tabell väljer du **Datavy** i Power BI Desktop på vänster sida i rapportarbetsytan.

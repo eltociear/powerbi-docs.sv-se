@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 896c415028b99db8662e93b5d709b76520996fef
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e461480f53f4a97aeb4282e64a8a03eb8e1418d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275765"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187828"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI är ett kombinationsdiagram en enskild visualisering som kombinerar ett linjediagram med ett stapeldiagram. Om du kombinerar de två diagrammen till ett kan du göra en snabbare jämförelse av dina data.
@@ -48,14 +48,14 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
 3. Lägg till en ny rapportsida.
 4. Skapa ett stapeldiagram som visar årets försäljning och bruttomarginal per månad.
 
-    a.  Välj **Försäljning** \> **This Year Sales (Årets försäljning)** > **Värde** i fönstret Fält.
+    a.  Välj **Försäljning** \> **This Year Sales (Årets försäljning)**  > **Värde** i fönstret Fält.
 
     b.  Dra **Försäljning** \> **Gross Margin This Year (Årets bruttomarginal)** till området **Värde**.
 
-    c.  Välj **Tid**\>**FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Axel**.
+    c. Välj **Tid**\>**FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Axel**.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)**. Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)**.
+5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)** . Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** .
 
 6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Det finns två kombinationsdiagram: **Linjediagram och stående stapeldiagram** samt **Linjediagram och grupperat stående stapeldiagram**. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
 
@@ -71,7 +71,7 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
 ## <a name="create-a-combo-chart-with-two-axes"></a>Skapa ett kombinationsdiagram med två axlar
 I det här steget ska vi jämföra bruttomarginal och försäljning.
 
-1. Skapa ett nytt linjediagram som spårar **Bruttomarginal förra året %** efter **Månad**. Välj ellipserna för att sortera efter **Month** (Månad) och **Ascending** (Stigande).  
+1. Skapa ett nytt linjediagram som spårar **bruttomarginal förra året %** av **FiscalMonth**. Välj ellipserna för att sortera efter **Month** (Månad) och **Ascending** (Stigande).  
 I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
@@ -83,22 +83,22 @@ I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 4. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**. Power BI skapar två axlar, vilket medför att datauppsättningarna kan skalas på olika sätt; den till vänster mäter dollar försäljning och den till höger procentandel. Svaret på frågan ovan är ja, vi ser ett liknande mönster.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
+   ![](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Lägga till rubriker på axlarna
 1. Välj färgrollerikonen ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) för att öppna formateringsfönstret.
 2. Välj nedpilen för att expandera alternativen för **y-axeln**.
-3. För **Y-axel (kolumn)** anger du **Position** till **Vänster** och **Rubrik** till **På**,  **Format** till **Visa endast rubriken** och **Visa** som **Miljoner**.
+3. För **y-axeln (kolumn)** anger **Position** till **vänster**anger **rubrik** till **på**,  **Style** till **Visa endast rubriken**, och **visningsenheter** som **miljoner**.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
-4. Under **Y-axeln (kolumn)**, bläddrar du ned och kontrollerar att **Visa sekundär** är **På**. Detta visar alternativ för att formatera linjediagramsdelen i kombinationsdiagrammet.
+   ![](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
+4. Under **y-axeln (kolumn)** , rulla nedåt tills du ser **visa sekundär**. Eftersom det finns många alternativ för Y-axeln kan behöva du använda båda rullningslisterna. Visa sekundär avsnittet visar alternativ för att formatera linjediagramsdelen i Kombinationsdiagrammet.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
 5. För **Y-axeln (rad)** lämnar du **Position** som **Höger**, ställer in **Rubrik** till **På** och ställer in **Format** på **Visa endast rubriken**.
 
    Kombinationsdiagrammet visar nu dubbla axlar, båda med rubriker.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
 
 6. Du kan också ändra teckensnitt, storlek och färg och ställa in andra formateringsalternativ för att förbättra visning och läsbarhet av diagrammet.
 

@@ -12,11 +12,11 @@ ms.date: 09/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 079494a47452ca0ca043032f78fa35c7d1755d11
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282573"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61068752"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Diagram med radiella mätare i Power BI
 Ett diagram med radiell mätare har en cirkelformad båge och visar ett värde som mäter framsteg på ett mål/KPI.  Målet, eller målvärdet, representeras av strecket (nålen). Framsteg mot målet representeras av skuggningen.  Och det värde som representerar förloppet visas i fetstil i bågen. Alla möjliga värden är jämnt fördelade längs bågen, från det lägsta (värdet längst till vänster) värdet till det högsta (värdet längst till höger).
@@ -69,7 +69,7 @@ Du kan också titta på när Will visar hur du skapar ett enskilt visuellt mått
 ### <a name="step-3-set-a-target-value"></a>Steg 3: Ange ett målvärde
 1. Dra **kostnad för sålda varor** till den **Målvärde**.
 2. Ändra aggregering till **Genomsnitt**.
-   Power BI lägger till en nål som representerar vårt målvärde på **145 480 $**. Observera att vi har överskridit våra mål.
+   Power BI lägger till en nål som representerar vårt målvärde på **145 480 $** . Observera att vi har överskridit våra mål.
    
    ![](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
    

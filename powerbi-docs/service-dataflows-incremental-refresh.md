@@ -1,23 +1,23 @@
 ---
 title: Använda inkrementell uppdatering med Power BI-dataflöden
 description: Lär dig hur du konfigurerar inkrementella uppdateringar för dataflöden
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
-ms.author: davidi
+ms.date: 04/02/2019
+ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 224fc07fccc2b12b0a28c016f427a4d5f4613290
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293728"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136654"
 ---
-# <a name="using-incremental-refresh-with-power-bi-dataflows-preview"></a>Använda inkrementell uppdatering med Power BI-dataflöden (förhandsversion)
+# <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Använda inkrementell uppdatering med Power BI-dataflöden
 
 Med dataflöden kan du hämta stora mängder data till Power BI för att skapa övertygande rapporter och analyser. I vissa fall är det dock inte praktiskt att uppdatera en fullständig kopia av källdata i varje uppdatering. Ett bra alternativ är **inkrementell uppdatering**, vilket ger följande fördelar för dataflöden:
 
@@ -27,13 +27,13 @@ Med dataflöden kan du hämta stora mängder data till Power BI för att skapa �
 
 ![Inkrementell uppdatering för dataflöden](media/service-dataflows-incremental-refresh/dataflows-incremental-refresh_03.png)
 
-Med inkrementell uppdatering för Power BI-dataflöden krävs att arbetsytan där dataflödet finns har [Premiumkapacitet](service-premium.md) för att köras, och den datakälla som matas in i dataflödet måste ha ett fält med *datetime* på vilket inkrementell uppdatering kan filtrera. 
+Med inkrementell uppdatering för Power BI-dataflöden krävs att arbetsytan där dataflödet finns har [Premiumkapacitet](service-premium-what-is.md) för att köras, och den datakälla som matas in i dataflödet måste ha ett fält med *datetime* på vilket inkrementell uppdatering kan filtrera. 
 
 ## <a name="configuring-incremental-refresh-for-dataflows"></a>Konfigurera inkrementell uppdatering för dataflöden
 
 Ett dataflöde kan innehålla många entiteter. Inkrementell uppdatering har ställts in på enhetsnivå, vilket tillåter att ett dataflöde har både fullständigt uppdaterade entiteter och stegvis uppdaterade entiteter.
 
-Om du vill konfigurera en inkrementell uppdaterad entitet, börja med att konfigurera din entitet precis som vilken annan entitet som helst. Mer information om hur du ställer in dataflöde finns i [Självbetjänad dataförberedelse i Power BI (förhandsversion)](service-dataflows-overview.md).
+Om du vill konfigurera en inkrementell uppdaterad entitet, börja med att konfigurera din entitet precis som vilken annan entitet som helst. Mer information om hur du ställer in dataflöde finns [självbetjänad Förbered i Power BI](service-dataflows-overview.md).
 
 När dataflödet skapas och sparas, väljer du ikonen **inkrementell uppdatering** i entitetsvyn enligt följande bild:
 
@@ -156,8 +156,8 @@ Den här artikeln beskriver inkrementell uppdatering av dataflöden. Här följe
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)

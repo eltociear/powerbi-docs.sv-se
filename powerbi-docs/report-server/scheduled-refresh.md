@@ -1,20 +1,20 @@
 ---
 title: Schemalagd uppdatering av Power BI-rapport i Power BI-rapportserver
 description: Power BI-rapporter kan ansluta till olika datakällor. Beroende på hur data används, finns olika datakällor tillgängliga.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 81bd3dc166a92f7be6fe9081f4b88feedc7514d3
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
-ms.translationtype: HT
+ms.author: mblythe
+ms.openlocfilehash: ca2c37a93652bf0f622c7154fe8438faf4c70ac1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394757"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051023"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Schemalagd uppdatering av Power BI-rapport i Power BI-rapportserver
 Schemalagd uppdatering för Power BI-rapporter gör att data för en rapport hålls uppdaterad.
@@ -34,6 +34,7 @@ Flera komponenter ingår när du använder schemalagd uppdatering för Power BI-
 * Datamodellen laddas i en Analysis Services-instans.
 * För vissa datakällor, används Power Query Mashup Engine för att ansluta till datakällor och transformera data. Andra datakällor går att ansluta till direkt från en Analysis Services-tjänst som används som värd för datamodellerna för Power BI-rapportserver.
 * Nya data laddas i datamodellen i Analysis Services.
+* I en konfiguration för skalbar kan datamodellen replikeras mellan noder.
 * Analysis Services bearbetar data och utför nödvändiga beräkningar.
 
 Power BI-rapportserver har en händelsekö för alla schemalagda åtgärder. Den frågar kön med jämna mellanrum för att söka efter nya händelser. Som standard genomsöks kön i 10-sekundersintervall. Du kan ändra intervallet genom att ändra konfigurationsinställningarna **PollingInterval**, **IsNotificationService** och **IsEventService** i filen RSReportServer.config. **IsDataModelRefreshService** kan också användas för att ange om en rapportserver bearbetar schemalagda händelser.

@@ -1,20 +1,20 @@
 ---
 title: Säkerhet på radnivå (RLS) i Power BI-rapportservern
 description: Läs mer om säkerhet på radnivå (RLS) i Power BI-rapportservern.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: b4a5d11697cff2cae8d137916636907967a7c276
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489578"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769814"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Säkerhet på radnivå (RLS) i Power BI-rapportservern
 
@@ -46,7 +46,7 @@ När du sparar rapporten i Power BI-rapportservern hanterar du säkerhet och lä
  Om rapporten inte har de roller som behövs måste du öppna den i Power BI Desktop, lägga till eller ändra roller och sedan spara den igen på Power BI-rapportservern. 
 
 1. Spara rapporten på Power BI-rapportservern i Power BI Desktop. Du måste använda Power BI Desktop-versionen som har optimerats för Power BI-rapportservern.
-2. I Power BI-rapporttjänsten väljer du de tre punkterna (**...**) bredvid rapporten. 
+2. I Power BI-rapporttjänsten väljer du de tre punkterna ( **...** ) bredvid rapporten. 
 
 3. Välj **Hantera** > **Säkerhet på radnivå**. 
 

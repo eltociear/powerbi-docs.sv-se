@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5fc013df4526c62a9f2e1aa25328119983aaa30e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d5259ba22287a8a2ade3107e4320c39713dcb45e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278111"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65239758"
 ---
 # <a name="customizing-tooltips-in-power-bi-desktop"></a>Anpassa knappbeskrivningar i Power BI Desktop
 Knappbeskrivningar är ett elegant sätt att visa sammanhanget och detaljerad information om datapunkter. Följande bild visar en knappbeskrivning som tillämpas på ett diagram i Power BI Desktop.
 
 ![Standardknappbeskrivning](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-När ett visuellt objekt skapas visas standardknappbeskrivningen datapunktens värde och kategori. Det finns många fall då det vore användbart att kunna anpassa knappbeskrivningen och visa användaren sammanhanget eller mer information om datapunkten. Med anpassade knappbeskrivningar kan du ange fler datapunkter som ska visas som del av knappbeskrivningen.
+När ett visuellt objekt skapas visas standardknappbeskrivningen datapunktens värde och kategori. Det finns många instanser när anpassa knappbeskrivningen informationen är användbar och kan ange ytterligare kontext och information för användare som visar det visuella objektet. Med anpassade knappbeskrivningar kan du ange fler datapunkter som ska visas som del av knappbeskrivningen.
 
 ## <a name="how-to-customize-tooltips"></a>Så här gör du för att anpassa knappbeskrivningar
-Om du vill skapa en anpassad knappbeskrivning i brunnen **Fält** i rutan **Visuella objekt** är det bara att dra ett fält till bucketen **Knappbeskrivningar** som visas i följande bild. I följande bild har två fält placerats i bucketen **Knappbeskrivningar**.
+Skapa en anpassad knappbeskrivning i den **fält** i den **visualiseringar** fönstret dra ett fält till den **knappbeskrivningar** bucket, enligt följande bild. I följande bild har två fält placerats i bucketen **Knappbeskrivningar**.
 
 ![Lägga till knappbeskrivningsfält](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
@@ -38,5 +38,5 @@ Du kan anpassa en knappbeskrivning ytterligare genom att välja en aggregeringsf
 
 ![Knappbeskrivning med Snabberäkning](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
-Det finns många sätt att anpassa **Knappbeskrivningar** med alla fält som är tillgängliga i din datauppsättning för att förmedla snabb information och insikter till användare som visar dina instrumentpaneler och rapporter.
+Det finns många sätt att anpassa **knappbeskrivningar**, med alla fält som är tillgängliga i din datauppsättning att förmedla snabb information och insikter till användare som visar dina instrumentpaneler och rapporter.
 

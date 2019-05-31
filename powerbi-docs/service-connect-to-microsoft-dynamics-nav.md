@@ -11,11 +11,11 @@ ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 6d8471833dac99aa3c54b40f5839e65edfaa03de
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008981"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61164651"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Ansluta till Microsoft Dynamics NAV med Power BI
 Att få insikter i dina data med Microsoft Dynamics NAV är enkelt med Power BI. Power BI hämtar dina data, både försäljning och ekonomi, och skapar sedan en app med en instrumentpanel och rapporter baserade på dessa data. Power BI behöver dina behörigheter till de tabeller data hämtas från, i det här fallet försäljnings- och ekonomirelaterade data. Mer information om kraven finns nedan. När du har installerat appen kan du visa instrumentpanelen och rapporterna i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och i Power BI-mobilapparna. 

@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
-ms.translationtype: HT
+ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136385"
 ---
-# <a name="self-service-data-prep-in-power-bi-preview"></a>Dataförberedelser med självbetjäning i Power BI (förhandsversion)
+# <a name="self-service-data-prep-in-power-bi"></a>Självbetjäning dataförberedelser i Power BI
 
 Allt eftersom att datavolymerna fortsätter att växa, ökar utmaningen att omvandla dessa data till välstrukturerad och användbar information. Vi vill ha data som är redo för analys, samt kunna uppdatera visuella objekt, rapporter och instrumentpaneler så att vi kan snabbt kan omvandla våra datavolymer till åtgärdsinriktade insikter. Med **dataförberedelser med självbetjäning** för stordata i Power BI kan du gå från data till Power BI-insikter med bara några klick.
 
@@ -26,10 +26,6 @@ Allt eftersom att datavolymerna fortsätter att växa, ökar utmaningen att omva
 Power BI introducerar **dataflöden** som hjälper organisationer att samla data från olika källor och förbereda den för modellering. Analytiker kan enkelt skapa dataflöden, med välbekanta självbetjäningsverktyg. Dataflöden används för att mata in, transformera, integrera och utöka stordata genom att definiera anslutningar till datakällor, ETL-logik, uppdateringsscheman med mera. Dessutom innebär den nya modelldrivna beräkningsmotorn som ingår i dataflöden att processen för förberedelse av data blir mer hanterbar, mer deterministisk och mindre besvärlig för dataanalytiker och rapportskapare. På liknande sätt som kalkylblad hanterar omberäkningar för alla berörda formler, hanterar dataflöden ändringar i en entitet eller ett dataelement åt dig, automatiserar uppdateringar och underlättar det som brukade vara tidskrävande logikkontroller även för grundläggande datauppdateringar. Med dataflöden kan uppgifter som tidigare krävde övervakning av dataforskare (vilket tog många timmar eller dagar), nu hanteras med några få klick av analytiker och rapportskapare. 
 
 Data lagras som entiteter i [**Common Data Service**](https://docs.microsoft.com/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Dataflöden skapas och hanteras i apparbetsytor med hjälp av Power BI-tjänsten.  
-
-> [!NOTE]
-> Dataflödesfunktionen är en förhandsversion och kan komma att ändras och uppdateras innan den är allmänt tillgänglig.
-
  
 **Dataflöden** är utformade att använda **Common Data Service**, en standardiserad, modulär och utökningsbar samling av datascheman som publicerats av Microsoft och som gör det enklare för dig att skapa, använda och analysera data. Med den här modellen kan du gå från datakällor till Power BI-instrumentpaneler utan problem.
 
@@ -112,10 +108,10 @@ Genom att lagra affärsdata i ett standardiserat format från **Common Data Serv
 I den här artikeln finns en översikt över dataförberedelser för självbetjäning för stordata i Power BI och de många användningssätt som finns. Följande artiklar går in mer i detalj på vanliga användningsscenarier för dataflöden. 
 
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Använda beräknade entiteter i Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
-* [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
-* [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
+* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Dataflöden och Azure Data Lake-integrering](service-dataflows-azure-data-lake-integration.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)

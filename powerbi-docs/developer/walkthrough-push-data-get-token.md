@@ -1,20 +1,20 @@
 ---
 title: Hämta en åtkomsttoken för autentisering
 description: Genomgång för att skicka data – hämta en åtkomsttoken för autentisering
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 0840d01a53a8d1f2c19ef1d5d263bf9a3d2d8f81
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216572"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710361"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Steg 2: Hämta en autentiseringsåtkomsttoken
 
@@ -27,13 +27,11 @@ Så här hämtar du en åtkomsttoken för autentisering.
 ## <a name="get-an-authentication-access-token"></a>Hämta en autentiseringsåtkomsttoken
 
 > **Obs!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
-> 
-> 
 
-1. I Visual Studio 2015, skapar du ett **Konsolprogram**-projekt.
-2. Installera [Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Om du vill hämta en säkerhetstoken för autentisering i en .NET-app, använder du det här paketet. Så här installerar du paketet:
+1. I Visual Studio (2015 eller senare) skapar du en **konsolprogram** projekt.
+2. Installera [Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Om du vill hämta en säkerhetstoken för autentisering i en .NET-app, använder du det här paketet. Så här installerar du paketet:
 
-     a. I Visual Studio 2015 väljer du **Verktyg** > **NuGet-pakethanteraren** > **Pakethanterarkonsolen**.
+     a. I Visual Studio (2015 eller senare) väljer **verktyg** > **NuGet-Pakethanteraren** > **Pakethanterarkonsolen**.
 
      b. I **Pakethanterarkonsolen**, anger du Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory-Version 2.21.301221612.
 3. Lägg till koden nedan i klassen Program {...}.
@@ -152,7 +150,7 @@ namespace walkthrough_push_data
             string resourceUri = "https://analysis.windows.net/powerbi/api";
 
             //OAuth2 authority Uri
-            string authorityUri = "https://login.microsoftonline.net/common/";
+            string authorityUri = "https://login.microsoftonline.com/common/";
 
             //Get access token:
             // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

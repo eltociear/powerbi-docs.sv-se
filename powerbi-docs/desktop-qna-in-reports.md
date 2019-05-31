@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 440874b96b4bf01023c86e3ef053e8c77e9ef289
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: a34de25af7febf63b34d7608ff7ef40e8b653fc4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430111"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61285131"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Använd frågor och svar i Power BI Desktop för frågor med naturligt språk
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Ännu mer kraftfullt är det när dina data svarar, vilket är vad frågor och svar i **Power BI Desktop** möjliggör.
@@ -23,7 +23,7 @@ Användning av vanliga fraser och naturligt språk för att ställa frågor till
 Om du vill aktivera frågor och svar för att tolka det stora antal frågor som denna funktion kan svara på måste frågor och svar göra antaganden om modellen. Om strukturen för din modell inte uppfyller ett eller flera av dessa antaganden, behöver du justera din modell. Dessa justeringar för frågor och svar har samma metodtips för optimeringarna för alla modeller i Power BI, oavsett om du använder frågor och svar eller inte. 
 
 > [!NOTE]
-> Funktionen Frågor och svar är bara tillgänglig om du arbetar med en modell som innehåller **importerade** data. Live-anslutningar till SSAS- och DirectQuery-modeller stöds inte.
+> Frågor och svar är endast tillgänglig när du arbetar med en modell som innehåller **importeras** data eller Live-anslutningar till SSAS. DirectQuery-modeller stöds inte.
 >
 > Frågor och svar kräver följande C-körtidsuppdatering om du använder en tidigare Windows-version än Windows 10. Du kan försöka installera viktiga uppdateringar från Windows Update eller manuellt installera den nödvändiga komponenten från Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows)
 >

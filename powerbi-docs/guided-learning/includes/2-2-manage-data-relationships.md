@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b1658a9351c05a8673c6cc582a4e54ad982791fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257084"
+---
 Med Power BI kan du visuellt ange relationen mellan tabeller eller element. Om du vill se en diagramvy över dina data använder du **relationsvyn**, som finns längst till vänster på skärmen bredvid rapportarbetsytan.
 
 ![](media/2-2-manage-data-relationships/2-2_1.png)

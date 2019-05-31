@@ -12,11 +12,11 @@ ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223316"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61068965"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Anpassa egenskaper för x-axeln och y-axeln
 I den här kursen lär du dig många olika sätt att anpassa x-axeln och y-axeln i visuella objekt. Det är inte alla axlar som kan anpassas. Cirkeldiagram, till exempel, har inga axlar. Anpassningsalternativen kan också variera från ett visuellt objekt till ett annat och det finns för många alternativ för att täcka dem i en enda artikel. Så tar vi en titt på några av de mest använda axelanpassningarna så att du kan vänja dig vid att använda fliken visuell formatering i arbetsytan för Power BI-rapporter.  
@@ -51,7 +51,7 @@ Logga in till Power BI-tjänsten och öppna rapporten **Retail analys exempel** 
 4. Formatera textfärg, storlek och teckensnitt. I det här exemplet är **textfärgen** svart, **textstorleken** 14 och **teckensnittet** Arial Black.  
 5. Slå **På** rubriker för x-axeln och visa namnet på x-axeln – i det här fallet **FiscalMonth**.  
 6. Formatera rubrikens textfärg, storlek och teckensnitt.  I det här exemplet är **rubrikfärgen** till orange, **axelrubriken** har ändrats till **räkenskapsmånad**, och **rubriktextstorleken** är 21.
-7. För att sortera enligt räkenskapsmånad väljer du ellipser (...) i det övre högra hörnet av diagrammet och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)**.
+7. För att sortera enligt räkenskapsmånad väljer du ellipser (...) i det övre högra hörnet av diagrammet och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)** .
 
     Efter dessa anpassningar bör ditt stående stapeldiagram se ut ungefär så här:
 
@@ -120,7 +120,7 @@ Först måste du skapa ett kombinationsdiagram som visar hur antalet butiker på
 ### <a name="add-titles-to-both-axes"></a>Lägga till rubriker på axlarna
 Med ett så komplicerat visuellt objekt hjälper det att lägga till axelrubriker.  Med titlar kan dina kollegor förstå vad ditt visuella objekt försöker berätta.
 
-1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)**.
+1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)** .
 2. Ange **Stil** för att **Endast visa rubriken**.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)    

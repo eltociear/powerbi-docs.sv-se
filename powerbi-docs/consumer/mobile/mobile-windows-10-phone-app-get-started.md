@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: aa41e1e2869ad4d2f77224e3bec99dc00c59c536
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291451"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61337730"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
 Power BI-mobilappen för Windows 10 ger dig Power BI i din surfplatta eller telefon med uppdaterad, pekaktiverad mobil åtkomst till företagets information. Visa och interagera med dina instrumentpaneler för företaget från valfri plats &#151; direkt från din [Windows-startskärm](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).

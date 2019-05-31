@@ -1,51 +1,123 @@
 ---
 title: Övervaka Power BI Premium-kapaciteter med hjälp av administratörsportalen
 description: Använd Power BI-administratörsportalen för att övervaka dina Premium-kapaciteter.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 59097c07719e4bb8db188e8a86db377076aea7a9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
-ms.translationtype: HT
+ms.openlocfilehash: 36b03a67e7c02702a70b6486880cc8eabf93e823
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794108"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564900"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Övervaka kapaciteter i administratörsportalen
 
-I den här artikeln beskrivs hur du kan använda området Kapacitetsinställningen i administratörsportalen för att få en snabb överblick över kapacitetens prestanda.  För de mest djupgående måtten om din kapacitet är det bäst att använda appen [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
+Den **hälsotillstånd** fliken i den **kapacitetsinställningarna** område i Admin portal innehåller en sammanfattning om din kapacitet och aktiverade arbetsbelastningar.  
 
-## <a name="capacity-metrics"></a>Kapacitetsmått
+![Kapacitet på fliken hälsa i portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-Området **Kapacitetsinställningar** i adminportalen innehåller fyra mätare som anger belastningen på och de resurser som använts av din kapacitet under de senaste sju dagarna. Dessa fyra paneler har tidsfönster på en timme som anger hur många timmar under de senaste sju dagarna då motsvarande mått översteg 80 %. Det här måttet anger en potentiell försämring av slutanvändarens upplevelse.
+Om du behöver mer omfattande mått kan använda den [Power BI Premium-kapacitet](service-admin-premium-monitor-capacity.md) app. Appen ger nedåt och filtrering och de mest detaljerade mätvärden för nästan alla aspekter som påverkar prestanda för kapacitet. Mer information finns i [övervakaren Premium-kapaciteter med appen](service-admin-premium-monitor-capacity.md).
 
-![Användning under 7 dagar](media/service-admin-premium-monitor-capacity/usage-in-days.png)
+## <a name="system-metrics"></a>Systemmått
+
+På den **hälsotillstånd** på den högsta nivån, fliken processoranvändning och minnesanvändning ge en snabb överblick över de viktigaste mått för kapaciteten. De här måtten är kumulativa, inklusive alla aktiverade arbetsbelastningar för kapaciteten.
 
 | **Mått** | **Beskrivning** |
 | --- | --- |
-| Processor |Antalet gånger processorn överskridit 80 % användning. |
-| Minnesförslöing |Representerar minnesbelastningen på dina serverkärnor. Mer specifikt är detta ett mått på hur många gånger datauppsättningar avlägsnas från minnet på grund av minnesbelastning från användningen av flera datauppsättningar. |
-| Minnesanvändning |Genomsnittlig minnesanvändning, representerat i gigabyte (GB). |
-| DQ/s | Antalet gånger som Direct Query och Live-anslutningar överskridit 80 % av gränsvärdet. <br>  Det totala antalet DirectQuery- och realtidsanslutningsfrågor per sekund är begränsat. Gränserna är 30/s för P1, 60/s för P2 och 120/s för P3.  Antalet frågor för Direct Query och Live-anslutningar räknas in mot ovanstående begränsning. Om du till exempel har 15 DirectQueries och 15 Live-anslutningar på en sekund når du begränsningen.<br> Detta gäller lika för både lokala anslutningar och molnanslutningar. |
-|  |  |
+| CPU-ANVÄNDNING | Genomsnittlig CPU-belastning, som en procentandel av total tillgänglig CPU. |
+| MINNESANVÄNDNING | Genomsnittlig användning av minne i gigabyte (GB).|
 
-Måtten återspeglar användningen under den senaste veckan.  Om du vill visa en mer detaljerad vy över måtten kan du göra det genom att klicka på någon av sammanfattningspanelerna.  När du gör det öppnas detaljerade diagram för varje mått för din Premium-kapacitet. Följande diagram visar information om CPU-mått.
+## <a name="workload-metrics"></a>Nyckelmått för arbetsbelastningen
 
-![Detaljerat användningsdiagram – processor](media/service-admin-premium-monitor-capacity/premium-usage-detailed-chart-cpu.png)
+För varje arbetsbelastning har aktiverats för kapaciteten. Processoranvändning och minnesanvändning visas.
 
-Dessa diagram visar timbaserade sammanfattningar för den senaste veckan och kan hjälpa dig att isolera tidpunkter med specifika prestandarelaterade händelser i din Premium-kapacitet.
+| **Mått** | **Beskrivning** |
+| --- | --- |
+| CPU-ANVÄNDNING | Genomsnittlig CPU-belastning, som en procentandel av total tillgänglig CPU. |
+| MINNESANVÄNDNING | Genomsnittlig användning av minne i gigabyte (GB).|
 
-Du kan också exportera underliggande data för valfria mätvärdena till en CSV-fil.  Den här exporten ger detaljerad information i 3-minutersintervall för varje dag den senaste veckan.
+### <a name="detailed-workload-metrics"></a>Detaljerad arbetsbelastning
+
+Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas beror på arbetsbelastningen. Klicka på Expandera (nedåtpilen) om du vill visa detaljerade mätvärden för en arbetsbelastning.
+
+![Expandera arbetsbelastning hälsotillstånd](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+
+#### <a name="dataflows"></a>Dataflöden
+
+##### <a name="dataflow-operations"></a>Dataflöde åtgärder
+
+| **Mått** | **Beskrivning** |
+| --- | --- |
+| Totalt antal kärnor | Totalt antal uppdateringar för varje dataflöde. |
+| Antal slutförda | Totalt antal lyckade uppdateringar för varje dataflöde.|
+| Genomsnittlig varaktighet (min) | Genomsnittlig varaktighet för uppdatering för dataflödet, mätt i minuter |
+| Maximal varaktighet (min) | Varaktigheten för den långvarigaste uppdateringen av dataflödet, i minuter. |
+| Snittväntetid (min) | Den genomsnittliga fördröjningen mellan schemalagd tid och start av en uppdatering av dataflödet, i minuter. |
+| Maximal väntetid (min) | Maximal väntetid för dataflödet, i minuter.  |
+
+#### <a name="datasets"></a>Datauppsättningar
+
+##### <a name="refresh"></a>Uppdatera
+
+| **Mått** | **Beskrivning** |
+| --- | --- |
+| Totalt antal kärnor | Totalt antal uppdateringar för varje datauppsättning. |
+| Antal slutförda | Totalt antal lyckade uppdateringar för varje datauppsättning. |
+| Antal misslyckade | Totalt antal misslyckade uppdateringar för varje datauppsättning. |
+| Slutförandefrekvens  | Antal lyckade uppdateringar dividerat med Totalt antal uppdateringar ska mätas. Tillförlitlighet. |
+| Genomsnittlig varaktighet (min) | Den genomsnittliga varaktigheten för uppdateringen för datauppsättningen, i minuter.  |
+| Maximal varaktighet (min) | Varaktigheten för den långvarigaste uppdateringen av datauppsättningen, i minuter. |
+| Snittväntetid (min) | Den genomsnittliga fördröjningen mellan schemalagda tid och starttid för en uppdatering av datauppsättningen, i minuter. |
+| Maximal väntetid (min) | Den maximala väntetiden för datauppsättningen, i minuter. |
+
+##### <a name="query"></a>Fråga
+
+| **Mått** | **Beskrivning** |
+| --- | --- |
+| Totalt antal kärnor | Det totala antal frågor som körts för datauppsättningen. |
+| Genomsnittlig varaktighet (ms) |Den genomsnittliga frågevaraktigheten för datauppsättningen, mätt i millisekunder|
+| Maximal varaktighet (ms) |Varaktigheten för den långvarigaste frågan i datauppsättningen, i millisekunder. |
+| Snittväntetid (ms) |Den genomsnittliga frågeväntetiden för datauppsättningen, i millisekunder. |
+| Maximal väntetid (ms) |Varaktigheten för den längst väntande frågan i datauppsättningen, i millisekunder. |
+
+##### <a name="eviction"></a>Borttagning
+
+| **Mått** | **Beskrivning** |
+| --- | --- |
+| Modell-antal | Totalt antal borttagna datauppsättningen för den här kapaciteten. När en kapacitet drabbas av minnesbelastning avlägsnar noden en eller flera datauppsättningar från minnet. Datamängder som är inaktiva (utan frågor/uppdateringsåtgärder som körs för tillfället) avlägsnas först. Avlägsnandeordern baseras sedan på ett mått på ”minst nyligen använd” (LRU, Least Recently Used). |
+
+#### <a name="paginated-reports"></a>Sidnumrerade rapporter
+
+##### <a name="report-execution"></a>Köra en hälsorapport
+
+| **Mått** | **Beskrivning** |
+| --- | --- |
+| Antal körningar  | Hur många gånger som rapporten har körts och visas för användare.|
+
+##### <a name="report-usage"></a>Rapportera användning
+
+| **Mått** | **Beskrivning** |
+| --- | --- |
+| Antal slutförda | Antal gånger som rapporten har setts av en användare. |
+| Antal misslyckade |Antal gånger som rapporten har setts av en användare.|
+| Radantal |Antalet rader data i rapporten. |
+| Varaktighet för hämtning (ms) |Den genomsnittliga tid det tar att hämta data för rapporten, uttryckt i millisekunder. Långa varaktigheter kan indikera långsamma frågor eller andra problem med datakällan.  |
+| Bearbetning av varaktighet (ms) |Den genomsnittliga tid det tar att bearbeta data för en rapport, i millisekunder. |
+| Rendering varaktighet (ms) |Den genomsnittliga tid det tar att återge en rapport i webbläsaren, i millisekunder. |
+
+> [!NOTE]
+> Detaljerad mått för den **AI** arbetsbelastning är inte tillgängliga ännu.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Nu när du vet hur du övervakar Power BI Premium-kapacitet kan du lära dig mer om hur du optimerar kapaciteter.
 
 > [!div class="nextstepaction"]
-> [Resurshantering och -optimering av Power BI Premium-kapacitet](service-premium-understand-how-it-works.md)
+> [Optimera Power BI Premium-kapaciteter](service-premium-capacity-optimize.md)

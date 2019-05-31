@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215745"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989401"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
@@ -24,21 +24,7 @@ Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempe
 
 När du använder ett **Rapporttema** behöver du en JSON-fil som använder en grundläggande struktur. Du kan sedan importera den här JSON-filen till Power BI Desktop och tillämpa den på din rapport. Strukturen för JSON-filen och processen att importera (det är bara några knappklick) är snabb och enkel.
 
-Från och med September 2017-versionen av **Power BI Desktop** kan du definiera ytterligare rapporttemaelement med hjälp av en JSON-fil. Du kan också anpassa och standardisera nästan alla element. Om du vill anpassa dem måste du använda JSON-filen som du justerar manuellt i fönstret **Formatering**. Målet med september 2017-versionen (och senare) är att ge full kontroll över hur rapporterna ser ut på en detaljerad nivå.
-
-### <a name="enable-report-themes"></a>Aktivera rapportteman
-Från och med **Power BI Desktop**-versionen för augusti 2018 är rapportteman allmänt tillgängliga och behöver inte aktiveras. 
-
-Om du använder en tidigare version av **Power BI Desktop** kan du aktivera den som en förhandsversion av funktionen genom att utföra följande steg: 
-
-1. Välj **Fil > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner**. 
-2. Därefter markerar du kryssrutan bredvid **anpassade rapportteman**. 
-
-Du måste starta om **Power BI Desktop** när du har gjort valet.
-
-![Anpassade rapportteman](media/desktop-report-themes/report-themes_2.png)
-
-Vi rekommenderar alltid att du uppgraderar till den senaste versionen av **Power BI Desktop**, som du kan hämta från en länk i avsnittet [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
+Du kan också anpassa och standardisera nästan alla element. Om du vill anpassa dem måste du använda JSON-filen som du justerar manuellt i fönstret **Formatering**. Målet är att ge dig fullständig kontroll över hur dina rapporter utseendet och känslan på en detaljerad nivå.
 
 ## <a name="how-report-themes-work"></a>Så här fungerar rapportteman
 Om du vill använda ett rapporttema i en Power BI Desktop-rapport kan du välja bland de tillgängliga rapportteman som är inbyggda eller importera ett anpassat tema.
@@ -113,7 +99,7 @@ Här är texten i *St Patricks Day.json* som du kan använda för att skapa din 
 
 Därifrån kan du ange egna hexadecimala färgkoder för dina valda färger.
 
-Från och med september 2017-versionen av **Power BI Desktop** kan JSON-filen göra mycket mer. I JSON-filen definierar du bara den formatering som du vill påverka. Allt som *inte* anges i din JSON-fil återgår helt enkelt till standardinställningarna för Power BI.
+I JSON-filen definierar du bara den formatering som du vill påverka. Allt som *inte* anges i din JSON-fil återgår helt enkelt till standardinställningarna för Power BI.
 
 Det finns många fördelar med att skapa en JSON-fil. Du kan till exempel ange att alla diagram ska använda teckenstorleken 12, att vissa visuella objekt ska använda en viss teckensnittsfamilj. Du kan också inaktivera dataetiketter för specifika diagramtyper.
 

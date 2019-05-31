@@ -3,19 +3,19 @@ title: 'Organisationsinnehållspaket: Åtkomst och kopiering'
 description: Läs mer om att skapa kopior av och felsöka åtkomst till organisationsinnehållspaket i Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: lukaszp
+ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f22cac734d98e98cd17a915c09d6705e2cad121a
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
-ms.translationtype: HT
+ms.openlocfilehash: c369d8f0d342aebcb3625b289472089412ef7cee
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580069"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61227759"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: Kopiera, uppdatera och få åtkomst
 

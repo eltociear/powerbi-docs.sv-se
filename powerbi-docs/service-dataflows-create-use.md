@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426641"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61144616"
 ---
-# <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Skapa och använda dataflöden i Power BI (förhandsversion)
+# <a name="creating-and-using-dataflows-in-power-bi"></a>Skapa och använda dataflöden i Power BI
 
 Med avancerad databearbetning som är tillgänglig i **Power BI**, kan du skapa en samling som kallas ett dataflöde som du sedan kan använda för att ansluta till affärsdata från olika källor, rensa data, omvandla dem och sedan läsa in dem till Power BI-lagring.
 
@@ -34,9 +34,6 @@ Det finns tre huvudsakliga steg för att använda ett dataflöde:
 3. Skapa datauppsättningen med hjälp av ditt dataflöde, med hjälp av Power BI Desktop 
 
 I följande avsnitt kommer vi att titta på vart och ett av de här stegen och bekanta oss med de verktyg som finns för att slutföra varje steg. Då sätter vi igång.
-
-> [!NOTE]
-> Dataflödesfunktionen är en förhandsversion och kan komma att ändras och uppdateras innan den är allmänt tillgänglig.
 
 ## <a name="creating-a-dataflow"></a>Skapa ett dataflöde
 Om du vill skapa ett dataflöde, starta Power BI-tjänsten i en webbläsare och välj sedan en **apparbetsyta** (dataflöden är inte tillgängliga i *Min arbetsyta* i Power BI-tjänsten) i navigeringsfönstret till vänster som visas i följande skärmbild. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde. 
@@ -165,9 +162,9 @@ Det kan finnas tillfällen när anslutningen till datakällor för dataflöden s
 Den här artikeln beskriver hur du kan skapa ditt egna **dataflöde** och skapa en datauppsättning och rapport i **Power BI Desktop** för att dra nytta av den. Följande artiklar är användbara för ytterligare information och scenarier när du använder dataflöden:
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
-* [Använda beräknade entiteter på Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
-* [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
 * [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
 
 Mer information om Common Data Service finns i dess översiktsartikel:

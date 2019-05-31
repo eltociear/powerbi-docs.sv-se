@@ -12,11 +12,11 @@ ms.date: 12/05/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661662"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61050255"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
 En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen av en *designer*. En panel kan skapas från en rapport, datamängd, instrumentpanel, Frågor och svar-frågerutan, Excel samt SQL Server Reporting Services (SSRS) med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.

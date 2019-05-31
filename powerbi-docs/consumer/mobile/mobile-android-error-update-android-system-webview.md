@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: 53d0deaf68c2c0fde4f5243394914a44b9c59feb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274937"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61341145"
 ---
 # <a name="fixing-need-to-update-android-system-webview"></a>Åtgärda ”Android-systemets webbvy behöver uppdateras”
 När du loggar in i Android-mobilappen för Microsoft Power Bi, kan du få ett meddelande om att du behöver uppdatera Android-systemets webbvy. 

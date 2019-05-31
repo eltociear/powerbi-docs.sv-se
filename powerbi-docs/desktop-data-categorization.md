@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 5b6bbf7a203d8e87d129b6336be4f4531ae34107
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454492"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
@@ -33,7 +33,7 @@ Ska Power BI Desktop behandla koderna i kolumnen GeoCode som en förkortning fö
 **Ange en datakategori**
 
 1. Gå till rapport- eller datavyn i listan **Fält** och välj de fält som du vill sortera med en annan kategorisering.
-2. På fliken **Modellering** i menyfliksområdet klickar du på listrutan **Datakategori:**.  Detta visar listan med datakategorier som du kan välja för kolumnen.  Vissa alternativ kan vara inaktiverade om de inte fungerar med den aktuella datatypen för kolumnen.  Om en kolumn exempelvis är av en binär datatyp kommer Power BI Desktop inte låta dig välja geografiska datakategorier. 
+2. På fliken **Modellering** i menyfliksområdet klickar du på listrutan **Datakategori:** .  Detta visar listan med datakategorier som du kan välja för kolumnen.  Vissa alternativ kan vara inaktiverade om de inte fungerar med den aktuella datatypen för kolumnen.  Om en kolumn exempelvis är av en binär datatyp kommer Power BI Desktop inte låta dig välja geografiska datakategorier. 
 
 ![](media/desktop-data-categorization/datacategorization.gif)
 

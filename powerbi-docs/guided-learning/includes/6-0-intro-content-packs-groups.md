@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f81300becc8a79b8a169aebe2ce3c56991c03262
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256996"
+---
 Välkommen till avsnittet **Publicera och dela** i den **interaktiva utbildningen** för Power BI.
 
 Nu när du har lärt dig hur Excel och Power BI fungerar tillsammans och du har lärt dig vilka visuella objekt du kan skapa i rapporter och instrumentpaneler, vill du förmodligen dela dem med dina medarbetare och vänner. Med Power BI är det enkelt att **Publicera och dela**.

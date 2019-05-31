@@ -1,20 +1,20 @@
 ---
 title: Säkerhet på radnivå med inbäddat innehåll i Power BI
 description: Läs mer om vad du behöver göra för att bädda in Power BI-innehåll i ditt program.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.date: 03/27/2019
+ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57328020"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61354141"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -64,7 +64,7 @@ Gör så här:
 2. Skapa en ny roll som heter **Chef**.
 
     ![Skapa en ny roll](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. I tabellen **Distrikt** anger du det här DAX-uttrycket: **[distriktschef] = USERNAME()**.
+3. I tabellen **Distrikt** anger du det här DAX-uttrycket: **[distriktschef] = USERNAME()** .
 
     ![DAX-uttryck för RLS regel](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. Kontrollera att reglerna fungerar på fliken **Modellering**, välj **Visa som roller** och välj sedan både rollen **Chef** som du skapade och **Andra användare**. Ange **AndrewMa** för användaren.
@@ -145,9 +145,9 @@ CustomData-funktionen fungerar endast för modeller som finns i **Azure Analysis
 
 Med CustomData-funktionen kan du lägga till ett radfilter när du visar Power BI-data i ditt program när du använder **Azure Analysis Services** som datakälla (visa Power BI-data som är anslutna till Azure Analysis Services i ditt program ).
 
-CustomData-funktionen tillåter sändning av fritext (sträng) med anslutningssträngegenskapen för CustomData. Analysis Services använder det här värdet via funktionen *CUSTOMDATA()*.
+CustomData-funktionen tillåter sändning av fritext (sträng) med anslutningssträngegenskapen för CustomData. Analysis Services använder det här värdet via funktionen *CUSTOMDATA()* .
 
-Det enda sättet att ha dynamisk RLS (som använder dynamiska värden för utvärdering av filter) i **Azure Analysis Services** är att använda funktionen *CUSTOMDATA()*.
+Det enda sättet att ha dynamisk RLS (som använder dynamiska värden för utvärdering av filter) i **Azure Analysis Services** är att använda funktionen *CUSTOMDATA()* .
 
 Du kan använda den i DAX-frågerollen, och den kan användas utan någon roll i en DAX-måttfråga.
 CustomData-funktionen ingår i tokengenereringen för följande artefakter: instrumentpanel, rapport och panel. En instrumentpanel kan ha flera CustomData-identiteter (en per panel/modell).
@@ -205,7 +205,7 @@ Här följer stegen för att börja konfigurera funktionen CustomData() med appe
 
     ![Skapa roll – Ange inställningar för medlemskap](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
 
-5. Ange din **radfilter** DAX-fråga med funktionen *CUSTOMDATA()*.
+5. Ange din **radfilter** DAX-fråga med funktionen *CUSTOMDATA()* .
 
     ![Skapa roll – Ange radfilter](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
@@ -214,6 +214,8 @@ Här följer stegen för att börja konfigurera funktionen CustomData() med appe
     ![Exempel på PBI-rapport](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
 7. Använd Power BI-API: er för att använda funktionen CustomData i ditt program.  När du skapar en token med CustomData-funktionen så måste du ha ett användarnamn. Användarnamnet måste vara samma som UPN-namnet för överordnad användare. Överordnad användare måste vara medlem i de roller som du skapade. Om inga roller har angetts används de roller som överordnad användare är medlem i för RLS utvärdering.
+
+    När du arbetar med en [tjänstens huvudnamn](embed-service-principal.md), du måste också har utfört stegen ovan i stället för med ett huvudkonto. När du genererar inbäddningstoken, använda den [objekt-ID för tjänstens](embed-service-principal.md#how-to-get-the-service-principal-object-id) som användarnamn.
 
     > [!Note]
     > När du är redo att distribuera ditt program till produktion ska alternativet eller kontofältet för överordnad användare inte visas för slutanvändaren.
@@ -241,7 +243,7 @@ När du bestämmer dig för att filtrera dina data i en rapport kan du använda 
 
 ## <a name="token-based-identity-with-azure-sql-database-preview"></a>Tokenbaserad identitet med Azure SQL Database (förhandsversion)
 
-Den **tokenbaserad identiteten** låter dig ange den effektiva identiteten för en inbäddad token med hjälp av en **Azure Active Directory (AAD)**-åtkomsttoken för en **Azure SQL Database**.
+Den **tokenbaserad identiteten** låter dig ange den effektiva identiteten för en inbäddad token med hjälp av en **Azure Active Directory (AAD)** -åtkomsttoken för en **Azure SQL Database**.
 
 Kunder som har sina data i **Azure SQL Database** kan nu dra nytta av en ny funktion för att hantera användare och deras åtkomst till data i Azure SQL vid integrering med **Power BI Embedded**.
 

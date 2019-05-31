@@ -11,11 +11,11 @@ ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279997"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61370502"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Visa objekt utan data i Power BI
 
@@ -36,7 +36,7 @@ Om du vill förstå hur Power BI fastställer vilka data som är relevanta att v
 |Blå     |Liten         |
 |Röd     |Stor         |
 
-I det här exemplet visar Power BI kombinationer av *[Color-Size]* som finns i tabellen *[Product]*. 
+I det här exemplet visar Power BI kombinationer av *[Color-Size]* som finns i tabellen *[Product]* . 
 
 Låt oss titta på en annan kombination:
 
@@ -59,9 +59,9 @@ Låt oss titta på ett annat exempel:
 |Blank     |Röd         |
 |Matt     |Blå         |
 
-Eftersom det inte finns något explicit mått, och eftersom de två tabellerna är direkt relaterade, försöker Power BI mata in ett mått för att begränsa de resulterande kombinationerna. I det här fallet lägger Power BI in ett *CALCULATE(COUNTROWS('Product'))*-mått, som inte får vara tomt, eftersom *Product* är den tabell som är gemensam för båda tabellerna.
+Eftersom det inte finns något explicit mått, och eftersom de två tabellerna är direkt relaterade, försöker Power BI mata in ett mått för att begränsa de resulterande kombinationerna. I det här fallet lägger Power BI in ett *CALCULATE(COUNTROWS('Product'))* -mått, som inte får vara tomt, eftersom *Product* är den tabell som är gemensam för båda tabellerna.
 
-Därför visar Power BI de kombinationer som har poster i Product-tabellen, vilket utesluter kombinationerna *(”None” + ”Blue”)* och *(”Matte” + ”Red”)*.
+Därför visar Power BI de kombinationer som har poster i Product-tabellen, vilket utesluter kombinationerna *(”None” + ”Blue”)* och *(”Matte” + ”Red”)* .
 
 **4. Grupper från olika och orelaterade tabeller**
 
@@ -134,7 +134,7 @@ Hur det ser ut när funktionen **Visa poster utan data** är aktiverad:
 
 Observera hur *(Gloss-Red)* och *(None, blank)* visades som kombinationer. Detta är orsaken till att de visades:
 * Power BI tog först itu med ProductStyle[Finish] och valde sedan att alla värden ska visas – vilket resulterade i Gloss, Matte, None.
-* Med hjälp av de här värdena väljer Power BI ut alla motsvarande *Product[Color]*-poster 
+* Med hjälp av de här värdena väljer Power BI ut alla motsvarande *Product[Color]* -poster 
 * Eftersom *None* inte motsvarar någon *Product[Color]* visas ett tomt värde
 
 Det är viktigt att tänka på att mekanismen för att välja kolumnvärdena är ordningsberoende och kan betraktas som en åtgärd av typen *vänster yttre koppling* mellan tabeller. Om kolumnordningen ändras så ändras även resultatet.

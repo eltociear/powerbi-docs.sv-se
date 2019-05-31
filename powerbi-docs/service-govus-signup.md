@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7f7681529f9f1ab8883f6b38889e67b8ad5bb81e
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: 28b77cfeda1f84f3643216dba45bef40bd6441ff
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430083"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65513222"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
-**Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
+**Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den **Power BI-tjänsten** version som beskrivs i den här artikeln är avsedd för amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av den **Power BI-tjänsten**.
 
 Mer information om **Power BI-tjänsten** för tillhör amerikanska myndigheter, inklusive dess funktioner och begränsningar finns på [Power BI för amerikanska myndigheter – översikt](service-govus-overview.md).
 
@@ -58,7 +58,7 @@ Om din organisation är en befintlig **Office Government Cloud**-kund men ni sak
 > 
 > 
 
-1. Logga in på ditt befintliga konto för Office Government Cloud och gå till administrationsportalen
+1. Logga in på ditt befintliga Office Government Cloud-konto och gå till administrationsportalen
 2. Välj **Fakturering**.
 3. Välj **Köp tjänsten**.
 4. Välj alternativet Power BI Pro Government och välj mellan **Försök** och **Köp nu**
@@ -66,7 +66,7 @@ Om din organisation är en befintlig **Office Government Cloud**-kund men ni sak
 6. Tilldela användare till kontot.
    
    ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Logga in på **Power BI-tjänsten** för US Government-kunder på [https://app.powerbigov.us](https://app.powerbigov.us)
+7. Logga in på den **Power BI-tjänsten** för amerikanska myndigheter på [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ## <a name="additional-signup-information"></a>Ytterligare inloggningsinformation
 Nedan visas ytterligare information för att registrera dig för **Power BI US Government** i olika licensmigrationsfall.
@@ -90,19 +90,19 @@ Gå till **Fakturering > Prenumerationer** och välj prenumerationen **Power BI 
 ### <a name="whitelisting-instructions"></a>Anvisningar för vitlistning
 *Vitlistning* är en process som utvecklingsteamet för Power BI använder för att flytta kunder från den kommersiella molnmiljön till en säker molnmiljö för myndigheter. Detta säkerställer att funktionerna i US Government Cloud fungerar som förväntat. Alla befintliga (eller nya) amerikanska myndigheter som är våra kunder som köper **Power BI**-tjänster för myndigheter för första gången *måste* utföra följande vitlistningsprocess. Processen måste göras innan installation eller migrering till US Government **Power BI**-tjänster. 
 
-Om du vill få din klientorganisation *vitlistad* för US Government-molnet, kontaktar du Microsoft-kontoteamet för hjälp med vitlistning. Observera att endast administratörer kan göra denna begäran. Processen för *vitlistning* tar cirka tre veckor, då teknikteamet för Power BI utför lämpliga ändringar för din klient så att den fungerar korrekt i molnet för amerikanska myndigheter.
+Din klient *godkänd* för US Government-molnet, kontaktar du Microsoft-kontoteamet för hjälp med vitlistning. Endast administratörer kan göra denna begäran. Processen för *vitlistning* tar cirka tre veckor, då teknikteamet för Power BI utför lämpliga ändringar för din klient så att den fungerar korrekt i molnet för amerikanska myndigheter.
 
 Kunder som migrerar från **Kostnadsfria** Power BI-licenser till **Power BI US Government** (och per definition migrerar till de associerade **Pro**-licensfunktioner som beskrivs ovan i den här artikeln) kan påträffa problem som beskrivs i följande avsnitt i den här artikeln tills klienten har *vitlistats* av Power BI-utvecklingsteamet.
 
 ### <a name="mixed-free-and-pro-licenses-in-us-government-tenants"></a>Blandad kostnadsfria och fulla licenser för klienter hos amerikanska myndigheter
 Om du har både kostnadsfria och US Government Pro-licenser i din klient kommer både licenser att bli kvar, men någon av licenserna kommer inte att fungera korrekt. Om din klient har godkänts i *vitlistning*sprocessen inträffar följande:
 
-* Användare med kostnadsfri licens kommer inte längre att kunna logga in på Power BI med hjälp av **Power BI Desktop** och kan uppleva avvikande funktionalitet som beskrivs i följande avsnitt.
+* Användare med kostnadsfri licens kommer inte längre att kunna logga in på Power BI med **Power BI Desktop**, och kan uppleva avvikande funktionalitet som beskrivs i följande avsnitt.
 * Alla klienter som tilldelats US Government Pro-licenser fungerar som väntat, inklusive användning av gateway, Power BI Desktop och Mobile-appar.
 
 När du använder en blandning av kostnadsfria och Pro-licenser på en klient som tillhör amerikanska myndigheter och går igenom *vitlistningsprocessen* kan följande förväntas:
 
-**Inför _vitlistning_**:
+**Inför _vitlistning_** :
 
 * Användare med kostnadsfria licenser använder det kommersiella molnet
 * Pro-licenser för amerikanska myndigheter visas i portalen och administratören kan välja att tilldela dessa myndigheter till användare. Pro-användare hos amerikanska myndigheter kommer inte att förlora några data från sina kostnadsfria licenser så snart som administratören har tilldelat en Pro-licens. Tilldelade användare har åtkomst till Power BI Pro-funktioner för amerikanska myndigheter, men följande punktlista med funktionsluckor kan kvarstå tills klienten har *vitlistats*:
@@ -112,7 +112,7 @@ När du använder en blandning av kostnadsfria och Pro-licenser på en klient so
   * PBIX filer måste överföras manuellt från den kommersiella Power BI-tjänsten
   * Power BI-mobilappar är inte tillgängliga
 
-**Efter _vitlistning_**:
+**Efter _vitlistning_** :
 
 * Användare av den kostnadsfria versionen som använder den kommersiella Power BI-tjänsten kan fortsätta att göra detta men de kan inte längre autentisera.
 * Pro-användarna som använder molntjänsten för amerikanska myndigheter kan använda tjänsten **Power BI för amerikanska myndigheter** som förväntat.

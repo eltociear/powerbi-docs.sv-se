@@ -1,30 +1,30 @@
 ---
 title: Skapa en inbäddad datamängd för en sidnumrerad rapport i Power BI (förhandsversion)
 description: I den här artikeln får du lära dig att skapa en inbäddad datamängd som baseras på en inbäddad datakälla för en sidnumrerad rapport i Power BI-tjänsten.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.openlocfilehash: c625f394fd35c0b1c6b7ccf0fc617f5653533ea1
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 3e095da10e9f96c7ec0f10ffbb94995d44effab4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324563"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423766"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Skapa en inbäddad datamängd för en sidnumrerad rapport i Power BI-tjänsten (förhandsversion)
 
-I den här artikeln får du lära dig att skapa en inbäddad datamängd som baseras på en inbäddad datakälla för en sidnumrerad rapport i Power BI-tjänsten. Inbäddade datamängder finns i en enda sidnumrerad rapport och används enbart i den rapporten. För närvarande behöver sidnumrerade rapporter som publiceras till Power BI-tjänsten innehålla både inbäddade datamängder och inbäddade datakällor. Du skapar den inbäddade datakällan och datamängden i Report Builder, samtidigt som du skapar din rapport. 
+I den här artikeln får du lära dig att skapa en inbäddad datamängd som baseras på en inbäddad datakälla för en sidnumrerad rapport i Power BI-tjänsten. Inbäddade datamängder finns i en enda sidnumrerad rapport och används enbart i den rapporten. För närvarande behöver sidnumrerade rapporter som publiceras till Power BI-tjänsten innehålla både inbäddade datamängder och inbäddade datakällor. Du skapar inbäddad datakälla och datauppsättning i Power BI Report Builder, medan du skapar din rapport. 
 
 Du måste skapa en datakälla innan du kan skapa datamängden. Se [Inbäddade datakällor för sidnumrerade rapporter](paginated-reports-embedded-data-source.md) i Power BI-tjänsten för mer information om hur du gör.
   
 ## <a name="create-an-embedded-dataset"></a>Skapa en inbäddad datauppsättning
   
-1. I fönstret Rapportdata i Report Builder väljer du **Nytt** > **Datamängd**.
+1. I fönstret rapportdata i Power BI Report Builder, Välj **New** > **datauppsättning**.
 
 1. På fliken **Fråga** i dialogrutan **Egenskaper för datamängd** ger du datamängden ett namn. Den inbäddade datakällan finns redan i rutan **Datakälla**, men du kan också välja **Nytt** för att skapa en annan inbäddad datakälla.
  

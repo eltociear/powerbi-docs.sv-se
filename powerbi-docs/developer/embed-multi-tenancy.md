@@ -1,20 +1,20 @@
 ---
 title: Hantera flera innehavare med Power BI Embedded-analys
 description: Utforma ett program med flera innehavare med inbäddad analys.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 60441e950eb8ddea386e38731b794a58c2342620
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014264"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61374698"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Hantera flera innehavare med Power BI Embedded-analys
 
@@ -53,7 +53,7 @@ Den här artikeln beskriver de olika metoderna och analyserar dem utifrån flera
 
 **AAD-programanvändare (tjänstens huvudnamn)**  – Den identitet som representerar SaaS-programmet i Power BI och som används i SaaS-programmet när du anropar Power BI-API:er. Måste vara ett AAD-webbprogram. Kan användas istället för en *huvudanvändare* vid autentisering med Power BI.
 
-**Kapacitet** – En uppsättning resurser som är dedikerade till att köra Power BI-tjänsten. [Power BI Premium-kapaciteter](../service-premium.md) Avsett för företag som använder Power BI internt, medan [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) är avsett för programutvecklare som utvecklar SaaS-program för tredje part.
+**Kapacitet** – En uppsättning resurser som är dedikerade till att köra Power BI-tjänsten. [Power BI Premium-kapaciteter](../service-premium-what-is.md) Avsett för företag som använder Power BI internt, medan [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) är avsett för programutvecklare som utvecklar SaaS-program för tredje part.
 
 **[Power BI Pro-licens](../service-admin-purchasing-power-bi-pro.md)** – En användarbaserad licens, som beviljar rättigheter att publicera innehåll till apparbetsytor, använda appar utan Premium-kapacitet, dela instrumentpaneler och prenumerera på instrumentpaneler och rapporter.
 
@@ -142,9 +142,9 @@ Om du vill lägga till ytterligare isolering kan en programutvecklare definiera 
 
 ### <a name="scalability"></a>Skalbarhet
 
-En fördel med den här modellen är att separationen av data i flera datauppsättningar för varje klient övervinner [storleksbegränsningarna för en enskild datauppsättning](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (för närvarande 10 GB i en kapacitet). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. Den här uppgiften är inte möjlig med en enskild stor datauppsättning. Med flera datauppsättningar går det även att dela upp klienter i flera Power BI-kapaciteter om så behövs.
+En fördel med den här modellen är att separationen av data i flera datauppsättningar för varje klient övervinner [storleksbegränsningarna för en enskild datauppsättning](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (för närvarande 10 GB i en kapacitet). När kapaciteten är överbelastad kan det ta bort oanvända datauppsättningar för att frigöra minne för aktiva datauppsättningar. Den här uppgiften är inte möjlig med en enskild stor datauppsättning. Med flera datauppsättningar går det även att dela upp klienter i flera Power BI-kapaciteter om så behövs.
 
-Trots dessa fördelar måste man ta i beaktande den skala som SaaS-programmet kan uppnå i framtiden. Man kan t.ex. stöta på begränsningar när det gäller antalet artefakter man kan hantera. Mer information om [distributionsbegränsningar](#summary-comparison-of-the-different-approaches) finns längre fram i den här artikeln. Den kapacitets-SKU som används introducerar en gräns för hur stort minne som datauppsättningarna måste passa in, [hur många uppdateringar som kan köras samtidigt](../service-premium-understand-how-it-works.md) och den maximala frekvensen för datauppdateringar. Vi rekommenderar att du testar när du hanterar hundratals eller tusentals datauppsättningar. Vi rekommenderar också att du bedömer den genomsnittliga och den högsta användningsvolymen, såväl som eventuella specifika klienter med stora datauppsättningar eller avvikande användningsmönster, som hanteras annorlunda än andra klienter.
+Trots dessa fördelar måste man ta i beaktande den skala som SaaS-programmet kan uppnå i framtiden. Man kan t.ex. stöta på begränsningar när det gäller antalet artefakter man kan hantera. Mer information om [distributionsbegränsningar](#summary-comparison-of-the-different-approaches) finns längre fram i den här artikeln. Den kapacitet som används av SKU introducerar en gräns för mängden minne som datauppsättningar måste få plats i hur många uppdateringar som kan köras på samma gång och maximala antalet uppdateringar. Vi rekommenderar att du testar när du hanterar hundratals eller tusentals datauppsättningar. Vi rekommenderar också att du bedömer den genomsnittliga och den högsta användningsvolymen, såväl som eventuella specifika klienter med stora datauppsättningar eller avvikande användningsmönster, som hanteras annorlunda än andra klienter.
 
 ### <a name="automation--operational-complexity"></a>Automatisering och driftkomplexitet
 
@@ -245,17 +245,17 @@ När slutanvändare redigerar eller skapar rapporter kan de använda produktions
 
 **Överväganden och begränsningar avseende Power BI-kapacitet:**
 
-* Varje kapacitet kan bara använda sitt allokerade minne och V-kärnor i enlighet med [inköpt SKU](../service-premium.md).
-* Information om rekommenderad datauppsättningsstorlek för varje SKU finns i [Stora Premium-datauppsättningar](../service-premium-large-datasets.md).
+* Varje kapacitet kan bara använda sitt allokerade minne och V-kärnor i enlighet med [inköpt SKU](../service-premium-what-is.md).
+* Information om rekommenderad datauppsättningsstorlek för varje SKU finns i [Stora Premium-datauppsättningar](../service-premium-what-is.md#large-datasets).
 * Den maximala datauppsättningsstorleken i en dedikerad kapacitet är 10 GB.
 * Antalet schemalagda uppdateringar för en datauppsättning i *importläge* under en dag är 48.
 * Tiden mellan schemalagda uppdateringar för en datauppsättning i *importläge* är 30 minuter.
-* Information om hur många uppdateringar som kan köras samtidigt på en kapacitet finns i [Resurshantering och optimering](../service-premium-understand-how-it-works.md).
+* Information om hur många uppdateringar som kan köras samtidigt på en kapacitet finns i [Resurshantering och optimering](../service-premium-what-is.md#capacity-nodes).
 * Den genomsnittliga tiden för att skala en kapacitet är 1 till 2 minuter. Under denna tid är kapaciteten inte tillgänglig. Vi rekommenderar att du använder en utskalningsmetod om du vill undvika [stilleståndstid](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## <a name="next-steps"></a>Nästa steg
 
 * [Inbäddad analys med Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../service-premium.md)
+* [Power BI Premium](../service-premium-what-is.md)
 * [Säkerhet på radnivå](embedded-row-level-security.md)

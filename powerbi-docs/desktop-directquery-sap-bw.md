@@ -11,14 +11,14 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278088"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61304414"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery och SAP Business Warehouse (BW)
-Du kan ansluta till **SAP Business Warehouse (BW)**-datakällor direkt med **DirectQuery**. På grund av SAP BW:s OLAP/flerdimensionella natur så finns det många viktiga skillnader mellan DirectQuery över SAP BW jämfört med relationella källor som SQL Server. Dessa skillnader kan sammanfattas på följande sätt:
+Du kan ansluta till **SAP Business Warehouse (BW)** -datakällor direkt med **DirectQuery**. På grund av SAP BW:s OLAP/flerdimensionella natur så finns det många viktiga skillnader mellan DirectQuery över SAP BW jämfört med relationella källor som SQL Server. Dessa skillnader kan sammanfattas på följande sätt:
 
 * I **DirectQuery** över relationella källor, finns det en uppsättning frågor (som de definieras i dialogrutan **Hämta Data** eller **Frågeredigeraren**) som logiskt definierar de data som finns tillgängliga i fältlistan. Detta är *inte* fallet när du ansluter till en OLAP-källa, till exempel SAP BW. Vid anslutning till SAP-servern med **Hämta Data**, är det istället bara Infocube eller BEx Query som är markerat. Alla nyckelfigurer och -dimensioner för den valda Infocube/BEx Query kommer då finnas tillgängliga i fältlistan.   
 * På liknande sätt, finns det ingen **Frågeredigerare** vid anslutning till SAP BW. Inställningarna för datakälla (till exempel servernamn) kan ändras genom att välja **Redigera frågor > Inställningar för datakälla**. Inställningarna för alla parametrar kan ändras genom att välja **Redigera frågor > Hantera parametrar**.

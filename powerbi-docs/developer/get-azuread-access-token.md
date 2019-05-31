@@ -1,26 +1,26 @@
 ---
 title: Autentisera användare och hämta en Azure AD-åtkomsttoken för ditt program
 description: Lär dig hur du registrerar ett program i Azure Active Directory för användning med inbäddning av Power BI-innehåll.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 7b2249964f2fff26bc68fea19fd0010d8990110b
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.openlocfilehash: a38547807fbbcf3c76366f32caa46945e57ca8bc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762546"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710307"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Hämta en Azure AD-åtkomsttoken för ditt Power BI-program
 
 Lär dig hur du autentiserar användare i Power BI-programmet och hämtar en åtkomsttoken som ska användas med REST-API:et.
 
-Innan du kan anropa Power BI REST API behöver du hämta en **åtkomsttoken för autentisering** för Azure Active Directory (Azure AD). En **åtkomsttoken** används för att ge din app åtkomst till instrumentpaneler, paneler och rapporter i **Power BI**. Läs mer om Azure Active Directorys flöde för **åtkomsttoken** i [Flöde för att bevilja auktoriseringskod till Azure AD](https://msdn.microsoft.com/library/azure/dn645542.aspx).
+Innan du kan anropa Power BI REST API behöver du hämta en **åtkomsttoken för autentisering** för Azure Active Directory (Azure AD). En **åtkomsttoken** används för att ge din app åtkomst till instrumentpaneler, paneler och rapporter i **Power BI**. Läs mer om Azure Active Directorys flöde för **åtkomsttoken** i [Flöde för att bevilja auktoriseringskod till Azure AD](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
 
 En åtkomsttoken kan hämtas på olika sätt beroende på hur du bäddar in innehåll. Två olika sätt används i den här artikeln.
 
@@ -56,7 +56,7 @@ var @params = new NameValueCollection
 
 När du skapar en frågesträng omdirigeras du till **Azure AD** för att få en **auktoriseringskod**.  Nedan finns en komplett C#-metod för att konstruera en frågesträng för **auktoriseringskoden** och omdirigera till **Azure AD**. När du har auktoriseringskoden får du en **åtkomsttoken** med hjälp av **auktoriseringskoden**.
 
-Inom redirect.aspx.cs anropas [AuthenticationContext.AcquireTokenByAuthorizationCode](https://msdn.microsoft.com/library/azure/dn479531.aspx) för att generera en token.
+Inom redirect.aspx.cs anropas [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) för att generera en token.
 
 #### <a name="get-authorization-code"></a>Hämta auktoriseringskod
 
@@ -89,7 +89,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
     //Redirect authority
     //Authority Uri is an Azure resource that takes a client id to get an Access token
-    // AADAuthorityUri = https://login.microsoftonline.net/common/
+    // AADAuthorityUri = https://login.microsoftonline.com/common/
     string authorityUri = Properties.Settings.Default.AADAuthorityUri;
     var authUri = String.Format("{0}?{1}", authorityUri, queryString);
     Response.Redirect(authUri);
@@ -196,6 +196,10 @@ var authenticationContext = new AuthenticationContext(AuthorityUrl);
 
 m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
+
+## <a name="troubleshoot"></a>Felsök
+
+* Ladda ned [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) om du får ett ”'AuthenticationContext' innehåller inte någon definition för” AcquireToken ”och ingen tillgänglig” AcquireToken ”tar emot en första argument av typen” AuthenticationContext' hittades (saknar du en med hjälp av direktiv eller en sammansättningsreferensen?) ”fel.
 
 ## <a name="next-steps"></a>Nästa steg
 

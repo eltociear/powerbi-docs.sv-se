@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa891e06c83a21ac8fea299f068e3b95ad019062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265105"
+---
 Välkommen till den andra delen i den **interaktiva utbildningen** för Power BI: **Hämta data**. I det här avsnittet tittar vi på flera datacentrerade funktioner och verktyg för Power BI, med fokus på Power BI Desktop. Många av dessa verktyg finns även i Power BI-tjänsten, så du får dubbel användning av det här avsnittet.
 
 När du hämtar data är den ibland inte så bra formaterad eller *ren*, vilket du kanske vill att den ska vara. Så i det här avsnittet beskrivs hur du hämtar data, hur du rensar den (kallas ibland att *rensa* eller *transformera* data) och du får även vissa avancerade tips som gör din datahämtning enklare.

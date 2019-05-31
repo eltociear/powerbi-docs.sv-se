@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e29076a33a17b6097fd3fbf1db411f97ff45818
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271520"
+---
 Välkommen till avsnittet **Power BI och Excel** i den **interaktiva utbildningen** för Power BI.
 
 Du är förmodligen redan bekant med **Excel**. Kanske har du använt Excel att skapa eller visa rapporter, eller för att skapa cirkeldiagram eller andra visuella objekt. Eller så har du kanske använt **Power Pivot** eller **Power Query** för att skapa lite mer tekniska lösningar. I så är fallet, så kommer du att känna dig hemmastadd i Power BI, och så även dina arbetsböcker.

@@ -11,11 +11,11 @@ ms.date: 02/08/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 4b4bc6398466b4c603126efed5b6591c9c3ad6c0
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662030"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61059917"
 ---
 # <a name="your-content-is-up-to-date"></a>Ditt innehåll är aktuellt och uppdaterat
 Som *konsument* kan du arbeta med innehåll som skapats av *designer* och delats med dig. Du kanske undrar om det innehållet är aktuellt och uppdaterat eller du kanske bara vill veta när innehållet senast uppdaterades. Att veta att du arbetar med senaste innehållet ger dig tillförsikt.  

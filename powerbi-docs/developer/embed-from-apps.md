@@ -1,20 +1,20 @@
 ---
 title: Bädda in rapporter eller instrumentpaneler från appar
 description: Lär dig hur du integrerar eller bäddar in en rapport eller instrumentpanel från en Power BI-app och inte från en apparbetsyta.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 manager: kfile
 ms.date: 11/27/2018
-ms.openlocfilehash: 4125f44165fbbc063b782290b7c67da9993d5157
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 7db8c465652926caae46c25197bd135833f8e628
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61374740"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Bädda in rapporter eller instrumentpaneler från appar
 

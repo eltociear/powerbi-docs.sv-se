@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ea958349988cade1045e80b073254ab1f29bbe9e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264073"
+---
 I föregående ämnen har vi tittat på hur du kan använda Power BI för att ansluta till datakällor och hur du manuellt kan uppdatera dina datauppsättningar i Power BI-tjänsten. Du kommer dock inte att vilja uppdatera saker manuellt varje gång dina data ändras, och därför kan du använda Power BI för att ställa in en schemalagd uppdatering som ansluter till dina datakällor och publicera dem i Power BI-tjänsten automatiskt. Detta ger dig också ett sätt att ansluta till tjänsten med valfria lokala datakällor som Excel-filer, Access-databaser, SQL-databaser och annat.
 
 Systemet som låter dig ansluta dina lokala datakällor till Power BI-tjänsten kallas **datagatewayen**. Det är ett litet program som körs på datorn och använder ett på förhand ordnat schema för att ansluta till dina data, samla in alla uppdateringar och push-installera dem i Power BI-tjänsten. Den **personliga gatewayen** är en version av **datagatewayen** som kan användas utan någon administratörskonfiguration.

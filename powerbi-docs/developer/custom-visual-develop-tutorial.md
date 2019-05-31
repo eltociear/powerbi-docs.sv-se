@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 4efb4e2c02671671d42d9f66c1f9f57ee028c9a1
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: e7afdddc6d87b9494fa9264bdd253a3f93de6192
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174692"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61383957"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Självstudie: Utveckla ett anpassat visuellt objekt i Power BI
 
@@ -79,7 +79,7 @@ Nu måste du installera **pbiviz**-paketet.
     pbiviz --create-cert
     ```
 
-  Det returnerar ett resultat som producerar en *lösenfras*. I det här fallet är *lösenfrasen* **_15105661266553327_**.
+  Det returnerar ett resultat som producerar en *lösenfras*. I det här fallet är *lösenfrasen* **_15105661266553327_** .
 
   ![Certifikat som skapas via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
@@ -95,7 +95,7 @@ Nu måste du installera **pbiviz**-paketet.
 
 4. Välj *Nästa* i steget **Fil att importera**.
 
-5. Klistra in den lösenfras som du fick när du skapade certifikatet i rutan Lösenfras under steget **skydd av privat nyckel**.  I det här fallet är den också **_15105661266553327_**.
+5. Klistra in den lösenfras som du fick när du skapade certifikatet i rutan Lösenfras under steget **skydd av privat nyckel**.  I det här fallet är den också **_15105661266553327_** .
 
       ![Kopiera lösenfras](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
@@ -559,14 +559,14 @@ Definiera datarollen och datavymappningarna genom att ändra filen **capabilitie
 
     Den här instruktionen tilldelar *dataView* till en variabel för enkel åtkomst, och deklarerar variabeln så att den refererar till objektet *dataView*.
 
-2. Ersätt .text("Value") ** med följande i metoden **update**.
+2. I den **uppdatera** metod, Ersätt **.text("Value")** med följande.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![Ersätt textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. Ersätt **.text(“Label”)** med följande i metoden **update**.
+3. I den **uppdatera** metod, Ersätt **.text("Label")** med följande.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)

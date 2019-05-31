@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a98c06ac1e164328a9a88081e2b4b734b4d62ef1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256999"
+---
 Välkommen till avsnittet **Modellering** i den **interaktiva utbildningen** för Power BI. Det här avsnittet visar hur du förbereder dina anslutna data för användning med Power BI Desktop. Du kommer ofta att ansluta till fler än en datakälla för att skapa dina rapporter och det är viktigt att alla data samverkar. Du löser detta med modellering.
 
 För att skapa en logisk anslutning mellan olika datakällor kan du skapa en **relation**. Med en relation mellan datakällor kan Power BI veta hur dessa tabeller är relaterade till varandra, så att du kan skapa intressant visuell information och rapporter. I det här avsnittet beskrivs *relationer* (endast datacentrerade) samt hur du skapar relationer när det inte finns några.

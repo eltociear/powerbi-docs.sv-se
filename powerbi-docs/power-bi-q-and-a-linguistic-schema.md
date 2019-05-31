@@ -11,11 +11,11 @@ ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61420742"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Redigera språkschemat för Frågor och svar och lägga till fraser i Power BI Desktop 
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Ännu mer kraftfullt är det när dina data svarar, vilket är precis vad du kan åstadkomma med Frågor och svar i Power BI. När du ställer en fråga till Frågor och svar i Power BI, gör funktionen vad den kan för att svara korrekt. 

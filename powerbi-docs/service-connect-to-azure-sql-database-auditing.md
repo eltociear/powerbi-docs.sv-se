@@ -11,11 +11,11 @@ ms.date: 11/09/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 0d212510fd2856fd509077f35e0f10bb7c5dd4c5
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008770"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61181488"
 ---
 # <a name="sql-database-auditing-content-pack-for-power-bi"></a>SQL Database Auditing-innehållspaketet för Power BI
 

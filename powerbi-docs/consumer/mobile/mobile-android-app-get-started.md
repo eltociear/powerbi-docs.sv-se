@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: c5d6549c449c77cea709783b1634318e12fc2e52
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289312"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61351132"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 

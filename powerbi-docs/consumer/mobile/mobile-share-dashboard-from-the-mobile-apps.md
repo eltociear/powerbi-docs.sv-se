@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 69532ea9ad98edc7655fb77aec13b69eec6566bf
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61274658"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 Gäller för:
@@ -23,7 +23,7 @@ Gäller för:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-enheter |
 
-Med en [Power BI Pro-licens](../../service-features-license-type.md) kan du bjuda in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Du kan dela med vem som helst, inom eller utanför din organisation, och med eller utan ett e-postkonto som tillhör företaget. De måste även ha en Power BI Pro-licens, eller så måste innehållet finnas i en [Premium-kapacitet](../../service-premium.md).
+Med en [Power BI Pro-licens](../../service-features-license-type.md) kan du bjuda in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Du kan dela med vem som helst, inom eller utanför din organisation, och med eller utan ett e-postkonto som tillhör företaget. De måste även ha en Power BI Pro-licens, eller så måste innehållet finnas i en [Premium-kapacitet](../../service-premium-what-is.md).
 
 Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport eller visualisering](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) och sedan dela den med vem som helst med hjälp av Power BI-mobilapparna för iOS- och Android-enheter. 
 

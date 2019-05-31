@@ -1,21 +1,21 @@
 ---
 title: Inbäddad analys för att bädda in Power BI-innehåll i ett program för din organisation
 description: Lär dig att integrera eller bädda in en rapport, instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt din organisation. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 03/12/2019
-ms.openlocfilehash: 34d7ec423f3d4cb0f7487c78eff68c580ff0489e
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757471"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61355516"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
@@ -116,17 +116,17 @@ Så här hämtar du **applicationId**:
 
 2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **Appregistreringar**.
 
-    ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
 3. Välj det program som behöver **applicationId**.
 
-    ![Att välja App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Att välja App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
 4. Det finns ett **program-ID** som listas som en GUID. Använd detta **program-ID** som **applicationId** för appen.
 
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
 ### <a name="application-secret"></a>Apphemlighet
+
+Det här attributet behövs bara för AuthenticationType [tjänstens huvudnamn](embed-service-principal.md).
 
 Fyll i **ApplicationSecret**-uppgifterna från avsnittet **Nycklar** från avsnittet **Appregistreringar** i **Azure**.  Det här attributet fungerar när du använder [tjänstens huvudnamn](embed-service-principal.md).
 
@@ -136,23 +136,17 @@ Hämta **ApplicationSecret** genom att utföra följande steg:
 
 2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och sedan **Appregistreringar**.
 
-    ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-
 3. Välj det program som behöver använda **ApplicationSecret**.
 
-    ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. Välj **inställningar**.
+4. Välj **certifikat och hemligheter** under **hantera**.
 
-    ![Välj Inställningar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Välj **Nycklar**.
-
-    ![Välj nycklar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Välj **nya klienthemligheten**.
 
 6. Ange ett namn i rutan **Beskrivning** och välj en varaktighet. Välj sedan **Spara** för att hämta **värdet** för ditt program. När du stänger fönstret **Nycklar** efter att ha sparat nyckelvärdet visas värdefältet bara som dolt. I det här läget kan du inte att hämta nyckelvärdet. Om du tappar bort nyckelvärdet måste du skapa ett nytt på Microsoft Azure-portalen.
 
-    ![Nyckelvärde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Nyckelvärde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
 
 ### <a name="workspace-id"></a>ID för arbetsyta
 
@@ -190,7 +184,7 @@ Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 
 Fyll i informationen **AADAuthorityUrl** URL:en som du antingen kan bädda in i din organisations klient eller bädda in med en gästanvändare.
 
-För att bädda in med din organisations klient använder du URL – *https://login.microsoftonline.com/common/oauth2/authorize*.
+För att bädda in med din organisations klient använder du URL – *https://login.microsoftonline.com/common/oauth2/authorize* .
 
 För att bädda in med en gäst använder du URL – *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
 
@@ -226,7 +220,7 @@ Hämta en Power BI-rapport genom att använda åtgärden [Hämta rapporter](http
 
 Åtgärden [Hämta rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) returnerar en lista med rapporter. Du kan hämta en enda rapport från listan med rapporter.
 
-Om du vill göra REST API-anrop måste du inkludera en *auktoriserings*rubrik i formatet *Ägare {åtkomsttoken}*.
+Om du vill göra REST API-anrop måste du inkludera en *auktoriserings*rubrik i formatet *Ägare {åtkomsttoken}* .
 
 #### <a name="get-reports-with-the-rest-api"></a>Hämta rapporter med REST API
 
@@ -400,7 +394,7 @@ Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-premium.md).
+Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-premium-what-is.md).
 
 Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Microsoft Office 365](../service-admin-premium-purchase.md):
 

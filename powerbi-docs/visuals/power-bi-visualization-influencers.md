@@ -1,280 +1,344 @@
 ---
 title: Självstudie om visualiseringar av viktiga influencers
-description: Självstudie – skapa en visualisering av viktiga influencers i Power BI
+description: 'Självstudie: Skapa en påverka visualisering i Power BI'
 author: mihart
 manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 02/12/2019
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1f55a12e306af8a28e297e9feab2f2c0ae0cd60b
-ms.sourcegitcommit: 87e81ba92f3d1d65c26f9fc007bf106f96f37bfd
-ms.translationtype: HT
+ms.openlocfilehash: 8d2d6755d01a8ea9d5dad9813fcd7f4b4c1f8232
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051625"
 ---
 # <a name="key-influencers-visualization"></a>Visualisering av viktiga influencers
-Visualiseringen av viktiga influencers hjälper dig att förstå vilka faktorer som påverkar ett mått som du är intresserad av. Den analyserar dina data, rangordnar de faktorer som är viktiga och visar dem som viktiga influencers. Säg att du till exempel är intresserad av att räkna ut vad som påverkar personalomsättningen. En faktor kanske är anställningsavtalens längd och en annan kan vara medarbetarnas ålder. 
+De visuella påverka hjälper dig att förstå faktorerna som används i ett mått som du är intresserad av. Den analyserar dina data, rangordnar de faktorer som är viktiga och visar dem som viktiga influencers. Anta exempelvis att du vill ta reda på vilken påverkan personalomsättning, vilket är så kallade omsättning. En faktor kanske anställning kontrakt längd och en annan faktor kanske medarbetare ålder. 
  
-## <a name="when-to-use-key-influencers"></a>När ska du använda viktiga influencers? 
-Visualiseringen av viktiga influencers är ett bra val 
-- om du vill se vilka faktorer som påverkar det mått som analyseras
-
-- om du vill jämföra den relativa vikten för de här faktorerna. Har till exempel korta avtalstider större effekt på personalomsättningen än långa avtalstider? 
+## <a name="when-to-use-key-influencers"></a>När du ska använda påverka 
+Det påverka visuella objektet är ett bra alternativ om du vill: 
+- Se vilka faktorer påverkar måttet som analyseras.
+- Jämföra den relativa prioriteten för de här faktorerna. Har till exempel korta avtalstider större effekt på personalomsättningen än långa avtalstider? 
 
 ## <a name="key-influencer-requirements"></a>Krav för viktiga influencers 
-Det mått du analyserar måste vara ett kategoriskt fält.    
+Mått som du analyserar måste vara antingen kategoriska eller numeriska fält (samlingar och åtgärder ännu stöds inte).
 
+## <a name="features-of-the-key-influencers-visual"></a>Funktioner i de visuella påverka
 
-## <a name="features-of-the-key-influencer-visual"></a>Funktioner i visualiseringen av viktiga influencers
+![Funktioner som numrerade](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
 
-![numrerade funktioner](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)    
+1. **Flikarna**: Välj en flik för att växla mellan vyer. **Nyckeln Påverkare** visar de viktigaste deltagarna till det valda måttet värdet. **De främsta segment** visar de översta segment som bidrar till den valda måttvärde. Ett *segment* består av en kombination av värden. Ett segment kan exempelvis vara konsumenter som kunder har minst 20 år och live i region Väst. 
 
-1. ***Flikar*** – välj en flik för att växla mellan vyer. Viktiga influencers visar de viktigaste faktorerna som påverkar det valda måttvärdet. Viktigaste segment visar de viktigaste segmenten som påverkar det valda måttvärdet. Ett *segment* består av en kombination av värden.  Ett segment kan till exempel vara konsumenter som har varit kunder i minst 20 år och lever i region väst. 
+2. **Listrutan**: Värdet för måttet under undersökningen. Titta på måttet i det här exemplet **omdöme**. Det valda värdet är **låg**.
 
-2. ***Listruta*** – värde för det mått som undersöks. I det här exemplet tittar vi på måttet **rating** (omdöme) och det värdet vi har valt är **low** (lågt).    
+3. **Omformuleringen**: Det hjälper dig att tolka det visuella objektet i den vänstra rutan.
 
-3. ***Omräkning*** – hjälper oss att tolka det visuella objektet i den vänstra rutan. 
+4. **Vänster**: Den vänstra panelen innehåller ett visuellt objekt. I det här fallet visar den vänstra rutan en lista över de främsta påverka.
 
-4. ***Vänster ruta*** – den vänstra rutan innehåller ett visuellt objekt.  I det här fallet visar den vänstra rutan en lista över viktigaste influencers.
+5. **Omformuleringen**: Det hjälper dig att tolka det visuella objektet i den högra rutan.
 
-5. ***Omräkning*** – hjälper oss att tolka det visuella objektet i den högra rutan.
+6. **Högra rutan**: Den högra rutan innehåller ett visuellt objekt. I det här fallet stapeldiagrammet visar alla värden för viktiga Påverkare **tema** som valdes i det vänstra fönstret. Det specifika värdet av **användbarhet** i den vänstra rutan visas i grönt. Alla andra värden för **tema** visas i svart.
 
-6. ***Höger ruta*** – den högra rutan innehåller ett visuellt objekt. I det här fallet visar stapeldiagrammet alla värden för den **viktigaste influencern**, **Tema** som valts i den vänstra rutan. Det specifika värdet (**Usability**, användbarhet) från det vänstra fönstret visas i grönt och alla andra värden för **Tema** visas i svart.
+7. **Medellinje**: Genomsnittliga beräknas för alla andra möjliga värden för **tema** utom **användbarhet**. Så beräkningen gäller för alla värden i svart. Du kan ta reda vilken procentandel av den andra **teman** gav dig ett låga omdömet. Med andra ord, när en klassificering gavs av en kund beskriver som kunden också orsaken eller temat för omdömet. Några teman är användbarhet, hastighet och säkerhet. 
 
-7. ***Medellinje*** – medelvärdet beräknas för alla andra möjliga värden för **Tema**, utom för **Usability** (användbarhet). Så beräkningen gäller för alla värden i svart. Den visar vilken procentandel av övriga **teman** som lämnade ett lågt omdöme. När en kund lämnar ett omdöme beskriver alltså den kunden även anledningen eller **temat** för omdömet. Några teman är användbarhet, hastighet, säkerhet o.s.v. **Tema** är **användbarhet** är den näst viktigaste influencern för ett lågt omdöme enligt vårt visuella objekt i den vänstra rutan. Om vi tar ett genomsnitt av alla andra teman och hur de påverkar ett **lågt** omdöme får vi resultatet som visas i rött här. Av alla andra teman är endast 11,35 % av dem högre än **användbarhet**. 
+   **Temat är användbarhet** är den näst högsta viktiga Påverkare för ett låga omdömet enligt det visuella objektet i den vänstra rutan. Om du genomsnittlig alla andra teman och deras bidrag till en klassificering på **låg**, du får de resultat som visas i rött. Alla andra teman beroende, endast 11.35% är högre än **användbarhet**.
 
-8. ***Kryssruta*** – visa enbart värden som är influencers.
+8. **Markera kryssrutan**: **Visa endast värden som är Påverkare**.
 
 ## <a name="create-a-key-influencers-visual"></a>Skapa ett visuellt objektet av viktiga influencers 
  
-Titta på det här videoklippet och lär dig hur du skapar ett visuellt objekt av viktiga influencers. Följ sedan stegen nedan för att skapa ett själv. 
+Den här videon om du vill veta hur du skapar en påverka visual. Följ stegen nedan för att skapa en. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Vår produktchef vill ta reda på vilka faktorer som gjorde att kunder lämnade negativa recensioner vår molntjänst.  Öppna [PBIX-filen med kundfeedback](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) i Power BI Desktop. Du kan också hämta [Excel-filen med kundfeedback för Power BI-tjänsten eller Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Product Manager vill du ta reda på vilka faktorer lead-kunder om du vill lämna negativt granskningar om din molntjänst. Öppna [PBIX-filen med kundfeedback](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) i Power BI Desktop. Du kan också hämta den [kundernas Feedback Excel-fil för Power BI-tjänsten eller Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
 
 > [!NOTE]
-> Datauppsättningen Customer Feedback (kundfeedback) bygger på [Moro et al., 2014] S. Moro, s. Cortez och s. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014 
+> Kundfeedback uppgifter som är baserat på [Moro et al., 2014] S. Moro s. Cortez och s. Rita. ”Ett databaserat förfarande att förutsäga framgången för Bank Telemarketing”. *Decision Support Systems*, Elsevier, 62:22-31, June 2014. 
 
-1. Öppna rapporten och välj ikonen viktiga influencers.  
+1. Öppna rapporten och välj den **nyckeln Påverkare** ikon. 
 
     ![Välj mallen Viktiga influencers från rutan Visualiseringar](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Dra det mått du vill undersöka till fältet **Analysera**. Fältet **Analysera** har endast stöd för kategoriska (icke-kontinuerliga) variabler. Eftersom vi är intresserade av vad som gör att kundomdömet för vår tjänst blir **lågt** väljer vi **Customer Table** (Kundtabell) > **Rating** (Omdöme).    
-3. Dra sedan fält som du tror skulle kunna påverka **Rating** (Omdöme) till **Förklara med**. Du kan dra in så många fält som du vill. I det här fallet börjar vi med: 
-    - Land/region 
+2. Flytta mått som du vill undersöka i den **analysera** fält. Den **analysera** fält stöder endast kategoriska eller icke kontinuerliga, variabler. Se en kund som styr klassificering på att tjänsten är låg, Välj **kundtabell** > **klassificering**. 
+3. Flytta fält som du tror skulle kunna påverka **omdöme** till den **förklarar genom** fältet. Du kan flytta så många fält som du vill. I det här fallet, börja med:
+    - Land/Region 
     - Roll i organisationen 
     - Prenumerationstyp 
     - Företagsstorlek 
-    - Tema     
-4. Eftersom vi är intresserade av negativa omdömen markerar du **Low** (låg) i listrutan för **Vad påverkar Rating (omdöme) att vara**.  
+    - Tema 
+1. Om du vill fokusera på klassificeringarna som negativt, Välj **låg** i den **vad påverkar omdöme ska** nedrullningsbara listrutan.  
 
-    ![välj Låg i listrutan](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
+    ![Välj låg från listrutan](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
-Analysen körs på tabellnivå i fältet som analyseras. I det här fallet är vi intresserade av måttet **Rating** (Omdöme), som definieras på kundnivå (varje kund har antingen gett ett högt eller lågt betyg). Alla våra förklarande faktorer måste vara definierade på kundnivå om det visuella objektet ska kunna använda dem. 
+Analysen körs på tabellnivå för det fält som analyseras. I det här fallet den har den **omdöme** mått. Det här måttet har definierats på en kund-nivå. Varje kund har gett en Poängrekord eller en låg poäng. De förklarande faktorerna måste definieras på nivån kunden för det visuella objektet att utnyttja dem. 
 
-I exemplet ovan har alla våra förklarande faktorer antingen en 1: 1- eller många-till-en-relation med vårt mått. Till exempel associeras varje betyg med exakt ett tema (det huvudsakliga temat för kundrecensionen). På samma sätt kommer kunder från ett land, de har en medlemskapstyp och en roll i organisationen. Våra förklarande faktorer är därför redan attribut för en kund och ingen omvandling behövs – det visuella objektet kan använda dem omedelbart. 
+I föregående exempel har alla förklarande faktorer en eller en många-till-en-relation med måttet. I det här fallet har varje poäng exakt ett tema som är kopplade till den. Den här tema var huvudsakliga temat för kund-granskningen. På samma sätt kan kommer kunderna från ett land har en typ av medlemskap och utföra en roll i organisationen. De förklarande faktorerna är redan attribut för en kund och som krävs för att definiera några transformationer. Det visuella objektet kan göra omedelbart att använda. 
 
-Senare i självstudien ska vi titta på mer komplexa exempel där vi har en-till-många-relationer. I sådana fall måste kolumnerna först aggregeras på kundnivå innan analysen kan köras.  
+Senare under kursen titta på mer komplexa exempel som har en-till-många-relationer. I sådana fall kan behöva kolumnerna först aggregeras kund-nivå innan du kan köra analysen. 
 
-Mått och aggregeringar som används som förklarande faktorer utvärderas också på tabellnivån för måttet **Analysera**. Vi ser några exempel på det senare i den här artikeln. 
+Mått och aggregeringar som används som förklarande faktorer är också kommer att utvärderas för den tabell i **analysera** mått. Nedan visas några exempel. 
 
-## <a name="interpreting-categorical-key-influencers"></a>Tolka kategoriska viktiga influencers 
-Låt oss ta en titt på våra viktigaste influencers för låga omdömen. 
+## <a name="interpret-categorical-key-influencers"></a>Tolka kategoriska påverka 
+Låt oss ta en titt på påverka för låg betygsättning. 
 
-### <a name="top-single-factor-influencing-likelihood-of-a-low-rating"></a>Främsta enskilda faktor som påverkar sannolikheten för ett lågt omdöme
+### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Främsta en faktor som påverkar köpbeteendet sannolikheten för ett låga omdömet
 
-I vår organisation har vi tre roller: konsumenter, administratörer och utgivare. Att vara konsument är den viktigaste faktorn som bidrar till ett lågt omdöme. 
+Organisationen i det här exemplet har tre roller: konsument, administratör och utgivare. Att en konsument är den viktigaste faktorn som bidrar till ett låga omdömet. 
 
-![välj roll i organisationen är konsument](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
+![Välj roll i organisationen är konsument](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
 
-Mer exakt är konsumenter 2,57 x mer troliga att ge oss ett negativt betyg. I diagrammet Viktiga influencers står **Role in Org is consumer** (Roll i organisationen är konsument) överst på listan till vänster. Genom att markera **Role in Org is consumer** (Roll i organisationen är konsument) får vi se mer information i Power BI i fönstret till höger – den jämförelsevisa effekten av varje **roll** på sannolikheten för ett lågt omdöme.
+Konsumenterna är mer exakt 2,57 gånger mer sannolikt att ge ett negativt värde för din tjänst. Påverka diagrammets listor **roll i organisationen är konsument** först i listan till vänster. Genom att välja **roll i organisationen är konsument**, Power BI visar ytterligare information i den högra rutan. Jämförande effekten av varje roll på sannolikheten för ett låga omdömet visas.
   
-- 14,93 % av konsumenter ger en låg poäng  
-- I genomsnitt ger alla andra roller en låg poäng i 5,78 % av fallen 
-- Konsumenterna är därför 2,57 x mer troliga att ge en låg poäng jämfört med alla andra roller (skillnaden mellan grön stapel och röd streckad linje) 
+- 14.93% av konsumenter ge en låg poäng. 
+- Alla andra roller ger i genomsnitt en låg poäng 5.78% av tiden.
+- Konsumenterna är 2,57 gånger mer troligt att ge en låg poäng jämfört med andra roller. Du kan fastställa det här genom att dividera grönt fält med den röda streckade linjen. 
 
-### <a name="second-single-factor-influencing-likelihood-of-a-low-rating"></a>Den näst viktigaste enskilda faktorn som påverkar sannolikheten för ett lågt omdöme
+### <a name="second-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>En andra faktor som påverkar köpbeteendet sannolikheten för ett låga omdömet
 
-I det visuella objektet av viktiga influencers kan vi jämföra och rangordna faktorer utifrån många olika variabler.  Vår andra influencer har inget samband med **Roll i organisationen**.  Välj den andra influencern i listan, **Theme is usability** (Tema är användbarhet). 
+De visuella påverka Jämför och rankar faktorer från många olika variabler. Andra Påverkare har inget samband med **roll i organisationen**. Välj andra Påverkare i listan, vilket är **temat är användbarhet**. 
 
-![välj tema är användbarhet](media/power-bi-visualization-influencers/power-bi-theme.png)
+![Välj tema är användbarhet](media/power-bi-visualization-influencers/power-bi-theme.png)
 
-Här ser vi att den näst viktigaste faktorn handlar om temat för kundens recension. Kunder som kommenterade produktens *användbarhet* var 2,21 x mer troliga att ge ett lågt betyg jämfört med kunder som kommenterade andra teman, till exempel tillförlitlighet, design eller hastighet. 
+Den andra viktigaste faktorn är relaterat till temat för kundens granskning. Kunder som har kommenterats om användbarheten av produkten har 2.55 gånger mer troligt att ge en låg poäng jämfört med kunder som har kommenterats på andra teman, till exempel tillförlitlighet, design eller hastighet. 
 
-Om du jämför de visuella objekten ser vi att medelvärdet (röd streckad linje) har ändrats från 5,78 % till 11,34 %. Medelvärdet är dynamiskt eftersom det baseras på medelvärdet för alla andra värden. När det gäller den första influencern uteslöts kundroll, medan för den andra var det temat användbarhet som uteslöts. 
+Mellan de visuella objekten, medelvärde, vilket visas med den röda streckade linjen kan ändras från 5.78% till 11.34%. Genomsnittet är dynamisk eftersom den är baserad på medelvärdet av alla andra värden. För den första Påverkare inte medelvärdet kundrollen. För andra Påverkare utesluta den temat användbarhet. 
  
-Om du markerar rutan längst ned i det visuella objektet filtreras vyn så att endast influerande värden visas (i det här fallet som driver ett lågt betyg). Vi går från att titta på tolv teman till de fyra som Power BI har identifierat som drivande för låga omdömen. 
+Välj den **endast visa värden som är Påverkare** kryssrutan för att filtrera med endast inflytelserika värdena. I det här fallet är de roller som driver en låg poäng. Tolv teman minskas till de fyra som Power BI identifieras som teman som driver låg betyg. 
 
-![markera kryssrutan](media/power-bi-visualization-influencers/power-bi-only-show.png)
+![Markera kryssrutan](media/power-bi-visualization-influencers/power-bi-only-show.png)
 
-## <a name="interacting-with-other-visuals"></a>Arbeta med andra visuella objekt 
+## <a name="interact-with-other-visuals"></a>Interagera med andra visuella objekt 
  
-Varje gång en användare klickar på ett utsnitt, ett filter eller ett annat visuellt objekt på arbetsytan, körs analysen i det visuella objektet med viktiga influensers igen på den nya delen data. Vi kan till exempel dra in Company Size (Företagsstorlek) i rapporten och använda den som ett utsnitt. Vi vill se om de viktiga influencers för kunder i stora företag (företagsstorlek är större än 50 000) skiljer sig från allmänheten.  
+Varje gång du väljer ett utsnitt, filtrera eller andra visuella objekt på arbetsytan, produktmiljö de visual påverka analys på den nya delen av data. Du kan till exempel flytta **företagsstorlek** i rapporten och använda den som ett utsnitt. Du kan använda den för att se om påverka för enterprise-kunder skiljer sig från allmänheten. En enterprise företagets storlek är större än 50 000 anställda.
  
-När vi väljer **> 50 000** körs analysen igen och vi kan se att våra influencers har ändrats. För kunder i stora företag är den viktigaste influencern för låga omdömen att ha ett **tema** som rör **säkerhet**. Det kanske vi vill undersöka vidare och se om det finns specifika säkerhetsfunktioner som våra kunder i stora företag är missnöjda med. 
+Att välja **> 50 000** repriser analysen och du kan se att Påverkare ändrats. För stora företagskunder har översta Påverkare för låg klassificeringar ett tema som är relaterade till säkerhet. Du kanske vill undersöka ytterligare till se om det finns specifika säkerhetsfunktioner som kunderna stor är missnöjda om. 
 
-![utsnitt efter företagsstorlek](media/power-bi-visualization-influencers/power-bi-filter.png)
+![Segment av företagets storlek](media/power-bi-visualization-influencers/power-bi-filter.png)
 
-## <a name="interpreting-continuous-key-influencers"></a>Tolka kontinuerliga viktiga influencers 
+## <a name="interpret-continuous-key-influencers"></a>Tolka kontinuerlig påverka 
  
-Hittills har vi använt det visuella objektet för att utforska hur olika kategoriska fält påverkar låga omdömen. Det är också möjligt att ta in kontinuerliga faktorer (till exempel ålder, höjd, pris) i ”Förklara med”. Låt oss titta på vad händer om vi drar in Tenure (Nyttjandeperiod) från tabellen Customer (Kund) i ”Förklara med”. Nyttjandeperioden visar hur länge kunden har använt tjänsten. 
+Hittills har du sett hur du använder det visuella objektet för att utforska hur olika kategoriska fält påverka låg betyg. Det är också möjligt att ha kontinuerlig faktorer som ålder, höjd och priset i den **förklarar genom** fältet. Nu ska vi titta på vad som händer när **tjänstgöringsperiod i** flyttas från kundtabellen till **förklarar av**. Tjänstgöringsperiod i visar hur lång tid en kund har använt tjänsten. 
  
-Vi ser att när värdet för **Tenure** (Nyttjandeperiod) ökar, ökar även sannolikheten att få ett lägre omdöme. Denna trend tyder på att det är troligare att våra långsiktiga kunder ger ett negativt betyg, vilket är en intressant insikt som jag kanske vill följa upp senare.  
+När tjänstgöringsperiod i ökar, ökar även risken för att få en lägre klassificering. Denna trend föreslår att långsiktiga kunder är mer troligt att ge ett negativt värde. Den här informationen är intressant, och en som du kan följa upp senare. 
  
-Visualiseringen talar om för oss att varje gång nyttjandeperioden går upp med 13,44 månader, ökar i genomsnitt sannolikheten för ett lågt omdöme med 1,23 x. I det här fallet motsvarar 13,44 månader standardavvikelsen för nyttjandeperioden. Så den insikt vi får är att om nyttjandeperioden ökar med en standardmängd (standardavvikelsen för nyttjandeperioden) påverkar det sannolikheten att få ett lågt omdöme. 
+Visualiseringen visar att varje gång tjänstgöringsperiod i går upp med 13.44 månader, i genomsnitt sannolikheten för ett låga omdömet ökar med 1,23 gånger. I det här fallet motsvarar 13,44 månader standardavvikelsen för nyttjandeperioden. Så att de insikter du får en titt på hur öka tjänstgöringsperiod i genom att ett fast belopp som är standardavvikelsen för tjänstgöringsperiod i, påverkar sannolikheten för att ta emot ett låga omdömet. 
  
-Spridningsdiagrammet till höger visar den genomsnittliga % av låga omdömen för varje värde av nyttjandeperiod och visar en trendlinje som markerar lutningen.  
+Spridningsdiagrammet i rutan till höger visar den genomsnittliga procentandelen av låg klassificering för varje värde i tjänstgöringsperiod i. Den går igenom lutningen med en trendlinje.
 
 
-![spridningsdiagram för nyttjandeperiod](media/power-bi-visualization-influencers/power-bi-tenure.png)
+![Punktdiagram för tjänstgöringsperiod i](media/power-bi-visualization-influencers/power-bi-tenure.png)
 
-## <a name="interpreting-measuresaggregate-as-key-influencers"></a>Tolka mått/aggregering som viktiga influencers 
+## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Tolka mått och aggregeringar som påverka 
  
-Slutligen kan användare också använda mått och aggregeringar som förklarande faktorer i sin analys. Vi kanske till exempel vill se vilken effekt antalet kundsupportärenden eller genomsnittlig varaktighet för ett öppet ärende har på vilket betyg vi får. 
+Du kan använda mått och aggregeringar som förklarande faktorer i dina analyser. Du kan till exempel vill se vilken effekt antalet supportbegäranden för kunden eller den genomsnittliga varaktigheten för en öppen biljett har på poängen felmeddelandet. 
  
-I så fall vill vi se om antalet supportärenden en kund har påverkar vilken poäng de ger oss. Vi ska ta in supportärende-ID från tabellen Support Ticket (supportärende). Eftersom en kund kan ha flera supportärenden behöver vi aggregera ID på kundnivå. Den här aggregeringen är viktig eftersom vi kör analysen på kundnivå, så alla drivande faktorer måste definieras på den precisionsnivån. 
+I detta fall använder vill du se om antalet supportbegäranden som kunden har påverkar de ger poängen. Nu du hämta **stöder biljett-ID** från tabellen support-ärende. Eftersom en kund kan ha flera supportärenden, aggregera ID till kund-nivå. Aggregering är viktigt eftersom analysen körs på kund-nivå, så att alla drivrutiner måste definieras på den precisionsnivå. 
  
-Vi ska titta på antalet ID:n (så att varje kundrad har ett antal supportärenden som är associerade till dem). I det här fallet ser vi att när antalet supportärenden ökar, så ökar också sannolikheten för ett lågt omdöme med 5,51 x. Det visuella objektet till höger visar det genomsnittliga antalet supportärenden efter olika omdömesvärden (utvärderas på kundnivå). 
+Låt oss titta på antalet ID: N. Varje kund raden har antalet supportbegäranden som är kopplade till den. I det här fallet, som antal support biljetter ökar går sannolikheten för klassificering som låg upp 5.51 gånger. Det visuella objektet till höger visar det genomsnittliga antalet supportbegäranden av olika **omdöme** evalueras på nivån för kunden. 
 
-![påverkan av Support Ticket ID (supportärende-ID)](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
+![påverkan på Support biljett-ID](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
 
 
-
-## <a name="interpreting-the-results-top-segments"></a>Tolka resultaten: viktigaste segment 
+## <a name="interpret-the-results-top-segments"></a>Tolka resultaten: Viktigaste segment 
  
-På fliken Viktiga influencers kan användare utvärdera varje faktor individuellt, men man kan även växla till Viktiga segment och se hur en kombination av faktorer påverkar det mått man analyserar. 
+Du kan använda den **nyckeln Påverkare** flik för att utvärdera varje faktor individuellt. Du kan också använda den **viktigaste segment** flik för att se hur en kombination av faktorer påverkar det mått som du analyserar. 
  
-Inledningsvis visar Viktiga segment en översikt över alla segment som har identifierats av Power BI. I exemplet nedan kan vi se att sex segment har hittats. Dessa segment är rangordnade efter % av låga omdömen i segmentet. Vi kan se att segment 1 till exempel har 74,3 % låga kundomdömen.  Ju högre bubbla, desto högre andel låga omdömen. Storleken på bubblan representerar hur många kunder som finns i segmentet. 
+Främsta segment i början visa en översikt över alla segment som identifierats av Power BI. I följande exempel visas att sex segment hittades. Dessa segment rankade efter procentandelen låg betyg i segmentet. 1, till exempel har 74.3% kunden klassificeringar som är låg. Ju högre bubbla, desto högre andel låga omdömen. Storleken på bubblorna motsvarar hur många kunder är i segmentet. 
 
-![välj fliken för Viktigaste segment](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
+![Välj fliken översta segment](media/power-bi-visualization-influencers/power-bi-top-segments-tab.png)
 
-Om du markerar en bubbla visas mer detaljerad information om det segmentet. Om vi till exempel väljer Segment 1 ser vi att det består av relativt etablerade kunder (som har funnits hos oss mer än 29 månader) som har ett stort antal supportärenden (större än 4). Slutligen är de inte utgivare (så de är antingen konsumenter eller administratörer).  
+Om du markerar en bubbla visas mer detaljerad information om det segmentet. Om du väljer Segment 1, exempelvis kan hitta du att det består av relativt etablerade kunder. De har varit kunder än 29 månader och har fler än fyra supportärenden. Slutligen kan de inte är utgivare, så att de blir användare eller administratörer. 
  
-I den här gruppen har 74,3 % lämnat ett lågt omdöme. Den genomsnittliga kunden ger ett lågt omdöme 11,7 % av fallen, så det här segmentet har en betydligt större andel låga omdömen (63 procentenheter högre). Vi ser också att segment 1 innehåller cirka 2,2 % av våra data, så det motsvarar en adresserbar del av populationen. 
+I den här gruppen gav 74.3 kunderna procent av ett låga omdömet. Genomsnittlig kunden gav låg omdöme 11,7% av tiden, så det här segmentet har en större del av låg betyg. Det är högre 63 procentenheter. Segmentet 1 innehåller också ungefär 2.2% av data, så att den motsvarar en adresserbara del av populationen. 
 
-![välj det viktigaste segmentet](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
+![Välj första översta segment](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
+
+## <a name="working-with-numerical-data"></a>Arbeta med numeriska data
+
+Om du flyttar ett numeriskt fält till den **analysera** fält, du kan välja hur du hanterar det scenariot. Du kan ändra beteendet för det visuella objektet genom att gå till den **formatering fönstret** och växla mellan **Kategoriska Analysis-typen** och **kontinuerlig analystyp**.
+
+![Ändra från kategoriska till kontinuerlig](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
+
+En **Kategoriska Analysis-typen** fungerar enligt beskrivningen ovan. Till exempel om du tidigare såg undersökningen resultat mellan 1 och 10, kan be ”'vad påverkar undersökningen poäng vara 1?
+
+En **kontinuerlig analystyp** ändrar frågan till en kontinuerlig. I exemplet ovan är skulle vår nya fråga vara ”vad påverkar undersökningen poäng att öka/minska”?
+
+Denna skillnad är mycket användbart när du har massor av unika värden i fältet som du analyserar. I exemplet nedan tittar vi på house priser. Det är mycket olämpligt att be ”vad påverkar House priset vara 156,214”? eftersom det är mycket förmodligen specifik och vi inte har tillräckligt med data för att härleda ett mönster.
+
+I stället kan vi vill att fråga, ”vad påverkar House priset att öka”? vilket gör att vi kan behandla house priser som en rad i stället för distinkta värden.
+
+![Numeriska fråga](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
+## <a name="interpret-the-results-key-influencers"></a>Tolka resultaten: Viktiga påverkare 
+
+I det här scenariot kan vi titta på ”vad påverkar House priset att öka”. Vi tittar på ett antal förklarande faktorer som kan påverka ett house pris som **år bygger** (år i huset skapades), **KitchenQual** (se kvalitet) och **YearRemodAdd** (år i huset har remodeled). 
+
+I exemplet nedan är vi titta på våra främsta Påverkare som är Se kvalitet som utmärkt. Resultatet liknar de som vi såg när vi analysera kategoriska mått med några viktiga skillnader:
+
+- Stapeldiagrammet till höger tittar på medelvärden i stället för procenttal. Det därför visar genomsnittlig house priset på ett hus med en utmärkt Se Nyheter (grön liggande) jämfört med genomsnittlig house priset på ett hus utan en utmärkt Se (streckade linjen)
+- Talet i bubbeldiagrammet fortfarande är skillnaden mellan red prickad linje och grönt fält men det uttrycks som ett tal ($158. 49K) i stället för en sannolikhet (1.93 x). Så vidare genomsnittlig, datahus med utmärkt kök är nästan $160K dyrare än datahus utan utmärkt kök.
+
+![Numeriska target kategoriska Påverkare](media/power-bi-visualization-influencers/power-bi-ki-numeric-categorical.png)
+
+I exemplet nedan vi tittar på påverkan har en kontinuerlig faktor (år house har remodeled) på house pris. Skillnader jämfört med hur vi analyserar kontinuerligt Påverkare för kategoriska mått är följande:
+
+-   Spridningsdiagrammet i den högra rutan visar genomsnittlig house priset för varje distinkt värde årets remodeled. 
+-   Värdet i bubbeldiagrammet visar av hur mycket den genomsnittliga house tillägg (i det här fallet $2. 87k) när året i huset har remodeled ökar av dess standardavvikelse (i det här fallet 20 år)
+
+![Numeriska target kontinuerlig Påverkare](media/power-bi-visualization-influencers/power-bi-ki-numeric-continuous.png)
+
+Slutligen, om det finns åtgärder som vi tittar på det genomsnittliga året ett hus har skapats. Analysen här är följande:
+
+-   Spridningsdiagrammet i den högra rutan visar genomsnittlig house priset för varje distinkt värde i tabellen
+-   Värdet i bubbeldiagrammet visar av hur mycket den genomsnittliga house tillägg (i det här fallet $1. 35K) när den genomsnittliga år ökar med dess standardavvikelse (i det här fallet 30 år)
+
+![Numeriska target mäter Påverkare](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+
+## <a name="interpret-the-results-top-segments"></a>Tolka resultaten: Främsta segment
+
+Främsta segment är för numeriska mål visa grupper där huset priser i genomsnitt högre än i den övergripande datamängden. Till exempel nedan vi se att **Segment 1** består av datahus där **GarageCars** (antal bilar garaget rymmer) är större än 2 och **RoofStyle** har hängt. Datahus med denna ha ett genomsnittligt pris på $355K jämfört med det totala medelvärdet i data som är $180 kB.
+
+![Numeriska target mäter Påverkare](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning 
  
-**Vilka begränsningar har förhandsversionen?** 
+**Vilka är begränsningarna för förhandsversionen?** 
  
-Det visuella objektet av viktiga influencers finns för närvarande i offentlig förhandsversion, och det finns flera begränsningar som användare bör känna till. Funktioner som för närvarande inte är tillgängliga omfattar följande: 
-- Analysera mått som är aggregeringar/mått 
-- Använda det visuella objektet i Power BI Embedded
-- Använda det visuella objektet i Power BI-mobilappar
-- RLS-stöd 
-- Direct Query-stöd 
-- Live-anslutningsstöd 
+De visuella påverka är för närvarande i offentlig förhandsversion och den har vissa begränsningar. Funktioner som inte finns för närvarande innehåller: 
+- Analysera mått som är aggregat eller åtgärder.
+- Använda det visuella objektet i Power BI Embedded.
+- Använda det visuella objektet på Power BI-appar.
+- Stöd för RLS.
+- Direct Query-stöd.
+- Live-stöd för anslutning.
+
+![Numeriska fråga](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
+**Jag ser ett fel som inga Påverkare eller segment hittades. Varför?** 
+
+![Inga Påverkare ett fel påträffades](media/power-bi-visualization-influencers/power-bi-error1.png)
+
+
+Det här felet uppstår när du har tagit med fält i **förklarar av** men ingen Påverkare hittades. 
+- Du ingår det mått som du analysera i både **analysera** och **förklarar av**. Ta bort den från **förklarar av**. 
+- Dina förklarande fält har för många kategorier med få observationer. Detta gör det svårt för visualisering för att avgöra vilka faktorer som Påverkare. Det är svårt att generalisera baserat på bara några få observationer. Om du analyserar ett numeriskt fält kanske du vill växla från **Kategoriska Analysis** till **kontinuerlig analys** i den **formatering fönstret** under den  **Analysis** kort.
+- Din förklarande faktorer har tillräckligt med observationer att generalisera, men visualiseringen kunde inte hitta korrelationer meningsfulla till rapporten.
  
-**Jag får ett felmeddelande om att inga influencers/segment hittades. Varför?**  
+**Jag ser ett fel som att det mått som jag analyserar inte har tillräckligt med data för analys körs. Varför?** 
 
-![fel – inga influencers hittades](media/power-bi-visualization-influencers/power-bi-error1.png)
+![Det finns inte tillräckligt med datafel](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
 
+Visualiseringen fungerar genom att titta på mönster i data för en grupp och andra grupper. Till exempel ser ut för kunder som gav låg klassificeringarna jämfört med kunder som gav höga betyg. Om data i din modell har bara ett par observationer, är det svårt att hitta mönster. Om visualiseringen inte har tillräckligt med data för att hitta meningsfulla Påverkare, indikerar det att mer data behövs för att köra analysen. 
 
-Det här felet uppstår när du har dragit in fält i **Förklara med** men inga influencers hittades.   
-- Du har lagt till det mått som du analyserar i både Analysera och Förklara med (du bör ta bort det från **Förklara med**) 
-- Dina förklarande fält har för många kategorier med få observationer. Det gör det svårt för visualiseringen att avgöra vilka faktorer som är influencers eftersom det är svårt att generalisera utifrån en handfull observationer 
-- Dina förklarande faktorer har ett tillräckligt antal observationer för att göra generaliseringar, men visualiseringen kunde inte att hitta någon meningsfull korrelation att rapportera 
+Vi rekommenderar att du har minst 100 observationer för det valda tillståndet. I det här fallet är tillståndet kunder som omsättningsuppdateringar. Du måste också minst 10 observationer för de tillstånd som du använder för jämförelse. I det här fallet är tillståndet jämförelse kunder som inte omsättningsuppdateringar.
+
+Om du analyserar ett numeriskt fält kanske du vill växla från **Kategoriska Analysis** till **kontinuerlig analys** i den **formatering fönstret** under den  **Analysis** kort.
+
+**Ett felmeddelande visas som ett fält i *förklarar av* är inte unikt relaterade till den tabell som innehåller det mått som jag analyserar. Varför?**
  
-**Jag ser ett fel om att det mått jag analyserar inte har tillräckligt med data för att köra analysen. Varför?**  
+Analysen körs på tabellnivå för det fält som analyseras. Till exempel om du analysera kundfeedback för din tjänst, kanske en tabell som anger om en kund gav en hög klassificering eller ett låga omdömet. I det här fallet körs dina analyser på tabellnivå kund. 
 
-![fel – inte tillräckligt med data](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
-
-Visualiseringen skapas genom att titta på mönster i data för en grupp (till exempel för kunder som lämnade låga omdömen) jämfört med andra grupper (till exempel kunder som lämnade höga omdömen). Om data i din modell har mycket få observationer är det svårt att hitta mönster. Om visualiseringen inte har tillräckligt med data för att hitta meningsfulla influencers meddelas du att mer data behövs för att köra analysen. Vi rekommenderar att du har minst 100 observationer för det valda tillståndet (kunder som lämnar) och minst 10 observationer för tillstånd som du använder för jämförelse (kunder som inte lämnar).  
+Om du har en relaterad tabell som har definierats på en mer detaljerad nivå än den tabell som innehåller dina mått kan se du det här felet. Här är ett exempel: 
  
-**Jag ser ett fel om att ett fält i Förklara med inte är unikt relaterat till tabellen som innehåller det mått jag analyserar. Varför?**  
+- Du kan analysera styr kunder att ge låg betyg på din tjänst.
+- Du vill se om enheten där kunden använder din tjänst påverkar granskningar som de ger.
+- En kund kan använda tjänsten på flera olika sätt.
+- I följande exempel använder kund 10000000 både en webbläsare och en surfplatta för att interagera med tjänsten.
+
+![En relaterad tabell som definierats på en mer detaljerad nivå än den tabell som innehåller dina mått](media/power-bi-visualization-influencers/power-bi-error2.png)
+
+Om du försöker använda kolumnen enhet som en förklarande faktor, kan du se följande fel: 
+
+![Fel kolumn fel](media/power-bi-visualization-influencers/power-bi-error3.png)
+
+Det här felet visas eftersom enheten inte är definierad på nivån för kunden. En kund kan använda tjänsten på flera enheter. Enheten måste vara ett attribut för kunden för visualisering att hitta mönster. Det finns flera lösningar som beror på din förståelse för verksamheten: 
  
-Analysen körs på tabellnivå i fältet som analyseras. Om du till exempel analyserar kundfeedback för din tjänst kanske du har en tabell som anger om en kund lämnade ett högt eller lågt omdöme. I så fall skulle din analys köras på kundtabellsnivån. 
-
-Om du har en relaterad tabell som har definierats på en mer detaljerad nivå än tabellen som innehåller dina mått får du det här felet. Vi illustrerar detta med ett exempel: 
+- Du kan ändra sammanfattningen av enheter som ska räknas. Använd till exempel antal om antalet enheter som kan påverka poängsättningen som ger en kund. 
+- Du kan pivotera kolumnen enhet för att se om använder tjänsten på en specifik enhet påverkar en kunds klassificering.
  
-- Du analyserar vad som påverkar kunder att ge låga omdömen om din tjänst 
-- Du är intresserad av att se om vilken enhet kunden använder din tjänst på, påverkar vilka omdömen de ger 
-- En kund kan använda tjänsten på flera olika sätt   
-- I exemplet nedan använder kund 10000000 både en webbläsare och en surfplatta för att interagera med tjänsten 
+I det här exemplet var data pivoteras för att skapa nya kolumner för webbläsare, mobil- och surfplattor. Du kan nu använda dessa enheter i **förklarar av**. Alla enheter sig innehålla Påverkare och webbläsaren har en mycket stor påverkan på poäng för kunden.
 
-![fel – om du har en relaterad tabell som har definierats på en mer detaljerad nivå än tabellen som innehåller dina mått](media/power-bi-visualization-influencers/power-bi-error2.png)
+Kunder som inte använder webbläsaren för att använda tjänsten är mer exakt 3.79 gånger mer sannolikt att ge en låg poäng än de kunder som gör. Lägre nedåt i listan för mobil inversen är true. Kunder som använder den mobila appen är mer troligt att ge en låg poäng än de kunder som inte. 
 
-Om du försöker använda enhetskolumnen som en förklarande faktor visas följande fel: 
+![Löst](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-![fel – fel kolumn](media/power-bi-visualization-influencers/power-bi-error3.png)
+**Jag ser en varning om att åtgärder som inte ingår i min analys. Varför?** 
 
-Det beror på att enhet inte har definierats på kundnivån – en kund kan använda tjänsten på flera enheter. Om visualiseringen ska kunna hitta mönster måste enheten bli ett attribut för kunden. I det här fallet har jag flera lösningar, beroende på min förståelse av verksamheten: 
+![Åtgärder som ingår inte fel](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
+
+
+Analysen körs på tabellnivå för det fält som analyseras. Om du analysera kundomsättning, kan du ha en tabell som anger om en kund churned eller inte. I det här fallet körs dina analyser på nivån för kund-tabellen.
  
-- Jag kan ändra sammanfattningen av enheten till att exempelvis räknas om jag tror att antalet enheter kan påverka vilken poäng en kund ger 
-- Jag kan pivotera enhetskolumnen för att se om användning av tjänsten på en viss enhet påverkar en kunds omdöme  
+Mått och aggregeringar är som standard som analyseras på tabellnivå. Om det finns ett mått för genomsnittliga månatliga utgifter, skulle de analyseras på tabellnivå kund. 
+
+Om kundtabellen inte har en unik identifierare, du kan inte utvärdera måttet och ignoreras av analysen. Kontrollera att tabellen med din mått har en unik identifierare för att undvika detta. I det här fallet är det kundtabellen och den unika identifieraren är kund-ID. Det är också lätt att lägga till en indexkolumn med Power Query.
  
-I det här exemplet pivoterar jag mina data för att skapa nya kolumner för ”browser” (webbläsare), ”mobile” (mobiltelefon) och ”tablet” (surfplatta). Nu kan jag använda dem i Förklara med. Vi upptäcker att alla enheter är influencers och att webbläsaren har den största effekten på kundpoängen. 
+**Jag ser en varning om att det mått som jag analyserar har fler än 10 unika värden och att den här mängden kan påverka kvaliteten på min analys. Varför?** 
 
-Mer exakt är kunder som inte använder webbläsaren för att använda tjänsten 3,79 x mer troliga att ge en låg poäng än de som gör det. Längre ned i listan ser vi att det omvända är sant för mobiltelefoner. Det är mer troligt att kunder som använder mobilappen ger ett lägre betyg än de som inte gör det.  
+AI-visualisering kan analysera kategoriska fält och numeriska fält. När det gäller kategoriska fält, ett exempel kan vara omsättning är Ja eller Nej, och kundnöjdhet är hög, medel eller låg. Öka antalet kategorier för att analysera innebär att det finns färre observationer per kategori. Detta gör det svårare för visualisering för att hitta mönster i data. 
 
-![fel – löst](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
+När du analyserar numeriska fält du kan välja mellan behandlar numeriska fält som text i vilket fall du kör samma analysen som du gör kategoridata (**Kategoriska Analysis**). Om du har massor av distinkta värden som vi rekommenderar att du växla analysen ska **kontinuerlig analys** som det innebär att vi kan hämta mönster från när siffror öka eller minska snarare än de behandlas som distinkta värden. Du kan växla från **Kategoriska Analysis** till **kontinuerlig analys** i den **formatering fönstret** under den **Analysis** kort.
 
-**Jag ser en varning om att mått inte tagits med i min analys. Varför?** 
+För att hitta starkare Påverkare, rekommenderar vi att du grupperar liknande värden till en enda enhet. Till exempel om du har ett mått för pris kan sannolikt du kommer att få bättre resultat genom att gruppera liknande priserna i hög, medel och låg kategorier och att använda enskilda prispunkter. 
 
-![fel-mått togs inte med](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
+![Fler än 10 unika faktorer som varning](media/power-bi-visualization-influencers/power-bi-error4.png)
 
 
-Analysen körs på tabellnivå i fältet som analyseras. Om du analyserar kundomsättning kan du ha en tabell som anger om en kund har lämnat er eller inte. I så fall skulle din analys köras på kundtabellsnivån.
+**Det finns faktorer i Mina data som ser ut som om de ska vara påverka, men de inte. Hur kan det bli så?**
+
+I följande exempel driva kunder som är konsumenter låg klassificeringar, med 14.93% av klassificeringar som är låg. Administratörsrollen har också en hög andel låg betyg på 13.42%, men det är inte anses vara en Påverkare. 
+
+Orsaken till detta är att visualiseringen också tar hänsyn till antalet datapunkter när den hittar Påverkare. I följande exempel har mer än 29,000 konsumenter och 10 gånger färre administratörer, ungefär 2,900. Endast 390 av dem gav ett låga omdömet. Det visuella objektet har inte tillräckligt med data för att fastställa om det finns ett mönster med administratören betyg eller om det är bara en chans att söka efter. 
+
+![Hur Påverkare bestäms](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Hur du för att beräkna påverka för kategoriska analys?**
+
+I bakgrunden AI-visualisering använder [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) att köra en logistisk regression för att beräkna påverka. En logistisk regression är en statistisk modell som jämför olika grupper med varandra. 
+
+Om du vill se låg klassificeringar som styr kontrollerar logistic regression hur kunder som gav en låg poäng skiljer sig från de kunder som gav en Poängrekord. Om du har flera kategorier, till exempel hög, neutral och låg poäng titta du på hur de kunder som gav ett låga omdömet skiljer sig från de kunder som inte tilldelar ett låga omdömet. I så fall hur de kunder som gav en låg poäng skiljer sig från de kunder som gav en hög klassificering eller en neutral klassificering? 
  
-Mått och aggregeringar analyseras som standard på den tabellnivån. Om vi hade ett mått för ”Genomsnittliga utgifter per månad” skulle det analyseras på kundtabellsnivån.  
-
-Om kundtabellen inte har en unik identifierare kan vi inte utvärdera måttet och den ignoreras i analysen. Undvik det genom att kontrollera att tabellen med ditt mått (i det här fallet kundtabellen) har en unik identifierare (t.ex. kund-ID). Det är också mycket enkelt att lägga till en indexkolumn med hjälp av Power Query.
+Logistic regression söker efter mönster i data och söker efter hur kunder som gav ett låga omdömet kan skilja sig från de kunder som gav en höga omdömet. Det kanske, till exempel att kunder med mer supportärenden ger en högre procentandel låg klassificeringarna än kunder med få eller inga supportärenden.
  
-**Jag ser en varning om att det mått jag analyserar har fler än 10 unika värden och att detta kan påverka kvaliteten på min analys. Varför?**  
+Logistic regression tittar också hur många datapunkter finns. Om kunder som spela upp en administratörsroll ge proportionellt mer negativt poäng, men det finns bara ett par administratörer, kallas inte detta bra. Detta görs eftersom det inte finns tillräckligt många datapunkter som är tillgängliga för att härleda ett mönster. Ett statistiska test som kallas ett Wald test används för att avgöra om en Påverkare betraktas som en faktor. Det visuella objektet använder p-värdet 0,05 för att fastställa tröskelvärdet. 
 
-AI-visualiseringen är optimerad för att analysera kategorier (till exempel Kvarvarande är Ja eller Nej, Kundnöjdhet är Hög, Medel eller Låg o.s.v.). Om vi ökar antalet kategorier innebär det att vi har färre observationer per kategori, vilket gör det svårare att hitta mönster i data för visualiseringen. 
+**Hur du för att beräkna påverka för numeriska analys?**
 
-Vi rekommenderar att man grupperar liknande värden i en och samma enhet för att hitta starkare influencers. Om du till exempel har ett mått för pris får du troligtvis bättre resultat genom att samla liknande priser i grupper som Högt, Medel, Lågt i stället för att använda enskilda prispunkter. 
+I bakgrunden AI-visualisering använder [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) att köra en linjär regression för att beräkna påverka. En linjär regression är en statistisk modell som visar hur resultatet av fältet som du analyserar ändras baserat på din förklarande faktorer.
 
-![fel – fler än tio unika faktorer](media/power-bi-visualization-influencers/power-bi-error4.png)
+Till exempel om vi analyserar house priser, kommer en linjär regression titta på inverkan med ett utmärkt köket har på house-priset. Har datahus med utmärkt kök Allmänt lägre eller högre house priser jämfört med datahus utan utmärkt kök?
 
-
-**Det finns faktorer i mina data som ser ut som om de borde vara influencers, men det är de inte. Hur kan det bli så?**
-
-I exemplet nedan ser vi att kunder som är konsumenter oftare ger låga omdömen (14,93 % av omdömena är låga). Intressant är att även administratörsrollen har en hög andel låga omdömen (13,42 %), men den anses inte vara en influencer. 
-
-Anledningen är att visualiseringen också tar hänsyn till antalet datapunkter vid identifiering av influencers. I exemplet nedan har vi över 29 000 konsumenter och 10 gånger färre administratörer (cirka 2 900). Dessutom gav endast 390 av dem ett lågt omdöme. Det visuella objektet har därför inte tillräckligt med data för att avgöra om det verkligen är ett mönster i administratörsomdömena eller om det bara är en slump.  
-
-![fel – hur influencers identifieras](media/power-bi-visualization-influencers/power-bi-error5.png)
-
-**Hur beräknas viktiga influencers?**
-
-AI-visualiseringen använder [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) för att köra en logistisk regression för att beräkna viktiga influencers. En logistisk regression är en statistisk modell som jämför olika grupper med varandra. Om vi skulle titta på vad som driver fram låga omdömen skulle den logistiska regressionen titta på hur kunder som gav en låg poäng skiljer sig från dem som gav höga betyg. Om vi hade flera kategorier (högt betyg, neutralt betyg, lågt betyg) skulle vi titta på hur de kunder som gav ett lågt omdöme skiljer sig från kunder som inte gav ett lågt omdöme (hur de skiljer sig från de som lämnade ett högt ELLER ett neutralt omdöme). 
- 
-Den logistiska regressionen söker efter mönster i data, som visar hur kunder som lämnade ett lågt omdöme kan skilja sig från dem som lämnade ett högt omdöme. Den kanske till exempel upptäcker att kunder som har fler supportärenden ger en mycket högre % av låga omdömen än de som har få eller inga supportärenden.
- 
-Den logistiska regressionen väger också in hur många datapunkter det finns. Om till exempel kunder med administratörsroll proportionellt sett ger mer negativa betyg, men om det bara finns en handfull administratörer, räknas inte det som en påverkande faktor. Det beror på att det inte finns tillräckligt med datapunkter tillgängliga för att härleda ett mönster. Ett statistiskt test (Wald-test) används för att avgöra om en faktor ska betraktas som en influencer. Det visuella objektet använder p-värdet 0,05 för att fastställa tröskelvärdet. 
-
+Den linjära regressionen tar även hänsyn till antalet datapunkter. Till exempel om datahus med tennisbanor har högre priser, men vi har mycket få datahus som har en Tennisplan kan anses detta inte bra. Detta görs eftersom det inte finns tillräckligt många datapunkter som är tillgängliga för att härleda ett mönster. Ett statistiska test som kallas ett Wald test används för att avgöra om en Påverkare betraktas som en faktor. Det visuella objektet använder p-värdet 0,05 för att fastställa tröskelvärdet. 
 
 **Hur beräknas segment?**
 
-AI-visualiseringen använder [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) för att köra ett beslutsträd för att hitta intressant undergrupper. Syftet med beslutsträdet är att få en undergrupp av datapunkter som har ett relativt högt värde för det mått vi är intresserade av (till exempel kunder som lämnade ett lågt omdöme). 
+I bakgrunden AI-visualisering använder [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) att köra ett beslutsträd för att hitta intressant undergrupper. Beslutsträdet syftar till att få en undergrupp till datapunkter som är relativt hög i mått som du är intresserad av. Det kan kunder med låg betyg eller datahus med höga priser.
 
-Beslutsträdet tar varje förklarande faktor och försöker avgöra vilken faktor som ger den bästa uppdelningen. Om vi till exempel filtrerar data så att endast kunder i stora företag inkluderas, skulle det skilja ut kunder som gav oss ett högt jämfört med ett lågt omdöme? Eller kanske det blir bättre om vi filtrerar data så att vi endast inkluderar användare som har kommenterat säkerheten? 
+Beslutsträdet tar varje förklarande faktor och försöker att avgöra vilka faktor ger den bästa *dela*. Till exempel om du filtrerar data om du vill inkludera endast stora företagskunder som separeras ut kunder som gav en höga omdömet jämfört med ett låga omdömet? Eller kanske är det bättre att filtrera data om du vill inkludera endast de användare som har kommenterats om säkerhet? 
 
-När beslutsträdet har gjort en uppdelning går den vidare med den undergruppen av data (till exempel kunder som har kommenterat säkerheten) och försöker ta reda på är vilken uppdelningen som är bäst för dessa data. Efter varje uppdelning väger den också in om den har tillräckligt med datapunkter för att det ska vara en representativ grupp att härleda ett mönster från eller om det bara kan vara en anomali i data och därmed inget segment. (Ett annat statistiskt test används för att kontrollera uppdelningens statistiska signifikans, med p-värdet 0,05). 
+När beslutsträdet gör en delning, tar undergrupp av data och anger nästa bästa delningen för dessa data. I det här fallet är undergruppen kunder som har kommenterats på säkerhet. Efter varje delning tittar den också om det finns tillräckligt många datapunkter för den här gruppen ska vara tillräckligt representant för att härleda ett mönster från eller om den är avvikelser i data och inte en verklig segment. Ett annat statistiska test används för att söka efter statistisk betydelsen av villkoret dela med p-värde på 0,05. 
 
-När beslutsträdet har slutförts blir alla uppdelningar (säkerhetskommentarer, stort företag) Power BI-filter. Den här filterkombinationen paketeras som ett segment i det visuella objektet. 
+När beslutsträdet är klar tar alla delningen, till exempel säkerhet kommentarer och stora företag, och skapar Power BI-filter. Den här filterkombinationen paketeras som ett segment i det visuella objektet. 
  
-**Varför blir visa faktorer influencers/slutar vara influencers när jag drar in fler fält i Förklara med?**
+**Varför göra vissa faktorer blir Påverkare eller stoppa som Påverkare när jag över flera fält i den *förklarar genom* fältet?**
 
-Visualiseringen utvärderar alla förklarande faktorer tillsammans. Det innebär att även om en faktor på egen hand kan vara en influencer kanske den inte är det i förhållande till andra faktorer. Föreställ dig att vi analyserar vad som påverkar höga huspriser med sovrum och husstorlek som förklarande faktorer. 
-- På egen hand kanske sovrum är en påverkande faktor för höga huspriser 
-- Om vi tar med husstorlek i analysen ser vi vad som händer med sovrum om vi håller husstorleken konstant 
-- Om vi håller husstorlek konstant på 140 m2 är det osannolikt att ett kontinuerligt ökande antal sovrum dramatiskt ökar huspriset. Sovrum kanske inte är en lika viktig faktor som den var innan husstorlek vägdes in. 
+Visualiseringen utvärderar alla förklarande faktorer tillsammans. En faktor kanske en Påverkare påverkar i sig, men när den betraktas som med andra faktorer också inte. Anta att du vill analysera ett house pris vara hög, med sovrum och house storlek som förklarande faktorer som styr:
+
+- Separat för att ge kanske mer sovrum en drivrutin för house priserna är hög.
+- Inklusive house storlek i analysen innebär att du nu titta på vad som händer med sovrum medan house storleken är konstant.
+- Om house storlek vara högst 1 500 kvadratfot, är det troligt att en kontinuerlig ökning i antalet sovrum dramatiskt ökar house-priset. 
+- Sovrum kanske inte är lika viktigt för en faktor som den var innan ansågs house storlek. 
 
 
 
 
 ## <a name="next-steps"></a>Nästa steg
-[Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md)
-
-[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- [Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md)
+- [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

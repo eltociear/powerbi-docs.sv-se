@@ -12,11 +12,11 @@ ms.date: 11/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 3d197da63be256825efc44c9e97988648d049efa
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430750"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61067694"
 ---
 # <a name="kpi-visuals"></a>Visuell KPI-information
 En KPI (Key Performance Indicator) är en visuell ledtråd som kommunicerar de framsteg som gjorts mot ett mätbart mål. Mer information om KPI:er finns i [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -48,8 +48,8 @@ Du kan också titta på när Will visar hur du skapar ett enskilt visuellt mått
 
 1. Öppna rapporten i rapportvyn och välj den gula fliken för att lägga till en ny sida.    
 2. Välj **Försäljning > Total Units This Year (Totalt antal enheter i år)** i fönstret Fält.  Det här är indikatorn.
-3. Lägg till **Tid > FiscalMonth (Räkenskapsmånad)**.  Detta representerar trenden.
-4. VIKTIGT! Sortera diagrammet efter **FiscalMonth (Räkenskapsmånad)**. När du har konverterat visualiseringen till en KPI, går det inte att sortera.
+3. Lägg till **Tid > FiscalMonth (Räkenskapsmånad)** .  Detta representerar trenden.
+4. VIKTIGT! Sortera diagrammet efter **FiscalMonth (Räkenskapsmånad)** . När du har konverterat visualiseringen till en KPI, går det inte att sortera.
 
     ![](media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Konvertera det visuella objektet till en KPI genom att välja KPI-ikonen i visualiseringsfönstret.

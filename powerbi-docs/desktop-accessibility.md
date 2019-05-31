@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.openlocfilehash: 54c842a91684eec1cf60eca4442592500d1bcb11
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306307"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770406"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -144,6 +144,12 @@ I vår fortsatta strävan efter att förbättra hjälpmedel så stöder även de
 | Flera markeringar | Ctrl + Retur eller Ctrl + Blanksteg |
 | Högerklicka | <ul><li>Windows-tangentbordet: Windows innehållsnyckel + F10.  Windows-menytangenten ligger mellan den vänstra Alt-tangenten och Vänsterpil-tangenten</li><li>Andra tangentbord: Skift + F10</li></ul> |
 | Rensa val | Ctrl + Skift + C |
+
+### <a name="table--matrix-navigation"></a>Tabell och matris navigering
+| Gör så här:           | Tryck på                |
+| :------------------- | :------------------- |
+| Flytta fokus upp / ned en cell (över alla celler i alla delar)  | Uppil nyckel eller NEDPIL |
+| Flytta fokusera vänster- eller en cell (över alla celler i alla delar)  | VÄNSTERPIL / höger pilknapp |
 
 ### <a name="pane-navigation"></a>Fönsternavigering
 | Gör så här:           | Tryck på                |

@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/21/2019
+ms.date: 05/11/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f5572d5b5a8a8d9d652eabce95edc16ea9a2d0c6
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 1b5891ce24c43b0a7416cd82cec3e9a10c1989bf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662145"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608359"
 ---
 # <a name="apps-in-power-bi"></a>Appar i Power BI
 ## <a name="what-is-a-power-bi-app"></a>Vad är en Power BI-app?
@@ -30,10 +30,10 @@ Apparna är ordnade i innehållslistan i **Appar**.
 > Du behöver en Power BI Pro-licens för att kunna använda appfunktionen. <!-- add link to how to figure out your license -->
 
 ## <a name="app-designers-and-app-consumers"></a>***Appdesigners*** och ***appkonsumenter***
-Beroende på din roll kan du vara någon som skapar appar (designer) för eget bruk eller för att dela med kollegor. Eller så kan du vara någon som tar emot och laddar ned appar (konsument) som har skapats av andra. Den här artikeln är för *appkonsumenter*.
+Beroende på din roll kan du vara någon som skapar appar (*designer*) för eget bruk eller för att dela med dina kollegor. Du kan också finnas någon som tar emot och hämtar appar (*konsument*) skapas av andra. Den här artikeln är för *appkonsumenter*.
 
 ## <a name="advantages-of-apps"></a>Fördelar med appar
-Apparna är enkla att hitta och installera i Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och på din mobila enhet. När du har installerat en app behöver du inte längre komma ihåg namnet på en massa olika instrumentpaneler eftersom de har samlats tillsammans i en och samma app, i din webbläsare eller på din mobila enhet.
+Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)) och på din mobila enhet. När du har installerat en app behöver du inte längre komma ihåg namnet på en massa olika instrumentpaneler eftersom de har samlats tillsammans i en och samma app, i din webbläsare eller på din mobila enhet.
 
 Och när appförfattare släpper uppdateringar, så ser du dem automatiskt. Författaren också styr också hur ofta data schemaläggs för uppdatering, så du inte behöver bry dig om att hålla det uppdaterat. 
 

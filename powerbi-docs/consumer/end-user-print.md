@@ -1,6 +1,6 @@
 ---
 title: Skriva ut från Power BI-tjänsten
-description: Skriva ut en instrumentpanel, panel eller rapportsida från Power BI.
+description: Skriva ut en instrumentpanel, panel eller rapportsida från Power BI-tjänsten.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,77 +9,65 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 5540ef52109ab593e834cb446c3442093d4d94f3
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 02aed3d69ee5d6ce344138a57853bd0b2a06036b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661869"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608505"
 ---
-# <a name="printing-from-power-bi-service"></a>Skriva ut från Power BI-tjänsten
-Skriva ut en hel instrumentpanel, en panel, en rapportsida eller ett visuellt rapportobjekt från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång.
+# <a name="printing-from-the-power-bi-service"></a>Skriva ut från Power BI-tjänsten
+Skriva ut en hel instrumentpanel, en instrumentpanel, rapport eller ett visuellt rapportobjekt från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång.
 
-> [!NOTE]
-> Utskrift finns bara i tillgängligt i Power BI-tjänsten, inte i Power BI Desktop.
-> 
-> 
-
-Se när Amanda skriver ut från sin instrumentpanel och rapport. Följ sedan de stegvisa instruktionerna under videon för att prova själv.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jtlLGRKBvXY" frameborder="0" allowfullscreen></iframe>
-
-## <a name="print-a-dashboard"></a>Skriva ut en instrumentpanel
-1. Öppna den instrumentpanel som du vill skriva ut.
-2. Välj ellipserna (...) i övre högra hörnet och välj **Skriv ut instrumentpanelen**.
-   
-    ![Alternativet Skriv ut instrumentpanelen](./media/end-user-print/pbi_print_dash_ellipses.png)
-3. Webbläsarens utskriftsfönster öppnas. Välj inställningar och utskriftsmål och **Skriv ut**.
-   
    > [!NOTE]
    > Vilken utskriftsdialogruta du ser beror på vilken webbläsare du använder.
    > 
+## <a name="print-a-dashboard"></a>Skriva ut en instrumentpanel
+1. Öppna den instrumentpanel som du vill skriva ut.
+2. Välj Export i det övre vänstra hörnet och välj **skriva ut den här sidan**.
+   
+    ![Alternativet Skriv ut instrumentpanelen](./media/end-user-print/power-bi-dashboard-print.png)
+3. Webbläsarens utskriftsfönster öppnas. Välj inställningar och utskriftsmål och **Skriv ut**.
+   
+
    
     ![dialogrutan Skriv ut](./media/end-user-print/pbi_print_dash_new2.png)
 
 ## <a name="print-a-dashboard-tile"></a>Skriva ut en panel
-1. [Öppna panelen i fokusläge](end-user-focus.md) genom att välja ellipsen och ikonen Fokus ![ikonen Fokus](./media/end-user-print/power-bi-focus-icon.png).
+1. Öppna instrumentpanelen i [Fullskärmsläge](end-user-focus.md) genom att välja helskärmsikonen ![helskärmsikonen](./media/end-user-print/power-bi-full-screen-icon.png) från den övre menyraden.
+3. [Öppna panelen i Fokusläge](end-user-focus.md) genom att hovra för att visa ellipserna (...) och välja **öppna i Fokusläge** eller ikonen fokus ![fokusikon](./media/end-user-print/power-bi-focus-icon.png).
    
-    ![ellipsmenyn](./media/end-user-print/menu-options.png)
-2. Öppna panelen i [helskärmsläge](end-user-focus.md) genom att välja helskärmsikonen ![helskärmsikon](./media/end-user-print/power-bi-full-screen-icon.png) i det övre navigeringsfältet.
-3. Hovra över panelen för att visa menyn Alternativ.
+    ![ellipsmenyn](./media/end-user-print/power-bi-menu-options.png)
+4. Hovra över panelen för att visa menyn Alternativ.
    
     ![alternativmeny för helskärm](./media/end-user-print/menu-options-new.png)
 4. Välj ikonen Skriv ut ![ikonen Skriv ut](./media/end-user-print/print-icon.png).     
    
-   > [!NOTE]
-   > Vilken utskriftsdialogruta du ser beror på vilken webbläsare du använder.
-   > 
-   > 
 
 ## <a name="print-a-report-page"></a>Skriva ut en rapportsida
 Det går bara att skriva ut rapporter med en sida i taget.
 
-1. Öppna rapporten i Läsvy eller Redigeringsvy.
-2. Välj **Arkiv** > **Skriv ut** för att skriva ut den aktuella rapportsidan.
+1. Öppna rapporten och välj **exportera** > **skriva ut** att skriva ut den aktuella rapportsidan.
    
-    ![Filmenyn i Power BI](./media/end-user-print/power-bi-print.png)
+    ![Filmenyn i Power BI](./media/end-user-print/power-bi-report-print.png)
 3. Webbläsarens utskriftsfönster öppnas.
    
-   > [!NOTE]
-   > Vilken utskriftsdialogruta du ser beror på vilken webbläsare du använder.
-   > 
-   > 
+
 
 ## <a name="print-a-report-visual"></a>Skriva ut ett visuellt rapportobjekt
 1. [Öppna det visuella objektet i fokusläge](end-user-focus.md) genom att hovra över panelen och välja ikonen Fokus ![ikonen Fokus](./media/end-user-print/power-bi-focus-icon.png) i det övre högra hörnet.
-2. Följ steg 2–3 under *Skriva ut en rapportsida* ovan.
+
+2. I det övre vänstra hörnet, väljer **exportera** > **skriva ut** att skriva ut det visuella objektet.
+
+    ![Filmenyn i Power BI](./media/end-user-print/power-bi-report-print.png)
+
+
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-* F: Jag kan inte hitta knappen **Skriv ut**.    
-* S: Om du använder Power BI Desktop stöds utskrift inte.  Det går bara att skriva ut i Power BI-tjänsten.
+
 * F: Jag kan inte skriva ut alla rapportsidor på samma gång.    
 * S: Det är korrekt. Det går bara att skriva ut rapportsidor med en sida i taget.
 * F: Jag kan inte skriva till PDF-format.    
@@ -87,7 +75,7 @@ Det går bara att skriva ut rapporter med en sida i taget.
 * F: Det som jag ser när jag väljer **Skriv ut** stämmer inte med det du visar mig här.    
 * S: Utskriftsskärmarna varierar beroende på webbläsare och programversion.
 * F: Min utskrift skalas inte på rätt sätt.  Instrumentpanelen får inte plats på sidan. Andra frågor om skalning och orientering.    
-* S: Vi garanterar inte att utskriften blir exakt likadan som det som visas i Power BI-tjänsten. Saker som skalning, marginaler, information om visuella objekt, orientering och storlek kontrolleras inte av Power BI. Om du behöver hjälp med sådana här problem bör du läsa dokumentationen för din specifika webbläsare.      
+* S: Vi kan inte garantera att utskriften blir exakt samma som det visas i Power BI-tjänsten. Saker som skalning, marginaler, information om visuella objekt, orientering och storlek kontrolleras inte av Power BI. Om du behöver hjälp med sådana här problem bör du läsa dokumentationen för din specifika webbläsare.      
 
 ## <a name="next-steps"></a>Nästa steg
 [Dela instrumentpaneler och rapporter med kolleger och andra](../service-share-dashboards.md)

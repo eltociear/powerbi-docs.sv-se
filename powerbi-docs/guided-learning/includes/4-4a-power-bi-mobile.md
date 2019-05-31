@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3548f02e91c6ebc5a2ea985777cdaceda9661185
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61257062"
+---
 Om du vill ha koll på dina data medan du är i farten kan du använda en av Power BI:s mobilappar för iOS, Android och Windows.
 
 När du använder Power BI-appen loggar du först in på ditt konto med din kontoinformation för Power BI-tjänsten. Inloggningen ser ut som följande på en Windows-mobilenhet (i det här fallet en surfplatta).

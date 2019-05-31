@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c1a7bce8eb24534974fe6a06a8bada4ba9fb708
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61265127"
+---
 I det här avsnittet tar vi en närmare titt på hur de första två delarna av Power BI fungerar ihop:
 
 * Skapa en rapport i **Power BI Desktop**
@@ -41,7 +49,7 @@ Du uppmanas att logga in på Power BI.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_7.png)
 
-När du har loggat in och publiceringsprocessen är klar visas följande dialogruta. Du kan välja länken (nedan **klart!**), så kommer du till Power BI-tjänsten, där du kan se den rapport du precis har publicerat.
+När du har loggat in och publiceringsprocessen är klar visas följande dialogruta. Du kan välja länken (nedan **klart!** ), så kommer du till Power BI-tjänsten, där du kan se den rapport du precis har publicerat.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_8.png)
 

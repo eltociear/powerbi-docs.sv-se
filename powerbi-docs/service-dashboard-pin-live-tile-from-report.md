@@ -12,11 +12,11 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4a30d01040daffa394ff884c38dda3dd66fa5809
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285816"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61140221"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fästa en hel rapportsida, som en levande panel, på en Power BI-instrumentpanel
 Ett annat sätt att lägga till en ny [instrumentpanelspanel](consumer/end-user-tiles.md) är genom att fästa en rapportsida. Detta är ett enkelt sätt att fästa flera visualiseringar åt gången.  När du fäster en hel sida är panelerna dessutom *live*. Du kan interagera med dem direkt på instrumentpanelen. Ändringar du gör i någon av visualiseringarna i rapportredigeraren, om du till exempel lägger till ett filter eller ändrar fälten som används i diagrammet, visas då även på instrumentpanelen.  

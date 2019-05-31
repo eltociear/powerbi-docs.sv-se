@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d9388977c088c51094cf2835c8dab9e7d019a59
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260610"
+---
 Allt du gör i Power BI kan delas upp i några grundläggande **byggstenar**. När du förstår dessa byggstenar kan du expandera dina kunskaper om var och en av dem och börja skapa avancerade och komplexa rapporter. När allt kommer omkring är även det till synes mest komplexa uppbyggt av grundläggande byggstenar – byggnader skapas till exempel med trä, stål, betong och glas. Bilar tillverkas av metall, tyg och gummi. Naturligtvis kan även byggnader och bilar vara enkla eller avancerade – beroende på hur de grundläggande byggstenarna placeras.
 
 Låt oss ta en titt på dessa grundläggande byggstenar, diskutera några enkla saker som kan byggas med dem och sedan få en uppfattning om hur även komplexa saker kan skapas.
