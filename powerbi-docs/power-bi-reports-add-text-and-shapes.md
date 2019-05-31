@@ -1,6 +1,6 @@
 ---
 title: Textrutor och figurer i Power BI-rapporter
-description: Dokumentation om att lägga till och skapa textrutor och figurer i en rapport med Microsoft Power BI-tjänsten.
+description: Lägg till och skapa textrutor och figurer i en rapport med hjälp av Microsoft Power BI-tjänsten.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,20 +8,20 @@ featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf5cecc8df5c1e6c3057cab6eb41e40e934b1510
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
-ms.translationtype: HT
+ms.openlocfilehash: 26cca0f809f261144ad5e5ee5cfacae3de4f37a4
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406556"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66413004"
 ---
-# <a name="text-boxes-and-shapes-power-bi-reports"></a>Textrutor och former i Power BI-rapporter
-Textrutor och former kan läggas till i rapporter med Power BI-tjänsten och Power BI Desktop. I båda fallen måste du ha redigeringsbehörigheter för rapporten. Om en rapport har delats med dig i Power BI-tjänsten, har du inte redigeringsbehörigheter. 
+# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Textrutor och figurer i Power BI-rapporter
+Du kan lägga till textrutor och figurer till rapporter med hjälp av Power BI-tjänsten och Power BI Desktop. I båda fallen måste du ha redigeringsbehörigheter för rapporten. Om en rapport har delats med dig i Power BI-tjänsten kan du inte redigeringsbehörigheter. 
 
-Titta när Will använder Power BI Desktop för att [lägga till statiska avbildningar i en rapport](guided-learning/visualizations.yml?tutorial-step=11), och följ stegen nedan för att prova själv med hjälp av Power BI-tjänsten i stället.
+Titta när Will använder Power BI Desktop att [lägga till statiska bilder i en rapport](guided-learning/visualizations.yml?tutorial-step=11), och följ stegen nedan för att prova själv med hjälp av Power BI-tjänsten i stället.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 
@@ -29,42 +29,43 @@ Titta när Will använder Power BI Desktop för att [lägga till statiska avbild
 ## <a name="add-a-text-box-to-a-report"></a>Lägga till en textruta i en rapport
 1. Öppna en rapport i redigeringsvyn.
 
-2. Placera markören på något tomt område på rapportarbetsytan och välj **Textruta**.
+2. Placera markören på något tomt område på rapportarbetsytan och välj **textrutan** på den översta menyn.
    
-   ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
-2. Ange texten i textrutan och formatera eventuellt teckensnitt, färg och textjustering. 
+   ![Välj textruta](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
+3. Skriv texten i textrutan och du kan också ange format teckensnitt, färg och justering. 
    
-   ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
-3. Markera det grå området längst upp och dra i det för att placera ut textrutan. Om du vill ändra storlek på textrutan väljer du något av handtagen i kanten och drar i det. 
+   ![Ange text](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
+4. Markera det grå området längst upp och dra i det för att placera ut textrutan. Om du vill ändra storlek på textrutan, markera och dra något av handtagen i. 
    
-   ![](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
+   ![Textruta för placering](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
 
-4. Lägg till ytterligare formatering i fönstret VISUALISERINGAR med textrutan fortfarande markerad. I det här exemplet har vi formaterat bakgrund och kantlinje. Du kan också skapa en exakt storlek och placering för en textruta.  
+5. Med textrutan fortfarande markerad, lägger du till ytterligare formatering i den **visualiseringar** fönstret. I det här exemplet har vi formaterat bakgrund och kantlinje. Du kan också skapa en exakt storlek och placering för en textruta.  
 
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
+   ![Textrutan formatering](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
 
-5. Välj ett tomt utrymme på rapportarbetsytan om du vill stänga textrutan. 
+6. Välj ett tomt utrymme på rapportarbetsytan om du vill stänga textrutan. 
 
-5. Välj fästikonen ![](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) för att fästa textrutan på en instrumentpanel. 
+7. Välj fästikonen  ![Fästikon](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) att fästa textrutan på en instrumentpanel. 
 
 ## <a name="add-a-shape-to-a-report"></a>Lägga till en figur i en rapport
 1. Placera markören var som helst på rapportarbetsytan och välj **Figurer**.
    
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
-2. Välj en figur i listrutan för att lägga till den på din rapportarbetsyta. Vi lägger till en pil för att rikta uppmärksamheten mot bubblan med den högsta totala försäljningsavvikelsen. 
+   ![Välj former](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
+2. Välj en figur i listrutan för att lägga till den på din rapportarbetsyta. I det här exemplet lägger du till en pil för att rikta uppmärksamheten mot bubblan med den högsta totala försäljningsavvikelsen. 
    
    I fönstret **Formatera figur** anpassar du figuren. I det här exemplet har vi skapat en röd pil med en mörkröd kantlinje, roterad 90 grader.
    
-   ![](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
-3. Markera det grå området längst upp och dra i det för att placera ut figuren. Om du vill ändra storlek på figuren väljer du något av handtagen i kanten och drar i det. Precis som med textrutan kan du också skapa en exakt storlek och placering för en form.
+   ![Anpassa form](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
+3. Markera det grå området längst upp och dra i det för att placera ut figuren. Om du vill ändra storlek på figuren, markera och dra något av handtagen i. Precis som med textrutan kan du också skapa en exakt storlek och placering för en form.
 
-> **Obs!** Former kan inte fästas till en instrumentpanel förutom som ett visuellt objekt när du [fäster en live-sida](service-dashboard-pin-live-tile-from-report.md). 
-> 
-> 
+   > [!NOTE]
+   > Former kan inte fästas till en instrumentpanel förutom som ett visuellt objekt när du [fäster en live-sida](service-dashboard-pin-live-tile-from-report.md). 
+   > 
+   > 
 
-### <a name="next-steps"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 [Lägga till en hyperlänk i en textruta](service-add-hyperlink-to-text-box.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för Power BI-tjänstkonsumenter](consumer/end-user-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

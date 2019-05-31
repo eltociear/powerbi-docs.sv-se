@@ -7,51 +7,51 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/25/2018
+ms.date: 05/22/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5774fe6979516a0fe70364fea5dd91b7a2a48ae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 16b96d91a9dd37fa8a502bbcca772438c703cb63
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275742"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412994"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Utökningsbarhet av anslutningsprogram i Power BI
 
-I Power BI kan kunder och utvecklare utöka de datakällor som de kan ansluta till på flera sätt, t.ex. genom att använda befintliga kopplingar och generiska datakällor (t.ex. ODBC, OData, Oledb, Web, CSV, XML och JSON). Förutom dessa datakällor kan utvecklare skapa datatillägg, så kallade **anpassade anslutningar**, och certifiera kopplingar så att de blir **certifierade kopplingar**.
+I Power BI, kan kunder och utvecklare utöka datakällorna som de ansluter på många sätt. De använda befintliga kopplingar och generiska datakällor (till exempel ODBC, OData, Oledb, webb-, CSV, XML, JSON). Eller utvecklare skapa datatillägg kallas **anpassade anslutningar**, och gör dem **certifierade kopplingar**.
 
-För närvarande används en funktionsväxel för att aktivera funktionen för **anpassade anslutningsappar**. Innan vi flyttar den här funktionen från beta till allmän tillgänglighet har vi lagt till en meny där du på ett säkert sätt kan styra i hur hög grad anpassad kod ska tillåtas att köra i ditt system: alla anpassade anslutningar eller endast kopplingar som har certifierats och distribuerats av Microsoft i dialogrutan **Hämta data**.
+För närvarande kan du aktivera **anpassade Anslutningsappar** med hjälp av en meny där du kan på ett säkert sätt styra anpassad kod som du vill att köras på datorn. Du kan välja alla anpassade anslutningsappar eller bara anslutningar som är certifierade och distribueras av Microsoft i den **hämta Data** dialog.
 
 ## <a name="custom-connectors"></a>Anpassade anslutningar
 
-**Anpassade anslutningsappar** inbegriper många möjligheter – från små API:er som är viktiga för din verksamhet, till stora branschspecifika tjänster som Microsoft inte har publicerat en anslutningsapp för. Många sådana kopplingar distribueras av leverantören, och om du behöver en specifik datakoppling bör du kontakta en leverantör.
+**Anpassade Anslutningsappar** kan inkludera ett stort urval av möjligheter, sträcker sig från små API: er kritiska för verksamheten till stora branschspecifika tjänster som Microsoft har inte publicerat en koppling för. Många anslutningsappar distribueras av leverantören. Om du behöver för en specifik dataanslutning, bör du kontakta en leverantör.
 
-Om du vill använda en **anpassad anslutning** lägger du till den i mappen *\[Dokument\\Power BI Desktop\\Anpassade anslutningsprogram* och justerar säkerhetsinställningarna genom att följa anvisningarna i avsnitten nedan.
+Du använder en **-anpassad anslutning**, placerar den i den  *\[dokument]\\Power BI Desktop\\anpassade anslutningar* mappen och justera säkerhetsinställningar enligt beskrivningen i följande avsnitt.
 
 Du behöver inte ändra säkerhetsinställningarna för att använda **certifierade anslutningsappar**.
 
 ## <a name="data-extension-security"></a>Säkerhetsinställningar för datatillägg
 
-Om du vill ändra säkerhetsinställningarna för datatillägg går du till **Power BI Desktop** och väljer **Arkiv > Alternativ och inställningar > Alternativ > Säkerhet**.
+Ändra tillägget säkerhetsinställningar, i **Power BI Desktop** Välj **fil > Alternativ och inställningar > Alternativ > säkerhet**.
 
-![Välj om du vill läsa in anpassade anslutningar med säkerhetsalternativ för datatillägg](media/desktop-connector-extensibility/data-extension-security-1.png)
+![Kontrollera om du vill läsa in anpassade anslutningsappar med Data tillägget säkerhetsalternativ](media/desktop-connector-extensibility/data-extension-security-1.png)
 
 Under **Datatillägg** kan du välja mellan två säkerhetsnivåer:
 
 * (Rekommenderas) Tillåt att endast certifierade filnamnstillägg läses in
 * (Rekommenderas inte) Tillåt att alla tillägg läses in utan varning
 
-Om du vill använda **anpassade anslutningsappar** eller anslutningsappar som du eller en tredje part har utvecklat och distribuerat måste du välja **(Not Recommended) Allow any extension to load without warning** ((Rekommenderas inte) Tillåt att alla tillägg läses in utan varning). Vi rekommenderar inte den säkerhetsinställningen om du inte absolut litar på dina anpassade anslutningsappar, eftersom koden där kan hantera autentiseringsuppgifter (inklusive att skicka dem visa HTTP) och ignorera sekretessnivåer.
+Om du tänker använda **anpassade anslutningar** eller anslutningsappar som du eller en tredje part har utvecklat, måste du välja **”(Not Recommended) Tillåt alla tillägg att läsa in utan varning”** . Vi rekommenderar inte inställningen om du inte litar dina anpassade anslutningar. Eftersom koden i där kan hantera autentiseringsuppgifterna, till exempel skicka dem via HTTP, och ignorera sekretessnivåer.
 
-Om du använder säkerhetsinställningen **(Rekommenderas)** och det finns anpassade anslutningar i systemet visas ett fel som beskriver de anslutningsappar som inte kan läsa in av säkerhetsskäl.
+På den **”(rekommenderas)”** security inställningen, om det finns anpassade anslutningsappar i systemet, visas ett fel som beskriver de kopplingar som det går inte att läsa in på grund av säkerhet.
 
-![En dialogruta beskriver anpassade anslutningar som inte kan läsas in på grund av säkerhetsinställningarna, i det här fallet TripPin](media/desktop-connector-extensibility/data-extension-security-2.png)
+![En dialogruta beskriver anpassade anslutningar som inte kan läsas in på grund av säkerhetsinställningar, i det här fallet videon Trippin'](media/desktop-connector-extensibility/data-extension-security-2.png)
 
-För att åtgärda problemet så att du kan använda dessa anslutningsappar måste du ändra säkerhetsinställningarna till inställningen **(Rekommenderas inte)** som beskrivs ovan och sedan starta om **Power BI Desktop**.
+För att lösa problemet och använda dessa anslutningar, ändra säkerhetsinställningarna för den **”(Not Recommended) Tillåt alla tillägg att läsa in utan varning”** som beskrivs tidigare. Starta sedan om **Power BI Desktop**.
 
 ## <a name="certified-connectors"></a>Certifierade kopplingar
 
-En begränsad deluppsättning av datatilläggen betraktas som **certifierade**. Sådana certifierade anslutningsappar är tillgängliga via dialogrutan **Hämta Data**, men den part som ansvarar för underhåll och support är fortfarande tredjepartsutvecklaren som skapade anslutningsappen. Även om Microsoft distribuerar dessa anslutningsappar ansvarar vi inte för deras prestanda eller funktioner.
+En begränsad delmängd av datatillägg anses **Certified**. Få åtkomst till certifierade kopplingar i den **hämta Data** dialog. Men från tredje part utvecklaren som skapade anslutningen ansvarar för underhåll och support. Microsoft distribuerar kopplingar, men det är inte ansvarar för prestanda- eller fortsatt funktion är.
 
 Om du vill att en anpassad anslutningsapp ska certifieras ber du din leverantör att kontakta dataconnectors@microsoft.com.
