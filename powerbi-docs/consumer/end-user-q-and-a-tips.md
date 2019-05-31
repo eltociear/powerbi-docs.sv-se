@@ -12,17 +12,17 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 97beaa749855d29f0ac559776a99f4be851489fb
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61048144"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tips för att ställa frågor i Frågor och svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
 Den här listan över nyckelord på den här sidan är inte fullständig.  Det bästa sättet att se om Power BI identifierar ett nyckelord är att testa att skriva det i frågerutan.  Om en term eller ett ord har tonats ned kan inte Power BI identifiera den/det.
 
-Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har varit**, **har**, **hade**, **kommer att ha**, **gör**, **gjorde**, **gjort**********.  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singularis och pluralis. 
+Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har varit**, **har**, **hade**, **kommer att ha**, **gör**, **gjorde**, **gjort** **** **** .  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singularis och pluralis. 
 
 > [!NOTE]
 > Frågor och svar finns också tillgängligt i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile/mobile-apps-ios-qna.md).
