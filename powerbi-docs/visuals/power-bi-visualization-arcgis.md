@@ -12,11 +12,11 @@ ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086596"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61253331"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri
 De här självstudierna har skrivits utifrån en person som skapar en ArcGIS-karta. När en skapare delar en ArcGIS-karta med en kollega, kan kollegan visa och interagera med kartan men inte spara några ändringar. Mer information om hur du visar en ArcGIS-karta finns i [Interagera med ArcGIS-kartor](power-bi-visualizations-arcgis.md).
@@ -84,7 +84,7 @@ Titta på när Will skapar några olika ArcGIS-kartvisualiseringar och följ sed
    
     ![](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
 2. Omvandla visualiseringen till en ArcGIS-karta genom att välja mallen från panelen Visualiseringar![](media/power-bi-visualization-arcgis/power-bi-arcgis-template.png).
-3. Dra ett mått till bucketen **Storlek** från panelen **Fält** för att justera hur data visas. I det här exemplet använder vi **Försäljning > Last Year Sales (Förra årets försäljning)**.
+3. Dra ett mått till bucketen **Storlek** från panelen **Fält** för att justera hur data visas. I det här exemplet använder vi **Försäljning > Last Year Sales (Förra årets försäljning)** .
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 

@@ -11,11 +11,11 @@ ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
 ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980368"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977212"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Vanliga frågor och svar om anpassade visuella Power BI-objekt
 
@@ -149,7 +149,7 @@ Kom ihåg att certifiering är en valfri process och att det är upp till dig om
 
 ### <a name="how-to-get-support"></a>Hur får jag support?
 
-Ta gärna kontakt med supporten för anpassade visuella objekt: *pbicvsupport@microsoft.com* om du har frågor, kommentarer eller problem.  
+Ta gärna kontakt med supporten för anpassade visuella objekt: *pbicvsupport@microsoft.com*  om du har frågor, kommentarer eller problem.  
 
 ## <a name="next-steps"></a>Nästa steg
 

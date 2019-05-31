@@ -11,11 +11,11 @@ ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 3ef48bbe55793825693382252ac143068549d7a8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292996"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61239597"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur
 
@@ -65,12 +65,12 @@ Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det hä
 ## <a name="downtime-caused-by-defective-materials"></a>Stilleståndstid som orsakas av defekta material
 Nu ska vi analysera den stilleståndstid som orsakas av defekta material och se vilka leverantörer som är ansvariga.  
 
-1. På instrumentpanelen väljer du sifferpanelen **Total Defect Quantity (Totalt antal defekta)** eller **Total Downtime Minutes (Total stilleståndstid i minuter)**.  
+1. På instrumentpanelen väljer du sifferpanelen **Total Defect Quantity (Totalt antal defekta)** eller **Total Downtime Minutes (Total stilleståndstid i minuter)** .  
 
    ![](media/sample-supplier-quality/supplier2.png)  
 
    Rapporten ”Exempel på leverantörskvalitetsanalys” öppnas på sidan ”Downtime Analysis” (Stilleståndstidsanalys). Observera att vi totalt har 33 000 000 antal defekta delar och att den totala stilleståndstiden som orsakats av dessa defekta delar är 77 000 minuter. Vissa material har färre defekta delar men kan orsaka stor fördröjning som resulterar i längre stilleståndstid. Vi ska undersöka dem på rapportsidan.  
-2. Om vi tittar på raden **Total Downtime Minutes (Total stilleståndstid i minuter)** i kombinationsdiagrammet **Defects and Downtime (min) by Material Type (Defekter och stilleståndstid (min) per materialtyp)**, ser vi att korrugerade material orsakar längst stilleståndstid.  
+2. Om vi tittar på raden **Total Downtime Minutes (Total stilleståndstid i minuter)** i kombinationsdiagrammet **Defects and Downtime (min) by Material Type (Defekter och stilleståndstid (min) per materialtyp)** , ser vi att korrugerade material orsakar längst stilleståndstid.  
 3. Välj kolumnen **Corrugate (Korrugerad)** i samma kombinationsdiagram för att se vilka anläggningar som påverkas mest av den här defekten och vilken leverantör som är ansvarig.  
 
    ![](media/sample-supplier-quality/supplier3.png)  
@@ -94,7 +94,7 @@ Nu ska vi analysera den stilleståndstid som orsakas av defekta material och se 
 ### <a name="comparing-plants"></a>Jämföra anläggningar
 Nu ska vi titta närmare på vilken anläggning som är bäst på att hantera defekta material, vilket resulterar i kortare stilleståndstid.  
 
-1. Välj kartrutan **Total Defect Reports by Plant (Totalt antal rapporterade defekter per anläggning), Defect Type (Defekttyp)**.  
+1. Välj kartrutan **Total Defect Reports by Plant (Totalt antal rapporterade defekter per anläggning), Defect Type (Defekttyp)** .  
 
     Rapporten öppnas på sidan för ”leverantörskvalitet”.  
 
@@ -112,7 +112,7 @@ Nu ska vi titta närmare på vilken anläggning som är bäst på att hantera de
 ## <a name="which-material-type-is-best-managed"></a>Vilken materialtyp hanteras bäst?
 Den bäst hanterade materialtypen är den med lägst stilleståndstid eller utan påverkan, oavsett antalet defekter.
 
-* I instrumentpanelen tittar vi närmare på panelen **Total Defect Quantity by Material Type (Totalt antal defekta per materialtyp), Defect Type (Defekttyp)**.
+* I instrumentpanelen tittar vi närmare på panelen **Total Defect Quantity by Material Type (Totalt antal defekta per materialtyp), Defect Type (Defekttyp)** .
 
   ![](media/sample-supplier-quality/supplier9.png)
 
@@ -120,7 +120,7 @@ Observera att **Råmaterial** har ett stort antal totala defekter, men att de fl
 
 Vi ska kontrollera att råmaterial inte orsakar långa stilleståndstider, trots högt antal defekter.
 
-* I instrumentpanelen tittar vi närmare på panelen **Total Defect Qty (Totalt antal defekta), Total Downtime Minutes by Material Type (Total stilleståndstid i minuter per materialtyp)**.
+* I instrumentpanelen tittar vi närmare på panelen **Total Defect Qty (Totalt antal defekta), Total Downtime Minutes by Material Type (Total stilleståndstid i minuter per materialtyp)** .
 
   ![](media/sample-supplier-quality/supplier10.png)
 

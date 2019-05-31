@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 11/16/2018
+ms.date: 04/18/2019
 ms.author: mshenhav
-ms.openlocfilehash: 9bb6dec4cdb689d2a21812b1dab8ebeb49090542
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 173142d9aaf2b445504028e1f7987abe21806c37
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279123"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60976188"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Snabbstart: Utforska instrumentpaneler och rapporter i Power BI-mobilappar
 I den här snabbstarten får du utforska en exempel-instrumentpanel och rapport i Power BI-mobilappen på en Android-telefon. Du kan också följa med i andra mobila appar. 

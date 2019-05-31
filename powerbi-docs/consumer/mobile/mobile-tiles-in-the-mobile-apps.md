@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286414"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60978359"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Utforska paneler i Power BI-mobilappar
 Gäller:
@@ -71,7 +71,7 @@ Sedan öppnar du panelerna i fokusläge i Power BI-mobilapparna och interagerar 
    * Tryck på diagrammet för att flytta stapeln i ett linje-, stapel- eller bubbeldiagram för att visa värdena för en specifik punkt i visualiseringen.  
    * trycka på ikonen för att dela ögonblicksbild ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) för att [kommentera och dela panelen](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andra,
    * trycka på ikonen Öppna rapport ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) för att [visa rapporten](mobile-reports-in-the-mobile-apps.md) i mobilappen.
-3. Ibland har skaparen av instrumentpanelen lagt till en länk till en panel. I så fall visas **Öppna länk** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) när du trycker på den lodräta ellipsen (**...** ):
+3. Ibland har skaparen av instrumentpanelen lagt till en länk till en panel. I så fall visas **Öppna länk** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) när du trycker på den lodräta ellipsen ( **...** ):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    

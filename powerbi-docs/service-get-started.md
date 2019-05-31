@@ -12,11 +12,11 @@ ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147506"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61239076"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Självstudie: Kom igång med Power BI-tjänsten (app.powerbi.com)
 Den här självstudien hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](power-bi-overview.md).
