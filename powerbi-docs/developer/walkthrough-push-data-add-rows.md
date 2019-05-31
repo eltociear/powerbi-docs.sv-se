@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710401"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Steg 5: Lägga till rader i en Power BI-tabell
@@ -311,7 +311,7 @@ Nedan visas den [fullständiga kodlistan](#code).
     }
 ```
 
-Trots att vi anger att vi **_//Får det första ID:t_** i koden ovan är rätt sak att göra att söka i datauppsättningen efter namn.
+Trots att vi anger att vi ** _//Får det första ID:t_** i koden ovan är rätt sak att göra att söka i datauppsättningen efter namn.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
