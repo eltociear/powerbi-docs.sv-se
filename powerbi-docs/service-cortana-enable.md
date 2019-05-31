@@ -6,23 +6,21 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: ff99fc731b5388acd4dbb7c98fe13b227e7d5789
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 584dacbb3823f1a7c2475c780124985992a4b1d4
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216779"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375159"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Aktivera Cortana för åtkomst till Power BI-rapporter (och deras underliggande datauppsättningar)
 Förmodligen har du läst artikeln [Introduktion till Cortana och Power BI](service-cortana-intro.md) redan. Om du inte har gjort det, så läs den först, och kom sedan tillbaka hit. Och nu kan du prova själv.  Innan du kan ställa frågor på naturligt språk i Cortana och få svar från data som lagras i Power BI-***rapporter***, så måste vissa krav uppfyllas. Du måste i synnerhet göra följande.
 
-> [!NOTE]
-> Om du provar på att använda förhandsgranskningen för Cortana- och Power BI-***instrumentpanelen***, kan du hoppa över resten av den här artikeln. Det finns inga krav på installation för att Cortana ska kunna söka i dina Power BI-instrumentpaneler.
-> 
-> 
+> [!IMPORTANT]
+> Cortana-integrering är inaktuell i Power BI. Startar den 11 juni, fungerar Cortana inte längre för alla instrumentpaneler och rapporter.
 
 I Power BI-tjänsten
 

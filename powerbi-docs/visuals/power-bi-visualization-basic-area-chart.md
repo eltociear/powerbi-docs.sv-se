@@ -11,11 +11,11 @@ ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 02d81a4ebb92ec199887109c7f2d9afcb6449eda
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276133"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61393281"
 ---
 # <a name="basic-area-chart"></a>Grundläggande ytdiagram
 Det grundläggande ytdiagrammet (även känt som överlappande områdesdiagram) baseras på linjediagrammet. Området mellan axel och linje fylls med färger för att illustrera volym. 
@@ -55,7 +55,7 @@ Om du vill följa med, loggar du in i Power BI och väljer **Hämta data\> Exemp
    c.  Välj **Tid \> Månad** för att lägga till det i **Axel**-brunnen.   
    ![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
    
-   d.  Om du vill visa diagrammet efter månad, väljer du ellipserna (övre högra hörnet av visualiseringen) och väljer **sortera efter månad**. Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)**.
+   d.  Om du vill visa diagrammet efter månad, väljer du ellipserna (övre högra hörnet av visualiseringen) och väljer **sortera efter månad**. Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** .
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
 Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).

@@ -11,11 +11,11 @@ ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 2cb8e7b6c2744f80891c5424f620b9812eee1acb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61401264"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips för att få hjälp med Power BI-frågor
 Har du någonsin blivit frustrerad över användningen av Power BI eller kämpat med att få svar på dina Power BI-frågor när du behöver dem? 

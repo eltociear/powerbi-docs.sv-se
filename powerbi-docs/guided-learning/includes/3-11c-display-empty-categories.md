@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 50cdaded75f81828542afa10abf104079d09ebd8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397963"
+---
 Som standard visas endast kolumnrubrikerna i dina rapporter om de innehåller data. Till exempel, om du visar intäkter efter land och det inte finns någon försäljning i Norge visas Norge inte någonstans i din visualisering.
 
 För att visa tomma kategorier, klicka på nedåtpilen i fältet som du vill ändra i rutan **Visualiseringar** och välj **Visa objekt utan data**.

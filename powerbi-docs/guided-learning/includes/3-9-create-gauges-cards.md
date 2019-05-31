@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3fd97374836978a4902a878da141865c271df643
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397950"
+---
 I allmänhet används visualiseringar för att jämföra två eller flera olika värden. Men ibland när du skapar en rapport vill du kunna spåra ett mått eller ett nyckeltal (KPI) över tid. I Power BI Desktop sker detta med en **Mätare** eller ett kort med ett **enkelt nummer**. Om du vill skapa ett tomt diagram med någon av dessa typer, väljer du motsvarande ikon i fönstret **Visualiseringar**.
 
 ![](media/3-9-create-gauges-cards/3-9_1.png)

@@ -1,24 +1,24 @@
 ---
 title: 'Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)'
 description: I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Report Builder för att skapa en sidnumrerad rapport. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 15c7d9e922ef7041c6b0f021382cae8d2aca84e9
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325253"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60990114"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)
 
-I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Report Builder för att skapa en sidnumrerad rapport med en tabell som radbryts till flera sidor. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten. Sidnumrerade rapporter i Power BI-tjänsten är för närvarande i förhandsversion.
+I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Power BI Report Builder för att skapa en sidnumrerad rapport med en tabell som radbryts till flera sidor. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten. Sidnumrerade rapporter i Power BI-tjänsten är för närvarande i förhandsversion.
 
 ![Sidnumrerad rapport i Power BI-tjänsten](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Här är de steg som du har slutfört i den här självstudien:
 
 > [!div class="checklist"]
 > * Skapa en Azure-exempeldatabas.
-> * Skapa en matris i Report Builder med hjälp av en guide.
+> * Skapa en matris i Power BI Report Builder med hjälp av en guide.
 > * Formatera rapporten med rubrik, sidnummer och kolumnrubriker på varje sida.
 > * Formatera valutan.
 > * Ladda upp rapporten till Power BI-tjänsten.
@@ -37,18 +37,18 @@ Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto]
 
 Här följer förutsättningarna för att skapa den sidnumrerade rapporten:
 
-- Installera [Report Builder från Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968). 
+- Installera [Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Följ snabbstarten [Skapa ett Azure SQL-exempeldatabas i Azure Portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Kopiera och spara värdet i rutan **Servernamn** på fliken **Översikt**. Kom ihåg det användarnamn och det lösenord som du skapade i Azure.
 
 Här är förutsättningarna för att ladda upp din sidnumrerade rapport till Power BI-tjänsten:
 
 - Du måste ha en [Power BI Pro-licens](service-admin-power-bi-pro-in-your-organization.md).
-- Du måste ha en apparbetsyta i tjänsten i en [Power BI Premium-kapacitet](service-premium.md). Den visas med en diamantikon ![Premium-diamantikon](media/paginated-reports-quickstart-aw/premium-diamond.png) bredvid arbetsytans namn.
+- Du måste ha en apparbetsyta i tjänsten i en [Power BI Premium-kapacitet](service-premium-what-is.md). Den visas med en diamantikon ![Premium-diamantikon](media/paginated-reports-quickstart-aw/premium-diamond.png) bredvid arbetsytans namn.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Skapa matrisen med en guide
   
-1.  Starta Report Builder från datorn.  
+1.  Starta Power BI Report Builder från datorn.  
   
      Dialogrutan **Komma igång** öppnas.  
   
@@ -177,7 +177,7 @@ Du måste köra rapporten för att kunna se de faktiska värdena.
 
 1. Välj **Kör** i verktygsfältet **Start**.
 
-   Nu visas värdena. Matrisen har många fler rader än de som visas i vyn Design! Observera att i Report Builder anges sidan som **1** av **2?**. Report Builder läser in rapporten så snabbt som möjligt, vilket innebär att den endast hämtar tillräckligt med data för några sidor i taget. Frågetecknet anger att Report Builder inte har lästs in alla data ännu.
+   Nu visas värdena. Matrisen har många fler rader än de som visas i vyn Design! Observera att i Report Builder anges sidan som **1** av **2?** . Report Builder läser in rapporten så snabbt som möjligt, vilket innebär att den endast hämtar tillräckligt med data för några sidor i taget. Frågetecknet anger att Report Builder inte har lästs in alla data ännu.
 
    ![Kör rapporten](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -249,7 +249,7 @@ Som du kanske märkte när du körde rapporten så har dollarbeloppen ännu inte
 
     ![Markera celler med valutavärden](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. Välj valutasymbolen för dollar (**$**) på fliken **Start** och sedan pilen bredvid **Platshållarformat** > **Exempelvärden**.
+2. Välj valutasymbolen för dollar ( **$** ) på fliken **Start** och sedan pilen bredvid **Platshållarformat** > **Exempelvärden**.
  
     ![Visa exempelvärden](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 

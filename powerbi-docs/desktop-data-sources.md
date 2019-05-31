@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
-ms.translationtype: HT
+ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225924"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853413"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -51,7 +51,7 @@ I kategorin **Fil** finns följande dataanslutningar:
 * XML
 * JSON
 * Mapp
-* PDF (Beta)
+* PDF
 * SharePoint-mapp
 
 Följande bild visar fönstret **Hämta data** för **Fil**.
@@ -79,14 +79,16 @@ Kategorin **Databas** innehåller följande dataanslutningar:
 * Google BigQuery
 * Vertica
 * Snowflake
-* Essbase (Beta)
-* Dremio
-* Exasol
-* MarkLogic (Beta)
+* Essbase
 * AtScale-kuber (Beta)
 * BI-anslutningsapp
+* Dremio
+* Exasol
+* Indexima (Beta)
+* InterSystems IRIS (Beta)
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
+* MarkLogic (Beta)
 
 > [!NOTE]
 > Vissa databaskopplingar kräver att du aktiverar dem genom att välja **Arkiv > Alternativ och inställningar > Alternativ** sedan välja **Förhandsversionsfunktioner** och aktivera kopplingen. Om du inte ser några av de kopplingar som nämns ovan och vill använda dem, kontrollerar du dina inställningar för **Förhandsversionsfunktioner**. Observera att alla datakällor som har markerats som *beta* eller *förhandsversion* har begränsad support och funktionalitet och ska inte användas i produktionsmiljöer.
@@ -98,7 +100,7 @@ Följande bild visar fönstret **Hämta data** för **Databas**.
 I **Power BI**-kategorin finns följande dataanslutningar:
 
 * Power BI-datauppsättningar
-* Power BI-dataflöden (Beta)
+* Power BI-dataflöden
 
 Följande bild visar fönstret **Hämta data** för **Power BI**.
 
@@ -112,11 +114,12 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (beta)
-* Azure Data Lake Storage
+* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive-fråga
-* Azure Data Explorer (Beta)
+* Azure Data Explorer (Kusto)
+* Azure kostnadshantering (Beta)
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
 
@@ -157,9 +160,10 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * tyGraph (beta)
 * Webtrends (beta)
 * Zendesk (beta)
-* TeamDesk (beta)
 * Emigo Data Source (Beta)
+* IndustrialAppStore (Beta)
 * Microsoft Graph Security (Beta)
+* TeamDesk (beta)
 
 Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
 
@@ -178,12 +182,16 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Python-skript
 * ODBC
 * OLE DB
-* Workforce Dimensions (Beta)
+* BI360 - budgetering och finansiell rapportering (Beta)
 * Denado
-* Paxata (Beta)
-* SurveyMonkey (Beta)
+* Information Grid (Beta)
+* Paxata 
 * QubolePresto (Beta)
 * Quick Base (Beta)
+* Roamler (Beta)
+* SurveyMonkey (Beta)
+* Tenforce (Beta)
+* Workforce Dimensions (Beta)
 * Tom fråga
 
 Följande bild visar fönstret **Hämta data** för **Övrigt**.

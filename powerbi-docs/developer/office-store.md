@@ -8,13 +8,13 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/30/2018
-ms.openlocfilehash: 2db993a9521b25db28973a5a987edfde4271c5cd
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.date: 3/27/2019
+ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695206"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269947"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
 
@@ -30,12 +30,12 @@ När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det 
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Förbereda att skicka ditt anpassade visuella objekt
 
-När du är klar med att koda och [testa ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) och har förpackat det i en pbiviz-fil bör du ha följande klart för din överföring.
+När du är klar läsning vår [riktlinjer för Power BI-visualiseringar](guidelines-powerbi-visuals.md), kodning och [testa ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) och har förpackat det i en pbiviz-fil bör du också ha följande klart för ditt bidrag.
 
 | Objekt | Krävs | Beskrivning |
 | --- | --- | --- |
 | Pbiviz-paketet innehåller alla metadata som krävs |Ja |Visuellt namn<br>Visningsnamn<br>GUID<br>Version<br>Beskrivning<br>Författarens namn och e-post |
-| Exempel på .pbix-rapportfil |Ja |Om du vill visa ditt visuella objekt bör du hjälpa användare att bekanta sig med det visuella objektet. Du bör fokusera på det mervärde som det visuella objektet medför till användaren och ge exempel på användningsområden, formateringsalternativ med mera. Du kan också lägga till en *”tips”*-sida på slutet med några tips och tricks, saker att undvika och liknande.<br>Exemplet på en .pbix-rapportfil måste fungera offline, utan någon extern anslutning. |
+| Exempel på .pbix-rapportfil |Ja |Om du vill visa ditt visuella objekt bör du hjälpa användare att bekanta sig med det visuella objektet. Du bör fokusera på det mervärde som det visuella objektet medför till användaren och ge exempel på användningsområden, formateringsalternativ med mera. Du kan också lägga till en *”tips”* -sida på slutet med några tips och tricks, saker att undvika och liknande.<br>Exemplet på en .pbix-rapportfil måste fungera offline, utan någon extern anslutning. |
 | Ikon |Ja |Du bör inkludera den anpassade visuella logotypen som visas i Store. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 300 px (bredd) x 300 px (höjd). **Viktigt!** Granska [snabbguiden](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) noggrant innan du skickar ikonen. |
 | Skärmbilder |Ja |Du måste ange minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 1366 px (bredd) x 768 px (höjd). Filstorleken får inte vara större än 1024 kB. *Lägg till textbubblor för att tydligt betona mervärdet av viktiga funktioner som visas i varje skärmbild.* |
 | Länk till nedladdningssupport |Ja |Ange en URL för att stödja kunder som har problem med ditt visuella objekt. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller http://. |

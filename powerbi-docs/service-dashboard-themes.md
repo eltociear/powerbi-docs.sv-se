@@ -11,11 +11,11 @@ ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282910"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61144924"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Använda instrumentpanelsteman i Power BI-tjänsten
 Med **instrumentpanelsteman** kan du använda ett färgtema på hela instrumentpanelen, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **instrumentpanelstema** används färgerna från det tema du valt på alla visuella objekt på instrumentpanelen (med några få undantag, som beskrivs längre ned i den här artikeln).

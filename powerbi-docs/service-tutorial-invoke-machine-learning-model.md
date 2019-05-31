@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.openlocfilehash: 31c1cd7a8455232fdaa3bb3d391fb93e87ad5062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430333"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61404541"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Självstudie: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)
 
@@ -48,7 +48,7 @@ Logga in på [Azure Portal](https://portal.azure.com), och navigera till sidan *
 
 ![Azure Portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
-Välj den prenumeration som du använde för att publicera modellen och välj **Åtkomstkontroll (IAM)**. Sedan väljer du **Lägg till rolltilldelning** och välj sedan rollen **Läsare** och välj Power BI-användaren. Välj **Spara** när du är klar. Följande bild visar dessa val.
+Välj den prenumeration som du använde för att publicera modellen och välj **Åtkomstkontroll (IAM)** . Sedan väljer du **Lägg till rolltilldelning** och välj sedan rollen **Läsare** och välj Power BI-användaren. Välj **Spara** när du är klar. Följande bild visar dessa val.
 
 ![Azure Portal, åtkomstkontroll](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_02.png)
 
@@ -90,9 +90,9 @@ Välj **Text/CSV-fil** som en datakälla.
 
 På nästa skärm uppmanas du att ansluta till en datakälla. Klistra in en länk till de data som du använde för att skapa din Azure ML-modell. Om du har använt data för _Bilpriser_, kan du klistra in följande länk i rutan **Filsökväg eller URL** och sedan **Nästa**.
 
-`https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
+`https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
-![Anslut till datakällan](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
+![Anslut till datakälla](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
 Power Query Editor visar en förhandsgranskning av data från CSV-filen. Välj **Transformera tabell** från kommandot i menyfliksområdet och välj sedan **Använd första raden som rubriker**.  Detta lägger till frågesteget _Upphöjda rubriker_ i rutan **Tillämpade steg** till höger. Du kan också byta namn på frågan till ett mer användarvänligt namn som _Bilpriser_ med hjälp av fönstret till höger.
 

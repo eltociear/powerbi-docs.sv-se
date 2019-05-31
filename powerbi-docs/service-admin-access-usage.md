@@ -1,36 +1,36 @@
 ---
 title: Hitta Power BI-användare som har loggat in
-description: Om du är en klientadministratör och vill se vem som har signerat till Power BI, kan du använda Azure Active Directory-rapporter för åtkomst och användning för att få insyn.
+description: Om du är en Innehavaradministratör och vill se vem som har signerat till Power BI, kan du kan använda Azure Active Directory-rapporter för åtkomst och användning för att få insyn.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 12a15360efbff62c40f5bd1098886ee046661e4f
-ms.sourcegitcommit: 5222bc6a8336acc77c8e22db57ea6a7bf7daea57
-ms.translationtype: HT
+ms.openlocfilehash: e513607dd89aee15f10145cf62bd461621cc12c0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59290752"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906685"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Hitta Power BI-användare som har loggat in
 
-Om du är en klientadministratör och vill se vem som har signerat till Power BI, kan du använda [Azure Active Directory-rapporter för åtkomst](/azure/active-directory/reports-monitoring/concept-sign-ins) och användning för att få insyn.
+Om du är en klientadministratör och vill se vem som har signerat till Power BI, Använd den [rapporter för åtkomst och användning av Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) insyn.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Den här aktivitetsrapporten tillhandahåller användbar information men anger inte vilken typ av licens varje användare har. Använd administrationscentret för Microsoft 365 för att visa licenser.
+> Den **inloggningar** rapporten innehåller användbar information, men den inte kan hitta typ av licens som varje användare har. Använd administrationscentret för Microsoft 365 för att visa licenser.
 
 ## <a name="requirements"></a>Krav
 
 Alla användare (inklusive icke-administratörer) kan visa en rapport med egna inloggningar men du måste uppfylla följande krav för att visa en rapport för alla användare.
 
-* Din klient måste ha en associerad Azure AD Premium-licens.
+* Din klient måste ha en associerad med den Azure Active Directory Premium-licens.
 
 * Du måste ha någon av följande roller: Global administratör, Säkerhetsadministratör eller Säkerhetsläsare.
 
@@ -42,31 +42,32 @@ Följ dessa steg om du vill visa en inloggningsaktivitet.
 
 1. Under **Övervakning** väljer du **Inloggningar**.
    
-    ![Azure AD-inloggningar](media/service-admin-access-usage/azure-portal-sign-ins.png)
+    ![Skärmbild av Gränssnittet i Azure med Azure Active Directory och inloggningar alternativ som markerats.](media/service-admin-access-usage/azure-portal-sign-ins.png)
 
 1. Filtrera programmet efter antingen **Microsoft Power BI** eller **Power BI Gateway** och välj **Tillämpa**.
 
-    **Microsoft Power BI** avser inloggningsaktivitet som är relaterad till tjänsten medan **Power BI Gateway** filtrerar särskilda inloggningar för den lokala datagatewayen.
+    **Microsoft Power BI** filter för att inloggningsaktivitet som är relaterad till tjänsten, medan **Power BI Gateway** filter för att inloggningsaktivitet specifika till den lokala datagatewayen.
    
-    ![Filtrera inloggningar](media/service-admin-access-usage/sign-in-filter.png)
+    ![Skärmbild av inloggningar filtret med program-fältet markerat.](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Exportera data
 
-Du har två alternativ för att exportera data för inloggning: hämta en csv-fil eller använd PowerShell. Längst ned på rapporten väljer du något av följande alternativ:
+Du kan [ladda ned en rapport för inloggning](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) i något av två format: en CSV-fil eller en JSON-fil.
 
-* **Hämta** för att hämta csv-filen för data med det aktuella filtret.
+![Skärmbild av knappen ladda ned.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
-* **Skript** för att hämta ett PowerShell-skript för data med det aktuella filtret. Du kan uppdatera filtret i skriptet efter behov.
+Överst på den **inloggningar** rapporten, Välj **hämta** och välj sedan något av följande alternativ:
 
-![Ladda ned en csv-fil eller ett skript](media/service-admin-access-usage/download-sign-in-data-csv.png)
+* **CSV** att hämta en CSV-fil för filtrerade data.
+
+* **JSON** att hämta en JSON-fil för filtrerade data.
 
 ## <a name="data-retention"></a>Datakvarhållning
 
-Inloggningsdata kan hållas kvar i upp till 30 dagar. Mer information finns i [Rapportkvarhållningsregler i Azure Active Directory](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+Inloggningsdata kan hållas kvar i upp till 30 dagar. Mer information finns i [rapportkvarhållningsregler i Azure Active Directory](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## <a name="next-steps"></a>Nästa steg
 
 [Använda granskning i din organisation](service-admin-auditing.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
-

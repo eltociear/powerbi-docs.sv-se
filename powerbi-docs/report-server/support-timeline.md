@@ -1,20 +1,20 @@
 ---
 title: Supporttider för Power BI-rapportservern
 description: En lista med versioner och tillgänglighet för Power BI-rapportservern.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/24/2019
-ms.openlocfilehash: 06946f4f838446113d244d4acec74b9f66a60a45
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 9eaef23963c369d9fa124124c616b20d4d8a4752
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324655"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187417"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Supporttider för Power BI-rapportservern
 
@@ -36,6 +36,7 @@ Med den här supportpolicyn kan vi leverera nyheter till kunderna snabbt samt ge
 | Mars 2018 | 19 mars 2018 | 19 mars 2019 |
 | Augusti 2018 | 15 augusti 2018 | 15 augusti 2019 |
 | Januari 2019 | 23 januari 2019 | 23 januari 2020 |
+| Maj 2019 | 22 maj 2019 | 22 maj 2020 |
 
 Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 

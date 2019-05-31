@@ -1,6 +1,6 @@
 ---
 title: Administrera Power BI – Vanliga frågor och svar
-description: Få reda på svaren på vanliga frågor om Power BI-registrering, hantering av klientorganisationer och andra administrativa uppgifter.
+description: Läs svaren på vanliga frågor om Power BI registrera sig och klient-hantering och andra administrativa uppgifter.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 54bdc0cb3490cf2149f2fda51939c201cd51518f
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 2e51017333a940bd9d7838e6a903c1a66ce2e342
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383449"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65100793"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -30,7 +30,7 @@ Den här artikeln tar upp vanliga frågor och svar för Power BI-administration.
 * [Hur registrerar sig enskilda användare i organisationen?](#how-do-individual-users-in-my-organization-sign-up)
 * [Hur kan jag förhindra användare från att ansluta till min befintliga Office 365-klient?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
 * [Hur kan jag låta användare att ansluta till min befintliga Office 365-klient?](#how-can-i-allow-users-to-join-my-existing-office-365-tenant)
-* [Hur bekräftar jag om klienten är blockerad?](#how-do-i-verify-if-i-have-the-block-on-in-the-tenant)
+* [Hur kontrollerar jag om jag är blockerad i klienten?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [Hur förhindrar jag att mina befintliga användare börjar använda Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Hur låter jag mina befintliga användare registrera dig för Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
 
@@ -39,10 +39,10 @@ Den här artikeln tar upp vanliga frågor och svar för Power BI-administration.
 * [Hur kommer detta att ändra hur jag hanterar identiteter för användare i min organisation idag?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Hur hanterar vi Power BI?](#how-do-we-manage-power-bi)
 * [Hur hanterar jag en klient som skapas av Microsoft för mina användare?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
-* [Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
+* [Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till i?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Hur tar jag bort Power BI för användare som redan har registrerat sig?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Hur vet jag när nya användare har anslutit sig min klient?](#how-do-i-know-when-new-users-have-joined-my-tenant)
-* [Bör jag vara medveten om några andra förberedelser?](#are-there-any-additional-things-i-should-be-prepared-for)
+* [Finns det några ytterligare saker jag ska förbereda för?](#are-there-any-additional-things-i-should-prepare-for)
 * [Var finns min Power BI-klient?](#where-is-my-power-bi-tenant-located)
 * [Vad är Power BI SLA (serviceavtal)?](#what-is-the-power-bi-sla)
 * [Hur hanterar Power BI hög tillgänglighet och redundans?](#how-does-power-bi-handle-high-availability-and-failover)
@@ -60,29 +60,29 @@ Vissa av procedurerna i det här avsnittet kräver Windows PowerShell-skript. Om
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hur registrerar sig användare för Power BI?
 
-Som administratör kan du registrera dig för Power BI via [Power BI-webbplatsen](https://powerbi.microsoft.com) eller [Köptjänster](https://admin.microsoft.com/AdminPortal/Home#/catalog) på administrationscentret för Microsoft 365. När en administratör loggar på Power BI kan de tilldela användarlicenser till användare som ska ha åtkomst.
+Som administratör kan du registrera dig för Power BI via den [Power BI-webbplatsen](https://powerbi.microsoft.com) eller [köptjänster](https://admin.microsoft.com/AdminPortal/Home#/catalog) sidan på Microsoft 365 Administrationscenter. När en administratör som registrerar sig för Power BI, kan de tilldela användarlicenser till användare som ska ha åtkomst.
 
-Dessutom kan enskilda användare i din organisation kanske registrera sig för Power BI via [Power BI-webbplatsen](https://powerbi.microsoft.com). När en användare i din organisation registrerar sig för Power BI, tilldelas som användaren en licens för Power BI automatiskt. Mer information finns i [Registrera dig för Power BI som individ](service-self-service-signup-for-power-bi.md) och [Power BI-licensiering i din organisation](service-admin-licensing-organization.md).
+Dessutom kan enskilda användare i din organisation kanske registrera sig för Power BI via [Power BI-webbplatsen](https://powerbi.microsoft.com). När en användare i din organisation registrerar sig för Power BI, tilldelar tjänsten automatiskt en Power BI-licens till användaren. Mer information finns i [registrerar dig för Power BI som individ](service-self-service-signup-for-power-bi.md) och [Power BI-licensiering i din organisation](service-admin-licensing-organization.md).
 
 ### <a name="how-do-individual-users-in-my-organization-sign-up"></a>Hur registrerar sig enskilda användare i organisationen?
 
 Det finns tre scenarier som kan gälla för användare i organisationen:
 
 * **Scenario 1**: Din organisation redan har en befintlig Office 365-miljö och användaren som registrerar sig för Power BI har redan ett Office 365-konto.
-    I det här scenariot, om en användare redan har ett arbets- eller skolkonto i klienten (t.ex, contoso.com) men inte Power BI kommer Microsoft att aktiveras prenumerationen för det kontot,och användaren får automatiskt ett meddelande om hur de kan använda Power BI-tjänsten.
+    I det här scenariot, om en användare redan har ett arbets eller skolkonto i klienten (t.ex, contoso.com) men inte har än Power BI, aktiverar Microsoft bara plan för kontot. Användaren meddelas automatiskt med information om hur du använder Power BI-tjänsten.
 
 * **Scenario 2**: Din organisation redan har en befintlig Office 365-miljö men användaren som registrerar sig för Power BI har inte ett Office 365-konto.
-    Användaren har en e-postadress i organisationens domän (till exempel contoso.com) i men har ännu inte något Office 365-konto. I detta fall kan användaren registrera sig för Power BI och får ett konto automatiskt. På så sätt får användaren åtkomst till Power BI-tjänsten. Till exempel om medarbetaren Nancy använder sin arbets-e-postadress (till exempel nancy@contoso.com) för att registrera sig lägger Microsoft automatiskt till Nancy som en användare i Contosos miljö i Office 365 och aktiverar Power BI för det kontot.
+    I det här scenariot användaren har en e-postadress i organisationens domän (till exempel contoso.com) men ännu har inte en Office 365-konto. I detta fall kan användaren registrera sig för Power BI och får ett konto automatiskt. Den här åtgärden kan användaråtkomst till Power BI-tjänsten. Till exempel om medarbetaren Nancy använder sin arbets e-postadress (t.ex. nancy@contoso.com) för att registrera sig Microsoft automatiskt lägger till Nancy som en användare i Contosos Office 365-miljö och aktiverar Power BI för det kontot.
 
-* **Scenario 3**: Din organisation inte har en Office 365-miljö som är ansluten till din e-domän.
-    Det finns inga administrativa åtgärder som din organisation behöver vidta för att dra nytta av Power BI. Användare läggs till i en ny, endast molnbaserad användarkatalog och du har möjlighet att ta över som administratör och hantera dem.
+* **Scenario 3**: Din organisation har inte en Office 365-miljö som är ansluten till din e-postdomän.
+    Det finns inga administrativa åtgärder som krävs för din organisation att utnyttja fördelarna med Power BI. Tjänsten lägger till användare till en ny, endast molnbaserad användarkatalog. Du kan också välja att ta över som administratör och hantera dem.
 
 > [!IMPORTANT]
-> Om din organisation har flera e-postdomäner och du vill att alla e-postadresstillägg ska vara i samma klient kan du lägga till alla e-postdomäner i en Azure Active Directory-klient innan användarna registrerar sig. Det finns ingen automatisk mekanism för att flytta användare över klienter när de väl har skapats. Mer information om den här processen finns i [Om jag har flera domäner, kan jag styra Office 365-klienten som användare läggs till? i](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) senare i den här artikeln och [Lägga till en domän i Office 365](/office365/admin/setup/add-domain/).
+> Om din organisation har flera e-postdomäner och du vill att alla e-postadresstillägg ska vara i samma klient kan du lägga till alla e-postdomäner i en Azure Active Directory-klient innan användarna registrerar sig. När du har skapat användare finns det ingen automatisk mekanism för att flytta användare över klienter. Mer information om den här processen finns i [om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till i?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to) senare i den här artikeln och [lägga till en domän i Office 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>Hur kan jag förhindra användare från att ansluta till min befintliga Office 365-klient?
 
-Det finns steg som du kan ta som administratör för att hindra användare från att ansluta till din befintliga Office 365-klient. Om du blockerar åtkomst kommer användarnas försök att registrera sig att misslyckas och de kommer att omdirigeras till att kontakta administratören för deras organisation. Du behöver inte upprepa den här proceduren om du redan har inaktiverat licensen för automatisk distribution (t.ex. via Office 365 för utbildning för studenter, lärare och övrig personal).
+Det finns steg som du kan ta som administratör för att hindra användare från att ansluta till din befintliga Office 365-klient. Om du blockerar åtkomst, användarnas försök att registrera dig misslyckas, och visas ett meddelande som uppmanar dem att kontakta organisationens administratör. Du behöver inte upprepa den här proceduren om du redan har inaktiverat licensen för automatisk distribution (till exempel via Office 365 för utbildning för studenter, lärare och övrig personal).
 
 Använd följande PowerShell-skript för att förhindra att nya användare ansluter till en hanterad klient. ([Lär dig mer om PowerShell][1].)
 
@@ -98,7 +98,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Hur kan jag låta användare att ansluta till min befintliga Office 365-klient?
 
-Använd följande PowerShell-skript för att låta nya användare ansluta till en hanterad klient. ([Lär dig mer om PowerShell][1].)
+Använd följande PowerShell-skript så att nya användare kan ansluta till en hanterad klient. ([Lär dig mer om PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -107,9 +107,9 @@ connect-msolservice -credential $msolcred
 Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 ```
 
-### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Hur bekräftar jag om klienten är blockerad?
+### <a name="how-do-i-check-if-i-have-the-block-on-in-the-tenant"></a>Hur kontrollerar jag om jag är blockerad i klienten?
 
-Kör följande PowerShell-skript för att verifiera inställningarna. *AllowEmailVerifiedUsers* bör vara false. ([Lär dig mer om PowerShell][1].)
+Använd följande PowerShell-skript för att kontrollera inställningarna. *AllowEmailVerifiedUsers* bör vara false. ([Lär dig mer om PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -120,7 +120,7 @@ Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Hur förhindrar jag att mina befintliga användare börjar använda Power BI?
 
-Azure AD-inställningen som styr detta är **AllowAdHocSubscriptions**. De flesta klienter har inställningen inställd till sant, vilket innebär att den är aktiverad. Om du har köpt Power BI via en partner kan detta vara inställt på false, vilket innebär att det är inaktiverat.
+Azure AD-inställningen som styr detta är **AllowAdHocSubscriptions**. De flesta klienter har detta satt till SANT, vilket innebär att den är aktiverad. Om du har köpt Power BI via en partner kan det anges till false, vilket innebär att den är inaktiverad.
 
 Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer. ([Lär dig mer om PowerShell][1].)
 
@@ -131,25 +131,26 @@ Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer. 
      connect-msolservice -credential $msolcred
     ```
 
-   ![Inloggning i Azure Active Directory](media/service-admin-licensing-organization/aad-signin.png)
+   ![Skärmbild av Azure Active Directory-logga in via PowerShell](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. När du har loggat in kan du köra följande kommando för att se hur din klient är konfigurerad.
+1. När du loggar in, kör följande kommando för att se hur din klient är för tillfället inställd.
 
     ```powershell
      Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
     ```
-1. Kör det här kommandot för att aktivera ($true) eller inaktivera ($false) **AllowAdHocSubscriptions**.
+
+1. Kör följande kommando för att aktivera (`$true`) eller inaktivera (`$false`) **AllowAdHocSubscriptions**.
 
     ```powershell
      Set-MsolCompanySettings -AllowAdHocSubscriptions $false
     ```
 
 > [!NOTE]
-> Flaggan AllowAdHocSubscriptions används för att styra flera användarfunktioner i organisationen, inklusive möjligheten för användare att registrera sig för Azure Rights Management-tjänsten. Om du ändrar flaggan påverkas alla dessa funktioner.
+> Använd den **AllowAdHocSubscriptions** flagga för att styra flera användarfunktioner i organisationen, inklusive möjligheten för användare att registrera dig för Azure Rights Management-tjänsten. Om du ändrar flaggan påverkas alla dessa funktioner.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Hur låter jag mina befintliga användare registrera dig för Power BI?
 
-Kör kommandot i ovanstående fråga för att låta befintliga användare registrera sig för Power BI men skicka värdet true i stället för false i det sista steget.
+Om du vill tillåta befintliga användare att registrera dig för Power BI, körs det kommando som anges för den föregående frågan, men skicka `$true` i stället för `$false` i det sista steget.
 
 ## <a name="administration-of-power-bi"></a>Administration av Power BI
 
@@ -157,40 +158,40 @@ Kör kommandot i ovanstående fråga för att låta befintliga användare regist
 
 Det finns tre scenarier som kan gälla för användare i organisationen:
 
-* **Scenario 1**: Om din organisation redan har en befintlig miljö i Office 365 och alla användare i organisationen har ett Office 365-konto ändras inte identitetshanteringen.
+* **Scenario 1**: Om din organisation redan har en befintlig Office 365-miljö och alla användare i organisationen har Office 365-konton, finns det ingen ändring i hur du hanterar identiteter.
 
-* **Scenario 2**: Om din organisation redan har en befintlig miljö i Office 365, men alla användare i organisationen inte har Office 365-konton skapar vi en användare på klienten och tilldelar licenser utifrån användarens e-post för skola eller arbete.
+* **Scenario 2**: Om din organisation redan har en befintlig Office 365-miljö, men alla användare i din organisation inte har Office 365-konton, vi skapa en användare i klienten och tilldelar licenser utifrån användarens arbets- eller skolans e-postadress.
 
-    Det innebär att antalet användare som du hanterar när som helst viss kan växa efter hand som användare i din organisation registrerar sig för tjänsten.
+    Hur många användare som du hanterar vid given tidpunkt växer därför kan användare i din organisation registrerar sig för tjänsten.
 
-* **Scenario 3**: Om din organisation inte har en Office 365-miljö som är ansluten till din e-domän, sker det ingen ändring i hur du hanterar identiteter.
+* **Scenario 3**: Om din organisation inte har en Office 365-miljö som är ansluten till din e-postdomän, finns det ingen ändring i hur du hanterar identiteter.
 
-    Användare läggs till i en ny, endast molnbaserad användarkatalog och du har möjlighet att ta över som administratör och hantera dem.
+    Tjänsten lägger till användare till en ny, endast molnbaserad användarkatalog. Du kan också välja att ta över som administratör och hantera dem.
 
 ### <a name="how-do-we-manage-power-bi"></a>Hur hanterar vi Power BI?
 
-Power BI har en administratörsportal där du kan visa användarstatistik med länkar till administrationscentret för Microsoft 365 för att hantera användare och grupper samt möjlighet att styra inställningarna för hela klienten.
+Powerbi tillhandahåller en administratörsportal där du kan visa användningsstatistik, finns en länk till administrationscentret för Microsoft 365 att hantera användare och grupper och ger dig möjlighet att styra inställningarna för klienten som helhet.
 
-Ditt konto måste vara markerat som **Global administratör** i Office 365 eller Azure Active Directory, eller ha tilldelats administratörsrollen för Power BI-tjänsten, för att ha åtkomst till Power BI-administratörsportalen. Läs mer i [Förstå administratörsrollen för Power BI](service-admin-role.md) och [Power BI-administratörsportalen](service-admin-portal.md).
+Om du vill använda Power BI-administratörsportalen, måste du ange att kontot som en **Global administratör** i Office 365 eller Azure Active Directory eller någon måste tilldela administratörsrollen för Power BI-tjänsten till ditt användarkonto. Mer information finns i [förstå administratörsrollen för Power BI](service-admin-role.md) och [Power BI-Administratörsportalen](service-admin-portal.md).
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hur hanterar jag en klient som skapas av Microsoft för mina användare?
 
-När en självbetjäningsanvändare registrerar sig för en molnbaserad tjänst som använder Azure AD läggs de till i en ohanterad Azure AD-katalog baserat på e-postdomänen. Du kan göra anspråk på och hantera den klient som har skapats med hjälp av en process som kallas *adminövertagande*. Typen av övertagande beror på om det finns en befintlig hanterad klient som är associerad med domänen:
+När en Självbetjäningsanvändare registrerar sig för en molntjänst som använder Azure AD, tjänsten läggs till en ohanterad Azure AD-katalog baserat på e-postdomän. Du kan göra anspråk på och hantera den klient som någon har skapat med hjälp av en process som kallas en *adminövertagande*. Ta över som du gör beror på om det finns en befintlig hanterad innehavaren som associeras med din domän:
 
 * Använd ett *internt övertagande* för att skapa en ny hanterad klient för domänen.
 
 * Använd ett *externt övertagande* för att flytta domänen till en befintlig hanterad klient.
 
-Mer information finns i [Ta över en ohanterad katalog som administratör i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+Mer information finns i [ta över en ohanterad katalog som administratör i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
 
-När du gör ett externt övertagande placeras Power BI-innehåll som har skapats före övertagandet på en [Power BI-arkiverad arbetsyta](service-admin-power-bi-archived-workspace.md). Du måste migrera allt innehåll som du vill använda i den nya klienten manuellt.
+När du gör en extern övertagning tjänsten placerar Power BI content som skapades före övertagande i en [Power BI-arkiverad arbetsyta](service-admin-power-bi-archived-workspace.md). Du måste migrera allt innehåll som du vill använda i den nya klienten manuellt.
 
-### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till?
+### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till i?
 
-Om du inte gör något skapas en klient för varje användares e-postdomäner och underdomäner. Om du vill att alla användare ska vara i samma klient oavsett deras e-postadressdomän: Skapa en målklient i förväg eller använd en befintlig klient och lägg till alla befintliga domäner och underdomäner som ska konsolideras i klienten. Alla användare med e-postadresser som slutar på dessa domäner och underdomäner ansluts automatiskt till målklienten när de registreras.
+Om du inte gör något skapas en klient för varje användares e-postdomäner och underdomäner i tjänsten. Om du vill att alla användare ska vara i samma klient oavsett deras e-postadressdomän: Skapa en målklient i tid, eller Använd en befintlig klient. Lägg sedan till alla befintliga domäner och underdomäner som ska konsolideras i klienten. Alla användare med e-postadresser som slutar på dessa domäner och underdomäner automatiskt ansluta till Målklienten när de loggar.
 
 > [!IMPORTANT]
-> Det finns ingen automatisk mekanism för att flytta användare över klienter när de väl har skapats. Mer information om att lägga till domäner i en enda Office 365-klient, finns i [Lägga till användare och domän i Office 365](/office365/admin/setup/add-domain/).
+> När du har skapat användare finns det ingen automatisk mekanism för att flytta användare över klienter. Mer information om att lägga till domäner i en enda Office 365-klient, finns i [Lägga till användare och domän i Office 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Hur tar jag bort Power BI för användare som redan har registrerat sig?
 
@@ -206,13 +207,13 @@ Om en användare har registrerat dig för Power BI, men du inte längre vill att
 
 1. Välj **Redigera** i fönstret för användarinformation intill **Produktlicenser**.
 
-1. Ställ in **Power BI (kostnadsfri)** eller **Power BI Pro** på **Av** beroende på vilken licens som tillämpas på deras konto.
+1. Beroende på vad licens du tillämpas på deras konto genom att ange **Power BI (kostnadsfri)** eller **Power BI Pro** till **av**.
 
 1. Välj **Spara**.
 
 ### <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>Hur vet jag när nya användare har anslutit sig min klient?
 
-Användare som har anslutit sig till din klient som en del av det här programmet tilldelas en unik licens som du kan filtrera efter i fönstret aktiva användare på admin-instrumentpanelen. Följ dessa steg om du vill skapa den nya vyn.
+Användare som har anslutit din klient som en del av det här programmet tilldelas en unik licens som du kan filtrera efter i fönstret aktiva användare på admin-instrumentpanelen. Följ dessa steg om du vill skapa den nya vyn.
 
 1. Gå till [Administrationscenter för Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
@@ -226,25 +227,25 @@ Användare som har anslutit sig till din klient som en del av det här programme
 
 1. Ange eventuella andra villkor som du vill ha och välj **Lägg till**.
 
-1. När den nya vyn har skapats är den tillgänglig från menyn **Vyer**.
+1. När du har skapat den nya vyn, den är tillgänglig från den **vyer** menyn.
 
-### <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>Bör jag vara medveten om några andra förberedelser?
+### <a name="are-there-any-additional-things-i-should-prepare-for"></a>Finns det några ytterligare saker jag ska förbereda för?
 
-Du kan uppleva en ökning av begäranden om lösenordsåterställning. Information om den här processen finns i [Återställa en användares lösenord](/office365/admin/add-users/reset-passwords).
+Du kan uppleva en ökning av begäranden om lösenordsåterställning. Information om den här processen finns i [återställa en användares lösenord](/office365/admin/add-users/reset-passwords).
 
 Du kan ta bort en användare från din klient via standardprocessen i administrationscentret för Microsoft 365. Om användaren fortfarande har en aktiv e-postadress från din organisation kommer de att kunna återansluta om du inte blockerar alla användare från att ansluta.
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Var finns min Power BI-klient?
 
-Information om vilka dataområdet din Power BI-klient finns i se [Var finns min Power BI-klient?](service-admin-where-is-my-tenant-located.md).
+Information om vilka dataområdet din Power BI-klient finns i finns i [var finns min Power BI-klient?](service-admin-where-is-my-tenant-located.md).
 
 ### <a name="what-is-the-power-bi-sla"></a>Vad är Power BI SLA?
 
-Mer information om Power BI SLA (serviceavtal) finns i artikeln [Licensvillkor och dokumentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) i avsnittet **Licensiering** på Microsoft Licensing-webbplatsen.
+Information om Power BI SLA (serviceavtal) finns i den [licensvillkor och dokumentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) artikeln i den **Licensing** avsnittet på Microsoft Licensing-webbplatsen.
 
 ### <a name="how-does-power-bi-handle-high-availability-and-failover"></a>Hur hanterar Power BI hög tillgänglighet och redundans?
 
-Mer information om hög tillgänglighet och redundans finns i [Vanliga frågor och svar om hög tillgänglighet, redundans och haveriberedskap i Power BI](service-admin-failover.md).
+Information om hög tillgänglighet och redundans finns i [Power BI hög tillgänglighet, redundans och disaster recovery vanliga frågor och svar](service-admin-failover.md).
 
 ## <a name="security-in-power-bi"></a>Säkerhet i Power BI
 
@@ -254,7 +255,7 @@ Lär dig mer om Power BI-efterlevnad på [Microsoft Trust Center](https://www.mi
 
 ### <a name="how-does-security-work-in-power-bi"></a>Hur fungerar säkerheten i Power BI?
 
-Power BI bygger på Office 365, som i sin tur bygger på Azure-tjänster som Azure Active Directory. En översikt av Power BI-arkitekturen finns i [Power BI-säkerhet](service-admin-power-bi-security.md).
+Microsoft har byggt Power BI på grund av Office 365, som i sin tur bygger på Azure-tjänster som Azure Active Directory. En översikt av Power BI-arkitekturen finns i [Power BI-säkerhet](service-admin-power-bi-security.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -262,7 +263,7 @@ Power BI bygger på Office 365, som i sin tur bygger på Azure-tjänster som Azu
 [Förstå Power BI-administratörsrollen](service-admin-role.md)  
 [Självregistrering för Power BI](service-self-service-signup-for-power-bi.md)  
 [Köp Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
-[Vad är Power BI Premium?](service-premium.md)  
+[Vad är Power BI Premium?](service-premium-what-is.md)  
 [Så här köper du Power BI Premium](service-admin-premium-purchase.md)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 [Hantera din grupp i Power BI och Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md)  

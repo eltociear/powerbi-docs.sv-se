@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2c9daf54ec18b53655043cd4a472674ee5123be
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f5eed81a5750bebb4df968a09cd1fcfd2aa069d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295981"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710891"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 Du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram, eller så kan du använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
@@ -42,7 +42,7 @@ Power BI-utsnitt har följande begränsningar:
 
 ## <a name="create-slicers"></a>Skapa utsnitt
 
-Om du vill skapa ett nytt utsnitt kan du välja utsnittsikonen och sedan välja datafältet att filtrera efter (eller dra den till rutan **Fält** i fönstret **Visualiseringar**). Du kan också välja eller dra datafältet först och skapa en visualisering och sedan välja utsnittsikonen och ändra visualiseringen till ett utsnitt. Olika datatyper skapar olika utsnittstyper med olika effekter och alternativ. 
+Om du vill skapa ett nytt utsnitt kan du välja utsnittsikonen och sedan välja datafältet att filtrera på (eller dra den till den **filter** rutan den **visualiseringar** fönstret), eller du kan välja eller dra datafältet först till Skapa en visualisering och sedan välja utsnittsikonen och ändra visualiseringen till ett utsnitt. Olika datatyper skapar olika utsnittstyper med olika effekter och alternativ. 
 
 Första gången du ändrar en rapport aktiveras knappen **Återställ till standard**. Det här är en påminnelse om att du har ändrat de ursprungliga rapportinställningarna. Om du navigerar bort från rapporten sparas ändringen (den är beständig). När du återvänder till rapporten behöver du inte göra ändringarna igen.  Om du i stället vill återställa rapporten till rapportförfattarens standardinställningar väljer du knappen **Återställ till standard** från den översta menyraden.
 
@@ -53,24 +53,28 @@ Första gången du ändrar en rapport aktiveras knappen **Återställ till stand
 
 **Skapa ett nytt utsnitt och filtrera data efter Distriktschef**
 
-1. Öppna [Exempel på detaljhandelsanalys](../sample-retail-analysis.md) i Power BI Desktop eller Power BI-tjänsten. (Välj **Redigera rapport** högst upp till vänster i Power BI-tjänsten.)
-2. Skapa ett nytt utsnitt genom att välja ikonen **Utsnitt**![utsnittsikon](media/power-bi-visualization-slicers/slicer-icon.png) i fönstret **Visualiseringar** på sidan **Översikt**. 
-3. När du har valt det nya utsnittet fyller du det genom att välja **Distriktschef** under **Distrikt** i fönstret **Fält**. Det nya utsnittet är en lista med markeringsrutor framför namnen. 
+1. Öppna i Power BI Desktop eller Power BI-tjänsten i [detaljhandelsanalys](../sample-retail-analysis.md). (Välj **Redigera rapport** högst upp till vänster i Power BI-tjänsten.)
+2. På sidan översikt med inget valt på arbetsytan, Välj den **utsnitt** ikonen ![utsnittsikonen](media/power-bi-visualization-slicers/slicer-icon.png) i den **visualiseringar** fönstret för att skapa ett nytt utsnitt. 
+3. Med det nya utsnittet som valts på panelen fält väljer **distrikt** > **DM** att fylla i utsnittet. Det nya utsnittet är en lista med markeringsrutor framför namnen. 
     
-    ![nytt utsnitt](media/power-bi-visualization-slicers/2-slicer.png)
+    ![nytt utsnitt](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. Ändra storlek och dra utsnittet och andra element på arbetsytan så att du frigör utrymme för utsnittet. Observera att utsnittsobjekten klipps av om du gör utsnittet för litet. 
-5. Välj namn för utsnittet och notera effekterna på sidans övriga visualiseringar. Avmarkera namnen och välj mer än ett namn genom att hålla ned **Ctrl**-tangenten. Om du väljer alla namn har det samma effekt som om du inte hade valt något namn. 
+5. Välj namn för utsnittet och notera effekterna på sidans övriga visualiseringar. Avmarkera namnen och välj mer än ett namn genom att hålla ned **Ctrl**-tangenten. Om du väljer alla namn har det samma effekt som om du inte hade valt något namn. \
 
+6. Alternativt, Välj färgrollerikonen för att formatera ditt utsnitt. Det finns bara för många alternativ för att beskriva dem alla här – så experimentera och skapa ett utsnitt som fungerar för dig. I exemplen nedan första utsnittet har konverterats till en listruta för att spara utrymme och alternativet att ”markera allt” har lagts till.  Andra utsnitt har formaterats med färger, teckensnitt, storlekar, och tillåter endast ett val.
+
+   ![nytt utsnitt](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->Utsnittsobjekten i listan sorteras som standard i stigande alfanumerisk ordning. Om du vill ändra sorteringsordningen till fallande väljer du ellipsen (**...**) i utsnittets övre högra hörn och väljer **Sortera efter distriktschef** i listrutan. 
+>Utsnittsobjekten i listan sorteras som standard i stigande alfanumerisk ordning. Om du vill ändra sorteringsordningen till fallande väljer du ellipsen ( **...** ) i utsnittets övre högra hörn och väljer **Sortera efter distriktschef** i listrutan. 
 
 **Skapa ett nytt utsnitt och filtrera data efter datumintervall**
 
-1. Om du vill skapa en ny visualisering släpper du **Tid** i fönstret Fält och drar **Månad** (eller **Datum** i Power BI-tjänsten) till rutan **Värden** i fönstret Visualiseringar.
+1. Nedrullningsbar listruta med något som är markerade på arbetsytan, **datum** i fönstret fält och dra **datum** till den **värden** rutan i fönstret visualiseringar för att skapa en ny visualisering.
 2. Konvertera den nya visualiseringen till ett utsnitt genom att markera den nya visualiseringen och välja ikonen **Utsnitt**. Den här utsnittet är ett skjutreglage med ifyllt datumintervall.
     
-    ![nytt intervallutsnitt](media/power-bi-visualization-slicers/2a-date-slicer.png)
+    ![nytt intervallutsnitt](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
+
     
 4. Ändra storlek och dra utsnittet och andra element på arbetsytan så att du frigör utrymme för utsnittet. Observera att skjutreglaget anpassas efter utsnittets storlek, men det försvinner och datumen klipps bort om du gör utsnittet för litet. 
 4. Välj olika datumintervall med skjutreglaget eller välj ett datumfält så att du kan skriva in ett värde eller öppna en kalender om du vill göra med precisa val. Observera effekterna på de övriga visualiseringarna på sidan.
@@ -78,8 +82,11 @@ Första gången du ändrar en rapport aktiveras knappen **Återställ till stand
     >[!NOTE]
     >Numeriska datatyper och datum-/tiddatatyper producerar skjutreglageutsnitt som standard. Från och med Power BI-uppdateringen i februari 2018 fäster skjutreglage för heltalsdata nu till helstalsvärden istället för att visa decimaler. 
 
->[!TIP]
->Även om datafältet **Månad** som standard ger ett **Mellan**-skjutreglageutsnitt, så kan du ändra det till andra utsnittstyper och urvalsalternativ. Om du vill ändra utsnittstyp för ett markerat utsnitt hovrar du över utsnittets övre högra område, släpper cirkumflexet som visas och väljer något av de andra alternativen, t.ex. **Lista** eller **Före**. Observera hur utsnittsalternativen och urvalsalternativen ändras. 
+
+5. Ändra nu fältvärdet från **datum** till **MonthIndex**.  Detta ger en **mellan** intervall skjutreglaget utsnittstyp som standard, men du kan ändra det till andra utsnittstyper och urvalsalternativ. Om du vill ändra utsnittstyp för ett markerat utsnitt hovrar du över utsnittets övre högra område, släpper cirkumflexet som visas och väljer något av de andra alternativen, t.ex. **Lista** eller **Före**. Observera hur utsnittsalternativen och urvalsalternativen ändras. 
+ 
+    ![nytt intervallutsnitt](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
+
 
 Mer information om hur du skapar utsnitt för datum och numeriska intervall finns i följande video och [Använda utsnittet för numeriska intervall i Power BI Desktop](../desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 

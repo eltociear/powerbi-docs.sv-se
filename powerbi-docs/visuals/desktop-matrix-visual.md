@@ -7,35 +7,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 05/29/2019
 ms.author: mihart
-LocalizationGroup: Create reports
-ms.openlocfilehash: acd2ad2afe9b380a8888dee7a4b9d4707d79b41f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 6ad8900e5a95148b3f8333aa1953cc939d56f0e6
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279836"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375510"
 ---
 # <a name="use-the-matrix-visual-in-power-bi"></a>Använd det visuella matrisobjektet i Power BI
-Med den visuella **matris**-funktionen kan du skapa visuell matrisinformation (kallas ibland också *tabeller*) i **Power BI Desktop**-rapporter och **Power BI-tjänst**rapporter och markera flera element i matrisen med andra visuella objekt. Dessutom kan du välja rader, kolumner och även enskilda celler och korsmarkeringar. Du kan kopiera enskilda celler och markeringar av flera celler och klistra in dem i andra program. Matrisen har dessutom stöd för stegvis layout för optimal användning av utrymmet.
+Den **matris** visual liknar en **tabell**.  En tabell har stöd för 2 dimensioner och data är fast, betydelse duplicerade värden visas och inte samman. En matris gör det enklare att visa data meningsfullt över flera dimensioner – den har stöd för stegvis layout. Matrisen sammanställer data automatiskt och kan gå nedåt. 
 
-![](media/desktop-matrix-visual/matrix-visual_2a.png)
+Du kan skapa matriser i **Power BI Desktop** och **Power BI-tjänsten** rapporter och markera flera element i matrisen med andra visuella objekt på den rapportsidan. Till exempel kan du välja rader, kolumner och även enskilda celler och korsmarkeringar. Dessutom kan enskilda celler och flera cellmarkeringar kopieras och klistras in i andra program. 
+
+![flera markerade matris och ringdiagram](media/desktop-matrix-visual/matrix-visual_2a.png)
 
 Det finns många funktioner som är kopplade till matrisen och vi ska gå igenom dem i följande avsnitt i den här artikeln.
 
-## <a name="report-themes"></a>Rapportteman
-Både matriser och tabeller speglar formatmallar (inklusive färger) från den kopplade **rapportens tema**. Dessa kanske inte är de färger som du förväntar dig för din matris, vilket kan ändras i konfigurationen för ditt **Rapporttema**. Se [**Använda rapportteman i Power BI Desktop**](../desktop-report-themes.md) för mer information om teman.
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Beräkning av summor i Power BI
 
 Innan vi går vidare till hur man använder det visuella **matris**objektet är det viktigt att du förstår hur Power BI beräknar total- och delsummor i tabeller och matriser. När det gäller summa- och delsummarader utvärderas måttet för alla rader i underliggande data – det handlar *inte* bara om att lägga till värdena i de tabellrader som syns eller visas. Detta innebär att du kan få andra värden än vad du räknat med i totalsummaraden. 
 
-Ta en titt på följande visuella **matris**objekt. 
+Ta en titt på följande matriser. 
 
-![](media/desktop-matrix-visual/matrix-visual_3.png)
+![Jämför tabeller och matriser](media/desktop-matrix-visual/matrix-visual_3.png)
 
-I det här exemplet visar varje rad i det visuella **matris**objektet längst till höger *Belopp* för varje kombination säljare/datum. Men eftersom en säljare visas för flera datum kan siffrorna visas mer än en gång. Den korrekta totalsumman för underliggande data och en enkel addering av de synliga värdena överensstämmer därmed inte. Detta är ett vanligt mönster när det värde som du summerar finns på ”ett”-sidan i ett ett-till-många-samband.
+I det här exemplet visar varje rad i matrisen längst till höger i *belopp* för varje kombination säljare/datum. Men eftersom en säljare visas för flera datum kan siffrorna visas mer än en gång. Den korrekta totalsumman för underliggande data och en enkel addering av de synliga värdena överensstämmer därmed inte. Detta är ett vanligt mönster när det värde som du summerar finns på ”ett”-sidan i ett ett-till-många-samband.
 
 Tänk på att dessa värden, när du arbetar med total- och delsummor, baseras på underliggande data och inte enbart på de värden som visas. 
 
@@ -58,58 +58,60 @@ The expansion state of the matrix will save with your report. It can be pinned t
 Watch the following video to learn more about expand/collapse in the matrix:
 
 -->
-## <a name="using-drill-down-with-the-matrix-visual"></a>Öka detaljnivån i den visuella matrisen
-Det finns en mängd intressanta aktiviteter som ökar detaljnivån i **matrisen** som inte var tillgängliga tidigare. Detta inkluderar möjligheten att öka detaljnivån för rader, kolumner och även i enskilda avsnitt och celler. Nu ska vi titta på hur var och en av dessa fungerar.
+## <a name="using-drill-down-with-the-matrix-visual"></a>Med hjälp av gå nedåt i matris
+Du kan göra alla typer av intressanta detaljnivå aktiviteter som inte var tillgängliga tidigare i matris. Detta inkluderar möjligheten att öka detaljnivån för rader, kolumner och även i enskilda avsnitt och celler. Nu ska vi titta på hur var och en av dessa fungerar.
 
 ### <a name="drill-down-on-row-headers"></a>Öka detaljnivån för radrubriker
 Gå till fönstret **Visualiseringar**. När du lägger till flera fält i avsnittet **Rader** i brunnen **Fält** aktiveras granskning nedåt på raderna i matrisen. Detta påminner om hur du skapar en hierarki som sedan låter dig öka detaljnivån (och återgå) i hierarkin och analysera data på varje nivå.
 
-I följande bild skapar avsnittet **Rader** *Kategori* och *Underkategori* en gruppering (eller hierarki) i de rader som vi kan se i större detalj.
+I följande bild, den **rader** innehåller *försäljningssteg* och *affärsmöjlighetsstorlek*, skapa en gruppering (eller hierarki) i de rader som vi kan visa detaljerad information.
 
-![](media/desktop-matrix-visual/matrix-visual_4.png)
+![Filter-kort som visar vilka rader väljs](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
 När en gruppering har skapats i avsnittet **Rader** visar det visuella objektet ikonerna *detaljgranska* och *expandera* i det övre vänstra hörnet.
 
-![](media/desktop-matrix-visual/matrix-visual_5.png)
+![matris med ökad detaljnivå kontroller som beskrivs](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-På samma sätt som du kan använda funktionerna för att öka detaljnivån och expandera beteendet för andra visuella objekt, kan vi öka detaljnivån i hierarkin (eller återgå) med dessa knappar. I det här fallet kan vi gå från *Kategori* till *Underkategori*, vilket visas i följande bild, där ikonen för att öka detaljnivån (högaffeln) har valts.
+På samma sätt som du kan använda funktionerna för att öka detaljnivån och expandera beteendet för andra visuella objekt, kan vi öka detaljnivån i hierarkin (eller återgå) med dessa knappar. I det här fallet vi gå från *försäljningssteg* till *affärsmöjlighetsstorlek*, enligt följande bild, där gå nedåt en nivå ikon (högaffeln) har valts.
 
-![](media/desktop-matrix-visual/matrix-visual_6.png)
+![matris med högaffeln beskrivs](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 
-Förutom dessa ikoner kan du högerklicka på någon av dessa radrubriker och öka detaljnivån genom att välja från menyn som visas.
+Förutom dessa ikoner kan du välja någon av dessa radrubriker och öka detaljnivån genom att välja från menyn som visas.
 
-![](media/desktop-matrix-visual/matrix-visual_7.png)
+![menyalternativen för rader i en matris](media/desktop-matrix-visual/power-bi-matrix-menu.png)
 
 Observera att det finns flera alternativ på menyn som visas, vilket genererar olika resultat:
 
-Genom att välja den **detaljnivån** expanderas matrisen för *den* radnivån, *exklusive* radrubriken som högerklickades. I följande bild högerklickade du på *datorer* och valde **detaljnivån**. Observera att andra topprader inte längre visas i matrisen. Detta är en mycket användbar funktion och som är särskilt fiffig när det är dags att **korsmarkera** avsnitt.
+Att välja **detaljnivån** expanderas matrisen för *som* radnivån, *exklusive* alla andra radrubriker förutom radrubriken som har valts. I följande bild, **förslag** > **detaljnivån** har valts. Observera att andra topprader inte längre visas i matrisen. Detta är en mycket användbar funktion och som är särskilt fiffig när det är dags att **korsmarkera** avsnitt.
 
-![](media/desktop-matrix-visual/matrix-visual_8.png)
+![matrisen Detaljgranskning nedåt en nivå](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-Du kan klicka på ikonen **Minska detaljnivån** för att gå tillbaka till föregående toppnivån. Om du sedan väljer **Visa nästa nivå** från snabbmenyn ser du en alfabetisk lista över alla objekt på nästa nivå (i det här fallet fältet *underkategori*) utan kategoriseringen för nästa hierarkinivå.
+Välj den **detaljnivån** ikon för att gå tillbaka till föregående toppnivån. Om du sedan väljer **förslag** > **Visa nästa nivå**, får du en stigande lista över alla objekt på nästa nivå (i det här fallet den *affärsmöjlighetsstorlek* fältet), utan kategoriseringen hierarkinivå.
 
-![](media/desktop-matrix-visual/matrix-visual_8a.png)
+![matris med hjälp av Visa nästa nivå](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 
-När du klickar på ikonen **Minska detaljnivån** i det övre vänstra hörnet av matrisen visas alla toppkategorier. Högerklicka igen och välj **Expandera till nästa nivå**, så visas följande visuella objekt.
+Välj den **detaljnivån** ikonen i det övre vänstra hörnet av matrisen visas alla toppkategorier, sedan väljer **förslag** > **Expandera till nästa nivå**till Visa alla värden för båda nivåerna av hierarkin - *försäljningssteg* och *affärsmöjlighetsstorlek*.
 
-![](media/desktop-matrix-visual/matrix-visual_9.png)
+![matris med hjälp av Visa nästa nivå](media/desktop-matrix-visual/power-bi-matrix-expand-next.png)
 
-Du kan också använda menyalternativen **Inkludera** och **Undanta** för att behålla (eller ta bort, respektive) raden du högerklickade på (och eventuella underkategorier) från matrisen.
+Du kan också använda den **Expandera** menyalternativet att styra visningen ytterligare.  Välj exempelvis **förslag** > **Expandera** > **val av**. Powerbi visar en totala raden för varje *försäljningssteg* och alla de *affärsmöjlighetsstorlek* alternativ för *förslag*.
+
+![Matrisen efter Expandera som tillämpas på förslag](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Öka detaljnivån för kolumnrubriker
-På samma sätt som du kan öka detaljnivån för rader kan du göra samma med **Kolumner**. I följande bild ser du att det finns två fält i fältbrunnen **kolumner**, vilket skapar en hierarki som liknar den som vi använder för rader tidigare i den här artikeln. I fältbrunnen **Kolumner**har vi *Klass* och *Färg*.
+Liknar möjlighet att öka detaljnivån för rader, du kan också öka detaljnivån på **kolumner**. I följande bild, det finns två fält i den **kolumner** fältbrunnen, skapar en hierarki som liknar den som vi använder för rader tidigare i den här artikeln. I den **kolumner** fältbrunnen, har vi *Region* och *Segment*. När andra fält har lagts till i **kolumner**, en ny listruta som visas på det visuella objektet, för närvarande visas **rader**.
 
-![](media/desktop-matrix-visual/matrix-visual_10.png)
+![Matrisen efter den andra kolumnvärde har lagts till](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
-När vi högerklickar på en kolumn i **matrisen** visas alternativet att öka detaljnivån. I följande bild, högerklickar vi på *Deluxe* och väljer **Öka detaljnivån**.
+Om du vill öka detaljnivån för kolumner, Välj **kolumner** från den *detaljgranska i* meny som finns i det övre vänstra hörnet av matrisen. Välj den *östra* region och välj **detaljnivån**.
 
-![](media/desktop-matrix-visual/matrix-visual_11.png)
+![menyn för ökad detaljnivå för kolumner](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-När du väljer **Öka detaljnivån** visas nästa nivå i hierarkin för kolumnen *Deluxe*, vilken i detta fall är *Färg*.
+När du väljer **detaljnivån**, nästa nivå i hierarkin för kolumnen *Region > östra* visas, som i det här fallet är *Antal affärsmöjligheter*. Den andra regionen visas, men är nedtonat.
 
-![](media/desktop-matrix-visual/matrix-visual_12.png)
+![matrisen med kolumner Granska nedåt en nivå](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
-Resten av alternativen i högerklicksmenyn fungerar för kolumner på samma sätt som de gör för rader (mer information finns i föregående avsnitt **Öka detaljnivån för radrubriker**). Du kan **Visa nästa nivå**, **Expandera till nästa nivå**, **Inkludera** eller **Undanta** för dina kolumner på samma sätt som för rader.
+Resten av menyobjekt som fungerar för kolumner på samma sätt som de gör för rader (se avsnittet ovan **öka detaljnivån för radrubriker**). Du kan **Visa nästa nivå** och **Expandera till nästa nivå** med kolumner som är precis som du kan göra med rader.
 
 > [!NOTE]
 > Ikonerna för att öka och minska detaljnivån längst upp till vänster på matrisen gäller endast för rader. Du måste använda högerklicksmenyn för att öka detaljnivån i kolumner.
@@ -121,26 +123,26 @@ Resten av alternativen i högerklicksmenyn fungerar för kolumner på samma sät
 
 I den *ursprungliga* versionen av matrisen visades underkategorier i en helt annan kolumn och tog upp mer utrymme i det visuella objektet. Följande bild visar tabellen i den ursprungliga **matrisen**. Observera underkategorierna i en separat kolumn.
 
-![](media/desktop-matrix-visual/matrix-visual_14.png)
+![gamla sätt att standardformat för matriser](media/desktop-matrix-visual/matrix-visual_14.png)
 
 I följande bild visas en **Matris** med **Stegvis layout**. Lägg märke till kategorin *datorer* visar underkategorierna något indragna (tillbehör för datorer, stationära datorer, bärbara datorer, skärmar och så vidare) vilket är tydligare och mycket mer komprimerat.
 
-![](media/desktop-matrix-visual/matrix-visual_13.png)
+![aktuella vägen som matris formaterar data](media/desktop-matrix-visual/matrix-visual_13.png)
 
 Du kan enkelt ändra inställningarna för stegvis layout. Expandera området **radrubriker** i **format**-området (rollerikonen) i fönstret **Visuella objekt** för den valda **matrisen**. Du har två alternativ: knappen **Stegvis layout** (som aktiverar eller inaktiverar funktionen) och **stegvis layoutindrag** (anger indrag i bildpunkter).
 
-![](media/desktop-matrix-visual/matrix-visual_15.png)
+![Radrubriker kortkontroll med stegvis layout](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
 Om du inaktiverar **stegvis layout** visas underkategorierna har i en annan kolumn snarare än under överordnad kategori.
 
 ## <a name="subtotals-with-matrix-visuals"></a>Delsummor med matriser
 Du kan aktivera eller inaktivera delsummor i matriser, för såväl rader som kolumner. I följande bild ser du att raddelsummor är inställda på **På**.
 
-![](media/desktop-matrix-visual/matrix-visual_20.png)
+![matris som visar summor och delsummor](media/desktop-matrix-visual/matrix-visual_20.png)
 
 I avsnittet **Format** i fönstret **Visualiseringar** expanderar du kortet **Delsummor** och sätter skjutreglaget **Raddelsummor** till **Inaktivera**. När du gör det visas inte delsummor.
 
-![](media/desktop-matrix-visual/matrix-visual_21.png)
+![matris med delsummor stängs av](media/desktop-matrix-visual/matrix-visual_21.png)
 
 Samma sak gäller för kolumndelsummor.
 
@@ -149,7 +151,7 @@ Med visualiseringen **Matris** kan du välja alla element i matrisen som grund f
 
 Dessutom fungerar Ctrl + klicka för korsmarkering. I följande bild valdes till exempel en samling av underkategorier från **matrisen**. Observera hur objekt som inte var markerat från det visuella objektet är nedtonade och hur övriga visuella objekt på sidan återspeglar de val du gjorde i **matrisen**.
 
-![](media/desktop-matrix-visual/matrix-visual_16.png)
+![rapporten sidan mellan highighted genom en matris](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Kopiera värdena från Power BI så att du kan använda dem i andra program
 
@@ -166,20 +168,15 @@ Din matris eller en tabell kan ha innehåll som du vill använda i andra program
     ![klistra in i Excel](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Fyllning och teckenfärger med matriser
-Med visualiseringen **Matris** kan du använda **villkorsstyrd formatering** (färger och fyllning) för cellernas bakgrundsfärger samt på själva texten och värdena.
+Du kan använda i matris **villkorsstyrd formatering** (färger och fyllning och data) för cellernas bakgrundsfärger och du kan använda villkorsstyrd formatering för de själva texten och värdena.
 
-Om du vill tillämpa villkorsstyrd formatering, kan du göra något av följande när en matris väljs:
-
-* I fönstret **Fält** högerklickar du på fältet och väljer **Villkorsstyrd formatering** på menyn.
+Om du vill tillämpa villkorsstyrd formatering, Välj matrisen visual och öppna den **Format** fönstret. Expandera den **villkorsstyrd formatering** kort och för **bakgrundsfärg**, **teckenfärg**, eller **datastaplar**, skjutreglaget till **På**. Aktivera ett av dessa alternativ visas en länk till *avancerade kontroller*, där du kan anpassa färger och värden för formatering av färg.
   
-  ![](media/desktop-matrix-visual/matrix-visual_17.png)
-* Alternativt kan du gå till fönstret **Format** och expandera kortet **Villkorsstyrd formatering** och flytta skjutreglaget till **på** för antingen **Bakgrundsfärgskalor** eller **Teckensnittfärgskalor**. När du aktiverar något av dessa alternativ visas en länk till *Avancerade kontroller*, där du kan anpassa färger och värden för formatering av färg.
-  
-  ![](media/desktop-matrix-visual/matrix-visual_18.png)
+  ![Formatera fönstret som visar Data staplar kontroll](media/desktop-matrix-visual/power-bi-matrix-data-bars.png)
 
-Båda metoder ger samma resultat. Om du väljer *avancerade kontroller* visas följande dialogruta där du kan göra justeringar:
+Välj *avancerade kontroller* att visa en dialogruta där du kan du göra justeringar. Det här exemplet visar dialogrutan för **datastaplar**.
 
-![](media/desktop-matrix-visual/matrix-visual_19.png)
+![Fönstret för data staplar](media/desktop-matrix-visual/power-bi-data-bars.png)
 
 ## <a name="next-steps"></a>Nästa steg
 

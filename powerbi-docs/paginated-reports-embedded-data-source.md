@@ -1,20 +1,20 @@
 ---
 title: Inbäddade datakällor för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
 description: I den här artikeln får du lära dig att skapa och ändra en inbäddad datakälla i en sidnumrerad rapport i Power BI-tjänsten.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
-ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
-ms.translationtype: HT
+ms.date: 05/16/2019
+ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59070032"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853385"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Skapa en inbäddad datakälla för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
 
@@ -23,13 +23,19 @@ I den här artikeln får du lära dig att skapa och ändra en inbäddad datakäl
 - Azure SQL Database och Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
+- Oracle 
+- Teradata 
+
+För dessa datakällor använder den [SQL Server Analysis Services-anslutning](service-premium-connect-tools.md) alternativet:
+
 - Azure Analysis Services
+- Power BI-datauppsättningar
 
 Sidnumrerade rapporter ansluter till lokala datakällor via en gateway. Du ställer in gatewayen när du har publicerat rapporten till Power BI-tjänsten. Läs mer om [Power BI-gatewayer](service-gateway-getting-started.md). 
 
 ## <a name="create-an-embedded-data-source"></a>Skapa en inbäddad datakälla
   
-1. Öppna Report Builder.
+1. Öppna Power BI Report Builder.
 
 1. I verktygsfältet i fönstret Rapportdata väljer du **Nytt** > **Datakälla**. Dialogrutan **Egenskaper för datakälla** öppnas.
 
@@ -62,4 +68,4 @@ Sidnumrerade rapporter ansluter till lokala datakällor via en gateway. Du stäl
 ## <a name="next-steps"></a>Nästa steg
 
 - [Skapa en inbäddad datamängd för en sidnumrerad rapport i Power BI-tjänsten](paginated-reports-create-embedded-dataset.md)
-- [Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsgranskning)](paginated-reports-report-builder-power-bi.md)
+- [Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsversion)](paginated-reports-report-builder-power-bi.md)

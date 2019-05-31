@@ -7,119 +7,119 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 559ff45974274420e2545228720000359d5fe971
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383495"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906831"
 ---
-# <a name="using-auditing-within-your-organization"></a>Använda granskning i din organisation
+# <a name="use-auditing-within-your-organization"></a>Använda granskning i din organisation
 
-Att veta vem som vidtagit en viss åtgärd för ett visst objekt i din Power BI-klient kan vara av avgörande betydelse när det gäller att hjälpa organisationen att uppfylla olika krav, t.ex regelefterlevnad och posthantering. Använd Power BI-granskning för att granska åtgärder som utförs av användare, till exempel ”Visa rapport” och ”Visa instrumentpanelen”. Du kan inte använda granskning för att granska behörigheter.
+Att veta vem som tar vad för ett visst objekt i Power BI kan klient vara avgörande gäller att hjälpa organisationen att uppfylla olika krav, t.ex regelefterlevnad och posthantering. Använd Power BI granskning för att granska åtgärder som utförs av användare, som ”Visa rapport” och ”visa instrumentpanelen”. Du kan inte använda granskning för att granska behörigheter.
 
 Du arbetar med granskning i säkerhets- och efterlevnadscentrumet för Office 365 eller använder PowerShell. Granskningen förlitar sig på funktioner i Exchange Online, som etableras automatiskt som stöd för Power BI.
 
-Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpanel, rapport, datamängd eller aktivitetstyp. Du kan också hämta aktiviteterna till en CSV-fil att analysera dem offline.
+Du kan filtrera granskningsdata efter datumintervall, användare, instrumentpanel, rapport, datauppsättning och aktivitetstyp. Du kan också hämta aktiviteterna i en csv (kommaavgränsad)-fil att analysera dem offline.
 
 ## <a name="requirements"></a>Krav
 
 Du måste uppfylla följande krav för att komma åt granskningsloggar:
 
-* Du måste antingen vara global administratör eller ha tilldelats rollen Spårningsloggar eller Visa enbart spårningsloggar i Exchange Online för att få åtkomst till spårningsloggen. Dessa roller tilldelas som standard till rollgrupper som Efterlevnadshantering och Organisationensledning på sidan **Behörigheter** i administrationscentret för Exchange.
+* Du måste antingen vara global administratör eller tilldelas rollen granskningsloggarna eller View-Only-granskningsloggarna i Exchange Online för åtkomst till granskningsloggen. Som standard rollgrupper hantering av regelefterlevnad och organisationens ledning medföljer dessa roller har tilldelats den **behörigheter** sida i administrationscentret för Exchange.
 
-    Om du vill ge åtkomst till granskningsloggen för icke-administratörskonton måste du lägga till användaren som en medlem i någon av dessa rollgrupper. Du kan också skapa en anpassad rollgrupp i administrationscentret för Exchange, tilldela gruppen någon av rollerna Spårningsloggar eller Visa enbart spårningsloggar, och lägg sedan till icke-administratörskontot till den nya rollgruppen. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
+    Om du vill ge åtkomst till granskningsloggen konton, måste du lägga till användaren som en medlem i någon av dessa rollgrupper. Om du vill göra det ett annat sätt du kan skapa en anpassad roll-grupp i administrationscentret för Exchange, tilldela rollen granskningsloggar eller View-Only granskningsloggar till den här gruppen och sedan lägga till icke-administratörskontot i den nya roll-gruppen. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
     Om du inte får åtkomst till administrationscentret för Exchange från administrationscenter för Microsoft 365 går du till https://outlook.office365.com/ecp och loggar in med dina autentiseringsuppgifter.
 
-* Om du har åtkomst till granskningsloggen men inte är global administratör eller administratör för Power BI-tjänsten, får du inte åtkomst till Power BI-administratörsportalen. I det här fallet måste du använda en direktlänk till [Centrum för säkerhet och efterlevnad för Office 365](https://sip.protection.office.com/#/unifiedauditlog).
+* Om du har åtkomst till granskningsloggen men inte är en global administratör eller Power BI-tjänsten kan du inte åtkomst till Power BI-administratörsportalen. I det här fallet måste du använda en direktlänk till [Centrum för säkerhet och efterlevnad för Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
-## <a name="accessing-your-audit-logs"></a>Öppna dina granskningsloggar
+## <a name="access-your-audit-logs"></a>Få åtkomst till dina granskningsloggar
 
-Om du vill komma åt loggar måste loggning vara aktiverat i Power BI. Mer information finns i [Granskningsloggar](service-admin-portal.md#audit-logs) i dokumentationen för administratörsportalen. Det kan förekomma en fördröjning på upp till 48 timmar mellan det att granskning aktiveras och att granskningsdata kan visas. Om du inte ser data omedelbart kontrollerar du granskningsloggarna senare. Det kan förekomma en liknande fördröjning mellan hämtning av behörighet för att visa granskningsloggar och att komma åt loggarna.
+Om du vill komma åt loggarna måste först se till att aktivera loggning i Power BI. Mer information finns i [Granskningsloggar](service-admin-portal.md#audit-logs) i dokumentationen för administratörsportalen. Det kan vara upp till en 48 timmar fördröjning mellan den tid som du aktiverar granskning och när du kan visa granskningsdata. Om du inte ser data omedelbart kontrollerar du granskningsloggarna senare. Det kan förekomma en liknande fördröjning mellan hämtning av behörighet för att visa granskningsloggar och att komma åt loggarna.
 
 Granskningsloggar för Power BI är tillgängliga direkt via [säkerhets- och efterlevnadscenter för Office 365](https://sip.protection.office.com/#/unifiedauditlog). Det finns också en länk från Power BI-administratörsportalen:
 
-1. Välj **kugghjulsikonen** i det övre högra hörnet i Power BI och välj sedan **Administratörsportalen**.
+1. I Power BI, väljer du den **kugghjulsikonen** i det övre högra hörnet, och markera **administrationsportalen**.
 
-   ![Administratörsportal](media/service-admin-auditing/powerbi-admin.png)
+   ![Skärmbild av gear nedrullningsbara menyn med alternativet Admin portal påpekas.](media/service-admin-auditing/powerbi-admin.png)
 
 1. Välj **Granskningsloggar**.
 
-1. Välj **Gå till administrationscenter för Microsoft 365**.
+1. Välj **Gå till administrationscentret för O365**.
 
-   ![Gå till administrationscenter för Microsoft 365](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Skärmbild av Admin portal med granskningen loggar alternativet och i farten till Microsoft administrationscentret för O365-alternativ som beskrivs.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Sök endast efter Power BI-aktiviteter
 
 Du kan begränsa resultaten till enbart Power BI-aktiviteter genom att utföra följande steg. En lista över aktiviteter finns i [listan med aktiviteter som granskas av Power BI](#activities-audited-by-power-bi) längre fram i den här artikeln.
 
-1. Välj **Aktiviteter** i listrutan under **Sök** på sidan **Sök i granskningslogg**.
+1. På den **Audit loggsökning** sidan under **Search**, Välj i listrutan för **aktiviteter**.
 
 2. Välj **PowerBI-aktiviteter**.
 
-   ![Spårningsloggsökning](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Skärmbild av Audit loggsökning med Power BI-aktiviteter som anropade.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Stäng markeringsrutan genom att klicka någonstans utanför den.
 
-Dina sökningar filtreras nu enbart efter Power BI-aktiviteter.
+Dina sökningar returnerar enbart Power BI-aktiviteter.
 
 ## <a name="search-the-audit-logs-by-date"></a>Sök efter datum i granskningsloggarna
 
-Du kan söka i loggarna efter datumintervall med hjälp av fälten **Startdatum** och **Slutdatum**. De senaste sju dagarna markeras som standard. Datum och tid som visas i UTC-format (Coordinated Universal Time). Det maximala datumintervall som du kan ange är 90 dagar. 
+Du kan söka i loggarna efter datumintervall med hjälp av fälten **Startdatum** och **Slutdatum**. Standardalternativet är de senaste sju dagarna. Skärmen visar datum och tid i Coordinated Universal Time (UTC)-format. Det maximala datumintervall som du kan ange är 90 dagar. 
 
-Ett felmeddelande visas om det valda datumintervallet är längre än 90 dagar. Om du använder det maximala datumintervallet 90 dagar, så välj den aktuella tiden som **Startdatum**. I annat fall får du ett felmeddelande som säger att startdatumet är senare än slutdatumet. Om du har aktiverat granskning under de senaste 90 dagarna, kan datumintervallet inte starta före det datum då granskningen aktiverades.
+Du får ett fel om det valda datumintervallet är längre än 90 dagar. Om du använder det maximala datumintervallet 90 dagar, så välj den aktuella tiden som **Startdatum**. I annat fall får du ett felmeddelande som säger att startdatumet är senare än slutdatumet. Om du har aktiverat granskning under de senaste 90 dagarna, kan datumintervallet inte starta före det datum då granskningen aktiverades.
 
-![Sök efter datum](media/service-admin-auditing/search-audit-log-by-date.png)
+![Skärmbild av Audit loggsökning med alternativ för startdatum och slutdatum påpekas.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Sök i granskningsloggarna efter användare
 
-Du kan söka efter granskningsloggposter för aktiviteter som utförts av specifika användare. Om du vill göra detta, så ange ett eller flera användarnamn i fältet **Användare**. Användarnamnet som ser ut som en e-postadress. Det är det konto som användarna loggar in på Power BI med. Om du lämnar den här rutan tom returneras poster för alla användare (och tjänstkonton) i organisationen.
+Du kan söka efter granskningsloggposter för aktiviteter som utförs av specifika användare. Ange en eller flera användarnamn i den **användare** fält. Användarnamnet som ser ut som en e-postadress. Det är det konto som användarna loggar in på Power BI med. Om du lämnar den här rutan tom returneras poster för alla användare (och tjänstkonton) i organisationen.
 
 ![Sök via användare](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Visa sökresultat
 
-När du väljer **Sök** läses sökresultaten in och strax därpå visas de under **Resultat**. När sökningen är klar visas antalet funna träffar. Högst 1000 händelser visas. Om fler än 1000 händelser uppfyller sökvillkoren visas de 1000 senaste händelserna.
+När du har valt **Search**, läsa in sökresultaten. Efter en liten stund visas under **resultat**. När sökningen är klar visas antalet funna. **Granska loggsökning** visar högst 1000 händelser. Om fler än 1000 händelser uppfyller sökvillkoren, visar appen de senaste 1000 händelserna.
 
 ### <a name="view-the-main-results"></a>Visa de viktigaste resultaten
 
-**Resultatområdet** innehåller följande information om varje händelse som returneras av sökningen. Sortera resultaten genom att välja en kolumnrubrik under **Resultat**.
+Den **resultat** området har följande information för varje händelse som returneras av sökningen. Sortera resultaten genom att välja en kolumnrubrik under **Resultat**.
 
 | **Kolumn** | **Definition** |
 | --- | --- |
 | Datum |Datum och tid (i UTC-format) när händelsen inträffade. |
-| IP-adress |IP-adressen för den enhet som användes när aktiviteten loggades. IP-adressen visas i IPv4- eller IPv6-adressformat. |
+| IP-adress |IP-adressen för enheten som används för aktiviteten loggas. Appen visar IP-adressen i en IPv4- eller IPv6-adressformat. |
 | Användare |Den användare (eller det tjänstkonto) som utförde den åtgärd som utlöste händelsen. |
 | Aktivitet |Den aktivitet som utfördes av användaren. Det här värdet motsvarar de aktiviteter som du har markerat i listrutan **Aktiviteter**. Värdet i den här kolumnen är en Exchange-cmdlet för en händelse från Exchange-administratörens granskningslogg. |
-| Objekt |Det objekt som skapades eller ändrades till följd av motsvarande aktivitet. Det kan t.ex. vara den fil som visades eller ändrades, eller det användarkonto som uppdaterades. Alla aktiviteter har inte något värde i den här kolumnen. |
-| Information |Ytterligare information om en aktivitet. Som redan nämnts har inte alla aktiviteter något värde. |
+| Objekt |Objektet skapas eller ändras på grund av motsvarande aktivitet. Till exempel visade eller ändrade filen eller uppdaterade användarkontot. Alla aktiviteter har inte något värde i den här kolumnen. |
+| Information |Ytterligare information om en aktivitet. Igen, inte alla aktiviteter har ett värde. |
 
 ### <a name="view-the-details-for-an-event"></a>Visa information om en händelse
 
-Du kan visa mer information om en händelse genom att klicka på händelseposten i listan med sökresultat. En sida med **information** visas med detaljerade egenskaper från händelseposten. Vilka egenskaper som visas beror på i vilken Office 365-tjänst som händelsen inträffar. 
+Välj händelseposten om du vill visa mer information om en händelse i listan över sökresultat. En **information** visas med detaljerade egenskaper från händelseposten. Den **information** visar sidan Egenskaper för beroende på Office 365-tjänst där händelsen inträffar.
 
 Om du vill visa denna information väljer du **Mer information**. Alla Power BI-poster har värdet 20 för egenskapen RecordType (typ av post). Information om andra egenskaper finns i [detaljerade egenskaper i granskningsloggen](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 
-   ![Granskningsinformation](media/service-admin-auditing/audit-details.png)
+   ![Skärmbild av dialogrutan audit information med alternativet mer information som beskrivs.](media/service-admin-auditing/audit-details.png)
 
 ## <a name="export-search-results"></a>Exportera sökresultat
 
-Du kan exportera Power BI-granskningsloggen till en csv-fil med dessa steg.
+Följ dessa steg om du vill exportera Power BI-granskningsloggen till en CSV-fil.
 
 1. Välj **Exportera resultat**.
 
 1. Välj **Spara inlästa resultat** eller **Hämta alla resultat**.
 
-    ![Exportera resultat](media/service-admin-auditing/export-auditing-results.png)
+    ![Skärmbild av exporten resulterar alternativet.](media/service-admin-auditing/export-auditing-results.png)
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Använd PowerShell för att söka igenom granskningsloggar
 
-Du kan också använda PowerShell för att få åtkomst till granskningsloggarna utifrån din inloggning. I följande exempel visas hur du ansluter till Exchange Online PowerShell och sedan använder kommandot [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) för att hämta granskningsloggsposter i Power BI. Om du vill köra skriptet måste du tilldelas rätt behörigheter, så som beskrivs i avsnittet [Krav](#requirements).
+Du kan också använda PowerShell för att få åtkomst till granskningsloggarna utifrån din inloggning. I följande exempel visas hur du ansluter till Exchange Online PowerShell och sedan använder kommandot [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) för att hämta granskningsloggsposter i Power BI. Om du vill köra skriptet, en administratör tilldela dig behörighet, enligt beskrivningen i den [krav](#requirements) avsnittet.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -136,7 +136,7 @@ Mer information om hur du ansluter till Exchange Online finns i [Anslut till Exc
 
 ## <a name="activities-audited-by-power-bi"></a>Aktiviteter som granskas av Power BI
 
-Följande aktiviteter granskas av Power BI.
+Följande aktiviteter som granskas av Power BI:
 
 | Eget namn                                     | Åtgärdsnamn                              | Anteckningar                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|

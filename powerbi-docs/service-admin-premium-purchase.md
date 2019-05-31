@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
 ms.openlocfilehash: bc55d290e10832034ed96d7092c5baa4b7cc20d1
-ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65565294"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
@@ -48,7 +48,7 @@ Om du vill köpa Premium-kapacitet följer du dessa steg:
 
 1. Sök efter Power BI Premium-erbjudanden under **Andra alternativ**. Här visas en lista över med P1 till P3, EM3 och P1 (månad för månad).
 
-1. Hovra över ellipsen (**. . .**) och välj sedan **Köp nu**.
+1. Hovra över ellipsen ( **. . .** ) och välj sedan **Köp nu**.
 
     ![Köp nu](media/service-admin-premium-purchase/premium-purchase.png)
 

@@ -1,22 +1,22 @@
 ---
 title: Felsöka panelfel
 description: Vanliga fel som kan uppstå när en panel försöker uppdatera i Power BI
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: bfb6178908a9d6a4bcfe81f8d3d9771ac5b12b9d
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
-ms.translationtype: HT
+ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086642"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66050996"
 ---
 # <a name="troubleshooting-tile-errors"></a>Felsöka panelfel
 Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklaring.
@@ -64,6 +64,17 @@ Fältet har förmodligen tagits bort eller bytt namn. Du kan ta bort det brutna 
 **Det gick inte att hämta data för det här visuella objektet. Försök igen senare.**
 
 Detta är vanligtvis ett övergående problem. Kontakta supporten om du försöker igen senare och fortfarande ser det här meddelandet.
+
+**Paneler fortsätter att visa ofiltrerade data när du har aktiverat enkel inloggning (SSO).**
+
+Detta kan inträffa om den underliggande datauppsättningen har konfigurerats för att använda DirectQuery-läge eller en Live-anslutning till Analysis Services via en lokal datagateway. I det här fallet fortsätter panelerna att visa den ofiltrerade data när du har aktiverat SSO för datakällan förrän nästa paneluppdatering förfaller. Power BI använder enkel inloggning som konfigurerats vid nästa paneluppdatering och panelerna visar data som filtrerats enligt användarnas identiteter. 
+
+Om du vill se filtrerade data direkt, kan du tvinga en paneluppdatering av genom att välja ellipsen (...) i övre högra hörnet på en instrumentpanel och välja **uppdatera instrumentpanel**.
+
+Du kan också ändra uppdateringsfrekvensen panel och ställas till 15 minuter att påskynda paneluppdatering som ägare till en datauppsättning. Välj kugghjulsikonen i det övre högra hörnet av Power BI-tjänsten och sedan **inställningar**. På den **inställningar** väljer den **datauppsättningar** fliken. Expandera **schemalagd cacheminnesuppdatering** och ändra **uppdateringsfrekvens**. Kontrollera att du återställer konfigurationen till den ursprungliga uppdateringsfrekvensen när Power BI utför nästa paneluppdatering.
+
+> [!NOTE]
+> Den **schemalagd cacheminnesuppdatering** avsnittet är endast tillgänglig för datauppsättningar i DirectQuery/LiveConnection läge. Datauppsättningar i importläge kräver inte en separat paneluppdatering eftersom panelerna uppdateras automatiskt under nästa schemalagda uppdatering.
 
 ## <a name="contact-support"></a>Kontakta supporten
 Om du fortfarande har problem, kan du [kontakta supporten](https://support.powerbi.com) för att undersöka vidare.

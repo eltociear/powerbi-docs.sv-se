@@ -11,11 +11,11 @@ ms.date: 10/21/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 15cd5e021969a050937b9d67eb7695f4fcde07c0
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383096"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61188649"
 ---
 # <a name="purchase-and-assign-power-bi-pro-licenses"></a>Köpa och tilldela Power BI Pro-licenser
 
@@ -53,7 +53,7 @@ Du följer de här stegen för att köpa Power BI Pro-licenser:
 
     ![Power BI Pro-prenumeration](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
 
-5. För pekaren över de tre punkterna (**. . .**) för den önskade prenumerationen och välj **Köp nu**.
+5. För pekaren över de tre punkterna ( **. . .** ) för den önskade prenumerationen och välj **Köp nu**.
 
     ![Köp nu](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
 

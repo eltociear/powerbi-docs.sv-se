@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65710526"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375049"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjänstens huvudnamn med Power BI (förhandsversion)
 
@@ -120,7 +120,7 @@ Skiljer sig från traditionell användning av ett huvudkonto, användning av tj�
 
 5. Lägg till tjänstens huvudnamn som **administratör** för den nya arbetsyta du har skapat. Du kan hantera den här uppgiften via [API:erna](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller med Power BI-tjänsten.
 
-    ![Lägg till ett tjänsthuvudnamn i en arbetsyta](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Lägg till ett huvudnamn för tjänsten som en administratör i en arbetsyta](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Välj nu att bädda in ditt innehåll med ett exempelprogram eller i ditt program.
 
@@ -174,10 +174,11 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 * Du kan inte installera eller hantera en lokal datagateway med tjänstens huvudnamn.
 * Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
 * Hantering av [dataflöden](../service-dataflows-overview.md) stöds inte.
-* Tjänstens huvudnamn har inte stöd för administratörs-API:er.
+* Tjänstens huvudnamn stöder för närvarande inte en administratör API: er.
 
 ## <a name="next-steps"></a>Nästa steg
 
 * [Registrera en app](register-app.md)
 * [Power BI Embedded för dina kunder](embed-sample-for-customers.md)
 * [Objekt för program och tjänstens huvudnamn i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+* [Säkerhet på radnivå med hjälp av den lokala datagatewayen med tjänstens huvudnamn (förhandsversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

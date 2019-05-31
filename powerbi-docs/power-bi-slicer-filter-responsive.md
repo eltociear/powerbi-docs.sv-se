@@ -11,11 +11,11 @@ ms.date: 05/04/2018
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: fed4119946cb762fb4d9aee3b5300be225a6e379
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288116"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61419912"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI
 

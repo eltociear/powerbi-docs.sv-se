@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: da6ec79a821e7aa9659843d0461ca6ac0b11706d
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
-ms.translationtype: HT
+ms.openlocfilehash: 7ccbfee788bbada580c02544a4af4b1b25c1a169
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914177"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514228"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.
@@ -28,7 +28,7 @@ Det finns några krav för att använda **Analysera i Excel**:
 * Pivottabeller i Excel stöder inte dra och släpp-aggregering av numeriska fält. Datauppsättningen i Power BI *måste ha fördefinierade mått*.
 * Vissa organisationer kan ha grupprincipregler som förhindrar installation av nödvändiga **Analysera i Excel**-uppdateringar i Excel. Kontrollera med administratören om det inte går att installera uppdateringarna.
 * **Analysera i Excel** kräver att datauppsättningen finns i Power BI Premium eller att användaren har en Power BI Pro-licens. Mer information om skillnaderna i funktionalitet mellan de olika licenstyperna finns i [Power BI-funktioner efter licenstyp](service-features-license-type.md). 
-* Användare kan ansluta till datauppsättningar med hjälp av Analysera i Excel om de har läsbehörighet till den underliggande datauppsättningen.  En användare kan ha detta på flera olika sätt, till exempel genom att vara medlem i arbetsytan som innehåller datauppsättningen, ha en rapport eller instrumentpanel som delats till dem och som använder datauppsättningen, eller ha behörighet till en app som innehåller datauppsättningen.
+* Användare kan ansluta till datauppsättningar genom analysera i Excel om de har läsbehörighet i den underliggande datauppsättningen.  En användare kan ha detta på flera olika sätt, till exempel genom att vara medlem i arbetsytan som innehåller datauppsättningen, ha en rapport eller instrumentpanel som delats till dem och som använder datauppsättningen, eller ha behörighet till en app som innehåller datauppsättningen.
 
 ## <a name="how-does-it-work"></a>Hur fungerar det?
 När du väljer **Analysera i Excel** på ellipsmenyn (...) som är associerad med en datauppsättning eller en rapport i **Power BI**, skapar Power BI en odc-fil och hämtar den från webbläsaren till din dator.
@@ -47,7 +47,7 @@ Välj ellipsmenyn bredvid en rapport eller datauppsättning i Power BI (... bred
 ![](media/service-analyze-in-excel/power-bi-analyze-menu.png)
 
 ### <a name="install-excel-updates"></a>Installera Excel-uppdateringar
-När du använder **Analysera i Excel** för första gången, måste du installera uppdateringar av Excel-biblioteken. Du uppmanas att ladda ned och köra Excel-uppdateringar (detta startar installationen av *SQL_AS_OLEDDB.msi*, Windows installationspaket). Det här paketet installerar **Microsoft Analysis Services OLE DB-provider för Microsoft SQL Server 2016 RC0 (förhandsversion)**.
+När du använder **Analysera i Excel** för första gången, måste du installera uppdateringar av Excel-biblioteken. Du uppmanas att ladda ned och köra Excel-uppdateringar (detta startar installationen av *SQL_AS_OLEDDB.msi*, Windows installationspaket). Det här paketet installerar **Microsoft Analysis Services OLE DB-provider för Microsoft SQL Server 2016 RC0 (förhandsversion)** .
 
 > [!NOTE]
 > Var noga med att markera **Visa inte detta igen** i dialogrutan **Installera Excel-uppdateringar**. Du behöver bara installera uppdateringen en gång.

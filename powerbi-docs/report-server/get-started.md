@@ -2,20 +2,20 @@
 title: Vad är Power BI-rapportserver?
 description: Få en översikt över Power BI-rapportservern för att förstå hur den passar in med SQL Server Reporting Services (SSRS) och resten av Power BI.
 keywords: ''
-author: markingmyname
-ms.author: maghan
-ms.date: 11/20/2018
+author: maggiesMSFT
+ms.author: maggies
+ms.date: 05/22/2019
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: cd3dbc21c094c0db3f8d32d8d976339a1d1061f4
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 37751117853c8bca686585992108c006c6c76b70
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325184"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187477"
 ---
 # <a name="what-is-power-bi-report-server"></a>Vad är Power BI-rapportserver?
 
@@ -24,10 +24,10 @@ Power BI-rapportservern är en lokal rapportserver med en webbportal som du kan 
 ![Webbportalen för Power BI-rapportserver](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Jämföra Power BI-rapportserver 
-Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-tjänsten online, men på olika sätt. Precis som Power BI-tjänsten är Power BI Report Server värd för Power BI-rapporter (.PBIX) och Excel-filer. Exempel Reporting Services är Power BI Report Server lokalt och värdar sidbrytning rapporter (.RDL). Power BI Report Server är en supermängd av Reporting Services: allt som du kan göra i Reporting Services kan du göra med Power BI-rapportservern och mer, tillsammans med stöd för Power BI-rapporter. Se [Jämföra Power BI-rapportservern och Power BI-tjänsten](compare-report-server-service.md) för mer information.
+Power BI-rapportserver är lik både SQL Server Reporting Services och Power BI-tjänsten online, men på olika sätt. Som Power BI-tjänsten Power BI Report Server är värd för Power BI-rapporter (. PBIX) Excel-filer och sidnumrerade rapporter (. RDL). Precis som Reporting Services är Power BI-rapportservern lokalt. Funktioner för Power BI-rapportservern är en supermängd Reporting Services: allt som du kan göra i Reporting Services, kan du göra med Power BI Report Server, tillsammans med stöd för Power BI-rapporter. Se [Jämföra Power BI-rapportservern och Power BI-tjänsten](compare-report-server-service.md) för mer information.
 
 ## <a name="licensing-power-bi-report-server"></a>Licensiera Power BI-rapportserver
-Power BI-rapportserver finns tillgänglig via två olika licenser: [Power BI Premium](../service-premium.md) och [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
+Power BI-rapportserver finns tillgänglig via två olika licenser: [Power BI Premium](../service-premium-what-is.md) och [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med Power BI Premium-licensen kan du skapa en hybrid distributionsblandning för moln och lokalt.  
 
 > [!NOTE]
 > När det gäller Power BI Premium inkluderas Microsoft Power BI-rapportserver enbart med P SKU:er. Det inkluderas inte med EM SKU:er.
@@ -48,14 +48,14 @@ Du skapar Power BI-rapporter (.PBIX) med versionen av Power BI Desktop som är o
 
 En Power BI-rapport visar en datamodell från flera perspektiv med visualiseringar som representerar olika fynd och insikter från datamodellen.  En rapport kan ha en enda visualisering eller sidor som är fulla av visualiseringar. Beroende på din roll kan du läsa och utforska rapporter eller skapa dem för andra.
 
-Installera [Power BI Desktop som har optimerats för Power BI-rapportservern](quickstart-create-powerbi-report.md).
+Läs mer om [installerar Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Sidnumrerade rapporter
 Sidbrytningsrapporter (.RDL) är rapporter i dokumentformat med visualiseringar där tabeller expanderar vågrätt och lodrätt för att visa alla sina data, och fortsätter från sida till sida enligt behov. Det är bra för att skapa dokument med fast layout och bra utseende som är optimerade för utskrift, till exempel PDF- och Word-filer. 
 
 ![Sidnumrerade rapporter i Power BI-rapportservern](media/get-started/paginated-reports.png)
 
-Du kan skapa rapporter med modernt utseende med [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) eller rapportdesignern i [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt). 
+Du kan skapa sidnumrerade rapporter med hjälp av [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) eller Rapportdesignern i [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## <a name="reporting-services-mobile-reports"></a>Reporting Services-mobila rapporter
 Mobila rapporter ansluter till lokala data och har en dynamisk layout som anpassar sig efter olika enheter och hur du håller dem. Du skapar dem med SQL Server Mobile Report Publisher.

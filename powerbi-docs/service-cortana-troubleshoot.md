@@ -8,26 +8,23 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375218"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Felsöka Cortana för Power BI
-Den här artikeln ingår i en serie. Om du inte redan har gjort det rekommenderar vi att du läser följande tre artiklar.
+Den här artikeln ingår i en serie. 
 
-**Artikel 1**: [Förstå hur Cortana och Power BI samverkar för att söka efter Power BI-instrumentpaneler och rapporter](service-cortana-intro.md)
+> [!IMPORTANT]
+> Cortana-integrering är inaktuell i Power BI. Startar den 11 juni, fungerar Cortana inte längre för alla instrumentpaneler och rapporter.
 
-**Artikel 2**: [Söka i rapporter: Aktivera Cortana – Power BI – Windows-integrering](service-cortana-enable.md)
-
-**Artikel 3**: [Söka i rapporter: Skapa särskilda *Cortana-svarskort*](service-cortana-answer-cards.md)
-
-Om du fortfarande har problem med att få Cortana att integrera med Power BI, har du kommit till rätt plats. Följ stegen nedan för att diagnostisera och åtgärda problemet.
+Om du har problem med att få Cortana att integrera med Power BI, har du kommit till rätt plats. Följ stegen nedan för att diagnostisera och åtgärda problemet.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Varför hittar inte Cortana några svar från mina Power BI-rapporter eller instrumentpaneler?
 1. Har du ett Power BI-konto?  Om du inte har det kan du [registrera dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/get-started/).

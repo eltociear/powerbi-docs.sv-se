@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8da4922245a1d02484988dd26da68afceaa1fc2c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 9bbe302c7187419abae556bb34f991efa1fdae00
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275649"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454370"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Konfigurera och använda datumtabeller i Power BI Desktop
 
-**Power BI Desktop** arbetar i bakgrunden och identifierar automatiskt tabeller som **datumtabeller**, och skapar sedan för din räkning datumhierarkier och andra aktiverande metadata för din modell. Du kan sedan använda dessa inbyggda hierarkier när du skapar rapportenfunktioner som t.ex. visuella objekt, tabeller, snabbåtgärder, utsnitt osv. Power BI Desktop gör detta genom att för din räkning skapa dolda tabeller, vilka du sedan kan använda för rapporter och DAX-uttryck.
+**Power BI Desktop** arbetar i bakgrunden och identifierar automatiskt kolumner som representerar datum och skapar sedan datumhierarkier och andra aktiverande metadata för din modell för din räkning. Du kan sedan använda dessa inbyggda hierarkier när du skapar rapportenfunktioner som t.ex. visuella objekt, tabeller, snabbåtgärder, utsnitt osv. Power BI Desktop gör detta genom att för din räkning skapa dolda tabeller, vilka du sedan kan använda för rapporter och DAX-uttryck.
 
 Många dataanalytiker föredrar att skapa egna datumtabeller, vilket är helt OK. I **Power BI Desktop** kan du ange vilken tabell som du vill att din modell ska använda som sin **datumtabell**, och därefter skapa datumrelaterade visuella objekt, tabeller, snabbmått osv med hjälp av tabellens datuminformation. När du anger din egen datumtabell kan du kontrollera de datumhierarkier som skapas i din modell och använda dem i **snabbåtgärder** och andra åtgärder som använder din modells datumtabell. 
 
@@ -52,7 +52,7 @@ När du har angett en datumtabell kan du välja vilken kolumn i tabellen som ska
 
 ![](media/desktop-date-tables/date-tables_03.png)
 
-Det är viktigt att du tänker på att när du anger din egen datumtabell så skapar inte **Power BI Desktop** automatiskt de hierarkier som det i normala fall skapar för dig i din modell. Om du senare avmarkerar datumtabellen (och inte längre har någon manuellt konfigurerad datumtabell) så återskapar Power BI Desktop för din räkning de automatiskt skapade inbyggda datumtabellerna för tabellens datumkolumner.
+Det är viktigt att du tänker på att när du anger din egen datumtabell så skapar inte **Power BI Desktop** automatiskt de hierarkier som det i normala fall skapar för dig i din modell. Om du senare avmarkerar datumtabellen (och inte längre har en manuellt konfigurerad datumtabell), återskapas Power BI Desktop de automatiskt skapade inbyggda datumtabellerna för dig, för datumkolumnerna i tabellen.
 
 Något som också är viktigt att notera är att när du har markerat en tabell som en datumtabell, så tas den inbyggda (automatiskt skapade) tabell som skapats av Power BI Desktop bort, och alla eventuella visuella objekt eller DAX-uttryck som du tidigare har skapat utifrån dessa inbyggda tabeller kommer inte längre att fungera korrekt. 
 

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 05/09/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 734af04ae515b1cae19b5afc99166619a85ab828
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f3d67d0b57f2f04a31d99fb36476871c164aad4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290477"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65533578"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Använda sammansatta modeller i Power BI Desktop
 
-Tidigare i Power BI Desktop när du använde en DirectQuery i en rapport, tilläts inga andra dataanslutningar &mdash;oavsett om DirectQuery eller importera&mdash; tilläts för rapporten eller inte. Med sammansatta modeller tas den begränsningen bort. En rapport kan sömlöst inkludera dataanslutningar från mer än en DirectQuery, eller Importera data-anslutning, i valfri kombination.
+Tidigare i Power BI Desktop när du har använt en DirectQuery i en rapport, inga andra dataanslutningar – om DirectQuery eller importera – tilläts för rapporten. Med sammansatta modeller tas den begränsningen bort. En rapport kan sömlöst inkludera dataanslutningar från mer än en DirectQuery, eller Importera data-anslutning, i valfri kombination.
 
 ![Sammansatta modeller i Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
 
@@ -39,7 +39,7 @@ Med sammansatta modeller kan du ansluta till en mängd olika datakällor när du
 * Genom att importera data till Power BI, vilket är det vanligaste sättet att hämta data.
 * Genom att ansluta direkt till data i dess ursprungliga källdatabas med hjälp av DirectQuery. Mer information om DirectQuery finns i [Använda DirectQuery i Power BI](desktop-directquery-about.md).
 
-När du använder DirectQuery gör *sammansatta modeller* det möjligt att skapa en Power BI-modell (till exempel en enskild Power BI Desktop-fil (*.pbix*)) som gör något av följande eller både och:
+När du använder DirectQuery, *sammansatta modeller* gör det möjligt att skapa en Power BI-modell (till exempel en enda *.pbix* Power BI Desktop-fil) som gör ett eller båda av följande:
 
 * Kombinerar data från en eller flera DirectQuery-källor.
 * Kombinerar data från DirectQuery-källor och importerar data.
@@ -52,8 +52,6 @@ Med sammansatta modeller kan du till exempel skapa en modell som kombinerar föl
 
 En modell som kombinerar data från mer än en DirectQuery-källa eller som kombinerar DirectQuery med importerade data kallas en *sammansatt modell*.
 
-> [!NOTE]
-> Från och med oktober 2018-versionen av Power BI Desktop *kan* du publicera sammansatta modeller i Power BI-tjänsten. För schemalagd uppdatering och uppdateringen av instrumentpanelen fungerar sammansatta modeller i Power BI-tjänsten på samma sätt som importmodeller. 
 
 Du kan skapa relationer mellan tabeller precis som tidigare, även när dessa tabeller kommer från olika källor, med följande begränsning: alla relationer mellan källor måste definieras med en kardinalitet på *många-till-många*, oavsett deras faktiska kardinalitet. Beteendet för dessa relationer är sedan samma som vanligt för *många-till-många*-relationer, enligt beskrivningen i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md). 
 
@@ -102,7 +100,7 @@ Nu kan vi skapa visuella objekt med hjälp av något av fälten i **fältlistan*
 
 ![Fönstret Fält](media/desktop-composite-models/composite-models_11.png)
 
-I följande exempel visas ett vanligt fall med en *dimensionstabell*, &mdash;till exempel *Product* (produkt) eller *Customer* (kund) &mdash;som utökas med extra data som importeras från någon annanstans. Det går också att låta tabeller använda DirectQuery för att ansluta till olika källor. För att fortsätta med vårt exempel tänker du dig att *SalesTargets* (försäljningsmål) per *Country* (land) och *Period* lagras i en separat avdelningsdatabas. Du kan som vanligt använda *GetData* för att ansluta till dessa data på vanligt sätt som på bilden: 
+I följande exempel visas en vanliga fall av en *dimension* tabellen – som *produkten* eller *kunden* -som har utökats med vissa extra data som importerats från en annan plats. Det går också att låta tabeller använda DirectQuery för att ansluta till olika källor. För att fortsätta med vårt exempel tänker du dig att *SalesTargets* (försäljningsmål) per *Country* (land) och *Period* lagras i en separat avdelningsdatabas. Du kan som vanligt använda *GetData* för att ansluta till dessa data på vanligt sätt som på bilden: 
 
 ![Navigatorfönstret](media/desktop-composite-models/composite-models_12.png)
 
@@ -124,7 +122,7 @@ Lagringsläget kan också visas i knappbeskrivningen för varje tabell.
 
 ![Knappbeskrivning som visar lagringsläget](media/desktop-composite-models/composite-models_16.png)
 
-För alla Power BI Desktop-filer (*.pbix*) som innehåller tabeller från DirectQuery och vissa importtabeller, visar statusfältet ett lagringsläge som kallas **Kombinerat**. Du kan klicka på den termen i statusfältet och enkelt växla alla tabeller till import.
+För alla Power BI Desktop-filer ( *.pbix*) som innehåller tabeller från DirectQuery och vissa importtabeller, visar statusfältet ett lagringsläge som kallas **Kombinerat**. Du kan klicka på den termen i statusfältet och enkelt växla alla tabeller till import.
 
 Mer information om lagringsläget finns i [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md).  
 
@@ -154,7 +152,7 @@ Av liknande skäl måste du vara försiktig när du öppnar en Power BI Desktop-
 
 När du använder DirectQuery ska du alltid tänka på prestanda, främst för att se till att källan på serversidan har tillräckligt med resurser för att ge användarna en bra upplevelse. En bra upplevelse innebär att de visuella objekten uppdateras inom högst fem sekunder. Du bör också följa prestandaråden i artikeln [Använda DirectQuery i Power BI](desktop-directquery-about.md). 
 
-Användning av sammansatta modeller innebär ytterligare prestandaöverväganden. Ett enda visuellt objekt kan göra att frågor skickas till flera källor, vilket ofta innebär att resultat skickas vidare från en fråga till en annan källa. Den här situationen kan resultera i följande typer av körning:
+Användning av sammansatta modeller innebär ytterligare prestandaöverväganden. Ett enda visuellt objekt kan resultera i att skicka frågor till flera källor, som ofta skickar resultaten från en fråga över till en andra datakälla. Den här situationen kan resultera i följande typer av körning:
 
 * **En SQL-fråga som innehåller ett stort antal literalvärden**: Ett visuellt objekt som till exempel begär totalt *Sales Amount* (försäljningsbelopp) för en uppsättning valda *Product Managers* (produktansvariga) skulle först behöva ta reda på vilka *Products* (produkter) som hanterades av dessa produktansvariga. Den här sekvensen måste inträffa innan det visuella objektet skickar en SQL-fråga som innehåller alla produkt-ID:n i en *WHERE*-sats.
 
@@ -162,7 +160,7 @@ Användning av sammansatta modeller innebär ytterligare prestandaöverväganden
 
 * **Flera SQL-frågor, en per gruppera efter värde**: När sammanställningen använder **DistinctCount** och är grupperad efter en kolumn från en annan källa, och om den externa källan inte stöder effektiv överföring av många literalvärden som definierar grupperingen, så behöver du skicka en SQL-fråga per grupp efter värde. 
 
-   Ett visuellt objekt som till exempel begär ett distinkt antal *CustomerAccountNumber* (från SQL Server-tabellen) efter *Product Manager* (produktansvarig) (som importerats från ett kalkylblad) behöver skicka information från tabellen *Product Managers* (produktansvariga) i frågan som skickas till SQL Server. Den här åtgärden är inte lämplig över andra källor (till exempel Redshift). I stället blir det en SQL-fråga som skickas per *Sales Manager*&mdash; (försäljningsansvarig) upp till någon lämplig gräns, varefter frågan misslyckas. 
+   Ett visuellt objekt som till exempel begär ett distinkt antal *CustomerAccountNumber* (från SQL Server-tabellen) efter *Product Manager* (produktansvarig) (som importerats från ett kalkylblad) behöver skicka information från tabellen *Product Managers* (produktansvariga) i frågan som skickas till SQL Server. Den här åtgärden är inte lämplig över andra källor (till exempel Redshift). Istället, skulle det finnas en SQL-fråga som skickats per *säljchef* – upp till några praktisk gräns, vid vilken tidpunkt frågan skulle misslyckas. 
 
 Vart och ett av dessa fall har sina egna prestandaimplikationer, och de exakta detaljerna varierar för varje datakälla. Även om kardinaliteten för de kolumner som används i relationen mellan de två källorna fortfarande är låg (några tusen) så bör inte prestanda påverkas. När kardinaliteten växer bör du vara mer uppmärksam på hur prestanda påverkas. Se den här vägledningen som en bra tumregel. 
 
@@ -170,7 +168,9 @@ Dessutom kan användning av *många-till-många*-relationer innebära att separa
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
-Den här versionen av sammansatta modeller har några begränsningar.
+Den här versionen av sammansatta modeller visar några begränsningar:
+
+För närvarande [inkrementell uppdatering](service-premium-incremental-refresh.md) har stöd för sammansatt modeller som ansluter till SQL, Oracle och Teradata-datakällor endast.
 
 Följande (flerdimensionella) Live-anslutningskällor kan inte användas med sammansatta modeller:
 
@@ -187,8 +187,8 @@ De befintliga begränsningarna för DirectQuery gäller fortfarande när du anv�
 ## <a name="next-steps"></a>Nästa steg
 
 Mer information om sammansatta modeller och DirectQuery finns i följande artiklar:
-* [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md)
-* [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md)
+* [Många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Lagringsläge i Power BI Desktop](desktop-storage-mode.md)
 * [Använda DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery i Power BI](desktop-directquery-data-sources.md)
 

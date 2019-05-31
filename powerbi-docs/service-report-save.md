@@ -11,11 +11,11 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: a4bc58a5be385e22c68aa29a8a366231c8434bba
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283976"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61407319"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Spara en rapport i Power BI-tjänsten och Power BI Desktop
 När du gör ändringar i en rapport i Power BI kan du spara den, spara med ett nytt namn eller stänga den utan att spara ändringarna. Anta att du öppnar rapporten, skapar en visualisering och fäster den på din instrumentpanel. Om du stänger den nu utan att spara dina ändringar förblir panelen på din instrumentpanel men visualiseringen sparas inte i rapporten. När du klickar på den panelen på instrumentpanelen öppnas rapporten men visualiseringen har försvunnit.

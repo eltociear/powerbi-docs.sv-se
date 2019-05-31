@@ -11,11 +11,11 @@ ms.date: 01/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 08a2de32b092ba24b66ddd9f173be1eaea8819ab
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429876"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61394540"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Använda banddiagram i Power BI
 Du kan använda banddiagram för att visualisera data och snabbt avgöra vilken datakategori som har högst rangordning (störst värde). Banddiagram är effektiva för att visa en rangordningsförändring med den högsta rangordningen (värdet) längst upp för varje tidsperiod. 

@@ -1,21 +1,21 @@
 ---
 title: Inbäddade analys för att bädda in Power BI-innehåll i ett program för dina kunder
 description: Lär dig att integrera eller bädda in en rapport, instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt dina kunder. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.topic: tutorial
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/05/2019
-ms.openlocfilehash: 5bb4a739b6a333ecaf0ddc3ee2596fc210033470
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174969"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710958"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -192,23 +192,19 @@ Hämta **ApplicationSecret** genom att utföra följande steg:
 
 2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och sedan **Appregistreringar**.
 
-    ![Sök efter appregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
 3. Välj det program som behöver använda **ApplicationSecret**.
 
-    ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Välj en app](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Välj **inställningar**.
+4. Välj **certifikat och hemligheter** under **hantera**.
 
-    ![Välj Inställningar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Välj **Nycklar**.
-
-    ![Välj nycklar](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Välj **den nya klienten hemligheter**.
 
 6. Ange ett namn i rutan **Beskrivning** och välj en varaktighet. Välj sedan **Spara** för att hämta **värdet** för ditt program. När du stänger fönstret **Nycklar** efter att ha sparat nyckelvärdet visas värdefältet bara som dolt. I det här läget kan du inte att hämta nyckelvärdet. Om du tappar bort nyckelvärdet måste du skapa ett nytt på Microsoft Azure-portalen.
 
-    ![Nyckelvärde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Nyckelvärde](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
 
 ### <a name="tenant"></a>Klientorganisation
 
@@ -369,7 +365,7 @@ Använd tabellen nedan för att avgöra vilken Power BI Embedded-kapacitet som b
 | A5 |16 v-kärnor |8 kärnor, 50 GB RAM-minne |8 kärnor |60 per sekund |
 | A6 |32 v-kärnor |16 kärnor, 100 GB RAM-minne |16 kärnor |120 per sekund |
 
-**_Med A-SKU: er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens._**
+**_Med A-SKU: er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens._ **
 
 Inbäddningstoken med PRO-licenser är avsedda för utvecklartestning, så antalet inbäddningstoken ett Power BI-huvudkonto eller tjänstens huvudnamn kan generera är begränsat. En dedikerad kapacitet krävs för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera med en dedikerad kapacitet. Gå till [Tillgängliga funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) för att kontrollera användningsvärdet som anger aktuell inbäddad användning i procent. Användningsmängden baseras per huvudkonto.
 

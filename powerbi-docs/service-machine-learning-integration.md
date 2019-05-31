@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9a7afafaa14ed890e10e77507aafb637755cd87f
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
-ms.translationtype: HT
+ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57966434"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61232502"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azure Machine Learning-integrering i Power BI (förhandsversion)
 
@@ -51,7 +51,7 @@ Stegen i den här artikeln beskriver hur du ger en Power BI-användaråtkomst ti
 
     ![Välj din prenumeration](media/service-machine-learning-integration/machine-learning-integration_02.png)
 
-4. Välj **Åtkomstkontroll (IAM)**, och välj sedan knappen **Lägg till**.
+4. Välj **Åtkomstkontroll (IAM)** , och välj sedan knappen **Lägg till**.
 
     ![Åtkomstkontroll IAM](media/service-machine-learning-integration/machine-learning-integration_03.png)
 
@@ -106,9 +106,9 @@ Den här artikeln visade en översikt över integrering av Machine Learning i Po
 
 Mer information om dataflöden finns i de här artiklarna:
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Använda beräknade entiteter i Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
-* [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
 * [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
 
 

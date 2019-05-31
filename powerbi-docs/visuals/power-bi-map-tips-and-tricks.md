@@ -12,11 +12,11 @@ ms.date: 02/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014471"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61411909"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tips för Power BI-kartvisualiseringar
 Power BI integrerar med Bing Maps för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Tillsammans använder de algoritmer för att identifiera rätt plats, men är det mest en gissning. Om Power BI inte kan skapa kartvisualiseringen på egen hand, använder den sig av Bing Maps. 
@@ -49,7 +49,7 @@ Om du har åtkomst till datamängden som används för att skapa kartan finns n�
 
 Du kan kontrollera att fält är korrekt geokodade i Power BI Desktop genom att ställa in *Datakategori* i datafälten. Välj önskad tabell, gå till menyfliksområdet **Avancerat** och ange sedan **Datakategorin** till **adress**, **ort**, **kontinent**, **land/region**, **land**, **postnummer**, **delstat** eller **provins**. Dessa datakategorier hjälper Bing att korrekt koda datumet. Läs mer i [kategorisering av data i Power BI Desktop](../desktop-data-categorization.md). Om du ansluter i realtid till SQL Server Analysis Services behöver du ange datakategorisering utanför Power BI med hjälp av [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-**2. Använda mer än en platskolumn.**    
+**2. Använda mer än en platskolumn.**     
  Ibland räcker det inte att ställa in datakategorier för kartor för att Bing ska kunna gissa din avsikt. Vissa benämningar är tvetydiga eftersom platsen som finns i flera länder eller regioner. ***Southampton*** finns till exempel i England, Pennsylvania och New York.
 
 Power BI använder Bings [Ostrukturerade URL-malltjänst](https://msdn.microsoft.com/library/ff701714.aspx) för att hämta latitud- och longitudkoordinater baserat på en uppsättning adressvärden för valfritt land. Om dina data inte innehåller tillräckligt med platsdata kan du lägga till dessa kolumner och kategorisera dem korrekt.

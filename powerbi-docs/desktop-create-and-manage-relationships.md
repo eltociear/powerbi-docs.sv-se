@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d4f1936f02edf4ece60b4761d4e541801384a5d2
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249354"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61312714"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
 När du importerar flera tabeller är det möjligt att du kommer att utföra analyser med data från alla tabellerna. Det måste finnas relationer mellan dessa tabeller för att korrekt beräkna resultat och för att rätt information ska visas i dina rapporter. Med Power BI Desktop blir det enkelt att skapa dessa relationer. Det är faktiskt så att du inte behöver göra något alls i de flesta fall, funktionen Identifiera automatiskt gör det åt dig. I vissa fall kan du dock behöva skapa relationerna själv, eller behöva göra vissa ändringar i en relation. Oavsett vilket är det viktigt att förstå relationer i Power BI Desktop, samt hur du skapar och redigerar dem.
 
 ## <a name="autodetect-during-load"></a>Identifiera automatiskt under inläsning
-Om du skickar frågor till två eller flera tabeller samtidigt, försöker Power BI Desktop hitta och skapa relationer åt dig när datan har lästs in. Kardinalitet, korsfilterriktning och aktiva egenskaper anges automatiskt. Power BI Desktop kontrollerar kolumnnamnen i tabellerna för att avgöra om det finns några möjliga relationer. Om det finns det skapas dessa relationer automatiskt. Om Power BI Desktop inte säkert kan fastställa att det finns en matchning, kommer inte relationen att skapas automatiskt. Du kan fortfarande använda dialogrutan Hantera relationer för att skapa eller redigera relationer.
+Om du frågar två eller flera tabeller samtidigt, när data har lästs in försöker Power BI Desktop hitta och skapa relationer åt dig. Kardinalitet, korsfilterriktning och aktiva egenskaper anges automatiskt. Power BI Desktop kontrollerar kolumnnamnen i tabellerna för att avgöra om det finns några möjliga relationer. Om det finns det skapas dessa relationer automatiskt. Om Power BI Desktop inte kan fastställa det finns en matchning med hög tillförlitlighet, den skapar inte automatiskt relationen. Du kan fortfarande använda dialogrutan Hantera relationer för att skapa eller redigera relationer.
 
 ## <a name="create-a-relationship-by-using-autodetect"></a>Skapa en relation med hjälp av Identifiera automatiskt
 På fliken **Start** klickar du på **Hantera relationer** \> **Identifiera automatiskt**.
@@ -30,21 +30,21 @@ På fliken **Start** klickar du på **Hantera relationer** \> **Identifiera auto
 
 ## <a name="create-a-relationship-manually"></a>Skapa en relation manuellt
 1. På fliken **Start** klickar du på **Hantera relationer** \> **Ny**.
-2. I dialogrutan **Skapa relation** väljer du en tabell i den första tabellens listruta. Markera sedan den kolumn som du vill använda i relationen.
-3. I den andra tabellens listruta väljer du den andra tabell som du vill använda i relationen. Markera sedan den andra kolumn som du vill använda och klicka på **OK**.
+2. I den **skapa relation** dialogrutan Välj en tabell i den första tabell nedrullningsbara listan, och markera sedan den kolumn som du vill använda i relationen.
+3. I den andra tabell nedrullningsbara listan, Välj den andra tabellen som du vill i relationen och välj sedan den kolumn som du vill använda och klicka sedan på **OK**.
 
 ![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
-Som standard konfigurerar Power BI Desktop kardinaliteten (riktningen), korsfilterriktningen och aktiva egenskaper för din nya relation automatiskt. Du kan dock ändra dem vid behov. Mer information finns i avsnittet Förstå ytterligare alternativ nedan.
+Power BI Desktop konfigurerar automatiskt som standard Kardinaliteten (riktningen), filterriktningen och aktiva egenskaper för din nya relation; Du kan dock ändra inställningarna om det behövs. Mer information finns i avsnittet Förstå ytterligare alternativ nedan.
 
-Observera att ett felmeddelande visas som anger att *en av kolumnerna måste ha unika värden* om ingen av tabellerna som valts för relationen har unika värden. Minst en tabell i en relation *måste* har en distinkt, unik lista med nyckelvärden, vilket är ett vanligt krav för relationsdatabaser. 
+Du ser ett fel som anger *en av kolumnerna måste ha unika värden* om ingen av de tabeller som valts för relationen har unika värden. Minst en tabell i en relation *måste* har en distinkt, unik lista med nyckelvärden, vilket är ett vanligt krav för relationsdatabaser. 
 
 Om felet visas kan du åtgärda det på ett par olika sätt:
 
 * Skapa en kolumn med unika värden med hjälp av ”Ta bort dubblettraderna från tabellen”. Nackdelen med den här metoden är att du förlorar information när dubblettrader tas bort, och en nyckel (rad) dupliceras ofta av en särskild anledning.
 * Lägg till en mellanliggande tabell som består av listan med distinkta nyckelvärden i modellen, som sedan kopplas till de båda ursprungliga kolumnerna i relationen.
 
-Mer information finns i [blogginlägget](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/) som beskriver detta i detalj.
+Mer information finns i den [blogginlägget](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
 
 
 ## <a name="edit-a-relationship"></a>Redigera en relation
@@ -52,38 +52,38 @@ Mer information finns i [blogginlägget](https://blogs.technet.microsoft.com/can
 2. I dialogrutan **Hantera relationer** väljer du relationen och klickar sedan på **Redigera**.
 
 ## <a name="configure-additional-options"></a>Konfigurera ytterligare alternativ
-Du kan konfigurera ytterligare alternativ när du skapar eller redigerar en relation.  Som standard konfigureras ytterligare alternativ automatiskt baserat på en kvalificerad gissning. Detta kan vara olika för varje relation baserat på data i kolumnerna.
+Du kan konfigurera ytterligare alternativ när du skapar eller redigerar en relation. Som standard konfigureras ytterligare alternativ automatiskt baserat på en kvalificerad gissning, vilket kan vara olika för varje relation baserat på data i kolumnerna.
 
 ## <a name="cardinality"></a>Kardinalitet
-**Många-till-en (\*: 1)** – Det här är den vanligaste standardtypen. Det innebär att en kolumn i en tabell kan ha fler än en instans av ett värde och den andra relaterade tabellen (kallas ofta uppslagstabell) har endast en instans av ett värde.
+**Många-till-en (\*: 1)** – de flesta vanliga, standardtyp, vilket innebär att kolumnen i en tabell kan ha fler än en instans av ett värde och den andra relaterade tabellen, ofta kallade uppslagstabellen har endast en instans av ett värde.
 
-**En-till-en (1:1)** – Detta innebär att kolumnen i en tabell endast har en instans av ett visst värde, och den andra relaterade tabellen endast har en instans av ett visst värde.
+**En till en (1:1)** - kolumn i en tabell har endast en instans av ett visst värde, och den andra relaterade tabellen endast har en instans av ett visst värde.
 
-**Många-till-många-relationer**: Med sammansatta modeller så kan du etablera många-till-många-relationer mellan tabeller. Det här tillvägagångssättet tar bort krav på unika värden i tabeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Mer information finns i [Relationer med många-många-kardinalitet](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
+**Många-till-många-relationer**: Du kan etablera många-till-många-relationer mellan tabeller, vilket tar bort krav för unika värden i tabeller med sammansatta modeller. Det tar också bort behovet av tidigare lösningar. Du behöver till exempel inte lägga till nya tabeller bara för att skapa relationer. Mer information finns i [Relationer med många-många-kardinalitet](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 Se avsnittet Förstå ytterligare alternativ nedan för mer information om när du ska ändra kardinalitet.
 
 ## <a name="cross-filter-direction"></a>Korsfilterriktning
-**Båda** – Det här är den vanligaste standardriktningen. Detta innebär för filtreringsändamål att båda tabellerna behandlas som om de är en enda tabell.  Detta fungerar bra med en tabell som har ett antal uppslagstabeller som omger den.  Ett exempel är en försäljningstabell med en uppslagstabell för avdelningar.  Det här kallas ofta en star-schemakonfiguration (en central tabell med flera uppslagstabeller.)  Men om du har två eller flera tabeller med uppslagstabeller (där några är gemensamma) kanske du inte vill använda inställningen Båda.  För att fortsätta med det tidigare exemplet har du i det här fallet också en budgetförsäljningstabell med målbudgeten för varje avdelning.  Och avdelningstabellen är kopplad till både försäljnings- och budgettabellen.  Undvik att inställningen Båda för den här typen av konfiguration.
+**Båda** – de vanligaste standardriktningen, vilket innebär att för att filtrera teständamål, är båda tabellerna behandlas som om de är en enskild tabell. **Båda** fungerar bra med en enda tabell som har ett antal uppslagstabeller som omger den. Ett exempel är en försäljningstabell med en uppslagstabell för avdelningar. Det här kallas ofta en star-schemakonfiguration (en central tabell med flera uppslagstabeller.) Men om du har två eller flera tabeller med uppslagstabeller (där några är gemensamma) kanske du inte vill använda inställningen Båda. För att fortsätta med det tidigare exemplet har du i det här fallet också en budgetförsäljningstabell med målbudgeten för varje avdelning. Och avdelningstabellen är kopplad till både försäljnings- och budgettabellen. Undvik att inställningen Båda för den här typen av konfiguration.
 
-**Enskild** – Detta innebär att filtrerade val i anslutna tabeller fungerar i den tabell där värdena aggregeras. Om du importerar en Power Pivot i Excel 2013 eller tidigare datamodell har alla relationer en enda riktning. 
+**Enkel** -filtreringsalternativen i anslutna tabeller fungerar i tabellen där värdena aggregeras. Om du importerar en Power Pivot i Excel 2013 eller tidigare datamodell har alla relationer en enda riktning. 
 
 Se avsnittet Förstå ytterligare alternativ nedan för mer information om när du ska ändra korsfilterriktningen.
 
 ## <a name="make-this-relationship-active"></a>Gör den här relationen aktiv
-Detta innebär att relationen fungerar som en aktiv standardrelation när alternativet är markerat.  I de fall där det finns fler än en relation mellan två tabeller, ger den aktiva relationen ett sätt för Power BI Desktop att automatiskt skapa visualiseringar som innehåller båda tabellerna.
+Detta innebär att relationen fungerar som en aktiv standardrelation när alternativet är markerat. I de fall där det finns fler än en relation mellan två tabeller, ger den aktiva relationen ett sätt för Power BI Desktop att automatiskt skapa visualiseringar som innehåller båda tabellerna.
 
 Se avsnittet Förstå ytterligare alternativ nedan för mer information om när du ska göra en viss relation aktiv.
 
 ## <a name="understanding-relationships"></a>Förstå relationer
-När du har kopplat ihop två tabeller med en relation kan du arbeta med data i båda tabellerna som om de vore en enskild tabell. Detta innebär att du inte behöver bekymra dig om relationsinformation eller förenkla dessa tabeller till en enda tabell innan du importerar dem.  I många situationer kan Power BI Desktop automatiskt skapa relationer åt dig, så du kanske inte ens behöver skapa dessa relationer själv. Men om Power BI Desktop inte säkert kan avgöra om det ska finnas en relation mellan två tabeller, skapar den inte någon relation automatiskt. I så fall måste du skapa relationen.   
+När du har kopplat ihop två tabeller med en relation kan du arbeta med data i båda tabellerna som om de vore en enskild tabell. Detta innebär att du inte behöver bekymra dig om relationsinformation eller förenkla dessa tabeller till en enda tabell innan du importerar dem. I många situationer kan Power BI Desktop automatiskt skapa relationer åt dig, så du kanske inte ens behöver skapa dessa relationer själv. Men om Power BI Desktop inte kan fastställa med en hög grad av säkerhet bör finnas en relation mellan två tabeller, skapar den inte automatiskt relationen. I så fall måste du skapa relationen. 
 
-Låt oss göra en liten självstudie för att bättre se hur relationer fungerar i Power BI Desktop.
+Vi ska gå igenom en snabb självstudiekurs för att bättre se hur relationer fungerar i Power BI Desktop.
 
 >[!TIP]
 >Du kan slutföra den här lektionen själv. Kopiera tabellen ProjectHours nedan till ett Excel-kalkylblad, markera alla celler och klicka på **INSERT** \> **Tabell**. I dialogrutan **Skapa tabell** klickar du på **OK**. I **Tabellnamn** skriver du **ProjectHours**. Gör samma sak för CompanyProject-tabellen. Du kan sedan importera datan med hjälp av **Hämta data** i Power BI Desktop. Välj din arbetsbok och dina tabeller som en datakälla.
 
-Den första tabellen, ProjectHours, är ett register för arbetsbiljetter med antal timmar som en person har arbetat med ett visst projekt.  
+Den första tabellen, ProjectHours, är ett register för arbetsbiljetter med antal timmar som en person har arbetat med ett visst projekt. 
 
 **ProjectHours**
 
@@ -114,7 +114,7 @@ Den här andra tabellen, CompanyProject, är en lista över projekt med en tilld
 | Lila |B |
 | Orange |C |
 
-Observera att varje tabell har en projektkolumn. Alla har lite olika namn, men värdena ser ut som om de är samma. Det här är viktigt och vi kommer tillbaka till det om en liten stund.
+Observera att varje tabell har en projektkolumn. Alla har lite olika namn, men värdena ser ut som om de är samma. Det är viktigt och vi kommer tillbaka till den i snart.
 
 Nu när vi har importerat våra två tabeller till en modell kan vi skapa en rapport. Det första vi ska hämta är antalet timmar som skickats in efter projektprioritet, så vi väljer **Priority** och **Hours** från Fält.
 
@@ -132,14 +132,14 @@ Om vi tittar på kolumnen ProjName i tabellen CompanyProject ser vi att det bara
 
 ### <a name="to-create-the-new-relationship"></a>Skapa en ny relation
 1. Klicka på **Hantera relationer**.
-2. I **Hantera relationer** klickar du på **Ny**. Dialogrutan **Skapa relation** öppnas där vi kan välja tabeller, kolumner och de ytterligare inställningar som vi vill ha för relationen.
+2. I **hantera relationer**, klickar du på **New** att öppna den **skapa relation** dialogrutan, där vi kan välja tabeller, kolumner och eventuella andra inställningar som vi vill ha för våra relation.
 3. I den första tabellen väljer du **ProjectHours**och kolumnen **Project**. Det här är en av flera sidor för vår relation.
-4. I den andra tabellen väljer du **CompanyProject** och sedan kolumnen **ProjName**. Det här är den enda sidan för vår relation.  
+4. I den andra tabellen väljer du **CompanyProject** och sedan kolumnen **ProjName**. Det här är den enda sidan för vår relation. 
 5. Gå vidare genom att klicka på **OK** i dialogrutorna **Skapa relation** och **Hantera relationer**.
 
 ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
 
-Du har nu skapat relationen på det svåra sättet. Du kunde bara ha klickat på knappen Identifiera automatiskt i dialogrutan Hantera relationer. Faktum är att Identifiera automatiskt skulle gjort det åt dig redan när du läste in data ifall båda kolumnerna hade samma namn. Men vad finns det för utmaning då?
+För alla uppgifter du just har skapat den här relationen hårda sätt. Du kan ha bara klickade på knappen Identifiera automatiskt i dialogrutan Hantera relationer. Faktum är att Identifiera automatiskt skulle gjort det åt dig redan när du läste in data ifall båda kolumnerna hade samma namn. Men vad finns det för utmaning då?
 
 Nu ska vi titta på tabellen på vår rapportarbetsyta igen.
 
@@ -147,19 +147,37 @@ Nu ska vi titta på tabellen på vår rapportarbetsyta igen.
 
 Nu ser den betydligt bättre ut, inte sant?
 
-När vi summerar timmarna efter prioritet letar Power BI Desktop efter varje förekomst av de unika färgvärdena i uppslagstabellen CompanyProject och sedan efter varje instans av de olika värdena i tabellen CompanyProject, samt beräknar totalsumman för varje unikt värde.
+När vi summerar timmarna efter prioritet, Power BI Desktop söker efter alla förekomster av de unika färgvärdena i uppslagstabellen CompanyProject och sedan efter varje förekomst av var och en av de här värdena i tabellen companyproject och beräknar totalsumman för varje unikt värde .
 
-Detta var ganska enkelt och med Identifiera automatiskt hade du förmodligen inte behövt göra ens så här mycket.
+Det var enkelt kan i själva verket med Identifiera automatiskt hade du inte även behöva göra här mycket.
 
 ## <a name="understanding-additional-options"></a>Förstå ytterligare alternativ
-När en relation skapas, antingen med Identifiera automatiskt eller manuellt, konfigurerar Power BI Desktop automatiskt ytterligare alternativ baserat på data i tabellerna. Du kan konfigurera de här ytterligare relationsegenskaperna som du hittar i den nedersta delen av dialogrutan Skapa/Redigera relation.
+När en relation skapas, antingen med Identifiera automatiskt eller manuellt, konfigurerar Power BI Desktop automatiskt ytterligare alternativ baserat på data i dina tabeller. Du kan konfigurera de här ytterligare relationsegenskaperna som du hittar i den nedersta delen av dialogrutan Skapa/Redigera relation.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions2.png)
 
 Som nämnts tidigare anges dessa vanligtvis automatiskt och du behöver inte göra något själv. Det finns dock flera situationer där du kanske vill konfigurera de här alternativen.
 
+## <a name="automatic-relationship-updates"></a>Relation för automatiska uppdateringar
+
+Du kan hantera hur Power BI behandlar och automatiskt justerar relationer i dina rapporter och modeller. Välj för att ange hur Power BI hanterar relationer alternativ **fil > Alternativ och inställningar > alternativ** från Power BI Desktop, Välj **datainläsning** i den vänstra rutan. Då visas alternativ för **relationer**.
+
+ ![Alternativ för relationer](media/desktop-create-and-manage-relationships/relationships-options-01.png)
+
+Det finns tre alternativ som kan väljas och aktiverat. 
+
+Det första alternativet är *importera relationer från datakällor*, och den är markerad som standard. När du väljer Power BI söker efter relationer som definierats i din datakälla, till exempel sekundärnyckeln / primär nyckel relationer i ditt informationslager. Om det finns sådana relationer, avspeglas i Power BI-datamodellen när du först läser in data. Det här alternativet kan du snabbt börja jobba med din modell i stället kräver att du hitta eller definiera dessa relationer själv.
+
+Det andra alternativet är *uppdatera eller ta bort relationer när du uppdaterar data*, och det är inaktiverat som standard. Om du har valt (aktiverat genom att markera rutan bredvid alternativet), Power BI söker efter ändringar i data source relationer när datauppsättningen uppdateras. Om dessa relationer ändras eller tas bort, speglar Power BI ändringarna i sin egen datamodellen, uppdatera eller ta bort dem så att de matchar.
+
+> [!WARNING]
+> Om du använder säkerhet på radnivå som förlitar sig på de definierade relationerna, rekommenderar vi inte att välja det andra alternativet, *uppdatera eller ta bort relationer när du uppdaterar data*. Om en relation tas bort RLS-inställningar beroende, kan det bli mindre säkra din modell. 
+
+Det tredje alternativet är *identifiera nya relationer när data har lästs in*, vilket beskrivs i den [identifiera automatiskt under inläsning](#autodetect-during-load) avsnittet tidigare i den här artikeln. 
+
+
 ## <a name="future-updates-to-the-data-require-a-different-cardinality"></a>Framtida uppdateringar av datan kräver en annan kardinalitet
-Power BI Desktop kan normalt sett avgöra den bästa kardinaliteten för relationen automatiskt.  Om du behöver åsidosätta den automatiska inställningen eftersom du vet att datan kommer att ändras i framtiden, kan du välja det i kontrollen Kardinalitet. Nu ska vi titta på ett exempel där vi måste välja en annan kardinalitet.
+Power BI Desktop kan normalt sett avgöra den bästa kardinaliteten för relationen automatiskt. Om du behöver åsidosätta den automatiska inställningen eftersom du vet att datan kommer att ändras i framtiden, kan du välja det i kontrollen Kardinalitet. Nu ska vi titta på ett exempel där vi måste välja en annan kardinalitet.
 
 Tabellen CompanyProjectPriority nedan är en lista över alla företagets projekt och deras prioritet. Tabellen ProjectBudget är uppsättningen med projekt där budgeten har godkänts.
 
@@ -186,7 +204,7 @@ Om vi skapar en relation mellan projektkolumnen i tabellen CompanyProjectPriorit
 
  ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png)
 
-Kardinaliteten är automatiskt inställd på En-till-en (1:1) och korsfiltreringen är Båda (enligt bilden).  Det beror på att för Power BI Desktop är den bästa kombinationen av två tabeller denna:
+Kardinaliteten är automatiskt inställd på En-till-en (1:1) och korsfiltreringen är Båda (enligt bilden). Det beror på att för Power BI Desktop är den bästa kombinationen av två tabeller denna:
 
 | **Project** | **Priority** | **BudgetAllocation** | **AllocationDate** |
 |:--- | --- | ---:| ---:|
@@ -224,22 +242,22 @@ Men vi antar att du vet att datan kommer att ändras nästa gång du uppdaterar 
 | Blå |A |80000 |6/1/2013 |
 | Röd |B |90000 |6/1/2013 |
 
-I den här nya kombinerade tabellen innehåller kolumnen Project upprepade värden.  De två ursprungliga tabellerna kommer inte ha någon En-till-en-relation när tabellen har uppdaterats. I det här fallet vet vi att de framtida uppdateringarna kommer orsaka att det finns dubbletter i kolumnen Project, så vi ställer in kardinaliteten som Många-till-en (\*:1), med Många på ProjectBudget-sidan och En på CompanyProjectPriority-sidan.
+I den här nya kombinerade tabellen innehåller kolumnen Project upprepade värden. De två ursprungliga tabellerna kommer inte ha någon En-till-en-relation när tabellen har uppdaterats. I det här fallet vet vi att de framtida uppdateringarna kommer orsaka att det finns dubbletter i kolumnen Project, så vi ställer in kardinaliteten som Många-till-en (\*:1), med Många på ProjectBudget-sidan och En på CompanyProjectPriority-sidan.
 
 ## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-and-relationships"></a>Ändra korsfilterriktningen för en komplex uppsättning tabeller och relationer
-I de flesta relationer anges korsfilterriktningen till ”Båda”.  Det finns dock vissa mer ovanliga situationer där du kan behöva ange detta på ett annat sätt, t.ex. om du importerar en modell från en äldre version av Power Pivot, där varje relation är inställd på en enda riktning. 
+I de flesta relationer anges korsfilterriktningen till ”Båda”. Det finns dock vissa mer ovanliga situationer där du kan behöva ange detta på ett annat sätt, t.ex. om du importerar en modell från en äldre version av Power Pivot, där varje relation är inställd på en enda riktning. 
 
-Med inställningen Båda kan Power BI Desktop hantera alla aspekter av de kopplade tabellerna som om de var en enda tabell.  Det finns dock vissa situationer där Power BI Desktop inte kan ange en relations korsfilterriktning till ”Båda” och samtidigt behålla en entydig uppsättning standardvärden i rapporteringssyfte. Om en relations korsfilterriktning inte är inställd på Båda är det vanligtvis eftersom det skulle skapa tvetydighet.  Om standardinställningen för korsfiltrering inte fungerar för dig, kan du försöka ange den för en viss tabell eller Båda.
+Med inställningen Båda kan Power BI Desktop hantera alla aspekter av de kopplade tabellerna som om de var en enda tabell. Det finns dock vissa situationer där Power BI Desktop inte kan ange en relations korsfilterriktning till ”Båda” och samtidigt behålla en entydig uppsättning standardvärden i rapporteringssyfte. Om en relations korsfilterriktning inte är inställd på Båda är det vanligtvis eftersom det skulle skapa tvetydighet. Om standardinställningen för korsfiltrering inte fungerar för dig, kan du försöka ange den för en viss tabell eller Båda.
 
-En korsfiltrering i en riktning fungerar i många situationer.  Om du har importerat en modell från Power Pivot i Excel 2013 eller tidigare, är faktiskt alla relationer i en enda riktning.  Enkel riktning innebär att valen som filtreras i anslutna tabeller fungerar i den tabell där värdena aggregeras.  Ibland kan det vara svårt att förstå korsfiltrering, så vi tittar på ett exempel.
+En korsfiltrering i en riktning fungerar i många situationer. Om du har importerat en modell från Power Pivot i Excel 2013 eller tidigare, är faktiskt alla relationer i en enda riktning. Enkel riktning innebär att valen som filtreras i anslutna tabeller fungerar i den tabell där värdena aggregeras. Ibland kan det vara svårt att förstå korsfiltrering, så vi tittar på ett exempel.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 
-Om du skapar en rapport som sammanfattar projekttimmarna och använder korsfiltrering i en riktning, kan du sedan välja att sammanfatta (eller filtrera) efter CompanyProject, Priority eller CompanyEmployee, City.   Men om du vill räkna antalet medarbetare per projekt (en mindre vanlig fråga) fungerar det inte. Du får en kolumn med likadana värden.  I exemplet nedan har båda relationernas korsfiltreringsriktning angetts till en riktning – mot tabellen ProjectHours:
+Om du skapar en rapport som sammanfattar projekttimmarna och använder korsfiltrering i en riktning, kan du sedan välja att sammanfatta (eller filtrera) efter CompanyProject, Priority eller CompanyEmployee, City. Men om du vill räkna antalet medarbetare per projekt (en mindre vanlig fråga) fungerar det inte. Du får en kolumn med likadana värden. I exemplet nedan har båda relationernas korsfiltreringsriktning angetts till en riktning – mot tabellen ProjectHours:
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Filterspecifikationen flödar från CompanyProject till CompanyEmployee (som visas i bilden nedan), men det kommer inte att flöda upp till CompanyEmployee.  Men om du ställer in korsfiltreringsriktningen till Båda kommer den att fungera.  Med inställningen Båda kan filterspecifikationen flöda upp till Employee.
+Filterspecifikationen flödar från CompanyProject till CompanyEmployee (som visas i bilden nedan), men det kommer inte att flöda upp till CompanyEmployee. Men om du ställer in korsfiltreringsriktningen till Båda kommer den att fungera. Med inställningen Båda kan filterspecifikationen flöda upp till Employee.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
@@ -260,12 +278,12 @@ Om du har ett tabellmönster med loopar som detta, kan korsfiltreringen skapa en
 Precis som med aktiva/inaktiva relationer tillåter Power BI Desktop inte att en relation anges som Båda om det kommer att skapa tvetydighet i rapporterna. Det finns flera olika sätt som du kan hantera detta på och här är de två vanligaste:
 
 * Ta bort eller markera relationer som inaktiva för att minska tvetydighet. Sedan kan du kanske ange relationens korsfiltrering som Båda.
-* Hämta en tabell två gånger (med ett annat namn den andra gången) för att undvika loopar.  Detta skapar ett relationsmönster som ett star-schema.  Med ett star-schema kan alla relationer anges som Båda.
+* Hämta en tabell två gånger (med ett annat namn den andra gången) för att undvika loopar. Detta skapar ett relationsmönster som ett star-schema. Med ett star-schema kan alla relationer anges som Båda.
 
 ## <a name="wrong-active-relationship"></a>Fel aktiv relation
-När Power BI Desktop skapar relationer automatiskt, påträffas ibland mer än en relation mellan två tabeller.  När detta inträffar anges endast en av relationerna som aktiv.  Den aktiva relationen fungerar som standardrelation, så när du väljer fält från två olika tabeller kan Power BI Desktop automatiskt skapa en visualisering åt dig.  I vissa fall kan den automatiskt valda relationen dock vara fel.  Du kan använda dialogrutan Hantera relationer för att ange en relation som aktiv eller inaktiv, eller så kan du ange den aktiva relationen i dialogrutan Redigera relation. 
+När Power BI Desktop skapar relationer automatiskt, påträffas ibland mer än en relation mellan två tabeller. När detta inträffar anges endast en av relationerna som aktiv. Den aktiva relationen fungerar som standardrelation, så när du väljer fält från två olika tabeller kan Power BI Desktop automatiskt skapa en visualisering åt dig. I vissa fall kan den automatiskt valda relationen dock vara fel. Du kan använda dialogrutan Hantera relationer för att ange en relation som aktiv eller inaktiv, eller så kan du ange den aktiva relationen i dialogrutan Redigera relation. 
 
-För att se till att detta är standardrelationen tillåter Power BI Desktop bara en enda aktiv relation mellan två tabeller vid en viss tidpunkt.  Därför måste du först ange den aktuella relationen som inaktiv och sedan ange den relation som du vill ska vara aktiv.
+För att se till att detta är standardrelationen tillåter Power BI Desktop bara en enda aktiv relation mellan två tabeller vid en viss tidpunkt. Därför måste du först ange den aktuella relationen som inaktiv och sedan ange den relation som du vill ska vara aktiv.
 
 Låt oss titta på ett exempel. Den första tabellen är ProjectTickets och nästa tabell är EmployeeRole.
 
@@ -307,7 +325,7 @@ Om vi lägger till båda relationerna i modellen (OpenedBy först), kommer dialo
 
  ![](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
 
-Om vi nu skapar en rapport som använder fälten Role och Employee från EmployeeRole och fältet Hours från ProjectTickets i en tabellvisualisering på rapportarbetsytan, ser vi endast projektsponsorerna eftersom de är de enda som har öppnat en biljett för projektet.
+Nu, om vi skapar en rapport som använder fälten Role och Employee från EmployeeRole och fältet Hours från ProjectTickets i en tabellvisualisering på rapportarbetsytan, ser vi med att endast projektsponsorerna eftersom de är de enda som öppnas en biljett för projektet.
 
  ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 

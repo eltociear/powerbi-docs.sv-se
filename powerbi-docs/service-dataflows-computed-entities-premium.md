@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220964"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61138198"
 ---
-# <a name="using-computed-entities-on-power-bi-premium-preview"></a>Använda beräknade entiteter i Power BI Premium (förhandsversion)
+# <a name="using-computed-entities-on-power-bi-premium"></a>Använda beräknade entiteter i Power BI Premium
 
 Du kan göra **lagerberäkningar** när du använder **dataflöden** med en Power BI Premium-prenumeration. På så sätt kan du göra beräkningar på dina befintliga dataflöden och returnera resultat som hjälper dig att fokusera på att skapa rapporter och göra analyser. 
 
@@ -31,10 +31,6 @@ Det finns två sätt på vilka du kan ansluta dataflödesdata till Power BI:
 * Använda ett externt dataflöde
 
 I följande avsnitt beskriver vi hur du kan skapa beräknade entiteter för dina dataflödesdata.
-
-> [!NOTE]
-> Dataflödesfunktionen är en förhandsversion och kan komma att ändras och uppdateras innan den är allmänt tillgänglig.
-
 
 ## <a name="how-to-create-computed-entities"></a>Skapa beräknade entiteter 
 
@@ -89,8 +85,8 @@ I den här artikeln har vi beskrivit de beräknade entiteter och dataflöden som
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Använda dataflöden med lokala datakällor (förhandsversion)](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
 * [Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)](service-dataflows-add-cdm-folder.md)
 * [Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

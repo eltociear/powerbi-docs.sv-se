@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710945"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfigurera mobilappar med Microsoft Intune
@@ -50,11 +50,11 @@ Om du vill hämta appens URL för iOS måste du hämta den från iTunes.
 
     ![URL för iTunes-app](media/service-admin-mobile-intune/itunes-url.png)
 
-Det bör se ut ungefär så här: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8*.
+Det bör se ut ungefär så här: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8* .
 
 ### <a name="get-android-url"></a>Hämta Android-URL
 
-Du kan hämta URL:en för Google Play från [Power BI-mobilsidan](https://powerbi.microsoft.com/mobile/). Välj ikonen **Hämta från Google Play** så kommer du till appsidan. Du kan kopiera URL:en från adressfältet i webbläsaren. Det bör se ut ungefär så här: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim*.
+Du kan hämta URL:en för Google Play från [Power BI-mobilsidan](https://powerbi.microsoft.com/mobile/). Välj ikonen **Hämta från Google Play** så kommer du till appsidan. Du kan kopiera URL:en från adressfältet i webbläsaren. Det bör se ut ungefär så här: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
 ## <a name="step-2-create-a-mobile-application-management-policy"></a>Steg 2: Skapa en hanteringsprincip för mobilprogram
 
@@ -122,7 +122,7 @@ När du har lagt till programmet, behöver du distribuera det så att det finns 
 
 ### <a name="deploy-for-ios"></a>Distribuera för iOS
 
-1. Välj den app som du skapade på Appar-skärmen. Välj sedan länken **Hantera distribution...**.
+1. Välj den app som du skapade på Appar-skärmen. Välj sedan länken **Hantera distribution...** .
 
     ![Hantera distribuering](media/service-admin-mobile-intune/intune-deploy-ios1.png)
 
@@ -144,7 +144,7 @@ När du har distribuerat appen, bör du se **Ja** för distribuerad på appsidan
 
 ### <a name="deploy-for-android"></a>Distribuera för Android
 
-1. Välj den app som du skapade på Appar-skärmen. Välj sedan länken **Hantera distribution...**.
+1. Välj den app som du skapade på Appar-skärmen. Välj sedan länken **Hantera distribution...** .
 
     ![Hantera distribuering](media/service-admin-mobile-intune/intune-deploy-android1.png)
 1. På skärmen **Välj grupper** kan du välja vilka grupper som du vill distribuera den här appen till. Välj **Nästa**.

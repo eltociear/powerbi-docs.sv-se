@@ -1,8 +1,8 @@
 ---
 title: Starta om en Power BI Premium-kapacitet
 description: Lär dig hur du startar om en Power BI Premium-kapacitet för att hantera prestandaproblem.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7fbd8bd9c7712dbd2476544fef900547310f35fa
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
-ms.translationtype: HT
+ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794963"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564920"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Starta om en Power BI Premium-kapacitet
 
@@ -31,7 +31,7 @@ Power BI förbättras ständigt när det gäller hur Premium-kapacitetsanvändar
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Är omstarten säker? Förlorar jag data?
 
-Alla sparade data, definitioner, rapporter och instrumentpaneler i kapaciteten förblir helt intakta efter omstart. När du startar om en kapacitet stoppas alla pågående uppdateringar och ad hoc-uppdateringar. Uppdateringar startas om när kapaciteten är tillgänglig. Användare som interagerar med kapaciteten förlorar arbete som inte har sparats. De bör uppdatera sina webbläsare när omstarten har slutförts.
+Alla sparade data, definitioner, rapporter och instrumentpaneler i kapaciteten förblir helt intakta efter omstart. När du startar om en kapacitet stoppas alla pågående uppdateringar och ad hoc-uppdateringar. Tjänsten försöker göra uppdateringar när kapaciteten är tillgänglig. Användare som interagerar med kapaciteten förlorar arbete som inte har sparats. De bör uppdatera sina webbläsare när omstarten har slutförts.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hur startar jag om en kapacitet?
 
@@ -57,6 +57,6 @@ Vi rekommenderar också att du [övervakar dina kapaciteter](service-admin-premi
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är Power BI Premium?](service-premium.md)
+[Vad är Power BI Premium?](service-premium-what-is.md)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2019
+ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 536e433540d371838b027e06f857609024e213f3
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.openlocfilehash: d2a4e168b49ef0d9c3b656c91001ae9306dfe42d
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430494"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375038"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -27,14 +27,179 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 * **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 * I vissa funktioner finns en **[article]** som innehåller mer information.
-* De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 * Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
 
-## <a name="february-2019-update-2655313501"></a>Uppdatering februari 2019 (2.65.5313.501)
+
+## <a name="april-2019-update-2685432361"></a>April 2019 uppdatera (2.68.5432.361)
+
+Våra April uppdateringar har späckad med uppdateringar som placerar spring i din steg i lugn. 
+
+Nu kan du [hämta den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
+
+Länkarna bredvid varje uppdatering innebär följande:
+
+* **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
+* I vissa funktioner finns en **[article]** som innehåller mer information.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
+* Vissa funktioner är självförklarande och behöver varken artikel eller video.
+
+Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
+
+Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
+
+### <a name="reporting"></a>Rapportering
+* Filtrera förbättringar i fältfönstret [[video]](https://youtu.be/vih35kSrEHU?t=9)[[article]](power-bi-report-filter-preview.md)[[blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
+* Villkorsstyrd formatering för visuella rubriker [[video]](https://youtu.be/vih35kSrEHU?t=254)[[article]](desktop-conditional-format-visual-titles.md)[[blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
+* Villkorsstyrd formatering för webb-URL: en åtgärder för knappar, former och bilder [[video]](https://youtu.be/vih35kSrEHU?t=439)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
+
+
+### <a name="analytics"></a>Analys
+* Visning av detaljerad information i rapporter [[video]](https://youtu.be/vih35kSrEHU?t=567)[[article]](desktop-cross-report-drill-through.md)[[blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#drillthrough) 
+* Nyckelpåverkare visual stöder nu kontinuerlig analys för numeriska mål [[video]](https://youtu.be/vih35kSrEHU?t=753)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#keyInfluencers) 
+* Python-stöd inte allmänt tillgänglig [[video]](https://youtu.be/vih35kSrEHU?t=889)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#python) 
+* Partiell synonymen som matchar villkoren i frågor och svar [[video]](https://youtu.be/vih35kSrEHU?t=912)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
+
+
+### <a name="modeling"></a>Modellering
+* Ny DAX-funktion - ALLCROSSFILTERED [[video]](https://youtu.be/vih35kSrEHU?t=970)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
+
+### <a name="custom-visuals"></a>Anpassade visuella objekt
+* Ett nytt anpassat visuellt objekt [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#rainbowGauge) 
+
+
+### <a name="data-connectivity"></a>Dataanslutning
+* Power BI dataflöden anslutningsappen är nu allmänt tillgänglig [[video]](https://youtu.be/vih35kSrEHU?t=983)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dataflows) 
+* Oracle Essbase connector nu har stöd för DirectQuery och är allmänt tillgängliga [[video]](https://youtu.be/vih35kSrEHU?t=1011)[[blog]   ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#oracleEssbase) 
+* PDF-anslutningsappen som är nu allmänt tillgänglig [[video]](https://youtu.be/vih35kSrEHU?t=1042)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#pdf) 
+* Webbprogram med hjälp av exempel-anslutningsapp – automatisk tabell inferens [[video]](https://youtu.be/vih35kSrEHU?t=1089)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#webByExample) 
+* Intersystems IRIS connector [[video]](https://youtu.be/vih35kSrEHU?t=1186)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intersystemsIRIS) 
+* Indexima connector [[video]](https://youtu.be/vih35kSrEHU?t=1215)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#indexima) 
+* Luminis InformationGrid connector [[video]](https://youtu.be/vih35kSrEHU?t=1236)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#luminisInformationGrid) 
+* SOLVER BI360 connector [[video]](https://youtu.be/vih35kSrEHU?t=1255)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#solverBI360) 
+* Paxata connector [[video]](https://youtu.be/vih35kSrEHU?t=1268)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paxata) 
+
+### <a name="data-preparation"></a>Förberedelse av data
+* Data Profiling förbättringar och nu är allmänt [[video]](https://youtu.be/vih35kSrEHU?t=1299)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#profiling) 
+* Fuzzy merge prestandaförbättringar och allmänt tillgängliga [[video]](https://youtu.be/vih35kSrEHU?t=1447)[[blog]   ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#fuzzyMerge) 
+* M Intellisense stöds i formelfältet och dialogrutan för anpassad kolumn och är allmänt tillgängliga [[video]](https://youtu.be/vih35kSrEHU?t=1491)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intellisense) 
+
+### <a name="other"></a>Övrigt
+* Power BI sidnumrerade Report Builder [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paginatedReports) 
+
+
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du kan också se videor från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vih35kSrEHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+
+Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
+
+* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
+* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
+* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
+* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
+
+Välj följande länkar för att ladda ned den tidigare versionen: 
+
+* [April 2019 versionen av Power BI Desktop - 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04.msi)
+* [April 2019 versionen av Power BI Desktop - 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-04_x64.msi)
+
+
+## <a name="march-2019-update-2675404581"></a>Mars 2019 uppdatera (2.67.5404.581)
+
+Vår mars-uppdateringar har förpackat med övertygande och användbara uppdateringar och vi hoppas att dessa förbättringar gör din som lucky som att söka efter en fyra--ser fram emot. 
+
+Nu kan du [hämta den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop). Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
+
+Länkarna bredvid varje uppdatering innebär följande:
+
+* **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
+* I vissa funktioner finns en **[article]** som innehåller mer information.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
+* Vissa funktioner är självförklarande och behöver varken artikel eller video.
+
+Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
+
+Följande uppdateringar är nya för **Power BI Desktop** i mars:
+
+### <a name="reporting"></a>Rapportering
+* Välj enskilt utsnitt [[video]](https://youtu.be/rBPGH6eYlT0?t=10) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#singleSelectSlicer) 
+* Stöd för termisk karta för Bing-kartor [[video]](https://youtu.be/rBPGH6eYlT0?t=43) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#heatMap)
+* Korsmarkera enligt axeletiketter [[video]](https://youtu.be/rBPGH6eYlT0?t=90) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#crossHighlighting)
+* Standardformatering för knappbeskrivning [[video]](https://youtu.be/rBPGH6eYlT0?t=132) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#tooltipFormatting)
+* Statiskt webb-URL-stöd för knappar, former och bilder [[video]](https://youtu.be/rBPGH6eYlT0?t=204) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#staticURL)
+* Förbättringar av filterpanelen [[video]](https://youtu.be/rBPGH6eYlT0?t=234)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#filterPane)
+* Alternativ för sidjustering [[video]](https://youtu.be/rBPGH6eYlT0?t=253) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#pageAlignment)
+* Förbättringar av markeringspanelen [[video]](https://youtu.be/rBPGH6eYlT0?t=291)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#selectionPane)
+* Formateringsuppdateringar för kartor [[video]](https://youtu.be/rBPGH6eYlT0?t=291) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#mapFormatting)
+* Tillgänglig visuell interaktion [[video]](https://youtu.be/rBPGH6eYlT0?t=310) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#accessibility)
+
+
+### <a name="analytics"></a>Analys
+* Rekommendationer i frågor och svar för att förbättra resultatet [[video]](https://youtu.be/rBPGH6eYlT0?t=357) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#QA) 
+* Visa datum som en hierarki är nu allmänt tillgängligt [[video]](https://youtu.be/rBPGH6eYlT0?t=397) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#dateHierarchy) 
+
+
+### <a name="modeling"></a>Modellering
+* Ny modellering vy som är nu allmänt tillgänglig [[video]](https://youtu.be/rBPGH6eYlT0?t=417)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
+* Nya DAX-funktioner [[video]](https://youtu.be/rBPGH6eYlT0?t=560)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
+
+### <a name="custom-visuals"></a>Anpassade visuella objekt
+* Nya certifierade anpassade visuella objekt i administratörsportalen [[video]](https://youtu.be/rBPGH6eYlT0?t=624) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#certifiedAdminSetting) 
+* Två nya anpassade visuella objekt [[video]](https://youtu.be/rBPGH6eYlT0?t=693) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#customVisuals) 
+
+
+### <a name="data-connectivity"></a>Dataanslutning
+
+* PDF-anslutningsprogrammet har nu stöd för tabeller som sträcker sig över flera sidor (förhandsversion) [[video]](https://youtu.be/rBPGH6eYlT0?t=990) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#PDFconnector) 
+* Intelligent Plants industriella appbutik-anslutningsprogram [[video]](https://youtu.be/rBPGH6eYlT0?t=1035) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#IntelligentPlantsIndustrialAppStore) 
+* Azure Cost Management-anslutningsprogram [[video]](https://youtu.be/rBPGH6eYlT0?t=1085) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#AzureCostManagement) 
+
+
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du kan också se videor från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rBPGH6eYlT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+
+Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
+
+* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
+* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
+* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
+* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
+
+Välj följande länkar för att ladda ned den tidigare versionen: 
+
+* [Mars 2019 versionen av Power BI Desktop - 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03.msi)
+* [Mars 2019 versionen av Power BI Desktop - 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03_x64.msi)
+
+
+## <a name="february-2019-update-26653761681"></a>Uppdatering februari 2019 (2.66.5376.1681)
 
 Våra kunder kommer att älska februariuppdateringarna med nya datakopplingar, funktioner och analysförbättringar. Det är som med en chokladask, man vet aldrig vad man får... Men i februariuppdateringen är alla godbitar riktigt smaskiga. 
 
@@ -46,7 +211,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 * **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 * I vissa funktioner finns en **[article]** som innehåller mer information.
-* De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 * Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -84,7 +249,6 @@ Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 ### <a name="other"></a>Övrigt
 * Förbättrade felmeddelanden för Live Connect och DirectQuery [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#error) 
 
-
 > [!NOTE]
 > Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
 
@@ -117,7 +281,7 @@ Välj följande länkar för att ladda ned den tidigare versionen:
 Det släpptes inga Power BI Desktop-versioner i januari 2019 – vi var alla upptagna med en härlig semester med vänner och familj. 
 
 
-## <a name="december-2018-update-2655313501"></a>Uppdatering december 2018 (2.65.5313.501)
+## <a name="december-2018-update-2655313621"></a>Uppdatering december 2018 (2.65.5313.621)
 
 Våra decemberuppdateringar gav en riktig sockerkick med alla godbitar, eller åtminstone en söt eftersmak av datadrivna visuella objekt. 
 
@@ -127,7 +291,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 * **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 * I vissa funktioner finns en **[article]** som innehåller mer information.
-* De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 * Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -204,7 +368,7 @@ Välj följande länkar för att ladda ned den tidigare versionen:
 * [December 2018-versionen av Power BI Desktop – 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12_x64.msi)
 
 
-## <a name="november-2018-update-2645285461"></a>Uppdatering november 2018 (2.64.5285.461)
+## <a name="november-2018-update-2645285582"></a>Uppdatering november 2018 (2.64.5285.582)
 
 I våra novemberuppdateringar introducerades en uppsjö av nya funktioner och funktionaliteter. Så du kunde sätta dig ner med din familj av data- och analysentusiaster, skicka potatismoset och hugga in på vårt festbord med uppdateringar. 
 
@@ -236,7 +400,7 @@ Följande uppdateringar är nya för **Power BI Desktop** i november:
 
 ### <a name="data-connectivity"></a>Dataanslutning
 
-* Azure DevOps Server-anslutning [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* Azure Developer Operations Server-anslutningen [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
 * PDF-anslutningsprogrammet har stöd för parametrarna Start Page och End Page [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)  [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
 * Förbättrad Azure Consumption Insights-anslutningsapp [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
 
@@ -730,7 +894,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 * **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 * I vissa funktioner finns en **[article]** som innehåller mer information.
-* De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 * Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** för den här månaden från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -740,7 +904,7 @@ Följande uppdateringar var nya för **Power BI Desktop** i februari 2018:
 ### <a name="reporting"></a>Rapportering
 
 * Välj flera datapunkter över flera sidor [[video]](https://youtu.be/KeVB5RwMzJo?t=23s) [[article]](desktop-multi-select.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
-* Synkronisera utsnitt över flera sidor i en rapport [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[article]](visuals/desktop-slicers.md) [[blog] ](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Synkronisera utsnitt över flera sidor i en rapport [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[article]](visuals/power-bi-visualization-slicers.md) [[blog] ](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
 * Förbättring av numeriska intervallutsnitt – heltalsfixering (förhandsgranskning) [[video]](https://youtu.be/KeVB5RwMzJo?t=8m44s)[[article]](desktop-slicer-numeric-range.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
 * Snabbare geokodning för Bing-mappar (webbförhandsgranskning) – upp till 6 x snabbare [[video]](https://youtu.be/KeVB5RwMzJo?t=10m18s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
 * Spill av dataetiketter för visualiseringar för fält- och kolumndiagram [[video]](https://youtu.be/KeVB5RwMzJo?t=12m31s) [[blog] ](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
@@ -793,7 +957,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 * **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 * I vissa funktioner finns en **[article]** som innehåller mer information.
-* De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 * Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** för den här månaden från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -843,7 +1007,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 -   **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 -   I vissa funktioner finns en **[article]** som innehåller mer information.
--   De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+-   De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 -   Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -898,7 +1062,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 -   **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 -   I vissa funktioner finns en **[article]** som innehåller mer information.
--   De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+-   De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 -   Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -957,7 +1121,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 -   **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 -   I vissa funktioner finns en **[article]** som innehåller mer information.
--   De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+-   De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 -   Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -1546,7 +1710,7 @@ Följande uppdateringar är nya för Power BI Desktop i september:
 -   Lägg till funktionsanropskolumn [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Expandera och sammanställ kolumner – stöd för *Läs in mer*-värden [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Ny omvandling – konvertera tabellkolumn till en lista [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
--   Tangentbordshantering – stöd för *smartskrivning* i listmenyer [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Nyckeln boarding – stöd för *smartskrivning* i menyerna [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### <a name="other-improvements"></a>Övriga förbättringar
@@ -1574,7 +1738,7 @@ I augusti introducerades en uppsjö med nya funktioner för Power BI Desktop:
 
 -   **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
 -   I vissa funktioner finns en **[article]** som innehåller mer information.
--   De flesta funktioner beskrivs i månadsuppdateringens **[blog]**-inlägg.
+-   De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
 -   Vissa funktioner är självförklarande och behöver varken artikel eller video.
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
@@ -2363,7 +2527,7 @@ Följande funktioner har lagts till i den här uppdateringen:
 
 -   **Omsortering av rapportsidor** (dra och släpp)
 
--   ~40-50 % **prestanda****förbättring** med att fylla i databastabeller utan filter/omvandlingar
+-   ~40-50 % **prestanda** **förbättring** med att fylla i databastabeller utan filter/omvandlingar
 
 -   Många felkorrigeringar
 
@@ -2390,7 +2554,7 @@ Följande funktioner har lagts till eller förbättrats i den här uppdateringen
   -   Expandera/dölj tabeller
   -   Dölj/ta fram fält
   -   Optimerad layout (avstånd, marginaler och teckensnitt)
-- Navigering på rapportsidor – stöd för tangentbordshantering
+- Navigering på rapportsidor – stöd för kundnyckeln ombordstigning
 - Många felkorrigeringar
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>

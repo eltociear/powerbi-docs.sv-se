@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9aac366f04d53da56b62c10fdb85229d0d412834
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397957"
+---
 När du lägger till ett *datum*fält i ett visuellt objekt i fältet *Axel*, lägger Power BI automatiskt till en tidshierarki med *år*, *kvartal*, *månad* och *dag*. På så sätt kan Power BI låta de visuella objekten ha en tidsbaserad interaktion med de som läser dina rapporter, genom att användarna kan söka i dessa olika tidsnivåer.
 
 ![](media/3-11g-visual-hierarchies-drilling/3-11g_1.png)

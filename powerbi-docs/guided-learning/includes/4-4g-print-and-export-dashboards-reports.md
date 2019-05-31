@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 87a55881a9b6551dc9c7814696aa8d8252482a09
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256940"
+---
 Ibland kanske du vill ta med en utskriven rapport eller instrumentpanel till ett möte så att du kan dela den med andra. Det finns olika sätt att skriva ut visuella objekt på med Power BI.
 
 I Power BI-tjänsten väljer du ellipserna (tre punkter) längst upp till höger och sedan **Skriv ut instrumentpanel**.

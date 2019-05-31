@@ -11,11 +11,11 @@ ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 9cf3eea99813d315c72f3210f3938deae94505b0
-ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58473877"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61234524"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.

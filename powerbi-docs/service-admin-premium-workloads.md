@@ -1,25 +1,25 @@
 ---
 title: Så här konfigurerar du arbetsbelastningar i Power BI Premium
 description: Lär dig att konfigurera arbetsbelastningar i en Power BI Premium-kapacitet.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/01/2019
+ms.date: 04/15/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: fbff4b744cf4a35f2fe1d0ae46f4676cd5f1db77
-ms.sourcegitcommit: 8525b6365f3e224176730f4b8e5dae83f540a4ff
-ms.translationtype: HT
+ms.openlocfilehash: c84bebef5589ec391e3640ff3be674b1fb5a0ebd
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58795255"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564866"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
-I den här artikeln beskrivs aktivering och konfigurering av arbetsbelastningar för Power BI Premium-kapaciteter. Som standard stöder kapaciteterna endast arbetsbelastningen som är associerad med att köra Power BI-frågor. Du kan också aktivera och konfigurera ytterligare arbetsbelastningar för **[AI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflöden](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** och **[Sidnumrerade rapporter](paginated-reports-save-to-power-bi-service.md)**.
+I den här artikeln beskrivs aktivering och konfigurering av arbetsbelastningar för Power BI Premium-kapaciteter. Som standard stöder kapaciteterna endast arbetsbelastningen som är associerad med att köra Power BI-frågor. Du kan också aktivera och konfigurera ytterligare arbetsbelastningar för **[AI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflöden](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** och **[Sidnumrerade rapporter](paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Standardinställningar för minne
 
@@ -29,7 +29,7 @@ Frågearbetsbelastningar är optimerade för och begränsade av resurser som bes
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI (Cognitive Services) | 20 % standard, min TBD| 20 % standard, min TBD | 20 % standard, min TBD | 20 % standard, min TBD | 20 % standard, min TBD |
+| AI | Saknas | Saknas | 20 % standard, 20 % minimum | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum |
 | Dataflöden | Saknas |20 % standard, 12 % minimum  | 20 % standard, 5 % minimum  | 20 % standard, 3 % minimum | 20 % standard, 2 % minimum  |
 | Sidnumrerade rapporter | Saknas |Saknas | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
 | | | | | | |
@@ -38,10 +38,41 @@ Frågearbetsbelastningar är optimerade för och begränsade av resurser som bes
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI (Cognitive Services) | Saknas                      | 20 % standard, min TBD                      | 20 % standard, min TBD                     | 20 % standard, min TBD | 20 % standard, min TBD | 20 % standard, min TBD |
+| AI | Saknas                      | 20% standard. 100% minsta                     | 20% standard. 50% minsta                     | 20 % standard, 20 % minimum | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum |
 | Dataflöden         | 40 % standard, 40 % minimum | 24 % standard, 24 % minimum | 20 % standard, 12 % minimum | 20 % standard, 5 % minimum  | 20 % standard, 3 % minimum | 20 % standard, 2 % minimum   |
 | Sidnumrerade rapporter | Saknas                      | Saknas                      | Saknas                     | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
 | | | | | | |
+
+## <a name="workload-settings"></a>Inställningar för arbetsbelastning
+
+### <a name="ai-preview"></a>AI (förhandsversion)
+
+Förutom den **Max Memory** inställningen AI-arbetsbelastning har en ytterligare inställning **tillåta användning från Power BI Desktop**. Standardvärdet är **av**. Den här inställningen är reserverad för framtida användning och får inte visas i alla klienter.
+
+### <a name="datasets-preview"></a>Datauppsättningar (förhandsversion)
+
+Som standard arbetsbelastningen datauppsättningar är aktiverad och kan inte inaktiveras. Den här arbetsbelastningen innehåller en ytterligare inställning **XMLA-slutpunkten**. Standardvärdet är **1**, betydelse aktiverat. Den här inställningen anger anslutningar från klientappar respektera medlemskap i säkerhetsgruppen ange på arbetsytan och app. Mer information finns i [Anslut till datauppsättningar med program och verktyg](service-premium-connect-tools.md).
+
+### <a name="dataflows"></a>Dataflöden
+
+Förutom den **Max Memory** inställningen dataflöden-arbetsbelastning har en ytterligare inställning **behållarstorlek**. Den här inställningen gör det möjligt för dig att optimera dataflödet arbetsbelastningens prestanda för bearbetning av mer komplexa, beräkning omfattande dataflöden.
+
+När du uppdaterar en dataflöde tio arbetsbelastningen dataflöde en behållare för varje entitet i dataströmmen. Varje behållare kan ta minne upp till volymen i anges i inställningen behållare storlek. Standardvärdet för alla SKU: er är **700 MB**. Du kanske vill ändra den här inställningen om:
+
+- Dataflöden tar för lång tid att uppdatera eller dataflöde uppdateringen misslyckas på en tidsgräns.
+- Dataflöde entiteter innehåller beräkning steg, till exempel en koppling.  
+
+Det är det rekommenderas att du använder den [Power BI Premium-kapacitet](service-admin-premium-monitor-capacity.md) app för att analysera dataflöde arbetsbelastningens prestanda. 
+
+I vissa fall kan kan öka storleken på behållaren inte förbättra prestanda. Till exempel om dataflödet blir data endast från en källa utan att utföra stora beräkningar, hjälpa ändra behållarstorlek förmodligen inte. Öka behållarstorlek leda till om det möjliggör arbetsbelastningen dataflöde att allokera mer minne för entiteten uppdateringsåtgärder. Det kan minska den tid det tar för att uppdatera kraftigt beräknade entiteter genom att använda mer minne som allokeras. 
+
+Behållarstorlek värdet får inte överskrida det högsta mängd minnet för arbetsbelastningen dataflöden. Till exempel har en P1-kapacitet 25GB minne. Om arbetsbelastningen dataflöde Max Memory (%) har angetts till 20 procent, Container storlek (MB) får inte överskrida 5000. I samtliga fall får inte behållarens storlek överskrida Max Memory, även om du anger ett högre värde. 
+
+### <a name="paginated-reports-preview"></a>Sidnumrerade rapporter (förhandsgranskning)
+
+Sidnumrerade rapporter kan anpassad kod som ska köras vid återgivningen av en rapport. Till exempel dynamiskt ändra textfärg baserat på innehåll, vilket kan ta mer minne. I Power BI Premium körs sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Max Memory anges används *huruvida* arbetsbelastningen är aktiv. Om du ändrar inställningen maximalt minne från standard måste du ange det låga påverka nog att den inte andra arbetsbelastningar.
+
+I vissa fall kan arbetsbelastningen sidnumrerade rapporter att vara tillgänglig. I det här fallet arbetsbelastningen visar ett feltillstånd i Admin portal och användarna ser tidsgränser för rapportåtergivning. För att lösa det här problemet, inaktivera arbetsbelastningen och sedan aktivera det igen.
 
 ## <a name="configure-workloads"></a>Konfigurera arbetsbelastningar
 
@@ -60,9 +91,6 @@ Maximera din kapacitets tillgängliga resurser genom att aktivera arbetsbelastni
 
 1. Klicka på **Godkänn**.
 
-> [!NOTE]
-> Om arbetsbelastningen för sidnumrerade rapporter är aktiverad kommer de sidnumrerade rapporterna innebära att du kan köra din egen kod vid rendering av rapporter (till exempel ändra textfärg dynamiskt baserat på innehållet). I Power BI Premium körs sidnumrerade rapporter i ett inneslutet område inom kapaciteten. Det maximala minne som du anger till det här området används, oavsett om arbetsbelastningen är aktiv eller inte. Om du använder Power BI-rapporter eller dataflöden i samma kapacitet, bör du ange ett så lågt minne för de sidnumrerade rapporterna att det inte påverkar andra arbetsbelastningar negativt. I sällsynta fall kan arbetsbelastningen för sidnumrerade rapporter bli otillgänglig. I det här fallet visar arbetsbelastningen ett feltillstånd i administratörsportalen och användarna uppnår tidsgränser vid rapportåtergivning. För att lösa det här problemet kan du inaktivera arbetsbelastningen och sedan aktivera den igen.
-
 ### <a name="rest-api"></a>REST-API
 
 Arbetsbelastningar kan aktiveras och tilldelas till en kapacitet med hjälp av [Kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities) REST API:er.
@@ -73,7 +101,7 @@ Arbetsbelastningar kan aktiveras och tilldelas till en kapacitet med hjälp av [
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Resurshantering och optimering av Power BI Premium-kapacitet](service-premium-understand-how-it-works.md)   
+[Optimera Power BI Premium-kapaciteter](service-premium-capacity-optimize.md)     
 [Dataförberedelser med självbetjäning i Power BI med dataflöden](service-dataflows-overview.md)   
 [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 

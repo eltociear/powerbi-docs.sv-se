@@ -1,20 +1,20 @@
 ---
 title: Felsök ditt inbäddade program
 description: Den här artikeln går igenom några vanliga problem som kan uppstå när du bäddar in innehåll från Power BI.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174831"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770492"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -109,7 +109,7 @@ Du kan lösa problemet genom att trimma ”oauth2/authorize/” i slutet av utf�
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Autentiseringen misslyckades med AADSTS70002 eller AADSTS50053
 
-**_(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)_**
+** _(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)_ **
 
 Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)***, beror detta på att direktautentisering som standard inte längre används sedan den 14 juni 2018.
 
@@ -161,7 +161,7 @@ Prova stegen nedan för att verifiera vad det är.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: The grant requires admin permission (Beviljandet kräver administratörsbehörigheter)
 
-**_Symptom:_**<br>
+**_Symptom:_ **<br>
 När en icke-administratörsanvändare försöker logga in i ett program första gången för att bevilja medgivande och följande fel visas:
 
 * ConsentTest kräver behörighet som bara kan ges av en administratör för att komma åt resurser i din organisation. Be en administratör bevilja behörighet till den här appen innan du använder den.
@@ -171,10 +171,10 @@ När en icke-administratörsanvändare försöker logga in i ett program första
 
 En administratörsanvändare kan logga in och bevilja medgivande.
 
-**_Rotorsak:_**<br>
+**_Rotorsak:_ **<br>
 Användargodkännande har inaktiverats för klientorganisationen.
 
-**_Det finns flera möjliga lösningar:_**
+**_Det finns flera möjliga lösningar:_ **
 
 *Aktivera användargodkännande för hela klientorganisationen (alla användare, alla program)*
 
@@ -184,6 +184,10 @@ Användargodkännande har inaktiverats för klientorganisationen.
     ![Lösning för behörighetstest](media/embedded-troubleshoot/consent-test-02.png)
 
 En administratör kan *bevilja behörigheter* till programmet – antingen för hela klientorganisationen eller för en viss användare.
+
+### <a name="cs1061-error"></a>CS1061 fel
+
+Ladda ned [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) om du får ett ”'AuthenticationContext' innehåller inte någon definition för” AcquireToken ”och ingen tillgänglig” AcquireToken ”tar emot en första argument av typen” AuthenticationContext' hittades (saknar du en med hjälp av direktiv eller en sammansättningsreferensen?) ”fel.
 
 ## <a name="data-sources"></a>Datakällor
 

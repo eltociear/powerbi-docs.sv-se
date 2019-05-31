@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 226fdd59b00dc2daa625f9b1941599d21cc35087
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397938"
+---
 Med Power BI Desktop kan du utföra analytiska och statistiska analyser och skapa övertygande visuella objekt genom att integrera med R. Du kan vara värd för de R-visualiseringarna i Power BI Desktop-rapporten.
 
 När du väljer ikonen för **visuellt R-objekt** från fönstret **Visualiseringar**, skapar Power BI en platshållare på arbetsytan som värd för ditt visuella R-objekt och visar sedan en R-skriptredigerare som du kan använda direkt på arbetsytan. När du lägger till fält för det visuella R-objektet, lägger Power BI Desktop till dem i fönstret för R-skriptredigeraren.

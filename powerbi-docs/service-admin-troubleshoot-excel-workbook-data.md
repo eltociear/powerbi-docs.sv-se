@@ -7,27 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 849c377a140cd0dd31f55760987336fc3711bc79
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285882"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65101579"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Fel: Det gick inte att hitta några data i din Excel-arbetsbok
 
->[!NOTE]
+>[!NOTE]  
 >Den här artikeln gäller för Excel 2007 och senare.
 
 När du importerar en Excel-arbetsbok till Power BI kan du se följande fel:
 
-*Fel: Det gick inte att hitta några data i din Excel-arbetsbok. Dina data är kanske inte korrekt formaterade. Du behöver redigera din arbetsbok i Excel och sedan importera den igen.*
+*Fel: Det gick inte att hitta några data formaterade som en tabell. Om du vill importera från Excel till Power BI-tjänsten, måste du formatera data som en tabell. Välj alla data i tabellen och tryck på Ctrl + T.*
 
-![Det gick inte att hitta data i arbetsboken](media/service-admin-troubleshoot-excel-workbook-data/pbi_wecouldntfindanydata.png)
+![Det gick inte att hitta data i arbetsboken](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 
 ## <a name="quick-solution"></a>Snabblösning
 1. Redigera din arbetsbok i Excel.
@@ -47,28 +47,28 @@ När du importerar en Excel-arbetsbok, letar Power BI efter dessa tabeller och i
     >[!NOTE]
     >De här bilderna är från Excel 2013. Om du använder en annan version, kan saker se något annorlunda ut, men stegen är desamma.
     
-    ![Öppna arbetsboken](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht1.png)
+    ![Öppna arbetsboken](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-1.png)
 2. Välj cellområdet som innehåller dina data. Den första raden ska innehålla dina kolumnrubriker (kolumnnamnen):
    
-    ![Markera ett cellintervall](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht2.png)
+    ![Markera ett cellintervall](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-2.png)
 3. I menyfliksområdet på fliken **infoga**, klickar du på **tabell**. (Eller, som ett kortkommando, trycker du på **Ctrl + T**.)
    
-    ![Infoga en tabell](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht3.png)
+    ![Infoga en tabell](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-3.png)
 4. Du ser följande dialogruta. Kontrollera att **min tabell har rubriker** är markerat och välj **Ok**:
    
-    ![Skapa en tabell](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlcreatetbl.png)
+    ![Skapa en tabell](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-create-table.png)
 5. Nu är dina data formaterade som en tabell:
    
-    ![Data formaterade som en tabell](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xltbl.png)
+    ![Data formaterade som en tabell](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Spara din arbetsbok.
 7. Gå tillbaka till Power BI. Välj Hämta data längst ned i det vänstra navigeringsfönstret.
    
-    ![Hämta data](media/service-admin-troubleshoot-excel-workbook-data/pbi_getdata.png)
+    ![Hämta data](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. I rutan **Filer** väljer du **Hämta**.
    
-    ![Hämta filer](media/service-admin-troubleshoot-excel-workbook-data/pbi_getfiles.png)
+    ![Hämta filer](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-files.png)
 9. Importera din Excel-arbetsbok igen. Den här gången borde importen hitta tabellen och lyckas.
    
     Om importen fortfarande misslyckas, berättar du för oss genom att klicka på **Community ** i hjälp-menyn:
    
-    ![Community-länk](media/service-admin-troubleshoot-excel-workbook-data/pbi_questionmenucommunity.png)
+    ![Community-länk](media/service-admin-troubleshoot-excel-workbook-data/power-bi-question-menu-community.png)

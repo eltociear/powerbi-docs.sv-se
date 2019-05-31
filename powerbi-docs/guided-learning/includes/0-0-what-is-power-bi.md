@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 30cd80cbeafe2da4468a0049bfa0c34715bce0d3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051082"
+---
 Välkommen till **Interaktiv utbildning** för Power BI. I den här onlinekursen, som du genomför i egen takt, förklaras Power BI steg för steg så att du kan bygga upp dina kunskaper från grunden.
 
 Kursen är utformad för att ge vägledning i lagom stora segment i ett logisk flöde som hjälper dig att lära dig koncepten, detaljerna och exemplen. Den innehåller dessutom massor av visuella objekt och videor som underlättar inlärandet.
@@ -23,7 +31,7 @@ Dessa tre delar – **skrivbordet**, **tjänsten** och **mobilapparna** – är 
 ## <a name="how-power-bi-matches-your-role"></a>Hur Power BI matchar din roll
 Hur du använder Power BI kan bero på vilken roll du har i ett projekt eller i ett team. Och andra personer i andra roller kan använda Power BI på annat sätt, vilket fungerar lika bra.
 
-Du kanske som exempel i första hand använder **Power BI-tjänsten** men din siffertokiga affärsrapportskapande kollega kanske i stor utsträckning använder sig av **Power BI Desktop** (och publicerar skrivbordsrapporterar till Power BI-tjänsten, som du sedan läser). En annan kollega på försäljningssidan kanske främst använder sin Power BI-mobilapp för att övervaka sina försäljningskvoter och för att sätta sig in i ny information om ett potentiellt försäljningstillfälle.
+Du kanske som exempel i första hand använder **Power BI-tjänsten** men din siffertokiga affärsrapportskapande kollega kanske i stor utsträckning använder sig av **Power BI Desktop** (och publicerar skrivbordsrapporterar till Power BI-tjänsten, som du sedan läser). Och en annan kollega på FÖRSÄLJNINGSSIDAN kanske främst använder Power BI-mobilapp att övervaka förloppet på försäljningskvoter och för att gå in på den nya försäljningstillfälle detaljnivå.
 
 Du kan också använda delarna i **Power BI** vid olika tidpunkter, beroende på vad du vill uppnå eller vilken din roll är för ett visst projekt eller en viss uppgift.
 

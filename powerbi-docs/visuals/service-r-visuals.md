@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1e997f5ac7e916f10c98756f142b9f563adea05a
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 587cc5b5d81ca57e809a3973c700c71a214dc045
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426618"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61389847"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Skapa visuella R-objekt i Power BI-tjänsten
 Power BI-tjänsten stöder visning av och interaktion med visuella objekt som skapats med R-skript. Visualiseringar som har skapats med R-skript, vanligtvis kallade *visuella R-objekt*, kan användas för avancerad datautformning och analyser som t.ex. prognoser som bygger på den omfattande analys- och visualiseringskraften i R.
@@ -64,7 +64,7 @@ Följande bild innehåller ett annat exempel med det felmeddelande som visas nä
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Licensiering
-Visuella R-objekt måste ha en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens för att kunna återges i rapporter, uppdateras, filtreras och korsfiltreras. Mer information om Power BI Pro-licenser och hur de skiljer sig från kostnadsfria licenser finns i [Power BI Pro-innehåll – vad är det?](../service-premium.md)
+Visuella R-objekt måste ha en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens för att kunna återges i rapporter, uppdateras, filtreras och korsfiltreras. Mer information om Power BI Pro-licenser och hur de skiljer sig från kostnadsfria licenser finns i [Power BI Pro-innehåll – vad är det?](../service-premium-what-is.md)
 
 Användare av den kostnadsfria Power BI-versionen kan bara använda paneler som delats med dem i Premium-arbetsytor. Mer information finns i [Köpa Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
 

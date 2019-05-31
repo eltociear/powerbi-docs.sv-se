@@ -1,20 +1,20 @@
 ---
 title: Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsgranskning)
 description: Sidnumrerade rapporter, som länge varit standardrapportformat i SQL Server Reporting Services, är nu tillgängliga i Power BI-tjänsten. De här rapporterna kan skrivas ut eller delas. Du kan kontrollera rapportlayouten i detalj. De visar alla data i en tabell, även om tabellen t.ex. sträcker sig över flera sidor.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 12/05/2018
-ms.openlocfilehash: 1b8653b4493e0a6de904ecb0f5bb8ec5bb6f7904
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.date: 05/20/2019
+ms.openlocfilehash: 8da24bb8f7d3b8d507dbb6792556004083b673fe
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991072"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsgranskning)
 
@@ -26,17 +26,21 @@ Sidnumrerade rapporter kan ha många sidor. Den här rapporten har till exempel 
 
 Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten http://app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i Power BI-administratörsportalen. 
 
-## <a name="create-reports-in-report-builder"></a>Skapa rapporter i Report Builder
+## <a name="create-reports-in-power-bi-report-builder"></a>Skapa rapporter i Power BI Report Builder
 
-Sidnumrerade rapporter har sitt eget designverktyg: Report Builder. Om du har skapat sidnumrerade rapporter för Power BI-rapportservern eller SQL Server Reporting Services (SSRS) kan du använda samma verktyg och samma version. Sidnumrerade rapporter som du skapar för SSRS 2016 och 2017, eller lokalt för Power BI Report Server, är i själva verket kompatibla med Power BI-tjänsten. Power BI-tjänsten har bakåtkompatibilitet så att du kan flytta dina rapporter framåt och uppgradera alla sidnumrerade rapporter av äldre version. Alla funktioner är inte tillgängliga vid start. Se [Begränsningar och överväganden](#limitations-and-considerations) i den här artikeln för mer information.
+Sidnumrerade rapporter har sina egna designverktyget och Power BI Report Builder. Det är ett nytt verktyg som delar samma grund som de verktyg som du tidigare hade används för att skapa sidnumrerade rapporter för Power BI Report Server eller SQL Server Reporting Services (SSRS). Sidnumrerade rapporter som du skapar för SSRS 2016 och 2017, eller lokalt för Power BI Report Server, är i själva verket kompatibla med Power BI-tjänsten. Power BI-tjänsten har bakåtkompatibilitet så att du kan flytta dina rapporter framåt och uppgradera alla sidnumrerade rapporter av äldre version. Alla funktioner är inte tillgängliga vid start. Se [Begränsningar och överväganden](#limitations-and-considerations) i den här artikeln för mer information.
      
 ## <a name="report-from-a-variety-of-data-sources"></a>Rapportera från en mängd olika datakällor
 
-En enskild sidnumrerad rapport kan ha flera olika datakällor. Den har inte, till skillnad från Power BI-rapporter, en underliggande datamodell. För denna första version av sidnumrerade rapporter i Power BI-tjänsten skapar du inbäddade datakällor och datamängder i själva rapporten. Du kan inte använda delade datakällor eller delade datamängder för tillfället. Du skapar rapporter i Report Builder på din lokala dator. Om en rapport ansluter till lokala data när du har överfört rapporten till Power BI-tjänsten måste du skapa en gateway och omdirigera dataanslutningen. Här följer de datakällor som du kan ansluta till den första versionen:
+En enskild sidnumrerad rapport kan ha flera olika datakällor. Den har inte, till skillnad från Power BI-rapporter, en underliggande datamodell. För denna första version av sidnumrerade rapporter i Power BI-tjänsten skapar du inbäddade datakällor och datamängder i själva rapporten. Du kan inte använda delade datakällor eller delade datamängder för tillfället. Du skapar rapporter i Report Builder på din lokala dator. Om en rapport ansluter till lokala data när du har överfört rapporten till Power BI-tjänsten måste du skapa en gateway och omdirigera dataanslutningen. Här följer de datakällor som du kan ansluta till just nu:
 
 - Azure SQL Database och Data Warehouse
+- Azure Analysis Services (via SSO)
 - SQL Server via en gateway
 - SQL Server Analysis Services via en gateway
+- Power BI-datauppsättningar
+- Oracle
+- Teradata
  
 Fler datakällor kommer under förhandsversionsperioden.
 
@@ -62,7 +66,13 @@ När du utformar en sidnumrerad rapport skapar du i själva verket en *rapportde
 
 ## <a name="view-your-paginated-report"></a>Visa din sidnumrerade rapport
 Du kan visa din sidnumrerade rapport i Power BI-tjänsten i en webbläsare, och även i Power BI-mobilappar. Från Power BI-tjänsten kan du exportera rapporten till flera format, t.ex. HTML, MHTML, PDF, XML, CSV, TIFF, Word och Excel. Du kan också dela den med andra.  
-  
+
+## <a name="create-a-subscription-to-your-report"></a>Skapa en prenumeration i din rapport
+
+Du kan nu ställa in e-postprenumerationer för dig själv och andra för sidnumrerade rapporter i Power BI-tjänsten. I allmänhet är processen densamma som prenumererar på rapporter och instrumentpaneler i Power BI-tjänsten. Att konfigurera prenumerationer, väljer du hur ofta du vill ta emot e-postmeddelanden: varje dag, vecka eller per timme. Prenumerationen innehåller en PDF-bilagan på hela rapporten utdata.
+
+Mer information finns i artikeln [prenumerera sidnumrerade rapporter i Power BI-tjänsten dig själv och andra](paginated-reports-subscriptions.md). 
+
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
 Här följer några andra funktioner som inte stöds i den första versionen:
@@ -70,16 +80,13 @@ Här följer några andra funktioner som inte stöds i den första versionen:
 - Fästa rapportsidor eller visuella objekt på Power BI-instrumentpaneler. Du kan fortfarande fästa visualiseringar på en Power BI-instrumentpanel från en lokal sidnumrerad rapport på en Power BI-rapportserver eller Reporting Services-rapportserver. Se [Fäst Reporting Services-objekt till Power BI-instrumentpaneler](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) för mer information.
 - Interaktiva funktioner som dokumentkartor och Visa/Dölj-knappar.
 - Underrapporter och detaljerade rapporter.
-- Prenumerationer.
 - Delade datakällor och delade datamängder.
-- Power BI-datamängder.
 - Visuella objekt från Power BI-rapporter.
-- Sidnumrerade rapporter i appar. Du kan dela en sidnumrerad rapport från en apparbetsyta, men du kan inte inkludera den när du publicerar appen från arbetsytan.
  
 ## <a name="next-steps"></a>Nästa steg
 
-- [Installera Report Builder från Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968)
-- [Självstudie: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)
+- [Installera Power BI Report Builder från Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Självstudier: Skapa en sidnumrerad rapport](paginated-reports-quickstart-aw.md)
 - [Ange data direkt i en sidnumrerad rapport](paginated-reports-enter-data.md)
 
   

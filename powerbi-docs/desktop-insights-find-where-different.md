@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 82844a1e928d30db12ba5659edcee7b07eaaf7b3
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 99ad06b84b01ce94b3433952cdd031a81c336e04
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215369"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454154"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Använda insikter i Power BI Desktop för att se var en fördelning avviker (förhandsversion)
 
@@ -48,7 +48,7 @@ Om du vill använda insikter för att se var fördelningar som visas i diagram a
 
 Värdena som det valda filtret tillämpas på visas med den vanliga standardfärgen. Värdena i den ursprungliga visualiseringen visas i grått för enklare jämförelse. Du kan ta med upp till tre olika filter (*Touring Bikes*, *Mountain Bikes*, *Road Bikes* i det här exemplet) och du kan välja olika filter genom att klicka på dem. (Du kan också markera flera samtidigt genom att använda CTRL-tangenten.)
 
-För enkla additiva mått, som *totalförsäljning* i det här exemplet, baseras jämförelsen på de relativa i stället för de absoluta värdena. Även om försäljningen av Touring Bikes helt klart är lägre än försäljningen i alla kategorier, så används en dubbel axel i visualiseringen för att kunna jämföra försäljningsandelen mellan olika länder, för Touring Bikes jämfört med alla cykelkategorier.  Växlingsknappen nedanför visualiseringen gör att de två värdena kan visas på samma axel, så att de absoluta värdena enkelt kan jämföras (som du ser i följande bild).    
+För enkla additiva mått, som *totalförsäljning* i det här exemplet, baseras jämförelsen på de relativa i stället för de absoluta värdena. Därför försäljning för Turnerande cyklar är lägre än övergripande försäljning för alla kategorier, använder som standard det visuella objektet en dubbel axel för att tillåta en jämförelse mellan andelen av försäljning över olika länder för Turnerande cyklar jämfört med alla kategorier av cyklar.  Växlingsknappen nedanför visualiseringen gör att de två värdena kan visas på samma axel, så att de absoluta värdena enkelt kan jämföras (som du ser i följande bild).    
 
 ![visuella objekt så som de visas när insikter används](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -63,7 +63,7 @@ Du kan använda insikter när rapporten är i läs- eller redigeringsläge, vilk
 ## <a name="details-of-the-returned-results"></a>Information om de returnerade resultaten
 Enkelt beskrivet tar algoritmen alla andra kolumner i modellen, använder värdena i kolumnerna som filter i det ursprungliga visuella objektet och ser sedan vilka av dessa filtervärden som ger det mest *avvikande* resultatet jämfört med den ursprungliga visualiseringen.
 
-Antagligen undrar du exakt vad *avvikande* innebär. Anta till exempel att den övergripande uppdelningen av försäljningen mellan USA och Kanada såg ut så här:
+Du sannolikt undrar vad *olika* innebär. Anta till exempel att den övergripande uppdelningen av försäljningen mellan USA och Kanada såg ut så här:
 
 |Land  |Försäljning (miljoner USD)|
 |---------|----------|
@@ -97,7 +97,7 @@ Med tanke på hur den här typen av mått fungerar betraktas detta som signifika
 
 De visuella objekten som visas är alltså avsedda att tydliggöra skillnaderna mellan den övergripande fördelningen (i den ursprungliga visualiseringen) och värdet då det specifika filtret tillämpas.  
 
-För additiva mått, som *försäljningen* i föregående exempel, används ett stapel- och linjediagram, med en dubbel axel i lämplig skala som gör det enkelt att jämföra de relativa värdena. Staplarna visar värdet då filtret tillämpas, och linjen visar det övergripande värdet (med kolumnaxeln till vänster och radaxeln till höger som vanligt). Linjen visas i ett *stegformat*, med en grå streckad linje. Om kolumnaxelns högsta värde är 4 och radaxelns högsta värde är 20 i föregående exempel, skulle det vara enkelt att jämföra de relativa värdena mellan USA och Kanada för filtrerade och övergripande värden. 
+För additiva mått, som *försäljningen* i föregående exempel, används ett stapel- och linjediagram, med en dubbel axel i lämplig skala som gör det enkelt att jämföra de relativa värdena. Staplarna visar värdet då filtret tillämpas, och linjen visar det övergripande värdet (med kolumnaxeln till vänster och radaxeln till höger som vanligt). Raden visas med hjälp av en *stegvis* format, med en streckad linje fylls med grå. I föregående exempel, om det högsta värdet för kolumnen-axel är 4 och maxvärdet för rad axel är 20, då sedan vi kan enkelt jämförelse mellan USA och Kanada relativa värden för de filtrera och totala värdena. 
 
 För icke-additiva mått, som *marginalerna* i föregående exempel, används också ett stapel- och linjediagram, där en enda axel gör det enkelt att jämföra de absoluta värdena. Även här visar linjen (i grått) det övergripande värdet. När faktiska eller relativa tal jämförs beräknas storleksskillnaden mellan två fördelningar inte bara som skillnaden i värdena. Till exempel:
 
@@ -107,7 +107,7 @@ För icke-additiva mått, som *marginalerna* i föregående exempel, används oc
 
 * Olika heuristiker används för att välja det mest meningsfulla resultatet, till exempel genom att överväga andra relationer mellan data.
      
-När de olika kolumnerna, och värdena för var och en av dessa kolumner, har analyserats väljs den uppsättning värden ut som uppvisar störst skillnader. För att göra det enklare att förstå sambanden grupperas värdena efter kolumn, där den kolumn vars värden uppvisar störst skillnad visas först. Upp till tre värden visas per kolumn, men färre kan visas om det finns mindre än tre värden som har stor påverkan, eller om vissa värden har mycket större påverkan än andra. 
+När de olika kolumnerna, och värdena för var och en av dessa kolumner, har analyserats väljs den uppsättning värden ut som uppvisar störst skillnader. För att göra det enklare att förstå sambanden grupperas värdena efter kolumn, där den kolumn vars värden uppvisar störst skillnad visas först. Upp till tre värden visas per kolumn, men mindre kan visas om det finns färre än tre värden har en stor inverkan eller om vissa värden är mycket mer kraftfulla än andra. 
 
 Eftersom inte alla kolumner i modellen alltid kan analyseras inom den tillgängliga tiden, kan det hända att de kolumner och värden med störst påverkan inte visas. Dock används olika heuristiker för att se till att de kolumner som anses vara mest sannolika analyseras först. Anta till exempel att alla kolumner har analyserats och att följande kolumner/värden anses ha störst påverkan på fördelningen, från störst till minst påverkan:
 

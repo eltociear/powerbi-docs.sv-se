@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8762be72353aa779281d721ac8038b6e3dd16aa2
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454237"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Använd infogade hierarkietiketter i Power BI Desktop
@@ -51,7 +51,7 @@ Nu ska vi titta på ett annat diagram – med data som innehåller informella hi
 
 ![Diagram med informell hierarki](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Att välja **Expandera till nästa nivå** visar nästa nivå med infogad visning av hierarkietiketter. Som standard sorteras infogade hierarkier efter måttvärde, i det här fallet **Quantity**. När infogade hierarkietiketter är aktiverade kan du även sortera dessa data efter hierarki genom att välja ellipsen i det övre högra hörnet (**...**) och sedan välja **Sortera efter ProductName > ShipCountry** som visas i följande bild.
+Att välja **Expandera till nästa nivå** visar nästa nivå med infogad visning av hierarkietiketter. Som standard sorteras infogade hierarkier efter måttvärde, i det här fallet **Quantity**. När infogade hierarkietiketter är aktiverade kan du även sortera dessa data efter hierarki genom att välja ellipsen i det övre högra hörnet ( **...** ) och sedan välja **Sortera efter ProductName > ShipCountry** som visas i följande bild.
 
 ![Diagram med informell hierarki som sorterats efter standard](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 

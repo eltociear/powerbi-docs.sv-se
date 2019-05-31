@@ -2,21 +2,22 @@
 title: Tagga ett streckkodsfält i Power BI Desktop för mobilappar
 description: När du markera ett streckkodsfält i modellen i Power BI Desktop kan du filtrera data för streckkoder automatiskt i Power BI-appen på din iPhone.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2018
-ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: 584947dcd92078ea025468f5a38fc7fed3e2616a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 43d722e6667114ce5c3705270a0b55b541685108
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289910"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61293583"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-the-mobile-apps"></a>Tagga streckkoder i Power BI Desktop för mobilappar
+
 Du kan i Power BI Desktop [kategorisera data](desktop-data-categorization.md) för en kolumn, så Power BI Desktop vet hur värden ska hanteras i visuella objekt i en rapport. Du kan också kategorisera en kolumn som **Streckkod**. När du eller dina kollegor [skannar en streckkod på en produkt med Power BI-appen](consumer/mobile/mobile-apps-scan-barcode-iphone.md) på en iPhone visas en rapport som innehåller den streckkoden. När du öppnar rapporten i mobilappen filtrerar Power BI rapporten automatiskt efter data som är relaterade till streckkoden.
 
 1. Växla till datavy i Power BI Desktop.

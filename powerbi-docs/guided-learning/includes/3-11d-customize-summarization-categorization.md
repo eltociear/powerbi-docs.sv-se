@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1db5f34ce7a08b32b665409322836eba483be927
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61397956"
+---
 Power BI har egenskaper som du kan tilldela för fält i din modell och som kan hjälpa dig att rapportera, visualisera och presentera data tydligare. Till exempel, det kan hända att du vill beräkna medelvärdet för en lista med tal men Power BI summerar listan automatiskt. Med Power BI kan ändra du hur listorna med tal sammanfattas.
 
 ## <a name="numeric-control-over-summarization"></a>Numerisk kontroll över sammanfattning

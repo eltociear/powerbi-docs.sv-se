@@ -7,16 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 2/9/2019
+ms.date: 05/28/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b65acda3ceb8d375cb34393828b74e191b2e5504
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: 06ba5835a568b7158a204ea6676e92844d40414d
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489601"
----
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375266"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -31,16 +30,32 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-
-## <a name="march-2019"></a>Mars 2019
-* Multi-Geo för Power BI Premium är allmänt tillgängligt.
-* Redigering och hantering av Power BI-innehåll stöds för Azure B2B.
+## <a name="may-2019"></a>Maj 2019
+* [Anpassad navigering](service-create-distribute-apps.md) för Power BI-appar.
+* Ytterligare bilagor typer (PPTX, XLSX, DOCX, CSV, XML) tillgängliga för e-subcriptions i sidnumrerade rapporter.
 
 ## <a name="previous-months-2019"></a>Föregående månader (2019)
+### <a name="april-2019"></a>April 2019
+* Allmän tillgänglighet för Power BI [dataflöden](service-dataflows-overview.md).
+* Allmän tillgänglighet för den nya upplevelsen för arbetsytor.
+* Ny Power BI-regioner i Frankrike och Korea.
+* Uppdaterade frågor och svar en upplevelse för instrumentpaneler.
+* Stöd för Azure Analysis Services i [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md).
+* Sidnumrerade rapporter i Power BI-appar som stöds.
+* [E-prenumerationer](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) med PDF-bilagor för sidnumrerade rapporter.
+* Power BI Premium sammanfattning och arbetsbelastningen mått som stöds i Administratörsportalen
+* [Fråga cachelagring](power-bi-query-caching.md) tillgängliga i Power BI Premium.
+* Allmän tillgänglighet för [Power BI Start](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+
+### <a name="march-2019"></a>Mars 2019
+* Multi-Geo för Power BI Premium är allmänt tillgängligt.
+* Redigering och hantering av Power BI-innehåll stöds för Azure B2B.
+* Offentlig förhandsversion av skrivskyddade [XMLA-slutpunkten](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+
 ### <a name="february-2019"></a>Februari 2019
 * Storleksmått för arbetsbelastningar och aktiva datauppsättningar i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Exportera till PDF för Power BI-rapporter.
-* [E-postprenumerationer på begäran](service-report-subscribe.md).
+* [På begäran e-postprenumerationer](service-report-subscribe.md).
 * Massåtgärder i administratörsportalen.
 * Filtrerad export för PPT och PDF.
 * [Inställningar för hjälp och support](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) i administratörsportalen.
@@ -72,8 +87,8 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ### <a name="september-2018"></a>September 2018
 * [Instrumentpanelskommentarer](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) i Power BI-tjänsten.
-* Allmänt tillgänglig förhandsversion av [Power BI-start och global sökning](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Möjlighet att [övervaka frågor](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Offentlig förhandsversion av [Power BI start och Global sökning](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Möjligheten att [övervakning frågor](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) i den [kapacitet övervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>Augusti 2018
 * [Kapacitetövervakningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) för Power BI Premium.
@@ -194,7 +209,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * Utforska dina [projekthanteringsdata i Jira ](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) med det här innehållspaketet för Power BI
 * Utforska dina [Insightcentr-data](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) med det här innehållspaketet för Power BI
 * Skapa informationsgrafik snabbt med [det anpassade visuella objektet informationsgrafikdesigner](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
-* Privat förhandsversion: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) skickar datauppsättningar för Power BI-strömning, från vilka du kan skapa strömmande paneler.
+* Förhandsversion: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) skickar datauppsättningar för Power BI-strömning, från vilka du kan skapa strömmande paneler.
 * Förhandsversion: Lägga till [ESRI ArcGIS-kartvisualiseringar](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) till dina rapporter och instrumentpaneler
 
 ### <a name="october-2016"></a>Oktober 2016
@@ -335,7 +350,7 @@ Den här månaden vi gjort vissa uppdateringar för instrumentpaneler, Quick Ins
 
 ***Quick Insights***
 
-* Trend- och sambandsinsikter har nu trendlinjer som gör det lättare att se mönster i data.
+* Trend- och korrelation insights har nu trendlinjer som gör det lättare att se mönster i data.
 
 ***Frågor och svar***
 
@@ -699,7 +714,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **15 april 2015**
 
-* Du kan nu visualisera och utforska dina **Google Analytics**-data med vårt nya innehållspaketet! Med Google Analytics.innehållspaketet medföljer en instrumentpanel, rapport och datauppsättning som ger insikter om användningen av din webbplats under de senaste 6 månaderna. Du kan läsa [blogginlägget](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) och [dokumentationen](service-connect-to-google-analytics.md) för mer information.
+* Du kan nu visualisera och utforska dina **Google Analytics**-data med vårt nya innehållspaketet! Med Google Analytics.innehållspaketet medföljer en instrumentpanel, rapport och datauppsättning som ger insikter om användningen av din webbplats under de senaste 6 månaderna. Du kan läsa [blogginlägget](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * Du kan nu **fästa alla kort** utom de som innehåller KPI:er och avbildningar från frågor och svar och rapporter
 * Du kan nu **använda kort i Frågor och svar** med frasen ”som kort' i slutet av din fråga
 

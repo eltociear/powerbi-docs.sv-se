@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279238"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61141638"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
@@ -87,7 +87,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
    
    * Gula stjärnor ![Favoritstjärna](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
    * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../service-data-classification.md).
-3. Du kan dela en instrumentpanel från en arbetsyta. Tryck på knappen (**...** ) i det nedre högra hörnet av instrumentpanelens sida och tryck på **Bjud in andra**.
+3. Du kan dela en instrumentpanel från en arbetsyta. Tryck på knappen ( **...** ) i det nedre högra hörnet av instrumentpanelens sida och tryck på **Bjud in andra**.
    
    ![Ikon för inbjudan](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Du kan också trycka på en instrumentpanel om du vill öppna den och se paneler på instrumentpanelen. Du kan interagera den medan du är på instrumentpanelen:

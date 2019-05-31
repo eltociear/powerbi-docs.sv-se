@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 39678850b2e1acd16c678206feba8cccffa6477d
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.openlocfilehash: 383d28a9e24165b12cda73ee254541a32db4391c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327997"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61325637"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysera Azure-kostnader och användningsdata i Power BI Desktop
 
@@ -24,7 +24,9 @@ Power BI Desktop kan ansluta till Azure och få detaljerade data om användninge
 
 Power BI stöder för närvarande anslutning till faktureringskonton för Enterprise-avtal och kundavtal.
 
-Användare med Enterprise-avtal bör ansluta med Azure Consumption Insights. Kontoanvändare med kundavtal bör ansluta med Azure Cost Management.
+* **Enterprise-avtal** användarna ska ansluta med den **Azure Consumption Insights-anslutningsapp**.
+
+* **Kundavtal** användarna ska ansluta med den **Azure Cost Management-anslutningstjänsten**.
 
 ## <a name="connect-with-azure-consumption-insights"></a>Ansluta till Azure Consumption Insights
 
@@ -34,7 +36,7 @@ I det här avsnittet lär du dig att hämta de data du behöver, migrera med hj�
 
 För att ansluta med hjälp av anslutningsappen **Azure Consumption Insights** måste du ha åtkomst till företagsfunktioner i Azure-portalen.
 
-Om du vill ansluta med hjälp av anslutningsappen **Azure Consumption Insights** väljer du **Hämta data** från fältet **Start** i **Power BI Desktop**. Välj **Onlinetjänster** från kategorierna till vänster för att visa **Microsoft Azure Consumption Insights (beta)**. Välj **Anslut**.
+Om du vill ansluta med hjälp av anslutningsappen **Azure Consumption Insights** väljer du **Hämta data** från fältet **Start** i **Power BI Desktop**. Välj **Onlinetjänster** från kategorierna till vänster för att visa **Microsoft Azure Consumption Insights (beta)** . Välj **Anslut**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
@@ -155,7 +157,7 @@ Många instrumentpaneler har ytterligare tabeller som används för sökning och
 När du har kommit så här långt bör de flesta av dina visuella objekt, tabeller och listrutor fungera som förväntat. Du kan dock behöva göra några mindre justeringar i formatet så att allt blir precis som du vill ha det. Ägna en stund åt att titta på dina instrumentpaneler och visuella objekt så att de ser helt rätt ut.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Använda API:et Azure Consumption och Insights (ACI) för att hämta förbrukningsdata
-Azure tillhandahåller också API:et [**Azure Consumption and Insights (ACI)**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan skapa dina egna anpassade lösningar för att hämta, rapportera och visualisera förbrukningsinformation i AZURE med ACI API.
+Azure tillhandahåller också API:et [**Azure Consumption and Insights (ACI)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan skapa dina egna anpassade lösningar för att hämta, rapportera och visualisera förbrukningsinformation i AZURE med ACI API.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Kartlägg namn och användnings information mellan portalen, anslutningsappen och API:et
 Kolumnerna och namnen på detaljerna i Azure Portal ser ut på samma sätt i API:et och anslutningsappen men de är inte alltid identiska. För att tydliggöra detta kartlägger följande tabell relationerna mellan API:et, anslutningsappen och kolumnerna du ser i Azure Portal. Här ser du även om kolumnen inte längre gäller. För mer information och definitioner av dessa begrepp kan du läsa mer i [ordlistan för faktureringsdata i Azure](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
@@ -212,6 +214,11 @@ Kolumnerna och namnen på detaljerna i Azure Portal ser ut på samma sätt i API
 
 I det här avsnittet lär du dig att ansluta till ditt faktureringskontos kundavtal.
 
+> [!NOTE]
+> Azure Cost Management-anslutningstjänsten stöder för närvarande kunder på de **kundavtal**.  **Enterprise-avtal** ska kunder använda Microsoft Azure Consumption Insights-anslutningsapp.
+> 
+> 
+
 Om du vill ansluta med hjälp av anslutningsappen **Azure Cost Management** väljer du **Hämta data** i menyfliksområdet **Start** i **Power BI Desktop**.  Välj **Azure** i kategorierna till vänster. **Azure Cost Management (Beta)** öppnas. Välj **Anslut**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
@@ -234,8 +241,8 @@ Du uppmanas att logga in med din e-postadress och ditt lösenord för Azure.  N�
 * **Marketplace**: Ger användningsbaserade Microsoft Azure Marketplace-avgifter.
 * **PriceSheets**: Visar tillämpliga priser per mätare för den angivna faktureringsprofilen.
 * **RI-avgifter**: Ger kostnader som är kopplade till dina Reserverade instanser under de senaste 24 månaderna.
-* **RI-rekommendationer (enkel)**: Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enda prenumeration under de senaste 7, 30 eller 60 dagarna.
-* **RI-rekommendationer (delad)**: Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna.
+* **RI-rekommendationer (enkel)** : Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enda prenumeration under de senaste 7, 30 eller 60 dagarna.
+* **RI-rekommendationer (delad)** : Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna.
 * **RI-användning**: Ger information om förbrukning för dina befintliga reserverade instanser under den senaste månaden.
 * **Användningsinformation**: Visar en uppdelning av förbrukade mängder och beräknade kostnader för ett specifikt faktureringsprofils-ID.
 

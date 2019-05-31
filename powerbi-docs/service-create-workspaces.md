@@ -1,36 +1,34 @@
 ---
-title: Skapa arbetsytor med dina kollegor i Power BI
-description: Lär dig hur du skapar arbetsytor, samlingar av instrumentpaneler och rapporter som skapats för att förse din organisation med statistik.
+title: Skapa klassiska arbetsytor i Power BI
+description: Lär dig mer om att skapa arbetsytor, samlingar av instrumentpaneler, rapporter och sidnumrerade rapporter som skapats för att leverera nyckelvärden för din organisation.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 23c011eded113a0249f5e4a354f909a30bc97148
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: dcf9b8befabfec98fcae154e6276f8e698b3ddc2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277927"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61151047"
 ---
-# <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Skapa arbetsytor med dina kollegor i Power BI
+# <a name="create-classic-workspaces-in-power-bi"></a>Skapa klassiska arbetsytor i Power BI
 
-I Power BI kan du skapa *arbetsytor*, platser där du kan samarbeta med kollegor för att skapa och förfina samlingar av instrumentpaneler och rapporter. Sedan paketerar du samlingen tillsammans i *appar* som du kan distribuera till hela organisationen eller till specifika personer eller grupper. 
+I Power BI, kan du skapa *arbetsytor*, placerar för att samarbeta med kollegor för att skapa och förfina samlingar av instrumentpaneler, rapporter och sidnumrerade rapporter. Och sedan samlingen kan slå samman i *appar* som du kan distribuera till hela organisationen eller till specifika personer eller grupper. 
 
-![Power BI-appar](media/service-create-workspaces/power-bi-apps-left-nav.png)
+**Visste du att?** Powerbi erbjuder en ny arbetsyta-upplevelse, som nu är standard. Läs [organisera arbete i nya arbetsyteförhandsversionen](service-new-workspaces.md) mer information om nya arbetsytor. 
 
-När du skapar en arbetsyta skapar du en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Office 365. Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik. Alla som du lägger till i en apparbetsyta behöver en Power BI Pro-licens. 
-
-**Visste du att?** Power BI har en ny arbetsyta i förhandsversion. I [Organisera arbete i de nya arbetsytorna (förhandsversion)](service-new-workspaces.md) finns information om de nya arbetsytorna. 
+När du skapar en klassiska arbetsyta, skapar du en underliggande, associerade Office 365-grupp. All administration för arbetsytor sker i Office 365. Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik. Alla som du lägger till i en apparbetsyta behöver en Power BI Pro-licens. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Video: Appar och apparbetsytor
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-an-app-workspace-based-on-an-office-365-group"></a>Skapa en apparbetsyta baserat på en Office 365-grupp
+## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Skapa en klassisk app-arbetsyta som är baserat på en Office 365-grupp
 
 När du skapar en apparbetsyta byggs den på en Office 365-grupp.
 
@@ -52,6 +50,8 @@ Som standard skapar Power BI en liten färgad cirkel för din app med appens ini
 3. Välj pennikonen igen och leta reda på den bild som du vill använda.
    
      ![Välj pennan igen](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Avbildningar kan vara .png, .jpg eller BMP-filer. Bildernas storlek kan vara stora, upp till 3 MB. 
 
 4. Välj **Spara**.
    
@@ -77,9 +77,16 @@ I de aktuella arbetsytorna kan du även ansluta med hjälp av organisationsinneh
 
 ## <a name="distribute-an-app"></a>Distribuera en app
 
-När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera, och sedan publicerar du det som en *app*. Dina medarbetare kan få apparna på ett par olika sätt. Du kan installera dem automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. I annat fall kan de hitta och installera dina appar från Microsoft AppSource, eller så kan du skicka dem en direktlänk. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Information finns i [Publicera appar med instrumentpaneler och rapporter i Power BI](service-create-distribute-apps.md).
+Om du vill distribuera officiella innehåll till en stor publik i din organisation kan du publicera en app från din arbetsyta.  När innehållet är klar kan du välja vilka instrumentpaneler och rapporter som du vill publicera och sedan publicera den som en *app*. Du kan skapa en app från varje arbetsyta.
 
-## <a name="power-bi-apps-faq"></a>Vanliga frågor och svar om Power BI-appar
+Listan över appar i det vänstra navigeringsfönstret visar alla appar som du har installerat. Dina medarbetare kan få appen på ett par olika sätt. 
+- Användarna kan söka efter och installera appen från Microsoft AppSource
+- Du kan skicka dem en direktlänk. 
+- Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. 
+
+Användarna ser uppdaterade appen innehåll automatiskt när du har publicerat en uppdatering från din arbetsyta. Du kan styra hur ofta data uppdateras genom att ange uppdateringsschemat i de datauppsättningar som används av appinnehåll i din arbetsyta. Se [publicera en app från de nya arbetsytorna i Power BI](service-create-distribute-apps.md) mer information.
+
+## <a name="power-bi-classic-apps-faq"></a>Power BI-klassiska appar vanliga frågor och svar
 
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Hur skiljer sig appar åt från organisationsinnehållspaket?
 Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisationsinnehållspaket, fortsätter de att fungera sida vid sida med appar. Det finns några viktiga skillnader mellan appar och innehållspaket. 

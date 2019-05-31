@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273625"
+---
 Med DAX får du tillgång till många funktioner för att forma, ställa upp eller i övrigt analysera dina data. Dessa funktioner kan grupperas i en handfull kategorier:
 
 * **Aggregerings**funktioner
@@ -52,7 +60,7 @@ Samlingen av **logiska** funktioner i DAX inkluderar:
 
 Dessa särskilda funktioner kan också anges med *operatorer*. Till exempel **AND** kan skrivas som (ersättas med) **&&** i en DAX-formel.
 
-Du kan använda operatorer (som **&&**) när du behöver fler än två villkor i din formel, men i övrigt är det bästa praxis att använda själva funktionsnamnet (som **AND**) för DAX-kodens läsbarhet.
+Du kan använda operatorer (som **&&** ) när du behöver fler än två villkor i din formel, men i övrigt är det bästa praxis att använda själva funktionsnamnet (som **AND**) för DAX-kodens läsbarhet.
 
 ## <a name="information-functions"></a>Informationsfunktioner
 **Informations**funktionerna i DAX inkluderar:

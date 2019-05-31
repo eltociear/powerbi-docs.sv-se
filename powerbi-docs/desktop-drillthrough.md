@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: dffcf8fb3daa7559abd4d3b999ea3a73392d0eb9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 7c9d400b196366609caebe9f79bb9a8130a4ad11
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283126"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375179"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Använd drillthrough i Power BI Desktop
 Med **drillthrough** i **Power BI Desktop** kan du skapa en sida i rapporten som fokuserar på en specifik enhet – till exempel en leverantör, kund eller tillverkare. Användare kan högerklicka på en datapunkt i andra rapportsidor. De kan sedan titta på fokussidan i större detalj för att visa de detaljer som har filtrerats för det sammanhanget.
@@ -81,5 +81,6 @@ Svårare än så är det inte att använda **drillthrough** i dina rapporter. De
 
 Följande artiklar kan också vara av intresse för dig:
 
-* [Använda utsnitt i Power BI Desktop](visuals/desktop-slicers.md)
+* [Använd detaljinformation för cross-rapport i Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Använda utsnitt i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

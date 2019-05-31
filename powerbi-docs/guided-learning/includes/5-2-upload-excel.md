@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cff8e70e43496b264fd0dd549759f939bf90e33f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271527"
+---
 I det här ämnet tar vi först en titt på hur du kan importera en Excel-arbetsboksfil som innehåller en enkel **tabell** från en lokal enhet till Power BI. Sedan lär du dig hur du kan börja utforska tabellens data i Power BI genom att skapa en rapport.
 
 ## <a name="make-sure-your-data-is-formatted-as-a-table"></a>Säkerställ att dina data är formaterade som en tabell.

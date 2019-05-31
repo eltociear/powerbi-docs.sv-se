@@ -11,11 +11,11 @@ ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892423"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61326234"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 

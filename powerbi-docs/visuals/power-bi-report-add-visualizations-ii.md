@@ -11,11 +11,11 @@ ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: c42d96fea37a6309908dd357425c3d0504e18397
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288254"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61410262"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Del 2, lägg till visualiseringar i en Power BI-rapport
 I [del 1](power-bi-report-add-visualizations-ii.md) skapade du en grundläggande visualisering genom att markera kryssrutorna bredvid fältnamnen.  I del 2 får du lära dig hur du använder dra och släpp och drar nytta av panelerna **Fält** och **Visualiseringar** för att skapa och modifiera visualiseringar.
@@ -35,7 +35,7 @@ I de här självstudierna tar vi hjälp av vår Retail Analysis-datauppsättning
 2. Lägg till en ny sida genom att välja den gula plus-ikonen längst ned på arbetsytan.
 
 ### <a name="add-a-visualization-that-looks-at-this-years-sales-compared-to-last-year"></a>Lägg till en visualisering som tittar på det här årets försäljning jämfört med föregående års.
-1. I tabellen **Försäljning** väljer du **This Year Sales (Årets försäljning)** > **Värde** och **Last Year Sales (Förra årets försäljning)**. Power BI skapar ett kolumndiagram.  Detta är något som är intressant och vi vill veta mer om. Hur ser den månadsvisa försäljningen ut?  
+1. I tabellen **Försäljning** väljer du **This Year Sales (Årets försäljning)**  > **Värde** och **Last Year Sales (Förra årets försäljning)** . Power BI skapar ett kolumndiagram.  Detta är något som är intressant och vi vill veta mer om. Hur ser den månadsvisa försäljningen ut?  
    
    ![](media/power-bi-report-add-visualizations-ii/power-bi-barchart.png)
 2. Från tidtabellen drar du **FiscalMonth** till **Axel**-området.  
