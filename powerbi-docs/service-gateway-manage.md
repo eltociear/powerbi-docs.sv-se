@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: ddd476e47f90be50ed8b4564a70d312e98bef90e
-ms.sourcegitcommit: 2df541facab8a1621953e91dbbee18c7d4e9a3c3
-ms.translationtype: HT
+ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
+ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64770043"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469789"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Hantera en lokal Power BI-gateway
 
@@ -52,8 +52,6 @@ Power BI stöder många lokala datakällor och var och en har sina egna krav. Ga
     ![Datakällsinställningar](media/service-gateway-manage/data-source-settings.png)
 
 1. För SQL Server, väljer du en **autentiseringsmetod** för **Windows** eller **Grundläggande** (SQL-autentisering).  Om du väljer **Grundläggande** ska du ange autentiseringsuppgifterna för datakällan.
-
-1. Om den här datakällan är otillgänglig eller långsam för närvarande väljer du **hoppa över testanslutningen**. Annars kan skapandet av datakällan misslyckas.
 
 1. Under **Avancerade inställningar** kan du som alternativ konfigurera [sekretessnivån](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) för datakällan (gäller inte för [DirectQuery](desktop-directquery-about.md)).
 
