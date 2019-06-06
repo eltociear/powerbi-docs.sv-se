@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 462f0fb30fd1f77167253fd404e91c2d80d6ac35
-ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
+ms.openlocfilehash: fbae2a8b577c52ae597d44bd6ea9913510c4c65c
+ms.sourcegitcommit: dc73e932c9982a4aa0b0ec5297fb9f94c6156bc5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565225"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66518573"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Distribuera och hantera Power BI Premium-kapaciteter
 
@@ -416,9 +416,9 @@ Det är möjligt att ta bort en Premium-kapacitet och det leder inte till bortta
 
 ### <a name="assigning-workspaces-to-capacities"></a>Tilldela arbetsytor till kapaciteter
 
-Arbetsytor kan tilldelas en Premium-kapacitet i **Power BI-administratörsportalen****** eller, för en apparbetsyta – i fönstret **Arbetsyta**.
+Arbetsytor kan tilldelas en Premium-kapacitet i **Power BI-administratörsportalen** **** eller, för en apparbetsyta – i fönstret **Arbetsyta**.
 
-Kapacitetsadministratörer, samt globala administratörer för Office 365 eller Power BI-tjänstadministratörer kan masstilldela arbetsytor i **Power BI-administratörsportalen******. Masstilldelningar kan gälla för:
+Kapacitetsadministratörer, samt globala administratörer för Office 365 eller Power BI-tjänstadministratörer kan masstilldela arbetsytor i **Power BI-administratörsportalen** **** . Masstilldelningar kan gälla för:
 
 - **Arbetsytor per användare**: Alla arbetsytor som ägs av dessa användare, inklusive personliga arbetsytor har tilldelats Premium-kapacitet. Detta omfattar ny tilldelning av arbetsytor när de redan är tilldelade till en annan Premium-kapacitet. Dessutom kan användare också tilldelas behörigheter för arbetsytetilldelning.
 
@@ -437,168 +437,7 @@ I Power BI-tjänsten identifieras en arbetsyta som tilldelats en Premium-kapacit
 
 ### <a name="monitoring-capacities"></a>Övervaka kapaciteter
 
-Övervakning av Premium-kapaciteter ger administratörer en förståelse för hur kapaciteterna utförs. Kapaciteter kan övervakas med hjälp av **Power BI-administratörsportalen****** eller **Kapacitetsmåttappen för Power BI Premium** (Power BI).
-
-#### <a name="power-bi-admin-portal"></a>Power BI-administratörsportal
-
-**Power BI-administratörsportalen****** tillåter övervakning av fyra sammanfattningspaneler som rapporterar om belastningar som placeras på kapacitetsresurserna. De fyra sammanfattningspanelerna är:
-
-- **CPU** : Antalet gånger processorn överskridit 80 % användning
-- **Minnesförslöing**: Antalet gånger 80 % överskrids, vilket representerar minnesbelastning på serverdelens v-kärnor. Mer specifikt, är det ett mått på hur många gånger en datauppsättning har avlägsnats från minnet på grund av minnesbelastning och behovet av fler aktiva datauppsättningar.
-- **Minnesanvändning**: Genomsnittlig minnesanvändning (i GB)
-- **Direct Query** : Antalet gånger DQ- och LC-frågor – mätt per sekund – överskred 80 % av gränsen
-
-![Fyra sammanfattningspaneler som används för att övervaka kapacitetsresurser](media/whitepaper-premium-deployment/resource-summary-tiles.png)
-
-Panelvärden beräknas över ett tidsfönster på en timma för att ange hur många timmar som under de senaste sju dagarna motsvarade tröskelvärdet för mått. Det är viktigt att förstå att överskridning av ett tröskelvärde inte nödvändigtvis är en ödesdiger situation, men kan tyda på försämrad prestanda.
-
-Genom att klicka på en sammanfattningspanel, är det möjligt att klicka igenom i en rapport för att visa måttet som ett linjediagram under de senaste sju dagarna. Informationen som presenteras i diagrammet är en sammanfattning av varje timmes resultat som kan hjälpa dig att fastställa en allmän förståelse för vad som förekom en viss timme.
-
-Övervakningsfunktionerna i **Power BI-administratörsportalen** är grundläggande och utformade för att ge en snabb uppfattning om viktiga systemmått. För mer detaljerad övervakning, rekommenderar vi att du använder **Kapacitetsmåttappen för Power BI Premium**.
-
-#### <a name="power-bi-premium-capacity-metrics-app"></a>Kapacitetsmåttappen för Power BI Premium
-
-**Kapacitetsmåttappen för Power BI Premium** är en Power BI-app som är tillgänglig för Kapacitetsadministratörer och installeras som andra Power BI-appar \[[15](#endnote-15)\]. Den innehåller en instrumentpanel och rapport.
-
-![Kapacitetsmåttappen för Power BI Premium](media/whitepaper-premium-deployment/capacity-metrics-app.png)
-
-När appen öppnas läses instrumentpanelen in för att presentera flera paneler som uttrycker en aggregerad vy över alla kapaciteter som användaren är kapacitetsadministratör för. Instrumentpanelens layout innehåller följande avsnitt:
-
-- **Översikt**: Appversion, antalet kapaciteter och arbetsytor
-- **Systemöversikt**: Minne och processormått
-- **Översikt över datamängd**: Antal datauppsättningar, DQ/LC, uppdaterings- och frågemått
-- **Dataflödessammanfattning**: Antal dataflöden och datauppsättningsmått
-- **Översikt över sidnumrerade rapporter**: Uppdatera och visa mått
-- **AI-sammanfattning**: Antal åtgärder och datauppsättningsmått
-
-Den underliggande rapporten (från vilken instrumentpanelens paneler har fästs) kan nås genom att klicka på valfri panel på instrumentpanelen. Den ger en mer detaljerad översikt över vart och ett av instrumentpanelens avsnitt och stöder interaktiv filtrering. Filtrering kan uppnås genom att ange utsnitt efter datumintervall, kapacitet, arbetsyta och arbetsbelastning (rapport, datauppsättning, dataflöde) och genom att välja element i rapportens visuella objekt för att korsfiltrera rapportsidan. Korsfiltreringen är en kraftfull teknik för att begränsa till bestämda tidsperioder, kapaciteter, arbetsytor, datauppsättningar, etc. och kan vara mycket användbar när du utför rotorsaksanalys.
-
-Rapporten består av följande sidor:
-
-- **Datauppsättningar**: Visar detaljerade mått om datauppsättningens hälsotillstånd. Knappval visar olika perspektiv: Sammanfattning, Uppdateringar, Frågevaraktigheter, Frågeväntan och Datauppsättningar
-- **Sidnumrerade rapporter**: Visar detaljerade mått om hälsotillståndet för sidnumrerade rapporter
-- **Dataflöden**: Visar detaljerade mått om hälsotillståndet för dataflöden
-- **AI**: Visar detaljerade mått om hälsotillståndet för AI-arbetsbelastningen
-- **System**: Innehåller mätvärden för den totala kapaciteten, inklusive minne och CPU-användning
-- **Visningsnamn och ID:n**: Visningsnamn, ID:n och ägare av kapaciteter, arbetsytor och arbetsbelastningar
-
-Rapportsidorna innehåller olika perspektiv som är tillgängliga genom att klicka på knappar. Visuella rapportobjekt kan övervaka mått över tid för att jämföra dem med användandet av systemresurser.
-
-Detta White Paper beskriver inte varje sida och perspektiv. I stället visas en lista med mått som är tillgängliga i rapporten tillsammans med deras syfte. Rapporten visar många sidor och visuella objekt baserade på följande mått, först efter resurs, såsom visas i följande tabeller.
-
-##### <a name="entities-of-which-the-user-is-a-capacity-admin"></a>Entiteter (för vilka användaren är en kapacitetsadministratör)
-
-| Mått | Beskrivning |
-| --- | --- |
-| Kapacitet | Antal kapaciteter |
-| Arbetsytor | Antal arbetsytor i dina kapaciteter som rapporterar mått över de senaste sju dagarna |
-| Datauppsättningar | Antal datauppsättningar i alla arbetsytor i dina kapaciteter |
-| Dataflöden | Antal dataflöden i alla arbetsytor i dina kapaciteter |
-| Sidnumrerade rapporter | Antal sidnumrerade rapporter i alla arbetsytor i dina kapaciteter |
-| |
-
-##### <a name="memory"></a>Minne
-
-| Mått | Beskrivning |
-| --- | --- |
-| Genomsnittligt minne | Den genomsnittliga minnesanvändningen under de senaste sju dagarna (i GB) |
-| Genomsnittligt minne av arbetsbelastningar: datauppsättningar, dataflöden, sidnumrerade rapporter | Genomsnittlig minnesanvändning under de senaste sju dagarna (i GB) av arbetsbelastningar: datauppsättningar, dataflöde, sidnumrerade rapporter |
-| Högst användning | Högsta minnesförbrukning (i GB) under de senaste sju dagarna, uppdelat på treminutersintervall i bucketar på en timma |
-| |
-
-##### <a name="cpu"></a>Processor
-
-| Mått | Beskrivning |
-| --- | --- |
-| Antal med hög användning | Antal gånger som CPU har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på treminutersintervall i bucketar på en timma |
-| |
-
-##### <a name="dqlc-connections"></a>DQ-/LC-anslutningar
-
-| Mått | Beskrivning |
-| --- | --- |
-| Antal med hög användning | Antal gånger som DQ-/LC-anslutningar har överskridit 80 % av tröskelvärdena under de senaste sju dagarna, uppdelat på treminutersintervall i bucketar på en timma |
-| |
-
-Följande tabeller visar arbetsbelastningsrelaterade mått.
-
-##### <a name="dataset-refresh"></a>Uppdatering av datauppsättning
-
-| Mått | Beskrivning |
-| --- | --- |
-| Uppdaterar | Antal uppdateringar under de senaste sju dagarna |
-| Lyckad uppdatering | Antal lyckade uppdateringar under de senaste sju dagarna |
-| Misslyckade uppdateringar | Antal misslyckade uppdateringar under de senaste sju dagarna |
-| Genomsnittlig uppdateringsvaraktighet | Genomsnittlig uppdateringsvaraktighet i minuter under de senaste sju dagarna |
-| Högsta uppdateringsvaraktighet | Varaktigheten för den långvarigaste uppdateringen i minuter |
-| Genomsnittlig väntetid | Genomsnittlig väntetid (den genomsnittliga fördröjningen) mätt i minuter \[[16](#endnote-16)\] |
-| Högsta väntetid | Högsta väntetid (den genomsnittliga fördröjningen) mätt i minuter |
-| Uppdateringstillförlitlighet | Procentandelen uppdateringar som har slutförts under de senaste sju dagarna |
-| |
-
-##### <a name="dataset-queries"></a>Datauppsättningsfrågor
-
-| Mått | Beskrivning |
-| --- | --- |
-| Frågor | Antal frågor som körts under de senaste sju dagarna |
-| Lyckade frågor | Antal lyckade frågor under de senaste sju dagarna |
-| Misslyckade frågor | Antal misslyckade frågor under de senaste sju dagarna |
-| Genomsnittlig frågevaraktighet | Genomsnittlig frågevaraktighet (i ms) under de senaste sju dagarna kan används för att avgöra frågedistribution per timma tillsammans med minnesförbrukning, uppdelat i buckets på en timma |
-| Högsta frågevaraktighet | Högsta frågevaraktighet (i ms) under de senaste sju dagarna |
-| Antal frågeväntetider | Antal frågor som har haft några väntetider de senaste 7 dagarna |
-| Genomsnittlig frågeväntetid | Genomsnittlig frågeväntetid (i ms) över de senaste sju dagarna kan används för att avgöra distribution för frågeväntetid per timma tillsammans med minnesförbrukning, uppdelat i buckets på en timma |
-| Högsta frågeväntetid | Högsta frågeväntetid (i ms) under de senaste sju dagarna |
-| |
-
-##### <a name="dataset-loads"></a>Inläsningar av datauppsättning
-
-| Mått | Beskrivning |
-| --- | --- |
-| Genomsnittlig datauppsättningsstorlek | Genomsnittlig storlek (i MB) av datauppsättningar i minnet \[[17](#endnote-17)\] |
-| Aktiva datauppsättningar som lästs in i minnet | Antal datauppsättningar som lästs in i minnet per timma |
-| Borttagna datauppsättningar | Antal datauppsättningar som tagits bort på grund av minnestryck |
-| Borttagna datauppsättningar och minnesförbrukning | Antal datauppsättningar som tagits bort från minnet per timma |
-| Aktivt minne | Aktivt minne visar den totala mängd minne som inte kan tas bort eftersom det används. Skillnaden mellan det aktiva minnet och den totala mängden minne är summan av minne som förbrukas av datauppsättningar som finns i minnet men inte har använts under de senaste 3 minuterna. |
-| |
-
-##### <a name="dataflows"></a>Dataflöden
-
-| Mått | Beskrivning |
-| --- | --- |
-| Uppdaterar | Antal uppdateringar av dataflöden under de senaste sju dagarna |
-| Genomsnittlig uppdateringsvaraktighet | Genomsnittlig varaktighet för dataflödesuppdatering i minuter under de senaste sju dagarna |
-| Högsta uppdateringsvaraktighet | Högsta varaktighet för dataflödesuppdatering i minuter under de senaste sju dagarna |
-| Genomsnittlig uppdateringsväntetid | Genomsnittlig dataflödesväntetid (den genomsnittliga fördröjningen, mätt i minuter) |
-| Högsta uppdateringsväntetid | Högsta dataflödesväntetid (den genomsnittliga fördröjningen, mätt i minuter) |
-| Uppdateringstillförlitlighet | Procentandelen dataflödesuppdateringar som har slutförts under de senaste sju dagarna |
-| |
-
-##### <a name="paginated-reports"></a>Sidnumrerade rapporter
-
-| Mått | Beskrivning |
-| --- | --- |
-| Visningar | Antal rapportvyer |
-| Radantal | Antal rader med data i rapporten |
-| Genomsnittlig hämtning | Genomsnittlig varaktighet för datahämtning (i ms) under de senaste sju dagarna |
-| Genomsnittlig bearbetning | Genomsnittlig bearbetningstid (i ms) under de senaste sju dagarna |
-| Genomsnittlig rendering | Genomsnittlig renderingstid (i ms) under de senaste sju dagarna |
-| Genomsnittlig varaktighet | Genomsnittlig total tid för att bearbeta alla faser av en rapportvy (i ms) under de senaste sju dagarna |
-| |
-
-##### <a name="ai"></a>AI
-
-| Mått | Beskrivning |
-| --- | --- |
-|    Anrop    |    Antal anrop till AI-funktioner efter funktionstyp under de senaste sju dagarna    |
-|    Genomsnittligt radantal    |    Genomsnittligt antal rader för varje anrop under de senaste sju dagarna    |
-|    Genomsnittlig indatastorlek    |    Genomsnittlig storlek på indata i byte under de senaste sju dagarna    |
-|    Genomsnittlig utdatastorlek    |    Genomsnittlig storlek på utdata i byte under de senaste sju dagarna    |
-|    Genomsnittlig varaktighet    |    Genomsnittlig varaktighet på API-anrop (i ms) under de senaste sju dagarna    |
-|    Genomsnittlig väntetid    |    Genomsnittlig väntetid (i ms) för AI-anrop under de senaste sju dagarna    |
-|    Lyckade/misslyckade    |    Antal lyckade och misslyckade uppdateringar under de senaste sju dagarna    |
-|         |         |
-
-Appen kommer troligen genomgå frekventa versionsuppdateringar. Uppdaterad information finns i dokumentet [Övervaka Power BI Premium- och Power BI Embedded-kapaciteter](service-admin-premium-monitor-capacity.md).
+Övervakning av Premium-kapaciteter ger administratörer en förståelse för hur kapaciteterna utförs. Kapaciteter kan övervakas med hjälp av den [Power BI Premium-kapacitet app](service-admin-premium-monitor-capacity.md) eller [Power BI-administratörsportalen](service-admin-premium-monitor-portal.md).
 
 #### <a name="interpreting-metrics"></a>Tolka mått
 
