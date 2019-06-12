@@ -681,9 +681,9 @@
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
               href: service-dataflows-add-cdm-folder.md
-            - name: Integrera Machine Learning i Power BI (förhandsversion)
+            - name: Integrera Machine Learning i Power BI
               href: service-machine-learning-integration.md
-            - name: Använda Cognitive Services i Power BI (förhandsversion)
+            - name: Använda Cognitive Services i Power BI
               href: service-cognitive-services.md
             - name: Automatiserad maskininlärning i Power BI (förhandsversion)
               href: service-machine-learning-automated.md
@@ -745,8 +745,6 @@
               href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Felsöka datakälla utan stöd för uppdatering
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Felsöka kapslade värden som returneras som text
-              href: service-troubleshooting-nested-values.md
             - name: Felsöka schemalagd uppdatering för Azure SQL-databaser
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
@@ -927,6 +925,8 @@
           href: service-premium-incremental-refresh.md
         - name: Konfigurera Multi-Geo
           href: service-admin-premium-multi-geo.md
+        - name: Använda egna krypteringsnycklar
+          href: service-encryption-byok.md
         - name: Starta om en Premium-kapacitet
           href: service-admin-premium-restart.md
         - name: Ansluta till datauppsättningar med klientprogram och verktyg
