@@ -257,8 +257,6 @@
               href: desktop-add-column-from-example.md
             - name: Lägga till en anpassad kolumn
               href: desktop-add-custom-column.md
-            - name: Skapa dynamisk visuell information i Power BI
-              href: visuals/desktop-create-responsive-visuals.md
             - name: Använd infogade hierarkietiketter i Power BI Desktop
               href: desktop-inline-hierarchy-labels.md
             - name: Använda numeriskt intervallutsnitt
@@ -689,24 +687,6 @@
               href: service-machine-learning-automated.md
         - name: Sidnumrerade rapporter i Power BI
           items:
-            - name: Vad är sidnumrerade rapporter? (Förhandsgranskning)
-              href: paginated-reports-report-builder-power-bi.md
-            - name: Vanliga frågor och svar om sidnumrerade rapporter (förhandsversion)
-              href: paginated-reports-faq.md
-            - name: Skapa en sidnumrerad rapport och ladda upp den (förhandsversion)
-              href: paginated-reports-quickstart-aw.md
-            - name: Komma runt rapportdesignvyn (förhandsversion)
-              href: paginated-reports-report-design-view.md
-            - name: Ange data direkt i en sidnumrerad rapport (förhandsversion)
-              href: paginated-reports-enter-data.md
-            - name: Skapa en inbäddad datakälla (förhandsversion)
-              href: paginated-reports-embedded-data-source.md
-            - name: Skapa en inbäddad datauppsättning (förhandsversion)
-              href: paginated-reports-create-embedded-dataset.md
-            - name: Skapa parametrar (förhandsversion)
-              href: paginated-reports-parameters.md
-            - name: Publicera en sidnumrerad rapport (förhandsversion)
-              href: paginated-reports-save-to-power-bi-service.md
             - name: Visa en sidnumrerad rapport (förhandsversion)
               href: paginated-reports-view-power-bi-service.md
             - name: Interagera med parametrar (förhandsversion)
@@ -931,6 +911,52 @@
           href: service-admin-premium-restart.md
         - name: Ansluta till datauppsättningar med klientprogram och verktyg
           href: service-premium-connect-tools.md
+- name: Paginated Report Builder i Power BI
+  items:
+    - name: Översikt
+      items:
+        - name: Vad är sidnumrerade rapporter?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: Report Builder i Power BI
+          href: report-builder-power-bi.md
+    - name: Självstudier
+      items:
+        - name: Skapa en sidnumrerad rapport och ladda upp den
+          href: paginated-reports-quickstart-aw.md
+    - name: Begrepp
+      items:
+        - name: Komma runt rapportdesignvyn
+          href: paginated-reports-report-design-view.md
+        - name: Planera en rapport
+          href: report-builder-planning-report.md
+        - name: Report Builder-data
+          href: report-builder-data.md
+        - name: Designtips
+          href: report-builder-design-tips.md
+        - name: 'Tabeller, matriser, listor'
+          href: report-builder-tables-matrices-lists.md
+        - name: Parametrar
+          href: report-builder-parameters.md
+        - name: Uttryck
+          href: report-builder-expressions.md
+        - name: Exempel på uttryck
+          href: report-builder-expression-examples.md
+        - name: Förhandsgranska rapporter
+          href: report-builder-previewing-reports.md
+        - name: Vanliga frågor och svar om sidnumrerade rapporter
+          href: paginated-reports-faq.md
+    - name: Gör så här
+      items:
+        - name: Ange data direkt i en sidnumrerad rapport
+          href: paginated-reports-enter-data.md
+        - name: Skapa en inbäddad datakälla
+          href: paginated-reports-embedded-data-source.md
+        - name: Skapa en inbäddad datauppsättning
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Skapa parametrar
+          href: paginated-reports-parameters.md
+        - name: Publicera en sidnumrerad rapport
+          href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI för utvecklare
   items:
     - name: Vad kan utvecklare göra med Power BI?
