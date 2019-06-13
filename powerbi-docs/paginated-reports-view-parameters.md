@@ -1,5 +1,5 @@
 ---
-title: Visa parametrar för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
+title: Visa parametrar för sidnumrerade rapporter i Power BI-tjänsten
 description: I den här artikeln lär du dig att interagera med parametrar för sidnumrerade rapporter i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: ea186b5fa3bbbe7968c386604066f91b90ec5821
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 100d8b5d25f7d844ea4f44d63a4d2cb9737f57a9
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61422222"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839514"
 ---
-# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Visa parametrar för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
+# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Visa parametrar för sidnumrerade rapporter i Power BI-tjänsten
 
 I den här artikeln lär du dig att interagera med parametrar för sidnumrerade rapporter i Power BI-tjänsten.  En rapportparameter ger ett sätt att filtrera rapportdata på. Parametrar erbjuder en lista över tillgängliga värden och du kan välja ett eller flera värden. Parametrar har ibland ett standardvärde, och ibland måste du välja ett värde innan du kan se rapporten.  
 

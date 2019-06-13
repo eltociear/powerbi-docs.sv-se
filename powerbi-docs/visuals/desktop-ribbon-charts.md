@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 08a2de32b092ba24b66ddd9f173be1eaea8819ab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3400071c6b8cee472bb61475e6d3482189680563
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394540"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840097"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Använda banddiagram i Power BI
 Du kan använda banddiagram för att visualisera data och snabbt avgöra vilken datakategori som har högst rangordning (störst värde). Banddiagram är effektiva för att visa en rangordningsförändring med den högsta rangordningen (värdet) längst upp för varje tidsperiod. 
@@ -27,7 +27,7 @@ Om du vill följa med, kan du öppna [exempelrapporten över detaljhandelsanalys
 
 1. Skapa ett banddiagram genom att välja **Banddiagram** i fönstret **Visuella objekt**.
 
-    ![visualiseringsmallar](media/desktop-ribbon-charts/ribbon-charts_02.png)
+    ![visualiseringsmallar](media/desktop-ribbon-charts/power-bi-template.png)
 
     Banddiagram jämför en datakategori under en tidsperiod med band, vilket innebär att du kan se vilken rangordning en viss kategori har under loppet av diagrammets x-axel (vanligtvis tidslinjen).
 
