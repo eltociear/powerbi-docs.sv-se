@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2019
+ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5a8db746606e42b4e9b094dc6d17d6d2e0f08f67
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 68e21e14227aff538c56951249edbddc249d68eb
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565320"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66497979"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Övervaka Premium-funktioner med appen
 
 Övervakning av dina kapaciteter är viktigt för att fatta välgrundade beslut om hur du bäst använder dina Premium-kapacitetsresurser. Du kan övervaka kapacitet med administratörsportalen eller med appen **Power BI Premium Capacity Metrics**. I den här artikeln beskrivs appen Premium Capacity Metrics. Appen ger den mest djupgående informationen om hur kapaciteterna fungerar. För en översikt på högre nivå över genomsnittliga användningsmått de senaste sju dagarna kan du använda administratörsportalen. Mer information om övervakning i portalen finns i [Övervaka Premium-kapaciteter i administratörsportalen](service-admin-premium-monitor-portal.md).
 
-Appen uppdateras regelbundet med nya funktioner. Kontrollera att du kör den senaste versionen. Om du redan har en tidigare version av appen installerad är det bäst att ta bort den från dina appar och sedan trycka på CTRL+F5 för att uppdatera. 
+Appen uppdateras regelbundet med nya funktioner. Se till att du kör den senaste versionen. Om du redan har en tidigare version av appen installerad är det bäst att ta bort den från dina appar och sedan trycka på CTRL+F5 för att uppdatera. 
 
 ## <a name="install-the-app"></a>Installera appen
 
@@ -49,7 +49,7 @@ Den senaste uppdateringen visas. Du kan också klicka på **Uppdateringshistorik
 
 ## <a name="monitor-capacities-with-the-app"></a>Övervaka funktioner med appen
 
-Nu när du har installerat appen kan du se mått för kapaciteterna i din organisation. Appen innehåller en instrumentpanel med mått sammanfattningar och detaljerade mätvärden rapporter.
+Nu när du har installerat appen kan du se mått för kapaciteterna i din organisation. Appen innehåller en instrumentpanel med måttsammanfattningar och detaljerade måttrapporter.
 
 ### <a name="dashboard"></a>Instrumentpanel
 
@@ -137,14 +137,14 @@ Instrumentpanelen innehåller följande mått:
 
 | Mått | Beskrivning |
 | --- | --- |
-| Uppdateringar totalt | Totalt antal uppdateringar under de senaste sju dagarna. |
-| Uppdateringstillförlitlighet (%) | Antal lyckade uppdateringar delat på det totala antalet uppdateringar under de senaste sju dagarna. |
-| Högsta antal CPU (%)| Max CPU-förbrukning av AI-arbetsbelastningen under de senaste sju dagarna. |
-| Maximalt minne (GB) | Max minnesförbrukning av AI-arbetsbelastningen under de senaste sju dagarna.|
-| Uppdaterar Maximal väntetid (MS) | Längsta tid innan du startar uppdateringen. |
-| Uppdaterar Snittväntetid (MS)| Genomsnittlig tid innan uppdateringen startar. |
-| Uppdaterar maximal varaktighet (MS) | Längsta tid att fullständiga uppdateringar. |
-| Uppdaterar Genomsnittlig varaktighet (MS)| Genomsnittlig mängd tid för att slutföra uppdateringen. |
+| Körning av AI-funktion | Totalt antal körningar under de senaste sju dagarna. |
+| Tillförlitlighet för AI-funktionskörning (%) | Antal lyckade körningar delat på det totala antalet körningar under de senaste sju dagarna. |
+| Max. CPU (%)| Maximal CPU-förbrukning efter AI-arbetsbelastning under de senaste sju dagarna. |
+| Max. minne (GB) | Maximal minnesförbrukning efter AI-arbetsbelastning under de senaste sju dagarna.|
+| Max. väntetid för AI-funktionskörning (ms) | Maximal tid innan körning startas. |
+| Genomsnittlig väntetid för AI-funktionskörning (ms)| Genomsnittlig tid innan körning startas. |
+| Maximal varaktighet för AI-funktionskörning (ms) | Maximal tid för att körning ska slutföras. |
+| Genomsnittlig varaktighet för AI-funktionskörning (ms)| Genomsnittlig tid för att körning ska slutföras. |
 | | |
 
 ### <a name="reports"></a>Rapporter
@@ -156,7 +156,7 @@ Längst ned i rapporten finns det fem *flikar*:
 [**Datauppsättningar**](#datasets) – Innehåller detaljerade mätvärden om hälsotillståndet för Power BI-datauppsättningarna i dina kapaciteter.
 [**Sidnumrerade rapporter**](#paginated-reports) – Innehåller detaljerade mätvärden om hälsotillståndet för de sidnumrerade rapporterna i dina kapaciteter.
 [**Dataflöden**](#dataflows) – Innehåller detaljerade uppdateringsmätvärden för dataflöden i dina kapaciteter.
-[**AI** ](#ai) -innehåller detaljerade mätvärden om hälsotillståndet för AI-funktioner som används i din kapacitet.
+[**AI**](#ai) – Innehåller detaljerade mätvärden om hälsotillståndet för de AI-funktioner som används i din kapacitet.
 [**Resursförbrukning**](#resource-consumption) – Innehåller detaljerade resursmått, inklusive minne och hög CPU-användning.
 [**ID:n och info**](#ids-and-info) – Namn, ID:n och ägare för kapaciteter, arbetsytor och arbetsbelastningar.
 
@@ -170,7 +170,7 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 
 | Rapportavsnitt | Mått |
 | --- | --- |
-| Uppdaterar |  Totalt antal: Totalt antal uppdateringar för varje datauppsättning.<br>  Tillförlitlighet: Procentandelen av uppdateringar som slutförts för varje datauppsättning.<br>  Genomsnittlig väntetid: Den genomsnittliga fördröjningen mellan schemalagda tid och starttid för en uppdatering av datauppsättningen, i minuter.<br>  Maximal väntetid: Den maximala väntetiden för datauppsättningen, i minuter.<br>  Genomsnittlig varaktighet: Den genomsnittliga varaktigheten för uppdateringen för datauppsättningen, i minuter.<br>  Maximal varaktighet: Varaktigheten för den långvarigaste uppdateringen av datauppsättningen, i minuter. |
+| Uppdaterar |  Totalt antal: Totalt antal uppdateringar för varje datauppsättning.<br>  Tillförlitlighet: Den procentandel uppdateringar som slutfördes för varje datamängd.<br>  Genomsnittlig väntetid: Den genomsnittliga fördröjningen mellan schemalagda tid och starttid för en uppdatering av datauppsättningen, i minuter.<br>  Maximal väntetid: Den maximala väntetiden för datauppsättningen, i minuter.<br>  Genomsnittlig varaktighet: Den genomsnittliga varaktigheten för uppdateringen för datauppsättningen, i minuter.<br>  Maximal varaktighet: Varaktigheten för den långvarigaste uppdateringen av datauppsättningen, i minuter. |
 | De 5 viktigaste datauppsättningarna efter genomsnittlig varaktighet (minuter) |  De fem datauppsättningarna med längst genomsnittlig uppdateringsvaraktighet, i minuter. |
 | De viktigaste 5 datauppsättningarna efter genomsnittlig väntetid (minuter) |  De fem datauppsättningarna med den längsta genomsnittliga uppdateringsväntetiden, i minuter. |
 | Antal uppdateringar och minnesförbrukning per timma (GB) |  Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i UTC-tid. |
@@ -224,7 +224,7 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 
 | **Rapportavsnitt** | **Mått** |
 | --- | --- |
-| Uppdaterar |  Totalt: Totalt antal uppdateringar för varje dataflöde.<br>  Tillförlitlighet: Procentandelen av uppdateringar som slutförts för varje dataflöde.<br>  Genomsnittlig väntetid: Den genomsnittliga fördröjningen mellan schemalagd tid och start av en uppdatering av dataflödet, i minuter.<br>  Maximal väntetid: Maximal väntetid för dataflödet, i minuter.<br>  Genomsnittlig varaktighet: Genomsnittlig varaktighet för uppdatering för dataflödet, i minuter.<br>  Maximal varaktighet: Varaktigheten för den långvarigaste uppdateringen av dataflödet, i minuter. |
+| Uppdaterar |  Totalt: Totalt antal uppdateringar för varje dataflöde.<br>  Tillförlitlighet: Den procentandel uppdateringar som slutfördes för varje dataflöde.<br>  Genomsnittlig väntetid: Den genomsnittliga fördröjningen mellan schemalagd tid och start av en uppdatering av dataflödet, i minuter.<br>  Maximal väntetid: Maximal väntetid för dataflödet, i minuter.<br>  Genomsnittlig varaktighet: Genomsnittlig varaktighet för uppdatering för dataflödet, i minuter.<br>  Maximal varaktighet: Varaktigheten för den långvarigaste uppdateringen av dataflödet, i minuter. |
 | De 5 viktigaste dataflödena efter genomsnittlig uppdateringsvaraktighet |  De fem dataflöden med den längsta genomsnittliga uppdateringsvaraktigheten, i minuter. |
 | De 5 viktigaste dataflödena efter genomsnittlig väntetid |  De fem dataflödena med den längsta genomsnittliga uppdateringsväntetiden, i minuter. |
 | Genomsnittlig uppdateringsväntetid uppdelad i timmar |  Den genomsnittliga uppdateringsväntetiden, uppdelat i entimmes bucketar, rapporterad i UTC-tid. Många toppar med långa uppdateringsväntetider tyder på att kapaciteten körs för hårt. |
@@ -235,11 +235,9 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 
 | **Rapportavsnitt** | **Mått** |
 | --- | --- |
-| Total användning | Totalt antal: Antalet AI-funktioner i en arbetsyta eller dataflöde. <br> Tillförlitlighet: Procentandelen av uppdateringar som har slutförts.<br> Genomsn. Väntetid: Genomsnittlig fördröjning mellan den schemalagda tiden och början av en uppdatering, i millisekunder.<br> Maximal väntetid: Maximal väntetid, i millisekunder.<br> Genomsn. Varaktighet: Den genomsnittliga varaktigheten för en uppdatering, i millisekunder.<br> Maximal varaktighet: Varaktigheten för den längsta löpande uppdatera i millisekunder.<br> Genomsn indata storlek: Genomsnittliga Ange storlek i byte för AI-funktion som körs av en uppdatering av dataflöde.<br> Genomsn storlek: Genomsnittlig utdata storlek i byte för AI-funktion som körs av en uppdatering av dataflöde. |
-| 5 främsta AI-funktioner med Genomsnittlig varaktighet | De fem funktionerna med längsta medelvärdet uppdatera tid i millisekunder. |
-| 5 främsta AI-funktioner med genomsnittliga Indatastorleken | De fem funktionerna med största genomsnittlig data Ange storlek i byte. |
-| Antal uppdateringar och minnesförbrukning per timma | Genomförda, misslyckade och minnesförbrukning, uppdelade i entimmes bucketar, rapporterade i UTC-tid. |
-| Per timme genomsnittliga varaktighetstiden | Den genomsnittliga varaktigheten för en uppdatering delas upp i en timme buckets rapporteras i UTC-tid. |
+| AI-minnesförbrukning | Minnesförbrukning i GB, uppdelat i entimmes bucketar, rapporterat i UTC-tid. |
+| Timbaserad AI-funktionskörning och genomsnittlig väntetid | AI-körningar och genomsnittlig väntetid i millisekunder, uppdelat i entimmes bucketar, rapporterat i UTC-tid. |
+| Total användning | Totalt antal: Antalet AI-funktioner på en arbetsyta eller i ett dataflöde. <br> Systemtillförlitlighet: Den procentandel körningar som slutfördes.<br> Genomsn. Väntetid: Den genomsnittliga fördröjningen mellan schemalagda tid och starttid för en det körning, i millisekunder.<br> Maximal väntetid: Maximal väntetid, i millisekunder.<br> Genomsn. Varaktighet: Den genomsnittliga varaktigheten för en körning, i millisekunder.<br> Maximal varaktighet: Varaktigheten för den långvarigaste körningen, i millisekunder.<br> Genomsnittlig total storlek: Den genomsnittliga storleken i byte för indata och utdata för AI-funktionen. |
 | | |
 
 ### <a name="resource-consumption"></a>Resursförbrukning
@@ -296,7 +294,7 @@ Du kan använda appen Power BI Premium Capacity Metrics för att övervaka *A SK
 
 1. Öppna kapaciteten i Azure Portal.
 
-1. Klicka på **Åtkomstkontroll (IAM)** och lägg därefter till **Power BI Premium**-appen till läsarrollen. Om det inte går att hitta appen efter namn, du kan också lägga till den genom att klient-ID: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
+1. Klicka på **Åtkomstkontroll (IAM)** och lägg därefter till **Power BI Premium**-appen till läsarrollen. Om det inte går att hitta appen efter namn kan du även lägga till den efter klientidentifierare: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
 
     ![Behörigheter för Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
 

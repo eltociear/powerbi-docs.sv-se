@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7eb30d00cdb03c0f0f879d0cb4b0ab152d1dae37
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61239076"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721524"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Självstudie: Kom igång med Power BI-tjänsten (app.powerbi.com)
 Den här självstudien hjälper dig att komma igång med ***Power BI-tjänsten***. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden så rekommenderar vi starkt att du börjar med att läsa [Vad är Power BI](power-bi-overview.md).
@@ -53,7 +53,7 @@ Besök vår [spelningslista på YouTube](https://www.youtube.com/playlist?list=P
 > 
 
 ## <a name="what-is-the-power-bi-service"></a>Vad är Power BI-tjänsten?
-Microsofts Power BI-tjänst kallas ibland för Power BI online eller app.powerbi.com. Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  ***Instrumentpanelerna*** i Power BI-tjänsten kan hjälpa dig att hålla dig uppdaterad om din verksamhet.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer information finns i [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md).
+Microsofts Power BI-tjänst kallas ibland för Power BI online eller app.powerbi.com. Power BI hjälper dig att hålla dig uppdaterad med den information som är viktig för dig.  ***Instrumentpanelerna*** i Power BI-tjänsten kan hjälpa dig att hålla dig uppdaterad om din verksamhet.  Instrumentpanelerna visar ***paneler*** i vilka du kan öppna ***rapporter*** genom att klicka, för att sedan utforska vidare.  Anslut till flera ***datauppsättningar*** så att alla relevanta data samlas på samma plats. Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Se [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md).
 
 Om du har viktiga data i Excel- eller CSV-filer, så kan du skapa en Power BI-instrumentpanel så att du kan hålla dig informerad var du än befinner dig och dela information med andra.  Prenumererar du på ett SaaS-program som Salesforce?  Kom igång direkt genom att ansluta till Salesforce och automatiskt skapa en instrumentpanel från dessa data, eller [ta en närmare titt på alla andra SaaS-appar](service-get-data.md) som du kan ansluta till. Om du arbetar för en organisation kan du kontrollera om några [appar](service-create-distribute-apps.md) har publicerats för dig.
 

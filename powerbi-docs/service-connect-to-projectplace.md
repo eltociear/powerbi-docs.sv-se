@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9c98257ac352893d074ea91c27e8b1cf3d83e4a3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8827f7dc500ff23e69577ac67b43480d8633f5ef
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61168841"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721269"
 ---
 # <a name="connect-to-projectplace-by-planview-with-power-bi"></a>Anslut till Projectplace av Planview med Power BI
 Med innehållspaketet Projectplace av Planview, kan du visualisera data från dina samarbetsprojekt på helt nya sätt direkt i Power BI. Använd dina Projectplace-inloggningsuppgifter för att interaktivt visa viktig projektstatistik, ta reda på vilka dina mest aktiva och produktiva gruppmedlemmar är och identifiera kort och aktiviteter för projekt i ditt Projectplace-konto som är i risk. Du kan också utöka den ursprungliga instrumentpanelen och rapporterna för att skaffa dig de insikter som är viktigast för dig.
@@ -60,5 +60,5 @@ Du måste vara en Projectplace-användare om du vill importera dina Projectplace
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

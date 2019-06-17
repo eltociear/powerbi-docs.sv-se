@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0fcb3451249c121281790dca77bd6008c39deaef
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60977212"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66497932"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Vanliga frågor och svar om anpassade visuella Power BI-objekt
 
@@ -84,7 +84,7 @@ För att kunna certifiera ett anpassat visuellt objekt ska det finnas på våra 
  
 ### <a name="how-long-does-it-take-to-certify-my-visual"></a>Hur lång tid tar det att certifiera mitt visuella objekt?
 
-För en uppdaterad version kan det ta upp till 2 veckor. För ett nytt bidrag (förstagångscertifiering) kan det ta upp till 3 veckor. 
+För en uppdaterad version kan det ta upp till 3 veckor. För ett nytt bidrag (förstagångscertifiering) kan det ta upp till 4 veckor. 
 
 ### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Garanterar certifieringsprocessen att inget dataläckage sker?
 

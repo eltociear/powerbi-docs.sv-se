@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1166808dc827448f94bb84cc37bf4000df178c1d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e24e6f86cddcf328497c050f82612d36efa3a4ed
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61138606"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720510"
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Ansluta till Webtrends med Power BI
 Innehållspaketet Webtrends för Power BI och innehåller en mängd out-of-box-mått, till exempel antal sidvisningar och besök enligt trafikkälla. Du kan visualisera dina Webtrends-data i Power BI genom att först ansluta till ditt Webtrends-konto. Du kan använda instrumentpanelen de rapporter som tillhandahålls, eller anpassa dem för att fokusera på den information som du är mest intresserad av.  Data uppdateras automatiskt en gång per dag.
@@ -103,5 +103,5 @@ Du kan stöta på problem när innehållspaketet läses in när du har angett di
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

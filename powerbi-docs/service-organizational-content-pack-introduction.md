@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: da5a36454e52891df7906b444b29b4df2db44d7f
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226113"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721187"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
 > [!NOTE]
@@ -75,6 +75,6 @@ Alla medlemmar i distributionsgruppen har samma behörighet för data som skapar
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa och publicera ett organisationsinnehållspaket](service-organizational-content-pack-create-and-publish.md)
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
-* [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+* [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

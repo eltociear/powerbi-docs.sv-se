@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 5c42b633b3c8746d2e26656eb5310b1f74cb2500
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 296970466505f01ae9ad11f994fe2008563f4884
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61159836"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720199"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exportera en rapport från Power BI-tjänsten till skrivbordet (förhandsgranskning)
 I Power BI Desktop kan du exportera (kallas även *hämta*) en rapport till Power BI-tjänsten genom att spara rapporten och välja **Publicera**. Du kan även exportera i omvänd ordning samt och ladda ned en rapport från Power BI-tjänsten till skrivbordet. Filnamnstillägget för filer som exporteras i endera riktningen är *.pbix*.
@@ -68,9 +68,9 @@ Visa enminutsvideon **Kille i en kub** om den här funktionen:
 Här följer ytterligare artiklar som kan hjälpa dig att lära känna **Power BI-tjänsten**:
 
 * [Rapporter i Power BI](consumer/end-user-reports.md)
-* [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+* [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-När du har installerat **Power BI Desktop** kan du komma igång med hjälp av följande innehåll:
+När du har installerat **Power BI Desktop** kan du komma igång snabbt med hjälp av följande innehåll:
 
 * [Komma igång med Power BI Desktop](desktop-getting-started.md)
 

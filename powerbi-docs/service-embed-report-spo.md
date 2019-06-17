@@ -11,52 +11,52 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c8789d47ed1b67f9fd6808865514120457a29dfe
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec70f4c9d6f3e6f51210a32f7efac7f160f462cb
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051275"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498030"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
 Med den nya rapportwebbdelen för SharePoint Online i Power BI kan du enkelt bädda in interaktiva Power BI-rapporter i SharePoint Online-sidor.
 
-När du använder den nya **bädda in i SharePoint Online** alternativet, inbäddade rapporter är helt säkra, så du kan enkelt skapa säkra interna portaler.
+Vid användning av det nya alternativet **Bädda in i SharePoint Online** är de inbäddade rapporterna helt säkra. Du kan därför enkelt skapa säkra interna portaler.
 
 ## <a name="requirements"></a>Krav
 
-För **bädda in i SharePoint Online** rapporterna ska fungera, krävs följande:
+För att rapporter med **Bädda in i SharePoint Online** ska fungera krävs följande:
 
 * En Power BI Pro-licens eller en [Power BI Premium-kapacitet (EM eller P SKU)](service-premium-what-is.md) med en Power BI-licens.
 * Power BI-webbdelen för SharePoint Online kräver [moderna sidor](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## <a name="embed-your-report"></a>Bädda in rapporten
-Om du vill bädda in rapporten i SharePoint Online måste du hämta URL: en för rapporten och använda den med SharePoint Online nya Power BI-webbdelen.
+För att bädda in rapporten i SharePoint Online behöver du hämta rapport-URL:en och använda den med Power BI-webbdelen i SharePoint Online.
 
-### <a name="get-a-report-url"></a>Få en rapport-URL
+### <a name="get-a-report-url"></a>Hämta en rapport-URL
 
 1. Visa rapporten i Power BI.
 
-2. Välj den **filen** och välj sedan **bädda in i SharePoint Online**.
+2. Välj listrutemenyn **Arkiv** och välj sedan **Bädda in i SharePoint Online**.
 
     ![Filmenyn](media/service-embed-report-spo/powerbi-file-menu.png)
 
-3. Kopiera rapport-URL: en från dialogrutan.
+3. Kopiera rapport-URL:en från dialogrutan.
 
     ![Bädda in länk](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
 ### <a name="add-the-power-bi-report-to-a-sharepoint-online-page"></a>Lägga till en Power BI-rapport på en SharePoint Online-sida
 
-1. Öppna sidan i SharePoint Online och välj **redigera**.
+1. Öppna målsidan i SharePoint Online och välj **Redigera**.
 
     ![SP-redigeringssida](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
-    Välj i Sharepoint Online, **+ ny** att skapa en ny modern webbplats.
+    Eller välj **+ Ny** i SharePoint Online för att skapa en ny modern webbplats.
 
     ![Ny SP-sida](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
-2. Välj den **+** listrutan och välj sedan den **Power BI**.
+2. Välj listrutan **+** och välj sedan **Power BI**-webbdelen.
 
     ![Ny SP-webbdel](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
@@ -64,7 +64,7 @@ Om du vill bädda in rapporten i SharePoint Online måste du hämta URL: en för
 
     ![Ny SP-rapport](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Klistra in tidigare kopierade rapport-URL: en i den **Power BI-Rapportlänk** fönstret. Rapporten läses in automatiskt.
+4. Klistra in den tidigare kopierade rapport-URL:en i fönstret med **Power BI-rapportlänk**. Rapporten läses in automatiskt.
 
     ![Nya SP-webbdelsegenskaper](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -74,30 +74,30 @@ Om du vill bädda in rapporten i SharePoint Online måste du hämta URL: en för
 
 ## <a name="grant-access-to-reports"></a>Bevilja åtkomst till rapporter
 
-Bädda in en rapport i SharePoint Online inte automatiskt ge användare behörighet att visa rapporten – du måste ange visningsbehörigheter i Power BI.
+Inbäddning av en rapport i SharePoint Online ger inte automatiskt användarna behörighet att visa rapporten – du behöver ange visningsbehörigheter i Power BI.
 
 > [!IMPORTANT]
 > Se till att granska vem som kan visa rapporten i Power BI-tjänsten och bevilja åtkomst till de som inte visas i listan.
 
-Det finns två sätt att ge åtkomst till rapporten i Power BI. Det första sättet, om du använder en Office 365-grupp för att skapa din SharePoint Online-gruppwebbplats, är att lista användaren som en medlem i den **apparbetsytan i Power BI-tjänsten** och **SharePoint-sida**. Mer information finns i [hantera en apparbetsyta](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Det finns två sätt att ge åtkomst till rapporter i Power BI. Det första sättet, om du använder en Office 365-grupp för att skapa SharePoint Online-teamwebbplatsen, är att ange användaren som medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Mer information finns i [hantera en apparbetsyta](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Det andra sättet är att bädda in en rapport i en app och dela den direkt med användare:  
 
-1. Författaren (måste vara en Pro-användare) skapar en rapport i en apparbetsyta. Dela med **kostnadsfria Power BI-användare**, app-arbetsytan måste anges som en **Premium-arbetsyta**.
+1. Författaren, som måste vara Pro-användare, skapar en rapport på en apparbetsyta. För delning av med *användare av kostnadsfritt Power BI* måste apparbetsytan anges som en *Premium-arbetsyta*.
 
-2. Författaren publicerar appen och installerar den. Författaren måste se till att installera appen för att ha åtkomst till den rapport-URL som används för att bädda in i SharePoint Online.
+2. Författaren publicerar och installerar appen. Författaren måste installera appen så att den har åtkomst till den rapport-URL som används för inbäddning i SharePoint Online.
 
-3. Nu måste även alla slutanvändare installera appen. Du kan också använda den **installera appen automatiskt** funktion som du kan aktivera på den [Power BI-administratörsportalen](service-admin-portal.md), ha appen förinstallerade för slutanvändare.
+3. Nu måste även alla slutanvändare installera appen. Du kan även använda funktionen **Installera appen automatiskt**, som du kan aktivera i [Power BI-administratörsportalen](service-admin-portal.md), om du vill att appen ska förinstalleras för slutanvändare.
 
    ![Installera appen automatiskt](media/service-embed-report-spo/install-app-automatically.png)
 
 4. Författaren öppnar appen och går till rapporten.
 
-5. Författaren kopierar bädda in rapporten URL: en från rapporten appen är installerad. **Använd inte den ursprungliga rapport-URL: en från apparbetsytan.**
+5. Författaren kopierar inbäddningsrapport-URL:en från den rapport som appen installerade. Använd inte den ursprungliga rapport-URL:en från apparbetsytan.
 
 6. Skapa en ny gruppwebbplats i SharePoint Online.
 
-7. Lägg till URL: en för tidigare kopierade rapporten i Power BI-webbdelen.
+7. Lägg till den tidigare kopierade rapport-URL:en i Power BI-webbdelen.
 
 8. Lägg till alla användare och/eller grupper som ska använda data på SharePoint Online-sidan och i Power BI-appen som du skapade.
 
@@ -108,10 +108,10 @@ Användaren kan nu gå till gruppwebbplatsen i SharePoint Online och visa rappor
 
 ## <a name="multi-factor-authentication"></a>Multifaktorautentisering
 
-Om din Power BI-miljö kräver att du loggar in med multifaktorautentisering kan du uppmanas att logga in med en säkerhetsenhet för att verifiera din identitet. Det här inträffar om du inte logga in på SharePoint Online med hjälp av multifaktorautentisering, men din Power BI-miljö kräver en säkerhetsenhet för att verifiera ett konto.
+Om din Power BI-miljö kräver att du loggar in med multifaktorautentisering kan du uppmanas att logga in med en säkerhetsenhet för att verifiera din identitet. Detta inträffar om du inte loggade in på SharePoint Online med hjälp av multifaktorautentisering men din Power BI-miljö kräver en säkerhetsenhet för att validera ett konto.
 
 > [!NOTE]
-> Azure Active Directory 2.0 stöder inte Multi factor authentication - användare ser ett felmeddelande. Om användaren loggar in igen på SharePoint Online med hjälp av en säkerhetsenhet kan denne eventuellt visa rapporten.
+> Power BI stöder ännu inte multifaktorautentisering med Azure Active Directory 2.0 – användare får ett felmeddelande. Om användaren loggar in igen på SharePoint Online med hjälp av en säkerhetsenhet kan denne eventuellt visa rapporten.
 
 ## <a name="web-part-settings"></a>Inställningar för webbdel
 
@@ -121,23 +121,23 @@ Nedan visas de inställningar som du kan ändra för Power BI-webbdelen för Sha
 
 | Egenskap | Beskrivning |
 | --- | --- |
-| Sidnamn |Anger webbdelens standardsidan. Välj ett värde från listrutan. Om inga sidor visas innehåller rapporten endast en sida eller också innehåller URL:en du klistrade in ett sidnamn. Ta bort rapportdelen av URL:en för att välja en specifik sida. |
-| Skärm |Justerar hur rapporten passar in i SharePoint Online-sidan. |
+| Sidnamn |Anger webbdelens standardsida. Välj ett värde från listrutan. Om inga sidor visas innehåller rapporten endast en sida eller också innehåller URL:en du klistrade in ett sidnamn. Ta bort rapportdelen av URL:en för att välja en specifik sida. |
+| Skärm |Justerar hur rapporten passar på SharePoint Online-sidan. |
 | Visa navigeringsfönstret |Visar eller döljer navigeringsfönstret. |
 | Visa filtreringsfönstret |Visar eller döljer filtreringsfönstret. |
 
 ## <a name="reports-that-do-not-load"></a>Rapporter som inte kan läsas in
 
-Om rapporten inte läsa in i Power BI-webbdelen kan du se följande meddelande:
+Om rapporten inte läses in i Power BI-webbdelen kan det hända att följande meddelande visas:
 
-![Det här innehållet är inte tillgängliga meddelande](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![Meddelande om att det här innehållet inte är tillgängligt](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 Det finns två vanliga orsaker till det här meddelandet.
 
-1. Du har inte åtkomst till rapporten.
+1. Du har inte rapportåtkomst.
 2. Rapporten har tagits bort.
 
-Kontakta sidan SharePoint Online ägaren för att hjälpa dig att lösa problemet.
+Kontakta ägaren av SharePoint Online-sidan för att hjälpa dig att lösa problemet.
 
 ## <a name="licensing"></a>Licensiering
 
@@ -151,7 +151,7 @@ Användare som visar en rapport i SharePoint måste antingen ha en **Power BI Pr
   
   1. Logga ut från SharePoint och logga in igen. Glöm inte att stänga alla webbläsarfönster innan du loggar in igen.
 
-  2. Om ditt konto kräver multifaktorautentisering (MFA), sedan logga in på SharePoint med enheten MFA (telefonapp, smartkort, osv.).
+  2. Om ditt konto kräver multifaktorautentisering (MFA) loggar du in på SharePoint med hjälp av din MFA-enhet (telefonapp, smartkort osv.).
   
   3. Gästanvändares konton för Azure B2B stöds inte. Användarna ser Power BI-logotypen som visas när en del blir inläst, men rapporten visas inte.
 

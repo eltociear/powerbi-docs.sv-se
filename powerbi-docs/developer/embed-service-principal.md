@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375049"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720332"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjänstens huvudnamn med Power BI (förhandsversion)
 
@@ -120,7 +120,7 @@ Skiljer sig från traditionell användning av ett huvudkonto, användning av tj�
 
 5. Lägg till tjänstens huvudnamn som **administratör** för den nya arbetsyta du har skapat. Du kan hantera den här uppgiften via [API:erna](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller med Power BI-tjänsten.
 
-    ![Lägg till ett huvudnamn för tjänsten som en administratör i en arbetsyta](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Lägga till ett tjänsthuvudnamn som administratör på en arbetsyta](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Välj nu att bädda in ditt innehåll med ett exempelprogram eller i ditt program.
 
@@ -168,17 +168,17 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 
 * Tjänstens huvudnamn fungerar bara med [nya apparbetsytor](../service-create-the-new-workspaces.md).
 * **Min arbetsyta** stöds inte när du använder tjänstens huvudnamn.
-* Dedikerad Premium-kapacitet krävs när du flyttar till produktion.
+* Dedikerad kapacitet krävs vid flytt till produktion.
 * Du kan inte logga in på Power BI-portal med tjänstens huvudnamn.
 * Power BI-administratörsbehörighet krävs för att aktivera tjänstens huvudnamn i inställningarna för utvecklare i Power BI-administratörsportalen.
 * Du kan inte installera eller hantera en lokal datagateway med tjänstens huvudnamn.
 * Det går inte att använda tjänstens huvudnamn för [inbäddning för organisationens](embed-sample-for-your-organization.md) program.
 * Hantering av [dataflöden](../service-dataflows-overview.md) stöds inte.
-* Tjänstens huvudnamn stöder för närvarande inte en administratör API: er.
+* Tjänstens huvudnamn har för närvarande inte stöd för några administratörs-API:er.
 
 ## <a name="next-steps"></a>Nästa steg
 
 * [Registrera en app](register-app.md)
 * [Power BI Embedded för dina kunder](embed-sample-for-customers.md)
 * [Objekt för program och tjänstens huvudnamn i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Säkerhet på radnivå med hjälp av den lokala datagatewayen med tjänstens huvudnamn (förhandsversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Säkerhet på radnivå med hjälp av lokal datagateway med tjänstens huvudnamn (förhandsversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

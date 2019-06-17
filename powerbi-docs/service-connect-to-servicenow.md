@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 285c22347f049e6b99cb97fa19efc6363d9b57cb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c4ca0332a68686feb22517ff6ac720650ce1c87d
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61163739"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721242"
 ---
 # <a name="connect-to-servicenow-with-power-bi-for-incident-reporting"></a>Anslut till ServiceNow med Power BI för rapportering av incidenter
 ServiceNow erbjuder flera produkter och lösningar inklusive företag, åtgärder och IT-hantering för att förbättra din verksamhet. Det här innehållspaketet innehåller flera rapporter och insikter om dina öppna, nyligen lösta och nyligen stängda incidenter.  
@@ -63,5 +63,5 @@ Om det uppstår långa laddningstider, kan du granska antalet incidenter och ant
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Lägga till hyperlänkar i en tabell
-description: Använd Power BI Desktop för att skapa hyperlänkar. Använd sedan Power BI Desktop eller Power BI-tjänsten för att lägga till hyperlänkar till dina rapporttabeller och -matriser.
+description: Använd Power BI Desktop för att skapa hyperlänkar. Använd sedan Power BI Desktop eller Power BI-tjänsten för att lägga till hyperlänkarna i dina rapporttabeller och matriser.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9611d8cd45eba89854fd6cbb485c52097f77f4c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421685"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721372"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Lägga till hyperlänkar i en tabell
 I det här ämnet lär du dig hur du använder Power BI Desktop för att skapa hyperlänkar. Använd sedan Desktop eller Power BI-tjänsten för att lägga till hyperlänkarna till dina rapporttabeller och -matriser. 
@@ -24,11 +24,11 @@ I det här ämnet lär du dig hur du använder Power BI Desktop för att skapa h
 ![Tabell med hyperlänkar](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Du kan skapa hyperlänkar i [paneler på instrumentpaneler](service-dashboard-edit-tile.md) och [textrutor på instrumentpaneler](service-dashboard-add-widget.md) i farten med Power BI-tjänsten. Du kan skapa hyperlänkar i [textrutor i rapporter](service-add-hyperlink-to-text-box.md) i farten med Power BI-tjänsten och Power BI Desktop.
+> Du kan skapa hyperlänkar i [paneler på instrumentpaneler](service-dashboard-edit-tile.md) och [textrutor på instrumentpaneler](service-dashboard-add-widget.md) i farten med hjälp av Power BI-tjänsten. Du kan skapa hyperlänkar i [textrutor i rapporter](service-add-hyperlink-to-text-box.md) i farten med hjälp av Power BI-tjänsten och Power BI Desktop.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Skapa en hyperlänk i en tabell eller matris med Power BI Desktop
-Du kan skapa hyperlänkar i tabeller och matriser i Power BI Desktop, men inte i Power BI-tjänsten. Du kan också skapa hyperlänkar i Excel Power Pivot innan du importerar arbetsboken till Power BI. Båda metoderna beskrivs nedan.
+Du kan skapa hyperlänkar i tabeller och matriser i Power BI Desktop, men inte i Power BI-tjänsten. Dessutom kan du skapa hyperlänkar i Excel Power Pivot innan du importerar arbetsboken till Power BI. Båda metoderna beskrivs nedan.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-power-bi-desktop"></a>Skapa en tabell- eller en matrishyperlänk i Power BI Desktop
 Proceduren för att lägga till en hyperlänk beror på om du har importerat dina data eller anslutit dem med hjälp av DirectQuery. Båda scenarierna beskrivs nedan.
@@ -99,7 +99,7 @@ S: Nej. Du kan använda en länkikon. Om du behöver anpassad text för hyperlä
 ## <a name="next-steps"></a>Nästa steg
 [Visualiseringar i Power BI-rapporter](visuals/power-bi-report-visualizations.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -703,6 +703,8 @@
               href: service-template-apps-tips.md
             - name: Installera och distribuera mallappar
               href: service-template-apps-install-distribute.md
+            - name: 'Uppdatera, ta bort och extrahera en Power BI-mallapp'
+              href: service-template-update-delete-extract.md
         - name: Felsök
           items:
             - name: Har du glömt lösenordet till Power BI?

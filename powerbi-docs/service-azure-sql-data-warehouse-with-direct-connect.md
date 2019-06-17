@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 896e58b95f253c403bf7cd4bc3e1c069b3628f69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69b40b81677de8af259f9c8ce871c39f5303c09a
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770243"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448427"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse med DirectQuery
 
@@ -40,7 +40,7 @@ Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förb�
 
 Det enklaste sättet att flytta mellan din SQL Data Warehouse och Power BI är med knappen **Öppna i Power BI** i Azure Portal. Med den här knappen kan du sömlöst börja skapa nya instrumentpaneler i Power BI.
 
-1. Kom igång genom att gå till din SQL Data Warehouse-instans i Azure Portal. Observera att SQL Data Warehouse bara finns i Azure Preview Portal just nu.
+1. Kom igång genom att gå till din SQL Data Warehouse-instans i Azure Portal. Observera att SQL Data Warehouse bara finns i Azure-portalen just nu.
 
 2. Klicka på knappen **Öppna i Power BI**
 
@@ -64,13 +64,13 @@ SQL Data Warehouse visas också på sidan Power BI Hämta data.
 
 3. Välj **SQL Data Warehouse** \> **Anslut**.
 
-    ![Azure SQL DW med direct connect](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
+    ![Azure SQL Data Warehouse med direktanslutning](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 
-4. Ange nödvändig information för att ansluta. Avsnittet **Hitta parametrar** nedan visar var dessa data kan finnas i Azure Portal.
+4. Ange nödvändig information för att ansluta. Avsnittet **Hitta parametrar** nedan visar var dessa data kan finnas i Azure-portalen.
 
     ![Servernamn](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
 
-    ![Avancerade servernamn](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
+    ![Namn på avancerad server](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
 
     ![Användarnamn](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
 
@@ -79,7 +79,7 @@ SQL Data Warehouse visas också på sidan Power BI Hämta data.
 
 5. Granska datauppsättningen mer detaljerat genom att välja den nya panelen eller den nyligen skapade datauppsättningen som anges med en asterisk. Den här datauppsättningen har samma namn som din databas.
 
-    ![Datauppsättningen 2](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
+    ![Datamängd 2](media/service-azure-sql-data-warehouse-with-direct-connect/dataset2.png)
 
 6. Du kan utforska alla tabeller och kolumner. Att markera en kolumn kommer att skicka en fråga till källan, vilket dynamiskt skapar ditt visuella objekt. Filter ska också översättas till frågor tillbaka till ditt informationslager. Detta visuella objekt kan sparas i en ny rapport och fästas igen på instrumentpanelen.
 
@@ -87,12 +87,14 @@ SQL Data Warehouse visas också på sidan Power BI Hämta data.
 
 ## <a name="finding-parameter-values"></a>Hitta parametervärden
 
-Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azure Portal. Observera att SQL Data Warehouse bara finns i Azure Preview Portal just nu.
+Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azure Portal. Observera att SQL Data Warehouse bara finns i Azure-portalen just nu.
 
 ![Azure Portal](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
 > Om din Power BI-klient finns i samma region som Azure SQL Data Warehouse debiteras du inte för utgående trafik. Du kan se var din Power BI-klient finns genom att följa [de här instruktionerna](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Nästa steg
 

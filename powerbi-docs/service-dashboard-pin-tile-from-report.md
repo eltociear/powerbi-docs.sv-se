@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a9d3856f643eed0ccb5383f2dda55ea57a32908a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a8acb5ab382c541b330d3448da8187238c42a3f5
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136323"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720283"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fäst en panel på en Power BI-instrumentpanel från en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fästa paneler från en rapport
@@ -66,7 +66,7 @@ Mer information finns i [fäst en hel rapportsida](service-dashboard-pin-live-ti
 
 [Datauppdatering i Power BI](refresh-data.md)
 
-[Grundläggande begrepp i Power BI](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

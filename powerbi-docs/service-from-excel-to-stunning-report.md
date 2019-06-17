@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cd75aebb09c7b6c54c1ff3f68635bfd5033c7f80
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61140791"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721458"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Från Excel-arbetsbok till otrolig rapport på nolltid
 Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men den senaste informationen finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och bygga upp en rapport. Du börjar känna dig bekymrad.
@@ -98,6 +98,6 @@ Nästa steg
 
 * [Kom igång med Power BI-tjänsten](service-get-started.md)
 * [Kom igång med Power BI Desktop](desktop-getting-started.md)
-* [Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+* [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

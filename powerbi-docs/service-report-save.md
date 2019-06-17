@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: a4bc58a5be385e22c68aa29a8a366231c8434bba
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d5237ebbaf1be6aac7fcde252754436067ae932e
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61407319"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720825"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Spara en rapport i Power BI-tjänsten och Power BI Desktop
 När du gör ändringar i en rapport i Power BI kan du spara den, spara med ett nytt namn eller stänga den utan att spara ändringarna. Anta att du öppnar rapporten, skapar en visualisering och fäster den på din instrumentpanel. Om du stänger den nu utan att spara dina ändringar förblir panelen på din instrumentpanel men visualiseringen sparas inte i rapporten. När du klickar på den panelen på instrumentpanelen öppnas rapporten men visualiseringen har försvunnit.
@@ -39,7 +39,7 @@ När du gör ändringar i en rapport i Power BI kan du spara den, spara med ett 
 ### <a name="next-steps"></a>Nästa steg
 Läs mer om [rapporter i Power BI](consumer/end-user-reports.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

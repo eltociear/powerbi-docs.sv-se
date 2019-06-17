@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d88a455b5448b92d86719251bfada6bd807a4c91
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60973751"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721351"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips om hur du skapar rapporter i Power BI Desktop och Power BI-tjänsten
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop, Power BI-tjänsten *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad.
@@ -222,7 +222,7 @@ Några av våra favoritböcker är:
 * *Advanced Presentations Design* av Andrew Abela   
 
 ## <a name="next-steps"></a>Nästa steg
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
 [Rapporter i Power BI](consumer/end-user-reports.md)
 

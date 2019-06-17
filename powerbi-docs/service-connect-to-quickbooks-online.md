@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ec13f396ea1a322a79263320a169330f24a2e5f0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fd1c1c29d1a665e7c0f3c4664a4e65a9451aa280
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61151273"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721084"
 ---
 # <a name="connect-to-quickbooks-online-with-power-bi"></a>Ansluta till QuickBooks Online med Power BI
 När du ansluter till dina QuickBooks Online-data från Power BI får du omedelbart en Power BI-instrumentpanel och Power BI-rapporter som tillhandahåller insikter om verksamhetens kassaflöde, lönsamhet, kunder med mera. Använd instrumentpanelen och rapporterna som de är eller anpassa dem för att fokusera på den information du är mest intresserad av. Data uppdateras automatiskt en gång per dag.
@@ -82,5 +82,5 @@ Power BI stöder för närvarande endast USA-utgåvor av QuickBooks Online.
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

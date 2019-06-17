@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f03f4933566a8c18510ef0ce07b71db61ecfa8fd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770593"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448377"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
@@ -42,28 +42,15 @@ Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förb�
 
 För att ansluta till Azure SQL Database med DirectQuery, behöver du använda Power BI Desktop. Den här metoden erbjuder ytterligare flexibilitet och funktioner. Rapporter som skapas med Power BI Desktop kan senare publiceras i Power BI-tjänsten. Du kan lära dig mer om hur du ansluter till [Azure SQL Database med DirectQuery](desktop-use-directquery.md) i Power BI Desktop.
 
-## <a name="single-sign-on"></a>Enkel inloggning
-
-När du har publicerat en Azure SQL DirectQuery-datauppsättning till tjänsten, kan du aktivera enkel inloggning (SSO) via Azure Active Directory (AD Azure) OAuth2 för dina slutanvändare.
-
-Om du vill aktivera enkel inloggning går du till datauppsättningens inställningar, öppnar fliken **Datakällor** och markerar rutan för enkel inloggning.
-
-![Konfigurera Azure SQL DQ-dialogrutan](media/service-azure-sql-database-with-direct-connect/sso-dialog.png)
-
-När alternativet för enkel inloggning är aktiverat och dina användares åtkomstrapporter har skapats ovanpå datakällan, skickar Power BI sina autentiserade autentiseringsuppgifter för Microsoft Azure Active Directory i frågorna till Azure SQL-databasen. Detta möjliggör för Power BI att respektera säkerhetsinställningarna som är konfigurerade på datakällsnivå.
-
-Alternativet för enkel inloggning börjar fungera för alla datauppsättningar som använder den här datakällan. Autentiseringsmetoden som används för importscenarier påverkas inte.
-
-> [!Note]
-> Azure Multi-Factor Authentication (MFA) stöds inte. Användare som vill använda enkel inloggning med Azure SQL DirectQuery måste undantas från MFA.
-
 ## <a name="finding-parameter-values"></a>Hitta parametervärden
 
 Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azure Portal.
 
-![Ny uppdatering av Azure-port](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
+![Ny uppdatering av Azure-portalen](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
-![Azure portal-uppdatering](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+![Uppdatering av Azure-portalen](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Nästa steg
 

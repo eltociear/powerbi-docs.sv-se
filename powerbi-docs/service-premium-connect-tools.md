@@ -1,6 +1,6 @@
 ---
-title: Ansluta till Power BI Premium datauppsättningar med program och verktyg (förhandsversion)
-description: Beskriver hur du ansluter till datauppsättningar i Power BI Premium från program och verktyg.
+title: Ansluta till Power BI Premium-datamängder med klientprogram och verktyg (förhandsversion)
+description: Beskriver hur du ansluter till datamängder i Power BI Premium från klientprogram och verktyg.
 author: minewiskan
 ms.author: owend
 manager: kfile
@@ -8,110 +8,108 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 05/31/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 063f43cb2345ccb3d1fec5c414100beb8ccde451
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b671d2f55135312fb529d4b4b30af3941c525a26
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941519"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448318"
 ---
-# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Ansluta till datauppsättningar med program och verktyg (förhandsversion)
+# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Ansluta till datamängder med klientprogram och verktyg (förhandsversion)
 
-Power BI Premium-arbetsytor och datauppsättningar stöd *skrivskyddad* anslutningar från Microsoft och tredje parts program och verktyg. 
+Power BI Premium-arbetsytor och -datamängder har stöd för *skrivskyddade* anslutningar från Microsoft samt klientprogram och verktyg från tredje part. 
 
 > [!NOTE]
-> Den här artikeln är avsedd endast för att introducera skrivskyddad anslutning till Power BI Premium-arbetsytor och datauppsättningar. Den *är inte* avsedd att ge detaljerad information om programmering, särskilda verktyg och program, arkitektur och hantering av arbetsytan och datauppsättningen. Ämnen som beskrivs här kräver en djupare förståelse av Analysis Services tabellmodell database-arkitektur och administration.
+> Den här artikeln är endast avsedd att införa skrivskyddade anslutningar i Power BI Premium-arbetsytor och -datamängder. Den är *inte* avsedd att ge detaljerad information om programmerbarhet, specifika verktyg och program, arkitektur och hantering av arbetsytor och datamängder. Ämnen som beskrivs i artikeln kräver en gedigen förståelse av arkitekturen för och administration av den tabellbaserade modelldatabasen i Analysis Services.
 
 ## <a name="protocol"></a>Protokoll
 
-Power BI Premium använder den [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA)-protokoll för kommunikation mellan program och motorn som hanterar du dina arbetsytor och datauppsättningar. Dessa meddelanden är igenom vad är vanligtvis kallas XMLA-slutpunkter. XMLA är samma kommunikationsprotokoll som används av Microsoft Analysis Services-motorn, vilket under huven, körs Power BI semantiska modellering, styrning, livscykel och datahantering. 
+Power BI Premium använder [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference)-protokollet (XMLA) för kommunikation mellan klientprogram och den motor som hanterar dina arbetsytor och datamängder. Denna kommunikation sker via det som vanligtvis kallas XMLA-slutpunkter. XMLA är samma kommunikationsprotokoll som används av Microsoft Analysis Services-motorn, som under huven kör Power BI:s semantiska modellering, styrning, livscykel och datahantering. 
 
-Merparten av program och verktyg uttryckligen kommunicerar inte med motorn genom att använda XMLA-slutpunkter. I stället använda de klientbibliotek som MSOLAP, ADOMD och AMO som en mellanhand mellan klientprogrammet och motor som kommunicerar endast med hjälp av XMLA.
+Den stora majoriteten av klientprogram och verktyg kommunicerar inte explicit med motorn via XMLA-slutpunkter. I stället använder de klientbibliotek som MSOLAP, ADOMD och AMO som en mellanhand mellan klientprogrammet och motor, som kommunicerar endast med hjälp av XMLA.
 
 
-## <a name="supported-tools"></a>Verktyg
+## <a name="supported-tools"></a>Verktyg som stöds
 
-De här verktygen stöder skrivskyddad åtkomst till Power BI Premium-arbetsytor och datauppsättningar:
+De här verktygen stöder skrivskyddad åtkomst till Power BI Premium-arbetsytor och -datamängder:
 
-**SQL Server Management Studio (SSMS)** -stöder DAX, MDX, XMLA och TraceEvent frågor. Kräver version 18.0. Ladda ned [här](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)** – stöder frågor via DAX, MDX, XMLA och TraceEvent. Kräver version 18.0. Ladda ned [här](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
-**SQL Server Profiler** -inkluderat med SSMS 18.0 (förhandsversion) är det här verktyget förser spårning och felsökning av serverhändelser. Du kan samla in och spara data om varje händelse till en fil eller en tabell för att analysera senare. Medan du officiellt inaktuell för SQL Server, fortsätter att ingå i SSMS Profiler och kvar för Analysis Services och nu Power BI Premium. Mer information finns i [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
+**SQL Server Profiler** – ingår med SSMS 18.0 (förhandsversion). Det här verktyget tillhandahåller spårning och felsökning av serverhändelser. Du kan samla in och spara data om varje händelse till en fil eller en tabell för senare analys. Profiler har officiellt tagits ur bruk för SQL Server men ingår fortfarande i SSMS och fortsätter att stödjas för Analysis Services och nu Power BI Premium. Mer information finns i [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
 
-**DAX-Studio** – öppen källkod, community-verktyg för att köra och analysera DAX-frågor mot Analysis Services. Kräver version 2.8.2 eller senare. Mer information finns i [daxstudio.org](https://daxstudio.org/).
+**DAX Studio** – ett communityverktyg med öppen källkod för körning och analys av DAX-frågor mot Analysis Services. Kräver version 2.8.2 eller senare. Mer information finns på [daxstudio.org](https://daxstudio.org/).
 
-**Pivottabeller i Excel** -Klicka och kör version av Office 16.0.11326.10000 eller senare krävs.
+**Excel-pivottabeller** – Klicka-och-kör-version av Office 16.0.11326.10000 eller senare krävs.
 
-**Tredjeparts** – innehåller data visualisering program och verktyg som kan ansluta till, fråga och använda datauppsättningar i Power BI Premium. De flesta verktygen kräver de senaste versionerna av MSOLAP-klientbiblioteken, men vissa kan använda ADOMD.
+**Tredje part** – innehåller program och verktyg för klientdatavisualisering som kan ansluta till, köra frågor mot och förbruka datamängder i Power BI Premium. De flesta verktyg kräver de senaste versionerna av MSOLAP-klientbiblioteken, men vissa kan använda ADOMD.
 
 ## <a name="client-libraries"></a>Klientbibliotek
 
-Klientbibliotek är nödvändiga för program och verktyg att ansluta till Power BI Premium-arbetsytor. Samma klientbibliotek som används för att ansluta till Analysis Services stöds även i Power BI Premium. Microsoft-klientprogram som Excel, SQL Server Management Studio (SSMS) och SQL Server Data Tools (SSDT) installera samtliga tre klientbibliotek och uppdatera dem tillsammans med regelbundna programuppdateringar. I vissa fall, särskilt med program från tredje part och verktyg, kan du behöva installera nyare version av klientbiblioteken. Klientbibliotek uppdateras varje månad. Mer information finns i [klientbibliotek för att ansluta till Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Klientbibliotek är nödvändiga för att klientprogram och verktyg ska kunna ansluta till Power BI Premium-arbetsytor. Samma klientbibliotek som används för att ansluta till Analysis Services stöds även i Power BI Premium. Microsoft-klientprogram som Excel, SQL Server Management Studio (SSMS) och SQL Server Data Tools (SSDT) installerar alla tre klientbiblioteken och uppdaterar dem tillsammans med regelbundna programuppdateringar. I vissa fall, särskilt med program och verktyg från tredje part, kan du behöva installera nyare versioner av klientbiblioteken. Klientbibliotek uppdateras varje månad. Mer information finns i [Klientbibliotek för anslutning till Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
 
 ## <a name="connecting-to-a-premium-workspace"></a>Ansluta till en Premium-arbetsyta
 
-Du kan ansluta till arbetsytor som har tilldelats till Premium-dedicerad kapacitet. Arbetsytor som har tilldelats en dedikerad kapacitet har en anslutningssträng i URL-format. 
+Du kan ansluta till arbetsytor som har tilldelats till Premium-dedikerade kapaciteter. Arbetsytor som har tilldelats till en dedikerad kapacitet har en anslutningssträng i URL-format. 
 
-Att hämta anslutningssträngen arbetsytan i Power BI i **arbetsyteinställningarna**på den **Premium** fliken **arbetsytan anslutning**, klickar du på **kopiera**.
+Du hämtar arbetsytans anslutningssträng i Power BI genom att gå till **Arbetsyteinställningar** följt av fliken **Premium** och **Arbetsyteanslutning**. Där klickar du på **Kopiera**.
 
-![Anslutningssträngen för arbetsyta](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
+![Anslutningssträng för arbetsyta](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
 
-Arbetsytan anslutningar använder följande URL-format för att åtgärda en arbetsyta som om det vore en Analysis Services-servernamn:   
+Arbetsyteanslutningar använder följande URL-format för att åtgärda en arbetsyta som om den vore ett Analysis Services-servernamn:   
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]` 
 
 Exempel: `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
-> [!NOTE]
-> `[workspace name]` är skiftlägeskänsliga och kan innehålla blanksteg. 
 
 ### <a name="to-connect-in-ssms"></a>Ansluta i SSMS
 
-I **Anslut till Server** > **servertyp**väljer **Analysis Services**. I **servernamn**, ange URL: en. I **autentisering**väljer **Active Directory - Universal med stöd för MFA**, och sedan i **användarnamn**, ange din organisations användar-ID. 
+I **Anslut till server** > **Servertyp** väljer du **Analysis Services**. I **Servernamn** anger du URL:en. I **Autentisering** väljer du **Active Directory - Universal with MFA Support** (Active Directory – Universal med MFA-stöd), och i **Användarnamn** anger du din organisations användar-ID. 
 
-När du är ansluten, visas arbetsytan som en Analysis Services-server och datauppsättningar i arbetsytan visas som databaser.  
+När anslutningen är upprättad visas arbetsytan som en Analysis Services-server, och datamängderna på arbetsytan visas som databaser.  
 
 ![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
-### <a name="initial-catalog"></a>Startkatalog
+### <a name="initial-catalog"></a>Första katalog
 
-Vissa verktyg, till exempel SQL Server-Profiler, du kan behöva ange en *Initial Catalog*. Ange en datauppsättning (databas) på din arbetsyta. I **Anslut till Server**, klickar du på **alternativ**. I den **Anslut till Server** dialogrutan på den **anslutningsegenskaper** fliken **Anslut till databas**, anger du datauppsättningsnamnet.
+Med vissa verktyg, till exempel SQL Server Profiler, kan du behöva ange en *första katalog*. Ange en datamängd (databas) på arbetsytan. I **Anslut till server** klickar du på **Alternativ**. I dialogrutan **Anslut till server** går du till fliken **Anslutningsegenskaper** och sedan **Anslut till databas** och anger namnet på datamängden.
 
 ### <a name="duplicate-workspace-name"></a>Duplicera namn på arbetsyta
 
-När du ansluter till en arbetsyta med samma namn som en annan arbetsyta, kan du få följande fel: **Det går inte att ansluta till powerbi://api.powerbi.com/v1.0/ [klientnamn] / [Arbetsytenamn].**
+När du ansluter till en arbetsyta med samma namn som en annan arbetsyta kan det hända att följande fel visas: **Det går inte att ansluta till powerbi://api.powerbi.com/v1.0/[namn på klientorganisation]/[namn på arbetsyta].**
 
-Ange ObjectIDGuid, vilken kan kopieras från objekt-ID för arbetsyta i URL: en för att undvika det här felet, förutom att namnet på arbetsytan. Lägg till objekt-ID till anslutningens Webbadress. Till exempel ”powerbi://api.powerbi.com/v1.0/myorg/Contoso försäljning – 9d83d204-82a9-4b36-98f2-a40099093830”
+För att kringgå det här problemet anger du, utöver namnet på arbetsytan, ObjectIDGuid. Det kan du kopiera från arbetsytans objekt-ID i URL:en. Lägg till objekt-ID i anslutnings-URL:en. Exempel: ”powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830”
 
-### <a name="duplicate-dataset-name"></a>Duplicera namn på datauppsättning
+### <a name="duplicate-dataset-name"></a>Duplicera namn på datamängd
 
-Lägg till guid datauppsättning till datauppsättningens namn när du ansluter till en datauppsättning med samma namn som en annan datauppsättningar på samma arbetsyta. Du kan få både namn på datauppsättning *och* guid när du är ansluten till arbetsytan i SSMS. 
+Vid anslutning till en datamängd med samma namn som en annan datamängd på samma arbetsyta lägger du till datamängdens guid i datamängdens namn. Du kan hämta både datamängdens namn *och* guid med anslutning till arbetsytan i SSMS. 
 
-### <a name="delay-in-datasets-shown"></a>Fördröjning i datauppsättningar som visas
+### <a name="delay-in-datasets-shown"></a>Fördröjning i datamängder som visas
 
-När du ansluter till en arbetsyta, kan ändringar från nya, borttagna och omdöpt datauppsättningar ta upp till 5 minuter innan den visas. 
+När du ansluter till en arbetsyta kan ändringar från nya, borttagna och omdöpta datamängder ta upp till 5 minuter att visas. 
 
-### <a name="unsupported-datasets"></a>Datauppsättningar som inte stöds
+### <a name="unsupported-datasets"></a>Datamängder som inte stöds
 
-Följande datauppsättningar är inte tillgängliga med hjälp av XMLA-slutpunkter. Dessa datauppsättningar *inte* visas under arbetsytan i SSMS eller i andra verktyg: 
+Följande datamängder är inte tillgängliga med hjälp av XMLA-slutpunkter. Dessa datamängder visas *inte* under arbetsytan i SSMS eller i andra verktyg: 
 
-- Datauppsättningar med Live-anslutning till en Analysis Services-modeller. 
-- Datauppsättningar med Push-data med hjälp av REST-API.
-- Datauppsättningar för Excel-arbetsboken. 
+- Datamängder med live-anslutning till en Analysis Services-modell. 
+- Datamängder med push-data med hjälp av REST API.
+- Datamängder för Excel-arbetsböcker. 
 
-Följande datauppsättningar stöds inte i Power BI-tjänsten:   
+Följande datamängder stöds inte i Power BI-tjänsten:   
 
-- Datauppsättningar med Live-anslutning till en Power BI-datauppsättning.
+- Datamängder med en live-anslutning till en Power BI-datamängd.
 
 ## <a name="audit-logs"></a>Granskningsloggar 
 
-När klientprogram och verktyg ansluter till en arbetsyta, åtkomst via XMLA-slutpunkter loggas i Power BI-granskningsloggar under den **GetWorkspaces** igen. Mer information finns i [granska Power BI](service-admin-auditing.md).
+När klientprogram och verktyg ansluter till en arbetsyta loggas åtkomst via XMLA-slutpunkter i Power BI-spårningsloggarna under åtgärden **GetWorkspaces**. Läs mer i [Granska Power BI](service-admin-auditing.md).
 
 ## <a name="see-also"></a>Se också
 
 [Analysis Services-referenser](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
-[SQL Server Analysis Services Tabular Protocol](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
+[Tabellprotokoll för SQL Server Analysis Services](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
 [Dynamiska hanteringsvyer (DMV)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
 
 

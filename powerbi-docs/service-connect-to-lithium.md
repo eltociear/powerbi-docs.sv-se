@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9029d5b6268cacf17fc862a4c0a3d19f440f7de1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6fa16cf59ece7f701fc50f1914138b9ca5362c45
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61164087"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720453"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Ansluta till Lithium med Power BI
 Lithium skapar betrodda relationer mellan världens bästa varumärken och deras kunder och hjälper användarna att få svar och dela sina erfarenheter. Genom att ansluta Lithium-innehållspaketet till Power BI kan du mäta viktiga mått rörande din online-community för att öka försäljningen, minska tjänstekostnaderna och öka lojaliteten. 
@@ -60,5 +60,5 @@ Lithium-innehållspaketet kräver en Lithium-community av v15.9 eller senare. St
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

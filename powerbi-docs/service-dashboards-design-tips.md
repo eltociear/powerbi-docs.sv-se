@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a113cf75ae238b19cdc54b03ffc049bdcdfb8368
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0e523707caa38c808c777eb29bb8dcbdc6af5ebf
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61150341"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721207"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
@@ -81,5 +81,5 @@ Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI]
 
 ## <a name="next-steps"></a>Nästa steg
 [Skapa en instrumentpanel från en rapport](service-dashboard-create.md)  
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)  
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

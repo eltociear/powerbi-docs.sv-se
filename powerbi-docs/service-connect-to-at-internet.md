@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5afb79f52c4717887ba16d9ca43f913ba3446627
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 41b390190f8ce3c071f790edcdf86f0e3bd4a0c2
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61178347"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721297"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Ansluta till AT Internet Bridge med Power BI
 Hjälper dig att utvinna direkt värde från dina data med hjälp av dess enhetliga digitala analysplattform Analytics Suite på Internet. Innehållspaketet AT Internet Bridge för Power BI innehåller data om besök, datakällor, lokalisering och enheter för din webbplats.
@@ -61,5 +61,5 @@ Det här innehållspaketet innehåller data från de senaste 45 dagarna i följa
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Power BI – grundläggande begrepp](consumer/end-user-basic-concepts.md)
+[Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

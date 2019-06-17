@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 86fab3a760eb8bb12ed1955fd5bf357790090e0e
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61232502"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448352"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azure Machine Learning-integrering i Power BI (förhandsversion)
 
@@ -68,7 +68,14 @@ Stegen i den här artikeln beskriver hur du ger en Power BI-användaråtkomst ti
 
 Dataforskare använder i första hand Python för att utveckla och distribuera även sina maskininlärningsmodeller för Machine Learning Service.  Till skillnad från Machine Learning Studio, som hjälper till att automatisera uppgiften med att skapa en schemafil för modellen, måste dataforskaren när det gäller Machine Learning Service uttryckligen skapa schemafilen med hjälp av Python.
 
-Den här schemafilen måste inkluderas i
+Den här schemafilen måste inkluderas i den distribuerade webbtjänsten för Machine Learning Service-modeller. För att automatiskt generera schemat för webbtjänsten måste du ange ett exempel på indata/utdata i inmatningsskriptet för den distribuerade modellen. Se underavsnittet om (valfritt) automatisk generering av Swagger-schema i dokumentationen för distribution av modeller med Azure Machine Learning Service. Länken innehåller exempelinmatningsskriptet med instruktionerna för schemagenerering. 
+
+Specifikt refererar funktionerna *@input_schema* och *@output_schema* i inmatningsskriptet indata- och utdataexempelformaten i variablerna *input_sample* och *output_sample*, och använder dessa exempel för att generera en OpenAPI-specifikation (Swagger) för webbtjänsten under distribution.
+
+Dessa instruktioner för schemagenerering genom uppdatering av inmatningsskriptet måste även tillämpas på de modeller som skapas med hjälp av automatiserade maskininlärningsexperiment via Azure Machine Learning SDK.
+
+> [!NOTE]
+> Modeller som skapats med hjälp av det visuella gränssnittet i Azure Machine Learning Service (förhandsversion) stöder för närvarande inte schemagenerering, men kommer att göra det i senare versioner. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Anropa Azure ML-modellen i Power BI
 
@@ -106,9 +113,9 @@ Den här artikeln visade en översikt över integrering av Machine Learning i Po
 
 Mer information om dataflöden finns i de här artiklarna:
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 * [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
 
 

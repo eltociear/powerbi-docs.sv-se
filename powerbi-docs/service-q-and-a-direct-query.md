@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9836cd88bef5066f61a8ae44eabe7685196e2bed
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 59c9488def297537cc2ea944f6c0fc4f59ba29ba
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65624925"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720886"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivera Frågor och svar för live-anslutningar i Power BI
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Vad är den lokala datagatewayen?  Vad är en live-anslutning?
-Datauppsättningar i Power BI kan importeras till Power BI eller så kan du skapa en live-anslutning till dem. Live-anslutning datauppsättningar avses ofta som ”lokal”. Live-anslutningarna hanteras med en [gateway](service-gateway-onprem.md). Data och frågor skickas fram och tillbaka med hjälp av live-frågor.
+Datauppsättningar i Power BI kan importeras till Power BI eller så kan du skapa en live-anslutning till dem. Datamängder med live-anslutning kallas ofta ”lokala”. Live-anslutningarna hanteras med en [gateway](service-gateway-onprem.md). Data och frågor skickas fram och tillbaka med hjälp av live-frågor.
 
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Frågor och svar för datauppsättningar för den lokala datagatewayen
 Om du vill använda frågor och svar med datauppsättningar som du kommer åt via en gateway, måste du först aktivera dem.
@@ -33,7 +33,7 @@ Eftersom Power BI frågor och svar använder sig av text- och schemavärden frå
 Mer information finns i:
 
 * Vad är den [lokala datagatewayen](service-gateway-onprem.md)?
-* [Power BI Q & A för konsumenter](consumer/end-user-q-and-a.md)
+* [Frågor och svar om Power BI för konsumenter](consumer/end-user-q-and-a.md)
 
 ## <a name="enable-qa"></a>Aktivera frågor och svar
 När du har ställt in datagatewayen, kan du ansluta till dina data från Power BI.  Skapa antingen en instrumentpanel med hjälp av dina lokala data eller ladda upp en .pbix-fil som använder lokala data.  Du kan också redan har lokala data i instrumentpaneler, rapporter och datauppsättningar som har delats med dig.
@@ -54,16 +54,16 @@ När du aktiverar frågor och svar för dina lokala data, cachelagras en delmän
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Funktionen har vissa begränsningar:
 
-* Inledningsvis finns funktionen endast tillgänglig för SQL Server 2016 Analysis Services Tabular-datakällor. Funktionen är optimerad för att arbeta med tabelldata. Frågor och & en upplevelse stöds inte ännu för flera dimensioner. Ytterligare datakällor som stöds av den lokala datagatewayen kommer att lanseras löpande.
-* Fullständigt stöd för säkerhet på radnivå som definierats i SQL Server Analysis Services är inte tillgängligt från början. När du ställer frågor i frågor och svar, har det ”komplettera” av frågor medan du skriver visa strängvärden som en användare inte åtkomst till. RLS som definierats i modellen respekteras dock för visuella objekt i rapporten och diagrammet så inga underliggande numeriska data kan visas. Alternativ för att styra det här beteenden kommer att släppas i kommande uppdateringar.
-* Säkerhet på objektnivå (OLS) stöds inte. Frågor och svar respekterar inte säkerhet på objektnivå och kan avslöja tabell eller kolumn som ska användare som inte har tillgång till dem. Du bör aktivera RLS för att se till att datavärdena skyddas på lämpligt sätt. 
-* Live-anslutningar stöds bara med den lokala datagatewayen. Det kan därför inte användas med den personliga gatewayen.
+* Inledningsvis finns funktionen endast tillgänglig för SQL Server 2016 Analysis Services Tabular-datakällor. Funktionen är optimerad för att arbeta med tabelldata. Funktionen för Frågor och svar stöds inte ännu för flera dimensioner. Ytterligare datakällor som stöds av den lokala datagatewayen kommer att lanseras löpande.
+* Fullständigt stöd för säkerhet på radnivå som definierats i SQL Server Analysis Services är inte tillgängligt från början. När frågor ställs i Frågor och svar kan automatisk komplettering av frågor medan de skrivs visa strängvärden som en användare inte har åtkomst till. RLS som definierats i modellen respekteras dock för visuella objekt i rapporten och diagrammet så inga underliggande numeriska data kan visas. Alternativ för att styra det här beteenden kommer att släppas i kommande uppdateringar.
+* Säkerhet på objektnivå (OLS) stöds inte. Frågor och svar tar inte hänsyn till säkerhet på objektnivå och kan visa tabell- eller kolumnnamn för användare som inte har tillgång till dem. Du bör aktivera RLS för att se till att datavärdena skyddas på lämpligt sätt. 
+* Live-anslutningar stöds bara med den lokala datagatewayen. Därmed kan detta inte användas med din den personliga gatewayen.
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Lokal datagateway](service-gateway-onprem.md)  
 - [Hantera din datakälla – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-- [Power BI: Grundläggande begrepp](consumer/end-user-basic-concepts.md)  
+- [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
 - [Översikt över Power BI frågor och svar](consumer/end-user-q-and-a.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
