@@ -106,6 +106,8 @@
       items:
         - name: Ordlista och terminologi
           href: end-user-glossary.md
+        - name: Vanliga frågor och svar
+          href: end-user-faq.md
         - name: Webbläsare som stöds
           href: end-user-browsers.md
         - name: Typer av Quick Insights som stöds av Power BI
