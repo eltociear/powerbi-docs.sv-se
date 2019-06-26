@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/20/2017
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 201e4e75c9a1ce0d05c85112457191a8d306c596
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c2ccbf8eaa272d6e5a57f88c76c79b5d06bb3892
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61248074"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839665"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Ändra visualiseringstypen i en Power BI-rapport
 Prova olika typer av visualiseringar i Power BI-tjänsten och Power BI Desktop för att se vilken som bäst illustrerar dina data. 
@@ -24,7 +24,7 @@ Prova olika typer av visualiseringar i Power BI-tjänsten och Power BI Desktop f
 2. Välj en visualisering för att aktivera den. En aktiv visualisering har handtag och en kantlinje.    
 3. I visualiseringspanelen väljer du ny visualiseringstyp. 
    
-   ![](media/power-bi-report-change-visualization-type/changeviz.gif).
+   ![video som visar en ändring av stapeldiagram till linjediagram](media/power-bi-report-change-visualization-type/changeviz.gif).
 4. (Valfritt) [Fäst din visualisering](../service-dashboard-pin-tile-from-report.md) på instrumentpanelen som en panel. 
 
 Om du har ändrat visualiseringstyp i rapporten efter att du har fäst den på instrumentpanelen, uppdateras inte panelen på instrumentpanelen automatiskt. Så om du har fäst visualiseringen som ett linjediagram och sedan ändrat den till ett stapeldiagram i rapporten, kommer den redan fästa versionen av dessa data att fortsätta vara ett linjediagram. Fäst stapeldiagrammet om du vill se det på instrumentpanelen.

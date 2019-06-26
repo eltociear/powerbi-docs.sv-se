@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b689a4d0718c92608fe7fc0cdb34d27803015269
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853413"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823559"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -119,7 +119,7 @@ Kategorin **Azure** innehåller följande dataanslutningar:
 * Azure HDInsight Spark
 * HDInsight Interactive-fråga
 * Azure Data Explorer (Kusto)
-* Azure kostnadshantering (Beta)
+* Azure Cost Management (Beta)
 
 Följande bild visar fönstret **Hämta data** för **Azure**.
 
@@ -133,7 +133,7 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (lokal)
-* Common Data Service för appar (beta)
+* Common Data Service
 * Microsoft Azure Consumption Insights (beta)
 * Azure DevOps (Beta)
 * Azure DevOps Server (Beta)
@@ -161,8 +161,11 @@ Kategorin **Onlinetjänster** innehåller följande dataanslutningar:
 * Webtrends (beta)
 * Zendesk (beta)
 * Emigo Data Source (Beta)
-* IndustrialAppStore (Beta)
+* Entersoft Business Suite (Beta)
+* Industrial App Store
+* Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
+* Quick Base
 * TeamDesk (beta)
 
 Följande bild visar fönstret **Hämta data** för **Onlinetjänster**.
@@ -182,15 +185,14 @@ Kategorin **Övrigt** innehåller följande dataanslutningar:
 * Python-skript
 * ODBC
 * OLE DB
-* BI360 - budgetering och finansiell rapportering (Beta)
+* BI360 - Budgeting & Financial Reporting (Beta)
 * Denado
 * Information Grid (Beta)
 * Paxata 
 * QubolePresto (Beta)
-* Quick Base (Beta)
 * Roamler (Beta)
 * SurveyMonkey (Beta)
-* Tenforce (Beta)
+* Tenforce (Smart)List (Beta)
 * Workforce Dimensions (Beta)
 * Tom fråga
 

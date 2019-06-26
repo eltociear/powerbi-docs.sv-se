@@ -7,38 +7,38 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/30/2018
+ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: bc562c1c75f72e0ada23580aa0698f6463c129bb
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61172171"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814290"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
-Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. När du skapar den här anslutningen, hämtas dina data och ger dig automatiskt en instrumentpanel och relaterade rapporter baserade på dina data.
+Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. Med den här anslutningen kan du hämta dina Salesforce-data och få en instrumentpanel och rapporter automatiskt.
 
-Ansluta till [Salesforce-innehållspaketet](https://app.powerbi.com/getdata/services/salesforce) för Power BI eller läs mer om [Salesforce-integrering](https://powerbi.microsoft.com/integrations/salesforce) med Power BI.
+Läs mer om [Salesforce-integrering](https://powerbi.microsoft.com/integrations/salesforce) med Power BI.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
+1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret i Power BI.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
-2. I rutan **tjänster** väljer du **Hämta**.
+2. I rutan **Tjänster** väljer du **Hämta**.
    
    ![](media/service-connect-to-salesforce/pbi_getservices.png) 
-3. Klicka på **Salesforce** och välj **hämta**.  
+3. Välj **Analys för Salesforce** och välj **Hämta**.  
    
    ![](media/service-connect-to-salesforce/salesforce.png)
-4. Välj **logga in** för att initiera inloggningsflödet.
+4. Välj **Logga in** för att starta inloggningsflödet.
    
     ![](media/service-connect-to-salesforce/dialog.png)
-5. När du uppmanas till det anger du dina Salesforce-autentiseringsuppgifter. Klicka på **tillåt** så att Power BI kan komma åt din grundläggande Salesforce-information och data.
+5. När du uppmanas till det anger du dina Salesforce-autentiseringsuppgifter. Välj **Tillåt** så att Power BI kan komma åt grundläggande Salesforce-information och data.
    
    ![](media/service-connect-to-salesforce/sf_authorize.png)
-6. Konfigurera vad du vill importera till Power BI med hjälp av listrutealternativet:
+6. Konfigurera vad du vill importera till Power BI med listrutan:
    
    * **Instrumentpanel**
      
@@ -52,37 +52,46 @@ Ansluta till [Salesforce-innehållspaketet](https://app.powerbi.com/getdata/serv
      ![](media/service-connect-to-salesforce/pbi_salesforcereports.png)
      
      Om du inte ser några rapporter, lägger du till eller skapar dem i ditt Salesforce-konto och försöker ansluta igen.
-7. Klicka på **Anslut** för att starta importen. Under importen kan du se ett meddelande som visar att importen pågår. När importen är klar, ser du en instrumentpanel, rapport och datauppsättning för dina Salesforce-data listade i navigeringsfönstret till vänster.
+
+7. Välj **Anslut** för att starta importen. Under importen ser du ett meddelande om att importen pågår. När importen är klar ser du en instrumentpanel, rapport och datamängd för dina Salesforce-data i navigeringsfönstret till vänster.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-Du kan ändra den här instrumentpanelen till att visa dina data på det sätt som du vill. Du kan ställa frågor med frågor och svar eller klicka på en panel för att [öppna den underliggande rapporten](consumer/end-user-tiles.md) och [ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelen.
+Du kan ändra instrumentpanelen så att den visar data på det sätt du vill. Du kan köra frågor med Q&A eller [välja en panel](consumer/end-user-tiles.md) för att öppna den underliggande rapporten och [redigera eller ta bort paneler på instrumentpanelen](service-dashboard-edit-tile.md).
 
 **Och sedan?**
 
 * Prova att [ställa en fråga i rutan Frågor och svar](consumer/end-user-q-and-a.md) överst på instrumentpanelen
-* [Ändra panelerna](service-dashboard-edit-tile.md) i instrumentpanelen
+* [Redigera eller ta bort en panel](service-dashboard-edit-tile.md) på instrumentpanelen
 * [Välj en panel](service-dashboard-tiles.md) för att öppna den underliggande rapporten
-* Medan din datauppsättning schemaläggs att uppdateras dagligen så kan du ändra uppdateringsfrekvensen eller testa att uppdatera den på begäran med **Uppdatera nu**
+* Medan din datamängd är schemalagd att uppdateras dagligen så kan du ändra uppdateringsschemat eller prova att uppdatera den på begäran med **Uppdatera nu**
 
 ## <a name="system-requirements-and-considerations"></a>Systemkrav och aspekter
+
 - Ansluten med ett Salesforce-konto för produktion som har API-åtkomst aktiverat
-- Behörighet har getts till Power BI-appen under inloggningen
+
+- Behörighet ges till Power BI-appen under inloggningen
+
 - Kontot har tillräckligt med API-anrop tillgängliga för att hämta och uppdatera data
-- En giltig autentiseringstoken krävs för uppdatering. Kontrollera att du har 5 eller mindre Salesforce-datauppsättningar importerade, eftersom Salesforce har en gräns på 5 autentiseringstoken per program
+
+- En giltig autentiseringstoken krävs för uppdatering. Salesforce har en gräns på fem autentiseringstoken per app, så se till att du importerar fem eller färre Salesforce-datamängder.
+
 - API för Salesforce-rapporter har en begränsning som ger stöd för upp till 2 000 rader med data.
 
 
 ## <a name="troubleshooting"></a>Felsökning
-Granska kraven ovan om det uppstår några fel. Observera också att möjligheten att logga in till en anpassad domän eller sandbox-domän inte stöds för närvarande.
+
+Granska kraven ovan om du stöter på några fel. 
+
+Du kan för närvarande inte logga in på en anpassad domän eller sandboxdomän.
 
 ### <a name="unable-to-connect-to-the-remote-server-message"></a>Meddelandet ”Det går inte att ansluta till fjärrservern”
 
-Om meddelandet ”Det går inte att ansluta till fjärrservern” visas när du försöker ansluta till ditt Salesforce-konto rekommenderar vi att du tittar på den här lösningen i Outsystems-forumet: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&) (Felmeddelande vid inloggning i Salesforce-anslutningsappen: Det går inte att ansluta till fjärrservern)
+Om du ser meddelandet ”Det går inte att ansluta till fjärrservern” när du försöker ansluta till ditt Salesforce-konto rekommenderar vi att du tittar på den här lösningen på följande forum: [Salesforce Connector sign in Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&) (Felmeddelande vid inloggning i Salesforce-anslutningsappen: Det går inte att ansluta till fjärrservern)
 
 
 ## <a name="next-steps"></a>Nästa steg
 [Vad är Power BI?](power-bi-overview.md)
 
-[Hämta data](service-get-data.md)
+[Datakällor för Power BI-tjänsten](service-get-data.md)
 

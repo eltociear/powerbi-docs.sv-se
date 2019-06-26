@@ -1,5 +1,5 @@
 ---
-title: Cognitive Services i Power BI (förhandsversion)
+title: Cognitive Services i Power BI
 description: Lär dig hur du använder Cognitive Services med Power BI
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 63de805b357fd5b4d15aeea2231dc952ec9e7077
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 267534198d40b91a5550321162b42ecd45500673
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61182070"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823510"
 ---
-# <a name="cognitive-services-in-power-bi-preview"></a>Cognitive Services i Power BI (förhandsversion)
+# <a name="cognitive-services-in-power-bi"></a>Cognitive Services i Power BI 
 
 Med Cognitive Services i Power BI, kan du använda olika algoritmer från [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) för att utöka dina data i självbetjänad dataförberedelse för dataflöden.
 
@@ -25,7 +25,7 @@ De tjänster som stöds i dag är [Attitydanalys](https://docs.microsoft.com/azu
 
 ## <a name="enabling-ai-features"></a>**Aktivera AI-funktioner**
 
-Cognitive Services stöds för noder för Premium-kapacitet EM2, A2 eller P1 och senare. En separat AI-arbetsbelastning på kapaciteten används för att köra Cognitive Services. Under den allmänt tillgängliga förhandsversionen är den här arbetsbelastningen är inaktiverad som standard. Innan du använder Cognitive Services i Power BI, måste AI-arbetsbelastningar vara aktiverade i kapacitetsinställningarma i administratörsportalen. Du kan aktivera AI-arbetsbelastningen i avsnittet arbetsbelastningar och definiera den maximala mängden minne som den här arbetsbelastningen ska använda. Den rekommenderade minnesstorleksgränsen är 20 %. Om den här gränsen överskrids kommer frågan att bli långsammare.
+Cognitive Services stöds för noder för Premium-kapacitet EM2, A2 eller P1 och senare. En separat AI-arbetsbelastning på kapaciteten används för att köra Cognitive Services. Under den allmänt tillgängliga förhandsversionen (innan juni 2019) är den här arbetsbelastningen inaktiverad som standard. Innan du använder Cognitive Services i Power BI, måste AI-arbetsbelastningar vara aktiverade i kapacitetsinställningarma i administratörsportalen. Du kan aktivera AI-arbetsbelastningen i avsnittet arbetsbelastningar och definiera den maximala mängden minne som den här arbetsbelastningen ska använda. Den rekommenderade minnesstorleksgränsen är 20 %. Om den här gränsen överskrids kommer frågan att bli långsammare.
 
 ![Cognitive Services i Power BI](media/service-cognitive-services/cognitive-services_01.png)
 
@@ -95,14 +95,14 @@ Den här funktionen kräver en bild-URL eller abase-64-fält som indata. För ti
 
 Den här artikeln gav en översikt över med Cognitive Services med Power BI-tjänsten. Följande artiklar kan också vara intressanta och användbara. 
 
-* [Självstudier: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)](service-tutorial-invoke-machine-learning-model.md)
-* [Azure Machine Learning-integrering i Power BI (förhandsversion)](service-machine-learning-integration.md)
+* [Självstudier: Anropa en Machine Learning Studio-modell i Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Azure Machine Learning-integrering i Power BI](service-machine-learning-integration.md)
 * [Självstudier: Använda Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
 
 
 Mer information om dataflöden finns i de här artiklarna:
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 * [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)

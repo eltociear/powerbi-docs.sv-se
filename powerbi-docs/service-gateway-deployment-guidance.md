@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
-ms.translationtype: MT
+ms.openlocfilehash: f06632e80bad8796ded3e3616836832967435b24
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051164"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809246"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vägledning för distribution av en datagateway för Power BI
 
@@ -42,7 +42,7 @@ Det finns en begränsning i **Power BI** som endast tillåter *en* gateway per *
 ### <a name="connection-type"></a>Anslutningstyp
 **Power BI** har två typer av anslutningar: **DirectQuery** och **Importera**. Alla datakällor stöder inte båda anslutningstyper och det kan finnas många anledningar till att välja den ena över den andra, till exempel säkerhetskrav, prestanda, databegränsningar och storleken på datamodellen. Du kan lära dig mer om anslutningstyper och datakällor som stöds i avsnittet *lista med tillgängliga typer av datakällor* i artikeln [Lokal datagateway](service-gateway-onprem.md).
 
-Gatewayanvändning kan vara olika beroende på vilken typ av anslutning används. Du bör till exempel försöka skilja **DirectQuery**-datakällor från datakällor med **Schemalagd uppdatering** när det är möjligt (förutsatt att de är i olika rapporter och kan delas upp). Detta hindrar gatewayen från att ha tusentals **DirectQuery** begäranden i kö vid samma tid som morgonens schemalagda uppdatering av en storskalig datamodell som används för företagets huvudinstrumentpanel. Tänk på följande för varje:
+Beroende på vilken typ av anslutning som används kan gateway-användningen variera. Du bör till exempel försöka skilja **DirectQuery**-datakällor från datakällor med **Schemalagd uppdatering** när det är möjligt (förutsatt att de är i olika rapporter och kan delas upp). Om du gör det kommer gatewayen inte att ha tusentals **DirectQuery**-förfrågningar i kö samtidigt som morgonens schemalagda uppdatering av en storskalig datamodell som används för företagets huvudinstrumentpanel. Tänk på följande för varje:
 
 * För **Schemalagd uppdatering**: beroende på storleken på din fråga och antalet uppdateringar som utförs per dag, räcker det att vara inom de rekommenderade minimikraven för maskinvara eller uppgradera till en dator med bättre prestanda. Om en given fråga inte är vikt utförs omvandlingar på gatewaydatorn och därmed är det bra om gatewaydatorn har mer tillgängligt minne.
 * För **DirectQuery**: en fråga skickas varje gång en användare öppnar rapporten eller tittar på data. Så om du tror att mer än 1 000 användare har åtkomst till data samtidigt måste datorn ha tåliga och högpresterande maskinvarukomponenter. Flera processorkärnor resulterar i bättre genomströmning för en **DirectQuery**-anslutning.
@@ -104,14 +104,34 @@ Gatewayen skapar en utgående anslutning till **Azure Service Bus**. Gatewayen k
 
 Gatewayen behöver *inga* ingående portar. Alla nödvändiga portar visas i listan ovan.
 
-Vi rekommenderar att du vitlistar IP-adresserna för ditt dataområde i brandväggen. Du kan hämta listan över IP-adresser som finns i IP-listan för [Microsoft Azure-Datacenter](https://www.microsoft.com/download/details.aspx?id=41653). Listan uppdateras varje vecka. Gatewayen kommer att kommunicera med **Azure Service Bus** via den angivna IP-adressen, tillsammans med det fullständiga kvalificerade domännamnet (FQDN). Om du tvingar gatewayen att kommunicera via HTTPS kommer gatewayen endast att använda DQDN och kommunikationen kommer att ske via IP-adresser.
+Vi rekommenderar att du lägger till IP-adresserna i en lista över godkända adresser för din region i brandväggen. Du kan hämta listan över IP-adresser som finns i IP-listan för [Microsoft Azure-Datacenter](https://www.microsoft.com/download/details.aspx?id=41653). Listan uppdateras varje vecka. Gatewayen kommer att kommunicera med **Azure Service Bus** via den angivna IP-adressen, tillsammans med det fullständiga kvalificerade domännamnet (FQDN). Om du tvingar gatewayen att kommunicera via HTTPS kommer gatewayen endast att använda DQDN och kommunikationen kommer att ske via IP-adresser.
 
 #### <a name="forcing-https-communication-with-azure-service-bus"></a>Tvinga HTTPS-kommunikation med Azure Service Bus
-Du kan tvinga gatewayen att kommunicera med **Azure Service Bus** med HTTPS i stället för direkt TCP. Detta kan försämra prestandan något. Du kan också tvinga gatewayen att kommunicera med **Azure Service Bus** med HTTPS med användargränssnittet för en gateway (från och med gatewaylanseringen i mars 2017).
 
-Om du vill göra det i gatewayen väljer **nätverk**, sedan aktivera den **Azure Service Bus anslutningsläget** **på**.
+Du kan tvinga gatewayen att kommunicera med Azure Service Bus med HTTPS, i stället för direkt TCP.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> Från och med versionen för juni 2019 är nya installationer (inte uppdateringar) förinställda med HTTPS i stället för TCP baserat på rekommendationer från Azure Service Bus.
+
+Du kan framtvinga kommunikation via HTTPS genom att ändra filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* och ändra värdet från `AutoDetect` till `Https`, se kodfragmentet direkt efter detta stycke. Filen finns (som standard) på *C:\Program\Lokal datagateway*.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+Värdet för parametern *ServiceBusSystemConnectivityModeString* är skiftlägeskänsligt. Giltiga värden är *AutoDetect* och *Https*.
+
+Alternativt kan du tvinga gatewayen att införa beteendet med hjälp av gatewayens användargränssnitt. Gå till gatewayens användargränssnitt och välj **Nätverk**. Växla sedan **anslutningsläget för Azure Service Bus** till **På**.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+När det har ändrats och du väljer **Tillämpa** (en knapp som endast visas när du gör en ändring) kommer *gatewayens Windows-tjänst* att startas om automatiskt, så att ändringen träder i kraft.
+
+I framtiden kan du starta om *gatewayens Windows-tjänst* från gränssnittets dialogruta genom att välja **Tjänstinställningar** och sedan *Starta om nu*.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### <a name="additional-guidance"></a>Mer information
 Det här avsnittet innehåller ytterligare vägledning för att distribuera och hantera gateways.

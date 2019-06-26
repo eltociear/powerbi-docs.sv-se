@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394854"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839196"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
 Skapa en **Formkarta** för att jämföra regioner på en karta med hjälp av färg. Till skillnad från **Karta** kan **Formkarta** inte visa exakta geografiska platser för datapunkter på en karta. Istället är dess huvudsakliga syfte att visa relativa jämförelser mellan regioner med hjälp av olika färger.
@@ -27,15 +27,15 @@ Du kan testa kontrollen **Formkarta** med kartorna som levereras med den här f�
 
 **Formkartor** är en förhandsversion och måste aktiveras i Power BI Desktop. För att aktivera **Formkartor** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markerar sedan kryssrutan bredvid **Forma visuell mappning**. Du måste starta om Power BI Desktop när du har gjort valet.
 
-![](media/desktop-shape-map/shape-map_1a.png)
+![aktivera förhandsfunktionen Formkarta](media/desktop-shape-map/power-bi-preview-features.png)
 
-När **formkartor** har aktiverats klickar du på kontrollen **Formkarta** från fönstret **Visuella objekt**.
+När **Formkarta** har aktiverats väljer du ikonen **Formkarta** i fönstret **Visualiseringar**.
 
-![](media/desktop-shape-map/shape-map_2.png)
+![välj mallen för formkartor](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
 Power BI Desktop skapar en tom arbetsyta för **Formkarta**.
 
-![](media/desktop-shape-map/shape-map_3.png)
+![en tom formkarta visas på arbetsytan](media/desktop-shape-map/shape-map-3.png)
 
 Vidta följande steg för att skapa en **Formkarta**:
 
@@ -46,26 +46,23 @@ Vidta följande steg för att skapa en **Formkarta**:
    > 
    > 
 
-   ![](media/desktop-shape-map/shape-map_3a.png)
+   ![skapa din formkarta](media/desktop-shape-map/shape-map-3a.png)
 2. I inställningsfönstret **Format** expanderar du **Form** och väljer från listrutan **Standardkartor** för att visa dina data. Nu visas renderingen som i följande bild.
 
-   ![](media/desktop-shape-map/shape-map_3b.png)
+   ![öppna formateringsfönstret och välj Form](media/desktop-shape-map/shape-map-3b-new.png)
 
    > [!NOTE]
    > I avsnittet **Regionnycklar** i slutet av den här artikeln finns en uppsättning tabeller som har kartregionnycklar som du kan använda för att testa **Formkartan**.
    > 
    > 
-3. Du kan ändra kartans projektion och zoomningsinställningar samt färger för datapunkter, från inställningsfönstret **Format**. Du kan också ändra inställningarna för zoomning. Du kan till exempel ändra färger, ange max- och minimivärdena och så vidare.
-
-   ![](media/desktop-shape-map/shape-map_3d.png)
-4. Du kan också lägga till en kategoridatakolumn till **förklarings**bucketen och klassificera kartregioner utifrån kategorier.
+3. Sedan kan du modifiera kartan med hjälp av formateringsalternativ som **Standardfärg**, **Zooma** och flera andra. Du kan också lägga till en kategoridatakolumn till **förklarings**bucketen och klassificera kartregioner utifrån kategorier.
 
 ## <a name="use-custom-maps"></a>Använda anpassade kartor
 Du kan använda anpassade kartor med **Formkarta** så länge som de finns i **TopoJSON**-format. Om kartan är i ett annat format kan du använda onlineverktyg som [**Kartformaren**](http://mapshaper.org/) för att konvertera dina *formfiler* eller *GeoJSON*-mappar till **TopoJSON**-format.
 
 För att använda din **TopoJSON**-kartfil, lägger du till ett visuellt ShapeMap-objekt i rapporten och lägger till vissa data i bucketarna *Plats* och *Färgmättning*. I rutan **Visualiseringar** med avsnittet **Format** markerat (visas som (1) i följande bild) expanderar du området **Form** och väljer **+ Lägg till karta**.
 
-![](media/desktop-shape-map/shape-map_6.png)
+![öppna formateringsfönstret och välj Lägg till karta](media/desktop-shape-map/shape-map-6-new.png)
 
 ## <a name="sample-custom-map"></a>Exempel på egen karta
 *Offices of the United States Attorneys* publicerar varje år en finansiell rapport med information om deras tvister och ärenden.  Följ länken nedan om du vill se alla deras rapporter.
@@ -74,11 +71,11 @@ https://www.justice.gov/usao/resources/annual-statistical-reports
 
 Eftersom delstater kan vara indelade i flera distrikt måste vi ha en anpassad formkarta.  Genom att importera **TopoJSON**-kartan över USA:s domkretsar till **Power BI Desktop** kan vi visualisera årliga finansiella data för distriktsåklagarna.  Bilden nedan visar ett exempel på en sådan karta.
 
-![](media/desktop-shape-map/shape-map_7a.png)
+![anpassad formkarta](media/desktop-shape-map/shape-map-7a.png)
 
 Man kan också göra intressanta saker med enskilda delstatskartor och visa mer information beroende på vilka distrikt den innehåller. 
 
-![](media/desktop-shape-map/shape-map_7b.png)
+![formkarta över Texas](media/desktop-shape-map/shape-map-7b.png)
 
 Om du vill experimentera med datauppsättningen och visualiseringen kan du hämta den ursprungliga PBIX-filen som användes för att generera rapporten med hjälp av följande länk.
 
@@ -87,11 +84,11 @@ Om du vill experimentera med datauppsättningen och visualiseringen kan du hämt
 ## <a name="getting-map-data"></a>Hämta kartdata
 För att snabbt hämta data till en modell så att du kan testa **formkartan** kan du kopiera en av tabellerna i slutet av den här artikeln och sedan markera **Ange data** från menyfliksområdet **Start**.
 
-![](media/desktop-shape-map/shape-map_4.png)
+![Välj Ange data i Desktop](media/desktop-shape-map/shape-map-4-new.png)
 
 Om dina data har flera kolumner, behöver du använda en redigerare som Excel för att klistra in data och sedan kopiera varje datakolumn separat. Du kan sedan klistra in data i Power BI Desktop. Den översta raden identifieras automatiskt som en rubrik.
 
-![](media/desktop-shape-map/shape-map_5.png)
+![Fönstret Skapa tabell](media/desktop-shape-map/shape-map-5.png)
 
 Du kan ange en ny kolumn genom att skriva ett nytt kolumnnamn (i den tomma kolumnen till höger) och sedan lägga till värden i varje cell, precis som du kan göra i Excel. När du är klar väljer du **Överför** så läggs tabellen till i datamodellen för Power BI Desktop.
 

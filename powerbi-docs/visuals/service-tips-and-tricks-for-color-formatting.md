@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d3fba99c5b6b639d851b62d5624331b0bef1567d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e115b886a0fd952a8d3d28f345a0594fae7f0a49
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61390897"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838201"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tips för färgformatering i Power BI
 Power BI erbjuder många olika sätt på vilka du kan anpassa dina instrumentpaneler och rapporter. Den här artikeln innehåller detaljerad information om en samling tips med vilkas hjälp du kan göra dina Power BI-visualiseringar mer intressanta och anpassade efter dina behov.
@@ -31,28 +31,28 @@ Följande tips tillhandahålls. Har du ytterligare något bra tips? Toppen! Skic
 
 Om du vill göra några ändringar måste du redigera en rapport. Öppna rapporten och välj **Redigera rapport** från menyområdet, enligt följande bild.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
+![här hittar du menyn Redigera](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
-När fönstret **Visualiseringar** visas utmed den högra sidan av arbetsytan **Rapport** och du kan börja anpassa. Om fönstret inte visas klickar du på pilen i det övre högra hörnet att öppna det.
+När du ser fönstren **Filter** och **Visualiseringar** till höger på rapportarbetsytan kan du börja anpassa rapporten. Om fönstret inte visas klickar du på pilen i det övre högra hörnet att öppna det.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
+![rapportarbetsyta i redigeringsvyn](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Ändra färg på en enskild datapunkt
 Ibland vill du kanske markera en viss datapunkt. Kanske gäller det försäljningssiffrorna i samband med lanseringen av en ny produkt, eller förbättrade kvalitetsresultat när du startar ett nytt program. Med Power BI kan du markera en viss datapunkt genom att ändra dess färg.
 
 Följande visualisering rangordnar enheter sålda per produktsegment. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-grey.png)
+![Ändra till grå färg för data](media/service-tips-and-tricks-for-color-formatting/power-bi-data.png)
 
 Anta nu att du vill att anropa segmentet **Bekvämlighet** för att visa hur väl den här helt nya segmentet fungerar, genom att använda färg. Gör så här:
 
 Expandera avsnittet **Datafärger** och aktivera skjutreglaget för **Visa alla**. Då visas färgerna för varje dataelement i visualiseringen. När du hovrar över datapunkter är bläddring aktiverat, så kan du kan modifiera valfria datapunkter.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
 Ställ in **Bekvämlighet** på orange. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-orange.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
 
 När du är klar visas datapunkten **Bekvämlighet** med en fin orange nyans som verkligen står ut.
 
@@ -70,52 +70,46 @@ Diagram tjänar ofta på att man använder dynamisk färginställning som basera
 I följande avsnitt visar vi olika sätt på vilka man kan basera färger på numeriska värden.
 
 ## <a name="base-the-color-of-data-points-on-a-value"></a>Basera datapunkternas färg på ett värde
-Om du vill ändra färg utifrån ett värde, så dra det fält som du vill basera färgen på till fältet **Färgmättnad** i fönstret **Fält**. I följande bild har **%Marknadsandel SPLY YTD** dragits till **Färgmättnad**. 
+Om du vill ändra färg baserat på ett värde öppnar du formateringsfönstret och väljer alternativet **Villkorsstyrd formatering**.  
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-color-saturation.png)
+![välj alternativet för villkorsstyrd formatering genom att klicka på de tre lodräta punkterna](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.png)
 
-På formateringspanelen under **Datafärger** ska du fastställa hur värdet för **% Marknadsandel SPLY YTD** kommer att ändra färg och skuggning i ditt stapeldiagram. I det här exemplet kommer en lägre %Marknadsandel att vara ljusare blå och högre värden kommer att vara mörkare blå.
+Använd listrutorna i fönstret Standardfärger till att identifiera vilka fält som villkorsstyrd formatering ska användas för. I det här exemplet har vi valt fältet **Sales fact** > **Total Units** och valt ljusblå färg för **Lowest value** samt mörkblå färg för **Highest value**. 
+
+![inställningar för villkorsstyrd formatering av datafärg](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting2-new.png)
+
+![stapeldiagram med standardfärger](media/service-tips-and-tricks-for-color-formatting/power-bi-default-colors.png)
+
+Du kan också formatera färgen för det visuella objektet med hjälp av ett fält som inte ingår i det visuella objektet. I följande bild används **%Market Share SPLY YTD**. 
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
-
-
-Här kan vi se att även om vi har sålt fler enheter av både **Produktivitet** och **Extrem** (deras kolumner är högre) så har**Moderering** större **%Marknadsandel SPLY YTD** (dess kolumn har högre färgmättnad).
-
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-saturation.png)
+Här kan vi se att även om vi har sålt fler enheter av både **Productivity** och **Extreme** (deras kolumner är högre) så har **Moderation** större **%Market Share SPLY YTD** (dess kolumn har högre färgmättnad).
 
 ## <a name="customize-the-colors-used-in-the-color-scale"></a>Anpassa färgerna som används i färgskalan
-Du kan även anpassa färgerna som används i färgskalan. Det lägsta värdet i dina data mappas som standard till den minst mättade färgen, och det högsta värdet mappas till den mest mättade färgen. I bilden ovan använde vi en blå toning. 
-
-Expandera **Datafärger**. Då visas en färgtoning som används för att visualisera dina data. Färgintervallet visas i en toningsstapel som visar spektrumet mellan färgvärdena **lägsta** och **högsta**, med **lägsta** färgvärdet till vänster och **högsta** färgvärdet till höger.
-
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
-
-
-Om du vill ändra skalan och använda en annan uppsättning färger, så välj färglistrutan bredvid **lägsta** eller **högsta** och välj en färg. Följande bild visar hur den **högsta** färgen ändrats till svart och toningsstapeln visar det nya spektrumet mellan **lägsta** och **högsta**.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_11.png)
-
 Du kan också ändra hur värdena mappas till dessa färger. I följande bild har färgerna för **lägsta** och **högsta** ställts in på orange respektive grönt.
 
 Notera hur diagramstaplarna i den första bilden reflekterar den toning som visas i stapeln. Det högsta värdet är grönt, det lägsta är orange, och varje mellanliggande stapel har en färgton som ligger i spektrumet någonstans mellan grönt och orange.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_12.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
-Nu ska vi se vad som händer om vi tillhandahåller numeriska värden i värderutorna **Lägsta** och **Högsta** som är lägre än värdena i färgväljarna **Lägsta** och **Högsta** (se följande bild). Vi ställer in **Lägsta** på 20 000 000 och **Högsta** på 20 000 001.
+Nu ska vi se vad som händer om vi tillhandahåller numeriska värden i värdefälten **Minimum** och **Maximum**. Vi ställer in **Minimum** på 3 500 och **Maximum** på 6 000.
 
 Om du anger dessa värden så tillämpas inte toningen längre på värden i diagrammet som är lägre än **Lägsta** eller högre än **Högsta**. Alla staplar med värden över **Högsta** färgas gröna, och alla staplar med värden under **Lägsta** färgas röda.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_13.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional3.png)
 
 ## <a name="use-diverging-color-scales"></a>Använda avvikande färgskalor
 Ibland kan dina data ha en naturligt avvikande skala. Ett temperaturintervall har ett naturligt centrum vid fryspunkten, och en lönsamhetsskala har en naturlig mittpunkt (noll).
 
-Om du vill använda avvikande färgskalor så dra skjutreglaget **Avvikande** till **På**. När du har aktiverat **Avvikande** visas ytterligare en färgväljare och en värderuta, som båda kallas **Mitten**, så som visas på följande bild.
+Om du vill använda avvikande färgskalor väljer du alternativet **Divergerande**. När du har aktiverat **Divergerande** visas ytterligare en färgväljare som kallas **Mitten**, som du ser i följande bild.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_14.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging2.png)
 
-När skjutreglaget **Avvikande** har aktiverats kan du ange färgerna för **Lägsta**, **Högsta** och **Mitten** separat. I följande bild har **Mitten** ställts in på ett, så staplar med värden över ett utgör olika toningar av grönt, och staplar med värden under ett utgör olika toningar av rött.
+När skjutreglaget **Avvikande** har aktiverats kan du ange färgerna för **Lägsta**, **Högsta** och **Mitten** separat. I följande bild är **Center** (Mitten) inställt på .2 för **% Market Share SPLY YTD**, så staplar med värden över .2 har olika toningar av grönt medan staplar med värden under har olika toningar av rött.
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-diverging.png)
 
 ## <a name="how-to-undo-in-power-bi"></a>Hur du ångrar i Power BI
 Precis som med många andra Microsoft-tjänster och program så erbjuder Power BI ett enkelt sätt på vilket du kan ångra ditt senaste kommando. Låt oss säga att du t.ex. ändrar färg på en datapunkt, eller en serie datapunkter, och du inte tycker om färgen när den visas i visualiseringen. Du kommer inte ihåg exakt vilken färg du hade tidigare, men du vill ha tillbaka den!

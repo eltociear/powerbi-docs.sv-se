@@ -7,88 +7,88 @@ ms.reviewer: kayu''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 9df65c4f6872f2141d0047bb8779f490cec9d6c7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 46f61d2fcce21e3f8e6dae83c32457414928faee
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61413891"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816559"
 ---
-# <a name="configuring-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
+# <a name="configure-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 
 >[!NOTE]
->Efter två månaders inaktivitet pausas schemalagd uppdatering för en datauppsättning. Se avsnittet [*Uppdatera schema*](#schedule-refresh) senare i den här artikeln för mer information.
-> 
-> 
+>Efter två månaders inaktivitet pausas schemalagd uppdatering för en datauppsättning. Mer information finns i [*Schemalagd uppdatering*](#scheduled-refresh) senare i den här artikeln.
+>
+>
 
-Om din datauppsättning stöder schemalagd uppdatering med hjälp av Uppdatera nu och Uppdatera schema, finns det några krav och inställningar som är viktiga att tillämpa för att uppdateringen ska lyckas. Dessa är **Gateway-anslutning**, **Autentiseringsuppgifter för datakälla** och **Uppdatera schema**. Låt oss ta en närmare titt på var och en.
+Om din datamängd har stöd för schemalagd uppdatering med hjälp av **Uppdatera nu** och **Schemalägg uppdatering**, finns det några krav och inställningar som är viktiga att tillämpa för att uppdateringen ska lyckas. Dessa är **Gateway-anslutning**, **Autentiseringsuppgifter för datakälla** och **Schemalagd uppdatering**. Låt oss ta en närmare titt på var och en.
 
-Här beskrivs tillgängliga alternativ för både [Power BI Gateway – Personal](service-gateway-personal-mode.md) och [den lokala datagatewayen](service-gateway-onprem.md).
+Här beskrivs tillgängliga alternativ för både [Lokal datagateway (personligt läge)](service-gateway-personal-mode.md) och [Lokal datagateway](service-gateway-onprem.md).
 
-Du kan göra följande för att komma till skärmen Uppdatera schema.
+Så här öppnar du skärmen **Schemalagd uppdatering**.
 
 1. Välj **ellipsen (...)** bredvid en datauppsättning som visas under **Datauppsättningar**.
 2. Välj **Uppdatera schema**.
-   
-    ![](media/refresh-scheduled-refresh/dataset-menu.png)
+
+    ![Schemalägg uppdatering](media/refresh-scheduled-refresh/dataset-menu.png)
 
 ## <a name="gateway-connection"></a>Gatewayanslutning
 Olika alternativ visas beroende på om du har en personlig eller en företagsgateway online och tillgänglig.
 
-Om ingen gateway är tillgänglig, visas **gatewayinställningarna** som inaktiverade. Du kan även se ett meddelande om hur du installerar den personliga gatewayen.
+Om ingen gateway är tillgänglig visas **Gatewayanslutning** som inaktiverat. Du kan även se ett meddelande om hur du installerar den personliga gatewayen.
 
-![](media/refresh-scheduled-refresh/gateway-not-configured.png)
+![Ingen gateway konfigurerad](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
-Om du har en personlig gateway konfigurerad blir den tillgänglig för val om den är online. Den visas som offline om den inte är tillgänglig.
+Om du har en personlig gateway konfigurerad kan du välja den om den är online. Den visas som offline om den inte är tillgänglig.
 
-![](media/refresh-scheduled-refresh/gateway-connection.png)
+![Gatewayanslutning](media/refresh-scheduled-refresh/gateway-connection.png)
 
-Du kan också välja företagsgatewayen om du har en sådan tillgänglig. En företagsgateway visas som tillgänglig endast om ditt konto finns med på fliken Användare för den datakälla som har konfigurerats för en viss gateway.
+Du kan också välja företagsgatewayen om du har en sådan tillgänglig. En företagsgateway visas bara som tillgänglig om ditt konto finns med på fliken **Användare** för datakällan som har konfigurerats för en viss gateway.
 
 ## <a name="data-source-credentials"></a>Autentiseringsuppgifter för datakälla
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
-Om du använder den personliga gatewayen för att uppdatera data, måste ange de autentiseringsuppgifter som användes för att ansluta till serverdatakällan. Om du har anslutit till ett innehållspaket från en onlinetjänst överförs de autentiseringsuppgifter som du har angett för att ansluta för schemalagd uppdatering.
+### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
+Om du använder den personliga gatewayen för att uppdatera data, måste ange autentiseringsuppgifterna för att ansluta till serverdatakällan. Om du har anslutit till ett innehållspaket från en onlinetjänst överförs de autentiseringsuppgifter du har angett för anslutningen till den schemalagda uppdateringen.
 
-![](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
+![Autentiseringsuppgifter för datakälla](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
-Du måste bara logga in till datakällor första gången du tillämpar uppdatering för den aktuella datauppsättningen. När autentiseringsuppgifterna har angetts sparas de för datauppsättningen.
+Du behöver bara logga in till datakällor första gången du uppdaterar den aktuella datamängden. När autentiseringsuppgifterna har angetts sparas de för datauppsättningen.
 
 > [!NOTE]
-> Om lösenordet som du använder för att logga in till en datakälla upphör att gälla eller har ändras, måste du för vissa autentiseringsmetoder även ändra det för datakällan i autentiseringsuppgifterna för datakällan.
-> 
-> 
+> Om lösenordet du använder för att logga in till en datakälla upphör att gälla eller har ändras måste du för vissa autentiseringsmetoder även ändra det för datakällan i **Autentiseringsuppgifter för datakällan**.
+>
+>
 
-Om något går fel beror problemet oftast antingen på att gatewayen är offline, eftersom den inte kan logga in till Windows och starta tjänsten, eller att Power BI inte kan logga in till datakällorna för att fråga efter uppdaterade data. Kontrollera datauppsättningens inställningar om uppdateringen misslyckas. Om gatewaytjänsten är offline visas felet i Status för gateway. Om Power BI inte kan logga in till datakällorna, visas ett fel i Autentiseringsuppgifter för datakälla.
+Om något går fel beror problemet oftast antingen på att gatewayen är offline, eftersom den inte kan logga in till Windows och starta tjänsten, eller att Power BI inte kan logga in till datakällorna för att fråga efter uppdaterade data. Kontrollera datauppsättningens inställningar om uppdateringen misslyckas. Om gatewaytjänsten är offline visas felet i **Status**. Om Power BI inte kan logga in till datakällorna, visas ett fel i Autentiseringsuppgifter för datakälla.
 
 ### <a name="on-premises-data-gateway"></a>Lokal datagateway
 Du behöver inte ange autentiseringsuppgifter som definierats för datakällan av gatewayadministratören om du använder den lokala datagatewayen för att uppdatera data.
 
-![](media/refresh-scheduled-refresh/data-source-credentials-egw.png)
+![Kommandot Schemalägg uppdatering](media/refresh-scheduled-refresh/data-source-credentials-egw.png)
 
 > [!NOTE]
 > När du ansluter till lokala SharePoint för datauppdatering, har Power BI endast stöd för autentiseringsmekanismerna *Anonym*, *Grundläggande* och *Windows (NTLM/Kerberos)* . Power BI stöder inte *ADFS* eller *några formulärbaserade autentiserings*mekanismer för datauppdatering av lokala SharePoint-datakällor.
-> 
-> 
+>
+>
 
-## <a name="schedule-refresh"></a>Uppdatera schema
-Du definierar frekvens och tidpunkter för att uppdatera datauppsättningen i avsnittet för schemalagd uppdatering. Vissa datakällor kräver inte tillgång till en gateway för att de ska kunna konfigureras. Andra kräver en gateway.
+## <a name="scheduled-refresh"></a>Schemalagd uppdatering
+Du definierar frekvens och tidpunkter för att uppdatera datauppsättningen i avsnittet **Schemalagd uppdatering**. För vissa datakällor behöver du inte konfigurera någon gateway för uppdatering medan andra datakällor behöver en gateway.
 
-Du måste sätta skjutreglaget **Håll dina data aktuella** på **Ja** för att konfigurera inställningarna.
+Ställ in skjutreglaget **Håll dina data aktuella** på **På** för att konfigurera inställningarna.
 
 > [!NOTE]
 > Power BI-tjänsten har som mål att initiera uppdatering av dina data inom **15 minuter** från din schemalagda uppdateringstid.
-> 
-> 
+>
+>
 
-![](media/refresh-scheduled-refresh/scheduled-refresh.png)
+![Dialogrutan Schemalagd uppdatering](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
 > [!NOTE]
 > Efter två månaders inaktivitet pausas schemalagd uppdatering för en datauppsättning. En datauppsättning betraktas som inaktiv när ingen användare har besökt någon instrumentpanel eller rapport som bygger på datauppsättningen. Efter den tidsperioden skickas ett e-postmeddelande till datauppsättningens ägare vari det anges att den schemalagda uppdateringen har pausats och uppdateringsschemat för datauppsättningen visas som **inaktiverat**. Om du vill återuppta schemalagd uppdatering besöker du helt enkelt någon av instrumentpanelerna eller rapporterna som bygger på datauppsättningen.
-> 
-> 
+>
+>
 
 ## <a name="whats-supported"></a>Vad stöds?
 Vissa datauppsättningar stöds för olika gatewayar för schemalagd uppdatering. Nedan följer en referens för att få en uppfattning om vad som är tillgängligt.
@@ -96,19 +96,19 @@ Vissa datauppsättningar stöds för olika gatewayar för schemalagd uppdatering
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
 **Power BI Desktop**
 
-* Alla datakällor online som visas i Hämta data och Frågeredigeraren i Power BI Desktop.
-* Alla lokala datakällor som visas i Hämta data och Frågeredigeraren i Power BI Desktop, förutom Hadoop-filer (HDFS) och Microsoft Exchange.
+* Alla datakällor online som visas i **Hämta data** och Frågeredigeraren i Power BI Desktop.
+* Alla lokala datakällor som visas i **Hämta data** och Frågeredigeraren i Power BI Desktop, förutom Hadoop-filer (HDFS) och Microsoft Exchange.
 
 **Excel**
 
 > [!NOTE]
-> I Excel 2016 eller senare, visas nu Power Query i avsnittet Data på menyfliksområdet under Hämta & Transformera data.
-> 
-> 
+> I Excel 2016 eller senare visas Power Query i avsnittet **Data** i menyfliksområdet under **Hämta och transformera data**.
+>
+>
 
 * Alla online-datakällor som visas i Power Query.
 * Alla lokala datakällor som visas i Power Query förutom Hadoop-filer (HDFS) och Microsoft Exchange.
-* Alla online-datakällor som visas i Power Pivot.\*
+* Alla online-datakällor som visas i Power Pivot.
 * Alla lokala datakällor som visas i Power Query förutom Hadoop-filer (HDFS) och Microsoft Exchange.
 
 <!-- Refresh Data sources-->
@@ -117,16 +117,15 @@ Vissa datauppsättningar stöds för olika gatewayar för schemalagd uppdatering
 ## <a name="troubleshooting"></a>Felsökning
 Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problemet en gateway. Ta en titt på artiklarna för gatewayfelsökning där du hittar verktyg och information om kända problem.
 
-[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
-
-[Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
+- [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
+- [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Nästa steg
-[Datauppdatering i Power BI](refresh-data.md)  
-[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
-[On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)  
-[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
-[Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+- [Datauppdatering i Power BI](refresh-data.md)  
+- [Power BI Gateway – Personal](service-gateway-personal-mode.md)  
+- [Lokal datagateway (personligt läge)](service-gateway-onprem.md)  
+- [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+- [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

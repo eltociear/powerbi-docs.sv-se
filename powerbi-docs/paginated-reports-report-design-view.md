@@ -1,5 +1,5 @@
 ---
-title: Navigera i rapportens designvy för sidnumrerade rapporter (förhandsversion)
+title: Navigera i rapportens designvy för sidnumrerade rapporter
 description: Rapportens designvyn i Report Builder är designutrymmet för att skapa sidnumrerade rapporter som du kan publicera i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 76c12cf411f49fda9f9fe042a6d1aafa457bf914
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423360"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839534"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigera i rapportens designvy för sidnumrerade rapporter (förhandsversion)
+# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Navigera i rapportens designvy för sidnumrerade rapporter
 
-Design av rapportvyn i Power BI Report Builder är design utrymme för att skapa sidnumrerade rapporter som du kan publicera till Power BI-tjänsten. Designytan är i mitten av Report Builder med menyfliksområdet och fönster runt den. Designytan är där du lägger till och organiserar dina rapportobjekt. Den här artikeln förklarar fönstren du använder för att lägga till och ordna resurserna i rapporten och för att ändra rapportegenskaper för objektet.  
+Rapportens designvy i Power BI Report Builder är designutrymmet där du skapar sidnumrerade rapporter som du kan publicera i Power BI-tjänsten. Designytan är i mitten av Report Builder med menyfliksområdet och fönster runt den. Designytan är där du lägger till och organiserar dina rapportobjekt. Den här artikeln förklarar fönstren du använder för att lägga till och ordna resurserna i rapporten och för att ändra rapportegenskaper för objektet.  
 
 ![Rapportens designvyn i Report Builder](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
@@ -109,7 +109,7 @@ Den aktuella rapportens statusfält visar namnet på den server som rapporten ä
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsversion)](paginated-reports-report-builder-power-bi.md) 
+[Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md) 
 
   
   

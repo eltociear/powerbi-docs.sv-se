@@ -1,5 +1,5 @@
 ---
-title: 'Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)'
+title: 'Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten'
 description: I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Report Builder för att skapa en sidnumrerad rapport. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60990114"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839744"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten (förhandsversion)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten
 
-I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Power BI Report Builder för att skapa en sidnumrerad rapport med en tabell som radbryts till flera sidor. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten. Sidnumrerade rapporter i Power BI-tjänsten är för närvarande i förhandsversion.
+I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Power BI Report Builder för att skapa en sidnumrerad rapport med en tabell som radbryts till flera sidor. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten.
 
 ![Sidnumrerad rapport i Power BI-tjänsten](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -329,5 +329,5 @@ Nu när du har skapat den här sidnumrerade rapporten är det dags att överför
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsversion)](paginated-reports-report-builder-power-bi.md)
+[Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 

@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578510"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751101"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>Vad är Power BI-mallappar? (förhandsgranskning)
 
@@ -24,10 +24,10 @@ Mallappar ersätter nuvarande innehållspaket för tjänsten. Som Power BI-partn
 
 Du skapar mallappar som kunderna sedan kan ansluta och instantiera med sina egna konton. Som domänexperter kan de låsa upp data på ett användarvänligt sätt för företagsanvändarna.  
 
-Du skickar in din mall-appar till partnerportalen i molnet. Apparna blir sedan allmänt tillgängliga i Power BI-appgalleriet (app.powerbi.com/getdata/services) och på Microsoft AppSource (appsource.microsoft.com). Här är en övergripande inblick i upplevelse för offentliga mall app när du skapar.  
+Du skickar dina mallappar till Cloud Partner Portal. Apparna blir sedan allmänt tillgängliga i Power BI-appgalleriet (app.powerbi.com/getdata/services) och på Microsoft AppSource (appsource.microsoft.com). Här ges en översikt över hur allmänt tillgängliga mallappar skapas.  
 
 ## <a name="process"></a>Process
-Den allmänna processen för att utveckla och skicka in en mallapp omfattar flera steg. Vissa steg kan innehålla fler än en aktivitet på samma gång.
+Den generella processen för att utveckla och skicka in en mallapp består av flera steg. Vissa steg kan omfatta flera samtidiga aktiviteter.
 
 
 | Steg | Power BI Desktop |  |Power BI-tjänst  |  |Cloud Partner Portal  |

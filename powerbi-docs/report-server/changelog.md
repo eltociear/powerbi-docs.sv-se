@@ -1,7 +1,7 @@
 ---
 title: Ändringslogg för Power BI-rapportservern
 description: Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
-ms.author: jtarquino
+ms.author: jaimeta
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65990627"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751130"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -25,26 +25,26 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 ## <a name="may-2019"></a>Maj 2019
 
 - **Power BI-rapportserver**          
-    - *Version 1.5.7074.36177 (Build 15.0.1102.371), publicerad: Den 21 maj 2019*
+    - *Version 1.5.7074.36177 (Build 15.0.1102.371), publicerad: 21 maj 2019*
         - Felkorrigeringar
             - Sidnumrerade rapporter
-                - Åtgärda alltid aktivera inbäddning av pdf-teckensnitt.
-                - Åtgärda att ställa in cookies som skickas via https som Secure
-                - Åtgärda problem med pop ups på grund av skriptfel
-                - Korrigering för visningsproblem med Mobile-appen på Android-telefoner
-                - Korrigering för mobil rapport Tidsnavigatör att visa rätt veckonummer oavsett början av räkenskapsår
-                - Har lagts till 'RestrictedResourceMimeTypeForUpload' konfigurerbara egenskapen för administratörer att ange förbjuden MIME-typer
+                - Korrigering så att inbäddning av pdf-teckensnitt alltid är aktiverad.
+                - Korrigering så att cookies som skickas via https ställs in som Säkra
+                - Korrigering av problem med popup-fönster som beror på skriptfel
+                - Korrigering för visningsproblem med Mobilapp på Android-telefoner
+                - Korrigering så att tidnavigeringen i Mobil rapport visar rätt veckonummer oavsett när räkenskapsåret startar
+                - Lade till den konfigurerbara egenskapen RestrictedResourceMimeTypeForUpload så att administratörer kan ange förbjudna mime-typer
          - Funktioner
-            - Lägger till stöd för betrodda visuella objekt till PBIRS
+            - Lade till stöd för betrodda visuella objekt i PBIRS
 
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
-    - *Version: 2.69.5467.1801 (maj 2019), publicerad: Den 21 maj 2019*
+    - *Version: 2.69.5467.1801 (maj 2019), publicerad: 21 maj 2019*
         - Felkorrigeringar
-            - Åtgärda att undvika återinförsel av autentiseringsuppgifter vid PBIX-överföring till PBIRS
-            - Korrigeringar som öppnar dokument med # i filnamnet
-            - Har lagts till enklare länk för navigering bakåt vid PBIRS urvalsfönstret
-            - Åtgärda Högkontrast PBIRS ska visa bakåtknappen, visa varningsmeddelanden visual-läge.
-            - UI-korrigeringar till Markeringsfönstret, arbetsytan skalning.
+            - Korrigering som gör att autentiseringsuppgifter inte behöver anges på nytt vid PBIX-överföring till PBIRS
+            - Korrigering som gör att dokument med # i filnamnet kan öppnas
+            - Lade till en enklare länk för bakåtnavigering i PBIRS-urvalsfönstret
+            - Korrigering av högkontrastläget i PBIRS så att bakåtknappen och visuella varningsmeddelanden syns bättre.
+            - Korrigering av gränssnittet i urvalsfönstret, skalning av arbetsytan.
 
 ## <a name="january-2019"></a>Januari 2019
 

@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: maggies
-ms.openlocfilehash: 653050fbe5c860ef1902a4700c3a70a8af2f7092
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514932"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751183"
 ---
 # <a name="create-a-template-app-in-power-bi-preview"></a>Skapa en mallapp i Power BI (förhandsversion)
 
 Med de nya Power BI-*mallapparna* kan Power BI-partner skapa Power BI-appar med lite eller ingen kodning och sedan distribuera dem till Power BI-kunder.  Den här artikeln innehåller stegvisa instruktioner för hur du skapar en mallapp i Power BI.
 
-Om du kan skapa Power BI-rapporter och instrumentpaneler, kan du bli en *mall app builder* och skapar och paketerar analytiskt innehåll till en *app*. Du kan distribuera din app till andra Power BI-klienter via alla tillgängliga plattformar, till exempel AppSource eller genom att använda det i din egen webbtjänst. Som en builder har du möjlighet att skapa en skyddad analytics-paket för distribution.
+Om du kan skapa rapporter och instrumentpaneler i Power BI kan du även bli en *mallapputvecklare* som skapar och paketerar analytiskt innehåll i en *app*. Du kan distribuera appen till andra Power BI-klientorganisationer via valfri tillgänglig plattform, till exempel AppSource, eller genom att använda den i din egen webbtjänst. Som utvecklare kan du skapa ett skyddat analyspaket för distribution.
 
-Power BI-klientadministratörer styr vem i organisationen som kan skapa mallappar och vem som kan installera dem. De användare som har behörighet kan installera din mallapp, och sedan ändrar du den och distribuera den till Power BI-användare i organisationen.
+Power BI-klientadministratörer styr vem i organisationen som kan skapa mallappar och vem som kan installera dem. Användare med behörighet kan installera din mallapp och sedan ändra den och distribuera den till Power BI-kunder i sin egen organisation.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -30,7 +30,7 @@ Här följer kraven för att skapa en mallapp:
 
 - En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
 - En [installation av Power BI Desktop](desktop-get-the-desktop.md) (valfritt)
-- Bekant med den [grundläggande begrepp för Power BI](service-basic-concepts.md)
+- Kunskap om [grundläggande begrepp i Power BI](service-basic-concepts.md)
 - Behörighet att skapa en mallapp. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings-preview) för mer information.
 
 ## <a name="enable-app-developer-mode"></a>Aktivera läget för apputveckling
@@ -66,7 +66,7 @@ För att kunna skapa en mallapp som du kan distribuera till andra Power BI-klien
 
 5. Välj **Spara**.
 >[!NOTE]
->Du behöver behörighet från Power BI-administratören att göra mallen appar.
+>Du behöver behörighet från Power BI-administratören för att sprida mallappar.
 
 ## <a name="create-the-content-in-your-template-app"></a>Skapa innehållet i din mallapp
 
@@ -86,43 +86,43 @@ Nu när du har innehåll på arbetsytan är du redo att paketera det i en mallap
 
     ![Skapa app](media/service-template-apps-create/power-bi-create-app.png)
 
-    Här kan fylla du i ytterligare byggnad alternativ för din mallapp i fem kategorier:
+    Här fyller du i ytterligare alternativ för mallappen i fem kategorier:
 
     **Anpassning**
 
     ![Anpassning](media/service-template-apps-create/power-bi-create-branding.png)
     - Appnamn
     - Beskrivning
-    - Supportwebbplats (länk visas under appinfo efter distribuera mallapp som org app)
-    - Applogotyp (45K gränsen för filstorlek, 1:1 bredd-höjd-förhållande, .png .jpg, .jpeg format)
-    - Temafärg för App
+    - Supportwebbplats (länken visas under appinformationen när mallappen har distribuerats om som en organisationsapp)
+    - Applogotyp (filen får vara max 45 kB, den ska ha bildförhållandet 1:1 och formaten .png, .jpg och .jpeg stöds)
+    - Appens temafärg
 
     **Innehåll**
 
-    **Applandningssida:** Definiera en rapport eller instrumentpanel ska vara startsidan för din app, använder en landningssida som får ett gott intryck:
+    **Applandningssida:** Definiera en rapport eller instrumentpanel som ska vara appens landningssida. Med en landningssida får användaren rätt intryck av appen:
 
     ![Innehåll](media/service-template-apps-create/power-bi-create-content.png)
 
     **Kontroll**
 
-    Ange gränser och begränsningar som programanvändare har med innehållet i ditt program. Du kan använda den här kontrollen för att skydda immateriell egendom i din app.
+    Ange vilka innehållsbegränsningar som ska gälla för appanvändarna. På det här sättet kan du skydda immateriell egendom i appen.
 
     ![Kontroll](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >Exportera till .pbix-format blockeras alltid för användare som installerar appen.
+    >Export till .pbix-format är alltid blockerad för användare som installerar appen.
 
     **Parametrar**
 
-    Använd den här kategorin för att hantera parametern beteende när du ansluter till datakällor. Läs mer om [skapar frågeparametrar](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Använd den här kategorin till att hantera parametrarnas beteende vid anslutning till datakällor. Läs mer om att [skapa frågeparametrar](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     ![Parametrar](media/service-template-apps-create/power-bi-create-parameters.png)
-    - **Värdet**: standardvärde för parametern.
-    - **Krävs**: Använd detta för att kräva installationsprogrammet för att en viss användare indataparameter.
-    - **Lås**: Låsning förhindrar att installationsprogrammet uppdaterar en parameter.
-    - **Statisk**: Aktivera om appen innehåller *endast* exempeldata. När du väljer **Statiska**, installationsguiden inte be användare att ansluta en datakälla.
+    - **Värde**: parameterns standardvärde.
+    - **Krävs**: ange det här om den som installerar måste ange ett användarspecifikt värde.
+    - **Lås**: låsning förhindrar att installationsprogrammet uppdaterar en parameter.
+    - **Statisk**: aktivera om appen *endast* innehåller exempeldata. När du väljer **Statisk** uppmanas inte användaren att ansluta någon datakälla i installationsguiden.
 
-    **Åtkomst** i testfasen, bestämmer du vilka andra i organisationen kan installera och testa din app. Oroa dig inte, du kan alltid gå tillbaka och ändra inställningarna senare (inställningen påverkar inte åtkomst till appen distribuerade mall).
+    **Åtkomst**: under testfasen kan du avgöra vilka personer i organisationen som ska kunna installera och testa appen. Oroa dig inte, du kan alltid gå tillbaka och ändra de här inställningarna senare (inställningarna påverkar inte åtkomsten till den distribuerade mallappen).
 
 2. Välj **Skapa app**.
 
@@ -141,9 +141,9 @@ Innan du gör mallappen allmänt tillgänglig vill du försäkra dig om att den 
 - Höj upp förproduktionspaketet till produktion: produktionsversion.
 - Ta bort alla paket eller börja om från föregående steg.
 
-URL: en ändras inte när du flyttar mellan versionen faser. Befordran påverkar inte själva URL: en.
+Webbadressen ändras inte när du växlar mellan olika versionssteg. Upphöjning påverkar inte själva webbadressen.
 
-Vi ska gå igenom stegen:
+Lås oss gå igenom de olika stegen:
 
 1. Välj **Versionshantering** i arbetsytan för mallappen.
 
@@ -171,15 +171,15 @@ Vi ska gå igenom stegen:
     ![Kom igång med din app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Välj **Utforska appen** att verifiera testappen med exempeldata.
 9. Om du vill göra ändringar går du tillbaka till appen i den ursprungliga arbetsytan. Gör ändringar i testappen tills du är nöjd.
-10. När du är redo att marknadsföra din app till Förproduktion utföra ytterligare tester utanför din klientorganisation går du tillbaka till den **Release Management** rutan och välj **befordra app**. 
+10. När du är redo att flytta upp appen till förproduktion för ytterligare testning utanför klientorganisationen går du tillbaka till fönstret **Versionshantering** och väljer**Höj upp appen**. 
 
     ![Höj upp appen till förproduktion](media/service-template-apps-create/power-bi-template-app-promote.png)
 
     >[!NOTE]
-    > När appen höjs blir den allmänt tillgängliga utanför din organisation.
+    > När appen höjs upp blir den allmänt tillgänglig utanför organisationen.
 
 11. Välj **Höj en nivå** för att bekräfta ditt val.
-12. Kopiera den nya URL:en så att du kan dela den för testning utanför din klientorganisation. Den här länken är också det som du skickar in för att börja distribuera din app på AppSource genom att skapa en [nytt erbjudande om partnerportalen i molnet](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Skicka endast Förproduktion länkar till partnerportalen i molnet. Endast när appen har godkänts och du får meddelandet att publiceras den i AppSource, kan du flytta upp det här paketet till produktion i Power BI.
+12. Kopiera den nya URL:en så att du kan dela den för testning utanför din klientorganisation. Det är också den här länken du skickar för att börja distribuera app i AppSource genom att skapa ett [nytt Cloud Partner Portal-erbjudande](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Skicka endast förproduktionslänkar till Cloud Partner Portal. När appen har godkänts och du får ett meddelande om att den publicerats i AppSource kan du flytta upp paketet till produktion i Power BI.
 13. När appen är klar för produktion eller delning via AppSource går du tillbaka till fönstret **Versionshantering** och väljer **Höj upp appen** bredvid **Förproduktion**.
 14. Välj **Höj en nivå** för att bekräfta ditt val.
 
@@ -202,11 +202,11 @@ Nu när appen är i produktion kan börja du om i testfasen, utan att det påver
 
     ![Två versioner av en mallapp](media/service-template-apps-create/power-bi-template-app-2-versions.png)
 
-5. När du är redo att marknadsföra din app till Förproduktion utföra ytterligare tester utanför din klientorganisation går du tillbaka till fönstret versionshantering och välj **befordra app** bredvid **testning**.
-6. Länken är nu live, skicka den igen till partnerportalen i molnet genom att följa stegen i [Power BI-appen erbjudandet uppdatering](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
+5. När du är redo att flytta upp appen till förproduktion för ytterligare testning utanför klientorganisationen går du tillbaka till fönstret Versionshantering och väljer **Höj upp appen** bredvid **Testar**.
+6. Länken fungerar nu. Skicka den igen till Cloud Partner Portal genom att följa stegen i [Uppdatera ett erbjudande med Power BI-appen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 
 >[!NOTE]
->Uppgradera din app till produktion steg förrän din app har godkänts av partnerportalen i molnet och du har publicerat.
+>Höj inte upp appen till produktion förrän den godkänts i Cloud Partner Portal och du har publicerat den.
 
 ## <a name="next-steps"></a>Nästa steg
 

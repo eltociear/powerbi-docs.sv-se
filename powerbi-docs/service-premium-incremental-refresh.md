@@ -5,17 +5,17 @@ author: christianwade
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: b338044433d1d87f07ab38d64c15974a1cfaa173
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 55676dc2ba2978fb2847543c670726582c589d53
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65536150"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751147"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Inkrementell uppdatering i Power BI Premium
 
@@ -163,4 +163,4 @@ in
 
 ## <a name="limitations"></a>Begränsningar
 
-För närvarande för [sammansatta modeller](desktop-composite-models.md), inkrementell uppdatering stöds för SQL, Oracle, och Teradata datakällor endast.
+För närvarande stöds bara inkrementell uppdatering för [sammansatta modeller](desktop-composite-models.md) för datakällor av typen SQL, Oracle och Teradata.

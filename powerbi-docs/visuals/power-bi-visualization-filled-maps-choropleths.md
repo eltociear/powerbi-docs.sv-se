@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61145719"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839805"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Fyllda kartor (koropleter) i Power BI
 En fylld karta använder skuggning, toning eller mönster för att visa hur ett värde skiljer sig åt proportionellt på en geografisk plats eller i en region.  Du kan snabbt visa dessa relativa skillnader med skuggning som sträcker sig från ljus (mindre ofta/lägre) till mörk (mer frekvent/fler).    
 
-![Karta över USA](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![Karta över USA](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Vad som skickas till Bing
 Power BI integrerar med Bing för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning). När du skapar en kartvisualisering i Power BI-tjänsten eller i Power BI Desktop, skickas dina data i behållarna **Plats**, **Latitud** och **Longitud** (som används för att skapa visualiseringen) till Bing.
@@ -55,10 +55,11 @@ I det här videoklippet skapar Kim en grundläggande karta och konverterar den t
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Hämta data och lägg till en ny tom sida i rapporten
-1. För att skapa en egen fylld karta [hämtar du försäljnings- och marknadsföringsexemplet](../sample-datasets.md) genom att logga in till Power BI och välja **Hämta data \>Exempel \> Försäljning och marknadsföring \> Anslut**.
-2. När ett meddelande om lyckad åtgärd visas ska du stänga det och välja fliken **Rapporter**. Välj **Exempel på försäljning och marknadsföring** och öppna rapporten.
+1. För att skapa en egen fylld karta [hämtar du försäljnings- och marknadsföringsexemplet](../sample-datasets.md) genom att logga in till Power BI och välja **Hämta data \>Exempel \> Försäljning och marknadsföring \> Anslut**. Du kan också skaffa appen **Power BI Sales and Marketing** på appsource.com. 
 
-   ![Rapportens innehållslista](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Öppna rapporten Försäljning och marknadsföring.
+
+   ![Rapporten Försäljning och marknadsföring öppnas](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. Rapporten öppnas i Power BI. Välj **Redigera rapport** för att öppna rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
 
 4. Lägg till en ny sida genom att välja den gula plus-ikonen längst ned på rapportarbetsytan.
@@ -123,13 +124,13 @@ Om du markerar en plats i en koropletkarta korsfiltreras de övriga visualiserin
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Kartdata kan vara tvetydiga.  Till exempel finns det ett Paris i Frankrike, men också i Texas. Dina geografiska data lagras sannolikt i separata kolumner – en kolumn för stadsnamn, en kolumn för stats- eller regionnamn och så vidare – så Bing kan förmodligen inte avgöra skillnaden mellan de två olika Paris. Om din datauppsättning redan innehåller data för latitud och longitud, har Power BI speciella fält för att hjälpa till att göra dina kartdata entydiga. Du behöver bara dra fältet som innehåller dina latituddata till området Visualiseringar \> Latitud.  Gör sedan samma sak för dina longituddata.    
 
-![Fönster för visualiseringar och fält](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![Fönster för visualiseringar och fält](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 Titta på den här videon för hjälp med tvetydigheter beträffande kartdata om du har behörighet att redigera datauppsättningen i Power BI Desktop.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-Om du inte har åtkomst till latitud- och longituddata, [följer du de här instruktionerna för att uppdatera datauppsättningen](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+Om du inte har åtkomst till latitud- och longituddata, men redigeringsåtkomst till datamängden, [följer du de här instruktionerna för att uppdatera datamängden](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
 Mer hjälp med kartvisualiseringar finns i [Tips and tricks for map visualizations (Tips och råd om kartvisualiseringar)](../power-bi-map-tips-and-tricks.md).
 

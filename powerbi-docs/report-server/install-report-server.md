@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187720"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839439"
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
@@ -22,9 +22,9 @@ Läs mer om att installera Power BI-rapportserver.
 
 ## <a name="download-power-bi-report-server"></a>Hämta Power BI-rapportservern
 
-[Ladda ned Power BI-rapportservern](https://www.microsoft.com/download/details.aspx?id=56722) från Microsoft Download Center.
+[Ladda ned Power BI-rapportserver](https://www.microsoft.com/download/details.aspx?id=56722) från Microsoft Download Center.
 
-Det finns också en kostnadsfri utvärderingsversion. På den [lokal rapportering med Power BI Report Server](https://powerbi.microsoft.com/report-server/) väljer **ladda ned kostnadsfri utvärderingsversion**.
+Det finns även en kostnadsfri utvärderingsversion. Gå till sidan [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) och välj **Hämta en gratis utvärderingsversion**.
 
 ## <a name="before-you-install"></a>Innan du installerar
 
@@ -35,12 +35,12 @@ Innan du installerar Power BI-rapportservern rekommenderar vi att du granskar [m
 
 ### <a name="power-bi-report-server-product-key"></a>Produktnyckel för Power BI-rapportserver
 
-Du kan hämta produktnyckeln för Power BI-rapportservern från två olika källor:
+Du kan hämta produktnyckeln för Power BI-rapportserver från två olika källor:
 
 - Power BI Premium
 - SQL Server Enterprise Software Assurance (SA)
 
-Läs vidare för mer information.
+Läs vidare om du vill veta mer.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -75,8 +75,8 @@ Du behöver inte en SQL Server Database Engine-server tillgänglig vid tidpunkte
 
     ![Utgåva 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    I annat fall ange produktnyckeln som du fick från Power BI-tjänsten eller Volume License Service Center. Mer information om hur du hämtar produktnyckeln finns i den [innan du installerar](#before-you-install) ovan.
-4. Läs och Godkänn licensvillkoren villkor och välj sedan **nästa**.
+    Annars anger du produktnyckeln du fått antingen från Power BI-tjänsten eller Volume License Service Center. Mer information om hur du hämtar din produktnyckel finns i avsnittet [Innan du installerar](#before-you-install) ovan.
+4. Läs och godkänn licensvillkoren och välj sedan **Nästa**.
 
     ![Licensvillkor](media/install-report-server/pbireportserver-eula.png)
 5. Du måste ha en databasmotor som är tillgänglig för att lagra rapportserverdatabasen. Välj **nästa** för att enbart installera rapportservern.
@@ -92,7 +92,7 @@ Du behöver inte en SQL Server Database Engine-server tillgänglig vid tidpunkte
 
     ![Konfigurera rapportservern](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configure-your-report-server"></a>Konfigurera din rapportserver
+## <a name="configure-your-report-server"></a>Konfigurera rapportservern
 
 När du har valt **Konfigurera rapportservern** i installationsprogrammet, visas du konfigurationshanteraren för Reporting Services. Mer information finns i [konfigurationshanteraren för Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
@@ -152,7 +152,7 @@ Du måste öppna TCP-porten som du har konfigurerat för din webbtjänst-URL och
 
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Så här hittar du rapportserverns produktnyckel](find-product-key.md)  
-[Installera Power BI Desktop optimerad för Power BI-rapportserver](install-powerbi-desktop.md)  
+[Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
 [Verifiera en Reporting Services-installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 [Konfigurera tjänstkontot för rapportservern](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 [Konfigurera rapportserverns URL:er](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  

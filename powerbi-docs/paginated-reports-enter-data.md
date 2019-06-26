@@ -1,5 +1,5 @@
 ---
-title: Ange data direkt i en sidnumrerad rapport i Report Builder (förhandsversion)
+title: Ange data direkt i en sidnumrerad rapport i Report Builder
 description: I den här artikeln får se du hur du kan ange data direkt i en sidnumrerad rapport i Report Builder.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/19/2018
-ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: fd000ffd0d47935f36e72f6d0000d548623edf0a
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424548"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839106"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Ange data direkt i en sidnumrerad rapport i Report Builder (förhandsversion) – Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Ange data direkt i en sidnumrerad rapport i Report Builder – Power BI
 
 I den här artikeln får du lära dig om en funktion i den nya versionen av SQL Server 2016 Report Builder där du kan ange data direkt i en RDL-rapport som en inbäddad datamängd.  Den här funktionen liknar Power BI Desktop. Du kan ange data direkt i en datamängd i rapporten eller klistra in dem från ett annat program som Microsoft Excel. När du har skapat en datamängd genom att ange information kan du använda den precis på samma sätt som andra inbäddade datamängder som du har skapat. Dessutom kan du lägga till mer än en tabell och använda en som ett filter för den andra. Den här funktionen är särskilt användbar för små, statiska datamängder som du kan behöva använda i rapporten, t.ex. rapportparametrar.
  
@@ -76,7 +76,7 @@ Du kan använda din datamängd som grund för datavisualiseringar i rapporten. D
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>Ladda upp en sidnumrerad rapport i Power BI-tjänsten
 
-Nu när sidnumrerade rapporter stöds i Power BI-tjänsten i förhandsversionen kan du överföra din sidnumrerade rapport till en Premium-kapacitet. I [Ladda upp en sidnumrerad rapport](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) finns mer information.
+Nu när sidnumrerade rapporter stöds i Power BI-tjänsten kan du överföra din sidnumrerade rapport till en Premium-kapacitet. I [Ladda upp en sidnumrerad rapport](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) finns mer information.
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>Ladda upp den sidnumrerade rapporten till en rapportserver
 
@@ -98,5 +98,5 @@ Det var allt – du kan nu publicera rapporter som använder den här nya funkti
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsversion)](paginated-reports-report-builder-power-bi.md)
+- [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - [Vad är Power BI-rapportservern?](report-server/get-started.md)

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e28af5a03fd799f088d428f16621358c2a4f7c5
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770492"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823312"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -80,6 +80,7 @@ En fiddler-avbildning kan krävas för att undersöka vidare. Det kan finnas fle
 * Azure AD-autentiseringstoken har upphört att gälla.
 * Den autentiserade användaren är inte medlem i gruppen (apparbetsytan).
 * Den autentiserade användaren är inte administratör i gruppen (apparbetsytan).
+* Den autentiserade användaren saknar behörighet. Behörigheter kan uppdateras med hjälp av [API:et refreshUserPermissions](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * Auktoriseringsrubriken är kanske inte korrekt listad. Kontrollera att det inte finns några stavfel.
 
 Programmets serverdel kan behöva uppdatera auktoriseringstoken innan du anropar GenerateToken.
@@ -185,9 +186,9 @@ Användargodkännande har inaktiverats för klientorganisationen.
 
 En administratör kan *bevilja behörigheter* till programmet – antingen för hela klientorganisationen eller för en viss användare.
 
-### <a name="cs1061-error"></a>CS1061 fel
+### <a name="cs1061-error"></a>CS1061-fel
 
-Ladda ned [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) om du får ett ”'AuthenticationContext' innehåller inte någon definition för” AcquireToken ”och ingen tillgänglig” AcquireToken ”tar emot en första argument av typen” AuthenticationContext' hittades (saknar du en med hjälp av direktiv eller en sammansättningsreferensen?) ”fel.
+Ladda ned [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) om du får ett fel av typen ”'AuthenticationContext' innehåller inte någon definition för ’AcquireToken’ och det gick inte att hitta någon tillgänglig ’AcquireToken’ som tar emot ett första argument av typen ’AuthenticationContext' (saknar du ett användningsdirektiv eller en sammansättningsreferens?)”.
 
 ## <a name="data-sources"></a>Datakällor
 

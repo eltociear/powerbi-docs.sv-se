@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/10/2019
+ms.openlocfilehash: 6aebc45f2341f098f0f54dad66652967077c2a08
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61354141"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823415"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -215,7 +215,7 @@ Här följer stegen för att börja konfigurera funktionen CustomData() med appe
 
 7. Använd Power BI-API: er för att använda funktionen CustomData i ditt program.  När du skapar en token med CustomData-funktionen så måste du ha ett användarnamn. Användarnamnet måste vara samma som UPN-namnet för överordnad användare. Överordnad användare måste vara medlem i de roller som du skapade. Om inga roller har angetts används de roller som överordnad användare är medlem i för RLS utvärdering.
 
-    När du arbetar med en [tjänstens huvudnamn](embed-service-principal.md), du måste också har utfört stegen ovan i stället för med ett huvudkonto. När du genererar inbäddningstoken, använda den [objekt-ID för tjänstens](embed-service-principal.md#how-to-get-the-service-principal-object-id) som användarnamn.
+    När du arbetar med ett [huvudnamn för tjänsten](embed-service-principal.md) måste du också utföra stegen ovan i stället för med ett huvudkonto. När du genererar inbäddningstoken ska du använda [objekt-ID:t för tjänstens huvudnamn](embed-service-principal.md#how-to-get-the-service-principal-object-id) som användarnamn.
 
     > [!Note]
     > När du är redo att distribuera ditt program till produktion ska alternativet eller kontofältet för överordnad användare inte visas för slutanvändaren.
@@ -310,7 +310,7 @@ Värdet som angetts i identitysbloben ska vara en giltig åtkomsttoken till Azur
 
    ![Appregistrering](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Lokal datagateway med tjänstens huvudnamn (förhandsversion)
+## <a name="on-premises-data-gateway-with-service-principal"></a>Lokal datagateway med tjänstens huvudnamn
 
 Kunder som konfigurerar säkerhet på radnivå (RLS) med hjälp av en lokal SQL Server Analysis Services-datakälla (SSAS) med liveanslutning kan använda den nya funktionen för [tjänstens huvudnamn](embed-service-principal.md) för att hantera användare och deras åtkomst till data i SSAS vid integrering med **Power BI Embedded**.
 

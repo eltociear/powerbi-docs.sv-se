@@ -6,15 +6,15 @@ ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
-ms.subservice: powerbi - developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374698"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751036"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Hantera flera innehavare med Power BI Embedded-analys
 
@@ -142,9 +142,9 @@ Om du vill lägga till ytterligare isolering kan en programutvecklare definiera 
 
 ### <a name="scalability"></a>Skalbarhet
 
-En fördel med den här modellen är att separationen av data i flera datauppsättningar för varje klient övervinner [storleksbegränsningarna för en enskild datauppsättning](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (för närvarande 10 GB i en kapacitet). När kapaciteten är överbelastad kan det ta bort oanvända datauppsättningar för att frigöra minne för aktiva datauppsättningar. Den här uppgiften är inte möjlig med en enskild stor datauppsättning. Med flera datauppsättningar går det även att dela upp klienter i flera Power BI-kapaciteter om så behövs.
+En fördel med den här modellen är att separationen av data i flera datauppsättningar för varje klient övervinner [storleksbegränsningarna för en enskild datauppsättning](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (för närvarande 10 GB i en kapacitet). När kapaciteten överbelastas kan datamängder som inte används avlägsnas så att du frigör minne för aktiva datamängder. Den här uppgiften är inte möjlig med en enskild stor datauppsättning. Med flera datauppsättningar går det även att dela upp klienter i flera Power BI-kapaciteter om så behövs.
 
-Trots dessa fördelar måste man ta i beaktande den skala som SaaS-programmet kan uppnå i framtiden. Man kan t.ex. stöta på begränsningar när det gäller antalet artefakter man kan hantera. Mer information om [distributionsbegränsningar](#summary-comparison-of-the-different-approaches) finns längre fram i den här artikeln. Den kapacitet som används av SKU introducerar en gräns för mängden minne som datauppsättningar måste få plats i hur många uppdateringar som kan köras på samma gång och maximala antalet uppdateringar. Vi rekommenderar att du testar när du hanterar hundratals eller tusentals datauppsättningar. Vi rekommenderar också att du bedömer den genomsnittliga och den högsta användningsvolymen, såväl som eventuella specifika klienter med stora datauppsättningar eller avvikande användningsmönster, som hanteras annorlunda än andra klienter.
+Trots dessa fördelar måste man ta i beaktande den skala som SaaS-programmet kan uppnå i framtiden. Man kan t.ex. stöta på begränsningar när det gäller antalet artefakter man kan hantera. Mer information om [distributionsbegränsningar](#summary-comparison-of-the-different-approaches) finns längre fram i den här artikeln. Den kapacitets-SKU som används introducerar en gräns för hur mycket minne datamängder behöver för att passa in, hur många uppdateringar som kan köras samtidigt och den högsta frekvensen för datauppdateringar. Vi rekommenderar att du testar när du hanterar hundratals eller tusentals datauppsättningar. Vi rekommenderar också att du bedömer den genomsnittliga och den högsta användningsvolymen, såväl som eventuella specifika klienter med stora datauppsättningar eller avvikande användningsmönster, som hanteras annorlunda än andra klienter.
 
 ### <a name="automation--operational-complexity"></a>Automatisering och driftkomplexitet
 

@@ -6,15 +6,15 @@ ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
+ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412895"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751002"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -142,7 +142,7 @@ Power BI-miljö (klientorganisation) kan användas i dokumentation om det hjälp
 ## <a name="h"></a>H
 **high-density visuals (visualiseringar med hög densitet)** Visualiseringar med fler datapunkter än vad Power BI kan återge. Power BI samplar data för att visa formen och avvikande värden.
 
-**Start** standard landing ålder för användare av Power BI-tjänsten. Ändrar inte någonting. Du kan anropa Powerbi start eller helt enkelt start.
+**Start** Startsidan för användare av Power BI-tjänsten. Ändrar inte någonting. Kan kallas antingen Power BI-start eller bara Start.
 
 ## <a name="i"></a>I
 

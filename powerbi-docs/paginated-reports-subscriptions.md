@@ -1,6 +1,6 @@
 ---
 title: Prenumerera på sidnumrerade rapporter i Power BI-tjänsten
-description: I den här artikeln får du lära dig saker att tänka på om att prenumerera på sidnumrerade rapporter i Power BI-tjänsten.
+description: I den här artikeln får du lära dig några saker som är bra att tänka på när du ska prenumerera på sidnumrerade rapporter i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,37 +9,37 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/24/2019
-ms.openlocfilehash: ccec6658808d94728f2a4f14de67c36da0f51def
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222207"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839556"
 ---
-# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Prenumerera på dig själv och andra sidnumrerade rapporter i Power BI-tjänsten 
+# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten 
 
-Du kan nu ställa in e-postprenumerationer för dig själv och andra för sidnumrerade rapporter i Power BI-tjänsten. I allmänhet processen är samma som [prenumerera på rapporter och instrumentpaneler i Power BI-tjänsten](service-report-subscribe.md). Den här artikeln anger skillnader och överväganden. 
+Nu kan du ställa in e-postprenumerationer åt dig själv och andra på sidnumrerade rapporter i Power BI-tjänsten. I allmänhet fungerar processen på samma sätt som när du [prenumererar på rapporter och instrumentpaneler i Power BI-tjänsten](service-report-subscribe.md). Den här artikeln går igenom skillnaderna och några överväganden. 
 
-Att konfigurera prenumerationer, väljer du hur ofta du vill ta emot e-postmeddelanden: varje dag, vecka eller per timme. Om du väljer varje dag eller varje vecka, kan du välja tid vill du att prenumerationen ska köras. I alla, kan du ange upp till 24 olika prenumerationer per dag för varje rapport. 
+När du ställer in prenumerationer väljer du hur ofta du vill få e-postmeddelanden: varje dag, varje vecka eller varje timme. Om du väljer varje dag eller varje vecka kan du välja vilken tid som prenumerationen ska köras. Totalt kan du ställa in upp till 24 olika prenumerationer per dag för varje rapport. 
 
-## <a name="considerations-for-paginated-report-subscriptions"></a>Överväganden för sidnumrerade rapportprenumerationer 
+## <a name="considerations-for-paginated-report-subscriptions"></a>Några saker att tänka på med prenumerationer på sidnumrerade rapporter 
 
-- Till skillnad från prenumerationer för instrumentpaneler och rapporter för Power BI innehåller prenumerationen bifogad fil på hela rapporten utdata.  Följande typer av bifogad fil stöds: PDF-, PowerPoint-presentation (PPTX), Excel-arbetsboken (XLSX), Word-dokument (DOCX), CSV-fil och XML.
+- Till skillnad från prenumerationer på instrumentpaneler och Power BI-rapporter innehåller prenumerationen en bilaga med alla utdata i rapporten.  Följande typer av bilagor stöds: PDF, PowerPoint-presentation (PPTX), Excel-arbetsbok (XLSX), Word-dokument (DOCX), CSV-fil och XML.
 
-- Det finns ingen förhandsversion bild i rapporten i e-postmeddelandets brödtext.  Vi planerar att ha bild av den första sidan i rapporten som ett valfritt objekt. 
+- Det visas ingen förhandsgranskning av rapporten i e-postmeddelandets brödtext.  Vi planerar att införa ett alternativ för att visa en bild av den första sidan i rapporten. 
 
-- Maximal rapport bilagans storlek är 25 MB. 
+- Maximal storlek för rapportbilagan är 25 MB. 
 
-- Du kan prenumerera på andra användare för sidnumrerade rapporter som ansluter till alla stöds för närvarande datakällor, inklusive Azure Analysis Services eller Power BI-datauppsättningar. Tänk på den bifogade filen i rapporten visar data baserat på dina behörigheter, precis som du gör i dag med SQL Server Reporting Services. 
+- Du kan ställa in prenumerationer åt andra på sidnumrerade rapporter som ansluter till datakällor som stöds för närvarande, som Azure Analysis Services eller Power BI-datamängder. Tänk på att rapportbilagan återger data baserat på dina behörigheter, precis som SQL Server Reporting Services fungerar redan idag. 
 
-- Rapportsideprenumerationer är knutna till namnet på rapporten.  
+- Prenumerationer på rapportsidor är knutna till namnet på rapporten.  
 
-- E-postprenumerationer skickas med rapportens standardparametervärden. 
+- E-postprenumerationer skickas med standardvärden för rapportens parametrar. 
 
-- Det finns inga **efter datauppdatering** alternativ för frekvensen med sidnumrerade rapporter. Du kan alltid hämta de senaste värdena från den underliggande datakällan. 
+- Alternativet **Efter datauppdatering** som frekvens är inte tillgängligt för sidnumrerade rapporter. Du får alltid de senaste värdena från den underliggande datakällan. 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Prenumerera på dig själv och andra rapporter och instrumentpaneler i Power BI-tjänsten](service-report-subscribe.md)
+[Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten](service-report-subscribe.md)
 
-[Vad är sidnumrerade rapporter i Power BI Premium? (Förhandsversion)](paginated-reports-report-builder-power-bi.md)
+[Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)

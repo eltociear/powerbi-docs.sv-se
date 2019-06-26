@@ -10,12 +10,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 8cee670028da828e052d8fe30c594882555c5d53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770152"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839703"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Uppgradera Power BI-rapportserver
 
@@ -31,21 +31,21 @@ Innan du uppgraderar en rapportserver, rekommenderas att du utför följande ste
 
 ### <a name="backing-up-the-encryption-keys"></a>Säkerhetskopiera krypteringsnycklarna
 
-Du bör säkerhetskopiera krypteringsnycklarna när du konfigurerar en rapportserverinstallation för första gången. Du bör även säkerhetskopiera nycklarna varje gång du ändrar identiteten för tjänstkonton eller byta namn på datorn. Mer information finns i [Säkerhetskopiera och återställa Reporting Services krypteringsnycklar](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Du bör säkerhetskopiera krypteringsnycklarna när du konfigurerar installationen av en rapportserver initialt. Du bör även säkerhetskopiera nycklarna varje gång du ändrar identiteten för tjänstkonton eller byter namn på datorn. Mer information finns i [Säkerhetskopiera och återställa Reporting Services krypteringsnycklar](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Säkerhetskopiera databaser för rapportservern
 
-Eftersom en rapportserver är en autonom server, lagras alla programdata i databaserna **reportserver** och **reportservertempdb** databaser som körs på en instans av SQL Server Database Engine. Du kan säkerhetskopiera den **reportserver** och **reportservertempdb** databaser med någon av metoderna som stöds för att säkerhetskopiera SQL Server-databaser. Följande rekommendationer är specifika för rapportserverdatabaser:
+Eftersom en rapportserver är en autonom server, lagras alla programdata i databaserna **reportserver** och **reportservertempdb** databaser som körs på en instans av SQL Server Database Engine. Du kan säkerhetskopiera databaserna **reportserver** och **reportservertempdb** med någon av metoderna som stöds för att säkerhetskopiera SQL Server-databaser. Följande rekommendationer är specifika för rapportserverdatabaser:
 
-* Använd den fullständiga återställningsmodellen för säkerhetskopiering av den **reportserver** databas.
-* Använd den enkla återställningsmodellen för säkerhetskopiering av den **reportservertempdb** databas.
-* Du kan använda olika scheman för säkerhetskopiering för varje databas. Det enda skälet att säkerhetskopiera den **reportservertempdb** är att undvika att behöva återskapa den om det finns ett maskinvarufel. I händelse av maskinvarufel är det inte nödvändigt att återställa data i **reportservertempdb**, men du behöver tabellstrukturen. Om du förlorar **reportservertempdb** är det enda sättet att få tillbaka den är återskapa rapportserverdatabasen. Om du återskapar **reportservertempdb** är det viktigt att den har samma namn som den primära rapportserver-databasen.
+* Använd den fullständiga återställningsmodellen när du säkerhetskopierar databasen **reportserver**.
+* Använd den förenklade återställningsmodellen när du säkerhetskopierar databasen **reportservertempdb**.
+* Du kan använda olika scheman för säkerhetskopiering för varje databas. Skälet till att säkerhetskopiera **reportservertempdb** är så att du inte behöver skapa den på nytt om det skulle inträffa ett maskinvarufel. I händelse av maskinvarufel är det inte nödvändigt att återställa data i **reportservertempdb**, men du behöver tabellstrukturen. Om du förlorar **reportservertempdb** är det enda sättet att få tillbaka den är återskapa rapportserverdatabasen. Om du återskapar **reportservertempdb** är det viktigt att den har samma namn som den primära rapportserver-databasen.
 
 Mer information om säkerhetskopiering och återställning av relationsdatabaser i SQL Server finns i [Säkerhetskopiera och återställa SQL Server-databaser](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### <a name="backing-up-the-configuration-files"></a>Säkerhetskopiera konfigurationsfiler
 
-Power BI-rapportservern använder konfigurationsfiler för att lagra programinställningar. Du bör säkerhetskopiera filerna när du först konfigurerar servern och när du har distribuerat anpassade tillägg. Filer för säkerhetskopiering inkluderar:
+Power BI-rapportservern använder konfigurationsfiler för att lagra programinställningar. Du bör säkerhetskopiera filerna när du först konfigurerar servern och efter att du distribuerar anpassade tillägg. Filer för säkerhetskopiering inkluderar:
 
 * config.json
 * RSHostingService.exe.config
@@ -63,15 +63,15 @@ Det är enkelt att uppgradera Power BI-rapportservern. Det krävs endast några 
 
 2. Välj **Uppgradera Power BI-rapportserver**.
 
-    ![Uppgradera Power BI-rapportserver](media/upgrade/reportserver-upgrade1.png "uppgradera Power BI-rapportserver")
+    ![Uppgradera Power BI-rapportserver](media/upgrade/reportserver-upgrade1.png "Uppgradera Power BI-rapportserver")
 
 3. Läs och godkänn licensvillkoren och välj sedan **Uppgradera**.
 
-    ![Licensavtal för](media/upgrade/reportserver-upgrade-eula.png "licensavtalet")
+    ![Licensavtal](media/upgrade/reportserver-upgrade-eula.png "Licensavtal")
 
 4. När uppgraderingen är slutförd, kan du välja **Konfigurera rapportserver** för att starta konfigurationshanteraren för rapporttjänster eller **Stäng** att avsluta installationsprogrammet.
 
-    ![Uppgradera config](media/upgrade/reportserver-upgrade-configure.png)
+    ![Uppgradera konfiguration](media/upgrade/reportserver-upgrade-configure.png)
 
 ## <a name="upgrade-power-bi-desktop"></a>Uppgradera Power BI Desktop
 

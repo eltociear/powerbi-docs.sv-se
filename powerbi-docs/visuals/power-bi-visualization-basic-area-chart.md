@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 02d81a4ebb92ec199887109c7f2d9afcb6449eda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe1d2a6f086831a4ae6bd78d8669dce9459bffad
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61393281"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839851"
 ---
 # <a name="basic-area-chart"></a>Grundläggande ytdiagram
-Det grundläggande ytdiagrammet (även känt som överlappande områdesdiagram) baseras på linjediagrammet. Området mellan axel och linje fylls med färger för att illustrera volym. 
+Det grundläggande ytdiagrammet (kallas även för ett överlappande ytdiagram) baseras på linjediagrammet. Området mellan axel och linje fylls med färger för att illustrera volym. 
 
 Ytdiagrammet framhäver omfattningen av förändring över tid och kan användas för att uppmärksamma totalvärdet över en trend. Data som representerar vinst över tid kan till exempel ritas i ett ytdiagram för att betona den totala vinsten.
 
@@ -40,11 +40,11 @@ Om du vill följa med, loggar du in i Power BI och väljer **Hämta data\> Exemp
  
 
 1. Välj **Totalt antal butiker** från instrumentpanelen ”Exempel på detaljhandelsanalys” för att öppna rapporten ”Exempel på detaljhandelsanalys”.
-2. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+2. Välj **Redigera** för att öppna rapporten i redigeringsvyn.
 3. Lägg till en ny rapportsida genom att välja den gula plus-ikonen (+) längst ned på rapporten.
 4. Skapa ett ytdiagram som visar årets försäljning och förra årets försäljning per månad.
    
-   a. Från Fält-fönstret, väljer du **Försäljning \> Förra årets försäljning** och **Årets försäljning > Värde**.
+   a. I fönstret Fält väljer du **Försäljning \> Förra årets försäljning** och **Årets försäljning > Värde**.
 
    ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 

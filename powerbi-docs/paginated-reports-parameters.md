@@ -1,5 +1,5 @@
 ---
-title: Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
+title: Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten
 description: I den här artikeln lär du dig att skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: d58d1c84199c698089f4b3abccb26f9dbaea76d6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: adec7af0032772022a330e3ab25377205de9ace5
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60987702"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838984"
 ---
-# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten (förhandsversion)
+# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten
 
 I den här artikeln lär du dig att skapa parametrar för sidnumrerade rapporter i Power BI-tjänsten.  En rapportparameter är ett sätt att välja rapportdata och variera rapportpresentationen på. Du kan ange ett standardvärde och en lista med tillgängliga värden, och dina rapportläsare kan ändra valet.  
 
-Följande bild visar designvyn i Power BI Report Builder för en rapport med parametrar @BuyingGroup, @Customer, @FromDate, och @ToDate. 
+I följande bild visas designvyn i Power BI Report Builder för en rapport med parametrarna @BuyingGroup, @Customer, @FromDate och @ToDate. 
   
 ![Parametrar i Report Builder](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
@@ -67,4 +67,4 @@ Följande bild visar designvyn i Power BI Report Builder för en rapport med par
 
 Se [Visa parametrar för sidnumrerade rapporter](paginated-reports-view-parameters.md) för att se hur parametrarna ser ut i Power BI-tjänsten.
 
-Detaljerad information om parametrar i sidnumrerade rapporter finns i artikeln [Rapportparametrar (Report Builder och Rapportdesignern)](https://docs.microsoft.com/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer) i SQL Server Reporting Services-dokumentationen  
+Mer detaljerad information om parametrar i sidnumrerade rapporter finns i [Rapportparametrar i Power BI Report Builder](report-builder-parameters.md).

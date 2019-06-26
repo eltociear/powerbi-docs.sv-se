@@ -1,6 +1,6 @@
 ---
-title: Hämta en åtkomsttoken för autentisering
-description: Genomgång för att skicka data – hämta en åtkomsttoken för autentisering
+title: Hämta en autentiseringsåtkomsttoken
+description: Genomgång för att push-överföra data – hämta en åtkomsttoken för autentisering
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,42 +8,49 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/29/2019
+ms.openlocfilehash: 5cb741d194d787014fec39f963e19d04de59a668
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710361"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809089"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Steg 2: Hämta en autentiseringsåtkomsttoken
 
-Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
+Den här artikeln är det andra steget i serien [Push-överföra data till en Power BI-datamängd](walkthrough-push-data.md).
 
-I **steg 1** av Skicka data till en datauppsättning, [Registrera appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), registrerade du en klientapp i Azure AD. I det här steget, hämtar du en åtkomsttoken för autentisering. Power BI-appar är integrerade med **Azure AD** för att tillhandahålla säker inloggning och auktorisering för din app. Du använder en token för att autentisera till **Azure AD** och få åtkomst till Power BI-resurser.
-
-Så här hämtar du en åtkomsttoken för autentisering.
+I steg 1 [registrerade du en klientapp i Azure AD](walkthrough-push-data-register-app-with-azure-ad.md). I det här steget, hämtar du en åtkomsttoken för autentisering. Power BI-appar är integrerade i Azure Active Directory så att appen ska få säker inloggning och auktorisering. Appen använder en token för autentisering med Azure AD och för att få åtkomst till Power BI-resurser.
 
 ## <a name="get-an-authentication-access-token"></a>Hämta en autentiseringsåtkomsttoken
 
-> **Obs!** Innan du börjar kontrollerar du att du har följt de föregående stegen i genomgången för att [skicka data till en datauppsättning](walkthrough-push-data.md).
+Innan du börjar ska du kontrollera att du har utfört [föregående steg](walkthrough-push-data-register-app-with-azure-ad.md) i serien [Push-överföra data till en Power BI-datamängd](walkthrough-push-data.md). 
 
-1. I Visual Studio (2015 eller senare) skapar du en **konsolprogram** projekt.
-2. Installera [Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Om du vill hämta en säkerhetstoken för autentisering i en .NET-app, använder du det här paketet. Så här installerar du paketet:
+För den här proceduren behöver du Visual Studio 2015 eller senare.
 
-     a. I Visual Studio (2015 eller senare) väljer **verktyg** > **NuGet-Pakethanteraren** > **Pakethanterarkonsolen**.
+1. Skapa ett nytt C#-projekt med ett **Konsolprogram** i Visual Studio.
 
-     b. I **Pakethanterarkonsolen**, anger du Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory-Version 2.21.301221612.
-3. Lägg till koden nedan i klassen Program {...}.
-4. Ersätt ”{ClientID}”, med den **klient-ID** du fick när du registrerade appen. Se [Registrera appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
-5. När du har installerat Microsoft.IdentityModel.Clients.ActiveDirectory-paketet, lägger du till **using Microsoft.IdentityModel.Clients.ActiveDirectory;** till Program.cs.
-6. Kör konsolappen och logga in på ditt Power BI-konto. Du bör se en tokensträng i konsolfönstret.
+2. Installera [Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). .NET-appen behöver det här paketet för att få en säkerhetstoken för autentisering. 
+
+     a. Välj **Verktyg** > **NuGet-pakethanteraren** > **Pakethanterarkonsolen**.
+
+     b. Skriv **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612**
+
+     c. Lägg till `using Microsoft.IdentityModel.Clients.ActiveDirectory;` i Program.cs.
+
+3. Lägg till exempelkoden nedan i Program.cs.
+
+4. Ersätt ”{ClientID}” med det **klient-ID** du fick i den [föregående artikeln](walkthrough-push-data-register-app-with-azure-ad.md) när du registrerade appen.
+
+5. Kör konsolappen och logga in på ditt Power BI-konto. 
+
+   Du bör se en tokensträng i konsolfönstret.
 
 **Exempelkod för att hämta säkerhetstoken för autentisering**
 
 Lägg till den här koden i Program {...}.
 
-* En tokenvariabel för att anropa åtgärder:
+* En tokenvariabel för att anropa åtgärder: 
   
   ```csharp
   private static string token = string.Empty;
@@ -104,13 +111,10 @@ Lägg till den här koden i Program {...}.
        #endregion
 ```
 
-När du får en autentiseringstoken, kan du anropa valfri Power BI-åtgärd. Nästa steg beskriver hur du anropar åtgärden [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) för att skapa en datauppsättning och skicka data till en instrumentpanel.
+När du får en autentiseringstoken, kan du anropa valfri Power BI-åtgärd.
 
-Nästa steg visar hur du [skapar en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md).
+I nästa artikel i serien ska du [skapa en datamängd i Power BI](walkthrough-push-data-create-dataset.md).
 
-Nedan visas den [fullständiga kodlistan](#code).
-
-<a name="code"/>
 
 ## <a name="complete-code-listing"></a>Fullständig kodlista
 
@@ -175,14 +179,13 @@ namespace walkthrough_push_data
 }
 ```
 
-[Nästa steg >](walkthrough-push-data-create-dataset.md)
+
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md)  
-[Registrera en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
-[Azure AD-autentiseringsbiblioteket för .NET NuGet-paket](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Skicka data till en Power BI-datauppsättning](walkthrough-push-data.md)  
+[Nästa artikel i serien > Skapa en datamängd i Power BI](walkthrough-push-data-create-dataset.md)
+
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
+[REST API:er för Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
+
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
