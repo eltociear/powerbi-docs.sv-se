@@ -1,20 +1,20 @@
 ---
 title: Power BI-webbseminarier
 description: Power BI-webbseminarier
-author: maikelson
+author: v-tatero
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.author: maikelson
-ms.openlocfilehash: a2db3f8c88231663ecb115c4609d3af177d96292
-ms.sourcegitcommit: 9da792d470dfe43dc6e15ddef5d471f3f6c50970
+ms.date: 06/01/2019
+ms.author: v-tatero
+ms.openlocfilehash: d62ad0624a19666e4ac1e59927df9eade6e4df33
+ms.sourcegitcommit: 8054aa9622d97b196ef6cd087fd9e1d8dad3d9de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66453777"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67144918"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -22,7 +22,15 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
+Registrera dig för att lyssna till Power BI-experter och delta i livesända frågesessioner.
+
+**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
+<br>av Pankaj Gudimella och Guru Kirthigavasan
+<br>[Registrera dig för att titta den 25 juni, kl. 10:00–11:00 PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+
+**Power BI: How to Get Insights from Your Workday HR Data**
+<br>av Iman Eftekhari och Julia Paton från Agile Analytics samt Shahram Karimi från QBE Insurance
+<br>[Registrera dig för att titta den 27 juni, kl. 13:30–14:30 PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -133,17 +141,9 @@ Titta på inspelade sessioner när som helst
 <br>av Stephen Cracknell och Stuart Macanliss från US Medical IT
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Förstärk din BI med Location Intelligence**
-<br>av Scott Ball från Esri och Enrique Plaza från Microsoft
-<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Tillämpad intelligens för försäljning och tjänster**
 <br>av Ed Bobrin från Avanade
 <br>[Registrera dig och titta nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**5 vanor för en lyckad trendsättare – Rohit Bhargava**
-<br>av Rohit Bhargava från Non-Obvious
-<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Tillverkare: Din bransch genomgår en digital förvandling – håll dig i framkant genom att utnyttja analys för att maximera lönsamhet**
 <br>av Jon Thompson från Blue Margin och Jim Pastor från Elgin Fastener Group
@@ -152,6 +152,14 @@ Titta på inspelade sessioner när som helst
 **Visualisera offentliga eller privata datauppsättningar med den nya Power BI- och data.world-anslutningsappen**
 <br>av Patrik McGarry och Miguel Martinez
 <br>[Registrera dig och titta nu](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**Förstärk din BI med Location Intelligence**
+<br>av Scott Ball från Esri och Enrique Plaza från Microsoft
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**5 vanor för en lyckad trendsättare – Rohit Bhargava**
+<br>av Rohit Bhargava från Non-Obvious
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### <a name="community"></a>Community ###
 

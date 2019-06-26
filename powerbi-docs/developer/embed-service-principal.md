@@ -10,14 +10,14 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 97903b4e6f906f2cb09f6285832ad6eb9a5a8dca
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720332"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823294"
 ---
-# <a name="service-principal-with-power-bi-preview"></a>Tjänstens huvudnamn med Power BI (förhandsversion)
+# <a name="service-principal-with-power-bi"></a>Tjänstens huvudnamn med Power BI
 
 Med **tjänstens huvudnamn** kan du bädda in Power BI-innehåll i ett program och använda automatisering med Power BI med hjälp av en **appspecifik** token. Tjänstens huvudnamn är bra när du använder **Power BI Embedded** eller **automatiserar Power BI-uppgifter och -processer**.
 
@@ -94,7 +94,7 @@ Skiljer sig från traditionell användning av ett huvudkonto, användning av tj�
    > [!Important]
    > Om du aktiverar tjänstens huvudnamn för användning med Power BI gäller inte längre programmets AD-behörigheter. Programmets behörigheter hanteras då via Power BI-administrationsportalen.
 
-2. Skapa en [säkerhetsgrupp i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) och lägg till det program du har skapat i säkerhetsgruppen. Du kan skapa en AAD-säkerhetsgrupp med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Rekommenderat** – Skapa en [säkerhetsgrupp i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) och lägg till det program du skapade i den säkerhetsgruppen. Du kan skapa en AAD-säkerhetsgrupp med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Nedan är ett exempelskript för att skapa en ny säkerhetsgrupp och lägga till programmet i den säkerhetsgruppen.
 
@@ -109,7 +109,7 @@ Skiljer sig från traditionell användning av ett huvudkonto, användning av tj�
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-3. Som Power BI-administratör måste du aktivera tjänstens huvudnamn i **Inställningar för utvecklare** i Power BI-administratörsportalen. Lägg till säkerhetsgruppen som du har skapat i Azure AD i avsnittet **Specifik säkerhetsgrupp** i **Inställningar för utvecklare**.
+3. Som Power BI-administratör måste du aktivera tjänstens huvudnamn i **Inställningar för utvecklare** i Power BI-administratörsportalen. Lägg till den säkerhetsgrupp som du skapade i Azure AD i det specifika avsnittet för säkerhetsgrupp i **Inställningar för utvecklare**. Du kan även aktivera åtkomst med tjänstens huvudnamn för hela organisationen. I det fallet krävs inte steg 2.
 
    > [!Important]
    > Tjänstens huvudnamn har åtkomst till alla klientorganisationsinställningar som är aktiverade för hela organisationen eller aktiverade för säkerhetsgrupper som har tjänstens huvudnamn som en del av gruppen. För att begränsa tjänstens huvudnamns åtkomst till specifika klientorganisationsinställningar tillåter du endast åtkomst till specifika säkerhetsgrupper, eller skapar en dedikerad säkerhetsgrupp för tjänstens huvudnamn och utesluter den.
@@ -181,4 +181,4 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 * [Registrera en app](register-app.md)
 * [Power BI Embedded för dina kunder](embed-sample-for-customers.md)
 * [Objekt för program och tjänstens huvudnamn i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Säkerhet på radnivå med hjälp av lokal datagateway med tjänstens huvudnamn (förhandsversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Säkerhet på radnivå med hjälp av lokal datagateway med tjänstens huvudnamn](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

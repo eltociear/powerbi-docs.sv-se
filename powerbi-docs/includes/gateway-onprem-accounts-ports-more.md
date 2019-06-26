@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 79789e4a90167e440f859e73048e5972d2a5aacb
-ms.sourcegitcommit: 2df541facab8a1621953e91dbbee18c7d4e9a3c3
+ms.openlocfilehash: e24218e2a465619fdfbfc279d3cc45370202dd6e
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64865255"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814719"
 ---
 ## <a name="sign-in-account"></a>Inloggningskonto
 
@@ -23,7 +23,7 @@ Om du får autentiseringsproblem med proxyservern så försök att ändra Window
 
 Gatewayen skapar en utgående anslutning till Azure Service Bus. Den kommunicerar via utgående portar: TCP 443 (standard), 5671, 5672, 9350 till 9354.  Gatewayen behöver inte några ingående portar.
 
-Vi rekommenderar att du godkänner IP-adresserna för ditt dataområde i brandväggen. Du kan hämta listan [Microsoft Azure-Datacenter IP-adresser](https://www.microsoft.com/download/details.aspx?id=41653) som uppdateras varje vecka. Du kan också hämta listan över portar som krävs genom att utföra [nätverksporttestet](../service-gateway-onprem-tshoot.md#network-ports-test) på ditt lokala datagateway-program. Gatewayen kommunicerar med Azure Service Bus via IP-adressen, tillsammans med det fullständiga domännamnet (FQDN). Om du tvingar gatewayen att kommunicera via HTTPS kommer den endast att använda FQDN och ingen kommunikation kommer att ske via IP-adresser.
+Vi rekommenderar att du lägger till IP-adresserna i en lista över godkända för din region i brandväggen. Du kan hämta listan [Microsoft Azure-Datacenter IP-adresser](https://www.microsoft.com/download/details.aspx?id=41653) som uppdateras varje vecka. Du kan också hämta listan över portar som krävs genom att utföra [nätverksporttestet](../service-gateway-onprem-tshoot.md#network-ports-test) på ditt lokala datagateway-program. Gatewayen kommunicerar med Azure Service Bus via IP-adressen, tillsammans med det fullständiga domännamnet (FQDN). Om du tvingar gatewayen att kommunicera via HTTPS kommer den endast att använda FQDN och ingen kommunikation kommer att ske via IP-adresser.
 
 
 > [!NOTE]
@@ -51,7 +51,12 @@ Här är en lista med de fullständiga domännamn som används av gatewayen.
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>Tvinga HTTPS-kommunikation med Azure Service Bus
 
-Du kan tvinga gatewayen att kommunicera med Azure Service Bus med HTTPS, i stället för direkt TCP. om du använder HTTPS kan det påverka prestanda. Det gör du genom att ändra filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* genom att ändra värdet från `AutoDetect` till `Https`, som visas i kodfragmentet direkt efter detta stycke. Filen finns (som standard) på *C:\Program\Lokal datagateway*.
+Du kan tvinga gatewayen att kommunicera med Azure Service Bus med HTTPS, i stället för direkt TCP.
+
+> [!NOTE]
+> Från och med versionen för juni 2019 är nya installationer (inte uppdateringar) förinställda på HTTPS i stället för TCP baserat på rekommendationer från Azure Service Bus.
+
+Du kan framtvinga kommunikation via HTTPS genom att ändra filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*: ändra värdet från `AutoDetect` till `Https`, enligt det som visas i kodfragmentet direkt efter detta stycke. Filen finns (som standard) på *C:\Program\Lokal datagateway*.
 
 ```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 67678a150b4fce802bef2b287211cf438b832e82
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
+ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66459564"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66826644"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -61,9 +61,17 @@ När instrumentpanelerna och rapporterna på din arbetsyta är redo kan du välj
    
      ![Appnavigering](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
-5. På **Behörighet** väljer du vilka som har åtkomst till appen och vad de kan göra med den. 
+5. På **Behörigheter** väljer du vilka som har åtkomst till appen och vad de kan göra med den. 
     - I [klassiska arbetsytor](service-create-workspaces.md): alla i din organisation, specifika personer eller Azure Active Directory-säkerhetsgrupper (AAD).
-    - I [arbetsytor med ny funktion](service-create-the-new-workspaces.md): specifika personer, AAD-säkerhetsgrupper och distributionslistor samt Office 365-grupper.
+    - I [arbetsytor med ny funktion](service-create-the-new-workspaces.md): specifika personer, AAD-säkerhetsgrupper och distributionslistor samt Office 365-grupper. Alla arbetsyteanvändare får automatiskt åtkomst till appen för arbetsytan.
+    - Du kan tillåta appanvändare att ansluta till appens underliggande datamängder med hjälp av Skapa-behörighet. Dessa datamängder visas i funktionerna för datamängdssökning.
+    - Du kan tillåta appanvändarna att göra en kopia av rapporterna i den här appen till sin Min arbetsyta. 
+    
+    >[!IMPORTANT]
+    >Om din app är beroende av datamängder från andra arbetsytor är det ditt ansvar att se till att alla appanvändare har åtkomst till de underliggande datamängderna.
+> 
+>     
+
 
 6. Du kan installera appen automatiskt för mottagarna om Power BI-administratören har aktiverat den här inställningen för dig i Power BI-administratörsportalen. Läs mer om [automatisk installation av en app](#automatically-install-apps-for-end-users) i den här artikeln.
 
@@ -151,6 +159,14 @@ Här är saker som du bör ha i åtanke när du pushar appar till slutanvändare
 * Försök att inte överväldiga användarna. Pusha inte för många appar så att användarna uppfattar det som att de förinstallerade apparna är användbara för dem. Det är bäst att kontrollera vem som kan pusha appar till slutanvändarna så att tidsaspekten kan samordnas. Upprätta en kontaktpunkt i för att push-överföra appar i din organisation till slutanvändarna.
 
 * Appar installeras inte automatiskt för gästanvändare som inte har godkänt en inbjudan.  
+
+## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Tillåta användare att ansluta till appens underliggande datamängder
+När du markerar alternativet för att tillåta alla användare att ansluta till appens underliggande datamängder får appanvändare Skapa-behörighet för den underliggande datamängden. Då kan användarna [använda appdatamängderna mellan arbetsytor](service-datasets-across-workspaces.md) för att söka efter dessa datamängder i Power BI Desktop och tjänsten för att hämta dataupplevelser samt skapa rapporter och instrumentpaneler med hjälp av dessa datamängder. 
+
+När du avmarkerar det här alternativet får nya användare som du lägger till i appen inte längre Skapa-behörighet. Dock ändras inte befintliga behörigheter för de underliggande datamängderna. Du kan använda det tillhandahållna användargränssnittet för att ta bort Skapa-behörighet manuellt från appanvändare som inte längre ska ha den. Läs mer om [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Tillåta användare att göra en kopia av rapporterna i appen
+Genom att markera alternativet **Tillåt användare att göra en kopia av rapporterna i den här appen** tillåter du användare att spara vilka som helst av rapporterna i appen till sin Min arbetsyta. De kan sedan anpassa rapporterna efter sina unika behov. Det här alternativet kräver att **Tillåt alla användare att ansluta till appens underliggande datamängder med hjälp av Skapa-behörighet** är aktiverat. Den här funktionen fungerar som den nya funktionen [kopiera rapporter från andra arbetsytor](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Ta bort en app
 Alla medlemmar i en app-arbetsyta kan ta bort appen.

@@ -1,5 +1,5 @@
 ---
-title: Azure Machine Learning-integrering i Power BI (förhandsversion)
+title: Azure Machine Learning-integrering i Power BI
 description: Lär dig hur du använder Machine Learning med Power BI
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 86fab3a760eb8bb12ed1955fd5bf357790090e0e
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448352"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823472"
 ---
-# <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azure Machine Learning-integrering i Power BI (förhandsversion)
+# <a name="azure-machine-learning-integration-in-power-bi"></a>Azure Machine Learning-integrering i Power BI
 
 Många organisationer använder **Machine Learning**-modeller för bättre insikter och förutsägelser om verksamheten. Möjligheten att visualisera och anropa insikter från dessa modeller i dina rapporter och instrumentpaneler och andra analyser kan hjälpa att sprida dessa insikter till företagsanvändare som behöver dem som mest.  Power BI gör du det enkelt att införliva insikter från modeller som finns på Azure Machine Learning Service med hjälp av enkla peka och klicka-åtgärder.
 
@@ -75,7 +75,7 @@ Specifikt refererar funktionerna *@input_schema* och *@output_schema* i inmatnin
 Dessa instruktioner för schemagenerering genom uppdatering av inmatningsskriptet måste även tillämpas på de modeller som skapas med hjälp av automatiserade maskininlärningsexperiment via Azure Machine Learning SDK.
 
 > [!NOTE]
-> Modeller som skapats med hjälp av det visuella gränssnittet i Azure Machine Learning Service (förhandsversion) stöder för närvarande inte schemagenerering, men kommer att göra det i senare versioner. 
+> Modeller som skapats med hjälp av det visuella gränssnittet i Azure Machine Learning Service stöder för närvarande inte schemagenerering, men kommer att göra det i senare versioner. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Anropa Azure ML-modellen i Power BI
 
@@ -107,9 +107,9 @@ När du sparar ditt dataflöde anropas modellen automatiskt när dataflödet upp
 
 Den här artikeln visade en översikt över integrering av Machine Learning i Power BI-tjänsten. Följande artiklar kan också vara intressanta och användbara. 
 
-* [Självstudier: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)](service-tutorial-invoke-machine-learning-model.md)
+* [Självstudier: Anropa en Machine Learning Studio-modell i Power BI](service-tutorial-invoke-machine-learning-model.md)
 * [Självstudier: Använda Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
-* [Cognitive Services i Power BI (förhandsversion)](service-cognitive-services.md)
+* [Cognitive Services i Power BI](service-cognitive-services.md)
 
 Mer information om dataflöden finns i de här artiklarna:
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)

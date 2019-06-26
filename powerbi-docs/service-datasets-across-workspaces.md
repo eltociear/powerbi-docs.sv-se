@@ -7,19 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/07/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a5e4b41b36dfbf6cca14a348268b96eaad21b00e
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461866"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816673"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Använda datamängder mellan arbetsytor (förhandsversion)
 
 Business Intelligence är en samarbetsinriktad aktivitet. Det är viktigt att upprätta standardiserade datamängder som kan utgöra ”den enda källan till sanning”. Det viktigaste är att upptäcka och återanvända dessa standardiserade datamängder. När experter på datamodellering i din organisation skapar och delar optimerade datamängder kan rapportskapare börja med de datamängderna för att skapa korrekta rapporter. Sedan har organisationen konsekventa data för beslutsfattande och en välfungerande datakultur.
+
+![Välja en delad datamängd](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
 Power BI gör det enkelt för datamängdsskapare att certifiera eller rekommendera datamängder så att andra kan upptäcka dem. Sedan hittar rapportförfattare högkvalitativa, officiella datamängder som de kan använda var som helst i Power BI. Datamängdsägare kan kontrollera vem som har åtkomst till deras data med hjälp av [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Klientorganisationsadministratörer har klientorganisationsinställning för att [styra användningen av datamängder mellan arbetsytor](service-datasets-admin-across-workspaces.md).
 
