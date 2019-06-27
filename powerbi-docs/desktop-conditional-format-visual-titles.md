@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769740"
@@ -57,7 +57,7 @@ När du har skapat DAX-uttrycket för fältet som du skapar i din modell, måste
 
 Markera fältet och tillämpa den, går du till den **visualiseringar** fönstret. I den **Format** Välj **rubrik** att visa rubrikalternativ för det visuella objektet. 
 
-När du högerklickar på **rubriktext**, visas en snabbmeny som gör det möjligt att välja ***fx * villkorsstyrd formatering**. När du väljer menyalternativet, en **rubriktext** dialogrutan visas. 
+När du högerklickar på **rubriktext**, visas en snabbmeny som gör det möjligt att välja ***fx* villkorsstyrd formatering**. När du väljer menyalternativet, en **rubriktext** dialogrutan visas. 
 
 ![Skärmbild av titeln text i dialogrutan](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

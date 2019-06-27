@@ -12,7 +12,7 @@ ms.custom: seodec18
 ms.date: 04/02/2019
 ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61355516"
@@ -186,7 +186,7 @@ Fyll i informationen **AADAuthorityUrl** URL:en som du antingen kan bädda in i 
 
 För att bädda in med din organisations klient använder du URL – *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-För att bädda in med en gäst använder du URL – *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
+För att bädda in med en gäst använder du URL – *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
 
 ### <a name="run-the-application"></a>Kör programmet
 
