@@ -1,21 +1,21 @@
 ---
 title: Inkrementell uppdatering i Power BI Premium
 description: Lär dig hur du kan använda mycket stora datamängder i Power BI Premium-tjänsten.
-author: christianwade
+author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
-ms.author: chwade
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 55676dc2ba2978fb2847543c670726582c589d53
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: ee5ec87e04517ce93589b371e97116acbcb02e87
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751147"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408586"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Inkrementell uppdatering i Power BI Premium
 
@@ -41,7 +41,7 @@ Det går inte alltid att använda riktigt stora datamängder i en Power BI Deskt
 
 #### <a name="rangestart-and-rangeend-parameters"></a>Parametrarna RangeStart och RangeEnd
 
-För inkrementell uppdatering filtreras datamängder med Power Query-parametrar för datum och tid med de reserverade, skiftlägeskänsliga namnen **RangeStart** och **RangeEnd**. Dessa parametrar används för att filtrera data som importeras till Power BI Desktop och för att dynamiskt partitionera data i intervall när de har publicerats till Power BI-tjänsten. Parametervärdena ersätts av tjänsten för filtrering av varje partition. Efter publicering åsidosätts parametervärdena automatiskt av Power BI-tjänsten. Du behöver inte ange dem i inställningarna för datauppsättningen i tjänsten. Efter publicering åsidosätts parametervärdena automatiskt av Power BI-tjänsten. 
+För inkrementell uppdatering filtreras datamängder med Power Query-parametrar för datum och tid med de reserverade, skiftlägeskänsliga namnen **RangeStart** och **RangeEnd**. Dessa parametrar används för att filtrera data som importeras till Power BI Desktop och för att dynamiskt partitionera data i intervall när de har publicerats till Power BI-tjänsten. Parametervärdena ersätts av tjänsten för filtrering av varje partition. Du behöver inte ange dem i inställningarna för datauppsättningen i tjänsten. Efter publicering åsidosätts parametervärdena automatiskt av Power BI-tjänsten.
 
 Välj **Hantera parametrar** i Power Query Editor och definiera parametrarna med standardvärden.
 

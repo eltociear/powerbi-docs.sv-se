@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: d62ad0624a19666e4ac1e59927df9eade6e4df33
-ms.sourcegitcommit: 8054aa9622d97b196ef6cd087fd9e1d8dad3d9de
+ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67144918"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389535"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -23,10 +23,6 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
 Registrera dig för att lyssna till Power BI-experter och delta i livesända frågesessioner.
-
-**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
-<br>av Pankaj Gudimella och Guru Kirthigavasan
-<br>[Registrera dig för att titta den 25 juni, kl. 10:00–11:00 PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI: How to Get Insights from Your Workday HR Data**
 <br>av Iman Eftekhari och Julia Paton från Agile Analytics samt Shahram Karimi från QBE Insurance
@@ -61,6 +57,10 @@ Kom igång med dessa populära webbseminarier på begäran
 **Microsoft drivs av Power BI – ekonomiplanering och -analys på ett enkelt sätt**
 <br>av Cory Hrncirik och Miguel Martinez
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
+<br>av Pankaj Gudimella och Guru Kirthigavasan
+<br>[Registrera dig och titta nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Förbättra dina program med hjälp av Power BI JavaScript API**
 <br>av Nimrod Shalit
