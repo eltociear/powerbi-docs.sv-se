@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: e75810d18b39619d249c3acd9a9140b3d19d5f35
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051428"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418704"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
@@ -46,7 +46,7 @@ Varje Power BI-distribution består av två kluster – ett frontwebb (**WFE**) 
 
 ![WFE och serverdelen](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI använder Azure Active Directory (**AAD**) för kontoautentisering och hantering. Power BI använder dessutom **Azure Traffic Manager** (ATM) till att dirigera användartrafik till det närmaste datacentret, vilket bestäms av DNS-posten för den klient som försöker att ansluta, för autentiseringsprocessen samt för att ladda ned statiskt innehåll och filer. Power BI använder geografiskt närmaste frontwebb (WFE) för att distribuera det statiska innehåll som krävs samt filer till användare, med undantag för anpassade visuella objekt som levereras via **Azure Content Delivery Network (CDN)**.
+Power BI använder Azure Active Directory (**AAD**) för kontoautentisering och hantering. Power BI använder dessutom **Azure Traffic Manager** (ATM) till att dirigera användartrafik till det närmaste datacentret, vilket bestäms av DNS-posten för den klient som försöker att ansluta, för autentiseringsprocessen samt för att ladda ned statiskt innehåll och filer. Power BI använder geografiskt närmaste frontwebb (WFE) för att distribuera det statiska innehåll som krävs samt filer till användare, med undantag för anpassade visuella objekt som levereras via **Azure Content Delivery Network (CDN)** .
 
 ### <a name="the-wfe-cluster"></a>WFE-klustret
 
@@ -137,7 +137,7 @@ Användarautentisering till Power BI-tjänsten består av en serie begäranden, 
 
 Sekvensen för användarautentisering för Power BI-tjänsten sker enligt beskrivningen i följande steg, som illustreras i följande bilder.
 
-1. En användare upprättar en anslutning till Power BI-tjänsten via en webbläsare, antingen genom att skriva Power BI-adressen i adressfältet (till exempel https://app.powerbi.com)) eller genom att välja _Logga in_ från landningssidan för Power BI (https://powerbi.microsoft.com). Anslutningen upprättas med hjälp av TLS 1.2 och HTTPS, och all efterföljande kommunikation mellan webbläsaren och Power BI-tjänsten använder HTTPS. Begäran skickas till **Azure Traffic Manager**.
+1. En användare upprättar en anslutning till Power BI-tjänsten via en webbläsare, antingen genom att skriva Power BI-adressen i adressfältet (till exempel https://app.powerbi.com) ) eller genom att välja _Logga in_ från landningssidan för Power BI (https://powerbi.microsoft.com). Anslutningen upprättas med hjälp av TLS 1.2 och HTTPS, och all efterföljande kommunikation mellan webbläsaren och Power BI-tjänsten använder HTTPS. Begäran skickas till **Azure Traffic Manager**.
 
 2. **Azure Traffic Manager** kontrollerar användarens DNS-post för att fastställa det närmaste datacentret där Power BI-tjänst distribueras, och svarar till DNS med IP-adressen för det WFE-kluster som användaren ska skickas till.
 
@@ -380,7 +380,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 **Hur ansluter användare till och får åtkomst till datakällor när de använder Power BI?**
 
-* **Power BI-autentiseringsuppgifter och autentiseringsuppgifter för domän:** Användare loggar in till på Power BI med en e-postadress. När en användare försöker ansluta till en dataresurs skickar Power BI e-postadressen för inloggning på Power BI som autentiseringsuppgifter. För domänanslutna resurser (antingen lokala eller molnbaserade) matchas e-postadressen för inloggning med ett _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) av katalogtjänsten för att fastställa om det finns tillräckligt med referenser för att tillåta åtkomst. För organisationer som använder arbetsbaserade e-postadresser för att logga in på Power BI (samma e-postadress som de använder för att logga in på arbetsresurser, till exempel _david@contoso.com_) kan mappningen ske sömlöst. För organisationer som inte använde arbetsbaserade e-postadresser (till exempel _david@contoso.onmicrosoft.com_) måste katalogmappning upprättas för att tillåta åtkomst till lokala resurser med inloggningsuppgifter för Power BI.
+* **Power BI-autentiseringsuppgifter och autentiseringsuppgifter för domän:** Användare loggar in till på Power BI med en e-postadress. När en användare försöker ansluta till en dataresurs skickar Power BI e-postadressen för inloggning på Power BI som autentiseringsuppgifter. För domänanslutna resurser (antingen lokala eller molnbaserade) matchas e-postadressen för inloggning med ett _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) av katalogtjänsten för att fastställa om det finns tillräckligt med referenser för att tillåta åtkomst. För organisationer som använder arbetsbaserade e-postadresser för att logga in på Power BI (samma e-postadress som de använder för att logga in på arbetsresurser, till exempel _david@contoso.com_ ) kan mappningen ske sömlöst. För organisationer som inte använde arbetsbaserade e-postadresser (till exempel _david@contoso.onmicrosoft.com_ ) måste katalogmappning upprättas för att tillåta åtkomst till lokala resurser med inloggningsuppgifter för Power BI.
 
 * **SQL Server Analysis Services och Power BI:** För organisationer som använder lokala SQL Server Analysis Services erbjuder Power BI den lokala datagatewayen för Power BI (som är en **gateway** enligt referenserna i föregående avsnitt).  Den lokala datagatewayen för Power BI kan tillämpa säkerhet på rollnivå (RLS) på datakällor. Mer information om RLS finns i **Användarautentisering till datakällor** tidigare i dokumentet. Du kan även läsa en djupgående artikel om [Power BI Gateway](service-gateway-manage.md).
 
@@ -426,14 +426,11 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 **Hur används återställningsnycklar och var lagras de vid arbete med den lokala datagatewayen? Hur går säker hantering av autentiseringsuppgifter till?**
 
-* Under installation och konfiguration av gateway skriver administratören in en **återställningsnyckel** för gatewayen. **Återställningsnyckeln** används för att generera två uppsättningar med betydligt kraftfullare nycklar:
+* Under installation och konfiguration av gateway skriver administratören in en **återställningsnyckel** för gatewayen. Att **återställningsnyckeln** används för att generera ett starkt **AES** symmetrisk nyckel. En **RSA** asymmetrisk nyckel skapas också på samma gång.
 
-  - En asymmetrisk **RSA-nyckel**
-  - En asymmetrisk **AES-nyckel**
+    De genererade nycklarna (**RSA** och **AES**) lagras i en fil som finns på den lokala datorn. Den filen krypteras också. Filens innehåll kan endast dekrypteras av den specifika Windows-datorn och endast av det specifika gatewaytjänstkontot.
 
-  De genererade nycklarna (**RSA** och **AES**) lagras i en fil som finns på den lokala datorn. Den filen krypteras också. Filens innehåll kan endast dekrypteras av den specifika Windows-datorn och endast av det specifika gatewaytjänstkontot.
-
-  När en användare anger autentiseringsuppgifterna för datakällan i Power BI-tjänstens användargränssnitt krypteras autentiseringsuppgifterna med den offentliga nyckeln i webbläsaren. Gatewayen återkrypterar (redan krypterade) autentiseringsuppgifter med en symmetrisk AES-nyckel innan data lagras i Power BI. Med den här processen har Power BI-tjänsten aldrig åtkomst till okrypterade data.
+    När en användare anger autentiseringsuppgifterna för datakällan i Power BI-tjänstens användargränssnitt krypteras autentiseringsuppgifterna med den offentliga nyckeln i webbläsaren. Gatewayen dekrypterar autentiseringsuppgifterna med hjälp av den privata nyckeln för RSA och krypterar dem igen med en symmetrisk nyckel som AES innan data lagras i Power BI-tjänsten. Med den här processen har Power BI-tjänsten aldrig åtkomst till okrypterade data.
 
 **Vilka kommunikationsprotokoll används av den lokala datagatewayen, och hur skyddas de?**
 
