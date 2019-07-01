@@ -231,6 +231,8 @@
               href: desktop-bookmarks.md
             - name: Använda rapportteman
               href: desktop-report-themes.md
+            - name: Typer av filter
+              href: power-bi-report-filter-types.md
             - name: Testa den nya filterupplevelsen
               href: power-bi-report-filter-preview.md
             - name: Använda snabbmått
@@ -417,50 +419,46 @@
           href: service-whats-new.md
         - name: Grundläggande begrepp
           items:
-            - name: Grundläggande begrepp för designer
+            - name: Förstå Power BI-tjänsten
               href: service-basic-concepts.md
-            - name: Typer av data i Power BI
-              href: service-get-data.md
             - name: Upptäck rapportredigeraren
               href: service-the-report-editor-take-a-tour.md
-        - name: Arbetsflöde i Power BI
-          items:
-            - name: Organisera ditt arbete
-              href: service-new-workspaces.md
-            - name: Sätt att dela ditt arbete
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Hålla data uppdaterade
+            - name: Power BI-datakällor
+              href: service-get-data.md
+            - name: Datauppdatering i Power BI
               href: refresh-data.md
-            - name: Övervaka användning
+        - name: Samarbeta i Power BI
+          items:
+            - name: Organize ditt arbete
+              href: service-new-workspaces.md
+            - name: Dela ditt arbete
+              href: service-how-to-collaborate-distribute-dashboards-reports.md
+            - name: Övervaka Power BI-användning
               href: service-usage-metrics.md
         - name: Licensiering
           items:
-            - name: Självbetjäningsregistrering
+            - name: Registrera dig för Power BI
               href: service-self-service-signup-for-power-bi.md
-            - name: Licensiering i organisationen
+            - name: Hantera Power BI-licenser
               href: service-admin-licensing-organization.md
             - name: Funktioner efter licenstyp
               href: service-features-license-type.md
-        - name: Fler begrepp
+            - name: Power BI för amerikanska myndigheter
+              href: service-govus-overview.md
+            - name: Vanliga frågor och svar för molnkunder i Tyskland
+              href: service-govde-faq.md
+        - name: Få hjälp och support
           items:
-            - name: 10 tips för att få hjälp
-              href: service-tips-for-finding-help.md
             - name: Supportalternativ för Power BI
               href: service-support-options.md
-            - name: Licensieringsspecialfall
-              items:
-                - name: Aktivering av utökad Pro-utvärderingsversion
-                  href: service-extended-pro-trial.md
-                - name: Power BI för amerikanska myndigheter
-                  href: service-govus-overview.md
-                - name: Vanliga frågor och svar för molnkunder i Tyskland
-                  href: service-govde-faq.md
-            - name: Övrigt
-              items:
-                - name: Microsoft Flow och Power BI
-                  href: service-flow-integration.md
-                - name: Kom igång med appar från tredje part
-                  href: service-power-bi-get-started-third-party-apps.md
+            - name: 10 tips för att få hjälp
+              href: service-tips-for-finding-help.md
+        - name: Utöka Power BI
+          items:
+            - name: Microsoft Flow och Power BI
+              href: service-flow-integration.md
+            - name: Använda appar från tredje part
+              href: service-power-bi-get-started-third-party-apps.md
     - name: Gör så här
       items:
         - name: Hämta data från filer
@@ -527,8 +525,6 @@
               href: refresh-csv-file-onedrive.md
             - name: Cachelagring av frågor i Power BI Premium
               href: power-bi-query-caching.md
-            - name: Felsöka uppdateringsscenarier
-              href: refresh-troubleshooting-refresh-scenarios.md
         - name: Instrumentpaneler
           items:
             - name: Introduktion till instrumentpaneler
@@ -709,6 +705,8 @@
           items:
             - name: Har du glömt lösenordet till Power BI?
               href: service-admin-forgot-your-password.md
+            - name: Går det inte att logga in?
+              href: power-bi-cannot-sign-in.md
             - name: Samla in ytterligare diagnostikinformation för Power BI
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: Alternativ e-postadress för Power BI
@@ -717,26 +715,26 @@
               href: service-admin-how-to-use-the-same-account-as-azure.md
             - name: Office 365-dedicerad – kända problem
               href: service-admin-office-365-dedicated-known-issues.md
-            - name: Felsöka Cortana
-              href: service-cortana-troubleshoot.md
-            - name: Felsöka Analysera i Excel
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Felsöka den lokala datagatewayen
-              href: service-gateway-onprem-tshoot.md
-            - name: Felsöka Power BI-gateway – personlig
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
-            - name: Felsöka datakälla utan stöd för uppdatering
+            - name: Felsöka uppdateringsscenarier
+              href: refresh-troubleshooting-refresh-scenarios.md
+            - name: Felsöka en datakälla utan stöd för uppdatering
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
             - name: Felsöka schemalagd uppdatering för Azure SQL-databaser
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-            - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
-              href: service-admin-troubleshoot-excel-workbook-data.md
             - name: Felsöka panelfel
               href: refresh-troubleshooting-tile-errors.md
+            - name: Felsöka den lokala datagatewayen
+              href: service-gateway-onprem-tshoot.md
+            - name: Felsöka Power BI-gatewayen – personligt
+              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Felsöka analysfunktionen i Excel
+              href: desktop-troubleshooting-analyze-in-excel.md
+            - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
+              href: service-admin-troubleshoot-excel-workbook-data.md
+            - name: Felsöka Cortana
+              href: service-cortana-troubleshoot.md
             - name: Så här uppdaterar du dina innehållspaketautentiseringsuppgifter för Xero om uppdateringen misslyckades
               href: service-refresh-xero-credentials.md
-            - name: Det går inte att logga in
-              href: power-bi-cannot-sign-in.md
         - name: Andra uppgifter
           items:
             - name: Byt namn på innehåll i Power BI
@@ -859,14 +857,12 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Ta bort en anslutning till ett innehållspaket
                   href: service-organizational-content-pack-disconnect.md
-    - name: Resurser
+    - name: Referens
       items:
-        - name: Videor
-          href: videos.md
-        - name: Webbseminarier
-          href: webinars.md
         - name: Språk och länder/regioner som stöds
           href: supported-languages-countries-regions.md
+    - name: Resurser
+      items:
         - name: Vitböcker
           items:
             - name: Översikt vitböcker
@@ -877,6 +873,10 @@
               href: whitepaper-powerbi-premium-deployment.md
             - name: Distribuera Power BI externt med hjälp av Azure Active Directory B2B
               href: whitepaper-azure-b2b-power-bi.md
+        - name: Videor
+          href: videos.md
+        - name: Webbseminarier
+          href: webinars.md
 - name: Power BI Premium
   items:
     - name: Översikt
