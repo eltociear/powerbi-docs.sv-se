@@ -7,139 +7,159 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2018
+ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 4b36c02abe0ca0bbd2d117559855a69edff370db
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ae2e4dcfe1fdcd88c3e6ff9e4942afdedf9d126b
+ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61234211"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349510"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exempel på personalfrågor för Power BI: Ta en rundtur
 
 ## <a name="overview-of-the-human-resources-sample"></a>Översikt över Personalfrågeexemplet
-Personalavdelningen har samma rapporteringsmodell för olika företag, även om de är olika för olika branscher och storlekar. Det här exemplet granskar nya anställningar, aktiva medarbetare, och medarbetare som har lämnat och försöker att hitta trender i anställningsstrategin. Vårt huvudmål är att förstå:
+Innehållspaketet med personalfrågeexempel innehåller en instrumentpanel, en rapport och en datamängd för en personalavdelning. I det här exemplet har personalavdelningen samma rapporteringsmodell för olika företag, även om de skiljer sig åt vad gäller bransch eller storlek. Det här exemplet granskar nya anställningar, nuvarande personal (aktiva anställda) och tidigare anställda som har lämnat företaget. Målet är att identifiera eventuella trender i anställningsstrategin. Vårt huvudmål är att förstå:
 
 * Vem vi anställer
 * Eventuella fördomar i vår anställningsstrategi
 * Trender i frivilliga avgångar
 
-![](media/sample-human-resources/hr1.png)
+![Instrumentpanel för personalfrågeexemplet](media/sample-human-resources/hr1.png)
 
-Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats. Data är tillgängliga i flera format: innehållsförpackning/-app, Excel-arbetsbok eller PBIX-fil för Power BI Desktop. Läs mer i [exempeldatauppsättningar](sample-datasets.md).
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Aktuella data är tillgängliga i flera format: innehållsförpackning/-app, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
+
+De här självstudierna använder Power BI-tjänsten och innehållspaketet med personalfrågeexempel. Eftersom rapportupplevelserna är så lika kan du även följa med via Power BI Desktop och .pbix-exempelfilen. 
 
 ## <a name="prerequisites"></a>Förutsättningar
 
- Innan du kan använda exemplet, måste du först ladda ned det som ett [innehållspaket](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), en [PBIX-fil](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) eller en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529780).
+Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](#get-the-content-pack-for-this-sample), en [.pbix-fil](#get-the-pbix-file-for-this-sample) eller en [Excel-arbetsbok](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
 
-1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
+1. Öppna Power BI-tjänsten (app.powerbi.com), logga in och öppna den arbetsyta där du vill spara exemplet.
+
 2. Längst ned i vänster hörn väljer du **Hämta data**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. På sidan Hämta data väljer du ikonen **Exempel**.
+   ![Välja Hämta data](media/sample-datasets/power-bi-get-data.png)
+3. På sidan **Hämta data** väljer du **Exempel**.
    
-   ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Välj **Personalfrågeexempel** och sedan **Anslut**.  
    
-   ![Hämta data](media/sample-human-resources/pbi_hr_sample_connect.png)
-5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. 
+   ![Ansluta till exempel](media/sample-human-resources/pbi_hr_sample_connect.png)
+
+5. Power BI importerar innehållspaketet och lägger sedan till en ny instrumentpanel, rapport och datamängd till din aktuella arbetsyta.
    
-   ![Asterisk](media/sample-human-resources/human-resources-sample-asterisk.png)
+   ![Inmatning av personalfrågeexempel](media/sample-human-resources/hr-sample-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop. 
-
- * [PBIX-filen Exempel på personalfrågor](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+Du kan även ladda ned personalfrågeexemplet som en [.pbix-fil](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529780). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
+
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529780). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="new-hires"></a>Nyanställda
 Låt oss utforska nyanställda först.
 
-1. På arbetsytan väljer du fliken **instrumentpaneler** och öppnar instrumentpanelen personal.
-2. På instrumentpanelen, väljer du panelen **Antal nyanställda, nyanställda samma period förra året, aktiva, ändring på årsbasis** **Enligt månad**.  
-   ![](media/sample-human-resources/hr2.png)  
+1. På arbetsytan väljer du fliken **Instrumentpaneler** och öppnar instrumentpanelen **Personalfrågeexempel**.
+2. På instrumentpanelen väljer du panelen för **Antal nyanställda, nyanställda samma period förra året, förändring för nuvarande personal år för år i % efter månad**.  
+
+   ![Panelen Antal nyanställda](media/sample-human-resources/hr2.png)  
 
    Exempelrapporten för personal öppnas på sidan **Nyanställda**.  
 
-   ![](media/sample-human-resources/hr3.png)
+   ![Sidan Nyanställda](media/sample-human-resources/hr3.png)
 
-Observera följande:
+3. Titta närmare på dessa intressanta punkter:
 
-* Kombinationsdiagrammet **Ändring per månad, anställa och nyanställda SPLY och aktiva på årsbasis %** visar vi har anlitat fler personer varje månad i år jämfört med föregående år &#151; betydligt fler personer under vissa månader.
-* I kombinationsdiagrammet **Antal nyanställa och aktivt antal medarbetare per region och etnicitet** kan man notera att vi anställde färre personer i regionen **Öst**.
-* Vattenfallsdiagrammet **Varians av nyanställda på årsbasis per åldersgrupp** att vi i huvudsak anställer yngre personer. Detta kan bero på att tjänsterna i huvudsak är på deltid.
-* Cirkeldiagrammet **Antal nyanställda enligt kön** visar en ganska jämn fördelning.
+    * Kombinationsdiagrammet för **Antal nyanställda, Nyanställda samma period förra året och Förändring för nuvarande personal år för år i % efter månad** visar att vi har anställt fler personer varje månad i år, jämfört med föregående år. Betydligt fler personer under vissa månader.
+    * I kombinationsdiagrammet **Antal nyanställa och aktivt antal medarbetare per region och etnicitet** kan man notera att vi anställde färre personer i regionen **Öst**.
+    * Vattenfallsdiagrammet **Varians av nyanställda på årsbasis per åldersgrupp** att vi i huvudsak anställer yngre personer. De här trenden kan bero på att tjänsterna i huvudsak är på deltid.
+    * Cirkeldiagrammet **Antal nyanställda enligt kön** visar en ganska jämn fördelning.
 
-Kan du hitta mer insikter, till exempel en region där könsfördelningen är ojämn? Välj olika ålder grupper och könen i diagram och utforska relationerna mellan ålder, kön, region och etnisk grupp.
+    Hittar du fler insikter? Till exempel en region där könsfördelningen är ojämn? 
 
-Välj namnet på instrumentpanelen från det övre navigeringsfältet för att återgå till instrumentpanelen.
+4. Välj olika ålder grupper och könen i diagram och utforska relationerna mellan ålder, kön, region och etnisk grupp.
 
-![](media/sample-human-resources/power-bi-breadcrumbs.png)
+5. Välj **Personalfrågeexempel** i det övre navigeringsfältet för att återgå till instrumentpanelen.
 
-## <a name="compare-current-active-and-former-employees"></a>Jämför aktuella aktiva och tidigare anställda
-Låt oss utforska data för aktuella aktiva medarbetare och anställda som inte längre arbetar för företaget.
+   ![Återgå till instrumentpanelen](media/sample-human-resources/power-bi-breadcrumbs.png)
 
-På instrumentpanelen väljer du panelen **Antal aktiva medarbetare per åldersgrupp**.  
-![](media/sample-human-resources/pbi_hr_sample_activepie.png)
+## <a name="compare-currently-active-and-former-employees"></a>Jämföra nuvarande aktiva anställda och tidigare anställda
+Låt oss utforska data för aktiva anställda och tidigare anställda som inte längre arbetar på företaget.
 
-Exempelrapporten för personal öppnas på sidan **Aktiva anställda jämfört med. Uppsägningar**.  
-![](media/sample-human-resources/hr5.png)
+1. På instrumentpanelen väljer du panelen **Antal aktiva medarbetare per åldersgrupp**.
 
-**Objekt av intresse**:
+   ![Panelen Antal aktiva anställda per åldersgrupp](media/sample-human-resources/pbi_hr_sample_activepie.png)
 
-* Kombinationsdiagram till vänster visar årsvis ändring för aktiva medarbetare och uppsägningar. Vi har mer aktivitet i år på grund av snabb anställning men även fler uppsägningar än förra året.
-* I augusti hade vi fler uppsägningar än andra månader. Välj olika åldersgrupper, kön eller regioner för att se om du hittar några avvikare.
-* Om vi tittar på cirkeldiagrammen ser vi en tydlig köns- och åldersfördelning bland våra aktiva medarbetare. Välj olika ålder grupper om du vill se könsfördelningen ändras i olika åldersgrupper. Har vi en ojämn könsfördelning i alla åldersgrupper?
+   Exempelrapporten för personal öppnas på sidan **Aktiva anställda jämfört med. Uppsägningar**.  
+
+   ![Aktiva anställda jämfört med Sidan Uppsägningar](media/sample-human-resources/hr5.png)
+
+ 2. Titta närmare på dessa intressanta punkter:
+
+    * De två kombinationsdiagrammen till vänster visar förändringar år för år för aktiva anställda och uppsägningar. Vi har mer aktiva anställda i år på grund av att vi har anställt många på kort tid, men även fler uppsägningar än förra året.
+    * I augusti hade vi fler uppsägningar än andra månader. Välj olika åldersgrupper, kön eller regioner för att se om du hittar några avvikare.
+    * Om vi tittar på cirkeldiagrammen ser vi en tydlig köns- och åldersfördelning bland våra aktiva anställda. Välj olika åldersgrupper om du vill se hur könsfördelningen ändras i olika åldersgrupper. Har vi en ojämn könsfördelning i alla åldersgrupper?
 
 ## <a name="reasons-for-separation"></a>Orsaker till fördelning
-Öppna rapporten i Redigeringsvyn. Välj **Redigera rapporten** i det övre vänstra hörnet.
+Öppna rapporten i Redigeringsvyn. Du kan ändra cirkeldiagrammen för att visa data för personaluppsägningar istället för aktiva anställda.
 
-Ändra cirkeldiagrammet så att uppsägningar visas istället för aktiva.
+1. Välj **Redigera rapporten** i det övre vänstra hörnet.
 
-1. Välj cirkeldiagrammet **Antal aktiva medarbetare per åldersgrupp**.
-2. I **Fält** markerar du pilen bredvid **anställda** för att expandera tabellen med anställda. Avmarkera kryssrutan bredvid **Antal aktiva medarbetare** för att ta bort fältet.
-3. Markera kryssrutan bredvid **Antal uppsägningar** i tabellen anställda till rutan **Värden** i fältbrunnen.
-4. När du är tillbaka på rapportarbetsytan väljer du stapeln **Frivilligt** i stapeldiagrammet **Antal uppsägningar efter uppsägningsorsak**. Detta markerar dem som lämnade företaget frivilligt i andra visuella objekt i rapporten.
-5. Klicka på sektorn 50+ i cirkeldiagrammet Antal uppsägningar per åldersgrupp.
+2. Välj cirkeldiagrammet **Antal aktiva medarbetare per åldersgrupp**.
 
-   Titta på linjediagrammet Uppsägning per orsak i den nedre högra hörnet. Diagrammet är filtrerat för att visa frivilliga uppsägningar.  
-   ![](media/sample-human-resources/pbi_hr_sample_sepsover50.png)
+3. För **Fält** markerar du **Anställda** för att expandera tabellen **Anställda**. Avmarkera **Antal aktiva anställda** för att ta bort fältet.
 
-   Ser du trenden i åldersgruppen 50+? Under den senare delen av året lämnar fler anställda över 50 frivilligt. Detta kan vara ett område som behöver närmare efterforskning med mer data.
-6. Du kan följa samma steg för cirkeldiagrammet **Antal aktiva medarbetare efter kön** och ändra den till uppsägningar istället för aktiva medarbetare. Titta på data för frivillig uppsägning efter kön för att se om du kan hitta andra insikter.
-7. Klicka på **Power BI** i det övre navigeringsfältet att återgå till instrumentpanelen. Du kan spara de ändringar du har gjort i rapporten eller inte.
+4. Välj **Antal uppsägningar** i tabellen **Anställda** för att lägga till det i rutan **Värden** i området **Fält**.
+
+5. På rapportarbetsytan väljer du stapeln **Frivilligt** i stapeldiagrammet **Antal uppsägningar efter uppsägningsorsak**. 
+
+   Den här stapeln markerar de anställda som lämnade företaget frivilligt i de övriga visuella objekten i rapporten.
+
+6. Väj sektorn 50+ i cirkeldiagrammet **Antal uppsägningar per åldersgrupp**.
+
+7. Titta på linjediagrammet i det nedre högra hörnet. Diagrammet är filtrerat för att visa frivilliga uppsägningar.  
+
+   ![Uppsägning av medarbetare över 50](media/sample-human-resources/pbi_hr_sample_sepsover50.png)
+
+   Ser du trenden i åldersgruppen 50+? Under den senare delen av året lämnar fler medarbetare över 50 frivilligt. Den här trenden behöver närmare efterforskning med mer data.
+
+8. Du kan också följa samma steg för cirkeldiagrammet **Antal aktiva anställda efter kön** och ändra den till uppsägningar istället för nuvarande personal. Titta på data för frivillig uppsägning efter kön för att se om du kan hitta andra insikter.
+
+9. Välj **Personalfrågeexempel** i det övre navigeringsfältet för att återgå till instrumentpanelen. Du kan välja att spara de ändringar som du har gjort i rapporten.
 
 ## <a name="bad-hires"></a>Dåliga anställningar
-Det senaste området att utforska är dåliga anställningar. Dåliga anställningar definieras som medarbetare som inte stannade längre än 60 dagar. Vi har hög personalomsättning. Anställer vi bra kandidater?
+Det senaste området att utforska är dåliga anställningar. Dåliga anställningar definieras som medarbetare som inte stannade längre än 60 dagar. Vi anställer i hög takt, men anställer vi bra kandidater?
 
-1. Välj instrumentpanelen **Dåliga anställningar som % av aktiva efter åldersgrupp**. Rapporten öppnas på sidan 3, ”Dåliga anställningar”.
+1. Välj instrumentpanelen **Dåliga anställningar som % av aktiva efter åldersgrupp**. Rapporten öppnas på flik tre, **Dåliga anställningar**.
 
-   ![](media/sample-human-resources/hr7.png)  
-2. Välj kryssrotan **Northwest** i utsnittet Region till vänster och segmentet **män** i ringdiagrammet Antal dåliga anställningar efter kön.  Titta på andra diagram på sidan ”dåliga anställningar”. Fler dåliga anställningar för män än kvinnor och många dåliga anställningar i grupp A.
-   ![](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
-3. Om vi tittar på toroiden **Dåliga anställningar efter kön** och klickar på utsnittet **Region** ser vi att Öst är den enda regionen med fler kvinnliga än manliga dåliga anställningar.  
+   ![Panelen Dåliga anställningar som % av aktiva anställda efter åldersgrupp](media/sample-human-resources/hr7.png)  
+2. Välj **Nordväst** i utsnittet **Region** till vänster och välj **Män** i ringdiagrammet **Antal dåliga anställningar efter kön**. Titta på de andra diagrammen på sidan **Dåliga anställningar**. Notera att det finns fler dåliga anställningar av män än kvinnor och många dåliga anställningar i grupp A.
+
+   ![Dåliga anställningar i nordväst](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
+
+3. Om du tittar på ringdiagrammet **Antal dåliga anställningar efter kön** och väljer olika regioner i utsnittet **Region**, ser du att den östra regionen är den enda regionen med fler kvinnliga än manliga dåliga anställningar.  
+
 4. Välj namnet på instrumentpanelen från det övre navigeringsfältet för att återgå till instrumentpanelen.
 
-## <a name="asking-a-question-in-the-qa-box"></a>Ställer en fråga i rutan Frågor och svar
-I rutan [Frågor och svar](power-bi-tutorial-q-and-a.md) kan du skriva en fråga med naturligt språk. Frågor och svar kan identifiera de ord du skriver och var svaret finns i din databas.
+## <a name="ask-a-question-in-the-dashboard-qa-box"></a>Ställa en fråga i instrumentpanelens frågeruta Frågor och svar
+I [frågerutan Frågor och svar](power-bi-tutorial-q-and-a.md) på instrumentpanelen kan du ställa en fråga om dina data med hjälp av naturligt språk. Frågor och svar kan identifiera de ord du skriver och var svaret finns i din databas.
 
-1. Klicka på rutan Frågor och svar Observera att rutan Frågor och svar innehåller förslag redan innan du börjar skriva:
+1. Klicka på rutan frågor och svar. Notera att Frågor och svar visar förslag för att hjälpa dig formulera din fråga, redan innan du ens börjar skriva.
 
-   ![](media/sample-human-resources/pbi_hr_sample_qabox.png)
-2. Du kan välja något av dessa förslag eller skriva: **Visa åldersgrupp, kön och dåliga anställningar SPLY där regionen är Öst**.  
+   ![Förslag för rutan Frågor och svar](media/sample-human-resources/pbi_hr_sample_qabox.png)
 
-   ![](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
+2. Du kan välja något av dessa förslag eller skriva: *visa åldersgrupp, kön och dåliga anställningar samma period förra året där regionen är öst*.  
+
+   ![Svar för rutan Frågor och svar](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
 
    Lägg märke till att majoriteten av dåliga kvinnliga anställningar är under 30.
 
-Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Fast du sparar dem kan du alltid gå till **Hämta data** för en ny kopia av det här exemplet.
+Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
-Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om personalfrågor. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).  
+Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om personalfrågor. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7adcfeec771796aa9fe322512f8ca8584559cea0
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829398"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264473"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Använda egna krypteringsnycklar för Power BI (förhandsversion)
 
@@ -27,18 +27,17 @@ Med BYOK blir det enklare att uppfylla efterlevnadskrav som täcker nyckelhanter
 
 ## <a name="data-source-and-storage-considerations"></a>Att tänka på med datakällor och lagring
 
-Om du vill använda BYOK måste du ladda upp data till Power BI-tjänsten från en PBIX-fil (Power BI Desktop). När du ansluter till datakällor i Power BI Desktop måste du ange lagringsläget Import. Du kan inte använda BYOK i följande scenarier:
+Om du vill använda BYOK måste du ladda upp data till Power BI-tjänsten från en PBIX-fil (Power BI Desktop). Du kan inte använda BYOK i följande scenarier:
 
-- DirectQuery
 - Liveanslutning till Analysis Services
 - Excel-arbetsböcker (såvida inte data först importeras till Power BI Desktop)
 - Push-datauppsättningar
 
-I nästa avsnitt får du lära dig hur du konfigurerar Azure Key Vault, där du lagrar krypteringsnycklarna som ska användas för BYOK.
+BYOK gäller enbart för den datamängd som är associerad med PBIX-filen, inte för frågeresultatcacher för paneler och visuella objekt.
 
 ## <a name="configure-azure-key-vault"></a>Konfigurera Azure Key Vault
 
-Azure Key Vault är ett verktyg för att säkert lagra och komma åt hemligheter som krypteringsnycklar. Du kan använda ett befintligt nyckelvalv till att lagra krypteringsnycklarna eller så kan du skapa ett nytt särskilt för Power BI.
+I det här avsnittet får du lära dig att konfigurera Azure Key Vault, ett verktyg för att lagra och få åtkomst till hemligheter, som krypteringsnycklar, på ett säkert sätt. Du kan använda ett befintligt nyckelvalv till att lagra krypteringsnycklarna eller så kan du skapa ett nytt särskilt för Power BI.
 
 Anvisningarna i det här avsnittet förutsätter att du har grundläggande kunskaper om Azure Key Vault. Mer information finns i [Vad är en Azure Key Vault?](/azure/key-vault/key-vault-whatis). Konfigurera ditt nyckelvalv så här:
 
@@ -86,7 +85,7 @@ När du har konfigurerat Azure Key Vault på rätt sätt kan du aktivera BYOK f�
 
 ## <a name="enable-byok-on-your-tenant"></a>Aktivera BYOK för klientorganisationen
 
-Du aktiverar BYOK på klientorganisationsnivå med PowerShell genom att först introducera de krypteringsnycklar du skapade och lagrade i Azure Key Vault för Power BI-klientorganisationen. Sedan tilldelar du krypteringsnycklarna per Premium-kapacitet för kryptering av innehållet i kapaciteten.
+Du aktiverar BYOK på klientorganisationsnivå med [PowerShell](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt.Admin) genom att först introducera de krypteringsnycklar du skapade och lagrade i Azure Key Vault för Power BI-klientorganisationen. Sedan tilldelar du krypteringsnycklarna per Premium-kapacitet för kryptering av innehållet i kapaciteten.
 
 ### <a name="important-considerations"></a>Att tänka på
 
@@ -98,35 +97,39 @@ Innan du aktiverar BYOK måste du ha följande i åtanke:
 
 ### <a name="enable-byok"></a>Aktivera BYOK
 
-När du ska aktivera BYOK måste du vara klientorganisationsadministratör för Power BI-tjänsten och vara inloggad med cmdleten `Connect-PowerBIServiceAccount`. Använd sedan `Add-PowerBIEncryptionKey` till att aktivera BYOK, som i det här exemplet:
+När du ska aktivera BYOK måste du vara klientorganisationsadministratör för Power BI-tjänsten och vara inloggad med cmdleten `Connect-PowerBIServiceAccount`. Använd sedan [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) för att aktivera BYOK, som i det här exemplet:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
-Cmdleten tar tre växlingsparametrar som påverkar krypteringen för nuvarande och framtida kapaciteter. Som standard används ingen av växlarna:
+Cmdleten tar två växlingsparametrar som påverkar krypteringen för nuvarande och framtida kapaciteter. Som standard används ingen av växlarna:
 
 - `-Activate`: Anger att den här nyckeln ska användas för klientorganisationens alla befintliga kapaciteter.
 
 - `-Default`: Anger att den här nyckeln nu är standard för hela klientorganisationen. När du skapar en ny kapacitet ärver kapaciteten den här nyckeln.
 
-- `-DefaultAndActivate`: Anger att den här nyckeln ska användas för alla befintliga kapaciteter och de nya kapaciteter du skapar.
+Om du anger `-Default`, krypteras alla kapaciteter som skapas för den här klientorganisationenen från och med nu med den nyckel som du anger (eller en uppdaterad standardnyckel). Du kan inte ångra standardåtgärden, så du kan inte längre skapa någon Premium-kapacitet som inte använder BYOK för klientorganisationen.
 
-Om du anger `-Default` eller `-DefaultAndActivate` krypteras alla kapaciteter som skapas för klientorganisationen från och med nu med nyckeln du anger (eller en uppdaterad standardnyckel). Du kan inte ångra standardåtgärden, så du kan inte längre skapa någon Premium-kapacitet som inte använder BYOK för klientorganisationen.
-
-Du har kontroll över hur BYOK används i klientorganisationen. Om du till exempel vill kryptera en enstaka kapacitet anropar du `Add-PowerBIEncryptionKey` utan `-Activate`, `-Default` eller `-DefaultAndActivate`. Anropa sedan `Set-PowerBICapacityEncryptionKey` för den kapacitet du vill aktivera BYOK för.
+Du har kontroll över hur BYOK används i klientorganisationen. Om du till exempel vill kryptera en enstaka kapacitet anropar du `Add-PowerBIEncryptionKey` utan `-Activate` eller `-Default`. Anropa sedan `Set-PowerBICapacityEncryptionKey` för den kapacitet du vill aktivera BYOK för.
 
 ## <a name="manage-byok"></a>Hantera BYOK
 
 Power BI har ytterligare cmdletar som hjälper dig att hantera BYOK för klientorganisationen:
 
-- Använd `Get-PowerBIEncryptionKey` till att hämta nyckeln som klientorganisationen använder för närvarande:
+- Använd [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) för att hämta nyckeln som en kapacitet använder för närvarande:
+
+    ```powershell
+    Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
+    ```
+
+- Använd [`Get-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiencryptionkey) för att hämta nyckeln som klientorganisationen använder för närvarande:
 
     ```powershell
     Get-PowerBIEncryptionKey
     ```
 
-- Använd `Get-PowerBIWorkspaceEncryptionStatus` till att se om datamängderna på en arbetsyta är krypterade och om krypteringsstatusen är synkroniserad med arbetsytan:
+- Använd [`Get-PowerBIWorkspaceEncryptionStatus`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiworkspaceencryptionstatus) för att se om datamängderna på en arbetsyta är krypterade och om krypteringsstatusen är synkroniserad med arbetsytan:
 
     ```powershell
     Get-PowerBIWorkspaceEncryptionStatus -Name'Contoso Sales'
@@ -134,13 +137,13 @@ Power BI har ytterligare cmdletar som hjälper dig att hantera BYOK för kliento
 
     Observera att kryptering aktiveras på kapacitetsnivå, men att du ser krypteringsstatusen på datamängdsnivå för den angivna arbetsytan.
 
-- Använd `Set-PowerBICapacityEncryptionKey` till att uppdatera krypteringsnyckeln för Power BI-kapaciteten:
+- Använd [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) till att uppdatera krypteringsnyckeln för Power BI-kapaciteten:
 
     ```powershell
     Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
     ```
 
-- `Use Switch-PowerBIEncryptionKey` till att växla (eller _rotera_) den nyckel som för närvarande används till kryptering. Cmdleten uppdaterar helt enkelt `-KeyVaultKeyUri` för en nyckels `-Name`:
+- Använd [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) för att växla (eller _rotera_) versionen av den nyckel som används för kryptering. Cmdleten uppdaterar helt enkelt `-KeyVaultKeyUri` för en nyckels `-Name`:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

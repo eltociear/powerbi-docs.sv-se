@@ -7,27 +7,30 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/11/2019
+ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 2b89125cd2ad45bdad18bd198385e1117b5e3f16
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 70f47e4885b3abeb6ee17bea23dec35a230d57ec
+ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039411"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349315"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Översikt av exemplet för kundlönsamhet
-Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpanel, en rapport och en datauppsättning för ett företag som tillverkar marknadsföringsmaterial. Den här instrumentpanelen skapades av en ekonomichef för att visa nyckelmått om hennes fem enhetschefer, produkter, kunder och bruttomarginaler. I korthet kan hon se vilka faktorer som påverkar lönsamheten.
+Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpanel, en rapport och en datamängd för ett företag som tillverkar marknadsföringsmaterial. Den här instrumentpanelen skapades av en ekonomichef för att visa nyckelmått om hennes fem enhetschefer, produkter, kunder och bruttomarginaler. I korthet kan hon se vilka faktorer som påverkar lönsamheten.
 
-![Power BI-instrumentpanel](media/sample-customer-profitability/power-bi-dash.png)
+![Instrumentpanelen för Exemplet på kundlönsamhet](media/sample-customer-profitability/power-bi-dash.png)
 
-Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det här exemplet skapades med verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats. Data är tillgängliga i flera format: innehållsförpackning/-app, Excel-arbetsbok eller PBIX-fil för Power BI Desktop. Se [Exempel för Power BI](sample-datasets.md).
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning/-app, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
+
+De här självstudierna använder Power BI-tjänsten och innehållspaketet ”Exempel på kundlönsamhet”. Eftersom rapportupplevelserna är så lika kan du även följa med via Power BI Desktop och .pbix-exempelfilen. 
 
 ## <a name="prerequisites"></a>Förutsättningar
-Vill du hänga på? Den här självstudien använder Power BI-tjänsten och exempelinnehållspaketet ”Exempel på kundlönsamhet”. Eftersom rapportupplevelserna är så lika kan du även följa med via Power BI Desktop och .pbix-exempelfilen. Instruktioner för att ansluta till innehållspaketet och .pbix-filen beskrivs i följande avsnitt.
+
+Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](#get-the-content-pack-for-this-sample), en [.pbix-fil](#get-the-pbix-file-for-this-sample) eller en [Excel-arbetsbok](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
 
@@ -35,26 +38,23 @@ Vill du hänga på? Den här självstudien använder Power BI-tjänsten och exem
 
 2. Längst ned i vänster hörn väljer du **Hämta data**.
 
-    ![Hämta data](media/sample-datasets/power-bi-get-data.png)
+   ![Välja Hämta data](media/sample-datasets/power-bi-get-data.png)
 3. På sidan **Hämta data** väljer du **Exempel**.
 
 4. Välj **Exempel på kundlönsamhet** och sedan **Anslut**.  
 
-   ![Hämta data](media/sample-customer-profitability/get-supplier-sample.png)
+    ![Ansluta till exempel](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI importerar innehållspaketet och lägger sedan till en ny instrumentpanel, rapport och datamängd till din aktuella arbetsyta.
 
-   ![Post för Exempel på kundlönsamhet](media/sample-customer-profitability/customer-profitability-sample-entry.png)
+    ![Post för Exempel på kundlönsamhet](media/sample-customer-profitability/customer-profitability-sample-entry.png)
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Alternativt kan du ladda ned [Exempel på kundlönsamhet](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) som en .pbix-fil, som används med Power BI Desktop.
-
+Alternativt kan du ladda ned Exempel på kundlönsamhet som en [.pbix-fil](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), som används med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
 Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529781). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
-
-
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
 
@@ -69,13 +69,13 @@ I den arbetsyta där du sparade exemplet letar du upp instrumentpanelen för kun
 
     ![Paneler för ansvariga](media/sample-customer-profitability/power-bi-manager.png)
 
-- Företagets bruttomarginal är 42,5 %.
-- Det har 80 kunder.
-- Det säljer fem olika produkter.
-- Det hade sin lägsta varians i intäktsprocent i förhållande till budgeten i februari, följt av den högsta i mars.
-- De flesta av våra intäkter kommer från de östra och norra regionerna. Bruttomarginalen har aldrig överskridit budgeten, men affärsenheterna ER-0 och MA-0 kräver närmare granskning.
-- Totala intäkter för året ligger nära budgeten.
-
+   Observera följande information:
+   - Företagets bruttomarginal är 42,5 %.
+   - Det har 80 kunder.
+   - Det säljer fem olika produkter.
+   - Det hade sin lägsta varians i intäktsprocent i förhållande till budgeten i februari, följt av den högsta i mars.
+   - De flesta av våra intäkter kommer från de östra och norra regionerna. Bruttomarginalen har aldrig överskridit budgeten, men affärsenheterna ER-0 och MA-0 kräver närmare granskning.
+   - Totala intäkter för året ligger nära budgeten.
 
 ### <a name="manager-specific-dashboard-tiles"></a>Chefspecifika instrumentpaneler
 Panelerna på höger sida av instrumentpanelen ger ett poängkort för teamet. Det är viktigt för ekonomichefen att kunna följa cheferna och dessa paneler ger henne en översikt över vinsten med hjälp av bruttomarginal i %. Om trenden för bruttomarginalen % är oväntad för någon chef kan hon undersöka detta närmare.
@@ -100,8 +100,10 @@ Två paneler på den här instrumentpanelen **Mål kontra faktisk** och **Tillv�
 1. Välj någon av panelerna som fästs från Excel. Excel Online öppnas i Power BI-tjänsten.
 2. Observera att arbetsboken har tre flikar med data. Öppna **Intäkter**.
 3. Nu ska vi undersöka varför Carlos inte har nått sitt mål ännu:  
+
     a. Från skjutreglaget **Executive** väljer du **Carlos Grilo**.   
-    b. Första pivottabellen visar att Carlos intäktstillväxt för hans topprodukt Primus har gått ner 152 % från föregående år. Och diagrammet över YoY-intäktsvarians visar att han är under budget de flesta månaderna.  
+
+    b. Första pivottabellen visar att Carlos intäktstillväxt för hans topprodukt Primus har gått ner 152 % från föregående år. Diagrammet för **intäktavvikelser år för år** visar att han är under budget de flesta månaderna.  
 
     ![Pivottabell](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -129,54 +131,57 @@ Många av panelerna på instrumentpanelen för ”Exempel på kundlönsamhet” 
 ### <a name="team-scorecard-page"></a>Sidan teamresultatkort
 ![Rapportsidan Teamresultatkort](media/sample-customer-profitability/customer2.png)
 
-Nu ska vi titta på två teammedlemmar i detalj och se vilka insikter som kan uppnås. I rutan **Chef** till vänster kan du välja Andrews namn för att filtrera rapportsidan så att endast information om Andrew visas.
+Nu ska vi titta på två teammedlemmar i detalj och se vilka insikter som kan uppnås: 
 
-* En snabb KPI finns i Andrews **Intäktsstatus (år totalt)** ; den är grön, vilket innebär att han presterar bra.
-* Diagrammet **Intäkter i % av avvikelse i budget efter månad och verkställande** visar att Andrew presterar bra överlag, förutom en svacka i februari. Hans starka region är den östra. Han hanterar 49 kunder och 5 av 7 produkter. Hans bruttomarginal i % är varken den högsta eller den lägsta.
-* Diagrammet **Intäkter i år och varians i intäktsprocent mot budget efter månad** visar en stadig trend med jämn vinst. Men om du filtrerar genom att välja rutan för **centrala** i träddiagrammet för regioner ser du att Andrew endast har intäkter i mars och endast i Indiana. Är detta avsiktligt eller något som behöver undersökas?
+1. I utsnittet **Chef** till vänster kan du välja Andrews namn för att filtrera rapportsidan så att endast information om Andrew visas:
 
-Vi fortsätter till Valery. I rutan **Chef** väljer du Valerys namn för att filtrera rapportsidan så att endast data om henne visas. 
+   * En snabb KPI finns i Andrews **Intäktsstatus (år totalt)** ; den är grön, vilket innebär att han presterar bra.
+   * Diagrammet **Intäkter i % av avvikelse i budget efter månad och verkställande** visar att Andrew presterar bra överlag, förutom en svacka i februari. Hans starka region är den östra. Han hanterar 49 kunder och 5 av 7 produkter. Hans bruttomarginal i % är varken den högsta eller den lägsta.
+   * Diagrammet **Intäkter i år och varians i intäktsprocent mot budget efter månad** visar en stadig trend med jämn vinst. Men om du filtrerar genom att välja rutan för **centrala** i träddiagrammet för regioner ser du att Andrew endast har intäkter i mars och endast i Indiana. Är detta avsiktligt eller något som behöver undersökas?
 
-![Valerys data](media/sample-customer-profitability/customer3.png)
+2. Vi fortsätter till Valery. I utsnittet **Chef** väljer du Valerys namn för att filtrera rapportsidan så att endast data om henne visas. 
 
-* Lägg märke till den röda KPI:n för **Intäktsstatus (år totalt)** . Detta objekt behöver definitivt undersökas närmare.
-* Hennes intäktvarians är också oroande – hon uppfyller inte sina intäktsmarginaler.
-* Valery har bara nio kunder, hanterar endast två produkter och arbetar nästan uteslutande med kunder i den norra regionen. Den här specialiseringen kan förklara varför hennes mått fluktuerar så mycket.
-* Om du väljer rutan **Nord** i träddiagrammet ser du att Valerys bruttomarginal i den norra regionen överensstämmer med hennes övergripande marginal.
-* Om du väljer de andra rutorna för **Totala intäkter efter region** framträder något intressant: hennes bruttomarginal i % sträcker sig från 23 % till 79 %. Hennes intäktssiffror i alla regioner förutom den norra regionen är mycket starkt säsongsbaserade.
+   ![Valerys data](media/sample-customer-profitability/customer3.png)
 
-Fortsätt utforska för att ta reda på varför Valerys område inte presterar bra. Titta på regioner, andra affärsenheter och nästa sida i rapporten: **Branschmarginalanalys**.
+   * Lägg märke till den röda KPI:n för **Intäktsstatus (år totalt)** . Detta objekt behöver definitivt undersökas närmare.
+   * Hennes intäktvarians är också oroande – hon uppfyller inte sina intäktsmarginaler.
+   * Valery har bara nio kunder, hanterar endast två produkter och arbetar nästan uteslutande med kunder i den norra regionen. Den här specialiseringen kan förklara varför hennes mått fluktuerar så mycket.
+   * Om du väljer rutan **Nord** i träddiagrammet ser du att Valerys bruttomarginal i den norra regionen överensstämmer med hennes övergripande marginal.
+   * Om du väljer var och en av de andra rutorna för **Totala intäkter efter region** framträder något intressant: hennes bruttomarginal i % sträcker sig från 23 % till 79 %. Hennes intäktssiffror i alla regioner förutom den norra regionen är mycket starkt säsongsbaserade.
+
+3. Fortsätt utforska för att ta reda på varför Valerys område inte presterar bra. Titta på regioner, andra affärsenheter och nästa sida i rapporten: **Branschmarginalanalys**.
 
 ### <a name="industry-margin-analysis"></a>Branschmarginalanalys
 Den här rapporten innehåller ett annat datasnitt. Den ser ut på bruttomarginalen för hela branschen, uppdelat efter segment. Ekonomichefen använder den här sidan för att jämföra företaget och verksamhetens enhetsmått samt branschstatistiken för att förklara hennes trender och lönsamhet. Du undrar kanske varför diagrammet **Bruttomarginal % per månad och chef** är på den här sidan eftersom det är teamspecifikt. När den är här kan vi filtrera sidan efter enhetschefen.  
 
 ![Rapportsidan branschmarginalanalys](media/sample-customer-profitability/customer6.png)
 
-Hur varierar lönsamheten i olika branscher? Hur fördelas produkter och kunder i olika branscher? Få svar på dessa frågor genom att välja en eller flera branscher längst uppe till vänster (börja med CPG-branschen). Rensa filtret med hjälp av raderingsikonen.
+1. Hur varierar lönsamheten i olika branscher? Hur fördelas produkter och kunder i olika branscher? Få svar på dessa frågor genom att välja en eller flera branscher längst uppe till vänster (börja med CPG-branschen). Rensa filtret med hjälp av raderingsikonen.
 
-På bubbeldiagrammet (**Intäktsvarians i % mot budget, bruttomarginal i % samt intäkter i år per bransch**) letar ekonomichefen efter de största bubblorna, eftersom de har störst inverkan på intäkterna. Du kan enkelt se varje chefs inverkan efter branschsegment genom att filtrera sidan. Det gör du genom att klicka på varje chefs namn i områdesdiagrammet.
+2. På bubbeldiagrammet (**Intäktsavvikelse i % mot budget, bruttomarginal i % samt intäkter i år per bransch**) letar ekonomichefen efter de största bubblorna, eftersom de har störst inverkan på intäkterna. Du kan enkelt se varje chefs inverkan efter branschsegment genom att filtrera sidan. Det gör du genom att välja varje chefs namn i tur och ordning i ytdiagrammet.
 
-* Andrews inflytande omfattar många olika branschsegment med vitt spridda ändringar % (de flesta är positiva) och Var %.
-* Annelies diagram är liknande, förutom att hon endast koncentrerar sig på en handfull branschsegment med fokus på federala segment och på Gladius-produkten.
-* Carlos har ett tydligt fokus på tjänstsegmentet, med god vinst. Han har en avsevärt bättre variansprocent för tekniksegmentet, och hans nya segment, industriell, presterar exceptionellt bra jämfört med budget.
-* Tina arbetar med en handfull segment och har högst bruttomarginal i %, men de förhållandevis små bubblorna visar att hennes inverkan på företagets slutresultat är minimal.
-* Valery, som endast är ansvarig för en produkt, arbetar endast i fem branschsegment. Hennes branschpåverkan är säsongsbaserat, men skapar alltid en stor bubbla, vilket anger en betydande inverkan på företagets slutresultat. Förklarar branschsegmenten hennes negativa prestanda?
+3. Observera följande information när du markerar varje chef i diagrammet:
+   * Andrews inflytande omfattar många olika branschsegment med vitt spridda ändringar % (de flesta är positiva) och Var %.
+   * Annelies diagram är liknande, förutom att hon endast koncentrerar sig på en handfull branschsegment med fokus på federala segment och på Gladius-produkten.
+   * Carlos har ett tydligt fokus på tjänstsegmentet, med god vinst. Han har en avsevärt bättre variansprocent för tekniksegmentet, och hans nya segment, industriell, presterar exceptionellt bra jämfört med budget.
+   * Tina arbetar med en handfull segment och har högst bruttomarginal i %, men de förhållandevis små bubblorna visar att hennes inverkan på företagets slutresultat är minimal.
+   * Valery, som endast är ansvarig för en produkt, arbetar endast i fem branschsegment. Hennes branschpåverkan är säsongsbaserat, men skapar alltid en stor bubbla, vilket anger en betydande inverkan på företagets slutresultat. Förklarar branschsegmenten hennes negativa prestanda?
 
 ### <a name="executive-scorecard"></a>Chefresultatkort
-Den här sidan formateras som en Cortana-svarssida för Cortana. Läs mer i [Skapa en anpassad svarssida för Cortana](service-cortana-answer-cards.md).
+Den här sidan är formaterad som en Cortana-svarssida. Läs mer i [Skapa en anpassad svarssida för Cortana](service-cortana-answer-cards.md).
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Prova data genom att ställa frågor med frågor och svar
 För vår analys kan det vara bra att avgöra vilken bransch som står för den största omsättningen för Valery. Vi kan använda frågor och svar.
 
-1. Öppna rapporten i redigeringsvyn genom att välja **Redigera rapport**. Redigeringsvyn är endast tillgängligt om du äger rapporten. Den här vyn kallas ibland **skaparläge**. Om den här rapporten i stället hade delats endast med dig kan du inte öppna den i redigeringsvyn.
+1. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn. Redigeringsvyn är endast tillgängligt om du äger rapporten. Den här vyn kallas ibland *skaparläge*. Om den här rapporten i stället bara delas med dig, kan du inte öppna den i redigeringsvyn.
 
-2.  Från den översta menyraden väljer du **Ställ en fråga** för att öppna dialogrutan Frågor och svar.
+2.  Överst på instrumentpanelen väljer du **Ställ en fråga** för att öppna frågerutan Frågor och svar.
 
     ![Ställ en fråga om dina data](media/sample-customer-profitability/power-bi-ask-question.png)
 
-3. Skriv *totala intäkter per bransch för Valery Ushakov*. Observera hur visualiseringen uppdateras när du skriver frågan.
+3. Skriv *totala intäkter per bransch för Valery* i frågerutan. Observera hur visualiseringen uppdateras när du skriver frågan.
 
-    ![skriv en fråga i frågerutan](media/sample-customer-profitability/power-bi-qna.png)
+    ![Skriva en fråga i frågerutan](media/sample-customer-profitability/power-bi-qna.png)
 
    Som du kan se är distributionsbranschen det största intäktsområdet för Valery.
 
@@ -192,17 +197,15 @@ Vi tar en titt på distributionsbranschen.
    ![filtret för Distribution](media/sample-customer-profitability/customer7.png)
 4. Diagrammet **Bruttomarginal % per månad och chef** visar att endast Valery och Tina har kunder i den här branschen och att Valery endast arbetade med den här branschen från juni till november.   
 5. Välj **Tina** och sedan **Valery** i diagramförklaringen för **Bruttomarginal per månad och chef**. Observera att Tinas andel av diagrammet **Totala intäkter per produkt** är liten jämfört med Valerys.
-6. Du kan se faktiska intäkter genom att använda Frågor och svar för att ange *total intäkt av verkställande för distribution enligt scenariot*.  
+6. Om du vill visa faktiska intäkter väljer du rutan Frågor och svar på instrumentpanelen och skriver *totala intäkter efter chef för distribution enligt scenario*.  
 
-     ![skriv en fråga i frågerutan om du vill se liggande stapeldiagram](media/sample-customer-profitability/power-bi-qna2.png)
+     ![Skriva in en fråga i frågerutan Frågor och svar](media/sample-customer-profitability/power-bi-qna2.png)
 
     Vi kan utforska andra branscher och till och med lägga till kunder i våra visuella objekt för att förstå grunden till Valerys prestationer.
 
-Den här miljön är säker att experimentera i. Du kan alltid välja att inte spara ändringarna. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
-
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529781).
+Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
-Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om kunddata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).
+Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om kunddata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).
 
 [Exempel för Power BI](sample-datasets.md)  
