@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: ae2e4dcfe1fdcd88c3e6ff9e4942afdedf9d126b
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: 762a28d2340a691316b1aaf26b7ce62d45cc7496
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349510"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418735"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exempel på personalfrågor för Power BI: Ta en rundtur
 
-## <a name="overview-of-the-human-resources-sample"></a>Översikt över Personalfrågeexemplet
 Innehållspaketet med personalfrågeexempel innehåller en instrumentpanel, en rapport och en datamängd för en personalavdelning. I det här exemplet har personalavdelningen samma rapporteringsmodell för olika företag, även om de skiljer sig åt vad gäller bransch eller storlek. Det här exemplet granskar nya anställningar, nuvarande personal (aktiva anställda) och tidigare anställda som har lämnat företaget. Målet är att identifiera eventuella trender i anställningsstrategin. Vårt huvudmål är att förstå:
 
 * Vem vi anställer
@@ -28,7 +27,7 @@ Innehållspaketet med personalfrågeexempel innehåller en instrumentpanel, en r
 
 ![Instrumentpanel för personalfrågeexemplet](media/sample-human-resources/hr1.png)
 
-Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Aktuella data är tillgängliga i flera format: innehållsförpackning/-app, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning/-app, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
 
 De här självstudierna använder Power BI-tjänsten och innehållspaketet med personalfrågeexempel. Eftersom rapportupplevelserna är så lika kan du även följa med via Power BI Desktop och .pbix-exempelfilen. 
 
@@ -159,7 +158,7 @@ I [frågerutan Frågor och svar](power-bi-tutorial-q-and-a.md) på instrumentpan
 
    Lägg märke till att majoriteten av dåliga kvinnliga anställningar är under 30.
 
+## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
-## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om personalfrågor. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).

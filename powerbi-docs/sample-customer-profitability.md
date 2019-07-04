@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 70f47e4885b3abeb6ee17bea23dec35a230d57ec
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349315"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418754"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
 
-## <a name="overview-of-the-customer-profitability-sample"></a>Översikt av exemplet för kundlönsamhet
 Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpanel, en rapport och en datamängd för ett företag som tillverkar marknadsföringsmaterial. Den här instrumentpanelen skapades av en ekonomichef för att visa nyckelmått om hennes fem enhetschefer, produkter, kunder och bruttomarginaler. I korthet kan hon se vilka faktorer som påverkar lönsamheten.
 
 ![Instrumentpanelen för Exemplet på kundlönsamhet](media/sample-customer-profitability/power-bi-dash.png)
@@ -203,9 +202,8 @@ Vi tar en titt på distributionsbranschen.
 
     Vi kan utforska andra branscher och till och med lägga till kunder i våra visuella objekt för att förstå grunden till Valerys prestationer.
 
+## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
-## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om kunddata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).
 
-[Exempel för Power BI](sample-datasets.md)  

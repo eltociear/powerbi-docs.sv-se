@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3fc93f255d6645ffa6f15676b9a70f24326fcfdc
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: eea93888cf3a8ea5c7ca7b6eb9389cbabc79dc9c
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349266"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418716"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur
 
-## <a name="overview-of-the-it-spend-analysis-sample"></a>Översikt för exemplet för IT-utgiftsanalys
 Innehållspaketet Exempel på IT-utgiftsanalys innehåller en instrumentpanel, en rapport och en datamängd som analyserar de planerade kontra faktiska kostnaderna för IT-avdelningen. Den här jämförelsen hjälper oss att förstå hur väl företaget planerat för året och undersöka områden med stora avvikelser från planen. Företaget i det här exemplet går igenom en årlig planeringscykel och skapar kvartalsvis en ny senaste uppskattning (LE) för att analysera förändringar i IT-utgifter över räkenskapsåret.
 
 ![Instrumentpanel för Exempel på IT-utgiftsanalys](media/sample-it-spend/it1.png)
@@ -124,7 +123,7 @@ Välj **Redigera rapporten** i det övre vänstra hörnet för utforska i redige
 * Ändra visualiseringstypen för varje diagram.
 * Fäst diagram av intresse på instrumentpanelen.
 
+## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
-## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Vi hoppas att den här rundturen har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om IT-utgiftsdata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).
