@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389535"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418646"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -22,11 +22,7 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-Registrera dig för att lyssna till Power BI-experter och delta i livesända frågesessioner.
-
-**Power BI: How to Get Insights from Your Workday HR Data**
-<br>av Iman Eftekhari och Julia Paton från Agile Analytics samt Shahram Karimi från QBE Insurance
-<br>[Registrera dig för att titta den 27 juni, kl. 13:30–14:30 PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -128,6 +124,10 @@ Titta på inspelade sessioner när som helst
 
 ### <a name="partner-solutions-series"></a>Serie för partnerlösningar ###
 [Titta på den här serien](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI: How to Get Insights from Your Workday HR Data**
+<br>av Iman Eftekhari och Julia Paton från Agile Analytics samt Shahram Karimi från QBE Insurance
+<br>[Registrera dig och titta nu](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Uppnå vinn-vinn-lösningar för tillverkare och återförsäljare av förbrukningsvaror**
 <br>av Liz McCreesh från Thorogood
