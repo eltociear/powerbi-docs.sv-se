@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264473"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498976"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Använda egna krypteringsnycklar för Power BI (förhandsversion)
 
@@ -103,13 +103,22 @@ När du ska aktivera BYOK måste du vara klientorganisationsadministratör för 
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
-Cmdleten tar två växlingsparametrar som påverkar krypteringen för nuvarande och framtida kapaciteter. Som standard används ingen av växlarna:
+Om du vill lägga till flera nycklar kör du `Add-PowerBIEncryptionKey` med olika värden för -`-Name` och `-KeyVaultKeyUri`. 
 
-- `-Activate`: Anger att den här nyckeln ska användas för klientorganisationens alla befintliga kapaciteter.
+Cmdleten tar två växlingsparametrar som påverkar krypteringen för nuvarande och framtida kapaciteter. Som standard är ingen av växlarna inställda:
+
+- `-Activate`: Anger att den här nyckeln ska användas för klientorganisationens alla befintliga kapaciteter i den klientorganisation som inte redan är krypterad.
 
 - `-Default`: Anger att den här nyckeln nu är standard för hela klientorganisationen. När du skapar en ny kapacitet ärver kapaciteten den här nyckeln.
 
-Om du anger `-Default`, krypteras alla kapaciteter som skapas för den här klientorganisationenen från och med nu med den nyckel som du anger (eller en uppdaterad standardnyckel). Du kan inte ångra standardåtgärden, så du kan inte längre skapa någon Premium-kapacitet som inte använder BYOK för klientorganisationen.
+> [!IMPORTANT]
+> Om du anger `-Default`, krypteras alla kapaciteter som skapas i klientorganisationen från och med nu med den nyckel som du anger (eller en uppdaterad standardnyckel). Du kan inte ångra standardåtgärden, så du kan inte längre skapa någon Premium-kapacitet i klientorganisationen som inte använder BYOK.
+
+När du har aktiverat BYOK i klientorganisationen använder du [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) för att ange krypteringsnyckeln för en eller flera Power BI-kapaciteter:
+
+```powershell
+Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
+```
 
 Du har kontroll över hur BYOK används i klientorganisationen. Om du till exempel vill kryptera en enstaka kapacitet anropar du `Add-PowerBIEncryptionKey` utan `-Activate` eller `-Default`. Anropa sedan `Set-PowerBICapacityEncryptionKey` för den kapacitet du vill aktivera BYOK för.
 
@@ -136,12 +145,6 @@ Power BI har ytterligare cmdletar som hjälper dig att hantera BYOK för kliento
     ```
 
     Observera att kryptering aktiveras på kapacitetsnivå, men att du ser krypteringsstatusen på datamängdsnivå för den angivna arbetsytan.
-
-- Använd [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) till att uppdatera krypteringsnyckeln för Power BI-kapaciteten:
-
-    ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-    ```
 
 - Använd [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) för att växla (eller _rotera_) versionen av den nyckel som används för kryptering. Cmdleten uppdaterar helt enkelt `-KeyVaultKeyUri` för en nyckels `-Name`:
 
