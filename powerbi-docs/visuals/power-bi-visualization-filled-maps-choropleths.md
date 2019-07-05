@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839805"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299407"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Fyllda kartor (koropleter) i Power BI
 En fylld karta använder skuggning, toning eller mönster för att visa hur ett värde skiljer sig åt proportionellt på en geografisk plats eller i en region.  Du kan snabbt visa dessa relativa skillnader med skuggning som sträcker sig från ljus (mindre ofta/lägre) till mörk (mer frekvent/fler).    
@@ -70,10 +70,10 @@ I det här videoklippet skapar Kim en grundläggande karta och konverterar den t
 1. Fönstret fält, Välj den **Geo** \> **tillstånd** fältet.    
 
    ![gul bockmarkering bredvid Stat](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Konvertera diagrammet](power-bi-report-change-visualization-type.md) till en fylld karta. Observera att **Stat** nu befinner sig i **platsområdet**. Bing Maps använder fältet i **platsområdet** för att skapa kartan.  Platsen kan vara många olika giltiga platser: länder, stater, regioner, orter, postnummer och andra postkoder och så vidare. Bing Maps tillhandahåller figurer för platser runt om i världen. Power BI kan inte skapa den fyllda kartan utan en giltig post i platsområdet.  
+2. [Konvertera diagrammet](power-bi-report-change-visualization-type.md) till en fylld karta. Observera att **Stat** nu befinner sig i **platsområdet**. Bing Maps använder fältet i **platsområdet** för att skapa kartan.  Platsen kan vara många olika giltiga platser: länder, stater, regioner, orter, postnummer och andra postkoder och så vidare. Bing Maps tillhandahåller figurer för platser runt om i världen. Power BI kan inte skapa den fyllda kartan utan en giltig post i platsområdet.  
 
    ![mallar med ikonen för fylld karta markerad](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Filtrera kartan för att visa endast kontinentala USA.
+3. Filtrera kartan för att visa endast kontinentala USA.
 
    a.  Längst ned i visualiseringsfönstret hittar du området **Filter**.
 
@@ -83,21 +83,24 @@ I det här videoklippet skapar Kim en grundläggande karta och konverterar den t
    c.  Sätt en bock bredvid **Alla** och ta bort bocken bredvid **AK**.
 
    ![Listruta för stat där Alla och AK inte har markerats](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. Välj **SalesFact (Säljfakta)** \> **Sentiment** för att lägga till den till området **Färgmättnad**. Fältet i området **Färgmättnad** styr kartskuggningen.  
-   ![Sentiment i området Färgmättnad](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. Koropletkartan färgas i grönt och rött, där rött motsvarar de lägre sentimentsiffrorna och grönt de högre, positivare sentimenten.  Här har jag markerat staten Wyoming (WY) och ser att sentimenten är mycket bra, 74.  
-   ![svart dialogruta som visar stat och sentiment](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Spara rapporten](../service-report-save.md).
-##    <a name="adjust-the-color-formatting"></a>Justerar färgformateringen
-Power BI ger dig stor kontroll över hur din koropletkarta ser ut.
-1. Välj färgrollerikonen för att öppna formateringsfönstret.
+4. Välj rollerikonen för att öppna formateringsfönstret och välj  **Datafärger**.
 
-    ![Formatfönstret](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![Formatfönstret som visar alternativet Datafärger](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Välj **Datafärger** för att visa färgalternativ.
-3. Ange färger för lägsta och högsta till gul respektive blå. Lägg till lägsta och högsta värden, baserat på dina data. Experimentera med kontrollerna tills du får det utseende du vill ha. 
+5. Välj de tre lodräta punkterna och sedan **Villkorsstyrd formatering**.
 
-    ![icke avvikande färger](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![Knapp för villkorsstyrd formatering av datafärger](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Använd skärmen **Standardfärg – Datafärger** för att bestämma hur din koropletkarta ska skuggas. De alternativ som du kan välja mellan inkluderar vilket fält du ska basera skuggningen på och hur den ska tillämpas. I det här exemplet använder vi fältet **SalesFact** > **Sentiment** och anger det lägsta värdet för sentiment som rött och det högsta värdet som grönt. Värden som faller mellan de högsta och lägsta värdena kommer att ha olika nyanser av rött och grönt. Bilden längst ned på skärmen visar de olika färger som kommer att användas. 
+
+    ![Standardfärgfönster med Sentiment valt](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. Koropletkartan färgas i grönt och rött, där rött motsvarar de lägre sentimentsiffrorna och grönt de högre, positivare sentimenten.  Dra ett fält till knappbeskrivningsområdet för att visa ytterligare information.  Här jag har lagt till **sentimentgap** och markerat staten Idaho (ID) och kan se att sentimentgapet är lågt, bara 6.
+   ![koropletkarta som visar knappbeskrivningar för Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Spara rapporten](../service-report-save.md).
+
+Power BI ger dig stor kontroll över hur din koropletkarta ska se ut. Experimentera med färgkontrollerna tills det ser ut som du önskar. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
 Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2412fe72d62549277001b64121ecf9db2ea5502
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239532"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408560"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Lägg till en anpassad kolumn i Power BI Desktop
 Du kan enkelt lägga till en ny anpassad kolumn med data till din modell med hjälp av **Frågeredigeraren** i **Power BI Desktop**. Du kan skapa och ändra namn på din anpassade kolumn med enkla knappar för att skapa [M-formler](https://msdn.microsoft.com/library/mt270235.aspx) som definierar din anpassade kolumn. M-formeln har en [omfattande innehållsuppsättning med funktionsreferenser](https://msdn.microsoft.com/library/mt779182.aspx). 
@@ -68,6 +68,5 @@ Du kan också skapa en anpassad kolumn (och modifiera valfritt steg i din fråga
 Det finns andra sätt att skapa en anpassad kolumn, inklusive att skapa en kolumn baserad på exempel du anger till **Frågeredigeraren**. Se följande artikel för mer information om hur du skapar anpassade kolumner från exempel:
 
 * [Lägg till en kolumn från ett exempel i Power BI Desktop](desktop-add-column-from-example.md)
-* [Introduktion till M-formelspråket](https://msdn.microsoft.com/library/mt270235.aspx)
-* [M-funktionsreferens](https://msdn.microsoft.com/library/mt779182.aspx)  
+* [Power Query M-referens](/powerquery-m/power-query-m-reference)  
 

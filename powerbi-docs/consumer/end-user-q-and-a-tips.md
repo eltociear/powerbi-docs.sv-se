@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 97beaa749855d29f0ac559776a99f4be851489fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61048144"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408196"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tips för att ställa frågor i Frågor och svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
-Den här listan över nyckelord på den här sidan är inte fullständig.  Det bästa sättet att se om Power BI identifierar ett nyckelord är att testa att skriva det i frågerutan.  Om en term eller ett ord har tonats ned kan inte Power BI identifiera den/det.
+Listan över nyckelord på den här sidan är inte fullständig.  Det bästa sättet att se om Power BI identifierar ett nyckelord är att testa att skriva det i frågerutan.  Om en term eller ett ord har tonats ned kan inte Power BI identifiera den/det.
 
-Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har varit**, **har**, **hade**, **kommer att ha**, **gör**, **gjorde**, **gjort** **** **** .  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singularis och pluralis. 
+Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har varit**, **har**, **hade**, **kommer att ha**, **gör**, **gjorde**, **gjort** **** **** .  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singular och plural. 
 
 > [!NOTE]
 > Frågor och svar finns också tillgängligt i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile/mobile-apps-ios-qna.md).
@@ -66,23 +66,23 @@ Nedanstående lista använder presens men alla tempus kan kännas igen. Till exe
 |  |  |
 |**Högsta N**     |     (ordning, rangordning): uppifrån, längst ned, högsta, lägsta, först, sist, därefter, tidigaste, senaste, äldsta, senaste, den senaste, nästa            |
 |        |         |
-|**Visualiseringstyper**     |  alla visualiseringstyper som är inbyggda i Power BI.  Om detta är ett alternativ i fönstret Visualiseringar kan du inkludera det i din fråga.  Undantaget till detta är [anpassade visuella objekt](../power-bi-custom-visuals.md) som du har lagt till i visualiseringsfönstret manuellt.  |
+|**Visualiseringstyper**     |  alla visualiseringstyper som är inbyggda i Power BI.  Om detta är ett alternativ i fönstret Visualiseringar kan du inkludera det i din fråga.  Undantaget till den här regeln är [anpassade visuella objekt](../power-bi-custom-visuals.md) som du har lagt till i visualiseringsfönstret manuellt.  |
 |  |  Exempel: visa distrikt per månad och total försäljning som liggande diagram               |
 |        |         |
 |**Vad (relationen, kvalificerad)**  | när, var, vilken, vilket, hur många, hur mycket, hur många gånger, hur ofta, hur vanligt, belopp, kvantitet, antal, hur lång tid, vad                |
 
 ## <a name="qa-helps-you-phrase-the-question"></a>Frågor och svar hjälper dig att formulera frågan
-Frågor och svar gör sitt bästa för att förstå och besvara den ställda för. Detta sker på flera sätt. För alla dessa kan du acceptera åtgärden helt, delvis eller inte alls. När du skriver din fråga kompletterar
+Frågor och svar gör sitt bästa för att förstå och besvara den ställda för. Funktionen försöker att förstå på flera olika sätt. För alla dessa formuleringar kan du acceptera åtgärden helt, delvis eller inte alls. När du skriver din fråga kompletterar
 
-* Frågor och svar dina ord och frågor. Den använder olika strategier, inklusive att automatiskt slutföra okända ord och tidigare använda frågor som returnerade giltiga svar. Om det finns mer än ett alternativ för automatisk komplettering visas de i en listruta.
+* Frågor och svar dina ord och frågor. Den använder olika strategier, inklusive att automatiskt slutföra okända ord, lagrade frågor och tidigare använda frågor som returnerade giltiga svar. Om det finns mer än ett alternativ för automatisk komplettering visas de i en listruta.
 * rättar stavning.
-* innehåller en förhandsgranskning av svaret i form av en visualisering. Visualiseringen uppdateras efter hand som du skriver och redigerar frågan (den väntar inte på att du ska trycka på Retur).
+* innehåller en förhandsgranskning av svaret i form av ett visuellt objekt. Det visuella objektet uppdateras efter hand som du skriver och redigerar frågan (den väntar inte på att du ska trycka på Retur).
 * föreslår ersättningstermer from den underliggande datauppsättningen när du flyttar tillbaka pekaren till frågerutan.
 * ställer om frågan baserat på data i underliggande datauppsättningar. Frågor och svar ersätter orden med synonymer från den underliggande datauppsättningen. Genom att läsa omformuleringen vet du om Frågor och svar förstod din fråga eller inte. 
 * tonar ner ord som den inte förstår.
 
 ## <a name="dont-stop-now"></a>Sluta inte nu
-När Frågor och svar visar dina resultat kan du hålla igång samtalet! Använda interaktiva funktioner på visualiseringen och Frågor och svar för att få mer insikter.
+När Frågor och svar visar dina resultat kan du hålla igång samtalet! Använda det visuella objektets interaktiva funktioner och Frågor och svar för att få fler insikter.
 
 ## <a name="next-steps"></a>Nästa steg
 Gå tillbaka till [Frågor och svar i Power BI](end-user-q-and-a.md)  

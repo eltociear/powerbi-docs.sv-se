@@ -7,36 +7,36 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0a9e4986ae2f686eb8a8fd2d9fa07b169661ce60
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6a95ddd8f13be2407736c126b087723ceb5d9f31
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853475"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409152"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nya filterupplevelsen i Power BI-rapporter (förhandsversion)
 
-Filter i Power BI har nya funktioner och en ny design. När du anmäla dig till den nya filter-miljön, kan du formatera fönstret filter ska se ut som resten av rapporten. Du kan låsa och även dölja filter. När du skapar din rapport, visas inte längre gamla filterfönstret alls i fönstret visualiseringar. Du kan göra ditt filter redigering och formatering i en enda filterfönstret. 
+Filtren i Power BI har nya funktioner och en ny design. När du väljer den nya filtermiljön, kan du formatera fönstret Filter så att det ser ut som resten av rapporten. Du kan låsa och till och med dölja filter. När du skapar din rapport, visas inte längre det gamla filterfönstret alls i fönstret Visualiseringar. Du kan göra all din filterredigering och -formatering i ett enda filterfönster. 
 
 ![Ny filterupplevelse](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
 > [!NOTE]
 > Den nya filterupplevelsen finns som förhandsversion. Nya versioner kan åsidosätta den formatering som du redan har ställt in.
 
-När en rapport kan du här är vad du kan göra i fönstret ny enda filter:
+Det här är vad du kan göra i det nya fönstret för enskilda filter som rapportdesigner:
 
-- Lägg till och ta bort fält att filtrera på. 
-- Ändra filtret tillstånd.
-- Formatera och anpassa fönstret filter så att det fungerar en del av rapporten.
+- Lägga till och ta bort fält att filtrera på. 
+- Ändra filterstatusen.
+- Formatera och anpassa filterfönstret så att det känns som en del av din rapport.
 - Definiera om Filter-fönstret är öppet eller minimerat som standard när en användare öppnar rapporten.
-- Dölja hela filterfönstret eller specifika filter som du inte vill rapportkonsumenterna se.
-- Kontroll och även bokmärke synlighet, öppna och komprimerad tillståndet för fönstret filter.
+- Dölja hela filterfönstret eller specifika filter som du inte vill att rapportanvändarna ser.
+- Styra och till och med bokmärka synlighet och öppet och minimerat tillstånd för det nya filterfönstret.
 - Lås filter som du inte vill att användarna ska kunna redigera.
 
-Med den nya filter-upplevelsen kan rapportkonsumenterna även hovra över valfritt visuellt objekt att visa en skrivskyddad lista över alla filter eller utsnitt påverkar det visuella objektet.
+Med den nya filterupplevelsen kan rapportkonsumenter även hovra över valfritt visuellt objekt för att visa en skrivskyddad lista över alla filter eller utsnitt som påverkar det aktuella visuella objektet.
 
 ![Lista över filter för ett visuellt objekt](media/power-bi-report-filter-preview/power-bi-filter-visual.png)
 
@@ -56,12 +56,12 @@ Efter att du startar om Power BI Desktop så aktiveras den som standard för all
 Du kan också aktivera de nya filtrena för befintliga rapporter.
 
 1. I Power BI Desktop i en befintlig rapport väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ**
-2. I det vänstra navigeringsfältet under **aktuell fil**väljer **rapportera inställningar**.
-3. Under **filtrering upplevelse**väljer **aktivera uppdaterade filterfönstret och visa filter i sidhuvudet för visuella objekt för den här rapporten**.
+2. Under **Aktuell fil** i det vänstra navigeringsfältet väljer du **Rapportinställningar**.
+3. Under **Filtreringsupplevelse** väljer du **Aktivera det uppdaterade filterfönstret och visa filter i det visuella sidhuvudet för den här rapporten**.
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Visa filter för ett visuellt objekt i Läsläge
 
-I Läsläge kan du hovra över filterikonen för att se ett popup-fönster med alla filter, sektorer och så vidare som påverkar det visuella objektet. Formateringen av popup-fönstret är samma som filter formatering. 
+I Läsläge kan du hovra över filterikonen för att se ett popup-fönster med alla filter, sektorer och så vidare som påverkar det visuella objektet. Formateringen av popup-fönstret är densamma som för filterfönstret. 
 
 ![Filter som påverkar ett visuellt objekt](media/power-bi-report-filter-preview/power-bi-filter-per-visual.png)
 
@@ -77,39 +77,39 @@ Här är de typer av filter som den här vyn visar:
 - Inkludera/exkludera filter
 - Filter som skickas via en URL
 
-## <a name="build-the-new-filters-pane"></a>Skapa ny filterfönstret
+## <a name="build-the-new-filters-pane"></a>Skapa det nya filterfönstret
 
-När du aktiverar fönstret filter får se du den till höger på rapportsidan, formaterad som standard baserat på de aktuella inställningarna för rapporten. Du kan använda fönstret filter för att konfigurera vilka filter som ska ingå och uppdatera befintliga filter i den nya rutan. Fönstret filter visas vilka rapportkonsumenterna visas när du publicerar rapporten. 
+När du aktiverar det nya filterfönstret så ser du det till höger på rapportsidan, som standard formaterat baserat på dina aktuella rapportinställningar. Du kan använda det nya filterfönstret för att konfigurera vilka filter som ska ingå och för att uppdatera befintliga filter i det nya fönstret. Det nya filterfönstret visar vad dina rapportanvändare får se när du publicerar din rapport. 
 
-1. Som standard kan din rapportkonsumenterna se fönstret filter. Om du inte vill att se den, väljer du på ögonikonen bredvid **filter**.
+1. Dina rapportkonsumenter kan se filterfönstret som standard. Om du inte vill att de ska se det, väljer du ögonikonen bredvid **Filter**.
 
     ![Ögonikonen för Power BI-filter](media/power-bi-report-filter-preview/power-bi-filter-eye.png)
 
-2. Dra intresseområden i fönstret filter som kan sidan för att börja bygga din nya filterfönstret, eller på rapportnivå.
+2. Börja bygga ditt nya filterfönster genom att dra fält av intresse till det nya filterfönstret, som filter för visuellt objekt-, sid- eller rapportnivå.
 
-När du lägger till ett visuellt objekt en rapportarbetsytan, lägger Power BI automatiskt till ett filter till fönstret filter för varje fält i det visuella objektet. 
+När du lägger till ett visuellt objekt på en rapportarbetsyta, lägger Power BI automatiskt till ett filter i filterfönstret för varje fält i det visuella objektet. 
 
 ## <a name="lock-or-hide-filters"></a>Låsa eller dölja filter
 
 Du kan låsa eller dölja enskilda filterkort. Om du låser ett filter, kan dina rapportanvändare se men inte ändra det. Om du döljer det så kan de inte ens se det. Det är användbart att dölja filterkort om du vill dölja datarensningsfilter som exkluderar nullvärden eller oväntade värden. 
 
-- I fönstret filter, markerar eller avmarkerar du den **Zamknout filtr** eller **Dölj filter** ikonerna i ett filterkort.
+- I det nya filterfönstret markerar eller avmarkerar du ikonerna **Låsfilter** eller **Dölj filter** på ett filterkort.
 
    ![Dölj eller lås filter](media/power-bi-report-filter-preview/power-bi-filter-lock-hide.png)
 
-När du aktiverar de här inställningarna och inaktivera i fönstret filter visas ändringarna återspeglas i rapporten. Dolda filter visas inte i popup-fönstret för filter för ett visuellt objekt.
+När du aktiverar eller inaktiverar de här inställningarna i det nya filterfönstret så ser du ändringarna i rapporten. Dolda filter visas inte i popup-fönstret för filter för ett visuellt objekt.
 
-Du kan också konfigurera det nya filter ruta läget flöde med dina bokmärken i rapporten. Fönstrets status för öppna, stäng och synlighet går alla att bokmärka.
+Du kan även konfigurera statusen för det nya filterfönstret så att stämmer överens med dina rapportbokmärken. Fönstrets status för öppna, stäng och synlighet går alla att bokmärka.
  
 ## <a name="format-the-new-filters-pane"></a>Formatera det nya Filter-fönstret
 
-En stor del av denna nya upplevelse med är att du kan formatera filterfönstret för att matcha utseendet och känslan av rapporten. Du kan formatera fönstret filter på olika sätt för varje sida i rapporten. Här följer element som du kan formatera: 
+En stor del av den här nya upplevelsen är att du kan formatera filterfönstret för att matcha utseendet och känslan i din rapport. Du kan formatera filterfönstret på olika sätt för varje sida i rapporten. Här följer element som du kan formatera: 
 
 - Bakgrundsfärg
 - Bakgrundstransparens
-- Border eller inaktivera
+- Kantlinje på eller av
 - Färg på kantlinje
-- Rubrik och huvud teckensnitt, färg och storlek
+- Teckensnitt, färg och textstorlek för rubrik och huvud
 
 Du kan också formatera de här elementen för filterkort, beroende på om de används (är inställda på något) eller tillgängliga (rensade): 
 
@@ -120,10 +120,10 @@ Du kan också formatera de här elementen för filterkort, beroende på om de an
 - Teckensnitt, färg och textstorlek
 - Färg på inmatningsruta
 
-### <a name="format-the-filters-pane-and-cards"></a>Formatera filterfönstret och kort
+### <a name="format-the-filters-pane-and-cards"></a>Formatera filterfönstret och korten
 
 1. I rapporten klickar du på själva rapporten eller på bakgrunden (*skrivbordsunderlägget*) därefter går du till **Visualiseringar** och väljer **Format**. 
-    Du kan se alternativ för att formatera rapportsidan, skrivbordsunderlägg, och även filterfönstret och Filter-kort.
+    Du ser alternativ för att formatera rapportsidan, skrivbordsunderlägget och även filterfönstret och filterkort.
 
     ![Välj ikonen Format](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
@@ -136,7 +136,7 @@ Du kan också formatera de här elementen för filterkort, beroende på om de an
     ![Expandera Filter-kortet](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
 ## <a name="theming-for-filter-pane"></a>Teman för filterfönstret
-Du kan nu ändra standardinställningarna för filterfönstret med temafilen. Här är ett exempel tema kodfragment för att komma igång:
+Du kan nu ändra standardinställningarna för filterfönstret med temafilen. Här är ett avsnitt ur ett exempeltema som du kan använda för att komma igång:
 
  
 ```
@@ -209,39 +209,40 @@ Du kan nu ändra standardinställningarna för filterfönstret med temafilen. H�
 
 ## <a name="sort-the-filter-pane"></a>Sortera filterfönstret
 
-Anpassad sortering funktionen är en del av den nya upplevelsen för filter-fönstret. Rapportskapare kan dra och släpp filter för att ordna om dem i den ordning som de vill ha.
+En anpassad sorteringsfunktion ingår i det nya filterfönstret. Rapportskapare kan dra och släppa filter för att ordna om dem i den ordning som de önskar.
 
 ![Ändra sorteringsordning för filter](media/power-bi-report-filter-preview/power-bi-filter-sort.gif)
 
-Sortera standardordningen alfabetisk för filter. Starta anpassad Sorteringsläge genom att bara dra filter till en ny plats. Du kan bara sortera filter inom den nivå som de gäller för, till exempel ett visuell nivå, sidnivå och Rapportnivå filter.
+Standardordningen för sortering är alfabetisk för filter. För att börja anpassa sorteringsläget drar du bara ett filter till en ny plats. Du kan bara sortera filter inom den nivå som de gäller för, till exempel visuell nivå, sidnivå eller rapportnivå.
 
-## <a name="filters-pane-scaling"></a>Filtrerar fönstret skalning
+## <a name="filters-pane-scaling"></a>Skalning av filterfönstret
 
-Fönstret filter kan skalas med rapportsida och visuella objekt, så rapportsidan och filtrerar fönstret stanna i proportion med varandra.
+Det nya filterfönstret kan skalas med rapportsidan och de visuella objekten så att rapportsidan och filterfönstret förblir proportionella med varandra.
 
-## <a name="improved-filters-pane-accessibility"></a>Förbättrad filter rutan hjälpmedel
+## <a name="improved-filters-pane-accessibility"></a>Förbättrad åtkomst till filterfönstret
 
-Vi har förbättrat tangentbordsnavigering för fönstret filter. Du kan växla mellan alla delar i fönstret filter och Använd kontext-tangenten på tangentbordet eller SKIFT + F10 för att öppna snabbmenyn.
+Vi har förbättrat tangentbordsnavigeringen för det nya filterfönstret. Du kan växla mellan alla delar i filterfönstret och använda snabbtangenten på tangentbordet eller Shift + F10 för att öppna snabbmenyn.
 
-![Filter rutan hjälpmedel](media/power-bi-report-filter-preview/power-bi-filter-accessible.png)
+![Åtkomst till filterfönstret](media/power-bi-report-filter-preview/power-bi-filter-accessible.png)
 
-## <a name="rename-filters"></a>Byt namn på filter
-När du redigerar fönstret filter kan du dubbelklicka på rubriken för att redigera den. Det är användbart om du vill uppdatera filterkortet så att det är mer användbar för dina slutanvändare att byta namn på. Tänk på att byta namn på filterkortet har *inte* Byt namn på visningsnamnet för fält i fältlistan. Det ändrar bara visningsnamnet används i filterkort.
+## <a name="rename-filters"></a>Byta namn på filter
+När du redigerar filterfönstret kan du dubbelklicka på rubriken för att redigera den. Att kunna byta namn är användbart om du vill uppdatera filterkortet så att det verkar mer logiskt för dina slutanvändare. Tänk på att namnbytet för filterkortet *inte* medför att namnet på visningsnamnet för fältet i fältlistan ändras. Det ändrar bara det visningsnamn som används på filterkortet.
 
-![Byt namn på ett filter](media/power-bi-report-filter-preview/power-bi-filter-rename.png)
+![Byta namn på ett filter](media/power-bi-report-filter-preview/power-bi-filter-rename.png)
 
-## <a name="restrict-changes-to-filter-type"></a>Begränsa ändringar för att filtrera typ
+## <a name="restrict-changes-to-filter-type"></a>Begränsa ändringar efter filtertyp
 
-Upplev i rapportinställningarna har du möjlighet att styra om användare kan ändra vilken filtertyp under filtrera.
+Under avsnittet Filtreringsupplevelse i rapportinställningarna har du möjlighet att styra om användare ska kunna ändra filtertypen.
 
-![Begränsa föränderliga filtertyp](media/power-bi-report-filter-preview/power-bi-filter-restrict-change.png)
+![Begränsa ändringar av filtertyp](media/power-bi-report-filter-preview/power-bi-filter-restrict-change.png)
 
 ## <a name="next-steps"></a>Nästa steg
 
-Testa den nya filterupplevelsen. Ge oss din feedback om den här funktionen och hur vi kan fortsätta att förbättra det, på den [Power BI-idéer plats](https://ideas.powerbi.com/forums/265200-power-bi). 
+Testa den nya filterupplevelsen. Lämna gärna feedback om den här funktionen och hur vi kan fortsätta att förbättra den på [Power BI:s webbplats för idéer](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 - [Så här använder du rapportfilter](consumer/end-user-report-filter.md)
 - [Filtrera och markera i rapporter](power-bi-reports-filters-and-highlighting.md)
+- [Olika typer av filter i Power BI](power-bi-report-filter-types.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

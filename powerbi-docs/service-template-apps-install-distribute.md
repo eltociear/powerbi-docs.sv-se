@@ -1,22 +1,22 @@
 ---
-title: Distribuera mallappar i organisationen – Power BI (version)
+title: Distribuera mallappar i organisationen – Power BI
 description: Läs mer om att installera, anpassa och distribuera mallappar i din organisation i Power BI.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751234"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264530"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Installera och distribuera mallappar i organisationen – Power BI (förhandsversion)
+# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installera och distribuera mallappar i organisationen – Power BI
 
 Är du Power BI-analytiker? I så fall kan du läsa den här artikeln om att installera *mallappar* och ansluta dem till många av de tjänster du använder i verksamheten, som Salesforce, Microsoft Dynamics och Google Analytics. Du kan modifiera instrumentpaneler och rapporter enligt organisationens behov och sedan distribuera dem till dina kollegor som en *app*. 
 
@@ -55,14 +55,13 @@ Välj den här länken i en webbläsare för att öppna AppSource filtrerat på 
 
 3. Bläddra eller sök efter appen och välj sedan **Hämta nu**.
 
-2. Välj **Installera** i dialogrutan.
+4. Välj **Installera** i dialogrutan.
 
-    Om du har en Power BI Pro-licens installeras appen med dess tillhörande arbetsyta. Du kan anpassa appen i arbetsytan.
+    ![Installera app](media/service-template-apps-install-distribute/power-install-dialog.png)Om du har en Power BI Pro-licens installeras appen med dess tillhörande arbetsyta. Du kan anpassa appen i arbetsytan.
 
-    När installationen är klar visas ett meddelande om att din nya app är klar. 
-
-3. Välj **Gå till app**.
-4. I **Kom igång med din nya app** väljer du ett av följande tre alternativ:
+    När installationen är klar visas ett meddelande om att din nya app är klar.
+4. Välj **Gå till app**.
+5. I **Kom igång med din nya app** väljer du ett av följande tre alternativ:
 
     ![Kom igång med din app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 
@@ -70,13 +69,22 @@ Välj den här länken i en webbläsare för att öppna AppSource filtrerat på 
     - **Anslut data**: Ändra datakällan från exempeldata till din egen datakälla. Du kan definiera om datauppsättningsparametrar och autentiseringsuppgifter för datakällan. Se [Kända begränsningar](service-template-apps-tips.md#known-limitations) i artikeln om tips för mallappar. 
     - **Gå till arbetsytan** (avancerat alternativ): du kan göra de ändringar som apputvecklaren tillåter.
 
-    Eller så kan du hoppa över den här dialogrutan och gå direkt till den tillhörande arbetsytan via **Arbetsytor** i det vänstra navigeringsfönstret.   
+    Eller så kan du hoppa över den här dialogrutan och gå direkt till den tillhörande arbetsytan via **Arbetsytor** i det vänstra navigeringsfönstret.
+    >[!NOTE]
+    >Vid installation av en mallapp installeras både en *organisationsapp* och en *apparbetsyta*. Läs mer om att [distribuera appar i Power BI](service-create-distribute-apps.md).
  
-5. Innan du delar den med dina medarbetare ansluter du till dina egna data. Du kanske också vill ändra rapporten eller instrumentpanelen så att den passar din organisation. Du kan även lägga till andra rapporter eller instrumentpaneler i det här läget.
+6. Innan du delar den med dina medarbetare ansluter du till dina egna data. Du kanske också vill ändra rapporten eller instrumentpanelen så att den passar din organisation. Du kan även lägga till andra rapporter eller instrumentpaneler i det här läget.
+
+   Om du väljer en installationslänk för en app som inte finns i AppSource, visas dialogrutan för validering där du uppmanas att bekräfta valet.
+
+   ![Installera app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+
+   >[!NOTE]
+   >Du måste begära behörighet från din administratör för att kunna installera mallappar som inte finns i AppSource. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings) för mer information.
 
 ## <a name="update-and-distribute-the-app"></a>Uppdatera och distribuera appen
 
-När du har anpassat appen för din organisation är du redo att publicera den. Stegen är desamma som för publicering av andra appar. 
+När du har anpassat appen för din organisation är du redo att publicera den. Stegen är desamma som för publicering av andra appar.
 
 1. När du är klar med anpassningen väljer du **Uppdatera app** längst upp till höger i listvyn för arbetsytan.  
 

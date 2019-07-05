@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039081"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418774"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -34,7 +34,7 @@ För att förstå hur Power BI uppdaterar dina datauppsättningar, rapporter och
 
 ### <a name="storage-modes-and-dataset-types"></a>Lagringslägen och datauppsättningstyper
 
-En Power BI-datauppsättning kan fungera i någon av följande lägen för att komma åt data från flera olika datakällor. Mer information finns i [Lagringsläge i Power BI Desktop](desktop-storage-mode.md).
+En Power BI-datauppsättning kan fungera i någon av följande lägen för att komma åt data från flera olika datakällor. Mer information finns i [lagringsläget i Power BI Desktop](desktop-storage-mode.md).
 
 - Import-läge
 - DirectQuery-läge
@@ -272,7 +272,7 @@ Du definierar frekvens och tidpunkter för att uppdatera en datauppsättning i a
 
 ![Konfigurera schemalagd uppdatering](media/refresh-data/configure-scheduled-refresh.png)
 
-När du har konfigurerat ett uppdateringsschema informeras du av inställningssidan för datauppsättningen om nästa uppdateringstid, som på skärmbilden ovan. Om du vill uppdatera data tidigare, till exempel testa din gateway och datakällskonfiguration, utför du en på begäran-uppdatering med hjälp av alternativet Uppdatera nu på datauppsättningsmenyn i det vänstra navigeringsfönstret. På begäran-uppdateringar påverkar inte nästa schemalagda uppdateringstid men de räknas mot den dagliga uppdateringsgränsen, enligt beskrivningen tidigare i den här artikeln.
+När du har konfigurerat ett uppdateringsschema informeras du av inställningssidan för datauppsättningen om nästa uppdateringstid, som på skärmbilden ovan. Om du vill uppdatera data tidigare, till exempel testa din gateway och datakällskonfiguration, utför du en på begäran-uppdatering med hjälp av alternativet **Uppdatera nu** på datauppsättningsmenyn i det vänstra navigeringsfönstret. På begäran-uppdateringar påverkar inte nästa schemalagda uppdateringstid men de räknas mot den dagliga uppdateringsgränsen, enligt beskrivningen tidigare i den här artikeln.
 
 Observera också att den konfigurerade uppdateringstiden kanske inte är en exakt tid när Power BI startar nästa schemalagda process. Power BI startar schemalagda uppdateringar efter bästa förmåga. Målet är att starta uppdateringen inom 15 minuter efter den schemalagda tiden men en fördröjning på upp till en timme kan förekomma om tjänsten inte kan allokera de nödvändiga resurserna snabbare.
 
@@ -283,7 +283,7 @@ Observera också att den konfigurerade uppdateringstiden kanske inte är en exak
 
 Som standard skickar Power BI aviseringar om misslyckad uppdatering via e-post till datauppsättningens ägare så att ägaren kan agera i god tid om det uppstår uppdateringsproblem. Power BI skickar också en avisering till dig när tjänsten inaktiverar ditt schema på grund av upprepade fel. Microsoft rekommenderar att du lämnar kryssrutan **Skicka ett e-postmeddelande om uppdateringsfel** aktiverad.
 
-Observera att Power BI inte bara skickar aviseringar om misslyckad uppdatering utan även när tjänsten pausar en schemalagd uppdatering på grund av inaktivitet. Efter två månader, när ingen användare har besökt någon instrumentpanel eller rapport som bygger på datauppsättningen, ser Power BI datauppsättningen som inaktiv. I så fall skickar Power BI ett e-postmeddelande till datauppsättningens ägare som anger att tjänsten har inaktiverat uppdateringsschemat för datauppsättningen. Se följande skärmbild för ett exempel på en sådan avisering.
+Observera att Power BI inte bara skickar aviseringar om misslyckad uppdatering utan även när tjänsten pausar en schemalagd uppdatering på grund av inaktivitet. Efter två månader, när ingen användare har besökt någon instrumentpanel eller rapport som bygger på datauppsättningen, ser Power BI datauppsättningen som inaktiv. I så fall skickar Power BI ett e-postmeddelande till datauppsättningens ägare som anger att tjänsten har pausat uppdateringsschemat för datauppsättningen. Se följande skärmbild för ett exempel på en sådan avisering.
 
 ![E-post för pausad uppdatering](media/refresh-data/email-paused-refresh.png)
 

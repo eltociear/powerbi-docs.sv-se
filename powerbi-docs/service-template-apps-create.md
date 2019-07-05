@@ -1,22 +1,22 @@
 ---
-title: Skapa mallappar i Power BI (förhandsversion)
+title: Skapa mallappar i Power BI
 description: Hur du skapar mallappar i Power BI som du kan distribuera till Power BI-kunder.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/22/2019
-ms.author: maggies
-ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751183"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264539"
 ---
-# <a name="create-a-template-app-in-power-bi-preview"></a>Skapa en mallapp i Power BI (förhandsversion)
+# <a name="create-a-template-app-in-power-bi"></a>Skapa en mallapp i Power BI
 
 Med de nya Power BI-*mallapparna* kan Power BI-partner skapa Power BI-appar med lite eller ingen kodning och sedan distribuera dem till Power BI-kunder.  Den här artikeln innehåller stegvisa instruktioner för hur du skapar en mallapp i Power BI.
 
@@ -31,20 +31,7 @@ Här följer kraven för att skapa en mallapp:
 - En [Power BI Pro-licens](service-self-service-signup-for-power-bi.md)
 - En [installation av Power BI Desktop](desktop-get-the-desktop.md) (valfritt)
 - Kunskap om [grundläggande begrepp i Power BI](service-basic-concepts.md)
-- Behörighet att skapa en mallapp. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings-preview) för mer information.
-
-## <a name="enable-app-developer-mode"></a>Aktivera läget för apputveckling
-
-För att kunna skapa en mallapp som kan distribueras till andra Power BI-klienter måste du vara i läget för apputveckling. Annars skapar du bara en app för Power BI-användare i din organisation.
-
-1. Öppna Power BI-tjänsten i en webbläsare.
-2. Gå till **Inställningar** > **Allmänt** > **Utvecklare** > **Aktivera mallappens utvecklingsläge**.
-
-    ![Skapa mallappar](media/service-template-apps-create/power-bi-dev-template-app.png)
-
-    Om du inte ser det alternativet ber du Power BI-administratören ge dig [behörighet för mallapputveckling](service-admin-portal.md#template-apps-settings-preview) i administratörsportalen.
-
-3. Välj **Tillämpa**.
+- Behörighet för att dela en mallapp offentligt. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings) för mer information.
 
 ## <a name="create-the-template-app-workspace"></a>Skapa en arbetsyta för mallappen
 
@@ -54,9 +41,9 @@ För att kunna skapa en mallapp som du kan distribuera till andra Power BI-klien
 
     ![Skapa en apparbetsyta](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. I **Skapa en app-arbetsyta**, i **Förbättrade arbetsytor i förhandsversion**, väljer du **Prova nu**.
+2. I **Skapa en apparbetsyta** väljer du **Uppgradera till ny**.
 
-    ![Prova nya arbetsytor](media/service-template-apps-create/power-bi-try-now-new-workspace.png)
+    ![Prova nya arbetsytor](media/service-template-apps-create/power-bi-upgrade-new.png)
 
 3. Ange ett namn, en beskrivning (valfritt) och en logotypbild (valfritt) för din apparbetsyta.
 
@@ -70,13 +57,13 @@ För att kunna skapa en mallapp som du kan distribuera till andra Power BI-klien
 
 ## <a name="create-the-content-in-your-template-app"></a>Skapa innehållet i din mallapp
 
-Som med en vanlig Power BI-apparbetsyta är nästa steg att skapa innehållet på arbetsytan.  I förhandsversionen av mallapparna stöder vi bara en av varje typ: en datauppsättning, en rapport och en instrumentpanel.
+Som med en vanlig Power BI-apparbetsyta är nästa steg att skapa innehållet på arbetsytan.  
 
 - [Skapa ditt Power BI-innehåll](power-bi-creator-landing.md) på apparbetsytan.
 
 Om du använder parametrar i Power Query måste du se till att de har korrekt definierad typ (till exempel Text). Typerna Any och Binary stöds inte.
 
-I [Tips för att skapa mallappar i Power BI (förhandsversion)](service-template-apps-tips.md) finns förslag på saker du kan överväga när du skapar rapporter och instrumentpaneler för din mallapp.
+I [Tips för att skapa mallappar i Power BI](service-template-apps-tips.md) finns förslag på saker du kan överväga när du skapar rapporter och instrumentpaneler för din mallapp.
 
 ## <a name="create-the-test-template-app"></a>Skapa en testmallapp
 
@@ -174,10 +161,10 @@ Lås oss gå igenom de olika stegen:
 10. När du är redo att flytta upp appen till förproduktion för ytterligare testning utanför klientorganisationen går du tillbaka till fönstret **Versionshantering** och väljer**Höj upp appen**. 
 
     ![Höj upp appen till förproduktion](media/service-template-apps-create/power-bi-template-app-promote.png)
-
     >[!NOTE]
     > När appen höjs upp blir den allmänt tillgänglig utanför organisationen.
 
+    Om du inte ser det alternativet ber du Power BI-administratören ge dig [behörighet för mallapputveckling](service-admin-portal.md#template-apps-settings) i administratörsportalen.
 11. Välj **Höj en nivå** för att bekräfta ditt val.
 12. Kopiera den nya URL:en så att du kan dela den för testning utanför din klientorganisation. Det är också den här länken du skickar för att börja distribuera app i AppSource genom att skapa ett [nytt Cloud Partner Portal-erbjudande](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Skicka endast förproduktionslänkar till Cloud Partner Portal. När appen har godkänts och du får ett meddelande om att den publicerats i AppSource kan du flytta upp paketet till produktion i Power BI.
 13. När appen är klar för produktion eller delning via AppSource går du tillbaka till fönstret **Versionshantering** och väljer **Höj upp appen** bredvid **Förproduktion**.
@@ -188,25 +175,6 @@ Lås oss gå igenom de olika stegen:
     ![App i produktion](media/service-template-apps-create/power-bi-template-app-production.png)
 
 Vi rekommenderar att du skickar appen till AppSource så att den blir allmänt tillgänglig för tusentals Power BI-användare runt om i världen. Se [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) (Power BI-programerbjudande) för mer information.
-
-## <a name="update-your-app"></a>Uppdatera din app
-
-Nu när appen är i produktion kan börja du om i testfasen, utan att det påverkar appen i produktion.
-
-1. Välj **Skapa app** i fönstret **Versionshantering**.
-2. Börja om skapandeprocessen.
-3. När du har angett **Anpassning**, **Innehåll**, **Kontroll** och **Åtkomst** väljer du **Skapa app** på nytt.
-4. Välj **Stäng** och gå tillbaka till **Versionshantering**.
-
-   Nu kan du se att du har två versioner: Versionen som är i produktion, samt en ny version i testning.
-
-    ![Två versioner av en mallapp](media/service-template-apps-create/power-bi-template-app-2-versions.png)
-
-5. När du är redo att flytta upp appen till förproduktion för ytterligare testning utanför klientorganisationen går du tillbaka till fönstret Versionshantering och väljer **Höj upp appen** bredvid **Testar**.
-6. Länken fungerar nu. Skicka den igen till Cloud Partner Portal genom att följa stegen i [Uppdatera ett erbjudande med Power BI-appen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-
->[!NOTE]
->Höj inte upp appen till produktion förrän den godkänts i Cloud Partner Portal och du har publicerat den.
 
 ## <a name="next-steps"></a>Nästa steg
 

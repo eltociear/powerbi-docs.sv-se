@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498064"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264617"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
 
@@ -28,8 +28,12 @@ Du kan bara skapa prenumerationer i Power BI-tjänsten. Du får ett e-postmeddel
 
 ## <a name="requirements"></a>Krav
 
-- **Skapa** en prenumeration är en funktion i Power BI Pro.
-- Du behöver inte redigera behörigheter för innehållet (instrumentpanel eller rapport) för att skapa en prenumeration åt dig själv men du måste ha redigeringsbehörigheter för att skapa en åt någon annan. 
+Följande kan **skapa** en prenumeration:
+
+- Användare med Power BI Pro-licens
+- Användare som visar innehåll i en Premium-arbetsyta eller -app kan också prenumerera på innehåll som finns där, även utan Power BI Pro-licens.
+
+Du behöver inte redigera behörigheter för innehållet (instrumentpanel eller rapport) för att skapa en prenumeration åt dig själv men du måste ha redigeringsbehörigheter för att skapa en åt någon annan. 
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Prenumerera på en instrumentpanel, en rapportsida eller en sidnumrerad rapport
 
@@ -87,7 +91,6 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om ägaren tar bort
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 
 * Instrumentpaneler med fler än 25 fästa paneler, eller fyra fästa liverapportsidor, kanske inte återges till fullo i prenumerationsmeddelanden som skickas till användare via e-post.  Prenumerationer på instrumentpaneler över detta antal paneler blockeras inte. Däremot betraktas de som ej stödda om du stöter på problem. Överväg att ändra dem därefter så att de omfattas av stöd.
-* Det är här som prenumerationsjobbet startas. I vissa scenarier kan det kan ta några minuter tills e-postmeddelandet dyker upp i din inkorg.
 * I sällsynta fall kan e-postprenumerationer ta längre tid än 15 minuter at levereras till mottagarna. Om detta inträffar rekommenderar vi att du kör datauppdateringen och e-postprenumerationen vid olika tider för att säkerställa leverans i tid. Om problemet kvarstår kontaktar du supporten för Power BI.
 * För e-postprenumerationer på instrumentpaneler visas inte paneler som har säkerhet på radnivå (RLS) tillämpat.  
 * För e-postprenumerationer på rapporter kan du skapa en prenumeration åt dig själv om datamängden använder RLS. Du kan inte skapa prenumerationer åt andra på en rapport med säkerhet på radnivå (RLS) tillämpat.

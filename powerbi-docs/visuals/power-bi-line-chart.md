@@ -3,72 +3,87 @@ title: Linjediagram i Power BI
 description: Linjediagram i Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0654dccf55b1e13f26d8ecaabee0349f0e56afc6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4b2c7c237393fd0a8e76b7ca27987c479b5c411d
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65535800"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408634"
 ---
 # <a name="line-charts-in-power-bi"></a>Linjediagram i Power BI
-Ett linjediagram är en serie datapunkter som representeras av punkter och anslutna via raka linjer. Ett linjediagram kan innehålla en eller flera rader. Linjediagram har ett X och Y-axeln. 
+Ett linjediagram är en serie datapunkter som representeras av prickar som är anslutna via raka linjer. Ett linjediagram kan innehålla en eller flera linjer. Linjediagram har en X- och en Y-axel. 
 
 ![enkelt linjediagram](media/power-bi-line-charts/power-bi-line.png)
 
 ## <a name="create-a-line-chart"></a>Skapa ett linjediagram
-Dessa anvisningar används på försäljning och marknadsföring appen att skapa ett linjediagram som visar årets försäljning efter kategori. Om du vill följa med kan du hämta exempelappen från appsource.com.
+De här anvisningarna använder appen Exempel på försäljning och marknadsföring för att skapa ett linjediagram som visar årets försäljning efter kategori. Om du vill följa med kan du hämta exempelappen från appsource.com.
 
-1. Börja med en tom rapportsida. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
+1. Börja med en tom rapportsida. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
 
-2. Från fönstret fält, Välj **salesfact (säljfakta)** \> **Totalt antal enheter**, och välj **datum** > **månad**.  Powerbi skapar ett stapeldiagram på rapportarbetsytan.
+2. I fönstret Fält väljer du **SalesFact** \> **Totalt antal enheter** och sedan **Datum** > **Månad**.  Power BI skapar ett kolumndiagram på rapportarbetsytan.
 
-    ![Välj från fönstret fält](media/power-bi-line-charts/power-bi-step1.png)
+    ![Välja från fönstret Fält](media/power-bi-line-charts/power-bi-step1.png)
 
-4. Konvertera till ett linjediagram genom att välja diagrammall rad från fönstret visualiseringar. 
+4. Konvertera till ett linjediagram genom att välja linjediagramsmallen från fönstret Visualiseringar. 
 
-    ![Konvertera till linjediagram](media/power-bi-line-charts/power-bi-convert-to-line.png)
+    ![konvertera till linjediagram](media/power-bi-line-charts/power-bi-convert-to-line.png)
    
 
-4. Filtrera din linjediagram för att visa data i flera år 2012 2014. Om din filterfönstret är komprimerat expanderar du den nu. Från fönstret fält, Välj **datum** \> **år** och dra den till fönstret filter. Släpp den under rubriken **filter på det här visuella objektet**. 
+4. Filtrera ditt linjediagram för att visa data för åren 2012–2014. Om ditt filterfönstret är minimerat expanderar du det nu. Välj **Datum** \> **År** i fönstret Fält och dra det till fönstret Filter. Släpp den under rubriken **Filter för det här visuella objektet**. 
      
-    ![rad bredvid fönstret fält](media/power-bi-line-charts/power-bi-year-filter.png)
+    ![linje bredvid fönstret Fält](media/power-bi-line-charts/power-bi-year-filter.png)
 
-    Ändra **avancerade filter** till **grundläggande filter** och välj **2012**, **2013** och **2014**.
+    Ändra **Avancerade filter** till **Grundläggande filter** och välj **2012**, **2013** och **2014**.
 
-    ![Filter för år](media/power-bi-line-charts/power-bi-filter-year.png)
+    ![Filtrera på år](media/power-bi-line-charts/power-bi-filter-year.png)
 
 6. Du kan också [justera storlek och färg för diagramtexten](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Öka teckenstorlek och ändra Y axisfont](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Öka teckenstorlek och ändra Y-axelns teckensnitt](media/power-bi-line-charts/power-bi-line-3years.png)
 
-## <a name="add-additional-lines-to-the-chart"></a>Lägga till ytterligare rader i diagrammet
-Linjediagram kan ha många olika rader. Och i vissa fall kan värdena på raderna kanske avvikande så att de inte visas tillsammans. Låt oss titta på att lägga till ytterligare rader till våra aktuella diagram och lär dig sedan att formatera diagrammet när de värden som representeras av raderna är mycket olika. 
+## <a name="add-additional-lines-to-the-chart"></a>Lägga till ytterligare linjer i diagrammet
+Linjediagram kan ha många olika linjer. Och i vissa fall kan linjernas värden vara så avvikande att de inte visas bra tillsammans. Nu ska vi titta närmare på att lägga till ytterligare linjer till vårt aktuella diagram och sedan får du lära dig att formatera diagrammet när de värden som representeras av linjerna skiljer sig åt i hög grad. 
 
-### <a name="add-additional-lines"></a>Lägg till ytterligare rader
-I stället för att titta på totalt antal enheter för alla regioner som en enda rad i diagrammet, vi dela upp till totalt antal enheter per region. Lägg till ytterligare rader genom att dra **Geo** > **Region** till brunnen förklaring.
+### <a name="add-additional-lines"></a>Lägga till ytterligare linjer
+I stället för att titta på totalt antal enheter för alla regioner som en enskild linje i diagrammet, ska vi dela upp det totala antalet enheter efter region. Lägg till ytterligare linjer genom att dra **Geo** > **Region** till området Förklaring.
 
-   ![En rad för varje region](media/power-bi-line-charts/power-bi-line-regions.png)
+   ![En linje för varje region](media/power-bi-line-charts/power-bi-line-regions.png)
 
 
-### <a name="use-two-y-axes"></a>Använd två Y-axlar
-Vad händer om du vill titta på total försäljning och Totalt antal enheter i samma schema? Försäljningssiffrorna är mycket högre än enhetsnummer, vilket gör linjediagrammet inte kan användas. Den röda linjen för totalt antal enheter visas i själva verket ska vara noll.
+### <a name="use-two-y-axes"></a>Använda två Y-axlar
+Vad händer om man vill titta på total försäljning och totalt antal enheter i samma diagram? Försäljningssiffrorna är mycket högre än antalet enheter, vilket gör linjediagrammet oanvändbart. Den röda linjen för totalt antal enheter verkar faktiskt vara noll.
 
-   ![mycket avviker värden](media/power-bi-line-charts/power-bi-diverging.png)
+   ![mycket divergerande värden](media/power-bi-line-charts/power-bi-diverging.png)
 
-Visa mycket avvikande värden i ett diagram genom att använda ett kombinationsdiagram. Du kan lära dig allt om kombinationsdiagram genom att läsa [kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md). I vårt exempel nedan har kan vi Visa försäljnings- och Totalt antal enheter tillsammans i ett diagram genom att lägga till en andra Y-axel. 
+Använd ett kombinationsdiagram för att visa mycket divergerande värden i ett diagram. Du kan lära dig allt om kombinationsdiagram genom att läsa [Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md). I vårt exempel nedan kan vi visa försäljning och totalt antal enheter tillsammans i ett diagram genom att lägga till en andra Y-axel. 
 
-   ![mycket avviker värden](media/power-bi-line-charts/power-bi-dual-axes.png)
+   ![mycket divergerande värden](media/power-bi-line-charts/power-bi-dual-axes.png)
+
+## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
+Information om hur du använder filterfönstret finns i [Lägg till ett filter i en rapport](../power-bi-report-add-filter.md).
+
+Om du väljer en datapunkt i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Om du vill följa med öppnar du fliken **Marknadsandel**.  
+
+På ett linjediagram är en enskild datapunkt skärningspunkten för en punkt på X-axeln och Y-axeln. När du väljer en datapunkt, lägger Power BI till markörer som anger vilken punkt (för en enskild linje) eller punkter (om det finns två eller fler linjer) som är källan för korsmarkeringen och korsfiltreringen av de övriga visuella objekten på rapportsidan. Om ditt visuella objekt är mycket kompakt, väljer Power BI den punkt som är närmast där du klickar på det visuella objektet.
+
+I det här exemplet har vi valt en datapunkt som omfattar juli 2014, % enheter marknadsandel R12 av 33,16 och % enheter marknadsandel av 34,74.
+
+![välja en enskild datapunkt i ett linjediagram](media/power-bi-line-charts/power-bi-single-select.png)
+
+Observera hur kolumndiagrammet är korsmarkerat och mätaren är korsfiltrerad.
+
+För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../service-reports-visual-interactions.md)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * Ett linjediagram kan inte ha dubbla Y-axlar.  Du måste använda ett kombinationsdiagram i stället.
-* I exemplen ovan har diagrammen formaterade för att öka teckenstorlek, ändra teckenfärg, lägga till axelrubriker, diagramrubrik och förklaring center, starta båda axlarna på noll och mycket mer. Formateringsfönstret (färgrollerikonen) har en till synes ändlösa uppsättning med alternativ för att göra dina diagram ser på sätt som du vill. Det bästa sättet att lära dig är att öppna formateringsfönstret och utforska.
+* I exemplen ovan har diagrammen formaterats med ökad teckenstorlek, ändrad teckenfärg, tillägg av axelrubriker, centrering av diagramrubrik och -förklaring, start för båda axlarna på noll och mycket annat. Formateringsfönstret (rollerikonen) har en till synes ändlös uppsättning alternativ för att få dina diagram att se ut som du vill. Det bästa sättet att lära sig är att öppna formateringsfönstret och börja utforska.
 
 ## <a name="next-steps"></a>Nästa steg
 

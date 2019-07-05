@@ -8,118 +8,163 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/22/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7a8c1600de65ba39b075d89f3c2d95e0b0c7cde
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6228ed70dd78ffca6cd3c8803518b2b27674576f
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051218"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389912"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Anpassa visualiseringens rubrik, bakgrund och förklaring
-I den här självstudien lär du dig några olika sätt att anpassa dina visualiseringar.   Det finns många alternativ för att anpassa dina visualiseringar. Det bästa sättet att lära dig om alla är att utforska fönstret Formatering (välj roller-ikonen).  Om du vill komma igång visar i den här artikeln hur du anpassar en visualiserings rubrik, förklaring och bakgrund.  
 
-Alla visualiseringar kan inte anpassas, [se den fullständiga listan](#list).  
+I de här självstudierna kommer du att få lära dig några olika metoder för att anpassa dina visualiseringar. Det finns många alternativ att välja mellan för att anpassa visualiseringar. Det bästa sättet att lära dig om alla är genom att utforska fönstret **Format** (välj rollerikonen). Om du vill komma igång visar i den här artikeln hur du anpassar en visualiserings rubrik, förklaring och bakgrund.
 
-Spola framåt till 4:50 i videon för en demonstration av hur du anpassar visualiseringar. Följ sedan instruktionerna under videon för att prova själv med dina egna data.
+Du kan inte anpassa alla visualiseringar. Se den [fullständiga listan](#visualization-types-that-you-can-customize) över visualiseringar för mer information.
+
+Spola framåt till 4:50 i videon för en demonstration av hur du anpassar visualiseringar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-### <a name="prerequisites"></a>Förutsättningar
+Följ sedan instruktionerna nedan för att prova själv med dina egna data.
+
+## <a name="prerequisites"></a>Förutsättningar
+
 - Power BI-tjänsten eller Power BI Desktop
-- Exempel på detaljhandelsanalys
+
+- Rapporten Exempel på detaljhandelsanalys
 
 ## <a name="customize-visualization-titles-in-reports"></a>Anpassa visualiseringstitlar i rapporter
-Logga in till Power BI-tjänsten (app.powerbi.com) och [öppna rapporten Exempel på detaljhandelsanalys](../sample-datasets.md) i [Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
+
+Om du vill följa med loggar du in till [Power BI-tjänsten](https://app.powerbi.com) och öppnar rapporten [Exempel på detaljhandelsanalys](../sample-datasets.md) i vyn [Redigera rapport](../service-interact-with-a-report-in-editing-view.md).
 
 > [!NOTE]
-> När du fäster en visualisering på en instrumentpanel blir den en panel på instrumentpanelen.  Panelerna själva kan också anpassas med [nya rubriker och bildtexter, hyperlänkar samt ändra storlek](../service-dashboard-edit-tile.md).
-> 
-> 
+> När du fäster en visualisering på en instrumentpanel blir den en panel på instrumentpanelen. Panelerna själva kan också anpassas med [nya rubriker, undertexter och hyperlänkar och du kan även ändra storleken](../service-dashboard-edit-tile.md).
 
-1. Gå till sidan ”Nya butiker” i rapporten och välj stapeldiagrammet ”Antal öppna butiker efter öppen månad...”.
-2. I visualiseringspanelen väljer du färgrollerikonen för att visa formateringsalternativen.  och välj **rubrik** att expandera avsnittet.  
+1. Gå till sidan **Nya butiker** i rapporten **Exempel på detaljhandelsanalys**.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
-3. Aktivera och inaktivera **Rubrik** genom att välja på (eller av) med skjutreglaget. Lämna den **på** för tillfället.  
+1. Välj det grupperade kolumndiagrammet **Antal öppna butiker efter öppningsmånad och kedja**.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
-4. Ändra **rubriktexten** genom att skriva **Antal öppna butiker efter öppen månad** i textfältet.  
-5. Ändra **Teckenfärg** till orange och **bakgrundsfärg** till gult.
+1. I fönstret **Visualiseringar** väljer du rollerikonen för att visa formatalternativen.
 
-   * Välj i listrutan och välj en färg från **temafärger**, **Senaste färger** eller **Anpassade färger**.
-   * Välj i listrutan för att stänga färgfönstret.  
-     ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+1. Välj **Rubrik** att expandera avsnittet.
 
-   Du kan alltid återgå till sidan genom att välja **Återgå till standard** i färgfönstret.
-6. Öka textstorleken till 12.
-7. Den sista anpassningen i diagrammet är att vi ändrar rubriken så att den befinner sig i mitten. Som standard är rubriken vänsterjusterad.  
-   ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+   ![Skärmbild av fönstret Format med rollerikonen framhävd och en pil som pekar på rubriklistrutan.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 
-    I detta läge i självstudierna bör det stående stapeldiagrammets **Rubrik** se ut ungefär så här:  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+1. Flytta skjutreglaget för **Rubrik** till **På**.
 
-    Om du vill återställa alla anpassningar av rubriken som du har gjort hittills väljer du **återgå till standard** längst ned i anpassningsfönstret för **Rubrik**.  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
+   ![Skärmbild av skjutreglaget i läge På.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
+
+1. Ändra rubriken genom att ange *Antal butiker efter öppningsmånad* i fältet **Rubriktext**.
+
+1. Ändra **Teckenfärg** till orange och **Bakgrundsfärg** till gul.
+
+    1. Välj listrutan och en färg från **Temafärger**, **Senaste färger** eller **Anpassad färg**.
+
+        ![Skärmbild av alternativen Teckenfärg och Bakgrundsfärg.](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+
+    1. Välj i listrutan för att stänga färgfönstret.
+
+       Spara de ändringar som du har gjort.
+
+       Om du någon gång behöver återställa alla ändringarna, kan du återgå till standardfärgerna genom att välja **Återgå till standard** i färgfönstret.
+
+1. Öka textstorleken till **12 punkter**.
+
+1. Den sista anpassningen av diagramrubriken är att justera den så att den befinner sig i mitten av visualiseringen.
+
+    ![Skärmbild av justeringskontrollerna med centreringsalternativet markerat.](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+
+I det här steget i självstudierna ser rubriken till ditt grupperade kolumndiagram ut ungefär så här:
+
+![Skärmbild av det nykonfigurerade grupperade kolumndiagrammet.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+
+Spara de ändringar som du har gjort och gå vidare till nästa avsnitt.
+
+Om du vill återställa alla anpassningar väljer du **Återgå till standard** längst ned i anpassningsfönstret för **Rubrik**.
+
+![Skärmbild av alternativet Återgå till standard.](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
 ## <a name="customize-visualization-backgrounds"></a>Anpassa visualiseringens bakgrund
-Expandera alternativet Bakgrund i samma stapeldiagram.
 
-1. Aktivera och inaktivera bakgrunden genom att välja på (eller av) med skjutreglaget. Lämna den **på** för tillfället.
-2. Ändra bakgrundsfärgen till 74 % grå.
+Expandera alternativen för **Bakgrund** med samma grupperade kolumndiagram valt.
 
-   * Välj i listrutan och välj en grå färg från **temafärger**, **Senaste färger** eller **Anpassade färger**.
-   * Ändra genomskinligheten till 74 %.   
-     ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+1. Flytta skjutreglaget för **Bakgrund** till **På**.
 
-   Om du vill återställa alla anpassningar av bakgrunden som du har gjort hittills väljer du **återgå till standard** längst ned i anpassningsfönstret för **Bakgrund**.
+1. Välj en grå färg i listrutan.
+
+1. Ändra **genomskinligheten** till **74 %** .
+
+I det här steget i självstudierna ser bakgrunden till ditt grupperade kolumndiagram ut ungefär så här:
+
+![Skärmbild av det grupperade kolumndiagrammet med bakgrundsfärgen uppdaterad.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+
+Spara de ändringar som du har gjort och gå vidare till nästa avsnitt.
+
+Om du vill återställa alla ändringarna väljer du **Återgå till standard** längst ned i anpassningsfönstret för **Bakgrund**.
 
 ## <a name="customize-visualization-legends"></a>Anpassa visualiseringens förklaringar
-1. Öppna rapportsidan **Översikt** och välj diagrammet”Total Sales Variance by FiscalMonth and District Manager”.
-2. Välj penselikonen för att öppna formateringsfönstret på visualiseringsfliken.  
-3. Visa **förklaring**salternativ.
 
-      ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
-4. Aktivera och inaktivera förklaringargenom att välja på (eller av) med skjutreglaget. Lämna den **på** för tillfället.
-5. Flytta förklaringen till vänster sida av visualiseringen.    
-6. Lägg till en förklaringsrubrik genom att växla **Rubrik** till **på** och skriva **Chefer** i fältet **förklaringens namn**.
-   ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+1. Öppna rapportsidan **Översikt** och välj diagrammet **Total försäljningsvarians efter FiscalMonth och distriktschef**.
 
-   Om du vill återställa alla anpassningar av förklaringen som du har gjort hittills väljer du **återgå till standard** längst ned i anpassningsfönstret för **Förklaring**.
+1. På fliken **Visualisering** väljer du rollerikonen för att öppna formatfönstret.
 
-<a name="list"></a>
+1. Visa alternativen för **Förklaring**:
 
-## <a name="visualization-types-that-can-be-customized"></a>Visualiseringstyper som kan anpassas
+      ![Skärmbild av Förklaring-alternativet.](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
+
+1. Flytta skjutreglaget för **Förklaring** till **På**.
+
+1. Flytta förklaringen till vänster sida av visualiseringen.
+
+1. Lägg till en förklaringsrubrik genom att ändra **Rubrik** till **På**.
+
+1. Ange *Chefer* i fältet **Förklaringsnamn**.
+
+I det här steget i självstudierna ser förklaringen till ditt grupperade kolumndiagram ut ungefär så här:
+
+![Skärmbild av den uppdaterade förklaringen i det grupperade kolumndiagrammet.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+
+Spara de ändringar som du har gjort och gå vidare till nästa avsnitt.
+
+Om du någonsin behöver återställa alla ändringarna väljer du **Återgå till standard** längst ned i anpassningsfönstret för **Förklaring**.
+
+## <a name="visualization-types-that-you-can-customize"></a>Visualiseringstyper som kan anpassas
+
+Här är en lista över visualiseringarna och vilka anpassningsalternativ som är tillgängliga för dem:
 
 | Visualisering | Rubrik | Bakgrund | Förklaring |
 |:--- |:--- |:--- |:--- |
-| område |ja |ja |ja |
-| stapel |ja |ja |ja |
-| kort |ja |ja |saknas |
-| flerradskort |ja |ja |saknas |
-| kolumn |ja |ja |ja |
-| kombination |ja |ja |ja |
-| toroid |ja |ja |ja |
-| ifylld karta |ja |ja |ja |
-| funnel |ja |ja |saknas |
-| gauge |ja |ja |saknas |
-| kpi |ja |ja |saknas |
-| linje |ja |ja |ja |
-| karta |ja |ja |ja |
-| matris |ja |ja |saknas |
-| cirkel |ja |ja |ja |
-| punkt |ja |ja |ja |
-| utsnitt |ja |ja |saknas |
-| tabell |ja |ja |saknas |
-| textruta |nej |ja |saknas |
-| trädkarta |ja |ja |ja |
-| vattenfall |ja |ja |ja |
+| Område | ja | ja |ja |
+| Stapel | ja | ja |ja |
+| Kort | ja | ja |saknas |
+| Flerradskort | ja | ja | saknas |
+| Kolumn | ja | ja | ja |
+| Kombination | ja | ja | ja |
+| Ring | ja | ja | ja |
+| Ifylld karta | ja | ja | ja |
+| Tratt | ja | ja | saknas |
+| Mätare | ja | ja | saknas |
+| KPI | ja | ja | saknas |
+| Linje | ja | ja | ja |
+| Karta | ja | ja | ja |
+| Matris | ja | ja | saknas |
+| Cirkel | ja | ja | ja |
+| Punkt | ja | ja | ja |
+| Utsnitt | ja | ja | saknas |
+| Tabell | ja | ja | saknas |
+| Textruta | nej | ja | saknas |
+| Trädkarta | ja | ja | ja |
+| Vattenfall | ja | ja | ja |
 
 ## <a name="next-steps"></a>Nästa steg
-[Anpassa x-axeln och y-axeln](power-bi-visualization-customize-x-axis-and-y-axis.md)  
-[Anpassa färger och axelegenskaper](service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI – grundläggande begrepp](../consumer/end-user-basic-concepts.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
+- [Anpassa egenskaper för X-axel och Y-axel](power-bi-visualization-customize-x-axis-and-y-axis.md)
+
+- [Komma igång med färgformatering och axelegenskaper](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+- [Grundläggande begrepp för Power BI-tjänstens användare](../consumer/end-user-basic-concepts.md)
+
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

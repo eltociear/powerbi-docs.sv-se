@@ -1,22 +1,22 @@
 ---
-title: Vad är Power BI-mallappar? (förhandsgranskning)
+title: Vad är Power BI-mallappar?
 description: Den här artikeln ger en översikt över Power BI-mallappar. Lär dig hur du skapar Power BI-appar med lite eller ingen kodning och distribuerar dem till Power BI-kunder.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/26/2019
-ms.author: maggies
-ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/24/2019
+ms.author: tebercov
+ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751101"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408215"
 ---
-# <a name="what-are-power-bi-template-apps-preview"></a>Vad är Power BI-mallappar? (förhandsgranskning)
+# <a name="what-are-power-bi-template-apps"></a>Vad är Power BI-mallappar?
 
 Med de nya Power BI-*mallapparna* kan Power BI-partner skapa Power BI-appar med lite eller ingen kodning och sedan distribuera dem till Power BI-kunder.  Den här artikeln ger en översikt över Power BI-mallappar.
 
@@ -37,7 +37,7 @@ Den generella processen för att utveckla och skicka in en mallapp består av fl
 | **Tre** | |  | Höj upp testpaket till förproduktion för validering utanför din Power BI-klientorganisation och skicka den till AppSource  |  | Med förproduktionspaketet skapar du ett Power BI-mallapperbjudande och påbörjar valideringsprocessen |
 | **Fyra** | |  | Höj upp förproduktionspaketet till produktion |  | Publicera |
 
-## <a name="requirements"></a>Krav
+## <a name="before-you-begin"></a>Innan du börjar
 
 Du behöver behörighet för att kunna skapa en mallapp. Se mallappinställningarna i Power BI-administratörsportalen för mer information. 
 
@@ -66,9 +66,11 @@ Här är de övergripande stegen.
 
 ## <a name="requirements"></a>Krav
 
-Du behöver behörighet för att kunna skapa en mallapp. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings-preview) för mer information. 
+Du behöver behörighet för att kunna skapa en mallapp. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings) för mer information. 
 
 För att kunna publicera en mallapp i Power BI-tjänsten och AppSource måste du uppfylla kraven för att [bli en Cloud Marketplace-utgivare](https://docs.microsoft.com/azure/marketplace/become-publisher).
+ > [!NOTE] 
+ > Inskickade mallappar hanteras i [Cloud Partner Portal](https://cloudpartner.azure.com). Använd samma registreringskonto för Microsoft Developer Center för att logga in. Du bör ha endast ett Microsoft-konto för alla dina AppSource-erbjudanden. Konton bör inte vara specifika för enskilda tjänster eller erbjudanden.
 
 ## <a name="tips"></a>Tips 
 
@@ -78,7 +80,7 @@ För att kunna publicera en mallapp i Power BI-tjänsten och AppSource måste du
 - Överväg att erbjuda en mallapp för separata unika scenarier. 
 - Aktivera dataanpassning, till exempel stöd för anpassade anslutningar och konfiguration av parametrar genom installationsprogrammet.
 
-Se [Tips för att skapa mallappar i Power BI (förhandsversion)](service-template-apps-tips.md) för fler förslag.
+Se [Tips för att skapa mallappar i Power BI](service-template-apps-tips.md) för fler förslag.
 
 ## <a name="support"></a>Support
 Använd [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support) för support under utveckling. Vi övervakar och hanterar den här webbplatsen aktivt. Kundincidenter når snabbt ett lämpligt team.

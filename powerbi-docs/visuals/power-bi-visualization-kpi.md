@@ -1,6 +1,6 @@
 ---
-title: Visuell KPI-information
-description: Skapa KPI-visualiseringar i Power BI
+title: Visuella KPI-objekt (Key Performance Indicator)
+description: Skapa Visuella KPI-objekt (Key Performance Indicator) i Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,71 +8,97 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/24/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3d197da63be256825efc44c9e97988648d049efa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8fa39c7cc57e24f0c19e1a484c0e925bfeec94f7
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61067694"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389642"
 ---
-# <a name="kpi-visuals"></a>Visuell KPI-information
-En KPI (Key Performance Indicator) är en visuell ledtråd som kommunicerar de framsteg som gjorts mot ett mätbart mål. Mer information om KPI:er finns i [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
+# <a name="key-performance-indicator-kpi-visuals"></a>Visuella KPI-objekt (Key Performance Indicator)
 
-Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
+En KPI (Key Performance Indicator) är en visuell ledtråd som kommunicerar de framsteg som gjorts mot ett mätbart mål. Mer information om KPI:er finns i [Key Performance Indicators (KPI:er) i PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
-## <a name="prerequisites"></a>Förutsättningar
-* [Power BI Desktop – helt kostnadsfritt!](https://powerbi.microsoft.com/get-started/)
-* [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-
-## <a name="when-to-use-a-kpi"></a>När du ska använda KPI:er
-KPI:er är ett bra alternativ
-
-* för att mäta framsteg (Vad ligger jag före eller efter med?)
-* för att mäta avståndet till ett mål (Hur långt före eller efter ligger jag?)   
-
-## <a name="kpi-requirements"></a>KPI-krav
-En KPI (Key Performance Indicator) baseras på ett visst mått och är utformad för att hjälpa dig att utvärdera aktuellt värde och status för ett mått jämfört med ett definierat mål. Därför kräver ett visuellt KPI-objekt ett *grundläggande* mått som utvärderas mot ett värde och ett *målmått* eller -värde samt ett *tröskelvärde* eller ett *mål*.
-
-För närvarande måste en KPI-datauppsättning innehålla målvärden för en KPI. Om din datauppsättning inte innehåller något, kan du skapa mål genom att lägga till ett Excel-blad med mål till din datamodell eller PBIX-fil.
-
-
-## <a name="how-to-create-a-kpi"></a>Så här skapar du en KPI
-Öppna [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) i Power BI Desktop. Vi ska skapa en KPI som mäter de framsteg som vi har gjort mot ett försäljningsmål.
-
-Du kan också titta på när Will visar hur du skapar ett enskilt visuellt måttobjekt: måttdiagram, kort och KPI:er.
+Du kan också titta på när Will visar hur du skapar enskilda visuella måttobjekt: måttdiagram, kort och KPI:er.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Öppna rapporten i rapportvyn och välj den gula fliken för att lägga till en ny sida.    
-2. Välj **Försäljning > Total Units This Year (Totalt antal enheter i år)** i fönstret Fält.  Det här är indikatorn.
-3. Lägg till **Tid > FiscalMonth (Räkenskapsmånad)** .  Detta representerar trenden.
-4. VIKTIGT! Sortera diagrammet efter **FiscalMonth (Räkenskapsmånad)** . När du har konverterat visualiseringen till en KPI, går det inte att sortera.
+## <a name="when-to-use-a-kpi"></a>När du ska använda KPI:er
 
-    ![](media/power-bi-visualization-kpi/power-bi-chart.png)
-5. Konvertera det visuella objektet till en KPI genom att välja KPI-ikonen i visualiseringsfönstret.
-   
-    ![](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
-6. Lägg till ett mål. Lägg till förra årets försäljning som målet. Dra **Total Units Last Year (Totalt antal enheter förra året)** till fältet **Målsättningar**.
-   
-    ![](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
-7. Du kan som alternativ formatera KPI:n genom att välja färgrollerikonen för att öppna panelen Formatering.
-   
-   * **Indikator** – styr indikatorns visningsenheter och decimalplaceringar.
-   * **Trendaxel** – när denna är **På**, visas trendaxeln som bakgrund till det visuella KPI-objektet.  
-   * **Mål** – när detta är inställt till **På**, visar det visuella objektet målet och avståndet från målet i procent.
-   * **Färgkodning > Riktning** – vissa KPI:er anses *bättre* för högre värden och vissa anses *bättre* för lägre värden. Intäkter kontra väntetid till exempel. Vanligtvis är ett högre värde för intäkter bättre jämfört med ett högre värde för väntetid. Välj **högre är bättre** och du kan även ändra färginställningarna.
+KPI:er är ett bra alternativ
 
+* för att mäta framsteg. Besvarar frågan ”Vad ligger jag före eller efter med”?.
 
-KPI:er finns även tillgängliga i Power BI-tjänsten och på dina mobila enheter – så att du kan hålla dig ansluten till din verksamhet när som helst.
+* för att mäta avståndet till ett mål. Besvarar frågan ”Hur långt före eller efter ligger jag”?.
+
+## <a name="kpi-requirements"></a>KPI-krav
+
+En designer baserar ett visuellt KPI-objekt på ett visst mått. Avsikten med KPI:et är att hjälpa dig att utvärdera det aktuella värdet och statusen för ett mått mot ett definierat mål. Ett visuellt KPI-objekt ett *grundläggande* mått som utvärderas mot ett värde och ett *målmått* eller -värde samt ett *tröskelvärde* eller *mål*.
+
+En KPI-datamängd måste innehålla målvärden för en KPI. Om din datamängd inte innehåller målvärden, kan du skapa dem genom att lägga till ett Excel-blad med mål till din datamodell eller PBIX-fil.
+
+## <a name="prerequisites"></a>Förutsättningar
+
+Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
+
+* [Power BI Desktop](https://powerbi.microsoft.com/get-started/) – helt kostnadsfritt!
+
+* [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+
+## <a name="how-to-create-a-kpi"></a>Så här skapar du en KPI
+
+Öppna [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) i Power BI Desktop. Du kommer att skapa en KPI som mäter de framsteg som du har gjort mot ett försäljningsmål.
+
+1. Öppna **Exempel på detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
+1. Välj **Försäljning > Totalt antal enheter i år** i fönstret **Fält**.  Det här värdet är indikatorn.
+
+1. Lägg till **Tid > FiscalMonth (Räkenskapsmånad)** .  Det här värdet representerar trenden.
+
+1. Välj ellipsen i det övre högra hörnet av det visuella objektet och kontrollera att Power BI sorterade kolumnerna i stigande ordning efter **FiscalMonth** (Räkenskapsmånad).
+
+    > [!IMPORTANT]
+    > När du har konverterat visualiseringen till en KPI, går det **inte** att sortera. Du måste sortera det korrekt nu.
+
+    ![Skärmbild av ellipsmenyn expanderad med Sortera stigande och FiscalMonth (Räkenskapsmånad) valda.](media/power-bi-visualization-kpi/power-bi-ascending-by-fiscal-month.png)
+
+    När ditt visuella objekt har sorterats korrekt kommer det att se ut så här:
+
+    ![Skärmbild av det visuella objektet korrekt sorterat.](media/power-bi-visualization-kpi/power-bi-chart.png)
+
+1. Konvertera det visuella objektet till en KPI genom att välja **KPI-ikonen** i fönstret **Visualisering**.
+
+    ![Skärmbild av visualiseringsfönstret med KPI-ikonen framhävd.](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
+
+1. Dra **Totalt antal enheter förra året** till fältet **Målsättningar**.
+
+    ![Skärmbild av det färdiga visuella KPI-objektet och filterfönstret med visade värden.](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
+
+1. Du kan som alternativ formatera KPI:n genom att välja färgrollerikonen för att öppna panelen Formatering.
+
+    * **Indikator** – styr indikatorns visningsenheter och decimalplaceringar.
+
+    * **Trendaxel** – när denna är **På**, visar det visuella objektet trendaxeln som bakgrund till det visuella KPI-objektet.  
+
+    * **Mål** – när detta är inställt till **På**, visar det visuella objektet målet och avståndet till målet i procent.
+
+    * **Färgkodning > Riktning** – vissa KPI:er anses som bättre för *högre* värden och andra anses som bättre för *lägre* värden. Intäkter kontra väntetid till exempel. Vanligtvis är ett högre värde för intäkter bättre jämfört med ett högre värde för väntetid. Välj **Högt är bra** och ändra eventuellt färginställningarna.
+
+KPI:er är också tillgängliga i Power BI-tjänsten och på din mobila enhet. Det ger dig möjligheten att alltid vara ansluten och uppdaterad om vad som händer i företaget.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-* Om din KPI inte ser ut som den på bilden ovan, kan det bero på att du behöver sortera efter fiscalmonth (räkenskapsmånad). Eftersom KPI:er saknar sorteringsalternativ, måste du sortera efter fiscalmonth (räkenskapsmånad) *innan* du konverterar visualiseringen till en KPI.
+
+Om din KPI inte ser ut som den på bilden ovan, kan det bero på att du inte har sorterat efter **FiscalMonth** (Räkenskapsmånad). KPI:er saknar sorteringsalternativ. Du måste börja om och sortera efter **FiscalMonth** (Räkenskapsmånad) *innan* du konverterar visualiseringen till en KPI.
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Grundläggande kartor i Power BI](power-bi-map-tips-and-tricks.md)
+* [Tips för Power BI-kartvisualiseringar](power-bi-map-tips-and-tricks.md)
 
-[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

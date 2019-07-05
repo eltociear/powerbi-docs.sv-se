@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/18/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: b671d2f55135312fb529d4b4b30af3941c525a26
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
+ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448318"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67235066"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Ansluta till datamängder med klientprogram och verktyg (förhandsversion)
 
@@ -100,6 +100,10 @@ Följande datamängder är inte tillgängliga med hjälp av XMLA-slutpunkter. De
 Följande datamängder stöds inte i Power BI-tjänsten:   
 
 - Datamängder med en live-anslutning till en Power BI-datamängd.
+
+### <a name="roles-and-role-memberships"></a>Roller och rollmedlemskap
+
+För närvarande går det inte att identifiera eller visa modellroller eller rollmedlemskap med hjälp av XMLA-slutpunkter.
 
 ## <a name="audit-logs"></a>Granskningsloggar 
 

@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61068178"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161142"
 ---
 # <a name="funnel-charts"></a>Trattdiagram
 Med ett trattdiagram kan du visualisera en linjär process med intilliggande steg. Till exempel en försäljningstratt som spårar kunderna genom stadier: Lead \> kvalificerat lead \> potentiell kund \> avtal \> avslut.  Trattens form ger en översikt över processens tillstånd.
@@ -61,7 +61,7 @@ Dessa anvisningar använder sig av Exempel på affärsmöjlighetsanalys. Om du v
 2. [Konvertera diagrammet](power-bi-report-change-visualization-type.md) till en tratt. Observera att **Försäljningssteg** är i brunnen **Grupp**. 
 3. Från fönstret **Fält** väljer du **Fakta** \> **Antal affärsmöjligheter**.
    
-    ![skapa trattdiagram](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![skapa trattdiagram](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Håll muspekaren över en stapel för att visa en mängd information.
    
    * Stegets namn

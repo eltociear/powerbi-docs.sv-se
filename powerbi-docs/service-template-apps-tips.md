@@ -1,22 +1,22 @@
 ---
-title: Tips för att skapa mallappar i Power BI (förhandsversion)
+title: Tips för att skapa mallappar i Power BI
 description: Tips om hur du kan använda frågor, datamodeller, rapporter och instrumentpaneler för att skapa bra mallappar
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/26/2019
+ms.author: tebercov
+ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514871"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408343"
 ---
-# <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Tips för att skapa mallappar i Power BI (förhandsversion)
+# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
 När du [skapar en mallapp](service-template-apps-create.md) i Power BI skapar du en arbetsyta, testar den och börjar använda den i produktionen. Andra viktiga delar är att skapa rapporten och instrumentpanelen. Vi kan bryta ned skapandeprocessen i fyra huvudsakliga delar. Att arbeta med dessa delar hjälper dig att skapa bästa möjliga mallapp:
 
@@ -24,7 +24,7 @@ När du [skapar en mallapp](service-template-apps-create.md) i Power BI skapar d
 * I **datamodellen** skapar du [relationer](desktop-create-and-manage-relationships.md), [mått](desktop-measures.md) och vanliga frågor och svar om förbättringar.  
 * **[Rapportsidorna](desktop-report-view.md)** innehåller visuella objekt och filter som ger insikter i dina data.  
 * **[Instrumentpaneler](consumer/end-user-dashboards.md)** och [paneler](service-dashboard-create.md) ger en översikt över de analyser som ingår.
-* Exempeldata gör din app kan upptäckas omedelbart efter installationen.
+* Exempeldata medför att din app kan utforskas direkt efter installationen.
 
 Du känner kanske till varje del som befintliga Power BI-funktioner. När du skapar en mallapp finns ytterligare saker att överväga för varje del. Se avsnitten nedan för mer information.
 
@@ -36,12 +36,10 @@ I mallappar används frågor som skapats i Power BI Desktop för att ansluta til
 ### <a name="connect-to-your-api"></a>Ansluta till din API
 Först måste du ansluta till ditt API från Power BI Desktop så att du kan börja skapa dina frågor.
 
-Du kan använda de datakopplingar som finns tillgängliga i Power BI Desktop till att ansluta till ditt API. Du kan använda Web Data Connector (Hämta data -> Webb) till att ansluta till din Rest API, eller OData-koppling (Hämta data -> OData-feed) för att ansluta till din OData-feed. Dessa kopplingar fungerar endast om ditt API stöder grundläggande autentisering.
+Du kan använda de datakopplingar som finns tillgängliga i Power BI Desktop för att ansluta till din API. Du kan använda Web Data Connector (Hämta data -> Webb) till att ansluta till din Rest API, eller OData-koppling (Hämta data -> OData-feed) för att ansluta till din OData-feed.
 
 > [!NOTE]
-> Om API:et använder andra autentiseringstyper som OAuth 2.0 eller Web API-nyckel, måste du utveckla en egen datakoppling som låter Power BI Desktop ansluta och autentisera till ditt API. Din anpassade anslutningsapp måste läggas till PBI-tjänsten för att det ska användas av mallen appinstallationsprogram. <br> Mer information om hur du utvecklar din egen datakoppling för din mallapp, finns i [dokumentationen om datakopplingar](https://aka.ms/DataConnectors). 
->
->
+> För närvarande har mallappar inte stöd för anpassade anslutningsappar. Vi rekommenderar dig att utforska vidare med Odatafeed Auth 2.0 som åtgärd för några av anslutningsanvändningsfallen eller att låta certifiera din anslutningsapp. Mer information om hur du utvecklar en anslutningsapp och får den certifierad finns i [dokumentationen om datakopplingar](https://aka.ms/DataConnectors).
 
 ### <a name="consider-the-source"></a>Fundera över källan
 Frågorna definierar vilka data som ingår i datamodellen. Beroende på storleken på ditt system ska dessa frågor också innehålla filter för att dina kunder ska använda en lämplig storlek som passar ditt företagsscenario.
@@ -116,40 +114,40 @@ Skapa en instrumentpanel för din mallapp genom att helt enkelt ladda upp din PB
 * Fundera över grupperingen på instrumentpanelen för olika scenarier, antingen lodrätt eller vågrätt.  
 
 ## <a name="sample-data"></a>Exempeldata
-Mall för appar som en del av appen skapas scenen omsluter cachelagrade data på arbetsytan som en del av appen:
+Mallappar packar ihop cachedata på arbetsytan som en del av appen under processen för att skapa appen:
 
-* Funktionen är att förstå funktionen och syftet med appen innan du ansluter data.
-* Skapar en upplevelse som driver installationsprogrammet för att utforska ytterligare funktioner, vilket leder till att ansluta appen datauppsättningen.
+* Hjälper den som installerar att förstå funktionerna och syftet med appen före anslutning av data.
+* Skapar en upplevelse som driver den som installerar till att utforska ytterligare appfunktioner som leder fram till anslutningen av appens datamängd.
 
-Vi rekommenderar att du har kvalitet exempeldata innan du skapar appen. Se till att apprapport och instrumentpaneler är ifyllda med data.
+Vi rekommenderar att du skaffar högkvalitativa exempeldata innan du skapar appen. Se till att apprapporten och instrumentpanelerna är ifyllda med data.
 
-## <a name="publishing-on-appsource"></a>Publicera på AppSource
-Mall för appar kan publiceras på AppSource, Följ dessa riktlinjer innan du skickar in din app på AppSource:
+## <a name="publishing-on-appsource"></a>Publicera i AppSource
+Mallappar kan publiceras i AppSource. Följ dessa riktlinjer innan du skickar in din app till AppSource:
 
-* Se till att skapa en mallapp med engagerande exempeldata som hjälper dig att förstå vad appen kan göra installationsprogrammet (tom rapport och instrumentpanelen inte är godkänd).
-Mall-appar stöder endast exempelappar för data, se till att markera kryssrutan statiska app. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Ha anvisningar för verifieringsteamet följa som innehåller autentiseringsuppgifter och parametrar som krävs för att ansluta till data.
-* Programmet måste innehålla en App-ikon i Power BI och på erbjudandet CPP. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Landningssida har konfigurerats. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Se till att följa dokumentationen på [Power BI-appen erbjudandet](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
-* En instrumentpanel är en del av din app, kontrollera att den inte är tom.
-* Installera appen via länken app innan du skickar det, se till att du kan ansluta datauppsättningen och app-upplevelse är som du har planerat.
-* Se till att ta bort alla onödiga anslutningar innan du laddar upp bpix i mallen app-arbetsytan.
-* Följ Power BI [Metodtips för rapporter och visuella objekt design](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) att uppnå högsta inverkan på användarna och godkänts för distribution.
+* Se till att du skapar en mallapp med engagerande exempeldata som kan hjälpa den som installerar att förstå vad appen kan göra (tom rapport och instrumentpanel godkänns inte).
+Mallapparna stöder bara appar med exempeldata så var noga med att markera kryssrutan för statisk app. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Ha anvisningar som valideringsteamet ska följa som innehåller autentiseringsuppgifter och parametrar som krävs för att ansluta till data.
+* Programmet måste innehålla en appikon i Power BI och i ditt CPP-erbjudande. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Landningssida konfigurerad. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Var noga med att följa dokumentationen om [Power BI-apperbjudanden](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* Om en instrumentpanel ingår i appen är det viktigt att den inte är tom.
+* Installera appen via applänken innan du skickar in den och se till att du kan ansluta datamängden och att appupplevelsen är som du har planerat.
+* Se till att ta bort alla onödiga anslutningar innan du laddar upp din bpix till mallappens arbetsyta.
+* Följ Power BI:s [Designmetodtips för rapporter och visuella objekt](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) för att få högsta inverkan på användarna och bli godkänd för distribution.
 
 ## <a name="known-limitations"></a>Kända begränsningar
 
 | Visning av aktuellt objekt | Kända begränsningar |
 |---------|---------|
 |Innehåll:  Datauppsättningar   | Det ska finnas exakt en datauppsättning. Endast de datauppsättningar som finns inbyggda i Power BI Desktop (.pbix-filer) är tillåtna. <br>Stöds ej: Datauppsättningar från andra mallar, datauppsättningar mellan arbetsytor, sidnumrerade rapporter (RDL-filer), Excel-arbetsböcker |
-|Innehåll: Instrumentpaneler | Tillåts inte i realtid paneler (d.v.s. utan stöd för push eller strömmande datauppsättningar) |
+|Innehåll: Instrumentpaneler | Realtidspaneler godkänns inte (dvs. inget stöd för push eller strömmande datamängder) |
 |Innehåll: Dataflöden | Stöds ej: Dataflöden |
 |Innehåll från filer | Endast PBIX-filer är tillåtna. <br>Stöds inte: RDL-filer (sidnumrerade rapporter), Excel-arbetsböcker   |
-| Datakällor | Datakällor som har stöd för schemalagd datauppdatering i molnet är tillåtna. <br>Stöds ej: <li> DirectQuery</li><li>Live-anslutningar (inte Azure AS)</li> <li>Lokala datakällor (personlig och företagsgateway inte stöds)</li> <li>Realtid (inget stöd för push-datauppsättning)</li> <li>Sammansatta modeller</li></ul> |
+| Datakällor | Datakällor som har stöd för schemalagd datauppdatering i molnet är tillåtna. <br>Stöds ej: <li> DirectQuery</li><li>Live-anslutningar (inte Azure AS)</li> <li>Lokala datakällor (personlig gateway och företagsgateway stöds inte)</li> <li>Realtid (pushdatamängder stöds inte)</li> <li>Sammansatta modeller</li></ul> |
 | Datauppsättning: över arbetsytor | Inga datauppsättningar över arbetsytor är tillåtna  |
 | Frågeparametrar | Stöds ej: Parametrar av typen ”Any” eller ”Binary” blockerar uppdateringsåtgärden för datauppsättningen |
 | Anpassade visuella objekt | Bara som offentligt tillgängliga anpassade visuella objekt stöds. [Anpassade visuella objekt för organisationer](power-bi-custom-visuals-organization.md) stöds inte |
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är Power BI-mallappar? (förhandsversion)](service-template-apps-overview.md)
+[Vad är Power BI-mallappar?](service-template-apps-overview.md)

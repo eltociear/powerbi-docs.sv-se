@@ -1,6 +1,6 @@
 ---
-title: Skapa en prenumeration åt dig själv eller andra på rapporter och instrumentpaneler
-description: Lär dig hur du ordnar en prenumeration åt dig och dina kollegor på en ögonblicksbild via e-post av en Power BI-rapport eller instrumentpanel.
+title: Prenumerera på rapporter och instrumentpaneler
+description: Lär dig hur du ordnar en prenumeration åt dig själv på en ögonblicksbild via e-post av en Power BI-rapport eller instrumentpanel.
 author: mihart
 ms.author: mihart
 manager: kvivek
@@ -9,16 +9,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 06/26/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497952"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408540"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
+# <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
 Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: varje dag, varje vecka eller när data uppdateras. Du kan även ange en specifik tid då Power BI skickar e-postmeddelanden eller låta den köras nu.  
 
 E-post och ögonblicksbild använder det språk som angetts i Power BI-inställningarna (se [språk och länder/regioner som stöds för Power BI](../supported-languages-countries-regions.md)). Om inget språk har definierats använder Power BI det språk som är inställt i de nationella inställningarna i din nuvarande webbläsare. Om du vill se eller ange din språkinställning klickar du på kugghjulsikonen ![kugghjulsikon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Inställningar > Allmänt > Språk**. 
@@ -29,7 +29,7 @@ När du får e-postmeddelandet innehåller det en länk med rubriken ”Gå till
 
 
 ## <a name="requirements"></a>Krav
-**Skapa** en prenumeration är en funktion i Power BI Pro.   
+Att **skapa** en prenumeration för dig själv kräver en Power BI Pro-licens. Användare som visar innehåll i en Premium-arbetsyta eller -app kan också prenumerera på innehåll som finns där, även utan Power BI Pro-licens. Att **prenumerera åt andra** är endast tillgängligt för instrumentpanelens ägare. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Prenumerera på instrumentpanel eller en rapportsida
 Oavsett om du prenumererar på en instrumentpanel eller en rapport är processerna lika. Du kan använda samma knapp för att prenumerera på Power BI-tjänstens instrumentpaneler och rapporter.
@@ -41,17 +41,15 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
    
    ![Ikonen Prenumerera](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails-newer.png)
+   ![Prenumerationsfönster](./media/end-user-subscribe/power-bi-emails-newest.png)
     
     Fönstret till vänster när du är på en instrumentpanel och väljer **Prenumerera**. Fönstret till höger när du är på en rapportsida och väljer **Prenumerera**. Om du vill prenumerera på flera sidor i en rapport väljer du **Lägg till en till prenumeration** och väljer en annan sida. 
 
 4. Aktivera eller inaktivera prenumerationen med det gula skjutreglaget.  Om du ställer in skjutreglaget på Av så tas inte prenumerationen bort. Om du vill ta bort prenumerationen så väljer du istället papperskorgen.
 
-4. Din e-postadress läggs automatiskt till i fältet **Prenumerera**. Om du vill lägga till andra i organisationen lägger du till deras e-postadresser här också. 
+5. Lägg alternativt till ett ämne och e-postmeddelandeinformation. 
 
-5. Lägg alternativt till e-postmeddelandeinformation. 
-
-5. Välj en **frekvens** för prenumerationen.  Du kan välja Varje dag, Varje vecka och Efter datauppdatering (Varje dag).  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha e-post för prenumerationen på arbetsdagar väljer du **Varje vecka** som frekvens och avmarkerar rutorna Lör och Sön.   
+5. Välj en **frekvens** för prenumerationen.  Du kan välja Varje dag, Varje vecka och Efter datauppdatering (Varje dag).  Om du bara vill få e-post för prenumerationen på vissa dagar väljer du **Varje vecka** och vilka dagar du vill få den.  Om du till exempel bara vill ha prenumerationens e-postmeddelanden på arbetsdagar, väljer du **Varje vecka** som frekvens och avmarkerar rutorna Lör och Sön.   
 
 6. Schemalägg tiden som e-postmeddelandet skickas genom att välja Varje dag eller Varje vecka som frekvens och ange en **Schemalagd** **tid** för prenumerationen.  Det är här som prenumerationsjobbet startas. I vissa scenarier kan det kan ta några minuter tills e-postmeddelandet dyker upp i din inkorg.    
 
@@ -59,7 +57,7 @@ Oavsett om du prenumererar på en instrumentpanel eller en rapport är processer
 
 8. Välj **Kör nu** om du vill granska prenumerationen och testa den.  Då skickas e-postmeddelandet till dig direkt. 
 
-8. Om allt ser bra ut väljer du **Spara och stäng**. Du och dina kollegor med prenumerationer får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapporten enligt det schema du anger. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd skickar bara ett e-postmeddelande efter den första schemalagda uppdateringen på den dagen.
+8. Om allt ser bra ut väljer du **Spara och stäng**. Du får ett e-postmeddelande och en ögonblicksbild av instrumentpanelen eller rapporten enligt det schema som du anger. Alla prenumerationer med frekvensen **Efter datauppdatering** inställd skickar bara ett e-postmeddelande efter den första schemalagda uppdateringen på den dagen.
    
    ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/end-user-subscribe/power-bi-subscribe-email.png)
    

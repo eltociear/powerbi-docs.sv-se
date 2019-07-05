@@ -8,127 +8,190 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/26/2018
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d001c75d006838f46ce40a8f81bad0a9a058b148
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61068767"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299447"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
-Om du vill se de data som används i en visualisering, [kan du visa dessa data i Power BI](service-reports-show-data.md) eller exportera data till Excel som en XLSX- eller CSV-fil. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. 
 
-Här kan du se Will exportera data från en visualisering i sin rapport, spara den som .xlsx-fil och öppna den i Excel. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
+Om du vill se de data som Power BI använder för att skapa en visualisering, [kan du visa dessa data i Power BI](service-reports-show-data.md). Du kan också exportera dessa data till Excel som en *.xlsx*- eller *.csv-fil*. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten.
+
+Här kan du se Will exportera data från en visualisering i sin rapport, spara den som *.xlsx-fil* och öppna den i Excel. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
-## <a name="from-a-visualization-on-a-power-bi-dashboard"></a>Från en visualisering på en Power BI-instrumentpanel
-1. Välj ellipserna i det övre högra hörnet i visualiseringen.
+## <a name="export-data-from-a-power-bi-dashboard"></a>Exportera data från en Power BI-instrumentpanel
 
-    ![](media/power-bi-visualization-export-data/pbi-export-tile3.png)
-2. Välj ikonen **Exportera data**.
+1. Välj ellipsen i det övre högra hörnet av visualiseringen.
 
-    ![](media/power-bi-visualization-export-data/pbi_export_dash.png)
-3. Data exporteras till en csv-fil. Om visualiseringen filtreras kommer också nedladdade data att filtreras.    
-4. Din webbläsare uppmanar dig att spara filen.  När du sparat den ska du öppna .csv-filen i Excel.
+    ![Skärmbild av en visualisering med en pil som pekar på ellipsknappen.](media/power-bi-visualization-export-data/pbi-export-tile3.png)
 
-    ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
+1. Välj ikonen **Exportera data**.
 
-## <a name="from-a-visualization-in-a-report"></a>Från en visualisering i en rapport
+    ![Skärmbild av ellipslistrutan med alternativet Exportera data framhävt.](media/power-bi-visualization-export-data/pbi_export_dash.png)
+
+1. Power BI exporterar aktuella data till en *.csv-fil*. Om du har filtrerat visualiseringen, filtrerar appen hämtade data.
+
+1. Din webbläsare uppmanar dig att spara filen.  När du har sparat *.csv-filen*, öppnar du den i Excel.
+
+    ![Skärmbild av .csv-filen där exporterade data visas.](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
+
+## <a name="export-data-from-a-report"></a>Exportera data från en rapport
+
 Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../sample-procurement.md) i redigeringsvyn. Lägg till en ny tom rapportsida. Följ stegen nedan för att lägga till en samling och ett filter på visualiseringsnivå.
 
-1. Skapa ett nytt stapeldiagram.  Från fönstret fält väljer du **Plats > Ort** och **Faktura > Rabattprocent**.  Du kan behöva flytta **Rabattprocent** till värdet. 
+1. Skapa ett nytt**staplat kolumndiagram**.
 
-    ![](media/power-bi-visualization-export-data/power-bi-export-data3.png)
-2. Ändra sammanställningen för **Rabattprocent** från **Antal** till **Medelvärde**. I värdet väljer du pilen till höger om **Rabattprocent** (det kan stå **Antal rabattprocent**) och sedan **Medelvärde**.
+1. Från fönstret **Fält** väljer du **Plats > Stad** och **Faktura > Rabattprocent**.  Du kan behöva flytta **Rabattprocent** till området **Värde**.
 
-    ![](media/power-bi-visualization-export-data/power-bi-export-data6.png)
-3. Lägg till ett filter i **Stad** att ta bort **Atlanta**.
+    ![Skärmbild av visualiseringen under uppbyggnad. Stad och mängd rabattprocent framhävs.](media/power-bi-visualization-export-data/power-bi-export-data3.png)
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data4.png)
+1. Ändra sammanställningen för **Rabattprocent** från **Antal** till **Medelvärde**. I området **Värde** väljer du pilen till höger om **Rabattprocent** (det kan stå **Mängd rabattprocent**) och sedan **Medelvärde**.
 
-   Vi är nu redo att testa båda alternativen för dataexport. 
+    ![Skärmbild av aggregeringslistan med alternativet för genomsnitt framhävt.](media/power-bi-visualization-export-data/power-bi-export-data6.png)
 
-4. Välj ellipserna i det övre högra hörnet i visualiseringen. Välj **Exportera data**.
+1. Lägg till ett filter till **Stad**, välj alla städer och ta sedan bort **Atlanta**.
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. Om din visualisering i Power BI online har en aggregering (ett exempel är om du har ändrat **Antal** till *Medelvärde*, *Summa* eller *Minimivärde*), har du två alternativ: **Sammanfattade data** och **Underliggande data**. I Power BI Desktop har du endast alternativet för **sammanfattade data**. För mer information om att förstå mängder kan du läsa [Mängder i Power BI](../service-aggregates.md).
-    ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
-6. Välj **Sammanfattade data** > **Exportera** och välj .xlsx eller .csv. Power BI exporterar data.  Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.
+    ![Skärmbild av stadsfiltret med den avmarkerade kryssrutan Atlanta, GA framhävd.](media/power-bi-visualization-export-data/power-bi-export-data4.png)
 
-   **Sammanfattade data**: Välj det här alternativet om du vill exportera data för det som visas i visualiseringen.  Den här typen av export visar bara de data (kolumner och mått) som du valt för att skapa visualiseringen.  Om visualiseringen har en aggregering exporterar du aggregerade data. Till exempel, om du har ett stapeldiagram med 4 staplar kommer du att få 4 rader med data. Sammanfattade data är tillgängliga som .xlsx och .csv.
+   Vi är nu redo att testa båda alternativen för dataexport.
 
-   I det här exemplet visar vår Excel-export en summa för varje ort. Atlanta ingår inte i resultaten eftersom vi har filtrerat det.  Den första raden i vårt kalkylblad visar de filter som användes när data extraherades från Power BI.
+1. Välj ellipsen i det övre högra hörnet av visualiseringen. Välj **Exportera data**.
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data7.png)
-7. Prova att välja **Underliggande data** > **Exportera** och välj .xlsx. Power BI exporterar data. Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.
+    ![Skärmbild av det övre högra hörnet med ellipsknappen och alternativet Exportera data framhävda.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
 
-   >[!WARNING]
-   >När du exporterar underliggande data kan användare se alla detaljerade data – alla information i datakolumnerna. Power BI administratörer kan inaktivera detta för organisationen. Om du äger datauppsättningen kan du ställa in dina egna kolumner på ”dolda” så att de inte visas i listan Fält i Desktop eller Power BI-tjänsten.
+    Om din visualisering i Power BI online har en aggregering (ett exempel är om du har ändrat **Antal** till *Medelvärde*, *Summa* eller *Minimivärde*), har du två alternativ:
 
+    - **Sammanfattade data**
 
-   **Underliggande data**: Välj det här alternativet om du vill se data i visualiseringen ***och*** ytterligare data från modellen (information finns i diagrammet nedan).  Om din visualisering har en aggregering tas den bort om du väljer *Underliggande data*. När du väljer **Exportera**, exporteras data till en xlsx-fil och webbläsaren uppmanar dig att spara filen. Öppna filen i Excel när du har sparat den.
+    - **Underliggande data**
 
-   I det här exemplet visar vår Excel-export en rad för varje Stadsrad i vår datauppsättning och rabattprocent för den posten. Med andra ord omvandlas data från en mängd till en detaljerad vy. Den första raden i vårt kalkylblad visar de filter som användes när data extraherades från Power BI.  
+    I Power BI Desktop har du endast alternativet för **sammanfattade data**. För mer information om att förstå mängder kan du läsa [Mängder i Power BI](../service-aggregates.md).
 
-   ![](media/power-bi-visualization-export-data/power-bi-export-data8.png)
+1. För **Exportera data** väljer du **Sammanfattade data** och antingen *.xlsx* eller *.csv* och sedan **Exportera**. Power BI exporterar data.
+
+    ![Skärmbild av skärmbilden Exportera data med alternativen för sammanfattade data, xlsx och export framhävda.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
+
+    Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.
+
+    **Sammanfattade data**: Välj det här alternativet om du vill exportera data för det som visas i det visuella objektet.  Den här typen av export visar bara de data (kolumner och mått) som du valt för att skapa visualiseringen.  Om visualiseringen har en aggregering exporterar du aggregerade data. Till exempel, om du har ett stapeldiagram med fyra staplar kommer du att få fyra rader med data. Sammanfattade data finns tillgängliga som *.xlsx* och *.csv*.
+
+    I det här exemplet visar vår Excel-export en summa för varje ort. Atlanta ingår inte i resultaten eftersom vi har filtrerat bort det. Den första raden i vårt kalkylblad visar de filter som Power BI använde vid extraheringen av data.
+
+    ![Skärmbild av .csv-filen där exporterade data visas.](media/power-bi-visualization-export-data/power-bi-export-data7.png)
+
+1. Prova att välja **Underliggande data**, *.xlsx* och sedan **Exportera**. Power BI exporterar data. 
+
+    > [!NOTE]
+    > Beroende på rapportinställningarna kan du ha möjlighet att exportera underliggande data.
+
+    Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.
+
+    >[!WARNING]
+    >När du exporterar underliggande data kan användare se alla detaljerade data – alla kolumner i aktuella data. Power BI-tjänsteadministratörer kan inaktivera detta för sin organisation. Om du äger datamängden kan du ställa in dina egna kolumner som **dolda** så att de inte visas i listan **Fält** i Desktop eller Power BI-tjänsten.
+
+    **Underliggande data**: Välj det här alternativet om du vill se data i visualiseringen ***och*** ytterligare data från modellen (se diagrammet nedan för mer information). Om din visualisering har en aggregering tas den bort om du väljer *Underliggande data*. När du väljer **Exportera**, exporterar Power BI aktuella data till en *xlsx-fil* och webbläsaren uppmanar dig att spara filen. Öppna filen i Excel när du har sparat den.
+
+    I det här exemplet visar Excel-exporten en rad för varje Stadsrad i vår datamängd och rabattprocenten för varje post. Power BI planar ut dina data. Det aggregerar inte dem. Den första raden i vårt kalkylblad visar de filter som Power BI använde vid extraheringen av data.  
+
+    ![Skärmbild av .csv-filen där exporterade data visas.](media/power-bi-visualization-export-data/power-bi-export-data8.png)
 
 ## <a name="export-underlying-data-details"></a>Exportera underliggande data
-Vad som visas när du väljer **Underliggande data** kan variera. Du kanske behöver hjälp från din administratör eller IT-avdelning för att förstå den här informationen. I rapportvyn i Power BI Desktop eller -tjänsten visas ett *mått* i fältlistan med en kalkylatorikon ![ikon visas](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Mått skapas i Power BI Desktop, inte i Power BI-tjänsten.
 
+Vad som visas när du väljer **Underliggande data** kan variera. Du kanske behöver hjälp från din administratör eller IT-avdelning för att förstå den här informationen. I rapportvyn i Power BI Desktop eller -tjänsten visas ett *mått* i listan **Fält** med en kalkylatorikon ![](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Power BI Desktop skapar mått. Det gör inte Power BI-tjänsten.
 
-| Visualiseringen innehåller |                                                                              Vad som visas i exporten                                                                              |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   Aggregeringar    |                                                 Den *första* aggregeringen och icke-dolda data från hela tabellen för den aggregeringen.                                                  |
-|   Aggregeringar    | Relaterade data – om det visuella objektet använder data från andra datatabeller som är *relaterade* till datatabellen som innehåller samlingen (så länge relationen är \*:1 eller 1:1). |
-|    Mått     |                                      Alla mått i visualiseringen *och* alla mått från datatabeller som innehåller något mått som används i visualiseringen.                                      |
-|    Mått     |                                       Alla icke-dolda data från tabeller som innehåller måttet (så länge relationen är \*:1 eller 1:1).                                       |
-|    Mått     |                                      Alla data från alla tabeller som är relaterade till tabeller som innehåller mått via en kedja av \*: 1 av 1:1).                                      |
-|  Endast mått  |                                                   Alla icke-dolda kolumner från alla relaterade tabeller (för att expandera måttet).                                                   |
-|  Endast mått  |                                                             Sammanfattade data för alla dubblettrader för modellmått.                                                              |
+| Visualiseringen innehåller | Vad som visas i exporten  |
+|---------------- | ---------------------------|
+| Aggregeringar | Den *första* aggregeringen och icke-dolda data från hela tabellen för den aggregeringen. |
+| Aggregeringar | Relaterade data – om det visuella objektet använder data från andra datatabeller som är *relaterade* till datatabellen som innehåller samlingen (så länge relationen är \*:1 eller 1:1). |
+| Mått | alla mått i visualiseringen *och* alla mått från datatabeller som innehåller något mått som används i visualiseringen |
+| Mått | alla icke-dolda data från tabeller som innehåller måttet (så länge relationen är \*:1 eller 1:1) |
+| Mått | alla data från alla tabeller som är relaterade till tabeller som innehåller mått via en kedja av \*: 1 av 1:1) |
+| Endast mått | alla icke-dolda kolumner från alla relaterade tabeller (för att expandera måttet) |
+| Endast mått | sammanfattade data för alla dubblettrader för modellmått |
 
 ### <a name="set-the-export-options"></a>Ange exportalternativ för
+
 Power BI-rapportdesigners styr vilka typer av alternativ för export av data som är tillgängliga för deras kunder. Alternativen är:
-- Tillåt export av endast sammanfattade data (detta är standardinställningen för nya rapporter) 
-- Tillåt export av sammanfattade och underliggande data (detta var standardinställningen före oktober 2018) 
-- Tillåt inte export av några data  
+
+- Tillåt slutanvändarna att exportera sammanfattade data från Power BI-tjänsten eller Power BI-rapportservern
+
+- Tillåt slutanvändarna att exportera sammanfattade och underliggande data från tjänsten eller rapportservern
+
+- Tillåt inte slutanvändare att exportera alla data från tjänsten eller rapportservern
 
     > [!IMPORTANT]
     > Vi rekommenderar att rapportdesigner går tillbaka till gamla rapporter och återställer exportalternativet manuellt, om det behövs.
 
-1. Starta i Power BI Desktop för att ställa in de här alternativen.
+För att ange de här alternativen:
 
-2. I det övre vänstra hörnet, väljer du alternativet **Fil** > **och alternativet** > **Inställningar**. 
+1. Börja i Power BI Desktop.
 
-3. Under **Aktuell fil**väljer du **Rapportinställningar**.
+1. I det övre vänstra hörnet, väljer du alternativet **Fil** > **och alternativet** > **Inställningar**.
+
+1. Under **AKTUELL FIL** väljer du **Rapportinställningar**.
 
     ![skrivbordsrapportinställningar](media/power-bi-visualization-export-data/desktop-report-settings.png)
 
-4. Gör ditt val från listrutan **exportera data**.
+1. Gör ditt val från avsnittet **Exportera data**.
 
-Du kan också uppdatera den här inställningen i Power BI-tjänsten.  
+Du kan också uppdatera den här inställningen i Power BI-tjänsten.
 
-Det är viktigt att observera att om Power BI-administratörens portalinställningar är i konflikt med rapportinställningarna för Exportera data, åsidosätter administratörsinställningarna inställningarna för export. 
+Det är viktigt att observera att om Power BI-administratörens portalinställningar är i konflikt med rapportinställningarna för Exportera data, åsidosätter administratörsinställningarna inställningarna för dataexport.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-* Det maximala antalet rader som kan exporteras från **Power BI Desktop** och **Power BI-tjänsten** till .csv är 30 000.
-* Det maximala antalet rader som kan exporteras till .xlsx är 150 000.
-* Export med *Underliggande data* fungerar inte om datakällan är en Analysis Services-liveanslutning och versionen som är äldre än 2016 och tabellerna i modellen inte har en unik nyckel.  
-* Export med *Underliggande data* fungerar inte om alternativet *Visa objekt utan data* är aktiverat för visualiseringen som exporteras.
-* När du använder DirectQuery är den maximala mängden data som kan exporteras 16 MB. Därmed kan mindre än det maximala antalet rader exporteras, särskilt om det finns många kolumner, data som är svåra att komprimera eller andra faktorer som påverkar filstorleken och minskar antalet rader som exporteras.
-* Om visualiseringen använder data från mer än en datatabell och det inte finns någon relation för dessa tabeller i datamodellen, exporteras endast data för den första tabellen. 
-* Anpassade visuella objekt och R-visualiseringar stöds inte för tillfället.
-* Exportera data är inte tillgängligt för användare utanför organisationen som använder en instrumentpanel som har delats med dem. 
-* I Power BI kan du byta namn på ett fält (kolumn) genom att dubbelklicka på fältet och skriva ett nytt namn.  Det här nya namnet kallas för ett *alias*. Ibland kan det hända att en Power BI-rapport innehåller duplicerade fältnamn, men eftersom Excel inte tillåter dubbletter  kommer ett alias ursprungliga fältnamn (kolumnnamn) att återställas när data exporteras till Excel.  
-* Om det finns unicode-tecken i .csv-filen, visas texten inte korrekt i Excel. Men det går bra att öppna den i Anteckningar. Valutasymboler och främmande ord är exempel på unicode-tecken. Lösningen för detta är att importera CSV-filen i Excel, i stället för att öppna CSV-filen direkt. Gör så här:
+Dessa begränsningar och överväganden gäller för Power BI Desktop och Power BI-tjänsten, inklusive Power BI Pro och Premium.
 
-  1. Öppna Excel
-  2. Från fliken **Data** väljer du **Hämta externa data** > **Från text**.
-* Power BI-administratörer har möjlighet att inaktivera export av data.
+- Om du vill exportera data från ett visuellt objekt, måste du ha [Skapa-behörighet för den underliggande datamängden](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
+-  Det maximala antal rader som **Power BI Desktop** och **Power BI-tjänsten** kan exportera till *.csv-fil* är 30 000.
+
+- Det maximala antalet rader som programmen kan exportera till en *.xlsx-fil* är 150 000.
+
+- Exportera med hjälp av *Underliggande data* fungerar inte om:
+
+  - Datakällan är en liveanslutning till Analysis Services.
+
+  - Versionen är äldre än från 2016.
+
+  - Tabellerna i modellen saknar en unik nyckel.
+    
+  -  Om en administratör eller rapportdesigner har inaktiverat den här funktionen.
+
+- Export med *Underliggande data* fungerar inte om alternativet *Visa objekt utan data* är aktiverat för den visualisering som Power BI exporterar.
+
+- När du använder DirectQuery är den maximala mängden data som Power BI kan exportera 16 MB. Ett oönskat resultat kan vara att du exporterar mindre än det maximala antalet rader. Det är troligt om
+
+    - det finns många kolumner
+
+    - det finns data som är svåra att komprimera
+
+    - andra faktorer är inblandade som påverkar filstorleken och minskar antalet rader som Power BI kan exportera.
+
+- Om visualiseringen använder data från mer än en datatabell och det inte finns någon relation för dessa tabeller i datamodellen, exporterar Power BI endast data för den första tabellen.
+
+- Anpassade visuella objekt och visuella R-objekt stöds inte för tillfället.
+
+- Exportera data är inte tillgängligt för användare utanför organisationen som använder en instrumentpanel som en intern medarbetare har delat med dem.
+
+- I Power BI kan du byta namn på ett fält (en kolumn) genom att dubbelklicka på fältet och skriva ett nytt namn. Power BI refererar till det nya namnet som ett *alias*. Ibland kan det hända att en Power BI-rapport innehåller dubbla fältnamn, men Excel tillåter inte dubbletter. Så när Power BI exporterar data till Excel, återställs ett fältalias till de ursprungliga fältnamnen (kolumnnamnen).  
+
+- Om det finns Unicode-tecken i *.csv-filen*, visas texten inte korrekt i Excel. Valutasymboler och främmande ord är exempel på Unicode-tecken. Du kan öppna filen i Anteckningar, då visas Unicode korrekt. Om du vill öppna filen i Excel, är lösningen att importera *.csv-filen*. För att importera filen till Excel:
+
+  1. Öppna Excel.
+
+  1. Gå till fliken **Data**.
+  
+  1. Välj **Hämta externa data** > **Från text**.
+  
+  1. Gå till den lokala mappen där filen lagras och välj *.csv-filen*.
+
+- Power BI-administratörer kan inaktivera export av data.
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-

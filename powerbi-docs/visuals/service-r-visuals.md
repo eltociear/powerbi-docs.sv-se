@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 587cc5b5d81ca57e809a3973c700c71a214dc045
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61389847"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389727"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Skapa visuella R-objekt i Power BI-tjänsten
 Power BI-tjänsten stöder visning av och interaktion med visuella objekt som skapats med R-skript. Visualiseringar som har skapats med R-skript, vanligtvis kallade *visuella R-objekt*, kan användas för avancerad datautformning och analyser som t.ex. prognoser som bygger på den omfattande analys- och visualiseringskraften i R.
@@ -64,7 +64,7 @@ Följande bild innehåller ett annat exempel med det felmeddelande som visas nä
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Licensiering
-Visuella R-objekt måste ha en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens för att kunna återges i rapporter, uppdateras, filtreras och korsfiltreras. Mer information om Power BI Pro-licenser och hur de skiljer sig från kostnadsfria licenser finns i [Power BI Pro-innehåll – vad är det?](../service-premium-what-is.md)
+Visuella R-objekt måste ha en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens för att kunna återges i rapporter, uppdateras, filtreras och korsfiltreras. Mer information om Power BI Pro-licenser och hur de skiljer sig från kostnadsfria licenser finns i [Power BI Pro-innehåll – vad är det?](../service-admin-purchasing-power-bi-pro.md)
 
 Användare av den kostnadsfria Power BI-versionen kan bara använda paneler som delats med dem i Premium-arbetsytor. Mer information finns i [Köpa Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
 
@@ -73,7 +73,7 @@ I följande tabell beskrivs funktionerna för visuella R-objekt baserat på lice
 
 |  |Skapa R-visualiseringar i Power BI Desktop  | Skapa PBI-tjänstrapporter med R-visualiseringar |Visa R-visualiseringar i rapporter  | Visa R-paneler på instrumentpaneler |
 |---------|---------|---------|---------|--------|
-|**Gäst** (Power BI Embedded)     |  Inte relevanta|  Inte relevanta       | Stöds ej  | Inte relevanta |
+|**Gäst** (Power BI Embedded)     |  Stöds|  Stöds ej      | Stöds endast i Premium/Azure-kapacitet  | Stöds endast i Premium/Azure-kapacitet |
 |**Ohanterad klientorganisation** (domänen är inte verifierad) | Stöds | Stöds ej |  Stöds ej |Stöds (B2B-scenario) |
 |**Hanterad klientorganisation** med kostnadsfri licens    |  Stöds       |  Stöds ej       |    Stöds endast i Premium-kapacitet    | Stöds |
 **Hanterad klientorganisation** med Pro-licens     |   Stöds      | Stöds      | Stöds    |Stöds|

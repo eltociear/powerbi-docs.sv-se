@@ -9,18 +9,20 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
+ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66838945"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345483"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Skapa en inbäddad datakälla för sidnumrerade rapporter i Power BI-tjänsten
 
 I den här artikeln får du lära dig att skapa och ändra en inbäddad datakälla för en sidnumrerad rapport i Power BI-tjänsten. Du definierar en inbäddad datakälla i en enda rapport och använder den endast i den rapporten. För närvarande måste sidnumrerade rapporter som publiceras till Power BI-tjänsten innehålla inbäddade datamängder och inbäddade datakällor. De kan anslutas till följande datakällor:
 
-- Azure SQL Database och Data Warehouse
+- Azure Analysis Services
+- Azure SQL Database och 
+- Azure SQL Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -28,7 +30,6 @@ I den här artikeln får du lära dig att skapa och ändra en inbäddad datakäl
 
 För följande datakällor ska du använda alternativet [SQL Server Analysis Services-anslutning](service-premium-connect-tools.md):
 
-- Azure Analysis Services
 - Power BI Premium datasets
 
 Sidnumrerade rapporter ansluter till lokala datakällor via en [Power BI-gateway](service-gateway-getting-started.md). Du ställer in gatewayen när du har publicerat rapporten till Power BI-tjänsten.
@@ -66,6 +67,30 @@ Mer information finns i [Rapportdata i Power BI Report Builder](report-builder-d
 5.  Välj **OK**.  
   
      Datakällan visas i fönstret Rapportdata.  
+     
+## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+
+Sidnumrerade rapporter som ansluter till Power BI-datamängder följer reglerna för delade datamängder i Power BI med några mindre ändringar.  För att användare korrekt ska kunna visa sidnumrerade rapporter med Power BI-datamängder, och för att säkerställa att säkerhet på radnivå (RLS) är aktiverat och infört för dina visningsprogram, ska du vara noga med att följa dessa regler:
+
+### <a name="classic-apps-and-app-workspaces"></a>Klassiska appar och apparbetsytor
+
+- .rdl i samma arbetsyta som datamängd (samma ägare): Stöds
+- .rdl i annan arbetsyta än datamängd (samma ägare): Stöds
+- Delad .rdl: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- Delad app: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- .rdl i samma arbetsyta som datamängd (annan ägare): Stöds
+- .rdl i annan arbetsyta än datamängd (annan användare):Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- Säkerhet på rollnivå: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå för att införa det.
+
+### <a name="new-experience-apps-and-app-workspaces"></a>Nya upplevelseappar och apparbetsytor
+
+- .rdl i samma arbetsyta som datamängd: Stöds
+- .rdl i annan arbetsyta än datamängd (samma ägare): Stöds
+- Delad .rdl: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- Delad app: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- .rdl i samma arbetsyta som datamängd (annan användare) – stöds
+- .rdl i annan arbetsyta än datamängd (annan ägare): Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- Säkerhet på rollnivå: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå för att införa det
 
 ## <a name="next-steps"></a>Nästa steg
 
