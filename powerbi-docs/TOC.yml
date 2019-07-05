@@ -683,9 +683,9 @@
               href: service-machine-learning-automated.md
         - name: Sidnumrerade rapporter i Power BI
           items:
-            - name: Visa en sidnumrerad rapport (förhandsversion)
+            - name: Visa en sidnumrerad rapport
               href: paginated-reports-view-power-bi-service.md
-            - name: Interagera med parametrar (förhandsversion)
+            - name: Interagera med parametrar
               href: paginated-reports-view-parameters.md
             - name: Registrera dig eller andra
               href: paginated-reports-subscriptions.md
