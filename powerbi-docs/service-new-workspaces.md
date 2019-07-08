@@ -1,5 +1,5 @@
 ---
-title: Organisera arbete på de nya arbetsytorna – Power BI
+title: Organisera arbete på de nya arbetsytorna i Power BI
 description: Lär dig mer om de nya arbetsytorna, som är samlingar av instrumentpaneler och rapporter som skapats för att förse din organisation med statistik.
 author: maggiesMSFT
 manager: kfile
@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345547"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418678"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -135,7 +135,7 @@ Vissa funktioner fungerar annorlunda i de nya arbetsytorna jämfört med de aktu
 - Medlemmar kan eller kan inte dela igen: ersätts med rollen Deltagare
 - Skrivskyddade arbetsytor: I stället för att bevilja användare skrivskyddad åtkomst till en arbetsyta, tilldelar du användare till läsarrollen som ger liknande skrivskyddad åtkomst till innehållet i en arbetsyta.
 - Användare utan Pro-licens kan få åtkomst till arbetsytan om arbetsytan är i en Power BI Premium-kapacitet, även om användarna endast har en läsarroll.
-- Om du vill tillåta användare med läsarroll att exportera data, måste du se till att de har behörighet att skapa för datamängderna i arbetsytan.
+- Om du vill tillåta användare med läsarroll att exportera data, måste du se till att de har behörighet att skapa för datamängderna i arbetsytan. Läs mer om [behörighet att skapa för datamängder](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - Det finns ingen knapp för att **lämna arbetsytan**.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
