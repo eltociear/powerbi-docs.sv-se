@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
+ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418774"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67561799"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -177,6 +177,8 @@ Microsoft rekommenderar att använda en företagsdatagateway istället för en p
 Att ansluta en datauppsättning till en företagsgateway är relativt enkelt om du är gatewayadministratör. Med administratörsbehörigheter kan du direkt uppdatera gatewayen och lägga till saknade datakällor, om det behövs. I själva verket kan du lägga till en saknad datakälla till gatewayen direkt från inställningssidan för datauppsättningen. Expandera växlingsknappen för att visa datakällorna och välja länken **Lägg till i gateway**, som på följande skärmbild. Om du inte är gatewayadministratör kan du, å andra sidan, använda den visade kontaktinformationen för att skicka en begäran till en gatewayadministratör för att lägga till den nödvändiga datakällsdefinitionen.
 
 ![Lägga till i gateway](media/refresh-data/add-to-gateway.png)
+
+Kontrollera att du mappar rätt datakällsdefinition till datakällan. Som skärmbilden ovan visar kan gatewayadministratörer skapa flera definitioner på en och samma gateway som ansluter till samma datakälla, var och en med olika autentiseringsuppgifter. I exemplet som visas skulle en datauppsättningsägare på säljavdelningen välja datakällsdefinitionen AdventureWorksProducts-Sales medan en datauppsättningsägare på supportavdelningen skulle mappa datauppsättningen till datakällsdefinitionen AdventureWorksProducts-Support. Om namnen på datakällsdefinitionen inte är intuitiva så kontaktar du gatewayadministratören för att förtydliga vilken definition som ska väljas.
 
 > [!NOTE]
 > En datauppsättning kan bara använda en enda gatewayanslutning. Med andra ord går det inte att komma åt lokala datakällor på flera gatewayanslutningar. Därför måste du lägga till alla nödvändiga datakällsdefinitioner till samma gateway.
