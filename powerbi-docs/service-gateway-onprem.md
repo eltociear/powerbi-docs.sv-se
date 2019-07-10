@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: f477cbd5f2d767333c16a43308b4793527665806
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 7e2e0e7a980c72f203f93baf552685dce6f43bbd
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430796"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418802"
 ---
 # <a name="on-premises-data-gateway"></a>Lokal datagateway
 
@@ -79,7 +79,7 @@ När installationen är klar behöver du gå till dina datauppsättninger i Powe
 
 ## <a name="storing-encrypted-credentials-in-the-cloud"></a>Lagra krypterade autentiseringsuppgifter i molnet
 
-När du lägger till en datakälla till gatewayen, måste du ange autentiseringsuppgifter för datakällan. Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Autentiseringsuppgifterna krypteras på ett säkert sätt, med hjälp av asymmetrisk kryptering så att de inte kan dekrypteras i molnet, innan de lagras i molnet. Autentiseringsuppgifterna skickas till den dator som kör gatewayen, lokalt där de dekrypteras när datakällorna används.
+När du lägger till en datakälla till gatewayen, måste du ange autentiseringsuppgifter för datakällan. Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Innan autentiseringsuppgifterna lagras i molnet krypteras de på ett säkert sätt, med hjälp av symmetrisk kryptering, så att de inte kan dekrypteras i molnet. Autentiseringsuppgifterna skickas till den dator som kör gatewayen, lokalt där de dekrypteras när datakällorna används.
 
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]

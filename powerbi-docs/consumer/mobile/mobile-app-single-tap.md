@@ -1,6 +1,6 @@
 ---
-title: Konfigurera rapporten interaktion kan knackning
-description: Lär dig mer om att konfigurera rapporten interaktion kan trycka på en eller två.
+title: Konfigurera rapportinteraktion till enkeltryck
+description: Lär dig mer om att konfigurera rapportinteraktion med enkel- eller dubbeltryckningar.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,14 +9,14 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c7f5476ed9d47cc42f275d51801a44c4ee3482ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61340732"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558973"
 ---
-# <a name="configure-report-interaction-to-single-tap-or-double-tap-preview"></a>Konfigurera rapporten interaktion knackning eller dubbelknacka (förhandsversion)
+# <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Konfigurera rapportinteraktion till enkel- eller dubbeltryckningar
 Gäller för:
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android-telefon](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | 
@@ -25,24 +25,24 @@ Gäller för:
 
 En Power BI-rapport är en interaktiv vy över dina data med visuell information som representerar olika resultat och insikter från dessa data.
 
-Du kan konfigurera hur du interagerar med dina data. Du kan bestämma om du vill ha knackning interaktion eller dubbla trycker du på interaktion.
+Du kan konfigurera hur du interagerar med dina data. Du kan bestämma om du ska interagera genom enkel- eller dubbeltryckning.
 
-* Dubbelknacka för interaktion med din första tryck på ett visuellt objekt markeras den, och den andra tryck i ett visuellt objekt utför åtgärd, som val av utsnitt, korsmarkeringen eller klicka på en länk, knappen och så vidare.
+* Med två tryckningar markeras det visuella objektet första gången du trycker och andra gången du trycker på det visuella objektet utförs en åtgärd, som att välja utsnitt, korsmarkera eller klicka på en länk, knapp osv.
 
-* Knackning interaktion med en tryckning gör båda – väljer det visuella objektet, och kör åtgärden.
-![Power BI-mobil knackning](./media/mobile-app-single-tap/single-tap-2.gif)
+* Vid interaktion med enkeltryckning väljer du det visuella objektet och kör åtgärden med en tryckning.
+![Enkeltryckning för Power BI-mobil](./media/mobile-app-single-tap/single-tap-2.gif)
 
 
-Från och med Power BI appversion 18.0 för iOS- och 112540 för Android, kommer alla nya installationer att konfigureras med knackning som ett standardbeteende.
-Användare som redan har Power BI som är installerat på telefonen och uppgraderar till de nya versionerna kommer att erbjudas att växla till knackning.
+Från och med Power BI appversion 18.0 för iOS- och 112540 för Android, kommer alla nya installationer att konfigureras med enkeltryckning som standard.
+Användare som redan har Power BI installerat på telefonen och uppgraderar till de nya versionerna kommer att erbjudas att byta till enkeltryckning.
 
-## <a name="change-interaction-behavior"></a>Ändra beteendet för interaktion
+## <a name="change-interaction-behavior"></a>Ändra typ av interaktion
 
-Om du vill ändra beteendet interaktion kan du gå till appinställningar och aktivera/inaktivera knackning interaktion.
+Du kan ändra typ av interaktion genom att gå till appinställningarna och aktivera/inaktivera enkeltryckning.
 
-![Powerbi mobile ändra rapporten interaktion](./media/mobile-app-single-tap/configure-single-tap.png)
+![Ändra rapportinteraktion för Power BI Mobile](./media/mobile-app-single-tap/configure-single-tap.png)
 
-Den här artikeln gäller för både liggande och telefonrapporter.
+Den här artikeln gäller för både liggande rapporter och telefonrapporter.
 
 ## <a name="next-steps"></a>Nästa steg
 * [Visa och interagera med Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md)

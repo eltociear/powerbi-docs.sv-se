@@ -9,20 +9,20 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 07/01/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d470a262bd8a5e6590746fb07889b1230f5cfc25
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: aabc58e34e5ba61f44673905450c8feb8d6ace47
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375648"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532246"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringar i Power BI-rapporter
 
-Visualiseringar (även kända som visuella objekt) visar insikter som har upptäckts i data. En Power BI-rapport kan ha en enda sida med ett visuellt objekt eller en mängd sidor med visuella objekt. I Power BI-tjänsten, kan visuella objekt [fästas från rapporter till instrumentpaneler](../service-dashboard-pin-tile-from-report.md).
+Visualiseringar (visuella objekt) visar insikter som har upptäckts i data. En Power BI-rapport kan ha en enda sida med ett visuellt objekt eller en mängd sidor med visuella objekt. I Power BI-tjänsten, kan visuella objekt [fästas från rapporter till instrumentpaneler](../service-dashboard-pin-tile-from-report.md).
 
-Det är viktigt att skilja mellan rapport *designers* och rapportera *konsumenter* om du är den person som skapar eller ändrar rapporten så är du en designer.  Designers har redigeringsbehörighet till rapporten och dess underliggande datauppsättning. I Power BI Desktop, innebär det att du kan öppna datauppsättningen i Datavyn och skapa visuella objekt i Rapportvyn. I Power BI-tjänsten innebär detta att du kan öppna datauppsättningen eller rapporten i rapportredigeraren i [redigeringsvyn](../consumer/end-user-reading-view.md). Om en rapport eller instrumentpanel har [delats med dig](../consumer/end-user-shared-with-me.md) är du en rapport**konsument**. Du kommer att kunna visa och interagera med rapporten och dess visuella objekt, men du kan inte spara större ändringar.
+Det är viktigt att skilja mellan *de som designar rapporten* och de som *använder den*.  Om du skapar eller ändrar rapporten är du designer.  Designer har redigeringsbehörighet för rapporten och dess underliggande datauppsättning. I Power BI Desktop, innebär det att du kan öppna datauppsättningen i Datavyn och skapa visuella objekt i Rapportvyn. I Power BI-tjänsten innebär det att du kan öppna datauppsättningen eller rapporten i rapportredigeraren i [Redigeringsvyn](../consumer/end-user-reading-view.md). Om en rapport eller instrumentpanel har [delats med dig](../consumer/end-user-shared-with-me.md) är du en rapport**konsument**. Du kan visa och interagera med rapporten och dess visuella objekt, men du kan inte spara större ändringar.
 
 Det finns många olika typer av visuella objekt tillgängliga direkt från Power BI-fönstret Visualiseringar.
 
@@ -33,7 +33,7 @@ Om du vill ha ännu fler alternativ kan du besöka [Microsoft AppSource communit
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-  Om du inte har arbetat med Power BI tidigare eller behöver en uppfräschning, kan du använda länkarna nedan för att läsa om grunderna i Power BI-visualiseringar.  Alternativt, kan du använda vår innehållsförteckning (till vänster om den här artikeln) för att hitta ännu mer användbar information.
+Om du inte har arbetat med Power BI tidigare eller behöver en uppfräschning, kan du använda länkarna nedan för att läsa om grunderna i Power BI-visualiseringar.  Alternativt, kan du använda vår innehållsförteckning (till vänster om den här artikeln) för att hitta ännu mer användbar information.
 
 ## <a name="add-a-visualization-in-power-bi"></a>Lägg till en visualisering i Power BI
 
@@ -42,6 +42,18 @@ Om du vill ha ännu fler alternativ kan du besöka [Microsoft AppSource communit
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Ladda upp en anpassad visualisering och använd den i Power BI
 
 Lägg till en anpassad visualisering som du har skapat själv eller som du hittat på [Microsoft AppSource community-webbplatsen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Känner du dig kreativ? Ta en närmare titt på vår källkod och använd våra [utvecklarverktyg](../developer/custom-visual-develop-tutorial.md) om du vill skapa nya visualiseringstyper och [dela dem med communityn](../developer/office-store.md). Om du vill veta mer om hur man utvecklar anpassade visuella objekt kan du läsa [Utveckla ett anpassat visuellt objekt i Power BI](../developer/custom-visual-develop-tutorial.md).
+
+## <a name="personalize-your-visualization-pane-preview"></a>Anpassa visualiseringsfönstret (förhandsversion)
+
+Om du märker att du använder samma anpassade visuella objekt i många rapporter kan fästa du den anpassade visualiseringen i ditt visualiseringsfönster. Högerklicka på det visuella objektet för att fästa visualiseringen i fönstret.
+
+![Fästa i visualiseringsfönstret](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
+
+När ett visuellt objekt har fästs flyttas det upp till de andra inbyggda visuella objekten. Det här visuella objektet är nu kopplat till det konto du är inloggad på, och alla nya rapporter du skapar kommer automatiskt innehålla det här visuella objektet, under förutsättning att du loggar in. Det gör det enkelt att standardisera ett visst visuellt objekt, utan att du behöver lägga till det i varje enskild rapport.
+
+![Anpassat fönster för visualiseringar](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
+
+Eftersom funktionen bara finns som förhandsversion kommer du bara att se det fästa visuella objekt i Power BI Desktop. Du måste också vara inloggad för att funktionen ska vara tillgänglig.
 
 ## <a name="change-the-visualization-type"></a>Ändra visualiseringstyp
 
@@ -52,9 +64,9 @@ Försök att [ändra visualiseringstypen](power-bi-report-change-visualization-t
 När du har fått till visualiseringen som du vill ha den i Power BI-tjänsten, kan du [fästa den på en instrumentpanel](../service-dashboard-pin-tile-from-report.md) som en panel. Om du ändrar den visualisering som används i rapporten efter att du fäster den, ändras inte panelen på instrumentpanelen. Om den var ett linjediagram förblir den ett linjediagram, även om du har ändrat till ett ringdiagram i rapporten.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
-- Beroende på datakällan och antalet fält (mått eller kolumner), ett visuellt objekt kan läsa in långsamt.  Vi rekommenderar att begränsa visuell information till totalt 10-20-fält, både för läsbarhet och prestandaskäl. 
+- De visuella objekten kan läsas in långsamt, beroende på datakällan och antalet fält (mått eller kolumner).  Vi rekommenderar att du begränsar antalet visuella objekt till totalt 10–20 fält, för bättre läsbarhet och prestanda. 
 
-- Den övre gränsen för visuella objekt är 100 fält (mått eller kolumner). Om det inte går att läsa in ditt visuella objekt, kan du minska antalet fält.   
+- Den övre gränsen för visuella objekt är 100 fält (mått eller kolumner). Om dina visuella objekt inte kan läsas in måste du minska antalet fält.   
 
 ## <a name="next-steps"></a>Nästa steg
 

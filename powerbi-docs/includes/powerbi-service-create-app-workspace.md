@@ -1,16 +1,37 @@
+---
+title: Skapa en arbetsyta – Power BI
+description: Hur du skapar en arbetsyta
+services: powerbi
+author: maggiesMSFT
+ms.service: powerbi
+ms.topic: include
+ms.date: 04/04/2019
+ms.author: maggies
+ms.custom: include file
+ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67534735"
+---
 1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa apparbetsyta**. 
    
      ![Skapa en apparbetsyta](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
-    Det här är där du placerar innehåll som du och dina kolleger arbetar tillsammans med.
+    Här placerar du innehåll som du och dina kolleger arbetar tillsammans med.
 
-2. Ge arbetsytan ett namn. Om motsvarande **Arbetsyte-ID** inte är tillgängligt, kan du redigera det för att få fram ett unikt ID.
+2. I banderollen **som visar att du skapar en uppgraderad arbetsyta** klickar du på **Återgå till klassisk**. 
+
+    ![Alternativet för att återgå till klassisk arbetsyta](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+3. Ge arbetsytan ett namn. Om motsvarande **Arbetsyte-ID** inte är tillgängligt, kan du redigera det för att få fram ett unikt ID.
    
-     Detta kommer också bli namnet på appen.
+     Appen får samma namn.
    
      ![Ge arbetsytan ett namn](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
 
-3. Det finns ett par alternativ som du måste ställa in. Om du väljer **Offentlig** kan alla i din organisation se vad som finns på arbetsytan. Om du väljer **Privat** kan endast medlemmar i arbetsytan se innehållet.
+3. Det finns ett par alternativ som du måste ställa in. Om du väljer **Offentlig** kan alla i din organisation se vad som finns på arbetsytan. Om du väljer **Privat** kan bara medlemmar i arbetsytan se innehållet.
    
      ![Ange Privat eller Offentlig](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
    

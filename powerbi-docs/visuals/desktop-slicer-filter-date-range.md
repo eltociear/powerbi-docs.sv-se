@@ -7,81 +7,102 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3d8057c4d35294dd5e83638b721169e4d54d2adf
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374531"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532675"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Använda ett relativt datumutsnitt och filter i Power BI
-Med ett **relativt datumutsnitt** eller **relativt datumfilter** kan du använda tidsbaserade filter på kolumner i datamodellen. Du kan till exempel använda ett **relativt datumutsnitt** för att endast visa försäljningsdata inom de senaste 30 dagarna (eller månad, kalendermånad och så vidare). När du uppdaterar data tillämpas den relativa tidsperioden automatiskt.
+# <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Använda ett relativt datumutsnitt och filter i Power BI Desktop
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
+Med ett **relativt datumutsnitt** eller **relativt datumfilter** kan du använda tidsbaserade filter på kolumner i datamodellen. Du kan till exempel använda ett **relativt datumutsnitt** för att bara visa försäljningsdata inom de senaste 30 dagarna (eller månad, kalendermånad och så vidare). När du uppdaterar data tillämpas den relativa tidsperioden automatiskt.
 
-## <a name="using-the-relative-date-range-slicer"></a>Använda relativt datumutsnitt
-Du kan använda utsnittet relativt datum precis som andra utsnitt. Skapa ett **utsnitt** för rapporten och välj sedan ett datumvärde för värdet **Fält**. I följande bild har *BeställningsDatum* markerats.
+![Skärmbild av en rapport, med en pil som pekar på ett relativt datumutsnitt.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
+## <a name="use-the-relative-date-range-slicer"></a>Använd relativt datumutsnitt
 
-Välj utsnittet på arbetsytan och sedan cirkumflex i det övre högra hörnet av utsnittet visual. Om det visuella objektet innehåller datuminformation, menyn visas alternativet för **relativa**. 
+Du kan använda utsnittet relativt datum precis som andra utsnitt. Skapa ett **utsnitt** för rapporten och välj sedan ett datumvärde för värdet **Fält**. I följande bild har vi valt fältet *OrderDate*.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
+![Skärmbild av fönstret Visualiseringar med pilar som pekar på visualiseringen av utsnittet och källan för Fält.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
+
+Välj utsnittet på arbetsytan och sedan cirkumflex i det övre högra hörnet av visualiseringen av utsnittet. Om det finns datumdata för det visuella objektet så visas alternativen för **Relativt** på menyn.
+
+![Skärmbild av visualiseringen av utsnittet med en markering runt cirkumflexet och en pil som pekar på Relativt.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
 Välj *Relativt* för det relativa datumutsnittet.
 
-Sedan kan du välja inställningarna. För den första listrutan i det *relativa datumutsnittet* har du följande alternativ:
+Sedan kan du välja inställningarna.
+
+För den första inställningen i det *relativa datumutsnittet* finns följande alternativ:
+
+![Skärmbild av konfigurationsalternativ för Relativt, med den första inställningen markerad.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
 * Sista
+
 * Nästa
-* Detta
 
-Dessa val visas i följande bild.
+* Den här
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
+Med den andra inställningen (i mitten) i *det relativa datumutsnittet* kan du ange ett värde för att definiera det relativa datumintervallet.
 
-Med nästa inställning (i mitten) i *relativt datumutsnitt* kan du ange ett värde för att definiera det relativa datumintervallet.
+![Skärmbild av konfigurationsalternativen för Relativt, med den andra inställningen markerad.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04a.png)
 
 Du kan välja datummåttet i den tredje inställningen. Du har följande val:
 
+![Skärmbild av konfigurationsalternativen för Relativt, med den tredje inställningen markerad.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+
 * Dagar
+
 * Veckor
+
 * Veckor (kalender)
+
 * Månader
+
 * Månader (kalender)
+
 * År
+
 * År (kalender)
 
-Dessa val visas i följande bild.
+Om du till exempel väljer **Månader** i listan och anger *2* i den mellersta inställningen får du följande resultat:
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+* om dagens datum är 20 juli
 
-Om du väljer *Månader* från listan och anger 2 i mitteninställningen, skulle följande hända: Om dagens datum är 20 juli visas data i det visuella objektet för de föregående två månaderna, från och med 20 maj till och med 20 juli (dagens datum).
+* data i det visuella objektet för utsnittet kommer innehålla data för de föregående två månaderna
+
+* från och med 20 maj till och med 20 juli (dagens datum)
 
 Som jämförelse visas data från 1 maj till och med 30 juni (de sista två fullständiga kalendermånaderna) om du väljer *Månader (kalender)* .
 
 ## <a name="using-the-relative-date-range-filter"></a>Använda relativt datumfilter
-Du kan också skapa ett filter för relativt datumintervall för rapportsidan eller hela rapporten. Om du vill göra detta, drar du ett datumfält till områdena **Sidonivåfiltrer** eller **Rapportnivåfilter** områden i fönstret **Fält** enligt följande bild.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
+Du kan också skapa ett filter för relativt datumintervall för rapportsidan eller hela rapporten. För att göra detta drar du ett datumfält till källan **Sidnivåfilter** eller **Rapportnivåfilter** i fönstret **Fält**:
 
-Därefter kan du ändra det relativa datumintervallet på ett likande sätt som du anpassar ett **relativt datumutsnitt**. Välj **Relativt datumfilter** från listrutan **Filtertyp**.
+![Skärmbild av fältet OrderDate som dras till källan för sidnivåfilter.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
+När det väl ligger på plats kan du ändra det relativa datumintervallet. Det är samma tillvägagångssätt som när du anpassar det **relativa datumutsnittet**. Välj **Relativt datumfilter** från listrutan **Filtertyp**.
 
-När du har valt **Relativt datumfilter** visas tre områden för att redigera det, inklusive en numerisk ruta i mitten, precis som för utsnitt.
+![Skärmbild som visar listrutan Filtertyp och muspekaren på Relativ datumfiltrering.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
+När du har valt **Relativ datumfiltrering** visas tre områden för redigering, med en numerisk ruta i mitten, precis som för utsnittet.
 
-Så enkelt är det att använda relativa datumbegränsningar i dina rapporter.
+![Skärmbild av Rapportnivåfilter med pilar som pekar på Visa objekt för värdealternativet.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
+
 Följande begränsningar och överväganden kan användas för utsnitt och filter **relativt datumintervall**.
 
-* Datamodeller i **Power BI** inkluderar inte tidszonsinformation. Modeller kan lagra tidpunkter, men det finns inget som indikerar vilken tidszonen de befinner sig i.
-* Utsnitt och filter baseras alltid på tiden i UTC, så om du konfigurerar ett filter i en rapport och skickar det till en kollega i en annan tidszon visar båda samma data. Men om du inte befinner dig i tidszonen UTC kan du se data för andra tider än du har förväntat dig.
-* Data som hämtats i en lokal tidszon kan konverteras till UTC med hjälp av **frågeredigeraren**.
+* Datamodeller i **Power BI** omfattar inte tidszonsinformation. Modeller kan lagra tidpunkter, men det finns inget som indikerar vilken tidszonen de befinner sig i.
 
+* Utsnitt och filter baseras alltid på tiden i UTC. Om du skapar ett filter i en rapport och skickar rapporten till en kollega i en annan tidszon så kommer ni båda att se samma data. Om ni inte befinner er i UTC-tidszonen så måste ni justera för tidsförskjutningen.
+
+* Du kan konvertera data som hämtats i en lokal tidszon till UTC med hjälp av **Frågeredigeraren**.
+
+## <a name="next-steps"></a>Nästa steg
+
+Lär dig [använda gruppering i Power BI Desktop](../desktop-grouping-and-binning.md).

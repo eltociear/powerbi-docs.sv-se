@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
-ms.translationtype: MT
+ms.openlocfilehash: 8acc0e403c983de79657cd01a7aa7f458bfb01ad
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469789"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559057"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Hantera en lokal Power BI-gateway
 
@@ -31,6 +31,8 @@ Om du precis har installerat en gateway, rekommenderar vi att dig att [lägga ti
 
 Power BI stöder många lokala datakällor och var och en har sina egna krav. Gatewayer kan användas för en enstaka datakälla eller flera datakällor. Vi visar hur du lägger till SQL Server som datakälla i det här exemplet, men stegen ser ungefär likadana ut för andra datakällor.
 
+> [!NOTE]
+> Gateway-administratörer kan nu skapa flera datakällor som ansluter till samma källa, var och en med andra autentiseringsuppgifter, och lägga till användare i var och en av dessa datakällor baserat på deras åtkomstnivå.
 
 ### <a name="add-a-data-source"></a>Lägga till en datakälla
 
@@ -53,6 +55,11 @@ Power BI stöder många lokala datakällor och var och en har sina egna krav. Ga
 
 1. För SQL Server, väljer du en **autentiseringsmetod** för **Windows** eller **Grundläggande** (SQL-autentisering).  Om du väljer **Grundläggande** ska du ange autentiseringsuppgifterna för datakällan.
 
+1. Om den här datakällan är otillgänglig eller långsam för närvarande väljer du **hoppa över testanslutningen**. Annars kan skapandet av datakällan misslyckas.
+
+    > [!NOTE]
+    > Det finns inte stöd för att hoppa över testanslutningen för Analysis Services.
+
 1. Under **Avancerade inställningar** kan du som alternativ konfigurera [sekretessnivån](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) för datakällan (gäller inte för [DirectQuery](desktop-directquery-about.md)).
 
     ![Avancerade inställningar](media/service-gateway-manage/advanced-settings.png)
@@ -74,7 +81,7 @@ Du tar bort en datakälla genom att gå till datakällan och sedan välja **Ta b
 
 ## <a name="manage-users-and-administrators"></a>Hantera användare och administratörer
 
-När du har lagt till en datakälla till en gateway ger du användarna och säkerhetsgrupperna åtkomst till den specifika datakällan (inte hela gatewayen). Datakällans användarlista styr endast vem som får publicera rapporter som innehåller data från datakällan. Rapportägare kan skapa instrumentpaneler, innehållspaket och appar och dela dem med andra användare.
+När du har lagt till en datakälla till en gateway ger du användarna och de e-postaktiverade säkerhetsgrupperna åtkomst till den specifika datakällan (inte hela gatewayen). Datakällans användarlista styr endast vem som får publicera rapporter som innehåller data från datakällan. Rapportägare kan skapa instrumentpaneler, innehållspaket och appar och dela dem med andra användare.
 
 Du kan även ge användare och säkerhetsgrupper administrativ åtkomst till gatewayen.
 
@@ -98,14 +105,14 @@ Det är allt. Kom ihåg att du behöver lägga till användare i varje datakäll
 
 ### <a name="remove-users-from-a-data-source"></a>Ta bort användare från en datakälla
 
-På datakällans flik **Användare** kan du ta bort användare och säkerhetsgrupper som använder den här datakällan.
+På datakällans flik **Användare** kan du ta bort användare och e-postaktiverade säkerhetsgrupper som använder den här datakällan.
 
 ![Ta bort användare](media/service-gateway-manage/remove-user.png)
 
 
 ### <a name="add-and-remove-administrators"></a>Lägga till och ta bort administratörer
 
-På fliken **Administratörer** för gatewayen kan du lägga till och ta bort användare (eller säkerhetsgrupper) som kan administrera gatewayen.
+På fliken **Administratörer** för gatewayen kan du lägga till och ta bort användare (eller e-postaktiverade säkerhetsgrupper) som kan administrera gatewayen.
 
 ![Fliken Administratörer](media/service-gateway-manage/administrators-tab.png)
 

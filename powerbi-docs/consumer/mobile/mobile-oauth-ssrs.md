@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770365"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559069"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
 
@@ -25,7 +25,7 @@ Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mo
 Du kan ansluta till Power BI-rapportservern och Reporting Services via OAuth för att visa mobila rapporter eller KPI:er. Windows Server 2016 innehåller vissa förbättringar av rolltjänsten Web Application Proxy (WAP) för att tillåta den här typen av autentisering.
 
    > [!NOTE]
-   > Visa Power BI-rapporter i Power BI Report Server stöds med WAP för att autentisera för närvarande endast i iOS-app. Android-appen stöds inte officiellt just nu.
+   > Nu finns det stöd för att visa Power BI-rapporter som finns i Power BI-rapportservern och autentiserar med WAP för iOS- och Android-appar.
 
 ## <a name="requirements"></a>Krav
 
@@ -118,7 +118,7 @@ Du kan skapa gruppen med följande steg.
    > [!NOTE]
    > Denna URL är skiftlägeskänslig!
 
-   *https://< rapportserverns url > / rapporter*
+   *https://< report server url >/reports*
 
    ![Guide 03 för ADFS-programgrupp](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Välj **Nästa**.
@@ -141,7 +141,7 @@ När du är klar bör egenskaperna för din grupp se ut på följande sätt.
 
 ## <a name="web-application-proxy-wap-configuration"></a>Konfiguration av proxy för webbapp (WAP)
 
-Du bör aktivera Windowsrollen proxy för webbapp (roll) på en server i din miljö. Detta måste vara en server med Windows 2016. Mer information finns i [Web Application Proxy i Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) och [Publicera appar med AD FS-förautentisering](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+Du bör aktivera Windowsrollen proxy för webbapp (roll) på en server i din miljö. Det måste vara en server med Windows 2016. Mer information finns i [Web Application Proxy i Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) och [Publicera appar med AD FS-förautentisering](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### <a name="constrained-delegation-configuration"></a>Konfiguration av begränsad delegering
 
@@ -239,7 +239,7 @@ Du kan aktivera multifaktorautentisering att göra din miljö ännu säkrare. L�
 
 ## <a name="troubleshooting"></a>Felsökning
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>Du får felmeddelandet Det gick inte att logga in på SSRS-servern. Kontrollera serverkonfigurationen.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Du får felmeddelandet Det gick inte att logga in på SSRS-servern. Verifiera serverkonfigurationen.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 

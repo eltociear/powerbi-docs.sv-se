@@ -9,14 +9,14 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448377"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468127"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
@@ -26,12 +26,12 @@ Med DirectQuery skickas frågor tillbaka till din Azure SQL Database medan du ut
 
 **OBS:**
 
-* Ange det fullständigt kvalificerade servernamnet vid anslutning (se nedan för mer information)
+* Ange det fullständigt kvalificerade servernamnet vid anslutning (se nedan för mer information).
 * Se till att brandväggsreglerna för databasen är konfigurerade för ”[Tillåt åtkomst till Azure-tjänster](https://msdn.microsoft.com/library/azure/ee621782.aspx)”.
-* Varje åtgärd, som att markera en kolumn eller lägga till ett filter, skickar en fråga tillbaka till databasen
-* Panelerna uppdateras varje timme (uppdateringen behöver inte schemaläggas). Detta kan justeras i Avancerade inställningar när du ansluter.
-* Frågor och svar är inte tillgänglig för DirectQuery-datauppsättningar
-* Schemaändringar plockas inte upp automatiskt
+* Varje åtgärd, som att markera en kolumn eller lägga till ett filter, skickar en fråga tillbaka till databasen.
+* Panelerna uppdateras varje timme (uppdateringen behöver inte schemaläggas). Du kan justera hur ofta uppdateringen ska göras i Avancerade inställningar när du ansluter.
+* Frågor och svar-rutan är inte tillgänglig för DirectQuery-datauppsättningar.
+* Schemaändringar plockas inte upp automatiskt.
 
 Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förbättra upplevelsen. Stegen för att ansluta beskrivs nedan.
 
@@ -40,11 +40,11 @@ Dessa begränsningar och anteckningar kan ändras när vi fortsätter att förb�
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop och DirectQuery
 
-För att ansluta till Azure SQL Database med DirectQuery, behöver du använda Power BI Desktop. Den här metoden erbjuder ytterligare flexibilitet och funktioner. Rapporter som skapas med Power BI Desktop kan senare publiceras i Power BI-tjänsten. Du kan lära dig mer om hur du ansluter till [Azure SQL Database med DirectQuery](desktop-use-directquery.md) i Power BI Desktop.
+För att kunna ansluta till Azure SQL Database med DirectQuery måste du använda Power BI Desktop. Den här metoden erbjuder ytterligare flexibilitet och funktioner. Rapporter som skapas med Power BI Desktop kan senare publiceras i Power BI-tjänsten. Du kan lära dig mer om hur du ansluter till [Azure SQL Database med DirectQuery](desktop-use-directquery.md) i Power BI Desktop.
 
-## <a name="finding-parameter-values"></a>Hitta parametervärden
+## <a name="find-parameter-values"></a>Hitta parametervärden
 
-Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azure Portal.
+Du hittar det fullständigt kvalificerade servernamnet och databasnamnet i Azure-portalen.
 
 ![Ny uppdatering av Azure-portalen](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
@@ -58,4 +58,4 @@ Det fullständigt kvalificerade servernamnet och databasnamnet återfinns i Azur
 * [Vad är Power BI?](power-bi-overview.md)  
 * [Hämta data för Power BI](service-get-data.md)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/)
