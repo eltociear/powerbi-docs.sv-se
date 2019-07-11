@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: d73d2ea5e21196d4856d2906805e6dec1f7e60b7
-ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
+ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468277"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596645"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Uppdatera data från en lokal SQL Server-databas
 
@@ -35,7 +35,7 @@ I den här självstudien går du igenom följande steg:
 
 - Registrera dig för en [kostnadsfri utvärderingsversion av Power BI](https://app.powerbi.com/signupredirect?pbi_source=web), om du inte redan har en, innan du börjar.
 - [Installera Power BI Desktop](https://powerbi.microsoft.com/desktop/) på en lokal dator.
-- [Installera SQL Server](/sql/database-engine/install-windows/install-sql-server) på en lokal dator och återställa [exempeldatabasen från en säkerhetskopia]((https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak)). För mer information om AdventureWorks, se [Installation och konfiguration av AdventureWorks](/sql/samples/adventureworks-install-configure).
+- [Installera SQL Server](/sql/database-engine/install-windows/install-sql-server) på en lokal dator och återställa [exempeldatabasen från en säkerhetskopia](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). För mer information om AdventureWorks, se [Installation och konfiguration av AdventureWorks](/sql/samples/adventureworks-install-configure).
 - [Installera en lokal datagateway](service-gateway-install.md) på samma lokala dator som SQL Server (i produktion hade det i normalfallet varit en annan dator).
 
 > [!NOTE]
