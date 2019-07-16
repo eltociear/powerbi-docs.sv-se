@@ -7,21 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 507af4de9d57d2d54fe3e28bca8b1aff7da5cf30
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461475"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567395"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiera rapporter från andra arbetsytor (förhandsversion)
 
-Lär dig hur du kopierar en rapport från en arbetsyta och sparar den på en annan arbetsyta. Du kan sedan ändra rapporten för att lägga till eller ta bort visuella objekt och andra element.
-
-När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan du göra en kopia av den och sedan anpassa den efter dina behov. Du behöver inte tänka på att skapa datamodellen. Den har redan skapats. Och det är mycket enklare att ändra en befintlig rapport än att börja från början.
+När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan du göra en kopia av den och sedan spara den på en annan webbplats. Du kan sedan ändra rapporten för att lägga till eller ta bort visuella objekt och andra element. Du behöver inte tänka på att skapa datamodellen. Den har redan skapats. Och det är mycket enklare att ändra en befintlig rapport än att börja från början. Men kan inte du publicera din kopia av rapporten i en app från den nya arbetsytan. Se en lista över andra [överväganden och begränsningar](service-datasets-across-workspaces.md#considerations-and-limitations) i artikeln ”Använda datauppsättningar över arbetsytor”.
 
 ## <a name="save-a-copy-of-a-report"></a>Skapa en kopia av en rapport
 
@@ -61,6 +59,21 @@ När du har en rapport på din arbetsyta kan du behöva känna till vilken datam
 1. Dialogrutan **Relaterat innehåll** visar alla relaterade objekt. I den här listan ser datamängden ut som vilken annan som helst. Det syns inte att den finns på en annan arbetsyta. Det här problemet är känt.
  
     ![Dialogrutan Relaterat innehåll](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## <a name="delete-a-report-and-its-shared-dataset"></a>Ta bort en rapport och dess delade datauppsättning
+
+Du kan bestämma att du inte längre vill ha kvar rapporten och dess associerade delade datauppsättning på arbetsytan.
+
+1. Ta bort rapporten. I listan över rapporter på arbetsytan väljer du ikonen **Ta bort**.
+
+    ![Ta bort rapportikonen](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. I listan över datauppsättningar ser du att de delade datamängder inte har ikoner för att **Ta bort**. Uppdatera sidan eller gå till en annan sida och återvänd. Datauppsättningen kommer att vara borta. Om inte, kontrollera **Visa relaterade**. Det kan vara relaterat till en annan tabell på din arbetsyta.
+
+    ![Ikonen Visa relaterade](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > Om du tar bort den delade datauppsättningen på den här arbetsytan tas den inte bort. Det är endast referensen till den som tas bort.
 
 
 ## <a name="next-steps"></a>Nästa steg

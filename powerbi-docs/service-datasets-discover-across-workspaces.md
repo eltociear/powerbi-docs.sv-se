@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99769b78060756c557223dd366da550ad3e11056
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461291"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567441"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Skapa rapporter baserat på datamängder från olika arbetsytor (förhandsversion)
 
@@ -51,7 +51,7 @@ På så sätt kan medlemmar i arbetsytan se vilka rapporter och instrumentpanele
 
 ## <a name="find-an-endorsed-dataset"></a>Hitta en rekommenderad datamängd
 
-Det finns två olika typer av rekommenderade datamängder. Datamängdsägare kan *höja upp* en datamängd som de rekommenderar till dig. Power BI-klientorganisationsadministratörer kan utse experter i din organisation som kan *certifiera* datamängder som alla kan använda. Både rekommenderade och certifierade datamängd visar *märken* som du ser både när du letar efter en datamängd och i listan över datamängder på en arbetsyta. 
+Det finns två olika typer av rekommenderade datamängder. Datamängdsägare kan *höja upp* en datamängd som de rekommenderar till dig. Power BI-klientorganisationsadministratörer också kan utse experter i din organisation som kan *certifiera* datamängder som alla kan använda. Både rekommenderade och certifierade datamängd visar *märken* som du ser både när du letar efter en datamängd och i listan över datamängder på en arbetsyta. Namnet på den person som certifierade en datauppsättning visas i en knappbeskrivning under utforskaren för datauppsättningen. Håll muspekaren över etiketten **Certifierad** så ser du den.
 
 - I Power BI-tjänsten: **Hämta data** > **Publicerade datamängder**.
 - I Power BI Desktop: **Hämta data** > **Power BI-datamängder**.

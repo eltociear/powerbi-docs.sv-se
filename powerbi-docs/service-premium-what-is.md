@@ -8,28 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c2f867140c5a717c80d39db75b3a54e40bd1e34
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721044"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596534"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
 Power BI Premium tillhandahåller dedikerade och förbättrade resurser för körning av Power BI-tjänsten för din organisation. Till exempel:
 
-- Större skala och bättre prestanda
-- Flexibiliteten att licensiera efter kapacitet
-- Förena självbetjäning och BI för företag
-- Utöka lokal BI med Power BI-rapportservern
-- Stöd för datahemvist per region (Multi-Geo)
-- Dela data med vem som helst utan köpa en licens per användare
+> [!div class="checklist"]
+> * Större skala och bättre prestanda
+> * Flexibiliteten att licensiera efter kapacitet
+> * Förena självbetjäning och BI för företag
+> * Utöka lokal BI med Power BI-rapportservern
+> * Stöd för datahemvist per region (Multi-Geo)
+> * Dela data med vem som helst utan köpa en licens per användare
 
-Den här artikeln är inte avsedd att ge detaljerad information om alla funktioner i Power BI Premium, utan skrapar bara på ytan. Vid behov ges länkar till fler artiklar med mer detaljerad information.
+Den här artikeln introducerar viktiga funktioner i Power BI Premium. Vid behov ges länkar till fler artiklar med mer detaljerad information.
 
 ## <a name="subscriptions-and-licensing"></a>Prenumerationer och licensiering
 
@@ -52,7 +53,7 @@ Power BI Premium-prenumerationer köps av administratörer i Microsoft 365 Admin
 
 Med Power BI Premium får du *dedikerade kapaciteter*. Till skillnad från en delad kapacitet där arbetsbelastningar körs på dataresurser som delas med andra kunder är en dedikerad kapacitet för exklusiv användning av en organisation. Den är isolerad med dedikerade resurser som ger pålitlig och konsekvent prestanda för värdbaserat innehåll. 
 
-Arbetsytor förvaras i kapaciteter. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Fler arbetsytor kan skapas för att möjliggöra samarbete och distribution och dessa kallas **Apparbetsytor**. Som standard skapas arbetsytor, däribland personliga arbetsytor, i den delade kapaciteten. När du har Premium-kapaciteter kan både Mina arbetsytor och Apparbetsytor tilldelas till Premium-kapaciteter.
+Arbetsytor förvaras i kapaciteter. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Fler arbetsytor, så kallade **Apparbetsytor**, kan skapas för att möjliggöra samarbete och distribution. Som standard skapas arbetsytor, däribland personliga arbetsytor, i den delade kapaciteten. När du har Premium-kapaciteter kan både Mina arbetsytor och Apparbetsytor tilldelas till Premium-kapaciteter.
 
 ### <a name="capacity-nodes"></a>Kapacitetsnoder
 
@@ -102,7 +103,7 @@ Importmodeller läses därför in och tas bort från minnet beroende på använd
 
 Borttagning av en modell från minnet kallas *avlägsning*. Det är en åtgärd som Power BI kan utföra snabbt beroende på storleken på modellerna. Om kapaciteten inte har någon minnesbelastning, läses modeller bara in i minnet och finns kvar där. Men om det inte finns tillräckligt med minne för att läsa in en modell måste Power BI-tjänsten först frigöra minne. Den frigör minne genom att identifiera modeller som har inaktiverats av sökmodeller som inte har använts under de senaste tre minuterna \[[1](#endnote-1)\], och avlägsnar dem sedan. Om det inte finns några inaktiva modeller att ta bort, strävar Power BI-tjänsten efter att avlägsna modeller som lästs in för bakgrundsåtgärder. En sista utväg, efter 30 sekunder av misslyckade försök \[[1](#endnote-1)\], är att den interaktiva åtgärden misslyckas. I det här fallet meddelas rapportanvändaren om felet med ett förslag om att försöka igen om en stund. I vissa fall kan modeller tas bort från minnet på grund av serviceåtgärder.
 
-Det är viktigt att påpeka att datamängdsavlägsning är ett normalt och förväntat beteende. Det strävar efter att maximera minnesanvändningen efter inläsning och inaktivera modeller vars kombinerade storlekar kan överstiga tillgängligt minne. Detta är avsiktligt, och helt transparent för rapportanvändarna. Höga avlägsningsfrekvenser innebär inte nödvändigtvis att kapaciteten är otillräckligt resurstilldelad. Detta kan dock bli ett problem om frågans eller uppdaterings svarstid har drabbats på grund av höga avlägsningsfrekvenser.
+Det är viktigt att påpeka att datamängdsavlägsning är ett normalt och förväntat beteende. Det strävar efter att maximera minnesanvändningen efter inläsning och inaktivera modeller vars kombinerade storlekar kan överstiga tillgängligt minne. Detta är avsiktligt och transparent för rapportanvändarna. Höga avlägsningsfrekvenser innebär inte nödvändigtvis att kapaciteten är otillräckligt resurstilldelad. Detta kan dock bli ett problem om frågans eller uppdaterings svarstid har drabbats på grund av höga avlägsningsfrekvenser.
 
 Uppdateringar av importmodeller är alltid minnesintensiva eftersom modeller måste läsas in i minnet. Det krävs ytterligare minne för bearbetning. En fullständig uppdatering kan ungefär dubbla den mängd minne som krävs av modellen. Detta säkerställer att frågor kan köras mot modellen även när den bearbetas, eftersom frågor skickas till den befintliga modellen tills uppdateringen har slutförts och nya modelldata är tillgängliga. Inkrementell uppdatering kräver mindre minne och kan slutföras snabbare. Det kan således avsevärt minska trycket på kapacitetsresurser. Uppdateringar kan även vara processorintensiva för modeller, särskilt de med komplexa Power Query-omvandlingar eller beräknade tabeller/kolumner som är komplexa eller baseras på stora tabeller.
 
@@ -175,7 +176,7 @@ I följande tabell beskrivs rekommenderade SKU:er för olika storlekar på PBIX:
    |P2    | < 6 GB        |
    |P3, P4, P5    | upp till 10 GB   |
 
-Power BI Embedded-SKU:n A4 motsvarar SKU:n P1, A5 = P2 och A6 = P3. Observera att om du publicerar stora modeller till A- och EM-SKU:er kan det returnera fel som inte är specifika för storleksfel för modellen i den delade kapaciteten. Uppdateringsfel för stora modeller i A- och EM-SKU:er pekar troligen till tidsgränser. 
+Power BI Embedded-SKU:n A4 motsvarar SKU:n P1, A5 = P2 och A6 = P3. Om du publicerar stora modeller till A- och EM-SKU:er kan det returnera fel som inte är specifika för storleksfel för modellen i den delade kapaciteten. Uppdateringsfel för stora modeller i A- och EM-SKU:er pekar troligen till tidsgränser. 
 
 PBIX-filerna representerar data i ett *mycket komprimerat tillstånd*. Data kommer sannolikt att expandera flera gånger när de läses in i minnet och därifrån kan de expandera flera gånger under datauppdatering.
 

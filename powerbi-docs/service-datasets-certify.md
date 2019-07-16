@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e790afee5b57b73a756ca3c1afd564b00e778186
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461337"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567322"
 ---
 # <a name="certify-datasets-preview"></a>Certifiera datamängder (förhandsversion)
 
@@ -23,8 +23,8 @@ Din organisation kan certifiera datamängder som är den auktoritativa källan t
 
 Power BI-användare kan nu ha åtkomst till många olika datamängder. Därför behöver företag vägleda dem till tillförlitliga, högkvalitativa datamängder. Power BI erbjuder två sätt att *rekommendera* datamängder:
 
-- **Upphöjning**: Ägare av datamängder kan höja upp sina egna datamängder när de är redo för generell användning. Mer information finns i [Höja upp din datamängd](service-datasets-promote.md). 
-- **Certifiering**: Ägare av datamängder kan begära certifiering av en upphöjd datamängd. En utvald grupp med användare som definieras i klientorganisationsadministratörens inställningen **Datamängdscertifiering** avgör vilka datamängder som ska certifieras.
+- **Upphöjning**: Ägare av datamängder och andra användare på arbetsytan kan höja upp sina egna datamängder när de är redo för generell användning. Mer information finns i [Höja upp din datamängd](service-datasets-promote.md). 
+- **Certifiering**: Ägare av datamängder kan begära certifiering av en upphöjd datamängd. En utvald grupp med användare som definieras i klientorganisationsadministratörens inställningen **Datamängdscertifiering** avgör vilka datamängder som ska certifieras. Namnet på den person som certifierade en datauppsättning visas i en knappbeskrivning under utforskaren för datauppsättningen. Håll muspekaren över etiketten **Certifierad** så ser du den.
 
 ## <a name="certify-a-dataset"></a>Certifiera en datamängd
 

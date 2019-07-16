@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 06/27/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 992524d3467ebe9bb130b3c61476301ab2bc563c
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409174"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67568107"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -50,7 +50,7 @@ Det finns nio flikar i portalen. Resten av den här artikeln innehåller informa
 
 ## <a name="usage-metrics"></a>Användningsstatistik
 
-Med **användningsstatistik** kan du övervaka Power BI-användningen för din organisation. Det ger också möjlighet att se vilka användare och grupper som är mest aktiva i Power BI för din organisation.
+Med **användningsstatistik** kan du övervaka Power BI-användningen för din organisation. Det ger också möjlighet att se vilka användare och grupper som är mest aktiva i Power BI för din organisation. 
 
 > [!NOTE]
 > Första gången du använder instrumentpanelen eller när du kommer tillbaka efter en lång tid utan att visa instrumentpanelen visas antagligen en skärm för inläsning medan vi läser in instrumentpanelen.
@@ -82,6 +82,40 @@ Här är en uppdelning av vad du kan se i varje panel:
 Det andra avsnittet visar samma typ av information, men baserat på grupper. Här kan du se vilka grupper i din organisation som är mest aktiva och vilken sorts innehåll de använder.
 
 Med den här informationen kommer du att kunna hämta verkliga insikter om hur personer använder Power BI inom organisationen och identifiera de användare och grupper som är mest aktiva i din organisation.
+
+## <a name="control-usage-metrics"></a>Kontrollera användningsstatistik
+
+Användningsstatistikrapporter är en funktion som Power BI- eller Office 365-administratören kan aktivera eller inaktivera. Administratörerna har detaljerad kontroll över vilka användare som har åtkomst till användningsstatistik. De är **På** som standard för alla användare i organisationen.
+
+Administratörer kan också bestämma om skapare av innehåll kan se data per användare i användningsmått. 
+
+Se [Övervaka användningsstatistik för Power BI-instrumentpaneler och rapporter](service-usage-metrics.md) för mer information om själva rapporterna.
+
+### <a name="usage-metrics-for-content-creators"></a>Användningsstatistik för skapare av innehåll
+
+1. Från Administratörsportalen väljer du **Klientinställningar** > **Användningsstatistik för skapare av innehåll**.
+
+    ![Användningsstatistik för inställningar för administratörsportalklienten](media/service-admin-portal/power-bi-admin-usage-metrics.png)
+
+1. Aktivera (eller inaktivera) användningsstatistik > **Tillämpa**.
+
+    ![Aktiverad användningsstatistik](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+
+### <a name="per-user-data-in-usage-metrics"></a>Data per användare i användningsmått
+
+Som standard är data per användare aktiverat för användningsstatistik och kontoinformation om konsumenter av innehåll ingår i statistikrapporten. Om du inte vill inkludera den här informationen för vissa eller alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformation visas sedan i rapporten som *Namnlös*.
+
+![Användningsdata per användare](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
+
+### <a name="delete-all-existing-usage-metrics-content"></a>Ta bort allt befintligt innehåll för måttet
+
+När du inaktiverar användningsstatistik för hela organisationen kan administratörer också välja ett eller båda alternativ:
+
+- **Ta bort allt befintligt innehåll för användningsstatistik** för att ta bort alla befintliga rapporter och instrumentpaneler som har skapats med användningsstatistikrapporter och datauppsättningar. Det här alternativet tar bort all åtkomst till användningsstatistiken för alla användare i organisationen som kanske redan använder den. 
+- **Ta bort alla befintliga användarspecifika data i den aktuella användningsstatistiken** Det här alternativet tar bort all åtkomst till användningsstatistiken för alla användare i organisationen som kanske redan använder den. 
+
+Var försiktig, eftersom det inte går att ångra när du har tagit bort befintligt användarspecifikt användningsstatistikinnehåll.
 
 ## <a name="users"></a>Användare
 

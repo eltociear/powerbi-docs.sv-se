@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: c0a70339e8336f3e7b93b40ad8a99dcb87715812
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f7dc84c9c6c84a30417d97f37d984b5f01ec9cd7
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710253"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596456"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Steg 4: Hämta en datauppsättning för att lägga till rader i en Power BI-tabell
 
@@ -22,7 +22,7 @@ Den här artikeln ingår i en stegvis genomgång för att [skicka data till en d
 
 I **steg 3** av skicka data till en datauppsättning, [Skapa en datauppsättning i Power BI](walkthrough-push-data-create-dataset.md), anropade du åtgärden [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) för att skapa en datauppsättning i Power BI. I det här steget, använder du åtgärden [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) och Newtonsoft.Json för att hämta ett datauppsättnings-ID. Du kan använda datauppsättnings-ID:t i steg 4 för att lägga till rader i en datauppsättning. 
 
-Om du vill skicka data till en Power BI-datauppsättning, måste du referera till tabellen i den datauppsättningen. För att referera till en tabell i en datauppsättning, måste du först hämta ett **datauppsättnings-ID**. Du kan hämta ett **datauppsättnings-ID** med hjälp av åtgärden [Get Dataset By ID](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasetbyid) (Hämta datauppsättning efter ID). Åtgärden **Get Dataset By ID** returnerar en JSON-sträng som innehåller en lista över alla datauppsättningar i Power BI. Det rekommenderade sättet att deserialisera en JSON-sträng är med [Newtonsoft.Json](http://www.newtonsoft.com/json).
+Om du vill skicka data till en Power BI-datauppsättning, måste du referera till tabellen i den datauppsättningen. För att referera till en tabell i en datauppsättning, måste du först hämta ett **datauppsättnings-ID**. Du får ett **datauppsättnings-ID** med hjälp av åtgärden [Get Dataset](/rest/api/power-bi/datasets/getdatasets). Åtgärden **Get Dataset** returnerar en JSON-sträng som innehåller en lista över alla datauppsättningar i Power BI. Det rekommenderade sättet att deserialisera en JSON-sträng är med [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
 Så här hämtar du en datauppsättning.
 
