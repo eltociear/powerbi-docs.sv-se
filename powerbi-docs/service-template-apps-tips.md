@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408343"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791811"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -126,6 +126,7 @@ Mallappar kan publiceras i AppSource. Följ dessa riktlinjer innan du skickar in
 
 * Se till att du skapar en mallapp med engagerande exempeldata som kan hjälpa den som installerar att förstå vad appen kan göra (tom rapport och instrumentpanel godkänns inte).
 Mallapparna stöder bara appar med exempeldata så var noga med att markera kryssrutan för statisk app. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Generellt sett kan endast program med värdefulla funktioner godkännas för allmänt bruk på AppSource. Program med exempeldata måste antingen ha ett statistiskt eller vägledande värde.
 * Ha anvisningar som valideringsteamet ska följa som innehåller autentiseringsuppgifter och parametrar som krävs för att ansluta till data.
 * Programmet måste innehålla en appikon i Power BI och i ditt CPP-erbjudande. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Landningssida konfigurerad. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)

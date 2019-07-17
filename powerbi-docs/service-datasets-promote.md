@@ -7,21 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 366f80ccb1db2d226a80528da610b15082c44ed6
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461383"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567367"
 ---
 # <a name="promote-your-dataset-preview"></a>Höja upp din datamängd (förhandsversion)
 
 Dina Power BI-rapportskapare kan nu ha åtkomst till många olika datamängder. Därför behöver företag vägleda dem till tillförlitliga, högkvalitativa datamängder. Power BI erbjuder två sätt att *rekommendera* datamängder:
 
-- **Upphöjning**: Som datamängdsägare kan du höja upp dina egna datamängder när de är redo för generell användning. Upphöjning stöder en samarbetsinriktade spridningen av datamängder i organisationer. Den här artikeln handlar om att höja upp din datamängd.
+- **Upphöjning**: Som datamängdsägare kan du höja upp dina egna datamängder när de är redo för generell användning. Alla medlemmar i arbetsytan med skrivbehörighet kan flytta upp en datauppsättning. Det finns inga begränsningar som kan flytta upp en datauppsättning. Upphöjning stöder en samarbetsinriktade spridningen av datamängder i organisationer. Den här artikeln handlar om att höja upp din datamängd.
 - **Certifiering**: Du kan begära certifiering för en upphöjd datamängd. En utvald grupp med användare som definieras i klientorganisationsadministratörens inställningen **Datamängdscertifiering** avgör vilka datamängder som ska certifieras. Mer information finns i [Certifiera datamängder (förhandsversion)](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Höja upp en datamängd

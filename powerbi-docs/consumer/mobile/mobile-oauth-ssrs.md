@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2018
-ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.date: 07/03/2019
+ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559069"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567808"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
 
 Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mobilappen för att ansluta till Power BI-rapportservern och SQL Server Reporting Services 2016 eller senare.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+![Anslut till en server](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
 Du kan ansluta till Power BI-rapportservern och Reporting Services via OAuth för att visa mobila rapporter eller KPI:er. Windows Server 2016 innehåller vissa förbättringar av rolltjänsten Web Application Proxy (WAP) för att tillåta den här typen av autentisering.
 
@@ -118,7 +118,7 @@ Du kan skapa gruppen med följande steg.
    > [!NOTE]
    > Denna URL är skiftlägeskänslig!
 
-   *https://< report server url >/reports*
+   *https://< report server url >/*
 
    ![Guide 03 för ADFS-programgrupp](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Välj **Nästa**.
@@ -209,7 +209,7 @@ När du lägger till WAP-appen måste du ställa in BackendServerAuthenticationM
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-id.png)
+![Lägg till programgrupp](media/mobile-oauth-ssrs/wap-application-id.png)
 
 Kör följande kommando för att ställa in BackendServerAuthenticationMode på att använda ID från WAP-appen.
 
@@ -217,21 +217,19 @@ Kör följande kommando för att ställa in BackendServerAuthenticationMode på 
 Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -BackendServerAuthenticationMode IntegratedWindowsAuthentication
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-backendauth.png)
+![Guiden Lägg till en programgrupp](media/mobile-oauth-ssrs/wap-application-backendauth.png)
 
 ## <a name="connecting-with-the-power-bi-mobile-app"></a>Anslut med Power BI-appen
 
 Anslut Reporting Services-instans i Power BI-appen. Ange den **externa URL:en** för WAP-programmet.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
+![Skriv din serveradress](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
 När du väljer **Anslut** omdirigeras du till inloggningssidan för ADFS. Ange giltiga autentiseringsuppgifter för domänen.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Logga in på ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 När du har valt **Logga in** visas element från Reporting Services-servern.
-
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 ## <a name="multi-factor-authentication"></a>Multifaktorautentisering
 
@@ -239,9 +237,9 @@ Du kan aktivera multifaktorautentisering att göra din miljö ännu säkrare. L�
 
 ## <a name="troubleshooting"></a>Felsökning
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Du får felmeddelandet Det gick inte att logga in på SSRS-servern. Verifiera serverkonfigurationen.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server"></a>Du får felmeddelandet ”Det gick inte att logga in på SSRS-servern”
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
+![Felmeddelandet ”Det gick inte att logga in på SSRS-servern”](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
 Du kan ställa in [Fiddler](http://www.telerik.com/fiddler) så att den fungerar som proxy för dina mobila enheter för att se var begäran stoppades. Om du vill aktivera Fiddler-proxyn för din telefon måste du installera [CertMaker för iOS och Android](http://www.telerik.com/fiddler/add-ons) på enheten som kör Fiddler. Detta är ett tillägg från Telerik för Fiddler.
 

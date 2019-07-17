@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 17a8e1c9e0d46a56d6b6ff3e46c0fda6da8ffe12
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816673"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567828"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Använda datamängder mellan arbetsytor (förhandsversion)
 
@@ -23,7 +23,7 @@ Business Intelligence är en samarbetsinriktad aktivitet. Det är viktigt att up
 
 ![Välja en delad datamängd](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Power BI gör det enkelt för datamängdsskapare att certifiera eller rekommendera datamängder så att andra kan upptäcka dem. Sedan hittar rapportförfattare högkvalitativa, officiella datamängder som de kan använda var som helst i Power BI. Datamängdsägare kan kontrollera vem som har åtkomst till deras data med hjälp av [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Klientorganisationsadministratörer har klientorganisationsinställning för att [styra användningen av datamängder mellan arbetsytor](service-datasets-admin-across-workspaces.md).
+I Power BI kan datamängdsskapare att *certifiera* eller *rekommendera* datamängder så att andra kan upptäcka dem. På så sätt kan rapportförfattare veta vilken datauppsättning har hög kvalitet och är officiella och de kan använda dessa datauppsättningar, oavsett var i Power BI de skriver. Datamängdsägare kan kontrollera vem som har åtkomst till deras data med hjälp av [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Klientorganisationsadministratörer har klientorganisationsinställning för att [styra användningen av datamängder mellan arbetsytor](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Delning av datamängder och den nya arbetsytefunktionen
 

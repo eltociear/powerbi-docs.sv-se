@@ -7,163 +7,161 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2018
+ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 04676ee789b90eb09cbed3bafb623e8e9b89e4e4
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 310afbf845550eaca666543397dd78eb0a0d15dc
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720867"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791979"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: Ta en rundtur
 
-Det här branschexemplets instrumentpanel och underliggande rapport analyserar försäljningsdata för sålda artiklar över flera butiker och distrikt. Måtten jämför årets resultat med förra årets inom följande områden: försäljning, enheter, bruttomarginal och avvikelse, samt lagringsanalys. Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com)) som har anonymiserats.
+Exempelinnehållspaketet detaljhandelsanalys innehåller en instrumentpanel, rapport och datamängd och analyserar försäljningsdata för detaljhandeln som har sålts i flera butiker och distrikt. Måtten jämför årets resultat med förra årets inom försäljning, enheter, bruttomarginal och skillnader, samt lagringsanalys. 
 
-![](media/sample-retail-analysis/retail1.png)
+![Instrumentpanelen för Exempel på detaljhandelsanalys](media/sample-retail-analysis/retail1.png)
 
-## <a name="prerequisites"></a>Förutsättningar
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
 
- Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), en [.pbix-fil](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) eller en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529778).
+De här självstudierna använder Power BI-tjänsten och utforskar innehållspaketet med detaljhandelsanalys. Eftersom rapportupplevelserna är så lika i Power BI Desktop och tjänsten kan du även följa med via .pbix-exempelfilen i Power BI Desktop. 
 
+Du behöver inte en licens för Power BI för att utforska exempel i Power BI Desktop. Om du inte har en Power BI Pro-licens kan du spara exemplet på Min arbetsyta i Power BI-tjänsten. 
+
+## <a name="get-the-sample"></a>Hämta exemplet
+
+ Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](#get-the-content-pack-for-this-sample), en [.pbix-fil](#get-the-pbix-file-for-this-sample) eller en [Excel-arbetsbok](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
 
-1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
+1. Öppna Power BI-tjänsten (app.powerbi.com), logga in och öppna den arbetsyta där du vill spara exemplet. 
+
+    Om du inte har en Power BI Pro-licens kan du spara exemplet på Min arbetsyta.
+
 2. Längst ned i vänster hörn väljer du **Hämta data**.
+
+    ![Välja Hämta data](media/sample-datasets/power-bi-get-data.png)
+3. På sidan **Hämta data** väljer du **Exempel**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. På sidan Hämta data väljer du ikonen **Exempel**.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Välj **Exempel på detaljhandelsanalys** och sedan **Anslut**.  
   
-   ![Exempel på detaljhandelsanalys](media/sample-retail-analysis/retail16.png)
+   ![Ansluta till exempel](media/sample-retail-analysis/retail16.png)
    
-5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. 
+5. Power BI importerar innehållspaketet och lägger sedan till en ny instrumentpanel, rapport och datamängd till din aktuella arbetsyta.
    
-   ![Exempel på detaljhandelsanalys](media/sample-retail-analysis/retail17.png)
+   ![Post i Exempel på detaljhandelsanalys](media/sample-retail-analysis/retail-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop. 
-
- * [Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+Du kan även ladda ned Exempel på detaljhandelsanalys som en [.pbix-fil](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529778). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
+
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529778). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Starta på instrumentpanelen och öppna rapporten
-1. Välj panelen ”Totalt antal butiker” på instrumentpanelen:
 
-   ![](media/sample-retail-analysis/retail-analysis-7.png)  
+1. I arbetsytan där du sparade exemplet öppnar du fliken **Instrumentpaneler**. Hitta sedan instrumentpanelen **Detaljhandelsanalys** och välj den. 
+2. På instrumentpanelen väljer du panelen **Totalt antal butiker nya och befintliga butiker** vilket öppnar sidan **Översikt över butiksförsäljning** i rapporten Exempel på detaljhandelsanalys. 
 
-   Du kommer då till sidan ”Översikt över butiksförsäljning” i rapporten. Du kan se att vi har 104 butiker totalt, varav 10 är nya. Vi har två kedjor, Fashions Direct och Lindseys. Fashions Directs butiker är större i genomsnitt.
-2. I cirkeldiagrammet väljer du **Fashions Direct**.
+   ![panelen Totalt antal butiker](media/sample-retail-analysis/retail-analysis-7.png)  
 
-   ![](media/sample-retail-analysis/retail3.png)  
+   På den här rapportsidan visas 104 butiker, varav 10 är helt nya. Vi har två kedjor, Fashions Direct och Lindseys. Fashions Directs butiker är större i genomsnitt.
+3. I cirkeldiagrammet **Förra årets försäljning per kedja**, väljer du **Fashions Direct**.
 
-   Observera resultatet i bubbeldiagrammet:
+   ![Diagrammet Årets försäljning per kedja](media/sample-retail-analysis/retail3.png)  
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
+   Observera resultatet i bubbeldiagrammet **Totalförsäljningsvarians %** :
 
-   Distriktet FD-01 har den högsta genomsnittliga försäljningen per kvadratfot, FD-02 har den lägsta avvikelsen i försäljning jämfört med föregående år, FD-03 och FD-04 har de övergripande sämsta resultaten.
-3. Välj enskilda bubblor eller andra diagram för att se korsmarkering och effekten av dina val.
-4. Om du vill återgå till instrumentpanelen markerar du dess namn i det övre navigeringsfältet (synlig sökväg).
+   ![Diagrammet Total försäljningsvarians %](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
 
-   ![](media/sample-retail-analysis/power-bi-breadcrumbs.png)
-5. På instrumentpanelen väljer du panelen ”Årets försäljning”.
+   Distriktet **FD-01** har den högsta genomsnittliga **försäljningen per kvadratfot**, FD-02 har den lägsta **avvikelsen i försäljning** jämfört med föregående år. FD-03 och FD-04 har de övergripande sämsta resultaten.
+4. Välj enskilda bubblor eller andra diagram för att se korsmarkering och effekten av dina val.
+5. Välj **Detaljhandelsanalysexemplet** i det övre navigeringsfältet för att återgå till instrumentpanelen.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png)
+   ![Navigeringsfält](media/sample-retail-analysis/power-bi-breadcrumbs.png)
+6. På instrumentpanelen väljer du panelen **Årsförsäljning för nya och befintliga butiker**, vilket är samma sak som att skriva *Årsförsäljning* i fältet frågor och svar.
 
-   Detta motsvarar att skriva ”Detta års försäljning” i frågerutan.
+   ![Panelen Årsförsäljning](media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png)
 
-   Följande skärm visas:
+   Resultaten för frågor och svar visas:
 
-   ![](media/sample-retail-analysis/retail7.png)
+   ![Årsförsäljning i frågor och svar](media/sample-retail-analysis/retail7.png)
 
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Granska en panel som skapats med Frågor och svar i Power BI
 Låt oss bli lite mer specifika.
 
-1. Lägg till ”Detta års försäljning **per distrikt**” i frågan. Se resultatet: Svaret placeras automatiskt i ett stapeldiagram och ger förslag på andra fraser:
+1. Ändra frågan till *Detta års försäljning* per **distrikt***. Se resultatet: Frågor och svar placerar automatiskt svaret i ett stapeldiagram och ger förslag på andra fraser:
 
-   ![](media/sample-retail-analysis/retail8.png)
-2. Ändra nu frågan till ”Årets försäljning **per postnummer och kedja**”.
+   ![Årets försäljning per distrikt i frågor och svar](media/sample-retail-analysis/retail8.png)
+2. Ändra nu frågan till *Årets försäljning **per postnummer och kedja***.
 
-   Observera hur frågan besvaras med lämpliga diagram samtidigt som du skriver.
+   Observera hur frågan besvaras av Power BI med lämpliga diagram samtidigt som du skriver.
 3. Experimentera med fler frågor och se vilken typ av resultat du får.
 4. När du är klar går du tillbaka till instrumentpanelen.
 
 ## <a name="dive-deeper-into-the-data"></a>Fördjupa dig i datan
 Nu ska vi titta närmare på en mer detaljerad nivå, nämligen distriktens resultat.
 
-1. På instrumentpanelen väljer du den panel som jämför årets försäljning med föregående år.
+1. På instrumentpanelen, väljer du panelen **Årets försäljning, Fjolårets försäljning** vilket öppnar sidan **Månadsförsäljning per distrikt** i rapporten.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
+   ![Panelen Årets försäljning, Fjolårets försäljning](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
 
-   Lägg märke till att det är stora skillnader i Avvikelse i % jämfört med föregående år, där januari, april och juli är särskilt dåliga månader.
+   I diagrammet **Totalförsäljningsvarians % per räkenskapsmånad** ser du de stora skillnaderna i avvikelse i % jämfört med föregående år, där januari, april och juli är särskilt dåliga månader.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
+   ![Diagrammet Total försäljningsvarians % efter räkenskapsmånad](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
 
    Låt oss se om vi kan upptäcka vad problemet är.
-2. Markera bubbeldiagrammet och välj **020-Herr**.
+2. I bubbeldiagrammet väljer du bubblan **020-Herr**.
 
-   ![](media/sample-retail-analysis/retail11.png)  
+   ![Välj 020-Herr](media/sample-retail-analysis/retail11.png)  
 
-   Observera att herrkategorin inte var lika kraftigt påverkad i april som den övergripande verksamheten, men att januari och juli ändå var problemmånader.
-3. Välj nu **bubblan 010-Dam**.
+   Observera att även om herrkategorin inte var lika kraftigt påverkad i april som den övergripande verksamheten var januari och juli ändå problemmånader.
+1. Välj **bubblan 010-Dam**.
 
-   ![](media/sample-retail-analysis/retail12.png)
+   ![Välj 010-Dam](media/sample-retail-analysis/retail12.png)
 
-   Observera att damkategorin hade ett mycket sämre resultat än den övergripande verksamheten under alla månader, och mycket värre under nästan alla månader jämfört med föregående år.
-4. Välj bubblan igen för att ta bort filtret.
+   Observera att damkategorin hade ett mycket sämre resultat än den övergripande verksamheten under alla månader och under nästan alla månader jämfört med föregående år.
+1. Välj bubblan igen för att ta bort filtret.
 
 ## <a name="try-out-the-slicer"></a>Testa utsnittet
 Nu ska vi titta på hur det går för vissa distrikt.
 
-1. Välj Allan Guinot i utsnittet uppe till vänster.
+1. Välj **Allan Guinot** i utsnittet **Distriktchef** uppe till vänster.
 
-   ![](media/sample-retail-analysis/retail13.png)
+   ![Välj Allan Guinot](media/sample-retail-analysis/retail13.png)
 
-   Observera att Allans distrikt gick bättre än förväntat mot förra året i mars och juni.
-2. Nu, medan Allan fortfarande är markerad, väljer du bubblan Dam.
+   Observera att Allans distrikt gick bättre än förväntat i mars och juni jämfört med förra året.
+2. Med **Allan Guinot** fortfarande markerad väljer du bubblan **Dam-10** i bubbeldiagrammet.
 
-   ![](media/sample-retail-analysis/power-bi-allan.png)
+   ![Allan Guinot och Dam-10 har valts](media/sample-retail-analysis/power-bi-allan.png)
 
-   Observera att för damkategorin i hans distrikt uppnåddes aldrig förra året volym.
+   Observera att Allans distrikt för kategorin Dam-10 inte uppnådde fjolårets volym.
 3. Utforska andra distriktschefer och kategorier – vilka andra insikter kan du hitta?
 4. När du är klar går du tillbaka till instrumentpanelen.
 
-## <a name="what-is-our-data-telling-us-about-sales-growth-this-year"></a>Vad säger våra data om försäljningstillväxten i år?
-Det sista område som vi ska utforska är vår tillväxt – det har öppnats nya butiker det här året.
+## <a name="what-the-data-says-about-sales-growth-this-year"></a>Datan ger följande information om årets försäljning
+Det sista området som vi ska utforska är vår tillväxt genom att titta på de nya butikerna som vi öppnade i år.
 
-1. Välj panelen ”Butiker som öppnats detta år”.
+1. Välj panelen **Butiker som öppnats detta år efter öppningsmånad, kedja** vilket öppnar sidan **Analys av nya butiker** i rapporten.
 
-   ![](media/sample-retail-analysis/retail15.png)
+   ![Sidan Analys av nya butiker](media/sample-retail-analysis/retail15.png)
 
-   Som framgår i panelen har det öppnats fler Fashion Direct-butiker än Lindseys-butiker i år.
-2. Se diagrammet ”Försäljning per kvadratfot och namn”:
+   Som framgår i panelen har det öppnats fler Fashions Direct-butiker än Lindseys-butiker i år.
+2. Se diagrammet **Försäljning per kvadratfot och namn**:
 
-   ![](media/sample-retail-analysis/retail14.png)
+   ![Diagrammet Försäljning per kvadratfot och namn](media/sample-retail-analysis/retail14.png)
 
-    Det är rätt stor skillnad i den genomsnittliga försäljningen per kvadratfot för de nya butikerna.
-3. Klicka på förklaringsobjektet för Fashions Direct i det övre högra diagrammet. Observera att till och med i samma kedja utklassar den bästa butiken (Winchester Fashions Direct) den sämsta butiken (Cincinnati 2 Fashions Direct) med $21.22 mot $12.86.
+    Lägg märke till skillnaden i genomsnittlig försäljning/kvadratfot mellan de nya butikerna.
+3. Välj förklaringsobjektet **Fashions Direct** i **Antal öppna butiker per öppningsmånad och kedja** i det övre högra diagrammet. Observera att till och med i samma kedja utklassar den bästa butiken (Winchester Fashions Direct) den sämsta butiken (Cincinnati 2 Fashions Direct) med 21,22 USD mot 12,86 USD.
 
-   ![](media/sample-retail-analysis/power-bi-lindseys.png)
-4. Klicka på Winchester Fashions Direct i utsnittet och observera linjediagrammet. De första försäljningssiffrorna rapporterades i februari.
-5. Klicka på Cincinnati 2 Fashions Direct i utsnittet. Du ser då i linjediagrammet att den öppnades i juni och verkar vara den sämst presterande butiken.
-6. Som tidigare utforskar du genom att klicka på andra staplar, linjer och bubblor i diagrammen och se vilka insikter du kan upptäcka.
+   ![Fashions Direct har valts](media/sample-retail-analysis/power-bi-lindseys.png)
+4. Markera **Winchester Fashions Direct** i utsnittet **Namn** och observera linjediagrammet. De första försäljningssiffrorna rapporterades i februari.
+5. Klicka på **Cincinnati 2 Fashions Direct** i utsnittet. Du ser då i linjediagrammet att den öppnades i juni och verkar vara den sämst presterande butiken.
+6. Utforska genom att klicka på andra staplar, linjer och bubblor i diagrammen och se vilka insikter du kan upptäcka.
 
-Det här är en säker miljö att testa i. Du kan alltid välja att inte spara ändringarna. Fast du sparar dem kan du alltid gå till Hämta data för att få en ny kopia av exemplet.
+## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
+Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
-## <a name="connect-to-your-data"></a>Anslut till dina data
-Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om detaljhandelsdata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).
-
-## <a name="next-steps"></a>Nästa steg
-* [Ladda ned innehållspaketet med exempel på detaljhandelsanalys](sample-tutorial-connect-to-the-samples.md)
-* [Hämta en zip-fil med alla exempelfiler](http://go.microsoft.com/fwlink/?LinkId=535020)    
-* [Ladda ned Excel-arbetsboken för det här Power BI-exemplet](http://go.microsoft.com/fwlink/?LinkId=529778)    
-* [Hämta data (för Power BI)](service-get-data.md)    
-* [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)    
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om exempeldata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7e9d8779480eb7a00dacfc9fc52fc81987629e7b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136654"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791940"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Använda inkrementell uppdatering med Power BI-dataflöden
 
@@ -33,7 +33,7 @@ Med inkrementell uppdatering för Power BI-dataflöden krävs att arbetsytan dä
 
 Ett dataflöde kan innehålla många entiteter. Inkrementell uppdatering har ställts in på enhetsnivå, vilket tillåter att ett dataflöde har både fullständigt uppdaterade entiteter och stegvis uppdaterade entiteter.
 
-Om du vill konfigurera en inkrementell uppdaterad entitet, börja med att konfigurera din entitet precis som vilken annan entitet som helst. Mer information om hur du ställer in dataflöde finns [självbetjänad Förbered i Power BI](service-dataflows-overview.md).
+Om du vill konfigurera en inkrementell uppdaterad entitet, börja med att konfigurera din entitet precis som vilken annan entitet som helst. Mer information om hur du ställer in dataflöde finns i [Självbetjänad dataförberedelse i Power BI](service-dataflows-overview.md).
 
 När dataflödet skapas och sparas, väljer du ikonen **inkrementell uppdatering** i entitetsvyn enligt följande bild:
 
@@ -156,8 +156,8 @@ Den här artikeln beskriver inkrementell uppdatering av dataflöden. Här följe
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)

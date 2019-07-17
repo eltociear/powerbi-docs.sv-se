@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418754"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791990"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
 
@@ -23,17 +23,21 @@ Innehållspaketet ”Exempel på kundlönsamhet” innehåller en instrumentpane
 
 ![Instrumentpanelen för Exemplet på kundlönsamhet](media/sample-customer-profitability/power-bi-dash.png)
 
-Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning/-app, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
 
-De här självstudierna använder Power BI-tjänsten och innehållspaketet ”Exempel på kundlönsamhet”. Eftersom rapportupplevelserna är så lika kan du även följa med via Power BI Desktop och .pbix-exempelfilen. 
+De här självstudierna använder Power BI-tjänsten och innehållspaketet exempel på kundlönsamhet. Eftersom rapportupplevelserna är så lika i Power BI Desktop och tjänsten kan du även följa med via .pbix-exempelfilen i Power BI Desktop. 
 
-## <a name="prerequisites"></a>Förutsättningar
+Du behöver inte en licens för Power BI för att utforska exempel i Power BI Desktop. Om du inte har en Power BI Pro-licens kan du spara exemplet på Min arbetsyta i Power BI-tjänsten. 
+
+## <a name="get-the-sample"></a>Hämta exemplet
 
 Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](#get-the-content-pack-for-this-sample), en [.pbix-fil](#get-the-pbix-file-for-this-sample) eller en [Excel-arbetsbok](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
 
 1. Öppna Power BI-tjänsten (app.powerbi.com), logga in och öppna den arbetsyta där du vill spara exemplet.
+
+   Om du inte har en Power BI Pro-licens kan du spara exemplet på Min arbetsyta.
 
 2. Längst ned i vänster hörn väljer du **Hämta data**.
 
@@ -135,8 +139,8 @@ Nu ska vi titta på två teammedlemmar i detalj och se vilka insikter som kan up
 1. I utsnittet **Chef** till vänster kan du välja Andrews namn för att filtrera rapportsidan så att endast information om Andrew visas:
 
    * En snabb KPI finns i Andrews **Intäktsstatus (år totalt)** ; den är grön, vilket innebär att han presterar bra.
-   * Diagrammet **Intäkter i % av avvikelse i budget efter månad och verkställande** visar att Andrew presterar bra överlag, förutom en svacka i februari. Hans starka region är den östra. Han hanterar 49 kunder och 5 av 7 produkter. Hans bruttomarginal i % är varken den högsta eller den lägsta.
-   * Diagrammet **Intäkter i år och varians i intäktsprocent mot budget efter månad** visar en stadig trend med jämn vinst. Men om du filtrerar genom att välja rutan för **centrala** i träddiagrammet för regioner ser du att Andrew endast har intäkter i mars och endast i Indiana. Är detta avsiktligt eller något som behöver undersökas?
+   * Diagrammet **Intäkter i % av avvikelse i budget efter månad och verkställande** visar att Andrew presterar bra, förutom en svacka i februari. Hans starka region är den östra. Han hanterar 49 kunder och fem av sju produkter. Hans bruttomarginal i % är varken den högsta eller den lägsta.
+   * Diagrammet **Intäkter i år och varians i intäktsprocent mot budget efter månad** visar en stadig trend med jämn vinst. Men om du filtrerar genom att välja rutan för **centrala** i träddiagrammet för regioner ser du att Andrew endast har intäkter i mars och endast i Indiana. Är denna trend avsiktlig eller något som behöver undersökas?
 
 2. Vi fortsätter till Valery. I utsnittet **Chef** väljer du Valerys namn för att filtrera rapportsidan så att endast data om henne visas. 
 
@@ -205,5 +209,5 @@ Vi tar en titt på distributionsbranschen.
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
 Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
 
-Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om kunddata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).
+Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om exempeldata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).
 
