@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418704"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271990"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
@@ -66,7 +66,7 @@ WFE-klustret närmast användaren hanterar inloggnings- och autentiseringssekven
 
 **Gatewayrollen** fungerar som en gateway mellan användarförfrågningar och Power BI-tjänsten. Användarna interagerar inte direkt med några andra roller utöver gatewayrollen.
 
-**Viktigt!** Observera att det _endast_ är rollerna Azure API Management (**APIM**) och Gateway (**GW**) som kan nås via offentligt Internet. De tillhandahåller funktioner för autentisering, auktorisering, DDoS-skydd, begränsning, belastningsutjämning, routning m.m.
+**Viktigt:** Observera att det _endast_ är rollerna Azure API Management (**APIM**) och Gateway (**GW**) som kan nås via offentligt Internet. De tillhandahåller funktioner för autentisering, auktorisering, DDoS-skydd, begränsning, belastningsutjämning, routning m.m.
 
 Den streckade linjen i bilden för **serverdelsklustret** ovan visar gränsen mellan de enda två roller som är tillgängliga för användarna (till vänster om den streckade linjen) och de roller som endast kan nås av systemet. När en autentiserad användare ansluter till Power BI-tjänsten accepteras och hanteras anslutningen och alla begäranden från klienten av **gatewayrollen** och **Azure API Management**, som sedan interagerar med resten av Power BI-tjänsten för användarens räkning. Om till exempel en klient försöker visa en instrumentpanel accepterar **gatewayrollen** förfrågan och skickar sedan separat en begäran till **presentationsrollen** om att hämta de data som behövs för att webbläsaren ska kunna återge instrumentpanelen.
 
@@ -355,8 +355,8 @@ I följande tabell visas stöd för certifikatbaserad autentisering (CBA) för P
 
 | **Stöd för CBA** | **iOS** | **Android** | **Windows** |
 | --- | --- | --- | --- |
-| **Power BI** (logga in på tjänsten) | stöds | stöds | Stöds ej |
-| **SSRS ADFS** (anslut till SSRS-servern) | Stöds ej | Stöds | Stöds ej |
+| **Power BI** (logga in på tjänsten) | stöds | stöds | Stöds inte |
+| **SSRS ADFS** (anslut till SSRS-servern) | Stöds inte | Stöds | Stöds inte |
 
 Power BI Mobile-appar kommunicerar aktivt med Power BI-tjänsten. Telemetri används för att samla in användningsstatistik för mobilappar och liknande data, som överförs till tjänster för övervakning av användning och aktivitet. Det skickas ingen personlig information med telemetridata.
 
@@ -382,7 +382,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 * **Power BI-autentiseringsuppgifter och autentiseringsuppgifter för domän:** Användare loggar in till på Power BI med en e-postadress. När en användare försöker ansluta till en dataresurs skickar Power BI e-postadressen för inloggning på Power BI som autentiseringsuppgifter. För domänanslutna resurser (antingen lokala eller molnbaserade) matchas e-postadressen för inloggning med ett _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) av katalogtjänsten för att fastställa om det finns tillräckligt med referenser för att tillåta åtkomst. För organisationer som använder arbetsbaserade e-postadresser för att logga in på Power BI (samma e-postadress som de använder för att logga in på arbetsresurser, till exempel _david@contoso.com_ ) kan mappningen ske sömlöst. För organisationer som inte använde arbetsbaserade e-postadresser (till exempel _david@contoso.onmicrosoft.com_ ) måste katalogmappning upprättas för att tillåta åtkomst till lokala resurser med inloggningsuppgifter för Power BI.
 
-* **SQL Server Analysis Services och Power BI:** För organisationer som använder lokala SQL Server Analysis Services erbjuder Power BI den lokala datagatewayen för Power BI (som är en **gateway** enligt referenserna i föregående avsnitt).  Den lokala datagatewayen för Power BI kan tillämpa säkerhet på rollnivå (RLS) på datakällor. Mer information om RLS finns i **Användarautentisering till datakällor** tidigare i dokumentet. Du kan även läsa en djupgående artikel om [Power BI Gateway](service-gateway-manage.md).
+* **SQL Server Analysis Services och Power BI:** För organisationer som använder lokala SQL Server Analysis Services erbjuder Power BI den lokala datagatewayen för Power BI (som är en **gateway** enligt referenserna i föregående avsnitt).  Den lokala datagatewayen för Power BI kan tillämpa säkerhet på rollnivå (RLS) på datakällor. Mer information om RLS finns i **Användarautentisering till datakällor** tidigare i dokumentet. Mer information om gatewayer finns i [lokal datagateway](service-gateway-onprem.md).
 
   Dessutom kan organisationer använda Kerberos för **enkel inloggning** (SSO) och smidigt ansluta från Power BI till lokala datakällor såsom SQL Server, SAP HANA och Teradata. Mer information och specifika konfigurationskrav finns i avsnittet om att [**använda Kerberos för enkel inloggning från Power BI till lokala datakällor**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -422,7 +422,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 **Vilka portar används av den lokala datagatewayen och den personliga gatewayen? Finns det några domännamn som måste vara tillåtas för anslutningsändamål?**
 
-* Ett ingående svar på den här frågan finns via följande länk: [Power BI Gateway](service-gateway-manage.md)
+* Ett ingående svar på den här frågan finns via följande länk: [Gateway-portar](/data-integration/gateway/service-gateway-communication#ports)
 
 **Hur används återställningsnycklar och var lagras de vid arbete med den lokala datagatewayen? Hur går säker hantering av autentiseringsuppgifter till?**
 
@@ -438,7 +438,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
   - **AMQP 1.0 – TCP + TLS**: Det här protokollet kräver att portarna 443, 5671–5672 och 9350–9354 öppnas för utgående kommunikation. Det här protokollet föredras eftersom det medför lägre omkostnader för kommunikation.
 
-  - **HTTPS – WebSockets över HTTPS + TLS**: Det här protokollet använder endast port 443. WebSocket initieras av ett enda HTTP CONNECT-meddelande. När kanalen har upprättats sker är kommunikationen i stort sett via TCP + TLS. Du kan tvinga gatewayen att använda det här protokollet genom att ändra en inställning som beskrivs i [artikeln Lokal gateway](service-gateway-manage.md).
+  - **HTTPS – WebSockets över HTTPS + TLS**: Det här protokollet använder endast port 443. WebSocket initieras av ett enda HTTP CONNECT-meddelande. När kanalen har upprättats sker är kommunikationen i stort sett via TCP + TLS. Du kan tvinga gatewayen att använda det här protokollet genom att ändra en inställning som beskrivs i den [lokala gatewayartikeln](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Vad har Azure CDN för funktion i Power BI?**
 
@@ -470,7 +470,7 @@ Följande frågor är vanliga frågor och svar om säkerhet för Power BI. Dessa
 
 * De anslutningar som upprättas för kunder med Power BI Premium-prenumerationer implementerar en [Azure Business-to-Business-auktoriseringsprocess (B2B)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) med hjälp av Azure Active Directory (AD) för att möjliggöra åtkomstkontroll och auktorisering. Power BI hanterar anslutningar från Power BI Premium-prenumeranter till Power BI Premium-resurser på samma sätt som för andra Azure AD-användare.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Power BI-tjänstens arkitektur baseras på två kluster – ett för webbklientdelen (WFE) och ett för serverdelen. WFE-klustret är ansvarigt för den första anslutningen och autentiseringen till Power BI-tjänsten. Efter att den har autentiseras hanterar serverdelen alla efterföljande användarinteraktioner. Power BI använder Azure Active Directory (AAD) till att lagra och hantera användaridentiteter samt hanterar lagringen av data och metadata med hjälp av Azure Blob respektive Azure SQL Database.
 
@@ -486,10 +486,9 @@ Mer information om Power BI finns i följande resurser.
 
 - [Grupper i Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Komma igång med Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](service-gateway-manage.md)
 - [Power BI REST API – Översikt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API-referens](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Lokal datagateway)](service-gateway-manage.md)
+- [On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)
 - [Power BI och ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationella moln i Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
