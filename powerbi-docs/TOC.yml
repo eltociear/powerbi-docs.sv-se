@@ -723,10 +723,6 @@
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: Felsöka panelfel
               href: refresh-troubleshooting-tile-errors.md
-            - name: Felsöka den lokala datagatewayen
-              href: service-gateway-onprem-tshoot.md
-            - name: Felsöka Power BI-gatewayen – personligt
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Felsöka analysfunktionen i Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
@@ -1279,38 +1275,38 @@
   items:
     - name: Översikt
       items:
-        - name: Vad är Power BI-gatewayer?
-          href: service-gateway-getting-started.md
-    - name: Självstudier
-      items:
-        - name: Anslut till SQL Server-data
-          href: service-gateway-sql-tutorial.md
+        - name: Vad är en lokal datagateway?
+          href: service-gateway-onprem.md
     - name: Begrepp
       items:
         - name: Vägledning för distribution av en datagateway
           href: service-gateway-deployment-guidance.md
         - name: Vanliga frågor och svar om lokal datagateway
-          href: service-gateway-onprem-faq.md
+          href: service-gateway-power-bi-faq.md
     - name: Gör så här
       items:
-        - name: Installera gatewayer
-          href: service-gateway-install.md
-        - name: Hantera gatewayer
-          href: service-gateway-manage.md
-        - name: Övervaka gatewayprestanda
-          href: service-gateway-performance-monitoring.md
-        - name: Hantera företagets datakälla – Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: Hantera företagets datakälla – SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: Hantera företagets datakälla – SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: Hantera din datakälla – Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: Hantera företagets datakälla – import/schemalagd uppdatering
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Sammanfoga lokala datakällor och molndatakällor
-          href: service-gateway-mashup-on-premises-cloud.md
+        - name: Lokal datagateway – på djupet
+          href: service-gateway-onprem-indepth.md
+        - name: Lokal datagateway (personligt läge)
+          href: service-gateway-personal-mode.md
+        - name: Hantera användare och administratörer
+          href: service-gateway-manage-admins.md
+        - name: Hantera datakällor
+          items:
+            - name: Hantera datakällor
+              href: service-gateway-data-sources.md
+            - name: Hantera företagets datakälla – Analysis Services
+              href: service-gateway-enterprise-manage-ssas.md
+            - name: Hantera företagets datakälla – SAP HANA
+              href: service-gateway-enterprise-manage-sap.md
+            - name: Hantera företagets datakälla – SQL
+              href: service-gateway-enterprise-manage-sql.md
+            - name: Hantera din datakälla – Oracle
+              href: service-gateway-onprem-manage-oracle.md
+            - name: Hantera företagets datakälla – import/schemalagd uppdatering
+              href: service-gateway-enterprise-manage-scheduled-refresh.md
+            - name: Sammanfoga lokala datakällor och molndatakällor
+              href: service-gateway-mashup-on-premises-cloud.md
         - name: Aktivera enkel inloggning (SSO)
           items:
             - name: Enkel inloggning (SSO) – översikt
@@ -1321,24 +1317,16 @@
               href: service-gateway-sso-kerberos-resource.md
             - name: Enkel inloggning (SSO) – SAML
               href: service-gateway-sso-saml.md
-        - name: Konfigurera proxyinställningar
-          href: service-gateway-proxy.md
-        - name: Kluster med hög tillgänglighet för lokala datagateway
-          href: service-gateway-high-availability-clusters.md
-        - name: Lokal datagateway
-          href: service-gateway-onprem.md
-        - name: Lokal datagateway – på djupet
-          href: service-gateway-onprem-indepth.md
-        - name: Lokal datagateway (personligt läge)
-          href: service-gateway-personal-mode.md
-        - name: Anpassade anslutningar
-          href: service-gateway-custom-connectors.md
-        - name: Felsöka den lokala datagatewayen
+        - name: Felsöka gatewayen
           href: service-gateway-onprem-tshoot.md
+        - name: Felsöka gatewayen (personligt läge)
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Använda anpassade anslutningsappar
+          href: service-gateway-custom-connectors.md
     - name: Resurser
       items:
         - name: Månatliga uppdateringar för gateway
-          href: service-gateway-monthly-updates.md
+          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
 - name: Administration
   items:
     - name: Översikt
