@@ -1289,8 +1289,6 @@
           href: service-gateway-onprem-indepth.md
         - name: Lokal datagateway (personligt läge)
           href: service-gateway-personal-mode.md
-        - name: Hantera användare och administratörer
-          href: service-gateway-manage-admins.md
         - name: Hantera datakällor
           items:
             - name: Hantera datakällor
