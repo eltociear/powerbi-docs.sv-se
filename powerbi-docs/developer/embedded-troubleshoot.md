@@ -110,7 +110,7 @@ Du kan lösa problemet genom att trimma ”oauth2/authorize/” i slutet av utf�
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Autentiseringen misslyckades med AADSTS70002 eller AADSTS50053
 
-** _(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)_ **
+** _(AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)_**
 
 Om du använder Power BI Embedded och Azure AD:s direktautentisering och du får meddelanden när du loggar in som ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials (Fel vid validering av autentiseringsuppgifter). AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password (Du har försökt logga in för många gånger med ett felaktigt användar-ID eller lösenord)***, beror detta på att direktautentisering som standard inte längre används sedan den 14 juni 2018.
 
@@ -162,7 +162,7 @@ Prova stegen nedan för att verifiera vad det är.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: The grant requires admin permission (Beviljandet kräver administratörsbehörigheter)
 
-**_Symptom:_ **<br>
+**_Symptom:_**<br>
 När en icke-administratörsanvändare försöker logga in i ett program första gången för att bevilja medgivande och följande fel visas:
 
 * ConsentTest kräver behörighet som bara kan ges av en administratör för att komma åt resurser i din organisation. Be en administratör bevilja behörighet till den här appen innan du använder den.
@@ -172,10 +172,10 @@ När en icke-administratörsanvändare försöker logga in i ett program första
 
 En administratörsanvändare kan logga in och bevilja medgivande.
 
-**_Rotorsak:_ **<br>
+**_Rotorsak:_**<br>
 Användargodkännande har inaktiverats för klientorganisationen.
 
-**_Det finns flera möjliga lösningar:_ **
+**_Det finns flera möjliga lösningar:_**
 
 *Aktivera användargodkännande för hela klientorganisationen (alla användare, alla program)*
 
