@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345483"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270833"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Skapa en inbäddad datakälla för sidnumrerade rapporter i Power BI-tjänsten
 
@@ -32,7 +32,7 @@ För följande datakällor ska du använda alternativet [SQL Server Analysis Ser
 
 - Power BI Premium datasets
 
-Sidnumrerade rapporter ansluter till lokala datakällor via en [Power BI-gateway](service-gateway-getting-started.md). Du ställer in gatewayen när du har publicerat rapporten till Power BI-tjänsten.
+Sidnumrerade rapporter ansluter till lokala datakällor via en [Power BI-gateway](service-gateway-onprem.md). Du ställer in gatewayen när du har publicerat rapporten till Power BI-tjänsten.
 
 Mer information finns i [Rapportdata i Power BI Report Builder](report-builder-data.md).
 

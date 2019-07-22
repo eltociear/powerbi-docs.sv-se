@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 68e21e14227aff538c56951249edbddc249d68eb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
+ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497979"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "68362709"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Övervaka Premium-funktioner med appen
 
@@ -41,7 +41,7 @@ Ha tålamod. Det tar några minuter att installera och uppdatera mått. Om appen
 
 Om du vill kontrollera den senaste tiden som Premium Capacity Metrics-appen uppdaterades klickar du på **Inställningar** > **Datauppsättningar** > **Power BI Premium Capacity Metrics** > **Uppdateringshistorik**. 
 
-![Uppdateringshistorik i Inställningar](media/settings-refresh-history.png)
+![Uppdateringshistorik i Inställningar](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
 Den senaste uppdateringen visas. Du kan också klicka på **Uppdateringshistorik** för att se schemalagda och uppdateringar och på begäran-uppdateringar.
 

@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385445"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289852"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Diagnostisk loggning för Power BI Embedded i Azure
 
@@ -22,7 +22,6 @@ Med [diagnostikloggarna för Azure-resurser](https://docs.microsoft.com/azure/mo
 Med hjälp av diagnostik kan du få hjälp i vissa situationer, till exempel med att
 
 * identifiera långvariga eller problematiska frågor
-* identifiera fel när du når gränsen för din kapacitet
 * härleda [kapacitetsmått](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/)
 * spåra användning av specifika datamängder.
 
@@ -127,9 +126,6 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 | JobID | 0 | Jobb-ID för utveckling. |
 | ObjectID | 464 | Objekt-ID |
 | ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT Customer | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Objektsökväg. En kommaavgränsad lista över överordnade objekt som startar med objektets överordnade objekt. |
-| ObjectReference | <Object><Table>SalesLT Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Objektreferens. Kodad som XML för alla överordnade, med taggar för att beskriva objektet. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Tid då händelsen avslutades. |
 | Varaktighet | 0 | Den tid händelsen tar (i millisekunder). |
 | SessionType | Användare | Sessionstyp (vilken entitet som orsakade åtgärden). |
@@ -138,7 +134,6 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 | Allvarlighetsgrad | 0 | Ett undantags allvarlighetsgrad. |
 | Klart | 1 | 1 = Klart! 0 = fel (1 kan t.ex. innebära att en behörighetskontroll har slutförts och 0 att kontrollen underkänt behörigheten). |
 | Fel | 0 | Felnummer för en given händelse. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Textdata som har associerats till händelsen. |
 | ConnectionID | 3 | Unikt anslutnings-ID. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID för den datamängd i vilken användarens instruktion körs. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Sessions-GUID. |
@@ -146,8 +141,7 @@ Motorkategorin instruerar resursen att logga följande händelser och det finns 
 | ClientProcessID | null | Klientprogrammets process-ID. |
 | ApplicationName | null | Namnet på det klientprogram som skapade anslutningen till servern. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | Du måste ange namnet på Power BI Embedded-resursen. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### <a name="allmetrics"></a>AllMetrics
 
