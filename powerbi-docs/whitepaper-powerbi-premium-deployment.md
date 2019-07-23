@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: fbae2a8b577c52ae597d44bd6ea9913510c4c65c
-ms.sourcegitcommit: dc73e932c9982a4aa0b0ec5297fb9f94c6156bc5
+ms.openlocfilehash: 783f82ecd5c6dea5c26b096b8b1bfcffe388864b
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66518573"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391447"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Distribuera och hantera Power BI Premium-kapaciteter
 
@@ -327,7 +327,7 @@ Resurser och begränsningarna för varje Premium-SKU (och motsvarande storlek p�
 
 | Kapacitetsnoder | Totalt antal virtuella kärnor | Virtuella kärnor för serverdel | RAM (GB) | Virtuella kärnor för klientdel | DQ/LC (per sekund) | Modellens uppdateringsparallellitet |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -407,18 +407,18 @@ Minne allokeras dynamiskt till dataflöden, men den är statiskt allokerad till 
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Sidnumrerade rapporter | Saknas | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
+| Sidnumrerade rapporter | Gäller inte | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
 | Dataflöden | 20 % standard, 8 % minimum  | 20 % standard, 4 % minimum  | 20 % standard, 2 % minimum | 20 % standard, 1 % minimum  |
-| AI | Saknas | 20 % standard, 20 % minimum  | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum  |
+| AI | Gäller inte | 20 % standard, 20 % minimum  | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum  |
 | | | | | |
 
 Det är möjligt att ta bort en Premium-kapacitet och det leder inte till borttagning av dess arbetsytor och innehåll. I stället flyttas alla tilldelade arbetsytor till delad kapacitet. När Premium-kapaciteten skapades i en annan region, kommer arbetsytan att flyttas till delad kapacitet för hemregionen.
 
 ### <a name="assigning-workspaces-to-capacities"></a>Tilldela arbetsytor till kapaciteter
 
-Arbetsytor kan tilldelas en Premium-kapacitet i **Power BI-administratörsportalen** **** eller, för en apparbetsyta – i fönstret **Arbetsyta**.
+Arbetsytor kan tilldelas en Premium-kapacitet i **Power BI-administratörsportalen** eller, för en apparbetsyta – i fönstret **Arbetsyta**.
 
-Kapacitetsadministratörer, samt globala administratörer för Office 365 eller Power BI-tjänstadministratörer kan masstilldela arbetsytor i **Power BI-administratörsportalen** **** . Masstilldelningar kan gälla för:
+Kapacitetsadministratörer, samt globala administratörer för Office 365 eller Power BI-tjänstadministratörer kan masstilldela arbetsytor i **Power BI-administratörsportalen**. Masstilldelningar kan gälla för:
 
 - **Arbetsytor per användare**: Alla arbetsytor som ägs av dessa användare, inklusive personliga arbetsytor har tilldelats Premium-kapacitet. Detta omfattar ny tilldelning av arbetsytor när de redan är tilldelade till en annan Premium-kapacitet. Dessutom kan användare också tilldelas behörigheter för arbetsytetilldelning.
 
@@ -437,7 +437,7 @@ I Power BI-tjänsten identifieras en arbetsyta som tilldelats en Premium-kapacit
 
 ### <a name="monitoring-capacities"></a>Övervaka kapaciteter
 
-Övervakning av Premium-kapaciteter ger administratörer en förståelse för hur kapaciteterna utförs. Kapaciteter kan övervakas med hjälp av den [Power BI Premium-kapacitet app](service-admin-premium-monitor-capacity.md) eller [Power BI-administratörsportalen](service-admin-premium-monitor-portal.md).
+Övervakning av Premium-kapaciteter ger administratörer en förståelse för hur kapaciteterna utförs. Kapaciteter kan övervakas med hjälp av [appen Power BI Premium kapacitets mått](service-admin-premium-monitor-capacity.md) eller [Power BI administrations Portal](service-admin-premium-monitor-portal.md).
 
 #### <a name="interpreting-metrics"></a>Tolka mått
 
@@ -474,7 +474,7 @@ Slutligen avslutas detta avsnitt med att testa metoder och Premium-kapacitetssto
 
 ### <a name="general-best-practices"></a>Allmänna metodtips
 
-När du försöker uppnå bästa användning och prestanda finns det några metodtips som kan anses som allmänna rekommendationer. Dessa omfattar:
+När du försöker uppnå bästa användning och prestanda finns det några metodtips som kan anses som allmänna rekommendationer. Exempel på dessa är:
 
 - Använda app-arbetsytor i stället för personliga arbetsytor
 - Dela upp verksamhetskritisk och BI med självbetjäning (SSBI) i olika kapaciteter
@@ -698,7 +698,9 @@ Testinnehållet kan läggas till arbetsytor som skapats på Azure-kapacitet och 
 
 Det är viktigt att testerna är upprepningsbara: Testerna ska köras flera gånger och de ska leverera ungefär samma resultat varje gång. Ett medeltal av de här resultaten kan användas för att extrapolera och beräkna en arbetsbelastning under sanna produktionsvillkor.
 
-För att generera ett belastningstest, överväg att utveckla ett belastningstestprogram för att simulera en realistisk arbetsbelastning. Information om hur du gör detta ligger utanför omfånget för detta White Paper. Ytterligare information, inklusive ett kodexempel, finns i webbseminariet [Belastningstest av Power BI-program med Visual Studio](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
+Om du redan har en kapacitet och de rapporter som du vill läsa in testet för använder du [verktyget PowerShell load genering](https://aka.ms/PowerBILoadTestingTool) för att snabbt skapa ett belastnings test. Med verktyget kan du uppskatta hur många instanser av varje rapport din kapacitet kan köras i en timme. Du kan använda verktyget för att utvärdera kapacitetens förmåga för individuell rapport åter givning eller för att återge flera olika rapporter parallellt. Mer information finns på videon [Microsoft Power BI: Premium-](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw)kapacitet.
+
+Om du vill generera ett mer komplext test kan du överväga att utveckla ett belastnings test program som simulerar en realistisk arbets belastning. Mer information finns i webb seminarium belastnings [test Power BI program med Visual Studio load test](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
 
 ## <a name="exploring-real-world-scenarios"></a>Utforska verkliga scenarier
 
@@ -824,7 +826,7 @@ Detta kan vara särskilt tydligt när en datauppsättning som används i korta �
 
 I vissa fall kan Power BI-administratörer begära att datauppsättningens ägare skapar en mindre föränderlig frågearbetsbelastning genom att skapa en instrumentpanel (som frågar med jämna mellanrum vid alla uppdateringar av datauppsättning efter cachelagrade paneler) i stället för en rapport. Detta kan förhindra toppar när instrumentpanelen läses in. Den här lösningen kanske inte alltid är möjlig för alla verksamhetskrav, men den kan vara ett effektivt sätt att undvika processormättnad, utan att göra ändringar på datauppsättningen.
 
-## <a name="conclusion"></a>Slutsats
+## <a name="conclusion"></a>Sammanfattning
 
 Power BI Premium ger mer konsekvent prestanda, support för stora datavolymer och flexibiliteten hos en enhetlig självbetjänings- och BI-företagsplattform för alla i din organisation. Detta tekniska nivå 300-white paper har skrivits specifikt för Power BI-administratörer och innehållsförfattare och utgivare. Syftet är att hjälpa dem att förstå potentialen i Power BI Premium och förklara hur man utformar, distribuera, övervakar och felsöker skalbara lösningar.
 
