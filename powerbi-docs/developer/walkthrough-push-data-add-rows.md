@@ -311,7 +311,7 @@ Nedan visas den [fullständiga kodlistan](#code).
     }
 ```
 
-Trots att vi anger att vi ** _//Får det första ID:t_** i koden ovan är rätt sak att göra att söka i datauppsättningen efter namn.
+Trots att vi anger att vi **_//Får det första ID:t_** i koden ovan är rätt sak att göra att söka i datauppsättningen efter namn.
 
 ## <a name="next-steps"></a>Nästa steg
 [Skicka data till en Power BI-instrumentpanel](walkthrough-push-data.md)  
