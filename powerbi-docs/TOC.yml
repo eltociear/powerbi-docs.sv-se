@@ -73,7 +73,7 @@
           href: desktop-data-source-prerequisites.md
         - name: Standardmedlem i flerdimensionella modeller i Power BI
           href: desktop-default-member-multidimensional-models.md
-        - name: Vanliga frågor och svar om anpassade visuella objekt
+        - name: Vanliga frågor och svar om visuella objekt
           href: power-bi-custom-visuals-faq.md
     - name: Gör så här
       items:
@@ -1067,48 +1067,70 @@
       items:
         - name: Översikt
           items:
-            - name: Anpassade visuella objekt i Power BI
+            - name: Visuella objekt i Power BI
               href: power-bi-custom-visuals.md
         - name: Självstudier
           items:
-            - name: Utveckla ett anpassat visuellt objekt i Power BI
+            - name: Utveckla ett visuellt Power BI-objekt
               href: developer/custom-visual-develop-tutorial.md
             - name: Lägga till formateringsalternativ
               href: developer/custom-visual-develop-tutorial-format-options.md
+            - name: Lägga till enhetstester för visuellt projekt
+              href: developer/visuals/unit-tests-introduction.md
         - name: Begrepp
           items:
-            - name: Anpassade visuella objekt för organisationer i Power BI
+            - name: Visuella objekt för organisationer i Power BI
               href: power-bi-custom-visuals-organization.md
             - name: Riktlinjer för visuella objekt för Power BI
               href: developer/guidelines-powerbi-visuals.md
-            - name: Vanliga frågor och svar om anpassade visuella objekt
+            - name: Vanliga frågor och svar om visuella objekt
               href: power-bi-custom-visuals-faq.md
             - name: Använda funktioner
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/'
+              href: developer/visuals/capabilities.md
             - name: Datavymappningar
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/'
+              href: developer/visuals/dataview-mappings.md
             - name: Objekt och egenskaper
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/'
+              href: developer/visuals/objects-properties.md
             - name: Avancerat redigeringsläge
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/'
-            - name: Migrera till en versionshanterad API-guide
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/'
+              href: developer/visuals/advanced-edit-mode.md
         - name: Gör så här
           items:
-            - name: Certifiera ett anpassat visuellt objekt
+            - name: Certifiera ett visuellt objekt
               href: power-bi-custom-visuals-certified.md
             - name: Publicera anpassad visuell information till AppSource
               href: developer/office-store.md
             - name: Använd R-baserade anpassade visuella objekt i Power BI
               href: desktop-r-powered-custom-visuals.md
-            - name: Felsök
-              items:
-                - name: Felsöka utveckling av anpassade visuella objekt
-                  href: power-bi-custom-visuals-troubleshoot.md
+            - name: Interaktioner med visuella objekt
+              href: developer/visuals/visuals-interactions.md
+            - name: Lägga till knappbeskrivningar för visuella objekt
+              href: developer/visuals/add-tooltips.md
+            - name: Lägga till analysfönster
+              href: developer/visuals/analytics-pane.md
+            - name: Filtrera visuella objekt
+              href: developer/visuals/filter-api.md
+            - name: Hämta mer data
+              href: developer/visuals/fetch-more-data.md
+            - name: Lägga till stöd för bokmärken
+              href: developer/visuals/bookmarks-support.md
+            - name: Markera data i visuella objekt
+              href: developer/visuals/highlight.md
+            - name: Lägga till stöd för högkontrastläge
+              href: developer/visuals/high-contrast-support.md
+            - name: Aktivera synkronisering av utsnitt
+              href: developer/visuals/enable-sync-slicers.md
+            - name: Felsöka anpassade visuella Power BI-objekt
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Referens
           items:
-            - name: 'API:er'
-              href: 'https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/'
+            - name: Landningssida
+              href: developer/visuals/landing-page.md
+            - name: Starta URL
+              href: developer/visuals/launch-url.md
+            - name: Återgivningshändelser
+              href: developer/visuals/event-service.md
+            - name: Sortering
+              href: developer/visuals/sort-options.md
         - name: Resurser
           items:
             - name: Dev Center
@@ -1117,6 +1139,8 @@
               href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
             - name: Git Repo för anpassade visuella objekt
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+            - name: Skapa SSL-certifikat
+              href: developer/visuals/create-ssl-certificate.md
     - name: Automation
       items:
         - name: Översikt
