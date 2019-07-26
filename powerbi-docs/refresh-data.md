@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
-ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
+ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67561799"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325045"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -55,7 +55,7 @@ Eftersom Power BI fångar data, kan storleken på en datauppsättning i Import-l
 | --- | --- |
 | Delad, A1, A2 eller A3 | 1 GB |
 | A4 eller P1 | 3 GB |
-| A4 eller P2 | 6 GB |
+| A5 eller P2 | 6 GB |
 | A6 eller P3 | 10 GB |
 | | |
 
@@ -160,7 +160,7 @@ Oavsett lagringslägen kan ingen datauppdatering lyckas om inte de underliggande
 
 ### <a name="connecting-to-on-premises-data-sources"></a>Ansluta till lokala datakällor
 
-Om din datauppsättning använder en datakälla som Power BI inte kan komma åt via en direkt nätverksanslutning måste du konfigurera en gatewayanslutning för den här datauppsättningen innan du kan aktivera ett uppdateringsschema eller utföra en datauppdatering på begäran. Mer information om datagatewayer och hur de fungerar finns i [Vad är lokala datagatewayer?](service-gateway-getting-started.md)
+Om din datauppsättning använder en datakälla som Power BI inte kan komma åt via en direkt nätverksanslutning måste du konfigurera en gatewayanslutning för den här datauppsättningen innan du kan aktivera ett uppdateringsschema eller utföra en datauppdatering på begäran. Mer information om datagatewayer och hur de fungerar finns i [Vad är lokala datagatewayer?](service-gateway-onprem.md)
 
 Du har följande alternativ:
 
@@ -174,7 +174,10 @@ Du har följande alternativ:
 
 Microsoft rekommenderar att använda en företagsdatagateway istället för en personlig gateway för att ansluta en datauppsättning till en lokal datakälla. Se till att gatewayen är korrekt konfigurerad, vilket betyder att gatewayen måste ha de senaste uppdateringarna och alla nödvändiga datakällsdefinitioner. En datakällsdefinition ger Power BI anslutningsinformationen för en viss källa, inklusive anslutningsslutpunkter, autentiseringsläge och autentiseringsuppgifter. Mer information om hantering av datakällor på en gateway finns i [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md).
 
-Att ansluta en datauppsättning till en företagsgateway är relativt enkelt om du är gatewayadministratör. Med administratörsbehörigheter kan du direkt uppdatera gatewayen och lägga till saknade datakällor, om det behövs. I själva verket kan du lägga till en saknad datakälla till gatewayen direkt från inställningssidan för datauppsättningen. Expandera växlingsknappen för att visa datakällorna och välja länken **Lägg till i gateway**, som på följande skärmbild. Om du inte är gatewayadministratör kan du, å andra sidan, använda den visade kontaktinformationen för att skicka en begäran till en gatewayadministratör för att lägga till den nödvändiga datakällsdefinitionen.
+Att ansluta en datauppsättning till en företagsgateway är relativt enkelt om du är gatewayadministratör. Med administratörsbehörigheter kan du direkt uppdatera gatewayen och lägga till saknade datakällor, om det behövs. I själva verket kan du lägga till en saknad datakälla till gatewayen direkt från inställningssidan för datauppsättningen. Expandera växlingsknappen för att visa datakällorna och välja länken **Lägg till i gateway**, som på följande skärmbild. Om du å andra sidan inte är gatewayadministratör måste du kontakta en gatewayadministratör för att lägga till den datakällsdefinition som krävs.
+
+> [!NOTE]
+> Endast gatewayadministratörer kan lägga till datakällor till en gateway. Se även till att gatewayadministratören lägger till ditt användar konto i listan över användare med behörighet att använda datakällan. På sidan för datamängdsinställningar kan du endast välja en företagsgateway med en matchande datakälla som du har behörighet att använda.
 
 ![Lägga till i gateway](media/refresh-data/add-to-gateway.png)
 
@@ -284,6 +287,8 @@ Observera också att den konfigurerade uppdateringstiden kanske inte är en exak
 ### <a name="getting-refresh-failure-notifications"></a>Få aviseringar om misslyckad uppdatering
 
 Som standard skickar Power BI aviseringar om misslyckad uppdatering via e-post till datauppsättningens ägare så att ägaren kan agera i god tid om det uppstår uppdateringsproblem. Power BI skickar också en avisering till dig när tjänsten inaktiverar ditt schema på grund av upprepade fel. Microsoft rekommenderar att du lämnar kryssrutan **Skicka ett e-postmeddelande om uppdateringsfel** aktiverad.
+
+Det är även en bra idé att ange ytterligare mottagare med hjälp av textrutan **Skicka e-post till dessa användare när uppdateringen misslyckas**. De angivna mottagarna får meddelanden om uppdateringsfel utöver datamängdens ägare. Det kan vara en kollega som tar hand om dina datamängder när du är på semester. Det kan även vara e-postaliaset för det supportteam som tar hand om uppdateringsproblem för din avdelning eller organisation. Det är användbart att skicka meddelanden om uppdateringsfel till andra utöver datamängdens ägare, så att problem uppmärksammas och åtgärdas i god tid.
 
 Observera att Power BI inte bara skickar aviseringar om misslyckad uppdatering utan även när tjänsten pausar en schemalagd uppdatering på grund av inaktivitet. Efter två månader, när ingen användare har besökt någon instrumentpanel eller rapport som bygger på datauppsättningen, ser Power BI datauppsättningen som inaktiv. I så fall skickar Power BI ett e-postmeddelande till datauppsättningens ägare som anger att tjänsten har pausat uppdateringsschemat för datauppsättningen. Se följande skärmbild för ett exempel på en sådan avisering.
 

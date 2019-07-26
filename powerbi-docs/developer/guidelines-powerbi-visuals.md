@@ -8,15 +8,41 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 03/10/2019
-ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/16/2019
+ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61343155"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271190"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
+Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella objekt till AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna för att skapa en bra upplevelse för användarna. 
+
+## <a name="context-menu"></a>Snabbmeny
+Snabbmenyn är den högerklicksmeny som visas när användaren hovrar över ett visuellt objekt.
+Alla visuella Power BI-objekt bör aktivera snabbmenyn för att ge en enhetlig upplevelse. Information om hur du lägger till en snabbmeny finns i [den här artikeln](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md).
+
+
+## <a name="logo-guidelines"></a>Riktlinjer för logotyp
+
+I det här avsnittet beskrivs specifikationerna för att lägga till logotyper och logotyper i visuella objekt.
+
+> [!IMPORTANT]
+> Logotyper tillåts *endast i redigeringsläge*. Logotyper *kan inte* visas i visningsläge.
+
+![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
+
+![Saker att tänka på](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
+
+![Saker att undvika](media/guidelines-powerbi-visuals/things-to-avoid.png)
+
+![Storlek och format](media/guidelines-powerbi-visuals/size-and-format.png)
+
+![Marginaler och storlekar](media/guidelines-powerbi-visuals/margins-and-sizes.png)
+
+![Redigeringsläge](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
+
 
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Riktlinjer för visuella objekt i Power BI med ytterligare inköp
 
@@ -36,31 +62,13 @@ Utvecklare laddar upp sina visuella IAP-objekt till AppSource via instrumentpane
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Vad är ett visuellt Power BI-objekt med IAP-funktioner?
 
-Ett visuellt IAP-objekt är ett **kostnadsfritt** visuellt objekt som erbjuder **kostnadsfria funktioner**. Det har även vissa avancerade funktioner kan kräva extra avgifter för att använda. I beskrivningen för det visuella objektet så måste utvecklare meddela användare om vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda API:er för att stödja köp av appar och tilläggsprogram.
+Ett visuellt IAP-objekt är ett *kostnadsfritt* visuellt objekt som erbjuder *kostnadsfria funktioner*. Det har även vissa avancerade funktioner kan kräva extra avgifter för att använda. I beskrivningen för det visuella objektet så måste utvecklare meddela användare om vilka funktioner som kräver ytterligare köp för att fungera. Microsoft tillhandahåller för närvarande inte inbyggda API:er för att stödja köp av appar och tilläggsprogram.
 
 Utvecklare kan använda valfritt betalningssystem från tredje part för dessa köp. Se vår [policy för marknadsplatsen](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) för mer information.
 
 > [!NOTE]
 > Vattenstämplar tillåts inte på de kostnadsfria funktionerna eller kostnadsfria visuella objekt. Vattenstämplar kan bara användas på betalda funktioner som används utan giltig licens. Vi rekommenderar att du visar ett popup-fönster all licensrelaterad information om de avancerade betalfunktionerna används utan giltig licens.  
 
-## <a name="logo-guidelines"></a>Riktlinjer för logotyp
-
-I det här avsnittet beskrivs specifikationerna för att lägga till logotyper och logotyper i visuella objekt.
-
-> [!IMPORTANT]
-> Logotyper tillåts **endast i redigeringsläge**. Logotyper **kan inte** visas i visningsläge.
-
-![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
-
-![Saker att tänka på](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
-
-![Saker att undvika](media/guidelines-powerbi-visuals/things-to-avoid.png)
-
-![Storlek och format](media/guidelines-powerbi-visuals/size-and-format.png)
-
-![Marginaler och storlekar](media/guidelines-powerbi-visuals/margins-and-sizes.png)
-
-![Redigeringsläge](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Metodtips
 

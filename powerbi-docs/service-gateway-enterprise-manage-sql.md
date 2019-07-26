@@ -7,122 +7,79 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6771e2da33448fe3aa54a0184a220437ffb54fce
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 7d9e670d2567181a0dc99c23997ac3bc2d35f3c9
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215882"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271611"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Hantera din datakälla – SQL Server
-När du har installerat den lokala datagatewayen kan du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan antingen använda SQL Server-datakällan för schemalagd uppdatering eller för DirectQuery.
 
-## <a name="download-and-install-the-gateway"></a>Ladda ned och installera gatewayen
-Du kan ladda ned gatewayen från Power BI-tjänsten. Välj **Nedladdningar** > **Datagateway** eller gå till [nedladdningssidan för gatewayer](https://go.microsoft.com/fwlink/?LinkId=698861).
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-![](media/service-gateway-enterprise-manage-sql/powerbi-download-data-gateway.png)
-
-## <a name="add-a-gateway"></a>Lägga till en gateway
-Du lägger till en gateway genom att helt enkelt [ladda ned](https://go.microsoft.com/fwlink/?LinkId=698861) och installera gatewayen på en server i din miljö. När du har installerat gatewayen visas den i listan med gatewayer under **Hantera gatewayer**.
-
-> [!NOTE]
-> **Hantera gatewayer** visas inte förrän du är administratör för minst en gateway. Detta inträffar när du har lagts till som en administratör för en gateway, eller om du installerar och konfigurerar en gateway själv.
-> 
-> 
-
-## <a name="remove-a-gateway"></a>Ta bort en gateway
-Om en gateway tas bort raderas även alla datakällor under gatewayen.  Detta bryter också anslutningen till alla instrumentpaneler och rapporter som är beroende av dessa datakällor.
-
-1. Välj kugghjulsikonen ![](media/service-gateway-enterprise-manage-sql/pbi_gearicon.png) i det övre högra hörnet > **Hantera gatewayer**.
-2. Gateway > **Ta bort**
-   
-   ![](media/service-gateway-enterprise-manage-sql/datasourcesettings7.png)
+När du har [installerat den lokala datagatewayen](/data-integration/gateway/service-gateway-install) kan du [lägga till datakällor](service-gateway-data-sources.md#add-a-data-source) som kan användas med gatewayen. Den här artikeln handlar om hur du kan arbeta med gatewayer och SQL Server-datakällor som används för antingen schemalagd uppdatering eller DirectQuery.
 
 ## <a name="add-a-data-source"></a>Lägga till en datakälla
-Du kan lägga till en datakälla genom att antingen välja en gateway och klicka på **Lägg till datakälla** eller gå till Gateway > **Lägg till datakälla**.
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings1.png)
+Information om hur du lägger till en datakälla finns i [Lägga till en datakälla](service-gateway-data-sources.md#add-a-data-source).
 
-Du kan sedan välja **Typ av datakälla** i listan.
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
+![Välja SQL Server-datakälla](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
 
 > [!NOTE]
 > Om du använder DirectQuery har gatewayen endast stöd för **SQL Server 2012 SP1** och senare versioner.
-> 
-> 
 
 Du kan fylla i informationen för datakällan med **Server** och **Databas**.  
 
-Du måste också välja en **Autentiseringsmetod**.  Det kan antingen vara **Windows** eller **Grundläggande**.  Välj **Grundläggande** om du tänker använda SQL-autentisering i stället för Windows-autentisering. Ange sedan de autentiseringsuppgifter som ska användas för datakällan.
+Du behöver även välja en **Autentiseringsmetod**. Det kan antingen vara **Windows** eller **Grundläggande**. Du bör välja **Grundläggande** om du tänker använda SQL-autentisering i stället för Windows-autentisering. Ange sedan de autentiseringsuppgifter som ska användas för datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med autentiseringsuppgifterna, såvida inte enkel inloggning (SSO) med Kerberos har konfigurerats och aktiverats för datakällan. När SSO används kommer de importerade datauppsättningarna använda lagrade autentiseringsuppgifter, medan DirectQuery-datauppsättningar använder den aktuella Power BI-användaren för att köra frågor. Mer information finns i huvudartikeln om lokala datagatewayer där du lär dig mer om hur [autentiseringsuppgifter](service-gateway-onprem.md#credentials) lagras, eller i artikeln som beskriver hur du [använder Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md).
-> 
-> 
+> Alla frågor till datakällan kommer att köras med autentiseringsuppgifterna, såvida inte enkel inloggning (SSO) med Kerberos har konfigurerats och aktiverats för datakällan. Med enkel inloggning använder import av datamängder de lagrade autentiseringsuppgifterna, men DirectQuery-datamängder använder den aktuella Power BI-användaren för att köra frågorna med hjälp av enkel inloggning. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud) samt i artikeln med beskrivning om [hur du använder Kerberos för enkel inloggning från Power BI till lokala datakällor](service-gateway-sso-kerberos.md).
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
+![Fylla i inställningarna för datakälla](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 
-Klicka på **Lägg till** när allt har fyllts i.  Nu kan du använda den här datakällan för schemalagd uppdatering, eller DirectQuery mot en lokal SQL Server. *Anslutningen lyckades* visas.
+Välj **Lägg till** när du har fyllt i allt. Nu kan du använda den här datakällan för schemalagd uppdatering, eller DirectQuery mot en lokal SQL Server. *Anslutningen lyckades* visas om anslutningen lyckades.
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings4.png)
+![Visa anslutningsstatus](media/service-gateway-enterprise-manage-sql/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Avancerade inställningar
-Du kan konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast vid schemalagd uppdatering. Det gäller inte för DirectQuery. [Läs mer](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings9.png)
+Om du vill kan du konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast vid schemalagd uppdatering. Det gäller inte för DirectQuery. Mer information om sekretessnivåer för datakälla finns i [Sekretessnivåer (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-## <a name="remove-a-data-source"></a>Ta bort en datakälla
-Om en datakälla tas bort bryts alla anslutningar till instrumentpaneler och rapporter som är beroende av den.  
-
-Ta bort en datakälla genom att gå till Datakälla > **Ta bort**.
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings6.png)
-
-## <a name="manage-administrators"></a>Hantera administratörer
-På fliken Administratörer för gatewayen kan du lägga till och ta bort användare (eller säkerhetsgrupper) som kan administrera gatewayen.
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings8.png)
-
-## <a name="manage-users"></a>Hantera användare
-På datakällans flik Användare kan du lägga till och ta bort användare eller säkerhetsgrupper som kan använda datakällan.
-
-> [!NOTE]
-> Användarlistan styr enbart vem som har behörighet att publicera rapporter. Rapportägare kan skapa instrumentpaneler eller innehållspaket och dela dem med andra användare.
-> 
-> 
-
-![](media/service-gateway-enterprise-manage-sql/datasourcesettings5.png)
+![Ange sekretessnivån](media/service-gateway-enterprise-manage-sql/datasourcesettings9.png)
 
 ## <a name="using-the-data-source"></a>Använda datakällan
+
 När du har skapat datakällan blir den tillgänglig för användning med antingen DirectQuery-anslutningar eller genom schemalagd uppdatering.
 
 > [!NOTE]
-> Server- och databasnamnen måste vara samma mellan Power BI Desktop och datakällan i den lokala datagatewayen!
-> 
-> 
+> Server- och databasnamnen måste överensstämma mellan Power BI Desktop och datakällan i den lokala datagatewayen.
 
-Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste överensstämma. Om du exempelvis anger en IP-adress för servernamnet i **Power BI Desktop**, måste du använda IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANCE* i Power BI Desktop måste du använda samma i datakällan som konfigurerats för gatewayen.
+Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste stämma överens. Om du exempelvis anger en IP-adress för servernamnet behöver du i **Power BI Desktop** använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANS* i Power BI Desktop måste du använda samma i den datakälla som konfigureras för gatewayen.
 
 Detta gäller både DirectQuery och schemalagd uppdatering.
 
 ### <a name="using-the-data-source-with-directquery-connections"></a>Använda datakällan med DirectQuery-anslutningar
-Du måste kontrollera att server- och databasnamnet är likadana i **Power BI Desktop** och den konfigurerade datakällan för gatewayen. Du måste också kontrollera att användaren finns med på fliken **Användare** för datakällan för att DirectQuery-datauppsättningar ska kunna publiceras. Valet för DirectQuery inträffar i Power BI Desktop när du importerar data första gången. [Läs mer](desktop-use-directquery.md)
+
+Du behöver se till att server- och databasnamnet överensstämmer mellan **Power BI Desktop** och den konfigurerade datakällan för gatewayen. Du behöver även kontrollera att användaren finns med på fliken **Användare** för datakällan för att DirectQuery-datamängder ska kunna publiceras. Valet för DirectQuery inträffar i Power BI Desktop när du importerar data första gången. Mer information om hur DirectQuery används finns i [Använda DirectQuery i Power BI Desktop](desktop-use-directquery.md).
 
 När du har publicerat, antingen från Power BI Desktop eller **Hämta Data**, borde dina rapporter fungera. Det kan ta ett par minuter efter att du har skapat datakällan i gatewayen innan anslutningen kan användas.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Använda datakällan med schemalagd uppdatering
-Om du finns med på fliken **Användare** i den datakälla som konfigurerats i gatewayen, samt om server- och databasnamnen matchar, visas gatewayen som ett alternativ för schemalagd uppdatering.
 
-![](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
+Om du finns med på fliken **Användare** för den datakälla som konfigurerats i gatewayen, och om server- och databasnamnen matchar, visas gatewayen som ett alternativ för användning med schemalagd uppdatering.
+
+![Visa användarna](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## <a name="next-steps"></a>Nästa steg
-* [Lokal datagateway](service-gateway-onprem.md)  
-* [Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
-* [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)
-* [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md). 
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+
+* [Ansluta till lokala data i SQL Server](service-gateway-sql-tutorial.md)
+* [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
+* [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
+* [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)
+
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
+ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558996"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230215"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,18 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="july-2019"></a>Juli 2019
+
+### <a name="report-page-tooltips"></a>Knappbeskrivningar för rapportsida
+
+Knappbeskrivningar för rapportsida stöds inte vid visning av rapporter i mobilappen. Tryck bara och håll ned på ett visuellt objekt som har en rapportknappbeskrivning som är kopplad till den, så visas den.  
+
+![Knappbeskrivning för rapportarbetsyta](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
+
+> [!NOTE]
+> Rapportknappbeskrivningar stöds för enheter med en bildpunktsstorlek över 640 och ett visningsområde över 320. Mindre enheter använder standardknappbeskrivningar.
+
 
 ## <a name="june-2019"></a>Juni 2019
 

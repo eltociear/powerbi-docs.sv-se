@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3fa7fd07a4c7f1992623871ed408b959582a125
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61196921"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270613"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Vanliga frågor och svar om hög tillgänglighet, redundans och haveriberedskap i Power BI
 
@@ -65,7 +65,7 @@ Power BI-tjänstinstanser återgår till sin ursprungliga region när problemet 
 Om den Power BI-lösning som används i organisationen involverar något av följande element måste du vidta vissa åtgärder för att garantera att lösningen behåller sin höga tillgänglighet:
 
 - Om organisationen använder Power BI Premium måste du se till att Premium-kapaciteten har en storlek som uppfyller belastningsbehoven för din distribution.  I dokumentet [Power BI Premium Planning and Deployment](https://aka.ms/Premium-Capacity-Planning-Deployment) (Planering och distribution av Power BI Premium) och [Power BI Premium Capacity Metrics-appen](service-admin-premium-monitor-capacity.md) kan du få hjälp att planera och uppfylla det här kravet. Vi lägger regelbundet till nya funktioner i måttappen och administratörsportalen i Power BI som hjälp.
-- Om organisationen har åtkomst till datakällor med hjälp av den lokal Power BI-gatewayen måste du konfigurera gatewayen [enligt beskrivningen i den här artikeln](service-gateway-high-availability-clusters.md) för att stödja hög tillgänglighet. Följ den här vägledningen oavsett om du uppdaterar rapporter i importläge eller om du använder data eller datamodeller med hjälp av DirectQuery eller Live Connect.
+- Om organisationen har åtkomst till datakällor med hjälp av den lokala datagatewayen måste du konfigurera gatewayen [enligt beskrivningen i den här artikeln](/data-integration/gateway/service-gateway-high-availability-clusters) för att stödja hög tillgänglighet. Följ den här vägledningen oavsett om du uppdaterar rapporter i importläge eller om du använder data eller datamodeller med hjälp av DirectQuery eller Live Connect.
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Fungerar gatewayer i redundansläge?
 

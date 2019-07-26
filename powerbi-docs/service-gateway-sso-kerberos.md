@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809278"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325146"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -60,7 +60,7 @@ I en standardinstallation körs gatewayen som ett lokalt tjänstkonto (specifikt
 
 ![Skärmbild av tjänstkonto](media/service-gateway-sso-kerberos/service-account.png)
 
-För att aktivera Kerberos-begränsad delegering måste gatewayen köras som ett domänkonto, såvida inte din Azure Active Directory-instans redan har synkroniserats med din lokala Active Directory-instans (med Azure AD DirSync/Connect). Mer information om att växla till ett domänkonto finns i [Ändra gatewayen till ett domänkonto](#switch-the-gateway-to-a-domain-account) senare i den här artikeln.
+För att aktivera Kerberos-begränsad delegering måste gatewayen köras som ett domänkonto, såvida inte din Azure Active Directory-instans redan har synkroniserats med din lokala Active Directory-instans (med Azure AD DirSync/Connect). Information om hur du växlar till ett domänkonto finns i [Ändra gatewaytjänstkontot](/data-integration/gateway/service-gateway-service-account).
 
 > [!NOTE]
 > Om Azure AD Connect har konfigurerats och användarkonton har synkroniserats, behöver inte gatewaytjänsten utföra några lokala Azure AD-sökningar vid körningen. Du kan använda ditt lokala tjänst-SID (i stället för att kräva ett domänkonto) för gatewaytjänsten. Konfigurationsstegen för Kerberos-begränsad delegering som beskrivs i den här artikeln motsvarar den konfigurationen. De tillämpas helt enkelt på gatewayens datorobjekt i Azure AD, i stället för på domänkontot.
@@ -99,7 +99,7 @@ Det andra konfigurationskravet rör delegeringsinställningarna på gatewaytjän
 
 Vi behöver konfigurera Kerberos-begränsad delegering med protokollövergång. Med begränsad delegering måste du vara uttrycklig med vilka tjänster som du vill delegera till. Till exempel accepterar endast SQL Server eller SAP HANA-servern delegeringsanrop från gatewayens tjänstkonto.
 
-Det här avsnittet förutsätter att du redan har konfigurerat SPN:er för dina underliggande datakällor (som SQL Server, SAP HANA, Teradata och Spark). Mer information om hur du konfigurerar dessa datakällors server-SPN:er finns i den tekniska dokumentationen för respektive databasserver. Du kan också läsa blogginlägget [Vilket SPN krävs av din app?](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/).
+Det här avsnittet förutsätter att du redan har konfigurerat SPN:er för dina underliggande datakällor (som SQL Server, SAP HANA, Teradata och Spark). Mer information om hur du konfigurerar dessa datakällors server-SPN:er finns i den tekniska dokumentationen för respektive databasserver. Se även rubriken *What SPN does your app require?* (Vilket SPN kräver din app?) i blogginlägget [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160) (Min Kerberos-checklista).
 
 I följande steg förutsätter vi att det finns en lokal miljö med två datorer: en gatewaydator och en databasserver som kör SQL Server. För det här exemplet förutsätter vi även att följande inställningar och namn finns:
 
@@ -118,21 +118,21 @@ Så här konfigurerar du delegeringsinställningarna:
 
 4. Välj **Lita på den här datorn enbart för delegering till angivna tjänster** > **Använd valfritt autentiseringsprotokoll**.
 
-6. Under **Tjänster som det här kontot kan ge delegerade autentiseringsuppgifter till** väljer du **Lägg till**.
+5. Under **Tjänster som det här kontot kan ge delegerade autentiseringsuppgifter till** väljer du **Lägg till**.
 
-7. I den nya dialogrutan väljer du **Användare eller datorer**.
+6. I den nya dialogrutan väljer du **Användare eller datorer**.
 
-8. Ange tjänstkontot för SQL Server-datakällan (**PBIEgwTest\SQLService**) och välj **OK**.
+7. Ange tjänstkontot för datakällan. Till exempel kan en SQL Server-datakälla ha ett tjänstkonto såsom **PBIEgwTest\SQLService**. När kontot har lagts till väljer du **OK**.
 
-9. Välj det SPN som du skapade för databasservern. I vårt exempel börjar SPN:et med **MSSQLSvc**. Om du har lagt till både FQDN- och NetBIOS-SPN:et för din databastjänst, väljer du båda. Du kanske bara ser en.
+8. Välj det SPN som du skapade för databasservern. I vårt exempel börjar SPN:et med **MSSQLSvc**. Om du har lagt till både FQDN- och NetBIOS-SPN:et för din databastjänst, väljer du båda. Du kanske bara ser en.
 
-10. Välj **OK**. Du bör nu se SPN:et i listan.
+9. Välj **OK**. Du bör nu se SPN:et i listan.
 
     Du kan även markera **Expanderat** för att visa både FQDN och NetBIOS SPN. Dialogrutan ser ut ungefär som följande om du har valt **Expanderat**. Välj **OK**.
 
     ![Skärmbild av dialogrutan Egenskaper för gatewayanslutning](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Slutligen måste gatewaytjänstkontot på den dator som kör gatewaytjänsten (**PBIEgwTestGW** i vårt exempel), beviljas den lokala principen **Personifiera en klient efter autentisering**. Du kan utföra och kontrollera detta med Redigeraren för lokala grupprinciper (**gpedit**).
+Slutligen måste gatewaytjänstkontot på den dator som kör gatewaytjänsten (**PBIEgwTestGW** i vårt exempel) beviljas den lokala principen **Personifiera en klient efter autentisering** samt **Agera som en del av operativsystemet (SeTcbPrivilege)** . Du kan utföra och kontrollera den här konfigurationen med Redigeraren för lokala grupprinciper (**gpedit**).
 
 1. På gatewaydatorn kör du: *gpedit.msc*.
 
@@ -170,40 +170,26 @@ När alla konfigurationssteg har slutförts kan du använda sidan **Hantera gate
 
 Den här konfigurationen fungerar i de flesta fall. Med Kerberos kan det dock förekomma olika konfigurationer beroende på din miljö. Om rapporten fortfarande inte kan läsas in, bör du kontakta domänadministratören för att undersöka saken vidare.
 
-## <a name="switch-the-gateway-to-a-domain-account"></a>Ändra gatewayen till ett domänkonto
-
-Om det behövs kan du byta gatewayen från ett lokalt tjänstkonto till att köras som ett domänkonto. Detta görs med hjälp av användargränssnittet för **Lokal datagateway**. Gör så här:
-
-1. Öppna konfigurationsverktyget **Lokal datagateway**.
-
-   ![Skärmbild av alternativet att starta gatewayens skrivbordsprogram](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
-
-2. Välj **inloggningknappen** på huvudsidan och logga in med ditt Power BI-konto.
-
-3. När inloggningen är klar väljer du fliken **Tjänstinställningar**.
-
-4. Välj **Ändra konto** för att starta den guidade genomgången.
-
-   ![Skärmbild av skrivbordsprogrammet Lokal datagateway med alternativet Ändra konto markerat](media/service-gateway-sso-kerberos/change-account.png)
-
 ## <a name="configure-sap-bw-for-sso"></a>Konfigurera SAP BW för enkel inloggning
 
 Nu när du förstår hur Kerberos fungerar med en gateway kan du konfigurera enkel inloggning för SAP Business Warehouse (SAP BW). Följande steg förutsätter att du redan har [förberett för Kerberos-begränsad delegering](#prepare-for-kerberos-constrained-delegation) enligt beskrivningen tidigare i den här artikeln.
 
 Den här guiden försöker vara så omfattande som möjligt. Om du redan har slutfört några av de här stegen kan du hoppa över dem. Du kanske till exempel redan har skapat en tjänstanvändare för SAP BW-servern och mappat ett SPN till den, eller du har redan installerat `gsskrb5`-biblioteket.
 
-### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>Konfigurera gsskrb5 på klientdatorer och SAP BW-servern
+### <a name="set-up-gsskrb5gx64krb5-on-client-machines-and-the-sap-bw-server"></a>Konfigurera gsskrb5/gx64krb5 på klientdatorer och SAP BW-servern
 
 > [!NOTE]
-> `gsskrb5` stöds inte längre aktivt av SAP. Mer information finns i [SAP-anteckningen 352295](https://launchpad.support.sap.com/#/notes/352295). Observera också att `gsskrb5` inte tillåter SSO-anslutningar från datagatewayen till SAP BW-meddelandeservrar. Endast anslutningar till SAP BW-programservrar är möjliga. `gsskrb5` måste användas av både klienten och servern när en SSO-anslutning ska slutföras via gatewayen. Nu finns stöd för Common Crypto-biblioteket (sapcrypto) för SAP BW.
+> `gsskrb5/gx64krb5` stöds inte längre aktivt av SAP. Mer information finns i [SAP-anteckningen 352295](https://launchpad.support.sap.com/#/notes/352295). Observera också att `gsskrb5/gx64krb5` inte tillåter SSO-anslutningar från datagatewayen till SAP BW-meddelandeservrar. Endast anslutningar till SAP BW-programservrar är möjliga. Nu går det att använda sapcrypto/CommonCryptoLib som SNC-bibliotek, vilket gör konfigurationsprocessen enklare. 
 
-1. Ladda ned `gsskrb5` - `gx64krb5` från [SAP-kommentar 2115486](https://launchpad.support.sap.com/) (SAP s-användare krävs). Kontrollera att du har minst version 1.0.11.x av gsskrb5. dll och gx64krb5.dll.
+`gsskrb5` måste användas av både klienten och servern när en SSO-anslutning ska slutföras via gatewayen.
+
+1. Ladda ned `gsskrb5` eller `gx64krb5` beroende på vilka bitar du vill ha, från [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user krävs). Se till att du har minst version 1.0.11.x.
 
 1. Placera biblioteket på en plats på din gatewaydator som är tillgänglig för din gatewayinstans (och även av SAP-gränssnittet om du vill kunna testa SSO-anslutningen med SAP-inloggning).
 
 1. Placera en annan kopia på SAP BW-serverdatorn på en plats som är tillgänglig för SAP BW-servern.
 
-1. På klient- och serverdatorerna anger du `SNC\_LIB`- och `SNC\_LIB\_64`-miljövariablerna till att peka på platserna för gx64krb5.dll respektive gx64krb5.dll.
+1. På klient- och serverdatorerna anger du `SNC_LIB`- och `SNC_LIB_64`-miljövariablerna till att peka på platsen för gx64krb5.dll respektive gx64krb5.dll. Observera att du endast behöver ett av dessa bibliotek, inte båda.
 
 ### <a name="create-a-sap-bw-service-user-and-enable-snc-communication"></a>Skapa en användare av SAP BW-tjänsten och aktivera SNC-kommunikation
 
@@ -262,7 +248,7 @@ Mappa en Active Directory-användare till en SAP BW-programserveranvändare och 
 
     ![Skärmbild av SAP BW-användarens underhållsskärm](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Välj fliken **SNC**. I inmatningsrutan för SNC-namn anger du p:\<din Active Directory-användare\>@\<din domän\>. Observera det obligatoriska p: som måste stå före Active Directory-användarens UPN. Den Active Directory-användare som du anger måste tillhöra den person eller organisation som du vill aktivera åtkomst med enkel inloggning till SAP BW-programservern för. Om du till exempel vill aktivera åtkomst med enkel inloggning för användaren [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM) anger du p:testuser@TESTDOMAIN.COM.
+1. Välj fliken **SNC**. I inmatningsrutan för SNC-namn anger du p:\<din Active Directory-användare\>@\<din domän\>. Observera det obligatoriska p: som måste stå före Active Directory-användarens UPN. Den Active Directory-användare som du anger måste tillhöra den person eller organisation som du vill aktivera åtkomst med enkel inloggning till SAP BW-programservern för. Om du till exempel vill aktivera åtkomst med enkel inloggning för användaren testuser\@TESTDOMAIN.COM anger du p:testuser@TESTDOMAIN.COM.
 
     ![Skärmbild av SAP BW-skärmen för användarunderhåll](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -290,17 +276,17 @@ Kontrollera att du kan logga in på servern. Använd SAP-inloggning med enkel in
 
 Om det uppstår problem följer dessa steg för att felsöka gsskrb5-installationen och anslutningarna med enkel inloggning från SAP-inloggningen.
 
-- Det kan vara användbart att visa serverloggarna (...work\dev\_w0 på serverdatorn) vid felsökning av eventuella fel som uppstår vid slutförandet av gsskrb5-konfigurationsstegen. Detta gäller särskilt om SAP BW-servern inte startas när profilparametrarna har ändrats.
+* Det kan vara användbart att visa serverloggarna (...work\dev\_w0 på serverdatorn) vid felsökning av eventuella fel som uppstår vid slutförandet av gsskrb5-konfigurationsstegen. Detta gäller särskilt om SAP BW-servern inte startas när profilparametrarna har ändrats.
 
-- Om det inte går att starta SAP BW-tjänsten på grund av ett inloggningsfel, har du kanske angett fel lösenord när du konfigurerade SAP BW ”start-as”-användaren. Verifiera lösenordet genom att logga in på en dator i Active Directory-miljön som SAP BW-tjänstanvändaren.
+* Om det inte går att starta SAP BW-tjänsten på grund av ett inloggningsfel, har du kanske angett fel lösenord när du konfigurerade SAP BW ”start-as”-användaren. Verifiera lösenordet genom att logga in på en dator i Active Directory-miljön som SAP BW-tjänstanvändaren.
 
-- Om det uppstår fel för att SQL-autentiseringsuppgifterna förhindrar att servern startas, kontrollerar du att du har beviljats åtkomst som tjänstanvändare till SAP BW-databasen.
+* Om det uppstår fel för att SQL-autentiseringsuppgifterna förhindrar att servern startas, kontrollerar du att du har beviljats åtkomst som tjänstanvändare till SAP BW-databasen.
 
-- Du kan få följande meddelande: ”(GSS-API) det angivna målet är okänt eller kan inte nås”. Detta innebär vanligen att du har angett fel SNC-namn. Se till att endast använda ”p:”, inte ”p:CN=” eller något annat i klientprogrammet, förutom tjänstanvändarens UPN.
+* Du kan få följande meddelande: ”(GSS-API) det angivna målet är okänt eller kan inte nås”. Detta innebär vanligen att du har angett fel SNC-namn. Se till att endast använda ”p:”, inte ”p:CN=” eller något annat i klientprogrammet, förutom tjänstanvändarens UPN.
 
-- Du kan få följande meddelande: ”(GSS-API) Ett ogiltigt namn har angetts”. Kontrollera att ”p:” finns i värdet för serverns SNC-identitetsprofilparameter.
+* Du kan få följande meddelande: ”(GSS-API) Ett ogiltigt namn har angetts”. Kontrollera att ”p:” finns i värdet för serverns SNC-identitetsprofilparameter.
 
-- Du kan få följande meddelande: ”(SNC-fel) den angivna modulen kunde inte hittas”. Detta beror vanligtvis på att `gsskrb5.dll/gx64krb5.dll` har placerats någonstans som kräver utökade privilegier (administratörsrättigheter) för åtkomst.
+* Du kan få följande meddelande: ”(SNC-fel) den angivna modulen kunde inte hittas”. Detta beror vanligtvis på att `gsskrb5.dll/gx64krb5.dll` har placerats någonstans som kräver utökade privilegier (administratörsrättigheter) för åtkomst.
 
 ### <a name="add-registry-entries-to-the-gateway-machine"></a>Lägg till registerposter i gateway-datorn
 
@@ -356,13 +342,13 @@ Om du inte har konfigurerat Azure AD Connect, följer du dessa steg för varje a
 
 Lägg till SAP BW-datakällan i din gateway genom att följa anvisningarna tidigare i den här artikeln om att [köra en rapport](#run-a-power-bi-report).
 
-1. I konfigurationsfönstret för datakällan anger du programserverns **Värddatornamn**, **Systemnummer** och **klient-ID** på samma sätt som när du loggar in på SAP BW-servern från Power BI Desktop. Som **Autentiseringsmetod** väljer du **Windows**.
+1. I konfigurationsfönstret för datakällan anger du programserverns **Värddatornamn**, **Systemnummer** och **klient-ID** på samma sätt som när du loggar in på SAP BW-servern från Power BI Desktop.
 
 1. I fältet **SNC-partnernamn** anger du p: \<det SPN som du mappade till SAP BW-tjänstanvändaren\>. Om SPN-namnet till exempel är SAP/BWServiceUser@MYDOMAIN.COM, ska du ange p:SAP/BWServiceUser@MYDOMAIN.COM i fältet **SNC-partnernamn**.
 
-1. Som SNC-bibliotek väljer du **SNC\_LIB** eller **SNC\_LIB\_64**.
+1. För SNC-biblioteket väljer du **SNC_LIB** eller **SNC_LIB_64**. Använd **SNC_LIB** för 32-bitars scenarier och **SNC_LIB_64** för 64-bitars scenarier. Se till att de här miljövariablerna pekar på gsskrb5.dll respektive gx64krb5.dll, beroende på hur många bitar du kör.
 
-1. **Användarnamn** och **Lösenord** ska vara användarnamnet och lösenordet för en Active Directory-användare med behörighet att logga in på SAP BW-servern med enkel inloggning. Med andra ord måste de tillhöra en Active Directory-användare som har mappats till en SAP BW-användare via SU01-transaktionen. Dessa autentiseringsuppgifter används endast om rutan **Använd SSO via Kerberos för DirectQuery-frågor** inte har markerats.
+1. Om du har valt **Windows** som **Autentiseringsmetod** ska **Användarnamn** och **Lösenord** vara användarnamnet och lösenordet för en Active Directory-användare med behörighet att logga in på SAP BW-servern med enkel inloggning. Med andra ord måste de tillhöra en Active Directory-användare som har mappats till en SAP BW-användare via SU01-transaktionen. Om du har valt **Grundläggande** ska **Användarnamn** och **Lösenord** anges till en SAP BW-användares namn respektive lösenord. Dessa autentiseringsuppgifter används endast om rutan **Använd SSO via Kerberos för DirectQuery-frågor** inte har markerats.
 
 1. Välj rutan **Använd SSO via Kerberos för DirectQuery-frågor** och välj **Använd**. Om testanslutningen inte fungerar kontrollerar du att de föregående stegen för installation och konfiguration slutförts korrekt.
 
@@ -396,7 +382,7 @@ Resultatet är att gatewayen inte kunde personifiera den ursprungliga användare
 
 Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
 
-* [On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)
+* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)

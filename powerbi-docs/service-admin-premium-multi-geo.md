@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fcef4b7bc9feaee0912a8e0e9ea8098d52c66e3a
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564946"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289837"
 ---
-# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurera flera Geo-stöd för Power BI Premium
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurera Multi-Geo-stöd för Power BI Premium
 
 Multi-Geo är en Power BI Premium-funktion som hjälper multinationella kunder att adressera kraven på regional, branschspecifik eller organisationsrelaterad dataplacering. Som Power BI Premium-kund kan du distribuera innehåll till datacentra i andra regioner än Power BI-klientorganisationens hemregion. Ett geografiskt område (geografi) kan innehålla mer än en region. USA är t.ex. ett geografiskt område och USA, västra centrala och USA, södra centrala är regioner i USA. Du kan välja att distribuera innehåll till någon av följande platser:
 
@@ -68,7 +68,7 @@ De här objekten finns kvar i klientorganisationens hemregion:
 - Behörigheter
 - Autentiseringsuppgifter för datauppsättning
 
-## <a name="view-capacity-regions"></a>Visa kapacitet regioner
+## <a name="view-capacity-regions"></a>Visa kapacitetsregioner
 
 Du kan visa alla kapaciteter för din Power BI-klientorganisation i administrationsportalen och de regioner där de för närvarande är placerade.
 
@@ -94,7 +94,7 @@ Du kan ta bort arbetsytor från Multi-Geo-kapaciteten på något av följande tv
 - En cachelagrad fråga som lagras i en avlägsen region kvar i den regionen i vila. Andra data under överföring kan dock flyttas fram och tillbaka mellan flera geografiska områden.
 - När du flyttar data från en region till en annan i en Multi-Geo-miljö kan källdata finnas kvar i upp till 30 dagar i den region från vilken data har flyttats. Under den tiden har slutanvändare inte åtkomst till den. Den tas bort från den här regionen och förstörs under 30-dagarsperioden.
 - Multi-Geo resultera inte i bättre prestanda i allmänhet. Att läsa in rapporter och instrumentpaneler involverar fortfarande förfrågningar om metadata från hemregionen.
-- [Dataflödesfunktionen](service-dataflows-overview.md) (under förhandsgranskning) stöds inte med Multi-GEO just nu.
+- Funktionen för [dataflöden](service-dataflows-overview.md) stöds inte med Multi-GEO just nu.
 
 ## <a name="next-steps"></a>Nästa steg
 

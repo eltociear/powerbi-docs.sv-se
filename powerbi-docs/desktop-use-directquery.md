@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61348879"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68324800"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -50,12 +50,10 @@ Det finns några begränsningar med att använda **DirectQuery**:
 
 * Alla tabeller måste komma från en enda databas, om du inte använder [sammansatta modeller](desktop-composite-models.md)
 * Om frågan till **frågeredigeraren** är alltför komplex uppstår ett fel. För att åtgärda felet måste du antingen ta bort det problematiska steget i **frågeredigeraren** eller *importera* data istället för att använda **DirectQuery**. För flerdimensionella källor som SAP Business Warehouse finns ingen **frågeredigerare**
-* Filtrering av relationen är begränsad till en riktning i stället för i båda riktningarna (även om det är möjligt att aktivera korsfiltrering i båda riktningarna för **DirectQuery** som en förhandsvisningsfunktion). För flerdimensionella källor som SAP Business Warehouse finns det inga definierade relationer i modellen
+* Filtrering av relationen är begränsad till en enda riktning i stället för i båda riktningarna (det är dock möjligt att aktivera korsfiltrering i båda riktningarna för **DirectQuery**). För flerdimensionella källor som SAP Business Warehouse finns det inga definierade relationer i modellen
 * Tidsinformationsfunktioner är inte tillgängliga i **DirectQuery**. Till exempel stöds särskild behandling för datumkolumnerna (år, kvartal, månad, dag, osv) inte i **DirectQuery**-läget.
-* Som standard är DAX-uttryck begränsade för mått. Se följande stycke (efter punktlistan) för mer information
+* Det finns begränsningar för DAX-uttryck som tillåts i mått så att frågor som skickas till den underliggande datakällan har acceptabel prestanda.
 * Det finns en begränsning på en miljon rader för att returnera data när du använder **DirectQuery**. Denna begränsning påverkar inte aggregeringar eller beräkningar som används för att skapa datauppsättningen som returneras med **DirectQuery**, utan endast rader som returneras. Du kan till exempel sammanställa 10 miljoner rader med din fråga som körs på datakällan och korrekt returnerar resultat som aggregeringar till Power BI med hjälp av **DirectQuery** så länge data som returneras till Power BI är mindre än 1 miljon rader. Om mer än 1 miljoner rader ska returneras från **DirectQuery** returnerar Power BI ett fel.
-
-För att säkerställa att frågor som skickats till den underliggande datakällan har acceptabel prestanda, gäller begränsningar för mått som standard. Avancerade användare kan välja att kringgå den här begränsningen genom att välja **Arkiv > Alternativ och inställningar > Alternativ** och sedan **DirectQuery**, följt av alternativet *Tillåt obegränsade åtgärder i DirectQuery-läge*. När du väljer det alternativet kan du använda DAX-uttryck som gäller för ett mått. Användarna måste dock vara medvetna om att vissa uttryck som fungerar bra när data importeras kan resultera i mycket långsamt frågor till serverdelskällan i DirectQuery-läge.
 
 ## <a name="important-considerations-when-using-directquery"></a>Att tänka på när du använder DirectQuery
 Följande tre punkter ska beaktas när du använder **DirectQuery**:

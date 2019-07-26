@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/24/2019
-ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.date: 07/15/2019
+ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839556"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307068"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten 
 
@@ -26,15 +26,15 @@ När du ställer in prenumerationer väljer du hur ofta du vill få e-postmeddel
 
 - Till skillnad från prenumerationer på instrumentpaneler och Power BI-rapporter innehåller prenumerationen en bilaga med alla utdata i rapporten.  Följande typer av bilagor stöds: PDF, PowerPoint-presentation (PPTX), Excel-arbetsbok (XLSX), Word-dokument (DOCX), CSV-fil och XML.
 
-- Det visas ingen förhandsgranskning av rapporten i e-postmeddelandets brödtext.  Vi planerar att införa ett alternativ för att visa en bild av den första sidan i rapporten. 
+- Du kan inkludera en förhandsgranskning av rapporten i e-postmeddelandets brödtext.  Detta är valfritt och kan skilja sig något från den första sidan i ditt bifogade rapportdokument beroende på vilket bilageformat som valts. 
 
 - Maximal storlek för rapportbilagan är 25 MB. 
 
 - Du kan ställa in prenumerationer åt andra på sidnumrerade rapporter som ansluter till datakällor som stöds för närvarande, som Azure Analysis Services eller Power BI-datamängder. Tänk på att rapportbilagan återger data baserat på dina behörigheter, precis som SQL Server Reporting Services fungerar redan idag. 
 
-- Prenumerationer på rapportsidor är knutna till namnet på rapporten.  
+- E-postprenumerationer kan skickas med antingen de aktuellt valda parametrarna eller standardparametrarna för din rapport.  Du kan ange olika parametervärden för varje prenumeration som du skapar för rapporten. 
 
-- E-postprenumerationer skickas med standardvärden för rapportens parametrar. 
+- Om rapportförfattaren har angett uttrycksbaserade parametrar (till exempel att standardvärdet alltid är dagens datum) använder prenumerationen det som standardvärde. Du kan ändra andra parametervärden och välja att använda aktuella värden, men såvida du inte uttryckligen ändrar även det värdet så använder prenumerationen den uttrycksbaserade parametern.
 
 - Alternativet **Efter datauppdatering** som frekvens är inte tillgängligt för sidnumrerade rapporter. Du får alltid de senaste värdena från den underliggande datakällan. 
 

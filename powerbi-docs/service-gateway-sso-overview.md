@@ -8,39 +8,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9e91c162c9b748fd0ef122aed8fc7ffee6dba5fc
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
-ms.translationtype: MT
+ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448306"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271858"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Översikt över enkel inloggning (SSO) för gatewayer i Power BI
 
-Du kan få en sömlös enkel inloggningsanslutning, vilket medför att Power BI-rapporter och -instrumentpaneler kan uppdateras från lokala data, genom att konfigurera din lokala datagateway med antingen Kerberos eller Security Assertion Markup Language (SAML). Den lokala datagatewayen genomför enkel inloggning med hjälp av DirectQuery, som används för att ansluta till lokala datakällor.
+Du kan få en sömlös enkel inloggningsanslutning, vilket medför att Power BI-rapporter och -instrumentpaneler kan uppdateras från lokala data, genom att konfigurera din lokala datagateway med antingen Kerberos eller Security Assertion Markup Language (SAML). Den lokala datagatewayen möjliggör enkel inloggning med hjälp av DirectQuery, som används för att ansluta till lokala datakällor.
 
 Vi stöder för närvarande följande datakällor:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) och [SAML](service-gateway-sso-saml.md)
-* SAP BW ([Kerberos](service-gateway-sso-kerberos.md)
+* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) och [SAML](service-gateway-sso-saml.md))
+* SAP BW ([Kerberos](service-gateway-sso-kerberos.md))
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))
-* Du kan också enkel inloggning för [andra datakällor](desktop-directquery-data-sources.md#single-sign-on-sso-for-directquery-sources) utan att använda en datagateway
 
-När en användare interagerar med en DirectQuery-rapport i Power BI-tjänsten, kan varje åtgärd relaterad till korsfiltrering, sektor, sortering och rapportredigering resultera i frågor som körs i realtid mot den underliggande lokala datakällan.  När enkel inloggning har konfigurerats för datakällan körs frågorna under identiteten för den användare som interagerar med Power BI (det vill säga via webbläsaren eller Power BI Mobile-appar). Därmed ser varje användare exakt de data som han eller hon har behörighet för i den underliggande datakällan – med enkel inloggning konfigurerad finns det ingen delad datacachelagring för olika användare.
+När en användare interagerar med en DirectQuery-rapport i Power BI-tjänsten, kan varje åtgärd relaterad till korsfiltrering, sektor, sortering och rapportredigering resultera i frågor som körs i realtid mot den underliggande lokala datakällan. När enkel inloggning har konfigurerats för datakällan körs frågorna under identiteten för den användare som interagerar med Power BI (det vill säga via webbläsaren eller Power BI Mobile-appar). Därmed ser varje användare exakt de data som han eller hon har behörighet för i den underliggande datakällan – med enkel inloggning konfigurerad finns det ingen delad datacachelagring för olika användare.
 
 ## <a name="query-steps-when-running-sso"></a>Frågesteg vid körning av enkel inloggning
 
 En fråga som körs med SSO (enkel inloggning) består av tre steg, vilket visas i följande diagram.
 
 ![Frågesteg med enkel inloggning](media/service-gateway-sso-overview/sso-query-steps.png)
-
-> [!NOTE]
-> SSO för Oracle har inte aktiverats ännu, men är under utveckling och kommer snart.
 
 Här finns mer information om de här stegen:
 
@@ -59,4 +55,5 @@ Här finns mer information om de här stegen:
 Nu när du förstår grunderna för enkel inloggning kan du läsa mer detaljerad information om Kerberos och SAML:
 
 * [Enkel inloggning (SSO) – Kerberos](service-gateway-sso-kerberos.md)
+* [Enkel inloggning (SSO) – Kerberos – resursbaserad](service-gateway-sso-kerberos-resource.md)
 * [Enkel inloggning (SSO) – SAML](service-gateway-sso-saml.md)

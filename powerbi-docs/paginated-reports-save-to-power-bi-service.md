@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 1e5f4a4fda8c6d11ead487ce2891e5c085463b75
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 81e079be6c8bec27c006c68eccb3ea1091b813df
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839611"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271202"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicera en sidnumrerad rapport i Power BI-tjänsten
 
@@ -79,7 +79,7 @@ Precis som alla andra Power BI-rapporter, om rapportdatakällan finns på plats,
 
    ![Hantera den sidnumrerade rapporten](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. Du hittar mer information och nästföljande steg i artikeln [Installera en gateway](service-gateway-install.md) för Power BI-tjänsten.
+1. Information och följande steg finns i Power BI-tjänstartikeln [Vad är en lokal datagateway?](service-gateway-onprem.md).
 
 ### <a name="gateway-limitations"></a>Gateway-begränsningar
 

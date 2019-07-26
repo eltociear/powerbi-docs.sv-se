@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/18/2019
-ms.openlocfilehash: 10ac6ed9f49241103d03f2667ccc8db5d619db6c
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.date: 07/15/2019
+ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345516"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270783"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -119,10 +119,10 @@ Du får ett felmeddelande om du försöker ladda upp en fil som har en funktion 
 
 Vi stöder följande datakällor: 
 
-- Power BI Premium Datasets
+- Power BI-datamängder (via enkel inloggning)
 - Azure Analysis Services (via enkel inloggning (SSO) och oAuth)
 - Azure SQL Data Warehouse
-- Azure SQL Database (användarnamn/lösenord och oAuth)
+- Azure SQL Database (användarnamn/lösenord, enkel inloggning och oAuth)
 - SQL Server*
 - SQL Server Analysis Services (SSAS), tabell- (DAX) och multidimensionella (MDX) modeller* 
 - Oracle* 
@@ -134,11 +134,11 @@ När SSAS nås via gatewayen, lagras den användare vars autentiseringsuppgifter
 
 ### <a name="what-authentication-methods-do-you-support"></a>Vilka autentiseringsmetoder stöder ni?
 
-Vi stöder enkel inloggning för både Azure Analysis Services och Power BI Premium-datakällor och vi stöder oAuth och enkel inloggning för Azure SQL Database.  För andra datakällor måste du för närvarande lagra ett användarnamn och ett lösenord med datakällan i portalen eller gatewayen.  
+Vi stöder enkel inloggning för Azure Analysis Services, Azure SQL Database och Power BI-datakällor.  Vi stöder även OAuth för Azure SQL Database och Azure Analysis Services.  För andra datakällor måste du för närvarande lagra ett användarnamn och ett lösenord med datakällan i portalen eller gatewayen.  
 
 ### <a name="can-i-use-a-power-bi-dataset-as-a-data-source-for-my-paginated-report"></a>Kan jag använda en Power BI-datamängder som en datakälla för min sidnumrerade rapport?
 
-Ja, vi stöder Power BI Premium-datamängder som datakällor för sidnumrerade rapporter.
+Ja, vi stöder Power BI-datamängder som datakällor för sidnumrerade rapporter.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Kan jag använda lagrade procedurer via gatewayen?
 
@@ -179,10 +179,6 @@ Vi planerar att rapporterna ska ha stöd för samma större scenarier i tjänste
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Planeras ett migreringsverktyg så att SSRS-kunder kan flytta sina befintliga rapporter och tillgångar till Power BI?
 
 Vi utvärderar alternativ för att möjliggöra att innehåll flyttas till Power BI på ett automatiserat sätt, men det här kommer inte att bli tillgängligt förrän efter GA (allmän tillgänglighet).
-
-### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Kommer jag någonsin att skapa både sidnumrerade rapporter och Power BI-rapporter i ett enda redigeringsverktyg?
-
-Vi har tittat på sätt för att möjliggöra det här scenariot, men det finns inte med i planerna för tillfället.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Finns det en rapportvisningskontroll för sidnumrerade rapporter i Power BI-tjänsten?
 

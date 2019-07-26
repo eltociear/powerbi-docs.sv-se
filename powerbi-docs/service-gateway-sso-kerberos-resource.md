@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 6dc530305634b44415ddccb9c42952c0bfbe2e5f
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383370"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271927"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda resursbaserad Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -23,7 +23,7 @@ Använd [resursbaserade Kerberos-begränsad delegering](/windows-server/security
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Förbereda för resursbaserad Kerberos-begränsad delegering
 
-Flera objekt måste konfigureras för att Kerberos-begränsad delegering ska fungera korrekt, inklusive _Tjänsternas huvudnamn_ (SPN) och delegeringsinställningar på tjänstkonton. 
+Flera objekt måste konfigureras för att Kerberos-begränsad delegering ska fungera korrekt, inklusive _Tjänsternas huvudnamn_ (SPN) och delegeringsinställningar på tjänstkonton.
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Förutsättning 1: Operativsystemskrav
 
@@ -31,7 +31,7 @@ Resursbaserad begränsad delegering kan bara vara konfigurerad på en domänkont
 
 ### <a name="prerequisite-2-install-and-configure-the-on-premises-data-gateway"></a>Förutsättning 2: Installera och konfigurera den lokala datagatewayen
 
-Den här versionen av den lokala datagatewayen stöder en uppgradering på plats, samt _inställningsövertagning_ för befintliga gatewayer.
+Den lokala datagatewayen stöder en uppgradering på plats samt _inställningsövertagande_ för befintliga gatewayer.
 
 ### <a name="prerequisite-3-run-the-gateway-windows-service-as-a-domain-account"></a>Förutsättning 3: Kör gatewayens Windows-tjänst som ett domänkonto
 
@@ -39,7 +39,7 @@ I en standardinstallation körs gatewayen som ett datorlokalt tjänstkonto för 
 
 ![Domänkonto](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-För att aktivera **Kerberos-begränsad delegering så måste gatewayen köras som ett domänkonto, om inte din Azure AD redan har synkroniserats med din lokala Active Directory (med Azure AD DirSync/Connect). Mer information om att växla kontot till ett domänkonto finns i [Ändra gatewayen till ett domänkonto](service-gateway-sso-kerberos.md).
+För att aktivera **Kerberos-begränsad delegering så måste gatewayen köras som ett domänkonto, om inte din Azure AD redan har synkroniserats med din lokala Active Directory (med Azure AD DirSync/Connect). Om du behöver växla kontot till ett domänkonto kan du läsa [Ändra gatewaytjänstkontot](/data-integration/gateway/service-gateway-service-account).
 
 Om Azure AD DirSync/Connect har konfigurerats och användarkonton har synkroniserats så behöver inte gatewaytjänsten utföra lokala AD-sökningar vid körning. Du kan använda ditt lokala tjänst-SID (i stället för att kräva ett domänkonto) för gatewaytjänsten. Konfigurationsstegen för Kerberos-begränsad delegering som beskrivs i den här artikeln motsvarar den konfigurationen (de tillämpas helt enkelt på gatewayens datorobjekt i Active Directory i stället för domänkontot).
 
@@ -51,9 +51,9 @@ Om Azure AD DirSync/Connect har konfigurerats och användarkonton har synkronise
 
 Om du vill konfigurera systemet korrekt, måste du konfigurera eller verifiera följande två objekt:
 
-1. Konfigurera vid behov ett SPN för gatewaytjänstens domänkonto.
+* Konfigurera vid behov ett SPN för gatewaytjänstens domänkonto.
 
-1. Konfigurera delegeringinställningarna på gatewaytjänstens domänkonto.
+* Konfigurera delegeringinställningarna på gatewaytjänstens domänkonto.
 
 Observera att du måste vara domänadministratör för att utföra dessa två konfigurationssteg.
 
@@ -61,15 +61,15 @@ I följande avsnitt beskrivs de här stegen i tur och ordning.
 
 ### <a name="configure-an-spn-for-the-gateway-service-account"></a>Konfigurera ett SPN för gatewaytjänstkontot
 
-Börja med att kontrollera om ett SPN redan har skapats för det domänkonto som används som gatewaytjänstkonto, och följ då dessa steg:
+Börja med att kontrollera om ett SPN redan har skapats för det domänkonto som används som gatewaytjänstkonto genom att följa dessa steg:
 
 1. Starta **Active Directory-användare och datorer** som domänadministratör.
 
-1. Högerklicka på domänen, välj **Hitta** och ange gatewaytjänstkontots kontonamn.
+1. Högerklicka på domänen, välj **Sök** och ange gatewaytjänstkontots kontonamn.
 
 1. Högerklicka på gatewayens tjänstkonto i sökresultatet och välj **Egenskaper**.
 
-1. Om fliken **Delegering** visas i dialogrutan **Egenskaper** hade ett SPN redan skapats och du kan gå vidare till nästa underavsnitt om att konfigurera delegeringsinställningar.
+1. Om fliken **Delegering** visas i dialogrutan **Egenskaper** hade ett SPN redan skapats och du kan gå vidare till nästa underavsnitt om att [konfigurera delegeringsinställningar](#configure-delegation-settings).
 
     Om det inte finns någon **Delegering**-flik i dialogrutan **Egenskaper** kan du manuellt skapa ett SPN på det kontot som lägger till **Delegering**-fliken (detta är den enklaste metoden för att konfigurera delegeringsinställningarna). Du kan skapa ett SPN med hjälp av [setspn-verktyget](https://technet.microsoft.com/library/cc731241.aspx) som medföljer Windows (du behöver domänadministratörsbehörighet för att skapa ett SPN).
 
@@ -83,10 +83,10 @@ Börja med att kontrollera om ett SPN redan har skapats för det domänkonto som
 
 I följande steg så förutsätter vi att det finns en lokal miljö med två datorer på olika domäner: en gatewaydator och en databasserver som kör SQL Server. För det här exemplet så förutsätter vi även följande inställningar och namn:
 
-- Gatewaydatorns namn: **PBIEgwTestGW**
-- Gatewaytjänstkonto: **PBIEgwTestFrontEnd\GatewaySvc** (kontots visningsnamn: Gatewayanslutning)
-- Datornamn för SQL Server-datakällan: **PBIEgwTestSQL**
-- Tjänstkonto för SQL Server-datakällan: **PBIEgwTestBackEnd\SQLService**
+* Gatewaydatorns namn: **PBIEgwTestGW**
+* Gatewaytjänstkonto: **PBIEgwTestFrontEnd\GatewaySvc** (kontots visningsnamn: Gatewayanslutning)
+* Datornamn för SQL Server-datakällan: **PBIEgwTestSQL**
+* Tjänstkonto för SQL Server-datakällan: **PBIEgwTestBackEnd\SQLService**
 
 Baserat på dessa exempelnamn och -inställningar så blir konfigurationsstegen följande:
 
@@ -102,7 +102,7 @@ Baserat på dessa exempelnamn och -inställningar så blir konfigurationsstegen 
 
     ![Gruppegenskaper](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-1. Öppna Kommandotolken och kör följande kommandon i domänkontrollanten för domänen **PBIEgwTestBack-end** för att uppdatera attributet msDS-AllowedToActOnBehalfOfOtherIdentity för serverdelstjänstkontot:
+1. Öppna en kommandotolk och kör följande kommandon i domänkontrollanten för domänen **PBIEgwTestBack-end** för att uppdatera attributet msDS-AllowedToActOnBehalfOfOtherIdentity för serverdelstjänstkontot:
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
@@ -125,7 +125,7 @@ Slutligen måste gatewaytjänstkontot på den dator som kör gatewaytjänsten (*
 
 1. Högerklicka på och öppna **Egenskaper** för **Personifiera en klient efter autentisering** och kontrollera listan över konton. Den måste innehålla gatewaytjänstkontot ( **PBIEgwTestFront-end**  **\GatewaySvc** ).
 
-1. I listan med principer under **Tilldelning av användarrättigheter** väljer du **Agera som del av operativsystemet (SeTcbPrivilege)**. Se till att gatewaytjänstkontot även finns med i listan över konton.
+1. I listan med principer under **Tilldelning av användarrättigheter** väljer du **Agera som del av operativsystemet (SeTcbPrivilege)** . Se till att gatewaytjänstkontot även finns med i listan över konton.
 
 1. Starta om den **lokala datagatewaytjänsten**.
 
@@ -141,8 +141,8 @@ Den här konfigurationen fungerar i de flesta fall. Med Kerberos kan det dock f�
 
 Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
 
-- [Lokal datagateway](service-gateway-onprem.md)
-- [DirectQuery i Power BI](desktop-directquery-about.md)
-- [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
-- [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)
-- [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)
+* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem.md)
+* [DirectQuery i Power BI](desktop-directquery-about.md)
+* [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
+* [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)
+* [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)

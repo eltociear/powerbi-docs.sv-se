@@ -7,117 +7,72 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8f45fbed0b2c4e5de62f8ef18ee9a552bf05486b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a3cdc3e6c4fc4f18613994a919f8ab733df5e14
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293794"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271662"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Hantera din datakälla – Import/schemalagd uppdatering
-När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. Den här artikeln tittar på hur du kan arbeta med gatewayer och datakällor som används för schemalagd uppdatering i stället för DirectQuery- eller live-anslutningar.
 
-## <a name="download-and-install-the-gateway"></a>Ladda ned och installera gatewayen
-Du kan ladda ned gatewayen från Power BI-tjänsten. Välj **Nedladdningar** > **Datagateway** eller gå till [nedladdningssidan för gatewayer](https://go.microsoft.com/fwlink/?LinkId=698861).
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-download-data-gateway.png)
-
-## <a name="add-a-gateway"></a>Lägga till en gateway
-Du lägger till en företagsgateway genom att helt enkelt [ladda ned](https://go.microsoft.com/fwlink/?LinkId=698863) och installera gatewayen på en server i din miljö. När du har installerat gatewayen visas den i listan med gatewayer under **Hantera gatewayer**.
-
-> [!NOTE]
-> **Hantera gatewayer** visas inte förrän du är administratör för minst en gateway. Detta kan inträffa antingen genom att du läggs till som en administratör eller om du installerar och konfigurerar en gateway.
-> 
-> 
-
-## <a name="remove-a-gateway"></a>Ta bort en gateway
-Om en gateway tas bort raderas även alla datakällor under gatewayen.  Detta bryter också anslutningen till alla instrumentpaneler och rapporter som är beroende av dessa datakällor.
-
-1. Välj kugghjulsikonen ![](media/service-gateway-enterprise-manage-scheduled-refresh/pbi_gearicon.png) i det övre högra hörnet > **Hantera gatewayer**.
-2. Gateway > **Ta bort**
-   
-   ![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings7.png)
+När du har [installerat den lokala datagatewayen](/data-integration/gateway/service-gateway-install) behöver du [lägga till datakällor](service-gateway-data-sources.md#add-a-data-source) som kan användas med gatewayen. Den här artikeln handlar om hur du kan arbeta med gatewayer och datakällor som används för schemalagd uppdatering i stället för DirectQuery- eller live-anslutningar.
 
 ## <a name="add-a-data-source"></a>Lägga till en datakälla
-Du kan lägga till en datakälla genom att antingen välja en gateway och klicka på **Lägg till datakälla** eller gå till Gateway > **Lägg till datakälla**.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings1.png)
+Information om hur du lägger till en datakälla finns i [Lägga till en datakälla](service-gateway-data-sources.md#add-a-data-source).
 
-Du kan sedan välja **Typ av datakälla** i listan. Alla datakällor i listan kan användas för schemalagd uppdatering med företagsgateway. Analysis Services, SQL Server och SAP HANA kan användas för schemalagd uppdatering eller DirectQuery-/live-anslutningar.
+Alla typer av datakällor som anges kan användas för schemalagd uppdatering med den lokala datagatewayen. Analysis Services, SQL Server och SAP HANA kan användas för schemalagd uppdatering eller DirectQuery-/live-anslutningar.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
+![Välja datakälla](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
 
-Du kan fylla i informationen för datakällan, inklusive källinformation eller autentiseringsuppgifter som används för att få åtkomst till datakällan.
+Du kan fylla i informationen för datakällan, inklusive källinformationen och de autentiseringsuppgifter som används för att få åtkomst till datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information finns i den övergripande lokala artikeln om datagatewayer, där du lär dig mer om hur [autentiseringsuppgifter](service-gateway-onprem.md#credentials) lagras.
-> 
-> 
+> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
+![Fylla i inställningarna för datakälla](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
 
-Klicka på **Lägg till** när allt har fyllts i.  Nu kan du använda den här datakällan för schemalagd uppdatering med dina lokala data. *Anslutningen lyckades* visas om anslutningen har lyckats.
+En lista över typer av datakällor som kan användas med schemalagd uppdatering finns i [Lista över tillgängliga typer av datakällor](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings4.png)
+Välj **Lägg till** när du har fyllt i allt. Nu kan du använda den här datakällan för schemalagd uppdatering med dina lokala data. *Anslutningen lyckades* visas om anslutningen lyckades.
 
-<!-- Shared Install steps Include -->
-[!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
+![Visa anslutningsstatus](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Avancerade inställningar
-Du kan konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast vid schemalagd uppdatering. [Läs mer](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings9.png)
+Om du vill kan du konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast vid schemalagd uppdatering. Mer information om sekretessnivåer för datakälla finns i [Sekretessnivåer (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-## <a name="remove-a-data-source"></a>Ta bort en datakälla
-Om en datakälla tas bort bryts alla anslutningar till instrumentpaneler och rapporter som är beroende av den.  
-
-Ta bort en datakälla genom att gå till Datakälla > **Ta bort**.
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings6.png)
-
-## <a name="manage-administrators"></a>Hantera administratörer
-På fliken Administratörer för gatewayen kan du lägga till och ta bort användare som kan administrera gatewayen. Du kan bara lägga till användare för tillfället. Det går inte att lägga till säkerhetsgrupper.
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings8.png)
-
-## <a name="manage-users"></a>Hantera användare
-På datakällans flik Användare kan du lägga till och ta bort användare eller säkerhetsgrupper som kan använda datakällan.
-
-> [!NOTE]
-> Användarlistan styr enbart vem som har behörighet att publicera rapporter. Rapportägare kan skapa instrumentpaneler eller innehållspaket och dela dem med andra användare.
-> 
-> 
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings5.png)
+![Ange sekretessnivån](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings9.png)
 
 ## <a name="using-the-data-source-for-scheduled-refresh"></a>Använda datakällan med schemalagd uppdatering
+
 När du har skapat datakällan blir den tillgänglig för användning med antingen DirectQuery-anslutningar eller genom schemalagd uppdatering.
 
 > [!NOTE]
-> Server- och databasnamnen måste vara samma mellan Power BI Desktop och datakällan i den lokala datagatewayen!
-> 
-> 
+> Server- och databasnamnen måste överensstämma mellan Power BI Desktop och datakällan i den lokala datagatewayen.
 
-Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste stämma överens. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop, måste du använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANS* i Power BI Desktop, måste du använda samma i den datakälla som konfigureras för gatewayen.
+Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste stämma överens. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop måste du använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANS* i Power BI Desktop måste du använda samma i den datakälla som konfigureras för gatewayen.
 
-Om du finns med på fliken **Användare** i den datakälla som konfigurerats i gatewayen, samt om server- och databasnamnen matchar, visas gatewayen som ett alternativ för schemalagd uppdatering.
+Om du finns med på fliken **Användare** för den datakälla som konfigurerats i gatewayen, och om server- och databasnamnen matchar, visas gatewayen som ett alternativ för användning med schemalagd uppdatering.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
+![Visa användarna](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
 > [!WARNING]
-> Om datamängden innehåller flera datakällor måste du lägga varje datakälla i gatewayen. Om en eller flera datakällor inte har lagts till i gatewayen, visas inte gatewayen som tillgänglig för schemalagd uppdatering.
-> 
-> 
+> Om datamängden innehåller flera datakällor måste du lägga varje datakälla i gatewayen. Om en eller flera datakällor inte har lagts till i gatewayen visas inte gatewayen som tillgänglig för schemalagd uppdatering.
 
 ## <a name="limitations"></a>Begränsningar
-* OAuth är inte ett schema för autentiseringsmetoder som stöds med en lokal datagateway. Du kan inte lägga till datakällor som kräver OAuth. Om datauppsättningen har en datakälla som kräver OAuth, kan du inte använda en gateway för schemalagd uppdatering.
+
+OAuth är inte ett schema för autentiseringsmetoder som stöds med en lokal datagateway. Du kan inte lägga till datakällor som kräver OAuth. Om datamängden har en datakälla som kräver OAuth kan du inte använda gatewayen för schemalagd uppdatering.
 
 ## <a name="next-steps"></a>Nästa steg
-[Lokal datagateway](service-gateway-onprem.md)  
-[Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
-[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 
+* [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
+* [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
+
+Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

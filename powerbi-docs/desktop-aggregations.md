@@ -1,5 +1,5 @@
 ---
-title: Använda sammansättningar i Power BI Desktop (förhandsversion)
+title: Använda aggregeringar i Power BI Desktop
 description: Utföra interaktiva analyser på stordata i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f14b6878d44510631822dd26458bdaa17c1fe3a0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239588"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325171"
 ---
-# <a name="aggregations-in-power-bi-desktop-preview"></a>Sammansättningar i Power BI Desktop (förhandsversion)
+# <a name="aggregations-in-power-bi-desktop"></a>Aggregeringar i Power BI Desktop
 
 Användning av **sammansättningar** i Power BI tillåter interaktiv analys över stordata på sätt som tidigare inte var möjligt. Med **sammansättningar** kan du drastiskt minska kostnaderna för att låsa upp stora datauppsättningar för beslutsfattande.
 
@@ -36,16 +36,6 @@ Lagring på tabellnivå används normalt med sammansättningsfunktionen. Läs ar
 Sammansättningar används tillsammans med datakällor som representerar dimensionsmodeller, till exempel informationslager, data mart och Hadoop-baserade stordatakällor. Den här artikeln beskriver vanliga modelleringsskillnader i Power BI för varje typ av datakälla.
 
 Alla Power BI Import- (icke-flerdimensionella) och DirectQuery-källor fungerar med sammansättningar.
-
-## <a name="enabling-the-aggregations-preview-feature"></a>Aktivera förhandsgranskningsfunktionen för sammansättningar
-
-Funktionen för **sammansättningar** är i förhandsversion och måste aktiveras i **Power BI Desktop**. Om du vill aktivera **sammansättningar** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsfunktioner** och markerar sedan kryssrutorna **sammansatta modeller** och **Hantera sammansättningar**. 
-
-![aktivera förhandsversionsfunktioner](media/desktop-aggregations/aggregations_01.jpg)
-
-Du måste starta om **Power BI Desktop** för att funktionen ska aktiveras.
-
-![omstart krävs för att ändringarna ska börja gälla](media/desktop-composite-models/composite-models_03.png)
 
 ## <a name="aggregations-based-on-relationships"></a>Sammansättningar som baseras på relationer
 
@@ -103,8 +93,10 @@ Det enda fallet där en *korskälla*-relation anses stark om bägge tabellerna �
 
 För *korskälla*-sammansättningsträffar som inte är beroende av relationer kan du se avsnittet nedan på sammansättningar baserade på gruppera efter-kolumner.
 
-### <a name="aggregation-table-is-hidden"></a>Sammansättningstabellen är dold
-Tabellen **Sales Agg** är dold. Sammansättningstabeller bör alltid döljas för datauppsättningens användare. Konsumenter och frågor refererar till detaljtabellen, inte till sammansättningstabellen. De behöver inte ens veta att sammansättningstabellen finns.
+### <a name="aggregation-tables-are-not-addressable"></a>Aggregeringstabeller är inte adresserbara
+Användare med skrivskyddad åtkomst till datamängden kan inte köra frågor mot aggregeringstabeller. Detta förhindrar säkerhetsproblem vid användning med RLS. Konsumenter och frågor refererar till detaljtabellen, inte till sammansättningstabellen. De behöver inte ens veta att sammansättningstabellen finns.
+
+Av den här anledningen bör tabellen **Sales Agg** vara dold. Om den inte är det kommer dialogrutan Hantera aggregeringar att dölja den när du klickar på knappen Tillämpa alla.
 
 ### <a name="manage-aggregations-dialog"></a>Hantera dialogrutan sammansättningar
 Sedan definierar vi sammansättningarna. Välj snabbmenyn **Hantera sammansättningar** för tabellen **Sales Agg** genom att högerklicka på tabellen.
@@ -136,11 +128,7 @@ Följande viktiga valideringar tillämpas av dialogrutan:
 * Informationskolumnen som har valts måste ha samma datatyp som sammansättningskolumnen förutom sammanfattningsfunktioner för Antal och Antal tabellrader. Antal och Antal tabellrader erbjuds endast för heltalskolumner för sammansättning och kräver inte en matchande datatyp.
 * Länkade sammansättningar som omfattar tre eller flera tabeller är inte tillåtna. Det går till exempel inte att ställa in sammansättningar i **Tabell A** som refererar till **Tabell B** som har sammansättningar som refererar till **Tabell C**.
 * Duplicerade sammansättningar där två poster använder samma sammanfattningsfunktion och hänvisar till samma informationstabell/kolumn är inte tillåtna.
-
-Följande valideringar tillämpas också för **sammansättningar** i den allmänt tillgängliga förhandsversionen. Vi har för avsikt att ta bort dessa valideringar i den allmänt tillgängliga versionen.
-
-* Sammansättningar kan inte användas med säkerhet på radnivå (RLS). *Begränsningar i den allmänt tillgängliga förhandsversionen.*
-* Informationstabellen måste vara DirectQuery, inte Import. *Begränsningar i den allmänt tillgängliga förhandsversionen.*
+* Informationstabellen måste vara DirectQuery, inte Import.
 
 De flesta valideringar tillämpas genom att inaktivera listrutevärden och visa förklarande text i knappbeskrivningen, vilket visas i följande bild.
 
@@ -149,6 +137,9 @@ De flesta valideringar tillämpas genom att inaktivera listrutevärden och visa 
 ### <a name="group-by-columns"></a>Gruppera efter kolumner
 
 I det här exemplet är de tre GroupBy-posterna valfria. De påverkar inte sammansättningsbeteendet (förutom för exempelfrågan DISTINCTCOUNT, vilket visas på nästa bild). De ingår för att förbättra läsbarheten. Utan dessa GroupBy-poster skulle sammansättningarna fortfarande användas utifrån relationer. Det här är annorlunda jämfört med att använda sammansättningar utan relationer, vilket visas i exemplet med stordata som tas upp senare i den här artikeln.
+
+### <a name="inactive-relationships"></a>Inaktiva relationer
+Gruppering efter en sekundärnyckelkolumn som används av en inaktiv relation och förlitar sig på USERELATIONSHIP-funktionen för aggregeringsträffar stöds inte.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Identifiera om sammansättningar används eller missas av frågor
 
@@ -191,6 +182,17 @@ I vissa fall kan funktionen DISTINCTCOUNT använda sammansättningar. Följande 
 
 ![frågeexempel](media/desktop-aggregations/aggregations-code_07.jpg)
 
+### <a name="rls"></a>RLS
+RLS-uttryck (säkerhet på radnivå) bör filtrera både aggregeringstabellen och detaljtabellen för att fungera korrekt. Enligt exemplet fungerar ett RLS-uttryck i tabellen **Geografi** eftersom Geografi är på filtreringssidan för relationer med både tabellen **Försäljning** och tabellen **Försäljningssammanfattning**. RLS tillämpas korrekt på frågor som träffar aggregeringstabellen och dem som inte gör det.
+
+![roller för aggregeringshantering](media/desktop-aggregations/manage-roles.jpg)
+
+Ett RLS-uttryck i tabellen **Produkt** skulle endast filtrera tabellen **Försäljning**, inte tabellen **Sales Agg**. Detta rekommenderas ej. Frågor som skickats av användare som kommer åt datamängden via den här rollen tar inte del av aggregeringsträffar. Eftersom aggregeringstabellen är en annan representation av samma data i detaljtabellen skulle det inte vara säkert att besvara frågor från aggregeringstabellen eftersom RLS-filtret inte kan tillämpas.
+
+Ett RLS-uttryck i själva tabellen **Sales Agg** skulle endast filtrera aggregeringstabellen, inte detaljtabellen. Detta är inte tillåtet.
+
+![roller för aggregeringshantering](media/desktop-aggregations/filter-agg-error.jpg)
+
 ## <a name="aggregations-based-on-group-by-columns"></a>Sammansättningar som baseras på gruppera-efter-kolumner 
 
 Hadoop-baserade modeller för stordata har andra egenskaper än dimensionella modeller. För att undvika kopplingar mellan stora tabeller, förlitar de sig ofta inte på relationer. Istället är dimensionsattribut ofta avnormaliserade till faktatabeller. Sådana modeller för stordata kan låsas upp för interaktiv analys med hjälp av **sammansättningar** som baseras på gruppera efter-kolumner.
@@ -225,6 +227,10 @@ Det är en bra idé att använda sammansättningar för tabellen Antal rader fö
 
 ![Filterdialogruta](media/desktop-aggregations/aggregations_12.jpg)
 
+### <a name="rls"></a>RLS
+
+Samma RLS-regler som beskrivs ovan för aggregeringar baserade på relationer, angående huruvida ett RLS-uttryck kan filtrera aggregeringstabellen, detaljtabellen eller båda, gäller även för aggregeringar som baseras på gruppering efter kolumner. I exemplet kan ett RLS-uttryck som tillämpas på tabellen **Driver Activity** användas för att filtrera tabellen **Driver Activity Agg** eftersom alla grupperingar efter kolumner i aggregeringstabellen omfattas av detaljtabellen. Däremot kan inte ett RLS-filter i tabellen **Driver Activity Agg** tillämpas på tabellen **Driver Activity**, och detta är därför inte tillåtet.
+
 ## <a name="aggregation-precedence"></a>Sammansättningsprioritet
 
 Med sammansättningsprioritet kan flera sammansättningstabeller övervägas av en enda underfråga.
@@ -232,8 +238,11 @@ Med sammansättningsprioritet kan flera sammansättningstabeller övervägas av 
 Se följande exempel. Det är en [sammansatt modell](desktop-composite-models.md) som innehåller flera DirectQuery-källor.
 
 * Importtabellen **Driver Activity Agg2** har hög kornighet på grund av få gruppera-efter-attribut och låg kardinalitet. Antalet rader kan vara så lågt som tusentals, så det kan enkelt anpassas till en minnesintern cache. Dessa attribut används av en viktig instrumentpanel, så frågor som refererar till dem bör kunna utföras så snabbt som möjligt.
-* Tabellen **Driver Activity Agg** är en mellanliggande sammansättningstabell i DirectQuery-läge. Den innehåller mer än en miljard rader och optimeras vid källan med hjälp av kolumnlagringsindex.
+* Tabellen **Driver Activity Agg** är en mellanliggande sammansättningstabell i DirectQuery-läge. Den innehåller fler än en miljard rader i Azure SQL Data Warehouse och optimeras vid källan med hjälp av kolumnlagringsindex.
 * Tabellen **Driver Activity** är DirectQuery och innehåller över en biljon rader med IoT-data som kommer från ett system för stordata. Den använder detaljerade frågor för att visa enskilda IoT-avläsningar i kontexter som kontrolleras av filter.
+
+> [!NOTE]
+> DirectQuery-aggregeringstabeller som använder en annan datakälla till detaljtabellen stöds endast om aggregeringstabellen kommer från en SQL Server-, Azure SQL- eller Azure SQL Data Warehouse-källa.
 
 Fotavtrycket för minnesanvändning för den här modellen är relativt litet, men det låser upp en stor datauppsättning. Den representerar en balanserad arkitektur eftersom den sprider frågebelastningen över komponenter i arkitekturen och använder dem utifrån deras styrkor.
 
@@ -261,8 +270,6 @@ I följande tabell visas posterna som konfigurerats i dialogrutan **Hantera samm
 
 ![Sammansättningstabellen Sales Agg](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> OBS! För den här modellen krävs det att tabellen **Datum** är i DirectQuery-läge för att fylla i dialogrutan hantera sammansättningar, eftersom det är en informationstabell. Detta är en förhandsversionsbegränsning som vi har för avsikt att ta bort när den allmänna tillgängligheten börjar gälla.
-
 ### <a name="query-examples"></a>Frågeexempel
 
 Följande fråga använder sammansättningen eftersom CalendarMonth omfattas av sammansättningstabellen och CategoryName kan nås via en-till-många-relationer. Sammansättningen Summa används för **SalesAmount**.
@@ -285,9 +292,9 @@ Följande fråga för tidsinformation använder inte sammansättningen eftersom 
 
 Följande artiklar beskriver mer om sammansatta modeller och beskriver DirectQuery i detalj.
 
-* [Sammansatta modeller i Power BI Desktop (förhandsversion)](desktop-composite-models.md)
-* [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md)
-* [Lagringsläge i Power BI Desktop (förhandsversion)](desktop-storage-mode.md)
+* [Sammansatta modeller i Power BI Desktop](desktop-composite-models.md)
+* [Många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Lagringsläge i Power BI Desktop](desktop-storage-mode.md)
 
 DirectQuery-artiklar:
 

@@ -7,98 +7,67 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: fa7d10403ca6bd8dc94729b7b4fd631475a3671e
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: de3400989e6d8fe62c03d6b21707559fac0fd7bf
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383426"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271447"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
-Det är möjligt för användare i din organisation att ha åtkomst till lokala data (till vilka de redan har åtkomstauktorisering), men innan dessa användare kan ansluta till den lokala datakällan, så måste en lokal datagateway ha installerats och konfigurerats. Gatewayen underlättar snabb och säker dold kommunikation mellan en användare i molnet till din lokala datakälla och sedan tillbaka till molnet.
 
-Installation och konfiguration av en gateway görs vanligtvis av en administratör. Det kan kräva särskilda kunskaper om dina lokala servrar och i vissa fall kan det även krävas serveradministratörsbehörigheter.
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Den här artikeln ger inte stegvisa anvisningar om hur du installerar och konfigurerar gatewayen. Sådan information hittar du i [Lokal datagateway](service-gateway-onprem.md). Den här artikeln är avsedd att ge dig en djup förståelse av hur gatewayen fungerar. Vi ska också i detalj diskutera användarnamn och säkerhet i både Azure Active Directory och Analysis Services, och hur molntjänsten använder den e-postadress en användare loggar in med, gatewayen och Active Directory för att ansluta säkert till och fråga din lokala data.
+Vi har flyttat informationen från den här artikeln till flera artiklar i Power BI och allmänna dokument. Följ länkarna under varje rubrik för att hitta relevant innehåll.
 
-<!-- Shared Requirements Include -->
-[!INCLUDE [gateway-onprem-requirements-include](./includes/gateway-onprem-how-it-works-include.md)]
+## <a name="how-the-gateway-works"></a>Så här fungerar gatewayen
 
-<!-- Shared Install steps Include -->
-[!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
+Se [Arkitektur för lokal datagateway](/data-integration/gateway/service-gateway-onprem-indepth).
 
-## <a name="sign-in-account"></a>Inloggningskonto
-Användarna kan logga in med antingen ett arbets- eller skolkonto. Det här är ditt organisationskonto. Om du har registrerat dig för ett Office 365-erbjudande och inte angav din faktiska e-postadress till arbetet, kan det se ut så här nancy@contoso.onmicrosoft.com. Ditt konto, inom en molntjänst, lagras i en klient i Azure Active Directory (AAD). Kontot AAD UPN kommer i de flesta fall att matcha e-postadressen.
+## <a name="list-of-available-data-source-types"></a>Lista över tillgängliga typer av datakällor
+
+Se [Hantera datakällor](service-gateway-data-sources.md).
 
 ## <a name="authentication-to-on-premises-data-sources"></a>Autentisering till lokala datakällor
-Lagrade autentiseringsuppgifter används för att ansluta till lokala datakällor från gatewayen med undantag för Analysis Services. Oavsett den enskilda användaren så använder gatewayen lagrade autentiseringsuppgifter för att ansluta.
+
+Se [Autentisering till lokala datakällor](/data-integration/gateway/service-gateway-onprem-indepth#authentication-to-on-premises-data-sources).
 
 ## <a name="authentication-to-a-live-analysis-services-data-source"></a>Autentisering till en levande Analysis Services-datakälla
-Varje gång en användare interagerar med Analysis Services skickas det effektiva användarnamnet till en gateway och sedan vidare till den lokala Analysis Services-servern. Användarens huvudnamn (UPN), vanligtvis den e-postadress du loggar in på molnet med, är vad vi skickar till Analysis Services som den effektiva användaren. UPN skickas i anslutningsegenskapen EffectiveUserName. E-postadressen måste matcha en definierad UPN inom den lokala Active Directory-domänen. UPN-namnet är en egenskap för ett Active Directory-konto. Det Windows-kontot måste sedan vara närvarande för att en Analysis Services-roll ska ha åtkomst till servern. Om ingen matchning hittas i Active Directory lyckas inte inloggningen.
 
-Analysis Services kan också tillhandahålla filtrering baserat på det här kontot. Filtrering kan uppstå med rollbaserad säkerhet eller säkerhet på radnivå.
+Se [Autentisering till en levande Analysis Services-datakälla](service-gateway-enterprise-manage-ssas.md#authentication-to-a-live-analysis-services-data-source).
 
 ## <a name="role-based-security"></a>Rollbaserad säkerhet
-Modeller tillhandahåller säkerhet utifrån användarroller. Roller definieras för ett visst modellprojekt under redigering i SQL Server Data Tools – Business Intelligence (SSDT BI), eller efter det att en modell har distribuerats med SQL Server Management Studio (SSMS). Roller innehåller medlemmar efter Windows-användarnamn eller Windows-grupp. Rollerna definierar de behörigheter för en användare har när det gäller att fråga eller utföra åtgärder i modellen. De flesta användare hör till en roll med läsbehörighet. Andra roller är avsedda för administratörer med behörighet att bearbeta objekt, hantera databasfunktioner och hantera andra roller.
+
+Se [Rollbaserad säkerhet](service-gateway-enterprise-manage-ssas.md#role-based-security).
 
 ## <a name="row-level-security"></a>Säkerhet på radnivå
-Säkerhet på radnivå är specifik för Analysis Services-säkerhet på radnivå. Modeller kan tillhandahålla dynamisk säkerhet på radnivå. Till skillnad från att ha minst en roll som användarna tillhör, så krävs inte dynamisk säkerhet för tabellmodeller. På hög nivå definierar dynamisk säkerhet en användares läsbehörighet för data direkt ned till en viss rad i en viss tabell. I likhet med roller så bygger dynamisk säkerhet på radnivå på en användares Windows-användarnamn.
 
-En användare möjlighet att fråga och visa modelldata bestäms i första hand genom vilka roller användarens Windows-användarkonto är medlem i, och i andra hand den dynamiska säkerheten på radnivå, om sådan har konfigurerats.
-
-Rollimplementering och dynamisk säkerhet på radnivå i modeller ligger utanför den här artikelns fokus.  Mer information finns i [Roller (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) och [Säkerhetsroller (Analysis Services – flerdimensionella Data)](https://msdn.microsoft.com/library/ms174840.aspx) på MSDN. Och om du vill ha riktigt djup förståelse av säkerhet för tabellmodeller, så hämta och läs [White paper om BI-semantikmodellen för tabeller](https://msdn.microsoft.com/library/jj127437.aspx).
+Se [Säkerhet på radnivå](service-gateway-enterprise-manage-ssas.md#row-level-security).
 
 ## <a name="what-about-azure-active-directory"></a>Vad är Azure Active Directory?
-Microsofts molntjänster använder [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) för att hantera autentiseringen av användare. Azure Active Directory är den klient som innehåller användarnamn och säkerhetsgrupper. Normalt är den e-postadress som en användare loggar in med densamma som kontots UPN-namn.
 
-Vilken är mitt lokala Active Directorys roll?
-
-För att Analysis Services ska kunna avgöra om en användare som ansluter tillhör en roll med behörighet att läsa data, så måste servern konvertera det effektiva användarnamn som skickades från AAD till gatewayen och vidare till Analysis Services-servern. Analysis Services-servern skickar det effektiva användarnamnet till en Windows Active Directory-domänkontrollant (DC). Active Directory-domänkontrollanten verifierar sedan att det effektiva användarnamnet är ett giltigt UPN för ett lokalt konto, och returnerar användarens Windows-användarnamn till Analysis Services-servern.
-
-EffectiveUserName kan inte användas på en Analysis Services-server som inte är domänansluten. Analysis Services-servern måste vara ansluten till en domän, så att eventuella fel vid inloggningen undviks.
+Se [Azure Active Directory](/data-integration/gateway/service-gateway-onprem-indepth#azure-active-directory).
 
 ## <a name="how-do-i-tell-what-my-upn-is"></a>Hur vet jag vilken UPN jag har?
-Du kanske inte vet vilken din UPN är, och du är kanske inte domänadministratör. Du kan använda följande kommando från din arbetsstation för att ta reda på ditt kontos UPN-namn.
 
-    whoami /upn
-
-Resultatet ser ut ungefär som en e-postadress, men detta är det UPN som finns på din lokala domänkonto. Om du använder en Analysis Services-datakälla för live-anslutningar måste det matcha det som skickades till EffectiveUserName från gatewayen.
+Se [Hur vet jag vilken UPN jag har?](/data-integration/gateway/service-gateway-onprem-indepth#how-do-i-tell-what-my-upn-is).
 
 ## <a name="mapping-usernames-for-analysis-services-data-sources"></a>Mappa användarnamn för Analysis Services-datakällor
-Power BI tillåter mappning av användarnamn för Analysis Services-datakällor. Du kan konfigurera regler för att mappa ett användarnamn som är inloggat på Power BI till ett namn som har skickats för EffectiveUserName på Analysis Services-anslutningen. Mappningsanvändarnamnsfunktionenär till stor hjälp när användarnamnet i AAD inte matchar ett UPN i ditt lokala Active Directory. Om din e-postadress t.ex. är nancy@contoso.onmicrsoft.com, kan du mappa den till nancy@contoso.com, och det värdet skickas då till gatewayen. Du kan lära dig mer om hur du [mappar användarnamn](service-gateway-enterprise-manage-ssas.md#map-user-names).
+
+Se [Mappa användarnamn för Analysis Services-datakällor](service-gateway-enterprise-manage-ssas.md#mapping-usernames-for-analysis-services-data-sources).
 
 ## <a name="synchronize-an-on-premises-active-directory-with-azure-active-directory"></a>Synkronisera ett lokalt Active Directory med Azure Active Directory
-Du vill förmodligen att dina lokala Active Directory-konton ska matcha Azure Active Directory om du ska använda Analysis Services live-anslutningar. Liksom att UPN-namnet måste matcha mellan kontona.
 
-Molntjänsterna känner bara till konton i Azure Active Directory. Det spelar ingen roll om du har lagt till ett konto i ditt lokala Active Directory, eftersom det inte kan användas ifall det inte finns i AAD. Det finns olika sätt på vilka du kan matcha dina lokala Active Directory-konton med Azure Active Directory.
-
-1. Du kan lägga till konton manuellt till Azure Active Directory.
-   
-   Du kan skapa ett konto på Azure-portalen eller i administrationscentret för Microsoft 365, och kontonamnet matchar UPN-namnet för det lokala Active Directory-kontot.
-2. Du kan använda [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis)-verktyget för att synkronisera lokala konton med din Azure Active Directory-klient.
-   
-   Azure AD Connect-verktyget erbjuder alternativ för katalogsynkronisering och hur du konfigurerar autentisering, inklusive hash-synkronisering av lösenord, direktautentisering och federation. Om du inte är klientadministratör eller lokal domänadministratör, så måste du kontakta IT-administratören om du vill få detta konfigurerat.
-
-Med Azure AD Connect säkerställer du att UPN-namnet matchar mellan AAD och ditt lokala Active Directory.
-
-> [!NOTE]
-> När du synkroniserar konton med Azure AD Connect-verktyget skapas nya konton i AAD-klienten.
-> 
-> 
-
-## <a name="now-this-is-where-the-gateway-comes-in"></a>Det är här som gatewayen kommer in i bilden
-Gatewayen fungerar som en brygga mellan molnet och den lokala servern. Dataöverföring mellan molnet och gatewayen säkras via [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus skapar en säker kanal mellan molnet och den lokala servern via en utgående anslutning på gatewayen.  Det finns inga inkommande anslutningar som du behöver öppna i den lokala brandväggen. Power BI hanterar Service Bus åt dig, så det tillkommer inte några extra kostnader eller konfigurationssteg.
-
-Om du har en Analysis Services-datakälla måste du installera gatewayen på en dator som ingår i samma skog/domän som Analysis Services-servern.
-
-Ju närmare gatewayen har till servern, desto snabbare blir anslutningen. Om du kan ha gatewayen på samma server som datakällan, så är detta det bästa sättet på vilket du kan undvika nätverksfördröjning mellan gatewayen och servern.
+Se [Synkronisera ett lokalt Active Directory med Azure Active Directory](/data-integration/gateway/service-gateway-onprem-indepth#synchronize-an-on-premises-active-directory-with-azure-active-directory).
 
 ## <a name="what-to-do-next"></a>Vad är nästa steg?
-När du har installerat gatewayen är det dags att skapa datakällor för gatewayen. Du kan lägga till datakällor på skärmen **Hantera gatewayar**. Mer information finns i följande artiklar.
 
+Se artiklarna om datakällor:
+
+[Hantera datakällor](service-gateway-data-sources.md)
 [Hantera din datakälla – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Hantera din datakälla – SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Hantera din datakälla – SQL Server](service-gateway-enterprise-manage-sql.md)  
@@ -106,20 +75,35 @@ När du har installerat gatewayen är det dags att skapa datakällor för gatewa
 [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
 ## <a name="where-things-can-go-wrong"></a>Var saker kan gå fel
-Ibland kan gatewayinstallationen misslyckas. Eller så kanske gatewayen verkar ha installerats som den ska, men den fungerar inte ihop med tjänsten. I många fall kan orsaken vara något väldigt enkelt, t.ex. det lösenord för autentiseringsuppgifterna som gatewayen använder för att logga in till datakällan.
 
-I annat fall kan det uppstå problem med den typ av e-postadress som användarna loggar in med, eller med att Analysis Services inte kan matcha ett effektivt användarnamn. Om du har flera domäner med förtroenden sinsemellan och din gateway är i en av dem och Analysis Services i en annan, så kan detta ibland orsaka vissa problem.
+Se [Felsöka den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot) och [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md).
 
-Istället för att diskutera gatewayfelsökning här, så har vi placerat en serie felsökningssteg i en annan artikel, nämligen [Felsökning av lokal datagateway](service-gateway-onprem-tshoot.md). Förhoppningsvis ska du inte ha några problem. Men om du råkar ut för problem, så är det en fördel om du förstår hur allt detta fungerar, och då bör felsökningsartikeln vara till stor hjälp.
+## <a name="sign-in-account"></a>Inloggningskonto
 
-<!-- Account and Port information -->
-[!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
+Se [Inloggningskonto](/data-integration/gateway/service-gateway-onprem-indepth#sign-in-account).
+
+## <a name="windows-service-account"></a>Windows-tjänstkonto
+
+Se [Ändra det lokala tjänstkontot för datagatewayen](/data-integration/gateway/service-gateway-service-account).
+
+## <a name="ports"></a>Portar
+
+Se [Portar](/data-integration/gateway/service-gateway-communication#ports).
+
+## <a name="forcing-https-communication-with-azure-service-bus"></a>Tvinga HTTPS-kommunikation med Azure Service Bus
+
+Se [Tvinga HTTPS-kommunikation med Azure Service Bus](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+
+## <a name="support-for-tls-12"></a>Stöd för TLS 1.2
+
+Se [TLS 1.2 för gatewaytrafik](/data-integration/gateway/service-gateway-communication#tls-12-for-gateway-traffic).
+
+## <a name="how-to-restart-the-gateway"></a>Starta om gatewayen
+
+Se [Starta om en gateway](/data-integration/gateway/service-gateway-restart).
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
-[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
-[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+[Vad är den lokala datagatewayen?](service-gateway-onprem.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

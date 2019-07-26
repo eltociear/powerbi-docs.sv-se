@@ -1,5 +1,5 @@
 ---
-title: Hantera din SAP HANA-datakälla
+title: Hantera din datakälla – SAP HANA
 description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway. Den här artikeln är specifik för SAP HANA.
 author: mgblythe
 manager: kfile
@@ -7,114 +7,72 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e4fabd59396872be9ffa77d8957b06ffcf7eb45f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b61d794701d18fd25ab9acb5d5208ae289376eb6
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276639"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271750"
 ---
-# <a name="manage-your-sap-hana-data-source"></a>Hantera din SAP HANA-datakälla
-När du har installerat den lokala datagatewayen behöver du lägga till datakällor som kan användas med gatewayen. I den här artikeln tittar vi på hur du kan använda gatewayer och datakällor. Du kan använda SAP HANA-datakällan för schemalagd uppdatering eller DirectQuery.
+# <a name="manage-your-data-source---sap-hana"></a>Hantera din datakälla – SAP HANA
 
-## <a name="download-and-install-the-gateway"></a>Ladda ned och installera gatewayen
-Du kan ladda ned gatewayen från Power BI-tjänsten. Välj **Nedladdningar** > **Datagateway** eller gå till [nedladdningssidan för gatewayer](https://go.microsoft.com/fwlink/?LinkId=698861).
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-![](media/service-gateway-enterprise-manage-sap/powerbi-download-data-gateway.png)
-
-## <a name="add-a-gateway"></a>Lägga till en gateway
-Du lägger till en gateway genom att helt enkelt [ladda ned](https://go.microsoft.com/fwlink/?LinkId=698861) och installera gatewayen på en server i din miljö. När du har installerat gatewayen visas den i listan med gatewayer under **Hantera gatewayer**.
-
-> [!NOTE]
-> **Hantera gatewayer** visas inte förrän du är administratör för minst en gateway. Detta kan inträffa antingen genom att du läggs till som en administratör eller om du installerar och konfigurerar en gateway.
-> 
-> 
-
-## <a name="remove-a-gateway"></a>Ta bort en gateway
-Om en gateway tas bort raderas även alla datakällor under gatewayen.  Detta bryter också anslutningen till alla instrumentpaneler och rapporter som är beroende av dessa datakällor.
-
-1. Välj kugghjulsikonen ![](media/service-gateway-enterprise-manage-sap/pbi_gearicon.png) i det övre högra hörnet > **Hantera gatewayer**.
-2. Gateway > **Ta bort**
-   
-   ![](media/service-gateway-enterprise-manage-sap/datasourcesettings7.png)
+När du har [installerat den lokala datagatewayen](/data-integration/gateway/service-gateway-install) behöver du [lägga till datakällor](service-gateway-data-sources.md#add-a-data-source) som kan användas med gatewayen. Den här artikeln handlar om hur du kan arbeta med gatewayer och SAP HANA-datakällor som används för antingen schemalagd uppdatering eller DirectQuery.
 
 ## <a name="add-a-data-source"></a>Lägga till en datakälla
-Du kan lägga till en datakälla genom att antingen välja en gateway och klicka på **Lägg till datakälla** eller gå till Gateway > **Lägg till datakälla**.
 
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings1.png)
+Information om hur du lägger till en datakälla finns i [Lägga till en datakälla](service-gateway-data-sources.md#add-a-data-source). Välj SAP HANA för **Typ av datakälla**.
 
-Du kan sedan välja **Typ av datakälla** i listan.
+![Lägga till SAP HANA-datakällan](media/service-gateway-enterprise-manage-sap/datasourcesettings2-sap.png)
 
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings2-sap.png)
-
-Därefter kan du fylla i informationen för datakällan med **Server**, **Användarnamn** och **Lösenord**.
+När du har valt SAP HANA-datakälltypen fyller du i uppgifterna om **Server**, **Användarnamn** och **Lösenord** för datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information finns i den övergripande lokala artikeln om datagatewayer, där du lär dig mer om hur [autentiseringsuppgifter](service-gateway-onprem.md#credentials) lagras.
-> 
-> 
+> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
 
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings3-sap.png)
+![Fylla i inställningarna för datakälla](media/service-gateway-enterprise-manage-sap/datasourcesettings3-sap.png)
 
-Klicka på **Lägg till** när allt har fyllts i.  Du kan nu använda datakällan för schemalagd uppdatering eller DirectQuery mot en lokal SAP HANA-server. *Anslutningen lyckades* visas.
+Välj **Lägg till** när du har fyllt i allt. Du kan nu använda datakällan för schemalagd uppdatering eller DirectQuery mot en lokal SAP HANA-server. *Anslutningen lyckades* visas om anslutningen har lyckats.
 
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings4.png)
+![Visa anslutningsstatus](media/service-gateway-enterprise-manage-sap/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Avancerade inställningar
-Du kan konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast vid schemalagd uppdatering. Det gäller inte för DirectQuery. [Läs mer](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings9.png)
+Om du vill kan du konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast vid schemalagd uppdatering. Det gäller inte för DirectQuery. Mer information om sekretessnivåer för datakälla finns i [Sekretessnivåer (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-## <a name="remove-a-data-source"></a>Ta bort en datakälla
-Om en datakälla tas bort bryts alla anslutningar till instrumentpaneler och rapporter som är beroende av den.  
-
-Ta bort en datakälla genom att gå till Datakälla > **Ta bort**.
-
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings6.png)
-
-## <a name="manage-administrators"></a>Hantera administratörer
-På fliken Administratörer för gatewayen kan du lägga till och ta bort användare (eller säkerhetsgrupper) som kan administrera gatewayen.
-
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings8.png)
-
-## <a name="manage-users"></a>Hantera användare
-På datakällans flik Användare kan du lägga till och ta bort användare eller säkerhetsgrupper som kan använda datakällan.
-
-> [!NOTE]
-> Användarlistan styr enbart vem som har behörighet att publicera rapporter. Rapportägare kan skapa instrumentpaneler eller innehållspaket och dela dem med andra användare.
-> 
-> 
-
-![](media/service-gateway-enterprise-manage-sap/datasourcesettings5.png)
+![Ange sekretessnivån](media/service-gateway-enterprise-manage-sap/datasourcesettings9.png)
 
 ## <a name="using-the-data-source"></a>Använda datakällan
+
 När du har skapat datakällan blir den tillgänglig för användning med antingen DirectQuery-anslutningar eller genom schemalagd uppdatering.
 
 > [!NOTE]
-> Server- och databasnamnen måste vara samma mellan Power BI Desktop och datakällan i den lokala datagatewayen!
-> 
-> 
+> Server- och databasnamnen måste överensstämma mellan Power BI Desktop och datakällan i den lokala datagatewayen.
 
-Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste stämma överens. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop, måste du använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANCE* i Power BI Desktop måste du använda samma i datakällan som konfigurerats för gatewayen.
+Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste stämma överens. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop måste du använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANS* i Power BI Desktop måste du använda samma i den datakälla som konfigureras för gatewayen.
 
 Detta gäller både DirectQuery och schemalagd uppdatering.
 
 ### <a name="using-the-data-source-with-directquery-connections"></a>Använda datakällan med DirectQuery-anslutningar
-Du måste se till att server- och databasnamnet matchar mellan Power BI Desktop och den konfigurerade datakällan för gatewayen. Du måste också kontrollera att användaren finns med på fliken **Användare** för datakällan för att DirectQuery-datauppsättningar ska kunna publiceras. Valet för DirectQuery uppstår i Power BI Desktop när du importerar data första gången. [Läs mer](desktop-use-directquery.md)
+
+Du behöver se till att server- och databasnamnet överensstämmer mellan Power BI Desktop och den konfigurerade datakällan för gatewayen. Du behöver även kontrollera att användaren finns med på fliken **Användare** för datakällan för att DirectQuery-datamängder ska kunna publiceras. Valet för DirectQuery uppstår i Power BI Desktop när du importerar data första gången. Mer information om hur DirectQuery används finns i [Använda DirectQuery i Power BI Desktop](desktop-use-directquery.md).
 
 När du har publicerat, antingen från Power BI Desktop eller **Hämta Data**, borde dina rapporter fungera. Det kan ta ett par minuter efter att du har skapat datakällan i gatewayen innan anslutningen kan användas.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Använda datakällan med schemalagd uppdatering
-Om du finns med på fliken **Användare** i den datakälla som konfigurerats i gatewayen, samt om server- och databasnamnen matchar, visas gatewayen som ett alternativ för schemalagd uppdatering.
 
-![](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
+Om du finns med på fliken **Användare** för den datakälla som konfigurerats i gatewayen, och om server- och databasnamnen matchar, visas gatewayen som ett alternativ för användning med schemalagd uppdatering.
+
+![Visa användarna](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## <a name="next-steps"></a>Nästa steg
-[Lokal datagateway](service-gateway-onprem.md)  
-[Lokal datagateway – på djupet](service-gateway-onprem-indepth.md)  
-[Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
+
+* [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
+* [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)  
+
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

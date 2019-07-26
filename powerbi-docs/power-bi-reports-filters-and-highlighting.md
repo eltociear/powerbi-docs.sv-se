@@ -10,25 +10,25 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8084b8dbbc27c856633d84c6628727dcd426964d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187572"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342153"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filter och markeringar i Power BI-rapporter
- Den här artikeln ger en introduktion till filtrering och markering i Power BI-tjänsten. Upplevelsen är nästan exakt samma som i Power BI Desktop. *Filter* ta bort allt utan de data som du vill fokusera på. *Om du markerar* inte filtrering. Det tar inte bort data, men istället markeras en delmängd av synliga data; de data som inte är markerade förblir synliga men nedtonade.
+ Den här artikeln ger en introduktion till filtrering och markering i Power BI-tjänsten. Upplevelsen är nästan exakt samma som i Power BI Desktop. *Filter* ta bort allt utan de data som du vill fokusera på. *Markering* är inte samma sak som filtrering. Data tas inte bort. I stället markeras en delmängd av synliga data; de data som inte markeras förblir synliga men nedtonade.
 
 Det finns många olika metoder för att filtrera och markera rapporter i Power BI. Att ta med all denna information i en artikel skulle bli förvirrande, så vi har delat upp det så här:
 
-* Introduktion till filter och markeringar, artikeln du läser nu.
-* Så här [skapa och använda filter i redigeringsvyn](power-bi-report-add-filter.md) i rapporter i Power BI Desktop och Power BI-tjänsten. När du har redigeringsbehörighet för en rapport, kan du skapa, ändra och ta bort filter i rapporter.
-* Hur visuella objekt [filtrera och markera i en rapport som delas med dig](consumer/end-user-interactions.md)i rapportläsvyn i Power BI-tjänsten. Vad du kan göra är mer begränsat, men du har fortfarande tillgång till en mängd olika filtrerings- och markeringsalternativ.  
-* En detaljerad genomgång av den [filter och markeringar kontroller som är tillgängliga i redigeringsvyn](power-bi-report-add-filter.md) i Power BI Desktop och Power BI-tjänsten. Artikeln tar en titt på typer av filter, till exempel datum och tid, numeriska och och text. Den behandlar också skillnaderna mellan grundläggande och avancerade alternativ.
+* Introduktion till filter och markeringar, vilket är den artikel du läser nu.
+* Hur du [skapa och använder filter i redigeringsvyn](power-bi-report-add-filter.md) i rapporter i Power BI Desktop och Power BI-tjänsten. När du har redigeringsbehörighet för en rapport, kan du skapa, ändra och ta bort filter i rapporter.
+* Hur visuellt objekt [filtrerar och markerar i en rapport som delas med dig](consumer/end-user-interactions.md) eller i rapportens läsvy i Power BI-tjänsten. Vad du kan göra är mer begränsat, men du har fortfarande tillgång till en mängd olika filtrerings- och markeringsalternativ.  
+* En detaljerad genomgång av [de filtrerings- och markeringskontroller som är tillgängliga i redigeringsvyn](power-bi-report-add-filter.md) i Power BI Desktop och Power BI-tjänsten. I artikeln finns en detaljerad genomgång av typer av filter såsom datum och tid, numeriskt samt text. Den omfattar även skillnaderna mellan grundläggande och avancerade alternativ.
 * Nu när du har lärt dig hur filter och markeringar fungerar som standard, [kan du lära dig hur man ändrar hur visualiseringar på en sida kan filtrera och markera varandra](service-reports-visual-interactions.md)
 
-**Visste du att?** Power BI har en ny filterupplevelse som för närvarande är i förhandsversion. Läs mer om [den nya filterupplevelsen i Power BI-rapporter](power-bi-report-filter-preview.md).
+**Visste du att?** Power BI har en ny filterupplevelse som för närvarande är i förhandsversion. Läs mer om [den nya filterupplevelsen i Power BI-rapporter](power-bi-report-filter.md).
 
 ![Ny filterupplevelse](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 
@@ -78,21 +78,21 @@ När du avslutar rapporten sparas dina filter. Om du vill ångra din filtrering 
 ### <a name="filters-in-editing-view"></a>Filter i redigeringsvyn
 När du har ägarbehörighet för en rapport och öppnar den i redigeringsvyn ser du att **Filter** bara är ett av flera tillgängliga fönster för redigering.
 
-![Filterfönstret i redigeringsvyn](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
+![Fönstret Filter i redigeringsvyn](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
 Precis som i läsvyn ser vi att den här sidan i rapporten har sex filter på sidnivå och ett på rapportnivå. Och genom att välja bubbeldiagrammet ser vi att den har sex filter på visuell nivå.
 
 Vi kan göra mer med filter och markeringar i redigeringsvyn. Främst kan vi lägga till nya filter. Lär dig hur du kan [lägga till ett filter i en rapport](power-bi-report-add-filter.md) och mycket mer.
 
 ## <a name="ad-hoc-highlighting"></a>Ad hoc-markering
-Välja en värde eller axel-etikett för visuell information för att markera de andra visualiseringarna på sidan. Välj värdet igen om du vill ta bort markeringar, eller välj ett tomt utrymme i samma visualisering. Markering är ett roligt sätt att snabbt utforska påverkan av dina data. Mer information om att finjustera den här typen av korsmarkering finns i [Visuella interaktioner](service-reports-visual-interactions.md).
+Markera ett värde eller en axeletikett i ett visuellt objekt för att markera andra visuella objekt på sidan. Om du vill ta bort markeringen markerar du värdet igen markerar valfritt tomt utrymme i samma visuella objekt. Markering är ett roligt sätt att snabbt utforska påverkan av dina data. Mer information om att finjustera den här typen av korsmarkering finns i [Visuella interaktioner](service-reports-visual-interactions.md).
 
 ![Korsmarkering](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Den nya upplevelsen för filter i Power BI-rapporter](power-bi-report-filter-preview.md)
+[Den nya filterupplevelsen i Power BI-rapporter](power-bi-report-filter.md)
 
 [Lägga till ett filter i en rapport (i redigeringsvyn)](power-bi-report-add-filter.md)
 
