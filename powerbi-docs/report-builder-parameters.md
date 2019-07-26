@@ -44,13 +44,13 @@ När du visar en rapport som har parametrar, visar rapportgranskarens verktygsf�
   
 1. **Parameterfönstret** Rapportgranskarens verktygsfält visar ett meddelande och ett standardvärde för varje parameter. Du kan anpassa layouten för parametrarna i parameterfönstret.  
   
-2. **@SalesDate-parameter** Parametern @SalesDate har datatypen **DateTime**. Frågan Select the Date (Välj datum) visas intill textrutan. Ändra datumet genom att skriva ett nytt datum i textrutan eller använda kalenderkontrollen.  
+2. **@SalesDate Parametern** parametern @SalesDate är datatypen **DateTime**. Frågan Select the Date (Välj datum) visas intill textrutan. Ändra datumet genom att skriva ett nytt datum i textrutan eller använda kalenderkontrollen.  
   
-3. **@ShowAll-parameter** Parametern @ShowAll har datatypen **Boolean**. Använd alternativknapparna för att ange **Sant** eller **Falskt**.  
+3. **@ShowAll Parametern** parametern @ShowAll är datatypen **booleskt**. Använd alternativknapparna för att ange **Sant** eller **Falskt**.  
   
 4. **Visa eller dölj referens för Dölj parameterområde** I rapportgranskarens verktygsfält klickar du på den här pilen för att visa eller dölja parameterfönstret.  
   
-5. **@CategoryQuota-parameter** Parametern @CategoryQuota har datatypen **Float** och tar därför ett numeriskt värde.  @CategoryQuota har angetts för att tillåta flera värden.  
+5. **@CategoryQuota Parametern** parametern @CategoryQuota är datatypen **flytande**, så att det tar ett numeriskt värde.  @CategoryQuota har angetts för att tillåta flera värden.  
   
 6. **Visa rapporten** När du angett parametervärden klickar du på **Visa rapport** för att köra rapporten. Om alla parametrar har standardvärden körs rapporten automatiskt vid den första visningen.  
   
