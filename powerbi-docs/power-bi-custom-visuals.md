@@ -1,5 +1,5 @@
 ---
-title: Anpassade visuella objekt i Power BI
+title: Visuella objekt i Power BI
 description: Anpassade visualiseringar i Power BI
 author: sranins
 ms.author: rasala
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23436fb8e21e1be3a863986a773d7d969da65122
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 68048968bf6a3f85f2bc24e55fd1288073be1d56
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498050"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415405"
 ---
-# <a name="custom-visuals-in-power-bi"></a>Anpassade visuella objekt i Power BI
+# <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
 När du skapar eller redigerar en Power BI-rapport finns det många olika typer av visuella objekt som du kan använda. Ikoner för dessa visuella objekt visas i fönstret **Visualiseringar**. De här visuella objekten ingår när du laddar ned [Power BI Desktop](https://powerbi.microsoft.com/desktop/) eller öppnar [Power BI-tjänsten](https://app.powerbi.com).
 
