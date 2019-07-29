@@ -933,6 +933,8 @@
           href: report-builder-planning-report.md
         - name: Report Builder-data
           href: report-builder-data.md
+        - name: Använda delade datauppsättningar i Power BI
+          href: report-builder-shared-datasets.md
         - name: Designtips
           href: report-builder-design-tips.md
         - name: 'Tabeller, matriser, listor'
