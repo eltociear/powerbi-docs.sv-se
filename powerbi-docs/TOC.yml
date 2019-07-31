@@ -947,6 +947,8 @@
           href: report-builder-expressions.md
         - name: Exempel på uttryck
           href: report-builder-expression-examples.md
+        - name: Sidnumrering för rapporten
+          href: paginated-reports-pagination.md
         - name: Förhandsgranska rapporter
           href: report-builder-previewing-reports.md
         - name: Vanliga frågor och svar om sidnumrerade rapporter
