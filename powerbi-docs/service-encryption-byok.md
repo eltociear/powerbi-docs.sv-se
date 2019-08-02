@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
-ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67498976"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391132"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Använda egna krypteringsnycklar för Power BI (förhandsversion)
 
@@ -45,6 +45,9 @@ Anvisningarna i det här avsnittet förutsätter att du har grundläggande kunsk
 
 1. Skapa en RSA-nyckel med längden 4 096 bitar (eller använd en befintlig nyckel av den här typen) med behörighet att packa ihop och packa upp.
 
+    > [!IMPORTANT]
+    > Power BI BYOK stöder bara RSA-nycklar med längden 4 096 bitar.
+
 1. Rekommenderas: Kontrollera att alternativet _mjuk borttagning_ är aktiverat för nyckelvalvet.
 
 ### <a name="add-the-service-principal"></a>Lägg till tjänstens huvudnamn
@@ -52,6 +55,9 @@ Anvisningarna i det här avsnittet förutsätter att du har grundläggande kunsk
 1. I ditt nyckelvalv i Azure-portalen, under **Åtkomstprinciper**, väljer du **Lägg till ny**.
 
 1. Under **Välj huvudkonto** söker du efter och väljer Microsoft.Azure.AnalysisServices.
+
+    > [!NOTE]
+    > Om du inte hittar Microsoft.Azure.AnalysisServices är det troligt att Azure-prenumerationen som är associerad med ditt Azure Key Vault aldrig har haft en associerad Power BI-resurs. Försök att söka efter följande sträng i stället: 00000009-0000-0000-c000-000000000000.
 
 1. Under **Nyckelbehörigheter** väljer du **Packa upp nyckeln** och **Packa nyckeln**.
 

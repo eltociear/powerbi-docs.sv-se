@@ -1,5 +1,5 @@
 ---
-title: Utveckla ett anpassat visuellt objekt i Power BI
+title: Utveckla ett visuellt Power BI-objekt
 description: En självstudiekurs om hur du utvecklar ett anpassat visuellt objekt i Power BI
 author: sranins
 ms.author: rasala
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161224"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415428"
 ---
-# <a name="tutorial-developing-a-power-bi-custom-visual"></a>Självstudie: Utveckla ett anpassat visuellt objekt i Power BI
+# <a name="tutorial-developing-a-power-bi-visual"></a>Självstudie: Utveckla ett visuellt Power BI-objekt
 
 Vi ger utvecklare möjlighet att enkelt lägga till anpassade visuella objekt i Power BI som kan användas på instrumentpanelen och i rapporterna. Som en hjälp för dig att komma igång har vi publicerat koden för alla våra visualiseringar på GitHub.
 
@@ -79,35 +79,35 @@ Nu måste du installera **pbiviz**-paketet.
     pbiviz --install-cert
     ```
 
-  Det returnerar ett resultat som producerar en *lösenfras*. I det här fallet är *lösenfrasen* **_15105661266553327_** och startar guiden Importera certifikat.
+    Det returnerar ett resultat som producerar en *lösenfras*. I det här fallet är *lösenfrasen* **_15105661266553327_** . Det startar också guiden Importera certifikat.
 
-  ![Certifikat som skapas via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
+    ![Certifikat som skapas via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
-3. I guiden Importera certifikat kontrollerar du att lagringsplatsen har angetts till aktuell användare. Välj sedan *Nästa*.
+2. I guiden Importera certifikat kontrollerar du att lagringsplatsen har angetts till aktuell användare. Välj sedan *Nästa*.
 
       ![Installera certifikat](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-4. Välj *Nästa* i steget **Fil att importera**.
+3. Välj *Nästa* i steget **Fil att importera**.
 
-5. Klistra in den lösenfras som du fick när du skapade certifikatet i rutan Lösenfras under steget **skydd av privat nyckel**.  I det här fallet är den också **_15105661266553327_** .
+4. Klistra in den lösenfras som du fick när du skapade certifikatet i rutan Lösenfras under steget **skydd av privat nyckel**.  I det här fallet är den också **_15105661266553327_** .
 
       ![Kopiera lösenfras](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
-6. Välj alternativet **Placera alla certifikat i följande arkiv** i steget **Certifikatarkiv**. Välj sedan *Bläddra*.
+5. Välj alternativet **Placera alla certifikat i följande arkiv** i steget **Certifikatarkiv**. Välj sedan *Bläddra*.
 
       ![Alla certifikat i följande arkiv](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-7. Välj **Betrodda rotcertifikatutfärdare** i fönstret **Välj certifikatarkiv** och välj sedan *OK*. Välj sedan *Nästa* på skärmen **Certifikatarkiv**.
+6. Välj **Betrodda rotcertifikatutfärdare** i fönstret **Välj certifikatarkiv** och välj sedan *OK*. Välj sedan *Nästa* på skärmen **Certifikatarkiv**.
 
       ![Betrott rotcertifikat](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
-8. Välj **Slutför** om du vill slutföra importen.
+7. Välj **Slutför** om du vill slutföra importen.
 
-9. Välj **Ja** om du får en säkerhetsvarning.
+8. Välj **Ja** om du får en säkerhetsvarning.
 
     ![Säkerhetsvarning](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
-10. Välj **OK** när får ett meddelande om att importen lyckades.
+9. Välj **OK** när får ett meddelande om att importen lyckades.
 
     ![Certifikatet importerades](media/custom-visual-develop-tutorial/cert-import-successful.png)
 

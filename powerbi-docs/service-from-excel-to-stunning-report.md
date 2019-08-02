@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: cd75aebb09c7b6c54c1ff3f68635bfd5033c7f80
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d613085e47477500390ac6111887df89a802ea0b
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721458"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522862"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Från Excel-arbetsbok till otrolig rapport på nolltid
 Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men den senaste informationen finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och bygga upp en rapport. Du börjar känna dig bekymrad.
@@ -71,7 +71,7 @@ Nu kan du börja skapa visualiseringar. Chefen vill se vinsten över tid. I fön
 > 
 > 
 
-Chefen vill veta vilka länder som är mest lönsamma. Imponera henne med en kartvisualisering. Välj ett tomt område på arbetsytan och dra fälten **Land** och **Vinst** från Fält-fönstret. Power BI skapar ett visuellt kartobjekt med bubblor som representerar den relativa vinsten för varje plats.
+Chefen vill veta vilka länder som är mest lönsamma. Imponera på dem med en kartvisualisering. Välj ett tomt område på arbetsytan och dra fälten **Land** och **Vinst** från Fält-fönstret. Power BI skapar ett visuellt kartobjekt med bubblor som representerar den relativa vinsten för varje plats.
 
 ![karta i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
 

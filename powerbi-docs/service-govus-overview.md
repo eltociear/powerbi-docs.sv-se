@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 554a5de238af650ab4009669d55a2fadedd4a29f
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809139"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590448"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -48,8 +48,7 @@ Azure fördelas mellan flera moln. Som standard kan klientorganisationer öppna 
 * USGov Texas
 * USGov Arizona
 
-Det finns IP-adressutrymmen tillgängliga i det offentliga molnet, men för myndighetsmolnet, måste du öppna ett Azure Support-ärende för att begära IP-adressintervallen för ovan listade datacenter. 
-
+IP-intervall är tillgängliga i det offentliga molnet. Du kan läsa den senaste informationen för Government-molnet i den nedladdningsbara [dokumentationen för Azure Government-tjänsten](https://www.microsoft.com/download/details.aspx?id=57063).
 
 ## <a name="limitations-of-power-bi-us-government"></a>Begränsningar av Power BI-versionen för amerikanska myndigheter
 Några av de funktioner som är tillgängliga i den kommersiella versionen av **Power BI-tjänsten** är *inte* tillgängliga i **Power BI-tjänsten** för amerikanska myndigheter. Power BI-teamet arbetar aktivt med att göra dessa funktioner tillgängliga för kunder som tillhör amerikanska myndigheter och kommer att uppdatera den här artikeln när dessa funktioner blir tillgängliga.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 7c7d3b04b8c954ae220fb8b157b183f615abd39c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 641d1ac2c1bbcb9d143afdc04652b4c12b6e775f
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239485"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522216"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Använda beräknade tabeller i Power BI Desktop
 Med beräknade tabeller kan du lägga till en ny tabell i modellen. Men i stället för att fråga och läsa in värden i den nya tabellens kolumner från en datakälla kan du skapa en formel för Data Analysis-uttryck (DAX) som definierar tabellens värden. I Power BI Desktop skapas beräknade tabeller med funktionen Ny tabell i rapportvyn eller datavyn.
@@ -39,7 +39,7 @@ Jeff är projektledare på Contoso och har en tabell med anställda i regionen N
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Det är ganska enkelt att förena de två tabellerna med en beräknad tabell. Medan Jeff kan skapa en beräknad tabell antingen i rapportvyn eller datavyn är det lite enklare att göra det i datavyn eftersom han då kan se sin nya beräknade tabell direkt.
+Det är ganska enkelt att förena de två tabellerna med en beräknad tabell. Jeff kan skapa en beräknad tabell antingen i rapportvyn eller datavyn, men det är lite enklare att göra det i datavyn eftersom han då kan se sin nya beräknade tabell direkt.
 
 Jeff klickar på **Ny tabell** i **datavyn** på fliken **Modellering**. Ett formelfält visas.
 
@@ -53,7 +53,7 @@ En ny tabell med namnet Anställda i region Väst skapas.
 
  ![](media/desktop-calculated-tables/calctables_westregionempl.png)
 
-Jeffs nya tabell Anställda i region Väst visas precis som andra tabeller i listan Fält. Han kan skapa relationer till andra tabeller, lägga till beräknade kolumner och mått och lägga till något av dess fält i rapporter, precis som med andra tabeller.
+Jeffs nya tabell Anställda i region Väst visas precis som andra tabeller i listan Fält. Jeff kan även skapa relationer till andra tabeller, lägga till beräknade kolumner och mått och lägga till något av dess fält i rapporter, precis som med andra tabeller.
 
  ![](media/desktop-calculated-tables/calctables_fieldlist.png)
 

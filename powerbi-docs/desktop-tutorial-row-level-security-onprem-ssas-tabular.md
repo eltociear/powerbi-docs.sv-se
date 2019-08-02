@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 28fe39788dab6f22845d3ffcb7115fb1da5cb268
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826673"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523243"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk säkerhet på radnivå med Analysis Services-tabellmodell
 
@@ -144,7 +144,7 @@ När din tabellmodell är distribuerad och är redo för användning, måste du 
    
    I rollen som **Sales Manager** så kan Sumit se data från alla olika försäljningsregioner. Sumit skapar den här rapporten (rapporten du skapade i föregående uppgift) och publicerar den till Power BI-tjänsten.
    
-   När Sumit publicerar rapporten skapar han en instrumentpanel i Power BI-tjänsten med namnet **TabularDynamicSec** som baseras på rapporten. I följande bild ser du att Sumit kan visa data för alla försäljningsregioner.
+   När Sumit publicerar rapporten blir nästa steg att skapa en instrumentpanel i Power BI-tjänsten med namnet **TabularDynamicSec** som baseras på rapporten. I följande bild ser du att Sumit kan visa data för alla försäljningsregioner.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart_1.png)
 
@@ -154,7 +154,7 @@ När din tabellmodell är distribuerad och är redo för användning, måste du 
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_dashboard.png)
 
-3. När Jon Doe loggar in på **Power BI**-tjänsten och visar den delade instrumentpanel som Sumit skapade ska han **endast** se försäljningen från sin egen region. 
+3. När Jon Doe loggar in på **Power BI**-tjänsten och visar den delade instrumentpanel som Sumit skapade ska **endast** försäljningen från deras region visas. 
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 

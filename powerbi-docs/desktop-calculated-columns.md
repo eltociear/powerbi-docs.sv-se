@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: c7a2b3580516c563d8a2a6d79fdc48d241e89849
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 805e052a2d5b493705c604d1817fc03c0a8b5376
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239875"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522203"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Använda beräknade kolumner i Power BI Desktop
 Med beräknade kolumner kan du lägga till nya data i en tabell direkt i modellen. Men i stället för att fråga och läsa in värden i nya kolumner från en datakälla kan du skapa en formel för Data Analysis-uttryck (DAX) som definierar kolumnens värden. I Power BI Desktop skapas beräknade kolumner med funktionen Ny kolumn i rapportvyn.
@@ -31,23 +31,23 @@ Beräknade kolumner beräknar resultat med hjälp av [Data Analysis-uttryck](htt
 DAX-formler påminner mycket om Excel-formler. I själva verket har DAX många av funktionerna i Excel. DAX-funktioner, är avsedda att fungera interaktivt över data segmenterat eller filtrerat i en rapport, precis som i Power BI Desktop. Till skillnad från Excel, där du kan använda en annan formel för varje rad i en tabell beräknas ett resultat för varje rad i tabellen när du skapar en DAX-formel för en ny kolumn. Kolumnvärdena räknas vid behov, precis som när underliggande data uppdateras och värden har ändrats.
 
 ## <a name="lets-look-at-an-example"></a>Låt oss ta en titt på ett exempel
-Jeff är en leveranschef på Contoso. Han vill skapa en rapport som visar antalet leveranser till olika orter. Han har en geografisk tabell med olika fält för orter och delstater. Men Jeff vill att rapporterna ska visa stad, delstat som ett enda värde på samma rad. Just nu har Jeffs geografiska tabell inte fältet som han vill ha.
+Jeff, leveranschef på Contoso, vill skapa en rapport som visar antalet leveranser till olika orter. Jeff har en geografisk tabell med olika fält för orter och delstater. Men Jeff vill att rapporterna ska visa stad, delstat som ett enda värde på samma rad. Just nu har Jeffs geografiska tabell inte det fält som han vill ha.
 
 ![](media/desktop-calculated-columns/calccolinpbid_cityandstatefields.png)
 
 Men med en beräknad kolumn kan Jeff sammanföra städerna från kolumnen Orter med delstaterna från kolumnen Delstater.
 
-Jeff högerklickar på den geografiska tabellen och klickar på Ny kolumn. Han anger sedan följande DAX-formel i formelfältet:
+Jeff högerklickar på den geografiska tabellen och klickar på Ny kolumn. Jeff anger sedan följande DAX-formel i formelfältet:
 
 ![](media/desktop-calculated-columns/calccolinpbid_formula.png)
 
 Den här formeln skapar helt enkelt en ny kolumn som heter StadDelstat och hämtar ett värde från Stad-kolumnen, lägger till ett komma och ett mellanslag och sammanfogar därefter värden från Delstats-kolumnen från samma rad i den geografiska tabellen.
 
-Jeff har nu fältet han vill ha.
+Jeff har nu det önskade fältet.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-Han kan lägga till det i sin rapportarbetsyta tillsammans med antalet försändelser. Snabbt och enkelt har Jeff nu skapat ett fält med Stad, Delstat som han kan lägga till i praktiskt taget alla sorters visuella objekt. Jeff kan se att Power BI Desktop vet hur värdena Stad, Delstat ska läsas i den nya kolumnen när han skapar en karta.
+Jeff kan lägga till det i rapportarbetsytan tillsammans med antalet leveranser. Snabbt och enkelt har Jeff nu skapat ett fält med Stad, Delstat som kan läggas till i praktiskt taget alla sorters visuella objekt. Jeff kan se att Power BI Desktop redan vet hur värdena Stad, Delstat ska läsas i den nya kolumnen när han skapar en karta.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 

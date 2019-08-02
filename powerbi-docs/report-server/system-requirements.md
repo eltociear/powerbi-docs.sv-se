@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/08/2018
-ms.openlocfilehash: 063ab8083c3091a7a41ca30e9045ce3a791112d2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/23/2019
+ms.openlocfilehash: fea28cd1c6541ae9255acd4be14cc85c2c2c5bed
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770030"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415371"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
 
@@ -50,6 +50,7 @@ När du skapar rapportserverdatabasen på en fjärrdator måste du konfigurera a
 
 Power BI-rapportservern installerar standardvärden för att konfigurera de grundläggande inställningar som krävs för att göra en rapportserver driftklar. Den har följande krav:
 
+* De språk som stöds för Power BI-rapportserver är engelska, tyska, spanska, japanska, italienska, franska, ryska, kinesiska (förenklad), kinesiska (traditionell), portugisiska (Brasilien), koreanska
 * En SQL Server Database Engine måste vara tillgänglig efter installationen och innan du konfigurerar databasen för rapportservern. Database Engine-instansen ska vara värd för den rapportserverdatabas som Report Services-konfigurationshanteraren skapar. Database Engine krävs inte för det faktiska installationsförloppet.
 * I [Reporting Services-funktioner som stöds av SQL Server-versioner](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) beskrivs skillnaderna mellan de olika SQL Server-versionerna.
 * Det användarkonto som kör installationsprogrammet måste vara medlem i den lokala administratörsgruppen.

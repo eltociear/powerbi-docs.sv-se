@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: 1a2415ba840a1b88f4c7a215a520d0cc88f70e49
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352167"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462220"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Slå ihop eller lägga till lokala och molnbaserade datakällor
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Med den lokala datagatewayen kan du sammanslå eller lägga till lokala och molnbaserade datakällor i samma fråga. Detta är praktiskt om du vill kombinera data från flera källor utan att använda separata frågor.
+Du kan använda den lokala datagatewayen för att slå ihop eller lägga till lokala och molnbaserade datakällor i samma fråga. Den här lösningen är praktisk om du vill kombinera data från flera källor utan att använda separata frågor.
 
 >[!NOTE]
->Den här artikeln gäller endast datamängder som har molnbaserade och lokala datakällor som sammanslagits eller lagts till i en enda fråga. För datamängder som innehåller separata frågor – en som ansluter till en lokal källa plats och en annan som ansluter till en molndatakälla – körs inte den fråga som använder molndatakällan via gatewayen.
+>Den här artikeln gäller endast datamängder som har molnbaserade och lokala datakällor som sammanslagits eller lagts till i en enda fråga. För datamängder som innehåller separata frågor – en som ansluter till en lokal datakälla och en annan som ansluter till en molndatakälla – kör gatewayen inte frågan för molndatakällan.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -51,14 +51,13 @@ Med den lokala datagatewayen kan du sammanslå eller lägga till lokala och moln
 6. På sidan **Datamängdsinställningar** för den nya datauppsättningen:
 
    - Som lokal källa väljer du gatewayen som associeras med den här datakällan.
-
    - Redigera autentiseringsuppgifterna för den molnbaserade datakällan efter behov under **Autentiseringsuppgifter för datakälla**.
 
     Se till att sekretessnivåer för både molndatakällor och lokala datakällor är korrekt inställda för att säkerställa att kopplingarna hanteras på ett säkert sätt.
 
      ![Datamängdsinställningar](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-7. När du har angett autentiseringsuppgifter för molnet kan du uppdatera datauppsättningen med hjälp av alternativet **Uppdatera nu**, eller schemalägga en regelbunden uppdatering.
+7. När du har angett autentiseringsuppgifter för molnet kan du uppdatera datauppsättningen med hjälp av alternativet **Uppdatera nu**. Eller så kan du schemalägga en regelbunden uppdatering.
 
 ## <a name="next-steps"></a>Nästa steg
 

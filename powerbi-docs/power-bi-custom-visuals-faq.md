@@ -1,5 +1,5 @@
 ---
-title: Vanliga frågor och svar om anpassade visuella Power BI-objekt
+title: Vanliga frågor och svar om visuella Power BI-objekt
 description: Bläddra i en lista med vanliga frågor och svar om anpassade visuella Power BI-objekt
 author: sranins
 ms.author: rasala
@@ -10,16 +10,18 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0fcb3451249c121281790dca77bd6008c39deaef
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 58fa65abfa2d2cff5e02b34fe8db8aa10b36ee14
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497932"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415375"
 ---
-# <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Vanliga frågor och svar om anpassade visuella Power BI-objekt
+# <a name="frequently-asked-questions-about-power-bi-visuals"></a>Vanliga frågor och svar om visuella Power BI-objekt
 
 ## <a name="organizational-custom-visuals"></a>Anpassade visuella objekt i en organisation
+
+Du kan hantera organisationens visuella Power BI-objekt med hjälp av administratörsportalen.
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Hur hanterar administratören anpassade visuella objekt i en organisation?
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4395884dfbc7ef5ebfb0df34e416d69ee553ebd3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514141"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523218"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mått i Power BI Desktop
 
@@ -41,13 +41,13 @@ Mått beräknar ett resultat från en uttrycksformel. När du skapar egna åtgä
 DAX-formler påminner mycket om Excel formler. DAX stöder dessutom många av funktionerna i Excel, till exempel DATUM, SUMMA och VÄNSTER. Men funktionerna i DAX är avsedda för användning med relationsdata som de vi har i Power BI Desktop.
 
 ## <a name="lets-look-at-an-example"></a>Låt oss ta en titt på ett exempel
-Jan är försäljningschef på Contoso. Hon har blivit ombedd att ange försäljningsprognoser för återförsäljare under nästa räkenskapsår. Jan bestämmer sig för att basera sina uppskattningar på förra årets försäljningssiffror, med sex procents årlig ökning från olika kampanjer som är inplanerade under de kommande sex månaderna.
+Jan är försäljningschef på Contoso. Jan har blivit ombedd att ange försäljningsprognoser för återförsäljare under nästa räkenskapsår. Jan bestämmer sig för att basera sina uppskattningar på förra årets försäljningssiffror, med sex procents årlig ökning från olika kampanjer som är inplanerade under de kommande sex månaderna.
 
-För att rapportera uppskattningarna importerar hon fjolårets säljdata till Power BI Desktop. Hon hittar fältet SalesAmount i tabellen Reseller Sales. Eftersom de data som hon har importerat endast innehåller försäljningssiffror för det senaste året, ändrar Jan namnet på fältet SalesAmount till Förra årets försäljning. Sedan drar hon Förra årets försäljning till rapportarbetsytan. Den visas i ett diagram som ett enda värde, vilket är summan av alla återförsäljares försäljning förra året.
+För att rapportera uppskattningarna importerar hon fjolårets säljdata till Power BI Desktop. Jan hittar fältet SalesAmount i tabellen Reseller Sales. Eftersom de data som hon har importerat endast innehåller försäljningssiffror för det senaste året, ändrar Jan namnet på fältet SalesAmount till Förra årets försäljning. Sedan drar Jan Förra årets försäljning till rapportarbetsytan. Den visas i ett diagram som ett enda värde, vilket är summan av alla återförsäljares försäljning förra året.
 
-Hon observerar att en beräkning har angetts automatiskt, trots att hon inte har specificerat någon. Power BI Desktop skapade ett eget mått genom att addera alla värden i Förra årets försäljning.
+Jan observerar att en beräkning har angetts automatiskt, trots att det inte har specificerats någon. Power BI Desktop skapade ett eget mått genom att addera alla värden i Förra årets försäljning.
 
-Men Jan behöver ett mått för att beräkna en uppskattning för nästa år som bygger på förra årets försäljning multiplicerat med 1,06, för att ta den förväntade ökningen på 6 procent i beräkningen. För den här beräkningen skapar hon sitt eget mått. Med funktionen Nytt mått skapar hon ett nytt mått och anger sedan följande DAX-formel:
+Men Jan behöver ett mått för att beräkna en uppskattning för nästa år som bygger på förra årets försäljning multiplicerat med 1,06, för att ta den förväntade ökningen på 6 procent i beräkningen. För den här beräkningen skapar Jan sitt eget mått. Med funktionen Nytt mått skapar Jan ett nytt mått och anger sedan följande DAX-formel:
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 
@@ -55,7 +55,7 @@ Jan drar sedan måttet Säljprognos till diagrammet.
 
 ![](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
-Nu har Jan ett mått för att beräkna framtida försäljning med minimal ansträngning. Hon kan analysera sina prognoser ytterligare genom att filtrera specifika återförsäljare eller lägga till andra fält i rapporten.
+Nu har Jan ett mått för att beräkna framtida försäljning med minimal ansträngning. Jan kan analysera sina prognoser ytterligare genom att filtrera specifika återförsäljare eller lägga till andra fält i rapporten.
 
 ## <a name="data-categories-for-measures"></a>Datakategorier för mått
 
