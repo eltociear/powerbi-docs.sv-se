@@ -87,7 +87,7 @@ Nu ska vi lägga till ett helt nytt fält som ett filter på visuell nivå i vå
      
     ![Lägga till ett fält till fönstret Filter](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
-    Observera att **Distriktschef***inte* läggs till i själva visualiseringen. Visualiseringen består fortfarande av **StoreNumberName** som axel och **This Year Sales (Årets försäljning)** som värde.  
+    Observera att **Distriktschef** *inte* läggs till i själva visualiseringen. Visualiseringen består fortfarande av **StoreNumberName** som axel och **This Year Sales (Årets försäljning)** som värde.  
      
     ![Fältet finns inte i det visuella objektet](media/power-bi-report-add-filter/power-bi-visualization.png)
 
