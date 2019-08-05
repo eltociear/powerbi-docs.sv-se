@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271190"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380211"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella objekt till AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna för att skapa en bra upplevelse för användarna. 
@@ -26,7 +26,7 @@ Alla visuella Power BI-objekt bör aktivera snabbmenyn för att ge en enhetlig u
 
 ## <a name="logo-guidelines"></a>Riktlinjer för logotyp
 
-I det här avsnittet beskrivs specifikationerna för att lägga till logotyper och logotyper i visuella objekt.
+I det här avsnittet beskrivs specifikationerna för att lägga till logotyper och logotyper i visuella objekt. Logotyper är inte obligatoriska. Om de läggs till måste de följa dessa riktlinjer. 
 
 > [!IMPORTANT]
 > Logotyper tillåts *endast i redigeringsläge*. Logotyper *kan inte* visas i visningsläge.

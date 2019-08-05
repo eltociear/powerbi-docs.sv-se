@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051292"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523321"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -43,11 +43,11 @@ URL?filter=***Tabell***/***Fält*** eq '***värde***'
 
 ### <a name="reports-in-apps"></a>Rapporter i appar
 
-Om du vill lägga till ett URL-filter till en rapport i en app är formateringen lite annorlunda. Länkar till rapporter i en app har en frågeparameter (ctid) som läggs till i URL:en. Avgränsa frågeparametrarna med ett et-tecken (&). Behåll ”? filter =” och flytta parametern ctid i slutet av URL: en, föregås av ett et-tecken (&). 
+Om du vill lägga till ett URL-filter till en rapport i en app är formateringen lite annorlunda. Länkar till rapporter i en app har en frågeparameter (ctid) som läggs till i URL:en. Separera frågeparametrarna med ett et-tecken (&). Behåll ”?filter=” och flytta ctid-parametern till slutet av URL:en, föregången av ett et-tecken (&). 
 
 Som i följande exempel:
 
-App.powerbi.com/groups/ME/Apps/*app-id*/reports/*rapport-id*/ReportSection? filter =*tabell*/*fältet* EQ '*värdet*&'ctid =*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
 
 ### <a name="field-types"></a>Fälttyper
 
@@ -83,7 +83,7 @@ Filtrera rapporten till att endast visa data för butiker i ”NC” (North Caro
 
 Vår rapport är filtrerad för North Carolina, vilket innebär att alla visualiseringar på rapportsidan endast visar data för North Carolina.
 
-![Rapporten filtrerad för North Carolina](media/service-url-filters/power-bi-report4.png)
+![Rapport filtrerad för North Carolina](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Filtrera på flera fält
 
@@ -133,9 +133,9 @@ Ett Power BI-URL-filter kan innehålla nummer i följande format.
 
 ### <a name="date-data-types"></a>Datatyper för datum
 
-Power BI stöder både OData V3 och V4 för datatyperna **Date** (datum) och **DateTimeOffset**.  Datum representeras med hjälp av EDM-format (2019-02-12T00:00:00), så när du anger ett datum som ”åååå-MM-DD” Power BI tolkar det som ”åååå-MM-DDT00:00:00”.
+Power BI stöder både OData V3 och V4 för datatyperna **Date** (datum) och **DateTimeOffset**.  Datum representeras med hjälp av EDM-format (2019-02-12T00:00:00). När du anger ett datum som "ÅÅÅÅ-MM-DD" tolkar Power BI det som "ÅÅÅÅ-MM-DDT00:00:00".
 
-Varför är den här skillnaden viktig? Anta att du skapar en frågesträngsparameter **tabell/datum gt ”2018-08-03”** .  Kommer resultatet att innehålla 3 augusti 2018 eller börja med 4 augusti 2018? Eftersom Power BI omvandlar din fråga till **tabell/datum gt ”2018-08-03T00:00:00'** , dina resultat ta med eventuella datum som har en noll tidsdelen eftersom dessa datum skulle vara större än **' 2018-08-03T00:00:00'** .
+Varför är den här skillnaden viktig? Anta att du skapar frågesträngsparametern **tabell/datum gt "2018-08-03"** .  Kommer resultatet att innehålla 3 augusti 2018 eller börja med 4 augusti 2018? Eftersom Power BI omvandlar din fråga till **tabell/datum gt "2018-08-03T00:00:00"** innehåller resultatet alla datum med en tidsdel som inte är noll eftersom de datumen skulle vara större än **"2018-08-03T00:00:00"** .
 
 ## <a name="special-characters-in-url-filters"></a>Specialtecken i URL-filter
 
@@ -177,7 +177,7 @@ Det finns några saker som du bör vara medveten om när du använder frågestr�
 
 * Vid användning av *in*-operatorn måste värden till höger om *in* vara en kommaavgränsad lista inom parenteser.    
 * I Power BI-rapportservern kan du [skicka rapportparametrar ](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) genom att ta med dem i en rapport-URL. Dessa URL-parametrar har inget prefix eftersom de skickas direkt till rapportbearbetningsmotorn.
-* Frågesträngfiltrering fungerar inte med [publicera på webben](service-publish-to-web.md) eller [exportera till PDF](consumer/end-user-pdf.md).
+* Frågesträngsfiltrering fungerar inte med [Publicera på webben](service-publish-to-web.md) eller [Exportera till PDF](consumer/end-user-pdf.md).
 * [Bädda in med rapportwebbdel i SharePoint Online](service-embed-report-spo.md) har inte stöd för URL-filter.
 * Datatypen long är (2^53-1) på grund av begränsningar i Javascript.
 * Rapportfilter för URL har en begränsning på 10 uttryck (10 filter som är hopkopplade med AND).

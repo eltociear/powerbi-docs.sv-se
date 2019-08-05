@@ -1,5 +1,5 @@
 ---
-title: Självstudie om visualiseringar av viktiga påverkare
+title: Självstudie om visualiseringar av viktiga influencers
 description: 'Självstudie: Skapa en visualisering av viktiga påverkare i Power BI'
 author: mihart
 manager: kvivek
@@ -10,22 +10,22 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf07318b5866d3f893d745fc8a8bba85cc9680d9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751271"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590609"
 ---
-# <a name="key-influencers-visualization"></a>Visualisering av viktiga påverkare
-Visualiseringen av viktiga påverkare hjälper dig att förstå vilka faktorer som påverkar ett mått du är intresserad av. Den analyserar dina data, rangordnar de faktorer som är viktiga och visar dem som viktiga påverkare. Anta exempelvis att du vill ta reda på vad som påverkar personalomsättningen. En faktor kan vara anställningsavtalens längd och en annan kan vara medarbetarnas ålder. 
+# <a name="key-influencers-visualization"></a>Visualisering av viktiga influencers
+Visualiseringen av viktiga påverkare hjälper dig att förstå vilka faktorer som påverkar ett mått du är intresserad av. Den analyserar dina data, rangordnar de faktorer som är viktiga och visar dem som viktiga influencers. Anta exempelvis att du vill ta reda på vad som påverkar personalomsättningen. En faktor kan vara anställningsavtalens längd och en annan kan vara medarbetarnas ålder. 
  
 ## <a name="when-to-use-key-influencers"></a>När ska du använda viktiga påverkare 
 Det visuella objektet för viktiga påverkare är ett bra val: 
 - om du vill se vilka faktorer som påverkar det mått som analyseras
 - om du vill jämföra den relativa vikten av de här faktorerna. Har till exempel korta avtalstider större effekt på personalomsättningen än långa avtalstider? 
 
-## <a name="key-influencer-requirements"></a>Krav för viktiga påverkare 
+## <a name="key-influencer-requirements"></a>Krav för viktiga influencers 
 Det mått du analyserar måste vara antingen ett kategorifält eller ett numeriskt fält (samlingar och mått stöds inte ännu).
 
 ## <a name="features-of-the-key-influencers-visual"></a>Funktioner för det visuella objektet för viktiga påverkare
@@ -50,7 +50,7 @@ Det mått du analyserar måste vara antingen ett kategorifält eller ett numeris
 
 8. **Kryssruta**: **Visa enbart värden som är påverkare**.
 
-## <a name="create-a-key-influencers-visual"></a>Skapa ett visuellt objektet av viktiga påverkare 
+## <a name="create-a-key-influencers-visual"></a>Skapa ett visuellt objektet av viktiga influencers 
  
 Se den här videon om du vill lära dig att skapa ett visuellt objekt för viktiga påverkare. Följ stegen nedan för att skapa ett. 
 
@@ -63,7 +63,7 @@ Din produktchef vill att du tar reda på vilka faktorer som gjorde att kunder l�
 
 1. Öppna rapporten och välj ikonen **Viktiga påverkare**. 
 
-    ![Välj mallen Viktiga påverkare från rutan Visualiseringar](media/power-bi-visualization-influencers/power-bi-template-new.png)
+    ![Välj mallen Viktiga influencers från rutan Visualiseringar](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
 2. Flytta det mått du vill undersöka till fältet **Analysera**. Fältet **Analysera** har endast stöd för kategorivariabler, alltså diskreta variabler. Om du vill se vad som får kunderna att lämna ett lågt omdöme om tjänsten väljer du **Kundtabell** > **Omdöme**. 
 3. Flytta fält som du tror kan påverka **Omdöme** till **Förklara med**. Du kan flytta så många fält du vill. I det här fallet börjar du med:
@@ -132,8 +132,13 @@ I visualiseringen ser du att varje gång tjänstgöringsperioden ökar med 13,44
  
 Spridningsdiagrammet i den högra rutan visar den genomsnittliga procentandelen låga omdömen för varje värde för tjänstgöringsperioden. Lutningen framhävs med en trendlinje.
 
-
 ![Spridningsdiagram för tjänstgöringsperiod](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## <a name="binned-continuous-key-influencers"></a>Grupperade kontinuerliga viktiga influerare
+
+I vissa fall märker du kanske att dina kontinuerliga faktorer automatiskt omvandlades till kategoriska faktorer. Det beror på att vi insåg att relationen mellan variablerna inte är linjär, och att vi därför inte kan beskriva relationen som blott ökande eller fallande (som vi gjorde i exemplet ovan).
+
+Vi kör korrelationstester för att ta reda på hur linjär influeraren är med avseende på målet. Om målet är kontinuerligt kör vi Perasons-korrelationen, och om målet är kategoriskt kör vi punkt-biserial-korrelationstester. Om vi upptäcker att relationen inte är tillräckligt linjär genomför vi övervakad gruppering och genererar högst 5 lagerplatser. För att ta reda på vilka lagerplatser som är mest lämpliga använder vi en metod för övervakad gruppering som tittar på relationen mellan den förklarande faktorn och det mål som analyseras.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Tolka mått och aggregeringar som viktiga påverkare 
  
@@ -209,15 +214,14 @@ Viktigaste segment för numeriska mål visar grupper där huspriset i genomsnitt
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning 
  
-**Vilka begränsningar gäller i förhandsversionen?** 
+**Vilka begränsningar gäller för det visuella objektet?** 
  
-Det visuella måttet för viktiga påverkare är för närvarande i offentlig förhandsversion och har en del begränsningar. Här är några funktioner som för närvarande inte är tillgängliga: 
-- Analys av mått som är aggregeringar eller mått.
-- Användning av det visuella objektet i Power BI Embedded.
-- Användning av det visuella objektet i Power BI-mobilappar.
-- Stöd för RLS.
-- Stöd för Direct Query.
-- Stöd för liveanslutningar.
+Det visuella objektet för den viktiga influeraren har vissa begränsningar:
+
+- Direct Query stöds inte
+- Live-anslutning till Azure Analysis Services och SQL Server Analysis Services stöds inte
+- Publicera på webben stöds inte
+- .NET Framework 4.6 eller senare krävs
 
 ![Numerisk fråga](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -263,7 +267,7 @@ Det här felet visas eftersom enheten inte är definierad på kundnivå. En kund
 - Du kan ändra sammanfattningen av enheter till ett antal. Använd till exempel antal om antalet enheter kan påverka vilket omdöme en kund ger. 
 - Du kan pivotera enhetskolumnen för att se om användning av tjänsten på en viss enhet påverkar kundens omdöme.
  
-I det här exemplet pivoterades data för att skapa nya kolumner för webbläsare, mobil och surfplatta. Nu kan du använda dessa specifika enheter i **Förklara med**. Alla enheter visar sig vara påverkare och vi ser att webbläsare har den största effekten på kundernas omdöme.
+I det här exemplet pivoterades data för att skapa nya kolumner för webbläsare, mobil och surfplatta (se till att du tar bort och återskapar dina relationer i modelleringsvyn efter att ha pivoterat dina data). Nu kan du använda dessa specifika enheter i **Förklara med**. Alla enheter visar sig vara påverkare och vi ser att webbläsare har den största effekten på kundernas omdöme.
 
 Närmare bestämt är kunder som inte använder webbläsare för tjänsten 3,79 gånger mer troliga att lämna ett lågt omdöme än de som gör det. Längre ner i listan ser vi att det omvända är sant för mobiler. Det är mer troligt att kunder som använder mobilappen ger ett lägre betyg än kunder som inte gör det. 
 

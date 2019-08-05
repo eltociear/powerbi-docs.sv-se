@@ -12,15 +12,15 @@ ms.topic: tutorial
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd92374a23a2ee7023c75cfb2612c00d513e9895
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 64da077e079ca3df11ce2a89da546e24865eaf0e
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61065842"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522891"
 ---
 # <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Självstudie: Ange datavarningar i Power BI-tjänsten
-Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett. 
+Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett.  
 
 Du kan ställa in aviseringar på paneler om du har en Power BI Pro-licens, eller om någon har delat en instrumentpanel med dig från en [Premium-kapacitet](../service-premium-what-is.md). Aviseringar kan endast ställas in på paneler som har fästs från rapportvisualiseringar och endast på mätare, KPI:er och kort. Aviseringar kan ställas in på visuella objekt som skapats från direktuppspelande datauppsättningar som har fästs från en rapport till en instrumentpanel, men kan inte anges för direktuppspelande paneler som skapas direkt på en instrumentpanel med hjälp av **Lägg till panel** > **Anpassade direktuppspelande data**. 
 
@@ -44,7 +44,7 @@ Den här självstudien beskriver följande.
 Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
 
 ## <a name="set-data-alerts-in-power-bi-service"></a>Ange datavarningar i Power BI-tjänsten
-Se när Amanda lägger till aviseringar i paneler på sin instrumentpanel. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
+Se när Amanda lägger till aviseringar i rutor på instrumentpanelen. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 

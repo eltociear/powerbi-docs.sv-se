@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 59ffa05d34b86ba2a4673e3d9db39e15f030fb17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5507356e42c58574a2d7c6787074fb987ddfeaec
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136726"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523195"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Skapa en kopia av en instrumentpanel i Power BI-tjänsten
 ![instrumentpanel](media/service-dashboard-copy/power-bi-dashboard.png)
 
- Det finns många olika skäl att göra en kopia av en instrumentpanel. Du kanske vill göra ändringar och testa dess prestanda mot den ursprungliga. Eller skapa något annorlunda versioner för att distribuera efter kollega, region eller team. En kollega kanske beundrar din instrumentpanelsdesign och vill använda den för att rapportera till sina chefer. En annan orsak kan vara om du har en ny databas med samma datastruktur och datatyper och vill återanvända instrumentpanelen som du redan har skapat. Det kan du också göra, men det kräver lite arbete i Power BI Desktop. 
+ Det finns många olika skäl att göra en kopia av en instrumentpanel. Du kanske vill göra ändringar och testa dess prestanda mot den ursprungliga. Eller skapa något annorlunda versioner för att distribuera efter kollega, region eller team. En kollega beundrar kanske din instrumentpanelsdesign och vill använda den för att rapportera till sina chefer. En annan orsak kan vara om du har en ny databas med samma datastruktur och datatyper och vill återanvända instrumentpanelen som du redan har skapat. Det kan du också göra, men det kräver lite arbete i Power BI Desktop. 
 
 Instrumentpaneler skapas (och kopieras) med hjälp av Power BI-tjänsten och kan visas i Power BI Mobile och Power BI Embedded.  Instrumentpaneler finns inte tillgängliga i Power BI Desktop. 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6d03097eb886813b934c75b61ddb056b55bde7b8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: bf2f9baff753b71563c9b5075d3b15be7ae833f9
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61161000"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522747"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
 
@@ -76,7 +76,7 @@ Det finns några ytterligare saker att ta hänsyn till, som beskrivs i följande
 
 1.  Anna skapar en ny apparbetsyta och konfigurerar den så att den lagrar dataflöden från en CDM-mapp.
 2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
-3.  Ben får ett fel eftersom han inte har lagts till som behörig användare av det dataflödets CDM-mapp i aktuell datasjö.
+3.  Ben får ett fel eftersom han inte har lagts till som auktoriserad användare i dataflödets CDM-mapp i datasjön.
 
     ![Fel vid försök att använda dataflöde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
@@ -96,9 +96,9 @@ Mer information om dataflöden, CDM och Azure Data Lake Storage Gen2 finns i fö
 Allmän information om dataflöden finns i de här artiklarna:
 
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 
 Mer information om Azure Storage finns i de här artiklarna:
 * [Säkerhetsguiden för Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

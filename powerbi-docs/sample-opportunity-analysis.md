@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 41d35eb9e078a63e499bb65dead05fe7dbbc2985
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: 233b4c36b5e59b38c82f5c3ccc1f0b49b70c5ac8
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791883"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523461"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur
 
@@ -33,7 +33,7 @@ Exemplet förlitar sig på två intäktsmått:
 
 ![Instrumentpanel för exemplet analys av affärsmöjligheter](media/sample-opportunity-analysis/opportunity1.png)
 
-Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det skapades av [obviEnce](http://www.obvience.com/) med verkliga data, som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
 
 De här självstudierna använder Power BI-tjänsten och utforskar innehållspaketet med exemplet på analys av affärsmöjligheter. Eftersom rapportupplevelserna är så lika i Power BI Desktop och tjänsten kan du även följa med via .pbix-exempelfilen i Power BI Desktop. 
 
@@ -70,7 +70,7 @@ Du kan även ladda ned Exempel på analys av affärsmöjligheter som en [.pbix-f
 Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529782). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
-Vår säljchef har skapat en instrumentpanel för att spåra de mått som är viktigast för henne. När hon ser något intressant, kan hon välja en panel för att granska den närmare:
+Vår säljchef har skapat en instrumentpanel för att spåra de mått som är viktigast. Säljchefen kan välja en panel för att granska data närmare när något intressant dyker upp:
 
 - Företagets intäkter är 2 miljarder dollar och de beräknade intäkterna är 461 miljoner dollar.
 - Antalet affärsmöjligheter och intäkter följer en bekant trattmönster där summorna minskar för varje efterföljande steg.
@@ -127,7 +127,7 @@ Vi tittar än en gång på liknande faktorer, men den här gången från perspek
  
 ![Sidan kommande affärsmöjligheter](media/sample-opportunity-analysis/opportunity6.png)
 
-Vår ekonomichef använder den här sidan för att hantera arbetsbelastning. Genom att titta på intäktsmöjligheter efter säljsteg och månad, kan hon planera på lämpligt sätt.
+Vår ekonomichef använder den här sidan för att hantera arbetsbelastning. Genom att titta på intäktsmöjligheter efter säljsteg och månad kan ekonomichefen planera på lämpligt sätt.
 
 Observera följande information:
 * Genomsnittliga intäkter för steget Slutför är högst. Det är av högsta vikt att slutföra de här avtalen.

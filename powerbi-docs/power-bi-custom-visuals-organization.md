@@ -1,6 +1,6 @@
 ---
-title: Anpassade visuella objekt för organisationer i Power BI
-description: Använda, hantera och skapa anpassade visuella objekt för organisationer i Power BI
+title: Anpassade visuella objekt i Power BI
+description: Använda, hantera och skapa visuella objekt för organisationer i Power BI
 author: sranins
 ms.author: rasala
 manager: kfile
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 157b20107a5be106ac97e0cb927b1e496e1ba115
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9775b7cd1eb936019051ae952bc270924061daaa
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421904"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415331"
 ---
-# <a name="organizational-custom-visuals-in-power-bi"></a>Anpassade visuella objekt för organisationer i Power BI
+# <a name="organizational-visuals-in-power-bi"></a>Visuella objekt för organisationer i Power BI
 
 Du kan använda anpassade visuella objekt med Power BI om du vill skapa en unik typ av visuella objekt som är skräddarsydd för dig. Dessa anpassade visuella objekt skapas av utvecklare, och de skapas ofta när flera av de visuella objekt som ingår i Power BI inte riktigt uppfyller deras behov.
 

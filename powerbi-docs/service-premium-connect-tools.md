@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
-ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
+ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
+ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67235066"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68475642"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Ansluta till datamängder med klientprogram och verktyg (förhandsversion)
 
-Power BI Premium-arbetsytor och -datamängder har stöd för *skrivskyddade* anslutningar från Microsoft samt klientprogram och verktyg från tredje part. 
+Power BI Premium-arbetsytor och -datamängder har stöd för *skrivskyddade* anslutningar från Microsoft samt klientprogram och verktyg från tredje part. Som standard är anslutningar aktiverade
 
 > [!NOTE]
 > Den här artikeln är endast avsedd att införa skrivskyddade anslutningar i Power BI Premium-arbetsytor och -datamängder. Den är *inte* avsedd att ge detaljerad information om programmerbarhet, specifika verktyg och program, arkitektur och hantering av arbetsytor och datamängder. Ämnen som beskrivs i artikeln kräver en gedigen förståelse av arkitekturen för och administration av den tabellbaserade modelldatabasen i Analysis Services.
@@ -104,6 +104,10 @@ Följande datamängder stöds inte i Power BI-tjänsten:
 ### <a name="roles-and-role-memberships"></a>Roller och rollmedlemskap
 
 För närvarande går det inte att identifiera eller visa modellroller eller rollmedlemskap med hjälp av XMLA-slutpunkter.
+
+## <a name="disable-connectivity"></a>Inaktivera anslutningar
+
+Som standard är anslutningar för XMLA-slutpunkt aktiverade för arbetsbelastningen Datamängder. Du kan inaktivera anslutningar i [Inställningar för arbetsbelastningar](service-admin-premium-workloads.md#workload-settings).
 
 ## <a name="audit-logs"></a>Granskningsloggar 
 

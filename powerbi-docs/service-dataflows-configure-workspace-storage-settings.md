@@ -1,6 +1,6 @@
 ---
 title: Konfigurera inställningar för arbetsytans dataflöde
-description: Konfigurera en apparbetsyta i Power BI för att lagra dess definition av dataflöde och datafiler i Azure Data Lake Storage Gen2
+description: Konfigurera en apparbetsyta i Power BI så att den lagrar sin dataflödesdefinition och sina datafiler i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61168610"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523506"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
 
@@ -105,9 +105,9 @@ Det finns några ytterligare överväganden, som beskrivs i följande lista:
 
 1.  Anna skapar en ny apparbetsyta och konfigurerar den så att den lagrar dataflöden i organisationens data lake.
 2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
-3.  Ben får ett fel eftersom han inte har lagts till som behörig användare av det dataflödets CDM-mapp i aktuell datasjö.
+3.  Ben får ett fel eftersom han inte har lagts till som auktoriserad användare i dataflödets CDM-mapp i datasjön.
 
-    ![Fel när dataflödet användes](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+    ![Fel vid försök att använda dataflöde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 
 ## <a name="next-steps"></a>Nästa steg

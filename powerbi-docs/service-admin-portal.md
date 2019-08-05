@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67568107"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501754"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -133,7 +133,7 @@ Om du vill använda granskningsloggar, se till att inställningen [**Skapa grans
 
 Fliken **Klientinställningar** möjliggör kontroll i minsta detalj över de funktioner som är tillgängliga för din organisation. Om du har frågor kring känsliga data, vissa av våra funktioner inte är lämpliga för din organisation eller om du bara vill att en viss funktion ska vara tillgänglig för en särskild grupp.
 
-Följande bild visar de första två avsnitten på fliken **Klientinställningar**.
+Följande bild visar flera inställningar på fliken **Klientorganisationsinställningar**.
 
 ![Klientinställningar](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -169,6 +169,10 @@ Följande avsnitt ger en översikt över de olika typerna av inställningar för
 Användare i organisationen kan gå till intern hjälp och ta del av supportresurser i Power BI:s Hjälp-meny. Mer specifikt ändrar parametrarna beteendet för menyalternativen Läs, Community och Få hjälp.
 
 Du kan också ange en URL för att dirigera användare till en anpassad lösning för licensieringsbegäranden. Den här parametern anpassar målwebbadressen för knappen Uppgradera konto som en användare utan Power BI Pro-licens kan hitta i dialogrutan Uppdatera till Power BI Pro och på sidan Hantera personlig lagring.
+
+### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Få e-postmeddelanden om tjänstavbrott eller incidenter
+
+E-postaktiverade säkerhetsgrupper får e-postmeddelanden om den här klientorganisationen påverkas av ett avbrott i tjänsten eller en incident. Lär dig mer om [Aviseringar om tjänstavbrott](service-interruption-notifications.md).
 
 ## <a name="workspace-settings"></a>Inställningar för arbetsyta
 

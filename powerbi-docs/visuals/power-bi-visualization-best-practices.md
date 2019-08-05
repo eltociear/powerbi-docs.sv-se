@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7d716c79146a0d53d261dba514aacb8787ca2fa3
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 53a8847f96d6aa3143e91cab07029a8e0f6afc85
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299736"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523745"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Metodtips för design av rapporter och visuella objekt
 
@@ -407,7 +407,7 @@ Kräver ditt visuella objekt att man använder en rullningslist? Undvik rullning
 
 Är budskapet som ditt visuella objekt förmedlar tilltalande? Spelar det någon roll? Skapa inte visuella objekt bara för att du kan. Du kanske tycker det är datan som ger budskapet, men det är inte. Var inte rädd för att börja om från början och leta efter ett intressantare sätt att få fram budskapet. Kanske budskapet finns där, men det måste mätas på ett annat sätt.
 
-Anta att du vill mäta hur framgångsrika dina försäljningschefer är. Vilka mått ska du använda för att göra detta? Vill du mäta genom att titta på total försäljning eller total vinst, tillväxt under föregående år eller resultat mot ett uppsatt mål? Säljaren Sally kanske har den största vinsten. Om du visade vinst per säljare i ett stapeldiagram skulle hon framstå som en rockstjärna jämfört med de andra säljarna. Om Sally har en hög försäljningskostnad (resekostnader, leveranskostnader, tillverkningskostnader osv.) räcker det inte att bara titta på försäljningen.
+Anta att du vill mäta hur framgångsrika dina försäljningschefer är. Vilka mått ska du använda för att göra detta? Vill du mäta genom att titta på total försäljning eller total vinst, tillväxt under föregående år eller resultat mot ett uppsatt mål? Säljaren Sally kanske har den största vinsten. Om du visade vinst per säljare i ett stapeldiagram skulle hon framstå som en stjärna jämfört med de andra säljarna. Om Sally har en hög försäljningskostnad (resekostnader, leveranskostnader, tillverkningskostnader osv.) räcker det inte att bara titta på försäljningen.
 
 #### <a name="reflect-reality-dont-distort-reality"></a>Återspegla verkligheten, förvräng den inte
 
@@ -755,7 +755,7 @@ Linjediagram är ett kraftfullt sätt att visa data över tid. När man tittar p
 
 * Om du väljer att placera flera diagram över och under varandra så här för att göra det lättare att göra jämförelser mellan serier på det här viset ska du justera X-axeln. Använd filter för att se till att Power BI visar samma värdeintervall. Om du tittar på datumintervall måste du säkerställa att diagrammen har samma datumintervall. Till exempel 1896 till 2012 i båda diagrammen.
 
-* Utnyttja utrymmet. Om det passar för dina data kan du ange **start- och slutpunkterna** **** för Y-axeln så att du eliminerar det tomma utrymmet högst upp och längst ned i diagrammet. Det hjälper också det visuella objektet att fokusera på de faktiska datapunkterna. För att ange **start- och slutpunkter** **** :
+* Utnyttja utrymmet. Om det passar för dina data kan du ange **start**- och **slutpunkterna** för Y-axeln så att du eliminerar det tomma utrymmet högst upp och längst ned i diagrammet. Det hjälper också det visuella objektet att fokusera på de faktiska datapunkterna. För att ange **start**- och **slutpunkter**:
 
   1. Välj det visuella objektet för att aktivera det.
 
@@ -767,7 +767,7 @@ Linjediagram är ett kraftfullt sätt att visa data över tid. När man tittar p
   
       **Bild 48: Ange start- och slutpunkter**
 
-* Ett annat skäl till att ange **start- och slutpunkter** **** är om du ska jämföra två eller flera diagram på samma sida med samma Y-axelfält. Om du till exempel tittar på kumulativa händelseantal och Storbritannien har ett antal mellan 1 och 70 och Australien har ett antal mellan 1 och 12, kommer de två linjediagrammen att visa mycket olika Y-axlar (bild 49). Det gör det svårt att jämföra dem med en snabb blick. Ange i stället att diagrammen ska använda samma Y-axelintervall (bild 50).
+* Ett annat skäl till att ange **start**- och **slutpunkter** är om du ska jämföra två eller flera diagram på samma sida med samma Y-axelfält. Om du till exempel tittar på kumulativa händelseantal och Storbritannien har ett antal mellan 1 och 70 och Australien har ett antal mellan 1 och 12, kommer de två linjediagrammen att visa mycket olika Y-axlar (bild 49). Det gör det svårt att jämföra dem med en snabb blick. Ange i stället att diagrammen ska använda samma Y-axelintervall (bild 50).
   
   ![Linjediagram med olika Y-axlar.](media/power-bi-visualization-best-practices/power-bi-line-chart2.png)
   
@@ -1007,7 +1007,7 @@ För mer information om trädkartor:
 
 Stapel-, kolumn- och linjediagram fungerar i allmänhet för de flesta ändamål. Det är välkänt att cirkel- och ringdiagram är svåra att tolka på rätt sätt. I själva verket kan de ofta förvränga data. Undvik dem om möjligt. Stephen Few har en utmärkt beskrivning av historien och farorna i [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf).
 
-Han förklarar att den enda gång när cirkeldiagram kan vara användbara, är när man jämför relationer mellan delar och helheter. Det är sällan bättre än ett 100 % staplat stapeldiagram.
+Stephen förklarar att den enda gång när cirkeldiagram kan vara användbara är när man jämför relationer mellan delar och helheter. Det är sällan bättre än ett 100 % staplat stapeldiagram.
 
 En annan rolig artikel (och animering) om cirkeldiagram finns på [Darkhorse Analytics webbplats](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 

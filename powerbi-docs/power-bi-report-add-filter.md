@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 903883290def07ee6467dbebab1c7b31dec80b74
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342195"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380264"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Lägga till ett filter i en Power BI-rapport
 
@@ -76,6 +76,8 @@ Den här proceduren använder förresten, detaljhandelsanalys om du vill ladda n
     Det visuella objektet ändras för att återspegla det nya filtret. Om du sparar rapporten med filtret kan rapportens läsare se det filtrerade innehållet från början och interagera med filtret i läsvyn genom att välja eller rensa värden.
      
     ![Det filtrerade visuella objektet](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    
+    När du använder filtret för ett fält som används i det visuella objekt där fältet aggregeras (till exempel en summa, ett medelvärde eller ett antal) filtrerar du på det *aggregerade* värdet i varje datapunkt. Om du filtrerar det visuella objektet ovan där **Försäljning det här året > 500000** innebär att du endast skulle se datapunkten **13 – Charleston Fashion Direct** i resultatet. Filter på [modellmått](desktop-measures.md) gäller alltid för datapunktens aggregerade värde.
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrera med ett fält som inte finns i det visuella objektet
 
@@ -94,6 +96,8 @@ Nu ska vi lägga till ett helt nytt fält som ett filter på visuell nivå i vå
     ![Det filtrerade visuella objektet](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Om du sparar rapporten med filtret kan rapportens läsare interagera med filtret **Distriktschef** i läsvyn genom att välja eller rensa värden.
+    
+    Om du drar en *numerisk kolumn* till filterfönstret för att skapa ett filter på visualiseringsnivå tillämpas filtret på de *underliggande raderna med data*. Om du till exempel skulle lägga till ett filter i fältet **Enhetskostnad** och ange det så att **Enhetspris** > 20 skulle endast data för de produktrader där enhetskostnaden var större än 20 visas, oavsett den totala enhetskostnaden för de datapunkter som visas i det visuella objektet.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Lägg till ett filter för en hel sida
 
@@ -158,10 +162,6 @@ Nu ska vi se hur filtret för detaljerad information fungerar.
 1. Välj bakåtpilen för att återgå till den föregående rapportsidan.
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-
-- Ibland kan det hända att ett filter på visuell nivå och ett filter på sidnivå returnerar olika resultat.  När du till exempel lägger till ett filter på visuell nivå, filtrerar Power BI de aggregerade resultaten.  Aggregeringstypen är som standard Summa, men du kan [ändra aggregeringstypen](service-aggregates.md).  
-
-    När du sedan lägger till ett filter på sidnivå filtrerar Power BI utan aggregering.  Det aggregerar inte eftersom en sida kan ha många visuella objekt som var och ett kan använda olika aggregeringstyper.  Så filtret tillämpas på varje datarad.
 
 - Kontrollera att du är i rapportens [Redigeringsvy](service-interact-with-a-report-in-editing-view.md) om du inte ser panelen Fält.    
 - Om du har gjort många filterändringar och vill återgå till standardinställningarna som rapportförfattaren använde väljer du **Återställ till standard** från den översta menyraden.

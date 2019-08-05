@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.author: mblythe
-ms.openlocfilehash: 0bb78e29cc3e9b9792d5916050179703281aa01a
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: a33ace000917311cbd060c853e0122034a396ae2
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68366759"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501738"
 ---
 # <a name="service-interruption-notifications"></a>Aviseringar om tjänstavbrott
 
@@ -28,10 +28,10 @@ För tillfället skickar vi e-postmeddelanden för följande _tillförlitlighets
 - Tillförlitlighet för modelluppdatering
 - Tillförlitlighet för frågeuppdatering
 
-När en incident har lösts får du ett uppföljningsmeddelande via e-post.
+Exempel på dessa meddelanden är när användare upplever en utökad fördröjning i åtgärder såsom att öppna rapporter, uppdatera datamängder eller köra frågor. När en incident har lösts får du ett uppföljningsmeddelande via e-post.
 
 > [!NOTE]
-> Den här funktionen är för närvarande endast tillgänglig för dedikerade kapaciteter i Power BI Premium. Den är inte tillgänglig för delad kapacitet.
+> Den här funktionen är för närvarande endast tillgänglig för dedikerade kapaciteter i Power BI Premium. Den är inte tillgänglig för delad eller inbäddad kapacitet.
 
 ## <a name="enable-notifications"></a>Aktivera meddelanden
 

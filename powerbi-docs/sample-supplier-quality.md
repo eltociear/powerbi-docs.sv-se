@@ -7,165 +7,169 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3ef48bbe55793825693382252ac143068549d7a8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 75e5a6387574c6cc4a9620955a3e7c15479830c2
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61239597"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391186"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur
 
-## <a name="a-brief-overview-of-the-supplier-quality-analysis-sample"></a>En snabb översikt över Exempel på leverantörskvalitetsanalys
-Det här exemplet på en instrumentpanel och underliggande rapport från branschen fokuserar på en av de mest typiska utmaningarna i leveranskedjan – analys av leverantörskvalitet.
-Två primära mått används i den här analysen: det totala antalet defekter och den totala stilleståndstid som dessa defekter har orsakat. Det här exemplet har två huvudsakliga mål:
+Det här exemplet på en instrumentpanel och underliggande rapport från branschen fokuserar på en av de mest typiska utmaningarna i leveranskedjan: analys av leverantörskvalitet. Två primära mått används i den här analysen: det totala antalet defekter och den totala nedtiden som dessa defekter har orsakat. 
 
-* Förstå vilka leverantörer som är bäst och sämst med avseende på kvalitet
-* Identifiera vilka anläggningar som gör ett bättre jobb när det gäller att hitta och avvisa defekter, för att minimera stilleståndstiden
+Det här exemplet har två huvudsakliga mål:
 
-![](media/sample-supplier-quality/supplier1.png)
+* Förstå vilka leverantörer som är bäst och sämst med avseende på kvalitet.
+* Identifiera vilka anläggningar som gör ett bättre jobb när det gäller att hitta och avvisa defekter, för att minimera stilleståndstiden.
 
-Det här exemplet ingår i en serie som illustrerar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler.
-Det här är verkliga data från obviEnce ([www.obvience.com](http://www.obvience.com/)) som har anonymiserats.
+![Instrumentpanel för exemplet på leverantörskvalitetsanalys](media/sample-supplier-quality/supplier1.png)
 
-## <a name="prerequisites"></a>Förutsättningar
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det skapades av [obviEnce](http://www.obvience.com/) med verkliga data, som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
 
- Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](https://docs.microsoft.com/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), en [.pbix-fil](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) eller en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529779).
+Den här självstudien utforskar innehållspaketet för Exempel på leverantörskvalitetsanalys i Power BI-tjänsten. Eftersom rapportupplevelserna är så lika i Power BI Desktop och tjänsten kan du även följa med via .pbix-exempelfilen i Power BI Desktop. 
+
+Du behöver inte en licens för Power BI för att utforska exempel i Power BI Desktop. Om du inte har en Power BI Pro-licens kan du spara exemplet på Min arbetsyta i Power BI-tjänsten. 
+
+## <a name="get-the-sample"></a>Hämta exemplet
+
+Innan du kan använda exemplet, måste du först hämta det som ett [innehållspaket](#get-the-content-pack-for-this-sample), en [.pbix-fil](#get-the-pbix-file-for-this-sample) eller en [Excel-arbetsbok](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hämta innehållspaketet för det här exemplet
 
-1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
+1. Öppna Power BI-tjänsten (app.powerbi.com), logga in och öppna den arbetsyta där du vill spara exemplet.
+
+   Om du inte har en Power BI Pro-licens kan du spara exemplet på Min arbetsyta.
+
 2. Längst ned i vänster hörn väljer du **Hämta data**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. På sidan Hämta data väljer du ikonen **Exempel**.
+   ![Välja Hämta data](media/sample-datasets/power-bi-get-data.png)
+3. På sidan **Hämta data** väljer du **Exempel**.
    
-   ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Välj **Exempel på leverantörskvalitetsanalys** och sedan **Anslut**.  
-  
-   ![Exempel på leverantörskvalitetsanalys](media/sample-supplier-quality/supplier16.png)
    
-5. Power BI importerar innehållspaketet och lägger till en ny instrumentpanel, rapport och datauppsättning till din aktuella arbetsyta. Det nya innehållet markeras med en gul asterisk. 
+   ![Ansluta till exempel](media/sample-supplier-quality/supplier16.png)
+
+5. Power BI importerar innehållspaketet och lägger sedan till en ny instrumentpanel, rapport och datamängd till din aktuella arbetsyta.
    
-   ![Asterisk](media/sample-supplier-quality/supplier17.png)
+   ![Post för Exempel på leverantörskvalitetsanalys](media/sample-supplier-quality/supplier17.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även hämta exemplet som en .pbix-fil som är avsedd för användning med Power BI Desktop. 
-
- * [PBIX-filen Exempel på leverantörskvalitetsanalys](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+Du kan även ladda ned Exempel på leverantörskvalitetsanalys som en [.pbix-fil](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) som är avsedd för användning med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
-Du kan också [hämta enbart datauppsättningen (Excel-arbetsboken) för det här exemplet](http://go.microsoft.com/fwlink/?LinkId=529779). Arbetsboken innehåller Power View-blad som du kan visa och ändra. För att se rådata väljer du **Power Pivot > Hantera**.
 
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529779). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Stilleståndstid som orsakas av defekta material
 Nu ska vi analysera den stilleståndstid som orsakas av defekta material och se vilka leverantörer som är ansvariga.  
 
-1. På instrumentpanelen väljer du sifferpanelen **Total Defect Quantity (Totalt antal defekta)** eller **Total Downtime Minutes (Total stilleståndstid i minuter)** .  
+1. På instrumentpanelen väljer du panelen **Total defekt mängd** eller **Total nedtid i minuter**.
 
-   ![](media/sample-supplier-quality/supplier2.png)  
+   ![Välja panel för att öppna rapport](media/sample-supplier-quality/supplier2.png)  
 
-   Rapporten ”Exempel på leverantörskvalitetsanalys” öppnas på sidan ”Downtime Analysis” (Stilleståndstidsanalys). Observera att vi totalt har 33 000 000 antal defekta delar och att den totala stilleståndstiden som orsakats av dessa defekta delar är 77 000 minuter. Vissa material har färre defekta delar men kan orsaka stor fördröjning som resulterar i längre stilleståndstid. Vi ska undersöka dem på rapportsidan.  
-2. Om vi tittar på raden **Total Downtime Minutes (Total stilleståndstid i minuter)** i kombinationsdiagrammet **Defects and Downtime (min) by Material Type (Defekter och stilleståndstid (min) per materialtyp)** , ser vi att korrugerade material orsakar längst stilleståndstid.  
-3. Välj kolumnen **Corrugate (Korrugerad)** i samma kombinationsdiagram för att se vilka anläggningar som påverkas mest av den här defekten och vilken leverantör som är ansvarig.  
+   Rapporten Exempel på leverantörskvalitetsanalys öppnas på sidan **Analys av nedtid**.
 
-   ![](media/sample-supplier-quality/supplier3.png)  
-4. Välj enskilda anläggningar på kartan för att se vilken leverantör eller vilket material som ansvarar för stilleståndstiden på anläggningen.
+   Observera att vi har 33 miljoner defekta delar, vilket orsakar en total nedtid på 77 000 minuter. Även om vissa material har färre defekta delar kan de orsaka fördröjningar, vilket leder till mer nedtid. Vi ska undersöka dem på rapportsidan.  
+2. Om vi tittar på raden **Total defekt mängd** i kombinationsdiagrammet **Defekter och nedtid (min) per materialtyp** ser vi att korrugerade material orsakar mest nedtid.  
+3. Välj kolumnen **Korrugerad** för att se vilka anläggningar som påverkas mest av den här defekten och vilken leverantör som är ansvarig.  
+
+   ![Välj kolumnen Korrugerad](media/sample-supplier-quality/supplier3.png)  
+4. På kartan **Nedtid (min) per anläggning** väljer du enskilda anläggningar på kartan för att se vilken leverantör eller vilket material som är orsaken till nedtiden på den anläggningen.
 
 ### <a name="which-are-the-worst-suppliers"></a>Vilka är de sämsta leverantörerna?
- Vi vill hitta de åtta sämsta leverantörerna och fastställa hur stor procentandel av stilleståndstiden som de står för. Vi kan göra detta genom att ändra ytdiagrammet **Downtime (min) by Vendor (Stilleståndstid (min) per leverantör)** till en trädkarta.  
+ Vi vill hitta de åtta sämsta leverantörerna och fastställa hur stor procentandel av nedtiden de står för. Vi kan göra detta genom att ändra ytdiagrammet **Nedtid (min) efter leverantör** till en trädkarta.  
 
-1. På sidan 3 i rapporten, ”Downtime Analysis (Stilleståndstidsanalys)”, väljer du **Redigera rapport** i det övre vänstra hörnet.  
-2. Välj ytdiagrammet **Downtime (min) by Vendor (Stilleståndstid (min) per leverantör)** och sedan Trädkarta i fönstret Visualiseringar.  
+1. På sidan **Analys av nedtid** i rapporten väljer du **Redigera rapport** i det övre vänstra hörnet.  
+2. Välj ytdiagrammet **Nedtid (min) per leverantör**. I fönstret **Visualiseringar** väljer du sedan ikonen **Trädkarta**.  
 
-   ![](media/sample-supplier-quality/supplier4.png)  
+   ![Välja trädkartsikonen](media/sample-supplier-quality/supplier4.png)  
 
-    Trädkartan ställer automatiskt in fältet **Leverantör** som **Grupp**.  
+    Trädkartan anger automatiskt fältet **Leverantör** till **Grupp**.  
 
-    ![](media/sample-supplier-quality/supplier5.png)  
+    ![Trädkarta för Nedtid (min) efter leverantör](media/sample-supplier-quality/supplier5.png)  
 
-   I den här trädkartan kan vi se att de åtta främsta leverantörerna är de åtta blocken till vänster i trädkartan. Vi kan också se att de svarar för 50 % av all stilleståndstid i minuter.  
+   I den här trädkartan ser vi att de åtta främsta leverantörerna är de åtta blocken till vänster i trädkartan. Vi kan också se att de svarar för 50 % av all stilleståndstid i minuter.  
 3. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfältet för att gå tillbaka till instrumentpanelen.
 
 ### <a name="comparing-plants"></a>Jämföra anläggningar
 Nu ska vi titta närmare på vilken anläggning som är bäst på att hantera defekta material, vilket resulterar i kortare stilleståndstid.  
 
-1. Välj kartrutan **Total Defect Reports by Plant (Totalt antal rapporterade defekter per anläggning), Defect Type (Defekttyp)** .  
+1. På instrumentpanelen väljer du kartrutan **Rapport över totala defekter per anläggning, defekt typ**.      
 
-    Rapporten öppnas på sidan för ”leverantörskvalitet”.  
+   ![Rutan Rapport över totala defekter per anläggning, defekt typ](media/sample-supplier-quality/supplier6.png)  
 
-   ![](media/sample-supplier-quality/supplier6.png)  
-2. Välj cirkeln **Påverkan** i kartans förklaring.  
+   Rapporten öppnas på sidan **Leverantörskvalitetsanalys**.  
 
-    ![](media/sample-supplier-quality/supplier7.png)  
+2. I förklaringen för **Rapport över totala defekter per anläggning och defekt typ** väljer du cirkeln **Påverkan**.  
 
-    Notera i bubbeldiagrammet att **Logistik** är den kategori som har flest problem – den är störst vad gäller totalt antal defekter, totalt antal defektrapporter och total stilleståndstid i minuter. Låt oss utforska den här kategorin mer.  
-3. Välj Logistik-bubblan i bubbeldiagrammet och titta på anläggningarna i Springfield i Illinois och i Naperville i Illinois. Naperville verkar göra ett mycket bättre arbete med att hantera defekta material eftersom de har ett stort antal avvisade artiklar och låg påverkan, jämfört med Springfields höga siffra för påverkan.  
+    ![Välja Påverkan](media/sample-supplier-quality/supplier7.png)  
 
-   ![](media/sample-supplier-quality/supplier8.png)  
-4. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfältet att återgå till din aktiva arbetsyta.
+    Lägg märke till att **Logistik** i bubbeldiagrammet är den mest problematiska kategorin. Den är störst vad gäller total defekt mängd, rapporter över defekter samt nedtid i minuter. Låt oss utforska den här kategorin mer.  
+3. Välj **Logistik**-bubblan i bubbeldiagrammet och titta på anläggningarna i Springfield och i Naperville i Illinois. Naperville verkar göra ett mycket bättre arbete med att hantera defekta material eftersom de har ett stort antal avvisade artiklar och låg påverkan, jämfört med Springfields höga siffra för påverkan.  
+
+   ![Välja Logistik](media/sample-supplier-quality/supplier8.png)  
+4. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfältet för att gå tillbaka till instrumentpanelen.
 
 ## <a name="which-material-type-is-best-managed"></a>Vilken materialtyp hanteras bäst?
 Den bäst hanterade materialtypen är den med lägst stilleståndstid eller utan påverkan, oavsett antalet defekter.
 
-* I instrumentpanelen tittar vi närmare på panelen **Total Defect Quantity by Material Type (Totalt antal defekta per materialtyp), Defect Type (Defekttyp)** .
+1. I instrumentpanelen tittar vi närmare på panelen **Total Defect Quantity by Material Type (Totalt antal defekta per materialtyp), Defect Type (Defekttyp)** .
 
-  ![](media/sample-supplier-quality/supplier9.png)
+   ![Rutan Total defekt mängd per materialtyp, defekt typ](media/sample-supplier-quality/supplier9.png)
 
-Observera att **Råmaterial** har ett stort antal totala defekter, men att de flesta av dessa antingen avvisas eller saknar påverkan.
+   Observera att materialtypen **Råmaterial** har ett stort antal totala defekter, men att de flesta av dessa defekter antingen avvisas eller saknar påverkan.
 
-Vi ska kontrollera att råmaterial inte orsakar långa stilleståndstider, trots högt antal defekter.
+   Vi ska kontrollera att den här materialtypen inte orsakar mycket nedtid, trots högt antal defekter.
 
-* I instrumentpanelen tittar vi närmare på panelen **Total Defect Qty (Totalt antal defekta), Total Downtime Minutes by Material Type (Total stilleståndstid i minuter per materialtyp)** .
+2. I instrumentpanelen tittar vi närmare på panelen **Total Defect Qty (Totalt antal defekta), Total Downtime Minutes by Material Type (Total stilleståndstid i minuter per materialtyp)** .
 
-  ![](media/sample-supplier-quality/supplier10.png)
+   ![Total defekt mängd, panelen Total nedtid i minuter efter materialtyp](media/sample-supplier-quality/supplier10.png)
 
-Uppenbarligen hanteras råmaterial bra: de har fler defekter, men total lägre stilleståndstid i minuter.
+   Råmaterial verkar hanteras väl: de har fler defekter men total lägre total nedtid i minuter.
 
 ### <a name="compare-defects-to-downtime-by-year"></a>Jämföra defekter med stilleståndstid per år
-1. Välj kartrutan **Total Defect Reports by Plant (Totalt antal rapporterade defekter per anläggning), Defect Type (Defekttyp)** för att öppna rapporten på den första rapportsidan, om leverantörskvalitet.
-2. Observera att **Defect Qty (Defekt antal)** är högre 2014 än 2013.  
+1. Välj kartrutan **Rapport över totala defekter per anläggning, defekt typ** för att öppna rapporten på sidan **Leverantörskvalitetsanalys**.
+2. I diagrammet **Total mängd defekter per månad och år** ser du att den defekta kvantiteten är högre under 2014 än under 2013.  
 
-    ![](media/sample-supplier-quality/supplier11.png)  
-3. Innebär fler defekter längre stilleståndstid? Vi kan ställa frågor i Frågor och svar-rutan för att ta reda på det.  
+    ![Diagrammet Total mängd defekter per månad och år](media/sample-supplier-quality/supplier11.png)  
+3. Innebär fler defekter längre stilleståndstid? Ställ frågor i Frågor och svar-rutan för att ta reda på det.  
 4. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfältet för att gå tillbaka till instrumentpanelen.  
-5. Eftersom vi vet att råmaterial har det högsta antalet defekter, skriver vi ”visa materialtyper, år och totalt antal defekta” i frågerutan.  
+5. Eftersom vi vet att råmaterial har det högsta antalet defekter skriver du följande i frågerutan: *visa materialtyper, år och total mängd defekta*.  
 
     Det förekom många fler råmaterialsdefekter under 2014 än under 2013.  
 
-    ![](media/sample-supplier-quality/supplier12.png)  
-6. Ändra nu frågan till ”visa materialtyper, år och total stilleståndstid i minuter”.  
+    ![Fråga för Frågor och svar: Visa materialtyp, år och total mängd defekta](media/sample-supplier-quality/supplier12.png)  
+6. Sedan ändrar du frågan till *visa materialtyper, år och total **nedtid i minuter***.  
 
-   ![](media/sample-supplier-quality/supplier13.png)
+   ![Fråga för Frågor och svar: Visa materialtyper, år och total nedtid i minuter](media/sample-supplier-quality/supplier13.png)
 
-Stilleståndstiden för råmaterial låg på ungefär samma nivå 2013 och 2014, trots att det förekom många fler råmaterialdefekter 2014.
-
-Det visar sig att de fler råmaterialdefekterna under 2014 inte resulterade i särskilt mycket mer stilleståndstid till följd av råmaterial under samma år.
+   Observera att nedtiden för råmaterial låg på ungefär samma nivå 2013 och 2014, trots att det förekom många fler råmaterialdefekter under 2014. Det verkar som att det större antalet defekter för råmaterial under 2014 inte ledde till särskilt mycket mer nedtid för råmaterial under 2014.
 
 ### <a name="compare-defects-to-downtime-month-to-month"></a>Jämför defekterna med stilleståndstiden månad för månad
 Nu ska vi titta på en annan instrumentpanels panel som rör det totala antalet defekta material.  
 
-1. Välj bakåtpilen ![](media/sample-supplier-quality/backarrow.png) i det övre vänstra hörnet ovanför frågerutan för att komma tillbaka till instrumentpanelen.  
+1. Välj **Avsluta Frågor och svar** i det övre vänstra hörnet för att gå tillbaka till instrumentpanelen.  
 
-    Om vi tittar närmare på panelen för **totala antalet defekta material per månad och år**, ser vi att den första halvan av 2014 hade ett motsvarande antal defekter som 2013, men under andra halvan av 2014 steg antalet defekter avsevärt.  
+    Titta närmare på panelen **Total defekt mängd per månad, år**. Den visar att den första halvan av 2014 hade ett motsvarande antal defekter som 2013, men under andra halvan av 2014 steg antalet defekter avsevärt.  
 
-    ![](media/sample-supplier-quality/supplier14.png)  
+    ![Panelen Total defekt mängd per månad, år](media/sample-supplier-quality/supplier14.png)  
 
     Låt oss se om det ökade antalet defekter ledde till en lika stor ökad stilleståndstid i minuter.  
-2. Skriv ”total stilleståndstid i minuter per månad och år som ett linjediagram” i frågerutan.  
+2. I frågerutan skriver du *total nedtid i minuter per månad och år som ett linjediagram*.  
 
-   ![](media/sample-supplier-quality/supplier15.png)
+   ![Fråga för Frågor och svar: Total nedtid i minuter per månad och år som ett linjediagram](media/sample-supplier-quality/supplier15.png)
 
-   Vi kan se en tydlig ökning av stilleståndstiden i minuter under juni och oktober men utöver det resulterade inte det större antalet defekter i någon väsentlig ökning av stilleståndstiden. Detta visar att vi hanterar defekter bra.  
-3. Om du vill fästa diagrammet på din instrumentpanel, väljer du fästikonen ![](media/sample-supplier-quality/pin.png) till höger om frågerutan.  
-4. Om du vill utforska de avvikande månaderna, kontrollerar du stilleståndstiden i minuter under oktober per materialtyp, kategori och så vidare genom att ställa frågor som ”total stilleståndstid i minuter i oktober per anläggning”.    
-5. Välj bakåtpilen ![](media/sample-supplier-quality/backarrow.png) i det övre vänstra hörnet ovanför frågerutan för att komma tillbaka till instrumentpanelen.
-
-Det här är en säker miljö att leka runt i. Du kan alltid välja att inte spara ändringarna. Men om du sparar dem, kan du alltid gå till **Hämta data** för en ny kopia av det här exemplet.
+   Förutom en tydlig ökning av nedtiden i minuter under juni och oktober resulterade det större antalet defekter inte i någon väsentlig ökning av nedtiden. Detta resultat visar att vi hanterar defekter bra.  
+3. Välj fästikonen för att fästa diagrammet på instrumentpanelen ![Fästikon](media/sample-supplier-quality/pin.png) ovanför frågerutan.  
+4. Om du vill utforska de avvikande månaderna kontrollerar du nedtiden i minuter under oktober per materialtyp, anläggningsplats, kategori och så vidare genom att ställa frågor som *total nedtid i minuter i oktober per anläggning*. 
+5. Välj **Avsluta Frågor och svar** i det övre vänstra hörnet för att gå tillbaka till instrumentpanelen.
 
 ## <a name="next-steps-connect-to-your-data"></a>Nästa steg: Anslut till dina data
-Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, Frågor och svar, samt rapporter kan ge insikter om leverantörskvalitetsdata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer om att [komma igång med Power BI](service-get-started.md).
+Den här miljön är säker att leka i eftersom du kan välja att inte spara dina ändringar. Men om du sparar dem kan du alltid välja **Hämta data** för att få en ny kopia av exemplet.
+
+Vi hoppas att denna rundtur har visat hur Power BI-instrumentpaneler, frågor och svar, samt rapporter kan ge insikter om exempeldata. Nu är det din tur – anslut till dina egna data. Med Power BI kan du ansluta till en mängd olika datakällor. Läs mer i [Kom igång med Power BI-tjänsten](service-get-started.md).

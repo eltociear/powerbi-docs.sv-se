@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 07/22/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 19ed4e4505ed2d8eb4f3b559c0af46b2b82a0ec0
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 591a837bb085ba901316e672112b568923995718
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342206"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590541"
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner:
@@ -72,7 +72,7 @@ När du använder **Hämta data** i **Power BI Desktop** för att ansluta till e
 * Visuella objekt, eller hela rapportsidor, kan fästas på instrumentpaneler. För att säkerställa att en instrumentpanel öppnas snabbt, så uppdateras panelerna automatiskt enligt ett fastlagt schema (t.ex. varje timma). Du kan kontrollera den här uppdateringens frekvens, så att den reflekterar hur ofta data ändras, och därför att det är viktigt att se den senaste informationen. När du öppnar en instrumentpanel avspeglar alltså panelerna data som de såg ut vid tiden för den senaste uppdateringen, och inte nödvändigtvis de senaste ändringarna i den underliggande källan. Du kan alltid uppdatera en öppen instrumentpanel så att den hålls uppdaterad.    
 
 ### <a name="live-connections"></a>Live-anslutningar
-När du ansluter till **SQL Server Analysis Services** (SSAS) kan du välja att importera data från, eller live-ansluta till, den valda datamodellen. Om du väljer **importera** så definierar du en fråga för den externa SSAS-källan, och data importeras som vanligt. Om du väljer att **ansluta live** definieras inte någon fråga, och hela den externa modellen visas i fältlistan. Om du väljer **DirectQuery**, när visuella objekt skapas, så skickas frågorna till den externa SSAS-källan. Till skillnad från vad som är fallet med DirectQuery, så skapas dock ingen ny *modell*. Det är med andra ord inte möjligt att definiera nya beräknade kolumner, hierarkier, relationer osv. Istället ansluter du helt enkelt direkt till den externa SSAS-modellen.
+När du ansluter till **SQL Server Analysis Services** (SSAS) kan du välja att importera data från, eller live-ansluta till, den valda datamodellen. Om du väljer **importera** så definierar du en fråga för den externa SSAS-källan, och data importeras som vanligt. Om du väljer att **ansluta live** definieras inte någon fråga, och hela den externa modellen visas i fältlistan.
 
 Den situation som beskrivs i föregående stycke gäller vid anslutning även till följande källor, förutom att det inte finns något alternativ för att importera data:
 
@@ -116,8 +116,8 @@ När du använder **DirectQuery**, är den övergripande processen väldigt bero
 
 Utöver den underliggande källans prestanda bör du vara uppmärksam på vilken belastning den utsätts för (vilket i hög grad påverkar dess prestanda). Som vi diskuterar längre fram så skickas minst en fråga per visuellt objekt till den underliggande källan varje gång en användare öppnar en delad rapport eller när en instrumentpanel uppdateras. Detta kräver att källan ska kunna hantera en sådan frågebelastning, men samtidigt kunna uppvisa rimliga prestanda.
 
-### <a name="limited-to-a-single-source"></a>Begränsad till en enda källa
-När du importerar data är det möjligt att kombinera data från flera källor till en enskild modell, som när du t.ex. enkelt vill kunna ansluta till vissa data från en SQL Server-företagsdatabas med vissa lokala data i en Excel-fil. Detta är inte möjligt när du använder DirectQuery. När du väljer DirectQuery för en källa kan du sedan bara använda data från den enskilda källan (t.ex. en SQL Server-databas).
+### <a name="security-implications-when-combining-data-sources"></a>Säkerhetsaspekter när du kombinerar datakällor
+Det är möjligt att använda flera datakällor i en DirectQuery-modell, precis som när du importerar data, med hjälp av funktionen [Sammansatta modeller](desktop-composite-models.md). När du gör detta är det viktigt att förstå hur data flyttas fram och tillbaka mellan de underliggande datakällorna samt de [säkerhetsrisker](desktop-composite-models.md#security-implications) som det medför.
 
 ### <a name="limited-data-transformations"></a>Begränsade datatransformationer
 Det finns på samma sätt, begränsningar när det gäller vilka datatransformationer som kan användas i **Frågeredigeraren**. Med importerade data kan du enkelt använda en avancerad uppsättning transformationer för att rensa och transformera data innan du använder dem för att skapa visuella objekt (till exempel parsa JSON-dokument eller pivotera data från en kolumn till ett radorienterat formulär). Dessa transformationer är mer begränsade i DirectQuery. När du först ansluter till en OLAP-källa som SAP Business Warehouse går det inte att definiera några transformationer överhuvudtaget, och hela den externa modellen hämtas från källan. Det är fortfarande möjligt att definiera en uppsättning transformationer per fråga för relationskällor som SQL Server, men dessa transformationer är begränsade av prestandaskäl. Sådana transformationer måste tillämpas på varje fråga till den underliggande källan, snarare än en gång vid datauppdatering, så de är begränsad till de transformationer som rimligen kan översättas till ett enda intern fråga. Om du använder en transformation som är för komplex, får du ett fel som måste tas bort eller så växlar modellen till importläge.
@@ -139,7 +139,6 @@ När du använder **DirectQuery** kan många av dessa modellberikningar fortfara
 * **Ingen inbyggd datumhierarki:** När du importerar data får varje datum/datetime-kolumn som standard en tillgänglig inbyggd datumhierarki. Om du t.ex. importerar en tabell med försäljningsorder, som innehåller kolumnen OrderDate, och sedan använder OrderDate i ett visuellt objekt, så kan du välja lämplig nivå (år, månad, dag) att använda. Denna inbyggda datumhierarki är inte tillgänglig när du använder DirectQuery-läge. Observera dock att om det finns en tillgänglig datumtabell i den underliggande källan (som är vanligt i många datalager), så kan sedan DAX-tidsinformationsfunktionerna användas som vanligt.
 * **Begränsningar i beräknade kolumner:** Beräknade kolumner är begränsade till att bara kunna hänvisa till värden på andra kolumner i samma tabell, utan att några aggregeringsfunktioner används. De tillåtna DAX-skalärfunktionerna (som t.ex. LEFT()) begränsas dessutom till dem som bara kan skickas till den underliggande källan, och varierar därför beroende på källans exakta funktioner. Funktioner som inte stöds listas inte vid automatisk komplettering när du redigerar DAX för en beräknad kolumn, och de skulle resultera i ett fel om de användes.
 * **Inget stöd för överordnade-underordnade DAX-funktioner:** I DirectQuery-modellen går det inte att använda de DAX-PATH()-funktioner, som normalt hanterar strukturer med överordnad-undererordnad (som i t.ex. kontoplaner eller organisationshierarkier).
-* **Begränsningar för mått:** DAX-funktioner och -uttryck som kan användas i mått är begränsade. Återigen så begränsar automatisk komplettering de funktioner som listas, och ett fel inträffar om en ogiltig funktion eller uttryck används. Skälet är helt enkelt att säkerställa att åtgärderna begränsas till enkla åtgärder som på egen hand sannolikt inte kan orsaka några prestandaproblem.
 * **Beräknade tabeller stöds inte:** Möjligheten att definiera en beräknad tabell med hjälp av ett DAX-uttryck stöds inte i DirectQuery-läge.
 * **Relationsfiltrering är begränsad till en riktning:** När du använder DirectQuery gå det inte att ställa in korsfiltreringsriktningen för en relation till Båda. Med de tre tabellerna nedan skull det inte vara möjligt att skapa ett visuellt objekt som visar varje kund [kön] och det antal av en produkt [kategori] som var och en har köpt. Användning av sådan dubbelriktad filtrering beskrivs [i detta detaljerade white paper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (här presenteras exempel i SQL Server Analysis Services-kontext, men de grundläggande punkterna gäller lika mycket för Power BI).
   
@@ -304,11 +303,11 @@ När en rapport publiceras beror det maximala antalet samtidiga frågor som skic
 ### <a name="diagnosing-performance-issues"></a>Diagnostisera prestandaproblem
 I det här avsnittet beskrivs hur du diagnostiserar prestandaproblem eller hämtar mer detaljerad information så att du kan optimera rapporterna.
 
-Vi rekommenderar starkt att du låter all diagnostisering av prestandaproblem utgå från **Power BI Desktop** istället för **Power BI-tjänsten**. Prestandaproblem baseras ofta på den underliggande källans prestandanivå, och denna kan enkelt identifieras och diagnostiseras i den mycket mer isolerade miljön i **Power BI Desktop**, varvid vissa komponenter (t.ex. Power BI Gateway) elimineras initialt. Endast om några prestandaproblem inte hittas i Power BI Desktop bör undersökningen fokuseras på det specifika i rapporten i Power BI-tjänsten.
+Vi rekommenderar starkt att du låter all diagnostisering av prestandaproblem utgå från **Power BI Desktop** istället för **Power BI-tjänsten**. Prestandaproblem baseras ofta på den underliggande källans prestandanivå, och denna kan enkelt identifieras och diagnostiseras i den mycket mer isolerade miljön i **Power BI Desktop**, varvid vissa komponenter (t.ex. Power BI Gateway) elimineras initialt. Endast om några prestandaproblem inte hittas i Power BI Desktop bör undersökningen fokuseras på det specifika i rapporten i Power BI-tjänsten. [Prestandaanalyseraren](desktop-performance-analyzer.md) är ett användbart verktyg för att identifiera problem under den här processen.
 
 På motsvarande sätt rekommenderar vi att du först försöker isolera problemen till ett enskilt visuellt objekt, istället för till flera visuella objekt på samma sida.
 
-Så låt oss säga att du har vidtagit dessa åtgärder (som beskrivs i ovanstående stycken i det här avsnittet) – då har vi nu ett enda visuellt objekt på en sida i **Power BI Desktop** som är fortfarande långsamt. Om du vill fastställa vilka frågor som skickas till den underliggande källan av Power BI Desktop kan du visa spår/diagnostikinformation som kan ha orsakats av källan. Sådana spår kan också innehålla användbar information om hur frågan har körts, och hur den kan förbättras.
+Låt oss säga att du har vidtagit dessa åtgärder (som beskrivs i ovanstående stycken i det här avsnittet) – då har vi nu ett enda visuellt objekt på en sida i **Power BI Desktop** som är fortfarande långsamt. Du kan ta reda på vilka frågor som skickas till den underliggande källan av Power BI Desktop med hjälp av [prestandaanalyseraren](desktop-performance-analyzer.md). Det är även möjligt att visa spårnings-/diagnostikinformation som kan genereras av den underliggande datakällan. Sådana spår kan också innehålla användbar information om hur frågan har körts, och hur den kan förbättras.
 
 Även i frånvaron av sådana spår från källan kan du visa de frågor som skickats av Power BI, tillsammans med deras körningstider, så som beskrivs nedan.
 

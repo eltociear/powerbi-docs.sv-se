@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7d9bdf0982ea7ad4f57225e5a1eaf8c9da90b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e687c72ae058f56ca4f528783c5e2326d82db6bb
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61140970"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523134"
 ---
 # <a name="dashboard-data-classification"></a>Klassificering av instrumentpanelsdata
 Varje instrumentpanel är olika och beroende på vilka data du är ansluten till kommer du att finna att du och de kollegor du delar data med måste vidta olika säkerhetsåtgärder beroende på hur känsliga dina data är. Vissa instrumentpaneler bör aldrig delas utanför företaget eller skrivas ut, medan andra kan delas fritt. Med hjälp av klassificering av instrumentpanelen kan du öka medvetenheten hos de som använder dina instrumentpaneler om vilken säkerhetsnivå som ska användas. Du kan tagga dina instrumentpaneler med klassificeringar som har definierats av ditt företags IT-avdelning så att alla som ser innehållet har samma förståelse för datans känslighet.
@@ -45,7 +45,7 @@ Administratörer kan också ange en URL till en tagg som innehåller ytterligare
 ## <a name="setting-a-dashboards-classification"></a>Ange en instrumentpanels klassificering
 Om dataklassificeringen är aktiverad för ditt företag börjar alla instrumentpaneler med en standardklassificering, men du kan ändra klassificeringen för att matcha dina instrumentpanelers säkerhetsnivå som instrumentpanelens ägare.
 
-Gör följande om du vill ändra typen av klassificering.
+Gör följande om du vill ändra typen av klassificering:
 
 1. Gå till inställningar för instrumentpanelen genom att välja de **tre punkterna** bredvid instrumentpanelens namn och därefter **Inställningar**.
    
@@ -58,7 +58,7 @@ Gör följande om du vill ändra typen av klassificering.
 När du har tillämpat ändringen kan alla som du har delat med se uppdateringen nästa gång de hämtar instrumentpanelen.
 
 ## <a name="working-with-data-classification-tags-as-an-admin"></a>Arbeta med dataklassificeringstaggar som administratör
-Dataklassificering har ställts in av den globala administratören för din organisation. Gör följande om du vill aktivera dataklassificering.
+Dataklassificering har ställts in av den globala administratören för din organisation. Gör följande om du vill aktivera dataklassificering:
 
 1. Välj kugghjulet för Inställningar och välj **Administrationsportal**.
    
@@ -79,7 +79,7 @@ När du har fyllt i formuläret med klassificeringtyper väljer du **Tillämpa**
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-Nu kommer alla instrumentpaneler att tilldelas standardklassificeringen. Instrumentpanelägarna kan uppdatera klassificeringstypen till den som passar deras innehåll. Du kan komma tillbaka hit i framtiden för att lägga till och ta bort klassificeringstyper eller ändra standarden.  
+I det här läget tilldelas alla instrumentpaneler standardklassificeringen. Instrumentpanelens ägare kan nu uppdatera klassificeringstypen till den som passar innehållet. Du kan komma tillbaka hit i framtiden för att lägga till och ta bort klassificeringstyper eller ändra standarden.  
 
 > [!NOTE]
 > Det finns några viktiga saker att komma ihåg när du kommer tillbaka för att göra ändringar:

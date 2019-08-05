@@ -12,16 +12,16 @@ ms.topic: quickstart
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 86c8297c9a55f2b59e7c01390ff15bb3b2d4bf2e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: af7f2f0ca5407694b13f0b053ff347f883c8c983
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61049396"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523053"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Snabbstart – Hitta rätt i Power BI-tjänsten
 
-Nu när du har grunderna i Power BI ska vi se oss omkring i **Power BI-tjänsten**. Som vi tidigare nämnt kanske någon i ditt team mer eller mindre uteslutande arbetar med att kombinera data och skapa rapporter för andra i **Power BI Desktop**. Du å andra sidan arbetar kanske i princip bara i Power BI-tjänsten, där du visar och interagerar med innehåll som skapats av andra (**användningsupplevelsen**). I den här snabbstarten ska du importera exempeldata och använda dem för att hitta rätt i Power BI-tjänsten. 
+Nu när du har grunderna i Power BI ska vi se oss omkring i **Power BI-tjänsten**. Som vi tidigare nämnt arbetar kanske någon i ditt team mer eller mindre uteslutande med att kombinera data och skapa rapporter för andra i **Power BI Desktop**. Du å andra sidan arbetar kanske i princip bara i Power BI-tjänsten, där du visar och interagerar med innehåll som skapats av andra (**användningsupplevelsen**). I den här snabbstarten ska du importera exempeldata och använda dem för att hitta rätt i Power BI-tjänsten. 
  
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -61,7 +61,7 @@ Om du är en ny användare ser du bara en arbetsyta – **Min arbetsyta**.
 
 ![kort video om en arbetsyta](./media/end-user-experience/nav.gif)
 
-På dessa flikar (även kallade *innehållsvyer*) visas information om innehållet samt åtgärder som du kan utföra med innehållet.  Från fliken Instrumentpaneler kan du till exempel öppna en instrumentpanel, söka, sortera och mycket mer.
+På dessa flikar (som även kallas *innehållsvyer*) visas information om innehållet samt åtgärder som du kan utföra med innehållet.  Från fliken Instrumentpaneler kan du till exempel öppna en instrumentpanel, söka, sortera och mycket mer.
 
 ![Fliken Instrumentpaneler](./media/end-user-experience/power-bi-dashboard-tab.png)
 

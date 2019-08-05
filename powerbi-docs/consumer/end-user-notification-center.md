@@ -12,17 +12,17 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 34bb77c84d1813e32421b87e957e24a946f282f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 68e0a7985997a4512fe26812547f12f1b9be648f
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61066272"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522727"
 ---
 # <a name="view-power-bi-notifications"></a>Visa Power BI-meddelanden
 Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, ändringar i din grupparbetsyta, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](../service-set-data-alerts.md) samt i Power BI-mobilappar.
 
-Titta när Amanda granskar meddelanden hon tagit emot, hanterar sina aviseringar och svarar på dem. Följ sedan instruktionerna under videon för att prova själv.
+Titta när Amanda granskar, hanterar och svarar på meddelanden. Följ sedan instruktionerna under videon för att prova själv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bZMSv5KAlcE" frameborder="0" allowfullscreen></iframe>
 

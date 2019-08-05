@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 75fa566b4b60e9f15e1641a49ea3c5ffa95420a9
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: bc6b35b6401f4424a3a5120cb7c28437da9a2a48
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791919"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462253"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur
 
@@ -23,7 +23,7 @@ Innehållspaketet Exempel på IT-utgiftsanalys innehåller en instrumentpanel, e
 
 ![Instrumentpanel för Exempel på IT-utgiftsanalys](media/sample-it-spend/it1.png)
 
-Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det skapades av [obviEnce](http://www.obvience.com/) med verkliga data, som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
 
 De här självstudierna använder Power BI-tjänsten och utforskar innehållspaketet med IT-utgiftsanalysexemplet. Eftersom rapportupplevelserna är så lika i Power BI Desktop och tjänsten kan du även följa med via .pbix-exempelfilen i Power BI Desktop. 
 

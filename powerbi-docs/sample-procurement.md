@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 17a4a3770cb2c3e2adff2bcce64c3e101688e002
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: 9e27d09414167f9625e046204c14a5fb57112cd9
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791870"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462285"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på anskaffningsanalys för Power BI: Ta en rundtur
 
@@ -27,7 +27,7 @@ Exempelinnehållspaketet anskaffningsanalys innehåller en instrumentpanel, rapp
 
 ![Instrumentpanel för exemplet anskaffningsanalys](media/sample-procurement/procurement1.png)
 
-Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det har skapats med verkliga data från [obviEnce](http://www.obvience.com/), som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
+Det här exemplet ingår i en serie som visar hur du kan använda Power BI med verksamhetsorienterade data, rapporter och instrumentpaneler. Det skapades av [obviEnce](http://www.obvience.com/) med verkliga data, som har anonymiserats. Dessa data är tillgängliga i flera format: innehållsförpackning, .pbix-fil för Power BI Desktop eller Excel-arbetsbok. Se [Exempel för Power BI](sample-datasets.md). 
 
 De här självstudierna använder Power BI-tjänsten och utforskar innehållspaketet med anskaffningsanalysexemplet. Eftersom rapportupplevelserna är så lika i Power BI Desktop och tjänsten kan du även följa med via .pbix-exempelfilen i Power BI Desktop. 
 

@@ -1,6 +1,6 @@
 ---
 title: Uttrycksbaserade rubriker i Power BI Desktop
-description: Skapa dynamiska rubriker i Power BI Desktop som ändras baserat på programmässiga uttryck med villkorsstyrd formatering programmässig
+description: Skapa dynamiska rubriker i Power BI Desktop som ändras baserat på programmatiska uttryck med hjälp av villkorsstyrd programmatisk formatering
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,32 +10,32 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769740"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522184"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Uttrycksbaserade rubriker i Power BI Desktop
 
-Du kan skapa dynamiska, anpassade rubriker för Power BI-visualiseringar. Genom att skapa Dataanalysuttryck (DAX) baserat på fält, variabler eller andra programmässiga element kan kan dina visualiseringar rubriker automatiskt justera efter behov. Dessa ändringar är baserade på filter, val, eller andra användarinteraktioner och konfigurationer.
+Du kan skapa dynamiska, anpassade rubriker för visuella Power BI-objekt. När du skapar dataanalysuttryck (DAX, Data Analysis Expressions) baserat på fält, variabler eller andra programmatiska element kan rubrikerna för dina visuella objekt justeras automatiskt efter behov. Dessa ändringar baseras på filter, val eller andra användarinteraktioner och konfigurationer.
 
-![Skärmbild av Power BI Desktop villkorlig formateringsalternativ](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
+![Skärmbild av alternativet för villkorsstyrd formatering i Power BI Desktop](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
 
-Skapa dynamiska titlar, kallas ibland *uttrycksbaserade rubriker*, det är enkelt. 
+Det är enkelt att skapa dynamiska rubriker, som ibland kallas *uttrycksbaserade rubriker*. 
 
-## <a name="create-a-field-for-your-title"></a>Skapa ett fält för din rubrik
+## <a name="create-a-field-for-your-title"></a>Skapa ett fält för rubriken
 
-Det första steget i att skapa en uttrycksbaserade rubrik är att skapa ett fält i din modell ska använda för rubriken. 
+Det första steget i att skapa en uttrycksbaserad rubrik är att skapa ett fält i den modell som ska användas för rubriken. 
 
-Det finns olika typer av kreativa sätt att ha din visuell rubrik återspegla vad du vill att säga eller vad du vill express. Låt oss ta en titt på några exempel.
+Det finns många kreativa sätt att få det visuella objektets rubrik att uttrycka det du vill förmedla. Vi tar en titt på några exempel.
 
-Du kan skapa ett uttryck som ändras, baserat på filterkontext som det visuella objektet som tar emot för Produktnamn varumärke. Följande bild visar DAX-formeln för ett sådant fält.
+Du kan skapa ett uttryck som ändras baserat på den filterkontext som det visuella objektet tar emot för produktens varumärkesnamn. Följande bild visar DAX-formeln för ett sådant fält.
 
-![Skärmbild av DAX-formel](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
+![Skärmbild av DAX-formeln](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
-Ett annat exempel är att använda en dynamisk rubrik som ändras, baserat på användarens språk eller kultur. Du kan skapa språkspecifika rubriker i en DAX-mått med hjälp av den `USERCULTURE()` funktion. Den här funktionen returnerar kultur-koden för den användare, baserat på deras operativsystem eller webbläsarinställningar. Du kan använda följande DAX switch-satsen för att välja rätt översatta värde. 
+Ett annat exempel är att använda en dynamisk rubrik som ändras baserat på användarens språk eller kultur. Du kan skapa språkspecifika rubriker i ett DAX-mått med hjälp av funktionen `USERCULTURE()`. Den här funktionen returnerar kulturkoden för användaren baserat på användarens inställningar för operativsystem eller webbläsare. Du kan använda följande DAX-switch-instruktion för att välja rätt översatt värde. 
 
 ```
 SWITCH (
@@ -46,33 +46,35 @@ SWITCH (
 )
 ```
 
-Eller du kan hämta strängen från en uppslagstabell som innehåller alla översättningar. Du kan placera tabellen i din modell. 
+Eller så kan du hämta strängen från en uppslagstabell som innehåller alla översättningar. Du placerar den tabellen i din modell. 
 
-Det här är några exempel som du kan använda för att skapa dynamiska, uttrycksbaserat rubrikerna för dina visuella objekt i Power BI Desktop. Vad du kan göra med dina rubriker begränsas bara av din fantasi och din modell.
+Dessa är bara några exempel som du kan använda för att skapa dynamiska, uttrycksbaserade rubriker för dina visuella objekt i Power BI Desktop. Det du kan göra med rubriker begränsas bara av fantasin och din modell.
 
 
-## <a name="select-your-field-for-your-title"></a>Välj ditt på texten
+## <a name="select-your-field-for-your-title"></a>Välja fält för rubriken
 
-När du har skapat DAX-uttrycket för fältet som du skapar i din modell, måste du tillämpa den på din visuella objektets rubrik.
+När du har skapat DAX-uttrycket för det fält som du skapar i modellen behöver du tillämpa det på det visuella objektets rubrik.
 
-Markera fältet och tillämpa den, går du till den **visualiseringar** fönstret. I den **Format** Välj **rubrik** att visa rubrikalternativ för det visuella objektet. 
+För att markera fältet och tillämpa det går du till fönstret **Visualiseringar**. I området **Format** väljer du **Rubrik** för att visa rubrikalternativen för det visuella objektet. 
 
-När du högerklickar på **rubriktext**, visas en snabbmeny som gör det möjligt att välja ***fx* villkorsstyrd formatering**. När du väljer menyalternativet, en **rubriktext** dialogrutan visas. 
+När du högerklickar på **Rubriktext** visas en snabbmeny där du kan välja ***fx*Villkorsstyrd formatering**. När du väljer det menyalternativet visas dialogrutan **Rubriktext**. 
 
-![Skärmbild av titeln text i dialogrutan](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
+![Skärmbild av dialogrutan Rubriktext](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
-Du kan välja det fält som du skapade för att använda för din rubrik från det aktuella fönstret.
+I det fönstret kan du välja det fält som du skapade för att använda för rubriken.
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 
-Det finns några begränsningar för den aktuella implementationen av uttrycksbaserade rubriker för visuella objekt:
+Det finns några begränsningar för den aktuella implementeringen av uttrycksbaserade rubriker för visuella objekt:
 
-* Uttrycksbaserade formatering stöds för närvarande inte på Python visuella objekt, visuella R-objekt eller Nyckelpåverkare-visualiseringen.
-* Fältet som du skapar för rubriken måste vara av datatypen string. Mått som returnerar tal eller datum/tid (eller någon annan datatyp) stöds inte för närvarande.
+* För närvarande stöds inte uttrycksbaserad formatering i visuella Python-objekt, visuella R-objekt eller det visuella objektet Viktiga influerare.
+* Det fält som du skapar för rubriken måste vara av datatypen sträng. Mått som returnerar tal eller datum/tid (eller någon annan datatyp) stöds inte för närvarande.
+* Uttrycksbaserade rubriker följer inte med när du fäster ett visuellt objekt på en instrumentpanel.
 
 ## <a name="next-steps"></a>Nästa steg
 
-Den här artikeln beskrivs hur du skapar DAX-uttryck som aktiverar titlarna på dina visuella objekt i dynamiska fält som kan ändras när användare interagerar med dina rapporter. Du kan vara användbara i följande artiklar samt.
+Den här artikeln beskrev hur du skapar DAX-uttryck som omvandlar rubrikerna för dina visuella objekt till dynamiska fält som kan ändras när användarna interagerar med dina rapporter. Följande artiklar kan också vara användbara.
 
-* [Använd detaljinformation för cross-rapport i Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Villkorsstyrd formatering i tabeller](desktop-conditional-table-formatting.md)
+* [Använd visning av detaljerad information mellan rapporter i Power BI Desktop](desktop-cross-report-drill-through.md)
 * [Använd detaljinformation i Power BI Desktop](desktop-drillthrough.md)

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d001c75d006838f46ce40a8f81bad0a9a058b148
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299447"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523337"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 
@@ -150,9 +150,9 @@ Dessa begränsningar och överväganden gäller för Power BI Desktop och Power 
 
 - Om du vill exportera data från ett visuellt objekt, måste du ha [Skapa-behörighet för den underliggande datamängden](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
--  Det maximala antal rader som **Power BI Desktop** och **Power BI-tjänsten** kan exportera till *.csv-fil* är 30 000.
+-  Det maximala antal rader som **Power BI Desktop** och **Power BI-tjänsten** kan exportera från en **rapport i importläge** till en *.csv-fil* är 30 000.
 
-- Det maximala antalet rader som programmen kan exportera till en *.xlsx-fil* är 150 000.
+- Det maximala antal rader som programmen kan exportera från en **rapport i importläge** till en *.xlsx-fil* är 150 000.
 
 - Exportera med hjälp av *Underliggande data* fungerar inte om:
 
@@ -166,7 +166,7 @@ Dessa begränsningar och överväganden gäller för Power BI Desktop och Power 
 
 - Export med *Underliggande data* fungerar inte om alternativet *Visa objekt utan data* är aktiverat för den visualisering som Power BI exporterar.
 
-- När du använder DirectQuery är den maximala mängden data som Power BI kan exportera 16 MB. Ett oönskat resultat kan vara att du exporterar mindre än det maximala antalet rader. Det är troligt om
+- När du använder DirectQuery är den maximala mängd data som Power BI kan exportera 16 MB okomprimerade data. Ett oönskat resultat kan vara att du exporterar mindre än det maximala antalet rader. Det är troligt om
 
     - det finns många kolumner
 
