@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6dc530305634b44415ddccb9c42952c0bfbe2e5f
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: b6cd8df15080e10b1da73e6f4da41c5354dd867a
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271927"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624017"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda resursbaserad Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -141,7 +141,7 @@ Den här konfigurationen fungerar i de flesta fall. Med Kerberos kan det dock f�
 
 Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
 
-* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem.md)
+* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)

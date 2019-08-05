@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2e0fc8ae6a6d2b01121ffb1c52c29652af21f21e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 1d07c678b02f77689d24d067ca58a4e28ac70cb0
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67533031"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623906"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
 Skapa en **Formkarta** för att jämföra regioner på en karta med hjälp av färg. Till skillnad från **Karta** kan **Formkarta** inte visa exakta geografiska platser för datapunkter på en karta. Istället är dess huvudsakliga syfte att visa relativa jämförelser mellan regioner med hjälp av olika färger.
@@ -323,11 +323,11 @@ Använd följande **Regionsnycklar** i den här förhandsversionen för att prov
 | mx-gro |Gro. |MX-GRO |Guerrero |Guerrero |GR |
 | mx-gua |Gto. |MX-GUA |Guanajuato |Guanajuato |GT |
 | mx-dur |Dgo. |MX-DUR |Durango |Durango |DU |
-| mx-dif |Col. |MX-DIF |Ciudad de México |Mexico City |DF |
-| mx-col |Coah. |MX-COL |Colima |Colima |CL |
-| mx-coa |Chis. |MX-COA |Coahuila |Coahuila |CA |
+| mx-dif |CDMX. |MX-DIF |Ciudad de México |Mexico City |DF |
+| mx-col |Col. |MX-COL |Colima |Colima |CL |
+| mx-coa |Coah. |MX-COA |Coahuila |Coahuila |CA |
 | mx-chh |Chih. |MX-CHH |Chihuahua |Chihuahua |CH |
-| mx-chp |CDMX. |MX-CHP |Chiapas |Chiapas |CP |
+| mx-chp |Chis. |MX-CHP |Chiapas |Chiapas |CP |
 | mx-cam |Camp. |MX-CAM |Campeche |Campeche |CM |
 | mx-bcs |B.C.S. |MX-BCS |Baja California Sur |Baja California Sur |BS |
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |

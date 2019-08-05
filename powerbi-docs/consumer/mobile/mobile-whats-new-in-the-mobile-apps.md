@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230215"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665441"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -649,8 +649,6 @@ Läs [blogginlägget om Power BI Mobile-appar för mars 2016](https://powerbi.mi
 Visa instrumentpaneler i [liggande läge på Android-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Power BI-appen för Windows 10-enheter
-Visa instrumentpaneler i [liggande läge på Windows 10-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device).
-
 Visa [rapporter på din Windows 10-telefon](mobile-reports-in-the-mobile-apps.md).
 
 Kortare tid till [insikter om dina mobila Windows 10-instrumentpaneler](mobile-tiles-in-the-mobile-apps.md): Dela en ögonblicksbild av en panel eller öppna en rapport direkt från instrumentpanelen.
