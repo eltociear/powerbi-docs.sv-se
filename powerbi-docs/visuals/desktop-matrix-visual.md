@@ -83,7 +83,7 @@ Förutom ikonerna kan du välja någon av radrubrikerna och öka detaljnivån ge
 
 Observera att det finns flera alternativ på menyn som visas, vilket genererar olika resultat:
 
-Genom att välja **Granska nedåt** expanderas matrisen för ** radnivån, *exklusive* alla andra radrubriker med undantag för den radrubrik som valdes. I följande bild har **Förslag** > **Granska nedåt** valts. Observera att andra topprader inte längre visas i matrisen. Detta är en mycket användbar funktion och som är särskilt fiffig när det är dags att **korsmarkera** avsnitt.
+Genom att välja **Granska nedåt** expanderas matrisen för *radnivån*, *exklusive* alla andra radrubriker med undantag för den radrubrik som valdes. I följande bild har **Förslag** > **Granska nedåt** valts. Observera att andra topprader inte längre visas i matrisen. Detta är en mycket användbar funktion och som är särskilt fiffig när det är dags att **korsmarkera** avsnitt.
 
 ![matrisen vars detaljnivå har ökats med en nivå](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
