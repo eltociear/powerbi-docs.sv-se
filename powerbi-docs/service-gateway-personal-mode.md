@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 93d2c4358b0f4b4090a2c8bea3daa8eec71c4982
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270883"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729948"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Använda personliga gatewayer i Power BI
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Lokal datagateway (personligt läge) är en version av den lokala datagatewayen som endast fungerar med Power BI. En personlig gateway gör det möjligt för enskilda användare att installera en gateway på sin egen dator och få tillgång till lokala data.
+Lokal datagateway (personligt läge) är en version av den lokala datagatewayen som endast fungerar med Power BI. Du kan använda en personlig gateway om du vill installera en gateway på din egen dator och få tillgång till lokala data.
 
 > [!NOTE]
-> Du kan bara ha en gateway i personligt läge som körs för varje Power BI-användare. Om du installerar en annan gateway i personligt läge för samma användare, även om det är på en annan dator, ersätter den senaste installationen den befintliga tidigare installationen.
+> Du kan bara köra en gateway i personligt läge för varje Power BI-användare. Om du installerar en annan gateway i personligt läge för samma användare, även om det är på en annan dator, ersätter den senaste installationen den befintliga tidigare installationen.
 
 ## <a name="on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode"></a>Lokal datagateway kontra lokal datagateway (personligt läge)
 
@@ -32,7 +32,7 @@ I följande tabell beskrivs skillnaderna mellan en lokal datagateway och en loka
 
 |   |Lokal datagateway | Lokal datagateway (personligt läge) |
 | ---- | ---- | ---- |
-|Molntjänster som stöds |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services och Data Flows |Power BI |
+|Molntjänster som stöds |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services och dataflows |Power BI |
 |Körningar |Enligt konfiguration av användare som har åtkomst till gatewayen |Som dig för Windows-autentisering och enligt konfiguration av dig för andra autentiseringstyper |
 |Kan endast installeras som datoradministratör |Ja |Nej |
 |Centraliserad gateway och hantering av datakällor |Ja |Nej |
@@ -46,15 +46,15 @@ Så här installerar du lokal datagateway (personligt läge):
 
 1. [Ladda ned den lokala datagatewayen](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
 
-2. I installationsprogrammet väljer du lokal datagateway (personligt läge) och sedan knappen **Nästa**.
+2. I installationsprogrammet väljer du lokal datagateway (personligt läge) och sedan **Nästa**.
 
    ![Välja lokal datagateway (personligt läge)](media/service-gateway-personal-mode/personal-gateway-select.png)
 
-När installationen har slutförts och du har loggat in visas följande skärm.
+Gateway-filerna installeras i _"%localappdata%\Microsoft\Lokal datagateway (personligt läge)_ . När installationen har slutförts och du har loggat in visas följande skärm.
 
 ![Lokal datagateway (personligt läge) lyckades](media/service-gateway-personal-mode/personal-gateway-complete.png)
 
-## <a name="using-fast-combine-with-the-personal-gateway"></a>Använd kombinera snabbt med personlig gateway
+## <a name="use-fast-combine-with-the-personal-gateway"></a>Använda Kombinera snabbt med personlig gateway
 
 Kombinera snabbt på en personlig gateway gör att du kan ignorera angivna sekretessnivåer medan du kör frågor. Så här gör du att Kombinera snabbt fungerar med lokal datagateway (personligt läge):
 
@@ -70,31 +70,31 @@ Kombinera snabbt på en personlig gateway gör att du kan ignorera angivna sekre
     </setting>
     ```
 
-3. När borttagningen är klar börjar inställningen gälla efter cirka en minut. För att kontrollera att den fungerar kan du försöka att uppdatera på plats i **Power BI-tjänsten** och bekräfta att **Kombinera snabbt** fungerar.
+3. När det är klart börjar inställningen gälla efter cirka en minut. För att kontrollera att den fungerar kan du försöka att uppdatera på plats i Power BI-tjänsten och bekräfta att Kombinera snabbt fungerar.
 
 ## <a name="frequently-asked-questions-faq"></a>Vanliga frågor och svar
 
-**Fråga:** Kan jag köra den **lokala datagatewayen (personligt läge)** sida vid sida med en **lokal datagateway** (kallades tidigare för företagsgatewayen)?
+**Fråga:** Kan jag köra den lokala datagatewayen (personligt läge) sida vid sida med en lokal datagateway (kallades tidigare för företagsgatewayen)?
   
-**Svar:** Ja, båda kan köras samtidigt.
+**Svar:** Ja, båda gatewayerna kan köras samtidigt.
 
-**Fråga:** Kan jag köra **lokal datagateway (personligt läge)** som tjänst?
+**Fråga:** Kan jag köra lokal datagateway (personligt läge) som en tjänst?
   
-**Svar:** Nej. **lokal datagateway (personligt läge)** kan endast köras som ett program. Om du behöver köra gatewayen som en tjänst och/eller i adminläge bör du överväga en [**lokal datagateway**](/data-integration/gateway/service-gateway-onprem) (kallades tidigare för företagsgatewayen).
+**Svar:** Nej. Lokal datagateway (personligt läge) kan endast köras som ett program. Om du behöver köra gatewayen som en tjänst eller i adminläge bör du överväga en [lokal datagateway](/data-integration/gateway/service-gateway-onprem) (kallades tidigare för en företagsgateway).
 
-**Fråga:** Hur ofta uppdateras **lokal datagateway (personligt läge)** ?
+**Fråga:** Hur ofta uppdateras lokal datagateway (personligt läge)?
   
 **Svar:** Vi planerar att uppdatera din personliga gateway varje månad.
 
 **Fråga:** Varför måste jag ange autentiseringsuppgifter?
   
-**Svar:** Många situationer kan utlösa en begäran om autentiseringsuppgifter. De vanligaste är att du har ominstallerat den **lokala datagatewayen (personligt läge)** på en annan dator än din **Power BI – personal**-gateway. Det kan också vara ett problem i datakällan och Power BI kunde inte utföra en test-anslutning eller också uppstod ett avbrott eller systemfel. Du kan uppdatera dina autentiseringsuppgifter i **Power BI-tjänsten** genom att gå till **kugghjulsikonen** och välja **Inställningar** och sedan **Datamängder**. Leta upp datamängden i fråga och välj **Autentiseringsuppgifter för datakälla**.
+**Svar:** Många situationer kan utlösa en begäran om autentiseringsuppgifter. Det vanligaste är att du har ominstallerat den lokala datagatewayen (personligt läge) på en annan dator än din Power BI Gateway – Personal. Det kan också vara ett problem i datakällan och Power BI kunde inte utföra en test-anslutning eller också uppstod ett avbrott eller systemfel. Om du vill uppdatera dina autentiseringsuppgifter i Power BI-tjänsten väljer du kugghjulsikonen och **Inställningar** > **Datauppsättningar**. Leta reda på datauppsättningen och välj **Datakällans autentiseringsuppgifter**.
 
 **Fråga:** Hur länge kommer min tidigare personliga gateway vara offline under uppgraderingen?
   
-**Svar:** Det tar högst ett par minuter att uppgradera den personliga gatewayen till den nya versionen.
+**Svar:** Det tar bara ett par minuter att uppgradera den personliga gatewayen till den nya versionen.
 
-**Fråga:** Jag använder R- och Python-skript. Stöds detta?
+**Fråga:** Jag använder R- och Python-skript. Stöds de?
   
 **Svar:** R- och Python-skript stöds för personligt läge.
 
@@ -102,5 +102,4 @@ Kombinera snabbt på en personlig gateway gör att du kan ignorera angivna sekre
 
 * [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-
+Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).

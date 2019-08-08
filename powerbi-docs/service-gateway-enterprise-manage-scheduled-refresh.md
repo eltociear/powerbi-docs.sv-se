@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2a3cdc3e6c4fc4f18613994a919f8ab733df5e14
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 3e223fba25386e91354130083f8bacc653b26cee
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271662"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757660"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Hantera din datakälla – Import/schemalagd uppdatering
 
@@ -25,41 +25,41 @@ När du har [installerat den lokala datagatewayen](/data-integration/gateway/ser
 
 ## <a name="add-a-data-source"></a>Lägga till en datakälla
 
-Information om hur du lägger till en datakälla finns i [Lägga till en datakälla](service-gateway-data-sources.md#add-a-data-source).
+Mer information om hur du lägger till en datakälla finns i [Lägga till en datakälla](service-gateway-data-sources.md#add-a-data-source). Välj en typ av datakälla.
 
 Alla typer av datakällor som anges kan användas för schemalagd uppdatering med den lokala datagatewayen. Analysis Services, SQL Server och SAP HANA kan användas för schemalagd uppdatering eller DirectQuery-/live-anslutningar.
 
 ![Välja datakälla](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
 
-Du kan fylla i informationen för datakällan, inklusive källinformationen och de autentiseringsuppgifter som används för att få åtkomst till datakällan.
+Sedan fyller du i informationen för datakällan, inklusive källinformationen och de autentiseringsuppgifter som används för att få åtkomst till datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> Alla frågor till datakällan körs med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Fylla i inställningarna för datakälla](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
 
 En lista över typer av datakällor som kan användas med schemalagd uppdatering finns i [Lista över tillgängliga typer av datakällor](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-Välj **Lägg till** när du har fyllt i allt. Nu kan du använda den här datakällan för schemalagd uppdatering med dina lokala data. *Anslutningen lyckades* visas om anslutningen lyckades.
+När du har fyllt i allt väljer du **Lägg till**. Nu kan du använda den här datakällan för schemalagd uppdatering med dina lokala data. *Anslutningen lyckades* visas om anslutningen lyckades.
 
 ![Visa anslutningsstatus](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Avancerade inställningar
 
-Om du vill kan du konfigurera sekretessnivån för datakällan. Detta styr hur data kan kombineras. Det används endast vid schemalagd uppdatering. Mer information om sekretessnivåer för datakälla finns i [Sekretessnivåer (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+Om du vill kan du konfigurera sekretessnivån för datakällan. Den här inställningen styr hur data kan kombineras. Den används endast vid schemalagd uppdatering. Mer information om sekretessnivåer för datakälla finns i [Sekretessnivåer (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
 ![Ange sekretessnivån](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings9.png)
 
-## <a name="using-the-data-source-for-scheduled-refresh"></a>Använda datakällan med schemalagd uppdatering
+## <a name="use-the-data-source-for-scheduled-refresh"></a>Använda datakällan med schemalagd uppdatering
 
-När du har skapat datakällan blir den tillgänglig för användning med antingen DirectQuery-anslutningar eller genom schemalagd uppdatering.
+När du har skapat datakällan går den att använda med DirectQuery eller med schemalagd uppdatering.
 
 > [!NOTE]
 > Server- och databasnamnen måste överensstämma mellan Power BI Desktop och datakällan i den lokala datagatewayen.
 
-Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa måste stämma överens. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop måste du använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANS* i Power BI Desktop måste du använda samma i den datakälla som konfigureras för gatewayen.
+Länken mellan din datauppsättning och datakällan i gatewayen är baserad på servernamnet och databasnamnet. Dessa namn måste matcha. Om du exempelvis anger en IP-adress för servernamnet i Power BI Desktop måste du använda den IP-adressen för datakällan i gatewaykonfigurationen. Om du använder *SERVER\INSTANS* i Power BI Desktop, måste du använda den i den datakälla som konfigureras för gatewayen.
 
-Om du finns med på fliken **Användare** för den datakälla som konfigurerats i gatewayen, och om server- och databasnamnen matchar, visas gatewayen som ett alternativ för användning med schemalagd uppdatering.
+Om du finns med på fliken **Användare** för den datakälla som konfigurerats i gatewayen, och om servernamnet och databasnamnet matchar, visas gatewayen som ett alternativ för användning med schemalagd uppdatering.
 
 ![Visa användarna](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
@@ -75,4 +75,4 @@ OAuth är inte ett schema för autentiseringsmetoder som stöds med en lokal dat
 * [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).

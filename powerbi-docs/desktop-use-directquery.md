@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324800"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757620"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -62,10 +62,9 @@ Följande tre punkter ska beaktas när du använder **DirectQuery**:
   
   Belastningen på källdatabasen bör också övervägas, baserat på antalet Power BI-användare som kommer att använda den publicerade rapporten. Användning av *säkerhet på radnivå* (RLS) kan ha en betydande inverkan; en icke-RLS-instrumentpanel delas av flera användare resultat i en enskild fråga till databasen, men med RLS på en instrumentpanel innebär att en uppdatering av en panel kräver en fråga *per användare*, vilket ökar belastningen på källdatabasen avsevärt och potentiellt påverkar prestandan.
   
-  Power BI skapar så effektiva frågor som möjligt. Under vissa omständigheter kan frågan som skapas vara otillräckligt effektiv för att garantera ett uppdateringar lyckas. Ett exempel på den här situationen är när en genererad fråga returnerar ett mycket stort antal rader (fler än 1 miljon) från serverdelskällan, i vilket fall följande fel inträffar:
+  Power BI skapar så effektiva frågor som möjligt. Under vissa omständigheter kan frågan som skapas vara otillräckligt effektiv för att garantera ett uppdateringar lyckas. Ett exempel på detta är när en genererad fråga returnerar ett mycket stort antal rader från serverdelskällan, i vilket fall följande fel inträffar:
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   Den här situationen kan uppstå med ett enkelt diagram som innehåller en mycket hög kardinalitet-kolumn med aggregeringsalternativet inställt på *Sammanfatta inte*. Visuella objekt behöver endast ha kolumner med en kardinalitet under 1 miljon och behöver tillämpa lämpliga filter.
 * **Säkerhet** -alla användare som använder en publicerad rapport ansluter till serverdelskällan med de autentiseringsuppgifter som angetts efter publikationen till Power BI-tjänsten. Samma gäller för data som importeras: alla användare ser samma data, oavsett eventuella säkerhetsregler som definierats i serverdelskällan. Kunder som vill ha säkerhet per användare implementerat med DirectQuery-källor bör använda RLS. [Läs mer om RLS](service-admin-rls.md).

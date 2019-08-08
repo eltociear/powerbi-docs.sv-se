@@ -1,6 +1,6 @@
 ---
 title: Inbäddad analys för att bädda in Power BI-innehåll i ett program för din organisation
-description: Lär dig att integrera eller bädda in en rapport, instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt din organisation. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg.
+description: Lär dig att integrera eller bädda in en rapport (Power BI eller sidnumrerad), instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt din organisation. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.date: 07/29/2019
+ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61355516"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665538"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
-I **Power BI**, kan du bädda in rapporter och instrumentpaneler eller paneler i ett program med hjälp av användarägda data. **Användarägda data** gör att ditt program kan utöka Power BI-tjänsten så att den kan använda inbäddad analys. Den här självstudien visar hur du integrerar en rapport i ett program. Du kan använda Power BI .NET SDK med Power BI JavaScript API för att bädda in Power BI i ett program för din organisation.
+I **Power BI** kan du bädda in rapporter (Power BI eller sidnumrerade) och instrumentpaneler eller paneler i ett program med hjälp av användarägda data. **Användarägda data** gör att ditt program kan utöka Power BI-tjänsten så att den kan använda inbäddad analys. Den här självstudien visar hur du integrerar en rapport (Power BI eller sidnumrerad) i ett program. Du kan använda Power BI .NET SDK med Power BI JavaScript API för att bädda in Power BI i ett program för din organisation.
 
 ![Inbäddad Power BI-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 I den här självstudien går du igenom följande aktiviteter:
 > [!div class="checklist"]
 > * Registrera ett program i Azure.
-> * Bädda in en Power BI-rapport i ett program med Power BI-klienten.
+> * Bädda in en Power BI-rapport eller sidnumrerad rapport i ett program med Power BI-klienten.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -35,6 +35,7 @@ Du måste ha följande för att komma igång:
 * Ett [Power BI Pro-konto](../service-self-service-signup-for-power-bi.md).
 * En [Microsoft Azure](https://azure.microsoft.com/)-prenumeration.
 * Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
+* För inbäddning av sidnumrerade rapporter behöver du minst A4/P1-kapacitet. Se [Hur stor Premium-kapacitet måste jag ha för sidnumrerade rapporter?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/pricing/) innan du börjar.
 
@@ -44,9 +45,9 @@ Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto]
 
 Innan du börjar bädda in rapporter, en instrumentpanel eller paneler i din app måste du se till att det går att bädda in Power BI i din miljö.
 
-Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport.
+Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport. Om du bäddar in sidnumrerad rapport måste du tilldela minst A4/P1-kapacitet till den apparbetsyta som du har skapat.
 
-Om du i stället vill konfigurera miljön manuellt, fortsätter du bara nedan.
+Om du väljer att konfigurera miljön manuellt kan du fortsätta nedan.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Registrera ett program i Azure Active Directory
 
@@ -60,7 +61,7 @@ Du behöver fortsätta med att registrera en **webbapp för serversidan**-app. D
 
 Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en apparbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md).
 
-### <a name="create-and-publish-your-reports"></a>Skapa och publicera rapporter
+### <a name="create-and-publish-your-power-bi-reports"></a>Skapa och publicera Power BI-rapporter
 
 Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. Därefter kan du publicera dessa rapporter till en apparbetsyta. Slutanvändaren som publicerar rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
 
@@ -79,7 +80,11 @@ Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. D�
     Nu kan du visa rapporten i Power BI-tjänsten online.
 
    ![Visa en Power BI Desktop-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
+   
+### <a name="create-and-publish-your-paginated-reports"></a>Skapa och publicera sidnumrerade rapporter
 
+Du kan skapa sidnumrerade rappoter med [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sedan kan du [överföra rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) till en apparbetsyta som tilldelats minst A4/P1-kapacitet. Slutanvändaren som överför rapporten måste ha minst en Power BI Pro-licens för att publicera till en apparbetsyta.
+   
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Bädda in innehåll med exempelprogrammet
 
 Det här exemplet hålls medvetet enkelt i demonstrationssyfte.
@@ -124,30 +129,6 @@ Så här hämtar du **applicationId**:
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
-### <a name="application-secret"></a>Apphemlighet
-
-Det här attributet behövs bara för AuthenticationType [tjänstens huvudnamn](embed-service-principal.md).
-
-Fyll i **ApplicationSecret**-uppgifterna från avsnittet **Nycklar** från avsnittet **Appregistreringar** i **Azure**.  Det här attributet fungerar när du använder [tjänstens huvudnamn](embed-service-principal.md).
-
-Hämta **ApplicationSecret** genom att utföra följande steg:
-
-1. Logga in på [Azure-portalen](https://portal.azure.com).
-
-2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och sedan **Appregistreringar**.
-
-3. Välj det program som behöver använda **ApplicationSecret**.
-
-    ![Välj en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. Välj **certifikat och hemligheter** under **hantera**.
-
-5. Välj **nya klienthemligheten**.
-
-6. Ange ett namn i rutan **Beskrivning** och välj en varaktighet. Välj sedan **Spara** för att hämta **värdet** för ditt program. När du stänger fönstret **Nycklar** efter att ha sparat nyckelvärdet visas värdefältet bara som dolt. I det här läget kan du inte att hämta nyckelvärdet. Om du tappar bort nyckelvärdet måste du skapa ett nytt på Microsoft Azure-portalen.
-
-    ![Nyckelvärde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
-
 ### <a name="workspace-id"></a>ID för arbetsyta
 
 Fyll i **workspaceId** med (grupp-)GUID för apparbetsytan från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
@@ -168,9 +149,17 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 Fyll i **reportId**-information med rapport-GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
 
-URL <br>
+URL för Power BI-rapport <br>
 
-![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+URL för sidnumrerad rapport <br>
+
+
+
+URL för sidnumrerad rapport<br>
+
+![reportId för sidnumrerad rapport](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 PowerShell <br>
 
@@ -186,7 +175,7 @@ Fyll i informationen **AADAuthorityUrl** URL:en som du antingen kan bädda in i 
 
 För att bädda in med din organisations klient använder du URL – *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-För att bädda in med en gäst använder du URL – *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
+För att bädda in med en gäst använder du URL – *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
 
 ### <a name="run-the-application"></a>Kör programmet
 
@@ -214,7 +203,7 @@ Du måste hämta en åtkomsttoken från Azure AD i ditt program innan du kan gö
 
 ### <a name="get-a-report"></a>Hämta en rapport
 
-Hämta en Power BI-rapport genom att använda åtgärden [Hämta rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) som hämtar en lista med Power BI-rapporter. Du kan hämta ett rapport-ID från listan med rapporter.
+Du hämtar en Power BI-rapport eller en sidnumrerad rapport med åtgärden [Hämta rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports), som hämtar en lista med Power BI-rapporter och sidnumrerade rapporter. Du kan hämta ett rapport-ID från listan med rapporter.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Hämta rapporter med hjälp av en åtkomsttoken
 
@@ -275,6 +264,7 @@ public class PBIReports
 public class PBIReport
 {
     public string id { get; set; }
+    public string reportType { get; set }
     public string name { get; set; }
     public string webUrl { get; set; }
     public string embedUrl { get; set; }
@@ -394,7 +384,7 @@ Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-premium-what-is.md).
+Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. För sidnumrerade rapporter måste din apparbetsyta ha minst A4/P1-kapacitet. Du kan skapa en dedikerad kapacitet med [Power BI Premium](../service-premium-what-is.md).
 
 Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -435,7 +425,7 @@ Globala eller Power BI-tjänstadministratörer kan aktivera eller inaktivera RES
 
 ## <a name="next-steps"></a>Nästa steg
 
-I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program med hjälp av ditt Power BI-organisationskonto. Du kan nu prova att bädda in Power BI-innehåll i ett program med hjälp av appar. Du kan även prova att bädda in Power BI-innehåll för dina kunder:
+I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program med hjälp av ditt Power BI-organisationskonto. Du kan nu prova att bädda in Power BI-innehåll i ett program med hjälp av appar. Du kan också prova att bädda in Power BI-innehåll för dina kunder (det finns för närvarande inte stöd för sidnumrerade rapporter):
 
 > [!div class="nextstepaction"]
 > [Bädda in från appar](embed-from-apps.md)

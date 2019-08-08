@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: af3ebd421a82448ce8a3f13661801ffc1d0051e0
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 3e3e51bf13a904e46552529d9131dbbb4665cb7d
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271499"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730242"
 ---
 # <a name="manage-your-data-source---oracle"></a>Hantera din datakälla – Oracle
 
@@ -73,7 +73,7 @@ När du har valt Oracle-datakälltypen fyller du i uppgifterna för datakällan,
 Du behöver även välja en **Autentiseringsmetod**.  Det kan antingen vara **Windows** eller **Grundläggande**.  Du bör välja **Grundläggande** om du tänker använda ett konto som har skapats i Oracle i stället för Windows-autentisering. Ange sedan de autentiseringsuppgifter som ska användas för datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Fylla i inställningarna för datakälla](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 

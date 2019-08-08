@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b61d794701d18fd25ab9acb5d5208ae289376eb6
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: a09388e8b22131c9b82771385b69142b18e3cc84
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271750"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730011"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Hantera din datakälla – SAP HANA
 
@@ -32,7 +32,7 @@ Information om hur du lägger till en datakälla finns i [Lägga till en datakä
 När du har valt SAP HANA-datakälltypen fyller du i uppgifterna om **Server**, **Användarnamn** och **Lösenord** för datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> Alla frågor till datakällan kommer att köras med dessa autentiseringsuppgifter. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Fylla i inställningarna för datakälla](media/service-gateway-enterprise-manage-sap/datasourcesettings3-sap.png)
 

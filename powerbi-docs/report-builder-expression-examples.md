@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: db0ea02237a2279c26f2c47cecd3bae794a5cba4
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840313"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624150"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Uttrycksexempel i Power BI Report Builder
 Uttryck används ofta i sidnumrerade rapporter i Power BI Paginated Report Builder för att kontrollera innehållets och rapportens utseende. Uttryck skrivs i Microsoft Visual Basic och kan använda inbyggda funktioner, anpassad kod, rapport- och gruppvariabler samt användardefinierade variabler. Uttryck inledas med ett likhetstecken (=).   
@@ -40,7 +40,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
 ##  <a name="VisualBasicFunctions"></a> Visual Basic-funktioner  
  Du kan använda Visual Basic-funktioner för att ändra data som visas i textrutor eller som används för parametrar, egenskaper eller andra delar av rapporten. Det här avsnittet innehåller exempel som visar några av dessa funktioner. Mer information finns i [Medlemmar i Visual Basic-körningsbiblioteket](https://go.microsoft.com/fwlink/?LinkId=198941) på MSDN.  
   
- .NET Framework innehåller många alternativ för anpassade format, till exempel för specifika datumformat. Mer information finns i [Formateringstyper](https://go.microsoft.com/fwlink/?LinkId=112024) på MSDN.  
+ .NET Framework innehåller många alternativ för anpassade format, till exempel för specifika datumformat. Mer information finns i [Formateringstyper](/dotnet/standard/base-types/formatting-types).  
   
 ### <a name="math-functions"></a>Matematikfunktioner  
   

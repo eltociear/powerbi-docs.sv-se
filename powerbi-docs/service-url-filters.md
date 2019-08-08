@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 07/25/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523321"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623887"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -53,9 +53,9 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 Fälttypen kan vara ett nummer, en datetime eller en sträng, och den typ som används måste matcha den angivna typen i datamängden.  Till exempel fungerar det inte att ange en tabellkolumn av typen ”string” (sträng) om du vill få en datetime eller ett numeriskt värde i en kolumnuppsättning för en datamängd som ett datum, till exempel Table/StringColumn eq 1.
 
-* **Strängar** måste omges av enkla citattecken – ”chefsnamn”.
-* **Nummer** kräver ingen särskild formatering
-* **Datum och klockslag** måste omges av enkla citattecken. I OData v3 måste de föregås av ordet datetime, men datetime behövs inte i OData v4.
+* **Strängar** måste omges av enkla citattecken, till exempel 'chefsnamn'.
+* **Nummer** kräver ingen särskild formatering. Se [numeriska datatyper](#numeric-data-types) i den här artikeln om du vill ha mer information.
+* För **datum och tider**, se [Datatyper för datum](#date-data-types) i den här artikeln. 
 
 Om du fortfarande tycker det är förvirrande kan du fortsätta läsa så förklarar vi mer.  
 
@@ -133,9 +133,17 @@ Ett Power BI-URL-filter kan innehålla nummer i följande format.
 
 ### <a name="date-data-types"></a>Datatyper för datum
 
-Power BI stöder både OData V3 och V4 för datatyperna **Date** (datum) och **DateTimeOffset**.  Datum representeras med hjälp av EDM-format (2019-02-12T00:00:00). När du anger ett datum som "ÅÅÅÅ-MM-DD" tolkar Power BI det som "ÅÅÅÅ-MM-DDT00:00:00".
+Power BI stöder både OData V3 och V4 för datatyperna **Date** (datum) och **DateTimeOffset**. För OData V3 måste datum omges av enkla citattecken och föregås av ordet datetime. Enkla citattecken och ordet datetime behövs inte i OData v4. 
+  
+Datum representeras med hjälp av EDM-format (2019-02-12T00:00:00): När du anger ett datum som ÅÅÅÅ-MM-DD tolkar Power BI det som ÅÅÅÅ-MM-DDT00:00:00. Se till att månad och dag är två siffror, MM och DD.
 
-Varför är den här skillnaden viktig? Anta att du skapar frågesträngsparametern **tabell/datum gt "2018-08-03"** .  Kommer resultatet att innehålla 3 augusti 2018 eller börja med 4 augusti 2018? Eftersom Power BI omvandlar din fråga till **tabell/datum gt "2018-08-03T00:00:00"** innehåller resultatet alla datum med en tidsdel som inte är noll eftersom de datumen skulle vara större än **"2018-08-03T00:00:00"** .
+Varför är den här skillnaden viktig? Anta att du skapar frågesträngsparametern **tabell/datum gt "2018-08-03"** .  Kommer resultatet att innehålla 3 augusti 2018 eller börja med 4 augusti 2018? Power BI översätter din fråga till **Table/Date gt '2018-08-03T00:00:00'** . Dina resultat innefattar därmed alla datum som har en tidsdel som inte är noll eftersom dessa datum är större än **'2018-08-03T00:00:00'** .
+
+Det finns andra skillnader mellan V3 och V4. OData v3 stöder inte Dates, endast DateTime. Om du använder V3-formatet måste du använda ett fullständigt datum/tid-format. Datumformat som "datetime'2019-05-20'" stöds inte i v3-notation. Men du kan skriva detta som "2019-05-20" i V4-notation. Här följer två motsvarande filterfrågor i V3 och V4:
+
+- OData V4-format: filter=Table/Date gt 2019-05-20
+- OData V3-format: filter=Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## <a name="special-characters-in-url-filters"></a>Specialtecken i URL-filter
 

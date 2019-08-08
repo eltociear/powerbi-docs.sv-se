@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: a240d84b20f63542c33bb7cbbb9a9c97af7db2f7
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289955"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757682"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Security Assertion Markup Language (SAML) för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -33,7 +33,7 @@ Tänk på att det för HANA **starkt** rekommenderas att du aktiverar kryptering
 
 För att använda SAML måste du etablera en förtroenderelation mellan de HANA-servrar som du vill aktivera SSO för och gatewayen, som fungerar som SAML-identitetsprovider (IdP) i det här scenariot. Det finns olika sätt att etablera den här relationen. Ett sätt är att importera X509-certifikatet för gateway-IdP:n till HANA-servrarnas förtroendelager. Ett annat sätt är att låta gatewayens X509-certifikat signeras av en rotcertifikatutfärdare (CA) som är betrodd av HANA-servrarna. Vi beskriver den senare metoden i den här guiden, men du kan använda en annan metod om det är enklare.
 
-Observera också att även om den här guiden använder OpenSSL som kryptografiprovider för HANA-servern går det också att använda det kryptografiska SAP-biblioteket (kallas även CommonCryptoLib eller sapcrypto) istället för OpenSSL för att slutföra de här installationsstegen där vi etablerar förtroenderelationen. Läs den officiella SAP-dokumentationen för mer information.
+Observera också att även om OpenSSL används som kryptografiprovider för HANA-servern i den här guiden så rekommenderar SAP att du använder det kryptografiska SAP-biblioteket (kallas även CommonCryptoLib eller sapcrypto) i stället för OpenSSL för att slutföra de här installationsstegen där vi etablerar förtroenderelationen. Läs den officiella SAP-dokumentationen för mer information.
 
 Följande steg beskriver hur du etablerar en förtroenderelation mellan en HANA-server och gatewayens IdP genom att registrera gateway-IdP:ns X509-certifikat med hjälp av en rotcertifikatutfärdare som är betrodd av HANA-servern.
 
@@ -180,7 +180,7 @@ Autentiseringsspårning på serversidan ger detaljerad information för felsökn
 
 Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
 
-* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-getting-started)
+* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)

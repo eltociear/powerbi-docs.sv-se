@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61141638"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665487"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
 
-| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows 10-enheter](./media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | 
 |:--- |:--- |:--- |:--- |:--- |
-| [iPhone-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPad-surfplattor](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android-surfplattor](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |[Windows 10-enheter](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device) |
+| [iPhone-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPad-surfplattor](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android-surfplattor](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |
 
 Instrumentpaneler är en portal till ditt företags livscykel och processer. En instrumentpanel är en översikt, en enda plats där du har översikt över verksamheten.
 
@@ -145,45 +145,6 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
     ![Dynamiska länkar](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
     Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i instrumentpanelen. Och du kan fortfarande [trycka på en panel](mobile-tiles-in-the-mobile-apps.md) för att öppna panelen i fokusläge och interagera med dina data.
-
-## <a name="view-dashboards-on-your-windows-10-device"></a>Visa instrumentpaneler på din Windows 10-enhet
-1. Öppna Power BI-appen på din Windows 10-enhet och logga in.
-   
-   Behöver du först [ladda ned appen](http://go.microsoft.com/fwlink/?LinkID=526478)?
-2. Tryck på en instrumentpanel för att öppna den.   
-   
-   ![Startsidan för instrumentpanelen](./media/mobile-apps-view-dashboard/power-bi-windows-10-device-dashboard-home.png)
-   
-   * De svarta stjärnorna visar vilka instrumentpaneler som är Favoriter. 
-   * Anteckningen under varje instrumentpanelsnamns (i det här fallet **MBI**) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../service-data-classification.md).
-   
-   Power BI-instrumentpaneler ser lite annorlunda ut på din Windows 10-telefon. Alla paneler visas med samma bredd och de är placerade efter varandra uppifrån och ned.
-   
-   ![Stående instrumentpanelsvy](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-0928.png)
-   
-    Eller bara lägg din telefon på sidan för att visa instrumentpanelen i liggande läge.
-   
-   > [!TIP]
-   > Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående läge. 
-   > 
-   > 
-3. I instrumentpanelen kan du:
-   
-   * [Trycka på en panel](mobile-tiles-in-the-mobile-apps.md) för att öppna den i fokusläge och interagera med den.
-   * Tryck på **helskärmsikonen** ![helskärmsikonen](./media/mobile-apps-view-dashboard/power-bi-windows-10-full-screen-icon.png) för att presentera dina Power BI-instrumentpaneler utan kantlinjer eller menyer, som ett **bildspel** i PowerPoint.
-   * Tryck på ikonen **Bjud in** ![ikonen Bjud in](./media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png) för att [dela din instrumentpanel](mobile-share-dashboard-from-the-mobile-apps.md) med en kollega.
-   * Tryck på stjärnan ![Favoritstjärna](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) för att [göra instrumentpanelen till en favorit](mobile-apps-favorites.md).
-   * Tryck på ikonen **fäst på Start** för att [fästa instrumentpanelen till Windows-startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md). 
-4. Om du vill gå tillbaka till startsidan för instrumentpaneler trycker du på namnet på instrumentpanelen för att öppna den dynamiska länken.Tryck sedan på **Min arbetsyta**:
-   
-    ![Dynamiska länkar](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
-
-### <a name="view-dashboards-in-landscape-mode-on-your-windows-10-phone"></a>Visa instrumentpaneler i liggande läge på din Windows 10-telefon
-Du kan också visa instrumentpaneler i liggande läge genom att vrida din telefon. Instrumentpanelens layout ändras från en serie brickor till en vy över hela instrumentpanelen &#151; du se alla paneler på instrumentpanelen, precis som i Power BI-tjänsten.
-
-![Liggande instrumentpanel](./media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
-
-Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i instrumentpanelen. Och du kan fortfarande [trycka på en panel](mobile-tiles-in-the-mobile-apps.md) för att öppna panelen i fokusläge och interagera med dina data.
 
 ## <a name="create-a-phone-view-of-a-dashboard-in-the-power-bi-service"></a>Skapa en telefonvy av en instrumentpanel i Power BI-tjänsten
 Om du är instrumentpanelens ägare i *Power BI-tjänsten* kan du skapa en vy på instrumentpanelen för telefoner i stående läge. 

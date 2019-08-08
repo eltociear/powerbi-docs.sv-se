@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7d9e670d2567181a0dc99c23997ac3bc2d35f3c9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2c21792f97445b336709038f7ec2ec39d041312b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271611"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730061"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Hantera din datakälla – SQL Server
 
@@ -37,7 +37,7 @@ Du kan fylla i informationen för datakällan med **Server** och **Databas**.
 Du behöver även välja en **Autentiseringsmetod**. Det kan antingen vara **Windows** eller **Grundläggande**. Du bör välja **Grundläggande** om du tänker använda SQL-autentisering i stället för Windows-autentisering. Ange sedan de autentiseringsuppgifter som ska användas för datakällan.
 
 > [!NOTE]
-> Alla frågor till datakällan kommer att köras med autentiseringsuppgifterna, såvida inte enkel inloggning (SSO) med Kerberos har konfigurerats och aktiverats för datakällan. Med enkel inloggning använder import av datamängder de lagrade autentiseringsuppgifterna, men DirectQuery-datamängder använder den aktuella Power BI-användaren för att köra frågorna med hjälp av enkel inloggning. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud) samt i artikeln med beskrivning om [hur du använder Kerberos för enkel inloggning från Power BI till lokala datakällor](service-gateway-sso-kerberos.md).
+> Alla frågor till datakällan kommer att köras med autentiseringsuppgifterna, såvida inte enkel inloggning (SSO) med Kerberos har konfigurerats och aktiverats för datakällan. Med enkel inloggning använder import av datamängder de lagrade autentiseringsuppgifterna, men DirectQuery-datamängder använder den aktuella Power BI-användaren för att köra frågorna med hjälp av enkel inloggning. Mer information om hur autentiseringsuppgifter lagras finns i [Lagra krypterade autentiseringsuppgifter i molnet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud) samt i artikeln med beskrivning om [hur du använder Kerberos för enkel inloggning från Power BI till lokala datakällor](service-gateway-sso-kerberos.md).
 
 ![Fylla i inställningarna för datakälla](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 

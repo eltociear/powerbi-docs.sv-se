@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: f603a733c6c604a89b0b9608904acdf13b66b713
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: bddd653b5ac8b49a38a69ae79baf2f96824444ed
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61417647"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665341"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda
 
@@ -23,11 +23,11 @@ Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Använd filter för att begränsa rapportens visuella information om du bara vill visa det som krävs 
 
-Ju mer data som en visuell information måste visa, desto långsammare kommer denna visuella information att läsas in. Även om denna princip verkar uppenbar, kan det vara lätt att glömma. Exempel: anta att du har en stor datauppsättning. Förutom denna skapar du en rapport med en tabell av tabellen. Slutanvändare använder utsnitt på sidan för att komma åt de rader som de vill – vanligtvis är de bara intresserade av några dussin rader.
+Ju mer data som ett visuellt objekt måste visa, desto längre tid kommer det att ta att läsa in det visuella objektet. Även om denna princip verkar uppenbar, är den lätt att glömma. Exempel: anta att du har en stor datauppsättning. Förutom denna datauppsättning skapar du en rapport med en tabell av tabellen. Slutanvändare använder utsnitt på sidan för att komma åt de rader som de vill – vanligtvis är de bara intresserade av några dussin rader.
 
-Ett vanligt fel är att låta standardvyn för tabellen vara ofiltrerad – dvs. alla 100M+ rader. Data för dessa rader måste läsas in i minnet och komprimeras upp vid varje uppdatering. Detta skapar en enorm minnesbelastning. Lösning: minska det maximala antalet objekt som tabellen visar med filtret ”Top N”. Det maximala antalet objekt kan vara mycket högre än vad användare behöver, till exempel 10 000. Därför ändrades slutanvändarens upplevelse inte, men rapportens minnesanvändning sjönk ordentligt i omfattning och prestandan förbättrades i enlighet med detta.
+Ett vanligt fel är att lämna standardvyn för tabellen ofiltrerad – dvs. alla 100M+ rader. Data för dessa rader läses in i minnet och dekomprimeras vid varje uppdatering. Den här bearbetningen skapar enorma minnesbelastningar. Lösning: använd filtret ”Top N” för att minska det maximala antalet objekt som visas i tabellen. Du kan ange det maximala antalet objekt till ett högre antal än användarna behöver, till exempel 10 000. Upplevelsen ändras inte för slutanvändarna, men minnesanvändningen minskar markant. Och även prestandan förbättras.
 
-Vi rekommenderar ett liknande tillvägagångssätt som ovanstående för alla visuella objekt på dina rapporter. Fråga dig själv, behövs alla data i den här visuella informationen? Finns det sätt att filtrera ner mängden data som visas i det visuella objektet med minimal påverkan på slutanvändarens upplevelse? Observera att speciellt tabeller kan vara väldigt kostsamma.
+Vi rekommenderar ett liknande tillvägagångssätt som ovanstående för alla visuella objekt på dina rapporter. Fråga dig själv, behövs alla data i den här visuella informationen? Finns det sätt att filtrera mängden data som visas i det visuella objektet med minimal påverkan på slutanvändarens upplevelse? Speciellt tabeller kan vara väldigt kostsamma.
 
 ## <a name="limit-visuals-on-report-pages"></a>Begränsa visuell information på rapportsidorna
 
@@ -37,22 +37,22 @@ Principen ovan gäller likvärdigt för all visuell information på en viss rapp
 
 Några metodtips:
 
-- Tabeller eller kolumner som är oanvända bör tas bort om möjligt. 
+- Ta bort oanvända tabeller eller kolumner om det är möjligt. 
 - Undvik olika antal i fält med hög kardinalitet – dvs. miljontals distinkta värden.  
-- Vidta åtgärder för att undvika fält med onödig precision och hög kardinalitet. Du kan till exempel dela upp mycket unika datetime-värden i separata kolumner – till exempel månad, år, datum, osv. Eller använd om möjligt avrundning i fält med hög precision för att minska kardinaliteten (till exempel 13,29889 -> 13,3).
+- Vidta åtgärder för att undvika fält med onödig precision och hög kardinalitet. Du kan till exempel dela upp mycket unika datetime-värden i separata kolumner – till exempel månad, år, datum, osv. Om det är möjligt kan du använda avrundning i fält med hög precision för att minska kardinaliteten (till exempel 13,29889 -> 13,3).
 - Använd heltal i stället för strängar där det är möjligt.
 - Var försiktig med DAX-funktioner. De behöver testa varje rad i en tabell, till exempel RANKX. I värsta fall kan dessa funktioner öka körtiden och minneskraven exponentiellt när tabellstorleken ökar linjärt.
-- När du ansluter till datakällor via DirectQuery, överväg att indexera kolumner som ofta filtreras eller delas igen – detta ger avsevärt bättre svarstider för rapporten.  
+- När du ansluter till datakällor via DirectQuery, överväg att indexera kolumner som ofta filtreras eller delas igen. Indexeringen ger en kraftig förbättring av rapportens svarstid.  
 
 Mer information om hur du optimerar datakällor för DirectQuery finns i [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/).
 
 ## <a name="directquery-and-live-connection-understand-underlying-data-source-performance"></a>DirectQuery och live-anslutning: förstå underliggande datakällas prestanda
 
-När det gäller DirectQuery eller live-anslutning skickar Power BI frågor i realtid till den underliggande datakällan när användare besöker en Power BI-rapport. När datakällan returnerar med frågedata kommer rapporten att återges. Rapportprestandan beror således i dessa fall till stor del på den underliggande datakällans prestanda.
+När det gäller DirectQuery eller live-anslutning skickar Power BI frågor i realtid till den underliggande datakällan när användare besöker en Power BI-rapport. Rapporten visas när datakällan returnerar frågedata. Det innebär att rapportens prestanda till stor del är beroende av den underliggande datakällans prestanda.
 
 I dessa fall är det viktigt att förstå den underliggande datakällans prestanda. Olika datakällor har olika verktyg för att förstå frågeprestanda. Till exempel har SQL Server och SQL Azure verktyget Query Store, som innehåller en historik över frågor och deras körningsstatistik.
 
-När du distribuerar Power BI-rapporter som bygger på DirectQuery och live-anslutning, ha som tumregel att själv testa vad användarna kommer att göra i Power BI Desktop. Om rapporten går långsamt att läsa in Power BI Desktop kommer det sannolikt blir att ta lång tid att läsa in i tjänsten för dina slutanvändare också. 
+Testa vad användarna kommer att göra i Power BI Desktop när du distribuerar Power BI-rapporter som bygger på DirectQuery och live-anslutning. Om det tar lång tid att läsa in rapporten i Power BI Desktop kommer det sannolikt att ta lång tid att läsa in den även i tjänsten för dina slutanvändare. 
 
 ## <a name="directquery-best-practices"></a>Metodtips för DirectQuery
 
@@ -60,8 +60,8 @@ I följande avsnitt beskrivs allmänna metodtips för att ansluta via DirectQuer
   
 ### <a name="db-design-guidance"></a>Riktlinjer för DB-design
 
-- Push-överför beräknade kolumner och mått till källan om möjligt – ju närmre de är att källan, desto högre sannolikhet för god prestanda.
-- Optimera! Förstå körningsplaner för dina frågor, lägg till index för kolumner som ofta filtreras o.s.v.
+- Push-överför beräknade kolumner och mått till källan om det går. Ju närmare källan, desto större sannolikhet att få bra prestanda.
+- Optimera! Förstå körningsplaner för dina frågor, lägg till index för kolumner som ofta filtreras och så vidare.
 
 ### <a name="modeling-guidance"></a>Vägledning för modellering
 
@@ -70,27 +70,27 @@ I följande avsnitt beskrivs allmänna metodtips för att ansluta via DirectQuer
 - Använd inte relativ datumfiltrering i Frågeredigeraren.  
 - Håll åtgärderna enkla från början och öka komplexiteten inkrementellt.
 - Undvik relationer på beräknade kolumner och kolumner med unik identifierare.
-- Försök att ange ”Anta referensintegritet” för relationer – i många fall kan detta förbättra frågeprestanda avsevärt.  
+- Försök att ange ”Anta referensintegritet” för relationer – i många fall kan den här inställningen förbättra frågeprestanda avsevärt.  
 
-### <a name="general"></a>Allmänt
+### <a name="general"></a>Allmän
 
 - Använd filter först.
-- Överväg att stänga av interaktion mellan olika visuell information – detta kommer att minska frågebelastningen när användare korsmarkerar.
+- Överväg att stänga av interaktionen mellan olika visuella objekt, vilket minskar frågebelastningen när användare korsmarkerar.
 - Begränsa antalet visuella informationer och data per visuell information enligt beskrivningen ovan.
-- Aktivering av säkerhet på radnivå kan medföra betydande förändringar i prestanda. Se till att testa de olika radnivåernas säkerhetsroller som användarna kommer att anta.
+- Aktivering av säkerhet på radnivå kan medföra stora förändringar i prestanda. Se till att testa de olika radnivåernas säkerhetsroller som användarna kommer att anta.
 - Det finns tidsgränser på frågenivå som krävs av tjänsten för att säkerställa att tidskrävande frågor inte kan monopolisera systemresurser. Frågor som tar längre tid än 225 sekunder når tidsgränsen och resulterar i ett fel på visualiseringsnivå.
 
 ## <a name="understand-dashboards-and-query-caches"></a>Förstå instrumentpaneler och frågecacher
 
-Visuell information som har fästs på instrumentpaneler betjänas av frågecachen när instrumentpanelen har lästs in. När du besöker en rapport görs frågorna således direkt till datakällan – antingen Power BI-tjänsten (vid import) eller den datakälla som du anger (när det gäller DirectQuery eller live-anslutning).  
+Visuella objekt som har fästs på instrumentpaneler betjänas av frågecachen när instrumentpanelen läses in. När du besöker en rapport görs frågorna således direkt till datakällan – antingen Power BI-tjänsten (vid import) eller den datakälla som du anger (när det gäller DirectQuery eller live-anslutning).  
 
 > [!NOTE]
 > När du fäster live-rapportpaneler till en instrumentpanel kan de inte hanteras från frågecachen – de fungerar i stället som rapporter och skapar frågor för serverdelskärnor direkt.
 
-Som namnet antyder får du bättre och mer konsekvent prestanda om du hämtar data från frågecachen än om du förlitar dig på datakällan. Ett sätt att dra nytta av den här funktionen är att låta instrumentpaneler vara första landningssidan för dina användare. Fäst visuell information som används och begärs ofta till instrumentpanelerna. På så sätt blir instrumentpanelerna en värdefull ”första försvarslinje” vilket ger kontinuerlig prestanda med mindre belastning på kapaciteten. Användare kan fortfarande klicka fram till rapporten för att få reda på fler detaljer.  
+Som namnet antyder får du bättre och mer konsekvent prestanda om du hämtar data från frågecachen än om du förlitar dig på datakällan. Ett sätt att dra nytta av den här funktionen är att låta instrumentpaneler vara första landningssidan för dina användare. Fäst visuella objekt som används och begärs ofta till instrumentpanelerna. På så sätt blir instrumentpanelerna en värdefull ”första försvarslinje” vilket ger kontinuerlig prestanda med mindre belastning på kapaciteten. Användare kan fortfarande klicka fram till rapporten för att få reda på fler detaljer.  
  
 
-För DirectQuery och live-anslutning kan den här frågecachen uppdateras regelbundet genom att fråga datakällan. Som standard sker detta varje timme, även om detta kan konfigureras i datauppsättningens inställningar. Varje uppdatering av frågecache skickar frågor till den underliggande datakällan för att uppdatera cachen. Antal frågor som genereras beror på mängden visuell information som fäst på de instrumentpaneler som förlitar sig på datakällan. Observera att frågor genereras för varje säkerhetskontext om säkerhet på radnivå är aktiverad. Om du till exempel har två olika roller som användarna tillhör med två olika vyer av data, genereras två uppsättningar av frågor under uppdatering av frågecachen. 
+För DirectQuery och live-anslutning kan frågecachen uppdateras regelbundet genom att fråga datakällan. Som standard sker detta varje timme, även om detta kan konfigureras i datauppsättningens inställningar. Varje uppdatering av frågecache skickar frågor till den underliggande datakällan för att uppdatera cachen. Antalet frågor som genereras beror på hur många visuella objekt som har fästs på de instrumentpaneler som förlitar sig på datakällan. Observera att frågor genereras för varje säkerhetskontext om säkerhet på radnivå är aktiverad. Om du till exempel har två olika roller som kategoriserar användarna, och de har två olika vyer av data, genererar Power BI två uppsättningar av frågor under uppdatering av frågecachen. 
 
 ## <a name="understand-custom-visual-performance"></a>Förstå anpassad visuell prestanda 
 
@@ -111,7 +111,7 @@ Instruktioner följer nedan:
 
 2. **Fastställ vilken port som används av Power BI Desktop**
 
-   Kör kommandotolken eller PowerShell med administratörsbehörighet och använd netstat för att hitta porten med hjälp av Power BI Desktop för analys:
+   Kör kommandotolken eller PowerShell med administratörsbehörighet. Och använd netstat för att hitta den port som Power BI Desktop använder för analys:
 
    `> netstat -b -n`
 
@@ -132,7 +132,7 @@ Instruktioner följer nedan:
    - SQL Profiler är nu aktivt och profilerar aktivt de frågor som Power BI Desktop skickar. 
    - Medan frågorna körs, kan du se deras respektive varaktighet och CPU-tider – med den här informationen kan du fastställa vilka frågor som är flaskhalsarna.  
 
-Via SQL Profiler kan du identifiera de frågor som tar upp den längsta CPU-tiden, och som i sin tur sannolikt är prestandaflaskhalsarna. Fokusera på de visuella objekten som kör dessa frågor för fortsatt optimering.
+Via SQL Profiler kan du identifiera de frågor som upptar längst CPU-tid. Det är troligtvis dessa frågor som orsakar prestandaflaskhalsar. Fokusera på de visuella objekten som kör dessa frågor för fortsatt optimering.
 
 ## <a name="gateway-best-practices"></a>Metodtips för gateway
 
@@ -140,15 +140,15 @@ Den lokala datagatewayen är ett bra verktyg för att ansluta Power BI-tjänsten
 
 - **Använda Enterprise-läget**, i motsats till det personliga läget.
 - **Rekommenderade maskinvaruspecifikationer för gatewayen** – åtta CPU-kärnor, 16 GB RAM-minne.
-- **Konfigurera övervakning** – Ställ in prestandaövervakning på gateway-datorn för att förstå om gatewayen blir överbelastad och blir en flaskhals. Mer information finns i [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md).
+- **Konfigurera övervakning** – Ställ in prestandaövervakning på gatewaydatorn för att förstå om gatewayen överbelastas och blir en flaskhals. Mer information finns i [Felsökning av den lokala datagatewayen](service-gateway-onprem-tshoot.md).
 - **Skala upp eller ut** – Om gatewayen verkligen blir en flaskhals överväg då att skala upp (d.v.s. flytta gatewayen till en kraftfullare dator med flera processor och mer RAM-minne) eller skala ut (till exempel dela upp datauppsättningar på olika gatewayer). 
 - **Separera import kontra DirectQuery** – Om du skalat ut, överväg att separera de gatewayer som ansvarar för att importera jämfört med de som ansvarar för DirectQuery.
 
 ## <a name="network-latency"></a>Svarstid för nätverk
 
-Nätverksfördröjningen kan påverka rapportprestandan genom att öka den tid som krävs för begäranden att nå Power BI-tjänsten och för svar som ska levereras. Klienter i Power BI tilldelas en specifik region. Du kan visa din klients ”hemregion” genom att gå till powerbi.com och välja ?** uppe till höger och sedan **Om Power BI**. När användare från en klient ansluter till Power BI-tjänsten, dirigeras deras begäranden alltid till den här regionen. När begäranden når Power BI-tjänsten kan tjänsten sedan skicka ytterligare begäranden, till exempel till den underliggande datakällan eller gatewayen, som också påverkas av nätverkssvarstiden.
+Nätverksfördröjningen kan påverka rapportprestandan genom att öka den tid som krävs för begäranden att nå Power BI-tjänsten och för svar som ska levereras. Klienter i Power BI tilldelas en specifik region. Du kan visa din klients ”hemregion” genom att gå till powerbi.com och välja **?** överst till höger och sedan **Om Power BI**. När användare från en klient ansluter till Power BI-tjänsten, dirigeras deras begäranden alltid till den här regionen. När begäranden når Power BI-tjänsten kan tjänsten sedan skicka ytterligare begäranden, till exempel till den underliggande datakällan eller gatewayen, som också påverkas av nätverkssvarstiden.
 
-Verktyg som [Azure-hastighetstest](http://azurespeedtest.azurewebsites.net/) ger en indikation om nätverksfördröjningen mellan klienten och Azure-regionen. Sträva generellt mot att hålla datakällor, gatewayer och Power BI-klustret så nära som möjligt för att minimera effekten av nätverksfördröjningen. Om nätverksfördröjningen är ett problem, kan du försöka hitta gatewayer och datakällor som är närmre Power BI-klustret genom att placera dem på virtuella datorer.
+Verktyg som [Azure-hastighetstest](http://azurespeedtest.azurewebsites.net/) ger en indikation om nätverksfördröjningen mellan klienten och Azure-regionen. Sträva generellt mot att hålla datakällor, gatewayer och Power BI-klustret så nära som möjligt för att minimera effekten av nätverksfördröjningen. Om nätverksfördröjning är ett problem försöker du hitta gatewayer och datakällor som är närmare Power BI-klustret genom att placera dem på virtuella datorer.
 
 För att ytterligare förbättra nätverksfördröjningen kan du använda [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/). Det innebär en möjlighet att skapa snabbare och mer tillförlitliga nätverksanslutningar mellan klienter och Azure-datacenter.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
-ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
+ms.openlocfilehash: 6a1ce47d7af41df51b7c439240f3e9db0dd28397
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68501754"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757726"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -375,7 +375,7 @@ Användarna i organisationen kan se användningsstatistik för de instrumentpane
 
 Om du använder mått för skapare av innehåll visas visningsnamn och e-postadresser för de användare som har åtkomst till innehållet. [Läs mer](service-usage-metrics.md)
 
-Data per användare är aktiverat för användningsstatistik som standard, och kontoinformation om innehållsskapare ingår i statistikrapporten. Om du inte vill inkludera den här informationen för vissa eller alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformation visas då i rapporten som *Namnlös*.
+Data per användare är aktiverat för användningsstatistik som standard, och kontoinformation om innehållsskapare ingår i statistikrapporten. Om du inte vill samla in den här informationen för alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformationen för de exkluderade användarna visas då i rapporten som *Namnlös*.
 
 ## <a name="dashboard-settings"></a>Inställningar för instrumentpanelen
 

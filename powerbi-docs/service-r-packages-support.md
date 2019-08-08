@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 76361bba2690e0ab6ae8fa49008d7a6accae900e
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 60d97d8b2226e9a3f9aba2bf043bd9c6aade161a
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325084"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665321"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-paket i Power BI-tjänsten
 Du kan använda det kraftfulla [R-programmeringsspråket](https://www.r-project.org/) för att skapa visuella objekt i Power BI-tjänsten. Många R-paket stöds i Power BI-tjänsten (och fler läggs till hela tiden), men vissa paket stöds inte.
@@ -29,6 +29,7 @@ De R-paket som stöds för **Power BI-tjänsten** hittar du i avsnittet med rubr
 ## <a name="requirements-and-limitations-of-r-packages"></a>Krav och begränsningar avseende R-paket
 Det finns några krav och begränsningar när det gäller R-paket:
 
+* Aktuell R-körmiljö: Microsoft R 3.4.4
 * Power BI-tjänsten stöder, för det mesta, R-paket med kostnadsfria programlicenser med öppen källkod, som GPL-2, 3 GPL, MIT + med flera.
 * Power BI-tjänsten stöder paket som publicerats i CRAN. Tjänsten stöder inte privata eller anpassade R-paket. Användarna uppmanas att göra sina privata paket tillgängliga på CRAN innan de begär att paketen ska vara tillgängliga i Power BI-tjänsten.
 * **Power BI Desktop** har två varianter av R-paket:

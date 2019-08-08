@@ -1,6 +1,6 @@
 ---
 title: Lokal datagateway
-description: Det här är en översikt över den lokala datagatewayen för Power BI. Du kan använda den här gatewayen för att arbeta med DirectQuery-datakällor. Du kan också använda den för att uppdatera molndatauppsättningar med lokala data.
+description: Den här artikeln visar en översikt över den lokala datagatewayen för Power BI. Du kan använda den här gatewayen för att arbeta med DirectQuery-datakällor. Du kan också använda den för att uppdatera molndatauppsättningar med lokala data.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -10,36 +10,36 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 57c4292913a2056ab285716de1e1b83e2313f723
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 883d5c83019df293628d096f5834c9b5c6d425b6
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307106"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730283"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Vad är en lokal datagateway?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Den lokala datagatewayen fungerar som en brygga med snabb och säker dataöverföring mellan lokala data (data som inte finns i molnet) samt flera Microsoft-molntjänster såsom Power BI, PowerApps, Microsoft Flow, Azure Analysis Services och Logic Apps. Genom att använda en gateway kan organisationer förvara databaser och andra datakällor i sina lokala nätverk, men ändå använda dessa lokala data i molntjänster.
+En lokal datagateway fungerar som en brygga med snabb och säker dataöverföring mellan lokala data (data som inte finns i molnet) och flera molntjänster från Microsoft. Dessa molntjänster innefattar Power BI, PowerApps, Microsoft Flow, Azure Analysis Services och Azure Logic Apps. Genom att använda en gateway kan organisationer förvara databaser och andra datakällor i sina lokala nätverk, men ändå använda dessa lokala data i molntjänster.
 
 ## <a name="how-the-gateway-works"></a>Så här fungerar gatewayen
 
 ![Gatewayöversikt](media/service-gateway-onprem/on-premises-data-gateway.png)
 
-Detaljerad information om hur gatewayen fungerar finns i [Arkitektur för lokal datagateway](/data-integration/gateway/service-gateway-onprem-indepth).
+Mer information om hur gatewayen fungerar finns i [Arkitektur för lokal datagateway](/data-integration/gateway/service-gateway-onprem-indepth).
 
 ## <a name="types-of-gateways"></a>Typer av gatewayer
 
 Det finns två olika typer av gatewayer för varsitt scenario:
 
-* **Lokal datagateway** – flera användare kan ansluta till flera lokala datakällor. Du kan använda en lokal datagateway med alla tjänster som stöds, med en enskild gatewayinstallation. Den här gatewayen är väl lämpad för komplicerade scenarier där flera personer har åtkomst till flera olika datakällor.
+* **Lokal datagateway** gör att flera användare kan ansluta till flera lokala datakällor. Du kan använda en lokal datagateway med alla tjänster som stöds, med en enskild gatewayinstallation. Den här gatewayen är väl lämpad för komplicerade scenarier där flera personer har åtkomst till flera olika datakällor.
 
-* **Lokal datagateway (personligt läge)** – tillåter en användare att ansluta till källor och kan inte delas med andra. En lokal datagateway (personligt läge) kan endast användas med Power BI. Den här gatewayen är väl lämpad för scenarier där du är den enda personen som skapar rapporter och du inte behöver datakällor med andra.
+* **Lokal datagateway (personligt läge)** gör att en användare kan ansluta till källor och kan inte delas med andra. En lokal datagateway (personligt läge) kan endast användas med Power BI. Den här gatewayen är väl lämpad för scenarier där du är den enda personen som skapar rapporter och du inte behöver datakällor med andra.
 
-## <a name="using-a-gateway"></a>Använda en gateway
+## <a name="use-a-gateway"></a>Använda en gateway
 
-Det finns fyra huvudsakliga steg för att använda en gateway:
+Det finns fyra huvudsakliga steg för att använda en gateway.
 
 1. [Ladda ned och installera gatewayen](/data-integration/gateway/service-gateway-install) på en lokal dator.
 2. [Konfigurera](/data-integration/gateway/service-gateway-app) gatewayen baserat på din brandvägg och andra nätverkskrav.

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751130"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729797"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -45,6 +45,10 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
             - Lade till en enklare länk för bakåtnavigering i PBIRS-urvalsfönstret
             - Korrigering av högkontrastläget i PBIRS så att bakåtknappen och visuella varningsmeddelanden syns bättre.
             - Korrigering av gränssnittet i urvalsfönstret, skalning av arbetsytan.
+
+    - *Version: 2.69.5467.5201 (maj 2019), publicerad: 30 juli 2019*
+        - Felkorrigeringar
+            - Korrigering för felaktig telemetriloggning
 
 ## <a name="january-2019"></a>Januari 2019
 
@@ -93,8 +97,11 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
         - Genväg och fästa ikoner finns kvar efter avinstallation av Power BI-rapportservern
         - Korrigering av svart text på svart ikon då man fäster Power BI-rapportservern på start-menyn
 
-    - *Version: 2.65.5313.1421 (januari 2019), publicerad: Den 22 januari 2019*
-        - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (januari 2019)  
+    - *Version: 2.65.5313.1421 (januari 2019), publicerad: 22 januari 2019* (ny build och ny version)
+        - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (januari 2019) 
+    - *Version: 2.65.5313.5141 (januari 2019), publicerad: 31 juli2019* (ny build och ny version)
+        - Felkorrigeringar
+            - Korrigering för felaktig telemetriloggning
 
 ## <a name="august-2018"></a>Augusti 2018
 

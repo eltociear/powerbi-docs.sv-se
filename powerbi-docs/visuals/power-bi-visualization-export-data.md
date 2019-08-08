@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 07/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 21fa3c5c3907e8c1aa4d40bd3e6332c77ff62b98
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523337"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730084"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 
@@ -79,6 +79,8 @@ Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../
     ![Skärmbild av skärmbilden Exportera data med alternativen för sammanfattade data, xlsx och export framhävda.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
     Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.
+    
+    Alla data som används av hierarkin exporteras, inte bara de data som används för den aktuella detaljnivån för det visuella objektet. Om detaljnivån för visualiseringen inte har ökats från den översta nivån, innehåller de exporterade data alla data i hierarkin, inte bara de data som används för att skapa det visuella objektet på dess aktuella detaljnivå.
 
     **Sammanfattade data**: Välj det här alternativet om du vill exportera data för det som visas i det visuella objektet.  Den här typen av export visar bara de data (kolumner och mått) som du valt för att skapa visualiseringen.  Om visualiseringen har en aggregering exporterar du aggregerade data. Till exempel, om du har ett stapeldiagram med fyra staplar kommer du att få fyra rader med data. Sammanfattade data finns tillgängliga som *.xlsx* och *.csv*.
 
@@ -92,6 +94,8 @@ Om du vill följa med kan öppna [exempelrapporten för anskaffningsanalys ](../
     > Beroende på rapportinställningarna kan du ha möjlighet att exportera underliggande data.
 
     Om du har tillämpat filter på visualiseringen exporteras data enligt filtret. När du väljer **Exportera** får du ett meddelande om att spara filten från webbläsaren. Öppna filen i Excel när du har sparat den.
+    
+    Alla data som används av hierarkin exporteras, inte bara de data som används för den aktuella detaljnivån för det visuella objektet. Om detaljnivån för visualiseringen inte har ökats från den översta nivån, innehåller de exporterade data alla data i hierarkin, inte bara de data som används för att skapa det visuella objektet på dess aktuella detaljnivå.
 
     >[!WARNING]
     >När du exporterar underliggande data kan användare se alla detaljerade data – alla kolumner i aktuella data. Power BI-tjänsteadministratörer kan inaktivera detta för sin organisation. Om du äger datamängden kan du ställa in dina egna kolumner som **dolda** så att de inte visas i listan **Fält** i Desktop eller Power BI-tjänsten.

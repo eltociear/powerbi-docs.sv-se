@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523218"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730141"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mått i Power BI Desktop
 
 **Power BI Desktop** hjälper dig att skapa insikter om dina data med bara några klickningar. Men data innehåller ibland inte allt du behöver för att besvara några av dina viktigaste frågor. Mått kan vara en hjälp på vägen.
 
-Mått används i några av de vanligaste dataanalyserna. Till exempel summor, medelvärden, lägsta eller högsta värden, antal eller mer avancerade beräkningar som du skapar själv med hjälp av en DAX-formel. Det beräknade resultatet av mått ändras alltid när du interagerar med dina rapporter, vilket ger snabb och dynamisk utforskning av dina data. Låt oss ta en närmare titt.
+Mått används i några av de vanligaste dataanalyserna. Enkla summeringar, till exempel summor, medelvärden, lägsta, högsta och antal, kan ställas in via fältkällan. Detta beskrivs i videon [Summarization and category](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) (Summering och kategori). Du kan skapa mer avancerade beräkningar med hjälp av en DAX-formel. Det beräknade resultatet av mått ändras alltid när du interagerar med dina rapporter, vilket ger snabb och dynamisk utforskning av dina data. Låt oss ta en närmare titt.
 
 ## <a name="understanding-measures"></a>Förstå mått
 
-I **Power BI Desktop** skapas och används mått i **Rapportvyn** eller **Datavyn**. Åtgärder som du skapar själv visas i fält med en Kalkylatorikon. Du kan kalla åtgärder vad du vill och lägga till dem i en ny eller befintlig visualisering precis som ett annat fält.
+I **Power BI Desktop** skapas och visas mått i **Rapportvyn** eller **Datavyn**. Åtgärder som du skapar själv visas i fält med en Kalkylatorikon. Du kan kalla åtgärder vad du vill och lägga till dem i en ny eller befintlig visualisering precis som ett annat fält.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
@@ -64,6 +64,25 @@ Du kan också välja datakategorier för mått.
 På så sätt kan du till exempel använda mått för att skapa URL:er dynamiskt, och markera datakategorin som en webbadress. 
 
 Du kan till exempel skapa tabeller som visar måtten som webbadresser och sedan klicka på URL:en som skapas baserat på ditt val. Detta är särskilt användbart om du vill länka till andra Power BI-rapporter med [URL-filterparametrar](service-url-filters.md).
+
+
+## <a name="organizing-your-measures"></a>Ordna dina mått
+
+Måtten har en *starttabell* som anger var de finns i fältlistan. Du kan ändra deras plats genom att välja en plats från tabellerna i din modell.
+
+![Välja en tabell för ditt mått](media/desktop-measures/measures-03.png)
+
+Du kan också ordna fält i en tabell i *visningsmappar*. Välj **Modellvyn** på vänster sida av Power BI Desktop-fönstret och välj sedan det fält som du vill flytta från listan med tillgängliga fält som visas på arbetsytan. I egenskapsfönstret visas en textruta för **visningsmapp**. När du skriver ett namn i fältet **Visningsmapp** skapas mappen och det valda fältet flyttas till den mappen.
+
+![Skapa ett fält för mått](media/desktop-measures/measures-04.gif)
+
+Du kan skapa undermappar med hjälp av ett omvänt snedstreck. Om du till exempel skriver *Ekonomi\Valutor* skapas mappen *Ekonomi*, och i den mappen skapas mappen *Valutor*.
+
+Du kan göra så att ett fält visas i flera mappar genom att avgränsa mappnamnen med ett semikolon. Om du till exempel skriver *Produkter\Namn;Avdelningar* visas fältet i mappen *Avdelningar* och i mappen *Namn* inuti mappen *Produkter*.
+
+Slutligen kan du skapa en särskilt tabell som endast innehåller mått som alltid visas längst upp i **fältlistan**. Det gör du genom att skapa en tabell med bara en kolumn. Du kan använda **Ange data** för att skapa tabellen. Flytta sedan dina mått till tabellen. Slutligen döljer du kolumnen (inte tabellen) som du skapade. Du måste stänga och öppna **fältlistan** på nytt för att den ska visas korrekt i Power BI Desktop. Det gör du genom att klicka på sparrikonen överst i **fältlistan**.
+
+![Ordna mått och visa dem ovanför fältlistan](media/desktop-measures/measures-05.png)
 
 ## <a name="learn-more"></a>Läs mer
 Det här er bara en snabbintroduktion till mått men det finns mycket mer information om att skapa egna mått. Läs [Självstudie: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md), där du kan ladda ned en exempelfil och få stegvisa anvisningar om hur du skapar fler mått.  

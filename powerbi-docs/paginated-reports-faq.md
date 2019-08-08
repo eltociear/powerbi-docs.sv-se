@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 07/15/2019
-ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270783"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665355"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -77,7 +77,7 @@ Standardminnet i varje Premium-SKU för sidnumrerade rapporter:
 - **P2/A5**: 20 % standard, 5 % minimum
 - **P3/A6**: 20 % standard, 2,5 % minimum
 
-## <a name="general"></a>Allmänt
+## <a name="general"></a>Allmän
 
 ### <a name="when-should-i-use-a-paginated-report-vs-a-power-bi-report"></a>När ska jag använda en sidnumrerad rapport jämfört med en Power BI-rapport?
 
@@ -162,7 +162,7 @@ Ja, vi har stöd för möjligheten att köra kod i dina rapporter som i SSRS.
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Kan jag använda inbäddad Power BI för att bädda in min sidnumrerade rapporter i en app som jag värd för?
 
-SaaS-inbäddning kommer att stödjas enligt tidsramen för juni.  Vi planerar också att stödja PaaS-inbäddning med befintliga Power BI API:er, men vi har ännu inte någon tidsram för när detta kommer att vara tillgängligt.
+SaaS-inbäddning stöds redan. PaaS-inbäddning stöds inte för närvarande.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kan jag få detaljerad information från en Power BI-rapport till en sidnumrerad rapport?
 

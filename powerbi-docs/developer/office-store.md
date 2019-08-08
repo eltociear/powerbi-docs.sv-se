@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269947"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623805"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
 
@@ -22,7 +22,7 @@ Läs hur du kan publicera dina anpassade visuella objekt till AppSource där and
 
 När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det på AppSource så att andra kan hitta och använda det. Det finns vissa förberedelser som måste göras innan du kan göra det. Mer information om hur du skapar ett anpassat visuellt objekt finns i [Utveckla ett anpassat visuellt Power BI-objekt](custom-visual-develop-tutorial.md).
 
-   ![Office Store](media/office-store/AppSource_01.jpg)
+   ![Office Store](media/office-store/appsource-01.png)
 
 ## <a name="what-is-appsource"></a>Vad är AppSource?
 
@@ -30,7 +30,7 @@ När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det 
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Förbereda att skicka ditt anpassade visuella objekt
 
-När du är klar läsning vår [riktlinjer för Power BI-visualiseringar](guidelines-powerbi-visuals.md), kodning och [testa ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) och har förpackat det i en pbiviz-fil bör du också ha följande klart för ditt bidrag.
+När du är klar med att läsa [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md), koda och [testa ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), och har förpackat det i en pbiviz-fil, bör du ha följande klart för din överföring.
 
 | Objekt | Krävs | Beskrivning |
 | --- | --- | --- |

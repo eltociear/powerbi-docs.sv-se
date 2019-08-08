@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 55ffc166d5a42e850bc4e2dedf80de1c6b9f8634
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 80bb78d6074fde907fe6b2d3bbb835cdc5e82976
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342143"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623843"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -114,8 +114,8 @@ Du kan också hämta tidigare versioner av Power BI Desktop om din organisation 
 
 Välj följande länkar för att ladda ned den tidigare versionen: 
 
-* [Maj 2019-versionen av Power BI Desktop – 32 bitar](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
-* [Maj 2019-versionen av Power BI Desktop – 64 bitar](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+* [Juni 2019-versionen av Power BI Desktop – 32 bitar](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [Juni 2019-versionen av Power BI Desktop – 64 bitar](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
 
 
 ## <a name="may-2019-update-26954671251"></a>Uppdatering maj 2019 (2.69.5467.1251)
@@ -516,19 +516,6 @@ I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du 
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
-
-* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
-* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
-* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
-* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
-
-Välj följande länkar för att ladda ned den tidigare versionen: 
-
-* [December 2018-versionen av Power BI Desktop – 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12.msi)
-* [December 2018-versionen av Power BI Desktop – 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12_x64.msi)
-
-
 ## <a name="november-2018-update-2645285582"></a>Uppdatering november 2018 (2.64.5285.582)
 
 I våra novemberuppdateringar introducerades en uppsjö av nya funktioner och funktionaliteter. Så du kunde sätta dig ner med din familj av data- och analysentusiaster, skicka potatismoset och hugga in på vårt festbord med uppdateringar. 
@@ -578,20 +565,6 @@ I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du 
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
-
-Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
-
-* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
-* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
-* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
-* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
-
-Välj följande länkar för att ladda ned den tidigare versionen: 
-
-* [November 2018-versionen av Power BI Desktop – 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11.msi)
-* [November 2018-versionen av Power BI Desktop – 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11_x64.msi)
 
 
 ## <a name="october-2018-update-263327240262"></a>Uppdatering oktober 2018 (2.63.3272.40262)
@@ -653,21 +626,6 @@ I följande videokanal beskrivs och visas var och en av dessa uppdateringar. Du 
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-
-Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
-
-* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
-* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
-* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
-* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
-
-Välj följande länkar för att ladda ned den tidigare versionen: 
-
-* [November 2018-versionen av Power BI Desktop – 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10.msi)
-* [Oktober 2018-versionen av Power BI Desktop – 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10_x64.msi)
-
-
-
 ## <a name="september-2018-update-2625222582"></a>Uppdatering september 2018 (2.62.5222.582)
 
 Våra septemberuppdateringar är som att gå in i ett spännande nytt klassrum. Förhoppningsvis kommer du att tycka att de här uppdateringarna är lika användbara som nyvässade blyertspennor. 
@@ -713,20 +671,6 @@ I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan o
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
-Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
-
-* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
-* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
-* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
-* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
-
-Välj följande länkar för att ladda ned den tidigare versionen: 
-
-* [Oktober 2018-versionen av Power BI Desktop – 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09.msi)
-* [Oktober 2018-versionen av Power BI Desktop – 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09_x64.msi)
-
 
 
 
@@ -776,21 +720,6 @@ I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan o
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](mobile-whats-new-in-the-mobile-apps.md).
-
-
-
-Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
-
-* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
-* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
-* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
-* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
-
-Välj följande länkar för att ladda ned den tidigare versionen: 
-
-* [Augusti 2018-versionen av Power BI Desktop – 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08.msi)
-* [Augusti 2018-versionen av Power BI Desktop – 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08_x64.msi)
-
 
 
 
