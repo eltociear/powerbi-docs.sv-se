@@ -22,7 +22,7 @@ ms.locfileid: "67408196"
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
 Listan över nyckelord på den här sidan är inte fullständig.  Det bästa sättet att se om Power BI identifierar ett nyckelord är att testa att skriva det i frågerutan.  Om en term eller ett ord har tonats ned kan inte Power BI identifiera den/det.
 
-Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har varit**, **har**, **hade**, **kommer att ha**, **gör**, **gjorde**, **gjort** **** **** .  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singular och plural. 
+Nedanstående lista använder presens men alla tempus kan kännas igen. Till exempel omfattar ”är” **vara**, **var**, **kommer att vara**, **har** **varit**, **har**, **hade**, **kommer att** **ha**, **gör**, **gjorde**, **gjort**  Och ”sortera” innehåller **sorterade** och **sortering**.  Dessutom känner Power BI igen och inkluderar ord i singular och plural. 
 
 > [!NOTE]
 > Frågor och svar finns också tillgängligt i [Microsoft Power BI-appen för iOS på iPad-, iPhone- och iPod Touch-enheter](mobile/mobile-apps-ios-qna.md).
