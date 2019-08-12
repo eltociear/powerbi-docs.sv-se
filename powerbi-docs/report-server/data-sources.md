@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 6e3bed0cf8dda765722c0076086f59a91f1f380d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770803"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808212"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -202,7 +202,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för Dir
 | Azure SQL Database |Nej |Nej |Ja |Nej |Nej |
 | Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |Nej |
 | Oracle-databas |Nej |Nej |Ja |Ja |Ja |
-| SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Ja |
+| SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Nej |
 | SAP HANA-databas |Nej |Nej |Ja |Ja |Nej |
 | Teradata-databas |Nej |Nej |Ja |Ja |Ja |
 
