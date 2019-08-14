@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3aeb1fc16ae200399125a2366a8993d45aad34c4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7540083b49e0790bfd9062d28d2655ff024d577f
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578636"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867166"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Självstudie: Ansluta till en GitHub-lagringsplats med Power BI
-I den här självstudien ska du ansluta till verkliga data i GitHub-tjänsten med Power BI, så skapar Power BI automatiskt instrumentpaneler och rapporter. Du ansluter till Power BI content offentliga lagringsplats (kallas även en *repo*) och se svar på frågor som: Hur många personer bidrar till det offentliga Power BI-innehållet? Vem bidrar med mest innehåll? Vilken dag i veckan har flest bidrag? Och andra frågor. 
+I den här självstudien ska du ansluta till verkliga data i GitHub-tjänsten med Power BI, så skapar Power BI automatiskt instrumentpaneler och rapporter. Du ansluter till den offentliga lagringsplatsen (även kallad *databas*) för Power BI-innehåll och hittar svar på frågor som: Hur många personer bidrar till det offentliga Power BI-innehållet? Vem bidrar med mest innehåll? Vilken dag i veckan har flest bidrag? Och andra frågor. 
 
 ![GitHub-rapporten i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
@@ -40,7 +40,7 @@ Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnad
 
 I den här kursen behöver du ett GitHub-konto om du inte redan har ett. 
 
-- Registrera dig för en [GitHub-konto](https://docs.microsoft.com/contribute/get-started-setup-github).
+- Registrera dig för ett [GitHub-konto](https://docs.microsoft.com/contribute/get-started-setup-github).
 
 
 ## <a name="how-to-connect"></a>Så här ansluter du
@@ -49,15 +49,15 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
    
    ![Hämta appar i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Välj **appar**, typ **GitHub** i sökrutan > **Hämta nu**.
+3. Välj **Appar**, skriv **GitHub** i sökrutan > **Get it now** (Hämta nu).
    
    ![Hämta GitHub i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
-4. I **installera den här Power BI-appen?** Välj **installera**.
-5. I **din nya app är klar**väljer **gå till app**.
-6. I **Kom igång med din nya app**väljer **Anslut data**.
+4. I **Installera den här Power BI-appen?** väljer du **Installera**.
+5. I **Din nya app är klar** väljer du **Gå till app**.
+6. I **Kom igång med din nya app** väljer du **Anslut**.
 
-    ![Kom igång med din nya app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+    ![Kom igång med din nya app](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
 
 7. Ange lagringsplatsens namn och ägare. URL:en för den här lagringsplatsen är https://github.com/MicrosoftDocs/powerbi-docs. **Lagringsplatsägare** är alltså **MicrosoftDocs** och **Lagringsplats** är **powerbi-docs**. 
    
@@ -65,18 +65,18 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
 5. Ange autentiseringsuppgifterna för GitHub som du skapade. Power BI kan hoppa över det här steget om du redan är inloggad i GitHub i din webbläsare. 
 
-6. För **autentiseringsmetod**, hålla **oAuth2** valda \> **logga In**.
+6. Som **Autentiseringsmetod** låter du **oAuth2** vara markerat \> **Logga in**.
 
 7. Följ autentiseringsskärmarna i GitHub. Ge Power BI behörighet till GitHub-data.
    
    Nu kan Power BI ansluta till GitHub och till informationen.  Data uppdateras en gång om dagen.
 
-8. När Power BI har importerat data, kan du se innehållet i den nya GitHub-arbetsytan. 
-9. Välj pilen bredvid namnet på arbetsytan i det vänstra navigeringsfältet. Du ser arbetsytan som innehåller en instrumentpanel och en rapport. 
+8. När Power BI har importerat data ser du innehållet på din nya GitHub-arbetsyta. 
+9. Välj pilen intill namnet på arbetsytan i det vänstra navigeringsfältet. Arbetsytan innehåller en instrumentpanel och en rapport. 
 
     ![App i det vänstra navigeringsfönstret](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-10. Välj ellipsen (...) bredvid instrumentpanelens namn > **Byt namn på** > typ **GitHub-instrumentpanel**.
+10. Välj ellipsen (...) bredvid instrumentpanelens namn > **Byt namn** > skriv **GitHub instrumentpanel**.
  
     ![GitHub-panel i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
@@ -84,9 +84,9 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
     ![Ikon för global navigering](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
-10. Välj din GitHub-instrumentpanelen.
+10. Välj din nya GitHub-instrumentpanel.
     
-    GitHub-instrumentpanelen innehåller realtidsdata, så de värden som du ser kan vara olika.
+    Eftersom GitHub-instrumentpanelen innehåller realtidsdata kanske du ser andra värden.
 
     ![GitHub-instrumentpanel i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
@@ -94,28 +94,28 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
 ## <a name="ask-a-question"></a>Ställ en fråga
 
-1. Placera markören i **Ställ en fråga om dina data**. Power BI erbjuder **frågor för att komma igång**. 
+1. Placera markören i **Ställ en fråga om dina data**. I Power BI finns **frågor för att komma igång**. 
 
-1. Välj **hur många användare är det**.
+1. Välj **how many users are there** (hur många användare är det).
  
-    ![Hur många användare är det](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
+    ![How many users are there (hur många användare är det)](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
 
-13. Mellan **hur många** och **användare finns det**, typ **pull-begäranden per**. 
+13. Mellan **how many** (hur många) och **users are there** (användare är det), skriv **pull requests per** (pull-begäranden per). 
 
-     Powerbi skapar ett stapeldiagram som visar hur många pull-begäranden per person.
+     Power BI skapar ett stapeldiagram som visar antalet pull-begäranden efter person.
 
-    ![Hur många pull-begäranden per användare är det](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
+    ![How many pull requests per user are there (hur många pull-begäranden per användare är det)](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
 
 
-13. Välj PIN-koden och Fäst det på instrumentpanelen, sedan **avsluta frågor och svar**.
+13. Välj nålen för att fästa den på din instrumentpanel, och välj sen **Exit Q&A** (Avsluta frågor och svar).
 
 ## <a name="view-the-github-report"></a>Visa GitHub-rapporten 
 
-1. I GitHub-instrumentpanelen väljer du stapeldiagrammet **Pull-begäranden per månad** att öppna den tillhörande rapporten.
+1. Öppna stapeldiagrammet **Pull Requests by Month** (Pull-begäranden efter månad) på GitHub-instrumentpanelen för att öppna den relaterade rapporten.
 
-    ![Hämtningsbegäranden per månad stående stapeldiagram](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
+    ![Stapeldiagram över pull-begäranden efter månad](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
 
-2. Välj ett användarnamn i den **Totalt antal hämtningsbegäranden av användaren** diagram. I det här exemplet vi kan se de flesta av timmarna som fanns i februari.
+2. Välj ett användarnamn i diagrammet **Total pull requests by user** (antal pull-begäranden efter användare). I det här exemplet ser vi att de flesta av deras timmar gjordes i februari.
 
     ![Markering i GitHub-rapport i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-cross-filter-total-prs.png)
 
@@ -123,7 +123,7 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
  
     ![Punch Card (Hålkort) i GitHub-rapport i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-    Uppenbarligen tisdagen klockan 15 är mest vanliga tid och veckodag för *förbinder*, när användare söker i sitt arbete.
+    Tydligen lämnas flest *bidrag* på tisdagar kl. 15, när användarna skickar in arbete.
 
 ## <a name="clean-up-resources"></a>Rensa resurser
 

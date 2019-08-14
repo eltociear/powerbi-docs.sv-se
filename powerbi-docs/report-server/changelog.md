@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
+ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729797"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68940908"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -124,7 +124,10 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
     - *Version: 2.61.5192.641 (augusti 2018), publicerad: 15 augusti 2018*
         - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (augusti 2018)         
-        
+    - *Version: 2.61.5192.7701 (augusti 2018), publicerad: 8 augusti 2019* (ny build och ny version)
+        - Felkorrigeringar
+            - Korrigering för felaktig telemetriloggning
+            
 ## <a name="march-2018"></a>Mars 2018
 
 - **Power BI-rapportserver**

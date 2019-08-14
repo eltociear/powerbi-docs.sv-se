@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a5b6b89984064101b683532cbfb77ae5540c307
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730271"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867057"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Vanliga frågor och svar om lokal datagateway – Power BI
 
@@ -23,9 +23,9 @@ ms.locfileid: "68730271"
 
 ## <a name="power-bi"></a>Power BI
 
-**Fråga:** Måste jag uppgradera min personliga gateway? 
+**Fråga:** Behöver jag uppgradera lokal datagateway (personligt läge)?
 
-**Svar:** Nej, du kan fortsätta att använda en personlig gateway för Power BI.
+**Svar:** Nej, du kan fortsätta att använda gatewayen (personligt läge) för Power BI.
 
 **Fråga:** Krävs det särskilda behörigheter för att installera gatewayen och hantera den i Power BI-tjänsten?
 
@@ -41,7 +41,7 @@ ms.locfileid: "68730271"
 
 **Fråga:** Varför kan jag inte ansluta till min Oracle-server? 
 
-**Svar:** Du kan behöva installera Oracle-klienten och konfigurera filen tnsnames.ora med rätt serverinformation om du ska kunna ansluta till Oracle-servern. Det här är en separat installation utanför gatewayen. Mer information finns i [Installera Oracle-klienten](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Svar:** Du kan behöva installera Oracle-klienten och konfigurera filen tnsnames.ora med rätt serverinformation om du ska kunna ansluta till Oracle-servern. Det här är en separat installation utanför gatewayen. Mer information finns i [Installera Oracle-klienten](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Fråga:** Kommer gatewayen att fungera med Azure ExpressRoute? 
 

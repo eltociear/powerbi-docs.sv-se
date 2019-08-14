@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 074a8dd876e0612f87c220f9fb077b60b2b85c88
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 3c0ef172115dba05deb02d724b663742a2e71c13
+ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271816"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832514"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Använda anpassade dataanslutningar med den lokala datagatewayen
 
@@ -27,26 +27,26 @@ Mer information om hur du skapar anpassade dataanslutningar för Power BI finns 
 
 När du skapar rapporter i Power BI Desktop som använder anpassade dataanslutningar kan du använda den lokala datagatewayen för att uppdatera dessa rapporter från Power BI-tjänsten.
 
-## <a name="how-to-enable-and-use-this-capability"></a>Så aktiverar och använder du den här funktionen
+## <a name="enable-and-use-this-capability"></a>Aktivera och använda den här funktionen
 
-När du installerar versionen av lokal datagateway från juli 2018 eller senare kan du se fliken **Anslutningar** i appen för lokal datagateway. Där finns ett alternativ för att välja en mapp varifrån anpassade dataanslutningar läses in. Välj en mapp som kan nås av den användare som kör gatewaytjänsten (som standard är det *NT SERVICE\PBIEgwService*). Gatewayen läser automatiskt in de filer med anpassade anslutningar som finns i mappen, och du ser dem i listan med dataanslutningar.
+När du installerar versionen av lokal datagateway från juli 2018 eller senare kan du se fliken **Anslutningar** i appen för lokal datagateway. I rutan **Läs in anpassade datakopplingar från mappen** väljer du en mapp som kan nås av användaren som kör gatewaytjänsten. Standardanvändaren är *NT SERVICE\PBIEgwService*. Gatewayen läser automatiskt in de anpassade kopplingsfilerna som finns i den mappen. De visas i listan över dataanslutningar.
 
-![Anpassad anslutning 1](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
+![Anpassade dataanslutningar](media/service-gateway-custom-connectors/gateway-onprem-customconnector1.png)
 
-Om du använder lokal datagateway (personligt läge) kan du i detta läge ladda upp Power BI-rapporten till Power BI-tjänsten och använda gatewayen för att uppdatera den.
+Om du använder lokal datagateway (personligt läge) kan du ladda upp Power BI-rapporten till Power BI-tjänsten och använda gatewayen för att uppdatera den.
 
-För den lokala datagatewayen behöver du fortfarande skapa en datakälla för din anpassade anslutning. När du väljer gatewayklustret på sidan för gatewayinställningar i Power BI-tjänsten bör du se ett nytt alternativ som du kan använda för att tillåta användningen av anpassade anslutningar med klustret. För att det här alternativet ska vara tillgängligt måste uppdateringen för juli 2018 eller en senare uppdatering vara installerad på alla gatewayer i klustret. Välj alternativet för att tillåta användning av anpassade anslutningar med det här klustret.
+För den lokala datagatewayen behöver du skapa en datakälla för din anpassade anslutning. När du väljer gatewayklustret på sidan för gatewayinställningar i Power BI-tjänsten bör du se ett alternativ som du kan använda för att tillåta användningen av anpassade anslutningar med klustret. För att det här alternativet ska vara tillgängligt måste uppdateringen för juli 2018 eller en senare uppdatering vara installerad på alla gatewayer i klustret. Välj alternativet för att tillåta användning av anpassade anslutningar med det här klustret.
 
-![Anpassad anslutning 2](media/service-gateway-custom-connectors/gateway-onprem-customconnector2.png)
+![Sidan Inställningar för gatewaykluster](media/service-gateway-custom-connectors/gateway-onprem-customconnector2.png)
 
-När det här alternativet är aktiverat visas dina anpassade anslutningar som tillgängliga datakällor som du kan skapa under gatewayklustret. När du har skapat en datakälla med hjälp av den nya anpassade anslutningen kan du uppdatera Power BI-rapporter med hjälp av den anpassade anslutningen i Power BI-tjänsten.
+När det här alternativet är aktiverat visas dina anpassade anslutningar som tillgängliga datakällor som du kan skapa under gatewayklustret. När du har skapat en datakälla som använder den nya anpassade anslutningen kan du uppdatera Power BI-rapporter med hjälp av den anpassade anslutningen i Power BI-tjänsten.
 
-![Anpassad anslutning 3](media/service-gateway-custom-connectors/gateway-onprem-customconnector3.png)
+![Sidan Inställningar för datakälla](media/service-gateway-custom-connectors/gateway-onprem-customconnector3.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-* Kontrollera att mappen som du skapar är tillgänglig för gatewaytjänsten som körs i bakgrunden. Normalt kan mappar under din användares Windows-mapp eller systemmappar inte nås. Appen för lokal datagateway visar ett meddelande om mappen inte kan nås (detta gäller inte för den personliga versionen av gatewayen)
-* För att anpassade anslutningar ska fungera med den lokala datagatewayen måste de implementera ett ”TestConnection”-avsnitt i den anpassade anslutningens kod. Detta krävs inte när du använder anpassade anslutningar med Power BI Desktop. Det betyder att du kan ha en som fungerar med Desktop, men inte med gatewayen. Information om hur du implementerar ett TestConnection-avsnitt finns i [den här dokumentationen](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
+* Kontrollera att mappen som du skapar är tillgänglig för gatewaytjänsten som körs i bakgrunden. Normalt kan mappar under din användares Windows-mapp eller systemmappar inte nås. Appen för den lokala datagatewayen visar ett meddelande om mappen inte är tillgänglig. Den här instruktionen gäller inte för den lokala datagatewayen (personligt läge).
+* För att anpassade anslutningar ska fungera med den lokala datagatewayen måste de implementera ett ”TestConnection”-avsnitt i den anpassade anslutningens kod. Det här avsnittet krävs inte när du använder anpassade anslutningar med Power BI Desktop. Därmed kan du ha en anslutning som fungerar med Power BI Desktop, men inte med gatewayen. Mer information om hur du implementerar ett TestConnection-avsnitt finns i [den här dokumentationen](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -54,9 +54,8 @@ När det här alternativet är aktiverat visas dina anpassade anslutningar som t
 * [Hantera din datakälla – SAP HANA](service-gateway-enterprise-manage-sap.md)  
 * [Hantera din datakälla – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Hantera din datakälla – Oracle](service-gateway-onprem-manage-oracle.md)  
-* [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
+* [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)
+* [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)
+* [Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)  
 
-* [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)  
-* [Använda Kerberos för SSO (enkel inloggning) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)  
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? Fråga [Power BI Community](http://community.powerbi.com/).

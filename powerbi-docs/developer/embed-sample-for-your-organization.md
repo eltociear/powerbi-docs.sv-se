@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665538"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808242"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
@@ -83,7 +83,7 @@ Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. D�
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Skapa och publicera sidnumrerade rapporter
 
-Du kan skapa sidnumrerade rappoter med [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sedan kan du [överföra rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) till en apparbetsyta som tilldelats minst A4/P1-kapacitet. Slutanvändaren som överför rapporten måste ha minst en Power BI Pro-licens för att publicera till en apparbetsyta.
+Du kan skapa sidnumrerade rappoter med [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sedan kan du [överföra rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) till en apparbetsyta som tilldelats minst A4/P1-kapacitet. Slutanvändaren som laddar upp rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Bädda in innehåll med exempelprogrammet
 
