@@ -1289,6 +1289,8 @@
               href: report-server/configure-kerberos-powerbi-reports.md
             - name: Konfigurera mobilappåtkomst via fjärranslutning
               href: report-server/configure-powerbi-mobile-apps-remote.md
+            - name: Mobil fjärråtkomst med Azure AD
+              href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Vara värd för Excel-arbetsböcker
               href: report-server/excel-oos.md
     - name: Referens
@@ -1424,3 +1426,7 @@
           href: service-admin-governance.md
         - name: Power BI-säkerhet
           href: service-admin-power-bi-security.md
+- name: Vägledning
+  items:
+    - name: Vad är ett star-schema?
+      href: guidance/star-schema.md
