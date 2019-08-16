@@ -491,7 +491,7 @@
           items:
             - name: Använda datauppsättningar över arbetsytor
               href: service-datasets-across-workspaces.md
-            - name: Skapa och dela datauppsättningar (förhandsversion)
+            - name: Dela datauppsättningar (förhandsversion)
               href: service-datasets-build-permissions.md
             - name: Skapa rapporter som baseras på datauppsättningar
               href: service-datasets-discover-across-workspaces.md
@@ -1432,3 +1432,5 @@
   items:
     - name: Vad är ett star-schema?
       href: guidance/star-schema.md
+    - name: Minska datamodellstorlek
+      href: guidance/import-modeling-data-reduction.md
