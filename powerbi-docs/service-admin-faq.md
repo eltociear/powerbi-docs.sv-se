@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d6961007c3f7185b954188fa7bd7866d80a7f85a
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523386"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490312"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -38,7 +38,6 @@ Den här artikeln tar upp vanliga frågor och svar för Power BI-administration.
 
 * [Hur kommer detta att ändra hur jag hanterar identiteter för användare i min organisation idag?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Hur hanterar vi Power BI?](#how-do-we-manage-power-bi)
-* [Hur hanterar jag en klient som skapas av Microsoft för mina användare?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till i?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Hur tar jag bort Power BI för användare som redan har registrerat sig?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Hur vet jag när nya användare har anslutit sig min klient?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -173,18 +172,6 @@ Det finns tre scenarier som kan gälla för användare i organisationen:
 Power BI har en administratörsportal där du kan visa användarstatistik med länkar till administrationscentret för Microsoft 365 för att hantera användare och grupper samt möjlighet att styra inställningarna för hela klienten.
 
 För att kunna använda Power BI-administratörsportalen måste du markera ditt konto som **Global administratör** i Office 365 eller Azure Active Directory, eller så måste någon tilldela administratörsrollen för Power BI-tjänsten till ditt användarkonto. Mer information finns i [Förstå administratörsrollen för Power BI](service-admin-role.md) och [Power BI-administratörsportalen](service-admin-portal.md).
-
-### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hur hanterar jag en klient som skapas av Microsoft för mina användare?
-
-När en självbetjäningsanvändare registrerar sig för en molntjänst som använder Azure AD läggs de till i en ohanterad Azure AD-katalog baserat på e-postdomänen. Du kan göra anspråk på och hantera den klient som någon har skapats med hjälp av en process som kallas *adminövertagande*. Typen av övertagande beror på om det finns en befintlig hanterad klient som är associerad med domänen:
-
-* Använd ett *internt övertagande* för att skapa en ny hanterad klient för domänen.
-
-* Använd ett *externt övertagande* för att flytta domänen till en befintlig hanterad klient.
-
-Mer information finns i [Ta över en ohanterad katalog som administratör i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-När du gör ett externt övertagande placeras Power BI-innehåll som har skapats före övertagandet på en [Power BI-arkiverad arbetsyta](service-admin-power-bi-archived-workspace.md). Du måste migrera allt innehåll som du vill använda i den nya klienten manuellt.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Om jag har flera domäner, kan jag styra vilken Office 365-klient som användare läggs till i?
 
