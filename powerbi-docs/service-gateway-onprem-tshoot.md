@@ -69,7 +69,7 @@ Om det underliggande felmeddelandet liknar det följande kan det betyda att tjä
 
     The username or password is incorrect.
 
-Domäner med åtkomst för äldre operativsystem än Windows 2000 har attributet TGGAU aktiverat. De flesta nya domäner har inte det här attributet aktiverat som standard. Mer information finns i [Some applications and APIs require access to authorization information on account objects](https://support.microsoft.com/kb/331951).
+Domäner med åtkomst för äldre operativsystem än Windows 2000 har attributet TGGAU aktiverat. De flesta nya domäner har inte det här attributet aktiverat som standard. Mer information finns i [Vissa program och API: er kräver åtkomst till autentiseringsinformation för kontoobjekt](https://support.microsoft.com/kb/331951).
 
 Följ dessa steg för att kontrollera om attributet är aktiverat.
 
