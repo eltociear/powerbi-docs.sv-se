@@ -1426,3 +1426,5 @@
       href: guidance/star-schema.md
     - name: Minska datamodellstorlek
       href: guidance/import-modeling-data-reduction.md
+    - name: Funktionen DIVIDERA jämfört med operatorn för division (/)
+      href: guidance/dax-divide-function-operator.md
