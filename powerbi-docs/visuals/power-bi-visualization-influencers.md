@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590609"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995271"
 ---
 # <a name="key-influencers-visualization"></a>Visualisering av viktiga influencers
 Visualiseringen av viktiga påverkare hjälper dig att förstå vilka faktorer som påverkar ett mått du är intresserad av. Den analyserar dina data, rangordnar de faktorer som är viktiga och visar dem som viktiga influencers. Anta exempelvis att du vill ta reda på vad som påverkar personalomsättningen. En faktor kan vara anställningsavtalens längd och en annan kan vara medarbetarnas ålder. 
@@ -24,9 +24,6 @@ Visualiseringen av viktiga påverkare hjälper dig att förstå vilka faktorer s
 Det visuella objektet för viktiga påverkare är ett bra val: 
 - om du vill se vilka faktorer som påverkar det mått som analyseras
 - om du vill jämföra den relativa vikten av de här faktorerna. Har till exempel korta avtalstider större effekt på personalomsättningen än långa avtalstider? 
-
-## <a name="key-influencer-requirements"></a>Krav för viktiga influencers 
-Det mått du analyserar måste vara antingen ett kategorifält eller ett numeriskt fält (samlingar och mått stöds inte ännu).
 
 ## <a name="features-of-the-key-influencers-visual"></a>Funktioner för det visuella objektet för viktiga påverkare
 
@@ -44,15 +41,13 @@ Det mått du analyserar måste vara antingen ett kategorifält eller ett numeris
 
 6. **Högra rutan**: Den högra rutan innehåller ett visuellt objekt. I det här fallet visar stapeldiagrammet alla värden för den viktiga påverkaren **Tema** som valts i den vänstra rutan. Det specifika värdet för **användbarhet** i den vänstra rutan visas i grönt. Alla andra värden för **Tema** visas i svart.
 
-7. **Medellinje**: Medelvärdet beräknas för alla andra möjliga värden för **Tema**, utom för **användbarhet**. Så beräkningen gäller för alla värden i svart. Den visar vilken procentandel av övriga **teman** som bidrog till ett lågt omdöme. När en kund lämnar ett omdöme beskriver alltså den kunden även anledningen till eller temat för omdömet. Några teman är användbarhet, hastighet och säkerhet. 
+7. **Medellinje**: Medelvärdet beräknas för alla möjliga värden för **Tema**, förutom för **användbarhet** (som är den valda influeraren). Så beräkningen gäller för alla värden i svart. Den visar vilken procentandel av övriga **teman** som hade ett lågt omdöme. I det här fallet hade 11,35 % ett lågt omdöme (vilket visas av den prickade linjen).
 
-   **Temat är användbarhet** är den näst viktigaste påverkaren för ett lågt omdöme enligt det visuella objektet i den vänstra rutan. Om du tar ett genomsnitt av alla andra teman och hur de påverkar omdömet **Lågt** får du resultatet som visas i rött. Av alla andra teman är endast 11,35 % högre än **användbarhet**.
+8. **Kryssruta**: Filtrerar bort det visuella objektet i det högra fönstret så att endast värden som är influerare för det fältet visas. I det här exemplet skulle detta filtrera det visuella objektet för användbarhet, säkerhet och navigering.
 
-8. **Kryssruta**: **Visa enbart värden som är påverkare**.
-
-## <a name="create-a-key-influencers-visual"></a>Skapa ett visuellt objektet av viktiga influencers 
+## <a name="analyze-a-metric-that-is-categorical"></a>Analysera ett mått som är kategoriskt
  
-Se den här videon om du vill lära dig att skapa ett visuellt objekt för viktiga påverkare. Följ stegen nedan för att skapa ett. 
+Titta på den här videon om du vill lära dig att skapa ett visuellt objekt för viktiga influerare med ett kategoriskt mått. Följ stegen nedan för att skapa ett. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -65,20 +60,24 @@ Din produktchef vill att du tar reda på vilka faktorer som gjorde att kunder l�
 
     ![Välj mallen Viktiga influencers från rutan Visualiseringar](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Flytta det mått du vill undersöka till fältet **Analysera**. Fältet **Analysera** har endast stöd för kategorivariabler, alltså diskreta variabler. Om du vill se vad som får kunderna att lämna ett lågt omdöme om tjänsten väljer du **Kundtabell** > **Omdöme**. 
+2. Flytta det mått du vill undersöka till fältet **Analysera**. Om du vill se vad som får kunderna att lämna ett lågt omdöme om tjänsten väljer du **Kundtabell** > **Omdöme**.
+
 3. Flytta fält som du tror kan påverka **Omdöme** till **Förklara med**. Du kan flytta så många fält du vill. I det här fallet börjar du med:
     - Land/Region 
     - Roll i organisationen 
     - Prenumerationstyp 
     - Företagsstorlek 
-    - Tema 
-1. Om du vill fokusera på negativa omdömen väljer du **Lågt** i listrutan **Vad påverkar omdömet att vara**.  
+    - Tema
+    
+4. Låt fältet **Expandera efter** vara tomt. Det här fältet används endast vid analys av ett mått eller ett sammanfattat fält. 
+
+5. Om du vill fokusera på negativa omdömen väljer du **Lågt** i listrutan **Vad påverkar omdömet att vara**.  
 
     ![Välj Lågt i listrutan](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
 Analysen körs på tabellnivå för fältet som analyseras. I det här fallet är det måttet **Omdöme**. Det här måttet är definierat på kundnivå. Varje kund har gett antingen ett högt eller ett lågt omdöme. Alla förklarande faktorer måste vara definierade på kundnivå om det visuella objektet ska kunna använda dem. 
 
-I föregående exempel har alla förklarande faktorer antingen en 1: 1- eller många-till-ett-relation med måttet. I det här fallet har varje omdöme exakt ett kopplat tema. Det här temat var det huvudsakliga temat i kundens recension. På samma sätt så har kunder från ett och samma land en viss medlemstyp och har en viss roll i sin organisation. De förklarande faktorerna är redan attribut för kunden och ingen transformering krävs. Det visuella objektet kan använda dem direkt. 
+I föregående exempel har alla förklarande faktorer antingen en 1: 1- eller många-till-ett-relation med måttet. I det här fallet tilldelas varje kund ett enskilt tema för deras omdöme. På samma sätt så har kunder från ett och samma land en viss medlemstyp och har en viss roll i sin organisation. De förklarande faktorerna är redan attribut för kunden och ingen transformering krävs. Det visuella objektet kan använda dem direkt. 
 
 Senare i självstudien ska vi titta på mer komplicerade exempel där det förekommer ett-till-många-relationer. I sådana fall måste kolumnerna först aggregeras ned till kundnivå innan du kan köra analysen. 
 
@@ -89,7 +88,7 @@ Låt oss ta en titt på de viktigaste påverkarna för låga omdömen.
 
 ### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Den främsta enskilda faktor som påverkar sannolikheten för ett lågt omdöme
 
-Organisationen i det här exemplet har tre roller: konsument, administratör och utgivare. Att vara konsument är den viktigaste faktorn som bidrar till ett lågt omdöme. 
+Kunden i det här exemplet kan ha tre roller: konsument, administratör och utgivare. Att vara konsument är den viktigaste faktorn som bidrar till ett lågt omdöme. 
 
 ![Välj Roll i organisationen är konsument](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
@@ -138,7 +137,7 @@ Spridningsdiagrammet i den högra rutan visar den genomsnittliga procentandelen 
 
 I vissa fall märker du kanske att dina kontinuerliga faktorer automatiskt omvandlades till kategoriska faktorer. Det beror på att vi insåg att relationen mellan variablerna inte är linjär, och att vi därför inte kan beskriva relationen som blott ökande eller fallande (som vi gjorde i exemplet ovan).
 
-Vi kör korrelationstester för att ta reda på hur linjär influeraren är med avseende på målet. Om målet är kontinuerligt kör vi Perasons-korrelationen, och om målet är kategoriskt kör vi punkt-biserial-korrelationstester. Om vi upptäcker att relationen inte är tillräckligt linjär genomför vi övervakad gruppering och genererar högst 5 lagerplatser. För att ta reda på vilka lagerplatser som är mest lämpliga använder vi en metod för övervakad gruppering som tittar på relationen mellan den förklarande faktorn och det mål som analyseras.
+Vi kör korrelationstester för att ta reda på hur linjär influeraren är med avseende på målet. Om målet är kontinuerligt kör vi Pearsons-korrelationen, och om målet är kategoriskt kör vi punkt-biserial-korrelationstester. Om vi upptäcker att relationen inte är tillräckligt linjär genomför vi övervakad gruppering och genererar högst 5 lagerplatser. För att ta reda på vilka lagerplatser som är mest lämpliga använder vi en metod för övervakad gruppering som tittar på relationen mellan den förklarande faktorn och det mål som analyseras.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Tolka mått och aggregeringar som viktiga påverkare 
  
@@ -165,9 +164,29 @@ I den här gruppen gav 74,3 % av kunderna av ett lågt omdöme. Den genomsnittli
 
 ![Välj det första viktigaste segmentet](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## <a name="working-with-numerical-data"></a>Arbeta med numeriska data
+## <a name="adding-counts"></a>Lägga till antal
 
-Om du flyttar ett numeriskt fält till fältet **Analysera** kan du välja hur scenariot ska hanteras. Du kan ändra beteendet för det visuella objektet genom att gå till **formateringsfönstret** och växla mellan **Kategorisk analystyp** och **Kontinuerlig analystyp**.
+Ibland kan en influerare ha stor påverkan trots att den representerar en mycket liten del av data. Till exempel är **temat** **användbarhet** den näst största influeraren för låga omdömen. Dock kan det ha funnits endast ett fåtal kunder som klagade på användbarheten. Antal kan hjälpa dig att prioritera vilka influerare som du vill fokusera på.
+
+Du kan aktivera antal via **analyskortet** i formateringsfönstret.
+
+![Lägga till antal](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
+
+När antal har aktiverats ser du en ring signal runt varje influerares bubbla, som representerar den ungefärliga procentandelen data som influeraren innehåller. Ju mer av bubblan som ringen omger, desto mer data innehåller den. Vi kan se att **temat** **användbarhet** innehåller en mycket liten andel data.
+
+![Visa antal](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
+
+Du kan även växeln Sortera efter längst ned till vänster i det visuella objektet för att sortera bubblorna efter antal först i stället för påverkan. **Prenumerationstypen** **Premier** är den främsta influeraren baserat på antal.
+
+![Sortera efter antal](media/power-bi-visualization-influencers/power-bi-ki-counts-sort.png)
+
+Om det finns en hel ring runt cirkeln innebär det att influeraren innehåller 100 % av data. Du kan ändra antalstypen så att den blir relativ till den högsta influeraren med hjälp av listrutan **Antalstyp** i **analyskortet** för formateringsfönstret. Nu representeras den influerare som har störst antal data av en hel ring, och alla andra antal blir relativa till den.
+
+![Visa relativa antal](media/power-bi-visualization-influencers/power-bi-ki-counts-type.png)
+
+## <a name="analyze-a-metric-that-is-numeric"></a>Analysera ett mått som är numeriskt
+
+Om du flyttar ett ej sammanfattat numeriskt fält till fältet **Analysera** kan du välja hur scenariot ska hanteras. Du kan ändra beteendet för det visuella objektet genom att gå till **formateringsfönstret** och växla mellan **Kategorisk analystyp** och **Kontinuerlig analystyp**.
 
 ![Ändra från kategorisk till kontinuerlig](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -212,6 +231,30 @@ Viktigaste segment för numeriska mål visar grupper där huspriset i genomsnitt
 
 ![Numeriska målvärden för måttpåverkare](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
+## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysera ett mått som är ett mått eller en sammanfattad kolumn
+
+När det gäller ett mått eller en sammanfattad kolumn blir analysen som standard den **kontinuerliga analystyp** som beskrivs [ovan](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Detta kan inte ändras. Den största skillnaden mellan att analysera ett mått/en summerad kolumn och en ej sammanfattad numerisk kolumn är den nivå som analysen körs på.
+
+När det gäller ej sammanfattade kolumner körs analysen alltid på tabellnivån. I exemplet med huspris ovan analyserade vi måttet **Huspris** för att se vad som orsakar att ett huspris ökar/minskar. Analysen körs automatiskt på tabellnivån. Vår tabell har ett unikt ID för varje hus så att analysen körs på husnivå.
+
+![Tabell med mått](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+
+För mått och sammanfattade kolumner vet vi inte omedelbart vilken nivå som de ska analyseras på. Om **Huspris** sammanfattades som ett **genomsnitt** skulle vi behöva ta hänsyn till vilken nivå som vi vill att det här genomsnittliga huspriset beräknas på. Är det ett genomsnittligt huspris på kvartersnivå? Eller är det kanske en regional nivå?
+
+Mått och sammanfattade kolumner analyseras automatiskt på nivån för de **Förklara med**-fält som används. Anta att vi har tre fält i **Förklara med** som vi är intresserade av: **Kökskvalitet**, **Byggnadstyp** och **Luftkonditionering**. **Genomsnittligt huspris** skulle beräknas för varje unik kombination av dessa tre fält. Det är ofta användbart att växla till en tabellvy för att se hur de data som utvärderas ser ut.
+
+![Tabell med mått](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+
+Den här analysen är mycket sammanfattad, och det blir därför svårt för regressionsmodellen att hitta några mönster i de data som den kan lära sig från. Vi bör köra analysen på en mer detaljerad nivå för att få bättre resultat. Om vi ville analysera huspriset på husnivån skulle vi behöva lägga till fältet **ID** i analysen uttryckligen. Trots det vill vi inte att hus-ID ska betraktas som influerare. Det gör ingen nytta att få reda på att priset för ett hus ökar när hus-ID:t ökar. Det är här som fältkällan **Expandera efter** kommer till pass. Du kan använda **Expandera efter** för att lägga till fält som du vill använda för att ange analysnivån utan att behöva leta efter nya influerare.
+
+Ta en titt på hur visualiseringen ser ut när vi har lagt till **ID** i **Expandera efter**. När du har definierat den nivå som du vill att måttet analyseras på fungerar tolkning av influerare på exakt samma sätt som för [ej sammanfattande numeriska kolumner](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+
+![Tabell med mått](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+
+Om du vill lära dig mer om hur du kan analysera mått med visualiseringen av viktiga influerare kan du se följande självstudie.
+
+<iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning 
  
 **Vilka begränsningar gäller för det visuella objektet?** 
@@ -244,6 +287,12 @@ Visualiseringen letar efter mönster i data för en grupp jämfört med andra gr
 Vi rekommenderar minst 100 observationer för det valda tillståndet. I det här fallet är tillståndet kunder som slutar använda tjänsten. Du behöver också minst 10 observationer för de tillstånd som du använder till jämförelse. I det här fallet är jämförelsetillståndet kunder som inte slutar använda tjänsten.
 
 Om du analyserar ett numeriskt fält kanske du vill växla från **kategorisk analys** till **kontinuerlig analys** i **formateringsfönstret** under kortet **Analys**.
+
+**Jag får ett fel att när ”Analysera” inte är sammanfattad så körs analysen alltid på radnivån för sin överordnade tabell. Det är inte tillåtet att ändra den här nivån via ”Expandera efter”-fält. Varför?**
+
+Vid analys av en numerisk eller kategorisk kolumn körs analysen alltid på tabellnivån. Om du till exempel analyserar huspriser och din tabell innehåller en ID-kolumn körs analysen automatiskt på hus-ID-nivån. 
+
+När du analyserar ett mått eller en sammanfattad kolumn måste du uttryckligen ange vilken nivå som du vill att analysen ska köras på. Du kan använda **Expandera efter** för att ändra analysnivån för mått och sammanfattade kolumner utan att lägga till nya influerare. Om **Huspris** definierades som ett mått skulle du kunna lägga till kolumnen hus-ID till **Expandera efter** för att ändra nivån på analysen.
 
 **Jag ser ett fel om att ett fält i *Förklara med* inte är unikt relaterat till tabellen som innehåller måttet jag analyserar. Varför?**
  

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222268"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561053"
 ---
 # <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller 
 Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger baserat på cellvärden, eller baserat på andra värden eller fält. Du kan även använda toningar. Du kan också visa cellvärden med datastaplar. 
@@ -130,11 +130,17 @@ På så vis kan du sedan få resultat som liknar de i följande matris.
 
 Du kan skapa många fler varianter genom att bara använda din fantasi och DAX.
 
-Du kan använda någon av de värden som anges i CSS-specifikationen för färg på [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) till bakgrundsfärg för de visuella objekten:
-* 3, 6- eller 8 siffra hex kodar t.ex. #3E4AFF. Kontrollera att du inkluderar symbolen # i början av koden. ”3E4AFF” accepteras inte. 
-* RGB eller RGBA värden t.ex. RGBA (234, 234, 234, 0,5)
-* HSL eller HSLA t.ex. värden HSLA (123, 75%, 75%, 0,5)
-* Färg namn t.ex. grönt, SkyBlue, PeachPuff 
+Du kan använda vilka som helst av de värden som anges i CSS-färgspecifikationen på [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) för att färglägga visuella objekt:
+* Hexadecimala koder med 3, 6 eller 8 siffror, till exempel #3E4AFF. #-symbolen ska finnas med i början av koden. "3E4AFF" fungerar inte. 
+* RGB- eller RGBA-värden, till exempel RGBA(234, 234, 234, 0.5)
+* HSL- eller HSLA-värden, till exempel HSLA(123, 75%, 75%, 0.5)
+* Färgnamn, till exempel Green, SkyBlue eller PeachPuff 
+
+## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
+Det finns några saker att tänka på när du arbetar med villkorsstyrd tabellformatering:
+
+* Villkorsstyrd formatering tillämpas endast på värdena för ett visuellt **matrisobjekt** och tillämpas inte på delsummor eller totalsummor. 
+
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information finns i följande artikel:  

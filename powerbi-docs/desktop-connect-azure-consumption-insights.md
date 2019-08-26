@@ -1,5 +1,5 @@
 ---
-title: Ansluta till Azure-kostnader och användning från Power BI Desktop
+title: Analysera Azure-kostnader och användningsdata i Power BI Desktop
 description: Det är enkelt att ansluta till Azure och få insikter om användning med Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,66 +8,77 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 08/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c2ef62dc3ea8aac9c4a0d30ba4dba58e2279490
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.openlocfilehash: 80eb366015de3822b9c8c455f1ee386a34e1f457
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469834"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561022"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysera Azure-kostnader och användningsdata i Power BI Desktop
 
-Power BI Desktop kan ansluta till Azure och få detaljerade data om användningen av din organisations Azure-tjänst. Med den kan du skapa anpassade rapporter och åtgärder för att bättre förstå och analysera dina Azure-kostnader.
+Du kan använda Power BI Desktop för att ansluta till Azure och få detaljerade data om din organisations användning av Azure-tjänster. Med dessa data kan du skapa anpassade rapporter och åtgärder för att bättre förstå och analysera dina Azure-kostnader.
 
 Power BI stöder för närvarande anslutning till faktureringskonton för Enterprise-avtal och kundavtal.
 
-* **Användare med Enterprise-avtal** bör ansluta med **Azure Consumption Insights-anslutningsappen**.
+* **Användare med Enterprise-avtal** bör ansluta med **Azure Consumption Insights-anslutningsprogrammet** (nedan).
 
-* **Användare med kundavtal** bör ansluta med **Azure Cost Management-anslutningsappen**.
+* **Användare med kundavtal** bör ansluta med [**Azure Cost Management-anslutningsprogrammet**](#connect-with-azure-cost-management).
 
 ## <a name="connect-with-azure-consumption-insights"></a>Ansluta till Azure Consumption Insights
 
 Med Azure Consumption Insights kan du ansluta till Azure Enterprise-avtal för faktureringskonton.
 
-I det här avsnittet lär du dig att hämta de data du behöver, migrera med hjälp av Azure Enterprise Connector-anslutningsappen samt hitta en mappning av *användningsinformationskolumner* som är tillgängliga i API:et för **ACI** (Azure Consumption Insights).
+I det här avsnittet lär du dig att hämtar de data du behöver migrera med hjälp av Azure Enterprise-anslutningsprogrammet. Det finns även en mappning av *kolumner med användningsinformation* i **ACI**-API:et (Azure Consumption Insights).
 
-För att ansluta med hjälp av anslutningsappen **Azure Consumption Insights** måste du ha åtkomst till företagsfunktioner i Azure-portalen.
+För att korrekt använda **Azure Consumption Insights**-anslutningsprogrammet behöver du ha åtkomst till Enterprise-funktionerna i Azure-portalen.
 
-Om du vill ansluta med hjälp av anslutningsappen **Azure Consumption Insights** väljer du **Hämta data** från fältet **Start** i **Power BI Desktop**. Välj **Onlinetjänster** från kategorierna till vänster för att visa **Microsoft Azure Consumption Insights (beta)** . Välj **Anslut**.
+Så här använder du **Azure Consumption Insights**-anslutningsprogrammet i **Power BI Desktop**: 
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+1. På menyfliksområdet **Start** väljer du **Hämta data**.
 
-Ange ditt *registreringsnummer* i dialogrutan.
+1. I kategorierna till vänster väljer du **Onlinetjänster**.  
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+1. Välj **Microsoft Azure Consumption Insights (Beta)** . 
 
-* Du kan hämta ditt registreringsnummer från [Azure Enterprise Portal](https://ea.azure.com), på den plats som visas i följande bild:
+1. Välj **Anslut**.
+
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+
+   I den dialogruta som visas anger du ditt **Azure-registreringsnummer**.
+
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+
+   * Du kan hämta ditt registreringsnummer från [Azure Enterprise Portal](https://ea.azure.com), på den plats som visas i följande bild:
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
 
-  Den här versionen av anslutningsappen stöder bara enterprise-registreringar från https://ea.azure.com. Registreringar från Kina stöds inte för tillfället.
+   Den här versionen av anslutningsprogrammet stöder bara Enterprise-registreringar från https://ea.azure.com. Registreringar från Kina stöds inte för tillfället.
 
-Ange därefter din *åtkomstnyckel* för att ansluta.
+   Ange därefter din *åtkomstnyckel* för att ansluta.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
-* Din åtkomstnyckel för certifikatregistrering kan hittas på [Azure Enterprise Portal](https://ea.azure.com).
+   * Din åtkomstnyckel för certifikatregistrering kan hittas på [Azure Enterprise Portal](https://ea.azure.com).
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-När du väl angett din *Åtkomstnyckel* och valt **Anslut**, visas ett **Navigator**-fönster som visar dig de nio tabellerna som är tillgängliga för dig:
-* **Budgetar**: Ger budgetinformation för att visa faktiska kostnader eller användning mot befintliga budgetmål.
-* **MarketPlace**: Ger användningsbaserade Microsoft Azure Marketplace-avgifter.
-* **PriceSheets**: Ger tillämpliga priser efter mätare för en registrering.
-* **RICharges**: Ger kostnader som är kopplade till dina Reserverade instanser under de senaste 24 månaderna.
-* **RIRecommendations_Single**: Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enda prenumeration under de senaste 7, 30 eller 60 dagarna.
-* **RIRecommendations_Shared**: Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna.
-* **RIUsage**: Ger information om förbrukning för dina befintliga reserverade instanser under den senaste månaden.
-* **Sammanfattningar**: Ger en månatlig sammanfattning över saldon, nya inköp, Microsoft Azure Marketplace-tjänstavgifter, justeringar och överförbrukningskostnader.
-* **UsageDetails**: Ger en uppdelning av förbrukade mängder och uppskattade kostnader för en registrering.
+När du har angett din *åtkomstnyckel* och valt **Anslut** visas ett **navigatörsfönster** som visar de nio tillgängliga tabellerna:
+
+| Tabell        | Beskrivning |
+|------------- | -------------------------------------------------------------|
+| **Budgetar** | Budgetinformation för att visa faktiska kostnader eller användning mot befintliga budgetmål. |
+| **MarketPlace** | Användningsbaserade Azure Marketplace-avgifter. |
+| **PriceSheets** | Tillämpliga priser efter mätare för en registrering. |
+| **RICharges** | Kostnader som är kopplade till dina reserverade instanser under de senaste 24 månaderna. |
+| **RIRecommendations_Single** | Rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enstaka prenumeration under de senaste 7, 30 eller 60 dagarna. |
+| **RIRecommendations_Shared** | Rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna. |
+| **RIUsage** | Information om förbrukning för dina befintliga reserverade instanser under den senaste månaden. |
+| **Sammanfattningar** | En månatlig sammanfattning av saldon, nya inköp, Azure Marketplace-tjänstavgifter, justeringar och överförbrukningskostnader. |
+| **UsageDetails** | Detaljer om förbrukade kvantiteter och uppskattade registreringskostnader. |
 
 Du kan markera kryssrutan intill varje tabell för att visa en förhandsgranskning. Du kan markera en eller flera tabeller genom att markera rutan bredvid användarens namn och sedan välja **Ladda**.
 
@@ -87,41 +98,52 @@ De dina valda data har laddats kommer dina valda tabeller och fält att visas i 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## <a name="using-azure-consumption-insights"></a>Använda Azure Consumption Insights
-För att använda anslutningsappen **Azure Consumption Insights** måste du ha åtkomst till företagsfunktioner i Azure-portalen.
+För att använda **Azure Consumption Insights**-anslutningsprogrammet behöver du ha åtkomst till Enterprise-funktionerna i Azure-portalen.
 
-När du har läst in data med hjälp av anslutningsappen **Azure Consumption Insights** kan du skapa dina egna anpassade mått och kolumner med hjälp av **frågeredigeraren** och du kan skapa visuella objekt, rapporter och instrumentpaneler som du kan dela i tjänsten **Power BI**.
+När du har läst in data med hjälp av **Azure Consumption Insights**-anslutningsprogrammet kan du skapa dina egna anpassade mått och kolumner med hjälp av **frågeredigeraren**. Du kan även skapa visuella objekt, rapporter och instrumentpaneler för delning i **Power BI-tjänsten**.
 
-Azure innehåller också en samling anpassade exempelfrågor som du kan hämta genom att använda en tom fråga. I **Start** menyfliksområdet av **Power BI Desktop** väljer du den nedåtpilen i **Hämta data** och välj sedan **Tom fråga**. Du kan också göra detta i **frågeredigeraren** genom att högerklicka på panelen **Frågor** till vänster och välja **Ny fråga >Tom fråga** från menyn.
+Med en tom fråga kan du hämta en exempelsamling med anpassade Azure-frågor. Det finns två sätt att utföra den här hämtningen: 
 
-I **formelfältet** skriver du följande:
+I **Power BI Desktop**: 
+
+1. Välj menyfliksområdet **Start** 
+2. Välj **Hämta data** > **Tom fråga** 
+
+Eller i **frågeredigeraren**: 
+
+1. Högerklicka i det vänstra fönstret **Frågor** 
+2. Välj **Ny fråga > Tom fråga** i den meny som visas
+
+I **formelfältet** skriver du:
 
     = MicrosoftAzureConsumptionInsights.Contents
 
-En samling exempel visas enligt följande bild:
+I följande bild finns en exempelsamling som visas.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
-När du arbetar med rapporter och skapa frågor kan du använda följande:
+När du arbetar med rapporter och skapar frågor kan du göra följande:
 
 * Om du vill definiera antalet månader från dagens datum använder du *numberOfMonth*
-  * Använd ett värde mellan ett och 36 som representerar antalet månader från dagens datum som du vill importera. Vi rekommenderar att du hämtar max tolv månaders data för att undvika tröskelvärden med importbegränsningar och tillåten datavolym för frågor i Power BI.
+  * Använd ett värde mellan 1 och 36. Representerar det antal månader från dagens datum som du vill importera. Vi rekommenderar att du inte hämtar data för fler än 12 månader. Den här gränsen förhindrar begränsningar för Power BI-frågeimport och trösklar för datavolym.
 * Om du vill definiera månader i ett historikfönster väljer du *startBillingDataWindow* och *endBillingDataWindow*
-* Använd *inte* *numberOfMonth* tillsammans med *startBillingDataWindow* eller *endBillingDataWindow*
+* Använd inte *numberOfMonth* tillsammans med *startBillingDataWindow* eller *endBillingDataWindow*
 
-## <a name="migrating-from-the-azure-enterprise-connector"></a>Migrera från Azure Enterprise Connector
-Vissa kunder har skapat visuella objekt med hjälp av *Azure Enterprise Connector (beta)* som snart kommer att upphöra och ersätts av anslutningsappen **Azure Consumption Insights**. Anslutningsappen **Azure Consumption Insights** har bland annat följande funktioner och förbättringar:
+## <a name="migrate-from-the-azure-enterprise-connector"></a>Migrera från Azure Enterprise-anslutningsprogrammet
+
+Vissa kunder skapade visuella objekt med hjälp av *Azure Enterprise-anslutningsprogrammet (beta)* . Så småningom kommer det att ersättas med **Azure Consumption Insights**-anslutningsprogrammet. Det nya anslutningsprogrammet har funktioner och förbättringar som omfattar:
 
 * Fler datakällor som är tillgängliga för *Saldosammanfattning* och *Inköp från Marketplace*
 * Nya och avancerade parametrar som *startBillingDataWindow* och *endBillingDataWindow*
 * Bättre prestanda och tillgänglighet
 
-För att hjälpa kunder att övergå till den nya anslutningsappen **Azure Consumption Insights** och för att bevara deras arbete med anpassade instrumentpaneler och rapporter visar följande steg hur övergången går till.
+Nästa steg visar hur du övergår till **Azure Consumption Insights**-anslutningsprogrammet. De här stegen bevarar det arbete som du redan har gjort vid skapandet av anpassade instrumentpaneler eller rapporter.
 
 ### <a name="step-1-connect-to-azure-using-the-new-connector"></a>Steg 1: Anslut till Azure med hjälp av den nya anslutningsappen
-Det första steget är att ansluta med anslutningsappen **Azure Consumption Insights** som beskrevs i detalj tidigare i den här artikeln. Nästa steg är att välja **Hämta data > Tom fråga** från menyfliksområdet **Start** i **Power BI Desktop**.
+Det första steget är att använda **Azure Consumption Insights**-anslutningsprogrammet enligt den detaljerade beskrivningen tidigare i den här artikeln. Nästa steg är att välja **Hämta data > Tom fråga** från menyfliksområdet **Start** i **Power BI Desktop**.
 
-### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Steg 2: Använd Avancerad redigerare för att skapa en fråga
-I **Frågeredigeraren** väljer du **Avancerad redigerare** från området **Fråga** i menyfliksområdet **Start**. I fönstret **Avancerad redigerare** som visas anger du följande fråga:
+### <a name="step-2-create-a-query-in-advanced-editor"></a>Steg 2: Skapa en fråga i Avancerad redigerare
+I **frågeredigeraren** väljer du **Avancerad redigerare** från menyfliksområdet **Start** -> avsnittet **Fråga**. I fönstret **Avancerad redigerare** som visas anger du den här frågan:
 
     let    
         enrollmentNumber = "100",
@@ -132,35 +154,35 @@ I **Frågeredigeraren** väljer du **Avancerad redigerare** från området **Fr�
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 
-Naturligtvis måste du ersätta värdet för *enrollmentNumber* med ditt egen registreringsnummer som du kan hämta från [Azure Enterprise Portal](https://ea.azure.com). Parametern *numberOfMonth* är antalet månaders data du vill hämta räknat från dagens datum. Använd noll (0) för den aktuella månaden.
+Du behöver ersätta värdet för *enrollmentNumber* med ditt registreringsnummer. Du kan hämta ditt nummer från [Azure Enterprise-portalen](https://ea.azure.com). Parametern *numberOfMonth* är det antal månaders data som du vill ha räknat tillbaka från dagens datum. Använd noll (0) för den aktuella månaden.
 
 När du har valt **Klar** i fönstret **Avancerad redigerare** uppdateras förhandsgranskningen, och data från det valda månadsintervallet visas i tabellen. Välj **Stäng & tillämpa** och gå tillbaka.
 
 ### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Steg 3: Flytta mått och anpassade kolumner till den nya rapporten
-Därefter måste du flytta eventuella anpassade kolumner eller mått som du skapade i den nya informationstabellen. Gör så här:
+Därefter behöver du flytta eventuella anpassade kolumner eller mått som du skapade till den nya informationstabellen. Gör så här:
 
 1. Öppna Anteckningar (eller något annat textredigeringsprogram).
 2. Välj det mått som du vill flytta, kopiera text från fältet *Formel* och placera den i anteckningar.
 
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Byt namn på *Fråga1* till ursprungliga informationstabellens namn.
-4. Skapa nya åtgärder och anpassade kolumner i tabellen genom att högerklicka på tabellen och välja **Nytt mått**. Klipp och klistra in dina lagrade mått och kolumner tills du är klar.
+4. För att skapa nya tabellmått och anpassade kolumner högerklickar du på tabellen och väljer **Nytt mått**. Klipp sedan ut och klistra in dina sparade mått och kolumner tills alla är klara.
 
-### <a name="step-4-re-link-tables-that-had-relationships"></a>Steg 4: Länka tabeller med relationer
+### <a name="step-4-relink-tables-that-had-relationships"></a>Steg 4: Länka om tabeller som hade relationer
 Många instrumentpaneler har ytterligare tabeller som används för sökning och filtrering, till exempel datumtabeller eller tabeller som används för anpassade projekt. Du kan lösa merparten av återstående problem genom att återupprätta dessa relationer. Gör så här.
 
-- På fliken **Modellering** i **Power BI Desktop** väljer du **Hantera relationer** för att öppna ett fönster där du kan hantera relationer i modellen. Länka om dina tabeller, om det behövs.
+- På fliken **Modellering** i **Power BI Desktop** väljer du **Hantera relationer** för att öppna ett fönster där du kan hantera relationer i modellen. Länka om dina tabeller om det behövs.
 
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Steg 5: Kontrollera dina visuella objekt och justera fältformateringen vid behov
-När du har kommit så här långt bör de flesta av dina visuella objekt, tabeller och listrutor fungera som förväntat. Du kan dock behöva göra några mindre justeringar i formatet så att allt blir precis som du vill ha det. Ägna en stund åt att titta på dina instrumentpaneler och visuella objekt så att de ser helt rätt ut.
+Vid det här laget bör de flesta av dina ursprungliga visuella objekt, tabeller och detaljerad information fungera som förväntat. Vissa mindre justeringar kan dock vara nödvändiga för att noggrant formatera utseendet och känslan. Ägna en stund åt att titta på dina instrumentpaneler och visuella objekt så att de ser helt rätt ut.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Använda API:et Azure Consumption och Insights (ACI) för att hämta förbrukningsdata
 Azure tillhandahåller också API:et [**Azure Consumption and Insights (ACI)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan skapa dina egna anpassade lösningar för att hämta, rapportera och visualisera förbrukningsinformation i AZURE med ACI API.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Kartlägg namn och användnings information mellan portalen, anslutningsappen och API:et
-Kolumnerna och namnen på detaljerna i Azure Portal ser ut på samma sätt i API:et och anslutningsappen men de är inte alltid identiska. För att tydliggöra detta kartlägger följande tabell relationerna mellan API:et, anslutningsappen och kolumnerna du ser i Azure Portal. Här ser du även om kolumnen inte längre gäller. För mer information och definitioner av dessa begrepp kan du läsa mer i [ordlistan för faktureringsdata i Azure](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
+Kolumnerna och detaljnamnen i Azure-portalen ser liknande ut i API:et och anslutningsprogrammet, men de är inte alltid identiska. Följande tabell innehåller en mappning för att klargöra. Här ser du även om kolumnen inte längre gäller. Mer information och begreppsdefinitioner finns i [ordlistan för faktureringsdata i Azure](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
 
 | ACI-anslutningsappens/Innehållspaketets kolumnnamn | ACI API-kolumnnamn | EA-kolumnnamn | Gäller inte/tillgänglig för bakåtkompatibilitet |
 | --- | --- | --- | --- |
@@ -219,34 +241,57 @@ I det här avsnittet lär du dig att ansluta till ditt faktureringskontos kundav
 >
 >
 
-Om du vill ansluta med hjälp av anslutningsappen **Azure Cost Management** väljer du **Hämta data** i menyfliksområdet **Start** i **Power BI Desktop**.  Välj **Azure** i kategorierna till vänster. **Azure Cost Management (Beta)** öppnas. Välj **Anslut**.
+Så här använder du **Azure Cost Management**-anslutningsprogrammet i **Power BI Desktop**:
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
+1. På menyfliksområdet **Start** väljer du **Hämta data**.
 
-I dialogrutan som visas anger du ditt *faktureringsprofils-ID*.
+1. I kategorierna till vänster väljer du **Azure**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+1. Välj **Azure Cost Management (beta)** till höger.
 
-Du kan hämta ditt faktureringsprofils-ID i [Azure-portalen](https://portal.azure.com).  Gå till **Kostnadshantering + fakturering**. Välj ditt faktureringskonto och välj sedan **Faktureringsprofiler** i sidopanelen.  Välj din faktureringsprofil och **Egenskaper** i sidopanelen.  Kopiera ditt faktureringsprofils-ID.
+1. Välj **Anslut**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
 
-Du uppmanas att logga in med din e-postadress och ditt lösenord för Azure.  När du har autentiserat visas ett **navigerings**fönster med de tolv tabeller som är tillgängliga för dig:
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
 
-* **Faktureringshändelser**: Visar en händelselogg med nya fakturor, kreditinköp etc.
-* **Budgetar**: Ger budgetinformation för att visa faktiska kostnader eller användning mot befintliga budgetmål.
-* **Avgifter**: Innehåller en månatlig sammanfattning av Azure-användningen, marknadskostnader samt avgifter som debiterats separat.
-* **Krediter**: Visar inköpsinformation med Azure-krediter för den angivna faktureringsprofilen.
-* **Kreditsammanfattning**: Visar en kreditsammanfattning för den angivna faktureringsprofilen.
-* **Marketplace**: Ger användningsbaserade Microsoft Azure Marketplace-avgifter.
-* **PriceSheets**: Visar tillämpliga priser per mätare för den angivna faktureringsprofilen.
-* **RI-avgifter**: Ger kostnader som är kopplade till dina Reserverade instanser under de senaste 24 månaderna.
-* **RI-rekommendationer (enkel)** : Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enda prenumeration under de senaste 7, 30 eller 60 dagarna.
-* **RI-rekommendationer (delad)** : Ger rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna.
-* **RI-användning**: Ger information om förbrukning för dina befintliga reserverade instanser under den senaste månaden.
-* **Användningsinformation**: Visar en uppdelning av förbrukade mängder och beräknade kostnader för ett specifikt faktureringsprofils-ID.
+   I den dialogruta som visas anger du ditt **faktureringsprofils-ID**.
 
-Du kan markera kryssrutan bredvid tabellen om du vill se en förhandsgranskning.  Du kan markera en eller flera tabeller genom att markera rutan bredvid namnet och sedan välja **Läs in**.
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+
+Du kan hämta ditt ID i [Azure-portalen](https://portal.azure.com):
+
+1. Gå till **Kostnadshantering + fakturering**.
+
+1. Välj ditt faktureringskonto.
+
+1. Välj **Faktureringsprofiler** i sidofältet.
+
+1. Välj din faktureringsprofil.
+
+1. Välj **Egenskaper** i sidofältet.
+
+1. Kopiera ditt faktureringsprofils-ID.
+
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
+
+   Du uppmanas att logga in med din e-postadress och ditt lösenord för Azure.  När du har autentiserat visas ett **navigatörsfönster** med de tolv tillgängliga tabellerna:
+
+| Tabell        | Beskrivning |
+|-------------------- | -------------------------------------------------------------|
+| **Faktureringshändelser** | Händelselogg med nya fakturor, kreditinköp och mer. |
+| **Budgetar** | Budgetinformation för att visa faktiska kostnader eller användning mot befintliga budgetmål. |
+| **Avgifter** | En månatlig sammanfattning av Azure-användningen, marknadskostnader samt avgifter som debiterats separat. |
+| **Krediter** | Inköpsinformation med Azure-krediter för den angivna faktureringsprofilen. |
+| **Kreditsammanfattning** | Kreditsammanfattning för den angivna faktureringsprofilen. |
+| **MarketPlace** | Användningsbaserade Azure Marketplace-avgifter. |
+| **PriceSheets** | Tillämpliga mätarpriser för den angivna faktureringsprofilen. |
+| **RI-avgifter** | Kostnader som är kopplade till dina reserverade instanser under de senaste 24 månaderna. |
+| **RI-rekommendationer (enkel)** | Rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enstaka prenumeration under de senaste 7, 30 eller 60 dagarna. |
+| **RI-rekommendationer (delad)** | Rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna. |
+| **RI-användning** | Information om förbrukning för dina befintliga reserverade instanser under den senaste månaden. |
+| **Användningsinformation** | Detaljer om förbrukade mängder och beräknade kostnader för det angivna faktureringsprofils-ID:t. |
+
+Du kan markera en tabellkryssruta för att visa en förhandsgranskning.  Du kan markera en eller flera tabeller genom att markera rutan bredvid namnet och sedan välja **Läs in**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
 
@@ -258,13 +303,21 @@ De dina valda data har laddats kommer dina valda tabeller och fält att visas i 
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
 
-Titta på videon [How to analyze spending in Power BI with Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk) (Så analyserar du utgifter i Power BI med Azure Consumption Insights) om att granska dina kostnadsdata i Power BI Desktop med hjälp av Azure Consumption Insights-anslutningsappen.
+Se [hur du analyserar utgifter i Power BI med Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk). Den här videon förklarar hur du granskar dina kostnadsdata i Power BI Desktop med hjälp av Azure Consumption Insights-anslutningsprogrammet.
 
 ## <a name="writing-custom-queries"></a>Skriva anpassade frågor
 
-Om du vill anpassa antalet månader, ändra API-versionen eller utföra mer avancerad logik på de data som returneras, kan du skapa en anpassad M-fråga.
+Du kan skapa en anpassad [M-fråga](/powerquery-m/power-query-m-reference) för att anpassa antalet månader, ändra API-versionen eller utföra mer avancerad logik på de returnerade data.
 
-Gå till menyfliksområdet **Start** i **Power BI Desktop**. Välj listrutan i **Hämta data** och välj sedan **Tom fråga**.  Du kan också göra detta i **Frågeredigeraren** genom att högerklicka i fönstret **Frågor** till vänster och välja **Ny fråga > Tom meny** i menyn som visas.
+I **Power BI Desktop**:
+
+1. Välj menyfliksområdet **Start**
+2. Välj **Hämta data** > **Tom fråga**
+
+Eller i **frågeredigeraren**:
+
+1. Högerklicka i det vänstra fönstret **Frågor**
+2. Välj **Ny fråga > Tom meny** i den meny som visas
 
 I **formelfältet** skriver du följande och byter ut `billingProfileId` mot ditt faktiska ID och ”debiteringar” mot ett giltigt tabellnamn (listan ovan).
 
@@ -276,14 +329,14 @@ in
     charges
 ```
 
-Förutom att ändra `numberOfMonths` till ett värde mellan 1 och 36, kan du också ange:
+Utöver att ändra `numberOfMonths` till valfritt värde mellan 1 och 36 kan du även ange följande:
 
-* `apiVersion` för att anpassa vilken API-version frågan ska anropa.
-* `lookbackWindow` för RI-rekommendationer (enkla eller delade), för att ändra det fönster rekommendationerna genereras från (giltiga alternativ: 7, 30 eller 60 dagar)
-
+* `apiVersion` för att anpassa vilken API-version som frågan anropar.
+* `lookbackWindow` för RI-rekommendationer (enkla eller delade), för att ändra det fönster rekommendationerna genereras från (giltiga alternativ: 7, 30 eller 60 dagar).
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:
+
+Du kan ansluta till många olika datakällor med hjälp av Power BI Desktop. Mer information finns i följande artiklar:
 
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)

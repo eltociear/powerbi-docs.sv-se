@@ -7,45 +7,48 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0e523707caa38c808c777eb29bb8dcbdc6af5ebf
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721207"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023756"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
-Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att gör det rent och snyggt.
+Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att göra den ren och prydlig.
 
-Här följer några tips.
+![Exempelinstrumentpanel för marknadsföring och försäljning](media/service-dashboards-design-tips/power-bi-marketing-sample-dashboard.png)
 
 > [!TIP]
-> Många av utformningsprinciperna för rapporter kan även tillämpas för instrumentpaneler.  Läs vår white paper [Best design principles for reports and visualizations (Bästa utformningsprinciperna för rapporter och visualiseringar)](visuals/power-bi-visualization-best-practices.md).
->
->
+> Gillar du den här instrumentpanelen? Du kan ladda ned den samt relaterade rapporter från AppSource. Gå till **Hämta data** > **Tjänster**. Sök efter **Microsoft-exempel – Försäljning och marknadsföring** > **Hämta nu**.
 
-## <a name="watch-the-dashboard-makeover-webinarhttpsinfomicrosoftcomco-powerbi-wbnr-fy16-05may-12-dashboard-makeover-registrationhtml"></a>Titta på [webbseminariet om att göra om instrumentpaneler](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)
-Se Microsofts högsta programansvarige och expert på Power BI-instrumentpanelen, Marc Reguera, [göra om instrumentpaneler](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html).
+Många av utformningsprinciperna för rapporter kan även tillämpas för instrumentpaneler. Läs vår white paper [Best design principles for reports and visualizations (De bästa utformningsprinciperna för rapporter och visualiseringar)](visuals/power-bi-visualization-best-practices.md) om du vill veta mer.
+
+Här följer några tips för instrumentpaneler.
+
+## <a name="dashboard-design-best-practices-video"></a>Video om bästa praxis för instrumentpanelsdesign
+
+Titta på den här videon om [bästa praxis för instrumentpanelsdesign i Power BI](https://www.youtube.com/watch?v=-tdkUYrzrio) för att få designtips från Marco Russo från SQLBI.com.
 
 ## <a name="consider-your-audience"></a>Ta hänsyn till din målgrupp
 Vilka är de viktigaste måtten som kommer hjälpa dem att fatta beslut? Hur ska instrumentpanelen användas? Vilka inlärda eller kulturella antaganden kan påverka utformningsvalen? Vilken information behöver din målgrupp för att lyckas?
 
-Kom ihåg att instrumentpanelen är en översikt, en enskild plats där dina datas aktuella tillstånd kan övervakas. Instrumentpanelen baseras på underliggande rapporter och datauppsättningar och dessa kan innehålla massor av information. Dina läsare kan gå in på detaljer i rapporterna med instrumentpanelen som utgångspunkt. Så placera inte detaljerad information på instrumentpanelen, om det inte är vad läsarna behöver för att övervaka situationen.
+Kom ihåg att instrumentpanelen är en översikt, en enskild plats där dina datas aktuella tillstånd kan övervakas. Instrumentpanelen baseras på underliggande rapporter och datamängder, och dessa innehåller ofta massor av information. Dina läsare kan gå in på detaljer i rapporterna med instrumentpanelen som utgångspunkt. Placera därför inte detaljerad information på instrumentpanelen, om det inte är vad läsarna behöver övervaka.
 
-Var ska instrumentpanelen visas? Om den ska visas på en stor skärm kan du placera mer innehåll på den. Om läsarna ska visa den på sina surfplattor blir färre paneler lättare att läsa.
+Var ska instrumentpanelen visas? Om den visas på en stor skärm kan du placera mer innehåll på den. Men om läsarna visar den på sina surfplattor är en instrumentpanel med färre paneler lättare att läsa.
 
-## <a name="tell-a-story-and-keep-it-to-one-screen"></a>Förmedla ditt budskap och begränsa det till en skärm
+## <a name="tell-a-story-on-one-screen"></a>Berätta en historia på en skärm
 Eftersom avsikten med instrumentpaneler är ge översikt över viktig information på ett ögonblick, är det bäst att ha alla paneler på en skärm. Går det att undvika rullningslister på instrumentpanelen?
 
-Är instrumentpanelen för plottrig?  Ta bort allt utom viktig information som enkelt kan läsas och tolkas.
+Är instrumentpanelen för plottrig?  Ta bort allt förutom viktig information som enkelt kan läsas och tolkas.
 
 ## <a name="make-use-of-full-screen-mode"></a>Använd dig av helskärmsläge
-Visa instrumentpanelen i [helskärm](consumer/end-user-focus.md) utan störningar.
+När du presenterar en instrumentpanel kan du visa den i [helskärmsläge](consumer/end-user-focus.md) utan distraktioner.
 
-## <a name="make-the-most-important-information-biggest"></a>Gör den viktigaste informationen störst
+## <a name="accent-the-most-important-information"></a>Betona den viktigaste informationen
 Om texten och visualiseringarna på instrumentpanelen har samma storlek, får läsaren svårt att fokusera på vad som är viktigt. Till exempel är kortvisualiseringar ett bra sätt att visa upp ett viktigt tal på en framträdande plats:  
 ![Kortvisualisering](media/service-dashboards-design-tips/pbi_card.png)
 
@@ -53,25 +56,25 @@ Men kom ihåg att tillhandahålla kontexten.
 
 Läs mer om att [skapa en panel med bara ett tal](visuals/power-bi-visualization-card.md).
 
-## <a name="put-the-most-important-information-in-the-upper-corner"></a>Placera den viktigaste informationen i det övre hörnet
-De flesta läser uppifrån och ned, så placera mer allmän information högst upp och visa fler detaljer i den riktning som målgruppen läser (från vänster till höger eller från höger till vänster).
+## <a name="place-the-most-important-information"></a>Placera den viktigaste informationen
+De flesta läser uppifrån och ned. Placera därför mer allmän information i det övre vänstra hörnet, och visa fler detaljer i den riktning som målgruppen läser (från vänster till höger eller uppifrån och ned).
 
-## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Använd rätt visualisering för dina data och formatera den för enklare läsning
+## <a name="use-the-right-visualization-for-the-data"></a>Använda rätt visualisering för data
 Undvik att variera visualiseringarna bara för sakens skull.  Visualiseringar ska skapa en översiktsbild och vara enkla att ”läsa” och tolka.  För vissa data och visualiseringar räcker det med en enkel grafisk visualisering. Men andra data kan kräva en mer komplex visualisering – var noga med att använda rubriker och etiketter och andra anpassningar för att hjälpa läsaren.  
 
-* [Välj lämpliga datavisualiseringar](https://www.youtube.com/watch?v=-tdkUYrzrio). Var försiktig med att använda diagram som förvränger verkligheten, det vill säga 3D-diagram. Tänk på att det är svårt för den mänskliga hjärnan att tolka runda figurer. Cirkeldiagram, ringdiagram, måttdiagram och andra runda diagramtyper kan se fina ut men de är inte den bästa lösningen för datavisualisering.
-* Var konsekvent när du väljer skalor för diagram, bestämmer hur diagram ska dimensioneras och väljer färger för att betecknar värden i diagram.
-* Var noga med att koda kvantitativa data på ett snyggt sätt. Använd inte fler än tre eller fyra siffror när tal visas. Visa mått med en eller två siffror till vänster om decimaltecknet och skala för tusen eller miljoner, det vill säga skriv 3,4 miljoner och inte 3 400 000.
-* Blanda inte olika precisions- och tidsnivåer. Kontrollera att tidsramarna är lätta att förstå.  Placera inte ett diagram från förra månaden bredvid filtrerade diagram från en specifik månad det året.
-* Blanda inte stora och små mått på samma skala, t.ex i ett linje- eller stapeldiagram.  Som exempel då ett mått är i miljontal och det andra i tusental.  Med en så stor skala är det svårt att se skillnaderna mellan måtten i tusental.  Om du behöver blanda ska du välja en visualisering som tillåter användning av en andra axel.
-* Fyll inte dina diagram med dataetiketter som inte behövs. Värdena i stapeldiagram är vanligtvis lätta att förstå utan att man behöver visa det faktiska talet.
-* Var uppmärksam på hur [diagram sorteras](consumer/end-user-change-sort.md).  Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått.  Om du vill att användare snabbt ska kunna hitta en viss kategori bland många kategorier, kan du sortera efter axeln.  
-* Cirkeldiagram fungerar som bäst med mindre än åtta kategorier. Eftersom man inte kan jämföra värden sida vid sida, är det svårare för att jämföra värden i ett cirkeldiagram än i ett stapel- eller kolumndiagram. Cirkeldiagram är bättre för att visa förhållanden mellan en del och helheten, än för att jämföra delarna med varandra. Och måttdiagram är bra för att visa aktuell status i kontexten för ett mål.
+* Var försiktig med visuella objekt som ser fina ut men som är svåra att läsa, till exempel 3D-diagram. 
+* Det kan kännas snopet att cirkeldiagram, ringdiagram, måttdiagram och andra cirkulära diagramtyper inte utgör bästa praxis för datavisualiseringar. Cirkeldiagram fungerar som bäst med mindre än åtta kategorier. Eftersom människor inte kan jämföra värden sida vid sida är det svårare att jämföra värden i ett cirkeldiagram än i ett stapel- eller kolumndiagram. Cirkeldiagram är bättre för att visa förhållanden mellan en del och helheten, än för att jämföra delarna med varandra. Och måttdiagram är bra för att visa aktuell status i kontexten för ett mål.
+* Var konsekvent när du väljer skalor för diagram, bestämmer hur diagram ska dimensioneras och väljer färger för att beteckna värden i diagram.
+* Var noga med att koda kvantitativa data på ett snyggt sätt. Använd inte fler än tre eller fyra siffror när tal visas. Visa mått med en eller två siffror till vänster om decimaltecknet och skala för tusen eller miljoner. Skriv alltså 3,4 miljoner och inte 3 400 000.
+* Blanda inte olika precisions- och tidsnivåer. Kontrollera att tidsramarna är lätta att förstå. Placera inte ett diagram från förra månaden bredvid filtrerade diagram från en specifik månad det året.
+* Blanda inte stora och små mått på samma skala, till exempel i ett linje- eller stapeldiagram. Som exempel kan ett mått vara i miljontal och det andra måttet i tusental. Med en så stor skala är det svårt att se skillnaderna mellan måtten i tusental. Om du behöver blanda ska du välja en visualisering som tillåter användning av en andra axel.
+* Fyll inte diagrammen med dataetiketter som inte behövs. Värdena i stapeldiagram är vanligtvis lätta att förstå utan att man behöver visa det faktiska talet.
+* Var uppmärksam på hur [diagram sorteras](consumer/end-user-change-sort.md). Om du vill uppmärksamma det högsta eller lägsta talet kan du sortera efter mått. Om du vill att användare snabbt ska hitta en viss kategori bland många kategorier kan du sortera efter axeln.  
 
 Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
-## <a name="learning-more-about-best-practice-dashboard-design"></a>Mer om bästa praxis för instrumentpanelsutformning
-Överväg att lära dig mer om grundläggande Gestalt-principer för visuell perception och hur du tydligt kan kommunicera åtgärdsinriktad information i en kontext om du vill bli riktigt bra på att utforma instrumentpaneler. Som tur är finns det redan en mängd olika resurser tillgängliga och utströdda i våra bloggar. Några av våra favoritböcker är:
+## <a name="learn-more-about-dashboard-design"></a>Läs mer om instrumentpanelsdesign
+Överväg att lära dig mer om grundläggande Gestalt-principer för visuell perception och hur du tydligt kan kommunicera åtgärdsinriktad information i en kontext om du vill bli riktigt bra på att utforma instrumentpaneler. Som tur är finns det redan en mängd olika resurser tillgängliga och utströdda bland våra bloggar. Några av våra favoritböcker är:
 
 * *Information Dashboard Design* av Stephen Few  
 * *Show Me the Numbers* av Stephen Few  

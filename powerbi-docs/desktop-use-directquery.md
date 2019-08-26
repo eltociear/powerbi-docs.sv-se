@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757620"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654788"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -49,10 +49,13 @@ Det finns några fördelar med att använda **DirectQuery**:
 Det finns några begränsningar med att använda **DirectQuery**:
 
 * Alla tabeller måste komma från en enda databas, om du inte använder [sammansatta modeller](desktop-composite-models.md)
+
 * Om frågan till **frågeredigeraren** är alltför komplex uppstår ett fel. För att åtgärda felet måste du antingen ta bort det problematiska steget i **frågeredigeraren** eller *importera* data istället för att använda **DirectQuery**. För flerdimensionella källor som SAP Business Warehouse finns ingen **frågeredigerare**
-* Filtrering av relationen är begränsad till en enda riktning i stället för i båda riktningarna (det är dock möjligt att aktivera korsfiltrering i båda riktningarna för **DirectQuery**). För flerdimensionella källor som SAP Business Warehouse finns det inga definierade relationer i modellen
+
 * Tidsinformationsfunktioner är inte tillgängliga i **DirectQuery**. Till exempel stöds särskild behandling för datumkolumnerna (år, kvartal, månad, dag, osv) inte i **DirectQuery**-läget.
+
 * Det finns begränsningar för DAX-uttryck som tillåts i mått så att frågor som skickas till den underliggande datakällan har acceptabel prestanda.
+
 * Det finns en begränsning på en miljon rader för att returnera data när du använder **DirectQuery**. Denna begränsning påverkar inte aggregeringar eller beräkningar som används för att skapa datauppsättningen som returneras med **DirectQuery**, utan endast rader som returneras. Du kan till exempel sammanställa 10 miljoner rader med din fråga som körs på datakällan och korrekt returnerar resultat som aggregeringar till Power BI med hjälp av **DirectQuery** så länge data som returneras till Power BI är mindre än 1 miljon rader. Om mer än 1 miljoner rader ska returneras från **DirectQuery** returnerar Power BI ett fel.
 
 ## <a name="important-considerations-when-using-directquery"></a>Att tänka på när du använder DirectQuery

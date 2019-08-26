@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418678"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530497"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -36,7 +36,7 @@ Med de nya arbetsytorna kan du:
 När du skapar en av de nya arbetsytorna skapar du inte en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Power BI, inte i Office 365. I den nya arbetsyteupplevelsen kan du nu lägga till en Office 365-grupp till arbetsytans åtkomstlista för att fortsätta hantera användaråtkomst till innehåll via Office 365-grupper.
 
 ## <a name="administering-new-workspace-experience-workspaces"></a>Administrera arbetsytor för den nya arbetsyteupplevelsen
-Nu går det att administrera arbetsytor för den nya arbetsyteupplevelsen i Power BI och det är Power BI-administratörerna som bestämmer vilka i en organisation som får skapa arbetsytor. De kan också hantera och återställa arbetsytor. De måste använda Power BI-administratörsportalen eller PowerShell-cmdletar för att göra detta. För klassiska arbetsytor baserade på Office 365-grupper, sker administrationen även fortsatt i administrationsportalen för Office 365 och Azure Active Directory.
+Nu går det att administrera arbetsytor för den nya arbetsyteupplevelsen i Power BI och det är Power BI-administratörerna som bestämmer vilka i en organisation som får skapa arbetsytor. De kan även hantera och återställa arbetsytor med hjälp av antingen Power BI-administratörsportalen eller PowerShell-cmdletar. För klassiska arbetsytor baserade på Office 365-grupper, sker administrationen även fortsatt i administrationsportalen för Office 365 och Azure Active Directory.
 
 I **arbetsyteinställningarna** i administrationsportalen kan administratörer använda inställningen för att skapa arbetsytor (den nya arbetsyteupplevelsen) för att tillåta alla eller ingen i en organisation att skapa arbetsytor för den nya arbetsyteupplevelsen. De kan även begränsa skapandet till medlemmar eller vissa säkerhetsgrupper.
 
@@ -59,9 +59,9 @@ Om du vill bevilja åtkomst till en ny arbetsyta, lägger du till användargrupp
 
 Med roller kan du hantera vem som kan göra vad i en arbetsyta, så att teamen kan samarbeta. De nya arbetsytorna gör att du kan tilldela roller till enskilda användare och användargrupper: säkerhetsgrupper, Office 365-grupper och distributionslistor. 
 
-När du tilldelar roller till en användargrupp får personer i gruppen åtkomst till innehåll. Om du kapslar användargrupper får alla berörda användare behörighet. En användare som finns i flera användargrupper med olika roller får den högsta behörighetsnivån som de har tilldelats. 
+När du tilldelar roller till en användargrupp får personer i gruppen åtkomst till innehåll. Om du kapslar användargrupper får alla berörda användare behörighet.
 
-Det finns fyra roller för de nya arbetsytorna: administratörer, medlemmar, deltagare och läsare.
+Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltagare och läsare.
 
 |Kapacitet   | Admin  | Medlem  | Deltagare  | Läsare |
 |---|---|---|---|---|
@@ -74,23 +74,26 @@ Det finns fyra roller för de nya arbetsytorna: administratörer, medlemmar, del
 | Skapa, redigera och ta bort innehåll på arbetsytan.  |  X | X  | X  |   |
 | Publicera rapporter till arbetsytan och ta bort innehåll.  |  X | X  | X  |   |
 | Visa ett objekt. |  X | X  | X  | X  |
- 
+| Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan. |  X | X  | X  | X <sup>1</sup>  |
+| Kopiera en rapport. | X | X | X | X <sup>1</sup> |
+
+**1** Kräver en Power BI Pro-licens och [skapa-behörighet för datamängder](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
 ## <a name="licensing"></a>Licensiering
 Alla som du lägger till i en arbetsyta i den delade kapaciteten behöver en Power BI Pro-licens. På arbetsytan kan användarna samarbeta kring instrumentpaneler och rapporter som du planerar att publicera till en bredare publik eller hela organisationen. 
 
 Om du vill distribuera innehåll till andra i organisationen kan du tilldela Power BI Pro-licenser till de användarna eller placera arbetsytan i en Power BI Premium-kapacitet.
 
-När arbetsytan är i en Power BI Premium-kapacitet, kan användare med läsarroll få åtkomst till arbetsytan även om de inte har en Power BI Pro-licens. Om du tilldelar dessa användare en högre roll, som administratör, medlem eller deltagare, kan de dock inte få åtkomst till arbetsytan. De uppmanas att starta en Pro-utvärderingsversion om de försöker få åtkomst till arbetsytan. Om du vill använda läsarkapaciteten för användare utan Pro-licenser, ska du se till att användarna med läsarroll inte har andra arbetsyteroller, varken individuellt eller via en användargrupp. 
+När arbetsytan är i en Power BI Premium-kapacitet, kan användare med läsarroll få åtkomst till arbetsytan även om de inte har en Power BI Pro-licens. Om du tilldelar dessa användare en högre roll, till exempel administratör, medlem eller deltagare, uppmanas de dock att starta en Pro-utvärdering när de försöker komma åt arbetsytan. Om du vill använda läsarkapaciteten för användare utan Pro-licenser, ska du se till att användarna med läsarroll inte har andra arbetsyteroller, varken individuellt eller via en användargrupp. 
 
 > [!NOTE]
-> Vid publicering av rapporter till den nya arbetsyteupplevelsen tillämpas befintliga licensieringsregler strängare. Användare som försöker publicera från Power BI Desktop eller andra klientverktyg utan en Pro-licens möts av ett meddelande om att ”endast användare med Power BI Pro-licenser kan publicera till den här arbetsytan”.
+> Vid publicering av rapporter till den nya arbetsyteupplevelsen tillämpas befintliga licensieringsregler strängare. Användare som försöker publicera från Power BI Desktop eller andra klientverktyg utan en Pro-licens får ett meddelande om att ”endast användare med Power BI Pro-licenser kan publicera till den här arbetsytan”.
 
-## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Hur skiljer sig de nya arbetsytorna åt från aktuella arbetsytor?
+## <a name="how-the-new-workspaces-are-different"></a>Skillnaderna med de nya arbetsytorna
 
-Vi gör om vissa funktioner i och med de nya arbetsytorna. Här är de förändringarna som du kan förvänta dig blir permanenta. 
+Vi har gjort om vissa funktioner för de nya arbetsytorna. Här är de förändringarna som du kan förvänta dig blir permanenta. 
 
-* När du skapar des här arbetsytorna, skapas inte Office 365-grupper som för klassiska arbetsytor. Du kan dock nu använda en Office 365-grupp för att ge användare åtkomst till din arbetsyta genom att tilldela den till en roll. 
+* När du skapar de här arbetsytorna skapas inte Office 365-grupper som för klassiska arbetsytor. Du kan dock nu använda en Office 365-grupp för att ge användare åtkomst till din arbetsyta genom att tilldela den till en roll. 
 * I klassiska arbetsytor kan du bara lägga till enskilda personer till medlems- och administratörslistor. I de nya arbetsytorna kan du lägga till flera AD-säkerhetsgrupper, distributionslistor eller Office 365-grupper till de här listorna för enklare användarhantering. 
 - Du kan skapa ett innehållspaket för organisationen från en klassisk arbetsyta. Du kan inte skapa sådana från de nya arbetsytorna.
 - Du kan använda ett innehållspaket för organisationen från en klassisk arbetsyta. Du kan inte använda sådana från de nya arbetsytorna.

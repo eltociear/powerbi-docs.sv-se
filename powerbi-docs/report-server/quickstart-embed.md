@@ -1,38 +1,39 @@
 ---
-title: Bädda in en rapport med iFrame
-description: Bädda in rapporten i Power BI Report Server i en iFrame i SharePoint Server
+title: Bädda in en Power BI-rapportserverrapport med en iFrame i SharePoint Server
+description: Den här artikeln visar hur du bäddar in en Power BI-rapportserverraport i en iFrame i SharePoint Server
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/04/2018
-ms.topic: quickstart
+ms.date: 08/12/2019
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: ca26770c652c12573bf28e24b218b214bf1196fa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e1787863d2b5db50cdb9a8d09907fbee6623972f
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769862"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994979"
 ---
-# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Snabbstart: Bädda in en Power BI-rapportserverrapport med en iFrame i SharePoint Server
+# <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Bädda in en Power BI-rapportserverrapport med en iFrame i SharePoint Server
 
-I den här snabbstarten lär du dig att bädda in en Power BI Report Server-rapport med iFrame i en SharePoint-sida. Om du arbetar med SharePoint Online, måste Power BI Report Server vara allmänt tillgänglig. I SharePoint Online fungerar inte Power BI-webbdel som fungerar med Power BI-tjänsten med Power BI Report Server. 
+I den här artikeln lär du dig att bädda in en Power BI-rapportserverrapport med hjälp av en iFrame på en SharePoint-sida. Om du arbetar med SharePoint Online måste Power BI-rapportserver vara allmänt tillgänglig. I SharePoint Online fungerar inte den Power BI-webbdel som fungerar med Power BI-tjänsten med Power BI-rapportserver.  
 
 ![iFrame-exempel](media/quickstart-embed/quickstart_embed_01.png)
+
 ## <a name="prerequisites"></a>Förutsättningar
-* Du måste ha [Power BI-rapportservern](https://powerbi.microsoft.com/report-server/) installerad och konfigurerad.
-* Du måste ha [Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md) installerad.
-* Du måste ha en [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-miljö installerad och konfigurerad.
+* [Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) ska vara installerad och konfigurerad.
+* [Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md) ska vara installerat.
+* En [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-miljö ska installerad och konfigurerad.
 
-## <a name="creating-the-power-bi-report-server-report-url"></a>Skapa Power BI-rapportserverns rapport-URL
+## <a name="create-the-power-bi-report-url"></a>Skapa Power BI-rapport-URL:en
 
-1. Hämta exemplet från GitHub – [Bloggdemo](https://github.com/Microsoft/powerbi-desktop-samples).
+1. Ladda ned exemplet från GitHub: [Bloggdemo](https://github.com/Microsoft/powerbi-desktop-samples). Välj **Klona eller ladda ned** och sedan **Ladda ned ZIP**.
 
-    ![hämta en exempel-PBIX-fil](media/quickstart-embed/quickstart_embed_14.png)
+    ![Ladda ned PBIX-exempelfil](media/quickstart-embed/quickstart_embed_14.png)
 
-2. Öppna PBIX-exempelfilen från GitHub i **Power BI Desktop optimerad för Power BI Report Server**.
+2. Packa upp filen och öppna .pbix-exempelfilen i Power BI Desktop som optimerats för Power BI-rapportserver.
 
     ![PBI RS Desktop-verktyget](media/quickstart-embed/quickstart_embed_02.png)
 
@@ -40,49 +41,45 @@ I den här snabbstarten lär du dig att bädda in en Power BI Report Server-rapp
 
     ![PBI RS spara](media/quickstart-embed/quickstart_embed_03.png)
 
-4. Visa rapporten i **webbportalen**.
+4. Visa rapporten i webbportalen för Power BI-rapportserver.
 
     ![Webbportalen](media/quickstart-embed/quickstart_embed_04.png)
 
-### <a name="capturing-the-url-parameter"></a>Samla in URL-parametern
+### <a name="capture-the-url-parameter"></a>Samla in URL-parametern
 
-När du har din URL kan du skapa en iFrame på en SharePoint-sida som värd för rapporten. För en Power BI-rapportserves rapport-URL kan du lägga till en querystring-parameter av `?rs:embed=true` för att bädda in rapporten i en iFrame. 
+När du har URL:en kan du skapa en iFrame på en SharePoint-sida för att värdhantera rapporten. För Power BI-rapportserverrapportens URL lägger du till följande frågesträngsparameter för att bädda in rapporten i en SharePoint-iFrame: `?rs:embed=true`.
 
    Till exempel:
     ``` 
     http://myserver/reports/powerbi/Sales?rs:embed=true
     ```
-## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Bädda in en Power BI Report Server-rapport i en SharePoint iFrame
+## <a name="embed-the-report-in-a-sharepoint-iframe"></a>Bädda in rapporten i en SharePoint-iFrame
 
 1. Navigera till en SharePoint **webbplatsinnehåll**-sida.
 
-    ![Webbplatsinnehållssida](media/quickstart-embed/quickstart_embed_05.png)
+    ![Sida med webbplatsinnehåll](media/quickstart-embed/quickstart_embed_05.png)
 
 2. Välj sidan där du vill lägga till en rapport.
 
-    ![App för webbplatsinnehållssida](media/quickstart-embed/quickstart_embed_06.png)
+    ![Sidapp med webbplatsinnehåll](media/quickstart-embed/quickstart_embed_06.png)
 
-3. Välj kugghjulet längst upp till höger och välj **Redigera sida**.
+3. Välj kugghjulsikonen längst upp till höger och välj sedan **Redigera sida**.
 
     ![Alternativet Redigera sida](media/quickstart-embed/quickstart_embed_07.png)
 
-4. Välj **Lägg till webbdel**.
+4. Välj **Lägg till en webbdel**.
 
-    ![Lägg till webbdel](media/quickstart-embed/quickstart_embed_08.png)
+5. Under **Kategorier** väljer du **Media och innehåll**. Under **Delar** väljer du **Innehållsredigerare** och sedan **Lägg till**.
 
-5. Under **Kategorier** välj **Media och innehåll**, under **Delar**, välj **Innehållsredigerare** och välj sedan **Lägg till** .
-
-    ![Välj webbdel för innehållsredigeraren](media/quickstart-embed/quickstart_embed_09.png) ![välj Lägg till](media/quickstart-embed/quickstart_embed_091.png)
+    ![Välja webbdel för innehållsredigeraren](media/quickstart-embed/quickstart_embed_09.png)
 
 6. Välj **Klicka här för att lägga till nytt innehåll**.
 
-    ![Lägg till nytt innehåll](media/quickstart-embed/quickstart_embed_10.png)
-
-7. Välj i menyfliksområdet fliken **Formatera text** och välj sedan **Redigera källa**.
+7. I menyn längst upp väljer du **Formatera text** och sedan **Redigera källa**.
 
      ![Redigera källa](media/quickstart-embed/quickstart_embed_11.png)
 
-8. I fönstret Redigera datakällan klistrar du in iFrame-koden och klickar på OK.
+8. I fönstret **Redigera källa** klistrar du in iFrame-koden i **HTML-källa** och väljer **OK**.
 
     ![iFrame-kod](media/quickstart-embed/quickstart_embed_12.png)
 
@@ -91,17 +88,17 @@ När du har din URL kan du skapa en iFrame på en SharePoint-sida som värd för
      <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 
-9. Välj i menyfliksområdet i´fliken **Sida** och markera **Sluta redigera**.
+9. I menyn längst upp väljer du **Sida** och sedan **Sluta redigera**.
 
     ![Sluta redigera](media/quickstart-embed/quickstart_embed_13.png)
 
-10. Du bör nu se rapporten på sidan.
+    Rapporten visas på sidan.
 
     ![iFrame-exempel](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Snabbstart: Skapa en Power BI-rapport för Power BI-rapportserver](quickstart-create-powerbi-report.md)  
-[Snabbstart: Skapa en sidnumrerad rapport för Power BI-rapportserver](quickstart-create-paginated-report.md)  
+- [Skapa en Power BI-rapport för Power BI-rapportserver](quickstart-create-powerbi-report.md).  
+- [Skapa en sidnumrerad rapport för Power BI-rapportserver](quickstart-create-paginated-report.md).  
 
-Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/) 
+Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/). 

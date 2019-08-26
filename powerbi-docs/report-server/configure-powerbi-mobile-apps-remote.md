@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/15/2018
+ms.date: 08/08/2019
 ms.author: maggies
-ms.openlocfilehash: 27b3aad6f1a96c069f56ed68823b71b38115a98a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7727157a9227a5340fccf0af129d87f69edd8c72
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770651"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994800"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Fjärrkonfiguration av Power BI iOS-mobilappar för åtkomst till en rapportserver
 
@@ -63,8 +63,10 @@ Här är ett exempel på hur man ställer in konfigurationsprincipen i Intune.
 Nu kan de visa och interagera med KPI:er och Power BI-rapporter som lagras på rapportservern.
 
 ## <a name="next-steps"></a>Nästa steg
-[Administratörsöversikt](admin-handbook-overview.md)  
-[Installera Power BI-rapportserver](install-report-server.md)  
+
+- [Aktivera fjärråtkomst till Power BI Mobile med Azure AD-programproxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+- [Administratörsöversikt](admin-handbook-overview.md)  
+- [Installera Power BI-rapportserver](install-report-server.md)  
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

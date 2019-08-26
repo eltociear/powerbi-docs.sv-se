@@ -7,19 +7,22 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567395"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530608"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiera rapporter från andra arbetsytor (förhandsversion)
 
-När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan du göra en kopia av den och sedan spara den på en annan webbplats. Du kan sedan ändra rapporten för att lägga till eller ta bort visuella objekt och andra element. Du behöver inte tänka på att skapa datamodellen. Den har redan skapats. Och det är mycket enklare att ändra en befintlig rapport än att börja från början. Men kan inte du publicera din kopia av rapporten i en app från den nya arbetsytan. Se en lista över andra [överväganden och begränsningar](service-datasets-across-workspaces.md#considerations-and-limitations) i artikeln ”Använda datauppsättningar över arbetsytor”.
+När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan du göra en kopia av den och sedan spara den på en annan arbetsyta. Du kan sedan ändra din kopia av rapporten genom att lägga till eller ta bort visuella objekt och andra element. Du behöver inte tänka på att skapa datamodellen. Den har redan skapats. Och det är mycket enklare att ändra en befintlig rapport än att börja från början. Men när du skapar en app från den nya arbetsytan kan du ibland inte publicera din kopia av rapporten i appen. Mer information finns i [Överväganden och begränsningar i artikeln ”Använda datamängder mellan arbetsytor”](service-datasets-across-workspaces.md#considerations-and-limitations).
+
+> [!NOTE]
+> För att göra en kopia behöver du en Pro-licens, även om den ursprungliga rapporten finns på en arbetsyta i en Premium-kapacitet.
 
 ## <a name="save-a-copy-of-a-report"></a>Skapa en kopia av en rapport
 

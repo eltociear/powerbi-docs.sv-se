@@ -7,24 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989401"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023390"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
-Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger eller andra färgteman. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
+Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger, ikonuppsättningar eller andra färgteman. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
 
 ![Rapportteman](media/desktop-report-themes/report-themes_1.png)
 
 När du använder ett **Rapporttema** behöver du en JSON-fil som använder en grundläggande struktur. Du kan sedan importera den här JSON-filen till Power BI Desktop och tillämpa den på din rapport. Strukturen för JSON-filen och processen att importera (det är bara några knappklick) är snabb och enkel.
 
-Du kan också anpassa och standardisera nästan alla element. Om du vill anpassa dem måste du använda JSON-filen som du justerar manuellt i fönstret **Formatering**. Målet är att ge dig fullständig kontroll över hur dina rapporter utseendet och känslan på en detaljerad nivå.
+Du kan också anpassa och standardisera nästan alla element. Om du vill anpassa dem måste du använda JSON-filen som du justerar manuellt i fönstret **Formatering**. Målet är att ge dig full kontroll över hur rapporterna ser ut och känns på en detaljerad nivå.
 
 ## <a name="how-report-themes-work"></a>Så här fungerar rapportteman
 Om du vill använda ett rapporttema i en Power BI Desktop-rapport kan du välja bland de tillgängliga rapportteman som är inbyggda eller importera ett anpassat tema.

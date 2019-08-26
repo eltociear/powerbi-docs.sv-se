@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 637a6476af6368fae2bcfed8d89aeb9f43276a6b
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61370502"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560824"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Visa objekt utan data i Power BI
 
@@ -25,7 +25,7 @@ Med Power BI kan du visualisera alla typer av data från olika källor. När du 
 
 ## <a name="determining-relevant-data"></a>Fastställa relevanta data
 
-Om du vill förstå hur Power BI fastställer vilka data som är relevanta att visa kan du ta en tabell som ett enkelt exempel. Med utgångspunkt från modellen i exempelavsnittet i slutet av den här artikeln, så tänk dig att du skapar en tabell med följande inställningar:
+Om du vill förstå hur Power BI fastställer vilka data som är relevanta att visa kan du ta en tabell som ett enkelt exempel. Med hjälp av den modell som representeras i avsnittet [Exempeldatamodell](#example-data-model), som finns i slutet av den här artikeln, kan du överväga att skapa en tabell med följande inställningar:
 
 **1. Grupper från samma tabell:** *Product[Color] – Product[Size]*
 
@@ -152,6 +152,25 @@ Hur det ser ut när funktionen **Visa poster utan data** är aktiverad:
 |Röd     |Blank         |         |
 
 Observera i det här fallet hur *ProductStyle[Finish]=None* inte visas i tabellen. Detta beror på att Power BI i det här fallet först markerade alla *Color*-värden i tabellen *Product*. Sedan väljer Power BI för varje färg motsvarande *Finish*-värde som innehåller data. Eftersom *None* inte visas i någon kombination av *Color*, så väljs den inte.
+
+
+## <a name="power-bi-visual-behavior"></a>Power BI – beteende för visuella objekt
+
+När **Visa poster utan data** är aktiverat för ett fält i ett visuellt objekt aktiveras funktionen automatiskt för alla andra fält som är i samma *bucket för visuella objekt* eller hierarki. En bucket för visuella objekt eller hierarki kan vara dess **Axel** eller **Förklaring**; **Kategori**; eller **Rader** eller **Kolumner**.
+
+![Fält för Axel och Förklaring](media/desktop-show-items-no-data/show-items-no-data-04.png)
+
+I till exempel ett visuellt matrisobjekt med fyra fält i bucketen **Rader** gäller att om ett fält har **Visa poster utan data** aktiverat så är det aktiverat för alla poster i matrisen. I följande bild är **Visa poster utan data** aktiverat för det första fältet i bucketen **Rader**, fältet *SupplierID*. Det är även aktiverat för de andra fälten i bucketen **Rader**.
+
+![Fält i samma visuella objekt aktiverar automatiskt Visa poster utan data](media/desktop-show-items-no-data/show-items-no-data-05.png)
+
+Fältet *Kontinent* som visas i bucketen **Kolumner** får dock *inte* funktionen **Visa poster utan data** automatiskt aktiverad. 
+
+Detta beteende för visuella objekt sker ofta när ett visuellt objekt konverteras till en annan typ, till exempel konvertering av ett visuellt matrisobjekt till ett visuellt tabellobjekt. I sådana konverteringar aktiveras **Visa poster utan data** automatiskt för alla fält som flyttas till en bucket där ett fält i den bucketen har funktionen aktiverad. I föregående exempel gäller att om *SupplierID* har funktionen **Visa poster utan data** aktiverad och det visuella objektet konverteras till en tabell flyttas fältet *Kontinent* från bucketen **Kolumner** (liksom fälten i bucketen **Rader**) till den enda bucket som används i ett visuellt tabellobjekt – bucketen **Värden**. Därmed får alla fält i bucketen **Värden** funktionen **Visa poster utan data** aktiverad.
+
+### <a name="exporting-data"></a>Exportera data
+
+Vid användning av funktionen **Exportera sammanfattade data** är beteendet för funktionen **Visa poster utan data** samma som om exporten hade konverterats till ett visuellt tabellobjekt. Vid export av ett visuellt objekt, till exempel ett visuellt diagrammatrisobjekt, kan de exporterade data därför se annorlunda ut än det visuella objekt som visas. Detta beror på att konverteringen till ett visuellt tabellobjekt, som en del av exportprocessen, skulle aktivera **Visa poster utan data** för alla fält som exporteras. 
 
 ## <a name="example-data-model"></a>Exempeldatamodell
 

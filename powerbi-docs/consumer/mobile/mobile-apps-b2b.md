@@ -1,6 +1,6 @@
 ---
 title: Visa Power BI-innehåll som en extern gästanvändare (Azure AD B2B)
-description: Använda Power BI-appar för att visa innehåll som delats med dig från extern organisation.
+description: Använd Power BI-mobilappar för att visa innehåll som delas med dig från en extern organisation.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,16 +9,16 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/27/2019
 ms.author: mshenhav
-ms.openlocfilehash: a15da4349ce97e34c8321909abc862e424b2839c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 900c7b57c2b6283c44e4a1923dd223d7dfd40ef7
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61338775"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490375"
 ---
-# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Visa Power BI-innehåll som delats med dig från en extern organisation
+# <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Visa Power BI-innehåll som delas med dig från en extern organisation
 
-Powerbi integrerar med Azure Active Directory business-to-business (Azure AD B2B) att tillåta säker distribution av Power BI-innehåll till gästanvändare utanför organisationen. Och externa gästanvändare kan använda Power BI-mobilappen för att få åtkomst till den Power BI-innehåll som delats med dem. 
+Power BI integreras med Azure Active Directory Business-to-business (Azure AD B2B) för att möjliggöra säker distribution av Power BI-innehåll till gästanvändare utanför din organisation. Och externa gästanvändare kan använda Power BI-mobilappen för att komma åt Power BI-innehåll som delas med dem. 
 
 
 Gäller för:
@@ -27,28 +27,30 @@ Gäller för:
 |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |
 
-## <a name="accessing-shared-content"></a>Åtkomst till delat innehåll
+## <a name="accessing-shared-content"></a>Komma åt delat innehåll
 
-**Först behöver du någon från en extern organisation att dela ett objekt med dig.** När någon [delar ett objekt med dig](../../service-share-dashboards.md), antingen från samma organisation eller från en extern organisation du får ett e-postmeddelande med en länk till det delade objektet. Efter den länken i din mobila enhet öppnas Power BI-mobilappen. Om appen känner av att objektet har delats från en extern organisation kan appen ska återansluta till organisationen med din identitet. Appen läses sedan in alla objekt som har delats med dig från den organisationen.
+**Först behöver någon från en extern organisation dela ett objekt med dig.** När någon [delar ett objekt med dig](../../service-share-dashboards.md), antingen från samma organisation eller från en extern organisation, får du ett e-postmeddelande med en länk till det delade objektet. Om du öppnar den länken på din mobila enhet öppnas Power BI-mobilappen. Om appen känner av att objektet delades från en extern organisation återansluter appen till den organisationen med din identitet. Appen läser sedan in alla objekt som delades med dig från den organisationen.
 
-![Powerbi öppna delade objekt från e-post ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Power BI – öppna delat objekt från e-post ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
 
 > [!NOTE]
-> Om detta är det första objektet som delas med dig som en extern gästanvändare, måste du göra anspråk på inbjudan i en webbläsare. Du kan inte göra anspråk på inbjudan i Power BI-appen.
+> Om det här är det första objektet som delas med dig som extern gästanvändare måste du lösa in inbjudan i en webbläsare. Det går inte att lösa in inbjudan i Power BI-appen.
 
-Så länge du är ansluten till en extern organisation, visas en svart rubrik i appen. Den här rubriken anger att du inte är ansluten till organisationens startsida. Avsluta från gästläge för att ansluta till organisationen hem.
+Så länge du är ansluten till en extern organisation visas en svart rubrik i appen. Den här rubriken visar att du inte är ansluten till din hemorganisation. Om du vill ansluta tillbaka till din hemorganisation avslutar du gästläget.
 
-![Power BI gäst användaren rubrik](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI-rubrik för gästanvändare](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
 
-Du kan komma åt alla objekt som har delats med dig (inte bara de objekt som du har öppnat från e-postmeddelandet) även om du behöver ha en Power BI-artefakt länk att ansluta till en extern organisation när din app växlar. Om du vill visa alla objekt som du kan komma åt i den externa organisationen, gå till app-menyn och välj **delat med mig**. Under **appar** du hittar appar som du kan använda.
+Du behöver en Power BI-artefaktlänk för att ansluta till en extern organisation, men när din app har växlat kan du komma åt alla objekt som delas med dig (inte bara det objekt som du öppnade från e-postmeddelandet). Om du vill visa alla objekt som du har åtkomst till i den externa organisationen går du till appmenyn och väljer **Delat med mig**. Under **Appar** finns även appar som du kan använda.
 
-![Power BI meny som externa gästanvändare](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![Power BI-appmenyn som extern gästanvändare](./media/mobile-apps-b2b/mobile-b2b-menu.png)
 
 ## <a name="limitations"></a>Begränsningar
 
-- Villkorlig åtkomst och andra Intune-principer stöds inte i Azure AD B2B och i Power BI mobile. Det innebär att appen tillämpar endast home organisationens principer, om de finns.
-- Push-meddelanden tas emot från webbplatsen hemorganisation (även när användaren är ansluten som en gäst till en extern organisation). Öppna meddelandet ansluter igen appen till användarens hemorganisation plats.
-- Om användaren stänger av appen, när öppnas på nytt appen ansluter automatiskt till användarens hemorganisation.
-- När du är ansluten till en extern organisation, vissa åtgärder är inaktiverade: favorit objekt, dataaviseringar, kommentera och dela.
-- Offlinedata är inte tillgänglig när du är ansluten till en extern organisation.
-- Om du har företagsportalappen installerad på din enhet måste enheten registreras.
+- Användare måste ha ett aktivt Power BI-konto och en hemklientorganisation.
+- Användarna måste vara inloggade på sin Power BI-hemklientorganisation innan de kan komma åt det innehåll som delas med dem från en extern klientorganisation.
+- Villkorsstyrd åtkomst och andra Intune-principer stöds inte i Azure AD B2B och i Power BI Mobile. Det innebär att appen endast framtvingar hemorganisationens principer, om de finns.
+- Push-meddelanden tas emot från hemorganisationens webbplats (även när användaren är ansluten som gäst till en extern organisation). När meddelandet öppnas så återansluts appen till användarens hemorganisations webbplats.
+- Om användaren avslutar appen så ansluter appen automatiskt till användarens hemorganisation när den öppnas igen.
+- Vid anslutning till en extern organisation inaktiveras vissa åtgärder: favoritobjekt, datavarningar, kommentarer och delning.
+- Offlinedata är inte tillgängliga vid anslutning till en extern organisation.
+- Om du har Företagsportal-appen installerad på din enhet måste enheten vara registrerad.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/21/2019
+ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 49ee06d544e409cadc6728d286cb841f5f4adec4
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: 3105736c6576428af2d00b6f502c94f94c409977
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230280"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995243"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -30,7 +30,7 @@ En Power BI-rapport är en interaktiv vy över dina data med visuell information
 3. Interagera sedan med dessa rapporter i Power BI-mobilappar.
 
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Öppna en Power BI-rapport i mobilappen
-Power BI-rapporter lagras på olika ställen i mobilappen, beroende på var du fick dem från. De kan vara i appar, delade med mig, arbetsytor (inklusive Min arbetsyta) eller på en rapportserver. Du går ibland igenom en relaterad instrumentpanel för att komma till en rapport och ibland listas de.
+Power BI-rapporter lagras på olika ställen i mobilappen, beroende på var du fick dem från. De kan vara i appar, delade med mig, arbetsytor (inklusive Min arbetsyta) eller på en rapportserver. Du går ibland igenom en relaterad instrumentpanel för att komma till en rapport, och ibland anges de.
 
 I listor och menyer finns en ikon intill ett rapportnamn som visar att det här objektet är en rapport. 
 
@@ -42,22 +42,23 @@ Det finns två ikoner för rapporter i Power BI Mobile-appar:
 
 * ![telefonrapportikon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) visar en rapport som har minst en telefonoptimerad rapportsida som visas i stående orientering. 
 
-OBS! Genom att hålla telefonen i liggande orientering får du alltid liggande layout, även om rapportsidan har en telefonlayout. 
+> [!NOTE]
+> Genom att hålla telefonen i liggande orientering får du alltid liggande layout, även om rapportsidan har en telefonlayout. 
 
 Om du vill gå till en rapport från en instrumentpanel trycker du på ellipsen (...) i det övre högra hörnet på en panel > **Öppna rapporten**.
   
   ![Öppna rapporten](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
-  Alla paneler går inte att öppna i en rapport. Paneler som skapats genom att ställa en fråga i frågor och svar-rutan, öppnar inte rapporter när du klickar på dem. 
+  Inte alla paneler kan öppnas i en rapport. Paneler som skapats genom att ställa en fråga i frågor och svar-rutan, öppnar inte rapporter när du klickar på dem. 
   
 ## <a name="interacting-with-reports"></a>Interagera med rapporter
-När du har öppnat en rapport i appen kan du börja arbeta med den. Det finns många saker du kan göra med rapporten och dess data. I rapportsidfoten finns åtgärder som du kan utföra med rapporten, och genom att trycka och trycka länge på de data som visas i rapporten kan du även dela upp och analysera data.
+När du har öppnat en rapport i appen kan du börja arbeta med den. Det finns många saker du kan göra med rapporten och dess data. I rapportens sidfot finns åtgärder som du kan utföra på rapporten. Genom att trycka och trycka länge på de data som visas i rapporten kan du dela upp och analysera data.
 
 ### <a name="using-tap-and-long-tap"></a>Använda tryckning och lång tryckning
-En tryckning motsvarar ett musklick. Om du vill korsmarkera rapporten baserat på en datapunkt trycker du därmed på den datapunkten.
+Tryckning motsvarar ett musklick. Om du vill korsmarkera rapporten baserat på en datapunkt trycker du därmed på den datapunkten.
 Om du trycker på ett utsnittsvärde markeras det värdet, och utsnitt görs på resten av rapporten enligt det värdet. Genom att trycka på en länk, en knapp eller ett bokmärke aktiverar du det baserat på den åtgärd som definierats av författaren.
 
-Du märkte förmodligen att en kantlinje visas när du trycker på ett visuellt objekt. I det övre högra hörnet av kantlinjen finns det en ellips (...). Om du trycker på den visas en meny med åtgärder som du kan utföra på det visuella objektet.
+Du märkte förmodligen att en kantlinje visas när du trycker på ett visuellt objekt. I det övre högra hörnet av kantlinjen finns det en ellips (…). Om du trycker på den visas en meny med åtgärder som du kan utföra på det visuella objektet.
 
 ![rapportens visuella objekt och meny](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -78,7 +79,7 @@ Rapportförfattare kan definiera hierarkier i data och relationer mellan rapport
 
 ![rapportens detaljnivååtgärder](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
-Med *visning av detaljerad information*, när du trycker på en viss del av en visualisering, växlar Power BI till en annan sida i rapporten som filtreras till det värde som du tryckt på.  Rapportförfattare kan definiera ett eller flera alternativ för visning av detaljerad information som växlar till olika sidor. I så fall kan du välja vilken som du vill visa detaljerad information för. Bakåtknappen går tillbaka till föregående rapportsida.
+Med *visning av detaljerad information*, när du trycker på en viss del av en visualisering, växlar Power BI till en annan sida i rapporten som filtreras till det värde som du tryckt på. Rapportförfattare kan definiera ett eller flera alternativ för visning av detaljerad information som växlar till olika sidor. Du kan välja vilken som du vill visa detaljerad information för. Bakåtknappen går tillbaka till föregående rapportsida.
 
 Läs mer om hur du [lägger till visning av detaljerad information i Power BI Desktop](../../desktop-drillthrough.md).
    
@@ -101,7 +102,7 @@ Du kan flytta mellan rapportsidor genom att svepa från kanten av skärmen till 
 5) Visa alla rapportåtgärder.
 
 #### <a name="all-report-actions"></a>Alla rapportåtgärder
-Om du trycker på alternativet ... i rapportsidfoten visas alla åtgärder som du kan utföra på en rapport. 
+Om du trycker på alternativet … i rapportens sidfot visas alla åtgärder som du kan utföra på en rapport. 
 
 ![alla åtgärder för rapport](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
@@ -110,7 +111,7 @@ Till exempel:
 1) **Filtrera efter aktuell plats** är aktiverat om data i rapporten kategoriserades av författaren med geografiska data. [Lär dig hur du identifierar geografiska data i rapporten](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 2) **Genomsök för att filtrera rapporten efter streckkod** är endast aktiverat om datamängden i rapporten har taggats som streckkod. [Så taggar du streckkoder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
 3) **Bjud in** är endast aktiverat om du har behörighet att dela den här rapporten med andra. Du får bara behörighet om du är ägare av rapporten eller om du har fått behörighet att dela vidare av ägaren.
-4) **Anteckna och dela** kan vara inaktiverat om det finns en [Intune-skyddsprincip](https://docs.microsoft.com/intune/app-protection-policies) i din organisation som förbjuder delning från Power BI Mobile-appen. 
+4) **Anteckna och dela** kan vara inaktiverat om det finns en [Intune-skyddsprincip](https://docs.microsoft.com/intune/app-protection-policies) i din organisation som förbjuder delning från Power BI-mobilappen. 
 
 ## <a name="next-steps"></a>Nästa steg
 * [Visa och interagera med Power BI-rapporter som är optimerade för din telefon](mobile-apps-view-phone-report.md)

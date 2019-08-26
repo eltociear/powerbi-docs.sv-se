@@ -1,5 +1,5 @@
 ---
-title: Använda R i Microsoft Power Query för Excel för Power BI
+title: Använda R i Power Query-redigeraren
 description: Använda R i frågeredigeraren för Power BI Desktop till avancerade analyser
 author: davidiseminger
 manager: kfile
@@ -8,43 +8,76 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 57f95a35ff12d546d4fd03202d14212e0df9c78e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e2a970ecbf7b341d4feaba4e90a862841ba8bb17
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513646"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560914"
 ---
-# <a name="using-r-in-query-editor"></a>Använda R i Frågeredigeraren
-Du kan använda **R**, ett programmeringsspråk som ofta används av statistiker, dataforskare och dataanalytiker, i **frågeredigeraren** för Power BI Desktop. Med den här integreringen av R i **frågeredigeraren** kan du utföra datarensning med R, avancerade datautformning och analyser i datauppsättningar, inklusive färdigställande av saknade data, förutsägelser och klustring för att bara nämna några få. **R** är ett kraftfullt språk och kan användas i **frågeredigeraren** till att förbereda din datamodell och skapa rapporter.
+# <a name="use-r-in-query-editor"></a>Använda R i frågeredigeraren
 
-## <a name="installing-r"></a>Installera R
-För att kunna använda **R** i Power BI Desktops **frågeredigerare**, måste du installera **R** på den lokala datorn. Du kan hämta och installera **R** kostnadsfritt från flera platser, inklusive [nedladdningssidan för Revolution Open](https://mran.revolutionanalytics.com/download/) och [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+[**R**](https://mran.microsoft.com/documents/what-is-r) är ett kraftfullt programmeringsspråk som används av många statistiker, dataforskare och dataanalytiker. Du kan använda **R** i **frågeredigeraren** i Power BI Desktop för att:
 
-## <a name="using-r-in-query-editor"></a>Använda R i Frågeredigeraren
-För att visa hur du använder **R** i **frågeredigeraren** anges det här exemplet på en datauppsättning från aktiemarknaden som baseras på en .CSV-fil, som du kan [ladda ned här](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) och följa. Stegen i detta exempel är följande:
+* Förbereda datamodeller
 
-1. Först läser du in dina data i **Power BI Desktop**. I det här exemplet läser du in filen *EuStockMarkets_NA.csv* och väljer **Hämta data > CSV** på menyfliken **Start** i **Power BI Desktop**.
+* Skapa rapporter
+
+* Utföra datarengöring, avancerad datautformning och datamängdsanalys, som omfattar slutförande av saknade data, förutsägelser, klustring och mer.  
+
+## <a name="install-r"></a>Installera R
+
+Du kan ladda ned **R** kostnadsfritt från [nedladdningssidan för Revolution Open](https://mran.revolutionanalytics.com/download/) och [CRAN-lagringsplatsen](https://cran.r-project.org/bin/windows/base/).
+
+### <a name="install-mice"></a>Installera mice
+
+Du behöver ha [**mice**-biblioteket](https://www.rdocumentation.org/packages/mice/versions/3.5.0/topics/mice) installerat i din R-miljö. Utan **mice** fungerar inte exempelskriptkoden korrekt. **mice**-paketet implementerar en metod för hantering av saknade data.
+
+Så här installerar du **mice**:
+
+1. Starta programmet R.exe (till exempel C:\Program\Microsoft\R Open\R-3.5.3\bin\R.exe)  
+
+2. Kör installationskommandot:
+
+   ``` 
+   >  install.packages('mice') 
+   ```
+
+## <a name="use-r-in-query-editor"></a>Använda R i frågeredigeraren
+
+För att demonstrera användning av **R** i **frågeredigeraren** använder vi en exempeldatamängd för aktiemarknaden som finns i en .csv-fil och går igenom följande steg:
+
+1. [Ladda ned **EuStockMarkets_NA.csv**-filen](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Kom ihåg var du sparar den.
+
+1. Läs in filen i **Power BI Desktop**: på menyfliksområdet **Start** väljer du **Hämta data > Text/CSV**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
-2. Markera filen och välj **Öppna**. CSV:n visas i dialogrutan **CSV-fil**.
+
+1. Markera filen och välj **Öppna**. CSV-data visas i dialogrutan **Text-/CSV-fil**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
-3. När datan har lästs in visas den i fönstret **Fält** i Power BI Desktop.
+
+1. När data har lästs in visas de i fönstret **Fält**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
-4. Öppna **Frågeredigeraren** genom att välja **Redigera frågor** på fliken **Start** i **Power BI Desktop**.
+
+1. Öppna **frågeredigeraren** från menyfliksområdet **Start** genom att välja **Redigera frågor**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
-5. På fliken **Transformera** väljer du **Kör R-skript**. Redigeringsprogrammet **Kör R-skript** öppnas (visas i nästa steg). Observera att det saknas data på raderna 15 och 20, vilket det även gör på andra rader som du inte kan se i följande bild. Stegen nedan visar hur R kan (och kommer) slutföra dem åt dig.
+
+1. I menyfliksområdet **Transformera** väljer du **Kör R-skript**. Redigeringsprogrammet **Kör R-skript** visas.  
+
+   Raderna 15 och 20 har saknade data. Det gör även rader som du inte kan se i bilden. Stegen nedan visar hur R slutför de raderna.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
-6. I det här exemplet anger du följande skriptkod:
+
+1. I det här exemplet anger du följande skriptkod. Se till att ersätta ”&lt;Your File Path&gt;” (Din filsökväg) med sökvägen till **EuStockMarkets_NA.csv** på ditt lokala filsystem, till exempel C:/Användare/Anders Andersson/Dokument/Microsoft/EuStockMarkets_NA.csv
 
     ```r
+       dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
        library(mice)
        tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
        completedData <- complete(tempData,1)
@@ -52,52 +85,55 @@ För att visa hur du använder **R** i **frågeredigeraren** anges det här exem
        output$completedValues <- completedData$"SMI missing values"
     ```
 
-   > [!NOTE]
-   > Du måste ha biblioteket *mice* installerat i din R-miljö för att tidigare skriptkod ska fungera korrekt. Om du vill installera mice kör du följande kommando i R-installationen: |      > install.packages('mice')
-   > 
-   > 
-
-   När koden infogas i dialogrutan **Kör R-skript** ser den ut ungefär så här:
-
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_5b.png)
 7. När du har valt **OK** visar **frågeredigeraren** en varning om datasekretess.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. För att R-skript ska fungera korrekt i Power BI-tjänsten måste alla datakällor anges som *offentliga*. Mer information om sekretessinställningar och deras konsekvenser finns i [Sekretessnivåer](desktop-privacy-levels.md).
+8. För att R-skript ska fungera korrekt i Power BI-tjänsten behöver du ange alla datakällor till **offentliga**. Mer information om sekretessinställningar och deras konsekvenser finns i [Sekretessnivåer](desktop-privacy-levels.md).
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-   Observera en ny kolumn i fönstret **Fält** med namnet *completedValues*. Observera att det är några dataelement som saknas, t.ex på rad 15 och 18. Ta en titt på hur R hanterar det i nästa avsnitt.
+   När du har valt **Spara** körs skriptet. Observera en ny kolumn i fönstret **Fält** med namnet **completedValues**. Observera att det är några dataelement som saknas, t.ex på rad 15 och 18. Ta en titt på hur R hanterar det i nästa avsnitt.
 
+   Trots att vi bara har fem rader med R-skript kan **frågeredigeraren** fylla i saknade värden med en förutsägelsemodell.
 
-Trots att vi bara har fem rader med R-skript kan **frågeredigeraren** fylla i saknade värden med en förutsägelsemodell.
+## <a name="create-visuals-from-r-script-data"></a>Skapa visuella objekt från R-skriptdata
 
-## <a name="creating-visuals-from-r-script-data"></a>Skapa visuella objekt från R-skriptdata
-Nu kan vi skapa ett visuellt objekt för att se hur R-skriptkoden använder biblioteket *mice* till att fylla i saknade värden, enligt följande bild:
+Nu kan vi skapa ett visuellt objekt för att se hur R-skriptkoden använder biblioteket **mice** till att fylla i saknade värden, enligt följande bild:
 
 ![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
-När det visuella objektet är klart och även övriga visuella objekt som du vill skapa med **Power BI Desktop**, kan du spara **Power BI Desktop**-filen (som en .pbix-fil) och sedan använda datamodellen, inklusive de R-skript som ingår i den, i Power BI-tjänsten.
+Du kan spara alla slutförda visuella objekt i en **Power BI Desktop**-.pbix-fil och använda datamodellen och dess R-skript i Power BI-tjänsten.
 
 > [!NOTE]
-> Vill du se en färdig .pbix-fil där de här stegen har slutförts? I så fall kan du ladda ned den slutförda **Power BI Desktop**-filen som användes i de här exemplen [till höger här](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix).
+> Du kan [ladda ned en .pbix](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix)-fil med alla de här stegen slutförda.
 
-När du har överfört .pbix-filen till Power BI-tjänsten, krävs det några fler steg för att datauppdatering ska aktiveras (i tjänsten) och för att aktivera att visuella objekt uppdateras i tjänsten (datan behöver åtkomst till R för att de visuella objekten ska uppdateras). De extra stegen är följande:
+När du har laddat upp .pbix-filen till Power BI-tjänsten behöver du vidta ytterligare åtgärder för att aktivera uppdatering av tjänstdata och uppdaterade visuella objekt:  
 
-* **Aktivera schemalagd uppdatering för datauppsättningen** – För att aktivera schemalagd uppdatering för den arbetsbok som innehåller datauppsättningen med R-skript, se [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md), som även innehåller information om **Personlig gateway**.
-* **Installera personlig gateway** – Du behöver en **Personlig gateway** installerad på datorn där filen finns och där R har installerats. Power BI-tjänsten måste komma åt arbetsboken och kunna återge uppdaterade visuella objekt på nytt. Du kan få mer information om hur du [installerar och konfigurerar en personlig gateway](service-gateway-personal-mode.md).
+* **Aktivera schemalagd uppdatering för datamängden** – information om hur du aktiverar schemalagd uppdatering för den arbetsbok som innehåller datamängd med R-skript finns i [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md), som även innehåller information om **Personlig gateway**.
+
+* **Installera den personliga gatewayen** – du behöver ha en **personlig gateway** installerad på den dator där filen och **R** finns. Power BI-tjänsten använder den arbetsboken och renderar alla uppdaterade visuella objekt på nytt. Mer information finns i [installera och konfigurera en personlig gateway](service-gateway-personal-mode.md).
 
 ## <a name="limitations"></a>Begränsningar
+
 Det finns vissa begränsningar för frågor med R-skript som skapats i **frågeredigeraren**:
 
-* Alla R-inställningar för datakällan måste anges som *offentliga* och alla andra steg i en fråga som skapats i **frågeredigeraren** måste också vara offentliga. Gå till inställningar för datakällan i **Power BI Desktop** genom att välja **Fil > Alternativ och inställningar > Datakällsinställningar**.
+* Alla inställningar för R-datakälla måste anges som **offentliga**. Alla andra steg i en fråga från **frågeredigeraren** måste också vara offentliga. Gå till inställningar för datakällan i **Power BI Desktop** genom att välja **Arkiv > Alternativ och inställningar > Datakällsinställningar**.
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-  I dialogrutan **Datakällsinställningar** markerar du datakällorna och väljer sedan **Redigera behörigheter...** . Kontrollera att **Sekretessnivå** är inställd som *Offentlig*.
+  I dialogrutan **Datakällsinställningar** väljer du datakällan eller datakällorna och sedan **Redigera behörigheter...** .  Ange **Sekretessnivå** till **Offentlig**.
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
-* Om du vill aktivera schemalagd uppdatering av visuella R-objekt eller datauppsättningar, måste du aktivera **Schemalagd uppdatering** och installera en **Personlig gateway** på datorn där arbetsboken och R-installationen finns. Mer information om detta finns i föregående avsnitt i den här artikeln, med länkar till mer information om var och en.
+* För att aktivera schemalagd uppdatering av visuella R-objekt eller datamängden behöver du aktivera **Schemalagd uppdatering** och ha en **personlig gateway** installerad på den dator där arbetsboken och **R** finns. Mer information om detta finns i föregående avsnitt i den här artikeln, med länkar till mer information om var och en.
 
 Det finns olika saker du kan göra med R och egna frågor, så utforska och utforma dina data precis som du vill att de ska visas.
 
+## <a name="next-steps"></a>Nästa steg
+
+* [Introduktion till R](https://mran.microsoft.com/documents/what-is-r) 
+
+* [Kör R-skript i Power BI Desktop](desktop-r-scripts.md) 
+
+* [Använd en extern R IDE med Power BI](desktop-r-ide.md) 
+
+* [R-paket i Power BI-tjänsten](service-r-packages-support.md)

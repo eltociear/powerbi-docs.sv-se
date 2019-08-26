@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: aa41e1e2869ad4d2f77224e3bec99dc00c59c536
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a60fe526e83e5220e9b310097c8ba37682a396e
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61337730"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995225"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
-Power BI-mobilappen för Windows 10 ger dig Power BI i din surfplatta eller telefon med uppdaterad, pekaktiverad mobil åtkomst till företagets information. Visa och interagera med dina instrumentpaneler för företaget från valfri plats &#151; direkt från din [Windows-startskärm](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
+Power BI-mobilappen för Windows 10 ger Power BI till din surfplatta eller telefon. Du får aktuell, mobil åtkomst med pekfunktion till din företagsinformation. Visa och interagera med ditt företags instrumentpaneler från valfri plats – direkt från [Windows-startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 ![Windows Live-panel](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
@@ -33,7 +33,7 @@ Sedan interagerar du med dina instrumentpaneler och rapporter, utforskar data oc
 * Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Registrera dig för Power BI-tjänsten på internet
-Om du inte har registrerat dig ännu, går du till [Power BI-tjänsten](http://powerbi.com/) för att registrera dig för ditt eget konto för att skapa och lagra instrumentpaneler och rapporter och föra samman dina data. Logga sedan in på Power BI från din Windows 10-enhet för att se dina egna instrumentpaneler varifrån du vill.
+Om du inte har registrerat dig ännu går du till [Power BI-tjänsten](http://powerbi.com/). Registrera dig för ett eget konto för att skapa och lagra instrumentpaneler och rapporter samt sammanföra dina data. Logga sedan in på Power BI från din Windows 10-enhet för att se dina egna instrumentpaneler varifrån du vill.
 
 1. I Power BI-tjänsten, peka på [registrering](http://go.microsoft.com/fwlink/?LinkID=513879) för att skapa ett Power BI-konto.
 2. Starta [skapa dina egna instrumentpaneler och rapporter](../../service-get-started.md).
@@ -53,7 +53,7 @@ Om du inte har registrerat dig ännu, går du till [Power BI-tjänsten](http://p
 Även om du inte registrerar dig, kan du prova dig fram med Power BI- och Reporting Services-exemplen. När du har hämtat appen kan du se exemplen eller sätta igång. Gå tillbaka till exemplen från instrumentpanelernas startsida när du vill.
 
 ### <a name="power-bi-samples"></a>Power BI-exempel
-Du kan visa och interagera med instrumentpanelsexemplen i Power BI, men det finns några saker som du inte kan göra med dem. Du kan inte öppna rapporterna bakom instrumentpanelerna, dela exemplen med andra eller göra dem till dina favoriter.
+Du kan visa och interagera med Power BI-instrumentpanelsexemplen. Men det finns några saker som du inte kan göra med dem. Du kan inte öppna rapporterna bakom instrumentpanelerna, dela exemplen med andra eller göra dem till dina favoriter.
 
 1. Tryck på den globala navigeringsknappen ![Den globala navigeringsknappen](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) i det övre vänstra hörnet.
 2. Tryck ikonen **Inställningar** ![Inställningsikonen](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), tryck på ditt namn och tryck sedan på **Visa exempel**.
@@ -92,7 +92,7 @@ Dina instrumentpaneler och rapporter lagras på olika platser i Power BI-mobilap
 ![Power BI-vänsternavigering](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Visa dina favoritinstrumentpaneler, KPI:er och rapporter
-Du kan visa alla dina Power BI-favoritinstrumentpaneler tillsammans med Reporting Services KPI:er och mobila rapporter på favoriter-sidan i mobilapparna. När du gör en instrumentpanel till en *favorit* i Power BI-mobilappen, kan du komma åt den från alla dina enheter, inklusive Power BI-tjänsten i din webbläsare. 
+Visa dina Power BI-favoritinstrumentpaneler tillsammans med Reporting Services-KPI:er och mobila rapporter på sidan Favoriter i mobilapparna. När du gör en instrumentpanel till en *favorit* i Power BI-mobilappen, kan du komma åt den från alla dina enheter, inklusive Power BI-tjänsten i din webbläsare. 
 
 * Tryck på **Favoriter**.
   
@@ -105,7 +105,7 @@ Du kan visa alla dina Power BI-favoritinstrumentpaneler tillsammans med Reportin
 Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 
 ## <a name="next-steps"></a>Nästa steg
-Här följer några saker som du kan göra i Power BI-appen för Windows 10-enheter med instrumentpaneler och rapporter i Power BI och Reporting Services-mobila rapporter och KPI:er i Reporting Services-webbportalen
+Här följer några saker som du kan göra i Power BI-appen för Windows 10-enheter med instrumentpaneler och rapporter i Power BI och mobila Reporting Services-rapporter och KPI:er i Reporting Services-webbportalen.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-instrumentpaneler och -rapporter
 * Visa [dina appar](../../service-create-distribute-apps.md).

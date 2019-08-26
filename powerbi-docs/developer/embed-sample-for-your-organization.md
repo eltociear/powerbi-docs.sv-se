@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: 1c110022c27cf0e213484619a750140a63a7d0dc
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808242"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490394"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
@@ -35,7 +35,7 @@ Du måste ha följande för att komma igång:
 * Ett [Power BI Pro-konto](../service-self-service-signup-for-power-bi.md).
 * En [Microsoft Azure](https://azure.microsoft.com/)-prenumeration.
 * Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
-* För inbäddning av sidnumrerade rapporter behöver du minst A4/P1-kapacitet. Se [Hur stor Premium-kapacitet måste jag ha för sidnumrerade rapporter?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* För inbäddning av sidnumrerade rapporter behöver du minst P1-kapacitet. Se [Hur stor Premium-kapacitet måste jag ha för sidnumrerade rapporter?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/pricing/) innan du börjar.
 
@@ -45,7 +45,7 @@ Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto]
 
 Innan du börjar bädda in rapporter, en instrumentpanel eller paneler i din app måste du se till att det går att bädda in Power BI i din miljö.
 
-Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport. Om du bäddar in sidnumrerad rapport måste du tilldela minst A4/P1-kapacitet till den apparbetsyta som du har skapat.
+Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport. Om du bäddar in sidnumrerad rapport måste du tilldela minst P1-kapacitet till den apparbetsyta som du har skapat.
 
 Om du väljer att konfigurera miljön manuellt kan du fortsätta nedan.
 
@@ -83,7 +83,7 @@ Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. D�
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Skapa och publicera sidnumrerade rapporter
 
-Du kan skapa sidnumrerade rappoter med [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sedan kan du [överföra rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) till en apparbetsyta som tilldelats minst A4/P1-kapacitet. Slutanvändaren som laddar upp rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
+Du kan skapa dina sidnumrerade rapporter med hjälp av [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sedan kan du [ladda upp rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) till en apparbetsyta som har tilldelats till minst en P1-kapacitet. Slutanvändaren som laddar upp rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Bädda in innehåll med exempelprogrammet
 
@@ -152,9 +152,6 @@ Fyll i **reportId**-information med rapport-GUID från Power BI. Du kan få den 
 URL för Power BI-rapport <br>
 
 ![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
-
-URL för sidnumrerad rapport <br>
-
 
 
 URL för sidnumrerad rapport<br>
@@ -384,7 +381,7 @@ Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. För sidnumrerade rapporter måste din apparbetsyta ha minst A4/P1-kapacitet. Du kan skapa en dedikerad kapacitet med [Power BI Premium](../service-premium-what-is.md).
+Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. För sidnumrerade rapporter måste du säkerhetskopiera din apparbetsyta med minst en P1-kapacitet. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-premium-what-is.md).
 
 Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -425,7 +422,7 @@ Globala eller Power BI-tjänstadministratörer kan aktivera eller inaktivera RES
 
 ## <a name="next-steps"></a>Nästa steg
 
-I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program med hjälp av ditt Power BI-organisationskonto. Du kan nu prova att bädda in Power BI-innehåll i ett program med hjälp av appar. Du kan också prova att bädda in Power BI-innehåll för dina kunder (det finns för närvarande inte stöd för sidnumrerade rapporter):
+I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i ett program med hjälp av ditt Power BI-organisationskonto. Du kan nu prova att bädda in Power BI-innehåll i ett program med hjälp av appar. Du kan även prova att bädda in Power BI-innehåll för dina kunder (för närvarande stöds detta inte för sidnumrerade rapporter):
 
 > [!div class="nextstepaction"]
 > [Bädda in från appar](embed-from-apps.md)

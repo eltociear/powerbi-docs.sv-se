@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 06/06/2019
-ms.openlocfilehash: f7cf5091c60a6a916b24d6170eae96b3c1ee64dc
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 9e4d5285b48739e9f16fbe503736c20cb5524e5d
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839645"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985727"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -26,7 +26,7 @@ Sidnumrerade rapporter kan ha många sidor. Den här rapporten har till exempel 
 
 ![Sidnumrerad rapport i Power BI-tjänsten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten http://app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](service-admin-premium-workloads.md#paginated-reports-preview) i Power BI-administratörsportalen. 
+Du kan förhandsgranska rapporten i Report Builder och sedan publicera den i Power BI-tjänsten http://app.powerbi.com. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. Dessutom måste en Power BI-administratör aktivera sidnumrerade rapporter i [avsnittet Premium-kapaciteter](service-admin-premium-workloads.md#paginated-reports) i Power BI-administratörsportalen. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Skapa rapporter i Power BI Report Builder
 

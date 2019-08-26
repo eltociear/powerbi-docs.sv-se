@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5391fee3c5a05d1c34cac4f3a097a0577ce5d191
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462397"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962221"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på detaljhandelsanalys för Power BI: Ta en rundtur
 
@@ -92,10 +92,10 @@ Om du vill visa i datakällan för det här exemplet är det även tillgängligt
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Granska en panel som skapats med Frågor och svar i Power BI
 Låt oss bli lite mer specifika.
 
-1. Ändra frågan till *Detta års försäljning* per **distrikt***. Se resultatet: Frågor och svar placerar automatiskt svaret i ett stapeldiagram och ger förslag på andra fraser:
+1. Ändra frågan till _årets försäljning **per distrikt**_ . Se resultatet: Frågor och svar placerar automatiskt svaret i ett stapeldiagram och ger förslag på andra fraser:
 
    ![Årets försäljning per distrikt i frågor och svar](media/sample-retail-analysis/retail8.png)
-2. Ändra nu frågan till *Årets försäljning **per postnummer och kedja***.
+2. Ändra nu frågan till _årets försäljning **per postnummer och kedja**_ .
 
    Observera hur frågan besvaras av Power BI med lämpliga diagram samtidigt som du skriver.
 3. Experimentera med fler frågor och se vilken typ av resultat du får.

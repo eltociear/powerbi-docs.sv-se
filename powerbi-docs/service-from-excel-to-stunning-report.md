@@ -1,103 +1,144 @@
 ---
-title: Från Excel-arbetsbok till otrolig rapport på nolltid
-description: Från Excel-arbetsbok till otrolig rapport på nolltid
+title: Från Excel-arbetsbok till fantastisk rapport i Power BI-tjänsten
+description: Den här artikeln visar hur du snabbt kan skapa en fantastisk rapport från en Excel-arbetsbok.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: d613085e47477500390ac6111887df89a802ea0b
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522862"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995116"
 ---
-# <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Från Excel-arbetsbok till otrolig rapport på nolltid
-Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men den senaste informationen finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och bygga upp en rapport. Du börjar känna dig bekymrad.
+# <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Från Excel-arbetsbok till fantastisk rapport i Power BI-tjänsten
+Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men senaste data finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och formatera en rapport, och du börjar bli nervös.
 
 Inga problem. Med Power BI kan du skapa en fantastisk rapport på nolltid.
 
-I det här exemplet ska vi överföra en Excel-fil från ett lokalt system, skapa en ny rapport och dela den med kollegor – allt från Power BI.
+I det här exemplet laddar vi upp en Excel-fil från ett lokalt system, skapar en ny rapport och delar den med kollegor – allt från Power BI.
 
 ## <a name="prepare-your-data"></a>Förbereda dina data
-Låt oss ta en enkel Excel-fil som exempel. Innan du kan läsa in din Excel-fil till Power BI, måste du organisera dina data i en platt tabell. Det innebär att varje kolumn innehåller samma datatyp – exempelvis text, datum, tal eller valuta. Du bör ha en rubrikrad, men det får inte finnas någon kolumn eller rad som visar sammanlagda värden.
+Låt oss ta en enkel Excel-fil som exempel. 
 
-![ordnade data i Excel](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
+1. Innan du kan läsa in din Excel-fil till Power BI, måste du organisera dina data i en platt tabell. I en platt tabell innehåller varje kolumn samma datatyp, till exempel text, datum, tal eller valuta. Tabellen ska ha en rubrikrad men inga kolumner eller rader som visar summor.
 
-Därefter formaterar du dina data som en tabell. Välj **Formatera som tabell** i gruppen Format på fliken Start i Excel. Välj ett tabellformat för kalkylbladet. Excel-kalkylbladet är nu redo att läsas in till Power BI.
+   ![Ordnade data i Excel](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
 
-![data formaterade som en tabell](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
+2. Därefter formaterar du dina data som en tabell. I Excel går du till fliken **Start** och gruppen **Format**. Välj **Formatera som tabell**. 
 
-## <a name="upload-your-excel-file-into-power-bi"></a>Överföra din Excel-fil till Power BI
-Power BI kan ansluta till flera datakällor, inklusive Excel-filer som finns på din dator. Logga in på Power BI-tjänsten för att komma igång. Om du inte har registrerat dig, [kan du göra det gratis](https://powerbi.com).
+3. Välj ett tabellformat för kalkylbladet. 
 
-Du vill skapa en ny instrumentpanel. Öppna **Min arbetsyta** och välj ikonen **+ Skapa**.
+   Excel-kalkylbladet är nu redo att läsas in till Power BI.
 
-![Ikonen Skapa](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
+   ![Data formaterade som en tabell](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
-Välj **Instrumentpanel**, ange ett namn och välj **Skapa**. Den nya instrumentpanelen visas – utan data.
+## <a name="upload-your-excel-file-to-the-power-bi-service"></a>Ladda upp din Excel-fil till Power BI-tjänsten
+Power BI-tjänsten kan ansluta till flera datakällor, däribland Excel-filer som finns på din dator. 
 
-![Listrutan Skapa](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
+ > [!NOTE] 
+ > Om du vill följa resten av självstudierna använder du [arbetsboken med finansiella exempel](sample-financial-download.md).
 
-Välj **Hämta data** längst ned till vänster i navigeringsfönstret. På sidan Hämta data, under Importera eller Anslut till Data i rutan Filer, väljer du **Hämta**.
+1. Kom igång genom att logga in på Power BI-tjänsten. Om du inte har registrerat dig, [kan du göra det gratis](https://powerbi.com).
 
-![Hämta data från filer](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+2. Du vill skapa en ny instrumentpanel. Öppna **Min arbetsyta** och välj ikonen **Skapa**.
 
-Välj **Lokal fil** på sidan Filer. Navigera till Excel-arbetsboksfilen på datorn och väl den för att läsa in den till Power BI. Välj **Importera**.
+   ![Ikonen Skapa](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
 
-> **Obs!** Om du vill följa resten av självstudierna använder du [arbetsboken med finansiella exempel](sample-financial-download.md).
-> 
-> 
+3. Välj **Instrumentpanel**, ange ett namn och välj sedan **Skapa**. 
 
-![Fönstret Hämta Data > Filer](media/service-from-excel-to-stunning-report/pbi_local_file.png)
+   Den nya instrumentpanelen visas utan data.
+
+   ![Listrutan Skapa](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
+
+4. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret. 
+
+5. På sidan **Hämta data** går du till rutan **Filer** under **Skapa nytt innehåll** och väljer **Hämta**.
+
+   ![Hämta data från filer](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+
+6. På sidan **Filer** väljer du **Lokal fil**. Gå till Excel-arbetsboksfilen på datorn och väl **Öppna** för att läsa in den till Power BI-tjänsten. 
+
+   ![Fönstret Hämta Data > Filer](media/service-from-excel-to-stunning-report/pbi_local_file.png)
+
+7. På sidan **Lokal fil** väljer du **Importera**.
+
 
 ## <a name="build-your-report"></a>Bygga upp din rapport
-När Power BI har importerat din Excel-fil kan du börja skapa rapporten. När meddelandet **Datauppsättningen är klar** visas, väljer du **Visa datauppsättning**.  Power BI öppnas i redigeringsvyn och visar rapportarbetsytan. På höger sida visas fönstren Visualiseringar, Filter och Fält.
+När Power BI-tjänsten har importerat Excel-filen börjar du skapa rapporten. 
 
-Observera att din Excel-arbetsboks tabelldata visas i fönstret Fält. Under namnet på tabellen visar Power BI kolumnrubrikerna som enskilda fält.
+1. När meddelandet **Datauppsättningen är klar** visas, väljer du **Visa datauppsättning**.  
 
-![så ser Excel-data ut i fältfönstret](media/service-from-excel-to-stunning-report/pbi_report_fields.png)
+   Power BI öppnas i redigeringsvyn och visar rapportarbetsytan. På höger sida visas fönstren **Visualiseringar**, **Filter** och **Fält**. Observera att din Excel-arbetsboks tabelldata visas i fönstret **Fält**. Under namnet på tabellen visar Power BI kolumnrubrikerna som enskilda fält.
 
-Nu kan du börja skapa visualiseringar. Chefen vill se vinsten över tid. I fönstret Fält drar du **Vinst** till rapportarbetsytan. Power BI visar ett stapeldiagram som standard. Dra därefter **Datum** till rapportarbetsytan. Power BI uppdaterar stapeldiagrammet för att visa vinst per datum.
+   ![Så ser Excel-data ut i fönstret Fält](media/service-from-excel-to-stunning-report/pbi_report_fields.png)
 
-![stapeldiagram i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
+2. Nu kan du börja skapa visualiseringar. Anta att chefen vill se vinsten över tid. I fönstret **Fält** drar du **Vinst** till rapportarbetsytan. 
 
-> **TIPS**: Kontrollera dina aggregeringar om diagrammet ser inte ut som du förväntade dig. Som exempel kan du högerklicka på det fält som du just har lagt till i området **Värde** och se till att dina data aggregeras på det sätt som du önskar.  I det här exemplet använder vi **Summa**.
-> 
-> 
+   Som standard visar Power BI ett stapeldiagram. 
 
-Chefen vill veta vilka länder som är mest lönsamma. Imponera på dem med en kartvisualisering. Välj ett tomt område på arbetsytan och dra fälten **Land** och **Vinst** från Fält-fönstret. Power BI skapar ett visuellt kartobjekt med bubblor som representerar den relativa vinsten för varje plats.
+3. Dra **Datum** till rapportarbetsytan. 
 
-![karta i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
+   Power BI uppdaterar stapeldiagrammet för att visa vinst per datum.
 
-Vad sägs om att visa ett visuell objekt där man kan avläsa försäljning per produkt och marknadssegment? Enkelt. I fönstret Fält markerar du kryssrutorna bredvid fälten Försäljning, Produkt och Segment. Power BI skapar ett stapeldiagram omedelbart. Ändra diagramtypen genom att välja en av ikonerna i menyn Visualiseringar. Ändra till exempel till ett liggande stapeldiagram.  Om du vill sortera diagrammet väljer du ellipserna (...) > **Sortera efter**.
+   ![Stapeldiagram i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-![stående stapeldiagram i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
+   > [!TIP]
+   > Kontrollera dina aggregeringar om diagrammet ser inte ut som du förväntar dig. Till exempel kan du i källan **Värde** högerklicka på det fält som du just lade till och kontrollera att data aggregeras på det sätt du vill. I det här exemplet använder vi **Summa**.
+   > 
+
+Chefen vill veta vilka länder som är mest lönsamma. Imponera på dem med en kartvisualisering. 
+
+1. Välj ett tomt område på rapportarbetsytan. 
+
+2. Från fönstret **Fält** drar du fälten **Land** och **Vinst** till rapportarbetsytan.
+
+   Power BI skapar ett visuellt kartobjekt med bubblor som representerar den relativa vinsten för varje plats.
+
+   ![Visuellt kartobjekt i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
+
+Vad sägs om att visa ett visuell objekt där man kan avläsa försäljning per produkt och marknadssegment? Enkelt. 
+
+1. I fönstret **Fält** markerar du fälten **Försäljning**, **Produkt** och **Segment**. 
+   
+   Power BI skapar ett stapeldiagram omedelbart. 
+
+2. Ändra diagramtypen genom att välja en av ikonerna i menyn **Visualiseringar**. Ändra till exempel till ett **stående stapeldiagram**. 
+
+3. Om du vill sortera diagrammet väljer du ellipsen (…) > **Sortera efter**.
+
+   ![Stående stapeldiagram i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
 Fäst alla dina visuella objekt på instrumentpanelen. Nu är du redo att dela den med dina kollegor.
 
-![instrumentpanel med 3 fästa visuella objekt](media/service-from-excel-to-stunning-report/pbi_report.png)
+   ![Instrumentpanel med tre fästa visuella objekt](media/service-from-excel-to-stunning-report/pbi_report.png)
 
 ## <a name="share-your-dashboard"></a>Dela instrumentpanelen
-Nu vill du dela din instrumentpanel med din chef Paula. Du kan dela din instrumentpanel och dess underliggande rapport med alla kollegor som har ett Power BI-konto. De kan interagera med rapporten men inte spara ändringarna.
+Anta att du vill dela din instrumentpanel med din chef. Du kan dela din instrumentpanel och dess underliggande rapport med alla kollegor som har ett Power BI-konto. De kan interagera med rapporten men kan inte spara ändringar.
 
-Om du vill dela din rapport väljer du **Dela** överst på instrumentpanelen.
+1. Om du vill dela din rapport väljer du **Dela** överst på instrumentpanelen.
 
-![Delningsikon](media/service-from-excel-to-stunning-report/power-bi-share.png)
+   ![Delningsikon](media/service-from-excel-to-stunning-report/power-bi-share.png)
 
-Power BI visar sidan Dela instrumentpanel. Ange e-postadresser till mottagarna i det översta området. Lägg till ett meddelande i fältet nedan. Om du vill att dina medarbetare ska kunna dela instrumentpanelen med andra, väljer du **Tillåt mottagarna att dela din instrumentpanel**. Välj **Dela**.
+   Power BI visar sidan **Dela instrumentpanel**. 
 
-![Fönstret Dela instrumentpanel](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
+2. Ange mottagarnas e-postadresser i rutan **Ange e-postadresser** och lägg till ett meddelande i rutan under den. 
 
-Nästa steg
+3. Om du vill att dina medarbetare ska kunna dela instrumentpanelen med andra, väljer du **Tillåt mottagarna att dela din instrumentpanel**. Välj **Dela**.
 
-* [Kom igång med Power BI-tjänsten](service-get-started.md)
+   ![Fönstret Dela instrumentpanel](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
+
+## <a name="next-steps"></a>Nästa steg
+
+* [Komma igång med Power BI-tjänsten](service-get-started.md)
 * [Kom igång med Power BI Desktop](desktop-getting-started.md)
 * [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+
+Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
 

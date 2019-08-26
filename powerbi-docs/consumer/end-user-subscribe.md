@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/12/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 2b0554729824b170fecbe6493141c6f3a8354002
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408540"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68961686"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Prenumerera på en rapport eller en instrumentpanel i Power BI-tjänsten 
 Det har aldrig varit enklare att hålla sig uppdaterad när det gäller viktiga instrumentpaneler och rapporter. Prenumerera på de rapportsidor och instrumentpaneler som är viktigast för dig och Power BI skickar dig ett e-postmeddelande med en ögonblicksbild till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: varje dag, varje vecka eller när data uppdateras. Du kan även ange en specifik tid då Power BI skickar e-postmeddelanden eller låta den köras nu.  
@@ -76,6 +76,7 @@ En prenumeration går ut om Pro-licensen upphör att gälla, om instrumentpanele
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * Instrumentpaneler med fler än 25 fästa paneler, eller fyra fästa liverapportsidor, kanske inte återges till fullo i prenumerationsmeddelanden som skickas till användare via e-post. Vi rekommenderar att du kontaktar och ber instrumentpanelsdesignern att minska antalet fästa paneler till färre än 25 och fästa live-rapporter till färre än fyra så att e-postmeddelandet återges korrekt.  
 * För e-postprenumerationer på instrumentpaneler visas inte paneler som har säkerhet på radnivå (RLS) tillämpat.  För e-postprenumerationer på rapporter går det inte att skapa en prenumeration om datauppsättningen använder RLS.
+* Om länkarna i ditt e-postmeddelande (till innehållet) slutar fungera kan det bero på att innehållet har tagits bort. Under skärmbilden i e-postmeddelandet kan du se om du har prenumererat dig själv eller om någon annan prenumererade åt dig. Om någon annan gjorde det kan du be den kollegan att antingen avbryta e-postmeddelandena eller prenumerera på nytt åt dig.
 * Rapportsideprenumerationer är knutna till namnet på rapportsidan. Om du prenumererar på en rapportsida och den byter namn måste du återskapa din prenumeration.
 * Kontakta systemadministratören om du inte använder prenumerationsfunktionen. Din organisation kan ha inaktiverat den här funktionen för autentisering eller av andra orsaker.  
 * E-postprenumerationer har inte stöd för så många [anpassade visuella objekt](../power-bi-custom-visuals.md).  Undantaget är de anpassade visuella objekt som har [certifierats](../power-bi-custom-visuals-certified.md).  

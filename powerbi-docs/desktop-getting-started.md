@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454506"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654861"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
 Välkommen till **Komma igång-guiden för Power BI Desktop**. Den här korta visningen av Power BI Desktop låter dig bekanta dig med hur den fungerar, visar vad den kan göra och ökar dina möjligheter att skapa robusta datamodeller, tillsammans med häpnadsväckande rapporter, som förstärker din affärsintelligens. 
@@ -130,7 +130,7 @@ Till att börja med, har de flesta klassificeringar förts in i **Frågeredigera
 
 Du kan också ändra, eller *omvandla* dessa kolumner från text till rubrik från menyfliksområdet **Omvandla**. Här är menyfliksområdet **Omvandla** med en pil som pekar mot knappen **Datatyp**, som låter dig omvandla den aktuella datatypen till en annan.
 
- ![](media/desktop-getting-started/shapecombine_changetype.png)
+ ![](media/desktop-getting-started/shapecombine-changetype-b.png)
 
 Observera att i **Frågeinställningarna**, återspeglar **tillämpade steg** de ändringar som har gjorts. Om jag vill ta bort något steg från formningsprocessen, väljer jag det steget och trycker på **X** till vänster om steget.
 
