@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751036"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621301"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Hantera flera innehavare med Power BI Embedded-analys
 
@@ -241,7 +241,7 @@ När slutanvändare redigerar eller skapar rapporter kan de använda produktions
 * Antalet V2-arbetsytor (mappar) som en användare/ett program kan vara en medlem i/administratör av är 1000.
 * Antal datauppsättningar på en enskild arbetsyta är 1000.
 * Antalet rapporter/instrumentpaneler som är anslutna till en enskild datauppsättning är 1000.
-* Storleksgränsen för datauppsättningsminnen vid uppladdning av en *.pbix*-fil är 10 GB.
+* Storleksgränsen för datamängdens minne vid uppladdning av en *.pbix*-fil är 10 GB.
 
 **Överväganden och begränsningar avseende Power BI-kapacitet:**
 

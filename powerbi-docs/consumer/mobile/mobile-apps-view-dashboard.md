@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665487"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654630"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
@@ -31,7 +31,7 @@ Instrumentpaneler är en portal till ditt företags livscykel och processer. En 
 Om du vill visa instrumentpaneler och rapporter på din mobila enhet måste du skapa eller ansluta dem i en webbläsare. 
 
 1. Gå till Power BI-tjänsten ([https://www.powerbi.com](https://www.powerbi.com)) och [registrera dig för ett konto](../../service-self-service-signup-for-power-bi.md).
-2. [Skapa egna Power BI-instrumentpaneler och -rapporter](../../service-get-started.md) eller anslut till befintliga [Power BI-appar](../../service-connect-to-services.md) för en mängd olika tjänster som till exempel [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md) och [Adobe Analytics](../../service-connect-to-adobe-analytics.md).
+2. [Skapa egna Power BI-instrumentpaneler och rapporter](../../service-get-started.md) eller anslut till befintliga [Power BI-appar](../../service-connect-to-services.md) för en mängd olika tjänster, som till exempel [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md).
 
 Här är en instrumentpanel i Power BI-tjänsten:
 

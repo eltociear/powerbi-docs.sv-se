@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c5b880132255fbdf37996273dc6c70029e548df6
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530527"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654898"
 ---
 # <a name="share-a-dataset-preview"></a>Dela en datamängd (förhandsversion)
 
@@ -42,7 +42,7 @@ Som skapare av *datamodeller* i Power BI Desktop kan du dela dem som *datamängd
 
 ## <a name="build-permissions-for-shared-datasets"></a>Skapa-behörighet för delade datamängder
 
-Skapa-behörighetstypen är endast relevant för datamängder. Med den kan användare skapa nytt innehåll i en datamängd, till exempel rapporter, instrumentpaneler, fästa paneler från Frågor och svar samt Insights Discovery. De kan även skapa nytt innehåll på datamängden utanför Power BI, till exempel Excel-blad via Analysera i Excel, XMLA och exportera.
+Skapa-behörighetstypen är endast relevant för datamängder. Med den kan användare skapa nytt innehåll i en datamängd, till exempel rapporter, instrumentpaneler, fästa paneler från Frågor och svar samt Insights Discovery. De kan även skapa nytt innehåll i datamängden utanför Power BI, till exempel Excel-blad via Analyze in Excel, XMLA och export av underliggande data.
 
 Användare får skapa-behörighet på olika sätt:
 
@@ -72,7 +72,7 @@ Med den här mer granulära skapa-behörigheten kan du välja vilka som endast k
 
 Om din datamängd används av en rapport utanför datamängdens arbetsyta kan du inte ta bort den datamängden. I stället visas ett felmeddelande.
 
-Du kan ta bort skapa-behörigheter. Om du gör det kan de personer vars behörigheter du har återkallat fortfarande se rapporten, men de kan inte längre redigera den.
+Du kan ta bort skapa-behörigheter. Om du gör detta kan de personer vars behörigheter du har återkallat fortfarande se rapporten, men de kan inte längre redigera den eller exportera underliggande data. Användare med enbart läsbehörighet kan fortfarande exportera sammanfattade data. 
 
 ## <a name="track-your-dataset-usage"></a>Spåra datamängdsanvändningen
 

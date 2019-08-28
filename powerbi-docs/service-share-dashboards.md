@@ -8,26 +8,26 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d82b03325991276924f25da5511baadfe53127e1
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: da7b8999dfb6185b044960dde7795008d7e716f7
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523014"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655102"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-![Dela ikonen i en lista över favoritinstrumentpaneler](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
+![Delningsikonen i en lista med instrumentpaneler](media/service-share-dashboards/power-bi-share-new-look.png)
 
 Med delning, vare sig om du delar innehåll i eller utanför din organisation, behöver du en [Power BI Pro-licens](service-features-license-type.md). Mottagarna behöver också Power BI Pro-licenser, såvida inte innehållet finns i en [Premium-kapacitet](service-premium-what-is.md). 
 
-Du kan dela instrumentpaneler och rapporter från de flesta platser i Power BI-tjänsten: Favoriter, Senaste, Delat med mig (om ägaren tillåter det), Min arbetsyta eller andra arbetsytor. När du delar en instrumentpanel eller en rapport, kan de som du delar med se den och interagera med den, men inte redigera den. De ser samma data som visas på instrumentpanelen eller i rapporterna, såvida inte [säkerhet på radnivå (RLS)](service-admin-rls.md) tillämpas. De medarbetare som du delar med kan också dela den med sina medarbetare, om du tillåter detta. Personerna utanför organisationen kan också visa och interagera med instrumentpanelen eller rapporten, men de kan inte dela den. 
+Du kan dela instrumentpaneler och rapporter från de flesta platser i Power BI-tjänsten: Favoriter, Senaste, Delat med mig (om ägaren tillåter det), Min arbetsyta eller andra arbetsytor. När du delar en instrumentpanel eller en rapport kan de som du delar med se den och interagera med den, men inte redigera den. De ser samma data som visas på instrumentpanelen eller i rapporterna, såvida inte [säkerhet på radnivå (RLS)](service-admin-rls.md) tillämpas. De medarbetare som du delar med kan också dela den med sina medarbetare, om du tillåter detta. Personerna utanför organisationen kan också visa och interagera med instrumentpanelen eller rapporten, men de kan inte dela den. 
 
-Du kan också [dela en instrumentpanel från vilken Power BI-mobilapp du vill](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Du kan dock inte dela instrumentpaneler från Power BI Desktop.
+Du kan inte dela instrumentpaneler från Power BI Desktop. Du kan dock [dela en instrumentpanel från vilken Power BI-mobilapp du vill](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
 ## <a name="video-share-a-dashboard"></a>Video: Dela en instrumentpanel
 Se hur Amanda delar sin instrumentpanel med kollegor i och utanför företaget. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
@@ -55,7 +55,9 @@ Se hur Amanda delar sin instrumentpanel med kollegor i och utanför företaget. 
    
    Att låta andra dela kallas *dela om*. Om du låter dem göra det, kan de dela om från Power BI-tjänsten och de mobila apparna, eller vidarebefordra e-postinbjudan till andra i din organisation. Inbjudan upphör att gälla efter en månad. Personer utanför organisationen kan inte dela om. Som ägare av innehållet kan du inaktivera delning igen eller återkalla delning igen på individuell grund. Se [Sluta dela eller hindra andra från att dela](#stop-sharing-or-stop-others-from-sharing).
 
-5. Välj **Dela.**
+5. Om du väljer **Låt användare skapa nytt innehåll från de underliggande datauppsättningarna** kan de skapa egna rapporter i andra arbetsytor baserat på datamängden för instrumentpanelen.
+
+1. Välj **Dela.**
    
    ![Välj knappen Dela](media/service-share-dashboards/power-bi-share-dialog-share.png)  
    
@@ -63,11 +65,11 @@ Se hur Amanda delar sin instrumentpanel med kollegor i och utanför företaget. 
    
    När mottagare i din organisation klickar på länken, så lägger Power BI till instrumentpanelen eller rapporten på sidan **Delat med mig**. De kan markera namnet för att se allt innehåll som du delar med dem. 
    
-   ![Listsidan Delat med mig](media/service-share-dashboards/power-bi-shared-with-me-dashboards-reports.png)
+   ![Listsidan Delat med mig](media/service-share-dashboards/power-bi-shared-with-me-new-look.png)
    
-   När mottagare utanför organisationen klickar på länken kan de se instrumentpanelen eller rapporten, men inte i den vanliga Power BI-portalen. Mer information finns i [Dela en instrumentpanel eller rapport med personer utanför din organisation](#share-a-dashboard-or-report-with-people-outside-your-organization).
+   När mottagare utanför organisationen klickar på länken kan de se instrumentpanelen eller rapporten, men inte i den vanliga Power BI-portalen. Mer information finns i [Dela en instrumentpanel eller rapport med personer utanför din organisation](#share-a-dashboard-or-report-outside-your-organization).
 
-## <a name="who-has-access-to-a-dashboard-or-report-you-shared"></a>Vem har tillgång till en instrumentpanel eller rapport som du delat?
+## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Se vem som har tillgång till en instrumentpanel eller en rapport
 Ibland kan du behöva se vilka personer du har delat med samt vilka de har delat med:
 
 1. I listan över instrumentpaneler och rapporter, eller i själva instrumentpanelen eller rapporten, välj **Resurs** ![Resursikon](media/service-share-dashboards/power-bi-share-icon.png). 
@@ -99,7 +101,7 @@ Endast en instrumentpanels eller rapports ägare kan aktivera eller inaktivera o
 
     ![Dialogruta med Power BI-delningsvarning](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
 
-## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Dela en instrumentpanel eller rapport med personer utanför din organisation
+## <a name="share-a-dashboard-or-report-outside-your-organization"></a>Dela en instrumentpanel eller en rapport utanför din organisation
 När du delar med personer utanför organisationen får de ett e-postmeddelande med en länk till den delade instrumentpanelen eller rapporten, och de måste logga in på Power BI för att kunna se den. Om de inte har någon Power BI Pro-licens kan de registrera sig för en licens efter att ha klickat på länken.
 
 När de har loggat in visas den delade instrumentpanelen eller rapporten i ett eget webbläsarfönster, inte i den vanliga Power BI-portalen. För att komma åt den här instrumentpanelen eller rapporten senare behöver de lägga till länken som bokmärke.

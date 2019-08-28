@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 591a837bb085ba901316e672112b568923995718
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590541"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654760"
 ---
 # <a name="using-directquery-in-power-bi"></a>Använda DirectQuery i Power BI
 Du kan ansluta till alla typer av olika datakällor när du använder **Power BI Desktop** eller **Power BI-tjänsten**, och du kan göra dessa dataanslutningar på olika sätt. Du kan *importera* data till Power BI, vilket är det vanligaste sättet att hämta data på, eller ansluta direkt till informationen i dess ursprungliga källdatabas, vilket kallas **DirectQuery**. Den här artikeln beskriver **DirectQuery** och dess funktioner:
@@ -140,11 +140,8 @@ När du använder **DirectQuery** kan många av dessa modellberikningar fortfara
 * **Begränsningar i beräknade kolumner:** Beräknade kolumner är begränsade till att bara kunna hänvisa till värden på andra kolumner i samma tabell, utan att några aggregeringsfunktioner används. De tillåtna DAX-skalärfunktionerna (som t.ex. LEFT()) begränsas dessutom till dem som bara kan skickas till den underliggande källan, och varierar därför beroende på källans exakta funktioner. Funktioner som inte stöds listas inte vid automatisk komplettering när du redigerar DAX för en beräknad kolumn, och de skulle resultera i ett fel om de användes.
 * **Inget stöd för överordnade-underordnade DAX-funktioner:** I DirectQuery-modellen går det inte att använda de DAX-PATH()-funktioner, som normalt hanterar strukturer med överordnad-undererordnad (som i t.ex. kontoplaner eller organisationshierarkier).
 * **Beräknade tabeller stöds inte:** Möjligheten att definiera en beräknad tabell med hjälp av ett DAX-uttryck stöds inte i DirectQuery-läge.
-* **Relationsfiltrering är begränsad till en riktning:** När du använder DirectQuery gå det inte att ställa in korsfiltreringsriktningen för en relation till Båda. Med de tre tabellerna nedan skull det inte vara möjligt att skapa ett visuellt objekt som visar varje kund [kön] och det antal av en produkt [kategori] som var och en har köpt. Användning av sådan dubbelriktad filtrering beskrivs [i detta detaljerade white paper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (här presenteras exempel i SQL Server Analysis Services-kontext, men de grundläggande punkterna gäller lika mycket för Power BI).
-  
-  ![](media/desktop-directquery-about/directquery-about_01.png)
-  
-  Återigen orsakas begränsningen av prestandaskäl. En särskilt viktig tillämpning av detta är när du definierar säkerhet på radnivå som en del av rapporten, som ett gemensamt mönster av en många-många-relation mellan användarna och de enheter de har åtkomst till, och då dubbelriktad filtrering krävs för att åstadkomma detta. Dubbelriktad filtrering för DirectQuery-modeller bör dock användas sparsamt, och med stor uppmärksamhet på eventuell skadlig inverkan på prestanda.  
+* **Relationsfiltrering:** Användningen av dubbelriktad filtrering beskrivs [i detta detaljerade white paper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (här presenteras exempel i SQL Server Analysis Services-kontext, men de grundläggande punkterna gäller lika mycket för Power BI).
+
 * **Ingen klustring:** När du använder DirectQuery så går det inte att använda klustringskapaciteten för att automatiskt söka efter grupper
 
 ### <a name="reporting-limitations"></a>Rapporteringsbegränsningar

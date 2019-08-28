@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7965751740384c5a5f1cc663389a559e0c1bd1c0
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e28306532714369830df46304aa4a1ebff67bd8f
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69563676"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985662"
 ---
 # <a name="using-templates-in-power-bi-desktop"></a>Använda mallar i Power BI Desktop
 
@@ -70,7 +70,10 @@ När parametrar och data har angetts skapas en rapport som innehåller alla sido
 Och sedan är du klar. Att skapa och använda rapportmallar i Power BI Desktop är enkelt, så du kan enkelt reproducera övertygande layouter och andra rapportaspekter och dela dem med andra.
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
+Du kanske också är intresserad av att lära dig mer om **frågeparametrar**:
+* [Använder du frågeparametrar i Power BI Desktop?](https://docs.microsoft.com/power-query/power-query-query-parameters)
+
+Det finns dessutom olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
 
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)

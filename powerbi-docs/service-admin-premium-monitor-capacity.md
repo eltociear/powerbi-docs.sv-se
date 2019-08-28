@@ -10,25 +10,25 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: b57f444f11c9592d80ffccf7a80be5fa9c7dcf3b
+ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68362709"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008125"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Övervaka Premium-funktioner med appen
 
 Övervakning av dina kapaciteter är viktigt för att fatta välgrundade beslut om hur du bäst använder dina Premium-kapacitetsresurser. Du kan övervaka kapacitet med administratörsportalen eller med appen **Power BI Premium Capacity Metrics**. I den här artikeln beskrivs appen Premium Capacity Metrics. Appen ger den mest djupgående informationen om hur kapaciteterna fungerar. För en översikt på högre nivå över genomsnittliga användningsmått de senaste sju dagarna kan du använda administratörsportalen. Mer information om övervakning i portalen finns i [Övervaka Premium-kapaciteter i administratörsportalen](service-admin-premium-monitor-portal.md).
 
-Appen uppdateras regelbundet med nya funktioner. Se till att du kör den senaste versionen. Om du redan har en tidigare version av appen installerad är det bäst att ta bort den från dina appar och sedan trycka på CTRL+F5 för att uppdatera. 
+Appen uppdateras regelbundet med nya funktioner. Se till att du kör den senaste versionen. Om du redan har en tidigare version av appen installerad är det bäst att ta bort den från dina appar och sedan trycka på CTRL+F5 för att uppdatera.
 
 ## <a name="install-the-app"></a>Installera appen
 
 Du kan gå direkt till [Premium Capacity Metrics-appen](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) eller installera den precis som andra appar i Power BI.
 
+1. I Power BI klickar du på **Appar**.
 
-1. I Power BI klickar du på **Appar**.   
     ![Gå till Appar](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. Till höger klickar du på **Hämta appar**.
@@ -245,7 +245,7 @@ Sidan Datauppsättningar har olika *områden* som inkluderar **Uppdateringar**, 
 | **Rapportavsnitt** | **Mått** |
 | --- | --- |
 | CPU-förbrukning |  Förbrukning av arbetsbelastning som procentandel av total CPU-kapacitet. Visas per timme, för de sju föregående dagarna. |
-| Minnesförbrukning |  Minnesförbrukning i GB per arbetsbelastning (heldragna linjer), med arbetsbelastningsbelastningar (streckad linje) ovanpå. Visas per timme, för de sju föregående dagarna. |
+| Minnesförbrukning |  Maximal minnesförbrukning per timme, i GB per arbetsbelastning (heldragna linjer) och med arbetsbelastningsgränser (streckad linje) överst. Visas per timme, för de sju föregående dagarna. |
 |  |  |
 
 ### <a name="ids-and-info"></a>ID:n och info

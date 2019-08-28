@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 08/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 747ff7788ce30f5d4f61c48cc70a737bc74cd612
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565386"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654271"
 ---
 # <a name="power-bi-premium-faq"></a>Vanliga frågor och svar om Power BI Premium
 
@@ -76,9 +76,9 @@ Power BI Premium är tillgängligt som ett tillägg till Power BI Pro. Office 36
 
 **Vad är Power BI-rapportservern? Betyder detta att ni gör Power BI tillgängligt lokalt?**
 
-Power BI-rapportservern är en lokal server som möjliggör distribution av interaktiva Power BI-rapporter och sidnumrerade rapporter helt inom gränserna för organisationens brandvägg. Power BI-rapportservern är tillgänglig via Power BI Premium eller som en förmån för kunder med Microsoft SQL Server Enterprise Edition med Software Assurance. Kontakta din Microsoft-representant för mer information.
+Power BI-rapportservern är en lokal server som möjliggör distribution av interaktiva Power BI-rapporter och sidnumrerade rapporter helt inom gränserna för organisationens brandvägg. Power BI-rapportservern är tillgänglig via Power BI Premium eller som en förmån för kunder med Microsoft SQL Server Enterprise Edition med Software Assurance. Information om licensiering finns i [Licensiera Power BI-rapportserver](report-server/get-started.md#licensing-power-bi-report-server). Kontakta din Microsoft-representant för mer information.
 
-Med Power BI Premium. kan samma antal virtuella kärnor som en organisation tillhandahåller i molnet också distribueras lokalt via Power BI-rapportservern. Kapaciteten behöver inte delas. Organisationer kan välja Power BI i molnet, eller välja att behålla rapporter lokalt med Power BI-rapportservern och flytta till molnet i egen takt.
+Med Power BI Premium kan samma antal virtuella kärnor som en organisation tillhandahåller i molnet också distribueras lokalt via Power BI-rapportservern. Kapaciteten behöver inte delas. Organisationer kan välja Power BI i molnet, eller välja att behålla rapporter lokalt med Power BI-rapportservern och flytta till molnet i egen takt.
 
 Mer information finns i [Kom igång med Power BI-rapportserver](report-server/get-started.md).
 

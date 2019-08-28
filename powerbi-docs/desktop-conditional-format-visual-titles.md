@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 7917edc17bd93d96c22641b14c4c70bfe3222e10
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522184"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621259"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Uttrycksbaserade rubriker i Power BI Desktop
 
@@ -57,7 +57,7 @@ När du har skapat DAX-uttrycket för det fält som du skapar i modellen behöve
 
 För att markera fältet och tillämpa det går du till fönstret **Visualiseringar**. I området **Format** väljer du **Rubrik** för att visa rubrikalternativen för det visuella objektet. 
 
-När du högerklickar på **Rubriktext** visas en snabbmeny där du kan välja ***fx*Villkorsstyrd formatering**. När du väljer det menyalternativet visas dialogrutan **Rubriktext**. 
+När du högerklickar på **Rubriktext** visas en snabbmeny där du kan välja **<em>fx</em>Villkorsstyrd formatering**. När du väljer det menyalternativet visas dialogrutan **Rubriktext**. 
 
 ![Skärmbild av dialogrutan Rubriktext](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

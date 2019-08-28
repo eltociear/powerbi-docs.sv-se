@@ -7,25 +7,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/21/2019
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: c743f56de101cb63db2357acf869aba80162c181
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 4f3c709c0ea699c0c9ad7ebee61889e6c7bceef8
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559042"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985764"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Inkrementell uppdatering i Power BI Premium
 
 Inkrementell uppdatering gör det möjligt att använda mycket stora datamängder i Power BI Premium-tjänsten, vilket medför följande fördelar:
 
-- **Snabbare uppdateringar** – Endast data som ändras behöver uppdateras. Exempelvis kan en uppdatering göras på de senaste fem dagarna i en datamängd som spänner över tio år.
-
-- **Mer tillförlitliga uppdateringar** – Det krävs inte längre långvariga anslutningar till instabila källsystem.
-
-- **Minskad resursförbrukning** – När färre data behöver uppdateras minskar den totala förbrukningen av minne och andra resurser.
+> [!div class="checklist"]
+> * **Snabbare uppdateringar** – Endast data som ändras behöver uppdateras. Exempelvis kan en uppdatering göras på de senaste fem dagarna i en datamängd som spänner över tio år.
+> * **Mer tillförlitliga uppdateringar** – Det krävs inte längre långvariga anslutningar till instabila källsystem.
+> * **Minskad resursförbrukning** – När färre data behöver uppdateras minskar den totala förbrukningen av minne och andra resurser.
 
 ## <a name="configure-incremental-refresh"></a>Konfigurera inkrementell uppdatering
 
@@ -51,9 +50,13 @@ När parametrarna har definierats kan du tillämpa filtret genom att välja meny
 
 ![Anpassat filter](media/service-premium-incremental-refresh/custom-filter.png)
 
-Se till att raderna filtreras där kolumnvärdet *infaller efter eller är lika med* **RangeStart** och där det infaller *före* **RangeEnd**.
+Se till att raderna filtreras där kolumnvärdet *infaller efter eller är lika med* **RangeStart** och där det infaller *före* **RangeEnd**. Andra filterkombinationer kan resultera i en dubbel räkning av raderna.
 
 ![Filtrera rader](media/service-premium-incremental-refresh/filter-rows.png)
+
+> [!IMPORTANT]
+> Kontrollera att frågorna har ett likhetstecken (=) i antingen **RangeStart** eller **RangeEnd**, men inte båda. Om det finns ett likhetstecken (=) i båda parametrarna kan en rad uppfylla villkoren för två partitioner, vilket kan leda till duplicerade data i modellen. Exempel:  
+> \#"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] **>= RangeStart** and [OrderDate] **<= RangeEnd**) kan resultera i duplicerade data.
 
 > [!TIP]
 > Datatypen för parametrarna måste vara datum/tid, men de kan konverteras så att de uppfyller datakällans krav. Följande Power Query-funktion konverterar till exempel ett datum/tid-värde så att det liknar en surrogatnyckel i heltalsform med formatet *ååååmmdd*, vilket är vanligt för informationslager. Funktionen kan anropas i filtersteget.
@@ -152,7 +155,7 @@ Nu kan du uppdatera modellen. Den första uppdateringen kan ta längre tid efter
 
 Artikeln [Felsöka uppdateringsscenarier](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) förklarar hur timeouter kan uppstå i samband med uppdateringsåtgärder i Power BI-tjänsten. Frågor kan också begränsas av datakällans standardvärde för timeout. De flesta relationskällor stöder åsidosättning av timeouter i M-uttrycket. Exempelvis använder uttrycket nedan [SQL Server-funktionen data-access](https://msdn.microsoft.com/query-bi/m/sql-database) för att ange värdet till två timmar. Varje period som definieras av principintervallen skickar en fråga som tar hänsyn till kommandots timeout-inställning.
 
-```
+```powerquery-m
 let
     Source = Sql.Database("myserver.database.windows.net", "AdventureWorks", [CommandTimeout=#duration(0, 2, 0, 0)]),
     dbo_Fact = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
@@ -164,3 +167,4 @@ in
 ## <a name="limitations"></a>Begränsningar
 
 För närvarande stöds bara inkrementell uppdatering för [sammansatta modeller](desktop-composite-models.md) för datakällor av typen SQL Server, Azure SQL Database, Oracle och Teradata.
+

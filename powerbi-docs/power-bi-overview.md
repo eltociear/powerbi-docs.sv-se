@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/30/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d6c9eb47d5f88a2d835c1ba6835e871b0c64bf1c
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 0e12d110708c955e0c63e11f7578523222375448
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324771"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654959"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Dina data kan finnas i ett Excel-kalkylblad eller i en samling molnbaserade och lokala hybridinformationslager. Med Power BI kan du enkelt ansluta till dina datakällor, visualisera och upptäcka det som är viktigt och dela resultat med alla du vill.
@@ -25,11 +25,11 @@ Power BI kan vara enkelt och snabbt, och kan skapa snabba insikter från ett Exc
 
 ## <a name="the-parts-of-power-bi"></a>Power BI:s delar
 Power BI består av: 
-- Ett Windows-skrivbordsprogram som heter **Power BI Desktop**
-- En onlinebaserad SaaS-tjänst (*programvara som en tjänst*) som kallas **Power BI-tjänsten** 
-- Power BI-**mobilappar** för enheter med Windows, iOS och Android
+- Ett Windows-skrivbordsprogram som heter **Power BI Desktop**.
+- En onlinebaserad SaaS-tjänst (*programvara som en tjänst*) som kallas **Power BI-tjänsten**. 
+- Power BI-**mobilappar** för enheter med Windows, iOS och Android.
 
-![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-blocks.png)
+![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Dessa tre delar – Power BI Desktop, tjänsten och mobilapparna – är utformade för att hjälpa personer att skapa, dela och använda affärsinsikter på det sätt som passar dem bäst beroende på deras roll.
 

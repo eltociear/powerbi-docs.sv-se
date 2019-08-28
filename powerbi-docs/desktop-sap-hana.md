@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7b3a59ae8926ce5e302cfcdecec617d1f3fd107b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f40ed1b3950ace0b3cb362a22670e98c3ef83112
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513896"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985685"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Använd SAP HANA i Power BI Desktop
 Med Power BI Desktop kan du nu komma åt **SAP HANA**-databaser. Om du vill använda **SAP HANA**, måste SAP HANA ODBC-drivrutinen installeras på den lokala klientdatorn för att Power BI Desktop **SAP HANA**-dataanslutningen ska fungera korrekt. Du kan hämta SAP HANA ODBC-drivrutinen från [SAP Software Download Center](https://support.sap.com/swdc). Därifrån söker du efter SAP HANA-klienten för Windows-datorer. Eftersom **SAP Software Download Center** ofta ändrar struktur, finns det inte tydligare riktlinjer för att navigera den webbplatsen.
@@ -36,10 +36,13 @@ Den här versionen har många funktioner för **SAP HANA**som visas i listan ned
 
 * Anslutningsprogrammet för Power BI för **SAP HANA** använder sig av SAP ODBC-drivrutinen för att tillhandahålla den bästa användarupplevelsen
 * **SAP HANA** stöder både alternativen DirectQuery och importera
-* Powerbi stöder HANA-informationsmodeller (som Analytic- och Calc-vyer) och har optimerad navigering
+* Power BI har stöd för HANA-informationsmodeller (t.ex. analys- och beräkningsvyer) och har en optimerad navigering
 * Med **SAP HANA** kan du också använda direkt SQL-funktionen för att ansluta till rad- och kolumntabeller
 * Inkluderar optimerad navigering för HANA-modeller
 * Power BI stöder **SAP HANA**-variabler och indataparametrar
+* Vyer för HDI-containerbaserade beräkningsvyer
+  * Stödet för HDI-containerbaserade beräkningsvyer finns i en offentlig förhandsversion i augusti 2019-versionen av Power BI Desktop. Om du vill öppna dina HDI-containerbaserade beräkningsvyer i Power BI, kontrollerar du att den/de HANA-databasanvändare som du använder i Power BI har behörighet till HDI-körningscontainern där de vyer som du vill ha åtkomst till finns. För att bevilja åtkomsten måste du skapa en roll som ger åtkomst till din HDI-container och tilldela rollen till den HANA-databasanvändare som du kommer att använda med Power BI (denna användare måste också ha behörighet att läsa från systemtabellerna i \_SYS\_BI-schemat). I den officiella SAP-dokumentationen finns detaljerade anvisningar för hur du skapar och tilldelar databasroller. Det kan vara klokt att börja med [det här SAP-blogginlägget](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.sap.com%2F2018%2F01%2F24%2Fthe-easy-way-to-make-your-hdi-container-accessible-to-a-classic-database-user%2F&data=02%7C01%7Cv-adbold%40microsoft.com%7Cf7e0a405fe334598ba0608d7096ef5b4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636988244476739316&sdata=PuRu61GPRYp34mLuGbQk6gdbRikdgbxfqo8q1RBQtm0%3D&reserved=0).
+  * Observera att det för närvarande finns vissa begränsningar för HANA-variabler som är kopplade till HDI-baserade beräkningsvyer. De här begränsningarna beror på fel på HANA-sidan och kommer att åtgärdas i framtida versioner av SAP HANA. För det första är det inte möjligt att tillämpa en HANA-variabel på en delad kolumn i en HDI-containerbaserad beräkningsvy. Den här begränsningen kan åtgärdas genom att uppgradera till HANA 2 version 37.02 och senare, eller HANA 2 version 42 och senare. För det andra visas inte standardvärden med flera poster för variabler och parametrar i Power BI-gränssnittet. Detta beror också på ett fel i SAP HANA, men SAP har ännu inte meddelat när detta ska åtgärdas.
 
 ## <a name="limitations-of-sap-hana"></a>Begränsningar för SAP HANA
 Det finns några begränsningar med att använda **SAP HANA** som visas nedan:
@@ -51,9 +54,11 @@ Det finns några begränsningar med att använda **SAP HANA** som visas nedan:
 
 
 ## <a name="next-steps"></a>Nästa steg
-Mer information om DirectQuery finns i följande resurser:
+Mer information om DirectQuery och SAP HANA finns i följande resurser:
 
 * [DirectQuery och SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
+* [Aktivera kryptering för SAP HANA](desktop-sap-hana-encryption.md)
+
 

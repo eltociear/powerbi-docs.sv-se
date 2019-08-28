@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0e63025c4e8a07e9cd22c82ca7e605042fa65be0
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264294"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654148"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 
@@ -29,7 +29,7 @@ Power BI är en molnbaserad tjänst för företagsanalyser som låter vem som he
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Vad är skillnaden mellan Power BI Pro och Power BI Premium?
 
-Power BI Pro är en individuell licens som ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten. Du kan till och med dela innehåll och samarbeta med andra Pro-användare. Endast Pro-användare kan publicera innehåll till och använda apparbetsytor, dela instrumentpaneler och prenumerera på instrumentpaneler och rapporter.
+Power BI Pro är en individuell licens som ger åtkomst till allt innehåll och alla funktioner i Power BI-tjänsten. Du kan till och med dela innehåll och samarbeta med andra Pro-användare. Det är bara Pro-användare som kan publicera innehåll på apparbetsytor, dela instrumentpaneler samt prenumerera på instrumentpaneler och rapporter.
 
 Power BI Premium tillhandahåller dedikerad kapacitet för att erbjuda mer enhetlig prestanda. Det ger även stöd för större datavolymer i Power BI. För enskilda användare möjliggör Premium även omfattande distribution av innehåll av Pro-användare utan att det krävs licenser per användare för mottagare som visar innehållet.
 

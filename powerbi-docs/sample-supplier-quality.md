@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 75e5a6387574c6cc4a9620955a3e7c15479830c2
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391186"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621318"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur
 
@@ -144,7 +144,7 @@ Den bäst hanterade materialtypen är den med lägst stilleståndstid eller utan
     Det förekom många fler råmaterialsdefekter under 2014 än under 2013.  
 
     ![Fråga för Frågor och svar: Visa materialtyp, år och total mängd defekta](media/sample-supplier-quality/supplier12.png)  
-6. Sedan ändrar du frågan till *visa materialtyper, år och total **nedtid i minuter***.  
+6. Sedan ändrar du frågan till _visa materialtyper, år och total **stilleståndstid i minuter**_ .  
 
    ![Fråga för Frågor och svar: Visa materialtyper, år och total nedtid i minuter](media/sample-supplier-quality/supplier13.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Redigera SAP-variabler i Power BI-tjänsten (förhandsversion)
 description: Azure och Power BI
-author: maggiesMSFT
-ms.author: maggies
+author: Sujata994
+ms.author: sunaraya
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aff72d8efed716af2e7f4c881b22af12e248c207
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962905"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654879"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>Redigera SAP-variabler i Power BI-tjänsten (förhandsversion)
 
@@ -38,7 +38,7 @@ Det finns några krav för användning av funktionen för att redigera SAP-varia
 
 **Power BI Premium-prenumeration krävs** – funktionen för att redigera SAP-variabler fungerar för närvarande endast i Power BI Premium-prenumerationer.
 
-**SSO-konfiguration krävs** – för att den här funktionen ska fungera måste enkel inloggning (SSO) vara konfigurerad. Mer information finns i [översikten av enkel inloggning (SSO)](service-gateway-sso-overview.md).
+**Konfiguration av enkel inloggning krävs** – för att den här funktionen ska fungera måste enkel inloggning vara konfigurerad. Mer information finns i [översikten av enkel inloggning (SSO)](service-gateway-sso-overview.md).
 
 **Nya gatewaybitar** krävs – ladda ned den senaste gatewayen och uppdatera din befintliga gateway. Mer information finns i [tjänstgateway](service-gateway-onprem.md).
 

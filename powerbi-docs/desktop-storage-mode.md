@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61364359"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654734"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Lagringsläge i Power BI Desktop
 
@@ -62,6 +62,10 @@ Det finns tre värden för lagringsläge:
 * **Dubbla**: Dubbla tabeller kan fungera antingen som cachelagrade eller inte cachelagrade, beroende på kontexten för den fråga som skickas till Power BI-datauppsättningen. I vissa fall kan du uppfylla frågor från cachelagrade data. I andra fall måste du uppfylla frågor genom att köra en fråga på begäran till datakällan.
 
 Att ändra en tabell till **Import** är en åtgärd som *inte går att ångra*. Den här egenskapen kan inte ändras till DirectQuery eller Dubbla.
+
+> [!NOTE]
+> Du kan använda lagringsläget *Dubbla* i Power BI Desktop och i Power BI-tjänsten.
+
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Begränsningar för DirectQuery-tabeller och dubbla tabeller
 

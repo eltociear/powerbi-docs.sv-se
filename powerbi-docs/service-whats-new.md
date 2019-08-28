@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/28/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06ba5835a568b7158a204ea6676e92844d40414d
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375266"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655040"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -32,30 +32,30 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ## <a name="may-2019"></a>Maj 2019
 * [Anpassad navigering](service-create-distribute-apps.md) för Power BI-appar.
-* Ytterligare bilagor typer (PPTX, XLSX, DOCX, CSV, XML) tillgängliga för e-subcriptions i sidnumrerade rapporter.
+* Ytterligare typer av bilagor (PPTX, XLSX, DOCX, CSV, XML) som är tillgängliga för e-postprenumerationer i sidnumrerade rapporter.
 
 ## <a name="previous-months-2019"></a>Föregående månader (2019)
 ### <a name="april-2019"></a>April 2019
-* Allmän tillgänglighet för Power BI [dataflöden](service-dataflows-overview.md).
-* Allmän tillgänglighet för den nya upplevelsen för arbetsytor.
-* Ny Power BI-regioner i Frankrike och Korea.
-* Uppdaterade frågor och svar en upplevelse för instrumentpaneler.
+* Allmän tillgänglighet för [dataflöden](service-dataflows-overview.md) i Power BI.
+* Allmän tillgänglighet för nya arbetsytor.
+* Nya Power BI-regioner i Frankrike och Korea.
+* Uppdaterade frågor och svar för instrumentpaneler.
 * Stöd för Azure Analysis Services i [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md).
-* Sidnumrerade rapporter i Power BI-appar som stöds.
-* [E-prenumerationer](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) med PDF-bilagor för sidnumrerade rapporter.
-* Power BI Premium sammanfattning och arbetsbelastningen mått som stöds i Administratörsportalen
-* [Fråga cachelagring](power-bi-query-caching.md) tillgängliga i Power BI Premium.
-* Allmän tillgänglighet för [Power BI Start](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+* Sidnumrerade rapporter som stöds i Power BI-appar.
+* [E-postprenumerationer](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) med PDF-bilagor för sidnumrerade rapporter.
+* Power BI Premium-sammanfattning och arbetsbelastningsmått som stöds i administratörsportalen
+* [Cachelagring av frågor](power-bi-query-caching.md) som är tillgänglig i Power BI Premium.
+* Allmän tillgänglighet för [Power BI-start](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
 
 ### <a name="march-2019"></a>Mars 2019
 * Multi-Geo för Power BI Premium är allmänt tillgängligt.
 * Redigering och hantering av Power BI-innehåll stöds för Azure B2B.
-* Offentlig förhandsversion av skrivskyddade [XMLA-slutpunkten](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+* Offentlig förhandsversion av en skrivskyddad [XMLA-slutpunkt](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
 
 ### <a name="february-2019"></a>Februari 2019
 * Storleksmått för arbetsbelastningar och aktiva datauppsättningar i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Exportera till PDF för Power BI-rapporter.
-* [På begäran e-postprenumerationer](service-report-subscribe.md).
+* [E-postprenumerationer på begäran](service-report-subscribe.md).
 * Massåtgärder i administratörsportalen.
 * Filtrerad export för PPT och PDF.
 * [Inställningar för hjälp och support](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) i administratörsportalen.
@@ -87,8 +87,8 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 
 ### <a name="september-2018"></a>September 2018
 * [Instrumentpanelskommentarer](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) i Power BI-tjänsten.
-* Offentlig förhandsversion av [Power BI start och Global sökning](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Möjligheten att [övervakning frågor](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) i den [kapacitet övervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Allmän förhandsversion av [Power BI-start och global sökning](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Möjlighet att [övervaka frågor](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) i [kapacitetövervakningsappen](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>Augusti 2018
 * [Kapacitetövervakningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) för Power BI Premium.
@@ -257,7 +257,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 
 ***Instrumentpaneler***
 
-* Favoritinstrumentpaneler: För att hjälpa dig att nå dina vanligaste instrumentpaneler har vi lagt till ett sätt att favoritmarkera dessa instrumentpaneler så att de är lättillgängliga från alla arbetsytor.
+* Favoritinstrumentpaneler: För att hjälpa dig att nå de instrumentpaneler du använder oftast, har vi lagt till ett sätt att favoritmarkera dessa instrumentpaneler så att de är lättillgängliga från alla arbetsytor.
 
 ***Analysera i Excel***
 
@@ -302,7 +302,7 @@ För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.
 ***Analysera i Excel***
 
 * [Analysera i Excel](service-analyze-in-excel.md), tillgängligt för alla användare: möjligheten att komma åt dina Power BI-datamodeller i Excel har utökats för alla användare, oavsett vilken licens de har tilldelats.
-* Förbättrad upplevelse för flera användarkonton: Om du har mer än 1 Power BI-konto är det nu enklare att logga in.
+* Förbättrad upplevelse för flera användarkonton: Om du har mer än ett Power BI-konto är det nu enklare att logga in.
 
 För mer information, [besök Power BI-teamets blogg](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
 
@@ -346,11 +346,11 @@ Den här månaden vi gjort vissa uppdateringar för instrumentpaneler, Quick Ins
 
 * Helskärmsläge: Skriv ut utan att behöva stänga helskärmsläget först
 * Helskärmsläge: Expandera dina paneler så att de fyller hela arbetsytan och ta bort överflödiga blanksteg genom att välja **Anpassa till bredd**
-* Använd Panelflöde för att automatiskt justera dina paneler i arbetsytans övre vänstra hörn.
+* Använd panelflödet för att automatiskt justera dina paneler i arbetsytans övre vänstra hörn.
 
 ***Quick Insights***
 
-* Trend- och korrelation insights har nu trendlinjer som gör det lättare att se mönster i data.
+* Trend- och sambandsinsikter har nu trendlinjer som gör det lättare att se mönster i datan.
 
 ***Frågor och svar***
 
@@ -620,12 +620,8 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 * Webtrends hjälper företag att ordna sin kundinformation för bättre marknadsföring. Användare har möjlighet att se, analysera och leverera insikter om besökarens resa på webben, sociala medier, mobila enheter och SharePoint-kanaler. Med lanseringen av innehållspaketet [Webtrends](http://blogs.msdn.com/b/powerbi/archive/2015/09/01/visualize-and-explore-your-webtrends-data-in-power-bi.aspx) har användare nu möjlighet att använda Power BI för att övervaka, analysera och visualisera analysdata från Webtrends. [Hjälpsidan](service-connect-to-webtrends.md) för Webtrends-innehållspaket för Power BI innehåller mer information.
 * Det är ännu enklare att komma igång med frågor och svar. Ögonblicket du placerar muspekaren i textrutan för Frågor och svar visar vi en lista med frågor och nyckelvärden som är relevanta för dina data.  Som standard ser du frågor för panelerna som redan är fästa på instrumentpanelen i listrutan samt en post för varje tabell som du har i din datauppsättning.
-* Storleken på den dynamiska arbetsytan visar våra rapportobjekt med optimala proportioner för webbläsarens fönsterstorlek. Om du vill låsa proportionerna eller anpassa din rapport på ett annat sätt har vi nu ytterligare tre alternativ för dig: anpassa till sidan, anpassa till bred och verklig storlek.
+* Storleken på den dynamiska arbetsytan visar våra rapportobjekt med optimala proportioner för webbläsarens fönsterstorlek. Om du vill låsa proportionerna eller anpassa din rapport på ett annat sätt, har vi nu ytterligare tre alternativ för dig: Anpassa till sida, Anpassa till bredd och Faktisk storlek.
 * Vi har också ökat gränsen för antalet datauppsättningar och rapporter som du kan ha. Du kan nu ha upp till 200 datauppsättningar och 200 rapporter för varje datauppsättning i ditt Power BI-konto.
-
-**25 augusti 2015**
-
-* Nu kan du använda Power BI för att övervaka, utforska och [visualisera Adobe Analytics-data](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). Du kan ansluta till och upptäcka insikter från dina data omedelbart med ett innehållspaketexempel. Mer information finns på [hjälpsidan för Adobe Analytics-innehållspaket för Power BI](service-connect-to-adobe-analytics.md).
 
 **18 augusti 2015**
 
@@ -680,11 +676,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **16 juni 2015**
 
-* Med SweetIQ kan du spåra dina lokala listor genom att ange plats och granska data från dina lokala sök-ekosystem. Med Power BI kan du analysera och övervaka dessa data genom att erbjuda [innehållsmallar](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) som bygger på SweetIQ-data. Mer information om hur du kommer igång finns på hjälpsidan för innehållspaketet [SweetIQ för Power BI](service-connect-to-sweetiq.md).
-
-**9 juni 2015**
-
-* Med Power BI kan du övervaka och utforska data med hjälp av [MailChimps API:er](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), vilka ger en uppsättning innehållsmallar för din analys. Instrumentpaneler, rapporter och granskade datauppsättningar för MailChimp-scenariot ger enkel åtkomst till data, till exempel bästa kampanjer för bästa öppningar enligt veckodag. Mer information om hur du kommer igång finns i dokumentationen för innehållspaketet [MailChimp för Power BI](service-connect-to-mailchimp.md).
+* Med SweetIQ kan du spåra dina lokala listor genom att ange plats och granska data från ditt lokala sök-ekosystem. Med Power BI kan du analysera och övervaka dessa data genom att erbjuda [innehållsmallar](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) som bygger på SweetIQ-data. Mer information om hur du kommer igång finns på hjälpsidan för innehållspaketet [SweetIQ för Power BI](service-connect-to-sweetiq.md).
 
 **2 juni 2015**
 
@@ -697,7 +689,6 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **13 maj 2015**
 
-* Med den senaste uppdateringen till Power BI kan du ansluta till data som loggats av **SQL Database Auditing** med en uppsättning rapportmallar och anpassad instrumentpanel. Detta innehållspaket gör det enkelt att hitta misstänkta händelser, ovanliga aktiviteter och trender baserat på en datamängd som har skapats för dina rapporter. Läs mer i [blogginlägget](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) och [dokumentationen](service-connect-to-azure-sql-database-auditing.md).
 * Du kan ansluta direkt till data som lagras i din **Azure SQL Database**. Vi skapar och skickar frågor till källan dynamiskt, vilket låter dig skapa interaktiva rapporter direkt till din databas. Du kan läsa [blogginlägget](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) och [dokumentationen](service-azure-sql-database-with-direct-connect.md) för mer information.
 
 **7 maj 2015**
@@ -714,7 +705,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **15 april 2015**
 
-* Du kan nu visualisera och utforska dina **Google Analytics**-data med vårt nya innehållspaketet! Med Google Analytics.innehållspaketet medföljer en instrumentpanel, rapport och datauppsättning som ger insikter om användningen av din webbplats under de senaste 6 månaderna. Du kan läsa [blogginlägget](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
+* Du kan nu visualisera och utforska dina **Google Analytics**-data med vårt nya innehållspaketet! Med Google Analytics.innehållspaketet medföljer en instrumentpanel, rapport och datauppsättning som ger insikter om användningen av din webbplats under de senaste 6 månaderna. Du kan läsa [vårt blogginlägg](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * Du kan nu **fästa alla kort** utom de som innehåller KPI:er och avbildningar från frågor och svar och rapporter
 * Du kan nu **använda kort i Frågor och svar** med frasen ”som kort' i slutet av din fråga
 

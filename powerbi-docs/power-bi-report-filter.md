@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 148f4881f78b5bba9b6936f5688ba6aaea3a0145
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68346443"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654460"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Den nya filterupplevelsen i Power BI-rapporter
 
@@ -48,6 +48,10 @@ Den nya filterupplevelsen är aktiverad som standard för nya rapporter. Du kan 
 3. Under **Filtreringsupplevelse** väljer du **Aktivera det uppdaterade filterfönstret och visa filter i det visuella sidhuvudet för den här rapporten**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Aktivera nya filter för en befintlig rapport i tjänsten
+
+Om du har aktiverat **Nytt utseende** i Power BI-tjänsten ![Nytt utseende på](media/power-bi-report-filter/power-bi-new-look-on.png), aktiveras den nya filterupplevelsen automatiskt. Läs mer om det [nya utseendet i Power BI-tjänsten](service-new-look.md).
+
+Om du inte har aktiverat det nya utseendet kan du fortfarande se den nya filterupplevelsen genom att följa nedanstående steg.
 
 1. I Power BI-tjänsten väljer fliken **Rapporter** i innehållslistan för en arbetsyta.
 2. Leta upp den rapport som du vill aktivera och välj ikonen **Settings** ![ikonen Rapportinställningar](media/power-bi-report-filter/power-bi-settings-icon.png) för den rapporten.
@@ -114,22 +118,20 @@ Du kan också formatera de här elementen för filterkort, beroende på om de an
 - Kantlinje: på eller av
 - Färg på kantlinje
 - Teckensnitt, färg och textstorlek
-- Färg på inmatningsruta
+- Färg på textruta
 
 ### <a name="format-the-filters-pane-and-cards"></a>Formatera filterfönstret och korten
 
 1. I rapporten klickar du på själva rapporten eller på bakgrunden (*skrivbordsunderlägget*) därefter går du till **Visualiseringar** och väljer **Format**. 
     Du ser alternativ för att formatera rapportsidan, skrivbordsunderlägget och även filterfönstret och filterkort.
 
-    ![Välj ikonen Format](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Expandera **Filter-fönstret** för att ange färg för bakgrund, ikon och vänster kantlinje så att de matchar rapportsidan.
 
-    ![Expandera Filter-fönster](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![Expandera Filter-fönster](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Expandera **Filterkort** för att ange färg och kantlinje för **Tillgänglig** och **Använd**. Om du gör korten tillgänglig och använd olika färger så blir det uppenbart vilka filter som används. 
   
-    ![Expandera Filter-kortet](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![Expandera Filter-kortet](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## <a name="theming-for-filter-pane"></a>Teman för filterfönstret
 Du kan nu ändra standardinställningarna för filterfönstret med temafilen. Här är ett avsnitt ur ett exempeltema som du kan använda för att komma igång:
@@ -224,7 +226,7 @@ När du redigerar filterfönstret kan du dubbelklicka på rubriken för att redi
 
 ## <a name="restrict-changes-to-filter-type"></a>Begränsa ändringar efter filtertyp
 
-Under avsnittet Filtreringsupplevelse i rapportinställningarna har du möjlighet att styra om användare ska kunna ändra filtertypen.
+Under avsnittet Filtreringsupplevelse i rapportinställningarna har du möjlighet att ange om användarna ska kunna ändra filtertypen.
 
 ![Begränsa ändringar av filtertyp](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
 

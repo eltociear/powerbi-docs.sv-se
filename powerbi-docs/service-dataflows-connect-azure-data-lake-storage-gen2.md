@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dee2ff4376242883d30f606e687184c0dde43ffe
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523495"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621237"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
 
@@ -177,6 +177,7 @@ Den här funktionen är en förhandsgranskningsfunktion och dess beteende kan ä
 * Endast ägare till ett dataflöde som lagrats i Azure Data Lake Storage Gen2 kan komma åt dess data som standard. För att auktorisera ytterligare personer till de dataflöden som lagras i Azure måste du lägga till dem till dataflödets Common Data Service-mapp 
 * Skapa dataflöden med länkade entiteter är endast möjligt om de lagras i samma lagringskonto
 * Lokala datakällor i Power BI-delade kapaciteter stöds inte i dataflöden som lagras i organisationens data lake
+* Ögonblicksbilder tas inte bort automatiskt i ADLS Gen 2. Om du vill frigöra utrymme kan du skapa en Azure-funktion som regelbundet rensar bort gamla ögonblicksbilder.
 
 Det finns också några kända problem som beskrivs i det här avsnittet.
 

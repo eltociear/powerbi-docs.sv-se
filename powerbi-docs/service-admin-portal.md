@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6a1ce47d7af41df51b7c439240f3e9db0dd28397
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757726"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655162"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -91,7 +91,7 @@ Administratörer kan också bestämma om skapare av innehåll kan se data per an
 
 Se [Övervaka användningsstatistik för Power BI-instrumentpaneler och rapporter](service-usage-metrics.md) för mer information om själva rapporterna.
 
-### <a name="usage-metrics-for-content-creators"></a>Användningsstatistik för skapare av innehåll
+### <a name="usage-metrics-for-content-creators"></a>Användningsstatistik för innehållsskapare
 
 1. Från Administratörsportalen väljer du **Klientinställningar** > **Användningsstatistik för skapare av innehåll**.
 
@@ -188,7 +188,7 @@ I administrationsportalen styr du också vilka användare som har behörighet at
 
 ### <a name="share-content-with-external-users"></a>Dela innehåll med externa användare
 
-Användare i organisationen kan dela instrumentpaneler med användare utanför organisationen. [Läs mer](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
+Användare i organisationen kan dela instrumentpaneler med användare utanför organisationen. Läs mer om att [dela externt](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Inställning för externa användare](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -290,7 +290,7 @@ Användare i organisationen kan använda Excel för att visa och interagera med 
 > [!NOTE]
 > När du inaktiverar **Exportera data** kan användare inte heller använda funktionen **Analysera i Excel**.
 
-### <a name="use-arcgis-maps-for-power-bi"></a>Använda ArcGIS Maps for Power BI
+### <a name="use-arcgis-maps-for-power-bi"></a>Använd ArcGIS Maps for Power BI
 
 Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringen som tillhandahålls av Esri. [Läs mer](visuals/power-bi-visualization-arcgis.md)
 
@@ -367,13 +367,13 @@ Den här inställningen måste vara aktiverad för att registrera granskningslog
 > [!NOTE]
 > Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
 
-### <a name="usage-metrics-for-content-creators"></a>Användningsstatistik för skapare av innehåll
+### <a name="usage-metrics-for-content-creators"></a>Användningsstatistik för innehållsskapare
 
 Användarna i organisationen kan se användningsstatistik för de instrumentpaneler och rapporter som de har skapat. [Läs mer](service-usage-metrics.md)
 
 ### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Data per användare i användningsmått för innehållsskapare
 
-Om du använder mått för skapare av innehåll visas visningsnamn och e-postadresser för de användare som har åtkomst till innehållet. [Läs mer](service-usage-metrics.md)
+Om du använder mått för innehållsskapare visas visningsnamn och e-postadresser för de användare som har åtkomst till innehållet. [Läs mer](service-usage-metrics.md)
 
 Data per användare är aktiverat för användningsstatistik som standard, och kontoinformation om innehållsskapare ingår i statistikrapporten. Om du inte vill samla in den här informationen för alla användare kan du inaktivera funktionen för specifika säkerhetsgrupper eller hela organisationen. Kontoinformationen för de exkluderade användarna visas då i rapporten som *Namnlös*.
 
@@ -392,7 +392,7 @@ Användare i organisationen kan tagga instrumentpaneler med klassificeringar som
 
 Användare i organisationen kan bädda in Power BI-instrumentpaneler och rapporter i SaaS-program (programvara som en tjänst). När du inaktiverar den här inställningen kan användare inte använda REST-API: er för att bädda in Power BI-innehåll i sina program. [Läs mer](developer/embedding.md)
 
-### <a name="allow-service-principals-to-use-power-bi-apis"></a>Tillåt tjänstens huvudnamn att använda Power BI API:er
+### <a name="allow-service-principals-to-use-power-bi-apis"></a>Tillåt att tjänsters huvudnamn att använda Power BI API:er
 
 Webbappar som är registrerade i Azure Active Directory (Azure AD) använder en ett huvudnamn för tjänsten som tilldelas i syfte att få åtkomst till Power BI:s API:er utan en inloggad användare. För att tillåta en app att använda autentisering med tjänstens huvudnamn, måste tjänstens huvudnamn ingå i en godkänd säkerhetsgrupp. [Läs mer](developer/embed-service-principal.md)
 

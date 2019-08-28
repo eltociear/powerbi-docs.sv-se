@@ -9,14 +9,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: df8a7b2f8564c8862a5c2db3177df42640ce295d
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: bb8c0582e08d8e1e05c78c30df0b59bd89aafbd0
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68996069"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985786"
 ---
-# <a name="understand-a-star-schema-and-the-importance-for-power-bi"></a>Förstå star-schemat och dess relevans för Power BI
+# <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Förstå star-schemat och dess betydelse för Power BI
 
 Den här artikeln vänder sig till Power BI Desktop-datamodellerare. I den beskrivs star-schemadesignen och dess relevans för utveckling av Power BI-datamodeller som är optimerade för prestanda och användbarhet.
 
@@ -66,7 +66,7 @@ Det finns många ytterligare begrepp relaterade till star-schemadesign som kan t
 
 I en star-schemadesign är ett **mått** en faktatabellkolumn som lagrar värden som ska sammanfattas.
 
-I en Power BI-modell har ett **mått** en annan, men liknande, definition. Det är en formel som skrivs i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) och som skapar sammanfattning. Måttuttryck utnyttjar ofta DAX-sammanställningsfunktioner som SUM, MIN, MAX, AVERAGE osv. för att producera ett skalärvärderesultat vid frågetiden (värden lagras aldrig i modellen). Måttuttryck kan vara såväl enkla kolumnsammanställningar till mer avancerade formler som åsidosätter filterkontext och/eller relationsspridningar. Mer information finns i artikeln [DAX-grunder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics). Läs mer-länk?
+I en Power BI-modell har ett **mått** en annan, men liknande, definition. Det är en formel som skrivs i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) och som skapar sammanfattning. Måttuttryck utnyttjar ofta DAX-sammanställningsfunktioner som SUM, MIN, MAX, AVERAGE osv. för att producera ett skalärvärderesultat vid frågetiden (värden lagras aldrig i modellen). Måttuttryck kan vara såväl enkla kolumnsammanställningar som mer avancerade formler som åsidosätter filterkontext och/eller relationsspridning. Mer information finns i artikeln [DAX-grunder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
 Det är viktigt att förstå att Power BI-modeller har stöd för en andra metod för att skapa sammanfattning. Vilka kolumner som helst – vanligtvis numeriska kolumner – kan sammanfattas av ett visuellt objekt i en rapport eller Frågor och svar. Det här är praktisk för dig som modellutvecklare, eftersom du i många fall inte behöver skapa mått. Till exempel kan kolumnen **Försäljningsbelopp** för Adventure Works-återförsäljares försäljning sammanfattas på många olika sätt (summa, antal, genomsnitt, median, min, max osv.) utan att ett mått behöver skapas för alla tänkbara sammansättningstyper.
 
