@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41b390190f8ce3c071f790edcdf86f0e3bd4a0c2
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: c24a508652b147b6fc684039d2965f9935b624c0
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721297"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186031"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Ansluta till AT Internet Bridge med Power BI
 Hjälper dig att utvinna direkt värde från dina data med hjälp av dess enhetliga digitala analysplattform Analytics Suite på Internet. Innehållspaketet AT Internet Bridge för Power BI innehåller data om besök, datakällor, lokalisering och enheter för din webbplats.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Anslut till [AT Internet Bridge-innehållspaketet](https://app.powerbi.com/getdata/services/at-internet-bridge) för Power BI.
 

@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c8c17fe5349486d9583b8f44ccee1af36e86c761
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3c8ef3e522c9f20ff9602d29670ccaf28cd92048
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61181014"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185950"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Anslut till Circuit ID med Power BI
 Det är enkelt att analysera dina kommunikationsdata från Circuit ID med Power BI. Power BI hämtar dina data och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data. När du har skapat anslutningen kan du utforska dina data och anpassa instrumentpanelen för att uppfylla dina behov. Data uppdateras automatiskt varje dag.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Anslut till [Circuit ID-innehållspaketet](https://app.powerbi.com/getdata/services/circuitid) för Power BI.
 

@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2a19cc832f7e03acfd224c6ab2409016ce8da770
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 07ba5c79245e4c87acee90c2c7c6a48df7a2d0e0
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61179879"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186091"
 ---
 # <a name="connect-to-appfigures-with-power-bi"></a>Anslut till appFigures med Power BI
 Nu är det enkelt att spåra viktig statistik om dina appar med Power BI och appFigures-innehållspaketet. Power BI hämtar dina data, inklusive appförsäljning, nedladdningar och statistik och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Anslut till [appFigures-innehållspaketet](https://app.powerbi.com/getdata/services/appfigures) eller läs mer om [appFigures-integrering](https://powerbi.microsoft.com/integrations/appfigures) med Power BI.
 

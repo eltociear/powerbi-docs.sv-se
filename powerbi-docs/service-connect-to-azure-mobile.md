@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8d95ab3675fdced31641a8abbffa31ed0a6643c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5563bec1bc68d8e0dd5749a124c405c4383003db
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61179371"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186000"
 ---
 # <a name="connect-to-azure-mobile-engagement-with-power-bi"></a>Ansluta till Azure Mobile Engagement med Power BI
 Med innehållspaketet Power BI Azure Mobile Engagement kan du snabbt få insikter om dina appdata.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Ansluta till innehållspaketet [Azure Mobile Engagement](https://app.powerbi.com/groups/me/getdata/services/azme) för Power BI.
 
