@@ -939,8 +939,8 @@
           href: report-builder-tables-matrices-lists.md
         - name: Parametrar
           href: report-builder-parameters.md
-        - name: Uttryck
-          href: report-builder-expressions.md
+        - name: URL-parametrar i sidnumrerade rapporter
+          href: report-builder-url-parameters.md
         - name: Exempel på uttryck
           href: report-builder-expression-examples.md
         - name: Sidnumrering för rapporten
@@ -959,6 +959,8 @@
           href: paginated-reports-create-embedded-dataset.md
         - name: Skapa parametrar
           href: paginated-reports-parameters.md
+        - name: Skicka en rapportparameter i en URL
+          href: report-builder-url-pass-parameters.md
         - name: Publicera en sidnumrerad rapport
           href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI för utvecklare
