@@ -172,7 +172,7 @@ Fyll i informationen **AADAuthorityUrl** URL:en som du antingen kan bädda in i 
 
 För att bädda in med din organisations klient använder du URL – *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-För att bädda in med en gäst använder du URL –  *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
+För att bädda in med en gäst använder du URL – *https://login.microsoftonline.com/report-owner-tenant-id* – där du lägger till klient-ID för rapportens ägare som ersätter *rapport-ägare-klient-id*.
 
 ### <a name="run-the-application"></a>Kör programmet
 
