@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 629c53358f757002f2b3dcda468641bbaaa2f4d4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273652"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70166789"
 ---
 En viktig skillnad mellan **DAX** och Excel-formelspråket är att du kan skicka *hela tabeller* mellan uttryck med DAX i stället för begränsas till ett enstaka värde. En kraftfull effekt är att DAX låter dig filtrera tabeller i uttryck och sedan arbeta med de filtrerade värdena.
 
@@ -36,7 +36,7 @@ En vanlig fråga som rapportutvecklare som använder Power BI ofta ställer är 
 
 * Hur många värden finns för den här kolumnen?
 
-Detta kan vara en lätt fråga att besvara med en tabell framför dig, men DAX har olika tillvägagångssätt för olika situationer, särskilt när det finns en relation mellan tabeller.
+Frågan kan vara enkel att besvara med en tabell framför dig, men DAX har ett annat tillvägagångssätt, särskilt när det finns en relation mellan tabeller.
 
 Till exempel innehåller Power BI och DAX värden som inte är korrekt korsindexerade. Om inkommande relationen är bruten lägger DAX till en ny rad i den relaterade tabellen som innehåller tomma värden i alla fält och länkar den nya raden till den icke-indexerade raden så att den kvarhåller sina referenser. Om din funktion innehåller tomma rader, som ofta är fallet när du använder **ALLA**, tas dessa tomma rader sedan med i antalet värden som returneras för den kolumnen.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7a25a9cc220dcb9f4620b7fb77e6bac264a47256
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514749"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160220"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Ansluta till SSAS flerdimensionella modeller i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SSAS flerdimensionella modeller**, vilket vanligtvis kallas **SSAS MD**.
@@ -78,7 +78,8 @@ Flerdimensionella modeller stöder säkerhet på dimensions- och cellnivå med h
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Det finns vissa begränsningar med att använda **SSAS MD**:
 
-* Servrar måste köra SQL Server 2012 SP1 CU4 eller senare versioner av Analysis Services för att Power BI Desktop SSAS MD-anslutningsappen ska fungera korrekt
+* Servrar måste köra SQL Server 2012 SP1 CU4 eller senare versioner av Analysis Services för att Power BI Desktop SSAS MD-anslutningsappen ska fungera korrekt.
+* Endast Enterprise- och BI-utgåvor av SQL Server 2012 och SQL Server 2014 stöder Live-anslutningar. För standardversionen av SQL Server krävs SQL Server 2016 eller senare för Live-anslutningar.
 * *Åtgärder* och *namngivna uppsättningar* exponeras inte för Power BI, men du kan fortfarande ansluta till kuber som också innehåller *åtgärder* eller *namngivna uppsättningar* och skapa visuella objekt och rapporter.
 * Det kan hända att du stöter på ett problem där Power BI visar metadata för en SSAS-modell, men du inte kan hämta data från modellen. Det här problemet kan uppstå om 32-bitarsversionen av MSOLAP-providern är installerad på datorn i stället för 64-bitarsversionen. Du kan ofta åtgärda problemet genom att installera 64-bitarsversionen.
 * Du kan inte skapa åtgärder på ”rapportnivå” när du skapar en rapport som är live-ansluten till en flerdimensionell SSAS-modell. De enda åtgärder som är tillgängliga är de som definierats i MD-modellen.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621237"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160354"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
 
@@ -115,19 +115,19 @@ Följ dessa steg om du vill hitta dina klientprogram:
 
     ![Sök efter Power-program](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Markera och kopiera objekt-ID för både Power BI-tjänsten och Power Query Online från sökresultatet. Var redo att klistra in värdena i efterföljande steg.
+5. Markera och kopiera objekt-ID för både Power BI Premium-tjänsten och Power Query Online från sökresultatet. Var redo att klistra in värdena i efterföljande steg.
 
-7. Använd sedan **Azure Storage Explorer** för att navigera till filsystemet *powerbi* som du skapade i föregående avsnitt. Följ instruktionerna i delen [Hantera åtkomst](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) av artikeln [Ange behörigheter på fil- och kolumnnivå med Azure Storage-utforskaren](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
+6. Använd sedan **Azure Storage Explorer** för att navigera till filsystemet *powerbi* som du skapade i föregående avsnitt. Följ instruktionerna i delen [Hantera åtkomst](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) av artikeln [Ange behörigheter på fil- och kolumnnivå med Azure Storage-utforskaren](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
-8. För vart och ett av de två Power BI-objekt-ID:n som samlats in i steg 5 tilldela **Läs**-, **Skriv**- och **Kör**-åtkomst och standard-ACL till ditt *powerbi*-filsystem.
+7. För vart och ett av de två Power BI Premium-objekt-ID:n som samlats in i steg 5 tilldela **Läs**-, **Skriv**- och **Kör**-åtkomst och standard-ACL till ditt *powerbi*-filsystem.
 
    ![för båda tilldela alla tre](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. För Power Query Online-objekt-ID som samlats in i steg 4 tilldelar du **Skriv**- och **Kör**åtkomst samt standard-ACL till ditt *powerbi*-filsystem.
+8. För Power Query Online-objekt-ID som samlats in i steg 4 tilldelar du **Skriv**- och **Kör**åtkomst samt standard-ACL till ditt *powerbi*-filsystem.
 
    ![tilldela sedan skriv och kör](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. Dessutom för den **Andra**, tilldela **kör**-åtkomst och standard-ACL:er också.
+9. Dessutom för den **Andra**, tilldela **kör**-åtkomst och standard-ACL:er också.
 
     ![sist, för andra tilldela kör](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 

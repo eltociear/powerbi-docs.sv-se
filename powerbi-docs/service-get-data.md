@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d6d6ca0b9a1a2ec312a9168aad7a7cc93981e396
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816778"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200943"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. Vi antar att du utforskar data. Det kan du göra genom att skapa diagram och instrumentpaneler eller genom att ställa frågor med **Q&A**. De visualiseringar och svar du ser får sina underliggande data från en datamängd. Men var kommer datauppsättningen från? Jo, den kommer från en datakälla.
@@ -46,7 +46,7 @@ I avsnittet **Skapa nytt innehåll** hittar du alternativ för att skapa och imp
 ### <a name="files"></a>Filer
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** ( *.xlsx*, *.xlsm*) – Excel är unikt. I Excel kan en arbetsbok innehålla olika datatyper. Den kan till exempel innehålla data som du har lagt in i kalkylbladen själv. Den kan även innehålla data som du har kört frågor om och läst in från externa datakällor med Power Query. Power Query är tillgängligt via **Hämta & transformera** i Excel 2016 eller Power Pivot. Du kan importera data från tabeller i kalkylblad eller från en datamodell. Mer information finns i [Hämta data från filer för Power BI](service-get-data-from-files.md).
+**Excel** ( *.xlsx*, *.xlsm*) – I Excel kan en arbetsbok innehålla olika datatyper. Den kan till exempel innehålla data som du har lagt in i kalkylbladen själv. Den kan även innehålla data som du har kört frågor om och läst in från externa datakällor med Power Query. Power Query är tillgängligt via **Hämta & transformera** i Excel 2016 eller Power Pivot. Du kan importera data från tabeller i kalkylblad eller från en datamodell. Mer information finns i [Hämta data från filer för Power BI](service-get-data-from-files.md).
 
 **Power BI Desktop** ( *.pbix*) – Du kan använda Power BI Desktop till att köra frågor mot och läsa in data från externa datakällor och skapa rapporter. Du kan också utöka datamodellen med mått och relationer eller importera din Power BI Desktop-fil till Power BI-webbplatsen. Power BI Desktop passar bäst för mer avancerade användare. Sådana användare har normalt god förståelse för sina datakällor. De förstår också datafrågor och transformeringar samt de begrepp som används inom datamodellering. Läs mer i [Ansluta till data i Power BI Desktop](desktop-connect-to-data.md).
 
@@ -102,9 +102,9 @@ Om du sparar filer på OneDrive för företag eller SharePoint – gruppwebbplat
 
 Innehållspaket från tjänster uppdateras automatiskt. I de flesta fall uppdateras de en gång om dagen. Du kan uppdatera manuellt, men om du ser några uppdaterade data beror på tjänstleverantören. Uppdateringar av innehållspaket från personer i organisationen beror på vilka datakällor som används. De beror även på hur personen som skapade innehållspaketet har konfigurerat uppdateringen.
 
-Azure SQL Database, Azure SQL Data Warehouse och Spark på Azure HDInsight är unika eftersom de är datakällor i molnet. Power BI-tjänsten finns också i molnet, så Power BI kan ansluta till de här datakällorna live via **DirectQuery**. Det du ser i Power BI är alltid synkroniserat och du behöver inte konfigurera någon schemalagd uppdatering.
+Azure SQL Database, Azure SQL Data Warehouse och Spark på Azure HDInsight är datakällor i molnet. Power BI-tjänsten finns också i molnet, så Power BI kan ansluta till de här datakällorna live via **DirectQuery**. Det du ser i Power BI är alltid synkroniserat och du behöver inte konfigurera någon schemalagd uppdatering.
 
-SQL Server Analysis Services är unikt. När du ansluter till den här tjänsten från Power BI är det en liveanslutning precis som en Azure-databas i molnet. Skillnaden är själva databasen ligger på en server i organisationen. För den här typen av anslutning behöver du en Power BI-gateway, som normalt konfigureras av IT-avdelningen.
+När du ansluter till SQL Server Analysis Services från Power BI är det en liveanslutning precis som en Azure-databas i molnet. Skillnaden är själva databasen ligger på en server i organisationen. För den här typen av anslutning behöver du en Power BI-gateway, som normalt konfigureras av IT-avdelningen.
 
 Datauppdatering är en mycket viktig del av Power BI och det blir för mycket att gå igenom allt här. Om du vill ha en djupare kunskap kan du läsa mer i [Datauppdatering i Power BI](refresh-data.md).
 

@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 757a2ca5a88e8ee98aa1c460c30e001f14bc6789
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814338"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160387"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Kombinera försäljningsdata från Excel och en OData-feed
 
@@ -119,7 +119,7 @@ Med Power Query Editor kan du skapa beräkningar och anpassade fält för att ut
    
 2. I dialogrutan **Anpassad kolumn** skriver du **LineTotal** i fältet **Nytt kolumnnamn**.
 
-3. I fältet **Anpassad kolumnformel** efter **= anger du **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Du kan också välja fältnamn från rullningsrutan **Tillgängliga kolumner** och välja **<< Infoga**, i stället för att skriva dem.) 
+3. I fältet **Anpassad kolumnformel** efter *=* , anger du **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Du kan också välja fältnamn från rullningsrutan **Tillgängliga kolumner** och välja **<< Infoga**, i stället för att skriva dem.) 
 
 4. Välj **OK**.
    

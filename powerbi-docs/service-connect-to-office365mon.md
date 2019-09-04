@@ -1,29 +1,29 @@
 ---
 title: Ansluta till Office365Mon med Power BI
 description: Office365Mon för Power BI
-author: SarinaJoan
+author: teddybercovitz
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 8/29/2019
+ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cce886edbed00075efaa43bae9c8a712929e8b9a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 364220d5d900004252e51184fc9cbd7e03b45b2d
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61170265"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159912"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Ansluta till Office365Mon med Power BI
-Det är lätt att analysera dina Office 365-avbrott och hälsoprestandadata med Power BI och Office365Mon-innehållspaketet. Power BI hämtar dina data, inklusive avbrott och hälsoavsökningar, och skapar sedan en anpassad instrumentpanel och rapporter som baseras på dessa data.
+Det är lätt att analysera dina Office 365-avbrott och hälsoprestandadata med Power BI och Office365Mon-mallappen. Power BI hämtar dina data, inklusive avbrott och hälsoavsökningar, och skapar sedan en anpassad instrumentpanel och rapporter som baseras på dessa data.
 
-Anslut till [Office365Mon-innehållspaketet](https://app.powerbi.com/groups/me/getdata/services/office365mon) för Power BI.
+Anslut till [Office365Mon-mallappen](https://app.powerbi.com/groups/me/getdata/services/office365mon) för Power BI.
 
 >[!NOTE]
->Du måste ha ett Office365Mon-administratörskonto för att kunna ansluta och läsa in Power BI-innehållspaketet.
+>Du måste ha ett Office365Mon-administratörskonto för att kunna ansluta och läsa in Power BI-mallappen.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
 1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.

@@ -10,30 +10,30 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0c63a62edfce62a5cee13bef3c68014027313e8b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 77a036cd1852c237c827dca07363492c94d8a272
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514002"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160278"
 ---
 # <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>Ansluta till en PDF-fil i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **PDF-fil** och använda inkluderade data från filen precis som andra datakällor i Power BI Desktop.
 
-![Ansluta till data i PDF-filer](media/desktop-connect-pdf/connect-pdf_04.png)
+![Ansluta till data i PDF-filer](media/desktop-connect-pdf/connect-pdf-04.png)
 
 Följande avsnitt beskriver hur du ansluter till en **PDF-fil**, väljer data och börjar använda dessa data i **Power BI Desktop**.
 
 Vi rekommenderar alltid att du uppgraderar till den senaste versionen av **Power BI Desktop**, som du kan hämta från en länk i avsnittet [Hämta Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="connect-to-a-pdf-file"></a>Ansluta till en PDF-fil
-Om du vill ansluta till en **PDF**-fil väljer du **Hämta Data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Fil** från kategorierna till vänster så ser du **PDF (beta)** .
+Om du vill ansluta till en **PDF**-fil väljer du **Hämta Data** från **Start**-menyfliksområdet i Power BI Desktop. Välj **Arkiv** från kategorierna till vänster så ser du **PDF**.
 
-![Välj PDF från Hämta data](media/desktop-connect-pdf/connect-pdf_01.png)
+![Välj PDF från Hämta data](media/desktop-connect-pdf/connect-pdf-01.png)
 
 Du uppmanas att ange platsen för PDF-filen som du vill använda. När du anger filens sökväg och PDF-filen läses in så visas ett **navigeringsfönster** med data som är tillgängliga från filen, där du kan välja ett eller flera element att importera och använda i **Power BI Desktop**.
 
-![Ansluta till data i PDF-filer](media/desktop-connect-pdf/connect-pdf_04.png)
+![Ansluta till data i PDF-filer](media/desktop-connect-pdf/connect-pdf-04.png)
 
 Om du markerar en kryssruta bredvid de identifierade elementen i PDF-filen visas de i den högra rutan. När du vill importera väljer du knappen **Läs in** för att importera data till **Power BI Desktop**.
 

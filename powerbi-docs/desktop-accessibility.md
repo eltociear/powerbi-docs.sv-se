@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d67ca5a4c8014dc295f3ffc458eca3dc5496282a
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 14e57f5b19fe4dccea9aa47d21c959eaf93a45ae
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307137"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185689"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Hjälpmedel i Power BI Desktop-rapporter
 Power BI har funktioner som gör att personer med funktionshinder enklare kan använda och interagera med Power BI-rapporter. Dessa funktioner omfattar att använda en rapport med tangentbordet eller en skärmläsare, använda tabbtangenten för att fokusera på olika objekt på en sida och en medveten användning av markörer i visuella objekt.
@@ -75,6 +75,9 @@ Följande tips kan hjälpa dig att skapa mer tillgängliga **Power BI Desktop**-
 * Ange en alternativtext för varje objekt i en rapport. Detta säkerställer att användarna av din rapport förstår vad du vill förmedla med ett visuellt objekt. Det är till hjälp även om de inte kan se det visuella objektet, bilden, formen eller textrutan. Du kan ange alternativtext för alla objekt i en **Power BI Desktop**-rapport genom att markera objektet (till exempel ett visuellt objekt, en form osv.) och i fönstret **Visualiseringar** välja avsnittet **Format**. Expandera sedan **Allmänt**, rulla längst ned och fyll i textrutan **Alternativtext**.
   
   ![Alternativtext för alla objekt i en rapport kan läggas till i Visuella objekt > Format > Allmänt > Alternativtextruta](media/desktop-accessibility/accessibility-02.png)
+  
+  Alternativ text kan också ändras dynamiskt med ett uttryck, till exempel återspegla filter som tillämpas på en bild. Du anger ett uttryck på samma sätt som för en bildrubrik. [Villkorsstyrd formatering av visuella objekts rubriker](desktop-conditional-format-visual-titles.md)
+  
 * Kontrollera att dina rapporter har tillräcklig kontrast mellan texten och alla bakgrundsfärger. Det finns flera verktyg som t.ex. [Färgkontrastanalys](https://developer.paciellogroup.com/resources/contrastanalyser/) som du kan använda för att kontrollera färgerna i rapporten. 
 * Använd textstorlek och teckensnitt som enkelt kan läsas. Liten textstorlek eller teckensnitt som kan vara svåra att läsa är olämpliga för hjälpmedel.
 * Inkludera en rubrik, axeletiketter och dataetiketter i all visuell information.
@@ -154,7 +157,7 @@ I vår fortsatta strävan efter att förbättra hjälpmedel så stöder även de
 | :------------------- | :------------------- |
 | Flera markeringar | **Ctrl + Blanksteg** |
 | Dölj en enskild tabell | **Vänster piltangent** |
-| Utöka en enskild tabell | **Höger piltangent** |
+| Visa en enskild tabell | **Höger piltangent** |
 | Dölj alla tabeller | **Alt + Skift + 1** |
 | Visa alla tabeller | **Alt + Skift + 9** |
 | Öppna en snabbmeny | <ul><li>Windows-tangentbordet: **Windows-menytangent + F10**.  Windows-menytangenten ligger mellan den vänstra Alt-tangenten och Vänsterpil-tangenten</li><li>Andra tangentbord: **Skift + F10**</li></ul> |

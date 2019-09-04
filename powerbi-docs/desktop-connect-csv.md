@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1e02197f36da66a64fac95209fe8fabaa67b6c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8eecbfdaa948163ab6d0623a70f237d479fcdb88
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514164"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200928"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Ansluta till CSV-filer i Power BI Desktop
 Att ansluta till en CSV-fil (*CSV*) från Power BI Desktop liknar ansluta till en Excel-arbetsbok. Båda processer är enkla och den här artikeln visar hur du ansluter till valfri CSV-fil som du har åtkomst till.
@@ -44,6 +44,10 @@ När du läser in data i Power BI Desktop kan du se tabellen och kolumnerna (som
 Det är allt du behöver göra – data från CSV-filen är nu i Power BI Desktop.
 
 Du kan använda data i Power BI Desktop för att skapa visuell information och rapporter eller interagera med andra data som du kanske vill ansluta till och importera, som Excel-arbetsböcker, databaser eller en annan datakälla.
+
+> [!IMPORTANT]
+> När du importerar en CSV-file genererar Power BI Desktop en *kolumner=x* (där *x* är antalet kolumner i CSV-filen under den inledande importen) som ett steg i Power Query-redigeraren. Om du senare lägger till fler kolumner och datakällan har konfigurerats för att uppdatera, uppdateras inte det ursprungliga antalet kolumner *x*. 
+
 
 ## <a name="next-steps"></a>Nästa steg
 Det finns alla möjliga sorters data du kan ansluta till med Power BI Desktop. Kolla in följande resurser för mer information om datakällor:

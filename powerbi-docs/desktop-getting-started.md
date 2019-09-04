@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654861"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70201030"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
 Välkommen till **Komma igång-guiden för Power BI Desktop**. Den här korta visningen av Power BI Desktop låter dig bekanta dig med hur den fungerar, visar vad den kan göra och ökar dina möjligheter att skapa robusta datamodeller, tillsammans med häpnadsväckande rapporter, som förstärker din affärsintelligens. 
@@ -105,6 +105,9 @@ När vi väljer **Redigera**, startar frågeredigeraren och en representativ vy 
  ![](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Mer information om hur du ansluter till data finns i [Anslut till data i Power BI Desktop](desktop-connect-to-data.md).
+
+> [!NOTE]
+> De tabelldata som refereras till i den här artikeln kan ändras med tiden. De steg som du måste följa kan därför avvika från de följande, varför du behöver vara kreativ när du anpassar steg eller resultat – men det är också en del av det roliga med inlärningen. 
 
 I nästa avsnitt justerar vi data så att de uppfyller våra behov. Processen med att justera anslutna data kallas att *forma* data.
 

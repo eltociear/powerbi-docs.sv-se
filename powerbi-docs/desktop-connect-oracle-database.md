@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3dce16287c9cdcb7882e332e338137f7598b4010
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61315017"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200905"
 ---
 # <a name="connect-to-an-oracle-database"></a>Anslut till en Oracle-databas
 För att ansluta till en Oracle-databas med **Power BI Desktop** måste rätt Oracle-klientprogramvara vara installerad på datorn med Power BI Desktop. Vilken Oracle-klientprogramvaran som du använder beror på vilken version av Power BI Desktop som du har installerat – **32-bitars**-versionen eller **64-bitars**-versionen.
@@ -64,3 +64,5 @@ Om du har laddat ned Power BI Desktop från Microsoft Store kanske du inte kan a
 * Ladda ned Power BI Desktop från https://powerbi.microsoft.com/desktop istället.
 
 * Om du vill använda versionen från Microsoft Store kopierar du oraons.dll från _12.X.X\client_X_ till _12.X.X\client_X\bin_ på din lokala dator. X representerar versions-och katalognummer.
+
+Om felmeddelandet *Ingen objektreferens har angetts* visas i Power BI Gateway när du ansluter till en Oracle-databas kan du försöka lösa problemet genom att följa anvisningarna i artikeln [Hantera din datakälla – Oracle](service-gateway-onprem-manage-oracle.md).

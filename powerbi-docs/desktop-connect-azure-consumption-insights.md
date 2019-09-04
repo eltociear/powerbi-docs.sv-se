@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 80eb366015de3822b9c8c455f1ee386a34e1f457
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: 0474bc4182f77e7084ca8cb78062ba0f2063e7ae
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561022"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160208"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysera Azure-kostnader och användningsdata i Power BI Desktop
 
@@ -27,6 +27,10 @@ Power BI stöder för närvarande anslutning till faktureringskonton för Enterp
 * **Användare med Enterprise-avtal** bör ansluta med **Azure Consumption Insights-anslutningsprogrammet** (nedan).
 
 * **Användare med kundavtal** bör ansluta med [**Azure Cost Management-anslutningsprogrammet**](#connect-with-azure-cost-management).
+
+> [!NOTE]
+> Om du är Enterprise-avtalskund som använder Azure Cost Management-anslutningen och inte ser ditt *faktureringsprofils-ID* på bladet Cost Management, betyder det att du inte befinner dig på den moderna handelsplattformen. I sådana fall använder du Azure Consumption Insights-anslutningen, som efterfrågar EA-registreringsnumret i stället *för faktureringsprofils-ID.*
+
 
 ## <a name="connect-with-azure-consumption-insights"></a>Ansluta till Azure Consumption Insights
 

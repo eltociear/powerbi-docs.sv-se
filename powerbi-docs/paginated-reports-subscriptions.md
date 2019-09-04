@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/15/2019
-ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.date: 08/29/2019
+ms.openlocfilehash: 4b0ead5697dc94497609ac925a0a46142584f0ba
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307068"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185606"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten 
 
 Nu kan du ställa in e-postprenumerationer åt dig själv och andra på sidnumrerade rapporter i Power BI-tjänsten. I allmänhet fungerar processen på samma sätt som när du [prenumererar på rapporter och instrumentpaneler i Power BI-tjänsten](service-report-subscribe.md). Den här artikeln går igenom skillnaderna och några överväganden. 
 
-När du ställer in prenumerationer väljer du hur ofta du vill få e-postmeddelanden: varje dag, varje vecka eller varje timme. Om du väljer varje dag eller varje vecka kan du välja vilken tid som prenumerationen ska köras. Totalt kan du ställa in upp till 24 olika prenumerationer per dag för varje rapport. 
+När du ställer in prenumerationer väljer du hur ofta du vill få e-postmeddelanden: varje dag, varje vecka, varje månad eller varje timme. Du kan också välja de tidpunkter då du vill att prenumerationen ska löpa. Totalt kan du ställa in upp till 24 olika prenumerationer för varje rapport. 
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>Några saker att tänka på med prenumerationer på sidnumrerade rapporter 
 
