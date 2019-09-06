@@ -1,7 +1,7 @@
 ---
 title: Få aviseringar i Power BI-mobilapparna
 description: Meddelandecentret ger information som rör din Power BI-användning direkt till dig på din mobila enhet.
-author: mshenhav
+author: KesemSharabi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 378e81207cb9b0f09e094ddbdced99defedde1ff
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe502b2d1822140c47f8c09266497144f07bb8a8
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60973363"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236772"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Få aviseringar i Power BI-mobilapparna
 Gäller:

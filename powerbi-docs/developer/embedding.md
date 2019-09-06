@@ -1,9 +1,9 @@
 ---
 title: Inbäddade analyser med Power BI
 description: Power BI erbjuder API:er för att använda inbäddade analyser till dina instrumentpaneler och rapporter i program. Lär dig mer om inbäddning med Power BI både i en PaaS-miljö och en SaaS-miljö genom att använda programvara för inbäddad analys, inbäddade analysverktyg eller inbäddade Business Intelligence-verktyg.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: 8154370a78f418148381c201ba0c2bd50d8ae021
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497899"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391515"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Inbäddade analyser med Power BI
 
