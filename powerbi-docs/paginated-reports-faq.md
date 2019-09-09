@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 07/15/2019
-ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.date: 09/04/2019
+ms.openlocfilehash: 2be953c31ba3090e83e58f8e5626bb83e249556e
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665355"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302692"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -26,11 +26,11 @@ I den här artikeln finns svar på vanliga frågor om sidnumrerade rapporter i P
 
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>Hur stor Premium-kapacitet måste jag ha för sidnumrerade rapporter?
 
-Arbetsbelastningen för sidnumrerade rapporter finns på SKU:erna P1–P3.  Du kan också använda den för test-/utvecklingsscenarier med A4–A6-SKU:er för SaaS-inbäddade scenarier.
+Arbetsbelastningen för sidnumrerade rapporter finns på SKU:erna P1–P3.  Du kan även använda med SKU:erna A4–A6 för inbäddnings- eller test-/utvecklingsscenarier.
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>Vilket tröskelvärde för maximalt minne kan jag ha för sidnumrerade rapporter i min kapacitet?
 
-Du kan använda upp till 100 % av minnet för den här arbetsbelastningen i slutet av juni 2019. 
+Du kan använda upp till 100 % av minnet för den här arbetsbelastningen.
 
 ### <a name="how-does-user-access-work-for-paginated-reports"></a>Hur fungerar användaråtkomst för sidnumrerade rapporter?
 
@@ -77,7 +77,7 @@ Standardminnet i varje Premium-SKU för sidnumrerade rapporter:
 - **P2/A5**: 20 % standard, 5 % minimum
 - **P3/A6**: 20 % standard, 2,5 % minimum
 
-## <a name="general"></a>Allmän
+## <a name="general"></a>Allmänt
 
 ### <a name="when-should-i-use-a-paginated-report-vs-a-power-bi-report"></a>När ska jag använda en sidnumrerad rapport jämfört med en Power BI-rapport?
 
@@ -152,7 +152,7 @@ Du kan exportera till Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF
 
 Ja, utskrift är tillgängligt för sidnumrerade rapporter, med en ny och förbättrad förhandsgranskningsmiljö. 
 
-### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Är e-postprenumerationer tillgängliga än för sidnumrerade rapporter?
+### <a name="are-e-mail-subscriptions-available-for-paginated-reports"></a>Är e-postprenumerationer tillgängliga för sidnumrerade rapporter?
 
 Ja, e-postprenumerationer stöds fullt ut för sidnumrerade rapporter och har stöd för sex olika filformat och parametervärden.
 
@@ -166,7 +166,7 @@ SaaS-inbäddning stöds redan. PaaS-inbäddning stöds inte för närvarande.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kan jag få detaljerad information från en Power BI-rapport till en sidnumrerad rapport?
 
-Inte ännu, men vi planerar absolut att stödja det här scenariot.
+Ja, detta kan utföras med hjälp av URL-parametrar med dina sidnumrerade rapporter.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Kan jag dela mitt sidnumrerade rapportinnehåll via en Power BI-app?
 
