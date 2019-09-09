@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9f5357056c27d6461ad7f7d7fba1daa27a508868
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 1fb775bd203fc1e0f6342a0d5cd4d9e382b8342a
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391142"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750919"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimera Premium-kapaciteter
 
@@ -257,7 +257,7 @@ Det är viktigt att testerna är upprepningsbara. Testerna ska köras flera gån
 
 Om du redan har en kapacitet och de rapporter som du vill göra ett belastningstest för, kan du använda [PowerShell-verktyget för belastningsgenerering](https://aka.ms/PowerBILoadTestingTool) för att snabbt generera ett belastningstest. Med verktyget kan du uppskatta hur många instanser av varje rapport din kapacitet kan köra på en timme. Du kan använda verktyget till att utvärdera din kapacitets förmåga att återge en enskild rapport eller flera olika rapporter samtidigt. Mer information finns i videon [Microsoft Power BI: Premiumkapacitet](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-Om du vill generera ett mer komplext test kan du utveckla ett belastningstestprogram som simulerar en realistisk arbetsbelastning. Mer information finns i webbseminariet [Load Testing Power BI Applications with Visual Studio Load Test](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
+Om du vill generera ett mer komplext test kan du utveckla ett belastningstestprogram som simulerar en realistisk arbetsbelastning. Mer information finns i webbseminariet [Load Testing Power BI Applications with Visual Studio Load Test](https://powerbi.microsoft.com/en-us/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
 ## <a name="acknowledgements"></a>Bekräftelser
 

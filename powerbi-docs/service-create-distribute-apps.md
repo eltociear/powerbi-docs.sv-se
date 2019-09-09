@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530576"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751561"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -127,7 +127,7 @@ Här följer allmänna saker att tänka på vid användning av det nya navigerin
 När du lägger till länkar till appnavigeringen och väljer alternativet för innehållsområde:
 * Se till att länken kan bäddas in. Vissa tjänster blockerar inbäddning av sitt innehåll i tredjepartswebbplatser som Power BI.
 * Inbäddning av innehåll från Power BI-tjänsten såsom rapporter och instrumentpaneler på andra arbetsytor stöds inte. 
-* Bädda in Power BI-rapportserverinnehåll via dess inbyggda inbäddning av URL-innehåll från en lokal distribution. Följ stegen i [skapa URL för Power BI-rapportserver](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url) för att hämta URL:en. Tänk på att vanliga autentiseringsregler gäller. Därför kräver visning av innehållet en VPN-anslutning till den lokala servern. 
+* Bädda in Power BI-rapportserverinnehåll via dess inbyggda inbäddning av URL-innehåll från en lokal distribution. Följ stegen i [skapa URL för Power BI-rapportserver](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) för att hämta URL:en. Tänk på att vanliga autentiseringsregler gäller. Därför kräver visning av innehållet en VPN-anslutning till den lokala servern. 
 * En säkerhetsvarning visas överst i det inbäddade innehållet för att ange att innehållet inte finns i Power BI.
 
 
