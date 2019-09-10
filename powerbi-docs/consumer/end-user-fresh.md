@@ -6,16 +6,16 @@ manager: kvivek
 ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 02/08/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b4bc6398466b4c603126efed5b6591c9c3ad6c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dbad2927b64966a459086531fbfbf3e3e5de2eab
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61059917"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751665"
 ---
 # <a name="your-content-is-up-to-date"></a>Ditt innehåll är aktuellt och uppdaterat
 Som *konsument* kan du arbeta med innehåll som skapats av *designer* och delats med dig. Du kanske undrar om det innehållet är aktuellt och uppdaterat eller du kanske bara vill veta när innehållet senast uppdaterades. Att veta att du arbetar med senaste innehållet ger dig tillförsikt.  
@@ -44,7 +44,7 @@ Appskärmen visar både namnet på designern samt det datum då appen skapades.
     ![2 appar med en markerad](media/end-user-fresh/power-bi-app.png)
 
 
-### <a name="shared-with-me"></a>Delat med mig
+### <a name="shared-with-me"></a>Delad med mig
 På skärmen **Delat med mig** ser du namnet på innehållsägaren samt det datum då innehållet delades med dig.
 
 ![skärmen delat med mig som visar datum för ändring och ägare](media/end-user-fresh/power-bi-shared-new.png) 

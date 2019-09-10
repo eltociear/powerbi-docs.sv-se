@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530497"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750910"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -61,7 +61,7 @@ Med roller kan du hantera vem som kan göra vad i en arbetsyta, så att teamen k
 
 När du tilldelar roller till en användargrupp får personer i gruppen åtkomst till innehåll. Om du kapslar användargrupper får alla berörda användare behörighet.
 
-Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltagare och läsare.
+Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltagare och läsare. För alla dessa funktioner (utom den sistnämnda) krävs en Power BI Pro-licens.
 
 |Kapacitet   | Admin  | Medlem  | Deltagare  | Läsare |
 |---|---|---|---|---|
@@ -73,9 +73,9 @@ Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltag
 | Tillåta att andra delar objekt igen. |  X | X  |   |   |
 | Skapa, redigera och ta bort innehåll på arbetsytan.  |  X | X  | X  |   |
 | Publicera rapporter till arbetsytan och ta bort innehåll.  |  X | X  | X  |   |
-| Visa ett objekt. |  X | X  | X  | X  |
 | Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan. |  X | X  | X  | X <sup>1</sup>  |
 | Kopiera en rapport. | X | X | X | X <sup>1</sup> |
+| Visa och interagera med ett objekt. |  X | X  | X  | X  |
 
 **1** Kräver en Power BI Pro-licens och [skapa-behörighet för datamängder](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
@@ -134,7 +134,7 @@ Begränsningar att känna till:
 
 Vissa funktioner fungerar annorlunda i de nya arbetsytorna jämfört med de aktuella arbetsytorna. De här skillnaderna är avsiktliga och baseras på feedback som vi har fått från kunder. De kommer att möjliggöra en mer flexibel metod för samarbete med arbetsytor:
 
-- Licensieringskontroll: Vid publicering av rapporter till den nya arbetsyteupplevelsen aktiveras de befintliga licensieringsreglerna som kräver en Power BI Pro-licens för användare som samarbetar i arbetsytor eller som delar innehåll till andra i Power BI-tjänsten. För användare utan Pro-licens visas ett felmeddelande om att ”endast användare med Powre BI Pro-licenser kan publicera till här arbetsytan”.
+- Licensieringskontroll: Vid publicering av rapporter till den nya arbetsyteupplevelsen aktiveras de befintliga licensieringsreglerna som kräver en Power BI Pro-licens för användare som samarbetar i arbetsytor eller som delar innehåll till andra i Power BI-tjänsten. För användare utan Pro-licens visas ett felmeddelande om att ”endast användare med Power BI Pro-licenser kan publicera till här arbetsytan”.
 - Medlemmar kan eller kan inte dela igen: ersätts med rollen Deltagare
 - Skrivskyddade arbetsytor: I stället för att bevilja användare skrivskyddad åtkomst till en arbetsyta, tilldelar du användare till läsarrollen som ger liknande skrivskyddad åtkomst till innehållet i en arbetsyta.
 - Användare utan Pro-licens kan få åtkomst till arbetsytan om arbetsytan är i en Power BI Premium-kapacitet, även om användarna endast har en läsarroll.
