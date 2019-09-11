@@ -1,5 +1,5 @@
 ---
-title: Skapa SSL-certifikat
+title: Skapa ett SSL-certifikat
 description: Instruktioner med tillfällig lösning för att skapa certifikat manuellt för utvecklarserver
 author: zBritva
 ms.author: v-ilgali
@@ -9,127 +9,128 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 3287e8a7eb1c36c3f0d8a1fc24faa0442de2dddf
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 13926603d7a5bfee987439180151d64ef5c456c2
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425446"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237247"
 ---
-# <a name="creating-ssl-certificate"></a>Skapa SSL-certifikat
+# <a name="create-an-ssl-certificate"></a>Skapa ett SSL-certifikat
 
-Kör följande kommando för att generera certifikatet med hjälp av PowerShell New-SelfSignedCertificate-cmdlet:en i Windows 8 eller senare.
+I den här artikeln beskrivs hur du skapar ett SSL-certifikat.
 
-Verktyget kräver OpenSSL-installation för **Windows** **7**. Verktyget `openssll` måste vara tillgängligt från kommandoraden.
-
-För att installera OpenSSL besöker du [https://www.openssl.org](https://www.openssl.org) eller [https://wiki.openssl.org/index.php/Binaries](https://wiki.openssl.org/index.php/Binaries)
+Generera certifikatet med hjälp av PowerShell `New-SelfSignedCertificate`-cmdleten i Windows 8 eller senare genom att köra följande kommando:
 
 ```cmd
 pbiviz --create-cert
 ```
 
-## <a name="create-certificate-mac-os-x"></a>Skapa certifikat (Mac OS X)
+Verktyget kräver en OpenSSL-installation för Windows 7. OpenSSL-verktyget måste vara tillgängligt från kommandoraden.
 
-Vanligtvis är OpenSSL-verktyg tillgängliga i operativsystemen Linux eller Mac OS X.
+Du installerar OpenSSL genom att gå till webbplatsen för [OpenSSL](https://www.openssl.org) eller [OpenSSL-binärfiler](https://wiki.openssl.org/index.php/Binaries).
 
-Annars kan du installera från
 
-*Brew*-pakethanteraren
 
-```cmd
-brew install openssl
-brew link openssl --force
-```
+## <a name="create-a-certificate-mac-os-x"></a>Skapa ett certifikat (Mac OS X)
 
-eller med hjälp av *MacPorts*
+Vanligtvis är OpenSSL-verktyget tillgängligt i operativsystemet Linux eller Mac OS X.
 
-```cmd
-sudo port install openssl
-```
+Du kan även installera verktyget genom att köra något av följande kommandon:
+* Från *Brew*-pakethanteraren:
 
-Efter installation av OpenSSL för att generera nytt certifikatanrop:
+    ```cmd
+    brew install openssl
+    brew link openssl --force
+    ```
 
-```cmd
-pbiviz --create-cert
-```
+* Med hjälp av *MacPorts*:
 
-## <a name="create-certificate-linux"></a>Skapa certifikat (Linux)
+    ```cmd
+    sudo port install openssl
+    ```
 
-OpenSSL-verktyg är inte tillgängliga i ditt Linux-operativsystem. Du kan installera med följande kommandon.
-
-För *APT*-pakethanteraren:
-
-```cmd
-sudo apt-get install openssl
-```
-
-För *Yellowdog-uppdateraren*:
-
-```cmd
-yum install openssl
-```
-
-För *Redhat-pakethanteraren*:
-
-```cmd
-rpm install openssl
-```
-
-Om OpenSSl redan är tillgängligt i ditt operativsystem anropar du
+När du har installerat OpenSSL-verktyget för att generera ett nytt certifikat kör du följande kommando:
 
 ```cmd
 pbiviz --create-cert
 ```
 
-för att generera ett nytt certifikat.
+## <a name="create-a-certificate-linux"></a>Skapa ett certifikat (Linux)
 
-Eller så hämtar du från [https://www.openssl.org](https://www.openssl.org) eller [https://wiki.openssl.org/index.php/Binaries](https://wiki.openssl.org/index.php/Binaries)
+Om OpenSSL-verktyget inte är tillgängligt i ditt Linux-operativsystem kan du installera det med ett av de följande kommandona:
 
-## <a name="generate-certificate-manually"></a>Generera certifikat manuellt
+* För *APT*-pakethanteraren:
 
-Du kan ange dina certifikat som genereras av verktyg.
+    ```cmd
+    sudo apt-get install openssl
+    ```
 
-Om du har OpenSSL installerat på datorn kan du köra följande kommando för att generera ett nytt certifikat
+* För *Yellowdog-uppdateraren*:
+
+    ```cmd
+    yum install openssl
+    ```
+
+* För *Redhat-pakethanteraren*:
+
+    ```cmd
+    rpm install openssl
+    ```
+
+Om OpenSSL-verktyget redan är tillgängligt i ditt operativsystem genererar du ett nytt certifikat genom att köra följande kommando:
+
+```cmd
+pbiviz --create-cert
+```
+
+Eller så kan du hämta OpenSSL-verktyget genom att gå till webbplatsen för [OpenSSL](https://www.openssl.org) eller [OpenSSL-binärfiler](https://wiki.openssl.org/index.php/Binaries).
+
+## <a name="generate-the-certificate-manually"></a>Generera certifikatet manuellt
+
+Du kan ange att dina certifikat ska genereras av valfria verktyg.
+
+Om OpenSSL-verktyget redan är installerat i systemet genererar du ett nytt certifikat genom att köra följande kommandon:
 
 ```cmd
 openssl req -x509 -newkey rsa:4096 -keyout PowerBICustomVisualTest_private.key -out PowerBICustomVisualTest_public.crt -days 365
 ```
 
-Vanligtvis finns certifikat för PowerBI-visuals-tools-webbservern på
+Du kan vanligtvis hitta certifikat för PowerBI-visuals-tools-webbservern genom att köra något av följande:
 
-```cmd
-%appdata%\npm\node_modules\PowerBI-visuals-tools\certs
-```
+* För den globala instansen av verktygen:
 
-för den globala instansen av verktygen
+    ```cmd
+    %appdata%\npm\node_modules\PowerBI-visuals-tools\certs
+    ```
 
-eller
+* För den lokala instansen av verktygen:
 
-```cmd
-<custom visual project root>\node_modules\PowerBI-visuals-tools\certs
-```
+    ```cmd
+    <custom visual project root>\node_modules\PowerBI-visuals-tools\certs
+    ```
 
-för den lokala instansen av verktygen.
+Om du använder PEM-formatet sparar du certifikatfilen som *PowerBICustomVisualTest_public.crt* och sparar privateKey som *PowerBICustomVisualTest_public.key*.
 
-Du bör spara certifikatfilen som `PowerBICustomVisualTest_public.cer` och den privata nyckeln som `PowerBICustomVisualTest_public.key` om du använder PEM-format.
-Spara certifikatfilen som `PowerBICustomVisualTest_public.pfx` om du använder PFX-formatet.
+Om du använder PFX-formatet sparar du certifikatfilen som *PowerBICustomVisualTest_public.pfx*.
 
-Om PFX-certifikatfilen kräver lösenfras bör du ange följande i
+Om PFX-certifikatfilen kräver en lösenfras gör du följande:
+1. I konfigurationsfilen anger du:
 
-```cmd
-\PowerBI-visuals-tools\config.json
-```
+    ```cmd
+    \PowerBI-visuals-tools\config.json
+    ```
 
-serveravsnittet:
+1. I avsnittet `server` anger du lösenfrasen genom att ersätta platshållaren "*YOUR PASSPHRASE*":
 
-```cmd
-"server":{
-    "root":"webRoot",
-    "assetsRoute":"/assets",
-    "privateKey":"certs/PowerBICustomVisualTest_private.key",
-    "certificate":"certs/PowerBICustomVisualTest_public.crt",
-    "pfx":"certs/PowerBICustomVisualTest_public.pfx",
-    "port":"8080",
-    "passphrase":"YOUR PASSPHRASE"
-}
-```
+    ```cmd
+    "server":{
+        "root":"webRoot",
+        "assetsRoute":"/assets",
+        "privateKey":"certs/PowerBICustomVisualTest_private.key",
+        "certificate":"certs/PowerBICustomVisualTest_public.crt",
+        "pfx":"certs/PowerBICustomVisualTest_public.pfx",
+        "port":"8080",
+        "passphrase":"YOUR PASSPHRASE"
+    }
+    ```

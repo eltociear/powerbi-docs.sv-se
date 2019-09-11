@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 04/10/2019
+ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 00ff6a901ef4056e15ccc0087f0783826b1a64b2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61309027"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391775"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -44,7 +44,7 @@ Power BI Desktop stöder tre typer av nummer:
 
 **Fast decimaltal** – Har en fast plats för decimaltecknet. Decimaltecknet har alltid fyra siffror till höger och upp till 19 signifikanta siffror.  Det största värdet som kan visas är 922 337 203 685 477,5807 (positivt eller negativt).  Typen Fast decimaltal är användbar när avrundning kan leda till fel.  När du arbetar med många tal som har små bråkvärden kan de ibland ackumuleras och få fram ett tal som inte riktigt stämmer.  Eftersom värden efter fyra siffrorna till höger om decimaltecknet trunkeras, kan du med typen Fast decimaltal undvika dessa typer av fel.   Om du är bekant med SQL Server motsvarar datatypen SQL Servers decimal (19,4) eller valutadatatypen i Power Pivot. 
 
-**Heltal** – Visar ett värde som 64-bitars heltal (8 byte). Eftersom det är ett heltal finns det inga siffror till höger om decimaltecknet. Det kan användas för 19 siffror, positiva eller negativa heltal mellan -9 223 372 036 854 775 808 (-2^63) och 9 223 372 036 854 775 807 (2^63-1).  Det kan visa det största möjliga talet i flera olika numeriska datatyper.  Precis som med Fast decimaltyp kan typen Heltal vara användbar i fall där du behöver styra avrundningen. 
+**Heltal** – Visar ett värde som 64-bitars heltal (8 byte). Eftersom det är ett heltal finns det inga siffror till höger om decimaltecknet. Det kan innehålla 19 siffror, positiva eller negativa heltal mellan -9 223 372 036 854 775 807 (-2^63+1) och 9 223 372 036 854 775 806 (2^63-2). Det kan visa det största möjliga talet i flera olika numeriska datatyper.  Precis som med Fast decimaltyp kan typen Heltal vara användbar i fall där du behöver styra avrundningen. 
 
 > [!NOTE]
 >  Power BI Desktop-datamodellen har stöd för 64-bitars heltalsvärden, men det största talet som de visuella objekten säkert kan uttrycka är 9,007,199,254,740,991 (2^53-1), på grund av JavaScript-begränsningar. Om du arbetar med tal i datamodellen ovan kan du minska storleken genom beräkningar innan du lägger till dem i ett visuellt objekt 

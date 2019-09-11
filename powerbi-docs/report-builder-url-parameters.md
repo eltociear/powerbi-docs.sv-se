@@ -9,12 +9,12 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: 4dae849a18bbfc6e85eedc7ae9e338ad205cb436
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: bda35bfb4690d8109f7bd611e3d319278d235f33
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189356"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302683"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametrar i sidnumrerade rapporter i Power BI
 
@@ -68,12 +68,12 @@ Du kan använda följande parametrar som en del av en URL för att konfigurera u
 
 ### <a name="report-commands-rdl"></a>Rapportkommandon (`rdl:`) 
 
-**Exportformat** Anger det format som ska användas för att rendera och exportera en rapport. Exempel på värden: 
-- PPTX 
+**Exportformat** Anger det format som ska användas för att rendera och exportera en rapport. Tillgängliga värden är: 
+- PPTX (PowerPoint)
 - MHTML 
 - BILD 
-- EXCEL 
-- WORD 
+- EXCELOPENXML (EXCEL) 
+- WORDOPENXML (WORD) 
 - CSV 
 - PDF 
 - XML 

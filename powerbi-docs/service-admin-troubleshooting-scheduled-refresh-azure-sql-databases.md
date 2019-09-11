@@ -7,27 +7,31 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 09/04/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 0c22d005044c0ebddc242eb35908e26689fee597
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4bc14b9a3d863732c581e8a144d612d864d65af8
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61186914"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391843"
 ---
 # <a name="troubleshooting-scheduled-refresh-for-azure-sql-databases-in-power-bi"></a>Felsöka schemalagd uppdatering för Azure SQL-databaser i Power BI
-Detaljerade anvisningar om hur du konfigurerar schemalagd uppdatering finns att läsa i [Uppdatera data i Power BI](refresh-data.md).
 
-Försök att ställa in en lämplig brandväggsregel när du ställer in en schemalagd uppdatering för Azure SQL-databasen, om du ser ett fel med felkod 400 när du redigerar autentiseringsuppgifterna:
+Detaljerad information om uppdatering finns i [Uppdatera data i Power BI](refresh-data.md) och [Konfigurera schemalagd uppdatering](refresh-scheduled-refresh.md).
 
-1. Logga in på Azure Management Portal
-2. Gå till Azure SQL-servern som du konfigurerar uppdateringar för
-3. Aktivera 'Windows Azure-tjänster ”i området tillåtna tjänster
+Om det uppstår ett fel med felkod 400 när du redigerar autentiseringsuppgifter vid konfiguration av schemalagd uppdatering för Azure SQL-databas kan du prova följande för att ange rätt brandväggsregel:
 
-![Tjänster som tillåts av Azure](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
+1. Logga in på [Azure-portalen](https://portal.azure.com).
+
+1. Gå till den Azure SQL-databas som du konfigurerar uppdateringen för.
+
+1. Längst upp i bladet **Översikt** väljer du **Konfigurera serverns brandvägg**.
+
+1. På bladet **Brandväggsinställningar** ser du till att **Tillåt åtkomst till Azure-tjänster** är angett till **PÅ**.
+
+    ![Tjänster som tillåts av Azure](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
-

@@ -1,6 +1,6 @@
 ---
-title: Landningssida
-description: Så lägger du till en landningssida i visuella Power BI-objekt
+title: Lägga till en landningssida för visuella Power BI-objekt
+description: I den här artikeln beskrivs hur du lägger till en landningssida för visuella Power BI-objekt.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 44cc9314b31803c97d3203d4aab846685d8f88fa
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: d15c52134fe3c8638625e50a1374867a4abed3c1
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424894"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236705"
 ---
-# <a name="landing-page"></a>Landningssida
+# <a name="add-a-landing-page-to-your-power-bi-visuals"></a>Lägga till en landningssida för visuella Power BI-objekt
 
-Med API 2.3.0 kan du lägga till en landningssida i ditt visuella objekt. Det gör du genom att lägga till `supportsLandingPage` i funktionerna och ange den till true (sant). Då initieras det visuella objektet och uppdateras även innan data läggs till i det (vilket innebär att den inte längre visar någon vattenstämpel), så du kan utforma din egen landningssida att visa i det visuella objektet så länge det inte har några data.
+Med API-version 2.3.0 kan du lägga till en landningssida för visuella Power BI-objekt. Det gör du genom att lägga till `supportsLandingPage` i funktionerna och ange det till true (sant). Den här åtgärden initierar och uppdaterar det visuella objektet innan du lägger till data i det. Eftersom det visuella objektet inte längre visar någon vattenstämpel kan du designa din egen landningssida som ska visas i det visuella objektet så länge det inte innehåller några data.
 
 ```typescript
 export class BarChart implements IVisual {
@@ -57,6 +57,6 @@ export class BarChart implements IVisual {
     }
 ```
 
-Exempel
+Ett exempel på en landningssida visas i följande bild:
 
 ![skärmbild av landningssida](./media/landing-page.png)

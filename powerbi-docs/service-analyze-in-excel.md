@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/04/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 6f4beb98c195c5af9967f988015959806d485696
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 5dbfa400f25f6981f7a73bffe1afad2acf735334
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159977"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391894"
 ---
 # <a name="analyze-in-excel"></a>Analysera i Excel
 Det finns tillfällen när du kanske vill använda Excel för att visa och interagera med en datauppsättning som du har i Power BI. Med **Analysera i Excel** kan du göra just det och komma åt funktionerna för pivottabell, diagram och utsnitt i Excel baserat på den datauppsättning som finns i Power BI.
@@ -67,7 +67,7 @@ Om du behöver installera Excel-uppdateringarna för **Analysera i Excel** igen,
 ### <a name="users-with-multiple-power-bi-accounts"></a>Användare med flera Power BI-konton
 Vissa användare har flera Power BI-konton och dessa användare kan råka ut för en situation där de är inloggade i Power BI med ett konto, men det konto som har åtkomst till den datauppsättning som används i Analysera i Excel är ett annat konto. I dessa fall kan du få ett meddelande om **förbud** eller inloggningsfel när du försöker komma åt en datauppsättning som används i en Analysera i Excel-arbetsbok.
 
-Du ges en ny möjlighet att logga in och då kan du logga in med det Power BI-konto som har åtkomst till datauppsättningen som används av Analysera i Excel. Du kan också välja **Profil** på menyfliken **Power BI** i Excel, vilket identifierar vilket konto som du är inloggad med för tillfället och innehåller en länk där du kan logga ut (och följaktligen logga in med ett annat konto).
+Du ges en ny möjlighet att logga in och då kan du logga in med det Power BI-konto som har åtkomst till datauppsättningen som används av Analysera i Excel. Du kan också välja **Profil** på menyfliken **Power BI** i Excel, vilket identifierar vilket konto som du är inloggad med för tillfället och innehåller en länk där du kan logga ut (och följaktligen logga in med ett annat konto). Du kan [ladda ned Power BI Publisher för Excel](https://www.microsoft.com/download/details.aspx?id=50729) om du inte redan har det installerat. Det är så Power BI-menyfliksområdet i Excel installeras.
 
 ![](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
 

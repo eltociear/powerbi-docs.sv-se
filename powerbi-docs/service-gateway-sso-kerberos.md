@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/25/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 436040f11534ede9d2e42e4f939d24a19e3d1c24
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 5445326f302f5ffef39ab387b3a22a336efb6550
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655173"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391859"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor
 
@@ -132,7 +132,7 @@ Så här konfigurerar du delegeringsinställningarna:
 
     ![Skärmbild av dialogrutan Egenskaper för gatewayanslutning](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Slutligen måste gatewaytjänstkontot på den dator som kör gatewaytjänsten (**PBIEgwTestGW** i vårt exempel) beviljas den lokala principen **Personifiera en klient efter autentisering** samt **Agera som en del av operativsystemet (SeTcbPrivilege)** . Du kan utföra och kontrollera den här konfigurationen med Redigeraren för lokala grupprinciper (**gpedit**).
+Slutligen måste gatewaytjänstkontot på den dator som kör gatewaytjänsten (**PBIEgwTestGW** i vårt exempel) beviljas den lokala principen **Personifiera en klient efter autentisering** samt **Agera som en del av operativsystemet (SeTcbPrivilege)**. Du kan utföra och kontrollera den här konfigurationen med Redigeraren för lokala grupprinciper (**gpedit**).
 
 1. På gatewaydatorn kör du: *gpedit.msc*.
 
@@ -146,7 +146,7 @@ Slutligen måste gatewaytjänstkontot på den dator som kör gatewaytjänsten (*
 
     Högerklicka och öppna **Egenskaper**. Kontrollera listan med konton. Det måste innehålla gatewaytjänstkontot (**PBIEgwTest\GatewaySvc**).
 
-1. I principlistan under **Tilldelning av användarrättigheter** väljer du **Agera som del av operativsystemet (SeTcbPrivilege)** . Se till att gatewaytjänstkontot även finns med i listan över konton.
+1. I principlistan under **Tilldelning av användarrättigheter** väljer du **Agera som del av operativsystemet (SeTcbPrivilege)**. Se till att gatewaytjänstkontot även finns med i listan över konton.
 
 1. Starta om den **lokala datagatewaytjänsten**.
 
@@ -377,7 +377,7 @@ Om det uppstår problem följer dessa steg för att felsöka gsskrb5-installatio
 
 ### <a name="add-registry-entries-to-the-gateway-machine"></a>Lägg till registerposter i gateway-datorn
 
-Lägg till nödvändiga registerposter i registret på den dator där gatewayen är installerad. Här följer kommandona som ska köras:
+Lägg till nödvändiga registerposter i registret på den dator som gatewayen är installerad på samt på datorer som är avsedda att ansluta från Power BI Desktop. Här följer kommandona som ska köras:
 
 1. REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
 

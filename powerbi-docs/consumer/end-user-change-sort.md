@@ -4,19 +4,18 @@ description: Ändra hur ett diagram sorteras i en Power BI-rapport
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aa6193045ba1c399eaae1b48bf813738edba99f1
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 98a91b0651e7a357f0ba0462f6ba8734c64ab162
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750838"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302709"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Ändra hur ett diagram sorteras i en Power BI-rapport
 I en Power BI-rapport kan du sortera de flesta visualiseringar alfabetiskt efter namnen på kategorierna i diagrammet eller efter de numeriska värdena i varje kategori. Det här diagrammet sorteras exempelvis på kategorin **butiksnamn**.
@@ -31,12 +30,12 @@ Det är enkelt att ändra sorteringen från en kategori (lagernamn) till ett vä
    ![video som visar att välja sortera efter och sedan stigande, fallande](media/end-user-change-sort/sort.gif)
 
 > [!NOTE]
-> Det går inte att sortera alla visuella objekt. Till exempel går inte följande visuella objekt att sortera: trädkarta, karta, koropletkarta, punktdiagram, mätare, kort, flerradskort, vattenfall.
+> Det går inte att sortera alla visuella objekt. Till exempel går det inte att sortera följande visuella objekt: trädkarta, karta, koropletkarta, punktdiagram, mätare, kort och vattenfall.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Spara dina ändringar av sorteringsordningen
-De filter, utsnitt, sorteringar och andra datavisningsändringar som du gör sparas i Power BI-rapporterna. Ändringarna finns alltså kvar om du lämnar rapporten och kommer tillbaka senare.  Om du vill återställa ändringarna till inställningarna som rapportdesignerns använde väljer du **Återställ till standard** från den översta menyraden. 
+De filter, utsnitt, sorteringar och andra datavisningsändringar som du gör sparas i Power BI-rapporterna. Ändringarna finns alltså kvar om du lämnar rapporten och kommer tillbaka senare.  Om du vill återställa ändringarna till rapportdesignerns inställningar väljer du **Återställ till standard** i det övre menyfältet. 
 
-![beständig sortering](media/end-user-change-sort/power-bi-reset-to-default.png)
+![beständig sortering](media/end-user-change-sort/power-bi-reset.png)
 
 Om knappen **Återställ till standard** är nedtonad betyder det att rapportdesignern har inaktiverat möjligheten att spara ändringarna.
 

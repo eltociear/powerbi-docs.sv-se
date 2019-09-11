@@ -1,7 +1,7 @@
 ---
 title: Skanna en QR-kod i Power BI från din mobila enhet
 description: Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information i Power BI-mobilappen för iPhone- och Android-enheter.
-author: mshenhav
+author: KesemSharabi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 8b994dfd44a999b877a906571027f5fcb55d9924
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69c0e5279389c186471aa0a6068d88917cf6fc65
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60972982"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236741"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Skanna en QR-kod i Power BI från din mobila enhet
 Gäller:
@@ -35,7 +35,7 @@ Om en kollega inte har delat instrumentpanelen eller rapporten med dig, kan du b
 > Du kan också [skanna en QR-kod för en rapport med appen Power BI for Mixed Reality](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Skanna en Power BI QR-kod på din iPhone med Power BI-skannern
-1. I Power BI-mobilappen öppnar du den globala navigeringsmenyn ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png) i det övre vänstra hörnet. 
+1. I Power BI-mobilappen öppnar du den globala navigeringsmenyn ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png) uppe till vänster. 
 2. Skrolla ned till **Skanner** och markera den. 
    
     ![](media/mobile-apps-qr-code/power-bi-iphone-scanner-menu.png)

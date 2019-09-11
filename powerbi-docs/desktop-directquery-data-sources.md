@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/04/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5455a5f3b4bda6cf6d63825222822c4acfa5f03a
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 59c55d2e9322b0b7d76a35f4eec0863efe4959e0
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159952"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302641"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Datakällor som stöds av DirectQuery i Power BI
 
@@ -29,14 +29,16 @@ Följande datakällor stöds av DirectQuery i Power BI:
 * Azure HDInsight Spark
 * [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
 * [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
+* Denodo
 * Google BigQuery
 * HDInsight Interactive-fråga
-* IBM DB2-databas
+* IBM DB2 (Microsoft-provider))
 * IBM Netezza
 * Impala (version 2.x)
 * MarkLogic
 * Oracle Database (version 12 och senare)
 * Oracle Essbase
+* PostgreSQL
 * SAP Business Warehouse Application Server
 * SAP Business Warehouse Message Server
 * SAP HANA
@@ -65,15 +67,24 @@ I följande tabell anges om en **lokal datagateway** krävs för att ansluta til
 | Azure SQL Data Warehouse |Nej |
 | Google BigQuery |Nej |
 | IBM Netezza |Ja |
+| IBM DB2 (IBM-provider) |Ja |
+| IBM DB2 (Microsoft-provider) |Nej |
+| IBM Informix-databas |Nej |
 | Impala (version 2.x) |Ja |
+| MySQL |Ja |
+| ODBC |Ja |
 | Oracle-databas |Ja |
+| PostgreSQL |Ja |
 | SAP Business Warehouse Application Server |Ja |
 | SAP Business Warehouse Message Server |Stöds inte än i **Power BI-tjänsten** |
 | SAP HANA |Ja |
 | Snowflake |Ja |
 | Spark (beta) version 0.9 och senare |Ja |
 | SQL Server |Ja |
+| Sybase |Ja |
 | Teradata-databas |Ja |
+| Vertica |Ja |
+
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkel inloggning (SSO) för DirectQuery-källor
 

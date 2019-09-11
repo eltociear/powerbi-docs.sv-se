@@ -1,6 +1,6 @@
 ---
-title: Aktivera synkronisering av utsnitt
-description: Så lägger du till funktioner för synkronisering av utsnitt i visuella Power BI-objekt
+title: Aktivera funktionen Synkronisering av utsnitt i visuella Power BI-objekt
+description: I den här artikeln beskrivs hur du lägger till funktionen Synkronisering av utsnitt i visuella Power BI-objekt.
 author: EugeneElkin
 ms.author: v-evelk
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 9966475e8bcaccad2090451b47ef09ef0a9af125
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 4d7b73a5d06f34fd197464d4444d0e19d6c1c026
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425032"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237207"
 ---
-# <a name="sync-slicers"></a>Synkronisering av utsnitt
+# <a name="sync-slicers-in-power-bi-visuals"></a>Synkronisering av utsnitt i visuella Power BI-objekt
 
-För att stödja [synkronisering av utsnitt](https://docs.microsoft.com/power-bi/desktop-slicers) måste ditt anpassade utsnitt använda API 1.13 eller senare.
+För att stödja funktionen [Synkronisering av utsnitt](https://docs.microsoft.com/power-bi/desktop-slicers) måste ditt anpassade utsnittsobjekt använda API-version 1.13 eller senare.
 
-Den andra nödvändiga aspekten är aktiverat alternativ i `capabilities.json` (se ett exempel nedan).
+Dessutom behöver du aktivera alternativet i filen *capabilities.json* enligt följande kod:
 
 ```json
 {
@@ -34,11 +34,11 @@ Den andra nödvändiga aspekten är aktiverat alternativ i `capabilities.json` (
 }
 ```
 
-Efter ändringar i `capabilities.json` kan du se panelen med alternativ för synkronisering av utsnitt när du klickar på ditt anpassade visuella utsnittsobjekt.
+När du har uppdaterat filen *capabilities.json* kan du visa fönstret med alternativ för **Synkronisera utsnitt** när du väljer det anpassade visuella utsnittsobjektet.
 
 > [!NOTE]
-> Om utsnittet har fler än 1 fält (kategori eller mått) inaktiveras funktionen eftersom Synkronisering av utsnitt inte stöder flera fält.
+> Funktionen Synkronisering av utsnitt stöder inte fler än ett fält. Om utsnittet har fler än ett fält (**Kategori** eller **Mått**) inaktiveras funktionen.
 
-![Panelen Synkronisera utsnitt](./media/sync-slicers-panel.png)
+![Fönstret ”Synkronisera utsnitt”](./media/sync-slicers-panel.png)
 
-I panelen kan du se att utsnittets synlighet och filtrering kan tillämpas för flera rapportsidor.
+I fönstret **Synkronisera utsnitt** kan du se att utsnittets synlighet och filtrering kan tillämpas på flera rapportsidor.

@@ -1,6 +1,6 @@
 ---
-title: Återgivningshändelser
-description: Visuella objekt för Power BI kan meddela Power BI att de är redo att exporteras till Power Point/PDF
+title: Rendera händelser i visuella Power BI-objekt
+description: Visuella Power BI-objekt kan meddela Power BI om att de är redo för export till Power Point eller PDF.
 author: Yarovinsky
 ms.author: alexyar
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 46166b3503a770e033b98474fcf9240235296cc2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: b481ce94e5025045466a05d71e30a00f02be7ead
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425101"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237163"
 ---
-# <a name="event-service"></a>Händelsetjänst
+# <a name="render-events-in-power-bi-visuals"></a>Rendera händelser i visuella Power BI-objekt
 
-Det nya API:et består av tre metoder (started, finished eller failed) som ska anropas under återgivningen.
+Det nya API:et består av tre metoder (`started`, `finished` eller `failed`) som ska anropas under renderingen.
 
-När återgivningen startar anropar den anpassade visuella koden metoden renderingStarted för att indikera att återgivningsprocessen har startat.
+När renderingen påbörjas anropar koden för visuella Power BI-objekt metoden `renderingStarted` för att indikera att renderingsprocessen har startat.
 
-Om återgivningen har slutförts anropar den anpassade visuella koden omedelbart metoden `renderingFinished` som meddelar lyssnarna (**primärt "Exportera till PDF" och "Exportera till PowerPoint"** ) att det visuella objektets bild är klar.
+Om renderingen slutförs korrekt anropar koden för visuella Power BI-objekt omedelbart metoden `renderingFinished`, som meddelar lyssnarna (huvudsakligen *exportera till PDF* och *exportera till PowerPoint*) om att det visuella objektets bild är redo för export.
 
-Om ett problem uppstår under återgivningsprocessen, som gör att den anpassade virtuella koden inte kan utföras, ska den anpassade visuella koden anropa metoden `renderingFailed` för att meddela lyssnaren att återgivningsprocessen inte har slutförts. Den här metoden tillhandahåller också en valfri sträng för orsaken till felet.
+Om ett problem uppstår under processen förhindras det visuella Power BI-objektet från att renderas korrekt. I syfte att meddela lyssnarna om att renderingsprocessen inte har slutförts bör koden för visuella Power BI-objekt anropa metoden `renderingFailed`. Den här metoden tillhandahåller även en valfri sträng för att ange orsaken till felet.
 
 ## <a name="usage"></a>Användning
 
@@ -38,31 +38,31 @@ export interface IVisualHost extends extensibility.IVisualHost {
  */
 export interface IVisualEventService {
     /**
-     * Should be called just before the actual rendering was started. 
-     * Usually at the very start of the update method.
+     * Should be called just before the actual rendering starts, 
+     * usually at the start of the update method
      *
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingStarted(options: VisualUpdateOptions): void;
 
     /**
-     * Shoudl be called immediately after finishing successfull rendering.
+     * Should be called immediately after rendering finishes successfully
      * 
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingFinished(options: VisualUpdateOptions): void;
 
     /**
-     * Called when rendering failed with optional reason string
+     * Called when rendering fails, with an optional reason string
      * 
-     * @param options - the visual update options received as update parameter
-     * @param reason - the option failure reason string
+     * @param options - the visual update options received as an update parameter
+     * @param reason - the optional failure reason string
      */
     renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
 
-### <a name="simple-sample-the-visual-hasnt-any-animations-on-rendering"></a>Enkelt exempel. Det visuella objektet har ingen animering vid återgivning
+### <a name="sample-the-visual-displays-no-animations"></a>Exempel: Det visuella objektet visar inga animeringar
 
 ```typescript
     export class Visual implements IVisual {
@@ -83,9 +83,9 @@ export interface IVisualEventService {
         }
 ```
 
-### <a name="sample-the-visual-with-animation"></a>Exempel. Det visuella objektet med animering
+### <a name="sample-the-visual-displays-animations"></a>Exempel: Det visuella objektet visar animeringar
 
-Om det visuella objektet har animeringar eller asynkrona funktioner för återgivning ska metoden `renderingFinished` anropas efter animeringen eller inuti den asynkrona funktionen.
+Om det visuella objektet har animeringar eller asynkrona funktioner för rendering ska metoden `renderingFinished` anropas efter animeringen eller inuti den asynkrona funktionen.
 
 ```typescript
     export class Visual implements IVisual {
@@ -104,7 +104,7 @@ Om det visuella objektet har animeringar eller asynkrona funktioner för återgi
         public update(options: VisualUpdateOptions) {
             this.events.renderingStarted(options);
             ...
-            // read more https://github.com/d3/d3-transition/blob/master/README.md#transition_end
+            // Learn more at https://github.com/d3/d3-transition/blob/master/README.md#transition_end
             d3.select(this.element).transition().duration(100).style("opacity","0").end().then(() => {
                 // renderingFinished called after transition end
                 this.events.renderingFinished(options);
@@ -114,4 +114,4 @@ Om det visuella objektet har animeringar eller asynkrona funktioner för återgi
 
 ## <a name="rendering-events-for-visual-certification"></a>Återgivningshändelser för certifiering av visuellt objekt
 
-Stöd för återgivningshändelser av det visuella objektet är ett av kraven för certifiering av visuella objekt. Läs mer om [certifieringskrav](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements)
+Ett krav för certifiering av visuella objekt är det visuella objektets stöd för renderingshändelser. Mer information finns i [certifieringskrav](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements).

@@ -4,20 +4,19 @@ description: Det här avsnittet visar hur Power BI-användare öppnar och visar 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 8/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
-ms.openlocfilehash: 0896d397c7cc78ce36109cf1c975b34d081169a1
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70184770"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391760"
 ---
-# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *användare*
+# <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *konsumenter*
 En rapport är en eller flera sidor med visuella objekt. Rapporter skapas av Power BI-*designer* och [delas med *användare* direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 
 
 Det finns många olika sätt att öppna en rapport och vi kommer att visa dig två av dem: Öppna från startsidan och öppna från en instrumentpanel. 
@@ -31,7 +30,7 @@ Nu ska vi öppna en rapport som har delats med dig direkt och sedan öppnar en r
    ![Startsida](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Öppna en rapport som har delats med dig
-Power BI-*designers* kan dela en rapport direkt med dig. Innehåll som delas på detta sätt visas i behållaren **delat med mig** på navigeringsfältet och i avsnittet **delat med mig** på Hem-arbetsytan.
+Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i ett e-postmeddelande eller genom att lägga till den i din Power BI-start. Innehåll som delas på detta sätt visas i behållaren **delat med mig** på navigeringsfältet och i avsnittet **delat med mig** på Hem-arbetsytan.
 
 1. Öppna Power BI-tjänsten (app.powerbi.com).
 
@@ -45,13 +44,13 @@ Power BI-*designers* kan dela en rapport direkt med dig. Innehåll som delas på
 
 4. Öppna rapporten genom att välja *rapportkortet*.
 
-   ![rapportsida](./media/end-user-report-open/power-bi-report-open.png)
+   ![rapportsida](./media/end-user-report-open/power-bi-open.png)
 
 5. Observera flikarna längs vänster sida.  Varje flik representerar en *sida* i rapporten. Just nu är sidan för *Tillväxtmöjligheter* öppen. Välj fliken *YTD-kategori* för att öppna rapportsidan i stället. 
 
    ![flikar för rapportsida](./media/end-user-report-open/power-bi-ytd.png)
 
-6. Just nu ser vi hela rapportsidan. Om du vill ändra visningen (zoom) på sidan väljer du listrutan Vy från det övre högra hörnet ( **>** ) och väljer **Faktisk storlek**.
+6. Just nu ser vi hela rapportsidan. Om du vill ändra visningen (zoomning) av sidan väljer du listrutan Visa från det övre högra hörnet och väljer **Faktisk storlek**.
 
    ![ändra zoom](./media/end-user-report-open/power-bi-fit-new.png)
 
@@ -66,7 +65,7 @@ Om du har fått appar från kollegor eller från AppSource, är dessa appar till
 
    ![Startsida](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Välj en av apparna för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas i en instrumentpanel, en rapport eller en appinnehållslista. Om du väljer appen:
+8. Välj en av apparna för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas sin en instrumentpanel eller en rapport. Om du väljer appen:
     - öppnas rapporten, allt är klart.
     - öppnas en instrumentpanel, se ***öppna en rapport från en instrumentpanel*** nedan.
 
@@ -95,5 +94,5 @@ När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du a
 - och mycket mer
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns [många sätt att interagera med en rapport](end-user-reading-view.md).  Börja att utforska genom att välja varje flik på sidan av rapportarbetsytan.
+[Öppna och visa en instrumentpanel](end-user-dashboard-open.md)
 

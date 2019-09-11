@@ -1,6 +1,6 @@
 ---
-title: Datavymappningar
-description: Hur Power BI transformerar data innan de skickas till visuella objekt
+title: Förstå datavymappning i visuella Power BI-objekt
+description: I den här artikeln beskrivs hur Power BI transformerar data innan de skickas till visuella objekt.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,19 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ff70b2f12921694617a736164484df1326471eea
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425193"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237238"
 ---
-# <a name="data-view-mappings-in-power-bi-visuals"></a>Datavymappningar i visuella objekt för Power BI
+# <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Förstå datavymappning i visuella Power BI-objekt
 
-`dataViewMappings` beskriver hur datarollerna är relaterade till varandra och gör att du kan ange villkorskrav för dem.
-Det finns ett avsnitt för var och en av `dataMappings`.
+I den här artikeln diskuteras datavymappning samt hur datarollerna är relaterade till varandra och gör att du kan ange villkorskrav för dem. I artikeln beskrivs även varje typ av `dataMappings`.
 
-Varje giltig mappning skapar en `DataView`, men för närvarande går det bara att utföra en fråga per visuellt objekt så i de flesta fall får du bara en `DataView`. Men du kan ange flera datamappningar med olika villkor. Exempel:
+Varje giltig mappning skapar en datavy, men för närvarande stöder vi endast en fråga per visuellt objekt. Du får normalt bara en datavy. Men du kan ange flera datamappningar under vissa förhållanden, som tillåter:
 
 ```json
 "dataViewMappings": [
@@ -35,10 +34,10 @@ Varje giltig mappning skapar en `DataView`, men för närvarande går det bara a
 ]
 ```
 
-> [!NOTE]
-> Observera att Power BI endast skapar en mappning till en DataView om den giltiga mappningen definieras i `dataViewMappings`.
+Power BI skapar endast en mappning till en datavy om den giltiga mappningen ifylls i `dataViewMappings`.
 
-Om `categorical` definieras i `dataViewMappings` men andra mappningar som `table`, `single` med flera inte gör det som i följande exempel:
+Med andra ord definieras kanske `categorical` i `dataViewMappings`, men andra mappningar, till exempel `table` eller `single`, gör kanske inte det. Till exempel:
+
 ```json
 "dataViewMappings": [
     {
@@ -47,7 +46,8 @@ Om `categorical` definieras i `dataViewMappings` men andra mappningar som `table
 ]
 ```
 
-skapar Power BI en `DataView` med en enda `categorical`-mappning (`table` och andra mappningar blir `undefined`):
+Power BI skapar en datavy med en enda `categorical`-mappning, och `table` samt andra mappningar är odefinierade:
+
 ```javascript
 {
     "categorical": {
@@ -60,16 +60,16 @@ skapar Power BI en `DataView` med en enda `categorical`-mappning (`table` och an
 
 ## <a name="conditions"></a>Villkor
 
-Beskriver villkoren för en viss datamappning. Du kan ange flera uppsättningar med villkor, och om data matchar någon av de beskrivna villkorsuppsättningarna kommer det visuella objektet att acceptera dessa data som giltiga.
+Det här avsnittet beskriver villkoren för en viss datamappning. Du kan ange flera uppsättningar med villkor, och om data matchar någon av de beskrivna villkorsuppsättningarna accepterar det visuella objektet dessa data som giltiga.
 
-För närvarande kan du ange ett minsta och ett högsta värde för varje fält. Det representerar antalet fält som kan bindas till den datarollen. 
+För närvarande kan du ange ett minimivärde och ett maxvärde för varje fält. Det värdet representerar det antal fält som kan bindas till den datarollen. 
 
 > [!NOTE]
 > Om en dataroll utelämnas i villkoret kan den ha valfritt antal fält.
 
 ### <a name="example-1"></a>Exempel 1
 
-Du kan dra flera fält till varje dataroll. I det här exemplet begränsar vi kategorin till ett datafält och mått till två datafält.
+Du kan dra flera fält till varje dataroll. I det här exemplet begränsar du kategorin till ett datafält och måttet till två datafält.
 
 ```json
 "conditions": [
@@ -79,7 +79,9 @@ Du kan dra flera fält till varje dataroll. I det här exemplet begränsar vi ka
 
 ### <a name="example-2"></a>Exempel 2
 
-I det här exemplet krävs ett av två villkor. Antingen exakt ett kategoridatafält och exakt två mått, eller exakt två kategorier och exakt ett mått.
+I det här exemplet krävs endera av de följande två villkoren:
+* Exakt ett kategoridatafält och exakt två mått
+* Exakt två kategorier och exakt ett mått.
 
 ```json
 "conditions": [
@@ -90,9 +92,9 @@ I det här exemplet krävs ett av två villkor. Antingen exakt ett kategoridataf
 
 ## <a name="single-data-mapping"></a>Enkel datamappning
 
-Enkel datamappning är den enklaste formen av datamappning. Den accepterar ett enda måttfält och ger den totala summan. Om fältet är numeriskt får du summan. Annars får du antalet unika värden.
+Enkel datamappning är den enklaste formen av datamappning. Den accepterar ett enda måttfält och ger den totala summan. Om fältet är numeriskt ger det summan. Annars ger det antalet unika värden.
 
-Om du vill använda enkel datamappning måste du definiera namnet på den dataroll som du vill mappa. Den här mappningen fungerar bara med ett enda måttfält. Om du tilldelar ytterligare ett fält skapas ingen datavy. Därför är det också bra att ta med ett villkor som begränsar data till ett enda fält.
+Om du vill använda enkel datamappning behöver du definiera namnet på den dataroll som du vill mappa. Den här mappningen fungerar bara med ett enda måttfält. Om ett andra fält tilldelas så genereras ingen datavy. Därför är även en bra idé att inkludera ett villkor som begränsar data till ett enda fält.
 
 > [!NOTE]
 > Den här datamappningen kan inte användas tillsammans med andra datamappningar. Den är avsedd att minska data till ett enda numeriskt värde.
@@ -110,7 +112,7 @@ Om du vill använda enkel datamappning måste du definiera namnet på den dataro
 }  
 ```
 
-Den resulterande datavyn kommer fortfarande att innehålla de andra typerna (tabell, kategorisk och så vidare), men varje mappning kommer bara att innehålla det enskilda värdet. Bästa praxis är att bara komma åt värdet i ”single”.
+Den resulterande datavyn innehåller fortfarande de andra typerna (tabell, kategorisk och så vidare), men varje mappning innehåller bara det enskilda värdet. Bästa praxis är att bara komma åt värdet i enkelformat.
 
 ```JSON
 {
@@ -135,7 +137,7 @@ Kategorisk datamappning används för att hämta en eller två oberoende grupper
 
 ### <a name="example-4"></a>Exempel 4
 
-Här är definitionen från vårt föregående exempel med DataRoles.
+Här är definitionen från det föregående exemplet för dataroller:
 
 ```json
 "dataRole":[
@@ -152,7 +154,7 @@ Här är definitionen från vårt föregående exempel med DataRoles.
 ]
 ```
 
-Och nu för mappningen:
+Här är mappningen:
 
 ```json
 "dataViewMappings": {
@@ -169,14 +171,14 @@ Och nu för mappningen:
 }
 ```
 
-Det är ett enkelt exempel som kan utläsas på följande sätt: ”Mappa min `category`-DataRole så att för varje fält jag drar till `category` så mappas dess data till `categorical.categories`. Mappa även min `measure`-DataRole till `categorical.values`.”
+Det är ett enkelt exempel. Det står ”Mappa min `category`-dataroll så att för varje fält jag drar till `category` så mappas dess data till `categorical.categories`. Mappa även min `measure`-dataroll till `categorical.values`.”
 
-* **for...in** – För alla objekt i den här datarollen, ta med dessa i datafrågan.
-* **bind...to** – Ger samma resultat som ”for...in”, men denna DataRole förväntas ha ett villkor som begränsar den till ett enda fält.
+* **for...in**: För alla objekt i den här datarollen, inkludera dem i datafrågan.
+* **bind...to**: Ger samma resultat som *for...in*, men förväntar sig att datarollen har ett villkor som begränsar den till ett enda fält.
 
 ### <a name="example-5"></a>Exempel 5
 
-I det här exemplet använder vi de två första DataRoles från det föregående exemplet och definierar även `grouping` och `measure2`.
+I det här exemplet används de två första datarollerna från det föregående exemplet, och dessutom definieras `grouping` och `measure2`.
 
 ```json
 "dataRole":[
@@ -203,7 +205,7 @@ I det här exemplet använder vi de två första DataRoles från det föregåend
 ]
 ```
 
-Och nu för mappningen:
+Här är mappningen:
 
 ```json
 "dataViewMappings":{
@@ -224,11 +226,11 @@ Och nu för mappningen:
 }
 ```
 
-Här ligger skillnaden i hur vi mappar categorical.values. Vi säger: ”Mappa datarollerna `measure` och `measure2` som ska grupperas efter datarollen `grouping`.”
+Här ligger skillnaden i hur vi mappar categorical.values. Vi säger ”Mappa mina dataroller för `measure` och `measure2` som ska grupperas efter datarollen `grouping`.”
 
 ### <a name="example-6"></a>Exempel 6
 
-Här är dataRoles.
+Här är datarollerna:
 
 ```json
 "dataRoles": [
@@ -250,7 +252,7 @@ Här är dataRoles.
 ]
 ```
 
-Här är dataViewMapping.
+Här är datavymappningen:
 
 ```json
 "dataViewMappings": [
@@ -277,7 +279,7 @@ Här är dataViewMapping.
 ]
 ```
 
-Den kategoriska `dataview` kan visualiseras så här.
+Den kategoriska datavyn kan visualiseras så här:
 
 | Kategorisk |  |  | | | |
 |-----|-----|------|------|------|------|
@@ -288,7 +290,7 @@ Den kategoriska `dataview` kan visualiseras så här.
 | Mexiko | | 300 | x | x | x |
 | Storbritannien | | x | x | 75 | x |
 
-Power BI genererar detta som kategorisk datavy. Detta är uppsättningen med kategorier.
+Power BI skapar den som den kategoriska datavyn. Detta är uppsättningen med kategorier.
 
 ```JSON
 {
@@ -310,7 +312,7 @@ Power BI genererar detta som kategorisk datavy. Detta är uppsättningen med kat
 }
 ```
 
-Varje kategori mappar även till en uppsättning värden. Vart och ett av dessa värden grupperas efter serie, vilket i det här fallet är år.
+Varje kategori mappar även till en uppsättning värden. Vart och ett av dessa värden grupperas efter serie, vilket uttrycks som år.
 
 Försäljningen 2013 i Kanada är null och försäljningen 2014 i Kanada är 50.
 
@@ -393,7 +395,7 @@ Med de aktuella funktionerna:
 ]
 ```
 
-Tabellen `dataview` kan visualiseras så här.  
+Du kan visualisera tabelldatavyn så här:  
 
 | Land| År | Försäljning |
 |-----|-----|------|
@@ -405,7 +407,7 @@ Tabellen `dataview` kan visualiseras så här.
 | Storbritannien | 2014 | 150 |
 | USA | 2015 | 75 |
 
-Power BI genererar detta som tabelldatavy. Anta inte att det finns någon specifik ordning.
+Power BI visar dina data som tabelldatavyn. Du bör inte anta att data är ordnade.
 
 ```JSON
 {
@@ -452,13 +454,13 @@ Power BI genererar detta som tabelldatavy. Anta inte att det finns någon specif
 }
 ```
 
-Data kan aggregeras genom att välja önskat fält och klicka på Sum (Summa).  
+Du kan aggregera data genom att markera önskat fält och sedan välja sum.  
 
 ![Dataaggregering](./media/data-aggregation.png)
 
 ## <a name="matrix-data-mapping"></a>Matrisdatamappning
 
-Matrisdatamappningen liknar tabelldatamappningen, men raderna visas hierarkiskt. Och ett av `dataRole`-värdena kan användas som kolumnrubrikvärde.
+Matrisdatamappning liknar tabelldatamappning, men raderna visas hierarkiskt. Vilket datarollvärde som helst kan användas som kolumnrubrikvärde.
 
 ```json
 {
@@ -510,11 +512,11 @@ Matrisdatamappningen liknar tabelldatamappningen, men raderna visas hierarkiskt.
 }
 ```
 
-Power BI skapar en hierarkisk datastruktur. Trädets rot innehåller data från den första kolumnen för `Category`-datarollen med underordnade från den andra kolumnen för datarollen.
+Power BI skapar en hierarkisk datastruktur. Roten i trädhierarkin innehåller data från kolumnen **Överordnade** i datarollen `Category` med underordnade från kolumnen **Underordnade** för datarollstabellen.
 
 Datauppsättning:
 
-| Parents (Överordnade) | Underordnade | Grand children (Under-underordnade) | Kolumner | Värden |
+| Parents (Överordnade) | Underordnade | Nästa underordnade | Kolumner | Värden |
 |-----|-----|------|-------|-------|
 | Parent1 | Child1 | Grand child1 | Col1 | 5 |
 | Parent1 | Child1 | Grand child1 | Col2 | 6 |
@@ -533,11 +535,11 @@ Datauppsättning:
 | Parent2 | Child3 | Grand child8 | Col1 | 10 |
 | Parent2 | Child3 | Grand child8 | Col2 | 13 |
 
-Det visuella matrisobjektet i Power BI återger detta som en tabell.
+Det visuella kärnmatrisobjektet i Power BI renderar detta som en tabell.
 
 ![Visuellt matrisobjekt](./media/matrix-visual-smaple.png)
 
-Det visuella objektet hämtar datastrukturen enligt beskrivningen nedan (endast de första två raderna visas):
+Det visuella objektet får sin datastruktur enligt beskrivningen i följande kod (endast de första två tabellraderna visas här):
 
 ```json
 {
@@ -614,9 +616,9 @@ Det visuella objektet hämtar datastrukturen enligt beskrivningen nedan (endast 
 
 ## <a name="data-reduction-algorithm"></a>Algoritm för dataminskning
 
-Du kan använda `DataReductionAlgorithm` om du vill styra mängden data som tas emot i datavyn.
+Du kan styra den mängd data som ska tas emot i datavyn med hjälp av en algoritm för dataminskning.
 
-Som standard tillämpas ”top” i DataReductionAlgorithm för alla anpassade visuella objekt med "count" angivet till 1 000 datapunkter. Det motsvarar att ange följande egenskaper i capabilities.json:
+Som standard tillämpas algoritmen för dataminskning uppifrån för alla anpassade visuella objekt med *count* angett till 1 000 datapunkter. Det är samma som att ange följande egenskaper i filen *capabilities.json*:
 
 ```json
 "dataReductionAlgorithm": {
@@ -626,23 +628,23 @@ Som standard tillämpas ”top” i DataReductionAlgorithm för alla anpassade v
 }
 ```
 
-Du kan ändra värdet för "count" till ett heltalsvärde på upp till 30 000. R-baserade anpassade visuella objekt har stöd för upp till 150 000 rader.
+Du kan ändra värdet för *count* till valfritt heltalsvärde upp till 30 000. R-baserade anpassade visuella objekt har stöd för upp till 150 000 rader.
 
 ## <a name="data-reduction-algorithm-types"></a>Typer av algoritmer för dataminskning
 
-Det finns fyra typer av `DataReductionAlgorithm`-inställningar:
+Det finns fyra typer av inställningar för algoritmer för dataminskning:
 
-* `top` – om du vill begränsa data till värden som tas längst upp i datamängden. De översta "count"-värdena hämtas från datamängden.
-* `bottom` – om du vill begränsa data till värden som tas längst ned i datamängden. De sista ”count”-värdena hämtas från datamängden.
-* `sample` – minska datamängden med en enkel samplingsalgoritm som är begränsad till antalet objekt i "count". Det innebär att det första och sista objektet ingår och ett antal objekt (”count”) med samma intervall mellan dem.
-Om du till exempel har datamängden [0, 1, 2, ... 100] och `count: 9`, får du följande värden: [0, 10, 20 ... 100]
-* `window` – läser in ett ”fönster” med datapunkter vid en tidpunkt som innehåller "count"-element. För närvarande är `top` och `window` lika. Det pågår arbete för att ge fullständigt stöd för en fönsterinställning.
+* `top`: Om du vill begränsa data till värden som tas längst upp i datamängden. *count*-värdena längst upp hämtas från datamängden.
+* `bottom`: Om du vill begränsa data till värden som tas längst ned i datamängden. De sista "count"-värdena hämtas från datamängden.
+* `sample`: Minska datamängden med en enkel samplingsalgoritm som är begränsad till det antal objekt som anges av *count*. Det innebär att det första och det sista objektet inkluderas samt att det antal objekt som anges av *count* har samma intervall sinsemellan.
+Om du till exempel har datamängden [0, 1, 2, ... 100] och *count* är 9 får du värdena [0, 10, 20 ... 100].
+* `window`: Läser in ett *fönster* med datapunkter vid en tidpunkt som innehåller *count* element. För närvarande är `top` och `window` likvärdiga. Vi arbetar för att helt stödja en fönsterinställning.
 
 ## <a name="data-reduction-algorithm-usage"></a>Använda algoritmen för dataminskning
 
-`DataReductionAlgorithm` kan användas i kategorisk datavymappning, tabelldatavymappning`dataview` eller matrisdatavymappning.
+Algoritmen för dataminskning kan användas i kategorisk mappning eller tabell- eller matrisdatavymappning.
 
-Den kan anges i `categories` och/eller gruppavsnittet med `values` för kategorisk datamappning.
+Du kan ange algoritmen till `categories` och/eller gruppavsnitt för `values` för kategorisk datamappning.
 
 ### <a name="example-8"></a>Exempel 8
 
@@ -677,7 +679,7 @@ Den kan anges i `categories` och/eller gruppavsnittet med `values` för kategori
 }
 ```
 
-Algoritmen för dataminskning kan tillämpas på `rows`-avsnittet i`dataview` tabelldatavymappning.
+Du kan använda algoritmen för dataminskning för avsnittet `rows` i tabellen för datavymappning.
 
 ### <a name="example-9"></a>Exempel 9
 
@@ -700,4 +702,4 @@ Algoritmen för dataminskning kan tillämpas på `rows`-avsnittet i`dataview` ta
 ]
 ```
 
-Algoritmen för dataminskning kan tillämpas på avsnittet `rows` och/eller `columns` i `matrix` `dataview`-mappning.
+Du kan använda algoritmen för dataminskning för avsnitten `rows` och `columns` i matrisen för datavymappning.

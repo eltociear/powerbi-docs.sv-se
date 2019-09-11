@@ -1,6 +1,6 @@
 ---
-title: Funktioner
-description: Funktioner och egenskaper för visuella Power BI-objekt
+title: Funktioner och egenskaper för visuella Power BI-objekt
+description: I den här artikeln beskrivs funktioner och egenskaper för visuella Power BI-objekt.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f6bb4293a44f98f2f8098fb197c7b406b618d211
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c32a1679f09e05d134da7f27ffa0cee90d75fab
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425469"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237310"
 ---
-# <a name="power-bi-visual-capabilities"></a>Funktioner för visuella Power BI-objekt
+# <a name="capabilities-and-properties-of-power-bi-visuals"></a>Funktioner och egenskaper för visuella Power BI-objekt 
 
-Funktioner ger värden information om ditt visuella objekt. Alla egenskaper för funktionsmodellen är `optional`
+Du använder funktioner för att ge värden information om ditt visuella objekt. Alla egenskaper för funktionsmodellen är `optional`.
 
-Rotobjekten för det visuella objektets funktioner är `dataRoles`, `dataViewMappings` och så vidare.
+Rotobjekten för ett visuellt objekts funktioner är `dataRoles`, `dataViewMappings` och så vidare.
 
 ```json
 {
@@ -34,29 +34,29 @@ Rotobjekten för det visuella objektets funktioner är `dataRoles`, `dataViewMap
 
 ```
 
-## <a name="define-the-data-fields-your-visual-expects---dataroles"></a>Definiera de datafält som förväntas av det visuella objektet – `dataRoles`
+## <a name="define-the-data-fields-that-your-visual-expects-dataroles"></a>Definiera de datafält som förväntas av det visuella objektet: dataRoles
 
-För att definiera fält som kan bindas till data använder vi `dataRoles` som tar en matris med `DataViewRole`-objekt, som definierar alla egenskaper som behövs.
+Du använder `dataRoles` för att definiera fält som kan bindas till data. `dataRoles` tar en matris med `DataViewRole`-objekt, som definierar alla obligatoriska egenskaper.
 
 ### <a name="properties"></a>Egenskaper
 
-* **name** – det interna namnet för det här datafältet (måste vara unikt)
-* **kind** – fältets typ:
-    * `Grouping` – diskreta värden som används för att gruppera måttfält
-    * `Measure` – numeriska datavärden
-    * `GroupingOrMeasure` – kan användas som antingen en gruppering eller ett mått
-* **displayName** – namnet som visas för användaren i fönstret Egenskaper
-* **description** – en kort beskrivning av fältet (valfritt)
-* **requiredTypes** – den datatyp som krävs för den här datarollen. Alla värden som inte matchar anges till null (valfritt)
-* **preferredTypes** – den önskade datatypen för den här datarollen (valfritt)
+* **name**: Det interna namnet för det här datafältet (måste vara unikt).
+* **kind**: Typen av fält:
+    * `Grouping`: Diskreta värden som används för att gruppera måttfält.
+    * `Measure`: Numeriska datavärden.
+    * `GroupingOrMeasure`: Värden som kan användas som antingen en gruppering eller ett mått.
+* **displayName**: Det namn som visas för användaren i fönstret **Egenskaper**.
+* **description**: En kort beskrivning av fältet (valfritt).
+* **requiredTypes**: Den datatyp som krävs för den här datarollen. Värden som inte matchar anges till null (valfritt).
+* **preferredTypes**: Den föredragna datatypen för den här datarollen (valfritt).
 
 ### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Giltiga datatyper i requiredTypes och preferredTypes
 
-* **bool** – ett booleskt värde
-* **integer** – ett heltalsvärde
-* **numeric** – ett numeriskt värde
-* **text** – ett textvärde
-* **geography** – geografiska data
+* **bool**: Ett booleskt värde
+* **integer**: Ett heltalsvärde
+* **numeric**: Ett numeriskt värde
+* **text**: Ett textvärde
+* **geography**: Geografiska data
 
 ### <a name="example"></a>Exempel
 
@@ -157,15 +157,15 @@ För att definiera fält som kan bindas till data använder vi `dataRoles` som t
 ]
 ```
 
-Datarollerna ovan skapar följande fält
+Föregående dataroller skulle skapa de fält som visas i följande bild:
 
-![Dataroll som visas](./media/data-role-display.png)
+![Fält för dataroller](./media/data-role-display.png)
 
-## <a name="define-how-you-want-the-data-mapped---dataviewmappings"></a>Definiera hur du vill att data ska mappas – `dataViewMappings`
+## <a name="define-how-you-want-the-data-mapped-dataviewmappings"></a>Definiera hur du vill att data ska mappas: dataViewMappings
 
-DataViewMapping beskriver hur datarollerna är relaterade till varandra och gör att du kan ange villkorskrav för dem.
+En DataViewMapping-egenskap beskriver hur datarollerna är relaterade till varandra och gör att du kan ange villkorskrav för dem.
 
-De flesta visuella objekt har en enda mappning, men du kan ange flera dataViewMappings. Varje giltig mappning genererar en DataView. 
+De flesta visuella objekt har en enda mappning, men du kan ange flera dataViewMappings. Varje giltig mappning skapar en datavy. 
 
 ```json
 "dataViewMappings": [
@@ -179,13 +179,11 @@ De flesta visuella objekt har en enda mappning, men du kan ange flera dataViewMa
 ]
 ```
 
-[Läs mer om DataViewMappings](dataview-mappings.md)
+Mer information finns i [Förstå datavymappning i visuella Power BI-objekt](dataview-mappings.md).
 
-## <a name="define-property-pane-options---objects"></a>Definiera alternativ för egenskapsfönster – `objects`
+## <a name="define-property-pane-options-objects"></a>Definiera alternativ för egenskapsfönster: objects
 
-Objekt beskriver anpassningsbara egenskaper som är associerade med det visuella objektet.
-Varje objekt kan ha flera egenskaper och varje egenskap kan associeras med en typ.
-Typer refererar till vad egenskapen ska vara. Nedan finns mer information om typer.
+Objekt beskriver anpassningsbara egenskaper som är associerade med det visuella objektet. Varje objekt kan ha flera egenskaper och varje egenskap har en typ som är associerad med den. Typer refererar till vad egenskapen ska vara. 
 
 ```json
 "objects": {
@@ -196,24 +194,22 @@ Typer refererar till vad egenskapen ska vara. Nedan finns mer information om typ
 }
 ```
 
-[Läs mer om objekt](objects-properties.md)
+Mer information finns i [Objekt och egenskaper för visuella Power BI-objekt](objects-properties.md).
 
-## <a name="handle-partial-highlighting---supportshighlight"></a>Hantera partiell markering – `supportsHighlight`
+## <a name="handle-partial-highlighting-supportshighlight"></a>Hantera partiell markering: supportsHighlight
 
-Som standard är det här värdet inställt på false, vilket innebär att dina "values" (värden) filtreras automatiskt när något på sidan väljs, vilket i sin tur uppdaterar ditt visuella objekt så att det bara visar det valda värdet. Om du vill visa fullständiga data, men bara markera de valda objekten, måste du ange `supportsHighlight` till true i capabilities.json.
+Som standard är det här värdet angett till `false`, vilket innebär att dina värden filtreras automatiskt när något på sidan väljs. Den här automatiska filtreringen uppdaterar i sin tur ditt visuella objekt så att endast det valda värdet visas. Om du vill visa fullständiga data, men endast markera de valda objekten, behöver du ange `supportsHighlight` till `true` i filen *capabilities.json*.
 
-[Läs mer om markering](highlight.md)
+Mer information finns i [Markera datapunkter i visuella Power BI-objekt](highlight.md).
 
-## <a name="handle-advanced-edit-mode---advancededitmodesupport"></a>Hantera Avancerat redigeringsläge – `advancedEditModeSupport`
+## <a name="handle-advanced-edit-mode-advancededitmodesupport"></a>Hantera avancerat redigeringsläge: advancedEditModeSupport
 
-Ett visuellt objekt kan deklarera stöd för Avancerat redigeringsläge.
-Som standard har ett visuellt objekt inte stöd för Avancerat redigeringsläge, om inget annat anges i capabilities.json.
+Ett visuellt objekt kan deklarera sitt stöd för avancerat redigeringsläge. Som standard har ett visuellt objekt inte stöd för avancerat redigeringsläge, såvida inget annat anges i filen *capabilities.json*.
 
-[Läs mer om advancedEditModeSupport](advanced-edit-mode.md)
+Mer information finns i [Avancerat redigeringsläge i visuella Power BI-objekt](advanced-edit-mode.md).
 
-## <a name="data-sorting-options-for-visual---sorting"></a>Datasorteringsalternativ för visuellt objekt – `sorting`
+## <a name="data-sorting-options-for-visual-sorting"></a>Datasorteringsalternativ för visuellt objekt: sorting
 
-Ett visuellt objekt kan definiera dess sorteringsbeteende via dess funktioner.
-Som standard har ett visuellt objekt inte stöd för ändring av sorteringsordning, om inget annat anges i capabilities.json.
+Ett visuellt objekt kan definiera dess sorteringsbeteende via dess funktioner. Som standard har ett visuellt objekt inte stöd för ändring av sin sorteringsordning, såvida inget annat anges i filen *capabilities.json*.
 
-[Läs mer om sortering](sort-options.md)
+Mer information finns i [Sorteringsalternativ för visuella Power BI-objekt](sort-options.md).

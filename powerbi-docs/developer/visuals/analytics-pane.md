@@ -1,6 +1,6 @@
 ---
-title: Analytics-fönstret
-description: Så här skapar du dynamiska referenslinjer i visuella objekt för Power BI
+title: Fönstret Analys i visuella Power BI-objekt
+description: I den här artikeln beskrivs hur du skapar dynamiska referenslinjer i visuella Power BI-objekt.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,34 +9,36 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b3b50f8dbcf40a3923e86422e24f8ed020894445
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 208c6cbbd4cd8cdabde039c53aab536ee989bc7d
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425538"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237318"
 ---
-# <a name="analytics-pane-in-power-bi-visuals"></a>Fönstret Analys i visuella objekt för Power BI
+# <a name="the-analytics-pane-in-power-bi-visuals"></a>Fönstret Analys i visuella Power BI-objekt
 
-**Fönstret Analys** [introducerades för inbyggda visuella objekt](https://docs.microsoft.com/power-bi/desktop-analytics-pane) i november 2018.
-Egenskaper för anpassade visuella objekt med API version 2.5.0 kan visas och hanteras i **fönstret Analys**.
+Fönstret **Analys** introducerades för [inbyggda visuella objekt](https://docs.microsoft.com/power-bi/desktop-analytics-pane) i november 2018.
+I den här artikeln diskuteras hur visuella Power BI-objekt med API-version 2.5.0 kan visa och hantera sina egenskaper i fönstret **Analys**.
 
 ![Fönstret Analys](./media/visualization-pane-analytics-tab.png)
 
-Hanteringen sker på liknande sätt som när du [hanterar egenskaper i formateringsfönstret](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), genom att definiera ett objekt i det visuella objektets capabilities.json-fil. 
+## <a name="manage-the-analytics-pane"></a>Hantera fönstret Analys
 
-Skillnader:
+På liknande sätt som du hanterar egenskaper i fönstret [**Format**](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options) hanterar du fönstret **Analys** genom att definiera ett objekt i det visuella objektets *capabilities.json*-fil. 
 
-1. Under definitionen för `object` lägger du till ett `objectCategory`-fält med värdet 2.
+I fönstret **Analys** ser skillnaderna ut så här:
+
+* Under objektets definition lägger du till ett **objectCategory**-fält med värdet 2.
 
     > [!NOTE]
-    > Fältet `objectCategory` är ett valfritt fält som introducerades i API 2.5.0. Det definierar vilken aspekt av det visuella objektet som objektet styr (1 = formatering, 2 = analys). ”Formatering” används för utseende och känsla, färger, axlar, etiketter med mera. ”Analys” används för prognoser, trendlinjer, referenslinjer och former med mera.
+    > Det valfria fältet `objectCategory` introducerades i API-version 2.5.0. Det definierar vilken aspekt av det visuella objektet som objektet styr (1 = formatering, 2 = analys). `Formatting` används för element såsom utseende och känsla, färger, axlar och etiketter. `Analytics` används för element såsom prognoser, trendlinjer, referenslinjer och former.
     >
-    > `objectCategory` får standardvärdet ”formatering” om det utelämnas.
+    > Om värdet inte anges använder `objectCategory` standardvärdet ”Formatting” (formatering).
 
-2. Objektet måste ha de två följande egenskaperna:
-    1. `show` av typen bool, med standardvärdet false.
-    2. `displayName` av typen text. Standardvärdet du väljer blir instansens inledande visningsnamn.
+* Objektet måste ha följande två egenskaper:
+    * `show` av typen `bool` med standardvärdet `false`.
+    * `displayName` av typen `text`. Det standardvärde som du väljer blir instansens inledande visningsnamn.
 
 ```json
 {
@@ -63,13 +65,13 @@ Skillnader:
 }
 ```
 
-Alla andra egenskaper kan definieras på samma sätt som för formateringsobjekt. Objektuppräkningen utförs exakt på samma sätt som i **formateringsfönstret**.
+Du kan definiera andra egenskaper på samma sätt som du gör för **Format**-objekt. Och du kan räkna upp objekt precis som i fönstret **Format**.
 
-***Kända begränsningar och problem***
+## <a name="known-limitations-and-issues-of-the-analytics-pane"></a>Kända begränsningar och problem med fönstret Analys
 
-  1. Det finns inget stöd för flera instanser ännu. Objekt kan inte ha en annan [väljare](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) statisk (det vill säga "selector": null) och anpassade visuella objekt kan inte ha flera användardefinierade instanser av ett kort.
-  2. Egenskaper av typen `integer` visas inte korrekt. Som en tillfällig lösning kan du använda typen `numeric` i stället.
+* Fönstret **Analys** har inget stöd för flera instanser ännu. Objekt kan inte ha en annan [väljare](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) än statisk (det vill säga "selector": null), och visuella Power BI-objekt kan inte ha flera användardefinierade instanser av ett kort.
+* Egenskaper av typen `integer` visas inte korrekt. Som en tillfällig lösning kan du använda typen `numeric` i stället.
 
 > [!NOTE]
-> Fönstret Analys ska endast användas för objekt som lägger till ny information eller som sprider nytt ljus över den information som visas. Dynamiska referenslinjer illustrerar till exempel viktiga trender.
-> Alla alternativ som styr utseendet och känslan för det visuella objektet, det vill säga formateringen, ska vara i formateringsfönstret.
+> * Använd endast fönstret **Analys** för objekt som lägger till ny information eller som ger ett nytt perspektiv på den information som visas (till exempel dynamiska referenslinjer som illustrerar viktiga trender).
+> * Alla alternativ som styr utseendet och känslan för det visuella objektet (det vill säga formateringen) ska begränsas till fönstret **Formatering**.

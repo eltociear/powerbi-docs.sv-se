@@ -1,32 +1,32 @@
 ---
-title: Visualiseringstyper i Power BI för användare
-description: Visualiseringstyper i Power BI-tjänsten
+title: Typer av visuella objekt i Power BI för konsumenter
+description: Typer av visuella objekt i Power BI-tjänsten
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: acee7e78a19986a0f83e13836ba6d77f7c35fdce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65711164"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302511"
 ---
-# <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
-Du hittar visuella objekt i rapporter, instrumentpaneler, appar, och frågor och svar. Vissa av dessa visuella typer paketeras med Power BI och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt där *rapportdesigners* kan lägga till dem i Power BI-rapporter, -instrumentpaneler och -appar. 
+# <a name="visual-types-in-power-bi"></a>Typer av visuella objekt i Power BI
+Det finns visuella objekt i rapporter, på instrumentpaneler samt i frågor och svar. Vissa av dessa typer av visuella objekt paketeras med Power BI, och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt som gör att *rapportdesigners* kan lägga till dem i Power BI-rapporter och -instrumentpaneler. 
 
-Den här artikeln är en översikt över de visuella objekt som är paketerade med Power BI.  Det här är de visuella objekt som du stöter på oftast. 
+Den här artikeln är en översikt över de visuella objekt som paketeras med Power BI-tjänsten.  Det här är de visuella objekt som du stöter på oftast. Detaljerad information om dessa visuella objekt finns i [dokumentationen om typer av visuella objekt för Power BI-*rapportdesigners*](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
 > Du kan få mer information om anpassade visuella genom att söka efter dem i avsnittet om **visuella objekt i Power BI** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). För varje visuella objekt finns en beskrivning, information om skapare och antingen skärmbilder eller en video. 
 
-## <a name="list-of-visuals-available-in-power-bi"></a>Lista över visuella objekt tillgängliga i Power BI
-Alla dessa visuella objekt finns i Power BI-appar, instrumentpaneler, rapporter och [anges i frågor och svar](end-user-q-and-a.md). Läs hur du kan interagera med visuella objekt i [interagera med visuella objekt i rapporter, instrumentpaneler och appar](end-user-visualizations.md)
+## <a name="list-of-visuals-available-in-power-bi"></a>Lista över visuella objekt som är tillgängliga i Power BI
+Alla dessa visuella objekt finns i Power BI-instrumentpaneler och -rapporter och [anges i frågor och svar](end-user-q-and-a.md). Information om hur du interagerar med visuella objekt finns i [Interagera med visuella objekt i rapporter, instrumentpaneler och appar](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Ytdiagram: Enkelt (i lager) och stapel
 ![ytdiagram](media/end-user-visual-type/basic-area-map-small.png)
@@ -59,7 +59,7 @@ En kombinationsdiagram kombinerar ett stapeldiagram och ett linjediagram. Om du 
 Kombinationsdiagram är ett bra alternativ:
 - när du har ett linjediagram och ett stapeldiagram med samma X-axel,
 - för att jämföra flera mått med olika värdeintervall
-- för att illustrera sambandet mellan två mått i ett visuellt objekt
+- för att illustrera korrelationen mellan två mått i ett visuellt objekt
 - för att kontrollera om ett mätvärde uppfyller det mål som definieras av ett annat mätvärde,
 - för att spara utrymme på arbetsytan
 
@@ -76,14 +76,6 @@ Trattdiagram hjälper dig att visualisera en process som har steg och objekt som
 Till exempel en försäljningstratt som spårar kunderna genom stadier: Lead > kvalificerat lead > potentiell kund > avtal > avslut. Trattens form ger en översikt över processens tillstånd.
 Varje steg i trattens motsvarar en procentandel av det totala antalet. I de flesta fallen är ett trattdiagram format som en tratt, där det första stadiet är störst och varje följande steg är mindre än det föregående. En päronformad tratt kan också vara användbar – den kan identifiera ett problem i processen. Men vanligtvis är det första stadiet, ”intaget”, det största.
 
-Trattdiagram är ett bra alternativ:
-- När data är sekventiella och går genom minst 4 steg.
-- När antalet ”objekt” i det första steget förväntas vara större än antalet i det sista steget.
-- Om du vill beräkna potential (intäkter, försäljning, erbjudanden osv) i etapper.
-- Om du vill beräkna och spåra konvertering och kvarhållning.
-- Om du vill avslöja flaskhalsar i en linjär process.
-- Om du vill spåra arbetsflödet i en kundvagn.
-- Om du vill spåra förloppet och resultaten a en klickbaserad reklam-/marknadsföringskampanj.
 
 ### <a name="gauge-charts"></a>Måttdiagram
 ![måttdiagram](media/end-user-visual-type/gauge-m.png)
@@ -127,7 +119,7 @@ Använd en grundläggande karta för att associera både kategorisk och kvantita
 ### <a name="maps-arcgis-maps"></a>Kartor: ArcGIS-mappar
 ![ArcGis-karta](media/end-user-visual-type/power-bi-esri-map-theme2.png)
 
-Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara presentation av punkter på en karta – helt enkelt till en helt ny nivå. De tillgängliga alternativen för grundläggande kartor, platstyper, teman, symbolformat och referensskikt skapar fantastiska informativa kartor. Kombinationen av redigerbara dataskikt (som insamlade data) på en karta med spatial analys ger en bättre förståelse av data i ditt visuella objekt.
+Kombinationen av ArcGIS-kartor och Power BI tar mappning längre än till bara presentation av punkter på en karta – helt enkelt till en helt ny nivå. De tillgängliga alternativen för grundläggande kartor, platstyper, teman, symbolformat och referensskikt skapar fantastiska informativa visuella kartobjekt. Kombinationen av auktoritativa dataskikt (till exempel folkräkningsdata) på en karta med spatial analys ger en bättre förståelse av data i det visuellt objektet.
 
 ### <a name="maps-filled-maps-choropleth"></a>Kartor: Fyllda kartor (Choropleth)
 ![ifylld karta](media/end-user-visual-type/pbi-nancy-viz-filledmap.png)
@@ -137,7 +129,7 @@ En fylld karta använder skuggning, toning eller mönster för att visa hur ett 
 ### <a name="maps-shape-maps"></a>Kartor: Formkartor
 ![formkarta](media/end-user-visual-type/power-bi-shape-map2.png)
 
-Formkartor jämför regioner på en karta med hjälp av färg. Till skillnad från kartor kan formkartor inte visa exakta geografiska platser för datapunkter på en karta. Istället är dess huvudsakliga syfte att visa relativa jämförelser mellan regioner med hjälp av olika färger.
+Formkartor jämför regioner på en karta med hjälp av färg. Formkartor kan inte visa exakta geografiska platser för datapunkter på en karta. Istället är dess huvudsakliga syfte att visa relativa jämförelser mellan regioner med hjälp av olika färger.
 
 ### <a name="matrix"></a>Matris
 ![matris](media/end-user-visual-type/matrix.png)
@@ -163,12 +155,16 @@ Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska
 
 Ett bubbeldiagram ersätter datapunkterna med bubblor, med en bubbelstorlek som motsvarar ytterligare en dimension av informationen.
 
-Punktritningsdiagram liknar bubbeldiagram och punktdiagram, med den skillnaden att det kan rita numeriska data eller kategoridata utmed X-axeln.
+
+
+Punktritningsdiagram liknar bubbeldiagram och punktdiagram, med den skillnaden att det kan rita numeriska data eller kategoridata utmed X-axeln. Det här exemplet använder nämligen kvadrater i stället för cirklar och ritar försäljning längs X-axeln.
+
+![punktritningsdiagram](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### <a name="scatter-high-density"></a>Punktdiagram med hög densitet
 ![punktdiagram med hög densitet](media/end-user-visual-type/density-scatter.png)
 
-Per definition samplas högdensitetsdata för att skapa visualiseringar förhållandevis snabbt som är dynamiska för interaktivitet. Högdensitetssampling använder en algoritm som eliminerar överlappande punkter och ser till att alla punkter i datauppsättningen representeras i det visuella objektet. Det ritar inte bara ett representativt urval av data.  
+Per definition samplas högdensitetsdata för att skapa visuella objekt förhållandevis snabbt som reagerar på interaktivitet. Högdensitetssampling använder en algoritm som eliminerar överlappande punkter och ser till att alla punkter i datauppsättningen representeras i det visuella objektet. Det ritar inte bara ett representativt urval av data.  
 
 Den säkerställer den bästa kombinationen av svarstider, återgivning och att bevara viktiga punkter i varje datauppsättningen.
 
@@ -220,14 +216,14 @@ Ett vattenfallsdiagram visar en löpande summa efter hand som värden adderas el
 Kolumnerna är färgkodade så att du snabbt kan se ökningar och minskningar. Kolumnerna med start- och slutvärde startar ofta på den horisontella axeln, medan de mellanliggande värdena är flytande kolumner. På grund av det här utseendet kallas också vattenfallsdiagram ibland för brodiagram.
 
 Vattenfallsdiagram är ett bra alternativ
-- när ändringar inträffar för måttet över tidsserier eller olika kategorier
+- när ändringar inträffar för måttet över tid eller olika kategorier
 - för att granska de viktigaste ändringarna som bidrar till det totala värdet
 - för att rita företagets årliga vinst genom att visa olika intäktskällor och komma fram till den totala vinsten (eller förlusten)
 - för att illustrera inledande och avslutande personalstyrka för ditt företag under ett år
 - för att visualisera hur mycket pengar ni tjänar och spenderar varje månad och den löpande balansen för räkenskaperna.
 
-## <a name="qna"></a>Berätta för frågor och svar vilket visuellt objekt som du använder
-När du skriver frågor med naturligt språk med Power BI frågor och svar, kan du ange visuell typ i frågan.  Till exempel:
+## <a name="qna"></a>Berätta för Frågor och svar vilket visuellt objekt som ska användas
+När du skriver frågor med naturligt språk i Frågor och svar för Power BI kan du ange typen av visuellt objekt i frågan.  Till exempel:
 
 
 ”***försäljning per tillstånd som en trädkarta***”

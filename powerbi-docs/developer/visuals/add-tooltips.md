@@ -1,6 +1,6 @@
 ---
-title: Knappbeskrivningar för visuella objekt
-description: Visuella Power BI-objekt kan visa knappbeskrivningar
+title: Knappbeskrivningar i visuella Power BI-objekt
+description: Den här artikeln beskriver hur du kan visa knappbeskrivningar i visuella Power BI-objekt.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,32 +9,32 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 286c5eef2c341ad77c351008b321992597bef292
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5ad14c632955c42607206dd09a16a8fdb3670e92
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425653"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237367"
 ---
-# <a name="power-bi-visuals-tooltips"></a>Knappbeskrivningar för visuella Power BI-objekt
+# <a name="tooltips-in-power-bi-visuals"></a>Knappbeskrivningar i visuella Power BI-objekt
 
-Nu kan visuella objekt utnyttja Power BI:s stöd för knappbeskrivningar. Power BI-knappbeskrivningar hanterar följande interaktioner:
+Visuella objekt kan nu utnyttja stödet för knappbeskrivningar i Power BI. Power BI-knappbeskrivningar hanterar följande interaktioner:
 
-Visa en knappbeskrivning.
-Dölj en knappbeskrivning.
-Flytta en knappbeskrivning.
+* Visa en knappbeskrivning.
+* Dölj en knappbeskrivning.
+* Flytta en knappbeskrivning.
 
-Knappbeskrivningar kan visa ett textelement med en rubrik, ett värde med en viss färg och opacitet vid en angiven uppsättning koordinater. Dessa data skickas till API:et. Och Power BI-värden återger knappbeskrivningarna på samma sätt som för inbyggda visuella objekt.
+Knappbeskrivningar kan visa ett textelement med en rubrik, ett värde med en viss färg och opacitet vid en angiven uppsättning koordinater. Dessa data tillhandahålls till API:et, och Power BI-värden renderar dem på samma sätt som det renderar knappbeskrivningar för inbyggda visuella objekt.
 
-Exempel på knappbeskrivning i BarChart-exemplet.
+En knappbeskrivning i ett exempelstapeldiagram visas i följande bild:
 
-![Knappbeskrivningar i BarChart-exemplet](./media/tooltips-in-samplebarchart.png)
+![Knappbeskrivningar i exempelstapeldiagram](./media/tooltips-in-samplebarchart.png)
 
-Knappbeskrivningen ovan visar en kategori och ett värde för en stapel. Den kan utökas för att visa flera värden i en enskild knappbeskrivning.
+Föregående bild med knappbeskrivningar visar en kategori och ett värde för en stapel. Du kan utöka en enskild knappbeskrivning till att visa flera värden.
 
-## <a name="handling-tooltips"></a>Hantera knappbeskrivningar
+## <a name="manage-tooltips"></a>Hantera knappbeskrivningar
 
-Knappbeskrivningar hanteras via gränssnittet ITooltipService. Det här gränssnittet används för att meddela värden att en knappbeskrivning måste visas, tas bort eller flyttas.
+Du hanterar knappbeskrivningar via gränssnittet ”ITooltipService”. Det används för att meddela värden om att en knappbeskrivning behöver visas, tas bort eller flyttas.
 
 ```typescript
     interface ITooltipService {
@@ -45,21 +45,23 @@ Knappbeskrivningar hanteras via gränssnittet ITooltipService. Det här gränssn
     }
 ```
 
-Ditt visuella objekt måste lyssna på mushändelserna i det visuella objektet och anropa delegaterna `show()`, `move()` och `hide()` efter behov med lämpligt innehåll som fylls på i `Tooltip****Options`-objekten.
-`TooltipShowOptions` och `TooltipHideOptions` definierar i sin tur vad som ska visas och deras beteenden i dessa händelser.
-Eftersom de anropen av dessa metoder innefattar användarhändelser, till exempel musrörelser eller touchhändelser, är en bra idé att skapa lyssnare för dessa händelser, som i sin tur anropar `TooltipService`-medlemmarna.
+Ditt visuella objekt behöver lyssna på mushändelserna i det visuella objektet och anropa delegaterna `show()`, `move()` och `hide()` efter behov med lämpligt innehåll som fylls på i `Tooltip****Options`-objekten.
+`TooltipShowOptions` och `TooltipHideOptions` definierar i sin tur vad som ska visas samt hur beteendet ska vara i dessa händelser.
+
+Eftersom anrop av dessa metoder innefattar användarhändelser såsom musrörelser och pekhändelser är det bra att skapa lyssnare för dessa händelser, som i sin tur anropar `TooltipService`-medlemmarna.
 Vårt exempel aggregeras i en klass som heter `TooltipServiceWrapper`.
 
-### <a name="tooltipservicewrapper-class"></a>Klassen TooltipServiceWrapper
+### <a name="the-tooltipservicewrapper-class"></a>Klassen TooltipServiceWrapper
 
-Den grundläggande idén bakom den här klassen är att den ska innehålla instansen av `TooltipService`, lyssna på D3-mushändelser över relevanta element och sedan anropa `show()` och `hide()` när det behövs.
-Klassen innehåller och hanterar alla relevanta tillstånd och all logik för dessa händelser, främst med inriktning på att samverka med den underliggande D3-koden. D3-gränssnitt och -konvertering behandlas inte i det här dokumentet.
+Den grundläggande idén bakom den här klassen är att den ska innehålla instansen av `TooltipService`, lyssna på D3-mushändelser över relevanta element och sedan anropa elementen `show()` och `hide()` när det behövs.
 
-Du hittar den fullständiga exempelkoden på [lagringsplatsen för SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
+Klassen innehåller och hanterar alla relevanta tillstånd och all logik för dessa händelser, som främst inriktar sig på att samverka med den underliggande D3-koden. D3-gränssnitt och -konvertering behandlas inte i den här artikeln.
 
-### <a name="creating-tooltipservicewrapper"></a>Skapa TooltipServiceWrapper
+Du hittar den fullständiga exempelkoden på [lagringsplatsen för SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-Nu har BarChart-konstruktorn en `tooltipServiceWrapper`-medlem som är instansierad i konstruktorn med `tooltipService`-värdinstansen.
+### <a name="create-tooltipservicewrapper"></a>Skapa TooltipServiceWrapper
+
+Nu har stapeldiagramskonstruktorn en `TooltipServiceWrapper`-medlem som instansieras i konstruktorn med `tooltipService`-värdinstansen.
 
 ```typescript
         private tooltipServiceWrapper: ITooltipServiceWrapper;
@@ -89,7 +91,7 @@ Klassen `TooltipServiceWrapper` innehåller instansen `tooltipService`, och äve
 
 Metoden `addTooltip` är klassens enda ingångspunkt för att registrera händelselyssnare.
 
-### <a name="addtooltip-method"></a>Metoden addTooltip
+### <a name="the-addtooltip-method"></a>Metoden addTooltip
 
 ```typescript
         public addTooltip<T>(
@@ -106,20 +108,19 @@ Metoden `addTooltip` är klassens enda ingångspunkt för att registrera händel
         }
 ```
 
-* **selection: d3.Selection<Element>**
-* D3-element över vilka knappbeskrivningar hanteras
-* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**
-* Delegat för att fylla i knappbeskrivningsinnehållet (vad som ska visas) efter kontext
-* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**
-* Delegat för att hämta datapunkts-ID:t – används inte i det här exemplet 
-* **reloadTooltipDataOnMouseMove?: boolean**
-* booleskt värde som anger om knappbeskrivningsdata ska uppdateras under en mouseMove-händelse – används inte i det här exemplet
+* **selection: d3.Selection<Element>**: De D3-element över vilka knappbeskrivningar hanteras.
 
-som du kan se avslutas `addTooltip` utan åtgärd om `tooltipService` är inaktiverad eller om inget val har gjorts.
+* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**: Delegaten för att fylla i knappbeskrivningsinnehållet (det som ska visas) efter kontext.
 
-### <a name="call-of-show-method-to-display-a-tooltip"></a>Anrop av show-metoden för att visa en knappbeskrivning
+* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**: Delegaten för att hämta datapunkts-ID (används inte i det här exemplet). 
 
-`addTooltip` lyssnar sedan på D3 `mouseover`-händelsen.
+* **reloadTooltipDataOnMouseMove? boolean**: Ett booleskt värde som anger huruvida knappbeskrivningsdata ska uppdateras under en MouseMove-händelse (används inte i det här exemplet).
+
+Som du ser avslutas `addTooltip` utan åtgärd om `tooltipService` är inaktiverad eller om inget faktiskt val har gjorts.
+
+### <a name="call-the-show-method-to-display-a-tooltip"></a>Anropa show-metoden för att visa en knappbeskrivning
+
+Metoden `addTooltip` lyssnar sedan på D3 `mouseover`-händelsen enligt följande kod:
 
 ```typescript
         ...
@@ -148,22 +149,21 @@ som du kan se avslutas `addTooltip` utan åtgärd om `tooltipService` är inakti
         });
 ```
 
-* **makeTooltipEventArgs**
-* Extraherar kontexten från de valda D3-elementen till tooltipEventArgs. Koordinaterna beräknas också.
-* **getTooltipInfoDelegate**
-* Skapar sedan knappbeskrivningsinnehållet från tooltipEventArgs. Det här är ett återanrop till klassen BarChart eftersom det är det visuella objektets logik. Det är det faktiska textinnehållet som visas i knappbeskrivningen.
-* **getDataPointIdentity**
-* Används inte i det här exemplet
-* **this.visualHostTooltipService.show**
-* Anropet för att visa knappbeskrivningen  
+* **makeTooltipEventArgs**: Extraherar kontexten från de valda D3-elementen till tooltipEventArgs. Den beräknar även koordinaterna.
+
+* **getTooltipInfoDelegate**: Sedan skapar den knappbeskrivningsinnehållet från tooltipEventArgs. Det här är ett återanrop till klassen BarChart eftersom det är det visuella objektets logik. Det är det faktiska textinnehåll som ska visas i knappbeskrivningen.
+
+* **getDataPointIdentity**: Används inte i det här exemplet.
+
+* **this.visualHostTooltipService.show**: Anropet för att visa knappbeskrivningen.  
 
 Ytterligare hantering finns i exemplet för `mouseout`- och `mousemove`-händelser.
 
 Mer information finns på [lagringsplatsen för SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-### <a name="populating-the-tooltip-content-by-gettooltipdata-method"></a>Fylla i knappbeskrivningsinnehåll med metoden getTooltipData
+### <a name="populate-the-tooltip-content-by-the-gettooltipdata-method"></a>Fylla i knappbeskrivningsinnehållet med hjälp av metoden getTooltipData
 
-`BarChart` lades till med medlemmen `getTooltipData` vilket extraherar kategorin, värdet och färgen för datapunkten till ett VisualTooltipDataItem[]-element.
+Klassen BarChart lades till med en `getTooltipData`-medlem, vilket extraherar `category`, `value` och `color` för datapunkten till ett VisualTooltipDataItem[]-element.
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
@@ -176,11 +176,11 @@ Mer information finns på [lagringsplatsen för SampleBarChart](https://github.c
         }
 ```
 
-I implementeringen ovan är medlemmen `header` konstant, men kan användas för mer komplexa implementeringar som kräver dynamiska värden. Du kan fylla i `VisualTooltipDataItem[]` med fler än ett element, vilket innebär att flera rader läggs till i knappbeskrivningen. Det kan vara användbart i visuella objekt, till exempel liggande stapeldiagram där knappbeskrivningen kan visa data från mer än en enskild datapunkt.
+I föregående implementering är `header`-medlemmen konstant, men du kan använda den för mer komplexa implementeringar som kräver dynamiska värden. Du kan fylla i `VisualTooltipDataItem[]` med fler än ett element, vilket innebär att flera rader läggs till i knappbeskrivningen. Det kan vara användbart i visuella objekt såsom liggande stapeldiagram där knappbeskrivningen kan visa data från fler än en enskild datapunkt.
 
-### <a name="calling-addtooltip-method"></a>Anropa metoden addTooltip
+### <a name="call-the-addtooltip-method"></a>Anropa metoden addTooltip
 
-Det sista steget är att anropa `addTooltip` när faktiska data kan ha ändrats. Det här anropet sker i metoden `BarChart.update()`. Ett anrop görs för att övervaka val av alla ”bar”-element. Endast `BarChart.getTooltipData()` skickas, som nämnts ovan.
+Det sista steget är att anropa metoden `addTooltip` när faktiska data kan ändras. Det här anropet sker i metoden `BarChart.update()`. Ett anrop görs för att övervaka valet av alla ”bar”-element. Endast `BarChart.getTooltipData()` skickas, som nämnts ovan.
 
 ```typescript
         this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),
@@ -188,9 +188,9 @@ Det sista steget är att anropa `addTooltip` när faktiska data kan ha ändrats.
             (tooltipEvent: TooltipEventArgs<number>) => null);
 ```
 
-## <a name="adding-report-page-tooltips"></a>Lägga till knappbeskrivningar för rapportsidan
+## <a name="add-report-page-tooltips"></a>Lägga till knappbeskrivningar för rapportsida
 
-Om du vill lägga till support för knappbeskrivningar för rapportsidan är de flesta ändringarna i capabilities.json.
+Om du vill lägga till stöd för knappbeskrivningar för rapportsida är de flesta ändringarna i filen *capabilities.json*.
 
 Ett exempel på ett schema:
 
@@ -208,19 +208,21 @@ Ett exempel på ett schema:
 }
 ```
 
-Definitionen av knappbeskrivningen för rapportsidan görs i formateringsfönstret.
+Du kan definiera knappbeskrivningar för rapportsida i fönstret **Format**.
 
 ![Rapportsidans knappbeskrivning](media/report-page-tooltip.png)
 
-`supportedTypes` är knappbeskrivningskonfigurationen som stöds av det visuella objektet och visas i fältkällan. `default` anger om "automatisk" knappbeskrivningsbindning via datafält stöds. canvas anger om knappbeskrivningar för rapportsidan stöds.
+* `supportedTypes`: Den knappbeskrivningskonfiguration som stöds av det visuella objektet och avspeglas i fältkällan. 
+   * `default`: Anger huruvida ”automatisk” knappbeskrivningsbindning via datafält stöds. 
+   * `canvas`: Anger huruvida knappbeskrivningar för rapportsida stöds.
 
-`roles` är valfritt. Anger, efter att ha definierats, vilka dataroller som ska bindas till det valda knappbeskrivningsalternativet i fältkällan.
+* `roles`: (Valfritt) Anger, efter att ha definierats, vilka dataroller som binds till det valda knappbeskrivningsalternativet i fältkällan.
 
-Mer information finns i användningsriktlinjerna under [Report Page Tooltips](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) (Knappbeskrivningar för rapportsidan)
+Mer information finns i [riktlinjerna för användning av knappbeskrivningar för rapportsida](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
-För att visa knappbeskrivningen för rapportsidan vid anrop av `ITooltipService.Show(options: TooltipShowOptions)` eller `ITooltipService.Move(options: TooltipMoveOptions)` använder Power BI-värden selectionId (`identities`-egenskapen för `options`-argumentet ovan). SelectionId ska representera de data (kategori, serie och så vidare) som ska hämtas för knappbeskrivningen när du hovrar över objektet.
+För visning av en knappbeskrivning för rapportsida, efter att Power BI-värden har anropat `ITooltipService.Show(options: TooltipShowOptions)` eller `ITooltipService.Move(options: TooltipMoveOptions)`, konsumeras selectionId (egenskapen `identities` för föregående `options`-argument). För att selectionId ska hämtas av knappbeskrivningen bör det representerar valda data (kategori, serie och så vidare) för det objekt som du hovrade över.
 
-Exempel på hur selectionId skickas till anrop för visning av en knappbeskrivning:
+Ett exempel på hur selectionId skickas till anrop för visning av knappbeskrivning visas i följande kod:
 
 ```typescript
     this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),

@@ -1,6 +1,6 @@
 ---
-title: Starta URL
-description: Visuella objekt för Power BI kan öppna URL på ny flik
+title: Skapa en start-URL
+description: I den här artikeln beskrivs hur du kan öppna en URL på en ny flik med hjälp av visuella Power BI-objekt.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 1a7002c3b45f341c0cbc0db683bc4f8a113e21f9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 3ef6be9383b606ce865b4bcd3ccda397e471301b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424871"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236656"
 ---
-# <a name="launch-url"></a>Starta URL
+# <a name="create-a-launch-url"></a>Skapa en start-URL
 
-Med Starta URL kan du öppna en ny flik i webbläsaren (eller fönstret) genom att delegera det faktiska arbetet till Power BI.
+När du skapar en start-URL kan du öppna en ny flik i webbläsaren (eller ett nytt fönster) genom att delegera det faktiska arbetet till Power BI.
 
 ## <a name="sample"></a>Exempel
 
@@ -36,18 +36,21 @@ this.host.launchUrl('http://some.link.net');
 
 ## <a name="restrictions"></a>Begränsningar
 
-* Använd endast absoluta sökvägar, inte relativa. `http://some.link.net/subfolder/page.html` fungerar bra, men `/page.html` öppnas inte.
-* För närvarande stöds endast protokollen `http` och `https`. Undvik `ftp`, `mailto` och så vidare.
+* Använd endast absoluta sökvägar, inte relativa sökvägar. Använd till exempel en absolut sökväg såsom `http://some.link.net/subfolder/page.html`. Den relativa sökvägen, `/page.html`, öppnas inte.
+
+* För närvarande stöds endast protokollen *HTTP* och *HTTPS*. Undvik *FTP*, *MAILTO* och så vidare.
 
 ## <a name="best-practices"></a>Metodtips
 
-1. I de flesta fall är det bäst att bara öppna en länk som ett svar på en användares uttryckliga åtgärd. Gör det enkelt för användaren att förstå att om du klickar på länken eller knappen så öppnas en ny flik. Att utlösa ett `launchUrl()`-anrop utan någon åtgärd från användaren, eller som en sidoeffekt av en annan åtgärd, kan vara förvirrande eller frustrerande för användaren.
-2. Om länken inte är avgörande för att det visuella objektet ska fungera korrekt, rekommenderar vi att du ger rapportens författare ett sätt att inaktivera och dölja länken. Det finns Power BI-användningsfall då detta är särskilt relevant, till exempel när en rapport bäddas in i ett program från tredje part eller publiceras på webben.
-3. Undvik att utlösa ett `launchUrl()`-anrop inifrån en loop,det visuella objektets `update`-funktion eller någon annan ofta återkommande kod.
+* Vanligtvis är det bäst att endast öppna en länk som ett svar på en användares uttryckliga åtgärd. Gör det enkelt för användaren att förstå att om du klickar på länken eller knappen så öppnas en ny flik. Att utlösa ett `launchUrl()`-anrop utan någon åtgärd från användaren, eller som en sidoeffekt av en annan åtgärd, kan vara förvirrande eller frustrerande för användaren.
 
-## <a name="step-by-step-example"></a>Exempel – steg för steg
+* Om länken inte är avgörande för att det visuella objektet ska fungera korrekt rekommenderar vi att du ger rapportens författare ett sätt att inaktivera och dölja länken. Den här rekommendationen är särskilt relevant för speciella Power BI-användningsfall, till exempel inbäddning av en rapport i ett program från tredje part eller publicering av den på webben.
 
-### <a name="adding-a-link-launching-element"></a>Lägga till ett element för att starta en länk
+* Undvik att utlösa ett `launchUrl()`-anrop inifrån en loop, det visuella objektets `update`-funktion eller någon annan ofta återkommande kod.
+
+## <a name="a-step-by-step-example"></a>Ett stegvist exempel
+
+### <a name="add-a-link-launching-element"></a>Lägga till ett länkstartande element
 
 Följande rader lades till i det visuella objektets `constructor`-funktion:
 
@@ -56,7 +59,7 @@ Följande rader lades till i det visuella objektets `constructor`-funktion:
     options.element.appendChild(this.helpLinkElement);
 ```
 
-Och en privat funktion som skapar och kopplar fästpunktselementet lades till:
+En privat funktion som skapar och kopplar fästpunktselementet lades till:
 
 ```typescript
 private createHelpLinkElement(): Element {
@@ -71,7 +74,7 @@ private createHelpLinkElement(): Element {
 };
 ```
 
-Slutligen definierar en post i filen visual.less formatet för länkelementet:
+Slutligen definierar en post i filen *visual.less* formatet för länkelementet:
 
 ```less
 .helpLink {
@@ -103,10 +106,11 @@ Slutligen definierar en post i filen visual.less formatet för länkelementet:
 }
 ```
 
-### <a name="adding-a-toggling-mechanism"></a>Lägga till en växlingsfunktion
+### <a name="add-a-toggling-mechanism"></a>Lägga till en växlingsmekanism
 
-Detta kräver att du lägger till ett statiskt objekt (se [självstudien för statiska objekt](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties)) så att rapportens författare kan växla synlighetsläget för länkelementet (standardinställningen är dold).
-Ett booleskt statiskt objekt, `showHelpLink`, har lagts till i `capabilities.json`-objektposten:
+Om du vill lägga till en växlingsmekanism behöver du lägga till ett statiskt objekt så att rapportens författare kan växla synligheten för länkelementet. (Standardinställningen är *hidden* (dold).) Mer information finns i [självstudien om statiska objekt](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
+
+Ett statiskt booleskt `showHelpLink`-objekt lades till i objektposten för filen *capabilities.json* enligt följande kod:
 
 ```typescript
 "objects": {
@@ -136,4 +140,4 @@ if (settings.generalView.showHelpLink) {
 }
 ```
 
-Klassen `hidden` definieras i visual.less för att styra visningen av elementet.
+Klassen *hidden* definieras i filen *visual.less* för att styra visningen av elementet.

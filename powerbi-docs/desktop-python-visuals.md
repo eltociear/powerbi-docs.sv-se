@@ -7,121 +7,175 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7390f029144e5cb37830921071ad5c2c678b2d4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61285744"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302990"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Skapa visuella Power BI-objekt med Python
 Med **Power BI Desktop**, kan du använda **Python** för att visualisera dina data.
 
-## <a name="install-python"></a>Installera Python
-**Power BI Desktop** inkluderar, distribuerar eller installerar inte **Python**-motorn. Om du vill köra Python-skript i **Power BI Desktop**, måste du separat installera **Python** på din lokala dator. Du kan hämta och installera **Python** kostnadsfritt från flera platser, inklusive den [officiella hämtningssidan för Python](https://www.python.org/) och [Anaconda](https://anaconda.org/anaconda/python/). Den aktuella versionen av Python-skriptning i Power BI Desktop stöder unicode-tecken samt blanksteg (tomma tecken) i installationssökvägen.
+## <a name="prerequisites"></a>Förutsättningar
 
-## <a name="enable-python-visuals"></a>Aktivera Python-visualiseringar
-Om du vill aktivera Python-visualiseringar, väljer du **Arkiv > Alternativ och inställningar > Alternativ** och på sidan **Alternativ** som visas, kontrollerar du att din lokala Python-installation har angetts i avsnittet **Python-skriptning** i fönstret **Alternativ** som det visas i följande bild. I följande bild, är sökvägen till den lokala installationen av Python **C:\Python27** och den sökvägen anges uttryckligen i textrutan. Kontrollera att sökvägen som visas återspeglar den lokala Python-installation som du vill att **Power BI Desktop** ska använda.
-   
-   ![](media/desktop-python-visuals/python-visuals-1.png)
+Gå igenom självstudien [Köra Python-skript i Power BI Desktop](desktop-python-scripts.md) med hjälp av följande Python-skript:
 
-När du angett din Python-installation, är du redo att börja skapa Python-visualiseringar.
+```python
+import pandas as pd 
+df = pd.DataFrame({ 
+    'Fname':['Harry','Sally','Paul','Abe','June','Mike','Tom'], 
+    'Age':[21,34,42,18,24,80,22], 
+    'Weight': [180, 130, 200, 140, 176, 142, 210], 
+    'Gender':['M','F','M','M','F','M','M'], 
+    'State':['Washington','Oregon','California','Washington','Nevada','Texas','Nevada'],
+    'Children':[4,1,2,3,0,2,0],
+    'Pets':[3,2,2,5,0,1,5] 
+}) 
+print (df) 
+```
+I artikeln [Köra Python-skript i Power BI Desktop](desktop-python-scripts.md) visas det hur du installerar Python på den lokala datorn och aktiverar det för Python-skript i **Power BI Desktop**. I den här självstudien används data från skriptet ovan för att illustrera skapandet av visuella Python-objekt.
 
 ## <a name="create-python-visuals-in-power-bi-desktop"></a>Skapa Python-visualiseringar i Power BI Desktop
-1. Välj ikonen **Python-visualisering** i fönstret **Visualisering** som visas i följande bild, för att lägga till en Python-visualisering.
+1. Välj ikonen för **visuella Python-objekt** i fönstret **Visualisering**.
    
    ![](media/desktop-python-visuals/python-visuals-2.png)
 
-   När du lägger till en Python-visualisering till en rapport gör **Power BI Desktop** följande:
-   
-   - En Python-visuell bildplatshållare visas på rapportens arbetsyta.
-   
-   - **Python-skriptredigeraren** visas längst ned i mittenfönstret.
-   
-   ![](media/desktop-python-visuals/python-visuals-3.png)
+1.  I dialogrutan för att **aktivera visuella skriptobjekt** som visas väljer du **Aktivera**. 
 
-2. Lägg nu till de fält som du vill använda i ditt Python-skript till avsnittet **Värden** under brunnen **Fält**, precis som med andra **Power BI Desktop**-visualiseringar. 
-    
-    Endast fält som har lagts till i **Fält** är tillgängliga för ditt Python-skript. Du kan lägga till nya fält eller ta bort onödiga fält från **Fält**-brunnen när du arbetar med ditt Python-skript i **Power BI Desktop Python-skriptredigeraren**. **Power BI Desktop** identifierar automatiskt vilka fält som du har lagt till eller tagit bort.
+    När du lägger till ett visuellt Python-objekt i en rapport vidtar **Power BI Desktop** följande åtgärder:
+   
+     - En Python-visuell bildplatshållare visas på rapportens arbetsyta.
+   
+     - **Python-skriptredigeraren** visas längst ned i mittenfönstret.
+   
+    ![](media/desktop-python-visuals/python-visuals-3.png)
+
+1. Dra sedan fälten **Ålder**, **Barn**, **Fnamn**, **Kön**, **Husdjur**, **Tillstånd** och **Vikt** till avsnittet **Värde**, där det står ”**Lägg till datafält här**”. 
+
+    ![](media/desktop-python-visuals/python-visuals-15.png)
+
+   Python-skriptet kan endast använda fält som lagts till i avsnittet **Värden**. Du kan lägga till eller ta bort fält från avsnittet **Värden** när du arbetar med Python-skriptet. **Power BI Desktop** identifierar automatiskt ändringar i fält.
    
    > [!NOTE]
    > Aggregeringens standardtyp för visuella Python-objekt är *Summera inte*.
    > 
    > 
    
-3. Nu kan du använda de data du har valt för att skapa en rityta. 
+1. Nu kan du använda de data du har valt för att skapa en rityta. 
 
-    När du markerar fält, skapar **Python-skriptredigeraren** stödjande Python-skriptsbindningskod baserat på dina val i det grå avsnittet överst i redigerarfönstret. När du väljer eller tar bort ytterligare fält, skapas automatiskt stödjande kod i Python-skriptet eller tas bort.
-   
-   I exemplet som visas i följande bild, har tre fält valts: hp, gear och drat. På grund av dessa val, skapade Python-skriptredigeraren följande bindningskod:
-   
-   * En dataram som heter **datauppsättning** skapades
-     * Den dataramen består av olika fält som användaren har valt
-   * Standardsammansättningstypen är *summera inte*
-   * Ungefär som med tabellvisualiseringar, grupperas fält och duplicerade rader visas bara en gång
-   
-   ![](media/desktop-python-visuals/python-visuals-4.png)
-   
-   > [!TIP]
-   > I vissa fall kanske du inte vill att automatisk gruppering ska ske, eller så kanske du vill att alla rader visas, inklusive dubbletter. I så fall kan du lägga till ett indexfält till din datauppsättning som gör att alla rader anses vara unika vilket förhindrar gruppering.
-   > 
-   > 
-   
-   Den skapade dataramen heter **datauppsättning** och du kommer åt valda kolumner via deras respektive namn. Du kan t.ex. komma åt kugghjulsfältet genom att skriva *dataset[”gear”]* i ditt Python-skript.
+    När du väljer eller tar bort fält skapas eller tas stödjande kod bort automatiskt i Python-skriptredigeraren. 
+    
+    Som ett resultat av dina val skapar Python-skriptredigeraren följande bindningskod.
 
-4. Nu när dataramen automatiskt skapats av de fält du valt, är du redo att skriva ett Python-skript som resulterar i ritning till Python-standardenheten. När skriptet har slutförts, väljer du **kör** från namnlisten för **Python-skriptredigeraren** (**Kör** är till höger i namnlisten).
+    * Redigeraren skapade dataramen **datamängd** med de fält som du lade till. 
+    * Standardtypen av sammansättning är *summera inte*.
+    * Ungefär som med visuella tabellobjekt grupperas fält, och duplicerade rader visas bara en gång.
+
+        ![](media/desktop-python-visuals/python-visuals-10.png)
    
-    När du väljer **Kör**, identifierar **Power BI Desktop** området och visar det på arbetsytan. Se till att nödvändiga paket installerats eftersom processen körs på din lokala Python-installation.
+     > [!TIP] 
+     > I vissa fall vill du kanske inte att automatisk gruppering ska ske, eller så vill du att alla rader visas, inklusive dubbletter. I så fall kan du lägga till ett indexfält i datamängden som gör att alla rader anses vara unika, vilket förhindrar gruppering.
    
-   **Power BI Desktop** ritar om visualiseringen när någon av följande händelser inträffar:
+   Du kan komma åt kolumner i datamängden med hjälp av deras respektive namn. Till exempel kan du kod datamängden ["Ålder"] i Python-skriptet för att få åtkomst till åldersfältet.
+
+1. Nu när dataramen automatiskt skapats av de fält du valt, är du redo att skriva ett Python-skript som resulterar i ritning till Python-standardenheten. När skriptet är klart väljer du **Kör** från namnlisten för **Python-skriptredigeraren**.
+
+   **Power BI Desktop** ritar om det visuella objektet om någon av följande händelser inträffar:
    
    * När du väljer **Kör** från namnlisten för **Python-skriptredigeraren**
    * När en dataändring inträffar, på grund av datauppdatering, filtrering eller markering
+   
+   När du kör ett Python-skript som resulterar i ett fel ritas inte det visuella Python-objektet, och ett felmeddelande för arbetsyta visas. Du hittar information om felet via **Se informationen** från meddelandet.
 
-    Följande bild visar ett exempel på korrelationsritningskoden och ritar korrelationer mellan attribut för olika typer av bilar.
+   För att få en större vy över visualiseringar, kan du minimera **Python-skriptredigeraren**.
 
-    ![](media/desktop-python-visuals/python-visuals-5.png)
+Vi tar och skapar några visuella objekt.
 
-5. För att få en större vy över visualiseringar, kan du minimera **Python-skriptredigeraren**. Precis som i annan visuell information i **Power BI Desktop**, kan du korsfiltrera korrelationsritningen genom att välja endast sportbilar i toroidvisualiseringen (den runda visualiseringen till höger i ovanstående exempelbild).
+## <a name="create-a-scatter-plot"></a>Skapa ett punktdiagram
 
-    ![](media/desktop-python-visuals/python-visuals-6.png)
+Vi skapar ett punktdiagram för att se om det finns en korrelation mellan ålder och vikt. 
 
-6. Du kan också modifiera Python-skriptet för att anpassa den visuella informationen och utnyttja kraften i Python genom att lägga till parametrar till ritkommandot.
+1. Under **Klistra in eller skriv in din skriptkod här** anger du följande kod:
 
-    Det ursprungliga ritkommandot var följande:
+   ```python
+   import matplotlib.pyplot as plt 
+   dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
+   plt.show() 
+   ```  
+   Python-skriptredigerarens fönster bör nu se ut så här:
 
-    plt.matshow(dataset.corr('pearson'))
+   ![](media/desktop-python-visuals/python-visuals-11.png)
 
-    Med några ändringar i Python-skriptet är nu kommandot följande:
+   Biblioteket **matplotlib** importeras för ritning och skapande av våra visuella objekt.
 
-    plt.matshow(dataset.corr('kendall'))
+1. När du väljer skriptknappen **Kör** genereras följande punktdiagram i det visuella Python-objektets platshållarbild.
 
-    Därför ritar Python-visualiseringen nu upp med Kendall Tau-korrelationskoefficienten, enligt följande bild.
+   ![](media/desktop-python-visuals/python-visuals-12.png)
 
-    ![](media/desktop-python-visuals/python-visuals-7.png)
+## <a name="create-a-line-plot-with-multiple-columns"></a>Skapa ett linjediagram med flera kolumner
 
-    När ett Python-skript körs som resulterar i ett fel, ritas inte det visuella Python-objektet och ett felmeddelande visas på arbetsytan. Om du vill ha information om felet väljer du **Mer information** från Python-visualiseringsfelet på arbetsytan.
+ Nu skapar vi ett linjediagram för varje person som visar hur många barn och husdjur de har. Ta bort eller kommentera bort koden under **Klistra in eller skriv in din skriptkod här** och ange den här Python-koden:
 
-    ![](media/desktop-python-visuals/python-visuals-8.png)
+ ```python
+ import matplotlib.pyplot as plt 
+ax = plt.gca() 
+dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
+dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
+plt.show() 
+```
+När du väljer skriptknappen **Kör** genereras följande linjediagram med flera kolumner.
 
-    > **Säkerhet för Python-skript:** Python-visualiseringar skapas från Python-skript, vilka kan innehålla kod med säkerhets- eller integritetsrisker. När användare försöker visa eller interagera med en Python-visualisering för första gången, visas en säkerhetsvarning. Aktivera endast visuell Python-information om du litar på skaparen och källan, eller när du granskat och förstått Python-skriptet.
-    > 
-    > 
+![](media/desktop-python-visuals/python-visuals-13.png) 
+
+## <a name="create-a-bar-plot"></a>Skapa ett stapeldiagram
+
+Nu skapar vi ett stapeldiagram för varje persons ålder. Ta bort eller kommentera bort koden under **Klistra in eller skriv in din skriptkod här** och ange den här Python-koden:
+
+```python
+import matplotlib.pyplot as plt 
+dataset.plot(kind='bar',x='Fname',y='Age') 
+plt.show() 
+```
+
+När du väljer skriptknappen **Kör** genereras följande stapeldiagram:
+
+![](media/desktop-python-visuals/python-visuals-14.png) 
+
+## <a name="security"></a>Säkerhet
+
+> [!IMPORTANT] 
+  > **Säkerhet för Python-skript:** Python-visualiseringar skapas från Python-skript, vilka kan innehålla kod med säkerhets- eller integritetsrisker. När användare försöker visa eller interagera med en Python-visualisering för första gången, visas en säkerhetsvarning. Aktivera endast visuell Python-information om du litar på skaparen och källan, eller när du granskat och förstått Python-skriptet. 
+  >  
+
+## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>Mer information om hur du ritar med Matprolib, Pandas och Python
+
+Den här självstudien är avsedd att hjälpa dig komma igång med att skapa visuella objekt med Python i **Power BI Desktop**. Den behandlar bara några av de många alternativ och funktioner för skapande av visuella rapporter med Python, Pandas och Matprolib-biblioteket. Det finns mycket mer information om detta – här är några länkar som du kan använda för att komma igång.
+
+* Dokumentation på webbplatsen för [Matplotlib](https://matplotlib.org/). 
+* [Matplotlib Tutorial: A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) (En grundläggande guide om hur du använder Matplotlib med Python) 
+* [Matplotlib Tutorial – Python Matplotlib Library with Examples](https://www.edureka.co/blog/python-matplotlib-tutorial/) (Matplotlib-biblioteket för Python med exempel) 
+* [Pandas API-referens](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Python visualizations in Power BI Service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) (Python-visualiseringar i Power BI-tjänsten) 
+* [Using Python Visuals in Power BI](https://www.absentdata.com/how-to-user-python-and-power-bi/) (Använda Python-visualiseringar i Power BI)
+
 
 ## <a name="known-limitations"></a>Kända begränsningar
-Visuell Python-information i **Power BI Desktop** har några begränsningar:
+
+Visuella Python-objekt i **Power BI Desktop** har några begränsningar:
 
 * Storleksbegränsningar för data – data som används för ritning av visuella Python-objekt är begränsat till 150 000 rader. Om du väljer mer än 150 000 rader, är det enbart de översta 150 000 raderna som används och ett meddelande visas på bilden.
 * Tidsbegränsning för beräkningar – om en beräkning för ett visuellt Python-objekt överstiger fem minuter så går tidsgränsen ut, vilket resulterar i ett fel.
 * Relationer – om datafält väljs från olika tabeller utan någon definierad relation mellan dem så uppstår ett fel, precis som med andra Power BI Desktop-visualiseringar.
-* Visuella Python-objekt uppdateras när data uppdateras, filtreras eller markeras. Bilden är dock inte interaktiv och kan inte vara källa för korsfiltrering.
+* Visuella Python-objekt uppdateras när data uppdateras, filtreras eller markeras. Själva bilden är dock inte interaktiv och kan inte vara källan till korsfiltrering.
 * Visuella Python-objekt svarar på markering av andra visuella objekt, men du kan inte korsfiltrera andra element genom att klicka på element i det visuella Python-objektet.
 * Endast områden som ritas till Python-standardenheten för visning visas korrekt på arbetsytan. Undvik att uttryckligen använda en annan Python-visningsenhet.
 
 ## <a name="next-steps"></a>Nästa steg
+
 Ta en titt på följande extra information om Python i Power BI.
 
 * [Köra Python-skript i Power BI Desktop](desktop-python-scripts.md)

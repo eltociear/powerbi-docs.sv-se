@@ -1,6 +1,6 @@
 ---
-title: Objekt och egenskaper
-description: Anpassningsbara egenskaper för visuella Power BI-objekt
+title: Objekt och egenskaper för visuella Power BI-objekt
+description: I den här artikeln beskrivs anpassningsbara egenskaper för visuella Power BI-objekt.
 author: MrMeison
 ms.author: rasala
 manager: rkarlin
@@ -9,20 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c22a1cfb281c9902d490e2320b85c2f6bbb63468
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: e15d80af35ff7c56879dab4380d4ae0c9fdd0e8a
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424618"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236642"
 ---
-# <a name="object-and-properties"></a>Objekt och egenskaper
+# <a name="objects-and-properties-of-power-bi-visuals"></a>Objekt och egenskaper för visuella Power BI-objekt
 
-Objekt beskriver anpassningsbara egenskaper som är associerade med det visuella objektet.
-Varje objekt kan ha flera egenskaper och varje egenskap kan associeras med en typ.
-Typer refererar till vad egenskapen ska vara. Nedan finns mer information om typer.
+Objekt beskriver anpassningsbara egenskaper som är associerade med ett visuellt objekt. Ett objekt kan ha flera egenskaper, och varje egenskap har en associerad typ som beskriver vad egenskapen ska vara. Den här artikeln innehåller information om objekt och egenskapstyper.
 
-`myCustomObject` är det interna namn som används för att referera till objektet i `dataView` och `enumerateObjectInstances`
+`myCustomObject` är det interna namn som används för att referera till objektet i `dataView` och `enumerateObjectInstances`.
 
 ```json
 "objects": {
@@ -39,7 +37,7 @@ Typer refererar till vad egenskapen ska vara. Nedan finns mer information om typ
 
 ## <a name="properties"></a>Egenskaper
 
-`properties` är en karta över egenskaper som definierats av utvecklaren.
+`properties` är en karta över egenskaper som definieras av utvecklaren.
 
 ```json
 "properties": {
@@ -66,12 +64,13 @@ Exempel:
 
 ### <a name="property-types"></a>Egenskapstyper
 
-Det finns två typer av egenskapstyper: `ValueTypeDescriptor` och `StructuralTypeDescriptor`.
+Det finns två egenskapstyper: `ValueTypeDescriptor` och `StructuralTypeDescriptor`.
 
 #### <a name="value-type-descriptor"></a>Deskriptor för värdetyp
 
-`ValueTypeDescriptor` är mestadels primitiva typer och används vanligtvis som ett statiskt objekt.
-Här följer några vanliga `ValueTypeDescriptor`
+`ValueTypeDescriptor`-typer är mestadels primitiva och används vanligtvis som ett statiskt objekt.
+
+Här följer några vanliga `ValueTypeDescriptor`-element:
 
 ```typescript
 export interface ValueTypeDescriptor {
@@ -84,8 +83,8 @@ export interface ValueTypeDescriptor {
 
 #### <a name="structural-type-descriptor"></a>Deskriptor för strukturell typ
 
-`StructuralTypeDescriptor` används främst för databundna objekt.
-Fyllning är den vanligaste `StructuralTypeDescriptor`
+`StructuralTypeDescriptor`-typer används främst för databundna objekt.
+Den vanligaste `StructuralTypeDescriptor`-typen är *fill*.
 
 ```typescript
 export interface StructuralTypeDescriptor {
@@ -95,8 +94,9 @@ export interface StructuralTypeDescriptor {
 
 ## <a name="gradient-property"></a>Toningsegenskap
 
-Toningsegenskapen är en egenskap som inte kan anges som en standardegenskap. I stället behöver du ange en regel för ersättning av färgväljaregenskapen (fyllningstyp).
-Se exemplet nedan:
+Toningsegenskapen är en egenskap som inte kan anges som en standardegenskap. I stället behöver du ange en regel för ersättning av färgväljaregenskapen (*fill*-typ).
+
+Ett exempel visas i följande kod:
 
 ```json
 "properties": {
@@ -137,13 +137,13 @@ Se exemplet nedan:
 }
 ```
 
-Var uppmärksam på egenskaperna `"fill"` och `"fillRule"`. Den första är färgväljaren, och den andra är ersättningsregeln för toning som ersätter ”fyllningsegenskapen” `visually` när regelvillkoren är uppfyllda.
+Var uppmärksam på egenskaperna *fill* och *fillRule*. Den första är färgväljaren, och den andra är ersättningsregeln för toning som ersätter *fill-egenskapen*, `visually`, när regelvillkoren är uppfyllda.
 
-Den här länken mellan fyllningsegenskapen och ersättningsregeln anges i avsnittet `"rule"`->`"output"` i egenskapen `"fillRule"`.
+Den här länken mellan *fill*-egenskapen och ersättningsregeln anges i avsnittet `"rule"`>`"output"` i egenskapen *fillRule*.
 
-`"Rule"`->`"InputRole"` anger vilken dataroll som utlöser regeln (villkoret). I det här exemplet gäller att om datarollen `"Gradient"` innehåller data så används regeln för egenskapen `"fill"`.
+Egenskapen `"Rule"`>`"InputRole"` anger vilken dataroll som utlöser regeln (villkoret). I det här exemplet gäller att om datarollen `"Gradient"` innehåller data så används regeln för egenskapen `"fill"`.
 
-Nedan visas ett exempel på den dataroll som utlöser fyllningsregeln (`the last item`).
+Ett exempel på den dataroll som utlöser fill-regeln (`the last item`) visas i följande kod:
 
 ```json
 {
@@ -170,9 +170,9 @@ Nedan visas ett exempel på den dataroll som utlöser fyllningsregeln (`the last
 }
 ```
 
-## <a name="enumerateobjectinstances-method"></a>Metoden `enumerateObjectInstances`
+## <a name="the-enumerateobjectinstances-method"></a>Metoden enumerateObjectInstances
 
-För att kunna använda objekt effektivt behöver du en funktion i ditt anpassade visuella objekt som kallas `enumerateObjectInstances`. Den här funktionen fyller i egenskapsfönstret med objekt och bestämmer även var objekten ska bindas i datavyn.  
+För att kunna använda objekt effektivt behöver du en funktion i ditt anpassade visuella objekt som heter `enumerateObjectInstances`. Den här funktionen fyller i egenskapsfönstret med objekt och bestämmer även var objekten ska bindas i dataView.  
 
 Så här ser en typisk konfiguration ut:
 
@@ -197,15 +197,15 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ### <a name="properties"></a>Egenskaper
 
-Egenskaperna i `enumerateObjectInstances` speglar de egenskaper som du definierade i dina funktioner. Se exemplet längst ned på sidan.
+Egenskaperna i `enumerateObjectInstances` speglar de egenskaper som du definierade i dina funktioner. Ett exempel finns i slutet av den här artikeln.
 
 ### <a name="objects-selector"></a>Objektväljare
 
-Väljaren i `enumerateObjectInstances` bestämmer var varje objekt ska bindas i datavyn. Det finns fyra olika alternativ.
+Väljaren i `enumerateObjectInstances` bestämmer var varje objekt binds i dataView. Det finns fyra olika alternativ.
 
 #### <a name="static"></a>statiskt
 
-Det här objektet kommer att bindas till metadata `dataviews[index].metadata.objects`
+Det här objektet binds till metadata `dataviews[index].metadata.objects` enligt det som visas här.
 
 ```typescript
 selector: null
@@ -213,7 +213,7 @@ selector: null
 
 #### <a name="columns"></a>kolumner
 
-Det här objektet kommer att bindas till kolumner med matchande `QueryName`.
+Det här objektet binds till kolumner med matchande `QueryName`.
 
 ```typescript
 selector: {
@@ -223,7 +223,7 @@ selector: {
 
 #### <a name="selector"></a>väljare
 
-Det här objektet kommer att bindas till det element som vi har skapat ett `selectionID` för. I det här exemplet antar vi att vi har skapat `selectionID` för vissa datapunkter, och vi loopar genom dem.
+Det här objektet binds till det element som du skapade ett `selectionID` för. I det här exemplet antar vi att vi har skapat `selectionID` för vissa datapunkter samt vi loopar genom dem.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -234,7 +234,7 @@ for (let dataPoint in dataPoints) {
 
 #### <a name="scope-identity"></a>Omfångsidentitet
 
-Det här objektet kommer att bindas till vissa värden i skärningspunkten för grupper. Om jag till exempel har kategorierna `["Jan", "Feb", "March", ...]` och serierna `["Small", "Medium", "Large"]` vill jag kanske ha ett objekt i skärningspunkten för värden som matchar `Feb` och `Large`. För att åstadkomma detta kan jag hämta `DataViewScopeIdentity` för båda kolumnerna, skicka dem till variabeln `identities` och använda den här syntaxen med väljaren.
+Det här objektet binds till vissa värden i skärningspunkten för grupper. Om du till exempel har kategorierna `["Jan", "Feb", "March", ...]` och serierna `["Small", "Medium", "Large"]` vill du kanske ha ett objekt i skärningspunkten för värden som matchar `Feb` och `Large`. För att åstadkomma detta kan du hämta `DataViewScopeIdentity` för båda kolumnerna, skicka dem till variabeln `identities` och använda den här syntaxen med väljaren.
 
 ```typescript
 selector: {
@@ -244,7 +244,7 @@ selector: {
 
 ##### <a name="example"></a>Exempel
 
-I det här exemplet visar vi hur en objectEnumeration skulle se ut för ett customColor-objekt med en `fill`-egenskap. Vi vill att det här objektet ska bindas statiskt till `dataViews[index].metadata.objects`
+Följande exempel visar hur objectEnumeration skulle se ut för ett customColor-objekt med en egenskap, *fill*. Vi vill att det här objektet ska bindas statiskt till `dataViews[index].metadata.objects` enligt följande:
 
 ```typescript
 objectEnumeration.push({

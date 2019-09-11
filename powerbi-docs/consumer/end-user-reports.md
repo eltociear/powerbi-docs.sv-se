@@ -1,30 +1,29 @@
 ---
-title: Visa en rapport i Power BI
-description: Rapporter i Power BI
+title: Rapporter i Power BI-tjänsten
+description: Rapporter i Power BI-tjänsten för konsumenter
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a844ff813435328df63240aa46aff3430117f6e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532169"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391372"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
 En Power BI-rapport visar en datauppsättning ur flera perspektiv med visuella objekt som representerar olika fynd och insikter från datauppsättningen.  En rapport kan ha ett enda visuellt objekt eller sidor som är fulla av dem. Beroende på din arbetsroll kan du vara en person som *designar* rapporter. Du kan också vara en som *konsumerar* eller använder rapporterna.
 
-![Skärmbild av en rapportsida.](./media/end-user-reports/power-bi-report.png)
+![Skärmbild av en rapportsida.](./media/end-user-reports/power-bi-reports.png)
 
-Den här rapporten innehåller fyra sidor (eller flikar) och du visar sidan **Sentiment**. Den här sidan har 5 olika visuella objekt och en titelsida.
+Den här rapporten innehåller sex sidor (eller flikar) och du visar sidan **Sentiment**. Den här sidan har 5 olika visuella objekt och en titelsida. I fönstret *Filter* visas ett filter som tillämpas på alla rapportsidor. Om du vill minimera fönstret Filter väljer du pilen ( **>** ).
 
 Om du är nybörjare på Power BI kan du få en bra grund genom att läsa [Grundläggande begrepp för användare av Power BI-tjänsten](end-user-basic-concepts.md). Rapporter är tillgängliga för att visa, dela och kommentera på mobila enheter. Mer information finns i [Utforska rapporter i Power BI-mobilappar](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -42,6 +41,8 @@ Du behöver inte oroa dig för att du ska förstöra rapporterna när du utforsk
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Spara dina ändringar eller återställ till standardinställningarna
 
 Men det här betyder inte att du inte kan spara dina ändringar. Det kan du, men dina ändringar påverkar bara din visning av innehållet. Om du vill återgå till den ursprungliga standardvyn för rapporten väljer du **Återställ till standard**.
+
+![Skärmbild av ikonen Återgå till standard.](./media/end-user-reports/power-bi-reset.png)
 
 ## <a name="dashboards-versus-reports"></a>Instrumentpaneler kontra rapporter
 
@@ -76,6 +77,5 @@ Eller också är du en som *använder* rapporter, som tar emot dem från andra. 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Vad är Power BI?](../power-bi-overview.md)
-
-[Grundläggande begrepp för användare av Power BI-tjänsten](end-user-basic-concepts.md)
+[Öppna och visa en rapport](end-user-report-open.md)    
+[Instrumentpaneler i Power BI-tjänsten](end-user-dashboards.md)
