@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Hyperlänkar i tabeller
               href: power-bi-hyperlinks-in-tables.md
+            - name: Visa bilder i tabeller
+              href: power-bi-images-tables.md
             - name: Anpassade formatsträngar
               href: desktop-custom-format-strings.md
             - name: Villkorsstyrd tabellformatering
@@ -569,8 +571,6 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: Skapa en QR-kod för en panel
               href: service-create-qr-code-for-tile.md
-            - name: Lägga till en bild till en instrumentpanel
-              href: service-dashboard-add-image.md
             - name: Klassificering av instrumentpanelsdata
               href: service-data-classification.md
             - name: Instrumentpanelsteman
