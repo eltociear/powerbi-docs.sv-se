@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Hyperlänkar i tabeller
               href: power-bi-hyperlinks-in-tables.md
+            - name: Anpassade formatsträngar
+              href: desktop-custom-format-strings.md
             - name: Villkorsstyrd tabellformatering
               href: desktop-conditional-table-formatting.md
             - name: Villkorsuttrycksbaserad rubrikformatering
@@ -673,8 +675,10 @@
               href: service-dataflows-on-premises-gateways.md
             - name: Länka entiteter mellan dataflöden
               href: service-dataflows-linked-entities.md
-            - name: Med inkrementell uppdatering med dataflöden
+            - name: Använda inkrementell uppdatering med dataflöden
               href: service-dataflows-incremental-refresh.md
+            - name: Metodtips för dataflöden
+              href: service-dataflows-best-practices.md
             - name: Utvecklarresurser för dataflöden
               href: service-dataflows-developer-resources.md
             - name: Ansluta till dataflöden i Power BI Desktop
@@ -715,6 +719,8 @@
               href: service-template-apps-install-distribute.md
             - name: 'Uppdatera, ta bort och extrahera en Power BI-mallapp'
               href: service-template-update-delete-extract.md
+            - name: Exempel på mallappar
+              href: service-template-apps-samples.md
         - name: Felsök
           items:
             - name: Har du glömt lösenordet till Power BI?
