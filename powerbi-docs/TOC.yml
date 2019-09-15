@@ -677,8 +677,6 @@
               href: service-dataflows-linked-entities.md
             - name: Använda inkrementell uppdatering med dataflöden
               href: service-dataflows-incremental-refresh.md
-            - name: Metodtips för dataflöden
-              href: service-dataflows-best-practices.md
             - name: Utvecklarresurser för dataflöden
               href: service-dataflows-developer-resources.md
             - name: Ansluta till dataflöden i Power BI Desktop
@@ -1432,6 +1430,8 @@
           href: service-admin-power-bi-security.md
 - name: Vägledning
   items:
+    - name: Metodtips för dataflöden
+      href: service-dataflows-best-practices.md
     - name: Vad är ett star-schema?
       href: guidance/star-schema.md
     - name: Minska datamodellstorlek
