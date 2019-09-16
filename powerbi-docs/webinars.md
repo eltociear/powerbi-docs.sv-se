@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 5a5dca5c3fb4b3b375d3fbb603703e8aaaf91c6c
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: e02d50a7990eb90405d6a864fe294fee8e946e10
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023443"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936275"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -22,9 +22,7 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-**Använda Power BI med Dynamics 365 for Finance and Operations**
-<br>av Kevin Horlock
-<br>[Registrera dig om du vill titta den 11 september](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -51,6 +49,10 @@ Kom igång med dessa populära webbseminarier på begäran
 **Stärk dina kunskaper i datamodellering med Power BI**
 <br>av Kasper de Jonge
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
+**Använda Power BI med Dynamics 365 for Finance and Operations**
+<br>av Kevin Horlock
+<br>[Registrera dig och titta nu](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
 
 **Microsoft drivs av Power BI – ekonomiplanering och -analys på ett enkelt sätt**
 <br>av Cory Hrncirik och Miguel Martinez

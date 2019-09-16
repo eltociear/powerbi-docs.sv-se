@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
-ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
+ms.openlocfilehash: 96bf1a8d95f26014be09a32c1e83fb2af90f9fc0
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468127"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70986992"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
@@ -27,7 +27,7 @@ Med DirectQuery skickas frågor tillbaka till din Azure SQL Database medan du ut
 **OBS:**
 
 * Ange det fullständigt kvalificerade servernamnet vid anslutning (se nedan för mer information).
-* Se till att brandväggsreglerna för databasen är konfigurerade för ”[Tillåt åtkomst till Azure-tjänster](https://msdn.microsoft.com/library/azure/ee621782.aspx)”.
+* Se till att brandväggsreglerna för databasen är konfigurerade för ”[Tillåt åtkomst till Azure-tjänster](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)”.
 * Varje åtgärd, som att markera en kolumn eller lägga till ett filter, skickar en fråga tillbaka till databasen.
 * Panelerna uppdateras varje timme (uppdateringen behöver inte schemaläggas). Du kan justera hur ofta uppdateringen ska göras i Avancerade inställningar när du ansluter.
 * Frågor och svar-rutan är inte tillgänglig för DirectQuery-datauppsättningar.

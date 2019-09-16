@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a98ccf3477a6e8e996efb0b8cb1ccf2c6728c594
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513110"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70840959"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hämta data från Excel-arbetsboksfiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -77,8 +77,6 @@ I Excel 2016 kan du också använda Publicera > Exportera. Det är ganska långt
 När du väljer **Anslut** visas arbetsboken i Power BI precis som den skulle ha gjort i Excel Online. Men till skillnad från i Excel Online har du några bra funktioner som hjälper dig fästa element från kalkylbladen direkt på instrumentpanelerna.
 
 Du kan inte redigera din arbetsbok i Power BI. Men om du behöver göra några ändringar kan du välja Redigera och sedan välja att redigera din arbetsbok i Excel Online eller öppna den i Excel på datorn. Alla ändringar du gör sparas i arbetsboken på OneDrive.
-
-När du väljer det här sättet skapar Power BI en motsvarande datauppsättning för den anslutna arbetsboken. Du kan använda den här datauppsättningen till att skapa en Power BI-rapport om det behövs. Din arbetsbok visas även i Rapporter i navigeringsfönstret för Power BI-arbetsytan. Anslutna arbetsböcker har en särskild Excel-ikon.
 
 Välj det här alternativet om du enbart har data i kalkylbladen eller om du har intervall, pivottabeller och diagram som du vill fästa på instrumentpaneler.
 
