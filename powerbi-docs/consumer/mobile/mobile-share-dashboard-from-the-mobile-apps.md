@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
 ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61274658"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel eller rapport från Power BI-mobilapparna
@@ -39,7 +39,7 @@ Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport 
    
    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delas med mig** i deras Power BI-konto.
    
-   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Delad med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
@@ -69,7 +69,7 @@ Du kan bara avsluta delningen om du är ägaren.
    
    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
    
-   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Delad med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
@@ -140,7 +140,7 @@ Du kan bara avsluta delningen om du är ägaren.
    
    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
    
-   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Delad med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 

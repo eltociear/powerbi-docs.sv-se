@@ -13,14 +13,14 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4a4cbc152784d7536a5aa179769cf753645c932b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61048774"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Visa instrumentpaneler och rapporter som har delats med mig
-## <a name="shared-with-me"></a>Delat med mig
+## <a name="shared-with-me"></a>Delad med mig
 
 När en kollega delar innehåll med dig visas det, via knappen **dela**, i behållaren**delat med mig**. Instrumentpanelen är endast tillgänglig från **delat med mig** och inte från en arbetsyta eller från **appar**.
 
