@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8af5b1cf243d599ab68e9c2db1a3c6003f82c29f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6366dbe4d7c58b49b4085d80aa690fd6c64fee59
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273647"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70847741"
 ---
 Välkommen till avsnittet i den **interaktiva utbildningen** om Power BI som har utformats för att introducera **DAX**.
 
@@ -24,9 +24,9 @@ DAX är ett *funktionellt språk*, vilket innebär att den fullständiga koden f
 
 I DAX kan funktioner innehålla kapslade funktioner, villkorssatser och värdereferenser. Körning i DAX börjar med den innersta funktionen eller parametern och arbetar sig utåt. I Power BI skrivs DAX formler på en enda rad vilket innebär att dina funktioner måste vara korrekt formaterade.
 
-DAX är avsett att fungera med tabeller, så att den har bara två primära datatyper: **Numeriska** och **andra**. **Numeriska** kan innehålla *heltal*, *decimaler* och *valuta*. **Övriga** kan innehålla *strängar* och *binära objekt*. Det innebär att om du bygger DAX-funktionen för en typ av tal kan du vara säker på att den kommer att fungera med andra numeriska data.
+DAX är avsett att fungera med tabeller, så den har endast två primära datatyper: **numeriska** och **övrigt**. **Numeriska** kan innehålla *heltal*, *decimaler* och *valuta*. **Övriga** kan innehålla *strängar* och *binära objekt*. Det innebär att om du bygger DAX-funktionen för en typ av tal kan du vara säker på att den kommer att fungera med andra numeriska data.
 
-DAX använder operatöröverlagring, vilket innebär att du kan blanda datatyper i beräkningarna och resultatet ändras beroende på vilken typ av data som används i indatan. Konverteringen sker automatiskt. Det innebär att du behöver inte ha någon av datatyperna för kolumnerna som du arbetar med i Power BI, men det innebär också att konverteringen ibland kan inträffa på oväntade sätt. Det är bra att förstå de data som du använder för att säkerställa att dina operatörer fungerar som förväntat.
+DAX använder operatöröverlagring, vilket innebär att du kan blanda datatyper i beräkningarna och resultatet ändras beroende på vilken typ av data som används i indatan. Konverteringen sker automatiskt, vilket innebär att du behöver inte ha någon av datatyperna för kolumnerna som du arbetar med i Power BI, men det innebär också att konverteringen ibland kan inträffa på oväntade sätt. Det är bra att förstå de data som du använder för att säkerställa att dina operatörer fungerar som förväntat.
 
 Det finns en datatyp i synnerhet som du kommer troligen att arbeta med mycket i Power BI: **DateTime**. **DateTime** lagras som ett flyttalsvärde med både heltal- och decimaldelar. DateTime kan användas korrekt för beräkningar för tidsperioder som inträffar efter 1 mars 1900.
 

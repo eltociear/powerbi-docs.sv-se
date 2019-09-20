@@ -1,8 +1,8 @@
 ---
 title: Bästa praxis för Power BI-prestanda
 description: Den här artikeln innehåller anvisningar för att skapa snabba och tillförlitliga rapporter i Power BI
-author: MarkMcGeeAtAquent
-ms.author: kfile
+author: Bhavik-MSFT
+ms.author: bhmerc
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: bddd653b5ac8b49a38a69ae79baf2f96824444ed
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665341"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841498"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda
 
 Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga rapporter i Power BI.  
+
+## <a name="choose-an-appropriate-storage-mode-import-directquery"></a>Välj ett lämpligt lagringsläge: Import, DirectQuery
+
+I de flesta fall är läget Import det bästa valet eftersom det ger högsta möjliga hastighet genom att använda lokalt cachelagrade minnesdata som komprimeras med hjälp av kolumnlagring. I Import-läget kan fullständig DAX-kapacitet användas. Överväg DirectQuery (och sammansatta modeller) när källdatavolymen är för stor för att få plats i Power BI-kapaciteten. DirectQuery är också användbart när du behöver hämta senaste data från källan varje gång som en rapport läses in. Om du inte har dessa krav och användarna bara behöver se data som uppdateras några gånger om dagen eller mindre (t. ex. från ett företagsinformationslager) rekommenderar starkt läget Import. I DirectQuery-läge kan användare försöka uppdatera rapporten utan att du behöver hämta exakt samma data från källan.      
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Använd filter för att begränsa rapportens visuella information om du bara vill visa det som krävs 
 
@@ -57,7 +61,7 @@ Testa vad användarna kommer att göra i Power BI Desktop när du distribuerar P
 ## <a name="directquery-best-practices"></a>Metodtips för DirectQuery
 
 I följande avsnitt beskrivs allmänna metodtips för att ansluta via DirectQuery.
-  
+
 ### <a name="db-design-guidance"></a>Riktlinjer för DB-design
 
 - Push-överför beräknade kolumner och mått till källan om det går. Ju närmare källan, desto större sannolikhet att få bra prestanda.
@@ -72,7 +76,7 @@ I följande avsnitt beskrivs allmänna metodtips för att ansluta via DirectQuer
 - Undvik relationer på beräknade kolumner och kolumner med unik identifierare.
 - Försök att ange ”Anta referensintegritet” för relationer – i många fall kan den här inställningen förbättra frågeprestanda avsevärt.  
 
-### <a name="general"></a>Allmän
+### <a name="general"></a>Allmänt
 
 - Använd filter först.
 - Överväg att stänga av interaktionen mellan olika visuella objekt, vilket minskar frågebelastningen när användare korsmarkerar.

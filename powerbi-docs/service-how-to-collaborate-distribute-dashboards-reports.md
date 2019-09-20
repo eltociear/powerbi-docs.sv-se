@@ -8,14 +8,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 00574228fbfa8954b8cfb9cb026a9230eb1bd73e
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816537"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841730"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Olika sätt att dela ditt arbete i Power BI
 
@@ -31,7 +31,7 @@ Du har skapat instrumentpaneler och rapporter. Du kanske även använder dem fö
 
 Oavsett vilket alternativ du väljer för att dela ditt innehåll behöver du en [Power BI Pro-licens](service-features-license-type.md) eller så måste innehållet finnas i en [Premium-kapacitet](service-premium-what-is.md). Licenskraven kan variera för de kollegor som visar ditt innehåll, beroende på vilket alternativ du väljer. Det följande avsnittet beskriver detta i större detalj. 
 
-![Appar i Power BI-tjänsten](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
+![Appar i Power BI-tjänsten](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
 *Appar i Power BI-tjänsten*
 
@@ -41,7 +41,7 @@ När team arbetar tillsammans behöver de få åtkomst till samma dokument så a
 
 Arbetsytor ger roller som bestämmer vilka behörigheter dina medarbetare har. Du kan använda de här rollerna till att bestämma vem som ska kunna hantera hela arbetsytan, redigera innehållet på den och distribuera innehållet till andra.
 
-![Arbetsytor](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
+![Arbetsytor](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
 
 Du kanske ser det som naturligt att lägga innehåll i Min arbetsyta och dela det därifrån. Arbetsytor är dock bättre för samarbete än Min arbetsyta eftersom innehållet kan ägas av flera. Du och hela teamet kan enkelt göra uppdateringar eller ge andra användare åtkomst. Min arbetsyta är bäst lämpat för enskilda användare som lägger till personligt innehåll eller innehåll som används en enstaka gång.
 
@@ -57,9 +57,9 @@ Power BI har en ny arbetsyta. Läs mer om ändringarna i [Skapa de nya arbetsyto
 
 Anta att du vill distribuera din instrumentpanel till en bred publik i organisationen. Du och dina medarbetare har skapat en *arbetsyta* och skapat och förfinat instrumentpaneler, rapporter och datauppsättningar på arbetsytan. Nu väljer du de instrumentpaneler och rapporter du vill ha och publicerar dem som en app – antingen till en grupp eller till hela organisationen.
 
-![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
+![Ikonen Publicera app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
-Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://powerbi.com](https://powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt på din medarbetares Power BI-konton. Läs mer om att [publicera dina appar](service-create-distribute-apps.md).
+Apparna är lätta att hitta och installera på Power BI-tjänsten ([https://app.powerbi.com](https://app.powerbi.com)). Du kan skicka en direktlänk till appen till dina företagsanvändare eller de kan söka efter den i AppSource. Om din Power BI-administratör ger dig behörighet kan du installera en app automatiskt på din medarbetares Power BI-konton. Läs mer om att [publicera dina appar](service-create-distribute-apps.md).
 
 När de har installerat en app kan de se den i webbläsaren eller på mobilenheten.
 
@@ -71,13 +71,15 @@ Du kan även publicera appar till dem som är utanför din organisation. De kan 
 
 Vissa personer är helt enkelt bättre på att skapa väl utformade datamodeller av hög kvalitet i sina rapporter. Du kanske är en sådan person. Hela organisationen kan ha nytta av att använda samma väl utformade datamodeller. Det är här som *delade datamängder* kommer in. När du skapar en rapport med en datamodell som alla bör kunna använda kan du spara rapporten i Power BI-tjänsten och ge rätt personer behörighet att använda den. Sedan kan de skapa egna rapporter baserade på din datamängd. På så sätt baserar alla sina rapporter på samma data och ser samma ”version av sanningen”.
 
+![Använd en delad datamängd](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
+
 Läs mer om att [skapa och använda delade datamängder](service-datasets-across-workspaces.md).
 
 ## <a name="share-dashboards-and-reports"></a>Dela instrumentpaneler och rapporter
 
 Anta att du har skapat en instrumentpanel och en rapport på din egen Min arbetsyta eller på en arbetsyta och du vill att några andra personer ska ha åtkomst till den. Ett sätt att komma åt den är att *dela* den. 
 
-![Delningsikon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
+![Dela en rapport](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
 Du behöver en Power BI Pro-licens för att dela innehåll, liksom de som du delar det med. Annars måste innehållet vara på en arbetsyta i en [Premium-kapacitet](service-premium-what-is.md). När du delar en instrumentpanel eller rapport kan mottagare som du delar med se den och interagera med den, men inte redigera den. De ser samma data som visas på instrumentpanelen och i rapporterna, såvida inte säkerhet på radnivå (RLS) tillämpas på den underliggande datauppsättningen. De medarbetare som du delar den med kan dela den med sina medarbetare, om du tillåter dem att göra så. 
 

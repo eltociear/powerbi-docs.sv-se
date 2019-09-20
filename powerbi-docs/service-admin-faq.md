@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490312"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877803"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrera Power BI – Vanliga frågor och svar
 
@@ -119,9 +119,9 @@ Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Hur förhindrar jag att mina befintliga användare börjar använda Power BI?
 
-Azure AD-inställningen som styr detta är **AllowAdHocSubscriptions**. De flesta klienter har den inställd på sant, vilket innebär att den är aktiverad. Om du har köpt Power BI via en partner kan den vara inställd på false, vilket innebär att den är inaktiverad.
+Azure AD-inställningen som styr detta är **AllowAdHocSubscriptions**. De flesta klienter har den inställd på *sant*, vilket innebär att den är aktiverad. Om du har köpt Power BI via en partner kan den vara inställd på *falskt*, vilket innebär att den är inaktiverad.
 
-Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer. ([Läs mer om PowerShell][1].)
+Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer ([Läs mer om PowerShell][1].)
 
 1. Logga in på Azure Active Directory med dina Office 365-autentiseringsuppgifter. Den första raden i följande PowerShell-skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
 
@@ -145,7 +145,7 @@ Använd följande PowerShell-skript för att inaktivera ad hoc-prenumerationer. 
     ```
 
 > [!NOTE]
-> Använd flaggan **AllowAdHocSubscriptions** om du vill styra flera användarfunktioner i organisationen, inklusive möjligheten för användare att registrera sig för Azure Rights Management-tjänsten. Om du ändrar flaggan påverkas alla dessa funktioner.
+> Använd flaggan **AllowAdHocSubscriptions** om du vill styra flera användarfunktioner i organisationen, inklusive möjligheten för användare att registrera sig för Azure Rights Management-tjänsten. Om du ändrar flaggan påverkas alla dessa funktioner. Med inställningen *falskt* kan användarna fortfarande registrera sig för en utvärderingsversion av Pro.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Hur låter jag mina befintliga användare registrera dig för Power BI?
 

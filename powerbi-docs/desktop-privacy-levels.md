@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 05/08/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c522a9e6c40f4164ee82675c40c3110b174d017
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d3405a434c8b3add7bb39f20d5aa65e066e4b73d
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513950"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841322"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Sekretessnivåer i Power BI Desktop
 I **Power BI Desktop**, anger sekretessnivåer en isoleringsnivå som definierar hur en datakälla isoleras från andra datakällor. Även om en begränsande isoleringsnivå blockerar information från att utbytas mellan datakällor, kan det minska funktionaliteten och påverka prestandan.
@@ -52,7 +52,7 @@ Om du vill konfigurera en sekretessnivå för datakällan, väljer du datakälla
 | **Kombinera data i enlighet med dina sekretessnivåinställningar för varje källa** (på och standardinställningen) |Sekretessnivåinställningarna används för att fastställa nivån av isolering mellan datakällor när du kombinerar data. |
 | **Ignorera sekretessnivåerna och förbättra eventuellt prestandan** (inaktiverat) |Sekretessnivåer beaktas inte när du kombinerar data, men prestandan och funktionaliteten för data kan förbättras. |
 
-> **Säkerhetsmeddelande:** Om du aktiverar **Sekretessnivåer** genom att välja **Ignorera sekretessnivåerna och förbättra eventuellt prestandan** i dialogrutan **Sekretessnivåer** kan det medföra att potentiellt känsliga eller konfidentiella data exponeras för obehöriga. Aktivera inte **Sekretessnivåer** om du inte är säker på att datakällan inte innehåller känsliga eller konfidentiella data.
+> **Säkerhetsmeddelande:** Om du väljer **Ignorera sekretessnivåerna och förbättra eventuellt prestandan** i dialogrutan **Sekretessnivåer** kan det medföra att potentiellt känsliga eller konfidentiella data exponeras för obehöriga. Stäng inte *av* den här inställningen om du inte är säker på att datakällan inte innehåller känsliga eller konfidentiella data.
 > 
 > 
 

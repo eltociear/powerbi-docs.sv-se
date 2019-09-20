@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654734"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841303"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Lagringsläge i Power BI Desktop
 
@@ -42,6 +42,9 @@ Inställningen för lagringsläget i Power BI Desktop är en av tre relaterade f
 * **Många-till-många-relationer**: Med *sammansatta modeller* så kan du etablera *många-till-många-relationer* mellan tabeller. *Många-till-många-relationer* tar bort krav för unika värden i tabeller. Det tar också bort tidigare lösningar, till exempel introduktion till nya tabeller endast för att skapa relationer. Mer information finns i [Många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Lagringsläge**: Nu kan du ange vilka visuella objekt som kräver en fråga till serverdelens datakällor. Visuella objekt som inte kräver en fråga importeras även om de är baserade på DirectQuery. Den här funktionen hjälper till att förbättra prestanda och minskar belastningen på serversidan. Tidigare initierade även enkla visuella objekt som utsnitt frågor som skickades till serverdelskällor. Lagringsläget beskrivs ytterligare i den här artikeln.
+
+> [!NOTE]
+> Du kan se det aktuella lagringsläget genom att välja vyn **Modell**, välja önskad tabell och sedan gå till området **Avancerat** i fönstret **Egenskaper** och visa värdet för **Lagringsläge**.
 
 ## <a name="use-the-storage-mode-property"></a>Använd egenskapen för lagringsläge
 

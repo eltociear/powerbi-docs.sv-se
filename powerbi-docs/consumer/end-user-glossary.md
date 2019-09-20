@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751002"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903663"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -60,14 +60,19 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **calculation (beräkning)** En matematisk bestämning av storleken eller antalet av något.
 
+**card** (visualiseringstyp) En Power BI-[visualiseringstyp](end-user-visual-type.md).
+
+**card** (Power BI Home) Power BI Home visar rektangulära och fyrkantiga bilder som representerar instrumentpaneler, rapporter, appar med mera. Dessa bilder kallas *kort*.
+
 **certified custom visual (certifierad anpassad visualisering)** Ett anpassat visuellt Power BI-objekt som har uppfyllt krav och klarat strikt säkerhetstestning.
 
 **classification (klassificering)** Kallas även dataklassificering. Det här alternativet kan aktiveras av Power BI-administratörer för att uppmärksamma säkerhetsnivån som krävs för en instrumentpanel. Klassificeringstyperna kan anpassas av en organisation.
 
 **connect live (anslut live)** En metod för att ansluta till SQL Server Analysis Services-datamodeller. Kallas även för en liveanslutning.
 
-**content (innehåll)**
+**container** Områdena i navigeringsfältet är *behållare*. I navigeringsfältet hittar du behållare för: Favoriter, senaste, appar, delade med mig och hem. 
 
+**content** Innehållet för Power BI-tjänsten är vanligtvis instrumentpaneler, rapporter och appar. Den kan även innehålla arbetsböcker och datauppsättningar.
 
 **content list (innehållslista)** Innehållsindexet för en app.
 
@@ -109,7 +114,8 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **Editing View (Redigeringsvy)** Läget där *rapportdesigners* kan utforska, designa, skapa och dela en rapport.
 
-**ellipsis (ellips)** ...
+**ellipsis (ellips)** ...    
+Om du väljer en ellips visas ytterligare menyalternativ.
 
 **embed code (bädda in kod)** En vanlig standard på Internet. I Power BI kan kunden generera en inbäddningskod och kopiera den för att placera innehåll, till exempel en rapportvisualisering, på en webbplats eller i en blogg.
 
@@ -158,7 +164,8 @@ Power BI-miljö (klientorganisation) kan användas i dokumentation om det hjälp
 
 ## <a name="l"></a>L
 
-**left navigation (left nav) (vänster navigeringsfält, vänster navigering)** Kontrollerna längs vänsterkanten i Power BI-tjänsten.
+**left navigation (vänster navigeringsfält**) Detta har ersatts **av navigeringsfältet** men kan fortfarande visas i viss dokumentation.    
+Kontrollerna längs vänsterkanten i Power BI-tjänsten.
 
 Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden eller vid begränsat utrymme: vänster navigering
 
@@ -176,7 +183,11 @@ Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden elle
 
 **native (inbyggt)** Inbyggt i produkten. Till exempel levereras Power BI med en uppsättning *inbyggda* visualiseringstyper. Men du kan också importera andra typer, till exempel anpassade visuella objekt.
 
-**navigation pane (navigeringsfönster)** Se **vänster navigeringsfält**
+**navigation bar (navigeringsfält)** eller **nav bar** Kontrollerna längs vänsterkanten i Power BI-tjänsten.
+
+Första förekomsten: navigeringsfält Efterföljande omnämnanden eller vid begränsat utrymme: nav bar
+
+**navigation pane (navigeringsfönster)** Se **navigeringsfält**
 
 **notification (meddelande)** Meddelandena som skickas av och till Power BI-meddelandecentret.  
 

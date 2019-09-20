@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 09/04/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ef7e4f556832f1323043a80cf219678a16511c9e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67533016"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841136"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
 
@@ -24,95 +24,84 @@ I den här artikeln tittar vi närmare på fönstret **Filter** för rapporter i
 
 Det finns många olika sätt att filtrera data i Power BI. Mer information om filter finns i [Filter och markeringar i Power BI-rapporter](../power-bi-reports-filters-and-highlighting.md).
 
-![Skärmbild av en rapport i en webbläsare med en pil som pekar på alternativet Filter.](media/end-user-report-filter/power-bi-browser-new2.png)
+![Skärmbild av en rapport i en webbläsare med en pil som pekar på alternativet Filter.](media/end-user-report-filter/power-bi-report.png)
 
 ## <a name="working-with-the-report-filters-pane"></a>Arbeta med panelen för rapportfilter
 
 Glöm inte att titta i fönstret **Filter** när en kollega delar en rapport med dig. Ibland är fönstret dolt på den högra kanten av rapporten. Välj fönstret för att visa det.
 
-![Skärmbild av rapporten med fönstret Filter expanderat.](media/end-user-report-filter/power-bi-filter-pane.png)
+![Skärmbild av rapporten med fönstret Filter expanderat.](media/end-user-report-filter/power-bi-expand-filter-pane.png)
 
-Fönstret *Filter* innehåller de filter som **rapportdesignern** har lagt till i rapporten. Som *användare* kan du interagera med befintliga filter och spara dina ändringar, men du kan inte lägga till nya filter i rapporten. På skärmbilden ovan har designern lagt till två sidnivåfilter: **Segment** och **År**. Du kan interagera och ändra filtren, men du kan inte lägga till ett tredje sidnivåfilter.
+Fönstret *Filter* innehåller de filter som **rapportdesignern** har lagt till i rapporten. Som *användare* kan du interagera med befintliga filter och spara dina ändringar, men du kan inte lägga till nya filter i rapporten. På skärmbilden ovan har designern lagt till tre sidnivåfilter: **Segmentet är alla**, **året är 2014** och **regionen är central**. Du kan interagera och ändra filtren, men du kan inte lägga till ett fjärde sidnivåfilter.
 
 I Power BI-tjänsten sparas de ändringar du gör för fönstret **Filter** i rapporten. Tjänsten överför dessa ändringar till den mobila versionen av rapporten.
 
-Om du vill återställa fönstret **Filter** till designerns standardinställningar väljer du ![Skärmbild av alternativet Återställ till standard](media/end-user-report-filter/power-bi-reset.png). på den översta menyraden.
+Om du vill återställa standardvärdena (som designern angett) i fönstret **Filter** väljer du **Återställ till standard** på den översta menyraden.
+
+![Skärmbild av ikonen Återgå till standard.](media/end-user-report-filter/power-bi-reset-icon.png) 
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Visa alla filter för en rapportsida
 
-I fönstret **Filter** visas alla filter som designern lägger till i rapporten. Fönstret **Filter** är också det område där du kan visa information om filter och interagera med dem. Du kan spara ändringar du gör eller använda alternativet **Återställ till standard** för att återställa de ursprungliga inställningarna i filtret.
+I fönstret **Filter** visas alla filter som designern lägger till i rapporten. Fönstret **Filter** är också det område där du kan visa information om filter och interagera med dem. Spara ändringar du gör eller använda alternativet **Återställ till standard** för att återställa de ursprungliga inställningarna i filtret.
 
-Om du vill spara ändringar kan du även skapa ett personligt bokmärke.  Mer information finns i [Vad är bokmärken?](end-user-bookmarks.md).
+Om du vill spara ändringar kan du även skapa ett personligt bokmärke. Mer information finns i [Vad är bokmärken?](end-user-bookmarks.md).
 
-Fönstret **Filter** visar och hanterar flera typer av rapportfilter. De kan tillämpas på ett visuellt objekt, för en rapportsida eller för hela rapporten.
+Fönstret **Filter** visar och hanterar flera typer av rapportfilter: rapport, rapportsida och visuellt objekt.
 
-I det här exemplet har vi valt ett visuellt objekt som innehåller två filter. Rapportsidan har också filter som visas under rubriken **Filter på den här sidan**. Dessutom har hela rapporten ett filter för **Datum**.
+I det här exemplet har vi valt ett visuellt objekt som har tre filter. Rapportsidan har också filter som visas under rubriken **Filter på den här sidan**. Dessutom har hela rapporten ett filter för **Datum**.
 
-![Skärmbild av en rapport med en visualisering och dess relaterade filter markerade.](media/end-user-report-filter/power-bi-all-filters2.png)
+![Skärmbild av en rapport med en visualisering och dess relaterade filter markerade.](media/end-user-report-filter/power-bi-filters-pane.png)
 
-Intill vissa filter finns texten **(Alla)** . **(Alla)**  innebär att alla värden ingår i filtret. På skärmbilden ovan visar **Segment(Alla)** att rapportsidan innehåller data om alla produktsegmenten. Om du väljer sidnivåfiltret **för regionen Västra** kommer rapportsidan bara innehålla data för regionen Västra.
+Intill vissa filter finns texten **(Alla)** . **(Alla)**  innebär att alla värden ingår i filtret. På skärmbilden ovan visar **Segment(Alla)** att rapportsidan innehåller data om alla produktsegmenten. 
 
 Alla som visar den här rapporten kan interagera med filtren.
 
 ### <a name="view-only-those-filters-applied-to-a-visual"></a>Visa bara filter som används för ett visuellt objekt
 
-Om du vill se vilka filter som används i ett specifikt visuellt objekt hovrar du över det visuella objektet för att visa filterikonen ![Skärmbild av Filter-ikonen.](media/end-user-report-filter/power-bi-filter-icon.png). Välj filterikonen för att se ett popup-fönster med alla filter, sektorer osv. som påverkar det visuella objektet. Filtren i fönstret som visas är de samma som visas på fönstret **Filter**.
+Om du vill se vilka filter som används i ett specifikt visuellt objekt hovrar du över det visuella objektet för att visa filterikonen ![Skärmbild av Filter-ikonen.](media/end-user-report-filter/power-bi-filter-icon.png). Välj filterikonen för att se ett popup-fönster med alla filter, sektorer osv. som påverkar det visuella objektet. Filtren i popup-fönstret inkluderar samma filter som visas i fönstret **Filter**, plus ytterligare filtrering som påverkar det valda visuella objektet.
 
-![Skärmbild av en lista över filter med pilar som pekar på var dessa filter finns i fönstret Filter.](media/end-user-report-filter/power-bi-hover-visual-filter.png)
+![Skärmbild av en lista över filter med pilar som pekar på var dessa filter finns i fönstret Filter.](media/end-user-report-filter/power-bi-hover-filters.png)
 
 Här är de typer av filter som den här vyn kan visa:
 
 - Grundläggande filter
-
 - Utsnitt
-
 - Korsmarkering
-
 - Korsfiltrering
-
 - Avancerad filtrering
-
 - Högsta N-filter
-
 - Relativa datumfiltrer
-
 - Synkroniseringsutsnitt
-
 - Inkludera/exkludera filter
-
 - Filter som skickas via en URL
 
-Se följande exempel:
+I det här exemplet:
+1. **Inkluderad** Det här är ett meddelande om att det visuella objektet har korsfiltrerats. Det innebär att Utah, Colorado och Texas har markerats i något av de andra visuella objekten på den här rapportsidan. I det här fallet är den en karta. Valet av dessa tre tillstånd har hindrat data från andra delstater från att visas i det valda stapeldiagrammet.  
 
-1. Vi kan se att stapeldiagrammet har korsfiltrerats.
+1. **Datum** är ett filter som tillämpas på alla sidor i den här rapporten och
 
-1. **Ingår** visar att korsfiltret avser **Segment**, och att tre ingår.
+1. **Regionen är central** och **året är 2014** är filter som tillämpas på den här rapportsidan och
 
-1. Ett utsnitt har tillämpats för **Kvartal**.
+4. **Tillverkaren är VanArsdel, Natura, Aliqui eller Pirum** är ett filter som tillämpas på det här visuella objektet.
 
-1. **Region** är ett filter som tillämpas på den här rapportsidan och
-
-1. **isVanArsdel** och **År** är filter som tillämpas för det här visuella objektet.
-
-![Skärmbild av en rapport och dess filter med en lista över filter, numrerade för att stämma överens med den numrerade listan ovan.](media/end-user-report-filter/power-bi-visual-pop-up.png)
 
 ### <a name="search-in-a-filter"></a>Söka i ett filter
 
 Ibland kan det finnas en lång lista med värden för ett filter. Använd sökrutan för att hitta och välja det värde som du vill ha.
 
-![Skärmbild av hur du söker i ett filter.](media/end-user-report-filter/power-bi-fiter-search.png)
+![Skärmbild av hur du söker i ett filter.](media/end-user-report-filter/power-bi-search.png)
 
 ### <a name="display-filter-details"></a>Visa filterdetaljer
 
 Ta en titt på tillgängliga värden och antal för att förstå ett filter.  Visa information om filtret genom att hålla muspekaren över och klicka på pilen bredvid filternamnet.
   
-![Skärmbild av ett filter som visar Västra som vald region.](media/end-user-report-filter/power-bi-expand-filter.png)
+![Skärmbild av ett filter som visar Västra som vald region.](media/end-user-report-filter/power-bi-filter-expand.png)
 
 ### <a name="change-filter-selections"></a>Ändra val av filter
 
 Ett sätt att söka efter insikter från data är att interagera med filtren. Du kan ändra filtren med hjälp av den nedrullningsbara pilen bredvid fältnamnet.  Dina alternativ varierar från enkla val från en lista till att identifiera datum- eller sifferintervall, beroende på filtret och den typ av data som Power BI filtrerar. I det avancerade filtret nedan har vi ändrat filtret **Totalt antal enheter hittills i år** på trädkartan att ligga mellan 2000 och 3000. Observera att den här ändringen tar bort Prirum från trädkartan.
   
-![Skärmbild av en rapport och dess filter, med Fashions Direct markerat.](media/end-user-report-filter/power-bi-filter-treemap.png)
+![Skärmbild av en rapport och dess filter där trädkarta har valts.](media/end-user-report-filter/power-bi-treemap-filters.png)
 
 > [!TIP]
 > Håll ned CTRL-tangenten för att välja mer än ett filtervärde åt gången. De flesta filter har stöd för flerval.
@@ -121,11 +110,13 @@ Ett sätt att söka efter insikter från data är att interagera med filtren. Du
 
 Om du vill återställa alla ändringar du har gjort i filtret väljer du **Återställ till standard** från den översta menyraden.  Det här alternativet återställer filtren till deras ursprungliga tillstånd, som de ställts in av reportdesignern.
 
-![Skärmbild av alternativet Återgå till standard.](media/end-user-report-filter/power-bi-reset.png)
+![Skärmbild av alternativet Återgå till standard.](media/end-user-report-filter/power-bi-reset-icon.png)
 
 ### <a name="clear-a-filter"></a>Rensa ett filter
 
-Om du bara vill ange ett filter för **(Alla)** , avmarkerar du det genom att välja radergummiikonen ![Skärmbild av radergummiikonen.](media/end-user-report-filter/power-bi-eraser-icon.png) vid filternamnet.
+Om du vill återställa ett filter till (alla) avmarkerar du det genom att välja ikonen med radergummit intill filternamnet.
+
+![Skärmbild av radergummiikonen.](media/end-user-report-filter/power-bi-eraser.png)
   
 <!--  too much detail for consumers
 

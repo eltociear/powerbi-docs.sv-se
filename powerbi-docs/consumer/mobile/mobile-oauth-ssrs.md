@@ -9,23 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567808"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903641"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
 
-Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mobilappen för att ansluta till Power BI-rapportservern och SQL Server Reporting Services 2016 eller senare.
+Du kan ansluta till Power BI-rapportservern och Reporting Services via OAuth för att visa mobila rapporter eller KPI:er. Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mobilappen för att ansluta till Power BI-rapportservern och SQL Server Reporting Services 2016 eller senare.
 
-![Anslut till en server](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+Se Adam ansluta från Power BI Mobile till SSRS med OAuth:
 
-Du kan ansluta till Power BI-rapportservern och Reporting Services via OAuth för att visa mobila rapporter eller KPI:er. Windows Server 2016 innehåller vissa förbättringar av rolltjänsten Web Application Proxy (WAP) för att tillåta den här typen av autentisering.
 
-   > [!NOTE]
-   > Nu finns det stöd för att visa Power BI-rapporter som finns i Power BI-rapportservern och autentiserar med WAP för iOS- och Android-appar.
+<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Nu finns det stöd för att visa Power BI-rapporter som finns i Power BI-rapportservern och autentiserar med WAP för iOS- och Android-appar.
 
 ## <a name="requirements"></a>Krav
 
@@ -33,23 +35,23 @@ Windows Server 2016 krävs för Webbprogramproxy (WAP) och Active Directory Fede
 
 ## <a name="domain-name-services-dns-configuration"></a>Konfigurationen av Domain Name Services (DNS)
 
-Du måste välja en offentlig URL som den mobila Power BI-appen ska ansluta till. Den bör se ut ungefär så här.
+Den offentliga URL:en som den mobila Power BI-appen ska ansluta till. Den bör se ut ungefär så här.
 
 ```https
 https://reports.contoso.com
 ```
 
-Du måste först rikta din DNS-post för **rapporter** mot den offentliga IP-adressen för Web Application Proxy (WAP)-servern. Du måste också konfigurera en offentlig DNS-post för AD FS-servern. Du kan till exempel ha konfigurerat AD FS-servern med följande URL.
+Din DNS-post för **rapporter** mot den offentliga IP-adressen för Web Application Proxy (WAP)-servern. Du måste också konfigurera en offentlig DNS-post för AD FS-servern. Du kan till exempel ha konfigurerat AD FS-servern med följande URL.
 
 ```https
 https://fs.contoso.com
 ```
 
-Du måste först rikta din DNS-post för **rapporter** mot den offentliga IP-adressen för Web Application Proxy (WAP)-servern, eftersom den kommer att publiceras som del av WAP-applikationen.
+Din DNS-post för **fs** mot den offentliga IP-adressen för Web Application Proxy (WAP)-servern, eftersom den kommer att publiceras som del av WAP-applikationen.
 
 ## <a name="certificates"></a>Certifikat
 
-Du måste konfigurera certifikat för både WAP-applikationen och AD FS-servern. Båda dessa certifikat måste vara en del av en giltig certifikatutfärdare som dina mobila enheter kan identifiera.
+Du måste konfigurera certifikat för både WAP-applikationen och ADFS-servern. Båda dessa certifikat måste vara en del av en giltig certifikatutfärdare som dina mobila enheter kan identifiera.
 
 ## <a name="reporting-services-configuration"></a>Konfiguration av Reporting Services
 
@@ -77,7 +79,7 @@ Mer information finns i [Ändra en Reporting Services-konfigurationsfil](https:/
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Konfigurera Active Directory Federation Services (AD FS)
 
-Du måste konfigurera ADFS på en Windows 2016-server i din miljö. Detta kan göras via Serverhanteraren och genom att välja Lägg till roller och funktioner under hantera. För mer information, se [Active Directory Federation Services (AD FS)](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+Du måste konfigurera AD FS på en Windows 2016-server i din miljö. Konfigurationen kan göras via Serverhanteraren och genom att välja Lägg till roller och funktioner under hantera. För mer information, se [Active Directory Federation Services (AD FS)](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### <a name="create-an-application-group"></a>Skapa en appgrupp
 
@@ -107,7 +109,7 @@ Du kan skapa gruppen med följande steg.
    mspbi-adal://com.microsoft.powerbimobile  
    mspbi-adalms://com.microsoft.powerbimobilems
 
-   **Android-appar behöver endast följande:**  
+   **Android-appar behöver endast följande steg:**  
    urn:ietf:wg:oauth:2.0:oob
 
    ![Guide 02 för ADFS-programgrupp](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
@@ -149,7 +151,7 @@ Vi behöver använda begränsad delegering med protokollövergång för att kunn
 
 Vi måste konfigurera begränsad delegering på WAP-serverkontot inom Active Directory. Du kan behöva arbeta med en domänadministratör om du inte har åtkomstbehörighet till Active Directory.
 
-Gör följande för att konfigurera begränsad delegering.
+Utför följande steg för att konfigurera begränsad delegering.
 
 1. På en dator som har Active Directory-verktygen installerade startar du **Active Directory-användare och -datorer**.
 
@@ -198,7 +200,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 | --- | --- |
 | **ADFSRelyingPartyName** |Detta är det Web API-namn som du har skapat som en del av appgruppen i AD FS. |
 | **ExternalCertificateThumbprint** |Detta är certifikatet som ska användas för externa användare. Det är viktigt att det här certifikatet är giltigt på mobila enheter och kommer från en betrodd certifikatutfärdare. |
-| **BackendServerUrl** |Detta är URL: en till rapportservern från WAP-servern. Om server för WAP finns i ett perimeternätverk kan du behöva använda ett fullständigt kvalificerat domännamn. Kontrollera att du kan träffa denna URL från webbläsaren på WAP-servern. |
+| **BackendServerUrl** |Detta är URL:en till rapportservern från WAP-servern. Om server för WAP finns i ett perimeternätverk kan du behöva använda ett fullständigt kvalificerat domännamn. Kontrollera att du kan träffa denna URL från webbläsaren på WAP-servern. |
 | **BackendServerAuthenticationSPN** |Det här är SPN-namnet som du har skapat som en del av Reporting Services-konfigurationen. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Ställa in integrerad autentisering för WAP-appen
@@ -227,7 +229,7 @@ Anslut Reporting Services-instans i Power BI-appen. Ange den **externa URL:en** 
 
 När du väljer **Anslut** omdirigeras du till inloggningssidan för ADFS. Ange giltiga autentiseringsuppgifter för domänen.
 
-![Logga in på ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Logga in på AD FS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 När du har valt **Logga in** visas element från Reporting Services-servern.
 

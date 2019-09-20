@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 278d631e755c4d484db0788b6c58fca9cfce4616
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962003"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903787"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Hantera din apparbetsyta i Power BI och Office 365
 
@@ -72,7 +72,7 @@ Du kan även redigera aspekter av en apparbetsyta direkt i Outlook för Office 3
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Lägg till en bild och ange andra egenskaper för arbetsytor
 
-När du distribuerar appen från apparbetsytan blir den bild som du lägger till här bilden för din app. Se avsnittet [Lägga till en bild i din Office 365-apparbetsyta (valfritt)](service-create-workspaces.md#add-an-image-to-your-office-365-app-workspace-optional) i artikeln **Skapa de nya arbetsytorna**.
+När du distribuerar appen från apparbetsytan blir den bild som du lägger till här bilden för din app. Se [Lägga till en bild i din Office 365-apparbetsyta ](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) i artikeln **Skapa de nya arbetsytorna**.
 
 1. I Outlook för Office 365-vyn på din apparbetsyta går du till fliken **Om** och väljer **Redigera**.
 

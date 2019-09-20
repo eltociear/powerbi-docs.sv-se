@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 003d179902ad3eeb5dc6dea841936a217a292d0c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c5a3b2b3e74d636f8d9af75e4c84b7fd61bd2139
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65099845"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877866"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licensiering i din organisation
 
@@ -31,11 +31,11 @@ Som administratör kan du köpa och tilldela Power BI Pro-licenser. Du kan även
 
 Du kan köpa Power BI Pro-licenser via Microsoft Office 365 eller en certifierad Microsoft-partner. När du har köpt licenserna kan du tilldela dem till enskilda användare. Mer information finns i avsnittet [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
 
-### <a name="power-bi-pro-license-expiration"></a>Power BI Pro-licens upphör att gälla
+### <a name="power-bi-pro-license-expiration"></a>Power BI Pro-licensens upphörande
 
 Det finns en respitperiod efter att en Power BI Pro-licens har gått ut. För licenser som är en del av ett volymlicensköp är respitperioden 90 dagar. Om du har köpt licensen direkt är respitperioden 30 dagar.
 
-Power BI Pro har samma prenumerationslivscykel som Office 365. Mer information finns i [vad händer med mina data och åtkomst när Office 365 för företag-prenumerationen har upphört?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
+Power BI Pro har samma prenumerationslivscykel som Office 365. Mer information finns i [Vad händer med mina data och åtkomst när Office 365 för företag-prenumerationen går ut?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### <a name="power-bi-pro-trial-for-individuals"></a>Utvärderingsversion av Power BI Pro för enskilda användare
 
@@ -125,7 +125,7 @@ Om det obegränsade Power BI-licensblocket (kostnadsfritt) inte är tillgänglig
 
 Som administratör kan du välja att aktivera eller inaktivera individuell användarregistrering via Azure Active Directory (AAD). Det här avsnittet av artikeln visar hur du hanterar registreringar med PowerShell-kommandon. Läs mer om Azure PowerShell i [Översikt över Azure PowerShell](/powershell/azure/overview).
 
-AAD-inställningen som styr registreringen är **AllowAdHocSubscriptions**. I de flesta klienter är det här inställt på *true*, vilket innebär att inställningen är aktiverad. Om du har köpt Power BI via en partner kan detta vara inställt på *false*, vilket innebär att det är inaktiverat. Om du ändrar inställningen från *true* till *false* blockeras nya användare i din organisation från att kunna registrera sig individuellt. Användare som har registrerat sig för Power BI före inställningen ändrades har kvar sina licenser.
+Azure AD-inställningen som styr registreringen är **AllowAdHocSubscriptions**. I de flesta klienter är det här inställt på *true*, vilket innebär att inställningen är aktiverad. Om du har köpt Power BI via en partner kan detta vara inställt på *false*, vilket innebär att det är inaktiverat. Om du ändrar inställningen från *true* till *false* blockeras nya användare i din organisation från att kunna registrera sig individuellt. Användare som har registrerat sig för Power BI före inställningen ändrades har kvar sina licenser. Observera att med inställningen *falskt* kan användarna fortfarande registrera sig för en utvärderingsversion av Pro.
 
 1. Logga in på Azure Active Directory med dina Office 365-autentiseringsuppgifter. Den första raden i följande PowerShell-skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
 
@@ -136,7 +136,7 @@ AAD-inställningen som styr registreringen är **AllowAdHocSubscriptions**. I de
 
    ![Inloggning i Azure Active Directory](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. När du har loggat in kan du köra följande kommando för att se hur din klient är konfigurerad. (Observera att ”fl” nedan använder bokstaven i, inte nummer 1.)
+1. När du har loggat in kan du köra följande kommando för att se hur din klient är konfigurerad. (Observera att "fl" nedan använder bokstaven "l", inte siffran 1.)
 
     ```powershell
      Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 

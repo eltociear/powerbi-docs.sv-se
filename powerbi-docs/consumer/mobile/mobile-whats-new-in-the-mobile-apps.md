@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
-ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
+ms.openlocfilehash: 5697fd79551d238f095696dcc940afb8ea330d11
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70030163"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841351"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -25,7 +25,15 @@ Relaterad information om nyheter finns i:
 
 ## <a name="august-2019"></a>Augusti 2019
 
-### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Skyddad åtkomst med Azure Active Directory-programproxyn
+### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Vi presenterar Power BI Mobile med nytt utseende (förhandsversion) (iOS och Android)
+
+Vi har uppdaterat vår app och lanserat nya upplevelser, lagt till en startsida som ger snabbåtkomst till ditt ofta använda innehåll och nya navigeringsfält som ger dig ett enkelt sätt att navigera i appen. Med de nya och uppdaterade upplevelserna går det snabbare och enklare att hitta det du behöver, när du behöver det.
+Eftersom det nya utseendet är i förhandsversion måste du aktivera det för att kunna ta del av det.
+Läs mer om [det nya utseendet för Power BI](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
+
+![Nytt utseende för Power BI Mobile](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look2.gif)
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Skyddad åtkomst med Azure Active Directory-programproxyn (iOS och Android)
 
 Vi har samarbetat med Azure Active Directory-team för att integrera mobila Power BI-program med Azure Active Directory- Programproxyn. Med den här konfigurationen kan du ansluta till en rapportserver inom företagsgränserna från Power BI Mobile-appen, utan att behöva konfigurera en komplex lokal konfiguration. Läs mer om [Integrera Power BI Mobile och Azure AD-programproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lär dig [hur du konfigurerar Azure AD-programproxy och Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
@@ -36,7 +44,7 @@ Vi har samarbetat med Azure Active Directory-team för att integrera mobila Powe
 Knappbeskrivningar för rapportsida stöds inte vid visning av rapporter i mobilappen. Tryck bara och håll ned på ett visuellt objekt som har en rapportknappbeskrivning som är kopplad till den, så visas den.  
 
 ![Knappbeskrivning för rapportarbetsyta](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
-
+ 
 > [!NOTE]
 > Rapportknappbeskrivningar stöds för enheter med en bildpunktsstorlek över 640 och ett visningsområde över 320. Mindre enheter använder standardknappbeskrivningar.
 

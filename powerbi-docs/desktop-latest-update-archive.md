@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/26/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a7061597df08e82f3128b6fc85ed2841569922c4
-ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
+ms.openlocfilehash: b61d0e3515b4efb08cb08a49d9bb339a1fbbb5a3
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70064639"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903690"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -34,6 +34,75 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 
 Följande avsnitt beskriver tidigare månaders uppdateringar till **Power BI Desktop**.
 
+## <a name="august-2019-update-2715523641"></a>Uppdatering för augusti 2019 (2.71.5523.641)
+
+Våra uppdateringar för augusti är nu live och förhöjer de rapporter som du kan skapa i Power BI Desktop. 
+
+Nu kan du [ladda ned den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop), som nu levereras som en enskild .exe-fil som innehåller alla språk med stöd. Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
+
+Länkarna bredvid varje uppdatering innebär följande:
+
+* **[video]** klippen spelas upp på en ny webbläsarflik när funktionen diskuteras.
+* I vissa funktioner finns en **[article]** som innehåller mer information.
+* De flesta funktioner beskrivs i månadsuppdateringens **[blog]** -inlägg.
+* Vissa funktioner är självförklarande och behöver varken artikel eller video.
+
+Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
+
+Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
+
+### <a name="reporting"></a>Rapportering
+* Gruppering av visuella objekt [[video]](https://youtu.be/sf4n7VXoQHY?t=10)  [[artikel]](desktop-grouping-visuals.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#grouping) 
+* Migrering av filterpanel  [[video]](https://youtu.be/sf4n7VXoQHY?t=360)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#filterPane)
+* Ikonformatväljare för villkorsstyrd formatering av ikoner [[video]](https://youtu.be/sf4n7VXoQHY?t=509)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#iconStyles)
+* Varningar för villkorsstyrd formatering [[video]](https://youtu.be/sf4n7VXoQHY?t=621)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#conditionalFormatting)
+
+
+### <a name="analytics"></a>Analys
+* Visuella förbättringar för viktiga påverkare, allmän tillgänglighet [[video]](https://youtu.be/sf4n7VXoQHY?t=801)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#keyInfluencers) 
+
+
+### <a name="visuals"></a>Visuella objekt
+* Nya anpassade visuella objekt och uppdateringar  [[video]](https://youtu.be/sf4n7VXoQHY?t=956)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
+
+
+### <a name="data-connectivity"></a>Dataanslutning
+* Stöd för SAP HANA HDI-containrar [[video]](https://youtu.be/sf4n7VXoQHY?t=1502)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#HDIcontainers) 
+* Redigera SAP-variabler i Power BI-tjänsten (förhandsversion)  [[video]](https://youtu.be/sf4n7VXoQHY?t=1522)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#SAPvariables)
+* PostgreSQL DirectQuery [[video]](https://youtu.be/sf4n7VXoQHY?t=1662)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#postgresql) 
+* MarkLogic-anslutningsprogram är nu allmänt tillgängligt  [[video]](https://youtu.be/sf4n7VXoQHY?t=1678)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#marklogic) 
+* Ny Power Platform-kategori i Hämta data  [[video]](https://youtu.be/sf4n7VXoQHY?t=1688)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#powerPlatform) 
+
+### <a name="template-apps"></a>Mallappar
+* Facebook-sidor – grundläggande analys [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#facebook) 
+
+
+> [!NOTE]
+> Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
+
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+
+
+I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sf4n7VXoQHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+Du kan också hämta tidigare versioner av Power BI Desktop om din organisation kräver det. Vi rekommenderar alltid att du använder den senaste versionen av Power BI Desktop, i stället för en tidigare version. Alla tidigare versioner har följande begränsningar:
+
+* Tidigare versioner av Power BI Desktop servas inte – du bör alltid använda den senaste versionen för de senaste funktionerna och uppdateringarna.
+* Det kanske inte går att öppna filer som skapats eller sparats i senare versioner av Power BI Desktop med tidigare versioner av Power BI Desktop. 
+* Om du får en varning när du läser in en rapport som sparas i en nyare version av Power BI Desktop och sedan spara rapporten i den tidigare versionen, förlorar du information som är relaterad till nya funktioner.
+* Vi arkiverar endast de engelska versionerna av Power BI Desktop.
+
+Välj följande länkar för att ladda ned den tidigare versionen: 
+
+* [Augusti 2019-versionen av Power BI Desktop – 32-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08.msi)
+* [Augusti 2019-versionen av Power BI Desktop – 64-bitars](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-08_x64.msi)
+
+
 ## <a name="july-2019-update-2715523641"></a>Uppdatering juli 2019 (2.71.5523.641)
 
 Våra uppdateringar i juli var till bredden fyllda med spännande nya funktioner och egenskaper för ditt Power BI Desktop. 
@@ -49,7 +118,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
-Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
+Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
 
 ### <a name="reporting"></a>Rapportering
 * Ikonuppsättningar för tabeller och matriser [[video]](https://youtu.be/l7OMRUF9UYg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#iconSets) 
@@ -120,7 +189,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
-Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
+Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
 
 ### <a name="reporting"></a>Rapportering
 * Uppdaterad fönsterdesign [[video]](https://youtu.be/7k-nP38uHyQ?t=8)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
@@ -203,7 +272,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
-Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
+Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
 
 ### <a name="reporting"></a>Rapportering
 * Prestandaanalyseraren  [[video]](https://youtu.be/O8GlHDz8xUQ?t=10)  [[article]](desktop-performance-analyzer.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#perfAnalyzer) 
@@ -281,7 +350,7 @@ Länkarna bredvid varje uppdatering innebär följande:
 
 Du kan också se videon **Senaste uppdateringar** från början i den här artikeln, genom att klicka på ikonen **Spela upp** på videobilden nedanför listan med uppdateringar.
 
-Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
+Följande uppdateringar var nya för **Power BI Desktop** den här månaden:
 
 ### <a name="reporting"></a>Rapportering
 * Förbättringar av filterpanelen [[video]](https://youtu.be/vih35kSrEHU?t=9)  [[article]](power-bi-report-filter.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 

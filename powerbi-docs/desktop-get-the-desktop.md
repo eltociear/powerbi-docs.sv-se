@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b92bd2917165cd6dc89e0c9f9a94e83d69f1c2a
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e7a96186fe68ed0d70de7a502e81da4f24f4d802
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560864"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903578"
 ---
 # <a name="get-power-bi-desktop"></a>Hämta Power BI Desktop
 **Power BI Desktop** låter dig skapa avancerade frågor, modeller och rapporter som visualiserar data. Med **Power BI Desktop**, kan du skapa datamodeller, skapa rapporter och dela ditt arbete genom att publicera till Power BI-tjänsten.  **Power BI Desktop** är en kostnadsfri nedladdning.
@@ -40,9 +40,9 @@ Du kan också hämta den senaste versionen av Power BI Desktop från följande n
 
 Oavsett hur du väljer att ladda ned det så kommer **Power BI Desktop** att be dig att köra installationsfilen efter att du laddat ner den:
 
-![Köra installationsfilen för Power BI Desktop](media/desktop-get-the-desktop/getpbid_3.png)
+![Köra installationsfilen för Power BI Desktop](media/desktop-get-the-desktop/download-desktop-exe.png)
 
-Från och med juli 2019-versionen levereras **Power BI Desktop** som ett enda .exe-installationspaket som innehåller alla språk med stöd. Det finns separata .exe-filer för 32-bitars- och 64-bitars versioner. .msi-paketen kommer att upphöra efter september 2019-versionen. Därefter måste du använda den körbara .exe-filen för installation. Den här metoden gör distribution, uppdateringar och installation (särskilt för administratörer) mycket enklare och smidigare. Du kan även använda kommandoradsparametrar för att anpassa installationsprocessen enligt beskrivningen i avsnittet [Använda kommandoradsalternativ under installation](#using-command-line-options-during-installation) längre fram i den här artikeln.
+Från och med versionen från juli 2019 levereras **Power BI Desktop** som ett enda .exe-installationspaket som innehåller alla språk med stöd. Det finns separata .exe-filer för 32-bitars- och 64-bitars versioner. MSI-paketen har avbrutits från och med versionen från september 2019, vilket krävde exe-filen för installation. Den här metoden gör distribution, uppdateringar och installation (särskilt för administratörer) mycket enklare och smidigare. Du kan även använda kommandoradsparametrar för att anpassa installationsprocessen enligt beskrivningen i avsnittet [Använda kommandoradsalternativ under installation](#using-command-line-options-during-installation) längre fram i den här artikeln.
 
 När du startar installationspaketet installeras **Power BI Desktop** som ett program och körs på skrivbordet.
 
@@ -105,6 +105,27 @@ Följande lista innehåller minimikraven för att köra **Power BI Desktop**:
 
 Vi vill alltid att du ska ha en bra upplevelse när du använder Power BI Desktop. Det kan dock hända att du stöter på problem med Power BI Desktop. Det här avsnittet innehåller lösningar eller förslag för att hantera problem som kan uppstå. 
 
+### <a name="installing-power-bi-desktop-on-remote-machines"></a>Installera Power BI Desktop på fjärrdatorer
+
+Om du distribuerar Power BI Desktop till dina användare med ett verktyg som kräver en Windows Installer-fil (.msi-fil) kan du extrahera msi-filen från den körbara Power BI Desktop Installer-filen. Du kan använda verktyg från tredje part, till exempel WiX-verktyg för att göra detta.
+
+> [!NOTE]
+> WiX verktygsalternativ kan ändras utan föregående meddelande, eftersom detta är en produkt från tredje part. Kontrollera den senaste informationen i dokumentationen och kontakta deras e-postlista om du behöver hjälp.
+
+* På den dator där du laddade ned installationsprogrammet för Power BI Desktop hämtar och installerar du den senaste versionen av WiX-verktygen från WiX-webbplatsen på https://wixtoolset.org/.
+* Öppna ett kommandoradsfönster som administratör och navigera till mappen där du installerade WiX-verktyget.
+* Kör följande kommando: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    Till exempel, kör:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* Utdatamappen innehåller en mapp med namnet *AttachedContainer* som innehåller MSI-filerna.
+
+
+
 
 ### <a name="using-command-line-options-during-installation"></a>Använda kommandoradsalternativ under installation 
 
@@ -122,6 +143,25 @@ När du installerar Power BI Desktop kan du ange egenskaper och alternativ med k
 |-uninstall     |avinstallera Power BI Desktop         |
 |-repair     |reparera installationen (eller installera om den för närvarande inte är installerad)         |
 |-package, -update     |installera Power BI Desktop (standard förutsatt att -uninstall eller -repair inte har angetts)         |
+
+Du kan också använda följande **syntaxparametrar** som anges med syntaxen "PROPERTY=VALUE":
+
+
+|Parameter  |Innebörd  |
+|---------|---------|
+|ACCEPT_EULA     |Kräver värdet 1 för att automatiskt godkänna licensavtalet         |
+|ENABLECXP     |Värdet 1 registreras i Customer Experience-programmet som hämtar telemetri om produktanvändningen         |
+|INSTALLDESKTOPSHORTCUT     |Värdet 1 lägger till en genväg till skrivbordet         |
+|INSTALLLOCATION     |Filsökväg till den plats där du vill installera den         |
+|LANGUAGE     |Språkkod, till exempel en-US, de-DE, pr-BR, för att framtvinga programmets standardspråk. Om inget språk har angetts visar Power BI Desktop Windows OS-språket. Detta kan ändras av användaren i alternativdialogrutan.         |
+|REG_SHOWLEADGENDIALOG     |Värdet 0 inaktiverar visning av dialogrutan som visas innan du har loggat in på Power BI Desktop         |
+
+
+
+
+Du kan till exempel köra den med följande syntax för att installera utan något användargränssnitt med språket tyska: 
+
+```“-quiet LANG=de-DE ACCEPT_EULA=1”```
 
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problem när du använder tidigare versioner av Power BI Desktop

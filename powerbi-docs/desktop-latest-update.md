@@ -7,24 +7,28 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 105fac5bf26ac15e9151d642f3b276ee5b00f87c
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 646372dbba995a359b732e46a8689cb295565c1f
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023339"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903557"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Vad är nytt i den senaste uppdateringen av Power BI Desktop? 
 
 
-## <a name="august-2019-update-2715523641"></a>Uppdatering för augusti 2019 (2.71.5523.641)
+## <a name="september-2019-update-2735586561"></a>Uppdatering september 2019 (2.73.5586.561)
 
-Våra uppdateringar för augusti är nu live och förhöjer de rapporter som du kan skapa i Power BI Desktop. 
+Våra uppdateringar i september är som en spännande återgång till skolan – nya saker att lära sig, återkoppla med vänner som vi saknade över sommaren och möjligheter att tillämpa våra nya kunskaper i framtida rapporter. 
 
 Nu kan du [ladda ned den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop), som nu levereras som en enskild .exe-fil som innehåller alla språk med stöd. Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Från och med september 2019-versionen levereras Power BI Desktop som ett enda .exe-installationspaket som innehåller alla språk med stöd. MSI-versionen släpps inte längre.
+
 
 Länkarna bredvid varje uppdatering innebär följande:
 
@@ -38,40 +42,46 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 
 ### <a name="reporting"></a>Rapportering
-* Gruppering av visuella objekt [[video]](https://youtu.be/sf4n7VXoQHY?t=10)  [[artikel]](desktop-grouping-visuals.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#grouping) 
-* Migrering av filterpanel  [[video]](https://youtu.be/sf4n7VXoQHY?t=360)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#filterPane)
-* Ikonformatväljare för villkorsstyrd formatering av ikoner [[video]](https://youtu.be/sf4n7VXoQHY?t=509)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#iconStyles)
-* Varningar för villkorsstyrd formatering [[video]](https://youtu.be/sf4n7VXoQHY?t=621)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#conditionalFormatting)
+* Färg- och textklasser i teman [[video]](https://youtu.be/neq0THnRJzo?t=11)  [[artikel]](desktop-report-themes.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#themeJSON) 
+* Nya standardteman  [[video]](https://youtu.be/neq0THnRJzo?t=334)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#newThemes)
+* Förbättrat anpassat fönster för visualiseringar (förhandsversion) [[video]](https://youtu.be/neq0THnRJzo?t=601)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#vizPane)
 
 
 ### <a name="analytics"></a>Analys
-* Visuella förbättringar för viktiga påverkare, allmän tillgänglighet [[video]](https://youtu.be/sf4n7VXoQHY?t=801)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#keyInfluencers) 
+* Anpassade formatsträngar [[video]](https://youtu.be/neq0THnRJzo?t=731)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#customFormatStrings) 
+* Uppdaterade alternativ för villkorsstyrd formatering [[video]](https://youtu.be/neq0THnRJzo?t=813)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#conditionalFormatting) 
+* Förbättrad ökad detaljnivå [[video]](https://youtu.be/neq0THnRJzo?t=959)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#drillThrough) 
+* Nya DAX-uttryck: REMOVEFILTERS och CONVERT [[video]](https://youtu.be/neq0THnRJzo?t=1048)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#dax) 
 
 
 ### <a name="visuals"></a>Visuella objekt
-* Nya anpassade visuella objekt och uppdateringar  [[video]](https://youtu.be/sf4n7VXoQHY?t=956)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
+* Visuella objekt i PowerApps är nu allmänt tillgängliga [[video]](https://youtu.be/neq0THnRJzo?t=1063)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#powerApps) 
 
 
 ### <a name="data-connectivity"></a>Dataanslutning
-* Stöd för SAP HANA HDI-containrar [[video]](https://youtu.be/sf4n7VXoQHY?t=1502)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#HDIcontainers) 
-* Redigera SAP-variabler i Power BI-tjänsten (förhandsversion)  [[video]](https://youtu.be/sf4n7VXoQHY?t=1522)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#SAPvariables)
-* PostgreSQL DirectQuery [[video]](https://youtu.be/sf4n7VXoQHY?t=1662)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#postgresql) 
-* MarkLogic-anslutningsprogram är nu allmänt tillgängligt  [[video]](https://youtu.be/sf4n7VXoQHY?t=1678)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#marklogic) 
-* Ny Power Platform-kategori i Hämta data  [[video]](https://youtu.be/sf4n7VXoQHY?t=1688)   [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#powerPlatform) 
+* Förbättringar i PostgreSQL-anslutningsappen [[video]](https://youtu.be/neq0THnRJzo?t=1112)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#postgreSQL) 
+
+### <a name="data-preparation"></a>Förberedelse av data
+* Kopiera till urklipp från dataprofilering [[video]](https://youtu.be/neq0THnRJzo?t=1146) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#copyProfiling) 
+
 
 ### <a name="template-apps"></a>Mallappar
-* Facebook-sidor – grundläggande analys [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#facebook) 
+* Google Analytics-rapport [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#googleAnalytics) 
 
+### <a name="other"></a>Annat
+* Prestandaförbättringar för flerdimensionella modeller [[video]](https://youtu.be/neq0THnRJzo?t=1208)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfMultiDiminsional) 
+* Prestandaförbättringar frågor med DirectQuery [[video]](https://youtu.be/neq0THnRJzo?t=1272)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfDirectQuery) https://youtu.be/neq0THnRJzo?t=1208
 
 > [!NOTE]
 > Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
 
-Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
 
 
 I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sf4n7VXoQHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

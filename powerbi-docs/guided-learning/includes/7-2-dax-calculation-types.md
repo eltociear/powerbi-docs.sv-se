@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6ed1690ec77880467007200c30038d185c98d6c2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f4043a5a8deac0596b58519183988f6ae574458e
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273608"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70847740"
 ---
 Det finns två primära beräkningar som du kan skapa med hjälp av DAX:
 
@@ -26,7 +26,7 @@ Följande bild visar en DAX-formel som skapas i Power BI:
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_1.png)
 
-Du kan också utelämna tabellnamnet helt och hållet och bara använda kolumnnamnet, men detta är ett dåligt tillvägagångssätt om du vill skapa tydliga funktioner (och därmed en tydlig DAX-kod). Kolumnnamnen måste alltid innehålla hakparenteser.
+Du kan också utelämna tabellnamnet helt och hållet och bara använda kolumnnamnet, men detta är inte det bästa tillvägagångssättet om du vill skapa tydliga funktioner (och därmed en tydlig DAX-kod). Kolumnnamnen måste alltid innehålla hakparenteser.
 
 Vi rekommenderar att du *alltid* gör följande:
 

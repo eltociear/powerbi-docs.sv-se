@@ -7,23 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391372"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903746"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
-En Power BI-rapport visar en datauppsättning ur flera perspektiv med visuella objekt som representerar olika fynd och insikter från datauppsättningen.  En rapport kan ha ett enda visuellt objekt eller sidor som är fulla av dem. Beroende på din arbetsroll kan du vara en person som *designar* rapporter. Du kan också vara en som *konsumerar* eller använder rapporterna.
+En Power BI-rapport visar en datauppsättning ur flera perspektiv med visuella objekt som representerar olika fynd och insikter från datauppsättningen.  En rapport kan ha ett enda visuellt objekt eller sidor som är fulla av dem. Beroende på din arbetsroll kan du vara en person som *designar* rapporter. Du kan också vara en som *konsumerar* eller använder rapporterna. Den här artikeln är för *konsumenter*.
 
-![Skärmbild av en rapportsida.](./media/end-user-reports/power-bi-reports.png)
+![Skärmbild av en rapportsida.](./media/end-user-reports/power-bi-report.png)
 
-Den här rapporten innehåller sex sidor (eller flikar) och du visar sidan **Sentiment**. Den här sidan har 5 olika visuella objekt och en titelsida. I fönstret *Filter* visas ett filter som tillämpas på alla rapportsidor. Om du vill minimera fönstret Filter väljer du pilen ( **>** ).
+A. Den här rapporten innehåller sex sidor (eller flikar) och du visar sidan **Sentiment**.    
+B. Den här sidan har 5 olika visuella objekt och en titelsida.    
+C. I fönstret *Filter* visas ett filter som tillämpas på alla rapportsidor. Om du vill minimera fönstret Filter väljer du pilen ( **>** ).    
+D. Power BI-banderollen visar namnet på rapporten och datumet för den senaste uppdateringen. Välj pilen för att öppna en meny som också visar namnet på rapportägaren.    
+E. Åtgärdsfältet innehåller åtgärder som du kan vidta för den här rapporten.  Du kan till exempel lägga till en kommentar, visa ett bokmärke eller exportera data från rapporten.  Välj ellipsen (...) om du vill visa en lista över fler rapportfunktioner.    
 
 Om du är nybörjare på Power BI kan du få en bra grund genom att läsa [Grundläggande begrepp för användare av Power BI-tjänsten](end-user-basic-concepts.md). Rapporter är tillgängliga för att visa, dela och kommentera på mobila enheter. Mer information finns i [Utforska rapporter i Power BI-mobilappar](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -68,9 +72,9 @@ Beroende på din roll kan du vara *designer*, som skapar rapporter för eget bru
 Eller också är du en som *använder* rapporter, som tar emot dem från andra. Du kommer behöva lära dig att förstå och interagera med rapporter. Om du är *rapportanvändare* är följande länkar för dig:
 
 * Börja med att ta en närmare [titt på Power BI-tjänsten](end-user-basic-concepts.md) så att du vet var du hittar rapportverktyg och rapporter.
-* Lär dig att [öppna en rapport](end-user-report-open.md) och alla interaktioner som är möjliga i [läsläget](end-user-reading-view.md).
+* Lär dig att [öppna en rapport](end-user-report-open.md) och alla [interaktioner som är tillgängliga för konsumenter](end-user-reading-view.md).
 * Bekanta dig mer rapporter genom att ta en titt på ett av våra [exempel](../sample-tutorial-connect-to-the-samples.md).  
-* Information om vilken datauppsättning som används av rapporten och vilka instrumentpaneler som har paneler som har fästs från rapporten finns i [Visa relaterat innehåll i Power BI-tjänsten](end-user-related.md).
+* Information om vilken datauppsättning som används av rapporten och vilka instrumentpaneler som visar grafiska objekt från rapporten (*fästa paneler*) finns i [Visa relaterat innehåll i Power BI-tjänsten](end-user-related.md).
 
 > [!TIP]
 > Om du inte hittar det du söker efter här kan du använda innehållsförteckningen till vänster för att bläddra igenom alla *artiklar om rapporter*.

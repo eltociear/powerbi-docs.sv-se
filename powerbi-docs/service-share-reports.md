@@ -1,6 +1,6 @@
 ---
-title: Filtrera en rapport och dela den med kollegor – Power BI
-description: Lär dig hur du filtrerar en Power BI-rapport och delar den med medarbetare i organisationen.
+title: Två sätt att dela en filtrerad Power BI-rapport
+description: Lär dig två sätt att filtrera en Power BI-rapport och dela den med medarbetare i organisationen.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -8,62 +8,72 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5f3808884e63521ec1dd775d876f1cf707bbe56b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c5bc8b32ae61870b794875c1d1720cd07dcf97f8
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770699"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877708"
 ---
-# <a name="filter-a-power-bi-report-and-share-it-with-coworkers"></a>Filtrera en Power BI-rapport och dela den med medarbetare
-*Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Hur gör du om du vill dela en filtrerad version av en rapport? Kanske en rapport som endast visar data för en viss ort, säljare eller år. Försök filtrera en rapport och dela den eller skapa en anpassad URL. Rapporten filtreras när mottagarna öppnar den första gången. De kan ta bort filtret genom att ändra URL:en. 
+# <a name="two-ways-to-share-a-filtered-power-bi-report"></a>Två sätt att dela en filtrerad Power BI-rapport
+*Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Hur gör du om du vill dela en filtrerad version av en rapport? Kanske en rapport som endast visar data för en viss ort, säljare eller år. Prova att filtrera en rapport och dela den eller skapa en anpassad URL. Rapporten filtreras när mottagarna öppnar den för första gången. De kan ta bort filtret genom att ändra URL:en. 
 
-Power BI erbjuder också [flera andra sätt att samarbeta och distribuera dina rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md). För att kunna dela måste både du och mottagaren ha en [Power BI Pro-licens](service-features-license-type.md), annars måste innehållet finnas i en [Premium-kapacitet](service-premium-what-is.md). 
+![Filtrerad rapport](media/service-share-reports/power-bi-share-filter-pane-report.png)
+
+Power BI erbjuder också [andra sätt att samarbeta och distribuera dina rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md). För att kunna dela måste både du och mottagaren ha en [Power BI Pro-licens](service-features-license-type.md), annars måste innehållet finnas i en [Premium-kapacitet](service-premium-what-is.md). 
 
 ## <a name="two-ways-to-filter-a-report"></a>Två sätt att filtrera en rapport
 
-### <a name="set-a-filter"></a>Ange ett filter
+För båda filtrerings teknikerna använder vi exempelappen Marknadsföring och försäljning som mall. Vill du testa? Du kan också installera exempelappen [Marknadsföring och försäljning](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview).
 
-Öppna rapporten i [redigeringsvyn](consumer/end-user-reading-view.md), använd filtret och spara rapporten.
-   
-I det här exemplet filtrerar vi [Exempel på detaljhandelsanalys](sample-tutorial-connect-to-the-samples.md) till att endast visa värden där **Område** är lika med **NC**.
-   
-![Rapportfilterfönstret](media/service-share-reports/power-bi-filter-report2.png)
+### <a name="set-a-filter"></a>Lägg till ett filter
 
-### <a name="create-a-filter-in-the-url"></a>Skapa ett filter i URL: en
+Lägga till ett rapport i [redigeringsvyn](consumer/end-user-reading-view.md) och lägga till ett filter.
+
+I det här exemplet ska vi filtrera kategorin YTD i exempelappen Marknadsföring och försäljning för att endast visa värden där **Region** är lika med **Central**. 
+ 
+![Rapportfilterfönstret](media/service-share-reports/power-bi-share-report-filter.png)
+
+Spara rapporten.
+
+### <a name="create-a-filter-in-the-url"></a>Skapa ett filter i URL:en
+
+När du lägger till filtret i slutet av rapportsidans URL beter den sig lite annorlunda. Den filtrerade sidan ser likadan ut. Men Power BI lägger till filtret i hela rapporten och tar bort de andra värdena från filterfönstret.  
 
 Lägg till följande i slutet av rapportsidans URL:
    
-?filter=*tabellnamn*/*fältnamn* eq *värde*
+    ?filter=*tablename*/*fieldname* eq *value*
    
-Fältet måste vara av typen tal, datum/tid eller sträng. Värdet för *tabellnamn* eller *fältnamn* kan inte innehålla blanksteg.
+Fältet måste vara av typen siffra, datum/tid eller sträng. Värdet för *tabellnamn* eller *fältnamn* kan inte innehålla blanksteg.
    
-I vårt exempel är namnet på tabellen **Butik**, namnet på fältet är **Område** och värdet som vi vill filtrera på är **NC**:
+I vårt exempel är namnet på tabellen **Geo**, namnet på fältet är **Region** och värdet som vi vill filtrera på är **Central**:
    
-?filter=Butik/Område eq 'NC'
-   
-![Filtrerad rapport-URL](media/service-share-reports/power-bi-filter-url3.png)
-   
-Webbläsaren lägger till specialtecken som motsvarar snedstreck, blanksteg och apostrofer, så resultatet blir:
-   
-app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+    ?filter=Geo/Region eq 'Central'
 
-Finns i artikeln [filtrera en rapport med parametrar för frågesträngen i Webbadressen](service-url-filters.md) för mycket mer detaljerad information.
+Webbläsaren lägger till specialtecken som motsvarar snedstreck, blanksteg och apostrofer, så resultatet blir ungefär så här:
+   
+    app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
+
+![Rapport med URL-filter](media/service-share-reports/power-bi-share-report-filter-url.png)
+
+Spara rapporten.
+
+Se artikeln [Filtrera en rapport med frågesträngparametrar i URL:en](service-url-filters.md) för mycket mer information.
 
 ## <a name="share-the-filtered-report"></a>Dela en filtrerad rapport
 
-1. När du [dela rapporten](service-share-dashboards.md), avmarkera de **skicka e-postavisering till mottagarna** markerar du kryssrutan.
+1. När du [delar rapporten](service-share-dashboards.md) ska du avmarkera kryssrutan **Skicka e-postmeddelande till mottagare**.
 
     ![Dialogrutan Dela rapport](media/service-share-reports/power-bi-share-report-dialog.png)
 
 4. Skicka en länk med filtret som du skapade tidigare.
 
 ## <a name="next-steps"></a>Nästa steg
-* Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
-* [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Olika sätt att dela ditt arbete i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Dela en instrumentpanel](service-share-dashboards.md)
 * Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+* Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 

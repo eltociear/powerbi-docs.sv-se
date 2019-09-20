@@ -5,19 +5,19 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 04/04/2019
+ms.date: 09/10/2019
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 1e64237490e45cfcf9a9a0102f3e03ecab138ce2
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67534735"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904006"
 ---
-1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa apparbetsyta**. 
+1. Börja med att skapa arbetsytan. Välj  **Arbetsytor** > **Skapa arbetsyta**. 
    
-     ![Skapa en apparbetsyta](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
+     ![Skapa arbetsyta](media/powerbi-service-create-app-workspace/power-bi-workspace-create.png)
    
     Här placerar du innehåll som du och dina kolleger arbetar tillsammans med.
 
@@ -41,7 +41,7 @@ ms.locfileid: "67534735"
    
      ![Ange redigering eller skrivskydd](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
    
-     Lägg endast till personer i apparbetsytan som ska kunna redigera innehållet. Om de endast ska kunna se innehållet behöver du inte lägga till dem i arbetsytan. Du kan inkludera dem när du publicerar appen.
+     Lägg endast till personer i arbetsytan som ska kunna redigera innehållet. Om de endast ska kunna se innehållet behöver du inte lägga till dem i arbetsytan. Du kan inkludera dem när du publicerar appen.
 
 5. Lägg till e-postadresserna för de personer som du vill ska ha åtkomst till arbetsytan och välj **Lägg till**. Du kan inte lägga till gruppalias, bara enskilda användare.
 
@@ -55,5 +55,5 @@ ms.locfileid: "67534735"
 
 Power BI skapar arbetsytan och öppnar den. Den visas i listan med arbetsytor som du är medlem i. Eftersom du är administratör kan du välja ellipsen (...) för att gå tillbaka och göra ändringar, lägga till nya medlemmar eller ändra deras behörigheter.
 
-![Redigera arbetsytan](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Redigera arbetsytan](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

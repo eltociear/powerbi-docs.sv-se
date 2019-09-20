@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0bb8d796af5139cd89f4bdfa0a8da10603acb2ed
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530555"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903921"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Skapa klassiska arbetsytor i Power BI
 
@@ -23,53 +23,49 @@ I Power BI kan du skapa *arbetsytor*, platser där du kan samarbeta med kollegor
 
 **Visste du att?** Power BI erbjuder en ny arbetsyteupplevelse som nu är standard. Läs [Organisera arbete i de nya arbetsytorna](service-new-workspaces.md) för att få information om de nya arbetsytorna. 
 
-När du skapar en klassisk arbetsyta skapar du en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Office 365. Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik. Alla som du lägger till i en apparbetsyta behöver en Power BI Pro-licens. 
+När du skapar en klassisk arbetsyta skapar du en underliggande, associerad Office 365-grupp. All administration för arbetsytor sker i Office 365. Du kan lägga till kollegor till dessa arbetsytor som medlemmar eller administratörer. På arbetsytan kan ni samarbeta kring instrumentpaneler, rapporter och annat innehåll som du planerar att distribuera till en bredare publik. Alla som du lägger till i en arbetsyta behöver en Power BI Pro-licens. 
 
-## <a name="video-apps-and-app-workspaces"></a>Video: Appar och apparbetsytor
+## <a name="video-apps-and-workspaces"></a>Video: Appar och arbetsytor
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Skapa en klassisk apparbetsyta baserat på en Office 365-grupp
+## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Skapa en klassisk arbetsyta baserat på en Office 365-grupp
 
-När du skapar en apparbetsyta byggs den på en Office 365-grupp.
+När du skapar en arbetsyta byggs den på en Office 365-grupp.
 
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
 
 När du först skapar arbetsytan kan du behöva vänta i ungefär en timme för att den ska spridas till Office 365. 
 
-### <a name="add-an-image-to-your-office-365-app-workspace-optional"></a>Lägga till en bild i din Office 365-apparbetsyta (valfritt)
+### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Lägga till en bild i din Office 365-arbetsyta (valfritt)
 Som standard skapar Power BI en liten färgad cirkel för din app med appens initialer. Men du kan också anpassa den med en bild. Om du vill lägga till en bild måste du ha en Exchange Online-licens.
 
 1. Välj **Arbetsytor**, välj ellipsen (...) bredvid namnet på arbetsytan och sedan **Medlemmar**. 
    
-     ![Välja medlemmar till arbetsytan](media/service-create-distribute-apps/power-bi-apps-workspace-members.png)
+     ![Välja medlemmar till arbetsytan](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
     Office 365 Outlook-kontot för arbetsytan öppnas i ett nytt webbläsarfönster.
-2. När du hovrar över den färgade cirkeln i det övre vänstra hörnet omvandlas den till en pennikon. Välj den.
+2. Välj **redigeringspennan**.
    
-     ![Office 365-pennikon](media/service-create-distribute-apps/power-bi-apps-workspace-edit-image.png)
-3. Välj pennikonen igen och leta reda på den bild som du vill använda.
+     ![Office 365-pennikon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+3. Välj kamerabilden och leta reda på den bild som du vill använda.
    
-     ![Välj pennan igen](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+     ![Välj kamerabilden](media/service-create-workspaces/power-bi-workspace-old-camera.png)
 
      Bilder kan vara .png-, .jpg- eller .bmp-filer. Deras filstorlek kan vara stor, upp till 3 MB. 
 
-4. Välj **Spara**.
-   
-     ![Välja Spara](media/service-create-distribute-apps/power-bi-apps-workspace-save-image.png)
+4. Välj **OK** och sedan **Spara**.
    
     Bilden ersätter den färgade cirkeln i Outlook-fönstret i Office 365. 
    
-     ![Anpassad bild](media/service-create-distribute-apps/power-bi-apps-workspace-image-in-office-365.png)
+     ![Anpassad bild](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    
     Om några minuter visas den även i appen i Power BI.
-   
-     ![Anpassad bild](media/service-create-distribute-apps/power-bi-apps-image.png)
 
-## <a name="add-content-to-your-app-workspace"></a>Lägga till innehåll i din apparbetsyta
+## <a name="add-content-to-your-workspace"></a>Lägga till innehåll i din arbetsyta
 
-När du har skapat en apparbetsyta är det dags att lägga till innehåll. Det går till precis som att lägga till innehåll på Min arbetsyta, förutom att även andra på arbetsytan kan se och arbeta med det. En stor skillnad är att när du är klar, kan du publicera innehållet som en app. När du visar innehåll i innehållslistan på en apparbetsyta visas apparbetsytans namn som ägare.
+När du har skapat en arbetsyta är det dags att lägga till innehåll. Det går till precis som att lägga till innehåll på Min arbetsyta, förutom att även andra på arbetsytan kan se och arbeta med det. En stor skillnad är att när du är klar, kan du publicera innehållet som en app. När du visar innehåll i innehållslistan på en arbetsyta visas arbetsytans namn som ägare.
 
-### <a name="connect-to-third-party-services-in-app-workspaces"></a>Ansluta till tjänster från tredje part på apparbetsytor
+### <a name="connect-to-third-party-services-in-workspaces"></a>Ansluta till tjänster från tredje part på arbetsytor
 
 Appar tillhandahålls för alla tredjepartstjänster som Power BI stödjer, vilket gör det enkelt att hämta data från de tjänster du använder, till exempel Microsoft Dynamics CRM, Salesforce eller Google Analytics. Du kan publicera organisationsappar för att ge användarna de data de behöver.
 
@@ -96,7 +92,7 @@ Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisa
 * Med tiden planerar vi att avveckla användningen av organisationsinnehållspaket, så vi rekommenderar att du skapar appar hädanefter.  
 * Med den nya förhandsversionen av arbetsytan tar vi de första stegen mot att avveckla innehållspaket för organisationer. Du kan inte använda eller skapa dem i arbetsytor som är i förhandsversion.
 
-Du kan jämföra de två i [Hur skiljer sig de nya apparbetsytorna åt från befintliga apparbetsytor](service-new-workspaces.md#how-the-new-workspaces-are-different). 
+Du kan jämföra de två i [Hur skiljer sig de nya arbetsytorna åt från befintliga arbetsytor](service-new-workspaces.md#how-the-new-workspaces-are-different). 
 
 ## <a name="next-steps"></a>Nästa steg
 * [Installera och använda appar i Power BI](service-create-distribute-apps.md)

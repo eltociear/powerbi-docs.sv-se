@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654460"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841250"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Den nya filterupplevelsen i Power BI-rapporter
 
 Filtren i Power BI har nya funktioner och en ny design. När du väljer den nya filtermiljön, kan du formatera fönstret Filter så att det ser ut som resten av rapporten. Du kan låsa och till och med dölja filter. När du skapar din rapport, visas inte längre det gamla filterfönstret alls i fönstret Visualiseringar. Du kan göra all din filterredigering och -formatering i ett enda filterfönster. 
 
-![Ny filterupplevelse](media/power-bi-report-filter/power-bi-filter-reading.png)
+![Ny filterupplevelse](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-Det här är vad du kan göra i det nya fönstret för enskilda filter som rapportdesigner:
+Det här är vad du kan göra i det nya fönstret för filter som rapportdesigner:
 
 - Lägga till och ta bort fält att filtrera på. 
 - Ändra filterstatusen.

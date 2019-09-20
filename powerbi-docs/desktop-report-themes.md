@@ -7,42 +7,53 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023390"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904412"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
-Med **rapportteman** kan du använda ett färgtema i hela rapporten, till exempel företagets färger, säsongsfärger, ikonuppsättningar eller andra färgteman. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
+Med **rapportteman** kan du tillämpa designändringar i hela rapporten, till exempel genom att använda företagsfärger, ändra ikonuppsättningar eller använda ny förvald visuell formatering. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger och formatering från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
 
-![Rapportteman](media/desktop-report-themes/report-themes_1.png)
+![Rapportteman](media/desktop-report-themes/report-themes-1a.png)
 
-När du använder ett **Rapporttema** behöver du en JSON-fil som använder en grundläggande struktur. Du kan sedan importera den här JSON-filen till Power BI Desktop och tillämpa den på din rapport. Strukturen för JSON-filen och processen att importera (det är bara några knappklick) är snabb och enkel.
+När du använder ett anpassat **Rapporttema** behöver du en JSON-fil som använder en grundläggande struktur. Du kan sedan importera den här JSON-filen till Power BI Desktop och tillämpa den på din rapport.
 
-Du kan också anpassa och standardisera nästan alla element. Om du vill anpassa dem måste du använda JSON-filen som du justerar manuellt i fönstret **Formatering**. Målet är att ge dig full kontroll över hur rapporterna ser ut och känns på en detaljerad nivå.
+Du kan också anpassa och standardisera nästan alla element som visas i **formateringsverktygsfältet** via temats JSON-fil. Målet är att ge dig full kontroll över hur rapporterna ser ut och känns på en detaljerad nivå.
 
 ## <a name="how-report-themes-work"></a>Så här fungerar rapportteman
 Om du vill använda ett rapporttema i en Power BI Desktop-rapport kan du välja bland de tillgängliga rapportteman som är inbyggda eller importera ett anpassat tema.
 
 | Inbyggt rapporttema | Standardfärgsekvens    |
 |------ |---------- |
-| Standard   | ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
-| Stadsparken     | ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
-| Klassrum     | ![#4A8DDC](https://placehold.it/20/4A8DDC/000000?text=+) ![#4C5D8A](https://placehold.it/20/4C5D8A/000000?text=+) ![#F3C911](https://placehold.it/20/F3C911/000000?text=+) ![#DC5B57](https://placehold.it/20/DC5B57/000000?text=+) ![#33AE81](https://placehold.it/20/33AE81/000000?text=+) ![#95C8F0](https://placehold.it/20/95C8F0/000000?text=+) ![#DD915F](https://placehold.it/20/DD915F/000000?text=+) ![#9A64A0](https://placehold.it/20/9A64A0/000000?text=+)|
-| Färgblindssäker   | ![#074650](https://placehold.it/20/074650/000000?text=+) ![#009292](https://placehold.it/20/009292/000000?text=+) ![#FE6DB6](https://placehold.it/20/FE6DB6/000000?text=+) ![#FEB5DA](https://placehold.it/20/FEB5DA/000000?text=+) ![#480091](https://placehold.it/20/480091/000000?text=+) ![#B66DFF](https://placehold.it/20/B66DFF/000000?text=+) ![#B5DAFE](https://placehold.it/20/B5DAFE/000000?text=+) ![#6DB6FF](https://placehold.it/20/6DB6FF/000000?text=+)|
-| Elektrisk  | ![#118DFF](https://placehold.it/20/118DFF/000000?text=+) ![#750985](https://placehold.it/20/750985/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FF985E](https://placehold.it/20/FF985E/000000?text=+) ![#1DD5EE](https://placehold.it/20/1DD5EE/000000?text=+) ![#42F7C0](https://placehold.it/20/42F7C0/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#F64F5C](https://placehold.it/20/F64F5C/000000?text=+)|
-| Högkontrast     | ![#107C10](https://placehold.it/20/107C10/000000?text=+) ![#002050](https://placehold.it/20/002050/000000?text=+) ![#A80000](https://placehold.it/20/A80000/000000?text=+) ![#5C2D91](https://placehold.it/20/5C2D91/000000?text=+) ![#004B50](https://placehold.it/20/004B50/000000?text=+) ![#0078D7](https://placehold.it/20/0078D7/000000?text=+) ![#D83B01](https://placehold.it/20/D83B01/000000?text=+) ![#B4009E](https://placehold.it/20/B4009E/000000?text=+)|
-| Solnedgång    | ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
-| Skymning  | ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
+| Standard   | ![standard](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Highrise  | ![highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Chef     | ![chef](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Gränsen  | ![gränsen](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovativ    | ![innovativ](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Blomning     | ![blomning](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Tidvattenenergi | ![tidvattenenergi](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Temperatur   | ![temperatur](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Solenergi | ![solenergi](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Avvikande     | ![avvikande](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Storm     | ![storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Klassisk   | ![klassisk](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| Stadsparken     | ![stadsparken](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Klassrum     | ![klassrum](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Färgblindssäker   | ![färgblindssäker](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Elektrisk  | ![elektrisk](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| Högkontrast     | ![högkontrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Solnedgång    | ![solnedgång](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Skymning  | ![skymning](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
 Om du vill använda ett av de rapportteman som är inbyggda väljer du knappen **Växla tema** i menyfliksområdet **Start** och sedan väljer du ett tema från listrutan.
 
-![Välj ett rapporttema](media/desktop-report-themes/report-themes_2a.png)
+![Välj ett rapporttema](media/desktop-report-themes/report-themes-2a.png)
 
 Ditt rapporttema tillämpas på rapporten och sedan är du redo att sätta igång.
 
@@ -50,7 +61,7 @@ Ditt rapporttema tillämpas på rapporten och sedan är du redo att sätta igån
 
 Om du vill importera ett rapporttema väljer du knappen **Växla tema** i menyfliksområdet **Start**. Välj sedan **Importera tema** från listrutan.
 
-![Importera tema](media/desktop-report-themes/report-themes_3.png)
+![Importera tema](media/desktop-report-themes/report-themes-3a.png)
 
 Ett fönster visas där du kan gå till platsen för JSON-temafilen. Power BI Desktop söker efter .JSON-filer eftersom JSON är temafiltypen för Power BI-rapporten. I följande bild finns ett par stycken filer med helgteman. Vi ska välja ett helgtema för mars.
 
@@ -60,7 +71,7 @@ När temafilen har lästs in får du reda på det av Power BI Desktop.
 
 ![Temat importerades](media/desktop-report-themes/report-themes_5.png)
 
-Nu när vi har importerat en temafil ska vi titta på den lättförståeliga filstrukturen i JSON.
+Nu när vi har importerat en temafil ska vi titta på filstrukturen i JSON.
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Struktur för ett rapporttema i en JSON-fil
  Den grundläggande JSON-filen som valdes i föregående avsnitt (filen *St Patricks Day.json*) ser ut som följande skärmbild när den öppnas i ett redigeringsprogram:
@@ -73,17 +84,7 @@ JSON-filen måste innehålla följande rader:
 
 * **dataColors**: Listan med hexadecimala färgkoder som ska användas för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill.
 
-* **background**, **foreground** och **tableAccent**: Färgerna som ska tillämpas på olika typer av visuella objekt. 
-  - **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. 
-  - **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. 
-  - De visuella objekten**tabell** och **matris** använder dessa format som standard.
-
-Så här tillämpar du ett format på en **tabell** eller **matris**: 
-1. Välj visuellt objekt. 
-2. I fönstret **Visualiseringar** väljer du avsnittet **Format**.
-3. Expandera **Matrisstil** och välja sedan ett format i listrutan **Stil**.
-
-![Listrutan Stil](media/desktop-report-themes/report-themes_7.png)
+* **background**, **foreground** och **tableAccent**: Flera färgklasser. Vi lär dig mer om färgklasser längre fram i den här artikeln. Nu räcker det att du vet att färgklasserna gör att du kan ställa in många färger i rapporten på en gång.
 
 Här är texten i *St Patricks Day.json* som du kan använda för att skapa din egen JSON-fil:
 
@@ -97,7 +98,7 @@ Här är texten i *St Patricks Day.json* som du kan använda för att skapa din 
     }
 ```
 
-Därifrån kan du ange egna hexadecimala färgkoder för dina valda färger.
+Om du vill justera de grundläggande färgerna i rapporten kan du bara ändra namnet och hex-koden för den här filen så att du får en egen personlig JSON-fil som är klar att importera.
 
 I JSON-filen definierar du bara den formatering som du vill påverka. Allt som *inte* anges i din JSON-fil återgår helt enkelt till standardinställningarna för Power BI.
 
@@ -116,10 +117,12 @@ Avsnittet **Datafärger** i panelen **Format** speglar ditt rapporttema. Till ex
 
 Ser du allt det gröna? Det beror på att färgerna ingick i det **Rapporttema** som vi importerade och använde.
 
-### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationer när rapportens temafärger inte behålls i rapporterna
-Vi antar att du använder en anpassad färguppsättning (eller enskilda färger) på en viss datapunkt i ett visuellt objekt. När du använder ett tema för rapporten kommer detta *inte* åsidosätta den anpassade datapunktsfärgen.
+Färgerna i färgpaletten styrs av temat. Så om du väljer den tredje färgen på den översta raden för en datapunkt och senare byter till ett annat tema uppdateras datapunktens färg till den tredje färgen på den översta raden i det nya temat, precis som du ser när du ändrade teman i Microsoft Office.
 
-Du kanske också vill ange en datapunktsfärg manuellt med området Temafärger. Färgerna kommer *inte* att uppdateras när du installerar ett nytt tema för rapporten. Om du vill återgå till dina standardfärger (så att de uppdateras när du använder ett nytt rapporttema), kan du välja **Återgå till standard** i paletten **Temafärger**.
+### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationer när rapportens temafärger inte behålls i rapporterna
+Vi antar att du använder en anpassad färguppsättning (eller enskilda färger) på en viss datapunkt i ett visuellt objekt med hjälp av alternativet Anpassad färg i färgväljaren. När du använder ett tema för rapporten kommer detta *inte* åsidosätta den anpassade datapunktsfärgen.
+
+Du kanske också vill ange en datapunktsfärg manuellt med området Temafärger. Färgerna kommer *inte* att uppdateras när du installerar ett nytt tema för rapporten. Om du vill återgå till dina standardfärger (så att de uppdateras när du använder ett nytt rapporttema), kan du välja **Återgå till standard** eller välja en färg i paletten **Temafärger** i färgväljaren.
 
 ![Återgå till standard](media/desktop-report-themes/report-themes_9.png)
 
@@ -166,13 +169,139 @@ Här följer några fler rapportteman som du kan använda för att komma igång:
 * [High contrast](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
 
 ## <a name="report-theme-json-file-format"></a>Rapporttema i JSON-filformat
-Den grundläggande JSON-filen har fem obligatoriska rader:
+På den mest grundläggande nivån har tema-JSON-filen bara en nödvändig rad: **namnet.** 
 
-* **name**: Detta är temats namn och det enda obligatoriska fältet.
-* **dataColors**: Listan med hexadecimala färgkoder som ska användas för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill.
-* **background**, **foreground** och **tableAccent**: Färgerna som ska tillämpas på olika typer av visuella objekt. **foreground** gäller för texten i textrutan, KPI-måltexten, den flerradiga korttexten, kortvärdestexten, mätbildtexten, texten i det lodräta utsnittselementet samt i totaler för **tabell** och **matris** och värdestexten. **background** gäller knappfyllning och bakgrunden för kombinationsrutans etikett. Hur de här färgerna används beror på det specifika visuella formatet. Visuella **tabell**- och **matris**objekt använder dessa format som standard.
+```json
+    {
+        "name": "Custom Theme",
+    }
+```
 
-Om du vill skapa en JSON-fil med ett utökat format och mer detaljerad kontroll över formateringen, måste du lägga till ett **visualStyles**-avsnitt i JSON-filen. Du kan kapsla formateringen som anges i området **visualStyles**. Området **visualStyles** ser ut ungefär så här:
+*Förutom namn* är allt annat valfritt, vilket innebär att du kan lägga till de egenskaper som du vill formatera i tema ilen och fortsätta att använda standardvärden för Power BI för resten. 
+
+Under namnet kan du lägga till några grundläggande datafärgegenskaper. 
+
+
+* **dataColors**: Listan med hexadecimala färgkoder som ska användas för data i visuella objekt i Power BI Desktop. Listan kan innehålla så många eller så få färger som du vill. Om alla färger från den här listan har använts och det visuella objektet fortfarande behöver fler färger,återgår den till att använda standardfärgpaletten för Power BI. 
+* **bra, neutralt, dåligt**: Dessa statusfärger används av vattenfallsdiagrammet och det visuella KPI-objektet.
+* **maximi, medel, minimi, noll**: Dessa färger anger de olika tonade färgerna i dialogrutan villkorsstyrd formatering.  
+
+Ett grundläggande tema som definierar dessa färger skulle kunna se ut så här:
+
+```json
+    {
+        "name": "Custom Theme",
+          "dataColors": [
+                "#118DFF",
+                "#12239E", 
+                "#E66C37", 
+                "#6B007B", 
+                "#E044A7",
+                "#744EC2", 
+                "#D9B300", 
+                "#D64550",
+                "#197278", 
+                "#1AAB40"
+    ],
+        "good": "#1AAB40",
+        "neutral": "#D9B300",
+        "bad": "#D64554",
+        "maximum": "#118DFF",
+        "center": "#D9B300",
+        "minimum": "#DEEFFF",
+        "null": "#FF7F48"
+    }
+```
+
+Sedan kan du lägga till olika färgklasser. Med färgklasser kan du ange många färger i rapporten på en rad, genom att gruppera liknande visuella egenskaper som vanligtvis har samma färg. 
+
+Du kan se de sex färgklasser som du kan formatera i följande tabell.
+
+
+|Färgklass  |Det som formateras  |
+|---------|---------|
+|förgrund | Bakgrundsfärg för etiketter (när de är utanför datapunkter) <br> Trendlinjefärg <br>  Standardfärg för textruta <br> Tabell- och matrisvärdefärger och summeringsteckenfärger Datastaplarnas axelfärg <br> Kortdataetiketter <br> Värde för pratbubbla <br> Målfärg för KPI <br>  Textfärg för KPI <br> Utsnittsobjektets färg (i fokusläge)  <br> Teckenfärg för listrutobjekt i utsnitt <br> Teckenfärg för numerisk indatamängd i utsnitt <br> Teckenfärg för utsnittsrubrik <br> Linjefärg för punktdiagram <br> Prognoslinjefärg för linjediagram <br> Färg för ledande linje på karta <br> Filterfönster- och korttextfärg|
+|foregroundNeutralSecondary |Etikettfärger  <br> Teckenförklaringsfärg <br> Axelförklaringsfärg <br> Teckenfärg för tabell- och matrisrubrik <br> Linjefärg för mätarmål och målriktningslinje <br>  Axelfärg för KPI-trend <br> Skjutreglagefärg <br> Teckenfärg för utsnittsobjekt <br> Färg på utsnittskonturen <br> Linjediagrammets hovringsfärg <br> Flerradskortsrubrikfärg <br> Linjefärg för banddiagram <br> Kantlinjefärg för formkarta <br> Teckenfärg för knapptext <br> Linjefärg för knappikon <br> Kantfärg för knapp |
+| foregroundNeutralTertiary | förklaring nedtonad färg <br> Kortkategorietikettfärg <br> Etikettfärg för flerradskortkategorier <br> Fältfärg för flerradskortkategorier <br> Snittfärg för konverteringsgrad för trattdiagram 
+| backgroundLight | Axelrutnätsfärg <br> Rutnätsfärger för tabeller och matriser <br> Bakgrundsfärg för utsnittsrubrik (i fokusläge)  <br> Kantfärg för multiradskort  <br> Formfyllningsfärg <br> Bakgrundsfärg för mätarbåge <br> Bakgrundsfärg för tillämpat filterkort <br> |
+backgroundNeutral | Rutnätskantfärg för tabeller och matriser <br> Standardfärg för formkarta <br> Fyllnadsfärg för band i banddiagram(när alternativet matcha serie är inaktiverat) |
+bakgrund | Bakgrundsfärg för etiketter (när de är innanför datapunkter) <br> Bakgrundsfärg för listruteobjekt för utsnitt  <br> Linjefärg för ringdiagram <br> Linjefärg för trädkarta <br> Bakgrundsfärg för kombinationsdiagram <br> Knappfyllningsfärg <br> Filterfönstret och det tillgängliga filterkortets bakgrundsfärg |
+tableAccent | Åsidosätter tabell- och matrisrutnätets dispositionsfärg vid visning |
+
+
+Här är ett exempel på ett tema som anger färg klasser:
+
+```json
+    {
+        "name": "Custom Theme",
+        "foreground": "#252423",
+          "foregroundNeutralSecondary": "#605E5C",
+          "foregroundNeutralTertiary": "#B3B0AD",
+        "background": "#FFFFFF",
+          "backgroundLight": "#F3F2F1",
+          "backgroundNeutral": "#C8C6C4",
+        "tableAccent": "#118DFF"
+    }
+```
+
+Härnäst kan du lägga till textklasser i JSON-filen som liknar färgklasser, men som är utformade för att du ska kunna uppdatera teckenstorlek, färg och familj för grupper av text i rapporten. Det finns 12 textklasser, men i själva verket behöver du bara ange fyra klasser, som kallas*primära klasser*, för att ändra all textformatering i rapporten. Andra text klasser, som betraktas som *sekundära klasser*, ärver eller härleder automatiskt egenskaperna från deras associerade primära klasser. En sekundär klass hämtar ofta en ljusare färgton för textfärgen eller en större eller mindre textstorlek jämfört med den primära klassen. 
+
+Ta klassen *etikett* som exempel. Standardformateringen för etikettklassen är Segoe UI, #252423 (en mörkgrå färg) och 12 punkter,och den här klassen används för att formatera värdena i tabellen och matrisen. Vanligtvis kommer summan i en tabell eller matris att ha liknande formatering men med fetstil så att den syns bättre. Men du behöver aldrig ange det själv i tema-JSON. Power BI löser det åt dig automatiskt. Om du senare bestämmer dig för att etiketterna ska vara på 14 punkter och anger detta i ditt tema,behöver du inte också uppdatera fetstilsklassen eftersom den ärver all textformatering från etikettklassen och lägger helt enkelt till fetstil. 
+
+Följande visas i tabellistan:
+* De fyra primära textklasserna, vad de formaterar och deras standardinställningar
+* Varje sekundär klass, vad de formaterar och deras standardinställningar som är unika i förhållande till primärklassen
+
+
+|Primärklass  |Sekundärklasser  |Klassnamn i JSON  |Inställningar  |Associerade visuella objekt  |
+|---------|---------|---------|---------|---------|
+| Bildtext   | Saknas   | bildtext | DIN <br> #252423 <br> 45pt |Kortdataetiketter <br> KPI-indikatorer|
+|Sidhuvud|Saknas|sidhuvud|Segoe UI Semibold <br> #252423 <br> 12 pt |Sidhuvud med viktiga påverkare |
+| Rubrik || rubrik    |DIN <br> #252423 <br> 12 pt |Rubrik för kategoriaxel <br> Rubrik för värdeaxel <br> Flerradskortsrubrik * <br> Sidhuvud för utsnitt|
+|-| Stor rubrik | stor rubrik    |14pt   |Visuell rubrik |
+|Etikett ||etikett |Segoe UI<br>#252423<br>10pt |Rubriker för tabell- och matrisrubriker <br> Matrisradrubriker<br>Tabeller och matriser<br>Tabell- och matrisvärden |
+|-|Semibold |semiboldLabel| Segoe UI Semibold   | Profiltext för viktiga påverkare
+|-|Stor    |largeLabel |12 pt   | Dataetiketter för multiradkort |
+|-|Liten    |smallLabel |9pt    |Referenslinjeetiketter * <br>Datumintervallsetiketter för utsnitt<br> Teckenfärg för numerisk indatamängd i utsnitt<br>Utsnittssökruta<br>Text om viktiga påverkares påverkan|
+|-|Ljus    |lightLabel |#605E5C    |Förklaringstext<br>Knapptext<br>Etikett för kategoriaxel<br>Dataetiketter för trattdiagram<br>Konverteringstaktsetiketter för trattdiagram<br>Mätarmål<br>Kategorietikett för punktdiagram<br>Utsnittsobjekt|
+|-|Fetstil |boldLabel  |Segoe UI Bold  |Matrisdelsummor<br>Matrissummor<br>Tabellsummor |
+|-|Stor och lätt  |largeLightLabel    |#605E5C<br>12 pt    |Kortkategorietiketter<br>Mätaretiketter<br>Kortkategorietiketter med flera rader |
+|-|Liten och lätt  |smallLightLabel    |#605E5C<br>9pt |Dataetiketter<br>Värdeaxeletiketter|
+
+
+Du behöver inte ange de sekundära klasserna i din temafil eftersom de ärver från de primära klasserna. Om du inte gillar arvs eglerna (till exempel om du inte vill att dina summor ska vara en fet version av värdena i en tabell) kan du uttryckligen formatera de sekundära klasserna i temafilen, precis som du kan formatera de primära klasserna.
+
+Här är ett exempel på ett tema som endast anger de primära textklasserna: 
+
+```json
+    {
+            "name": "Custom Theme",
+          "textClasses": {
+                "callout": {
+                    "fontSize": 45,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "title": {
+                    "fontSize": 12,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "header": {
+                    "fontSize": 12,
+                    "fontFace": "Segoe UI Semibold",
+                    "color": "#252423"
+                },
+                "label": {
+                    "fontSize": 10,
+                    "fontFace": "Segoe UI",
+                    "color": "#252423"
+                }
+        }    
+    }
+```
+
+Slutligen, om du vill skapa en JSON-fil med ett utökat format och mer detaljerad kontroll över formateringen, måste du lägga till ett **visualStyles**-avsnitt i JSON-filen. Du kan kapsla formateringen som anges i området **visualStyles**. Området **visualStyles** ser ut ungefär så här:
 
     visualStyles: {
         visualName: {
@@ -184,7 +313,52 @@ Om du vill skapa en JSON-fil med ett utökat format och mer detaljerad kontroll 
         }
     }
 
-För avsnitten **visualName** och **cardName** använder du ett specifikt visuellt objekt och cardName. Använda en asterisk (”\*”) om du vill att inställningen ska gälla för alla visuella objekt eller kort som har en egenskap för ett specifikt visuellt objekt. Du kan också använda asterisken (”\*”) när du vill tillämpa en inställning globalt i rapporten, t.ex. en teckenstorlek eller specifik teckensnittsfamilj för de visuella objekten.
+För avsnitten **visualName** och **cardName** använder du ett specifikt visuellt objekt och cardName. För närvarande är **styleName** alltid en asterisk ("*"), men i en framtida version kan du skapa olika format för dina visuella objekt och ge dem namn (liknar funktionen tabell- och matriststil). **PropertyName** är namnet på det önskade formateringsalternativet och i **propertyValue** anger du vad du vill att formateringsalternativet ska vara.  
+
+För **visualName** och **cardName** kan du använda en asterisk (”\*”) om du vill att inställningen ska gälla för alla visuella objekt eller kort som har en egenskap. Om du använder asterisken (“\*") för både det visuella objektet och kortnamnet kommer du att tillämpa en inställning globalt i rapporten, till exempel en teckenstorlek eller en speciell teckensnittsfamilj för all text i alla visuella objekt.
+
+Här är ett exempel på hur ett par egenskaper kan anges via de visuella formaten. 
+
+```json
+{  
+   "name":"Custom Theme",
+   "visualStyles":{  
+      "*":{  
+         "*":{  
+            "*":[{  
+                  "wordWrap":true
+            }],
+            "categoryAxis":[{
+                  "gridlineStyle":"dotted"
+            }],
+            "filterCard":[{  
+                  "$id":"Applied",
+                  "foregroundColor":{"solid":{"color":"#252423"}}
+               },
+               {  
+                  "$id":"Available",
+                  "border":true
+            }]
+         }
+      },
+      "scatterChart":{  
+         "*":{  
+            "bubbles":[{  
+                  "bubbleSize":-10
+            }]
+         }
+      }
+   }
+}
+```
+
+Det här exemplet visar följande:
+
+* Aktivera radbyte överallt
+* Ange formatet som prickad för alla visuella objekt med en kategoriaxel
+* Ange formatering för de tillgängliga och använda filterkorten (Observera formatet med "$id" för att ange olika versioner av filterkorten)
+* Ange bubblans storlek för punktdiagram till -10.
+
 
 > [!NOTE]
 > Du behöver bara ange de formateringselement som du vill påverka. De formateringselement som inte ingår i JSON-filen återgår helt enkelt till sina standardvärden och inställningar.
@@ -193,12 +367,6 @@ För avsnitten **visualName** och **cardName** använder du ett specifikt visuel
 
 ### <a name="json-file-element-definitions"></a>Elementdefinitioner för JSON-filer
 Tabellerna i det här avsnittet definierar namn på visuella objekt (*visualName*), kortnamn (*cardName*) och uppräkningar som krävs för att skapa en JSON-fil.
-
-När du använder *dateTime* måste datumet vara ett ISO-datum med enkla citattecken med datetime i början. Här är ett exempel:
-
-    “datetime’2011-10-05T14:48:00.000Z’”
-
-Booleska värden är antingen *sant* eller *falskt*. Strängar måste vara inom dubbla citattecken, som i "den här strängen".
 
 | **visualName** |
 | --- |
@@ -291,7 +459,20 @@ I följande tabell definieras *cardName*-värden. Det första värdet i varje ce
 | zoom: Zooma |
 
 ### <a name="properties-within-each-card"></a>Egenskaper inom varje kort
-I nedanstående avsnitt definieras egenskaperna inom varje kort:
+I nedanstående avsnitt definieras egenskaperna inom varje kort. Kortnamnet följs av varje egenskapsnamn. För varje egenskap visas ett namn om formateringsfönstret visas, en beskrivning av vad formateringsalternativet gör och typen av formateringsalternativ. Med den här metoden kan du se vilka typer av värden som du kan använda i din temafil. 
+
+När du använder **dateTime** måste datumet vara ett ISO-datum med enkla citattecken med datetime i början. Här är ett exempel:
+
+    “datetime’2011-10-05T14:48:00.000Z’”
+
+Booleska värden är antingen sanna eller falska. Strängar måste vara inom dubbla citattecken, som i "den här strängen". Siffrorna är endast värdet, utan citattecken.
+
+Färgerna bör använda följande format, där din anpassade hex-kod placeras där "FFFFFF" finns i följande exempel.  
+
+    { "solid": { "color": "#FFFFFF" } }
+
+En uppräkning, som oftast används för listrutealternativ, innebär att den kan ställas in på något av de alternativ som visas i fönstret, till exempel "RightCenter" för förklaringens placering eller "datavärde, procent av total" för en cirkeldiagrametikett. Uppräkningsalternativen visas under egenskapslistan.
+
 
 ```json
       "general":

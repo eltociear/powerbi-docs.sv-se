@@ -269,6 +269,8 @@
               href: desktop-inline-hierarchy-labels.md
             - name: Använda numeriskt intervallutsnitt
               href: desktop-slicer-numeric-range.md
+            - name: Använda relativt datumutsnitt
+              href: desktop-slicer-filter-date-range.md
             - name: Skapa ett utsnitt som du kan ändra storlek på
               href: power-bi-slicer-filter-responsive.md
             - name: Skapa anpassade Cortana-svarskort

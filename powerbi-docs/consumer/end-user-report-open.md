@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391760"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903794"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *konsumenter*
 En rapport är en eller flera sidor med visuella objekt. Rapporter skapas av Power BI-*designer* och [delas med *användare* direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 
@@ -30,7 +30,7 @@ Nu ska vi öppna en rapport som har delats med dig direkt och sedan öppnar en r
    ![Startsida](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Öppna en rapport som har delats med dig
-Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i ett e-postmeddelande eller genom att lägga till den i din Power BI-start. Innehåll som delas på detta sätt visas i behållaren **delat med mig** på navigeringsfältet och i avsnittet **delat med mig** på Hem-arbetsytan.
+Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i ett e-postmeddelande eller genom att lägga till den automatiskt. Innehåll som delas på detta sätt visas i behållaren **delat med mig** på navigeringsfältet och i avsnittet **delat med mig** på Hem-arbetsytan.
 
 1. Öppna Power BI-tjänsten (app.powerbi.com).
 
@@ -50,6 +50,12 @@ Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i e
 
    ![flikar för rapportsida](./media/end-user-report-open/power-bi-ytd.png)
 
+6. Expandera fönstret **Filter** till höger. Filter som har tillämpats på den här rapportsidan eller i hela rapporten visas här.
+
+7. När du hovrar över ett visuellt rapportobjekt visas flera ikoner och en ellips (...). Om du vill se de filter som används för ett visst visuellt objekt väljer du filterikonen. Här har vi valt filterikonen för linjediagrammet *Totalt antal enheter efter rullande period och region*.
+
+   ![flikar för rapportsida](./media/end-user-report-open/power-bi-visual-filters.png)
+
 6. Just nu ser vi hela rapportsidan. Om du vill ändra visningen (zoomning) av sidan väljer du listrutan Visa från det övre högra hörnet och väljer **Faktisk storlek**.
 
    ![ändra zoom](./media/end-user-report-open/power-bi-fit-new.png)
@@ -59,15 +65,20 @@ Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i e
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Öppna en rapport som är en del av en app
 Om du har fått appar från kollegor eller från AppSource, är dessa appar tillgängliga från startsidan och från behållaren **Appar** i navigeringsfältet. En [app](end-user-apps.md) är ett paket med instrumentpaneler och rapporter.
 
+### <a name="prerequisites"></a>Förutsättningar
+Om du vill följa med hämtar du appen Försäljning och marknadsföring.
+1. Navigera till appsource.microsoft.com i webbläsaren.
+1. Sök efter "Försäljning och marknadsföring" och välj **Microsofts exempel – Försäljning & marknadsföring**.
+1. Välj **Hämta nu** > **Fortsätt** > **Installera** för att installera appen i din appbehållare. 
+
+Du kan öppna appen från din appbehållare eller från Start.
 1. Gå tillbaka till startsidan genom att välja **Start** i navigeringsfältet.
 
 7. Rulla nedåt tills du ser **delat med mig**.
 
-   ![Startsida](./media/end-user-report-open/power-bi-my-apps.png)
+   ![Startsida](./media/end-user-report-open/power-bi-app.png)
 
-8. Välj en av apparna för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas sin en instrumentpanel eller en rapport. Om du väljer appen:
-    - öppnas rapporten, allt är klart.
-    - öppnas en instrumentpanel, se ***öppna en rapport från en instrumentpanel*** nedan.
+8. Välj den nya försäljnings- och marknadsföringsappen för att öppna den. Beroende på vilka alternativ som angetts av appens *designer*, kommer appen att öppnas sin en instrumentpanel eller en rapport. Den här appen öppnas på en instrumentpanel.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Öppna en rapport från en instrumentpanel
@@ -94,5 +105,6 @@ När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du a
 - och mycket mer
 
 ## <a name="next-steps"></a>Nästa steg
-[Öppna och visa en instrumentpanel](end-user-dashboard-open.md)
+[Öppna och visa en instrumentpanel](end-user-dashboard-open.md)    
+[Rapportfilter](end-user-report-filter.md)
 
