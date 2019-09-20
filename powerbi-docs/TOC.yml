@@ -1347,13 +1347,21 @@
               href: service-gateway-mashup-on-premises-cloud.md
         - name: Aktivera enkel inloggning (SSO)
           items:
-            - name: Enkel inloggning (SSO) – översikt
+            - name: Översikt över SSO
               href: service-gateway-sso-overview.md
-            - name: Enkel inloggning (SSO) – Kerberos
-              href: service-gateway-sso-kerberos.md
-            - name: Enkel inloggning (SSO) – Kerberos – resursbaserad
-              href: service-gateway-sso-kerberos-resource.md
-            - name: Enkel inloggning (SSO) – SAML
+            - name: Kerberos-baserad SSO
+              items:
+                - name: Konfigurera Kerberos-baserad SSO
+                  href: service-gateway-sso-kerberos.md
+                - name: Datakällspecifik konfiguration
+                  items:
+                    - name: SAP HANA
+                      href: service-gateway-sso-kerberos-sap-hana.md
+                    - name: SAP BW – sapcrypto.dll (Common Crypto-biblioteket)
+                      href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+                    - name: SAP BW – gx64krb5.dll och gsskrb5.dll
+                      href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: SAML-baserad SSO
               href: service-gateway-sso-saml.md
         - name: Felsöka gatewayen
           href: service-gateway-onprem-tshoot.md
