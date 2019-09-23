@@ -12,10 +12,10 @@ ms.date: 05/29/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 7148a52d7c7475fbe685f83b1e1cc325521460db
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "66413163"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Hur visuella objekt korsfiltrerar varandra i en Power BI-rapport
@@ -23,11 +23,11 @@ En av de viktigaste funktionerna i Power BI är det sätt på vilket alla visuel
 
 ![video med interaktion av visuella objekt](media/end-user-interactions/interactions.gif)
 
-Som standard, väljer en datapunkt i en visualisering på en rapportsida att korsfiltrera, korsmarkering, och öka detaljnivån i andra visualiseringar på sidan. 
+När en datapunkt väljs i en visualisering på en rapportsida sker som standard korsfiltrering, korsmarkering och detaljgranskning av de andra visualiseringarna på sidan. 
 
-Detta kan vara användbart att identifiera hur ett värde i dina data som bidrar till en annan. Till exempel att välja segmentet i diagrammet, visar bidrag från segmentet i varje kolumn i totalt antal enheter efter månad diagram och den har filtrerats linjediagrammet till höger.
+Detta kan vara användbart för att identifiera hur ett värde i dina data bidrar till ett annat. Om du till exempel väljer segmentet Moderering i ringdiagrammet markeras bidraget från det segmentet till varje kolumn i diagrammet Totalt antal enheter efter månad, och linjediagrammet till höger har filtrerats.
 
-![Bild av visuella objekt interagerar](media/end-user-interactions/power-bi-interactions.png)
+![bild med interaktion av visuella objekt](media/end-user-interactions/power-bi-interactions.png)
 
 Se [Om filtrering och markering](../power-bi-reports-filters-and-highlighting.md). 
 
@@ -37,8 +37,8 @@ Exakt hur visuella objekt på en sida interagerar anges av rapport-*designern*. 
 > Termerna *Korsfilter* och *Korsmarkering* används för att särskilja det beteende som beskrivs här från vad som händer när du använder fönstret **Filter** till att filtrera och markera visualiseringar.  
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-- Om din rapport har en visualisering som stöder [Detaljgranskning](../power-bi-visualization-drill-down.md), som standard att gå en visualisering har ingen inverkan på de övriga visualiseringarna på rapportsidan.     
-- Om du använder visualA för att interagera med visualB tillämpas visuell nivå filter från visualA på visualB.
+- Om din rapport har en visualisering som stöder [detaljgranskning](../power-bi-visualization-drill-down.md) så har detaljgranskning av en visualisering som standard ingen inverkan på andra visualiseringar på rapportsidan.     
+- Om du använder visuellt objekt A för att interagera med visuellt objekt B tillämpas filter på visuell nivå från visuellt objekt A på visuellt objekt B.
 
 ## <a name="next-steps"></a>Nästa steg
 [Så här använder du rapportfilter](../power-bi-how-to-report-filter.md)

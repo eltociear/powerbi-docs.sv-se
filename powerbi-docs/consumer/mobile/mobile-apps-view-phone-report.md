@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: mshenhav
 ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65101018"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Visa Power BI-rapporter som är optimerade för din telefon
@@ -24,7 +24,7 @@ Gäller för:
 |:--- |:--- |
 | iPhone-telefoner |Android-telefoner |
 
-När du visar en Power BI-rapport på din telefon, kontrollerar Power BI om rapporten har optimerats för telefoner. Om den har öppnas Power BI automatiskt den optimerade rapporten i stående vy.
+När du visar en Power BI-rapport på din telefon kontrollerar Power BI om rapporten har optimerats för telefoner. Om så är fallet öppnar Power BI automatiskt den optimerade rapporten i stående vy.
 
 ![Rapport i stående läge](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -46,7 +46,7 @@ Om en telefonoptimerad rapport har filter definierade, kan du använda dessa fil
     ![Avancerat filter för rapport på telefon](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Korsmarkera visuella objekt
-Korsmarkering i stående fungerar vy som det gör i Power BI-tjänsten och på telefonen i liggande läge: När du väljer data i ett visuellt objekt markeras relaterade data i övriga visuella objekt på samma sida.
+Korsmarkering av visuella objekt i stående vy fungerar på samma sätt som i Power BI-tjänsten och på telefoner i liggande vy: När du väljer data i ett visuellt objekt markeras relaterade data i övriga visuella objekt på samma sida.
 
 Läs mer om [filtrering och markering i Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -56,13 +56,13 @@ I rapporter på telefonen markeras det visuella objektet när du väljer det, vi
 Du kan bläddra i det visuella objektet när det är markerat. Om du vill avmarkera ett visuellt objekt är det bara att trycka var som helst utanför det.
 
 ## <a name="open-visuals-in-focus-mode"></a>Öppna visuella objekt i fokusläge
-Telefonrapporter erbjuder också en Fokusläge: Du får en större vy över en enda visual och utforska den enklare.
+Telefonrapporter erbjuder även ett fokusläge: Du får en större vy av ett enda visuellt objekt och kan enklare utforskar det.
 
 * Knacka på ellipsen i en telefonrapport ( **...** ) i det övre högra hörnet i ett visuellt objekt > **Expandera till fokusläge**.
   
     ![Expandera till fokusläge](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-Vad du gör i fokusläget överförs till rapportarbetsytan och vice versa. Om du markerar ett värde i ett visuellt objekt och sedan gå tillbaka till hela rapporten, till exempel filtreras rapporten till det värde som du markerade i det visuella objektet.
+Det du gör i fokusläget överförs till rapportarbetsytan och vice versa. Om du till exempel markerar ett värde i ett visuellt objekt och sedan går tillbaka till hela rapporten filtreras rapporten till det värde som du markerade i det visuella objektet.
 
 Vissa åtgärder kan endast utföras i fokusläge på grund av skärmens storlek:
 
@@ -74,29 +74,29 @@ Vissa åtgärder kan endast utföras i fokusläge på grund av skärmens storlek
   
     ![Återställ](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    Återställ är tillgängligt på rapportnivå, avmarkera alla visuella objekt, eller på visuell nivå, rensa utforskning från det valda visuella objektet.   
+    Återställ är tillgängligt på rapportnivå, där utforskning rensas från alla visuella objekt, och på nivå för visuellt objekt, där utforskning rensas från det markerade visuella objektet.   
 
 ## <a name="drill-down-in-a-visual"></a>Öka detaljnivån i ett visuellt objekt
 Om hierarkinivåerna har definierats i ett visuellt objekt kan du öka detaljnivån för informationen i ett visuellt objekt och sedan återgå. Du kan[ öka detaljnivån](../end-user-drill.md) i antingen Power BI-tjänsten eller Power BI Desktop.
 
-Det finns några typer av detaljnivå:
+Det finns några typer av detaljnivåökning:
 
-### <a name="drill-down-on-a-value"></a>Öka detaljnivån för ett värde
-1. Tryck länge på (tryck och håll ned) på en datapunkt i ett visuellt objekt.
-2. Knappbeskrivning visas, och om hierarkin har definierats använder sedan knappbeskrivning sidfoten visas gå nedåt och uppåt-pilen.
-3. Tryck på nedpilen för nedåt
+### <a name="drill-down-on-a-value"></a>Öka detaljnivå för ett värde
+1. Lång tryckning (tryck och håll) på en datapunkt i ett visuellt objekt.
+2. En knappbeskrivning visas, och om hierarkin är definierad visar knappbeskrivningens sidfot pil för att öka eller minska detaljnivån.
+3. Tryck på nedåtpilen för att öka detaljnivån
 
-    ![Tryck på detaljnivå](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Tryck på öka detaljnivån](././media/mobile-apps-view-phone-report/report-drill-down.png)
     
-4. Tryck på uppåt-pilen för ökad detaljnivå uppåt.
+4. Tryck på uppåtpilen för att minska detaljnivån.
 
-### <a name="drill-to-next-level"></a>Gå till nästa nivå
+### <a name="drill-to-next-level"></a>Ändra till nästa detaljnivå
 1. Knacka på ellipsen i en telefonrapport ( **...** ) i det övre högra hörnet > **Expandera till fokusläge**.
    
     ![Expandera till fokusläge](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     I det här exemplet visar staplarna värden för delstater.
-2. Tryck på utforskningsikonen ![Utforskningsikonen](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) i nedre vänstra hörnet.
+2. Tryck på utforskningsikonen ![Utforskningsikonen](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) nere till vänster.
    
     ![Utforskningsläge](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Tryck på **Visa nästa nivå** eller **Expandera till nästa nivå**.
@@ -113,21 +113,21 @@ Det finns några typer av detaljnivå:
    
     ![Återställ](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
-## <a name="drill-through-from-a-value"></a>Visa detaljerad information från ett-värde
-Gå igenom ansluter värden i en rapportsida med andra rapportsidor. När detaljgranska från en datapunkt till en annan rapportsida punktvärden data används för att filtrera de detaljerad via sidan eller kommer att finnas i kontexten för den valda data.
-Rapportförfattarna kan [definiera detaljnivå](https://docs.microsoft.com/power-bi/desktop-drillthrough) när de skapar rapporten.
+## <a name="drill-through-from-a-value"></a>Detaljgranska från ett värde
+Detaljgranska ansluter värden på en rapportsida till andra rapportsidor. När du detaljgranskar från en datapunkt till en annan rapportsida används datapunktsvärdena för att filtrera den detaljgranskade sidan, eller så kommer den att vara i kontexten för valda data.
+Rapportförfattarna kan [definiera detaljgranskning](https://docs.microsoft.com/power-bi/desktop-drillthrough) när de skapar rapporten.
 
-1. Tryck länge på (tryck och håll ned) på en datapunkt i ett visuellt objekt.
-2. Knappbeskrivning visas och om detaljnivå definieras knappbeskrivning sidfoten sedan att visa detaljerad pilen.
-3. Tryck på pilen för detaljerad
+1. Lång tryckning (tryck och håll) på en datapunkt i ett visuellt objekt.
+2. En knappbeskrivning visas, och om detaljgranskning är definierad visar knappbeskrivningens sidfot pil för detaljgranskning.
+3. Tryck på pilen för att detaljgranska
 
-    ![Tryck på detaljnivå](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Tryck på detaljgranska](././media/mobile-apps-view-phone-report/report-drill-through1.png)
 
-4. Välj vilken rapportsida som ska visa detaljerad information
+4. Välj vilken rapportsida du vill detaljgranska
 
-    ![Välj rapportsidan](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Välj rapportsida](././media/mobile-apps-view-phone-report/report-drill-through2.png)
 
-5. Använd Bakåt-knappen på app-huvudet för att gå tillbaka till sidan som du utgick från.
+5. Använd knappen Tillbaka i apphuvudet för att gå tillbaka till den sida som du började från.
 
 
 ## <a name="next-steps"></a>Nästa steg

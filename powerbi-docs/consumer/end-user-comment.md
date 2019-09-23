@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 2796b29ee553ece77846f5edc8af4b2523fd48c6
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522797"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073536"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Lägga till kommentarer på en instrumentpanel eller i en rapport
 Lägg till en personlig kommentar eller starta en konversation om en instrumentpanel eller en rapport med dina kollegor. **Kommentarsfunktionen** är bara ett exempel på hur en *användare* kan samarbeta med andra. 
@@ -25,16 +25,18 @@ Lägg till en personlig kommentar eller starta en konversation om en instrumentp
 ![kommentarsvideo](media/end-user-comment/comment.gif)
 
 ## <a name="how-to-use-the-comments-feature"></a>Hur du använder kommentarsfunktionen
-Kommentarer kan läggas till på en hel instrumentpanel, i enskilda visuella objekt på en instrumentpanel, på en rapportsida samt i enskilda visuella objekt på en rapportsida. Lägg till en allmän kommentar eller en kommentar riktad till specifika kollegor.  
+Kommentarer kan läggas till på en hel instrumentpanel, i enskilda visuella objekt på en instrumentpanel, på en rapportsida, i en sidnumrerad rapport samt i enskilda visuella objekt på en rapportsida. Lägg till en allmän kommentar eller en kommentar riktad till specifika kollegor.  
 
 När du lägger till en kommentar i en rapport hämtar Power BI de aktuella filter- och utsnittsvärdena. Det innebär att när du väljer eller svarar på en kommentar så kan rapportsidan eller rapportens visuella objekt ändras till att visa de filter- och utsnittsval som var aktiva när kommentaren först lades till.  
 
 ![video om rapport med filter](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Varför är det här viktigt? Anta att en kollega använde ett filter som gav en intressant insikt som kollegan vill dela med teamet. Utan det filtret skulle kommentaren kanske inte ge någon tydlig information. 
+Varför är det här viktigt? Anta att en kollega använde ett filter som gav en intressant insikt som kollegan vill dela med teamet. Utan det filtret skulle kommentaren kanske inte ge någon tydlig information.
+
+Om du använder en sidnumrerad rapport kan du endast lämna en allmän kommentar om rapporten.  Det finns inte stöd för att lämna kommentarer om enskilda visuella objekt i rapporten.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Lägga till en allmän kommentar på en instrumentpanel eller i en rapport
-Processerna för att lägga till kommentarer på en instrumentpanel eller i en rapport liknar varandra. I det här exemplet använder vi en instrumentpanel. 
+Processerna för att lägga till kommentarer på en instrumentpanel eller i en rapport liknar varandra.  I det här exemplet använder vi en instrumentpanel. 
 
 1. Öppna en Power BI-instrumentpanel eller en rapport och välj ikonen **Kommentarer**. Då öppnas dialogrutan Kommentarer.
 

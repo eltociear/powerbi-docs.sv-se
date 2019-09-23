@@ -10,22 +10,19 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 82c8bbb5361730b306cacd14dc9598ca12035027
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81dfc6961ff0c00b609f98e50da3532a230cf26d
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61136197"
 ---
-# <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Använda dataflöden med lokala datakällor (förhandsversion)
+# <a name="using-dataflows-with-on-premises-data-sources"></a>Använda dataflöden med lokala datakällor
 
 Med **dataflöden**, kan du skapa en samling av data från olika källor, rensa data, omvandla dem och sedan läsa in dem till Power BI-lagring. När du skapar dataflöde kan du använda lokala datakällor. Den här artikeln visar krav som är associerade med att skapa dataflöden och hur din **Företagsgateway** måste vara konfigurerad för att aktivera dessa anslutningar.
 
 ![Dataflöden och gatewayar](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> [!NOTE]
-> Funktionen dataflöden är en förhandsversion och kan komma att ändras och uppdateras innan den är allmänt tillgänglig.
- 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Konfigurera en företagsgateway för användning med dataflöden
 
 Om du vill använda en lokal datakälla i ett dataflöde, måste alla användare som skapar dataflödet ha en **Företagsgateway** installerad och konfigurerad. Den användare som skapar dataflödet måste också vara administratör för Företagsgatewayen för att kunna använda denna gateway för ett dataflöde.
@@ -80,8 +77,8 @@ Den här artikeln tillhandahåller information om hur du använder en lokal data
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Använda beräknade entiteter i Power BI Premium (förhandsversion)](service-dataflows-computed-entities-premium.md)
-* [Resurser för utvecklare för Power BI-dataflöden (förhandsversion)](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:
 * [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)

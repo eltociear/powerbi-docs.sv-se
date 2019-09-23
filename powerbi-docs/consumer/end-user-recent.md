@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 4bb69c8ead92bf69671107fdd5bfa0eef0ae5c0d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61054919"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Senaste** innehåll i Power BI-tjänsten
@@ -37,7 +37,7 @@ Om du har fler än fem senast besökta objekt väljer du **se alla** för att ö
 
 ![visa allt senaste innehåll](./media/end-user-recent/power-bi-recent-list.png)
 
-Härifrån du kan interagera med innehållet som du skulle göra på enskilda [ **instrumentpaneler**](end-user-dashboards.md), [ **rapporter**](end-user-reports.md), och  **Arbetsböcker** flikar, och för appar <!--[**Apps**](end-user-apps.md)--> screen.
+Härifrån du kan interagera med innehållet på samma sätt som på enskilda flikar för [**instrumentpaneler**](end-user-dashboards.md), [**rapporter**](end-user-reports.md) och **arbetsböcker** samt på apparnas <!--[**Apps**](end-user-apps.md)--> skärm.
 
 ## <a name="next-steps"></a>Nästa steg
 <!--[Power BI service Apps](end-user-apps.md)-->

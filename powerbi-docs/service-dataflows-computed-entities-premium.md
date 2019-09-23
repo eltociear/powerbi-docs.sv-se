@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61138198"
@@ -85,8 +85,8 @@ I den här artikeln har vi beskrivit de beräknade entiteter och dataflöden som
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 * [Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)](service-dataflows-add-cdm-folder.md)
 * [Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

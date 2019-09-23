@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 7532b0b381e43c6e413d27fa141c22e58dfba84e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61150498"
@@ -84,9 +84,9 @@ Mer information om dataflöden, CDM och Azure Data Lake Storage Gen2 finns i fö
 Allmän information om dataflöden finns i de här artiklarna:
 
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 
 Mer information om Azure Storage finns i de här artiklarna:
 * [Säkerhetsguiden för Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

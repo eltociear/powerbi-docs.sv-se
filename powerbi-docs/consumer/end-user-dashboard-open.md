@@ -12,14 +12,14 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608462"
 ---
 # <a name="view-a-dashboard"></a>Visa en instrumentpanel
-Power BI *konsumenter* tillbringar mycket tid som visar instrumentpaneler. Instrumentpaneler är utformade för att fokusera på specifik information från de underliggande rapporterna och datauppsättningarna. Och Power BI-konsumenter använder denna information för att spåra, övervaka, svara på frågor, testa med mera, för att kunna fatta datadrivna affärsbeslut.
+Power BI-*användare* tillbringar mycket tid framför instrumentpaneler. Instrumentpaneler är utformade för att fokusera på specifik information från de underliggande rapporterna och datauppsättningarna. Och Power BI-konsumenter använder denna information för att spåra, övervaka, svara på frågor, testa med mera, för att kunna fatta datadrivna affärsbeslut.
 
 ![instrumentpanel](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
@@ -32,7 +32,7 @@ Power BI Pro krävs för att både dela en instrumentpanel och visa en delad ins
 
 |              |         |
 |------------|--------------------------------|
-|![instrumentpanelikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Instrumentpaneler kan öppnas från olika platser i Power BI-tjänsten. <br> Sök efter den här instrumentpanelsikonen. När du har hittat en <br>instrumentpanel väljer du den så att den öppnas och fyller <br>Power BI-arbetsytan. |
+|![instrumentpanelikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Instrumentpaneler kan öppnas från många olika platser i Power BI-tjänsten. <br> Sök efter den här instrumentpanelsikonen. När du har hittat en <br>instrumentpanel väljer du den så att den öppnas och fyller <br>Power BI-arbetsytan. |
 |                    |          |
 
 
@@ -41,7 +41,7 @@ Du kan hitta instrumentpaneler i alla behållare i det vänstra navigeringsfält
 
 ![instrumentpanelikon](media/end-user-dashboard-open/opendash.gif)
 
-- **Startsida** 
+- **Start** 
 - **Favoriter** – om du har [angett en instrumentpanel som en favorit](end-user-favorite.md)
 - **Senaste** – om du nyligen har besökt en instrumentpanel
 - **Appar** – de flesta appar innehåller både instrumentpaneler och rapporter

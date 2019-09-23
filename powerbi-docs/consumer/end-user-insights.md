@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: fcfb16de53b4e6c67b7c46fec87ab614d07cb9b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61049409"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Visa datainsikter på instrumentpanelens paneler med Power BI
@@ -59,7 +59,7 @@ Om du vill återgå till den ursprungliga arbetsytan för insikter väljer du **
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 - **Visa insikter** fungerar inte med DirectQuery – det fungerar bara med data som överförs till Power BI.
-- **Visa insikter** fungerar inte med alla typer av paneler på instrumentpanelen. Det är till exempel inte tillgänglig för anpassade visuella objekt.<!--[custom visuals](end-user-custom-visuals.md)-->
+- **Visa insikter** fungerar inte med alla typer av paneler på instrumentpanelen. Det är till exempel inte tillgängligt för anpassade visuella objekt.<!--[custom visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Nästa steg

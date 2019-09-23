@@ -1,5 +1,5 @@
 ---
-title: Visa data som används för att skapa det visuella objektet
+title: Visa de data som användes för att skapa det visuella objektet
 description: Det här dokumentet beskriver hur Power BI-användare kan ”se” de data som används för att skapa ett visuellt objekt.
 author: mihart
 manager: kvivek
@@ -12,18 +12,18 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 5b36ded0863685726f9af3104b43c507b9a3c4d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65607962"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visual"></a>Visa data som används för att skapa det visuella objektet
+# <a name="show-the-data-that-was-used-to-create-the-visual"></a>Visa de data som användes för att skapa det visuella objektet
 
-En Power BI-visualisering konstrueras med data från underliggande datauppsättningar. Om du är intresserad av att se vad som pågår i bakgrunden, Power BI kan *visa* de data som används för att skapa visualiseringen. När du väljer **visa Data**, Power BI visar data nedan (eller bredvid) det visuella objektet.
+Ett visuellt Power BI-objekt konstrueras med hjälp av data från underliggande datamängder. Om du är intresserad av att se vad som pågår i bakgrunden, Power BI kan *visa* de data som används för att skapa visualiseringen. När du väljer **Visa data** visar Power BI dessa data under (eller intill) det visuella objektet.
 
 
-1. I Power BI-tjänsten [öppna en rapport](end-user-report-open.md) och markerar ett visuellt objekt.  
+1. I Power BI-tjänsten [öppnar du en rapport](end-user-report-open.md) och väljer ett visuellt objekt.  
 2. Om du vill visa bakomliggande data för det visuella objektet väljer du ellipsen (...) och **Visa data**.
    
    ![välj Visa data](./media/end-user-show-data/power-bi-explore-show-data-newer.png)
