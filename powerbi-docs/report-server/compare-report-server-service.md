@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 08/29/2019
-ms.openlocfilehash: 0755b41fbeef1f62d2722e3529007dc4f8773634
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.date: 09/13/2019
+ms.openlocfilehash: d2c0ab82a3b262a975c461a4414ed7fd3b1bc060
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186077"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075909"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -44,7 +44,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Sidnumrerade rapporter | Ja | Ja | [Sidnumrerade rapporter är tillgängliga i Power BI-tjänsten](../paginated-reports-report-builder-power-bi.md) som en förhandsversion i Premium-kapacitet |
 | Power BI-mobilappar | Ja | Ja | [Översikt över Power BI-mobilappar](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ArcGIS-mappar | Nej | Ja | [ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri](../visuals/power-bi-visualization-arcgis.md) |
-| E-postprenumerationer för Power BI-rapporter | Ja | Ja | [Skapa en prenumeration åt dig eller andra](../service-report-subscribe.md) på en rapport eller instrumentpanel i Power BI-tjänsten |
+| E-postprenumerationer för Power BI-rapporter | Nej | Ja | [Skapa en prenumeration åt dig eller andra](../service-report-subscribe.md) på en rapport eller instrumentpanel i Power BI-tjänsten |
 | E-postprenumerationer för sidnumrerade rapporter | Ja | Ja | [Skapa en prenumeration åt dig själv och andra på en sidnumrerad rapport i Power BI-tjänsten](../paginated-reports-subscriptions.md)<br><br>[E-postleverans i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Datavarningar | Nej | Ja | [Datavarningar](../service-set-data-alerts.md) i Power BI-tjänsten
 | Säkerhet på radnivå (RLS) | Ja | Ja | Tillgängligt i både DirectQuery- (datakälla) och Import-läge <br><br>Säkerhet på radnivå (RLS) med [Power BI-tjänsten](../service-admin-rls.md) <br><br>Säkerhet på radnivå (RLS) i [Power BI-rapportservern](row-level-security-report-server.md) |
@@ -57,4 +57,4 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Installera Power BI-rapportserver](install-report-server.md)  
+[Installera Power BI-rapportserver](install-report-server.md)

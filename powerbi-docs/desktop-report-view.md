@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 153a77cdc7d4749ac450378723d04c82ef938de6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514611"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142190"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Rapportvy i Power BI Desktop
 Om du har arbetat med Power BI, vet du hur enkelt det är att skapa rapporter som ger dynamisk perspektiv och insikter om dina data. Power BI har också fler avancerade funktioner i Power BI Desktop. Du kan använda Power BI Desktop för att skapa avancerade frågor, blandade data från flera källor, skapa relationer mellan tabeller och mycket mer.
@@ -61,9 +61,11 @@ Du kan enkelt ta ett visuellt objekt från en Power BI Desktop-rapport och klist
 
 Möjligheten att kopiera och klistra in visuella objekt är användbart för personer som skapar och uppdaterar flera rapporter ofta. När du kopierar mellan filer, så överförs inställningar och formatering som uttryckligen har ställts in i formateringsfönstret, medan visuella element som förlitar sig på ett tema eller standardinställningarna automatiskt uppdateras för att matcha temat för målrapporten. Så när du får ett visuellt objekt formaterat så det ser ut precis som du vill så kan du kopiera och klistra in det visuella objektet i nya rapporter och spara allt ditt formateringsarbete.
 
-![Fel vid kopiera/klistra in visuellt objekt – inget datafält](media/desktop-report-view/report-view_05.png)
+Om fälten i din modell är olika, visas ett fel på det visuella objektet och en varning om vilka fält som inte finns. Felet liknar den upplevelse du får när du tar bort ett fält i modellen som det visuella objektet använder. 
 
-Om fälten i din modell är olika, visas ett fel på det visuella objektet och en varning om vilka fält som inte finns. Felet liknar den upplevelse du får när du tar bort ett fält i modellen som det visuella objektet använder. Åtgärda felet genom att ersätta det trasiga fältet med de fält som du vill använda från modellen i rapporten där du klistrade in det visuella objektet. Om du använder ett anpassat visuellt objekt så måste du även importera det anpassade visuella objektet till målrapporten.
+![Fel vid kopiera/klistra in visuellt objekt – inget datafält](media/desktop-report-view/report-view_07.png)
+
+Åtgärda felet genom att ersätta det trasiga fältet med de fält som du vill använda från modellen i rapporten där du klistrade in det visuella objektet. Om du använder ett anpassat visuellt objekt så måste du även importera det anpassade visuella objektet till målrapporten.
 
 
 

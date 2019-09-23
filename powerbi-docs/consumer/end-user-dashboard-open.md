@@ -3,20 +3,19 @@ title: Visa en Power BI-instrumentpanel
 description: Instrumentpaneler är en nyckelfunktion i Power BI-tjänsten. Lär dig att öppna och visa en instrumentpanel.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b8d604b8872bae14bc2ffeeb16b56b1b3a98e056
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608462"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141344"
 ---
 # <a name="view-a-dashboard"></a>Visa en instrumentpanel
 Power BI-*användare* tillbringar mycket tid framför instrumentpaneler. Instrumentpaneler är utformade för att fokusera på specifik information från de underliggande rapporterna och datauppsättningarna. Och Power BI-konsumenter använder denna information för att spåra, övervaka, svara på frågor, testa med mera, för att kunna fatta datadrivna affärsbeslut.
@@ -39,7 +38,7 @@ Power BI Pro krävs för att både dela en instrumentpanel och visa en delad ins
 
 Du kan hitta instrumentpaneler i alla behållare i det vänstra navigeringsfältet. 
 
-![instrumentpanelikon](media/end-user-dashboard-open/opendash.gif)
+![instrumentpanelikon](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Start** 
 - **Favoriter** – om du har [angett en instrumentpanel som en favorit](end-user-favorite.md)

@@ -12,7 +12,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61276445"
@@ -81,7 +81,7 @@ Kan få upp till 30 000, men det är upp till författarna av de visuella objekt
 ### <a name="doughnut"></a>Ringdiagram
 - Maximalt antal punkter: 3 500
 - Grupp: 500 översta
-- Details: Översta 20
+- Detaljer: Översta 20
 
 ### <a name="filled-map-choropleth"></a>Fylld koropletkarta 
 Den fyllda kartan kan använda statistik eller dynamiska gränser. Power BI försöker använda minskning i följande ordning: dynamiska gränser, statistik och till sist konfiguration. 
@@ -133,7 +133,7 @@ Se [Punktdiagram med hög densitet](https://docs.microsoft.com/power-bi/visuals/
 ### <a name="pie"></a>Cirkel
 - Maximalt antal punkter: 3 500
 - Grupp: 500 översta
-- Details: Översta 20
+- Detaljer: Översta 20
 
 ### <a name="r--python-visuals"></a>R- och Python-visualiseringar
 Begränsat till 150 000 rader. Om fler än 150 000 rader har valts används endast de översta 150 000 raderna
@@ -159,7 +159,7 @@ Den fyllda kartan kan använda statistik eller dynamiska gränser.
 ### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Trädkarta (det kan använda statistik eller dynamiska gränser)
 - Maximalt antal punkter: 3 500
 - Grupp: 500 översta
-- Details: Översta 20
+- Detaljer: Översta 20
 
 ### <a name="waterfall-chart"></a>Vattenfallsdiagram
 - När endast kategoribucketen finns
