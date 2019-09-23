@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61144616"
@@ -162,9 +162,9 @@ Det kan finnas tillfällen när anslutningen till datakällor för dataflöden s
 Den här artikeln beskriver hur du kan skapa ditt egna **dataflöde** och skapa en datauppsättning och rapport i **Power BI Desktop** för att dra nytta av den. Följande artiklar är användbara för ytterligare information och scenarier när du använder dataflöden:
 
 * [Dataförberedelser med självbetjäning för dataflöden](service-dataflows-overview.md)
-* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 * [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
 
 Mer information om Common Data Service finns i dess översiktsartikel:
