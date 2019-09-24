@@ -49,7 +49,7 @@ Du kan lägga till en bild, textruta, video, strömmande data eller webbkod dire
     ![Fönstret Lägg till panel](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
 ## <a name="add-an-image"></a>Lägg till en bild
-Om du vill lägga till företagets logotyp eller någon annan bild på din instrumentpanel sparar du bild filen online och länkar till den. Kontrollera att det inte behövs autentiseringsuppgifter för att komma åt bildfilen. OneDrive och SharePoint kräver till exempel autentisering, så bilder som lagras där går inte att lägga till på en instrumentpanel på det här sättet.  
+Om du vill lägga till företagets logotyp eller någon annan bild till din instrumentpanel sparar du bildfilen online och länkar till den. Kontrollera att det inte behövs autentiseringsuppgifter för att komma åt bildfilen. OneDrive och SharePoint kräver till exempel autentisering, så bilder som lagras där går inte att lägga till på en instrumentpanel på det här sättet.  
 
 1. I fönstret **Lägg till panel** väljer du **Bild** > **Nästa**.
 
