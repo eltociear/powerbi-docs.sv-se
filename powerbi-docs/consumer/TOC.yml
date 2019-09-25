@@ -92,6 +92,8 @@
               href: end-user-insights.md
             - name: Aktivera förhandsgranskningsfunktioner
               href: end-user-preview-features.md
+            - name: Få aviseringar i Power BI-tjänsten
+              href: end-user-notification-center.md
         - name: Hämta data
           items:
             - name: Appar i Power BI
