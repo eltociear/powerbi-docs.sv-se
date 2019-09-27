@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: e30a79796fd4d5538406a85a3297a23b2c09a61a
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d21199d8960df4db5027115704533bd3d5d8097c
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751419"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142271"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Felsöka kapslade värden som returneras som text i Power BI-tjänsten
 
 ## <a name="cause"></a>Orsak
 
-Tidigare har det kunnat uppstå fall där en Power BI-rapport uppdateras korrekt på skrivbordet men inte i Power BI-tjänsten, och då har felet ”Det går inte att konvertera värdet ’[Table]’ till typen Tabell”. En av orsakerna till det här felet är att när brandväggen för datasekretess (länk här?) buffrar en datakälla så konverteras kapslade, icke-skalära värden (som tabeller, poster, listor och funktioner) automatiskt till textvärden (som ”[Table]” eller ”[Record]”).
+Tidigare har det kunnat uppstå fall där en Power BI-rapport uppdateras korrekt på skrivbordet men inte i Power BI-tjänsten, och då har felet ”Det går inte att konvertera värdet ’[Table]’ till typen Tabell”. En av orsakerna till det här felet är att när brandväggen för datasekretess buffrar en datakälla så konverteras kapslade, icke-skalära värden (till exempel tabeller, poster, listor och funktioner) automatiskt till textvärden (till exempel ”[Table]” eller ”[Record]”).
 
 Nu när Power BI-tjänsten har stöd för att ställa in sekretessnivån (eller att helt inaktivera brandväggen) kan du undvika sådana fel genom att [konfigurera sekretessinställningarna för datakällan](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjänsten så att den inte är privat.
 

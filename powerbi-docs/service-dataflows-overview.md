@@ -12,12 +12,12 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61136385"
 ---
-# <a name="self-service-data-prep-in-power-bi"></a>Självbetjäning dataförberedelser i Power BI
+# <a name="self-service-data-prep-in-power-bi"></a>Dataförberedelser med självbetjäning i Power BI
 
 Allt eftersom att datavolymerna fortsätter att växa, ökar utmaningen att omvandla dessa data till välstrukturerad och användbar information. Vi vill ha data som är redo för analys, samt kunna uppdatera visuella objekt, rapporter och instrumentpaneler så att vi kan snabbt kan omvandla våra datavolymer till åtgärdsinriktade insikter. Med **dataförberedelser med självbetjäning** för stordata i Power BI kan du gå från data till Power BI-insikter med bara några klick.
 
@@ -108,9 +108,9 @@ Genom att lagra affärsdata i ett standardiserat format från **Common Data Serv
 I den här artikeln finns en översikt över dataförberedelser för självbetjäning för stordata i Power BI och de många användningssätt som finns. Följande artiklar går in mer i detalj på vanliga användningsscenarier för dataflöden. 
 
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 * [Dataflöden och Azure Data Lake-integrering](service-dataflows-azure-data-lake-integration.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:

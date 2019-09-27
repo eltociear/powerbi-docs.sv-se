@@ -1,21 +1,21 @@
 ---
 title: Tjänstens huvudnamn med Power BI
 description: Lär dig hur du registrerar en app i Azure Active Directory med hjälp av tjänstens huvudnamn för användning med inbäddning av Power BI-innehåll.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 97903b4e6f906f2cb09f6285832ad6eb9a5a8dca
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823294"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073085"
 ---
 # <a name="service-principal-with-power-bi"></a>Tjänstens huvudnamn med Power BI
 
@@ -67,7 +67,7 @@ Det finns skillnader mellan att använda tjänstens huvudnamn och ett standardhu
 
 ## <a name="get-started-with-a-service-principal"></a>Kom igång med ett tjänsthuvudnamn
 
-Skiljer sig från traditionell användning av ett huvudkonto, användning av tjänstens huvudnamn (appspecifik token) kräver några olika delar för konfiguration. Om du vill komma igång med tjänstens huvudnamn (appspecifik token) måste du konfigurera rätt miljö.
+Till skillnad från traditionell användning av ett huvudkonto kräver användning av tjänstens huvudnamn (appspecifik token) några olika delar som ska konfigureras. Om du vill komma igång med tjänstens huvudnamn (appspecifik token) måste du konfigurera rätt miljö.
 
 1. [Registrera ett webbprogram på serversidan](register-app.md) i Azure Active Directory (AAD) för användning med Power BI. När du har registrerat programmet kan du registrera ett program-ID, en apphemlighet och objekt-ID för tjänstens huvudnamn för åtkomst till ditt Power BI-innehåll. Du kan skapa ett tjänsthuvudnamn med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
@@ -114,7 +114,7 @@ Skiljer sig från traditionell användning av ett huvudkonto, användning av tj�
    > [!Important]
    > Tjänstens huvudnamn har åtkomst till alla klientorganisationsinställningar som är aktiverade för hela organisationen eller aktiverade för säkerhetsgrupper som har tjänstens huvudnamn som en del av gruppen. För att begränsa tjänstens huvudnamns åtkomst till specifika klientorganisationsinställningar tillåter du endast åtkomst till specifika säkerhetsgrupper, eller skapar en dedikerad säkerhetsgrupp för tjänstens huvudnamn och utesluter den.
 
-    ![Administratörsportal](media/embed-service-principal/admin-portal.png)
+    ![Administratörsportalen](media/embed-service-principal/admin-portal.png)
 
 4. Konfigurera din [Power BI-miljö](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 

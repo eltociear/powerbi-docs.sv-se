@@ -1,5 +1,5 @@
 ---
-title: Optimera rapporter för mobilappar – Power BI
+title: Optimera rapporter för mobilapparna – Power BI
 description: Lär dig hur du optimerar rapportsidor för Power BI-mobilapparna genom att skapa en stående version av rapporten som är anpassad för telefoner och surfplattor.
 author: maggiesMSFT
 manager: kfile
@@ -12,19 +12,19 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61310795"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimera rapporter för Power BI-appar
-Du kan förbättra upplevelsen av att visa rapporter i mobilappar genom att skapa en stående layout. I Power BI Desktop och Power BI-tjänsten kan du ordna och ändra storlek på visuella rapportobjekt för en optimal upplevelse i stående läge.  
+# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimera rapporter för Power BI-mobilapparna
+Du kan förbättra upplevelsen av att visa rapporter i mobilapparna genom att skapa en stående layout. I Power BI Desktop och i Power BI-tjänsten ordnar du om och ändrar storlek på visuella objekt för att få en optimal upplevelse i stående läge.  
 
-Letar du efter information om hur du visar rapporter på en mobil enhet i stället? Prova den här snabbstarten [utforska instrumentpaneler och rapporter i Power BI-mobilapparna](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+Letar du i stället efter information om visning av rapporter på en mobil enhet? Prova den här snabbstarten [Utforska instrumentpaneler och rapporter i Power BI-mobilappar](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Optimerad rapport i en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-Du kan dessutom skapa [ *dynamiska* visuella objekt](#optimize-a-visual-for-any-size) och [dynamiska utsnitt](#enhance-slicers-to-work-well-in-phone-reports) som ändrar storlek och var som helst. Om du lägger till filter i rapporten visas de automatiskt i den optimerade rapporten.
+Du kan dessutom skapa [*responsiva* visuella objekt](#optimize-a-visual-for-any-size) och [responsiva utsnitt](#enhance-slicers-to-work-well-in-phone-reports) som anpassar sin storlek överallt. Om du lägger till filter i din rapport visas de automatiskt i den optimerade rapporten.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Utforma en stående version av en rapportsida
 
@@ -44,7 +44,7 @@ När du har skapat en rapport kan du optimera den för telefoner och surfplattor
    
     ![Dra och släppa ett visuellt objekt](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    Du kan lägga till några eller alla av huvudrapportsidans visuella objekt på telefonens rapportsida. Du kan bara lägga till varje visuellt objekt en gång. Du behöver att inkludera alla visuella objekt.
+    Du kan lägga till några eller alla av huvudrapportsidans visuella objekt på telefonens rapportsida. Du kan bara lägga till varje visuellt objekt en gång. Du behöver inte inkludera alla visuella objekt.
 
 4. Du kan ändra storlek på de visuella objekten i rutnätet på samma sätt som med paneler på instrumentpaneler och mobila instrumentpaneler.
    

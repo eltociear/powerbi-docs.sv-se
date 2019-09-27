@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61270483"
@@ -131,7 +131,7 @@ Med cachelagrade datauppsättningar avses PBIX-filer som har importerade data is
 3. Spara PBIX.
 4. Anropsimportera PBIX till SaaS-arbetsytan.
 5. Uppdatera anslutningssträngen genom att anropa – POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Hämta GW och datasource ID: n genom att anropa – hämta https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. Hämta GW och datakällans identifierare genom att anropa – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. Uppdatera användarens autentiseringsuppgifter genom att anropa – PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Gammal datauppsättning och rapporter

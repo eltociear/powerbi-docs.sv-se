@@ -1,6 +1,6 @@
 ---
-title: 'Självstudie: Skapa en Machine Learning-modell i Power BI (förhandsversion)'
-description: I den här självstudien skapar du en Machine Learning-modellen i Power BI.
+title: 'Självstudie: Skapa en maskininlärningsmodell i Power BI (förhandsversion)'
+description: I den här självstudien skapar du en maskininlärningsmodell i Power BI.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -13,187 +13,187 @@ ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 611d6f6c923e6cb68af94840c4266a0b6dee7651
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61407194"
 ---
-# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Självstudie: Skapa en Machine Learning-modell i Power BI (förhandsversion)
+# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Självstudie: Skapa en maskininlärningsmodell i Power BI (förhandsversion)
 
-I den här självstudiekursen artikeln använder du **automatiserad Machine Learning** att skapa och tillämpa en binär förutsägelsemodell i Power BI. Självstudien innehåller vägledning för att skapa en Power BI-dataflöde och med hjälp av entiteterna som definierats i dataflödet att träna och validera en maskininlärningsmodell direkt i Power BI. Vi använder sedan den modellen för bedömning för att generera förutsägelser.
+I den här självstudieartikeln använder du **automatiserad maskininlärning** till att skapa och tillämpa en modell för binär förutsägelse i Power BI. Självstudien innehåller vägledning om hur du skapar ett Power BI-dataflöde och använder de entiteter som definieras i dataflödet för att träna och validera en maskininlärningsmodell direkt i Power BI. Vi använder sedan den poängsättningsmodellen för att skapa förutsägelser.
 
-Först skapar du binära förutsägelse machine learning-modell för att förutsäga köp syftet med online julruschen baserat på en uppsättning deras online session-attribut. En datauppsättning som benchmark machine learning används för den här övningen. När en tränas genererar Power BI automatiskt en verifieringsrapport förklarar modellen resultaten. Du kan granska verifieringsrapporten och tillämpar modellen på dina data för bedömning.
+Först skapar du en maskininlärningsmodell för binär förutsägelse i syfte att förutsäga inköpsavsikten hos onlinekonsumenter baserat på en uppsättning av deras onlinesessionsattribut. En maskininlärningsdatamängd för prestandatestning används i den här övningen. När en modell har tränats genererar Power BI automatiskt en valideringsrapport som förklarar modellens utfall. Du kan sedan granska valideringsrapporten och tillämpa modellen på dina data för poängsättning.
 
-Den här kursen består av följande steg:
+Den här självstudien består av följande steg:
 
 > [!div class="checklist"]
 > * Skapa ett dataflöde med indata
-> * Skapa och träna en modell för maskininlärning
-> * Granska verifieringsrapporten modell
-> * Tillämpa modellen på en entitet för dataflöde
-> * Med poängsatta utdata från modellen i Power BI-rapport
+> * Skapa och träna en maskininlärningsmodell
+> * Granska modellens valideringsrapport
+> * Tillämpa modellen på en dataflödesentitet
+> * Använda det poängsatta utfallet från modellen i en Power BI-rapport
 
 ## <a name="create-a-dataflow-with-the-input-data"></a>Skapa ett dataflöde med indata
 
-Den första delen av den här självstudien är att skapa ett dataflöde med indata. Den här processen tar några få steg som du ser i följande avsnitt från och med att hämta data.
+Den första delen av den här självstudien är att skapa ett dataflöde med indata. Såsom det visas i följande avsnitt består processen av några steg som börjar med hämtning av data.
 
 ### <a name="get-data"></a>Hämta data
 
-Det första steget i att skapa ett dataflöde är att ha dina datakällor som är redo. I vårt fall använder vi en datauppsättning för maskininlärning från en uppsättning med online-sessioner, varav utmynnat i ett inköp. Datauppsättningen innehåller en uppsättning attribut om de här sessionerna som vi använder för att träna vår modell.
+Det första steget i att skapa ett dataflöde är att förbereda datakällorna. I vårt fall använder vi en maskininlärningsdatamängd från en uppsättning onlinesessioner, varav vissa resulterade i ett köp. Datamängden innehåller en uppsättning attribut om dessa sessioner, som vi kommer att använda för att träna modellen.
 
-Du kan hämta datauppsättningen från webbplatsen UC Irvine.  Vi har också den tillgänglig i den här kursen från följande länk: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
+Du kan ladda ned datamängden från webbplatsen för UC Irvine.  För den här självstudien finns den även tillgänglig via följande länk: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
 
-### <a name="create-the-entities"></a>Skapa entiteter
+### <a name="create-the-entities"></a>Skapa entiteterna
 
 Logga in på Power BI-tjänsten för att skapa entiteter i ditt dataflöde, och navigera till en arbetsyta på din dedikerade kapacitet som har AI-förhandsversionen aktiverad.
 
-Om du inte redan har en arbetsyta kan du skapa en genom att välja **arbetsytor** i den vänstra navigeringsmenyn i Power BI-tjänsten och välj **skapa apparbetsyta** längst ned på panelen som visas. Då öppnas en panel till höger för att ange arbetsytans information. Ange ett namn på arbetsytan och välj **Avancerat**. Bekräfta att arbetsytan använder dedikerade kapacitet med hjälp av knappen och att den har tilldelats till en dedikerad kapacitet-instans som har AI-preview aktiveras. Välj sedan **Spara**.
+Om du inte redan har en arbetsyta kan du skapa en genom att välja **Arbetsytor** i den vänstra navigeringsmenyn i Power BI-tjänsten och sedan välja **Skapa apparbetsyta** längst ned på de panel som visas. Då öppnas en panel till höger där du kan ange arbetsytans information. Ange ett namn på arbetsytan och välj **Avancerat**. Bekräfta att arbetsytan använder dedikerad kapacitet med hjälp av alternativknappen samt att den tilldelas till en instans av dedikerad kapacitet där AI-förhandsgranskningen är aktiverad. Välj sedan **Spara**.
 
 ![Skapa en arbetsyta](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-01.png)
 
-När arbetsytan har skapats kan du välja **hoppa över** i nederkant högra hörnet av skärmen Välkommen, enligt följande bild.
+När arbetsytan har skapats kan du välja **Hoppa över** längst ned till höger på välkomstskärmen enligt följande bild.
 
 ![Hoppa över om du har en arbetsyta](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
 
-Välj den **dataflöden (förhandsversion)** fliken. Välj den **skapa** längst upp till höger i arbetsytan och välj sedan **dataflöde**.
+Välj fliken **Dataflöden (förhandsversion)** . Välj knappen **Skapa** längst upp till höger på arbetsytan och välj sedan **Dataflöden**.
 
 ![Skapa dataflöde](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
 
-Välj **Lägg till nya entiteter**. Detta startar en **Power Query** redigeraren i webbläsaren.
+Välj **Lägg till nya entiteter**. Detta startar en **Power Query**-redigerare i webbläsaren.
 
 ![Lägg till ny entitet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-04.png)
 
-Välj **Text/CSV-fil** som en datakälla som visas i följande bild.
+Välj **Text-/CSV-fil** som datakälla enligt följande bild.
 
-![Valda text/CSF-filen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
+![Text-/CSF-fil har valts](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
 
-I den **Anslut till en datakälla** som visas, klistra in länken nedan för att den *online_shoppers_intention.csv* till den **filsökväg eller URL** och sedan väljer  **Nästa**.
+I rutan **Anslut till en datakälla** som sedan visas klistrar du in följande länk till *online_shoppers_intention.csv* i rutan **Filsökväg eller URL** och väljer **Nästa**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
 ![Filsökväg](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-06.png)
 
-Power Query-redigeraren visas en förhandsgranskning av data från CSV-filen. Välj **transformera tabell** i kommandot menyfliksområdet och välj sedan **Låt första raden som rubriker** från menyn som visas. Detta lägger till den _befordras rubriker_ frågesteg i den **tillämpade steg** avsnitt till höger på skärmen. Du kan byta namn på frågan till ett mer användarvänligt namn genom att ändra värdet i den **namn** box hittades i den högra rutan. Du kan till exempel ändra Frågenamnet till _Online besökare_.
+Power Query-redigeraren visar en förhandsgranskning av data från CSV-filen. Välj **Transformera tabell** i menyfliksområdet för kommandon och välj sedan **Använd första raden som rubriker** i den meny som visas. Detta lägger till frågesteget _Upphöjda rubriker_ i avsnittet **Tillämpade steg** till höger på skärmen. Du kan byta namn på frågan till ett användarvänligt namn genom att ändra värdet i rutan **Namn** i det högra fönstret. Du kan till exempel ändra frågans namn till _Online Visitor_ (onlinebesökare).
 
-![Ändra till ett eget namn](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
+![Ändra till ett användarvänligt namn](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
 
-Vissa datatyper attribut i den här datauppsättningen är _numeriska_ eller _booleskt_, även om dessa kan tolkas som strängar med **Power Query**. Välj ikonen attributet typen högst upp på varje kolumnrubrik för att ändra de kolumner som anges ovan för att följande typer:
+Några av attributdatatyperna i den här datamängden är _numeriska_ eller _booleska_, men dessa kan tolkas som strängar av **Power Query**. Välj den ikon för attributtyp som visas överst i varje kolumnrubrik för att ändra de kolumner som anges nedan till följande typer:
 
 * **Decimaltal:** Administrative_Duration; Informational_Duration; ProductRelated_Duration; BounceRates; ExitRates; PageValues; SpecialDay
-* **SANT/FALSKT:** Helgen; Intäkter
+* **Sant/falskt:** Weekend; Revenue
 
 ![Ändra datatyp](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-08.png)
 
-Den **binära förutsägelse** kommer vi tränar modellen kräver booleskt fältet som en etikett som identifierar resultat från tidigare observationer. I den här datauppsättningen i _intäkter_ attributet anger köp och det här attributet finns redan som ett booleskt värde. Därför behöver vi inte lägga till en beräknad kolumn för etiketten. Du kan behöva transformera befintliga etikettattributen till en boolesk kolumn i andra datauppsättningar.
+Den modell för **binär förutsägelse** som vi kommer att träna kräver en märkning i form av booleskt fält som identifierar utfallen från tidigare observationer. I den här datamängden anger attributet _Revenue_ (intäkter) köp, och det här attributet är redan tillgängligt som ett booleskt värde. Därför behöver vi inte lägga till en beräknad kolumn för märkningen. I andra datamängder kan du behöva transformera befintliga märkningsattribut till en boolesk kolumn.
 
-Välj den **klar** för att stänga Power Query Editor. Detta visar entitetslistan med i _Online besökare_ data som vi har lagt till. Välj **spara** ange ett namn för dataflödet i det övre högra hörnet och välj sedan **spara** dialogrutan som visas i följande bild.
+Välj knappen **Klar** för att stänga Power Query-redigeraren. Då visas entitetslistan med de data för _Online Visitors_ (onlinebesökare) som vi lade till. Välj **Spara** i det övre högra hörnet, ange ett namn för dataflödet och välj sedan **Spara** i dialogrutan enligt följande bild.
 
 ![Spara dataflödet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
 
 ### <a name="refresh-the-dataflow"></a>Uppdatera dataflödet
 
-Spara resultaten dataflöde i ett meddelande som visas anger du att ditt dataflöde har sparats. Välj **Uppdatera nu** att mata in data från källan till dataflödet.
+När du sparar dataflödet visas ett meddelande om att dataflödet har sparats. Välj **Uppdatera nu** för att mata in data från källan till dataflödet.
 
 ![Uppdatera nu](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-10.png)
 
 Välj **Stäng** i övre högra hörnet och vänta tills dataflödesuppdateringen är färdig.
 
-Du kan också uppdatera ditt dataflöde med hjälp av den **åtgärder** kommandon. Dataflödet Visar tidsstämpeln när uppdateringen har slutförts.
+Du kan även uppdatera dataflödet med hjälp av kommandona **Åtgärder**. Dataflödet visar tidsstämpeln när uppdateringen har slutförts.
 
 ![Tidsstämpel för uppdatering](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
 
-## <a name="create-and-train-a-machine-learning-model"></a>Skapa och träna en modell för maskininlärning
+## <a name="create-and-train-a-machine-learning-model"></a>Skapa och träna en maskininlärningsmodell
 
-Välj dataflödet när uppdateringen har slutförts. Om du vill lägga till en modell för maskininlärning, Välj den **gäller ML-modell** knappen i den **åtgärder** för den grundläggande entitet som innehåller information om data och etiketten din utbildning och sedan välja **Lägg till en Machine learning-modell**.
+Välj dataflödet efter att uppdateringen har slutförts. Du lägger till en maskininlärningsmodell genom att välja knappen **Tillämpa ML-modell** i listan **Åtgärder** för den basentitet som innehåller dina träningsdata och din märkningsinformation, och välj sedan **Lägg till en maskininlärningsmodell**.
 
 ![Lägg till en maskininlärningsmodell](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-12.png)
 
-Det första steget för att skapa vår maskininlärningsmodellen är att identifiera historisk data, inklusive etikettfältet som du vill förutsäga. Modellen kommer att skapas genom att lära dig från dessa data.
+Det första steget för att skapa maskininlärningsmodellen är att identifiera historiska data, inklusive det märkningsfält som du vill förutsäga. Modellen skapas genom inlärning från dessa data.
 
-När det gäller den datauppsättning som vi använder det här är den **intäkter** fält. Välj **intäkter** som värdet för historiska resultatet field- och välj sedan **nästa**.
+För den datamängd som vi använder är detta fältet **Revenue** (intäkter). Välj **Revenue** (intäkter) som värde för fältet ”Historiska utfall” och välj sedan **Nästa**.
 
-![Välj historiska data](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
+![Välja historiska data](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
 
-Därefter måste vi välja vilken typ av machine learning-modell du skapar. Powerbi analyserar värdena i fältet historiska resultat som du har identifierat och ger förslag på vilka typer av machine learning-modeller som kan skapas för att förutsäga det fältet.
+Därefter måste vi välja vilken typ av maskininlärningsmodell som ska skapas. Power BI analyserar värdena i fältet för historiska utfall som du har identifierat och föreslår de typer av maskininlärningsmodeller som kan skapas för att förutsäga det fältet.
 
-I det här fallet eftersom vi är att förutsäga ett binära resultat för om en användare gör ett köp eller inte markerar **binära förutsägelse** för modellen och sedan välja Nästa.
+Eftersom vi förutsäger ett binärt utfall för huruvida en användare kommer att genomföra ett köp väljer du i det här fallet **Binär förutsägelse** för modelltypen och väljer sedan Nästa.
 
-![Binär förutsägelse valt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
+![Binär förutsägelse har valts](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
 
-Sedan Power BI har en preliminär avsökning av data och ger förslag på indata som kan använda för modellen. Du har möjlighet att anpassa indatafält används för modellen. I vår granskad datauppsättning för att välja alla fält, markerar du kryssrutan bredvid entitetsnamnet på. Välj **nästa** att acceptera indata.
+Därefter gör Power BI en preliminär genomsökning av data och föreslår de indata som modellen kan använda. Du kan anpassa de indatatyper som används för modellen. I vår organiserade datamängd markerar du alla fält genom att markera kryssrutan intill entitetsnamnet. Välj **Nästa** för att godkänna indata.
 
-![Markera kryssrutan nästa](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
+![Markera kryssrutan Nästa](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
 
-I det sista steget, måste vi ange ett namn för vår modell, samt egna etiketter för resultat som ska användas i den automatiskt genererade rapporten som kommer sammanfattar resultatet av verifieringen av modellen. Därefter måste vi namnge modellen _köp avsikt förutsägelse_, och true och false etiketter som _köp_ och _nr köp_. Välj sedan **Spara**.
+I det sista steget måste vi ange ett namn för modellen samt de användarvänliga märkningarna för de utfall som ska användas i den automatiskt genererade rapport som kommer att sammanfatta resultatet av modellens validering. Sedan måste vi namnge modellen _Purchase Intent Prediction_ (Förutsägelse av inköpsavsikt) samt märkningarna för sant och falskt som _Purchase_ (Köp) och _No-Purchase_ (Inget köp). Välj sedan **Spara**.
 
 ![Spara modellen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-16.png)
 
-Vår maskininlärningsmodellen är nu redo för utbildning. Välj **Uppdatera nu** att starta träna modellen.
+Nu är maskininlärningsmodellen redo att tränas. Välj **Uppdatera nu** för att börja träna modellen.
 
 ![Uppdatera nu](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-17.png)
 
-Utbildning processen påbörjas genom sampling och normaliserar dina historiska data och dela din datauppsättning i två nya entiteter *köp avsikt förutsägelse Träningsdata* och *köp avsikt förutsägelse testning Data*.
+Träningsprocessen börjar med sampling och normalisering av dina historiska data samt indelning av datamängden i två nya entiteter, *Purchase Intent Prediction Training Data* (Träningsdata för förutsägelse av inköpsavsikt) och *Purchase Intent Prediction Testing Data* (Testningsdata för förutsägelse av inköpsavsikt).
 
-Beroende på storleken på datauppsättningen, kan utbildning processen ta allt från några minuter till ett par timmar. Du kan nu se modellen i den **Maskininlärningsmodeller** fliken dataflödet. Den _redo_ status anger att modellen har placerats i kö för utbildning eller omfattas av utbildning.
+Beroende på storleken på datamängden kan träningsprocessen ta allt från några minuter till några timmar att slutföras. Nu kan du se modellen på fliken **Maskininlärningsmodeller** för dataflödet. Statusen _Redo_ anger att modellen har ställts i kö för träning eller håller på att tränas.
 
-![Redo för utbildning](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
+![Redo för träning](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
 
-När modellen är utbildning, inte du vill visa eller redigera dataflödet. Du kan bekräfta att modellen att utbilda och godkänts genom status för dataflödet. Detta visas som data uppdateras i den **dataflöden** fliken på arbetsytan.
+Medan modellen tränas kan du inte visa eller redigera dataflödet. Du kan bekräfta att modellen tränas och valideras via statusen för dataflödet. Detta visas som en pågående datauppdatering på fliken **Dataflöden** för arbetsytan.
 
-![I processen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
+![Pågår](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
 
-När modellträning är klar visar dataflödet en uppdaterad uppdateringstid. Du kan bekräfta att modellen tränas genom att navigera till den **Maskininlärningsmodeller** fliken i dataströmmen. Modellen som du skapade bör ha status som **Trained** och **senaste tränade** tid ska nu uppdateras.
+När modellträningen är klar visar dataflödet en uppdaterad uppdateringstid. Du kan bekräfta att modellen har tränats genom att gå till fliken **Maskininlärningsmodeller** i dataflödet. Den modell som du skapade bör visa statusen **Tränad**, och tiden för **Senast tränad** bör nu ha uppdaterats.
 
-![Senast tränats på](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
+![Senast tränad](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
 
-## <a name="review-the-model-validation-report"></a>Granska verifieringsrapporten modell
+## <a name="review-the-model-validation-report"></a>Granska modellens valideringsrapport
 
-Att granska verifieringsrapport modellen i den **Machine learning-modeller, s** välja den **visa systemprestanda-rapport och tillämpar modellen** knappen i den **åtgärder** kolumnen för modellen . Den här rapporten beskrivs hur machine learning-modell är troligt att utföra.
+Du kan granska modellens valideringsrapport genom att i **Maskininlärningsmodeller** välja knappen **Visa prestandarapport och tillämpa modell** i kolumnen **Åtgärder** för modellen. I den här rapporten beskrivs sannolik prestanda för din maskininlärningsmodell.
 
-I den **Modellprestanda** sida i rapporten, Välj **Nyckelpåverkare** att visa de översta förutsägelserna för din modell. Du kan välja något av förutsägelserna att se hur resultatet-distribution som är associerade med att ge säkrare prognoser.
+På sidan **Modellprestanda** i rapporten väljer du **Viktiga influerare** för att visa de främsta förutsägande faktorerna för din modell. Du kan välja en av de förutsägande faktorerna för att se den utfallsfördelning som är associerad med den förutsägande faktorn.
 
 ![Modellprestanda](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
 
-Du kan använda den **Sannolikhetströskelvärdet** utsnitt på sidan Modellprestanda och undersök dess inverkan på Precision och återkallande för modellen.
+Du kan använda utsnittet **Sannolikhetströskel** på sidan Modellprestanda för att undersöka dess inverkan på modellens precision och träffsäkerhet.
 
 ![Tröskelvärde för sannolikhet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-22.png)
 
-De övriga sidorna i rapporten beskrivs statistiska prestandamått för modellen.
+De andra sidorna i rapporten beskriver modellens statistiska prestandamått.
 
-Rapporten innehåller också en sida med utbildningsinformation som beskriver olika iterationer som kördes, hur funktioner extraherades från indata och hyperparametrar för den slutliga modellen som används.
+Rapporten innehåller även en sida med träningsinformation som beskriver de olika iterationer som kördes, hur egenskaperna extraherades från indata samt de hyperparametrar som användes för den slutliga modellen.
 
-## <a name="apply-the-model-to-a-dataflow-entity"></a>Tillämpa modellen på en entitet för dataflöde
+## <a name="apply-the-model-to-a-dataflow-entity"></a>Tillämpa modellen på en dataflödesentitet
 
-Välj den **tillämpa modellen** längst upp i rapporten för att anropa den här modellen när dataflödet uppdateras. I den **tillämpa** dialogrutan kan du ange målentiteten som innehåller källdata som modellen ska användas.
+Välj knappen **Tillämpa modell** överst i rapporten för att anropa den här modellen när dataflödet uppdateras. I dialogrutan **Tillämpa** kan du ange den målentitet som innehåller de källdata som modellen ska tillämpas på.
 
 ![Använd modellen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-23.png)
 
-När du uppmanas, måste du **uppdatera** dataflöde att förhandsgranska resultaten från din modell.
+När du uppmanas måste du **Uppdatera** dataflödet för att förhandsgranska resultatet av modellen.
 
-Tillämpa modellen skapar en ny entitet med suffixet **berikats < modellnamn >** läggas till för den entitet som du tillämpat modellen. I vårt fall tillämpar modellen till den **OnlineShoppers** entitet skapar **OnlineShoppers berikats köp avsikt förutsägelse**, som innehåller de förväntade utdatan från modellen.
+Om du tillämpar modellen skapas en ny entitet med suffixet **enriched <modellnamn>** (utökad) som läggs till i den entitet som du tillämpade modellen på. I vårt fall kommer tillämpning av modellen på entiteten **OnlineShoppers** att skapa **OnlineShoppers enriched Purchase Intent Prediction**, som innehåller förutsagda utdata från modellen.
 
-Tillämpa en binär förutsägelsemodell lägger till tre kolumner med förväntade resultatet, en sannolikhetspoäng och de översta posten-specifika Påverkare för förutsägelsen, var och en föregås av det angivna kolumnnamnet.
+Tillämpning av en modell för binär förutsägelse lägger till tre kolumner med förutsagt utfall, sannolikhetspoäng samt de främsta postspecifika influerarna för förutsägelsen, som var och en prefigeras med det angivna kolumnnamnet.
 
-![Tre kolumner i resultatet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
+![Tre kolumner med utfall](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
 
-Poängsatta utdatakolumner i entiteten avancerad och är endast tillgängliga från Power BI Desktop på grund av ett känt problem. Om du vill förhandsgranska dem i tjänsten, måste du använda en särskild förhandsvisning entitet.
+På grund av ett känt problem kan de poängsatta utdatakolumnerna i den utökade entiteten endast nås från Power BI Desktop. Om du vill förhandsgranska dessa i tjänsten måste du använda en särskild förhandsgranskningsentitet.
 
-När dataflödet uppdateringen har slutförts kan du välja den **OnlineShoppers berikats köp avsikt förutsägelse förhandsversion** entitet om du vill visa resultatet.
+När uppdateringen av dataflöde är klar kan du välja entiteten **OnlineShoppers enriched Purchase Intent Prediction Preview** för att visa resultatet.
 
-![Visa resultaten](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
+![Visa resultatet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
 
-## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Med poängsatta utdata från modellen i Power BI-rapport
+## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Använda det poängsatta utfallet från modellen i en Power BI-rapport
 
-Om du vill använda poängsatta utdata från din machine learning-modell, kan du ansluta till ditt dataflöde från Power BI desktop kan använda dataflöden-anslutningen. Den **OnlineShoppers berikats köp avsikt förutsägelse** entiteten kan nu användas för att införliva förutsägelser från din modell i Power BI-rapporter.
+För att använda det poängsatta utfallet från maskininlärningsmodellen kan du ansluta till ditt dataflöde från Power BI Desktop med hjälp av anslutningsprogrammet för dataflöden. Du kan nu använda entiteten **OnlineShoppers enriched Purchase Intent Prediction** för att ta med förutsägelserna från din modell i Power BI-rapporter.
 
 ## <a name="next-steps"></a>Nästa steg
 
-I den här självstudien får du skapat och tillämpat en binär förutsägelsemodell i Power BI med de här stegen:
+I den här självstudien skapade och tillämpade du en modell för binär förutsägelse i Power BI med hjälp av följande steg:
 
 * Skapa ett dataflöde med indata
-* Skapa och träna en modell för maskininlärning
-* Granska verifieringsrapporten modell
-* Tillämpa modellen på en entitet för dataflöde
-* Med poängsatta utdata från modellen i Power BI-rapport
+* Skapa och träna en maskininlärningsmodell
+* Granska modellens valideringsrapport
+* Tillämpa modellen på en dataflödesentitet
+* Använda det poängsatta utfallet från modellen i en Power BI-rapport
 
-Läs mer om Machine Learning automation i Power BI, [automatiserad Machine Learning i Power BI (förhandsversion)](service-machine-learning-automated.md).
+Mer information om automatiserad maskininlärning i Power BI finns i [Automatiserad maskininlärning i Power BI (förhandsversion)](service-machine-learning-automated.md).

@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655162"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175259"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -47,6 +47,7 @@ Det finns nio flikar i portalen. Resten av den här artikeln innehåller informa
 * [Visuella organisationsobjekt](#organizational-visuals)
 * [Dataflödeslagring (förhandsversion)](#dataflowStorage)
 * [Arbetsytor](#workspaces)
+* [Anpassad varumärkesanpassning](#custom-branding)
 
 ## <a name="usage-metrics"></a>Användningsstatistik
 
@@ -522,7 +523,22 @@ Som administratör kan visa du de arbetsytor som finns i din klientorganisation.
 
 ![Lista över arbetsytor](media/service-admin-portal/workspaces-list.png)
 
+## <a name="custom-branding"></a>Anpassad varumärkesanpassning
 
+Som administratör kan du anpassa utseendet på Power BI för hela organisationen. Det finns för närvarande tre huvudalternativ:
+
+![Alternativ för anpassad varumärkesanpassning](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Ladda upp logotyp**: För bästa resultat laddar du upp en logotyp som har sparats som en .png-bild som är 10 kB eller mindre och har minst 200 x 30 bildpunkter.
+
+* **Ladda upp omslagsbild**: För bästa resultat laddar du upp en omslagsbild som har sparats som en .jpg- eller .png-bild som är 1 MB eller mindre och har minst 1920 x 160 bildpunkter.
+
+* **Välj temafärg**: Du kan välja tema baserat på ett hex-nummer eller RGB-värde eller från färgpaletten.
+
+
+Mer information finns i [Anpassad varumärkesanpassning för din organisation](http://aka.ms/orgBranding).
+
+![Lista över arbetsytor](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Nästa steg
 
 [Administrera Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  

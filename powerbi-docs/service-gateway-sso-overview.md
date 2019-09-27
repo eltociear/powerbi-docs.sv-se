@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271858"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100385"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Översikt över enkel inloggning (SSO) för gatewayer i Power BI
 
-Du kan få en sömlös enkel inloggningsanslutning, vilket medför att Power BI-rapporter och -instrumentpaneler kan uppdateras från lokala data, genom att konfigurera din lokala datagateway med antingen Kerberos eller Security Assertion Markup Language (SAML). Den lokala datagatewayen möjliggör enkel inloggning med hjälp av DirectQuery, som används för att ansluta till lokala datakällor.
+Du kan få en sömlös enkel inloggningsanslutning, vilket medför att Power BI-rapporter och -instrumentpaneler kan uppdateras i realtid från lokala data, genom att konfigurera din lokala datagateway med antingen Kerberos eller Security Assertion Markup Language (SAML). Den lokala datagatewayen stöder enkel inloggning med hjälp av DirectQuery, som används för att ansluta till lokala datakällor.
 
 Vi stöder för närvarande följande datakällor:
 
@@ -52,8 +52,7 @@ Här finns mer information om de här stegen:
 
 ## <a name="next-steps"></a>Nästa steg
 
-Nu när du förstår grunderna för enkel inloggning kan du läsa mer detaljerad information om Kerberos och SAML:
+Nu när du förstår grunderna för enkel inloggning via gatewayen kan du läsa mer detaljerad information om Kerberos och SAML:
 
 * [Enkel inloggning (SSO) – Kerberos](service-gateway-sso-kerberos.md)
-* [Enkel inloggning (SSO) – Kerberos – resursbaserad](service-gateway-sso-kerberos-resource.md)
 * [Enkel inloggning (SSO) – SAML](service-gateway-sso-saml.md)

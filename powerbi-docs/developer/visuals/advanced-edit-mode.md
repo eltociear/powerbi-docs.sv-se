@@ -1,20 +1,20 @@
 ---
 title: Avancerat redigeringsläge i visuella Power BI-objekt
 description: Den här artikeln beskriver hur du anger avancerade UI-kontroller i visuella Power BI-objekt.
-author: shaym83
-ms.author: shaym
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 54cd9d106132979e5ace71a2617a9e2520363176
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: da72cf603027bc97060e7a00ed4a4e959a3a92e2
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237356"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194465"
 ---
 # <a name="advanced-edit-mode-in-power-bi-visuals"></a>Avancerat redigeringsläge i visuella Power BI-objekt
 

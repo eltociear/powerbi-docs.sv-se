@@ -12,14 +12,14 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
 ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454567"
 ---
 # <a name="certified-custom-visuals"></a>Certifierade anpassade visuella objekt
 
-## <a name="what-are-certified-custom-visuals"></a>Vad är **_certifierade_** anpassade visuella objekt?
+## <a name="what-are-_certified_-custom-visuals"></a>Vad är **_certifierade_** anpassade visuella objekt?
 
 Certifierade anpassade visuella objekt är visuella objekt på **marknadsplatsen** som uppfyller vissa **specificerade** kodkrav som **Microsoft Power BI-teamet** har testat och godkänt. När ett anpassat visuellt objekt har certifierats erbjuder det fler funktioner. Du kan [exportera till PowerPoint](consumer/end-user-powerpoint.md) och du kan visa det visuella objektet i e-postmeddelanden när en användare [prenumererar på rapportsidor](consumer/end-user-subscribe.md).
 
@@ -44,34 +44,34 @@ Microsoft kan ta bort visuella objekt från [listan över certifierade objekt](#
 Om du vill att dina anpassade visuella objekt [certifieras](#certified-custom-visuals) kontrollerar du att ditt anpassade visuella objekt överensstämmer med nedanstående:  
 
 * Godkänt för Microsoft AppSource. Ditt anpassade visuella objekt måste finnas på vår [marknadsplats](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Anpassade visuella objekt skrivs med version **API v2.5** eller högre.
-* Kodlagringsplatsen är tillgänglig för granskning av Power BI-teamet (för källkoden (JavaScript- eller TypeScript) i mänskliga lättläst format-instansen är tillgänglig för oss, via GitHub).
+* Anpassade visuella objekt skrivs med **API v2.5** eller senare.
+* Kodlagringsplatsen är tillgänglig för granskning av Power BI-teamet (exempelvis källkoden (JavaScript-skript eller TypeScript) i ett format som är läsbart för människor, via GitHub).
 
     >[!Note]
     > Du måste inte dela koden offentligt i Github.
-* Krav för databasen:
-   * Måste innehålla den minsta uppsättningen som krävs av filer:
+* Krav för kodlagring:
+   * Måste innehålla den minsta nödvändiga uppsättningen filer:
       * .gitignore
       * capabilities.json
       * pbiviz.json
       * package.json
       * package-lock.json
       * tsconfig.json
-   * Får inte innehålla node_modules mapp (lägga till node_modules .gitingore-fil)
-   * **installera npm** kommandot måste inte returnerar några fel.
-   * **npm audit** kommando får inte returnera alla varningar med hög eller medelhög nivå.
-   * **pbiviz-paketet** kommandot måste inte returnerar några fel.
-   * Måste innehålla [TSlint från Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) utan åsidosatt konfiguration, och det här kommandot måste inte returnerar några lint-fel.
-   * Kompilerade paketet anpassade visuella objekt måste matcha skickade paket (md5-hashen för båda filerna ska vara lika med).
-* Krav för källa:
-   * Måste ha stöd för det visuella objektet [återge händelse-API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Se till att inga godtyckliga/dynamiska koden körs (felaktig: eval(), osäkra för användandet av settimeout(), requestAnimationFrame(), setinterval (någon funktion användarindata), som körs användarens indata/data).
-   * Se till att DOM manipuleras på ett säkert sätt (felaktig: innerHTML D3.html (< vissa användardata/indata >), använder gemensamt för användarens indata/data innan du lägger till den DOM.
-   * Se till att det finns inga fel/undantag i javascript i webbläsaren konsolen för alla indata. Användare kan använda ditt visuella objekt med en annan uppsättning oväntade data så att det visuella objektet inte måste misslyckas. Du kan använda [denna exempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som en test-datauppsättning.
+   * Får inte innehålla mappen node_modules (lägg till node_modules i filen .gitingore)
+   * Kommandot **npm install** får inte returnera fel.
+   * Kommandot **npm audit** får inte returnera varningar av hög eller måttlig nivå.
+   * Kommandot **pbiviz package** får inte returnera några fel.
+   * Måste innehålla [TSlint från Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) utan åsidosatt konfiguration, och det här kommandot får inte returnera några lint-fel.
+   * Det kompilerade paketet för det anpassade visuella objektet måste matcha det skickade paketet (md5-hash för båda filerna ska vara likadana).
+* Krav för källkod:
+   * Det visuella objektet måste ha stöd för [API:et för renderingshändelser](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Se till att ingen godtycklig/dynamisk kod körs (dålig: eval() är osäker att använda för settimeout(), requestAnimationFrame(), setinterval(någon funktion med användarindata), körning av användarindata).
+   * Se till att DOM manipuleras på ett säkert sätt (dåligt: innerHTML, D3.html(<några användarindata>). Använd sanering för användarindata innan de läggs till i DOM.
+   * Se till att det inte finns några JavaScript-fel/-undantag i webbläsarkonsolen för indata. Användare kan använda ditt visuella objekt med en annorlunda mängd oväntade data. Därför får det visuella objektet inte sluta fungera. Du kan använda [den här exempelrapporten](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som en testdatamängd.
 
-* Om alla egenskaper i capabilities.json ändras kan du se till att de inte bryter befintlig användare rapporter.
+* Om några egenskaper i capabilities.json ändras ser du till att de inte gör att den befintliga användarens rapporter slutar fungera.
 
-* Kontrollera att det visuella objektet överensstämmer med den [riktlinjer för Power BI-visualiseringar](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Inga vattenstämplar tillåts**.
+* Kontrollera att det visuella objektet uppfyller [riktlinjerna för visuella Power BI-objekt](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Inga vattenstämplar tillåts**.
 
 * Använder endast offentliga granskningsbara OSS-komponenter (JS-bibliotek eller TypeScript som är offentliga. Källkoden är tillgänglig för granskning och har inga kända säkerhetsrisker). Vi kan inte verifiera ett anpassat visuellt objekt med hjälp av en extern komponent.
 

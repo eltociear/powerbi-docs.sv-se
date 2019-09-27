@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/16/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 258dd735c5ba97122d9e93f888e65cf2030f01eb
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530477"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71074113"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion till datamängder mellan arbetsytor (förhandsversion)
 
@@ -23,7 +23,7 @@ Business Intelligence är en samarbetsinriktad aktivitet. Det är viktigt att up
 
 ![Välja en delad datamängd](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-I Power BI kan datamängdsskapare kontrollera vem som har åtkomst till deras data med hjälp av [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Datamängdsskapare kan även *certifiera* eller *höja upp* datamängder så att andra kan upptäcka dem. På så sätt kan rapportförfattare veta vilken datauppsättning har hög kvalitet och är officiella och de kan använda dessa datauppsättningar, oavsett var i Power BI de skriver. Klientorganisationsadministratörer har klientorganisationsinställning för att [styra användningen av datamängder mellan arbetsytor](service-datasets-admin-across-workspaces.md).
+I Power BI kan datamängdsskapare kontrollera vem som har åtkomst till deras data med hjälp av [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Datamängdsskapare kan även *certifiera* eller *höja upp* datamängder så att andra kan upptäcka dem. På så sätt kan rapportförfattare veta vilka datamängder som har hög kvalitet och är officiella, och de kan använda dessa datamängder oavsett var i Power BI de skriver. Klientorganisationsadministratörer har klientorganisationsinställning för att [styra användningen av datamängder mellan arbetsytor](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Delning av datamängder och den nya arbetsytefunktionen
 
@@ -55,6 +55,7 @@ Om du skapar datamängder kan du, om du skapar en som andra kan dra nytta av, g�
 Specifika funktioner som bygger på funktionaliteten hos delade datamängder licensieras enligt deras befintliga scenarier. Till exempel:
 
 - I allmänhet är upptäckt av och anslutning till delade datamängder tillgängligt för alla. Dock kan användare utan Pro-licens endast ansluta till datamängder som finns i deras personliga Min arbetsyta.
+- Användare utan en Pro-licens kan endast förbruka rapporter och instrumentpaneler som skapats på en delad datamängd om båda arbetsytorna (den med innehållet och den med datamängden) värdhanteras i en Premium-kapacitet.
 - I Power BI Desktop kan användare utan Pro-licens endast se datamängder från deras Min arbetsyta.
 - Kopiering av rapporter mellan arbetsytor kräver en Pro-licens.
 - Kopiering av rapporter från en app kräver en Pro-licens, liksom det krävdes för organisationsinnehållspaket.
@@ -66,7 +67,7 @@ Specifika funktioner som bygger på funktionaliteten hos delade datamängder lic
 - Anta att du skapar en rapport på Arbetsyta A som baseras på en datamängd på Arbetsyta B. När du skapar en app för Arbetsyta A kan du bara inkludera den rapporten i Arbetsyta A-appen om du även är medlem för Arbetsyta B.
 - På en klassisk arbetsyta visar funktionen för datamängdsupptäckt endast datamängder på den arbetsytan.
 - Om du vill lägga till en rapport baserat på en delad datamängd till en app måste du vara medlem i den datamängdens arbetsyta. Det här är ett känt problem.
-- ”Publicera på webben” fungerar inte för en rapport som baseras på en delad datamängd. Det här är avsiktligt.
+- ”Publicera på webben” fungerar avsiktligen inte för en rapport som baseras på en delad datamängd.
 - Om två personer är medlemmar i en arbetsyta som har åtkomst till en delad datamängd är det möjligt att endast en av dem kan se den relaterade datamängden på arbetsytan. Endast personer med minst läsbehörighet till datamängden kan se den delade datamängden. 
 
 ## <a name="next-steps"></a>Nästa steg

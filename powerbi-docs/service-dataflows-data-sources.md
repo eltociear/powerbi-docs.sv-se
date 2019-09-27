@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d2ba4809ce5c6664350ec81b57b6fc717a13879f
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61141384"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164552"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Ansluta till datakällor för Power BI dataflöden
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Ansluta till datakällor för Power BI-dataflöden
 
 Med Power BI-dataflöden kan du ansluta till många olika datakällor för att skapa nya dataflöden eller lägga till nya entiteter i ett befintligt dataflöde.
 
 I den här artikeln listas de många tillgängliga datakällorna för att skapa eller lägga till dataflöden och det beskrivs hur du skapar dessa dataflöden med hjälp av datakällorna.
 
-En översikt över hur du skapar och använder dataflöden, se [skapar och använder dataflöden i Power BI](service-dataflows-create-use.md).
+En översikt av hur du skapar och använder dataflöden finns i [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Skapa ett dataflöde från en datakälla
 
@@ -55,7 +55,7 @@ Datakällor för dataflöden är ordnade i följande kategorier, som visas högs
 * Power BI
 * Azure
 * Onlinetjänster
-* Övrigt
+* Annat
 
 Kategorin **Alla kategorier** innehåller alla datakällor, från alla kategorier. 
 
@@ -156,7 +156,6 @@ Sedan ansluter skriptet till datakällan du har angett.
 
 I följande lista visas vilka anslutningsappar du för närvarande kan använda genom att kopiera och klistra in M-frågan i en tom fråga:
 
-* SAP Business Warehouse 
 * Azure Analysis Services
 * Adobe Analytics
 * ODBC
@@ -176,11 +175,11 @@ Det är allt du behöver veta om att ansluta till datakällor i Power BI-datafl�
 
 Den här artikeln har visat vilka datakällor du kan ansluta till för dataflöden. Följande artiklar går in mer i detalj på vanliga användningsscenarier för dataflöden. 
 
-* [Självbetjäning dataförberedelser i Power BI](service-dataflows-overview.md)
+* [Dataförberedelser med självbetjäning i Power BI](service-dataflows-overview.md)
 * [Skapa och använda dataflöden i Power BI](service-dataflows-create-use.md)
-* [Med beräknade entiteter på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Med hjälp av dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
-* [Resurser för utvecklare för Power BI dataflöden](service-dataflows-developer-resources.md)
+* [Använda beräknade entiteter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Använda dataflöden med lokala datakällor](service-dataflows-on-premises-gateways.md)
+* [Resurser för utvecklare för Power BI-dataflöden](service-dataflows-developer-resources.md)
 * [Dataflöden och Azure Data Lake-integrering (förhandsversion)](service-dataflows-azure-data-lake-integration.md)
 
 Mer information om Power Query och schemalagd uppdatering finns i följande artiklar:

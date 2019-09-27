@@ -8,39 +8,39 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 66ac187d002c1606f96694bb45a5d44ba2ad2279
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61048027"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141266"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
 Med Power BI kan du publicera din rapport till PDF-format och enkelt att skapa ett dokument baserat på din Power BI-rapport. När du **exporterar till PDF** blir varje sida i Power BI-rapporten en separat sida i PDF-dokumentet.
 
 ## <a name="how-to-export-your-power-bi-report-to-pdf"></a>Så här exporterar du en Power BI-rapport till PDF
-Välj en rapport i Power BI-tjänsten för att visa den på arbetsytan. Du kan också välja en rapport från din Start-sida, Appar eller något annat avsnitt i ditt vänstra navigeringsfönstret.
+Välj en rapport i Power BI-tjänsten för att visa den på arbetsytan. Du kan även välja en rapport från din Start-sida, Appar eller någon annan container i det vänstra navigeringsfönstret.
 
-1. Välj **Arkiv** > **Exportera till PDF** på menyraden.
+1. Välj **Exportera** > **PDF** på menyraden.
 
-    ![Välj Arkiv från menyraden, pil som pekar på Exportera till PDF](media/end-user-pdf/power-bi-export-pdf.png)
+    ![Välj Exportera i menyfältet, pil som pekar på Exportera till PDF](media/end-user-pdf/power-bi-export.png)
 
-    Ett popup-fönster visas där du kan välja **Aktuell vy** eller **Standardvy**.  Med **Aktuell vy** exporteras rapporten i det aktuella tillståndet, vilket innefattar alla aktiva ändringar som du gjort i utsnitts- och filtervärden.  De flesta användare väljer det här alternativet.  Med **Standardvy** exporteras rapporten i dess ursprungliga tillstånd (som den hade när författaren delade den). Inga ändringar som gjorts tas med.
+    Ett popup-fönster visas där du kan välja **Aktuella värden** eller **Standardvärden**.  Med **Aktuella värden** exporteras rapporten i det aktuella tillståndet, vilket innefattar alla aktiva ändringar som du gjort i utsnitts- och filtervärden.  De flesta användare väljer det här alternativet.  Alternativt kan du välja **Standardvärden**, vilket exporterar rapporten i dess ursprungliga tillstånd (som den hade när *designern* delade den). Inga ändringar som du har gjort av originaltillståndet tas med.
     
-    Det finns också en kryssruta för att välja om dolda flikar i en rapport ska exporteras eller inte.  Markera kryssrutan om du endast vill exportera rapportflikar som är synliga för dig i webbläsaren.  Om du föredrar att få med alla dolda flikar i exporten lämnar du kryssrutan avmarkerad.  Om kryssrutan är nedtonad finns inga dolda flikar i rapporten.  Klicka på Exportera för att fortsätta när du har gjort dina val.
+    Det finns också en kryssruta för att välja om dolda flikar i en rapport ska exporteras eller inte.  Markera den här kryssrutan om du endast vill exportera rapportflikar som är synliga för dig i webbläsaren.  Om du föredrar att få med alla dolda flikar i exporten lämnar du kryssrutan avmarkerad.  Om kryssrutan är nedtonad finns inga dolda flikar i rapporten.  När du har gjort dina val väljer du knappen Exportera för att fortsätta.
     
     En förloppsindikator visar i det övre högra hörnet. Exporten kan ta några minuter och du kan fortsätta att arbeta i Power BI medan rapporten exporteras.
 
-    ![Exportera förloppsmeddelande](media/end-user-pdf/power-bi-export-message.png)
+    ![Exportera förloppsmeddelande](media/end-user-pdf/power-bi-export-progress.png)
 
     När det är klart, ändras meddelandebanderollen så att du vet att Power BI-tjänsten har slutfört exportåtgärden.
 
 2. Filen är sedan tillgänglig där din webbläsare visar hämtade filer. I följande bild, visas den som en nedladdningsbanderoll längst ned i webbläsarfönstret.
 
-    ![Nedladdad filplats](media/end-user-pdf/power-bi-save-file.png)
+    ![Nedladdad filplats](media/end-user-pdf/power-bi-export-done.png)
 
 Det är allt. Du kan ladda ned filen och öppna den med ett PDF-visningsprogram, som den som finns i Microsoft Edge.
 

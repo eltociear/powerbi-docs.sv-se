@@ -9,18 +9,18 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 08/10/2017
+ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 11afe27ffbca295eec67fd07731cc646bcca56dc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3de0b5473c6d00013bdf109f262dc0577c3bf290
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769698"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073521"
 ---
 # <a name="get-started-with-third-party-apps"></a>Kom igång med appar från tredje part
 
-Med Power BI, kan du använda en app som skapats av ett företag eller en annan individ än Microsoft. Du kan till exempel använda en tredjeparts-app som integrerar Power BI-paneler i ett specialbyggt webbprogram. När du använder en app från tredje part, blir du ombedd att bevilja programmet vissa behörigheter till Power BI-konto och resurser. Det är viktigt att endast bevilja behörigheter till program som du har känner och litar på. Behörigheter till ett program kan återkallas när som helst. Se [återkalla behörigheter för appar från tredje part](#revoke).
+Med Power BI, kan du använda en app som skapats av ett företag eller en annan individ än Microsoft. Du kan till exempel använda en tredjepartsapp som integrerar Power BI-paneler i en anpassad webbapp. När du använder en tredjepartsapp blir du ombedd att bevilja det programmet vissa behörigheter för ditt Power BI-konto och dina resurser. Det är viktigt att endast bevilja behörigheter till program som du har känner och litar på. Behörigheter till ett program kan återkallas när som helst. Se [återkalla behörigheter för appar från tredje part](#revoke).
 
 Här är de typer av åtkomst som en app kan begära.
 
@@ -47,15 +47,15 @@ Här är de typer av åtkomst som en app kan begära.
 
 <a name="revoke"/>
 
-## <a name="revoke-third-party-app-permissions"></a>Återkalla behörigheter för appar från tredje part
+## <a name="revoke-third-party-app-permissions"></a>Återkalla behörigheter för tredjepartsappar
 
-Du kan återkalla behörigheter för en app från tredje part genom att gå till webbplatsen Office 365 Mina appar.
+Du återkallar behörigheter för en tredjepartsapp genom att gå till webbplatsen Office 365 Mina appar.
 
-På den **Office 365 Mina appar** plats, så att återkalla behörigheter från tredje part:
+På webbplatsen **Office 365 Mina appar** gör du så här för att återkalla behörigheter för tredje part:
 
 1. Gå till [webbplatsen Office 365 mina appar](https://portal.office.com/myapps).
 
-2. På den **Mina appar** , letar du upp appen från tredje part.
+2. På sidan **Mina appar** letar du upp tredjepartsappen.
 
 3. Hovra över apppanelen, klicka på **(...)** -knappen och klicka på **ta bort**.
 

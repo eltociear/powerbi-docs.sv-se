@@ -3,20 +3,19 @@ title: Vad är en instrumentpanel och hur öppnar jag den?
 description: Instrumentpaneler är en nyckelfunktion i Power BI-tjänsten.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cad6aeeb156534052241d5183a575b222736230a
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608329"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141930"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Instrumentpaneler för de som använder Power BI-tjänsten
 
@@ -54,8 +53,8 @@ Rapporter förväxlas ofta med instrumentpaneler, eftersom de också är arbetsy
 | Det går att visa tabeller och fält från den underliggande datauppsättningen |Nej. Det går att exportera data men tabeller och fält visas inte i själva instrumentpanelen. |Ja. Det går att visa datauppsättningens tabeller, fält och värden. |
 
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>Skapare av instrumentpaneler och konsumenter av instrumentpaneler
-Som en Power BI-***konsument*** får du instrumentpaneler från *skapare*. Läs mer om instrumentpaneler i följande avsnitt:
+## <a name="dashboard-designers-and-dashboard-consumers"></a>Instrumentpanelsdesigners och instrumentpanelskonsumenter
+Som Power BI-***konsument*** får du instrumentpaneler från *designers*. Läs mer om instrumentpaneler i följande avsnitt:
 
 * [Visa en instrumentpanel](end-user-dashboard-open.md)
 * Lär dig mer om [panelerna](end-user-tiles.md) och vad som händer när du väljer en.

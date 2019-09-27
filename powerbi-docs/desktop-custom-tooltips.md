@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: d5259ba22287a8a2ade3107e4320c39713dcb45e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239758"
@@ -22,10 +22,10 @@ Knappbeskrivningar är ett elegant sätt att visa sammanhanget och detaljerad in
 
 ![Standardknappbeskrivning](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-När ett visuellt objekt skapas visas standardknappbeskrivningen datapunktens värde och kategori. Det finns många instanser när anpassa knappbeskrivningen informationen är användbar och kan ange ytterligare kontext och information för användare som visar det visuella objektet. Med anpassade knappbeskrivningar kan du ange fler datapunkter som ska visas som del av knappbeskrivningen.
+När ett visuellt objekt skapas visas standardknappbeskrivningen datapunktens värde och kategori. Det finns många fall då det vore användbart att kunna anpassa knappbeskrivningen och visa sammanhanget eller mer information för de användare som tittar på det visuella objektet. Med anpassade knappbeskrivningar kan du ange fler datapunkter som ska visas som del av knappbeskrivningen.
 
 ## <a name="how-to-customize-tooltips"></a>Så här gör du för att anpassa knappbeskrivningar
-Skapa en anpassad knappbeskrivning i den **fält** i den **visualiseringar** fönstret dra ett fält till den **knappbeskrivningar** bucket, enligt följande bild. I följande bild har två fält placerats i bucketen **Knappbeskrivningar**.
+Om du vill skapa en anpassad knappbeskrivning går du till brunnen **Fält** i fönstret **Visualiseringar**. Sedan drar du ett fält till bucketen **Knappbeskrivningar** enligt vad som visas i följande bild. I följande bild har två fält placerats i bucketen **Knappbeskrivningar**.
 
 ![Lägga till knappbeskrivningsfält](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
@@ -38,5 +38,5 @@ Du kan anpassa en knappbeskrivning ytterligare genom att välja en aggregeringsf
 
 ![Knappbeskrivning med Snabberäkning](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
-Det finns många sätt att anpassa **knappbeskrivningar**, med alla fält som är tillgängliga i din datauppsättning att förmedla snabb information och insikter till användare som visar dina instrumentpaneler och rapporter.
+Det finns många sätt att anpassa **knappbeskrivningar** med alla fält som är tillgängliga i din datamängd. Det gör att du kan förmedla snabb information och insikter till användare som tittar på dina instrumentpaneler och rapporter.
 

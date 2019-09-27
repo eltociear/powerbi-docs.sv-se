@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 711e0252cddcc78437e03a82d91c67441cfc3a55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513497"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141985"
 ---
 # <a name="what-is-power-bi-desktop"></a>Vad är Power BI Desktop?
 
@@ -32,6 +32,16 @@ De vanligaste användningarna för **Power BI Desktop** är följande:
 * Dela rapporter med andra med hjälp av **Power BI-tjänsten**
 
 Personer som oftast ansvarar för sådana uppgifter anses ofta vara *dataanalytiker* (ibland bara *analytiker*) eller Business Intelligence-tekniker (kallas ofta för *rapportskapare*). Men många som inte anser sig vara analytiker eller rapportskapare använder sig av **Power BI Desktop** för att skapa övertygande rapporter eller för att hämta data från olika källor och skapa datamodeller som de kan dela med sina medarbetare och organisationer.
+
+Det finns tre vyer i Power BI Desktop som visas längsmed arbetsytans vänstra sida. Vyerna, som visas i den ordning de presenteras, är följande:
+* **Rapportvy** – här skapar du rapporter och visuella objekt samt tillbringar större delen av den tid då du skapar.
+* **Datavy** – här kan du se tabeller, mått och andra data som används i den datamodell som är associerad med din rapport samt transformera data för bästa användning i rapportens modell.
+* **Modellvy** – i den här vyn kan du se och hantera relationerna mellan tabellerna i din datamodell.
+
+Följande bild visar de tre vyerna såsom de visas längsmed arbetsytans vänstra sida:
+
+![olika vyer](media/desktop-what-is-desktop/what-is-desktop-07.png)
+
 
 Med **Power BI Desktop** kan du skapa komplexa och visuellt omfattande rapporter med hjälp av data från flera källor i en enda rapport som du kan dela med andra i din organisation. 
 

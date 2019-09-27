@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61386305"
@@ -31,7 +31,7 @@ ID     |  GUID       | Unik identifierare för datauppsättningen i hela systeme
 namn     | Sträng        | Användardefinierat namn på datauppsättningen.        | Falskt        | Sant        
 tabeller     | Tabell[]        | Tabellsamling.        |  Falskt       | Falskt        
 relationer     | Relation[]        | En samling relationer mellan tabeller.        | Falskt        |  Falskt  
-defaultMode     | Sträng        | Anger om datauppsättningen skickas, strömmat, eller båda, där värdena ”Push” och ”strömning”.         | Falskt        |  Falskt
+defaultMode     | Sträng        | Anger huruvida datamängden push-överförs, strömmas eller båda, med värdena ”Push” och ”Streaming”.         | Falskt        |  Falskt
 
 ## <a name="table"></a>Tabell
 

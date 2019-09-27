@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 48e553ebd81632cb0baa9a2c9c6a761860c3c9c6
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61257123"
@@ -31,7 +31,7 @@ För att gå tillbaka till enskilda datum i stället för att använda datumhier
 ![](media/2-6a-explore-time-based-data/2-6a_5.png)
 
 ## <a name="next-steps"></a>Nästa steg
-**Grattis!** Du har slutfört det här avsnittet i kursen **Interaktiv utbildning** för Power BI. Nu när du vet om *modellering* data, som du är redo att lära dig om allt roligt väntar i nästa avsnitt: **Visualiseringar**.
+**Grattis!** Du har slutfört det här avsnittet i kursen **Interaktiv utbildning** för Power BI. Nu när du känner till hur man *modellerar* data är du redo att lära dig om allt det roliga som väntar i nästa avsnitt: **Visualiseringar**.
 
 Som vi nämnt tidigare bygger den här kursen upp dina kunskaper genom att följa det vanligaste arbetsflödet i Power BI:
 

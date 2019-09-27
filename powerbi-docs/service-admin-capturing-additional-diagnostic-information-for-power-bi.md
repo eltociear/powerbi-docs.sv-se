@@ -13,48 +13,48 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 710fb4cdcf9efb051434966d47c2eaced17ac9ba
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65100236"
 ---
 # <a name="capture-additional-diagnostic-information-for-power-bi"></a>Samla in ytterligare diagnostikinformation för Power BI
 
-Den här artikeln innehåller anvisningar för att samla in ytterligare diagnostikinformation från Power BI-webbklienten manuellt.
+Den här artikeln innehåller instruktioner för manuell insamling av ytterligare diagnostikinformation för Power BI-webbklienten.
 
 1. Bläddra till [Power BI](https://app.powerbi.com) med Microsoft Edge eller Internet Explorer.
 
-1. Tryck på **F12** att öppna Microsoft Edge-utvecklingsverktyg.
+1. Tryck på **F12** för att öppna utvecklarverktygen för Microsoft Edge.
 
-   ![Skärmbild av Microsoft Edge Developer tools element-fliken.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+   ![Skärmbild av fliken Element i utvecklarverktygen för Microsoft Edge.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
 1. Välj fliken **Nätverk**. Den visar en lista över trafik som redan har samlats in.
 
-   ![Skärmbild av Microsoft Edge Developer verktygsflik till nätverket.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Skärmbild av fliken Nätverk i utvecklarverktygen för Microsoft Edge.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
     Du kan:
 
-    * Bläddra i fönstret och återskapa alla problem som du kan stöta på.
+    * Bläddra i fönstret och återskapa alla problem som du stöter på.
 
-    * Dölja och visa utvecklaren fönstret när som helst under sessionen genom att trycka på F12.
+    * Dölj och visa fönstret för utvecklarverktyg när som helst under sessionen genom att trycka på F12.
 
-1. Om du vill stoppa Profileringen sessionen, du kan välja den röda rutan på den **nätverk** fliken i utvecklarens verktyg området.
+1. När du vill sluta profilera sessionen kan du välja den röda rutan på fliken **Nätverk** i området för utvecklarverktyg.
 
-   ![Skärmbild av Microsoft Edge Developer tools fliken nätverk med ett anrop från stopp-knappen.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Skärmbild av fliken Nätverk i utvecklarverktygen för Microsoft Edge med knappen Stoppa framhävd.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
-1. Välj fil att exportera data som en HTTP-Arkiv (HAR)-filen.
+1. Välj diskettikonen för att exportera data som en HTTP-arkivfil (HAR).
 
-   ![Skärmbild av Microsoft Edge Developer tools fliken nätverk med en uppmaning av diskett-ikonen.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Skärmbild av fliken Nätverk i utvecklarverktygen för Microsoft Edge med diskettikonen framhävd.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
 1. Ange ett filnamn och spara HAR-filen.
 
-    HAR-filen innehåller all information om nätverksbegäranden mellan webbläsarfönstret och Power BI, inklusive:
+    HAR-filen innehåller all information om nätverksbegäranden mellan webbläsarfönstret och Power BI, däribland:
 
-    * Aktiviteten ID: N för varje begäran.
+    * Aktivitets-ID:n för varje begäran.
 
-    * Exakt tidsstämpel för varje begäran.
+    * Den exakta tidsstämpeln för varje begäran.
 
-    * Den felinformation som returnerats till klienten.
+    * All felinformation som returneras till klienten.
 
     Den här spårningen innehåller även data som används för att fylla i de visuella objekt som visas på skärmen.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: aad02103903837afbb7bbce48ab9607b5dbf62c3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2185d7a9c91ed014cf0bed29d6393be0e40556a8
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65099644"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71074523"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Förstå administratörsrollen för Power BI-tjänsten
 
@@ -39,7 +39,7 @@ Rollen Power BI-tjänstadministratör ger inte åtkomst till följande funktione
 
 Följ dessa steg om du vill tilldela användare till Power BI-administratörsrollen i Microsoft 365 Administrationscenter.
 
-1. I den [Microsoft 365 Administrationscenter](https://portal.office.com/adminportal/home#/homepage)väljer **användare** > **aktiva användare**.
+1. I [administrationscentret för Microsoft 365](https://portal.office.com/adminportal/home#/homepage) väljer du **Användare** > **Aktiva användare**.
 
     ![Administrationscenter för Microsoft 365](media/service-admin-role/powerbi-admin-users.png)
 
@@ -61,14 +61,14 @@ Du bör se **Power BI-tjänstadministratör** som användarens roll i listan.
 
 ## <a name="assign-users-to-the-admin-role-with-powershell"></a>Tilldela användare till administratörsrollen med PowerShell
 
-Du kan också tilldela användare till roller med hjälp av PowerShell. Användare som hanteras i Azure Active Directory (AD Azure). Om du inte redan har Azure AD PowerShell-modulen kan du [hämta och installera den senaste versionen](https://www.powershellgallery.com/packages/AzureAD/).
+Du kan också tilldela användare till roller med hjälp av PowerShell. Användare hanteras i Azure Active Directory (Azure AD). Om du inte redan har Azure AD PowerShell-modulen kan du [hämta och installera den senaste versionen](https://www.powershellgallery.com/packages/AzureAD/).
 
 1. Anslut först till Azure AD:
    ```
    PS C:\Windows\system32> Connect-AzureAD
    ```
 
-1. Dessutom får den **ObjectId** för den **Power BI-tjänstadministratör** roll. Du kan köra [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) för att hämta **ObjectId**
+1. Sedan hämtar du **ObjectId** för rollen **Power BI-tjänstadministratör**. Du kan köra [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) för att hämta **ObjectId**
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole

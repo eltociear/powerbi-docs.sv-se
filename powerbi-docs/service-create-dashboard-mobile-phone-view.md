@@ -12,15 +12,15 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61158256"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimera en instrumentpanel för mobiltelefoner – Power BI 
-När du visar instrumentpaneler i stående läge på en telefon, märker du instrumentpanelens paneler placeras ut en i taget, alla i samma storlek. I Power BI-tjänsten kan du skapa en anpassad vy av en instrumentpanel specifikt för stående läge på telefoner. Även om du skapar en telefonvy när du vänder telefonen på sidan kan se du instrumentpanelen som den ser ut i tjänsten.
+När du visar instrumentpaneler i stående läge på en telefon märker du att instrumentpanelens paneler placeras ut en i taget, alla i samma storlek. I Power BI-tjänsten kan du skapa en anpassad vy av en instrumentpanel särskilt för stående läge på mobiltelefoner. Även om du skapar en telefonvy ser du instrumentpanelen som den ser ut i tjänsten när du vänder telefonen i sidled.
 
-Letar du efter information om hur du visar instrumentpaneler på en mobil enhet? Prova den här snabbstarten [utforska instrumentpaneler och rapporter i Power BI-mobilapparna](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) i stället.
+Letar du efter information om visning av instrumentpaneler på en mobil enhet? Prova den här snabbstarten [Utforska instrumentpaneler och rapporter i Power BI-mobilappar](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) i stället.
 
 > [!NOTE]
 > När du redigerar telefonvyn kan alla som ser instrumentpanelen på en telefon se de ändringar du gör i realtid. Om du till exempel plockar bort alla paneler i instrumentpanelens telefonvy, kommer instrumentpanelen på telefonen plötsligt inte ha några paneler. 

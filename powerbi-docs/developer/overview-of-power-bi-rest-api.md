@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 03/25/2019
 ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61269460"
@@ -24,12 +24,12 @@ Med Power BI REST API är det möjligt att utföra hanteringsuppgifter på Power
 
 Här följer några av de saker som du kan göra med Power BI-API:er.
 
-| **Läs mer** | **Referera till den här informationen** |
+| **Läs mer** | **Använd följande information** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Bädda in rapporter, instrumentpaneler och paneler för Power BI-användare och icke-Power BI-användare. | [Hur du bäddar in dina Power BI-instrumentpaneler, rapporter och paneler ](embedding-content.md) |
+| Bädda in rapporter, instrumentpaneler och paneler för Power BI-användare och icke-Power BI-användare. | [Så här bäddar du in dina instrumentpaneler, rapporter och paneler i Power BI ](embedding-content.md) |
 | Utföra hanteringsuppgifter på Power BI-objekt. | [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/) |
 | Utöka ett befintligt business-arbetsflöde för att skicka viktiga data till en Power BI-instrumentpanel. | [Skicka data till en instrumentpanel ](walkthrough-push-data.md) |
-| Autentisera till Power BI. | [Autentisera till Powerbi ](get-azuread-access-token.md) |
+| Autentisera till Power BI. | [Autentisera till Power BI ](get-azuread-access-token.md) |
 
 > [!NOTE]
 > Power BI-API:er refererar fortfarande till apparbetsytor som grupper. Alla referenser till grupper innebär att du arbetar med apparbetsytor.
@@ -38,7 +38,7 @@ Här följer några av de saker som du kan göra med Power BI-API:er.
 
 | Verktyg | Beskrivning |  |  |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| [Playground-verktyget](https://microsoft.github.io/PowerBI-JavaScript/demo) | Se ett fullständigt exempel på hur du använder Power BI JavaScript-API:erna. Det här verktyget är också ett snabbt sätt att leka med olika typer av Power BI Embedded-exempel. |  |  |
+| [Testplatsverktyg](https://microsoft.github.io/PowerBI-JavaScript/demo) | Se ett fullständigt exempel på hur du använder Power BI JavaScript-API:erna. Det här verktyget är också ett snabbt sätt att leka med olika typer av Power BI Embedded-exempel. |  |  |
 | [Power BI JavaScript-wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | Mer information om Power BI JavaScript-API:erna. |  |  |
 | [Postman](https://www.getpostman.com/) | Köra begäranden, testa, felsöka, övervaka, köra automatiska tester och mycket mer. |
 

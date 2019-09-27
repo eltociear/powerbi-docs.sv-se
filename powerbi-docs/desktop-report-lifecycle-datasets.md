@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5477d7772681f0dd5ac4426335521f6ab1a7844e
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: f3c72de197203adcad1020bc244ff0bc215e10bd
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160350"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164482"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det här innebär att du kan skapa den perfekta datamodellen i Power BI Desktop och publicera den till Power BI-tjänsten. Sedan kan du och andra skapa flera olika rapporter (i separata .pbix-filer) från samma, gemensamma datamodell och spara dem på olika arbetsytor. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
@@ -74,7 +74,7 @@ När det är klart visar **Power BI Desktop** detta och ger dig några länkar f
 
 ![Publiceringen lyckades](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-Nu när rapporten och dess datamängd finns i Power BI-tjänsten kan du även *höja upp* den som ett tecken på dess kvalitet och tillförlitlighet. Du kan även begära att den ska *certifieras* av en central beslutsfattare i Power BI-klientorganisationen. Med något de här godkännandena visas datamängden alltid i ämneslistan när användare söker efter datamängder. Om du är intresserad kan du läsa mer om hur du [höjer upp din datauppsättning](service-datasets-promote.md). 
+Nu när rapporten och dess datamängd finns i Power BI-tjänsten kan du även *höja upp* den som ett tecken på dess kvalitet och tillförlitlighet. Du kan även begära att den ska *certifieras* av en central beslutsfattare i Power BI-klientorganisationen. Med något av de här godkännandena visas datamängden alltid längst upp i listan när användare söker efter datamängder. Om du är intresserad kan du läsa mer om hur du [höjer upp din datauppsättning](service-datasets-promote.md). 
 
 Det sista steget är att ställa in *behörigheten Skapa* datamängden som rapporten är baserad på. Behörigheten Skapa avgör vem som kan se och använda datamängden. Du kan ställa in den på själva arbetsytan eller när du delar en app från arbetsytan. Läs mer om att ställa in [behörigheten Skapa](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 

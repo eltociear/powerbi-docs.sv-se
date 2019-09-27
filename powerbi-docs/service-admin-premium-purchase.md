@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bc55d290e10832034ed96d7092c5baa4b7cc20d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565294"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175239"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
@@ -101,9 +101,10 @@ När du avbryter din Premium-prenumeration eller kapacitetslicensen upphör att 
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Power BI-prissättningsida](https://powerbi.microsoft.com/pricing/)   
-[Power BI Premium-kalkylator](https://powerbi.microsoft.com/calculator/)   
-[Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)   
+[Konfigurera och hantera kapaciteter i Power BI Premium](service-admin-premium-manage.md)\
+[Power BI-prissättningsida](https://powerbi.microsoft.com/pricing/)\
+[Power BI Premium-kalkylator](https://powerbi.microsoft.com/calculator/)\
+[Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)\
 [Planera ett white paper för en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

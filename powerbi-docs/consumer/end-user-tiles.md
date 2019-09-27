@@ -4,24 +4,23 @@ description: Allt om paneler på instrumentpanelen i Power BI för användare. D
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7e6d10a7a06c94c6bc00b06d38194dde461720be
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61050255"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142002"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Paneler på instrumentpanelen i Power BI
-En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen av en *designer*. En panel kan skapas från en rapport, datamängd, instrumentpanel, Frågor och svar-frågerutan, Excel samt SQL Server Reporting Services (SSRS) med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.
+En panel är en ögonblicksbild av dina data, fäst på instrumentpanelen av en *designer*. *Designers* kan skapa paneler från en rapport, datamängd, instrumentpanel, Frågor och svar-frågerutan, Excel samt SQL Server Reporting Services (SSRS) med mera.  Den här skärmbilden visar många olika paneler fästa på en instrumentpanel.
 
-![Power BI-instrumentpanel](./media/end-user-tiles/power-bi-dashboard.png)
+![Power BI-instrumentpanel](./media/end-user-tiles/power-bi-dash.png)
 
 
 Utöver paneler som är fästs från rapporter kan *designers* lägga till fristående paneler direkt på instrumentpanelen med hjälp av **Lägg till panel**. Fristående paneler innehåller: textrutor, bilder, videor, strömmande data och webbinnehåll.
@@ -38,15 +37,15 @@ Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer informati
 
     - panel som skapats med hjälp av frågor och svar
    
-        ![ellipsikon](./media/end-user-tiles/power-bi-menu1.png)
+        ![ellipsikon](./media/end-user-tiles/power-bi-options-1.png)
 
     - panel som skapats från en arbetsbok
    
-        ![ellipsikon](./media/end-user-tiles/power-bi-menu2.png)
+        ![ellipsikon](./media/end-user-tiles/power-bi-options-2.png)
 
     - panel som skapats från en rapport
    
-        ![ellipsikon](./media/end-user-tiles/power-bi-menu3.png)
+        ![ellipsikon](./media/end-user-tiles/power-bi-options-3.png)
    
     Här kan göra du följande:
    
@@ -56,9 +55,12 @@ Behöver du hjälp att förstå de olika byggstenarna i Power BI?  Mer informati
    
 
    * [Öppna den arbetsbok som användes för att skapa den här panelen ](end-user-reports.md) ![kalkylbladsikon](./media/end-user-tiles/power-bi-open-worksheet.png)  
-    * [Visa panelen i fokusläge ](end-user-focus.md) ![fokusikon](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [Köra insikter ](end-user-insights.md) ![ikonen Insikter](./media/end-user-tiles/power-bi-insights.png)
-    * [Lägga till en kommentar och starta en diskussion](end-user-comment.md)  ![kommentarsikon](./media/end-user-tiles/comment-icons.png)
+   * [Visa panelen i fokusläge ](end-user-focus.md) ![fokusikon](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [Visa insikter ](end-user-insights.md) ![ikonen Insikter](./media/end-user-tiles/power-bi-insights.png)
+   * [Lägga till en kommentar och starta en diskussion](end-user-comment.md)  ![kommentarsikon](./media/end-user-tiles/comment-icons.png)
+   * [Hantera aviseringar som angetts på en instrumentpanel](end-user-alerts.md)  ![aviseringsikon](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Öppna data i Excel](end-user-export.md)  ![exportikon](./media/end-user-tiles/power-bi-export-icon.png)
+
 
 3. Om du vill stänga åtgärdsmenyn, välj ett tomt område på arbetsytan.
 

@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769934"
@@ -31,15 +31,15 @@ Det finns två sätt att ansluta till en SQL Server Analysis Services-realtidsse
 
 1. I **min arbetsyta** väljer du **hämta data**. Du kan också ändra till en grupparbetsyta om det finns en.
 
-   ![Ansluta till knappen Hämta data](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
+   ![Knappen Anslut för att hämta data](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
 2. Välj **Databaser och mer**.
 
-   ![Anslut och få data 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
+   ![Anslut för att hämta data 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
 3. Välj **SQL Server Analysis Services** > **Anslut**.
 
-   ![Anslut och få data 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+   ![Anslut för att hämta data 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
 4. Välj en server. Om du inte ser några servrar listade här, betyder det antingen att ingen gateway och datakälla har konfigurerats, eller att ditt konto inte listas i fliken **användare** för datakällan i gatewayen. Kontrollera med din administratör.
 
@@ -47,7 +47,7 @@ Det finns två sätt att ansluta till en SQL Server Analysis Services-realtidsse
 
 När du ansluter till modellen, visas den i din Power BI-plats i **min arbetsyta/datauppsättningar**. Om du växlades till en grupparbetsyta, visas datauppsättningen i gruppen.
 
-![Ansluta till datauppsättning](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
+![Ansluta till datamängd](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 
 ## <a name="dashboard-tiles"></a>Paneler på instrumentpanelen
 

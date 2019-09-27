@@ -1,6 +1,6 @@
 ---
-title: Högdensitetspunktdiagram i Powerbi
-description: Högdensitetspunktdiagram i Powerbi
+title: Punktdiagram med hög densitet i Power BI
+description: Punktdiagram med hög densitet i Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 928e93c724a47f48aff1f87ee51f9a8c907774d6
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454289"
@@ -32,7 +32,7 @@ Du kan till exempel skapa ett punktdiagram från din organisations försäljning
 ## <a name="how-high-density-scatter-charts-work"></a>Så här fungerar punktdiagram med hög densitet
 Tidigare valde **Power BI** en uppsättning samplade datapunkter från alla underliggande data på ett deterministiskt sätt för att skapa ett punktdiagram. Mer specifikt väljer Power BI de första och sista raderna med data i punktdiagramserien och delar upp de återstående raderna jämnt så att 3 500 datapunkter fördelas över punktdiagrammet. Till exempel om urvalet hade 35 000 rader skulle den första och sista raden väljas för punktdiagrammet. Var tionde rad utgör sedan en punkt i diagrammet (35 000/10 = var tionde rad = 3 500 datapunkter). Tidigare visades inte null-värden som inte kunde inte ritas (till exempel textvärden) i dataserien och således beaktades de inte vid generering av det visuella objektet. Med sådan sampling är den upplevda tätheten av punktdiagrammet baserad på representativa datapunkter. Därmed är den underförstådda visuella tätheten en följd av de valda punkterna och inte hela datasamlingen.
 
-När du aktiverar **High-Density Sampling**, Power BI implementerar en algoritm som eliminerar överlappande punkter och garanterar att pekar på det visuella objektet kan nås när du interagerar med det visuella objektet. Algoritmen säkerställer också att alla punkter i datauppsättningen visas i det visuella objektet, vilket ger ett sammanhang för betydelsen av de valda punkterna, snarare än bara ett representativt urval.
+När du aktiverar **Högdensitetssampling** implementerar Power BI en algoritm som eliminerar överlappande punkter och garanterar att det går att interagera med individuella punkter i det visuella objektet. Algoritmen säkerställer också att alla punkter i datauppsättningen visas i det visuella objektet, vilket ger ett sammanhang för betydelsen av de valda punkterna, snarare än bara ett representativt urval.
 
 Per definition samplas högdensitetsdata för att skapa visualiseringar förhållandevis snabbt som reagerar på interaktivitet. För många datapunkter i ett visuellt objekt kan göra det tungt, och det kan dra uppmärksamheten från synligheten för trender. Metoden för att sampla data styr skapandet av samplingsalgoritmen för att ge bästa möjliga visualisering och säkerställa att alla data representeras. Algoritmen i Power BI har förbättrats för att ge den bästa kombinationen av svarstider, återgivning och att bevara viktiga punkter i varje datauppsättningen.
 
@@ -42,7 +42,7 @@ Per definition samplas högdensitetsdata för att skapa visualiseringar förhål
 > 
 
 ## <a name="how-the-new-scatter-chart-sampling-algorithm-works"></a>Så här fungerar samplingsalgoritmen för punktdiagram
-Den nya algoritmen för **High-Density Sampling** för punktdiagram använder metoder som avbildar underliggande data mer effektivt och undviker överlappande punkter. Detta är tack vare en lite startradie för varje datapunkt (den visuella cirkeln för varje punkt i det visuella objektet). Sedan ökar radien för alla datapunkter. När två (eller fler) datapunkter överlappar varandra, representerar en enskild cirkel (med större radie) de överlappande datapunkterna. Algoritmen fortsätter att öka radien för datapunkter, tills radievärdet resulterar i ett rimligt antal datapunkter – 3 500 – som visas i punktdiagram.
+Den nya algoritmen för **högdensitetssampling** för punktdiagram använder metoder som avbildar underliggande data mer effektivt och undviker överlappande punkter. Detta är tack vare en lite startradie för varje datapunkt (den visuella cirkeln för varje punkt i det visuella objektet). Sedan ökar radien för alla datapunkter. När två (eller fler) datapunkter överlappar varandra, representerar en enskild cirkel (med större radie) de överlappande datapunkterna. Algoritmen fortsätter att öka radien för datapunkter, tills radievärdet resulterar i ett rimligt antal datapunkter – 3 500 – som visas i punktdiagram.
 
 Metoderna i den här algoritmen se till att avvikare representeras i det visuella objektet. Algoritmen respekterar skala när överlappning fastställs, så att exponentiella skalor visualiseras utan att göra avkall på underliggande datapunkter.
 
@@ -56,7 +56,7 @@ Algoritmen bevarar punktdiagrammets övergripande form.
 Dessutom ignoreras datapunkter som inte kan ritas (till exempel null-värden eller textvärden). Istället väljs ett värde som kan ritas vilket så att punktdiagrammets form bevaras.
 
 ### <a name="when-the-standard-algorithm-for-scatter-charts-is-used"></a>När standardalgoritmen för punktdiagram används
-Det finns omständigheter då **High-Density Sampling** kan inte tillämpas på ett punktdiagram och ursprungligt algoritmen används. Dessa omständigheter är följande:
+Det finns omständigheter då **högdensitetssampling** inte kan tillämpas på ett punktdiagram och den ursprungliga algoritmen används. Dessa omständigheter är följande:
 
 * Om du högerklickar på ett värde under **Information**och väljer **Visa poster utan data** från menyn återgår punktdiagrammet till den ursprungliga algoritmen.
   
@@ -68,7 +68,7 @@ Det finns omständigheter då **High-Density Sampling** kan inte tillämpas på 
   ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Så här aktiverar du Högdensitetssampling för ett punktdiagram
-Aktivera **High-Density Sampling**väljer du ett punktdiagram, går du till den **formatering** fönstret expanderar den **Allmänt** kortet och dra längstnedpåkortet**High-Density Sampling** växla skjutreglaget till **på**.
+Om du vill aktivera **Högdensitetssampling** väljer du ett punktdiagram, går till rutan **Formatering** och expanderar kortet **Allmänt**. Mot slutet av det kortet flyttar du skjutreglaget **Högdensitetssampling** till **På**.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
 
@@ -83,7 +83,7 @@ Aktivera **High-Density Sampling**väljer du ett punktdiagram, går du till den 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Algoritmen för högdensitetssampling är en viktig förbättring i Power BI, men det finns några saker som är bra att veta när du arbetar med högdensitetsvärden och punktdiagram.
 
-* Den **High-Density Sampling** algoritmen fungerar bara med live-anslutningar till Power BI-tjänsten-baserade modellen, modeller eller DirectQuery.
+* Algoritmen för **Högdensitetssampling** fungerar endast med realtidsanslutningar till modeller som är baserade på Power BI-tjänsten, importerade modeller eller DirectQuery.
 
 ## <a name="next-steps"></a>Nästa steg
 Information om högdensitetssampling i andra diagram finns i följande artikel.

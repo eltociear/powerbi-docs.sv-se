@@ -1,20 +1,20 @@
 ---
 title: Knappbeskrivningar i visuella Power BI-objekt
 description: Den här artikeln beskriver hur du kan visa knappbeskrivningar i visuella Power BI-objekt.
-author: AviSander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5ad14c632955c42607206dd09a16a8fdb3670e92
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 3b530da369dad2bcecde47c8f92202387abd42a6
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237367"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193710"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Knappbeskrivningar i visuella Power BI-objekt
 
@@ -108,9 +108,9 @@ Metoden `addTooltip` är klassens enda ingångspunkt för att registrera händel
         }
 ```
 
-* **selection: d3.Selection<Element>**: De D3-element över vilka knappbeskrivningar hanteras.
+* **selection: d3.Selection<Element>** : De D3-element över vilka knappbeskrivningar hanteras.
 
-* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**: Delegaten för att fylla i knappbeskrivningsinnehållet (det som ska visas) efter kontext.
+* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]** : Delegaten för att fylla i knappbeskrivningsinnehållet (det som ska visas) efter kontext.
 
 * **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**: Delegaten för att hämta datapunkts-ID (används inte i det här exemplet). 
 

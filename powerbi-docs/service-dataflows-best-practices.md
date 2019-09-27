@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c5aeb74277379b46398dc709f5deda1d10dc0926
-ms.sourcegitcommit: 7eb74b060de080152c190ac7eb6b64767f8d6626
+ms.openlocfilehash: c499a83b87eb15031d75974084468f418a17804a
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70919554"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142317"
 ---
 # <a name="dataflows-best-practice"></a>Metodtips för dataflöden
 
@@ -28,7 +28,7 @@ Den här artikeln innehåller metodtips för att utforma rapporter i Power BI. D
 
 ### <a name="split-ingestion-and-transformation-to-use-the-enhanced-compute-engine"></a>Dela inmatning och transformering för att använda den förbättrade motorn
 
-När du skapar dataflöden kanske du frestas att skapa ett enda dataflöde med alla enheter, transformeringar, kopplingar och förbättringar på en och samma plats. För mindre datauppsättningar kan ett enda flöde vara lämpligt. Men när du hanterar större datavolymer kan det ibland uppstå begränsningar eller minnesgränser när du utför kopplingar eller vissa transformeringar. För att lösa dessa problem har en förbättrad motor lanserats för Power BI Premium-användare som använder mycket större datauppsättningar. Den förbättrade beräkningsmotorn fungerar enbart mot länkade eller beräknade entiteter. Om du skapar ett separat dataflöde för inmatning och ett länkat dataflöde för att utföra alla komplexa sammanslagningar och transformeringar kan detta gynnas av den förbättrade motorn.
+När du skapar dataflöden kanske du frestas att skapa ett enda dataflöde med alla enheter, transformeringar, kopplingar och förbättringar på en och samma plats. För mindre datauppsättningar kan ett enda flöde vara lämpligt. Men när du hanterar större datavolymer kan det ibland uppstå begränsningar eller minnesgränser när du utför kopplingar eller vissa transformeringar. För att lösa dessa problem har en förbättrad motor lanserats för Power BI Premium-användare som använder mycket större datavolymer. Den förbättrade beräkningsmotorn fungerar enbart mot länkade eller beräknade entiteter. Om du skapar ett separat dataflöde för inmatning och ett länkat dataflöde för att utföra alla komplexa sammanslagningar och transformeringar kan detta gynnas av den förbättrade motorn.
 
 Att dela upp dataflöden är också fördelaktigt för att diagnostisera och felsöka uppdateringsproblem, särskilt när du arbetar med källor som har nätverksbegränsningar.
 

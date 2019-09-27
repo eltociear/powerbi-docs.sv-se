@@ -1,28 +1,33 @@
 ---
 title: Paginated Report Builder i Power BI
 description: Power BI Paginated Report Builder är ett verktyg för skapande av sidnumrerade rapporter.
-ms.date: 06/06/2019
+ms.date: 09/16/2019
 ms.service: powerbi
 ms.subservice: report-builder
+featuredvideoid: 78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 7ae945be1941fea4303b5cc74f9a2a4f104e8754
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840497"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71076066"
 ---
 # <a name="power-bi-paginated-report-builder"></a>Paginated Report Builder i Power BI
 
- Power BI Paginated Report Builder är ett verktyg för skapande av sidnumrerade rapporter.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du kan förhandsgranska rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
+ Power BI Paginated Report Builder är ett verktyg för skapande av sidnumrerade rapporter.  När du utformar en sidnumrerad rapport skapar du en rapportdefinition som anger vilka data som ska hämtas, var de ska hämtas och hur de ska visas. När du kör rapporten tar rapportbearbetaren den rapportdefinition som du har angett, hämtar data, kombinerar dem med rapportlayouten och genererar därmed rapporten. Du förhandsgranskar rapporten i Report Builder. Sedan publicerar du rapporten till Power BI-tjänsten.
+
+Föredrar du inlärning från videor? Titta på videoserien om sidnumrerade Power BI-rapporter på YouTube av Chris Finlan, Principal Program Manager för Power BI.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/78TZeiEhveY?list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ" frameborder="0" allowfullscreen></iframe>
+
+Följande sidnumrerade rapport har en matris med radgrupper och kolumngrupper, miniatyrdiagram, indikatorer samt ett cirkeldiagram för sammanfattning i hörncellen, tillsammans med en karta med två uppsättningar geografiska data som representeras av färg och cirkelstorlek.  
 
 ![Sidnumrerad rapport i Power BI-tjänsten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
- Den här sidnumrerade rapporten har en matris med radgrupper och kolumngrupper, miniatyrdiagram, indikatorer och ett cirkeldiagram för sammanfattning i hörncellen, tillsammans med en karta med två uppsättningar geografiska data som representeras av färg och cirkelstorlek.  
-  
 ##  <a name="JumpStartReptCreation"></a> Komma igång snabbt med att skapa en rapport  
  
 -   **Börja med tabell-, matris- eller diagramguiden**. Skapa en anslutning för datakälla, dra och släpp fält för att skapa en datamängdsfråga, välj layout och stil samt anpassa rapporten.  
@@ -35,7 +40,7 @@ ms.locfileid: "66840497"
   
 -   **Rapportera från en mängd olika datakällor.** Du kan skapa rapporter som använder relationsdata och flerdimensionella data från SQL Server och Analysis Services, Oracle, Power BI-datamängder och andra databaser.  
   
--   **Ändra befintliga rapporter.** Genom att använda Report Builder kan du anpassa och uppdatera rapporter som skapades i SQL Server Data Tools-rapportdesignern (SSDT).  
+-   **Ändra befintliga rapporter.** Med hjälp av Report Builder kan du anpassa och uppdatera rapporter som skapades i SQL Server Data Tools-rapportdesignern (SSDT).  
   
 -   **Ändra dina data**. Filtrera, gruppera och sortera data eller lägg till formler eller uttryck.  
 
@@ -52,6 +57,9 @@ ms.locfileid: "66840497"
 -   **Välj ett presentationsformat** när du öppnar rapporten eller efter att du har öppnat rapporten. Du kan välja format med orientering för webb, sida eller skrivbordsprogram. Formaten inbegriper MHTML, PDF, XML, CSV, Word och Excel.  
   
 -   **Konfigurera prenumerationer.** När du har publicerat rapporten till Power BI-tjänsten kan du konfigurera rapporten att köra vid en viss tidpunkt och skicka som en e-postprenumeration.  
+
 ## <a name="next-steps"></a>Nästa steg
 
 - [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+
+- Titta på [videoserien om sidnumrerade Power BI-rapporter](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) på YouTube av Chris Finlan, Principal Program Manager för Power BI

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 6424180dde3dac0d6d2b66c8a9303810b6aa0dc6
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903757"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100101"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Använd visning av detaljerad information mellan rapporter i Power BI Desktop
 
@@ -32,12 +32,12 @@ Det är viktigt att förstå följande definitioner innan vi börjar konfigurera
 
 
 > [!NOTE]
-> Individuellt delade rapporter i *Min arbetsyta* som är rapporter som visas som *[Delade med mig](service-share-dashboards.md#share-a-dashboard-or-report)* går bara att komma åt på den arbetsyta som de ursprungligen delades till. 
+> Med funktionen för ökad detaljnivå i Power BI Desktop kan du gå från en rapport till en annan baserat på sammanhang. Detta är sant förutsatt att rapporterna befinner sig i samma arbetsyta eller app i Power BI-tjänsten. Detta gäller inte vid åtkomst till enskilda delade rapporter i *Min arbetsyta* ([Delat med mig-rapporter](service-share-dashboards.md#share-a-dashboard-or-report)). I stället kommer du åt rapporten på den arbetsyta som den ursprungligen delades från.
 
 
 ## <a name="enable-cross-report-drillthrough"></a>Aktivera detaljerad information mellan rapporter
 
-Om du vill göra det möjligt för att rapport att vara mål för detaljerad information mellan rapporter måste du aktivera funktionen för rapporten i fönstret **Alternativ**. Gå till **Filalternativ och inställningar** >  ****  > **Alternativ** och gå sedan till **Rapportinställningar** längst ner till vänster på sidan.
+Om du vill göra det möjligt för att rapport att vara mål för detaljerad information mellan rapporter måste du aktivera funktionen för rapporten i fönstret **Alternativ**. Gå till **Filalternativ och inställningar** > **Alternativ** och gå sedan till **Rapportinställningar** längst ner till vänster på sidan.
 
 Markera kryssrytan **Tillåt att visuella objekt i den här rapporten använder mål för visning av detaljerad information från andra rapporter** enligt följande bild.
 

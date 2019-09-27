@@ -13,7 +13,7 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65101579"
@@ -25,7 +25,7 @@ ms.locfileid: "65101579"
 
 När du importerar en Excel-arbetsbok till Power BI kan du se följande fel:
 
-*Fel: Det gick inte att hitta några data formaterade som en tabell. Om du vill importera från Excel till Power BI-tjänsten, måste du formatera data som en tabell. Välj alla data i tabellen och tryck på Ctrl + T.*
+*Fel: Det gick inte att hitta några data som är formaterade som en tabell. För att importera från Excel till Power BI-tjänsten behöver du formatera data som en tabell. Markera alla data som du vill använda i tabellen och tryck på CTRL + T.*
 
 ![Det gick inte att hitta data i arbetsboken](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 

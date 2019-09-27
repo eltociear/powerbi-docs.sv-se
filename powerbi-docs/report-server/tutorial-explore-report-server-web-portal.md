@@ -11,7 +11,7 @@ ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65240051"
@@ -37,7 +37,7 @@ För de här självstudierna behöver du en Azure-prenumeration. Om du inte har 
 
 Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power BI-rapportservern redan installerad.
 
-1. I Azure Marketplace, väljer du Power BI Report Server. Den här länken öppnar den direkt: [Power BI-rapportserver](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. På Azure Marketplace väljer du Power BI-rapportserver. Följande länk öppnar den direkt: [Power BI-rapportserver](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Välj **Hämta nu**.
 3. Om du accepterar leverantörens användningsvillkor och sekretesspolicy väljer du **Fortsätt**.
@@ -46,13 +46,13 @@ Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power
 
     ![Skapa en virtuell dator med Power BI-rapportserver](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
 
-5. I **grunderna i steg 1**, för **namn på virtuell dator**, anropar det **reportservervm**.
+5. I **Steg 1: Grundläggande** anger du **Namn på virtuell dator** till **reportservervm**.
 
-    Power BI Report Server-VM-namnet får inte innehålla bindestreck.
+    Namnet på den virtuella datorn i Power BI-rapportserver får inte innehålla bindestreck.
 
 5. Skapa ett användarnamn och ett lösenord.
 
-6. För **resursgrupp**väljer **Skapa nytt**, och ge den **reportserverresourcegroup** > **OK**.
+6. För **Resursgrupp** väljer du **Skapa ny** och ger den namnet **reportserverresourcegroup** > **OK**.
 
     Om du går igenom kursen mer än en gång måste du ge resursgruppen ett annat namn efter första gången. Du kan inte använda samma namn på resursgruppen två gånger i samma prenumeration. 
 
@@ -60,15 +60,15 @@ Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power
 
 7. Behåll de övriga standardvärdena > **OK**.
 
-8. I **steg 2 inställningar**, behåller du standardvärdena > **OK**.
+8. I **Steg 2: Inställningar** behåller du standardvärdena > **OK**.
  
-    Den **SQL Storage-konto** och **lagringskonto för diagnostik** värdena måste också vara unika. Om du går igenom självstudiekursen mer än en gång kan behöva du ge dem olika namn.
+    Värdena för **SQL Storage-konto** och **Diagnostics Storage-konto** måste också vara unika. Om du går igenom självstudien mer än en gång behöver du ge dem olika namn.
 
-9. I **steg 3 sammanfattning**, granska dina val > **OK**.
+9. I **Steg 3: Sammanfattning** går du igenom dina val > **OK**.
 
-10. I **steg 4 köpa**, Läs licensvillkoren för användar- och sekretess princip > **skapa**.
+10. I **Steg 4: Köp** läser du användarvillkoren och sekretesspolicyn > **Skapa**.
 
-    Den **skickar distribution för Power BI Report Server** processen kan ta flera minuter.
+    **Processen för att skicka distribution för Power BI-rapportservern** kan ta flera minuter.
 
 ## <a name="connect-to-your-virtual-machine"></a>Anslut till den virtuella datorn
 
@@ -84,13 +84,13 @@ Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power
 
     ![Anslut till den virtuella datorn](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. I den **Anslut till den virtuella datorn** fönstret behåller du standardvärdena och välj **ladda ned RDP-filen**.
+5. I fönstret **Anslut till virtuell dator** behåller du standardvärdena och väljer **Ladda ned RDP-fil**.
 
-1. I den **anslutning till fjärrskrivbord** dialogrutan **Connect**.
+1. I dialogrutan **Anslutning till fjärrskrivbord** väljer du **Anslut**.
 
 6. Ange det namn och lösenord som du skapade för den virtuella datorn > **OK**.
 
-7. Nästa dialogruta säger **identiteten för fjärrdatorn kan inte identifieras**. Välj **Ja**.
+7. I nästa dialogruta står det **Fjärrdatorns identitet kan inte identifieras**. Välj **Ja**.
 
    Ta-da! Din nya virtuella dator öppnas.
 
@@ -104,7 +104,7 @@ När den virtuella datorn öppnas visas nedanstående objekt på skrivbordet.
 |---------|---------|
 |![Nummer 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Exempel på Power BI-rapporter (av typen .PBIX) |
 |![Nummer 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Länkar till Power BI-rapportserverns dokumentation |
-|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Startar Power BI Desktop optimerad för Power BI-rapportservern (januari 2019) |
+|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Startar Power BI Desktop som har optimerats för Power BI-rapportserver (januari 2019) |
 |![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Öppnar Power BI-rapportserverns webbportal i webbläsaren |
 |![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Startar SQL Server Data Tools för att skapa sidnumrerade rapporter (av typen .RDL) |
 
@@ -163,7 +163,7 @@ Du kan visa och interagera med Power BI-rapporter i webbportalen och starta Powe
 
 1. Välj **Tillåt** för att tillåta att den här webbplatsen får öppna ett program på datorn. 
 
-     Rapporten öppnas i Power BI Desktop. Notera namnet i det översta fältet ”Power BI Desktop (januari 2019)”. Det är den version som optimerats för Power BI-rapportservern.
+     Rapporten öppnas i Power BI Desktop. Notera namnet på den översta raden, ”Power BI Desktop (januari 2019)”. Det är den version som optimerats för Power BI-rapportservern.
 
     Använd versionen av Power BI Desktop som är installerad på den virtuella datorn. Du kan inte ladda upp en rapport på en annan domän.
 

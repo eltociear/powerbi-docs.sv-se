@@ -1,21 +1,21 @@
 ---
 title: Har du glömt lösenordet till Power BI?
-description: Om du har glömt ditt lösenord kan använda du en länk för att begära en lösenordsåterställning.
+description: Om du har glömt ditt lösenord kan du använda en länk för att begära en lösenordsåterställning.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 855fae9f23527c47802eef6dac2ded5ffcc8b786
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6b3e75b9674a8b22948bdee1b8f8b9086eb2b691
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710343"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075191"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Har du glömt lösenordet till Power BI?
 
@@ -23,15 +23,15 @@ Om du har glömt ditt lösenord, kan du använda följande länk för att begär
 
 <https://passwordreset.microsoftonline.com>
 
-Om det står att ditt konto inte har ställts in för lösenord återställa, kontakta din Office 365-administratör. Om du använder den kostnadsfria utvärderingsversionen, är administratören den första person i organisationen som registrerade dig.
+Om du får ett meddelande om att ditt konto inte har konfigurerats för lösenordsåterställning kontaktar du din Office 365-administratör. Om du använder den kostnadsfria utvärderingsversionen är administratören den första personen inom organisationen som registrerade sig.
 
-Om du fortfarande har problem med åtkomst till ditt konto, kan du kontakta supportteamet för återställning av lösenord.
+Om du fortfarande har problem med att komma åt ditt konto kan du prova att kontakta supportteamet för att få en lösenordsåterställning.
 
 *1-800-642-7676*
 
-Det är viktigt att Observera att det här telefonnumret inte är supportnumret för Power BI-tjänsten.
+Observera att det här telefonnumret inte är numret till supporten för Power BI-tjänsten.
 
 > [!NOTE]
-> Powerbi tillhandahåller support under kontorstid som vanligt i tidszonen Eastern, normaltid (EST). Support finns för närvarande endast på engelska finns i.
+> Power BI ger stöd under vanliga kontorstider i tidszonen EST. Support ges för närvarande endast på engelska.
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

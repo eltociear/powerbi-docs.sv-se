@@ -12,7 +12,7 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: a34de25af7febf63b34d7608ff7ef40e8b653fc4
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61285131"
@@ -23,9 +23,9 @@ Användning av vanliga fraser och naturligt språk för att ställa frågor till
 Om du vill aktivera frågor och svar för att tolka det stora antal frågor som denna funktion kan svara på måste frågor och svar göra antaganden om modellen. Om strukturen för din modell inte uppfyller ett eller flera av dessa antaganden, behöver du justera din modell. Dessa justeringar för frågor och svar har samma metodtips för optimeringarna för alla modeller i Power BI, oavsett om du använder frågor och svar eller inte. 
 
 > [!NOTE]
-> Frågor och svar är endast tillgänglig när du arbetar med en modell som innehåller **importeras** data eller Live-anslutningar till SSAS. DirectQuery-modeller stöds inte.
+> Funktionen Frågor och svar är endast tillgänglig om du arbetar med en modell som innehåller **importerade** data eller till Live-anslutningar till SSAS. DirectQuery-modeller stöds inte.
 >
-> Frågor och svar kräver följande C-körtidsuppdatering om du använder en tidigare Windows-version än Windows 10. Du kan försöka installera viktiga uppdateringar från Windows Update eller manuellt installera den nödvändiga komponenten från Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows)
+> Frågor och svar kräver följande C-körtidsuppdatering om du använder en tidigare Windows-version än Windows 10. Du kan försöka installera viktiga uppdateringar från Windows Update eller manuellt installera den nödvändiga komponenten från Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows )
 >
 >
 

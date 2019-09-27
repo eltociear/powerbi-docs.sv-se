@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61269802"
@@ -53,7 +53,7 @@ Så här gör du för att registrera din app med registreringsverktyget för Pow
 
     ![Apptyp](media/register-app/register-app-new-design-app-type.png)
 
-5. Om du väljer **Server-side web application** (Webbapp på serversidan) som apptyp fortsätter du med att ange ett värde för **Hemside-URL** och **Omdirigerings-URL**. Den **omdirigerings-URL** fungerar med alla giltiga URL: er och överensstämma med det program som du har skapat. Om du har valt **Intern** fortsätter du till steg 6.
+5. Om du väljer **Server-side web application** (Webbapp på serversidan) som apptyp fortsätter du med att ange ett värde för **Hemside-URL** och **Omdirigerings-URL**. **Omdirigerings-URL** fungerar med alla giltiga URL-adresser och ska motsvara den app som du har skapat. Om du har valt **Intern** fortsätter du till steg 6.
 
 6. Välj de Power BI-API:er som appen behöver. Läs mer om Power BI-behörigheter i [Power BI-behörigheter](power-bi-permissions.md). Välj **Registrera**.
 
@@ -62,7 +62,7 @@ Så här gör du för att registrera din app med registreringsverktyget för Pow
     > [!Important]
     > Om du aktiverar tjänsthuvudnamn för användning med Power BI gäller inte längre Azure Active Directory-behörigheterna. Behörigheterna hanteras via Power BI-administrationsportalen.
 
-7. Om du väljer **interna** som programtyp, sedan sedan får du en **program-ID**. Om du väljer **Server-side Web app** (Webbapp på serversidan) som apptyp får du ett **program-ID** och en **apphemlighet**.
+7. Om du väljer **Intern** som programtyp får du ett **program-ID**. Om du väljer **Server-side Web app** (Webbapp på serversidan) som apptyp får du ett **program-ID** och en **apphemlighet**.
 
     > [!Note]
     > Ditt **program-ID** kan hämtas från Azure-portalen vid ett senare tillfälle om det behövs. Om du tappar bort din **apphemlighet** måste du skapa en ny på Azure-portalen.
@@ -83,11 +83,11 @@ Ett annat alternativ för att registrera ditt program är att göra det direkt i
 
 3. Välj Azure AD-klientorganisationen genom att markera ditt konto i sidans övre högra hörn.
 
-4. I det vänstra navigeringsfönstret, går du till **alla tjänster**väljer **Appregistreringar** och välj sedan **ny registrering**.
+4. I det vänstra navigeringsfönstret går du till **Alla tjänster** och väljer **Appregistreringar** följt av **Ny registrering**.
 
 5. Följ anvisningarna och skapa ett nytt program.
 
-   Mer information om hur du registrerar program i Azure Active Directory finns i [registrera en app med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
+   Mer information om hur du registrerar program i Azure Active Directory finns i [Registrera en app med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## <a name="how-to-get-the-application-id"></a>Så här får du program-ID
 
@@ -107,21 +107,21 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
 
 1. Bläddra till [Appregistreringar](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) i Azure-portalen och välj den app som du använder för att bädda in.
 
-2. Välj **API-behörigheter** under **hantera**.
+2. Välj **API-behörigheter** under **Hantera**.
 
-3. Inom **API-behörigheter**väljer **lägga till en behörighet**och välj sedan **Power BI-tjänsten**.
+3. I **API-behörigheter** väljer du **Lägg till en behörighet** och sedan **Power BI-tjänst**.
 
     ![Appbehörigheter 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-4. Välj de specifika behörigheter som du behöver under **delegerade behörigheter**. Du måste välja dem separat för valen ska sparas. Välj **Spara** när du är klar.
+4. Välj de specifika behörigheter som du behöver under **Delegerade behörigheter**. Du måste välja dem separat för valen ska sparas. Välj **Spara** när du är klar.
 
-5. Välj **ge medgivande**.
+5. Välj **Bevilja medgivande**.
 
-    Den **ge medgivande** åtgärder som krävs för den *masterkontot* att undvika att tillfrågas av Azure AD. Om kontot som utför den här åtgärden är en global administratör beviljar du behörighet till alla användare i din organisation för den här appen. Om kontot som utför den här åtgärden är *huvudkontot* och inte en global administratör beviljar du endast behörigheter till *huvudkontot* för den här appen.
+    Åtgärden **Bevilja medgivande** krävs för *huvudkontot*. Annars blir du tillfrågad av Azure AD angående medgivande. Om kontot som utför den här åtgärden är en global administratör beviljar du behörighet till alla användare i din organisation för den här appen. Om kontot som utför den här åtgärden är *huvudkontot* och inte en global administratör beviljar du endast behörigheter till *huvudkontot* för den här appen.
 
 ### <a name="applying-permissions-programmatically"></a>Tillämpa behörigheter via programmering
 
-1. Du måste hämta de befintliga tjänstobjekten (användare) i din klientorganisation. Information om hur du gör finns i [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+1. Du måste hämta de befintliga tjänstobjekten (användare) i din klientorganisation. Mer information om hur du gör det finns i [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     Du kan anropa *Get servicePrincipal*-API:et utan {ID} så hämtas alla tjänstobjekt i klientorganisationen.
 
@@ -147,7 +147,7 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
    Värdet för **consentType** kan vara antingen **AllPrincipals** eller **Principal**.
 
    * **AllPrincipals** används av administratören för en klientorganisation för att bevilja behörigheter för alla användare i klientorganisationen.
-   * **Principal** används för att bevilja behörigheter för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}* .
+   * **Principal** används för att bevilja behörigheter för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}*.
 
      Du måste *bevilja behörigheter* för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
 
@@ -176,8 +176,8 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
 
    Värdet för **consentType** kan vara antingen **AllPrincipals** eller **Principal**.
 
-   * **AllPrincipals** kan endast användas av en klientadministratör för att bevilja behörigheter för alla användare i klienten.
-   * **Huvudnamn** används för att bevilja behörigheter för en viss användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}* .
+   * **AllPrincipals** kan endast användas av en klientorganisationsadministratör för att bevilja behörigheter för alla användare i klientorganisationen.
+   * **Principal** används för att ge behörighet för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}*.
 
    Du måste *bevilja behörigheter* för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
 
