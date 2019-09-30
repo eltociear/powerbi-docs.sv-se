@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 64be68398ffa2ab8323307b45b5bff09ec511090
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904412"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327835"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 Med **rapportteman** kan du tillämpa designändringar i hela rapporten, till exempel genom att använda företagsfärger, ändra ikonuppsättningar eller använda ny förvald visuell formatering. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger och formatering från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
@@ -475,7 +475,8 @@ En uppräkning, som oftast används för listrutealternativ, innebär att den ka
 
 
 ```json
-      "general":
+{
+      "general":{ 
         "responsive": {
           "type": [
             "bool"
@@ -486,7 +487,7 @@ En uppräkning, som oftast används för listrutealternativ, innebär att den ka
           "description": [
             "The visual will adapt to size changes"
           ]
-        }
+        },
         "legend": {
         "show": {
           "type": [
@@ -4378,4 +4379,6 @@ Följande avsnitt definierar de uppräkningar som du kan använda i JSON-filen.
          ]
        }
     }
+  }
+}
 ```

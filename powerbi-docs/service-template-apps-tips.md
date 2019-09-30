@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791811"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194788"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -126,7 +126,6 @@ Mallappar kan publiceras i AppSource. Följ dessa riktlinjer innan du skickar in
 
 * Se till att du skapar en mallapp med engagerande exempeldata som kan hjälpa den som installerar att förstå vad appen kan göra (tom rapport och instrumentpanel godkänns inte).
 Mallapparna stöder bara appar med exempeldata så var noga med att markera kryssrutan för statisk app. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Generellt sett kan endast program med värdefulla funktioner godkännas för allmänt bruk på AppSource. Program med exempeldata måste antingen ha ett statistiskt eller vägledande värde.
 * Ha anvisningar som valideringsteamet ska följa som innehåller autentiseringsuppgifter och parametrar som krävs för att ansluta till data.
 * Programmet måste innehålla en appikon i Power BI och i ditt CPP-erbjudande. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Landningssida konfigurerad. [Läs mer](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
@@ -135,6 +134,7 @@ Mallapparna stöder bara appar med exempeldata så var noga med att markera krys
 * Installera appen via applänken innan du skickar in den och se till att du kan ansluta datamängden och att appupplevelsen är som du har planerat.
 * Se till att ta bort alla onödiga anslutningar innan du laddar upp din bpix till mallappens arbetsyta.
 * Följ Power BI:s [Designmetodtips för rapporter och visuella objekt](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) för att få högsta inverkan på användarna och bli godkänd för distribution.
+<!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="known-limitations"></a>Kända begränsningar
 

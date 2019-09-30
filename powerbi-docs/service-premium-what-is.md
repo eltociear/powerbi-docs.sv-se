@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/06/2019
+ms.date: 09/17/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: c46b58369c334ff5364cee00bb5c3f8cd025adf0
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596534"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305848"
 ---
 # <a name="what-is-power-bi-premium"></a>Vad är Power BI Premium?
 
@@ -124,11 +124,11 @@ Globala Office 365-administratörer och Power BI-tjänstadministratörer kan ska
 
 När kapaciteterna skapas slutförs de flesta administrativa uppgifter i [administrationsportalen](service-admin-portal.md).
 
-![Administratörsportal](media/service-premium-what-is/premium-admin-portal.png)
+![Administratörsportalen](media/service-premium-what-is/premium-admin-portal.png)
 
 Kapacitetsadministratörer kan tilldela kapaciteten arbetsytor, hantera användarbehörigheter och tilldela andra administratörer. Kapacitetsadministratörer kan även konfigurera arbetsbelastningar, justera minnesallokeringar och vid behov starta om en kapacitet för att återställa driften om det sker kapacitetsöverbelastning.
 
-![Administratörsportal](media/service-premium-what-is/premium-admin-portal-mgmt.png)
+![Administratörsportalen](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
 Kapacitetsadministratörer kan även kontrollera att en kapacitet fungerar smidigt. De kan övervaka kapacitetshälsa direkt i administratörsportalen eller med hjälp av appen för Premium-kapacitetsmått.
 
@@ -140,7 +140,7 @@ Läs mer om att skapa kapaciteter, tilldela administratörer och tilldela arbets
 
 Övervakning i portalen ger en snabb överblick med högnivåmått som anger aktuella belastningar och de resurser som används av kapaciteten med genomsnitt över de senaste sju dagarna. 
 
-![Administratörsportal](media/service-premium-what-is/premium-admin-portal-health.png)
+![Administratörsportalen](media/service-premium-what-is/premium-admin-portal-health.png)
 
 **Appen för Power BI Premium-kapacitetsmått** ger den mest djupgående informationen om hur kapaciteterna presterar. Appen har en instrumentpanel med information på hög nivå samt mer detaljerade rapporter.
 

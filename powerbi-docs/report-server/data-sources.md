@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808212"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401838"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -71,7 +71,7 @@ Andra datakällor kan fungera även om de inte finns med på listan.
 | SharePoint Online-lista |Ja |Nej |Nej |
 | Snowflake |Ja |Nej |Nej |
 | Sybase-databas |Ja |Ja |Nej |
-| Teradata-databas |Ja |Ja |Ja |
+| Teradata |Ja |Ja |Ja |
 | Text/CSV |Ja |Ja |Nej |
 | Webb |Ja |Ja |Nej |
 | XML |Ja |Ja |Nej |
@@ -121,7 +121,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för mod
 | --- | --- | --- | --- | --- |
 | SQL Server-databas |Nej |Nej |Ja |Ja |
 | SQL Server Analysis Services |Nej |Nej |Ja |Ja |
-| Webb |Ja |Nej |Ja |Ja |
+| Webben |Ja |Nej |Ja |Ja |
 | Azure SQL Database |Nej |Nej |Ja |Nej |
 | Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |
 | Active Directory |Nej |Nej |Ja |Ja |
