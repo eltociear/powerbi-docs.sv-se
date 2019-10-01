@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66222140"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 
-Power BI-API kan du skicka data till en Power BI-datauppsättning. I den här artikeln visar vi dig så här skickar du en försäljning och marknadsföring datauppsättning som innehåller en produkttabell till en befintlig datamängd.
+Power BI-API:et låter dig skicka data till en Power BI-datauppsättning. I den här artikeln visar vi hur du skickar en datauppsättning för försäljningsmarknadsföring som innehåller en produkttabell till en befintlig datauppsättning.
 
-Innan du börjar behöver du en Azure Active Directory (Azure AD) och en [Power BI-konto](create-an-azure-active-directory-tenant.md).
+Innan du sätter igång, behöver du ett konto i Azure Active Directory (Azure AD) och ett [Power BI-konto](create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Steg för att skicka data till en datauppsättning
 
@@ -34,7 +34,7 @@ Nästa avsnitt är en allmän diskussion av Power BI-API-åtgärder som skickar 
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Power BI-API-åtgärder för att skicka data
 
-Med Power BI REST API:et kan du skicka datakällor till Power BI. När en app lägger till rader i en datauppsättning, instrumentpaneler uppdateringen automatiskt med nya data. För att skicka data använder den [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) och [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) åtgärder. Om du vill hitta en datauppsättning, använder den [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) igen. Du kan skicka ett grupp-ID för att arbeta med en grupp för någon av dessa åtgärder. Hämta en lista över ID med den [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) igen.
+Med Power BI REST API:et kan du skicka datakällor till Power BI. När en app lägger till rader i en datauppsättning uppdateras panelerna på instrumentpanelen automatiskt med nya data. För att skicka data använder du åtgärderna [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) och [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Om du vill hitta en datauppsättning, använder du åtgärden [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Du kan skicka ett grupp-ID för att arbeta med en grupp för vilken som av de här åtgärderna. Använd åtgärden [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) för att hämta en lista över grupp-ID.
 
 Här är åtgärderna för att skicka data till en datauppsättning:
 
@@ -59,7 +59,7 @@ JSON-strängen för en datauppsättning har följande format:
         ]
     }
 
-Försäljning och marknadsföring datauppsättning exemplet skickar du en JSON-sträng som visas nedan. I det här exemplet **SalesMarketing** är datauppsättningsnamnet på och **produkten** är tabellnamnet. När du har definierat tabellen, definierar du tabellschemat. För datauppsättningen **SalesMarketing** så har tabellens schema dessa kolumner: ProductID, Manufacturer, Category, Segment, Product och IsCompete.
+För vårt exempel med datauppsättningen för försäljning och marknadsföring, skickar du en sträng såsom visas nedan. I det här exemplet är **SalesMarketing** datauppsättningens namn och **Product** är tabellens namn. När du har definierat tabellen, definierar du tabellschemat. För datauppsättningen **SalesMarketing** så har tabellens schema dessa kolumner: ProductID, Manufacturer, Category, Segment, Product och IsCompete.
 
 **Exempel på datauppsättningsobjekt-JSON**
 
@@ -105,10 +105,10 @@ Du kan använda följande datatyper för ett Power BI-tabellschema.
 | **Datatyp** | **Begränsningar** |
 | --- | --- |
 | Int64 |Int64.MaxValue och Int64.MinValue tillåts inte. |
-| Double |Double.MaxValue- och Double.MinValue-värden tillåts inte. NaN stöds inte. + Infinity och -Infinity stöds inte i vissa funktioner (till exempel Min, Max). |
+| Double |Double.MaxValue- och Double.MinValue-värden tillåts inte. NaN stöds inte. +Infinity och -Infinity stöds inte i vissa funktioner (t.ex. Min, Max). |
 | Boolesk |Ingen |
-| Datumtid |Under inläsning av data, kvantifierar vi värden med dagbråk till hela multiplar av 1/300 sekunder (3,33 ms). |
-| Sträng |För närvarande kan upp till 128 K tecken. |
+| Datumtid |Vid datainläsning kvantifierar vi värden med dagbråk till hela multiplar av 1/300 sekunder (3,33ms). |
+| Sträng |Tillåter för närvarande upp till 128 000 tecken. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Mer information om att skicka data till Power BI
 

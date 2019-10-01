@@ -1,20 +1,20 @@
 ---
 title: Introduktion till enhetstester för projekt med visuella Power BI-objekt
 description: I den här artikeln beskrivs hur du skriver enhetstester för visuella Power BI-objekt
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: bb9835ceba302716c2c4b1e28eda33c6e4b1db42
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236735"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192474"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Självstudie: Lägga till enhetstester för projekt med visuella Power BI-objekt
 
@@ -616,4 +616,4 @@ I omfånget för filen kan du titta på källkoden. `Coverage`-verktygen skulle 
 
 ## <a name="next-steps"></a>Nästa steg
 
-När ditt visuella objekt är redo kan du skicka det till publicering. Mer information finns i [Publicera anpassade visuella objekt till AppSource](../office-store.md).
+När ditt visuella objekt är redo kan du skicka det till publicering. Mer information finns i [Publicera visuella Power BI-objekt till AppSource](../office-store.md).

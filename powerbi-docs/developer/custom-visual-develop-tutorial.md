@@ -1,26 +1,26 @@
 ---
 title: Utveckla ett visuellt Power BI-objekt
 description: En självstudiekurs om hur du utvecklar ett anpassat visuellt objekt i Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5d9ed20435069fa31707d9532141558351ec63ba
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415428"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194487"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Självstudie: Utveckla ett visuellt Power BI-objekt
 
-Vi ger utvecklare möjlighet att enkelt lägga till anpassade visuella objekt i Power BI som kan användas på instrumentpanelen och i rapporterna. Som en hjälp för dig att komma igång har vi publicerat koden för alla våra visualiseringar på GitHub.
+Vi ger utvecklare möjlighet att enkelt lägga till visuella Power BI-objekt som kan användas på instrumentpanelen och i rapporterna. Som en hjälp för dig att komma igång har vi publicerat koden för alla våra visualiseringar på GitHub.
 
-Tillsammans med visualiseringsramverket tillhandahåller vi vår testsvit och våra verktyg så att communityn kan skapa högkvalitativa anpassade visuella objekt för Power BI.
+Tillsammans med visualiseringsramverket tillhandahåller vi vår testsvit och våra verktyg så att communityn kan skapa högkvalitativa visuella Power BI-objekt.
 
 Den här självstudien visar hur du utvecklar ett anpassat visuellt Power BI-objekt med namnet Circle Card för att visa ett formaterat måttvärde inuti en cirkel. Det visuella objektet Circle Card stöder anpassning av fyllningsfärg och konturtjocklek.
 

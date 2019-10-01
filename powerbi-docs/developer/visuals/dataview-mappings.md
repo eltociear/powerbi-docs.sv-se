@@ -1,20 +1,20 @@
 ---
 title: Förstå datavymappning i visuella Power BI-objekt
 description: I den här artikeln beskrivs hur Power BI transformerar data innan de skickas till visuella objekt.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237238"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193546"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Förstå datavymappning i visuella Power BI-objekt
 
@@ -618,7 +618,7 @@ Det visuella objektet får sin datastruktur enligt beskrivningen i följande kod
 
 Du kan styra den mängd data som ska tas emot i datavyn med hjälp av en algoritm för dataminskning.
 
-Som standard tillämpas algoritmen för dataminskning uppifrån för alla anpassade visuella objekt med *count* angett till 1 000 datapunkter. Det är samma som att ange följande egenskaper i filen *capabilities.json*:
+Som standard tillämpas algoritmen för dataminskning uppifrån för alla visuella Power BI-objekt med *count* angett till 1000 datapunkter. Det är samma som att ange följande egenskaper i filen *capabilities.json*:
 
 ```json
 "dataReductionAlgorithm": {
@@ -628,7 +628,7 @@ Som standard tillämpas algoritmen för dataminskning uppifrån för alla anpass
 }
 ```
 
-Du kan ändra värdet för *count* till valfritt heltalsvärde upp till 30 000. R-baserade anpassade visuella objekt har stöd för upp till 150 000 rader.
+Du kan ändra värdet för *count* till valfritt heltalsvärde upp till 30 000. R-baserade visuella Power BI-objekt har stöd för upp till 15 0000 rader.
 
 ## <a name="data-reduction-algorithm-types"></a>Typer av algoritmer för dataminskning
 

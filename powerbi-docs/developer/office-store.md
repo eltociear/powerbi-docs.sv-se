@@ -1,22 +1,22 @@
 ---
-title: Publicera anpassad visuell information till AppSource
+title: Publicera visuella Power BI-objekt till AppSource
 description: Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 3cbc2c6fcb70d6298c9d2ade3e3f2cd10cd8a834
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623805"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194522"
 ---
-# <a name="publish-custom-visuals-to-appsource"></a>Publicera anpassad visuell information till AppSource
+# <a name="publish-power-bi-visuals-to-appsource"></a>Publicera visuella Power BI-objekt till AppSource
 
 Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem.
 
@@ -40,13 +40,13 @@ När du är klar med att läsa [riktlinjerna för visuella Power BI-objekt](guid
 | Skärmbilder |Ja |Du måste ange minst en skärmbild. Formatet kan vara .png, .jpg, .jpeg eller .gif. Det måste vara exakt 1366 px (bredd) x 768 px (höjd). Filstorleken får inte vara större än 1024 kB. *Lägg till textbubblor för att tydligt betona mervärdet av viktiga funktioner som visas i varje skärmbild.* |
 | Länk till nedladdningssupport |Ja |Ange en URL för att stödja kunder som har problem med ditt visuella objekt. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på URL:en ska inkludera https:// eller http://. |
 | Länk till sekretessdokumentet |Ja |Ange en länk till sekretesspolicyn för kunder som använder ditt visuella objekt. Den här länken har angetts som en del av din SellerDashboard-registrering och är synlig för användare när de bereder sig åtkomst till ditt visuella objekts lista i AppSource. Formatet på länken ska inkludera https:// eller http://. |
-| Licensavtal (EULA) |Ja |Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för anpassade visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Licensavtal (EULA) |Ja |Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Videolänk |Nej |Om du vill öka användarnas intresse för ditt anpassade visuella objekt är det bäst att ange en länk till en video om ditt visuella objekt. Formatet på URL:en ska inkludera https:// eller http://. |
 | GitHub-lagringsplats |Nej |Det är lämpligt att ha en giltig och offentlig länk till en [GitHub](https://www.github.com)-databas med datakällor för ditt visuella objekt och exempeldata, så att andra utvecklare kan ge feedback och föreslå förbättringar för din kod. |
 
 ## <a name="submitting-to-power-bi"></a>Publicera till Power BI
 
-Publiceringen börjar med att skicka ett e-postmeddelande till Power BI-teamet för överföring av anpassade visuella objekt. Du kan skicka e-post till [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+Publiceringen börjar med att skicka ett e-postmeddelande till Power BI-teamet för överföring av visuella Power BI-objekt. Du kan skicka e-post till [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
 
 > [!IMPORTANT]
 > Du måste fylla i följande fält i filen pbiviz.json: ”beskrivning”, ”supportUrl”, ”författare”, ”namn” och ”e-post” innan du skapar .pbiviz-paketet.
@@ -89,7 +89,7 @@ Slutför överföringen genom att följa stegen.
    * *Överföringsrubrik:* Namnet din överföring får i Developer Center.
    * *Version:* Versionsnumret är automatiskt ifyllt från ditt tilläggsprogrampaket.
    * *Utgivningsdatum (UTC):* Välj ett datum då din app ska lanseras i butiken. Om du väljer ett datum i framtiden blir appen inte tillgängligt i store förrän detta datum har nåtts.
-   * *Kategori:* Den första kategorin fylls i automatiskt som ”Datavisualisering + BI”. Så här markeras alla anpassade visuella Power BI-objekt. Du kan ange upp till 2 ytterligare kategorier som hjälper användare att söka efter ditt visuella objekt
+   * *Kategori:* Den första kategorin fylls i automatiskt som ”Datavisualisering + BI”. Så här markeras alla visuella Power BI-objekt. Du kan ange upp till 2 ytterligare kategorier som hjälper användare att söka efter ditt visuella objekt
    * *Testanteckningar:* valfritt om du vill ge anvisningar till testarna på Microsoft
    * *Min app anropar, stöder, innehåller eller använder kryptografi eller kryptering:* lämna alternativet omarkerat
    * *Gör det här tillägget tillgängligt i Office-tillägg-katalogen på iPad:* lämna alternativet omarkerat
@@ -104,7 +104,7 @@ Slutför överföringen genom att följa stegen.
    * Videolänk
    * Licensavtalet (EULA)
 
-       Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för anpassade visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       Du måste överföra ett licensavtal. Detta kan vara ditt eget licensavtal eller standardlicensavtalet från Office Store för visuella objekt i Power BI. Om du vill använda standardlicensavtalet klistrar du in följande URL i dialogrutan för filöverföring av ”Licensavtal” i försäljningsinstrumentpanelen: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 
 8. Välj **nästa** för att komma till sidan **Information**.
 

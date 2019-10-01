@@ -1,24 +1,24 @@
 ---
 title: Lägga till stöd för bokmärken för visuella Power BI-objekt
 description: Visuella Power BI-objekt kan hantera bokmärkesväxling
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: c19b67a59d0ecb4cbfbcf5ad8dd18886f440e164
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237272"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194452"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Lägga till stöd för bokmärken för visuella Power BI-objekt
 
-Med Power BI-rapportbokmärken kan du samla en konfigurerad vy av en rapportsida, urvalstillståndet samt filtreringstillståndet för det visuella objektet. Men det krävs ytterligare åtgärder från det anpassade visuella objektet för att stödja bokmärket och reagera korrekt på ändringar.
+Med Power BI-rapportbokmärken kan du samla en konfigurerad vy av en rapportsida, urvalstillståndet samt filtreringstillståndet för det visuella objektet. Men det krävs ytterligare åtgärder från det visuella Power BI-objekten för att stödja bokmärket och reagera korrekt på ändringar.
 
 Mer information om bokmärken finns i [Använda bokmärken för att dela insikter och skapa artiklar i Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
@@ -32,7 +32,7 @@ Om ditt visuella objekt interagerar med andra visuella objekt, väljer datapunkt
 
 2. Uppdatera API:et för visuella objekt till version 1.11.0 för att använda `registerOnSelectCallback` i en instans av `SelectionManager`. Det krävs för icke-filtrerande visuella objekt som använder det vanliga `SelectionManager` i stället för `InteractivityService`.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>Så interagerar anpassade visuella objekt med Power BI i rapportbokmärken
+### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Så interagerar visuella Power BI-objekt med Power BI i rapportbokmärken
 
 Vi tänker oss följande scenario: Du vill skapa flera bokmärken på rapportsidan med olika urvalstillstånd i varje bokmärke.
 

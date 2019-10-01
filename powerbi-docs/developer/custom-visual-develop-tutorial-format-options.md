@@ -1,22 +1,22 @@
 ---
 title: Lägga till formateringsalternativ till ett anpassat visuellt Power BI-objekt
 description: En självstudiekurs om hur du utvecklar formateringsalternativ för anpassade visuella Power BI-objekt
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5fa14e3aa8a303206d52359d04db05850e096d81
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61380455"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194572"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Självstudie: Lägga till formateringsalternativ till ett anpassat visuellt Power BI-objekt
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Självstudie: Lägga till formateringsalternativ till ett visuellt Power BI-objekt
 
 I den här självstudien går vi igenom hur man lägger till gemensamma egenskaper till det visuella objektet.
 
@@ -263,4 +263,4 @@ Tips om hur du felsöker ditt anpassade visuella objekt finns i [felsökningsgui
 
 ## <a name="next-steps"></a>Nästa steg
 
-Du kan lista ditt nyligen utvecklade visuella objekt som andra ska kunna använda genom att skicka det till **AppSource**. Mer information om den här processen finns i [Publicera anpassad visuell information till AppSource](office-store.md).
+Du kan lista ditt nyligen utvecklade visuella objekt som andra ska kunna använda genom att skicka det till **AppSource**. Mer information om den här processen finns i [Publicera visuella Power BI-objekt till AppSource](office-store.md).

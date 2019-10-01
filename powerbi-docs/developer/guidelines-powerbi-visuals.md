@@ -1,20 +1,20 @@
 ---
 title: Riktlinjer för visuella objekt för Power BI
 description: Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem via ett inköp.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: 71752a635c69e6712befbb00e942189fa4dacc36
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380211"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327738"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella objekt till AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna för att skapa en bra upplevelse för användarna. 
@@ -25,11 +25,14 @@ Alla visuella Power BI-objekt bör aktivera snabbmenyn för att ge en enhetlig u
 
 
 ## <a name="logo-guidelines"></a>Riktlinjer för logotyp
+> [!NOTE]
+> Ordet logotyp i den här artikeln avser valfri kommersiell företagsikon enligt beskrivningen i bilderna nedan. 
 
-I det här avsnittet beskrivs specifikationerna för att lägga till logotyper och logotyper i visuella objekt. Logotyper är inte obligatoriska. Om de läggs till måste de följa dessa riktlinjer. 
+I det här avsnittet beskrivs specifikationerna för att lägga till logotyper i visuella Power BI-objekt. Logotyper är inte obligatoriska. Om de läggs till måste de följa dessa riktlinjer. 
 
 > [!IMPORTANT]
 > Logotyper tillåts *endast i redigeringsläge*. Logotyper *kan inte* visas i visningsläge.
+
 
 ![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
 
@@ -44,11 +47,13 @@ I det här avsnittet beskrivs specifikationerna för att lägga till logotyper o
 ![Redigeringsläge](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 
+Informativa ikoner, om sådana finns, i läsläge ska överensstämma med färg, storlek och plats som logotyperna ovan.
+
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Riktlinjer för visuella objekt i Power BI med ytterligare inköp
 
 Tills nyligen godkände endast Marketplace (AppSource) kostnadsfria visuella objekt i Power BI. Den här principen har ändrats (december 2018) så att du nu även kan skicka in visuella objekt till AppSource som har pristaggen ytterligare köp kan krävas. 
 
-Visuella objekt där ytterligare köp kan krävas liknar tillägg med in-app köp (IAP) i Office Store. Utvecklare kan också skicka in dessa visuella objekt för certifiering efter att AppSource-teamet godkänt dem och efter att de sett till att de uppfyller certifieringskraven. Mer information om kraven finns i [Certifierade anpassade visuella objekt](../power-bi-custom-visuals-certified.md).
+Visuella objekt där ytterligare köp kan krävas liknar tillägg med in-app köp (IAP) i Office Store. Utvecklare kan också skicka in dessa visuella objekt för certifiering efter att AppSource-teamet godkänt dem och efter att de sett till att de uppfyller certifieringskraven. Mer information om kraven finns i [Certifierade visuella Power BI-objekt](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > Det visuella objektet måste inte ha åtkomst till externa tjänster eller resurser för att godkännas.
