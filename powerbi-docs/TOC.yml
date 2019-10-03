@@ -873,16 +873,6 @@
           href: power-bi-browsers.md
     - name: Resurser
       items:
-        - name: Vitböcker
-          items:
-            - name: Översikt vitböcker
-              href: whitepapers.md
-            - name: Vitbok Power BI-säkerhet
-              href: whitepaper-powerbi-security.md
-            - name: Power BI Premium-distribution
-              href: whitepaper-powerbi-premium-deployment.md
-            - name: Distribuera Power BI externt med hjälp av Azure Active Directory B2B
-              href: whitepaper-azure-b2b-power-bi.md
         - name: Videor
           href: videos.md
         - name: Webbseminarier
@@ -1456,3 +1446,13 @@
       href: guidance/dax-divide-function-operator.md
     - name: Metodtips för dataflöden
       href: service-dataflows-best-practices.md
+    - name: Vitböcker
+      items:
+        - name: Översikt vitböcker
+          href: whitepapers.md
+        - name: Vitbok Power BI-säkerhet
+          href: whitepaper-powerbi-security.md
+        - name: Power BI Premium-distribution
+          href: whitepaper-powerbi-premium-deployment.md
+        - name: Distribuera Power BI externt med hjälp av Azure Active Directory B2B
+          href: whitepaper-azure-b2b-power-bi.md
