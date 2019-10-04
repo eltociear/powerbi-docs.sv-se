@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751561"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305746"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -190,6 +190,13 @@ Den här åtgärden avinstallerar appen för alla som du har publicerat den till
 När dina appkonsumenter öppnar appen ser de den navigering som du skapade i stället för det standardmässiga vänstra navigeringsfältet i Power BI. Appnavigeringen visar en lista över rapporter och instrumentpaneler i de avsnitt som du har definierat. Dessutom visas de enskilda sidorna i varje rapport i stället för bara rapportnamnet.
 
 ![App med navigering](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
+Saker att tänka på när det gäller att publicera appar:
+
+* Du kan som mest ha 100 användare eller grupper i åtkomstlistan för appen. Du kan dock ge mer än 100 användare åtkomst till appen. Det gör du genom att använda en eller flera användargrupper som innehåller alla önskade användare.
+* För det nya arbetsytgränssnittet, om användaren som lagts till i appåtkomstlistan redan har åtkomst till appen via arbetsytan visas de inte i åtkomstlistan för appen.  
+
 
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa en arbetsyta](service-create-workspaces.md)

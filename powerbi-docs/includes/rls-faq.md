@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0592cb7ef076f8094aca565d955cc238b2181068
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: cd0696b44e285119193059304c89cfa04c755771
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560941"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409387"
 ---
 ## <a name="faq"></a>Vanliga frågor och svar
 **Fråga:** Vad händer om jag tidigare har skapat roller och regler för en datamängd i Power BI-tjänsten? Fungerar de fortfarande om jag inte gör någonting?  
@@ -19,3 +19,5 @@ ms.locfileid: "69560941"
 **Fråga:** Tillåter RLS att jag döljer detaljerade data men ger åtkomst till data som sammanfattas i visuella objekt?  
 **Svar:** Nej, du kan skydda enskilda datarader men användarna kan alltid se information eller sammanfattade data.
 
+**Fråga:** Min datakälla har redan definierade säkerhetsroller (till exempel SQL Server-roller eller SAP BW-roller). Vad är förhållandet mellan dessa och RLS?  
+**Svar:** Svaret beror på om du importerar data eller använder DirectQuery. Om du importerar data till din Power BI-datauppsättning används inte säkerhetsrollerna i din datakälla. I så fall bör du definiera RLS att tillämpa säkerhetsregler för användare som ansluter i Power BI. Om du använder DirectQuery används säkerhetsrollerna i din datakälla. När en användare öppnar en rapport skickar Power BI en fråga till den underliggande datakällan, som tillämpar säkerhetsregler på data baserat på användarens autentiseringsuppgifter.

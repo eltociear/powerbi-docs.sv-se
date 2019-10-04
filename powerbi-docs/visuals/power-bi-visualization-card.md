@@ -10,102 +10,92 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b3b773d7c28cb4528edb59a92e07874b53fc9c20
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 268b69362f0f8c98ba01fbd0673fc46856d54ba2
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839909"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195652"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringar
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrumentpanelen eller -rapporten, till exempel total försäljning, marknadsandel år för år eller totala affärsmöjligheter. Den här typen av visualisering kallas ett *kort*. Som nästan alla ursprungliga Power BI-visualiseringar, kan kort skapas med hjälp av rapportredigeraren eller Frågor och svar.
 
 ![kortvisualisering](media/power-bi-visualization-card/pbi-opptuntiescard.png)
 
-## <a name="create-a-card-using-the-report-editor"></a>Skapa ett kort med hjälp av rapportredigeraren
-Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. Om du vill följa med kan du [hämta exemplet](../sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
+## <a name="prerequisite"></a>Förutsättning
 
-1. Börja med en tom rapportsida och välj fältet **Butik** \> **Antal öppna butiker**. Om du använder Power BI-tjänsten måste du öppna rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+
+1. Välj **Arkiv** \> **Öppna** uppe till vänster på menyraden
+   
+2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelsanalys**
+
+1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
+## <a name="option-1-create-a-card-using-the-report-editor"></a>Alternativ 1: Skapa ett kort med hjälp av rapportredigeraren
+
+Den första metoden för att skapa ett kort är att använda rapportredigeraren i Power BI Desktop.
+
+1. Börja med en tom rapportsida och välj fältet **Butik** \> **Antal öppna butiker**.
 
     Power BI skapar ett stapeldiagram med ditt tal.
 
-   ![](media/power-bi-visualization-card/pbi-rptnumbertilechart.png)
-2. I fönstret Visualiseringar väljer du färgrollerikonen.
+   ![paneldiagram för exempeltal](media/power-bi-visualization-card/pbi-overview-chart.png)
 
-   ![](media/power-bi-visualization-card/power-bi-templates.png)
-6. Hovra över kortet och välj stiftikonen ![](media/power-bi-visualization-card/pbi-pintile.png) för att lägga till visualiseringen på instrumentpanelen.
+2. I fönstret Visualiseringar väljer du kortikonen.
 
-   ![](media/power-bi-visualization-card/power-bi-pin-icon.png)
-7. Fäst panelen på en befintlig eller ny instrumentpanel.
+   ![rubrikkort för exempeltal](media/power-bi-visualization-card/power-bi-card-visualization.png)
 
-   * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan.
-   * Ny instrumentpanel: Skriv instrumentpanelens namn.
-8. Välj **Fäst**.
+Nu har du skapat ett kort med rapportredigeraren. Nedan är det andra alternativet för att skapa ett kort med frågerutan för frågor och svar.
 
-   Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.
+## <a name="option-2-create-a-card-from-the-qa-question-box"></a>Alternativ 2: Skapa ett kort från frågerutan för frågor och svar
+Frågerutan för frågor och svar är ett annat alternativ för dig att använda när du skapar ett kort. Frågerutan för frågor och svar är tillgänglig i Power BI Desktop-rapportvyn.
 
-   ![](media/power-bi-visualization-card/power-bi-success2.png)
-9. Välj **Gå till instrumentpanelen**. Där kan du [redigera och flytta](../service-dashboard-edit-tile.md) den fästa visualiseringen.
+1. Börja med en tom rapportsida
 
+1. Välj ikonen **Ställ en fråga** högst upp i fönstret. 
 
-## <a name="create-a-card-from-the-qa-question-box"></a>Skapa ett kort från frågerutan för frågor och svar
-Att använda frågerutan för frågor och svar är den enklaste metoden för att skapa ett kort. Frågerutan för frågor och svar är tillgänglig i Power BI-tjänsten från en instrumentpanel eller rapport samt i rapportvyn Desktop. Stegen nedan beskriver hur du skapar ett kort från en instrumentpanel i Power BI-tjänsten. Om du vill skapa ett kort med Q&A i Power BI Desktop [följer du de här instruktionerna](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) för att använda Q&A for Desktop-rapporter.
+    Power BI skapar ett kort och en ruta för din fråga. 
 
-Det här exemplet använder sig av [Exempel på analys av affärsmöjligheter](../sample-opportunity-analysis.md).
+   ![plats för ikonen ställ en fråga](media/power-bi-visualization-card/power-bi-q-and-a-overview.png)
 
-1. Börja skriva vad du vill veta om dina data i frågerutan överst på instrumentpanelen. 
+2. Skriv till exempel ”Total försäljning för Tina” i frågerutan.
 
-   ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
+    Frågerutan hjälper dig med förslag och rättelser och visar slutligen det totala antalet.  
 
-> [!TIP]
-> Gå till redigeringsvyn i Power BI-tjänsterapporten och välj **Ställ en fråga** på den översta menyraden. I en Power BI Desktop-rapport letar du upp ett öppet utrymme i en rapport och dubbelklickar för att öppna en frågeruta.
+   ![exempel för frågeruta](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
-2. Skriv till exempel ”antal affärsmöjligheter” i frågerutan.
+   ![kortexempel från frågemetod](media/power-bi-visualization-card/power-bi-q-and-a-card.png)
 
-   ![](media/power-bi-visualization-card/power-bi-q-and-a.png)
-
-   Frågerutan hjälper dig med förslag och rättelser och visar slutligen det totala antalet.  
-4. Välj stiftikonen ![](media/power-bi-visualization-card/pbi-pintile.png) i det övre högra hörnet för att lägga till kortet på en instrumentpanel.
-
-   ![](media/power-bi-visualization-card/power-bi-pin.png)
-5. Fäst kortet, som en panel, på en befintlig eller ny instrumentpanel.
-
-   * Befintlig instrumentpanel: välj instrumentpanelens namn i listrutan. Dina val begränsas till instrumentpanelerna inom den aktuella arbetsytan.
-   * Ny instrumentpanel: ange namnet på den nya instrumentpanelen så läggs den till din aktuella arbetsyta.
-6. Välj **fäst**.
-
-   Genom ett meddelande (nära det övre högra hörnet) får du reda på att visualiseringen har lagts till, som en panel, på instrumentpanelen.  
-
-   ![](media/power-bi-visualization-card/power-bi-success2.png)
-7. Välj **gå till instrumentpanel** för att se den nya panelen. Där kan du [byta namn på, ändra storlek, lägga till en hyperlänk och flytta panelen och mer](../service-dashboard-edit-tile.md) på din instrumentpanel.
-
-   ![](media/power-bi-visualization-card/power-bi-pinned-2.png)
-
-
-
+Nu har du skapat ett kort med frågerutan för frågor och svar. Nedan visa stegen för formatering av ditt kort efter dina specifika behov.
 
 ## <a name="format-a-card"></a>Formatera ett kort
 Du har många alternativ för att ändra etiketter, text, färg med mera. Det bästa sättet att lära dig är att skapa ett kort och sedan utforska formateringsfönstret. Här följer några tillgängliga formateringsalternativ. 
 
-Formateringsfönstret är tillgängligt när du interagerar med kortet i en rapport. Om du gör ändringar i ett kort i en rapport ska du fästa det igen för att se ändringarna på instrumentpanelen. 
+Formateringsfönstret är tillgängligt när du interagerar med kortet i en rapport. 
 
 1. Börja med att välja färgrollerikonen för att öppna formateringsfönstret. 
 
     ![kort med färgrollern markerad](media/power-bi-visualization-card/power-bi-format-card-2.png)
+
 2. Låt kortet vara markerat, expandera **Dataetikett** och ändra färg, storlek och teckensnittsfamilj. Om du har tusentals butiker, kan du använda **Visningsenheter** för att visa antal butiker med tusentalsavgränsare och kontrollera antalet decimaler också. Till exempel 125,8K i stället för 125 832,00.
+
+    ![kort med dataformatexempel](media/power-bi-visualization-card/power-bi-card-format-2.png)
 
 3.  Expandera **Kategorietikett** och ändra storlek och färg.
 
-    ![mörkblå färg vald](media/power-bi-visualization-card/power-bi-card-format-2.png)
+    ![kort med kategoriexempel](media/power-bi-visualization-card/power-bi-card-format-category.png)
 
 4. Expandera **Bakgrund** och flytta skjutreglaget till På.  Nu kan du ändra bakgrundsfärgen och transparensen.
 
     ![skjutreglaget är satt till PÅ](media/power-bi-visualization-card/power-bi-format-color-2.png)
 
 5. Fortsätt att utforska formateringsalternativen tills kortet är exakt som du vill. 
-
-    ![Kort när all formatering är klar](media/power-bi-visualization-card/power-bi-formatted-2.png)
-
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 Om du inte ser någon frågeruta, kontakta din system- eller klientadministratör.    

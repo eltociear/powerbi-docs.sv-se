@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: ac9ffa4d1186a8ca6d4e2d55da4311bbce55903e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161142"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194627"
 ---
 # <a name="funnel-charts"></a>Trattdiagram
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Med ett trattdiagram kan du visualisera en linjär process med intilliggande steg. Till exempel en försäljningstratt som spårar kunderna genom stadier: Lead \> kvalificerat lead \> potentiell kund \> avtal \> avslut.  Trattens form ger en översikt över processens tillstånd.
 
 Varje steg i trattens motsvarar en procentandel av det totala antalet. I de flesta fallen är ett trattdiagram format som en tratt, där det första stadiet är störst och varje följande steg är mindre än det föregående.  En päronformad tratt kan också vara användbar – den kan identifiera ett problem i processen.  Men vanligtvis är det första stadiet, ”intaget”, det största.
@@ -39,11 +42,27 @@ Trattdiagram är ett bra alternativ:
 ## <a name="working-with-funnel-charts"></a>Arbeta med trattdiagram
 Trattdiagram:
 
-* Kan fästas från rapporter och frågor och svar.
 * Kan sorteras.
 * Stöd för multipler.
 * Kan markeras och korsfiltreras mot andra visualiseringar på samma rapportsida.
 * Kan användas för markera och korsfiltrera andra visualiseringar på samma rapportsida.
+   > [!NOTE]
+   > Se hur Will skapar ett trattdiagram med exemplet på försäljning och marknadsföring i den här videon. Följ sedan stegen under videon för att prova själv med hjälp av PBIX-filen Exempel på Affärsmöjlighetsanalys
+   > 
+   > 
+## <a name="prerequisite"></a>Förutsättning
+
+De här självstudierna använder sig av [PBIX-filen Exempel på Affärsmöjlighetsanalys](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
+).
+
+1. Välj **Arkiv** > **Öppna** uppe till vänster på menyraden
+   
+2. Hitta din kopia av **PBIX-filen Exempel på Affärsmöjlighetsanalys**
+
+1. Öppna **PBIX-filen Exempel på Affärsmöjlighetsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
 
 ## <a name="create-a-basic-funnel-chart"></a>Skapa ett enkelt trattdiagram
 Se hur Will skapar ett trattdiagram med exemplet på försäljning och marknadsföring i den här videon.
@@ -53,13 +72,13 @@ Se hur Will skapar ett trattdiagram med exemplet på försäljning och marknadsf
 
 Nu kan du skapa ett eget trattdiagram som visar antalet möjligheter i varje försäljningsstadium.
 
-Dessa anvisningar använder sig av Exempel på affärsmöjlighetsanalys. Om du vill följa med kan du [hämta exemplet](../sample-datasets.md) för Power BI-tjänsten (app.powerbi.com) eller Power BI Desktop.   
-
-1. Börja med en tom rapportsida och välj fältet **SalesStage** \> **Försäljningssteg**. Om du inte använder Power BI-tjänsten, se till att du öppnar rapporten i [Redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
+1. Börja med en tom rapportsida och välj fältet **SalesStage** \> **Försäljningssteg**.
    
-    ![välj försäljningsfas](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
-2. [Konvertera diagrammet](power-bi-report-change-visualization-type.md) till en tratt. Observera att **Försäljningssteg** är i brunnen **Grupp**. 
-3. Från fönstret **Fält** väljer du **Fakta** \> **Antal affärsmöjligheter**.
+    ![välj försäljningsfas](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
+
+1. Välj trattikonen ![trattdiagramikon](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) för att konvertera kolumndiagrammet till ett trattdiagram.
+
+2. Från fönstret **Fält** väljer du **Fakta** \> **Antal affärsmöjligheter**.
    
     ![skapa trattdiagram](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Håll muspekaren över en stapel för att visa en mängd information.
@@ -69,8 +88,8 @@ Dessa anvisningar använder sig av Exempel på affärsmöjlighetsanalys. Om du v
    * Övergripande konverteringstakt (% av leads) 
    * Steget-till-steg (kallas även förlusttakt) som är % av det föregående steget (i det här fallet förslagssteg/lösningssteg)
      
-     ![information om förslagsfält](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Lägg till tratten som panel i instrumentpanelen](../service-dashboard-tiles.md). 
+     ![information om förslagsfält](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
+
 6. [Spara rapporten](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Markering och korsfiltrering
@@ -82,15 +101,6 @@ Om du markerar ett fält i trattdiagrammet korsfiltreras de övriga visualiserin
    
    ![kort video som visar visuella interaktioner](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. För att hantera hur diagram korsmarkeras och korsfiltrerar varandra, se [Visualiseringsinteraktioner i en Power BI-rapport](../service-reports-visual-interactions.md)
-
-## <a name="create-a-funnel-chart-using-qa"></a>Skapa ett trattdiagram med frågor och svar
-Öppna instrumentpanelen exempel på analys av affärsmöjligheter eller en instrumentpanel som har minst en visualiseringen fäst från datauppsättningen för exempel på analys av affärsmöjligheter.  När du skriver en fråga i Frågor och svar söker Power BI efter svar i alla datauppsättningar som är associerade med (har fästa paneler) den valda instrumentpanelen. Mer information finns i [Power BI – grundläggande koncept](../service-basic-concepts.md).
-
-1. I instrumentpanelen för exemplet på analys av affärsmöjligheter, skriver du in din fråga i frågerutan Frågor och svar.
-   
-   ![frågeruta och tratt](media/power-bi-visualization-funnel-charts/power-bi-qna.png)
-   
-2. Var noga med att lägga till ”som tratt” så att Power BI vet vilken typ av visuellt objekt som du föredrar.
 
 ## <a name="next-steps"></a>Nästa steg
 

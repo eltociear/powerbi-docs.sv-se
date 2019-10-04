@@ -9,18 +9,43 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940908"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325733"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
 Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
 
 Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md). 
+
+## <a name="september-2019"></a>September 2019
+
+- **Power BI-rapportserver**          
+    - *Version 1.6.7206.38019 (Build 15.0.1102.597), publicerad: 26 september 2019*
+        - Säkerhetsuppdateringar
+        - Felkorrigeringar
+           - Sidnumrerade rapporter
+             - Korrigering för tillgänglighetsproblem som uppstått vid användning av IE och Edge.
+             - Korrigering för SAP HANA-problem vid test av anslutningen.
+             - Korrigering för problem hittade när lista över e-postadresser tillhandahålls.
+             - Korrigering för Power BI-rapporter som använder en DirectQuery-datakälla och integrerad autentisering.
+             - Korrigering för sidnumrerade rapporter som ska återges med filterparametrar när ögonblicksbild har aktiverats.
+             - Korrigering för dubbel körning av lagrade procedurer under rapportkörning.
+             - Korrigering för standardtjänstkonto som beviljas SQL Server-inloggningsbehörigheter, när anpassade tjänstkonton konfigureras att köra Power BI-rapportservern.
+             - Korrigering för åtkomst av modeller under uppdatering i japansk tidszon.
+             - Korrigering för inaktuella modeller när en ny version laddas upp under uppdatering.
+             - Korrigering för parametervärden som innehåller &-tecknet.
+         - Programmerbarhet
+             - Uppdaterat webb-API: /PowerBIReports({Id})/DataSources (PATCH) för att tillåta anslutningsstränguppdateringar.
+         
+- **Power BI Desktop (optimerad för Power BI-rapportservern)**
+    - *Version: 2.73.5586.821 (september 2019), utgiven: september 26 2019* (ny build och ny version)
+    - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (september 2019)
+
 
 ## <a name="may-2019"></a>Maj 2019
 

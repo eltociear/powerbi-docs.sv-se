@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: bf69b2e4c25597eba980137e5ef8b2feb2f4d103
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841303"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327700"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Lagringsläge i Power BI Desktop
 
 I Microsoft Power BI Desktop kan du ange *lagringsläge* för tabeller. *Lagringsläge* låter dig kontrollera om Power BI Desktop cachelagrar tabellen i minnet för rapporter. 
 
-![Lagringsläge i Power BI Desktop](media/desktop-storage-mode/storage-mode_01.png)
+![Lagringsläge i Power BI Desktop](media/desktop-storage-mode/storage-mode-01.png)
 
 Att konfigurera lagringsläget ger många fördelar. Du kan ange lagringsläget för varje tabell individuellt i din modell. Den här åtgärden aktiverar en enda datauppsättning, vilket ger följande fördelar:
 
@@ -48,13 +48,10 @@ Inställningen för lagringsläget i Power BI Desktop är en av tre relaterade f
 
 ## <a name="use-the-storage-mode-property"></a>Använd egenskapen för lagringsläge
 
-Lagringsläge är en egenskap som du kan ange i varje tabell i din modell. Ange lagringsläget i fönstret **fält**, högerklicka på den tabell vars egenskaper du vill ställa in och välj sedan **egenskaper**.
+Lagringsläge är en egenskap som du kan ange i varje tabell i din modell. Du kan ställa in lagringsläget eller visa dess aktuella inställning genom att i vyn **Modell** välja den tabell vars egenskaper du vill visa eller ange, sedan välja fönstret **Egenskaper** och därefter expandera avsnittet **Avancerat** och expandera listrutan **Lagringsläge**.
 
-![Kommandot Egenskaper i snabbmenyn](media/desktop-storage-mode/storage-mode_02.png)
+![Kommandot Egenskaper i snabbmenyn](media/desktop-storage-mode/storage-mode-02.png)
 
-Den aktuella egenskapen visas i listrutan **lagringsläge** i tabellens fönster **Fältegenskaper**. Du kan visa aktuellt lagringsläge eller ändra det där.
-
-![Ange lagringsläge för en tabell](media/desktop-storage-mode/storage-mode_03.png)
 
 Det finns tre värden för lagringsläge:
 
@@ -77,11 +74,11 @@ Dubbeltabeller har samma funktionsbegränsningar som DirectQuery-tabeller. Dessa
 ## <a name="propagation-of-dual"></a>Spridning av Dubbla
 Överväg att använda följande enkla modell, där alla tabeller kommer från en enda källa som stöder Import och DirectQuery.
 
-![Exempelrelationsvyn för lagringsläge](media/desktop-storage-mode/storage-mode_04.png)
+![Exempelrelationsvyn för lagringsläge](media/desktop-storage-mode/storage-mode-04.png)
 
 Låt oss till en början anta att alla tabeller i den här modellen är DirectQuery. Om vi sedan ändrar **lagringsläget** för *SurveyResponse*-tabellen till Import visas följande varningsfönster:
 
-![Varningsfönster för lagringsläge](media/desktop-storage-mode/storage-mode_05.png)
+![Varningsfönster för lagringsläge](media/desktop-storage-mode/storage-mode-05.png)
 
 Dimensionstabellerna (*Customer*, *Geography* och *Date*) kan anges till **dubbla** för att minska antalet svaga relationer i datauppsättningen och förbättra prestandan. Svaga relationer innefattar vanligtvis minst en DirectQuery-tabell där kopplingslogik inte kan pushas till källsystemen. Faktumet att **dubbla** tabeller kan fungera antingen som DirectQuery eller Importera hjälper dig att undvika detta.
 
@@ -123,15 +120,15 @@ Frågor som refererar till **Dubbla** tabeller returnera data från cacheminnet 
 
 Om vi fortsätter med föregående exempel refererar följande fråga bara till en kolumn från tabellen *Datum*, vilken är i läget **Dubbla**. Därför bör frågan träffa cacheminnet.
 
-![Skript för lagringslägesdiagnostik](media/desktop-storage-mode/storage-mode_06.png)
+![Skript för lagringslägesdiagnostik](media/desktop-storage-mode/storage-mode-06.png)
 
 Följande fråga refererar bara till en kolumn från tabellen *Försäljning*, vilken är i **DirectQuery**-läge. Därför bör den *inte* träffa cacheminnet.
 
-![Skript för lagringslägesdiagnostik](media/desktop-storage-mode/storage-mode_07.png)
+![Skript för lagringslägesdiagnostik](media/desktop-storage-mode/storage-mode-07.png)
 
 Följande fråga är intressant eftersom den kombinerar båda kolumnerna. Den här frågan träffar inte cacheminnet. Du förväntar dig kanske först att den ska hämta *CalendarYear*-värden från cacheminnet och *SalesAmount*-värden från källan, och sedan kombinera resultaten. Men den här tillämpningen är mindre effektivt än om du skulle skicka åtgärden SUM/GROUP BY till källsystemet. Om åtgärden flyttas ned till källan blir antalet rader som returneras sannolikt mycket mindre. 
 
-![Skript för lagringslägesdiagnostik](media/desktop-storage-mode/storage-mode_08.png)
+![Skript för lagringslägesdiagnostik](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > Det här beteendet skiljer sig från [många-till-många-relationer i Power BI Desktop](desktop-many-to-many-relationships.md) när du kombinerar cachelagrade och icke-cachelagrade tabeller.
@@ -145,7 +142,7 @@ Lagringsläget *Dubbla* är en prestandaoptimering. Det bör endast användas p�
 ## <a name="data-view"></a>Datavy
 Om minst en tabell i datauppsättningen har konfigurerat lagringsläget till endera **Import** eller **Dubbla**, så visas fliken **Datavy**.
 
-![Datavy i Power BI Desktop](media/desktop-storage-mode/storage-mode_09.png)
+![Datavy i Power BI Desktop](media/desktop-storage-mode/storage-mode-03.png)
 
 När du har valt **Dubbla** eller **Import**-tabeller i **Datavy** visas cachelagrade data. Data visas inte i DirectQuery-tabeller och ett meddelande visas som säger att DirectQuery-tabeller inte får visas.
 

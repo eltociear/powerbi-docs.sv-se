@@ -1,21 +1,21 @@
 ---
 title: Visuella objekt i Power BI
 description: Anpassade visualiseringar i Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 68048968bf6a3f85f2bc24e55fd1288073be1d56
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: fde213e29b5168ed990f297e5ace9895bfd44020
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415405"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195729"
 ---
 # <a name="visuals-in-power-bi"></a>Visuella objekt i Power BI
 
@@ -23,11 +23,11 @@ När du skapar eller redigerar en Power BI-rapport finns det många olika typer 
 
 ![visualiseringar](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-Du är dock inte begränsad till den här uppsättningen med visuella objekt. Om du väljer ellipsen (...) längst ned på sidan blir en annan källa till visuella objekt för rapporter tillgänglig – *anpassade visuella objekt*.
+Du är dock inte begränsad till den här uppsättningen med visuella objekt. Om du väljer ellipsen (...) längst ned på sidan blir en annan källa till visuella objekt för rapporter tillgänglig – *visuella Power BI-objekt*.
 
-Utvecklare skapar anpassade visuella objekt med hjälp av SDK:n för anpassade visuella objekt. Med de här visuella objekten kan företagsanvändare se sina data på ett sätt som passar verksamheten. Rapportförfattarna kan sedan importera filerna för anpassade visuella objekt till sina rapporter och använda dem på samma sätt som med andra visuella Power BI-objekt. Anpassade visuella objekt har högsta prioritet i Power BI och kan filtreras markeras, redigeras, delas och så vidare.
+Utvecklare skapar visuella Power BI-objekt med hjälp av SDK:et för visuella Power BI-objekt. Med de här visuella objekten kan företagsanvändare se sina data på ett sätt som passar verksamheten. Rapportförfattarna kan sedan importera filerna för anpassade visuella objekt till sina rapporter och använda dem på samma sätt som med andra visuella Power BI-objekt. Visuella Power BI-objekt har högsta prioritet i Power BI och kan filtreras markeras, redigeras, delas och så vidare.
 
-Anpassade visuella objekt distribueras på tre sätt:
+Visuella Power BI-objekt distribueras på tre sätt:
 
 * Filer för anpassade visuella objekt
 * Visuella objekt för organisationer
@@ -35,29 +35,29 @@ Anpassade visuella objekt distribueras på tre sätt:
 
 ## <a name="custom-visual-files"></a>Filer för anpassade visuella objekt
 
-Anpassade visuella objekt är paket som innehåller kod för att återge de data som de förses med. Alla kan skapa anpassade visuella objekt och paketera dem som enskilda `.pbiviz`-filer som sedan kan importeras till Power BI-rapporter.
+Visuella Power BI-objekt är paket som innehåller kod för att återge de data som de förses med. Alla kan skapa anpassade visuella objekt och paketera dem som enskilda `.pbiviz`-filer som sedan kan importeras till Power BI-rapporter.
 
 > [!WARNING]
 > Ett anpassat visuellt objekt kan innehålla kod som innebär säkerhets- eller integritetsrisker. Se till att du litar på författaren och källan för anpassade visuella objekt innan du importerar den till din rapport.
 
 ## <a name="organizational-visuals"></a>Visuella objekt för organisationer
 
-Power BI-administratörer godkänner och distribuerar anpassade visuella objekt i organisationen, som rapportförfattare enkelt kan upptäcka, uppdatera och använda. Administratörer kan enkelt hantera (till exempel uppdatera version och aktivera/inaktivera) dessa visuella objekt.
+Power BI-administratörer godkänner och distribuerar visuella Power BI-objekt i organisationen, som rapportförfattare enkelt kan upptäcka, uppdatera och använda. Administratörer kan enkelt hantera (till exempel uppdatera version och aktivera/inaktivera) dessa visuella objekt.
 
  [Läs mer om visuella objekt för organisationen](power-bi-custom-visuals-organization.md).
 
 ## <a name="marketplace-visuals"></a>Visuella Microsoft Azure Marketplace-objekt
 
-Både communitymedlemmar och Microsoft har bidragit med anpassade visuella objekt och publicerat dem för allmän tillgänglighet på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)-marknadsplatsen. Du kan ladda ned dessa visuella objekt och lägga till dem i Power BI-rapporter. Microsoft har testat och godkänt dessa anpassade visuella objekt vad gäller funktionalitet och kvalitet.
+Både communitymedlemmar och Microsoft har bidragit med visuella Power BI-objekt och publicerat dem för allmän tillgänglighet på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)-marknadsplatsen. Du kan ladda ned dessa visuella objekt och lägga till dem i Power BI-rapporter. Microsoft har testat och godkänt dessa visuella Power BI-objekt vad gäller funktionalitet och kvalitet.
 
 Vad är [AppSource](developer/office-store.md)? Det är den plats där du hittar appar och tillägg till dina Microsoft-program. AppSource ger miljontals användare av produkter som Office 365, Azure, Dynamics 365, Cortana och Power BI tillgång till lösningar som hjälper dem att utföra sitt arbete ännu effektivare, insiktsfullare och snyggare än tidigare.
 
 ### <a name="certified-visuals"></a>Certifierade visuella objekt
 
 Power BI:s certifierade visuella objekt är visuella marknadsplatsobjekt som har genomgått ytterligare rigorös kvalitetstestning och som stöds i extra scenarier såsom [e-postprenumerationer](service-report-subscribe.md) och [export till PowerPoint](service-publish-to-powerpoint.md).
-Om du vill se en lista över certifierade anpassade visuella objekt, eller skicka dina egna, så hittar du information i [Certifierade anpassade visuella objekt](power-bi-custom-visuals-certified.md).
+Om du vill se en lista över certifierade visuella Power BI-objekt, eller skicka dina egna, så hittar du information i [Certifierade visuella Power BI-objekt](power-bi-custom-visuals-certified.md).
 
-Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i AppSource? Läs [Utveckla ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md) och lär dig hur du [publicerar anpassade visuella objekt till AppSource](developer/office-store.md).
+Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i AppSource? Läs [Utveckla ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md) och lär dig hur du [publicerar visuella Power BI-objekt till AppSource](developer/office-store.md).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Importera ett anpassat visuellt objekt från en fil
 
@@ -95,11 +95,11 @@ Om du vill se en lista över certifierade anpassade visuella objekt, eller skick
 
     ![visuell organisation 5](media/power-bi-custom-visuals/power-bi-visual-org-05.png)
 
-## <a name="download-or-import-custom-visuals-from-microsoft-appsource"></a>Hämta eller importera anpassade visuella objekt från Microsoft AppSource
+## <a name="download-or-import-power-bi-visuals-from-microsoft-appsource"></a>Hämta eller importera visuella Power BI-objekt från Microsoft AppSource
 
-Du har två alternativ för att ladda ned och importera anpassade visuella objekt: från Power BI och från [AppSource-webbplatsen](https://appsource.microsoft.com/).
+Du har två alternativ för att ladda ned och importera visuella Power BI-objekt: från Power BI och från [AppSource-webbplatsen](https://appsource.microsoft.com/).
 
-### <a name="import-custom-visuals-from-within-power-bi"></a>Hämta anpassade visuella objekt från Power BI
+### <a name="import-power-bi-visuals-from-within-power-bi"></a>Importera visuella Power BI-objekt från Power BI
 
 1. Välj ellipserna längst ned i fönstret **Visualiseringar**.
 
@@ -129,13 +129,13 @@ Du har två alternativ för att ladda ned och importera anpassade visuella objek
 
     ![importerade visuellt objekt](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
-### <a name="download-and-import-custom-visuals-from-microsoft-appsource"></a>Hämta och importera anpassade visuella objekt från Microsoft AppSource
+### <a name="download-and-import-power-bi-visuals-from-microsoft-appsource"></a>Ladda ned och importera visuella Power BI-objekt från Microsoft AppSource
 
 1. Börja med [Microsoft AppSource](https://appsource.microsoft.com) och välj fliken **Appar**.
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Gå till [appresultatsidan](https://appsource.microsoft.com/marketplace/apps) där du kan visa de främsta apparna i varje kategori, inklusive *Power BI-appar*. Vi söker efter anpassade visuella objekt, så vi väljer **Visuella Power BI-objekt** från den vänstra navigeringslistan så att resultaten begränsas.
+2. Gå till [appresultatsidan](https://appsource.microsoft.com/marketplace/apps) där du kan visa de främsta apparna i varje kategori, inklusive *Power BI-appar*. Vi söker efter visuella Power BI-objekt, så vi väljer **Visuella Power BI-objekt** från den vänstra navigeringslistan så att resultaten begränsas.
 
     ![Visuella AppSource-objekt](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
@@ -165,15 +165,15 @@ Du har två alternativ för att ladda ned och importera anpassade visuella objek
 
 * Ett anpassat visuellt objekt läggs till i en specifik rapport när det importeras. Om du vill använda det visuella objektet i en annan rapport måste du importera det till den rapporten också. När en rapport med ett anpassat visuellt objekt sparas med alternativet **Spara som**, så sparas en kopia av det anpassade visuella objektet med den nya rapporten.
 
-* Om du inte ser fönstret **Visualiseringar** innebär det att du inte har redigeringsbehörigheter för rapporten.  Du kan bara lägga till anpassade visuella objekt till rapporter som du kan redigera, inte till rapporter som endast delas med dig.
+* Om du inte ser fönstret **Visualiseringar** innebär det att du inte har redigeringsbehörigheter för rapporten.  Du kan bara lägga till visuella Power BI-objekt till rapporter som du kan redigera, inte till rapporter som endast delas med dig.
 
 ## <a name="troubleshoot"></a>Felsök
 
-Information om felsökning finns i [Felsöka anpassade visuella objekt i Power BI](power-bi-custom-visuals-troubleshoot.md).
+Information om felsökning finns i [Felsöka visuella Power BI-objekt i Power BI](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
-Mer information och svar på frågor finns i [Vanliga frågor och svar om anpassade visuella Power BI-objekt](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+Mer information och svar på frågor finns i [Vanliga frågor och svar om visuella Power BI-objekt i Power BI](power-bi-custom-visuals-faq.md#organizational-visuals).
 
 ## <a name="next-steps"></a>Nästa steg
 

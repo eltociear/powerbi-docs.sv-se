@@ -1,37 +1,37 @@
 ---
-title: Använd R-baserade anpassade visuella objekt i Power BI
-description: Använd R-baserade anpassade visuella objekt i Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+title: Använd R-baserade visuella Power BI-objekt i Power BI
+description: Använd R-baserade visuella Power BI-objekt i Power BI
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: d79164ea5b66fe003f913742436a817d76d798e0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b5f8677b3207122831e3d2cae6c07aa5bbcb9983
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61278741"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194611"
 ---
-# <a name="use-r-powered-custom-visuals-in-power-bi"></a>Använd R-baserade anpassade visuella objekt i Power BI
+# <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Använd R-baserade visuella Power BI-objekt i Power BI
 
-I **Power BI Desktop** och **Power BI-tjänsten** kan du använda R-baserade anpassade visuella objekt utan att ha någon kunskap om R och utan några R-skript. Det innebär att du kan använda den analytiska och visuella kraften i visuella R-objekt och R-skript, utan att du behöver lära dig R eller utföra någon programmering själv.
+I **Power BI Desktop** och **Power BI-tjänsten** kan du använda R-baserade visuella Power BI-objekt utan att ha någon kunskap om R och utan några R-skript. Det innebär att du kan använda den analytiska och visuella kraften i visuella R-objekt och R-skript, utan att du behöver lära dig R eller utföra någon programmering själv.
 
-Om du vill använda R-baserade anpassade visuella objekt markerar och laddar du ner det anpassade visuella R-objekt som du vill använda från [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) i galleriet med **anpassade visuella objekt**  för Power BI.
+Om du vill använda R-baserade visuella Power BI-objekt markerar och laddar du ner det anpassade visuella R-objekt som du vill använda från [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) i galleriet med **visuella Power BI-objekt**  för Power BI.
 
 ![Visuellt R-objekt 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
 I följande avsnitt beskrivs hur du väljer, läser in och använder R-baserade visuella objekt i **Power BI Desktop**.
 
-## <a name="use-r-custom-visuals"></a>Använda anpassade visuella R-objekt
+## <a name="use-r-power-bi-visuals"></a>Använd visuella Power BI-objekt
 
-Om du vill använda R-baserade anpassade visuella objekt, ladda ner varje visuellt objekt från biblioteket med **anpassade visuella objekt**. Därefter använder du det visuella objektet på samma sätt som andra visuella objekt i **Power BI Desktop**. Det finns två sätt att hämta anpassade visuella objekt på: Du kan ladda ner dem från onlinewebbplatsen **AppSource**, eller bläddra och hämta dem inifrån **Power BI Desktop**. 
+Om du vill använda R-baserade visuella Power BI-objekt, ladda ner varje visuellt objekt från biblioteket med **visuella Power BI-objekt**. Därefter använder du det visuella objektet på samma sätt som andra visuella objekt i **Power BI Desktop**. Det finns två sätt att hämta visuella Power BI-objekt på: Du kan ladda ner dem från onlinewebbplatsen **AppSource**, eller bläddra och hämta dem inifrån **Power BI Desktop**. 
 
-### <a name="get-custom-visuals-from-appsource"></a>Hämta anpassade visuella objekt från AppSource
+### <a name="get-power-bi-visuals-from-appsource"></a>Hämta visuella Power BI-objekt från AppSource
 
 Här följer stegen för att bläddra efter och välja visuella objekt från onlinewebbplatsen **AppSource**:
 
@@ -50,7 +50,7 @@ Här följer stegen för att bläddra efter och välja visuella objekt från onl
 
    ![Visuellt R-objekt 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   Du behöver inte installera R för att använda R-baserade anpassade visuella objekt i **Power BI-tjänsten**, men om du vill använda R-baserade anpassade visuella objekt i **Power BI Desktop** *måste* du installera R på den lokala datorn. Du kan hämta R från följande platser:
+   Du behöver inte installera R för att använda R-baserade visuella Power BI-objekt i **Power BI-tjänsten**, men om du vill använda R-baserade visuella Power BI-objekt i **Power BI Desktop** *måste* du installera R på den lokala datorn. Du kan hämta R från följande platser:
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
@@ -79,25 +79,25 @@ Här följer stegen för att bläddra efter och välja visuella objekt från onl
 
     Kontrollera biblioteket ofta eftersom nya visuella objekt läggs till hela tiden.
 
-### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Hämta anpassade visuella objekt inifrån **Power BI Desktop**
+### <a name="get-power-bi-visuals-from-within-power-bi-desktop"></a>Hämta visuella Power BI-objekt från **Power BI Desktop**
 
-1. Du kan också hämta anpassade visuella objekt inifrån **Power BI Desktop**. I **Power BI Desktop** klickar du på ellipsen (...) i fönstret **Visualiseringar** och väljer **Importera från marketplace**.
+1. Du kan också hämta visuella Power BI-objekt inifrån **Power BI Desktop**. I **Power BI Desktop** klickar du på ellipsen (...) i fönstret **Visualiseringar** och väljer **Importera från marketplace**.
 
    ![Visuellt R-objekt 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-2. När du gör detta visas dialogrutan **Visuella objekt för Power BI** där du kan bläddra genom tillgängliga anpassade visuella objekt och välja det du vill ha. Du kan söka efter namn, välja en kategori eller bara bläddra igenom tillgängliga visuella objekt. När du är klar väljer du **Lägg till** för att lägga till det anpassade visuella objektet i **Power BI Desktop**.
+2. När du gör detta visas dialogrutan **Visuella objekt för Power BI** där du kan bläddra genom tillgängliga visuella Power BI-objekt och välja det du vill ha. Du kan söka efter namn, välja en kategori eller bara bläddra igenom tillgängliga visuella objekt. När du är klar väljer du **Lägg till** för att lägga till det anpassade visuella objektet i **Power BI Desktop**.
 
    ![Visuellt R-objekt 12](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
-## <a name="contribute-r-powered-custom-visuals"></a>Bidra med R-baserade anpassade visuella objekt
+## <a name="contribute-r-powered-power-bi-visuals"></a>Bidra med R-baserade visuella Power BI-objekt
 
-Om du skapar dina egna visuella R-objekt för användning i rapporter, kan du dela dem med omvärlden genom att lägga till ditt anpassade visuella objekt i **galleriet med anpassade visuella objekt**. Bidrag görs via GitHub och processen beskrivs på följande plats:
+Om du skapar dina egna visuella R-objekt för användning i rapporter, kan du dela dem med omvärlden genom att lägga till ditt anpassade visuella objekt i **Power BI Visuals Gallery**. Bidrag görs via GitHub och processen beskrivs på följande plats:
 
-* [Bidra till galleriet med R-baserade anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+* [Bidra till galleriet med R-baserade Power BI Visuals Gallery](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
-## <a name="troubleshoot-r-powered-custom-visuals"></a>Felsöka R-baserade anpassade visuella objekt
+## <a name="troubleshoot-r-powered-power-bi-visuals"></a>Felsöka R-baserade visuella Power BI-objekt
 
-R-baserade anpassade visuella objekt har vissa beroenden som måste uppfyllas för att de visuella objekten ska fungera korrekt. Om R-baserade anpassade visuella objekt inte körs eller läses in korrekt, är problemet vanligtvis något av följande:
+R-baserade visuella Power BI-objekt har vissa beroenden som måste uppfyllas för att de visuella objekten ska fungera korrekt. Om R-baserade visuella Power BI-objekt inte körs eller läses in korrekt, är problemet vanligtvis något av följande:
 
 * R-motorn saknas
 * Fel i R-skriptet som det visuella objektet baseras på
@@ -150,7 +150,7 @@ Power BI-teamet arbetar aktivt med att åtgärda dessa problem innan de når dig
 
 Ta en titt på följande extra information om R i Power BI.
 
-* [Galleri för anpassade visuella objekt för Power BI](https://app.powerbi.com/visuals/)
+* [Power BI Visuals Gallery i Power BI](https://app.powerbi.com/visuals/)
 * [Köra R-skript i Power BI Desktop](desktop-r-scripts.md)
 * [Skapa visuella R-objekt i Power BI Desktop](desktop-r-visuals.md)
 * [Använd en extern R IDE med Power BI](desktop-r-ide.md)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: e74bdacc1b8ee40ec6628337e9e78528e8fdee29
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: fe8f21bbbd0886b8ff4046f744884e53f8822912
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164513"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327744"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -22,6 +22,13 @@ Relaterad information om nyheter finns i:
 * [Power BI-teambloggen för mobilappar](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
+
+## <a name="september-2019"></a>September 2019
+
+### <a name="support-for-custom-app-navigation-ios-and-android"></a>Stöd för anpassad appnavigering (iOS och Android)
+
+Vi har lagt till stöd för anpassad appnavigering. När du nu öppnar en app i Power BI Mobile är de anpassade navigeringsfunktionerna som byggts av appskaparen tillgängliga. Appnavigering kan ordnas efter innehåll och kan innehålla nya objekt som länkar och komprimerbara avsnitt.
+Läs mer om [anpassad navigering](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## <a name="august-2019"></a>Augusti 2019
 

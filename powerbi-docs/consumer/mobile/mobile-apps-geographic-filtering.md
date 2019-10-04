@@ -6,21 +6,21 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/09/2018
+ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 828dcb4aeb8b7c5e69292685470f112a2d85cb71
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61349581"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305783"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrera en rapport efter geografisk plats i Power BI-mobilappar
 Gäller:
 
-| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-geographic-filtering/android-tablet-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Android-surfplattor |Windows 10-telefoner |
+| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-surfplatta](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |
+| iPhone-telefoner |iPad-surfplattor |Android-telefoner |Windows 10-telefoner |
 
 Ser du en liten kartnålsikon i det övre högra hörnet när du tittar på en Power BI-rapport på din mobila enhet? I så fall kan du filtrera rapporten baserat på var du befinner dig.
 
@@ -39,11 +39,11 @@ Ser du en liten kartnålsikon i det övre högra hörnet när du tittar på en P
 ## <a name="why-dont-i-see-location-tags-on-a-report"></a>Varför ser jag inga platstaggar i rapporten?
 Alla följande tre villkor måste vara uppfyllda för att du ska kunna se platstaggar. 
 
-* Den person som skapade rapporten i Power BI Desktop [kategoriserade geografiska data](../../desktop-mobile-geofiltering.md) för minst en kolumn, t.ex. City, State eller Country/Region.
+* Den person som skapade rapporten i Power BI Desktop måste ha [kategoriserade geografiska data](../../desktop-mobile-geofiltering.md) för minst en kolumn, t.ex. City, State eller Country/Region.
 * Du befinner dig på en av de platser som har data i den kolumnen.
 * Du använder någon av följande mobila enheter:
   * iOS (iPad, iPhone, iPod).
-  * Android-telefon eller surfplatta.
+  * Android-telefon.
   * Windows 10-telefon (andra Windows 10-enheter, t.ex. stationära datorer och surfplattor stöder inte geografisk filtrering).
 
 Läs mer om [Konfigurera geografiskt filtrering](../../desktop-mobile-geofiltering.md) i Power BI Desktop.

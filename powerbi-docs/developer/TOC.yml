@@ -1,0 +1,240 @@
+- name: Power BI för utvecklare
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Vad kan utvecklare göra med Power BI?
+          href: what-can-you-do.md
+    - name: Visuella objekt för Power BI
+      expanded: true
+      items:
+        - name: Översikt
+          items:
+            - name: Visuella objekt i Power BI
+              href: ../power-bi-custom-visuals.md
+        - name: Självstudier
+          items:
+            - name: Utveckla ett visuellt Power BI-objekt
+              href: custom-visual-develop-tutorial.md
+            - name: Lägga till formateringsalternativ
+              href: custom-visual-develop-tutorial-format-options.md
+            - name: Lägga till enhetstester för visuellt projekt
+              href: visuals/unit-tests-introduction.md
+        - name: Begrepp
+          items:
+            - name: Visuella objekt för organisationer i Power BI
+              href: ../power-bi-custom-visuals-organization.md
+            - name: Riktlinjer för visuella objekt för Power BI
+              href: guidelines-powerbi-visuals.md
+            - name: Vanliga frågor och svar om visuella objekt
+              href: ../power-bi-custom-visuals-faq.md
+            - name: Använda funktioner
+              href: visuals/capabilities.md
+            - name: Datavymappningar
+              href: visuals/dataview-mappings.md
+            - name: Objekt och egenskaper
+              href: visuals/objects-properties.md
+            - name: Avancerat redigeringsläge
+              href: visuals/advanced-edit-mode.md
+        - name: Gör så här
+          items:
+            - name: Certifiera ett visuellt objekt
+              href: ../power-bi-custom-visuals-certified.md
+            - name: Publicera anpassad visuell information till AppSource
+              href: office-store.md
+            - name: Använd R-baserade anpassade visuella objekt i Power BI
+              href: ../desktop-r-powered-custom-visuals.md
+            - name: Interaktioner med visuella objekt
+              href: visuals/visuals-interactions.md
+            - name: Lägga till knappbeskrivningar för visuella objekt
+              href: visuals/add-tooltips.md
+            - name: Lägga till analysfönster
+              href: visuals/analytics-pane.md
+            - name: Filtrera visuella objekt
+              href: visuals/filter-api.md
+            - name: Hämta mer data
+              href: visuals/fetch-more-data.md
+            - name: Lägga till stöd för bokmärken
+              href: visuals/bookmarks-support.md
+            - name: Markera data i visuella objekt
+              href: visuals/highlight.md
+            - name: Lägga till stöd för högkontrastläge
+              href: visuals/high-contrast-support.md
+            - name: Aktivera synkronisering av utsnitt
+              href: visuals/enable-sync-slicers.md
+            - name: Felsöka anpassade visuella Power BI-objekt
+              href: ../power-bi-custom-visuals-troubleshoot.md
+        - name: Referens
+          items:
+            - name: Landningssida
+              href: visuals/landing-page.md
+            - name: Starta URL
+              href: visuals/launch-url.md
+            - name: Återgivningshändelser
+              href: visuals/event-service.md
+            - name: Sortering
+              href: visuals/sort-options.md
+        - name: Resurser
+          items:
+            - name: Dev Center
+              href: 'https://powerbi.microsoft.com/developers/'
+            - name: Exempel
+              href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+            - name: Git Repo för anpassade visuella objekt
+              href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+            - name: Skapa SSL-certifikat
+              href: visuals/create-ssl-certificate.md
+    - name: Inbäddad analys
+      expanded: true
+      items:
+        - name: Översikt
+          items:
+            - name: Vad är inbäddning med Power BI?
+              href: embedding.md
+            - name: Vad är Power BI Embedded i Azure?
+              href: azure-pbie-what-is-power-bi-embedded.md
+        - name: Självstudier
+          items:
+            - name: Bädda in innehåll för kunder
+              href: embed-sample-for-customers.md
+            - name: Bädda in innehåll för organisationen
+              href: embed-sample-for-your-organization.md
+            - name: Bädda in innehåll för nationella moln
+              href: embed-sample-for-customers-national-clouds.md
+        - name: Begrepp
+          items:
+            - name: Bästa praxis för prestanda
+              href: embedded-performance-best-practices.md
+            - name: Tjänstens huvudnamn
+              href: embed-service-principal.md
+            - name: Säkerhet på radnivå
+              href: embedded-row-level-security.md
+            - name: Hantera flera klienter
+              href: embed-multi-tenancy.md
+            - name: Diagnostisk loggning i Azure för Power BI Embedded
+              href: azure-pbie-diag-logs.md
+            - name: Bädda in
+              href: embedded-faq.md
+            - name: Power BI-behörigheter
+              href: power-bi-permissions.md
+        - name: Gör så här
+          items:
+            - name: Bädda in från en app
+              href: embed-from-apps.md
+            - name: Installera appar automatiskt
+              href: embed-auto-install-app.md
+            - name: Skapa en Azure Active Directory-klient
+              href: create-an-azure-active-directory-tenant.md
+            - name: Registrera ett program
+              href: register-app.md
+            - name: Hämta en Azure AD-åtkomsttoken
+              href: get-azuread-access-token.md
+            - name: Bädda in frågor och svar
+              href: qanda.md
+            - name: Felsök ditt inbäddade program
+              href: embedded-troubleshoot.md
+            - name: Hantera kapacitet i Azure
+              items:
+                - name: Skapa kapacitet i Azure
+                  href: azure-pbie-create-capacity.md
+                - name: Skapa en kapacitet med hjälp av Multi-Geo in Azure
+                  href: embedded-multi-geo.md
+                - name: Skala kapacitet i Azure
+                  href: azure-pbie-scale-capacity.md
+                - name: Pausa och starta kapacitet i Azure
+                  href: azure-pbie-pause-start.md
+            - name: Migrera från arbetsytesamlingar
+              items:
+                - name: Så här migrerar du från Power BI-arbetsytesamlingar
+                  href: migrate-from-powerbi-embedded.md
+                - name: Migreringsverktyg
+                  href: migrate-tool.md
+                - name: Kodavsnitt för migrering
+                  href: migrate-code-snippets.md
+        - name: Referens
+          items:
+            - name: 'API:er'
+              items:
+                - name: 'REST API:er för Azure Resource Management'
+                  href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+                - name: 'REST API:er för Power BI'
+                  href: 'https://msdn.microsoft.com/library/mt147898.aspx'
+                - name: Power BI REST API-referens
+                  href: rest-api-reference.md
+            - name: Hämta .NET SDK
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
+            - name: Bädda in anpassade layouter i en app
+              href: embedded-custom-layout.md
+        - name: Resurser
+          items:
+            - name: Dev Center
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: Konfigurationsverktyget för inbäddning
+              href: 'https://aka.ms/embedsetup'
+            - name: Exempel för JavaScript Playground
+              href: 'https://go.microsoft.com/fwlink/?linkid=848279'
+            - name: Power BI JavaScript-wiki
+              href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
+            - name: JavaScript Git Repo
+              href: 'https://go.microsoft.com/fwlink/?linkid=848276'
+            - name: 'Power BI C# Git Repo'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: Exempel
+              href: 'https://go.microsoft.com/fwlink/?linkid=851293'
+            - name: Power BI-community
+              href: 'https://go.microsoft.com/fwlink/?linkid=848280'
+            - name: Dataspill
+              href: 'https://go.microsoft.com/fwlink/?linkid=848281'
+    - name: Automation
+      expanded: true
+      items:
+        - name: Översikt
+          items:
+            - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
+              href: overview-of-power-bi-rest-api.md
+        - name: Självstudier
+          items:
+            - name: Skicka data till en datauppsättning
+              href: walkthrough-push-data.md
+            - name: Hämta en autentiseringsåtkomsttoken
+              href: walkthrough-push-data-get-token.md
+            - name: Skapa en datauppsättning
+              href: walkthrough-push-data-create-dataset.md
+            - name: Hämta en datauppsättning för att lägga till rader
+              href: walkthrough-push-data-get-datasets.md
+            - name: Lägga till rader i en tabell
+              href: walkthrough-push-data-add-rows.md
+        - name: Begrepp
+          items:
+            - name: Princip för automatiskt bevarande av realtidsdata
+              href: api-automatic-retention-policy-for-real-time-data.md
+            - name: Skicka data
+              items:
+                - name: 'Begränsningar för Power BI REST API:t'
+                  href: api-rest-api-limitations.md
+                - name: Egenskaper för datamängd
+                  href: api-dataset-properties.md
+                - name: Versionshantering av datamodell
+                  href: api-data-model-versioning.md
+        - name: Gör så här
+          items:
+            - name: Konfigurera autentiseringsuppgifter
+              href: configure-credentials.md
+            - name: Kryptera autentiseringsuppgifter
+              href: encrypt-credentials.md
+        - name: Referens
+          items:
+            - name: 'REST API:er'
+              href: 'https://docs.microsoft.com/rest/api/power-bi'
+            - name: Power BI REST API-referens
+              href: rest-api-reference.md
+            - name: Fullständig kodlista
+              href: walkthrough-push-data-complete-code.md
+        - name: Resurser
+          items:
+            - name: Dev Center
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: 'Power BI C# Git Repo'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: Hämta .NET SDK
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'

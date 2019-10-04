@@ -5,24 +5,26 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 68e0a7985997a4512fe26812547f12f1b9be648f
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a1cc536e83832ab89b8a0aee8e8f01b9ced35a10
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68522727"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256371"
 ---
 # <a name="view-power-bi-notifications"></a>Visa Power BI-meddelanden
-Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, ändringar i din grupparbetsyta, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](../service-set-data-alerts.md) samt i Power BI-mobilappar.
+Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse. Öppna det för att se meddelanden om nya instrumentpaneler som har delats med dig, information om Power BI-händelser och -möten, aviseringar du har ställt in och mer. Du kan [ställa in aviseringar på Power BI-tjänsten](end-user-alerts.md) samt i Power BI-mobilappar.
 
-Titta när Amanda granskar, hanterar och svarar på meddelanden. Följ sedan instruktionerna under videon för att prova själv.
+Titta när Amanda granskar, hanterar och svarar på meddelanden. Följ sedan instruktionerna under videon för att prova själv.    
+
+> [!NOTE]
+> Den här videon visar en äldre version av Power BI-tjänsten. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bZMSv5KAlcE" frameborder="0" allowfullscreen></iframe>
 
@@ -30,17 +32,16 @@ Titta när Amanda granskar, hanterar och svarar på meddelanden. Följ sedan ins
 1. När du loggar in till Power BI, läggs de nya meddelanden som har skickats till dig när du var offline till ditt flöde. Om du har nya meddelanden, visar Power BI en gul bubbla med antal nya objekt.
    
    ![ikonen Nytt meddelande](./media/end-user-notification-center/power-bi-new-notification.png)
-2. Välj meddelandeikonen i Power BI-menyraden.
+2. Välj **meddelandeikonen** i Power BI-menyraden.
    
    ![översta menyraden med meddelandeikonen markerad](./media/end-user-notification-center/power-bi-notifications-icon.png)
 3. Meddelanden visas med de senaste överst och olästa meddelanden markerade. Meddelanden behålls i 90 dagar, om du inte tar bort dem tidigare eller når maxgränsen på 100.
    
-   ![Meddelandecenter](./media/end-user-notification-center/power-bi-notifications.png)
+   ![Meddelandecenter](./media/end-user-notification-center/power-bi-notification-center.png)
 4. Välj X-ikonen för att stänga en avisering.
 
 ### <a name="next-steps"></a>Nästa steg
-* [Dataaviseringar i Power BI-tjänsten](../service-set-data-alerts.md)
-* [Skapa ett Microsoft Flow som utlöses av en Power BI-dataavisering](../service-flow-integration.md)
+* [Dataaviseringar i Power BI-tjänsten](end-user-alerts.md)
 * [Ställ in dataaviseringar i iPhone-appen (Power BI för iOS)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

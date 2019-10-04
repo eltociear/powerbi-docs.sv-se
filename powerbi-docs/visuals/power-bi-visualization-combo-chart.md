@@ -1,6 +1,6 @@
 ---
 title: Kombinationsdiagram i Power BI
-description: De här självstudierna om kombinationsdiagram förklarar när du ska använda dem och hur du skapar dem i Power BI-tjänsten och Desktop.
+description: Den här självstudien om kombinationsdiagram förklarar när du ska använda dem och hur du skapar dem i Power BI-tjänsten och Desktop.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,143 +8,123 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/23/2019
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e4b7b4b336b376f6ccec0bc0fe56de107ab8bd09
-ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
+ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67124107"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194969"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 I Power BI är ett kombinationsdiagram en enskild visualisering som kombinerar ett linjediagram med ett stapeldiagram. Om du kombinerar de två diagrammen till ett kan du göra en snabbare jämförelse av dina data.
 
 Kombinationsdiagram kan ha en eller två Y-axlar.
 
 ## <a name="when-to-use-a-combo-chart"></a>När du ska använda ett kombinationsdiagram
-
 Kombinationsdiagram är ett bra alternativ:
 
-* när du har ett linjediagram och ett kolumndiagram med samma X-axel
-
-* för att jämföra flera mått med olika värdeintervall
-
-* för att illustrera sambandet mellan två mätvärden i en visualisering
-
-* för att kontrollera om ett mätvärde uppfyller det mål som definieras av ett annat mätvärde
-
+* när du har ett linjediagram och ett stapeldiagram med samma X-axel,
+* för att jämföra flera mått med olika värdeintervall,
+* för att illustrera sambandet mellan två mätvärden i en visualisering,
+* för att kontrollera om ett mätvärde uppfyller det mål som definieras av ett annat mätvärde,
 * för att spara utrymme på arbetsytan.
 
-## <a name="prerequisites"></a>Förutsättningar
+### <a name="prerequisites"></a>Förutsättningar
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-Kombinationsdiagram finns tillgängliga i Power BI-tjänsten och Power BI Desktop. De här självstudierna använder Power BI-tjänsten för att skapa ett kombinationsdiagram. Kontrollera att du har autentiseringsuppgifter för användare för att logga in till Power BI.
+1. Välj **Arkiv** > **Öppna** uppe till vänster på menyraden
+   
+2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelsanalys**
 
-Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och marknadsföring.
+1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
+
 
 ## <a name="create-a-basic-single-axis-combo-chart"></a>Skapa ett grundläggande kombinationsdiagram med en axel
+Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och marknadsföring.
+   > [!NOTE]
+   > Den här videon använder en äldre version av Power BI Desktop.
+   > 
+   > 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
 
-Om du vill följa med, öppnar du Power BI-tjänsten och ansluter till **Exempel på detaljhandelsanalys**. Om du vill skapa ett eget kombinationsdiagram, loggar du in till Power BI-tjänsten och väljer **Hämta data** > **Exempel** > **Exempel på detaljhandelsanalys** > **Anslut**. Instrumentpanelen **Exempel på detaljhandelsanalys** visas.
+<a name="create"></a>
 
-1. Välj panelen **Totalt antal butiker** från instrumentpanelen ”Exempel på detaljhandelsanalys” för att öppna rapporten **Översikt över butiksförsäljning**.
+1. Börja med en tom rapportsida och skapa ett stapeldiagram som visar årets försäljning och bruttomarginal per månad.
 
-1. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+    a.  Välj **Försäljning** \> **This Year Sales (Årets försäljning)**  > **Värde** i fönstret Fält.
 
-1. Längst ned på sidan väljer du **+** för att lägga till en ny rapportsida.
+    b.  Dra **Försäljning** \> **Gross Margin This Year (Årets bruttomarginal)** till området **Värde**.
 
-1. Skapa ett kolumndiagram som visar årets försäljning och bruttomarginal per månad.
+    c. Välj **Tid**\>**FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Axel**.
 
-    1. Välj **Försäljning** \> **This Year Sales (Årets försäljning)**  > **Värde** i fönstret Fält.
+    ![självstudieexempel på kombinationsdiagram](media/power-bi-visualization-combo-chart/combotutorial1new.png)
+5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)** . Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** . I det här exemplet väljer vi **Sortera stigande**.
 
-    1. Dra **Försäljning** \> **Gross Margin This Year (Årets bruttomarginal)** till området **Värde**.
+6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Det finns två kombinationsdiagram: **Linjediagram och stående stapeldiagram** samt **Linjediagram och grupperat stående stapeldiagram**. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
 
-    1. Välj **Tid**\>**FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Axel**.
+    ![exempel på konvertering av kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
+7. Från panelen **Fält** drar du **Försäljning** \> **Last Years Sales (Förra årets försäljning)** till behållaren **Radvärden**.
 
-        ![Skärmbild av det nyligen skapade kolumndiagrammet.](media/power-bi-visualization-combo-chart/combotutorial1new.png)
+   ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 
-1. Välj ellipsen i det övre högra hörnet av visualiseringen och välj **Sortera efter > FiscalMonth** (Räkenskapsmånad). Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** .
+   Kombinationsdiagrammet bör se ut ungefär så här:
 
-1. Konvertera stapeldiagrammet till ett kombinationsdiagram. Det finns två kombinationsdiagram: **Linjediagram och stående stapeldiagram** samt **Linjediagram och grupperat stående stapeldiagram**. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
-
-    ![Skärmbild av visualiseringsfönstret med alternativet för linje- och grupperat kolumndiagram framhävt.](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
-
-1. Från panelen **Fält** drar du **Försäljning**  >  **Senaste årets försäljning** till området **Radvärden**.
-
-    ![Skärmbild av förra årets försäljning dragen in i området Radvärden.](media/power-bi-visualization-combo-chart/linevaluebucket.png)
-
-    Kombinationsdiagrammet bör se ut ungefär så här:
-
-    ![Skärmbild av kolumndiagrammet med radvärdet för förra årets försäljning tillagt.](media/power-bi-visualization-combo-chart/combochartdone-new.png)
+   ![exempel på slutfört kombinationsdiagram](media/power-bi-visualization-combo-chart/combochartdone-new.png)
 
 ## <a name="create-a-combo-chart-with-two-axes"></a>Skapa ett kombinationsdiagram med två axlar
-
 I det här steget ska vi jämföra bruttomarginal och försäljning.
 
-1. Skapa ett nytt linjediagram som spårar **Bruttomarginal förra året %** efter **Månad**. Välj ellipserna för att sortera efter **Month** (Månad) och **Ascending** (Stigande).
+1. Skapa ett nytt linjediagram som spårar **Bruttomarginal förra året %** efter **FiscalMonth** (Räkenskapsmånad). Välj ellipserna för att sortera efter **Month** (Månad) och **Ascending** (Stigande).  
+I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
 
-    ![Skärmbild av det nya linjediagrammet.](media/power-bi-visualization-combo-chart/combo1_new.png)
+   ![exempel på försäljning i kombinationsdiagram](media/power-bi-visualization-combo-chart/combo1-new.png)
+2. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet. Skalan för **Bruttomarginal förra året %** är mycket mindre än skalan för **Försäljning** vilket gör det svårt att jämföra.      
 
-     I januari var bruttomarginal % 35 %, med en topp på 45 % i april som sjönk i juli och fick ytterligare en topp igen i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
+   ![exempel på flatline för kombinationsdiagram](media/power-bi-visualization-combo-chart/flatline-new.png)
+3. Konvertera linjediagrammet till ett Linjediagram och stående stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.
 
-1. Lägg till **Försäljning detta år** > **Värde**och **Senaste årets försäljning** till linjediagrammet. Skalan för **Bruttomarginal förra året %** är mycket mindre än skalan för **Försäljning**. Det är svårt att jämföra.
+   ![exempel på konvertering till kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new.png)
 
-    ![Skärmbild av linjediagrammet med Värde och Förra årets försäljning tillagda.](media/power-bi-visualization-combo-chart/flatline_new.png)
+4. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**. Power BI skapar två axlar, vilket medför att datauppsättningarna kan skalas på olika sätt; den till vänster mäter dollar försäljning och den till höger procentandel. Svaret på frågan ovan är ja, vi ser ett liknande mönster.
 
-1. Konvertera linjediagrammet till ett Linjediagram och stående stapeldiagram om du vill göra det visuella objektet lättare att läsa och tolka.
-
-    ![Skärmbild av visualiseringsfönstret med linje- och det staplade kolumndiagrammet framhävt.](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-
-1. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**. 
-
-    ![Skärmbild av linje- och det staplade kolumndiagrammet](media/power-bi-visualization-combo-chart/power-bi-combochart.png)
-
-    Power BI skapar två axlar så att tjänsten kan skala datamängderna på olika sätt. Den vänstra mäter försäljningen i dollar och den högra procentandelen. Och vi ser svaret på vår fråga: Ja, vi ser ett liknande mönster.
+   ![exempel på klusterkombinationsdiagram](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Lägga till rubriker på axlarna
-
-1. Välj rollerikonen ![Skärmbild av rollerikonen.](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) för att öppna formateringsfönstret.
-
+1. Välj rollerikonen 
+1. ![rollerikon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) för att öppna formateringsfönstret.
 1. Välj nedpilen för att expandera alternativen för **y-axeln**.
+1. För **Y-axel (kolumn)** anger du **Position** till **Vänster** och **Rubrik** till **På**,  **Format** till **Visa endast rubriken** och **Visa enheter** som **Miljoner**.
 
-1. För **Y-axel (kolumn)** , väljer du dessa alternativ:
+   ![exempel på öppna y i kombinationsdiagram](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
+4. Under **Y-axel (kolumn)** bläddrar du ned tills du ser **Visa sekundär**. Eftersom det finns så många alternativ för Y-axlarna kan du behöva använda båda rullningslisterna. Avsnittet Visa sekundär visar alternativ för att formatera linjediagramdelen i kombinationsdiagrammet.
 
-    | Inställning | Värde |
-    | ------- | ----- |
-    | Position | Välj **Vänster**. |
-    | Visningsenheter | Välj **Miljoner**. |
-    | Rubrik | Flytta skjutreglaget till **På**. |
-    | Stil | Välj **Visa enbart rubrik**. |
-    | Visa sekundär | Flytta skjutreglaget till **På**.  Detta visar alternativ för att formatera linjediagramsdelen av kombinationsdiagrammet. |
+   ![exempel på sekundär i kombinationsdiagram](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
+5. För **Y-axeln (rad)** lämnar du **Position** som **Höger**, ställer in **Rubrik** till **På** och ställer in **Format** på **Visa endast rubriken**.
 
-1. För **Y-axel (rad)** , väljer du dessa alternativ:
+   Kombinationsdiagrammet visar nu dubbla axlar, båda med rubriker.
 
-    | Inställning | Värde |
-    | ------- | ----- |
-    | Position | Välj **Höger**. |
-    | Rubrik | Flytta skjutreglaget till **På**. |
-    | Stil | Välj **Visa enbart rubrik**. |
+   ![exempel på kombinationsdiagramrubriker](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
 
-    Kombinationsdiagrammet visar nu dubbla axlar, båda med rubriker.
-
-    ![Skärmbild av linje- och det staplade kolumndiagrammet med rubriker aktiverade.](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
-
-1. Du kan också ändra teckensnitt, storlek och färg och ställa in andra formateringsalternativ för att förbättra diagrammets visning och läsbarhet.
+6. Du kan också ändra teckensnitt, storlek och färg och ställa in andra formateringsalternativ för att förbättra visning och läsbarhet av diagrammet.
 
 Härifrån kan du vilja:
 
 * [lägga till kombinationsdiagrammet som en panel på instrumentpanelen](../service-dashboard-tiles.md),
-
 * [Spara rapporten](../service-report-save.md).
-
 * [göra rapporten mer lättillgänglig för personer med funktionshinder](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Korsmarkering och korsfiltrering
 
-Om du markerar en kolumn eller linje i ett kombinationsdiagram, korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan. Använd [visuella interaktioner](../service-reports-visual-interactions.md) för att ändra det här standardbeteendet.
+Om du markerar en kolumn eller linje i ett kombinationsdiagram så korsmarkeras och korsfiltreras de övriga visualiseringarna på rapportsidan och vice versa. Använd [visuella interaktioner](../service-reports-visual-interactions.md) för att ändra det här standardbeteendet.
 
 ## <a name="next-steps"></a>Nästa steg
 

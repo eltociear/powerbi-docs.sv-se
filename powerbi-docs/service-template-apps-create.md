@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264539"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195411"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Skapa en mallapp i Power BI
 
@@ -47,7 +47,7 @@ För att kunna skapa en mallapp som du kan distribuera till andra Power BI-klien
 
 3. Ange ett namn, en beskrivning (valfritt) och en logotypbild (valfritt) för din apparbetsyta.
 
-4. Välj **Utveckla en mallapp**.
+4. Expandera avsnittet **Avancerat** och välj **Utveckla en mallapp**.
 
     ![Utveckla en mallapp](media/service-template-apps-create/power-bi-template-app-develop.png)
 
@@ -84,11 +84,13 @@ Nu när du har innehåll på arbetsytan är du redo att paketera det i en mallap
     - Applogotyp (filen får vara max 45 kB, den ska ha bildförhållandet 1:1 och formaten .png, .jpg och .jpeg stöds)
     - Appens temafärg
 
-    **Innehåll**
+    **Navigering**
 
-    **Applandningssida:** Definiera en rapport eller instrumentpanel som ska vara appens landningssida. Med en landningssida får användaren rätt intryck av appen:
+    Aktivera **Nytt navigeringsverktyg** där du kan definiera det vänstra navigeringsfönstret i appen (se [Utforma navigeringsfunktionen](service-create-distribute-apps.md#design-the-navigation-experience) i den här artikeln för mer information).
 
-    ![Innehåll](media/service-template-apps-create/power-bi-create-content.png)
+   ![Ange landningssida för appen](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+    
+    **Applandningssida:** Om du bestämmer dig för att välja bort navigeringsverktyget har du alternativet att välja applandningssidan. Ange en rapport eller instrumentpanel som ska vara landningssida för din app. Använd en landningssida som ger rätt intryck.
 
     **Kontroll**
 
@@ -107,7 +109,6 @@ Nu när du har innehåll på arbetsytan är du redo att paketera det i en mallap
     - **Värde**: parameterns standardvärde.
     - **Krävs**: ange det här om den som installerar måste ange ett användarspecifikt värde.
     - **Lås**: låsning förhindrar att installationsprogrammet uppdaterar en parameter.
-    - **Statisk**: aktivera om appen *endast* innehåller exempeldata. När du väljer **Statisk** uppmanas inte användaren att ansluta någon datakälla i installationsguiden.
 
     **Åtkomst**: under testfasen kan du avgöra vilka personer i organisationen som ska kunna installera och testa appen. Oroa dig inte, du kan alltid gå tillbaka och ändra de här inställningarna senare (inställningarna påverkar inte åtkomsten till den distribuerade mallappen).
 

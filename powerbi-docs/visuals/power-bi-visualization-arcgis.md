@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 74c4468cbb764d8bd7720845939b3b7fbdf66b06
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: e001d35761eb7918aab2c427c3400df526e4dbc0
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299455"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192341"
 ---
-# <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kartor i Power BI-tjänsten och Power BI Desktop från Esri
+# <a name="arcgis-maps-in-power-bi-desktop-by-esri"></a>ArcGIS-kartor i Power BI Desktop från Esri
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 De här självstudierna har skrivits utifrån en person som skapar en ArcGIS-karta. När en skapare delar en ArcGIS-karta med en kollega, kan kollegan visa och interagera med kartan men inte spara några ändringar. Mer information om hur du visar en ArcGIS-karta finns i [Interagera med ArcGIS-kartor](power-bi-visualizations-arcgis.md).
 
 Kombinationen av ArcGIS-kartor och Power BI tar mappningen längre än till bara presentation av punkter på en karta och till en helt ny nivå. Välj mellan grundläggande kartor, platstyper, teman, symbolformat och referensskikt för att skapa fantastiska informativa kartvisualiseringar. Kombinationen av auktoritära dataskikt på en karta med spatial analys ger en djupare förståelse av visualiseringens data.
@@ -31,10 +34,10 @@ Kombinationen av ArcGIS-kartor och Power BI tar mappningen längre än till bara
 
 I exemplet nedan används en mörkgrå arbetsyta för att visa regional försäljning som en termisk karta mot ett demografiskt skikt för den disponibla medianinkomsten 2016. Som du kommer märka när du läser vidare ger användningen av ArcGIS-kartor tillgång till nästan obegränsad utökad mappningskapacitet, demografiska data och även mer övertygande kartvisualiseringar så att du kan förmedla ditt budskap på bästa sätt.
 
-![](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
+![introduktionsbild av arcgis](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
 
 > [!TIP]
-> Besök [Esris sida om Power BI](https://www.esri.com/powerbi) för att titta närmare på våra många exempel och läsa kundutlåtanden. Gå sedan till Esris [startsida för att komma igång med ArcGIS Maps för Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+> Besök [Esris sida om Power BI](https://www.esri.com/powerbi) för att visa de många exemplen eller läsa kundutlåtanden. Gå sedan till Esris [startsida för att komma igång med ArcGIS Maps för Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
 
 ## <a name="user-consent"></a>Användargodkännande
 ArcGIS Maps for Power BI tillhandahålls av Esri (www.esri.com). Din användning av ArcGIS Maps för Power BI är föremål för Esris villkor och sekretesspolicy. Power BI-användare som vill använda de visuella objekten i ArcGIS Maps för Power BI, måste ge sitt samtycke i dialogrutan för medgivande.
@@ -49,30 +52,35 @@ ArcGIS Maps for Power BI tillhandahålls av Esri (www.esri.com). Din användning
 
 <br/>
 
-## <a name="enable-arcgis-map"></a>Aktivera en ArcGIS-karta
-ArcGIS-kartor är för närvarande tillgängliga i Power BI-tjänsten, Power BI Desktop och Power BI Mobile. Den här artikeln innehåller instruktioner för tjänsten och för Desktop.
 
-### <a name="enable-the-arcgis-map-in-power-bi-service-apppowerbicom"></a>Aktivera en ArcGIS-karta ***i Power BI-tjänsten (app.powerbi.com)***
-De här självstudierna använder sig av [Exempel på detaljhandelsanalys](../sample-retail-analysis.md). Så här aktiverar du **ArcGIS Maps för Power BI**:
+### <a name="enable-the-arcgis-map-in-power-bi-desktop-apppowerbicom"></a>Aktivera en ArcGIS-karta ***i Power BI Desktop (app.powerbi.com)***
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix
+). Så här aktiverar du **ArcGIS Maps för Power BI**:
 
-1. Välj kugghjulsikonen från den översta högra delen av menyraden och öppna **Inställningar**
+1. Välj **Arkiv** \> **Öppna** uppe till vänster på menyraden
    
-    ![](media/power-bi-visualization-arcgis/power-bi-settings.png)
-2. Markera kryssrutan **ArcGIS Maps för Power BI**. Du måste starta om Power BI när du har gjort valet.
+2. Leta reda på **PBIX-filen Exempel på detaljhandelsanalys** som sparats på den lokala datorn.
+
+1. Öppna **Exempel på detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
    
-    ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Öppna en rapport i [Redigeringsvy](../consumer/end-user-reading-view.md) och välj ArcGIS Maps för Power BI-ikonen från panelen Visualiseringar.
+3. Välj ArcGIS Maps för Power BI-ikonen från panelen Visualiseringar.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
+    ![visualiseringsfönster för arcgis maps](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)
 4. Power BI lägger till en tom ArcGIS-kartmall på rapportarbetsytan.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-placeholder2new.png)
+   ![platshållare för arcgis-visualisering](media/power-bi-visualization-arcgis/power-bi-esri-placeholder2new.png)
 
 <br/>
 
 ## <a name="create-an-arcgis-map-visual"></a>Skapa ett visuellt objekt med ArcGIS Maps
-Titta på när Will skapar några olika ArcGIS-kartvisualiseringar och följ sedan anvisningarna nedan för att prova själv med hjälp [Exempel på detaljhandelsanalys](../sample-datasets.md).
-
+Titta på när Will skapar några olika ArcGIS-kartvisualiseringar och följ sedan anvisningarna nedan för att prova själv med hjälp av [PBIX-filen Exempel på detaljhandelsanalys](../sample-datasets.md).
+   > [!NOTE]
+   > Den här videon använder en äldre version av Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
 1. På panelen **Fält** drar du ett datafält till bucketerna **Plats** eller **Latitud** och/eller **Longitud**. I det här exemplet använder vi **Butik > Stad**.
@@ -82,28 +90,28 @@ Titta på när Will skapar några olika ArcGIS-kartvisualiseringar och följ sed
    > 
    > 
    
-    ![](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
-2. Omvandla visualiseringen till en ArcGIS-karta genom att välja mallen från panelen Visualiseringar![](media/power-bi-visualization-arcgis/power-bi-arcgis-template.png).
+    ![fönstret arcgis-fält](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
+
 3. Dra ett mått till bucketen **Storlek** från panelen **Fält** för att justera hur data visas. I det här exemplet använder vi **Försäljning > Last Year Sales (Förra årets försäljning)** .
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
+    ![esri-punktkarta, visualisering](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>Inställningar och formatering för ArcGIS-kartor
 Så här gör du för att få åtkomst till formateringsfunktionerna i **ArcGIS Maps för Power BI**:
 
 1. Du kan få åtkomst till ytterligare funktioner genom att välja ellipsen i det övre högra hörnet av visualiseringen och välja **Redigera**.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
+   ![arcgis-redigeringsfönster](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
    Tillgängliga funktioner visas överst i visualiseringen. När du väljer en funktion öppnas ett åtgärdsfönster med detaljerade alternativ.<br/>
    
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
+   ![esri-funktioner, fönster](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
    
    > [!NOTE]
    > Mer information om inställningarna och funktionerna finns i **Detaljerad dokumentation** nedan.
    > 
    > 
-2. Om du vill gå tillbaka till rapporten väljer du **Tillbaka till rapporten** från det övre vänstra hörnet av din rapportarbetsyta.
+
 
 <br/>
 
@@ -116,19 +124,19 @@ Fyra grundläggande kartor tillhandahålls: Dark Gray Canvas (Mörkgrå arbetsyt
 
 Om du vill använda en grundläggande karta väljer du den i åtgärdsfönstret.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
+![esri-baskartor, visuellt objekt](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
 
 ### <a name="location-type"></a>Platstyp
 ArgGIS Maps för Power BI identifierar automatiskt det bästa sättet att visa data på kartan. Den väljer mellan Punkter och Gränser. Med alternativen för Platstyp kan du finjustera de här valen.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
+![esri-platstyper, exempel](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
 
 **Gränser** fungerar bara om dina data innehåller geografiska standardvärden. Esri räknat automatiskt ut den form som ska visas på kartan. Geografiska standardvärden är länder, provinser, postnummer och så vidare. Men precis som med geokodning kan det hända att Power BI inte kan identifiera att fältet ska vara en gräns som standard eller så kanske det inte har någon gräns för dina data.  
 
 ### <a name="map-theme"></a>Map theme (Karttema)
-Det finns fyra kartteman. Temana för Location Only (Endast plats) och Storlek väljs automatiskt baserat på de fält som du binder till platsen och lägger till i bucketen **Storlek** i panelen Fält i Power BI. Vi använder för närvarande **Storlek**, så vi ändrar till **Termisk karta**.  
+Det finns fyra kartteman. Temana för Location Only (Endast plats) och Storlek väljs automatiskt baserat på de fält som du binder till platsen och lägger till i bucketen **Storlek** i panelen Fält i Power BI. Vi använder **Storlek**, så vi ändrar till **Termisk karta**. Kom ihåg bara att inaktivera **Termisk karta** innan du går vidare till nästa steg.  
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
+![esri-karttema, exempel](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
 
 <table>
 <tr><th>Tema</th><th>Beskrivning</th>
@@ -152,9 +160,9 @@ Det finns fyra kartteman. Temana för Location Only (Endast plats) och Storlek v
 
 
 ### <a name="symbol-style"></a>Symbol style (Symbolformat)
-Med olika symbolformat kan du fininställa hur data ska visas på kartan. Symbol style (Symbolformat) är sammanhangsberoende baserat på vilken platstyp och vilket karttema som har valts. Exemplet nedan visar Platstyp inställt på **Storlek** med flera justeringar av genomskinlighet, stil och storlek.
+Med olika symbolformat kan du fininställa hur data ska visas på kartan. Symbol style (Symbolformat) är sammanhangsberoende baserat på vilken platstyp och vilket karttema som har valts. Exemplet nedan visar Karttyp inställt på **Storlek** med flera justeringar av genomskinlighet, stil och storlek. 
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
+![esri-symbolformat, exempel](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 
 ### <a name="pins"></a>Stift
 Du kan uppmärksamma punkter på kartan genom att lägga till stift.  
@@ -162,21 +170,21 @@ Du kan uppmärksamma punkter på kartan genom att lägga till stift.
 1. Välj fliken **Stift**.
 2. Ange nyckelord (till exempel adresser, platser och orienteringspunkter) i sökrutan och välj i listrutan. En symbol som visas på kartan och kartan zoomar automatiskt in på platsen. Sökresultaten sparas som platskort på panelen Stift. Du kan spara upp till 10 platskort.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin-arcgis-newer.png)
+   ![exempel på arcgis-kartstift](media/power-bi-visualization-arcgis/power-bi-pin-arcgis-newer.png)
 3. Power BI lägger till ett stift till platsen och du kan ändra färg på stiftet.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin-color-new.png)
+   ![exempel på stiftfärg](media/power-bi-visualization-arcgis/power-bi-pin-color-new.png)
 4. Lägg till och ta bort stift.
    
-   ![](media/power-bi-visualization-arcgis/power-bi-pin3.png)
+   ![exempel på att lägga till och ta bort stift](media/power-bi-visualization-arcgis/power-bi-pin3.png)
 
-### <a name="drive-time"></a>Drive time (Körtid)
+### <a name="drive-time"></a>Körtid
 På panelen Drive time (Körtid) kan du välja en plats och sedan avgöra vilka andra kartfunktioner som finns inom en angiven radie eller körtid.  
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
+    ![exempel på körtid](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Välj fliken **Drive time (Körtid)** och välj verktyget för ett eller flera val. Välj stiftet för Washington D.C.
 
-   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+   ![exempel på ett stiftval](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > Det är lättare att välja en plats om du zoomar in på kartan (med hjälp av +-ikonen).
@@ -184,10 +192,11 @@ På panelen Drive time (Körtid) kan du välja en plats och sedan avgöra vilka 
    > 
 2. Föreställ dig att du flyger till Washington D.C. på ett par dagar och vill ta reda på vilka butiker som finns inom ett rimligt köravstånd. Ändra sökområdet till **Radie** och avståndet till **50** engelska mil och välj OK.    
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+    ![körtidsradie](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+
 3. Radien visas i lila. Välj valfri plats för att visa detaljerad information om den. Du kan också formatera radien genom att ändra färgen och konturen.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
+    ![exempel på radieformat med färg och kontur](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 ### <a name="reference-layer"></a>Referensskikt
 #### <a name="reference-layer---demographics"></a>Referensskikt – demografi
@@ -196,10 +205,10 @@ ArcGIS Maps för Power BI tillhandahåller ett urval av demografiska skikt som h
 1. Välj fliken **Referensskikt** och välj **Demografi**.
 2. Varje skikt i listan har en kryssruta. Markera med en bock för att lägga till skiktet på kartan.  I det här exemplet har vi lagt till den genomsnittliga hushållsinkomsten.<br/>
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-demographic.png)
+    ![exempel på referensskikt, demografi](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-demographic.png)
 3. Varje skikt är också interaktivt. På samma sätt som du kan hovra över en bubbla för att visa information, kan du här klicka på ett skuggat område på kartan för att se ytterligare information.<br/>
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-details.png)
+    ![exempel på referensskikt, information](media/power-bi-visualization-arcgis/power-bi-esri-reference-layer-details.png)
 
 #### <a name="reference-layer---arcgis"></a>Referensskikt – ArcGIS
 ArcGIS Online gör det möjligt för organisationer att publicera offentliga webbplatskartor. Dessutom ger Esri tillgång till en granskad uppsättning webbkartor via Living Atlas. På ArcGIS-fliken kan du söka igenom alla offentliga webbkartor eller Living Atlas-kartor och lägga till dem på kartan som referensskikt.
@@ -207,23 +216,29 @@ ArcGIS Online gör det möjligt för organisationer att publicera offentliga web
 1. Välj fliken **Referensskikt** och välj **ArcGIS**.
 2. Ange sökorden och välj sedan ett kartskikt. I det här exemplet har vi valt amerikanska kongressdistrikt.
    
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
+    ![esri-demografi, exempel](media/power-bi-visualization-arcgis/power-bi-reference-details.png)
 3. Om du vill se information väljer du ett skuggat område för att öppna *Välj från referensskikt*: Använd verktyget för val av referensskikt för att markera gränser eller objekt på referensskiktet.
 
 <br/>
 
 ## <a name="selecting-data-points"></a>Välja datapunkter
-Du finns tre lägen för att välja datapunkter i ArcGIS Maps för Power BI.
+Med ArcGIS Maps for Power BI kan du med fem vallägen välja dina data exakt och snabbt.
 
-Du ändrar läge med det här reglaget:
+Ändra valläge genom att hovra markören över ikonen verktyget för ett val som visas i bilden nedan. Detta visar även det dolda fältet att visa ytterligare verktyg:
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
+![esri-val, verktyg](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png)Välj enskilda datapunkter.
+Varje verktyg har en unik roll i att du kan välja dina data: 
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png)Ritar en rektangel på kartan och väljer de inneslutna datapunkterna.
+![esri-val, ett](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Välj enskilda datapunkter.
 
-![](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Medför att gränser eller polygoner inom referensskikt kan användas för att markera inneslutna datapunkter.
+![esri-val, remsa](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Ritar en rektangel på kartan och väljer de inneslutna datapunkterna.
+
+![esri-val, referensskikt](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Medför att gränser eller polygoner inom referensskikt kan användas för att markera inneslutna datapunkter.
+
+![esri-val, buffertskikt](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-buffer.png) Gör att du kan välja data med ett buffertskikt.
+
+![esri-val, liknande val](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-similar.png) Gör att du kan välja datapunkter som liknar varandra.
 
 > [!NOTE]
 > Du kan välja högst 250 datapunkter i taget.
@@ -242,21 +257,20 @@ Om du har förslag på en förbättring kan du skicka det till [Power BI:s idél
 <br/>
 
 ## <a name="managing-use-of-arcgis-maps-for-power-bi-within-your-organization"></a>Hantera användningen av ArcGIS Maps för Power BI i din organisation
-Power BI gör det möjligt för användare, klientadministratörer och IT-administratörer att avgöra om ArcGIS Maps för Power BI ska användas.
+Power BI gör det möjligt för användare, klientadministratörer och IT-administratörer att avgöra om ArcGIS Maps för Power BI ska användas. Nedan hittar du stegen som varje roll kan vidta för att hantera användningen av ArcGis Maps. 
 
-**Användaralternativ** I Power BI Desktop kan användare sluta använda ArcGIS Maps för Power BI genom att inaktivera det på säkerhetsfliken i **Alternativ**. När ArcGIS Maps är inaktiverat läses det inte in som standard.
+### <a name="user-options"></a>Användaralternativ
+I Power BI Desktop kan användare sluta använda ArcGIS Maps för Power BI genom att inaktivera det på säkerhetsfliken i **Arkiv** > **Alternativ och inställningar** och välj sedan **Alternativ** > **Säkerhet**. När ArcGIS Maps är inaktiverat läses det inte in som standard.
 
-![](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
+![dialogruta för desktop-säkerhet, exempel](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
 
-I Power BI-tjänsten kan användare sluta använda ArcGIS Maps för Power BI genom att inaktivera det på ArcGIS Maps för Power BI-fliken i användarinställningarna. När ArcGIS Maps är inaktiverat läses det inte in som standard.
+### <a name="tenant-admin-options"></a>Alternativ för klientadministratörer
+På PowerBI.com kan klientadministratörer förhindra alla klientanvändare från att använda ArcGIS Maps för Power BI genom att inaktivera alternativet i **Inställningar** > **Administratörsportalen** > **Klientinställningar**. När det händer visas inte längre ArcGIS Maps för Power BI-ikonen på panelen Visualiseringar i Power BI.
 
-![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
+![arcgis-administratörsportal, exempel](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
 
-**Alternativ för klientadministratörer** På PowerBI.com kan klientadministratörer förhindra alla klientanvändare från att använda ArcGIS Maps för Power BI genom att inaktivera det. När det händer visas inte längre ArcGIS Maps för Power BI-ikonen på panelen Visualiseringar i Power BI.
-
-![](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
-
-**Alternativ för IT-administratörer** Power BI Desktop stöder användning av **Grupprincip** för att inaktivera ArcGIS Maps för Power BI på en organisations distribuerade datorer.
+### <a name="it-administrator-options"></a>Alternativ för IT-administratörer
+Power BI Desktop stöder användning av **Grupprincip** för att inaktivera ArcGIS Maps för Power BI på en organisations distribuerade datorer.
 
 <table>
 <tr><th>Attribut</th><th>Värde</th>

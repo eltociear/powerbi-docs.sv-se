@@ -3,20 +3,18 @@ title: Översikt över bokmärken i Power BI-tjänstrapporter
 description: Dokumentationsöversikt för Power BI frågor och svar frågor med naturligt språk.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2019
+ms.date: 09/22/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 55fafb00135908dc4f82151b96ed04d2cf2568da
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 0b4da978687afbafcc7f0d48b6df220b240a507f
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608316"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207600"
 ---
 # <a name="what-are-bookmarks"></a>Vad är bokmärken?
 Bokmärken registrerar den aktuella konfigurerade vyn för en rapportsida, inklusive filter, utsnitt och tillståndet för visuella objekt. När du väljer ett bokmärke går Power BI tillbaka till den vyn. Det finns två typer av bokmärken – sådana som du skapar själv och sådana som skapas av *rapportdesigners*.
@@ -26,15 +24,15 @@ Bokmärken har många användningsområden. Anta att du upptäcker en intressant
 
 Du kan även skapa en samling bokmärken, ordna dem i valfri ordning och sedan gå igenom varje bokmärke i en presentation och framhäva en serie med insikter som du vill förmedla.  
 
-![Visa Bokmärkesfönstret genom att välja det i menyfliksområdet.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
+![Visa Bokmärkesfönstret genom att välja det i menyfliksområdet.](media/end-user-bookmarks/power-bi-select-bookmark.png)
 
-## <a name="using-bookmarks"></a>Använda bokmärken
-Öppna Bokmärkespanelen genom att välja **Bokmärken** från menyraden. Om du vill återgå till den ursprungligen publicerade vyn för rapporten väljer du **Återställ till standard**.
+## <a name="open-bookmarks"></a>Öppna bokmärken
+Du kan öppna Bokmärkesfönstret genom att välja **Bokmärken** > **Visa flera bokmärken** på menyraden. Om du vill återgå till den ursprungligen publicerade vyn för rapporten väljer du **Återställ till standard**.
 
 ### <a name="report-bookmarks"></a>Rapportbokmärken
-Om *rapportdesignern* inkluderade rapportbokmärken finns de under rubriken **Rapportbokmärken**. 
+Om *rapportdesignern* inkluderade rapportbokmärken finns de under rubriken **Rapportbokmärken**. Den här rapporten har två bokmärken, B1 och B2. 
 
-![Visa rapportbokmärken.](media/end-user-bookmarks/power-bi-report-bookmark.png)
+![Visa rapportbokmärken.](media/end-user-bookmarks/power-bi-report.png)
 
 Välj ett bokmärke för att ändra till den rapportvyn. 
 
@@ -55,13 +53,13 @@ När du skapar ett bokmärke sparas följande element med bokmärket:
 
 Konfigurera en rapport som du vill att den ska visas i bokmärket. När du har utformat din rapportsida och visuella objekt väljer du **Lägg till** från fönstret **Bokmärken** om du vill lägga till ett bokmärke. I det här exemplet har vi lagt till vissa filter för region och datum. 
 
-![Lägg till personliga bokmärken.](media/end-user-bookmarks/power-bi-add-personal.png)
+![Lägg till personliga bokmärken.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
 
-**Power BI** skapar ett bokmärke och ger det ett allmänt namn eller ett namn som du anger. Du kan *byta namn på*, *ta bort* eller *uppdatera* ett bokmärke genom att välja ellipsen intill bokmärkets namn och sedan välja en åtgärd på den meny som visas.
+**Power BI** skapar ett personligt bokmärke och ger det ett allmänt namn eller ett namn som du anger. Du kan *byta namn på*, *ta bort* eller *uppdatera* ditt bokmärke genom att välja ellipsen intill bokmärkets namn och sedan välja en åtgärd på den meny som visas.
 
 När du har ett bokmärke kan du visa det genom att välja bokmärket i fönstret **Bokmärken**. 
 
-![Lägg till personliga bokmärken.](media/end-user-bookmarks/power-bi-personal-bookmark.png)
+![Lägg till personliga bokmärken.](media/end-user-bookmarks/power-bi-bookmark-west.png)
 
 
 <!--
@@ -81,11 +79,11 @@ Om du vill presentera eller visa bokmärken i ordning väljer du **Visa** i fön
 
 När du är i **visnings**läget finns det några funktioner att observera:
 
-1. Namnet på bokmärket visas i namnlisten för bokmärket, som visas längst ned i arbetsytan.
-2. Namnlistan för bokmärket har pilar som låter dig flytta till nästa eller föregående bokmärke.
-3. Du kan avsluta **Visnings**läget genom att välja **Avsluta** från rutan **Bokmärken** eller genom att välja **X** som finns i namnlisten för bokmärket. 
+- Namnet på bokmärket visas i namnlisten för bokmärket, som visas längst ned i arbetsytan.
+- Namnlistan för bokmärket har pilar som låter dig flytta till nästa eller föregående bokmärke.
+- Du kan avsluta **Visnings**läget genom att välja **Avsluta** från rutan **Bokmärken** eller genom att välja **X** som finns i namnlisten för bokmärket.
 
-![Bildspel med bokmärken](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
+![Bildspel med bokmärken](media/end-user-bookmarks/power-bi-slideshow.png)
 
 När du är i **Visningsläget** kan du stänga fönstret **Bokmärken** (genom att klicka på X i det här fönstret) för att ge mer utrymme till presentationen. Medan du är i **Visningsläget** är alla visuella objekt interaktiva och är tillgängliga för korsmarkering, precis som de annars skulle vara när du interagerar med dem. 
 
@@ -154,7 +152,6 @@ Det finns några begränsningar och saker du bör tänka på för den här versi
 
 * De flesta anpassade visuella objekt bör fungera väl med bokmärkning. Om du stöter på problem med bokmärkning och ett anpassat visuell objekt, kontaktar du den person som skapat det anpassade visuella objektet och ber dem att lägga till stöd för bokmärken till sina visuella objekt. 
 * Om du lägger till ett visuellt objekt på en rapportsida efter att du har skapat ett bokmärke kommer det visuella objektet att visas i sitt standardläge. Det innebär att om du lägger till ett utsnitt på en sida där du tidigare skapade bokmärken så fungerar utsnittet i standardtillståndet.
-* Flytta runt visuella objekt när ett bokmärke har skapats visas i bokmärket. 
 * Generellt påverkas inte dina bokmärken om *rapportdesignern* uppdaterar eller publicerar rapporten på nytt. Men om designern gör större ändringar i rapporten, till exempel att ta bort fält som används av ett bokmärke, visas ett felmeddelande nästa gång du försöker öppna det bokmärket. 
 
 <!--

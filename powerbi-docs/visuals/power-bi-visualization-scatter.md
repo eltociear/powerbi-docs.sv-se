@@ -11,19 +11,24 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8222194359077cb0d88286a33d1c9b2a05f6bd80
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: d776425d4c19070c00658cbd588c5421d22a0057
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390893"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193029"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagram, bubbeldiagram och punktritningsdiagram i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Ett punktdiagram har alltid två värdeaxlar som visar en uppsättning numeriska data längs en vågrät axel och en annan uppsättning numeriska värden längs en lodrät axel. Diagrammet visar punkter i skärningspunkten för ett numeriskt X- och Y-värde och kombinerar dessa värden till separata datapunkter. Power BI kan distribuera dessa datapunkter jämnt eller ojämnt på den vågräta axeln. Det beror på de data som diagrammet representerar.
 
 Titta på det här videoklippet och se Skapa ett punktdiagram och följ stegen nedan för att skapa en egen.
-
+   > [!NOTE]
+   > Den här videon använder en äldre version av Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 Du kan ange antalet datapunkter upp till 10 000.  
@@ -65,7 +70,7 @@ Förutom vad punktdiagram kan hjälpa till med, är även bubbeldiagram ett bra 
 
 ### <a name="dot-plot-charts"></a>Punktritningsdiagram
 
-Punktritningsdiagram liknar bubbeldiagram och punktdiagram, med den skillnaden att du kan rita numeriska data eller kategoridata utmed X-axeln.
+Punktritningsdiagram liknar bubbeldiagram och punktdiagram men används istället till att rita numeriska data eller kategoridata utmed X-axeln.
 
 ![Skärmbild av ett punktritningsdiagram.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
@@ -73,17 +78,20 @@ De är ett bra val om du vill inkludera kategoridata utmed X-axeln.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-* Power BI-tjänsten
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Rapporten Exempel på detaljhandelsanalys
+1. Välj **Arkiv** > **Öppna** uppe till vänster på menyraden
+   
+2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelsanalys**
+
+1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
 
 ## <a name="create-a-scatter-chart"></a>Skapa ett punktdiagram
 
-Om du vill följa med loggar du in till [Power BI-tjänsten](https://app.powerbi.com) och öppnar rapporten [Exempel på detaljhandelsanalys](../sample-datasets.md) i vyn [Redigera rapport](../service-interact-with-a-report-in-editing-view.md).
-
-1. Välj ![Skärmbild av den gula plusikonen.](media/power-bi-visualization-scatter/power-bi-yellow-plus-icon.png) för att skapa en tom rapportsida.
-
-1. Välj följande fält i fönstret **Fält**:
+1. Börja på en tom rapportsida och välj följande fält i fönstret **Fält**:
 
     * **Försäljning** > **Försäljning efter kvm**
 
@@ -113,11 +121,11 @@ Nu ska vi lägga till en tredje dimension.
 
 1. Håll muspekaren över en bubbla. Storleken på bubblan reflekterar **försäljning detta år**.
 
-    ![visning av knappbeskrivningar](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![visning av knappbeskrivningar](media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png)
 
 1. Om du vill ange antalet datapunkter som ska visas i bubbeldiagrammet går du till **Format**-avsnittet i fönstret **Visualiseringar**, expanderar **Allmänt** och justerar **Datavolym**.
 
-    ![Skärmbild av visualiseringsfönstret med formatikonen och listrutan Allmänt med alternativet Datavolym framhävt.](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png)
+    ![Skärmbild av visualiseringsfönstret med formatikonen och listrutan Allmänt med alternativet Datavolym framhävt.](media/power-bi-visualization-scatter/pbi-scatter-data-volume.png)
 
     Du kan ange en största datavolym på upp till 10 000. För högre volymer föreslår vi att du först testar så att prestanda inte försämras.
 
@@ -128,7 +136,7 @@ Nu ska vi lägga till en tredje dimension.
 
     Överväg att lägga till markörformer på varje linje för att [förbättra tillgängligheten](../desktop-accessibility.md). Välj markörform genom att expandera kortet **Former** och välja **Markörform** och sedan välja en form.
 
-    ![Skärmbild av listrutan Former med alternativen för Markörform framhävda.](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+    ![Skärmbild av listrutan Former med alternativen för Markörform framhävda.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
     Du kan ändra markörformen till en romb, triangel eller kvadrat. Med olika markörformer för varje linje är det enklare för rapportanvändare att skilja linjer (eller områden) från varandra.
 
@@ -146,15 +154,15 @@ Ta bort **försäljning per kvm** från fönstret **X-axel** och ersätt det med
 
 Har du skapat ett punktdiagram där du bara ser en datapunkt som aggregerar alla värdena på X- och Y-axlarna?  Eller samlar diagrammet alla värden längs en enda vågrät eller lodrät linje?
 
-![Skärmbild av ett punktdiagram med en datapunkt.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
+![Skärmbild av ett punktdiagram med en datapunkt.](media/power-bi-visualization-scatter/pbi-scatter-tshoot1.png)
 
 Lös problemet genom att lägga till ett fält i området **Information** som talar om för Power BI hur värdena ska grupperas. Fältet måste vara unikt för varje punkt som du vill rita. Ett enkelt radnummer eller ID-fält räcker bra.
 
-![Skärmbild av ett punktdiagram med RowNum tillagt i området Information.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
+![Skärmbild av ett punktdiagram med RowNum tillagt i området Information.](media/power-bi-visualization-scatter/pbi-scatter-tshoot.png)
 
 Om du inte har detta i dina data, skapa ett fält som tillsammans sammanfogar X- och Y-värden till något unikt för varje punkt:
 
-![Skärmbild av ett punktdiagram med TempTime tillagt i området Information.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
+![Skärmbild av ett punktdiagram med TempTime tillagt i området Information.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
 Skapa ett nytt fält genom att [använda Power BI Desktop frågeredigeraren för att lägga till en indexkolumn](../desktop-add-custom-column.md) i din datauppsättning. Lägg sedan till den här kolumnen till området **Information** i din visualisering.
 

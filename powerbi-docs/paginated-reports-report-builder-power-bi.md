@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
-ms.openlocfilehash: 9e4d5285b48739e9f16fbe503736c20cb5524e5d
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.date: 09/24/2019
+ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985727"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305686"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Vad är sidnumrerade rapporter i Power BI Premium?
 
@@ -36,14 +36,13 @@ Sidnumrerade rapporter har ett eget designverktyg, Power BI Report Builder. Det 
 
 En enskild sidnumrerad rapport kan ha flera olika datakällor. Den har inte, till skillnad från Power BI-rapporter, en underliggande datamodell. För denna första version av sidnumrerade rapporter i Power BI-tjänsten skapar du inbäddade datakällor och datamängder i själva rapporten. Du kan inte använda delade datakällor eller delade datamängder för tillfället. Du skapar rapporter i Report Builder på din lokala dator. Om en rapport ansluter till lokala data när du har överfört rapporten till Power BI-tjänsten måste du skapa en gateway och omdirigera dataanslutningen. Här är de datakällor du kan ansluta till för närvarande:
 
-- Azure SQL Database och Data Warehouse
+- Azure SQL Database och Data Warehouse (via Basic och oAuth)
 - Azure Analysis Services (via SSO)
 - SQL Server via en gateway
 - SQL Server Analysis Services via en gateway
-- Power BI Premium Datasets
+- Power BI-datauppsättningar
 - Oracle
 - Teradata
-- Ytterligare källor allt eftersom de läggs till
 
 ## <a name="design-your-report"></a>Utforma din rapport  
 
@@ -79,10 +78,10 @@ Läs mer i artikeln [Skapa en prenumeration åt dig själv och andra på en sidn
 Här följer några andra funktioner som inte stöds i den första versionen:
 
 - Fästa rapportsidor eller visuella objekt på Power BI-instrumentpaneler. Du kan fortfarande fästa visualiseringar på en Power BI-instrumentpanel från en lokal sidnumrerad rapport på en Power BI-rapportserver eller Reporting Services-rapportserver. Se [Fäst Reporting Services-objekt till Power BI-instrumentpaneler](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) för mer information.
-- Interaktiva funktioner som dokumentkartor och Visa/Dölj-knappar.
-- Underrapporter och detaljerade rapporter.
+- Dokumentöversikter.
+- Underrapporter och detaljerade rapporter.  Men du kan överväga att använda URL-parametrar med sidnumrerade rapporter för att åstadkomma parametrar med scenarier med visning av detaljerad information.
 - Delade datakällor och delade datamängder.
-- Visuella objekt från Power BI-rapporter.
+
  
 ## <a name="next-steps"></a>Nästa steg
 

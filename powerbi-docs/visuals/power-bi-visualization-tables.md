@@ -11,18 +11,20 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 857db3240385e9bf1b4e0416cc1200d1a029d73e
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867189"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193465"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter och instrumentpaneler
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 En tabell är ett rutnät som innehåller relaterade data i en logisk serie med rader och kolumner. Det kan också innehålla rubriker och en rad för summor. Tabeller fungerar bra med kvantitativa jämförelser där du tittar på många värden för en enskild kategori. I den här tabellen visas till exempel fem olika mått för **Kategori**.
 
-![Skärmbild av en tabell som visar fem olika mått för Kategori.](media/power-bi-visualization-tables/table.png)
+![Skärmbild av en tabell som visar fem olika mått för Kategori.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
 Skapa tabeller i rapporter och korsmarkera flera element i tabellen med andra visuella objekt på samma rapportsida. Du kan välja rader, kolumner och även enskilda celler och korsmarkeringar. Du kan också kopiera och klistra in enskilda celler och markeringar av flera celler i andra program.
 
@@ -36,25 +38,23 @@ Tabeller är ett bra alternativ:
 
 * för att visa numeriska data efter kategorier.
 
-## <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisite"></a>Förutsättning
 
-* Power BI-tjänsten eller Power BI Desktop
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Rapporten Exempel på detaljhandelsanalys
+1. Välj **Arkiv** > **Öppna** uppe till vänster på menyraden
+   
+2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelanalys**
 
-## <a name="get-the-retail-analysis-sample-report"></a>Hämta rapporten Exempel på detaljhandelsanalys
+1. Öppna **PBIX-filen Exempel för detaljhandelanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-Dessa anvisningar använder sig av Exempel på detaljhandelsanalys. För att skapa en visualisering krävs behörighet att redigera datauppsättningen och rapporten. Som tur är kan alla Power BI-exemplen redigeras. Om någon delar en rapport med dig, kan du inte skapa visualiseringar i rapporter. Om du vill följa med, kan du hämta [rapporten Exempel på detaljhandelsanalys](../sample-datasets.md).
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
 
-När du har hämtat datamängden **Exempel på detaljhandelsanalys** kan du sätta igång.
 
 ## <a name="create-a-table"></a>Skapa en tabell
 
 Du ska skapa tabellen som visas i början av artikeln för att visa försäljningsvärden efter objektskategori.
 
-1. Från **Min arbetsyta** väljer du **Datamängder** > **Skapa en rapport**.
-
-    ![Skärmbild av Datamängder > Skapa en rapport.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. I fönstret **Fält** väljer du **Objekt** > **Kategori**.
 
@@ -66,11 +66,10 @@ Du ska skapa tabellen som visas i början av artikeln för att visa försäljnin
 
 1. Välj sedan **Försäljning > Försäljning detta år** och välj alla tre alternativen: **Värde**, **Mål** och **Status**.
 
-1. Identifiera området **Värden** i fönstret **Visualiseringar** och dra värdena tills ordningen på diagramkolumnerna matchar den första bilden på den här sidan. Området **Värden** bör se ut så här:
+1. Identifiera området **Värden** i fönstret **Visualiseringar** och markera värdena tills ordningen på diagramkolumnerna matchar den första bilden på den här sidan. Dra värdena i området vid behov. Området **Värden** bör se ut så här:
 
     ![Värden](media/power-bi-visualization-tables/power-bi-table2.png)
 
-1. Fäst tabellen på instrumentpanelen genom att välja häftstift-ikonen ![häftstift](media/power-bi-visualization-tables/pbi_pintile.png) i det övre högra hörnet på visualiseringen.
 
 ## <a name="format-the-table"></a>Formatera tabellen
 
@@ -170,10 +169,6 @@ För att kopiera fler än en cell:
 1. Välj **Kopiera** > **Kopiera markering**.
 
     ![kopieringsalternativ](media/power-bi-visualization-tables/power-bi-copy-selection.png)
-
-    Kopian inkluderar kolumn- och radrubrikerna.
-
-    ![klistra in i Excel](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Justera kolumnbredden i en tabell
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1622e06cd7aa394d384954b393d1e547e87df10a
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564920"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305662"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Starta om en Power BI Premium-kapacitet
 
@@ -31,7 +31,7 @@ Power BI förbättras ständigt när det gäller hur Premium-kapacitetsanvändar
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Är omstarten säker? Förlorar jag data?
 
-Alla sparade data, definitioner, rapporter och instrumentpaneler i kapaciteten förblir helt intakta efter omstart. När du startar om en kapacitet stoppas alla pågående uppdateringar och ad hoc-uppdateringar. Tjänsten försöker göra uppdateringar när kapaciteten är tillgänglig. Användare som interagerar med kapaciteten förlorar arbete som inte har sparats. De bör uppdatera sina webbläsare när omstarten har slutförts.
+Alla sparade data, definitioner, rapporter och instrumentpaneler i kapaciteten förblir helt intakta efter omstart. När du startar om en kapacitet stoppas alla pågående uppdateringar och ad hoc-uppdateringar. Tjänsten försöker uppdatera igen när kapaciteten är tillgänglig. Användare som interagerar med kapaciteten förlorar arbete som inte har sparats. De bör uppdatera sina webbläsare när omstarten har slutförts.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hur startar jag om en kapacitet?
 

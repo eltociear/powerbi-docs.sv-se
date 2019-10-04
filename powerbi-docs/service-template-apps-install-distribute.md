@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264530"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195338"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installera och distribuera mallappar i organisationen – Power BI
 
@@ -82,7 +82,7 @@ Välj den här länken i en webbläsare för att öppna AppSource filtrerat på 
    >[!NOTE]
    >Du måste begära behörighet från din administratör för att kunna installera mallappar som inte finns i AppSource. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings) för mer information.
 
-## <a name="update-and-distribute-the-app"></a>Uppdatera och distribuera appen
+## <a name="customize-and-publish-the-app"></a>Anpassa och publicera appen
 
 När du har anpassat appen för din organisation är du redo att publicera den. Stegen är desamma som för publicering av andra appar.
 
@@ -94,7 +94,7 @@ När du har anpassat appen för din organisation är du redo att publicera den. 
 
    ![Ange beskrivning och färg för appen](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. I **Innehåll** kan du välja en landningssida, antingen instrumentpanelen eller rapporten.
+3. I **Navigering** kan du använda det nya navigeringsverktyget för appen eller välja instrumentpanelen eller rapporten för landningssidan. Se [Utforma appens navigeringsfunktion](service-create-distribute-apps.md#design-the-navigation-experience) för mer information.
 
    ![Ange landningssida för appen](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
@@ -106,14 +106,31 @@ När du har anpassat appen för din organisation är du redo att publicera den. 
 
 6. När den har publicerats kan du kopiera länken och dela den med de personer som du har beviljat åtkomst till. De som du delar länken med kan också se den på fliken **Min organisation** i AppSource.
 
-## <a name="next-steps"></a>Nästa steg 
+## <a name="update-a-template-app"></a>Uppdatera en mallapp
+
+Skapare av mallappar kan släppa nya versioner av sina mallappar via AppSource eller en direktlänk. När de gör de kan du uppdatera mallappen när du ominstallerar appen med samma eller en nyare version.
+
+  >[!NOTE]
+  >När du installerar en ny version skrivs alla ändringar du har gjort av rapporter och instrumentpaneler över. Om du vill behålla dina uppdaterade rapporter och instrumentpaneler kan du spara dem med ett annat namn eller på en annan plats innan du installerar.
+
+- **Skriv över en befintlig version:** Skriver över den befintliga arbetsytan med den uppdaterade versionen av mallappen.
+
+   ![Uppdatera mallappen](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Installera på en ny arbetsyta:** Installerar en ny version av arbetsytan och appen som du måste konfigurera om
+
+### <a name="overwrite-behavior"></a>Överskrivningsfunktioner
+
+* Att skriva över uppdaterar rapporterna, instrumentpanelerna och datauppsättningen på *arbetsytan*, inte i appen. När du skriver över ändras inte appnavigeringen, konfigurationen och behörigheten.
+* När du har uppdaterat arbetsytan måste du *uppdatera appen* för att tillämpa ändringar från arbetsytan till organisationsappen.
+* Överskrivning behåller konfigurerade parametrar och autentisering. Efter uppdatering startar en automatisk uppdatering av datauppsättningen. Under den tiden visar organisationsappen, rapporter och instrumentpaneler gränssnittet för *exempeldata*.
+  ![Exempeldata](media/service-template-apps-install-distribute/power-bi-sample-data.png)
+* Vid överskrivning visas alltid exempeldata tills uppdateringen är klar. Om mallappens skapare har gjort ändringar av datauppsättningen eller parametrarna fortsätter användare av arbetsyta och appen att se gränssnittet för *exempeldata*.
+* Överskrivning tar aldrig bort *nya* rapporter eller instrumentpaneler du har lagt till på arbetsytan. De ursprungliga rapporterna och instrumentpanelerna skrivs över med ändringar från den ursprungliga skaparen.
+
+>[!IMPORTANT]
+>Kom ihåg att [uppdatera appen](#customize-and-publish-the-app) efter överskrivning för att tillämpa ändringar på rapporterna och instrumentpanelen för användarna av organisationsappen.
+
+## <a name="next-steps"></a>Nästa steg
 
 [Skapa arbetsytor med dina kollegor i Power BI](service-create-workspaces.md)
-
-
-
-
-
-￼ 
-
- 

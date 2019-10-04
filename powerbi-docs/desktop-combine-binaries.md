@@ -7,37 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f43bb105f7e17ce453e96c6eff875349efd45cb2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8a5b4c7cb484b296ccab395e18eb2b0089ffd5c7
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239633"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327826"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Kombinera filer (binära) i Power BI Desktop
-Ett kraftfullt sätt att importera data till **Power BI Desktop** är att kombinera flera filer som har samma schema i en logisk tabell. I och med versionen av **Power BI Desktop** från november 2016 (och senare versioner) har den här bekväma och populära metoden blivit ännu enklare och omfattande, vilket beskrivs i den här artikeln.
+Ett kraftfullt sätt att importera data till **Power BI Desktop** är att kombinera flera filer som har samma schema i en logisk tabell. Den här bekväma och populära metoden blivit ännu enklare och omfattande, vilket beskrivs i den här artikeln.
 
 Om du vill börja kombinera filer från samma mapp väljer du **Hämta data > Arkiv > Mapp**.
 
 ![](media/desktop-combine-binaries/combine-binaries_1.png)
 
-## <a name="previous-combine-files-binaries-behavior"></a>Beteende för tidigare kombinerade filer (binära)
-I versionen **Power BI Desktop**, kallades denna funktion **Kombinera binärfiler** före November 2016 och du kunde kombinera vissa filtyper med omvandlingen **kombinera binärfiler**, men det fanns vissa begränsningar:
 
-* Transformationer beaktades inte för varje enskild fil innan de komprimerades i en tabell. Av den anledningen var du ofta tvungen att kombinera filer och därefter filtrera ut *rubrikvärden* genom att filtrera rader som del av redigeringsprocessen.
-* Transformationen **Kombinera binärfiler** fungerade endast för *text-* eller *CSV*-filer och fungerade inte på andra filformat som stöds, till exempel Excel-arbetsböcker och JSON-filer.
-
-Kunderna har begärt en mer intuitiv användning av åtgärden **Kombinera binärfiler**, så vi har förbättrat transformationen och döpt om **kombinera filer**.
-
-## <a name="current-combine-files-behavior"></a>Det aktuella beteendet för kombinera filer
-**Power BI Desktop** hanterar nu **Kombinera filer (binära)** mer effektivt. Du startar genom att välja **Kombinera filer**, antingen från **Start**-menyfliken i **frågeredigeraren**, eller från själva kolumnen.
+## <a name="combine-files-behavior"></a>Beteende för att kombinera filer
+Du kan **kombinera filer (binärfiler)** genom att välja **kombinera filer**, på menyfliken **Start** i **Frågeredigeraren** eller i själva kolumnen.
 
 ![](media/desktop-combine-binaries/combine-binaries_2a.png)
 
-Transformeringen **kombinera filer** fungerar nu på följande sätt:
+Transformeringen **kombinera filer** fungerar på följande sätt:
 
 * Transformeringen **kombinera filer** analyserar varje indatafil och avgör rätt filformat att använda, till exempel *text*, *Excel-arbetsbok* eller *JSON*-fil.
 * Med transformeringen kan du välja ett specifikt objekt att extrahera från den första filen, till exempel en *Excel-arbetsbok*.
@@ -51,7 +44,11 @@ Transformeringen **kombinera filer** fungerar nu på följande sätt:
     
     ![](media/desktop-combine-binaries/combine-binaries_4.png)
 
-Med det nya beteendet för **kombinera filer** kan du enkelt kombinera alla filer i en angiven mapp så länge de har samma filtyp och struktur (t.ex. samma kolumner).
+> [!NOTE]
+> Omfattningen av ditt val i en Excel-arbetsbok påverkar beteendet för att kombinera binärfiler. Du kan till exempel välja ett specifikt kalkylblad för att kombinera det kalkylbladet eller välja roten för att kombinera den fullständiga filen. När du väljer en mapp kombineras filerna som hittas i den mappen. 
+
+
+Med beteendet för **kombinera filer** kan du enkelt kombinera alla filer i en angiven mapp så länge de har samma filtyp och struktur (t.ex. samma kolumner).
 
 Dessutom kan du lätt kan använda ytterligare omvandlings- eller extraheringssteg genom att ändra den automatiskt skapade *exempelfrågan*, utan att behöva bekymra dig om att ändra eller skapa ytterligare steg i *funktionsfrågan*. Ändringar i *exempelfrågan* skapas automatiskt i den länkade *funktionsfrågan*.
 

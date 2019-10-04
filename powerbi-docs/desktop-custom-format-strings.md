@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 02a81aa47fb7945b2fd76d03a6bdde7712304bdc
-ms.sourcegitcommit: 7eb74b060de080152c190ac7eb6b64767f8d6626
+ms.openlocfilehash: fffb0479865439759167635efcae1799452c4c6f
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70919588"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305720"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Använd anpassade formatsträngar i Power BI Desktop
 
@@ -148,13 +148,14 @@ Följande tabell visar tecken som du kan använda för att skapa **användardefi
 | ( **E- E+ e- e+** ) | Vetenskapligt format. Om formatuttrycket innehåller minst en platshållare för siffror ( **0** eller **#** ) till höger om E-, E+, e- eller e+ visas talet i exponentiellt format och E eller e infogas mellan talet och dess exponent. Antalet platshållare för siffror till höger avgör antalet siffror i exponenten. Använd E- eller e- för att placera ett minustecken intill negativa exponenter. Använd E+ eller e+ för att placera ett minustecken intill negativa exponenter och ett plustecken intill positiva exponenter. |
 | **- + $**  ( ) | Visa ett litteralt tecken. Om du vill visa ett annat tecken än de som anges i listan skriver du ett omvänt snedstreck (\) eller omger det med dubbla citattecken (&quot; &quot;). |
 | ( * *\** ) | Visa nästa tecken i formatsträngen. Om du vill visa ett tecken som har en speciell innebörd som ett litteralt tecken skriver du ett omvänt snedstreck (\). Det omvända snedstrecket visas inte. Att använda ett omvänt snedstreck är detsamma som att omsluta nästa tecken inom dubbla citattecken. Om du vill visa ett omvänt snedstreck använder du två omvända snedstreck (\\). Exempel på tecken som inte kan visas som litteralaterala tecken är tecken för datum- och tidformat (a, c, d, h, m, n, p, q, s, t, w, y, /, och:), de numeriska tecknen (#, 0, %, E, e, komma och punkt) och strängformateringstecken (@, &amp;, \&lt;, \&gt; och !). |
-| (&quot;ABC&quot;) | Visa strängen innanför dubbla citattecken (&quot; &quot;). Om du vill inkludera en **sträng** i formatet inifrån koden måste du använda **Chr(34)** för att omgärda texten (34 är teckenkoden för ett citattecken (&quot;)). |
+| (&quot;ABC&quot;) | Visa strängen innanför dubbla citattecken (&quot; &quot;). |
 
 
 ## <a name="next-steps"></a>Nästa steg
 Följande artiklar kan också vara av intresse för dig:
 
 * [VBA-formatsträngar](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [Mått i Power BI Desktop](desktop-measures.md)
+* [Datatyper i Power BI Desktop](desktop-data-types.md)
 * [Villkorsstyrd formatering i tabeller](desktop-conditional-table-formatting.md)
-* [Uttrycksbaserade rubriker i Power BI Desktop](desktop-conditional-format-visual-titles.md)
 
