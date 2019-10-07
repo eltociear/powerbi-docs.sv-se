@@ -3,7 +3,7 @@ title: Exportera data från ett visuellt Power BI-objekt
 description: Exportera data från en rapportvisualisering och instrumentpanelvisualisering och visa dem i Excel.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 3ab3b7a96fb629b303263b1ccf5c2f31603300b4
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6aec9f569f657c58eb1dc0b807bbceefc62ab01a
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073158"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943878"
 ---
 # <a name="export-data-from-a-visual"></a>Exportera data från ett visuellt objekt
 Om du vill se de data som används i en visualisering [kan du visa dessa data i Power BI](end-user-show-data.md) eller exportera data till Excel. Alternativet att exportera data kräver en viss typ av licens- och redigeringsbehörigheter till innehållet. Kontakta din Power BI-administratör om du inte kan exportera. 

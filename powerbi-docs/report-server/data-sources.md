@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
-ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.openlocfilehash: 9b7f3adfc7702dee36c43308b227baf72328935a
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71401838"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945819"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakällor i Power BI-rapportserver
 Power BI-rapporter kan ansluta till ett antal datakällor. Beroende på hur data används, finns olika datakällor tillgängliga. Data kan importeras eller så kan data frågas direkt med DirectQuery eller en live-anslutning till SQL Server Analysis Services.
@@ -157,7 +157,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för mod
 | SharePoint Online-lista |Nej |Nej |Nej |Nej |
 | Snowflake |Nej |Nej |Nej |Nej |
 | Sybase-databas |Nej |Nej |Ja |Ja |
-| Teradata-databas |Nej |Nej |Ja |Ja |
+| Teradata |Nej |Nej |Ja |Ja |
 | appFigures (beta) |Nej |Nej |Nej |Nej |
 | Azure Analysis Services-databas (beta) |Nej |Nej |Nej |Nej |
 | Azure Cosmos DB (beta) |Nej |Nej |Nej |Nej |
@@ -204,7 +204,7 @@ Power BI-rapportservern har inte stöd för OAuth-baserad autentisering för Dir
 | Oracle-databas |Nej |Nej |Ja |Ja |Ja |
 | SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Nej |
 | SAP HANA-databas |Nej |Nej |Ja |Ja |Nej |
-| Teradata-databas |Nej |Nej |Ja |Ja |Ja |
+| Teradata |Nej |Nej |Ja |Ja |Ja |
 
 
 ## <a name="next-steps"></a>Nästa steg

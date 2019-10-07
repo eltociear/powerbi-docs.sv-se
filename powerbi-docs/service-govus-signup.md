@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 28b77cfeda1f84f3643216dba45bef40bd6441ff
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ca9233f6373f8732f0996a09d7fe83ea18431f88
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513222"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715324"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter. Den är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -123,7 +123,7 @@ För att identifiera användare på din klient som använder en kostnadsfri lice
 Det finns olika typer av saker du kan göra med Power BI. Mer information och utbildning, inklusive en artikel som visar hur du registrerar dig för tjänsten, hittar du i följande resurser:
 
 * [Översikt över Power BI för amerikanska myndigheter](service-govus-overview.md)
-* [Guidad utbildning för Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Guidad utbildning för Power BI](guided-learning/index.md)
 * [Komma igång med Power BI-tjänsten](service-get-started.md)
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 

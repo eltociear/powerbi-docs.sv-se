@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d2ba4809ce5c6664350ec81b57b6fc717a13879f
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: ae260e36d0ca7363a3b21242087813d951cf4983
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164552"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945794"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Ansluta till datakällor för Power BI-dataflöden
 
@@ -75,7 +75,7 @@ Kategorin **Databas** innehåller följande tillgängliga dataanslutningar för 
 * PostgreSQL-databas
 * SQL Server-databas
 * Sybase-databas
-* Teradata-databas
+* Teradata
 * Vertica
 
 Kategorin **Power BI** innehåller följande tillgängliga dataanslutningar för dataflöden:

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994834"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715190"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Hämta en rapport från Power BI-tjänsten till Power BI Desktop (förhandsversion)
 I Power BI Desktop kan du publicera en rapport (en *.pbix*-fil) från den lokala datorn till Power BI-tjänsten. Power BI-rapporter kan även gå åt det andra hållet: Du kan ladda ned en rapport från Power BI-tjänsten till Power BI Desktop. Filnamnstillägget för en Power BI-rapport är i båda fallen .pbix.
@@ -26,7 +26,7 @@ Det finns några begränsningar och saker du bör tänka på, vilket beskrivs l�
 
 ## <a name="download-the-report-as-a-pbix-file"></a>Ladda ned rapporten som en .pbix-fil
 
-Du kan endast ladda ned rapporter som har [skapats med Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) efter den 23 november 2016 och uppdaterats därefter. Om den skapades före det är menyalternativet **Ladda ned rapport** i Power BI-tjänsten nedtonat.
+Du kan endast ladda ned rapporter som har [skapats med Power BI Desktop](/learn/modules/publish-share-power-bi/2-publish-reports) efter den 23 november 2016 och uppdaterats därefter. Om den skapades före det är menyalternativet **Ladda ned rapport** i Power BI-tjänsten nedtonat.
 
 Hämta .pbx-filen genom att följa dessa steg:
 
