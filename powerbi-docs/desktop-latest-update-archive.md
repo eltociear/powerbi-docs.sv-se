@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 0dcc5e3aac4b43a6975a9faa5dd23faa2888b324
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 1ccf5dd3a84bbbaca7019f8943cf0ab974e4bd06
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142226"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71944881"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -2290,8 +2290,8 @@ Vi tar ett skutt framåt med flera uppdateringar den här månaden! Februari ger
 
 ### <a name="data-connectivity"></a>Dataanslutning:
 
--   **DirectQuery**-stöd för Oracle- och Teradata-databaser
--   **DirectQuery** – stöd för att skapa beräknade kolumner
+-   **DirectQuery**-stöd för Oracle och Teradata
+-   **DirectQuery**-stöd för att skapa beräknade kolumner
 -   Stöd för publicering av Analysis Services Live-rapporter
 -   Anslutningsapp för JSON-filer
 -   SQL Sentry-anslutningsapp

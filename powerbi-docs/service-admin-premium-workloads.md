@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/21/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 2d2eb51c5aad44572f1b427248fd85ef19a6306f
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985697"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968901"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -59,18 +59,59 @@ Med AI-arbetsbelastningen kan du använda Cognitive Services och automatiserad M
 
 ### <a name="datasets"></a>Datauppsättningar
 
-Som standard är datamängdernas arbetsbelastning aktiverad och kan inte inaktiveras. Använd nedanstående inställningar för att styra arbetsbelastningsbeteendet.
+Som standard är datamängdernas arbetsbelastning aktiverad och kan inte inaktiveras. Använd nedanstående inställningar för att styra arbetsbelastningsbeteendet. Det finns ytterligare användningsinformation under tabellen för några av inställningarna.
 
 | Inställningsnamn | Beskrivning |
 |---------------------------------|----------------------------------------|
 | **Maximalt minne (%)** | Den maximala procentandelen tillgängligt minne som datamängder kan använda i en kapacitet. |
 | **XMLA-slutpunkt** | Anger att anslutningar från klientprogram följer medlemsuppsättningen för säkerhetsgrupper på nivåerna för arbetsyta och app. Mer information finns i [Ansluta till datamängder med klientprogram och verktyg](service-premium-connect-tools.md). |
-| **Maximalt antal mellanliggande raduppsättningar** | Det maximala antalet mellanliggande rader som returneras av DirectQuery. Standardvärdet är 1 000 000 och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. Använd inställningen för att styra påverkan från resursintensiva eller bristfälligt utformade rapporter. |
-| **Maximal storlek för offlinedatamängd (GB)** | Maximal storlek för offlinedatamängden i minnet. Detta är den komprimerade storleken på disken. Standardvärdet anges av SKU:n och det tillåtna intervallet är 0,1–10 GB. Använd inställningen till att förhindra att rapportskapare publicerar en stor datamängd som kan påverka kapaciteten negativt. |
-| **Maximalt antal resultatraduppsättningar** | Det maximala antalet rader som returneras i en DAX-fråga. Standardvärdet är -1 (ingen gräns) och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. Använd inställningen för att styra påverkan från resursintensiva eller bristfälligt utformade rapporter. |
-| **Minnesgräns för frågor (%)** | Den maximala procentandelen tillgängligt minne som kan användas för tillfälliga resultat i en fråga eller ett DAX-mått. Använd inställningen för att styra påverkan från resursintensiva eller bristfälligt utformade rapporter. |
-| **Tidsgräns för frågor (sekunder)** | Maximal tid innan tidsgränsen för frågan uppnås. Standardvärdet är 3 600 sekunder (en timme). Värdet 0 anger att frågorna inte har någon tidsgräns. Använd inställningen till att få bättre kontroll över tidskrävande frågor. |
+| **Maximalt antal mellanliggande raduppsättningar** | Det maximala antalet mellanliggande rader som returneras av DirectQuery. Standardvärdet är 1 000 000 och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
+| **Maximal storlek för offlinedatamängd (GB)** | Maximal storlek för offlinedatamängden i minnet. Detta är den komprimerade storleken på disken. Standardvärdet anges av SKU:n och det tillåtna intervallet är 0,1–10 GB. |
+| **Maximalt antal resultatraduppsättningar** | Det maximala antalet rader som returneras i en DAX-fråga. Standardvärdet är -1 (ingen gräns) och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
+| **Minnesgräns för frågor (%)** | Den maximala procentandelen tillgängligt minne som kan användas för tillfälliga resultat i en fråga eller ett DAX-mått. |
+| **Tidsgräns för frågor (sekunder)** | Maximal tid innan tidsgränsen för frågan uppnås. Standardvärdet är 3 600 sekunder (en timme). Värdet 0 anger att frågorna inte har någon tidsgräns. |
 |  |  |  |
+
+#### <a name="max-intermediate-row-set-count"></a>Maximalt antal mellanliggande raduppsättningar
+
+Använd inställningen för att styra påverkan från resursintensiva eller bristfälligt utformade rapporter. Om en fråga till en DirectQuery-datauppsättning resulterar i ett mycket stort resultat från källdatabasen kan det uppstå en topp i minnes- och processoranvändningen. Det kan göra att andra användare och rapporter får brist på resurser. Med den här inställningen kan kapacitetsadministratören justera hur många rader en enskild fråga kan hämta från datakällan.
+
+Om kapaciteten har stöd för mer än standardinställningen på 1 000 000 rader, och du har en stor datauppsättning, kan du öka den här inställningen om du vill hämta fler rader.
+
+Observera att den här inställningen endast påverkar DirectQuery-frågor, medan [Maximalt antal resultatraduppsättningar](#max-result-row-set-count) påverkar DAX -frågor.
+
+#### <a name="max-offline-dataset-size"></a>Maxstorlek för offlinedatamängd
+
+Använd inställningen till att förhindra att rapportskapare publicerar en stor datamängd som kan påverka kapaciteten negativt. Observera att Power BI inte kan fastställa den faktiska minnesstorleken förrän datauppsättningen har lästs in i minnet. Det är möjligt att en datauppsättning med en mindre offlinestorlek kan ha ett större fotavtryck för minnesanvändning än en datauppsättning med en större offlinestorlek.
+
+Om du har en befintlig datauppsättning som är större än den storlek som du angett för den här inställningen går det inte att läsa in datauppsättningen när användaren försöker komma åt den.
+
+#### <a name="max-result-row-set-count"></a>Maximalt antal resultatraduppsättningar
+
+Använd inställningen för att styra påverkan från resursintensiva eller bristfälligt utformade rapporter. Om den här gränsen nås i en DAX-fråga visas följande fel för rapportanvändare. De bör kopiera felinformationen och kontakta en administratör.
+
+![Det gick inte att läsa in data för det här visuellt objektet](media/service-admin-premium-workloads/could-not-load-data.png)
+
+Observera att den här inställningen endast påverkar DAX-frågor, medan [Maximalt antal mellanliggande raduppsättningar](#max-intermediate-row-set-count) påverkar DirectQuery-frågor.
+
+#### <a name="query-memory-limit"></a>Minnesgräns för frågor
+
+Använd inställningen för att styra påverkan från resursintensiva eller bristfälligt utformade rapporter. Vissa frågor och beräkningar kan resultera i mellanliggande resultat som använder mycket minne i kapaciteten. Det kan göra att andra frågor körs mycket långsamt, att andra datauppsättningar tas bort från kapaciteten och att det uppstår minnesfel för andra som använder kapaciteten.
+
+Den här inställningen gäller för datauppdatering och rapportåtergivning. Vid datauppdateringen utförs både uppdatering av data från datakällan och uppdatering av frågan, om inte frågeuppdateringen är inaktiverad. Om frågeuppdatering inte är inaktiverad gäller den här minnesgränsen även för dessa frågor. Eventuella misslyckade frågor gör att tillståndet för den schemalagda uppdateringen rapporteras som ett fel, även om det gick att utföra datauppdateringen.
+
+#### <a name="query-timeout"></a>Tidsgräns för frågor
+
+Använd den här inställningen om du vill ha bättre kontroll över långvariga frågor, som kan göra att rapporter läses in långsamt för användarna. Den här inställningen gäller för datauppdatering och rapportåtergivning. Vid datauppdateringen utförs både uppdatering av data från datakällan och uppdatering av frågan, om inte frågeuppdateringen är inaktiverad. Om frågeuppdateringen inte är inaktiverad gäller den här minnesgränsen även för dessa frågor.
+
+Den här inställningen gäller för en enskild fråga och inte den tid det tar att köra alla frågor som är kopplade till uppdateringen av en datauppsättning eller rapport. Se följande exempel:
+
+- **Tidsgräns för frågor** är inställd på 1200 (20 minuter).
+- Det finns fem frågor och var och en tar 15 minuter att köra.
+
+Den sammanlagda tiden för alla frågor är 75 minuter, men den inställda tidsgränsen har inte nåtts eftersom alla enskilda frågor tar mindre än 20 minuter att köra.
+
+Observera att för Power BI-rapporter åsidosätts detta standardvärde med en mycket lägre tidsgräns för varje fråga till kapaciteten. Normalt är tidsgränsen för varje fråga ungefär tre minuter.
 
 ### <a name="dataflows"></a>Dataflöden
 

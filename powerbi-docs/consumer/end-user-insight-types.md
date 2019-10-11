@@ -4,23 +4,25 @@ description: Quick Insights och Visa insikter med Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 991dd7bb94e79a21c8e4ec877093b81d2ed9b285
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 507d49ba6cdb894667bf66f8f35c5c325b9ff25e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327784"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943909"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Typer av insikter som stöds av Power BI
+
+Power BI-tjänst kan automatiskt söka efter insikter i dina instrumentpaneler eller rapporter.
+
 ## <a name="how-does-insights-work"></a>Hur fungerar insikter?
-Power BI söker snabbt olika delmängder av din datauppsättning samtidigt som en uppsättning avancerade algoritmer används för att identifiera potentiellt intressanta insikter. Power BI söker igenom så mycket av en datauppsättning som möjligt inom tilldelad tid.
+Power BI söker snabbt igenom delmängder av din datauppsättning. Under sökningen används en uppsättning sofistikerade algoritmer för att identifiera potentiellt intressanta insikter. Power BI söker igenom så mycket av en datauppsättning som möjligt inom tilldelad tid.
 
 Du kan köra insikter mot en datauppsättning eller en panel på en instrumentpanel.   
 
@@ -43,7 +45,7 @@ Identifierar fall där flera mått visar ett förhållande mellan varandra när 
 ![Exempel på korrelation](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
 
 ## <a name="low-variance"></a>Låg varians
-Identifierar fall där datapunkter inte är långt från medelvärdet.
+Identifierar fall där datapunkter ligger nära medelvärdet.
 
 ![Exempel på låg varians](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -74,8 +76,6 @@ För data över en tidsserie, identifierar när det finns specifika datum- och t
 
 ## <a name="next-steps"></a>Nästa steg
 [Power BI-insikter](end-user-insights.md)
-
-Om du äger en datauppsättning kan du [optimera den för insikter](../service-insights-optimize.md)
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
 

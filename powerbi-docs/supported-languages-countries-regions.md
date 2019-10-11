@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6e89fa21617add5c3c11ada990f7055d305cebf5
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: efb2ee5ef0ed09cbca1a2bebf6ab3a0f8908efb8
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256454"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968683"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Språk och länder/regioner som stöds för Power BI
 
@@ -121,6 +121,9 @@ Det finns två sätt att skaffa Power BI Desktop: Du kan ladda ned det som ett f
 * När du installerar Power BI Desktop från Windows Store, installeras alla språk och det språk som motsvarar standardspråket för Windows visas som standard.
 * När du laddar ned Power BI Desktop som fristående installationsprogram väljer du standardspråk när du kör installationsprogrammet och kan ändra det vid ett senare tillfälle.
 * Du kan också [välja en språkversion som ska användas när du importerar data](#choose-the-locale-for-importing-data-into-power-bi-desktop) för en viss rapport.
+
+> [!NOTE]
+> Om du installerar den version av Power BI Desktop som har optimerats för Power BI-rapportserver väljer du språk vid nedladdningen. Mer information finns i [Installera Power BI Desktop optimerad för Power BI-rapportserver](report-server/install-powerbi-desktop.md).
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>Välj ett språk för Power BI Desktop 
 1. Installera Power BI Desktop [från Windows Store](http://aka.ms/pbidesktopstore) eller som ett [fristående installationsprogram](http://aka.ms/pbiSingleInstaller).

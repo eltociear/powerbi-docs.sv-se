@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
-ms.openlocfilehash: bbd9a3884b3b6b0cd235471b0746f605e3872aff
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.date: 10/03/2019
+ms.openlocfilehash: a97c8125af46eae193f6c592d0b3c1153ae9b50c
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325761"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968628"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
-Om du vill skapa Power BI-rapporter för Power BI-rapportservern måste du hämta och installera Power BI Desktop optimerad för Power BI-rapportserver. Den här versionen skiljer sig från Power BI Desktop som används med Power BI-tjänsten. Versionen av Power BI Desktop för Power BI-tjänsten innehåller till exempel förhandsgranskningsfunktioner som inte är tillgängliga i Power BI-rapportserverversionen förrän de släpps. Om du använder den här versionen, se till att rapportservern kan interagera med en känd version av rapporter och modeller. 
+Om du vill skapa Power BI-rapporter för Power BI-rapportservern måste du hämta och installera den version av Power BI Desktop som är optimerad för Power BI-rapportserver. Den här versionen skiljer sig från Power BI Desktop som används med Power BI-tjänsten. Versionen av Power BI Desktop för Power BI-tjänsten innehåller till exempel förhandsgranskningsfunktioner som inte är tillgängliga i Power BI-rapportserverversionen förrän de är allmänt tillgängliga. Om du använder den här versionen, se till att rapportservern kan interagera med en känd version av rapporter och modeller. 
 
 Den bra nyheten är att du kan installera Power BI Desktop och Power BI Desktop som har optimerats för Power BI-rapportservern sida vid sida på samma dator.
 
@@ -32,7 +32,7 @@ Det enklaste sättet att se till att du har den senaste versionen av Power BI De
 
     Eller gå till startsidan för [Power BI-rapportservern](https://powerbi.microsoft.com/report-server/) och välj **Avancerade nedladdningsalternativ**.
 
-2. På sidan Download Center väljer du **Hämta**.
+2. På sidan Download Center väljer du ett språk och sedan **Hämta**.
 
 3. Beroende på din dator, väljer du: 
 
@@ -65,7 +65,11 @@ När du redigerar en Power BI-rapport från Power BI-rapportservern eller skapar
 
 Power BI-rapporter i Power BI-rapportserver, i Power BI-tjänsten (http://app.powerbi.com) och i Power BI-mobilappen fungerar nästan likadant men några funktioner skiljer sig).
 
-### <a name="in-a-browser"></a>I en webbläsare
+### <a name="selecting-a-language"></a>Välja ett språk
+
+För Power BI Desktop som har optimerats för Power BI-rapportserver väljer du språk när du installerar appen. Du kan inte ändra språket i efterhand, men du kan installera en version på ett annat språk.
+
+### <a name="report-visuals-in-a-browser"></a>Visuellt rapportobjekt i en webbläsare
 
 Rapporter i Power BI-rapportservern har stöd för nästan alla visualiseringar, inklusive anpassade visualiseringar. Rapporter i Power BI-rapportservern stöder inte:
 
@@ -74,7 +78,7 @@ Rapporter i Power BI-rapportservern har stöd för nästan alla visualiseringar,
 * Synliga sökvägar
 * Power BI Desktop-förhandsgranskningsfunktioner
 
-### <a name="in-the-power-bi-mobile-apps"></a>I Power BI-mobilappar
+### <a name="reports-in-the-power-bi-mobile-apps"></a>Rapporter i Power BI-mobilappar
 
 Rapporter i Power BI-rapportservern stöder alla de grundläggande funktionerna i [Power BI-mobilappar](../consumer/mobile/mobile-apps-for-mobile-devices.md), inklusive:
 
@@ -92,7 +96,7 @@ Rapporter i Power BI-rapportservern stöder inte de här funktionerna i Power BI
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop för tidigare versioner av Power BI-rapportserver
 
-Om din rapportserver är en tidigare version behöver du motsvarande version av Power BI Desktop. Här är länken för att ladda ned den tidigare versionen.
+Om din rapportserver är en tidigare version behöver du motsvarande version av Power BI Desktop. Här är länken för att ladda ned en tidigare version.
 
 - Microsoft Power BI Desktop ([Optimerad för Power BI-rapportserver – januari 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 

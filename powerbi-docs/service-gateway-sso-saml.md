@@ -10,22 +10,22 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 75641468b52d4174779b9ddd03ed7aab27b6c5d0
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 62bb2f1e334d6bb125a2fffc49cd62611080ef29
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100401"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968932"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Använda Security Assertion Markup Language (SAML) för enkel inloggning från Power BI till lokala datakällor
 
-Använd [Security Assertion Markup Language (SAML)](https://www.onelogin.com/pages/saml) för att aktivera sömlös anslutning för enkel inloggning. När enkel inloggning aktiveras blir det enkelt för Power BI-rapporter och instrumentpaneler att uppdatera data från lokala källor.
+Använd [Security Assertion Markup Language (SAML)](https://www.onelogin.com/pages/saml) för att aktivera sömlös anslutning för enkel inloggning. När enkel inloggning aktiveras blir det enkelt för Power BI-rapporter och instrumentpaneler att uppdatera data från lokala källor samtidigt som behörigheter på användarnivå på dessa källor respekteras.
 
 ## <a name="supported-data-sources"></a>Datakällor som stöds
 
 Vi stöder för närvarande SAP HANA med SAML. Mer information om att installera och konfigurera enkel inloggning för SAP HANA med hjälp av SAML finns i ämnet om [SAML SSO för BI-plattform till HANA](https://wiki.scn.sap.com/wiki/display/SAPHANA/SAML+SSO+for+BI+Platform+to+HANA) i SAP HANA-dokumentationen.
 
-Vi har stöd för ytterligare datakällor med [Kerberos](service-gateway-sso-kerberos.md).
+Vi har stöd för ytterligare datakällor (inklusive HANA) med [Kerberos](service-gateway-sso-kerberos.md).
 
 Tänk på att det för HANA **starkt** rekommenderas att du aktiverar kryptering innan du upprättar en SAML SSO-anslutning (det vill säga att du bör konfigurera HANA-servern till att acceptera krypterade anslutningar och även konfigurera gatewayen till att använda kryptering vid kommunikation med HANA-servern). HANA ODBC-drivrutinen kan **inte** kryptera SAML-försäkran som standard, och utan kryptering aktiverat skickas den signerade SAML-försäkran från gatewayen till HANA-servern okrypterat och kan vara utsatt för avlyssning och återanvändning av tredje part. Instruktioner om hur du aktiverar kryptering för HANA med hjälp av OpenSSL-biblioteket finns i [Aktivera kryptering för SAP HANA](/power-bi/desktop-sap-hana-encryption).
 
@@ -43,7 +43,7 @@ Följande steg beskriver hur du etablerar en förtroenderelation mellan en HANA-
    openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
    ```
 
-    Se till att rotcertifikatutfärdarens certifikat är korrekt skyddat – om det erhålls av tredje part kan det användas för att få obehörig åtkomst till HANA-servern. 
+    Se till att rotcertifikatutfärdarens privata nyckel är korrekt skyddad – om den erhålls av tredje part kan den användas för att få obehörig åtkomst till HANA-servern.
 
     Lägg till certifikatet (till exempel CA_Cert.pem) till HANA-serverns förtroendelager så att HANA-servern ska lita på alla certifikat som signerats av rotcertifikatutfärdaren som du just har skapat. Du hittar platsen för HANA-serverns förtroendelager genom att undersöka konfigurationsinställningen **ssltruststore**. Om du har följt SAP-dokumentationen som beskriver hur du konfigurerar OpenSSL kan HANA-servern redan lita på en rotcertifikatutfärdare som du kan återanvända. Information finns i artikeln [How to Configure Open SSL for SAP HANA Studio to SAP HANA Server](https://archive.sap.com/documents/docs/DOC-39571) (Så konfigurerar du Open SSL för SAP HANA Studio till SAP HANA-server). Om du har flera HANA-servrar som du vill aktivera SAML SSO för kan du kontrollera att alla servrar litar på den här rotcertifikatutfärdaren.
 
@@ -61,7 +61,7 @@ Följande steg beskriver hur du etablerar en förtroenderelation mellan en HANA-
 
 Det resulterande IdP-certifikatet ska gälla i ett år (se alternativet för dagar). Nu importerar du IdP:ns certifikat i HANA Studio för att skapa en ny SAML-identitetsprovider.
 
-1. I SAP HANA Studio högerklickar du på din SAP HANA-server och navigerar sedan till **Säkerhet** > **Open Security Console (Öppna säkerhetskonsol)**  > **SAML Identity Provider (SAML-identitetsprovider)**  > **OpenSSL Cryptographic Library (kryptografiskt bibliotek för OpenSSL)** .
+1. I SAP HANA Studio högerklickar du på din SAP HANA-server och navigerar sedan till **Säkerhet** &gt; **Open Security Console (Öppna säkerhetskonsol)** &gt; **SAML Identity Provider (SAML-identitetsprovider)** &gt; **OpenSSL Cryptographic Library (kryptografiskt bibliotek för OpenSSL)** .
 
     ![Identitetsprovidrar](media/service-gateway-sso-saml/identity-providers.png)
 
@@ -77,13 +77,13 @@ Det resulterande IdP-certifikatet ska gälla i ett år (se alternativet för dag
 
     ![Konfigurera SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Välj den identitetsprovider som du skapade i steg 2. För **Extern identitet** anger du Power BI-användarens UPN (vanligtvis den e-postadress som användaren loggar in till Power BI med) och väljer sedan **Lägg till**. Observera att om du har konfigurerat din gateway att använda konfigurationsalternativet *ADUserNameReplacementProperty* ska du ange det värde som ska ersätta Power BI-användarens ursprungliga UPN. Om du till exempel ställer in *ADUserNameReplacementProperty* på **SAMAccountName** bör du ange användarens **SAMAccountName**.
+1. Välj den identitetsprovider som du skapade i steg 2. För **Extern identitet** anger du Power BI-användarens UPN (det vill säga den e-postadress som användaren loggar in på Power BI med) och väljer sedan **Lägg till**. Observera att om du har konfigurerat din gateway att använda konfigurationsalternativet *ADUserNameReplacementProperty* ska du ange det värde som ska ersätta Power BI-användarens ursprungliga UPN. Om du till exempel ställer in *ADUserNameReplacementProperty* på **SAMAccountName** bör du ange användarens **SAMAccountName**.
 
     ![Välja identitetsprovider](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Nu när du har konfigurerat gatewayens certifikat och identitet konverterar du certifikatet till pfx-format och konfigurerar gatewaydatorn till att använda certifikatet.
+Nu när du har konfigurerat gatewayens certifikat och identitet konverterar du certifikatet till pfx-format och konfigurerar gatewayen till att använda certifikatet.
 
-1. Konvertera certifikatet till pfx-format genom att köra följande kommando. Observera att det här kommandot anger ”root” (rot) som lösenord för pfx-filen.
+1. Konvertera certifikatet till pfx-format genom att köra följande kommando. Observera att det här kommandot namnger den resulterande PFX-filen samlcert.pfx och anger "root" som filens lösenord.
 
     ```
     openssl pkcs12 -export -out samltest.pfx -in IdP_Cert.pem -inkey IdP_Key.pem -passin pass:root -passout pass:root
@@ -91,11 +91,11 @@ Nu när du har konfigurerat gatewayens certifikat och identitet konverterar du c
 
 1. Kopiera pfx-filen till gatewaydatorn:
 
-    1. Dubbelklicka på samltest.pfx och välj sedan **Lokal dator** > **Nästa**.
+    1. Dubbelklicka på samltest.pfx och välj sedan **Lokal dator** &gt; **Nästa**.
 
     1. Ange lösenordet och välj sedan **Nästa**.
 
-    1. Välj **Placera alla certifikat i nedanstående arkiv**, sedan **Bläddra** > **Personligt** > **OK**.
+    1. Välj **Placera alla certifikat i nedanstående arkiv**, sedan **Bläddra** &gt; **Personligt** &gt; **OK**.
 
     1. Välj **Nästa** och sedan **Slutför**.
 
@@ -111,13 +111,13 @@ Nu när du har konfigurerat gatewayens certifikat och identitet konverterar du c
 
         ![Lägga till snapin-modulen](media/service-gateway-sso-saml/add-snap-in.png)
 
-    1. Välj **Certifikat** > **Lägg till** och välj sedan **Datorkonto** > **Nästa**.
+    1. Välj **Certifikat** &gt; **Lägg till** och välj sedan **Datorkonto** &gt; **Nästa**.
 
-    1. Välj **Lokal dator** > **Slutför** > **OK**.
+    1. Välj **Lokal dator** &gt; **Slutför** &gt; **OK**.
 
-    1. Expandera **Certifikat** > **Personligt** > **Certifikat** och leta upp certifikatet.
+    1. Expandera **Certifikat** &gt; **Personligt** &gt; **Certifikat** och leta upp certifikatet.
 
-    1. Högerklicka på certifikatet och navigera till **Alla uppgifter** > **Hantera privata nycklar**.
+    1. Högerklicka på certifikatet och navigera till **Alla uppgifter** &gt; **Hantera privata nycklar**.
 
         ![Hantera privata nycklar](media/service-gateway-sso-saml/manage-private-keys.png)
 
@@ -135,21 +135,21 @@ Slutligen följer du dessa steg för att lägga till tumavtrycket för certifika
 
 1. Kopiera tumavtrycket för det certifikat som du skapade.
 
-1. Gå till gatewaykatalogen, vilken som standard är C:\Program Files\On-premises data gateway (Lokal datagateway).
+1. Gå till gatewaykatalogen, vilken som standard är *C:\Program Files\On-premises data gateway (Lokal datagateway)* .
 
-1. Öppna PowerBI.DataMovement.Pipeline.GatewayCore.dll.config och leta upp avsnittet *SapHanaSAMLCertThumbprint*. Klistra in det tumavtryck som du kopierade.
+1. Öppna **PowerBI.DataMovement.Pipeline.GatewayCore.dll.config** och leta upp avsnittet *SapHanaSAMLCertThumbprint*. Klistra in det tumavtryck som du kopierade.
 
 1. Starta om gatewaytjänsten.
 
 ## <a name="running-a-power-bi-report"></a>Köra en Power BI-rapport
 
-Nu kan du använda sidan **Hantera gateway** i Power BI för att konfigurera SAP HANA-datakällan och för att under dess **Avancerade inställningar** aktivera enkel inloggning. Du kan sedan publicera rapporter och datamängder med bindning till den datakällan.
+Nu kan du använda sidan **Hantera gateway** i Power BI för att konfigurera SAP HANA-datakällan, och aktivera enkel inloggning under **Avancerade inställningar**. Du kan sedan publicera rapporter och datamängder med bindning till den datakällan.
 
 ![Avancerade inställningar](media/service-gateway-sso-saml/advanced-settings.png)
 
 ## <a name="troubleshooting"></a>Felsökning
 
-När du har konfigurerat enkel inloggning kan följande felmeddelande visas i Power BI-portalen: ”De tillhandahållna autentiseringsuppgifterna kan inte användas för SapHana-källan.” Det här felet indikerar att SAML-autentiseringsuppgifterna avvisades av SAP HANA.
+När du har konfigurerat enkel inloggning kan följande felmeddelande visas i Power BI-portalen: *”De tillhandahållna autentiseringsuppgifterna kan inte användas för SapHana-källan.”* Det här felet indikerar att SAML-autentiseringsuppgifterna avvisades av SAP HANA.
 
 Autentiseringsspårning på serversidan ger detaljerad information för felsökning av problem med autentisering på SAP HANA. Följ de här stegen för att konfigurera spårning för din SAP HANA-server.
 

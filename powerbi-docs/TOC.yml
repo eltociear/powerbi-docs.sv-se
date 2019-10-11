@@ -51,7 +51,7 @@
           href: sample-financial-download.md
     - name: Begrepp
       items:
-        - name: Vad är nytt i den senaste uppdateringen av Power BI Desktop?
+        - name: Nyheter i den senaste Power BI Desktop-uppdateringen
           href: desktop-latest-update.md
         - name: Gruppera visuella objekt i Power BI Desktop
           href: desktop-grouping-visuals.md
@@ -73,7 +73,7 @@
           href: desktop-directquery-about.md
         - name: Datakällor som stöds av DirectQuery
           href: desktop-directquery-data-sources.md
-        - name: Krav på Power BI-datakälla
+        - name: Nödvändiga förutsättningar för Power BI-datakällor
           href: desktop-data-source-prerequisites.md
         - name: Standardmedlem i flerdimensionella modeller i Power BI
           href: desktop-default-member-multidimensional-models.md
@@ -111,7 +111,7 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: Visa objekt utan data i Power BI
           href: desktop-show-items-no-data.md
-        - name: Ansluta till data
+        - name: Anslut till data
           items:
             - name: Datakällor i Power BI Desktop
               href: desktop-data-sources.md
@@ -173,7 +173,7 @@
               href: desktop-sap-hana-encryption.md
             - name: Analysis Services tabelldata i Power BI Desktop
               href: desktop-analysis-services-tabular-data.md
-            - name: Använda DirectQuery i Power BI Desktop
+            - name: Använd DirectQuery i Power BI Desktop
               href: desktop-use-directquery.md
             - name: DirectQuery för Oracle och Teradata
               href: desktop-directquery-for-oracle-teradata.md
@@ -181,19 +181,19 @@
               href: desktop-directquery-sap-bw.md
             - name: DirectQuery och SAP HANA
               href: desktop-directquery-sap-hana.md
-            - name: Anta inställning för referensintegritet i Power BI Desktop
+            - name: Inställningen Anta referensintegritet i Power BI Desktop
               href: desktop-assume-referential-integrity.md
             - name: Använda anslutningstjänsten SAP BW i Power BI Desktop
               href: desktop-sap-bw-connector.md
-            - name: Använd OneDrive för företag-länkar i Power BI Desktop
+            - name: Använda länkar till OneDrive for Business i Power BI Desktop
               href: desktop-use-onedrive-business-links.md
             - name: 'Tjänst från tredje part: Facebook-anslutningsprogram för Power BI Desktop'
               href: service-facebook-connector.md
             - name: 'Tjänst från tredje part: Google Analytics-anslutningsprogram för Power BI Desktop'
               href: service-google-analytics-connector.md
-            - name: 'Project Online: Ansluta till data via Power BI Desktop'
+            - name: 'Project Online: anslut till data via Power BI Desktop'
               href: desktop-project-online-connect-to-data.md
-        - name: Omvandla och forma data
+        - name: Transformera och forma data
           items:
             - name: Kombinera binärfiler
               href: desktop-combine-binaries.md
@@ -227,7 +227,7 @@
               href: desktop-export-to-pdf.md
             - name: Frågor och svar i Power BI Desktop
               href: desktop-qna-in-reports.md
-            - name: Analytics-fönstret i Power BI Desktop
+            - name: Fönstret Analys i Power BI Desktop
               href: desktop-analytics-pane.md
             - name: Använda insikter för att förklara ökningar och minskningar
               href: desktop-insights.md
@@ -257,7 +257,7 @@
               href: desktop-r-visuals.md
             - name: Använda R-drivna anpassade visuella objekt
               href: desktop-r-powered-custom-visuals.md
-            - name: Använda stödlinjer och fästa mot rutnät
+            - name: Använda stödlinjer och fäst mot rutnät
               href: desktop-gridlines-snap-to-grid.md
             - name: Sidvisningsinställningar i en Power BI-rapport
               href: power-bi-report-display-settings.md
@@ -267,7 +267,7 @@
               href: desktop-add-custom-column.md
             - name: Använd infogade hierarkietiketter i Power BI Desktop
               href: desktop-inline-hierarchy-labels.md
-            - name: Använda numeriskt intervallutsnitt
+            - name: Använda det numeriska intervallutsnittet
               href: desktop-slicer-numeric-range.md
             - name: Använda relativt datumutsnitt
               href: desktop-slicer-filter-date-range.md
@@ -293,11 +293,11 @@
               href: desktop-conditional-table-formatting.md
             - name: Villkorsuttrycksbaserad rubrikformatering
               href: desktop-conditional-format-visual-titles.md
-            - name: Sortera efter kolumn i Power BI Desktop
+            - name: Sortera efter en kolumn i Power BI Desktop
               href: desktop-sort-by-column.md
             - name: Optimera rapporter för mobila appar
               href: desktop-create-phone-report.md
-            - name: Använd Visa data och Visa poster
+            - name: Använda Visa data och Visa poster
               href: desktop-see-data-see-records.md
             - name: Tips för att skapa rapporter
               href: desktop-tips-and-tricks-for-creating-reports.md
@@ -305,7 +305,7 @@
           items:
             - name: Visualiseringar i Power BI
               href: visuals/power-bi-report-visualizations.md
-            - name: Metodtips för visualisering
+            - name: Metodtips kring visualisering
               href: visuals/power-bi-visualization-best-practices.md
             - name: Ändra visualiseringstypen i en rapport
               href: visuals/power-bi-report-change-visualization-type.md
@@ -313,7 +313,7 @@
               href: visuals/power-bi-data-points.md
             - name: Visa de data som används för att skapa det visuella objektet
               href: visuals/service-reports-show-data.md
-            - name: Komma igång med färgformatering och axelegenskaper
+            - name: Komma igång med färgformatering och egenskaper för axlar
               href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
             - name: Tips för färgformatering
               href: visuals/service-tips-and-tricks-for-color-formatting.md
@@ -345,7 +345,7 @@
               href: visuals/power-bi-visualization-funnel-charts.md
             - name: Diagram över viktiga influencers i Power BI
               href: visuals/power-bi-visualization-influencers.md
-            - name: Radprovtagning med hög densitet
+            - name: Radsampling med hög densitet
               href: desktop-high-density-sampling.md
             - name: Visuell KPI-information
               href: visuals/power-bi-visualization-kpi.md
@@ -361,7 +361,7 @@
               href: visuals/power-bi-visualization-scatter.md
             - name: Punktdiagram med hög densitet
               href: visuals/desktop-high-density-scatter-charts.md
-            - name: Använda formkartor i Power BI Desktop (förhandsgranskning)
+            - name: Använda formkartor i Power BI Desktop (förhandsversion)
               href: visuals/desktop-shape-map.md
             - name: Utsnitt i Power BI
               href: visuals/power-bi-visualization-slicers.md
@@ -429,7 +429,7 @@
           href: service-gateway-sql-tutorial.md
     - name: Begrepp
       items:
-        - name: Nyheter i Power BI-tjänsten
+        - name: Nyheter i Power BI Service-tjänsten
           href: service-whats-new.md
         - name: Grundläggande begrepp
           items:
@@ -502,6 +502,8 @@
             - name: Använda datauppsättningar över arbetsytor
               href: service-datasets-across-workspaces.md
             - name: Dela datauppsättningar (förhandsversion)
+              href: service-datasets-share.md
+            - name: Skapa-behörighet för delade datamängder
               href: service-datasets-build-permissions.md
             - name: Skapa rapporter som baseras på datauppsättningar
               href: service-datasets-discover-across-workspaces.md
@@ -523,7 +525,7 @@
               href: service-azure-sql-data-warehouse-with-direct-connect.md
             - name: Azure SQL Database med DirectQuery
               href: service-azure-sql-database-with-direct-connect.md
-            - name: SQL Server Analysis Services-realtidsdata i Power BI
+            - name: SQL Server Analysis Services-livedata i Power BI
               href: sql-server-analysis-services-tabular-data.md
         - name: Uppdatera data
           items:
@@ -561,7 +563,7 @@
               href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Fästa en hel rapportsida på en instrumentpanel
               href: service-dashboard-pin-live-tile-from-report.md
-            - name: Datavarningar i Power BI-tjänsten
+            - name: Dataaviseringar i Power BI-tjänsten
               href: service-set-data-alerts.md
             - name: 'Lägga till en bild, textruta, video eller kod på en instrumentpanel'
               href: service-dashboard-add-widget.md
@@ -571,9 +573,9 @@
               href: service-dashboards-design-tips.md
             - name: Optimera en instrumentpanel för telefoner
               href: service-create-dashboard-mobile-phone-view.md
-            - name: Skapa en QR-kod för en panel
+            - name: Skapa en streckkod för en panel
               href: service-create-qr-code-for-tile.md
-            - name: Klassificering av instrumentpanelsdata
+            - name: Klassificering av data på instrumentpaneler
               href: service-data-classification.md
             - name: Instrumentpanelsteman
               href: service-dashboard-themes.md
@@ -595,7 +597,7 @@
               href: power-bi-reports-tips-and-tricks-for-creating.md
             - name: Arbeta med aggregeringar i tjänsten
               href: service-aggregates.md
-            - name: Användningsstatistik för rapporter
+            - name: Använda mått i rapporter
               href: service-usage-metrics.md
             - name: Skapa en QR-kod för en rapport
               href: service-create-qr-code-for-report.md
@@ -607,7 +609,7 @@
               href: service-edit-sap-variables.md
             - name: Metodtips för att skapa snabba och tillförlitliga rapporter
               href: power-bi-reports-performance.md
-        - name: Ställa frågor om dina data
+        - name: Ställ frågor till dina data
           items:
             - name: Använda frågor och svar för att utforska dina data
               href: power-bi-tutorial-q-and-a.md
@@ -625,7 +627,7 @@
               href: service-cortana-intro.md
             - name: Aktivera Cortana för Power BI
               href: service-cortana-enable.md
-            - name: Snabba insikter i Power BI
+            - name: Quick Insights i Power BI
               href: service-insights.md
             - name: Optimera dina data för Snabbinsikter
               href: service-insights-optimize.md
@@ -653,11 +655,11 @@
               href: service-share-reports.md
             - name: Registrera dig och andra för prenumeration
               href: service-report-subscribe.md
-            - name: Bädda in rapport i SharePoint Online
+            - name: Bädda in en rapport i SharePoint Online
               href: service-embed-report-spo.md
             - name: Bädda in en rapport på en säker portal eller webbplats
               href: service-embed-secure.md
-            - name: Publicera på webben från Power BI
+            - name: Publicera från Power BI till webben
               href: service-publish-to-web.md
             - name: Dela en instrumentpanel som länkar till en Excel-arbetsbok på OneDrive
               href: service-share-dashboard-that-links-to-excel-onedrive.md
@@ -725,17 +727,17 @@
               href: service-template-apps-samples.md
         - name: Felsök
           items:
-            - name: Har du glömt lösenordet till Power BI?
+            - name: Har du glömt ditt lösenord för Power BI?
               href: service-admin-forgot-your-password.md
             - name: Går det inte att logga in?
               href: power-bi-cannot-sign-in.md
-            - name: Samla in ytterligare diagnostikinformation för Power BI
+            - name: Samla in ytterligare diagnostisk information för Power BI
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: Alternativ e-postadress för Power BI
               href: service-admin-alternate-email-address-for-power-bi.md
             - name: Så här använder du samma kontoinloggning för Power BI och Azure
               href: service-admin-how-to-use-the-same-account-as-azure.md
-            - name: Office 365-dedicerad – kända problem
+            - name: Office 365 Dedicated – kända problem
               href: service-admin-office-365-dedicated-known-issues.md
             - name: Felsöka uppdateringsscenarier
               href: refresh-troubleshooting-refresh-scenarios.md
@@ -751,13 +753,15 @@
               href: service-admin-troubleshoot-excel-workbook-data.md
             - name: Felsöka Cortana
               href: service-cortana-troubleshoot.md
-            - name: Så här uppdaterar du dina innehållspaketautentiseringsuppgifter för Xero om uppdateringen misslyckades
+            - name: Så uppdaterar du autentiseringsuppgifterna för ditt Xero-innehållspaket om uppdateringen misslyckas
               href: service-refresh-xero-credentials.md
         - name: Andra uppgifter
           items:
             - name: Byt namn på innehåll i Power BI
               href: service-rename.md
-            - name: Registrera din organisation som tillhör amerikanska myndigheter
+            - name: Ange objektkontakter
+              href: service-item-contact.md
+            - name: Registrera din amerikanska myndighetsorganisation
               href: service-govus-signup.md
             - name: Ta bort nästan vad som helst i Power BI
               href: service-delete.md
@@ -773,9 +777,7 @@
                   href: service-connect-to-appfigures.md
                 - name: Application Insights
                   href: service-connect-to-application-insights.md
-                - name: AT Internet Bridge
-                  href: service-connect-to-at-internet.md
-                - name: Azure-granskningsloggar
+                - name: Visa granskningsloggar
                   href: service-connect-to-azure-audit-logs.md
                 - name: Azure Mobile Engagement
                   href: service-connect-to-azure-mobile.md
@@ -799,8 +801,6 @@
                   href: service-connect-to-lithium.md
                 - name: Mandrill
                   href: service-connect-to-mandrill.md
-                - name: Marketo
-                  href: service-connect-to-marketo.md
                 - name: Microsoft Dynamics AX
                   href: service-connect-to-microsoft-dynamics-ax.md
                 - name: Microsoft Dynamics CRM
@@ -809,14 +809,10 @@
                   href: service-connect-to-microsoft-dynamics-nav.md
                 - name: Office365Mon
                   href: service-connect-to-office365mon.md
-                - name: Planview Enterprise
-                  href: service-connect-to-planview.md
                 - name: Prevedere
                   href: service-connect-to-prevedere.md
                 - name: Project Online
                   href: service-connect-to-project-online.md
-                - name: Projectplace
-                  href: service-connect-to-projectplace.md
                 - name: QuickBooks Online
                   href: service-connect-to-quickbooks-online.md
                 - name: Salesforce
@@ -843,8 +839,6 @@
                   href: service-connect-to-uservoice.md
                 - name: VMob
                   href: service-connect-to-vmob.md
-                - name: Webtrends
-                  href: service-connect-to-webtrends.md
                 - name: Windows Dev Center
                   href: service-connect-to-windows-dev-center.md
                 - name: Xero
@@ -967,136 +961,6 @@
           href: report-builder-url-pass-parameters.md
         - name: Publicera en sidnumrerad rapport
           href: paginated-reports-save-to-power-bi-service.md
-    - name: Anpassade visuella objekt
-      items:
-        - name: Översikt
-          items:
-            - name: Visuella objekt i Power BI
-              href: power-bi-custom-visuals.md
-        - name: Självstudier
-          items:
-            - name: Utveckla ett visuellt Power BI-objekt
-              href: developer/custom-visual-develop-tutorial.md
-            - name: Lägga till formateringsalternativ
-              href: developer/custom-visual-develop-tutorial-format-options.md
-            - name: Lägga till enhetstester för visuellt projekt
-              href: developer/visuals/unit-tests-introduction.md
-        - name: Begrepp
-          items:
-            - name: Visuella objekt för organisationer i Power BI
-              href: power-bi-custom-visuals-organization.md
-            - name: Riktlinjer för visuella objekt för Power BI
-              href: developer/guidelines-powerbi-visuals.md
-            - name: Vanliga frågor och svar om visuella objekt
-              href: power-bi-custom-visuals-faq.md
-            - name: Använda funktioner
-              href: developer/visuals/capabilities.md
-            - name: Datavymappningar
-              href: developer/visuals/dataview-mappings.md
-            - name: Objekt och egenskaper
-              href: developer/visuals/objects-properties.md
-            - name: Avancerat redigeringsläge
-              href: developer/visuals/advanced-edit-mode.md
-        - name: Gör så här
-          items:
-            - name: Certifiera ett visuellt objekt
-              href: power-bi-custom-visuals-certified.md
-            - name: Publicera anpassad visuell information till AppSource
-              href: developer/office-store.md
-            - name: Använd R-baserade anpassade visuella objekt i Power BI
-              href: desktop-r-powered-custom-visuals.md
-            - name: Interaktioner med visuella objekt
-              href: developer/visuals/visuals-interactions.md
-            - name: Lägga till knappbeskrivningar för visuella objekt
-              href: developer/visuals/add-tooltips.md
-            - name: Lägga till analysfönster
-              href: developer/visuals/analytics-pane.md
-            - name: Filtrera visuella objekt
-              href: developer/visuals/filter-api.md
-            - name: Hämta mer data
-              href: developer/visuals/fetch-more-data.md
-            - name: Lägga till stöd för bokmärken
-              href: developer/visuals/bookmarks-support.md
-            - name: Markera data i visuella objekt
-              href: developer/visuals/highlight.md
-            - name: Lägga till stöd för högkontrastläge
-              href: developer/visuals/high-contrast-support.md
-            - name: Aktivera synkronisering av utsnitt
-              href: developer/visuals/enable-sync-slicers.md
-            - name: Felsöka anpassade visuella Power BI-objekt
-              href: power-bi-custom-visuals-troubleshoot.md
-        - name: Referens
-          items:
-            - name: Landningssida
-              href: developer/visuals/landing-page.md
-            - name: Starta URL
-              href: developer/visuals/launch-url.md
-            - name: Återgivningshändelser
-              href: developer/visuals/event-service.md
-            - name: Sortering
-              href: developer/visuals/sort-options.md
-        - name: Resurser
-          items:
-            - name: Dev Center
-              href: 'https://powerbi.microsoft.com/developers/'
-            - name: Exempel
-              href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-            - name: Git Repo för anpassade visuella objekt
-              href: 'https://go.microsoft.com/fwlink/?linkid=848277'
-            - name: Skapa SSL-certifikat
-              href: developer/visuals/create-ssl-certificate.md
-    - name: Automation
-      items:
-        - name: Översikt
-          items:
-            - name: Vad kan jag göra med Power BI-programmeringsgränssnittet?
-              href: developer/overview-of-power-bi-rest-api.md
-        - name: Självstudier
-          items:
-            - name: Skicka data till en datauppsättning
-              href: developer/walkthrough-push-data.md
-            - name: Hämta en autentiseringsåtkomsttoken
-              href: developer/walkthrough-push-data-get-token.md
-            - name: Skapa en datauppsättning
-              href: developer/walkthrough-push-data-create-dataset.md
-            - name: Hämta en datauppsättning för att lägga till rader
-              href: developer/walkthrough-push-data-get-datasets.md
-            - name: Lägga till rader i en tabell
-              href: developer/walkthrough-push-data-add-rows.md
-        - name: Begrepp
-          items:
-            - name: Princip för automatiskt bevarande av realtidsdata
-              href: developer/api-automatic-retention-policy-for-real-time-data.md
-            - name: Skicka data
-              items:
-                - name: 'Begränsningar för Power BI REST API:t'
-                  href: developer/api-rest-api-limitations.md
-                - name: Egenskaper för datamängd
-                  href: developer/api-dataset-properties.md
-                - name: Versionshantering av datamodell
-                  href: developer/api-data-model-versioning.md
-        - name: Gör så här
-          items:
-            - name: Konfigurera autentiseringsuppgifter
-              href: developer/configure-credentials.md
-            - name: Kryptera autentiseringsuppgifter
-              href: developer/encrypt-credentials.md
-        - name: Referens
-          items:
-            - name: 'REST API:er'
-              href: 'https://docs.microsoft.com/rest/api/power-bi'
-            - name: Power BI REST API-referens
-              href: developer/rest-api-reference.md
-            - name: Fullständig kodlista
-              href: developer/walkthrough-push-data-complete-code.md
-        - name: Resurser
-          items:
-            - name: Dev Center
-              href: 'https://powerbi.microsoft.com/en-us/developers/'
-            - name: 'Power BI C# Git Repo'
-              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-            - name: Hämta .NET SDK
-              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
 - name: Power BI-rapportserver
   items:
     - name: Översikt
@@ -1187,7 +1051,7 @@
               href: report-server/configure-powerbi-mobile-apps-remote.md
             - name: Mobil fjärråtkomst med Azure AD
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
-            - name: Vara värd för Excel-arbetsböcker
+            - name: Agera värd åt Excel-arbetsböcker
               href: report-server/excel-oos.md
     - name: Referens
       items:
@@ -1221,7 +1085,7 @@
       items:
         - name: Lokal datagateway – på djupet
           href: service-gateway-onprem-indepth.md
-        - name: Lokal datagateway (personligt läge)
+        - name: Lokal datagateway (läget Personal)
           href: service-gateway-personal-mode.md
         - name: Hantera datakällor
           items:
@@ -1267,69 +1131,6 @@
       items:
         - name: Månatliga uppdateringar för gateway
           href: /data-integration/gateway/service-gateway-monthly-updates
-- name: Administration
-  items:
-    - name: Översikt
-      items:
-        - name: Vad är Power BI-administration?
-          href: service-admin-administering-power-bi-in-your-organization.md
-    - name: Begrepp
-      items:
-        - name: Administrationsrollen i Office 365
-          href: service-admin-role.md
-        - name: Vanliga frågor och svar
-          href: service-admin-faq.md
-        - name: Vanliga frågor och svar om hög tillgänglighet och redundans
-          href: service-admin-failover.md
-    - name: Gör så här
-      items:
-        - name: Licensiering och registrering
-          items:
-            - name: Licensiering för din organisation
-              href: service-admin-licensing-organization.md
-            - name: Köp Power BI Pro
-              href: service-admin-purchasing-power-bi-pro.md
-            - name: Registrera dig för en utvärderingsversion av Office 365
-              href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: Lägga till Power BI med en Office 365-partner
-              href: service-admin-syndication-partner.md
-        - name: Använda administratörsportalen
-          href: service-admin-portal.md
-        - name: Var finns min klient?
-          href: service-admin-where-is-my-tenant-located.md
-        - name: Hitta användare som har loggat in
-          href: service-admin-access-usage.md
-        - name: Granska Power BI
-          href: service-admin-auditing.md
-        - name: Spåra tjänstens hälsotillstånd
-          href: service-admin-health.md
-        - name: Stänga ditt Power BI-konto
-          href: service-admin-closing-your-account.md
-        - name: Power BI och ExpressRoute
-          href: service-admin-power-bi-expressroute.md
-        - name: Använda Azure AD B2B
-          href: service-admin-azure-ad-b2b.md
-        - name: Säkerhet på radnivå med Power BI
-          href: service-admin-rls.md
-        - name: Power BI-arkiverad arbetsyta
-          href: service-admin-power-bi-archived-workspace.md
-        - name: Konfigurera mobilappar med Intune
-          href: service-admin-mobile-intune.md
-    - name: Referens
-      items:
-        - name: 'PowerShell, REST API: er och .NET SDK'
-          href: service-admin-reference.md
-        - name: Power BI-cmdletar för PowerShell
-          href: 'https://docs.microsoft.com/powershell/power-bi/'
-          maintainContext: true
-        - name: Referens för tjänst-URL
-          href: power-bi-whitelist-urls.md
-    - name: Resurser
-      items:
-        - name: Power BI-styrnings- och distributionsmetoder
-          href: service-admin-governance.md
-        - name: Power BI-säkerhet
-          href: service-admin-power-bi-security.md
 - name: Vägledning
   items:
     - name: Översikt
@@ -1340,9 +1141,11 @@
       href: guidance/import-modeling-data-reduction.md
     - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
       href: guidance/dax-divide-function-operator.md
+    - name: Lämplig användning av felfunktioner
+      href: guidance/dax-error-functions.md
     - name: Metodtips för dataflöden
       href: service-dataflows-best-practices.md
-    - name: Vitböcker
+    - name: Datablad
       items:
         - name: Översikt vitböcker
           href: whitepapers.md

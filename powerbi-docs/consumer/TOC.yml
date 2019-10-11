@@ -12,6 +12,8 @@
           href: end-user-home.md
         - name: Navigera i det "nya utseendet"
           href: ../service-new-look.md
+        - name: 'Det ”nya utseendet”: Var finns åtgärderna?'
+          href: ../service-new-look.md
     - name: Snabbstarter
       items:
         - name: Lär dig hitta i Power BI
@@ -62,11 +64,11 @@
               href: end-user-visual-type.md
             - name: Visa data som används för att skapa visualiseringen
               href: end-user-show-data.md
-            - name: Öka detaljnivån i en visualisering i Power BI
+            - name: Ta bort en visualisering i Power BI
               href: end-user-drill.md
             - name: Interagera med ArcGIS-kartor
               href: ../power-bi-visualizations-arcgis.md
-        - name: Vanliga aktiviteter
+        - name: Vanliga uppgifter
           items:
             - name: Exportera data till Excel
               href: end-user-export.md
@@ -76,7 +78,7 @@
               href: end-user-focus.md
             - name: 'Favoritmarkera instrumentpaneler, rapporter och appar i Power BI'
               href: end-user-favorite.md
-            - name: 'Skriva ut en instrumentpanel, skriva ut en panel på instrumentpanelen, skriva ut en rapportsida'
+            - name: 'Skriva ut en instrumentpanel, skriva ut en enskild panel på en instrumentpanel, skriva ut en rapportsida'
               href: end-user-print.md
             - name: Visa relaterat innehåll
               href: end-user-related.md
@@ -84,7 +86,7 @@
               href: end-user-recent.md
             - name: Visa innehåll i Delat med mig-containern
               href: end-user-shared-with-me.md
-            - name: Prenumerera på en rapport eller instrumentpanel
+            - name: Prenumerera på en rapport eller en instrumentpanel
               href: end-user-subscribe.md
             - name: Söka efter och sortera innehåll i Power BI
               href: end-user-search-sort.md
@@ -104,11 +106,11 @@
               href: end-user-connect-to-services.md
             - name: Hämta en exempelapp från AppSource
               href: end-user-app-marketing.md
-        - name: Ställa frågor om dina data
+        - name: Ställ frågor till dina data
           items:
-            - name: Frågor och svar i Power BI
+            - name: Q&A i Power BI
               href: end-user-q-and-a.md
-            - name: Tips för att ställa frågor med Frågor och svar i Power BI
+            - name: Tips om att ställa frågor med Q&A i Power BI
               href: end-user-q-and-a-tips.md
     - name: Resurser
       items:
@@ -118,7 +120,7 @@
           href: end-user-faq.md
         - name: Webbläsare som stöds
           href: end-user-browsers.md
-        - name: Typer av Quick Insights som stöds av Power BI
+        - name: Typer av Quick Insights som stöds i Power BI
           href: end-user-insight-types.md
 - name: Power BI-mobilappar
   items:
@@ -148,7 +150,7 @@
       items:
         - name: Alla mobilappar
           items:
-            - name: Instrumentpaneler för mobilt Power BI
+            - name: Instrumentpaneler för mobila Power BI
               href: mobile/mobile-apps-view-dashboard.md
             - name: Rapporter i mobilapparna
               href: mobile/mobile-reports-in-the-mobile-apps.md
@@ -160,15 +162,15 @@
               href: mobile/mobile-apps-favorites.md
             - name: Konfigurera rapportinteraktion i mobilapparna (endast telefon)
               href: mobile/mobile-app-single-tap.md
-            - name: Ställa in dataaviseringar i Power BI-mobilapparna
+            - name: Ställ in dataaviseringar i Power BI-mobilapparna
               href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-            - name: Få aviseringar i Power BI-mobilapparna
+            - name: Hämta aviseringar i Power BI-mobilapparna
               href: mobile/mobile-apps-notification-center.md
-            - name: Skapa en djuplänk till en specifik plats
+            - name: Skapa en djuplänk som går till en viss plats
               href: mobile/mobile-apps-deep-link-specific-location.md
             - name: Filtrera en rapport efter plats i Power BI-mobilapparna
               href: mobile/mobile-apps-geographic-filtering.md
-            - name: Använda OAuth för att ansluta till Reporting Services
+            - name: Använda OAuth för anslutning till Reporting Services
               href: mobile/mobile-oauth-ssrs.md
         - name: iOS och Android
           items:
@@ -178,7 +180,7 @@
               href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
             - name: Få åtkomst till innehåll från en extern organisation (B2B)
               href: mobile/mobile-apps-b2b.md
-            - name: Skanna en Power BI QR-kod från din telefon
+            - name: Skanna en streckkod för Power BI från telefonen
               href: mobile/mobile-apps-qr-code.md
             - name: Kommentera och dela i mobilappar
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
@@ -196,7 +198,7 @@
               href: mobile/mobile-apps-iOS-siri-Shortcuts.md
             - name: iOS-enhetssökningsintegrering
               href: mobile/mobile-apps-iOS-search-integration.md
-            - name: Power BI-appen för Apple Watch
+            - name: Power BI-app för Apple Watch
               href: mobile/mobile-apple-watch.md
             - name: Konfigurera med hjälp av mobilenhetshantering
               href: mobile/mobile-app-configuration.md
@@ -208,7 +210,7 @@
               href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
             - name: Åtgärda "Android System WebView måste uppdateras"
               href: mobile/mobile-android-error-update-android-system-webview.md
-        - name: Power BI-appen för Windows 10-enheter
+        - name: Power BI-app för Windows 10-enheter
           items:
             - name: Kom igång med Windows 10-appen
               href: mobile/mobile-windows-10-phone-app-get-started.md

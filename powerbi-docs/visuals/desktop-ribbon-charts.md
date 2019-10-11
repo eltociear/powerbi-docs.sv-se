@@ -1,6 +1,6 @@
 ---
 title: Använda banddiagram i Power BI
-description: Skapa och använda banddiagram i Power BI-tjänsten och Power BI Desktop
+description: Skapa och använda banddiagram i Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -10,20 +10,34 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3400071c6b8cee472bb61475e6d3482189680563
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: e6044f3a2cfdbfc40d0497ebde25780336dc1dc4
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840097"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715480"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Använda banddiagram i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Du kan använda banddiagram för att visualisera data och snabbt avgöra vilken datakategori som har högst rangordning (störst värde). Banddiagram är effektiva för att visa en rangordningsförändring med den högsta rangordningen (värdet) längst upp för varje tidsperiod. 
 
-![banddiagram](media/desktop-ribbon-charts/ribbon-charts_01.png)
+![banddiagram](media/desktop-ribbon-charts/ribbon-charts-01.png)
+
+## <a name="prerequisites"></a>Förutsättningar
+
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+1. Välj **Arkiv** > **Öppna** uppe till vänster på menyraden
+   
+2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelsanalys**
+
+1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
 
 ## <a name="create-a-ribbon-chart"></a>Skapa ett banddiagram
-Om du vill följa med, kan du öppna [exempelrapporten över detaljhandelsanalys](../sample-retail-analysis.md). 
 
 1. Skapa ett banddiagram genom att välja **Banddiagram** i fönstret **Visuella objekt**.
 
@@ -31,13 +45,13 @@ Om du vill följa med, kan du öppna [exempelrapporten över detaljhandelsanalys
 
     Banddiagram jämför en datakategori under en tidsperiod med band, vilket innebär att du kan se vilken rangordning en viss kategori har under loppet av diagrammets x-axel (vanligtvis tidslinjen).
 
-2. Välj fält för **Axel**, **Förklaring** och **Värde**.  I det här exemplet har vi valt: **Date** (Datum), **Category** (Kategori) och **This year sales** (Det här årets försäljning).  
+2. Välj fält för **Axel**, **Förklaring** och **Värde**.  I det här exemplet har vi valt: **Lagra** > **OpenDate**, **Artikel** > **Kategori** och **Försäljning** > **Årets försäljning** > **Värde**.  
 
     ![markerade fält](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
 
-    Eftersom datauppsättningen bara innehåller data för ett år har vi tagit bort fältet **Year** (År) från **Axel**. 
+    Eftersom datauppsättningen bara innehåller data för ett år har vi tagit bort fältet **År** och **Kvartal** från**Axel**.
 
-3. Banddiagrammet visar rangordningen för varannan månad. Observera hur rangordningen ändras över tid.  Till exempel flyttar kategorin Home (Hem) från tredje till fjärde och tillbaka till tredje igen. Kategorin Juniors (Juniorsäljare) från tredje till femte i July (juli). 
+3. Banddiagrammet visar rangordningen för varje månad. Observera hur rangordningen ändras över tid. Kategorin Home (Hem) flyttas till exempel från andra till femte från februari till mars.
 
     ![banddiagram](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
@@ -57,7 +71,7 @@ Eftersom banddiagrammet inte har några y-axeletiketter kan du vilja lägga till
 
 ![formateringsalternativ för dataetiketter](media/desktop-ribbon-charts/power-bi-labels.png)
 
-Ange formateringsalternativ för dina dataetiketter.  I det här exemplet har vi ställt in textfärgen på vit, decimaler på noll och visningsenheter på tusental. 
+Ange formateringsalternativ för dina dataetiketter. I det här exemplet har vi ställt in textfärgen på vit och visningsenheter på tusental.
 
 ![bandmall i visualiseringsfönstret](media/desktop-ribbon-charts/power-bi-data-labels.png)
 

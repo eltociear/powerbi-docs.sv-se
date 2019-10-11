@@ -3,20 +3,19 @@ title: Slutanvändares vanliga frågor och svar i Power BI
 description: Bläddra i en lista med vanliga frågor och svar om Power BI-tjänsten och Power BI-mobilapparna.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 6/17/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: bf3e7b790788c8ce21b222a083a853b06185acc0
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654148"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943329"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Vanliga frågor och svar om Power BI
 
@@ -33,27 +32,17 @@ Power BI Pro är en individuell licens som ger åtkomst till allt innehåll och 
 
 Power BI Premium tillhandahåller dedikerad kapacitet för att erbjuda mer enhetlig prestanda. Det ger även stöd för större datavolymer i Power BI. För enskilda användare möjliggör Premium även omfattande distribution av innehåll av Pro-användare utan att det krävs licenser per användare för mottagare som visar innehållet.
 
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Vad händer om min Power BI Pro-licens går ut?
-
-Det finns en respitperiod efter att en Power BI Pro-licens har gått ut. För licenser som är en del av ett volymlicensköp är respitperioden 90 dagar. Om du har köpt licensen direkt är respitperioden 30 dagar.
-
-Power BI Pro har samma prenumerationslivscykel som Office 365. Mer information finns i [Vad händer med mina data och min åtkomst när min Office 365 för företag-prenumeration går ut?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
-
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Vad händer om jag har frågor om Power BI Premium?
 
 För frågor som rör Power BI Premium, se [Power BI Premium, vanliga frågor och svar](../service-premium-faq.md).
 
-## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Hur tar jag reda på vilka i min organisation som har ett Power BI-konto?
-
-Du kan se Azure Active Directory-rapporten för integrerade program för Power BI för att se aktiva användare inom organisationen. Azure AD-rapporten visar inte vilken typ av licens varje användare har. Den rapporterar endast vilka användare har loggat in till Power BI och när de har loggat in. Mer information finns i [Hitta Power BI-användare som har loggat in](../service-admin-access-usage.md).
-
 ## <a name="what-is-power-bi-desktop"></a>Vad är Power BI Desktop?
 
-Power BI Desktop är ett kostnadsfritt program som du kan installera direkt på din dator. Power BI Desktop fungerar sömlöst med Power BI-tjänsten.  Datavetare, administratörer och utvecklare arbetar med Power BI Desktop för att framställa rapporter och göra dem tillgängliga för användare av Power BI-tjänsten, som du. Läs mer om [vad Power BI Desktop är](../desktop-what-is-desktop.md).
+Power BI Desktop är ett kostnadsfritt program som du kan installera direkt på din dator. Power BI Desktop fungerar sömlöst med Power BI-tjänsten.  Datavetare, administratörer och utvecklare arbetar med Power BI Desktop för att framställa rapporter och göra dem tillgängliga för *konsumenter* av Power BI-tjänsten, som du. Läs mer om [vad Power BI Desktop är](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service"></a>Vad behöver jag för att använda Power BI-tjänsten?
 
-Det räcker med en webbläsare och en jobbmejl. Du kan registrera dig med en e-postadress av typen *.gov* eller *.mil*. Mer information finns på sidan [Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten](../service-govus-signup.md).
+Det räcker med en webbläsare och en jobbmejl. Du kan också registrera dig med en e-postadress av typen *.gov* eller *.mil*. Mer information finns på sidan [Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten](../service-govus-signup.md).
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Varför måste jag logga med min jobbmejl?
 
@@ -88,7 +77,7 @@ Följande resurser är tillgängliga för att komma igång:
 * [Power BI-bloggen](http://blogs.msdn.com/b/powerbi/)
 * [Webbseminarier](../webinars.md)
 * Komma igång-videor på vår [YouTube-kanal](https://www.youtube.com/user/mspowerbi)
-* Artikeln [Kom igång med Power BI](../service-get-started.md)
+* Artikeln [Kom igång med Power BI som *konsument*](power-bi-consumer-landing.md)
 * [Anslut till vår community](https://community.powerbi.com/) och ställ frågor
 * Se [10 tips för att få hjälp](../service-tips-for-finding-help.md) för fler förslag.
 
@@ -126,6 +115,7 @@ Precis som med många andra Microsoft-tjänster och program så erbjuder Power B
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Vad är Power BI?](../power-bi-overview.md)
+* [Vad är en Power BI-konsument?](end-user-consumer.md)
+* [Hur använder en konsument Power BI?](end-user-reading-view.md)
 * Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).

@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/04/2019
-ms.openlocfilehash: 6ab7338029118ab6478ad345776e2b9f13c34123
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.date: 10/04/2019
+ms.openlocfilehash: 97b9d68a8fa17a3ce1758eeaa16d2503a38a4743
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751515"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968502"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
@@ -123,6 +123,7 @@ Vi stöder följande datakällor:
 - Azure Analysis Services (via enkel inloggning (SSO) och oAuth)
 - Azure SQL Data Warehouse
 - Azure SQL Database (användarnamn/lösenord, enkel inloggning och oAuth)
+- Azure SQL-hanterad instans via offentlig slutpunkt (användarnamn/lösenord)
 - SQL Server*
 - SQL Server Analysis Services (SSAS), tabell- (DAX) och multidimensionella (MDX) modeller* 
 - Oracle* 

@@ -10,24 +10,22 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 385cae5511d89ec86e52232066227687673f9523
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d627b74d4c681e409424b18a117743e0488dc34c
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394121"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715450"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Högdensitetssampling i Power BI-punktdiagram
-Från och med september 2017-versionen av **Power BI Desktop** och uppdateringar av **Power BI-tjänsten**, finns en ny samplingsalgoritm tillgänglig som förbättrar hur punktdiagram visar högdensitetsdata.
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+Från och med september 2017-versionen av **Power BI Desktop** finns en ny samplingsalgoritm tillgänglig som förbättrar hur punktdiagram visar högdensitetsdata.
 
 Du kan till exempel skapa ett punktdiagram från din organisations försäljningsaktivitet där varje butik har tiotusentals datapunkter varje år. Ett punktdiagram med sådan försäljningsinformation skulle sampla data (välja en meningsfull återgivning av dessa data som illustrerar hur försäljningen skedde över tid) från tillgängliga data, samt skapa ett punktdiagram med flera serier som därmed representerar underliggande data. Detta är vanligt vid högdensitetspunktdiagram. Power BI har förbättrat sin sampling av högdensitetsdata, vilket beskrivs i den här artikeln.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
-
-> [!NOTE]
-> Algoritmen för **Högdensitetssampling** som beskrivs i den här artikeln är tillgänglig i punktdiagram för både **Power BI Desktop** och **Power BI-tjänsten**.
-> 
-> 
+![exempel på punktdiagram](media/desktop-high-density-scatter-charts/high-density-scatter-charts-01.png)
 
 ## <a name="how-high-density-scatter-charts-work"></a>Så här fungerar punktdiagram med hög densitet
 Tidigare valde **Power BI** en uppsättning samplade datapunkter från alla underliggande data på ett deterministiskt sätt för att skapa ett punktdiagram. Mer specifikt väljer Power BI de första och sista raderna med data i punktdiagramserien och delar upp de återstående raderna jämnt så att 3 500 datapunkter fördelas över punktdiagrammet. Till exempel om urvalet hade 35 000 rader skulle den första och sista raden väljas för punktdiagrammet. Var tionde rad utgör sedan en punkt i diagrammet (35 000/10 = var tionde rad = 3 500 datapunkter). Tidigare visades inte null-värden som inte kunde inte ritas (till exempel textvärden) i dataserien och således beaktades de inte vid generering av det visuella objektet. Med sådan sampling är den upplevda tätheten av punktdiagrammet baserad på representativa datapunkter. Därmed är den underförstådda visuella tätheten en följd av de valda punkterna och inte hela datasamlingen.
@@ -60,20 +58,22 @@ Det finns omständigheter då **högdensitetssampling** inte kan tillämpas på 
 
 * Om du högerklickar på ett värde under **Information**och väljer **Visa poster utan data** från menyn återgår punktdiagrammet till den ursprungliga algoritmen.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_02.png)
+  ![exempel på visning av poster utan data](media/desktop-high-density-scatter-charts/high-density-scatter-charts-02.png)
 * Alla värden i axeln **Spela upp** resulterar i punktdiagrammet återgår till den ursprungliga algoritmen.
 * Om både X- och Y-axlarna saknas på ett punktdiagram återgår diagrammet till den ursprungliga algoritmen.
 * Om du använder en **förhållanderad** i fönstret **Analys** återgår diagrammet till den ursprungliga algoritmen.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
+  ![exempel på användning av ratiolinje](media/desktop-high-density-scatter-charts/high-density-scatter-charts-03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Så här aktiverar du Högdensitetssampling för ett punktdiagram
 Om du vill aktivera **Högdensitetssampling** väljer du ett punktdiagram, går till rutan **Formatering** och expanderar kortet **Allmänt**. Mot slutet av det kortet flyttar du skjutreglaget **Högdensitetssampling** till **På**.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
+![exempel på högdensitetssampling](media/desktop-high-density-scatter-charts/high-density-scatter-charts-04.png)
 
 > [!NOTE]
 > När skjutreglaget är aktiverat försöker Power BI använda algoritmen för **Högdensitetssampling** när det är möjligt. När algoritmen inte kan användas (till exempel om du placerar ett värde på axeln *Spela upp*) stannar skjutreglaget kvar i läget **På**, även om diagrammet har återställts till algoritmen som standard. Om du sedan tar bort ett värde från axeln *Spela upp* (eller om villkoren för att aktivera användningen av algoritmen för högdensitetssampling ändras) kommer diagrammet att använda högdensitetssampling automatiskt för diagrammet, eftersom funktionen är aktiv.
+> 
+
 > 
 > [!NOTE]
 > Datapunkter grupperas eller väljs av indexet. En förklaring påverkar inte samplingsfrekvensen för algoritmen, utan påverkar endast sorteringen av den visuella informationen.

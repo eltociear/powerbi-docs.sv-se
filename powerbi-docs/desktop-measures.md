@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d5ada41ef4941f14118b777e37e731337a5282d0
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730141"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715381"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mått i Power BI Desktop
 
 **Power BI Desktop** hjälper dig att skapa insikter om dina data med bara några klickningar. Men data innehåller ibland inte allt du behöver för att besvara några av dina viktigaste frågor. Mått kan vara en hjälp på vägen.
 
-Mått används i några av de vanligaste dataanalyserna. Enkla summeringar, till exempel summor, medelvärden, lägsta, högsta och antal, kan ställas in via fältkällan. Detta beskrivs i videon [Summarization and category](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) (Summering och kategori). Du kan skapa mer avancerade beräkningar med hjälp av en DAX-formel. Det beräknade resultatet av mått ändras alltid när du interagerar med dina rapporter, vilket ger snabb och dynamisk utforskning av dina data. Låt oss ta en närmare titt.
+Mått används i några av de vanligaste dataanalyserna. Enkla summeringar, till exempel summor, medelvärden, lägsta, högsta och antal, kan ställas in via fältkällan. Det beräknade resultatet av mått ändras alltid när du interagerar med dina rapporter, vilket ger snabb och dynamisk utforskning av dina data. Låt oss ta en närmare titt. Mer information finns i [Skapa beräknade mått](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## <a name="understanding-measures"></a>Förstå mått
 

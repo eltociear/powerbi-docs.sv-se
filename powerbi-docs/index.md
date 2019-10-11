@@ -8,12 +8,12 @@ ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
 ms:date: 06/10/2019
-ms.openlocfilehash: e04aab31fb84d6fefc5f3241a0df0ad511cb450e
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: dc8292de402474bee812f5ed489dd89ba2afe5f3
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946289"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239871"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -65,7 +65,7 @@ ms.locfileid: "71946289"
                                 </a>
                             </li>
                             <li>
-                                <a href="service-admin-administering-power-bi-in-your-organization.md">
+                                <a href="admin/index.yml">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -132,7 +132,7 @@ ms.locfileid: "71946289"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Interaktiv utbildning</h3>
+                                                    <h3>Guidad utbildning</h3>
                                                     <p>Börja din utbildning om Power BI med denna sekvenserade samling kurser.</p>
                                                 </div>
                                             </div>

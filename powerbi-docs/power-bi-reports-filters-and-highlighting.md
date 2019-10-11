@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: cfae856cf80027a92fb7d19c27b990aa659d992d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342153"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968758"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filter och markeringar i Power BI-rapporter
  Den här artikeln ger en introduktion till filtrering och markering i Power BI-tjänsten. Upplevelsen är nästan exakt samma som i Power BI Desktop. *Filter* ta bort allt utan de data som du vill fokusera på. *Markering* är inte samma sak som filtrering. Data tas inte bort. I stället markeras en delmängd av synliga data; de data som inte markeras förblir synliga men nedtonade.
@@ -28,7 +28,7 @@ Det finns många olika metoder för att filtrera och markera rapporter i Power B
 * En detaljerad genomgång av [de filtrerings- och markeringskontroller som är tillgängliga i redigeringsvyn](power-bi-report-add-filter.md) i Power BI Desktop och Power BI-tjänsten. I artikeln finns en detaljerad genomgång av typer av filter såsom datum och tid, numeriskt samt text. Den omfattar även skillnaderna mellan grundläggande och avancerade alternativ.
 * Nu när du har lärt dig hur filter och markeringar fungerar som standard, [kan du lära dig hur man ändrar hur visualiseringar på en sida kan filtrera och markera varandra](service-reports-visual-interactions.md)
 
-**Visste du att?** Power BI har en ny filterupplevelse som för närvarande är i förhandsversion. Läs mer om [den nya filterupplevelsen i Power BI-rapporter](power-bi-report-filter.md).
+**Visste du att?** Power BI har en ny filterupplevelse. Läs mer om [den nya filterupplevelsen i Power BI-rapporter](power-bi-report-filter.md).
 
 ![Ny filterupplevelse](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750910"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715198"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -24,7 +24,7 @@ ms.locfileid: "70750910"
 Den nya arbetsyteupplevelsen har blivit allmänt tillgänglig (GA) och är nu standardarbetsytan. Du kan fortfarande fortsätta att skapa och använda [klassiska arbetsytor](service-create-workspaces.md) baserat på Office 365-grupper. 
 
 > [!NOTE]
-> Om du vill inför säkerhet på radnivå (RLS) för användare som bläddrar i innehållet i en arbetsyta, kan du använda dig av läsarrollen. Om läsarrollen ännu inte finns i din klient, kan du fortsätta att använda [klassiska arbetsytor](service-create-workspaces.md) och välja alternativet **Medlemmar kan bara visa Power BI-innehåll**. Som alternativ kan du också publicera en Power BI-app till de användarna eller använda delning för att distribuera innehåll.
+> Om du vill inför säkerhet på radnivå (RLS) för användare som bläddrar i innehållet i en arbetsyta, kan du använda dig av läsarrollen. Om du vill införa säkerhet på radnivå (RLS) utan att ge åtkomst till arbetsytan kan du publicera en Power BI-app för dessa användare eller distribuera innehåll via delning.
 
 Med de nya arbetsytorna kan du:
 
@@ -73,11 +73,14 @@ Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltag
 | Tillåta att andra delar objekt igen. |  X | X  |   |   |
 | Skapa, redigera och ta bort innehåll på arbetsytan.  |  X | X  | X  |   |
 | Publicera rapporter till arbetsytan och ta bort innehåll.  |  X | X  | X  |   |
-| Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan. |  X | X  | X  | X <sup>1</sup>  |
-| Kopiera en rapport. | X | X | X | X <sup>1</sup> |
+| Skapa en rapport på en annan arbetsyta baserat på en datamängd i den här arbetsytan. |  X | X  | X  |   |
+| Kopiera en rapport. | X | X | X |  |
 | Visa och interagera med ett objekt. |  X | X  | X  | X  |
 
-**1** Kräver en Power BI Pro-licens och [skapa-behörighet för datamängder](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
+> [!NOTE]
+>För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste du uppfylla följande kriterier:
+>- Du måste ha en Power BI Pro-licens. 
+>- Du måste ha behörigheten Skapa för datauppsättningen. Personer med administratörs- medlems- och deltagarroller har behörigheten Skapa för datauppsättningar i den här arbetsytan via rollen för arbetsytan.
  
 ## <a name="licensing"></a>Licensiering
 Alla som du lägger till i en arbetsyta i den delade kapaciteten behöver en Power BI Pro-licens. På arbetsytan kan användarna samarbeta kring instrumentpaneler och rapporter som du planerar att publicera till en bredare publik eller hela organisationen. 

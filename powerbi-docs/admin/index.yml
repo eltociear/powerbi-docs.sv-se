@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Power BI för administratörer
+summary: Med Power BI-dokumentation får du expertinformation och hjälp med dina behov, oavsett hur du använder Power BI.
+metadata:
+  title: Power BI för administratörer
+  description: Med Power BI-dokumentation får du expertinformation och hjälp med dina behov, oavsett hur du använder Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/04/2019
+  ms.openlocfilehash: 8209cc755b33887c533e9f90b9b1cd7a5021490e
+  ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+  ms.translationtype: HT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 10/10/2019
+  ms.locfileid: "72245660"
+landingContent:
+- title: Om Power BI för administratörer
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är Power BI-administration?
+      url: ../service-admin-administering-power-bi-in-your-organization.md
+  - linkListType: concept
+    links:
+    - text: Administrationsrollen i Office 365
+      url: ../service-admin-role.md
+- title: Kom igång
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Licensiering för din organisation
+      url: ../service-admin-licensing-organization.md
+    - text: Använda administratörsportalen
+      url: ../service-admin-portal.md
+  - linkListType: how-to-guide
+    links:
+    - text: Köp Power BI Pro
+      url: ../service-admin-purchasing-power-bi-pro.md
+    - text: Registrera dig för en utvärderingsversion av Office 365
+      url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+    - text: Lägga till Power BI med en Office 365-partner
+      url: ../service-admin-syndication-partner.md
+- title: Klientorganisationer
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Var finns min klientorganisation?
+      url: ../service-admin-where-is-my-tenant-located.md
+    - text: Hitta användare som har loggat in
+      url: ../service-admin-access-usage.md
+    - text: Granska Power BI
+      url: ../service-admin-auditing.md
+    - text: Spåra tjänstens hälsotillstånd
+      url: ../service-admin-health.md
+    - text: Stänga ditt Power BI-konto
+      url: ../service-admin-closing-your-account.md

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2de6d79971e59879e65d2e3cf652caf156d80cf
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904133"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715530"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Skapa de nya arbetsytorna i Power BI
 
@@ -28,7 +28,7 @@ Detta har ändrats. Med de nya arbetsytorna kan du:
 - Använda mer detaljerade arbetsyteroller för mer flexibel hantering av behörigheter på en arbetsyta.
 
 > [!NOTE]
-> Om du vill framtvinga säkerhet på radnivå (RLS) för Power BI Pro-användare som söker efter innehåll i en arbetsyta fortsätter du att använda [klassiska arbetsytor](service-create-workspaces.md). Välj alternativet **Medlemmar kan bara se Power BI-innehåll**. Som alternativ kan du också publicera en Power BI-app till de användarna eller använda delning för att distribuera innehåll. Den kommande visningsrollen kommer att aktivera det här scenariot i framtiden i de nya arbetsytorna.
+> Om du vill inför säkerhet på radnivå (RLS) för Power BI Pro-användare som bläddrar i innehållet i en arbetsyta, kan du tilldela användarna läsarrollen.
 
 Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-workspaces.md).
 
@@ -40,9 +40,9 @@ Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-worksp
 
 2. Du skapar en uppgraderad arbetsyta automatiskt om du inte väljer att **återgå till klassiskt**.
    
-     ![Den nya arbetsyteupplevelsen](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     ![Ny arbetsyteupplevelse](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Om du väljer **återgå till klassiskt**skapar du en arbetsyta som baseras på en Office 365-grupp. Använd det här alternativet om du behöver alternativ **Medlemmar kan bara se Power BI-innehåll** för att framtvinga säkerhet på radnivå (RLS) för medlemmar i arbetsytan.
+     Om du väljer **återgå till klassiskt**skapar du en [arbetsyta som baseras på en Office 365-grupp](service-create-workspaces.md). 
 
 2. Ge arbetsytan ett namn. Om namnet inte är tillgängligt kan du redigera det för att få fram ett unikt namn.
    

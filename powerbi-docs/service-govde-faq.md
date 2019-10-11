@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 16114793b190996b3ef9e800e562dd0caf62089c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 805856082b3bef0f92674415eb16da1cc108cdf2
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514808"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715375"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Vanliga frågor för Power BI för tyska molnkunder
 **Power BI-tjänsten** har en version som är tillgänglig för kunder i EU/Europeiska frihandelsavtalet (EU/EFTA), vilket ofta kallas Microsoft Cloud Deutschland (MCD). Den **Power BI-tjänsten** version som beskrivs i den här artikeln är utformad för kunder som tillhör myndigheter i EU-/EFTA-länder och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten** eller Power BI-tjänster för andra myndigheter.
@@ -32,10 +32,10 @@ Följande frågor och svar innehåller viktig information för Power BI Pro-tjä
    Power BI-tjänsten för kunder i EU/EFTA, som även kallas Microsoft Cloud Deutschland (MCD), är en EU/EFTA-kompatibel molnlösning där Power BI-tjänsten levereras från tyska datacenter. Alla kunddata i molnet för Power BI-tjänsten för EU/EFTA lagras i Tyskland med T-Systems i rollen som oberoende dataförvaltare i Tyskland där all fysisk och logisk åtkomst regleras av tysk lagstiftning. Power BI-molntjänsten för EU/EFTA kräver ett separat och åtskilt konto från kommersiella versioner av Power BI-tjänsten. Mer information om Microsoft Cloud Deutschland finns [här](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud).
 2. **Var kan jag hitta priser och registrera mig för Power BI-molnet för Tyskland?**
    
-   Du kan hitta all information på startsidan för [Power BI-molnet för Tyskland](https://powerbi.microsoft.com/power-bi-germany/), inklusive information om priser. På sidan kan du också hitta en länk för att registrera dig för **Power BI Pro-tjänsten** 30-dagars utvärderingsversion med 25 användarlicenser. Som en del av utvärderingsregistreringen har du ett alternativ för att köpa eller lägga till ytterligare licenser efter behov. Vi erbjuder också Enterprise-avtal (EA) och prissättning för myndigheter och ideella organisationer. Kontakta din Microsoft-kundrepresentant för mer information.
+   Du kan hitta all information på startsidan för [Power BI-molnet för Tyskland](https://powerbi.microsoft.com/power-bi-germany/), inklusive information om priser. På den sidan kan du också hitta en länk för att registrera dig för **Power BI Pro-tjänsten** med en 30-dagars utvärderingsversion med 25 användarlicenser. Som en del av utvärderingsversionen kan du köpa eller lägga till ytterligare licenser vid behov. Vi erbjuder också Enterprise-avtal (EA) och prissättning för myndigheter och ideella organisationer. Kontakta din Microsoft-kundrepresentant för mer information.
 3. **Jag har en tysk molnklient som del av Azure Germany och/eller Office 365 Germany-prenumerationer. Kan jag använda min befintlig klient för att registrera mig för Power BI Tyskland?**
    
-   Ja. Som en del av inloggningsprocessen kan du logga in med ett befintligt klientadministratörkonto för molnet för Tyskland och lägga till Power BI Pro-licenser i din befintliga klient i molnet för Tyskland. Observera att Tyskland klienter och användarkonton skiljer sig från Power BI-Molntjänsten för Tyskland.
+   Ja. Som en del av inloggningsprocessen kan du logga in med ett befintligt klientadministratörkonto för molnet för Tyskland och lägga till Power BI Pro-licenser i din befintliga klient i molnet för Tyskland. Observera att klienter och användarkonton för molnet i Tyskland skiljer sig från Power BI-molntjänsten för Tyskland.
 4. **Finns det en kostnadsfri version av Power BI-molntjänsten för Tyskland?**
    
    Nej. Vi erbjuder inte kostnadsfria licensversioner av Power BI-molntjänsten för Tyskland. Men vi rekommenderar att du registrerar dig för [den kostnadsfria versionen av Power BI i det offentliga molnet](https://powerbi.microsoft.com/get-started/) om dina affärsbehov uppfylls med gratisversionen av Power BI.
@@ -56,7 +56,7 @@ Följande frågor och svar innehåller viktig information för Power BI Pro-tjä
    * Power BI Embedded (avgränsad uppmätt ISV-licensiering, kommer att erbjudas via [Microsoft Azure Tyskland](https://azure.microsoft.com/overview/clouds/germany/) i framtiden)
 7. **Var kan jag hitta specifik konfigureringsinformation för Power BI-molntjänsten för Tyskland för användning och integration i mina applikationer?**
    
-   Vi har uppdaterat våra utvecklarexempel på [SaaS-inbäddning](https://github.com/Microsoft/PowerBI-Developer-Samples) med konfigurationsinformation för Tyskland och andra Power BI-molnlösningar. Titta på den **Molnkonfigurationer** mappen i exemplen för molnspecifika slutpunkter för konfigurering av moln-specifika. I följande tabell visas olika konfigurationsslutpunkter för Power BI-molntjänsten för Tyskland (och offentligt moln som jämförelse).
+   Vi har uppdaterat våra utvecklarexempel på [SaaS-inbäddning](https://github.com/Microsoft/PowerBI-Developer-Samples) med konfigurationsinformation för Tyskland och andra Power BI-molnlösningar. Ta en titt på mappen **molnkonfigurationerna** i exemplen för molnspecifika slutpunkter för konfigurering. I följande tabell visas olika konfigurationsslutpunkter för Power BI-molntjänsten för Tyskland (och offentligt moln som jämförelse).
 
 | **Namnet på slutpunkten och/eller användning** | **URL till Power BI-molntjänsten för Tyskland** | **Motsvarande URL i offentligt moln (för jämförelse)** |
 | --- | --- | --- |
@@ -68,13 +68,13 @@ Följande frågor och svar innehåller viktig information för Power BI Pro-tjä
 | Resurs-Uri för Power BI-tjänsten |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
 | Bibliotek med anpassade visuella objekt |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Registrera en app för Power BI (inbäddade) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
-| Azure-portalen (för inbäddade) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
+| Azure-portalen (inbäddade) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Community |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
 ## <a name="next-steps"></a>Nästa steg
 Det finns olika typer av saker du kan göra med Power BI. Mer information och utbildning, inklusive en artikel som visar hur du registrerar dig för tjänsten, ta en titt i följande resurser:
 
-* [Guidad utbildning för Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Guidad utbildning för Power BI](guided-learning/index.md)
 * [Komma igång med Power BI-tjänsten](service-get-started.md)
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 

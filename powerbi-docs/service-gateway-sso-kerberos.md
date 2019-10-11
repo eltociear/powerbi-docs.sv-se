@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9958059fcf0d86323fc95f44f6fcfcb08fe7b52b
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 0fb52262790c6c1935d8152f043f726a9471817d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100452"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968976"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurera Kerberos-baserad enkel inloggning från Power BI-tjänsten till lokala datakällor
 
-Använd [Kerberos-begränsad delegering](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) för att aktivera sömlös anslutning med enkel inloggning. När enkel inloggning aktiveras blir det enkelt för Power BI-rapporter och instrumentpaneler att uppdatera data från lokala källor.
+Använd [Kerberos-begränsad delegering](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) för att aktivera sömlös anslutning med enkel inloggning. När enkel inloggning aktiveras blir det enkelt för Power BI-rapporter och instrumentpaneler att uppdatera data från lokala källor samtidigt som behörigheter på användarnivå på dessa källor respekteras.
 
 Flera objekt måste konfigureras för att Kerberos-begränsad delegering ska fungera korrekt, inklusive _Tjänsternas huvudnamn_ (SPN) och delegeringsinställningar på tjänstkonton.
 
@@ -60,7 +60,7 @@ Börja med att kontrollera om ett SPN redan har skapats för det domänkonto som
 
     Om fliken **Delegering** saknas i dialogrutan **Egenskaper**, kan du manuellt skapa ett SPN på det kontot för att aktivera den. Använd [setspn-verktyget](https://technet.microsoft.com/library/cc731241.aspx) som medföljer Windows (du måste ha domänadministratörsbehörighet för att kunna skapa ett SPN).
 
-    Tänk dig till exempel att gatewaytjänstkontot är **Contoso\GatewaySvc** och att namnet på den dator där gatewaytjänsten körs är **MyGatewayMachine**. För att ange SPN för gatewaytjänstkontot skulle du köra följande kommando:
+    Anta att gatewaytjänstkontot till exempel är **Contoso\GatewaySvc** och att namnet på datorn som gatewaytjänsten körs på är **MyGatewayMachine**. För att ange SPN för gatewaytjänstkontot skulle du köra följande kommando:
 
     ![Bild av kommandot som anger ett SPN](media/service-gateway-sso-kerberos/set-spn.png)
 
@@ -83,9 +83,9 @@ Vi behöver konfigurera Kerberos-begränsad delegering med protokollövergång. 
 
 Det här avsnittet förutsätter att du redan har konfigurerat SPN:er för dina underliggande datakällor (till exempel SQL Server, SAP HANA, SAP BW, Teradata eller Spark). Mer information om hur du konfigurerar dessa datakällors server-SPN:er finns i den tekniska dokumentationen för respektive databasserver. Se även rubriken *What SPN does your app require?* (Vilket SPN kräver din app?) i blogginlägget [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160) (Min Kerberos-checklista).
 
-I följande steg förutsätter vi att det finns en lokal miljö med två datorer: en gatewaydator och en databasserver som kör SQL Server som redan har konfigurerats för Kerberos-baserad enkel inloggning. Stegen kan användas för en av de andra datakällorna som stöds, förutsatt att datakällan redan har konfigurerats för Kerberos-baserad enkel inloggning. För det här exemplet förutsätter vi även att följande inställningar och namn finns:
+I följande steg förutsätter vi att det finns en lokal miljö med två datorer i samma domän: en gatewaydator och en databasserver som kör SQL Server som redan har konfigurerats för Kerberos-baserad enkel inloggning. Stegen kan användas för en av de andra datakällorna som stöds, förutsatt att datakällan redan har konfigurerats för Kerberos-baserad enkel inloggning. För det här exemplet förutsätter vi även att följande inställningar och namn finns:
 
-* Active Directory-domän (NetBIOS): Contoso
+* Active Directory-domän (NetBIOS): **Contoso**
 * Gatewaydatorns namn: **MyGatewayMachine**
 * Gatewaytjänstkonto: **Contoso\GatewaySvc**
 * Datornamn för SQL Server-datakällan: **TestSQLServer**
@@ -105,11 +105,11 @@ Så här konfigurerar du delegeringsinställningarna:
 
 6. I den nya dialogrutan väljer du **Användare eller datorer**.
 
-7. Ange tjänstkontot för datakällan. Till exempel kan en SQL Server-datakälla ha ett tjänstkonto såsom **Contoso\SQLService**. När kontot har lagts till väljer du **OK**.
+7. Ange tjänstkontot för datakällan. Till exempel kan en SQL Server-datakälla ha ett tjänstkonto såsom **Contoso\SQLService**. Ett lämpligt SPN för datakällan bör redan ha angetts för det här kontot. När kontot har lagts till väljer du **OK**.
 
 8. Välj det SPN som du skapade för databasservern. I vårt exempel börjar SPN:et med **MSSQLSvc**. Om du har lagt till både FQDN- och NetBIOS-SPN:et för din databastjänst, väljer du båda. Du kanske bara ser en.
 
-9. Välj **OK**. Du bör nu se SPN:et i listan.
+9. Välj **OK**. Du bör nu se SPN i listan över tjänster som gatewaytjänstkontot kan ge delegerade autentiseringsuppgifter till.
 
     ![Skärmbild av dialogrutan Egenskaper för gatewayanslutning](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
@@ -124,6 +124,8 @@ Använd [resursbaserade Kerberos-begränsad delegering](/windows-server/security
 
 I följande steg förutsätter vi att det finns en lokal miljö med två datorer i olika domäner: en gatewaydator och en databasserver som kör SQL Server som redan har konfigurerats för Kerberos-baserad enkel inloggning. Stegen kan användas för en av de andra datakällorna som stöds, förutsatt att datakällan redan har konfigurerats för Kerberos-baserad enkel inloggning. För det här exemplet så förutsätter vi även följande inställningar och namn:
 
+* Active Directory-domän på klientsidan (NetBIOS): **ContosoFrontEnd**
+* Active Directory-domän på serversidan (NetBIOS): **ContosoBackEnd**
 * Gatewaydatorns namn: **MyGatewayMachine**
 * Gatewaytjänstkonto: **ContosoFrontEnd\GatewaySvc**
 * Datornamn för SQL Server-datakällan: **TestSQLServer**
@@ -135,22 +137,26 @@ Baserat på dessa exempelnamn och -inställningar slutför du följande konfigur
 
     ![Egenskaper för gatewayanslutning](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
 
-2. Med hjälp av **Active Directory-användare och datorer** ser du på domänkontrollanten för domänen **ContosoBackEnd** till att inga delegeringsinställningar tillämpas för serverdelstjänstkontot. Se även till att attributet **msDS-AllowedToActOnBehalfOfOtherIdentity** för det här kontot inte anges. Du hittar attributet i **Attributredigeraren** såsom det visas i följande bild:
+2. Med hjälp av **Active Directory-användare och datorer** ser du på domänkontrollanten för domänen **ContosoBackEnd** till att inga delegeringsinställningar tillämpas för serverdelstjänstkontot.
 
     ![Egenskaper för SQL-tjänsten](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
 
-3. Skapa en grupp i **Active Directory-användare och datorer** på domänkontrollanten för domänen **ContosoBackEnd**. Lägg till gatewayens tjänstkonto till den här gruppen enligt följande bild. Bilden visar en ny grupp med namnet _ResourceDelGroup_ där gatewaytjänstkontot **GatewaySvc** lagts till i den här gruppen.
+3. Se även till att attributet **msDS-AllowedToActOnBehalfOfOtherIdentity** för det här kontot inte anges. Du hittar attributet i **Attributredigeraren** såsom det visas i följande bild:
+
+    ![Attribut för SQL-tjänst](media/service-gateway-sso-kerberos-resource/sql-service-attributes.png)
+
+4. Skapa en grupp i **Active Directory-användare och datorer** på domänkontrollanten för domänen **ContosoBackEnd**. Lägg till gatewayens tjänstkonto till den här gruppen enligt följande bild. Bilden visar en ny grupp med namnet _ResourceDelGroup_ där gatewaytjänstkontot **GatewaySvc** lagts till i den här gruppen.
 
     ![Gruppegenskaper](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-4. Öppna en kommandotolk och kör följande kommandon i domänkontrollanten för domänen **ContosoBackEnd** för att uppdatera attributet **msDS-AllowedToActOnBehalfOfOtherIdentity** för serverdelstjänstkontot:
+5. Öppna en kommandotolk och kör följande kommandon i domänkontrollanten för domänen **ContosoBackEnd** för att uppdatera attributet **msDS-AllowedToActOnBehalfOfOtherIdentity** för serverdelstjänstkontot:
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
     Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
-5. Du kan verifiera att uppdateringen avspeglas i fliken Attributredigeraren i egenskaperna för serverdelstjänstkontot i **Active Directory Users and Computers.**
+6. Du kan verifiera att uppdateringen avspeglas i fliken Attributredigeraren i egenskaperna för serverdelstjänstkontot i **Active Directory Users and Computers.** Nu ska **msDS-AllowedToActOnBehalfOfOtherIdentity** ha angetts.
 
 ## <a name="grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine"></a>Bevilja gatewaytjänstkontot lokala principrättigheter på gatewaydatorn
 
@@ -158,7 +164,7 @@ På den dator som kör gatewaytjänsten (**MyGatewayMachine** i vårt exempel) m
 
 1. På gatewaydatorn kör du: *gpedit.msc*.
 
-2. Gå till **Lokal datorprincip** > **Datorkonfiguration** > **Windows-inställningar** > **Säkerhetsinställningar** > **Lokala principer** > **Tilldelning av användarrättigheter**.
+2. Gå till **Lokal datorprincip** &gt; **Datorkonfiguration** &gt; **Windows-inställningar** &gt; **Säkerhetsinställningar** &gt; **Lokala principer** &gt; **Tilldelning av användarrättigheter**.
 
     ![Skärmbild av mappstrukturen i Lokal datorprincip](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
@@ -166,7 +172,7 @@ På den dator som kör gatewaytjänsten (**MyGatewayMachine** i vårt exempel) m
 
     ![Skärmbild av Personifiera en klientprincip](media/service-gateway-sso-kerberos/impersonate-client.png)
 
-    Högerklicka och öppna **Egenskaper**. Kontrollera listan med konton. Den måste innehålla gatewaytjänstkontot (**Contoso\GatewaySvc**).
+    Högerklicka och öppna **Egenskaper**. Kontrollera listan med konton. Det måste innehålla gatewaytjänstkontot (**Contoso\GatewaySvc** eller **ContosoFrontEnd\GatewaySvc**, beroende på typen av begränsad delegering).
 
 4. I principlistan under **Tilldelning av användarrättigheter** väljer du **Agera som del av operativsystemet (SeTcbPrivilege)** . Se till att gatewaytjänstkontot även finns med i listan över konton.
 
@@ -186,21 +192,21 @@ Om du inte har konfigurerat Azure AD Connect följer du dessa steg för att mapp
 
 1. För varje Power BI-tjänstanvändare som du vill aktivera enkel inloggning med Kerberos för anger du egenskapen `msDS-cloudExtensionAttribute1` för en lokal Active Directory-användare (med behörighet för enkel inloggning till din datakälla) till det fullständiga användarnamnet för Power BI-tjänstanvändaren. Om du till exempel loggar in på Power BI-tjänsten som `test@contoso.com` och vill mappa den här användaren till en lokal Active Directory-användare med behörigheter för enkel inloggning, till exempel `test@LOCALDOMAIN.COM`, anger du `test@LOCALDOMAIN.COM`-attributet `msDS-cloudExtensionAttribute1` till `test@contoso.com`.
 
-Du kan även ange egenskapen `msDS-cloudExtensionAttribute1` med hjälp av MMC-snapin-modulen Active Directory-användare och datorer (Microsoft Management Console).
-
-1. Som domänadministratör startar du Active Directory-användare och datorer, en MMC-snapin-modul.
-
-1. Högerklicka på domänen, välj Sök och ange kontonamnet för den lokala Active Directory-användare som du vill mappa till.
-
-1. Välj fliken **Redigera attribut**.
-
-    Leta upp `msDS-cloudExtensionAttribute1`-egenskapen och dubbelklicka på den. Ange värdet till det fullständiga användarnamnet för den användare som du använder för att logga in på Power BI-tjänsten.
-
-1. Välj **OK**.
-
-    ![Skärmbild av dialogrutan Redigera strängattribut](media/service-gateway-sso-kerberos/edit-attribute.png)
-
-1. Välj **Tillämpa**. Kontrollera att rätt värde har angetts i kolumnen **Värde**.
+    Du kan även ange egenskapen `msDS-cloudExtensionAttribute1` med hjälp av MMC-snapin-modulen Active Directory-användare och datorer (Microsoft Management Console):
+    
+    1. Starta Active Directory-användare och datorer som domänadministratör.
+    
+    1. Högerklicka på domänen, välj Sök och ange kontonamnet för den lokala Active Directory-användare som du vill mappa till.
+    
+    1. Välj fliken **Redigera attribut**.
+    
+        Leta upp `msDS-cloudExtensionAttribute1`-egenskapen och dubbelklicka på den. Ange värdet till det fullständiga användarnamnet (UPN) för den användare som du använder för att logga in på Power BI-tjänsten.
+    
+    1. Välj **OK**.
+    
+        ![Skärmbild av dialogrutan Redigera strängattribut](media/service-gateway-sso-kerberos/edit-attribute.png)
+    
+    1. Välj **Tillämpa**. Kontrollera att rätt värde har angetts i kolumnen **Värde**.
 
 ## <a name="complete-data-source-specific-configuration-steps"></a>Slutför de datakällsspecifika konfigurationsstegen
 
@@ -211,19 +217,19 @@ SAP HANA och SAP BW har ytterligare datakällsspecifika konfigurationskrav och f
 
 ## <a name="run-a-power-bi-report"></a>Köra en Power BI-rapport
 
-När du har slutfört alla konfigurationssteg kan du använda sidan **Hantera gateway** i Power BI för att konfigurera den datakälla som du kommer att använda för enkel inloggning. Om du har flera gatewayer ska du välja den gateway som du har konfigurerat för enkel inloggning med Kerberos. Under **Avancerade inställningar** för datakällan kontrollerar du sedan att kryssrutan ”Använd enkel inloggning via Kerberos för DirectQuery-frågor” är markerad.
+När du har slutfört alla konfigurationssteg kan du använda sidan **Hantera gateway** i Power BI för att konfigurera den datakälla som du kommer att använda för enkel inloggning. Om du har flera gatewayer ska du välja den gateway som du har konfigurerat för enkel inloggning med Kerberos. Under **Avancerade inställningar** för datakällan kontrollerar du sedan att kryssrutan **Använd enkel inloggning via Kerberos för DirectQuery-frågor** är markerad.
 
 ![Skärmbild av alternativet Avancerade inställningar](media/service-gateway-sso-kerberos/advanced-settings.png)
 
  Publicera en **DirectQuery-baserad** rapport från Power BI Desktop. Den här rapporten måste använda data som är tillgängliga för den användare som är mappad till den (Azure) Active Directory-användare som loggar in på Power BI-tjänsten. Du måste använda DirectQuery i stället för import på grund av hur uppdateringen fungerar. När importbaserade rapporter uppdateras använder gatewayen de autentiseringsuppgifter som du angav i fälten **Användarnamn** och **Lösenord** när du skapade datakällan. Med andra ord används **inte** enkel inloggning med Kerberos. När du publicerar bör du även välja den gateway som du har konfigurerat för enkel inloggning om du har flera gatewayer. I Power BI-tjänsten bör du nu kunna uppdatera rapporten eller skapa en ny rapport baserat på den publicerade datamängden.
 
-Den här konfigurationen fungerar i de flesta fall. Med Kerberos kan det dock förekomma olika konfigurationer beroende på din miljö. Om rapporten fortfarande inte kan läsas in, bör du kontakta domänadministratören för att undersöka saken vidare. Om din datakälla är SAP BW kan du även läsa felsökningsavsnitten på de datakällsspecifika konfigurationssidorna för [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) och [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting).
+Den här konfigurationen fungerar i de flesta fall. Med Kerberos kan det dock förekomma olika konfigurationer beroende på din miljö. Om rapporten fortfarande inte kan läsas in, bör du kontakta domänadministratören för att undersöka saken vidare. Om din datakälla är SAP BW kan du även läsa felsökningsavsnitten på de datakällsspecifika konfigurationssidorna för [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) och [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), beroende på vilket SNC-bibliotek du har valt.
 
 ## <a name="next-steps"></a>Nästa steg
 
 Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
 
-* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-getting-started)
+* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)
