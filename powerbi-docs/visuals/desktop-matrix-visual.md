@@ -10,17 +10,20 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2f50a6fc9fccc35333257caaf3efeb8185c8caff
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 0015921990bb35a7ac5e6652b018ef16485e5b9c
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390375"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164749"
 ---
 # <a name="use-the-matrix-visual-in-power-bi"></a>Använd det visuella matrisobjektet i Power BI
-Det **visuella matrisobjektet** liknar en **tabell**.  En tabell har stöd för två dimensioner och dess data är plana, vilket innebär att dublettvärden visas och inte aggregeras. En matris gör det enklare att visa data på ett meningsfullt sätt med hjälpa av flera dimensioner – och den har stöd för stegvis layout. Matrisen aggregerar data automatiskt och gör det möjligt att öka detaljnivån. 
 
-Du kan skapa visuella matrisobjekt i **Power BI Desktop**- och **Power BI**-rapporter och korsmarkera element i matrisen med andra visuella objekt på rapportsidan. Du kan till exempel välja rader, kolumner och även enskilda celler och korsmarkeringar. Du kan även kopiera enskilda celler och markeringar av flera celler och klistra in dem i andra program. 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+Det visuella matrisobjektet liknar en tabell.  En tabell har stöd för två dimensioner och dess data är plana, vilket innebär att dublettvärden visas och inte aggregeras. En matris gör det enklare att visa data på ett meningsfullt sätt med hjälpa av flera dimensioner – och den har stöd för stegvis layout. Matrisen aggregerar data automatiskt och gör det möjligt att öka detaljnivån. 
+
+Du kan skapa visuella matrisobjekt i **Power BI Desktop**-rapporter och korsmarkera element i matrisen med andra visuella objekt på den rapportsidan. Du kan till exempel välja rader, kolumner och även enskilda celler och korsmarkeringar. Du kan även kopiera enskilda celler och markeringar av flera celler och klistra in dem i andra program. 
 
 ![korsmarkerad matris och ringdiagram](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -29,7 +32,7 @@ Det finns många funktioner som är kopplade till matrisen och vi ska gå igenom
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Beräkning av summor i Power BI
 
-Innan vi går vidare till hur man använder det **visuella matrisobjektet** är det viktigt att du förstår hur Power BI beräknar total- och delsummor i tabeller och matriser. När det gäller summa- och delsummarader utvärderar Power BI måttet för alla rader i underliggande data – det handlar inte bara om att lägga till värdena i de tabellrader som syns eller visas. Detta innebär att du kan få andra värden än vad du räknat med i totalsummaraden.
+Innan vi går vidare till hur man använder det visuella matrisobjektet är det viktigt att du förstår hur Power BI beräknar total- och delsummor i tabeller och matriser. När det gäller summa- och delsummarader utvärderar Power BI måttet för alla rader i underliggande data – det handlar inte bara om att lägga till värdena i de tabellrader som syns eller visas. Detta innebär att du kan få andra värden än vad du räknat med i totalsummaraden.
 
 Ta en titt på följande visuella matrisobjekt. 
 
@@ -83,7 +86,7 @@ Förutom ikonerna kan du välja någon av radrubrikerna och öka detaljnivån ge
 
 Observera att det finns flera alternativ på menyn som visas, vilket genererar olika resultat:
 
-Genom att välja **Granska nedåt** expanderas matrisen för *radnivån*, *exklusive* alla andra radrubriker med undantag för den radrubrik som valdes. I följande bild har **Förslag** > **Granska nedåt** valts. Observera att andra topprader inte längre visas i matrisen. Detta är en mycket användbar funktion och som är särskilt fiffig när det är dags att **korsmarkera** avsnitt.
+Genom att välja **Granska nedåt** expanderas matrisen för *radnivån*, *exklusive* alla andra radrubriker med undantag för den radrubrik som valdes. I följande bild har **Förslag** > **Granska nedåt** valts. Observera att andra topprader inte längre visas i matrisen. Detta är en mycket användbar funktion och som är särskilt fiffig när det är dags att korsmarkera avsnitt.
 
 ![matrisen vars detaljnivå har ökats med en nivå](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
@@ -100,7 +103,7 @@ Du kan också använda menyalternativet **Expandera** för att styra visningen y
 ![Matrisen efter att Expandera har tillämpats på Förslag](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Öka detaljnivån för kolumnrubriker
-På samma sätt som du kan öka detaljnivån för rader kan du göra samma med **Kolumner**. I följande bild finns det två fält i fältet **Kolumner** som skapar en hierarki som liknar den som vi använde för raderna tidigare i den här artikeln. I fältområdet **Kolumner** hittar vi *Region* och *Segment*. Så snart som det andra fältet lades till i **Kolumner**, visades en ny listrutemeny på det visuella objektet som för närvarande visar **Rader**.
+På samma sätt som du kan öka detaljnivån för rader kan du göra samma med Kolumner. I följande bild finns det två fält i fältet **Kolumner** som skapar en hierarki som liknar den som vi använde för raderna tidigare i den här artikeln. I fältområdet **Kolumner** hittar vi *Region* och *Segment*. Så snart som det andra fältet lades till i **Kolumner**, visades en ny listrutemeny på det visuella objektet som för närvarande visar **Rader**.
 
 ![Matrisen efter att det andra kolumnvärdet har lagts till](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
@@ -108,7 +111,7 @@ Om du vill öka detaljnivån för kolumner, väljer du **Kolumner** i menyn *For
 
 ![meny för ökad detaljnivå för kolumner](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-När du väljer **Granska nedåt** visas nästa nivå i kolumnhierarkin för *Region > Östra*, vilket i detta fall är *Antal affärsmöjligheter*. Den andra regionen visas, men är nedtonad.
+När du väljer **Granska nedåt** visas nästa nivå i kolumnhierarkin för *Region > Östra*, vilket i detta fall är *Antal affärsmöjligheter*. Den andra regionen är dold.
 
 ![matris med ökning av detaljnivån en nivå för kolumn](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
@@ -119,21 +122,21 @@ Resten av alternativen i menyn fungerar för kolumner på samma sätt som de gö
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Stegvis layout med matriser
 
-**Visuella matrisobjekt** har automatiskt indrag för underkategorier i en hierarki under en överordnad kategori. Detta kallas **stegvis layout**.
+Visuella matrisobjekt har automatiskt indrag för underkategorier i en hierarki under en överordnad kategori. Detta kallas stegvis layout.
 
-I den ursprungliga versionen av det visuella matrisobjektet visades underkategorier i en helt annan kolumn och tog upp mer utrymme i det visuella objektet. Följande bild visar tabellen i den ursprungliga **matrisen**. Observera underkategorierna i en separat kolumn.
+I den ursprungliga versionen av det visuella matrisobjektet visades underkategorier i en helt annan kolumn och tog upp mer utrymme i det visuella objektet. Följande bild visar tabellen i den ursprungliga matrisen. Observera underkategorierna i en separat kolumn.
 
 ![Skärmbild av det gamla visuella matrisobjektet som visar underkategorierna i en separat kolumn.](media/desktop-matrix-visual/matrix-visual_14.png)
 
-I följande bild visas en **Matris** med **Stegvis layout**. Lägg märke till kategorin *datorer* visar underkategorierna något indragna (tillbehör för datorer, stationära datorer, bärbara datorer, skärmar och så vidare) vilket är tydligare och mycket mer komprimerat.
+I följande bild visas en matris med stegvis layout. Lägg märke till kategorin *datorer* visar underkategorierna något indragna (tillbehör för datorer, stationära datorer, bärbara datorer, skärmar och så vidare) vilket är tydligare och mycket mer komprimerat.
 
 ![matrisens aktuella metod för att formatera data](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Du kan enkelt ändra inställningarna för stegvis layout. Expandera området **radrubriker** i **format**-området (rollerikonen) i fönstret **Visuella objekt** för den valda **matrisen**. Du har två alternativ: knappen **Stegvis layout** (som aktiverar eller inaktiverar funktionen) och **stegvis layoutindrag** (anger indrag i bildpunkter).
+Du kan enkelt ändra inställningarna för stegvis layout. Med det visuella matrisobjektet markerat, i **Formatera**-avsnittet (färgvalsikonen) i **Visualiseringar**-fönstret, expanderar du radrubriksavsnittet. Du har två alternativ: knappen stegvis layout (som aktiverar eller inaktiverar funktionen) och stegvis layoutindrag (anger indrag i bildpunkter).
 
 ![Radrubrikskort med stegvis layoutkontroll](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
-Om du inaktiverar **Stegvis layout**, visar Power BI underkategorierna i en annan kolumn istället för att visas indragna under den överordnade kategorin.
+Om du inaktiverar stegvis layout, visar Power BI underkategorierna i en annan kolumn istället för att visas indragna under den överordnade kategorin.
 
 ## <a name="subtotals-with-matrix-visuals"></a>Delsummor med matriser
 
@@ -141,7 +144,7 @@ Du kan aktivera eller inaktivera delsummor i matriser, för såväl rader som ko
 
 ![matris som visar summor och delsummor](media/desktop-matrix-visual/matrix-visual_20.png)
 
-I avsnittet **Format** i fönstret **Visualiseringar** expanderar du kortet **Delsummor** och sätter skjutreglaget **Raddelsummor** till **Inaktivera**. När du gör det visas inte delsummorna.
+I avsnittet format i fönstret Visualiseringar, expanderar du kortet **Delsummor** och sätter skjutreglaget raddelsummor till **Av**. När du gör det visas inte delsummorna.
 
 ![matris med delsummor inaktiverade](media/desktop-matrix-visual/matrix-visual_21.png)
 
@@ -149,16 +152,15 @@ Samma sak gäller för kolumndelsummor.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Korsmarkering med matriser
 
-Med visualiseringen **Matris** kan du välja alla element i matrisen som grund för korsmarkering. Välj en kolumn i en **matris** så markerar Power BI kolumnen, precis som alla andra visuella objekt på rapportsidan. Den här typen av korsmarkering har varit en vanlig funktion för andra visuella objekt och val av datapunkter, så nu har det visuella objektet **Matris** samma funktion.
+Med det visuella matrisobjektet kan du välja valfria element i matrisen som grund för korsmarkering. Välj en kolumn i en matris så markerar Power BI kolumnen, precis som alla andra visuella objekt på rapportsidan. Den här typen av korsmarkering har varit en vanlig funktion för andra visuella objekt och val av datapunkter, så nu har det visuella matrisobjektet samma funktion.
 
-Dessutom fungerar Ctrl + klicka för korsmarkering. I följande bild valdes till exempel en samling av underkategorier från **matrisen**. Observera hur objekt som inte var markerat från det visuella objektet är nedtonade och hur övriga visuella objekt på sidan återspeglar de val du gjorde i **matrisen**.
+Dessutom fungerar Ctrl + klicka för korsmarkering. I följande bild valdes till exempel en samling av underkategorier från det visuella matrisobjektet. Observera hur objekt som inte var markerat från det visuella objektet är nedtonade och hur övriga visuella objekt på sidan återspeglar de val du gjorde i det visuella matrisobjektet.
 
 ![Skärmbild av det visuella matrisobjektet tillsammans med två andra visuella objekt som visar funktionen Ctrl + klicka för korsmarkering.](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Kopiera värdena från Power BI så att du kan använda dem i andra program
 
 Din matris eller tabell kan ha innehåll som du vill använda i andra program: Dynamics CRM, Excel och andra Power BI-rapporter. Genom att högerklicka i Power BI kan du kopiera en cell eller ett cellurval till Urklipp. Sedan kan du klistra in dem i det andra programmet.
-
 
 
 * Om du vill kopiera en enskild cells värde markerar du cellen, högerklickar och väljer **Kopiera värde**. Med det oformaterade cellvärdet i Urklipp kan du nu klistra in det i ett annat program.
@@ -175,8 +177,16 @@ Din matris eller tabell kan ha innehåll som du vill använda i andra program: D
 
     ![Skärmbild som visar Excel-rader och -kolumner med värdena inklistrade.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
+* Om du vill göra en kopia av den visuella objektet som bara innehåller de markerade cellerna, markerar du en eller flera celler med CTRL, högerklick och väljer **Kopiera visuellt objekt**
+
+    ![Skärmbild som visar alternativet Kopiera visuellt objekt](media/desktop-matrix-visual/power-bi-copy-visual.png)
+
+* Kopian kommer att vara en annan matris visualisering, men innehåller bara dina kopierade data.
+
+    ![Skärmbild som visar exempel på Kopiera visuellt objekt](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Fyllning och teckenfärger med matriser
-Med det visuella matrisobjektet kan du använda **villkorsstyrd formatering** (färger, fyllning och datastaplar) för cellernas bakgrundsfärger samt på själva texten och värdena.
+Med det visuella matrisobjektet kan du använda villkorsstyrd formatering (färger, fyllning och datastaplar) för cellernas bakgrundsfärger inom matrisen samt tillämpa villkorsstyrd formatering på själva texten och värdena.
 
 Om du vill tillämpa villkorsstyrd formatering, väljer du det visuella matrisobjektet och öppnar fönstret **Format**. Expandera kortet **Villkorsstyrd formatering** och flytta skjutreglaget till **På** för antingen **Bakgrundsfärg**, **Teckenfärg** eller **Datastaplar**. När du aktiverar något av dessa alternativ visas en länk till *Avancerade kontroller*, där du kan anpassa färger och värden för formatering av färg.
   

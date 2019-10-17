@@ -1,90 +1,104 @@
 ---
-title: Dela en datamängd (förhandsversion)
-description: Som datamängdsägare kan du skapa och dela dina datamängder så att andra kan använda dem. Lär dig hur du kontrollerar vem som har åtkomst till data med hjälp av skapa-behörighet.
+title: Skapa-behörighet för delade datauppsättningar (förhandsversion)
+description: Läs hur du kan hålla koll på vem som har åtkomst till data med hjälp av skapa-behörigheten.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5b880132255fbdf37996273dc6c70029e548df6
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 069ec5e0c767bcfcb0a4a41c2180ae78146800f2
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654898"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020835"
 ---
-# <a name="share-a-dataset-preview"></a>Dela en datamängd (förhandsversion)
+# <a name="build-permission-for-shared-datasets-preview"></a>Skapa-behörighet för delade datauppsättningar (förhandsversion)
 
-Som skapare av *datamodeller* i Power BI Desktop kan du dela dem som *datamängder* i Power BI-tjänsten. Rapportskapare kan sedan enkelt upptäcka och återanvända de datamängder som du har delat. Lär dig hur du delar dem och hur du kontrollerar vem som har åtkomst till data med hjälp av skapa-behörighet.
+Som skapare av *datamodeller* i Power BI Desktop kan du dela dem som *datamängder* i Power BI-tjänsten. Rapportskapare kan sedan enkelt upptäcka och återanvända de datamängder som du har delat. Läs hur du kan styra vem som har åtkomst till data med hjälp av skapa-behörigheten.
 
-## <a name="steps-to-sharing-your-dataset"></a>Steg för att dela datamängden
+Skapa-behörighet är endast relevant för datauppsättningar. När du ger användare skapa-behörighet kan de skapa nytt innehåll i en datauppsättning, som rapporter, instrumentpaneler, fästa paneler från Frågor och svar och Insights Discovery. De kan även skapa nytt innehåll i datamängden utanför Power BI, till exempel Excel-blad via Analyze in Excel, XMLA och export av underliggande data.
 
-1. Du börja med att skapa en .pbix-fil med en datamodell i Power BI Desktop. Om du planerar att erbjuda den här datamängden till andra så att de kan skapa rapporter så skapar du kanske inte ens en rapport i .pbix-filen.
+## <a name="ways-to-give-build-permission"></a>Sätt att ge skapa-behörighet
 
-    Det är bästa praxis att spara .pbix-filen i en Office 365-grupp.
+Du ger skapa-behörighet för en datauppsättning på några olika sätt:
 
-1. Publicera .pbix-filen till en [arbetsyta med den nya funktionen](service-create-the-new-workspaces.md) i Power BI-tjänsten.
-    
-    Andra medlemmar i den här arbetsytan kan redan skapa rapporter på andra arbetsytor baserat på den här datamängden.
-
-1. Du kan även [publicera en app](service-create-distribute-apps.md) från den här arbetsytan. När du gör det kan du på sidan **Behörigheter** ange vilka som har behörigheter och vad de kan göra.
-
-    > [!NOTE]
-    > Om du väljer **Hela organisationen** får ingen i organisationen skapa-behörighet. Det här problemet är redan känt. I stället anger du e-postadresser i **Specific individuals or groups** (Specifika personer eller grupper).  Om du vill att hela organisationen ska ha skapa-behörighet anger du ett e-postalias för hela organisationen.
-
-    ![Ange appbehörigheter](media/service-datasets-build-permissions/power-bi-dataset-app-permissions.png)
-
-1. Välj **Publicera app**, eller **Uppdatera app** om den redan har publicerats.
-
-## <a name="build-permissions-for-shared-datasets"></a>Skapa-behörighet för delade datamängder
-
-Skapa-behörighetstypen är endast relevant för datamängder. Med den kan användare skapa nytt innehåll i en datamängd, till exempel rapporter, instrumentpaneler, fästa paneler från Frågor och svar samt Insights Discovery. De kan även skapa nytt innehåll i datamängden utanför Power BI, till exempel Excel-blad via Analyze in Excel, XMLA och export av underliggande data.
-
-Användare får skapa-behörighet på olika sätt:
-
-- Om du är medlem för en arbetsyta med minst en deltagarroll har du automatiskt skapa-behörighet för en datamängd och behörighet att kopiera en rapport.
+- Medlemmar i en arbetsyta med minst en deltagarroll har automatiskt skapa-behörighet för datauppsättningar i den arbetsytan och behörighet att kopiera en rapport.
  
-- En medlem i den arbetsyta där datamängden finns kan tilldela behörigheten till specifika användare eller säkerhetsgrupper i behörighetscentret. Välj ellipsen (…) intill en datamängd > **Hantera behörigheter**.
+- Medlemmar i arbetsytan där datauppsättningen finns kan tilldela behörighet till specifika användare eller säkerhetsgrupper i behörighetscentret. Om du är medlem i arbetsytan väljer du ellipsen (…) bredvid en datauppsättning > **Hantera behörigheter**.
 
-    ![Välj ellipsen](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
+    ![Välj ellipsen](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
     Då öppnas behörighetscentret för den datamängden, där du kan ange och ändra behörigheter.
 
-    ![Behörighetscentret](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
+    ![Behörighetscentret](media/service-datasets-build-permissions/power-bi-dataset-remove-permissions-no-callouts.png)
 
-- En administratör eller medlem i den arbetsyta där datamängden finns kan under publicering av app bestämma att användare med behörighet för den appen även får skapa-behörighet för de underliggande datamängderna. Mer information finns i artikeln [Steg för att dela datamängden](#steps-to-sharing-your-dataset).
+- En administratör eller medlem i den arbetsyta där datamängden finns kan under publicering av app bestämma att användare med behörighet för den appen även får skapa-behörighet för de underliggande datamängderna. Se [Dela en datauppsättning](service-datasets-share.md) för mer information.
 
-- Anta att du har vidaredelnings- och skapa-behörigheter för en datamängd. När du delar en rapport eller instrumentpanel som skapats ovanpå den datamängden kan du ange att mottagarna även får skapa-behörighet för den underliggande datamängden.
+- Anta att du har vidaredelnings- och skapa-behörigheter för en datauppsättning. När du delar en rapport eller instrumentpanel som skapats ovanpå den datauppsättningen kan du ange att mottagaren även får skapa-behörighet för den underliggande datauppsättningen.
 
     ![Skapa-behörighet](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
 
-Du kan ta bort en persons skapa-behörighet för en datamängd. Om du gör det kan de fortfarande se den rapport som skapats på den delade datamängden, men de kan inte längre redigera den.
+Du kan ta bort en persons skapa-behörighet för en datauppsättning. Om du gör det kan de fortfarande se den rapport som skapats på den delade datamängden, men de kan inte längre redigera den. Mer information finns i nästa avsnitt.
+
+## <a name="remove-build-permission-for-a-dataset"></a>Ta bort skapa-behörighet för en datauppsättning
+
+Du kan behöva ta bort skapa-behörighet för vissa användare av en delad datauppsättning. 
+
+1. I en arbetsyta går du till sidan med **datauppsättningar**-listan. 
+1. Välj ellipsen (...) bredvid datauppsättning > **Hantera behörighet**.
+
+    ![Hantera behörigheter](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
+
+1. Välj ellipsen (...) bredvid ett namn > **Ta bort skapa**.
+
+    ![Ta bort skapa-behörighet](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
+
+    De kan fortfarande se den rapport som skapats med den delade datauppsättningen, men de kan inte längre redigera den.
+
+### <a name="remove-build-permission-for-a-dataset-in-an-app"></a>Ta bort skapa-behörighet för en datauppsättning i en app
+
+Anta att du har distribuerat en app från en arbetsyta till en grupp med personer. Senare bestämmer du dig för att ta bort åtkomsten till appen för vissa personer. Om du tar bort deras åtkomst till appen tar det inte automatiskt bort deras bygg- och återdelnings-behörigheter. Det är ett extra steg. 
+
+1. På en sida med en arbetytelista väljer du **Uppdatera appen**. 
+
+    ![Uppdatera app](media/service-datasets-build-permissions/power-bi-app-update.png)
+
+1. På fliken **Behörigheter** trycker du på **X** för att ta bort personen eller gruppen. 
+
+    ![Tryck på X](media/service-datasets-build-permissions/power-bi-app-delete-user.png)
+1. Välj **Uppdatera app**.
+
+    Ett meddelande visas som förklarar att du måste gå till **Hantera behörigheter** för att ta bort skapa-behörighet för användare med befintlig åtkomst. 
+
+    ![Hantera behörigheter-meddelande](media/service-datasets-build-permissions/power-bi-dataset-app-remove-message.png)
+
+1. Välj **Uppdatera**.
+
+1. I arbetsytan går du till sidan med **Satauppsättningar**-listan. 
+1. Välj ellipsen (...) bredvid datauppsättning > **Hantera behörighet**.
+
+    ![Hantera behörigheter](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
+
+1. Välj ellipsen (...) bredvid deras namn > **Ta bort skapa**.
+
+    ![Ta bort skapa-behörighet](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
+
+    De kan fortfarande se den rapport som skapats med den delade datauppsättningen, men de kan inte längre redigera den.
 
 ## <a name="more-granular-permissions"></a>Mer granulära behörigheter
 
-Power BI introducerade skapa-behörigheten i juni 2019 som ett komplement till de befintliga behörigheterna Läsa och Dela vidare. Alla användare som redan hade läsbehörighet för datamängder via appbehörigheter, delning eller arbetsyteåtkomst vid den tidpunkten fick även skapa-behörighet för samma datamängder. De fick skapa-behörighet automatiskt eftersom läsbehörighet redan gav den rätt att skapa nytt innehåll ovanpå datamängden med hjälp av Analysera i Excel eller export.
+Power BI introducerade skapa-behörigheten juni 2019 som ett komplement till de befintliga behörigheterna Läsa och Dela vidare. Alla användare som redan hade läsbehörighet för datauppsättningar via appbehörigheter, delning eller arbetsyteåtkomst vid den tidpunkten fick även skapa-behörighet för samma datauppsättningar. De fick skapa-behörighet automatiskt eftersom läsbehörighet redan gav den rätt att skapa nytt innehåll ovanpå datamängden med hjälp av Analysera i Excel eller export.
 
 Med den här mer granulära skapa-behörigheten kan du välja vilka som endast kan se innehållet i den befintliga rapporten eller instrumentpanelen samt vilka som kan skapa innehåll som är kopplat till de underliggande datamängderna.
 
 Om din datamängd används av en rapport utanför datamängdens arbetsyta kan du inte ta bort den datamängden. I stället visas ett felmeddelande.
 
 Du kan ta bort skapa-behörigheter. Om du gör detta kan de personer vars behörigheter du har återkallat fortfarande se rapporten, men de kan inte längre redigera den eller exportera underliggande data. Användare med enbart läsbehörighet kan fortfarande exportera sammanfattade data. 
-
-## <a name="track-your-dataset-usage"></a>Spåra datamängdsanvändningen
-
-När du har en delad datamängd på din arbetsyta kan du behöva veta vilka rapporter på andra arbetsytor som baseras på den.
-
-1. I listvyn Datamängder väljer du **Visa relaterade**.
-
-    ![Ikonen Visa relaterade](media/service-datasets-build-permissions/power-bi-dataset-view-related-to-dataset.png)
-
-1. Dialogrutan **Relaterat innehåll** visar alla relaterade objekt. I den här listan visas de relaterade objekten på den här arbetsytan och på **Andra arbetsytor**.
- 
-    ![Dialogrutan Relaterat innehåll](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
 
 ## <a name="next-steps"></a>Nästa steg
 

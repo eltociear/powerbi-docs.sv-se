@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305746"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020218"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -30,7 +30,7 @@ Företagsanvändarna får dina appar på ett par olika sätt:
 - Du kan skicka dem en direktlänk.
 - Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet.
 
-Du kan skapa appen med en egen inbyggd navigering så att användarna enkelt navigerar i ditt innehåll. De kan inte ändra innehållet i appen. De kan interagera med det i antingen Power BI-tjänsten eller i någon av mobilapparna och kan filtrera, markera och sortera data på egen hand. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Du kan även ge dem skapa-behörighet för att ansluta till de underliggande datamängderna och skapa kopior av rapporterna i appen. Läs mer om [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Du kan skapa appen med en egen inbyggd navigering så att användarna enkelt navigerar i ditt innehåll. De kan inte ändra innehållet i appen. De kan interagera med det i antingen Power BI-tjänsten eller i någon av mobilapparna och kan filtrera, markera och sortera data på egen hand. De får uppdateringar automatiskt och du kan styra hur ofta dina data ska uppdateras. Du kan även ge dem skapa-behörighet för att ansluta till de underliggande datauppsättningarna och skapa kopior av rapporterna i appen. Läs mer om [skapa-behörighet](service-datasets-build-permissions.md).
 
 ## <a name="licenses-for-apps"></a>Licenser för appar
 Du behöver en Power BI Pro-licens för att skapa eller uppdatera en app. För *appkonsumenter* finns det två alternativ.
@@ -166,11 +166,11 @@ När du markerar alternativet för att **tillåta användare att ansluta till ap
 - Söka efter dessa datamängder i Power BI Desktop och i funktionen för att hämta data i Power BI-tjänsten.
 - Skapa rapporter och instrumentpaneler baserat på dessa datamängder.
 
-När du avmarkerar det här alternativet får nya användare som du lägger till i appen inte skapa-behörighet. För befintliga appanvändare ändras dock inte behörigheterna för de underliggande datamängderna. Du kan ta bort skapa-behörigheten manuellt från appanvändare som inte längre ska ha den. Läs mer om [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+När du avmarkerar det här alternativet får nya användare som du lägger till i appen inte skapa-behörighet. För befintliga appanvändare ändras dock inte behörigheterna för de underliggande datamängderna. Du kan ta bort skapa-behörigheten manuellt från appanvändare som inte längre ska ha den. Läs mer om [skapa-behörighet](service-datasets-build-permissions.md).
 
 ## <a name="allow-users-to-copy-reports"></a>Tillåta användare att kopiera rapporter
 
-När du markerar alternativet att **tillåta användare att göra en kopia av rapporterna i den här appen** kan dina användare spara vilka som helst av rapporterna i appen till sin Min arbetsyta eller en annan arbetsyta. För att göra en kopia behöver användarna en Pro-licens, även om den ursprungliga rapporten finns på en arbetsyta i en Premium-kapacitet. De kan sedan anpassa rapporterna efter sina unika behov. Du måste välja alternativet **Tillåt alla användare att ansluta till appens underliggande datamängder med hjälp av skapa-behörighet** först. Genom att välja de här alternativen aktiverar du den nya funktionen [kopiera rapporter från andra arbetsytor](service-datasets-copy-reports.md).
+När du markerar alternativet att **tillåta användare att göra en kopia av rapporterna i den här appen** kan dina användare spara vilka som helst av rapporterna i appen till sin Min arbetsyta eller en annan arbetsyta. För att göra en kopia behöver användarna en Pro-licens, även om den ursprungliga rapporten finns på en arbetsyta i en Premium-kapacitet. De kan sedan anpassa rapporterna efter sina unika behov. Du måste välja alternativet **Tillåt alla användare att ansluta till appens underliggande datauppsättningar med hjälp av skapa-behörighet** först. Genom att välja de här alternativen aktiverar du den nya funktionen [kopiera rapporter från andra arbetsytor](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Ta bort en app
 Alla medlemmar för en arbetsyta kan avpublicera appen.
@@ -179,7 +179,7 @@ Alla medlemmar för en arbetsyta kan avpublicera appen.
 >När du ta bort en app, förlorar app-användare sina anpassningar. De förlorar alla personliga bokmärken, kommentarer eller prenumerationer som associeras med innehållet i appen. Ta endast bort en app om du behöver ta bort den.
 > 
 
-* På en arbetsyta väljer du ellipsen ( **…** ) i det övre högra hörnet > **Avpublicera appen**.
+* På en arbetsyta väljer du ellipsen (**…**) i det övre högra hörnet > **Avpublicera appen**.
   
      ![Ta bort appen](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 

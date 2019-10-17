@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715530"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020156"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Skapa de nya arbetsytorna i Power BI
 
@@ -34,7 +34,7 @@ Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-worksp
 
 ## <a name="create-one-of-the-new-workspaces"></a>Skapa en av de nya arbetsytorna
 
-1. Börja med att skapa arbetsytan. Välj  **Arbetsytor** > **Skapa arbetsyta**.
+1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa arbetsyta**.
    
      ![Skapa arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
 
@@ -68,7 +68,7 @@ Mer bakgrundsinformation finns i artikeln om [nya arbetsytor](service-new-worksp
 
 ## <a name="workspace-contact-list"></a>Arbetsytans kontaktlista
 
-I den nya kontaktlistan för arbetsytan kan du ange vilka användare som ska informeras om problem som kan uppstå i arbetsytan. Som standard informeras alla användare och grupper som angetts som arbetsyteadministratör, men du kan justera listan. Användare eller grupper som finns med i kontaktlistan visas i användargränssnittet för att hjälpa användarna att få hjälp med arbetsytan.
+Du kan ange vilka användare som ska informeras om problem som uppstår i arbetsytan. Som standard informeras alla användare och grupper som angetts som arbetsyteadministratör, men du kan anpassa listan genom att lägga till dem i *kontaktlista*. Användare eller grupper som finns med i kontaktlistan visas i användargränssnittet för att hjälpa användarna att få hjälp med arbetsytan.
 
 1. Få åtkomst till den nya inställningen **Kontaktlista** på ett av två sätt:
 
@@ -79,6 +79,9 @@ I den nya kontaktlistan för arbetsytan kan du ange vilka användare som ska inf
     ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Godkänn **standardadministratörer för arbetsytan** eller lägg till en egen lista över **specifika användare eller grupper** i **Avancerat** > **Kontaktlista**. 
+
+    ![Arbetsytans kontakter](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
 3. Välj **Spara**.
 
 ## <a name="workspace-onedrive"></a>Arbetsytans OneDrive
@@ -103,34 +106,15 @@ Power BI synkroniserar inte behörigheter för användare eller grupper, som är
 
 ### <a name="access-the-workspace-onedrive-location"></a>Åtkomst till arbetsytans OneDrive-plats
 
-När du har konfigurerat OneDrive-platsen kan du komma åt den från några olika platser i arbetsytan:
+När du har konfigurerat OneDrive-platsen kommer du till den på samma sätt som du kommer till andra datakällor i Power BI-tjänsten.
 
-- Välj **Arbetsytor** > *arbetsytans namn* > ellipsmenyn ( **...** ) > **Filer**. 
+1. I det vänstra navigeringsfönstret väljer du **Hämta data** och därefter väljer du **Hämta** i rutan **Filer**.
 
-    ![Plats för arbetsytans filer](media/service-new-workspaces/power-bi-new-workspace-files.png)
+    ![Hämta data, hämta filer](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-- Välj ellipsmenyn ( **...** ) i det övre högra hörnet av arbetsytan > **Filer**.
-
-    ![Plats för arbetsytans filer](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-    
-- I miljön **Hämta data** > **Filer**. Posten **OneDrive – företag** är din egen OneDrive för företag. Det andra OneDrive är den som du lade till.
+1.  Posten **OneDrive – företag** är din egen OneDrive för företag. Det andra OneDrive är den som du lade till.
 
     ![Plats för arbetsytans filer – hämta data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
-
-## <a name="add-content-to-your-workspace"></a>Lägga till innehåll i din arbetsyta
-
-När du har skapat en ny arbetsyta är det dags att lägga till innehåll. Att lägga till innehåll liknar den nya och klassiska arbetsytan. Använd knappen Skapa eller Hämta data för att lägga till innehåll på din arbetsyta.
-
-1. På **välkomstskärmen** för den nya arbetsytan kan du lägga till data. 
-
-    ![Välkomstskärm för den nya arbetsytan](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
-
-1. Välj exempelvis **Exempel** > **Kundlönsamhetsexempel**.
-
-> [!NOTE]
-> Du kan inte lägga till organisations innehållspaket eller innehållspaket från tredje part i de nya arbetsytorna. Appar är tillgängliga för många innehållspaket från tredje part som du har använt tidigare. Använd klassiska arbetsytor om du behöver fortsätta använda innehållspaket. Innehållspaket är inaktuella, så det är en bra idé att använda appar i stället.
-
-När du visar innehåll i innehållslistan på en arbetsyta visas arbetsytans namn som ägare.
 
 ### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Anslut till tjänster från tredje part i nya arbetsytor
 
@@ -142,9 +126,7 @@ Med de nya arbetsytorna kan du inte skapa eller använda innehållspaket för or
 
 1. Eftersom du är administratör ser du en ny åtgärd, **åtkomst**, på arbetsytans innehållslista.
 
-    ![Innehållslista för arbetsytor](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-
-1. Välj **Åtkomst**.
+    ![Innehållslista för arbetsytor](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Lägg till säkerhetsgrupper, distributionslistor, Office 365-grupper eller enskilda användare i dessa arbetsytor som medlemmar, deltagare eller administratörer. En förklaring av de olika rollerna finns i [Roller i de nya arbetsytorna](service-new-workspaces.md#roles-in-the-new-workspaces).
 

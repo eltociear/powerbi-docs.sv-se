@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/17/2019
+ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7ee083de9800b55c4f7d998a113c1a63df112b7b
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 269b495a41f193c6a2ba02fa75f171c3b5789689
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624037"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019603"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduktion till instrumentpaneler för Power BI-designers
 
@@ -29,9 +29,6 @@ Instrumentpaneler är en funktion som endast ingår i Power BI-tjänsten. De fin
 
 De visualiseringar som visas i instrumentpanelen kallas *paneler*. Du *fäster* paneler på en instrumentpanel från rapporter. Om du är nybörjare på Power BI kan du få en bra grund genom att läsa [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md).
 
-> [!IMPORTANT]
-> Du behöver en [Power BI Pro](service-free-vs-pro.md)-licens för att skapa instrumentpaneler.
-
 Visualiseringarna på en instrumentpanel kommer från rapporter och varje rapport baseras på en datamängd. Man skulle kunna se på en instrumentpanel som en entré till de underliggande rapporterna och datamängderna. Om du väljer en visualisering tas du till rapporten (och datamängden) som den är baserad på.
 
 ![Diagram som visar relationen mellan instrumentpaneler, rapporter och datauppsättningar](media/service-dashboards/power-bi-diagram.png)
@@ -40,6 +37,13 @@ Visualiseringarna på en instrumentpanel kommer från rapporter och varje rappor
 Instrumentpaneler är fantastiska för att övervaka affärsverksamheten och för att få en snabb översikt över era viktigaste mått. Visualiseringarna på en instrumentpanel kan komma från en underliggande datauppsättning eller flera, eller från en underliggande rapport eller flera. En instrumentpanel kombinerar lokala och molndata, vilket ger en samlad vy oavsett var dessa data finns.
 
 En instrumentpanel är inte bara en fin bild. Den är i hög grad interaktiv. Panelerna uppdateras när underliggande data ändras.
+
+## <a name="who-can-create-a-dashboard"></a>Vem kan skapa en instrumentpanel?
+Möjligheten att skapa en instrumentpanel är en funktion för *skapare* och kräver behörighet att redigera i rapporten. Behörigheter att redigera är tillgängliga för rapportskapare av och de medarbetare skaparen beviljar åtkomst till. Om David till exempel skapar en rapport i workspaceABC och sedan lägger till dig som medlem i den arbetsytan kommer både du och David att ha redigeringsbehörighet. Om en rapport å andra sidan har delats med dig direkt eller som en del av en [Power BI-app](service-create-distribute-apps.md) så *använder* du rapporten. Du kanske inte kan fästa paneler på en instrumentpanel. 
+
+> [!IMPORTANT]
+> Du behöver en [Power BI Pro](service-free-vs-pro.md)-licens för att skapa instrumentpaneler i arbetsytor. Du kan skapa instrumentpaneler i din egen min arbetsyta utan en Power BI Pro-licens.
+
 
 ## <a name="dashboards-versus-reports"></a>Instrumentpaneler kontra rapporter
 [Rapporter](service-reports.md) och instrumentpaneler kan verka lika eftersom de båda är arbetsytor som är fyllda av visualiseringar. Men det finns stora skillnader, som du kan se i följande tabell.

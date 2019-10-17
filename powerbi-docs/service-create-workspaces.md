@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903921"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020243"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Skapa klassiska arbetsytor i Power BI
 
@@ -90,11 +90,11 @@ Appar är utvecklingen av organisationsinnehållspaket. Om du redan har organisa
 * När företagsanvändare har installerat ett innehållspaket, förlorar det sin grupperade identitet: det är bara en lista över instrumentpaneler och rapporter bland andra instrumentpaneler och rapporter. Appar, å andra sidan, bevarar sin gruppering och identitet även efter installationen. Den här grupperingen gör det lätt för företagsanvändare att fortsätta att gå tillbaka till dem över tid.
 * Du kan skapa flera innehållspaket från en arbetsyta, men en app har ett 1:1-förhållande med sin arbetsyta. 
 * Med tiden planerar vi att avveckla användningen av organisationsinnehållspaket, så vi rekommenderar att du skapar appar hädanefter.  
-* Med den nya förhandsversionen av arbetsytan tar vi de första stegen mot att avveckla innehållspaket för organisationer. Du kan inte använda eller skapa dem i arbetsytor som är i förhandsversion.
+* Med den nya arbetsyteupplevelsen tar vi de första stegen mot att avveckla innehållspaket för organisationer. Du kan inte använda eller skapa dem i de nya arbetsytorna.
 
 Du kan jämföra de två i [Hur skiljer sig de nya arbetsytorna åt från befintliga arbetsytor](service-new-workspaces.md#how-the-new-workspaces-are-different). 
 
 ## <a name="next-steps"></a>Nästa steg
 * [Installera och använda appar i Power BI](service-create-distribute-apps.md)
-- [Skapa de nya arbetsytorna (förhandsversion)](service-create-the-new-workspaces.md)
+- [Skapa de nya arbetsytorna](service-create-the-new-workspaces.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)

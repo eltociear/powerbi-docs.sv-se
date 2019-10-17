@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62bec222a3f948612db63c386e10c0afe9762bb4
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721423"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020633"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Ta bort din anslutning till ett Power BI-organisationsinnehållspaket
 
 > [!NOTE]
-> Du kan inte skapa innehållspaket för organisationen eller installera dem i förhandsversionen för den nya arbetsytan. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
+> Du kan inte skapa innehållspaket för organisationen eller installera dem i den nya arbetsyteupplevelsen. Nu är ett bra tillfälle att uppgradera dina innehållspaket till appar, om du inte har börjat ännu. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
 > 
 
 En medarbetare har skapat ett innehållspaket. Du identifierade det i AppSource och har lagt till det på din Power BI-arbetsyta. Nu behöver du det inte längre.  Hur tar du bort det?

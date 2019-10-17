@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715198"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020675"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -78,8 +78,8 @@ Här är funktionerna för de fyra rollerna: administratörer, medlemmar, deltag
 | Visa och interagera med ett objekt. |  X | X  | X  | X  |
 
 > [!NOTE]
->För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste du uppfylla följande kriterier:
->- Du måste ha en Power BI Pro-licens. 
+>För att kunna kopiera en rapport och skapa en rapport i en annan arbetsyta baserat på en datauppsättning i den här arbetsytan måste personer uppfylla följande kriterier:
+>- Du måste ha en Power BI Pro-licens. Mer information finns i nästa avsnitt [Licensiering](#licensing).
 >- Du måste ha behörigheten Skapa för datauppsättningen. Personer med administratörs- medlems- och deltagarroller har behörigheten Skapa för datauppsättningar i den här arbetsytan via rollen för arbetsytan.
  
 ## <a name="licensing"></a>Licensiering
@@ -141,12 +141,12 @@ Vissa funktioner fungerar annorlunda i de nya arbetsytorna jämfört med de aktu
 - Medlemmar kan eller kan inte dela igen: ersätts med rollen Deltagare
 - Skrivskyddade arbetsytor: I stället för att bevilja användare skrivskyddad åtkomst till en arbetsyta, tilldelar du användare till läsarrollen som ger liknande skrivskyddad åtkomst till innehållet i en arbetsyta.
 - Användare utan Pro-licens kan få åtkomst till arbetsytan om arbetsytan är i en Power BI Premium-kapacitet, även om användarna endast har en läsarroll.
-- Om du vill tillåta användare med läsarroll att exportera data, måste du se till att de har behörighet att skapa för datamängderna i arbetsytan. Läs mer om [behörighet att skapa för datamängder](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Om du vill tillåta användare med läsarroll att exportera data, måste du se till att de har behörighet att skapa för datamängderna i arbetsytan. Läs mer om [behörighet att skapa för datamängder](service-datasets-build-permissions.md).
 - Det finns ingen knapp för att **lämna arbetsytan**.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
-**Påverkas länkar till befintligt innehåll av den allmänna tillgängligheten för den nya arbetsyteupplevelsen?**
+ **Påverkas länkar till befintligt innehåll av den allmänna tillgängligheten för den nya arbetsyteupplevelsen?**
 
 Nej. Länkar till befintliga objekt i klassiska arbetsytor påverkas inte av den nya arbetsyteupplevelsen. Den allmänna tillgänglighet för den nya arbetsyteupplevelsen ändrar den standardarbetsyta som du skapar, men inte befintliga arbetsytor. 
 

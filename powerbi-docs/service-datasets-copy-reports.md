@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c60c3c29bbf87d7a5e18838dac0baa6157de6437
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530608"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020818"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiera rapporter från andra arbetsytor (förhandsversion)
 
@@ -32,7 +32,7 @@ När du har hittat en rapport som du gillar på en arbetsyta eller i en app kan 
 
     ![Skapa en kopia av en rapport](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    Du ser endast ikonen **Spara en kopia** om rapporten är på en arbetsyta med ny arbetsytefunktion och du har [skapa-behörighet](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Även om du har åtkomst till arbetsytan måste du ha skapa-behörighet för datamängden.
+    Du ser endast ikonen **Spara en kopia** om rapporten är på en arbetsyta med ny arbetsytefunktion och du har [skapa-behörighet](service-datasets-build-permissions.md). Även om du har åtkomst till arbetsytan måste du ha skapa-behörighet för datauppsättningen.
 
 3. I **Spara en kopia av den här rapporten** ger du rapporten ett namn och väljer mål för arbetsytan.
 

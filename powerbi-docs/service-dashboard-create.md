@@ -10,49 +10,46 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: b50d247f54cfe2af4cefbd14b9528b1dfa263acf
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624203"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020330"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Skapa en Power BI-instrumentpanel från en rapport
 Du har läst [introduktionen till instrumentpaneler i Power BI](service-dashboards.md) och nu är det dags att du skapar en egen. Det finns många olika sätt att skapa en instrumentpanel. Du kan till exempel skapa en instrumentpanel från en rapport (från början), från en datauppsättning eller genom att duplicera en befintlig instrumentpanel.  
 
-Det kan verka överväldigande när du först kommer igång. Därför börjar vi med att skapa en snabb och enkel instrumentpanel som fäster visualiseringar från en rapport som redan har skapats. 
+Vi börjar med att skapa en snabb och enkel instrumentpanel som fäster visuella objekt från en rapport som redan har skapats. 
 
 När du har slutfört den här snabbstarten har du fått en god förståelse för:
 - Relationen mellan instrumentpaneler och rapporter
 - Hur du öppnar redigeringsvyn i rapportredigeraren
 - Hur du fäster paneler 
 - Hur du navigerar mellan en instrumentpanel och en rapport 
-
-## <a name="who-can-create-a-dashboard"></a>Vem kan skapa en instrumentpanel?
-Möjligheten att skapa en instrumentpanel är en funktion för *skapare* och kräver behörighet att redigera i rapporten. Behörigheter att redigera är tillgängliga för rapportskapare av och de medarbetare skaparen beviljar åtkomst till. Om David till exempel skapar en rapport i workspaceABC och sedan lägger till dig som medlem i den arbetsytan kommer både du och David att ha behörighet att redigera. Å andra sidan, om en rapport har delats med dig direkt eller som en del av en [Power BI-app](service-create-distribute-apps.md) (du *använder* rapporten), kommer du inte att kunna fästa paneler på en instrumentpanel.
  
 ![Instrumentpanel](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
-> Instrumentpaneler är en funktion i Power BI-tjänsten, inte i Power BI Desktop. Instrumentpaneler kan inte skapas i Power BI Mobile, men de kan [visas och delas](consumer/mobile/mobile-apps-view-dashboard.md) där.
+> Instrumentpaneler är en funktion i Power BI-tjänsten, inte i Power BI Desktop. Även om du inte skapar instrumentpaneler i Power BI-mobilappar men du kan [visa och dela](consumer/mobile/mobile-apps-view-dashboard.md) dem.
 >
 > 
 
 ## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Video: Skapa en instrumentpanel genom att fästa visuella objekt och bilder från en rapport
-Titta på när Amanda skapar en ny instrumentpanel genom att fästa visualiseringar från en rapport. Följ sedan stegen i [Importera en datauppsättning med en rapport](#import-a-dataset-with-a-report) för att prova själv med hjälp av anskaffningsanalysexemplet.
+Titta på när Amanda skapar en ny instrumentpanel genom att fästa visualiseringar från en rapport. Följ därefter stegen i nästa avsnitt [Importera en datauppsättning med en rapport](#import-a-dataset-with-a-report) för att prova själv med hjälp av anskaffningsanalysexemplet.
     
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="import-a-dataset-with-a-report"></a>Importera en datauppsättning med en rapport
-Vi ska importera ett av Power BI:s exempel på datauppsättningar och använda det för att skapa vår nya instrumentpanel. Exemplet vi ska använda är en Excel-arbetsbok med två PowerView-blad. När Power BI importerar arbetsboken, läggs en datauppsättning och en rapport till på din arbetsyta. Rapporten skapas automatiskt från PowerView-bladen.
+I den här stegvisa guiden ska vi importera ett av Power BI:s exempel på datauppsättningar och använda det för att skapa vår nya instrumentpanel. Exemplet vi ska använda är en Excel-arbetsbok med två PowerView-blad. När Power BI importerar arbetsboken, läggs en datauppsättning och en rapport till på din arbetsyta. Rapporten skapas automatiskt från PowerView-bladen.
 
-1. Ladda ned [Excel-filen](http://go.microsoft.com/fwlink/?LinkId=529784) för anskaffningsanalysexemplet. Vi rekommenderar att du sparar den i din OneDrive för företag.
+1. Ladda ned Excel-filen [Anskaffningsanalysexempel](http://go.microsoft.com/fwlink/?LinkId=529784). Vi rekommenderar att du sparar den i din OneDrive för företag.
 2. Öppna Power BI-tjänsten i din webbläsare (app.powerbi.com).
 3. Välj **Min arbetsyta** i det vänstra navigeringsfönstret och välj sedan **Hämta data**.
 
-    ![Vänster navigeringsfönster](media/service-dashboard-create/power-bi-get-data3.png)
-5. Välj **Filer**.
+    ![Vänster navigeringsfönster](media/service-dashboard-create/power-bi-get-data-new-look.png)
+5. Under **Filer** väljer du **Hämta**.
 
    ![Hämta filer](media/service-dashboard-create/power-bi-select-files.png)
 6. Gå till den plats där du sparade Excel-filen Exempel på anskaffningsanalys. Markera den och välj **Anslut**.
@@ -64,6 +61,9 @@ Vi ska importera ett av Power BI:s exempel på datauppsättningar och använda d
 8. När meddelandet om slutförd import visas, väljer du **x** för att stänga det.
 
    ![Meddelande som anger att åtgärden lyckades](media/service-dashboard-create/power-bi-view-datasetnew.png)
+
+> [!TIP]
+> Visste du att? Du kan begränsa det vänstra navigeringsfältet genom att välja ikonen med tre rader på den övre ![Navigeringsfönstrets visa eller dölj-ikon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Det ger dig mer utrymme för själva rapporten.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Öppna rapporten och fästa paneler på din instrumentpanel
 1. I samma arbetsyta väljer du fliken **Rapporter** och sedan**Exempel på anskaffningsanalys** för att öppna rapporten.

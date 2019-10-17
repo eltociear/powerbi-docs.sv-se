@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3c72de197203adcad1020bc244ff0bc215e10bd
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164482"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020475"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det här innebär att du kan skapa den perfekta datamodellen i Power BI Desktop och publicera den till Power BI-tjänsten. Sedan kan du och andra skapa flera olika rapporter (i separata .pbix-filer) från samma, gemensamma datamodell och spara dem på olika arbetsytor. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
@@ -35,7 +35,7 @@ Anta att Anna (som är affärsanalytiker) är med i din grupp och att hon är du
 Alla gillar Annas rapport och datamängd, och det är där det skulle kunna bli problem – alla i Annas team försöker skapa *sin egen version* av datamängden och sedan dela sina egna rapporter med teamet. Plötsligt skulle det finnas mängder med rapporter (från olika datamängder) på teamets arbetsyta i **Power BI-tjänsten**. Vilken är den senaste? Är datauppsättningarna identiska, eller bara nästan? Vilka skillnader är det? Med funktionen **Live-anslutning till Power BI-tjänst** kan allt ändras till det bättre. I nästa avsnitt ser vi hur andra kan använda Annas publicerade datamängd till sina egna rapporter, på egna arbetsytor, och att alla kan använda samma granskade och publicerade datamängd när de skapar sina egna unika rapporter.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Ansluta till en Power BI-tjänsts datauppsättning med hjälp av en live-anslutning
-Anna skapar en rapport (samt den datamängd som rapporten baseras på) och publicerar den till **Power BI-tjänsten**. Den visas på teamets arbetsyta i Power BI-tjänsten. Om Anna sparar den på en *arbetsyta med den nya upplevelsen* kan hon ange behörigheten Skapa så att den blir tillgänglig att visa och använda för alla både inom och utanför arbetsytan.
+Anna skapar en rapport (samt den datamängd som rapporten baseras på) och publicerar den till **Power BI-tjänsten**. Den visas på teamets arbetsyta i Power BI-tjänsten. Om Anna sparar den på en *arbetsyta med den nya upplevelsen* kan hon ange skapa-behörigheter så att den blir tillgänglig för alla både inom och utanför arbetsytan.
 
 Mer information om de nya upplevelsearbetsytorna finns i avsnittet om [apparbetsytor](service-new-workspaces.md).
 
@@ -76,7 +76,7 @@ När det är klart visar **Power BI Desktop** detta och ger dig några länkar f
 
 Nu när rapporten och dess datamängd finns i Power BI-tjänsten kan du även *höja upp* den som ett tecken på dess kvalitet och tillförlitlighet. Du kan även begära att den ska *certifieras* av en central beslutsfattare i Power BI-klientorganisationen. Med något av de här godkännandena visas datamängden alltid längst upp i listan när användare söker efter datamängder. Om du är intresserad kan du läsa mer om hur du [höjer upp din datauppsättning](service-datasets-promote.md). 
 
-Det sista steget är att ställa in *behörigheten Skapa* datamängden som rapporten är baserad på. Behörigheten Skapa avgör vem som kan se och använda datamängden. Du kan ställa in den på själva arbetsytan eller när du delar en app från arbetsytan. Läs mer om att ställa in [behörigheten Skapa](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Det sista steget är att ställa in *behörigheten Skapa* datamängden som rapporten är baserad på. Behörigheten Skapa avgör vem som kan se och använda datamängden. Du kan ställa in den på själva arbetsytan eller när du delar en app från arbetsytan. Läs mer om att ställa in [behörigheten Skapa](service-datasets-build-permissions.md).
 
 Nu ska vi se hur andra gruppmedlemmar som har åtkomst till arbetsytan där rapporten (och datauppsättningen) är publicerad kan ansluta till datauppsättningen och skapa egna rapporter.
 

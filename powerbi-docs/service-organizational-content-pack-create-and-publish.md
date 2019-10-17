@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d48214cffcc17da9c105f7277b721c03946d5c2
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961752"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020671"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Självstudie: Skapa och publicera ett organisationsinnehållspaket i Power BI
 
@@ -26,7 +26,7 @@ Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller sam
 För att kunna skapa ett organisationsinnehållspaket krävs ett [Power BI Pro-konto](https://powerbi.microsoft.com/pricing) för dig och dina kollegor.
 
 > [!NOTE]
-> Du kan inte skapa eller installera innehållspaket för organisationen i förhandsversionen för den nya arbetsytan. Om du inte har börjat ännu är det här ett bra tillfälle att uppgradera dina innehållspaket till appar. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
+> Du kan inte skapa eller installera innehållspaket för organisationen i den nya arbetsyteupplevelsen. Om du inte har börjat ännu är det här ett bra tillfälle att uppgradera dina innehållspaket till appar. Lär dig [mer om den nya arbetsytan](service-create-the-new-workspaces.md).
 
 ## <a name="create-and-publish-a-content-pack"></a>Skapa och publicera ett innehållspaket
 

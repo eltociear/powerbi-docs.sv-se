@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270833"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020799"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Skapa en inbäddad datakälla för sidnumrerade rapporter i Power BI-tjänsten
 
@@ -76,21 +76,21 @@ Sidnumrerade rapporter som ansluter till Power BI-datamängder följer reglerna 
 
 - .rdl i samma arbetsyta som datamängd (samma ägare): Stöds
 - .rdl i annan arbetsyta än datamängd (samma ägare): Stöds
-- Delad .rdl: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
-- Delad app: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- Delad .rdl: Du behöver ha skapa-behörigheter tilldelade varje användare som visar rapporten på datauppsättningsnivå
+- Delad app: Du behöver ha skapa-behörigheter tilldelade varje användare som visar rapporten på datauppsättningsnivå
 - .rdl i samma arbetsyta som datamängd (annan ägare): Stöds
-- .rdl i annan arbetsyta än datamängd (annan användare):Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
-- Säkerhet på rollnivå: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå för att införa det.
+- .rdl i en annan arbetsyta än datauppsättningen (annan användare): du behöver skapa-behörighet tilldelad varje användare som visar rapporten på datauppsättningsnivå
+- Säkerhet på rollnivå: Du behöver skapa-behörighet tilldelad för varje användare som visar rapporten på datauppsättningsnivå för att det ska framtvingas.
 
 ### <a name="new-experience-apps-and-app-workspaces"></a>Nya upplevelseappar och apparbetsytor
 
 - .rdl i samma arbetsyta som datamängd: Stöds
 - .rdl i annan arbetsyta än datamängd (samma ägare): Stöds
-- Delad .rdl: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
-- Delad app: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
+- Delad .rdl: Du behöver ha skapa-behörigheter tilldelade varje användare som visar rapporten på datauppsättningsnivå
+- Delad app: Du behöver ha skapa-behörigheter tilldelade varje användare som visar rapporten på datauppsättningsnivå
 - .rdl i samma arbetsyta som datamängd (annan användare) – stöds
-- .rdl i annan arbetsyta än datamängd (annan ägare): Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå
-- Säkerhet på rollnivå: Du måste skapa behörigheter som tilldelas varje användare som visar rapporten på datamängdsnivå för att införa det
+- .rdl i annan arbetsyta än datamängd (annan ägare): Du behöver ha skapa-behörigheter tilldelade varje användare som visar rapporten på datauppsättningsnivå
+- Säkerhet på rollnivå: Du behöver skapa-behörighet tilldelad för varje användare som visar rapporten på datauppsättningsnivå för att det ska framtvingas
 
 ## <a name="next-steps"></a>Nästa steg
 

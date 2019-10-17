@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654919"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239969"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Det nya utseendet för Power BI-tjänsten
 
-Power BI-tjänsten (app.powerbi.com) har ett nytt utseende som gör det enklare att visa och interagera med dina rapporter. Det nya utseendet är en modern upplevelse som är enklare och som bygger på din vana med andra Microsoft-produkter. I Power BI-tjänsten har vi satt rapportinnehållet i fokus genom att byta till ett ljusare färgtema och uppdatera ikonerna. Här är en översikt över vad som har ändrats i det nya utseendet. Mer information finns i de numrerade avsnitten:
+Power BI-tjänsten (app.powerbi.com) har ett nytt utseende som gör det enklare att visa och interagera med dina rapporter. Det nya utseendet är enklare och bygger på din vana med andra Microsoft-produkter. I Power BI-tjänsten har vi satt rapportinnehållet i fokus genom att byta till ett ljusare färgtema och uppdatera ikonerna. Här är en översikt över vad som har ändrats i det nya utseendet. Mer information finns i de numrerade avsnitten:
 
 ![Nytt utseende – översikt över ändringar](media/service-new-look/power-bi-new-look-changes.png)
+
+Söker du efter en specifik åtgärd? Se [Det nya utseendet: Var finns åtgärderna?](service-new-look-where-actions.md)
 
 ## <a name="quick-tour-of-the-changes"></a>Snabb genomgång av ändringarna
 
@@ -70,7 +72,7 @@ Letar du åtgärderna i **Arkiv**-menyn? De åtgärder som förut fanns på **Ar
 
 ## <a name="6-new-filter-experience"></a>6. Ny filterupplevelse
 
-Senaste uppdateringar, till exempel att visa tillämpade filter och det nya filterfönstret, är tillgängliga som standard med det nya utseendet. Även om rapportdesigners inte har uppgraderat till den nya filterupplevelsen ser du det nya filterfönstret.
+Senaste uppdateringar, till exempel att visa tillämpade filter och det nya filterfönstret, är tillgängliga som standard med det nya utseendet. Även om din rapportdesigner inte har uppgraderat till den nya filterupplevelsen ser du det nya filterfönstret.
 
 ![Omdefiniera filter](media/service-new-look/power-bi-new-look-filters.png)
 

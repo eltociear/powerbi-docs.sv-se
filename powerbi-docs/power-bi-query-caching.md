@@ -2,20 +2,20 @@
 title: Cachelagring av frågor i Power BI Premium
 description: Cachelagring av frågor i Power BI Premium
 author: KesemSharabi
-ms.author: maggies
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/16/2019
+ms.date: 10/04/2019
 LocalizationGroup: ''
-ms.openlocfilehash: 489069df43d2c09f6f5551987a61353e095aff7a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6e68f515581d62b544f1c6b17144e73ea709a62d
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076181"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020491"
 ---
 # <a name="query-caching-in-power-bi-premiumembedded"></a>Cachelagring av frågor i Power BI Premium/Embedded
 
@@ -26,13 +26,13 @@ Organisationer med Power BI Premium eller Power BI Embedded kan dra nytta av *ca
 
 Cachelagrade frågeresultat är specifika för användar- och datauppsättningskontext och respekterar alltid säkerhetsregler. För närvarande utför tjänsten endast cachelagring av frågor för den första sidan som du hamnar på. Med andra ord cachelagras inte frågor när du interagerar med rapporten. Frågecachen respekterar [personliga bokmärken](consumer/end-user-bookmarks.md#personal-bookmarks) och [beständiga filter](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/). Därmed cachelagras frågor som genereras av en anpassad rapport. [Paneler på instrumentpaneler](service-dashboard-tiles.md) som tillhandahålls av samma frågor drar också fördel när frågan har cachelagrats. Prestanda drar särskilt fördel när en datauppsättning används ofta och sällan behöver uppdateras. Cachelagring av frågor kan även minska belastningen på Premium/Embedded-kapaciteten genom att minska det totala antalet frågor.
 
-Du styr funktionssättet för cachelagring av frågor på sidan **Inställningar** för datauppsättningen i Power BI-tjänsten. Det finns två möjliga inställningar:
+Du styr funktionssättet för cachelagring av frågor på sidan **Inställningar** för datauppsättningen i Power BI-tjänsten. Det finns tre möjliga inställningar:
 
+- **Kapacitetsstandard**: Cachelagring av frågor Av
 - **Av**: Använd inte cachelagring av frågor för den här datauppsättningen.
-
 - **På**: Använd cachelagring av frågor för den här datauppsättningen.
 
-![Dialogrutan Cachelagring av frågor](media/power-bi-query-caching/power-bi-query-caching.png)
+    ![Dialogrutan Cachelagring av frågor](media/power-bi-query-caching/power-bi-query-3-options.png)
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 

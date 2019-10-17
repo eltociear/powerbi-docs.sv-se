@@ -7,22 +7,22 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 77be33787599cfbb50916093d0445cf586511d90
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903787"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020752"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Hantera din apparbetsyta i Power BI och Office 365
 
 Som skapare eller administratör för en [apparbetsyta i Power BI](service-create-distribute-apps.md) eller i Office 365 kan du hantera vissa delar av arbetsytan i Power BI. Andra delar hanterar du i Office 365.
 
 > [!NOTE]
-> Förhandsversionen av den nya arbetsytan kommer att ändra förhållandet mellan Power BI-arbetsytor och Office 365-grupper. Du kommer inte automatiskt att skapa en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om att [skapa de nya arbetsytorna](service-create-the-new-workspaces.md).
+> I de nya arbetsytorna har förhållandet ändrats mellan Power BI-arbetsytor och Office 365-grupper. Du kommer inte automatiskt att skapa en Office 365-grupp varje gång du skapar en av de nya arbetsytorna. Läs mer om att [skapa de nya arbetsytorna](service-create-the-new-workspaces.md).
 
 I **Power BI** kan du:
 
