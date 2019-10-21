@@ -9,17 +9,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 12/06/2018
+ms.date: 10/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: af7f2f0ca5407694b13f0b053ff347f883c8c983
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
+ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68523053"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589464"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Snabbstart – Hitta rätt i Power BI-tjänsten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Nu när du har grunderna i Power BI ska vi se oss omkring i **Power BI-tjänsten**. Som vi tidigare nämnt arbetar kanske någon i ditt team mer eller mindre uteslutande med att kombinera data och skapa rapporter för andra i **Power BI Desktop**. Du å andra sidan arbetar kanske i princip bara i Power BI-tjänsten, där du visar och interagerar med innehåll som skapats av andra (**användningsupplevelsen**). I den här snabbstarten ska du importera exempeldata och använda dem för att hitta rätt i Power BI-tjänsten. 
  

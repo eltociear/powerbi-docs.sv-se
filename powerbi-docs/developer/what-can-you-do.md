@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: d2e3ba69cde609638e54eaa1206714f0fb420d18
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 0d4f79714be7d354c26a7bd63adbe8bce07ed4ef
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61262720"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307457"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Vad kan utvecklare göra med Power BI?
 
@@ -44,7 +44,7 @@ Med anpassade visuell objekt kan du skapa visuell objekt för användning i Powe
 
 ![CV-exempel](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-Om du vill börja lära dig mer om anpassad visuell utveckling kan du läsa [Utveckla ett anpassat visuellt objekt i Power BI](custom-visual-develop-tutorial.md).
+Om du vill börja lära dig mer om anpassad visuell utveckling kan du läsa [Utveckla ett anpassat visuellt objekt i Power BI](visuals/custom-visual-develop-tutorial.md).
 
 ## <a name="using-api-automation"></a>Använda API-automatisering
 

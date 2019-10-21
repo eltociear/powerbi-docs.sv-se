@@ -7,15 +7,15 @@ manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6a846a0588aff7dd52e725bfed1435276730e2a3
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: bfb0546771331e13f3703de0afdbcad6c3219f9c
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757695"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543832"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Felsöka gatewayer – Power BI
 
@@ -31,7 +31,7 @@ I slutet av konfigurationen anropas Power BI-tjänsten igen för att verifiera g
 
 ## <a name="data-sources"></a>Datakällor
 
-### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Fel: Det går inte att ansluta. Details: Ogiltiga autentiseringsuppgifter för anslutning
+### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Fel: Det går inte att ansluta. Detaljer: Ogiltiga autentiseringsuppgifter för anslutning
 
 I **Visa information** visas felmeddelandet som togs emot från datakällan. För SQL Server ser du något liknande följande:
 
@@ -39,7 +39,7 @@ I **Visa information** visas felmeddelandet som togs emot från datakällan. Fö
 
 Kontrollera att du har rätt användarnamn och lösenord. Kontrollera också att dessa autentiseringsuppgifter kan ansluta till datakällan. Se till att kontot som används matchar autentiseringsmetoden.
 
-### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Fel: Det går inte att ansluta. Details: Det går inte att ansluta till databasen
+### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Fel: Det går inte att ansluta. Detaljer: Det går inte att ansluta till databasen
 
 Det gick att ansluta till servern men inte till den angivna databasen. Kontrollera namnet på databasen och att användarens autentiseringsuppgifter har rätt behörighet för att komma åt databasen.
 
@@ -47,7 +47,7 @@ I **Visa information** visas felmeddelandet som togs emot från datakällan. Fö
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Fel: Det går inte att ansluta. Details: Okänt fel i datagateway
+### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Fel: Det går inte att ansluta. Detaljer: Okänt fel i datagateway
 
 Det här felet kan inträffa av olika skäl. Glöm inte att verifiera att du kan ansluta till datakällan på datorn som är värd för gatewayen. Den här situationen kan uppstå på grund av att servern inte är tillgänglig.
 
@@ -55,7 +55,7 @@ I **Visa information** visas felkoden **DM_GWPipeline_UnknownError**.
 
 Du kan också leta i **Händelseloggarna** > **Program- och tjänstloggar** > **Lokal datagateway-tjänst** för mer information.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fel: Ett fel påträffades vid försök att ansluta till \<server\>. Details: Vi nådde datagatewayen men gatewayen kommer inte åt den lokala datakällan.
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fel: Ett fel påträffades vid försök att ansluta till \<server\>. Detaljer: Vi nådde datagatewayen men gatewayen kommer inte åt den lokala datakällan.
 
 Det gick inte att ansluta till den angivna datakällan. Glöm inte att validera informationen för datakällan.
 

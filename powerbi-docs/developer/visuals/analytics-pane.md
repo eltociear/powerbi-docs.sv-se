@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: 67f9bc793b78d2019875b8165ea71fa712fd9d23
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 0782ea63a9833c220e4d96886d79d42af643e111
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193677"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307588"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Fönstret Analys i visuella Power BI-objekt
 
@@ -26,7 +26,7 @@ I den här artikeln diskuteras hur visuella Power BI-objekt med API-version 2.5.
 
 ## <a name="manage-the-analytics-pane"></a>Hantera fönstret Analys
 
-På liknande sätt som du hanterar egenskaper i fönstret [**Format**](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options) hanterar du fönstret **Analys** genom att definiera ett objekt i det visuella objektets *capabilities.json*-fil. 
+På liknande sätt som du hanterar egenskaper i fönstret [**Format**](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options) hanterar du fönstret **Analys** genom att definiera ett objekt i det visuella objektets *capabilities.json*-fil.
 
 I fönstret **Analys** ser skillnaderna ut så här:
 

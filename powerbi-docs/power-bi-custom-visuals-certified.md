@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 2203e3a9abddb52902c09fdc98665ba013f604ee
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946217"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307817"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -31,7 +31,7 @@ Certifieringsprocessen är en valfri process och det är upp till utvecklarna at
 
 **Ocertifierade visuella Power BI-objekt** innebär inte nödvändigtvis osäkra visuella objekt. Vissa visuella objekt är inte certifierade eftersom de inte är kompatibla med ett eller flera av [certifieringskraven](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Till exempel att ansluta till en extern tjänst som visuell mappning eller visuella objekt med kommersiella bibliotek.
 
-Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Läs mer i informationen om hur du  **[utvecklar ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md)** .
+Är du webbutvecklare och intresserad av att skapa egna visualiseringar och lägga till dem i  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Läs mer i informationen om hur du  **[utvecklar ett anpassat visuellt objekt i Power BI](developer/visuals/custom-visual-develop-tutorial.md)** .
 
 ## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Borttagning av Power BI-certifierade visuella Power BI-objekt
 
@@ -196,7 +196,7 @@ Mer information om visuella objekt finns i [Vanliga frågor och svar om certifie
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Utveckla ett anpassat visuellt objekt i Power BI](developer/custom-visual-develop-tutorial.md)
+* [Utveckla ett anpassat visuellt objekt i Power BI](developer/visuals/custom-visual-develop-tutorial.md)
 * [Microsofts spelningslista om anpassade visuella objekt på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualiseringar i Power BI](visuals/power-bi-report-visualizations.md)  
 * [Anpassade visualiseringar i Power BI](power-bi-custom-visuals.md)  

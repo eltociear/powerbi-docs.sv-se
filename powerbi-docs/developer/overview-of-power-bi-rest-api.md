@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269460"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307622"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Vad kan utvecklare göra med Power BI-API?
 
@@ -57,7 +57,7 @@ Du kan använda Power BI-API:et för att [skicka data till en datauppsättning](
 ## <a name="next-steps"></a>Nästa steg
 
 * [Skicka data till en datauppsättning](walkthrough-push-data.md)
-* [Utveckla ett anpassat visuellt objekt i Power BI](custom-visual-develop-tutorial.md)
+* [Utveckla ett anpassat visuellt objekt i Power BI](visuals/custom-visual-develop-tutorial.md)
 * [Power BI REST API-referens](rest-api-reference.md)
 * [REST API:er för Power BI](https://docs.microsoft.com/rest/api/power-bi/)
 
