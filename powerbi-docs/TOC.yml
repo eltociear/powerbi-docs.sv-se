@@ -353,6 +353,8 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Visuellt matrisobjekt
               href: visuals/desktop-matrix-visual.md
+            - name: Visuella frågor och svar
+              href: visuals/power-bi-visualization-q-and-a.md
             - name: Skapa avancerade analyser och visualiseringar med hjälp av R-skript i Power BI
               href: visuals/service-r-visuals.md
             - name: Diagram med radiella mätare i Power BI
@@ -375,6 +377,22 @@
               href: visuals/power-bi-visualization-waterfall-charts.md
             - name: Skapa dynamiska referensrader
               href: service-analytics-pane.md
+        - name: Naturligt språk
+          items:
+            - name: Frågor och svar – introduktion
+              href: natural-language/q-and-a-intro.md
+            - name: Visuella frågor och svar
+              href: visuals/power-bi-visualization-q-and-a.md
+            - name: Verktyg för frågor och svar – introduktion
+              href: natural-language/q-and-a-tooling-intro.md
+            - name: Verktyg för frågor och svar – frågor och svar för inlärning
+              href: natural-language/q-and-a-tooling-teach-q-and-a.md
+            - name: Avancerade verktyg för frågor och svar
+              href: natural-language/q-and-a-tooling-advanced.md
+            - name: Frågor och svar – metodtips
+              href: natural-language/q-and-a-best-practices.md
+            - name: Frågor och svar – begränsningar
+              href: natural-language/q-and-a-limitations.md
         - name: Felsök
           items:
             - name: Lösa problem när du importerar Access-databaser och Excel-kalkylblad i Power BI Desktop och Power Query
