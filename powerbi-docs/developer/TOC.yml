@@ -129,6 +129,8 @@
               href: register-app.md
             - name: Hämta en Azure AD-åtkomsttoken
               href: get-azuread-access-token.md
+            - name: Dynamisk bindning
+              href: embed-dynamic-binding.md
             - name: Bädda in frågor och svar
               href: qanda.md
             - name: Felsök ditt inbäddade program
