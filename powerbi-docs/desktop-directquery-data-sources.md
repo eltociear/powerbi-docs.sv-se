@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/16/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 75b7a606e588ca7f6d1393c5b6e0dd9041f6d63e
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: a9e8d2aaab7c0b3ed1daea32486260d09bc6f6a2
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945206"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511628"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Datakällor som stöds av DirectQuery i Power BI
 
@@ -76,7 +76,7 @@ I följande tabell anges om en **lokal datagateway** krävs för att ansluta til
 | Oracle-databas |Ja |
 | PostgreSQL |Ja |
 | SAP Business Warehouse Application Server |Ja |
-| SAP Business Warehouse Message Server |Stöds inte än i **Power BI-tjänsten** |
+| SAP Business Warehouse Message Server |Ja |
 | SAP HANA |Ja |
 | Snowflake |Ja |
 | Spark (beta) version 0.9 och senare |Ja |
@@ -97,6 +97,7 @@ Alternativet för enkel inloggning börjar fungera för alla datauppsättningar 
 - Impala
 - SAP HANA
 - SAP BW
+- SAP BW-meddelandeserver (förhandsversion)
 - Spark
 - SQL Server
 - Teradata

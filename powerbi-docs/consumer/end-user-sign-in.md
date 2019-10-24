@@ -8,15 +8,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 10/13/2019
 ms.author: mihart
 LocalizationGroup: Getting started
-ms.openlocfilehash: 328010a97825f84e103a1100c8783cd02769d67f
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7bc52e06234b8c1be558f0c74680febe2a65d1d1
+ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66750960"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380042"
 ---
 # <a name="sign-in-to-power-bi-service"></a>Logga in på Power BI-tjänsten
 
@@ -25,45 +25,50 @@ Innan du kan logga in på Power BI måste du ha ett konto. Det finns två sätt 
 
 ## <a name="sign-in-for-the-first-time"></a>Logga in första gången
 
-### <a name="step-one-open-a-browser"></a>Steg ett: öppna en webbläsare
+### <a name="step-1-open-a-browser"></a>Steg 1: Öppna en webbläsare
 Power BI-tjänsten körs i en webbläsare.  Så steg ett är att öppna din favoritwebbläsare och skriva **app.powerbi.com**.
 
 ![webbläsarfält med skrivning](media/end-user-sign-in/power-bi-sign-in.png)
 
-### <a name="step-two-type-your-email-address"></a>Steg två: skriv din e-postadress
-Första gången du loggar in måste du ange din e-postadress.  Det här är e-postadressen till arbetet eller skolan som du använde när du registrera dig för Power BI.  
+### <a name="step-2-type-your-email-address"></a>Steg 2: Skriv din e-postadress
+Första gången du loggar in måste du ange din e-postadress.  Det ska vara e-postadressen till arbets- eller skol-kontot som du använde när du registrerade dig för Power BI.  
 
-Titta i din inkorg efter ett e-postmeddelande från Power BI-administratören. De flesta administratörer skickar dig ett välkomstmeddelande via e-post med ett tillfälligt lösenord. Använda det här e-postkontot för inloggningen. 
+Titta i din inkorg efter ett e-postmeddelande från Power BI-administratören. De flesta administratörer skickar dig ett välkomstmeddelande via e-post med ett tillfälligt lösenord. Använd det här e-postkontot vid inloggningen. 
 
-![webbläsarfält med skrivning](media/end-user-sign-in/power-bi-email2.png)
+![webbläsarfält med skrivning](media/end-user-sign-in/power-bi-password.png)
 
 
  
-### <a name="step-three-create-a-new-password"></a>Steg tre: skapa ett nytt lösenord
-Om Power BI-administratören har skickat dig ett tillfälligt lösenord anger du det i fältet **Aktuellt lösenord**. Om du inte har fått det här lösenordet i e-posten kontaktar du Power BI-administratören.
+### <a name="step-3-create-a-new-password"></a>Steg 3: Skapa ett nytt lösenord
+Om Power BI-administratören har skickat dig ett tillfälligt lösenord anger du det i fältet **Aktuellt lösenord**. Om du inte har fått något lösenord i e-posten kontaktar du Power BI-administratören.
 
-![e-postadress angiven i fältet Logga in](media/end-user-sign-in/power-bi-login2.png)
+![e-postadress som har skrivits i inloggningsfältet](media/end-user-sign-in/power-bi-login.png)
 
-Power BI-kommer ihåg dina autentiseringsuppgifter och du behöver inte ange användarnamnet (e-postadressen) nästa gång du loggar in. 
+Välj **Ja** om du vill att Power BI ska komma ihåg dina autentiseringsuppgifter. 
 
-### <a name="step-four-review-your-home-page"></a>Steg fyra: granska din startsida
-Vid ditt allra första besök öppnas Power BI på din **startsida**. Om **startsidan** inte öppnas väljer du den i det vänstra navigeringsfönstret. 
+![bestäm om du vill att Power BI ska komma ihåg dina autentiseringsuppgifter](media/end-user-sign-in/power-bi-stay-signed-in.png)
 
-![e-postadress angiven i fältet Logga in](media/end-user-sign-in/power-bi-home-select.png)
 
-På startsidan visas allt innehåll som du har behörighet att använda. Först kanske det inte finns så mycket innehåll på din startsida men oroa dig inte. Det ändras när du börjar använda Power BI med dina kollegor. 
+### <a name="step-4-review-your-home-landing-page"></a>Steg 4: Granska din landningssida
+Vid ditt första besök öppnas Power BI på din **startsida**. Om **startsidan** inte öppnas kan du välja den i navigeringsfönstret. 
 
-![e-postadress angiven i fältet Logga in](media/end-user-sign-in/power-bi-home2.png)
+![skärmbild som visar startsidan som valts](media/end-user-sign-in/power-bi-home-selected.png)
 
-Om du inte vill att Power BI ska öppnas på startsidan kan du [ange en **Aktuell** instrumentpanel eller rapport](end-user-featured.md) att öppnas i stället. 
+På startsidan visas allt innehåll som du har behörighet att använda. Först kanske det inte finns så mycket innehåll, men oroa dig inte. Det ändras när du börjar använda Power BI tillsammans med dina kollegor. 
+
+![Landningssida](media/end-user-sign-in/power-bi-home-landing.png)
+
+Om du inte vill att Power BI ska öppnas på startsidan kan du [ange att en **Aktuell** instrumentpanel eller rapport](end-user-featured.md) ska öppnas i stället. 
 
 ## <a name="safely-interact-with-content"></a>Interagera på ett säkert sätt med innehåll
 Som ***konsument*** delar andra innehåll med dig och du interagerar med det innehållet för att utforska data och fatta affärsbeslut.  När du filtrerar, gör utsnitt, exporterar och ändra storlek behöver du inte oroa dig – ditt arbete påverkar inte den underliggande datauppsättningen eller det ursprungliga delade innehållet (instrumentpaneler och rapporter). Power BI är ett säkert utrymme där du kan utforska och experimentera. Det betyder inte att du inte kan spara dina ändringar – det kan du. Men de ändringarna påverkar bara **din** vy över innehållet. Och att återgå till den ursprungliga standardvyn är lika enkelt som att klicka på en knapp.
 
+![Knappen Återställ till standard](media/end-user-sign-in/power-bi-reset.png)
+
 ## <a name="sign-out-of-power-bi-service"></a>Logga ut från Power BI-tjänsten
 När du stänger eller logga ut från Power BI sparas dina ändringar så att du kan fortsätta direkt där du slutade.
 
-Om du vill stänga Power BI kan du helt enkelt stänga den webbläsarflik där du arbetar. 
+Om du vill stänga Power BI stänger du den webbläsarflik där du arbetar. 
 
 ![välj x för att stänga fliken](media/end-user-sign-in/power-bi-close.png) 
 
@@ -74,7 +79,7 @@ Om du delar en dator rekommenderar vi att du loggar ut varje gång du stänger P
 ## <a name="troubleshooting-and-considerations"></a>Felsökning och överväganden
 - Om du har registrerat dig för Power BI som användare loggar du inte med den e-postadress du använde vid registreringen.
 
-- Om du använder Power BI med fler än ett konto uppmanas du att välja ett konto i en lista och ange ett lösenord när du loggar in. 
+- Vissa personer använder Power BI med mer än ett konto. I så fall uppmanas du att välja ett konto från en lista när du loggar in. 
 
 ## <a name="next-steps"></a>Nästa steg
 [Visa en Power BI-app](end-user-app-view.md)

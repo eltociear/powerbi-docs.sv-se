@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 9593296b0e09340fe4f62fff7a2e7722912a4216
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823472"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259958"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Azure Machine Learning-integrering i Power BI
 
@@ -70,7 +70,7 @@ Dataforskare använder i första hand Python för att utveckla och distribuera �
 
 Den här schemafilen måste inkluderas i den distribuerade webbtjänsten för Machine Learning Service-modeller. För att automatiskt generera schemat för webbtjänsten måste du ange ett exempel på indata/utdata i inmatningsskriptet för den distribuerade modellen. Se underavsnittet om (valfritt) automatisk generering av Swagger-schema i dokumentationen för distribution av modeller med Azure Machine Learning Service. Länken innehåller exempelinmatningsskriptet med instruktionerna för schemagenerering. 
 
-Specifikt refererar funktionerna *@input_schema* och *@output_schema* i inmatningsskriptet indata- och utdataexempelformaten i variablerna *input_sample* och *output_sample*, och använder dessa exempel för att generera en OpenAPI-specifikation (Swagger) för webbtjänsten under distribution.
+Specifikt refererar funktionerna *\@input_schema* och *\@output_schema* i inmatningsskriptet till indata- och utdataexempelformaten i variablerna *input_sample* och *output_sample*, samt använder dessa exempel för att generera en OpenAPI-specifikation (Swagger) för webbtjänsten under distributionen.
 
 Dessa instruktioner för schemagenerering genom uppdatering av inmatningsskriptet måste även tillämpas på de modeller som skapas med hjälp av automatiserade maskininlärningsexperiment via Azure Machine Learning SDK.
 

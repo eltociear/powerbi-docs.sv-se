@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2b05ad31612d1960e131028d13552843834a98bd
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968901"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307366"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurera arbetsbelastningar i en Premium-kapacitet
 
@@ -70,6 +70,8 @@ Som standard är datamängdernas arbetsbelastning aktiverad och kan inte inaktiv
 | **Maximalt antal resultatraduppsättningar** | Det maximala antalet rader som returneras i en DAX-fråga. Standardvärdet är -1 (ingen gräns) och det tillåtna intervallet är mellan 100 000 och 2 147 483 647. |
 | **Minnesgräns för frågor (%)** | Den maximala procentandelen tillgängligt minne som kan användas för tillfälliga resultat i en fråga eller ett DAX-mått. |
 | **Tidsgräns för frågor (sekunder)** | Maximal tid innan tidsgränsen för frågan uppnås. Standardvärdet är 3 600 sekunder (en timme). Värdet 0 anger att frågorna inte har någon tidsgräns. |
+| **Automatisk siduppdatering (förhandsversion)** | På/av växlar funktionen för automatisk siduppdatering i Premium-arbetsytor. |
+| **Minsta uppdateringsintervall** | Om automatisk siduppdatering är aktiverat, är detta det minsta intervall som tillåts för siduppdatering. Standardvärdet är fem minuter och det lägsta tillåtna värdet är en sekund. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Maximalt antal mellanliggande raduppsättningar
@@ -112,6 +114,19 @@ Den här inställningen gäller för en enskild fråga och inte den tid det tar 
 Den sammanlagda tiden för alla frågor är 75 minuter, men den inställda tidsgränsen har inte nåtts eftersom alla enskilda frågor tar mindre än 20 minuter att köra.
 
 Observera att för Power BI-rapporter åsidosätts detta standardvärde med en mycket lägre tidsgräns för varje fråga till kapaciteten. Normalt är tidsgränsen för varje fråga ungefär tre minuter.
+
+#### <a name="automatic-page-refresh-preview"></a>Automatisk siduppdatering (förhandsversion)
+
+När den här inställningen är aktiverad kan användare i Premium-kapaciteten uppdatera sidor i rapporten till DirectQuery-källor med hjälp av automatisk siduppdatering. Som kapacitetsadministratör kan du göra följande:
+
+1.  Aktivera och inaktivera automatisk siduppdatering
+2.  Definiera ett minsta uppdateringsintervall
+
+Följande bild visar platsen för inställningen av automatiskt uppdateringsintervall:
+
+![administratörsinställning av automatiskt uppdateringsintervall](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+
+Frågor som har skapats vid automatisk siduppdatering skickas direkt till datakällan, så det är viktigt att tänka på tillförlitligheten och belastningen på dessa källor när du tillåter automatisk siduppdatering i din organisation. 
 
 ### <a name="dataflows"></a>Dataflöden
 
@@ -181,5 +196,6 @@ Arbetsbelastningar kan aktiveras och tilldelas till en kapacitet med hjälp av [
 [Optimera Power BI Premium-kapaciteter](service-premium-capacity-optimize.md)     
 [Dataförberedelser med självbetjäning i Power BI med dataflöden](service-dataflows-overview.md)   
 [Vad är sidnumrerade rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[Automatisk siduppdatering i Power BI Desktop (förhandsversion)](desktop-automatic-page-refresh.md)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)

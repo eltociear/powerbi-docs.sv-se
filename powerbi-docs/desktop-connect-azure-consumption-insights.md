@@ -1,5 +1,5 @@
 ---
-title: Analysera Azure-kostnader och användningsdata i Power BI Desktop
+title: Ansluta till Azure Consumption Insights-data i Power BI Desktop
 description: Det är enkelt att ansluta till Azure och få insikter om användning med Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,29 +8,22 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0474bc4182f77e7084ca8cb78062ba0f2063e7ae
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 44a9e361a1f5031963ba5ce33ee44c7b21f5459b
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160208"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307549"
 ---
-# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysera Azure-kostnader och användningsdata i Power BI Desktop
+# <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Ansluta till Azure Consumption Insights-data i Power BI Desktop
 
 Du kan använda Power BI Desktop för att ansluta till Azure och få detaljerade data om din organisations användning av Azure-tjänster. Med dessa data kan du skapa anpassade rapporter och åtgärder för att bättre förstå och analysera dina Azure-kostnader.
 
-Power BI stöder för närvarande anslutning till faktureringskonton för Enterprise-avtal och kundavtal.
-
-* **Användare med Enterprise-avtal** bör ansluta med **Azure Consumption Insights-anslutningsprogrammet** (nedan).
-
-* **Användare med kundavtal** bör ansluta med [**Azure Cost Management-anslutningsprogrammet**](#connect-with-azure-cost-management).
-
 > [!NOTE]
-> Om du är Enterprise-avtalskund som använder Azure Cost Management-anslutningen och inte ser ditt *faktureringsprofils-ID* på bladet Cost Management, betyder det att du inte befinner dig på den moderna handelsplattformen. I sådana fall använder du Azure Consumption Insights-anslutningen, som efterfrågar EA-registreringsnumret i stället *för faktureringsprofils-ID.*
-
+> Det finns ett begränsat stöd för Microsoft Azure Consumption Insights (beta). Nya funktioner finns i [Azure Cost Management-anslutningsprogrammet för Power BI](desktop-connect-azure-cost-management.md).
 
 ## <a name="connect-with-azure-consumption-insights"></a>Ansluta till Azure Consumption Insights
 
@@ -236,112 +229,12 @@ Kolumnerna och detaljnamnen i Azure-portalen ser liknande ut i API:et och anslut
 | SubscriptionId |subscriptionId |SubscriptionId |Ja |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Nej |
 
-## <a name="connect-with-azure-cost-management"></a>Ansluta med Azure Cost Management
-
-I det här avsnittet lär du dig att ansluta till ditt faktureringskontos kundavtal.
-
-> [!NOTE]
-> Azure Cost Management-anslutningsappen stöder för närvarande kunder i **kundavtalet**.  **Användare med Enterprise-avtal** bör använda Microsoft Azure Consumption Insights-anslutningsappen.
->
->
-
-Så här använder du **Azure Cost Management**-anslutningsprogrammet i **Power BI Desktop**:
-
-1. På menyfliksområdet **Start** väljer du **Hämta data**.
-
-1. I kategorierna till vänster väljer du **Azure**.
-
-1. Välj **Azure Cost Management (beta)** till höger.
-
-1. Välj **Anslut**.
-
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
-
-   I den dialogruta som visas anger du ditt **faktureringsprofils-ID**.
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
-
-Du kan hämta ditt ID i [Azure-portalen](https://portal.azure.com):
-
-1. Gå till **Kostnadshantering + fakturering**.
-
-1. Välj ditt faktureringskonto.
-
-1. Välj **Faktureringsprofiler** i sidofältet.
-
-1. Välj din faktureringsprofil.
-
-1. Välj **Egenskaper** i sidofältet.
-
-1. Kopiera ditt faktureringsprofils-ID.
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
-
-   Du uppmanas att logga in med din e-postadress och ditt lösenord för Azure.  När du har autentiserat visas ett **navigatörsfönster** med de tolv tillgängliga tabellerna:
-
-| Tabell        | Beskrivning |
-|-------------------- | -------------------------------------------------------------|
-| **Faktureringshändelser** | Händelselogg med nya fakturor, kreditinköp och mer. |
-| **Budgetar** | Budgetinformation för att visa faktiska kostnader eller användning mot befintliga budgetmål. |
-| **Avgifter** | En månatlig sammanfattning av Azure-användningen, marknadskostnader samt avgifter som debiterats separat. |
-| **Krediter** | Inköpsinformation med Azure-krediter för den angivna faktureringsprofilen. |
-| **Kreditsammanfattning** | Kreditsammanfattning för den angivna faktureringsprofilen. |
-| **MarketPlace** | Användningsbaserade Azure Marketplace-avgifter. |
-| **PriceSheets** | Tillämpliga mätarpriser för den angivna faktureringsprofilen. |
-| **RI-avgifter** | Kostnader som är kopplade till dina reserverade instanser under de senaste 24 månaderna. |
-| **RI-rekommendationer (enkel)** | Rekommendationer för köp av reserverade instanser baserat på dina användningstrender för en enstaka prenumeration under de senaste 7, 30 eller 60 dagarna. |
-| **RI-rekommendationer (delad)** | Rekommendationer för köp av reserverade instanser baserat på dina användningstrender för alla dina prenumerationer under de senaste 7, 30 eller 60 dagarna. |
-| **RI-användning** | Information om förbrukning för dina befintliga reserverade instanser under den senaste månaden. |
-| **Användningsinformation** | Detaljer om förbrukade mängder och beräknade kostnader för det angivna faktureringsprofils-ID:t. |
-
-Du kan markera en tabellkryssruta för att visa en förhandsgranskning.  Du kan markera en eller flera tabeller genom att markera rutan bredvid namnet och sedan välja **Läs in**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
-
-När du väljer **Ladda** läsas data in i **Power BI Desktop**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
-
-De dina valda data har laddats kommer dina valda tabeller och fält att visas i panelen **Fält**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
-
-Se [hur du analyserar utgifter i Power BI med Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk). Den här videon förklarar hur du granskar dina kostnadsdata i Power BI Desktop med hjälp av Azure Consumption Insights-anslutningsprogrammet.
-
-## <a name="writing-custom-queries"></a>Skriva anpassade frågor
-
-Du kan skapa en anpassad [M-fråga](/powerquery-m/power-query-m-reference) för att anpassa antalet månader, ändra API-versionen eller utföra mer avancerad logik på de returnerade data.
-
-I **Power BI Desktop**:
-
-1. Välj menyfliksområdet **Start**
-2. Välj **Hämta data** > **Tom fråga**
-
-Eller i **frågeredigeraren**:
-
-1. Högerklicka i det vänstra fönstret **Frågor**
-2. Välj **Ny fråga > Tom meny** i den meny som visas
-
-I **formelfältet** skriver du följande och byter ut `billingProfileId` mot ditt faktiska ID och ”debiteringar” mot ett giltigt tabellnamn (listan ovan).
-
-```
-let
-    Source = AzureCostManagement.Tables(billingProfileId, [ numberOfMonths = 3 ]),
-    charges = Source{[Key="charges"]}[Data]
-in
-    charges
-```
-
-Utöver att ändra `numberOfMonths` till valfritt värde mellan 1 och 36 kan du även ange följande:
-
-* `apiVersion` för att anpassa vilken API-version som frågan anropar.
-* `lookbackWindow` för RI-rekommendationer (enkla eller delade), för att ändra det fönster rekommendationerna genereras från (giltiga alternativ: 7, 30 eller 60 dagar).
 
 ## <a name="next-steps"></a>Nästa steg
 
 Du kan ansluta till många olika datakällor med hjälp av Power BI Desktop. Mer information finns i följande artiklar:
 
+* [Ansluta till Azures kostnadshanteringsdata i Power BI Desktop](desktop-connect-azure-cost-management.md)
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)

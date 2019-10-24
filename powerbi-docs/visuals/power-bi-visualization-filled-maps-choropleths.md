@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 2befce7914fc295ff4a6124be10183d5ff20106d
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299407"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544486"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Fyllda kartor (koropleter) i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 En fylld karta använder skuggning, toning eller mönster för att visa hur ett värde skiljer sig åt proportionellt på en geografisk plats eller i en region.  Du kan snabbt visa dessa relativa skillnader med skuggning som sträcker sig från ljus (mindre ofta/lägre) till mörk (mer frekvent/fler).    
 
 ![Karta över USA](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
@@ -44,27 +47,24 @@ Fyllda kartor är ett bra alternativ:
 * för att få en översikt över distributionen på flera geografiska platser.
 
 ### <a name="prerequisites"></a>Förutsättningar
-- Power BI-tjänsten eller Power BI Desktop
-- Exempel på försäljning och marknadsföring
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+1. Välj **Arkiv** > **Öppna** uppe till vänster i menyraden
+   
+2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelsanalys**
 
-Om du vill följa med använder vi självstudiekursen Power BI-tjänsten och inte Power BI Desktop.
+1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+
 
 ## <a name="create-a-basic-filled-map"></a>Skapa en grundläggande fylld karta
 I det här videoklippet skapar Kim en grundläggande karta och konverterar den till en fylld karta.
+   > [!NOTE]
+   > I den här videon används en äldre version av Power BI Desktop.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
-
-### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Hämta data och lägg till en ny tom sida i rapporten
-1. För att skapa en egen fylld karta [hämtar du försäljnings- och marknadsföringsexemplet](../sample-datasets.md) genom att logga in till Power BI och välja **Hämta data \>Exempel \> Försäljning och marknadsföring \> Anslut**. Du kan också skaffa appen **Power BI Sales and Marketing** på appsource.com. 
-
-2. Öppna rapporten Försäljning och marknadsföring.
-
-   ![Rapporten Försäljning och marknadsföring öppnas](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
-3. Rapporten öppnas i Power BI. Välj **Redigera rapport** för att öppna rapporten i [redigeringsvyn](../service-interact-with-a-report-in-editing-view.md).
-
-4. Lägg till en ny sida genom att välja den gula plus-ikonen längst ned på rapportarbetsytan.
-
-    ![Rapportflikar](media/power-bi-visualization-filled-maps-choropleths/power-bi-new-page.png)
 
 ### <a name="create-a-filled-map"></a>Skapa en koropletkarta
 1. Fönstret fält, Välj den **Geo** \> **tillstånd** fältet.    
@@ -75,9 +75,9 @@ I det här videoklippet skapar Kim en grundläggande karta och konverterar den t
    ![mallar med ikonen för fylld karta markerad](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Filtrera kartan för att visa endast kontinentala USA.
 
-   a.  Längst ned i visualiseringsfönstret hittar du området **Filter**.
+   a.  Till vänster i visualiseringsfönstret finns rutan **Filter**. Expandera den om den är minimerad
 
-   b.  Hovra över **Stat** och klicka för att expandera sparren.  
+   b.  Hovra över **Stat** och välj den expanderade sparren  
    ![Visuella nivåfilter som visar Stat (alla)](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
    c.  Sätt en bock bredvid **Alla** och ta bort bocken bredvid **AK**.
@@ -115,11 +115,11 @@ Om du markerar en plats i en koropletkarta korsfiltreras de övriga visualiserin
 
     ![Fliken Sentiment har valts](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Flytta och ändra storlek på visualiseringarna på sidan för att skapa mer utrymme, och använd sedan CTRL + V för att klistra in koropletkartan från föregående rapport.
+4. Flytta och ändra storlek på visualiseringarna på sidan för att skapa mer utrymme, och använd sedan CTRL + V för att klistra in koropletkartan från föregående rapport. (Se nedanstående bilder)
 
    ![Koropletkarta som har lagts till på sentimentsidan](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Välj en stat på den fyllda kartan.  Detta markerar de övriga visualiseringarna på sidan. Om jag väljer exempelvis **Texas** är sentimentet 74; Texas ligger i Central District \#23.   
+5. Välj en stat på den fyllda kartan.  Detta korsmarkerar och korsfiltrerar de övriga visualiseringarna på sidan. Om jag väljer exempelvis **Texas** ser jag att är sentimentet 75 och att Texas ligger i Central District nr 23.   
    ![Texas har valts](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Välj en datapunkt i linjediagrammet VanArsdel – Sentiment per månad. Detta filtrerar koropletkartan för att visa sentimentdata för VanArsdel och inte deras konkurrenter.  
    ![ny färgning](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)

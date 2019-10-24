@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2e41a3f5b1d1bd945e1ab4566abed1589b20c148
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67264919"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543778"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundläggande begrepp för användare av Power BI-tjänsten
 
-Den här artikeln förutsätter att du redan har läst [översikten över Power BI](../power-bi-overview.md) och har identifierat dig själv som ***användare*** av Power BI. Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
+Den här artikeln förutsätter att du redan har läst [översikten över Power BI](../power-bi-overview.md) och har identifierat dig själv som [användare av ***Power BI***](end-user-consumer.md). Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
 
 Du kommer utan tvekan att höra talas om ”Power BI Desktop” eller bara ”Desktop”. Det är det fristående verktyget som används av *designers* som skapar och delar instrumentpaneler och rapporter med dig. Det är viktigt att veta att det även finns andra Power BI-verktyg. Om du är användare kommer du bara att arbeta med Power BI-tjänsten. Den här artikeln gäller endast för Power BI-tjänsten.
 
@@ -35,7 +35,7 @@ De flesta Power BI-användare skaffar Power BI-tjänsten eftersom 1) deras före
 
 För att komma igång öppnar du en webbläsare och anger **app.powerbi.com**. Första gången du öppnar Power BI-tjänsten ser det ut ungefär så här:
 
-![En skärmbild av Power BI-tjänstens välkomstskärm.](media/end-user-basic-concepts/power-bi-open.png)
+![En skärmbild av Power BI-tjänstens välkomstskärm.](media/end-user-basic-concepts/power-bi-home.png)
 
 När du använder Power BI anpassar du det som visas när du öppnar webbplatsen varje gång. Till exempel föredrar vissa att Power BI öppnas på **startsidan**, medan andra har en favoritinstrumentpanel som de vill se först. Oroa dig inte, i den här artikeln får du lära dig hur du kan anpassa din upplevelse.
 
@@ -87,9 +87,9 @@ Varje datamängd representerar en enskild datakälla. Källan kan exempelvis var
 
 När en designer delar en app med dig, kan du se vilka datamängder som designern har inkluderat i appen.
 
-![Skärmbild av Power BI:s användargränssnitt som visar valda appar och en pil som pekar på avsnittet Datamängder på arbetsytan.](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![Skärmbild av Power BI:s användargränssnitt och en pil som pekar på avsnittet Datamängder på arbetsytan.](media/end-user-basic-concepts/power-bi-dataset-lists.png)
 
-Om datamängd ...
+En datamängd...
 
 - Kan användas och om igen av en rapportdesigner för att skapa instrumentpaneler och rapporter
 
@@ -98,10 +98,6 @@ Om datamängd ...
 - Visuella objekt från en datamängd kan visas på många olika instrumentpaneler
 
   ![En graf som visar en datamängd med många-till-en-relationer](media/end-user-basic-concepts/drawing2.png)
-
-Designers kan dessutom använda datamängder från andra arbetsytor för att skapa innehåll (rapporter, instrumentpaneler) på sin arbetsyta. Power BI visar dessa datamängder med hjälp av ikonen för refererade datamängder:
-
-![En skärmbild av en databas med länkikon.](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 Nu går vi vidare till nästa byggsten – visualiseringar.
 
@@ -131,11 +127,11 @@ _______________________________________________________
 
 En Power BI-rapport är en eller flera sidor med visualiseringar, grafik och text. Alla visualiseringar i en rapport kommer från en enda datauppsättning. *Designers* delar rapporter med *användare* som [interagerar med rapporterna i *läsvyn*](end-user-reading-view.md).
 
-![Skärmbild av en rapport med flikar.](media/end-user-basic-concepts/power-bi-report2.png)
+![Skärmbild av en rapport med flikar.](media/end-user-basic-concepts/power-bi-report.png)
 
 En rapport ...
 
-- Kan associeras med flera instrumentpaneler (paneler fästa från en rapport kan visas på flera instrumentpaneler)
+- Kan associeras med flera instrumentpaneler (paneler som är fästade från rapporten kan visas på flera instrumentpaneler).
 
 - Kan skapas med hjälp av data från endast en datamängd  
 
@@ -151,7 +147,7 @@ En instrumentpanel representerar en anpassad vy av någon delmängd av de underl
 
   ![Skärmbild av ett exempel på en instrumentpanel](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-En panel är en rendering av ett visuellt objekt som en *designer* *fäster* till exempel från en rapport till en instrumentpanel. Varje fäst panel visar en [visualisering](end-user-visualizations.md) som Power BI har skapat från en datamängd och fästs på den instrumentpanelen. En panel kan även innehålla en hel rapportsida och kan innehålla liveuppspelningsdata eller en video. Det finns många sätt som *designers* kan använda för att lägga till paneler på instrumentpaneler. Det finns för många för att vi ska kunna ta upp dem i den här översikten. Läs mer i [Paneler på instrumentpanelen i Power BI](end-user-tiles.md).
+En panel är en rendering av ett visuellt objekt som en *designer* *fäster* till exempel från en rapport till en instrumentpanel. Varje fäst panel visar en [visualisering](end-user-visualizations.md) som en designer har skapat från en datamängd och som har fästs på instrumentpanelen. En panel kan även innehålla en hel rapportsida och kan innehålla liveuppspelningsdata eller en video. Det finns många sätt som *designers* kan använda för att lägga till paneler på instrumentpaneler. Det finns för många för att vi ska kunna ta upp dem i den här översikten. Läs mer i [Paneler på instrumentpanelen i Power BI](end-user-tiles.md).
 
 Användare kan inte redigera instrumentpaneler. Du kan dock lägga till kommentarer, visa relaterade data, ange en instrumentpanel som favorit, prenumerera med mera.
 
@@ -183,7 +179,7 @@ _______________________________________________________
 
 Dessa samlingar av instrumentpaneler och rapporter organiserar relaterat innehåll tillsammans i ett enda paket. Power BI-*designers* skapar och delar dem med enskilda användare, grupper, en hel organisation eller allmänheten. Som användare kan du vara säker på att du och dina kolleger arbetar med samma data, en enskild betrodd version av sanningen.
 
-![Skärmbild av appar har valts i det vänstra fönstret i Power BI.](media/end-user-basic-concepts/power-bi-app.png)
+![Skärmbild av appar har valts i det vänstra fönstret i Power BI.](media/end-user-basic-concepts/power-bi-apps.png)
 
 Apparna är enkla att hitta och installera i [Power BI-tjänsten](https://powerbi.com) och på din mobila enhet. När du installerar en app behöver du inte komma ihåg namnen på flera olika instrumentpaneler. De har samlats i en app, i webbläsaren eller på din mobila enhet.
 

@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 44534f2adbc4f1f39a0c65e11d646fd8fd67be71
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944802"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307676"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publicera visuella Power BI-objekt till AppSource
 
 Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem.
 
-När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det på AppSource så att andra kan hitta och använda det. Det finns vissa förberedelser som måste göras innan du kan göra det. Mer information om hur du skapar ett anpassat visuellt objekt finns i [Utveckla ett anpassat visuellt Power BI-objekt](custom-visual-develop-tutorial.md).
+När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det på AppSource så att andra kan hitta och använda det. Det finns vissa förberedelser som måste göras innan du kan göra det. Mer information om hur du skapar ett anpassat visuellt objekt finns i [Utveckla ett anpassat visuellt Power BI-objekt](visuals/custom-visual-develop-tutorial.md).
 
    ![Office Store](media/office-store/appsource-01.png)
 
@@ -30,7 +30,7 @@ När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det 
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Förbereda att skicka ditt anpassade visuella objekt
 
-När du är klar med att läsa [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md), koda och [testa ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), och har förpackat det i en pbiviz-fil, bör du ha följande klart för din överföring.
+När du har läst [riktlinjerna för visuella Power BI-objekt](guidelines-powerbi-visuals.md), kodat och [testat ditt anpassade visuella objekt](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), samt har paketerat det i en pbiviz-fil, bör nedanstående vara klart för din överföring.
 
 | Objekt | Krävs | Beskrivning |
 | --- | --- | --- |
@@ -147,7 +147,7 @@ När du har skapat ditt visuella objekt kan du eventuellt få ditt visuella obje
 
 ## <a name="next-steps"></a>Nästa steg
 
-[Utveckla ett anpassat visuellt objekt i Power BI](custom-visual-develop-tutorial.md)  
+[Utveckla ett anpassat visuellt objekt i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringar i Power BI](../visuals/power-bi-report-visualizations.md)  
 [Anpassade visualiseringar i Power BI](../power-bi-custom-visuals.md)  
 [Få anpassade visuella objekt *certifierade*](../power-bi-custom-visuals-certified.md)

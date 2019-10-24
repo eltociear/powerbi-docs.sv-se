@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325045"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307942"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -179,7 +179,7 @@ Att ansluta en datauppsättning till en företagsgateway är relativt enkelt om 
 > [!NOTE]
 > Endast gatewayadministratörer kan lägga till datakällor till en gateway. Se även till att gatewayadministratören lägger till ditt användar konto i listan över användare med behörighet att använda datakällan. På sidan för datamängdsinställningar kan du endast välja en företagsgateway med en matchande datakälla som du har behörighet att använda.
 
-![Lägga till i gateway](media/refresh-data/add-to-gateway.png)
+![Lägg till i gateway](media/refresh-data/add-to-gateway.png)
 
 Kontrollera att du mappar rätt datakällsdefinition till datakällan. Som skärmbilden ovan visar kan gatewayadministratörer skapa flera definitioner på en och samma gateway som ansluter till samma datakälla, var och en med olika autentiseringsuppgifter. I exemplet som visas skulle en datauppsättningsägare på säljavdelningen välja datakällsdefinitionen AdventureWorksProducts-Sales medan en datauppsättningsägare på supportavdelningen skulle mappa datauppsättningen till datakällsdefinitionen AdventureWorksProducts-Support. Om namnen på datakällsdefinitionen inte är intuitiva så kontaktar du gatewayadministratören för att förtydliga vilken definition som ska väljas.
 
@@ -309,6 +309,13 @@ Varningsikonen hjälper till att visa aktuella datauppsättningsproblem, men det
 > [!NOTE]
 > Du hittar en länk för att visa uppdateringshistoriken i inställningarna för datauppsättningen. Du kan även hämta uppdateringshistoriken programmässigt med hjälp av [Power BI REST API:et](/rest/api/power-bi/datasets/getrefreshhistoryingroup). Genom att använda en anpassad lösning kan du övervaka uppdateringshistoriken för flera datauppsättningar på ett centraliserat sätt.
 
+## <a name="automatic-page-refresh"></a>Automatisk siduppdatering
+
+Automatisk siduppdatering används på nivån för rapportsidan och innebär att rapportförfattarna kan ange ett uppdateringsintervall för visuella objekt på sidor som bara är aktivt när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörens inställningar för Premium-arbetsytor.
+
+Läs mer om automatisk siduppdatering i artikeln [om automatisk siduppdatering](desktop-automatic-page-refresh.md).
+
+
 ## <a name="best-practices"></a>Metodtips
 
 Att kontrollera uppdateringshistoriken för dina datauppsättningar regelbundet är en av de viktigaste rekommenderade metoderna du kan använda för att säkerställa att dina rapporter och instrumentpaneler använder aktuella data. Om du upptäcker problem ska du åtgärda dem snabbt och följa upp med datakällsägare och gatewayadministratörer om det behövs.
@@ -324,6 +331,7 @@ Dessutom kan du överväga följande rekommendationer för att upprätta och upp
 - Använd en tillförlitlig distribution av företagsdatagateway för att ansluta dina datauppsättningar till lokala datakällor. Om du märker gatewayrelaterade uppdateringsfel, till exempel otillgänglig eller överbelastad gateway, följer du upp med gatewayadministratöer om att lägga till ytterligare gatewayer i ett befintligt kluster eller distribuera ett nytt kluster (skala upp eller skala ut).
 - Använda separata datagatewayer för Import-datauppsättningar och DirectQuery-/LiveConnect-datauppsättningar så att data som importeras under schemalagd uppdatering inte påverkar prestanda för rapporter och instrumentpaneler på DirectQuery-/LiveConnect-datauppsättningar, som frågar datakällor med varje användarinteraktion.
 - Se till att Power BI kan skicka aviseringar om misslyckad uppdatering till din postlåda. Skräppostfilter kan blockera e-postmeddelanden eller flytta dem till en separat mapp där du kanske inte märker dem direkt.
+
 
 ## <a name="next-steps"></a>Nästa steg
 

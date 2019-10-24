@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020330"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543485"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Skapa en Power BI-instrumentpanel från en rapport
 Du har läst [introduktionen till instrumentpaneler i Power BI](service-dashboards.md) och nu är det dags att du skapar en egen. Det finns många olika sätt att skapa en instrumentpanel. Du kan till exempel skapa en instrumentpanel från en rapport (från början), från en datauppsättning eller genom att duplicera en befintlig instrumentpanel.  
@@ -68,9 +68,9 @@ I den här stegvisa guiden ska vi importera ett av Power BI:s exempel på dataup
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Öppna rapporten och fästa paneler på din instrumentpanel
 1. I samma arbetsyta väljer du fliken **Rapporter** och sedan**Exempel på anskaffningsanalys** för att öppna rapporten.
 
-    ![Fliken Rapporter](media/service-dashboard-create/power-bi-reports.png) Rapporten öppnas i läsvyn. Observera att den har två flikar längst ner: **Rabattanalys** och **Utgiftsöversikt**. Varje flik representerar en sida i rapporten.
+    ![Fliken Rapporter](media/service-dashboard-create/power-bi-reports.png) Rapporten öppnas i läsvyn. Observera att den har två flikar till vänster: **Rabattanalys** och **Utgiftsöversikt**. Varje flik representerar en sida i rapporten.
 
-2. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+2. Välj **Fler alternativ (...)**  > **Redigera rapport** för att öppna rapporten i redigeringsvyn.
 
     ![Rapport i läsvyn](media/service-dashboard-create/power-bi-reading-view.png)
 3. Hovra över en visualisering för att visa de tillgängliga alternativen. Välj fästikonen för att lägga till en visualisering på en instrumentpanel ![Fästikon](media/service-dashboard-create/power-bi-pin-icon.png).

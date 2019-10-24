@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 034dc98b1e623bd0d509eb2d174cdc3e3b865067
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f88d1e0458e6a1b3abe20c0b4dd889c037ede612
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514307"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307338"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.
@@ -235,6 +235,13 @@ Här är en checklista som du kan använda för att felsöka problemet:
 4. Matas Azure Stream Analytics-frågan uttryckligen ut till Power BI-utdata? (med nyckelordet INTO)
 5. Har Azure Stream Analytics-jobbet data som flödar genom det? Datauppsättningen skapas endast när det finns data som överförs.
 6. Kan du kolla Azure Stream Analytics-loggarna och se om det finns några varningar eller fel?
+
+## <a name="automatic-page-refresh"></a>Automatisk siduppdatering
+
+Automatisk siduppdatering används på nivån för rapportsidan och innebär att rapportförfattarna kan ange ett uppdateringsintervall för visuella objekt på sidor som bara är aktivt när sidan används. Automatisk siduppdatering är endast tillgängligt för DirectQuery-datakällor. Det lägsta uppdateringsintervallet beror på vilken typ av arbetsyta som rapporten publiceras på, samt kapacitetsadministratörens inställningar för Premium-arbetsytor.
+
+Läs mer om automatisk siduppdatering i artikeln [om automatisk siduppdatering](desktop-automatic-page-refresh.md).
+
 
 ## <a name="next-steps"></a>Nästa steg
 Här är några länkar som kan vara användbara när du arbetar med realtidsströmning i Power BI:

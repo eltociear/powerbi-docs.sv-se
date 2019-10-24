@@ -8,15 +8,15 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/31/2018
-ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.date: 10/09/2019
+ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325733"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259983"
 ---
-# <a name="changelog-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
+# <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
 Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
 
@@ -24,12 +24,19 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
 
 ## <a name="september-2019"></a>September 2019
 
-- **Power BI-rapportserver**          
+- **Power BI-rapportserver**
+    - *Version: 1.6.7221.30698 (version 15.0.1102.620), utgiven: 9 oktober 2019*
+        - Felkorrigeringar
+            - Korrigering av textfilter i anpassat visuellt objekt.
+            - Korrigering av de nedrullningsbara utsnittens prestanda.
+            - Korrigering av Strip PII från telemetri.
+          - Korrigering av att URL:er inte ska vara skiftlägeskänsliga.
+             
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), publicerad: 26 september 2019*
         - Säkerhetsuppdateringar
         - Felkorrigeringar
            - Sidnumrerade rapporter
-             - Korrigering för tillgänglighetsproblem som uppstått vid användning av IE och Edge.
+             - Korrigering av tillgänglighetsproblem som uppstått vid användning av Internet Explorer och Microsoft Edge.
              - Korrigering för SAP HANA-problem vid test av anslutningen.
              - Korrigering för problem hittade när lista över e-postadresser tillhandahålls.
              - Korrigering för Power BI-rapporter som använder en DirectQuery-datakälla och integrerad autentisering.
@@ -43,10 +50,17 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
              - Uppdaterat webb-API: /PowerBIReports({Id})/DataSources (PATCH) för att tillåta anslutningsstränguppdateringar.
          
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
+
+    - *Version: 2.73.5586.1241 (september 2019), utgiven: 9 oktober 2019*
+        - Felkorrigeringar
+            - Korrigering av textfilter i anpassat visuellt objekt.
+            - Korrigering av de nedrullningsbara utsnittens prestanda.
+            - Korrigering av Strip PII från telemetri.
+            
     - *Version: 2.73.5586.821 (september 2019), utgiven: september 26 2019* (ny build och ny version)
-    - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (september 2019)
+        - Innehåller ändringar som krävs för anslutning till Power BI-rapportservern (september 2019)
 
-
+    
 ## <a name="may-2019"></a>Maj 2019
 
 - **Power BI-rapportserver**          

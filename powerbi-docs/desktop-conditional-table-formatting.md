@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: bd14437b0833d4c24c37ebeca6524948465bdb1f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561053"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544013"
 ---
 # <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller 
 Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger baserat på cellvärden, eller baserat på andra värden eller fält. Du kan även använda toningar. Du kan också visa cellvärden med datastaplar. 
@@ -140,6 +140,9 @@ Du kan använda vilka som helst av de värden som anges i CSS-färgspecifikation
 Det finns några saker att tänka på när du arbetar med villkorsstyrd tabellformatering:
 
 * Villkorsstyrd formatering tillämpas endast på värdena för ett visuellt **matrisobjekt** och tillämpas inte på delsummor eller totalsummor. 
+* Villkorsstyrd formatering tillämpas inte på raden **Summa**
+* Tabeller som saknar gruppering visas som en enda rad som inte stöder villkorsstyrd formatering.
+* Om du använder toningsformat med automatiska max/min-värden eller regelbaserad formatering med procentregler, kan inte villkorsstyrd formatering tillämpas om dina data innehåller NaN-värden. NaN står för ”Inte ett nummer” och orsakas vanligtvis av fel vid en division med noll. Du kan använda [DAX-funktionen DIVIDE()](https://docs.microsoft.com/dax/divide-function-dax) för att undvika dessa fel.
 
 
 ## <a name="next-steps"></a>Nästa steg

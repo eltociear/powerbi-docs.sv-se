@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: be2304e655adadf20f5d33f46840c5a0cb82aa9f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968826"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544723"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Lägga till ett filter i en Power BI-rapport
 
@@ -51,11 +51,12 @@ Du kan lägga till ett filter på visuell nivå för ett specifikt visuellt obje
 * Filtrera ett fält som redan används av visualiseringen.
 * Identifiera ett fält som inte redan används av visualiseringen och lägga till fältet direkt till bucketen **Visuella nivåfilter**.
 
-Den här proceduren använder förresten, detaljhandelsanalys om du vill ladda ned och följa den. Hämta Exempel på [Detaljhandelsanalys](sample-retail-analysis.md).
+
+Den här proceduren använder förresten, detaljhandelsanalys om du vill ladda ned och följa den. Ladda ned innehållspaketet med [exempel på detaljhandelsanalys](sample-retail-analysis.md#get-the-content-pack-for-this-sample).
 
 ### <a name="filter-the-fields-in-the-visual"></a>Filtrera fälten i det visuella objektet
 
-1. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+1. Välj **Fler alternativ (...)**  > **Redigera rapport** om du vill öppna rapporten i redigeringsvyn.
    
    ![Knappen Redigera rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -85,7 +86,7 @@ Den här proceduren använder förresten, detaljhandelsanalys om du vill ladda n
 
 Nu ska vi lägga till ett helt nytt fält som ett filter på visuell nivå i vårt visuella objekt.
    
-1. På panelen Fält väljer du det fält som du vill lägga till som ett nytt visuellt nivåfilter och drar det till **området för visuella nivåfilter**.  I det här exemplet ska vi dra **Distriktschef** till bucketen **Visuella nivåfilter**, söka efter **an** och välja dessa tre chefer. 
+1. På panelen Fält väljer du det fält som du vill lägga till som ett nytt visuellt nivåfilter och drar det till **området för visuella nivåfilter**.  I det här exemplet ska vi dra **Distriktschef** till bucketen **Visuella nivåfilter**, söka efter **an** och välja dessa tre chefer.
      
     ![Lägga till ett fält till fönstret Filter](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -105,7 +106,9 @@ Nu ska vi lägga till ett helt nytt fält som ett filter på visuell nivå i vå
 
 Du kan även lägga till ett filter på sidnivå för att filtrera en hel sida.
 
-1. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+1. Öppna detaljhandelsanalysrapporten i Power BI-tjänsten och gå sedan till sidan **Månadsförsäljning för distrikt**. 
+
+2. Välj **...**  > **Redigera rapport** för att öppna rapporten i redigeringsvyn.
    
    ![Knappen Redigera rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Öppna panelerna Visualiseringar och Filter samt Fält (om de inte redan är öppna).
@@ -122,19 +125,21 @@ Du kan även lägga till ett filter på sidnivå för att filtrera en hel sida.
 Med visning av detaljerad information i Power BI-tjänsten och Power BI Desktop kan du skapa en *målrapportsida* som fokuserar på en specifik enhet – som en leverantör, kund eller tillverkare. Användarna kan nu från övriga rapportsidor högerklicka på en datapunkt för denna entitet och gå in i detalj på fokussidan.
 
 ### <a name="create-a-drillthrough-filter"></a>Skapa ett filter för detaljerad information
-Om du vill följa med laddar du ned [Exempel på kundlönsamhet](sample-customer-profitability.md). Anta att du vill skapa en sida som fokuserar på affärsområden för chefer.
+Om du vill följa med laddar du ned [Exempel på kundlönsamhet](sample-customer-profitability.md#get-the-content-pack-for-this-sample). Anta att du vill skapa en sida som fokuserar på affärsområden för chefer.
 
-1. Välj **Redigera rapport** för att öppna rapporten i redigeringsvyn.
+1. Öppna detaljhandelsanalysrapporten i Power BI-tjänsten och gå sedan till sidan **Månadsförsäljning för distrikt**.
+
+2. Välj **Fler alternativ (...)**  > **Redigera rapport** om du vill öppna rapporten i redigeringsvyn.
    
    ![Knappen Redigera rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 1. Lägg till en ny sida i rapporten och döp den till **Team Executive (Teamchef)** . Den här sidan blir *målet* för den detaljerade informationen.
 2. Lägg till visualiseringar som spårar nyckelvärden för teamchefernas affärsområden.    
-3. Lägg även till **Chef (Executive) > Executive Name (Chefens namn)** till området för filtren för detaljerad information.    
+3. Dra **Chef** till filtret för visning av detaljerad information i tabellen **Chefer**.    
    
     ![Lägga till ett värde till filter för visning av detaljerad information](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
-    Observera att Power BI lägger till en bakåtpil på rapportsidan.  Om du väljer bakåtpilen returneras du till den *ursprungliga* rapportsidan, den sida där du befann dig när du valde alternativet för visning av detaljerad information. Bakåtpilen fungerar bara i läsvyn.
+    Observera att Power BI lägger till en bakåtpil på rapportsidan.  Om du väljer bakåtpilen returneras du till den *ursprungliga* rapportsidan, den sida där du befann dig när du valde alternativet för visning av detaljerad information. I redigeringsvyn håller du ned CTRL-tangenten för att välja bakåtpilen
    
      ![Bakåtpilen](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
@@ -145,7 +150,7 @@ Nu ska vi se hur filtret för detaljerad information fungerar.
 2. Låt oss anta att du är Andrew Ma och du vill se rapportsidan för teamchefer filtrerad bara för dina data.  Högerklicka på valfri grön datapunkt i det övre vänstra ytdiagrammet för att öppna menyalternativet Visning av detaljerad information.
    
     ![Starta åtgärd för visning av detaljerad information](media/power-bi-report-add-filter/power-bi-drillthrough.png)
-3. Välj **Visning av detaljerad information > Team Executive (Teamchef)** för att komma till rapportsidan med namnet **Team Executive (Teamchef)** . Sidan filtreras för att visa information om datapunkten som du högerklickade på, i det här fallet Andrew Ma. Endast fältet som finns i filtren för detaljerad information skickas vidare till rapportsidan för detaljerad information.  
+3. Välj **Visning av detaljerad information > Team Executive (Teamchef)** för att komma till rapportsidan med namnet **Team Executive (Teamchef)** . Sidan filtreras för att visa information om datapunkten som du högerklickade på, i det här fallet Andrew Ma. Eventuella filter på den ursprungliga sidan tillämpas på rapportsidan med visning av detaljerad information.  
    
     ![Välja åtgärd för visning av detaljerad information](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 

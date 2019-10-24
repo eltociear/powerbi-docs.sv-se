@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770769"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543075"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundläggande begrepp för designers i Power BI-tjänsten
 
@@ -33,10 +33,11 @@ När du öppnar Power BI-tjänsten i en webbläsare kommer du till din startskä
 3. Power BI-hemknapp
 4. Ikonknappar, bland annat inställningar, hjälp och feedback
 5. Sökruta
-6. Paneler från en favoritinstrumentpanel
-7. Favoriter och ofta använda instrumentpaneler och rapporter
+6. Favoriter och ofta använda instrumentpaneler, rapporter och arbetsytor
+7. Senast använda instrumentpaneler, rapporter och arbetsytor
+8. Dina arbetsytor
 
-Slutanvändarna för dina rapporter och instrumentpaneler ser samma startskärm i Power BI-tjänsten i sin webbläsare.
+Du och slutanvändarna av dina rapporter och instrumentpaneler ser samma startskärm i Power BI-tjänsten i webbläsaren.
 
 Vi går in på de här funktionerna senare, men först ska vi gå igenom några Power BI-begrepp. Du vill kanske se den här videon först.  Videon tar upp grundläggande begrepp och ger en genomgång av Power BI-tjänsten.
 
@@ -195,8 +196,8 @@ Frågor och svar letar efter svar i den datauppsättning(ar) som är ansluten p�
 
 När du börjar skriva en fråga, leder frågor och svar dig till sidan för frågor och svar. När du skriver hjälper frågor och svar dig att ställa rätt fråga och hitta det bästa svaret med omformuleringar, autofyll, förslag med mera. När du har en visualisering (ett svar) som du är nöjd med, fäster du den på instrumentpanelen. Mer information finns i [Frågor och svar i Power BI](power-bi-q-and-a.md).
 
-### <a name="4-icon-buttons"></a>4. **Ikonknappar**
-Ikonerna i det övre högra hörnet är dina resurser för inställningar, meddelanden, nedladdningar, få hjälp och ge feedback till Power BI-teamet. Välj dubbelpilen för att öppna instrumentpanelen i läget **Helskärm**.  
+### <a name="4-icons-in-the-black-header-bar"></a>4. **Ikoner i det svarta rubrikfältet**
+Ikonerna i det övre högra hörnet är dina resurser för inställningar, meddelanden, nedladdningar, få hjälp, aktivera och inaktivera **Nytt utseende**, samt ge feedback till Power BI-teamet.  
 
 ![ikonknappar](media/service-basic-concepts/power-bi-icons.png)
 
@@ -217,8 +218,8 @@ När du väljer **Power BI** kommer du tillbaka till din startsida i Power BI.
 
    ![”Power BI” i tjänsten](media/service-basic-concepts/version-new.png)
 
-### <a name="8-labeled-icon-buttons"></a>8. **Märkta ikonknappar**
-Det här området på skärmen innehåller ytterligare alternativ för att interagera med innehållet (i det här fallet med instrumentpanelen).  Förutom de märkta ikonerna som du ser kan du visa alternativ för att duplicera, skriva ut och uppdatera instrumentpanelen och annat genom att välja ellipserna.
+### <a name="8-labeled-icons-in-the-gray-menu-bar"></a>8. **Etiketterade ikoner i den grå menyraden**
+Det här området på skärmen innehåller ytterligare alternativ för att interagera med innehållet (i det här fallet med instrumentpanelen).  Förutom de etiketterade ikonerna kan du välja **Fler alternativ (...)** . Då visas alternativ för att bland annat duplicera, skriva ut och uppdatera instrumentpanelen.
 
    ![Märkta ikonknappar](media/service-basic-concepts/power-bi-labeled-icons.png)
 

@@ -7,16 +7,16 @@ ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66050996"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544277"
 ---
 # <a name="troubleshooting-tile-errors"></a>Felsöka panelfel
 Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklaring.
@@ -65,16 +65,16 @@ Fältet har förmodligen tagits bort eller bytt namn. Du kan ta bort det brutna 
 
 Detta är vanligtvis ett övergående problem. Kontakta supporten om du försöker igen senare och fortfarande ser det här meddelandet.
 
-**Paneler fortsätter att visa ofiltrerade data när du har aktiverat enkel inloggning (SSO).**
+**Panelerna fortsätter att visa ofiltrerad information när du har aktiverat enkel inloggning (SSO).**
 
-Detta kan inträffa om den underliggande datauppsättningen har konfigurerats för att använda DirectQuery-läge eller en Live-anslutning till Analysis Services via en lokal datagateway. I det här fallet fortsätter panelerna att visa den ofiltrerade data när du har aktiverat SSO för datakällan förrän nästa paneluppdatering förfaller. Power BI använder enkel inloggning som konfigurerats vid nästa paneluppdatering och panelerna visar data som filtrerats enligt användarnas identiteter. 
+Detta kan inträffa om den underliggande datamängden har konfigurerats för att använda DirectQuery-läge eller en Live-anslutning till Analysis Services via en lokal datagateway. I det här fallet fortsätter panelerna att visa ofiltrerad data efter aktivering av SSO för datakällan tills det är dags för nästa paneluppdatering. Vid nästa paneluppdatering använder Power BI den konfigurerade SSO:n och panelerna visar de data som filtrerats enligt användaridentiteten. 
 
-Om du vill se filtrerade data direkt, kan du tvinga en paneluppdatering av genom att välja ellipsen (...) i övre högra hörnet på en instrumentpanel och välja **uppdatera instrumentpanel**.
+Om du vill se den filtrerade datan direkt kan du tvinga fram en paneluppdatering genom att välja ellipsen (...) i det övre högra hörnet på en instrumentpanel och sedan välja **Uppdatera instrumentpanel**.
 
-Du kan också ändra uppdateringsfrekvensen panel och ställas till 15 minuter att påskynda paneluppdatering som ägare till en datauppsättning. Välj kugghjulsikonen i det övre högra hörnet av Power BI-tjänsten och sedan **inställningar**. På den **inställningar** väljer den **datauppsättningar** fliken. Expandera **schemalagd cacheminnesuppdatering** och ändra **uppdateringsfrekvens**. Kontrollera att du återställer konfigurationen till den ursprungliga uppdateringsfrekvensen när Power BI utför nästa paneluppdatering.
+Som datamängdsägare kan du också ändra frekvensen för paneluppdateringen och ställa in den på 15 minuter för att påskynda uppdateringen. Välj kugghjulsikonen i det övre högra hörnet i Power BI-tjänsten. Välj sedan **Inställningar**. På sidan **Inställningar** väljer du fliken **Datamängder**. Expandera **Schemalagd cacheminnesuppdatering** och ändra **Uppdateringsfrekvens**. Kom ihåg att återställa konfigurationen till den ursprungliga uppdateringsfrekvensen när Power BI ska utföra nästa paneluppdatering.
 
 > [!NOTE]
-> Den **schemalagd cacheminnesuppdatering** avsnittet är endast tillgänglig för datauppsättningar i DirectQuery/LiveConnection läge. Datauppsättningar i importläge kräver inte en separat paneluppdatering eftersom panelerna uppdateras automatiskt under nästa schemalagda uppdatering.
+> Avsnittet **Schemalagd cacheminnesuppdatering** är bara tillgängligt för datamängder i DirectQuery/LiveConnection-läge. Datamängder i importläge kräver inte en separat paneluppdatering eftersom panelerna uppdateras automatiskt vid nästa schemalagda datauppdatering.
 
 ## <a name="contact-support"></a>Kontakta supporten
 Om du fortfarande har problem, kan du [kontakta supporten](https://support.powerbi.com) för att undersöka vidare.

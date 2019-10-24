@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e6b0d7db9f82d8bc68f230858799f6afbcad1c82
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200943"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511653"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakällor för Power BI-tjänsten
 Datan finns centralt i Power BI. Vi antar att du utforskar data. Det kan du göra genom att skapa diagram och instrumentpaneler eller genom att ställa frågor med **Q&A**. De visualiseringar och svar du ser får sina underliggande data från en datamängd. Men var kommer datauppsättningen från? Jo, den kommer från en datakälla.
@@ -111,7 +111,11 @@ Datauppdatering är en mycket viktig del av Power BI och det blir för mycket at
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 Följande begränsningar gäller för alla datakällor som används i Power BI-tjänsten. Det finns andra begränsningar som gäller för specifika funktioner, men listan nedan gäller för hela Power BI-tjänsten:
 
-* **Storleksgräns för datamängder** – det finns en storleksgräns på 1 GB för varje datamängd i Power BI-tjänsten.
-* **Gräns för antal rader** – det maximala antalet rader i datamängder när du inte använder **DirectQuery** är 2 miljarder. Tre av dessa rader är reserverade, så du kan som mest använda 1 999 999 997 rader. Det maximala antalet rader när du använder **DirectQuery** är 1 miljon rader.
-* **Gräns för antal kolumner** – det maximala antalet kolumner som tillåts i en datamängd för alla tabeller i datamängden är 16 000. Den här gränsen gäller för Power BI-tjänsten och för datamängder som används i Power BI Desktop. Power BI använder en intern radnummerkolumn per tabell som ingår i datamängden, så det maximala antalet kolumner är 16 000 minus 1 för varje tabell i datamängden.
+* **Storleksgräns för datamängder** – Det finns en storleksgräns på 1 GB för datamängder som lagras i delade kapaciteter i Power BI-tjänsten. Om du behöver större datamängder kan du använda [Power BI Premium](service-premium-what-is.md).
+
+* **Distinkta värden i en kolumn**  – När data cachelagras i en Power BI-datamängd (kallas ibland ”importläge”), finns det en gräns på 1 999 999 997 för antalet distinkta värden som kan lagras i en kolumn.
+
+* **Radgräns**  – När du använder **DirectQuery** har Power BI en gräns för frågeresultaten som skickas till den underliggande datakällan. Om frågan som skickas till datakällan returnerar fler än en miljon rader visas ett felmeddelande och frågan misslyckas. Dina underliggande data kan ändå innehålla fler än en miljon rader. Det är inte säkert att du uppnår den här gränsen eftersom de flesta rapporter sammanställer datan till mindre resultatuppsättningar.
+
+* **Gräns för antal kolumner** – det maximala antalet kolumner som tillåts i en datamängd för alla tabeller i datamängden är 16 000. Den här gränsen gäller för Power BI-tjänsten och för datamängder som används i Power BI Desktop. Power BI spårar antalet kolumner och tabeller i datamängden på det här sättet, så det maximala antalet kolumner är 16 000 minus ett för varje tabell i datamängden.
 
