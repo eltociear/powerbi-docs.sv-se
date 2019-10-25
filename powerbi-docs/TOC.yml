@@ -443,7 +443,7 @@
           href: service-tutorial-use-cognitive-services.md
         - name: Machine Learning-integrering
           href: service-tutorial-invoke-machine-learning-model.md
-        - name: Skapa en maskininlärningsmodell (förhandsversion)
+        - name: Skapa en Machine Learning-modell
           href: service-tutorial-build-machine-learning-model.md
         - name: Uppdatera data från SQL Server
           href: service-gateway-sql-tutorial.md
@@ -717,7 +717,7 @@
               href: service-machine-learning-integration.md
             - name: Använda Cognitive Services i Power BI
               href: service-cognitive-services.md
-            - name: Automatiserad maskininlärning i Power BI (förhandsversion)
+            - name: Automatiserad maskininlärning i Power BI
               href: service-machine-learning-automated.md
         - name: Dataursprung
           href: service-data-lineage.md
@@ -1161,6 +1161,8 @@
       href: guidance/import-modeling-data-reduction.md
     - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
       href: guidance/dax-divide-function-operator.md
+    - name: Vikten av frågedelegering
+      href: guidance/power-query-folding.md
     - name: Lämplig användning av felfunktioner
       href: guidance/dax-error-functions.md
     - name: Metodtips för dataflöden
