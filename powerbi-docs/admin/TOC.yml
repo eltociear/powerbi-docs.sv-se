@@ -1,4 +1,6 @@
-- name: Power BI-administration
+- name: Power BI-administratörsdokumentation
+  href: index.yml
+  expanded: true
   items:
     - name: Översikt
       expanded: true
@@ -8,7 +10,7 @@
     - name: Begrepp
       expanded: true
       items:
-        - name: Administrationsrollen i Office 365
+        - name: Administratörsrollen i Microsoft 365
           href: ../service-admin-role.md
         - name: Vanliga frågor och svar
           href: ../service-admin-faq.md
@@ -22,29 +24,29 @@
               href: ../service-admin-licensing-organization.md
             - name: Köp Power BI Pro
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Registrera dig för en utvärderingsversion av Office 365
+            - name: Registrera dig för en utvärderingsversion av Microsoft 365
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: Lägga till Power BI med en Office 365-partner
+            - name: Lägga till Power BI med en Microsoft 365-partner
               href: ../service-admin-syndication-partner.md
         - name: Använda administratörsportalen
           href: ../service-admin-portal.md
-        - name: Var finns min klientorganisation?
+        - name: Var finns min klient?
           href: ../service-admin-where-is-my-tenant-located.md
         - name: Hitta användare som har loggat in
           href: ../service-admin-access-usage.md
-        - name: Granska Power BI
+        - name: Granskning
           href: ../service-admin-auditing.md
         - name: Spåra tjänstens hälsotillstånd
           href: ../service-admin-health.md
-        - name: Stänga ditt Power BI-konto
+        - name: Stänga ditt konto
           href: ../service-admin-closing-your-account.md
-        - name: Power BI och ExpressRoute
+        - name: ExpressRoute
           href: ../service-admin-power-bi-expressroute.md
         - name: Använda Azure AD B2B
           href: ../service-admin-azure-ad-b2b.md
-        - name: Säkerhet på radnivå med Power BI
+        - name: Säkerhet på radnivå
           href: ../service-admin-rls.md
-        - name: Power BI-arkiverad arbetsyta
+        - name: Arkiverad arbetsyta
           href: ../service-admin-power-bi-archived-workspace.md
         - name: Konfigurera mobilappar med Intune
           href: ../service-admin-mobile-intune.md

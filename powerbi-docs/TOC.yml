@@ -1047,6 +1047,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=849021'
             - name: Åtkomst till delade datauppsättningar som OData-flöden
               href: report-server/access-dataset-odata.md
+            - name: Ändra anslutningssträngar för datakällor med PowerShell
+              href: report-server/connect-data-source-apis.md
             - name: Konfigurera schemalagd uppdatering
               href: report-server/configure-scheduled-refresh.md
             - name: Lägga till kommentarer i en rapport

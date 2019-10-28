@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Dokumentation om Power BI för utvecklare
+title: Power BI-utvecklardokumentation
 summary: Med Power BI-dokumentation får du expertinformation och hjälp med dina behov, oavsett hur du använder Power BI.
 metadata:
-  title: Power BI för utvecklare
+  title: Power BI-utvecklardokumentation
   description: Med Power BI-dokumentation får du expertinformation och hjälp med dina behov, oavsett hur du använder Power BI.
   services: powerbi
   ms.service: powerbi
@@ -11,49 +11,49 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 10/02/2019
-  ms.openlocfilehash: 04cbb872183f589ad37e39c0dd132a1a17662ce4
-  ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+  ms.date: 10/25/2019
+  ms.openlocfilehash: ac0d2e2955846d7b67e94af923b41c8b5f476996
+  ms.sourcegitcommit: ee0ea65de52b38e5976d6eb15516b0b240fa40f9
   ms.translationtype: HT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 10/14/2019
-  ms.locfileid: "72307651"
+  ms.lasthandoff: 10/26/2019
+  ms.locfileid: "72959531"
 landingContent:
 - title: Om Power BI för utvecklare
   linkLists:
   - linkListType: overview
     links:
-    - text: Vad kan utvecklare göra med Power BI?
+    - text: Vad kan utvecklare göra?
       url: what-can-you-do.md
     - text: Visuella objekt i Power BI
       url: ../power-bi-custom-visuals.md
-    - text: Vad är inbäddning med Power BI?
+    - text: Det här är inbäddat
       url: embedding.md
     - text: Vad är Power BI-API?
       url: overview-of-power-bi-rest-api.md
   - linkListType: reference
     links:
-    - text: Power BI Developer Center
+    - text: Developer Center
       url: https://powerbi.microsoft.com/developers/
-    - text: Power BI-utvecklarexempel
+    - text: Utvecklarexempel
       url: https://github.com/Microsoft/PowerBI-Developer-Samples
-    - text: Power BI JavaScript-wiki
+    - text: JavaScript-wiki
       url: https://github.com/Microsoft/powerbi-javascript/wiki
-    - text: REST API:er för Power BI
+    - text: REST API:er
       url: https://docs.microsoft.com/rest/api/power-bi/
     - text: Azure Resource Manager REST-API:er
       url: https://docs.microsoft.com/rest/api/power-bi-embedded/
-- title: Visuella objekt för Power BI
+- title: Visuella objekt
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Utveckla ett visuellt Power BI-objekt
+    - text: Utveckla ett visuellt objekt
       url: visuals/custom-visual-develop-tutorial.md
   - linkListType: concept
     links:
-    - text: Vanliga frågor och svar om visuella objekt för Power BI
+    - text: Vanliga frågor och svar om visuella objekt
       url: ../power-bi-custom-visuals-faq.md
-    - text: Riktlinjer för visuella objekt för Power BI
+    - text: Riktlinjer för visuella objekt
       url: guidelines-powerbi-visuals.md
     - text: Avancerat redigeringsläge i visuella objekt
       url: /advanced-edit-mode.md
@@ -79,7 +79,7 @@ landingContent:
       url: embed-multi-tenancy.md
     - text: Inbäddade vanliga frågor och svar
       url: embedded-faq.md
-    - text: Power BI-behörigheter
+    - text: Behörigheter
       url: power-bi-permissions.md
   - linkListType: how-to-guide
     links:
@@ -89,5 +89,5 @@ landingContent:
       url: create-an-azure-active-directory-tenant.md
     - text: Hämta en Azure AD-åtkomsttoken
       url: get-azuread-access-token.md
-    - text: Frågor och svar i Power BI Embedded
+    - text: Funktionen Frågor och svar i Power BI Embedded
       url: qanda.md

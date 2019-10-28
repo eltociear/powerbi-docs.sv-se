@@ -1,4 +1,5 @@
-- name: Power BI för utvecklare
+- name: Power BI-utvecklardokumentation
+  href: index.yml
   items:
     - name: Översikt
       expanded: true
