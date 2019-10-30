@@ -424,11 +424,11 @@
     - name: Översikt
       items:
         - name: Vad är Power BI?
-          href: power-bi-overview.md
+          href: fundamentals/power-bi-overview.md
         - name: Vad är Power BI-tjänsten?
           href: power-bi-service-overview.md
         - name: Jämföra Power BI Desktop och tjänsten
-          href: service-service-vs-desktop.md
+          href: designer/service-service-vs-desktop.md
     - name: Självstudier
       items:
         - name: Kom igång med Power BI
