@@ -415,10 +415,20 @@
           href: desktop-latest-update-archive.md
         - name: Power BI Desktop sekretesspolicy för Skicka ett leende
           href: desktop-send-smile-privacy-statement.md
-        - name: Hjälpmedel i Power BI-rapporter
-          href: desktop-accessibility.md
         - name: Hantera inloggningsformuläret för Power BI Desktop
           href: desktop-admin-sign-in-form.md
+        - name: Hjälpmedel
+          items:
+            - name: Översikt över hjälpmedel i Power BI
+              href: desktop-accessibility-overview.md
+            - name: Skapa Power BI-rapporter med hjälpmedel
+              href: desktop-accessibility-creating-reports.md
+            - name: Använda Power BI-rapporter med hjälpmedel
+              href: desktop-accessibility-consuming-tools.md
+            - name: Skapa Power BI-rapporter med hjälpmedel
+              href: desktop-accessibility-creating-tools.md
+            - name: Kortkommandon för hjälpmedel för Power BI-rapporter
+              href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI-tjänst
   items:
     - name: Översikt
