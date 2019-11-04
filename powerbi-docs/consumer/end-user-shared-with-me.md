@@ -11,15 +11,16 @@ ms.topic: conceptual
 ms.date: 09/25/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d50ed2c06c81514fa6fb129ca3691ec56b8116b9
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 0f7926e536ba80549e8a6e1cdce5a7cf609efaba
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256222"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716711"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Visa instrumentpaneler och rapporter som har delats med mig
 
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 När en kollega delar innehåll med dig visas det, via knappen **dela**, i behållaren**delat med mig**. Instrumentpanelen är endast tillgänglig från **delat med mig** och inte från en arbetsyta eller från **appar**.
 

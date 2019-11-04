@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: d0372af2727861a4af0f4ebb983cb447b020b821
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307817"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021358"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -71,7 +71,7 @@ Om du vill att dina anpassade visuella objekt [certifieras](#get-a-power-bi-visu
 
 * Om några egenskaper i capabilities.json ändras ser du till att de inte gör att den befintliga användarens rapporter slutar fungera.
 
-* Kontrollera att det visuella objektet uppfyller [riktlinjerna för visuella Power BI-objekt](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Inga vattenstämplar tillåts**.
+* Kontrollera att det visuella objektet uppfyller [riktlinjerna för visuella Power BI-objekt](./developer/guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases). **Inga vattenstämplar tillåts**.
 
 * Använder endast offentliga granskningsbara OSS-komponenter (JS-bibliotek eller TypeScript som är offentliga. Källkoden är tillgänglig för granskning och har inga kända säkerhetsrisker). Vi kan inte verifiera ett anpassat visuellt objekt med hjälp av en extern komponent.
 
@@ -192,7 +192,7 @@ Gör så här för att skicka ett anpassat visuellt objekt för certifikatutfär
 
 ## <a name="faq"></a>Vanliga frågor och svar
 
-Mer information om visuella objekt finns i [Vanliga frågor och svar om certifierade visuella objekt](#get-a-power-bi-visual-certified).
+Mer information om visuella objekt finns i [Vanliga frågor och svar om certifierade visuella objekt](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0ad10789977fdb0d5d4cf5b9a4229cd6a8e2b34b
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 1d6ddcd11118e0eb9894002c5c97edda134d4635
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256275"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716995"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportera rapporter från Power BI till PDF
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Med Power BI kan du publicera din rapport till PDF-format och enkelt att skapa ett dokument baserat på din Power BI-rapport. När du exporterar till PDF blir varje sida i Power BI-rapporten en separat sida i PDF-dokumentet.
 
 ## <a name="export-your-power-bi-report-to-pdf"></a>Exporter din Power BI-rapport till PDF

@@ -71,6 +71,8 @@
               href: visuals/landing-page.md
             - name: Starta URL
               href: visuals/launch-url.md
+            - name: API för lokal lagring
+              href: visuals/local-storage.md
             - name: Återgivningshändelser
               href: visuals/event-service.md
             - name: Sortering
