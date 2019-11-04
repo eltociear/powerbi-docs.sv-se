@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a05d78cfb0c1e34f0ec263f5455982cd4064905b
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: c9b844d153cab35938f5070ce4950c57f7964771
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185834"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060525"
 ---
 # <a name="connect-to-sendgrid-with-power-bi"></a>Ansluta till SendGrid med Power BI
 Med Power BI-innehållspaketet för SendGrid kan du extrahera insikter och statistik från ditt SendGrid-konto. Med SendGrid-innehållspaketet kan du visualisera din SendGrid-statistik på en instrumentpanel.
@@ -58,7 +58,7 @@ I SendGrid-instrumentpanelen finns följande mått:
 * E-poststatistik efter enhet, klient, webbläsare
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI?](power-bi-overview.md)
+[Vad är Power BI?](fundamentals/power-bi-overview.md)
 
 [Hämta data](service-get-data.md)
 

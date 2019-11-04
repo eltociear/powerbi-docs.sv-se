@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 98c76fd5903a44c8cc1ef5b175f235f1ec4382e9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 114cf65e8abb072ab3f0254cbd4041a43a31d1dc
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61340905"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059631"
 ---
 # <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Visa Reporting Services (SSRS) mobila rapporter och KPI:er i Windows 10 Power BI-mobilappen
 Power BI-mobilappen för Windows 10 erbjuder live, pekaktiverad mobil åtkomst till din viktiga lokala företagsinformation i SQL Server 2016 Reporting Services. 
@@ -110,6 +110,6 @@ Du skapar inte Reporting Services KPI:er och mobila rapporter i Power BI-appen. 
 
 ## <a name="next-steps"></a>Nästa steg
 * [Kom igång med Power BI-mobilappen för Windows 10](mobile-windows-10-phone-app-get-started.md)  
-* [Vad är Power BI?](../../power-bi-overview.md)  
+* [Vad är Power BI?](../../fundamentals/power-bi-overview.md)  
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b8738701d2827147e651a233a32de5edc089099b
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 8b7560570af4f1b459cdde8589c0afdb9194e154
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185981"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060933"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Anslut till Azure Search med Power BI
 Azure Search Traffic Analytics låter dig övervaka och förstå trafiken till din Azure Search-tjänst. Azure Search-innehållspaketet för Power BI innehåller detaljerad information om dina sökdata, inklusive sökning, indexering, statistik för tjänsten och svarstid från de senaste 30 dagarna. Mer information finns i [Azure-blogginlägget](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -58,7 +58,7 @@ Azure Search-innehållspaketet kräver att Azure Search Traffic Analytics är ak
 Se till att lagringskontonamnet har angetts korrekt tillsammans med den fullständiga åtkomstnyckeln. Lagringskontonamnet ska motsvara det konto som har konfigurerats med Azure Search Traffic Analytics.
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI?](power-bi-overview.md)
+[Vad är Power BI?](fundamentals/power-bi-overview.md)
 
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

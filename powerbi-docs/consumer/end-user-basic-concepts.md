@@ -12,16 +12,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 902bfe11ba3dfa4047ab5918de7081ae05fb9a09
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543778"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060357"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundläggande begrepp för användare av Power BI-tjänsten
 
-Den här artikeln förutsätter att du redan har läst [översikten över Power BI](../power-bi-overview.md) och har identifierat dig själv som [användare av ***Power BI***](end-user-consumer.md). Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Den här artikeln förutsätter att du redan har läst [översikten över Power BI](../fundamentals/power-bi-overview.md) och har identifierat dig själv som [användare av ***Power BI***](end-user-consumer.md). Användare får Power BI-innehåll såsom instrumentpaneler och rapporter från kollegor. Användare använder Power BI-tjänsten, som är den webbplatsbaserade versionen av Power BI.
 
 Du kommer utan tvekan att höra talas om ”Power BI Desktop” eller bara ”Desktop”. Det är det fristående verktyget som används av *designers* som skapar och delar instrumentpaneler och rapporter med dig. Det är viktigt att veta att det även finns andra Power BI-verktyg. Om du är användare kommer du bara att arbeta med Power BI-tjänsten. Den här artikeln gäller endast för Power BI-tjänsten.
 

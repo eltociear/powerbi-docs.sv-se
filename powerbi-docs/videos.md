@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 9f6139376a713c85500a2e6bd430d5ee52f5b7ad
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9068c522d2aedf95fc65e9bc4bece04531db478d
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514889"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060336"
 ---
 # <a name="power-bi-videos"></a>Power BI-videoklipp
 Vi har en YouTube-kanal för Power BI! Du kan besöka [vår kanal](https://www.youtube.com/user/mspowerbi/videos) och om är ny i Power BI är spellistan [analysera och visualisera data med Power BI](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP) ett bra ställe att börja.
@@ -47,7 +47,7 @@ Kolla in följande uppsättning källor och innehåll för mer videoklipp.
 * [Kanalen Guy in a Cube](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) – nya videoklipp om Power BI- funktioner
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI?](power-bi-overview.md)
+[Vad är Power BI?](fundamentals/power-bi-overview.md)
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

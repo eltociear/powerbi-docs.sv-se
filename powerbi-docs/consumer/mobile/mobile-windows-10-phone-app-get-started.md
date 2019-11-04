@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 0a60fe526e83e5220e9b310097c8ba37682a396e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 3aff2b6a939a53a6246ed69ac5bd76dfe4f0dfe4
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68995225"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059711"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
 Power BI-mobilappen för Windows 10 ger Power BI till din surfplatta eller telefon. Du får aktuell, mobil åtkomst med pekfunktion till din företagsinformation. Visa och interagera med ditt företags instrumentpaneler från valfri plats – direkt från [Windows-startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -121,6 +121,6 @@ Här följer några saker som du kan göra i Power BI-appen för Windows 10-enhe
 
 ## <a name="next-steps"></a>Nästa steg
 * [Ladda ned Power BI-appen](http://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store  
-* [Vad är Power BI?](../../power-bi-overview.md)
+* [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

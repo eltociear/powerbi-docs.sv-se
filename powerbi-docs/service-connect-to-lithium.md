@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c2f6564c83c7234b626686a6fe4c76f65b354e58
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 9a02c642d0b5d766b22b3b8c3853da2d4d773cbd
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185532"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060565"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Ansluta till Lithium med Power BI
 
@@ -61,7 +61,7 @@ Anslut till [Lithium-innehållspaketet](https://app.powerbi.com/getdata/services
 Lithium-innehållspaketet kräver en Lithium-community av v15.9 eller senare. Stäm av med din Lithium-administratör för att bekräfta versionen.
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI?](power-bi-overview.md)
+[Vad är Power BI?](fundamentals/power-bi-overview.md)
 
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 

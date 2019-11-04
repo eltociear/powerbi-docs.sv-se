@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1fc8decc70ade009a7c4236686cfe9cf72adb54d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 52ca0405c17339580a971162d13cb4ba67f05979
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61161980"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060504"
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Anslut till SQL Sentry med Power BI
 Det är enkelt att analysera dina prestandadata som samlats in av SQL Sentry med Power BI. Power BI hämtar dina data och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data.
@@ -93,7 +93,7 @@ Om data från vissa av dina appar inte visas i Power BI, kontrollera att du anv�
 Om du inte är ägare till den SQL Sentry-databas som synkroniseras till <https://cloud.sqlsentry.com>, kontaktar du din administratör för att kontrollera att du har behörighet att visa insamlade data.
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI?](power-bi-overview.md)
+[Vad är Power BI?](fundamentals/power-bi-overview.md)
 
 [Hämta data för Power BI](service-get-data.md)
 

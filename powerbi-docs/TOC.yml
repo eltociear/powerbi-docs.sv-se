@@ -395,6 +395,8 @@
               href: desktop-access-database-errors.md
             - name: Lösa problem när du startar Power BI Desktop
               href: desktop-error-launching-desktop.md
+            - name: Felsöka DirectQuery-modell i Power BI Desktop
+              href: desktop-directquery-troubleshoot.md
     - name: Referens
       items:
         - name: Datatyper i Power BI Desktop
@@ -661,7 +663,7 @@
           items:
             - name: Skapa nya arbetsytor
               href: service-create-the-new-workspaces.md
-            - name: Skapa apparbetsytor
+            - name: Skapa arbetsytor
               href: service-create-workspaces.md
             - name: Publicera appar från arbetsytor
               href: service-create-distribute-apps.md
@@ -1175,6 +1177,8 @@
       href: guidance/dax-error-functions.md
     - name: Metodtips för dataflöden
       href: service-dataflows-best-practices.md
+    - name: Vägledning för DirectQuery-modell i Power BI Desktop
+      href: guidance/directquery-model-guidance.md
     - name: Vitböcker
       items:
         - name: Översikt vitböcker

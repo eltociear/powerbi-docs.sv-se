@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: fde61f2411fb04897cc23f24639dc373a98e6edd
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a5b73a5a2d0a4381981cd5c98accc48df662bd24
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70184980"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716448"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installera och använda appar med instrumentpaneler och rapporter i Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Nu när du har en [grundläggande förståelse av appar](end-user-apps.md) ska vi gå igenom hur du öppnar och interagerar med appar. 
 
 ## <a name="ways-to-get-a-new-app"></a>Olika sätt att skaffa en ny app

@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 21fa3c5c3907e8c1aa4d40bd3e6332c77ff62b98
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: be85769d8ae2340843a4ebdeb5c88ffc2ca86920
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730084"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431108"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 
@@ -181,8 +181,6 @@ Dessa begränsningar och överväganden gäller för Power BI Desktop och Power 
 - Om visualiseringen använder data från mer än en datatabell och det inte finns någon relation för dessa tabeller i datamodellen, exporterar Power BI endast data för den första tabellen.
 
 - Anpassade visuella objekt och visuella R-objekt stöds inte för tillfället.
-
-- Exportera data är inte tillgängligt för användare utanför organisationen som använder en instrumentpanel som en intern medarbetare har delat med dem.
 
 - I Power BI kan du byta namn på ett fält (en kolumn) genom att dubbelklicka på fältet och skriva ett nytt namn. Power BI refererar till det nya namnet som ett *alias*. Ibland kan det hända att en Power BI-rapport innehåller dubbla fältnamn, men Excel tillåter inte dubbletter. Så när Power BI exporterar data till Excel, återställs ett fältalias till de ursprungliga fältnamnen (kolumnnamnen).  
 

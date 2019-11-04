@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0a59e6a3d930bc8a0fa69507cae8e958c6175da
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 78bb51a7ef2d7bd7309c7bb93c27b7e9193b85bf
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61063180"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059413"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fäst instrumentpanelen på din Windows 10-startskärm från den mobila Power BI-appen
 Du kan fästa Power BI-instrumentpaneler på Windows startskärm från den mobila Power BI-appen för Windows 10. De blir *levande paneler*. När du trycker på panelen på startskärmen öppnas instrumentpanelen i den mobila Power BI-appen för Windows 10.
@@ -34,6 +34,6 @@ Du kan fästa Power BI-instrumentpaneler på Windows startskärm från den mobil
 ## <a name="next-steps"></a>Nästa steg
 * [Hämta den mobila Power BI-appen för Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store  
 * [Kom igång med Power BI-mobilappen för Windows 10](mobile-windows-10-phone-app-get-started.md)  
-* [Vad är Power BI?](../../power-bi-overview.md)
+* [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 
