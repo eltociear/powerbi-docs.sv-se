@@ -10,22 +10,22 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b3d455e0deff676d20c316422d4715773e0a85d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: eecbc43f26cebc12884ae6c5143a815f6e310ce5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655061"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432361"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Distribuera och hantera Power BI Premium-kapaciteter
 
-**Sammanfattning:** Power BI Premium ger mer konsekvent prestanda, support för stora datavolymer och flexibiliteten hos en enhetlig självbetjänings- och BI-företagsplattform för alla i din organisation. Detta tekniska nivå 300-white paper har skrivits specifikt för Power BI-administratörer och innehållsförfattare och utgivare. Syftet är att hjälpa dem att förstå potentialen i Power BI Premium och förklara hur man utformar, distribuera, övervakar och felsöker skalbara lösningar.
+**Sammanfattning:** Power BI Premium ger mer konsekvent prestanda, stöd för stora data volymer och flexibiliteten i en enhetlig självbetjänings-och Enterprise BI-plattform för alla i din organisation. Detta tekniska nivå 300-white paper har skrivits specifikt för Power BI-administratörer och innehållsförfattare och utgivare. Syftet är att hjälpa dem att förstå potentialen i Power BI Premium och förklara hur man utformar, distribuera, övervakar och felsöker skalbara lösningar.
 
-**Författare:** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (Data Platform MVP och oberoende BI-expert med binära lösningar)
+**Författare:** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (Data Platform MVP och oberoende bi-expert med bitvisa lösningar)
 
-**Tekniska granskare:** Adam Saxton, Akshai Mirchandani, Bhavik Merchant, David Magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier Matrat, Swati Gupta
+**Teknisk granskare:** Adam Saxton, Akshai Mirchandani, Bhavik-handlare, David magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier Matrat, Swati Gupta
 
-**Gäller för:** Power BI-tjänst, Power BI Premium och Azure Power BI Embedded-kapaciteter
+**Gäller för:** Power BI-tjänst, Power BI Premium och Azure Power BI Embedded-kapacitet
 
 > [!NOTE]
 > Du kan spara eller skriva ut detta white paper genom att välja **Skriv ut** i webbläsaren och sedan välja **Spara som PDF**.
@@ -34,7 +34,7 @@ ms.locfileid: "69655061"
 
 Power BI är en tjänst för företagsanalyser, som har utformats för att du ska få insikter som gör att du snabbt kan fatta välgrundade beslut. Sedan tjänsten publicerades år 2015 har den snabbt blivit en populär tjänst som används för att leverera lösningar för de minsta organisationerna till de största företagen.
 
-Den görs tillgängligt på två sätt: Som en molntjänst och som en lokal rapporteringslösning med namnet **Power BI-rapportserver**. \[[1](#endnote-01)\]
+Det görs tillgängligt på två sätt: som en moln tjänst och som en lokal rapporterings lösning med namnet **Power BI-rapportserver**. \[[1](#endnote-01)\]
 
 Power BI som en molntjänst är en programvara som en tjänst (SaaS) \[ [2](#endnote-02)\]. Den representerar en uppsättning tjänster och program som gör att organisationerna kan utveckla, distribuera, hantera och dela lösningar för att övervaka sin verksamhet.
 
@@ -50,13 +50,13 @@ I delad kapacitet körs arbetsbelastningar på dataresurser som delas med andra 
 
 ### <a name="workspaces"></a>Arbetsytor
 
-Power BI-arbetsytor finns i kapaciteter och de representerar säkerhet, samarbete och distribueringsbehållare. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Fler arbetsytor kan skapas för att möjliggöra samarbete och distribution och dessa kallas **Apparbetsytor**. Som standard skapas arbetsytor, inklusive personliga arbetsytor, i den delade kapaciteten.
+Power BI-arbetsytor finns i kapaciteter och de representerar säkerhet, samarbete och distribueringsbehållare. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Ytterligare arbets ytor kan skapas för att möjliggöra samarbete och distribution, och dessa kallas för **arbets ytor**. Som standard skapas arbetsytor, inklusive personliga arbetsytor, i den delade kapaciteten.
 
 ### <a name="power-bi-content-types"></a>Power BI-innehållstyper
 
 För att introducera Power BI Premium-ämnen, är det viktigt att börja med en ingående diskussion av Power BI-arkitekturen, inklusive grundläggande innehållstyper.
 
-Allt Power BI-innehåll lagras och hanteras i arbetsytor som är behållare för Power BI-innehåll. Varje Power BI-användare har sin egen personliga arbetsyta, men generellt är den bästa metoden är att skapa app-arbetsytor. App-arbetsytor aktiverar samägande av innehåll och möjlighet att samarbeta med innehåll. De ger också möjlighet att mellanlagra och distribuera innehåll till en bred publik som appar.
+Allt Power BI-innehåll lagras och hanteras i arbetsytor som är behållare för Power BI-innehåll. Varje Power BI användare har sin egen personliga arbets yta, men den allmänna bästa metoden är att skapa arbets ytor. Med arbets ytor kan du ge medägarskap för innehåll och möjlighet att samar beta med innehåll. De ger också möjlighet att mellanlagra och distribuera innehåll till en bred publik som appar.
 
 Följande Power BI-innehåll lagras i arbetsytor:
 
@@ -70,7 +70,7 @@ Följande Power BI-innehåll lagras i arbetsytor:
 
 Power BI-dataflöden hjälper organisationer att förena data från olika källor. De kan ses som data som är förberedda och mellanlagrade för användning i modeller, men de kan inte användas direkt som en källa för rapportering. De utnyttjar den omfattande uppsättningen av Microsoft-datakopplingar och aktiverar inmatning av data från lokala och molnbaserade datakällor.
 
-Dataflöden kan bara skapas och hanteras i app-arbetsytor och de lagras som entiteter i Common Data Model (CDM) i Azure Data Lake Storage Gen2. Normalt kommer de att uppdateras regelbundet för att lagra aktuella data.
+Data flöden kan bara skapas och hanteras i arbets ytor och de lagras som entiteter i common data Model (common data service) i Azure Data Lake Storage Gen2. Normalt kommer de att uppdateras regelbundet för att lagra aktuella data.
 
 Mer information finns i dokumentet [Dataförberedelser med självbetjäning i Power BI (förhandsversion)](service-dataflows-overview.md).
 
@@ -95,7 +95,7 @@ Att ansluta till en externt värdbaserad modell innebär att installera den [lok
 
 ##### <a name="power-bi-desktop-developed-models"></a>Power BI Desktop-utvecklade modeller
 
-Power BI Desktop – ett klientprogram avsett för utveckling av Power BI – kan användas för att utveckla en modell som är en Analysis Services-tabellmodell. Modeller kan utvecklas genom att importera data från dataflöden, som sedan kan integreras med andra datakällor. Även om information om hur modellering kan ske ligger utom omfånget för detta white paper, är det viktigt att förstå att det finns tre olika typer, eller lägen, av modeller som kan utvecklas med hjälp av Power BI Desktop. Dessa lägen avgör om data har importerats till modellen, eller om de finns kvar i datakällan. Det finns tre lägen: Import, DirectQuery och Sammansatt. En fullständig beskrivning av varje steg beskrivs i ämnet [modellagringslägen](#model-storage-modes).
+Power BI Desktop – ett klientprogram avsett för utveckling av Power BI – kan användas för att utveckla en modell som är en Analysis Services-tabellmodell. Modeller kan utvecklas genom att importera data från dataflöden, som sedan kan integreras med andra datakällor. Även om information om hur modellering kan ske ligger utom omfånget för detta white paper, är det viktigt att förstå att det finns tre olika typer, eller lägen, av modeller som kan utvecklas med hjälp av Power BI Desktop. Dessa lägen avgör om data har importerats till modellen, eller om de finns kvar i datakällan. De tre lägena är: import, DirectQuery och sammansatt. En fullständig beskrivning av varje steg beskrivs i ämnet [modellagringslägen](#model-storage-modes).
 
 Externt värdbaserade modeller och modeller som utvecklats i Power BI desktop kan tillämpa säkerhet på radnivå (RLS) för att begränsa de data som kan hämtas för en viss användare. Användare som tillhör säkerhetsgruppen säljare kan till exempel bara visa rapportdata för de försäljningsregioner som de har tilldelats. RLS-roller kan vara dynamiska eller statiska. **Dynamiska roller** filtrerar efter rapportanvändare, medan för **statiska roller** gäller samma filter för alla användare som tilldelats rollen.
 
@@ -133,7 +133,7 @@ Mer information finns i dokumentet [Hämta data från Excel-arbetsboksfiler](ser
 
 #### <a name="reports"></a>Rapporter
 
-Det finns två typer av rapporter: Power BI-rapporter och sidnumrerade rapporter.
+Det finns två typer av rapporter: Power BI rapporter och sid brytnings rapporter.
 
 **Power BI-rapporter** ger en interaktiv datavisualiseringsupplevelse som ansluter till endast en enskild datauppsättning. Rapporter är ofta utformade att främja användardeltagande så att de kan interagera med en extraordinära uppsättning funktioner, inklusive filtrering, uppdelning, korsfiltrering och markering, detaljgranska uppåt, detaljgranska neråt, gå igenom, frågor och svar med naturligt språk, fokusering, sidnavigering, spotlighting, visa bokmärken och mer.
 
@@ -259,7 +259,7 @@ Power BI har tre licenser:
 
 Licensen **Power BI Free** tillåter en person att logga in till Power BI-tjänsten och arbeta i sin personliga arbetsyta genom att publicera modeller och rapporter. Det är viktigt att förstå att det inte går att dela Power BI-innehåll med hjälp av denna licens. Denna licens, är som namnet antyder kostnadsfri.
 
-Licensen **Power BI Pro** tillåter en person att skapa och samarbeta i app-arbetsytor och dela och distribuera Power BI-innehåll. De kan också konfigurera uppdatering för deras datauppsättningar för att automatiskt behålla data aktuella, inklusive lokala datakällor. Vidare kan de granska och övervaka hur data nås och används. Denna licens krävs för att få delat innehåll från andra, om inte användaren är associerad med en dedikerad kapacitet i Power BI Premium.
+Med **Power BI Pro** -licensen kan en person skapa och samar beta inom arbets ytor och dela och distribuera Power BI innehåll. De kan också konfigurera uppdatering för deras datauppsättningar för att automatiskt behålla data aktuella, inklusive lokala datakällor. Vidare kan de granska och övervaka hur data nås och används. Denna licens krävs för att få delat innehåll från andra, om inte användaren är associerad med en dedikerad kapacitet i Power BI Premium.
 
 Licensen **Power BI Premium** är en licens på klientnivå och den beskrivs i avsnittet [Introduktion till Power BI Premium](#introducing-power-bi-premium).
 
@@ -289,7 +289,7 @@ Power BI Premium är en prenumeration på klientnivå för Office 365, tillgäng
 - **EM** SKU:er (EM1-EM3) för inbäddning, kräver ett årligt åtagande som faktureras månadsvis
 - **P** SKU:er (P1-P3) för inbäddning och företagsfunktioner, kräver ett åtagande per månad eller år, faktureras månadsvis och inkluderar en licens för att installera Power BI-rapportserver lokalt
 
-En annan metod är att köpa en Azure Power BI Embedded-prenumeration som har en enda SKU-serie: **A** SKU:er (A1-A6) är endast för inbäddning och kapacitetstestning.
+En annan metod är att köpa en Azure Power BI Embedded-prenumeration som har en enda SKU-familj: **en** SKU (a1-A6) för inbäddning och kapacitets testning.
 
 Alla SKU:er levererar virtuella kärnor för att skapa kapacitet \[[9](#endnote-09)\], men EM SKU:er är begränsade till inbäddning i mindre skala. Även om detta White Papers fokus är på P SKU:er, är mycket av vad som diskuteras också relevant för A SKU:er.
 
@@ -313,7 +313,7 @@ Fokus i detta White Paper är **Premiumkapacitet** , vilket innebär att den är
 
 #### <a name="capacity-nodes"></a>Kapacitetsnoder
 
-Som beskrivs i ämnet Prenumerationer och licensiering, finns det två Power BI Premium SKU-serier: EM och P. Alla Power BI Premium SKU:er är tillgängliga som kapacitetsnoder, där var och en representerar en viss mängd resurser som består av processor, minne och lagring. Förutom resurser, har varje SKU gränser för antalet anslutningar med DirectQuery (DQ) och Live-anslutning (LC) per sekund och antalet uppdateringar av parallella modeller.
+Som det beskrivs i avsnittet prenumerationer och licenser finns det två Power BI Premium SKU-familjer: EM och P. Alla Power BI Premium SKU: er är tillgängliga som kapacitets-noder, där var och en representerar en mängd resurser som består av processor, minne och lagring. Förutom resurser, har varje SKU gränser för antalet anslutningar med DirectQuery (DQ) och Live-anslutning (LC) per sekund och antalet uppdateringar av parallella modeller.
 
 Bearbetning uppnås med ett visst antal v-kärnor, jämnt fördelat mellan serverdelen och klientdelen.
 
@@ -327,7 +327,7 @@ Resurser och begränsningarna för varje Premium-SKU (och motsvarande storlek p�
 
 | Kapacitetsnoder | Totalt antal virtuella kärnor | Virtuella kärnor för serverdel | RAM (GB) | Virtuella kärnor för klientdel | DQ/LC (per sekund) | Modellens uppdateringsparallellitet |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -349,7 +349,7 @@ Kapacitetsåtgärder klassificeras som antingen interaktiva eller bakgrund. Inte
 
 Det är viktigt att förstå att interaktiva åtgärder alltid är prioriterade över bakgrundsåtgärder för att försäkra bästa möjliga användarupplevelse. Om det inte finns tillräckligt med resurser, läggs bakgrundsåtgärder till i en kö för bearbetning när resurser frigörs. Bakgrundsåtgärder, som uppdateringar av datauppsättningen och AI-funktioner, kan stoppas mitt i process av Power BI-tjänsten och läggs till i en kö.
 
-Importmodeller måste vara helt inlästa i minnet så att de kan efterfrågas eller uppdateras. Power BI-tjänsten hanterar minnesanvändning med hjälp av avancerade algoritmer för att garantera maximal användning av det tillgängliga minnet, och kan leda till överansträngning av kapaciteten: Det är möjligt för en kapacitet att lagra många importmodeller (upp till 100 TB per Premium-kapacitet), när deras sammanlagda disklagring överskrider det minne som stöds (och ytterligare minne krävs för att fråga och uppdatera), kan inte alla läsas in i minnet samtidigt.
+Importmodeller måste vara helt inlästa i minnet så att de kan efterfrågas eller uppdateras. Power BI-tjänst hanterar minnes användningen med hjälp av avancerade algoritmer för att säkerställa maximal användning av tillgängligt minne och kan uppnå överbelastning av kapaciteten: även om det är möjligt för en kapacitet att lagra många import modeller (upp till 100 TB per Premium-kapacitet), när deras kombinerade disk lagring överskrider det minne som stöds (och ytterligare minne krävs för att fråga och uppdatera), kan de inte läsas in i minnet på samma gång.
 
 Importmodeller läses därför in, och tas bort från, minnet beroende på användningen. En importmodell läses in när den efterfrågas (interaktiv åtgärd) och ännu inte är i minnet, eller när den uppdateras (bakgrundsåtgärden).
 
@@ -385,7 +385,7 @@ Minst en kapacitetsadministratör måste tilldelas. Användare som utsetts till 
 
 Kapacitetsadministratörer har inte åtkomst till arbetsyteinnehåll (om inte uttryckligen tilldelade behörigheter för arbetsytan) och de har inte åtkomst till alla Power BI-administratörsområden (såvida inte uttryckligen tilldelade), till exempel användningsstatistik, granskningsloggar och klientinställningar. Viktigt är att kapacitetsadministratörer inte har behörighet att skapa nya kapaciteter eller skala befintliga kapaciteter. Dessutom tilldelas de per kapacitet, vilket försäkrar att de bara kan visa och hantera de kapaciteter som de är tilldelade.
 
-Kapacitetsstorlek måste väljas från en tillgänglig lista med SKU-alternativ vilket är begränsat av antalet tillgängliga v-kärnor i poolen. Det är möjligt att skapa flera kapaciteter från poolen som kan hämtas från en eller flera köpta SKU:er. Till exempel kan en P3-SKU (32 kärnor) användas för att skapa tre kapacitet: en P2 (16 v-kärnor), och två P1 (2 x 8 v-kärnor). Förbättrad prestanda och skalning kan uppnås genom att skapa kapaciteter av mindre storlek och detta beskrivs i avsnittet [Optimera Premium-kapaciteter](#optimizing-premium-capacities). Följande bild visar en exempelinstallation av den fiktiva Contoso-organisationen som består av fem Premium-kapaciteter (3 x P1 och 2 x P3) där var och en innehåller app-arbetsytor och flera arbetsytor i delad kapacitet.
+Kapacitetsstorlek måste väljas från en tillgänglig lista med SKU-alternativ vilket är begränsat av antalet tillgängliga v-kärnor i poolen. Det är möjligt att skapa flera kapaciteter från poolen som kan hämtas från en eller flera köpta SKU:er. Till exempel kan en P3-SKU (32 kärnor) användas för att skapa tre kapacitet: en P2 (16 v-kärnor), och två P1 (2 x 8 v-kärnor). Förbättrad prestanda och skalning kan uppnås genom att skapa kapaciteter av mindre storlek och detta beskrivs i avsnittet [Optimera Premium-kapaciteter](#optimizing-premium-capacities). Följande bild visar en exempel konfiguration för den fiktiva contoso-organisation som består av fem Premium-kapaciteter (3 x P1 och 2 x P3) med varje arbets yta och flera arbets ytor i delad kapacitet.
 
 ![En exempelinstallation för det fiktiva företaget Contoso](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
@@ -401,29 +401,29 @@ Power BI-tjänstadministratörer och globala Office 365-administratörer kan än
 
 Tilldelningsbehörigheter krävs för att tilldela en arbetsyta till en specifik Premium-kapacitet. Behörigheterna kan beviljas till hela organisationen, specifika användare eller grupper.
 
-Som standard stöder Premium-kapaciteterna arbetsbelastningar som är associerade med att köra Power BI-frågor. De stöder också tre ytterligare arbetsbelastningar: **Sidnumrerade rapporter**, **dataflöden** och **AI**. Varje arbetsbelastning kräver att du konfigurerar den högsta mängd minne (som en procentandel av den totala mängden tillgängligt minne) som kan användas av arbetsbelastningen. Det är viktigt att förstå att en ökning av maximala minnesallokeringar kan påverka antalet aktiva modeller som kan användas, och dataflöden av uppdateringar.
+Som standard stöder Premium-kapaciteterna arbetsbelastningar som är associerade med att köra Power BI-frågor. Det stöder också tre ytterligare arbets belastningar: **sid brytnings rapporter**, **data flöden**och **AI**. Varje arbetsbelastning kräver att du konfigurerar den högsta mängd minne (som en procentandel av den totala mängden tillgängligt minne) som kan användas av arbetsbelastningen. Det är viktigt att förstå att en ökning av maximala minnesallokeringar kan påverka antalet aktiva modeller som kan användas, och dataflöden av uppdateringar.
 
 Minne allokeras dynamiskt till dataflöden, men den är statiskt allokerad till sidnumrerade rapporter. Orsaken till att statiskt allokera maximalt minne är att sidnumrerade rapporter körs inom ett säkert inneslutet utrymme av kapaciteten. Försiktighet bör iakttas vid inställning av minne för sidnumrerade rapporter eftersom det minskar tillgängligt minne för att läsa in modeller.
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Sidnumrerade rapporter | Gäller inte | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
+| Sidnumrerade rapporter | Saknas | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum | 20 % standard, 2,5 % minimum |
 | Dataflöden | 20 % standard, 8 % minimum  | 20 % standard, 4 % minimum  | 20 % standard, 2 % minimum | 20 % standard, 1 % minimum  |
-| AI | Gäller inte | 20 % standard, 20 % minimum  | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum  |
+| AI | Saknas | 20 % standard, 20 % minimum  | 20 % standard, 10 % minimum | 20 % standard, 5 % minimum  |
 | | | | | |
 
 Det är möjligt att ta bort en Premium-kapacitet och det leder inte till borttagning av dess arbetsytor och innehåll. I stället flyttas alla tilldelade arbetsytor till delad kapacitet. När Premium-kapaciteten skapades i en annan region, kommer arbetsytan att flyttas till delad kapacitet för hemregionen.
 
 ### <a name="assigning-workspaces-to-capacities"></a>Tilldela arbetsytor till kapaciteter
 
-Arbetsytor kan tilldelas en Premium-kapacitet i **Power BI-administratörsportalen** eller, för en apparbetsyta – i fönstret **Arbetsyta**.
+Arbets ytor kan tilldelas till en Premium-kapacitet i **Power BI admin**-**portalen** eller – för en arbets yta – i fönstret **arbets yta** .
 
 Kapacitetsadministratörer, samt globala administratörer för Office 365 eller Power BI-tjänstadministratörer kan masstilldela arbetsytor i **Power BI-administratörsportalen**. Masstilldelningar kan gälla för:
 
-- **Arbetsytor per användare**: Alla arbetsytor som ägs av dessa användare, inklusive personliga arbetsytor har tilldelats Premium-kapacitet. Detta omfattar ny tilldelning av arbetsytor när de redan är tilldelade till en annan Premium-kapacitet. Dessutom kan användare också tilldelas behörigheter för arbetsytetilldelning.
+- **Arbets ytor av användare** : alla arbets ytor som ägs av dessa användare, inklusive personliga arbets ytor, tilldelas Premium-kapaciteten. Detta omfattar ny tilldelning av arbetsytor när de redan är tilldelade till en annan Premium-kapacitet. Dessutom kan användare också tilldelas behörigheter för arbetsytetilldelning.
 
 - **Särskilda arbetsytor**
-- **Hela organisationens arbetsytor**: Alla arbetsytor, inklusive personliga arbetsytor, har tilldelats Premium-kapacitet. Dessutom tilldelas alla aktuella och framtida användare behörigheter för arbetsytetilldelning. \[[14](#endnote-14)\]
+- **Hela organisationens arbets ytor** : alla arbets ytor, inklusive personliga arbets ytor, har tilldelats Premium-kapaciteten. Dessutom tilldelas alla aktuella och framtida användare behörigheter för arbetsytetilldelning. \[[14](#endnote-14)\]
 
 En arbetsyta kan läggas till en Premium-kapacitet med hjälp av fönstret **Arbetsyta** förutsatt att användaren är både administratör för en arbetsyta och har behörighet för kapacitetstilldelning.
 
@@ -474,9 +474,9 @@ Slutligen avslutas detta avsnitt med att testa metoder och Premium-kapacitetssto
 
 ### <a name="general-best-practices"></a>Allmänna metodtips
 
-När du försöker uppnå bästa användning och prestanda finns det några metodtips som kan anses som allmänna rekommendationer. Exempel på dessa är:
+När du försöker uppnå bästa användning och prestanda finns det några metodtips som kan anses som allmänna rekommendationer. Dessa omfattar:
 
-- Använda app-arbetsytor i stället för personliga arbetsytor
+- Använda arbets ytor i stället för personliga arbets ytor
 - Dela upp verksamhetskritisk och BI med självbetjäning (SSBI) i olika kapaciteter
 
   ![Dela upp verksamhetskritisk och BI med självbetjäning i olika kapaciteter](media/whitepaper-premium-deployment/separate-capacities.png)
@@ -586,10 +586,10 @@ Kapacitetsadministratörer (och Power BI-tjänstadministratörer) kan övervaka 
 
 Inkrementell uppdatering kan avsevärt minska varaktighet för uppdatering, särskilt för stora datamodellstabeller. Det finns fyra fördelar med inkrementell uppdatering:
 
-- **Uppdaterar snabbare**: Endast en del av en tabell behöver läsas in, vilket minskar CPU- och minnesanvändning och parallellitet kan vara högre när du uppdaterar flera partitioner
-- **Uppdateringar sker bara vid behov** : Inkrementella uppdateringsprinciper kan konfigureras till att läsa in bara när data har ändrats
-- **Mer tillförlitliga uppdateringar**: Kortare körning av anslutningar till ej beständiga datakällsystem är mindre känsliga för frånkoppling
-- **Modeller förblir trimmade** : Inkrementella uppdateringsprinciper kan konfigureras för att automatiskt ta bort historik utöver en glidande tidsperiod
+- **Uppdateringar är snabbare** : endast en delmängd av en tabell behöver läsas in, minska processor-och minnes användning och parallellitet kan vara högre vid uppdatering av flera partitioner
+- **Uppdatering sker bara vid behov** : stegvisa uppdaterings principer kan konfigureras för att endast inaktive ras när data har ändrats
+- **Uppdateringar är mer tillförlitliga** : kortare anslutningar till temporära data käll system är mindre känsliga för från koppling
+- **Modeller är kvar** : stegvisa uppdaterings principer kan konfigureras så att historiken tas bort automatiskt efter en glidande tids period
 
 Mer information finns i dokumentet [Inkrementell uppdatering i Power BI Premium](service-premium-incremental-refresh.md).
 
@@ -659,7 +659,7 @@ På modellnivå:
 
 - I allmänhet gäller optimeringsämnen för import- och DirectQuery-modeller för sammansatta modelltabeller som använder dessa lagringslägen.
 - Normalt ska du sträva efter att uppnå en belastningsutjämnade design genom att konfigurera tabeller av dimensionstyp (som representerar affärsentiteter) som dubbelt lagringsläge och tabeller av faktatyp (ofta stora tabeller som representerar operativa fakta) som DirectQuery-lagringsläge. Dubbelt lagringsläge innebär både import- och DirectQuery-lagringslägena, och detta gör att Power BI-tjänsten kan fastställa det mest effektiva lagringsläget att använda när du genererar en intern fråga för genomströmning.
-- Se till att gatewayer har tillräckligt med resurser, helst på dedikerade virtuella datorer, med tillräckligt med nätverksbandbredd och närheten till datakällor
+- Se till att gatewayer har tillräckligt med resurser, helst på dedikerade virtuella datorer, med tillräckligt med nätverksbandbredd och i närheten till datakällor
 - Aggregeringstabeller konfigurerade som importlagringsläge kan leverera dramatiska förbättringar i frågeprestanda när de används för att sammanfatta tabeller av faktatyp för DirectQuery-lagringsläge. I det här fallet ökar aggregeringstabeller storleken på modellen och ökar uppdateringstiden, och det här är ofta en acceptabel kompromiss för snabbare frågor.
 
 #### <a name="optimizing-externally-hosted-models"></a>Optimera externt värdbaserade modeller
@@ -678,11 +678,11 @@ Att fastställa storleken på och antalet Premium-kapaciteter kan vara en utmani
 
 Kapacitetsadministratörer behöver därför inte tänka på många faktorer specifika för miljö, innehåll och förväntad användning. Det övergripande målet är att maximera kapacitetsanvändning samtidigt som konsekventa frågetider, godkända väntetider och borttagningsintervall levereras. Faktorer att överväga kan innefatta:
 
-- **Modellstorlek och dataegenskaper** : Importmodeller måste vara helt inlästa i minnet för att fråga eller uppdatera. LC-/DQ-datauppsättningar kan kräva betydande processortid och eventuellt betydande minne för att utvärdera komplexa åtgärder eller RLS-regler. Minne- och processorstorlek och LC-/DQ-frågedataflöde är begränsat av kapacitetsstorleken.
-- **Samtidiga aktiva modeller** : Samtidiga frågor för olika importmodeller kommer att leverera bästa svarstider och prestanda när de finns kvar i minnet. Det bör finnas tillräckligt med minne för att vara värd för alla mycket frågade modeller, med ytterligare minne för att möjliggöra deras uppdateringar.
-- **Uppdatering av importmodell** : Uppdateringstyp (fullständig eller inkrementell), varaktighet och komplexitet i Power Query-frågor och beräknad logik för tabell/kolumn kan påverka minnes- och särskilt processoranvändning. Samtidiga uppdateringar är begränsade av kapacitetsstorlek (1,5 x serverdelens v-kärnor, avrundas uppåt).
-- **Samtidiga frågor** : Många samtidiga frågor kan resultera i rapporter som inte svarar när processor- eller LC-/DQ-anslutningar överskrider kapacitetsgränsen. Detta gäller särskilt för rapportsidor som innehåller många visuella objekt.
-- **Dataflöden, sidnumrerade rapporter och AI-funktioner** : Kapaciteten kan konfigureras till att stödja dataflöden, sidnumrerade rapporter och AI-funktioner, och var och en kräver en konfigurerbar högsta procentandel av kapacitetsminne. Minne allokeras dynamiskt till dataflöden, men det är statiskt allokerat till sidnumrerade rapporter och AI-arbetsbelastning.
+- **Modell storlek och data egenskaper** : import modeller måste läsas in helt i minnet för att tillåta frågor eller uppdatering. LC-/DQ-datauppsättningar kan kräva betydande processortid och eventuellt betydande minne för att utvärdera komplexa åtgärder eller RLS-regler. Minne- och processorstorlek och LC-/DQ-frågedataflöde är begränsat av kapacitetsstorleken.
+- **Samtidiga aktiva modeller** : den samtidiga frågan av olika import modeller ger bästa möjliga svars tid och prestanda när de är kvar i minnet. Det bör finnas tillräckligt med minne för att vara värd för alla mycket frågade modeller, med ytterligare minne för att möjliggöra deras uppdateringar.
+- **Importera modell uppdatering** : uppdaterings typen (fullständig eller stegvis), varaktighet och komplexitet för Power Query frågor och beräknad tabell/kolumn logik kan påverka minne och särskilt processor användning. Samtidiga uppdateringar är begränsade av kapacitetsstorlek (1,5 x serverdelens v-kärnor, avrundas uppåt).
+- **Samtidiga frågor** : många samtidiga frågor kan leda till rapporter som inte svarar när processor-eller LC/DQ-anslutningar överskrider kapacitets gränsen. Detta gäller särskilt för rapportsidor som innehåller många visuella objekt.
+- **Data flöden, sid brytnings rapporter och AI-funktioner** : kapaciteten kan konfigureras för att stödja data flöden, sid brytnings rapporter och AI-funktioner, med varje krav på en konfigurerbar högsta procent andel kapacitets minne. Minne allokeras dynamiskt till dataflöden, men det är statiskt allokerat till sidnumrerade rapporter och AI-arbetsbelastning.
 
 Förutom de här faktorerna kan kapacitetsadministratörer överväga att skapa flera kapaciteter. Flera kapaciteter möjliggör isolering av arbetsbelastningar och kan konfigureras för att säkerställa att prioritetsarbetsbelastningar har garanterade resurser. Till exempel kan två kapaciteter skapas för att avgränsa affärskritiska arbetsbelastningar från självbetjänade BI (SSBI) arbetsbelastningar. Affärskritisk kapacitet kan användas för att isolera stora företagsmodeller vilket ger dem garanterade resurser med redigeringsåtkomst beviljad endast till IT-avdelningen. SSBI-kapaciteten kan användas som värd för ett växande antal mindre modeller med åtkomst beviljad till affärsanalytiker. SSBI-kapaciteten kan ibland uppleva väntetider för frågor eller uppdateringar som är acceptabla.
 
@@ -696,9 +696,9 @@ När en kapacitetsstorlek avgörs kan testning utföras genom att skapa en kontr
 
 Testinnehållet kan läggas till arbetsytor som skapats på Azure-kapacitet och sedan kan en enskild användare köra rapporter för att generera en realistisk och representativ arbetsbelastning för frågor. Om det finns importmodeller, ska en uppdatering för varje modell också utföras. Övervakningsverktyg kan sedan användas för att granska alla mått för att förstå resursanvändning.
 
-Det är viktigt att testerna är upprepningsbara: Testerna ska köras flera gånger och de ska leverera ungefär samma resultat varje gång. Ett medeltal av de här resultaten kan användas för att extrapolera och beräkna en arbetsbelastning under sanna produktionsvillkor.
+Det är viktigt att testerna kan upprepas: testerna bör köras flera gånger och de bör leverera ungefär samma resultat varje gång. Ett medeltal av de här resultaten kan användas för att extrapolera och beräkna en arbetsbelastning under sanna produktionsvillkor.
 
-Om du redan har en kapacitet och de rapporter som du vill göra ett belastningstest för, kan du använda [PowerShell-verktyget för belastningsgenerering](https://aka.ms/PowerBILoadTestingTool) för att snabbt generera ett belastningstest. Med verktyget kan du uppskatta hur många instanser av varje rapport din kapacitet kan köra på en timme. Du kan använda verktyget till att utvärdera din kapacitets förmåga att återge en enskild rapport eller flera olika rapporter samtidigt. Mer information finns i videon [Microsoft Power BI: Premiumkapacitet](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
+Om du redan har en kapacitet och de rapporter som du vill göra ett belastningstest för, kan du använda [PowerShell-verktyget för belastningsgenerering](https://aka.ms/PowerBILoadTestingTool) för att snabbt generera ett belastningstest. Med verktyget kan du uppskatta hur många instanser av varje rapport din kapacitet kan köra på en timme. Du kan använda verktyget till att utvärdera din kapacitets förmåga att återge en enskild rapport eller flera olika rapporter samtidigt. Mer information finns i videon [Microsoft Power BI: Premium-kapacitet](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
 Om du vill generera ett mer komplext test kan du utveckla ett belastningstestprogram som simulerar en realistisk arbetsbelastning. Mer information finns i webbseminariet [Load Testing Power BI Applications with Visual Studio Load Test](https://www.youtube.com/watch?v=UFbCh5TaR4w).
 
@@ -826,7 +826,7 @@ Detta kan vara särskilt tydligt när en datauppsättning som används i korta �
 
 I vissa fall kan Power BI-administratörer begära att datauppsättningens ägare skapar en mindre föränderlig frågearbetsbelastning genom att skapa en instrumentpanel (som frågar med jämna mellanrum vid alla uppdateringar av datauppsättning efter cachelagrade paneler) i stället för en rapport. Detta kan förhindra toppar när instrumentpanelen läses in. Den här lösningen kanske inte alltid är möjlig för alla verksamhetskrav, men den kan vara ett effektivt sätt att undvika processormättnad, utan att göra ändringar på datauppsättningen.
 
-## <a name="conclusion"></a>Sammanfattning
+## <a name="conclusion"></a>Slutsats
 
 Power BI Premium ger mer konsekvent prestanda, support för stora datavolymer och flexibiliteten hos en enhetlig självbetjänings- och BI-företagsplattform för alla i din organisation. Detta tekniska nivå 300-white paper har skrivits specifikt för Power BI-administratörer och innehållsförfattare och utgivare. Syftet är att hjälpa dem att förstå potentialen i Power BI Premium och förklara hur man utformar, distribuera, övervakar och felsöker skalbara lösningar.
 
