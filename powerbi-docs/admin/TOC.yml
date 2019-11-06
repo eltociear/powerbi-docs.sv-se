@@ -44,6 +44,14 @@
           href: ../service-admin-power-bi-expressroute.md
         - name: Använda Azure AD B2B
           href: ../service-admin-azure-ad-b2b.md
+        - name: Dataskydd
+          items:
+            - name: Översikt över dataskydd
+              href: service-security-data-protection-overview.md
+            - name: Aktivera känslighetsetiketter för data
+              href: service-security-enable-data-sensitivity-labels.md
+            - name: Använda Microsoft Cloud App Security med Power BI
+              href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Säkerhet på radnivå
           href: ../service-admin-rls.md
         - name: Arkiverad arbetsyta
