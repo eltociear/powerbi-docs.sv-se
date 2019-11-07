@@ -9,18 +9,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: d1289a3e030f0a93c5c2ce3b68b7cf92c378a7e0
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: b7fe09857d7f9d61745dd263353d3467c9cf6fb4
+ms.sourcegitcommit: e4b28c237c6e0dc16239b161a41a4c30a4b534dd
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194758"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73710782"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
 I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. Här hittar du en lista över tillgängliga whitepapers för Power BI.
 
-| White paper | Beskrivning | Date |
+| White paper | Beskrivning | Datum |
 | --- | --- | --- |
 | [Planera en företagsdistribution för Power BI](https://go.microsoft.com/fwlink/?linkid=2057861) |Det här är ett tekniskt white paper som beskriver överväganden för en väl utförd och säker distribution av Power BI. | Juli 2018 |
 | [Power BI och dataflöden](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Det här faktabladet beskriver dataflöden i detalj och beskriver funktioner och initiativ bakom dataflödesegenskaper och -funktioner. | November 2018 |
@@ -31,7 +31,6 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | [Säkerhet](service-admin-power-bi-security.md) |Ge en detaljerad förklaring av säkerheten i Power BI. | Mars 2019 |
 | [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|Det här dokumentet beskriver hur du distribuerar innehåll till användare utanför organisationen med hjälp av integrering av Azure Active Directory Business-to-business (AAD B2B).| Mars 2019 |
 | [Avancerade analyser med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver funktionerna i Power BI, inklusive förutsägelseanalyser, anpassade visualiseringar, R-integrering och data-analysuttryck. | Februari 2017 |
-| [Metodtips för design av rapporter och visuella objekt](visuals/power-bi-visualization-best-practices.md) |Här finns metodtips för att utforma rapporter i Power BI. | Juni 2018 |
 | [Dubbelriktad filtrering](desktop-bidirectional-filtering.md) |Förklarar dubbelriktad korsfiltrering i Power BI Desktop (det omfattar även SQL Server Analysis Services 2016, som har samma funktioner). | Juli 2018 |
 | [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |DirectQuery har gjorts om för avsevärt förbättrad hastighet och prestanda för SQL Server 2016, men det är nu också mer komplext att förstå och implementera. | Januari 2017 |
 | [Power BI och SAP BW](https://aka.ms/powerbiandsapbw)| Det här dokumentet beskriver hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse).| Februari 2018 |

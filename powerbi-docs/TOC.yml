@@ -1109,7 +1109,9 @@
       items:
         - name: Vitbok om kapacitetsplanering
           href: report-server/capacity-planning.md
-- name: Gatewayer
+        - name: Anpassning av PDF-återgivningstillägg
+          href: report-server/rendering-extension-support.md
+- name: Gateways
   items:
     - name: Översikt
       items:
