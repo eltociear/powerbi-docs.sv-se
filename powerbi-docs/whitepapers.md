@@ -2,19 +2,19 @@
 title: White paper-dokument om Power BI
 description: I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: b7fe09857d7f9d61745dd263353d3467c9cf6fb4
-ms.sourcegitcommit: e4b28c237c6e0dc16239b161a41a4c30a4b534dd
+ms.openlocfilehash: e88e6753df091fb7f046d475df59fa4344da5d98
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "73710782"
+ms.locfileid: "73787308"
 ---
 # <a name="whitepapers-for-power-bi"></a>White paper-dokument om Power BI
 
@@ -34,9 +34,9 @@ I våra white paper-dokument kan du läsa mer om Power BI på en djupare nivå. 
 | [Dubbelriktad filtrering](desktop-bidirectional-filtering.md) |Förklarar dubbelriktad korsfiltrering i Power BI Desktop (det omfattar även SQL Server Analysis Services 2016, som har samma funktioner). | Juli 2018 |
 | [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |DirectQuery har gjorts om för avsevärt förbättrad hastighet och prestanda för SQL Server 2016, men det är nu också mer komplext att förstå och implementera. | Januari 2017 |
 | [Power BI och SAP BW](https://aka.ms/powerbiandsapbw)| Det här dokumentet beskriver hur SAP-kunder kan dra nytta av att ansluta Power BI till sina befintliga SAP BW-system (SAP Business Warehouse).| Februari 2018 |
-| [Skydda en Tabular BI-semantikmodell](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Det här dokumentet beskriver säkerhetsmodellen för Tabular BI-semantik och Power BI. Du får lära dig att skapa roller, implementera dynamisk säkerhet, konfigurera inställningar för personifiering, hantera roller och välja en metod för att ansluta till modeller som fungerar i ditt nätverks säkerhetskontext. | April 2016 |
+| [Skydda en Tabular BI-semantikmodell](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Det här dokumentet beskriver säkerhetsmodellen för Tabular BI-semantik och Power BI. Du får lära dig att skapa roller, implementera dynamisk säkerhet, konfigurera inställningar för personifiering, hantera roller och välja en metod för att ansluta till modeller som fungerar i ditt nätverks säkerhetskontext. | April 2016 |
 | [Power BI och GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Den här länken tar dig till listan över godkända white paper-dokument på Service Trust Portal, inklusive white paper-dokumentet om GDPR i Microsoft Power BI. | April 2018 |
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

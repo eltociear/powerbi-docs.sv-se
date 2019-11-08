@@ -3,19 +3,19 @@ title: White paper om Power BI-säkerhet
 description: White paper där säkerhetsarkitekturen för och implementeringen av Power BI diskuteras och beskrivs
 author: davidiseminger
 ms.author: davidi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 4cb2ae69044b156d5f8a4bd554f8386808fb6b9e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 8cbb1c4b25cacae5cb025f85790be6a1657b0482
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430495"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73787742"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper om Power BI-säkerhet
 
@@ -34,13 +34,13 @@ ms.locfileid: "73430495"
 
 **Power BI** är en onlinebaserad programvarutjänst (_SaaS_, programvara som en tjänst) från Microsoft som gör att du snabbt och enkelt kan instrumentpaneler, rapporter, datamängder och visualiseringar för Business Intelligence som självservice. Med Power BI kan du ansluta till många olika datakällor, kombinera och forma data från dessa anslutningar och sedan skapa rapporter och instrumentpaneler som kan delas med andra.
 
-Power BI-tjänsten regleras av [villkoren för Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) och [Microsofts sekretesspolicy för företag](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Information om platsen för databearbetning finns i villkoren för platsen för databehandling i villkoren för Microsoft Online Services. När det gäller information om efterlevnad är [Microsoft Trust Center](https://www.microsoft.com/trustcenter) den primära resursen för Power BI. Power BI-teamet arbetar ständigt med att ge sina kunder de senaste innovationerna och ökad produktivitet. Power BI är för närvarande i nivå D i [ramverket för Office 365-efterlevnad](http://go.microsoft.com/fwlink/p/?LinkID=618494).
+Power BI-tjänsten regleras av [villkoren för Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) och [Microsofts sekretesspolicy för företag](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Information om platsen för databearbetning finns i villkoren för platsen för databehandling i villkoren för Microsoft Online Services. När det gäller information om efterlevnad är [Microsoft Trust Center](https://www.microsoft.com/trustcenter) den primära resursen för Power BI. Power BI-teamet arbetar ständigt med att ge sina kunder de senaste innovationerna och ökad produktivitet. Power BI är för närvarande i nivå D i [ramverket för Office 365-efterlevnad](https://go.microsoft.com/fwlink/p/?LinkID=618494).
 
 Den här artikeln beskriver Power BI-säkerhet genom att ge en förklaring av Power BI-arkitekturen samt hur användare autentiserar till Power BI och dataanslutningar upprättas. Sedan beskrivs hur Power BI lagrar och flyttar data genom tjänsten. I det sista avsnittet behandlas säkerhetsrelaterade frågor med svar för varje fråga.
 
 ## <a name="power-bi-architecture"></a>Power BI-arkitektur
 
-**Power BI**-tjänsten bygger på **Azure**, vilket är Microsofts [plattform för molnbaserad databehandling](http://azure.microsoft.com/overview/what-is-azure/). Power BI distribueras för närvarande i många datacenter runtom i världen – det finns många aktiva distributioner som är tillgängliga för kunder i de regioner som hanteras av dessa datacenter. Det finns även lika många passiva distributioner som reserv för varje aktiv distribution.
+**Power BI**-tjänsten bygger på **Azure**, vilket är Microsofts [plattform för molnbaserad databehandling](https://azure.microsoft.com/overview/what-is-azure/). Power BI distribueras för närvarande i många datacenter runtom i världen – det finns många aktiva distributioner som är tillgängliga för kunder i de regioner som hanteras av dessa datacenter. Det finns även lika många passiva distributioner som reserv för varje aktiv distribution.
 
 Varje Power BI-distribution består av två kluster – ett frontwebb (**WFE**) och ett **serverdel**. De här två klustren visas i följande bild och utgör en referens för resten av den här artikeln. 
 
@@ -117,8 +117,8 @@ Power BI erbjuds i vissa regioner baserat på var Power BI-kluster distribueras 
 
 Följande länkar ger ytterligare information om Azure-datacenter.
 
-- [Azure-regioner](http://azure.microsoft.com/regions/) – information om Azures globala närvaro och platser
-- [Azure-tjänster efter region](http://azure.microsoft.com/regions/#services) – en fullständig lista över Azure-tjänster (både infrastrukturtjänster och plattformstjänster) som är tillgängliga från Microsoft i varje region.
+- [Azure-regioner](https://azure.microsoft.com/regions/) – information om Azures globala närvaro och platser
+- [Azure-tjänster efter region](https://azure.microsoft.com/regions/#services) – en fullständig lista över Azure-tjänster (både infrastrukturtjänster och plattformstjänster) som är tillgängliga från Microsoft i varje region.
 
 För närvarande är Power BI-tjänst tillgänglig i vissa regioner som servas av data Center enligt beskrivningen i [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Via länken nedan visas en översikt över Power BI-datacenter. Du kan hovra över en region för att se de datacenter som finns där:
 
@@ -126,7 +126,7 @@ För närvarande är Power BI-tjänst tillgänglig i vissa regioner som servas a
 
 Microsoft tillhandahåller även datacenter för självständiga stater. Mer information om tillgänglighet för Power BI-tjänsten för nationella moln finns i [Power BI för nationella moln](https://powerbi.microsoft.com/clouds/).
 
-Mer information om var data lagras och hur de används finns i [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Åtaganden om platsen för vilande kunddata anges i **databehandlingsvillkoren** i [villkoren för Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
+Mer information om var data lagras och hur de används finns i [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Åtaganden om platsen för vilande kunddata anges i **databehandlingsvillkoren** i [villkoren för Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
 ## <a name="user-authentication"></a>Användarautentisering
 
@@ -136,7 +136,7 @@ Användarautentisering till Power BI-tjänsten består av en serie begäranden, 
 
 Sekvensen för användarautentisering för Power BI-tjänsten sker enligt beskrivningen i följande steg, som illustreras i följande bilder.
 
-1. En användare upprättar en anslutning till Power BI-tjänsten via en webbläsare, antingen genom att skriva Power BI-adressen i adressfältet (till exempel https://app.powerbi.com)) eller genom att välja _Logga in_ från landningssidan för Power BI (https://powerbi.microsoft.com). Anslutningen upprättas med hjälp av TLS 1.2 och HTTPS, och all efterföljande kommunikation mellan webbläsaren och Power BI-tjänsten använder HTTPS. Begäran skickas till **Azure Traffic Manager**.
+1. En användare upprättar en anslutning till Power BI-tjänsten via en webbläsare, antingen genom att skriva Power BI-adressen i adressfältet (till exempel https://app.powerbi.com) ) eller genom att välja _Logga in_ från landningssidan för Power BI (https://powerbi.microsoft.com). Anslutningen upprättas med hjälp av TLS 1.2 och HTTPS, och all efterföljande kommunikation mellan webbläsaren och Power BI-tjänsten använder HTTPS. Begäran skickas till **Azure Traffic Manager**.
 
 2. **Azure Traffic Manager** kontrollerar användarens DNS-post för att fastställa det närmaste datacentret där Power BI-tjänst distribueras, och svarar till DNS med IP-adressen för det WFE-kluster som användaren ska skickas till.
 
@@ -371,7 +371,7 @@ Datacachen från Power BI Mobile finns kvar på enheten i två veckor eller till
 
 Power BI Mobile-program läser inte av mappar på enheten. 
 
-Alla tre plattformar som Power BI Mobile är tillgängligt för stöder Microsoft Intune, en programvarutjänst som tillhandahåller hantering av mobilenheter och program. Med Intune aktiverat och konfigurerat krypteras data på den mobila enheten, och själva Power BI-programmet kan inte installeras på ett SD-kort. Du kan [lära dig mer om Microsoft Intune](http://www.microsoft.com/cloud-platform/microsoft-intune).
+Alla tre plattformar som Power BI Mobile är tillgängligt för stöder Microsoft Intune, en programvarutjänst som tillhandahåller hantering av mobilenheter och program. Med Intune aktiverat och konfigurerat krypteras data på den mobila enheten, och själva Power BI-programmet kan inte installeras på ett SD-kort. Du kan [lära dig mer om Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## <a name="power-bi-security-questions-and-answers"></a>Frågor och svar om säkerhet för Power BI
 
@@ -487,7 +487,7 @@ Mer information om Power BI finns i följande resurser.
 - [Komma igång med Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [Power BI REST API – Översikt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API-referens](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Lokal datagateway](service-gateway-onprem.md)
+- [On-premises data gateway (Lokal datagateway)](service-gateway-onprem.md)
 - [Power BI och ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationella moln i Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
