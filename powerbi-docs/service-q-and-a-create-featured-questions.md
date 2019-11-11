@@ -2,7 +2,6 @@
 title: Skapa aktuella frågor för Frågor och svar i Power BI
 description: Dokumentation för hur du skapar aktuella frågor för Frågor och svar i Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 138c14e98485777d84130854c7811a33b74dffd3
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 1571589844abb8e9acf0bbb78eccf5664db9bf52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721132"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881101"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Skapa aktuella frågor för Frågor och svar i Power BI
 Om du äger en datauppsättning, kan du lägga till egna aktuella frågor till den datauppsättningen. Frågor och svar för Power BI kommer att visa dessa frågor till kollegor som konsumerar rapporter baserat på den datamängden.  Aktuella frågor ger dina kollegor idéer om vilka typer av frågor de kan ställa till datauppsättningen. Det är helt upp till dig vilka aktuella frågor du lägger till – lägg till populära frågor, frågor som ger intressanta resultat eller frågor som kan vara svåra att uttrycka rätt.
@@ -50,5 +49,5 @@ Den här artikeln använder sig av [exemplet detaljhandelsanalys](sample-dataset
 - [Använda Frågor och svar på instrumentpaneler och i rapporter](power-bi-tutorial-q-and-a.md)  
 - [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

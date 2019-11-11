@@ -2,19 +2,18 @@
 title: Supportalternativ för Power BI Pro och Power BI Premium
 description: Den här artikeln beskriver de supportalternativ som är tillgängliga för kunder med Power BI Pro och Power BI Premium.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: mblythe
-ms.openlocfilehash: df14bf127ed6935f9bec445709153a87088f8af0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 4cd007467b2ebd7f08dbb9d9bd3447194aad1f37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305820"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871398"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>Supportalternativ för Power BI Pro och Power BI Premium
 
@@ -55,4 +54,4 @@ Den ger dig en fullständig översikt över Power BI-funktionerna. Den omfattar 
 
   - **WorkshopPLUS – Data AI: Avancerade dataanalyser med Power BI** I den här kursen får du kunskaper för att förstå och implementera huvudprinciperna om datamodelleringsaspekter i Power BI med hjälp av verktyg som Power BI Desktop och medföljande molntjänst för publicering och förbrukning av BI-tillgångar. Den här kursen går igenom grunderna i rapportutveckling, inbäddade analyser i Power BI för att bädda in innehåll i anpassade program, realtidsinstrumentpaneler och avancerad analys som rör datavetenskap och utveckling i Power BI.
 
-Kontakta din Microsoft Technical Account Manager för mer information. Om du inte redan har ett Microsoft Premier Support-avtal kan du läsa mer på [Premier Support](https://support.microsoft.com/en-us/premier).
+Kontakta din Microsoft Technical Account Manager för mer information. Om du inte redan har ett Microsoft Premier Support-avtal kan du läsa mer på [Premier Support](https://support.microsoft.com/premier).

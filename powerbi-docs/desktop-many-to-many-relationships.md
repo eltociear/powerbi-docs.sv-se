@@ -2,7 +2,6 @@
 title: Många-till-många-relationer i Power BI Desktop
 description: Använda relationer med kardinaliteten många-många i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 578d5f77753884575111b3247f5aa4d3ae79e179
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941452"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866823"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relationer med kardinaliteten många-många i Power BI Desktop
 

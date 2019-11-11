@@ -2,19 +2,18 @@
 title: Konfigurationsinställningar för Power BI-appen för iOS
 description: Så här anpassar du Power BI för iOS med hjälp av MDM-verktyget
 author: paulinbar
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: mshenhav
-ms.openlocfilehash: bc9c6dd8cd892ab0304cc5a99a3bb780486f32f0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c2d619489b042e523c559a16dab249b268389cd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70160163"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879436"
 ---
 # <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Konfigurera Power BI-appen för iOS via fjärranslutning med MDM-verktyget (mobile device management)
 
@@ -61,6 +60,6 @@ Du kan även använda valfri MDM-provider. Om du inte använder Intune måste du
 
 ## <a name="next-steps"></a>Nästa steg
 
-* Hämta [Power BI-mobilappen för iPhone](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Hämta [Power BI-mobilappen för iPhone](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Följ [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
-* Delta i samtalet i [Power BI Community](http://community.powerbi.com/)
+* Delta i samtalet i [Power BI Community](https://community.powerbi.com/)

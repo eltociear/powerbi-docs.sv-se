@@ -2,7 +2,6 @@
 title: Datatyper i Power BI Desktop
 description: Datatyper i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391775"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868524"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 Den här artikeln beskriver datatyper som stöds i Power BI Desktop och dataanalysuttryck (DAX). 
@@ -71,7 +70,7 @@ Power BI Desktop stöder fem datum/tid-datatyper i frågevyn och tre i rapportvy
 **Sant/falskt** – Ett booleskt värde för antingen sant eller falskt.
 
 ### <a name="blanksnulls-type"></a>Typen tomt/null
-**Tomt** – Är en datatyp i DAX som visar och ersätter null-värden i SQL. Du kan skapa ett tomt värde med funktionen [BLANK](http://msdn.microsoft.com/library/ee634820.aspx) och testa om det finns några tomma värden med hjälp av den logiska funktionen [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx).
+**Tomt** – Är en datatyp i DAX som visar och ersätter null-värden i SQL. Du kan skapa ett tomt värde med funktionen [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) och testa om det finns några tomma värden med hjälp av den logiska funktionen [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx).
 
 ### <a name="table-data-type"></a>Tabelldatatyp
 DAX använder en tabelldatatyp i många funktioner, till exempel aggregeringar och beräkningar av tidsinformation. Vissa funktioner kräver en referens till en tabell. Andra funktioner returnerar en tabell som sedan kan användas som indata för andra funktioner. I vissa funktioner som kräver en tabell som indata, kan du ange ett uttryck som returnerar en tabell. För vissa funktioner krävs en referens till en bastabell. Information om kraven för specifika funktioner finns i [DAX-funktionsreferens](https://msdn.microsoft.com/library/ee634396.aspx).

@@ -2,7 +2,6 @@
 title: 'Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur'
 description: 'Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 233b4c36b5e59b38c82f5c3ccc1f0b49b70c5ac8
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d871fa15c999e5b6c83b0334d6c978b2ba3c9870
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523461"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858713"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på affärsmöjlighetsanalys för Power BI: Ta en rundtur
 
@@ -63,11 +62,11 @@ Innan du kan använda exemplet, måste du först hämta det som ett [innehållsp
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även ladda ned Exempel på analys av affärsmöjligheter som en [.pbix-fil](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
+Du kan även ladda ned Exempel på analys av affärsmöjligheter som en [.pbix-fil](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529782). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529782). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
 Vår säljchef har skapat en instrumentpanel för att spåra de mått som är viktigast. Säljchefen kan välja en panel för att granska data närmare när något intressant dyker upp:

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 3f1e02c880d737998afd7c84c4259e4de8582da9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: befe57bd0c3441a44f4db745e3af73bd9afed933
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70391503"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73783562"
 ---
 # <a name="using-siri-shortcuts-in-power-bi-mobile-ios-app-preview"></a>Använda Siri-genvägar i Power BI-mobilappen för iOS (förhandsversion)
 
@@ -66,7 +66,7 @@ Om du vill ta bort en genväg går du till objektet och trycker på åtgärden *
 ## <a name="next-steps"></a>Nästa steg
 Så här kan du läsa mer om Power BI-mobilappen: 
 
-* Ladda ned [Power BI-mobilappen för iPhone](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Ladda ned [Power BI-mobilappen för iPhone](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Följ [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
-* Delta i konversationerna i [Power BI-communityn](http://community.powerbi.com/)
+* Delta i konversationerna i [Power BI-communityn](https://community.powerbi.com/)
 

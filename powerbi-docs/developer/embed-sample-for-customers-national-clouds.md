@@ -3,19 +3,18 @@ title: Inbäddade analyser till inbäddat Power BI-innehåll i ditt program för
 description: Lär dig att integrera eller bädda in en rapport, instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt dina kunder. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg för myndighetsmoln och nationella moln.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: bc6b9cf92966dd9e86e789169b9b8134dbfcb2ba
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 7ede1678dc6cf0e217eb17dcc28f756031467b84
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374329"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875895"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Självstudie: Integrera Power BI-innehåll i ditt program för nationella moln
 
@@ -37,7 +36,7 @@ De olika nationella molnen är:
 
 ![Inbäddad instrumentpanel](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett konto konfigurerat kan du, beroende på myndigheter eller land, välja rätt nationellt moln för dig. Du kan registrera dig för ett [Power BI-konto för amerikanska myndigheter](../service-govus-signup.md), ett [Power BI-konto för moln i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller ett [Power BI-konto för moln i Kina](http://www.21vbluecloud.com/powerbi/).
+För att komma igång med den här genomgången behöver du ett **Power BI**-konto. Om du inte har ett konto konfigurerat kan du, beroende på myndigheter eller land, välja rätt nationellt moln för dig. Du kan registrera dig för ett [Power BI-konto för amerikanska myndigheter](../service-govus-signup.md), ett [Power BI-konto för moln i Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller ett [Power BI-konto för moln i Kina](https://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vill du bädda in en instrumentpanel för din organisation istället? Se [Integrera en instrumentpanel i en app för din organisation](integrate-dashboard.md).
@@ -150,7 +149,7 @@ Du måste hämta en **åtkomsttoken** från Azure AD i ditt program innan du kan
 
 * Government Community Cloud (GCC) – ```https://login.microsoftonline.com```
 
-* Militära leverantörer (DoDCON) – ```http://login.microsoftonline.us```
+* Militära leverantörer (DoDCON) – ```https://login.microsoftonline.us```
 
 * Militären (DoD) – ```https://login.microsoftonline.us```
 
@@ -445,4 +444,4 @@ Ett programexempel finns i [Inbäddning för ditt organisationsexempel](https://
 
 Överväganden och begränsningar
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

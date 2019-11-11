@@ -3,18 +3,17 @@ title: Hämta en autentiseringsåtkomsttoken
 description: Genomgång för att push-överföra data – hämta en åtkomsttoken för autentisering
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/29/2019
-ms.openlocfilehash: 5cb741d194d787014fec39f963e19d04de59a668
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: f6e0bbec2275407e963d5b97e6d780089fedc0ae
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809089"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875712"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Steg 2: Hämta en autentiseringsåtkomsttoken
 
@@ -188,4 +187,4 @@ namespace walkthrough_push_data
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [REST API:er för Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

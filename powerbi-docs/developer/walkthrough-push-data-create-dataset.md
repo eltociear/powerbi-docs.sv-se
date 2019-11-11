@@ -3,18 +3,17 @@ title: Skapa en datauppsättning
 description: Genomgång – Skicka data till en datauppsättning – Skapa en datauppsättning i Power BI
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 4bc24df67dd7d2b8ac0ae987ad2e50cff082c73f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 3b0a1f2234490ae1c887b77395d87e41deb3319d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710384"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875464"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Steg 3: Skapa en datauppsättning i Power BI
 Den här artikeln ingår i en stegvis genomgång för att [skicka data till en datauppsättning](walkthrough-push-data.md).
@@ -236,5 +235,5 @@ namespace walkthrough_push_data
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API-referens](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

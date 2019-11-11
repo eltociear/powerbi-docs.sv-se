@@ -2,7 +2,6 @@
 title: Vad är Power BI-tjänsten?
 description: Översikt över Power BI-tjänsten och hur den passar ihop med de andra delarna av Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 featuredvideoid: B2vd4MQrz4M
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 22446936f36074379242bd54af15c9bb2864e4a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060856"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874991"
 ---
 # <a name="what-is-the-power-bi-service"></a>Vad är Power BI-tjänsten?
 **Power BI** är en samling programvarutjänster, appar och anslutningsprogram som samverkar så att du kan skapa, dela och använda affärsinsikter på det sätt som passar bäst för dig och ditt företag. Microsoft Power BI *-tjänsten* (app.powerbi.com), som ibland kallas Power BI online, är SaaS-delen *(programvara som en tjänst*) i Power BI. *Instrumentpanelerna* i Power BI-tjänsten hjälper dig att hålla dig uppdaterad om din verksamhet. På instrumentpanelerna visas *paneler* som du kan välja för att öppna *rapporter* för vidare utforskning. Instrumentpaneler och rapporter ansluter till *datauppsättningar* så att alla relevanta data samlas på samma plats. 

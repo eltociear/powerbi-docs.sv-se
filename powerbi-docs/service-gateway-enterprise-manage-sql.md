@@ -2,7 +2,6 @@
 title: Hantera din datakälla – SQL
 description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ca8cf2e9c20f2efb4fe4b9f80a936ba887cccc93
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 66e9b53761fa154fe76cefea99cb5c88345b97aa
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832385"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881646"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Hantera din datakälla – SQL Server
 
@@ -81,5 +80,5 @@ Om du finns med på fliken **Användare** för den datakälla som konfigurerats 
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
 * [Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)
 
-Har du fler frågor? Fråga [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
 

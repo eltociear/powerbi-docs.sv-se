@@ -2,7 +2,6 @@
 title: Använda personliga gatewayer i Power BI
 description: Innehåller information om lokal datagateway (personligt läge) för Power BI som enskilda personer kan använda för att ansluta till lokala data.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 5138536fca255638e2cef802b885be1f5dfcbef9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729948"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881532"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Använda personliga gatewayer i Power BI
 
@@ -102,4 +101,4 @@ Kombinera snabbt på en personlig gateway gör att du kan ignorera angivna sekre
 
 * [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)  
 
-Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).

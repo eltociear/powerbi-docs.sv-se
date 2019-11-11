@@ -2,7 +2,6 @@
 title: Komma igång med Power BI Desktop
 description: Komma igång med Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70201030"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868025"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Komma igång med Power BI Desktop
 Välkommen till **Komma igång-guiden för Power BI Desktop**. Den här korta visningen av Power BI Desktop låter dig bekanta dig med hur den fungerar, visar vad den kan göra och ökar dina möjligheter att skapa robusta datamodeller, tillsammans med häpnadsväckande rapporter, som förstärker din affärsintelligens. 
 
-Vill du titta istället för att läsa? Då kan du [ta en titt på vår kom igång video](desktop-videos.md). Om du vill följa med i videon med matchande exempeldata, kan du [hämta den här Excel-exempelarbetsboken](http://go.microsoft.com/fwlink/?LinkID=521962).
+Vill du titta istället för att läsa? Då kan du [ta en titt på vår kom igång video](desktop-videos.md). Om du vill följa med i videon med matchande exempeldata, kan du [hämta den här Excel-exempelarbetsboken](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
@@ -88,7 +87,7 @@ Tänk dig att du ska pensionera dig – du vill leva där det finns en massa sol
 
 I båda fallen har följande webbresurs intressanta data om dessa ämnen och mer:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Välj **Hämta data \> Webb** och klistra in adressen.
 
@@ -158,7 +157,7 @@ Våra data om olika delstater är intressanta och kommer vara användbara för a
 
 Vi har tur: det finns en annan offentlig datakälla som gör just detta, men den måste formas en hel del innan vi kan ansluta den till vår pensionstabell. Här är webbresursen för delstatsförkortningar:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
 Från menyfliksområdet **Start** i **Frågeredigeraren**, väljer vi **Hämta Data\> Webb** och skriver in adressen, väljer **Ok** så visar **Navigerings**fönstret vad det fann på den webbplatsen.
 

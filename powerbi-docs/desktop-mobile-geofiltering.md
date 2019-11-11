@@ -2,19 +2,18 @@
 title: Ange geografiska filter i Power BI Desktop för mobilapparna
 description: När du ställer in geografisk filtrering i din modell i Power BI Desktop, kan du filtrera data för din plats automatiskt i Power BI-mobilapparna.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: b8887ba39d3c6d3123d3308eddba2994fbfe6485
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c054bc933cb1eaac7475ac0c7649c7e0f77f503b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61296157"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878096"
 ---
 # <a name="set-geographic-filters-in-power-bi-desktop-for-the-mobile-apps"></a>Ange geografiska filter i Power BI Desktop för mobilapparna
 Du kan i Power BI Desktop [kategorisera geografiska data](desktop-data-categorization.md) för en kolumn, så att Power BI Desktop vet hur värden ska hanteras i visuella objekt i en rapport. En fördel när du och dina kolleger ser rapporten i Power BI-mobilapparna är att Power BI automatiskt anger geografiska filter baserat på var ni befinner er. 
@@ -61,5 +60,5 @@ Läs mer om att [filtrera en rapport efter plats i Power BI-mobilapparna](consum
 
 ## <a name="next-steps"></a>Nästa steg
 * [Datakategorisering i Power BI Desktop](desktop-data-categorization.md)  
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

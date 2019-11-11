@@ -2,7 +2,6 @@
 title: Vanliga frågeuppgifter i Power BI Desktop
 description: Vanliga frågeuppgifter i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239461"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878681"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Vanliga frågeuppgifter i Power BI Desktop
 När du arbetar i fönstret **Frågeredigeraren** i Power BI Desktop finns det några återkommande uppgifter. I det här dokumentet får du exempel på dessa återkommande uppgifter och länkar med ytterligare information. 
@@ -31,9 +30,9 @@ De återkommande frågeuppgifter beskrivs här är följande:
 
 Vi kommer att använda några dataanslutningar för att utföra dessa uppgifter. Du kan hämta eller ansluta till dessa data, ifall du vill gå igenom dessa uppgifter på egen hand.
 
-Den första dataanslutningen är en Excel-arbetsbok, som du kan ladda ned från [den här länken](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Den andra är en webbresurs (som också används i annat Power BI Desktop-hjälpinnehåll), och som du hittar här:
+Den första dataanslutningen är en Excel-arbetsbok, som du kan ladda ned från [den här länken](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Den andra är en webbresurs (som också används i annat Power BI Desktop-hjälpinnehåll), och som du hittar här:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 De steg du måste följa för att ansluta till båda dessa datakällor inleder själva frågeuppgiftsarbetet.
 
@@ -142,7 +141,7 @@ Frågeredigeraren innehåller alla tillämpade steg för respektive fråga som t
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Låt oss ta en titt på den **avancerade redigeraren**, med de frågesteg som är kopplade till den visade frågan **USA\_StudentEnrollment**. De här stegen skapas i Power Query-formelspråket, vilket ofta kallas **M**. Mer information finns i [Lär dig mer om Power Query-formler](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Om du vill visa själva språkspecifikationen kan du gå till [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).
+Låt oss ta en titt på den **avancerade redigeraren**, med de frågesteg som är kopplade till den visade frågan **USA\_StudentEnrollment**. De här stegen skapas i Power Query-formelspråket, vilket ofta kallas **M**. Mer information finns i [Lär dig mer om Power Query-formler](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Om du vill visa själva språkspecifikationen kan du gå till [Microsoft Power Query for Excel Formula Language Specification](/powerquery-m/excel-workbook).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

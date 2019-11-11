@@ -3,18 +3,17 @@ title: Utveckla med REST-API:er för Power BI-rapportservern
 description: REST-API:n ger programmatisk åtkomst till objekten i en Power BI-rapportserverkatalog.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 8f35b7a3c19751b4537a49fa8cb30f4347f080ed
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770760"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874064"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Utveckla med REST-API:er för Power BI-rapportservern
 
@@ -41,7 +40,7 @@ Ett REST API-begäran/-svarspar kan delas in i fem komponenter:
 * Valfria brödtextsfält för HTTP-**begärandemeddelande** till stöd för URI- och HTTP-åtgärder. Som exempel innehåller POST-åtgärder MIME-kodade objekt som skickas som komplexa parametrar. För POST- eller PUT-åtgärder måste MIME-kodningstypen för brödtexten anges även i `Content-type` begärandehuvudet. Vissa tjänster kräver att du använder en specifik MIME-typ, som `application/json`.
 * **Huvudfält för HTTP-svarsmeddelande**:
   
-  * En [HTTP-statuskod](http://www.w3.org/Protocols/HTTP/HTRESP.html) som sträcker sig från 2xx lyckade koder till 4xx eller 5xx felkoder. Som alternativ kan också en tjänstedefinierad statuskod returneras, i enlighet med beskrivningen i API-dokumentationen.
+  * En [HTTP-statuskod](https://www.w3.org/Protocols/HTTP/HTRESP.html) som sträcker sig från 2xx lyckade koder till 4xx eller 5xx felkoder. Som alternativ kan också en tjänstedefinierad statuskod returneras, i enlighet med beskrivningen i API-dokumentationen.
   * Valfria ytterligare huvudfält efter vad som krävs för att stödja svaret på begäran, som ett svarshuvud av formen `Content-type`.
 * Valfria fält för **HTTP-svarsmeddelandets brödtext**:
   
@@ -53,7 +52,7 @@ En modern REST-API behöver modern API-dokumentation. REST-API:n bygger på Open
 
 ## <a name="testing-api-calls"></a>Testa API-anrop
 
-Ett verktyg för att testa HTTP-begäranden/svarsmeddelanden är [Fiddler](http://www.telerik.com/fiddler). Fiddler är en gratis proxy för felsökning av webbplatser som kan komma åt dina REST-begäranden, vilket gör det enkelt att diagnostisera HTTP-begärans-/svarsmeddelanden.
+Ett verktyg för att testa HTTP-begäranden/svarsmeddelanden är [Fiddler](https://www.telerik.com/fiddler). Fiddler är en gratis proxy för felsökning av webbplatser som kan komma åt dina REST-begäranden, vilket gör det enkelt att diagnostisera HTTP-begärans-/svarsmeddelanden.
 
 ## <a name="next-steps"></a>Nästa steg
 

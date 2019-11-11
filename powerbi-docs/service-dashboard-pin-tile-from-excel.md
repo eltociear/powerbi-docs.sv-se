@@ -2,7 +2,6 @@
 title: Hur du fäster en panel på en Power BI-instrumentpanel från Excel
 description: Fäst en panel på en Power BI-instrumentpanel från Excel i OneDrive för företag. Fästa intervall, diagram, tabeller
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139235"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877437"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fästa en panel på en Power BI-instrumentpanel från Excel
 Innan du kan fästa en panel från Excel-arbetsboken, ansluter du arbetsboken till Power BI-tjänsten (app.powerbi.com). Att ansluta en arbetsbok innebär i stort sett att använda en länkad skrivskyddad version av arbetsboken i Power BI-tjänsten för att du ska kunna fästa intervall på instrumentpaneler. Du kan även fästa ett helt kalkylblad på en instrumentpanel.  
 Om en arbetsbok har delats med dig kan du visa panelerna som ägaren fäst, men du kan inte skapa några instrumentpaneler själv. 
 
-Detaljerad information om hur Excel och Power BI fungerar tillsammans finns i [Hämta data från Excel-arbetsböcker](http://go.microsoft.com/fwlink/?LinkID=521962).
+Detaljerad information om hur Excel och Power BI fungerar tillsammans finns i [Hämta data från Excel-arbetsböcker](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 Se när Will visar flera olika sätt att importera data från och ansluta till Excel-arbetsböcker.
 
@@ -81,12 +80,12 @@ Om du väljer en panel i arbetsboken öppnas den länkade arbetsboken i Power BI
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-Funktioner som inte stöds: Power BI använder Excel Services till att hämta arbetsbokens paneler. Eftersom vissa funktioner från Excel inte stöds i Excel Services REST API, kan de därför inte visas på panelerna i Power BI. Till exempel: Miniatyrdiagram, ikonen Ange villkorsstyrd formatering och tidsutsnitt. En fullständig lista med funktioner som inte stöds finns i [Funktioner som inte stöds i Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
+Funktioner som inte stöds: Power BI använder Excel Services till att hämta arbetsbokens paneler. Eftersom vissa funktioner från Excel inte stöds i Excel Services REST API, kan de därför inte visas på panelerna i Power BI. Till exempel: Miniatyrdiagram, ikonen Ange villkorsstyrd formatering och tidsutsnitt. En fullständig lista med funktioner som inte stöds finns i [Funktioner som inte stöds i Excel Services REST API](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## <a name="next-steps"></a>Nästa steg
 [Dela en instrumentpanel med länkar till en Excel-arbetsbok](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Hämta data från Excel-arbetsböcker](service-excel-workbook-files.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

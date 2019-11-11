@@ -2,7 +2,6 @@
 title: Optimera rapporter för mobilapparna – Power BI
 description: Lär dig hur du optimerar rapportsidor för Power BI-mobilapparna genom att skapa en stående version av rapporten som är anpassad för telefoner och surfplattor.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 006d0e02f3b0aa7860cade4d8e035ddc299e8ba8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61310795"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878391"
 ---
 # <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimera rapporter för Power BI-mobilapparna
 Du kan förbättra upplevelsen av att visa rapporter i mobilapparna genom att skapa en stående layout. I Power BI Desktop och i Power BI-tjänsten ordnar du om och ändrar storlek på visuella objekt för att få en optimal upplevelse i stående läge.  
@@ -110,5 +109,5 @@ Rapportläsarna kan vrida sina telefoner eller surfplattor åt sidan för att se
 * [Skapa en telefonvy av en instrumentpanel i Power BI](service-create-dashboard-mobile-phone-view.md)
 * [Visa Power BI-rapporter som är optimerade för din telefon](consumer/mobile/mobile-apps-view-phone-report.md)
 * [Skapa dynamiska visuella objekt som optimerats för alla storlekar](visuals/desktop-create-responsive-visuals.md)
-* Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

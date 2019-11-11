@@ -3,18 +3,17 @@ title: Riktlinjer för visuella objekt för Power BI
 description: Läs hur du kan publicera dina anpassade visuella objekt till AppSource där andra kan upptäcka och använda dem via ett inköp.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: 4e17406b0b4e616a9857cf40298a7931e2b65427
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 84c873c925c7e733c70b309d5cc2476dff2e553b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944863"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863944"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Riktlinjer för visuella objekt för Power BI
 Innan du [publicerar](https://docs.microsoft.com/power-bi/developer/office-store) ditt visuella objekt till AppSource så att andra kan upptäcka och använda det ska du se till att följa riktlinjerna för att skapa en bra upplevelse för användarna. 

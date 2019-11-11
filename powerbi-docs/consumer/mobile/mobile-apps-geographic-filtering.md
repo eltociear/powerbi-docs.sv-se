@@ -2,18 +2,17 @@
 title: Filterrapport efter geografisk plats i en Power BI-mobilapp
 description: Lär dig hur du kan filtrera en rapport efter din geografiska plats i Microsoft Power BI-mobilappar om rapportägaren har konfigurerat geografiska taggar.
 author: mshenhav
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 1079b624ebab827b41f4da55095028796319fdcd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305783"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870638"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrera en rapport efter geografisk plats i Power BI-mobilappar
 Gäller:
@@ -51,5 +50,5 @@ Läs mer om [Konfigurera geografiskt filtrering](../../desktop-mobile-geofilteri
 ### <a name="next-steps"></a>Nästa steg
 * [Ansluta till Power BI-data från verkligheten](mobile-apps-data-in-real-world-context.md) med mobilapparna
 * [Datakategorisering i Power BI Desktop](../../desktop-data-categorization.md) 
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

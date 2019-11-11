@@ -2,7 +2,6 @@
 title: Använda rapportteman i Power BI Desktop
 description: Lär dig hur du använder en anpassad färgpalett och tillämpar den på hela rapporten i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 64be68398ffa2ab8323307b45b5bff09ec511090
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327835"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879996"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Använda rapportteman i Power BI Desktop
 Med **rapportteman** kan du tillämpa designändringar i hela rapporten, till exempel genom att använda företagsfärger, ändra ikonuppsättningar eller använda ny förvald visuell formatering. När du tillämpar ett **rapporttema** kommer alla visuella objekt i rapporten använda färger och formatering från det valda temat. Några undantag finns och de beskrivs längre fram i den här artikeln.
@@ -417,7 +416,7 @@ I följande tabell definieras *cardName*-värden. Det första värdet i varje ce
 | columnFormatting: Fältformatering |
 | columnHeaders: Kolumnrubriker |
 | dataLabels: Dataetiketter |
-| fill: Fyll |
+| fill: Fyllning |
 | fillPoint: Fyllningspunkt |
 | forecast: Prognos |
 | general: Allmänt |

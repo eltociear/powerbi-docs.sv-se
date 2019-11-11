@@ -2,19 +2,18 @@
 title: Kommentera och dela från Power BI-mobilappar
 description: 'Läs om kommentering och delning av paneler, rapporter och visuella objekt från Microsoft Power BI-mobilappen för iOS och Android. '
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 1f7911007d9629c8990fc15ddf7453bafe0e78f5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 013cbc58a8404fa803a14c73b1668be1215cf642
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841474"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879503"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Kommentera och dela en panel, rapport eller ett visuellt objekt i Power BI-mobilapparna
 Gäller för:
@@ -74,5 +73,5 @@ Du kan [dela en panel från Power BI-mobilappen för Windows 10-enheter](mobile-
 
 ## <a name="next-steps"></a>Nästa steg
 * [Dela en instrumentpanel från Power BI-mobilappar](mobile-share-dashboard-from-the-mobile-apps.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

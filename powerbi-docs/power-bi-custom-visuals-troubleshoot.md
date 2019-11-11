@@ -3,18 +3,17 @@ title: Felsökning av hur du utvecklar visuella objekt i Power BI
 description: Den här artikeln går igenom några vanliga problem som kan uppstå när du utvecklar eller skapar ett anpassat objekt i Power BI.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
 ms.date: 11/06/2018
-ms.openlocfilehash: 6fce02a4707d12859286f85073222b498a1a59f4
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: d1897c010cb275e1f44077ca00e6448e5ee05ab2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543884"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874539"
 ---
 # <a name="troubleshoot-power-bi-power-bi-visuals"></a>Felsöka anpassade visuella Power BI-objekt
 

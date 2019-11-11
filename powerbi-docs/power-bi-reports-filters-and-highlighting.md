@@ -2,7 +2,6 @@
 title: Filter och markeringar i Power BI-rapporter
 description: Om filter och markeringar i Power BI-rapporter
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 53bca7d1c0fd4d8592ec694d67148a7e3ccd46ff
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891885"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877623"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filter och markeringar i Power BI-rapporter
  Den här artikeln ger en introduktion till filtrering och markering i Power BI-tjänsten. Upplevelsen är nästan exakt samma som i Power BI Desktop. *Filter* ta bort allt utan de data som du vill fokusera på. *Markering* är inte samma sak som filtrering. Data tas inte bort. I stället markeras en delmängd av synliga data; de data som inte markeras förblir synliga men nedtonade.
@@ -100,5 +99,5 @@ Markera ett värde eller en axeletikett i ett visuellt objekt för att markera a
 
 [Ändra hur en rapports visuella objekt korsfiltrerar och korsmarkerar varandra](consumer/end-user-interactions.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

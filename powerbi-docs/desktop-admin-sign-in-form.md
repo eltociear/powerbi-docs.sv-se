@@ -2,19 +2,18 @@
 title: Hur administratörer kan hantera inloggningsformuläret för Power BI Desktop
 description: Lär dig hur du kan hantera det första inloggningsformuläret när Power BI Desktop öppnas.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
-ms.openlocfilehash: 5c31277b640b16882bef5c5f2cd9c56b441ede82
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b1ab5188ba8f5ccf54589d359f6f8ced1ada3060
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61329891"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878843"
 ---
 # <a name="how-administrators-can-manage-the-power-bi-desktop-sign-in-form"></a>Hur administratörer kan hantera inloggningsformuläret för Power BI Desktop
 Första gången Power BI Desktop startas visas ett inloggningsformulär. Informationen kan vara ifylld. Annars loggar du in i Power BI för att fortsätta. Administratörer kan hantera det här formuläret med hjälp av en registernyckel. 
@@ -39,5 +38,5 @@ Värdet 0 inaktiverar dialogrutan.
 
 
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Ange kontaktuppgifter för rapporter och instrumentpaneler
 description: Läs hur du anger kontaktuppgifter för rapporter och instrumentpaneler.
 author: LukaszPawlowski-MS
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2010
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b64bc2566be8787ad4bb4916ed8b8c8731a87ed7
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: bb98f7bbb92b72512f880513ec94ccb55d64fc67
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72245502"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872136"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Ange kontaktuppgifter för rapporter och instrumentpaneler i Power BI-tjänsten
 I den här artikeln får du veta hur du anger kontaktuppgifter för en instrumentpanel eller rapport i Power BI-tjänsten.
@@ -65,4 +64,4 @@ Kontaktlistans uppgifter används även på andra platser. Den visas till exempe
 
 ## <a name="next-steps"></a>Nästa steg
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

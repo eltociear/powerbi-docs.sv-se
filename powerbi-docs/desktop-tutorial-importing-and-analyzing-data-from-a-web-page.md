@@ -2,7 +2,6 @@
 title: 'Självstudie: Importera och analysera data från en webbsida'
 description: 'Självstudie: Importera och analysera data från en webbsida med Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514643"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879598"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Självstudie: Analysera webbsidedata med Power BI Desktop
 
@@ -29,7 +28,7 @@ Som den stora fotbollsfantast du är vill du rapportera om vinnarna i fotbolls-E
 
 ## <a name="connect-to-a-web-data-source"></a>Anslut till en webbdatakälla
 
-Du kan hämta data om EM-vinnarna från resultattabellen på Wikipedias sidan om Europamästerskapet i fotboll på http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
+Du kan hämta data om EM-vinnarna från resultattabellen på Wikipedias sidan om Europamästerskapet i fotboll på https://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
 ![Wikipedia, resultattabell](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
@@ -44,7 +43,7 @@ Importera data:
    >[!NOTE]
    >Du kan också välja själva objektet **Hämta data** eller välja **Hämta data** från Power BI-dialogrutan **Kom igång**, välj sedan **Webb** från avsnittet **Alla** eller **Andra** i dialogrutan **Hämta data** och välj sedan **Anslut**.
    
-2. I dialogrutan **Från webb** klistra in webbadressen `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship` i **URL**-textrutan och välj sedan **OK**.
+2. I dialogrutan **Från webb** klistra in webbadressen `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship` i **URL**-textrutan och välj sedan **OK**.
    
     ![Hämta data från dialog](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
    
@@ -186,8 +185,8 @@ Du kan ändra typ för en visualisering genom att markera den och sedan välja e
 I Power BI Desktop är det enkelt att hämta data från en stor mängd datakällor och utforma dem efter dina analysbehov för att visualisera datan på interaktiva sätt. När rapporten är klar kan du [ladda upp den på Power BI](desktop-upload-desktop-files.md) och skapa instrumentpanelen som baseras på den, och sedan dela den med andra Power BI-användare.
 
 ## <a name="see-also"></a>Se också
-* [Läs andra Power BI Desktop-självstudier](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Se Power BI Desktop-videor](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Besök Power BI-forumet](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Läs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Läs andra Power BI Desktop-självstudier](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Se Power BI Desktop-videor](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Besök Power BI-forumet](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Läs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)
 

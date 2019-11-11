@@ -3,19 +3,18 @@ title: Multi-Geo-stöd för Power BI Premium
 description: Lär dig hur du kan distribuera innehåll till datacentra i andra regioner än Power BI-klientorganisationens hemregion.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f29ce1ce05db80378eee81293d92484fb4f58f45
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 129cef8a923b27582bd6424c8d025b93ecbe5532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665420"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873446"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurera Multi-Geo-stöd för Power BI Premium
 
@@ -102,4 +101,4 @@ Du kan ta bort arbetsytor från Multi-Geo-kapaciteten på något av följande tv
 - [Vad är Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo för Power BI Embedded-kapaciteter](developer/embedded-multi-geo.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

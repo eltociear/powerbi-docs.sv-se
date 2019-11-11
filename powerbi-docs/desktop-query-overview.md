@@ -2,7 +2,6 @@
 title: Frågeöversikt i Power BI Desktop
 description: Frågeöversikt i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 56c38a4e42dcdb3fb22e9dc92446c7e963f50e3e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 3ee7c094972e7251ab99d9092691bf809344a3d5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513554"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876293"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Frågeöversikt i Power BI Desktop
 Med **Power BI Desktop** kan du ansluta till en värld av data, skapa övertygande och grundläggande rapporter och dela ditt arbete med andra – som sedan kan utgå från ditt arbete och förbättra sina Business Intelligence-uppgifter.
@@ -47,7 +46,7 @@ Utan några dataanslutningar visas **frågeredigeraren** som ett tomt fönster, 
 
 När en fråga har lästs in blir vyn för **frågeredigeraren** mer intressant. Om vi ansluter till följande webbdatakälla läser **frågeredigeraren** in information om datan, som du sedan kan börja utforma.
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Så här visas **frågeredigeraren** när en dataanslutning har upprättats:
 

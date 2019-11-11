@@ -2,7 +2,6 @@
 title: Lägga till ett filter i en Power BI-rapport
 description: Lägg till ett sidfilter, ett visualiseringsfilter eller ett rapportfilter till en rapport i Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/20/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: bc3fdd40848975dea675ce63955184686912ffd7
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: 143851013679dd0356c1ea5036c3d724b1dc436d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891899"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875179"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Lägga till ett filter i en Power BI-rapport
 
@@ -180,5 +179,5 @@ Nu ska vi se hur filtret för detaljerad information fungerar.
 
 [Olika typer av filter i Power BI](power-bi-report-filter-types.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

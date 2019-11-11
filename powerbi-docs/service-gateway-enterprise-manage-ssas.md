@@ -2,7 +2,6 @@
 title: Hantera din datakälla – Analysis Services
 description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway. Detta avser Analysis Services i både flerdimensionellt läge och tabelläge.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 02036d8b8fe35729a97a18dc5e058805d089b128
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 646bbc2e1923c3c325fce4c8f745e6b9914133f2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730192"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881659"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Hantera din datakälla – Analysis Services
 
@@ -284,5 +283,5 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 * [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
 
-Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
 

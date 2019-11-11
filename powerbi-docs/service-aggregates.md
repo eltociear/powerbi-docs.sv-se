@@ -2,7 +2,6 @@
 title: Arbeta med aggregat (summa, medelvärde och så vidare) i Power BI-tjänsten
 description: Lär dig hur du ändrar aggregeringen i ett diagram (summa, medelvärde, maximum och så vidare) i Power BI-tjänsten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 05/03/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cee05df6a7d13e18bc31bc1a1f34a5f89711c0d
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 595b5743450aeb8ae6f6e60157742e3563a28fdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "65710759"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873317"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Arbeta med aggregat (summa, medelvärde och så vidare) i Power BI-tjänsten
 
@@ -50,7 +49,7 @@ Det kan vara förvirrande att arbeta med aggregat i Power BI-tjänsten. Kanske h
 
 Vanligtvis är det underliggande problemet fältdefinitionen i datamängden. Kanske definierade datamängdens ägare fältet som text, och det förklarar varför Power BI inte kan summera eller genomsnittsberäkna det. Tyvärr [kan endast datauppsättningens ägare ändra hur ett fält kategoriseras](desktop-measures.md). Så om du har ägarbehörighet för datamängden, antingen i Desktop eller det program som användes för att skapa den (till exempel Excel) kan du lösa problemet. Annars måste du kontakta datauppsättningens ägare för hjälp.  
 
-Det finns ett särskilt avsnitt i slutet av den här artikeln som heter [**Överväganden och felsökning**](#considerations-and-troubleshooting). Det innehåller tips och vägledning. Om du inte hittar svaret där kan du ställa din fråga i [Power BI Community-forumet](http://community.powerbi.com). Du får ett snabbt svar direkt från Power BI-teamet.
+Det finns ett särskilt avsnitt i slutet av den här artikeln som heter [**Överväganden och felsökning**](#considerations-and-troubleshooting). Det innehåller tips och vägledning. Om du inte hittar svaret där kan du ställa din fråga i [Power BI Community-forumet](https://community.powerbi.com). Du får ett snabbt svar direkt från Power BI-teamet.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Ändra hur ett numeriskt fält aggregeras
 
@@ -188,4 +187,4 @@ F:  Jag ser inte **Summera inte** som ett alternativ i listrutan.
 
 S:  Försök att ta bort fältet och sedan lägga till det igen.
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

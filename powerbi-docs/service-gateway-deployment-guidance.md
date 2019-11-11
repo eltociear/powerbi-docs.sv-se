@@ -2,7 +2,6 @@
 title: Vägledning för distribution av en datagateway för Power BI
 description: Läs om bästa praxis och överväganden för distribution av en gateway för Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5a0c29f04e7329373eec5f60af840e503ec22b3c
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d4a02ccc759f78a4243f34fb59115fb9084ea90d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729977"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881676"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vägledning för distribution av en datagateway för Power BI
 
@@ -69,5 +68,5 @@ Om du tänker använda Power BI-gatewayen med Azure Analysis Services ska du se 
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)  
 * [Vanliga frågor och svar om lokal datagateway – Power BI](service-gateway-power-bi-faq.md)  
 
-Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
 

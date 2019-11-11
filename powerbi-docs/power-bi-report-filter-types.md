@@ -2,7 +2,6 @@
 title: Filtertyper i Power BI-rapporter
 description: Lägg till ett sidfilter, ett visualiseringsfilter eller ett rapportfilter till en rapport i Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 499a4f3be9f153a1994802e9707f855b71d2a506
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: c96b4ebae574a3b6a6fa54c5f5dc99b5bc948a90
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409855"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874407"
 ---
 # <a name="types-of-filters-in-power-bi-reports"></a>Filtertyper i Power BI-rapporter
 
@@ -99,5 +98,5 @@ Den här tabellen jämför vad författare kan göra med olika typer av filter.
 
 [Filtrera och markera i rapporter](power-bi-reports-filters-and-highlighting.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

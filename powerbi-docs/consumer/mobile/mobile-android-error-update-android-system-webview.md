@@ -2,19 +2,18 @@
 title: Åtgärda ”Android-systemets webbvy behöver uppdateras” – Power BI
 description: När du loggar in i Android-mobilappen, kan du få ett meddelande om att du behöver uppdatera Android-systemets webbvy.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: cc4f2dc328b58e65f89b5fae4efc0a9303638af4
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: d156d438086cbfe4a471c20f38dfb17424554406
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060194"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879511"
 ---
 # <a name="fixing-need-to-update-android-system-webview"></a>Åtgärda ”Android-systemets webbvy behöver uppdateras”
 När du loggar in i Android-mobilappen för Microsoft Power Bi, kan du få ett meddelande om att du behöver uppdatera Android-systemets webbvy. 
@@ -29,7 +28,7 @@ Det visar sig att du faktiskt behöver uppgradera din Chrome-app.
 * Gå tillbaka till Google Play-butiken, sök efter Chrome och hämta uppgraderingen.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Hämta Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
+* [Hämta Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

@@ -2,19 +2,18 @@
 title: Vägledning för Power BI
 description: Vägledningsdokumentationen innehåller rekommenderade metoder för Power BI.
 author: guyinacube
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2019
 ms.author: asaxton
-ms.openlocfilehash: 3e8a4a92ce3a1e5cbc9459732cdd12225ae901e1
-ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
+ms.openlocfilehash: e3aeff47e585d9a54edf46f7001f4686e9a76c3a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71691248"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875573"
 ---
 # <a name="guidance-for-power-bi"></a>Vägledning för Power BI
 
@@ -37,6 +36,6 @@ Här hittar du vägledning och rekommenderade metoder för Power BI. Vägledning
 
 | Vägledning | Beskrivning |
 | --- | --- |
-| [Metodtips för dataflöden](/service-dataflows-best-practices.md) | Beskriver metodtips för att utforma dataflöden i Power BI. |
+| [Metodtips för dataflöden](../service-dataflows-best-practices.md) | Beskriver metodtips för att utforma dataflöden i Power BI. |
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

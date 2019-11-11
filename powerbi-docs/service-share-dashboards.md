@@ -2,7 +2,6 @@
 title: Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 description: Hur du delar Power BI-instrumentpaneler och -rapporter med dina kollegor i och utanför din organisation, och vad du behöver veta om delning.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da7b8999dfb6185b044960dde7795008d7e716f7
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 05a134f50f9a09ae5b51578a5e4e5f0a01a95740
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655102"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871511"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Dela Power BI-instrumentpaneler och -rapporter med kollegor och andra
 *Dela* är ett bra sätt att ge ett fåtal användare åtkomst till dina instrumentpaneler och rapporter. Power BI erbjuder också [flera andra sätt att samarbeta och distribuera instrumentpaneler och rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -167,5 +166,5 @@ Om du vill dela en instrumentpanel eller rapport behöver du behörighet att del
 * Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 * [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Dela en filtrerad Power BI-rapport](service-share-reports.md).
-* Har du några frågor? [Testa Power BI Community](http://community.powerbi.com/).
+* Har du några frågor? [Testa Power BI Community](https://community.powerbi.com/).
 

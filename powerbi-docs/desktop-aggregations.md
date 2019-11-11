@@ -2,7 +2,6 @@
 title: Använda aggregeringar i Power BI Desktop
 description: Utföra interaktiva analyser på stordata i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325171"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876747"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Aggregeringar i Power BI Desktop
 
@@ -60,7 +59,7 @@ Följande bild visar den här modellen.
 ![sammansättningstabell i en modell](media/desktop-aggregations/aggregations_03.jpg)
 
 > [!NOTE]
-> Tabellen **Sales Agg** är en helt vanlig tabell, så den kan läsas in på en mängd olika sätt. Till exempel kan sammansättning utföras i källdatabasen med hjälp av ETL/ELT-processer eller med [M-uttrycket](https://msdn.microsoft.com/query-bi/m/power-query-m-reference) för tabellen. Den kan använda läget Importera lagring med eller utan [Inkrementell uppdatering i Power BI Premium](service-premium-incremental-refresh.md), eller vara DirectQuery och vara optimerad för snabba frågor med hjälp av [kolumnlagringsindex](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Den här flexibiliteten gör det möjligt för balanserade arkitekturer att sprida frågebelastningen och undvika flaskhalsar.
+> Tabellen **Sales Agg** är en helt vanlig tabell, så den kan läsas in på en mängd olika sätt. Till exempel kan sammansättning utföras i källdatabasen med hjälp av ETL/ELT-processer eller med [M-uttrycket](/powerquery-m/power-query-m-function-reference) för tabellen. Den kan använda läget Importera lagring med eller utan [Inkrementell uppdatering i Power BI Premium](service-premium-incremental-refresh.md), eller vara DirectQuery och vara optimerad för snabba frågor med hjälp av [kolumnlagringsindex](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Den här flexibiliteten gör det möjligt för balanserade arkitekturer att sprida frågebelastningen och undvika flaskhalsar.
 
 ### <a name="storage-mode"></a>Lagringsläge 
 Vi fortsätter med exemplet som vi använder. Vi ställer in lagringsläget för **Sales Agg** på **Import** för att snabba på frågorna.

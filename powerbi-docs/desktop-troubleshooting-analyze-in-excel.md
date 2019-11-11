@@ -2,7 +2,6 @@
 title: Felsöka Analysera i Excel i Power BI Desktop
 description: Lösningar på vanliga problem för Analysera i Excel
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: a2116f2146072590c4cbcc7f41d941950d9692f0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 987078ae33af10e9c33b4d8a00f8e2e688be12a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543980"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865763"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Felsöka Analysera i Excel
 
@@ -24,7 +23,7 @@ Det kan finnas tillfällen när Analysera i Excel ger ett oväntat resultat elle
 > [!NOTE]
 > Det finns en separat sida som är tillägnad åt att beskriva och aktivera [Analysera i Excel](service-analyze-in-excel.md).
 > 
-> Om det uppstår ett fel som inte finns i listan nedan och det orsakar problem, kan du be att få ytterligare hjälp på [community-webbplatsen](http://community.powerbi.com/) eller så kan du skapa ett [supportärende](https://powerbi.microsoft.com/support/).
+> Om det uppstår ett fel som inte finns i listan nedan och det orsakar problem, kan du be att få ytterligare hjälp på [community-webbplatsen](https://community.powerbi.com/) eller så kan du skapa ett [supportärende](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -40,7 +39,7 @@ Den här artikeln innehåller följande felsökningsavsnitt:
 * Det går inte att dra något till området för pivottabellvärden (inga mått)
 
 ## <a name="update-excel-libraries-for-the-ole-db-provider"></a>Uppdatera Excel-bibliotek för OLE DB-providern
-För att använda **Analysera i Excel** måste datorn ha en aktuell installerad AS OLE DB-provider. Denna [community-post](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) är en bra källa för att verifiera installationen av OLE DB-providern eller för att hämta den senaste versionen.
+För att använda **Analysera i Excel** måste datorn ha en aktuell installerad AS OLE DB-provider. Denna [community-post](https://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) är en bra källa för att verifiera installationen av OLE DB-providern eller för att hämta den senaste versionen.
 
 Excel-biblioteket måste matcha din version av Windows. Om du använder 64-bitars-versionen av Windows måste du installera 64-bitars OLE DB-providern.
 

@@ -3,19 +3,18 @@ title: Åtgärda ”Företags SSL-certifikat är inte betrott”
 description: När du loggar in till Android-appen för Power BI ser du kanske meddelandet ”Det gick inte att autentisera eftersom ditt företags SSL-certifikat inte är betrott
 .": ''
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/28/2019
 ms.author: mshenhav
-ms.openlocfilehash: 19bcdf08d4eacff5e080bf1a2f987ea848e4bfb9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cde8a4bbaed9ef10940b7a102d40a8bc6009e9b9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70840917"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879465"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Åtgärda ”Företagets SSL-certifikat är inte betrott” – Power BI
 När du loggar in till Android-mobilappen för Microsoft Power BI ser du kanske meddelandet ”Det gick inte att autentisera eftersom ditt företags SSL-certifikat inte är betrott av den här enheten. Kontakta ditt företags IT-administratör.” 
@@ -41,9 +40,9 @@ Tidszon inställningarna på din enhet kan vara felaktiga.
 Kontrollera dem genom att gå till **Inställningar** > **System** > **Datum och tid**.
 
 ## <a name="custom-authentication-server"></a>Server för anpassad autentisering
-Om du använder en anpassad autentiseringsserver kanske SSL-certifikatet i företagets autentiseringsserver inte är giltigt. Kontakta din organisations IT-avdelningen att testa serverkonfigurationen för företagsautentisering genom att följa riktlinjerna i [den här artikeln](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
+Om du använder en anpassad autentiseringsserver kanske SSL-certifikatet i företagets autentiseringsserver inte är giltigt. Kontakta din organisations IT-avdelningen att testa serverkonfigurationen för företagsautentisering genom att följa riktlinjerna i [den här artikeln](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
 
 ## <a name="next-steps"></a>Nästa steg
-* [Hämta Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/) 
+* [Hämta Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/) 
 

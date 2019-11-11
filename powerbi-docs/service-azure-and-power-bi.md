@@ -3,19 +3,18 @@ title: Azure och Power BI
 description: Azure och Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 9d48054e4b41c097d51522ad7596b750bd067e6d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: db988dfd360aae00fed1f6d917376a6ba54f9089
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513350"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873227"
 ---
 # <a name="azure-and-power-bi"></a>Azure och Power BI
 
@@ -31,7 +30,7 @@ Du kan börja med en enkel anslutning till en Azure SQL Database och sedan skapa
 
 ![SQL till PBI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
-Det finns mycket mer information om du vill veta mer om [Azure SQL Database](http://azure.microsoft.com/services/sql-database/).
+Det finns mycket mer information om du vill veta mer om [Azure SQL Database](https://azure.microsoft.com/services/sql-database/).
 
 ## <a name="transform-shape-and-merge-your-cloud-data"></a>Omvandla, utforma och koppla molndata
 
@@ -43,13 +42,13 @@ Du kan dessutom skapa olika rapporter för olika målgrupper med hjälp av samma
 
 Mer information finns i följande resurser:
 
-* [Azure SQL Database](http://azure.microsoft.com/services/sql-database/)
-* [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
-* [Azure Storage](http://azure.microsoft.com/services/storage/) (blobb- och tabellagring)
+* [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)
+* [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
+* [Azure Storage](https://azure.microsoft.com/services/storage/) (blobb- och tabellagring)
 
 ## <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Arbeta komplext (och aktuellt) med hjälp av Azure-tjänsterna och Power BI
 
-Du kan expandera så mycket som du behöver med Azure och Power BI. Utnyttja databearbetning från flera källor, använd massiva realtidssystem, [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/) och [Event Hubs](http://azure.microsoft.com/services/event-hubs/) samt slå samman olika SaaS-tjänster i Business Intelligence-rapporter för att ge ditt företag en fördel.
+Du kan expandera så mycket som du behöver med Azure och Power BI. Utnyttja databearbetning från flera källor, använd massiva realtidssystem, [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/) och [Event Hubs](https://azure.microsoft.com/services/event-hubs/) samt slå samman olika SaaS-tjänster i Business Intelligence-rapporter för att ge ditt företag en fördel.
 
 ![Azure Complex](media/service-azure-and-power-bi/azure_4_complex.png)
 
@@ -57,7 +56,7 @@ Du kan expandera så mycket som du behöver med Azure och Power BI. Utnyttja dat
 
 Bädda in fantastiska interaktiva datavisualiseringar i program, webbplatser, portaler och annat, och dra nytta av dina affärsdata. Med [Power BI Embedded som en resurs i Azure](https://azure.microsoft.com/services/power-bi-embedded/) kan du enkelt bädda in interaktiva rapporter och instrumentpaneler, så att användarna får konsekventa och exakta upplevelser på alla enheter.  Power BI som används med inbäddning av analys hjälper dig via Data -> Kunskap -> Insikter -> Åtgärder.  Dessutom kan du utöka funktionerna i Power BI och Azure genom att bädda in analyser i din [organisations interna program och portaler](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
-Det finns mycket information om Power BI-API:er i [Power BI Developer-portalen](http://dev.powerbi.com).
+Det finns mycket information om Power BI-API:er i [Power BI Developer-portalen](https://dev.powerbi.com).
 
 Mer information finns i [Vad kan utvecklare göra med Power BI?](developer/what-can-you-do.md)
 

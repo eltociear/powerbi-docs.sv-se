@@ -2,19 +2,18 @@
 title: Vad är Power BI?
 description: Översikt över Power BI och hur de olika delarna fungerar ihop – Power BI Desktop, Power BI-tjänsten, Power BI Mobile, rapportservern och Power BI Embedded.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 17c352a28561278ae282d76f725322ad800fb76d
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 9da9465bea8512b541d3f1af3983df70d184ac26
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73064455"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875661"
 ---
 # <a name="what-is-power-bi"></a>Vad är Power BI?
 **Power BI** är en samling programvarutjänster, appar och kopplingar som arbetar tillsammans för att förvandla dina orelaterade datakällor till sammanhängande, visuellt fördjupande och interaktiva insikter. Dina data kan finnas i ett Excel-kalkylblad eller i en samling molnbaserade och lokala hybridinformationslager. Med Power BI kan du enkelt ansluta till dina datakällor, visualisera och upptäcka det som är viktigt och dela resultat med alla du vill.

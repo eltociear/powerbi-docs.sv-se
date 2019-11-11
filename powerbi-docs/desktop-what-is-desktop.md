@@ -2,7 +2,6 @@
 title: Vad är Power BI Desktop?
 description: Läs om vad Power BI Desktop är och hur du kommer igång med det
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 01e5effcf5f72dd110005815e2ba86c9a6731a70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141985"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865131"
 ---
 # <a name="what-is-power-bi-desktop"></a>Vad är Power BI Desktop?
 
@@ -100,4 +99,4 @@ När du har valt **Publicera**, ansluter Power BI Desktop dig till **Power BI-tj
 Om du vill komma igång med **Power BI Desktop** är det första du behöver göra att ladda ned och installera programmet. Det finns två sätt att hämta **Power BI Desktop**:
 
 * [Hämta Power BI Desktop från webben](desktop-get-the-desktop.md)
-* [Hämta Power BI Desktop från Windows Store](http://aka.ms/pbidesktopstore)
+* [Hämta Power BI Desktop från Windows Store](https://aka.ms/pbidesktopstore)

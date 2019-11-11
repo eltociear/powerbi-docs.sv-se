@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 629c53358f757002f2b3dcda468641bbaaa2f4d4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 5bc0d3bbfb2c2b67b56e6406646f6131a360b97d
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70166789"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73800164"
 ---
 En viktig skillnad mellan **DAX** och Excel-formelspråket är att du kan skicka *hela tabeller* mellan uttryck med DAX i stället för begränsas till ett enstaka värde. En kraftfull effekt är att DAX låter dig filtrera tabeller i uttryck och sedan arbeta med de filtrerade värdena.
 
@@ -42,7 +42,7 @@ Till exempel innehåller Power BI och DAX värden som inte är korrekt korsindex
 
 Du kan också skapa hela beräknade tabeller med hjälp av DAX-funktioner. Beräknade tabeller som skapats med hjälp av DAX kräver en **namn**- och en **tabell**funktion. Samma funktioner är tillgängliga för beräknade tabeller som för andra tabeller, inklusive relationer.
 
-> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

@@ -2,7 +2,6 @@
 title: Ansluta till datakällor i Power BI Desktop
 description: Ansluta till datakällor i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,15 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a582eb5c160685784c6db497353f92d2dd3d2cf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b9e006cb14d391b82c7a1f48ba760ad9c363062c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514121"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878487"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Ansluta till datakällor i Power BI Desktop
-Med Power BI Desktop kan du enkelt ansluta till den ständigt växande världen av data. Om du inte har Power BI Desktop, kan du [hämta](http://go.microsoft.com/fwlink/?LinkID=521662) och installera det.
+Med Power BI Desktop kan du enkelt ansluta till den ständigt växande världen av data. Om du inte har Power BI Desktop, kan du [hämta](https://go.microsoft.com/fwlink/?LinkID=521662) och installera det.
 
 I Power BI Desktop finns det *många olika typer* av datakällor. Följande bild visar hur du ansluter till data, genom att välja fliken **Arkiv** och sedan **Hämta data\> Mer**.
 
@@ -32,7 +31,7 @@ Anta att du går i pension – du vill bo där solen skiner, skatterna är låga
 
 I båda fallen hittar du en webbresurs som har intressant information om dessa ämnen med mera:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Du väljer **Hämta data \> Webb** och anger adressen.
 
@@ -75,7 +74,7 @@ Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följ
 * [Forma och kombinera data i Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)   
 
-Vill du ge oss feedback? Toppen – använd menyalternativet **Skicka in en idé** i Power BI Desktop eller besök [Feedback från communityn](http://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi hoppas att få höra från dig!
+Vill du ge oss feedback? Toppen – använd menyalternativet **Skicka in en idé** i Power BI Desktop eller besök [Feedback från communityn](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi hoppas att få höra från dig!
 
 ![](media/desktop-connect-to-data/sendfeedback.png)
 

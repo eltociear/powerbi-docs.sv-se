@@ -2,7 +2,6 @@
 title: Kom igång med att formatera Power BI visualiseringar
 description: Anpassa visualiseringens rubrik, bakgrund och teckenförklaring
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6228ed70dd78ffca6cd3c8803518b2b27674576f
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 011e2b6d3bf5cc998f7db76e96536d2ddab09888
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389912"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880854"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Anpassa visualiseringens rubrik, bakgrund och förklaring
 
@@ -167,4 +166,4 @@ Här är en lista över visualiseringarna och vilka anpassningsalternativ som ä
 
 - [Grundläggande begrepp för Power BI-tjänstens användare](../consumer/end-user-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

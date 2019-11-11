@@ -3,18 +3,17 @@ title: Publicera en sidnumrerad rapport i Power BI-tjänsten
 description: I den här självstudien får du lära dig att publicera en sidnumrerad rapport i Power BI-tjänsten genom att överföra den från din lokala dator.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 81e079be6c8bec27c006c68eccb3ea1091b813df
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 6cf3cd715915b5a6f3aa41e61c01c8b5b0a7d204
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271202"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874762"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicera en sidnumrerad rapport i Power BI-tjänsten
 

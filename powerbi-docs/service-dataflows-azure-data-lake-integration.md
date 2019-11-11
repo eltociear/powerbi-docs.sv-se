@@ -2,7 +2,6 @@
 title: Dataflöden och Azure Data Lake-integrering
 description: Översikt över hur Power BI-dataflöden integrerar med Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 7532b0b381e43c6e413d27fa141c22e58dfba84e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5b13fdc1f65fe2650ea0fb4fee1be20611ac3e8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61150498"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877304"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Dataflöden och Azure Data Lake-integrering (förhandsversion)
 
@@ -97,4 +96,4 @@ Mer information om Common Data Service finns i dess översiktsartikel:
 * [CDM-mappar](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfildefinition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Och du kan alltid prova att [ställa frågor till Power BI Community](http://community.powerbi.com/).
+Och du kan alltid prova att [ställa frågor till Power BI Community](https://community.powerbi.com/).

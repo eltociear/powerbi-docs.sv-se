@@ -2,7 +2,6 @@
 title: Vanliga frågor och svar om lokal datagateway – Power BI
 description: Den här artikeln innehåller vanliga frågor och svar om lokal datagateway för Power BI. Här samlar vi vanliga frågor om gateway på ett och samma ställe för den gateway som används i Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 45a645227a5d7a18fd05738559ed0bccc0e1f7c9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867057"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872386"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Vanliga frågor och svar om lokal datagateway – Power BI
 
@@ -73,5 +72,5 @@ ms.locfileid: "68867057"
 
 * [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
 
-Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
 

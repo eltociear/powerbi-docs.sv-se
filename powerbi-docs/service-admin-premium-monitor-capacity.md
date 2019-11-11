@@ -3,19 +3,18 @@ title: Övervaka Power BI Premium-kapaciteter med appen Premium Capacity Metrics
 description: Använd Power BI-administratörsportalen och appen Power BI Premium Capacity Metrics
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 9f5e2715af5b3fd898d3c7f0486c8b75463a1c42
-ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
+ms.openlocfilehash: 3ec2d68fd7245642c67f8b12b86609683ccf69e8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70030199"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873481"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Övervaka Premium-funktioner med appen
 

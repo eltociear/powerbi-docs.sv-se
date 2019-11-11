@@ -2,7 +2,6 @@
 title: Använda gruppering i Power BI Desktop
 description: Lär dig att gruppera visuella objekt i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6b6266547704077769174c2ae0a9675503f10dca
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: d67fbacece27ab75a3add89541dad77ce51a91f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69029590"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867486"
 ---
 # <a name="use-grouping-in-power-bi-desktop"></a>Använda gruppering i Power BI Desktop
 Med **gruppering** i **Power BI Desktop** kan du gruppera ihop visuella objekt i rapporten, till exempel knappar, textrutor, formbilder och alla visuella objekt som du skapar, precis som du grupperar objekt i PowerPoint. Med gruppering av visuella objekt i en rapport kan du behandla gruppen som ett enda objekt, vilket gör att du kan flytta, ändra storlek på och arbeta med lager i rapporten enklare, snabbare och mer intuitivt.

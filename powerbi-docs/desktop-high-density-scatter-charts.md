@@ -2,7 +2,6 @@
 title: Punktdiagram med hög densitet i Power BI
 description: Punktdiagram med hög densitet i Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 928e93c724a47f48aff1f87ee51f9a8c907774d6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ae33d7aac0eb42e925e78b8b76a9d7106cdf9d20
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454289"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867449"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Högdensitetssampling i Power BI-punktdiagram
 Från och med september 2017-versionen av **Power BI Desktop** och uppdateringar av **Power BI-tjänsten**, finns en ny samplingsalgoritm tillgänglig som förbättrar hur punktdiagram visar högdensitetsdata.

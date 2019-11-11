@@ -2,7 +2,6 @@
 title: Kortvisualiseringar (stora sifferpaneler)
 description: Skapa en kortvisualisering i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 268b69362f0f8c98ba01fbd0673fc46856d54ba2
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 37b7a85534e1ad8f1f301994dea895e098758d1b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195652"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870978"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringar
 
@@ -27,7 +26,7 @@ Ett enda tal kan ibland vara det viktigaste du vill spåra i Power BI-instrument
 
 ## <a name="prerequisite"></a>Förutsättning
 
-De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
 1. Välj **Arkiv** \> **Öppna** uppe till vänster på menyraden
    

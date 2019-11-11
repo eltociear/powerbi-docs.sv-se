@@ -3,18 +3,17 @@ title: Var värd för Excel-arbetsböcker med Office Online Server (OOS) – Pow
 description: Förutom att kunna se Power BI-rapporter i webbportalen, kan Power BI-rapportserver nu vara värd för Excel-arbetsböcker med Office Online Server (OOS).
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 5585750fcd5e6237f3cb00591cf5841f91393b84
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 907e65635424b709ec2c0850e4d0d759f4ba6dd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874090"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurera rapportservern för att hantera Excel-arbetsböcker med hjälp av Office Online Server (OOS)
 
@@ -54,7 +53,7 @@ Utföra dessa procedurer på servern där du kör Office Online-Server. Den här
 
 Observera att Office Online-Server måste finnas i samma Active Directory-skog som dess användare samt eventuella externa datakällor som du planerar att använda om du planerar att använda Excel Online funktioner som använder åtkomst till externa data (till exempel Power Pivot) med Windows-baserad autentisering.
 
-1. Hämta Office Online Server från [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Filen finns under Office-produkterna på VLSC-portalen. För utveckling kan du hämta OOS från MSDN-prenumeranthämtningar.
+1. Hämta Office Online Server från [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). Filen finns under Office-produkterna på VLSC-portalen. För utveckling kan du hämta OOS från MSDN-prenumeranthämtningar.
 2. Kör Setup.exe.
 3. På sidan **Läsa licensvillkor för programvara från Microsoft** väljer du **Jag accepterar villkoren i avtalet** och väljer **Fortsätt**.
 4. På sidan **Välj filsökväg** väljer du den mapp där du vill att Office Online Server-filer ska installeras (till exempel C:\Program Files\Microsoft Office Web Apps\*) och sedan **Installera nu**. Om den angivna mappen inte finns skapas den åt dig.
@@ -69,7 +68,7 @@ Med Office Online Server-språkpaketet kan användarna visa webbaserade Office-f
 
 Följ dessa steg om du vill installera språkpaket.
 
-1. Hämta Office Online Server-språkpaketet från [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+1. Hämta Office Online Server-språkpaketet från [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=798136).
 2. Kör **wacserverlanguagepack.exe**.
 3. I guiden för Office Online Server-språkpaketetet på sidan **Läsa licensvillkor för programvara från Microsoft** väljer du **Jag accepterar villkoren i avtalet** och väljer **Fortsätt**.
 4. När installationen av Office Online Server är klar väljer du **Stäng**.
@@ -86,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parametrar**
 
-* **–InternalURL** är det fullständigt kvalificerade domännamnet (FQDN) på servern som kör Office Online Server, till exempel `http://servername.contoso.com`.
+* **–InternalURL** är det fullständigt kvalificerade domännamnet (FQDN) på servern som kör Office Online Server, till exempel `https://servername.contoso.com`.
 * **– ExternalURL** är ett FQDN som kan användas på Internet.
 * **– CertificateName** är det egna namnet för certifikatet.
 
@@ -95,12 +94,12 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 Använd kommandot New-OfficeWebAppsFarm för att skapa en ny Office Online-servergrupp som består av en enda server, som visas i följande exempel.
 
 ```powershell
-New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
+New-OfficeWebAppsFarm -InternalURL "https://servername" -AllowHttp
 ```
 
 **Parametrar**
 
-* **– InternalURL** är namnet på servern som kör Office Online Server, till exempel `http://servername`.
+* **– InternalURL** är namnet på servern som kör Office Online Server, till exempel `https://servername`.
 * **– AllowHttp** konfigurerar servergruppen för HTTP.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Kontrollera att Office Online-servergruppen har skapats
@@ -168,7 +167,7 @@ För att undvika brandväggsproblem kan behöva du öppna portarna 2382 och 2383
 
 ## <a name="configure-power-bi-report-server-to-use-the-oos-server"></a>Konfigurera Power BI-rapportservern för att använda OOS-Server
 
-På sidan **Allmänna** på **Webbplatsinställningar** anger du URL:en för OOS identifiering. Webbadressen för OOS-identifiering är *InternalUrl* som används för att distribuera OOS-servern, följt av */hosting/discovery*. Till exempel `http://servername/hosting/discovery`, för HTTP. Och `https://server.contoso.com/hosting/discovery` för HTTPS.
+På sidan **Allmänna** på **Webbplatsinställningar** anger du URL:en för OOS identifiering. Webbadressen för OOS-identifiering är *InternalUrl* som används för att distribuera OOS-servern, följt av */hosting/discovery*. Till exempel `https://servername/hosting/discovery`, för HTTP. Och `https://server.contoso.com/hosting/discovery` för HTTPS.
 
 För att komma till **Webbplatsinställningar** väljer du den **kugghjulsikonen** uppe till höger och sedan **Webbplatsinställningar**.
 
@@ -187,6 +186,6 @@ När du har angett URL:en för identifiering och väljer **Verkställ** visas en
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

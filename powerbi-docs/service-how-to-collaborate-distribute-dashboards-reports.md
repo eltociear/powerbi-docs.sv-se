@@ -3,19 +3,18 @@ title: Olika sätt att dela ditt arbete i Power BI
 description: I Power BI kan du samarbeta och dela instrumentpaneler, rapporter, paneler och appar på flera olika sätt. Varje sätt har sina fördelar.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841730"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881330"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Olika sätt att dela ditt arbete i Power BI
 
@@ -135,4 +134,4 @@ Med **Publicera på webben** kan du publicera Power BI-rapporter till hela inter
 
 Har du feedback till oss? Gå till [Power BI Community-webbplatsen](https://community.powerbi.com/) med dina förslag.
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI
 description: Lär dig hur du skapar ett dynamiskt utsnitt som du kan ändra storlek på så att det passar din rapport
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/04/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: fed4119946cb762fb4d9aee3b5300be225a6e379
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61419912"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877588"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI
 
@@ -81,4 +80,4 @@ Du kan följa samma steg för att göra en panel eller ett intervallutsnitt dyna
 ## <a name="next-steps"></a>Nästa steg
 
 - [Utsnitt i Power BI-tjänsten](visuals/power-bi-visualization-slicers.md)
-- Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+- Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

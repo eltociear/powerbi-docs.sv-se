@@ -2,7 +2,6 @@
 title: Hämta Power BI Desktop
 description: Ladda ner och installera Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7c99b00427ffe742511c0029da79b6ebde02d916
-ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
+ms.openlocfilehash: 9f503ad8d5ae7b26a87da4e1d6664315b6119652
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72511687"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878232"
 ---
 # <a name="get-power-bi-desktop"></a>Hämta Power BI Desktop
 **Power BI Desktop** låter dig skapa avancerade frågor, modeller och rapporter som visualiserar data. Med **Power BI Desktop**, kan du skapa datamodeller, skapa rapporter och dela ditt arbete genom att publicera till Power BI-tjänsten.  **Power BI Desktop** är en kostnadsfri nedladdning.
@@ -56,7 +55,7 @@ När du startar installationspaketet installeras **Power BI Desktop** som ett pr
 ## <a name="install-as-an-app-from-the-microsoft-store"></a>Installera som en app från Microsoft Store
 Du kan också hämta **Power BI Desktop** från Microsoft Store med följande länk:
 
-* [Installera **Power BI Desktop** från **Microsoft Store**](http://aka.ms/pbidesktopstore)
+* [Installera **Power BI Desktop** från **Microsoft Store**](https://aka.ms/pbidesktopstore)
 
   ![Hämta Power BI Desktop från Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
 

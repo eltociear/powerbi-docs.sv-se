@@ -2,7 +2,6 @@
 title: Hantera din datakälla – SAP HANA
 description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway. Den här artikeln är specifik för SAP HANA.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/16/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3e1ea53abeff39609515b0b615f9e000432e9c6
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 577f0b26052ecc5fbe5f4e5b4da624da2b6e06c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303185"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881733"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Hantera din datakälla – SAP HANA
 
@@ -74,5 +73,5 @@ Om du finns med på fliken **Användare** för den datakälla som konfigurerats 
 * [Felsökning av den lokala datagatewayen](/data-integration/gateway/service-gateway-tshoot)
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md) 
 
-Har du fler frågor? Fråga [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
 

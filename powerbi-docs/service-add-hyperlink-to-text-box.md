@@ -2,7 +2,6 @@
 title: Lägga till en hyperlänk i en textruta i en rapport
 description: Lägga till en hyperlänk i en textruta i Power BI Desktop och Power BI-tjänsten
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ceb1749fcbf78ac844ca1c6e4b3f08a6f4c5d3f
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832404"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873804"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Lägga till en hyperlänk i en textruta i en rapport
 Du kan lägga till en textruta i en rapport i Power BI Desktop eller Power BI-tjänsten. Du kan fästa en textruta från en rapport på en instrumentpanel eller lägga till en direkt på en instrumentpanel. Oavsett var textrutan finns kan du alltid lägga till en hyperlänk till den. Den här artikeln beskriver hur du lägger till en hyperlänk i en textruta i en rapport. 
@@ -63,5 +62,5 @@ Information om hyperlänkar i Power BI-tabeller och -matriser finns i [Lägga ti
 ## <a name="next-steps"></a>Nästa steg
 [Textrutor och figurer i Power BI-rapporter](power-bi-reports-add-text-and-shapes.md)
 
-Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 

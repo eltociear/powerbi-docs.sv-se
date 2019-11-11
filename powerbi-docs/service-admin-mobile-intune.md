@@ -2,7 +2,6 @@
 title: Konfigurera mobilappar med Microsoft Intune
 description: Så här konfigurerar du Power BI-mobilappar med Microsoft Intune. Detta omfattar att lägga till och distribuera programmet. Och hur du skapar den mobila programprincipen för att kontrollera säkerheten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b1af8c58e24ff1d95b28ea8a024c29ccdcac56b3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: abbbceb6734ecb70469efa198b6e85fce4c3e840
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075615"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857354"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfigurera mobilappar med Microsoft Intune
 
@@ -191,4 +190,4 @@ Du installerar programmet via *företagsportalappen*. Om du inte har installerat
 
 [Power BI-appar för mobila enheter](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)  
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)  

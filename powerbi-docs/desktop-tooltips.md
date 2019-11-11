@@ -2,7 +2,6 @@
 title: Använda rapportknappbeskrivningssidor i Power BI
 description: Med knappbeskrivningssidor i Power BI Desktop kan du skapa avancerade hover-baserade knappbeskrivningar för visuella objekt i rapporter
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f18ed2b0e370ad4617b7eccae4fbf043233fe4c0
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 5f6f0db28103b937d2074e6f339c9aaa61bfd688
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590532"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879645"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Skapa knappbeskrivningar baserat på rapportsidor i Power BI Desktop
 Du kan skapa visuellt avancerade **rapportknappbeskrivningar** som visas när du hovrar över visuella objekt, baserat på rapportsidor som du skapar i **Power BI Desktop**. Genom att skapa en rapportsida som fungerar som en knappbeskrivning kan dina anpassade knappbeskrivningar innehålla visuella objekt, bilder och andra samlingar av objekt som du skapar på rapportsidan. 

@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0cf85d2757dd77de854a6640f400c6dd9c70379a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431502"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73791271"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Använda delade datamängder Report Builder i Power BI
 
@@ -30,7 +30,7 @@ Här är en lista över det du behöver och inte behöver för att använda en d
 - För att få åtkomst till en Power BI-datamängd behöver du ha behörigheten Skapa för datamängden. Läs om [behörigheten Skapa](service-datasets-build-permissions.md).
 - Du behöver ingen Power BI Pro-licens för att skapa en sidnumrerad rapport i Report Builder. 
 - Du behöver dock en Power BI Pro-licens för att publicera den sidnumrerade rapporten. Du behöver även minst rollen Deltagare för en arbetsyta i en Premium-kapacitet. 
-- Valfritt: Om du vill följa med i den här artikeln laddar du ned filen[Retail Analysis sample .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), öppnar den i Power BI Desktop och lägger till en tabell med många kolumner. I fönstret **Format** inaktiverar du **Totals** (Summor). Publicera den sedan på en arbetsyta i Power BI-tjänsten.
+- Valfritt: Om du vill följa med i den här artikeln laddar du ned filen[Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), öppnar den i Power BI Desktop och lägger till en tabell med många kolumner. I fönstret **Format** inaktiverar du **Totals** (Summor). Publicera den sedan på en arbetsyta i Power BI-tjänsten.
 
     ![Summor inaktiverat](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 

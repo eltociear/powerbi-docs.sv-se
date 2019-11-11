@@ -2,7 +2,6 @@
 title: Visa bilder i en tabell eller matris i en rapport
 description: I Power BI Desktop skapar du en kolumn med hyperlänkar till bilder. I antingen Power BI Desktop eller Power BI-tjänst lägger du sedan till hyperlänkarna i en rapporttabell, -matris, -utsnitt eller -kort med flera rader för att visa bilden.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cbb04057c8065e998068dd6520539c830a659f72
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 95b1dc1be3421f19fa8220629ca2003469658480
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715554"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874489"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Visa bilder i en tabell, matris eller ett utsnitt i en rapport
 
@@ -48,5 +47,5 @@ Ett bra sätt att förbättra dina rapporter är att lägga till bilder i dem. S
 
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

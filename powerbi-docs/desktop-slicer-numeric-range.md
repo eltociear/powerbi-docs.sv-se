@@ -2,7 +2,6 @@
 title: Använd numeriska intervallutsnitt i Power BI Desktop
 description: Lär dig hur du använder ett utsnitt för att begränsa till numeriska intervall i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fa1311f93cd6b543d552070b990f1bada551a699
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 535dbe2b1765d788e59d928f7303ce4696aa163b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68306984"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879683"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Använd numeriska intervallutsnitt i Power BI Desktop
 Med numeriska intervallutsnitt kan du använda alla typer av filter på en numerisk kolumn i datamodellen. Det finns tre alternativ för att filtrera numeriska data: mellan tal, mindre än eller lika med ett tal eller större än eller lika med ett tal. Det här låter kanske simpelt, men det är ett kraftfullt sätt att filtrera data.

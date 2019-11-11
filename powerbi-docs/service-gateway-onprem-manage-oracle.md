@@ -2,7 +2,6 @@
 title: Hantera din datakälla – Oracle
 description: Hantera den lokala datagatewayen och datakällorna som tillhör denna gateway.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ac116cfb2e3f09ceab6c9f78dba33bc18e847784
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cb7856b0b5ac84684e8d0648b91e45805218cead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832466"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872469"
 ---
 # <a name="manage-your-data-source---oracle"></a>Hantera din datakälla – Oracle
 
@@ -29,11 +28,11 @@ För att gatewayen ska kunna ansluta till Oracle-servern, måste Oracle Data Pro
 
 För 32-bitars versionen av Power BI Desktop använder du följande länk för att hämta och installera 32-bitars Oracle-klient:
 
-* [32-bitars Oracle Data Access Components (ODAC) med Oracle Developer Tools för Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32-bitars Oracle Data Access Components (ODAC) med Oracle Developer Tools för Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 För 64-bitars versionen av Power BI Desktop, eller den lokala datagatewayen, använder du följande länk för att hämta och installera 64-bitars Oracle-klient:
 
-* [64-bitars ODAC 12.2c version 1 (12.2.0.1.0) för Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64-bitars ODAC 12.2c version 1 (12.2.0.1.0) för Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 När klienten har installerats behöver du konfigurera filen tnsnames.ora med rätt information för din databas. Power BI Desktop och gatewayen utgår från net_service_name som definieras i filen tnsnames.ora. Om net_service_name inte har konfigurerats kan du inte ansluta. Standardsökvägen för tnsnames.ora är `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Mer information om hur du konfigurerar tnsnames.ora-filer finns i [Oracle: Lokala namnparametrar (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
@@ -132,5 +131,5 @@ Ytterligare felsökningsinformation som är relaterad till gateway finns i [Fels
 * [Felsöka gatewayer – Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-Har du fler frågor? Fråga [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).
 

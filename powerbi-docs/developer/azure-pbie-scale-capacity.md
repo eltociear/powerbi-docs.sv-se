@@ -4,18 +4,17 @@ description: Den här artikeln beskriver hur du skalar din Power BI Embedded-kap
 services: power-bi-embedded
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 01/31/2019
-ms.openlocfilehash: b9a632fa39d320d14d1282cee5e59022a8ab0303
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a30c8cb6af80e74cbf2513c24aee55483338fb4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61388519"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875916"
 ---
 # <a name="scale-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Skala din Power BI Embedded-kapacitet på Azure Portal
 
@@ -62,4 +61,4 @@ Om du vill pausa eller starta din kapacitet läser du [Pausa och starta din Powe
 
 Om du vill börja bädda in Power BI-innehåll i ditt program läser du [Bädda in Power BI-instrumentpaneler, -rapporter och -paneler](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

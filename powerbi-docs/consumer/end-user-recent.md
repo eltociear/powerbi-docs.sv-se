@@ -2,7 +2,6 @@
 title: Visa senast besökta innehåll i Power BI-tjänsten
 description: dokumentation för senaste i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bae340f89b10253920f8e22d02b4b78c23fa2dd9
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 80c11aef2e985304c824fe1948a6bec867e6cb33
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256242"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862431"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>**Senaste** innehåll i Power BI Service-tjänsten
 Det senaste innehållet är de senaste objekten du besökte i Power BI-tjänsten, max. 20 objekt.  Dessa omfattar: instrumentpaneler, rapporter, appar och arbetsböcker.
@@ -53,5 +52,5 @@ Om du har fler än fem senast besökta objekt väljer du **se alla** för att ö
 ## <a name="next-steps"></a>Nästa steg
 [Power BI-tjänstens appar](end-user-apps.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

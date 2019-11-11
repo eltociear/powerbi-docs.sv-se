@@ -2,7 +2,6 @@
 title: 10 tips för att få hjälp med Power BI-frågor
 description: Här är 10 sätt att få hjälp när du har en fråga om hur Power BI fungerar
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 668df24e8e4df2257a78a5f7a843abc65df3ef8f
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060304"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876947"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips för att få hjälp med Power BI-frågor
 Har du någonsin blivit frustrerad över användningen av Power BI eller kämpat med att få svar på dina Power BI-frågor när du behöver dem? 
@@ -55,7 +54,7 @@ Du kan hitta ytterligare alternativ online, som exempelvis:
 * Leta efter personliga utbildningar i ”**Dashboard in a Day**”.
 
 ## <a name="7-ask-or-search-in-the-power-bi-community"></a>7 Fråga eller sök i Power BI Community
-Ställ frågor och få svar i [Power BI Community](http://community.powerbi.com). BI-experter runtom i hela världen är aktiva i gruppen. Dra nytta av deras kunskaper med hjälp av den här resursen.
+Ställ frågor och få svar i [Power BI Community](https://community.powerbi.com). BI-experter runtom i hela världen är aktiva i gruppen. Dra nytta av deras kunskaper med hjälp av den här resursen.
 
 ## <a name="8-join-or-create-a-power-bi-user-group"></a>8 Anslut till eller skapa en Power BI-användargrupp
 Anslut till en [Power BI-användargrupp](https://community.powerbi.com/t5/Power-BI-User-Groups/ct-p/Groups) och gruppen om hjälp när du har frågor. Eller starta en egen användargrupp med personer som kan hjälpa varandra, fokuserat på era behov: I ert område, för era data och i er tidszon.
@@ -70,5 +69,5 @@ Anta till exempel att du undrar om du kan dela instrumentpaneler med en säkerhe
 
 ## <a name="next-steps"></a>Nästa steg
 * [Vad är Power BI?](fundamentals/power-bi-overview.md)
-* Fråga [Power BI Community](http://community.powerbi.com/)
+* Fråga [Power BI Community](https://community.powerbi.com/)
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/)
