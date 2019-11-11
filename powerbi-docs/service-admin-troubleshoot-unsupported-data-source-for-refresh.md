@@ -2,7 +2,6 @@
 title: Felsöka datakälla utan stöd för uppdatering
 description: Felsöka datakälla utan stöd för uppdatering
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 12/06/2017
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 32c42f21eafa7118ed3977340517aeebe8c4219b
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b44dbc06c15a576174277695583f3afebb0f298a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542918"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856273"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Felsöka datakälla utan stöd för uppdatering
 Du kan se ett fel vid försök att konfigurera en datauppsättning för schemalagd uppdatering.
@@ -45,5 +44,5 @@ Om du inte är säker på vilken datakälla som användes, kan du hitta den med 
 [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

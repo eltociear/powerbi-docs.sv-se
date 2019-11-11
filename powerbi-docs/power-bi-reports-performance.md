@@ -3,19 +3,18 @@ title: Bästa praxis för Power BI-prestanda
 description: Den här artikeln innehåller anvisningar för att skapa snabba och tillförlitliga rapporter i Power BI
 author: Bhavik-MSFT
 ms.author: bhmerc
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841498"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875116"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda
 
@@ -152,7 +151,7 @@ Den lokala datagatewayen är ett bra verktyg för att ansluta Power BI-tjänsten
 
 Nätverksfördröjningen kan påverka rapportprestandan genom att öka den tid som krävs för begäranden att nå Power BI-tjänsten och för svar som ska levereras. Klienter i Power BI tilldelas en specifik region. Du kan visa din klients ”hemregion” genom att gå till powerbi.com och välja **?** överst till höger och sedan **Om Power BI**. När användare från en klient ansluter till Power BI-tjänsten, dirigeras deras begäranden alltid till den här regionen. När begäranden når Power BI-tjänsten kan tjänsten sedan skicka ytterligare begäranden, till exempel till den underliggande datakällan eller gatewayen, som också påverkas av nätverkssvarstiden.
 
-Verktyg som [Azure-hastighetstest](http://azurespeedtest.azurewebsites.net/) ger en indikation om nätverksfördröjningen mellan klienten och Azure-regionen. Sträva generellt mot att hålla datakällor, gatewayer och Power BI-klustret så nära som möjligt för att minimera effekten av nätverksfördröjningen. Om nätverksfördröjning är ett problem försöker du hitta gatewayer och datakällor som är närmare Power BI-klustret genom att placera dem på virtuella datorer.
+Verktyg som [Azure-hastighetstest](https://azurespeedtest.azurewebsites.net/) ger en indikation om nätverksfördröjningen mellan klienten och Azure-regionen. Sträva generellt mot att hålla datakällor, gatewayer och Power BI-klustret så nära som möjligt för att minimera effekten av nätverksfördröjningen. Om nätverksfördröjning är ett problem försöker du hitta gatewayer och datakällor som är närmare Power BI-klustret genom att placera dem på virtuella datorer.
 
 För att ytterligare förbättra nätverksfördröjningen kan du använda [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/). Det innebär en möjlighet att skapa snabbare och mer tillförlitliga nätverksanslutningar mellan klienter och Azure-datacenter.
 

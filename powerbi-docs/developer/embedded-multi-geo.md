@@ -3,18 +3,17 @@ title: Multi-Geo-stöd för Power BI Embedded
 description: Lär dig hur du kan distribuera innehåll till datacentra i andra regioner än Power BI Embedded.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 57f01a458bad36c73a01adb1bc62bfd5a055a337
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 093b1e430d59a6060829b63a5bcfe17a7bb43928
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61345005"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875793"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-stöd för Power BI Embedded
 
@@ -92,4 +91,4 @@ Läs mer om Power BI Embedded-kapaciteter och Multi-Geo-alternativ för alla kap
 
 * [Multi-Geo i Power BI Premium-kapaciteter](../service-admin-premium-multi-geo.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

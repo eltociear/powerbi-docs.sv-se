@@ -3,18 +3,17 @@ title: Säkerhet på radnivå (RLS) i Power BI-rapportservern
 description: Läs mer om säkerhet på radnivå (RLS) i Power BI-rapportservern.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: f43538b658c1d46984026fd936378a37d33c2e1d
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751547"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859180"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Säkerhet på radnivå (RLS) i Power BI-rapportservern
 
@@ -34,7 +33,7 @@ Som standard använder säkerhetsfiltrering på radnivå sig av enkelriktade fil
 
 Markera den här rutan när du implementerar [dynamisk säkerhet på radnivå](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) baserat på användarnamn eller inloggnings-ID. 
 
-Mer information finns i [Dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](../desktop-bidirectional-filtering.md) och det tekniska faktabladet [Skydda en Tabular BI-semantikmodell](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
+Mer information finns i [Dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](../desktop-bidirectional-filtering.md) och det tekniska faktabladet [Skydda en Tabular BI-semantikmodell](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 [!INCLUDE [rls-desktop-view-as-roles](../includes/rls-desktop-view-as-roles.md)]
 

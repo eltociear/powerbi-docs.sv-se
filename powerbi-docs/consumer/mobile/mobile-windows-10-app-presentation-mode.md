@@ -2,19 +2,18 @@
 title: Visa presentationsläge på Surface Hub, Windows 10 – Power BI
 description: Läs mer om att visa Power BI-rapporter i Surface Hub och visa Power BI-instrumentpaneler, rapporter och paneler i helskärmsläge på Windows 10-enheter.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: mshenhav
-ms.openlocfilehash: ac9072c69edfd245454e92855dcefa461e80cc23
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: abd7fd34cf2dbdc2f8f12a7f3c6de6228941af5a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61338251"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869525"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Visa rapporter och instrumentpaneler i presentationsläge på Surface Hub och Windows 10-enheter
 Du kan använda presentationsläge för att visa rapporter och instrumentpaneler i helskärmsläge på Windows 10-enheter och Surface Hub. 
@@ -54,5 +53,5 @@ Du kan avdocka verktygsfältet och dra och placera det var som helst på skärme
 
 ## <a name="next-steps"></a>Nästa steg
 * Du kan också [visa instrumentpaneler och rapporter i helskärmsläge från Power BI-tjänsten](../end-user-focus.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

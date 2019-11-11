@@ -2,7 +2,6 @@
 title: Använda Frågor och svar med live-anslutningar i Power BI
 description: Dokumentation för att använda Power BI frågor och svar med frågor med naturligt språk på live-anslutningar till Analysis Services-data och den lokala datagatewayen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 59c9488def297537cc2ea944f6c0fc4f59ba29ba
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 8bb3597d2877376431a2249428e88d56bee2c0a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720886"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871789"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivera Frågor och svar för live-anslutningar i Power BI
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Vad är den lokala datagatewayen?  Vad är en live-anslutning?
@@ -66,5 +65,5 @@ Funktionen har vissa begränsningar:
 - [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
 - [Översikt över Power BI frågor och svar](consumer/end-user-q-and-a.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

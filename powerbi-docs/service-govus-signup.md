@@ -2,7 +2,6 @@
 title: Registrering för Power BI för myndigheter i USA
 description: För USA. myndigheter i USA, lär dig hur du registrerar dig för tjänsten Power BI US Government
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ca9233f6373f8732f0996a09d7fe83ea18431f88
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: c24ed4b605b0e0d8176fc5428d6c30aa2dd131cd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715324"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872261"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrera din amerikanska myndighetsorganisation i Power BI-tjänsten
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter. Den är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.

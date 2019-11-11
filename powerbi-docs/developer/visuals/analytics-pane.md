@@ -3,19 +3,18 @@ title: Fönstret Analys i visuella Power BI-objekt
 description: I den här artikeln beskrivs hur du skapar dynamiska referenslinjer i visuella Power BI-objekt.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: 0782ea63a9833c220e4d96886d79d42af643e111
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: c5530767d37e9c9dfaf5270037d873fc4d1a58ec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307588"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880276"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Fönstret Analys i visuella Power BI-objekt
 

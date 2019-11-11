@@ -2,7 +2,6 @@
 title: Var finns min Power BI-klient?
 description: Lär dig var din Power BI-klient finns och hur den platsen har valts. Det här är viktigt att lära sig eftersom det kan påverka dina interaktioner med tjänsten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 621b15d682cf2992559f76fa9f8f18bfe68ac93b
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3f12e6f0b54f85ebd626b2bd35bf1a03d513c17a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074165"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873334"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Var finns min Power BI-klient?
 
@@ -44,5 +43,5 @@ Power BI väljer det dataområde som är närmast ditt val, vilket avgör var da
 > [!IMPORTANT]
 > Du kan inte ändra valet när du väl har skapat klientorganisationen.
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

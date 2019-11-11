@@ -3,18 +3,17 @@ title: Maskin- och programvarukrav för att installera Power BI-rapportservern
 description: I den här artikeln beskrivs minimikraven för maskin- och programvara för installation och körning av Power BI-rapportservern.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 07/23/2019
-ms.openlocfilehash: fea28cd1c6541ae9255acd4be14cc85c2c2c5bed
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: aeb47f7f2a6e2de7c8c5095561819367ab16a7e9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415371"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873923"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Maskin- och programvarukrav för att installera Power BI-rapportservern
 
@@ -24,7 +23,7 @@ I den här artikeln beskrivs minimikraven för maskin- och programvara för inst
 
 | Komponent | Krav |
 | --- | --- |
-| .NET Framework |4.6<br><br>Du kan manuellt installera .NET Framework från [Microsoft .NET Framework 4.6 (webbinstallationsprogram) för Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Mer information, rekommendationer och vägledning för .NET Framework 4.6 finns i [.NET Framework Deployment Guide for Developer (.NET Framework-distributionsguiden för utvecklare)](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 och Windows Server 2012 R2 kräver [KB2919355](http://support.microsoft.com/kb/2919355) innan du installerar .NET Framework 4.6. |
+| .NET Framework |4.6<br><br>Du kan manuellt installera .NET Framework från [Microsoft .NET Framework 4.6 (webbinstallationsprogram) för Windows](https://support.microsoft.com/kb/3045560).<br/><br/> Mer information, rekommendationer och vägledning för .NET Framework 4.6 finns i [.NET Framework Deployment Guide for Developer (.NET Framework-distributionsguiden för utvecklare)](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 och Windows Server 2012 R2 kräver [KB2919355](https://support.microsoft.com/kb/2919355) innan du installerar .NET Framework 4.6. |
 | Hårddisk |Power BI-rapportservern kräver minst 1 GB ledigt utrymme på hårddisken.<br><br>Ytterligare utrymme krävs på den databasserver som är värd för rapportserverdatabasen. |
 | Minne |**Minsta:** 1 GB<br/><br/> **Rekommenderas:** Minst 4 GB |
 | Processorhastighet |**Minst:** x64-processor: 1,4 GHz<br/><br/> **Rekommenderas:** 2,0 GHz eller snabbare |
@@ -77,6 +76,6 @@ Du kan använda en realtidsanslutning för tabellinstanser eller flerdimensionel
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

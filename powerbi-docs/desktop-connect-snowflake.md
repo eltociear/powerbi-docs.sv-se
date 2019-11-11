@@ -2,7 +2,6 @@
 title: Ansluta till ett Snowflake Computing-lager i Power BI Desktop
 description: Anslut enkelt till ett Snowflake Computing-lager i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c02eda44ec81fe31972055548996ae357bc4c4b9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513832"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876406"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Ansluta till Snowflake i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **Snowflake**-databas och använda underliggande data precis som andra datakällor i Power BI Desktop. 
 
 > [!NOTE]
-> Du *måste* också installera **Snowflake ODBC-drivrutinen** på datorer som använder anslutningsappen för **Snowflake**, med hjälp av arkitekturen som matchar installationen av  **Power BI Desktop**, 32-bitars eller 64-bitars. Följ länken nedan och [hämta lämplig Snowflake ODBC-drivrutin](http://go.microsoft.com/fwlink/?LinkID=823762).
+> Du *måste* också installera **Snowflake ODBC-drivrutinen** på datorer som använder anslutningsappen för **Snowflake**, med hjälp av arkitekturen som matchar installationen av  **Power BI Desktop**, 32-bitars eller 64-bitars. Följ länken nedan och [hämta lämplig Snowflake ODBC-drivrutin](https://go.microsoft.com/fwlink/?LinkID=823762).
 > 
 > 
 

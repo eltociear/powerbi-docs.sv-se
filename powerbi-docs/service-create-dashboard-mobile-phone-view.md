@@ -2,7 +2,6 @@
 title: Optimera en instrumentpanel för mobiltelefoner – Power BI
 description: Läs hur du skapar en anpassad vy av en instrumentpanel i Power BI-tjänsten för visning på mobiltelefoner.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 75152d546bc2dc622210d5b9e5933ee44fbdc0b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61158256"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872868"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimera en instrumentpanel för mobiltelefoner – Power BI 
 När du visar instrumentpaneler i stående läge på en telefon märker du att instrumentpanelens paneler placeras ut en i taget, alla i samma storlek. I Power BI-tjänsten kan du skapa en anpassad vy av en instrumentpanel särskilt för stående läge på mobiltelefoner. Även om du skapar en telefonvy ser du instrumentpanelen som den ser ut i tjänsten när du vänder telefonen i sidled.
@@ -59,5 +58,5 @@ Letar du efter information om visning av instrumentpaneler på en mobil enhet? P
 ## <a name="next-steps"></a>Nästa steg
 * [Skapa rapporter som är optimerade för Power BI-telefonapopar](desktop-create-phone-report.md)
 * [Skapa dynamiska visuella objekt som optimerats för alla storlekar](visuals/desktop-create-responsive-visuals.md)
-* Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

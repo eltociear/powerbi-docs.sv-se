@@ -2,7 +2,6 @@
 title: Importera Excel-arbetsböcker till Power BI Desktop
 description: Importera Excel-arbetsböcker till Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b6b74682f1c74ab78f27be857dbec42efa29347
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 96ec6349080547688914360f77cbfb2c12cb1fd8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454174"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878156"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importera Excel-arbetsböcker till Power BI Desktop
 Med **Power BI Desktop** kan du enkelt importera Excel-arbetsböcker som innehåller Power Query-frågor, Power Pivot-modeller och Power View-kalkylblad till Power BI Desktop. Rapporter och visualiseringar skapas automatiskt utifrån Excel-arbetsboken och när de importerats, kan du fortsätta att förbättra och förfina rapporterna med hjälp av Power BI Desktop med hjälp av befintliga funktioner och nya funktioner som lanseras med varje månatlig Power BI Desktop-uppdatering.

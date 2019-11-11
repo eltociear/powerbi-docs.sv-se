@@ -3,18 +3,17 @@ title: Ansluta till Power BI-rapportservern och SSRS via OAuth
 description: Lär dig hur du konfigurerar din miljö för OAuth-autentisering med Power BI-mobilappen för att ansluta till SQL Server Reporting Services 2016 eller senare.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903641"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870085"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Ansluta till Power BI-rapportservern och SSRS via OAuth
 
@@ -193,7 +192,7 @@ Utför följande steg för att konfigurera begränsad delegering.
 Medan du kan publicera appar i hanteringskonsolen för rapportåtkomst kommer vi att skapa appen via PowerShell. Här är kommandot för att lägga till appen.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parameter | Kommentarer |
@@ -243,7 +242,7 @@ Du kan aktivera multifaktorautentisering att göra din miljö ännu säkrare. L�
 
 ![Felmeddelandet ”Det gick inte att logga in på SSRS-servern”](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-Du kan ställa in [Fiddler](http://www.telerik.com/fiddler) så att den fungerar som proxy för dina mobila enheter för att se var begäran stoppades. Om du vill aktivera Fiddler-proxyn för din telefon måste du installera [CertMaker för iOS och Android](http://www.telerik.com/fiddler/add-ons) på enheten som kör Fiddler. Detta är ett tillägg från Telerik för Fiddler.
+Du kan ställa in [Fiddler](https://www.telerik.com/fiddler) så att den fungerar som proxy för dina mobila enheter för att se var begäran stoppades. Om du vill aktivera Fiddler-proxyn för din telefon måste du installera [CertMaker för iOS och Android](https://www.telerik.com/fiddler/add-ons) på enheten som kör Fiddler. Detta är ett tillägg från Telerik för Fiddler.
 
 Om inloggningen fungerar korrekt när du använder Fiddler kan det finnas ett certifikatproblem antingen med WAP-appen eller ADFS-servern. Du kan använda ett verktyg som [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) för att kontrollera att certifikaten är giltiga.
 
@@ -256,4 +255,4 @@ Om inloggningen fungerar korrekt när du använder Fiddler kan det finnas ett ce
 [Proxy för webbprogram i Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Publicera program med AD FS-förautentisering](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [Konfigurera AD FS 2016 och Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

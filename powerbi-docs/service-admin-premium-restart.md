@@ -3,19 +3,18 @@ title: Starta om en Power BI Premium-kapacitet
 description: Lär dig hur du startar om en Power BI Premium-kapacitet för att hantera prestandaproblem.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 1622e06cd7aa394d384954b393d1e547e87df10a
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 758d630a06ed0194dec69013535df53f9a2825a6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305662"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873421"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Starta om en Power BI Premium-kapacitet
 
@@ -59,4 +58,4 @@ Vi rekommenderar också att du [övervakar dina kapaciteter](service-admin-premi
 
 [Vad är Power BI Premium?](service-premium-what-is.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

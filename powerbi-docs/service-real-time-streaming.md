@@ -2,7 +2,6 @@
 title: Realtidsuppspelning i Power BI
 description: Hämta dataströmning och visuella objekt i realtid i Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f88d1e0458e6a1b3abe20c0b4dd889c037ede612
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307338"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871742"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Realtidsuppspelning i Power BI
 Med direktuppspelning i realtid för Power BI, kan du strömma data och uppdatera instrumentpaneler i realtid. Visuella objekt och instrumentpaneler som kan skapas i Power BI kan även skapas för att visa och uppdatera data och visuella objekt i realtid. Enheter och datakällor för strömmande data kan vara fabrikssensorer, sociala mediekällor, användningsstatistik för tjänsten och alla andra källor där tidskänsliga data kan insamlas eller skickas.

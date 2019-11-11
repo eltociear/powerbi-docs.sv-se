@@ -6,17 +6,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 09/16/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f2d175896876bd6ea6f76b58b0eda0e5100dcfe1
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 125838ccd53e4e5f35bbd702f8a1cf319e6c278d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060906"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855703"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
@@ -58,4 +57,4 @@ Du hittar det fullständigt kvalificerade servernamnet och databasnamnet i Azure
 * [Vad är Power BI?](fundamentals/power-bi-overview.md)  
 * [Hämta data för Power BI](service-get-data.md)  
 
-Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Redigera parameterinställningar i Power BI-tjänsten
 description: Frågeparametrar skapas i Power BI Desktop men kan granskas och uppdateras i Power BI-tjänsten
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8db6f106ecc2285cb66ff980bc72fa666456f81a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 656de2cbf318211bf2fe19f15a3867ab183f3173
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226036"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871961"
 ---
 # <a name="edit-parameter-settings-in-the-power-bi-service"></a>Redigera parameterinställningar i Power BI-tjänsten
 Rapportskapare lägger till i frågeparametrar till rapporter i Power BI Desktop. Med parametrar kan de göra så att delar av en rapport är beroende av en eller flera *parametervärden*. Rapportens skapare kan till exempel skapa en parameter som begränsar data till ett land/en region, eller en parameter som definierar godkända format för fält som datum, tid och text.

@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 6366dbe4d7c58b49b4085d80aa690fd6c64fee59
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 3966521d158c244487638be4117f98ea570e1f28
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847741"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73800162"
 ---
 Välkommen till avsnittet i den **interaktiva utbildningen** om Power BI som har utformats för att introducera **DAX**.
 
 **DAX** står för **Data Analysis Expressions** och det är formelspråket som används i hela Power BI (det används också av Power BI i bakgrunden). DAX finns även i andra system från Microsoft, till exempel Power Pivot och SSAS Tabular, men dessa kurser fokuserar på hur DAX används – och kan användas av dig – i Power BI.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX och denna interaktiva videoutbildningsserie
-Syftet med detta avsnitt av den **interaktiva utbildningen** är att lära dig grunderna i DAX – hur du förhåller dig till DAX, hur det fungerar och de mest användbara funktionerna som beskrivs av en världskänd DAX-expert med lång erfarenhet, [ Alberto Ferrari](http://www.sqlbi.com/learning-dax).
+Syftet med detta avsnitt av den **interaktiva utbildningen** är att lära dig grunderna i DAX – hur du förhåller dig till DAX, hur det fungerar och de mest användbara funktionerna som beskrivs av en världskänd DAX-expert med lång erfarenhet, [ Alberto Ferrari](https://www.sqlbi.com/learning-dax).
 
 ![Porträtt av Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
@@ -30,7 +30,7 @@ DAX använder operatöröverlagring, vilket innebär att du kan blanda datatyper
 
 Det finns en datatyp i synnerhet som du kommer troligen att arbeta med mycket i Power BI: **DateTime**. **DateTime** lagras som ett flyttalsvärde med både heltal- och decimaldelar. DateTime kan användas korrekt för beräkningar för tidsperioder som inträffar efter 1 mars 1900.
 
-> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
 > 
 > 
 

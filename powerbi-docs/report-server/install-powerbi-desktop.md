@@ -3,18 +3,17 @@ title: Installera Power BI Desktop som har optimerats för Power BI-rapportserve
 description: Lär dig att installera Power BI Desktop som har optimerats för Power BI-rapportservern
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.openlocfilehash: a97c8125af46eae193f6c592d0b3c1153ae9b50c
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2a95f8afce2762b82e73741563a29fa22b433d36
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968628"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874127"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installera Power BI Desktop som har optimerats för Power BI-rapportservern
 
@@ -55,7 +54,7 @@ Versionen av Power BI Desktop för Power BI-tjänsten har inte månaden och åre
 ## <a name="file-extension-association"></a>Association för filtillägg
 Om du installerar både Power BI Desktop och Power BI Desktop som har optimerats för Power BI-rapportservern på samma dator har den senaste installationen av Power BI Desktop en filassociation med .pbix-filer. Det innebär att den Power BI Desktop-version som installerades senast öppnas när du dubbelklickar på en pbix-fil.
 
-Om du har Power BI Desktop och sedan installerar Power BI Desktop som har optimerats för Power BI-rapportservern öppnas alla pbix-filer i Power BI Desktop som är optimerat för Power BI-rapportservern som standard. Om du hellre vill att Power BI Desktop ska vara standard för att öppna pbix-filer kan du installera om [Power BI Desktop från Microsoft Store](http://aka.ms/pbidesktopstore).
+Om du har Power BI Desktop och sedan installerar Power BI Desktop som har optimerats för Power BI-rapportservern öppnas alla pbix-filer i Power BI Desktop som är optimerat för Power BI-rapportservern som standard. Om du hellre vill att Power BI Desktop ska vara standard för att öppna pbix-filer kan du installera om [Power BI Desktop från Microsoft Store](https://aka.ms/pbidesktopstore).
 
 Du kan alltid öppna den version av Power BI Desktop som du vill använda först. Och sedan öppna filen i Power BI Desktop.
 
@@ -63,7 +62,7 @@ När du redigerar en Power BI-rapport från Power BI-rapportservern eller skapar
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-Power BI-rapporter i Power BI-rapportserver, i Power BI-tjänsten (http://app.powerbi.com) och i Power BI-mobilappen fungerar nästan likadant men några funktioner skiljer sig).
+Power BI-rapporter i Power BI-rapportserver, i Power BI-tjänsten (https://app.powerbi.com) och i Power BI-mobilappen fungerar nästan likadant men några funktioner skiljer sig).
 
 ### <a name="selecting-a-language"></a>Välja ett språk
 

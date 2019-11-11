@@ -2,7 +2,6 @@
 title: 'Självstudie: Kombinera data från Excel och en OData-feed i Power BI Desktop'
 description: 'Självstudie: Kombinera data från Excel och en OData-feed'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160387"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866094"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Självstudie: Kombinera försäljningsdata från Excel och en OData-feed
 
@@ -35,7 +34,7 @@ Du kommer att importera datauppsättningarna och utföra transformering och aggr
 
 Importera först produktdata från Excel-arbetsboken Products.xlsx till Power BI Desktop.
 
-1. [Ladda ned Excel-arbetsboken Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) och spara den som **Products.xlsx**.
+1. [Ladda ned Excel-arbetsboken Products.xlsx](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) och spara den som **Products.xlsx**.
    
 2. Välj listrutepilen bredvid **Hämta data** i menyfliksområdet **Start** i Power BI Desktop och välj sedan **Excel** från listrutan **Vanligaste**. 
    
@@ -76,7 +75,7 @@ Importera sedan beställningsdata från exemplet på försäljningssystemet Nort
    
    ![Hämta OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. I dialogrutan **OData-flöde** klistrar du in webbadressen till Northwind OData-flödet, `http://services.odata.org/V3/Northwind/Northwind.svc/`. Välj **OK**.
+2. I dialogrutan **OData-flöde** klistrar du in webbadressen till Northwind OData-flödet, `https://services.odata.org/V3/Northwind/Northwind.svc/`. Välj **OK**.
    
    ![Dialogrutan OData-feed](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -271,7 +270,7 @@ Välj diagramprodukten **Quantity per ProductName** för att se kartan och datum
 I din färdiga rapport kombineras data från Excel-filen Products.xlsx och Northwind OData-flödet i visuella objekt som hjälper dig att analysera orderinformationen för olika länder, tidsramar och produkter. När rapporten är klar, kan du [överföra den till Power BI-tjänsten](desktop-upload-desktop-files.md) för att dela den med andra Power BI-användare.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Läs andra Power BI Desktop-självstudier](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Se Power BI Desktop-videor](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Besök Power BI-forumet](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Läs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Läs andra Power BI Desktop-självstudier](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Se Power BI Desktop-videor](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Besök Power BI-forumet](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Läs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)

@@ -2,7 +2,6 @@
 title: Felsöka kapslade värden som returneras som text i Power BI-tjänsten
 description: Lär dig mer om hur du åtgärdar kapslade värden som konverteras till strängar när du använder fel sekretessinställningar för datakällan
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: 61181f9317718b6a4fb1cd73a767e4002b5b27f5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: ab40ca9c415dacf52f4d82eb2c157d57aef92f93
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544259"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871290"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Felsöka kapslade värden som returneras som text i Power BI-tjänsten
 
@@ -24,7 +23,7 @@ ms.locfileid: "72544259"
 
 Tidigare har det kunnat uppstå fall där en Power BI-rapport uppdateras korrekt på skrivbordet men inte i Power BI-tjänsten, och då har felet ”Det går inte att konvertera värdet ’[Table]’ till typen Tabell”. En av orsakerna till det här felet är att när brandväggen för datasekretess buffrar en datakälla så konverteras kapslade, icke-skalära värden (till exempel tabeller, poster, listor och funktioner) automatiskt till textvärden (till exempel ”[Table]” eller ”[Record]”).
 
-Nu när Power BI-tjänsten har stöd för att ställa in sekretessnivån (eller att helt inaktivera brandväggen) kan du undvika sådana fel genom att [konfigurera sekretessinställningarna för datakällan](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjänsten så att den inte är privat.
+Nu när Power BI-tjänsten har stöd för att ställa in sekretessnivån (eller att helt inaktivera brandväggen) kan du undvika sådana fel genom att [konfigurera sekretessinställningarna för datakällan](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjänsten så att den inte är privat.
 
 Från och med juni visas följande fel i Power BI när brandväggen buffrar en kapslad tabell/post/lista eller liknande, snarare än att de här värdena konverteras till text i bakgrunden: 
 
@@ -57,4 +56,4 @@ Om du inte kan ta bort kolumnen ska du kunna replikera det gamla beteendet genom
 `if [MyColumn] is table then "[Table]" else if [MyColumn] is record then "[Record]" else if [MyColumn] is list then "[List]" else if [MyColumn] is function then "[Function]" else [MyColumn]`
 
 Uppstår felet i Power BI Desktop om du ställer in alla sekretessinställningar för datakällan som Privat?
-I så fall ska du kunna lösa problemet genom att [konfigurera sekretessinställningarna för datakällan](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjänsten som icke privata.
+I så fall ska du kunna lösa problemet genom att [konfigurera sekretessinställningarna för datakällan](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjänsten som icke privata.

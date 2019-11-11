@@ -2,7 +2,6 @@
 title: Tips för att utforma en bra Power BI-instrumentpanel
 description: Tips för att utforma en bra Power BI-instrumentpanel
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023756"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877410"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips för att utforma en bra Power BI-instrumentpanel
 Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du börja fundera på hur du kan vidareutveckla instrumentpanelen från att vara snygg till att också vara funktionell. I allmänhet innebär det att få den viktigaste informationen att stå ut och att göra den ren och prydlig.
@@ -24,8 +23,6 @@ Nu när du har skapat en instrumentpanel och lagt till några paneler, kan du b�
 
 > [!TIP]
 > Gillar du den här instrumentpanelen? Du kan ladda ned den samt relaterade rapporter från AppSource. Gå till **Hämta data** > **Tjänster**. Sök efter **Microsoft-exempel – Försäljning och marknadsföring** > **Hämta nu**.
-
-Många av utformningsprinciperna för rapporter kan även tillämpas för instrumentpaneler. Läs vår white paper [Best design principles for reports and visualizations (De bästa utformningsprinciperna för rapporter och visualiseringar)](visuals/power-bi-visualization-best-practices.md) om du vill veta mer.
 
 Här följer några tips för instrumentpaneler.
 
@@ -85,4 +82,4 @@ Mer visualiseringsspecifika anvisningar finns i [Visualiseringstyper i Power BI]
 ## <a name="next-steps"></a>Nästa steg
 [Skapa en instrumentpanel från en rapport](service-dashboard-create.md)  
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

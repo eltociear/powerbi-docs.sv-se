@@ -2,19 +2,18 @@
 title: Fäst instrumentpanelen på startskärmen för Windows 10 – den mobila Power BI-appen
 description: Lär dig hur man fäster en Power BI-instrumentpanel på startskärmen i Windows 10 från den mobila Power BI-appen, så att du kan se viktiga mått direkt.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 78bb51a7ef2d7bd7309c7bb93c27b7e9193b85bf
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 556ca293458c6874097a4733aaed453130778848
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059413"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869845"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fäst instrumentpanelen på din Windows 10-startskärm från den mobila Power BI-appen
 Du kan fästa Power BI-instrumentpaneler på Windows startskärm från den mobila Power BI-appen för Windows 10. De blir *levande paneler*. När du trycker på panelen på startskärmen öppnas instrumentpanelen i den mobila Power BI-appen för Windows 10.
@@ -32,8 +31,8 @@ Du kan fästa Power BI-instrumentpaneler på Windows startskärm från den mobil
    ![Levande panel i Windows 10](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/pbi_win10ph_startscrn.png)
 
 ## <a name="next-steps"></a>Nästa steg
-* [Hämta den mobila Power BI-appen för Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store  
+* [Hämta den mobila Power BI-appen för Windows 10](https://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store  
 * [Kom igång med Power BI-mobilappen för Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

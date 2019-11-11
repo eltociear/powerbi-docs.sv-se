@@ -3,19 +3,18 @@ title: Använda anpassade dataanslutningar med den lokala datagatewayen
 description: Du kan använda anpassade dataanslutningar med den lokala datagatewayen.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c0ef172115dba05deb02d724b663742a2e71c13
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: c76c8fdb635db7724ffeb1a5140e9095c9b2eff5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832514"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881753"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Använda anpassade dataanslutningar med den lokala datagatewayen
 
@@ -23,7 +22,7 @@ ms.locfileid: "68832514"
 
 Med dataanslutningar för Power BI kan du ansluta till och komma åt data från ett program, en tjänst eller en datakälla. Du kan utveckla anpassade dataanslutningar och använda dem i Power BI Desktop.
 
-Mer information om hur du skapar anpassade dataanslutningar för Power BI finns på [GitHub-sidan för Data Connector SDK](http://aka.ms/dataconnectors). Den här webbplatsen innehåller information och exempel för att komma igång med Power BI och Power Query.
+Mer information om hur du skapar anpassade dataanslutningar för Power BI finns på [GitHub-sidan för Data Connector SDK](https://aka.ms/dataconnectors). Den här webbplatsen innehåller information och exempel för att komma igång med Power BI och Power Query.
 
 När du skapar rapporter i Power BI Desktop som använder anpassade dataanslutningar kan du använda den lokala datagatewayen för att uppdatera dessa rapporter från Power BI-tjänsten.
 
@@ -58,4 +57,4 @@ När det här alternativet är aktiverat visas dina anpassade anslutningar som t
 * [Konfigurera proxyinställningar för den lokala datagatewayen](/data-integration/gateway/service-gateway-proxy)
 * [Använda Kerberos för enkel inloggning (SSO) från Power BI till lokala datakällor](service-gateway-sso-kerberos.md)  
 
-Har du fler frågor? Fråga [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Fråga [Power BI Community](https://community.powerbi.com/).

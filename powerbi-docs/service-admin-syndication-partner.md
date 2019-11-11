@@ -2,7 +2,6 @@
 title: Det går inte att lägga till Power BI till en O365-partner
 description: Det går inte att lägga till Power BI till en syndikeringspartner i Office 365. Den syndikerade modellen är en inköpsmodell som används av Office 365.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bb81df81a24046820a82c00915f637ab471eb054
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 558d939582b5ac7ec67d64a9f56305326bc34d03
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074185"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856657"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det går inte att lägga till Power BI till en Office 365-partnerprenumeration
 
@@ -84,4 +83,4 @@ Om du vill aktivera ad hoc-prenumerationer kan du kontakta din partner och begä
 
 [Power BI-licensiering i din organisation](service-admin-licensing-organization.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

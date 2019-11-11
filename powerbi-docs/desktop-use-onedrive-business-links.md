@@ -2,7 +2,6 @@
 title: Använd OneDrive för företag-länkar i Power BI Desktop
 description: Använd OneDrive för företag-länkar i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8597904e2753f198b3f99cdcad6062d756b734a0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 226a5035ba6c93a7987d74ab0fea1dd4264df0b1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513783"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865295"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Använd OneDrive för företag-länkar i Power BI Desktop
 Många har Excel-arbetsböcker lagrade på sin OneDrive för företag som skulle vara perfekta att använda med Power BI Desktop. Med **Power BI Desktop** kan du använda onlinelänkar för **Excel**-filer som lagras i **OneDrive för företag** till att skapa rapporter och visuella objekt. Du kan använda ett **OneDrive för företag**-gruppkonto eller ditt personliga **OneDrive för företag**-konto.

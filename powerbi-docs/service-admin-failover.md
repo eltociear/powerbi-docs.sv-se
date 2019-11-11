@@ -2,7 +2,6 @@
 title: Vanliga frågor och svar om hög tillgänglighet, redundans och haveriberedskap i Power BI
 description: Få reda på hur Power BI-tjänsten ger hög tillgänglighet och verksamhetskontinuitet och haveriberedskap till användarna.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b8f98541b70c3573d9f31b5e59196cd37d322bb3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: dd2c94b490cdf31bd383c7100b9a1bc372f8e75f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075239"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873669"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Vanliga frågor och svar om hög tillgänglighet, redundans och haveriberedskap i Power BI
 
@@ -23,7 +22,7 @@ Den här artikeln beskriver hur Power BI-tjänsten ger hög tillgänglighet och 
 
 ## <a name="what-does-high-availability-mean-for-power-bi"></a>Vad betyder hög tillgänglighet för Power BI?
 
-Power BI är en fullständigt hanterad programvara som en tjänst (SaaS).  Microsoft utformar och driver den så att den är motståndskraftig mot infrastrukturfel och användarna alltid kan komma åt deras rapporter.  Tjänsten stöds av ett [99,9 % serviceavtal](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Power BI är en fullständigt hanterad programvara som en tjänst (SaaS).  Microsoft utformar och driver den så att den är motståndskraftig mot infrastrukturfel och användarna alltid kan komma åt deras rapporter.  Tjänsten stöds av ett [99,9 % serviceavtal](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 ## <a name="what-is-a-power-bi-failover"></a>Vad är Power BI-redundans?
 
@@ -50,7 +49,7 @@ I båda fallen fattar Power BI-ledningen beslutet att redundansväxla. Själva b
 
 ## <a name="how-do-i-know-power-bi-is-now-in-failover-mode"></a>Hur vet jag att Power BI är i redundansläge?
 
-Ett meddelande publiceras på Power BI-supportsidan ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)). Meddelandet innehåller de stora åtgärder som inte är tillgängliga under redundansen, som publicera, uppdatera, skapa instrumentpanel, duplicera instrumentpanel och ändra behörighet.
+Ett meddelande publiceras på Power BI-supportsidan ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)). Meddelandet innehåller de stora åtgärder som inte är tillgängliga under redundansen, som publicera, uppdatera, skapa instrumentpanel, duplicera instrumentpanel och ändra behörighet.
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Hur lång tid tar det för Power BI att redundansväxla?
 

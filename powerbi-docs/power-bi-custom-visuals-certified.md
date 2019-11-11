@@ -3,19 +3,18 @@ title: Certifierade visuella Power BI-objekt
 description: Krav och processer för att skicka en visualisering för certifiering. Och en lista över redan certifierade visuella Power BI-objekt.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: d0372af2727861a4af0f4ebb983cb447b020b821
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 8b119f0f3b0dfb67dc2f9cb1dfd6f19d72593d66
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021358"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874565"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -202,4 +201,4 @@ Mer information om visuella objekt finns i [Vanliga frågor och svar om certifie
 * [Anpassade visualiseringar i Power BI](power-bi-custom-visuals.md)  
 * [Publicera visuella Power BI-objekt i Microsoft AppSource](developer/office-store.md)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

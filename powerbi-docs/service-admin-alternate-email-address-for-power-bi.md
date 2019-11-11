@@ -2,7 +2,6 @@
 title: Använda en alternativ e-postadress
 description: Använda en alternativ e-postadress
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 88432f55fc8cfeefa07b66ea68437bbb23f12531
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 6549ec04d8ec47381b4639d15242e909929b52de
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64906673"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858073"
 ---
 # <a name="use-an-alternate-email-address"></a>Använda en alternativ e-postadress
 
@@ -70,4 +69,4 @@ Power BI väljer vilken e-postadress som ska användas baserat på följande sek
 
 1. Om inget av ovanstående villkor uppfylls använder Power BI UPN-adressen.
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

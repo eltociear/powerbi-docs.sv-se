@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273625"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73800163"
 ---
 Med DAX får du tillgång till många funktioner för att forma, ställa upp eller i övrigt analysera dina data. Dessa funktioner kan grupperas i en handfull kategorier:
 
@@ -97,7 +97,7 @@ DAX innehåller följande **datumfunktioner**:
 
 Dessa funktioner är användbara för att beräkna och extrahera informationen från *datumvärden* men fungerar inte för tidsinformation, som använder en datumtabell.
 
-> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Videoinnehåll tillhandahållet av [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

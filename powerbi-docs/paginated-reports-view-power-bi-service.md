@@ -3,18 +3,17 @@ title: Visa en sidnumrerad rapport i Power BI-tjänsten
 description: I den här självstudien får du lära dig hur du visar sidnumrerade rapporter i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: f80b13ccd1393e98199acbcaabfbf80ad63707c8
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 670637b59a79691e72b6093451894cc516952a6d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839586"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874679"
 ---
 # <a name="view-a-paginated-report-in-the-power-bi-service"></a>Visa en sidnumrerad rapport i Power BI-tjänsten
 

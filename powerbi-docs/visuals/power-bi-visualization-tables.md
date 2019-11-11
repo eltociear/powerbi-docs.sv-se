@@ -2,7 +2,6 @@
 title: Tabellvisualiseringar i Power BI-rapporter och instrumentpaneler
 description: Självstudier för att arbeta med tabellvisualiseringar i Power BI-rapporter och instrumentpaneler, inklusive hur du ändrar kolumnbredder.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 2bb20b9ecc43e73e85d798416fe0ddaabb98e12b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193465"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870788"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter och instrumentpaneler
 
@@ -40,13 +39,13 @@ Tabeller är ett bra alternativ:
 
 ## <a name="prerequisite"></a>Förutsättning
 
-De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Välj **Arkiv** > **Öppna** uppe till vänster på menyraden
    
-2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelanalys**
+2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelsanalys**
 
-1. Öppna **PBIX-filen Exempel för detaljhandelanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
 

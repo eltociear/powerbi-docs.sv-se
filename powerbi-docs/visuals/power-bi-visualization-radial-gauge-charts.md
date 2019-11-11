@@ -2,7 +2,6 @@
 title: Diagram med radiella mätare i Power BI
 description: Diagram med radiella mätare i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 020d7edcf6bc499623df93a9def30285a37cffc6
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: e783b4357d4db39e09aabbb1df39e1bb5c84532e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194074"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880909"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Diagram med radiella mätare i Power BI
 
@@ -49,7 +48,7 @@ Radiella mätare är ett bra val för att:
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-I den här självstudien används [Excel-filen med finansexemplet](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+I den här självstudien används [Excel-filen med finansexemplet](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Välj **Hämta data** > **Excel** uppe till vänster på menyraden
    
@@ -153,4 +152,4 @@ När du är klar med de här stegen, har du ett mätardiagram som ser ut ungefä
 
 * [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

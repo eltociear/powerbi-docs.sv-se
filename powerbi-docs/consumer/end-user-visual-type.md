@@ -2,7 +2,6 @@
 title: Typer av visuella objekt i Power BI för konsumenter
 description: Typer av visuella objekt i Power BI-tjänsten
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302511"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861329"
 ---
 # <a name="visual-types-in-power-bi"></a>Typer av visuella objekt i Power BI
 Det finns visuella objekt i rapporter, på instrumentpaneler samt i frågor och svar. Vissa av dessa typer av visuella objekt paketeras med Power BI, och vissa är *anpassade visuella objekt*. Anpassade visuella objekt skapas utanför Power BI och på ett sätt som gör att *rapportdesigners* kan lägga till dem i Power BI-rapporter och -instrumentpaneler. 
@@ -232,4 +231,4 @@ När du skriver frågor med naturligt språk i Frågor och svar för Power BI ka
 
 ## <a name="next-steps"></a>Nästa steg
 [Interagera med visuella objekt i rapporter, instrumentpaneler och appar](end-user-visualizations.md)    
-[Rätt visuell referens från sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[Rätt visuell referens från sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

@@ -2,7 +2,6 @@
 title: Använda knappar i Power BI
 description: Med hjälp av knappar i Power BI Desktop kan du skapa rapporter och instrumentpaneler som fungerar som appar, och fördjupa interaktionen med användare
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9d884df7fdfa6d0f16e7963c00a1100186d70546
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a38b54bdacd0f60ee0151ad7c1a2084cebac2a37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239491"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878721"
 ---
 # <a name="using-buttons-in-power-bi"></a>Använda knappar i Power BI
 Med hjälp av **knappar** i Power BI kan du skapa rapporter och instrumentpaneler som fungerar ungefär som appar. Därigenom skapar du en engagerande miljö så att användarna kan hovra, klicka och interagera ytterligare med Power BI-innehåll. Du kan lägga till knappar i rapporter i **Power BI Desktop**, och dela eller publicera dessa rapporter till Power BI-tjänsten för att skapa instrumentpaneler som fungerar ungefär som en app för användarna.
@@ -42,7 +41,7 @@ På följande kort i fönstret **Visualiseringar** kan du ändra formatering ell
 * Knapptext
 * Ikon
 * Kontur
-* Fyll
+* Fyllning
 
 Du väljer hur knappen ska visas för respektive läge genom att expandera ett av korten och välja listrutan som visas längst upp på kortet. På följande bild är kortet **Kontur** expanderat, med listrutan vald så att de tre lägena visas:
 

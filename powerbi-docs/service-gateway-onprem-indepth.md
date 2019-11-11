@@ -2,7 +2,6 @@
 title: Lokal datagateway – på djupet
 description: Den här artikeln ger en djupgående beskrivning av den lokala gatewayen. Här beskrivs hur tjänsten fungerar med Azure Active Directory och ditt lokala Active Directory när du arbetar med Analysis Services
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7d6948f7b5be25b7027a4aa2adaf244a2cde836a
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: e8807feeccccebab8837ac571ae4340c5c0c9b1a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729973"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881581"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Lokal datagateway – på djupet
 
@@ -106,4 +105,4 @@ Se [Starta om en gateway](/data-integration/gateway/service-gateway-restart).
 
 [Vad är den lokala datagatewayen?](service-gateway-onprem.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

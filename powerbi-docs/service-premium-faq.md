@@ -3,25 +3,24 @@ title: Vanliga frågor och svar om Power BI Premium
 description: Bläddra i en lista över vanliga frågor och svar om vad Power BI Premium kan erbjuda.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f7d23c291e77ebacd3ed19a14ed7ce2921da5673
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 31335f01bd91355587634afbde9a10df5689226b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073335"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881171"
 ---
 # <a name="power-bi-premium-faq"></a>Vanliga frågor och svar om Power BI Premium
 
 Den här artikeln behandlar vanliga frågor om Power BI Premium. En översikt finns i [Vad är Power BI Premium?](service-premium-what-is.md).
 
-* Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).
+* Om du har andra frågor [kan du fråga Power BI Community](https://community.powerbi.com/).
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
 
 **Vad är Power BI Premium?**  

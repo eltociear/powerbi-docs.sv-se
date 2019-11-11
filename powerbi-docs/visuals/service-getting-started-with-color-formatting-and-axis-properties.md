@@ -2,7 +2,6 @@
 title: Komma igång med färgformatering och axelegenskaper
 description: Komma igång med färgformatering och axelegenskaper
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 340e32d6d3b29e266d81253378feb4266c01d000
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a01598bda6520bbf0bf82175ab4256cf7d529e84
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61390111"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880683"
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Komma igång med färgformatering och axelegenskaper
 I **Power BI** kan du ändra färg på dataserier, datapunkter och även visualiseringarnas bakgrund. Du kan också ändra hur x- och y-axeln visas, vilket ger dig fullständig kontroll över hur dina instrumentpaneler och rapporter visas.

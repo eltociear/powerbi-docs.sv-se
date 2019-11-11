@@ -3,18 +3,17 @@ title: Tagga ett streckkodsfält i Power BI Desktop för mobilappar
 description: När du markera ett streckkodsfält i modellen i Power BI Desktop kan du filtrera data för streckkoder automatiskt i Power BI-appen på din iPhone.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2018
 LocalizationGroup: Model your data
-ms.openlocfilehash: 43d722e6667114ce5c3705270a0b55b541685108
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d2b034d6e58f98169a5b1b260571001d5a929f28
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61293583"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866587"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-the-mobile-apps"></a>Tagga streckkoder i Power BI Desktop för mobilappar
 
@@ -48,5 +47,5 @@ Följande streckkoder kan läsas av Power BI om du taggar dem i en Power BI-rapp
 * [Skanna en streckkod från Power BI-appen på din iPhone](consumer/mobile/mobile-apps-scan-barcode-iphone.md)
 * [Problem med avläsning av streckkoderna på en iPhone](consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Datakategorisering i Power BI Desktop](desktop-data-categorization.md)  
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

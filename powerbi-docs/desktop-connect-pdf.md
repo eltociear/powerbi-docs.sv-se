@@ -2,7 +2,6 @@
 title: Ansluta till en PDF-fil i Power BI Desktop
 description: Anslut enkelt till och använd data från PDF-filer i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 77a036cd1852c237c827dca07363492c94d8a272
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: d9d506052428e96ccaaed67e8b98733dd988d192
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160278"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876404"
 ---
 # <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>Ansluta till en PDF-fil i Power BI Desktop
 I Power BI Desktop kan du ansluta till en **PDF-fil** och använda inkluderade data från filen precis som andra datakällor i Power BI Desktop.

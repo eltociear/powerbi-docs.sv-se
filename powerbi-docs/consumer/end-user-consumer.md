@@ -2,7 +2,6 @@
 title: Vad är en Power BI-”konsument”?
 description: Översikt över Power BI för konsumenter (även kallade slutanvändare eller affärsanvändare).
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b1876d0990cc21d854ac96329e5ab4a5632f22d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430260"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863813"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI-tjänsten för konsumenter
 
@@ -59,6 +58,6 @@ Det betyder inte att du inte kan spara dina ändringar – det kan du. Men de ä
 ## <a name="next-steps"></a>Nästa steg
 
 [Få en genomgång av Power BI-tjänsten för användare](end-user-reading-view.md)    
-[Utbildning i Power BI-tjänsten för konsumenter](https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/)    
+[Utbildning i Power BI-tjänsten för konsumenter](https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/)    
 [Termer och begrepp för Power BI-*användare*](end-user-basic-concepts.md)    
 

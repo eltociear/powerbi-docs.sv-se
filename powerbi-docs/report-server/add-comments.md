@@ -3,18 +3,17 @@ title: Lägga till kommentarer i en rapport i Power BI-rapportserver
 description: Lär dig mer om att lägga till kommentarer i en Power BI-rapport eller en sidnumrerad rapport på en rapportserver för Power BI eller SQL Server Reporting Services.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
-ms.openlocfilehash: 87b0c3b1c50c38d69009e28513188362b52549dc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: dd469bdbfa530a1a4728494d3c06e571600dfb5f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769653"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874329"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server---power-bi-report-server"></a>Lägga till kommentarer i en rapport i en rapportserver – rapportservern för Power BI
 

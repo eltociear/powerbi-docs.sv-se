@@ -2,7 +2,6 @@
 title: Hämta data från filer med kommaavgränsade värden (.csv)
 description: Läs hur du hämtar data från CSV-filer till Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1a150c2cb4eb819b78b2b08a492087eb98bf6363
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513357"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855531"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Hämta data från filer med kommaavgränsade värden (.csv)
 ![](media/service-comma-separated-value-files/csv_icon.png)
 
-Filer med kommaavgränsade värden, ofta kallade .CSV-filer, är enkla textfiler med rader med data där varje värde är avgränsat med ett kommatecken. Dessa typer av filer kan innehålla mycket stora mängder data på en relativt liten storlek, vilket gör dem till en perfekt datakälla för Power BI. Du kan hämta en exempel-.CSV-fil [här](http://go.microsoft.com/fwlink/?LinkID=619356).
+Filer med kommaavgränsade värden, ofta kallade .CSV-filer, är enkla textfiler med rader med data där varje värde är avgränsat med ett kommatecken. Dessa typer av filer kan innehålla mycket stora mängder data på en relativt liten storlek, vilket gör dem till en perfekt datakälla för Power BI. Du kan hämta en exempel-.CSV-fil [här](https://go.microsoft.com/fwlink/?LinkID=619356).
 
 Om du har en .CSV, är det dags att få in den i din Power BI-plats som en datauppsättning där du kan börja utforska dina data, skapa instrumentpaneler och dela dina insikter med andra.
 

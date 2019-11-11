@@ -2,7 +2,6 @@
 title: Använd gruppering i Power BI Desktop
 description: Lär dig att gruppera och diskretisera element i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b8d742e9238d438775115fd1ee2e287cf0ba0388
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: eae7ffdaa6f21ed0732500539f922cf10eb7bb61
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454249"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878185"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Använd gruppering i Power BI Desktop
 När **Power BI Desktop** skapar visuella objekt sammanställer den dina data i segment (eller grupper) baserat på värdena i underliggande data. Det är ofta bra, men ibland vill du begränsa hur dessa segmentvisas. Du kanske exempelvis vill placera tre produktkategorier i en större kategori (en *grupp*). Du vill kanske se försäljningsfigurer i diskreta enheter motsvarande 1 000 000 kronor istället för jämnt fördelade med 923 983 kronor per grupp.

@@ -2,7 +2,6 @@
 title: Dela instrumentpanelen som är länkad till en Excel-fil i OneDrive – Power BI
 description: Läs om hur du delar instrumentpaneler som är anslutna till en Excel-arbetsbok på OneDrive för företag, med paneler som fästs från arbetsboken.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7157ddd66c651519f59eb964f5fcf95eb127943c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721446"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871467"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Dela en Power BI-instrumentpanel som är länkad till en Excel-fil på OneDrive
 I Power BI kan du [ansluta till Excel-arbetsböcker på OneDrive för företag](service-excel-workbook-files.md) och fästa paneler på en instrumentpanel från den arbetsboken. När du delar instrumentpanelen eller skapar ett innehållspaket som innehåller instrumentpanelen:
@@ -57,5 +56,5 @@ Att dela en instrumentpanel från en Power BI-arbetsyta liknar att dela en instr
 ## <a name="next-steps"></a>Nästa steg
 * [Fästa en panel på en Power BI-instrumentpanel från Excel](service-dashboard-pin-tile-from-excel.md)
 * [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

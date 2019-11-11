@@ -2,7 +2,6 @@
 title: Använda bokmärken i Power BI
 description: Bokmärken i Power BI Desktop kan du spara vyer och inställningar i dina rapporter och skapa artikel-liknande presentationer
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b25c09e7dc24445b5ad2ba5263542bc62891b28f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61326234"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876695"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Använda bokmärken för att dela information och skapa artiklar i Power BI 
 Med hjälp av **bokmärken** i Power BI kan du avbilda konfigurerade visningar av rapportsidan, inklusive filtrering och tillstånd för visuell information och senare gå tillbaka till det aktuella tillståndet genom att helt enkelt välja det sparade bokmärket. 

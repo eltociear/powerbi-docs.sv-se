@@ -3,18 +3,17 @@ title: Autentisera användare och hämta en Azure AD-åtkomsttoken för ditt pro
 description: Lär dig hur du registrerar ett program i Azure Active Directory för användning med inbäddning av Power BI-innehåll.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/04/2019
-ms.openlocfilehash: f0e8a9931248860e11f783d04fead6172559afc1
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: 1655843d9e3175b9c428434fd533a601cc42d847
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814278"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875739"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Hämta en Azure AD-åtkomsttoken för ditt Power BI-program
 
@@ -50,7 +49,7 @@ var @params = new NameValueCollection
     {"resource", Properties.Settings.Default.PowerBiAPI},
 
     //After user authenticates, Azure AD will redirect back to the web app
-    {"redirect_uri", "http://localhost:13526/Redirect"}
+    {"redirect_uri", "https://localhost:13526/Redirect"}
 };
 ```
 
@@ -80,7 +79,7 @@ protected void signInButton_Click(object sender, EventArgs e)
         {"resource", Properties.Settings.Default.PowerBiAPI},
 
         //After user authenticates, Azure AD will redirect back to the web app
-        {"redirect_uri", "http://localhost:13526/Redirect"}
+        {"redirect_uri", "https://localhost:13526/Redirect"}
     };
 
     //Create sign-in query string
@@ -207,4 +206,4 @@ Felmeddelande: ”'AuthenticationContext' innehåller inte någon definition fö
 
 Nu när du har rätt åtkomsttoken kan du anropa Power BI REST API för att bädda in innehåll. Mer information finns i [Så här bäddar du in ditt Power BI-innehåll](embed-sample-for-customers.md#embed-content-within-your-application).
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

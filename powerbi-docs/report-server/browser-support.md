@@ -2,19 +2,18 @@
 title: Webbläsarstöd för Power BI-rapportserver
 description: Lär dig mer om vilka webbläsarversioner som stöds för att hantera och visa Power BI-rapportservern och rapportvisningskontrollerna.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: 5a2ca653a06efbde161899602536b05c8f6ab666
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 724bd7a9a11c42520c520019f1c4a67415aa5487
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769771"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874291"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Webbläsarstöd för Power BI-rapportserver
 Lär dig mer om vilka webbläsarversioner som stöds för att hantera och visa Power BI-rapportservern och rapportvisningskontrollerna.
@@ -115,7 +114,7 @@ Använd en webbläsare som har stöd för skript är aktiverat. Om webbläsaren 
 [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

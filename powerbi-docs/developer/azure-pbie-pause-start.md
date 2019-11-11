@@ -4,18 +4,17 @@ description: Den här artikeln beskriver hur du pausar och startar en Power BI E
 services: power-bi-embedded
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 09/28/2017
-ms.openlocfilehash: 8a02654f264fb83f501679e4e205e08017f083f6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c851e76a57618ad1b683e1fa56251423b8d6eeb3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61387483"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865003"
 ---
 # <a name="pause-and-start-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Pausa och starta din Power BI Embedded-kapacitet på Azure Portal
 
@@ -78,4 +77,4 @@ Om du vill skala upp eller ned din kapacitet läser du [Skala din Power BI Embed
 
 Om du vill börja bädda in Power BI-innehåll i ditt program läser du [Bädda in Power BI-instrumentpaneler, -rapporter och -paneler](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

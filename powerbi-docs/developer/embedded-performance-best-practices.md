@@ -3,18 +3,17 @@ title: Bästa praxis för Power BI Embedded-prestanda
 description: Den här artikeln innehåller riktlinjer för bästa praxis för inbäddad analys
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 93c26d64193346b9b2db52bb2d0a0bbe32a4e97b
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: c3e2327131ae82fa025236c9242476466b6d9074
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305718"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864062"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bästa praxis för Power BI Embedded-prestanda
 

@@ -2,7 +2,6 @@
 title: Organisera arbete på de nya arbetsytorna i Power BI
 description: Lär dig mer om de nya arbetsytorna, som är samlingar av instrumentpaneler och rapporter som skapats för att förse din organisation med statistik.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 8ff32c2559570514f775d15d7da3f787ab85970a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020675"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872044"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organisera arbete på de nya arbetsytorna i Power BI
 
@@ -146,7 +145,7 @@ Vissa funktioner fungerar annorlunda i de nya arbetsytorna jämfört med de aktu
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
- **Påverkas länkar till befintligt innehåll av den allmänna tillgängligheten för den nya arbetsyteupplevelsen?**
+**Påverkas länkar till befintligt innehåll av den allmänna tillgängligheten för den nya arbetsyteupplevelsen?**
 
 Nej. Länkar till befintliga objekt i klassiska arbetsytor påverkas inte av den nya arbetsyteupplevelsen. Den allmänna tillgänglighet för den nya arbetsyteupplevelsen ändrar den standardarbetsyta som du skapar, men inte befintliga arbetsytor. 
 
@@ -162,4 +161,4 @@ Ja. Eftersom vi stöder båda typerna av arbetsyta, sida vid sida, fortsätter v
 * [Skapa de nya arbetsytorna i Power BI](service-create-the-new-workspaces.md)
 * [Skapa klassiska arbetsytor](service-create-workspaces.md)
 * [Installera och använda appar i Power BI](service-create-distribute-apps.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

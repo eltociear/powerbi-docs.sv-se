@@ -2,19 +2,18 @@
 title: Språk som stöds i Power BI-mobilappar
 description: Se listan över språk som stöds i Power BI-mobilappar.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 97fa91dda195d6976d92b027a0f96fca8e2ccea1
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ac3ed868f23ff15441a30dd2425820d2cda0c920
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841418"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879153"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Språk som stöds i Power BI-mobilappar
 Power BI-mobilapparna stöder för närvarande följande språk:
@@ -60,6 +59,6 @@ Power BI-mobilapparna stöder för närvarande följande språk:
 
 ## <a name="next-steps"></a>Nästa steg
 * [Språk som stöds och länder/regioner för Power BI](../../supported-languages-countries-regions.md)
-* Har du några frågor? Fråga [Power BI Community](http://community.powerbi.com/).
+* Har du några frågor? Fråga [Power BI Community](https://community.powerbi.com/).
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
 

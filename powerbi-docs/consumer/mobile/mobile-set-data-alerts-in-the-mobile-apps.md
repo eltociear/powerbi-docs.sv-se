@@ -2,19 +2,18 @@
 title: Ställa in dataaviseringar i Power BI-mobilapparna
 description: Läs hur du ställer in aviseringar i Power BI-mobilappar för att meddela dig när data i en instrumentpanel ändras utanför de gränser du ställer in.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: mshenhav
-ms.openlocfilehash: 65e6414cb31c2b8234bb1f5426c7bff295263308
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61381405"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870115"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Ställa in dataaviseringar i Power BI-mobilapparna
 Gäller för:
@@ -168,5 +167,5 @@ Datakällor är ofta inställda på att uppdateras varje dag, men vissa uppdater
 ## <a name="next-steps"></a>Nästa steg
 * [Hantera aviseringar i Power BI-tjänsten](../../service-set-data-alerts.md)
 * [Power BI Mobile-meddelandecentret](mobile-apps-notification-center.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

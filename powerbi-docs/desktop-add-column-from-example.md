@@ -2,7 +2,6 @@
 title: Lägga till en kolumn från ett exempel i Power BI Desktop
 description: Skapa snabbt en ny kolumn i Power BI Desktop med befintliga kolumner som exempel
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c172ca90a849ca83a1faeed5dbab3bda96698c1a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d07cfda18f44a0872c8c9567aa29ac49a98622a7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239773"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869445"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Lägga till en kolumn från ett exempel i Power BI Desktop
 Från och med april 2017-versionen av **Power BI Desktop** kan du lägga till nya datakolumner i modellen med **Query Editor**, genom att helt enkelt ange ett eller flera exempelvärden i den nya kolumnen. Du kan skapa ett nytt kolumnexempel från aktuellt urval eller ange indata som baseras på alla (eller valda) kolumner i en viss tabell.

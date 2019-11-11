@@ -2,7 +2,6 @@
 title: 'Project Online: anslut till data via Power BI Desktop'
 description: 'Project Online: anslut till data via Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b0dc84d7b2d8da0df8a9e61a43f35898d197c188
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e3bb5f3527da11f781892fae23ae369edfe4676b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513768"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878008"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: anslut till data via Power BI Desktop
 Du kan ansluta till data i Project Online via Power BI Desktop.
 
 ## <a name="step-1-download-power-bi-desktop"></a>Steg 1: Ladda ner Power BI Desktop
-1. [Ladda ner Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521662), kör sedan installationsprogrammet för att hämta **Power BI Desktop** på din datorn.
+1. [Ladda ner Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521662), kör sedan installationsprogrammet för att hämta **Power BI Desktop** på din datorn.
 
 ## <a name="step-2-connect-to-project-online-with-odata"></a>Steg 2: Anslut till Project Online med OData
 1. Öppna **Power BI Desktop**.
@@ -41,5 +40,5 @@ Det konto som du använder för att ansluta till OData-flödet måste minst ha �
 
 Härifrån kan du välja vilka tabeller du vill ansluta till och skapa en fråga.  Vill du ha en uppfattning om hur du kommer igång?  Följande blogginlägg visar hur du skapar ett burndown-diagram från dina Project Online-data.  Blogginlägget refererar till att använda Power Query för att ansluta till Project Online, men detta gäller även för Power BI Desktop.
 
-[Skapa burndown-diagram för projekt med hjälp av Power Pivot och Power Query](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
+[Skapa burndown-diagram för projekt med hjälp av Power Pivot och Power Query](https://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
 
