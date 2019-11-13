@@ -119,6 +119,8 @@
           items:
             - name: Datakällor i Power BI Desktop
               href: desktop-data-sources.md
+            - name: Anslut till LinkedIn Sales Navigator (förhandsversion)
+              href: desktop-connect-linkedin-sales-navigator.md
             - name: Anslut till en webbsida med exempel (förhandsvisning)
               href: desktop-connect-to-web-by-example.md
             - name: Ansluta till datauppsättningar i Power BI-tjänsten
@@ -201,6 +203,8 @@
           items:
             - name: Kombinera binärfiler
               href: desktop-combine-binaries.md
+            - name: Använda AI Insights i Power BI Desktop (förhandsversion)
+              href: desktop-ai-insights.md
         - name: Modellera dina data
           items:
             - name: Datakategorisering i Power BI Desktop
@@ -339,6 +343,8 @@
               href: visuals/power-bi-visualization-card.md
             - name: Kombinationsdiagram i Power BI
               href: visuals/power-bi-visualization-combo-chart.md
+            - name: Dekompositionsträd i Power BI (förhandsversion)
+              href: visuals/power-bi-visualization-decomposition-tree.md
             - name: Ringdiagram i Power BI
               href: visuals/power-bi-visualization-doughnut-charts.md
             - name: Fyllda kartor (koropleter) i Power BI
@@ -405,6 +411,8 @@
       items:
         - name: Datatyper i Power BI Desktop
           href: desktop-data-types.md
+        - name: Använda det uppdaterade menyfliksområdet i Power BI Desktop (förhandsversion)
+          href: desktop-ribbon.md
         - name: Genvägar till formelredigeraren för Power BI Desktop
           href: desktop-formula-editor.md
         - name: Sekretessnivåer i Power BI Desktop
