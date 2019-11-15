@@ -2,19 +2,18 @@
 title: Ansluta till de tjänster du använder med Power BI
 description: Du kan ansluta till många av de tjänster som du använder för att driva verksamheten som Salesforce, Microsoft Dynamics CRM och Google Analytics.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: abecc9b0c5e450d24f29230ad75417b1494e6ce9
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160006"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873009"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Ansluta till de tjänster du använder med Power BI
 Med Power BI kan du ansluta till många av de tjänster som du använder för att driva verksamheten, som Salesforce, Microsoft Dynamics och Google Analytics. Power BI börjar med att använda dina autentiseringsuppgifter för att ansluta till tjänsten. Därefter skapas en Power BI-*arbetsyta* med en instrumentpanel och en uppsättning Power BI-rapporter som automatiskt visar dina data och ger visuella insikter om verksamheten.
@@ -36,7 +35,7 @@ När du har installerat appen kan du visa instrumentpanelen och rapporterna i ap
 ## <a name="edit-the-dashboard-and-reports"></a>Redigera instrumentpanelen och rapporterna
 När importen är klar visas den nya appen på sidan Appar.
 
-1. Välj **Appar** i det vänstra navigeringsfönstret > välj appen.
+1. Välj **Appar** i navigeringsfönstret > välj appen.
    
      ![Sidan Appar](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. Du kan ställa en fråga genom att skriva i Frågor och svar eller klicka på en panel för att öppna den underliggande rapporten. 
@@ -71,6 +70,6 @@ Om du är intresserad av att skapa mallappar som du kan distribuera själv, kan 
 ## <a name="next-steps"></a>Nästa steg
 * [Distribuera appar till kollegor](service-create-distribute-apps.md)
 * [Skapa de nya arbetsytorna i Power BI](service-create-the-new-workspaces.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
-* Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
+* Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

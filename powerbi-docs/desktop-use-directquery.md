@@ -2,7 +2,6 @@
 title: Använda DirectQuery i Power BI Desktop
 description: Använd DirectQuery, även kallat en live-anslutning i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654788"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876077"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Använda DirectQuery i Power BI Desktop
 Med **Power BI Desktop** när du ansluter till datakällan, är det alltid möjligt att importera en kopia av data till **Power BI Desktop**. En annan metod är tillgänglig för vissa datakällor: ansluta direkt till datakällan med **DirectQuery**.
@@ -70,7 +69,7 @@ Följande tre punkter ska beaktas när du använder **DirectQuery**:
       The resultset of a query to external data source has exceeded
   
   Den här situationen kan uppstå med ett enkelt diagram som innehåller en mycket hög kardinalitet-kolumn med aggregeringsalternativet inställt på *Sammanfatta inte*. Visuella objekt behöver endast ha kolumner med en kardinalitet under 1 miljon och behöver tillämpa lämpliga filter.
-* **Säkerhet** -alla användare som använder en publicerad rapport ansluter till serverdelskällan med de autentiseringsuppgifter som angetts efter publikationen till Power BI-tjänsten. Samma gäller för data som importeras: alla användare ser samma data, oavsett eventuella säkerhetsregler som definierats i serverdelskällan. Kunder som vill ha säkerhet per användare implementerat med DirectQuery-källor bör använda RLS. [Läs mer om RLS](service-admin-rls.md).
+* **Säkerhet** – Som standard kan alla användare som använder en publicerad rapport ansluta till serverdelens datakälla med autentiseringsuppgifter som anges efter publiceringen till Power BI-tjänsten. Samma gäller för data som importeras: alla användare ser samma data, oavsett eventuella säkerhetsregler som definierats i serverdelskällan. Kunder som vill att säkerhet per användare ska implementeras med DirectQuery-källor, bör antingen använda RLS eller konfigurera Kerberos-begränsad autentisering mot källan. Kerberos är inte tillgängligt för alla källor. [Läs mer om RLS](service-admin-rls.md). [Läs mer om Kerberos i DirectQuery](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos). 
 * **Funktioner som stöds** -det är inte alla funktioner i **Power BI Desktop** som stöds i **DirectQuery**-läge eller har vissa begränsningar. Dessutom finns vissa funktioner i Power BI-tjänsten (t.ex. *snabba insikter*) som inte är tillgängliga för användning med datauppsättningar i **DirectQuery**. Således ska begränsningen av dessa funktioner när du använder **DirectQuery** beaktas när du bestämmer om du vill använda **DirectQuery**.   
 
 ## <a name="publish-to-the-power-bi-service"></a>Registrera dig på Power BI-tjänsten
@@ -88,7 +87,7 @@ Power BI visar fönstret **Inställningar**. Därifrån väljer du fliken **Data
 
 Tills autentiseringsuppgifter tillhandahålls uppstår ett fel om du öppnar en publicerad rapport eller utforskar en datauppsättning som har skapats med en **DirectQuery**-anslutning till sådana datakällor.
 
-För andra datakällor än **Azure SQL Database**, **Azure SQL Data Warehouse** och **Redshift** som använder DirectQuery, måste en **lokal datagateway** vara installerad och datakällan måste vara registrerad för att upprätta en dataanslutning. Läs mer om [lokal datagateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+För andra datakällor än **Azure SQL Database**, **Azure SQL Data Warehouse** och **Redshift** som använder DirectQuery, måste en **lokal datagateway** vara installerad och datakällan måste vara registrerad för att upprätta en dataanslutning. Läs mer om [lokal datagateway](https://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Nästa steg
 Mer information om **DirectQuery** finns i följande resurser:

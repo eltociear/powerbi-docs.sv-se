@@ -2,7 +2,6 @@
 title: Azure Machine Learning-integrering i Power BI
 description: Lär dig hur du använder Machine Learning med Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9593296b0e09340fe4f62fff7a2e7722912a4216
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.openlocfilehash: 2f872825c327b8195e7a6e5516e0b533235ddc27
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259958"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872098"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Azure Machine Learning-integrering i Power BI
 
@@ -43,7 +42,7 @@ Stegen i den här artikeln beskriver hur du ger en Power BI-användaråtkomst ti
 
 1. Logga in på [Azure-portalen](https://portal.azure.com).
 
-2. Gå till sidan **Prenumerationer**. Du hittar sidan **Prenumerationer** i listan **Alla tjänster** i den vänstra navigeringsmenyn i Azure Portal.
+2. Gå till sidan **Prenumerationer**. Du hittar sidan **Prenumerationer** i listan **Alla tjänster** i navigeringsfönstrets meny i Azure-portalen.
 
     ![Sidan för Azure-prenumerationer](media/service-machine-learning-integration/machine-learning-integration_01.png)
 
@@ -68,7 +67,7 @@ Stegen i den här artikeln beskriver hur du ger en Power BI-användaråtkomst ti
 
 Dataforskare använder i första hand Python för att utveckla och distribuera även sina maskininlärningsmodeller för Machine Learning Service.  Till skillnad från Machine Learning Studio, som hjälper till att automatisera uppgiften med att skapa en schemafil för modellen, måste dataforskaren när det gäller Machine Learning Service uttryckligen skapa schemafilen med hjälp av Python.
 
-Den här schemafilen måste inkluderas i den distribuerade webbtjänsten för Machine Learning Service-modeller. För att automatiskt generera schemat för webbtjänsten måste du ange ett exempel på indata/utdata i inmatningsskriptet för den distribuerade modellen. Se underavsnittet om (valfritt) automatisk generering av Swagger-schema i dokumentationen för distribution av modeller med Azure Machine Learning Service. Länken innehåller exempelinmatningsskriptet med instruktionerna för schemagenerering. 
+Den här schemafilen måste inkluderas i den distribuerade webbtjänsten för Machine Learning Service-modeller. För att automatiskt generera schemat för webbtjänsten måste du ange ett exempel på indata/utdata i inmatningsskriptet för den distribuerade modellen. Se underavsnittet i tjänstdokumentationen om [(Valfritt) Automatisk generering av Swagger-schema för distribution av modeller med Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation). Länken innehåller exempelinmatningsskriptet med instruktionerna för schemagenerering. 
 
 Specifikt refererar funktionerna *\@input_schema* och *\@output_schema* i inmatningsskriptet till indata- och utdataexempelformaten i variablerna *input_sample* och *output_sample*, samt använder dessa exempel för att generera en OpenAPI-specifikation (Swagger) för webbtjänsten under distributionen.
 
@@ -87,7 +86,7 @@ Genom att välja knappen **Redigera** öppnas Power Query Editor för entiteter 
 
 ![Power Query Editor](media/service-machine-learning-integration/machine-learning-integration_06.png)
 
-Välj knappen **AI-insikter** i menyfliksområdet och välj sedan mappen _Azure Machine Learning-modeller_ från den vänstra navigeringsmenyn. Alla Azure ML-modeller som du har åtkomst till visas här som Power Query-funktioner. Dessutom mappas automatiskt indataparametrarna för Azure ML-modellen som parametrar för motsvarande Power Query-funktion.
+Välj knappen **Alla insikter** i menyfliksområdet och välj sedan mappen _Azure Machine Learning-modeller_ i navigeringsfönstrets meny. Alla Azure ML-modeller som du har åtkomst till visas här som Power Query-funktioner. Dessutom mappas automatiskt indataparametrarna för Azure ML-modellen som parametrar för motsvarande Power Query-funktion.
 
 Du kan ange någon av den valda entitetens kolumner som indata från listrutan för att anropa en Azure ML-modell. Du kan också ange ett konstant värde som ska användas som indata genom att klicka på kolumnikonen till vänster om dialogrutan Indata.
 

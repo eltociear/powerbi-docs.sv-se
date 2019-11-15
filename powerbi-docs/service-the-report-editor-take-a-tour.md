@@ -2,7 +2,6 @@
 title: Upptäck rapportredigeraren
 description: I Power BI Desktop och i Power BI-tjänsten är rapportredigeraren det ställe där du utformar de rapporter som slutanvändarna ser. Det fungerar på liknande sätt i de två miljöerna.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c3a5454032a4138ce3d93c490fa6b3d5a7fecec5
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 800079f20d0c16964b0e5dd5fbac5919e94317f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023723"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871345"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Upptäck rapportredigeraren i Power BI
 
@@ -34,14 +33,14 @@ I Power BI-tjänsten är rapportredigeraren endast tillgänglig i redigeringsvyn
 
 Power BI-rapportredigeraren är indelad i flera huvudavsnitt:  
 
-1. Översta navigeringsfältet
+1. Översta navigeringsfönstret
 1. Rapportarbetsytan
 1. Filterfönstret
 1. Visualiseringsfönster
 1. Fönstret Fält
 
-## <a name="1-the-top-navigation-bar"></a>1. Översta navigeringsfältet
-Det finns många åtgärder tillgängliga i det övre navigeringsfältet, och nya åtgärder läggs till hela tiden. Använd Power BI-dokumentationens innehållsförteckning eller sökrutan om du vill ha information om en viss åtgärd.
+## <a name="1-the-top-nav-pane"></a>1. Det översta navigeringsfönstret
+Det finns många åtgärder i det övre navigeringsfönstret, och nya åtgärder läggs till hela tiden. Använd Power BI-dokumentationens innehållsförteckning eller sökrutan om du vill ha information om en viss åtgärd.
 
 
 ## <a name="2-the-report-canvas"></a>2. Rapportarbetsytan
@@ -156,5 +155,5 @@ Mer om rapporter i [Power BI-tjänsten](service-report-create-new.md), [Power BI
 
 [Grundläggande begrepp för Power BI-designers](service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

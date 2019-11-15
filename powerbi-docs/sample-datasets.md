@@ -2,7 +2,6 @@
 title: Ta en rundtur bland de exempel som är tillgängliga med Power BI
 description: Exempel på innehållspaket, PBIX-filer och Excel-datauppsättningar för Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 49c16e083b2119e94f23a78b10ea014efcd70c3c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721497"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858974"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Vilka exempeldata är tillgängliga för användning med Power BI?
 Säg att du har använt Power BI och vill prova men inte har några data.  Eller så har du kanske en datamängd. Eftersom du ännu inte vet hur Power BI fungerar oroar du dig kanske för att du på något sätt ska skada datamängden?
@@ -116,16 +115,16 @@ Nu när du har dessa data är du på god väg.  Prova några av våra självstud
 ## <a name="the-power-bi-samples-as-excel-files"></a>Power BI-exemplen som Excel-filer
 Varje exempel på innehållspaket är också tillgängligt som en Excel-arbetsbok. Excel-arbetsböcker är avsedda att användas med Power BI-tjänsten.  
 
-1. Hämta filer en och en med länkarna nedan, eller [hämta en zip-fil med alla exempelfilerna](http://go.microsoft.com/fwlink/?LinkId=535020). Om du är en avancerad användare kanske du vill hämta Excel-arbetsböcker för att utforska eller redigera datamodellerna.
+1. Hämta filer en och en med länkarna nedan, eller [hämta en zip-fil med alla exempelfilerna](https://go.microsoft.com/fwlink/?LinkId=535020). Om du är en avancerad användare kanske du vill hämta Excel-arbetsböcker för att utforska eller redigera datamodellerna.
 
-   * [Exempel på detaljhandelsanalys](http://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Exempel på leverantörskvalitetsanalys](http://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Exempel på personalfrågor](http://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Exempel på kundlönsamhet](http://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Exempel på spårning av affärsmöjligheter](http://go.microsoft.com/fwlink/?LinkId=529782)
-   * [Exempel på IT-utgiftsanalys](http://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Exempel på anskaffningsanalys](http://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Exempel på försäljning och marknadsföring](http://go.microsoft.com/fwlink/?LinkId=529785)
+   * [Exempel på detaljhandelsanalys](https://go.microsoft.com/fwlink/?LinkId=529778)
+   * [Exempel på leverantörskvalitetsanalys](https://go.microsoft.com/fwlink/?LinkId=529779)
+   * [Exempel på personalfrågor](https://go.microsoft.com/fwlink/?LinkId=529780)
+   * [Exempel på kundlönsamhet](https://go.microsoft.com/fwlink/?LinkId=529781)
+   * [Exempel på spårning av affärsmöjligheter](https://go.microsoft.com/fwlink/?LinkId=529782)
+   * [Exempel på IT-utgiftsanalys](https://go.microsoft.com/fwlink/?LinkId=529783)
+   * [Exempel på anskaffningsanalys](https://go.microsoft.com/fwlink/?LinkId=529784)
+   * [Exempel på försäljning och marknadsföring](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Spara den hämtade filen. Det har betydelse var du sparar filen.
 
    * ![Lokalt](media/sample-datasets/power-bi-local-file2.png) **Lokalt** – Om du sparar din fil från Power BI till en lokal enhet på datorn eller en annan plats inom din organisation kan du importera den till Power BI. Filen kommer att finnas kvar på den lokala enheten, så hela filen importeras inte till Power BI. Det som händer är att en ny datamängd skapas på din Power BI-webbplats samt att data och i vissa fall datamodellen läses in i datamängden. Om din fil innehåller rapporter kommer de rapporterna att visas på din Power BI-webbplats under Rapporter.
@@ -154,7 +153,7 @@ Varje exempel på innehållspaket är också tillgängligt som en Excel-arbetsbo
 
     ![Importera eller Anslut](media/sample-datasets/power-bi-import.png)
 9. Om du väljer **Importera**, importerar Power BI exempelarbetsboken och lägger till den som en ny datauppsättning med namnet **Exempel på anskaffningsanalys**.  Om arbetsboken har Power View-blad, -tabeller eller -områden eller en datamodell, skapar Power BI även en rapport (med samma namn). Och om du inte redan har en instrumentpanel öppen, skapar Power BI en ny instrumentpanel. (Om du hade en instrumentpanel öppen när du klickade på **Hämta data**, visas en ny tom panel på instrumentpanelen.  Om du klickar på denna panel kommer du till rapporten för den datauppsättning som du just lagt till). Det nya innehållet är döpt efter exemplet och är markerat med en gul asterisk.
-10. När skärmen **Datauppsättningen är klar!** visas väljer du **Visa datamängd** eller **Hämta Quick Insights**, eller så använder du det vänstra navigeringsfältet i Power BI för att hitta och öppna den associerade rapporten eller instrumentpanelen.  
+10. När skärmen **Datauppsättningen är klar!** visas väljer du **Visa datauppsättning** eller **Få snabbinsikter**. Du kan också använda navigeringsfönstret i Power BI för att hitta och öppna den associerade rapporten eller instrumentpanelen.  
 
      ![Visa datauppsättning](media/sample-datasets/power-bi-ready.png)
 
@@ -176,15 +175,15 @@ Varje exempel på innehållspaket är också tillgängligt som en Power BI PBIX-
 
 1. Hämta filer en och en via länkarna nedan. När du väljer de här länkarna sparas filerna automatiskt i mappen med nedladdningar. 
 
-   * [PBIX-filen Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-filen Exempel på leverantörskvalitetsanalys](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+   * [PBIX-filen Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-filen Exempel på leverantörskvalitetsanalys](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    <!-- Previous link doesn't work -->
-   * [PBIX-filen Exempel på personalfrågor](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [PBIX-filen Exempel på kundlönsamhet](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [PBIX-filen Exempel på spårning av affärsmöjligheter](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-filen Exempel på IT-utgiftsanalys](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-filen Exempel på anskaffningsanalys](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX-filen Exempel på försäljning och marknadsföring](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   * [PBIX-filen Exempel på personalfrågor](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   * [PBIX-filen Exempel på kundlönsamhet](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   * [PBIX-filen Exempel på spårning av affärsmöjligheter](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-filen Exempel på IT-utgiftsanalys](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-filen Exempel på anskaffningsanalys](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX-filen Exempel på försäljning och marknadsföring](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
 
 1. Från Power BI Desktop väljer du **Arkiv > Öppna** och navigerar till den plats där du sparade exemplets PBIX-fil.
 
@@ -198,4 +197,4 @@ Varje exempel på innehållspaket är också tillgängligt som en Power BI PBIX-
 
 [Datakällor för Power BI](service-get-data.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

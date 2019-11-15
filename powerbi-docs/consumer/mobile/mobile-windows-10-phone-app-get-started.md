@@ -2,19 +2,18 @@
 title: Kom igång med Power BI-mobilappen för Windows 10
 description: Power BI-mobilappen för Windows 10 ger dig uppdaterad, pekaktiverad mobil åtkomst till företagets information på din surfplatta eller telefon.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 3aff2b6a939a53a6246ed69ac5bd76dfe4f0dfe4
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: b2bfe6157653459c2d7b60b85c9f7e8a3e465e23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059711"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879056"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom igång med Power BI-mobilappen för Windows 10
 Power BI-mobilappen för Windows 10 ger Power BI till din surfplatta eller telefon. Du får aktuell, mobil åtkomst med pekfunktion till din företagsinformation. Visa och interagera med ditt företags instrumentpaneler från valfri plats – direkt från [Windows-startskärmen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -26,16 +25,16 @@ Du [skapar instrumentpaneler och rapporter i Power BI-tjänsten](../../service-g
 Sedan interagerar du med dina instrumentpaneler och rapporter, utforskar data och delar dem, allt från Power BI-mobilappen för Windows 10.
 
 ## <a name="first-things-first"></a>Vi tar det i ordning
-* [**Hämta Power BI-mobilappen för Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store.
+* [**Hämta Power BI-mobilappen för Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store.
   
   Din enhet måste köra Windows 10. Appen kan köras på enheter med minst 3 GB RAM-minne och 8 GB intern lagring.
    
 * Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Registrera dig för Power BI-tjänsten på internet
-Om du inte har registrerat dig ännu går du till [Power BI-tjänsten](http://powerbi.com/). Registrera dig för ett eget konto för att skapa och lagra instrumentpaneler och rapporter samt sammanföra dina data. Logga sedan in på Power BI från din Windows 10-enhet för att se dina egna instrumentpaneler varifrån du vill.
+Om du inte har registrerat dig ännu går du till [Power BI-tjänsten](https://powerbi.com/). Registrera dig för ett eget konto för att skapa och lagra instrumentpaneler och rapporter samt sammanföra dina data. Logga sedan in på Power BI från din Windows 10-enhet för att se dina egna instrumentpaneler varifrån du vill.
 
-1. I Power BI-tjänsten, peka på [registrering](http://go.microsoft.com/fwlink/?LinkID=513879) för att skapa ett Power BI-konto.
+1. I Power BI-tjänsten, peka på [registrering](https://go.microsoft.com/fwlink/?LinkID=513879) för att skapa ett Power BI-konto.
 2. Starta [skapa dina egna instrumentpaneler och rapporter](../../service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app"></a>Kom igång med Power BI-appen
@@ -89,7 +88,7 @@ Hitta dina instrumentpaneler, rapporter och appar snabbt genom att skriva i sök
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Hitta ditt innehåll i Power BI-mobilapparna
 Dina instrumentpaneler och rapporter lagras på olika platser i Power BI-mobilapparna beroende på var de kom från. Läs mer om [att hitta ditt innehåll i mobilapparna](mobile-apps-quickstart-view-dashboard-report.md). Dessutom kan du alltid söka efter det du har i Power BI-mobilapparna. 
 
-![Power BI-vänsternavigering](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
+![Power BI-navigeringsfönster](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Visa dina favoritinstrumentpaneler, KPI:er och rapporter
 Visa dina Power BI-favoritinstrumentpaneler tillsammans med Reporting Services-KPI:er och mobila rapporter på sidan Favoriter i mobilapparna. När du gör en instrumentpanel till en *favorit* i Power BI-mobilappen, kan du komma åt den från alla dina enheter, inklusive Power BI-tjänsten i din webbläsare. 
@@ -120,7 +119,7 @@ Här följer några saker som du kan göra i Power BI-appen för Windows 10-enhe
 * [Skapa dina egna mobila rapporter med SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx) och publicera dem till Reporting Services-webbportalen.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Ladda ned Power BI-appen](http://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store  
+* [Ladda ned Power BI-appen](https://go.microsoft.com/fwlink/?LinkID=526478) från Windows Store  
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

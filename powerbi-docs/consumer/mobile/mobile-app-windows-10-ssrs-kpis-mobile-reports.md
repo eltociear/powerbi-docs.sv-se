@@ -2,19 +2,18 @@
 title: Visa SSRS-mobila rapporter, KPI:er i Windows 10-mobilappen – Power BI
 description: Power BI-mobilappen för Windows 10 erbjuder live, pekaktiverad mobil åtkomst till viktig lokal företagsinformation.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 114cf65e8abb072ab3f0254cbd4041a43a31d1dc
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059631"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879357"
 ---
 # <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Visa Reporting Services (SSRS) mobila rapporter och KPI:er i Windows 10 Power BI-mobilappen
 Power BI-mobilappen för Windows 10 erbjuder live, pekaktiverad mobil åtkomst till din viktiga lokala företagsinformation i SQL Server 2016 Reporting Services. 
@@ -46,11 +45,11 @@ I Power BI-mobilappen för Windows 10, visar du sedan mobila rapporter och KPI:e
 Bläddra exemplen för att interagera med KPI:er och mobila rapporter.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Anslut till en Reporting Services-rapportserver
-1. Längst ner i det vänstra navigeringsfältet, trycker du på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
+1. Längst ner i navigeringsfönstret trycker du på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
 2. Tryck på **Anslut till server**.
 3. Fyll i serveradressen samt ditt användarnamn och lösenord. Använd följande format för serveradressen:
    
-     `http://<servername>/reports` eller `https://<servername>/reports`
+     `https://<servername>/reports` eller `https://<servername>/reports`
    
    > [!NOTE]
    > Inkludera **http** eller **https** framför anslutningssträngen.
@@ -60,9 +59,9 @@ Bläddra exemplen för att interagera med KPI:er och mobila rapporter.
     Tryck på **Avancerade alternativ** för att namnge servern, om du vill.
 4. Tryck på bockmarkeringen för att ansluta. 
    
-   Nu ser du servern i det vänstra navigeringsfältet.
+   Servern visas i navigeringsfönstret.
    
-   ![Servern i det vänstra navigeringsfältet](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
+   ![Server i navigeringsfönster](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
    
    >[!TIP]
    >Tryck på den globala navigeringsknappen ![Global navigeringsknapp](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) när som helst för att gå mellan dina mobila rapporter i Reporting Services och dina instrumentpaneler i Power BI-tjänsten. 
@@ -96,7 +95,7 @@ Läs mer om [favoriter i Power BI-mobilappar](mobile-apps-favorites.md).
 ## <a name="remove-a-connection-to-a-report-server"></a>Ta bort en anslutning till en rapportserver
 Du kan bara vara ansluten till en rapportserver i taget från din Power BI-mobilapp. Om du vill ansluta till en annan server, måste du koppla från den nuvarande.
 
-1. Längst ner i det vänstra navigeringsfältet, trycker du på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
+1. Längst ner i navigeringsfönstret trycker du på **Inställningar** ![Inställningsikonen](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
 2. Tryck på namnet till den server som du inte vill vara ansluten till och håll in.
 3. Tryck på **Ta bort server**.
    
@@ -111,5 +110,5 @@ Du skapar inte Reporting Services KPI:er och mobila rapporter i Power BI-appen. 
 ## <a name="next-steps"></a>Nästa steg
 * [Kom igång med Power BI-mobilappen för Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)  
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

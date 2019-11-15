@@ -12,7 +12,7 @@
         - name: Översikt
           items:
             - name: Visuella objekt i Power BI
-              href: ../power-bi-custom-visuals.md
+              href: power-bi-custom-visuals.md
         - name: Självstudier
           items:
             - name: Utveckla ett visuellt Power BI-objekt
@@ -24,11 +24,11 @@
         - name: Begrepp
           items:
             - name: Visuella objekt för organisationer i Power BI
-              href: ../power-bi-custom-visuals-organization.md
+              href: power-bi-custom-visuals-organization.md
             - name: Riktlinjer för visuella objekt för Power BI
               href: guidelines-powerbi-visuals.md
             - name: Vanliga frågor och svar om visuella objekt
-              href: ../power-bi-custom-visuals-faq.md
+              href: power-bi-custom-visuals-faq.md
             - name: Använda funktioner
               href: visuals/capabilities.md
             - name: Datavymappningar
@@ -40,12 +40,12 @@
         - name: Gör så här
           items:
             - name: Certifiera ett visuellt objekt
-              href: ../power-bi-custom-visuals-certified.md
+              href: power-bi-custom-visuals-certified.md
             - name: Publicera anpassad visuell information till AppSource
               href: office-store.md
             - name: Använd R-baserade anpassade visuella objekt i Power BI
-              href: ../desktop-r-powered-custom-visuals.md
-            - name: Tillåta interaktioner med visuella objekt
+              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+            - name: Interaktioner med visuella objekt
               href: visuals/visuals-interactions.md
             - name: Lägga till val
               href: visuals/selection-api.md
@@ -68,9 +68,7 @@
             - name: Aktivera synkronisering av utsnitt
               href: visuals/enable-sync-slicers.md
             - name: Felsöka anpassade visuella Power BI-objekt
-              href: ../power-bi-custom-visuals-troubleshoot.md
-            - name: Migrera till nya powerbi-visuals-tools
-              href: visuals/migrate-to-new-tools.md
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Referens
           items:
             - name: Landningssida
@@ -91,7 +89,7 @@
               href: 'https://powerbi.microsoft.com/developers/'
             - name: Exempel
               href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-            - name: Git-repo med anpassade visuella objekt
+            - name: Git Repo för anpassade visuella objekt
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
             - name: Skapa SSL-certifikat
               href: visuals/create-ssl-certificate.md
@@ -138,15 +136,15 @@
               href: embed-from-apps.md
             - name: Installera appar automatiskt
               href: embed-auto-install-app.md
-            - name: Skapa en Azure Active Directory-klientorganisation
+            - name: Skapa en Azure Active Directory-klient
               href: create-an-azure-active-directory-tenant.md
-            - name: Registrera en app
+            - name: Registrera ett program
               href: register-app.md
             - name: Hämta en Azure AD-åtkomsttoken
               href: get-azuread-access-token.md
             - name: Dynamisk bindning
               href: embed-dynamic-binding.md
-            - name: Bädda in Q&A
+            - name: Bädda in frågor och svar
               href: qanda.md
             - name: Felsök ditt inbäddade program
               href: embedded-troubleshoot.md
@@ -200,9 +198,9 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=851293'
             - name: Power BI-community
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
-            - name: Stack Overflow
+            - name: Dataspill
               href: 'https://go.microsoft.com/fwlink/?linkid=848281'
-    - name: Automatisering
+    - name: Automation
       expanded: true
       items:
         - name: Översikt
@@ -213,7 +211,7 @@
           items:
             - name: Skicka data till en datauppsättning
               href: walkthrough-push-data.md
-            - name: Hämta en åtkomsttoken för autentisering
+            - name: Hämta en autentiseringsåtkomsttoken
               href: walkthrough-push-data-get-token.md
             - name: Skapa en datauppsättning
               href: walkthrough-push-data-create-dataset.md
@@ -253,5 +251,5 @@
               href: 'https://powerbi.microsoft.com/en-us/developers/'
             - name: 'Power BI C# Git Repo'
               href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-            - name: Ladda ned .NET SDK
+            - name: Hämta .NET SDK
               href: 'https://go.microsoft.com/fwlink/?linkid=848274'

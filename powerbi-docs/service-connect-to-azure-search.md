@@ -2,7 +2,6 @@
 title: Anslut till Azure Search med Power BI
 description: Azure Search för Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8b7560570af4f1b459cdde8589c0afdb9194e154
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060933"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873108"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Anslut till Azure Search med Power BI
 Azure Search Traffic Analytics låter dig övervaka och förstå trafiken till din Azure Search-tjänst. Azure Search-innehållspaketet för Power BI innehåller detaljerad information om dina sökdata, inklusive sökning, indexering, statistik för tjänsten och svarstid från de senaste 30 dagarna. Mer information finns i [Azure-blogginlägget](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -25,10 +24,10 @@ Azure Search Traffic Analytics låter dig övervaka och förstå trafiken till d
 Anslut till [Azure Search-innehållspaketet](https://app.powerbi.com/getdata/services/azure-search) för Power BI.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
+1. Välj **Hämta data** längst ned i navigeringsfönstret.
    
    ![](media/service-connect-to-azure-search/pbi_getdata.png) 
-2. I rutan **tjänster** väljer du **Hämta**.
+2. I rutan **Tjänster** väljer du **Hämta**.
    
    ![](media/service-connect-to-azure-search/pbi_getservices.png) 
 3. Välj **Azure Search** \> **hämta**.
@@ -40,7 +39,7 @@ Anslut till [Azure Search-innehållspaketet](https://app.powerbi.com/getdata/ser
 5. Välj **nyckel** som autentiseringsmetod och ange din lagringskontonyckel. Klicka på **logga In** för att starta inläsningen.
    
    ![](media/service-connect-to-azure-search/creds.png)
-6. När den är klar, visas en ny instrumentpanel, en rapport och en modell i navigeringsfönstret. Välj instrumentpanelen för att se dina importerade data.
+6. När inläsningen är klar visas en ny instrumentpanel, rapport och modell i navigeringsfönstret. Välj instrumentpanelen för att visa dina importerade data.
    
     ![](media/service-connect-to-azure-search/dashboard2.png)
 

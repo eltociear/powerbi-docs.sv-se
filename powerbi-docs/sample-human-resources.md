@@ -2,7 +2,6 @@
 title: 'Exempel på personalfrågor: Ta en rundtur'
 description: 'Exempel på personalfrågor för Power BI: Ta en rundtur'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5670a8077b4de03f6eb866f6177f17cdec7d7f7
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 3f0c95673bd6a9a5af2a828869f38d32440b617a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462337"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858869"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exempel på personalfrågor för Power BI: Ta en rundtur
 
@@ -58,11 +57,11 @@ Innan du kan använda exemplet, måste du först hämta det som ett [innehållsp
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även ladda ned personalfrågeexemplet som en [.pbix-fil](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
+Du kan även ladda ned personalfrågeexemplet som en [.pbix-fil](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529780). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529780). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="new-hires"></a>Nyanställda
 Låt oss utforska nyanställda först.
@@ -87,7 +86,7 @@ Låt oss utforska nyanställda först.
 
 4. Välj olika ålder grupper och könen i diagram och utforska relationerna mellan ålder, kön, region och etnisk grupp.
 
-5. Välj **Personalfrågeexempel** i det övre navigeringsfältet för att återgå till instrumentpanelen.
+5. Välj **Personalfrågeexempel** i det övre navigeringsfönstret för att återgå till instrumentpanelen.
 
    ![Återgå till instrumentpanelen](media/sample-human-resources/power-bi-breadcrumbs.png)
 
@@ -133,7 +132,7 @@ Låt oss utforska data för aktiva anställda och tidigare anställda som inte l
 
 8. Du kan också följa samma steg för cirkeldiagrammet **Antal aktiva anställda efter kön** och ändra den till uppsägningar istället för nuvarande personal. Titta på data för frivillig uppsägning efter kön för att se om du kan hitta andra insikter.
 
-9. Välj **Personalfrågeexempel** i det övre navigeringsfältet för att återgå till instrumentpanelen. Du kan välja att spara de ändringar som du har gjort i rapporten.
+9. Välj **Personalfrågeexempel** i det övre navigeringsfönstret för att återgå till instrumentpanelen. Du kan välja att spara de ändringar som du har gjort i rapporten.
 
 ## <a name="bad-hires"></a>Dåliga anställningar
 Det senaste området att utforska är dåliga anställningar. Dåliga anställningar definieras som medarbetare som inte stannade längre än 60 dagar. Vi anställer i hög takt, men anställer vi bra kandidater?
@@ -147,7 +146,7 @@ Det senaste området att utforska är dåliga anställningar. Dåliga anställni
 
 3. Om du tittar på ringdiagrammet **Antal dåliga anställningar efter kön** och väljer olika regioner i utsnittet **Region**, ser du att den östra regionen är den enda regionen med fler kvinnliga än manliga dåliga anställningar.  
 
-4. Välj namnet på instrumentpanelen från det övre navigeringsfältet för att återgå till instrumentpanelen.
+4. Välj namnet på instrumentpanelen i det övre navigeringsfönstret för att återgå till instrumentpanelen.
 
 ## <a name="ask-a-question-in-the-dashboard-qa-box"></a>Ställa en fråga i instrumentpanelens frågeruta Frågor och svar
 I [frågerutan Frågor och svar](power-bi-tutorial-q-and-a.md) på instrumentpanelen kan du ställa en fråga om dina data med hjälp av naturligt språk. Frågor och svar kan identifiera de ord du skriver och var svaret finns i din databas.

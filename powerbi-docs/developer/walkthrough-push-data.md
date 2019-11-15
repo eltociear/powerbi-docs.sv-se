@@ -3,18 +3,17 @@ title: Skicka data till en datauppsättning
 description: Skicka data till en Power BI-datauppsättning
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222140"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875451"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Skicka data till en Power BI-datauppsättning
 
@@ -43,7 +42,7 @@ Här är åtgärderna för att skicka data till en datauppsättning:
 * [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
 * [Hämta grupper](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
-Du skapar en datauppsättning i Power BI genom att skicka en JavaScript Object Notation (JSON)-sträng till Power BI-tjänsten. Läs mer om JSON i [Introduktion till JSON](http://json.org/).
+Du skapar en datauppsättning i Power BI genom att skicka en JavaScript Object Notation (JSON)-sträng till Power BI-tjänsten. Läs mer om JSON i [Introduktion till JSON](https://json.org/).
 
 JSON-strängen för en datauppsättning har följande format:
 
@@ -112,13 +111,13 @@ Du kan använda följande datatyper för ett Power BI-tabellschema.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Mer information om att skicka data till Power BI
 
-Om du vill komma igång med att skicka data till en datauppsättning, se [Steg 1: Registrera en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) i det vänstra navigeringsfönstret.
+Om du vill komma igång med att skicka data till en datauppsättning, se [Steg 1: Registrera en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) i navigeringsfönstret.
 
 [Nästa steg >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Nästa steg
 
 [Registrera dig för Power BI](create-an-azure-active-directory-tenant.md)  
-[Introduktion till JSON](http://json.org/)  
+[Introduktion till JSON](https://json.org/)  
 [Översikt över Power BI REST API](overview-of-power-bi-rest-api.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

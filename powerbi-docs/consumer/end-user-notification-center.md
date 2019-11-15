@@ -2,21 +2,20 @@
 title: Visa meddelanden i Meddelandecentret
 description: Meddelandecentret är ett sekventiellt flöde med information som rör din Power BI-upplevelse.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/24/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e0ec01eb4d4ee8134a165d438f29baa4aee22841
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: c4feda0e502a9363900901ebe76005219587167b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716943"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863014"
 ---
 # <a name="view-power-bi-notifications"></a>Visa Power BI-meddelanden
 
@@ -31,7 +30,7 @@ Titta när Amanda granskar, hanterar och svarar på meddelanden. Följ sedan ins
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bZMSv5KAlcE" frameborder="0" allowfullscreen></iframe>
 
-
+## <a name="view-your-notifications"></a>Se dina meddelanden
 1. När du loggar in till Power BI, läggs de nya meddelanden som har skickats till dig när du var offline till ditt flöde. Om du har nya meddelanden, visar Power BI en gul bubbla med antal nya objekt.
    
    ![ikonen Nytt meddelande](./media/end-user-notification-center/power-bi-new-notification.png)
@@ -43,9 +42,9 @@ Titta när Amanda granskar, hanterar och svarar på meddelanden. Följ sedan ins
    ![Meddelandecenter](./media/end-user-notification-center/power-bi-notification-center.png)
 4. Välj X-ikonen för att stänga en avisering.
 
-### <a name="next-steps"></a>Nästa steg
+## <a name="next-steps"></a>Nästa steg
 * [Dataaviseringar i Power BI-tjänsten](end-user-alerts.md)
 * [Ställ in dataaviseringar i iPhone-appen (Power BI för iOS)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Ställ in dataaviseringar i Power BI-mobilappen för Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

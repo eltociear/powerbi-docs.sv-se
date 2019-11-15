@@ -2,19 +2,18 @@
 title: Kom igång med Power BI-mobilapp på Android-enheter
 description: Lär dig hur Android mobilappen för Microsoft Power BI ger dig Power BI i din mobil med åtkomst till företagsinformation lokalt och i molnet.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 5734c62485340417b6327f07df4abd7af3f2f185
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 9a0d15c73ed19990a44ff888b73d9c569d0dfc5f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060274"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876781"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Kom igång med Power BI-mobilapp på Android-enheter
 Android-appen för Microsoft Power BI ger mobil BI-upplevelse för Power BI, Power BI-rapportserver och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. 
@@ -34,7 +33,7 @@ Ta reda på [nyheterna i Power BI-mobilapparna](../../mobile-whats-new-in-the-mo
 
 ### <a name="get-the-app"></a>Hämta appen
 
-[Ladda ner Power BI för Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Google Play Butik.
+[Ladda ner Power BI för Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Google Play Butik.
   
 Power BI kan köras på ett antal olika Android-enheter som kör operativsystemet Android 5.0 eller senare. Om du vill kontrollera detta på din tenhet, gå till **Inställningar** > **Om enheten** > **Android-version**. 
 
@@ -44,9 +43,9 @@ Power BI kan köras på ett antal olika Android-enheter som kör operativsysteme
 Ta reda på [nyheterna i Power BI-mobilapparna](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Registrera dig för Power BI-tjänsten på internet
-Om du inte har registrerat dig ännu, går du till [Power BI-tjänsten (http://powerbi.com/)](http://powerbi.com/) för att registrera dig för ditt eget konto för att skapa och lagra instrumentpaneler och rapporter och föra samman dina data. Logga sedan in på Power BI från din Android-enhet att se dina egna instrumentpaneler varifrån du vill.
+Om du inte har registrerat dig ännu, går du till [Power BI-tjänsten (https://powerbi.com/)](https://powerbi.com/) för att registrera dig för ditt eget konto för att skapa och lagra instrumentpaneler och rapporter och föra samman dina data. Logga sedan in på Power BI från din Android-enhet att se dina egna instrumentpaneler varifrån du vill.
 
-1. I Power BI-tjänsten, peka på [registrering](http://go.microsoft.com/fwlink/?LinkID=513879) för att skapa ett Power BI-konto.
+1. I Power BI-tjänsten, peka på [registrering](https://go.microsoft.com/fwlink/?LinkID=513879) för att skapa ett Power BI-konto.
 2. Starta [skapa dina egna instrumentpaneler och rapporter](../../service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Kom igång med Power BI-appen på enheten
@@ -88,14 +87,14 @@ Du kan visa och interagera med instrumentpanelsexemplen i Power BI, men det finn
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Hitta ditt innehåll i Power BI-mobilapparna
 Dina instrumentpaneler och rapporter lagras på olika platser i Power BI-mobilapparna beroende på var de kom från. Läs mer om [att hitta ditt innehåll i mobilapparna](../../mobile-apps-quickstart-view-dashboard-report.md). Dessutom kan du alltid söka efter det du har i Power BI-mobilapparna. 
 
-![Vänster navigeringsfönster](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
+![Navigeringsfönster](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Visa dina favoritinstrumentpaneler, KPI:er och rapporter
 På sidan Favoriter i mobilapparna visas alla dina Power BI-favoritinstrumentpaneler tillsammans med KPI:er och rapporter för Power BI-rapportservern och Reporting Services. När du gör en instrumentpanel till en *favorit* i Power BI-mobilappen, kan du komma åt den från alla dina enheter, inklusive Power BI-tjänsten i din webbläsare. 
 
 * Tryck på **Favoriter**.
   
-   ![Favoriter i det vänstra navigeringsfönstret](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
+   ![Favoriter i navigeringsfönstret](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
   
    Dina Power BI-favoriter och dina favoriter från webbportalen för Power BI-rapportserver och Reporting Services finns på den här sidan.
   
@@ -135,8 +134,8 @@ Här följer några saker som du kan göra i Android-enhetsappen för Power BI m
 * Skapa [rapporter i Power BI Desktop och publicera dem på Power BI-rapportserverns](../../report-server/quickstart-create-powerbi-report.md) webbportal
 
 ### <a name="see-also"></a>Se också
-* [Hämta Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
+* [Hämta Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Android-appbutiken.
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
 

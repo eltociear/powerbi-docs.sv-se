@@ -2,20 +2,19 @@
 title: Använda formkartor i Power BI Desktop (förhandsversion)
 description: Skapa relativa jämförelser för områden med formkartor i Power BI Desktop
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amanda
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
-ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163946"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871122"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Formkartor i Power BI Desktop (förhandsgranskning)
 
@@ -61,7 +60,7 @@ Vidta följande steg för att skapa en **Formkarta**:
 3. Sedan kan du modifiera kartan med hjälp av formateringsalternativ som **Standardfärg**, **Zooma** och flera andra. Du kan också lägga till en kategoridatakolumn till **förklarings**bucketen och klassificera kartregioner utifrån kategorier.
 
 ## <a name="use-custom-maps"></a>Använda anpassade kartor
-Du kan använda anpassade kartor med **Formkarta** så länge som de finns i **TopoJSON**-format. Om kartan är i ett annat format kan du använda onlineverktyg som [**Kartformaren**](http://mapshaper.org/) för att konvertera dina *formfiler* eller *GeoJSON*-mappar till **TopoJSON**-format.
+Du kan använda anpassade kartor med **Formkarta** så länge som de finns i **TopoJSON**-format. Om kartan är i ett annat format kan du använda onlineverktyg som [**Kartformaren**](https://mapshaper.org/) för att konvertera dina *formfiler* eller *GeoJSON*-mappar till **TopoJSON**-format.
 
 För att använda din **TopoJSON**-kartfil, lägger du till ett visuellt ShapeMap-objekt i rapporten och lägger till vissa data i bucketarna *Plats* och *Färgmättning*. I rutan **Visualiseringar** med avsnittet **Format** markerat (visas som (1) i följande bild) expanderar du området **Form** och väljer **+ Lägg till karta**.
 
@@ -82,7 +81,7 @@ Man kan också göra intressanta saker med enskilda delstatskartor och visa mer 
 
 Om du vill experimentera med datauppsättningen och visualiseringen kan du hämta den ursprungliga PBIX-filen som användes för att generera rapporten med hjälp av följande länk.
 
-* [PBIX-fil för demonstration av anpassad formkarta](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [PBIX-fil för demonstration av anpassad formkarta](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Hämta kartdata
 För att snabbt hämta data till en modell så att du kan testa **formkartan** kan du kopiera en av tabellerna i slutet av den här artikeln och sedan markera **Ange data** från menyfliksområdet **Start**.
@@ -108,7 +107,7 @@ Det finns några överväganden och krav för den här förhandsversionen av **F
 * **Formkartor** är en förhandsversion och måste aktiveras i Power BI Desktop. För att aktivera **Formkartor** väljer du **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och markerar sedan kryssrutan bredvid **Forma visuell mappning**.
 * För närvarande måste bucketen **Färgmättnad** vara inställd för att klassificeringen **Förklaring** ska fungera korrekt.
 * Den slutliga versionen av **Formkartan** har ett användargränssnitt som visar kartnycklarna för aktuellt vald karta (inget datum har angetts för slutlig utgåva och **Formkarta** är fortfarande i förhandsversion). I den här förhandsversionen kan du referera till kartans regionsnycklar i tabellerna som du hittar i följande avsnitt för **Regionsnycklar** i den här artikeln.
-* Det visuella objektet **Formkarta** ritar upp till 1 000 datapunkter.
+* Det visuella objektet **Formkarta** ritar upp till 1 500 datapunkter.
 
 ## <a name="region-keys"></a>Regionsnycklar
 

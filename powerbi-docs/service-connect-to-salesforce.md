@@ -2,7 +2,6 @@
 title: Anslut till Salesforce med Power BI
 description: Salesforce för Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b351ba2151937b62002dc0cfca849cff58985581
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 6fedd3994a9e6a14ea89637a0c12aa8dd47928a9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060822"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854627"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Anslut till Salesforce med Power BI
 Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. Med den här anslutningen kan du hämta dina Salesforce-data och få en instrumentpanel och rapporter automatiskt.
@@ -23,7 +22,7 @@ Med Power BI kan du enkelt ansluta till ditt Salesforce.com-konto. Med den här 
 Läs mer om [Salesforce-integrering](https://powerbi.microsoft.com/integrations/salesforce) med Power BI.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret i Power BI.
+1. Välj **Hämta data** längst ned i navigeringsfönstret i Power BI.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. I rutan **Tjänster** väljer du **Hämta**.
@@ -53,7 +52,7 @@ Läs mer om [Salesforce-integrering](https://powerbi.microsoft.com/integrations/
      
      Om du inte ser några rapporter, lägger du till eller skapar dem i ditt Salesforce-konto och försöker ansluta igen.
 
-7. Välj **Anslut** för att starta importen. Under importen ser du ett meddelande om att importen pågår. När importen är klar ser du en instrumentpanel, rapport och datamängd för dina Salesforce-data i navigeringsfönstret till vänster.
+7. Välj **Anslut** för att starta importen. Under importen ser du ett meddelande om att importen pågår. När importen är klar ser du en instrumentpanel, rapport och datamängd för dina Salesforce-data i navigeringsfönstret.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 

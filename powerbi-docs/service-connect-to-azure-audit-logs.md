@@ -2,7 +2,6 @@
 title: Ansluta till Azure-granskningsloggar med Power BI
 description: Azure-granskningsloggarna för Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 42b56cbad4c47b8cc8133a1f35511ea48ac24055
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: d0bd4e90dac6e71d95c38bed83f1c9507acc4fd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060597"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855400"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Ansluta till Azure-granskningsloggar med Power BI
 Du kan analysera och visualisera informationen som lagras i granskningsloggarna med Azure-granskningsloggarnas innehållspaket. Power BI hämtar dina data, skapar en färdig instrumentpanel och sedan rapporter baserade på dessa data.
@@ -25,10 +24,10 @@ Du kan analysera och visualisera informationen som lagras i granskningsloggarna 
 [Anslut till Azure-granskningsloggarnas innehållspaket](https://app.powerbi.com/getdata/services/azure-audit-logs) eller läs mer om integration av [Azure-granskningsloggarna](https://powerbi.microsoft.com/integrations/azure-audit-logs) med Power BI.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.  
+1. Välj **Hämta data** längst ned i navigeringsfönstret.  
    
     ![](media/service-connect-to-azure-audit-logs/getdata.png)
-2. I rutan **tjänster** väljer du **Hämta**.  
+2. I rutan **Tjänster** väljer du **Hämta**.  
    
     ![](media/service-connect-to-azure-audit-logs/services.png) 
 3. Välj **Azure-granskningsloggarna** > **Hämta**.  

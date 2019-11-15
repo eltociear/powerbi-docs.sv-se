@@ -3,18 +3,17 @@ title: Installera Power BI-rapportserver
 description: Läs mer om att installera Power BI-rapportserver.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839439"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874142"
 ---
 # <a name="install-power-bi-report-server"></a>Installera Power BI-rapportserver
 
@@ -46,7 +45,7 @@ Läs vidare om du vill veta mer.
 
 Om du har köpt Power BI Premium så kommer du att ha tillgång till din produktnyckel för Power BI-raportservern i fliken **premiuminställningar** i Power BI-administratörsportalen. Den finns endast tillgänglig för globala administratörer eller användare som har tilldelats rollen Power BI-tjänstadministratör.
 
-![Premium-inställningar](../report-server/media/install-report-server/pbirs-product-key.png "Power BI-rapportservernyckeln i premiuminställningarna")
+![Premiuminställningar](../report-server/media/install-report-server/pbirs-product-key.png "Power BI-rapportservernyckeln i premiuminställningarna")
 
 Om du väljer **Power BI-rapportservernyckel** så visas en dialogruta med din produktnyckel. Du kan kopiera den och använda den med installationen.
 
@@ -127,14 +126,14 @@ URL-reservationer består av ett prefix, värdnamn, port och en virtuell katalog
 | Del | Beskrivning |
 | --- | --- |
 | Prefix |Standardprefixet är HTTP. Om du tidigare har installerat ett certifikat för Secure Sockets Layer (SSL) görs ett försök att skapa URL-reservationer som använder HTTPS-prefixet. |
-| Värddatornamn |Standardvärdnamnet är ett starkt jokertecken (+). Det anger att rapportservern godkänner alla HTTP-begäranden på den angivna porten för alla värdnamn som matchas till datorn, inklusive `http://<computername>/reportserver`, `http://localhost/reportserver` eller`http://<IPAddress>/reportserver.` |
+| Värddatornamn |Standardvärdnamnet är ett starkt jokertecken (+). Det anger att rapportservern godkänner alla HTTP-begäranden på den angivna porten för alla värdnamn som matchas till datorn, inklusive `https://<computername>/reportserver`, `https://localhost/reportserver` eller`https://<IPAddress>/reportserver.` |
 | Port |Standardporten är 80. Om du använder någon annan port än port 80 så måste du uttryckligen lägga till den till URL:en när du öppnar webbportalen i ett webbläsarfönster. |
 | Virtuell katalog |Som standard skapas virtuella kataloger i formatet ReportServer för webbtjänsten rapportserver och rapporter för webbportalen. För webbtjänsten rapportserver, är den virtuella standardkatalogen **rapportserver**. För webbportalen är den virtuella standardkatalogen **rapporter**. |
 
 Ett exempel på den fullständiga URL-strängen kan vara följande:
 
-* `http://+:80/reportserver`, ger åtkomst till rapportservern.
-* `http://+:80/reports`, ger åtkomst till webbportalen.
+* `https://+:80/reportserver`, ger åtkomst till rapportservern.
+* `https://+:80/reports`, ger åtkomst till webbportalen.
 
 ## <a name="firewall"></a>Brandväggen
 

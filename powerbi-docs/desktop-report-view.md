@@ -2,7 +2,6 @@
 title: Rapportvy i Power BI Desktop
 description: Rapportvy i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 06b8c9d0be2ec8bc5b350767263bfc5e0ab4ec81
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142190"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877874"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Rapportvy i Power BI Desktop
 Om du har arbetat med Power BI, vet du hur enkelt det är att skapa rapporter som ger dynamisk perspektiv och insikter om dina data. Power BI har också fler avancerade funktioner i Power BI Desktop. Du kan använda Power BI Desktop för att skapa avancerade frågor, blandade data från flera källor, skapa relationer mellan tabeller och mycket mer.
@@ -29,7 +28,7 @@ När du läser in data i Power BI Desktop, ser du **Rapportvisningen** med en to
 
 ![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
-Du kan växla mellan **Rapportvy**, **Datavy** och **Relationsvy** genom att välja ikonerna i det vänstra navigationsfältet:
+Du kan växla mellan **Rapportvy**, **Datavy** och **Relationsvy** genom att välja ikonerna i det vänstra navigeringsfönstret:
 
 ![Rapportvy-ikonen](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 

@@ -2,7 +2,6 @@
 title: Arbeta med visualiseringar (visuella objekt) som användare
 description: Power BI-koncept och -terminologi – visualiseringar, visuella objekt. Vad är en Power BI-visualisering, visuellt objekt.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7f72e53fe9f017f5f12893711858cc9179b883dd
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379983"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860967"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interagera med visuella objekt i rapporter, instrumentpaneler och appar
 
@@ -52,7 +51,7 @@ För många av dessa alternativ kan administratören eller *designern* inaktiver
 |[Be Power BI att leta efter intressanta fakta eller trender](end-user-insights.md) i det visuella objektets data åt dig.  Dessa automatiskt genererade visuella objekt kallas *insikter*.     |    ja     |  för hela rapporten, inte per visuellt objekt       | nej   |
 |[Visa bara ett visuellt objekt i taget med hjälp av läget *Fokus*](end-user-focus.md).     | ja        |   ja      | na  |
 |[Leta upp den senaste gången som det visuella objektet uppdaterades](end-user-fresh.md).     |  ja       |    ja     | na  |
-|[Visa bara ett visuellt objekt i taget, utan kantlinjer eller navigeringsfält, med hjälp av *helskärmsläget* eller *fokusläget*](end-user-focus.md).     |   ja      |  ja       | som standard  |
+|[Visa bara ett visuellt objekt i taget, utan kantlinjer eller navigeringsfönster, med hjälp av *helskärmsläget* eller *fokusläget*](end-user-focus.md).     |   ja      |  ja       | som standard  |
 |[Skriv ut](end-user-print.md).     |  ja       |   ja      | nej  |
 |[Gräva djupare i det visuella objektet genom att lägga till och ändra visuella filter.](end-user-report-filter.md)     |    nej     |   ja      | nej  |
 |Hovra över ett visuellt objekt för att visa ytterligare information och knappbeskrivningar.     |    ja     |   ja      | ja  |

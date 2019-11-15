@@ -2,7 +2,6 @@
 title: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
 description: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c32133a7958c1239337a5f77a92dde098652514e
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 08de5051adb420bc2a3b257fcc231730aa505b23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542850"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873412"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Fel: Det gick inte att hitta några data i din Excel-arbetsbok
 
@@ -61,7 +60,7 @@ När du importerar en Excel-arbetsbok, letar Power BI efter dessa tabeller och i
    
     ![Data formaterade som en tabell](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Spara din arbetsbok.
-7. Gå tillbaka till Power BI. Välj Hämta data längst ned i det vänstra navigeringsfönstret.
+7. Gå tillbaka till Power BI. Välj Hämta data längst ned i navigeringsfönstret.
    
     ![Hämta data](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. I rutan **Filer** väljer du **Hämta**.

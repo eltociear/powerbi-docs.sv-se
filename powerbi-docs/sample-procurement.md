@@ -2,7 +2,6 @@
 title: 'Exempel på anskaffningsanalys: Ta en rundtur'
 description: 'Exempel på anskaffningsanalys för Power BI: Ta en rundtur'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 9e27d09414167f9625e046204c14a5fb57112cd9
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462285"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873860"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på anskaffningsanalys för Power BI: Ta en rundtur
 
@@ -58,11 +57,11 @@ Innan du kan använda exemplet, måste du först hämta det som ett [innehållsp
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även ladda ned Exempel på anskaffningsanalys som en [.pbix-fil](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop. 
+Du kan även ladda ned Exempel på anskaffningsanalys som en [.pbix-fil](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529784). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529784). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 
 ## <a name="spending-trends"></a>Utgiftstrender
@@ -99,7 +98,7 @@ Låt oss se på utgiftsområden i Mexiko.
       ![Detaljnivå för Indirekta varor och tjänster för Mexiko](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Välj uppåtpilen i det övre vänstra hörnet i diagrammet för att öka detaljnivån.
 4. Markera pilen för detaljnivå igen för att inaktivera funktionen.  
-5. Välj **exemplet för anskaffningsanalys** i det övre navigeringsfältet för att återgå till instrumentpanelerna.
+5. Välj **Exempel på anskaffningsanalys** i det övre navigeringsfönstret för att återgå till instrumentpanelen.
 
 ## <a name="evaluate-different-cities"></a>Utvärdera olika städer
 Vi kan använda markering för att utvärdera olika städer.

@@ -1,79 +1,83 @@
 ---
-title: Anpassa egenskaper för X-axeln och Y-axeln
-description: Anpassa egenskaper för X-axeln och Y-axeln
+title: Anpassa egenskaper för x-axeln och y-axeln
+description: Anpassa egenskaper för x-axeln och y-axeln
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3bfe84acdf73fcb5ace791c9a84943262d0f73ab
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390053"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880924"
 ---
-# <a name="customize-x-axis-and-y-axis-properties"></a>Anpassa egenskaper för X-axeln och Y-axeln
+# <a name="customize-x-axis-and-y-axis-properties"></a>Anpassa egenskaper för x-axeln och y-axeln
 
-I den här kursen lär du dig många olika sätt att anpassa X-axeln och Y-axeln i visuella objekt. Inte alla visuella objekt har axlar. Cirkeldiagram har till exempel inte axlar. Och anpassningsalternativen varierar från ett visuellt objekt till ett annat. Det finns alltför många alternativ för att vi ska kunna ta upp alla i en enda artikel, så vi tar en titt på några av de mest använda axelanpassningarna så att du kan vänja dig vid att använda panelen för **visuell formatering** i arbetsytan för Power BI-rapporter.  
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+I den här självstudien lär du dig flera olika sätt för att anpassa X-axeln och Y-axeln i visuella objekt. Inte alla visuella objekt har axlar. Cirkeldiagram har till exempel inte axlar. Och anpassningsalternativen varierar från ett visuellt objekt till ett annat. Det finns alltför många alternativ för att vi ska kunna ta upp alla i en enda artikel, så vi tar en titt på några av de mest använda anpassningarna så att du lär dig panelen för visuell **formatering** i Power BI-rapportarbetsytan.  
+
+Se hur Amanda anpassar sina X- och Y-axlar. Hon kommer också att visa olika sätt att styra sammanlänkning på när man minskar eller ökar detaljnivån.
 
 > [!NOTE]
-> Det här avsnittet gäller för både Power BI-tjänsten och Power BI Desktop. Dessa anpassningar, som är tillgängliga när **Format** (rollerikonen ![Skärmbild av rollerikonen.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)) är markerad, är också tillgängliga i Power BI Desktop.
-
-Se hur Amanda anpassar sina X- och Y-axlar. Hon kommer att demonstrera de olika sätten att styra sammanlänkning vid minskning och ökning av detaljnivån.
+> I den här videon används en äldre version av Power BI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-- Power BI-tjänsten
+- Power BI Desktop
 
-- Rapporten Exempel på detaljhandelsanalys
+- [Exempel på detaljhandelsanalys ](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
-## <a name="customize-visualization-x--and-y-axes-in-reports"></a>Anpassa X- och Y-axlar för visualiseringar i rapporter
 
-Om du vill följa med loggar du in till [Power BI-tjänsten](https://app.powerbi.com) och öppnar rapporten [Exempel på detaljhandelsanalys](../sample-datasets.md) i vyn [Redigera rapport](../service-interact-with-a-report-in-editing-view.md).
-
-### <a name="create-a-stacked-column-chart-visualization"></a>Skapa en visualisering av ett staplat kolumndiagram
+## <a name="add-a-new-visualization"></a>Lägg till en ny visualisering
 
 Du måste skapa din visualisering innan du kan anpassa den.
 
-1. Visa **Min arbetsyta** i Power BI-tjänsten.
+1. Öppna exemplet på detaljhandelsanalys i Power BI Desktop.  
 
-1. Bläddra nedåt och välj **Exempel på detaljhandelsanalys** från listan över **datamängder**.
+2. Längst ned väljer du den gula plusikonen för att lägga till en ny sida. 
 
-1. På panelen **Visualiseringar** väljer du ikonen för staplat kolumndiagram.
+    ![gult plustecken](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-new-page-icon.png)
 
-    ![Skärmbild av fönstret Visualiseringar och ett tomt staplat kolumndiagram](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stacked-column-chart.png)
+1. På panelen **Visualiseringar** väljer du ikonen för staplat kolumndiagram. En tom mall läggs till i din rapportarbetsyta.
 
-1. Välj **Tid** > **FiscalMonth** (Räkenskapsmånad) för att ange X-axelns värden i fönstret **Fält**.
+    ![Skärmbild av fönstret Visualiseringar och ett tomt staplat kolumndiagram](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-column-chart.png)
 
-1. För att ställa in Y-axelvärdena på panelen **Fält**, väljer du **Försäljning** > **Senaste årets försäljning** och **Försäljning** > **Försäljning detta år** > **Värde**.
+1. Ange X-axelns värden i fönstret **Fält** genom att välja **Tid** > **FiscalMonth**.
 
-    ![Skärmbild av det ifyllda staplade kolumndiagrammet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-create-chart.png)
+1. Ställ in Y-axelvärdena från fönstret **Fält** genom att välja **Försäljning** > **Fjolårets försäljning** och **Försäljning** > **Årets försäljning** > **Värde**.
 
-### <a name="customize-the-x-axis"></a>Anpassa X-axeln
+    ![Skärmbild av det ifyllda staplade kolumndiagrammet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-build-visual.png)
 
-Nu kan du anpassa din X-axel.
+    Nu kan du anpassa din X-axel. Power BI ger dig nästan obegränsade alternativ för formatering av visualiseringen. 
 
-1. I fönstret **Visualiseringar** väljer du **Format** (rollerikonen) ![Skärmbild av rollerikonen.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller.png)) för att visa anpassningsalternativen.
+## <a name="customize-the-x-axis"></a>Anpassa X-axeln
+Det finns många funktioner som kan anpassas för X-axeln. Du kan lägga till och ändra dataetiketterna och rubriken för X-axeln. I kategorierna kan du ändra bredd, storlek och utfyllnad för staplar, kolumner, rader och områden. För värden kan du också ändra visningsenheter, decimaler och stödlinjer. I följande exempel visas anpassningen av ett stapeldiagram. Nu ska vi lägga till några anpassningar för att visa dig alternativen och sedan kan du utforska resten på egen hand.
 
-1. Alternativ för att expandera X-axlarna.
+### <a name="customize-the-x-axis-labels"></a>Anpassa X-axelns etiketter
+X-axelns etiketter visas under staplarna i diagrammet. Just nu är de ljusgrå, små och svåra att läsa. Vi ändrar det.
 
-   ![Skärmbild av X-axelns alternativ.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-axis.png)
+1. I fönstret **Visualiseringar** väljer du **Format** (rollerikonen) ![Skärmbild av rollerikonen.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-paintroller-icon.png) ) för att se anpassningsalternativen.
 
-1. Flytta skjutreglaget för **X-axeln** till läget **På**.
+2. Alternativ för att expandera X-axeln.
 
-    ![Skärmbild av skjutreglaget i läge På.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
+   ![Skärmbild av X-axelns alternativ.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-axis-x.png)
 
-    Du kanske vill inaktivera X-axeln för att spara utrymme för mer data.
+3. Flytta skjutreglaget för **X-axeln** till läget **På**.
 
-1. Formatera textfärg, storlek och teckensnitt:
+    ![Skärmbild av skjutreglaget i läge På.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-slider-on.png)
+
+    Några orsaker till att du kanske vill ange **Av** för X-axeln, är om visualiseringen är självförklarande utan etiketter eller om du har en full rapportsida och behöver frigöra utrymme för att kunna visa mer data.
+
+4. Formatera textfärg, storlek och teckensnitt:
 
     - **Färg**: Välj svart
 
@@ -81,137 +85,147 @@ Nu kan du anpassa din X-axel.
 
     - **Teckensnittsfamilj**: Välj **Arial Black**
 
-1. Dra alternativet **Rubrik** till **På** för att visa namnet på X-axeln. I det här fallet är det **FiscalMonth** (Räkenskapsmånad).
+    - **Inre utfyllnad**: Ange *40 %*
+
+        ![Skärmbild med etiketter i en vinkel](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-x.png)
+    
+5. Du kanske inte tycker om att X-axelns text visas diagonalt. Det finns flera alternativ. 
+    - Ändra textstorleken till något som är mindre än 14.
+    - Gör visualiseringen större. 
+    - Visa färre kolumner och lägg till en rullningslist genom att öka **Minsta kategoribredd**. 
+    
+    Här har vi valt det andra alternativet och drar i en av ramarna för att göra visualiseringen bredare. Nu får texten på 14 punkter plats utan att visas diagonalt eller med en rullningslist. 
+
+   ![Fönster för diagram och formatering med vågräta etiketter](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stretch.png)
+
+### <a name="customize-the-x-axis-title"></a>Anpassa X-axelns rubrik
+När X-axelns rubrik är **På** visas den under etiketterna på X-axeln. 
+
+1. Börja med att växla X-axelns rubrik till **På**.  
+
+    ![Skjutreglage för rubrik](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-title-on.png)
+
+    Det första du ser är att visualiseringen nu har en standardrubrik på X-axeln.  I det här fallet är det **FiscalMonth** (Räkenskapsmånad).
+
+   ![Diagram med rubrik som visas utmed nederkanten](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title.png)
 
 1. Formatera rubrikens textfärg, storlek och teckensnitt:
 
     - **Rubrikfärg**: Välj orange
 
-    - **Axelrubrik**: Ange *Räkenskapsmånad*
+    - **Axelrubrik**: Skriv *Räkenskapsmånad*
 
-    - **Storlek för rubriktext** : Ange *21*
+    - **Storlek för rubriktext** : Ange *18*
 
-När du är klar med anpassningarna ser det staplade kolumndiagrammet ut ungefär så här:
+    När du är klar med anpassningarna ser det stående stapeldiagrammet ut ungefär så här:
 
-![Skärmbild av det anpassade staplade kolumndiagrammet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-customize-axis.png)
+    ![Skärmbild av det anpassade staplade kolumndiagrammet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-title-formatted.png)
 
-Spara de ändringar som du har gjort och gå vidare till nästa avsnitt.
+1. Spara de ändringar som du har gjort och gå vidare till nästa avsnitt. Om du vill återställa alla ändringar, väljer du **Återgå till standard** längst ned i anpassningsfönstret **X-axel**. Nu ska du anpassa Y-axeln.
 
-Om du vill återställa alla ändringar, väljer du **Återgå till standard** längst ned i anpassningsfönstret **X-axel**.
+## <a name="customize-the-y-axis"></a>Anpassa Y-axeln
+Det finns många funktioner som kan anpassas för Y-axeln. Du kan lägga till och ändra dataetiketterna, rubriken för Y-axeln och stödlinjerna. För värdena kan du även ändra visningsenheter, decimaler, startpunkt och slutpunkt. För kategorier kan du ändra bredd, storlek och utfyllnad för staplar, kolumner, rader och områden. 
 
-### <a name="customize-the-y-axis"></a>Anpassa Y-axeln
+I följande exempel fortsätter vi att anpassa ett stapeldiagram. Nu ska vi göra några ändringar för att visa dig alternativen och sedan kan du utforska resten på egen hand.
 
-Nu ska du anpassa Y-axeln.
+### <a name="customize-the-y-axis-labels"></a>Anpassa Y-axelns etiketter
+Y-axelns etiketter visas till vänster som standard. Just nu är de ljusgrå, små och svåra att läsa. Vi ändrar det.
 
 1. Alternativ för att expandera Y-axeln.
 
-   ![Skärmbild av Y-axelns alternativ.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis.png)
+   ![Skärmbild av Y-axelns alternativ.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-axis-y.png)
 
 1. Flytta skjutreglaget för **Y-axeln** till läget **På**.  
 
-    ![Skärmbild av skjutreglaget i läge På.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
+    ![Skärmbild av skjutreglaget i läge På.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-on.png)
 
-    Du kan vilja stänga av Y-axeln för att spara utrymme för mer data.
-
-1. Ange Y-axelns **Position** som **Höger**.
+    En orsak till att vilja stänga av Y-axeln är för att få plats med mer data.
 
 1. Formatera textfärg, storlek och teckensnitt:
 
     - **Färg**: Välj svart
 
-    - **Textstorlek**: Ange *14*
+    - **Textstorlek**: Ange *10*
 
-    - **Teckensnittsfamilj**: Välj **Arial Black**
+    - **Visningsenheter**: Välj **Miljoner**
 
-1. Ställ in **Visningsenheter** på **Miljoner** och **Decimaler för värdet** på *0*.
+    ![Diagram efter formateringen av Y-axeln](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-formatting-y.png)
 
-1. För det här visuella objektet förbättras inte visualiseringen av en rubrik för Y-axeln, så vi **inaktiverar** **Rubrik**.  
+### <a name="customize-the-y-axis-title"></a>Anpassa Y-axelns rubrik
+När Y-axelns rubrik är **På** visas rubriken på Y-axeln bredvid etiketterna för Y-axeln. För det här visuella objektet förbättras inte visualiseringen av en rubrik för Y-axeln, så vi **inaktiverar** **Rubrik**. Vi kommer att lägga till Y-axelns rubriker i ett visuellt objekt med dubbla axlar senare i den här självstudien. 
 
-1. Nu ska vi få stödlinjerna att stå ut genom att ändra färgen och öka bredden på dem:
+### <a name="customize-the-gridlines"></a>Anpassa stödlinjerna
+Nu ska vi få stödlinjerna att stå ut genom att ändra färgen och öka bredden på dem:
 
-    - **Färg**: Välj mörkgrå
+- **Färg**: Välj orange
 
-    - **Linjebredd**: Ange *2*
+- **Linjebredd**: Ange *2*
 
 Efter dessa anpassningar bör ditt stående stapeldiagram se ut ungefär så här:
 
-![Skärmbild av diagrammet med anpassad Y-axel.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-complete.png)
+![Skärmbild av diagrammet med anpassad Y-axel.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-gridline.png)
 
 ## <a name="customizing-visualizations-with-dual-y-axes"></a>Anpassa visualiseringar med dubbla Y-axlar
 
-Först måste du skapa ett kombinationsdiagram som visar hur antalet butiker påverkar försäljningen. Det här är samma diagram som har skapats i [självstudierna om kombinationsdiagram](power-bi-visualization-combo-chart.md). Sedan ska du formatera de två Y-axlarna.
+Vissa visualiseringar kan bli bättre med två Y-axlar. Kombinationsdiagram är ett bra exempel på detta. Innan vi kan formatera dubbla Y-axlar, skapar vi ett kombinationsdiagram som jämför trender för försäljning och bruttomarginal.  
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Skapa ett diagram med två Y-axlar
 
-1. Skapa ett nytt linjediagram som spårar **Försäljning >Bruttomarginal %** förra året per **Tid > bokföringsmånad**.
+1. Välj stapeldiagrammet och ändra det till ett *Linjediagram och stående stapeldiagram*. 
 
-    ![Skärmbild av det nya linjediagrammet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
+    ![Skärmbild av fönstret Visualiseringar med linje- och det staplade kolumndiagrammet framhävt.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
+   
 
-    > [!NOTE]
-    > För hjälp med att sortera efter månad, läs vidare under [Sortera med andra kriterier](../consumer/end-user-change-sort.md#other).
+2. Dra **Försäljning** > **Bruttomarginal förra året i %** från fönstret Fält till bucketen **Radvärden**.
 
-    I januari var bruttomarginalprocenten 35 % med en topp i april på 45 % varefter den sjönk i juli och nådde ytterligare en topp i augusti. Ser vi ett liknande mönster för försäljningen föregående år och det här året?
+    ![Skärmbild av linje- och det staplade kolumndiagrammet med alla tre värden tydligt representerade.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-add-line.png)
 
-1. Lägg till **This Year Sales (Årets försäljning) > Värde** och **Last Years Sales (Förra årets försäljning)** till linjediagrammet.
+    
+3. Formatera om visualiseringen för att ta bort de vinklade etiketterna på X-axeln. 
 
-    ![Skärmbild av linjediagrammet med nya data tillagda.](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+   ![Kombinationsdiagram och formatfönster med teckenstorleken minskad till 12](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-    Skalan för **Bruttomarginal förra året i %** (den blå linjen som löper längs med stödlinjen för **0M %** ) är mycket mindre än skalan för **Försäljning**, vilket gör det svårt att jämföra. Och Y-axelns etikettprocenttal är märkliga.
+   Power BI skapar två Y-axlar, vilket gör att värdena kan skalas på olika sätt. Den vänstra mäter försäljningen i dollar och den högra procentandelen.
 
-1. Konvertera linjediagrammet till ett linje- och staplat kolumndiagram om du vill göra det visuella objektet lättare att läsa och tolka.
-
-   ![Skärmbild av fönstret Visualiseringar med linje- och det staplade kolumndiagrammet framhävt.](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
-
-1. Dra **Gross Margin% Last Year (Bruttomarginal % förra året)** från **Kolumnvärde** till **Radvärden**.
-
-    ![Skärmbild av linje- och det staplade kolumndiagrammet med alla tre värden tydligt representerade.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
-
-    Nu har du det staplade kolumndiagram som du skapade i det första avsnittet med ett linjediagram lagt över det. Du kan också använda vad du lärde dig ovan för att formatera axlarnas teckenfärg och storlek.
-
-   ![Skärmbild av det anpassade linje- och staplade kolumndiagrammet.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
-
-   Power BI skapar två Y-axlar, vilket gör att datamängderna kan skalas på olika sätt. Den vänstra mäter försäljningen i dollar och den högra procentandelen.
-
-### <a name="format-the-secondary-y-axis"></a>Formatera den sekundära Y-axeln
+### <a name="format-the-second-y-axis"></a>Formatera den andra Y-axeln
+Eftersom vi började med en visualisering med en formaterad Y-axel, skapade Power BI den andra Y-axeln med samma inställningar. Men vi kan ändra det. 
 
 1. I fönstret **Visualiseringar** väljer du rollerikonen för att visa formatalternativen.
 
 1. Alternativ för att expandera Y-axeln.
 
-1. Rulla nedåt tills du hittar alternativet **Visa sekundär**. Kontrollera att det är **På**.
+1. Rulla nedåt tills du hittar alternativet **Visa sekundär**. Kontrollera att det är **På**. Vår andra Y-axel motsvarar linjediagrammet.
 
-   ![Skärmbild av alternativet Visa sekundär.](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
+   ![Skärmbild av alternativet Visa sekundär.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-secondary.png)
 
-1. (Valfritt) Anpassa två axlar. Om du växlar **Position** för axelns kolumn eller radaxeln. Det går de två axlarna att växla sidor.
+1. (Valfritt) Anpassa teckenfärg, storlek och visningsenheter för de två axlarna. Om du växlar **Position** för axelns kolumn eller radaxeln. Det går de två axlarna att växla sidor.
 
 ### <a name="add-titles-to-both-axes"></a>Lägga till rubriker på axlarna
 
-Med ett så komplicerat visuellt objekt hjälper det att lägga till axelrubriker.  Med rubriker blir det lättare för dina kollegor att förstå vad du försöker berätta med ditt visuella objekt.
+I en så komplicerad visualisering underlättar det med axelrubriker.  Med titlar kan dina kollegor förstå vad ditt visuella objekt försöker berätta.
 
 1. Växla **Rubrik** till **På** för **Y-axeln (kolumn)** och **X-axeln (rad)** .
 
 1. Ange **Stil** till **Visa enbart rubrik** för båda.
 
-   ![Skärmbild av alternativen Rubrik och Stil.](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
+   ![Skärmbild av alternativen Rubrik och Stil.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-show-title.png)
 
 1. Kombinationsdiagrammet visar nu dubbla axlar, båda med rubriker.
 
-   ![Skärmbild av det anpassade diagrammet med dubbla y-axlar.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
+   ![Skärmbild av det anpassade diagrammet med dubbla y-axlar.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-titles-on.png)
 
-Mer information finns i [Tips för färgformatering i Power BI](service-tips-and-tricks-for-color-formatting.md).
+1. Formatera rubrikerna. I det här exemplet har vi förkortat en av rubrikerna och minskat teckenstorleken för båda. 
+    - Teckenstorlek: **9**
+    - **Axelrubriken** för den första Y-axeln (stapeldiagrammet) har förkortats: Fjolårets och årets försäljning
 
-## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+    ![Skärmbild av kombinationsdiagrammet där hela rubrikerna visas.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
-Om X-axeln kategoriseras av rapportägaren som av datumtyp, kommer alternativet **Typ** att visas och du kan välja mellan kontinuerlig eller kategorisk.
+
+
+Mer information finns i [Tips för färgformatering i Power BI](service-tips-and-tricks-for-color-formatting.md) och [Anpassa visualiseringens rubrik, bakgrund och förklaring](power-bi-visualization-customize-title-background-and-legend.md). Håll utkik efter nya uppdateringar av rubrikformatering som kommer snart. 
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md)
 
-- [Anpassa visualiseringens rubriker, bakgrunder och förklaringar](power-bi-visualization-customize-title-background-and-legend.md)
-
-- [Komma igång med färgformatering och axelegenskaper](service-getting-started-with-color-formatting-and-axis-properties.md)
-
-- [Grundläggande begrepp för Power BI-tjänstens användare](../consumer/end-user-basic-concepts.md)
-
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

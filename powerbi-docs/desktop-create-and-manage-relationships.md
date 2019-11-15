@@ -2,7 +2,6 @@
 title: Skapa och hantera relationer i Power BI Desktop
 description: Skapa och hantera relationer i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61312714"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869117"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Skapa och hantera relationer i Power BI Desktop
 När du importerar flera tabeller är det möjligt att du kommer att utföra analyser med data från alla tabellerna. Det måste finnas relationer mellan dessa tabeller för att korrekt beräkna resultat och för att rätt information ska visas i dina rapporter. Med Power BI Desktop blir det enkelt att skapa dessa relationer. Det är faktiskt så att du inte behöver göra något alls i de flesta fall, funktionen Identifiera automatiskt gör det åt dig. I vissa fall kan du dock behöva skapa relationerna själv, eller behöva göra vissa ändringar i en relation. Oavsett vilket är det viktigt att förstå relationer i Power BI Desktop, samt hur du skapar och redigerar dem.
@@ -64,9 +63,9 @@ Du kan konfigurera ytterligare alternativ när du skapar eller redigerar en rela
 Se avsnittet Förstå ytterligare alternativ nedan för mer information om när du ska ändra kardinalitet.
 
 ## <a name="cross-filter-direction"></a>Korsfilterriktning
-**Båda** – Detta är den vanligaste riktningen och standard. För filtreringsändamål innebär det att båda tabellerna behandlas som om de vore en enda tabell. **Båda** fungerar bra med en enskild tabell som omges av ett antal uppslagstabeller. Ett exempel är en försäljningstabell med en uppslagstabell för avdelningar. Det här kallas ofta en star-schemakonfiguration (en central tabell med flera uppslagstabeller.) Men om du har två eller flera tabeller med uppslagstabeller (där några är gemensamma) kanske du inte vill använda inställningen Båda. För att fortsätta med det tidigare exemplet har du i det här fallet också en budgetförsäljningstabell med målbudgeten för varje avdelning. Och avdelningstabellen är kopplad till både försäljnings- och budgettabellen. Undvik att inställningen Båda för den här typen av konfiguration.
+**Båda** – Detta innebär för filtreringsändamål att båda tabellerna behandlas som om de är en enda tabell. **Båda** fungerar bra med en enskild tabell som omges av ett antal uppslagstabeller. Ett exempel är en försäljningstabell med en uppslagstabell för avdelningar. Det här kallas ofta en star-schemakonfiguration (en central tabell med flera uppslagstabeller.) Men om du har två eller flera tabeller med uppslagstabeller (där några är gemensamma) kanske du inte vill använda inställningen Båda. För att fortsätta med det tidigare exemplet har du i det här fallet också en budgetförsäljningstabell med målbudgeten för varje avdelning. Och avdelningstabellen är kopplad till både försäljnings- och budgettabellen. Undvik att inställningen Båda för den här typen av konfiguration.
 
-**Enskild** – Filtrering av val i anslutna tabeller fungerar i den tabell där värdena aggregeras. Om du importerar en Power Pivot i Excel 2013 eller tidigare datamodell har alla relationer en enda riktning. 
+**Enskild** – Den vanligaste standardriktningen som innebär att filtrerade val i anslutna tabeller fungerar i den tabell där värdena aggregeras. Om du importerar en Power Pivot i Excel 2013 eller tidigare datamodell har alla relationer en enda riktning. 
 
 Se avsnittet Förstå ytterligare alternativ nedan för mer information om när du ska ändra korsfilterriktningen.
 

@@ -2,7 +2,6 @@
 title: Publicera till Power BI från Excel 2016
 description: Lär dig hur du publicerar en Excel-arbetsbok till Power BI-webbplatsen.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bb9ff3ae6b08111156616a84ee795131c708f42c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 81bc53bae43cb16af92a9ecaf20c26c594a24368
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514806"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881142"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Publicera till Power BI från Excel 2016
 Med Excel 2016 kan du publicera dina Excel-arbetsböcker direkt till din [Power BI](https://powerbi.microsoft.com)-webbplats, där du kan skapa interaktiva rapporter och instrumentpaneler baserat på data i arbetsboken. Du kan sedan dela dina insikter med andra i din organisation.
@@ -63,7 +62,7 @@ När du väljer det här alternativet visas arbetsboken i Power BI på samma sä
 
 Du kan inte redigera din arbetsbok när den är öppen i Power BI, utan om du behöver göra några ändringar kan du välja **Redigera** och sedan välja att redigera din arbetsbok i Excel Online eller öppna den i Excel på datorn. Alla ändringar du gör sparas i arbetsboken på OneDrive.
 
-När du överför skapas inte någon datauppsättning i Power BI. Din arbetsbok visas i Rapporter i navigeringsfönstret för arbetsytan. Arbetsböcker som har överförts till Power BI har en särskild Excel-ikon som visar att de är överförda Excel-arbetsböcker.
+När du överför skapas inte någon datauppsättning i Power BI. Din arbetsbok visas i Rapporter, i navigeringsfönstret för arbetsytan. Arbetsböcker som har överförts till Power BI har en särskild Excel-ikon som visar att de är överförda Excel-arbetsböcker.
 
 Välj det här alternativet om du enbart har data i kalkylbladen eller om du har pivottabeller och diagram som du vill se i Power BI.
 Att använda överföring från Publicera till Power BI i Excel är ganska likt att använda Hämta data > Fil > OneDrive för företag > Anslut, hantera och visa Excel i Power BI från Power BI i din webbläsare.
@@ -88,5 +87,5 @@ När du är klar kan du gå till Power BI direkt från Excel.
 
 ## <a name="next-steps"></a>Nästa steg
 [Excel-data i Power BI](service-excel-workbook-files.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

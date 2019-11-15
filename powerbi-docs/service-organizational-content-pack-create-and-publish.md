@@ -2,7 +2,6 @@
 title: Skapa och publicera ett organisationsinnehållspaket – Power BI
 description: I den här självstudien skapar du ett organisationsinnehållspaket, begränsar åtkomst till en specifik grupp och publicerar det i din organisations innehållspaketsbibliotek i Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 25b63db2d77e84fb3fc1a3e844ceb46ef1a9bd82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020671"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872016"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Självstudie: Skapa och publicera ett organisationsinnehållspaket i Power BI
 
@@ -34,9 +33,9 @@ Föreställ dig att du är Release Manager på Contoso och förbereder dig infö
 
 Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com) går du till **Min arbetsyta**. Gå sedan till **Hämta data** > **Exempel** > **Exempel på affärsmöjlighetsanalys** > **Anslut** för att hämta din egen kopia.
 
-1. I det vänstra navigeringsfönstret väljer du **Arbetsytor** > **Mina arbetsytor**.
+1. I navigeringsfönstret väljer du **Arbetsytor** > **Mina arbetsytor**.
 
-1. I det övre navigeringsfältet väljer du kugghjulsikonen ![Skärmbild av kugghjulsikonen.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Skapa innehållspaket**.
+1. I det övre navigeringsfönstret väljer du kugghjulsikonen ![Skärmbild av kugghjulsikonen.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Skapa innehållspaket**.
 
    ![Skärmbild av användargränssnittet med fokus på kugghjulsikonen och alternativet Skapa innehållspaket.](media/service-organizational-content-pack-create-and-publish/pbi_create_contpk.png)
 
@@ -100,4 +99,4 @@ Vill du hänga på? I [Power BI-tjänsten](https://powerbi.com) går du till **M
 
 * [Vad är OneDrive för företag?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Använda Vad om-parametrar för att visualisera variabler
 description: Skapa dina egna Vad om-variabler för att skapa och visualisera variabler i Power BI-rapporter
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2451620c6d4092e5da4605f8e76b0a70e2eecf2b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1ad0c7d2a3c3d21d8ccb81354bdc03d845b61f58
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513490"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876049"
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Skapa och använd en Vad om-parameter för att visualisera variabler i Power BI Desktop
 Från och med augusti 2018-utgåvan av **Power BI Desktop**, kan du skapa **Vad om**-variabler för dina rapporter, interagera med variablerna som ett utsnitt och visualisera och kvantifiera olika nyckelvärden i dina rapporter.
@@ -50,7 +49,7 @@ Nu ska vi skapa ett enkelt exempel på hur du använder en **Vad om**-parameter.
 
 ![](media/desktop-what-if/what-if_05.png)
 
-Det nya måttet ska bara vara de totala försäljningssiffrorna med den diskonteringsränta som tillämpas. Du kan givetvis skapa komplexa och intressanta mått, som låter dina rapporters användare visualisera variabeln för din **Vad om**-parameter. Du kan till exempel skapa en rapport som gör att säljare ser sin kompensation om de uppfyller vissa säljmål eller procentsatser, eller se effekten av ökad försäljning och mer rabatter.
+Det nya måttet ska bara vara de totala försäljningssiffrorna med den diskonteringsränta som tillämpas. Du kan givetvis skapa komplexa och intressanta mått, som låter dina rapporters användare visualisera variabeln för din **Vad om**-parameter. Du kan till exempel skapa en rapport där säljare kan se sin provision om de uppfyller vissa säljmål eller procentandelar, eller ser relationen mellan ökad försäljning och mer rabatter.
 
 När vi anger måttformeln i formelfältet och ger den namnet **försäljning efter rabatt**, ser vi dess resultat:
 

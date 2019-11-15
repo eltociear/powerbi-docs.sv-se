@@ -3,18 +3,17 @@ title: Säkerhet på radnivå med inbäddat innehåll i Power BI
 description: Läs mer om vad du behöver göra för att bädda in Power BI-innehåll i ditt program.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073356"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875827"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Säkerhet på radnivå med Power BI Embedded
 
@@ -33,7 +32,7 @@ För att använda RLS är det viktigt att du förstå tre huvudsakliga koncept: 
 **Roller** – användare tillhör roller. En roll är en container för regler och har namn som *försäljningschef* eller *säljare*. Du kan skapa roller i Power BI Desktop. Mer information finns i [Säkerhet på radnivå (RLS) med Power BI Desktop](../desktop-rls.md).
 
 **Regler** – roller har regler och dessa regler är de faktiska filter som ska tillämpas på data. Reglerna kan vara enkla som ”Land = USA” eller något mycket mer dynamiskt.
-I resten av den här artikeln finns det ett exempel på hur RLS skapas och används i en inbäddad app. Vårt exempel använder PBIX-filen [Exempel för detaljhandelanalys](http://go.microsoft.com/fwlink/?LinkID=780547).
+I resten av den här artikeln finns det ett exempel på hur RLS skapas och används i en inbäddad app. Vårt exempel använder PBIX-filen [Exempel för detaljhandelanalys](https://go.microsoft.com/fwlink/?LinkID=780547).
 
 ![Rapportexempel](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
@@ -64,7 +63,7 @@ Gör så här:
 2. Skapa en ny roll som heter **Chef**.
 
     ![Skapa en ny roll](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. I tabellen **Distrikt** anger du det här DAX-uttrycket: **[distriktschef] = USERNAME()**.
+3. I tabellen **Distrikt** anger du det här DAX-uttrycket: **[distriktschef] = USERNAME()** .
 
     ![DAX-uttryck för RLS regel](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. Kontrollera att reglerna fungerar på fliken **Modellering**, välj **Visa som roller** och välj sedan både rollen **Chef** som du skapade och **Andra användare**. Ange **AndrewMa** för användaren.
@@ -73,7 +72,7 @@ Gör så här:
 
     Rapporterna visar data som om du har loggat in som **Andrew Ma**.
 
-När vi tillämpar filtret på detta sätt så filtreras alla poster i tabellerna **Distrikt**, **Butik** och **Försäljning**. Men på grund av filterriktningen för relationerna mellan **Försäljning** och **Tid**, **Försäljning** och **Objekt**, samt **Objekt** och **Tid** filtreras tabellerna inte. Om du vill veta mer om dubbelriktad korsfiltrering kan du hämta vårt whitepaper [Dubbelriktad korsfiltrering i SQL Server Analysis Services 2016 och Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+När vi tillämpar filtret på detta sätt så filtreras alla poster i tabellerna **Distrikt**, **Butik** och **Försäljning**. Men på grund av filterriktningen för relationerna mellan **Försäljning** och **Tid**, **Försäljning** och **Objekt**, samt **Objekt** och **Tid** filtreras tabellerna inte. Om du vill veta mer om dubbelriktad korsfiltrering kan du hämta vårt whitepaper [Dubbelriktad korsfiltrering i SQL Server Analysis Services 2016 och Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Tillämpa användare och roll på en inbäddningstoken
 
@@ -145,9 +144,9 @@ CustomData-funktionen fungerar endast för modeller som finns i **Azure Analysis
 
 Med CustomData-funktionen kan du lägga till ett radfilter när du visar Power BI-data i ditt program när du använder **Azure Analysis Services** som datakälla (visa Power BI-data som är anslutna till Azure Analysis Services i ditt program ).
 
-CustomData-funktionen tillåter sändning av fritext (sträng) med anslutningssträngegenskapen för CustomData. Analysis Services använder det här värdet via funktionen *CUSTOMDATA()*.
+CustomData-funktionen tillåter sändning av fritext (sträng) med anslutningssträngegenskapen för CustomData. Analysis Services använder det här värdet via funktionen *CUSTOMDATA()* .
 
-Det enda sättet att ha dynamisk RLS (som använder dynamiska värden för utvärdering av filter) i **Azure Analysis Services** är att använda funktionen *CUSTOMDATA()*.
+Det enda sättet att ha dynamisk RLS (som använder dynamiska värden för utvärdering av filter) i **Azure Analysis Services** är att använda funktionen *CUSTOMDATA()* .
 
 Du kan använda den i DAX-frågerollen, och den kan användas utan någon roll i en DAX-måttfråga.
 CustomData-funktionen ingår i tokengenereringen för följande artefakter: instrumentpanel, rapport och panel. En instrumentpanel kan ha flera CustomData-identiteter (en per panel/modell).
@@ -205,7 +204,7 @@ Här följer stegen för att börja konfigurera funktionen CustomData() med appe
 
     ![Skapa roll – Ange inställningar för medlemskap](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
 
-5. Ange din **radfilter** DAX-fråga med funktionen *CUSTOMDATA()*.
+5. Ange din **radfilter** DAX-fråga med funktionen *CUSTOMDATA()* .
 
     ![Skapa roll – Ange radfilter](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
@@ -241,9 +240,9 @@ När du bestämmer dig för att filtrera dina data i en rapport kan du använda 
 
 [JavaScript-filter](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) används för att tillåta användaren att använda en begränsad, definierad eller filtrerad vy av aktuella data. Användaren har dock fortfarande åtkomst till modellens schematabeller, kolumner och mått och kan potentiellt få åtkomst till alla data där. Begränsad åtkomst till data kan endast användas med RLS och inte via filtrering API: er på klientsidan.
 
-## <a name="token-based-identity-with-azure-sql-database-preview"></a>Tokenbaserad identitet med Azure SQL Database (förhandsversion)
+## <a name="token-based-identity-with-azure-sql-database"></a>Tokenbaserad identitet med Azure SQL Database
 
-Den **tokenbaserad identiteten** låter dig ange den effektiva identiteten för en inbäddad token med hjälp av en **Azure Active Directory (AAD)**-åtkomsttoken för en **Azure SQL Database**.
+Den **tokenbaserad identiteten** låter dig ange den effektiva identiteten för en inbäddad token med hjälp av en **Azure Active Directory (AAD)** -åtkomsttoken för en **Azure SQL Database**.
 
 Kunder som har sina data i **Azure SQL Database** kan nu dra nytta av en ny funktion för att hantera användare och deras åtkomst till data i Azure SQL vid integrering med **Power BI Embedded**.
 
@@ -332,7 +331,7 @@ Du kan inte ange den här behörigheten med hjälp av administratörsportalen. D
 * Om den underliggande datauppsättningen är en molnmodell (cachelagrad modell eller DirectQuery) måste den effektiva identiteten innehålla minst en roll, annars sker ingen rolltilldelning.
 * En lista över identiteter möjliggör flera identitetstoken för inbäddning av instrumentpanelen. För andra artefakter innehåller listan en enstaka identitet.
 
-### <a name="token-based-identity-limitations-preview"></a>Tokenbaserade identitetsbegränsningar (förhandsgranskning)
+### <a name="token-based-identity-limitations"></a>Begränsningar för tokenbaserade identiteter
 
 * Den här funktionen begränsar endast användning med Power BI Premium.
 * Funktionen fungerar inte med lokal SQL Server.

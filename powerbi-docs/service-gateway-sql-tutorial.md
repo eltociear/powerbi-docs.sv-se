@@ -2,7 +2,6 @@
 title: 'Självstudie: Ansluta till lokala data i SQL Server'
 description: Lär dig hur du använder SQL Server som en gatewaydatakälla, inklusive hur du uppdaterar data.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 91b6ee8971004a014b188f94142e90914ae3a3b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307405"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881536"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Uppdatera data från en lokal SQL Server-databas
 
@@ -131,7 +130,7 @@ I Power BI Desktop anslöt du direkt till din lokala SQL Server-databas, men Pow
 
 Nu har du anslutit din datauppsättning i Power BI till din SQL Server-databas lokalt, via en datagateway. Följ stegen nedan för att konfigurera ett uppdateringsschema. Uppdatera din datauppsättning enligt ett schema, för att se till att dina rapporter och instrumentpaneler alltid är uppdaterade med senaste data.
 
-1. I det vänstra navigeringsfönstret väljer du **Min arbetsyta** \> **Datauppsättningar**. Välj ellipsen ( **...** ) för datauppsättningen **AdventureWorksProducts**. Välj sedan **Uppdateringsschema**.
+1. I navigeringsfönstret öppnar du **Min arbetsyta** \> **Datauppsättningar**. Välj ellipsen ( **...** ) för datauppsättningen **AdventureWorksProducts**. Välj sedan **Uppdateringsschema**.
 
     > [!NOTE]
     > Kontrollera att du väljer ellipsen för **AdventureWorksProducts**-datauppsättningen och inte de tre punkterna för rapporten med samma namn. Snabbmenyn för **AdventureWorksProducts**-rapporten innehåller inte alternativet **Uppdateringsschema**.
@@ -149,7 +148,7 @@ Nu har du anslutit din datauppsättning i Power BI till din SQL Server-databas l
 
 ## <a name="perform-an-on-demand-refresh"></a>Utföra en uppdatering på begäran
 
-Nu när du har konfigurerat ett uppdateringsschema så uppdaterar Power BI datauppsättningen vid nästa schemalagda tidpunkt, inom en marginal på högst 15 minuter. Om du vill uppdatera data tidigare, till exempel testa din gateway och datakällskonfiguration, utför du en på begäran-uppdatering med hjälp av alternativet **Uppdatera nu** på datauppsättningsmenyn i det vänstra navigeringsfönstret. På begäran-uppdateringar påverkar inte nästa schemalagda uppdateringstid men de räknas mot den dagliga uppdateringsgränsen, enligt beskrivningen i det tidigare avsnittet.
+Nu när du har konfigurerat ett uppdateringsschema så uppdaterar Power BI datauppsättningen vid nästa schemalagda tidpunkt, inom en marginal på högst 15 minuter. Om du vill uppdatera datan tidigare, till exempel för att testa din gateway och konfigurationen av datakällan, utför du en uppdatering på begäran med alternativet **Uppdatera nu** i datamängdsmenyn i navigeringsfönstret. På begäran-uppdateringar påverkar inte nästa schemalagda uppdateringstid men de räknas mot den dagliga uppdateringsgränsen, enligt beskrivningen i det tidigare avsnittet.
 
 För att illustrera detta kan du simulera en ändring av exempeldata genom att uppdatera tabellen DimProduct i databasen AdventureWorksDW med SQL Server Management Studio (SSMS).
 
@@ -163,7 +162,7 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 Följ nu dessa steg så att uppdaterade data kan överföras via gateway-anslutningen till datauppsättningen och till rapporter i Power BI.
 
-1. I det vänstra navigeringsfönstret i Power BI-tjänsten väljer och expanderar du **Min arbetsyta**.
+1. I navigeringsfönstret i Power BI-tjänsten väljer du att expandera **Min arbetsyta**.
 
 2. Under **Datauppsättningar**, för datauppsättningen **AdventureWorksProducts** väljer du ellipsen ( **. . .** ). Välj sedan **Uppdatera nu**.
 

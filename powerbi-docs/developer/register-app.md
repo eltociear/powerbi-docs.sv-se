@@ -3,18 +3,17 @@ title: Registrera en app för att bädda in Power BI-innehåll
 description: Lär dig hur du registrerar ett program i Azure Active Directory för användning med inbäddning av Power BI-innehåll.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: eb9b5190341b50aa911f5d8aaca07bd7d04ba90d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269802"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880394"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrera en Azure AD-app för användning med Power BI
 
@@ -147,7 +146,7 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
    Värdet för **consentType** kan vara antingen **AllPrincipals** eller **Principal**.
 
    * **AllPrincipals** används av administratören för en klientorganisation för att bevilja behörigheter för alla användare i klientorganisationen.
-   * **Principal** används för att bevilja behörigheter för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}*.
+   * **Principal** används för att bevilja behörigheter för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}* .
 
      Du måste *bevilja behörigheter* för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
 
@@ -177,7 +176,7 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
    Värdet för **consentType** kan vara antingen **AllPrincipals** eller **Principal**.
 
    * **AllPrincipals** kan endast användas av en klientorganisationsadministratör för att bevilja behörigheter för alla användare i klientorganisationen.
-   * **Principal** används för att ge behörighet för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}*.
+   * **Principal** används för att ge behörighet för en specifik användare. I det här fallet bör ytterligare en egenskap läggas till i själva begäran, *principalId = {User_ObjectId}* .
 
    Du måste *bevilja behörigheter* för huvudkontot så att inte användarna uppmanas att ge sitt tillstånd av Azure AD, vilket inte är möjligt vid icke-interaktiv inloggning.
 
@@ -199,4 +198,4 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
 
 Nu när du har registrerat appen i Azure AD måste du autentisera användare i appen. Mer information finns i [Autentisera användare och hämta en Azure AD-åtkomsttoken för din Power BI-app](get-azuread-access-token.md).
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

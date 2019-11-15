@@ -3,55 +3,54 @@ title: Övervaka Power BI Premium-kapaciteter med hjälp av administratörsporta
 description: Använd Power BI-administratörsportalen för att övervaka dina Premium-kapaciteter.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 36b03a67e7c02702a70b6486880cc8eabf93e823
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0d1e0da498a7a2c78e86b643b8a86cb87d6d095a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564900"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856850"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Övervaka kapaciteter i administratörsportalen
 
-Den **hälsotillstånd** fliken i den **kapacitetsinställningarna** område i Admin portal innehåller en sammanfattning om din kapacitet och aktiverade arbetsbelastningar.  
+Fliken **Hälsa** i **Kapacitetsinställningar** i administratörsportalen innehåller en sammanfattning av din kapacitet och aktiverade arbetsbelastningar.  
 
-![Kapacitet på fliken hälsa i portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
+![Fliken Kapacitetshälsa i portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-Om du behöver mer omfattande mått kan använda den [Power BI Premium-kapacitet](service-admin-premium-monitor-capacity.md) app. Appen ger nedåt och filtrering och de mest detaljerade mätvärden för nästan alla aspekter som påverkar prestanda för kapacitet. Mer information finns i [övervakaren Premium-kapaciteter med appen](service-admin-premium-monitor-capacity.md).
+Om du behöver mer omfattande mätningar använder du appen [Kapacitetsmått för Power BI Premium](service-admin-premium-monitor-capacity.md). Appen innehåller detaljerad information och filtrering, samt de mest detaljerade måtten för i princip varje del som påverkar kapacitetsprestandan. Läs mer i [Övervaka Premium-kapaciteter med appen](service-admin-premium-monitor-capacity.md).
 
 ## <a name="system-metrics"></a>Systemmått
 
-På den **hälsotillstånd** på den högsta nivån, fliken processoranvändning och minnesanvändning ge en snabb överblick över de viktigaste mått för kapaciteten. De här måtten är kumulativa, inklusive alla aktiverade arbetsbelastningar för kapaciteten.
+På den högsta nivån på fliken **Hälsa** kan du med processor- och minnesanvändning få en snabb överblick över de viktigaste måtten för kapaciteten. Dessa mått är kumulativa och innefattar alla aktiverade arbetsbelastningar för kapaciteten.
 
 | **Mått** | **Beskrivning** |
 | --- | --- |
-| CPU-ANVÄNDNING | Genomsnittlig CPU-belastning, som en procentandel av total tillgänglig CPU. |
-| MINNESANVÄNDNING | Genomsnittlig användning av minne i gigabyte (GB).|
+| PROCESSORANVÄNDNING | Genomsnittlig processoranvändning, som en procentandel av den totala tillgängliga processorkapaciteten. |
+| MINNESANVÄNDNING | Genomsnittlig minnesanvändning i gigabyte (GB).|
 
-## <a name="workload-metrics"></a>Nyckelmått för arbetsbelastningen
+## <a name="workload-metrics"></a>Arbetsbelastningsmått
 
-För varje arbetsbelastning har aktiverats för kapaciteten. Processoranvändning och minnesanvändning visas.
+För varje arbetsbelastning som är aktiverad för kapaciteten. Processoranvändning och minnesanvändning visas.
 
 | **Mått** | **Beskrivning** |
 | --- | --- |
-| CPU-ANVÄNDNING | Genomsnittlig CPU-belastning, som en procentandel av total tillgänglig CPU. |
-| MINNESANVÄNDNING | Genomsnittlig användning av minne i gigabyte (GB).|
+| PROCESSORANVÄNDNING | Genomsnittlig processoranvändning, som en procentandel av den totala tillgängliga processorkapaciteten. |
+| MINNESANVÄNDNING | Genomsnittlig minnesanvändning i gigabyte (GB).|
 
-### <a name="detailed-workload-metrics"></a>Detaljerad arbetsbelastning
+### <a name="detailed-workload-metrics"></a>Detaljerade arbetsbelastningsmått
 
-Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas beror på arbetsbelastningen. Klicka på Expandera (nedåtpilen) om du vill visa detaljerade mätvärden för en arbetsbelastning.
+Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas beror på arbetsbelastningen. Klicka på expanderingspilen (nedåt) om du vill se detaljerade mått för en arbetsbelastning.
 
-![Expandera arbetsbelastning hälsotillstånd](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+![Expandera hälsotillstånd för arbetsbelastning](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
 
 #### <a name="dataflows"></a>Dataflöden
 
-##### <a name="dataflow-operations"></a>Dataflöde åtgärder
+##### <a name="dataflow-operations"></a>Dataflödesåtgärder
 
 | **Mått** | **Beskrivning** |
 | --- | --- |
@@ -59,7 +58,7 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 | Antal slutförda | Totalt antal lyckade uppdateringar för varje dataflöde.|
 | Genomsnittlig varaktighet (min) | Genomsnittlig varaktighet för uppdatering för dataflödet, mätt i minuter |
 | Maximal varaktighet (min) | Varaktigheten för den långvarigaste uppdateringen av dataflödet, i minuter. |
-| Snittväntetid (min) | Den genomsnittliga fördröjningen mellan schemalagd tid och start av en uppdatering av dataflödet, i minuter. |
+| Genomsnittlig väntetid (min) | Den genomsnittliga fördröjningen mellan schemalagd tid och start av en uppdatering av dataflödet, i minuter. |
 | Maximal väntetid (min) | Maximal väntetid för dataflödet, i minuter.  |
 
 #### <a name="datasets"></a>Datauppsättningar
@@ -69,12 +68,12 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 | **Mått** | **Beskrivning** |
 | --- | --- |
 | Totalt antal kärnor | Totalt antal uppdateringar för varje datauppsättning. |
-| Antal slutförda | Totalt antal lyckade uppdateringar för varje datauppsättning. |
-| Antal misslyckade | Totalt antal misslyckade uppdateringar för varje datauppsättning. |
-| Slutförandefrekvens  | Antal lyckade uppdateringar dividerat med Totalt antal uppdateringar ska mätas. Tillförlitlighet. |
+| Antal slutförda | Totalt antal lyckade uppdateringar för varje datamängd. |
+| Antal misslyckade | Totalt antal misslyckade uppdateringar för varje datamängd. |
+| Slutförandefrekvens  | Antal lyckade uppdateringar dividerat med det totala antalet uppdateringar som uppmätts. tillförlitlighet. |
 | Genomsnittlig varaktighet (min) | Den genomsnittliga varaktigheten för uppdateringen för datauppsättningen, i minuter.  |
 | Maximal varaktighet (min) | Varaktigheten för den långvarigaste uppdateringen av datauppsättningen, i minuter. |
-| Snittväntetid (min) | Den genomsnittliga fördröjningen mellan schemalagda tid och starttid för en uppdatering av datauppsättningen, i minuter. |
+| Genomsnittlig väntetid (min) | Den genomsnittliga fördröjningen mellan schemalagda tid och starttid för en uppdatering av datauppsättningen, i minuter. |
 | Maximal väntetid (min) | Den maximala väntetiden för datauppsättningen, i minuter. |
 
 ##### <a name="query"></a>Fråga
@@ -91,29 +90,29 @@ Varje arbetsbelastning har ytterligare mått. Vilken typ av mått som visas bero
 
 | **Mått** | **Beskrivning** |
 | --- | --- |
-| Modell-antal | Totalt antal borttagna datauppsättningen för den här kapaciteten. När en kapacitet drabbas av minnesbelastning avlägsnar noden en eller flera datauppsättningar från minnet. Datamängder som är inaktiva (utan frågor/uppdateringsåtgärder som körs för tillfället) avlägsnas först. Avlägsnandeordern baseras sedan på ett mått på ”minst nyligen använd” (LRU, Least Recently Used). |
+| Modellantal | Det totala antalet borttagna datamängder för denna kapacitet. När en kapacitet drabbas av minnesbelastning avlägsnar noden en eller flera datauppsättningar från minnet. Datamängder som är inaktiva (utan frågor/uppdateringsåtgärder som körs för tillfället) avlägsnas först. Avlägsnandeordern baseras sedan på ett mått på ”minst nyligen använd” (LRU, Least Recently Used). |
 
 #### <a name="paginated-reports"></a>Sidnumrerade rapporter
 
-##### <a name="report-execution"></a>Köra en hälsorapport
+##### <a name="report-execution"></a>Rapportkörning
 
 | **Mått** | **Beskrivning** |
 | --- | --- |
-| Antal körningar  | Hur många gånger som rapporten har körts och visas för användare.|
+| Antal körningar  | Antalet gånger som rapporten har körts och visats av användarna.|
 
-##### <a name="report-usage"></a>Rapportera användning
+##### <a name="report-usage"></a>Rapportanvändning
 
 | **Mått** | **Beskrivning** |
 | --- | --- |
-| Antal slutförda | Antal gånger som rapporten har setts av en användare. |
-| Antal misslyckade |Antal gånger som rapporten har setts av en användare.|
+| Antal slutförda | Antalet gånger som rapporten har visats av en användare. |
+| Antal misslyckade |Antalet gånger som rapporten har visats av en användare.|
 | Radantal |Antalet rader data i rapporten. |
-| Varaktighet för hämtning (ms) |Den genomsnittliga tid det tar att hämta data för rapporten, uttryckt i millisekunder. Långa varaktigheter kan indikera långsamma frågor eller andra problem med datakällan.  |
-| Bearbetning av varaktighet (ms) |Den genomsnittliga tid det tar att bearbeta data för en rapport, i millisekunder. |
-| Rendering varaktighet (ms) |Den genomsnittliga tid det tar att återge en rapport i webbläsaren, i millisekunder. |
+| Varaktighet för datahämtning (ms) |Den genomsnittliga tid det tar att hämta data för rapporten, uttryckt i millisekunder. Långa varaktigheter kan indikera långsamma frågor eller andra problem med datakällan.  |
+| Bearbetningstid (ms) |Den genomsnittliga tid det tar att bearbeta data för en rapport, i millisekunder. |
+| Renderingstid (ms) |Den genomsnittliga tid det tar att återge en rapport i webbläsaren, i millisekunder. |
 
 > [!NOTE]
-> Detaljerad mått för den **AI** arbetsbelastning är inte tillgängliga ännu.
+> Detaljerade mått för **AI-** arbetsbelastningen är ännu inte tillgängliga.
 
 ## <a name="next-steps"></a>Nästa steg
 

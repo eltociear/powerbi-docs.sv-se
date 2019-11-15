@@ -2,7 +2,6 @@
 title: 'Exempel på försäljning och marknadsföring för Power BI: Ta en rundtur'
 description: 'Exempel på försäljning och marknadsföring för Power BI: Ta en rundtur'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 31f42d7f53b3322717677d586266668fb2c0f26b
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391412"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873822"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exempel på försäljning och marknadsföring för Power BI: Ta en rundtur
 
@@ -56,11 +55,11 @@ Innan du kan använda exemplet, måste du först hämta det som ett [innehållsp
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Alternativt kan du ladda ned Exempel på försäljning och marknadsföring som en [.pbix-fil](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
+Alternativt kan du ladda ned Exempel på försäljning och marknadsföring som en [.pbix-fil](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529785). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529785). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Vad kan vi utläsa från instrumentpanelen?
 Vi ska starta våra rundtur på instrumentpanelen och titta på panelerna som CMO:n har valt att fästa. Vi kan se information om vår marknadsandel, försäljning och sentiment. Data uppdelas efter region, tid och konkurrens.
@@ -82,7 +81,7 @@ Med hjälp av frågor och svar kan du identifiera ytterligare information i data
 
    ![Fråga för Frågor och svar: Totalt antal enheter efter segment för VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Vår andel i kategorierna **Måttlighet** och **Bekvämlighet** är mycket hög. Det är i de här segmenten vi konkurrerar.
-4. Gå tillbaka till instrumentpanelen genom att välja **Exempel på försäljning och marknadsföring** i det övre navigeringsfältet.
+4. Gå tillbaka till instrumentpanelen genom att välja **Exempel på försäljning och marknadsföring** i det övre navigeringsfönstret.
 
 ### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Hur ser den totala marknadsandelen för enheter ut för kategorin (jämfört med region)?
 1. Lägg märke till panelen **YTD för totalt antal enheter efter tillverkare, region**. Vad är den totala marknadsandelen för enheter efter kategori?

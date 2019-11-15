@@ -2,7 +2,6 @@
 title: Den nya filterupplevelsen i Power BI-rapporter
 description: Filter i Power BI får nya funktioner och en ny design.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841250"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875150"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Den nya filterupplevelsen i Power BI-rapporter
 
@@ -44,7 +43,7 @@ Den nya filterupplevelsen är aktiverad som standard för nya rapporter. Du kan 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Aktivera nya filter för en befintlig rapport i Power BI Desktop
 
 1. I Power BI Desktop i en befintlig rapport väljer du **Arkiv** > **Alternativ och inställningar** > **Alternativ**
-2. Under **Aktuell fil** i det vänstra navigeringsfältet väljer du **Rapportinställningar**.
+2. I navigeringsfönstret under **Aktuell fil** väljer du **Rapportinställningar**.
 3. Under **Filtreringsupplevelse** väljer du **Aktivera det uppdaterade filterfönstret och visa filter i det visuella sidhuvudet för den här rapporten**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Aktivera nya filter för en befintlig rapport i tjänsten
@@ -238,5 +237,5 @@ Testa den nya filterupplevelsen. Lämna gärna feedback om den här funktionen o
 - [Filtrera och markera i rapporter](power-bi-reports-filters-and-highlighting.md)
 - [Olika typer av filter i Power BI](power-bi-report-filter-types.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

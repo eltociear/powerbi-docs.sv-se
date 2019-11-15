@@ -2,7 +2,6 @@
 title: Anslut till Acumatica med Power BI
 description: Acumatica för Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d2ee7a338f34e4c29fdbefae6518bede9e94badb
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 09e55aef3a1167143694c8e26a342cb1b8f0875c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186139"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873204"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Anslut till Acumatica med Power BI
 Med innehållspaketet Power BI Acumatica kan du snabbt få insikter om dina affärsmöjlighetsdata. Power BI hämtar dina data, inklusive affärsmöjligheter, konton och kunder och skapar sedan en standardinstrumentpanel och relaterade rapporter baserat på dessa data.
@@ -28,10 +27,10 @@ Anslut till [Acumatica-innehållspaketet](https://app.powerbi.com/getdata/servic
 >Det här Innehållspaketet kräver Acumatica v5.2 eller högre.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
+1. Välj **Hämta data** längst ned i navigeringsfönstret.
    
    ![](media/service-connect-to-acumatica/getdata3.png)
-2. I rutan **tjänster** väljer du **Hämta**.
+2. I rutan **Tjänster** väljer du **Hämta**.
    
    ![](media/service-connect-to-acumatica/getdata2.png)
 3. Välj **Acumatica** \> **hämta**.
@@ -47,7 +46,7 @@ Anslut till [Acumatica-innehållspaketet](https://app.powerbi.com/getdata/servic
 5. Som autentiseringsmetod väljer du **Basic**. Ange ditt användarnamn och lösenord från ditt Acumatica-konto och klicka sedan på **logga In**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datauppsättning i det vänstra navigeringsfönstret. Nya objekt markeras med en gul asterisk \* som försvinner när de valts, om du väljer instrumentpanelen så visas en layout som liknar den nedan:
+6. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datamängd i navigeringsfönstret. Nya objekt markeras med en gul asterisk \* som försvinner när de valts, om du väljer instrumentpanelen så visas en layout som liknar den nedan:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

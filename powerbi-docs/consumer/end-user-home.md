@@ -2,7 +2,6 @@
 title: Hitta innehåll i Power BI Service-tjänsten
 description: Starta på Hem-arbetsytan. Leta upp och öppna rapporter, instrumentpaneler och appar.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d97b5a93060869d65de6652af869b472baf8cd10
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: b905b738dc9fa38e390a94fb1b893aba8e45a0db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71077794"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863702"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Leta upp dina instrumentpaneler, rapporter och appar
 I Power BI syftar termen *innehåll* på appar, instrumentpaneler och rapporter. Innehållet skapas av Power BI-*designers* som delar det med kollegor som du. Ditt innehåll är tillgängligt och kan visas i Power BI-tjänsten. Den bästa platsen att börja arbeta med Power BI är din startsida.
@@ -28,7 +27,7 @@ När du loggar in öppnas Power BI och visar din arbetsyta såsom det visas i f�
 I Power BI-start finns tre olika sätt att hitta och visa ditt innehåll. Alla tre metoderna ger åtkomst till samma pool med innehåll och är bara olika sätt att komma åt det innehållet. Ibland är sökning det enklaste och snabbaste sättet att hitta något. Vid andra tillfällen är det bästa alternativet att välja ett *kort* på Hem-arbetsytan.
 
 - Hem-arbetsytan visar och organiserar ditt favoritinnehåll och ditt senaste innehåll samt rekommenderat innehåll och utbildningsresurser. Varje innehållsdel visas som ett *kort* med en rubrik och ikon. Om du väljer ett kort öppnas det innehållet.
-- På vänster sida finns ett navigeringsfönster som kallas navigeringsfältet. I det här fönstret organiseras ditt innehåll lite annorlunda: efter Favoriter, Senaste, Appar och Delat med mig. Härifrån kan du visa listor med innehåll och välja det som ska öppnas.
+- På vänster sida finns ett navigeringsfönster. I det här fönstret organiseras ditt innehåll lite annorlunda: efter Favoriter, Senaste, Appar och Delat med mig. Härifrån kan du visa listor med innehåll och välja det som ska öppnas.
 - I det övre högra hörnet kan du använda rutan för global sökning till att söka efter innehåll baserat på rubrik, namn eller nyckelord.
 
 I följande ämnen granskas vart och ett av dessa alternativ för sökning efter och visning av innehåll.
@@ -56,7 +55,7 @@ I nästa avsnitt visas det innehåll som du har besökt senast. Lägg märke til
 ### <a name="workspaces"></a>Arbetsytor
 Som Power BI-*användare* har du vanligtvis endast en arbetsyta: **Min arbetsyta**. 
 
-### <a name="shared-with-me"></a>Delad med mig
+### <a name="shared-with-me"></a>Delat med mig
 Kollegor delar appar med dig, men de kan även dela enskilda instrumentpaneler och rapporter. I avsnittet **Delat med mig** ser du att det finns tre instrumentpaneler och tre rapporter som dina kollegor har delat med dig.
 
 ### <a name="recommended-apps"></a>Rekommenderade appar
@@ -65,23 +64,23 @@ Baserat på dina aktivitets- och kontoinställningar visar Power BI en uppsättn
 ### <a name="learning-resources"></a>Inlärningsresurser
 Längst ned på Hem-arbetsytan finns en uppsättning utbildningsresurser. De exakta resurser som visas beror på din aktivitet, dina inställningar samt Power BI-administratören. 
  
-## <a name="explore-the-navigation-pane-nav-bar"></a>Utforska navigeringsfönstret (navigeringsfältet)
+## <a name="explore-the-nav-pane"></a>Utforska navigeringsfönstret
 
-![En skärmbild av navigeringsfältet för Power BI-tjänsten.](media/end-user-home/power-bi-nav-bar.png)
+![En skärmbild av navigeringsfönstret i Power BI-tjänsten.](media/end-user-home/power-bi-nav-bar.png)
 
 
-Använd det vänstra navigeringsfönstret (navigeringsfältet) för att hitta och flytta mellan instrumentpaneler, rapporter och appar. Ibland är det snabbast att använda navigeringsfältet för att komma till innehåll.
-Navigeringsfältet finns där när du öppnar startsidan och förblir statiskt när du öppnar andra områden i Power BI-tjänsten.
+Använd navigeringsfönstret för att hitta och flytta mellan instrumentpaneler, rapporter och appar. Ibland går det snabbast att använda navigeringsfönstret för att komma till innehåll.
+Navigeringsfönstret finns där när du öppnar startsidan och förblir kvar när du öppnar andra områden i Power BI-tjänsten.
   
-Navigeringsfältet organiserar ditt innehåll i containrar som liknar det du redan har sett på Hem-arbetsytan: Favoriter, Senaste, Appar och Delat med mig. Med hjälp av utfällbara menyer kan du visa endast det senaste innehållet i var och en av de här containrarna, eller så kan du gå till innehållslistor och se allt innehåll för varje containerkategori.
+Navigeringsfönstret organiserar ditt innehåll i containrar som liknar det du redan har sett på startarbetsytan: Favoriter, Senaste, Appar och Delat med mig. Med hjälp av utfällbara menyer kan du visa endast det senaste innehållet i var och en av de här containrarna, eller så kan du gå till innehållslistor och se allt innehåll för varje containerkategori.
  
 - Om du vill öppna ett av de här innehållsavsnitten och visa en lista över alla objekt väljer du rubriken.
 - Om du vill se det senaste i varje container väljer du den utfällbara menyn ( **>** ).
 
-    ![En video om hur du använder navigeringsfältet för Senaste](media/end-user-home/power-bi-nav-bar.gif)
+    ![En video om hur du använder navigeringsfönstret för Senaste](media/end-user-home/power-bi-nav-bar.gif)
 
  
-Navigeringsfältet är ett annat sätt att snabbt hitta det innehåll som du vill ha. Innehållet är ordnat på ett sätt som liknar Hem-arbetsytan, men det visas i listor i stället för på kort. 
+Navigeringsfönstret är ett annat sätt att snabbt hitta det innehåll som du vill ha. Innehållet är ordnat på ett sätt som liknar Hem-arbetsytan, men det visas i listor i stället för på kort. 
 
 ## <a name="search-all-of-your-content"></a>Söka igenom allt ditt innehåll
 Ibland är det snabbaste sättet att hitta ditt innehåll att söka efter det. Till exempel har du kanske upptäckt att en instrumentpanel som du inte har använt på ett tag inte visas på Hem-arbetsytan. Eller så minns du kanske att din kollega Aaron har delat den med dig, men du kommer inte ihåg vad den heter eller vilken typ av innehåll han har delat, huruvida det var en instrumentpanel eller en rapport.

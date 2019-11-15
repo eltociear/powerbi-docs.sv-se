@@ -2,7 +2,6 @@
 title: Exportera data från en visualisering i Power BI
 description: Exportera data från en rapportvisualisering och instrumentpanelvisualisering och visa dem i Excel.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
@@ -11,16 +10,16 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: be85769d8ae2340843a4ebdeb5c88ffc2ca86920
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 6ee1b0aa9ff6e3b0668d208775cbea50534b1572
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431108"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880879"
 ---
 # <a name="export-data-from-visualizations"></a>Exportera data från visualiseringar
 
-Om du vill se de data som Power BI använder för att skapa en visualisering, [kan du visa dessa data i Power BI](service-reports-show-data.md). Du kan också exportera dessa data till Excel som en *.xlsx*- eller *.csv-fil*. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten.
+Om du vill se de data som Power BI använder för att skapa en visualisering, [kan du visa dessa data i Power BI](service-reports-show-data.md). Du kan också exportera dessa data till Excel som en *.xlsx*- eller *.csv-fil*. Alternativet att exportera data kräver en Pro- eller Premium-licens och redigeringsbehörigheter till datauppsättningen och rapporten. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
 Här kan du se Will exportera data från en visualisering i sin rapport, spara den som *.xlsx-fil* och öppna den i Excel. Prova sedan själv genom att följa de stegvisa anvisningarna under videon.
 
@@ -152,7 +151,7 @@ Det är viktigt att observera att om Power BI-administratörens portalinställni
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Dessa begränsningar och överväganden gäller för Power BI Desktop och Power BI-tjänsten, inklusive Power BI Pro och Premium.
 
-- Om du vill exportera data från ett visuellt objekt, måste du ha [Skapa-behörighet för den underliggande datamängden](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
+- Om du vill exportera data från ett visuellt objekt, måste du ha [Skapa-behörighet för den underliggande datamängden](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
 
 -  Det maximala antal rader som **Power BI Desktop** och **Power BI-tjänsten** kan exportera från en **rapport i importläge** till en *.csv-fil* är 30 000.
 
@@ -160,13 +159,13 @@ Dessa begränsningar och överväganden gäller för Power BI Desktop och Power 
 
 - Exportera med hjälp av *Underliggande data* fungerar inte om:
 
-  - Datakällan är en liveanslutning till Analysis Services.
+  - datakällan är en direktanslutning i Azure Analysis Services eller SQL Server Analysis Services.
 
-  - Versionen är äldre än från 2016.
+  - versionen är äldre än från 2016.
 
-  - Tabellerna i modellen saknar en unik nyckel.
+  - tabellerna i modellen saknar en unik nyckel.
     
-  -  Om en administratör eller rapportdesigner har inaktiverat den här funktionen.
+  -  en administratör eller rapportdesigner har inaktiverat den här funktionen.
 
 - Export med *Underliggande data* fungerar inte om alternativet *Visa objekt utan data* är aktiverat för den visualisering som Power BI exporterar.
 
@@ -196,4 +195,4 @@ Dessa begränsningar och överväganden gäller för Power BI Desktop och Power 
 
 - Power BI-administratörer kan inaktivera export av data.
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

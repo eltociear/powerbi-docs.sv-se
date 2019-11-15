@@ -3,19 +3,18 @@ title: Använda egna krypteringsnycklar för Power BI (förhandsversion)
 description: Lär dig hur du använder egna krypteringsnycklar i Power BI Premium.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 10/24/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 39c6dc8a60be67f8f9e99e01ae1c7249166c5ddb
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 7ab5b09aa6341acf86e039c5951e4752e260876e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877745"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881869"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Använda egna krypteringsnycklar för Power BI (förhandsversion)
 
@@ -32,6 +31,7 @@ Om du vill använda BYOK måste du ladda upp data till Power BI-tjänsten från 
 - Liveanslutning till Analysis Services
 - Excel-arbetsböcker (såvida inte data först importeras till Power BI Desktop)
 - Push-datauppsättningar
+- [Stora modeller](service-premium-large-models.md)
 
 BYOK gäller enbart för den datamängd som är associerad med PBIX-filen, inte för frågeresultatcacher för paneler och visuella objekt.
 

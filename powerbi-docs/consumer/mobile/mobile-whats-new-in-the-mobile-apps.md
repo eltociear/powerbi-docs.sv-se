@@ -1,20 +1,19 @@
 ---
 title: Nyheter i Power BI-mobilapparna
 description: Nyheter i Power BI-mobilapparna
-author: mshenhav
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
-ms.author: mshenhav
-ms.openlocfilehash: fe8f21bbbd0886b8ff4046f744884e53f8822912
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.author: painbar
+ms.openlocfilehash: 1741646057137fbfb28a2c0ec42a7fd6428dc86e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327744"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876771"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -23,18 +22,36 @@ Relaterad information om nyheter finns i:
 * [Nyheter i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
 
+## <a name="october-2019"></a>Oktober 2019
+
+### <a name="cross-report-drillthrough"></a>Visa detaljerad information mellan rapporter
+
+Den här månaden lade vi till stöd för visning av detaljerad information mellan rapporter. Nu kan du trycka på en datapunkt för att visa detaljerad information om andra rapporter och rapportsidor. När du visar detaljerad information om en målsida, filtreras innehållet på sidan baserat på inställningarna för visning av detaljerad information.
+
+> [!NOTE]
+> Visningen av detaljerad information mellan rapporter är bara tillgängligt om det aktiverades när rapporten skapades. [Läs mer om visning av detaljerad information mellan rapporter](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+
+
+### <a name="data-sensitivity-labels"></a>Känslighetsetiketter för data
+
+Nu kan du se känslighetsetiketter som innehållsägare har angett för rapporter, instrumentpaneler, datamängder och dataflöden i syfte att klassificera datakänsligheten. Känslighetsetiketterna styr hur innehållet får delas med andra användare. [Läs mer om datakänslighetsetiketter i Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview).
+
+### <a name="support-for-custom-app-navigation-windows"></a>Stöd för anpassad appnavigering (Windows)
+
+Stöd för anpassad appnavigering har nu lagts till för Windows-enheter, tillsammans med iOS och Android (se [inlägget Nyheter i september](#september-2019)).
+
 ## <a name="september-2019"></a>September 2019
 
 ### <a name="support-for-custom-app-navigation-ios-and-android"></a>Stöd för anpassad appnavigering (iOS och Android)
 
 Vi har lagt till stöd för anpassad appnavigering. När du nu öppnar en app i Power BI Mobile är de anpassade navigeringsfunktionerna som byggts av appskaparen tillgängliga. Appnavigering kan ordnas efter innehåll och kan innehålla nya objekt som länkar och komprimerbara avsnitt.
-Läs mer om [anpassad navigering](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
+Läs mer om [anpassad navigering](https://powerbi.microsoft.com/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## <a name="august-2019"></a>Augusti 2019
 
 ### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Vi presenterar Power BI Mobile med nytt utseende (förhandsversion) (iOS och Android)
 
-Vi har uppdaterat vår app och lanserat nya upplevelser, lagt till en startsida som ger snabbåtkomst till ditt ofta använda innehåll och nya navigeringsfält som ger dig ett enkelt sätt att navigera i appen. Med de nya och uppdaterade upplevelserna går det snabbare och enklare att hitta det du behöver, när du behöver det.
+Vi har uppdaterat vår app och lanserat nya upplevelser, lagt till en startsida som ger snabbåtkomst till det innehåll du oftast använder, samt nya navigeringsfönster som gör det enkelt att navigera i appen. Med de nya och uppdaterade upplevelserna går det snabbare och enklare att hitta det du behöver, när du behöver det.
 Eftersom det nya utseendet är i förhandsversion måste du aktivera det för att kunna ta del av det.
 Läs mer om [det nya utseendet för Power BI](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -42,7 +59,7 @@ Läs mer om [det nya utseendet för Power BI](https://powerbi.microsoft.com/blog
 
 ### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Skyddad åtkomst med Azure Active Directory-programproxyn (iOS och Android)
 
-Vi har samarbetat med Azure Active Directory-team för att integrera mobila Power BI-program med Azure Active Directory- Programproxyn. Med den här konfigurationen kan du ansluta till en rapportserver inom företagsgränserna från Power BI Mobile-appen, utan att behöva konfigurera en komplex lokal konfiguration. Läs mer om [Integrera Power BI Mobile och Azure AD-programproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lär dig [hur du konfigurerar Azure AD-programproxy och Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+Vi har samarbetat med Azure Active Directory-team för att integrera mobila Power BI-program med Azure Active Directory- Programproxyn. Med den här konfigurationen kan du ansluta till en rapportserver inom företagsgränserna från Power BI Mobile-appen, utan att behöva konfigurera en komplex lokal konfiguration. Läs mer om [Integrera Power BI Mobile och Azure AD-programproxy](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Lär dig [hur du konfigurerar Azure AD-programproxy och Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juli 2019
 
@@ -423,7 +440,7 @@ Nu kan du rulla i stapel- och kolumndiagram i en rapport genom att trycka på sj
 #### <a name="ios-devices"></a>iOS-enheter
 **Ställ frågor om dina data med en förhandsversion av Frågor och svar** 
 
-Med Frågor och svar ställer du frågor om dina data med dina egna ord och Power BI ger svaren. Frågor och svar finns redan i Power BI-tjänsten på http://powerbi.com. Nu är de också [tillgängliga i mobilappen på din iPhone eller iPad](mobile-apps-ios-qna.md).
+Med Frågor och svar ställer du frågor om dina data med dina egna ord och Power BI ger svaren. Frågor och svar finns redan i Power BI-tjänsten på https://powerbi.com. Nu är de också [tillgängliga i mobilappen på din iPhone eller iPad](mobile-apps-ios-qna.md).
 
 **Anslut till mer än en SSRS-server** 
 
@@ -695,24 +712,24 @@ Power BI-teamet avslutade 2015 starkt med flera viktiga tillägg och uppdatering
 #### <a name="sql-server-2016-reporting-services-mobile-reports-in-ios"></a>Mobila SQL Server 2016 Reporting Services-rapporter i iOS
 Nu kan du visa dina mobila Microsoft SQL Server-rapporter i Power BI-appen på din iOS-enhet, både iPad och iPhone. Läs mer:
 
-* Blogginlägget om [SQL 16 SSRS i Power BI-appen för iOS](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
+* Blogginlägget om [SQL 16 SSRS i Power BI-appen för iOS](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
 * Titta närmare på [mobila Microsoft SQL Server-rapporter och KPI:er i iPhone- och iPad-apparnas](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) dokumentation
 
 #### <a name="power-bi-app-for-windows-10-phones"></a>Power BI-appen för Windows 10-telefoner
 Den nya Power BI-appen för Windows 10-telefoner är optimerad för pekanvändning och mobil produktivitet. Utforska instrumentpaneler och rapporter, bjud in kollegor för att titta närmare på data och dela insikter via e-post för att informera ditt team. Dessutom kan du [fästa Power BI-instrumentpaneler på din Windows-telefons startskärm](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-* Mer information finns i blogginlägget om [Power BI-appar för Windows 10-telefoner](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+* Mer information finns i blogginlägget om [Power BI-appar för Windows 10-telefoner](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
 * [Kom igång med Power BI-mobilappen för Windows 10-telefoner](mobile-windows-10-phone-app-get-started.md).
 
 #### <a name="other-additions"></a>Andra tillägg
-Mer information finns i [blogginlägget om Power BI-mobilappar för december](http://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx).
+Mer information finns i [blogginlägget om Power BI-mobilappar för december](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx).
 
 * Få ett meddelande när en kollega delar en instrumentpanel med dig. (iOS)
 * Visa hela fästa rapportsidor på dina instrumentpaneler. (iOS and Android)
-* [Skanna en QR-kod](http://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) och gå direkt till en relevant panel på din Android-telefon.
+* [Skanna en QR-kod](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) och gå direkt till en relevant panel på din Android-telefon.
 
 ### <a name="november-2015"></a>November 2015
-Mer information finns i [blogginlägget om Power BI-mobilappar för november 2015](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+Mer information finns i [blogginlägget om Power BI-mobilappar för november 2015](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
 
 #### <a name="all-power-bi-mobile-apps"></a>Alla Power BI-mobilappar
 * Ett nytt välkomnande
@@ -729,7 +746,7 @@ Mer information finns i [blogginlägget om Power BI-mobilappar för november 201
 * [Länka direkt från en panel till en specifik URL](../../service-dashboard-edit-tile.md#hyperlink).
 
 ### <a name="october-2015"></a>Oktober 2015
-Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av oktober](http://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
+Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av oktober](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
 
 #### <a name="all-power-bi-mobile-apps"></a>Alla Power BI-mobilappar
 * Linjediagram med en procentandelsbaserad y-axel beräknar nu det visuella objektets intervall enligt dina faktiska data. Grafen startar nu från den lägsta datapunkten i diagrammet, i stället för från ett standardvärde.
@@ -741,12 +758,12 @@ Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av ok
 * Håll dig uppdaterad om dina gruppers senaste instrumentpaneler – få ett meddelande på din iPhone varje gång en gruppmedlem lägger till en instrumentpanel i en av dina grupper.
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
-* Du kan nu visa instrumentpaneler vågrätt, genom att bara vrida på telefonen. Läs mer om [liggande läge i iPhone-appen](http://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+* Du kan nu visa instrumentpaneler vågrätt, genom att bara vrida på telefonen. Läs mer om [liggande läge i iPhone-appen](https://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>September 2015
-Förbättringar i Power BI-mobilapparna – Android, iOS (iPhone och iPad) och Windows. Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av september](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
+Förbättringar i Power BI-mobilapparna – Android, iOS (iPhone och iPad) och Windows. Mer information finns i [blogginlägget om Power BI-mobilappar för mitten av september](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
 #### <a name="android"></a>Android
 * Stöd för grupparbetsytor: Samarbeta med kolleger i grupparbetsytor. 

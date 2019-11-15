@@ -2,7 +2,6 @@
 title: Jämföra Power BI Desktop och Power BI-tjänsten
 description: Power BI Desktop är ett komplett verktyg för dataanalys och rapportskapande. Power BI-tjänsten är en molnbaserad onlinetjänst för enklare rapportredigering och samarbete för team och företag.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e2985f4a27d8471bcfce80d40f2263e2be07d38c
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73064363"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879024"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Jämföra Power BI Desktop och Power BI-tjänsten
 
@@ -38,7 +37,7 @@ I både programmet och tjänsten skapar du och redigerar *rapporter*. En rapport
 
 Rapportredigerarna i Power BI Desktop och i tjänsten liknar varandra. De består av tre avsnitt:  
 
-1. De övre navigeringsfälten, skiljer sig i Power BI Desktop och tjänsten    
+1. De övre navigeringsfönstren ser olika ut i Power BI Desktop och tjänsten    
 2. Rapportarbetsytan     
 3. Fönstren **Fält**, **Visualiseringar** och **Filter**
 

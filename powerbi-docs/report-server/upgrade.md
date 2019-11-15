@@ -3,25 +3,24 @@ title: Uppgradera Power BI-rapportserver
 description: Lär dig mer om att uppgradera Power BI-rapportservern.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839703"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873966"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Uppgradera Power BI-rapportserver
 
 Lär dig mer om att uppgradera Power BI-rapportservern.
 
- **Hämta** ![hämta](media/upgrade/download.png "hämta")
+ **Ladda ned** ![nedladdning](media/upgrade/download.png "ladda ned")
 
 Om du vill ladda ned Power BI-rapportservern och Power BI Desktop som är optimerat för Power BI-rapportserver, går du till [Lokal rapportering med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
@@ -63,7 +62,7 @@ Det är enkelt att uppgradera Power BI-rapportservern. Det krävs endast några 
 
 2. Välj **Uppgradera Power BI-rapportserver**.
 
-    ![Uppgradera Power BI-rapportserver](media/upgrade/reportserver-upgrade1.png "Uppgradera Power BI-rapportserver")
+    ![Uppgradera Power BI-rapportservern](media/upgrade/reportserver-upgrade1.png "Uppgradera Power BI-rapportservern")
 
 3. Läs och godkänn licensvillkoren och välj sedan **Uppgradera**.
 

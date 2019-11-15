@@ -2,19 +2,18 @@
 title: Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 description: Ställ frågor om exempeldata med egna ord med det virtuella analysverktyget Frågor och svar i Power BI-mobilappen på iOS-enheten.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60977573"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879384"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Det virtuella analysverktyget Frågor och svar i iOS-appar – Power BI
 
@@ -35,7 +34,7 @@ Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnad
 ## <a name="prerequisites"></a>Förutsättningar
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Installera Power BI för iOS-appen
-[Hämta iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Hämta iPhone-appen") från Apples App Store till din iPad, iPhone eller iPod Touch.
+[Ladda ned iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Ladda ned iPhone-appen") från Apple App Store till din iPad, iPhone eller iPod Touch.
 
 Dessa versioner stöder Power BI för iOS-appen:
 - iPad med iOS 10 eller senare.
@@ -49,7 +48,7 @@ Det första steget är att hämta exemplen på detaljhandelanalys och affärsmö
 
 1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
 
-2. I det vänstra navigeringsfönstret väljer du **Arbetsytor**, **Min arbetsyta**.
+2. I navigeringsfönstret väljer du **Arbetsytor**, **Min arbetsyta**.
 
 3. Längst ned i vänster hörn väljer du **Hämta data**.
    

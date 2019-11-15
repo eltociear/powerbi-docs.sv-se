@@ -2,7 +2,6 @@
 title: Ansluta till Office365Mon med Power BI
 description: Office365Mon för Power BI
 author: teddybercovitz
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 8/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5d31eccd52164bb4d1ff37532d89dc7e147693d3
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060837"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854728"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Ansluta till Office365Mon med Power BI
 Det är lätt att analysera dina Office 365-avbrott och hälsoprestandadata med Power BI och Office365Mon-mallappen. Power BI hämtar dina data, inklusive avbrott och hälsoavsökningar, och skapar sedan en anpassad instrumentpanel och rapporter som baseras på dessa data.
@@ -26,7 +25,7 @@ Anslut till [Office365Mon-mallappen](https://app.powerbi.com/groups/me/getdata/s
 >Du måste ha ett Office365Mon-administratörskonto för att kunna ansluta och läsa in Power BI-mallappen.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
-1. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret.
+1. Välj **Hämta data** längst ned i navigeringsfönstret.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
 2. I rutan **Tjänster** väljer du **Hämta**.
@@ -42,7 +41,7 @@ Anslut till [Office365Mon-mallappen](https://app.powerbi.com/groups/me/getdata/s
    ![](media/service-connect-to-office365mon/creds.png)
    
    ![](media/service-connect-to-office365mon/creds2.png)
-5. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datauppsättning i det vänstra navigeringsfönstret. Nya objekt har markerats med en gul asterisk \*, välj Office365Mon-posten.
+5. När Power BI har importerat dessa data, visas en ny instrumentpanel, rapport och datamängd i navigeringsfönstret. Nya objekt har markerats med en gul asterisk \*, välj Office365Mon-posten.
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 

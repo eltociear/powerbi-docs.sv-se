@@ -3,18 +3,17 @@ title: Utveckla ett visuellt Power BI-objekt
 description: En självstudiekurs om hur du utvecklar ett anpassat visuellt objekt i Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 1aa269bc738b873ac36498e2ecf52f2cf06c209d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 6b6338e7f8e3e359d51639358376c0fcf49fbac1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72308707"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880307"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Självstudie: Utveckla ett visuellt Power BI-objekt
 
@@ -238,7 +237,7 @@ I det här avsnittet ska vi testa det anpassade visuella CircleCard-objektet gen
 
     ![Hämta data](media/custom-visual-develop-tutorial/get-data.png) ![Lokal fil](media/custom-visual-develop-tutorial/local-file.png)
 
-    Om du vill visa rapporten väljer du **US_Sales_Analysis** från avsnittet **Rapport** i navigeringsfönstret till vänster.
+    Om du vill se rapporten väljer du **US_Sales_Analysis** från avsnittet **Rapport** i navigeringsfönstret till vänster.
 
     ![Exempel på anpassat visuellt skrivbord](media/custom-visual-develop-tutorial/custom-visual-sample.png)
 

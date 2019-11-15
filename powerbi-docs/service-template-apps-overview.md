@@ -2,19 +2,18 @@
 title: Vad är Power BI-mallappar?
 description: Den här artikeln ger en översikt över Power BI-mallappar. Lär dig hur du skapar Power BI-appar med lite eller ingen kodning och distribuerar dem till Power BI-kunder.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: tebercov
-ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 4b4e32f787d2d262d604ff0745f8c028e9fff949
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408215"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871328"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Vad är Power BI-mallappar?
 
@@ -61,7 +60,7 @@ Här är de övergripande stegen.
 
 1. Skicka innehållet till Cloud Partner Platform för publicering. 
 
-1. Se till att ditt erbjudande är ”Live” (publicerad) i AppSource och flytta appen till produktion i Power BI.
+1. Se till att ditt erbjudande är aktivt (publicerat) i AppSource och flytta appen till produktion i Power BI.
 2. Nu kan du börja utveckla nästa version i samma arbetsyta i förproduktion. 
 
 ## <a name="requirements"></a>Krav
@@ -78,7 +77,7 @@ För att kunna publicera en mallapp i Power BI-tjänsten och AppSource måste du
 - Granska appen noggrant genom att installera den i din klientorganisation och i en annan klientorganisation. Kontrollera att kunderna bara kan se det som du vill att de ska se. 
 - Använd AppSource som onlinebutik för din app. På så sätt kan alla som använder Power BI hitta din app. 
 - Överväg att erbjuda en mallapp för separata unika scenarier. 
-- Aktivera dataanpassning, till exempel stöd för anpassade anslutningar och konfiguration av parametrar genom installationsprogrammet.
+- Aktivera dataanpassning, till exempel stöd för anpassade anslutningar och konfiguration av parametrar i installationsprogrammet.
 
 Se [Tips för att skapa mallappar i Power BI](service-template-apps-tips.md) för fler förslag.
 

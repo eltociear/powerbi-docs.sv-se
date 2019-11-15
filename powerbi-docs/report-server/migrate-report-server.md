@@ -3,18 +3,17 @@ title: Migrera en rapportserverinstallation
 description: Läs hur du migrerar din befintliga SQL Server Reporting Services-instans till en instans av Power BI-rapportserver.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/17/2019
-ms.openlocfilehash: 01c87d425b1ada76e322af411188a4a2717562d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: bc3b196313266be64e7a63a66f33ef4020574d2a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770182"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858875"
 ---
 # <a name="migrate-a-report-server-installation"></a>Migrera en rapportserverinstallation
 
@@ -35,7 +34,7 @@ Migrering definieras som att flytta programdatafiler till en ny Power BI-rapport
 
 En migrering från en instans av SSRS (enhetligt läge) till Power BI-rapportserver består av några steg.
 
-![Migrera från enhetligt SSRS-läge till Power BI-rapportserver](media/migrate-report-server/migrate-from-ssrs-native.png "Migrera från enhetligt SSRS-läge till Power BI-rapportserver")
+![Migrera från enhetligt SSRS-läge till Power BI-rapportservern](media/migrate-report-server/migrate-from-ssrs-native.png "Migrera från enhetligt SSRS-läge till Power BI-rapportservern")
 
 > [!NOTE]
 > SQL Server 2008 Reporting Services och senare har stöd för migrering.
@@ -55,7 +54,7 @@ En migrering från en instans av SSRS (enhetligt läge) till Power BI-rapportser
 
 Det är inte lika enkelt att migrera från en SSRS (SharePoint-integrerat läge) till Power BI-rapportserver som det är i enhetligt läge. De här stegen ger lite vägledning, men du kan ha andra filer och tillgångar inom SharePoint som du behöver hantera utanför de här stegen.
 
-![Migrera från SSRS SharePoint-integrerat läge till Power BI-rapportserver](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Migrera från SSRS SharePoint-integrerat läge till Power BI-rapportserver")
+![Migrera från SSRS SharePoint-integrerat läge till Power BI-rapportservern](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Migrera från SSRS SharePoint-integrerat läge till Power BI-rapportservern")
 
 Du måste migrera det specifika rapportserverinnehållet från SharePoint till din Power BI-rapportserver. Du måste redan ha installerat Power BI-rapportserver någonstans i din miljö. Mer information om hur du installerar Power BI-rapportserver finns i [Installera Power BI-rapportserver](install-report-server.md).
 
@@ -70,10 +69,10 @@ Om du vill kopiera rapportserverinnehållet från din SharePoint-miljö till Pow
 Sample Script
 rs.exe
 -i ssrs_migration.rss -e Mgmt2010
--s http://SourceServer/_vti_bin/reportserver
+-s https://SourceServer/_vti_bin/reportserver
 -v st="sites/bi" -v f="Shared Documents“
 -u Domain\User1 -p Password
--v ts=http://TargetServer/reportserver
+-v ts=https://TargetServer/reportserver
 -v tu="Domain\User" -v tp="Password"
 ```
 

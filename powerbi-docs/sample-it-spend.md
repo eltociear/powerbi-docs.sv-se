@@ -2,7 +2,6 @@
 title: 'Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur'
 description: 'Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: bc6b35b6401f4424a3a5120cb7c28437da9a2a48
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6f39f8b5c288c1dbff3cd87c7beee27683cfeae2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462253"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873910"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på IT-utgiftsanalys för Power BI: Ta en rundtur
 
@@ -54,11 +53,11 @@ Du behöver inte en licens för Power BI för att utforska exempel i Power BI De
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även ladda ned Exempel på IT-utgiftsanalys som en [.pbix-fil](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
+Du kan även ladda ned Exempel på IT-utgiftsanalys som en [.pbix-fil](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) som är avsedd för användning med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529783). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529783). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="it-spend-analysis-sample-dashboard"></a>Instrumentpanelen för Exempel på IT-utgiftsanalys
 De två sifferpanelerna på instrumentpanelens vänstra sida, **Var Plan %** och **Avvikelse senaste uppskattning i %, kvartal 3**, ger oss en översikt över hur bra det går jämfört med planen och jämfört med senaste kvartalsuppskattningen (LE3 = senaste uppskattningen för kvartal 3). Generellt sett är vi ungefär 6 % över planen. Vi ska undersöka orsaken till den här avvikelsen – när, var, och i vilken kategori.
@@ -78,7 +77,7 @@ Men det kan vara vilseledande att bara titta på det här diagrammet och dra slu
     Nu tar vi och undersöker vilken kategori i USA som orsakar avvikelsen.
 
 ## <a name="ask-questions-of-the-data"></a>Ställ frågor om dina data
-1. Välj **Exempel på IT-utgiftsanalys** i det övre navigeringsfältet för att återgå till exemplets instrumentpanel.
+1. Välj **Exempel på IT-utgiftsanalys** i det övre navigeringsfönstret för att återgå till exemplets instrumentpanel.
 2. Välj **Ställ en fråga om dina data**.
 3. Välj **vad är planen efter IT-område** i listan **Frågor för att komma igång** till vänster.
 

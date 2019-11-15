@@ -2,20 +2,19 @@
 title: Stora datamängder, datapunktsbegränsningar och datastrategier
 description: Databegränsningar för visuella objekt och strategier för dataminskning
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b45d0fb20dbb9a697e6d079a6b28c0fc86290627
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61276445"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881061"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Datapunktsbegränsningar och strategier efter visuell typ
 
@@ -64,7 +63,7 @@ Se [hur radsampling fungerar](../desktop-high-density-sampling.md#how-the-new-li
 - I kategoriskt läge
     - Kategorier: Virtualisering med fönster med 500 rader i taget
     - Serie: Översta 60
-    - I skalärt läge (kan även använda dynamiska gränser)
+    - I skalärt läge (kan använda dynamiska gränser)
         - Maximalt antal punkter: 10 000
         - Kategorier: Exempel på 500 värden
         - Serie: Översta 20 värden
@@ -73,7 +72,7 @@ Se [hur radsampling fungerar](../desktop-high-density-sampling.md#how-the-new-li
 - Värden: Virtualisering med fönster med 200 rader i taget
 
 ### <a name="combo-chart"></a>Kombinationsdiagram
- Använder samma strategier som stapeldiagram. Observera att raden i det **kombinationsdiagrammet** inte använder algoritmen för högdensitetssampling som **linjediagrammet** använder.
+ Använder samma strategier som stapeldiagram. Observera att raden i **kombinationsdiagrammet** inte använder högdensitetsalgoritmen som **linjediagrammet** använder.
 
 ### <a name="custom-visuals"></a>Anpassade visuella objekt
 Kan få upp till 30 000, men det är upp till författarna av de visuella objekten att ange vilka strategier som ska användas
@@ -109,12 +108,12 @@ Se [Högdensitetssampling](../desktop-high-density-sampling.md)
 Beroende på konfigurationen, kan en karta ha:
 - Plats: 3 500 översta
 - Plats, storlek: 3 500 översta
-- Plats, latitud- och longitudaggregeringar (+/-storlek): 3 500 översta
+- Aggregeringar för plats, latitud och longitud (+/-storlek): 3 500 översta
 - Latitud, longitud: se [Punktdiagram med hög densitet](desktop-high-density-scatter-charts.md)
 - Latitud, longitud, storlek: 3 500 översta
 - Förklaring, latitud, longitud: se [Punktdiagram med hög densitet](desktop-high-density-scatter-charts.md)
-- Förklaring, latitud, longitud, storlek: Översta 233 förklaringar, översta 15 latitud och longitud (det kan använda statistik eller dynamiska gränser)
-- Plats, förklaring, latitud, longitud som aggregeringar (+/-storlek): Översta 233 platser, översta 15 förklaringar (det kan använda statistik eller dynamiska gränser)
+- Förklaring, latitud, longitud, storlek: Översta 233 förklaringarna, översta 15 latituder och longituder (kan använda statistik eller dynamiska gränser)
+- Plats, förklaring, latitud, longitud som aggregeringar (+/-storlek): Översta 233 platserna, översta 15 förklaringarna (kan använda statistik eller dynamiska gränser)
 
 ### <a name="matrix"></a>Matris
 - Rader: Virtualisering med fönster med 500 rader i taget
@@ -142,21 +141,21 @@ Begränsat till 150 000 rader. Om fler än 150 000 rader har valts används end
 - I kategoriskt läge
     - Kategorier: Virtualisering (med fönster) med 500 rader i taget
     - Serie: Översta 60
-    - I skalärt läge (kan även använda dynamiska gränser)
+    - I skalärt läge (kan använda dynamiska gränser)
         - Maximalt antal punkter: 10 000
         - Kategorier: Exempel på 500 värden
         - Serie: Översta 20 värden
 
-### <a name="shape-map"></a>Formkarta
-Den fyllda kartan kan använda statistik eller dynamiska gränser. 
-- Maximalt antal punkter: 10 000
+### <a name="shape-map-preview"></a>Formkarta (förhandsversion)
+Formkartan kan använda statistik eller dynamiska gränser. 
+- Maximalt antal punkter: 1500
 - Kategorier: 500 översta
 - Serie (när det finns både X- och Y): Översta 20
 
 ### <a name="table"></a>Tabell
 - Värden: Virtualisering (med fönster) med 500 rader i taget
 
-### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Trädkarta (det kan använda statistik eller dynamiska gränser)
+### <a name="tree-map-could-use-statistics-or-dynamic-limits"></a>Trädkarta (kan använda statistik eller dynamiska gränser)
 - Maximalt antal punkter: 3 500
 - Grupp: 500 översta
 - Detaljer: Översta 20

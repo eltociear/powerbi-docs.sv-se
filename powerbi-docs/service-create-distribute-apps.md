@@ -2,19 +2,18 @@
 title: Publicera en app i Power BI
 description: Lär dig hur du publicerar de nya apparna, som är samlingar av instrumentpaneler och rapporter med inbyggd navigering.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020218"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853647"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicera en app i Power BI
 
@@ -115,7 +114,7 @@ Du kan anpassa appnavigering ytterligare genom att göra följande:
 * Byta namn på objekt i **Rapportinformation**, **Instrumentpanelsinformation** och **Arbetsboksinformation**.
 * Dölja vissa objekt från navigeringen.
 * Använda alternativet **Nytt** för att lägga till **Avsnitt** i grupprelaterat innehåll.
-* Använda alternativet **Nytt** för att lägga till en **länk** till en extern resurs i det vänstra navigeringsfältet. 
+* Använd alternativet **Nytt** för att lägga till en **länk** till en extern resurs i navigeringsfönstret. 
 
 När du lägger till en **länk** kan du i **Länkinformation** välja var länken öppnas. Som standard öppnas länkar på den **aktuella fliken**, men du kan välja **Ny flik** eller **Innehållsområdet**. 
 
@@ -179,7 +178,7 @@ Alla medlemmar för en arbetsyta kan avpublicera appen.
 >När du ta bort en app, förlorar app-användare sina anpassningar. De förlorar alla personliga bokmärken, kommentarer eller prenumerationer som associeras med innehållet i appen. Ta endast bort en app om du behöver ta bort den.
 > 
 
-* På en arbetsyta väljer du ellipsen (**…**) i det övre högra hörnet > **Avpublicera appen**.
+* På en arbetsyta väljer du ellipsen ( **…** ) i det övre högra hörnet > **Avpublicera appen**.
   
      ![Ta bort appen](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
@@ -187,7 +186,7 @@ Den här åtgärden avinstallerar appen för alla som du har publicerat den till
 
 ## <a name="view-your-published-app"></a>Visa din publicerade app
 
-När dina appkonsumenter öppnar appen ser de den navigering som du skapade i stället för det standardmässiga vänstra navigeringsfältet i Power BI. Appnavigeringen visar en lista över rapporter och instrumentpaneler i de avsnitt som du har definierat. Dessutom visas de enskilda sidorna i varje rapport i stället för bara rapportnamnet.
+När dina appanvändare öppnar appen ser de den navigering som du skapade, i stället för standardnavigeringsfönstret i Power BI. Appnavigeringen visar en lista över rapporter och instrumentpaneler i de avsnitt som du har definierat. Dessutom visas de enskilda sidorna i varje rapport i stället för bara rapportnamnet.
 
 ![App med navigering](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
@@ -203,4 +202,4 @@ Saker att tänka på när det gäller att publicera appar:
 * [Installera och använda appar i Power BI](consumer/end-user-apps.md)
 * [Power BI-appar för externa tjänster](service-connect-to-services.md)
 * [Power BI-administratörsportalen](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

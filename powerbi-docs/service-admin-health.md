@@ -2,7 +2,6 @@
 title: Spåra Power BI-tjänstens hälsa i Office 365
 description: Läs mer om hur du visar aktuell och historisk tjänsthälsa i Administrationscenter för Microsoft 365.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 579950320c3193e9cc1921a06d5b121ff0b58ae0
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 0e944dfa34bec1e1c1816cf80d7dc2df7252b65a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075368"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857686"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Spåra Power BI-tjänstens hälsa i Office 365
 
@@ -29,7 +28,7 @@ Mer information om roller finns i [Administratörsroller relaterade till Power B
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal).
 
-1. I det vänstra navigeringsfältet väljer du **Visa alla** > **Hälsa** > **Tjänstens hälsa**. Panelen Tjänstens hälsa visas:
+1. I navigeringsfönstret väljer du **Visa alla** > **Hälsa** > **Tjänstens hälsa**. Panelen Tjänstens hälsa visas:
 
     ![Skärmbild av administrationscentret för Microsoft 365 med alternativen för hälsa och tjänstens hälsa framhävda.](media/service-admin-health/service-health-tile.png)
 

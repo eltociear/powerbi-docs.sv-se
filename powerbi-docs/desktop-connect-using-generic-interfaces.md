@@ -2,7 +2,6 @@
 title: Ansluta till data med hjälp av generiska gränssnitt i Power BI Desktop
 description: Lär dig hur du ansluter olika datakällor med generiska gränssnitt i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ac121ee5154a9d343a912904b20d3244ebee59c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b553d9341723c9b44abce57a384d4c7ba76e00a2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513722"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868983"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Ansluta till data med hjälp av generiska gränssnitt i Power BI Desktop
 Du kan ansluta till en mängd olika datakällor i **Power BI Desktop** med hjälp av inbyggda dataanslutningar, från **Access-databaser** till **Zendesk**-resurser, vilket visas i fönstret **Hämta data**. Du kan också ansluta till alla möjliga typer av *andra* datakällor för att ytterligare utöka dina anslutningsmöjligheter, med hjälp av generiska gränssnitt (exempelvis **ODBC** eller **REST API:er**) som är inbyggda i **Power BI Desktop**.
@@ -48,16 +47,16 @@ I följande lista beskrivs några exempel på datakällorna som **Power BI Deskt
 
 | Allmän anslutningsapp för Power BI Desktop | Extern datakälla | Länk till mer information |
 | --- | --- | --- |
-| ODBC |Cassandra |[Cassandra ODBC-drivrutin](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
+| ODBC |Cassandra |[Cassandra ODBC-drivrutin](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
 | ODBC |Couchbase DB |[Couchbase och Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
-| ODBC |DynamoDB |[DynamoDB ODBC-drivrutin](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
-| ODBC |Google BigQuery |[BigQuery ODBC-drivrutinen](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |HBase |[HBase ODBC-drivrutin](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
-| ODBC |Hive |[Hbase ODBC-drivrutin](http://www.simba.com/drivers/hive-odbc-jdbc/) |
+| ODBC |DynamoDB |[DynamoDB ODBC-drivrutin](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
+| ODBC |Google BigQuery |[BigQuery ODBC-drivrutinen](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
+| ODBC |HBase |[HBase ODBC-drivrutin](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBC |Hive |[Hbase ODBC-drivrutin](https://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[IBM Netezza-information](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
-| ODBC |Presto |[Presto ODBC-drivrutin](http://www.simba.com/drivers/presto-odbc-jdbc/) |
+| ODBC |Presto |[Presto ODBC-drivrutin](https://www.simba.com/drivers/presto-odbc-jdbc/) |
 | ODBC |Project Online |[Project Online, artikel](desktop-project-online-connect-to-data.md) |
-| ODBC |Progress OpenEdge |[Blogginlägg om Progress OpenEdge ODBC-drivrutinen](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.progress.com%2Fblogs%2Fconnect-microsoft-power-bi-to-openedge-via-odbc-driver&data=02%7C01%7CMatt.Masson%40microsoft.com%7C5e63742e6c454308b58a08d4034b5923%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636137069555329811&sdata=gSu2Rq3vZ0uBVOgjaXxd8Y3uBf%2B8DidX6PG33jwAduY%3D&reserved=0) |
+| ODBC |Progress OpenEdge |[Blogginlägg om Progress OpenEdge ODBC-drivrutinen](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>Datakällor som är tillgängliga via OLE DB
 Med anslutningsappen **OLE DB** i **Power BI Desktop** kan du importera data från en OLE DB-drivrutin genom att ange en *anslutningssträng*. Som ett alternativ kan du också ange ett SQL-uttryck som ska köras mot OLE DB-drivrutinen.

@@ -2,7 +2,6 @@
 title: Tips för att skapa snygga rapporter
 description: Tips om hur du skapar rapporter i Power BI-tjänsten och Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d7f2c83cf1d0f29f2c0d0c6e621a253acdd3ce41
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721351"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860888"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips om hur du skapar rapporter i Power BI Desktop och Power BI-tjänsten
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop, Power BI-tjänsten *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad.
@@ -115,11 +114,11 @@ Låt oss ta en titt på ett exempel:
 
 Om vi hämtar datauppsättningar från en aktiv kundsupportbegäran och från en annan datauppsättningar med arbetsobjekt med scheman som följande:
 
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
+> CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
 >
 >
 
-När vi vill spåra alla incidenter och arbetsobjekt som hör till ett specifikt CustomerName skapar vi inte bara en relation mellan dessa två datamängder.  Vissa WorkItems kan inte vara relaterade till CustomerName, så det fältet är tomt eller NULL.  Det kan finnas flera poster i WorkItems och CustomerIncidents för alla angivna CustomerName.  
+När vi vill spåra alla incidenter och arbetsobjekt som hör till ett specifikt CustomerName kan vi inte bara skapa en relation mellan dessa två datamängder.  Vissa WorkItems kan inte vara relaterade till CustomerName, så det fältet är tomt eller NULL.  Det kan finnas flera poster i WorkItems och CustomerIncidents för alla angivna CustomerName.  
 
 #### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Skapa relationer i Power BI Desktop när data har nullvärden eller tomma värden
 Ofta innehåller datauppsättningar kolumner med null eller tomma värden.  Detta kan orsaka problem när du försöker använda relationer.  Du har i stort sett två alternativ för att hantera problemen.  Du kan ta bort rader som innehåller null eller tomma värden.  Du kan göra detta med hjälp av antingen filterfunktionen i frågefliken eller om du samkör frågor genom att välja alternativet ”Behåll endast matchande rader”. Alternativt kan du ersätta nullvärden eller tomma värden med värden som fungerar med relationer, vanligtvis strängar som ”NULL” och ”(tom)”.   Det finns inga rätta inställningar – när du filtrerar ut frågerader på frågestadiet tas rader bort, vilket kan påverka sammanfattningsstatistik och beräkningar.  Den senare metoden bevarar dessa datarader men orelaterade rader visas i modellen, vilket kan leda till felberäkningar.  Om du antar denna lösning, se till att du använder filter på Vy/diagram där det behövs för att säkerställa att du får korrekta resultat.  Viktigast av allt utvärdera vilka rader som är kvar eller tagits bort och förstå den övergripande effekten på analysen...  
@@ -163,12 +162,9 @@ DAX är formelspråket för beräkningar i Power BI Desktop.  Det är optimerat 
 
 [Data Analysis uttryck (DAX)-referens](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI-tjänsten *och* Power BI Desktop
-
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Läs vitboken: [Principer för att utforma Power BI-rapporter](visuals/power-bi-visualization-best-practices.md)
-I det här dokumentet redovisas bästa praxis för att utforma rapporter i Power BI. Vi börjar med planeringen och beskriver designprinciper som du kan använda i dina rapporter och för de sidor och enskilda visuella objekt som utgör rapporten. Många av dessa bästa praxis gäller även för utformning av instrumentpaneler.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Läsa och/eller titta på reportage om att ”utforma visuellt snygga rapporter (och instrumentpaneler) i Power BI”
 Community-medlemmen Miguel Myers är både dataforskare och grafisk designer.
@@ -226,4 +222,4 @@ Några av våra favoritböcker är:
 
 [Rapporter i Power BI](consumer/end-user-reports.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

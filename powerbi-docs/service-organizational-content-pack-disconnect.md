@@ -2,7 +2,6 @@
 title: Koppla från en organisations innehållspaket – Power BI
 description: Läs mer om att ta bort din anslutning till en organisations innehållspaket genom att ta bort dess datauppsättning i Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 3936ebfedb1e4e51fe93b948a49de0b9fb133c52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020633"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881300"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Ta bort din anslutning till ett Power BI-organisationsinnehållspaket
 
@@ -27,7 +26,7 @@ En medarbetare har skapat ett innehållspaket. Du identifierade det i AppSource 
 
 Du tar bort ett innehållspaket genom att ta bort dess datauppsättning.  
 
-* Välj ellipsen (...) till höger om datauppsättningen i det vänstra navigeringsfönstret och välj **Ta bort \> Ja**.  
+* Välj ellipsen till höger om datamängden i navigeringsfönstret och välj **Ta bort \> Ja**.  
   
   ![Ta bort innehållspaket](media/service-organizational-content-pack-disconnect/power-bi-remove-organizational-content-pack-dataset.png)
 
@@ -37,5 +36,5 @@ När du tar bort datauppsättningen tar du också bort alla associerade rapporte
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md) 
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
 * [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)  
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

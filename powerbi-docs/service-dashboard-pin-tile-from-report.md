@@ -2,7 +2,6 @@
 title: Fäst en panel på en Power BI-instrumentpanel från en rapport
 description: Fäst en panel på en Power BI-instrumentpanel från en rapport.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b27cf80985dc1789fff5797430e4592fe361b533
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 24d706108bab274ef6aae8733f1fc11d212f13eb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624091"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852638"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fäst en panel på en Power BI-instrumentpanel från en rapport
 
@@ -52,7 +51,7 @@ Nu kan du skapa en egen instrumentpanel med någon av Power BI-exempelrapportern
    Ett meddelande visas (nära det övre högra hörnet) för att informera dig om att visualiseringen har lagts till som en panel på instrumentpanelen.
    
    ![Meddelande som anger att åtgärden lyckades](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
-5. Från navigeringsfönstret, väljer du instrumentpanelen med den nya panelen. [Redigera panelvisningen och beteendet](service-dashboard-edit-tile.md) eller välj panelen för att återgå till rapporten.
+5. I navigeringsfönstret väljer du instrumentpanelen med den nya panelen. [Redigera panelvisningen och beteendet](service-dashboard-edit-tile.md) eller välj panelen för att återgå till rapporten.
 
 ## <a name="pin-an-entire-report-page"></a>Fäst en hel rapportsida
 Ett annat alternativ är att fästa en hel rapportsida på en instrumentpanel, vilket är ett enkelt sätt att fästa mer än en visualisering i taget. När du fäster en hel sida är panelerna *levande*. Det vill säga du kan interagera dem på instrumentpanelen. Ändringar du gör i någon av visualiseringarna i rapportredigeraren (till exempel om du lägger till ett filter eller ändrar fälten som används i diagrammet) visas då även på instrumentpanelen.  
@@ -66,5 +65,5 @@ Mer information finns i [Fästa en hel rapportsida](service-dashboard-pin-live-t
 - [Datauppdatering i Power BI](refresh-data.md)
 - [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

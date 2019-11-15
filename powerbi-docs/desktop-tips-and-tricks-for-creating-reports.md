@@ -2,7 +2,6 @@
 title: Tips om hur du skapar rapporter i Power BI
 description: Metodtips för att skapa rapporter i Power BI-tjänsten och Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 41e5ff75e9b6fd48e3101d30999e8d570f34a270
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514047"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865827"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips om hur du skapar rapporter i Power BI Desktop
 För att få ut mesta möjliga av dina data, behövs ibland lite extra hjälp. Vi har samlat några tips och råd som du kan använda när du skapar rapporter i Microsoft Power BI Desktop *och* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-versioner med Power Pivot-tillägget aktiverat och Power Query installerad och aktiverad. 
@@ -28,19 +27,19 @@ Du kan få ytterligare information från [Power Query Resource Center](https://s
 Du kan också visa [Formelreferensen](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Datatyper i frågeredigeraren
-När du använder frågeredigeraren i Power BI Desktop för att läsa in data gör vi en uppskattning av den bästa datatypidentifieringen. Datatypinställningarna för kolumner sparas inte allt när du använder formler. Kontrollera att datatypen för kolumnerna är korrekta när du har gjort följande åtgärder:  Läs in data initialt till frågefliken, Första raden som rubrik, Lägg till kolumn, Gruppera efter, Sammanfoga, Lägg till och innan du läser in data för första gången.
+När du använder frågeredigeraren i Power BI Desktop för att läsa in data gör vi en uppskattning av den bästa datatypidentifieringen. Datatypinställningarna för kolumner sparas inte allt när du använder formler. Kontrollera att datatypen för kolumnerna är korrekt när du har vidtagit följande åtgärder:  Läs in data initialt till frågefliken, Första raden som rubrik, Lägg till kolumn, Gruppera efter, Sammanfoga, Lägg till och innan du läser in data för första gången.
 
 Det är viktigt att komma ihåg att kursiv stil i datarutnätet inte betyder att datatypen är rätt inställd, det betyder bara att data inte anses vara text.
 
 ## <a name="reference-queries-in-the-query-editor"></a>Referensfrågor i Query Editor
-I frågan navigeringsverktyg i Power BI Desktop visas när du högerklickar på någon av frågorna, är alternativet ”referens” tillgängliga. Det är viktigt av följande anledningar:
+När du högerklickar på någon av frågorna i frågeredigerarens navigatör i Power BI Desktop visas alternativet ”Referens”. Det är viktigt av följande anledningar:
 
 * När du använder filer som datakälla för en fråga lagras den absoluta sökvägen till filen i frågan. När du delar eller flyttar Power BI Desktop-filen eller Excel-arbetsboken sparar du tid när du uppdaterar sökvägarna genom att uppdatera den endast en gång i stället för sökvägarna.
 
-Som standard läses alla frågor in i ett Excel-arbetsblad eller en datamodell (eller båda). Vissa frågor är mellanliggande steg och är avsedd inte för slutanvändare. Detta är ofta fallet för referenser till frågor som nämns ovan. Du kan styra frågan som genom att högerklicka på frågan i Navigatören och växla alternativet ”Aktivera inläsning”. När *aktivera inläsning* inte har en bock bredvid den och frågan finns kvar i fliken fråga och du kan använda den med andra frågor. Det är särskilt användbart i kombination med Sammanfoga, Lägga till, och Refererenstransformeringar. Men eftersom resultatet av frågan inte har lästs in till datamodellen kommer frågan inte att störa dina rapporter eller din datamodell. 
+Som standard läses alla frågor in i ett Excel-arbetsblad eller en datamodell (eller båda). Vissa frågor är mellanliggande steg och är inte avsedda för slutanvändarna. Detta är ofta fallet för referenser till frågor som nämns ovan. Du kan styra inläsningen av frågan genom att högerklicka på frågan i navigatören och växla till alternativet ”Aktivera inläsning”. När *Aktivera inläsning* inte har markerats, kommer frågan fortfarande att vara tillgänglig på frågefliken och du kan använda den med andra frågor. Det är särskilt användbart i kombination med Sammanfoga, Lägga till, och Refererenstransformeringar. Men eftersom resultatet av frågan inte har lästs in till datamodellen kommer frågan inte att störa dina rapporter eller din datamodell. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Punktdiagrammet behöver en punktidentifierare
-Ta till exempel en enkel tabell med temperaturer och tidpunkten för avläsning av dessa. Om du beskriver detta direkt med ett punktdiagram aggregerar Power BI alla värden i en enda punkt. Om du vill visa individuella datapunkter måste du lägga till ett fält i området detaljer i fältet bra. Ett enkelt sätt att göra detta i Power BI Desktop är med hjälp av alternativet ”Lägg till indexkolumn” i menyfliksområdet ”Lägg till kolumn” på frågefliken. 
+Ta till exempel en enkel tabell med temperaturer och tidpunkten för avläsning av dessa. Om du beskriver detta direkt med ett punktdiagram aggregerar Power BI alla värden i en enda punkt. Om du vill visa individuella datapunkter måste du lägga till ett fält i bucketen Detaljer i fältet. Ett enkelt sätt att göra detta i Power BI Desktop är med hjälp av alternativet ”Lägg till indexkolumn” i menyfliksområdet ”Lägg till kolumn” på frågefliken. 
 
 ## <a name="reference-lines-in-your-report"></a>Referensrader i rapporten
 Du kan använda en beräknad kolumn i Power BI Desktop om du vill definiera en referensrad. Identifiera tabellen och den kolumn där du vill skapa en referensrad. Välj ”Ny kolumn” i menyfliksområdet och i formelfältet och skriv följande formel:
@@ -50,7 +49,7 @@ Du kan använda en beräknad kolumn i Power BI Desktop om du vill definiera en r
 Det här beräknade kolumnen returnerar värdet 100 oavsett var den används. Den nya kolumnen kommer att visas i fältlistan. Lägg till den beräknade kolumnen Målvärde i ett linjediagram för att visa hur andra serier är relaterade till den specifika referensraden. 
 
 ## <a name="sort-by-another-column"></a>Sortera efter en annan kolumn
-När du använder ett kategoriskt (sträng)-värde i Power BI för diagramaxlar eller i en utsnitt eller filter är standardordningen alfabetisk. Om du behöver åsidosätta den här ordningen, kan till exempel för veckodagar eller månader, du berätta för Power BI Desktop för att sortera efter en annan kolumn. Mer information finns i [sortera efter kolumn i Power BI Desktop](desktop-sort-by-column.md).
+När du använder ett kategoriskt (sträng)-värde i Power BI för diagramaxlar eller i en utsnitt eller filter är standardordningen alfabetisk. Om du behöver åsidosätta den här ordningen, till exempel för veckodagar eller månader, kan Power BI Desktop sortera efter en annan kolumn. Läs mer i [Sortera efter kolumn i Power BI Desktop](desktop-sort-by-column.md).
 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Skapa kartor enklare med tips till Bing
 Power BI integrerar med Bing för att tillhandahålla kartkoordinater av standardtyp (en process som kallas geokodning), vilket gör det enklare att skapa kartor. Bing använder vissa algoritmer och tips för att försöka hämta rätt plats, men det är ändå en gissning. Du kan använda följande tips för att öka sannolikheten för rätt geo-kodning:
@@ -62,7 +61,7 @@ Vissa benämningar är tvetydiga när de används i samband med flera länder/re
 Du kan alltid ange platser med specifik latitud och longitud i Power BI-tjänsten eller Power BI Desktop. När du gör det måste du också skicka ett platsfält. Annars aggregeras dina data som standard så att platsen för longitud och latitud inte blir det förväntade.
 
 ## <a name="categorizing-geographic-fields-to-hint-bings-geocoding"></a>Kategorisera geografiska fält för att ge ledtrådar till Bings geokodning
-Ett annat sätt att kontrollera att fält är korrekt geokodade är genom att konfigurera datafältens datakategori. Välj önskad tabell i Power BI Desktop, gå till menyfliksområdet Avancerat och ange sedan datakategorin till adress, ort, kontinent, Land/Region, land, postnummer, status eller provins. Dessa datakategorier hjälper Bing att koda data korrekt. Läs mer i [kategorisering av data i Power BI Desktop](desktop-data-categorization.md).
+Ett annat sätt att kontrollera att fält är korrekt geokodade är genom att konfigurera datafältens datakategori. Välj önskad tabell i Power BI Desktop, gå till menyfliksområdet Avancerat och ange sedan Datakategori till Adress, Ort, Kontinent, Land/region, Land, Postnummer, Delstat eller Provins. Dessa datakategorier hjälper Bing att koda data korrekt. Läs mer i [kategorisering av data i Power BI Desktop](desktop-data-categorization.md).
 
 ## <a name="better-geocoding-with-more-specific-locations"></a>Bättre geokodning med mer specifika platser
 Ibland räcker det inte ens med att ställa in datakategorier för mappning. Bygg en mer specifik plats, t.ex. en gatuadress, när du använder frågeredigeraren i Power BI Desktop. Använd funktionen Lägg till kolumn för att skapa en anpassad kolumn. Skapa sedan önskad plats på följande sätt: 
@@ -86,7 +85,7 @@ Definiera buckets för att skapa ett histogram – Avgör vilken fråga som har 
 
 Se till att datatypen är ett tal för den resulterande aggregeringskolumnen. Nu kan du skapa histogrammet genom att använda gruppen med teknik som beskrivs i Enkla histogram. Det här alternativet hanterar fler datapunkter, men hjälper ändå inte med borstning.
 
-Definiera ett histogram som stöder borstning – med Borstning är när visuella objekt länkas samman, så att när en användare väljer en datapunkt i ett visuellt objekt, andra visuella objekt på rapportsidan markerar eller filtrerar datapunkter som relaterar till den valda datapunkten. Eftersom vi hanterar data i databasfrågor, måste vi skapa en relation mellan tabellerna, och se till att vi vet vilka detaljelement som relaterar till bucketen i histogrammet och vice versa.
+Definiera ett histogram med stöd för borstning – Med borstning avses när visuella data länkas samman, så att när en användare väljer en datapunkt i ett visuellt objekt, så markerar eller filtrerar övriga visuella objekt de datapunkter som relaterar till den valda datapunkten. Eftersom vi hanterar data i databasfrågor, måste vi skapa en relation mellan tabellerna, och se till att vi vet vilka detaljelement som relaterar till bucketen i histogrammet och vice versa.
 
 Starta processen med hjälp av alternativet ”Referens” för den fråga som innehåller det fält utifrån vilket du vill skapa ett histogram. Ge den nya frågan namnet ”Bucketar”. Låt oss i det här exemplet kalla den ursprungliga frågan ”Information”. Ta sedan bort alla kolumner utom den kolumn som du ska använda som bucket för histogrammet. Använd nu frågefunktionen ”Ta bort dubbletter”. Den finns på snabbmenyn som visas när du markerar kolumnen. Det återstående värdena i kolumnen kommer då att vara unika. Om du har decimaltal kan du först använda tipset om hur man definierar bucketar när man skapar histogram för att få en hanterbar uppsättning bucketar. Nu är det dags att kontrollera de data som visas i frågeförhandsgranskningen. Om du ser tomma värden eller nullvärden måste du åtgärda dessa innan du kan skapa någon relation. Mer information finns i ”Skapa en relation om mina data har nullvärden eller tomma värden”. Med det kan vara problematiskt att använda den här metoden på grund av behovet att sortera. Hur du gör för att få bucketarna att sortera korrekt beskrivs i ”Sorteringsordning: få kategorier att visas i önskad ordning”. 
 
@@ -161,4 +160,4 @@ DAX är formelspråket för beräkningar i Power BI Desktop. Det är optimerat f
 
 [Data Analysis uttryck (DAX)-referens](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)

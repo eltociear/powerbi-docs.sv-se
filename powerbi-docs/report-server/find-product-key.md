@@ -2,19 +2,18 @@
 title: Så här hittar du rapportserverns produktnyckel
 description: Lär dig hur du hittar produktnyckeln för Power BI-rapportservern för att installera servern i en produktionsmiljö.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
-ms.openlocfilehash: 42057ba7cea04f432a39d649c9a4eecc34a0883d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f6eba8e1138f3c7e934de7152acf52a020c19f07
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769626"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859688"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Så här hittar du rapportserverns produktnyckel
 Lär dig hur du hittar produktnyckeln för Power BI-rapportservern för att installera servern i en produktionsmiljö.
@@ -48,7 +47,7 @@ Om du har ett SQL Server Enterprise SA-avtal, kan du få din produktnyckel från
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Installera Power BI Desktop som har optimerats för Power BI-rapportservern](install-powerbi-desktop.md)  
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

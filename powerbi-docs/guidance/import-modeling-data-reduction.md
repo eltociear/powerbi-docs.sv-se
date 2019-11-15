@@ -2,19 +2,18 @@
 title: Metoder för dataminskning för importmodellering
 description: Förstå olika tekniker för att hjälpa till att minska de data som läses in i importmodeller.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 794ded1bc310cfcecc609f48ee4f0595693ceeb3
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69520190"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875611"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Metoder för dataminskning för importmodellering
 
@@ -29,7 +28,7 @@ Trots den effektivitet som uppnås av VertiPaq-lagringsmotorn är det viktigt at
 - Mindre modeller ger snabbare datauppdatering, vilket resulterar i rapporter med lägre svarstid, högre dataflöde för datamängdsuppdatering samt och mindre belastning på källsystem och kapacitetsresurser.
 - Mindre antal tabellrader kan leda till snabbare beräkningsutvärdering, vilket kan ge bättre övergripande prestanda för frågor.
 
-Det finns sju olika metoder för dataminskning som beskrivs i den här artikeln. Dessa omfattar:
+Åtta olika metoder för dataminskning beskrivs i den här artikeln. Dessa omfattar:
 
 - [Ta bort onödiga kolumner](#remove-unnecessary-columns)
 - [Ta bort onödiga rader](#remove-unnecessary-rows)
@@ -37,6 +36,7 @@ Det finns sju olika metoder för dataminskning som beskrivs i den här artikeln.
 - [Optimera kolumndatatyper](#optimize-column-data-types)
 - [Preferens för anpassade kolumner](#preference-for-custom-columns)
 - [Inaktivera inläsning av Power Query-fråga](#disable-power-query-query-load)
+- [Inaktivera automatisk datum/tid](#disable-auto-datetime)
 - [Växla till blandat läge](#switch-to-mixed-mode)
 
 ## <a name="remove-unnecessary-columns"></a>Ta bort onödiga kolumner
@@ -85,6 +85,10 @@ Men i vissa fall kan modellberäknade kolumner vara det bästa valet. Detta kan 
 Power Query-frågor som avses stödja dataintegrering med andra frågor bör inte läsas in i modellen. För att undvika att läsa in frågan till modellen bör du se till att inaktivera frågebelastning i dessa fall.
 
 ![Inaktivera inläsningen för en Power Query-fråga](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+
+## <a name="disable-auto-datetime"></a>Inaktivera automatisk datum/tid
+
+I Power BI Desktop finns det ett alternativ som heter _Automatisk datum/tid_. När det här alternativet är aktiverat skapas en dold tabell för automatisk datum/tid för datumkolumner som hjälper rapportförfattare när de konfigurerar filter, grupperar och ökar detaljnivån för kalenderns tidsperioder. De dolda tabellerna är egentligen beräknade tabeller som ökar modellens storlek. Anvisningar för hur du använder det här alternativet finns i artikeln [Vägledning för automatisk datum/tid i Power BI Desktop](../desktop-auto-date-time.md).
 
 ## <a name="switch-to-mixed-mode"></a>Växla till blandat läge
 

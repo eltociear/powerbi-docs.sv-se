@@ -2,19 +2,18 @@
 title: 'Snabbstart: Utforska instrumentpaneler och rapporter i mobilapparna'
 description: I den här snabbstarten får du utforska instrumentpaneler och rapporter i Power BI-mobilappar.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/18/2019
 ms.author: mshenhav
-ms.openlocfilehash: 173142d9aaf2b445504028e1f7987abe21806c37
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9af245b51fa2520dca1ccca535ec44f14360a54c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60976188"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879260"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Snabbstart: Utforska instrumentpaneler och rapporter i Power BI-mobilappar
 I den här snabbstarten får du utforska en exempel-instrumentpanel och rapport i Power BI-mobilappen på en Android-telefon. Du kan också följa med i andra mobila appar. 
@@ -35,7 +34,7 @@ Instrumentpaneler är en portal till ditt företags livscykel och processer. En 
 Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnadsfri utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
 
 ### <a name="install-the-power-bi-for-android-app"></a>Installera Power BI för Android-appen
-[Ladda ner Power BI för Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Google Play.
+[Ladda ner Power BI för Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Google Play.
 
 Power BI fungerar på Android-enheter som kör operativsystemet Android 5.0 eller senare. Om du vill kontrollera din enhet, går du till **Inställningar** > **Om enheten** > **Android-version**.
 
@@ -44,11 +43,11 @@ Det första steget i den här snabbstarten är att hämta exemplet på detaljhan
 
 1. Öppna Power BI-tjänsten i din webbläsare (app.powerbi.com) och logga in.
 
-1. Välj den globala navigeringsikonen för att öppna det vänstra navigeringsfönstret.
+1. Välj den globala navigeringsikonen för att öppna navigeringsfönstret.
 
     ![global navigeringsikon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. I det vänstra navigeringsfönstret väljer du **Arbetsytor** > **Min arbetsyta**.
+2. I navigeringsfönstret väljer du **Arbetsytor** > **Min arbetsyta**.
 
     ![Min arbetsyta](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -135,7 +134,7 @@ När du har slutfört den här snabbstarten kan du ta bort exempelinstrumentpane
 
 1. Öppna Power BI-tjänsten (app.powerbi.com) och logga in.
 
-2. I det vänstra navigeringsfönstret väljer du **Arbetsytor** > **Min arbetsyta**.
+2. I navigeringsfönstret väljer du **Arbetsytor** > **Min arbetsyta**.
 
     Ser du den gula stjärnan som visar att det är en favorit?
 

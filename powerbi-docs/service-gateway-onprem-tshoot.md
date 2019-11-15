@@ -3,25 +3,24 @@ title: Felsöka gatewayer – Power BI
 description: Den här artikeln innehåller olika sätt att felsöka problem hos din lokala datagateway och Power BI. Här finns lösningar på kända problem och verktyg som kan hjälpa dig.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfb0546771331e13f3703de0afdbcad6c3219f9c
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543832"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881560"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Felsöka gatewayer – Power BI
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Den här artikeln beskriver några vanliga problem som kan uppstå när du använder den lokala datagatewayen med Power BI. Om du stöter på ett problem som inte finns med i listan kan du ta hjälp av [Power BI Community](http://community.powerbi.com)-webbplatsen. Eller så kan du skapa ett [supportärende](http://powerbi.microsoft.com/support).
+Den här artikeln beskriver några vanliga problem som kan uppstå när du använder den lokala datagatewayen med Power BI. Om du stöter på ett problem som inte finns med i listan kan du ta hjälp av [Power BI Community](https://community.powerbi.com)-webbplatsen. Eller så kan du skapa ett [supportärende](https://powerbi.microsoft.com/support).
 
 ## <a name="configuration"></a>Konfiguration
 
@@ -227,7 +226,7 @@ Du får felmeddelandet ”-10709 Anslutningen misslyckades” om delegeringen in
 
 När du använder en gateway för en schemalagd uppdatering, kan **uppdateringshistoriken** hjälpa dig att se vilka fel som har inträffat. Det kan också ge användbara data om du behöver skapa en supportbegäran. Du kan visa schemalagda uppdateringar och sådana som görs på begäran. Följande steg visar hur du går till uppdateringshistoriken.
 
-1. I **Datauppsättningar** i Power BI-navigeringsfönstret väljer du en datauppsättning. Öppna menyn och välj **Schemalägg uppdatering**.
+1. Välj en datauppsättning i **Datauppsättningar** i Power BI-navigeringsfönstret. Öppna menyn och välj **Schemalägg uppdatering**.
 
     ![Så väljer du schemauppdatering](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -241,7 +240,7 @@ Mer information om felsökning av olika uppdateringsscenarier finns i [Felsöka 
 
 ## <a name="fiddler-trace"></a>Fiddlerspårning
 
-[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik. Du kan se trafiken från och till med Power BI-tjänsten från klientdatorn. Den här trafiklistan visar fel och annan relaterad information.
+[Fiddler](https://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik. Du kan se trafiken från och till med Power BI-tjänsten från klientdatorn. Den här trafiklistan visar fel och annan relaterad information.
 
 ![Använda Fiddler-spårning](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -254,4 +253,4 @@ Mer information om felsökning av olika uppdateringsscenarier finns i [Felsöka 
 * [Hantera din datakälla – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Hantera din datakälla – Import/schemalagd uppdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).

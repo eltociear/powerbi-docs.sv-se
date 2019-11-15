@@ -2,7 +2,6 @@
 title: Anslut till Project Online med Power BI
 description: Project Online för Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0978e87167f96b40082819764d7e3ae35e930a4b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 941981e1f84cf3d7a74a156e4f1c88f57e061ad2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023789"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854644"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Anslut till Project Web App med Power BI
 Microsoft Project Web App är en flexibel lösning för hantering av projektportföljer (PPM) och dagligt arbete. Med Project Web App kan organisationer komma igång, prioritera investeringar i projektportföljer och leverera det avsedda verksamhetsvärdet. Med Project Web App-mallappen för Power BI får du tillgång till information från Project Web App som hjälper dig att hantera projekt, portföljer och resurser.
@@ -24,7 +23,7 @@ Anslut till [Project Web App-mallappen](https://appsource.microsoft.com/product/
 
 ## <a name="how-to-connect"></a>Så här ansluter du
 
-1. Välj **Appar** i det vänstra navigeringsfönstret > Välj **Hämta appar** i det övre högra hörnet.
+1. Välj **Appar** i navigeringsfönstret > välj **Hämta appar** i det övre högra hörnet.
 
     ![Hämta appar](media/service-connect-to-project-online/GetApps.png)
 
@@ -52,7 +51,7 @@ Anslut till [Project Web App-mallappen](https://appsource.microsoft.com/product/
 
 9. Du ser ett meddelande som visar att dina data läses in. Det kan ta en stund att läsa in datan beroende på hur stort ditt konto är. När Power BI har importerat data ser du innehållet på din nya arbetsyta. Du kan behöva uppdatera datamängden för att få de senaste uppdateringarna. 
 
-    När Power BI har importerat dessa data visas en ny rapport med 13 sidor och datamängden i det vänstra navigeringsfönstret. 
+    När Power BI har importerat dessa data visas rapporten med 13 sidor och datamängden i navigeringsfönstret. 
 
 10. När rapporterna är redo kan du börja utforska dina Project Web App-data. Mallappen innehåller 13 omfattande och detaljerade rapporter för portföljvyn (6 rapportsidor), resursvyn (5 rapportsidor) och projektstatus (2 rapportsidor). 
 

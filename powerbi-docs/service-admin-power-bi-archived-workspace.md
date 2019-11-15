@@ -2,7 +2,6 @@
 title: Power BI – arkiverad arbetsyta
 description: Power BI-arkiverad arbetsyta efter att du hanterat din Office 365-klient
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 891ffffd885e2b5d59cba64e6e99ce7fe3cf811b
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 66bf203cad577df0c985fbd73bcab3c6d79f6a95
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175947"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873573"
 ---
 # <a name="power-bi-archived-workspace"></a>Power BI – arkiverad arbetsyta
 
@@ -24,7 +23,7 @@ ms.locfileid: "71175947"
 
 Med Power BI, kan vem som helst registrera sig och börja använda tjänsten inom några minuter.  Senare kan din organisations IT-avdelning välja att ta över hanteringen av Power BI för användare i din organisation.  Om detta inträffar kan du dra nytta av central hantering av användare och behörigheter i din organisation. Du kanske också kan dra nytta av effektiviserad inloggning med samma användarnamn och lösenord för andra tjänster i din organisation.
 
-Allt innehåll som du har skapat innan din IT-avdelning började hantera Power BI placeras i en Power BI-arkiverad arbetsyta, som kan nås från navigeringen till vänster i [Power BI](https://app.powerbi.com). Du bör skapa nytt Power BI-innehåll i min arbetsyta som är skyddad och hanteras av din organisations IT-avdelning.  Din arkiverade arbetsyta kommer att fortsätta finnas, men det finns begränsningar på de åtgärder som du kan utföra på innehållet i din arkiverade arbetsyta.  Om du vill ta bort dessa begränsningar, behöver du migrera innehållet från din arkiverade arbetsyta till min arbetsyta som hanteras av din IT-avdelning.
+Allt innehåll som du har skapat innan din IT-avdelning började hantera Power BI placeras i en Power BI-arkiverad arbetsyta, som kan nås från navigeringsfönstret i [Power BI](https://app.powerbi.com). Du bör skapa nytt Power BI-innehåll i min arbetsyta som är skyddad och hanteras av din organisations IT-avdelning.  Din arkiverade arbetsyta kommer att fortsätta finnas, men det finns begränsningar på de åtgärder som du kan utföra på innehållet i din arkiverade arbetsyta.  Om du vill ta bort dessa begränsningar, behöver du migrera innehållet från din arkiverade arbetsyta till min arbetsyta som hanteras av din IT-avdelning.
 
 ## <a name="restrictions-in-your-archived-workspace"></a>Begränsningar i din arkiverade arbetsyta
 
@@ -50,5 +49,5 @@ Om du vill använda Power BI bör du skapa nytt innehåll i Min arbetsyta. Du b�
 
 * **Instrumentpaneler**: Instrumentpaneler som installeras som en del av innehållspaket återskapas automatiskt när du återansluter till innehållspaketet på Min arbetsyta. Om du skapade dina egna instrumentpaneler via Power BI-tjänsten behöver du återskapa de instrumentpanelerna i Min arbetsyta.
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

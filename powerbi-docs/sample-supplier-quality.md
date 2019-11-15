@@ -2,7 +2,6 @@
 title: 'Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur'
 description: 'Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621318"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858412"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exempel på leverantörskvalitetsanalys för Power BI: Ta en rundtur
 
@@ -59,11 +58,11 @@ Innan du kan använda exemplet, måste du först hämta det som ett [innehållsp
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hämta .pbix-filen för det här exemplet
 
-Du kan även ladda ned Exempel på leverantörskvalitetsanalys som en [.pbix-fil](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) som är avsedd för användning med Power BI Desktop.
+Du kan även ladda ned Exempel på leverantörskvalitetsanalys som en [.pbix-fil](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) som är avsedd för användning med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hämta Excel-arbetsboken för det här exemplet
 
-Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkId=529779). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Om du vill visa i datakällan för det här exemplet är det även tillgängligt som en [Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkId=529779). Arbetsboken innehåller Power View-blad som du kan visa och ändra. Om du vill se rådata aktiverar du dataanalystilläggen och väljer **Power Pivot > Hantera**. Aktivering av tilläggen för Power View och Power Pivot beskrivs i avsnittet om att [titta på Excel-exemplen inuti själva Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Stilleståndstid som orsakas av defekta material
 Nu ska vi analysera den stilleståndstid som orsakas av defekta material och se vilka leverantörer som är ansvariga.  
@@ -94,7 +93,7 @@ Nu ska vi analysera den stilleståndstid som orsakas av defekta material och se 
     ![Trädkarta för Nedtid (min) efter leverantör](media/sample-supplier-quality/supplier5.png)  
 
    I den här trädkartan ser vi att de åtta främsta leverantörerna är de åtta blocken till vänster i trädkartan. Vi kan också se att de svarar för 50 % av all stilleståndstid i minuter.  
-3. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfältet för att gå tillbaka till instrumentpanelen.
+3. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfönstret för att gå tillbaka till instrumentpanelen.
 
 ### <a name="comparing-plants"></a>Jämföra anläggningar
 Nu ska vi titta närmare på vilken anläggning som är bäst på att hantera defekta material, vilket resulterar i kortare stilleståndstid.  
@@ -113,7 +112,7 @@ Nu ska vi titta närmare på vilken anläggning som är bäst på att hantera de
 3. Välj **Logistik**-bubblan i bubbeldiagrammet och titta på anläggningarna i Springfield och i Naperville i Illinois. Naperville verkar göra ett mycket bättre arbete med att hantera defekta material eftersom de har ett stort antal avvisade artiklar och låg påverkan, jämfört med Springfields höga siffra för påverkan.  
 
    ![Välja Logistik](media/sample-supplier-quality/supplier8.png)  
-4. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfältet för att gå tillbaka till instrumentpanelen.
+4. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfönstret för att gå tillbaka till instrumentpanelen.
 
 ## <a name="which-material-type-is-best-managed"></a>Vilken materialtyp hanteras bäst?
 Den bäst hanterade materialtypen är den med lägst stilleståndstid eller utan påverkan, oavsett antalet defekter.
@@ -138,7 +137,7 @@ Den bäst hanterade materialtypen är den med lägst stilleståndstid eller utan
 
     ![Diagrammet Total mängd defekter per månad och år](media/sample-supplier-quality/supplier11.png)  
 3. Innebär fler defekter längre stilleståndstid? Ställ frågor i Frågor och svar-rutan för att ta reda på det.  
-4. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfältet för att gå tillbaka till instrumentpanelen.  
+4. Välj **Exempel på leverantörskvalitetsanalys** i det övre navigeringsfönstret för att gå tillbaka till instrumentpanelen.  
 5. Eftersom vi vet att råmaterial har det högsta antalet defekter skriver du följande i frågerutan: *visa materialtyper, år och total mängd defekta*.  
 
     Det förekom många fler råmaterialsdefekter under 2014 än under 2013.  
