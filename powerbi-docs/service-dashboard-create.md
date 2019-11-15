@@ -2,7 +2,6 @@
 title: Skapa en Power BI-instrumentpanel från en rapport
 description: Skapa en Power BI-instrumentpanel från en rapport
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: d67e7acf4309595e8bccac86119ea38f1a97797f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543485"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853417"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Skapa en Power BI-instrumentpanel från en rapport
 Du har läst [introduktionen till instrumentpaneler i Power BI](service-dashboards.md) och nu är det dags att du skapar en egen. Det finns många olika sätt att skapa en instrumentpanel. Du kan till exempel skapa en instrumentpanel från en rapport (från början), från en datauppsättning eller genom att duplicera en befintlig instrumentpanel.  
@@ -44,11 +43,11 @@ Titta på när Amanda skapar en ny instrumentpanel genom att fästa visualiserin
 ## <a name="import-a-dataset-with-a-report"></a>Importera en datauppsättning med en rapport
 I den här stegvisa guiden ska vi importera ett av Power BI:s exempel på datauppsättningar och använda det för att skapa vår nya instrumentpanel. Exemplet vi ska använda är en Excel-arbetsbok med två PowerView-blad. När Power BI importerar arbetsboken, läggs en datauppsättning och en rapport till på din arbetsyta. Rapporten skapas automatiskt från PowerView-bladen.
 
-1. Ladda ned Excel-filen [Anskaffningsanalysexempel](http://go.microsoft.com/fwlink/?LinkId=529784). Vi rekommenderar att du sparar den i din OneDrive för företag.
+1. Ladda ned Excel-filen [Anskaffningsanalysexempel](https://go.microsoft.com/fwlink/?LinkId=529784). Vi rekommenderar att du sparar den i din OneDrive för företag.
 2. Öppna Power BI-tjänsten i din webbläsare (app.powerbi.com).
-3. Välj **Min arbetsyta** i det vänstra navigeringsfönstret och välj sedan **Hämta data**.
+3. Välj **Min arbetsyta** i navigeringsfönstret och välj sedan **Hämta data**.
 
-    ![Vänster navigeringsfönster](media/service-dashboard-create/power-bi-get-data-new-look.png)
+    ![navigeringsfönster](media/service-dashboard-create/power-bi-get-data-new-look.png)
 5. Under **Filer** väljer du **Hämta**.
 
    ![Hämta filer](media/service-dashboard-create/power-bi-select-files.png)
@@ -63,7 +62,7 @@ I den här stegvisa guiden ska vi importera ett av Power BI:s exempel på dataup
    ![Meddelande som anger att åtgärden lyckades](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
-> Visste du att? Du kan begränsa det vänstra navigeringsfältet genom att välja ikonen med tre rader på den övre ![Navigeringsfönstrets visa eller dölj-ikon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Det ger dig mer utrymme för själva rapporten.
+> Visste du att? Du kan minska navigeringsfönstret genom att välja ikonen med tre rader i det översta ![navigeringsfönstrets visa/dölj-ikon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Det ger dig mer utrymme för själva rapporten.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Öppna rapporten och fästa paneler på din instrumentpanel
 1. I samma arbetsyta väljer du fliken **Rapporter** och sedan**Exempel på anskaffningsanalys** för att öppna rapporten.
@@ -118,4 +117,4 @@ Grattis – du har skapat din första instrumentpanel! Nu när du har en instrum
 * [Power BI – grundläggande begrepp](service-basic-concepts.md)
 * [Tips för att designa en bra instrumentpanel](service-dashboards-design-tips.md)
 
-Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
