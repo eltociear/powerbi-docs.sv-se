@@ -18,3 +18,6 @@
         - name: Rapportserver
           tocHref: /power-bi/report-server/
           topicHref: /power-bi/report-server/get-started
+        - name: Vägledning
+          tocHref: /power-bi/guidance/
+          topicHref: /power-bi/guidance/index
