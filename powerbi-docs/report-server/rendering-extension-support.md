@@ -100,13 +100,13 @@ Ej tillämpligt
 
 Ej tillämpligt
 
-## <a name="disclaimer"></a>Ansvarsfriskrivning
+## <a name="disclaimer"></a>Disclaimer
 
-© 2017 Microsoft Corporation. Med ensamrätt. Namnen på faktiska företag och produkter som anges häri kan vara varumärken som tillhör sina respektive ägare. Informationen i det här dokumentet representerar den aktuella hållningen från Microsoft Corporation om problem som diskuteras vid publiceringsdatumet. Microsoft kan inte garantera riktigheten av information som visas efter publiceringsdatumet. Microsoft uppdaterar regelbundet sina webbplatser med ny information om produkternas tillgänglighet när informationen blir tillgänglig.
+© 2017 Microsoft Corporation. All rights reserved. The names of actual companies and products mentioned herein may be the trademarks of their respective owners. The information contained in this document represents the current view of Microsoft Corporation on the issues discussed as of the date of publication. Microsoft cannot guarantee the accuracy of any information presented after the date of publication. Microsoft regularly updates its websites with new information about the accessibility of products as that information becomes available.
 
-Anpassning av produkten annullerar detta uttalande från Microsoft. Kontakta leverantörer av hjälpmedelsteknik för kompatibilitetsinställningar av särskilda produkter.
+Customization of the product voids this conformance statement from Microsoft. Please consult with Assistive Technology (AT) vendors for compatibility specifications of specific AT products.
 
-Det här dokumentet är endast avsett som information. MICROSOFT LÄMNAR INGA GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, I DET HÄR DOKUMENTET.
+This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
 
 ## <a name="next-steps"></a>Nästa steg
