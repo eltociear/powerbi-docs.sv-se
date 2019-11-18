@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: f97c38301eb69422c123503364e2e3f11ce5368a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880542"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128055"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publicera visuella Power BI-objekt till AppSource
 
@@ -142,13 +142,13 @@ Därefter kommer du att kunna visa status för ansökan i [appinstrumentpanelen]
 
 ## <a name="certify-your-visual"></a>Godkänn ditt visuella objekt
 
-När du har skapat ditt visuella objekt kan du eventuellt få ditt visuella objekt godkänt. Detta innebär att den kan köras i Power BI-tjänsten och användas med andra funktioner i tjänsten, till exempel export till PowerPoint. Mer information finns i [Godkänn ett anpassat *visuellt objekt*](../power-bi-custom-visuals-certified.md).
+När du har skapat ditt visuella objekt kan du eventuellt få ditt visuella objekt godkänt. Detta innebär att den kan köras i Power BI-tjänsten och användas med andra funktioner i tjänsten, till exempel export till PowerPoint. Mer information finns i [Godkänn ett anpassat *visuellt objekt*](../developer/power-bi-custom-visuals-certified.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
 [Utveckla ett anpassat visuellt objekt i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringar i Power BI](../visuals/power-bi-report-visualizations.md)  
-[Anpassade visualiseringar i Power BI](../power-bi-custom-visuals.md)  
-[Få anpassade visuella objekt *certifierade*](../power-bi-custom-visuals-certified.md)
+[Anpassade visualiseringar i Power BI](../developer/power-bi-custom-visuals.md)  
+[Få anpassade visuella objekt *certifierade*](../developer/power-bi-custom-visuals-certified.md)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

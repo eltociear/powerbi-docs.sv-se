@@ -1,19 +1,19 @@
 ---
 title: Registrera en app för att bädda in Power BI-innehåll
 description: Lär dig hur du registrerar ett program i Azure Active Directory för användning med inbäddning av Power BI-innehåll.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: eb9b5190341b50aa911f5d8aaca07bd7d04ba90d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8a2aa135bfa5720763485579b012c13c722637db
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880394"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009801"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrera en Azure AD-app för användning med Power BI
 
@@ -104,7 +104,7 @@ Logga in med *huvudkontot*, som används för inbäddning, eller med ett globalt
 
 ### <a name="using-the-azure-ad-portal"></a>Med hjälp av Azure AD Portal
 
-1. Bläddra till [Appregistreringar](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) i Azure-portalen och välj den app som du använder för att bädda in.
+1. Bläddra till [Appregistreringar](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/quickStartType//sourceType/) i Azure-portalen och välj den app som du använder för att bädda in.
 
 2. Välj **API-behörigheter** under **Hantera**.
 

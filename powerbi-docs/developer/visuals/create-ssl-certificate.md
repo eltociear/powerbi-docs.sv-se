@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: d24135cc55ebc8cdfd2a1279cb2a2a46f8f0bc3e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 224b6db8fa04a471a1ce7d1fff2b34a838d6fb9d
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880191"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060363"
 ---
 # <a name="create-an-ssl-certificate"></a>Skapa ett SSL-certifikat
 
@@ -22,20 +22,19 @@ I den här artikeln beskrivs hur du skapar ett SSL-certifikat.
 Generera certifikatet med hjälp av PowerShell `New-SelfSignedCertificate`-cmdleten i Windows 8 eller senare genom att köra följande kommando:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Verktyget kräver en OpenSSL-installation för Windows 7. OpenSSL-verktyget måste vara tillgängligt från kommandoraden.
 
 Du installerar OpenSSL genom att gå till webbplatsen för [OpenSSL](https://www.openssl.org) eller [OpenSSL-binärfiler](https://wiki.openssl.org/index.php/Binaries).
 
-
-
 ## <a name="create-a-certificate-mac-os-x"></a>Skapa ett certifikat (Mac OS X)
 
 Vanligtvis är OpenSSL-verktyget tillgängligt i operativsystemet Linux eller Mac OS X.
 
 Du kan även installera verktyget genom att köra något av följande kommandon:
+
 * Från *Brew*-pakethanteraren:
 
     ```cmd
@@ -52,7 +51,7 @@ Du kan även installera verktyget genom att köra något av följande kommandon:
 När du har installerat OpenSSL-verktyget för att generera ett nytt certifikat kör du följande kommando:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 ## <a name="create-a-certificate-linux"></a>Skapa ett certifikat (Linux)
@@ -80,7 +79,7 @@ Om OpenSSL-verktyget inte är tillgängligt i ditt Linux-operativsystem kan du i
 Om OpenSSL-verktyget redan är tillgängligt i ditt operativsystem genererar du ett nytt certifikat genom att köra följande kommando:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Eller så kan du hämta OpenSSL-verktyget genom att gå till webbplatsen för [OpenSSL](https://www.openssl.org) eller [OpenSSL-binärfiler](https://wiki.openssl.org/index.php/Binaries).
