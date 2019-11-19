@@ -2,7 +2,6 @@
 title: Redigera en panel på en instrumentpanel
 description: Den här kursen tar din från att skapa en panel och fästa den på en instrumentpanel, till att lära dig hur du redigerar den instrumentpanelen – ändrar storlek, flyttar, byter namn, fäster, tar bort, lägger till hyperlänk.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f96af87706fb289d5fe7216c8ba0b9b0d83b1391
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021135"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877475"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Redigera eller ta bort en panel på instrumentpanelen
 
@@ -148,5 +147,5 @@ Om du väljer en panel skickas du som standard till rapporten där panelen skapa
 
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 
