@@ -1,241 +1,307 @@
 ---
-title: Forma och kombinera data från flera källor
+title: 'Självstudie: Forma och kombinera data i Power BI Desktop'
 description: I den här självstudien får du lära dig hur du formar och kombinerar data i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/08/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2835dd34ce5ba2d7bc6be8659b87eb1f550fdc28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d6a36f8ef3ef5d668fe8d6021758b651cdbf7fd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514580"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877825"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Självstudie: Forma och kombinera data i Power BI Desktop
 
-Med **Power BI Desktop**, kan du ansluta till flera olika typer av datakällor och sedan forma data så att de uppfyller dina behov, så att du kan skapa visuella rapporter som du kan dela med andra. *Formatera* data innebär att du omvandlar data – till exempel byter namn på kolumner eller tabeller, ändrar text till tal, tar bort rader, anger den första raden som rubrik och så vidare. *Kombinera* data innebär att kopplar till två eller flera datakällor, formar dem efter behov och sammanfogar dem i en användbar fråga.
+Med Power BI Desktop kan du ansluta till flera olika typer av datakällor och sedan forma data så att de uppfyller dina behov, så att du kan skapa visuella rapporter som du kan dela med andra. Att *forma* data innebär att du omvandlar data: du byter namn på kolumner eller tabeller, ändrar text till tal, tar bort rader, anger den första raden som rubrik och så vidare. Att *kombinera* data innebär att du ansluter till två eller flera datakällor, formar dem efter behov och sammanfogar dem i en användbar fråga.
 
-I den här självstudien lär du dig att:
+I den här självstudien får du lära dig att:
 
-* Formen data med hjälp av **Frågeredigeraren**
-* Anslut till en datakälla
-* Anslut till en annan datakälla
-* Kombinera dessa datakällor och skapa en datamodell som ska användas i rapporter
+* Forma data med hjälp av Frågeredigeraren.
+* Ansluta till olika datakällor.
+* Kombinera dessa datakällor och skapa en datamodell som du kan använda i rapporter.
 
-Den här självstudien beskriver hur du utformar en fråga med Power BI Desktop och visar några av de vanligaste uppgifterna. Frågan som används här beskrivs i detalj, inklusive hur du skapar en fråga från början, i [Komma igång med Power BI Desktop](desktop-getting-started.md).
+I den här självstudien går vi igenom hur du utformar en fråga med Power BI Desktop, med fokus på de vanligaste uppgifterna. Frågan som används här beskrivs i detalj, inklusive hur du skapar en fråga från början, i [Komma igång med Power BI Desktop](desktop-getting-started.md).
 
-Det är bra att veta att **frågeredigeraren** i Power BI Desktop använder högerklicksmenyer och menyfliksområdet. Merparten av det som du kan välja i menyfliksområdet **Transformera** är också tillgängligt genom att högerklicka på ett objekt (till exempel en kolumn) och välja från menyn som visas.
+I Frågeredigeraren i Power BI Desktop används många högerklicksmenyer och menyfliksområdet **Transformera**. Du kommer åt merparten av det du kan välja i menyfliksområdet genom att högerklicka på ett objekt, som en kolumn, och sedan välja från menyn som visas.
 
 ## <a name="shape-data"></a>Forma data
-När du formar data i frågeredigeraren ger du stegvisa-instruktioner (som frågeredigeraren utför) för att justera de data som frågeredigeraren hämtar och presenterar. Den ursprungliga datakällan påverkas inte utan det är endast den här datavyn som justeras eller *formas*.
+När du formar data i Frågeredigeraren ger du stegvisa instruktioner för datajusteringen, som Frågeredigeraren utför när data läses in och presenteras. Den ursprungliga datakällan påverkas inte. Data justeras, eller *formas*, bara i just den här vyn.
 
-De steg som du anger (till exempel när du byter namn på en tabell, transformerar datatypen eller tar bort kolumner) registreras av frågeredigeraren och varje gång den här frågan ansluter till datakällan utförs dessa steg så att data alltid utformas på det sätt som du anger. Den här processen inträffar när du använder funktionen Query Editor i Power BI Desktop eller för alla som använder din delade fråga, till exempel på **Power BI**-tjänsten. De här stegen fångas i ordning i fönstret **Frågeinställningar** under **Tillämpade steg**.
+De steg du anger (som att byta namn på en tabell, transformera en datatyp eller ta bort en kolumn) registreras av Frågeredigeraren. Varje gång den här frågan ansluter till datakällan utför Frågeredigeraren dessa steg så att data alltid formas på det sätt du anger. Den här processen sker varje gång du Frågeredigeraren och varje gång någon använder dina delade frågor, till exempel i Power BI-tjänsten. De här stegen fångas i ordning i fönstret **Frågeinställningar** under **Tillämpade steg**. Vi går igenom vart och ett av stegen i nästa stycke.
 
-Följande bild visar fönstret **Frågeinställningar** för en fråga som har formats – vi ska gå igenom de här stegen i följande stycken.
+![Tillämpade steg i Frågeinställningar](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
+Vi använder pensioneringsdata från [Komma igång med Power BI Desktop](desktop-getting-started.md), som vi hämtade genom att ansluta till en webbdatakälla, och ska forma dem efter våra behov. Vi lägger till en anpassad kolumn för att beräkna rankningen baserat på alla data som har samma faktorer och jämföra detta med den befintliga kolumnen **Rank**.  
 
-Vi använder pensioneringsdata från [Komma igång med Power BI Desktop](desktop-getting-started.md), vilket vi hämtade genom att ansluta till en webbdatakälla, som vi ska forma efter våra behov.
+1. I menyfliksområdet **Lägg till kolumn** väljer du **Anpassad kolumn**, så att du kan lägga till en anpassad kolumn.
 
-Till att börja med ska vi lägga till en egen kolumn för att beräkna rankningen baserat på alla data som har samma faktorer och jämföra detta med den befintliga kolumnen _Rankning_.  Här är menyfliken **Lägg till kolumn**, med en pil som pekar mot knappen **Anpassad kolumn**, vilken låter dig lägga till en egen kolumn.
+    ![Välj Anpassad kolumn](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
+1. I fönstret **Anpassad kolumn** går du till **Nytt kolumnnamn** och anger _New Rank_. Ange följande data i **Formel för anpassad kolumn**:
 
-I dialogrutan **Anpassad kolumn** i **Nytt kolumnnamn**, anger du _Ny rankning_, och i **Anpassad kolumnformel**, anger du följande:
-
+    ```
     ([Cost of living] + [Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 8
+    ```
+ 
+1. Se till att statusmeddelandet visar *Inga syntaxfel har identifierats* och välj **OK**.
 
-Kontrollera att statusmeddelandet visar _”Inga syntaxfel har identifierats.”_ och klicka på **OK**.
+    ![Sidan Anpassad kolumn utan syntaxfel](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
+1. För att kolumndata ska vara konsekventa så omvandlar du de nya kolumnvärdena till heltal. Det gör du genom att högerklicka på kolumnrubriken och välja **Ändra typ \> Heltal**. 
 
-För att hålla kolumndata konsekventa, kan du omvandla de nya kolumnvärdena till heltal. Det är bara att högerklicka på kolumnrubriken och välja **Ändra typ \> Heltal** för att ändra dem. 
+    Om du behöver välja fler än en kolumn ska du först markera en kolumn, hålla ned **Skift**, välja fler intilliggande kolumner och sedan högerklicka på en kolumnrubrik. Använd **CTRL** när du väljer kolumner som inte är intilliggande.
 
-Om du behöver välja fler än en kolumn ska du först markera en kolumn och sedan hålla ned **SKIFT**. Välj fler intilliggande kolumner och högerklicka på en kolumnrubrik för att ändra alla valda kolumner. Använd **CTRL** när du väljer kolumner som inte är intilliggande.
+    ![Markera kolumndata med heltal](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
+1. Om du vill *omvandla* kolumnernas datatyper, och alltså omvandla den aktuella datatypen till en annan, väljer du **Datatyp: Text** i menyfliksområdet **Transformera**. 
 
-Du kan också *transformera* kolumndatatyperna från menyfliken **transformera**. Här är menyfliksområdet **Omvandla** med en pil som pekar mot knappen **Datatyp**, som låter dig omvandla den aktuella datatypen till en annan.
+   ![Välj Datatyp: Text](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
 
-![](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
+1. I **Frågeinställningar** ser du de formningssteg som tillämpas på dina data i **Tillämpade steg**. Om du vill ta bort ett steg från formningsprocessen trycker du på **X** till vänster om steget. 
 
-Observera att **Tillämpade steg** i **Frågeinställningar** återspeglar eventuella formningssteg som tillämpas på informationen. Det är bara att trycka på **X** till vänster om steget om jag vill ta bort något steg från formningsprocessen. I följande bild visar **Tillämpade steg** de steg som har utförts hittills: ansluta till webbplatsen (**källa**) och välja tabellen (**navigering**). Medan frågeredigeraren hämtar tabellen ändrar den automatiskt textbaserade numeriska kolumner från *Text* till *Heltal* (**ändringstyp**). De två sista stegen visar våra tidigare åtgärder med **Lägg till egen** och **Ändrad typ1:** . 
+    I den här bilden ser du listan **Tillämpade steg** med de steg som lagts till hittills: 
+     - **Källa**: Ansluta till webbplatsen.
+     - **Navigering**: Välja tabellen. 
+     - **Ändrade typ**: Ändra textbaserade talkolumner från *Text* till *Heltal*. 
+     - **Lade till anpassad**: Lägga till en anpassad kolumn.
+     - **Ändrade Type1**: Det sista tillämpade steget.
 
-![](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
+       ![Lista med tillämpade steg](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
 
-Innan vi kan arbeta med den här frågan måste vi utföra ett par ändringar så att dess data hamnar på rätt plats:
+## <a name="adjust-data"></a>Justera data
 
-* *Justera rankningen genom att ta bort en kolumn* – vi har beslutat att **Levnadskostnader** är en icke-faktor för våra resultat. När vi tagit bort den här kolumnen stöter vi på problem med att data förblir oförändrade. Men det är enkelt att åtgärda med Power BI Desktop och genom att göra detta visar vi den smidiga funktionen **Tillämpade steg** i fråga.
-* *Åtgärda några fel* – Eftersom vi har tagit bort en kolumn behöver vi justera våra beräkningar i kolumnen **Ny rankning**. Detta innebär att du ändrar en formel.
-* *Sortera data* – Baserat på kolumnerna **Ny rankning** och **Rankning**. 
-* *Ersätt data* – Vi ska fokusera på hur du ersätter ett specifikt värde och behovet av att inkludera ett **Tillämpat steg**.
-* *Ändra tabellnamnet* – **Tabell 0** är inte en användbar beskrivning, men det är lätt att ändra det.
+Innan vi kan arbeta med den här frågan måste vi göra några ändringar och justera våra data:
 
-Om du vill ta bort kolumnen **Levnadskostnader** är det bara att markera den och välja fliken **Start** från menyfliken. Välj sedan **Ta bort kolumner** enligt följande bild.
+   - Justera rangordningarna genom att ta bort en kolumn.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
+       Vi har bestämt att **Cost of living** inte är en relevant faktor i resultatet. När du tar bort den här kolumnen ser vi att data förblir oförändrade. 
 
-Observera att värdena för _Ny rankning_ inte har ändrats; detta beror på ordningen på stegen. Eftersom frågeredigeraren registrerar stegen i turordning, men oberoende av varandra, kan du flytta varje **tillämpat steg** uppåt eller nedåt i sekvensen. Högerklicka bara på något steg, så visar frågeredigeraren en meny där kan du göra följande: **Byta namn på**, **Ta bort**, **Ta bort** **tills slutet** (ta bort det aktuella steget och alla efterföljande steg för), **Flytta upp**, eller **Flytta ned**. Gå vidare och flytta upp det sista steget _Ta bort kolumner_ till precis ovanför steget _Lägg till egen_.
+   - Rätta till några fel.
 
-![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+       Eftersom vi har tagit bort en kolumn måste vi justera våra beräkningar i kolumnen **New Rank**, vi måste bland annat ändra en formel.
 
-Välj sedan steget _Lägg till egen_. Observera att data nu visar _Fel_ som vi behöver åtgärda. 
+   - Sortera data.
 
-![](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+       Sortera data baserat på kolumnerna **New Rank** och **Rank**.
+ 
+   - Byt ut data.
 
-Det finns ett par sätt att få mer information om varje fel. Du kan markera cellen (utan att klicka på ordet **Fel**) eller klicka på ordet **Fel** direkt. Om du väljer cellen *utan* att klicka på ordet **Fel**, visar frågeredigeraren information om felet längst ned i fönstret.
+       Vi fokuserar på hur du ersätter ett specifikt värde och behovet av att infoga ett **Tillämpat steg**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+   - Ändra tabellnamnet. 
 
-Om du klickar på ordet *Fel* direkt, skapas ett **Tillämpat steg** i rutan **Frågeinställningar** med information om felet. Vi vill inte ta den här vägen, så välj **Avbryt**.
+       Eftersom **Table 0** inte är en användbar beskrivning av tabellen ska vi ändra dess namn.
 
-För att åtgärda felen, välj kolumnen _Ny rankning_ och visa dataformeln genom att öppna menyfliken **Visa** och välja kryssrutan **Formelfält**. 
+1. Ta bort kolumnen **Cost of living** genom att markera den, välja fliken **Start** från menyfliksområdet och sedan välja **Ta bort kolumner**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+    ![Välj Ta bort kolumner](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Nu kan du ta bort parametern _Levnadskostnader_ och minska divisorn genom att ändra formeln till följande: 
+   Observera att värdena i **New Rank** inte har ändrats. Det här beror på stegens ordning. Eftersom Frågeredigeraren registrerar stegen i turordning, men oberoende av varandra, kan du flytta varje **tillämpat steg** uppåt eller nedåt i sekvensen. 
 
+1. Högerklicka på ett steg. Det finns en meny i Frågeredigeraren där du kan utföra följande uppgifter: 
+   - **Byt namn**: Byt namn på steget.
+   - **Ta bort**: Ta bort steget.
+   - **Ta bort** **till slutet**: Ta bort det aktuella steget och alla efterföljande steg.
+   - **Flytta upp**: Flytta steget uppåt i listan.
+   - **Flytta ned**: Flytta steget nedåt i listan.
+
+1. Flytta upp det sista steget, **Tog bort kolumner**, till precis ovanför steget **Lade till anpassad**.
+
+   ![Flytta upp steg i Tillämpade steg](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+
+1. Markera steget **Lade till anpassad**. 
+
+   Observera att data nu visar _Fel_. Det här behöver vi åtgärda.
+
+   ![Fel i kolumndataresultat](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+
+   Det finns ett par sätt att få mer information om varje fel. Om du markerar cellen utan att klicka på ordet *Fel* visas information om felet längst ned i Frågeredigeraren.
+
+   ![Felinformation i Frågeredigeraren](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+
+   Om du klickar på ordet *Fel* direkt skapar Frågeredigeraren ett **tillämpat steg** i rutan **Frågeinställningar** med information om felet. 
+
+1. Eftersom vi inte behöver visa information om felen väljer du **Avbryt**.
+
+1. Åtgärda felen genom att markera kolumnen **New Rank** och visa sedan kolumnens dataformel genom att markera kryssrutan **Formelfält** på fliken **Visa**. 
+
+   ![Markera Formelfält](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+
+1. Ta bort parametern _Cost of living_ och minska nämnaren genom att ändra formeln så här: 
+   ```
     Table.AddColumn(#"Removed Columns", "New Rank", each ([Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 7)
+   ```
 
-Välj den gröna bockmarkeringen till vänster om formelfältet eller tryck på **RETUR**, så bör data ersättas med de reviderade värdena och steget **Lägg till egen** bör nu slutföras *utan fel*.
+1. Välj den gröna bockmarkeringen till vänster om formelfältet eller tryck på **Enter**.
 
-> [!NOTE]
-> Du kan också **ta bort fel** (i menyfliksområdet eller på snabbmenyn), vilket tar bort alla rader som innehåller fel. I det här fallet hade vi tagit bort alla rader från våra data och vi vill inte göra det – vi gillar alla våra data och vill behålla dem i tabellen.
+  Frågeredigeraren ersätter data med de ändrade värdena och steget **Lade till anpassad** slutförs utan fel.
 
-Nu behöver vi sortera data baserade på kolumnen **Ny rankning**. Välj först de senast tillämpade steget **Ändrad typ1:** för att få den senaste informationen. Välj sedan listrutan bredvid kolumnrubriken **Ny rankning** och välj **Sortera stigande**.
+   > [!NOTE]
+   > Du kan också **Ta bort fel** i menyfliksområdet eller på snabbmenyn, och då tar du bort alla rader som innehåller fel. Det vill vi dock inte göra i den här självstudien eftersom vi vill bevara data i tabellen.
 
-![](media/desktop-shape-and-combine-data/shapecombine_sort.png)
+1. Sortera data baserat på kolumnen **New Rank**. Välj först det sista tillämpade steget, **Ändrade Type1**, så att du visar den mest aktuella informationen. Välj sedan listrutan bredvid kolumnrubriken **New Rank** och välj sedan **Sortera stigande**.
 
-Observera att data nu sorteras enligt **Ny rankning**.  Men om du tittar i kolumnen **Rankning**, kommer du att märka att data inte sorteras korrekt i fall där värdet **Ny rankning** är ett oavgjort resultat. Lös problemet genom att välja kolumnen **Ny rankning** och ändra formeln i **Formelfältet** till följande:
+   ![Sortera data i kolumnen New Rank](media/desktop-shape-and-combine-data/shapecombine_sort.png)
 
+   Data sorteras nu enligt **New Rank**. Men om du tittar i kolumnen **Rank** ser du att data inte sorteras korrekt när värdet är samma som i **New Rank**. Vi rättar till det i nästa steg.
+
+1. Du kan lösa sorteringsproblemet genom att välja kolumnen **New Rank** och ändra formeln i **formelfältet** så här:
+
+   ```
     = Table.Sort(#"Changed Type1",{{"New Rank", Order.Ascending},{"Rank", Order.Ascending}})
+   ```
 
-Välj grön bockmarkering till vänster om formelfältet eller tryck på **RETUR**, så bör raderna nu sorteras i enlighet med både _Ny rankning_ och _Rankning_.
+1. Välj den gröna bockmarkeringen till vänster om formelfältet eller tryck på **Enter**. 
 
-Dessutom kan du välja ett **Tillämpat steg** var som helst i listan och fortsätta forma data från den punkten i sekvensen. Frågeredigeraren infogar automatiskt ett nytt steg direkt efter det markerade **tillämpade steget**. Vi gör ett försök.
+   Raderna sorteras nu i enlighet med både **New Rank** och **Rank**. Dessutom kan du välja ett **Tillämpat steg** var som helst i listan och fortsätta forma data från den punkten i sekvensen. Frågeredigeraren infogar automatiskt ett nytt steg direkt efter det markerade **tillämpade steget**. 
 
-Först väljer du **Tillämpade steg** innan du lägger till den anpassade kolumnen. Detta är steget _Borttagna kolumnen_. Här kommer vi att ersätta värdet för rankningen _Väder_ i Arizona. Högerklicka på lämplig cell som innehåller Arizonas rankning för _Väder_ och välj *Ersätt värden...*  från menyn som visas. Observera vilket **Tillämpat steg** som är valt (steget innan steget _Lägg till egen_).
+1. Välj steget innan den anpassade kolumnen i **Tillämpade steg**, vilket är steget **Tog bort kolumner**. Här byter vi ut rankingvärdet för **Weather** i Arizona. Högerklicka på cellen som innehåller Arizonas rankning i kategorin **Weather** och välj **Ersätt värden**. Observera vilket **tillämpat steg** som är markerat för tillfället.
 
-![](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
+   ![Välj Ersätt värden för kolumnen](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
 
-Eftersom vi infogar ett steg varnar frågeredigeraren oss om risken med detta – följande steg kan skada frågan. Vi måste vara försiktiga och eftertänksamma! Eftersom detta är en genomgång och vi visar en riktigt fiffig funktion hos frågeredigeraren för att demonstrera hur du kan skapa, ta bort, infoga och sortera om stegen kan vi köra på och välja **Infoga**.
+1. Välj **Infoga**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
+    Eftersom vi infogar ett steg varnar Frågeredigeraren oss om risken med detta. De efterföljande stegen kan få frågan att sluta fungera. 
 
-Ändra värdet till _51_ så ersätts data för Arizona. När du skapar ett nytt tillämpat steg namnger frågeredigeraren steget baserat på åtgärden, i det här fallet **Ersatt värde**. När du har mer än ett steg med samma namn i din fråga lägger frågeredigeraren till en siffra (i ordning) till varje efterföljande **tillämpat steg** att åtskilja dem.
+    ![Verifiering av Infoga steg](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
 
-Välj nu senaste **Tillämpat steg**, _Sorterade rader_, och notera att informationen har ändrats för Arizonas nya rankning.  Detta beror på att vi infogade steget _Ersatt värde_ på rätt plats innan steget _Lägg till egen_.
+1. Ändra datavärdet till _51_. 
 
-Okej, det var lite komplicerat, men det var ett bra exempel på hur kraftfull och mångsidig frågeredigeraren kan vara.
+   Frågeredigeraren ersätter data för Arizona. När du skapar ett nytt **tillämpat steg** namnges det i Frågeredigeraren baserat på åtgärden, i det här fallet **Ersatt värde**. När du har fler än ett steg med samma namn i frågan lägger Frågeredigeraren till en siffra (i ordning) till varje efterföljande **tillämpat steg** så att du kan åtskilja dem.
 
-Till sist vill vi ändra namnet på tabellen till en beskrivande text. När det är dags att skapa rapporter är det särskilt praktiskt att ha beskrivande namn, särskilt när vi ansluter till flera datakällor och de är listade i rutan **Fält** rutan i **Rapportvyn**.
+1. Välj det sista **tillämpade steget**, **Sorterade rader**. 
 
-Du kan enkelt ändra tabellnamnet: i rutan **frågeinställningar** under **Egenskaper** skriver du det nya namnet på tabellen som visas i följande bild och trycker på **Retur**. Vi kan kalla den här tabellen *Pensioneringsstatistik*.
+   Observera att data har ändrats enligt Arizona nya ranking. Ändringen beror på att vi infogade steget **Ersatte värde** på rätt plats, innan steget **Lade till anpassad**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+1. Till sist vill vi ändra namnet på tabellen till en beskrivande text. I fönstret **Frågeinställningar**, under **Egenskaper**, anger du det nya namnet på tabellen och väljer sedan **Enter**. Ge tabellen namnet *RetirementStats*.
 
-Okej, nu har vi format dessa data efter våra behov. Nu ska vi ansluta till en annan datakälla och kombinera data.
+   ![Byt namn på tabellen i Frågeinställningar](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+
+   När du börjar skapa rapporter är det praktiskt att använda beskrivande namn, särskilt när vi ansluter till flera datakällor. Du ser dem i rutan **Fält** i **Rapportvyn**.
+
+   Nu har vi format våra data tillräckligt. Nu ska vi ansluta till en annan datakälla och kombinera data.
 
 ## <a name="combine-data"></a>Kombinera data
-Våra data om olika delstater är intressanta och kommer vara användbara för att skapa mer analysverktyg och -frågor. Men det finns ett problem: de flesta data använder en tvåbokstavsförkortning för delstatskoder, inte det fullständiga namnet på delstaten. Vi behöver hitta ett sätt att associera delstatsnamn med deras förkortningar.
+Data om olika delstater är intressanta och kommer vara användbara när vi skapar andra analyser och frågor. Men det finns ett problem: de flesta data använder en tvåbokstavsförkortning för delstatskoder, inte det fullständiga namnet på delstaten. Vi behöver kunna associera delstatsnamn med deras förkortningar.
 
-Vi har tur: det finns en annan offentlig datakälla som gör just detta, men den måste formas en hel del innan vi kan ansluta den till vår pensionstabell. Här är webbresursen för delstatsförkortningar:
+Vi har tur: det finns en annan offentlig datakälla som gör just detta, men den måste formas en hel del innan vi kan ansluta den till vår pensionstabell. Så här formar du data:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+1. Gå till menyfliksområdet **Start** i Frågeredigeraren och välj **Ny källa \> Webb**. 
 
-Från menyfliksområdet **Start** i frågeredigeraren väljer vi **Ny källa \> Webb** och anger adressen. Välj **Anslut** och så visar Navigator vad den fann på webbplatsen.
+2. Ange adressen till webbplatsen med delstatsförkortningar, *https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , och välj **Anslut**.
 
- ![](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
+   Du ser webbplatsens innehåll i navigatören.
 
-Vi väljer **Koder och förkortningar ...** eftersom den innehåller användbara data men det kommer att krävas en hel del omformning innan vi kan reducera tabellens data till det vi behöver.
+    ![Sidan med navigatören](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
 
-> [!TIP]
-> Finns det något snabbare eller enklare sätt att utföra stegen nedan? Ja, kan vi skapa en *relation* mellan två tabeller och forma data baserat på relationen. Följande steg är fortfarande bra om du vill bli bättre på att arbeta med tabeller, men det är bra att veta att relationer är ett snabbt sätt att använda data från flera tabeller.
+1. Välj **Codes and abbreviations**. 
+
+   > [!TIP]
+   > Det krävs en hel del formning för att trimma ned tabelldata så att de passar våra behov. Finns det något snabbare eller enklare sätt att utföra stegen nedan? Ja, kan vi skapa en *relation* mellan två tabeller och forma data baserat på relationen. Följande steg är fortfarande bra om du vill bli bättre på att arbeta med tabeller, men med relationer kan du snabbt använda data från flera tabeller.
 > 
 > 
 
-Vi gör följande för att ordna våra data:
+Så här formar du data:
 
-* Ta bort den översta raden – den är ett resultat av hur webbsidans tabell skapade och vi behöver den inte. Välj **minska rader \> Ta bort rader \> Ta bort översta rader** från menyfliksområdet **Start**.
+1. Ta bort den översta raden. Eftersom den är ett resultat av hur webbsidans tabell är skapad så behöver vi den inte. Välj **minska rader \> Ta bort rader \> Ta bort översta rader** från menyfliksområdet **Start**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
+    ![Välj Ta bort de översta raderna](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
-Fönstret **Ta bort översta rader**, där du kan ange hur många rader som du vill ta bort.
+    Fönstret **Ta bort översta rader**, där du kan ange hur många rader som du vill ta bort.
 
->[!NOTE]
->Om Power BI av misstag importerar tabellrubriker som en rad i datatabellen, kan du välja **Använd första raden som rubriker** från fliken **Start** eller från fliken **Transformera** i menyfliksområdet för att åtgärda tabellen.
+    > [!NOTE]
+    > Om Power BI av misstag importerar tabellrubriker som en rad i datatabellen, kan du välja **Använd första raden som rubriker** från fliken **Start** eller från fliken **Transformera** i menyfliksområdet för att åtgärda tabellen.
 
-* Ta bort de nedersta 26 raderna – de är territorier som vi inte behöver inkludera. Välj **minska rader \> Ta bort rader \> Ta bort nedersta rader** från menyfliksområdet **Start**.
+1. Ta bort de nedersta 26 raderna. Dessa rader är amerikanska territorier som vi inte behöver ta med. Välj **minska rader \> Ta bort rader \> Ta bort nedersta rader** från menyfliksområdet **Start**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
+    ![Välj Ta bort de nedersta raderna](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 
-* Eftersom tabellen Pensioneringsstatistik saknar information för Washington DC kan behöver vi filtrera det från listan. Välj listrutepilen bredvid kolumnen Regionstatus och avmarkera sedan kryssrutan bredvid **Federalt distrikt**.
+1. Eftersom tabellen RetirementStats inte har någon information för Washington DC måste vi filtrera bort staden från vår lista. Välj listrutan **Region Status** och avmarkera sedan kryssrutan bredvid **Federal district**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
+    ![Rensa kryssrutan Federal district](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Ta bort några kolumner som inte behövs – vi behöver bara mappningen av delstaten till dess officiella tvåbokstavsförkortning så vi kan ta bort följande kolumner: **Kolumn1**, **Kolumn3**, **Kolumn4** och sedan **Kolumn6** till **Kolumn11**. Markera **Kolumn1 **och håll nere tangenten** CTRL** och markera kolumnerna som ska tas bort (kolumnerna behöver inte vara intilliggande). Välj **Ta bort kolumner \> Ta bort kolumner** från fliken Start i menyfliksområdet.
+1. Ta bort några kolumner som inte behövs. Eftersom vi bara behöver mappningen av delstaten till dess officiella tvåbokstavsförkortning så vi kan ta bort följande kolumner: **Column1**, **Column3**, **Column4** och **Column6** till **Column11**. Markera först **Column1**, håll ned tangenten **Ctrl** och markera kolumnerna som ska tas bort. Gå till fliken **Start** i menyfliksområdet och välj **Ta bort kolumner \> Ta bort kolumner**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
+   ![Ta bort kolumn](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
->[!NOTE]
->Detta är ett bra tillfälle att påpeka att *sekvensen* med tillämpade steg i frågeredigeraren är viktig och kan påverka hur data formas. Det är också viktigt att tänka på hur ett steg kan påverka andra efterföljande steg. Om du tar bort ett steg Tillämpade steg kanske efterföljande steg inte fungerar som avsett på grund av effekten på frågornas ordningsföljd.
+   > [!NOTE]
+   > Detta är ett bra tillfälle att påpeka att *sekvensen* med tillämpade steg i frågeredigeraren är viktig och kan påverka hur data formas. Det är också viktigt att tänka på hur ett steg kan påverka andra efterföljande steg. Om du tar bort ett steg Tillämpade steg kanske efterföljande steg inte fungerar som avsett på grund av effekten på frågornas ordningsföljd.
 
->[!NOTE]
->När du ändrar storlek på Query Editor-fönstret för att göra bredden mindre förminskas vissa objekt i menyfliksområdet för att maximera användningen av synligt utrymme. Om du ökar bredden på Query Editor-fönstret utökas objektet i menyfliksområdet för att använda utrymmet i menyfliksområdet optimalt.
+   > [!NOTE]
+   > När du ändrar storlek på Query Editor-fönstret för att göra bredden mindre förminskas vissa objekt i menyfliksområdet för att maximera användningen av synligt utrymme. Om du ökar bredden på Query Editor-fönstret utökas objektet i menyfliksområdet för att använda utrymmet i menyfliksområdet optimalt.
 
-* Byt namn på kolumner och tabellen – som vanligt finns det några olika sätt att byta namn på en kolumn. Markera kolumnen först, välj sedan **Byt namn**  från fliken **Transformera** i menyfliksområdet eller högerklicka och välj **Byt namn på...** från menyn som visas. Följande bild har pilar som pekar på båda alternativen. Du behöver bara välja en.
+1. Byt namn på kolumnerna och tabellen. Det finns några olika sätt att byta namn på en kolumn: Markera först kolumnen och välj antingen **Byt namn** från fliken **Transformera** i menyfliksområdet, eller högerklicka och välj **Byt namn**. Följande bild har pilar som pekar på båda alternativen. Du behöver bara välja en.
 
-![](media/desktop-shape-and-combine-data/shapecombine_rename.png)
+   ![Byt namn på kolumnen i Frågeredigeraren](media/desktop-shape-and-combine-data/shapecombine_rename.png)
 
-Nu ska vi byta namn på dem till *Tillståndsnamn* och *Delstatskod*. Om du vill byta namn på tabellen, skriver du namnet i rutan **namn** bredvid fönstret **Frågeinställningar**. Vi kan kalla den här tabellen *Delstatskoder*.
+1. Byt namn på kolumnerna till *State Name* och *State Code*. Byt namn på tabellen genom att ange **namnet** i rutan **Frågeinställningar**. Ge tabellen namnet *StateCodes*.
 
-Nu när vi har format tabellen Delstatskoder kan vi kombinera de två tabellerna, eller frågorna, till en. Eftersom tabellerna är resultatet från frågorna som vi tillämpade på våra data kallar vi dem ofta för *frågor*.
+## <a name="combine-queries"></a>Kombinera frågor
 
-Det finns två sätt att kombinera frågor – *sammanslagning* och *bifoga*.
+Nu när vi har format tabellen StateCodes som vi vill ska vi kombinera de två tabellerna, eller frågorna, till en enda. Eftersom tabellerna vi nu har är ett resultat av frågorna vi körde mot data så kallas de ofta för *frågor*.
 
-När du har en eller flera kolumner som du vill lägga till i en annan fråga kan du **sammanfoga** frågorna. När du har ytterligare rader med data som du vill lägga till en befintlig fråga kan du **bifoga** frågan.
+Det finns två huvudsakliga sätt att kombinera frågor: *sammanfoga* och *bifoga*.
 
-I det här fallet vill vi sammanfoga frågor. För att komma igång väljer du frågan i frågeredigeraren *där du vill* att den andra frågan ska sammanfogas, i det här fallet *Pensionsstatistik*. Välj sedan **Kombinera \> Sammanfoga frågor** från fliken **Start** på menyfliksområdet.
+- När du har en eller flera kolumner som du vill lägga till i en annan fråga kan du *sammanfoga* frågorna. 
+- När du har ytterligare rader med data som du vill lägga till en befintlig fråga kan du *bifoga* frågan.
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
+I det här fallet vill vi sammanfoga frågorna. Gör så här:
+ 
+1. Gå till den vänstra rutan i Frågeredigeraren och välj frågan *dit* du vill sammanfoga den andra frågan. I det här fallet är det **RetirementStats**. 
 
-Du kan uppmanas att ange sekretessnivåer för att säkerställa att data kombineras utan att inkludera eller överföra data som du inte ville överföra.
+1. Välj **Kombinera \> Slå ihop frågor** från fliken **Start** i menyfliksområdet.
 
-Därefter visas fönstret **Sammanfoga**, där vi kan välja vilken tabell som vi vill sammanfoga i den markerade tabellen och sedan klicka på de matchande kolumnerna som ska användas för sammanfogningen. Välj Delstat från tabellen *Pensionsstatistik* (fråga). Välj sedan frågan *Delstatskoder* (enkelt i det här fallet eftersom det är enbart en annan fråga – när du ansluter till flera datakällor finns det många frågor att välja mellan). När vi väljer rätt matchande kolumner – **Delstat** från *Pensionsstatistik*, och **Delstatsnamn** från *Delstatskoder* – ser fönstret **Sammanfoga** ut ungefär så här, och knappen **OK** är aktiverad.
+   ![Välj Slå ihop frågor](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
+   Du kan uppmanas att ange sekretessnivåer för att säkerställa att data kombineras utan att du tar med eller överför data som du inte vill överföra.
 
-En **NewColumn** skapas i slutet av frågan, vilket är innehållet för tabellen (frågan) som har sammanfogats med den befintliga frågan. Alla kolumner från den sammanfogade frågan ryms i **NyKolumn**, men du kan välja att **Expandera** tabellen inkludera alla kolumner du vill.
+   Fönstret **Sammanfoga** öppnas. Här får du välja vilken tabell du vill slå ihop med den valda tabellen, och vilka matchande kolumner som ska användas för sammanfogningen. 
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
+1. Välj **State** från tabellen RetirementStats och sedan frågan **StateCodes**. 
 
-Om du vill utöka den sammanfogade tabellen och välja vilka kolumner som ska ingå, väljer du ikonen (![Expandera](media/desktop-shape-and-combine-data/icon.png)). Fönstret **Expandera** visas.
+   När du väljer rätt matchande kolumner är knappen **OK** aktiverad.
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+   ![Fönstret Sammanfoga](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
 
-I det här fallet är vi bara intresserade av kolumnen **Delstatskod** så vi väljer bara den kolumnen och sedan **OK**. Vi avmarkerar kryssrutan från Använd det ursprungliga kolumnnamnet som prefix eftersom vi inte behöver eller vill använda den. Om vi lämnar som den markerad kommer den sammanfogade kolumnen heta **NyKolumn.State kod** (det ursprungliga kolumnnamnet eller **NyKolumn**, sedan en punkt och sedan namnet på kolumnen som användes i frågan).
+1. Välj **OK**.
 
->[!NOTE]
->Vill du experimentera med hur du hanterar **NyKolumn**-tabellen? Du kan prova dig fram och om du inte gillar resultatet är det bara att ta bort steget från listan **Tillämpade steg** i fönstret **Frågeinställningar**. Din fråga återgår till tillståndet innan du tillämpade steget **Expandera**. Det är som en gratis uppfräschning, som du kan upprepa hur många gånger som helst tills du är nöjd med expanderingsprocessen.
+   Frågeredigeraren skapar kolumnen **NewColumn** i slutet av frågan, med innehållet i tabellen (frågan) som slogs ihop med den befintliga frågan. Alla kolumner i den sammanfogade frågan komprimeras i kolumnen **NewColumn**, men du kan **expandera** tabellen och inkludera vilka kolumner du vill.
 
-Nu har vi en enskild fråga (tabellen) som kombinerar två datakällor som har formats efter våra behov. Den här frågan kan fungera som bas för många intressanta dataanslutningar – till exempel statistik över bostadskostnader, demografi eller jobbmöjligheter i varje delstat.
+   ![Kolumnen NewColumn](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 
-Om du vill tillämpa ändringarna och stänga frågeredigeraren väljer du **Stäng och tillämpa** från menyfliksområdet **Start**. Den omvandlade datauppsättningen visas i Power BI Desktop och är redo för användning när du skapar rapporter.
+1. Om du vill expandera den sammanfogade tabellen och välja vilka kolumner som ska ingå väljer du expanderingsikonen (![expanderingsikonen](media/desktop-shape-and-combine-data/icon.png)). 
 
-![](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
+   Fönstret **Expandera** visas.
+
+   ![NewColumn i frågan](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+
+1. I det här fallet vill vi bara ha kolumnen **State Code**. Markera den kolumnen, avmarkera **Använd det ursprungliga kolumnnamnet som prefix** och välj sedan **OK**.
+
+   Om vi hade låtit kryssrutan för **Använd det ursprungliga kolumnnamnet som prefix** vara markerad skulle den sammanfogade kolumnen få namnet **NewColumn.State Code**.
+
+   > [!NOTE]
+   > Vill du utforska hur du tar med tabellen NewColumn? Du kan prova dig fram och om du inte gillar resultatet är det bara att ta bort steget från listan **Tillämpade steg** i fönstret **Frågeinställningar**. Din fråga återgår till tillståndet innan du tillämpade steget **Expandera**. Du kan göra det här hur många gånger som helst tills du är nöjd med expanderingsprocessen.
+
+   Nu har vi en enda fråga (tabellen) där de två datakällor kombineras, och var och en är formad efter våra behov. Den här frågan kan användas som bas för många intressanta dataanslutningar, till exempel statistik över bostadskostnader, demografi eller lediga jobb i olika delstater.
+
+1. Om du vill tillämpa ändringarna och stänga Frågeredigeraren väljer du **Stäng och tillämpa** i menyfliksområdet **Start**. 
+
+   Den omvandlade datauppsättningen visas i Power BI Desktop och är redo för användning när du skapar rapporter.
+
+   ![Välj Stäng och tillämpa](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
 
 ## <a name="next-steps"></a>Nästa steg
-Det finns olika typer av saker som du kan göra med Power BI Desktop. Läs följande resurser för mer information om dess möjligheter:
+Mer information om Power BI Desktop och funktionerna i programmet finns i följande resurser:
 
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
-* [Frågeöversikt med Power BI Desktop](desktop-query-overview.md)
+* [Frågeöversikt i Power BI Desktop](desktop-query-overview.md)
 * [Datakällor i Power BI Desktop](desktop-data-sources.md)
-* [Anslut till data i Power BI Desktop](desktop-connect-to-data.md)
+* [Ansluta till data i Power BI Desktop](desktop-connect-to-data.md)
 * [Vanliga frågeuppgifter i Power BI Desktop](desktop-common-query-tasks.md)   
 

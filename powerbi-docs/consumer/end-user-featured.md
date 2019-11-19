@@ -2,7 +2,6 @@
 title: Välj vilken instrumentpanel som ska visas när du öppnar Power BI-tjänsten
 description: Dokumentation om hur du skapar en aktuell instrumentpanel i Power BI-tjänsten
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7f7f488891ddbdac1f377d25cf32c2eb0468c291
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 412bcf397d550e002957e7379bf41381e8e3eea8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256312"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852538"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Aktuella instrumentpaneler i Power BI-tjänsten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Många har en instrumentpanel som de besöker oftare än andra. Det kan vara instrumentpanelen vi använder för att driva verksamheten. Eller så kan det vara en instrumentpanel som är en sammanslagning av paneler från många olika instrumentpaneler och rapporter.
 
 ## <a name="create-a-featured-dashboard"></a>Skapa en aktuell instrumentpanel
@@ -37,7 +39,7 @@ Se hur Amanda skapar en aktuell instrumentpanel i videon. Prova själv genom att
 
 
 1. Öppna den instrumentpanel som du vill ange som aktuell. 
-2. I det översta menyfältet väljer du ellipsen (…) och sedan **Ställ in som aktuell**. 
+2. Välj **Fler alternativ** (…) längst upp och sedan **Ställ in som aktuell**. 
    
     ![Ikonen Ange som aktuell](./media/end-user-featured/power-bi-dropdown.png)
 3. Bekräfta valet.
@@ -58,11 +60,11 @@ Du kan ange en ny instrumentpanel som den aktuella instrumentpanelen senare.
 Om du bestämmer dig för att du inte vill att en aktuell instrumentpanel kan du ta bort funktionen så här.
 
 1. Öppna den aktuella instrumentpanelen.
-2. I det översta menyfältet väljer du ellipsen (…) och sedan **Inaktivera aktuell**.
+2. Välj **Fler alternativ** (…) längst upp och sedan **Inaktivera aktuell**.
 
     ![Inaktivera vald aktuell instrumentpanel](./media/end-user-featured/power-bi-unfeature-newer.png)
    
 ## <a name="next-steps"></a>Nästa steg
 - [Favoritmarkera en instrumentpanel](end-user-favorite.md)
-- Har du fler frågor? Testa [Power BI Community](http://community.powerbi.com/).
+- Har du fler frågor? Testa [Power BI Community](https://community.powerbi.com/).
 

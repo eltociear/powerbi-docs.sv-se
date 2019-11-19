@@ -1,0 +1,36 @@
+- name: Dokumentation om Power BI-vägledning
+  href: index.yml
+  expanded: true
+  items:
+    - name: Översikt
+      expanded: true
+      items:
+        - name: Översikt
+          href: overview.md
+    - name: Begrepp
+      expanded: true
+      items:
+        - name: Vad är ett star-schema?
+          href: star-schema.md
+        - name: Minska datamodellstorlek
+          href: import-modeling-data-reduction.md
+        - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
+          href: dax-divide-function-operator.md
+        - name: Vikten av frågedelegering
+          href: power-query-folding.md
+        - name: Lämplig användning av felfunktioner
+          href: dax-error-functions.md
+        - name: Metodtips för dataflöden
+          href: ../service-dataflows-best-practices.md
+        - name: Vägledning för DirectQuery-modell i Power BI Desktop
+          href: directquery-model-guidance.md
+    - name: Vitböcker
+      items:
+        - name: Översikt vitböcker
+          href: ../whitepapers.md
+        - name: Vitbok Power BI-säkerhet
+          href: ../whitepaper-powerbi-security.md
+        - name: Power BI Premium-distribution
+          href: ../whitepaper-powerbi-premium-deployment.md
+        - name: Distribuera Power BI externt med hjälp av Azure Active Directory B2B
+          href: ../whitepaper-azure-b2b-power-bi.md

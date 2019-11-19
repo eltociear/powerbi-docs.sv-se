@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f55a9f1bfc9454c7d5a4ee3755a10f7cde1b0fd6
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61270483"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73780936"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Så här migrerar du innehåll från Power BI-arbetsytesamlingar till Power BI Embedded
 
@@ -20,7 +20,7 @@ Lär dig hur du migrerar från Power BI-arbetsytesamling till Power BI Embedded 
 
 Microsoft presenterade nyligen [Power BI Embedded](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), en ny kapacitetsbaserad licensieringsmodell som ökar flexibiliteten för hur användare får åtkomst till innehåll, och hur de kan dela och distribuera det. Erbjudandet ger också ytterligare skalbarhet och prestanda.
 
-Med Power BI Embedded kommer du att ha en API-yta, en konsekvent uppsättning funktioner och tillgång till de senaste funktionerna i Power BI när du bäddar in innehåll, till exempel instrumentpaneler, gatewayer och apparbetsytor. Framöver kommer du att kunna börja med Power BI Desktop och gå vidare till distribution med Power BI Embedded.
+Med Power BI Embedded får du en API-yta, en konsekvent uppsättning funktioner och tillgång till de senaste funktionerna i Power BI när du bäddar in innehåll, som instrumentpaneler, gatewayer och arbetsytor. Framöver kommer du att kunna börja med Power BI Desktop och gå vidare till distribution med Power BI Embedded.
 
 Nuvarande Power BI-arbetsytesamling fortsätter att vara tillgänglig under en begränsad tid. Kunder med ett Enterprise-avtal har åtkomst till dess att deras befintliga avtal förfaller. Kunder som anskaffat Power BI-arbetsytesamling genom direkt- eller CSP-kanaler har åtkomst i ett år efter den allmänt tillgängliga versionen av Power BI Embedded.  Den här artikeln ger dig anvisningar om hur du migrerar från Power BI-arbetsytesamling till den nya Power BI Embedded-miljön, och information om vilka förändringar du kan förvänta dig i ditt program.
 
@@ -56,19 +56,19 @@ Det finns några saker du behöver göra för att förbereda migreringen från P
 Följande konton måste finnas i din klient.
 
 > [!NOTE]
-> Dessa konton måste ha Power BI Pro-licenser för att kunna använda appens arbetsytor.
+> Dessa konton måste ha Power BI Pro-licenser för att kunna använda arbetsytor.
 
 1. En klientadministratörsanvändare.
 
-    Den här användaren bör vara medlem i alla apparbetsytor som har skapats för inbäddning.
+    Den här användaren bör vara medlem i alla arbetsytor som har skapats för inbäddning.
 
 2. Konton för analytiker som skapar innehåll.
 
-    Dessa användare ska tilldelas apparbetsytor vid behov.
+    Dessa användare ska tilldelas till arbetsytor efter behov.
 
 3. Ett programs *huvudanvändarkonto* eller Embedded-konto.
 
-    Programmets serverdel sparar kontots autentiseringsuppgifter och använder dem för att skaffa en Azure AD-token som kan användas med Power BI REST-API:er. Det här kontot används för att generera programmets inbäddningstoken. Kontot måste också vara administratör för de apparbetsytor som skapats för inbäddning.
+    Programmets serverdel sparar kontots autentiseringsuppgifter och använder dem för att skaffa en Azure AD-token som kan användas med Power BI REST-API:er. Det här kontot används för att generera programmets inbäddningstoken. Kontot måste också vara administratör för de arbetsytor som skapats för inbäddning.
 
 > [!NOTE]
 > Detta är helt enkelt ett vanligt användarkonto i din organisation som används i inbäddningssyfte.
@@ -83,14 +83,14 @@ Du måste registrera ditt program med Azure AD för att kunna göra REST API-anr
 
 Du bör registrera programmet med programmets **huvudkonto**.
 
-## <a name="create-app-workspaces-required"></a>Skapa apparbetsytor (obligatoriskt)
+## <a name="create-workspaces-required"></a>Skapa arbetsytor (obligatoriskt)
 
-Du kan använda apparbetsytor för att få bättre isolering om programmet betjänar flera kunder. Instrumentpaneler och rapporter skulle isoleras mellan kunderna. Du kan sedan använda ett Power BI-konto per apparbetsyta och därmed isolera programanvändandet ytterligare mellan dina kunder.
+Du kan använda arbetsytor för att få bättre isolering om programmet betjänar flera kunder. Instrumentpaneler och rapporter skulle isoleras mellan kunderna. Du kan sedan använda ett Power BI-konto per arbetsyta och därmed isolera användningen av programmet ytterligare mellan dina kunder.
 
 > [!IMPORTANT]
 > Du kan inte använda en personlig arbetsyta för att utnyttja inbäddningsmöjligheten för användare som inte är Power BI-användare.
 
-Du behöver en användare som har en Pro-licens för att kunna skapa en apparbetsyta i Power BI. Den Power BI-användare som skapar apparbetsytan blir som standard arbetsytans administratör.
+Du behöver en användare som har en Pro-licens för att kunna skapa en arbetsyta i Power BI. Den Power BI-användare som skapar arbetsytan blir som standard arbetsytans administratör.
 
 > [!NOTE]
 > Programmets *huvudkonto* måste vara arbetsytans administratör.
@@ -163,7 +163,7 @@ Du kan använda vissa lösningar för att migrera push-API-rapporten från PaaS 
 
 ## <a name="create-and-upload-new-reports"></a>Skapa och ladda upp nya rapporter
 
-Utöver det innehåll som du har migrerat från Power BI-arbetsytesamlingen, så kan du skapa rapporter och datauppsättningar som använder Power BI Desktop och publicera dessa rapporter på en apparbetsyta. Användaren som publicerar rapporterna behöver en Power BI Pro-licens för att publicera till en apparbetsyta.
+Utöver det innehåll du har migrerat från Power BI Workspace Collection kan du skapa rapporter och datamängder som använder Power BI Desktop och sedan publicera rapporterna på en arbetsyta. Användaren som publicerar rapporterna behöver en Power BI Pro-licens för att publicera till en arbetsyta.
 
 ## <a name="rebuild-your-application"></a>Återskapa ditt program
 
@@ -179,9 +179,9 @@ I ditt program mappar du användare som du hanterar i programmet till ett Power 
 
 När du är redo att gå vidare till produktion måste du göra följande.
 
-* Om du använder en separat klient för utveckling, så måste du kontrollera att dina apparbetsytor, tillsammans med instrumentpaneler och rapporter, är tillgängliga i din produktionsmiljö. Du måste också kontrollera att du har skapat programmet i Azure AD för din produktionsklient och tilldelat rätt appbehörigheter, så som beskrivs i steg 1.
+* Om du använder en separat klientorganisation för utveckling så måste du kontrollera att dina arbetsytor, instrumentpaneler och rapporter är tillgängliga i produktionsmiljön. Du måste också kontrollera att du har skapat programmet i Azure AD för din produktionsklient och tilldelat rätt appbehörigheter, så som beskrivs i steg 1.
 * Köp en kapacitet som passar dina behov. För att bättre förstå den mängd och typ av kapacitet du behöver, se [white paper om kapacitetsplanering för analys i Power BI Embedded](https://aka.ms/pbiewhitepaper). Du kan [köpa kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
-* Redigera apparbetsytan och tilldela den till en Premium.kapacitet under Avancerat.
+* Redigera arbetsytan och tilldela den till en Premium-kapacitet under Avancerat.
 
     ![Premiumkapacitet](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
 
@@ -207,4 +207,4 @@ Rensa i Azure.
 [White paper om kapacitetsplanering för analys i arbetsytesamling](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

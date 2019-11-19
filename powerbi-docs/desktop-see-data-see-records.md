@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6e425f146228d0139b9eec914a44ed5dc732fe98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 667b6eac288d3be35eac619b669498b6d7381dc3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514769"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019256"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Använd se Data och se poster i Power BI Desktop
 I **Power BI Desktop** kan du visa detaljer om en visualisering och se textrepresentationer av underliggande data eller enskilda dataelement för den valda visualiseringen. De här funktionerna kallas ibland för *klicka igenom*, *detaljerad information* eller *gå in på detaljnivå*.
@@ -41,7 +41,7 @@ Du kan använda **Se data** för att visa en textversion av de värden som anvä
 
 ![Se data i menyfliksområdet](media/desktop-see-data-see-records/see-data1.png)
 
-Du kan också visa data genom att högerklicka på en visualisering och sedan välja **Visa data** från menyn som visas, eller genom att välja ellipsen (...) **Fler alternativ** i det övre högra hörnet av en visualisering och sedan välja **Visa data**.
+Du kan också visa data genom att högerklicka på en visualisering och sedan välja **Visa data** från menyn som visas, eller genom att välja **Fler alternativ** (...) uppe till höger i en visualisering och sedan **Visa data**.
 
 ![Högerklicka på Visa data](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Fler alternativ för Visa data](media/desktop-see-data-see-records/see-data3.png)
 

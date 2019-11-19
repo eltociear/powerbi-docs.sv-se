@@ -2,7 +2,6 @@
 title: 'Organisationsinnehållspaket: Åtkomst och kopiering'
 description: Läs mer om att skapa kopior av och felsöka åtkomst till organisationsinnehållspaket i Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fa7a7845686fd46e9d58ea138bdddd47a0a097
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 905e461c69a898b41b45e48405c3aaaa6e09cfec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019617"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881316"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsinnehållspaket: Kopiera, uppdatera och få åtkomst
 
@@ -30,7 +29,7 @@ Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller sam
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Skapa en kopia av ett organisationsinnehållspaket
 Skapa din egen kopia av innehållspaketet som inte är synligt för andra.
 
-1. Välj ellipsen (...) bredvid innehållspaketets instrumentpanel > Gör en kopia.
+1. Välj **Fler alternativ** (...) bredvid innehållspaketets instrumentpanel > Gör en kopia.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Välj **Spara**.  
@@ -58,4 +57,4 @@ Se [Hantera, uppdatera och ta bort organisationsinnehållspaket](service-organiz
 ## <a name="next-steps"></a>Nästa steg
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md)
 * [Skapa en grupp i Power BI](service-create-distribute-apps.md)
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

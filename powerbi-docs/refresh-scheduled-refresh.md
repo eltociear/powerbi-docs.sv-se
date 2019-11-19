@@ -2,7 +2,6 @@
 title: Konfigurera schemalagd uppdatering
 description: Detta beskrivs stegen för att välja en gateway och konfigurera schemalagd uppdatering.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 46f61d2fcce21e3f8e6dae83c32457414928faee
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 89f8b3d609b9433cc85d8af709eec828f924ad8e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816559"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860706"
 ---
 # <a name="configure-scheduled-refresh"></a>Konfigurera schemalagd uppdatering
 
@@ -30,7 +29,7 @@ Här beskrivs tillgängliga alternativ för både [Lokal datagateway (personligt
 
 Så här öppnar du skärmen **Schemalagd uppdatering**.
 
-1. Välj **ellipsen (...)** bredvid en datauppsättning som visas under **Datauppsättningar**.
+1. Välj **Fler alternativ** (...) bredvid en datamängd som visas under **Datamängder**.
 2. Välj **Uppdatera schema**.
 
     ![Schemalägg uppdatering](media/refresh-scheduled-refresh/dataset-menu.png)
@@ -48,11 +47,11 @@ Om du har en personlig gateway konfigurerad kan du välja den om den är online.
 
 Du kan också välja företagsgatewayen om du har en sådan tillgänglig. En företagsgateway visas bara som tillgänglig om ditt konto finns med på fliken **Användare** för datakällan som har konfigurerats för en viss gateway.
 
-## <a name="data-source-credentials"></a>Autentiseringsuppgifter för datakälla
+## <a name="data-source-credentials"></a>Datakällans autentiseringsuppgifter
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 Om du använder den personliga gatewayen för att uppdatera data, måste ange autentiseringsuppgifterna för att ansluta till serverdatakällan. Om du har anslutit till ett innehållspaket från en onlinetjänst överförs de autentiseringsuppgifter du har angett för anslutningen till den schemalagda uppdateringen.
 
-![Autentiseringsuppgifter för datakälla](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
+![Datakällans autentiseringsuppgifter](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
 Du behöver bara logga in till datakällor första gången du uppdaterar den aktuella datamängden. När autentiseringsuppgifterna har angetts sparas de för datauppsättningen.
 
@@ -127,5 +126,5 @@ Ibland går det inte som förväntat att uppdatera data. Vanligtvis rör problem
 - [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 - [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: aef50d58dc11269c2c30010c1ca89843689f45c4
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654587"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017687"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Använda sammansatta modeller i Power BI Desktop
 
@@ -53,7 +53,7 @@ Med sammansatta modeller kan du till exempel skapa en modell som kombinerar föl
 En modell som kombinerar data från mer än en DirectQuery-källa eller som kombinerar DirectQuery med importerade data kallas en *sammansatt modell*.
 
 
-Du kan skapa relationer mellan tabeller precis som tidigare, även när dessa tabeller kommer från olika källor, med följande begränsning: alla relationer mellan källor måste definieras med en kardinalitet på *många-till-många*, oavsett deras faktiska kardinalitet. Beteendet för dessa relationer är sedan samma som vanligt för *många-till-många*-relationer, enligt beskrivningen i [Många-till-många-relationer i Power BI Desktop (förhandsversion)](desktop-many-to-many-relationships.md). 
+Du kan skapa relationer mellan tabeller som du alltid har gjort, även om dessa tabeller kommer från olika källor. Alla relationer som är mellan källor skapas med kardinaliteten *många-till-många*, oavsett deras faktiska kardinalitet. Du kan ändra dem till en-till-många, många-till-en eller en-till-en. Oavsett vilken kardinalitet du ställer in fungerar relationer mellan olika källor annorlunda, bland annat genom att du inte kan använda DAX-funktioner för att hämta värden på en-sidan från många-sidan. Prestanda kan också försämras jämfört med relationer av typen många-till-många inom samma källa.
 
 > [!NOTE]
 > I sammansatta modeller är alla importerade tabeller i princip en enda källa, oavsett vilken underliggande datakälla de har importerats från.   
@@ -88,7 +88,7 @@ I **relationsvyn** i Power BI Desktop ser vi nu en ytterligare tabell med namnet
 
 ![Relationsvy av tabeller](media/desktop-composite-models/composite-models_08.png)
 
-Nu behöver vi relatera dessa tabeller till andra tabeller i modellen. Som alltid skapar vi en relation mellan tabellen **Bike** (cykel) från SQL Server och den importerade tabellen **ProductManagers** (produktansvariga). Relationen är alltså mellan *Bike[ProductName]* (cykel [produktnamn]) och *ProductManagers[ProductName]* (produktansvariga [produktnamn]). Som vi nämnde tidigare måste alla relationer mellan källor ha standardkardinaliteten *många-till-många*. 
+Nu behöver vi relatera dessa tabeller till andra tabeller i modellen. Som alltid skapar vi en relation mellan tabellen **Bike** (cykel) från SQL Server och den importerade tabellen **ProductManagers** (produktansvariga). Relationen är alltså mellan *Bike[ProductName]* (cykel [produktnamn]) och *ProductManagers[ProductName]* (produktansvariga [produktnamn]). Som vi nämnde tidigare har alla relationer mellan källor standardkardinaliteten *många-till-många*. 
 
 ![Fönstret Skapa relation](media/desktop-composite-models/composite-models_09.png)
 

@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 4ba6b4840a35e00c4b170a6b916bf3877508546a
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544277"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021537"
 ---
 # <a name="troubleshooting-tile-errors"></a>Felsöka panelfel
 Nedan visas vanliga fel som kan uppstå med paneler tillsammans med en förklaring.
@@ -69,7 +69,7 @@ Detta är vanligtvis ett övergående problem. Kontakta supporten om du försök
 
 Detta kan inträffa om den underliggande datamängden har konfigurerats för att använda DirectQuery-läge eller en Live-anslutning till Analysis Services via en lokal datagateway. I det här fallet fortsätter panelerna att visa ofiltrerad data efter aktivering av SSO för datakällan tills det är dags för nästa paneluppdatering. Vid nästa paneluppdatering använder Power BI den konfigurerade SSO:n och panelerna visar de data som filtrerats enligt användaridentiteten. 
 
-Om du vill se den filtrerade datan direkt kan du tvinga fram en paneluppdatering genom att välja ellipsen (...) i det övre högra hörnet på en instrumentpanel och sedan välja **Uppdatera instrumentpanel**.
+Om du vill se filtrerade data direkt kan du tvinga fram en paneluppdatering genom att välja **Fler alternativ** (...) uppe till höger på en instrumentpanel och sedan **Uppdatera instrumentpanel**.
 
 Som datamängdsägare kan du också ändra frekvensen för paneluppdateringen och ställa in den på 15 minuter för att påskynda uppdateringen. Välj kugghjulsikonen i det övre högra hörnet i Power BI-tjänsten. Välj sedan **Inställningar**. På sidan **Inställningar** väljer du fliken **Datamängder**. Expandera **Schemalagd cacheminnesuppdatering** och ändra **Uppdateringsfrekvens**. Kom ihåg att återställa konfigurationen till den ursprungliga uppdateringsfrekvensen när Power BI ska utföra nästa paneluppdatering.
 

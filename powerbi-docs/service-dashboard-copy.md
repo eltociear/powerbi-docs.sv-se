@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5507356e42c58574a2d7c6787074fb987ddfeaec
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: fc255cda798b528acf7f782efac742872a442d41
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523195"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021069"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Skapa en kopia av en instrumentpanel i Power BI-tjänsten
 ![instrumentpanel](media/service-dashboard-copy/power-bi-dashboard.png)
@@ -28,7 +28,7 @@ Instrumentpaneler skapas (och kopieras) med hjälp av Power BI-tjänsten och kan
 Om du vill göra en kopia av en instrumentpanel måste du vara instrumentpanelens *skapare*. Instrumentpaneler som har delats med dig som en app, kan inte dupliceras.
 
 1. Öppna instrumentpanelen.
-2. Välj ellipserna (...) i övre högra hörnet och välj **duplicera instrumentpanelen**.
+2. Välj ellipserna **Fler alternativ** (...) uppe till höger och sedan **Duplicera instrumentpanel**.
    
    ![ellipsmenyn](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Ge instrumentpanelen ett namn och välj **duplicera**. 
@@ -40,10 +40,10 @@ Om du vill göra en kopia av en instrumentpanel måste du vara instrumentpanelen
 
 5.    Öppna den nya instrumentpanelen och redigera efter behov. Här följer några saker som du kanske vill göra härnäst:    
     a. [Flytta, byta namn på, ändra storlek på eller ta bort paneler](service-dashboard-edit-tile.md).  
-    b. Redigera panelinformation och hyperlänkar genom att välja panelellipserna (...) och välja **Redigera information**.  
+    b. Redigera panelinformation och hyperlänkar genom att välja **Fler alternativ** (...) och sedan **Redigera information**.  
     c. [Lägg till nya paneler från instrumentpanelens menyrad](service-dashboard-add-widget.md) (**Lägg panel**)  
     d. Fäst nya paneler [från frågor och svar](service-dashboard-pin-tile-from-q-and-a.md) eller [från rapporter](service-dashboard-pin-tile-from-report.md).  
-    e. Byt namn på instrumentpanelen, aktivera och inaktivera frågor och svar och ställ in panelflödet från instrumentpanelens inställningsfönster.  (välj listmenyn från instrumentpanelens ellips (...) och välj **Inställningar**)  
+    e. Byt namn på instrumentpanelen, aktivera och inaktivera frågor och svar och ställ in panelflödet från instrumentpanelens inställningsfönster.  (välj listrutan **Fler alternativ** (...) på instrumentpanelen sedan **Inställningar**)  
     f. Dela din instrumentpanel direkt med kollegor eller som en del av en Power BI-app. 
 
 

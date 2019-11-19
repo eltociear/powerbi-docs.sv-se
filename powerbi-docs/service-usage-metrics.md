@@ -3,20 +3,19 @@ title: Övervaka användningsstatistik för instrumentpaneler och rapporter
 description: Så här visar, sparar och använder du användningsstatistik för Power BI-instrumentpaneler och rapporter.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530538"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871208"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Övervaka användningsstatistik för Power BI-instrumentpaneler och -rapporter
 
@@ -86,7 +85,7 @@ För att analysera rapportdata för att bygga dina egna rapporter mot den underl
 
 | Mått | Instrumentpanel | Rapport | Beskrivning |
 | --- | --- | --- | --- |
-| Distributionsmetod för utsnitt |ja |ja |Hur användare får åtkomst till innehållet. Det finns tre möjliga sätt: Användarna kan få åtkomst till instrumentpanelen eller rapporten genom att vara medlemmar i en [apparbetsyta](consumer/end-user-experience.md), genom att låta innehållet [delas med dem](service-share-dashboards.md) eller genom att installera ett innehållspaket eller en app.  Observera att vyer via en app räknas som ”innehållspaket”. |
+| Distributionsmetod för utsnitt |ja |ja |Hur användare får åtkomst till innehållet. Det finns tre metoder: användarna kan få åtkomst till instrumentpanelen eller rapporten genom att vara medlemmar i en [arbetsyta](consumer/end-user-experience.md), genom att innehållet [delas med dem](service-share-dashboards.md) eller genom att installera ett innehållspaket eller en app.  Observera att vyer via en app räknas som ”innehållspaket”. |
 | Plattformsutsnitt |ja |ja |Användes instrumentpanelen eller rapporten via Power BI-tjänsten (powerbi.com) eller en mobil enhet? Mobilt innefattar alla våra iOS-, Android- och Windows-appar. |
 | Utsnitt för rapportsidan |nej |ja |Om rapporten innehåller mer än en sida kan du dela upp rapporten i den sida eller de sidor som visades. Om du ser listalternativet ”Tom” betyder det att en rapportsida nyligen lagts till (inom 24 timmar kommer det riktiga namnet på den nya sidan visas i listan med utsnitt) och/eller att rapportsidor har tagits bort. I ”Tom” finns dessa typer av situationer. |
 | Visningar per dag |ja |ja |Totalt antal visningar per dag – en visning definieras när en användare läser in en rapportsida eller instrumentpanel. |
@@ -152,11 +151,18 @@ Power BI finns tillgängligt i enskilda nationella moln. Molnen ger samma nivåe
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-Det är viktigt att förstå att skillnader kan uppstå när du jämför användningsstatistik och spårningsloggar och varför. *Spårningsloggar* samlas in med data från Power BI-tjänsten och *Användningsstatistik* samlas in på klienten. Det sammanställda antalet aktiviteter i spårningsloggarna överensstämmer inte alltid med användningsstatistiken på grund av följande:
+### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Skillnader mellan spårningsloggar och användningsstatistik
+
+Det är viktigt att förstå att skillnader kan uppstå när du jämför användningsstatistik och spårningsloggar och varför. *Spårningsloggar* samlas in med data från Power BI-tjänsten och *användningsstatistik* samlas in från klienten. Det sammanställda antalet aktiviteter i spårningsloggarna överensstämmer inte alltid med användningsstatistiken på grund av följande:
 
 * Användningsstatistik kan ibland underberäkna aktiviteter på grund av inkonsekventa nätverksanslutningar, reklamblockering eller andra problem som kan störa skickandet av händelser från klienten.
 * Vissa typer av vyer ingår inte i användningsstatistiken, vilket beskrivs tidigare i den här artikeln.
 * Användningsstatistiken kan ibland överberäkna aktiviteter i situationer där klienten uppdateras utan att en begäran behöver skickas tillbaka till Power BI-tjänsten.
+
+### <a name="other-considerations"></a>Ytterligare överväganden
+
+Du måste visa innehållet i din arbetsyta inifrån arbetsytan minst en gång. Om innehållet på arbetsytan inte har minst en visning korreleras inte data om programvisningarna i rapporten med användningsstatistik. Om du vill avblockera bearbetningen av data för den här rapporten visar du innehållet från arbetsytan minst en gång.
+
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
@@ -188,4 +194,4 @@ Förutom eventuella skillnader mellan användningsstatistik och spårningsloggar
 
 [Administrera Power BI i Admin-portalen](service-admin-portal.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

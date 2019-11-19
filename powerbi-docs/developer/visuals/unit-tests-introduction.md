@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: bb9835ceba302716c2c4b1e28eda33c6e4b1db42
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 97b21b6844ffb8633a37656e781a60f88cebbf43
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192474"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060424"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Självstudie: Lägga till enhetstester för projekt med visuella Power BI-objekt
 
@@ -65,7 +65,7 @@ Lägg till de bibliotek som krävs till filen *package.json* i avsnittet `devDep
 "webpack": "4.26.0"
 ```
 
-Mer information om paketet finns i beskrivningen på.
+Mer information om *package.json* finns i beskrivningen på [npm-package.json](https://docs.npmjs.com/files/package.json).
 
 Spara filen *package.json* och kör följande kommando på platsen `package.json`:
 

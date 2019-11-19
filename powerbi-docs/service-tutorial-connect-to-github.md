@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7540083b49e0790bfd9062d28d2655ff024d577f
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 7f7fde7fcabc29238d9558739eff02519ef9cca3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867166"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020019"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Självstudie: Ansluta till en GitHub-lagringsplats med Power BI
 I den här självstudien ska du ansluta till verkliga data i GitHub-tjänsten med Power BI, så skapar Power BI automatiskt instrumentpaneler och rapporter. Du ansluter till den offentliga lagringsplatsen (även kallad *databas*) för Power BI-innehåll och hittar svar på frågor som: Hur många personer bidrar till det offentliga Power BI-innehållet? Vem bidrar med mest innehåll? Vilken dag i veckan har flest bidrag? Och andra frågor. 
@@ -76,7 +76,7 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
     ![App i det vänstra navigeringsfönstret](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-10. Välj ellipsen (...) bredvid instrumentpanelens namn > **Byt namn** > skriv **GitHub instrumentpanel**.
+10. Välj **Fler alternativ** (...) bredvid instrumentpanelens namn > **Byt namn** > skriv **GitHub instrumentpanel**.
  
     ![GitHub-panel i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 

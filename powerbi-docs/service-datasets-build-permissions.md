@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 069ec5e0c767bcfcb0a4a41c2180ae78146800f2
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 363f75305b4c0f7f698442ce4503ad3220627c71
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020835"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020309"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Skapa-behörighet för delade datauppsättningar (förhandsversion)
 
@@ -29,7 +29,7 @@ Du ger skapa-behörighet för en datauppsättning på några olika sätt:
 
 - Medlemmar i en arbetsyta med minst en deltagarroll har automatiskt skapa-behörighet för datauppsättningar i den arbetsytan och behörighet att kopiera en rapport.
  
-- Medlemmar i arbetsytan där datauppsättningen finns kan tilldela behörighet till specifika användare eller säkerhetsgrupper i behörighetscentret. Om du är medlem i arbetsytan väljer du ellipsen (…) bredvid en datauppsättning > **Hantera behörigheter**.
+- Medlemmar i arbetsytan där datauppsättningen finns kan tilldela behörighet till specifika användare eller säkerhetsgrupper i behörighetscentret. Om du är medlem i arbetsytan väljer du **Fler alternativ** (…) bredvid en datauppsättning > **Hantera behörigheter**.
 
     ![Välj ellipsen](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -50,11 +50,11 @@ Du kan ta bort en persons skapa-behörighet för en datauppsättning. Om du gör
 Du kan behöva ta bort skapa-behörighet för vissa användare av en delad datauppsättning. 
 
 1. I en arbetsyta går du till sidan med **datauppsättningar**-listan. 
-1. Välj ellipsen (...) bredvid datauppsättning > **Hantera behörighet**.
+1. Välj **Fler alternativ** (...) bredvid datauppsättningen > **Hantera behörighet**.
 
     ![Hantera behörigheter](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Välj ellipsen (...) bredvid ett namn > **Ta bort skapa**.
+1. Välj **Fler alternativ** (...) bredvid ett namn > **Ta bort skapa**.
 
     ![Ta bort skapa-behörighet](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -80,11 +80,11 @@ Anta att du har distribuerat en app från en arbetsyta till en grupp med persone
 1. Välj **Uppdatera**.
 
 1. I arbetsytan går du till sidan med **Satauppsättningar**-listan. 
-1. Välj ellipsen (...) bredvid datauppsättning > **Hantera behörighet**.
+1. Välj **Fler alternativ** (...) bredvid datauppsättningen > **Hantera behörighet**.
 
     ![Hantera behörigheter](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Välj ellipsen (...) bredvid deras namn > **Ta bort skapa**.
+1. Välj **Fler alternativ** (...) bredvid namnet > **Ta bort skapa**.
 
     ![Ta bort skapa-behörighet](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 

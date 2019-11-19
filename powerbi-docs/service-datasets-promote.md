@@ -2,7 +2,6 @@
 title: Höja upp din datamängd (förhandsversion) – Power BI
 description: Lär dig hur du höjer upp din datamängd för att vägleda företagsanvändare till tillförlitliga, högkvalitativa datamängder.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567367"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877120"
 ---
 # <a name="promote-your-dataset-preview"></a>Höja upp din datamängd (förhandsversion)
 
@@ -30,7 +29,7 @@ Datamängden måste finnas på arbetsyta med den nya arbetsytefunktionen i Power
 
 1. Gå till listan över datamängder på arbetsytan.
  
-1. Välj ellipsen (...) och välj sedan **Inställningar**.
+1. Välj **Fler alternativ** (...) och sedan **Inställningar**.
 
     ![Välj ellipsen intill datamängden](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 
@@ -55,4 +54,4 @@ Din klientorganisationsadministratör har identifierat personer i din organisati
 ## <a name="next-steps"></a>Nästa steg
 
 * Läs avsnittet [Använda datamängder mellan arbetsytor](service-datasets-across-workspaces.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

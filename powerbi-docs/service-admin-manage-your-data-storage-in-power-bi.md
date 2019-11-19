@@ -1,6 +1,6 @@
 ---
 title: Hantera datalagring i dina arbetsytor
-description: Läs hur du hanterar datalagring individuellt eller i apparbetsytan för att kontrollera att du kan fortsätta att publicera rapporter och datauppsättningar.
+description: Läs hur du hanterar datalagring individuellt eller på arbetsytan för att se till att du kan fortsätta publicera rapporter och datamängder.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,24 +11,24 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: a46fbb0679de30e554003d858e01756b9b242b1b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ea187de55eec2667abe2eed017481180910b7619
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61191070"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431383"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Hantera datalagring i Power BI-arbetsytor
 
-Läs hur du hanterar datalagring individuellt eller i apparbetsytan för att kontrollera att du kan fortsätta att publicera rapporter och datauppsättningar.
+Läs hur du hanterar datalagring individuellt eller på arbetsytan för att se till att du kan fortsätta publicera rapporter och datamängder.
 
-Användare och apparbetsytor har sina egna datakapaciteter:
+Användare och arbetsytor har egna datakapaciteter:
 
 * Alla användare har upp till 10 GB datalagring.
-* Användare med Power BI Pro-licens kan skapa apparbetsytor med maximalt 10 GB lagring i varje.
-* En apparbetsyta i en Premium-kapacitet räknas inte mot lagringen för en Power BI Pro-användare.
+* Användare med en Power BI Pro-licens kan skapa arbetsytor med upp till 10 GB lagring för varje.
+* En arbetsyta på Premium-nivå räknas inte mot lagringen för en Power BI Pro-användare.
 
-På klientnivån, får total användning inte överstiga 10 GB per Pro-användare över alla Pro-användare och apparbetsytor i klientorganisationen.
+Den totala användningen får inte överstiga 10 GB per Pro-användare sett till alla Pro-användare och arbetsytor i en klientorganisation.
 
 Läs om andra funktioner i [Power BI-prismodellen](https://powerbi.microsoft.com/pricing).
 
@@ -63,15 +63,15 @@ Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera dit
 
 Tänk på att du eller någon annan kan ha rapporter och instrumentpaneler baserade på en datauppsättning. Om du tar bort datauppsättningen, fungerar dessa rapporter och instrumentpaneler inte längre.
 
-## <a name="manage-your-app-workspace"></a>Hantera din apparbetsyta
-1. Välj pilen bredvid **arbetsytor** \> välj namnet på apparbetsytan.
+## <a name="manage-your-workspace"></a>Hantera din arbetsyta
+1. Välj pilen bredvid **Arbetsytor** \> välj namnet på arbetsytan.
    
-    ![Välj en apparbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Välj en arbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \>  **hantera grupplagring**.
    
     Det översta fältet visar hur mycket av din lagringsgräns som du har använt.
    
-    ![Hantera lagring för apparbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Hantera lagring för arbetsytor](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Datauppsättningarna och rapporterna avgränsas på två flikar:
    
@@ -80,7 +80,7 @@ Tänk på att du eller någon annan kan ha rapporter och instrumentpaneler baser
 3. Om du vill ta bort en datauppsättning eller rapport, väljer du papperskorgsikonen ![papperskorgsikonen](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Alla medlemmar med redigeringsbehörigheter för en apparbetsyta har behörighet att ta bort datauppsättningar och rapporter från apparbetsytan.
+   > Alla medlemmar med redigeringsbehörigheter för en arbetsyta har behörighet att ta bort datamängder och rapporter från arbetsytan.
    > 
    > 
 

@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 10/04/2019
-ms.openlocfilehash: 97b9d68a8fa17a3ce1758eeaa16d2503a38a4743
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 513c6a4a3f5041b7af06e5c1713de3bd417a1354
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968502"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431579"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sidnumrerade rapporter i Power BI: Vanliga frågor och svar 
 
 I den här artikeln finns svar på vanliga frågor om sidnumrerade rapporter. Dessa rapporter innehåller mycket formatering och utdatan har ett utseende som är optimerat för utskrift eller PDF-generering. De kallas ”sidnumrerade” eftersom de är formaterade att passa för flersidiga dokument. Sidnumrerade rapporter baseras på tekniken för RDL-rapporter i SQL Server Reporting Services. 
 
-I den här artikeln finns svar på vanliga frågor om sidnumrerade rapporter i Power BI Premium, samt om Report Builder som är ett fristående verktyg för redigering av sidnumrerade rapporter. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport till tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på apparbetsytor, så länge arbetsytan finns i en Power BI Premium-kapacitet. 
+I den här artikeln finns svar på vanliga frågor om sidnumrerade rapporter i Power BI Premium, samt om Report Builder som är ett fristående verktyg för redigering av sidnumrerade rapporter. Du måste ha en Power BI Pro-licens för att kunna publicera en rapport i tjänsten. Du kan publicera och dela sidnumrerade rapporter på Min arbetsyta eller på arbetsytor så länge arbetsytan ligger i en Power BI Premium-kapacitet. 
 
 ## <a name="administration"></a>Administration
 
@@ -163,7 +163,7 @@ Ja, vi har stöd för möjligheten att köra kod i dina rapporter som i SSRS.
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Kan jag använda inbäddad Power BI för att bädda in min sidnumrerade rapporter i en app som jag värd för?
 
-SaaS-inbäddning stöds redan. PaaS-inbäddning stöds inte för närvarande.
+SaaS-inbäddning, inklusive stöd för säker inbäddning, är redan tillgängligt.  Stöd för PaaS-inbäddning planeras komma senare i år.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kan jag få detaljerad information från en Power BI-rapport till en sidnumrerad rapport?
 
@@ -179,7 +179,7 @@ Vi planerar att rapporterna ska ha stöd för samma större scenarier i tjänste
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Planeras ett migreringsverktyg så att SSRS-kunder kan flytta sina befintliga rapporter och tillgångar till Power BI?
 
-Vi utvärderar alternativ för att möjliggöra att innehåll flyttas till Power BI på ett automatiserat sätt, men det här kommer inte att bli tillgängligt förrän efter GA (allmän tillgänglighet).
+Ett projekt på GitHub har nu stöd för migrering av innehåll från SQL Server Reporting Services till Power BI.  Visa information och ladda ned verktyget här: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Finns det en rapportvisningskontroll för sidnumrerade rapporter i Power BI-tjänsten?
 

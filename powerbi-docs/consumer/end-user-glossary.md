@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a48589e6126203856a306de796c964ce6e347c26
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903663"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429872"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -37,10 +37,8 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **answer card, answer page (svarskort, svarssida)** Se Cortana-svarskort.
 
-**app, apps (app, appar)**
+**app, apps (app, appar)** 
 
- 
-**app workspace (apparbetsyta)** Nu är alla arbetsytor i Power BI förutom Min arbetsyta apparbetsytor. Innehållet kan paketeras i en Power BI-app. De som lagras i Premium-kapacitet kan delas med användare på den kostnadsfria nivån. Personliga arbetsytor (under Min arbetsyta) kan finnas i Premium-kapacitet.  
 
 **AppSource** Centraliserad lagringsplats online där du kan bläddra och upptäcka instrumentpaneler, rapporter, datauppsättningar och appar att ladda ned.
 
@@ -54,7 +52,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **bokmärke** En vy över data som hämtats till fönstret Bokmärken i en rapport i Power BI Desktop eller Power BI-tjänsten. I Desktop sparas bokmärken i .pbix-rapportfilen för delning i Power BI-tjänsten
   
-**breadcrumbs (sökvägar)** Navigeringen längst upp till vänster för snabb navigering mellan apparbetsytor.
+**breadcrumbs (sökvägar)** Navigeringen längst upp till vänster för snabb navigering mellan arbetsytor.
 
 ## <a name="c"></a>C
 
@@ -177,7 +175,7 @@ Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden elle
 
 **modeling (modellering)** [Power BI Desktop] Att hämta data som du har anslutit till och som är redo att användas i Power BI. Detta omfattar att skapa relationer mellan tabeller i flera datakällor, att skapa mått och att tilldela mått.
 
-**My workspace (Min arbetsyta)** Arbetsytan där Power BI-kunder kan skapa innehåll. Om de vill paketera något som skapats här i en app, och de har *designerbehörighet*, överför de innehållet till lämplig apparbetsyta eller skapar en ny.
+**My workspace (Min arbetsyta)** Arbetsytan där Power BI-kunder kan skapa innehåll. Om de vill paketera något som skapats här i en app, och de har *designerbehörighet*, överför de innehållet till lämplig arbetsyta eller skapar en ny.
 
 ## <a name="n"></a>N
 
@@ -222,7 +220,7 @@ Första förekomsten: navigeringsfält Efterföljande omnämnanden eller vid beg
 
 **Power BI**, **Power BI-tjänsten**, **Power BI Desktop**, **Power BI Mobile** Exempel på Power BI-produkter. *Power BI* är den generella termen. Termen används ofta i stället för det fullständiga produktnamnet, t.ex. *Power BI-tjänsten* eller *Power BI Mobile*, efter den första referensen till det fullständiga produktnamnet.
 
-**Power BI Desktop** kallas även *Desktop*. Den kostnadsfria Windows-appen för Power BI kan du installera på din lokala dator och med den kan du ansluta till, transformera och visualisera dina data. Används av rapportdesigners och -administratörer. Mer information finns i [Vad är Power BI?](../power-bi-overview.md).
+**Power BI Desktop** kallas även *Desktop*. Den kostnadsfria Windows-appen för Power BI kan du installera på din lokala dator och med den kan du ansluta till, transformera och visualisera dina data. Används av rapportdesigners och -administratörer. Mer information finns i [Vad är Power BI?](../fundamentals/power-bi-overview.md).
 
 **Power BI Embedded** En produkt som används av utvecklare för att bädda in Power BI-instrumentpaneler och -rapporter i appar, webbplatser och verktyg.
 
@@ -232,7 +230,7 @@ Första förekomsten: navigeringsfält Efterföljande omnämnanden eller vid beg
 
 **Power BI Report Server (Power BI-rapportserver)** En ny SSRS-produkt som erbjuds med Power BI Premium som hjälper organisationer att skapa distribuerade, BI-hybridsystem (en kombination av molnspecifika och lokala distributioner). Embedded är en lokaliserad metod för att lagra och hantera Power BI-rapporter.
 
-**Power BI service (Power BI-tjänst)** En SaaS-tjänst (programvara som tjänst) online. Mer information finns i [Vad är Power BI?](../power-bi-overview.md).
+**Power BI service (Power BI-tjänst)** En SaaS-tjänst (programvara som tjänst) online. Mer information finns i [Vad är Power BI?](../fundamentals/power-bi-overview.md).
 
 **Power BI service connector (Power BI-tjänstanslutning)** Den här anslutningen gör att Power BI Desktop-användare kan ansluta till datauppsättningar i Power BI-tjänsten från Desktop. De kan skapa en modell en gång och återanvända den i många rapporter och på många instrumentpaneler.
 
@@ -325,7 +323,7 @@ Power BI-instrumentpaneler innehålla rapportpaneler.
 
 **workbook (arbetsbok)** En Excel-arbetsbok som ska användas som en datakälla. Arbetsböcker kan innehålla en datamodell med en eller flera tabeller som lästs in med länkade tabeller, Power Query eller Power Pivot.
 
-**workspace (arbetsyta)** Containers för instrumentpaneler, rapporter och datauppsättningar i Power BI. Se apparbetsyta i den här termsamlingen.
+**workspace (arbetsyta)** Containers för instrumentpaneler, rapporter och datauppsättningar i Power BI. Användare kan samarbeta kring innehållet på valfri arbetsyta förutom Min arbetsyta. Innehållet kan paketeras i en Power BI-app. De som lagras i Premium-kapacitet kan delas med användare på den kostnadsfria nivån. Personliga arbetsytor (under Min arbetsyta) kan finnas i Premium-kapacitet.
 
 ## <a name="x"></a>X
 **x-axis (x-axel)**  

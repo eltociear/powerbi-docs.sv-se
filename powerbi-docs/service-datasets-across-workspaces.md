@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 5e445f24f78d4171c0c2c12ccbe4a1bf55b9825d
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020784"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431924"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion till datamängder mellan arbetsytor (förhandsversion)
 
@@ -62,7 +62,7 @@ Specifika funktioner som bygger på funktionaliteten hos delade datamängder lic
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-- Som en app-utgivare måste du se till att din målgrupp har åtkomst till datauppsättningar utanför appens arbetsyta. Annars kommer användarna att stöta på problem när de interagerar med appen: rapporter öppnas inte utan datauppsättningsåtkomst och instrumentpaneler visas som låsta. Dessutom kommer inte användarna att kunna öppna appen om det första objektet i dess navigering är en rapport utan åtkomst till datauppsättningen.
+- Som apputgivare måste du se till att målgruppen har åtkomst till datamängder utanför arbetsytan. Annars kommer användarna att stöta på problem när de interagerar med appen: rapporter öppnas inte utan datauppsättningsåtkomst och instrumentpaneler visas som låsta. Dessutom kommer inte användarna att kunna öppna appen om det första objektet i dess navigering är en rapport utan åtkomst till datauppsättningen.
 - Skapande av en rapport ovanpå en datamängd på en annan arbetsyta kräver den nya arbetsytefunktionen på båda sidor: Både rapporten och datamängden måste finnas på en arbetsyta med den nya arbetsytefunktionen.
 - På en klassisk arbetsyta visar funktionen för datamängdsupptäckt endast datamängder på den arbetsytan.
 - ”Publicera på webben” fungerar avsiktligen inte för en rapport som baseras på en delad datamängd.

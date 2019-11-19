@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4db4fbc0dd34ae558514058e0aa7af0a704d8411
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195338"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432336"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installera och distribuera mallappar i organisationen – Power BI
 
@@ -57,7 +57,7 @@ Välj den här länken i en webbläsare för att öppna AppSource filtrerat på 
 
 4. Välj **Installera** i dialogrutan.
 
-    ![Installera app](media/service-template-apps-install-distribute/power-install-dialog.png)Om du har en Power BI Pro-licens installeras appen med dess tillhörande arbetsyta. Du kan anpassa appen i arbetsytan.
+    ![Installera app](media/service-template-apps-install-distribute/power-install-dialog.png) Om du har en Power BI Pro-licens installeras appen med dess tillhörande arbetsyta. Du kan anpassa appen i arbetsytan.
 
     När installationen är klar visas ett meddelande om att din nya app är klar.
 4. Välj **Gå till app**.
@@ -71,7 +71,7 @@ Välj den här länken i en webbläsare för att öppna AppSource filtrerat på 
 
     Eller så kan du hoppa över den här dialogrutan och gå direkt till den tillhörande arbetsytan via **Arbetsytor** i det vänstra navigeringsfönstret.
     >[!NOTE]
-    >Vid installation av en mallapp installeras både en *organisationsapp* och en *apparbetsyta*. Läs mer om att [distribuera appar i Power BI](service-create-distribute-apps.md).
+    >Vid installation av en mallapp installeras både en *organisationsapp* och en *arbetsyta*. Läs mer om att [distribuera appar i Power BI](service-create-distribute-apps.md).
  
 6. Innan du delar den med dina medarbetare ansluter du till dina egna data. Du kanske också vill ändra rapporten eller instrumentpanelen så att den passar din organisation. Du kan även lägga till andra rapporter eller instrumentpaneler i det här läget.
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839744"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431668"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten
 
@@ -44,7 +44,7 @@ Här följer förutsättningarna för att skapa den sidnumrerade rapporten:
 Här är förutsättningarna för att ladda upp din sidnumrerade rapport till Power BI-tjänsten:
 
 - Du måste ha en [Power BI Pro-licens](service-admin-power-bi-pro-in-your-organization.md).
-- Du måste ha en apparbetsyta i tjänsten i en [Power BI Premium-kapacitet](service-premium-what-is.md). Den visas med en diamantikon ![Premium-diamantikon](media/paginated-reports-quickstart-aw/premium-diamond.png) bredvid arbetsytans namn.
+- Du måste ha en arbetsyta i tjänsten i en [Power BI Premium-kapacitet](service-premium-what-is.md). Den visas med en diamantikon ![Premium-diamantikon](media/paginated-reports-quickstart-aw/premium-diamond.png) bredvid arbetsytans namn.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Skapa matrisen med en guide
   
@@ -287,7 +287,7 @@ Ytterligare en formateringsförbättring innan du publicerar rapporten till Powe
 
 Nu när du har skapat den här sidnumrerade rapporten är det dags att överföra den till Power BI-tjänsten.
 
-1. Välj **Arbetsytor** > **Skapa apparbetsyta** i Power BI-tjänsten (http://app.powerbi.com) i det vänstra navigeringsfönstret.
+1. Välj **Arbetsytor** > **Skapa arbetsyta** i det vänstra navigeringsfönstret i Power BI-tjänsten (http://app.powerbi.com).
 
 2. Ge arbetsytan namnet **Azure AW** eller något annat unikt namn. Du är den enda medlemmen för tillfället. 
 

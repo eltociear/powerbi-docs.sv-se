@@ -2,7 +2,6 @@
 title: Ansluta till data som skapats av Power BI-dataflöden i Power BI Desktop (Beta)
 description: Anslut enkelt till och använd dataflöden i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 63c10a0507b5e484ac4c104a5a1e83f5dd411d9d
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: f1d782aa7409dce43d960956406e996cc7951a57
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523284"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876461"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Ansluta till data som skapats av Power BI-dataflöden i Power BI Desktop (Beta)
 I **Power BI Desktop** kan du ansluta till data som skapats av **Power BI-dataflöden** precis som andra datakällor i Power BI Desktop.
@@ -40,7 +39,7 @@ Du kan förbättra datainmatningens prestanda för dataflöden. Om t.ex. datainm
 
 De flesta dataflöden finns i Power BI-tjänsteklienten. Dock kan **Power BI Desktop**-användare inte komma åt dataflöden som är lagrade i Azure Data Lake Storage Gen2-kontot, såvida inte de är ägare av dataflödet eller de uttryckligen har godkänts för detta dataflödes CDM-mapp. Se följande situation:
 
-1.  Anna skapar en ny apparbetsyta och konfigurerar den så att den lagrar dataflöden i organisationens data lake.
+1.  Anna skapar en ny arbetsyta och konfigurerar den så att den lagrar dataflöden i organisationens datasjö.
 2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
 3.  Ben får ett fel som beror på att han inte lagts till som behörig användare i dataflödets CDM-mapp i datasjön.
 

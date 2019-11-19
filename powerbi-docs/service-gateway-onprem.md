@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 883d5c83019df293628d096f5834c9b5c6d425b6
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 8ca43232cdc5781900dd7cf8b9f72c510dab2e37
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730283"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442809"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Vad är en lokal datagateway?
 
@@ -42,13 +42,13 @@ Det finns två olika typer av gatewayer för varsitt scenario:
 Det finns fyra huvudsakliga steg för att använda en gateway.
 
 1. [Ladda ned och installera gatewayen](/data-integration/gateway/service-gateway-install) på en lokal dator.
-2. [Konfigurera](/data-integration/gateway/service-gateway-app) gatewayen baserat på din brandvägg och andra nätverkskrav.
-3. [Lägg till gatewayadministratörer](/data-integration/gateway/service-gateway-manage) som också kan hantera och administrera andra nätverkskrav.
-4. [Felsök](service-gateway-onprem-tshoot.md) gatewayen i händelse av fel.
+1. [Konfigurera](/data-integration/gateway/service-gateway-app) gatewayen baserat på din brandvägg och andra nätverkskrav.
+1. [Lägg till gatewayadministratörer](/data-integration/gateway/service-gateway-manage) som också kan hantera och administrera andra nätverkskrav.
+1. [Använd gatewayen](service-gateway-sql-tutorial.md) till att uppdatera en lokal datakälla.
+1. [Felsök](service-gateway-onprem-tshoot.md) gatewayen i händelse av fel.
 
 ## <a name="next-steps"></a>Nästa steg
 
 * [Installera den lokala datagatewayen](/data-integration/gateway/service-gateway-install)
-
 
 Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)

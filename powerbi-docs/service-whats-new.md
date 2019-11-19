@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: a6595389a95cbf434bc9deb9f1560f6157910ceb
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655040"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061000"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -30,11 +30,43 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="may-2019"></a>Maj 2019
-* [Anpassad navigering](service-create-distribute-apps.md) för Power BI-appar.
-* Ytterligare typer av bilagor (PPTX, XLSX, DOCX, CSV, XML) som är tillgängliga för e-postprenumerationer i sidnumrerade rapporter.
+### <a name="october-2019"></a>Oktober 2019
+* Ny Microsoft Flow-åtgärd för att uppdatera Power BI-datamängder.
+* [Kontaktlista](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) för rapporter och instrumentpaneler i Power BI-tjänsten.
 
 ## <a name="previous-months-2019"></a>Föregående månader (2019)
+### <a name="september-2019"></a>September 2019
+* Uppdateringar av anslutningskonfigurationen för [mallappar](service-template-apps-overview.md).
+
+### <a name="august-2019"></a>Augusti 2019
+* Nya kapacitetsinställningar för Power BI Premium.
+* [Anpassad varumärkesanpassning](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) för din organisation.
+* Sammanfattad dataexport med behörigheten Skapa.
+* Stöd för URL-parametrar för [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md).
+* Stöd för månatliga e-postprenumerationer. 
+
+### <a name="july-2019"></a>Juli 2019
+* Stöd för [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md) i andra datamängder än Premium.
+* Allmän tillgänglighet för [aggregeringar](desktop-aggregations.md) i Power BI.
+* Skicka uppdateringsmeddelanden till andra.
+* [Testverktyg](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) för Power BI Premium-kapaciteter.
+* Offentlig förhandsversion av [meddelanden om tjänsters tillgänglighet](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/).
+* Offentlig förhandsversion av det [nya utseendet](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) för Power BI-rapporter.
+* Ny Power BI-region i Sydafrika.
+
+### <a name="june-2019"></a>Juni 2019
+* Offentlig förhandsversion av [delade och certifierade datamängder](service-datasets-across-workspaces.md).
+* AI-mått är tillgängliga i appen [Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
+* Allmän tillgänglighet för [mallappar](service-template-apps-overview.md) i Power BI.
+* Allmän tillgänglighet för [sidnumrerade rapporter](paginated-reports-report-builder-power-bi.md).
+* Offentlig förhandsversion av Bring Your Own Key ([BYOK](service-encryption-byok.md)) för Power BI Premium.
+* Roll för visning i den [nya arbetsytemiljön](service-new-workspaces.md).
+
+### <a name="may-2019"></a>Maj 2019
+* [Anpassad navigering](service-create-distribute-apps.md) för Power BI-appar.
+* Ytterligare typer av bilagor (PPTX, XLSX, DOCX, CSV, XML) som är tillgängliga för e-postprenumerationer i sidnumrerade rapporter.
+* [Kommentarer](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) till Power BI-rapporter i tjänsten.
+
 ### <a name="april-2019"></a>April 2019
 * Allmän tillgänglighet för [dataflöden](service-dataflows-overview.md) i Power BI.
 * Allmän tillgänglighet för nya arbetsytor.
@@ -731,7 +763,7 @@ Besök [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 * Mer tillförlitliga uppdateringar med OneDrive.  Vissa situationer där arbetsböcker inte kunde uppdateras från OneDrive har lösts.
 
 ## <a name="next-steps"></a>Nästa steg
-[Vad är Power BI?](power-bi-overview.md)  
+[Vad är Power BI?](fundamentals/power-bi-overview.md)  
 
 Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

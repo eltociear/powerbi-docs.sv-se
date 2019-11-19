@@ -1,21 +1,20 @@
 ---
 title: Power BI för rapportdesigners
 description: Ansluter du till data, utformar frågor och skapar rapporter och instrumentpaneler i Power BI? Är du Power BI-administratör?
-author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 10/07/2019
 ms.author: maggies
+author: maggiesMSFT
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: cb80bad73a615621ad8a2459e71607900f8d493d
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239882"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128332"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI för rapportdesigners
 
@@ -37,7 +36,7 @@ Ansluter du till data, utformar frågor och skapar rapporter och instrumentpanel
                                           <h3>Kom igång med att skapa med Power BI</h3> 
                                           <p></p>
                                                <a href="desktop-what-is-desktop.md">Börja med Power BI Desktop</a><br/> 
-                                               <a href="power-bi-overview.md">Börja med Power BI-tjänsten</a><br/> 
+                                               <a href="fundamentals/power-bi-overview.md">Börja med Power BI-tjänsten</a><br/> 
                                                <a href="report-server/get-started.md">Vad är Power BI-rapportserver?</a>
                                     </div> 
                               </div> 
@@ -156,7 +155,7 @@ Ansluter du till data, utformar frågor och skapar rapporter och instrumentpanel
                                           <h3>Dela ditt arbete</h3> 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">Hur kan jag samarbeta och dela?</a><br/>
-                                                <a href="service-create-workspaces.md">Apparbetsytor i Power BI-tjänsten</a> 
+                                                <a href="service-create-workspaces.md">Arbetsytor i the Power BI-tjänsten</a> 
                                     </div> 
                               </div> 
                         </div> 

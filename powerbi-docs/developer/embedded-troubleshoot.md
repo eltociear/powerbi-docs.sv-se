@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 08d66df2456917c09b6b0c1d9c40e2de47f53fa5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 5b9a0de8a3a9301219c15e5566854b591e79ba5e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543921"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429331"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -78,8 +78,8 @@ En fiddler-avbildning kan krävas för att undersöka vidare. Det kan finnas fle
 
 * Användaren har överskridit mängden inbäddningstoken som kan skapas på en delad kapacitet. Köp Azure-kapaciteter för att generera inbäddningstoken och tilldela arbetsytan till kapaciteten. Mer information finns på sidan om hur du [skapar en Power BI Embedded-kapacitet i Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD-autentiseringstoken har upphört att gälla.
-* Den autentiserade användaren är inte medlem i gruppen (apparbetsytan).
-* Den autentiserade användaren är inte administratör i gruppen (apparbetsytan).
+* Den autentiserade användaren är inte medlem i gruppen (arbetsytan).
+* Den autentiserade användaren är inte administratör för gruppen (arbetsytan).
 * Den autentiserade användaren saknar behörighet. Behörigheter kan uppdateras med hjälp av [API:et refreshUserPermissions](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * Auktoriseringsrubriken är kanske inte korrekt listad. Kontrollera att det inte finns några stavfel.
 

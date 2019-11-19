@@ -10,16 +10,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: 8fd87174a1f94ac8a6472238164298c47aa5691e
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: e35f4f7bd870e51810d49c43a058e467bd724e6e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391790"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429670"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
-Med **Power BI Embedded i Azure** kan du bädda in rapporter, instrumentpaneler eller paneler i ett program med app äger data. **App äger data** handlar om ett program som använder Power BI som en inbäddad analysplattform. Som **ISV-utvecklare** kan du skapa Power BI-innehåll som visar rapporter, instrumentpaneler eller paneler i ett program som är helt integrerat och interaktivt, utan att kräva att användarna har en Power BI-licens. Den här självstudien visar hur du integrerar en rapport i ett program som använder Power BI .NET SDK med Power BI JavaScript-API:et med **Power BI Embedded i Azure** för kunderna.
+Med **Power BI Embedded i Azure** eller **Power BI-inbäddning i Office** kan du bädda in rapporter, instrumentpaneler och paneler i en app och använda appens egna data. **App äger data** handlar om ett program som använder Power BI som en inbäddad analysplattform. Som **ISV** eller **utvecklare** kan du skapa Power BI-innehåll som visar rapporter, instrumentpaneler eller paneler i ett program som är helt integrerat och interaktivt, utan att användarna behöver någon Power BI-licens. Den här självstudien visar hur du integrerar en rapport i ett program med .NET SDK och JavaScript-API i Power BI.
 
 ![Inbäddad Power BI-rapport](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
@@ -33,12 +33,9 @@ I de här självstudierna får du lära dig att
 Du måste ha följande för att komma igång:
 
 * Ett [Power BI Pro-konto](../service-self-service-signup-for-power-bi.md) (ett huvudkonto som är ett användarnamn och lösenord för inloggning på ditt Power BI Pro-konto), eller [tjänstens huvudnamn (appspecifik token)](embed-service-principal.md).
-* En [Microsoft Azure](https://azure.microsoft.com/)-prenumeration.
 * Du måste ha en egen installation för [Azure Active Directory-klient](create-an-azure-active-directory-tenant.md).
 
 Om du inte har registrerat dig för **Power BI Pro**, [registrerar du dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/pricing/) innan du börjar.
-
-Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurera den inbäddade utvecklingsmiljön för analysverktyg
 
@@ -60,13 +57,13 @@ Men om du fortsätter att använda tjänstens huvudnamn måste du fortsätta med
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
 
-### <a name="create-an-app-workspace"></a>Skapa en apparbetsyta
+### <a name="create-a-workspace"></a>Skapa en arbetsyta
 
-Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en apparbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md). Om du använder ett *huvudkonto* spelar det ingen roll vilken typ av arbetsytor du använder. Men om du använder *[tjänstens huvudnamn](embed-service-principal.md)* för inloggning på appen måste du använda de nya arbetsytorna. I båda scenarierna måste både *huvudkontot* och *tjänstens huvudnamn* vara administratör för apparbetsytorna som är involverade i din app.
+Om du bäddar in rapporter, instrumentpaneler eller paneler för dina kunder måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md). Om du använder ett *huvudkonto* spelar det ingen roll vilken typ av arbetsytor du använder. Om du däremot använder *[tjänstens huvudnamn](embed-service-principal.md)* för inloggning i programmet måste du använda de nya arbetsytorna. I båda scenarierna måste både *huvudkontot* och *tjänstens huvudnamn* vara administratör för arbetsytorna som används i programmet.
 
 ### <a name="create-and-publish-your-reports"></a>Skapa och publicera rapporter
 
-Du kan skapa rapporter och datauppsättningar som använder Power BI Desktop och publicera dessa rapporter till en apparbetsyta. Det finns två sätt att åstadkomma detta: Som slutanvändare kan du publicera rapporter på en traditionell apparbetsyta med ett huvudkonto (Power BI Pro-licens). Om du använder tjänstens huvudnamn kan du publicera rapporter på nya arbetsytor med [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+Du kan skapa rapporter och datauppsättningar som använder Power BI Desktop och publicera dessa rapporter till en arbetsyta. Det finns två sätt att åstadkomma detta: Som slutanvändare kan du publicera rapporter på en traditionell arbetsyta med ett huvudkonto (Power BI Pro-licens). Om du använder tjänstens huvudnamn kan du publicera rapporter på nya arbetsytor med [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 I stegen nedan beskrivs hur du publicerar dina PBIX-rapporter på Power BI-arbetsytan.
 
@@ -78,7 +75,7 @@ I stegen nedan beskrivs hur du publicerar dina PBIX-rapporter på Power BI-arbet
 
    ![PBI-skrivbordsrapport](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Publicera på **apparbetsytor**. Den här processen skiljer sig beroende på om du använder ett huvudkonto (Power Pro-licens) eller tjänstens huvudnamn. Om du använder ett huvudkonto kan du sedan publicera rapporten via Power BI Desktop.  Om du nu använder tjänstens huvudnamn måste du använda Power BI REST-API:er.
+3. Publicera på **arbetsytor**. Den här processen skiljer sig beroende på om du använder ett huvudkonto (Power Pro-licens) eller tjänstens huvudnamn. Om du använder ett huvudkonto kan du sedan publicera rapporten via Power BI Desktop.  Om du nu använder tjänstens huvudnamn måste du använda Power BI REST-API:er.
 
 ## <a name="embed-content-using-the-sample-application"></a>Bädda in innehåll med exempelprogrammet
 
@@ -139,7 +136,7 @@ Så här hämtar du **applicationId**:
 
 Det här attributet behövs för både AuthenticationTypes (huvudkonto och [tjänstens huvudnamn](embed-service-principal.md)).
 
-Fyll i **workspaceId** med (grupp-)GUID för apparbetsytan från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
+Fyll i **workspaceId** med arbetsytans (gruppens) GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
 
 URL <br>
 
@@ -268,11 +265,23 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Skapa inbäddningstoken
+Skapa en inbäddningstoken som kan användas från JavaScript-API:et. Det finns två typer av API:er, den första gruppen innehåller fem API:er som alla genererar en inbäddningstoken för ett visst objekt. Den andra gruppen innehåller bara ett API, som genererar en token du kan använda till att bädda in flera objekt.
 
-Skapade en inbäddningstoken som kan användas från JavaScript-API:t. En inbäddningstoken gäller endast för det objekt du bäddar in. Det innebär att när du bäddar in en bit Power BI-innehåll måste du skapa en ny inbäddningstoken för den. Mer information, inklusive vilken **accessLevel** som du ska använda, finns i [GenerateToken-API:t](https://msdn.microsoft.com/library/mt784614.aspx).
+**API:er för att generera en inbäddningstoken för ett visst objekt**
 
-*Ett exempel på hur du skapar en inbäddningstoken för en rapport, instrumentpanel eller panel vill du bädda in är tillgängliga i filen Services\EmbedService.cs i [exempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).*
+Den inbäddningstoken du skapar med dessa API:er gäller bara för det objekt du bäddar in. När du bäddar in ett Power BI-objekt (till exempel en rapport, en instrumentpanel eller en panel) med de här API:erna måste du skapa en ny inbäddningstoken för det.
+* [Dashboards GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [Datasets GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [Tiles GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
+Du kan se exempel på hur du skapar en inbäddningstoken för en rapport, instrumentpanel eller panel i följande filer i [exempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).
+* Services\EmbedService.cs
+* Models\EmbedConfig.cs
+* Models\TileEmbedConfig.cs
+
+Här är ett kodexempel för hur du använder API:et för inbäddningstoken Reports GenerateTokenInGroup.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -290,7 +299,55 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-En klass skapas för **EmbedConfig** och **TileEmbedConfig**. Ett exempel finns i filerna **Models\EmbedConfig.cs** och **Models\TileEmbedConfig.cs**.
+**API för att generera en inbäddningstoken för flera objekt**<a id="multiEmbedToken"></a>
+
+API:et [Generate Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) för inbäddning genererar en token som du kan använda för att bädda in flera objekt.
+
+Du kan även använda den till att dynamiskt välja en datamängd när du bäddar in en rapport. Mer information om hur du använder det här API:et finns i [Dynamisk bindning](embed-dynamic-binding.md).
+
+
+Här är ett exempel på hur du kan använda API:et.
+ 
+```csharp
+using Microsoft.PowerBI.Api.V2;
+using Microsoft.PowerBI.Api.V2.Models;
+
+var reports = new List<GenerateTokenRequestV2Report>()
+{ 
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = false,
+        Id = report1.Id
+    },
+    new GenerateTokenRequestV2Report()
+    {
+        AllowEdit = true,
+        Id = report2.Id
+    }
+};
+
+var datasets= new List<GenerateTokenRequestV2Dataset>()
+{
+    new GenerateTokenRequestV2Dataset(dataset1.Id),
+    new GenerateTokenRequestV2Dataset(dataset2.Id),
+    new GenerateTokenRequestV2Dataset(dataset3.Id),
+};
+
+var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
+{
+    new GenerateTokenRequestV2TargetWorkspace(workspace1.Id),
+    new GenerateTokenRequestV2TargetWorkspace(workspace2.Id),
+};
+
+var request = new GenerateTokenRequestV2()
+{
+    Datasets = datasetsRequestDetails ?? null,
+    Reports = reportsRequestDetails,
+    TargetWorkspaces = targetWSRequestdetials ?? null,
+};
+
+var token = client.GetClient().EmbedToken.GenerateToken(request);
+```
 
 ### <a name="load-an-item-using-javascript"></a>Läsa in ett objekt med JavaScript
 
@@ -345,35 +402,40 @@ I det här exemplet används en **EmbedConfig**-modell och en **TileEmbedConfig*
 
 ## <a name="move-to-production"></a>Flytta till produktion
 
-Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet för apparbetsytan. 
+Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet för arbetsytan. 
 
 > [!Important]
-> Dedikerad kapacitet krävs för att flytta till produktion.
+> Dedikerad kapacitet krävs för att flytta till produktion. Alla arbetsytor (de som innehåller rapporter och instrumentpaneler, och de som innehåller datamängderna) måste tilldelas till en kapacitet.
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Du kan köpa en dedikerad kapacitet inom [Microsoft Azure-portalen](https://portal.azure.com). Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
+Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för dina kunder. Det finns två typer av kapaciteter att välja mellan:
+* **Power BI Premium** – en Office 365-prenumeration för klientorganisationer som finns i två olika SKU-serier, *EM* och *P*. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om den här prenumerationen finns i [Vad är Power BI Premium?](../service-premium-what-is.md)
+* **Azure Power BI Embedded** – du kan köpa en dedikerad kapacitet i [Microsoft Azure-portalen](https://portal.azure.com). Den här prenumerationen använder *A*-SKU:er. Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
+> [!NOTE]
+> Med A-SKU:er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens.
 
-Använd tabellen nedan för att avgöra vilken Power BI Embedded-kapacitet som bäst passar dina behov.
+I tabellen nedan beskrivs resurser och begränsningar för respektive SKU. När du ska avgöra vilken kapacitet som passar bäst för dina behov kan du använda tabellen [Vilken SKU ska jag köpa till mitt scenario](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario).
 
-| Kapacitetsnod | Totalt antal kärnor<br/>*(Serverdel + klientdel)* | Serverdelskärnor | Klientdelskärnor | DirectQuery/begränsningar vid liveanslutning|
-| --- | --- | --- | --- | --- | --- |
-| A1 |1 v-kärna |0,5 kärnor, 3 GB RAM-minne |0,5 kärnor |0 5 per sekund |
-| A2 |2 v-kärnor |1 kärna, 5 GB RAM-minne |1 kärna | 10 per sekund |
-| A3 |4 v-kärnor |2 kärnor, 10 GB RAM-minne |2 kärnor | 15 per sekund |
-| A4 |8 v-kärnor |4 kärnor, 25 GB RAM-minne |4 kärnor |30 per sekund |
-| A5 |16 v-kärnor |8 kärnor, 50 GB RAM-minne |8 kärnor |60 per sekund |
-| A6 |32 v-kärnor |16 kärnor, 100 GB RAM-minne |16 kärnor |120 per sekund |
+| Kapacitetsnoder | Totalt antal virtuella kärnor | Virtuella kärnor för serverdel | RAM (GB) | Virtuella kärnor för klientdel | DirectQuery/Live Connection (per sek) | Modellens uppdateringsparallellitet |
+| --- | --- | --- | --- | --- | --- | --- |
+| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
+| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| | | | | | | |
 
-**_Med A-SKU: er kan du inte komma åt Power BI-innehåll med en kostnadsfri Power BI-licens._**
+### <a name="development-testing"></a>Utvecklingstestning
 
-Inbäddningstoken med PRO-licenser är avsedda för utvecklartestning, så antalet inbäddningstoken ett Power BI-huvudkonto eller tjänstens huvudnamn kan generera är begränsat. En dedikerad kapacitet krävs för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera med en dedikerad kapacitet. Gå till [Tillgängliga funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) för att kontrollera användningsvärdet som anger aktuell inbäddad användning i procent. Användningsmängden baseras per huvudkonto.
+Inbäddningstoken med Pro-licenser är avsedda för testning under utveckling, så antalet inbäddningstoken ett Power BI-huvudkonto eller tjänstens huvudnamn kan generera är begränsat. En dedikerad kapacitet krävs för inbäddning i en produktionsmiljö. Det finns ingen gräns för att hur många inbäddningstoken du kan generera med en dedikerad kapacitet. Gå till [Tillgängliga funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) för att kontrollera användningsvärdet som anger aktuell inbäddad användning i procent. Användningsmängden baseras per huvudkonto.
 
 För mer information, se [White paper om kapacitetsplanering för inbäddad analys](https://aka.ms/pbiewhitepaper).
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tilldela en apparbetsyta till en dedikerad kapacitet
+### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Tilldela en arbetsyta till en dedikerad kapacitet
 
-När du har skapat en dedikerad kapacitet kan du tilldela apparbetsytan till den dedikerade kapaciteten.
+När du har skapat en dedikerad kapacitet kan du tilldela arbetsytan till den dedikerade kapaciteten.
 
 Tilldela en dedikerad kapacitet till en arbetsyta med hjälp av [service principal](embed-service-principal.md) genom att använda [Power BI REST-API:et](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). När du använder Power BI REST-API:erna ser du till att använda [objekt-ID för tjänstens huvudnamn](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 
@@ -387,9 +449,9 @@ Följ stegen nedan för att tilldela en dedikerad kapacitet till en arbetsyta me
 
     ![Tilldela dedikerad kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. När du har valt **Spara** bör du se en **romb** bredvid namnet på apparbetsytan.
+3. När du har valt **Spara** ska du se en **romb** bredvid namnet på arbetsytan.
 
-    ![apparbetsyta som hör till en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+    ![arbetsyta kopplad till en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## <a name="next-steps"></a>Nästa steg
 

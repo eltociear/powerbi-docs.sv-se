@@ -2,7 +2,6 @@
 title: Byt namn på instrumentpaneler, rapporter, arbetsytor, rapportsidor datauppsättningar
 description: Byt namn på nästan allt i Power BI-tjänsten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 905ef263084cf531e6b38fb4640286e4d78697ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: de842b95c8f6e023a5207c07abb2525c5fe45878
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273829"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871724"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Byt namn på nästan allt i Power BI-tjänsten
 Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app och arbetsyta i Power BI-tjänsten.
@@ -28,9 +27,9 @@ Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, ra
 | Rapport i en arbetsyta |Ja |Nej |
 | Arbetsbok i en arbetsyta |Ja |Nej |
 | Datauppsättning i en arbetsyta |Ja |Nej |
-| Apparbetsyta |Ja, om du är ägare eller har administratörsbehörigheter |Nej |
-| Publicerade appar |Inte från appskärmen, men appnamnet kan ändras från apparbetsytan och publiceras igen med ett nytt namn om du har administratörsbehörigheter |Nej |
-| Appinnehåll (instrumentpanel, rapport, arbetsbok, datauppsättning) |Inte från appskärmen, men appens innehåll kan döpas om från apparbetsytan och publiceras igen med ett nytt namn om du har administratörsbehörigheter |Nej |
+| arbetsyta |Ja, om du är ägare eller har administratörsbehörigheter |Nej |
+| Publicerade appar |Inte från appskärmen, men appnamnet kan ändras från arbetsytan och publiceras igen med ett nytt namn om du har administratörsbehörigheter |Nej |
+| Appinnehåll (instrumentpanel, rapport, arbetsbok, datauppsättning) |Inte från appskärmen, men appens innehåll kan döpas om från arbetsytan och publiceras igen med ett nytt namn om du har administratörsbehörigheter |Nej |
 | Innehåll i **delat med mig** |Nej |Nej |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Byt namn på en instrumentpanel, rapport eller arbetsbok
@@ -45,7 +44,7 @@ Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, ra
 1. Starta i en arbetsyta och välj fliken **datauppsättningar**.
    
    ![arbetsyta med fliken Datauppsättningar](media/service-rename/power-bi-ellipses.png)
-2. Hovra över objektet du vill byta namn på, välj ellipserna (...) och välj **byt namn**.  
+2. Hovra över objektet du vill byta namn på, välj **Fler alternativ** (...) och sedan **Byt namn**.  
    
       ![välj Byt namn](media/service-rename/power-bi-rename-datasets.png)
    
@@ -57,11 +56,11 @@ Den här artikeln lär dig hur du byter namn på en instrumentpanel, rapport, ra
    
      ![Fönstret Byt namn](media/service-rename/power-bi-rename.png)
 
-## <a name="rename-an-app-workspace"></a>Byt namn på en apparbetsyta
-Alla med administratörsbehörigheter kan byta namn på en apparbetsyta.
+## <a name="rename-a-workspace"></a>Byta namn på en arbetsyta
+Alla med administratörsbehörigheter kan byta namn på en arbetsyta.
 
 1. Starta i den arbetsyta som du vill byta namn på.
-2. Välj ellipserna (...) i det övre högra hörnet och välj **redigera arbetsytan**. Om du inte ser det här alternativet saknar du behörighet för att byta namn på den här arbetsytan. 
+2. Välj **Fler alternativ** (...) uppe till höger och sedan **Redigera arbetsyta**. Om du inte ser det här alternativet saknar du behörighet för att byta namn på den här arbetsytan. 
    
     ![välj Redigera arbetsytan](media/service-rename/power-bi-edit-workspace.png)
 3. Ange ett nytt arbetsytenamn och välj **spara**.
@@ -85,7 +84,7 @@ Gillar du inte namnet på en sida i din Power BI-rapport?  Ett nytt namn är bar
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 * Om objektet som du vill byta namn på har delats med dig, eller är del av ett innehållspaket, visas inte kugghjulsikonen och du har inte tillgång till inställningarna.
-* Om du inte ser ellipserna (...) på fliken **datauppsättningar**, expandera webbläsarfönstret.
+* Om du inte ser **Fler alternativ** (...) på fliken **Datamängder** expanderar du webbläsarfönstret.
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

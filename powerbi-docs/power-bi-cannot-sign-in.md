@@ -3,19 +3,18 @@ title: Det går inte att kontakta supporten för Power BI
 description: Lösningar för att skapa ett Power BI-fall om en användare inte kan logga in
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: 830d75aaddd60ce0b678d6abdbeca7cd79a3ab28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 37bb189f7792410ffdef30e79d36f94cc85478b4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769842"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874598"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Felsöka inloggningsproblem i Power BI
 
@@ -27,7 +26,7 @@ Men om du är en **klientadministratör** för din organisation och fortfarande 
 
 ## <a name="engage-the-support-team"></a>Engagera supporten
 
-Försök först att skapa ett supportärende via [Power BI-supportsidan](https://powerbi.microsoft.com/en-us/support/).
+Försök först att skapa ett supportärende via [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
 
 Om du inte kan använda Power BI-supportsidan försöker du att skapa ett ärende via [supportsidan för Office 365 (O365)](https://support.office.com/home/contact).
 
@@ -50,9 +49,11 @@ Ett annat alternativ för att kontakta Microsoft-supporten är genom att köpa [
 
 Om det inte går att skapa ett foruminlägg på communitysidan beror det på att [Power BI community-forumen](https://community.powerbi.com/) också kräver att du loggar in.
 
+> [!Note]
+> Mer information finns i [artikeln med hjälp för communityn](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
+
 ## <a name="next-steps"></a>Nästa steg
 
 Här följer några webbplatser som du kan gå till för ytterligare Power BI-support:
 
 * [Power BI Microsoft docs](https://docs.microsoft.com/power-bi/)
-* [Skapa supportärenden för Power BI](https://blogs.msdn.microsoft.com/charles_sterling/2017/12/01/creating-power-bi-support-cases/)

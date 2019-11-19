@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 928b69bc1f7e8210f66bd1b99e211a7fe28a5a00
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100202"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019564"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Skriva ut från Power BI-tjänsten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Skriv ut en hel instrumentpanel, en panel, en rapportsida eller ett visuellt rapportobjekt från Power BI-tjänsten. Rapporter kan bara skrivas ut en sida i taget – det går inte att skriva ut hela rapporten på samma gång.
 
    > [!NOTE]
@@ -37,7 +40,7 @@ Skriv ut en hel instrumentpanel, en panel, en rapportsida eller ett visuellt rap
 
 ## <a name="print-a-dashboard-tile"></a>Skriva ut en panel
 1. Öppna instrumentpanelen i [helskärmsläge](end-user-focus.md) genom att välja helskärmsikonen ![helskärmsikon](./media/end-user-print/power-bi-full-screen-icon.png) i det övre menyfältet.
-3. [Öppna panelen i fokusläge](end-user-focus.md) genom att hovra för att visa ellipsen (…) och välja **Öppna i fokusläge** eller fokusikonen ![Fokusikon](./media/end-user-print/power-bi-focus-icon.png).
+3. [Öppna panelen i fokusläge](end-user-focus.md) genom att hovra så att du ser **Fler alternativ** (…) och välj **Öppna i fokusläge** eller fokusikonen ![Fokusikon](./media/end-user-print/power-bi-focus-icon.png).
    
     ![ellipsmenyn](./media/end-user-print/power-bi-menu-options.png)
 4. Hovra över panelen för att visa menyn Alternativ.

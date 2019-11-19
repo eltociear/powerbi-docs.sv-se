@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: abf45f5213a10379535d4c6ada3b54ffa625ddc5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 83c3257fb9aaaee01efdfceaac93c1d32aeebba0
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269239"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429173"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodfragment för migrering av innehåll från Power BI-arbetsytesamling
 
@@ -167,7 +167,7 @@ I det här kodfragmentet använder vi okrypterade autentiseringsuppgifter för e
 
 Du måste återskapa rapporten för den skapade datauppsättningen.
 
-I det här fragmentet antar vi att datauppsättningen som ska skickas redan finns i en apparbetsyta inom SaaS-miljön. Information om API för att skicka finns i [Skicka data till en Power BI-datauppsättning](walkthrough-push-data.md).
+I det här fragmentet antar vi att datauppsättningen som ska skickas redan finns på en arbetsyta i SaaS-miljön. Information om API för att skicka finns i [Skicka data till en Power BI-datauppsättning](walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");

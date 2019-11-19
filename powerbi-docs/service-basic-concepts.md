@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 80d878cc5a8ed0df294b99390fb87d8099bfccb5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543075"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431326"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundläggande begrepp för designers i Power BI-tjänsten
 
@@ -48,10 +48,10 @@ Vi går in på de här funktionerna senare, men först ska vi gå igenom några 
 De fyra huvudsakliga byggblocken i Power BI är **_instrumentpaneler_** , **_rapporter_** , **_arbetsböcker_** och **_datauppsättningar_** . Alla är uppdelade i **_arbetsytor_** . Det är viktigt att förstå sig på arbetsytorna innan vi går vidare till de fyra byggstenarna, så vi börjar där.
 
 ## <a name="workspaces"></a>Arbetsytor
-Arbetsytor är containrar för instrumentpaneler, rapporter, arbetsböcker och datauppsättningar i Power BI. Det finns två typer av arbetsytor: *Min arbetsyta* och *apparbetsytor*. Så, vad är en *app*? En *Power BI-app* är en samling av instrumentpaneler och rapporter som skapats för att leverera nyckelmått för Power BI-slutanvändarna i din organisation. Appar är interaktiva men slutanvändarna kan inte redigera dem.
+Arbetsytor är containrar för instrumentpaneler, rapporter, arbetsböcker och datauppsättningar i Power BI. Det finns två typer av arbetsytor: *Min arbetsyta* och *arbetsytor*. Så, vad är en *app*? En *Power BI-app* är en samling av instrumentpaneler och rapporter som skapats för att leverera nyckelmått för Power BI-slutanvändarna i din organisation. Appar är interaktiva men slutanvändarna kan inte redigera dem.
 
-- *Min arbetsyta* är en personlig arbetsyta där vilken Power BI-kund som helst kan arbeta med sitt eget innehåll. Bara du har åtkomst till Min arbetsyta. Du kan dela instrumentpaneler och rapporter från Min arbetsyta. Om du vill samarbeta på instrumentpaneler och rapporter, eller skapa en app, vill du kanske sedan arbeta på en apparbetsyta.      
--  *Apparbetsytor* används för att samarbeta och dela innehåll med kollegor. Det är också där du skapar, publicerar och hanterar appar för din organisation. Du kan se dem som mellanlagringsområden och containrar för det innehåll som ska utgöra en Power BI-app. Du kan lägga till kollegor till dina apparbetsytor och samarbeta kring instrumentpaneler, rapporter, arbetsböcker och datauppsättningar. Alla medlemmar i apparbetsytan behöver Power BI Pro-licenser. Appkonsumenterna, de kollegor som har tillgång till apparna, behöver inte nödvändigtvis Pro-licenser. Läs mer om [de nya arbetsytorna](service-create-the-new-workspaces.md).  
+- *Min arbetsyta* är en personlig arbetsyta där vilken Power BI-kund som helst kan arbeta med sitt eget innehåll. Bara du har åtkomst till Min arbetsyta. Du kan dela instrumentpaneler och rapporter från Min arbetsyta. Om du vill samarbeta på instrumentpaneler och i rapporter, eller skapa en app, så vill du använda en arbetsyta.      
+-  *arbetsytor* används till att samarbeta och dela innehåll med kollegor. Det är också där du skapar, publicerar och hanterar appar för din organisation. Du kan se dem som mellanlagringsområden och containrar för det innehåll som ska utgöra en Power BI-app. Du kan lägga till kollegor på dina arbetsytor och samarbeta kring instrumentpaneler, rapporter, arbetsböcker och datamängder. Alla medlemmar på arbetsytan behöver en Power BI Pro-licens. Appkonsumenterna, de kollegor som har tillgång till apparna, behöver inte nödvändigtvis Pro-licenser. Läs mer om [de nya arbetsytorna](service-create-the-new-workspaces.md).  
 
 Om du vill lära dig mer om delning överlag kan du börja med [olika sätt att dela ditt arbete via instrumentpaneler](service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -62,7 +62,7 @@ En *datauppsättning* är en samling data som du *importerar* eller *ansluter* t
 
 Datauppsättningar är associerade med *arbetsytor* och en enskild datauppsättning kan ingå i många arbetsytor. När du öppnar en arbetsyta, visas de associerade datauppsättningarna under fliken **Datauppsättningar**. Varje listad datauppsättning representerar en enskild datakälla, till exempel en Excel-arbetsbok på OneDrive, eller en lokal SSAS tabular-datauppsättning eller en Salesforce-datauppsättning. Det finns många olika datakällor som stöds och vi lägger till nya hela tiden. Se listan över [datamängdstyper som du kan använda med Power BI](service-get-data.md).
 
-I exemplet nedan har jag markerat apparbetsytan ”Försäljning och marknadsföring” och klickat på fliken för **Datauppsättningar**.
+I exemplet nedan har jag markerat arbetsytan ”Sales and marketing” och klickat på fliken **Datamängder**.
 
 ![Datamängder har valts](media/service-basic-concepts/power-bi-datasets.png)
 
@@ -96,7 +96,7 @@ När du öppnar en app visas en instrumentpanel.  För att komma åt en underlig
 
 Som standard öppnas rapporten i Läsvy.  Du behöver bara välja **Redigera rapport** för att öppna den i redigeringsvyn (om du har nödvändig behörighet).
 
-I exemplet nedan markerade jag apparbetsytan ”Försäljning och marknadsföring” och klickade på fliken för **Rapporter**.
+I exemplet nedan markerade jag arbetsytan ”Sales and marketing” och klickade på fliken **Rapporter**.
 
 ![Valda rapporter](media/service-basic-concepts/power-bi-reports.png)
 
@@ -224,7 +224,7 @@ Det här området på skärmen innehåller ytterligare alternativ för att inter
    ![Märkta ikonknappar](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Nästa steg
-- [Vad är Power BI?](power-bi-overview.md)  
+- [Vad är Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI-videor](videos.md)  
 - [Rapportredigeraren – ta en rundtur](service-the-report-editor-take-a-tour.md)
 

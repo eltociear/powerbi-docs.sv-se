@@ -2,19 +2,18 @@
 title: Dataursprung (förhandsversion)
 description: I moderna Business Intelligence-projekt kan det vara svårt för många kunder att förstå dataflödet från datakällan till målet.
 author: paulinbar
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 774b8b19f8b199e1d98b2bd5e079b35f1a9a6935
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019584"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877350"
 ---
 # <a name="data-lineage-preview"></a>Dataursprung (förhandsversion)
 I moderna Business Intelligence-projekt kan det vara svårt att förstå dataflödet från datakällan till målet. Det kan vara ännu svårare om du har byggt avancerade analysprojekt som omfattar flera datakällor, artefakter och beroenden.  Frågor som ”vad händer om jag ändrar dessa data?” eller ”varför är inte den här rapporten uppdaterad?” kan vara svåra att svara på. Det kan krävas ett team av experter eller en djupgående undersökning för att hitta svaren. Vi har skapat en dataursprungsvy för att hjälpa dig att besvara dessa frågor.
@@ -55,7 +54,7 @@ På datauppsättningar ser du den senaste uppdateringstiden och om en datauppsä
  
 Om en rapport på arbetsytan bygger på en datauppsättning i en annan arbetsyta visas källarbetsytans namn på datauppsättningskortet. Välj källarbetsytans namn för att gå till den arbetsytan.
  
-- För en artefakt väljer du ellipsen (...) för att visa alternativmenyn. Den innehåller samma åtgärder som listvyn.
+- Välj **Fler alternativ** (...) för valfri artefakt om du vill visa alternativmenyn. Den innehåller samma åtgärder som listvyn.
   
 Om du vill se mer metadata om datauppsättningar väljer du själva datauppsättningskortet. Ytterligare information om datauppsättningen visas på en sidopanel.
 
@@ -89,7 +88,8 @@ Ursprungsvyn är en interaktiv arbetsyta. Du kan använda musen och pekplattan f
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-Ursprungsvyn är inte tillgänglig i Internet Explorer. Mer information finns i [Webbläsare som stöds för Power BI](power-bi-browsers.md).
+- Ursprungsvyn är inte tillgänglig i Internet Explorer. Mer information finns i [Webbläsare som stöds för Power BI](power-bi-browsers.md).
+- Ursprungsvyn är inte tillgänglig i Min arbetsyta.
 
 ## <a name="next-steps"></a>Nästa steg
 

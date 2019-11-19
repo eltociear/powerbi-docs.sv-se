@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 1d2ff47fdbc31598524986742319ab36c8f3e957
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175239"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442893"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
@@ -26,21 +26,21 @@ Den här artikeln beskriver hur du köper Power BI Premium-kapacitet (P1–P3) t
 
 Innehållsskapare behöver fortfarande en Power BI Pro-licens, även om organisationen använder Power BI Premium. Se till att du köper minst en Power BI Pro-licens för din organisation.
 
-Om en Premium-prenumeration upphör att gälla har du 30 dagar med fullständig åtkomst till din kapacitet. Efter det återgår innehållet till en delad kapacitet. Modeller som är större än 1 GB kommer inte att stödjas i delad kapacitet.
+Om en Premium-prenumeration upphör att gälla har du 30 dagar med fullständig åtkomst till din kapacitet. Efter det återgår innehållet till en delad kapacitet. Det finns inte stöd för modeller större än 1 GB i delade kapaciteter.
 
 ## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Skapa en ny klient med Power BI Premium P1
 
-Om du inte har någon befintlig klient och vill skapa en, så kan du köpa Power BI Premium samtidigt. Följande länk vägleder dig genom processen med att skapa en ny klientorganisation och kan användas för att köpa Power BI Premium: [Power BI Premium P1-erbjudande](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). När du skapar klientorganisationen blir du automatiskt tilldelad rollen som global Office 365-administratör för den klientorganisationen.
+Om du inte har någon befintlig klient och vill skapa en, så kan du köpa Power BI Premium samtidigt. Följande länk vägleder dig genom processen med att skapa en ny klientorganisation och kan användas för att köpa Power BI Premium: [Power BI Premium P1-erbjudande](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). När du skapar klientorganisationen blir du automatiskt tilldelad rollen som global Microsoft 365-administratör för klientorganisationen.
 
 ## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Köp Power BI Premium-kapacitet för en befintlig organisation
 
-Om du har en befintlig organisation (klientorganisation) måste du vara i rollen som global Office 365-administratör eller rollen faktureringsadministratör för att köpa prenumerationer och licenser. Mer information finns i [Om Office 365-administratörsroller](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+Om du har en befintlig organisation (klientorganisation) måste du ha rollen som global Microsoft 365-administratör eller faktureringsadministratör för att kunna köpa prenumerationer och licenser. Mer information finns i [Om Microsoft 365-administratörsroller](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 Om du vill köpa Premium-kapacitet följer du dessa steg:
 
-1. Från Power BI-tjänsten väljer du Office 365-appväljaren och sedan **Admin**.
+1. Från Power BI-tjänsten väljer du Microsoft 365-appväljaren och sedan **Admin**.
 
-    ![Office 365-appväljaren](media/service-admin-premium-purchase/o365-app-picker.png)
+    ![Microsoft 365-appväljaren](media/service-admin-premium-purchase/o365-app-picker.png)
 
     Du kan också bläddra till Administrationscenter för Microsoft 365. Du kommer dit genom att gå till https://portal.office.com och välja **Admin**.
 
@@ -66,7 +66,7 @@ Nu när du har en kapacitet kan du lägga till fler allteftersom dina behov väx
 
 1. Söka efter det Power BI Premium-objekt som du vill köpa mer av under **Andra alternativ**.
 
-1. Hovra över **ellipsen (...)** och välj sedan **Ändra licenskvantitet**.
+1. Hovra över **Fler alternativ** (...) och välj sedan **Ändra antalet licenser**.
 
     ![Ändra licensantal](media/service-admin-premium-purchase/premium-purchase-more.png)
 

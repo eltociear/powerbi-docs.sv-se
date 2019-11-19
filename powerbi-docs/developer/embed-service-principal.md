@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: d8e1edc7d9d474911e7e7a58c2c7da728358845c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073085"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429264"
 ---
 # <a name="service-principal-with-power-bi"></a>Tjänstens huvudnamn med Power BI
 
@@ -58,8 +58,8 @@ Det finns skillnader mellan att använda tjänstens huvudnamn och ett standardhu
 |------------------------------------------------------|---------------------|-------------------|
 | Kan logga in på Power BI-tjänsten  | Ja | Nej |
 | Aktiverad i Power BI-administratörsportalen | Nej | Ja |
-| [Fungerar med apparbetsytor (v1)](../service-create-workspaces.md) | Ja | Nej |
-| [Fungerar med de nya apparbetsytorna (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
+| [Fungerar med arbetsytor (v1)](../service-create-workspaces.md) | Ja | Nej |
+| [Fungerar med de nya arbetsytorna (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
 | Måste vara arbetsyteadministratör om de används med Power BI Embedded | Ja | Ja |
 | Kan använda Power BI REST-API:er | Ja | Ja |
 | Måste ha en global administratör för att skapa | Ja | Nej |
@@ -141,7 +141,7 @@ Det finns ingen funktion i användargränssnittet för att flytta Power BI-artef
 
 ### <a name="how-to-get-the-service-principal-object-id"></a>Så här får du objekt-ID för tjänstens huvudnamn
 
-För att tilldela en tjänsthuvudnamn till en ny apparbetsyta använder du [Power BI REST-API:er](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). För att referera ett tjänsthuvudnamn för åtgärder eller för att göra ändringar använder du **objekt-ID för tjänstens huvudnamn** – till exempel tillämpa en tjänsthuvudnamn som administratör för en arbetsyta.
+När du ska tilldela ett tjänsthuvudnamn till en ny arbetsyta använder du [REST-API:erna för Power BI](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). För att referera ett tjänsthuvudnamn för åtgärder eller för att göra ändringar använder du **objekt-ID för tjänstens huvudnamn** – till exempel tillämpa en tjänsthuvudnamn som administratör för en arbetsyta.
 
 Nedan beskrivs hur du hämtar objekt-ID för tjänstens huvudnamn från Azure-portalen.
 
@@ -166,7 +166,7 @@ Nedan är ett exempelskript för att hämta objekt-ID för tjänstens huvudnamn 
 
 ## <a name="considerations-and-limitations"></a>Överväganden och begränsningar
 
-* Tjänstens huvudnamn fungerar bara med [nya apparbetsytor](../service-create-the-new-workspaces.md).
+* Tjänstens huvudnamn fungerar bara med [nya arbetsytor](../service-create-the-new-workspaces.md).
 * **Min arbetsyta** stöds inte när du använder tjänstens huvudnamn.
 * Dedikerad kapacitet krävs vid flytt till produktion.
 * Du kan inte logga in på Power BI-portal med tjänstens huvudnamn.

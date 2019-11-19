@@ -10,15 +10,15 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 49504343b076d7e2371c45005da24e35831bf506
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751172"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060401"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Självstudie: Kom igång med Power BI-tjänsten
-Den här självstudien är en introduktion till några av funktionerna i *Power BI-tjänsten*. I självstudien ansluter du till data, skapar en rapport och en instrumentpanel och ställer frågor om dina data. Du kan göra mycket mer i Power BI-tjänsten. Den här självstudien är bara en aptitretare. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden rekommenderar vi att du läser [Vad är Power BI](power-bi-overview.md).
+Den här självstudien är en introduktion till några av funktionerna i *Power BI-tjänsten*. I självstudien ansluter du till data, skapar en rapport och en instrumentpanel och ställer frågor om dina data. Du kan göra mycket mer i Power BI-tjänsten. Den här självstudien är bara en aptitretare. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden rekommenderar vi att du läser [Vad är Power BI](fundamentals/power-bi-overview.md).
 
 ![Startsida för Power BI-tjänsten](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -115,7 +115,7 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
    
 8. Välj den nya panelen på instrumentpanelen för att gå tillbaka till rapporten. Power BI visar rapporten i läsvyn. 
 
-1. Om du vill växla tillbaka till redigeringsvyn väljer du de tre punkterna (...) i det översta navigeringsfältet > **Redigera**. När du är i redigeringsvyn kan du fortsätta att utforska och fästa paneler.
+1. Du kan gå tillbaka till redigeringsvyn genom att välja **Fler alternativ** (...) i det översta navigeringsfältet > **Redigera**. När du är i redigeringsvyn kan du fortsätta att utforska och fästa paneler.
 
     ![Välj Redigera för att redigera rapporten](media/service-get-started/power-bi-service-edit-report.png)
 
@@ -200,7 +200,7 @@ Nu när du är klar med självstudien kan du ta bort datauppsättningen, rapport
 
 1. Se till att du befinner dig i **Min arbetsyta** i det vänstra navigeringsfältet.
 2. Välj fliken **Datauppsättningar** och hitta datauppsättningen du importerade för den här självstudien.  
-3. Välj ellipsen (…) > **Ta bort**.
+3. Välj **Fler alternativ** (...) > **Ta bort**.
 
     ![Ta bort datauppsättningen](media/service-get-started/power-bi-service-delete-dataset.png)
 

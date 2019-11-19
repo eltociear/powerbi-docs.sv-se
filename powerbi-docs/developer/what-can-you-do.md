@@ -3,18 +3,17 @@ title: Vad kan utvecklare göra med Power BI?
 description: Power BI erbjuder en mängd olika alternativ för utvecklare. Allt från inbäddning till anpassad visuell information och strömning av datauppsättningar.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 0d4f79714be7d354c26a7bd63adbe8bce07ed4ef
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 9105edd88e83f17f4d6e75a7e45dc123a6789713
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307457"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875670"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Vad kan utvecklare göra med Power BI?
 
@@ -22,7 +21,7 @@ Utvecklare har olika alternativ som försöker inkludera Power BI-innehåll i pr
 
 ## <a name="embedding-power-bi-content"></a>Bädda in Power BI-innehåll
 
-Power BI-tjänsten (SaaS) och Power BI Embedded-tjänsten i Azure (PaaS) har API:er för inbäddning av dina instrumentpaneler och rapporter. Det innebär att du får tillgång till de senaste funktionerna i Power BI när du bäddar in innehåll, till exempel instrumentpaneler, gatewayer och apparbetsytor.
+Power BI-tjänsten (SaaS) och Power BI Embedded-tjänsten i Azure (PaaS) har API:er för inbäddning av dina instrumentpaneler och rapporter. Det innebär att du får tillgång till de senaste funktionerna i Power BI när du bäddar in innehåll, som instrumentpaneler, gatewayer och arbetsytor.
 
 Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup) kommer du snabbt igång och kan ladda ned ett exempelprogram.
 

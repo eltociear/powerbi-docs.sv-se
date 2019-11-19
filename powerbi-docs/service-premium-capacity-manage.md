@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: a2b51d2a03a9d3b88d31bc7d7d232fef0b2251d6
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175224"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431711"
 ---
 # <a name="managing-premium-capacities"></a>Hantera Premium-kapaciteter
 
@@ -42,7 +42,7 @@ Minst en kapacitetsadministratör måste tilldelas. Användare som utsetts till 
 
 Kapacitetsadministratörer kan inte komma åt arbetsyteinnehåll såvida de inte uttryckligen tilldelas i behörigheter för arbetsyta. De har heller inte åtkomst till alla Power BI-administrationsområden (såvida de inte uttryckligen tilldelas sådan), till exempel användningsmått, granskningsloggar och inställningar för klientorganisation. Viktigt är att kapacitetsadministratörer inte har behörighet att skapa nya kapaciteter eller skala befintliga kapaciteter. Administratörer tilldelas per kapacitet, vilket försäkrar att de bara kan visa och hantera de kapaciteter som de är tilldelade.
 
-Kapacitetsstorlek väljs från en tillgänglig lista med SKU-alternativ, som begränsas av antalet tillgängliga v-kärnor i poolen. Det går att skapa flera kapaciteter från poolen som kan hämtas från en eller flera köpta SKU:er. Till exempel kan en P3-SKU (32 kärnor) användas för att skapa tre kapacitet: en P2 (16 v-kärnor), och två P1 (2 x 8 v-kärnor). Förbättrad prestanda och skala kan uppnås genom kapaciteter av mindre storlek skapas, vilket beskrivs i artikeln [Optimera Premium-kapaciteter](service-premium-capacity-optimize.md). Följande bild visar en exempelinstallation av den fiktiva Contoso-organisationen som består av fem Premium-kapaciteter (3 x P1 och 2 x P3) där var och en innehåller app-arbetsytor och flera arbetsytor i delad kapacitet.
+Kapacitetsstorlek väljs från en tillgänglig lista med SKU-alternativ, som begränsas av antalet tillgängliga v-kärnor i poolen. Det går att skapa flera kapaciteter från poolen som kan hämtas från en eller flera köpta SKU:er. Till exempel kan en P3-SKU (32 kärnor) användas för att skapa tre kapacitet: en P2 (16 v-kärnor), och två P1 (2 x 8 v-kärnor). Förbättrad prestanda och skala kan uppnås genom kapaciteter av mindre storlek skapas, vilket beskrivs i artikeln [Optimera Premium-kapaciteter](service-premium-capacity-optimize.md). I den här bilden ser du en exempelinstallation av den fiktiva Contoso-organisationen som består av fem Premium-kapaciteter (3 x P1 och 2 x P3) där var och en har arbetsytor, samt flera arbetsytor i delad kapacitet.
 
 ![En exempelinstallation för det fiktiva företaget Contoso](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -66,7 +66,7 @@ Det är möjligt att ta bort en Premium-kapacitet, och det leder inte till bortt
 
 ### <a name="assigning-workspaces-to-capacities"></a>Tilldela arbetsytor till kapaciteter
 
-Arbetsytor kan tilldelas till en Premium-kapacitet i Power BI-administratörsportalen eller, för en apparbetsyta, i fönstret **Arbetsyta**.
+Arbetsytor kan tilldelas till en Premium-kapacitet i Power BI-administratörsportalen, eller i fönstret **Arbetsyta** för enskilda arbetsytor.
 
 Kapacitetsadministratörer samt globala administratörer för Office 365 eller Power BI-tjänstadministratörer kan masstilldela arbetsytor i Power BI-administratörsportalen. Masstilldelningar kan gälla för:
 

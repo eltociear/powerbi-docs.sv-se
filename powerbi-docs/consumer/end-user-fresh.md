@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141839"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019777"
 ---
 # <a name="your-content-is-up-to-date"></a>Ditt innehåll är aktuellt och uppdaterat
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Som *konsument* kan du arbeta med innehåll som skapats av *designer* och delats med dig. Du kanske undrar om det innehållet är aktuellt och uppdaterat eller du kanske bara vill veta när innehållet senast uppdaterades. Att veta att du arbetar med senaste innehållet ger dig tillförsikt.  
  
 ![Power BI-instrumentpanel](media/end-user-fresh/power-bi-dashboards.png)
@@ -51,7 +54,7 @@ Appskärmen visar både namnet på designern samt det datum då appen senast upp
     ![2 appar med en markerad](media/end-user-fresh/power-bi-app.png)
 
 
-### <a name="shared-with-me"></a>Delad med mig
+### <a name="shared-with-me"></a>Delat med mig
 På skärmen **Delat med mig** ser du namnet på innehållsägaren samt det datum då innehållet senast delades med dig.
 
 ![skärmen delat med mig som visar datum för ändring och ägare](media/end-user-fresh/power-bi-share.png) 
@@ -63,7 +66,7 @@ Om du är intresserad kan du kontrollera datumet för den senaste uppdateringen 
 ### <a name="dashboard-tiles"></a>Paneler på instrumentpanelen
 För paneler på instrumentpanelen ska du titta på panelen i fokusläge om du vill se tidstämpeln för den senaste uppdateringen.
 
-1. Välj ellipsen (...) på en panel för instrumentpanelen och välj **Öppna i fokusläge**.
+1. Välj **Fler alternativ** (...) på en panel på instrumentpanelen och sedan **Öppna i fokusläge**.
 
     ![menyn som visas när du har valt ellipsen](media/end-user-fresh/power-bi-focus-mode.png)
 
@@ -72,7 +75,7 @@ För paneler på instrumentpanelen ska du titta på panelen i fokusläge om du v
     ![bred webbläsare visar datum för senaste uppdatering](media/end-user-fresh/power-bi-last-refresh2.png)
 
 ### <a name="dashboards-and-reports"></a>Instrumentpaneler och rapporter
-Ett annat sätt att kontrollera uppdateringsdatumet är att använda **Visa relaterade**.  **Visa relaterade** är tillgängligt om du väljer ellipsen (…) på den övre menyraden i Power BI.
+Ett annat sätt att kontrollera uppdateringsdatumet är att använda **Visa relaterade**.  **Visa relaterade** är tillgängligt om du väljer **Fler alternativ** (…) på den övre menyraden i Power BI.
 
 ![Välj Visa relaterade på menyn](media/end-user-fresh/power-bi-view-related-dropdown.png)
 

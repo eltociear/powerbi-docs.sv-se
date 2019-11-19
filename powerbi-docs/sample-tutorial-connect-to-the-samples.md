@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 5009e186c801f71c9c1a4b8e156dfefaaeac79f1
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391488"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020637"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Ansluta till exemplen i Power BI-tjänsten
 
@@ -91,7 +91,7 @@ Utforska nu instrumentpanelen, datauppsättningen och rapporten på egen hand. D
      
    ![Helt ny rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Ett annat sätt att utforska datamängden är att köra [snabbinsikter](consumer/end-user-insights.md). Välj ellipsen (…) och välj sedan **Hämta snabbinsikter**. När insikterna är klara väljer du **Visa insikter**.
+1. Ett annat sätt att utforska datamängden är att köra [snabbinsikter](consumer/end-user-insights.md). Välj **Fler alternativ** (…) och sedan **Hämta snabbinsikter**. När insikterna är klara väljer du **Visa insikter**.
      
     ![Insiktsrapport](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 

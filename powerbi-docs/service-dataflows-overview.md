@@ -2,7 +2,6 @@
 title: Lär dig mer om dataflöden i Power BI
 description: Lär dig hur dataflöden fungerar i Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 28be15b1f62f410c14faaa5d3e8c36060596c466
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136385"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872593"
 ---
 # <a name="self-service-data-prep-in-power-bi"></a>Dataförberedelser med självbetjäning i Power BI
 
@@ -25,7 +24,7 @@ Allt eftersom att datavolymerna fortsätter att växa, ökar utmaningen att omva
 
 Power BI introducerar **dataflöden** som hjälper organisationer att samla data från olika källor och förbereda den för modellering. Analytiker kan enkelt skapa dataflöden, med välbekanta självbetjäningsverktyg. Dataflöden används för att mata in, transformera, integrera och utöka stordata genom att definiera anslutningar till datakällor, ETL-logik, uppdateringsscheman med mera. Dessutom innebär den nya modelldrivna beräkningsmotorn som ingår i dataflöden att processen för förberedelse av data blir mer hanterbar, mer deterministisk och mindre besvärlig för dataanalytiker och rapportskapare. På liknande sätt som kalkylblad hanterar omberäkningar för alla berörda formler, hanterar dataflöden ändringar i en entitet eller ett dataelement åt dig, automatiserar uppdateringar och underlättar det som brukade vara tidskrävande logikkontroller även för grundläggande datauppdateringar. Med dataflöden kan uppgifter som tidigare krävde övervakning av dataforskare (vilket tog många timmar eller dagar), nu hanteras med några få klick av analytiker och rapportskapare. 
 
-Data lagras som entiteter i [**Common Data Service**](https://docs.microsoft.com/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Dataflöden skapas och hanteras i apparbetsytor med hjälp av Power BI-tjänsten.  
+Data lagras som entiteter i [**Common Data Service**](https://docs.microsoft.com/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Du skapar och hanterar dataflöden på arbetsytor med hjälp av Power BI-tjänsten.  
  
 **Dataflöden** är utformade att använda **Common Data Service**, en standardiserad, modulär och utökningsbar samling av datascheman som publicerats av Microsoft och som gör det enklare för dig att skapa, använda och analysera data. Med den här modellen kan du gå från datakällor till Power BI-instrumentpaneler utan problem.
 

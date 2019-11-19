@@ -13,12 +13,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: ef955f672bc7266979b1e0b9ddbab6e9b6ae1ff7
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236879"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019598"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Snabbstart: Lär dig mer om Power BI-funktioner för *användare*
 I den här snabbstarten lär du dig att interagera med Power BI för att identifiera databaserade affärsinsikter. Det här är ingen djupgående artikel utan snarare en snabb titt på många av de åtgärder som är tillgängliga för **Power BI-användare**.
@@ -118,7 +118,7 @@ Visuella objekt består av datapunkter. Du kan visa information genom att hovra 
 ### <a name="favorite-a-dashboard"></a>Favoritmarkera en instrumentpanel
 När du gör innehåll till en *favorit* kan du komma åt det från det vänstra navigeringsfältet. Det vänstra navigeringsfältet är synligt i praktiskt taget alla områden i Power BI. Favoriter är vanligtvis de instrumentpaneler, rapportsidor och appar som du använder oftast.
 
-I det övre högra hörnet i Power BI-tjänsten väljer du **Favorit** eller, om det inte visas, så väljer du ellipsen (…) och sedan **Favorit** i listrutan. 
+Välj **Favorit** uppe till höger i Power BI-tjänsten. Om du inte ser det här alternativet väljer du **Fler alternativ** (…) och sedan **Favorit** i listrutan. 
    
 ![Ikonen Favorit](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -168,7 +168,7 @@ Läs mer om [fokusläge och helskärmsläge](end-user-focus.md)
 ### <a name="sort-a-visualization"></a>Sortera en visualisering
 Visuella objekt på en rapportsida kan sorteras och sparas med tillämpade ändringar. 
 
-Hovra över ett visuellt objekt för att göra det aktivt, och öppna sorteringsalternativen med hjälp av ellipsen (…).
+Hovra över ett visuellt objekt för att göra det aktivt och välj **Fler alternativ** för att öppna sorteringsalternativen.
 
 ![sortera ett diagram](media/end-user-reading-view/sort.gif) 
 
@@ -177,7 +177,7 @@ Läs mer om [sortering av visuella objekt](end-user-search-sort.md)
 ### <a name="show-the-data-used-to-create-a-visualization"></a>Visa de data som används för att skapa en visualisering
 En Power BI-visualisering konstrueras med hjälp av data från underliggande datamängder. Om du är intresserad av att se vad som pågår i bakgrunden, Power BI kan *visa* de data som används för att skapa visualiseringen. När du väljer **Visa data** visar Power BI dessa data under (eller bredvid) visualiseringen.
 
-När ett visuellt objekt är aktivt väljer du ellipsen (…) och sedan **Visa data**.
+När ett visuellt objekt är aktivt väljer du **Fler alternativ** (…) och sedan **Visa data**.
    
    ![välj Visa data](./media/end-user-show-data/power-bi-explore-show-data.png)
 

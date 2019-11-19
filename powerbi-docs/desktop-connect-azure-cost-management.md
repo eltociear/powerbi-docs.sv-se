@@ -1,6 +1,6 @@
 ---
 title: Ansluta till Azure Cost Management-data i Power BI Desktop
-description: Det är enkelt att ansluta till Azure och få insikter om kostnadshantering med Power BI Desktop
+description: Med Power BI Desktop kan du enkelt ansluta till Azure och få insikter om kostnader och användning
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -11,21 +11,21 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1ef9deac169873d7faee33abdae9f8f38aa09c6d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: dccae9f8f9519495da9056599939169e7157873c
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72308017"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891761"
 ---
-# <a name="connect-to-azure-cost-management-data-in-power-bi-desktop"></a>Ansluta till Azures kostnadshanteringsdata i Power BI Desktop
+# <a name="connect-to-azure-cost-management-in-power-bi-desktop"></a>Ansluta till Azure Cost Management i Power BI Desktop
 
 Du kan använda Azure Cost Management-anslutningsprogrammet för Power BI Desktop till att göra kraftfulla, anpassade visualiseringar och rapporter som hjälper dig att förstå dina Azure-utgifter bättre. Azure Cost Management-anslutningsprogrammet stöder för närvarande kunder med ett [Microsoft-kundavtal](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) eller ett [Enterprise-avtal](https://azure.microsoft.com/pricing/enterprise-agreement/).  
 
-Azure Cost Management-anslutningsprogrammet använder OAuth 2.0 till autentiseringen med Azure. För att ansluta måste du använda ditt konto som [företagsadministratör](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) för Enterprise-avtal, eller vara [faktureringskontoinnehavare](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) för Microsofts kundavtal. 
+Anslutningsprogrammet för Azure Cost Management använder OAuth 2.0 för autentisering med Azure och identifierar de användare som ska använda anslutningsprogrammet. De token som genereras i den här processen är giltiga under en viss period. Power BI bevarar token till nästa inloggning. OAuth 2.0 är en standard för processen som körs i bakgrunden och ser till att dessa behörigheter hanteras säkert. För att ansluta måste du använda ditt konto som [företagsadministratör](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) för Enterprise-avtal, eller vara [faktureringskontoinnehavare](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) för Microsofts kundavtal. 
 
 > [!NOTE]
-> Det här anslutningsprogrammet ersätter det tidigare anslutningsprogrammet för [Azure Cost Management (beta)](desktop-connect-azure-consumption-insights.md). Alla rapporter som har skapats med det tidigare anslutningsprogrammet måste återskapas med hjälp av det här anslutningsprogrammet.
+> Det här anslutningsprogrammet ersätter de tidigare anslutningsprogrammen [Azure Consumption Insights och Azure Cost Management (beta)](desktop-connect-azure-consumption-insights.md). Alla rapporter som har skapats med det tidigare anslutningsprogrammet måste återskapas med hjälp av det här anslutningsprogrammet.
 
 ## <a name="connect-using-azure-cost-management"></a>Ansluta med Azure Cost Management
 

@@ -2,7 +2,6 @@
 title: Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
 description: Lär dig att uppdatera sidor automatiskt för DirectQuery-källor i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 546dffe20d6840544eca1360945482630a686069
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307994"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878752"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
 
@@ -112,7 +111,7 @@ För att förtydliga hur det fungerar kan vi börja med en bakgrund om [kapacite
 
 I delad kapacitet körs arbetsbelastningar på dataresurser som delas med andra kunder. När kapaciteten måste dela resurser, införs begränsningar för att säkerställa ett *rättvist genomförande*, till exempel genom att ange maximal modellstorlek (1 GB) och maximal daglig uppdateringsfrekvens (åtta gånger per dag).
 
-Power BI-**arbetsytor** finns i kapaciteter och de består av säkerhets-, samarbets- och distributionscontainrar. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Fler arbetsytor kan skapas för att möjliggöra samarbete och distribution och dessa kallas **Apparbetsytor**. Som standard skapas arbetsytor, däribland personliga arbetsytor, i den **delade kapaciteten**.
+Power BI-**arbetsytor** finns i kapaciteter och de består av säkerhets-, samarbets- och distributionscontainrar. Varje Power BI-användare har en personlig arbetsyta som kallas **Min arbetsyta**. Du kan skapa fler arbetsytor för att möjliggöra samarbete och distribution, och de kallas för **arbetsytor**. Som standard skapas arbetsytor, däribland personliga arbetsytor, i den **delade kapaciteten**.
 
 Här visas information om de två scenarierna för arbetsytor:
 

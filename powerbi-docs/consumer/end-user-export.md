@@ -2,21 +2,20 @@
 title: Exportera data från ett visuellt Power BI-objekt
 description: Exportera data från en rapportvisualisering och instrumentpanelvisualisering och visa dem i Excel.
 author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 80033cafbe66303a1d6f55bba61f7d19449dc45b
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589514"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851320"
 ---
 # <a name="export-data-from-a-visual"></a>Exportera data från ett visuellt objekt
 
@@ -26,11 +25,11 @@ Om du vill se de data som används i en visualisering [kan du visa dessa data i 
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Från en visualisering på en Power BI-instrumentpanel
 
-1. Starta på en Power BI-instrumentpanel. Här ska vi använda instrumentpanelen från exempelappen ***Marknadsföring och försäljning***. Du kan [hämta den här appen frånAppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
+1. Starta på en Power BI-instrumentpanel. Här ska vi använda instrumentpanelen från exempelappen ***Marknadsföring och försäljning***. Du kan [hämta den här appen frånAppSource.com](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
     ![Appinstrumentpanel](media/end-user-export/power-bi-dashboards.png)
 
-2. Hovra över en visualisering för att visa ellipserna (...) och klicka för att visa åtgärdsmenyn.
+2. Hovra över ett visuellt objekt för att visa **Fler alternativ** (...) och klicka på det för att visa åtgärdsmenyn.
 
     ![Meny som visas när du väljer ellipserna](media/end-user-export/power-bi-action-menu.png)
 

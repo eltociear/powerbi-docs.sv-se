@@ -3,18 +3,17 @@ title: Ändringslogg för Power BI-rapportservern
 description: Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya objekt tillsammans med felkorrigeringar för varje utgiven version.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/09/2019
-ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.date: 10/25/2019
+ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259983"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874277"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ändringslogg för Power BI-rapportservern
 
@@ -23,15 +22,22 @@ Den här ändringsloggen är avsedd för Power BI-rapportservern och visar nya o
 Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver](whats-new.md). 
 
 ## <a name="september-2019"></a>September 2019
-
 - **Power BI-rapportserver**
+    - *Version: 1.6.7236.4246 (version 15.0.1102.646), utgiven: 25 oktober 2019*
+        - Säkerhetsuppdateringar
+        - Felkorrigeringar
+            - Korrigeringen för .net framework 4.7 är inte installerad.
+            - Korrigering för sidnumrerade Teradata-rapporter med flervärdesparametrar som anger fel 110083.
+            - Korrigering för att URLRoot-värdet inte fungerar om det finns flera bindningar till webbtjänstadresser och en av dem är https://+80/reportserver.
+          - Korrigering för att värden för flervärdesparametrar i sidnumrerade rapporter visas utanför rapportområdet.
+          
     - *Version: 1.6.7221.30698 (version 15.0.1102.620), utgiven: 9 oktober 2019*
         - Felkorrigeringar
             - Korrigering av textfilter i anpassat visuellt objekt.
             - Korrigering av de nedrullningsbara utsnittens prestanda.
             - Korrigering av Strip PII från telemetri.
           - Korrigering av att URL:er inte ska vara skiftlägeskänsliga.
-             
+          
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), publicerad: 26 september 2019*
         - Säkerhetsuppdateringar
         - Felkorrigeringar
@@ -50,7 +56,10 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
              - Uppdaterat webb-API: /PowerBIReports({Id})/DataSources (PATCH) för att tillåta anslutningsstränguppdateringar.
          
 - **Power BI Desktop (optimerad för Power BI-rapportservern)**
-
+    - *Version: 2.73.5586.1501 (september 2019), utgiven: 25 oktober 2019*
+        - Felkorrigeringar
+            - Korrigering för telemetri.
+            
     - *Version: 2.73.5586.1241 (september 2019), utgiven: 9 oktober 2019*
         - Felkorrigeringar
             - Korrigering av textfilter i anpassat visuellt objekt.
@@ -295,6 +304,6 @@ Detaljerad information om nya funktioner finns [Nyheter i Power BI-rapportserver
  [Administratörsöversikt](admin-handbook-overview.md)  
 [Installera Power BI-rapportserver](install-report-server.md)  
 [Hämta Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Ladda ned SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Ladda ned SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -1,6 +1,6 @@
 ---
 title: Power BI-licensiering i din organisation
-description: 'Information om de olika licenstyperna i Power BI: kostnadsfri licensiering, Power BI Pro och Power BI Premium.'
+description: 'Information om de olika licenstyperna i Power BI: kostnadsfria licenser, Power BI Pro och Power BI Premium.'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 24cc798814e0c19de4f1dd4d0d6907fc7a0074a6
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075410"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442826"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licensiering i din organisation
 
@@ -27,9 +27,9 @@ Den här artikeln fokuserar på licenser per användare från en administratörs
 
 Som administratör kan du köpa och tilldela Power BI Pro-licenser. Du kan även registrera dig för en utvärderingsversion av Power BI Pro för din organisation. Enskilda användare kan också registrera sig för en utvärderingsversion av Power BI Pro.
 
-### <a name="purchase-power-bi-pro"></a>Köp Power BI Pro
+### <a name="purchase-power-bi-pro-licenses"></a>Köpa Power BI Pro-licenser
 
-Du kan köpa Power BI Pro-licenser via Microsoft Office 365 eller en certifierad Microsoft-partner. När du har köpt licenserna kan du tilldela dem till enskilda användare. Mer information finns i avsnittet [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
+Som administratör kan du köpa Power BI Pro-licenser via Microsoft 365 eller en certifierad Microsoft-partner. När du har köpt licenserna kan du tilldela dem till enskilda användare. Mer information finns i avsnittet [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
 
 ### <a name="power-bi-pro-license-expiration"></a>Power BI Pro-licensens upphörande
 
@@ -41,7 +41,7 @@ Power BI Pro har samma prenumerationslivscykel som Office 365. Mer information f
 
 Enskilda användare i din organisation kan registrera sig för en utvärderingsversion av Power BI Pro. Mer information finns i [Registrera dig själv som enskild individ för Power BI](service-self-service-signup-for-power-bi.md).
 
-Användare som utnyttjar denna Power BI Pro-utvärderingsversion visas inte i Microsoft 365-administratörscentret som Power BI Pro-utvärderingsanvändare (de visas som användare av den kostnadsfria Power BI-versionen). De visas dock som Power BI Pro-utvärderingsanvändare på sidan Hantera lagring i Power BI.
+De som använder den här utvärderingsversionen av Power BI Pro för individer visas inte som Power BI Pro-utvärderingsanvändare i Microsoft 365-administratörscentret (de visas som användare av den kostnadsfria Power BI-versionen). De visas dock som Power BI Pro-utvärderingsanvändare på sidan Hantera lagring i Power BI.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Utvärderingsversion av Power BI Pro för organisationer
 
@@ -49,7 +49,7 @@ Om du vill hämta och distribuera Power BI-utvärderingslicenser till flera anv�
 
 Tänk på följande innan du börjar registrera dig:
 
-* Du måste ha rollen [**global administratör** eller **faktureringsadministratör**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) i Office 365 för att kunna registrera dig.
+* Du måste ha rollen [**global administratör** eller **faktureringsadministratör**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) i Microsoft 365 för att kunna registrera dig.
 
 * Det finns en gräns på en organisationsutvärdering per klientorganisation. Det innebär att om någon redan har använt Power BI Pro-utvärderingen för din klientorganisation så kan du inte göra det igen. Om du behöver hjälp med det här kan du kontakta [faktureringssupporten för Office 365](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
@@ -79,11 +79,11 @@ Användare i din organisation kan få tillgång till kostnadsfria Power BI-licen
 
 * Du kan tilldela en licens för Power BI till dem i administrationscentret för Microsoft 365.
 
-* Om en användare [registrerar sig för en kostnadsfri utvärderingsversion av Power BI Pro](service-self-service-signup-for-power-bi.md) och utvärderingsversionen är slut tilldelas de en kostnadsfri licens.
+* Om en användare [registrerar ett Power BI-konto](service-self-service-signup-for-power-bi.md) tilldelas de en kostnadsfri licens.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Begära och tilldela kostnadsfria licenser
 
-Om du planerar att ha en central hantering av licensbegäranden och licenstilldelningar kontrollerar du först om du redan har det obegränsade Power BI-licensblocket (kostnadsfritt).
+Om du planerar att hantera av licensbegäranden och licenstilldelningar centralt kontrollerar du först om du redan har det obegränsade Power BI-licensblocket (kostnadsfritt) för din klientorganisation.
 
 Det här blocket med licenser är tillgängligt efter den första gången någon registrerat sig för Power BI som individ. Under den här processen är licensblocket kopplat till din organisation och en licens tilldelas till den användare som registrerar sig.
 
@@ -125,9 +125,9 @@ Om det obegränsade Power BI-licensblocket (kostnadsfritt) inte är tillgänglig
 
 Som administratör kan du välja att aktivera eller inaktivera individuell användarregistrering via Azure Active Directory (AAD). Det här avsnittet av artikeln visar hur du hanterar registreringar med PowerShell-kommandon. Läs mer om Azure PowerShell i [Översikt över Azure PowerShell](/powershell/azure/overview).
 
-Azure AD-inställningen som styr registreringen är **AllowAdHocSubscriptions**. I de flesta klienter är det här inställt på *true*, vilket innebär att inställningen är aktiverad. Om du har köpt Power BI via en partner kan detta vara inställt på *false*, vilket innebär att det är inaktiverat. Om du ändrar inställningen från *true* till *false* blockeras nya användare i din organisation från att kunna registrera sig individuellt. Användare som har registrerat sig för Power BI före inställningen ändrades har kvar sina licenser. Observera att med inställningen *falskt* kan användarna fortfarande registrera sig för en utvärderingsversion av Pro.
+Inställningen som styr registreringen i Azure Active Directory är **AllowAdHocSubscriptions**. I de flesta klienter är det här inställt på *true*, vilket innebär att inställningen är aktiverad. Om du har köpt Power BI via en partner kan detta vara inställt på *false*, vilket innebär att det är inaktiverat. Om du ändrar inställningen från *true* till *false* blockeras nya användare i din organisation från att kunna registrera sig individuellt. Användare som har registrerat sig för Power BI före inställningen ändrades har kvar sina licenser. Om inställningen är *false* kan användare med en kostnadsfri Power BI-licens fortfarande registrera sig för en enskild utvärdering av Power BI Pro.
 
-1. Logga in på Azure Active Directory med dina Office 365-autentiseringsuppgifter. Den första raden i följande PowerShell-skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
+1. Logga in i Azure Active Directory med dina autentiseringsuppgifter för Microsoft 365. Den första raden i följande PowerShell-skript uppmanar dig att ange dina autentiseringsuppgifter. Den andra raden ansluter till Azure Active Directory.
 
     ```powershell
      $msolcred = get-credential

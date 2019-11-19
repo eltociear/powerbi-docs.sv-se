@@ -3,19 +3,18 @@ title: Bädda in en rapport i en säker portal eller webbplats
 description: Med funktionen för inbäddning i Power BI kan användare enkelt och säkert bädda in rapporter i interna webbportaler.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 59841cdcfae3bc08e0b6dcacf4bcb6664dfe209c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867115"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877084"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Bädda in en rapport i en säker portal eller webbplats
 
@@ -49,7 +48,7 @@ Alternativet **Bädda in** stöder [URL-filter](service-url-filters.md) och URL-
 
 Alternativet **Bädda in** tillåter inte automatiskt användare att visa rapporten. Visningsbehörigheter anges i Power BI-tjänsten.
 
-I Power BI-tjänsten kan du dela inbäddade rapporter med användare som behöver åtkomst. Om du använder en Office 365-grupp kan du lista användaren som en medlem i apparbetsytan. För ytterligare information, se mer om att [hantera din apparbetsyta i Power BI och Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+I Power BI-tjänsten kan du dela inbäddade rapporter med användare som behöver åtkomst. Om du använder en Office 365-grupp kan du lista användaren som medlem i arbetsytan. Mer information finns i artikeln om att [hantera din arbetsyta i Power BI och Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licensiering
 

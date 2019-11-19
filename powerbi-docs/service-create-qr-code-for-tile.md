@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cab65ad12255b7a5ff2e37902684437f0e191723
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e08d37f3db6156de21f00813a90b1c7544345abe
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61169080"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021194"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en panel i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
@@ -27,8 +27,8 @@ Kolleger som du har delat instrumentpanelen med kan [skanna QR-koden för att f�
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Skapa en QR-kod för en panel
 1. Öppna en instrumentpanel i Power BI-tjänsten.
-2. Välj ellipserna (...) i det övre högra hörnet av panelen och välj **Fokusläge** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
-3. Välj ellipserna (...) i det övre högra hörnet av panelen och välj **Generera QR-kod**. 
+2. Välj **Fler alternativ** (...) uppe till höger på panelen och sedan **Fokusläge** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+3. Välj **Fler alternativ** (...) uppe till höger och sedan **Generera QR-kod**. 
    
     ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. En dialogruta med QR-koden visas. 

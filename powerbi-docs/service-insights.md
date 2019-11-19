@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0492b797d75e29145c14a70d8a8058bad295ef18
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 428e392994a1b6934bf78d9cccbee1821744a622
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994936"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020226"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Skapa datainsikter automatiskt med Power BI
 Har du en ny datamängd och vet inte riktigt var du ska börja?  Behöver du skapa en instrumentpanel snabbt?  Vill du leta efter insikter som du kan ha missat?
@@ -38,7 +38,7 @@ Titta på när Amanda kör insikter på en datauppsättning, öppnar en insikt i
 
 Nu är din tur. Utforska insikter med hjälp av [exemplet för analys av leverantörskvalitet](sample-supplier-quality.md).
 
-1. Från fliken **Datamängder** väljer du ellipsen (…) och sedan **Få snabba insikter**.
+1. På fliken **Datamängder** väljer du **Fler alternativ** (…) och sedan **Få snabba insikter**.
    
     ![Fliken Datauppsättningar](media/service-insights/power-bi-ellipses.png)
    
@@ -62,7 +62,7 @@ Nu är din tur. Utforska insikter med hjälp av [exemplet för analys av leveran
 
 1. Hovra över ett kort och välj stiftikonen för att lägga till visualiseringen på en instrumentpanel.
 
-2. Hovra över ett kort, välj ellipsen (…) och välj sedan **Visa insikter**. 
+2. Hovra över ett kort, välj **Fler alternativ** (…) och sedan **Visa insikter**. 
 
     Insiktsskärmen öppnas i fokusläge.
    
@@ -86,7 +86,7 @@ Nu är din tur. Utforska insikter med hjälp av [exemplet för analys av leveran
 I stället för att söka efter insikter mot en hel datamängd kan du begränsa sökningen till en omfångsbegränsad insikt om de data som används för att skapa en enskild instrumentpanelspanel. 
 
 1. Öppna en instrumentpanel.
-2. Hovra över en panel. Välj ellipsen (…) och sedan **Visa insikter**. Panelen öppnas i [Fokusläge](service-focus-mode.md) med detta insiktskort visat längst till höger.    
+2. Hovra över en panel. Välj **Fler alternativ** (...) och sedan **Visa insikter**. Panelen öppnas i [Fokusläge](service-focus-mode.md) med detta insiktskort visat längst till höger.    
    
     ![Fokusläge](media/service-insights/pbi-insights-tile.png)    
 3. Fångar ett insiktskort ditt intresse? Välj insiktskortet för att gå djupare. Vald insikt visas till vänster och nya insiktskort som endast baseras på data i denna enda insikt visas till höger.    

@@ -2,19 +2,18 @@
 title: Aviseringar om tjänstavbrott
 description: Lär dig mer om hur du tar emot e-postaviseringar när det uppstår avbrott eller försämring i Power BI-tjänsten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mblythe
-ms.openlocfilehash: 677e2b96da533b62cafc724a2f4498591d91057a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 90ab6c48465a9b7dc5eecca457953f77c727304c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073559"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872168"
 ---
 # <a name="service-interruption-notifications"></a>Aviseringar om tjänstavbrott
 
@@ -28,7 +27,7 @@ För tillfället skickar vi e-postmeddelanden för följande _tillförlitlighets
 - Tillförlitlighet för modelluppdatering
 - Tillförlitlighet för frågeuppdatering
 
-Exempel på dessa meddelanden är när användare upplever en utökad fördröjning i åtgärder såsom att öppna rapporter, uppdatera datamängder eller köra frågor. När en incident har lösts får du ett uppföljningsmeddelande via e-post.
+Meddelanden skickas när det uppstår _längre förseningar_ i åtgärder som att öppna rapporter, uppdatera datamängder eller köra frågor. När en incident har lösts får du ett uppföljningsmeddelande via e-post.
 
 > [!NOTE]
 > Den här funktionen är för närvarande endast tillgänglig för dedikerade kapaciteter i Power BI Premium. Den är inte tillgänglig för delad eller inbäddad kapacitet.
@@ -52,4 +51,4 @@ En Power BI-klientorganisationsadministratör aktiverar meddelanden i administra
 
 [Supportalternativ för Power BI Pro och Power BI Premium](service-support-options.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

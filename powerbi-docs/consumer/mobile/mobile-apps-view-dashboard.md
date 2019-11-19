@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b4c81e1c83ef53dcb16153b4e9996b259e9eb886
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654630"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059801"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
@@ -118,7 +118,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
 
     Om du är instrumentpanelens ägare i Power BI-tjänsten kan du [skapa en vy på instrumentpanelen för telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående läge. 
 
-1. På instrumentpanelen kan du trycka på lodrät ellips (...) bredvid namnet att bjuda in en kollega, uppdatera eller hämta information om instrumentpanelen:
+1. På instrumentpanelen kan du trycka på den lodräta knappen **Fler alternativ** (...) bredvid namnet för att bjuda in en kollega, uppdatera eller hämta information om instrumentpanelen:
    
    ![Ellips-menyn](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Svep uppåt och nedåt för att se alla [paneler på instrumentpanelen](mobile-tiles-in-the-mobile-apps.md). 
@@ -134,7 +134,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
    
    * Gula stjärnor ![Favoritstjärna](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) visar vilka instrumentpaneler som är Favoriter. 
    * Anteckningen under varje instrumentpanelsnamns (i det här fallet ”MBI”) ![Dataklassificering](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) visar hur data i varje instrumentpanel klassificeras. Läs mer om [dataklassificering i Power BI](../../service-data-classification.md).
-3. På instrumentpanelen kan du trycka på lodrät ellips (...) bredvid namnet att bjuda in en kollega, uppdatera eller hämta information om instrumentpanelen:
+3. På instrumentpanelen kan du trycka på den lodräta knappen **Fler alternativ** (...) bredvid namnet för att bjuda in en kollega, uppdatera eller hämta information om instrumentpanelen:
    
    ![Ellips-menyn](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Svep uppåt och nedåt för att se alla [paneler på instrumentpanelen](mobile-tiles-in-the-mobile-apps.md). 
@@ -156,6 +156,6 @@ Läs mer om [skapar en telefonvy av en instrumentpanel](../../service-create-das
 ## <a name="next-steps"></a>Nästa steg
 * [Hämta Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Google play  
 * [Kom igång med Android-appen för Power BI](mobile-android-app-get-started.md)  
-* [Vad är Power BI?](../../power-bi-overview.md)
+* [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 

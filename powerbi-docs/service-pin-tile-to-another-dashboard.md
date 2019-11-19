@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4fe3b56f1891423a80019186668dc55f361d580a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d4e9c095dc0114ec3b5fe2fdd6d52fd25aa76d97
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61225908"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020106"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fäst en panel från en instrumentpanel till en annan instrumentpanel
 Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) är genom att kopiera den från en annan instrumentpanel. Var och en av de här panelerna, när de klickas på, länkar tillbaka till där de skapades – antingen i frågor och svar eller i en rapport. 
@@ -26,7 +26,7 @@ Ett sätt att lägga till en ny [instrumentpanel](consumer/end-user-tiles.md) ä
 ## <a name="pin-a-tile-to-another-dashboard"></a>Fäst en panel till en annan instrumentpanel
 1. [Hämta data](service-get-data.md). Det här exemplet använder sig av [exemplet för IT-utgiftsanalys](sample-it-spend.md).
 2. Öppna en [instrumentpanel](consumer/end-user-dashboards.md).
-3. Hovra över den panel du vill fästa, välj ellipserna (...) och välj **Fäst panel**.  
+3. Hovra över den panel du vill fästa, välj **Fler alternativ** (...) och sedan **Fäst panel**.  
    
    ![ellipsmenyn](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
 4. Fäst panelen på en befintlig eller ny instrumentpanel. 

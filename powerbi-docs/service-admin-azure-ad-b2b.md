@@ -2,7 +2,6 @@
 title: Distribuera innehåll till externa gästanvändare med Azure Active Directory B2B
 description: Power BI kan integreras med Azure Active Directory Business-to-business (Azure AD B2B) för att tillåta säker distribution av Power BI-innehåll till gästanvändare utanför organisationen.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b7327a7b32aacd222efc422263187f29285bd73
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075760"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858016"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B
 
@@ -81,7 +80,7 @@ När du använder funktionen [Tillåt externa gästanvändare att redigera och h
 
 ### <a name="use-power-bi-premium"></a>Använda Power BI Premium
 
-Genom att tilldela apparbetsytan till [Power BI Premium-kapacitet](service-premium-what-is.md) kan gästanvändaren använda appen utan att behöva en Power BI Pro-licens. Power BI Premium kan även användas för appar för att dra nytta av andra funktioner som ökade uppdateringsintervall, dedikerad kapacitet och stora modellstorlekar.
+Genom att tilldela arbetsytan till en [Power BI Premium-kapacitet](service-premium-what-is.md) kan gästanvändaren använda appen utan att behöva någon Power BI Pro-licens. Power BI Premium kan även användas för appar för att dra nytta av andra funktioner som ökade uppdateringsintervall, dedikerad kapacitet och stora modellstorlekar.
 
 ![Diagram of guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -113,6 +112,8 @@ För att hjälpa användarna att logga in på Power BI kan du ange dem med klien
 
 * Som standard är externa Azure AD B2B-gäster begränsade till förbrukning av innehåll. Externa Azure AD B2B-gäster kan visa appar, instrumentpaneler, rapporter, exportera data och skapa e-postprenumerationer för instrumentpaneler och rapporter. De kan inte komma åt arbetsytor eller publicera sitt eget innehåll. Men dessa begränsningar gäller inte för gästanvändare som tillåts via funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization).
 
+* Du behöver en Power BI Pro-licens för att bjuda in gästanvändare. Pro Trial-användare kan inte bjuda in gästanvändare i Power BI.
+
 * För gästanvändare som aktiverats via funktionen [Tillåt externa gästanvändare att redigera och hantera innehåll i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) är vissa funktioner inte tillgängliga. För att uppdatera eller publicera rapporter måste de använda Power BI-tjänstens webbgränssnitt, inklusive Hämta data för att överföra Power BI Desktop-filer.  Följande upplevelser stöds inte:
     * Direktpublicering från Power BI Desktop till Power BI-tjänsten
     * Gästanvändare kan inte använda Power BI Desktop för att ansluta till tjänstdatauppsättningar i Power BI-tjänsten
@@ -127,7 +128,12 @@ För att hjälpa användarna att logga in på Power BI kan du ange dem med klien
     * Gästanvändare kan inte använda Analysera i Excel
     * Gästanvändare kan inte @mentioned i kommentarer
     * Gästanvändare kan inte använda prenumerationer
-    * Gästanvändare som använder den här funktionen ska ha ett arbets- eller skolkonto. Gästanvändare med personliga konton får mer begränsningar på grund av inloggningsbegränsningar.
+    * Gästanvändare som använder den här funktionen ska ha ett arbets- eller skolkonto. 
+    
+* Gästanvändare med personliga konton har fler begränsningar på grund av inloggningsbegränsningar.
+    * De kan använda miljön i Power BI-tjänsten via en webbläsare.
+    * De kan inte använda Power BI-mobilapparna.
+    * De kan inte logga in för att ange autentiseringsuppgifter där det krävs ett arbets- eller skolkonto.
 
 * Den här funktionen är inte tillgänglig med rapportwebbdelen för SharePoint Online i Power BI.
 

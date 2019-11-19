@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 59567b62c44a386b3890f68de49b9f7aed76aa45
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513842"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019356"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Självstudie: Skapa dina egna mått i Power BI Desktop
 Du kan skapa några av de mest kraftfulla lösningarna för analys i Power BI Desktop med hjälp av mått. Mått hjälper dig genom att utföra beräkningar på dina data medan du interagerar med dina rapporter. I den här självstudien får du hjälp att förstå mått och skapa dina egna grundmått i Power BI Desktop.
@@ -60,7 +60,7 @@ När du skapar egna mått, läggs de till i fältlistan för tabellen du väljer
 
 Du vill analysera nettoförsäljningen genom att subtrahera rabatter och avkastningar från de totala försäljningsbeloppen. För oavsett vilken kontext som finns i din visualisering, behöver du ett mått som subtraherar summan av DiscountAmount och ReturnAmount från summan av SalesAmount. Det finns inget fält för NetSales i fältlistan, men du har byggblock för att skapa egna mått för att beräkna nettoförsäljning. 
 
-1.  Högerklicka på tabellen **Sales** i fältkällan eller hovra över tabellen och välj ellipsen (...) **Fler alternativ** och välj sedan **Nytt mått**. Detta sparar ditt nya mått i försäljningstabellen, där det är lättare att hitta.
+1.  Högerklicka på tabellen **Sales** i fältkällan eller hovra över tabellen och välj **Fler alternativ** (...). Välj sedan **Nytt mått**. Detta sparar ditt nya mått i försäljningstabellen, där det är lättare att hitta.
     
     ![Nytt mått](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     

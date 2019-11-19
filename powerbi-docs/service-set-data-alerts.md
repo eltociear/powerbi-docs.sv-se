@@ -2,21 +2,20 @@
 title: Ange datavarningar i Power BI-tjänsten
 description: Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ändrats så att de överskrider de gränser du har angett i Microsoft Power BI-tjänsten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c87a54a0e991af3faa53b9ac4ac6c92893b2ed0a
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: e26b50d571cfffeae1c93f37e715eca24ff4f12e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962514"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871568"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Datavarningar i Power BI-tjänsten
 
@@ -24,7 +23,7 @@ Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ä
 
 Du kan konfigurera aviseringar på paneler om du har en Power BI Pro-licens. Du kan även konfigurera aviseringar om någon delar en instrumentpanel som finns i en [Premium](service-premium-what-is.md)-kapacitet. Aviseringar kan endast konfigureras på paneler som har fästs från visuella objekt i rapporter och endast på mätare, KPI:er och kort. Aviseringar kan konfigureras för visuella objekt som skapats från direktuppspelande datamängder som du fäster från en rapport på en instrumentpanel. Aviseringar kan inte konfigureras på direktuppspelande paneler som skapats direkt på instrumentpanelen med hjälp av **Lägg till panel** > **Anpassade direktuppspelande data**.
 
-Du kan endast se aviseringar som du anger, även om du delar din instrumentpanel. Datavarningar är helt synkroniserade på plattformar. Ställ in och visa datavarningar [i Power BI-appar](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) och i Power BI-tjänsten. De är inte tillgängliga för Power BI Desktop. Du kan till och med automatisera och integrera aviseringar med Microsoft Flow. Du kan prova själv i den här artikeln om [Microsoft Flow och Power BI](service-flow-integration.md).
+Du kan endast se aviseringar som du anger, även om du delar din instrumentpanel. Inte ens instrumentpanelens ägare kan se de aviseringar du anger i din vy av instrumentpanelen. Datavarningar är helt synkroniserade på plattformar. Ställ in och visa datavarningar [i Power BI-appar](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) och i Power BI-tjänsten. De är inte tillgängliga för Power BI Desktop. Du kan till och med automatisera och integrera aviseringar med Microsoft Flow. Du kan prova själv i den här artikeln om [Microsoft Flow och Power BI](service-flow-integration.md).
 
 ![paneler](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -116,15 +115,13 @@ Det finns många sätt att hantera dina aviseringar:
 
 1. Härifrån kan du aktivera och inaktivera aviseringar, öppna fönstret **Hantera aviseringar** för att ändra eller ta bort aviseringen.
 
-## <a name="tips-and-troubleshooting"></a>Tips och felsökning
+## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
 
 * Aviseringar stöds inte för kortpaneler med datum-/tidsmått.
-
 * Aviseringar fungerar bara med numeriska datatyper.
-
 * Aviseringar fungerar endast på uppdaterade data. De fungerar inte på statiska data.
-
 * Aviseringar fungerar endast på direktuppspelade datamängder om du bygger ett visuellt objekt för KPI, kort eller mätare och sedan fäster det visuella objektet på instrumentpanelen.
+
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -132,6 +129,6 @@ Det finns många sätt att hantera dina aviseringar:
 
 * [Konfigurera datavarningar på din mobila enhet](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-* [Vad är Power BI?](power-bi-overview.md)
+* [Vad är Power BI?](fundamentals/power-bi-overview.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

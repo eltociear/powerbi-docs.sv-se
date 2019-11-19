@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523066"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432197"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Skapa en rapport i Power BI-tjänsten genom att importera en datamängd
 Du har läst [Rapporter i Power BI](consumer/end-user-reports.md) och nu vill du skapa en egen. Det finns olika sätt att skapa en rapport. I den här artikeln börjar vi med att skapa en grundläggande rapport i Power BI-tjänsten från en Excel-datamängd. När du förstår grunderna för att skapa en rapport kan du gå igenom [Nästa steg](#next-steps) längst ned för att få mer avancerade rapportämnen.  
@@ -29,7 +29,7 @@ Den här metoden för att skapa en rapport som börjar med en datauppsättning o
 
 1. Vi kommer att skapa rapporten på en arbetsyta för Power BI-tjänsten, så välj en befintlig arbetsyta eller skapa en.
    
-   ![lista över apparbetsytor](media/service-report-create-new/power-bi-workspaces2.png)
+   ![lista med arbetsytor](media/service-report-create-new/power-bi-workspaces2.png)
 2. Längst ned till vänster i navigeringsfönstret väljer du **Hämta data**.
    
    ![Hämta data](media/service-report-create-new/power-bi-get-data3.png)

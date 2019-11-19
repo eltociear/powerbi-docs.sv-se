@@ -3,18 +3,17 @@ title: Inbäddade datakällor för sidnumrerade rapporter i Power BI-tjänsten
 description: I den här artikeln får du lära dig att skapa och ändra en inbäddad datakälla i en sidnumrerad rapport i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d7a170cad376c3ec9fd3ca8ca7d2c8d2d8ac0223
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020799"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875316"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Skapa en inbäddad datakälla för sidnumrerade rapporter i Power BI-tjänsten
 
@@ -72,7 +71,7 @@ Mer information finns i [Rapportdata i Power BI Report Builder](report-builder-d
 
 Sidnumrerade rapporter som ansluter till Power BI-datamängder följer reglerna för delade datamängder i Power BI med några mindre ändringar.  För att användare korrekt ska kunna visa sidnumrerade rapporter med Power BI-datamängder, och för att säkerställa att säkerhet på radnivå (RLS) är aktiverat och infört för dina visningsprogram, ska du vara noga med att följa dessa regler:
 
-### <a name="classic-apps-and-app-workspaces"></a>Klassiska appar och apparbetsytor
+### <a name="classic-apps-and-workspaces"></a>Klassiska appar och arbetsytor
 
 - .rdl i samma arbetsyta som datamängd (samma ägare): Stöds
 - .rdl i annan arbetsyta än datamängd (samma ägare): Stöds
@@ -82,7 +81,7 @@ Sidnumrerade rapporter som ansluter till Power BI-datamängder följer reglerna 
 - .rdl i en annan arbetsyta än datauppsättningen (annan användare): du behöver skapa-behörighet tilldelad varje användare som visar rapporten på datauppsättningsnivå
 - Säkerhet på rollnivå: Du behöver skapa-behörighet tilldelad för varje användare som visar rapporten på datauppsättningsnivå för att det ska framtvingas.
 
-### <a name="new-experience-apps-and-app-workspaces"></a>Nya upplevelseappar och apparbetsytor
+### <a name="new-experience-apps-and-workspaces"></a>Nya appar och arbetsytor
 
 - .rdl i samma arbetsyta som datamängd: Stöds
 - .rdl i annan arbetsyta än datamängd (samma ägare): Stöds

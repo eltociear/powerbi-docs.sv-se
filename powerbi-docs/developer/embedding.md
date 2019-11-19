@@ -3,7 +3,6 @@ title: Inbäddade analyser med Power BI
 description: Power BI erbjuder API:er för att använda inbäddade analyser till dina instrumentpaneler och rapporter i program. Lär dig mer om inbäddning med Power BI både i en PaaS-miljö och en SaaS-miljö genom att använda programvara för inbäddad analys, inbäddade analysverktyg eller inbäddade Business Intelligence-verktyg.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: ccd5917b91d9dd0576f0f4607f84f849f6df145d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391515"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875781"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Inbäddade analyser med Power BI
 
-Power BI-tjänsten (SaaS) och Power BI Embedded-tjänsten i Azure (PaaS) har API:er för inbäddning av dina instrumentpaneler och rapporter. Vid inbäddning av innehåll ger detta dig åtkomst till de senaste Power BI-funktionerna såsom instrumentpaneler, gatewayer och apparbetsytor.
+Power BI-tjänsten (SaaS) och Power BI Embedded-tjänsten i Azure (PaaS) har API:er för inbäddning av dina instrumentpaneler och rapporter. När du bäddar in innehåll får du tillgång till de senaste Power BI-funktionerna som instrumentpaneler, gatewayer och arbetsytor.
 
 Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup) kommer du snabbt igång och kan ladda ned ett exempelprogram.
 
@@ -85,7 +84,7 @@ Utvecklare som använder Power BI Embedded kan ägna sig åt att bygga upp progr
 > [!IMPORTANT]
 > Inbäddning kräver Power BI-tjänsten, men dina kunder behöver inte ha ett Power BI-konto för att se programmets inbäddade innehåll. 
 
-När du är redo att flytta till produktion, måste din apparbetsyta tilldelas till en dedikerad kapacitet. Power BI Embedded i Microsoft Azure erbjuder [dedikerade kapaciteter](azure-pbie-create-capacity.md) att använda med dina program.
+När du är redo att flytta till produktion måste arbetsytan tilldelas till en dedikerad kapacitet. Power BI Embedded i Microsoft Azure erbjuder [dedikerade kapaciteter](azure-pbie-create-capacity.md) att använda med dina program.
 
 Information om inbäddning finns i [Så här bäddar du in Power BI-innehåll](embed-sample-for-customers.md).
 
@@ -102,4 +101,4 @@ Du kan nu försöka att bädda in Power BI-innehåll i ett program eller försö
 > [!div class="nextstepaction"]
 >[Bädda in för dina kunder](embed-sample-for-customers.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

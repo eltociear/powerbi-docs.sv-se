@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 92cd402c394fc2f03a9bba3149260c022116e9d7
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514544"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017807"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Självstudie: Skapa beräknade kolumner i Power BI Desktop
 
@@ -36,7 +36,7 @@ I din försäljningsrapport vill du visa produktkategorier och underkategorier s
 
  ![Kolumner i fältlistan](media/desktop-tutorial-create-calculated-columns/create1.png)
 
-1.  Välj elipsen (...) **Fler alternativ** eller högerklicka på tabellen **ProductSubcategory** i fältlistan och välj sedan **Ny kolumn**. Detta skapar en ny kolumn i tabellen ProductSubcategory.
+1.  Välj **Fler alternativ** (...) eller högerklicka på tabellen **ProductSubcategory** i fältlistan och välj **Ny kolumn**. Detta skapar en ny kolumn i tabellen ProductSubcategory.
     
     ![Ny kolumn](media/desktop-tutorial-create-calculated-columns/create2.png)
     

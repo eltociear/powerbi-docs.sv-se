@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: de72cab51a4d43d1a07d6ada0bd77888952817ab
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020475"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429820"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Ansluta till datauppsättningar i Power BI-tjänsten från Power BI Desktop
 Du kan upprätta en live-anslutning till en delad datauppsättning i Power BI-tjänsten och skapa olika rapporter från samma datauppsättning. Det här innebär att du kan skapa den perfekta datamodellen i Power BI Desktop och publicera den till Power BI-tjänsten. Sedan kan du och andra skapa flera olika rapporter (i separata .pbix-filer) från samma, gemensamma datamodell och spara dem på olika arbetsytor. Den här funktionen kallas **Live-anslutning till Power BI-tjänst**.
@@ -37,7 +37,7 @@ Alla gillar Annas rapport och datamängd, och det är där det skulle kunna bli 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Ansluta till en Power BI-tjänsts datauppsättning med hjälp av en live-anslutning
 Anna skapar en rapport (samt den datamängd som rapporten baseras på) och publicerar den till **Power BI-tjänsten**. Den visas på teamets arbetsyta i Power BI-tjänsten. Om Anna sparar den på en *arbetsyta med den nya upplevelsen* kan hon ange skapa-behörigheter så att den blir tillgänglig för alla både inom och utanför arbetsytan.
 
-Mer information om de nya upplevelsearbetsytorna finns i avsnittet om [apparbetsytor](service-new-workspaces.md).
+Mer information om de nya upplevelsearbetsytorna finns i avsnittet om [arbetsytor](service-new-workspaces.md).
 
 Andra medlemmar både inom och utanför Annas arbetsyta kan nu upprätta en live-anslutning till Annas delade datamodell (med hjälp av **live-anslutning för Power BI-tjänsten**) och skapa egna unika rapporter från *den ursprungliga datamängden* på *en egen arbetsyta med den nya upplevelsen*.
 

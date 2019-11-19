@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 584dacbb3823f1a7c2475c780124985992a4b1d4
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: b1792abeed1a4a03cb8e3f49acb4ed8aa53b1be0
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375159"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020502"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Aktivera Cortana för åtkomst till Power BI-rapporter (och deras underliggande datauppsättningar)
 Förmodligen har du läst artikeln [Introduktion till Cortana och Power BI](service-cortana-intro.md) redan. Om du inte har gjort det, så läs den först, och kom sedan tillbaka hit. Och nu kan du prova själv.  Innan du kan ställa frågor på naturligt språk i Cortana och få svar från data som lagras i Power BI-***rapporter***, så måste vissa krav uppfyllas. Du måste i synnerhet göra följande.
 
 > [!IMPORTANT]
-> Cortana-integrering är inaktuell i Power BI. Startar den 11 juni, fungerar Cortana inte längre för alla instrumentpaneler och rapporter.
+> Cortana-integrering blir inaktuell i Power BI. Från och med 11 juni kommer Cortana inte längre att fungera för instrumentpaneler och rapporter.
 
 I Power BI-tjänsten
 
@@ -42,7 +42,7 @@ Du måste logga in på Power BI-tjänsten (inte Power BI Desktop) och upprepa de
 2. Den datauppsättning som är associerad med den här rapporten är **Contoso Sales**.
    
     ![Datauppsättningen Contoso Sales](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Till höger om datauppsättningsnamnet väljer du **ellipserna (...) > Inställningar**.  
+3. Till höger om datauppsättningsnamnet väljer du **Fler alternativ** (...) > Inställningar**.  
    
     ![Välj Inställningar](media/service-cortana-enable/power-bi-settings-cortana.png)
 4. Välj **Frågor och svar och Cortana** > **Ge Cortana åtkomst till den här datauppsättningen** > **Tillämpa**.

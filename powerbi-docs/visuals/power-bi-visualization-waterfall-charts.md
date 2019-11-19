@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3ab200194d89eb15892dc4f452079eb56df8a608
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: c4def89d7c91186295e4f2b3f07769792a8892e8
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71191511"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017778"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vattenfallsdiagram i Power BI
 
@@ -24,7 +24,7 @@ ms.locfileid: "71191511"
 
 Vattenfallsdiagram visar löpande summa efter hand som Power BI adderar eller subtraherar värden. Det är användbara för att förstå hur ett startvärde (som nettointäkter) påverkas av en serie positiva eller negativa förändringar.
 
-Kolumnerna är färgkodade så att du snabbt kan se ökningar och minskningar. Kolumnerna med start- och slutvärde [startar ofta på den horisontella axeln](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "startar ofta på den horisontella axeln"), medan de mellanliggande värdena är flytande kolumner. På grund av det här utseendet kallas också vattenfallsdiagram ibland för brodiagram.
+Kolumnerna är färgkodade så att du snabbt kan se ökningar och minskningar. Kolumnerna med start- och slutvärde [startar ofta på den vågräta axeln](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "börja på den vågräta axeln"), medan de mellanliggande värdena är flytande kolumner. På grund av det här utseendet kallas också vattenfallsdiagram ibland för brodiagram.
 
    > [!NOTE]
    > Den här videon använder en äldre version av Power BI Desktop.
@@ -76,7 +76,7 @@ Du ska skapa ett vattenfallsdiagram som visar försäljningsvarians (uppskattad 
 
     ![vattenfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 
-1. Kontrollera att Power BI sorterade vattenfallsdiagrammet kronologiskt. Välj ellipsen (...) i det övre högra hörnet i diagrammet.
+1. Kontrollera att Power BI sorterade vattenfallsdiagrammet kronologiskt. Välj **Fler alternativ** (...) uppe till höger i diagrammet.
 
     I det här exemplet väljer vi **Sortera stigande**
 

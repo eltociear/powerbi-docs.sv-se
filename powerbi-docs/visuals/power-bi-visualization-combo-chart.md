@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 527334d2772dbe20f7f78929231cca9faf036e95
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194969"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017751"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 
@@ -67,7 +67,7 @@ Se hur Will skapar ett kombinationsdiagram med exemplet på försäljning och ma
     c. Välj **Tid**\>**FiscalMonth (Räkenskapsmånad)** och lägg till det i området **Axel**.
 
     ![självstudieexempel på kombinationsdiagram](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Välj ellipserna (...) i det övre högra hörnet av visualiseringen och välj **Sort by FiscalMonth (Sortera efter räkenskapsmånad)** . Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** . I det här exemplet väljer vi **Sortera stigande**.
+5. Välj **Fler alternativ** uppe till höger i visualiseringen och välj **Sortera efter > FiscalMonth** (Räkenskapsmånad). Om du vill ändra sorteringsordningen väljer du ellipsen igen och väljer antingen **Sort ascending (Sortera stigande)** eller **Sort descending (Sortera fallande)** . I det här exemplet väljer vi **Sortera stigande**.
 
 6. Konvertera stapeldiagrammet till ett kombinationsdiagram. Det finns två kombinationsdiagram: **Linjediagram och stående stapeldiagram** samt **Linjediagram och grupperat stående stapeldiagram**. Välj **Linje- och grupperat stapeldiagram** i fönstret **Visualiseringar** med stapeldiagrammet markerat.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 836dfcc0569c906b145df3e3f3d14f03c08d4938
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195411"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432154"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Skapa en mallapp i Power BI
 
@@ -33,19 +33,19 @@ Här följer kraven för att skapa en mallapp:
 - Kunskap om [grundläggande begrepp i Power BI](service-basic-concepts.md)
 - Behörighet för att dela en mallapp offentligt. Se [mallappinställningarna i Power BI-administratörsportalen](service-admin-portal.md#template-apps-settings) för mer information.
 
-## <a name="create-the-template-app-workspace"></a>Skapa en arbetsyta för mallappen
+## <a name="create-the-template-workspace"></a>Skapa mallarbetsytan
 
-För att kunna skapa en mallapp som du kan distribuera till andra Power BI-klientorganisationer måste du skapa den i de nya apparbetsytorna.
+När du ska skapa en mallapp som du kan distribuera till andra klientorganisationer i Power BI måste du skapa den i en av de nya arbetsytorna.
 
-1. Välj **Arbetsytor** > **Skapa app-arbetsyta** i Power BI-tjänsten.
+1. Välj **Arbetsytor** > **Skapa arbetsyta** i Power BI-tjänsten.
 
-    ![Skapa en apparbetsyta](media/service-template-apps-create/power-bi-new-workspace.png)
+    ![Skapa arbetsyta](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. I **Skapa en apparbetsyta** väljer du **Uppgradera till ny**.
+2. I **Skapa en arbetsyta** väljer du **Uppgradera till ny**.
 
     ![Prova nya arbetsytor](media/service-template-apps-create/power-bi-upgrade-new.png)
 
-3. Ange ett namn, en beskrivning (valfritt) och en logotypbild (valfritt) för din apparbetsyta.
+3. Ange ett namn, en beskrivning (valfritt) och en logotypbild (valfritt) för arbetsytan.
 
 4. Expandera avsnittet **Avancerat** och välj **Utveckla en mallapp**.
 
@@ -57,9 +57,9 @@ För att kunna skapa en mallapp som du kan distribuera till andra Power BI-klien
 
 ## <a name="create-the-content-in-your-template-app"></a>Skapa innehållet i din mallapp
 
-Som med en vanlig Power BI-apparbetsyta är nästa steg att skapa innehållet på arbetsytan.  
+Precis som med en vanlig Power BI-arbetsyta är nästa steg att skapa innehållet på arbetsytan.  
 
-- [Skapa ditt Power BI-innehåll](power-bi-creator-landing.md) på apparbetsytan.
+- [Skapa ditt Power BI-innehåll](power-bi-creator-landing.md) på arbetsytan.
 
 Om du använder parametrar i Power Query måste du se till att de har korrekt definierad typ (till exempel Text). Typerna Any och Binary stöds inte.
 
@@ -69,7 +69,7 @@ I [Tips för att skapa mallappar i Power BI](service-template-apps-tips.md) finn
 
 Nu när du har innehåll på arbetsytan är du redo att paketera det i en mallapp. Det första steget är att skapa en testmallapp som endast är tillgänglig inom din organisation i din klientorganisation.
 
-1. Välj **Skapa app** på arbetsytan för mallappen.
+1. Välj **Skapa app** på mallarbetsytan.
 
     ![Skapa app](media/service-template-apps-create/power-bi-create-app.png)
 
@@ -133,7 +133,7 @@ Webbadressen ändras inte när du växlar mellan olika versionssteg. Upphöjning
 
 Lås oss gå igenom de olika stegen:
 
-1. Välj **Versionshantering** i arbetsytan för mallappen.
+1. Välj **Versionshantering** i mallarbetsytan.
 
     ![Versionshanteringsikon](media/service-template-apps-create/power-bi-release-management-icon.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 2fdc893ac8545df8fc64f45959a418018a189c84
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020156"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020453"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Skapa de nya arbetsytorna i Power BI
 
@@ -74,7 +74,7 @@ Du kan ange vilka användare som ska informeras om problem som uppstår i arbets
 
     I fönstret **Skapa en arbetsyta** första gången du skapar den.
 
-    I det vänstra navigeringsfönstret väljer du pilen intill **Arbetsytor**, välj ellipsen (…) intill namnet på din arbetsyta > **Inställningar för arbetsytan**. Fönstret **Inställningar** öppnas.
+    Välj pilen bredvid **Arbetsytor** i den vänstra navigeringsrutan, välj **Fler alternativ** (…) intill namnet på arbetsytan > **Inställningar för arbetsytan**. Fönstret **Inställningar** öppnas.
 
     ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +94,7 @@ Power BI synkroniserar inte behörigheter för användare eller grupper, som är
 
     I fönstret **Skapa en arbetsyta** första gången du skapar den.
 
-    I det vänstra navigeringsfönstret väljer du pilen intill **Arbetsytor**, välj ellipsen (…) intill namnet på din arbetsyta > **Inställningar för arbetsytan**. Fönstret **Inställningar** öppnas.
+    Välj pilen bredvid **Arbetsytor** i den vänstra navigeringsrutan, välj **Fler alternativ** (…) intill namnet på arbetsytan > **Inställningar för arbetsytan**. Fönstret **Inställningar** öppnas.
 
     ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 

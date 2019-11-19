@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: e7a9b4da760f02672f51aa7ace0f3bb19c501834
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8a5b04c5b3325a9fd4d3bb11aa1943e62cf2c90c
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770127"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021462"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Hantera innehåll i webbportalen 
 Webbportalen för Power BI-rapportserver är en lokal plats för att visa, lagra och hantera dina Power BI, mobila och sidnumrerade rapporter och KPI:er.
@@ -56,7 +56,7 @@ Webbportalen är ett program som körs i en webbläsare. När du startar webbpor
 ## <a name="manage-items-in-the-web-portal"></a>Hantera objekt i webbportalen
 Power BI-rapportserver ger dig detaljerad kontroll över de objekt som du lagrar på webbportalen. Du kan till exempel konfigurera prenumerationer, cachelagring, ögonblicksbilder och säkerhet för individuella sidnumrerade rapporter.
 
-1. Välj ellipsen (...) i det övre högra hörnet av ett objekt och välj sedan **Hantera**.
+1. Välj **Fler alternativ** (...) uppe till höger av ett objekt och sedan **Hantera**.
    
     ![Välj hantera](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. Välj egenskapen eller den andra funktionen du vill ange.

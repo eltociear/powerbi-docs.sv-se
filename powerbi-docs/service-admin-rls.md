@@ -2,7 +2,6 @@
 title: Säkerhet på radnivå (RLS) med Power BI
 description: Så här konfigurerar du säkerhet på radnivå för importerade datauppsättningar och DirectQuery i Power BI-tjänsten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.author: mblythe
 ms.date: 09/09/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 04a8c8a08d885427e9de43b719674fce4ac2ebbd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6ce3a65489c60cabb1dd705ce3243c4cec6abe40
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074864"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873517"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Säkerhet på radnivå (RLS) med Power BI
 
@@ -28,7 +27,7 @@ Du kan konfigurera RLS för datamodeller som importerats till Power BI med Power
 
 Som standard använder säkerhetsfiltrering på radnivå sig av enkelriktade filter, oavsett om relationerna är inställda på enkelriktade eller dubbelriktade. Du kan aktivera dubbelriktad korsfiltrering med säkerhet på radnivå manuellt genom att markera relationen och markera kryssrutan **Tillämpa säkerhetsfilter i båda riktningarna**. Du bör markera den här rutan när du även har implementerat dynamisk säkerhet på radnivå på servernivån, där säkerhet på radnivå baseras på användarnamn eller inloggnings-ID.
 
-Mer information finns i [dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](desktop-bidirectional-filtering.md) och den tekniska artikeln [skydda Tabular BI-Semantikmodellen](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
+Mer information finns i [dubbelriktad korsfiltrering med DirectQuery i Power BI Desktop](desktop-bidirectional-filtering.md) och den tekniska artikeln [skydda Tabular BI-Semantikmodellen](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ![Använd säkerhetsfilter](media/service-admin-rls/rls-apply-security-filter.png)
 
@@ -70,7 +69,7 @@ Du kan ta bort medlemmar genom att välja X bredvid deras namn.
 
 Du kan validera att den roll som du har definierat fungerar genom att testa rollen. 
 
-1. Välj **ellipsen (...)**  bredvid rollen.
+1. Välj **Fler alternativ** (...) bredvid rollen.
 2. Välj **testa data som roll**
 
 ![Testa som roll](media/service-admin-rls/rls-test-role.png)
@@ -89,12 +88,12 @@ Om du vill återgå till normal visning, väljer du **tillbaka till säkerhet p�
 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
-## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Använd RLS med apparbetsytor i Power BI
+## <a name="using-rls-with-workspaces-in-power-bi"></a>Använda RLS med arbetsytor i Power BI
 
-Om du publicerar din Power BI Desktop-rapport till en apparbetsyta i Power BI-tjänsten, används rollerna till skrivskyddade medlemmar. Du behöver indikera att medlemmar bara kan se Power BI-innehåll i inställningarna för apparbetsytan.
+Om du publicerar din Power BI Desktop-rapport till en arbetsyta i Power BI-tjänsten används rollerna för skrivskyddade medlemmar. Du måste ange att medlemmar bara ska kunna visa Power BI-innehållet i inställningarna för arbetsytan.
 
 > [!WARNING]
-> Om du har konfigurerat apparbetsytan så att medlemmar har redigeringsbehörighet, tillämpas inte RLS-roller för dem. Användare kommer att kunna se alla data.
+> Om du har konfigurerat arbetsytan så att medlemmar har redigeringsbehörighet så används inte RLS-rollerna för dem. Användare kommer att kunna se alla data.
 
 ![Gruppinställningar](media/service-admin-rls/rls-group-settings.png)
 
@@ -105,4 +104,4 @@ Om du publicerar din Power BI Desktop-rapport till en apparbetsyta i Power BI-tj
 ## <a name="next-steps"></a>Nästa steg
 [Sälkerhet på radnivå (RLS) med Power BI Desktop](desktop-rls.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

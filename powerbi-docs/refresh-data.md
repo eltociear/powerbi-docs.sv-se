@@ -2,7 +2,6 @@
 title: Datauppdatering i Power BI
 description: Den här artikeln beskriver datauppdateringsfunktionerna i Power BI och deras beroenden på en konceptuell nivå.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307942"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860796"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -93,14 +92,14 @@ En Power BI-uppdatering kan bestå av flera uppdateringstyper, till exempel data
 
 #### <a name="data-refresh"></a>Datauppdatering
 
-För Power BI-användare innebär uppdatering av data normalt att importera data från de ursprungliga datakällorna till en datauppsättning, antingen utifrån ett uppdateringsschema eller på begäran. Du kan utföra flera datauppsättningsuppdateringar dagligen, vilket kan vara nödvändigt om de underliggande källdata ändras ofta. Power BI begränsar datauppsättningar på delad kapacitet till åtta dagliga uppdateringar. Om datauppsättningen finns på en Premium-kapacitet kan du utföra upp till 48 uppdateringar per dag. Mer information finns i Konfigurera schemalagd uppdatering senare i den här artikeln.
+För Power BI-användare innebär uppdatering av data normalt att importera data från de ursprungliga datakällorna till en datauppsättning, antingen utifrån ett uppdateringsschema eller på begäran. Du kan utföra flera datauppsättningsuppdateringar dagligen, vilket kan vara nödvändigt om de underliggande källdata ändras ofta. Power BI begränsar datauppsättningar på delad kapacitet till åtta dagliga uppdateringar. Om datauppsättningen ligger i en Premium-kapacitet kan du schemalägga upp till 48 uppdateringar per dag i inställningarna för datamängden. Mer information finns i Konfigurera schemalagd uppdatering senare i den här artikeln.
 
-Det är också viktigt att påpeka att begränsningen för dagliga uppdateringar gäller för både schemalagda uppdateringar och uppdateringar på begäran tillsammans. Du kan utlösa en på begäran-uppdatering genom att välja **Uppdatera nu** i datauppsättningens meny, som följande skärmbild visar. Du kan även utlösa en datauppdatering programmässigt med hjälp av Power BI REST API:et. Se [Datauppsättningar – Uppdatera datauppsättning](/rest/api/power-bi/datasets/refreshdataset) om du är intresserad av att bygga en egen uppdateringslösning.
+Det är också viktigt att påpeka att begränsningen för dagliga uppdateringar i delade kapaciteter gäller för antalet schemalagda uppdateringar och API-uppdateringar tillsammans. Du kan också utlösa en uppdatering på begäran genom att välja **Uppdatera nu** i datamängdens meny, som i den här bilden. Uppdateringar på begäran räknas inte mot uppdateringsgränsen. Observera också att datamängder i Premium-kapaciteter inte har några begränsningar för API-uppdateringar. Om du vill skapa en egen uppdateringsläsning via REST-API:et för Power BI ska du läsa [Datamängder – Uppdatera datamängd](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Uppdatera nu](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Datauppdateringar måste slutföras inom mindre än 2 timmar. Om datauppsättningarna kräver längre uppdateringsåtgärder kan du flytta datauppsättningen till en Premium-kapacitet. På Premium är den maximala uppdateringsvaraktigheten 5 timmar.
+> Datauppdateringar måste slutföras inom 2 timmar i delade kapaciteter. Om datauppsättningarna kräver längre uppdateringsåtgärder kan du flytta datauppsättningen till en Premium-kapacitet. På Premium är den maximala uppdateringsvaraktigheten 5 timmar.
 
 #### <a name="onedrive-refresh"></a>OneDrive-uppdatering
 
@@ -134,7 +133,7 @@ Men efter en datauppdatering är tidigare cachelagrade frågeresultat inte läng
 
 #### <a name="tile-refresh"></a>Paneluppdatering
 
-Power BI har ett cacheminne för varje visuellt panelobjekt på dina instrumentpaneler och uppdaterar proaktivt panelcacheminnen när data ändras. Med andra ord sker paneluppdateringen automatiskt efter en datauppdatering. Det här gäller för både schemalagda uppdateringar och på begäran-uppdateringar. Du kan också tvinga fram en uppdatering av panelen genom att välja ellipsen (...) i det övre högra hörnet på en instrumentpanel och välja **Uppdatera instrumentpanel**.
+Power BI har ett cacheminne för varje visuellt panelobjekt på dina instrumentpaneler och uppdaterar proaktivt panelcacheminnen när data ändras. Med andra ord sker paneluppdateringen automatiskt efter en datauppdatering. Det här gäller för både schemalagda uppdateringar och på begäran-uppdateringar. Du kan också tvinga fram en uppdatering av panelen genom att välja **Fler alternativ** (...) uppe till höger på instrumentpanelen och välja **Uppdatera instrumentpanel**.
 
 ![Uppdatera panelerna på instrumentpanelen](media/refresh-data/refresh-dashboard-tiles.png)
 
@@ -277,7 +276,7 @@ Du definierar frekvens och tidpunkter för att uppdatera en datauppsättning i a
 
 ![Konfigurera schemalagd uppdatering](media/refresh-data/configure-scheduled-refresh.png)
 
-När du har konfigurerat ett uppdateringsschema informeras du av inställningssidan för datauppsättningen om nästa uppdateringstid, som på skärmbilden ovan. Om du vill uppdatera data tidigare, till exempel testa din gateway och datakällskonfiguration, utför du en på begäran-uppdatering med hjälp av alternativet **Uppdatera nu** på datauppsättningsmenyn i det vänstra navigeringsfönstret. På begäran-uppdateringar påverkar inte nästa schemalagda uppdateringstid men de räknas mot den dagliga uppdateringsgränsen, enligt beskrivningen tidigare i den här artikeln.
+När du har konfigurerat ett uppdateringsschema informeras du av inställningssidan för datauppsättningen om nästa uppdateringstid, som på skärmbilden ovan. Om du vill uppdatera datan tidigare, till exempel för att testa din gateway och konfigurationen av datakällan, utför du en uppdatering på begäran med alternativet **Uppdatera nu** i datamängdsmenyn i navigeringsfönstret. På begäran-uppdateringar påverkar inte nästa schemalagda uppdateringstid men de räknas mot den dagliga uppdateringsgränsen, enligt beskrivningen tidigare i den här artikeln.
 
 Observera också att den konfigurerade uppdateringstiden kanske inte är en exakt tid när Power BI startar nästa schemalagda process. Power BI startar schemalagda uppdateringar efter bästa förmåga. Målet är att starta uppdateringen inom 15 minuter efter den schemalagda tiden men en fördröjning på upp till en timme kan förekomma om tjänsten inte kan allokera de nödvändiga resurserna snabbare.
 
@@ -339,4 +338,4 @@ Dessutom kan du överväga följande rekommendationer för att upprätta och upp
 [Verktyg vid felsökning av uppdateringsproblem](service-gateway-onprem-tshoot.md)  
 [Felsökning av uppdateringsscenarier](refresh-troubleshooting-refresh-scenarios.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c039f4adc196e619dc81af38fb52cd07e89992f0
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 639ea11eca69eea53968ed702e0524f46a97cdc4
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161188"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72775984"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Power BI-visualiseringar
@@ -146,6 +146,14 @@ Mer information finns i [Matrix visuals in Power BI](desktop-matrix-visual.md) (
 
 >[!TIP]
 >Cirkeldiagram visar relationen mellan delar och en helhet. 
+
+### <a name="qa-visual"></a>Visuella frågor och svar
+![Visuella frågor och svar](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
+
+>[!TIP]
+>Precis som med [Frågor och svar på instrumentpaneler](../power-bi-tutorial-q-and-a.md) så kan du använda Visuella frågor och svar till att ställa frågor om dina data på naturligt språk. 
+
+Mer information finns i [Visuella frågor och svar i Power BI](power-bi-visualization-q-and-a.md).
 
 ### <a name="r-script-visuals"></a>R-skriptbilder
 ![R-visualiseringar](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)

@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 15c16e2e065148666eee6c67a511c5e412bc334e
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 9c35d74249516b25a756a8a90ce666092e585a72
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237401"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431083"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
@@ -45,7 +45,7 @@ Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto]
 
 Innan du börjar bädda in rapporter, en instrumentpanel eller paneler i din app måste du se till att det går att bädda in Power BI i din miljö.
 
-Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport. Om du bäddar in sidnumrerad rapport måste du tilldela minst P1-kapacitet till den apparbetsyta som du har skapat.
+Med [konfigurationsverktyget för inbäddning](https://aka.ms/embedsetup/UserOwnsData) kommer du snabbt igång och kan ladda ned ett exempelprogram som steg för steg beskriver hur du skapar en miljö och bäddar in en rapport. Om du bäddar in en sidnumrerad rapport måste du tilldela minst P1-kapacitet till den arbetsyta du har skapat.
 
 Om du väljer att konfigurera miljön manuellt kan du fortsätta nedan.
 
@@ -57,13 +57,13 @@ Du behöver fortsätta med att registrera en **webbapp för serversidan**-app. D
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
 
-### <a name="create-an-app-workspace"></a>Skapa en apparbetsyta
+### <a name="create-a-workspace"></a>Skapa en arbetsyta
 
-Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en apparbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md).
+Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Skapa och publicera Power BI-rapporter
 
-Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. Därefter kan du publicera dessa rapporter till en apparbetsyta. Slutanvändaren som publicerar rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
+Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. Sedan kan du publicera rapporterna till en arbetsyta. Slutanvändaren som publicerar rapporterna måste ha en Power BI Pro-licens för att publicera till arbetsytan.
 
 1. Ladda ner exemplet [Demo](https://github.com/Microsoft/powerbi-desktop-samples) från GitHub.
 
@@ -73,7 +73,7 @@ Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. D�
 
    ![Power BI Desktop-exempelrapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-027.png)
 
-3. Publicera till apparbetsytan.
+3. Publicera till arbetsytan.
 
    ![Publicera en Power BI Desktop-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-028.png)
 
@@ -83,7 +83,7 @@ Du kan skapa rapporter och datauppsättningar med hjälp av Power BI Desktop. D�
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Skapa och publicera sidnumrerade rapporter
 
-Du kan skapa dina sidnumrerade rapporter med hjälp av [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sedan kan du [ladda upp rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) till en apparbetsyta som har tilldelats till minst en P1-kapacitet. Slutanvändaren som laddar upp rapporterna måste ha en Power BI Pro-licens för att kunna publicera till en apparbetsyta.
+Du kan skapa dina sidnumrerade rapporter med hjälp av [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Sedan kan du [ladda upp rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) till en arbetsyta som har tilldelats till minst P1-kapacitet. Slutanvändaren som laddar upp rapporterna måste ha en Power BI Pro-licens för att publicera till arbetsytan.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Bädda in innehåll med exempelprogrammet
 
@@ -130,7 +130,7 @@ Så här hämtar du **applicationId**:
 
 ### <a name="workspace-id"></a>ID för arbetsyta
 
-Fyll i **workspaceId** med (grupp-)GUID för apparbetsytan från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
+Fyll i **workspaceId** med arbetsytans (gruppens) GUID från Power BI. Du kan få den här informationen från URL:en när du är inloggad i Power BI-tjänsten eller med hjälp av Powershell.
 
 URL <br>
 
@@ -376,11 +376,11 @@ function updateEmbedReport() {
 
 ## <a name="using-a-power-bi-premium-dedicated-capacity"></a>Använda en dedikerad kapacitet med Power BI Premium
 
-Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet för apparbetsytan.
+Nu när du har utvecklat ditt program är det dags att skapa dedikerad kapacitet för arbetsytan.
 
 ### <a name="create-a-dedicated-capacity"></a>Skapa en dedikerad kapacitet
 
-Genom att skapa en dedikerad kapacitet kan du dra nytta av att ha en dedikerad resurs för innehållet i din apps arbetsyta. För sidnumrerade rapporter måste du säkerhetskopiera din apparbetsyta med minst en P1-kapacitet. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-premium-what-is.md).
+Genom att skapa dedikerad kapacitet får innehållet i arbetsytan dedikerade resurser. För sidnumrerade rapporter måste du minst använda en P1-kapacitet för arbetsytan. Du kan skapa en dedikerad kapacitet med hjälp av [Power BI Premium ](../service-premium-what-is.md).
 
 Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -399,9 +399,9 @@ Följande tabell innehåller de tillgängliga Power BI Premium-SKU:erna i [Micro
 > - När du försöker bädda in med Microsoft Office-appar använder du EM-SKU:er för att komma åt innehåll med en kostnadsfri licens för Power BI. Du kan dock inte komma åt innehåll med en kostnadsfri licens för Power BI när du använder Powerbi.com eller Power BI Mobile.
 > - När du försöker bädda in med Microsoft Office-appar och använder Powerbi.com eller Power BI Mobile kan du komma åt innehåll med en kostnadsfri licens för Power BI.
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tilldela en apparbetsyta till en dedikerad kapacitet
+### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Tilldela en arbetsyta till en dedikerad kapacitet
 
-När du har skapat en dedikerad kapacitet kan du tilldela apparbetsytan till den dedikerade kapaciteten. Gör så här för att slutföra processen:
+När du har skapat en dedikerad kapacitet kan du tilldela arbetsytan till den dedikerade kapaciteten. Gör så här för att slutföra processen:
 
 1. I Power BI-tjänsten expanderar du arbetsytorna och väljer ellipsen för arbetsytan som du vill bädda in ditt innehåll med. Välj sedan **Redigera arbetsytor**.
 
@@ -411,9 +411,9 @@ När du har skapat en dedikerad kapacitet kan du tilldela apparbetsytan till den
 
     ![Tilldela en dedikerad kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
-3. När du har valt **Spara** bör du se en romb bredvid namnet på apparbetsytan.
+3. När du har valt **Spara** bör du se en romb bredvid namnet på arbetsytan.
 
-    ![Apparbetsyta som hör till en kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
+    ![apparbetsyta som hör till en kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 

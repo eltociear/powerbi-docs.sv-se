@@ -12,14 +12,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b52a858d10bb7f508d39e2d4e9678e48e01394f5
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 10fcb7420c261379d596666589a0f6707cf70160
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100215"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019450"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Visa relaterat innehåll i Power BI-tjänsten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Fönstret **Relaterat innehåll** visar hur din Power BI-tjänsts innehåll – instrumentpaneler, rapporter och datauppsättningar – är sammankopplade. Fönstret **Relaterat innehåll** är även en utgångspunkt för att vidta åtgärder. Härifrån kan du göra saker som att öppna en instrumentpanel, öppna en rapport, generera insikter, analysera data i Excel och annat.  
 
 I Power BI skapas rapporter på datauppsättningar, rapportvisualiseringar fästs på instrumentpaneler och instrumentpanelens visuella objekt länkar tillbaka till rapporter. Men hur vet du vilka instrumentpaneler som är värdar för visuella objekt från marknadsföringsrapporten? Och hur hittar du dessa instrumentpaneler? Använder din instrumentpanel för Anskaffning visuella objekt från mer än en datauppsättning? I så fall, vad heter de och hur kan du öppna och redigera dem? Används HR-datauppsättningen i några rapporter och instrumentpaneler? Eller kan den flyttas utan att orsaka några brutna länkar? Frågor som dessa kan alla besvaras på fönstret **Relaterat innehåll**.  Fönstret visar inte bara relaterat innehåll, det låter dig också vidta åtgärder för innehållet och enkelt navigera mellan relaterat innehåll.
@@ -36,7 +39,7 @@ Se på när Will visar relaterat innehåll för en instrumentpanel. Prova sedan 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
-När en instrumentpanel eller en rapport är öppen väljer du ellipsen (…) på menyraden och sedan **Visa relaterade** från listrutan.
+Välj **Fler alternativ** (…) på menyraden med en instrumentpanel eller en rapport öppen och välj sedan **Visa relaterade** från listrutan.
 
 ![Listruta för ellips](./media/end-user-related/power-bi-dropdown.png)
 

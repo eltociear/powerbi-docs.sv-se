@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6fb02a3ea31dd3bed6f1013d5e81237345aef40c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073618"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431902"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -79,11 +79,11 @@ Inbäddning av en rapport i SharePoint Online ger inte automatiskt användarna b
 > [!IMPORTANT]
 > Se till att granska vem som kan visa rapporten i Power BI-tjänsten och bevilja åtkomst till de som inte visas i listan.
 
-Det finns två sätt att ge åtkomst till rapporter i Power BI. Det första sättet, om du använder en Office 365-grupp för att skapa SharePoint Online-teamwebbplatsen, är att ange användaren som medlem i **apparbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Mer information finns i [hantera en apparbetsyta](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Det finns två sätt att ge åtkomst till rapporter i Power BI. Det första sättet, om du använder en Office 365-grupp för att skapa SharePoint Online-teamwebbplatsen, är att ange användaren som medlem i **arbetsytan i Power BI-tjänsten** och **SharePoint-sidan**. Mer information finns i artikeln om att [hantera en arbetsyta](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Det andra sättet är att bädda in en rapport i en app och dela den direkt med användare:  
 
-1. Författaren, som måste vara Pro-användare, skapar en rapport på en apparbetsyta. För delning av med *användare av kostnadsfritt Power BI* måste apparbetsytan anges som en *Premium-arbetsyta*.
+1. Författaren, som måste vara Pro-användare, skapar en rapport på en arbetsyta. För delning av med *användare av kostnadsfritt Power BI* måste arbetsytan anges som en *Premium-arbetsyta*.
 
 2. Författaren publicerar och installerar appen. Författaren måste installera appen så att den har åtkomst till den rapport-URL som används för inbäddning i SharePoint Online.
 
@@ -93,7 +93,7 @@ Det andra sättet är att bädda in en rapport i en app och dela den direkt med 
 
 4. Författaren öppnar appen och går till rapporten.
 
-5. Författaren kopierar inbäddningsrapport-URL:en från den rapport som appen installerade. Använd inte den ursprungliga rapport-URL:en från apparbetsytan.
+5. Författaren kopierar inbäddningsrapport-URL:en från den rapport som appen installerade. Använd inte den ursprungliga rapportadressen från arbetsytan.
 
 6. Skapa en ny gruppwebbplats i SharePoint Online.
 

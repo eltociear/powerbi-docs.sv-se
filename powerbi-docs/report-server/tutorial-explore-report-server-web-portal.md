@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cd3e032375c5edaba2b0f90f982d0dbe5591c913
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65240051"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021634"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Självstudie: Utforska webbportalen för Power BI-rapportserver i en virtuell dator
 I de här självstudierna skapar du en virtuell Azure-dator med Power BI-rapportservern redan installerad, så att du kan visa, redigera och hantera exempel på Power BI- och sidnumrerade rapporter samt KPI:er.
@@ -189,7 +189,7 @@ Du kan visa och hantera sidnumrerade rapporter och starta Report Builder från w
 
 ### <a name="manage-a-paginated-report"></a>Hantera en sidnumrerad rapport
 
-1. I webbportalen, under **Sidnumrerade rapporter**, väljer du ellipsen (...) bredvid **Försäljningsorder** > **Hantera**.
+1. Under **Sidnumrerade rapporter** i webbportalen väljer du **Fler alternativ** (...) bredvid **Försäljningsorder** > **Hantera**.
 
 1. Välj **Parametrar**, ändra standardvärdet för **SalesOrderNumber** till **SO50689** > **Verkställ**.
 
@@ -219,7 +219,7 @@ Du kan visa och hantera sidnumrerade rapporter och starta Report Builder från w
 
 Du kan redigera sidnumrerade rapporter i Report Builder och du kan starta Report Builder direkt från webbläsaren.
 
-1. Välj ellipsen (...) bredvid **Försäljningsorder** > **Redigera i Report Builder** i webbportalen.
+1. Välj **Fler alternativ** (...) bredvid **Försäljningsorder** > **Redigera i Report Builder** i webbportalen.
 
 1. Välj **Tillåt** för att tillåta att den här webbplatsen får öppna ett program på datorn.
 

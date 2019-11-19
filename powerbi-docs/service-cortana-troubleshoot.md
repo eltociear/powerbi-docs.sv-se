@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 678910000a0062836004b208cb401774c9eb2a9a
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 02e79522baa7580b019cec6956593d88260fb95b
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542887"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432103"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Felsöka Cortana för Power BI
 Den här artikeln ingår i en serie. 
@@ -39,7 +39,7 @@ Om du har problem med att få Cortana att integrera med Power BI har du kommit t
    * ”visa försäljning” kommer *inte* returnera ett Power BI-resultat.   
    * ”visa mig försäljning fy16”, ”försäljning fy16”, ”visa försäljning fy16” och ”visa försäljning f” *kommer* att returnera ett Power BI-resultat.    
    * Om du lägger till ordet ”powerbi” räknas det som ett av de två ord som krävs, så ”powerbi försäljning” *kommer* att returnera ett Power BI-resultat.
-5. Har du åtkomst- eller redigeringsbehörighet till några rapporter eller instrumentpaneler? För rapporter måste innehållet som du vill söka i ha ett [svarskort](service-cortana-answer-cards.md).  För instrumentpaneler måste innehållet som du vill söka i finnas i **Delas med mig**, en apparbetsyta eller **Min arbetsyta**. [Använd felsökningsverktyget](#try-the-cortana-troubleshooting-tool) för att få hjälp med att identifiera problemet.
+5. Har du åtkomst- eller redigeringsbehörighet till några rapporter eller instrumentpaneler? För rapporter måste innehållet som du vill söka i ha ett [svarskort](service-cortana-answer-cards.md).  För instrumentpaneler måste innehållet du vill söka i finnas i **Delas med mig**, en arbetsyta eller **Min arbetsyta**. [Använd felsökningsverktyget](#try-the-cortana-troubleshooting-tool) för att få hjälp med att identifiera problemet.
 6. Använder du en mobil enhet?  För närvarande stöder Power BI och Cortana bara integration på Windows Mobile-enheter.
 7. Är Cortana konfigurerat för engelska?  Den aktuella Cortana/Power BI-integrationen har enbart stöd för engelska. Öppna Cortana och välj kugghjulsikonen för att visa inställningarna. Rulla ned till **Cortana-språk** och kontrollera att den är inställd på något av de engelska alternativen.
 

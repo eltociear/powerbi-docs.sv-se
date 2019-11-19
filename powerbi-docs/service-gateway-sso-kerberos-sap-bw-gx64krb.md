@@ -8,70 +8,79 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 08/01/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4932f00fa7585c6b4f9186c29b65700d7a14fbea
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 0063ca280667e12fb2cf4d0432651f8145495ac8
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968718"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020313"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Använda Kerberos för enkel inloggning (SSO) till SAP BW med hjälp av gx64krb5
 
 I den här artikeln beskrivs hur du konfigurerar din SAP BW-datakälla för att aktivera enkel inloggning från Power BI-tjänsten med hjälp av gx64krb5.
 
 > [!NOTE]
-> Du kan slutföra stegen i den här artikeln utöver stegen i [Konfigurera enkel inloggning med Kerberos](service-gateway-sso-kerberos.md) för att aktivera uppdatering baserad på enkel inloggning för SAP BW-programserverbaserade rapporter i Power BI-tjänsten. Microsoft rekommenderar dock att du använder CommonCryptoLib, inte gx64krb5, som SNC-bibliotek. SAP erbjuder inte längre stöd för gx64krb5, och de steg som krävs för att konfigurera det för användning med gatewayen är betydligt mer komplexa jämfört med CommonCryptoLib. Information om hur du konfigurerar enkel inloggning med hjälp av CommonCryptoLib finns i [Konfigurera SAP BW för enkel inloggning med hjälp av CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Du bör slutföra konfigurationen för CommonCryptoLib _eller_ gx64krb5. Slutför inte konfigurationsstegen för båda biblioteken.
+> Du kan slutföra stegen i den här artikeln utöver stegen i [Konfigurera enkel inloggning med Kerberos](service-gateway-sso-kerberos.md) för att aktivera uppdatering baserad på enkel inloggning för SAP BW-programserverbaserade rapporter i Power BI-tjänsten. Microsoft rekommenderar dock att du använder CommonCryptoLib, inte gx64krb5, som SNC-bibliotek. SAP har inte längre något stöd för gx64krb5, och de steg som krävs för att konfigurera det för gatewayen är betydligt mer komplicerade jämfört med CommonCryptoLib. Information om hur du konfigurerar enkel inloggning med hjälp av CommonCryptoLib finns i [Konfigurera SAP BW för enkel inloggning med hjälp av CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Du bör använda CommonCryptoLib _eller_ gx64krb5 som SNC-bibliotek. Slutför inte konfigurationsstegen för båda biblioteken.
 
-### <a name="set-up-gx64krb5-on-gateway-machine-and-the-sap-bw-server"></a>Konfigurera gx64krb5 på gatewaydatorn och på SAP BW-servern
-Den här guiden försöker vara så omfattande som möjligt. Om du redan har slutfört några av de här stegen kan du hoppa över dem. Du kanske exempelvis redan har konfigurerat din SAP BW-Server för enkel inloggning med gx64krb5.
+Den här guiden är omfattande. Om du redan har slutfört några av stegen som beskrivs kan du hoppa över dem. Du kanske exempelvis redan har konfigurerat din SAP BW-Server för enkel inloggning med gx64krb5.
 
-### <a name="set-up-gx64krb5-on-the-gateway-machine-and-the-sap-bw-server"></a>Konfigurera gx64krb5 på gatewaydatorn och SAP BW-servern
-
-> [!NOTE]
-> `gx64krb5` stöds inte längre aktivt av SAP. Mer information finns i [SAP-anteckningen 352295](https://launchpad.support.sap.com/#/notes/352295). Observera också att `gx64krb5` inte tillåter SSO-anslutningar från datagatewayen till SAP BW-meddelandeservrar. Endast anslutningar till SAP BW-programservrar är möjliga. Den här begränsningen till enbart programserver finns inte om du använder [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) som SNC-bibliotek. Andra SNC-bibliotek kan också fungera för BW SSO, men de stöds inte officiellt av Microsoft.
-
-`gx64krb5` måste användas av både klienten och servern för att slutföra en anslutning med enkel inloggning via gatewayen. Både klienten och servern måste alltså använda samma SNC-bibliotek.
-
-1. Ladda ned `gx64krb5` från [SAP-kommentar 2115486](https://launchpad.support.sap.com/) (SAP s-användare krävs). Se till att du har minst version 1.0.11.x. Ladda även ned `gsskrb5` (32-bitarsversionen av biblioteket) om du vill testa anslutningen med enkel inloggning i SAP-gränssnittet innan du försöker ansluta med enkel inloggning via gatewayen (rekommenderas). 32-bitarsversionen krävs för testning med SAP-gränssnittet eftersom SAP-gränssnittet endast är tillgängligt som 32-bitarsversion.
-
-1. Placera `gx64krb5` på en plats på din gatewaydator som är tillgänglig för gatewayens tjänstanvändare. Om du vill testa anslutningen med enkel inloggning med hjälp av SAP-gränssnittet skapar du också en kopia av `gsskrb5` på datorn och anger miljövariabeln **SNC_LIB** så att den pekar på den. Både gatewaytjänstanvändaren och de AD-användare (Active Directory) som tjänstanvändaren kommer att personifiera behöver läs- och körningsbehörigheter för kopian av `gx64krb5`. Vi rekommenderar att du beviljar gruppen Autentiserade användare behörigheter för .dll-filen. I testsyfte kan du även uttryckligen bevilja dessa behörigheter till både gatewayens tjänstanvändare och den Active Directory-användare som du kommer att använda för testning.
-
-1. Om din BW-Server inte redan har konfigurerats för enkel inloggning med hjälp av gx64krb5 placerar du en till kopia av DLL-filen på din SAP BW-serverdator, på en plats som är tillgänglig för SAP BW-servern. Läs [SAP-dokumentationen](https://launchpad.support.sap.com/#/notes/2115486) (s-användare krävs) om du vill ha mer information om hur du konfigurerar gx64krb5 för användning med en SAP BW-server.
-
-1. På klientdatorn och serverdatorn anger du miljövariabeln `SNC_LIB` och/eller `SNC_LIB_64`. Om du använder gsskrb5 anger du variabeln `SNC_LIB` till den absoluta sökvägen för gsskrb5.dll. Om du använder gx64krb5 anger du variabeln `SNC_LIB_64` till den absoluta sökvägen för gx64krb5.dll.
-
-### <a name="configure-an-sap-bw-service-user-and-enable-snc-communication-on-the-bw-server"></a>Konfigurera en SAP BW-tjänstanvändare och aktivera SNC-kommunikation på BW-servern
-
-Slutför det här avsnittet om du inte redan har konfigurerat din SAP BW-server för SNC-kommunikation (till exempel enkel inloggning) med hjälp av gx64krb5.
+## <a name="set-up-gx64krb5-on-the-gateway-machine-and-the-sap-bw-server"></a>Konfigurera gx64krb5 på gatewaydatorn och SAP BW-servern
 
 > [!NOTE]
-> Det här avsnittet förutsätter att du redan har skapat en tjänstanvändare för BW och kopplat ett lämpligt SPN till den (till exempel något som börjar med `SAP/`).
+> Biblioteket gx64krb5 stöds inte längre av SAP. Mer information finns i [SAP-anteckningen 352295](https://launchpad.support.sap.com/#/notes/352295). Observera att gx64krb5 inte tillåter anslutningar med enkel inloggning från datagatewayen till SAP BW Message-servrar, du kan bara ansluta till SAP BW Application-servrar. Den här begränsningen gäller inte om du använder [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) som SNC-bibliotek. Även om andra SNC-bibliotek också kan fungera för BW SSO så stöds de inte officiellt av Microsoft.
+
+Både klienten och servern måste använda biblioteket gx64krb5 för att upprätta en anslutning med enkel inloggning via gatewayen. Både klienten och servern måste alltså använda samma SNC-bibliotek.
+
+1. Ladda ned gx64krb5.dll från [SAP Note 2115486](https://launchpad.support.sap.com/) (du måste vara SAP s-användare). Se till att du har minst version 1.0.11.x. Ladda även ned gsskrb5.dll (32-bitarsversionen av biblioteket) om du vill testa anslutningen med enkel inloggning i SAP-gränssnittet innan du försöker ansluta med enkel inloggning via gatewayen (rekommenderas). Du behöver 32-bitarsversionen för testning med SAP-gränssnittet eftersom SAP-gränssnittet endast finns i 32-bitarsversion.
+
+1. Placera gx64krb5.dll på en plats på gatewaydatorn som är tillgänglig för de som använder gatewaytjänsten. Om du vill testa anslutningen med enkel inloggning via SAP-gränssnittet skapar du också en kopia av gsskrb5.dll på datorn och ställer in miljövariabeln **SNC_LIB** så att den pekar på sökvägen. Både de som använder gatewaytjänsten och AD-användarna som tjänstanvändaren personifierar behöver läs- och körningsbehörigheter för kopian av gx64krb5.dll. Vi rekommenderar att du beviljar gruppen Autentiserade användare behörigheter för .dll-filen. I testsyfte kan du även uttryckligen ge dessa behörigheter till både gatewaytjänstanvändaren och den AD-användaren du använder i testet.
+
+1. Om BW-servern inte redan är konfigurerad för enkel inloggning med gx64krb5.dll placerar du en till kopia av .dll-filen på SAP BW-servern, på en plats som SAP BW-servern kommer åt. 
+
+    Mer information om hur du konfigurerar gx64krb5.dll för användning med en SAP BW-server finns i [SAP-dokumentationen](https://launchpad.support.sap.com/#/notes/2115486) (du måste vara SAP s-användare).
+
+1. Ställ in miljövariablerna **SNC_LIB** och **SNC_LIB_64** på klientdatorn och serverdatorn: 
+    - Om du använder gsskrb5.dll anger du dess absoluta sökväg i variabeln **SNC_LIB**. 
+    - Om du använder gx64krb5.dll anger du dess absoluta sökväg i variabeln **SNC_LIB_64**.
+
+## <a name="configure-an-sap-bw-service-user-and-enable-snc-communication-on-the-bw-server"></a>Konfigurera en SAP BW-tjänstanvändare och aktivera SNC-kommunikation på BW-servern
+
+Slutför det här avsnittet om du inte redan har konfigurerat SAP BW-servern för SNC-kommunikation (till exempel enkel inloggning) med hjälp av gx64krb5.
+
+> [!NOTE]
+> Det här avsnittet förutsätter att du redan har skapat en tjänstanvändare för BW och kopplat ett lämpligt SPN till den (till exempel ett namn som börjar med *SAP/* ).
 
 1. Ge tjänstanvändaren åtkomst till din SAP BW-programserver:
 
-    1. På SAP BW-serverdatorn lägger du till tjänstanvändaren i gruppen Lokala administratörer. Öppna datorhanteringsprogrammet och identifiera gruppen Lokala administratörer för din server. Till exempel:
+    1. Lägg till tjänstanvändaren i gruppen Lokala administratörer på SAP BW-servern. Öppna **datorhanteringsprogrammet** och identifiera gruppen Lokala administratörer för din server. 
 
-        ![Skärmbild av datorhanteringsprogram](media/service-gateway-sso-kerberos/computer-management.png)
+        ![Datorhanteringsprogrammet](media/service-gateway-sso-kerberos/computer-management.png)
 
-    1. Dubbelklicka på gruppen Lokala administratörer och välj sedan **Lägg till** för att lägga till din tjänstanvändare i gruppen. Välj **Kontrollera namn** för att se till att du har angett namnet på rätt sätt. Välj **OK**.
+    1. Dubbelklicka på gruppen Lokala administratörer och välj sedan **Lägg till** för att lägga till din tjänstanvändare i gruppen. 
 
-1. Ange SAP BW-serverns tjänstanvändare som den användare som startar SAP BW-servertjänsten på SAP BW-serverdatorn.
+    1. Välj **Kontrollera namn** för att kontrollera att du har angett namnet på rätt sätt och välj sedan **OK**.
 
-    1. Öppna **Kör** och ange **Services.msc**. Leta efter den tjänst som motsvarar din SAP BW-programserverinstans. Högerklicka på den och välj **Egenskaper**.
+1. Ange SAP BW-serverns tjänstanvändare som den användare som startar SAP BW-servertjänsten på SAP BW-serverdatorn:
+
+    1. Öppna **Kör** och ange sedan **Services.msc**. 
+
+    1. Leta rätt på tjänsten som motsvarar instansen av SAP BW-programservern, högerklicka på den och välj sedan **Egenskaper**.
 
         ![Skärmbild av Tjänster med Egenskaper markerat](media/service-gateway-sso-kerberos/server-properties.png)
 
-    1. Växla till fliken **Logga in** och ändra användaren till din SAP BW-tjänstanvändare. Ange användarens lösenord och välj **OK**.
+    1. Växla till fliken **Logga in** och ändra användaren till din SAP BW-tjänstanvändare. 
+
+    1. Ange användarens lösenord och välj sedan **OK**.
 
 1. Logga in på din server i SAP-inloggningen och ange följande profilparametrar med hjälp av RZ10-transaktionen:
 
-    1. Ange profilparametern **snc/identity/as** till *p:&lt;den SAP BW-tjänstanvändare som du har skapat&gt;* , till exempel *p:BWServiceUser\@MYDOMAIN.COM*. Observera det p: som föregår tjänstanvändarens UPN. Det är inte p:CN= som när Common Crypto Lib används som SNC-bibliotek.
+    1. Ange profilparametern **snc/identity/as** till *p:&lt;den SAP BW-tjänstanvändare du skapade&gt;* . Till exempel *p:BWServiceUser\@MYDOMAIN.COM*. Observera att det är *p:* som står före användarens UPN, snarare än *p:CN=* som står före UPN-värdet när du använder CommonCryptoLib som SNC-bibliotek.
 
-    1. Ange profilparametern **snc/gssapi\_lib** till *&lt;sökvägen till gx64krb5.dll på BW-serverdatorn&gt;* . Kom ihåg att placera biblioteket på en plats som SAP BW-programservern kan komma åt.
+    1. Ställ in profilparametern **snc/gssapi\_lib** på *&lt;sökvägen till gx64krb5.dll på BW-servern&gt;* . Placera biblioteket på en plats som SAP BW-programservern kan komma åt.
 
-    1. Ange även följande ytterligare profilparametrar och ändra värdena efter behov. Observera att de sista fem alternativen innebär att klienter kan ansluta till SAP BW-servern med hjälp av SAP-inloggning utan att ha SNC konfigurerat.
+    1. Ställ in följande ytterligare profilparametrar och ändra värdena efter behov. De sista fem alternativen innebär att klienter kan ansluta till SAP BW-servern med hjälp av SAP-inloggning utan att ha konfigurerat SNC.
 
         | **Inställning** | **Värde** |
         | --- | --- |
@@ -84,65 +93,73 @@ Slutför det här avsnittet om du inte redan har konfigurerat din SAP BW-server 
         | snc/accept\_insecure\_rfc | 1 |
         | snc/permit\_insecure\_start | 1 |
 
-    1. Ange egenskapen **snc/enable** till 1.
+    1. Sätt egenskapen **snc/enable** till värdet 1.
 
-1. När du har angett de här profilparametrarna öppnar du SAP-hanteringskonsolen på serverdatorn och startar om SAP BW-instansen. Om servern inte startar kontrollerar du att du har angett profilparametrarna på rätt sätt. Mer information om inställningar för profilparametrar finns i [SAP-dokumentationen](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm). Du kan också läsa felsökningsinformationen senare i det här avsnittet om det uppstår problem.
+1. När du har ställt in de här profilparametrarna öppnar du SAP-hanteringskonsolen på serverdatorn och startar om SAP BW-instansen. 
 
-### <a name="map-a-sap-bw-user-to-an-active-directory-user"></a>Mappa en SAP BW-användare till en Active Directory-användare
+   Om servern inte startar kontrollerar du att du har angett profilparametrarna på rätt sätt. Du kan läsa mer om inställningar för profilparametrar i [SAP-dokumentationen](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm). Du kan också läsa avsnittet [Felsökning](#troubleshooting) i den här artikeln.
 
-Om du inte redan har gjort det mappar du en Active Directory-användare till en SAP BW-programserveranvändare och testar anslutningen med enkel inloggning i SAP-inloggningen.
+## <a name="map-an-sap-bw-user-to-an-active-directory-user"></a>Mappa en SAP BW-användare till en Active Directory-användare
 
-1. Logga in på SAP BW-servern med hjälp av SAP-inloggning. Kör transaktion SU01.
+Om du inte redan har gjort det mappar du en Active Directory-användare till en användare på SAP BW-programservern och testar anslutningen med enkel inloggning i SAP-inloggningen.
 
-1. Som **Användare** anger du den SAP BW-användare som du vill aktivera anslutningar med enkel inloggning för (på skärmbilden nedan förbereder vi oss på att ange behörigheter för BIUSER). Välj ikonen **Redigera** (bilden av en penna) längst upp till vänster i fönstret för SAP-inloggning.
+1. Logga in på SAP BW-servern via SAP-inloggningen. Kör transaktion SU01.
 
-    ![Skärmbild av SAP BW-användarens underhållsskärm](media/service-gateway-sso-kerberos/user-maintenance.png)
+1. Som **Användare** anger du SAP BW-användaren som du vill aktivera anslutning med enkel inloggning för. Välj ikonen **Redigera** (pennikonen) uppe till vänster i fönstret för SAP-inloggning.
 
-1. Välj fliken **SNC**. I inmatningsrutan för SNC-namn anger du *p:&lt;din Active Directory-användare&gt;@&lt;din domän&gt;* . Observera det obligatoriska p: som måste stå före Active Directory-användarens UPN. Den Active Directory-användare som du anger måste tillhöra den person eller organisation som du vill aktivera åtkomst med enkel inloggning till SAP BW-programservern för. Om du till exempel vill aktivera åtkomst med enkel inloggning för användaren *testuser\@TESTDOMAIN.COM* anger du *p:testuser\@TESTDOMAIN.COM*.
+    ![Skärmen för användarunderhåll i SAP BW](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-    ![Skärmbild av SAP BW-skärmen för användarunderhåll](media/service-gateway-sso-kerberos/maintain-users.png)
+1. Välj fliken **SNC**. I inmatningsrutan för SNC-namn anger du *p:&lt;din Active Directory-användare&gt;@&lt;din domän&gt;* . I SNC-namnet måste *p:* stå före Active Directory-användarens UPN. Observera att UPN-värdet är skiftlägeskänsligt.
 
-1. Välj **Spara**-ikonen (bilden av en diskett) i det övre vänstra hörnet på skärmen.
+   Den Active Directory-användare som du anger måste tillhöra den person eller organisation som du vill aktivera åtkomst med enkel inloggning till SAP BW-programservern för. Om du till exempel vill aktivera åtkomst med enkel inloggning för användaren testuser\@TESTDOMAIN.COM anger du *p:testuser\@TESTDOMAIN.COM*.
 
-### <a name="test-sign-in-via-sso"></a>Testa inloggning via enkel inloggning
+    ![Skärmen Hantera användare i SAP BW](media/service-gateway-sso-kerberos/maintain-users.png)
 
-Kontrollera att du kan logga in på servern med hjälp av SAP-inloggning via enkel inloggning som den Active Directory-användare som du precis har aktiverat åtkomst med enkel inloggning för.
+1. Välj ikonen **Spara** (bilden av en diskett) uppe till vänster på skärmen.
 
-1. Logga in på en dator i din domän där SAP-inloggning är installerat som den Active Directory-användare som du nyss aktiverade enkel inloggning för. Starta SAP-inloggning och skapa en ny anslutning.
+## <a name="test-sign-in-via-sso"></a>Testa att logga in med enkel inloggning
 
-1. Kopiera filen `gsskrb5`.dll som du laddade ned tidigare till en plats på datorn som du precis loggade in på. Ange miljövariabeln `SNC_LIB` till den absoluta sökvägen för den här platsen.
+Kontrollera att du kan logga in på servern via SAP-inloggningen med enkel inloggning som den Active Directory-användare du precis aktiverade åtkomst med enkel inloggning för:
+
+1. Logga in på en dator i din domän där SAP-inloggning är installerat som den Active Directory-användare du nyss aktiverade enkel inloggning för. Starta SAP-inloggning och skapa en ny anslutning.
+
+1. Kopiera filen gsskrb5.dll som du laddade ned tidigare till en plats på datorn du precis loggade in på. Sätt miljövariabeln **SNC_LIB** till den här platsens absoluta sökväg.
 
 1. Starta SAP-inloggning och skapa en ny anslutning.
 
-1. I fönstret **Skapa ny systempost** väljer du **Användarspecificerade system** och sedan **Nästa**.
+1. På skärmen **Skapa ny systempost** väljer du **Användarspecificerade system** och sedan **Nästa**.
 
-    ![Skärmbild av skärmen Skapa ny systempost](media/service-gateway-sso-kerberos/new-system-entry.png)
+    ![Skärmen Skapa ny systempost](media/service-gateway-sso-kerberos/new-system-entry.png)
 
 1. Fyll i lämpliga uppgifter på nästa sida, inklusive programserver, instansnummer och system-ID. Välj sedan **Slutför**.
 
-1. Högerklicka på den nya anslutningen och välj **Egenskaper**. Välj fliken **Nätverk**. I textrutan **SNC-namn** anger du *p:&lt;SAP BW-tjänstanvändarens UPN&gt;* , till exempel *p:BWServiceUser\@MYDOMAIN.COM*. Välj sedan **OK**.
+1. Högerklicka på den nya anslutningen, välj **Egenskaper** och sedan fliken **Nätverk**. 
 
-    ![Skärmbild av skärmen Egenskaper för systempost](media/service-gateway-sso-kerberos/system-entry-properties.png)
+1. I textrutan **SNC-namn** anger du *p:&lt;SAP BW-tjänstanvändarens UPN&gt;* . Till exempel *p:BWServiceUser\@MYDOMAIN.COM*. Välj **OK**.
 
-1. Dubbelklicka på den anslutning som du precis skapade för att försöka upprätta en anslutning med enkel inloggning till din SAP BW-server. Om den här anslutningen lyckas går du vidare till nästa steg. Annars granskar du de föregående stegen i det här dokumentet för att se till att de har slutförts korrekt eller läser avsnittet om felsökning nedan. Observera att om du inte kan ansluta till SAP BW-servern via enkel inloggning i den här kontexten så kommer du inte kunna ansluta till SAP BW-servern med hjälp av enkel inloggning i gatewaykontexten.
+    ![Skärmen Egenskaper för systempost](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
-### <a name="add-registry-entries-to-the-gateway-machine"></a>Lägg till registerposter i gateway-datorn
+1. Dubbelklicka på den anslutning som du precis skapade för att försöka upprätta en anslutning med enkel inloggning till din SAP BW-server. 
 
-Lägg till nödvändiga registerposter i registret på den dator som gatewayen är installerad på samt på datorer som är avsedda att ansluta från Power BI Desktop. Här följer kommandona som ska köras:
+   Om den här anslutningen lyckas går du vidare till nästa avsnitt. Annars granskar du de tidigare stegen i dokumentet för att se till att de har slutförts korrekt, eller så läser du avsnittet [Felsökning](#troubleshooting) nedan. Om du inte kan ansluta till SAP BW-servern via enkel inloggning i den här kontexten så kan du inte heller ansluta till SAP BW-servern med hjälp av enkel inloggning i gatewaykontexten.
 
-1. ```REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG_DWORD /d 1 /f```
+## <a name="add-registry-entries-to-the-gateway-machine"></a>Lägg till registerposter i gateway-datorn
 
-1. ```REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG_DWORD /d 1 /f```
+Lägg till nödvändiga registerposter i registret på den dator där gatewayen är installerad, samt på de datorer som ska ansluta från Power BI Desktop. Lägg till registerposterna med följande kommandon:
 
-### <a name="add-a-new-sap-bw-application-server-data-source-to-the-power-bi-service-or-edit-an-existing-one"></a>Lägga till en ny datakälla för SAP BW-programservern i Power BI-tjänsten eller redigera en befintlig
+- ```REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG_DWORD /d 1 /f```
 
-1. I konfigurationsfönstret för datakällan anger du programserverns **Värddatornamn**, **Systemnummer** och **klient-ID** på samma sätt som när du loggar in på SAP BW-servern från Power BI Desktop.
+- ```REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG_DWORD /d 1 /f```
 
-1. I fältet **SNC-partnernamn** anger du *p:&lt;det SPN som du mappade till SAP BW-tjänstanvändaren&gt;* . Om SPN till exempel är **SAP/BWServiceUser\@MYDOMAIN.COM** anger du *p:SAP/BWServiceUser\@MYDOMAIN.COM* i fältet **SNC-partnernamn**.
+## <a name="add-a-new-sap-bw-application-server-data-source-to-the-power-bi-service-or-edit-an-existing-one"></a>Lägga till en ny datakälla för SAP BW-programservern i Power BI-tjänsten eller redigera en befintlig
 
-1. Som SNC-bibliotek väljer du **SNC\_LIB** eller **SNC\_LIB\_64**. Kontrollera att **SNC\_LIB\_64** på gatewaydatorn pekar på gx64krb5.dll. Alternativt kan du välja alternativet ”Anpassad” och ange den absoluta sökvägen till gx64krb5.dll (på gatewaydatorn).
+1. Ange SAP BW-programserverns **Värdnamn**, **Systemnummer** och **klient-ID** i konfigurationsfönstret för datakällan, på samma sätt som när du loggar in på SAP BW-servern från Power BI Desktop.
 
-1. Välj rutan **Använd SSO via Kerberos för DirectQuery-frågor** och välj **Använd**. Om testanslutningen inte fungerar kontrollerar du att de föregående stegen för installation och konfiguration slutförts korrekt.
+1. I fältet **SNC-partnernamn** anger du *p:&lt;det SPN du mappade till SAP BW-tjänstanvändaren&gt;* . Om SPN-värdet till exempel är SAP/BWServiceUser\@MYDOMAIN.COM anger du *p:SAP/BWServiceUser\@MYDOMAIN.COM* i fältet **SNC-partnernamn**.
+
+1. Som SNC-bibliotek väljer du **SNC\_LIB** eller **SNC\_LIB\_64**. Kontrollera att **SNC\_LIB\_64** på gatewaydatorn pekar på gx64krb5.dll. Du kan också välja alternativet **Anpassad** och ange den absoluta sökvägen till gx64krb5.dll på gatewaydatorn.
+
+1. Välj **Använd SSO via Kerberos för DirectQuery-frågor** och sedan **Tillämpa**. Om testanslutningen inte fungerar kontrollerar du att de föregående stegen för installation och konfiguration slutförts korrekt.
 
 1. [Köra en Power BI-rapport](service-gateway-sso-kerberos.md#run-a-power-bi-report)
 
@@ -150,31 +167,41 @@ Lägg till nödvändiga registerposter i registret på den dator som gatewayen �
 
 ### <a name="troubleshoot-gx64krb5-configuration"></a>Felsöka gx64krb5-konfigurationen
 
-Om det uppstår problem följer du dessa steg för att felsöka gx64krb5-installationen och anslutningarna med enkel inloggning.
+Om du får något av följande problem följer du dessa steg för att felsöka gx64krb5-installationen och anslutningarna med enkel inloggning:
 
-* Det kan vara användbart att visa serverloggarna (...work\dev\_w0 på serverdatorn) vid felsökning av eventuella fel som uppstår vid slutförandet av stegen för gx64krb5-konfiguration. Detta gäller särskilt om SAP BW-servern inte startas när profilparametrarna har ändrats.
+* Du får fel meddelanden när du utför installationsstegen för gx64krb5. Till exempel kanske inte SAP BW-servern startar när du har ändrat profilparametrarna. Felsök de här problemen i serverloggarna (...work\dev\_w0 på serverdatorn). 
 
-* Om det inte går att starta SAP BW-tjänsten på grund av ett inloggningsfel, har du kanske angett fel lösenord när du konfigurerade SAP BW ”start-as”-användaren. Verifiera lösenordet genom att logga in på en dator i Active Directory-miljön som SAP BW-tjänstanvändaren.
+* Du kan inte starta SAP BW-tjänsten på grund av ett inloggningsfel. Du kan ha angett fel lösenord när du ställde in *startanvändaren* för SAP BW. Verifiera lösenordet genom att logga in som SAP BW-tjänstanvändaren på en dator i Active Directory-miljön.
 
-* Om du får felmeddelanden om att autentiseringsuppgifterna för den underliggande datakällan (till exempel SQL Server) förhindrar att servern startas, kontrollerar du att du har beviljats åtkomst som tjänstanvändare till SAP BW-databasen.
+* Om du får felmeddelanden om autentiseringsuppgifterna för den underliggande datakällan (till exempel SQL Server) som förhindrar att servern startas, kontrollerar du att du har gett tjänstanvändaren åtkomst till SAP BW-databasen.
 
-* Du kan få följande meddelande: *(GSS-API) Det angivna målet är okänt eller kan inte nås.* Detta innebär vanligen att du har angett fel SNC-namn. Se till att endast använda ”p:”, inte ”p:CN=” eller något annat i klientprogrammet, förutom tjänstanvändarens UPN.
+* Du kan få följande meddelande: *(GSS-API) Det angivna målet är okänt eller kan inte nås*. Det här felet innebär vanligen att du har angett fel SNC-namn. Se till att du bara använder *p:* , inte *p:CN=* eller något annat innan tjänstanvändarens UPN-värde i klientprogrammet.
 
-* Du kan få följande meddelande: *(GSS-API) Ett ogiltigt namn har angetts.* Kontrollera att ”p:” finns i värdet för serverns SNC-identitetsprofilparameter.
+* Du kan få följande meddelande: *(GSS-API) Ett ogiltigt namn har angetts*. Kontrollera att *p:* är värdet för profilparametern för serverns SNC-identitet.
 
-* Du kan få följande meddelande: *(SNC-fel) Det går inte att hitta den angivna modulen.* Detta beror vanligtvis på att `gx64krb5.dll` har placerats någonstans som kräver utökade privilegier (administratörsrättigheter) för åtkomst.
+* Du kan få följande meddelande: *(SNC-fel) Det gick inte att hitta den angivna modulen*. Det här felet uppstår ofta om du placerar gx64krb5.dll på en plats där det behövs högre behörighet (administratörsbehörighet) för åtkomst.
 
 ### <a name="troubleshoot-gateway-connectivity-issues"></a>Felsöka problem med gatewayanslutningen
 
-1. Kontrollera gatewayloggarna. Öppna programmet för gatewaykonfiguration och välj **Diagnostik** och sedan **Exportera loggar**. De senaste felen hamnar längst ned i de loggfiler som du undersöker.
+1. Kontrollera gatewayloggarna. Öppna programmet för gatewaykonfiguration och välj **Diagnostik** och sedan **Exportera loggar**. De senaste felen hamnar i slutet av de loggfiler du undersöker.
 
-    ![Skärmbild av programmet Lokal datagateway med Diagnostik markerat](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
+    ![Programmet Lokal datagateway med Diagnostik markerat](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
 
-1. Aktivera SAP BW-spårning och granska de genererade loggfilerna. Det finns flera olika typer av SAP BW-spårning (till exempel CPIC-spårning). Mer information finns i SAP-dokumentationen.
+1. Aktivera SAP BW-spårning och granska de genererade loggfilerna. Det finns flera olika typer av SAP BW-spårning (som CPIC-spårning):
+
+   a. För att aktivera CPIC-spårning anger du två miljövariabler: **CPIC**TRACE\_ och \_CPIC**TRACE\_DIR**.
+
+      Den första variabeln anger spårningsnivån och den andra variabeln anger katalogen för spårningsfilen. Katalogen måste vara en plats som medlemmar i gruppen Autentiserade användare kan skriva till. 
+ 
+    b. Ställ in **CPIC\_TRACE** på *3* och **CPIC\_TRACE\_DIR** på den katalog du vill skriva spårningsfilerna till. Till exempel:
+
+      ![CPIC-spårning](media/service-gateway-sso-kerberos/cpic-tracing.png)
+
+    c. Återskapa problemet och kontrollera att **CPIC\_TRACE\_DIR** innehåller spårningsfiler. 
 
 ## <a name="next-steps"></a>Nästa steg
 
-Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
+Du kan läsa mer om den lokala datagatewayen och DirectQuery i de här resurserna:
 
 * [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)

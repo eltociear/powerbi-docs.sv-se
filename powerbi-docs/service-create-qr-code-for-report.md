@@ -2,7 +2,6 @@
 title: Skapa en QR-kod för en rapport i Power BI-mobilapparna
 description: Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information i Power BI-mobilappen – ingen sökning behövs.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: eb2ea1fbb96138e892ed563d5999f5bc9da8e59f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c98f06afe2af93e32d98ff1c3147cc15b64fbb57
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61160717"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853370"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en rapport i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
@@ -26,7 +25,7 @@ Kolleger som du har delat rapporten med kan skanna QR-koden för att få åtkoms
 
 ## <a name="create-a-qr-code-for-a-report"></a>Skapa en QR-kod för en rapport
 1. Öppna rapporten i Power BI-tjänsten.
-2. Välj ellipserna (...) i det övre högra hörnet av panelen och välj **Generera QR-kod**. 
+2. Välj **Fler alternativ** (...) uppe till höger och välj **Generera QR-kod**. 
    
     ![](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. En dialogruta med QR-koden visas. 
@@ -51,5 +50,5 @@ Power BI genererar QR-koden som en JPG-fil som kan skrivas ut.
 * [Ansluta till Power BI-data från verkligheten](consumer/mobile/mobile-apps-data-in-real-world-context.md) med mobilapparna
 * [Skanna en QR-kod i Power BI från din mobila enhet](consumer/mobile/mobile-apps-qr-code.md)
 * [Skapa en QR-kod för en panel](service-create-qr-code-for-tile.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

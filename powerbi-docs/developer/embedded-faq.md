@@ -3,22 +3,21 @@ title: Vanliga frågor och svar om Power BI Embedded
 description: Bläddra i en lista med vanliga frågor och svar om Power BI Embedded.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: 9e641b70c9fd6c6d378628d34413b14c59eaea23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490337"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864214"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 
-* Om du har andra frågor [kan du fråga Power BI Community](http://community.powerbi.com/).
+* Om du har andra frågor [kan du fråga Power BI Community](https://community.powerbi.com/).
 * Har du fortfarande problem? Besök [Power BI-supportsidan](https://powerbi.microsoft.com/support/).
 
 ## <a name="general"></a>Allmänt
@@ -67,7 +66,7 @@ Här är en ofullständig lista med skillnader.
 | Visning av aktuellt objekt | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A SKUs-Azure-kapacitet | EM SKUs-O365-kapacitet | P SKUs-O365-kapacitet |
-| Bädda in artefakter från en Power BI-apparbetsyta | Ja | Ja | Ja |
+| Bädda in artefakter från en Power BI-arbetsyta | Ja | Ja | Ja |
 | Förbruka Power BI-rapporter i ett inbäddat program – SaaS | Nej | Ja | Ja |
 | Förbruka Power BI-rapporter i ett inbäddat program – PaaS | Ja | Ja | Ja |
 | Använda Power BI-rapporter i SharePoint | Nej | Ja | Ja |
@@ -146,7 +145,7 @@ Ja, det finns PowerShell-cmdletar och REST-API:er för Azure Resource Manager so
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Vad är den dedikerade kapacitetsrollen för PBI Embedded i en PBI Embedded-lösning?
 
-När du ska [höja upp din lösning till produktion](embed-sample-for-customers.md#move-to-production) måste du tilldela Power BI-innehållet (apparbetsytan) som appen använder till en Power BI Embedded-kapacitet (A SKU).
+När du ska [höja upp din lösning till produktion](embed-sample-for-customers.md#move-to-production) måste du tilldela Power BI-innehållet (arbetsytan) som appen använder till en Power BI Embedded-kapacitet (A SKU).
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>I vilka Azure-regioner är PBI Embedded tillgängligt?
 
@@ -362,4 +361,4 @@ Mer information om hur du redigerar dina Power BI-data finns [här](https://docs
 
 Mer information finns i artikeln om att [felsöka ditt inbäddade program](embedded-troubleshoot.md).
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

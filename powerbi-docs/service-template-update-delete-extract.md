@@ -2,19 +2,18 @@
 title: Uppdatera, ta bort och extrahera en Power BI-mallapp
 description: Så här uppdaterar du, tar bort och extraherar en mallapp.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207628"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871366"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Uppdatera, ta bort och extrahera en mallapp
 
@@ -65,7 +64,7 @@ Att återgå till en tidigare version av en mallapp är nu enklare än någonsin
 Din nya arbetsyteversion återställs och du kan fortsätta att utveckla och distribuera mallappen från den nyligen extraherade arbetsytan.
 
 ## <a name="delete-template-app-version"></a>Ta bort mallappsversion
-En mallappsarbetsyta är källan till en aktiv distribuerad mallapp. För att skydda mallappsanvändarna går det inte att ta bort en arbetsyta utan att först ta bort alla skapade appversioner på arbetsytan.
+En mallarbetsyta är källa till en aktiv distribuerad mallapp. För att skydda mallappsanvändarna går det inte att ta bort en arbetsyta utan att först ta bort alla skapade appversioner på arbetsytan.
 Om du tar bort en appversion, tas även app-URL:en bort som inte längre fungerar.
 
 1. I versionshanteringsfönstret trycker du på ellipsen **(...)**  och sedan på **Ta bort**.

@@ -2,21 +2,20 @@
 title: Lägga till hyperlänkar (URL) i en tabell
 description: I det här avsnittet lär du dig lägga till hyperlänkar (URL:er) i en tabell. Du använder Power BI Desktop för att lägga till hyperlänkar (URL:er) i en tabell eller matris. Använd sedan Power BI Desktop eller Power BI-tjänsten för att lägga till hyperlänkarna i dina rapporttabeller och matriser.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/30/2019
+ms.date: 10/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: e8cad7035e752e5e344d78a22ad5fd8ea0a072ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715301"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874507"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Lägga till hyperlänkar (URL) i en tabell
 I det här avsnittet lär du dig lägga till hyperlänkar (URL:er) i en tabell. Du använder Power BI Desktop för att lägga till hyperlänkar (URL:er) i en tabell eller matris. Använd sedan Power BI Desktop eller Power BI-tjänsten för att lägga till hyperlänkarna i dina rapporttabeller och matriser. 
@@ -44,7 +43,7 @@ Proceduren för att lägga till en hyperlänk beror på om du har importerat din
     ![Blå och understrukna länkar](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
     > [!NOTE]
-    > URL-adresserna måste börja med **http:// , https://** eller **www**.
+    > Webbadresser måste börja med särskilda prefix. Du hittar hela listan i [Överväganden och felsökning](#considerations-and-troubleshooting).
     >
    
 1. Om du inte vill visa en lång URL i en tabell, kan du visa en hyperlänkikon  ![Hyperlänkikon](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) i stället. Observera att du inte kan visa ikoner i matriser.
@@ -80,8 +79,9 @@ Ett annat sätt för att lägga till hyperlänkar till dina Power BI-tabeller oc
 4. Placera markören i den kolumn som innehåller de URL:er som du vill förvandla till hyperlänkar i Power BI-tabeller.
    
    > [!NOTE]
-   > URL-adresserna måste börja med **http:// , https://** eller **www**.
+   > Webbadresser måste börja med särskilda prefix. Du hittar hela listan i [Överväganden och felsökning](#considerations-and-troubleshooting).
    > 
+   
 5. I gruppen **Rapporteringsegenskaper** väljer du listrutan **Datakategori** och sedan **Webbadress**. 
    
    ![Datakategori-listmenyn i Excel](media/power-bi-hyperlinks-in-tables/createhyperlinksnew.png)
@@ -92,6 +92,16 @@ Ett annat sätt för att lägga till hyperlänkar till dina Power BI-tabeller oc
    ![Skapa en tabell i Power BI med URL-fältet](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
+
+Webbadresser måste börja med något av följande:
+- http
+- https
+- -mailto
+- file
+- ftp
+- news
+- telnet
+
 F: Kan jag använda en anpassad URL som en hyperlänk i en tabell eller matris?    
 S: Nej. Du kan använda en länkikon. Om du behöver anpassad text för hyperlänkarna och listan över URL:er är kort kan du använda en textruta i stället.
 
@@ -101,5 +111,5 @@ S: Nej. Du kan använda en länkikon. Om du behöver anpassad text för hyperlä
 
 [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

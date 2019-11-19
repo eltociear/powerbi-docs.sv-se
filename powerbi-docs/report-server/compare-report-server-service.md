@@ -10,12 +10,12 @@ ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 ms.date: 09/13/2019
-ms.openlocfilehash: 104b903e6b7a47b5ce35dc5c0627a43d54c1090a
-ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
+ms.openlocfilehash: 877d3590fab67f0aed3c3ab6dc9de9a96ade5dc9
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71691226"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431470"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>En jämförelse av Power BI-rapportservern och Power BI-tjänsten
 
@@ -29,7 +29,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Källdata | I molnet och/eller lokalt | I molnet och/eller lokalt |  |
 | Licens | Power BI Premium eller SQL Server EE med SA | Power BI Pro och/eller för Power BI Premium | |  
 | Livscykel | Modern livscykelprincip | Helt hanterad tjänst |  |
-| Publiceringscykeln | Var fjärde månad | En gång i månaden | De senaste funktionerna och korrigeringarna levereras till Power BI-tjänsten först. De flesta grundläggande funktionerna kommer till Power BI-rapportservern under de kommande versionerna och vissa funktioner är endast avsedda för Power BI-tjänsten. |
+| Publiceringscykeln | Tre gånger per år (januari, maj, september) | En gång i månaden | De senaste funktionerna och korrigeringarna levereras till Power BI-tjänsten först. De flesta grundläggande funktionerna kommer till Power BI-rapportservern under de kommande versionerna och vissa funktioner är endast avsedda för Power BI-tjänsten. |
 | Skapa Power BI-rapporter i Power BI Desktop | Ja | Ja |  |
 | Skapa Power BI-rapporter i webbläsaren | Nej | Ja |  |
 | Gateway krävs | Nej | Ja, för lokala datakällor |  |
@@ -49,7 +49,7 @@ Power BI-rapportservern och Power BI-tjänsten har många likheter och vissa vik
 | Datavarningar | Nej | Ja | [Datavarningar](../service-set-data-alerts.md) i Power BI-tjänsten
 | Säkerhet på radnivå (RLS) | Ja | Ja | Tillgängligt i både DirectQuery- (datakälla) och Import-läge <br><br>Säkerhet på radnivå (RLS) med [Power BI-tjänsten](../service-admin-rls.md) <br><br>Säkerhet på radnivå (RLS) i [Power BI-rapportservern](row-level-security-report-server.md) |
 | Helskärmsläge | Nej | Ja | [Helskärmsläge](../consumer/end-user-focus.md) i Power BI-tjänsten |
-| Avancerat Office 365-samarbete | Nej | Ja | [Samarbeta på en apparbetsyta](../service-collaborate-power-bi-workspace.md) med Office 365 |
+| Avancerat Office 365-samarbete | Nej | Ja | [Samarbeta på en arbetsyta](../service-collaborate-power-bi-workspace.md) med Office 365 |
 | R-visualiseringar | Nej | Ja | [Skapa visuella R-objekt](../desktop-r-visuals.md) i Power BI Desktop och publicera dem till Power BI-tjänsten. Du kan inte spara Power BI-rapporter med visuella R-objekt till Power BI-rapportserver.  |
 | Förhandsgranskningsfunktioner | Nej | Ja | [Anmäl dig till förhandsversionsfunktioner](../consumer/end-user-preview-features.md) i Power BI-tjänsten |
 | Anpassade visuella objekt | Ja | Ja | [Anpassade visuella objekt i Power BI](../power-bi-custom-visuals.md) |

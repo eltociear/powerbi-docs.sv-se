@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 087fe859c7b1a8ca732619866d492f143ff413c9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b010cfafc15c905cd792b9693777af94149cb1fe
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61157820"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431983"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Ta bort på nästan vad som helst i Power BI-tjänsten
 Den här artikeln lär dig hur du tar bort en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app, visualisering och arbetsyta i Power BI-tjänsten.
@@ -71,7 +71,7 @@ Om en datauppsättning är en del av en eller flera [organisationsinnehållspake
 
 ### <a name="to-delete-a-dataset"></a>Ta bort en datauppsättning
 1. Stanna kvar på arbetsytan och välj fliken **Datauppsättningar**.
-2. Leta upp datauppsättningen att ta bort och välj ellipserna (...).  
+2. Leta rätt på datamängden du vill ta bort och välj **Fler alternativ** (...).  
 
     ![Fliken Datauppsättningar](media/service-delete/power-bi-delete-datasetnew.png)
 3. I listrutan väljer du **Ta bort**.
@@ -81,40 +81,41 @@ Om en datauppsättning är en del av en eller flera [organisationsinnehållspake
 
    ![Dialogrutan Ta bort instrumentpanel](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## <a name="delete-an-app-workspace"></a>Ta bort en apparbetsyta
+## <a name="delete-a-workspace"></a>Ta bort en arbetsyta
 > [!WARNING]
-> När du skapar en apparbetsyta skapar du en grupp för Office 365. Och när du tar bort en apparbetsyta tar du bort den gruppen för Office 365. Det innebär att gruppen tas bort från andra O365 produkter som SharePoint och Microsoft-Teams.
+> När du skapar en arbetsyta skapar du en Office 365-grupp. När du tar bort en arbetsyta tar du även bort den kopplade Office 365-gruppen. Det innebär att gruppen tas bort från andra O365 produkter som SharePoint och Microsoft-Teams.
 >
 >
 
-Som författare av apparbetsytan kan du ta bort den. När du tar bort den tas den kopplade appen bort för alla medlemmar i gruppen och tas bort från din AppSource om du har publicerat appen till hela organisationen. Att ta bort en apparbetsyta skiljer sig från att lämna en apparbetsyta.
+Som författare till arbetsytan kan du ta bort den. När du tar bort den tas den kopplade appen bort för alla medlemmar i gruppen och tas bort från din AppSource om du har publicerat appen till hela organisationen. Att ta bort en arbetsyta är inte samma sak som att lämna en arbetsyta.
 
-### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Ta bort en apparbetsyta – om du är administratör
+### <a name="to-delete-a-workspace---if-you-are-an-admin"></a>Ta bort en arbetsyta – om du är administratör
 1. Välj **Arbetsytor** i det vänstra navigeringsfältet
 
-    ![App-arbetsytor](media/service-delete/power-bi-delete-workspace.png)
-2. Välj ellipserna (...) till höger om arbetsytan som ska tas bort och välj **Redigera arbetsyta**.
+2. Välj **Fler alternativ** (...) till höger om arbetsytan du vill ta bort och välj **Redigera arbetsyta**.
 
-   ![ellipsmenyn > Redigera arbetsyta](media/service-delete/power-bi-edit-workspace.png)
+    ![arbetsytor](media/service-delete/power-bi-delete-workspace.png)
+
 3. I fönstret **Redigera arbetsyta** väljer du **Ta bort arbetsyta** > **Ta bort**.
 
     ![ta bort arbetsyta](media/service-delete/power-bi-delete-workspace2.png)
 
-### <a name="to-remove-an-app-workspace-from-your-list"></a>Ta bort en apparbetsyta från listan
-Om du inte längre vill vara medlem i en apparbetsyta kan du ***lämna*** den så tas den bort från listan. När du lämnar en arbetsyta förblir den på plats för andra användare av arbetsytan.  
+### <a name="to-remove-a-workspace-from-your-list"></a>Ta bort en arbetsyta från listan
+Om du inte längre vill vara medlem i en arbetsyta kan du ***lämna*** den så tas den bort från listan. När du lämnar en arbetsyta förblir den på plats för andra användare av arbetsytan.  
 
 > [!IMPORTANT]
-> Om du är den enda administratören för apparbetsytan kommer inte Power BI att låta dig lämna den.
+> Du kan inte lämna en arbetsyta om du är den enda administratören för den.
 >
 >
 
-1. Börja i apparbetsytan som du vill ta bort.
-2. Välj ellipserna (...) i det övre högra hörnet och välj **Lämna arbetsytan** > **Lämna**.
+1. Öppna den arbetsyta du vill ta bort.
+
+2. Välj **Fler alternativ** (...) uppe till höger och välj **Lämna arbetsyta** > **Lämna**.
 
       ![lämna arbetsyta](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
-   > Vilka alternativ som visas i listrutan beror på om du är en administratör eller medlem i apparbetsytan.
+   > Vilka alternativ du ser i listrutan beror på om du är administratör eller medlem i arbetsytan.
    >
    >
 

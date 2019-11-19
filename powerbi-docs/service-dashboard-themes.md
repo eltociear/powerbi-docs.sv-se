@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 3021ee4df1ba4456f86c3deb5e7a3c247dbc13fe
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61144924"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020401"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Använda instrumentpanelsteman i Power BI-tjänsten
 Med **instrumentpanelsteman** kan du använda ett färgtema på hela instrumentpanelen, till exempel företagets färger, säsongsfärger eller andra färgteman som du vill använda. När du tillämpar ett **instrumentpanelstema** används färgerna från det tema du valt på alla visuella objekt på instrumentpanelen (med några få undantag, som beskrivs längre ned i den här artikeln).
@@ -30,7 +30,7 @@ De visuella objekten i en rapport påverkas inte om du ändrar färgen för rapp
 
 
 ## <a name="how-dashboard-themes-work"></a>Så här fungerar instrumentpanelsteman
-Börja med att öppna en instrumentpanel som du har skapat (eller har behörighet att redigera) och som du vill anpassa. Välj ellipsen (...) och välj sedan **Instrumentpanelstema**. 
+Börja med att öppna en instrumentpanel som du har skapat (eller har behörighet att redigera) och som du vill anpassa. Välj **Fler alternativ** (...) och sedan **Instrumentpanelstema**. 
 
 ![Alternativet Instrumentpanelstema](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 

@@ -2,7 +2,6 @@
 title: Använda granskning i din organisation
 description: Lär dig hur du kan övervaka och undersöka åtgärder genom att använda granskning med Power BI. Du kan använda säkerhets- och efterlevnadscentret eller PowerShell.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: aef5a8861a42e566086198c924c99d0b73406f60
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 76de629f1579289ea3b702013583911d05f08408
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325446"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873774"
 ---
 # <a name="use-auditing-within-your-organization"></a>Använda granskning i din organisation
 
@@ -162,7 +161,9 @@ Följande aktiviteter granskas av Power BI:
 | Administratören anslöt ett lagringskonto för dataflöde till klientorganisationen | AdminAttachedDataflowStorageAccountToTenant | Används inte för närvarande                       |
 | Power BI-datauppsättning analyserades                         | AnalyzedByExternalApplication               |                                          |
 | Power BI-datarapport analyserades                          | AnalyzeInExcel                              |                                          |
+| Lagringskonto för dataflöden anslöts                 | AttachedDataflowStorageAccount              |                                          |
 | Power BI-datamängd har bundits till gateway                | BindToGateway                               |                                          |
+| Uppdatering av dataflöde avbröts                        | CancelDataflowRefresh                       |                                          |
 | Kapacitetsstatus ändrades                            | ChangeCapacityState                         |                                          |
 | Användartilldelning för kapacitet ändrades                  | UpdateCapacityUsersAssignment               |                                          |
 | Anslutningar för Power BI-datauppsättning ändrades              | SetAllConnections                           |                                          |
@@ -194,6 +195,7 @@ Följande aktiviteter granskas av Power BI:
 | Power BI-rapport togs bort                           | DeleteReport                                |                                          |
 | Datakällor för Power BI-datauppsättning identifierades          | GetDatasources                              |                                          |
 | Power BI-rapport hämtades                        | DownloadReport                              |                                          |
+| Egenskaper för dataflöde redigerades                        | EditDataflowProperties                      |                                          |
 | Behörighet för Power BI-certifiering redigerades          | EditCertificationPermission                 | Används inte för närvarande                       |
 | Power BI-instrumentpanel redigerades                         | EditDashboard                               | Används inte för närvarande                       |
 | Power BI-datauppsättning redigerades                           | EditDataset                                 |                                          |
@@ -213,7 +215,7 @@ Följande aktiviteter granskas av Power BI:
 | Power BI-instrumentpanel skrevs ut                        | PrintDashboard                              |                                          |
 | Power BI-rapportsida skrevs ut                      | PrintReport                                 |                                          |
 | Power BI-rapport publicerades på webben                  | PublishToWebReport                          |                                          |
-| Power BI-dataflödeshemlighet togs emot från Key Vault  | ReceiveDataflowSecretFromKeyVault           | Används inte för närvarande                       |
+| Power BI-dataflödeshemlighet togs emot från Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | En datakälla togs bort från Power BI-gatewayen         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppmedlemmar togs bort                    | DeleteGroupMembers                          |                                          |
 | Arbetsyta togs bort från en kapacitet                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -221,6 +223,7 @@ Följande aktiviteter granskas av Power BI:
 | Uppdatering av Power BI-dataflöde begärdes               | RequestDataflowRefresh                      | Används inte för närvarande                       |
 | Uppdatering av Power BI-datauppsättning begärdes                | RefreshDataset                              |                                          |
 | Power BI-arbetsytor hämtades                     | GetWorkspaces                               |                                          |
+| Lagringsplats för dataflöden för en arbetsyta angavs     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Schemalagd uppdatering i Power BI-dataflödet konfigurerades        | SetScheduledRefreshOnDataflow               |                                          |
 | Schemalagd uppdatering i Power BI-datauppsättningen konfigurerades         | SetScheduledRefresh                         |                                          |
 | Power BI-instrumentpanel delades                         | ShareDashboard                              |                                          |
@@ -229,10 +232,12 @@ Följande aktiviteter granskas av Power BI:
 | Power BI-utvärderingsversion startades                            | OptInForProTrial                            |                                          |
 | Datakälla för Power BI togs över                   | TakeOverDataset                          |                                          |
 | Datauppsättning för Power BI togs över                        | TakeOverDataset                             |                                          |
+| Ett dataflöde i Power BI togs över                     | TookOverDataflow                             |                                          |
 | Power BI-appen avpublicerades                          | UnpublishApp                                |                                          |
 | Kapacitetens resursstyrningsinställningar uppdaterades      | UpdateCapacityResourceGovernanceSettings    | För närvarande inte i administrationscenter för Microsoft 365 |
 | Kapacitetsadministratörer uppdaterades                            | UpdateCapacityAdmins                        |                                          |
 | Kapacitetens visningsnamn uppdaterades                     | UpdateCapacityDisplayName                   |                                          |
+| Behörigheter för tilldelning av dataflödeslagring uppdaterades   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Organisationens Power BI-inställningar uppdaterades          | UpdatedAdminFeatureSwitch                   |                                          |
 | Power BI-appen uppdaterades                              | UpdateApp                                   |                                          |
 | Power BI-dataflödet uppdaterades                         | UpdateDataflow                              |                                          |
@@ -255,4 +260,4 @@ Följande aktiviteter granskas av Power BI:
 
 [Power BI-administratörsportalen](service-admin-portal.md)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 38ecb04b45ef45a8345397c5b9ec3e89d9dfd232
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61144616"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432075"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Skapa och använda dataflöden i Power BI
 
 Med avancerad databearbetning som är tillgänglig i **Power BI**, kan du skapa en samling som kallas ett dataflöde som du sedan kan använda för att ansluta till affärsdata från olika källor, rensa data, omvandla dem och sedan läsa in dem till Power BI-lagring.
 
-Ett **dataflöde** är en samling *entiteter* (entiteter är likt tabeller) som skapas och hanteras i app-arbetsytor i Power BI-tjänsten. Du kan lägga till och redigera entiteter i ditt dataflöde samt hantera scheman för uppdatering av data direkt från arbetsytan där ditt dataflöde skapades.
+Ett **dataflöde** är en samling *entiteter* (entiteter liknar tabeller) som skapas och hanteras i arbetsytor i Power BI-tjänsten. Du kan lägga till och redigera entiteter i ditt dataflöde samt hantera scheman för uppdatering av data direkt från arbetsytan där ditt dataflöde skapades.
 
 När du skapar ett dataflöde kan du använda **Power BI Desktop** och **Power BI-tjänsten** för att skapa datauppsättningar, rapporter, instrumentpaneler och appar som baseras på de data som du lägger till i Power BI-dataflöden, och därmed få insikter om din verksamhet.
 
@@ -36,13 +36,13 @@ Det finns tre huvudsakliga steg för att använda ett dataflöde:
 I följande avsnitt kommer vi att titta på vart och ett av de här stegen och bekanta oss med de verktyg som finns för att slutföra varje steg. Då sätter vi igång.
 
 ## <a name="creating-a-dataflow"></a>Skapa ett dataflöde
-Om du vill skapa ett dataflöde, starta Power BI-tjänsten i en webbläsare och välj sedan en **apparbetsyta** (dataflöden är inte tillgängliga i *Min arbetsyta* i Power BI-tjänsten) i navigeringsfönstret till vänster som visas i följande skärmbild. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde. 
+Om du vill skapa ett dataflöde startar du Power BI-tjänsten i en webbläsare och väljer sedan en **arbetsyta** (dataflöden är inte tillgängliga i *Min arbetsyta* i Power BI-tjänsten) i navigeringsfönstret till vänster, se bilden nedan. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde. 
 
 ![Skapa ett dataflöde i Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-När du arbetar i ett område i **apparbetsytan** där du kan skapa ett dataflöde, visas knappen **+ Skapa** i det övre högra hörnet av arbetsytan. Välj knappen **+ Skapa** och välj **Dataflöde** från den nedrullningsbara listan. 
+När du arbetar i ett område i **arbetsytan** där du kan skapa ett dataflöde ser du knappen **+ Skapa** uppe till höger på arbetsytan. Välj knappen **+ Skapa** och välj **Dataflöde** från den nedrullningsbara listan. 
 
-Det är viktigt att veta att det endast finns *en ägare* för varje dataflöde, vilket är den person som skapar det. Endast ägaren kan redigera dataflödet. Alla medlemmar i **apparbetsytan** som har läs- eller skrivbehörighet till apparbetsytan där dataflödet skapas kan ansluta till dataflödet inifrån **Power BI Desktop**, såsom beskrivs senare i den här artikeln.
+Det är viktigt att veta att det endast finns *en ägare* för varje dataflöde, vilket är den person som skapar det. Endast ägaren kan redigera dataflödet. Alla medlemmar i **arbetsytan** som har läs- eller skrivbehörighet för arbetsytan där dataflödet skapas kan ansluta till dataflödet inifrån **Power BI Desktop**. Det här beskrivs senare i artikeln.
 
 ![Knappen + Skapa i Power BI-tjänsten för att skapa ett dataflöde](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -111,7 +111,7 @@ Utmärkt – nu är du redo för nästa steg, vilket är att schemalägga uppdat
 
 När du har sparat ditt dataflöde bör du schemalägga uppdateringsfrekvensen för var och en av dina anslutna datakällor.
 
-Power BI-dataflöden använder datauppdateringsprocessen för Power BI för att hålla dina data uppdaterade. I **Power BI-tjänsten** i avsnittet **apparbetsyta** finns en samling av områden där din information kan visas, inklusive dataflöden, enligt följande bild.
+Power BI-dataflöden använder datauppdateringsprocessen för Power BI för att hålla dina data uppdaterade. I **Power BI-tjänsten**, i **arbetsyteavsnittet**, finns en samling områden där du kan visa information och dataflöden som i följande bild.
 
 ![Hantera dataflöden i Power BI-tjänsten](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -134,7 +134,7 @@ För att ansluta till dataflödet i Power BI Desktop väljer du **Hämta Data > 
 
 ![Ansluta till dataflöden från Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-Därifrån kan du gå till **apparbetsytan** där du har sparat ditt dataflöde, välja dataflödet och sedan välja de entiteter som du skapade från listan.
+Därifrån kan du gå till **arbetsytan** där du har sparat ditt dataflöde, välja dataflödet och sedan välja de entiteter du skapade i listan.
 
 Du kan också använda **sökfältet**, högst upp i fönstret för att snabbt hitta namnet på ditt dataflöde eller entiteter bland många dataflödesentiteter.
 

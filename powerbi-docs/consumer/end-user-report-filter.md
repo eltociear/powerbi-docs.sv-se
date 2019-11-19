@@ -8,17 +8,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 3217691d68be6a351f87e5011fd5bc5ef347acfc
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841136"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72774804"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Ta en titt på panelen för rapportfilter
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 I den här artikeln tittar vi närmare på fönstret **Filter** för rapporter i Power BI-tjänsten. Använd filtren för att upptäcka nya insikter i dina data.
 
@@ -34,11 +36,14 @@ Glöm inte att titta i fönstret **Filter** när en kollega delar en rapport med
 
 Fönstret *Filter* innehåller de filter som **rapportdesignern** har lagt till i rapporten. Som *användare* kan du interagera med befintliga filter och spara dina ändringar, men du kan inte lägga till nya filter i rapporten. På skärmbilden ovan har designern lagt till tre sidnivåfilter: **Segmentet är alla**, **året är 2014** och **regionen är central**. Du kan interagera och ändra filtren, men du kan inte lägga till ett fjärde sidnivåfilter.
 
-I Power BI-tjänsten sparas de ändringar du gör för fönstret **Filter** i rapporten. Tjänsten överför dessa ändringar till den mobila versionen av rapporten.
+I Power BI-tjänsten sparas de ändringar du gör för fönstret **Filter** i rapporten. Tjänsten överför dessa ändringar till den mobila versionen av rapporten. 
 
 Om du vill återställa standardvärdena (som designern angett) i fönstret **Filter** väljer du **Återställ till standard** på den översta menyraden.
 
 ![Skärmbild av ikonen Återgå till standard.](media/end-user-report-filter/power-bi-reset-icon.png) 
+
+> [!NOTE]
+> Om du inte ser alternativet **Återställ till standard** kan det ha inaktiverats av *rapportdesignern*. *Designern* kan också låsa vissa filter så att du inte kan ändra dem.
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Visa alla filter för en rapportsida
 

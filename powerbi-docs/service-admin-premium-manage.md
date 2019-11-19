@@ -3,19 +3,18 @@ title: Konfigurera och hantera kapaciteter i Power BI Premium
 description: Lär dig hur du kan hantera Power BI Premium och ge åtkomst till innehåll för hela organisationen.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: e9214fbb78b501b49e8c2115423ec1c6f55e65d7
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 04f5b1f639b7abdbbe789a23e5d7a54790ad50a5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175558"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857085"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurera och hantera kapaciteter i Power BI Premium
 
@@ -98,7 +97,7 @@ Power BI-administratörer och globala Office 365-administratörer kan ändra Pow
 
 ### <a name="manage-user-permissions"></a>Hantera användarbehörigheter
 
-Du kan tilldela ytterligare kapacitetsadministratörer och tilldela användare som har behörigheter för *kapacitetstilldelning*. En användare som har tilldelningsbehörighet kan tilldela en apparbetsyta till en kapacitet om användaren är administratör för arbetsytan. Användaren kan också tilldela sin personliga *Min arbetsyta* till kapaciteten. Användare med tilldelningsbehörighet har inte åtkomst till administratörsportalen.
+Du kan tilldela ytterligare kapacitetsadministratörer och tilldela användare som har behörigheter för *kapacitetstilldelning*. Användare med tilldelningsbehörighet kan tilldela en arbetsyta till en kapacitet om användaren är administratör för arbetsytan. Användaren kan också tilldela sin personliga *Min arbetsyta* till kapaciteten. Användare med tilldelningsbehörighet har inte åtkomst till administratörsportalen.
 
 > [!NOTE]
 > För Power BI Embedded definieras kapacitetsadministratörer i Microsoft Azure-portalen.
@@ -109,7 +108,7 @@ Under **Användarbehörigheter** expanderar du **Användare med behörigheter at
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Tilldela en arbetsyta till en kapacitet
 
-Det finns två sätt att tilldela en arbetsyta till en kapacitet: i administratörsportalen och från en apparbetsyta.
+Det finns två sätt att tilldela en arbetsyta till en kapacitet: i administratörsportalen och från en arbetsyta.
 
 ### <a name="assign-from-the-admin-portal"></a>Tilldela från administratörsportalen
 
@@ -127,22 +126,22 @@ Kapacitetsadministratörer, tillsammans med Power BI-administratörer och global
    | --- | --- |
    | **Arbetsytor av användare** | När du tilldelar arbetsytor per användare eller grupp, tilldelas alla arbetsytor som ägs av dessa användare till Premium-kapacitet, inklusive användares personliga arbetsytor. Dessa användare får automatiskt behörighet för tilldelning av arbetsyta.<br>Detta inkluderar arbetsytor som redan har tilldelats till en annan kapacitet. |
    | **Särskilda arbetsytor** | Ange namnet på en viss arbetsyta om du vill tilldela till den valda kapaciteten. |
-   | **The entire organization's workspaces (Hela organisationens arbetsytor)** | Om du tilldelar hela organisationens arbetsytor till Premium-kapacitet tilldelas alla app-arbetsytor och Mina arbetsytor i din organisation till den här Premium-kapaciteten. Dessutom kommer alla nuvarande och framtida användare ha behörigheten att omtilldela individuella arbetsytorna till den här kapaciteten. |
+   | **The entire organization's workspaces (Hela organisationens arbetsytor)** | Om du tilldelar hela organisationens arbetsytor till en Premium-kapacitet tilldelas alla arbetsytor och Mina arbetsytor i din organisation till den här Premium-kapaciteten. Dessutom kommer alla nuvarande och framtida användare ha behörigheten att omtilldela individuella arbetsytorna till den här kapaciteten. |
    | | |
 
 1. Välj **Tillämpa**.
 
-### <a name="assign-from-app-workspace-settings"></a>Tilldela från inställningar för apparbetsyta
+### <a name="assign-from-workspace-settings"></a>Tilldela från arbetsyteinställningarna
 
-Du kan också tilldela en app-arbetsyta till en Premium-kapacitet från arbetsytans inställningar. Du måste ha administratörsbehörighet för en arbetsyta och behörighet för kapacitetstilldelning för kapaciteten om du vill flytta en arbetsyta till en kapacitet. Observera att arbetsyteadministratörer alltid kan ta bort en arbetsyta från Premium-kapacitet.
+Du kan också tilldela en arbetsyta till en Premium-kapacitet från arbetsytans inställningar. Du måste ha administratörsbehörighet för en arbetsyta och behörighet för kapacitetstilldelning för kapaciteten om du vill flytta en arbetsyta till en kapacitet. Observera att arbetsyteadministratörer alltid kan ta bort en arbetsyta från Premium-kapacitet.
 
-1. Redigera en apparbetsyta genom att välja ellipsen **(. . .)** och sedan **Redigera arbetsyta**.
+1. Redigera en arbetsyta genom att välja ellipsen **(...)** och sedan **Redigera arbetsyta**.
 
     ![Redigera arbetsyta från ellips-snabbmenyn](media/service-admin-premium-manage/edit-app-workspace.png)
 
 1. Under **Redigera arbetsyta** expanderar du **Avancerat**.
 
-1. Välj den kapacitet som du vill tilldela den här app-arbetsytan till.
+1. Välj den kapacitet som du vill tilldela arbetsytan till.
 
     ![Listruta för val av kapacitet](media/service-admin-premium-manage/app-workspace-advanced.png)
 
@@ -166,4 +165,4 @@ Mer information finns i [Installera Power BI-rapportservern](report-server/insta
 
 [Hantera Premium-kapaciteter](service-premium-capacity-manage.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

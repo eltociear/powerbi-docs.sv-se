@@ -1,6 +1,6 @@
 ---
 title: Konfigurera inställningar för arbetsytans dataflöde
-description: Konfigurera en apparbetsyta i Power BI så att den lagrar sin dataflödesdefinition och sina datafiler i Azure Data Lake Storage Gen2
+description: Konfigurera en arbetsyta i Power BI så att den lagrar sin dataflödesdefinition och sina datafiler i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 54c0936510c3d383df32fd8b1f99816726f74d9f
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523506"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432004"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurera inställningar för arbetsytans dataflöde (förhandsversion)
 
@@ -35,11 +35,11 @@ Vi tar en titt på båda sätten i följande avsnitt.
 
 ## <a name="create-a-new-workspace-configure-its-dataflow-storage"></a>Skapa en ny arbetsyta, konfigurera dess dataflödeslagring
 
-Om du vill skapa en ny apparbetsyta i Power BI-tjänsten väljer du **Arbetsytor > Skapa en apparbetsyta**.
+Om du vill skapa en ny arbetsyta i Power BI-tjänsten väljer du **Arbetsytor > Skapa arbetsyta**.
 
 ![Lägg till ny arbetsyta](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
-I dialogrutan Skapa apparbetsyta kan en gul ruta visas med rubriken **Förbättrade arbetsytor i förhandsversion**. Där ska du välja **Prova nu**.
+I dialogrutan Skapa arbetsyta kan du se en gul ruta med rubriken **Förbättrade arbetsytor i förhandsversion**. Där ska du välja **Prova nu**.
 
 ![Förbättrade arbetsytor i förhandsversion](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
@@ -47,7 +47,7 @@ I dialogrutan som visas kan du ge den nya arbetsytan ett unikt namn. Klicka inte
 
 ![Namnge din nya arbetsyta](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Expandera sedan området **Avancerat** i dialogrutan **Skapa en apparbetsyta** där du kan aktivera inställningen **Dataflödeslagring (förhandsgranskning)** .
+Expandera sedan området **Avancerat** i dialogrutan **Skapa arbetsyta** där du kan aktivera inställningen **Dataflödeslagring (förhandsgranskning)** .
 
 ![Avancerade inställningar för den nya arbetsytan](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
@@ -57,7 +57,7 @@ Välj **Spara** för att skapa den nya arbetsytan. Alla nya dataflöden som skap
 
 Istället för att skapa en ny arbetsyta kan du uppdatera en befintlig arbetsyta så att den lagrar definitionsfil och data på organisationens Azure Data Lake Storage Gen2-konto. Kom ihåg att lagringsinställningen för arbetsytans dataflöde bara kan ändras om arbetsytan inte redan innehåller något dataflöde.
 
-Redigera en apparbetsyta genom att välja ellipsen **(...)** och välj sedan **Redigera arbetsyta**. 
+Redigera en arbetsyta genom att välja ellipsen **(...)** och sedan **Redigera arbetsyta**. 
 
 ![Redigera arbetsytan](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -103,7 +103,7 @@ Det finns några ytterligare överväganden, som beskrivs i följande lista:
 
 **Power BI Desktop**-kunder kan inte komma åt dataflöden som lagrats på Azure Data Lake Storage Gen2-konton, såvida de inte är ägare till dataflödet. Se följande situation:
 
-1.  Anna skapar en ny apparbetsyta och konfigurerar den så att den lagrar dataflöden i organisationens data lake.
+1.  Anna skapar en ny arbetsyta och konfigurerar den så att den lagrar dataflöden i organisationens datasjö.
 2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
 3.  Ben får ett fel eftersom han inte har lagts till som auktoriserad användare i dataflödets CDM-mapp i datasjön.
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cc239ad33d8789d679fccd21339740af71155336
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67498995"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059448"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Kom igång med Power BI-mobilappen på iOS-enheter
 Microsofts Power BI för iOS-appen på iPhone, iPad eller iPod Touch ger dig den mobila BI-upplevelsen för Power BI, Power BI-rapportservern och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. Och hålla dig uppdaterad med dina mest aktuella data på din [Apple Watch](mobile-apple-watch.md).  
@@ -31,7 +31,7 @@ Sedan interagerar du i Power BI-mobilappen för iOS med dina instrumentpaneler o
 Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Hämta appen
-[Hämta iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Hämta iOS-appen") från Apples App Store till din iPhone, iPad eller iPod Touch.
+[Ladda ned iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Ladda ned iOS-appen") från Apple App Store till din iPhone, iPad eller iPod Touch.
 
 Du kan köra Power BI för iOS-appen på alla enheter med iOS 11 eller senare. 
 
@@ -109,7 +109,7 @@ Läs mer om att [konfigurera Power BI-mobilappar med Microsoft Intune](../../ser
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Vad är Power BI?](../../power-bi-overview.md)
+* [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
 
 

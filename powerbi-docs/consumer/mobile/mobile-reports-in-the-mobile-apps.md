@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 166b7d88e6ab55481ec56b0cf4f91628cd141bef
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ab96cc6d17d340c626775bf2a03e225968985835
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69985734"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019377"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Utforska rapporter i Power BI-mobilappar
 Gäller:
@@ -45,7 +45,7 @@ Det finns två ikoner för rapporter i Power BI-mobilapparna:
 > [!NOTE]
 > Genom att hålla telefonen i liggande orientering får du alltid liggande layout, även om rapportsidan har en telefonlayout.
 
-Om du vill gå till en rapport från en instrumentpanel trycker du på ellipsen (...) i det övre högra hörnet på en panel och sedan på **Öppna rapporten**:
+Om du vill gå till en rapport från en instrumentpanel trycker du på **Fler alternativ** (...) uppe till höger på en panel och sedan på **Öppna rapport**:
   
   ![Öppna rapporten](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -59,7 +59,7 @@ En tryckning är detsamma som en musklickning. Om du vill korsmarkera rapporten 
 När du trycker på ett sektorvärde markeras värdet och resten av rapporten delas upp med det värdet.
 När du trycker på en länk, knapp eller ett bokmärke kommer den åtgärd som har definierats av rapportens författare att utföras.
 
-Du märkte förmodligen att en kantlinje visas när du trycker på ett visuellt objekt. I det övre högra hörnet av kantlinjen finns det en ellips (…). Om du trycker på ellipsen visas en meny med åtgärder som du kan utföra på det visuella objektet:
+Du märkte förmodligen att en kantlinje visas när du trycker på ett visuellt objekt. Du ser **Fler alternativ** (...) uppe till höger på kantlinjen. Om du trycker på ellipsen visas en meny med åtgärder som du kan utföra på det visuella objektet:
 
 ![Visuellt objekt och meny](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -92,7 +92,7 @@ Läs mer om hur du [lägger till visning av detaljerad information i Power BI De
    
    
 ### <a name="using-the-actions-in-the-report-footer"></a>Använda åtgärderna i rapportsidfoten
-Från rapportens sidfot kan du utföra flera åtgärder på den aktuella rapportsidan eller i hela rapporten. Sidfoten ger snabb åtkomst till de vanligaste åtgärderna. Du kan komma åt andra åtgärder genom att trycka på ellipsen (...):
+Från rapportens sidfot kan du utföra flera åtgärder på den aktuella rapportsidan eller i hela rapporten. Sidfoten ger snabb åtkomst till de vanligaste åtgärderna. Du kan komma åt fler åtgärder genom att trycka på knappen **Fler alternativ** (...):
 
 ![Rapportens sidfot](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
@@ -105,7 +105,7 @@ Du kan flytta mellan rapportsidor genom att svepa från kanten av skärmen till 
 - Visa alla rapportåtgärder.
 
 #### <a name="all-report-actions"></a>Alla rapportåtgärder
-När du trycker på ellipsen (...) i rapportens sidfot, ser du alla åtgärder som du kan utföra i en rapport:
+När du trycker på **Fler alternativ** (...) i rapportens sidfot ser du alla åtgärder som du kan utföra i en rapport:
 
 
 ![Alla rapportåtgärder](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)

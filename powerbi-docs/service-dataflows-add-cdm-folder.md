@@ -1,6 +1,6 @@
 ---
 title: Lägg till en CDM-mapp i Power BI som ett dataflöde
-description: Konfigurera en apparbetsyta så att den lagrar sin definition av dataflöde och sina datafiler i Azure Data Lake Storage Gen2
+description: Konfigurera en arbetsyta så att den lagrar dataflödesdefinitionen och datafilerna i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bf2f9baff753b71563c9b5075d3b15be7ae833f9
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 3adc642d539ab8e1c1f1f60981a61fdc58a460ab
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522747"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432040"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
 
@@ -33,7 +33,7 @@ I följande avsnitt beskrivs hur du skapar ett dataflöde från en CDM-mapp.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Skapa ett dataflöde från en CDM-mapp
 
-För att skapa ett dataflöde från en CDM-mapp börjar du med att starta **Power BI-tjänsten** och välja en **apparbetsyta** från det vänstra navigeringsfönstret. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde.
+För att skapa ett dataflöde från en CDM-mapp börjar du med att starta **Power BI-tjänsten** och välja en **arbetsyta** från det vänstra navigeringsfönstret. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde.
 
 ![Skapa ett dataflöde i Power BI-tjänsten](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -74,7 +74,7 @@ Det finns några ytterligare saker att ta hänsyn till, som beskrivs i följande
 
 **Power BI Desktop**-användare kan inte komma åt dataflöden som är lagrade i Azure Data Lake Storage Gen2-kontot, såvida inte de är ägare av dataflödet eller de uttryckligen har godkänts för detta dataflödes CDM-mapp. Se följande situation:
 
-1.  Anna skapar en ny apparbetsyta och konfigurerar den så att den lagrar dataflöden från en CDM-mapp.
+1.  Anna skapar en ny arbetsyta och konfigurerar den för lagring av dataflöden från en CDM-mapp.
 2.  Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
 3.  Ben får ett fel eftersom han inte har lagts till som auktoriserad användare i dataflödets CDM-mapp i datasjön.
 

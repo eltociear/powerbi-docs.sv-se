@@ -2,7 +2,6 @@
 title: Samarbeta på en klassisk arbetsyta
 description: Läs mer om att samarbeta med Power BI Desktop-filer på din arbetsyta och med Office 365-tjänster som delar filer på OneDrive för företag, konversationer i Exchange, kalender och uppgifter.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 41aaf33602fc8a895d54666736d775ac53d5aaef
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cddb55ab85cfd6d8d6a5e49d81b83a80df2f81da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832423"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873176"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Samarbeta på en klassisk arbetsyta
 Power BI-arbetsytor är bra platser för samarbete med dina kollegor. Där kan ni skapa *appar* genom att arbeta med instrumentpaneler, rapporter och datauppsättningar. Den här artikeln gäller de ursprungliga, *klassiska* arbetsytorna.  
@@ -45,7 +44,7 @@ När du har skapat en Power BI Desktop-fil kan du publicera den på en arbetsyta
 ## <a name="collaborate-in-office-365"></a>Samarbeta i Office 365
 Samarbete i Office 365 börjar med den klassiska arbetsytan i Power BI.
 
-1. I Power BI-tjänsten väljer du pilen bredvid **Arbetsytor** > och väljer ellipsen (…) bredvid namnet på din arbetsyta. 
+1. Välj pilen bredvid **Arbetsytor** i Power BI-tjänsten och välj **Fler alternativ** (…) bredvid namnet på din arbetsyta. 
    
    ![Menyn Arbetsytor](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Från den här menyn kan samarbeta med din grupp på flera sätt: 
@@ -56,7 +55,7 @@ Samarbete i Office 365 börjar med den klassiska arbetsytan i Power BI.
    Första gången du gå till grupparbetsytan i Office 365 kan det ta en liten stund. Vänta mellan 15 och 30 minuter och uppdatera sedan webbläsaren.
 
 ## <a name="have-a-group-conversation-in-office-365"></a>Ha en gruppkonversation i Office 365
-1. Välj ellipsen (...) bredvid arbetsytans namn \> **Konversationer**. 
+1. Välj **Fler alternativ** (...) bredvid arbetsytans namn \> **Konversationer**. 
    
     ![Fliken Konversationer](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -66,7 +65,7 @@ Samarbete i Office 365 börjar med den klassiska arbetsytan i Power BI.
 2. Läs mer om [gruppkonversationer i Outlook för Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Schemalägg en händelse i kalendern för grupparbetsytan
-1. Välj ellipsen (…) bredvid arbetsytans namn \> **Kalender**. 
+1. Välj **Fler alternativ** (...) bredvid arbetsytans namn \> **Kalender**. 
    
    ![Fliken Kalender](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -80,6 +79,6 @@ Om du är ägare eller administratör för en arbetsyta kan du även lägga till
 
 ## <a name="next-steps"></a>Nästa steg
 * [Publicera appar i Power BI](service-create-distribute-apps.md).
-* Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+* Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 * Feedback? Besök [Power BI-idéer](https://ideas.powerbi.com/forums/265200-power-bi).
 

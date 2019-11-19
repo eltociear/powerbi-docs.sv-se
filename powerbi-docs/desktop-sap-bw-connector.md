@@ -2,7 +2,6 @@
 title: Använd anslutningstjänsten SAP BW i Power BI Desktop
 description: Använd anslutningstjänsten SAP BW i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: af227d2bcbbba2a27804ec74f14003f54aa89dde
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f55245fc037f48622bb636e961f59c796f267646
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514676"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879781"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Använd anslutningstjänsten SAP BW i Power BI Desktop
 Med Power BI Desktop kan du komma åt **SAP Business Warehouse (BW)** -data.
@@ -236,10 +235,11 @@ I följande tabell beskrivs det aktuella stödet för SAP BW.
 |Power BI Gateway     |Importera      | Samma som Power BI Desktop |         |   |   |
 |Power BI Gateway     |DirectQuery | Användare/lösenord        | Programserver | Saknas  | Ja  |
 |Power BI Gateway     |DirectQuery | Windows via personifiering (fast användare, ingen enkel inloggning) | Programserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
-|Power BI Gateway     |DirectQuery | Alternativet Använd SSO via Kerberos för DirectQuery-frågor | Programserver | *endast med* gsskrb5/gx64krb5   | Ja  |
+|Power BI Gateway     |DirectQuery | Alternativet Använd SSO via Kerberos för DirectQuery-frågor | Programserver | sapcrypto + gsskrb5/gx64krb5   | Ja  |
 |Power BI Gateway     |DirectQuery | Användare/lösenord        | Meddelandeserver | Saknas  | Ja  |
 |Power BI Gateway     |DirectQuery | Windows via personifiering (fast användare, ingen enkel inloggning) | Meddelandeserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
-|Power BI Gateway     |DirectQuery | Alternativet Använd SSO via Kerberos för DirectQuery-frågor | Meddelandeserver | sapcrypto + gsskrb5/gx64krb5  | Nej  |
+|Power BI Gateway     |DirectQuery | Alternativet Använd SSO via Kerberos för DirectQuery-frågor | Meddelandeserver | gsskrb5/gx64krb5  | Nej  |
+|Power BI Gateway     |DirectQuery | Alternativet Använd SSO via Kerberos för DirectQuery-frågor | Meddelandeserver | sapcrypto  | Ja  |
 
 
 

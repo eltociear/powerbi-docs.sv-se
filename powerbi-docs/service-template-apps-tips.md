@@ -2,19 +2,18 @@
 title: Tips för att skapa mallappar i Power BI
 description: Tips om hur du kan använda frågor, datamodeller, rapporter och instrumentpaneler för att skapa bra mallappar
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194788"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099746"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tips för att skapa mallappar i Power BI
 
@@ -132,7 +131,7 @@ Mallapparna stöder bara appar med exempeldata så var noga med att markera krys
 * Var noga med att följa dokumentationen om [Power BI-apperbjudanden](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * Om en instrumentpanel ingår i appen är det viktigt att den inte är tom.
 * Installera appen via applänken innan du skickar in den och se till att du kan ansluta datamängden och att appupplevelsen är som du har planerat.
-* Se till att ta bort alla onödiga anslutningar innan du laddar upp din bpix till mallappens arbetsyta.
+* Se till att ta bort alla onödiga anslutningar innan du laddar upp din bpix till mallarbetsytan.
 * Följ Power BI:s [Designmetodtips för rapporter och visuella objekt](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) för att få högsta inverkan på användarna och bli godkänd för distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
@@ -147,7 +146,7 @@ Mallapparna stöder bara appar med exempeldata så var noga med att markera krys
 | Datakällor | Datakällor som har stöd för schemalagd datauppdatering i molnet är tillåtna. <br>Stöds ej: <li> DirectQuery</li><li>Live-anslutningar (inte Azure AS)</li> <li>Lokala datakällor (personlig gateway och företagsgateway stöds inte)</li> <li>Realtid (pushdatamängder stöds inte)</li> <li>Sammansatta modeller</li></ul> |
 | Datauppsättning: över arbetsytor | Inga datauppsättningar över arbetsytor är tillåtna  |
 | Frågeparametrar | Stöds ej: Parametrar av typen ”Any” eller ”Binary” blockerar uppdateringsåtgärden för datauppsättningen |
-| Anpassade visuella objekt | Bara som offentligt tillgängliga anpassade visuella objekt stöds. [Anpassade visuella objekt för organisationer](power-bi-custom-visuals-organization.md) stöds inte |
+| Anpassade visuella objekt | Bara som offentligt tillgängliga anpassade visuella objekt stöds. [Anpassade visuella objekt för organisationer](developer/power-bi-custom-visuals-organization.md) stöds inte |
 
 ## <a name="next-steps"></a>Nästa steg
 

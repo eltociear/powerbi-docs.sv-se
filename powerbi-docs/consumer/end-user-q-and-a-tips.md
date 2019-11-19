@@ -2,21 +2,19 @@
 title: Tips för att ställa frågor med Frågor och svar
 description: Tips för att ställa frågor med Frågor och svar i Power BI
 author: mihart
-manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9fd5375684466eca49582ff9d153fd2533ad7e92
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67408196"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099018"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tips för att ställa frågor i Frågor och svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord och terminologi som Frågor och svar känner igen
@@ -66,7 +64,7 @@ Nedanstående lista använder presens men alla tempus kan kännas igen. Till exe
 |  |  |
 |**Högsta N**     |     (ordning, rangordning): uppifrån, längst ned, högsta, lägsta, först, sist, därefter, tidigaste, senaste, äldsta, senaste, den senaste, nästa            |
 |        |         |
-|**Visualiseringstyper**     |  alla visualiseringstyper som är inbyggda i Power BI.  Om detta är ett alternativ i fönstret Visualiseringar kan du inkludera det i din fråga.  Undantaget till den här regeln är [anpassade visuella objekt](../power-bi-custom-visuals.md) som du har lagt till i visualiseringsfönstret manuellt.  |
+|**Visualiseringstyper**     |  alla visualiseringstyper som är inbyggda i Power BI.  Om detta är ett alternativ i fönstret Visualiseringar kan du inkludera det i din fråga.  Undantaget till den här regeln är [anpassade visuella objekt](../developer/power-bi-custom-visuals.md) som du har lagt till i visualiseringsfönstret manuellt.  |
 |  |  Exempel: visa distrikt per månad och total försäljning som liggande diagram               |
 |        |         |
 |**Vad (relationen, kvalificerad)**  | när, var, vilken, vilket, hur många, hur mycket, hur många gånger, hur ofta, hur vanligt, belopp, kvantitet, antal, hur lång tid, vad                |
@@ -79,7 +77,9 @@ Frågor och svar gör sitt bästa för att förstå och besvara den ställda fö
 * innehåller en förhandsgranskning av svaret i form av ett visuellt objekt. Det visuella objektet uppdateras efter hand som du skriver och redigerar frågan (den väntar inte på att du ska trycka på Retur).
 * föreslår ersättningstermer from den underliggande datauppsättningen när du flyttar tillbaka pekaren till frågerutan.
 * ställer om frågan baserat på data i underliggande datauppsättningar. Frågor och svar ersätter orden med synonymer från den underliggande datauppsättningen. Genom att läsa omformuleringen vet du om Frågor och svar förstod din fråga eller inte. 
-* tonar ner ord som den inte förstår.
+* lägger till en dubbel understrykning för ord som den inte förstår.
+* lägger till en enkel understrykning för ord som den inte förstår.
+* gör att du kan kontakta ägaren till rapporten eller instrumentpanelen när termen inte går att hitta eller fråga inte genererar några resultat.
 
 ## <a name="dont-stop-now"></a>Sluta inte nu
 När Frågor och svar visar dina resultat kan du hålla igång samtalet! Använda det visuella objektets interaktiva funktioner och Frågor och svar för att få fler insikter.
@@ -89,5 +89,5 @@ Gå tillbaka till [Frågor och svar i Power BI](end-user-q-and-a.md)
 
 [Power BI – grundläggande begrepp](end-user-basic-concepts.md)  
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

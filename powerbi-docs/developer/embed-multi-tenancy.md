@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 3b33e2479ad114a2224c16c9d43e7797784624fc
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621301"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429644"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Hantera flera innehavare med Power BI Embedded-analys
 
@@ -37,7 +37,7 @@ Den här artikeln beskriver de olika metoderna och analyserar dem utifrån flera
 
 **Klient** – En enskild kund (organisation) som använder SaaS-programmet och eventuella resurser eller data som kunden förser SaaS-programmet med.
 
-**[Power BI](../power-bi-overview.md)** – Power BI-molntjänst som fungerar som en plattform för Power BI Embedded.
+**[Power BI](../fundamentals/power-bi-overview.md)** – Power BI-molntjänst som fungerar som en plattform för Power BI Embedded.
 
 **Power BI-klient** – En uppsättning Power BI-resurser som är associerade med en enda AAD-klient.
 
@@ -55,7 +55,7 @@ Den här artikeln beskriver de olika metoderna och analyserar dem utifrån flera
 
 **Kapacitet** – En uppsättning resurser som är dedikerade till att köra Power BI-tjänsten. [Power BI Premium-kapaciteter](../service-premium-what-is.md) Avsett för företag som använder Power BI internt, medan [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) är avsett för programutvecklare som utvecklar SaaS-program för tredje part.
 
-**[Power BI Pro-licens](../service-admin-purchasing-power-bi-pro.md)** – En användarbaserad licens, som beviljar rättigheter att publicera innehåll till apparbetsytor, använda appar utan Premium-kapacitet, dela instrumentpaneler och prenumerera på instrumentpaneler och rapporter.
+**[Power BI Pro-licens](../service-admin-purchasing-power-bi-pro.md)** – En användarbaserad licens, som ger behörighet att publicera innehåll till arbetsytor, använda appar utan Premium-kapacitet, dela instrumentpaneler och prenumerera på instrumentpaneler och rapporter.
 
 **[Dataanslutningslägen](../desktop-directquery-about.md)** – Det går att ansluta datakällor till Power BI på olika sätt:
 

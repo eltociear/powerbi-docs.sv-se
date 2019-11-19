@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160354"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432014"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
 
@@ -183,7 +183,7 @@ Det finns också några kända problem som beskrivs i det här avsnittet.
 
 Power BI Desktop-kunder kan inte komma åt dataflöden som lagrats på ett **Azure Data Lake Storage-konton**, såvida de inte är ägare till dataflödet eller har getts behörighet till Common Data Service-mappen i sjön. Scenariot är följande:
 
-1. Anna har skapat en ny apparbetsyta och konfigurerat den så att den lagrar dataflöden i organisationens data lake. 
+1. Anna har skapat en ny arbetsyta och konfigurerat den så att den lagrar dataflöden i organisationens datasjö. 
 2. Ben, som också är medlem i arbetsytan som Anna skapade, vill använda Power BI Desktop och anslutningsappen för dataflöden för att hämta data från det dataflöde som Anna skapade.
 3. Ben får ett liknande fel eftersom han inte var auktoriserad till dataflödets CDM-mapp i sjön.
 

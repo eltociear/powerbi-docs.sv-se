@@ -8,14 +8,14 @@ ms.topic: include
 ms.date: 09/10/2019
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: 1e64237490e45cfcf9a9a0102f3e03ecab138ce2
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 6d8de145f9158e4aa649fa39670fdf2808fc5af4
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904006"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021116"
 ---
-1. Börja med att skapa arbetsytan. Välj  **Arbetsytor** > **Skapa arbetsyta**. 
+1. Börja med att skapa arbetsytan. Välj **Arbetsytor** > **Skapa arbetsyta**. 
    
      ![Skapa arbetsyta](media/powerbi-service-create-app-workspace/power-bi-workspace-create.png)
    
@@ -53,7 +53,7 @@ ms.locfileid: "70904006"
 
 7. Välj **Spara**.
 
-Power BI skapar arbetsytan och öppnar den. Den visas i listan med arbetsytor som du är medlem i. Eftersom du är administratör kan du välja ellipsen (...) för att gå tillbaka och göra ändringar, lägga till nya medlemmar eller ändra deras behörigheter.
+Power BI skapar arbetsytan och öppnar den. Den visas i listan med arbetsytor som du är medlem i. Eftersom du är administratör kan du välja **Fler alternativ** (...) för att gå tillbaka och göra ändringar, lägga till nya medlemmar eller ändra deras behörigheter.
 
 ![Redigera arbetsytan](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

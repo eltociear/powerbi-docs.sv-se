@@ -7,66 +7,93 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 25295447736ddb674d23a7b4ac34aa04f44887ba
+ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408560"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72922517"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Lägg till en anpassad kolumn i Power BI Desktop
-Du kan enkelt lägga till en ny anpassad kolumn med data till din modell med hjälp av **Frågeredigeraren** i **Power BI Desktop**. Du kan skapa och ändra namn på din anpassade kolumn med enkla knappar för att skapa [M-formler](https://msdn.microsoft.com/library/mt270235.aspx) som definierar din anpassade kolumn. M-formeln har en [omfattande innehållsuppsättning med funktionsreferenser](https://msdn.microsoft.com/library/mt779182.aspx). 
 
-![](media/desktop-add-custom-column/add-custom-column_01.png)
+I Power BI Desktop kan du enkelt lägga till en ny anpassad kolumn med data i din modell med hjälp av Frågeredigeraren. I Frågeredigeraren kan du skapa och byta namn på den anpassade kolumnen för att skapa [PowerQuery M-formelfrågor](https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-formula-language) som definierar din anpassade kolumn. Det finns en [omfattande uppsättning funktionsreferenser](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) för PowerQuery M-formelfrågor. 
 
-Att skapa en anpassad kolumn är ett annat **tillämpat steg** till den fråga du skapar i **Frågeredigeraren**, vilket innebär att den kan förändras, flyttas tidigare eller senare, eller modifieras när som helst.
+När du skapar en anpassad kolumn i Frågeredigeraren så lägger Power BI Desktop till den som ett **tillämpat steg** i **Frågeinställningar** för frågan. Du kan när som helst ändra eller flytta kolumnen.
 
-## <a name="use-query-editor-to-add-a-new-custom-column"></a>Använd Frågeredigeraren för att lägga till en ny anpassad kolumn
-Om du vill skapa en ny anpassad kolumn, startar du **Frågeredigeraren**. Du gör detta genom att välja **Redigera frågor** från menyfliksområdet **Start** i **Power BI Desktop**.
+![Sidan Lägg till anpassad kolumn](media/desktop-add-custom-column/add-custom-column_01.png)
 
-![](media/desktop-add-custom-column/add-column-from-example_02.png)
+## <a name="use-query-editor-to-add-a-custom-column"></a>Använd Frågeredigeraren till att lägga till en anpassad kolumn
 
-När **Frågeredigeraren** har startats och du har läst in lite data, kan du lägga till en anpassad kolumn genom att välja fliken **Lägg till kolumn** i menyfliksområdet och sedan välja **anpassad kolumn**.
+Så här kommer du igång med att skapa en anpassad kolumn:
 
-![](media/desktop-add-custom-column/add-custom-column_02.png)
+1. Starta Power BI Desktop och läs in några data.
 
-Fönstret **Lägg till anpassad kolumn** visas, vilket beskrivs i följande avsnitt.
+2. Gå till fliken **Start** i menyfliksområdet, välj **Redigera frågor** och sedan **Redigera frågor** på menyn som visas.
+
+   ![Välj Redigera frågor](media/desktop-add-custom-column/add-column-from-example_02.png)
+
+   Fönstret **Frågeredigeraren** öppnas. 
+
+2. Gå till fliken **Lägg till kolumn** i menyfliksområdet och välj **Anpassad kolumn**.
+
+   ![Välj Anpassad kolumn](media/desktop-add-custom-column/add-custom-column_02.png)
+
+   Fönstret **Lägg till anpassad kolumn** öppnas.
 
 ## <a name="the-add-custom-column-window"></a>Fönstret Lägg till anpassad kolumn
-I fönstret **Lägg till anpassad kolumn** visas listan med tillgängliga fält i rutan till höger, namnet på din anpassade kolumn längst upp (du kan byta namn på den genom att skriva ett nytt namn i textrutan) och [**M**-formeln](https://msdn.microsoft.com/library/mt779182.aspx) som du skapar (eller skriver) baserat på att lägga till fält från höger, lägga till operatorer och på annat sätt skapa den formel som kommer att definiera din nya anpassade kolumn. 
 
-![](media/desktop-add-custom-column/add-custom-column_03.png)
+Fönstret **Lägg till anpassad kolumn** innehåller följande funktioner: 
+- En lista med tillgängliga kolumner i listan **Tillgängliga kolumner** till höger.
+
+- Standardnamnet för din anpassade kolumn i fältet **Nytt kolumnnamn**. Du kan ändra kolumnens namn.
+
+- [PowerQuery M-formelfrågor](https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference) i rutan **Formel för anpassad kolumn**. Du skapar de här frågorna genom att skapa formeln som definierar den nya anpassade kolumnen. 
+
+   ![Sidan Lägg till anpassad kolumn](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Skapa formler för din anpassade kolumn
-Du kan välja ett fält från listan **Tillgängliga kolumner:** till höger och välja **<< Infoga** för att lägga till dem i formeln för den anpassade kolumnen. Du kan även helt enkelt dubbelklicka på en kolumn i listan om du vill lägga till den.
 
-När du skriver in formeln och skapar din kolumn ser du längst ned i fönstret en indikator som visar dig i realtid (när du skriver) om några syntaxfel har identifierats. Om allt är bra visas en grön bockmarkering.
+1. Välj en kolumn i listan **Tillgängliga kolumner** till höger och välj sedan **Infoga** under listan för att lägga till kolumnen i formeln för den anpassade kolumnen. Du kan också lägga till en kolumn genom att dubbelklicka på den i listan.
 
-![](media/desktop-add-custom-column/add-custom-column_04.png)
+2. Lägg märke till indikatorn längst ned i fönstret **Lägg till anpassad kolumn** när du skriver formeln och skapar din kolumn. 
 
-Men om det finns någon typ av fel i din syntax visas en gul varningsikon, tillsammans med det fel som identifierats och en länk som placerar pekaren (i din formel) där felet identifierats.
+   Om det inte förekommer några fel ser du en grön bockmarkering och meddelandet *Inga syntaxfel har identifierats*.
 
-![](media/desktop-add-custom-column/add-custom-column_05.png)
+   ![Lyckad syntaxkontroll på sidan Lägg till anpassad kolumn](media/desktop-add-custom-column/add-custom-column_04.png)
 
-När du väljer **Ok**, läggs din anpassade kolumn till i modellen och steget **Lade till anpassad** läggs till i din frågas **Tillämpade steg**.
+   Om det förekommer syntaxfel ser du en gul varningsikon och en länk till felet i formeln.
 
-![](media/desktop-add-custom-column/add-custom-column_06.png)
+   ![Fel på sidan Lägg till anpassad kolumn](media/desktop-add-custom-column/add-custom-column_05.png)
 
-Om du dubbelklickar på steget **Lade till anpassat** i rutan **Tillämpade steg** så visas fönstret **Lägg till anpassad kolumn** igen, med den anpassade kolumnformeln som du skapat redan inläst och klar för dig att modifiera vid behov.
+3. Välj **OK**. 
 
-## <a name="using-the-advanced-editor-for-custom-columns"></a>Använd Avancerad redigerare för anpassade kolumner
-Du kan också skapa en anpassad kolumn (och modifiera valfritt steg i din fråga) med hjälp av **Avancerad redigerare**. I **Frågeredigeraren**, väljer du fliken **Visa** och markerar sedan **Avancerad redigerare** för att visa den **Avancerade redigeraren**.
+   Power BI Desktop lägger till din anpassade kolumn i modellen och lägger till steget **Lade till anpassad** i listan **Tillämpade steg**för frågan i **Frågeinställningar**.
 
-![](media/desktop-add-custom-column/add-custom-column_07.png)
+   ![Anpassad kolumn som lagts till i Frågeinställningar](media/desktop-add-custom-column/add-custom-column_06.png)
 
-**Avancerad redigerare** ger dig fullständig kontroll över din fråga.
+4. Om du vill ändra den anpassade kolumnen dubbelklickar du på steget **Lade till anpassad** i listan **Tillämpade steg**. 
 
+   Fönstret **Lägg till anpassad kolumn** visas med formeln för din anpassade kolumn.
+
+## <a name="use-the-advanced-editor-for-custom-columns"></a>Använda den avancerade redigeraren för anpassade kolumner
+
+När du har skapat din fråga kan du också använda den **avancerade redigeraren** till att ändra frågestegen. Gör så här:
+
+1. Gå till **Frågeredigeraren** och välj fliken **Visa** i menyfliksområdet. 
+
+2. Välj **Avancerad redigerare**.
+
+   Sidan **Avancerad redigerare** öppnas, där du har full kontroll över din fråga. 
+
+   ![Sidan Avancerad redigerare](media/desktop-add-custom-column/add-custom-column_07.png)
+
+   
 ## <a name="next-steps"></a>Nästa steg
-Det finns andra sätt att skapa en anpassad kolumn, inklusive att skapa en kolumn baserad på exempel du anger till **Frågeredigeraren**. Se följande artikel för mer information om hur du skapar anpassade kolumner från exempel:
 
-* [Lägg till en kolumn från ett exempel i Power BI Desktop](desktop-add-column-from-example.md)
-* [Power Query M-referens](/powerquery-m/power-query-m-reference)  
+- Du kan skapa anpassade kolumner på andra sätt, bland annat baserat på exempel du anger i Frågeredigeraren. Du kan läsa mer i [Lägg till en kolumn från ett exempel i Power BI Desktop](desktop-add-column-from-example.md).
+
+- Referensinformation om Power Query M finns i [funktionsreferensen till Power Query M](/powerquery-m/power-query-m-function-reference).
 

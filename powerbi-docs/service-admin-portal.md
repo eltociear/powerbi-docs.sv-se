@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 8a6e104a6fcb129a6e51d8424a8c2321ea74b49c
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305900"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442876"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -169,7 +169,9 @@ Följande avsnitt ger en översikt över de olika typerna av inställningar för
 
 Användare i organisationen kan gå till intern hjälp och ta del av supportresurser i Power BI:s Hjälp-meny. Mer specifikt ändrar parametrarna beteendet för menyalternativen Läs, Community och Få hjälp.
 
-Du kan också ange en URL för att dirigera användare till en anpassad lösning för licensieringsbegäranden. Den här parametern anpassar målwebbadressen för knappen Uppgradera konto som en användare utan Power BI Pro-licens kan hitta i dialogrutan Uppdatera till Power BI Pro och på sidan Hantera personlig lagring.
+    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+
+Genom att ange en webbadress för licensförfrågningar anpassar du måladressen för knappen **Uppgradera konto** som en användare utan Power BI Pro-licens ser i dialogrutan **Uppdatera till Power BI Pro** och på sidan **Hantera personlig lagring**. Dessutom visas inte längre knappen **Prova Pro utan kostnad** i den här dialogrutan i Power BI eller på lagringssidan, så att Power BI vägleder användarna genom de processer som organisationen definierat i licenshanteringen.
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Få e-postmeddelanden om tjänstavbrott eller incidenter
 
@@ -179,7 +181,7 @@ E-postaktiverade säkerhetsgrupper får e-postmeddelanden om den här klientorga
 
 ### <a name="create-workspaces"></a>Skapa arbetsytor
 
-Administratörer använder inställningen **Skapa arbetsytor** för att ange vilka användare i organisationen som får skapa apparbetsytor för att samarbeta på instrumentpaneler, rapporter och annat innehåll. Läs mer om [apparbetsytor](service-create-the-new-workspaces.md).
+Administratörer använder inställningen **Skapa arbetsytor** till att ange vilka användare i organisationen som får skapa arbetsytor för samarbete på instrumentpaneler, i rapporter och annat innehåll. Läs mer om [arbetsytor](service-create-the-new-workspaces.md).
 
 Administratörsportalen har ett annat avsnitt med inställningar för arbetsytorna i din klient. I det avsnittet kan du sortera och filtrera listan över arbetsytor och visa information för varje arbetsyta. Se [Arbetsytor](#workspaces) för mer information.
 
@@ -525,7 +527,7 @@ Som administratör kan visa du de arbetsytor som finns i din klientorganisation.
 
 På fliken **Arbetsytor** visas *tillståndet* för varje arbetsyta. Följande tabell innehåller mer information om innebörden av dessa tillstånd.
 
-|Delstat  |Beskrivning  |
+|Stat  |Beskrivning  |
 |---------|---------|
 | Aktiv | En normal arbetsyta. Det indikerar ingenting om användning eller innehåll, bara att själva arbetsytan är ”normal”. |
 | Frånkopplad | En arbetsyta utan administratörsanvändare. |

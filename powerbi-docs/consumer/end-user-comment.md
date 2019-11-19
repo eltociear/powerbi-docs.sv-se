@@ -2,7 +2,6 @@
 title: Lägga till kommentarer på instrumentpaneler och i rapporter
 description: I det här dokumentet visas hur du lägger till kommentarer på en instrumentpanel, i en rapport eller i ett visuellt objekt samt hur du använder kommentarer för att föra konversationer med samarbetspartner.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100524"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852038"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Lägga till kommentarer på en instrumentpanel eller i en rapport
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Lägg till en personlig kommentar eller starta en konversation om en instrumentpanel eller en rapport med dina kollegor. **Kommentarsfunktionen** är bara ett exempel på hur en *användare* kan samarbeta med andra. 
 
 ![kommentarsvideo](media/end-user-comment/comment.gif)
@@ -64,7 +66,7 @@ Processen för att lägga till kommentarer på en instrumentpanel liknar den dä
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Lägga till en kommentar i ett visst visuellt objekt på en instrumentpanel eller i en rapport
 Utöver att lägga till kommentarer på en hel instrumentpanel eller en hel rapportsida kan du lägga till kommentarer i enskilda instrumentpanelsrutor och enskilda visuella objekt i rapporter. Processerna liknar varandra, och i det här exemplet använder vi en rapport.
 
-1. Hovra över det visuella objektet och välj ellipsen (...).    
+1. Hovra över det visuella objektet och välj **Fler alternativ** (...).    
 2. Välj **Öppna kommentarer** i listrutan.
 
     ![Lägga till en kommentar är det första alternativet](media/end-user-comment/power-bi-report-comment.png)  

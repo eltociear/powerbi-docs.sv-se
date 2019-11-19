@@ -2,19 +2,18 @@
 title: Skapa en länk till en specifik plats i Power BI-mobilapparna
 description: Lär dig hur du skapar en djuplänk till en specifik instrumentpanel, panel eller rapport i Power BI-mobilappen med en URI (Uniform Resource Identifier).
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 427019d831aa02723f17efd3de78081c368717c2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "64906532"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879302"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Skapa en länk till en specifik plats i Power BI-mobilapparna
 Du kan använda länkar för att direkt komma åt specifika objekt i Power BI: Rapport, Instrumentpanel och Panel.
@@ -69,7 +68,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 
 #### <a name="links-of-apps-and-items-in-app"></a>Länkar för appar och objekt i app
 
-För **appar, rapporter och instrumentpaneler som ingår i en app** är det enklaste sättet att hämta länken att gå till apparbetsytan och välja ”Uppdatera app”. Då öppnas upplevelsen ”Publicera app”, och på fliken Åtkomst finns avsnittet **Länkar**. Om du expanderar det avsnittet visas en lista över appen och alla dess innehållslänkar som kan användas för att komma åt dem direkt.
+För **appar, rapporter och instrumentpaneler som ingår i en app** är det enklaste sättet att hämta länken att gå till arbetsytan och välja ”Uppdatera app”. Då öppnas upplevelsen ”Publicera app”, och på fliken Åtkomst finns avsnittet **Länkar**. Om du expanderar det avsnittet visas en lista över appen och alla dess innehållslänkar som kan användas för att komma åt dem direkt.
 
 ![Power BI – länkar för att publicera appar ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -117,6 +116,6 @@ Din feedback hjälper oss att bestämma vad som ska implementeras i framtiden, s
 
 * [Power BI-appar för mobila enheter](mobile-apps-for-mobile-devices.md)
 * Följ @MSPowerBI på Twitter
-* Delta i konversationen i [Power BI Community](http://community.powerbi.com/)
-* [Vad är Power BI?](../../power-bi-overview.md)
+* Delta i konversationen i [Power BI Community](https://community.powerbi.com/)
+* [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
 

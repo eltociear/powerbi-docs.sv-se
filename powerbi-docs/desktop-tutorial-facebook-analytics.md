@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 73f5d629806826eed0da51f5b7158d884d1c8725
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 689d86029150fa66daa90c4f93b71ed15750b095
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841392"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73018096"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Självstudie: Facebook-analyser med Power BI Desktop
 
@@ -147,7 +147,7 @@ Nu när du har importerat data från Facebook-sidan kan du snabbt och få enkelt
    
    ![Stapeldiagram](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Välj ellipsen (...) överst till höger i visualiseringen och välj sedan **Sortera efter antal kommentarer** för att sortera tabellen efter fallande antal kommentarer. 
+4. Välj **Fler alternativ** (...) uppe till höger i visualiseringen och sedan **Sortera efter antal kommentarer** för att sortera tabellen efter fallande antal kommentarer. 
    
    ![Sortera efter antal kommentarer](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
@@ -184,7 +184,7 @@ X-axeln (antal kommentarer) i diagrammet visar inte exakta värden och ser bortk
 
 Det var bättre, men alla dataetiketterna har en **.0**-decimal, vilket är störande och vilseledande eftersom **Antal inlägg** måste vara ett heltal. Du behöver ändra datatypen för kolumnen **Antal inlägg** till heltal.
 
-1. Om du vill redigera datatypen högerklickar du på **Fråga1** i fältlistan eller hovrar över den och väljer ellipsen (...) **Fler alternativ** och väljer sedan **Redigera fråga**. Du kan också välja **Redigera frågor** från området **Externa data** i fliken Start i menyfliksområdet och sedan välja **Redigera frågor** i listrutan. Power BI Desktop **Power Query Editor** öppnas i ett separat fönster.
+1. Om du vill redigera datatypen högerklickar du på **Query1** i fältlistan eller hovrar över den, väljer **Fler alternativ** (...) och sedan **Redigera fråga**. Du kan också välja **Redigera frågor** från området **Externa data** i fliken Start i menyfliksområdet och sedan välja **Redigera frågor** i listrutan. Power BI Desktop **Power Query Editor** öppnas i ett separat fönster.
    
    ![Redigera frågan från fältlistan](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Redigera frågor från menyfliksområdet](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    

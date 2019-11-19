@@ -2,19 +2,18 @@
 title: Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 description: Bjud in andra att visa dina instrumentpaneler och rapporter genom att dela länkar från Power BI-mobilapparna. Läs mer.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61274658"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879086"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Dela en instrumentpanel eller rapport från Power BI-mobilapparna
 Gäller för:
@@ -39,7 +38,7 @@ Du kan [kommentera på eller lägga till en ögonblicksbild i en panel, rapport 
    
    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delas med mig** i deras Power BI-konto.
    
-   ![Delad med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
@@ -69,7 +68,7 @@ Du kan bara avsluta delningen om du är ägaren.
    
    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
    
-   ![Delad med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
@@ -86,7 +85,7 @@ Du kan bara avsluta delningen om du är ägaren.
 3. För att ta bort delningen, tryck på den röda cirkeln bredvid ett namn och tryck på **Ta bort**.
 
 ## <a name="share-from-your-android-device"></a>Dela från din Android-enhet
-1. På startsidan för instrumentpaneler eller rapporter trycker du på ellipsen (...) och på **Bjud in en kollega**.
+1. På startsidan för instrumentpaneler eller rapporter trycker du på **Fler alternativ** (...) och sedan på **Bjud in en kollega**.
    
    ![Bjud in en kollega](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Eller tryck på inbjudningsikonen på en instrumentpanel eller i en rapport ![Ikon för inbjudan](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
@@ -140,12 +139,12 @@ Du kan bara avsluta delningen om du är ägaren.
    
    Mottagarna får en e-postinbjudan med en direktlänk till instrumentpanelen eller rapporten. Inbjudan upphör att gälla efter en månad. När de öppnar den i en webbläsare eller Power BI-mobilappen, läggs den till i området **Delat med mig** i deras Power BI-konto
    
-   ![Delad med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Delat med mig](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Läs mer [information om att dela med dina kollegor](../../service-share-dashboards.md).
 
 ## <a name="next-steps"></a>Nästa steg
 * [Lägga till anteckningar och dela ögonblicksbild av en panel, en rapport eller ett visuellt objekt i mobilapparna](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Dela en instrumentpanel eller rapport i Power BI](../../service-share-dashboards.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

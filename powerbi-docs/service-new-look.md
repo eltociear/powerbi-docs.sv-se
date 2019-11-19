@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 1612ae952489a047be884a25842bd47fd70d8447
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239969"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020195"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Det nya utseendet för Power BI-tjänsten
 
@@ -66,7 +66,7 @@ Vi har inte tagit bort några av funktionerna från det gamla utseendet. Du når
 
 ### <a name="where-are-file-menu-actions"></a>Var finns åtgärderna i Arkiv-menyn?
 
-Letar du åtgärderna i **Arkiv**-menyn? De åtgärder som förut fanns på **Arkiv**-menyn finns nu även på ellipsmenyn (...). 
+Letar du åtgärderna i **Arkiv**-menyn? De åtgärder som förut fanns på menyn **Arkiv** finns nu även på menyn **Fler alternativ** (...). 
 
 ![Arkiv-menyn i det nya utseendet](media/service-new-look/power-bi-file-menu-new-look.gif)
 

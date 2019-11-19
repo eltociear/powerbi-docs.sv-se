@@ -3,7 +3,6 @@ title: Optimera Power BI Premium-kapaciteter
 description: Beskriver optimeringsstrategier för Power BI Premium-kapaciteter.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1fb775bd203fc1e0f6342a0d5cd4d9e382b8342a
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: d2e8ede356ed015c4c35b311ca58d35366324b9a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750919"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871925"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimera Premium-kapaciteter
 
@@ -33,7 +32,7 @@ Artikeln avslutas med test av metoder och Premium-kapacitetsstorlek.
 
 Det finns rekommenderade metoder för att få bästa användning och prestanda. Du kan till exempel:
 
-- Använda apparbetsytor i stället för personliga arbetsytor.
+- Använda arbetsytor i stället för personliga arbetsytor.
 - Dela upp verksamhetskritisk och BI med självbetjäning (SSBI) i olika kapaciteter.
 
   ![Dela upp verksamhetskritisk och BI med självbetjäning i olika kapaciteter](media/service-premium-capacity-optimize/separate-capacities.png)
@@ -257,7 +256,7 @@ Det är viktigt att testerna är upprepningsbara. Testerna ska köras flera gån
 
 Om du redan har en kapacitet och de rapporter som du vill göra ett belastningstest för, kan du använda [PowerShell-verktyget för belastningsgenerering](https://aka.ms/PowerBILoadTestingTool) för att snabbt generera ett belastningstest. Med verktyget kan du uppskatta hur många instanser av varje rapport din kapacitet kan köra på en timme. Du kan använda verktyget till att utvärdera din kapacitets förmåga att återge en enskild rapport eller flera olika rapporter samtidigt. Mer information finns i videon [Microsoft Power BI: Premiumkapacitet](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-Om du vill generera ett mer komplext test kan du utveckla ett belastningstestprogram som simulerar en realistisk arbetsbelastning. Mer information finns i webbseminariet [Load Testing Power BI Applications with Visual Studio Load Test](https://powerbi.microsoft.com/en-us/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
+Om du vill generera ett mer komplext test kan du utveckla ett belastningstestprogram som simulerar en realistisk arbetsbelastning. Mer information finns i webbseminariet [Load Testing Power BI Applications with Visual Studio Load Test](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
 ## <a name="acknowledgements"></a>Bekräftelser
 

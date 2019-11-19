@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 9/22/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c157a486b66180de1299144e670210559a53258a
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: e3e360a47d258c6103377fa26a16c10eb2c8d4d5
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207596"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019638"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Visa datainsikter på instrumentpanelens paneler med Power BI
 Varje [panel](end-user-tiles.md) för visuella objekt på instrumentpanelen är en dörr in till datagranskning. När du väljer en panel öppnas en rapport eller [Frågor och svar](end-user-q-and-a.md) där du kan filtrera och sortera och fördjupa dig i datauppsättningen bakom rapporten. Och när du kör insikter, gör Power BI datagranskningen åt dig.
@@ -31,7 +31,7 @@ Funktionen insikter bygger på en växande [uppsättning avancerade analytiska a
 När du kör insikter på en panel på instrumentpanelen, söker Power BI exakt de data som används för att skapa denna enskilda panel. 
 
 1. [Öppna en instrumentpanel](end-user-dashboards.md).
-2. Hovra över en panel. välj ellipserna (...) och välj **Visa insikter**. 
+2. Hovra över en panel. välj **Fler alternativ** (...) och sedan **Visa insikter**. 
 
     ![läget ellips-menyn](./media/end-user-insights/power-bi-hovers.png)
 

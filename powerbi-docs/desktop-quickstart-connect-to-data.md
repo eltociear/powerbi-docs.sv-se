@@ -2,7 +2,6 @@
 title: 'Snabbstart: ansluta till data'
 description: Anslut till en datakälla i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 253ecbad775a2f4aa7dd1974c534fdcaa222676c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514462"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876218"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Snabbstart: Ansluta till datakällor i Power BI Desktop
 
@@ -28,12 +27,12 @@ Om du inte har registrerat dig för Power BI [registrerar du dig för en kostnad
 ## <a name="prerequisites"></a>Förutsättningar
 
 För att slutföra stegen i den här artikeln behöver du följande:
-* Hämta och installera **Power BI Desktop**, som är ett kostnadsfritt program som körs på den lokala datorn. Du kan [hämta **Power BI Desktop**](https://powerbi.microsoft.com/desktop) direkt eller så kan du hämta det från [**Microsoft Store**](http://aka.ms/pbidesktopstore).
-* [Hämta exemplet på en Excel-arbetsbok](http://go.microsoft.com/fwlink/?LinkID=521962) och skapa en mapp med namnet *C:\PBID-qs* där du kan spara Excel-filen. Efterföljande steg i den här snabbstarten förutsätter att detta är sökvägen för den hämta Excel-arbetsboken.
+* Hämta och installera **Power BI Desktop**, som är ett kostnadsfritt program som körs på den lokala datorn. Du kan [hämta **Power BI Desktop**](https://powerbi.microsoft.com/desktop) direkt eller så kan du hämta det från [**Microsoft Store**](https://aka.ms/pbidesktopstore).
+* [Hämta exemplet på en Excel-arbetsbok](https://go.microsoft.com/fwlink/?LinkID=521962) och skapa en mapp med namnet *C:\PBID-qs* där du kan spara Excel-filen. Efterföljande steg i den här snabbstarten förutsätter att detta är sökvägen för den hämta Excel-arbetsboken.
 
 ## <a name="launch-power-bi-desktop"></a>Starta Power BI Desktop
 
-När du har installerat **Power BI Desktop** startar du programmet så att det körs på den lokala datorn. Du börjar med en tom arbetsyta där du kan skapa visuella objekt och rapporter från data som du ansluter till. 
+När du har installerat **Power BI Desktop** startar du programmet så att det körs på den lokala datorn. Du ser en självstudie för Power BI. Gå igenom självstudien eller klicka bort den och börja med en tom arbetsyta, där du kan skapa visuella objekt och rapporter från data som du ansluter till. 
 
 ![Power BI Desktop – tom arbetsyta](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 

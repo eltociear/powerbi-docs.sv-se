@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b200ec86db339e42a708c3db042df06b9513cc6e
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 24dbce4d825e51d40fc9a42384561d4608f18035
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589490"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019901"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Granskningsläge i ett visuellt objekt i Power BI
 
@@ -128,7 +128,7 @@ En trädkarta som bara visar postnummer är inte användbar.  Så låt oss *expa
 ## <a name="show-the-data-as-you-drill"></a>Visa data medan du ändrar detaljnivå
 Använd **Visa data** för att se vad som händer bakom kulisserna. Varje gången du ökar detaljnivån eller expanderar visas de data som används för att bygga det visuella objektet när du använder **Visa data**. Detta kan hjälpa dig att förstå hur visuella objekt byggs upp genom en samverkan av hierarkier, detaljgranskning och expansion. 
 
-Välj ellipsen (...) i det övre högra hörnet och välj sedan **Visa data**. 
+Välj **Fler alternativ** (...) uppe till höger och sedan **Visa data**. 
 
 ![Skärmbild av ellipsmenyn.](./media/end-user-drill/power-bi-ellipses.png)
 

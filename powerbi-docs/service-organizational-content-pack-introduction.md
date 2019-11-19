@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020619"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431741"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
 > [!NOTE]
@@ -26,7 +26,7 @@ Distribuerar du regelbundet rapporter via e-post till ditt team? Prova det här 
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-Att skapa innehållspaket skiljer sig från att dela instrumentpaneler eller samarbeta med dem i en arbetsyta. Läs [Hur ska jag samarbeta med och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation. 
+Att skapa innehållspaket är inte samma sak som att dela instrumentpaneler eller samarbeta på dem i en arbetsyta. Läs [Hur ska jag samarbeta kring och dela instrumentpaneler och rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) för att välja det bästa alternativet för din situation. 
 
 I AppSource, kan du bläddra eller söka efter innehållspaket som publiceras till hela organisationen, distributioner eller säkerhetsgrupper och till de [Office 365-grupper som du tillhör](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Om du inte är medlem i en specifik grupp visas inte innehållspaket som delas med den gruppen. Alla medlemmar i gruppen har samma skrivskyddad åtkomst till innehållspaketets data, rapporter, arbetsböcker och instrumentpaneler (om det inte är en datakälla för SQL Server Analysis Services (SSAS), varmed dina behörigheter överförs med datakällan).
 
@@ -50,7 +50,7 @@ Livscykeln ser ut ungefär så här:
 1. Nate skapar ett innehållspaket i Power BI Pro och publicerar den i distributionsgruppen Marknadsföring. Uppdateringsinställningarna följer med datauppsättningen och kan bara ändras av Nate.
    
    > [!NOTE]
-   > Om Nate skapar ett innehållspaket inifrån den arbetsyta i [Power BI-appen](service-create-distribute-apps.md) som han tillhör kan andra personer i Power BI-arbetsytan ta över ägarskapet även om Nate lämnar arbetsytan.
+   > Om Nate skapar innehållspaketet från en [Power BI-arbetsyta](service-create-distribute-apps.md) som han tillhör kan andra personer i Power BI-arbetsytan ta över ägarskapet även om Nate lämnar arbetsytan.
    > 
    > 
 2. Nate skickar e-post till distributionsgruppen och informerar dem om det nya innehållspaketet.
@@ -58,7 +58,7 @@ Livscykeln ser ut ungefär så här:
 4. Låt oss säga att Jane bestämmer sig för att anpassa den. Jane har nu sin egen kopia av instrumentpanelen och rapporterna. Janes arbete påverkar inte källan, det ursprungliga innehållspaketet eller andra medlemmar i distributionsgruppen. Hon arbetar nu på sin egen kopia av instrumentpanelen och rapporten.
 5. Nate gör uppdateringar på instrumentpanelen, och när det är klart publicerar han en ny version av innehållspaketet.
    
-   * Julio, en annan medlem i distributionsgruppen har inte anpassat det ursprungliga innehållspaketet. De nya ändringarna tillämpas automatiskt på Janes version av innehållspaketet.  
+   * Julio, en annan medlem i distributionsgruppen har inte anpassat det ursprungliga innehållspaketet. De nya ändringarna tillämpas automatiskt på Julios version av innehållspaketet.  
    * Jane anpassade innehållspaketet. Jane får sedan ett meddelande om att det finns en ny version.  Jane kan gå till AppSource och få det uppdaterade innehållspaketet utan att förlora sin anpassade version. Jane har nu två versioner: den anpassade versionen och det uppdaterade innehållspaketet.
 6. Låt oss säga att Nate ändrar säkerhetsinställningarna. Julio och Jane har inte längre åtkomst till innehållet. Eller låt oss säga att de har tagits bort från distributionsgruppen Marknadsföring.
    

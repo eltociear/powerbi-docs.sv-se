@@ -9,14 +9,17 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903794"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019477"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *konsumenter*
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 En rapport är en eller flera sidor med visuella objekt. Rapporter skapas av Power BI-*designer* och [delas med *användare* direkt](end-user-shared-with-me.md) eller som en del av en [app](end-user-apps.md). 
 
 Det finns många olika sätt att öppna en rapport och vi kommer att visa dig två av dem: Öppna från startsidan och öppna från en instrumentpanel. 
@@ -52,7 +55,7 @@ Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i e
 
 6. Expandera fönstret **Filter** till höger. Filter som har tillämpats på den här rapportsidan eller i hela rapporten visas här.
 
-7. När du hovrar över ett visuellt rapportobjekt visas flera ikoner och en ellips (...). Om du vill se de filter som används för ett visst visuellt objekt väljer du filterikonen. Här har vi valt filterikonen för linjediagrammet *Totalt antal enheter efter rullande period och region*.
+7. När du hovrar över ett visuellt rapportobjekt visas flera ikoner och **Fler alternativ** (...). Om du vill se de filter som används för ett visst visuellt objekt väljer du filterikonen. Här har vi valt filterikonen för linjediagrammet *Totalt antal enheter efter rullande period och region*.
 
    ![flikar för rapportsida](./media/end-user-report-open/power-bi-visual-filters.png)
 
@@ -102,6 +105,7 @@ När du börjar bli mer bekväm med att använda Power BI-tjänsten, kommer du a
 - Med [Visa relaterade](end-user-related.md)    
 - I ett e-postmeddelande när någon [delar med dig](../service-share-reports.md) eller [ställer in en avisering](end-user-alerts.md)    
 - Från ditt [Meddelandecenter](end-user-notification-center.md)    
+- Från en arbetsyta
 - och mycket mer
 
 ## <a name="next-steps"></a>Nästa steg

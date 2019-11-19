@@ -3,20 +3,19 @@ title: Filtrera en rapport med frågesträngparametrar i URL:en
 description: Filtrera en rapport med hjälp av URL:en för frågesträngparametrar – du kan även filtrera på mer än ett fält.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623887"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876914"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrera en rapport med frågesträngparametrar i URL:en
 
@@ -153,7 +152,7 @@ Specialtecken och blanksteg kräver viss ytterligare formatering. När frågan i
 |---------|---------|---------|
 |**Tabellnamn**     | Blanksteg är 0x20        |  Table_x0020_Name       |
 |**Kolumn**@**Nummer**     |   @ är 0x40     |  Column_x0040_Number       |
-|**[Kolumn]**     |  [ är 0x0058 ] är 0x0050       |  _x0058_Column_x0050_       |
+|**[Kolumn]**     |  [ är 0x005B, ] är 0x005D       |  _x005B_Column_x005D_       |
 |**Column+Plus**     | + är 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![tabell för visuell rendering av specialtecken](media/service-url-filters/power-bi-special-characters1.png)
@@ -195,4 +194,4 @@ Det finns några saker som du bör vara medveten om när du använder frågestr�
 [Fästa en visualisering på en instrumentpanel](service-dashboard-pin-tile-from-report.md)  
 [Registrera dig för en kostnadsfri utvärderingsversion](https://powerbi.microsoft.com/get-started/)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

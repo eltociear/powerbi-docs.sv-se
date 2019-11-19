@@ -2,20 +2,19 @@
 title: Datakällor i Power BI Desktop
 description: Datakällor i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 56583c796a8f6e32bed67629dee4fe3bea677bee
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: c363e63a7354c2a8c66099a98cb441ce2c94becf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307855"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878372"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakällor i Power BI Desktop
 Med Power BI Desktop kan du ansluta till data från många olika källor. En fullständig lista med tillgängliga datakällor finns längst ned på den här sidan.
@@ -234,7 +233,7 @@ Du kan skapa en .PBIDS-fil för att effektivisera **Hämta data**-upplevelsen f�
 
 När en författare öppnar en .PBIDS-fil, öppnas Power BI Desktop och användaren uppmanas att ange autentiseringsuppgifter för att kunna autentisera och ansluta till den datakälla som anges i filen. Navigeringsdialogrutan visas och användaren måste välja de tabeller från datakällan som ska läsas in i modellen. Användarna kan också behöva välja databas(er) om det inte har angetts någon i .PBIDS-filen. 
 
-Från och med nu kan användaren börja skapa visualiseringar eller gå tillbaka till *Senast använda källor för att läsa in en ny uppsättning tabeller i modellen. 
+Från och med nu kan användaren börja skapa visualiseringar eller gå tillbaka till *Senast använda källor* för att läsa in en ny uppsättning tabeller i modellen. 
 
 För närvarande har .PBIDS-filer bara stöd för en enda datakälla i en enda fil. Om du anger fler än en datakälla uppstår ett fel. 
 
@@ -364,21 +363,20 @@ URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på
 **SQL Server**
 ```
 { 
-  “version”: “0.1”, 
-  “connections”: [ 
+  "version": "0.1", 
+  "connections": [ 
     { 
-      “details”: { 
-        “protocol”: “tds”, 
-        “address”: { 
-          “server”: “server-name-here”, 
-          “database”: “db-name-here (optional)” 
+      "details": { 
+        "protocol": "tds", 
+        "address": { 
+          "server": "server-name-here", 
+          "database": "db-name-here (optional) "
         } 
       }, 
-      “options”: {}, 
-      “mode”: “DirectQuery” 
+      "options": {}, 
+      "mode": "DirectQuery" 
     } 
   ] 
-} 
 } 
 ```
  
@@ -419,6 +417,24 @@ URL:en måste peka på själva SharePoint-webbplatsen och inte till en lista på
 ```
  
 
+**Dataflöde**
+```
+{
+  "version": "0.1",
+  "connections": [
+    {
+      "details": {
+        "protocol": "powerbi-dataflows",
+        "address": {
+          "workspace":"workspace id (Guid)",
+          "dataflow":"optional dataflow id (Guid)",
+          "entity":"optional entity name"
+        }
+       }
+    }
+  ]
+}
+```
 
 
 ## <a name="next-steps"></a>Nästa steg

@@ -1,5 +1,5 @@
 ---
-title: Skapa en prenumeration åt dig själv eller andra på rapporter och instrumentpaneler – Power BI
+title: Skapa en prenumeration åt dig själv eller andra på rapporter och instrumentpaneler
 description: Lär dig hur du skapar en prenumeration åt dig själv och andra på en ögonblicksbild av en Power BI-rapport, instrumentpanel eller sidnumrerad rapport.
 author: maggiesMSFT
 manager: kfile
@@ -8,19 +8,19 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2c08736e23568675af87e7de63092fff3a6a86c5
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e3e22a40b385ab519767eb850617a0506dbfbfd2
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073419"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891832"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Skapa en prenumeration åt dig eller andra på rapporter och instrumentpaneler i Power BI-tjänsten
 
-Du kan skapa en prenumeration åt dig själv och dina kollegor på de rapportsidor, instrumentpaneler och sidnumrerade rapporter som är viktigast för er. Power BI skickar en ögonblicksbild via e-post till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: varje dag, varje vecka, varje timme, varje månad eller efter den första datauppdateringen.  Om du väljer varje dag, varje vecka, varje timme eller varje månad kan du välja den tid du vill att prenumerationen ska löpa.  Totalt kan du ange upp till 24 olika prenumerationer per dag, för varje rapportsida och instrumentpanel.
+Du kan skapa en prenumeration åt dig själv och dina kollegor på de rapportsidor, instrumentpaneler och sidnumrerade rapporter som är viktigast för er. Power BI skickar en ögonblicksbild via e-post till din inkorg. Ange hur ofta du vill att Power BI ska skicka dig sådana e-postmeddelanden: varje dag, varje vecka, varje timme, varje månad eller efter den första datauppdateringen.  Om du väljer varje dag, varje vecka, varje timme eller varje månad kan du välja den tid du vill att prenumerationen ska löpa.  Du kan ställa in upp till 24 olika prenumerationer per rapport eller instrumentpanel.
 
 ![e-postmeddelande med ögonblicksbild av instrumentpanel](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 

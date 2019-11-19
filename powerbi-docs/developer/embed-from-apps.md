@@ -1,20 +1,19 @@
 ---
 title: Bädda in rapporter eller instrumentpaneler från appar
-description: Lär dig hur du integrerar eller bäddar in en rapport eller instrumentpanel från en Power BI-app och inte från en apparbetsyta.
+description: Lär dig hur du integrerar, eller bäddar in, en rapport eller instrumentpanel från en Power BI-app och inte från en arbetsyta.
 author: rkarlin
 ms.author: rkarlin
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-manager: kfile
 ms.date: 11/27/2018
-ms.openlocfilehash: 5a988eb160ce772d2c2e70e8cba2c01d3f0a36a9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 188601167684313c6e103063e67b9ba57fd2d451
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750891"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877677"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Bädda in rapporter eller instrumentpaneler från appar
 
@@ -42,7 +41,7 @@ I Power BI kan du skapa appar som samlar relaterade instrumentpaneler och rappor
 
 ## <a name="next-steps"></a>Nästa steg
 
-Läs om hur du bäddar in från apparbetsytor för kunder från tredje part och din organisation:
+Läs om hur du bäddar in från arbetsytor för kunder från tredje part och din organisation:
 
 > [!div class="nextstepaction"]
 >[Bädda in för kunder från tredje part](embed-sample-for-customers.md)

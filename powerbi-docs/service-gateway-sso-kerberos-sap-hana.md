@@ -8,39 +8,40 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 08/01/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9e7bdb0ae2f1e512e3e431cf69395d601cbc7b3f
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 4985e241811558c90298e72cf82cbec634e23eaa
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968536"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020819"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>Använda Kerberos för enkel inloggning (SSO) till SAP HANA
 
 I den här artikeln beskrivs hur du konfigurerar din SAP HANA-datakälla för att aktivera enkel inloggning från Power BI-tjänsten.
 
 > [!NOTE]
-> Slutför stegen i den här artikeln utöver stegen i [Konfigurera enkel inloggning med Kerberos](service-gateway-sso-kerberos.md) innan du försöker uppdatera en SAP HANA-baserad rapport som använder enkel inloggning med Kerberos.
+> Innan du försöker uppdatera en SAP HANA-baserad rapport som använder enkel inloggning med Kerberos ska du slutföra både stegen i den här artikeln och stegen i [Konfigurera enkel inloggning med Kerberos](service-gateway-sso-kerberos.md).
 
 ## <a name="enable-sso-for-sap-hana"></a>Aktivera enkel inloggning för SAP HANA
 
 För att aktivera enkel inloggning för SAP HANA följer du de här stegen:
 
-* Kontrollera att SAP HANA-servern har den lägsta version som krävs, vilket beror på nivån för SAP HANA-serverplattformen:
-  * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
-  * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
-  * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
-* Installera SAP:s senaste HANA ODBC-drivrutin på gatewaydatorn.  Den lägsta möjliga versionen är HANA ODBC version 2.00.020.00 från augusti 2017.
+1. Kontrollera att SAP HANA-servern har den lägsta version som krävs, vilket beror på nivån för SAP HANA-serverplattformen:
+   - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+   - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+   - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 
-Kontrollera att SAP HANA-servern har konfigurerats för Kerberos-baserad enkel inloggning. Mer information om hur du konfigurerar enkel inloggning för SAP HANA med hjälp av Kerberos finns i [Enkel inloggning med Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) i säkerhetsguiden för SAP HANA. Se även länkarna på sidan, särskilt SAP-kommentaren 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
+2. Installera den senaste SAP HANA ODBC-drivrutinen på gatewaydatorn. Den lägsta möjliga versionen är HANA ODBC version 2.00.020.00 från augusti 2017.
 
-Vi rekommenderar även att du följer dessa ytterligare steg, som kan ge en liten prestandaförbättring.
+3. Kontrollera att SAP HANA-servern har konfigurerats för Kerberos-baserad enkel inloggning. Mer information om hur du konfigurerar enkel inloggning för SAP HANA med hjälp av Kerberos finns i [Enkel inloggning med Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) i säkerhetsguiden för SAP HANA. Se även länkarna på sidan, särskilt SAP-kommentaren 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
 
-1. Sök efter och öppna den här konfigurationsfilen i gatewayens installationskatalog: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+Vi rekommenderar även att du utför dessa ytterligare steg som kan ge en liten prestandaförbättring:
 
-2. Leta upp egenskapen *FullDomainResolutionEnabled* och ändra dess värde till *True* (Sant).
+1. Sök efter och öppna den här konfigurationsfilen i gatewayens installationskatalog: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config.
+
+2. Leta rätt på egenskapen `FullDomainResolutionEnabled` och ändra värdet till `True`.
 
     ```xml
     <setting name=" FullDomainResolutionEnabled " serializeAs="String">
@@ -52,7 +53,7 @@ Vi rekommenderar även att du följer dessa ytterligare steg, som kan ge en lite
 
 ## <a name="next-steps"></a>Nästa steg
 
-Mer information om den **lokala datagatewayen** och **DirectQuery** finns i följande resurser:
+Du kan läsa mer om den lokala datagatewayen och DirectQuery i de här resurserna:
 
 * [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery i Power BI](desktop-directquery-about.md)

@@ -3,18 +3,17 @@ title: Migreringsverktyg för Power BI Embedded
 description: Det här migreringsverktyget kan användas för att kopiera dina rapporter från Power BI Embedded Azure-tjänsten (PaaS) till Power BI-tjänsten (SaaS).
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2970744f89bf8fdc115be018d00c8f5b73d9ddfc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61272245"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880580"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Migreringsverktyg för Power BI Embedded
 
@@ -132,7 +131,7 @@ En sökväg skapas automatiskt åt dig. Du kan ändra den här sökvägen om du 
 
 #### <a name="upload-plan"></a>Överföringsplan
 
-Här kan du ange ett prefix som ska användas för apparbetsytor som ska skapas i Power BI-tjänsten. Efter prefixet kommer att GUID för den arbetsyta som fanns i Azure.
+Här kan du ange ett prefix som ska användas för de arbetsytor du skapar i Power BI-tjänsten. Efter prefixet kommer att GUID för den arbetsyta som fanns i Azure.
 
 ![Ladda upp plan](media/migrate-tool/migrate-tool-upload-plan.png)
 
@@ -167,21 +166,21 @@ När hämtningen är klar väljer du fliken **Skapa grupper**.
 
 ## <a name="step-3-create-groups"></a>Steg 3: Skapa grupper
 
-När du har hämtat de rapporter som är tillgängliga går du till fliken **Skapa grupper**. Den här fliken skapar apparbetsytor i Power BI-tjänsten baserat på migreringsplanen som du skapade. Apparbetsytan skapas med det namn du angett på fliken **Överför** i **Analysera och planera migrering**.
+När du har hämtat de rapporter som är tillgängliga går du till fliken **Skapa grupper**. På den här fliken skapar du arbetsytor i Power BI-tjänsten baserat på den migreringsplan du skapade. Arbetsytan skapas med det namn du angett på fliken **Ladda upp** i **Analysera och planera migrering**.
 
 ![Skapa grupper](media/migrate-tool/migrate-tool-create-groups.png)
 
-Om du vill skapa apparbetsytor kan du antingen välja **Skapa valda grupper** eller **Skapa alla grupper som saknas**.
+När du ska skapa arbetsytor kan du antingen välja **Skapa valda grupper** eller **Skapa alla grupper som saknas**.
 
-När du väljer något av dessa alternativ kan du uppmanas att logga in. *Använd de autentiseringsuppgifter för Power BI-tjänsten som du använder för att skapa apparbetsytor.*
+När du väljer något av dessa alternativ kan du uppmanas att logga in. *Använd de autentiseringsuppgifter för Power BI-tjänsten som du använder för att skapa arbetsytor.*
 
 ![Skapa gruppinloggning](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-Detta skapar apparbetsytan i Power BI-tjänsten. Detta överför inte rapporterna till apparbetsytan.
+Detta skapar arbetsytan i Power BI-tjänsten. Rapporterna laddas inte upp till arbetsytan.
 
-Du kan kontrollera att apparbetsytan har skapats genom att logga in på Power BI och verifiera att arbetsytan finns. Du kan se att arbetsytan är tom.
+Du kan kontrollera att arbetsytan har skapats genom att logga in i Power BI och verifiera att arbetsytan finns. Du kan se att arbetsytan är tom.
 
-![Apparbetsyta](media/migrate-tool/migrate-tool-app-workspace.png)
+![arbetsyta](media/migrate-tool/migrate-tool-app-workspace.png)
 
 Efter att arbetsytan har skapats kan du gå vidare till fliken **Överför**.
 
@@ -235,9 +234,9 @@ Vi kan ändra namnet på SaaSTargetReportName för objektet som misslyckades.
 
 Vi kan sedan öppna planen igen i migreringsverktyget och överföra rapporten.
 
-När vi går tillbaka till Power BI ser vi att rapporterna och datauppsättningarna har överförts till apparbetsytan.
+När vi går tillbaka till Power BI ser vi att rapporterna och datauppsättningarna har överförts till arbetsytan.
 
-![Ladda upp apparbetsyta](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Ladda upp en arbetsyta](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -264,9 +263,9 @@ Du kan uppdatera anslutningssträngen för datamängden i Power BI-tjänst (SaaS
 
 ## <a name="embedding"></a>Bädda in
 
-När dina rapporter ha migrerats från Power BI Embedded Azure-tjänsten till Power BI-tjänsten kan du uppdatera din app och börja bädda in rapporterna i apparbetsytan.
+När dina rapporter ha migrerats från Power BI Embedded Azure-tjänsten till Power BI-tjänsten kan du uppdatera din app och börja bädda in rapporterna i arbetsytan.
 
-Mer information finns i [Så här migrerar du innehållspaket från Power BI Embedded till Power BI](migrate-from-powerbi-embedded.md).
+Mer information finns i [Så här migrerar du innehåll från Power BI Embedded-arbetsytesamlingar till Power BI](migrate-from-powerbi-embedded.md).
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -278,4 +277,4 @@ Mer information finns i [Så här migrerar du innehållspaket från Power BI Emb
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

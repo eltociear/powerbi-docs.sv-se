@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 564c3d03a7879cd7788e19055d8c11e4de46013f
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 7e66cbf11c8177a12dbbf825873adb4cef5f26fd
+ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543877"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169050"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Felsöka uppdateringsscenarier
 
@@ -25,6 +25,12 @@ Här hittar du information om olika scenarier som du kan stöta på när du uppd
 > Om det uppstår ett fel som inte finns i listan nedan och det orsakar problem kan du be om mer hjälp på [community-webbplatsen](http://community.powerbi.com/), eller så kan du skapa ett [supportärende](https://powerbi.microsoft.com/support/).
 >
 >
+
+## <a name="email-notifications"></a>E-postmeddelanden
+
+Kontakta Power BI-administratören om du hamnat i den här artikeln från ett e-postmeddelande och du inte längre vill ta emot e-postmeddelanden om uppdateringsproblem. Be administratören att ta bort din e-postadress eller en e-postlista du prenumererar på från lämpliga datamängder i Power BI. De kan göra detta från följande område i administratörsportalen för Power BI.
+
+![E-post om uppdateringsmeddelanden](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
 
 ## <a name="refresh-using-web-connector-doesnt-work-properly"></a>Uppdatering med hjälp av webbanslutningen fungerar inte korrekt
 

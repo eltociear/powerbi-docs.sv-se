@@ -11,14 +11,16 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327809"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019809"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Visa innehållet i detalj: fokusläge och fullskärmsläge
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -97,11 +99,11 @@ Det finns två sätt att öppna fokusläget på: ett för instrumentpaneler och 
 
 1. Öppna en instrumentpanel i Power BI-tjänsten.
 
-2. Hovra över instrumentpanelen eller det visuella rapportobjektet, välj ellipsen (...) och välj sedan **Öppna i fokusläge**.
+2. Hovra över instrumentpanelen eller det visuella rapportobjektet, välj **Fler alternativ** (...) och sedan **Öppna i fokusläge**.
 
     ![panelens ellipsmeny](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. Panelen öppnas och fyller hela rapportarbetsytan. Obs! Du har fortfarande ett **Filter**-fönster du kan använda för att interagera med det visuella rapportobjektet. Fönstret **Filter** kan komprimeras. 
+2. Panelen öppnas och fyller hela rapportarbetsytan. Obs! Du har fortfarande ett **Filter**-fönster du kan använda för att interagera med det visuella rapportobjektet. Fönstret **Filter** kan komprimeras.
 
    ![panelen fyller rapportarbetsytan](media/end-user-focus/power-bi-focus-filter.png)
 

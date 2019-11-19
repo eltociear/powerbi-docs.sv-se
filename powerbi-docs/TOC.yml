@@ -477,6 +477,10 @@
               href: service-the-report-editor-take-a-tour.md
             - name: Power BI-datakällor
               href: service-get-data.md
+            - name: Förstå Power BI-datauppsättningar
+              href: service-datasets-understand.md
+            - name: Förstå Power BI-datauppsättningslägen
+              href: service-dataset-modes-understand.md
             - name: Datauppdatering i Power BI
               href: refresh-data.md
         - name: Samarbeta i Power BI
@@ -509,7 +513,7 @@
               href: service-interruption-notifications.md
         - name: Utöka Power BI
           items:
-            - name: Microsoft Flow och Power BI
+            - name: Power Automate och Power BI
               href: service-flow-integration.md
             - name: Använda appar från tredje part
               href: service-power-bi-get-started-third-party-apps.md
@@ -1125,31 +1129,3 @@
       items:
         - name: Månatliga uppdateringar för gateway
           href: /data-integration/gateway/service-gateway-monthly-updates
-- name: Vägledning
-  items:
-    - name: Översikt
-      href: guidance/overview.md
-    - name: Vad är ett star-schema?
-      href: guidance/star-schema.md
-    - name: Minska datamodellstorlek
-      href: guidance/import-modeling-data-reduction.md
-    - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
-      href: guidance/dax-divide-function-operator.md
-    - name: Vikten av frågedelegering
-      href: guidance/power-query-folding.md
-    - name: Lämplig användning av felfunktioner
-      href: guidance/dax-error-functions.md
-    - name: Metodtips för dataflöden
-      href: service-dataflows-best-practices.md
-    - name: Vägledning för DirectQuery-modell i Power BI Desktop
-      href: guidance/directquery-model-guidance.md
-    - name: Vitböcker
-      items:
-        - name: Översikt vitböcker
-          href: whitepapers.md
-        - name: Vitbok Power BI-säkerhet
-          href: whitepaper-powerbi-security.md
-        - name: Power BI Premium-distribution
-          href: whitepaper-powerbi-premium-deployment.md
-        - name: Distribuera Power BI externt med hjälp av Azure Active Directory B2B
-          href: whitepaper-azure-b2b-power-bi.md

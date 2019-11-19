@@ -3,18 +3,17 @@ title: Power BI-behörigheter
 description: Power BI-behörigheter
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 8a48ec007f2d8c9c07de5cc0d51049e3dbf19662
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 14327f09ede41c23fd4fe7cc65fc4f8d3a91b926
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269368"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880442"
 ---
 # <a name="power-bi-permissions"></a>Power BI-behörigheter
 
@@ -42,11 +41,11 @@ Med Power BI:s behörigheter kan ett program vidta vissa åtgärder åt en anvä
 Ett program kan begära behörighet när den först försöker logga in på en användares sida genom att skicka begärda behörigheter i omfattningsparametern för anropet. Om behörigheten beviljas returneras en åtkomsttoken till appen som kan användas på framtida API-anrop. Åtkomsten kan endast användas med ett visst program.
 
 > [!NOTE]
-> Power BI-API:er refererar fortfarande till apparbetsytor som grupper. Alla referenser till grupper innebär att du arbetar med apparbetsytor.
+> I API:erna för Power BI kallas arbetsytor fortfarande för grupper. Referenser till grupper innebär att du arbetar med arbetsytor.
 
 ## <a name="requesting-permissions"></a>Begära behörighet
 
-Även om du kan anropa API:n för att autentisera med ett användarnamn och lösenord för att vidta åtgärder åt en annan användare, kommer de att behöva begära behörighet som användaren sedan godkänner och sedan skicka resulterande åtkomsttoken för alla framtida anrop. För den här processen följer vi standardprotokollet [OAuth 2.0](http://oauth.net/2/). Även om den faktiska implementeringen kan variera har flödet för OAuth för Power BI följande element:
+Även om du kan anropa API:n för att autentisera med ett användarnamn och lösenord för att vidta åtgärder åt en annan användare, kommer de att behöva begära behörighet som användaren sedan godkänner och sedan skicka resulterande åtkomsttoken för alla framtida anrop. För den här processen följer vi standardprotokollet [OAuth 2.0](https://oauth.net/2/). Även om den faktiska implementeringen kan variera har flödet för OAuth för Power BI följande element:
 
 * **Inloggnings-UI** – Detta är ett gränssnitt som utvecklare kan använda för att begära behörighet. Det kräver att användaren loggar in om den inte redan gjort det. Användaren måste också godkänna de behörigheter som programmet begär. Inloggningsfönstret skickar antingen tillbaka en åtkomstkod eller ett felmeddelande till en omdirigerings-URL som har angetts.
   * En standardomdirigerings-URL måste anges av Power BI för användning av interna program.
@@ -54,4 +53,4 @@ Ett program kan begära behörighet när den först försöker logga in på en a
 * **Auktoriseringstoken** – Används för att autentisera API-anrop åt en annan användare. De kommer att tillhöra ett visst program. Tokens har en angiven livslängd och när de upphör att gälla kommer de behöva uppdateras.
 * **Uppdateringstoken** – När tokens upphör sker en process för att uppdatera dem.
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

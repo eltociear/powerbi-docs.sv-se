@@ -2,20 +2,19 @@
 title: Självstudie om visualiseringar av viktiga influencers
 description: 'Självstudie: Skapa en visualisering av viktiga påverkare i Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 05/22/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544019"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871004"
 ---
 # <a name="key-influencers-visualization"></a>Visualisering av viktiga influencers
 
@@ -58,7 +57,7 @@ Titta på den här videon om du vill lära dig att skapa ett visuellt objekt fö
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Din produktchef vill att du tar reda på vilka faktorer som gjorde att kunder lämnade negativa omdömen om er molntjänst. Öppna [PBIX-filen med kundfeedback](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) i Power BI Desktop. Du kan också ladda ned [Excel-filen med kundfeedback för Power BI-tjänsten eller Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Din produktchef vill att du tar reda på vilka faktorer som gjorde att kunder lämnade negativa omdömen om er molntjänst. Öppna [PBIX-filen med kundfeedback](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) i Power BI Desktop. Du kan också ladda ned [Excel-filen med kundfeedback för Power BI-tjänsten eller Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Välj någon av länkarna och sedan **Ladda ned** från GitHub-sidan som öppnas.
 
 > [!NOTE]
 > Datamängden Customer Feedback (kundfeedback) bygger på [Moro et al., 2014] S. Moro, s. Cortez och s. Rita. ”A Data-Driven Approach to Predict the Success of Bank Telemarketing.” *Decision Support Systems*, Elsevier, 62:22–31, juni 2014. 
@@ -240,7 +239,7 @@ Viktigaste segment för numeriska mål visar grupper där huspriset i genomsnitt
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analysera ett mått som är ett mått eller en sammanfattad kolumn
 
-När det gäller ett mått eller en sammanfattad kolumn blir analysen som standard den **kontinuerliga analystyp** som beskrivs [ovan](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Detta kan inte ändras. Den största skillnaden mellan att analysera ett mått/en summerad kolumn och en ej sammanfattad numerisk kolumn är den nivå som analysen körs på.
+När det gäller ett mått eller en sammanfattad kolumn blir analysen som standard den **kontinuerliga analystyp** som beskrivs [ovan](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Detta kan inte ändras. Den största skillnaden mellan att analysera ett mått/en summerad kolumn och en ej sammanfattad numerisk kolumn är den nivå som analysen körs på.
 
 När det gäller ej sammanfattade kolumner körs analysen alltid på tabellnivån. I exemplet med huspris ovan analyserade vi måttet **Huspris** för att se vad som orsakar att ett huspris ökar/minskar. Analysen körs automatiskt på tabellnivån. Vår tabell har ett unikt ID för varje hus så att analysen körs på husnivå.
 
@@ -254,7 +253,7 @@ Mått och sammanfattade kolumner analyseras automatiskt på nivån för de **Fö
 
 Den här analysen är mycket sammanfattad, och det blir därför svårt för regressionsmodellen att hitta några mönster i de data som den kan lära sig från. Vi bör köra analysen på en mer detaljerad nivå för att få bättre resultat. Om vi ville analysera huspriset på husnivån skulle vi behöva lägga till fältet **ID** i analysen uttryckligen. Trots det vill vi inte att hus-ID ska betraktas som influerare. Det gör ingen nytta att få reda på att priset för ett hus ökar när hus-ID:t ökar. Här kan vi använda fältkällan **Expandera efter**. Du kan använda **Expandera efter** för att lägga till fält som du vill använda för att ange analysnivån utan att behöva leta efter nya influerare.
 
-Ta en titt på hur visualiseringen ser ut när vi har lagt till **ID** i **Expandera efter**. När du har definierat den nivå som du vill att måttet analyseras på fungerar tolkning av influerare på exakt samma sätt som för [ej sammanfattande numeriska kolumner](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Ta en titt på hur visualiseringen ser ut när vi har lagt till **ID** i **Expandera efter**. När du har definierat den nivå som du vill att måttet analyseras på fungerar tolkning av influerare på exakt samma sätt som för [ej sammanfattande numeriska kolumner](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
 
 ![Tabell med mått](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 

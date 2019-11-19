@@ -1,19 +1,19 @@
 ---
 title: Uttrycksexempel i Power BI Report Builder
 description: Uttryck används ofta i sidnumrerade rapporter i Power BI Paginated Report Builder för att kontrollera innehåll och rapportens utseende.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
+ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624150"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728549"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Uttrycksexempel i Power BI Report Builder
 Uttryck används ofta i sidnumrerade rapporter i Power BI Paginated Report Builder för att kontrollera innehållets och rapportens utseende. Uttryck skrivs i Microsoft Visual Basic och kan använda inbyggda funktioner, anpassad kod, rapport- och gruppvariabler samt användardefinierade variabler. Uttryck inledas med ett likhetstecken (=).   
@@ -34,8 +34,8 @@ Det här avsnittet innehåller exempel på uttryck som kan användas för ofta f
   
 Mer information om enkla och komplexa uttryck, var du kan använda uttryck och samt de typer av referenser som du kan inkludera i uttryck finns i ämnena under [Uttryck i Power BI Report Builder](report-builder-expressions.md). 
   
-## <a name="functions"></a>Funktioner  
- Många uttryck rapporter innehåller funktioner. Du kan formatera data, tillämpa logik och komma åt rapportmetadata med hjälp av dessa funktioner. Du kan skriva uttryck som använder funktioner från Microsoft Visual Basic-körningsbiblioteket samt från namnrymderna `xref:System.Convert` och `xref:System.Math`. Du kan lägga till referenser till funktioner från andra sammansättningar eller från anpassad kod. Du kan även använda klasser från Microsoft .NET Framework, däribland `xref:System.Text.RegularExpressions`.  
+## <a name="functions"></a>Functions  
+ Många uttryck rapporter innehåller funktioner. Du kan formatera data, tillämpa logik och komma åt rapportmetadata med hjälp av dessa funktioner. Du kan skriva uttryck som använder funktioner från Microsoft Visual Basic-körningsbiblioteket samt från namnrymderna `xref:System.Convert` och `xref:System.Math`. Du kan lägga till referenser i funktioner i anpassad kod. Du kan även använda klasser från Microsoft .NET Framework, däribland `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic-funktioner  
  Du kan använda Visual Basic-funktioner för att ändra data som visas i textrutor eller som används för parametrar, egenskaper eller andra delar av rapporten. Det här avsnittet innehåller exempel som visar några av dessa funktioner. Mer information finns i [Medlemmar i Visual Basic-körningsbiblioteket](https://go.microsoft.com/fwlink/?LinkId=198941) på MSDN.  
@@ -476,7 +476,7 @@ Mer information om enkla och komplexa uttryck, var du kan använda uttryck och s
     ```  
   
 ##  <a name="CustomCode"></a> Anpassad kod  
- Du kan använda anpassad kod i en rapport. Anpassad kod bäddas antingen in i en rapport eller lagras i en anpassad sammansättning som används i rapporten.  
+ Du kan använda anpassad kod som är inbäddad i en rapport. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Använda gruppvariabler för anpassad aggregering  
  Du kan initiera värdet för en gruppvariabel som är lokal för ett visst gruppomfång och sedan inkludera en referens till den variabeln i uttryck. Ett sätt att använda en gruppvariabel med anpassad kod är att implementera ett anpassat aggregat. 

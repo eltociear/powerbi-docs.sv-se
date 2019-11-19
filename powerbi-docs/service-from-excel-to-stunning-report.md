@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995116"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021006"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Från Excel-arbetsbok till fantastisk rapport i Power BI-tjänsten
 Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men senaste data finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och formatera en rapport, och du börjar bli nervös.
@@ -111,7 +111,7 @@ Vad sägs om att visa ett visuell objekt där man kan avläsa försäljning per 
 
 2. Ändra diagramtypen genom att välja en av ikonerna i menyn **Visualiseringar**. Ändra till exempel till ett **stående stapeldiagram**. 
 
-3. Om du vill sortera diagrammet väljer du ellipsen (…) > **Sortera efter**.
+3. Om du vill sortera diagrammet väljer du **Fler alternativ** (…) > **Sortera efter**.
 
    ![Stående stapeldiagram i rapportredigeraren](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
