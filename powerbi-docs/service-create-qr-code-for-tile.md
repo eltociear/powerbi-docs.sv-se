@@ -2,7 +2,6 @@
 title: Skapa en QR-kod för en panel i Power BI-mobilapparna
 description: Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information i Power BI-mobilappen – ingen sökning behövs.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e08d37f3db6156de21f00813a90b1c7544345abe
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 10faca7cf81575dddd2abb29afee1aca0e9f1279
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021194"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853352"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Skapa en QR-kod för en panel i Power BI som ska användas i mobilapparna
 Med QR-koderna i Power BI kan du ansluta vad som helst i verkligheten direkt till relaterad BI-information &#151; Ingen navigering eller sökning behövs.
@@ -55,5 +54,5 @@ Power BI genererar QR-koden som en JPG-fil som kan skrivas ut.
 * [Ansluta till Power BI-data från verkligheten](consumer/mobile/mobile-apps-data-in-real-world-context.md) med mobilapparna
 * [Skanna en QR-kod i Power BI från din mobila enhet](consumer/mobile/mobile-apps-qr-code.md)
 * [Skapa en QR-kod för en rapport](service-create-qr-code-for-report.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

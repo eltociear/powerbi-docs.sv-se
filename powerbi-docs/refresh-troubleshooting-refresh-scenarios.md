@@ -2,7 +2,6 @@
 title: Felsöka uppdateringsscenarier
 description: Felsöka uppdateringsscenarier
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,19 +9,19 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7e66cbf11c8177a12dbbf825873adb4cef5f26fd
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: d79fc47ff30d7f28827290268ba01edf09643032
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73169050"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860496"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Felsöka uppdateringsscenarier
 
 Här hittar du information om olika scenarier som du kan stöta på när du uppdaterar data i Power BI-tjänsten.
 
 > [!NOTE]
-> Om det uppstår ett fel som inte finns i listan nedan och det orsakar problem kan du be om mer hjälp på [community-webbplatsen](http://community.powerbi.com/), eller så kan du skapa ett [supportärende](https://powerbi.microsoft.com/support/).
+> Om det uppstår ett fel som inte finns i listan nedan och det orsakar problem kan du be om mer hjälp på [community-webbplatsen](https://community.powerbi.com/), eller så kan du skapa ett [supportärende](https://powerbi.microsoft.com/support/).
 >
 >
 
@@ -92,5 +91,5 @@ Datauppdateringar kan också misslyckas på grund av att cachelagrade autentiser
 - [Felsöka den lokala datagatewayen](service-gateway-onprem-tshoot.md)  
 - [Felsöka Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Har du fler frågor? [Prova att fråga Microsofts Power BI-community](http://community.powerbi.com/)
+Har du fler frågor? [Prova att fråga Microsofts Power BI-community](https://community.powerbi.com/)
 

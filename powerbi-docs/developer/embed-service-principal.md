@@ -3,19 +3,18 @@ title: Tjänstens huvudnamn med Power BI
 description: Lär dig hur du registrerar en app i Azure Active Directory med hjälp av tjänstens huvudnamn för användning med inbäddning av Power BI-innehåll.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: d8e1edc7d9d474911e7e7a58c2c7da728358845c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429264"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877659"
 ---
 # <a name="service-principal-with-power-bi"></a>Tjänstens huvudnamn med Power BI
 

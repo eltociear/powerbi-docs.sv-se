@@ -3,19 +3,18 @@ title: Använda Kerberos för enkel inloggning (SSO) till SAP HANA
 description: Konfigurera din SAP HANA-server till att aktivera enkel inloggning från Power BI-tjänsten
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4985e241811558c90298e72cf82cbec634e23eaa
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: bf255e97bbce8360de6fba314ac181b7633e6db3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020819"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872346"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>Använda Kerberos för enkel inloggning (SSO) till SAP HANA
 
@@ -55,7 +54,7 @@ Vi rekommenderar även att du utför dessa ytterligare steg som kan ge en liten 
 
 Du kan läsa mer om den lokala datagatewayen och DirectQuery i de här resurserna:
 
-* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-getting-started)
+* [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakällor som stöds av DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery och SAP BW](desktop-directquery-sap-bw.md)

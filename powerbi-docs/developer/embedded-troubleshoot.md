@@ -3,18 +3,17 @@ title: Felsök ditt inbäddade program
 description: Den här artikeln går igenom några vanliga problem som kan uppstå när du bäddar in innehåll från Power BI.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 5b9a0de8a3a9301219c15e5566854b591e79ba5e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 4038ffdb9a3218c0b2f04dd524463235fa91b6b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429331"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864093"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Felsök ditt inbäddade program
 
@@ -24,7 +23,7 @@ Den här artikeln går igenom några vanliga problem som kan uppstå när du bä
 
 ### <a name="fiddler-trace"></a>Fiddlerspårning
 
-[Fiddler](http://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se trafiken med Power BI-API:erna från klientdatorn. Det här verktyget visar fel och annan relaterad information.
+[Fiddler](https://www.telerik.com/fiddler) är ett kostnadsfritt verktyg från Telerik som övervakar HTTP-trafik.  Du kan se trafiken med Power BI-API:erna från klientdatorn. Det här verktyget visar fel och annan relaterad information.
 
 ![Fiddlerspårning](media/embedded-troubleshoot/fiddler.png)
 
@@ -80,7 +79,7 @@ En fiddler-avbildning kan krävas för att undersöka vidare. Det kan finnas fle
 * Azure AD-autentiseringstoken har upphört att gälla.
 * Den autentiserade användaren är inte medlem i gruppen (arbetsytan).
 * Den autentiserade användaren är inte administratör för gruppen (arbetsytan).
-* Den autentiserade användaren saknar behörighet. Behörigheter kan uppdateras med hjälp av [API:et refreshUserPermissions](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
+* Den autentiserade användaren saknar behörighet. Behörigheter kan uppdateras med hjälp av [API:et refreshUserPermissions](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions)
 * Auktoriseringsrubriken är kanske inte korrekt listad. Kontrollera att det inte finns några stavfel.
 
 Programmets serverdel kan behöva uppdatera auktoriseringstoken innan du anropar GenerateToken.
@@ -293,7 +292,7 @@ När du kör exempelappen **Embed for your organization** (Bädda in för din or
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-Felet beror på att omdirigerings-URL:en som angetts för webbserverprogrammet skiljer sig från exemplets URL. Om du vill registrera exempelprogrammet använder du `http://localhost:13526/` som omdirigerings-URL.
+Felet beror på att omdirigerings-URL:en som angetts för webbserverprogrammet skiljer sig från exemplets URL. Om du vill registrera exempelprogrammet använder du `https://localhost:13526/` som omdirigerings-URL.
 
 Om du vill redigera det registrerade programmet läser du avsnittet om hur du uppdaterar ett [Azure AD-registrerat program](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), så att programmet kan ge åtkomst till webb-API:erna.
 
@@ -305,7 +304,7 @@ Om du får felet – AADSTS50079: The user is required to use multi-factor authe
 
 Mer information finns i [Vanliga frågor om Power BI Embedded](embedded-faq.md).
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 
 Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) eller [skapa en supportbegäran via Azure-portalen](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) och ange de felmeddelanden du får.
 
@@ -313,4 +312,4 @@ Om du behöver ytterligare hjälp kan du [kontakta supporten](https://powerbi.mi
 
 Mer information finns i [Vanliga frågor och svar](embedded-faq.md).
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

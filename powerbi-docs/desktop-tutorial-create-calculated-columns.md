@@ -2,7 +2,6 @@
 title: 'Självstudie: Skapa beräknade kolumner i Power BI Desktop'
 description: 'Självstudie: Skapa beräknade kolumner i Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 92cd402c394fc2f03a9bba3149260c022116e9d7
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 4c1f6985a2ff88fa9ca595ad68456eed7a55c82e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017807"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876129"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Självstudie: Skapa beräknade kolumner i Power BI Desktop
 
@@ -28,7 +27,7 @@ I den här självstudien får du hjälp att förstå och skapa några beräknade
 ### <a name="prerequisites"></a>Förutsättningar
 - Den här självstudien är avsedd för Power BI-användare som redan är bekanta med Power BI Desktop och som vill skapa mer avancerade modeller. Du bör redan känna till hur man använder **Hämta data** och **Power Query-redigeraren** för att importera data, arbeta med flera relaterade tabeller och lägga till fält på rapportarbetsytan. Om du är nybörjare i Power BI Desktop bör du läsa [Komma igång med Power BI Desktop](desktop-getting-started.md).
   
-- I självstudiekursen används [Contoso-försäljningsexemplet för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), samma exempel som används för självstudien [Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). Dessa försäljningsdata från det fiktiva företaget Contoso, Inc. har importerats från en databas, så du kan inte ansluta till datakällan eller visa den i Power Query-redigeraren. Hämta och packa upp filen på din dator och öppna den sedan i Power BI Desktop.
+- I självstudiekursen används [Contoso-försäljningsexemplet för Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), samma exempel som används för självstudien [Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). Dessa försäljningsdata från det fiktiva företaget Contoso, Inc. har importerats från en databas, så du kan inte ansluta till datakällan eller visa den i Power Query-redigeraren. Hämta och packa upp filen på din dator och öppna den sedan i Power BI Desktop.
 
 ## <a name="create-a-calculated-column-with-values-from-related-tables"></a>Skapa en beräknad kolumn med värden från relaterade tabeller
 

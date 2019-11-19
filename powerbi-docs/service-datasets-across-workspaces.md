@@ -2,7 +2,6 @@
 title: Introduktion till datamängder mellan arbetsytor (förhandsversion)
 description: Lär dig hur du delar en datamängd med användare i organisationen. De kan sedan skapa rapporter baserat på din datamängd på sina egna arbetsytor.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5e445f24f78d4171c0c2c12ccbe4a1bf55b9825d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431924"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877204"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion till datamängder mellan arbetsytor (förhandsversion)
 
@@ -73,4 +72,4 @@ Specifika funktioner som bygger på funktionaliteten hos delade datamängder lic
 - [Höja upp datamängder](service-datasets-promote.md)
 - [Certifiera datamängder](service-datasets-certify.md)
 - [Styra användningen av datamängder mellan arbetsytor](service-datasets-admin-across-workspaces.md)
-- Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+- Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

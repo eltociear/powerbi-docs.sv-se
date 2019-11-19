@@ -2,7 +2,6 @@
 title: Skapa datainsikter automatiskt med Power BI
 description: Lär dig mer om att få insikter om dina datauppsättningar och instrumentpanelers paneler.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 428e392994a1b6934bf78d9cccbee1821744a622
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 5f571cabcc413947713cd232863b3ecad910436d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020226"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872229"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Skapa datainsikter automatiskt med Power BI
 Har du en ny datamängd och vet inte riktigt var du ska börja?  Behöver du skapa en instrumentpanel snabbt?  Vill du leta efter insikter som du kan ha missat?
@@ -96,5 +95,5 @@ I stället för att söka efter insikter mot en hel datamängd kan du begränsa 
 - Om du äger en datamängd [optimerar du den för Quick Insights](service-insights-optimize.md).
 - Lär dig mer om [tillgängliga typer av Quick Insights](service-insight-types.md).
 
-Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 

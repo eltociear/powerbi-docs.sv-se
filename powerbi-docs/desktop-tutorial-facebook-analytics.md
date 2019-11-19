@@ -2,7 +2,6 @@
 title: 'Självstudie: Facebook-analyser med Power BI Desktop'
 description: 'Självstudie: Facebook-analyser med Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 689d86029150fa66daa90c4f93b71ed15750b095
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 96811a2cfd7d08a210c4efd177e989abce16d25d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73018096"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876279"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Självstudie: Facebook-analyser med Power BI Desktop
 
@@ -241,8 +240,8 @@ Som du kan se är det enkelt att anpassa visualiseringar i rapporten för att vi
 I Power BI Desktop är det enkelt att hämta data från en stor mängd datakällor och utforma dem efter dina analysbehov för att visualisera datan på interaktiva sätt. När rapporten är klar kan du [ladda upp den på Power BI-tjänsten](desktop-upload-desktop-files.md) och skapa instrumentpanelen som baseras på den, och sedan dela den med andra Power BI-användare.
 
 ## <a name="next-steps"></a>Nästa steg
-* [Läs andra Power BI Desktop-självstudier](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Se Power BI Desktop-videor](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Besök Power BI-forumet](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Läs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Läs andra Power BI Desktop-självstudier](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Se Power BI Desktop-videor](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Besök Power BI-forumet](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Läs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)
 

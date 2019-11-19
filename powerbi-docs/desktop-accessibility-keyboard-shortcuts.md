@@ -2,7 +2,6 @@
 title: Kortkommandon i Power BI Desktop
 description: Så kan du använda kortkommandon i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3fecda9af7f329e32f07dc2967e5f6cf7ee553d6
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: 8c4db4d659c64fba8b7a79e6e36a5f27d8dd5d34
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73181124"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869383"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Kortkommandon i Power BI Desktop
 
@@ -117,7 +116,7 @@ Det finns några kända problem och begränsningar hos hjälpmedelsfunktionerna.
 
 ## <a name="next-steps"></a>Nästa steg
 
-Här är samlingen med artiklar om tillgänglighet i Power BI:
+Här är samlingen med artiklar om hjälpmedel i Power BI:
 
 * [Översikt över hjälpmedel i Power BI](desktop-accessibility-overview.md) 
 * [Skapa Power BI-rapporter med hjälpmedel](desktop-accessibility-creating-reports.md) 

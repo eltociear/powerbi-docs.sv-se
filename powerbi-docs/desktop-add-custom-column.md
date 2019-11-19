@@ -2,7 +2,6 @@
 title: Lägg till en anpassad kolumn i Power BI Desktop
 description: Skapa snabbt en ny anpassad kolumn i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,16 +9,16 @@ ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 25295447736ddb674d23a7b4ac34aa04f44887ba
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922517"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878883"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Lägg till en anpassad kolumn i Power BI Desktop
 
-I Power BI Desktop kan du enkelt lägga till en ny anpassad kolumn med data i din modell med hjälp av Frågeredigeraren. I Frågeredigeraren kan du skapa och byta namn på den anpassade kolumnen för att skapa [PowerQuery M-formelfrågor](https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-formula-language) som definierar din anpassade kolumn. Det finns en [omfattande uppsättning funktionsreferenser](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) för PowerQuery M-formelfrågor. 
+I Power BI Desktop kan du enkelt lägga till en ny anpassad kolumn med data i din modell med hjälp av Frågeredigeraren. I Frågeredigeraren kan du skapa och byta namn på den anpassade kolumnen för att skapa [PowerQuery M-formelfrågor](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) som definierar din anpassade kolumn. Det finns en [omfattande uppsättning funktionsreferenser](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) för PowerQuery M-formelfrågor. 
 
 När du skapar en anpassad kolumn i Frågeredigeraren så lägger Power BI Desktop till den som ett **tillämpat steg** i **Frågeinställningar** för frågan. Du kan när som helst ändra eller flytta kolumnen.
 
@@ -50,7 +49,7 @@ Fönstret **Lägg till anpassad kolumn** innehåller följande funktioner:
 
 - Standardnamnet för din anpassade kolumn i fältet **Nytt kolumnnamn**. Du kan ändra kolumnens namn.
 
-- [PowerQuery M-formelfrågor](https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference) i rutan **Formel för anpassad kolumn**. Du skapar de här frågorna genom att skapa formeln som definierar den nya anpassade kolumnen. 
+- [PowerQuery M-formelfrågor](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) i rutan **Formel för anpassad kolumn**. Du skapar de här frågorna genom att skapa formeln som definierar den nya anpassade kolumnen. 
 
    ![Sidan Lägg till anpassad kolumn](media/desktop-add-custom-column/add-custom-column_03.png)
 

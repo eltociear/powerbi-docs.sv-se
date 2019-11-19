@@ -2,19 +2,18 @@
 title: Visa instrumentpaneler och rapporter i Power BI-mobilappar
 description: Skapa eller anslut till instrumentpaneler och rapporter i Power BI-tjänsten. Visa dem sedan i Power BI-appar.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: b4c81e1c83ef53dcb16153b4e9996b259e9eb886
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059801"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870650"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Visa instrumentpaneler och rapporter i Power BI-mobilappar
 Gäller för:
@@ -40,7 +39,7 @@ Här är en instrumentpanel i Power BI-tjänsten:
 ## <a name="view-dashboards-on-your-iphone"></a>Visa instrumentpaneler på din iPhone
 1. Öppna Power BI-appen på din iPhone och logga in.
    
-   Behöver du [hämta iPhone-appen](http://go.microsoft.com/fwlink/?LinkId=522062) från Apple App Store?
+   Behöver du [hämta iPhone-appen](https://go.microsoft.com/fwlink/?LinkId=522062) från Apple App Store?
 2. Tryck på en instrumentpanel för att öppna den.  
    
     ![Tryck på instrumentpanel](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
@@ -80,7 +79,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
 ## <a name="view-dashboards-on-your-ipad"></a>Visa instrumentpaneler på din iPad
 1. Öppna Power BI-appen.
    
-   Behöver du [hämta iPad-appen](http://go.microsoft.com/fwlink/?LinkId=522062) från Apple App Store?
+   Behöver du [hämta iPad-appen](https://go.microsoft.com/fwlink/?LinkId=522062) från Apple App Store?
 2. Tryck på **instrumentpaneler** överst i appen.  
    
    ![Startsidan för instrumentpanelen](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
@@ -103,7 +102,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
 ## <a name="view-dashboards-on-your-android-phone"></a>Visa instrumentpaneler på din Android-telefon
 1. Öppna Power BI-appen på din Android-telefon och logga in.
    
-   Behöver du först [ladda ned Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Behöver du först [ladda ned Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Tryck på en instrumentpanel för att öppna den.   
    
    ![Startsidan för instrumentpanelen](./media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
@@ -127,7 +126,7 @@ Du kan använda gesten ”Zooma” för att zooma in och ut på olika områden i
 ## <a name="view-dashboards-on-your-android-tablet"></a>Visa instrumentpaneler på din Android-surfplatta
 1. Öppna Power BI-appen på din Android-surfplatta och logga in.
    
-   Behöver du först [ladda ned Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Behöver du först [ladda ned Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Tryck på en instrumentpanel för att öppna den.   
    
    ![Startsidan för instrumentpanelen](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
@@ -154,8 +153,8 @@ Om du är instrumentpanelens ägare i *Power BI-tjänsten* kan du skapa en vy p�
 Läs mer om [skapar en telefonvy av en instrumentpanel](../../service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>Nästa steg
-* [Hämta Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) från Google play  
+* [Hämta Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) från Google play  
 * [Kom igång med Android-appen för Power BI](mobile-android-app-get-started.md)  
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

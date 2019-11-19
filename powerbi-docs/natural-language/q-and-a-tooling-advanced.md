@@ -2,18 +2,17 @@
 title: Redigera språkschemat för Frågor och svar och lägga till fraser i Power BI Desktop
 description: I den här artikeln lär du dig hur du använder Power BI Desktop för att redigera språkschemat som används av Frågor och svar i Power BI.
 author: mohaali
-manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: 3bd5902227742a89402218b99ef8a024681be416
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875335"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Redigera språkschemat för Frågor och svar och lägga till fraser i Power BI Desktop 
 Användning av vanliga fraser och naturligt språk för att ställa frågor till dina data är kraftfullt. Det är ännu mer kraftfullt när dina data svarar. När du ställer en fråga till Frågor och svar i Power BI, gör funktionen vad den kan för att svara korrekt. Du kan dock få ännu bättre interaktion med Frågor och svar genom att förbättra svaren. Ett sätt är att redigera språkschemat. 
@@ -338,4 +337,4 @@ Om du gör en ändring i en .lsdl.yaml-fil som inte matchar språkschemats forma
 
 ![yaml-fil som visar fel](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

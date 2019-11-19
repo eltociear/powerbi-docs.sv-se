@@ -2,19 +2,18 @@
 title: Kom igång med Power BI-mobilappen för iOS
 description: Läs hur Microsoft Power BI-mobilappen för iOS ger dig tillgång till Power BI i fickan med mobil åtkomst till företagsinformation både lokalt och i molnet.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: cc239ad33d8789d679fccd21339740af71155336
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: dd43df2a01175657b39c1e3dcebe5ae6a9433e42
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059448"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870183"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Kom igång med Power BI-mobilappen på iOS-enheter
 Microsofts Power BI för iOS-appen på iPhone, iPad eller iPod Touch ger dig den mobila BI-upplevelsen för Power BI, Power BI-rapportservern och Reporting Services. Visa och interagera med ditt företags instrumentpaneler lokalt och i molnet överallt, med pekaktiverad mobil åtkomst i realtid. Utforska data i instrumentpaneler och dela med dina kollegor via e-post eller sms. Och hålla dig uppdaterad med dina mest aktuella data på din [Apple Watch](mobile-apple-watch.md).  
@@ -31,7 +30,7 @@ Sedan interagerar du i Power BI-mobilappen för iOS med dina instrumentpaneler o
 Ta reda på [nyheterna i Power BI-mobilapparna](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Hämta appen
-[Ladda ned iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Ladda ned iOS-appen") från Apple App Store till din iPhone, iPad eller iPod Touch.
+[Ladda ned iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Ladda ned iOS-appen") från Apple App Store till din iPhone, iPad eller iPod Touch.
 
 Du kan köra Power BI för iOS-appen på alla enheter med iOS 11 eller senare. 
 
@@ -75,7 +74,7 @@ Du kan visa och interagera med instrumentpanelsexemplen i Power BI, men det finn
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Hitta ditt innehåll i Power BI-mobilapparna
 Dina instrumentpaneler och rapporter lagras på olika platser i Power BI-mobilapparna beroende på var de kom från. Läs mer om [att hitta ditt innehåll i mobilapparna](mobile-apps-quickstart-view-dashboard-report.md). Dessutom kan du alltid söka efter det du har i Power BI-mobilapparna. 
 
-![Vänster navigeringsfönster](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+![Navigeringsfönster](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
 Läs mer om [att hitta ditt innehåll i mobilapparna](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -84,7 +83,7 @@ På sidan Favoriter i mobilapparna visas alla dina Power BI-favoritinstrumentpan
 
 * Tryck på **Favoriter**.
   
-   ![Favoriter i det vänstra navigeringsfönstret](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
+   ![Favoriter i navigeringsfönstret](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
   
    Alla dina favoriter visas tillsammans på den här sidan:
   
@@ -110,6 +109,6 @@ Läs mer om att [konfigurera Power BI-mobilappar med Microsoft Intune](../../ser
 ## <a name="next-steps"></a>Nästa steg
 
 * [Vad är Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 
 

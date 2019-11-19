@@ -2,7 +2,6 @@
 title: 'Självstudie: Skapa dina egna mått i Power BI Desktop'
 description: 'Självstudie: Skapa dina egna mått i Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 59567b62c44a386b3890f68de49b9f7aed76aa45
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ade9c163c017b13b0524c66f67f7a27378dc4b80
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019356"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865945"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Självstudie: Skapa dina egna mått i Power BI Desktop
 Du kan skapa några av de mest kraftfulla lösningarna för analys i Power BI Desktop med hjälp av mått. Mått hjälper dig genom att utföra beräkningar på dina data medan du interagerar med dina rapporter. I den här självstudien får du hjälp att förstå mått och skapa dina egna grundmått i Power BI Desktop.
@@ -23,7 +22,7 @@ Du kan skapa några av de mest kraftfulla lösningarna för analys i Power BI De
 ### <a name="prerequisites"></a>Förutsättningar
 - Den här självstudien är avsedd för Power BI-användare som redan är bekanta med Power BI Desktop och som vill skapa mer avancerade modeller. Du bör redan känna till hur man använder Hämta data och Frågeredigeraren för att importera data, att arbeta med flera relaterade tabeller och att lägga till fält på rapportarbetsytan. Om du är nybörjare i Power BI Desktop bör du läsa [Komma igång med Power BI Desktop](desktop-getting-started.md).
   
-- Hämta filen [Contoso försäljningsexempel för Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) som innehåller onlineförsäljningsdata från det fiktiva företaget Contoso, Inc. Dessa data importerades från en databas så du kommer inte kunna ansluta till datakällan eller visa den i frågeredigeraren. Packa upp filen på din dator och öppna den sedan i Power BI Desktop.
+- Hämta filen [Contoso försäljningsexempel för Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) som innehåller onlineförsäljningsdata från det fiktiva företaget Contoso, Inc. Dessa data importerades från en databas så du kommer inte kunna ansluta till datakällan eller visa den i frågeredigeraren. Packa upp filen på din dator och öppna den sedan i Power BI Desktop.
 
 ## <a name="understand-measures"></a>Förstå mått
 

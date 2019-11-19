@@ -2,21 +2,20 @@
 title: Power BI-administratörsportalen
 description: I administratörsportalen kan Power BI-klienterna i din organisation hanteras. Den innehåller sådant som användningsstatistik för åtkomst till Microsoft 365-administrationscenter och inställningar.
 author: mgblythe
-ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
+ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8a6e104a6fcb129a6e51d8424a8c2321ea74b49c
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442876"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128377"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -305,7 +304,7 @@ Användare i organisationen kan använda externa sökfunktioner som förlitar si
 
 ### <a name="add-and-use-custom-visuals"></a>Lägg till och använda anpassade visuella objekt
 
-Användare i organisationen kan interagera med och dela anpassad visuell information. [Läs mer](power-bi-custom-visuals.md)
+Användare i organisationen kan interagera med och dela anpassad visuell information. [Läs mer](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Den här inställningen kan tillämpas för hela organisationen eller begränsas till specifika grupper.
@@ -457,7 +456,7 @@ Som administratör kan du visa de inbäddningskoder som har genererats för din 
 
  ## <a name="organizational-visuals">Visuella organisationsobjekt</a> 
 
-Med fliken **organisationsobjekt** kan du distribuera och hantera anpassade visuella objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](power-bi-custom-visuals-organization.md)
+Med fliken **organisationsobjekt** kan du distribuera och hantera anpassade visuella objekt i din organisation. Med visuella objekt kan du enkelt distribuera egna visuella objekt i din organisation som rapportförfattarna kan sedan identifiera och importera till sina rapporter från Power BI Desktop. [Läs mer](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Ett anpassat visuellt objekt kan innehålla kod som innebär säkerhets- eller integritetsrisker. Kontrollera att författaren och det visuella objektets källa är betrodda innan du distribuerar till organisationens databas.
@@ -513,7 +512,7 @@ Välj kugghjulsikonen om du vill uppdatera det visuella objektet från organisat
 
 Kontrollera att visualiserings-ID förblir oförändrat. Den nya filen ersätter den tidigare filen för alla rapporter i hela organisationen. Men om den nya versionen av visualiseringen kan skada någon användnings- eller datastruktur av den tidigare versionen av visualiseringen ska du inte ersätta den tidigare versionen. I stället bör du skapa en ny lista för den nya versionen av visualiseringen. Lägg till exempel till ett nytt versionsnummer (version X.X) till rubriken för den nya listade visualiseringen. På det här sättet är det klart att det är samma visualisering men bara med ett uppdaterat versionsnummer så att befintliga rapporter inte skadar deras funktioner. Kontrollera igen att visualiserings-ID förblir oförändrat. Nästa gång användarna använder organisationens databas från Power BI Desktop kan de importera den nya versionen, vilket tvingar dem att ersätta den aktuella version som de har i sina rapporter.
 
-Mer information finns i [Vanliga frågor och svar om anpassade visuella objekt i en organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+Mer information finns i [Vanliga frågor och svar om anpassade visuella objekt i en organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals)
 
 ## <a name="dataflowStorage">Dataflödeslagring (förhandsversion)</a>
 
@@ -547,7 +546,7 @@ Som administratör kan du anpassa utseendet på Power BI för hela organisatione
 * **Välj temafärg**: Du kan välja tema baserat på ett hex-nummer eller RGB-värde eller från färgpaletten.
 
 
-Mer information finns i [Anpassad varumärkesanpassning för din organisation](http://aka.ms/orgBranding).
+Mer information finns i [Anpassad varumärkesanpassning för din organisation](https://aka.ms/orgBranding).
 
 ![Lista över arbetsytor](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Nästa steg

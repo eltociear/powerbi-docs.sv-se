@@ -2,7 +2,6 @@
 title: Skapa en kopia av en Power BI-instrumentpanel
 description: 'Så här duplicerar du en Power BI-instrumentpanel '
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: fc255cda798b528acf7f782efac742872a442d41
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021069"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872825"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Skapa en kopia av en instrumentpanel i Power BI-tjänsten
 ![instrumentpanel](media/service-dashboard-copy/power-bi-dashboard.png)
@@ -50,5 +49,5 @@ Om du vill göra en kopia av en instrumentpanel måste du vara instrumentpanelen
 ## <a name="next-steps"></a>Nästa steg
 * [Tips för att designa en bra instrumentpanel](service-dashboards-design-tips.md) 
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Felsöka Cortana för Power BI
 description: Om du har problem med Power BI Cortana kan du försöka med följande förslag.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 02e79522baa7580b019cec6956593d88260fb95b
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 9d6241659eaa5e6ff9c98b5c25dbfacb0bbac34d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432103"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872879"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Felsöka Cortana för Power BI
 Den här artikeln ingår i en serie. 
@@ -96,4 +95,4 @@ Letar du efter en instrumentpanel som har delats med dig?  Öppna Power BI > **D
 * Frågan måste innehålla minst två ord.  Lägg till ordet ”visa” om frågan är för kort.
 * Vissa frågesträngar med prepositioner kanske inte fungerar (till exempel försäljning per artikel). Prova olika söktermer som inte använder prepositioner och är meningsfulla/unika.
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

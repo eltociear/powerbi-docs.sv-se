@@ -3,19 +3,18 @@ title: Konfigurera Kerberos-baserad enkel inloggning från Power BI-tjänsten ti
 description: Konfigurera din gateway med Kerberos för att aktivera SSO (enkel inloggning) från Power BI till lokala datakällor
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 030c1880915029739ca38b6a57f9ab310e9b1f60
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 346051c5db34e091a9647205e807178c79ba0ee8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020345"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881507"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurera Kerberos-baserad enkel inloggning från Power BI-tjänsten till lokala datakällor
 
@@ -241,7 +240,7 @@ Den här konfigurationen fungerar i de flesta fall. Med Kerberos kan det dock f�
 
 ## <a name="next-steps"></a>Nästa steg
 
-Mer information om den lokala datagatewayen och DirectQuery finns i följande resurser:
+Du kan läsa mer om den lokala datagatewayen och DirectQuery i de här resurserna:
 
 * [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)

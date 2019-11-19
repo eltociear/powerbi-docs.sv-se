@@ -2,7 +2,6 @@
 title: DAX-grunder i Power BI Desktop
 description: DAX-grunder i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 524d04655d01b527707a59b941c84f5254ffea20
-ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
+ms.openlocfilehash: fcff0bf1d6c68b9bdb000855f4984b3664b882c1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72922491"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877921"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>DAX-grunder i Power BI Desktop
 Den här artikeln är avsedd för nya användare i Power BI Desktop. Den är tänkt som en snabb och enkel introduktion till hur du kan använda DAX (Data Analysis Expressions) till att lösa ett antal grundläggande problem med beräkningar och dataanalys. Vi går igenom en del begrepp, några aktiviteter du kan utföra och ställer några kunskapsfrågor där du får testa vad du har lärt dig. När du har läst den här artikeln bör du ha en god förståelse för de viktigaste grundläggande begreppen i DAX.
@@ -33,7 +32,7 @@ Vi fokuserar på förståelsen av de DAX-formler som används i beräkningar, i 
 
 ### <a name="example-workbook"></a>Arbetsboksexempel
 
-Det bästa sättet att lära sig DAX är att skapa några grundläggande formler, använda dem med faktiska data och se resultaten själv. I de här exemplen och uppgifterna använder vi filen [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip). Det här är samma exempelfil som används i [Självstudie: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). 
+Det bästa sättet att lära sig DAX är att skapa några grundläggande formler, använda dem med faktiska data och se resultaten själv. I de här exemplen och uppgifterna använder vi filen [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip). Det här är samma exempelfil som används i [Självstudie: Skapa dina egna mått i Power BI Desktop](desktop-tutorial-create-measures.md). 
 
 ## <a name="lets-begin"></a>Vi börjar!
 Om du ska förstå DAX måste du lära dig tre grundläggande begrepp: *Syntax*, *Funktioner* och *Kontext*. Det finns så klart andra viktiga begrepp i DAX, men om du förstår de här har du en bra grund för att utveckla dina DAX-kunskaper.
@@ -82,7 +81,7 @@ Nu ska vi skapa en enkel formel. Den här uppgiften hjälper dig att bättre fö
 
 ### <a name="task-create-a-measure-formula"></a>Uppgift: Skapa en måttformel
 
-1. [Ladda ned](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) och öppna filen Contoso Sales Sample for Power BI Desktop. 
+1. [Ladda ned](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) och öppna filen Contoso Sales Sample for Power BI Desktop. 
     
 2. I rapportvyn i fältlistan högerklickar du på tabellen **Sales** och väljer sedan **Nytt mått**.
     
@@ -213,7 +212,7 @@ Svaren finns i slutet av den här artikeln.
 ## <a name="summary"></a>Sammanfattning
 Nu när du har en grundläggande förståelse för de viktigaste begreppen i DAX, kan du börja skapa DAX-formler för mått på egen hand. DAX kan verkligen vara lite svårt att lära sig, men det finns många hjälpresurser som du kan använda dig av. När du har läst igenom den här artikeln och experimenterat med några av dina egna formler, kan du läsa mer om andra DAX-begrepp och formler som kan hjälpa dig att hitta dina egna lösningar. Det finns många DAX-resurser tillgängliga för dig; den viktigaste är [Referens för dataanalysuttryck (DAX)](https://msdn.microsoft.com/library/gg413422.aspx).
 
-Eftersom DAX har funnits i flera år i andra Microsoft BI-verktyg som Power Pivot och Analysis Services-tabellmodeller så det finns mycket användbar information där. Mer information hittar du i böcker, faktablad och bloggar från både Microsoft och ledande BI-tekniker. [DAX Resource Center Wiki på TechNet](http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) är också ett bra ställe att börja på.
+Eftersom DAX har funnits i flera år i andra Microsoft BI-verktyg som Power Pivot och Analysis Services-tabellmodeller så det finns mycket användbar information där. Mer information hittar du i böcker, faktablad och bloggar från både Microsoft och ledande BI-tekniker. [DAX Resource Center Wiki på TechNet](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) är också ett bra ställe att börja på.
 
 ### <a name="quickquiz-answers"></a>QuickQuiz-svar
 Syntax:

@@ -3,19 +3,18 @@ title: Så här köper du Power BI Premium
 description: Lär dig hur du kan köpa Power BI Premium och ge åtkomst till innehåll för hela organisationen.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 1d2ff47fdbc31598524986742319ab36c8f3e957
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: b9681b15b0eef4415849b59e903440f9d904b1f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442893"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856885"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Så här köper du Power BI Premium
 
@@ -107,4 +106,4 @@ När du avbryter din Premium-prenumeration eller kapacitetslicensen upphör att 
 [Vanliga frågor och svar om Power BI Premium](service-premium-faq.md)\
 [Planera ett white paper för en företagsdistribution för Power BI](https://aka.ms/pbienterprisedeploy)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

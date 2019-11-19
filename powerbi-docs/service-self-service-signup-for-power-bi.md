@@ -2,7 +2,6 @@
 title: Registrera dig själv som enskild individ för Power BI
 description: Lär dig hur du registrerar dig för Power BI och börjar använda det för dataanalys och visualiseringar.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/31/2019
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 785aad2cb7fe369805d8562eb8e493fb65036ef0
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: b7dae4c3b4ce35ec6af82ae59c374ab31937881a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442842"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871528"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>Registrera dig själv som enskild individ för Power BI
 
@@ -88,4 +87,4 @@ I de flesta fall kan du registrera dig för Power BI genom att följa processen 
 [Köp Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI-serviceavtal för enskilda användare](https://powerbi.microsoft.com/terms-of-service/)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

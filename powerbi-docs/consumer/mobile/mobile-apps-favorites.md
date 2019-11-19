@@ -2,19 +2,18 @@
 title: Favoriter i Power BI-mobilappar
 description: Läs om hur du kan skapa och visa dina Power BI-favoritinstrumentpaneler, rapporter och appar, plus Power BI-rapportserver- och Reporting Services-rapporter och KPI:er i mobilappar.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 53ea3444be75b32390789205ab96c87fa8ff2ce6
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: c4fcf7bea8bf458231533efbc88e307d8d9ba2ab
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73017834"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870687"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Skapa och visa favoriter i Power BI-mobilappar
 Gäller för:
@@ -77,5 +76,5 @@ Du kan visa dina Power BI-rapportserver- och Reporting Services-favoritrapporter
 
 ## <a name="next-steps"></a>Nästa steg
 * [Favoritinstrumentpaneler i Power BI-tjänsten](../end-user-favorite.md) 
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

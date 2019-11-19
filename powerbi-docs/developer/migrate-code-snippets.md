@@ -3,18 +3,17 @@ title: Kodfragment för migrering av innehåll från Power BI Embedded
 description: Här följer några kodfragment med grundläggande åtgärder som krävs för migrering av innehåll
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 83c3257fb9aaaee01efdfceaac93c1d32aeebba0
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 95c249fe2326d9075d920a415c707811d19e5387
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429173"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880500"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodfragment för migrering av innehåll från Power BI-arbetsytesamling
 
@@ -240,4 +239,4 @@ I det här fragmentet antar vi att datauppsättningen som ska skickas redan finn
 [JavaScript-inbäddningsexempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium – white paper](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
