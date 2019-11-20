@@ -3,19 +3,18 @@ title: Använda enkel inloggning med Kerberos för enkel inloggning till SAP BW 
 description: Konfigurera din SAP BW-server för att aktivera enkel inloggning från Power BI-tjänsten med hjälp av CommonCryptoLib (sapcrypto.dll)
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 97cae53e102538bba7ed969cefe0541d500c33bc
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 63b5abde7deb5f6d93fb7702f0b1244bd193a47d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020892"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872410"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Använda enkel inloggning med Kerberos för enkel inloggning till SAP BW med hjälp av CommonCryptoLib (sapcrypto.dll)
 
@@ -31,7 +30,7 @@ I den här artikeln beskrivs hur du konfigurerar din SAP BW-datakälla för att 
 
 1. Se till att din BW-server är korrekt konfigurerad för enkel inloggning med Kerberos via CommonCryptoLib. Om den är det kan du använda enkel inloggning för att komma åt din BW-server (antingen direkt eller via en SAP BW-meddelandeserver) med ett SAP-verktyg som SAP-gränssnittet som har konfigurerats till att använda CommonCryptoLib. 
 
-   Mer information om konfigurationssteg finns i [Enkel inloggning med SAP: Autentisera med Kerberos/SPNEGO](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). BW-servern ska använda CommonCryptoLib som SNC-bibliotek och ha ett SNC-namn som börjar med *CN=* , till exempel *CN=BW1*. Mer information om krav för SNC-namn (i synnerhet för parametern snc/identity/as) finns i [SNC-parametrar för Kerberos-konfiguration](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/360534094511490d91b9589d20abb49a.html).
+   Mer information om konfigurationssteg finns i [Enkel inloggning med SAP: Autentisera med Kerberos/SPNEGO](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). BW-servern ska använda CommonCryptoLib som SNC-bibliotek och ha ett SNC-namn som börjar med *CN=* , till exempel *CN=BW1*. Mer information om krav för SNC-namn (i synnerhet för parametern snc/identity/as) finns i [SNC-parametrar för Kerberos-konfiguration](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/360534094511490d91b9589d20abb49a.html).
 
 1. Om du inte redan har gjort det installerar du x64-versionen av [SAP .NET-anslutningsprogrammet](https://support.sap.com/en/product/connectors/msnet.html) på den dator där gatewayen har installerats. 
    
@@ -102,7 +101,7 @@ Om du inte kan uppdatera rapporten i Power BI-tjänsten kan du använda gateways
 
 ### <a name="cpic-tracing"></a>CPIC-spårning
 
-1. För att aktivera CPIC-spårning anger du två miljövariabler: **CPIC**TRACE\_ och \_CPIC**TRACE\_DIR**. 
+1. För att aktivera CPIC-spårning anger du två miljövariabler: **CPIC\_TRACE** och **CPIC\_TRACE\_DIR**. 
 
    Den första variabeln anger spårningsnivån och den andra variabeln anger katalogen för spårningsfilen. Katalogen måste vara en plats som medlemmar i gruppen Autentiserade användare kan skriva till. 
  
@@ -138,7 +137,7 @@ Om du inte kan uppdatera rapporten i Power BI-tjänsten kan du använda gateways
 
 ## <a name="next-steps"></a>Nästa steg
 
-Mer information om den lokala datagatewayen och DirectQuery finns i följande resurser:
+Du kan läsa mer om den lokala datagatewayen och DirectQuery i de här resurserna:
 
 * [Vad är en lokal datagateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)

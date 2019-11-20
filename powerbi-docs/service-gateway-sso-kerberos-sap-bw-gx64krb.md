@@ -3,19 +3,18 @@ title: Använda Kerberos för enkel inloggning (SSO) till SAP BW med hjälp av g
 description: Konfigurera din SAP BW-server till att aktivera enkel inloggning från Power BI-tjänsten med hjälp av gx64krb5
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0063ca280667e12fb2cf4d0432651f8145495ac8
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: a162ba686c3f548ed371e7a63c2d85dd1f697462
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020313"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881476"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Använda Kerberos för enkel inloggning (SSO) till SAP BW med hjälp av gx64krb5
 
@@ -189,7 +188,7 @@ Om du får något av följande problem följer du dessa steg för att felsöka g
 
 1. Aktivera SAP BW-spårning och granska de genererade loggfilerna. Det finns flera olika typer av SAP BW-spårning (som CPIC-spårning):
 
-   a. För att aktivera CPIC-spårning anger du två miljövariabler: **CPIC**TRACE\_ och \_CPIC**TRACE\_DIR**.
+   a. För att aktivera CPIC-spårning anger du två miljövariabler: **CPIC\_TRACE** och **CPIC\_TRACE\_DIR**.
 
       Den första variabeln anger spårningsnivån och den andra variabeln anger katalogen för spårningsfilen. Katalogen måste vara en plats som medlemmar i gruppen Autentiserade användare kan skriva till. 
  
