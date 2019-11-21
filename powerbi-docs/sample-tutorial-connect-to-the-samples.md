@@ -2,7 +2,6 @@
 title: Ansluta till exemplen i Power BI-tjänsten
 description: Lär dig att installera och utforska exemplen i Power BI-tjänsten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5009e186c801f71c9c1a4b8e156dfefaaeac79f1
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 90136f39d9f2a8e330748b56d6302bb75d2a31fe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020637"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873832"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Ansluta till exemplen i Power BI-tjänsten
 
@@ -38,11 +37,11 @@ Om du vill bekanta dig med det här specifika innehållspaketet och dess scenari
 
     Om du inte har en Power BI Pro-licens kan du spara exemplet på Min arbetsyta.
 
-2. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret. 
+2. Välj **Hämta data** längst ned i navigeringsfönstret. 
 
    ![Välja Hämta data](media/sample-datasets/power-bi-get-data.png)
 
-   Om du inte ser **Hämta data** expanderar du navigeringsfönstret genom att välja följande ikon överst i fönstret: ![hamburgerikon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+   Om du inte ser **Hämta data** så utvidga navigeringsfönstret genom att välja följande ikon högst upp i fönstret: ![hamburgare-ikon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
 
 5. På sidan **Hämta data** väljer du **Exempel**.
    
@@ -100,7 +99,7 @@ När du först öppnar .pbix-exempelfilen i Power BI Desktop visas den i rapport
 
 Till skillnad från redigering av en rapport i Power BI-tjänsten kan du i Power BI Desktop även arbeta med dina frågor och modellera dina data så att de ger de bästa insikterna i rapporterna. Du kan sedan spara Power BI Desktop-filen var du vill, oavsett om det är en lokal hårddisk eller till molnet.
 
-1. Ladda ned [.pbix-filen för Exempel på detaljhandelsanalys](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) och öppna den i Power BI Desktop. 
+1. Ladda ned [.pbix-filen för Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) och öppna den i Power BI Desktop. 
 
     ![Exempel i Power BI-rapportvyn](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
@@ -138,4 +137,4 @@ Mer information finns i:
 - [Exempel för Power BI-tjänsten](sample-datasets.md)
 - [Datakällor för Power BI](service-get-data.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Hantera datalagring i dina arbetsytor
 description: Läs hur du hanterar datalagring individuellt eller på arbetsytan för att se till att du kan fortsätta publicera rapporter och datamängder.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: ea187de55eec2667abe2eed017481180910b7619
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431383"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873666"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Hantera datalagring i Power BI-arbetsytor
 
@@ -46,7 +45,7 @@ Storleken på en instrumentpanel som du delar varierar beroende på vad som är 
 
 Se hur mycket lagringsutrymme du använder i ditt Power BI-konto och hantera ditt konto.
 
-1. Om du vill hantera din lagring, går du till **min arbetsyta** i det vänstra navigeringsfönstret.
+1. Om du vill hantera din lagring, så gå till **Min arbetsyta** i navigeringsfönstret.
    
     ![Min arbetsyta](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Välj kugghjulsikonen ![Kugghjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i det övre högra hörnet \>  **hantera personlig lagring**.
@@ -104,5 +103,5 @@ Den här gränsen visas också i **Hantera personlig lagring**.
 
  ![Över din lagringsgräns](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+ Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)
 

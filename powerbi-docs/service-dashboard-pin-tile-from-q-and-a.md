@@ -2,7 +2,6 @@
 title: Så här fäster du en panel till en instrumentpanel från frågor och svar
 description: Dokumentering om hur man fäster en panel på en Power BI-instrumentpanel från frågerutan i frågor och svar
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e75c9b86b20eda2de630f2b27caa6b88a687fbb4
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 12aa35e37e4382e7fc89fc9e0fe8c2ae564e8eda
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432086"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872812"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fäst en panel till en instrumentpanel från frågor och svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Så här fäster du en panel från frågor och svar
@@ -52,9 +51,9 @@ Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandel
    ![instrumentpanel med paneler](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Överväganden och felsökning
-* När du börjar skriva en fråga, börjar frågor och svar genast att söka efter det bästa svaret från alla datauppsättningar som är associerade med den aktuella instrumentpanelen.  Den aktuella instrumentpanelen är den instrumentpanel som listas i det övre navigeringsfältet. Den här frågan ställs till exempel i instrumentpanelen **Retail Analysis Sample** som ingår i arbetsytan **mihart**.
+* När du börjar skriva en fråga, börjar frågor och svar genast att söka efter det bästa svaret från alla datauppsättningar som är associerade med den aktuella instrumentpanelen.  Den aktuella instrumentpanelen är den instrumentpanel som listas i det övre navigeringsfönstret. Den här frågan ställs till exempel i instrumentpanelen **Retail Analysis Sample** som ingår i arbetsytan **mihart**.
 
-  ![synliga sökvägar](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
+  ![synliga sökvägar](media/service-dashboard-pin-tile-from-q-and-a/power-bi-nav pane.png)
 * **Hur vet frågor och svar vilka datauppsättningar som ska användas**?  Frågor och svar har åtkomst till alla datauppsättningar som har minst en visualisering fäst på den instrumentpanelen.
 
 * **Ser du inte frågerutan**? Kontrollera med din Power BI-administratör. Administratören har möjlighet att inaktivera frågor och svar.
@@ -64,4 +63,4 @@ Om du vill följa med, kan du öppna instrumentpanelen [Exempel på detaljhandel
 [Byt namn på, ändra storlek, lägg till en hyperlänk, flytta panelen och mer](service-dashboard-edit-tile.md)    
 [Visa din panel i instrumentpanelen i fokusläge](consumer/end-user-focus.md)     
 [Gå tillbaka till frågor och svar i Power BI](consumer/end-user-q-and-a.md)  
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

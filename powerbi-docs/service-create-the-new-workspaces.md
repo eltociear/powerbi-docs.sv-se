@@ -2,7 +2,6 @@
 title: Skapa de nya arbetsytorna – Power BI
 description: Lär dig hur du skapar nya arbetsytor, samlingar av instrumentpaneler, rapporter och sidnumrerade rapporter som skapats för att förse din organisation med viktiga mått.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2fdc893ac8545df8fc64f45959a418018a189c84
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020453"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877519"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Skapa de nya arbetsytorna i Power BI
 
@@ -94,7 +93,7 @@ Power BI synkroniserar inte behörigheter för användare eller grupper, som är
 
     I fönstret **Skapa en arbetsyta** första gången du skapar den.
 
-    Välj pilen bredvid **Arbetsytor** i den vänstra navigeringsrutan, välj **Fler alternativ** (…) intill namnet på arbetsytan > **Inställningar för arbetsytan**. Fönstret **Inställningar** öppnas.
+    Välj pilen bredvid **Arbetsytor** i  navigeringsfönstret, välj **Fler alternativ** (…) intill namnet på arbetsytan > **Inställningar för arbetsyta**. Fönstret **Inställningar** öppnas.
 
     ![Inställningar för arbetsyta](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -108,7 +107,7 @@ Power BI synkroniserar inte behörigheter för användare eller grupper, som är
 
 När du har konfigurerat OneDrive-platsen kommer du till den på samma sätt som du kommer till andra datakällor i Power BI-tjänsten.
 
-1. I det vänstra navigeringsfönstret väljer du **Hämta data** och därefter väljer du **Hämta** i rutan **Filer**.
+1. Välj **Hämta data** i navigeringsfönstret och välj sedan **Hämta** i rutan **Filer**.
 
     ![Hämta data, hämta filer](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
@@ -145,4 +144,4 @@ Läs om att [publicera en app från de nya arbetsytorna](service-create-distribu
 * Läs om att [organisera arbete i de nya arbetsytorna i Power BI](service-new-workspaces.md)
 * [Skapa klassiska arbetsytor](service-create-workspaces.md)
 * [Publicera en app från de nya arbetsytorna i Power BI](service-create-distribute-apps.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

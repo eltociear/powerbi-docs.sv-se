@@ -2,7 +2,6 @@
 title: Översikt över hjälpmedel i Power BI
 description: Funktioner och förslag för att skapa tillgängliga Power BI Desktop-rapporter
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 13017fed9a7cd54cde624424894341dc2ced0d9b
-ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
+ms.openlocfilehash: e61df101d26dd95a771a64ce7633e40fcd9c9123
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73180986"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878903"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Översikt över hjälpmedel i Power BI
 När du arbetar med Power BI måste du tänka på vilka typer av användare som ska interagera med dina rapporter. Genom att skapa och presentera rapporter som är enkla att navigera i både för de som använder tangentbord och skärmläsare, så kan även användare med visuella eller fysiska nedsättningar ta del av samma information.
@@ -33,7 +32,7 @@ Universal design handlar om att designa produkter som kan användas av så mång
 Power BI uppfyller följande standarder för hjälpmedel.  På så sätt ser du till att dina Power BI-miljöer är tillgängliga för så många personer som möjligt.
 
 ### <a name="wcag-21"></a>WCAG 2.1
-Power BI uppfyller riktlinjerna i WCAG 2.1 (tillgänglighet för webbinnehåll). WCAG omfattar tre primära principer:
+WCAG (Web Content Accessibility Guidelines) bidrar till att göra webbinnehåll tillgängligt för personer med funktionsnedsättningar. WCAG omfattar tre primära principer:
 
 1. **Uppfattning** – information och gränssnittskomponenter ska presenteras för användarna på ett sätt som gör dem enkla att uppfatta.
 2. **Hantering** – gränssnittskomponenter och navigeringsfunktioner måste vara enkla att hantera.

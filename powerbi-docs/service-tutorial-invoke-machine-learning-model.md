@@ -2,7 +2,6 @@
 title: 'Självstudie: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)'
 description: I den här självstudien kan du anropa en Machine Learning Studio-modell i Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 368f860ed064cf3b4ff73496db1fa993fd3b716a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432228"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876972"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Självstudie: Anropa en Machine Learning Studio-modell i Power BI (förhandsgranskning)
 
@@ -44,7 +43,7 @@ För att komma åt en Azure ML-modell från Power BI, måste du ha **Läs**-åtk
 
 Följande steg förutsätter att du är medadministratör för Azure-prenumerationen och resursgruppen till vilken modellen publicerades.
 
-Logga in på [Azure Portal](https://portal.azure.com), och navigera till sidan **Prenumerationer** som du hittar med hjälp av listan **Alla tjänster** i den vänstra navigeringsmenyn.
+Logga in på [Azure Portal](https://portal.azure.com) och navigera till sidan **Prenumerationer** som du hittar med hjälp av listan **Alla tjänster** på navigeringsmenyn.
 
 ![Azure Portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -135,7 +134,7 @@ Genom att välja ikonen **Redigera** öppnas Power Query Editor för entiteter i
 
 ![Redigera](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Välj knappen **AI-insikter** i menyfliksområdet och välj sedan mappen _Azure Machine Learning-modeller_ från den vänstra navigeringsmenyn.
+Välj knappen **Alla insikter** i menyfliksområdet och välj sedan mappen _Azure Machine Learning-modeller_ i navigeringsfönstrets meny.
 
 Azure ML-modeller som du har beviljats åtkomst till visas som Power Query-funktioner med prefixet *AzureML.*  När du klickar på den funktion som motsvarar modellen _AutomobilePricePrediction_, anges parametrarna för modellens webbtjänsten som funktionsparametrar.
 

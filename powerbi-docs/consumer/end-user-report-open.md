@@ -2,19 +2,18 @@
 title: Visa en rapport
 description: Det här avsnittet visar hur Power BI-användare öppnar och visar en Power BI-rapport.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019477"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861978"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Visa en rapport i Power BI-tjänsten för *konsumenter*
 
@@ -33,11 +32,11 @@ Nu ska vi öppna en rapport som har delats med dig direkt och sedan öppnar en r
    ![Startsida](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Öppna en rapport som har delats med dig
-Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i ett e-postmeddelande eller genom att lägga till den automatiskt. Innehåll som delas på detta sätt visas i behållaren **delat med mig** på navigeringsfältet och i avsnittet **delat med mig** på Hem-arbetsytan.
+Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i ett e-postmeddelande eller genom att lägga till den automatiskt. Innehåll som delas på detta sätt visas i containern **delat med mig** i navigeringfönstret och i avsnittet **delat med mig** på Hem-arbetsytan.
 
 1. Öppna Power BI-tjänsten (app.powerbi.com).
 
-2. I navigeringsfältet väljer du **Hem** för att visa Hem-arbetsytan.  
+2. Visa Hem-arbetsytan genom att välja **Hem** i navigeringsfönstret.  
 
    ![Hem-arbetsytan](./media/end-user-report-open/power-bi-select-home-new.png)
    
@@ -66,7 +65,7 @@ Power BI-*designers* kan dela en enskild rapport direkt med dig via en länk i e
    ![anpassa till sida](./media/end-user-report-open/power-bi-actual.png)
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Öppna en rapport som är en del av en app
-Om du har fått appar från kollegor eller från AppSource, är dessa appar tillgängliga från startsidan och från behållaren **Appar** i navigeringsfältet. En [app](end-user-apps.md) är ett paket med instrumentpaneler och rapporter.
+Om du har tagit emot appar från kollegor eller från AppSource, är dessa appar tillgängliga från startsidan och från containern **Appar** i navigeringsfönstret. En [app](end-user-apps.md) är ett paket med instrumentpaneler och rapporter.
 
 ### <a name="prerequisites"></a>Förutsättningar
 Om du vill följa med hämtar du appen Försäljning och marknadsföring.
@@ -75,7 +74,7 @@ Om du vill följa med hämtar du appen Försäljning och marknadsföring.
 1. Välj **Hämta nu** > **Fortsätt** > **Installera** för att installera appen i din appbehållare. 
 
 Du kan öppna appen från din appbehållare eller från Start.
-1. Gå tillbaka till startsidan genom att välja **Start** i navigeringsfältet.
+1. Gå tillbaka till startsidan genom att välja **Start** i navigeringsfönstret.
 
 7. Rulla nedåt tills du ser **delat med mig**.
 

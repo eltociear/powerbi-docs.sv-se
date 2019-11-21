@@ -2,7 +2,6 @@
 title: Så här ser Power BI till att ditt innehåll är aktuellt
 description: Lär dig hur du Power BI ser till att du arbetar med den senaste versionen av data, rapporten, instrumentpanelen och appen.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 92f031ff43bc4d3bd5840e69fec166606b14eb73
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019777"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863867"
 ---
 # <a name="your-content-is-up-to-date"></a>Ditt innehåll är aktuellt och uppdaterat
 
@@ -43,9 +42,9 @@ Du hittar namnet på ägaren från namnlisten för instrumentpaneler och rapport
 
 Appskärmen visar både namnet på designern samt det datum då appen senast uppdaterades.  
 
-1. Välj **Appar** i det vänstra navigeringsfältet.
+1. Välj **Appar** i navigeringsfönstret.
 
-    ![vänstra navigeringsfältet](media/end-user-fresh/power-bi-nav-app.png)
+    ![navigeringsfönster](media/end-user-fresh/power-bi-nav-app.png)
 
 
 
@@ -85,7 +84,7 @@ Fönstret **Relaterat innehåll** visar information om den senaste uppdateringen
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Vad händer om en app tas bort av designern
 
-Om en designer tar bort en app, tas instrumentpaneler och rapporter som är associerade med appen automatiskt bort från din Power BI-arbetsyta. De är inte längre tillgängliga och appen visas inte i containern Appar eller någon annanstans på menyraden.
+Om en designer tar bort en app, tas instrumentpaneler och rapporter som är associerade med appen automatiskt bort från din Power BI-arbetsyta. De är inte längre tillgängliga och appen visas inte i containern Appar eller någon annanstans i navigeringsfönstret.
 
 
 ## <a name="subscribe-to-see-changes"></a>Prenumerera för att se ändringar

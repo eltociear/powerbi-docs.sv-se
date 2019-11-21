@@ -3,19 +3,18 @@ title: Inbäddade analys för att bädda in Power BI-innehåll i ett program fö
 description: Lär dig att integrera eller bädda in en rapport, instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt dina kunder. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: e35f4f7bd870e51810d49c43a058e467bd724e6e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 24a9c0069cb80a20a84823655437a27a4f6c0e9e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429670"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877693"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Självstudie: Bädda in Power BI-innehåll i ett program för dina kunder
 
@@ -120,7 +119,7 @@ Så här hämtar du **applicationId**:
 
 1. Logga in på [Azure Portal](https://portal.azure.com).
 
-2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **Appregistreringar**.
+2. Välj **Alla tjänster** i det vänstra navigeringsfönstret och välj sedan **Appregistreringar**.
 
     ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -187,7 +186,7 @@ Hämta **ApplicationSecret** genom att utföra följande steg:
 
 1. Logga in på [Azure-portalen](https://portal.azure.com).
 
-2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och sedan **Appregistreringar**.
+2. Välj **Alla tjänster** i det vänstra navigeringsfönstret och välj sedan **Appregistreringar**.
 
     ![Sök efter appregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -460,4 +459,4 @@ I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i
 > [!div class="nextstepaction"]
 >[Bädda in för din organisation](embed-sample-for-your-organization.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

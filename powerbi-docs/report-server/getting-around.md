@@ -2,19 +2,18 @@
 title: Hantera innehåll i webbportalen för Power BI-rapportserver
 description: Läs mer om att hantera innehåll i webbportalen för Power BI-rapportserver.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 8a5b04c5b3325a9fd4d3bb11aa1943e62cf2c90c
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021462"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859490"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Hantera innehåll i webbportalen 
 Webbportalen för Power BI-rapportserver är en lokal plats för att visa, lagra och hantera dina Power BI, mobila och sidnumrerade rapporter och KPI:er.
@@ -38,9 +37,9 @@ Webbportalen är ett program som körs i en webbläsare. När du startar webbpor
     Se den här listan över [webbläsare och versioner som stöds](browser-support.md).
 2. I adressfältet, skriver du webbportalens URL.
    
-    Som standard är URL:en <em>http://[ComputerName]/reports</em>.
+    URL:en är som standard <em>https://[ComputerName]/reports</em>.
    
-    Rapportservern kan ha konfigurerats för att använda en specifik port. Till exempel <em>http://[ComputerName]:80/reports</em> eller <em>http://[ComputerName]:8080/reports</em>
+    Rapportservern kan ha konfigurerats för att använda en specifik port. Exempel: <em>https://[ComputerName]:80/reports</em> eller <em>https://[ComputerName]:8080/reports</em>
    
     Du ser att webbportalen grupperar objekt i dessa kategorier:
    

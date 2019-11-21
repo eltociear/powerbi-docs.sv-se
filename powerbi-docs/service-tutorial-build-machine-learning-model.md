@@ -2,7 +2,6 @@
 title: 'Självstudie: Skapa en maskininlärningsmodell i Power BI'
 description: I den här självstudien skapar du en maskininlärningsmodell i Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 75f6449c4795fd0095c46a33b33fd3ef14045e35
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 78b29a4e71e75793e168da25987b3e9c4a8b13f4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432238"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877009"
 ---
 # <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Självstudie: Skapa en maskininlärningsmodell i Power BI
 
@@ -47,7 +46,7 @@ Du kan ladda ned datamängden från webbplatsen för UC Irvine. För den här sj
 
 Logga in i Power BI-tjänsten för att skapa entiteter i ditt dataflöde, och navigera till en arbetsyta i din dedikerade kapacitet som har AI aktiverat.
 
-Om du inte redan har en arbetsyta kan du skapa en genom att välja **Arbetsytor** i den vänstra navigeringsmenyn i Power BI-tjänsten och sedan välja **Skapa arbetsyta** längst ned på panelen som visas. Då öppnas en panel till höger där du kan ange arbetsytans information. Ange ett namn på arbetsytan och välj **Avancerat**. Bekräfta att arbetsytan använder dedikerad kapacitet med hjälp av alternativknappen samt att den tilldelas till en instans av dedikerad kapacitet där AI-förhandsgranskningen är aktiverad. Välj sedan **Spara**.
+Om du inte redan har en arbetsyta kan du skapa en genom att välja **Arbetsytor** på navigeringsmenyn i Power BI-tjänsten och sedan välja **Skapa arbetsyta** längst ned i det fönster som visas. Då öppnas en panel till höger där du kan ange arbetsytans information. Ange ett namn på arbetsytan och välj **Avancerat**. Bekräfta att arbetsytan använder dedikerad kapacitet med hjälp av alternativknappen samt att den tilldelas till en instans av dedikerad kapacitet där AI-förhandsgranskningen är aktiverad. Välj sedan **Spara**.
 
 ![Skapa en arbetsyta](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 

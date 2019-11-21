@@ -2,19 +2,18 @@
 title: 'Självstudie: Utforska Power BI-rapportservern på en virtuell dator'
 description: I de här självstudierna skapar du en virtuell dator med Power BI-rapportservern redan installerad och utforskar webbportalen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: cd3e032375c5edaba2b0f90f982d0dbe5591c913
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021634"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859264"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Självstudie: Utforska webbportalen för Power BI-rapportserver i en virtuell dator
 I de här självstudierna skapar du en virtuell Azure-dator med Power BI-rapportservern redan installerad, så att du kan visa, redigera och hantera exempel på Power BI- och sidnumrerade rapporter samt KPI:er.
@@ -72,7 +71,7 @@ Som tur är har Power BI-teamet skapat en virtuell dator som levereras med Power
 
 ## <a name="connect-to-your-virtual-machine"></a>Anslut till den virtuella datorn
 
-1. Välj **Virtuella datorer** i det vänstra navigeringsfönstret i Azure. 
+1. Välj **Virtuella datorer** i navigeringsfönstret i Azure. 
 
 2. I rutan **Filtrera efter namn** skriver du ”rapport”. 
 
@@ -108,7 +107,7 @@ När den virtuella datorn öppnas visas nedanstående objekt på skrivbordet.
 |![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Öppnar Power BI-rapportserverns webbportal i webbläsaren |
 |![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Startar SQL Server Data Tools för att skapa sidnumrerade rapporter (av typen .RDL) |
 
-Dubbelklicka på ikonen för **rapportserverns webbportal**. Webbläsaren öppnar `http://localhost/reports/browse`. I webbportalen kan du se olika filer grupperade efter typ. 
+Dubbelklicka på ikonen för **rapportserverns webbportal**. Webbläsaren öppnar `https://localhost/reports/browse`. I webbportalen kan du se olika filer grupperade efter typ. 
 
 ![Webbportalen för Power BI-rapportserver](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

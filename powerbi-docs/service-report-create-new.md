@@ -2,7 +2,6 @@
 title: Skapa en rapport från en datauppsättning
 description: Skapa en Power BI-rapport från en datamängd.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,19 +9,19 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432197"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871754"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Skapa en rapport i Power BI-tjänsten genom att importera en datamängd
 Du har läst [Rapporter i Power BI](consumer/end-user-reports.md) och nu vill du skapa en egen. Det finns olika sätt att skapa en rapport. I den här artikeln börjar vi med att skapa en grundläggande rapport i Power BI-tjänsten från en Excel-datamängd. När du förstår grunderna för att skapa en rapport kan du gå igenom [Nästa steg](#next-steps) längst ned för att få mer avancerade rapportämnen.  
 
 ## <a name="prerequisites"></a>Förutsättningar
 - [Registrera dig för Power BI-tjänsten](service-self-service-signup-for-power-bi.md). Information om att skapa rapporter med hjälp av Power BI Desktop finns i [Desktop-rapportvy](desktop-report-view.md). 
-- [Ladda ned exempeldatamängden Försäljningsanalys för Excel](http://go.microsoft.com/fwlink/?LinkId=529778) och spara den till OneDrive för företag eller lokalt.
+- [Ladda ned exempeldatamängden Försäljningsanalys för Excel](https://go.microsoft.com/fwlink/?LinkId=529778) och spara den till OneDrive för företag eller lokalt.
 
 ## <a name="import-the-dataset"></a>Importera datauppsättningen
 Den här metoden för att skapa en rapport som börjar med en datauppsättning och en tom rapportarbetsyta. Du kan följa exempeldatamängden Försäljningsanalys för Excel.
@@ -30,7 +29,7 @@ Den här metoden för att skapa en rapport som börjar med en datauppsättning o
 1. Vi kommer att skapa rapporten på en arbetsyta för Power BI-tjänsten, så välj en befintlig arbetsyta eller skapa en.
    
    ![lista med arbetsytor](media/service-report-create-new/power-bi-workspaces2.png)
-2. Längst ned till vänster i navigeringsfönstret väljer du **Hämta data**.
+2. Välj **Hämta data** längst ned i navigeringsfönstret.
    
    ![Hämta data](media/service-report-create-new/power-bi-get-data3.png)
 3. Välj **Arkiv**  och navigera till den plats där du sparade exemplet Säljanalys.
@@ -93,5 +92,5 @@ Fortsätt att utforska dina data och lägga till visualiseringar. När du har hi
 ## <a name="next-steps"></a>Nästa steg
 
 * Lär dig hur du [fäster visualiseringar på en instrumentpanel](service-dashboard-pin-tile-from-report.md)   
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

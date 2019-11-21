@@ -2,7 +2,6 @@
 title: Skapa och använda dataflöden i Power BI
 description: Lär dig hur du skapar och använder dataflöden i Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 38ecb04b45ef45a8345397c5b9ec3e89d9dfd232
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432075"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877381"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Skapa och använda dataflöden i Power BI
 
@@ -36,7 +35,7 @@ Det finns tre huvudsakliga steg för att använda ett dataflöde:
 I följande avsnitt kommer vi att titta på vart och ett av de här stegen och bekanta oss med de verktyg som finns för att slutföra varje steg. Då sätter vi igång.
 
 ## <a name="creating-a-dataflow"></a>Skapa ett dataflöde
-Om du vill skapa ett dataflöde startar du Power BI-tjänsten i en webbläsare och väljer sedan en **arbetsyta** (dataflöden är inte tillgängliga i *Min arbetsyta* i Power BI-tjänsten) i navigeringsfönstret till vänster, se bilden nedan. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde. 
+Om du vill skapa ett dataflöde startar du Power BI-tjänsten i en webbläsare och väljer sedan en **arbetsyta** (dataflöden är inte tillgängliga i *Min arbetsyta* i Power BI-tjänsten) i navigeringsfönstret till vänster, så som visas på följande bild. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde. 
 
 ![Skapa ett dataflöde i Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 

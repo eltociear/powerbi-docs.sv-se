@@ -2,7 +2,6 @@
 title: Lär dig hur du ansluter Azure Data Lake Storage Gen 2 till Power BI för lagring av dataflöde
 description: Ta dina egna data till dataflöden med hjälp av Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432014"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872720"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Ansluta Azure Data Lake Storage Gen2 för lagring av dataflöde (förhandsversion)
 
@@ -105,7 +104,7 @@ För att tilldela behörigheter till filsystemet, kan du använda inställningar
 
 Följ dessa steg om du vill hitta dina klientprogram:
 
-1. Välj **Azure Active Directory** i [Azure-portalen](https://portal.azure.com/) från vänster navigeringspanel.
+1. Välj **Azure Active Directory** i navigeringsfönstret i [Azure Portal](https://portal.azure.com/).
 2. I bladet Azure **Active Directory** väljer du **företagsprogram**.
 3. Från den nedrullningsbara menyn **Programtyp** väljer du **Alla program** och välj sedan **Tillämpa**. Ett exempel på klient-program visas som liknar följande bild.
 
@@ -223,4 +222,4 @@ Mer information om Common Data Service finns i dess översiktsartikel:
 * [CDM-mappar](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfildefinition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Och du kan alltid prova att [ställa frågor till Power BI Community](http://community.powerbi.com/).
+Och du kan alltid prova att [ställa frågor till Power BI Community](https://community.powerbi.com/).

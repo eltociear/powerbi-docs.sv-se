@@ -2,7 +2,6 @@
 title: Introduktion till organisationsinnehållspaket i Power BI
 description: Läs mer om att packa upp och dela dina instrumentpaneler, rapporter, Excel-arbetsböcker och datauppsättningar med dina kollegor som organisationsinnehållspaket.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431741"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871978"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion till organisationsinnehållspaket i Power BI
 > [!NOTE]
@@ -54,7 +53,7 @@ Livscykeln ser ut ungefär så här:
    > 
    > 
 2. Nate skickar e-post till distributionsgruppen och informerar dem om det nya innehållspaketet.
-3. Jane är medlem i distributionsgruppen Marketing i Power BI Pro och söker efter och ansluter till ett innehållspaket i AppSource. Jane har nu en skrivskyddad kopia. Jane vet att den är skrivskyddad eftersom det i det vänstra navigeringsfönstret finns en delningsikon till vänster om instrumentpanelens namn och rapportnamnet. Och när Jane väljer instrumentpanelen informeras hon av en låsikon att hon tittar på instrumentpanelen för ett innehållspaket. 
+3. Jane är medlem i distributionsgruppen Marketing i Power BI Pro och söker efter och ansluter till ett innehållspaket i AppSource. Jane har nu en skrivskyddad kopia. Jane vet att den är skrivskyddad eftersom det i navigeringsfönstret finns en delningsikon till vänster om instrumentpanelens namn och rapportnamnet. Och när Jane väljer instrumentpanelen informeras hon av en låsikon att hon tittar på instrumentpanelen för ett innehållspaket. 
 4. Låt oss säga att Jane bestämmer sig för att anpassa den. Jane har nu sin egen kopia av instrumentpanelen och rapporterna. Janes arbete påverkar inte källan, det ursprungliga innehållspaketet eller andra medlemmar i distributionsgruppen. Hon arbetar nu på sin egen kopia av instrumentpanelen och rapporten.
 5. Nate gör uppdateringar på instrumentpanelen, och när det är klart publicerar han en ny version av innehållspaketet.
    
@@ -63,11 +62,11 @@ Livscykeln ser ut ungefär så här:
 6. Låt oss säga att Nate ändrar säkerhetsinställningarna. Julio och Jane har inte längre åtkomst till innehållet. Eller låt oss säga att de har tagits bort från distributionsgruppen Marknadsföring.
    
    * Julio anpassade inte det ursprungliga innehållspaketet, så innehållet tas bort automatiskt. 
-   * Jane anpassade innehållspaketet. Nästa gång Jane öppnar instrumentpanelen har alla paneler från det ursprungliga innehållspaketet försvunnit, men paneler som har fästs från andra rapporter (som Jane fortfarande har behörighet att använda) visas fortfarande. Associerade rapporter och datamängder är inte längre tillgängliga (och visas inte i det vänstra navigeringsfönstret).
+   * Jane anpassade innehållspaketet. Nästa gång Jane öppnar instrumentpanelen har alla paneler från det ursprungliga innehållspaketet försvunnit, men paneler som har fästs från andra rapporter (som Jane fortfarande har behörighet att använda) visas fortfarande. Associerade rapporter och datamängder är inte längre tillgängliga (och visas inte i navigeringsfönstret).
 7. Eller också tar Nate bort innehållspaketet.
    
    * Julio anpassade inte det ursprungliga innehållspaketet, så innehållet tas bort automatiskt. 
-   * Jane anpassade innehållspaketet. Nästa gång Jane öppnar instrumentpanelen har alla paneler från det ursprungliga innehållspaketet försvunnit, men paneler som har fästs från andra rapporter visas fortfarande. Associerade rapporter och datamängder är inte längre tillgängliga (och visas inte i det vänstra navigeringsfönstret).
+   * Jane anpassade innehållspaketet. Nästa gång Jane öppnar instrumentpanelen har alla paneler från det ursprungliga innehållspaketet försvunnit, men paneler som har fästs från andra rapporter visas fortfarande. Associerade rapporter och datamängder är inte längre tillgängliga (och visas inte i navigeringsfönstret).
 
 ## <a name="data-security"></a>Datasäkerhet
 Alla medlemmar i distributionsgruppen har samma behörighet för data som skaparen av innehållspaketet. Det enda undantaget är SQL Server Analysis Services (SSAS) lokala tabelldatauppsättningar. Eftersom rapporter och instrumentpaneler ansluter till den lokala SSAS-modellen i realtid används autentiseringsuppgifterna för varje enskild medlem i distributionsgruppen för att fastställa vilka data som kan kommas åt.
@@ -76,5 +75,5 @@ Alla medlemmar i distributionsgruppen har samma behörighet för data som skapar
 * [Skapa och publicera ett organisationsinnehållspaket](service-organizational-content-pack-create-and-publish.md)
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
 * [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

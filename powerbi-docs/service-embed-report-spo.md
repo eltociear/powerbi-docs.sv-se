@@ -3,7 +3,6 @@ title: Bädda in med rapportwebbdel i SharePoint Online
 description: Med den nya rapportwebbdelen för SharePoint Online i Power BI kan du enkelt bädda in interaktiva Power BI-rapporter i SharePoint Online-sidor.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: 6fb02a3ea31dd3bed6f1013d5e81237345aef40c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431902"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881889"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Bädda in med rapportwebbdel i SharePoint Online
 
@@ -123,7 +122,7 @@ Nedan visas de inställningar som du kan ändra för Power BI-webbdelen för Sha
 | --- | --- |
 | Sidnamn |Anger webbdelens standardsida. Välj ett värde från listrutan. Om inga sidor visas innehåller rapporten endast en sida eller också innehåller URL:en du klistrade in ett sidnamn. Ta bort rapportdelen av URL:en för att välja en specifik sida. |
 | Skärm |Justerar hur rapporten passar på SharePoint Online-sidan. |
-| Visa navigeringsfönstret |Visar eller döljer navigeringsfönstret. |
+| Visa navigeringsfönstret |Visar eller döljer sidans navigeringsfönster. |
 | Visa filtreringsfönstret |Visar eller döljer filtreringsfönstret. |
 
 ## <a name="reports-that-do-not-load"></a>Rapporter som inte kan läsas in
@@ -173,4 +172,4 @@ Användare som visar en rapport i SharePoint måste antingen ha en **Power BI Pr
 * [Vad är Power BI Premium?](service-premium-what-is.md)
 * [Bädda in en rapport på en säker portal eller webbplats](service-embed-secure.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

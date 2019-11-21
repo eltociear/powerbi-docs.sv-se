@@ -2,7 +2,6 @@
 title: Del 2, lägg till visualiseringar i en Power BI-rapport
 description: Del 2, lägg till visualiseringar i en Power BI-rapport
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc50c54f826dd695b0aab459bd3d68d0da792abe
-ms.sourcegitcommit: 2a61d8b1e2707a24fe1284a8a4034b11c3999842
+ms.openlocfilehash: e9759f69668780b450117e5e6255e7f5cb7e67f5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049079"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881025"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Del 2, lägg till visualiseringar i en Power BI-rapport
 
@@ -29,7 +28,7 @@ I den här självstudien tar vi hjälp av vår Retail Analysis-datamängd för a
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-I den här självstudien använder vi [PBIX-exempelfilen Retail analysis](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+I den här självstudien använder vi [PBIX-exempelfilen Retail analysis](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Välj **Arkiv** > **Öppna** uppe till vänster i menyraden i Power BI Desktop
    
@@ -59,7 +58,7 @@ Skapa ett visuellt objekt genom att välja ett fält från fönstret **Fält**. 
 
 5. [Ändra storlek på visualiseringen](power-bi-visualization-move-and-resize.md) genom att välja visualiseringen, ta tag i en av konturens cirklar och dra. Gör den tillräckligt bred för att eliminera rullningslisten och tillräckligt liten för att ge oss tillräckligt med utrymme för att lägga till ytterligare en visualisering.
    
-   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
+   ![skärmbild av ett visuellt ytdiagram](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
 6. [Spara rapporten](../service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Lägga till en kartvisualisering som visar försäljningen efter plats
@@ -68,9 +67,9 @@ Skapa ett visuellt objekt genom att välja ett fält från fönstret **Fält**. 
    ![Ytdiagram](media/power-bi-report-add-visualizations-ii/power-bi-map1.png)
 
 2. Lägg till en förklaring.  Om du vill visa dina data efter butiksnamn drar du **Butik** > **Kedja** till förklaringsområdet.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
+   ![rapportarbetsyta med enpil från Kedja i fältlistan till Kedja i förklaringsbucketen](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 ## <a name="next-steps"></a>Nästa steg
 * Du hittar mer i [Visualiseringar i Power BI-rapporter](power-bi-report-visualizations.md).  
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

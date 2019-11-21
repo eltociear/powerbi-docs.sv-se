@@ -279,8 +279,6 @@
               href: desktop-slicer-filter-date-range.md
             - name: Skapa ett utsnitt som du kan ändra storlek på
               href: power-bi-slicer-filter-responsive.md
-            - name: Skapa anpassade Cortana-svarskort
-              href: service-cortana-answer-cards.md
             - name: Säkerhet på radnivå
               href: desktop-rls.md
             - name: Anpassa knappbeskrivningar
@@ -665,10 +663,6 @@
               href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
             - name: Använda Frågor och svar med live-anslutningar
               href: service-q-and-a-direct-query.md
-            - name: Introduktion till Cortana för Power BI
-              href: service-cortana-intro.md
-            - name: Aktivera Cortana för Power BI
-              href: service-cortana-enable.md
             - name: Snabba insikter i Power BI
               href: service-insights.md
             - name: Optimera dina data för Snabbinsikter
@@ -801,8 +795,6 @@
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fel: Det gick inte att hitta några data i din Excel-arbetsbok'
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Felsöka Cortana
-              href: service-cortana-troubleshoot.md
             - name: Så här uppdaterar du dina innehållspaketautentiseringsuppgifter för Xero om uppdateringen misslyckades
               href: service-refresh-xero-credentials.md
         - name: Andra uppgifter

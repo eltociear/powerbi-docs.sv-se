@@ -2,7 +2,6 @@
 title: Från Excel-arbetsbok till fantastisk rapport i Power BI-tjänsten
 description: Den här artikeln visar hur du snabbt kan skapa en fantastisk rapport från en Excel-arbetsbok.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021006"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872518"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Från Excel-arbetsbok till fantastisk rapport i Power BI-tjänsten
 Chefen vill se en rapport om de senaste försäljningssiffrorna som kombineras med dina intryck från den senaste kampanjen i slutet av dagen. Men senaste data finns i olika tredjepartssystem och i filer på din bärbara dator. Tidigare har det tagit timmar att skapa visuella objekt och formatera en rapport, och du börjar bli nervös.
@@ -57,7 +56,7 @@ Power BI-tjänsten kan ansluta till flera datakällor, däribland Excel-filer so
 
    ![Listrutan Skapa](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. Välj **Hämta data** längst ned i det vänstra navigeringsfönstret. 
+4. Välj **Hämta data** längst ned i navigeringsfönstret. 
 
 5. På sidan **Hämta data** går du till rutan **Filer** under **Skapa nytt innehåll** och väljer **Hämta**.
 
@@ -140,5 +139,5 @@ Anta att du vill dela din instrumentpanel med din chef. Du kan dela din instrume
 * [Kom igång med Power BI Desktop](desktop-getting-started.md)
 * [Grundläggande begrepp för designers i Power BI-tjänsten](service-basic-concepts.md)
 
-Har du fler frågor? [Testa Power BI Community](http://community.powerbi.com/).
+Har du fler frågor? [Testa Power BI Community](https://community.powerbi.com/).
 

@@ -2,7 +2,6 @@
 title: Power BI-licensiering i din organisation
 description: 'Information om de olika licenstyperna i Power BI: kostnadsfria licenser, Power BI Pro och Power BI Premium.'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
-ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
+ms.openlocfilehash: 2cbf2498740d26a59ced5652368cf99b8fa5eec1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442826"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857714"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licensiering i din organisation
 
@@ -55,7 +54,7 @@ Tänk på följande innan du börjar registrera dig:
 
 1. Gå till [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
-1. I det vänstra navigeringsfönstret väljer du **Fakturering** och sedan **Prenumerationer**.
+1. On the nav pane, Välj **Fakturering** i navigeringsfönstret och sedan **Prenumerationer**.
 
    ![Fakturering och prenumerationer](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
@@ -101,7 +100,7 @@ Om det obegränsade Power BI-licensblocket (kostnadsfritt) inte är tillgänglig
 
 1. Gå till [Administrationscenter för Microsoft 365](https://portal.office.com/admin/default.aspx).
 
-1. Välj **fakturering** > **prenumerationer** i den vänstra navigeringspanelen.
+1. Välj **Fakturering** > **Prenumerationer** i navigeringsfönstret.
 
 1. Välj **Lägg till prenumerationer +** till höger.
 
@@ -156,4 +155,4 @@ Inställningen som styr registreringen i Azure Active Directory är **AllowAdHoc
 
 [Köpa och tilldela Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md)
 
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

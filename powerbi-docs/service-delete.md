@@ -2,7 +2,6 @@
 title: Ta bort en instrumentpanel, rapport, arbetsbok, datauppsättning eller arbetsyta
 description: Lär dig hur du tar bort nästan vad som helst från Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b010cfafc15c905cd792b9693777af94149cb1fe
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 0ccc32a18098673034e7f37b92f8edb5636ef21d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431983"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872527"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Ta bort på nästan vad som helst i Power BI-tjänsten
 Den här artikeln lär dig hur du tar bort en instrumentpanel, rapport, rapportsida, arbetsbok, datauppsättning, app, visualisering och arbetsyta i Power BI-tjänsten.
@@ -90,7 +89,7 @@ Om en datauppsättning är en del av en eller flera [organisationsinnehållspake
 Som författare till arbetsytan kan du ta bort den. När du tar bort den tas den kopplade appen bort för alla medlemmar i gruppen och tas bort från din AppSource om du har publicerat appen till hela organisationen. Att ta bort en arbetsyta är inte samma sak som att lämna en arbetsyta.
 
 ### <a name="to-delete-a-workspace---if-you-are-an-admin"></a>Ta bort en arbetsyta – om du är administratör
-1. Välj **Arbetsytor** i det vänstra navigeringsfältet
+1. Välj **Arbetsytor** i navigeringsfönstret
 
 2. Välj **Fler alternativ** (...) till höger om arbetsytan du vill ta bort och välj **Redigera arbetsyta**.
 
@@ -125,7 +124,7 @@ Appar kan enkelt tas bort från listan med appar. Men endast administratörer ka
 ### <a name="remove-an-app-from-your-app-list-page"></a>Ta bort en app från din lista med appar
 Om du tar bort en app från applistan tas den inte bort för andra medlemmar.
 
-1. Välj **Appar** i det vänstra navigeringsfältet för att öppna sidan med appar.
+1. Öppna applistsidan genom att välja **Appar** i navigeringsfönstret.
 2. Håll muspekaren över en app för att ta bort den och välj ikonen Ta bort ![](media/service-delete/power-bi-delete-report2.png).
 
    ![välj appar](media/service-delete/power-bi-delete-app.png)
@@ -141,4 +140,4 @@ Den här artikeln visar hur du tar bort de primära byggstenarna för Power BI-t
 * [Ta bort en instrument](service-dashboard-edit-tile.md)
 * [Ta bort en rapportvisualisering](service-delete.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

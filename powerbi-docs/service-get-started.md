@@ -2,7 +2,6 @@
 title: Kom igång med Power BI-tjänsten
 description: Kom igång med Power BI-tjänsten online (app.powerbi.com)
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 3a9b2a5e7de0a5072b266c7b146488e5d546f616
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060401"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872331"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Självstudie: Kom igång med Power BI-tjänsten
 Den här självstudien är en introduktion till några av funktionerna i *Power BI-tjänsten*. I självstudien ansluter du till data, skapar en rapport och en instrumentpanel och ställer frågor om dina data. Du kan göra mycket mer i Power BI-tjänsten. Den här självstudien är bara en aptitretare. Om du vill förstå hur Power BI-tjänsten passar ihop med andra Power BI-erbjudanden rekommenderar vi att du läser [Vad är Power BI](fundamentals/power-bi-overview.md).
@@ -35,7 +34,7 @@ I den här självstudien går du igenom följande steg:
 > * Rensa resurser genom att ta bort datamängden, rapporten och instrumentpanelen.
 
 > [!TIP]
-> Föredrar du en kostnadsfri självstudiekurs istället? [Registrera dig för vår kurs Analysera och visualisera data på EdX](http://aka.ms/edxpbi).
+> Föredrar du en kostnadsfri självstudiekurs istället? [Registrera dig för vår kurs Analysera och visualisera data på EdX](https://aka.ms/edxpbi).
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Registrera dig för Power BI-tjänsten
 Om du inte har något Power BI-konto [registrerar du dig för en kostnadsfri Power BI Pro-utvärderingsversion](https://app.powerbi.com/signupredirect?pbi_source=web) innan du börjar.
@@ -46,10 +45,10 @@ När du har ett konto anger du *app.powerbi.com* i webbläsaren för att öppna 
 
 När du vill skapa en Power BI-rapport börjar du ofta i Power BI Desktop. Den här gången ska vi börja från början och skapa en rapport i Power BI-tjänsten.
 
-I den här självstudien får vi data från en CSV-fil. Vill du hänga på? [Ladda ned CSV-filen med finansiella exempel](http://go.microsoft.com/fwlink/?LinkID=521962).
+I den här självstudien får vi data från en CSV-fil. Vill du hänga på? [Ladda ned CSV-filen med finansiella exempel](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Logga in till Power BI](http://www.powerbi.com/). Har du inte något konto? Inga problem, du kan registrera dig för en kostnadsfri utvärderingsversion.
-2. Power BI öppnas i webbläsaren. Välj **Hämta data** längst ned i det vänstra navigeringsfältet.
+1. [Logga in till Power BI](https://www.powerbi.com/). Har du inte något konto? Inga problem, du kan registrera dig för en kostnadsfri utvärderingsversion.
+2. Power BI öppnas i webbläsaren. Välj **Hämta data** längst ned i navigeringsfönstret.
 
     Sidan **Hämta data** öppnas.   
 
@@ -73,7 +72,7 @@ I den här självstudien får vi data från en CSV-fil. Vill du hänga på? [Lad
 
     ![Tom rapportarbetsyta](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Observera att det finns ett alternativ för **Läsvy** i det övre navigeringsfältet. Eftersom du har det här alternativet innebär det att du för närvarande är i Redigeringsvy. Ett bra sätt för dig att bekanta dig med rapportredigeraren är att [ta en rundtur](service-the-report-editor-take-a-tour.md).
+7. Observera att alternativet **Läsvy** finns i det övre navigeringsfönstret. Eftersom du har det här alternativet innebär det att du för närvarande är i Redigeringsvy. Ett bra sätt för dig att bekanta dig med rapportredigeraren är att [ta en rundtur](service-the-report-editor-take-a-tour.md).
 
     ![Alternativet Läsvy](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -121,7 +120,7 @@ Nu när du har anslutit till dina data kan du börja utforska omgivningarna.  N�
 
 ## <a name="step-3-explore-with-qa"></a>Steg 3: Utforska med frågor och svar
 
-Om du vill utforska dina data snabbt kan du prova med att ställa en fråga i rutan Frågor och svar. Frågor och svar skapar frågor om dina data på ett naturligt språk. Rutan Frågor och svar finns längst upp (**Ställ en fråga om dina data**). I en rapport finns den i det översta navigeringsfältet (**Ställ en fråga**).
+Om du vill utforska dina data snabbt kan du prova med att ställa en fråga i rutan Frågor och svar. Frågor och svar skapar frågor om dina data på ett naturligt språk. Rutan Frågor och svar finns längst upp (**Ställ en fråga om dina data**). I en rapport finns den i det översta navigeringsfönstret (**Ställ en fråga**).
 
 1. Om du vill gå tillbaka till instrumentpanelen väljer du **Min arbetsyta** i det svarta **Power BI**-fältet.
 
@@ -198,7 +197,7 @@ Nu ska vi titta på en sista interaktion innan du börjar skapa dina egna instru
 ## <a name="clean-up-resources"></a>Rensa resurser
 Nu när du är klar med självstudien kan du ta bort datauppsättningen, rapporten och instrumentpanelen. 
 
-1. Se till att du befinner dig i **Min arbetsyta** i det vänstra navigeringsfältet.
+1. Kontrollera i navigeringsfönstret att du är i **Min arbetsyta**.
 2. Välj fliken **Datauppsättningar** och hitta datauppsättningen du importerade för den här självstudien.  
 3. Välj **Fler alternativ** (...) > **Ta bort**.
 

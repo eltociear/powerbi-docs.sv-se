@@ -4,7 +4,6 @@ description: I den här snabbstarten får **konsumenter**  lära sig mer om Powe
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerbi
@@ -13,12 +12,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019598"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862671"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Snabbstart: Lär dig mer om Power BI-funktioner för *användare*
 I den här snabbstarten lär du dig att interagera med Power BI för att identifiera databaserade affärsinsikter. Det här är ingen djupgående artikel utan snarare en snabb titt på många av de åtgärder som är tillgängliga för **Power BI-användare**.
@@ -50,7 +49,7 @@ När vi använder begreppet ”innehåll” i Power BI syftar vi på rapporter, 
 
 En *app* är en Power BI-innehållstyp som kombinerar relaterade instrumentpaneler och rapporter, samlat på en plats. En app kan ha en eller flera instrumentpaneler och en eller flera rapporter, alla samlade. Appar skapas av Power BI-*designers* som distribuerar och delar apparna med *konsumenter* som du. 
 
-Ett sätt att visa dina appar är att välja **Appar** från navigeringsfältet och välja en app att öppna.
+Ett sätt att visa dina appar är att välja **Appar** i navigeringsfönstret och sedan välja en app att öppna.
 
 ![Ikonen Hämta appar](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -116,7 +115,7 @@ Visuella objekt består av datapunkter. Du kan visa information genom att hovra 
 ![hovra för mer information.](media/end-user-reading-view/power-bi-hover.gif)
 
 ### <a name="favorite-a-dashboard"></a>Favoritmarkera en instrumentpanel
-När du gör innehåll till en *favorit* kan du komma åt det från det vänstra navigeringsfältet. Det vänstra navigeringsfältet är synligt i praktiskt taget alla områden i Power BI. Favoriter är vanligtvis de instrumentpaneler, rapportsidor och appar som du använder oftast.
+När du gör innehåll till en *favorit* kan du komma åt det från navigeringsfönstret. Navigeringsfönstret är synligt i praktiskt taget alla områden i Power BI. Favoriter är vanligtvis de instrumentpaneler, rapportsidor och appar som du använder oftast.
 
 Välj **Favorit** uppe till höger i Power BI-tjänsten. Om du inte ser det här alternativet väljer du **Fler alternativ** (…) och sedan **Favorit** i listrutan. 
    
@@ -194,9 +193,9 @@ Utöver att visa de data som används för att skapa ett visuellt objekt kan du 
 Detta har varit en snabb översikt över några av de saker som *konsumenter* kan göra med Power BI-tjänsten.  
 
 ## <a name="clean-up-resources"></a>Rensa resurser
-- Om du är ansluten till en app väljer du **Appar** i det vänstra navigeringsfältet för att öppna appinnehållslistan. Håll muspekaren över den app som du vill ta bort och välj ikonen för papperskorgen.
+- Om du är ansluten till en app öppnar du appinnehållslistan genom att välja **Appar** i navigeringsfönstret. Håll muspekaren över den app som du vill ta bort och välj ikonen för papperskorgen.
 
-- Om du har importerat eller anslutit till en Power BI-exempelrapport öppnar du **Min arbetsyta** från det vänstra navigeringsfältet. Leta reda på instrumentpanelen, rapporten och datauppsättningen med hjälp av flikarna längst upp och välj ikonen för papperskorgen för var och en av dessa.
+- Om du har importerat eller anslutit till en Power BI-exempelrapport öppnar du **Min arbetsyta** från navigeringsfönstret. Leta reda på instrumentpanelen, rapporten och datauppsättningen med hjälp av flikarna längst upp och välj ikonen för papperskorgen för var och en av dessa.
 
 ## <a name="next-steps"></a>Nästa steg
 [Power BI för konsumenter](end-user-consumer.md)

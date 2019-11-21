@@ -2,7 +2,6 @@
 title: Fokusläge och fullskärmsläge – så här zoomar du in för att se mer information
 description: Dokumentation över att visa en Power BI-instrumentpanel, rapport eller visuellt rapportobjekt i fokusläge eller i fullskärmsläge
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019809"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852752"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Visa innehållet i detalj: fokusläge och fullskärmsläge
 
@@ -38,7 +37,7 @@ Fokusläge och fullskärmsläge är två olika sätt att se mer information i di
 
 ![instrumentpanelens fullskärmsläge före och efter](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Se ditt innehåll i Power BI-tjänsten (instrumentpaneler, rapportsidor, paneler och visuella objekt) utan störande menyer och navigeringsfält.  Du får en oförstörd, fullständig översikt över ditt innehåll på ett överblick, vid alla tidpunkter. Detta kallas ibland för TV-läge.   
+Visa ditt innehåll i Power BI-tjänsten (instrumentpaneler, rapportsidor, paneler och visuella objekt) utan störande menyer och navigeringsfönster.  Du får en oförstörd, fullständig översikt över ditt innehåll på ett överblick, vid alla tidpunkter. Detta kallas ibland för TV-läge.   
 
 Om du vill öppna fullskärmsläget väljer du ikonen **fullskärm** ![fullskärmsikonen ](media/end-user-focus/power-bi-full-screen-icon.png) i Power BI-tjänstens menyrad ovanför din instrumentpanel, rapport, panel i fokusläge eller ett visuellt objekt i fokusläge.  Ditt valda innehåll fyller hela skärmen.
 Om du använder Power BI Mobile är [fullskärm är tillgängligt för mobila Windows 10-appar](./mobile/mobile-windows-10-app-presentation-mode.md). 
@@ -60,7 +59,7 @@ I fokusläget kan en Power BI-*användare* interagera med de filter som tillämp
 
 ## <a name="working-in-full-screen-mode"></a>Arbeta i fullskärmsläge
 
-Om du vill öppna en instrumentpanel eller en rapportsida i fullskärmsläge, väljer du fullskärmsikonen ![fullskärmsikonen](media/end-user-focus/power-bi-full-screen-icon.png) i det översta navigeringsfältet. När du är i fullskärmsläge visas en snabbmeny när du flyttar musen eller markören. Eftersom fullskärmsläget används för en mängd olika innehåll kan alternativen i snabbmenyn skilja sig åt, men de är ganska självförklarande.  Du kan hovra över en ikon för att se en beskrivning av den.
+Om du vill öppna en instrumentpanel eller en rapportsida i fullskärmsläge, väljer du fullskärmsikonen ![fullskärmsikonen](media/end-user-focus/power-bi-full-screen-icon.png) från det översta navigeringsfönstret. När du är i fullskärmsläge visas en snabbmeny när du flyttar musen eller markören. Eftersom fullskärmsläget används för en mängd olika innehåll kan alternativen i snabbmenyn skilja sig åt, men de är ganska självförklarande.  Du kan hovra över en ikon för att se en beskrivning av den.
 
 Menyn för instrumentpaneler    
 ![Menyn för instrumentpaneler](media/end-user-focus/power-bi-full-screen-dash.png)    

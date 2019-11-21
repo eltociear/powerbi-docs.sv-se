@@ -2,19 +2,18 @@
 title: Distribuera mallappar i organisationen – Power BI
 description: Läs mer om att installera, anpassa och distribuera mallappar i din organisation i Power BI.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 4db4fbc0dd34ae558514058e0aa7af0a704d8411
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: dcb037fdf064611947719a57316f31d901e3b81d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432336"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871429"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installera och distribuera mallappar i organisationen – Power BI
 
@@ -45,7 +44,7 @@ Välj den här länken i en webbläsare för att öppna AppSource filtrerat på 
 
 ### <a name="search-appsource-from-the-power-bi-service"></a>Söka på AppSource från Power BI-tjänsten
 
-1. Välj **Appar** > **Hämta appar** i navigeringsfönstret till vänster i Power BI-tjänsten.
+1. Välj **Appar** > **Hämta appar** i navigeringsfönstret i Power BI-tjänsten.
 
     ![Hämta appar](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
@@ -69,7 +68,7 @@ Välj den här länken i en webbläsare för att öppna AppSource filtrerat på 
     - **Anslut data**: Ändra datakällan från exempeldata till din egen datakälla. Du kan definiera om datauppsättningsparametrar och autentiseringsuppgifter för datakällan. Se [Kända begränsningar](service-template-apps-tips.md#known-limitations) i artikeln om tips för mallappar. 
     - **Gå till arbetsytan** (avancerat alternativ): du kan göra de ändringar som apputvecklaren tillåter.
 
-    Eller så kan du hoppa över den här dialogrutan och gå direkt till den tillhörande arbetsytan via **Arbetsytor** i det vänstra navigeringsfönstret.
+    Eller så kan du hoppa över den här dialogrutan och gå direkt till den tillhörande arbetsytan via **Arbetsytor** i navigeringsfönstret.
     >[!NOTE]
     >Vid installation av en mallapp installeras både en *organisationsapp* och en *arbetsyta*. Läs mer om att [distribuera appar i Power BI](service-create-distribute-apps.md).
  

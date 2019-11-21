@@ -2,7 +2,6 @@
 title: Skapa klassiska arbetsytor i Power BI
 description: Lär dig hur du skapar arbetsytor, samlingar av instrumentpaneler, rapporter och sidnumrerade rapporter som skapats för att förse din organisation med viktiga mått.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1087ac4301a172500c997e78ee3a16695f6b0d73
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 3153e63685e21a29687c33e702c4ade55324e05c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73021096"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853554"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Skapa klassiska arbetsytor i Power BI
 
@@ -75,7 +74,7 @@ I de aktuella arbetsytorna kan du även ansluta med hjälp av organisationsinneh
 
 Om du vill distribuera officiellt innehåll till en stor målgrupp i din organisation kan du publicera en app från din arbetsyta.  När innehållet är färdigt kan du välja vilka instrumentpaneler och rapporter som du vill publicera och sedan publicera det som en *app*. Du kan skapa en app från varje arbetsyta.
 
-I listan Appar i den vänstra navigeringen visas alla appar som du har installerat. Dina medarbetare kan få appen på ett par olika sätt. 
+I listan Appar i navigeringsfönstret visas alla appar som du har installerat. Dina medarbetare kan få appen på ett par olika sätt. 
 - De kan leta upp och installera appen från Microsoft AppSource
 - Du kan skicka dem en direktlänk. 
 - Du kan installera den automatiskt på dina medarbetares Power BI-konton om din Power BI-administratör ger dig behörighet. 
@@ -97,4 +96,4 @@ Du kan jämföra de två i [Hur skiljer sig de nya arbetsytorna åt från befint
 ## <a name="next-steps"></a>Nästa steg
 * [Installera och använda appar i Power BI](service-create-distribute-apps.md)
 - [Skapa de nya arbetsytorna](service-create-the-new-workspaces.md)
-* Har du några frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+* Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

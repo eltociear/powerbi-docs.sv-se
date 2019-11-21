@@ -3,18 +3,17 @@ title: 'Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power 
 description: I den här självstudien ansluter du till en Azure SQL-exempeldatabas. Sedan använder du en guide i Report Builder för att skapa en sidnumrerad rapport. Sedan överför du den sidnumrerade rapporten till en arbetsyta i en Premium-kapacitet i Power BI-tjänsten.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: ab4cb14936ceff52a78f713877064d525de4b104
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431668"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875433"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Självstudie: Skapa en sidnumrerad rapport och ladda upp den till Power BI-tjänsten
 
@@ -287,7 +286,7 @@ Ytterligare en formateringsförbättring innan du publicerar rapporten till Powe
 
 Nu när du har skapat den här sidnumrerade rapporten är det dags att överföra den till Power BI-tjänsten.
 
-1. Välj **Arbetsytor** > **Skapa arbetsyta** i det vänstra navigeringsfönstret i Power BI-tjänsten (http://app.powerbi.com).
+1. Välj **Arbetsytor** > **Skapa arbetsyta** i navigeringsfönstret i Power BI-tjänsten (https://app.powerbi.com).
 
 2. Ge arbetsytan namnet **Azure AW** eller något annat unikt namn. Du är den enda medlemmen för tillfället. 
 

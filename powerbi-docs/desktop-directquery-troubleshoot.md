@@ -2,19 +2,18 @@
 title: Felsöka DirectQuery-modell i Power BI Desktop
 description: Felsök problem med DirectQuery-modeller.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ac585aef180bb852f79ad5135778cec20f35cf2d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433471"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868053"
 ---
 # <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>Felsöka DirectQuery-modell i Power BI Desktop
 
@@ -92,7 +91,7 @@ Den rekommenderade metoden för att samla in en spårning för att diagnosticera
 - Öppna SQL Server Profiler och granska spårningen på det sätt som beskrivs ovan. Kom ihåg att spårningsfilen tas bort när du stänger Power BI Desktop. Ytterligare åtgärder i Power BI Desktop visas heller inte omedelbart. Du måste stänga och öppna spårningsfilen igen för att se de nya händelserna.
 - Om du håller de enskilda sessionerna rimligt små (tio sekunders åtgärder, snarare än hundratals) gör det lättare att tolka spårningsfilen (och eftersom det finns en gräns för spårningsfilens storlek, så finns det en risk att långa sessioner ökar risken för att tidiga händelser tas bort).
 
-## <a name="understand-the-form-of-query-sent-by-power-bi-desktop"></a>Förstå formen för den fråga som Power BI Desktop skickar
+## <a name="understand-queries-sent-to-the-source"></a>Förstå frågor som skickats till källan
 
 I formatet för de frågor som genereras och skickas av Power BI Desktop används underfrågor för var och en av de tabeller i modellen som refereras, där underfrågan definieras av Power Query-frågan. Anta till exempel att du har följande TPC DS-tabeller i relationsdatabas i SQL Server:
 

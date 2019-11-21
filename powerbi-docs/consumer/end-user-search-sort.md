@@ -2,7 +2,6 @@
 title: Söka och sortera ditt innehåll i Power BI-tjänsten
 description: dokumentation för sökning samt sortering av innehåll i Min arbetsyta i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d5bc5638d9f98c1a35f57edd1d5d838c91c8ebf2
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: 5a7848cb5931d983ab434a19c934c9e9cb464724
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891776"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861739"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigering: sökning, lokalisering och sortering av innehåll i Power BI-tjänsten
 
@@ -47,10 +46,10 @@ Du kan också sortera innehåll efter namn eller ägare. Observera uppåtpilen t
 Det finns vissa kolumner som inte kan sorteras. Hovra över kolumnrubrikerna för att identifiera vilka som kan sorteras.
 
 ___________________________________________________________________
-## <a name="navigation-using-the-navigation-pane"></a>Navigering via navigeringsfältet
-I navigeringsfältet klassificeras ditt innehåll på ett sätt som gör att du snabbt hittar det du behöver.  
+## <a name="navigation-using-the-nav-pane"></a>Navigera med hjälp av navigeringsfönstret
+I navigeringsfönstret klassificeras ditt innehåll på ett sätt som gör att du snabbt hittar det du behöver.  
 
-![vänstra navigeringsfältet](./media/end-user-search-sort/power-bi-navbar.png)
+![navigeringsfönster](./media/end-user-search-sort/power-bi-nav pane.png)
 
 
 - Innehåll som delas med dig är tillgängligt i **delat med mig**.
@@ -58,7 +57,7 @@ I navigeringsfältet klassificeras ditt innehåll på ett sätt som gör att du 
 - Dina appar kan hittas genom att välja **appar**.
 - **Start** är en vy av en enda sida av dina viktigaste innehåll och innehållsförslag och inlärningskällor.
 
-Dessutom kan du tagga innehåll Med [Favoriter](end-user-favorite.md) och [Aktuellt](end-user-featured.md). Välj den instrumentpanel eller den rapport som du tror att du oftast kommer att använda och ange den som ditt *aktuella* innehåll. Varje gång du öppnar Power BI-tjänsten visas din aktuella instrumentpanel först. Har du flera instrumentpaneler och appar som du besöker ofta? När du anger dem som favoriter är de alltid tillgängliga i det vänstra navigeringsfältet.
+Dessutom kan du tagga innehåll Med [Favoriter](end-user-favorite.md) och [Aktuellt](end-user-featured.md). Välj den instrumentpanel eller den rapport som du tror att du oftast kommer att använda och ange den som ditt *aktuella* innehåll. Varje gång du öppnar Power BI-tjänsten visas din aktuella instrumentpanel först. Har du flera instrumentpaneler och appar som du besöker ofta? Genom att ange dem som favoriter är de alltid tillgängliga i navigeringsfönstret.
 
 ![Favoriter utfällt](./media/end-user-search-sort/power-bi-favorite.png).
 
@@ -70,4 +69,4 @@ Dessutom kan du tagga innehåll Med [Favoriter](end-user-favorite.md) och [Aktue
 ## <a name="next-steps"></a>Nästa steg
 [Sortera visuella objekt i rapporter](end-user-change-sort.md)
 
-Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)

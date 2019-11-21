@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: a48589e6126203856a306de796c964ce6e347c26
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73429872"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73764717"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -68,7 +68,7 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 
 **connect live (anslut live)** En metod för att ansluta till SQL Server Analysis Services-datamodeller. Kallas även för en liveanslutning.
 
-**container** Områdena i navigeringsfältet är *behållare*. I navigeringsfältet hittar du behållare för: Favoriter, senaste, appar, delade med mig och hem. 
+**container** Områdena i navigeringsfönstret är *containrar*. I navigeringsfönstret hittar du containrar för: Favoriter, senaste, appar, delade med mig och hem. 
 
 **content** Innehållet för Power BI-tjänsten är vanligtvis instrumentpaneler, rapporter och appar. Den kan även innehålla arbetsböcker och datauppsättningar.
 
@@ -162,12 +162,12 @@ Power BI-miljö (klientorganisation) kan användas i dokumentation om det hjälp
 
 ## <a name="l"></a>L
 
-**left navigation (vänster navigeringsfält**) Detta har ersatts **av navigeringsfältet** men kan fortfarande visas i viss dokumentation.    
+**left navigation (vänster navigeringsfönster**) Detta har ersatts med **nav pane**, men kan fortfarande förekomma i viss dokumentation.    
 Kontrollerna längs vänsterkanten i Power BI-tjänsten.
 
-Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden eller vid begränsat utrymme: vänster navigering
+Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid begränsat utrymme: nav pane
 
-**list page (listsida)** eller **innehållslista** En av avsnittssidorna för elementen i det vänstra navigeringsfältet. Till exempel Favoriter, Senaste, Min arbetsyta osv.
+**list page (listsida)** eller **content list (innehållslista)** En av avsnittssidorna för elementen i navigeringsfönstret. Till exempel Favoriter, Senaste, Min arbetsyta osv.
 
 ## <a name="m"></a>M
 
@@ -181,11 +181,11 @@ Första förekomsten: vänster navigeringsfält Efterföljande omnämnanden elle
 
 **native (inbyggt)** Inbyggt i produkten. Till exempel levereras Power BI med en uppsättning *inbyggda* visualiseringstyper. Men du kan också importera andra typer, till exempel anpassade visuella objekt.
 
-**navigation bar (navigeringsfält)** eller **nav bar** Kontrollerna längs vänsterkanten i Power BI-tjänsten.
+**nav pane (navigeringsfönster)** eller **nav pane** Kontrollerna längs vänsterkanten i Power BI-tjänsten.
 
-Första förekomsten: navigeringsfält Efterföljande omnämnanden eller vid begränsat utrymme: nav bar
+Första förekomsten: navigeringsfönstret Efterföljande omnämnanden eller vid begränsat utrymme: nav pane
 
-**navigation pane (navigeringsfönster)** Se **navigeringsfält**
+**nave pane (navigeringsfönster)** Se **nav pane**
 
 **notification (meddelande)** Meddelandena som skickas av och till Power BI-meddelandecentret.  
 
@@ -260,7 +260,7 @@ Lägg till i en URL om du vill förfiltrera resultaten som visas i en Power BI-r
 
 **real-time streaming (strömning i realtid)** Möjligheten att strömma data och uppdatera instrumentpaneler i realtid från källor som sensorer, sociala medier, användningsstatistik eller andra källor som tidskänsliga data kan samlas in eller skickas från.  
 
-**Recent (Senaste)** Containern i det vänstra navigeringsfältet som innehåller alla enskilda artefakter som användes senast.
+**Recent (Senaste)** Containern i navigeringsfönstret som innehåller alla enskilda artefakter som användes senast.
 
 **related content (relaterat innehåll)** Visar de enskilda delarna av innehåll som bidrar till det aktuella innehållet. För en instrumentpanel kan du till exempel se rapporterna och datauppsättningarna som tillhandahåller data och visualiseringar på instrumentpanelen.   
 
@@ -288,7 +288,7 @@ En rapport visar en enda datauppsättning från flera perspektiv med visualiseri
 **share, sharing (dela, delning)** I Power BI syftar delning vanligtvis på att direkt dela en enskild artefakt (en instrumentpanel eller rapport) med en eller flera personer med hjälp av deras e-postadresser. Kräver en Power BI Pro-licens för avsändaren och mottagaren.
 På mobila enheter kan delning syfta på interna delningsfunktioner i operativsystemet, till exempel ”kommentera och dela”.  
 
-**Shared with me (Delat med mig)** Containern i det vänstra navigeringsfältet som innehåller alla enskilda artefakter som delats direkt av en annan Power BI-användare.
+**Shared with me (Delat med mig)** Containern i navigeringsfönstret som innehåller alla enskilda artefakter som delats direkt av en annan Power BI-användare.
 
 **snapshot (ögonblicksbild)**
 

@@ -2,7 +2,6 @@
 title: Köpa och tilldela Power BI Pro-licenser
 description: Lär dig hur du köper och tilldelar Power BI Pro-användarlicenser så att användarna kan komma åt innehåll och samarbeta med kollegor i Power BI-tjänsten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 31739cee4371a8991f8c88e6ba67bfb48878a33c
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 72a158e2dca32d2199fcd48e2cc37bf4c90778ea
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431408"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873543"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Köpa och tilldela Power BI Pro-användarlicenser
 
@@ -37,7 +36,7 @@ Så här köper du Power BI Pro-licenser i administrationscentret för Microsoft
 
 1. Öppna [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
-2. Välj **fakturering** > **prenumerationer** i den vänstra navigeringspanelen.
+2. Välj **Fakturering** > **Prenumerationer** i navigeringsfönstret.
 
     ![Navigeringsfönster](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
 
@@ -75,7 +74,7 @@ Följ de här stegen om du vill tilldela Power BI Pro-licenser till enskilda anv
 
 1. Öppna [Administrationscenter för Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
-2. Expandera **Användare** i det vänstra navigeringsfönstret och klicka sedan på **Aktiva användare**.
+2. Expandera **Användare** i navigeringsfönstret och välj sedan **Aktiva användare**.
 
     ![Aktiva användare](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-05.png)
 
@@ -97,7 +96,7 @@ Följ de här stegen om du vill tilldela Power BI Pro-licenser till enskilda anv
 
 1. Gå till [Azure-portalen](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0).
 
-2. Välj **Azure Active Directory** i det vänstra navigeringsfältet.
+2. Välj **Azure Active Directory** i navigeringsfönstret.
 
     ![Azure Active Directory](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-01.png)
 

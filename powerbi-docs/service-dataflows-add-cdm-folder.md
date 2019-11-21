@@ -2,7 +2,6 @@
 title: Lägg till en CDM-mapp i Power BI som ett dataflöde
 description: Konfigurera en arbetsyta så att den lagrar dataflödesdefinitionen och datafilerna i Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3adc642d539ab8e1c1f1f60981a61fdc58a460ab
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432040"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872697"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lägga till en CDM-mapp i Power BI som ett dataflöde (förhandsversion)
 
@@ -33,7 +32,7 @@ I följande avsnitt beskrivs hur du skapar ett dataflöde från en CDM-mapp.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Skapa ett dataflöde från en CDM-mapp
 
-För att skapa ett dataflöde från en CDM-mapp börjar du med att starta **Power BI-tjänsten** och välja en **arbetsyta** från det vänstra navigeringsfönstret. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde.
+Om du vill skapa ett dataflöde från en CDM-mapp, så börja med att starta **Power BI-tjänsten** och välja en **arbetsyta** i navigeringsfönstret. Du kan också skapa en ny arbetsyta där du kan skapa ditt nya dataflöde.
 
 ![Skapa ett dataflöde i Power BI-tjänsten](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -110,5 +109,5 @@ Mer information om Common Data Service finns i dess översiktsartikel:
 * [CDM-mappar](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM-modellfildefinition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Och du kan alltid prova att [ställa frågor till Power BI Community](http://community.powerbi.com/).
+Och du kan alltid prova att [ställa frågor till Power BI Community](https://community.powerbi.com/).
 

@@ -2,7 +2,6 @@
 title: 'Självstudie: Ansluta till en GitHub-lagringsplats med Power BI'
 description: I den här självstudien ska du ansluta till verkliga data i GitHub-tjänsten med Power BI, så skapar Power BI automatiskt instrumentpaneler och rapporter.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7f7fde7fcabc29238d9558739eff02519ef9cca3
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73020019"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871256"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Självstudie: Ansluta till en GitHub-lagringsplats med Power BI
 I den här självstudien ska du ansluta till verkliga data i GitHub-tjänsten med Power BI, så skapar Power BI automatiskt instrumentpaneler och rapporter. Du ansluter till den offentliga lagringsplatsen (även kallad *databas*) för Power BI-innehåll och hittar svar på frågor som: Hur många personer bidrar till det offentliga Power BI-innehållet? Vem bidrar med mest innehåll? Vilken dag i veckan har flest bidrag? Och andra frågor. 
@@ -45,7 +44,7 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
 ## <a name="how-to-connect"></a>Så här ansluter du
 1. Logga in till Power BI-tjänsten (https://app.powerbi.com). 
-2. Välj **Appar** i det vänstra navigeringsfönstret och välj sedan **Hämta appar**.
+2. Välj **Appar** i navigeringsfönstret och sedan **Hämta appar**.
    
    ![Hämta appar i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
@@ -72,15 +71,15 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
    Nu kan Power BI ansluta till GitHub och till informationen.  Data uppdateras en gång om dagen.
 
 8. När Power BI har importerat data ser du innehållet på din nya GitHub-arbetsyta. 
-9. Välj pilen intill namnet på arbetsytan i det vänstra navigeringsfältet. Arbetsytan innehåller en instrumentpanel och en rapport. 
+9. Välj pilen intill arbetsytans namn i navigeringsfältet. Arbetsytan innehåller en instrumentpanel och en rapport. 
 
-    ![App i det vänstra navigeringsfönstret](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![Appar i navigeringsfönstret](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 10. Välj **Fler alternativ** (...) bredvid instrumentpanelens namn > **Byt namn** > skriv **GitHub instrumentpanel**.
  
     ![GitHub-panel i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
-8. Minimera vänster navigeringsfönster så att du får mer plats genom att välja ikonen för global navigering.
+8. Minimera navigeringsfönstret genom att välja ikonen för global navigering, så att du får mer plats.
 
     ![Ikon för global navigering](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
@@ -129,7 +128,7 @@ I den här kursen behöver du ett GitHub-konto om du inte redan har ett.
 
 Nu när du är klar med självstudien kan du ta bort GitHub-appen. 
 
-1. Välj **Appar** i det vänstra navigeringsfältet.
+1. Välj **Appar** i navigeringsfönstret.
 2. Hovra över GitHub-ikonen och välj papperskorgen (**Ta bort**).
 
     ![Ta bort GitHub-appen](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)

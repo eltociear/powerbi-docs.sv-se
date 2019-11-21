@@ -2,7 +2,6 @@
 title: Aktivera känslighetsetiketter för data i Power BI
 description: Lär dig att aktivera känslighetsetiketter för data i Power BI
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: a53e06f65f5ef8328a0c27b48f2020228a0570ed
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 024e04bd309080b5b31e43bde7c783255bfc3dba
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73433101"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851076"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Aktivera känslighetsetiketter för data i Power BI (förhandsversion)
 
@@ -63,7 +62,7 @@ Power BI använder känslighetsetiketter från Microsoft Information Protection.
 
 ## <a name="licensing"></a>Licensiering
 
-* Om användarna ska kunna visa känslighetsetiketter från Microsoft Information Protection i Power BI måste de ha en Premium P1- eller Premium P2-licens för Azure Information Protection. Du kan antingen köpa Microsoft Azure Information Protection separat eller via något av Microsofts licenspaket. Läs mer i [Prissättning för Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
+* Om användarna ska kunna visa eller använda känslighetsetiketter från Microsoft Information Protection i Power BI måste de ha en Premium P1- eller Premium P2-licens för Azure Information Protection. Du kan antingen köpa Microsoft Azure Information Protection separat eller via något av Microsofts licenspaket. Läs mer i [Prissättning för Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/).
 * Användare som ska ställa in etiketter för Power BI-tillgångar måste ha en Power BI Pro-licens.
 
 

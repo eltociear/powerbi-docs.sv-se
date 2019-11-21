@@ -2,7 +2,6 @@
 title: Visa relaterat innehåll från instrumentpaneler, rapporter och datauppsättningar
 description: Enklare navigering, visa relaterat innehåll på instrumentpaneler, rapporter och datauppsättningar
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 10fcb7420c261379d596666589a0f6707cf70160
-ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73019450"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862266"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Visa relaterat innehåll i Power BI-tjänsten
 
@@ -54,9 +53,9 @@ Härifrån kan du vidta direkta åtgärder för det relaterade innehållet.  Vä
 ## <a name="view-related-content-for-a-dataset"></a>Visa relaterat innehåll för en datauppsättning
 Du behöver minst behörighet att *visa* för en datauppsättning för att öppna fönstret **Relaterat innehåll**. I det här exemplet använder vi [Exemplet på anskaffningsanalys](../sample-procurement.md).
 
-I navigeringsfältet letar du upp rubriken **Arbetsytor** och väljer en arbetsyta i listan. Om du har innehåll på en arbetsyta visas det på ytan till höger. 
+I navigeringsfältet letar Leta upp rubriken **Arbetsytor** i navigeringsfönstret och välj en arbetsyta i listan. Om du har innehåll på en arbetsyta visas det på ytan till höger. 
 
-![arbetsytor i det vänstra navigeringsfältet](./media/end-user-related/power-bi-workspace.png)
+![arbetsytor i navigeringsfönstret](./media/end-user-related/power-bi-workspace.png)
 
 
 I en arbetsyta väljer du fliken **Datauppsättningar** och letar sedan upp ikonen **Visa relaterade**![ikonen Visa relaterade](./media/end-user-related/power-bi-view-related-icon-new.png).
@@ -76,5 +75,5 @@ Härifrån kan du vidta direkta åtgärder för det relaterade innehållet. Väl
 
 ## <a name="next-steps"></a>Nästa steg
 * [Kom igång med Power BI-tjänsten](../service-get-started.md)
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 

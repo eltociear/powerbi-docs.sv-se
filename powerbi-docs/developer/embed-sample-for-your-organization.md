@@ -3,19 +3,18 @@ title: Inbäddad analys för att bädda in Power BI-innehåll i ett program för
 description: Lär dig att integrera eller bädda in en rapport (Power BI eller sidnumrerad), instrumentpanel eller panel i ett program med hjälp av Power BI-API:er för inbäddad analys åt din organisation. Lär dig hur du integrerar Power BI i ditt program med inbäddad analysprogramvara, inbäddade analysverktyg eller inbäddade business intelligence-verktyg.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 9c35d74249516b25a756a8a90ce666092e585a72
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 3a217ebd1b6450c76ebf25ad5154293566d955f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431083"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876006"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Självstudie: Bädda in Power BI-innehåll i ett program för din organisation
 
@@ -59,7 +58,7 @@ Du behöver fortsätta med att registrera en **webbapp för serversidan**-app. D
 
 ### <a name="create-a-workspace"></a>Skapa en arbetsyta
 
-Om du bäddar in rapporter, instrumentpaneler eller paneler för kunderna, måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md).
+Om du bäddar in rapporter, instrumentpaneler eller paneler för dina kunder måste du placera innehållet i en arbetsyta. Det finns olika typer av arbetsytor du kan konfigurera: [traditionella arbetsytor](../service-create-workspaces.md) eller [nya arbetsytor](../service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Skapa och publicera Power BI-rapporter
 
@@ -118,7 +117,7 @@ Så här hämtar du **applicationId**:
 
 1. Logga in på [Azure Portal](https://portal.azure.com).
 
-2. I det vänstra navigeringsfönstret väljer du **Alla tjänster** och **Appregistreringar**.
+2. Välj **Alla tjänster** i det vänstra navigeringsfönstret och välj sedan **Appregistreringar**.
 
 3. Välj det program som behöver **applicationId**.
 
@@ -429,4 +428,4 @@ I den här självstudien har du lärt dig hur du bäddar in Power BI-innehåll i
 > [!div class="nextstepaction"]
 >[Bädda in för dina kunder](embed-sample-for-customers.md)
 
-Om du har andra frågor kan du [fråga Power BI Community](http://community.powerbi.com/).
+Om du har andra frågor kan du [fråga Power BI Community](https://community.powerbi.com/).

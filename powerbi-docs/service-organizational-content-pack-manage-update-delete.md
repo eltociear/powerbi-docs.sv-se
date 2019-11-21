@@ -2,7 +2,6 @@
 title: 'Organisationsinnehållspaket: Hantera och uppdatera'
 description: Läs om hur du hanterar, uppdaterar och tar bort organisationsinnehållspaket i Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f2a80b075a56cdeccfa4c3675cdf31504b6a7e5d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431756"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881280"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Hantera, uppdatera och ta bort organisationsinnehållspaket
 > [!NOTE]
@@ -65,7 +64,7 @@ En annan ändring som är tillgänglig för innehållspaketets skapare är att u
    För alla medarbetare som inte ingår i nytt alias:
    
    * För gruppmedlemmar som inte har anpassat innehållspaketet är instrumentpanelen och de rapporter som är associerade med detta innehållspaket inte längre tillgängliga och innehållspaketet visas inte i navigeringsfönstret.
-   * För gruppmedlemmar som har anpassat innehållspaketet kommer alla paneler från det ursprungliga innehållspaketet att vara borta nästa gång de öppnar den anpassade instrumentpanelen.  Men paneler som fästs från andra rapporter återges fortfarande. Det ursprungliga innehållspaketets rapporter och datauppsättningar är inte längre tillgängliga och innehållspaketet visas inte i navigeringsfönstret.   
+   * För gruppmedlemmar som har anpassat innehållspaketet kommer alla paneler från det ursprungliga innehållspaketet att vara borta nästa gång de öppnar den anpassade instrumentpanelen.  Men paneler som fästs från andra rapporter återges fortfarande. Det ursprungliga innehållspaketets rapporter och datamängder är inte längre tillgängliga och innehållspaketet visas inte i navigeringsfönstret.   
 
 ## <a name="refresh-an-organizational-content-pack"></a>Uppdatera en organisations innehållspaket
 Som skapare av innehållspaketet kan du [schemalägga en uppdatering av datauppsättningarna](refresh-data.md).  När du skapar och laddar upp innehållspaketet laddas detta uppdateringsschema upp med datauppsättningar. Om du ändrar uppdateringsschemat, måste du publicera om innehållspaketet (se ovan).
@@ -82,10 +81,10 @@ Du kan bara ta bort ett innehållspaketet från AppSource om du har skapat det. 
 2. Välj **Ta bort \> Ta bort**. 
    
    * För gruppmedlemmar som inte har anpassat innehållspaketet tas instrumentpanelen och de rapporter som är associerade med detta innehållspaketet bort automatiskt. De är inte längre tillgängliga och innehållspaketet visas inte i navigeringsfönstret.
-   * För gruppmedlemmar som har anpassat innehållspaketet kommer alla paneler från det ursprungliga innehållspaketet att vara borta nästa gång de öppnar den anpassade instrumentpanelen.  Men paneler som fästs från andra rapporter återges fortfarande. Det ursprungliga innehållspaketets rapporter och datauppsättningar är inte längre tillgängliga och innehållspaketet visas inte i navigeringsfönstret.   
+   * För gruppmedlemmar som har anpassat innehållspaketet kommer alla paneler från det ursprungliga innehållspaketet att vara borta nästa gång de öppnar den anpassade instrumentpanelen.  Men paneler som fästs från andra rapporter återges fortfarande. Det ursprungliga innehållspaketets rapporter och datamängder är inte längre tillgängliga och innehållspaketet visas inte i navigeringsfönstret.   
 
 ## <a name="next-steps"></a>Nästa steg
 * [Introduktion till organisationsinnehållspaket](service-organizational-content-pack-introduction.md)
 * [Skapa och distribuera en app i Power BI](service-create-distribute-apps.md) 
-* Har du fler frågor? [Prova Power BI Community](http://community.powerbi.com/)
+* Har du fler frågor? [Prova Power BI Community](https://community.powerbi.com/)
 
