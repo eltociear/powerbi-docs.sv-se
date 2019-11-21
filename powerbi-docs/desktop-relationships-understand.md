@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c8ad6153ba1fcfb22987c5399bb82a9a8f4e664c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879797"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009617"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Modellrelationer i Power BI Desktop
 
@@ -169,7 +169,7 @@ När frågan körs tillåter starka relationer _tabellexpansioner_. Tabellexpans
 > [!NOTE]
 > Inaktiva relationer expanderas också, även om relationen inte används av en beräkning. Dubbelriktade relationer påverkar inte tabellexpansionen.
 
-För många-till-många-relationer sker tabellexpansionen från "många"- till ”en”-sidorna med hjälp av vänster yttre kopplings-semantik. Om det inte finns ett matchande värde från "många"- till "en"-sidan, läggs en tom virtuell rad till i tabellen på "en"-sidan.
+Vid en-till-många-relationer sker tabellexpansionen från ”många” till ”en” med hjälp av semantiken VÄNSTER YTTRE KOPPLING. Om det inte finns ett matchande värde från "många"- till "en"-sidan, läggs en tom virtuell rad till i tabellen på "en"-sidan.
 
 Tabellexpansion utförs även för en-till-en-relationer av typen intra-ö, men med fullständig yttre kopplings-semantik. Det säkerställer att tomma virtuella rader läggs till på endera sidan, om det behövs.
 

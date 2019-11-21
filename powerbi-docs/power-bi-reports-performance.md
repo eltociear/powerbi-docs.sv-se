@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 52beebb839907a6b4141cec089184fcb693fe817
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875116"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010685"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bästa praxis för Power BI-prestanda
 
@@ -22,7 +22,7 @@ Den här artikeln erbjuder anvisningar för att skapa snabba och tillförlitliga
 
 ## <a name="choose-an-appropriate-storage-mode-import-directquery"></a>Välj ett lämpligt lagringsläge: Import, DirectQuery
 
-I de flesta fall är läget Import det bästa valet eftersom det ger högsta möjliga hastighet genom att använda lokalt cachelagrade minnesdata som komprimeras med hjälp av kolumnlagring. I Import-läget kan fullständig DAX-kapacitet användas. Överväg DirectQuery (och sammansatta modeller) när källdatavolymen är för stor för att få plats i Power BI-kapaciteten. DirectQuery är också användbart när du behöver hämta senaste data från källan varje gång som en rapport läses in. Om du inte har dessa krav och användarna bara behöver se data som uppdateras några gånger om dagen eller mindre (t. ex. från ett företagsinformationslager) rekommenderar starkt läget Import. I DirectQuery-läge kan användare försöka uppdatera rapporten utan att du behöver hämta exakt samma data från källan.      
+I de flesta fall är läget Import det bästa valet eftersom det ger högsta möjliga hastighet genom att använda lokalt cachelagrade minnesdata som komprimeras med hjälp av kolumnlagring. I Import-läget kan fullständig DAX-kapacitet användas. Överväg DirectQuery (och sammansatta modeller) när källdatavolymen är för stor för att få plats i Power BI-kapaciteten. DirectQuery är också användbart när du behöver hämta senaste data från källan varje gång som en rapport läses in. Om du inte har dessa krav och användarna bara behöver se data som uppdateras några gånger om dagen eller mindre (t. ex. från ett företagsinformationslager) rekommenderar starkt läget Import. I DirectQuery-läge kan användarna försöka uppdatera rapporten utan att inse att de hämtar exakt samma data från källan.      
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Använd filter för att begränsa rapportens visuella information om du bara vill visa det som krävs 
 
@@ -152,8 +152,6 @@ Den lokala datagatewayen är ett bra verktyg för att ansluta Power BI-tjänsten
 Nätverksfördröjningen kan påverka rapportprestandan genom att öka den tid som krävs för begäranden att nå Power BI-tjänsten och för svar som ska levereras. Klienter i Power BI tilldelas en specifik region. Du kan visa din klients ”hemregion” genom att gå till powerbi.com och välja **?** överst till höger och sedan **Om Power BI**. När användare från en klient ansluter till Power BI-tjänsten, dirigeras deras begäranden alltid till den här regionen. När begäranden når Power BI-tjänsten kan tjänsten sedan skicka ytterligare begäranden, till exempel till den underliggande datakällan eller gatewayen, som också påverkas av nätverkssvarstiden.
 
 Verktyg som [Azure-hastighetstest](https://azurespeedtest.azurewebsites.net/) ger en indikation om nätverksfördröjningen mellan klienten och Azure-regionen. Sträva generellt mot att hålla datakällor, gatewayer och Power BI-klustret så nära som möjligt för att minimera effekten av nätverksfördröjningen. Om nätverksfördröjning är ett problem försöker du hitta gatewayer och datakällor som är närmare Power BI-klustret genom att placera dem på virtuella datorer.
-
-För att ytterligare förbättra nätverksfördröjningen kan du använda [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/). Det innebär en möjlighet att skapa snabbare och mer tillförlitliga nätverksanslutningar mellan klienter och Azure-datacenter.
 
 ## <a name="next-steps"></a>Nästa steg
 

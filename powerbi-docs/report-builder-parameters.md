@@ -3,18 +3,18 @@ title: Rapportparametrar i Power BI Report Builder
 description: I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i Power BI Report Builder, de egenskaper som du kan ange och mycket mer.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: ''
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 21fe08c2cba004a6aff77eae12303d0181ab56ec
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840543"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128414"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Rapportparametrar i Power BI Report Builder
 
@@ -40,7 +40,7 @@ I det här ämnet beskrivs vanliga användningsområden för rapportparametrar i
 
 När du visar en rapport som har parametrar, visar rapportgranskarens verktygsfält varje parameter så att du kan ange värden interaktivt. Följande bild visar parameterområdet för en rapport med parametrarna @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota och @SalesDate.  
 
-![Visa rapport med parametrar](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Visa rapport med parametrar")
+![Visa en rapport med parametrar](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "Visa en rapport med parametrar")
   
 1. **Parameterfönstret** Rapportgranskarens verktygsfält visar ett meddelande och ett standardvärde för varje parameter. Du kan anpassa layouten för parametrarna i parameterfönstret.  
   
@@ -65,7 +65,7 @@ Du kan skapa rapportparametrar på ett par olika sätt.
   
  Lägg till en datamängdsfråga som innehåller variabler eller en lagrad datamängdsprocedur som innehåller indataparametrar. En datamängdsparameter skapas för varje variabel eller indataparameter, och en rapportparameter skapas för varje datamängdsparameter.  
   
-![Datamängdsegenskaper för Report Builder-parameter](media/report-builder-parameters/report-builder-parameter-dataset.png "Datamängdsegenskaper för Report Builder-parameter")
+![Parameteregenskaper för Report Builder-datamängd](media/report-builder-parameters/report-builder-parameter-dataset.png "Parameteregenskaper för Report Builder-datamängd")
 
   
  Den här bilden från Report Builder visar:  

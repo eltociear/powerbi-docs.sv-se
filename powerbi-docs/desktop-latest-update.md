@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a9fb691882c8f34aeb8006eee3ec30d428db72e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 101c735ab48c2596d2cd24ebef56bc4e0c4cad54
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878117"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009941"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Vad är nytt i den senaste uppdateringen av Power BI Desktop? 
 
 
-## <a name="october-2019-update-2745619621"></a>Uppdatering oktober 2019 (2.74.5619.621)
+## <a name="november-2019-update-2755649341"></a>Uppdatering november 2019 (2.75.5649.341)
 
-Våra uppdateringar i oktober är lika roliga som en pumpagubbe och mer spännande än en midnattsvandring i ett spökslott. 
+Vi är lika glada för våra novemberuppdateringar, som vi är för ett riktigt trevligt släktkalas. 
 
 Nu kan du [ladda ned den senaste versionen av Power BI Desktop](https://powerbi.microsoft.com/desktop), som nu levereras som en enskild .exe-fil som innehåller alla språk med stöd. Om du kör Windows 10, kan du också hämta **Power BI Desktop** från Windows Store. Månadsversionerna är desamma även om versionsnumreringen kan variera mellan de två, oavsett hur du installerar **Power BI Desktop**. Mer information finns i [den här artikeln](desktop-get-the-desktop.md). 
 
@@ -40,58 +40,53 @@ Du kan också se videon **Senaste uppdateringar** från början i den här artik
 
 Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 
-### <a name="reporting"></a>Rapportering
-* Automatisk siduppdatering för DirectQuery [[video]](https://youtu.be/A8A9baUQsXQ?t=12)  [[artikel]](desktop-automatic-page-refresh.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#automaticPageRefresh) 
+### <a name="user-experience"></a>Användarupplevelse
+* Uppdaterat menyfliksområde (förhandsversion) [[video]](https://youtu.be/kVli3Vm_kDo?t=13)  [[article]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#ribbon) 
 
+
+### <a name="reporting"></a>Rapportering
+* Nedbrytningsträd (förhandsversion) [[video]](https://youtu.be/kVli3Vm_kDo?t=464)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#decompTree) 
 
 
 ### <a name="analytics"></a>Analys
-* Nya frågor och svar om visuella objekt [[video]](https://youtu.be/A8A9baUQsXQ?t=144)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#qnaVisual) 
-* Förbättrad användarupplevelse för frågor och svar [[video]](https://youtu.be/A8A9baUQsXQ?t=144)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#improvedExperience) 
-    * Förbättrad listrutekontroll
-    * Röda och blå understreck
-    * Förbättrade visuella resultat
-* Förbättringar av naturligt språk för frågor och svar [[video]](https://youtu.be/A8A9baUQsXQ?t=322)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#nlImprovements) 
-    * Integrering med Office/Bing-synonymer
-    * Stöd för måttabeller och bättre hantering av tabellnamn och tvetydigheter
-* Verktyg för frågor och svar (förhandsversion) [[video]](https://youtu.be/A8A9baUQsXQ?t=376)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#qnaTooling) 
-    * Granska frågorna
-    * Lär ut frågor och svar
-    * Granska alla ändringar som gjorts
-* Stöd för SSAS och Azure AS, inklusive RLS [[video]](https://youtu.be/A8A9baUQsXQ?t=480)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#supportAS) 
+* Villkorsstyrd knappformatering [[video]](https://youtu.be/kVli3Vm_kDo?t=834)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#button) 
 
 
 ### <a name="visuals"></a>Visuella objekt
-* Visuella PowerApps-objekt som nu ingår som standard [[video]](https://youtu.be/A8A9baUQsXQ?t=505)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#powerApps) 
-* Nya visuella xViz-objekt [[video]](https://youtu.be/A8A9baUQsXQ?t=538)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#xViz) 
+* Uppdateringar av ArcGIS Maps for Power BI [[video]](https://youtu.be/kVli3Vm_kDo?t=1024)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#arcGIS) 
+* Nya visuella xViz-objekt [[video]](https://youtu.be/kVli3Vm_kDo?t=1071)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#xViz) 
+* ZoomCharts som ökar detaljnivån i visuella vattenfallsobjekt [[video]](https://youtu.be/kVli3Vm_kDo?t=1405)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#zoomCharts) 
+* Finansrapporteringsmatris från Profitbase [[video]](https://youtu.be/kVli3Vm_kDo?t=1575)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#financialReporting) 
+* Distribution [[video]](https://youtu.be/kVli3Vm_kDo?t=1661)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#distribution) 
+* Träd [[video]](https://youtu.be/kVli3Vm_kDo?t=1733)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#tree) 
+
+
 
 ### <a name="data-connectivity"></a>Dataanslutning
-* Allmänt tillgängligt Sagra Emigo-anslutningsprogram [[video]](https://youtu.be/A8A9baUQsXQ?t=778)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#sagraEmigo) 
-* Azure Cost Management-anslutningsprogrammet är uppdaterat [[video]](https://youtu.be/A8A9baUQsXQ?t=805)  [[artikel]](desktop-connect-azure-cost-management.md)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#azureCostManagement) 
-* Nytt Workplace Analytics-anslutningsprogram [[video]](https://youtu.be/A8A9baUQsXQ?t=830)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#workplaceAnalytics) 
+* LinkedIn Sales Navigator-anslutningsprogram [[video]](https://youtu.be/kVli3Vm_kDo?t=1808)  [[article]](desktop-connect-linkedin-sales-navigator.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#linkedInSalesNavigator) 
+* Redigera SAP-variabler (allmän tillgänglighet)  [[video]](https://youtu.be/kVli3Vm_kDo?t=1839)  [[article]](service-edit-sap-variables.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#sapVariables) 
+* Product Insights-anslutningsprogram [[video]](https://youtu.be/A8A9baUQsXQ?t=830)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#productInsights) 
 
 
-### <a name="data-preparation"></a>Förberedelse av data
-* Frågediagnostik [[video]](https://youtu.be/A8A9baUQsXQ?t=907)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#queryDiagnostics) 
-* Förbättringar av dataprofilering [[video]](https://youtu.be/A8A9baUQsXQ?t=953)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#dataProfiling) 
+### <a name="data-transformation"></a>Datatransformering
+* AI-funktioner i Power Query (förhandsversion) [[video]](https://youtu.be/kVli3Vm_kDo?t=1976)  [[article]](desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#aiFunctions) 
+* Web by Example-anslutningsprogram – stöd för att extrahera länkar [[video]](https://youtu.be/kVli3Vm_kDo?t=1861)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#webConnector) 
 
 
 ### <a name="template-apps"></a>Mallappar
-* Project Web App   [[video]](https://youtu.be/A8A9baUQsXQ?t=850)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#projectWebApp) 
+* LinkedIn Sales Navigator för försäljningsåtgärder  [[video]](https://youtu.be/kVli3Vm_kDo?t=2039)  [[article]](desktop-connect-linkedin-sales-navigator.md#using-the-linkedin-sales-navigator-template-app)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#linkedInTemplateApp) 
 
-### <a name="other"></a>Annat
-* Nytt filformat: .PBIDS  [[video]](https://youtu.be/A8A9baUQsXQ?t=2455) [[artikel]](desktop-data-sources.md#pbids-file-examples) [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#pbids) 
-* Prestandaförbättringar för modelleringsåtgärder  [[video]](https://youtu.be/A8A9baUQsXQ?t=2583)  [[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/#performance) 
+
 
 > [!NOTE]
 > Du kan också [kolla in alla tillgängliga datakällor för Power BI Desktop](desktop-data-sources.md) – vår lista växer hela tiden så titta tillbaka ofta.
 
-Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
+Vill du ha mer information om uppdateringarna? Ta en titt på [blogginlägget](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/), där du kan få mer detaljerad information om varje ny funktion (det är samma blogginläggsreferenser i listan ovan).
 
 
 I följande video beskrivs och visas var och en av dessa uppdateringar. Du kan också se en video från blogginlägget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A8A9baUQsXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
 
 > [!NOTE]
 > Du kanske också är intresserad av att se [nyheter i Power BI-tjänsten](service-whats-new.md) och [nyheter i mobilapparna för Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

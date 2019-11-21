@@ -1,22 +1,22 @@
 ---
 title: Grundläggande begrepp för designers i Power BI-tjänsten
-description: Power BI-tjänstens arbetsytor, instrumentpaneler, rapporter, datauppsättningar och arbetsböcker.
+description: Power BI-tjänsten och kapaciteter, arbetsytor, instrumentpaneler, rapporter, arbetsböcker, datauppsättningar och dataflöden.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 80d878cc5a8ed0df294b99390fb87d8099bfccb5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f86b9ae056770240485ff1984be4714faec9dc83
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431326"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128357"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundläggande begrepp för designers i Power BI-tjänsten
 
@@ -28,7 +28,7 @@ Om du inte ännu har egna rapporter kan du prova att installera ett [exempelinne
 
 När du öppnar Power BI-tjänsten i en webbläsare kommer du till din startskärm. De olika delarna i vyn är följande:
 
-1. Navigeringsfönster (vänster)
+1. Navigeringsfönster
 2. Startprogram för Office 365-app
 3. Power BI-hemknapp
 4. Ikonknappar, bland annat inställningar, hjälp och feedback
@@ -45,20 +45,36 @@ Vi går in på de här funktionerna senare, men först ska vi gå igenom några 
 
 
 ## <a name="power-bi-concepts"></a>Power BI-begrepp
-De fyra huvudsakliga byggblocken i Power BI är **_instrumentpaneler_** , **_rapporter_** , **_arbetsböcker_** och **_datauppsättningar_** . Alla är uppdelade i **_arbetsytor_** . Det är viktigt att förstå sig på arbetsytorna innan vi går vidare till de fyra byggstenarna, så vi börjar där.
+De fem huvudsakliga byggblocken i Power BI är *instrumentpaneler*, *rapporter*, *arbetsböcker*, *datauppsättningar* och *dataflöden*. De är alla uppdelade i *arbetsytor*, och de skapas i *kapaciteter*.  Det är viktigt att förstå sig på kapaciteterna och arbetsytorna innan vi går vidare till de fem byggstenarna, så vi börjar där.
+
+## <a name="capacities"></a>Kapacitet
+Kapaciteter är ett grundläggande begrepp i Power BI som avser en uppsättning resurser (lagring, processor och minne) som används till att vara värd för och leverera ditt Power BI-innehåll. Kapaciteter är antingen _delade_ eller _dedikerade_. En delad kapacitet delas med andra Microsoft-kunder, medan en dedikerad kapacitet är helt tillägnad en enda kund. För dedikerade kapaciteter krävs en [prenumeration](service-premium-what-is.md). De beskrivs i sin helhet i artikeln [Hantera Premium-kapaciteter](service-premium-capacity-manage.md).
+
+Arbetsytor skapas som standard i en delad kapacitet. I delad kapacitet körs arbetsbelastningar på dataresurser som delas med andra kunder. När kapaciteten måste dela resurser, införs begränsningar för att säkerställa ”sjyst spel”, till exempel maximal modellstorlek (1 GB) och maximal daglig uppdateringsfrekvens (åtta gånger per dag).
 
 ## <a name="workspaces"></a>Arbetsytor
-Arbetsytor är containrar för instrumentpaneler, rapporter, arbetsböcker och datauppsättningar i Power BI. Det finns två typer av arbetsytor: *Min arbetsyta* och *arbetsytor*. Så, vad är en *app*? En *Power BI-app* är en samling av instrumentpaneler och rapporter som skapats för att leverera nyckelmått för Power BI-slutanvändarna i din organisation. Appar är interaktiva men slutanvändarna kan inte redigera dem.
+Arbetsytor skapas i kapaciteter. De är i princip containrar för instrumentpaneler, rapporter, arbetsböcker, datauppsättningar och dataflöden i Power BI.
+
+Det finns två typer av arbetsytor: *Min arbetsyta* och *arbetsytor*.
 
 - *Min arbetsyta* är en personlig arbetsyta där vilken Power BI-kund som helst kan arbeta med sitt eget innehåll. Bara du har åtkomst till Min arbetsyta. Du kan dela instrumentpaneler och rapporter från Min arbetsyta. Om du vill samarbeta på instrumentpaneler och i rapporter, eller skapa en app, så vill du använda en arbetsyta.      
--  *arbetsytor* används till att samarbeta och dela innehåll med kollegor. Det är också där du skapar, publicerar och hanterar appar för din organisation. Du kan se dem som mellanlagringsområden och containrar för det innehåll som ska utgöra en Power BI-app. Du kan lägga till kollegor på dina arbetsytor och samarbeta kring instrumentpaneler, rapporter, arbetsböcker och datamängder. Alla medlemmar på arbetsytan behöver en Power BI Pro-licens. Appkonsumenterna, de kollegor som har tillgång till apparna, behöver inte nödvändigtvis Pro-licenser. Läs mer om [de nya arbetsytorna](service-create-the-new-workspaces.md).  
+-  *Arbetsytor* används till att samarbeta och dela innehåll med kollegor. Du kan lägga till kollegor på dina arbetsytor och samarbeta kring instrumentpaneler, rapporter, arbetsböcker och datamängder. Med ett undantag behöver alla arbetsytans medlemmar en Power BI Pro-licens. Läs mer om [de nya arbetsytorna](service-create-the-new-workspaces.md). 
+
+    Arbetsytor är också där du skapar, publicerar och hanterar *appar* för din organisation. Du kan se arbetsytor som mellanlagringsområden och containrar för det innehåll som ska utgöra en Power BI-app. Så, vad är en *app*? En app är en samling av instrumentpaneler och rapporter som skapats för att leverera viktiga mått för Power BI-användarna i din organisation. Appar är interaktiva men användarna kan inte redigera dem. Appkonsumenterna, de kollegor som har tillgång till apparna, behöver inte nödvändigtvis Pro-licenser.  
 
 Om du vill lära dig mer om delning överlag kan du börja med [olika sätt att dela ditt arbete via instrumentpaneler](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Nu går vi vidare till byggblocken i Power BI. Du kan inte ha instrumentpaneler och rapporter utan data (eller, du kan ha tomma instrumentpaneler och tomma rapporter, men de är inte användbara förrän de har data), så vi börjar med **datamängder**.
+Nu går vi vidare till de fem byggblocken i Power BI.
+
+## <a name="dataflows"></a>Dataflöden
+Ett *dataflöde* hjälper organisationer att förena data från olika källor. De är valfria och används ofta i komplexa eller större projekt. De representerar data som är förberedda och mellanlagrade för användning av datauppsättningar. De kan däremot inte användas direkt som en källa för rapportering. De utnyttjar den omfattande uppsättningen av Microsoft-datakopplingar och aktiverar inmatning av data från lokala och molnbaserade datakällor.
+
+Dataflöden skapas och hanteras bara i arbetsytor (men inte *Min arbetsyta*), och de lagras som entiteter i Common Data Model (CDM) i Azure Data Lake Storage Gen2. Normalt kommer de att uppdateras regelbundet för att lagra aktuella data. De är mycket bra när du ska förbereda data för användning – och eventuell återanvändning – av dina datauppsättningar. Mer information finns i artikeln [Dataförberedelser med självbetjäning i Power BI](service-dataflows-overview.md).
+
+Du kan inte ha instrumentpaneler och rapporter utan data (eller, du kan ha tomma instrumentpaneler och tomma rapporter, men de är inte användbara förrän de har data), så nu vi ska vi titta på **datauppsättningar**.
 
 ## <a name="datasets"></a>Datauppsättningar
-En *datauppsättning* är en samling data som du *importerar* eller *ansluter* till. Med Power Bi kan du ansluta till och importera alla typer av datauppsättningar och placera dem tillsammans på en och samma plats.  
+En *datauppsättning* är en samling data som du *importerar* eller *ansluter* till. Med Power Bi kan du ansluta till och importera alla typer av datauppsättningar och placera dem tillsammans på en och samma plats. Datauppsättningar kan också hämta data från dataflöden.
 
 Datauppsättningar är associerade med *arbetsytor* och en enskild datauppsättning kan ingå i många arbetsytor. När du öppnar en arbetsyta, visas de associerade datauppsättningarna under fliken **Datauppsättningar**. Varje listad datauppsättning representerar en enskild datakälla, till exempel en Excel-arbetsbok på OneDrive, eller en lokal SSAS tabular-datauppsättning eller en Salesforce-datauppsättning. Det finns många olika datakällor som stöds och vi lägger till nya hela tiden. Se listan över [datamängdstyper som du kan använda med Power BI](service-get-data.md).
 
@@ -74,13 +90,17 @@ I exemplet nedan har jag markerat arbetsytan ”Sales and marketing” och klick
 
   ![Diagram för datamängd](media/service-basic-concepts/drawing2.png)
 
-Om du vill [ansluta till eller importera en datamängd](service-get-data.md) väljer du **Hämta data** längst ned i det vänstra navigeringsfönstret. Följ instruktionerna för att ansluta till eller importera den specifika källan och lägga till datauppsättningen till den aktiva arbetsytan. Nya datauppsättningar markeras med en gul asterisk. Ditt arbete i Power BI ändrar inte den underliggande datamängden.
+Om du vill [ansluta till eller importera en datauppsättning](service-get-data.md) väljer du **Hämta data** längst ned i navigeringsfönstret. Följ instruktionerna för att ansluta till eller importera den specifika källan och lägga till datauppsättningen till den aktiva arbetsytan. Nya datauppsättningar markeras med en gul asterisk. Ditt arbete i Power BI ändrar inte den underliggande datamängden.
 
 Datamängder som läggs till av en medlem i arbetsytan är tillgängliga för de andra medlemmarna i arbetsytan med rollen *administratör*, *medlem* eller *deltagare*.
 
-Datauppsättningar kan uppdateras, döpas om, utforskas och tas bort. Du kan använda en datauppsättning för att skapa en rapport från grunden eller genom att köra [Quick Insights](service-insights.md).  Om du vill se vilka rapporter och instrumentpaneler som redan använder en datauppsättning, väljer du **Visa relaterade**. Välj datauppsättningen för att utforska den. Vad du faktiskt gör är att öppna datauppsättningen i rapportredigeraren där du verkligen kan börja utforska data och skapa visualiseringar. Så låt oss gå vidare till nästa avsnitt  – rapporter.
+Datauppsättningar kan uppdateras, döpas om, utforskas och tas bort. Du kan använda en datauppsättning för att skapa en rapport från grunden eller genom att köra [Quick Insights](service-insights.md).  Om du vill se vilka rapporter och instrumentpaneler som redan använder en datauppsättning, väljer du **Visa relaterade**. Välj datauppsättningen för att utforska den. Vad du faktiskt gör är att öppna datauppsättningen i rapportredigeraren där du verkligen kan börja utforska data genom att skapa visualiseringar.
+
+Nu går vi vidare till nästa avsnitt – rapporter.
 
 ### <a name="dig-deeper"></a>Gå djupare
+* [Datamängder i Power BI-tjänsten](service-datasets-understand.md)
+* [Datamängdslägen i Power BI-tjänsten](service-dataset-modes-understand.md)
 * [Vad är Power BI Premium?](service-premium-what-is.md)
 * [Hämta data för Power BI](service-get-data.md)
 * [Exempel på datauppsättningar för Power BI](sample-datasets.md)
@@ -159,13 +179,13 @@ Vi har gått igenom arbetsytor och byggstenar. Nu sammanför vi det och granskar
 
 ![Power BI-tjänsten i en webbläsare](media/service-basic-concepts/completenewest.png)
 
-### <a name="1-navigation-pane-left-nav"></a>1. **Navigeringsfönster** (vänster)
+### <a name="1-navigation-pane"></a>1. **Navigeringsfönster**
 Du använder navigeringsfönstret för att leta upp och flytta mellan arbetsytorna och Power BI-byggstenarna: instrumentpaneler, rapporter, arbetsböcker och datauppsättningar.  
 
   ![Navigeringsfönster](media/service-basic-concepts/power-bi-navigation.png)
 
 * Välj **Hämta data** för att [lägga till datauppsättningar, rapporter och instrumentpaneler i Power BI](service-get-data.md).
-* Expandera och komprimera navigeringsfönstret med den här ikonen ![ikon för navigeringsfönster](media/service-basic-concepts/expand-icon.png).
+* Visa och dölj navigeringsfönstret med den här ikonen ![ikon för navigeringsfönster](media/service-basic-concepts/expand-icon.png).
 * Öppna eller hantera ditt favoritinnehåll genom att välja **Favoriter**.
 * Visa och öppna ditt senast besökta innehåll genom att välja **Senaste**.
 * Visa, öppna eller ta bort en app genom att välja **Appar**.
@@ -227,5 +247,4 @@ Det här området på skärmen innehåller ytterligare alternativ för att inter
 - [Vad är Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI-videor](videos.md)  
 - [Rapportredigeraren – ta en rundtur](service-the-report-editor-take-a-tour.md)
-
-Har du fler frågor? [Fråga Power BI Community](http://community.powerbi.com/)
+- Har du fler frågor? [Fråga Power BI Community](https://community.powerbi.com/)

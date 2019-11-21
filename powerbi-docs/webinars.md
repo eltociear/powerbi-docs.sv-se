@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 289e6490d2449bdcbca68e6acba85cf4466b315f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bd6270731f79ac5a1e270ac36699470a0e6df978
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880567"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060449"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -21,7 +21,13 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 
 ## <a name="upcoming-webinars"></a>Kommande webbseminarier
 
-Inga webbseminarier schemalagda ännu. Kontrollera snart igen efter fler kommande händelser.
+**Analys i virtuella Azure-händelser: Få snabbare insikter med Azure Synapse Analytics**
+<br>av Gayle Sheppard och John MacIntyre
+<br>[Registrera dig nu](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
+
+**Hur Microsoft ändrar BI-dataskyddet**
+<br>av Anton Fritz och Adi Regev
+<br>[Registrera dig om du vill titta den 4 december](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 

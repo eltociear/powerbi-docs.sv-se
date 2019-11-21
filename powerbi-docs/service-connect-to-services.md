@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873009"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925833"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Ansluta till de tjänster du använder med Power BI
 Med Power BI kan du ansluta till många av de tjänster som du använder för att driva verksamheten, som Salesforce, Microsoft Dynamics och Google Analytics. Power BI börjar med att använda dina autentiseringsuppgifter för att ansluta till tjänsten. Därefter skapas en Power BI-*arbetsyta* med en instrumentpanel och en uppsättning Power BI-rapporter som automatiskt visar dina data och ger visuella insikter om verksamheten.
 
 >[!IMPORTANT]
->Vi kommer att ersätta flera innehållspaket den 25 september 2019. Ett redan installerat innehållspaket fortsätter att fungera, men du kommer inte att kunna installera något nytt efter det. [Mallappar](https://docs.microsoft.com/power-bi/service-template-apps-overview) ersätter innehållspaket för tjänsten.
+>Tjänstens innehållspaket ersätts av [Mallappar](https://docs.microsoft.com/power-bi/service-template-apps-overview). Från och med den 25 september 2019 har flera innehållspaket redan blivit inaktuella. De inaktuella innehållspaket som du har installerat finns kvar på ditt konto, men ingen dokumentation eller support kommer att tillhandahållas för dem och det är heller inte möjligt att installera dem igen.
 
 Logga in på Power BI för att visa alla de [tjänster som du kan ansluta till](https://app.powerbi.com/getdata/services). 
 

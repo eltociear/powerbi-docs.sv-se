@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 11/12/2019
 ms.author: painbar
-ms.openlocfilehash: 1741646057137fbfb28a2c0ec42a7fd6428dc86e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876771"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010021"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nyheter i Power BI-mobilapparna
 Relaterad information om nyheter finns i:
@@ -23,6 +23,10 @@ Relaterad information om nyheter finns i:
 * [Nyheter i Power BI-tjänsten](../../service-whats-new.md)  
 
 ## <a name="october-2019"></a>Oktober 2019
+
+### <a name="android-support-for-remote-configuration-of-report-server-access-settings"></a>Android-stöd för fjärrkonfiguration av rapportserverns åtkomstinställningar
+
+Vi har lagt till Android-stöd för fjärrkonfiguration av Power BI-mobilappens åtkomstinställningar för rapportservern. IT-administratörer kan nu använda sin organisations MDM-verktyg till att fjärrkonfigurera dessa inställningar på både iOS- och Android-enheter. Mer information finns i [Fjärrkonfigurera åtkomst från Power BI-mobilappen till en rapportserver](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote).
 
 ### <a name="cross-report-drillthrough"></a>Visa detaljerad information mellan rapporter
 

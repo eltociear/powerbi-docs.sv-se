@@ -1,25 +1,31 @@
 ---
-title: Fjärrkonfiguration av iOS-mobilappar för åtkomst till en rapportserver
-description: Lär dig hur du fjärrkonfigurerar mobila iOS-appar för din rapportserver.
-author: maggiesMSFT
+title: Fjärrkonfiguration av mobilappars åtkomst till en rapportserver
+description: Lär dig att fjärrkonfigurera mobilappar för din rapportserver.
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/08/2019
-ms.author: maggies
-ms.openlocfilehash: ab9f7c2559038505b5507d4a87b50933e7b0b041
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/07/2019
+ms.author: painbar
+ms.openlocfilehash: b84d7a23cf947b18302c761ff5f78143bf3356aa
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874211"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925894"
 ---
-# <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Fjärrkonfiguration av Power BI iOS-mobilappar för åtkomst till en rapportserver
+# <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Fjärrkonfiguration av Power BI-mobilappens åtkomst till en rapportserver
 
-I den här artikeln kommer du lära dig att använda din organisations MDM-verktyg för att konfigurera åtkomsten från iOS-mobilappen för Power BI till en rapportserver. För att konfigurera detta skapar IT-administratören en appkonfigurationsprincip med nödvändig information som sedan skickas till appen. 
+Gäller för:
 
- När rapportservern har konfigurerats blir det lättare för Power BI iOS-mobilappanvändarna att ansluta till organisationens rapportserver. 
+| ![iPhone](./media/configure-powerbi-mobile-apps-remote/ios-logo-40-px.png) | ![Android-telefon](./media/configure-powerbi-mobile-apps-remote/android-logo-40-px.png) |
+|:--- |:--- |
+| iOS |Android |
+
+I den här artikeln kommer du lära dig att använda din organisations MDM-verktyg till att konfigurera åtkomsten för Power BI-mobilappen till en rapportserver. För att konfigurera detta skapar IT-administratören en appkonfigurationsprincip med nödvändig information som sedan skickas till appen. 
+
+ När rapportserverns anslutning har konfigurerats, blir det lättare för Power BI-mobilappanvändarna att ansluta till organisationens rapportserver. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Skapa appkonfigurationsprincipen i MDM-verktyget 
 
@@ -43,11 +49,11 @@ Här är ett exempel på hur man ställer in konfigurationsprincipen i Intune.
 
 ![Intune-konfigurationsinställningar](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
 
-## <a name="end-users-connecting-to-a-report-server"></a>Slutanvändare som ansluter till en rapportserver
+## <a name="end-users-connecting-to-report-server"></a>Slutanvändare som ansluter till en rapportserver
 
- Anta att du publicerar appkonfigurationsprincipen för en distributionslista. När användare och enheter på distributionslistan startar iOS-mobilappen händer följande. 
+ Anta att du publicerar appkonfigurationsprincipen för en distributionslista. När användare och enheter på distributionslistan startar mobilappen händer nedanstående. 
 
-1. De ser ett meddelande som anger att mobilappen har konfigurerats med en rapportserver och trycker på **Logga in**.
+1. De ser ett meddelande om att mobilappen har konfigurerats med en rapportserver och trycker på **Logga in**.
 
     ![Logga in på rapportservern](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-sign-in.png)
 
@@ -57,9 +63,9 @@ Här är ett exempel på hur man ställer in konfigurationsprincipen i Intune.
 
 3. De skriver ett lösenord för att autentisera och tryck sedan på **Logga in**. 
 
-    ![Informationen om rapportservern är ifylld](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
+    ![Ifylld information om rapportservern](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
 
-Nu kan de visa och interagera med KPI:er och Power BI-rapporter som lagras på rapportservern.
+Nu kan de visa och interagera med KPI:er och Power BI-rapporter som lagrats på rapportservern.
 
 ## <a name="next-steps"></a>Nästa steg
 
