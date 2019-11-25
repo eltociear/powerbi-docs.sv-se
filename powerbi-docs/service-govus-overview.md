@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 225c21693c9f100d9abbfc310b957bee7a909061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881363"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265463"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI för amerikanska myndighetskunder
 **Power BI-tjänsten** har en version som är tillgänglig för amerikanska myndigheter som en del av **Office 365 US Government Community**-prenumerationer. Den version av **Power BI-tjänsten** som beskrivs i den här artikeln är utformad för kunder som tillhör amerikanska myndigheter och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten**.
@@ -55,7 +55,6 @@ Några av de funktioner som är tillgängliga i den kommersiella versionen av **
 * **Bädda in i SharePoint Online** – det går inte att bädda in innehåll i SharePoint Online med hjälp av Power BI-webbdelen. Dock fungerar inte Secure embed med webbdelen [*Bädda in*](https://docs.microsoft.com/power-bi/service-embed-secure). Du måste lägga till *app.powerbigov.us* i listan över undantag. Det gör du genom att följa anvisningarna i artikeln [Allow or restrict the ability to embed content on SharePoint pages](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b) (Tillåta eller begränsa möjligheten att bädda in innehåll på SharePoint-sidor).
 * **Power BI för amerikanska myndigheter** är endast tillgängligy som en **Pro**-licens. Alla referenser till kostnadsfria Power BI-licenser i en administrationsportal (eller som användare) körs i ett kommersiellt Power BI-tjänstmoln.
 * **Granskning** – nu är granskning tillgängligt via Office 365-portalen för säkerhet och regelefterlevnad (från juni 2018).
-* **Power BI-innehåll i Cortana** – Power BI-resultat visas inte i sökresultat för Cortana. Det inkluderar resultat för ditt Power BI-innehåll (instrumentpaneler, rapporter, appar) samt resultat som visar Cortana-optimerade rapportsidor för specifika nyckelord.
 * **Extern användardelning** – delning är tillåtet inom en Power BI-klientorganisation, och från juni 2018 kan du även dela med användare utanför din Power BI-klientorganisation. Läs mer i [Distribuera Power BI-innehåll till externa gästanvändare med Azure Active Directory B2B](service-admin-azure-ad-b2b.md).
 * **Användningsstatistik för instrumentpaneler och rapporter** – användningsstatistik är inte tillgängligt för rapporter och instrumentpaneler. Kunder kan använda data i granskningsloggar för att få användningsinformation om innehåll i deras organisation.
 * **Dataflöden** – Dataflöden är inte tillgängliga.
@@ -103,7 +102,7 @@ Det finns olika typer av saker du kan göra med Power BI. Mer information och ut
 
 * [Registrera dig för Power BI för amerikanska myndigheter](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demonstration av Power BI för amerikanska myndigheter</a>
-* [Guidad utbildning för Power BI](guided-learning/index.md)
+* [Guidad utbildning för Power BI](guided-learning/index.yml)
 * [Komma igång med Power BI-tjänsten](service-get-started.md)
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 

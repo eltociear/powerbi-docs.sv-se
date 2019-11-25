@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: bb842128c26161d2f8da2961c6f014b9ecb45fc5
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128377"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265892"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrera Power BI i Admin-portalen
 
@@ -278,13 +278,6 @@ Rapportskapare kan dela appar direkt med slutanvändare utan att det krävs någ
 
 ## <a name="integration-settings"></a>Inställningar för integrering
 
-### <a name="ask-questions-about-data-using-cortana"></a>Ställ frågor om data med hjälp av Cortana
-
-Användare i organisationen kan ställa frågor om sina data med hjälp av Cortana. [Läs mer](service-cortana-enable.md)
-
-> [!NOTE]
-> Den här inställningen gäller för hela organisationen och kan inte begränsas till specifika grupper.
-
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Analysera i Excel med lokala datauppsättningar
 
 Användare i organisationen kan använda Excel för att visa och interagera med lokala Power BI-datauppsättningar. [Läs mer](service-analyze-in-excel.md)
@@ -298,7 +291,7 @@ Användare i organisationen kan använda ArcGIS Maps for Power BI-visualiseringe
 
 ### <a name="use-global-search-for-power-bi-preview"></a>Använda global sökning för Power BI (förhandsversion)
 
-Användare i organisationen kan använda externa sökfunktioner som förlitar sig på Azure Search. Användare kan till exempel använda Cortana för att hämta viktig information direkt från Power BI-instrumentpaneler och Power BI-rapporter. [Läs mer](service-cortana-intro.md)
+Användare i organisationen kan använda externa sökfunktioner som förlitar sig på Azure Search.
 
 ## <a name="custom-visuals-settings"></a>Inställningar för anpassade visuella objekt
 

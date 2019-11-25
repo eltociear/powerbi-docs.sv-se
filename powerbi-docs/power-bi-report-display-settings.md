@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cc2ddd0b6fbd0b621c07056ed4b525f66d81319c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875129"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265873"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Sidvisningsinställningar i en Power BI-rapport
 Vi förstår att det är viktigt att hålla din rapportlayout perfekt. Ibland är det kan vara en utmaning, eftersom du och dina kollegor kanske tittar på rapporterna på skärmar med olika bredd–höjd-förhållanden och storlekar. 
@@ -66,7 +66,6 @@ Inställningarna för **Sidstorlek** är endast tillgängliga för rapportägare
 
 * Förhållandet 4:3
 * Förhållandet 16:9 (standard)
-* Cortana
 * Letter
 * Anpassad (höjd och bredd i bildpunkter)
 

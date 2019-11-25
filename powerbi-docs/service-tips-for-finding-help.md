@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
+ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876947"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74178228"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips för att få hjälp med Power BI-frågor
 Har du någonsin blivit frustrerad över användningen av Power BI eller kämpat med att få svar på dina Power BI-frågor när du behöver dem? 
@@ -44,7 +44,7 @@ Passar videor din inlärningsstil bättre? Power BI har två uppsättningar som 
 ## <a name="6-attend-training"></a>6 Gå på utbildning
 De utbildningsalternativ som finns tillgängliga är nästan oändliga, från personlig labbutbildning till korta videoklipp.
 
-* [Interaktiv utbildning](guided-learning/index.md) på Power BI-webbplatsen.
+* [Interaktiv utbildning](guided-learning/index.yml) på Power BI-webbplatsen.
 * [Kostnadsfria Power BI-webbseminarier](webinars.md) live och på begäran, på Power BI-webbplatsen.
 
 Du kan hitta ytterligare alternativ online, som exempelvis:

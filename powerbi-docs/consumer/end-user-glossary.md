@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 668665bcdbbb4b06a6fd1a2ee6d4af2437be77b3
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73764717"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264861"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordlista för Power BI-tjänsten
 Power BI-tjänsten kan introducera terminologi som du kanske inte är bekant med eller förstår. Ordlistan är ett bra ställe att leta upp terminologi. Om du vill kan du lägga till den som ett bokmärke. En annan bra resurs om du vill lära dig mer om byggstenarna bakom Power BI-tjänsten är [Grundläggande begrepp](end-user-basic-concepts.md). Grundläggande begrepp ger en översikt över de olika *delarna* i Power BI och hur de hänger ihop.
@@ -34,8 +34,6 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 **alert, alerts (avisering, aviseringar)** En funktion som meddelar användare om ändringar i data utifrån de begränsningar som de anger. Aviseringar kan ställas in på paneler som fästs från rapportvisualiseringar. Användare får aviseringar i tjänsten och i deras mobilapp.
 
 **annotate (kommentera)** Att skriva rader, text eller stämplar på en kopia av en ögonblicksbild av en panel, rapport eller visualisering i Power BI-mobilappen för iOS- och Android-enheter.
-
-**answer card, answer page (svarskort, svarssida)** Se Cortana-svarskort.
 
 **app, apps (app, appar)** 
 
@@ -77,10 +75,6 @@ Den här ordlista är ett community-arbete.  Saknar du något ord? Be oss att l�
 **content pack (Innehållspaket)** En uppsättning kompletta datauppsättningar, rapporter och instrumentpaneler. Nu till **appar**: lär dig mer [om den nya arbetsytan](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (innehållsvy)**
-
-**Cortana answer card (Cortana-svarskort)** Den dedikerade rapportsidan som ska tas med i en Power BI-rapport för att skapa anpassade Cortana-svar.
-
-**Cortana answer page (Cortana-svarssida)** Namnet på Cortana-sidan som visas för kunden.
 
 **cross filter, cross highlight (korsfilter, korsmarkering)**
 

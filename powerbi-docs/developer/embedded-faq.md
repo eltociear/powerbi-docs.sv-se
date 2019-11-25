@@ -1,19 +1,19 @@
 ---
 title: Vanliga frågor och svar om Power BI Embedded
 description: Bläddra i en lista med vanliga frågor och svar om Power BI Embedded.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 9e641b70c9fd6c6d378628d34413b14c59eaea23
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7670f8147af54f3b3a6c2c0eba34bb3ca7843eda
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73864214"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264067"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Vanliga frågor och svar om Power BI Embedded
 

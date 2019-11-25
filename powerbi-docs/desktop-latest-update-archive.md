@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8ae5e8e348c982c7e1dffd469e180f4353910bf3
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 228bc9a7c6d02b5c2cdf34178c7b023c78fa23ea
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099500"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74310803"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidigare månadsuppdateringar till Power BI Desktop
 
@@ -1503,7 +1503,7 @@ Följande uppdateringar är nya för **Power BI Desktop** den här månaden:
 ### <a name="reporting"></a>Rapportering:
 
 -   Bokmärken (förhandsgranskning) [[video]](https://youtu.be/jksjtR8GnBE?t=1m47s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#bookmarking) [[article]](desktop-bookmarks.md)
--   Urvalsfönster och bildskärmskontroller [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](desktop-bookmarks.md#visibility---using-the-selection-pane) 
+-   Urvalsfönster och bildskärmskontroller [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](desktop-bookmarks.md#visibility-using-the-selection-pane) 
 -   Bokmärkeslänkar för former och bilder [[video]](https://youtu.be/jksjtR8GnBE?t=8m54s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[article]](desktop-bookmarks.md#bookmarks-for-shapes-and-images)
 -   Spotlight [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[article]](desktop-bookmarks.md#using-spotlight)
 -   Punktdiagram och bubbelmarkörer [[video]](https://youtu.be/jksjtR8GnBE?t=17m20s)[[blogg]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[artikel]](desktop-accessibility.md)

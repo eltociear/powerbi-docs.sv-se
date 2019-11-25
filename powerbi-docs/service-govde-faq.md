@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7d432f8320bfa9d1e425e7f0079407ce46b12373
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4459ae95ccd900b0592dbae1048800bcd4609307
+ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872274"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74178254"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Vanliga frågor för Power BI för tyska molnkunder
 **Power BI-tjänsten** har en version som är tillgänglig för kunder i EU/Europeiska frihandelsavtalet (EU/EFTA), vilket ofta kallas Microsoft Cloud Deutschland (MCD). Den **Power BI-tjänsten** version som beskrivs i den här artikeln är utformad för kunder som tillhör myndigheter i EU-/EFTA-länder och är separat och skiljer sig från kommersiella versioner av **Power BI-tjänsten** eller Power BI-tjänster för andra myndigheter.
@@ -73,7 +73,7 @@ Följande frågor och svar innehåller viktig information för Power BI Pro-tjä
 ## <a name="next-steps"></a>Nästa steg
 Det finns olika typer av saker du kan göra med Power BI. Mer information och utbildning, inklusive en artikel som visar hur du registrerar dig för tjänsten, ta en titt i följande resurser:
 
-* [Guidad utbildning för Power BI](guided-learning/index.md)
+* [Guidad utbildning för Power BI](guided-learning/index.yml)
 * [Komma igång med Power BI-tjänsten](service-get-started.md)
 * [Vad är Power BI Desktop?](desktop-what-is-desktop.md)
 
