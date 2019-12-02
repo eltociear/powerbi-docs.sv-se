@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: c6ecb2eb2346940a22bbd6b7bff5ca0138faa290
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102604"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565239"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Certifiera ett visuellt Power BI-objekt
 
@@ -70,7 +70,7 @@ Om du vill att dina anpassade visuella objekt [certifieras](#get-a-power-bi-visu
 
 * Om några egenskaper i capabilities.json ändras ser du till att de inte gör att den befintliga användarens rapporter slutar fungera.
 
-* Kontrollera att det visuella objektet uppfyller [riktlinjerna för visuella Power BI-objekt](./guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases). **Inga vattenstämplar tillåts**.
+* Kontrollera att det visuella objektet uppfyller [riktlinjerna för visuella Power BI-objekt](./guidelines-powerbi-visuals.md). **Inga vattenstämplar tillåts**.
 
 * Använder endast offentliga granskningsbara OSS-komponenter (JS-bibliotek eller TypeScript som är offentliga. Källkoden är tillgänglig för granskning och har inga kända säkerhetsrisker). Vi kan inte verifiera ett anpassat visuellt objekt med hjälp av en extern komponent.
 
