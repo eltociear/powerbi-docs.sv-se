@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: bd6270731f79ac5a1e270ac36699470a0e6df978
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 3b90fcef50fc3f97a1a36e456eec254c422691a4
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060449"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164236"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webbseminarier
 
@@ -28,6 +28,10 @@ Registrera dig för våra kommande live-webbseminarier eller titta på våra ins
 **Hur Microsoft ändrar BI-dataskyddet**
 <br>av Anton Fritz och Adi Regev
 <br>[Registrera dig om du vill titta den 4 december](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Nine Trends Shaping the Future of Big Data Analytics** (Nio trender som formar framtiden för stordataanalys)
+<br>av Vijay Gopalakrishnan
+<br>[Registrera dig om du vill titta den 18 december](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 >[Kommande webbseminarier från Power BI-communityn](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -87,7 +91,7 @@ Titta på inspelade sessioner när som helst
 
 ### <a name="getting-started"></a>Komma igång
 
-**Automatisera dagliga affärsprocesser med Power BI, PowerApps och Microsoft Flow**
+**Automatisera dagliga affärsprocesser med Power BI, PowerApps och Power Automate**
 <br>av Wim Coorevits och Enrique Plaza Garcia
 <br>[Registrera dig och titta nu](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
@@ -107,7 +111,7 @@ Titta på inspelade sessioner när som helst
 <br>av Charles Sterling
 <br>[Titta nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**Den totala ekonomiska effekten av Microsoft Flow och PowerApps**
+**Den totala ekonomiska effekten av Power Automate och PowerApps**
 <br>av Jonathan Lipsitz och Enrique Plaza Garcia
 <br>[Registrera dig och titta nu](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 

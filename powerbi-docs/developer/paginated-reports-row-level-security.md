@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f28ffa89647272306dc9cecb5c93928d36805d2a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880455"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311491"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Implementera säkerhet på radnivå i inbäddade sidnumrerade rapporter (förhandsversion)
 
@@ -30,7 +30,7 @@ När du använder säkerhet på radnivå i en sidnumrerad Power BI-rapport, mås
 
 När du har tilldelat parametern till **UserID**, använder du API:et [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) till att hämta din inbäddningstoken.
 
-## <a name="use-uderid-as-a-filter-at-report-or-query-level"></a>Använda UserID som ett filter på rapport- eller frågenivå
+## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>Använda UserID som filter på rapport- eller frågenivå
 
 Du kan använda **UserId** som ett *filter* eller i en *fråga* till datakällan i [det sidnumrerade rapportverktyget i Power BI](../report-builder-power-bi.md).
 
@@ -66,7 +66,7 @@ Du kan använda **UserId** som ett *filter* eller i en *fråga* till datakällan
 
     ![Power BI Report Builder-parametrar](media/embedded-paginated-reports-secure-data/parameters.png)
 
-2. I **Parameternamn** anger du **@UserID** och i **Parametervärde** lägger du till **[&UserID]** .
+2. I **Parameternamn** anger du **\@UserID**, och i **Parametervärde** lägger du till **[&UserID]** .
 
     ![Power BI Report Builder-parameternamn](media/embedded-paginated-reports-secure-data/parameter-name.png) 
 

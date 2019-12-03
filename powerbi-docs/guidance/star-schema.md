@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 42da2dd74d80d2a68cf38c8d35ee4e500d6780d8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875589"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410848"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Förstå star-schemat och dess betydelse för Power BI
 
@@ -27,7 +27,7 @@ Den här artikeln är inte avsedd att ge en fullständig genomgång av star-sche
 
 **Dimensionstabeller** beskriver affärsentiteter – de ”saker” som du modellerar. Entiteter kan omfatta produkter, personer, platser och begrepp såsom tiden själv. Den mest konsekventa tabell som finns i ett star-schema är en datumdimensionstabell. En dimensionstabell innehåller en nyckelkolumn (eller kolumner) som fungerar som en unik identifierare samt beskrivande kolumner.
 
-**Faktatabeller** lagrar observationer eller händelser. Dessa kan vara försäljningsordrar, aktiebalanser, valutakurser, temperaturer osv. En faktatabell innehåller dimensionsnyckelkolumner som relaterar till dimensionstabeller samt kolumner med numeriska mått. Dimensionsnyckelkolumnerna bestämmer _dimensionaliteten_ för en faktatabell, medan dimensionsnyckelvärdena bestämmer faktatabellens _kornighet_. Ta som exempel en faktatabell som utformats för att lagra försäljningsmål som har två dimensionsnyckelkolumner, **Datum** och **Produktnyckel**. Det är enkelt att förstå att tabellen har två dimensioner. Kornigheten kan dock inte avgöras utan att man tar hänsyn till dimensionsnyckelvärdena. I det här exemplet är de värden som lagras i kolumnen **Datum** den första dagen i varje månad. I det här fallet är kornigheten på månads-produkt-nivå.
+**Faktatabeller** lagrar observationer eller händelser och kan vara försäljningsorder, aktiekurser, valutakurser, temperaturer osv. En faktatabell innehåller dimensionsnyckelkolumner som relaterar till dimensionstabeller samt kolumner med numeriska mått. Dimensionsnyckelkolumnerna bestämmer _dimensionaliteten_ för en faktatabell, medan dimensionsnyckelvärdena bestämmer faktatabellens _kornighet_. Ta som exempel en faktatabell som utformats för att lagra försäljningsmål som har två dimensionsnyckelkolumner, **Datum** och **Produktnyckel**. Det är enkelt att förstå att tabellen har två dimensioner. Kornigheten kan dock inte avgöras utan att man tar hänsyn till dimensionsnyckelvärdena. I det här exemplet är de värden som lagras i kolumnen **Datum** den första dagen i varje månad. I det här fallet är kornigheten på månads-produkt-nivå.
 
 I allmänhet innehåller dimensionstabeller ett relativt litet antal rader. Faktatabeller kan å andra sidan innehålla ett mycket stort antal rader och fortsätta att växa över tid.
 
@@ -37,7 +37,7 @@ I allmänhet innehåller dimensionstabeller ett relativt litet antal rader. Fakt
 
 Star-schemadesignen och många relaterade begrepp som introduceras i den här artikeln är mycket relevanta för utveckling av Power BI-modeller som är optimerade för prestanda och användbarhet.
 
-Tänk på att varje visuellt objekt i en Power BI-rapport genererar en fråga som skickas till Power BI-modellen (som Power BI-tjänsten kallar datamängd). Dessa frågor används för att filtrera, gruppera och sammanfatta modelldata. En väl utformad modell är alltså en som tillhandahåller tabeller för filtrering och gruppering samt tabeller för sammanfattning. Detta passar bra med designprinciperna för star-scheman:
+Tänk på att varje visuellt objekt i en Power BI-rapport genererar en fråga som skickas till Power BI-modellen (som Power BI-tjänsten kallar datamängd). Dessa frågor används för att filtrera, gruppera och sammanfatta modelldata. En väl utformad modell är alltså en som tillhandahåller tabeller för filtrering och gruppering samt tabeller för sammanfattning. Den här designen passar bra med star-schemaprinciper:
 
 - Dimensionstabeller stöder _filtrering_ och _gruppering_
 - Faktatabeller stöder _sammanfattning_
@@ -50,7 +50,7 @@ En välstrukturerad modelldesign bör omfatta tabeller som är tabeller av antin
 
 Slutligen är det viktigt att förstå att optimal modelldesign handlar om både vetenskap och konst. Ibland kan du frångå god vägledning när så behövs.
 
-Det finns många ytterligare begrepp relaterade till star-schemadesign som kan tillämpas på en Power BI-modell. Dessa omfattar:
+Det finns många ytterligare begrepp relaterade till star-schemadesign som kan tillämpas på en Power BI-modell. Dessa begrepp omfattar:
 
 - [Mått](#measures)
 - [Surrogatnycklar](#surrogate-keys)
@@ -67,13 +67,13 @@ I en star-schemadesign är ett **mått** en faktatabellkolumn som lagrar värden
 
 I en Power BI-modell har ett **mått** en annan, men liknande, definition. Det är en formel som skrivs i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) och som skapar sammanfattning. Måttuttryck utnyttjar ofta DAX-sammanställningsfunktioner som SUM, MIN, MAX, AVERAGE osv. för att producera ett skalärvärderesultat vid frågetiden (värden lagras aldrig i modellen). Måttuttryck kan vara såväl enkla kolumnsammanställningar som mer avancerade formler som åsidosätter filterkontext och/eller relationsspridning. Mer information finns i artikeln [DAX-grunder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
-Det är viktigt att förstå att Power BI-modeller har stöd för en andra metod för att skapa sammanfattning. Vilka kolumner som helst – vanligtvis numeriska kolumner – kan sammanfattas av ett visuellt objekt i en rapport eller Frågor och svar. Det här är praktisk för dig som modellutvecklare, eftersom du i många fall inte behöver skapa mått. Till exempel kan kolumnen **Försäljningsbelopp** för Adventure Works-återförsäljares försäljning sammanfattas på många olika sätt (summa, antal, genomsnitt, median, min, max osv.) utan att ett mått behöver skapas för alla tänkbara sammansättningstyper.
+Det är viktigt att förstå att Power BI-modeller har stöd för en andra metod för att skapa sammanfattning. Vilka kolumner som helst – vanligtvis numeriska kolumner – kan sammanfattas av ett visuellt objekt i en rapport eller Frågor och svar. Dessa kolumner kallas _implicita mått_. Det här är praktisk för dig som modellutvecklare, eftersom du i många fall inte behöver skapa mått. Till exempel kan kolumnen **Försäljningsbelopp** för Adventure Works-återförsäljares försäljning sammanfattas på många olika sätt (summa, antal, genomsnitt, median, min, max osv.) utan att ett mått behöver skapas för alla tänkbara sammansättningstyper.
 
 ![Ikonexempel i fältlista](media/star-schema/field-list-example.png)
 
 Det finns dock två övertygande orsaker att du bör skapa mått även för enkla sammanfattningar på kolumnnivå:
 
-- När du vet att rapportförfattare kommer att köra frågor mot modellen med hjälp av [flerdimensionella uttryck (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) måste modellen innehålla mått. MDX kan inte skapa sammanfattning av kolumnvärden. Detta är mycket relevant när en Power BI-datamängd frågas med hjälp av MDX, och detta är fallet vid användning av [Analysera i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller utfärdar MDX-frågor).
+- När du vet att rapportförfattare kommer att köra frågor mot modellen med hjälp av [flerdimensionella uttryck (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017) måste modellen innehålla _explicita mått_. Explicita mått definieras med DAX. Den här designmetoden är mycket relevant när du hämtar data från en Power BI-datauppsättning med hjälp av MDX, eftersom MDX inte kan summera kolumnvärden. MDX används framför allt tillsammans med [Analysera i Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (pivottabeller skickar MDX-frågor).
 - Det kan gälla om du behöver säkerställa att rapportförfattare endast kan sammanfatta kolumner på specifika sätt. Till exempel kan kolumnen **Enhetspris** (som representerar ett pris per enhet) för återförsäljares försäljning sammanfattas, men endast med hjälp av specifika sammansättningsfunktioner. Den bör aldrig sammanfattas, men det är lämpligt att sammanfatta den med hjälp av andra sammansättningsfunktioner (min, max, genomsnitt osv.). I det här fallet kan modelleraren dölja kolumnen **Enhetspris** och skapa mått för alla lämpliga sammansättningsfunktioner.
 
 Observera att den här designmetoden fungerar bra för rapporter som skapats i Power BI-tjänsten och för Frågor och svar. Power BI Desktop-live-anslutningar tillåter dock att rapportförfattare visar dolda fält i fönstret **Fält**, vilket kan leda till att den här designmetoden kringgås.
@@ -123,13 +123,13 @@ En icke-inkrementell uppdatering av en tabell av dimensionstyp för en Power BI-
 
 ### <a name="type-2-scd"></a>SCD av typ 2
 
-En **typ 2**-**SCD** stöder versionshantering av dimensionsmedlemmar. Om källsystemet inte lagrar versioner är det vanligtvis informationslagrets inläsningsprocess som identifierar ändringar och korrekt hanterar ändringen i en dimensionstabell. I det här fallet måste dimensionstabellen använda en surrogatnyckel för att tillhandahålla en unik referens till en _version_ av dimensionsmedlemmen. Den innehåller även kolumner som definierar datumintervallets giltighet för versionen (till exempel **StartDate** (Startdatum) och **EndDate** (Startdatum)) samt eventuellt en flaggkolumn (till exempel **IsCurrent** (Är aktuellt)) för enkel filtrering efter aktuella dimensionsmedlemmar.
+En **typ 2**-**SCD** stöder versionshantering av dimensionsmedlemmar. Om källsystemet inte lagrar versioner är det vanligtvis informationslagrets inläsningsprocess som identifierar ändringar och hanterar ändringen i en dimensionstabell. I det här fallet måste dimensionstabellen använda en surrogatnyckel för att tillhandahålla en unik referens till en _version_ av dimensionsmedlemmen. Den innehåller även kolumner som definierar datumintervallets giltighet för versionen (till exempel **StartDate** (Startdatum) och **EndDate** (Startdatum)) samt eventuellt en flaggkolumn (till exempel **IsCurrent** (Är aktuellt)) för enkel filtrering efter aktuella dimensionsmedlemmar.
 
 Till exempel tilldelar Adventure Works säljare till en försäljningsregion. När en säljare byter region måste en ny version av säljaren skapas för att säkerställa att historiska uppgifter fortfarande är kopplade till den tidigare regionen. För att stödja korrekt historisk analys av försäljning per säljare måste dimensionstabellen lagra versioner av säljare och deras associerade region(er). Tabellen bör även innehålla start- och slutdatumvärden för att definiera tidens giltighet. Aktuella versioner kan definiera ett tomt slutdatum (eller 12/31/9999), vilket betyder att raden är den aktuella versionen. Tabellen måste även definiera en surrogatnyckel eftersom affärsnyckeln (i det här fallet medarbetar-ID) inte är unik.
 
-Observera att när källdata inte lagrar versioner så måste du använda ett mellanliggande system (till exempel ett informationslager) för att identifiera och lagra ändringar. Tabellinläsningsprocessen måste bevara befintliga data och identifiera ändringar. När en ändring identifieras måste tabellinläsningsprocessen göra så att den aktuella versionen förfaller. Den gör detta genom att uppdatera för **EndDate**-värdet och lägga till en ny version med **StartDate**-värdet som börjar från föregående **EndDate**-värde. Dessutom måste relaterade fakta använda en tidsbaserad sökning för att hämta det dimensionsnyckelvärde som är relevant för faktadatumet. En Power BI-modell som använder Power Query kan inte uppnå detta. Den kan dock läsa in data från en i förväg inläst dimensionstabell för typ 2-SCD.
+Observera att när källdata inte lagrar versioner så måste du använda ett mellanliggande system (till exempel ett informationslager) för att identifiera och lagra ändringar. Tabellinläsningsprocessen måste bevara befintliga data och identifiera ändringar. När en ändring identifieras måste tabellinläsningsprocessen göra så att den aktuella versionen förfaller. Den registrerar dessa ändringar genom att uppdatera **EndDate**-värdet och lägga till en ny version med **StartDate**-värdet som börjar från föregående **EndDate**-värde. Dessutom måste relaterade fakta använda en tidsbaserad sökning för att hämta det dimensionsnyckelvärde som är relevant för faktadatumet. En Power BI-modell som använder Power Query kan inte producera det här resultatet. Den kan dock läsa in data från en i förväg inläst dimensionstabell för typ 2-SCD.
 
-Power BI-modellen bör stödja körning av frågor mot historiska data för en medlem, oavsett ändring och för en version av medlemmen som representerar ett visst tillstånd för medlemmen i tid. I samband med Adventure Works gör detta att du kan köra frågor mot säljaren oberoende av tilldelad säljregion eller för en viss version av säljaren.
+Power BI-modellen bör stödja körning av frågor mot historiska data för en medlem, oavsett ändring och för en version av medlemmen som representerar ett visst tillstånd för medlemmen i tid. I samband med Adventure Works gör den här designen att du kan köra frågor mot säljaren oberoende av tilldelad säljregion eller för en viss version av säljaren.
 
 För att uppnå detta måste tabellen av dimensionstyp för en Power BI-modell innehålla en kolumn för filtrering efter säljaren och en annan kolumn för filtrering efter en särskild version av säljaren. Det är viktigt att kolumnversionen innehåller en icke-tvetydig beskrivning, till exempel ”Michael Blythe (12/15/2008–06/26/2019)” eller ”Michael Blythe (aktuell)”. Det är även viktigt att utbilda rapportförfattare och konsumenter i grunderna för typ 2-SCD och hur korrekt rapportdesign kan uppnås via användning av korrekta filter.
 
@@ -145,7 +145,7 @@ En **rollspelsdimension** är en dimension som kan filtrera relaterade fakta på
 
 I ett informationslager är den accepterade designmetoden att definiera en dimensionstabell med ett enda datum. Vid frågekörningstiden bestäms datumdimensionens ”roll” av vilken faktakolumn du använder för att sammankoppla tabellerna. När du till exempel analyserar försäljning per orderdatum relaterar tabellkopplingen till orderdatumkolumnen för återförsäljares försäljning.
 
-I en Power BI-modell kan den här designen imiteras genom att flera relationer skapas mellan två tabeller. I exemplet med Adventure Works skulle tabellerna för datum och återförsäljares försäljning ha tre relationer. Observera att även om detta är möjligt, så kan det endast finnas en aktiv relation mellan två Power BI-modelltabeller. Alla återstående relationer måste anges till inaktiva. Att ha en enda aktiv relation innebär att det finns en standardmässig filterspridning från datum till återförsäljares försäljning. I den här fallet anges den aktiva relationen till det vanligaste filtret som används av rapporter, vilket för Adventure Works är relationen för orderdatum.
+I en Power BI-modell kan den här designen imiteras genom att flera relationer skapas mellan två tabeller. I exemplet med Adventure Works skulle tabellerna för datum och återförsäljares försäljning ha tre relationer. Observera att även om den här designen är möjlig, så kan det endast finnas en aktiv relation mellan två Power BI-modelltabeller. Alla återstående relationer måste anges till inaktiva. Att ha en enda aktiv relation innebär att det finns en standardmässig filterspridning från datum till återförsäljares försäljning. I den här fallet anges den aktiva relationen till det vanligaste filtret som används av rapporter, vilket för Adventure Works är relationen för orderdatum.
 
 ![Exempel på en enskild rollspelsdimension och relationer](media/star-schema/relationships.png)
 
@@ -158,7 +158,7 @@ En vanlig Power BI-modelleringsteknik för att undvika dessa begränsningar är 
 
 ![Exempel på rollspelsdimensioner och relationer](media/star-schema/relationships2.png)
 
-Den här designmetoden kräver inte att du definierar flera mått för olika datumroller, och den tillåter samtidig filtrering efter olika datumroller. En mindre nackdel med den här designmetoden är dock att det sker duplicering av datumdimensionstabellen, vilket leder till en högre storlek på modellagringen. Eftersom tabeller av dimensionstyp oftast färre rader jämfört med tabeller av faktatyp utgör detta sällan något problem.
+Den här designmetoden kräver inte att du definierar flera mått för olika datumroller, och den tillåter samtidig filtrering efter olika datumroller. En mindre nackdel med den här designmetoden är dock att det sker duplicering av datumdimensionstabellen, vilket leder till en högre storlek på modellagringen. Eftersom tabeller av dimensionstyp oftast lagrar färre rader jämfört med tabeller av faktatyp utgör detta sällan något problem.
 
 Följ dessa metoder för god design när du skapar modell tabeller av dimensionstyp för varje roll:
 
@@ -207,3 +207,4 @@ Mer information om star-schemadesign eller Power BI-modelldesign finns i följan
 - [Skapa och hantera relationer i Power BI Desktop](../desktop-create-and-manage-relationships.md)
 - [Relationer med kardinaliteten många-många i Power BI Desktop](../desktop-many-to-many-relationships.md)
 - [Vägledd inlärning om modellering](/learn/modules/model-data-power-bi/)
+- Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

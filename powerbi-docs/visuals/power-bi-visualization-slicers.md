@@ -1,31 +1,31 @@
 ---
-title: Självstudier – Utsnitt i Power BI
-description: Utsnitt i Power BI
+title: Utsnitt i Power BI
+description: Ett utsnitt i Power BI är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport.
 author: v-thepet
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/22/2019
+ms.date: 11/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 808f27b94e53d5acf351772ef304f9cc69215007
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 97ad95346715cd5ad38f41d6e7b9df3cc7493f40
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880818"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265406"
 ---
 # <a name="slicers-in-power-bi"></a>Utsnitt i Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram, eller så kan du använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
+Anta att du vill att rapportens läsare ska kunna se övergripande försäljningsmått, men också att de ska kunna lyfta fram prestanda för enskilda distriktschefer och olika tidsramar. Du kan skapa separata rapporter eller jämförande diagram. Du kan också använda utsnitt. Ett utsnitt är en alternativ filtreringsmetod som begränsar den del av datauppsättningen som visas i övriga visualiseringar i en rapport. 
 
 I den här självstudien används kostnadsfria [Exempel på detaljhandelsanalys](../sample-retail-analysis.md) för att visa hur du kan skapa, formatera och använda utsnitt för listor och datumutsnitt. Du kommer att upptäcka nya sätt att formatera och använda utsnitt. 
 
-![utsnitt](media/power-bi-visualization-slicers/slicer2.gif)
+![Animering av utsnitt](media/power-bi-visualization-slicers/slicer2.gif)
 
 ## <a name="when-to-use-a-slicer"></a>När ska du använda ett utsnitt
 Utsnitt är ett bra val när du vill:
@@ -35,175 +35,215 @@ Utsnitt är ett bra val när du vill:
 * Filtrera efter kolumner som är onödiga och dolda i datatabellerna.
 * Skapa mer fokuserade rapporter genom att placera utsnitt bredvid viktiga visuella objekt.
 
-Power BI-utsnitt har följande begränsningar:
+Power BI-utsnitt stöder inte:
 
-- Utsnitt stöder inte indatafält.
-- Det stöds inte att gå in på detaljnivå för utsnitt.
+- Indatafält
+- Detaljgranskning
 
 
 ## <a name="create-slicers"></a>Skapa utsnitt
 
 **Skapa ett nytt utsnitt och filtrera data efter distriktschef**
 
-De här självstudierna använder sig av [PBIX-filen Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+1. Ladda ned [PBIX-filen Exempel på detaljhandelsanalys](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-1. Välj **Arkiv** > **Öppna** uppe till vänster på menyraden
+1. Välj **Arkiv** > **Öppna** på menyraden i Power BI Desktop.
    
-2. Leta reda på kopian av **PBIX-filen Exempel för detaljhandelsanalys**
+1. Bläddra till **PBIX.pbix-filen Exempel på detaljhandelsanalys** och välj **Öppna**.
 
-1. Öppna **PBIX-filen Exempel för detaljhandelsanalys** i rapportvyn ![Skärmbild av rapportvisningsikonen.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. I den vänstra rutan väljer du **rapportikonen** ![rapportikon](media/power-bi-visualization-kpi/power-bi-report-view.png) för att öppna filen i rapportvyn.
 
-1. Välj ![Skärmbild av den gula fliken.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) för att lägga till en ny sida.
+1. På **översiktssidan**, utan något markerat på rapportarbetsytan, väljer du ikonen **Utsnitt** ![utsnittsikon](media/power-bi-visualization-slicers/slicer-icon.png) i fönstret **Visualiseringar** för att skapa ett nytt utsnitt. 
 
-2. På översiktssidan, utan något markerat på kanvaset, väljer du ikonen **Utsnitt** ![utsnittsikon](media/power-bi-visualization-slicers/slicer-icon.png) i **Visualiseringar**-fönstret för att skapa ett nytt utsnitt. 
-3. Med det nya utsnittet markerat, från Fält-fönstret, väljer du **Distrikt** > **DM** för att fylla i utsnittet. Det nya utsnittet är en lista med markeringsrutor framför namnen. 
+1. Med det nya utsnittet markerat väljer du **Distrikt** > **DM** från fönstret **Fält** för att fylla utsnittet. 
+
+    Nu fylls det nya utsnittet med en lista över namnen på distriktscheferna och deras markeringsrutor.
     
-    ![nytt utsnitt](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
+    ![Utsnitt fyllt med namnen på distriktscheferna](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
-4. Ändra storlek och dra utsnittet och andra element på arbetsytan så att du frigör utrymme för utsnittet. Observera att utsnittsobjekten klipps av om du gör utsnittet för litet. 
-5. Välj namn för utsnittet och notera effekterna på sidans övriga visualiseringar. Avmarkera namnen och välj mer än ett namn genom att hålla ned **Ctrl**-tangenten. Om du väljer alla namn har det samma effekt som om du inte hade valt något namn. 
+1. Ändra storlek på och dra elementen på arbetsytan för att göra plats för utsnittet. Observera att objekten klipps av om du ändrar storlek på utsnittet så att det blir för litet. 
 
-6. Alternativt kan du välja färgvalsikonen för att formatera utsnittet. Det finns helt enkelt för många alternativ för att beskriva alla här. Experimentera och skapa ett utsnitt som passar dina behov. I exemplen nedan använder det första utsnittet en vågrät orientering och färgade bakgrunder för objekten. Det andra utsnittet har hållits lodrätt och färglägger i stället texten för ett mer standardutseende.
+1. Välj namn i utsnittet och notera effekterna på sidans övriga visualiseringar. Välj namn igen för att avmarkera dem, eller håll ned **CTRL**-tangenten om du vill markera mer än ett namn. Om du väljer alla namn har det samma effekt som om du inte hade valt något namn. 
 
-   ![nytt utsnitt](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
->[!TIP]
->Listans utsnittsobjekt sorteras som standard i stigande alfanumerisk ordning. Om du vill ändra sorteringsordningen till fallande väljer du ellipsen ( **...** ) i utsnittets övre högra hörn och väljer **Sortera fallande**.
+1. Alternativt väljer du **Format** (ikonen av en målningsrulle) i fönstret **Visualiseringar** för att formatera utsnittet. 
 
-**Skapa ett nytt utsnitt och filtrera data efter datumintervall**
+   Det finns för många alternativ för att beskriva alla här. Experimentera och skapa ett utsnitt som passar dina behov. I följande bild har det första utsnittet vågrät orientering, och objekten har färgade bakgrunder. Det andra utsnittet har lodrät orientering och mer av ett standardutseende med färgad text.
 
-1. Utan något markerat på kanvaset, släpper du **Affär** i Fält-fönstret och drar **OpenDate** till **Värden**-brunnen i Visualiseringar-fönstret för att skapa en ny visualisering.
-2. Konvertera den nya visualiseringen till ett utsnitt genom att markera den nya visualiseringen och välja ikonen **Utsnitt**. Den här utsnittet är ett skjutreglage med ifyllt datumintervall.
+   ![Formaterat utsnitt](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
+
+   >[!TIP]
+   >Objekten i en utsnittslista sorteras i stigande ordning som standard. Om du vill ändra sorteringsordningen till fallande väljer du ellipsen ( **...** ) i utsnittets övre högra hörn och väljer **Sortera fallande**.
+
+**Skapa ett nytt utsnitt för att filtrera data efter datumintervall**
+
+1. Välj **översiktssidan** för rapporten. När inget har markerats på rapportens arbetsyta väljer du **Arkiv** >  **OpenDate** i fönstret **Fält**.
+
+    Den här åtgärden fyller i rutan **Värden** i fönstret **Visualiseringar** så att en ny visualisering skapas.
+
+1. När den nya visualiseringen är markerad i rapporten väljer du **utsnittsikonen** i fönstret **Visualiseringar** för att konvertera den nya visualiseringen till ett utsnitt. Det här **OpenDate**-utsnittet är ett skjutreglage med ifyllt datumintervall.
     
-    ![nytt intervallutsnitt](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
+    ![Skapa en OpenDate-visualisering](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
 
-    
-4. Ändra storlek och dra utsnittet och andra element på arbetsytan så att du frigör utrymme för utsnittet. Observera att skjutreglaget anpassas efter utsnittets storlek, men det försvinner och datumen klipps bort om du gör utsnittet för litet. 
-4. Välj olika datumintervall med skjutreglaget eller välj ett datumfält så att du kan skriva in ett värde eller öppna en kalender om du vill göra med precisa val. Observera effekterna på de övriga visualiseringarna på sidan.
+1. Ändra storlek och dra utsnittet och andra element på arbetsytan så att du frigör utrymme för utsnittet. Observera att skjutreglaget anpassas efter utsnittets storlek, men det försvinner och datumen klipps bort om du gör utsnittet för litet. 
+
+1. Välj olika datumintervall med skjutreglaget eller välj ett datumfält så att du kan skriva in ett datum eller öppna en kalender om du vill göra mer precisa val. Observera effekterna på de övriga visualiseringarna på sidan.
     
     >[!NOTE]
     >Numeriska datatyper och datum-/tiddatatyper producerar skjutreglageutsnitt som standard. Från och med Power BI-uppdateringen i februari 2018 fäster skjutreglage för heltalsdata nu till helstalsvärden istället för att visa decimaler. 
 
-
-5. Om du vill ändra utsnittstyp för ett markerat utsnitt hovrar du över utsnittets övre högra område, släpper cirkumflexet som visas och väljer något av de andra alternativen, t.ex. **Lista** eller **Före**. Observera hur utsnittsalternativen och urvalsalternativen ändras. 
+1. Om du vill ändra utsnittstyp för ett markerat utsnitt hovrar du över utsnittets övre högra område, väljer cirkumflexen som visas och väljer något av alternativen, t.ex. **Lista** eller **Före**. Observera hur utsnittets utseende och markeringsalternativ ändras. 
  
-    ![nytt intervallutsnitt](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
+    ![Nytt intervall för utsnitt](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
 
 
-Mer information om hur du skapar utsnitt för datum och numeriska intervall finns i följande video och [Använda utsnittet för numeriska intervall i Power BI Desktop](../desktop-slicer-numeric-range.md).
+Mer information om hur du skapar utsnitt med datumintervall och numeriska intervall finns i följande video och i [Använda utsnittet för numeriska intervall i Power BI Desktop](../desktop-slicer-numeric-range.md).
    > [!NOTE]
    > Den här videon använder en äldre version av Power BI Desktop.
    > 
    > 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>Kontrollera vilka visuella objekt på sidan som påverkas av utsnitten
-Normalt påverkar utsnitt på rapportsidorna alla övriga visualiseringar på sidan, inklusive varandra. När du väljer värden i listan och datumskjutreglagen som du just har skapat kan du se vilken inverkan de har på de övriga visualiseringarna. Filtrerade data utgör en skärningspunkt för de värden som du har valt i båda utsnitten. 
+Normalt påverkar utsnitt på rapportsidorna alla övriga visualiseringar på sidan, inklusive varandra. Observera effekten på de andra visualiseringarna när du väljer värden i list- och datumutsnitten som du precis skapat. Filtrerade data utgör en skärningspunkt för de värden som du har valt i båda utsnitten. 
 
-Du kan använda **Visuella interaktioner** om du vill förhindra att vissa sidvisualiseringar påverkas av andra. Diagrammet ”Total försäljningsvarians per FiscalMonth och distriktschef” hanteraren” på sidan **Översikt** visar övergripande jämförelsedata för distriktschefer per månad, vilket du vill alltid ska visas. Du kan använda **Visuella interaktioner** för att förhindra att utsnittsurval filtrerar det här diagrammet. 
+Använd visuella interaktioner om du vill undanta vissa sidvisualiseringar så att de inte påverkas av andra. På sidan **Översikt** visar diagrammet **Total försäljningsvarians efter FiscalMonth och Distriktschef** övergripande jämförelsedata för distriktschefer per månad, som ska vara synliga hela tiden. Du kan använda visuella interaktioner för att förhindra att utsnittsval filtrerar det här diagrammet. 
 
-1. Med utsnittet distriktschef på sidan **Månadsvis försäljning för distriktet** markerad:
-    - Välj menyn **Format** under **Visuella verktyg** i Power BI Desktop och välj sedan **Redigera interaktioner**.
+1. Gå till sidan **Översikt** i rapporten och välj sedan **DM**-utsnittet som du skapade tidigare.
+
+1. På Power BI Desktop-menyn väljer du **Formatera**-menyn under **Visuella verktyg** och väljer sedan **Redigera interaktioner**.
    
-   Filterkontroller ![filterkontroller](media/power-bi-visualization-slicers/filter-controls.png) visas ovanför alla andra visuella objekt på sidan. Alla **filter**ikoner är markerade initialt.
+   Filterkontroller ![filterkontroller](media/power-bi-visualization-slicers/filter-controls.png), var och en med ett **Filter** och alternativet **Inget**, visas ovanför alla visuella objekt på sidan. Alternativet **Filter** är förvalt för alla kontroller.
    
-2. Välj ikonen **Ingen** ovanför diagrammet **Total försäljningsavvikelse efter FiscalMonth och distriktschef**, vilket förhindrar att utsnittet filtrerar det. 
-3. Välj utsnittet **Månad** och sedan återigen ikonen **Ingen** ovanför diagrammet **Total försäljningsavvikelse efter FiscalMonth och distriktschef**, vilket förhindrar att utsnittet filtrerar det. När du nu väljer namn och datumintervall i utsnitten så förändras inte diagrammet Total försäljningsavvikelse efter FiscalMonth och distriktschef. 
+1. Välj alternativet **Inget** i filterkontrollen ovanför diagrammet **Total försäljningsvarians efter FiscalMonth och Distriktschef** för att hindra **DM**-utsnittet från att filtrera det. 
 
-Mer information om hur du redigerar interaktioner finns i [Visuella interaktioner i en Power BI-rapport](../service-reports-visual-interactions.md).
+1. Välj **OpenDate**-utsnittet och välj sedan alternativet **Inget** ovanför diagrammet **Total försäljningsvarians efter FiscalMonth och Distriktschef** för att hindra det här utsnittet från att filtrera det. 
+
+   När du nu väljer namn och datumintervall i utsnitten så förändras inte diagrammet **Total försäljningsavvikelse efter FiscalMonth och distriktschef**.
+
+Mer information om hur du redigerar interaktioner finns i [Ändra hur visuella objekt interagerar i en Power BI-rapport](../service-reports-visual-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synkronisera och använda utsnitt på andra sidor
 Från och med Power BI-uppdateringen från februari 2018 kan du synkronisera ett utsnitt och använda det på några eller alla sidor i en rapport. 
 
-I den aktuella rapporten har sidan **Månadsvis försäljning för distriktet** även utsnittet **Distriktschef** men tänk om vi även vill ha det utsnittet på **Översikt**-sidan? Sidan **Nya butiker** har också ett utsnitt men det erbjuder bara **Butiksnamn**-information. Med fönstret **Synkronisera utsnitt** kan vi synkronisera **Distriktschef**-utsnittet till dessa sidor så att utsnittets val på alla sidor påverkar visualiseringarna på alla tre sidorna.
+I den aktuella rapporten har sidan **Månadsvis försäljning för distriktet** utsnittet **Distriktschef**, men tänk om vi även vill ha det utsnittet på sidan **Nya butiker**? Sidan **Nya butiker** har ett utsnitt, men det visar bara information om **butiksnamn**. Med fönstret **Synkronisera utsnitt** kan du synkronisera **Distriktschef**-utsnittet med dessa sidor så att utsnittsvalen på en av sidorna påverkar visualiseringarna på alla tre sidor.
 
-1. På menyn **Visa** väljer du **Synkronisera utsnitt** i Power BI Desktop.
+1. Välj **Synkronisera utsnitt** på **Visa**-menyn i Power BI Desktop.
 
-    ![synkronisera utsnitt](media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png)
+    ![Alternativet Synkronisera utsnitt](media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png)
 
-1.  Fönstret **Synkronisera utsnitt** visas mellan fönstren **Filter** och **Visualiseringar**.  
+    Fönstret **Synkronisera utsnitt** visas mellan fönstren **Filter** och **Visualiseringar**.
 
-    ![synkronisera utsnitt](media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png)
+    ![Fönstret Synkronisera utsnitt](media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png)
 
-1. På sidan **Månadsvis försäljning för distriktet** väljer du utsnittet **Distriktschef**. 
+1. Välj utsnittet **Distriktschef** på sidan **Månadsförsäljning för distrikt** för rapporten. 
+
+    Eftersom du redan har skapat ett segment för **Distriktschef** (**DM**) på sidan **Översikt** visas fönstret **Synkronisera utsnitt** på följande sätt:
     
-    ![synkronisera utsnitt](media/power-bi-visualization-slicers/9-sync-slicers.png)
+    ![Synkronisera utsnittet Månadsförsäljning för distrikt](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
-3. I kolumnen **Synkronisera** väljer du sidan **Nya butiker** och därefter **Översikt** för att synkronisera utsnittet **Månadsvis försäljning för distriktet** till de sidorna. 
+1. I kolumnen **Synkronisera** i fönstret **Synkronisera utsnitt** väljer du sidorna **Översikt**, **Månadsförsäljning för distrikt** och **Nya butiker**. 
+
+    När du gör det synkroniseras utsnittet **Månadsförsäljning för distrikt** mellan de tre sidorna. 
     
-3. I kolumnen **Synliga** väljer du sidan **Nya butiker** och därefter **Översikt**. Ditt fönster för **Synkronisera utsnitt** bör nu se ut som bilden nedan:
+1. I kolumnen **Synlig** i fönstret **Synkronisera utsnitt** väljer du sidan **Nya butiker**. 
 
-    ![synkronisera utsnitt](media/power-bi-visualization-slicers/power-bi-sync-slicer-finished.png)
+    När du gör det visas utsnittet **Månadsförsäljning för distriktet** på de tre sidorna. Nu visas fönstret **Synkronisera utsnitt** så här:
 
-1. Observera vilka effekterna blir när du synkroniserar utsnittet och gör det synligt på de övriga sidorna. Utsnittet **Distriktschef** på sidan **Månatlig distriktsförsäljning** visar samma val som på sidan **Översikt**. Urvalen i utsnittet **Distriktschef** på sidan **Nya butiker** påverkar de urval som är tillgängliga i utsnittet **Arkivnamn**. 
+    ![Välj sidor i Synkronisera utsnitt](media/power-bi-visualization-slicers/power-bi-sync-slicer-finished.png)
+
+1. Observera vilka effekterna blir när du synkroniserar utsnittet och gör det synligt på de övriga sidorna. Som du ser på sidan **Månadsförsäljning för distrikt** visar utsnittet **Distriktschef** nu samma val som på sidan **Översikt**. Nu visas utsnittet **Distriktschef** på sidan **Nya butiker** och de val som görs i utsnittet påverkar valen som visas i utsnittet **Butiksnamn**. 
     
     >[!TIP]
     >Även om utsnittet till att börja med visas på de synkroniserade sidorna med samma storlek och placering som på den ursprungliga sidan, så kan du flytta, ändra storlek på och formatera synkroniserade utsnitt på de olika sidorna oberoende av varandra. 
 
->[!NOTE]
->Om du synkroniserar ett utsnitt till en sida, men inte gör det synligt på sidan, så filtrerar fortfarande de utsnittsurval som gjorts på de övriga sidorna informationen på sidan.
+    >[!NOTE]
+    >Om du synkroniserar ett utsnitt till en sida, men inte gör det synligt på sidan, så filtrerar fortfarande de utsnittsval som gjorts på de övriga sidorna informationen på sidan.
  
 ## <a name="format-slicers"></a>Formatutsnitt
 Olika formateringsalternativ är tillgängliga beroende på vilken utsnittstyp det rör sig om. Med hjälp av **vågrät** orientering **dynamisk** layout och **objekt**färger kan du skapa knappar och paneler istället för standardlistobjekt och ändra storlek på utsnittsobjekt så att de passar olika skärmstorlekar och layouter.  
 
-1. Med utsnittet **Distriktschef** markerat på valfri sida, i fönstret **Visualiseringar**, väljer du **Formatera**-ikonen ![formatera-ikonen](media/power-bi-visualization-slicers/power-bi-paintroller.png) för att visa formateringskontrollerna. 
+1. Med utsnittet **Distriktschef** markerat på valfri sida väljer du **Formatera**-ikonen ![Formatera-ikonen](media/power-bi-visualization-slicers/power-bi-paintroller.png) i fönstret **Visualiseringar** för att visa formateringskontrollerna. 
     
-    ![formatering](media/power-bi-visualization-slicers/3-format.png)
+    ![Alternativet Formatera](media/power-bi-visualization-slicers/3-format.png)
     
-2. Välj listrutepilarna bredvid respektive kategori om du vill visa och redigera motsvarande alternativ. 
+1. Välj listrutepilarna bredvid respektive kategori om du vill visa och redigera motsvarande alternativ. 
 
 ### <a name="general-options"></a>Allmänna alternativ
-1. Välj rött under **Konturfärg** och ändra **Konturtjocklek** till ”2”. Då ställer du in färg och tjocklek för konturer eller understrykningar för rubrik och objekt, när det är aktiverat. 
-2. **Lodrät** är standard under **Orientering**. Välj **Vågrät** om du vill skapa ett utsnitt med vågrätt ordnade paneler eller knappar, och rullningspilar om du vill få åtkomst till objekt som inte passar in i utsnittet.
+1. Under **Formatera** väljer du **Allmänt**, väljer en röd färg under **Konturfärg** och ändrar sedan **Konturtjocklek** till *2*. 
+
+    Den här inställningen ändrar färgen och tjockleken för konturer och understrykningar för sidhuvuden och objekt.
+
+1. För **Orientering** är **Lodrät** markerat som standard. Välj **Vågrät** om du vill skapa ett utsnitt med vågrätt ordnade paneler eller knappar, och rullningspilar för att komma åt objekt som inte får plats i utsnittet.
     
-    ![vågrät](media/power-bi-visualization-slicers/4-horizontal.png)
+    ![Allmänna alternativ](media/power-bi-visualization-slicers/4-horizontal.png)
     
-3. Aktivera **Dynamisk** layout om du vill ändra utsnittsobjektens storlek och placering beroende på skärmvy och utsnittsstorlek. Dynamisk layout för listutsnitt finns bara i vågrät orientering och förhindrar objekten från att beskäras på mindre skärmar. När det gäller intervallskjutreglage ändrar dynamisk formatering skjutreglagets format och ger möjlighet till mer flexibel storleksändring. Båda typerna av utsnitt bli filterikoner vid mycket små storlekar. 
+1. **Aktivera** **Dynamisk layout** om du vill ändra utsnittsobjektens storlek och placering beroende på skärmvy och utsnittsstorlek. 
+
+    För listutsnitt förhindrar en dynamisk layout att objekt klipps av på små skärmar. Alternativet är endast tillgängligt med vågrät orientering. När det gäller intervallskjutreglage ändrar dynamisk formatering skjutreglagets format och ger möjlighet till mer flexibel storleksändring. Båda typerna av utsnitt visas som filterikoner på små skärmar.
     
-    ![dynamisk](media/power-bi-visualization-slicers/5-responsive.png)
+    ![Aktivera dynamisk layout](media/power-bi-visualization-slicers/5-responsive.png)
     
     >[!NOTE]
     >Ändringar av dynamisk layout kan åsidosätta specifik rubrik- och objektformatering som du anger. 
     
-4. Ange utsnittets position och storlek med numerisk precision under **X-position**, **Y-position**, **Bredd** och **Höjd**, eller flytta och ändra storlek på utsnittet direkt på arbetsytan. Experimentera med olika objektstorlekar och arrangemang, och observera hur den dynamiska formateringen ändras.  
+1. Under **X-position**, **Y-position**, **Bredd** och **Höjd** anger du utsnittets position och storlek med numerisk precision eller flyttar och ändrar storlek på utsnittet direkt på arbetsytan. 
 
-    ![vågräta knappar](media/power-bi-visualization-slicers/6-buttons.png)
+    Experimentera med olika objektstorlekar och arrangemang, och observera hur den dynamiska formateringen ändras. De här alternativen är bara tillgängliga när du väljer vågrät orientering. 
+
+    ![Alternativet Vågrät](media/power-bi-visualization-slicers/6-buttons.png)
 
 Mer information om vågrät orientering och dynamisk layout finns i [Skapa ett dynamiskt utsnitt som du kan ändra storlek på i Power BI](../power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Markeringsalternativ (endast listutsnitt)
-1. **Visa Markera alla** har inställningen **Av** som standard. Ändra inställningen till **På** om du vill lägga till ett **Markera alla**-objekt i utsnittet som markerar eller avmarkerar alla objekt när det växlas. När alla objekt har markerats kan du avmarkera ett objekt genom att klicka eller trycka på det, vilket ger ett filter av ”är-inte”-typ. 
+1. Under **Markeringskontroller** **aktiverar** du **Visa alternativet Markera allt** för att lägga till ett **Markera allt**-objekt till utsnittet. 
+
+    **Visa alternativet Markera allt** är **inaktiverat** som standard. När det här alternativet är aktiverat markeras eller avmarkeras alla objekt när du växlar inställning. Om du markerar alla objekt avmarkeras ett objekt om du väljer det, vilket innebär att du kan använda ett filter av typen *är inte*.
     
-    ![markera alla](media/power-bi-visualization-slicers/7-select-all.png)
+    ![Markeringskontroller](media/power-bi-visualization-slicers/7-select-all.png)
     
-2. **Markera enstaka** har inställningen **På** som standard. Du kan markera ett objekt genom att klicka eller trycka på det och markera flera objekt genom att hålla ned **Ctrl**-tangenten och klicka eller trycka på dem. Ändra **Markera enstaka** till **Av** om du vill att det ska gå att markera flera objekt utan att hålla ned **Ctrl**-tangenten. Du avmarkerar ett objekt genom att klicka eller trycka på det igen. 
+1. **Inaktivera** **Markera enstaka** om du vill markera flera objekt utan att behöva hålla ned **CTRL**-tangenten. 
+
+    **Markera enstaka** är **aktiverat** som standard. Om du markerar ett objekt markeras det, och om du håller ned **CTRL**-tangenten markeras flera objekt. Om du markerar objektet igen, avmarkeras det.
 
 ### <a name="title-options"></a>Rubrik alternativ
-**Rubrik** är **På** som standard och visar datafältsnamnet överst i utsnittet. 
-1. Formatera rubriktexten för att göra **Teckenfärgen** röd, **Textstorleken** 14 pt, centrera **Justering** och **Teckensnittsfamiljen** Arial Black. 
+**Rubrik** är **aktiverat** som standard. Det här alternativet visar namnet på datafält överst i utsnittet. 
+- I den här självstudien ska du formatera rubriktexten så här: 
+   - **Teckenfärg**: röd
+   - **Textstorlek**: **14 pt**
+   - **Justering**: **Centrera**
+   - **Teckensnittsfamilj**: **Arial Black**
 
 
-### <a name="item-options-list-slicers-only"></a>Objektalternativ (endast listutsnitt)
-1. Formatera objekttext och -bakgrund med **Teckenfärg** svart, **Bakgrund** ljusröd, **Textstorlek** 10 pt och **Teckensnittsfamilj** Arial. 
-2. Välj **Ram** under **Kontur** om du vill rita en kantlinje runt varje objekt med den storlek och färg du anger under alternativet **Allmänt**. 
+### <a name="items-options-list-slicers-only"></a>Objektalternativ (endast listutsnitt)
+1. I den här självstudien ska du formatera **objektalternativen** så här:
+    - **Teckenfärg**: svart
+    - **Bakgrund**: ljusröd
+    - **Textstorlek**: **10 pt**
+    - **Teckensnittsfamilj**: **Arial**
+ 
+1. Välj **Ram** för **Kontur** om du vill rita en kantlinje runt varje objekt med den storlek och färg du anger under alternativet **Allmänt**. 
     
-    ![formaterat](media/power-bi-visualization-slicers/8-formatted.png)
+    ![Alternativ för ramkontur](media/power-bi-visualization-slicers/8-formatted.png)
     
     >[!TIP]
-    >- Med **Orientering > Vågrät** visas avmarkerade objekt med valda text- och bakgrundsfärger, medan markerade objekt använder systemstandard, vanligtvis svarta bakgrunder med vit text.
-    >- Med **Orientering > Lodrät** visas objekt alltid med angivna färger, och markeringsrutor är alltid svarta när de är markerade. 
+    >- Med **Allmänt** > **Orientering** > **Vågrät** visas avmarkerade objekt med valda text- och bakgrundsfärger, medan markerade objekt använder systemstandard, vanligtvis svarta bakgrunder med vit text.
+    >- När **Allmänt** > **Orientering > Vågrät** är valt, visas objekt alltid med de valda färgerna, och kryssrutorna är alltid svarta när de är markerade. 
 
-### <a name="datenumeric-inputs-and-slider-options-range-slider-slicers-only"></a>Datum/numeriskt indata och skjutreglagealternativ (endast intervallskjutreglage för utsnitt)
-- Alternativ för datum/numeriska indata är desamma som **Objekt**-alternativen för listutsnitt, med undantag för att det inte finns någon **Disposition** eller understrykning.
-- Med skjutreglagealternativen kan du ange intervallskjutreglagets färg eller ställa in skjutreglaget på **Av**, vilket endast möjliggör numeriska indata.
+### <a name="datenumeric-inputs-and-slider-options-range-slider-slicers-only"></a>Datum/numeriska indata och skjutreglagealternativ (endast utsnitt med skjutreglage för intervall)
+- För listutsnitt är alternativen för datum/numeriska indata samma som alternativen för **Objekt**, förutom att det inte finns några kontur- eller understrykningsalternativ.
+- Med **skjutreglagealternativen** kan du välja färg för intervallskjutreglaget eller **inaktivera** skjutreglaget, så att endast numeriska indata är möjligt.
 
 ### <a name="other-formatting-options"></a>Andra formateringsalternativ
-De andra formateringsalternativen är inaktiverade som standard. När de ändras till **På**: 
-- **Bakgrund:** En bakgrundsfärg läggs till i det övergripande utsnittet och dess transparens anges.
-- **Lås höjd/bredd:** Utsnittets form behålls om dess storlek ändras.
-- **Kantlinje:** En kantlinje på 1 bildpunkt läggs till runt utsnittet och dess färg anges. (Den här utsnittskantlinjen är separat från och påverkas inte av de allmänna konturinställningarna.) 
+De andra formateringsalternativen är **inaktiverade** som standard. **Aktivera** följande alternativ om du vill ändra dem: 
+- **Bakgrund**: Lägg till en bakgrundsfärg till utsnittet och ställ in transparensen.
+- **Lås höjd/bredd**: Bevara utsnittets form om utsnittets storlek ändras.
+- **Kantlinje**: Lägg till en kantlinje runt utsnittet och ange kantlinjens färg. Den här utsnittskantlinjen är separat från och påverkas inte av de **allmänna** konturinställningarna. 
 
 ## <a name="next-steps"></a>Nästa steg
-[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+Mer information finns i följande artiklar:
 
-[Tabeller i Power BI](power-bi-visualization-tables.md)
+- [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+- [Tabeller i Power BI](power-bi-visualization-tables.md)
 
