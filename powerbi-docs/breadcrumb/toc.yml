@@ -15,7 +15,7 @@
           items:
             - name: Använd R-baserade visuella Power BI-objekt i Power BI
               tocHref: /power-bi/developer/
-              topicHref: /power-bi/desktop-r-powered-custom-visuals/
+              topicHref: /power-bi/developer/index
         - name: Interaktiv utbildning
           tocHref: /power-bi/guided-learning/
           topicHref: /power-bi/guided-learning/
