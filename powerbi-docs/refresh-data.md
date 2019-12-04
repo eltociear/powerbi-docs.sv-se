@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 28a6aa8659411b829e6982e7c766e03d683871fd
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860796"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415433"
 ---
 # <a name="data-refresh-in-power-bi"></a>Datauppdatering i Power BI
 
@@ -105,7 +105,14 @@ Det är också viktigt att påpeka att begränsningen för dagliga uppdateringar
 
 Om du har skapat datauppsättningar och rapporter utifrån en Power BI Desktop-fil, Excel-arbetsbok eller en CSV-fil med kommaavgränsade värden (.csv) på OneDrive eller SharePoint Online utför Power BI en annan typ av uppdatering, en så kallad OneDrive-uppdatering. Mer information finns i [Hämta data från filer för Power BI](service-get-data-from-files.md).
 
-Till skillnad från en datauppsättningsuppdatering där Power BI importerar data från en datakälla till en datauppsättning synkroniseras datauppsättningar och rapporter med sina källfiler vid OneDrive-uppdateringen. Som standard kontrollerar Power BI varje timme om en datauppsättning som är ansluten till en fil på OneDrive eller SharePoint Online kräver synkronisering. Se OneDrive-fliken i uppdateringshistoriken om du vill granska tidigare synkroniseringscykler. På följande skärmbild visas en slutförd synkroniseringscykel för en exempeldatauppsättning.
+Till skillnad från en datauppsättningsuppdatering där Power BI importerar data från en datakälla till en datauppsättning synkroniseras datauppsättningar och rapporter med sina källfiler vid OneDrive-uppdateringen. Som standard kontrollerar Power BI varje timme om en datauppsättning som är ansluten till en fil på OneDrive eller SharePoint Online kräver synkronisering.
+
+> [!IMPORTANT]
+> Var försiktig när du utför filhantering på OneDrive. När du anger en OneDrive-fil som data källa refererar Power BI till filens objekt-ID när den utför uppdateringen, vilket kan orsaka problem i vissa scenarier. Tänk dig ett scenario där du har en huvudfil, _A_, och en produktionskopia av filen _B_, och du konfigurerar OneDrive-uppdatering för fil B. Om du sedan _kopiera_ fil A över fil B tar kopiering åtgärden bort den gamla filen B och skapar en ny fil B med ett annat objekt-ID, vilket avbryter OneDrive-uppdateringen. I stället bör du ladda upp och ersätta fil B, så att du behåller samma objekt-ID.
+
+Om du flyttar filen till en annan plats (till exempel genom att dra och släppa) fortsätter uppdateringen att fungera eftersom PBI fortfarande känner till fileID. Men om du kopierar filen till en annan plats skapas en ny instans av filen och en ny fileID. Det innebär att din Power BI-filreferens inte längre är giltig och att uppdateringen kommer att misslyckas.
+
+Se OneDrive-fliken i uppdateringshistoriken om du vill granska tidigare synkroniseringscykler. På följande skärmbild visas en slutförd synkroniseringscykel för en exempeldatauppsättning.
 
 ![Uppdateringshistorik](media/refresh-data/refresh-history.png)
 

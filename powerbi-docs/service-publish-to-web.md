@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9f8da4a5f37eb1e652dd2125dd588febf49fb01b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1fd640922f132f56a03b37ed59a6267a5af83d00
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871854"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311708"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicera på webben från Power BI
 
@@ -135,7 +135,8 @@ Anpassade visuella objekt stöds i **Publicera på webben**. När du använder *
 - ArcGIS Maps för Power BI-visualiseringar.
 - Rapporter som innehåller DAX-mått på rapportnivå.
 - Datafrågemodeller för enkel inloggning.
-- [Skydda konfidentiell eller upphovsrättsskyddad information](#publish-to-web-from-power-bi).
+- Skydda konfidentiell eller upphovsrättsskyddad information.
+- [Delade och certifierade datamängder](service-datasets-share.md).
 - Den automatiska autentiseringsfunktionen som tillhandahålls av alternativet **Bädda in** fungerar inte med Power BI JavaScript-API:et. När det gäller Power BI JavaScript-API:et använder du metoden [användaren äger data](developer/embed-sample-for-your-organization.md) för inbäddning.
 
 ## <a name="tenant-setting"></a>Klientinställning

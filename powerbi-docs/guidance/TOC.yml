@@ -16,10 +16,18 @@
           href: import-modeling-data-reduction.md
         - name: Funktionen DIVIDERA jämfört med divisionsoperatorn (/)
           href: dax-divide-function-operator.md
+        - name: Använd SELECTEDVALUE istället för VALUES
+          href: dax-selectedvalue.md
         - name: Vikten av frågedelegering
           href: power-query-folding.md
         - name: Lämplig användning av felfunktioner
           href: dax-error-functions.md
+        - name: Använd variabler för att förbättra formler
+          href: dax-variables.md
+        - name: COUNTROWS istället för COUNT
+          href: dax-countrows.md
+        - name: Undvik att omvandla tomma värden till värden
+          href: dax-avoid-converting-blank.md
         - name: Metodtips för dataflöden
           href: ../service-dataflows-best-practices.md
         - name: Vägledning för DirectQuery-modell i Power BI Desktop

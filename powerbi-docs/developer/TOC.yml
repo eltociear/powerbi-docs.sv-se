@@ -15,6 +15,8 @@
               href: power-bi-custom-visuals.md
         - name: Självstudier
           items:
+            - name: Visuellt koncept
+              href: visuals/power-bi-visuals-concept.md
             - name: Utveckla ett visuellt Power BI-objekt
               href: visuals/custom-visual-develop-tutorial.md
             - name: Lägga till formateringsalternativ
@@ -67,6 +69,8 @@
               href: visuals/high-contrast-support.md
             - name: Aktivera synkronisering av utsnitt
               href: visuals/enable-sync-slicers.md
+            - name: Lägg till stöd för ökad detaljnivå
+              href: visuals/drill-down-support.md
             - name: Felsöka anpassade visuella Power BI-objekt
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Referens
@@ -81,8 +85,14 @@
               href: visuals/event-service.md
             - name: Sortering
               href: visuals/sort-options.md
-            - name: Interaktivitetsverktyg
-              href: visuals/utils-interactivity-selections.md
+            - name: Lokalisering
+              href: visuals/localization.md
+            - name: Power BI – visuella verktyg
+              items:
+                - name: Interaktivitetsverktyg
+                  href: visuals/utils-interactivity-selections.md
+                - name: Formateringsverktyg
+                  href: visuals/utils-formatting.md
         - name: Resurser
           items:
             - name: Dev Center

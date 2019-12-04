@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e26b50d571cfffeae1c93f37e715eca24ff4f12e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871568"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163764"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Datavarningar i Power BI-tjänsten
 
@@ -23,7 +23,7 @@ Ställ in aviseringar som meddelar dig när data i dina instrumentpaneler har ä
 
 Du kan konfigurera aviseringar på paneler om du har en Power BI Pro-licens. Du kan även konfigurera aviseringar om någon delar en instrumentpanel som finns i en [Premium](service-premium-what-is.md)-kapacitet. Aviseringar kan endast konfigureras på paneler som har fästs från visuella objekt i rapporter och endast på mätare, KPI:er och kort. Aviseringar kan konfigureras för visuella objekt som skapats från direktuppspelande datamängder som du fäster från en rapport på en instrumentpanel. Aviseringar kan inte konfigureras på direktuppspelande paneler som skapats direkt på instrumentpanelen med hjälp av **Lägg till panel** > **Anpassade direktuppspelande data**.
 
-Du kan endast se aviseringar som du anger, även om du delar din instrumentpanel. Inte ens instrumentpanelens ägare kan se de aviseringar du anger i din vy av instrumentpanelen. Datavarningar är helt synkroniserade på plattformar. Ställ in och visa datavarningar [i Power BI-appar](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) och i Power BI-tjänsten. De är inte tillgängliga för Power BI Desktop. Du kan till och med automatisera och integrera aviseringar med Microsoft Flow. Du kan prova själv i den här artikeln om [Microsoft Flow och Power BI](service-flow-integration.md).
+Du kan endast se aviseringar som du anger, även om du delar din instrumentpanel. Inte ens instrumentpanelens ägare kan se de aviseringar du anger i din vy av instrumentpanelen. Datavarningar är helt synkroniserade på plattformar. Ställ in och visa datavarningar [i Power BI-appar](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) och i Power BI-tjänsten. De är inte tillgängliga för Power BI Desktop. Du kan till och med automatisera och integrera aviseringar med Power Automate. Du kan prova själv i den här artikeln om [Power Automate och Power BI](service-flow-integration.md).
 
 ![paneler](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -125,7 +125,7 @@ Det finns många sätt att hantera dina aviseringar:
 
 ## <a name="next-steps"></a>Nästa steg
 
-* [Skapa ett Microsoft Flow som innehåller en datavarning](service-flow-integration.md).
+* [Skapa ett Power Automate som innehåller en datavarning](service-flow-integration.md).
 
 * [Konfigurera datavarningar på din mobila enhet](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 

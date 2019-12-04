@@ -2,20 +2,20 @@
 title: Punktdiagram, bubbeldiagram och punktritningsdiagram i Power BI
 description: Punktdiagram, punktritningsdiagram och bubbeldiagram i Power BI
 author: mihart
-ms.reviewer: ''
+ms.reviewer: amac
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870823"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311652"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagram, bubbeldiagram och punktritningsdiagram i Power BI
 
@@ -131,13 +131,30 @@ Nu ska vi lägga till en tredje dimension.
     > [!NOTE]
     > Fler datapunkter kan medföra längre inläsningstid. Om du väljer att publicera rapporter med gränser i den högre änden av skalan, ska du vara noga med att även testa dina rapporter på webben och mobilt. Du vill få bekräftat att diagrammets prestanda matchar dina användares förväntningar.
 
-1. Du kan [formatera visualiseringens färger, etiketter, rubriker, bakgrund med mera](service-getting-started-with-color-formatting-and-axis-properties.md).
-
-    Överväg att lägga till markörformer på varje linje för att [förbättra tillgängligheten](../desktop-accessibility.md). Välj markörform genom att expandera kortet **Former** och välja **Markörform** och sedan välja en form.
+1. Fortsätt att formatera visualiseringens färger, etiketter, rubriker, bakgrund med mera. Överväg att lägga till markörformer på varje linje för att [förbättra tillgängligheten](../desktop-accessibility.md). Välj markörform genom att expandera kortet **Former** och välja **Markörform** och sedan välja en form.
 
     ![Skärmbild av listrutan Former med alternativen för Markörform framhävda.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
-    Du kan ändra markörformen till en romb, triangel eller kvadrat. Med olika markörformer för varje linje är det enklare för rapportanvändare att skilja linjer (eller områden) från varandra.
+    Ändra markörformen till en romb, triangel eller kvadrat. Med olika markörformer för varje linje är det enklare för rapportanvändare att skilja linjer (eller områden) från varandra.
+
+1. Öppna fönstret Analytics ![Skärmbild av ikonen för fönstret Analytics.](media/power-bi-visualization-scatter/power-bi-analytics.png) för att lägga till ytterligare information i visualiseringen.  
+    - Lägg till en medianlinje. Välj **Medianlinje** > **Lägg till**. Som standard lägger Power BI till en medianlinje för *Försäljning efter kvm*. Detta är inte särskilt användbart eftersom vi kan se att det finns 10 datapunkter och vi vet att medianen kommer att skapas med fem datapunkter på varje sida. Växla i stället **Mått** till *Total försäljningsvarians %* .  
+
+        ![Skärmbild av bubbeldiagram med medianlinje tillagd.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+
+    - Lägg till symmetrifyllning för att visa vilka punkter som har ett högre värde för x-axelns mått jämfört med y-axelns mått och vice versa. När du aktiverar symmetrifyllning i fönstret Analytics visas Power BI-bakgrunden i punktdiagrammet symmetriskt baserat på den aktuella axelns övre och nedre gränser. Det här är ett snabbt sätt att identifiera vilken axel som mäter en datapunkt som prioriteras, särskilt när du har ett annat axelintervall för x- och y-axeln.
+
+        a. Ändra fältet **Total försäljningsvarians %** till **Bruttomarginal förra året %**
+
+        ![Skärmbild av bubbeldiagram med medianlinje tillagd.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+
+        b. Lägg till **Symmetrifyllning** i fönstret Analytics. Vi kan se via skuggningen att Hosiery (Trikå) (den gröna bubblan i det rosa skuggade området) är den enda kategorin som prioriterar bruttomarginal i stället för försäljning per butikskvadratmeter. 
+
+        ![Skärmbild av bubbeldiagram med symmetrifyllning tillagd.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+
+    - Fortsätt att utforska fönstret Analytics för att upptäcka intressanta insikter i dina data. 
+
+        ![Skärmbild av bubbeldiagram med symmetrifyllning tillagd.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Skapa ett punktritningsdiagram
 

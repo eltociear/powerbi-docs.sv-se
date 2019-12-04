@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: c470eba3998e04fde8c00c619077d5d8db444b42
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099724"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265343"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheter i Power BI-tjänsten
 Kontrollera den här sidan för kända problem och nyligen utgivna funktioner i **Power BI-tjänsten**. Relaterad information om nyheter finns i:
@@ -30,7 +30,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 ### <a name="october-2019"></a>Oktober 2019
-* Ny Microsoft Flow-åtgärd för att uppdatera Power BI-datamängder.
+* Ny Power Automate-åtgärd för att uppdatera Power BI-datamängder.
 * [Kontaktlista](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) för rapporter och instrumentpaneler i Power BI-tjänsten.
 
 ## <a name="previous-months-2019"></a>Föregående månader (2019)
@@ -227,7 +227,7 @@ Besök även våra YouTube-kanaler för information om nyheter och funktioner.
 * [Power BI-granskningsloggar ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) i granskningsportalen i Office 365 är tillgängliga globalt.
 * Version 1.4 av [utvecklingsverktyg och anpassade visuella objekt API:er](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) släpps.
 * [Funktionsuppsättning för strömning i realtid](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) släpps till allmän tillgänglighet.
-* [Skicka data till Power BI med hjälp av Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) utan att skriva en enda kodrad.
+* [Skicka data till Power BI med hjälp av Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) utan att skriva en enda kodrad.
 * Förhandsversion: [Prenumerera på rapportsidor](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) för att hålla koll på dina data.
 * Använda Azure AD-innehållspaketet för lära dig mer om hur dina anställda och partners använder Azure AD.
 
@@ -530,7 +530,6 @@ All information, inklusive en video som visar många av de här uppdateringarna 
 
 * Identifiera trender och upptäck mönster i en datamängd automatiskt med Quick Insights: [video](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) eller [artikel](consumer/end-user-insights.md)
 * [Visualisera dina VMob-data i Power BI](https://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
-* [Power BI-integrering med Cortana](https://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Förhandsgranskning av Power BI-gateway för företag](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Introduktion av nytt innehållspaket: [Sök Analytics från Bing på Power BI-instrumentpaneler](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * Nya förbättringar för utvecklare: [Två nya API: er och enklare appregistrering](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)

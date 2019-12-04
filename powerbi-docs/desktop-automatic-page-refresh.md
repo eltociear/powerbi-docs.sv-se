@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878752"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164158"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sidouppdatering i Power BI Desktop (förhandsversion)
 
@@ -105,9 +105,9 @@ Power BI Desktop har ingen begränsning för uppdateringsintervallet, vilket inn
 
 I Power BI-tjänsten tillämpas begränsningar för automatisk siduppdatering baserat på faktorer som arbetsytan och om Premium-tjänster används.
 
-För att förtydliga hur det fungerar kan vi börja med en bakgrund om [kapaciteter och arbetsytor](whitepaper-powerbi-premium-deployment.md#capacities)
+För att förtydliga hur det fungerar kan vi börja med en bakgrund om kapaciteter och arbetsytor:
 
-**Kapaciteter** är ett kärnbegrepp i Power BI som avser en uppsättning resurser (lagring, processor och minne) som används till att vara värd för och leverera Power BI-innehåll. Kapaciteter är antingen delade eller dedikerade. En **delad kapacitet** är delad med andra Microsoft-kunder, medan en **dedikerade kapaciteten** är helt tillägnad en enda kund. Dedikerade kapaciteter beskrivs i artikeln om [Premium-kapaciteter](whitepaper-powerbi-premium-deployment.md#capacities).
+**Kapaciteter** är ett kärnbegrepp i Power BI som avser en uppsättning resurser (lagring, processor och minne) som används till att vara värd för och leverera Power BI-innehåll. Kapaciteter är antingen delade eller dedikerade. En **delad kapacitet** är delad med andra Microsoft-kunder, medan en **dedikerade kapaciteten** är helt tillägnad en enda kund. Dedikerade kapaciteter beskrivs i artikeln [Hantera Premium-kapaciteter](service-premium-capacity-manage.md).
 
 I delad kapacitet körs arbetsbelastningar på dataresurser som delas med andra kunder. När kapaciteten måste dela resurser, införs begränsningar för att säkerställa ett *rättvist genomförande*, till exempel genom att ange maximal modellstorlek (1 GB) och maximal daglig uppdateringsfrekvens (åtta gånger per dag).
 
@@ -123,7 +123,7 @@ Här visas information om de två scenarierna för arbetsytor:
 
  2. *Minsta uppdateringsintervall*: När funktionen aktiveras måste kapacitetsadministratören ange ett lägsta uppdateringsintervall. Om intervallet är lägre än minimivärdet åsidosätter Power BI-tjänsten intervallet och använder det lägsta intervall som angetts av kapacitetsadministratören.
 
-Tabellen nedan innehåller mer information om var den här funktionen är tillgänglig, samt begränsningarna för varje kapacitetstyp och [lagringsläge](whitepaper-powerbi-premium-deployment.md#model-storage-modes)
+Tabellen nedan innehåller mer information om var den här funktionen är tillgänglig, samt begränsningarna för varje kapacitetstyp och [lagringsläge](service-dataset-modes-understand.md)
 
 | Lagringsläge | Dedikerad kapacitet | Delad kapacitet |
 | --- | --- | --- |

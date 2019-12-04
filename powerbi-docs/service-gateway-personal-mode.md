@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5138536fca255638e2cef802b885be1f5dfcbef9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8e6adb5c07c18a72d278b17e70fa7f06d1f6fd5f
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881532"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164182"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Använda personliga gatewayer i Power BI
 
@@ -31,7 +31,7 @@ I följande tabell beskrivs skillnaderna mellan en lokal datagateway och en loka
 
 |   |Lokal datagateway | Lokal datagateway (personligt läge) |
 | ---- | ---- | ---- |
-|Molntjänster som stöds |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services och dataflows |Power BI |
+|Molntjänster som stöds |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
 |Körningar |Enligt konfiguration av användare som har åtkomst till gatewayen |Som dig för Windows-autentisering och enligt konfiguration av dig för andra autentiseringstyper |
 |Kan endast installeras som datoradministratör |Ja |Nej |
 |Centraliserad gateway och hantering av datakällor |Ja |Nej |

@@ -58,6 +58,8 @@
               href: end-user-pdf.md
             - name: Lägga till ett bokmärke i en rapport
               href: end-user-bookmarks.md
+            - name: Sidnumrerade rapporter
+              href: end-user-paginated-report.md
         - name: Visualiseringar
           items:
             - name: Vad kan jag göra med visualiseringar?

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: f8ca6aae805ae3184a1c54d8707fcb9a3cfd32e7
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128055"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265252"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publicera visuella Power BI-objekt till AppSource
 
@@ -25,7 +25,7 @@ När du har skapat ditt anpassade visuella objekt, vill du kanske publicera det 
 
 ## <a name="what-is-appsource"></a>Vad är AppSource?
 
-**AppSource** är det ställe där du hittar SaaS-appar och tillägg för dina Microsoft-produkter och tjänster. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) ger miljontals användare av Office 365, Dynamics 365, Cortana Intelligence och andra tillgång till lösningar som hjälper dem att få mer jobb gjort på ett effektivare sätt, med mer insikt och snyggare än tidigare.
+**AppSource** är det ställe där du hittar SaaS-appar och tillägg för dina Microsoft-produkter och tjänster. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) ger miljontals användare av Office 365, Dynamics 365 och andra tillgång till lösningar som hjälper dem att få mer jobb gjort på ett effektivare sätt, med mer insikt och snyggare än tidigare.
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Förbereda att skicka ditt anpassade visuella objekt
 

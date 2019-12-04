@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b715cd42ea221f62258b66eee71b6525b2015ae1
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128170"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311729"
 ---
 # <a name="conditional-formatting-in-tables"></a>Villkorsstyrd formatering i tabeller 
 Med villkorsstyrd formatering för tabeller kan du ange anpassade cellfärger baserat på cellvärden, eller baserat på andra värden eller fält. Du kan även använda toningar. Du kan också visa cellvärden med datastaplar. 
@@ -139,7 +139,7 @@ Du kan använda vilka som helst av de värden som anges i CSS-färgspecifikation
 Det finns några saker att tänka på när du arbetar med villkorsstyrd tabellformatering:
 
 * Villkorsstyrd formatering tillämpas endast på värdena för ett visuellt **matrisobjekt** och tillämpas inte på delsummor eller totalsummor. 
-* Villkorsstyrd formatering tillämpas inte på raden **Summa**
+* Villkorsstyrd formatering tillämpas inte på raden **Summa**.
 * Tabeller som saknar gruppering visas som en enda rad som inte stöder villkorsstyrd formatering.
 * Om du använder toningsformat med automatiska max/min-värden eller regelbaserad formatering med procentregler, kan inte villkorsstyrd formatering tillämpas om dina data innehåller NaN-värden. NaN står för ”Inte ett nummer” och orsakas vanligtvis av fel vid en division med noll. Du kan använda [DAX-funktionen DIVIDE()](https://docs.microsoft.com/dax/divide-function-dax) för att undvika dessa fel.
 

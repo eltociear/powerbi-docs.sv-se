@@ -1,53 +1,40 @@
 ---
 title: Använd snabbmått för vanliga och kraftfulla beräkningar
-description: Snabbåtgärder är färdiga DAX-formler som snabbt hanterar vanliga beräkningar
+description: Snabbåtgärder är färdiga DAX-formler som snabbt hanterar vanliga beräkningar.
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 11/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 755ef6ab515244a2b7613ee7007caf3c3e6d1ed8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4e5ea5e5fcbffb5c61434ecc26a90d80d1cd1736
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877963"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415400"
 ---
-# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Använd snabbmått för att enkelt utföra vanliga och kraftfulla beräkningar
-Du kan använda **snabbmått** när du snabbt och enkelt vill utföra vanliga och kraftfulla beräkningar. Ett **snabbmått** kör en uppsättning DAX-kommandon i bakgrunden (du behöver inte skriva DAX – det är klart) som bygger på indata som du anger i en dialogruta. Sedan presenteras resultatet i rapporten. Du kan bästa är att du kan se de DAX-kommandon som körs av snabb måttet och komma igång med eller utöka din egen DAX kunskap.
+# <a name="use-quick-measures-for-common-calculations"></a>Använd snabbmått för vanliga beräkningar
+Du kan använda *snabbmått* när du snabbt och enkelt vill utföra vanliga och kraftfulla beräkningar. Ett snabbmått kör en uppsättning kommandon för dataanalysuttryck (DAX) i bakgrunden och visar sedan de resultat som du kan använda i rapporten. Du behöver inte skriva DAX, det är klart baserat på det du skriver i en dialogruta. Det finns många tillgängliga kategorier för beräkningar och sätt att ändra varje beräkningen så att den passar dina behov. Det bästa kanske är att du kan se de DAX-kommandon som körs av snabbmåttet och komma igång med eller utöka dina egna DAX-kunskaper.
 
-![](media/desktop-quick-measures/quick-measures_01.png)
+## <a name="create-a-quick-measure"></a>Skapa ett snabbmått
 
-Du skapar **snabbmått** genom att högerklicka på ett fält i **fältbrunnen** sedan välja **snabbmått** från menyn som visas. Du kan också högerklicka på ett värde i fältet **Värden** på ett befintligt visuellt objekt (till exempel fältet *Värden* i ett *stapeldiagram*). Det finns många tillgängliga kategorier för beräkningar och sätt att ändra varje beräkningen så att den passar dina behov.
+För att skapa ett snabbmått i Power BI Desktop högerklickar eller markerar du de tre punkterna **...** bredvid ett objekt i fönstret **Fält** och väljer **Nytt snabbmått** på menyn som visas. 
 
-### <a name="quick-measures-now-generally-available"></a>Snabbmått är nu allmänt tillgängliga
+![Välj Nytt snabbmått](media/desktop-quick-measures/quick-measures_01.png)
 
-I och med lanseringen av **Power BI Desktop** i februari 2018 är snabbmått allmänt tillgängliga (inte längre i förhandsversion). Om du använder en tidigare version av **Power BI Desktop** kan du testa funktionen **Snabbmått** i den version av **Power BI Desktop** som släpps i **april 2017** genom att välja **Arkiv > Alternativ och inställningar > Alternativ > Förhandsversionsfunktioner** och sedan markera kryssrutan vid **Snabbmått**.
+Du kan också högerklicka eller välja den nedrullningsbara pilen bredvid ett värde i området **Värde** för ett befintligt visuellt objekt och välja **Nytt snabbmått** på menyn. 
 
-![](media/desktop-quick-measures/quick-measures_02b.png)
+När du väljer **Nytt snabbmått** visas fönstret **Snabbmått**, så att du kan välja den beräkning som du vill använda och fälten att köra beräkningen mot. 
 
-Du måste starta om **Power BI Desktop** när du har gjort valet.
+Markera fältet **Välj en beräkning** för att se en lång lista över tillgängliga snabbmått. 
 
-## <a name="using-quick-measures"></a>Använda snabbmått
-För att **snabbmått**, högerklicka på ett fält (alla fält) i brunnen **Fält** i **Power BI Desktop** och välj **snabbmått** från menyn som visas.
+![Tillgängliga snabbmåttsberäkningar](media/desktop-quick-measures/quick-measures_04.png)
 
-![](media/desktop-quick-measures/quick-measures_01.png)
-
-När du använder SQL Server Analysis Services (SSAS) live-anslutningar är vissa **snabbmått** tillgängliga. **Power BI Desktop** visar endast mängden av **snabbmått** som stöds för versionen av SSAS som du ansluter till. Om du är ansluten till en SSAS live-datakälla och du inte ser vissa **snabbmått** i listan beror det på att den SSAS-version som du är ansluten till inte stöder det DAX-mått som används för att implementera **snabbmåttet**.
-
-Följande **snabbmått** visas från högerklicksmenyn så att du kan välja önskad beräkning och fälten mot vilka du vill köra beräkningen.
-
-![](media/desktop-quick-measures/quick-measures_03.png)
-
-När du väljer listrutan visas med en lång lista över tillgängliga **snabbmått**.
-
-![](media/desktop-quick-measures/quick-measures_04.png)
-
-Det finns fem olika grupper av beräkningstyper i snabbmått, var och ett med en samling av beräkningar. Dessa grupper och beräkningar är följande:
+De fem måttberäkningstyperna, med deras beräkningar, är:
 
 * **Sammanställ per kategori**
   * Genomsnitt per kategori
@@ -59,7 +46,7 @@ Det finns fem olika grupper av beräkningstyper i snabbmått, var och ett med en
   * Filtrerat värde
   * Skillnad från filtrerat värde
   * Procentuell skillnad från filtrerat värde
-  * Försäljning från nya kategorier
+  * Försäljning från nya kunder
 * **Tidsintelligens**
   * Summa hittills det här året
   * Summa hittills det här kvartalet
@@ -83,70 +70,69 @@ Det finns fem olika grupper av beräkningstyper i snabbmått, var och ett med en
   * Omdöme i stjärnor
   * Sammanlänkad lista med värden
 
-Vi planerar att lägga till dessa beräkningar, vill veta vilka **snabbmått** du skulle vilja se och om du har idéer (inklusive underliggande DAX-formler) för **snabbmått** som du vill att vi överväger. Mer information om detta finns i slutet på den här artikeln.
+Information om hur du skickar in dina idéer om nya snabbmått som du vill se, underliggande DAX-formler eller andra snabbmåttsidéer finns i slutet av den här artikeln.
 
-## <a name="example-of-quick-measures"></a>Exempel på snabbmått
-Låt oss ta en titt på ett exempel på dessa **snabbmått** i praktiken.
+> [!NOTE]
+> När du använder SQL Server Analysis Services (SSAS) live-anslutningar är vissa snabbmått tillgängliga. Power BI Desktop visar endast de snabbmått som stöds för versionen av SSAS som du ansluter till. Om du är ansluten till en SSAS live-datakälla och du inte ser vissa snabbmått i listan beror det på att den SSAS-version som du är ansluten till inte stöder DAX-kommandona som används för att implementera snabbmåtten.
 
-Följande **matris** innehåller en tabell med försäljning för olika elektronikprodukter. Det är en enkel tabell som innehåller det totala antalet för varje kategori.
+När du har valt de beräkningar och fält som du vill använda för snabbmåttet väljer du **OK**. Det nya snabbmåttet visas i fönstret **Fält**, och den underliggande DAX-formeln visas i formelfältet. 
 
-![](media/desktop-quick-measures/quick-measures_05.png)
+## <a name="quick-measure-example"></a>Exempel på nytt snabbmått
+Låt oss ta en titt på en snabbmåttsåtgärd.
 
-När vi högerklickar du på fältet **Värden** och väljer **Snabbmått** kan vi välja *Genomsnitt per kategori* som *beräkning*och välja *Summan av försäljning* som *basvärde*. Ange *SalesAmount* genom att dra fältet från rutan *Fält*  i den högra rutan i avsnittet *Kategori* till vänster.
+Följande matris innehåller en tabell med försäljning för olika produkter. Det är en enkel tabell som innehåller det totala sålda antalet för varje kategori.
+
+![Matrisvisualisering som visar en försäljningstabell](media/desktop-quick-measures/quick-measures_05.png)
+
+Med matrisen synlig väljer du den nedrullningsbara pilen bredvid **TotalSales** i området **Värden** väljer **Nytt snabbmått**. 
+
+I fönstret **Snabbmått**, under **Beräkning**, väljer du **Genomsnitt per kategori**. 
+
+Dra **Genomsnittligt enhetspris** från fönstret **Fält** till fältet **Basvärde**. Lämna **Kategori** i fältet **Kategori** och välj **OK**. 
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 
-När vi väljer **OK** händer ett par intressanta saker, enligt bilden efter den här listan:
+När du väljer **OK**sker flera intressanta saker.
 
-1. Nu har **matrisen** ny kolumn som visar vår beräkning (i det här fallet *Genomsnittlig försäljning inom försäljning*).
-2. Ett nytt **mått** har skapats och är tillgängligt i **Fält** och har markerats (Power BI placerar en gul ruta omkring den). Det här måttet är tillgängligt för andra visuella objekt i rapporten, inte bara det visuella objektet som det ursprungligen skapades för.
-3. DAX-formeln som har skapats för **snabbmåttet** visas i formelfältet.
+![Nytt snabbmått i det visuella objektet, formelfältet och listan Fält](media/desktop-quick-measures/quick-measures_07.png)
 
-![](media/desktop-quick-measures/quick-measures_07.png)
+1. Matrisvisualiseringen har en ny kolumn som visar beräknat **Average Unit Price average per Category** (Genomsnittligt pris per enhet per kategori).
+   
+2. DAX-formeln för det nya snabbmåttet visas i formelfältet. Mer information om DAX-formeln finns i [nästa avsnitt](#learn-dax-by-using-quick-measures).
+   
+3. Det nya snabbmåttet visas markerat i fönstret **Fält**. 
 
-För att börja med det första objektet, lägg märke till att **snabbmåttet** har tillämpats på det visuella objektet. Det finns en ny kolumn och tillhörande värde som baseras på det **snabbmått** som har skapats.
+Det nya snabbmåttet är tillgängligt för alla visuella objekt i rapporten, inte bara det visuella objekt som du skapade den för. Följande bild visar ett visuellt stapeldiagram-objekt som skapats med hjälp av det nya snabbmåttsfältet.
 
-![](media/desktop-quick-measures/quick-measures_08.png)
+![Nytt visuellt stapeldiagram-objekt baserat på snabbmåttsfältet](media/desktop-quick-measures/quick-measures_09.png)
 
-Därefter visas **snabbmåttet** visas i brunnen **fält** i datamodellen och kan användas som ett annat fält i modellen för andra visuella objekt. I följande bild har ett snabbt **stapeldiagram** skapats med hjälp av det nya fältet som skapats av **snabbmåttet**.
+## <a name="learn-dax-by-using-quick-measures"></a>Lär dig DAX med snabbmått
+En bra fördel med snabbmått är att de visar DAX-formeln som implementerar måttet. När du väljer ett snabbmått i fönstret **Fält** visas **formelfältet**, vilket visar DAX-formeln som Power BI skapade för att verkställa måttet.
 
-![](media/desktop-quick-measures/quick-measures_09.png)
+![Snabbmåttsformel i formelfältet](media/desktop-quick-measures/quick-measures_10.png)
 
-Nu ska vi gå till nästa avsnitt för att diskutera det tredje objektet, DAX-formler.
+Formelfältet visar inte bara formeln bakom måttet utan visar hur du skapar DAX-formlernas underliggande snabbmått, som kanske är ännu viktigare.
 
-## <a name="learn-dax-using-quick-measures"></a>Lär dig DAX med snabbmått
-En annan stor nytta av funktionen **snabbåtgärder** är att den direkt visar DAX-formeln som skapades för att genomföra åtgärden. I följande bild, har vi valt mått som har skapats av **snabbmått** (nu är det i brunnen **Fält**, så det är bara att klicka på det). När vi gör det visas **Formelfältet**, vilket visar DAX-formeln som Power BI skapade för att verkställa måttet.
+Anta att du behöver göra en beräkning som jämför två år, men du vet inte hur du ska strukturera DAX-formeln, eller du vet inte var du ska börja. Istället för att slå huvudet mot skrivbordet kan du skapa ett snabbmått med beräkningen **årsvis förändring** och se hur det visas i ditt visuella objekt och hur DAX-formler fungerar. Sedan kan du antingen göra ändringar direkt i DAX-formeln eller skapa ett liknande mått som uppfyller dina behov och förväntningar. Det är som att ha en lärare som svarar omedelbart på hypotetiska frågor med några få klickningar. 
 
-![](media/desktop-quick-measures/quick-measures_10.png)
+Du kan alltid ta bort snabbmått från din modell om du inte gillar dem. Det är lika enkelt att högerklicka eller välja **...** bredvid måttet och välja **Ta bort**. Du kan också byta namn på ett snabbmått om du vill genom att välja **Byt namn** på menyn. 
 
-Det är bra, eftersom den visar formeln bakom måttet. Men det gör det möjligt att använda **snabbmått** för att se hur de underliggande DAX-formlerna ska skapas.
-
-Anta att du behöver göra en beräkning som jämför två år, men du vet inte hur du ska strukturera DAX-formeln (eller du vet inte var du ska börja!). Istället för att slå huvudet mot skrivbordet kan du skapa ett **snabbmått** med beräkningen **årsvis förändring** och se vad som händer. Till exempel, skapa ett **snabbmått** och se hur det visas i ditt visuella objekt, se hur DAX-formeln fungerade och utför ändringarna antingen direkt i DAX eller skapa ett annat mått tills beräkningarna uppfyller dina behov eller förväntningar.
-
-Det är som att ha en snabb lärare som svarar omedelbart på hypotetiska frågor med några få klickningar. Du kan alltid ta bort dessa mått från din modell om du inte gillar dem – det är bara att högerklicka på måttet och välja **Ta bort**.
-
-![](media/desktop-quick-measures/quick-measures_11.png)
-
-När måttet är perfekt kan du byta namn efter behov med samma högerklicksmeny.
+![Ta bort eller byta namn på ett snabbmått](media/desktop-quick-measures/quick-measures_11.png)
 
 ## <a name="limitations-and-considerations"></a>Begränsningar och överväganden
 Det finns några begränsningar och saker du bör tänka på.
 
-* **Snabbmått** är endast tillgängliga om du kan ändra modellen, vilket inte är fallet när du arbetar med vissa live-anslutningar (tabellbaserade live-anslutningar för SSAS stöds, som vi tidigare diskuterat).
-* Måttet som har lagts till i brunnen **Fält** kan användas med alla visuella objekt i rapporten.
-* Du kan se DAX-uttryck som är associerade med ett **snabbmått** genom att välja det skapade måttet i brunnen **Fält**. Titta sedan på formeln i **formelfältet**.
-* Du kan inte skapa snabbmått för tidsinformation när du arbetar i DirectQuery-läge. DAX-funktionerna som används i dessa snabbmått påverkar prestanda när de översätts till T-SQL-uttryck som skickas till datakällan.
+- Du kan använda snabbmått som har lagts till i fönstret **Fält** med valfritt visuellt objekt i rapporten.
+- Du kan se DAX-uttryck som är associerade med ett snabbmått genom att välja det skapade måttet i listan **Fält**. Titta sedan på formeln i formelfältet.
+- Snabbmått är bara tillgängliga om du kan ändra modellen. Det är inte fallet när du arbetar med vissa Live-anslutningar. Realtidsanslutningar i SSAS-tabeller stöds, enligt beskrivningen ovan.
+- Du kan inte skapa snabbmått för tidsinformation när du arbetar i DirectQuery-läge. DAX-funktionerna som används i dessa snabbmått påverkar prestanda när de översätts till T-SQL-uttryck som skickas till datakällan.
 
-> [!WARNING]
-> Snabbmått skapar för närvarande *endast* DAX-uttryck med kommatecken för argumentavgränsare. Om din version av **Power BI Desktop** är lokaliserat till ett språk som använder kommatecken som decimalavgränsare kommer snabbmått inte att fungera korrekt.
-> 
-> 
+> [!IMPORTANT]
+> DAX-instruktioner för snabbmått använder bara kommatecken som argumentavgränsare. Om din version av Power BI Desktop är på ett språk som använder kommatecken som decimalavgränsare kommer snabbmått inte att fungera korrekt.
 
 ### <a name="time-intelligence-and-quick-measures"></a>Tidsinformation och snabbmått
-Från och med uppdateringen i oktober 2017 av **Power BI Desktop** kan du använda dina egna anpassade datum-tabeller med tidsinformation-**snabbåtgärder**. Om du använder en extern tabellmodell kontrollerar du att den primära kolumnen i tabellen markerades som en datumtabell när modellen skapades. Mer information om detta finns i [den här artikeln](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Om du importerar en egen datumtabell är det viktigt att du markerar den som en datumtabell enligt anvisningarna i [den här artikeln](https://docs.microsoft.com/power-bi/desktop-date-tables)
+Du kan använda dina egna anpassade datumtabeller med tidsinformationens snabbmått. Om du använder en extern tabellmodell kontrollerar du att den primära kolumnen i tabellen markerades som en datumtabell när modellen skapades. Mer information om detta finns i [Specify Mark as Date Table for use with time-intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular) (Ange Markera som datumtabell för användning med tidsinformation). Om du importerar en egen datumtabell är det viktigt att du markerar den som en datumtabell enligt anvisningarna i [Konfigurera och använda datumtabeller i Power BI Desktop](desktop-date-tables.md).
 
 ### <a name="additional-information-and-examples"></a>Ytterligare information och exempel
-Vi förväntar oss att behöva tillhandahålla exempel och vägledning för varje beräkning i **snabbmått** beräkningar, så det är värt att återkomma för uppdateringar om den fokuserade artikeln.
-
-Har du en idé för ett **snabbmått** som inte redan finns? Toppen! Ta en titt på [den här sidan](https://go.microsoft.com/fwlink/?linkid=842906) och skicka uppslag (och DAX-formler) för **snabbmått** du skulle vilja se i **Power BI Desktop** så kan vi att överväga att lägga till den i den angivna listan över **snabbmått** i en framtida version.
+Har du en idé för ett snabbmått som inte redan finns? Toppen! Kolla in sidan med [Power BI-idéer](https://go.microsoft.com/fwlink/?linkid=842906) och skicka dina idéer och DAX-formler för snabbmått som du vill se i Power BI Desktop. Vi tänker lägga till dem i listan med snabbmått i en framtida version.
 

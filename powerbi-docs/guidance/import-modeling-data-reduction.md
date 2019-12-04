@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5560181f2fc52a02eebce274d88dc66517181517
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875611"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410763"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Metoder för dataminskning för importmodellering
 
@@ -24,11 +24,11 @@ Importmodeller läses in med data som komprimeras och optimeras och sedan sparas
 Trots den effektivitet som uppnås av VertiPaq-lagringsmotorn är det viktigt att du försöker minimera de data som ska läsas in i dina modeller. Detta gäller särskilt för stora modeller eller modeller som du tror kommer att växa sig stora över tid. Följande är fyra övertygande orsaker:
 
 - Större modellstorlekar stöds kanske inte av din kapacitet. Delad kapacitet kan vara värd för modeller upp till 1 GB, medan Premium-kapaciteter kan vara värd för modeller upp till 13 GB i storlek. Mer information finns i artikeln[Power BI Premium-stöd för stora datamängder](../service-premium-large-datasets.md).
-- Mindre modellstorlekar minskar konkurrensen för kapacitetsresurser, särskilt vad gäller minne. Detta gör att fler modeller kan läsas in samtidigt under längre tidsperioder, vilket resulterar i lägre borttagningsfrekvenser. Mer information finns i ämnet [Så fungerar kapaciteter](../whitepaper-powerbi-premium-deployment.md#how-capacities-function) i white paper [Power BI Premium-distribution](../whitepaper-powerbi-premium-deployment.md).
+- Mindre modellstorlekar minskar konkurrensen för kapacitetsresurser, särskilt vad gäller minne. Detta gör att fler modeller kan läsas in samtidigt under längre tidsperioder, vilket resulterar i lägre borttagningsfrekvenser. Mer information finns i [Hantera Premium-kapaciteter](../service-premium-capacity-manage.md).
 - Mindre modeller ger snabbare datauppdatering, vilket resulterar i rapporter med lägre svarstid, högre dataflöde för datamängdsuppdatering samt och mindre belastning på källsystem och kapacitetsresurser.
 - Mindre antal tabellrader kan leda till snabbare beräkningsutvärdering, vilket kan ge bättre övergripande prestanda för frågor.
 
-Åtta olika metoder för dataminskning beskrivs i den här artikeln. Dessa omfattar:
+Åtta olika metoder för dataminskning beskrivs i den här artikeln. Dessa tekniker omfattar:
 
 - [Ta bort onödiga kolumner](#remove-unnecessary-columns)
 - [Ta bort onödiga rader](#remove-unnecessary-rows)
@@ -46,9 +46,9 @@ Modelltabellkolumner har två huvudsakliga syften:
 - **Rapportering** för att uppnå rapportdesign som på lämpligt sätt filtrerar, grupperar och sammanfattar modelldata
 - **Modellstruktur** genom att stödja modellrelationer, modellberäkningar, säkerhetsroller och till och med datafärgsformatering
 
-Kolumner som inte uppnår dessa syften tas förmodligen bort. Borttagning av kolumner kallas för _lodrät filtrering_.
+Kolumner som inte uppnår dessa syften kan förmodligen tas bort. Borttagning av kolumner kallas för _lodrät filtrering_.
 
-Vi rekommenderar att du utformar modeller med exakt rätt antal kolumner baserat på de kända rapporteringskraven. Dessa krav kan naturligtvis ändras med tiden, men tänk på att det är enklare att lägga till kolumner senare än att ta bort dem senare. Borttagning av kolumner kan förstöra rapporter eller modellstrukturen.
+Vi rekommenderar att du utformar modeller med exakt rätt antal kolumner baserat på de kända rapporteringskraven. Dina krav kan naturligtvis ändras med tiden, men tänk på att det är enklare att lägga till kolumner senare än att ta bort dem senare. Borttagning av kolumner kan förstöra rapporter eller modellstrukturen.
 
 ## <a name="remove-unnecessary-rows"></a>Ta bort onödiga rader
 
@@ -62,7 +62,7 @@ Modelltabeller bör läsas in med så få rader som möjligt. Detta kan uppnås 
 
 Den kanske mest effektiva tekniken för att minska en modellstorlek att läsa in i förväg sammanfattade data. Den här tekniken kan användas till att minska kornigheten för tabeller av faktatyp. Det finns dock en betydande kompromiss i detta som leder till förlust av detaljnivå.
 
-Till exempel lagrar en källfaktatabell med försäljning en rad per orderrad. Betydande dataminskning kan uppnås genom sammanfattning av alla försäljningsmått samt gruppering efter datum, kund och produkt. Tänk dig sedan att ännu högre dataminskning skulle kunna uppnås genom gruppering efter datum _på månadsnivå_. Detta skulle kunna uppnå en potentiell minskning på 99 % av modellstorlek, men då är det förstås inte möjligt att rapportera på dagsnivå eller på enskild ordernivå. Sammanfattning av data av faktatyp inbegriper alltid kompromisser. Den här kompromissen kan minskas av en design för blandad modell, och detta diskuteras senare i ämnet [Växla till blandat läge](#switch-to-mixed-mode).
+Till exempel lagrar en källfaktatabell med försäljning en rad per orderrad. Betydande dataminskning kan uppnås genom sammanfattning av alla försäljningsmått samt gruppering efter datum, kund och produkt. Tänk dig sedan att ännu högre dataminskning skulle kunna uppnås genom gruppering efter datum _på månadsnivå_. Det här skulle kunna uppnå en potentiell minskning på 99 % av modellstorleken, men då är det inte möjligt att rapportera på dagsnivå eller på enskild ordernivå. Sammanfattning av data av faktatyp inbegriper alltid kompromisser. Den här kompromissen kan minskas av en design för blandad modell, och alternativet beskrivs i tekniken [Växla till blandat läge](#switch-to-mixed-mode).
 
 ## <a name="optimize-column-data-types"></a>Optimera kolumndatatyper
 
@@ -94,7 +94,7 @@ I Power BI Desktop finns det ett alternativ som heter _Automatisk datum/tid_. N�
 
 I Power BI Desktop skapar en design för blandad modell en sammansatt modell. I princip gör det att du kan välja lagringsläge _för varje tabell_. Därför kan varje tabell få egenskapen för lagringsläge angiven till Import eller DirectQuery (Dubbel är ett annat alternativ).
 
-En effektiv teknik för att minska modellstorleken är att ange egenskapen Lagringsläge för större tabeller av faktatyp till DirectQuery. Den här designmetoden kan fungera väl tillsammans med ämnet [Gruppera efter och sammanfatta](#group-by-and-summarize), som introducerades tidigare. Till exempel kan sammanfattade försäljningsdata användas för att uppnå ”sammanfattningsrapportering” med höga prestanda. En detaljgranskningssida kan visa detaljerad försäljning för specifik (och begränsad) filterkontext, vilket visar alla försäljningsordrar inom kontexten. I det här exemplet skulle detaljgranskningssidan innehålla visuella objekt baserat på en DirectQuery-tabell för att hämta försäljningsorderdata.
+En effektiv teknik för att minska modellstorleken är att ange egenskapen Lagringsläge för större tabeller av faktatyp till DirectQuery. Den här designmetoden kan fungera väl tillsammans med tekniken [Gruppera efter och sammanfatta](#group-by-and-summarize), som introducerades tidigare. Till exempel kan sammanfattade försäljningsdata användas för att uppnå ”sammanfattningsrapportering” med höga prestanda. En detaljgranskningssida kan visa detaljerad försäljning för specifik (och begränsad) filterkontext, vilket visar alla försäljningsordrar inom kontexten. I det här exemplet skulle detaljgranskningssidan innehålla visuella objekt baserat på en DirectQuery-tabell för att hämta försäljningsorderdata.
 
 Sammansatta modeller medför dock många säkerhets- och prestandakonsekvenser. Mer information finns i artikeln [Använda sammansatta modeller i Power BI Desktop](../desktop-composite-models.md).
 
@@ -104,3 +104,4 @@ Mer information om Power BI-importmodelldesign finns i följande artiklar:
 
 - [Använda sammansatta modeller i Power BI Desktop](../desktop-composite-models.md)
 - [Lagringsläge i Power BI Desktop](../desktop-storage-mode.md)
+- Har du några frågor? [Fråga Power BI Community](https://community.powerbi.com/)

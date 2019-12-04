@@ -8,22 +8,20 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 1ddcc94e2286c82f7e865a2a8012b9d407b3c171
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 01c3d7ac00ec4aa50373e36e1732d4eda55b280c
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875369"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410795"
 ---
 # <a name="the-importance-of-query-folding"></a>Vikten av frågedelegering
 
 Den här artikeln vänder sig till datamodellerare som utvecklar modeller i Power BI Desktop. Den beskriver vad frågedelegering är och varför det är viktigt. Den beskriver också de datakällor och transformeringar som kan åstadkomma frågedelegering och hur du anger om dina Power Query-frågor kan delegeras, antingen helt eller delvis. Slutligen innehåller den rekommendationer om när och hur du kan få till frågedelegering.
 
-## <a name="background"></a>Bakgrund
-
 Frågedelegering är möjligheten för en Power Query-fråga att generera ett enda frågeuttryck för att hämta och transformera källdata. Power Query-kombinationsmotorn strävar efter att uppnå frågedelegering när det är möjligt, eftersom det är det mest effektiva sättet att ansluta en Power BI-modelltabell till den underliggande datakällan.
 
-Frågedelegering är ett viktigt ämne inom datamodellering av flera anledningar:
+Frågedelegering är ett viktigt begrepp inom datamodellering av flera anledningar:
 
 - **Importmodelltabeller:** Datauppdateringar sker effektivt för importmodelltabeller med avseende på resursanvändning och uppdateringens tidsåtgång
 - **DirectQuery-tabeller och tabeller med dubbelt lagringsläge:** Varje DirectQuery-tabell och tabell med dubbelt lagringsläget måste baseras på en Power Query-fråga som kan delegeras
@@ -35,11 +33,11 @@ Vi rekommenderar att datamodellerare strävar efter att designa sina importmodel
 
 ## <a name="sources-that-support-query-folding"></a>Källor med stöd för frågedelegering
 
-De flesta data källor som du kan använda frågespråk för har stöd för frågedelegering. Det här kan vara relationsdatabaser, OData-flöden (som SharePoint-listor), Exchange och Active Directory. Datakällor som flata filer, blobar och webbinnehåll har normalt inte det här stödet.
+De flesta data källor som du kan använda frågespråk för har stöd för frågedelegering. De här datakällorna kan vara relationsdatabaser, OData-flöden (som SharePoint-listor), Exchange och Active Directory. Datakällor som flata filer, blobar och webbinnehåll har normalt inte det här stödet.
 
 ## <a name="transformations-that-can-achieve-query-folding"></a>Transformationer som kan uppnå frågedelegering
 
-De transformationer i relationsdatakällan som kan delegeras är de som kan skrivas som en enda SELECT-instruktion. SELECT-instruktioner kan utformas med lämpliga WHERE-, GROUP BY- och JOIN-satser. De kan också innehålla kolumnuttryck (beräkningar) med vanliga inbyggda funktioner som stöds i SQL-databaser.
+De transformationer i relationsdatakällan som kan delegeras kan skrivas som en enda SELECT-instruktion. SELECT-instruktioner kan utformas med lämpliga WHERE-, GROUP BY- och JOIN-satser. De kan också innehålla kolumnuttryck (beräkningar) med vanliga inbyggda funktioner som stöds i SQL-databaser.
 
 I den här punktlistan ser du de transformationer som i allmänhet kan frågedelegeras.
 
@@ -60,7 +58,7 @@ I den här punktlistan ser du de transformationer som i allmänhet kan frågedel
 
 ## <a name="transformations-that-prevent-query-folding"></a>Transformationer som förhindrar frågedelegering
 
-I den här punktlistan ser du de transformationer som i allmänhet förhindrar frågedelegering. Den är inte avsedd som en fullständig förteckning.
+I den här punktlistan ser du de transformationer som i allmänhet förhindrar frågedelegering. Listan är inte avsedd som en fullständig förteckning.
 
 - Sammanfoga frågor baserade på olika källor
 - Lägga till (UNION) frågor baserade på olika källor
@@ -85,7 +83,7 @@ Om du vill visa den delegerade frågan kan du välja alternativet **Visa intern 
 
 ![Exempel på en intern fråga](media/power-query-folding/native-query-example.png)
 
-Om alternativet **Visa intern fråga** inte är aktivt (nedtonad) så kan inte alla frågesteg delegeras. Det kan dock vara så att en delmängd av stegen fortfarande kan delegeras. Om du går baklänges från det sista steget kan du för varje steg kontrollera om alternativet **Visa intern fråga** är aktivt eller inte. När det blir aktivt så har du hittat stället i stegsekvensen där det inte längre gick att uppnå frågedelegering.
+Om alternativet **Visa intern fråga** inte är aktivt (nedtonad) så kan inte alla frågesteg delegeras. Det kan dock vara så att en delmängd av stegen fortfarande kan delegeras. Om du går baklänges från det sista steget kan du för varje steg kontrollera om alternativet **Visa intern fråga** är aktivt eller inte. När det sker har du hittat stället i stegsekvensen där det inte längre gick att uppnå frågedelegering.
 
 ![Exempel på hur du kan avgöra om en Power Query-fråga inte kan delegeras](media/power-query-folding/query-folding-not-example.png)
 
@@ -95,7 +93,7 @@ Kort sagt så måste Power Query-frågan uppnå frågedelegering för DirectQuer
 
 I den här punktlistan ges några viktiga metodtips.
 
-- **Delegera så mycket bearbetning till datakällan som möjligt:** Om alla steg i en Power Query-fråga inte kan delegeras så ska du identifiera vilket steg det är som förhindrar delegeringen. Om det går kan du flytta senare steg till en tidigare position i sekvensen så att de omfattas av delegeringen. Observera att Power Query-kombinationsmotorn kan vara tillräckligt smart för att ordna om frågestegen när källfrågan genereras.
+- **Delegera så mycket bearbetning till datakällan som möjligt:** Om alla steg i en Power Query-fråga inte kan delegeras så ska du identifiera vilket steg det är som förhindrar delegeringen. Om det går kan du flytta senare steg till en tidigare position i sekvensen så att de omfattas av delegeringen. Power Query-kombinationsmotorn kan vara tillräckligt smart för att ordna om frågestegen när källfrågan genereras.
 
 Om det gäller en relationsdatakälla, och om steget som förhindrar frågedelegeringen kan utföras i en enda SELECT-instruktion, eller i procedurlogiken för en lagrad procedur, bör du överväga att använda en intern frågeinstruktion som beskrivs nedan.
 
@@ -113,7 +111,7 @@ Om det gäller en relationsdatakälla, och om steget som förhindrar frågedeleg
 
 ## <a name="next-steps"></a>Nästa steg
 
-Du kan läsa mer om frågedelegering och relaterade ämnen i de här resurserna:
+Du kan läsa mer om frågedelegering och relaterade artiklar i de här resurserna:
 
 - [Använda sammansatta modeller i Power BI Desktop](../desktop-composite-models.md)
 - [Inkrementell uppdatering i Power BI Premium](../service-premium-incremental-refresh.md)

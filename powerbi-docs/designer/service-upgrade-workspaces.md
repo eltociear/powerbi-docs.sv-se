@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34b0bd1a59ec66cf7a2e5eb41d2c1ec12a39d1e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128119"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410829"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Uppgradera klassiska arbetsytor till de nya arbetsytorna i Power BI
 
 Den här artikeln beskriver hur du uppgraderar en klassisk arbetsyta till den nya arbetsytan. Du kan uppgradera vilken klassisk arbetsyta som helst. De nya arbetsytorna har mer detaljerade arbetsyteroller, vilket gör det enklare att hantera åtkomsten till innehåll. Du har mer flexibilitet när du hanterar uppgraderade arbetsytor, eftersom de är mer löst kopplade till sin ursprungliga Office 365-grupp. Lär dig mer om den [nya arbetsytan](../service-new-workspaces.md). 
 
 >[!NOTE]
->Den här dokumentationen är en förhandsversion och beskriver en funktion som ännu inte är tillgänglig. Vi har publicerat detta för att du ska kunna förbereda dig för den nya funktionen och få svar på eventuella frågor som du har före lanseringen.  
+>Uppgradering av arbetsytan finns nu som offentlig förhandsversion. 
 
 ![Uppgraderingen är klar](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -198,7 +198,15 @@ Vissa organisationer vill flytta många eller alla arbetsytor till den nya arbet
 2. Uppgradera arbetsytorna tillsammans med enskilda Office 365-gruppägare, eller med din Office 365-administratör. Om du vill uppgradera arbetsytan måste du vara ägare till gruppen.
 
 Uppgraderingsfunktionen för arbetsytan innehåller inte några verktyg för massuppdatering eller programmatisk uppdatering. Dessutom kommer nya Office 365-grupper som skapats i din organisation fortsätta att visas i Power BI. 
-    
+   
+   
+## <a name="known-issues"></a>Kända problem
+
+Det finns flera kända problem som kan uppstå:
+- Efter uppgraderingen kan användare se varningsdialogrutan Failure to load model (Det gick inte att läsa in modell). Det här meddelandet visas felaktigt och kan ignoreras. 
+- Efter uppgraderingen är några namn på arbetsytor annorlunda än tidigare. När detta inträffar återställs arbetsytans namn till ett tidigare namn för arbetsytan, eller så blir arbetsytans namn tomt. Lös problemet genom att byta namn på arbetsytan till önskat namn.
+- När du har uppgraderat en arbetsyta som har ett installerat innehållspaket kan du se ytterligare instrumentpaneler i arbetsytan som inte var synliga före uppgraderingen. Detta inträffar i vissa fall där inget innehållspaket har uppdaterats nyligen. Du kan ta bort dessa instrumentpaneler på ett säkert sätt.
+
 
 
 ## <a name="next-steps"></a>Nästa steg

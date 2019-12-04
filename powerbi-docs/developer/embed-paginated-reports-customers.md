@@ -1,5 +1,5 @@
 ---
-title: Bädda in Power BI:s sidnumrerade rapporter i programmet åt dina kunder
+title: Bädda in sidnumrerade rapporter i programmet åt dina kunder
 description: Lär dig att integrera eller bädda in en sidnumrerad Power BI-rapport i ett program med hjälp av Power BI-API:er.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 5611d65ab800c14b2570a12078c08cce5dc58147
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877718"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311432"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Självstudie: Bädda in Power BI:s sidnumrerade rapporter i ett program åt dina kunder (förhandsversion)
 
@@ -38,6 +38,11 @@ Du måste ha följande för att komma igång:
 
 Om du inte har någon Azure-prenumeration kan du [skapa ett kostnadsfritt konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) innan du börjar.
 
+> [!IMPORTANT]
+> * Du måste använda **tjänstens huvudnamn**. Huvudanvändaren stöds inte.
+> * Datakällor som kräver enkel inloggning (SSO) stöds inte.
+> * Power BI-datauppsättningen stöds inte som [datakälla](../service-get-data.md).
+
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurera din Power BI-miljö
 
 Om du bäddar in en sidnumrerad rapport måste du tilldela en arbetsyta till en dedikerad kapacitet och ladda upp rapporten till arbetsytan.
@@ -52,7 +57,7 @@ Innan du importerar eller laddar upp en sidnumrerad rapport som ska bäddas in, 
 * **Power BI Premium** – Om du ska bädda in en sidnumrerad rapport krävs en *P* SKU-kapacitet. När du bäddar in Power BI-innehåll kallas den här lösningen för *Power BI-inbäddning*. Mer information om prenumerationen finns i [Vad är Power BI Premium?](../service-premium-what-is.md)
 * **Azure Power BI Embedded** – Du kan köpa en dedikerad kapacitet i [Microsoft Azure-portalen](https://portal.azure.com). Den här prenumerationen använder *A* SKU:er. Vid inbäddning av sidnumrerade rapporter behöver du minst en *A4*-prenumeration. Mer information om hur du skapar Power BI Embedded-kapacitet finns i [Skapa Power BI Embedded-kapacitet i Azure-portalen](azure-pbie-create-capacity.md).
 
-I tabellen nedan beskrivs resurserna och gränserna för varje SKU. Om du ska avgöra vilken kapacitet som passar bäst för dina behov kan du gå till tabellen [Vilken SKU ska jag köpa till mitt scenario?](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario).
+I tabellen nedan beskrivs resurserna och gränserna för varje SKU. När du ska avgöra vilken kapacitet som passar bäst för dina behov kan du använda tabellen [Vilken SKU ska jag köpa till mitt scenario](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario).
 
 | Kapacitetsnoder | Totalt antal virtuella kärnor | Virtuella kärnor för serverdel | RAM (GB) | Virtuella kärnor för klientdel | 
 | --- | --- | --- | --- | --- |

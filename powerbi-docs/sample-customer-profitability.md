@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874025"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265554"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exempel på kundlönsamhet för Power BI: Ta en rundtur
 
@@ -128,7 +128,7 @@ Många av panelerna på instrumentpanelen för ”Exempel på kundlönsamhet” 
 
     * **Teamresultatkort** fokuserar på de fem chefernas prestation och deras kontakter.
     * **Branschmarginalanalys** är ett sätt att analysera lönsamheten jämfört med det som pågår i branschen överlag.
-    * **Chefresultatkort** ger en överblick över var och en av cheferna och formateras för visning i Cortana.
+    * **Chefresultatkort** ger en överblick över var och en av cheferna i anpassad sidstorlek.
 
 ### <a name="team-scorecard-page"></a>Sidan teamresultatkort
 ![Rapportsidan Teamresultatkort](media/sample-customer-profitability/customer2.png)
@@ -170,7 +170,7 @@ Den här rapporten innehåller ett annat datasnitt. Den ser ut på bruttomargina
    * Valery, som endast är ansvarig för en produkt, arbetar endast i fem branschsegment. Valerys branschpåverkan är säsongsbaserad men skapar alltid en stor bubbla, vilket anger en betydande inverkan på företagets slutresultat. Förklarar branschsegmenten hennes negativa prestanda?
 
 ### <a name="executive-scorecard"></a>Chefresultatkort
-Den här sidan är formaterad som en Cortana-svarssida. Läs mer i [Skapa en anpassad svarssida för Cortana](service-cortana-answer-cards.md).
+Den här sidan har anpassad sidstorlek.
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Prova data genom att ställa frågor med frågor och svar
 För vår analys kan det vara bra att avgöra vilken bransch som står för den största omsättningen för Valery. Vi kan använda frågor och svar.

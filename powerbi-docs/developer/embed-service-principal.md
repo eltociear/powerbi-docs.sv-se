@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877659"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264188"
 ---
 # <a name="service-principal-with-power-bi"></a>Tjänstens huvudnamn med Power BI
 
@@ -93,7 +93,7 @@ Till skillnad från traditionell användning av ett huvudkonto kräver användni
    > [!Important]
    > Om du aktiverar tjänstens huvudnamn för användning med Power BI gäller inte längre programmets AD-behörigheter. Programmets behörigheter hanteras då via Power BI-administrationsportalen.
 
-2.  **Rekommenderat** – Skapa en [säkerhetsgrupp i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) och lägg till det program du skapade i den säkerhetsgruppen. Du kan skapa en AAD-säkerhetsgrupp med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Rekommenderat** – Skapa en [säkerhetsgrupp i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) och lägg till det program du skapade i den säkerhetsgruppen. Du kan skapa en AAD-säkerhetsgrupp med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Nedan är ett exempelskript för att skapa en ny säkerhetsgrupp och lägga till programmet i den säkerhetsgruppen.
 
